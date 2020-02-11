@@ -2,7 +2,7 @@
 title: Wat is anders en wat is nieuw - Adobe Experience Manager als cloudservice
 description: 'Wat is anders en wat is nieuw - Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: b9a32b3ac4c296f4bb02e9a590c1b3e22d53f562
+source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
 
 ---
 
@@ -136,7 +136,7 @@ Cloud Manager is:
 
 Meer bepaald worden het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan worden gemaakt, afgeleid van:
 
-* van de licentieovereenkomst voor klanten, [Shankari- we kunnen geen credits noemen]
+* van de licentieovereenkomst voor klanten,
 
 * van interne actoren wanneer AEM als cloudservice wordt gebruikt voor activering of training,
 
