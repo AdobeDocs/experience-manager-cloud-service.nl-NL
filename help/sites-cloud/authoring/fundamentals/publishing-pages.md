@@ -15,7 +15,7 @@ Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit he
 
 U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of verwijderen.
 
-##  Terminologie {#terminology}
+## Terminologie {#terminology}
 
 Tijdens het werken met AEM kunnen er verschillende termen voorkomen die betrekking hebben op publiceren.
 
