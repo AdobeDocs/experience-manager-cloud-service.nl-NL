@@ -2,7 +2,7 @@
 title: Wat is anders en wat is nieuw - Adobe Experience Manager als cloudservice
 description: 'Wat is anders en wat is nieuw - Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe werkt proactief alle operationele instanties van de service bij naar de ni
 
 >[!NOTE]
 >
->Dit wordt bereikt met [Cloud Manager](#cloud-manager).
+>Zie [Implementatiearchitectuur](/help/core-concepts/architecture.md#deployment-architecture)voor meer informatie.
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->Zie [Implementatiearchitectuur](/help/core-concepts/architecture.md#deployment-architecture)voor meer informatie.
-
-### Vorige versies {#previous-versions-cloud-manager}
-
-Cloud Manager werd gebruikt als plaatsingshulpmiddel voor Beheerde instanties van de Diensten van AEM.
-
-De belangrijkste verschillen tussen Cloud Manager voor AMS en voor de Diensten van de Wolk, zijn wanneer een huurder wordt gecreeerd, zal het met kredieten worden bevolkt die op SKUs worden gebaseerd die door de klant zijn gekocht.
-
->[!NOTE]
->Hoewel dit vanuit operationeel oogpunt van essentieel belang is, wordt het concept van *credits* niet rechtstreeks weergegeven in de gebruikersinterface van Cloud Manager.
-
-Het maken van een normaal programma verbruikt geen kredieten, maar er moet wel een kernkrediet bestaan om een dergelijk programma te kunnen maken.
-Raadpleeg [Een programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)maken voor meer informatie over het maken van verschillende programma&#39;s.
-
-### AEM als cloudservice {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager is een integraal onderdeel van de continue upgradeaanpak van AEM als cloudservice, aangezien deze alle updates voor uw instanties regelt - dit is verplicht.
 
