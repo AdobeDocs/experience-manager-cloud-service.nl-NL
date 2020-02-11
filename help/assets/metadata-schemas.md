@@ -16,21 +16,21 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
 
 1. Als u de eigenschappenpagina voor een element wilt weergeven, klikt of tikt u op het pictogram Eigenschappen **[!UICONTROL van]** weergave in Snelle handelingen op het element in de kaartweergave. U kunt ook het element selecteren in de gebruikersinterface en vervolgens op het pictogram **[!UICONTROL Eigenschappen]** op de werkbalk klikken of erop tikken.
 1. Bewerk verschillende eigenschappen van metagegevens onder de verschillende tabbladen. U kunt het elementtype echter niet wijzigen op de eigenschappenpagina.
-Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
 1. Als u een lijst met formulieren/sjablonen wilt weergeven, klikt u op het AEM-logo en navigeert u naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
-AEM verstrekt de volgende malplaatjes uit de doos:
+   AEM verstrekt de volgende malplaatjes uit de doos:
 
-   * **standaard**: Het basisschema voor metagegevens voor elementen.
+    * **standaard**: Het basisschema voor metagegevens voor elementen.
+
    De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
-i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
-Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-a. **jpeg**: Schema voor activa met subtype `jpeg`.
-b. **tiff**: Schema voor de activa met subtype `tiff`.
+   i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
+   Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+   a. **jpeg**: Schema voor activa met subtype `jpeg`.
+   b. **tiff**: Schema voor de activa met subtype `tiff`.
 
    ii. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
-
-a. **pdf**: Schema voor activa met subtype `pdf`.
+   a. **pdf**: Schema voor activa met subtype `pdf`.
 
    iii. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
 
