@@ -142,11 +142,9 @@ Uw fragment openen voor bewerken:
    >[!NOTE]
    >
    >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
-      >
-      >
-      >
-
-   2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
+   >
+   >
+   >2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
 
 
 3. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
