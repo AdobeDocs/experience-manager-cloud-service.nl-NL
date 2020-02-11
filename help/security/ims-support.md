@@ -2,7 +2,7 @@
 title: IMS-ondersteuning voor Adobe Experience Manager als Cloud Service
 description: 'IMS-ondersteuning voor Adobe Experience Manager als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM als Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auteu
 
 ## Architectuur {#architecture}
 
-IMS-verificatie werkt met het OAuth-protocol tussen AEM en het Adobe IMS-eindpunt. Nadat een gebruiker aan IMS is toegevoegd en over een Adobe-id beschikt, kunnen deze zich aanmelden bij instanties van AEM Managed Services met IMS-referenties.
+IMS-verificatie werkt met het OAuth-protocol tussen AEM en het Adobe IMS-eindpunt. Nadat een gebruiker aan IMS is toegevoegd en een Adobe-id heeft, kunnen deze zich aanmelden bij de AEM-auteurservice met IMS-referenties.
 
 De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en naar keuze aan klant IDP voor SSO worden opnieuw gericht en dan terug naar AEM.
 
