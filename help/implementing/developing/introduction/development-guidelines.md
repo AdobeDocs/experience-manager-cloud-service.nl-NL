@@ -2,7 +2,7 @@
 title: AEM als richtlijnen voor de ontwikkeling van cloudservices
 description: 'In te vullen '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Klanten hebben toegang tot CRXDE-site in de ontwikkelomgeving, maar niet tot het
 
 In de Developer Console for dev, stage, and production environment is een set tools beschikbaar voor foutopsporing in AEM als een Cloud Service Developer-omgeving. De URL kan als volgt worden bepaald door de URL van de auteur of de publicatieservice aan te passen:
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Als kortere weg, kan het volgende CLI bevel van de Manager van de Wolk worden gebruikt om de ontwikkelaarsconsole te lanceren die op een milieuparameter wordt gebaseerd die hieronder wordt beschreven:
 
