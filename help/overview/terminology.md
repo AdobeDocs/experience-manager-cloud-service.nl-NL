@@ -30,7 +30,7 @@ Met betrekking tot Adobe Experience Manager (AEM) worden de volgende termen gebr
 
 <!-- This section of the table must be alphabetic -->
 
-##  Terminologie {#terminology}
+## Terminologie {#terminology}
 
 | Term | Beschrijving |
 |---|---|
