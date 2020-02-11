@@ -2,7 +2,7 @@
 title: Wat is anders en wat is nieuw - Adobe Experience Manager als cloudservice
 description: 'Wat is anders en wat is nieuw - Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
+source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
 
 ---
 
@@ -121,7 +121,6 @@ Adobe werkt proactief alle operationele instanties van de service bij naar de ni
 >Zie [Implementatiearchitectuur](/help/core-concepts/architecture.md#deployment-architecture)voor meer informatie.
 
 ## Cloud Manager {#cloud-manager}
-
 
 Adobe Cloud Manager is een integraal onderdeel van de continue upgradeaanpak van AEM als cloudservice, aangezien deze alle updates voor uw instanties regelt - dit is verplicht.
 
@@ -347,36 +346,4 @@ Het aanbod van bedrijfsmiddelen omvat de verwerking van bedrijfsmiddelen van de 
 
 Zie [overzicht en inleiding tot Elementen als Cloud Service](/help/assets/overview.md)voor meer informatie.
 
-<!--
 
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
