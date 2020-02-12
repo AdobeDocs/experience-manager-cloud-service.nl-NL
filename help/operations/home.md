@@ -2,7 +2,7 @@
 title: Bewerkingen en onderhoud van Adobe Experience Manager als Cloud Service
 description: Adobe Experience Manager als een Cloud Service-bewerking en onderhoud van zelfhulp-bronnen en documentatiekoppelingen
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ Deze pagina bevat een overzicht van de bronnen voor zelfhulp over bewerkingen en
 * [Inhoudsreplicatie](replication.md)
 * [Onderhoudstaken](maintenance.md)
 * [Back-up en herstel](backup.md)
-* [Indexeren](indexing.md)
 
 ## Experience Manager als cloudservicehulplijnen {#aem-guides}
 
