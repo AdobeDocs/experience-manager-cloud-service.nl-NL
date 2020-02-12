@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
    + [AEM-projectpakketstructuur](developing/introduction/aem-project-content-package-structure.md)
    + [Een structuurpakket voor opslagplaats ontwikkelen](developing/introduction/repository-structure-package.md)
    + [De AEM als SDK van de Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [Inhoud zoeken en indexeren](/help/operations/indexing.md)
    + [AEM als richtlijnen voor de ontwikkeling van cloudservices](developing/introduction/development-guidelines.md)
    + [Aan de slag met het ontwikkelen van AEM-sites - WKND-zelfstudie](developing/introduction/develop-wknd-tutorial.md)
    + [AEM als Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
