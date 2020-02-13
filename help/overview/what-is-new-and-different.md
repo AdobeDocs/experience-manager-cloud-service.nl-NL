@@ -2,7 +2,7 @@
 title: Wat is anders en wat is nieuw - Adobe Experience Manager als cloudservice
 description: 'Wat is anders en wat is nieuw - Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM als Clou
 >[!NOTE]
 >
 >Raadpleeg de documentatieset voor [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)voor meer informatie over de serviceversies Op locatie en Beheerd.
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## Architectuur {#architecture}
 
@@ -88,11 +86,9 @@ Hierdoor wordt automatische schaling ingeschakeld voor verschillende gebruikspat
 
 ## Upgrades {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>Voor meer details zie de [het Opstellen Inleiding](/help/implementing/deploying/overview.md).
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Cloud Manager kan momenteel omgevingen maken in drie geografische regio&#39;s (m
 
 ## Onboarding {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>Zie [Inboarding](/help/onboarding/home.md)voor meer informatie.
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ Het is ook aanzienlijk anders, aangezien er nu sprake is van:
 
 >[!NOTE]
 >
->Voor meer informatie, begin met de documentatie van de [Ontwikkelingsrichtsnoeren](/help/implementing/developing/introduction/development-guidelines.md) .
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>Voor meer informatie kunt u beginnen met [Ontwikkelingsrichtlijnen](/help/implementing/developing/introduction/development-guidelines.md) en [Ontwikkelen - de WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ Bewerkingen voor AEM als Cloud Service worden ook ondersteund door een nieuwe in
 
 ## Identiteitsbeheer {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md)voor meer informatie.
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ Dit combineert de voordelen van:
 
 ## Gebruikersinterface voor ontwerpen {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>Voor meer details, is de [Basisbehandeling](/help/sites-cloud/authoring/getting-started/basic-handling.md) een goed uitgangspunt.
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
