@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2020.2.0
 description: Opmerkingen bij de release 2020.2.0
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.2.0.
 
-De Releasedatum is 13 februari 2020.
-
 ## Cloud Manager {#cloud-manager}
+
+Release 2020.2.0 voor Cloud Manager is 13 februari 2020.
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager Release 2020.2.0.
 
