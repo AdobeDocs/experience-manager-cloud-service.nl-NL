@@ -2,7 +2,7 @@
 title: CI/CD Pipeline configureren - Cloud Services
 description: CI/CD Pipeline configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
    Bovendien, kunt u de Trigger van de Plaatsing van de opstelling en Belangrijk Gedrag van de Mislukking van de Opties van de Pijpleiding ook plaatsen.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Klik **sparen** en de pijpleiding wordt getoond op de kaart op het huisscherm met drie acties, zoals hieronder getoond:
 
@@ -97,8 +97,6 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
    * **Bewerken** - hiermee kunt u de pijpleidinginstellingen bewerken
    * **Build** - navigeert aan de uitvoeringspagina, waarvan de pijpleiding kan worden uitgevoerd
    * **Git** beheren - Hiermee kan de gebruiker de benodigde informatie ophalen voor toegang tot de Git-opslagplaats van Cloud Manager
-
-
 
 ## De volgende stappen {#the-next-steps}
 
