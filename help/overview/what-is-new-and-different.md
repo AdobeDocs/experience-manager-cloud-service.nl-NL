@@ -2,7 +2,7 @@
 title: Wat is anders en wat is nieuw - Adobe Experience Manager als cloudservice
 description: 'Wat is anders en wat is nieuw - Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
+source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 
 ---
 
@@ -46,22 +46,24 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM als Clou
 >
 >Zie [Architectuur](/help/core-concepts/architecture.md)voor meer informatie.
 
-### Vorige versies {#previous-versions-architecture}
+<!--
+### Previous Versions {#previous-versions-architecture}
 
-Zowel AEM op-gebouw, als AEM onder Beheerde Diensten gebruikte een statische architectuur die uit een vast aantal machines en instanties bestond.
+Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
 
-![Statische](assets/introduction-01.png "architectuurStatic")
+![Static architecture](assets/introduction-01.png "Static architecture")
 
-Deze:
+These:
 
-* De grootte van de onderneming was afgestemd op het *piekverkeer* (internet) en de *piekactiviteit* (marketing), wat ertoe leidde dat zij gedurende aanzienlijke perioden niet-actief waren:
-   ![De statische structuur moet rekening houden met variërende gebruikspatronenDe statische structuur moet rekening houden met variërende gebruikspatronen](assets/introduction-02.png "")
+* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
+![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
 
-* waren monoolithische toepassingen (de snelstart).
+* Were monolithic applications (the quickstart).
 
-* had één instantie van de auteur; die tijdens onderhoudsbeurten onderbreking ondervond.
+* Had a single author instance; which was subject to downtime during maintenance windows.
 
-### AEM als cloudservice {#aem-as-a-cloud-service-architecture}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
+-->
 
 AEM als Cloud Service heeft nu:
 
@@ -92,13 +94,15 @@ Hierdoor wordt automatische schaling ingeschakeld voor verschillende gebruikspat
 >For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
 -->
 
-### Vorige versies {#previous-versions-upgrades}
+<!--
+### Previous Versions {#previous-versions-upgrades}
 
-Zowel AEM op-gebouw, als AEM onder Beheerde Diensten waren onderworpen aan een vast patroon van een jaarlijkse belangrijke uitgave die door de dienstpakken, eigenschapspakken en heet-moeilijke situaties werd uitgebreid. Vaak zou een grote versie twee of meer jaar duren.
+Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
 
-Afhankelijk van het upgradetype kan het proces aanzienlijke voorbereiding vereisen, bestaande uit analyse, ontwikkeling en testen, gevolgd door een venster van downtime voor de daadwerkelijke upgrade.
+Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
 
-### AEM als cloudservice {#aem-as-a-cloud-service-upgrades}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
+-->
 
 AEM als Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten volledig up-to-date zijn. Dit betekent dat alle verbeteringsverrichtingen volledig geautomatiseerd zijn, zodat vereist geen onderbreking van de dienst voor gebruikers.
 
@@ -168,13 +172,17 @@ Cloud Manager kan momenteel omgevingen maken in drie geografische regio&#39;s (m
 >For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
 -->
 
-### Vorige versies {#previous-versions-onboarding}
+<!--
+### Previous Versions {#previous-versions-onboarding}
 
-Bij de uitvoering van een AEM-project werden in principe de traditionele methoden voor projectbeheer gevolgd.
+Implementing an AEM project basically followed traditional project management methods.  
 
-### AEM als cloudservice {#aem-as-a-cloud-service-onboarding}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
 
-Het starten en beheren van een AEM-project is aanzienlijk eenvoudiger wanneer u AEM gebruikt als cloudservice omdat Adobe verantwoordelijk is voor vele aspecten:
+Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
+-->
+
+Het starten en beheren van een AEM-project is eenvoudig wanneer u AEM gebruikt als cloudservice omdat Adobe verantwoordelijk is voor vele aspecten:
 
 * AEM-basislijnafbeeldingen zijn geoptimaliseerd voor specifieke gebruiksgevallen.
 
@@ -208,17 +216,24 @@ Het is ook aanzienlijk anders, aangezien er nu sprake is van:
 >For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
 -->
 
-### Vorige versies {#previous-versions-developing}
+<!--
+### Previous Versions {#previous-versions-developing}
+-->
 
 <!-- needs more detail -->
-Ontwikkeling was een intensieve taak die lokaal werd uitgevoerd, gevolgd door implementatie op de productie-instantie.
 
-### AEM als cloudservice {#aem-as-a-cloud-service-developing}
+<!-- 
+Development was an intensive task performed locally, followed by deployment to the production instance. 
+
+### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
+-->
 
 <!-- Will need information for new customers -->
 De nieuwe architectuur die AEM als Cloud Service ondersteunt, brengt enkele belangrijke wijzigingen aan in de algemene ontwikkelaarservaring. Een van de belangrijkste doelstellingen voor AEM als Cloud Service is om ervaren klanten (die AEM op locatie of in de context van de Adobe Managed Services hebben gebruikt) toe te staan zo snel mogelijk naar AEM te migreren als een Cloud Service, zonder het grootste deel van hun aangepaste code te hoeven herschrijven. Het is echter mogelijk dat er nog enkele aanpassingen nodig zijn.
 
-#### Cloud Development {#aem-as-a-cloud-service-developing-cloud-development}
+<!-- adjusting title level -->
+
+### Cloud Development {#aem-as-a-cloud-service-developing-cloud-development}
 
 Voor bestaande AEM-toepassingen die als cloudservice op AEM worden uitgevoerd, worden de volgende stappen verwacht:
 
@@ -246,7 +261,9 @@ Vanwege de duidelijke scheiding van code en inhoud kunnen ontwikkelaars een bepa
 
 * Gebruikers en gebruikersgroepen van services
 
-#### Lokale ontwikkeling {#aem-as-a-cloud-service-developing-local-development}
+<!-- adjusting title level -->
+
+### Lokale ontwikkeling {#aem-as-a-cloud-service-developing-local-development}
 
 Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AEM-toepassingen buiten de AEM als cloudservicecontext te ontwikkelen. Hiertoe worden de volgende artefacten ter beschikking gesteld van de ontwikkelaars:
 
@@ -264,11 +281,13 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 >
 >Voor meer details begin met [Steun](/help/operations/backup.md), [Indexering](/help/operations/indexing.md), en [andere onderhoudstaken](/help/operations/maintenance.md).
 
-### Vorige versies {#previous-versions-operations-and-performance}
+<!--
+### Previous Versions {#previous-versions-operations-and-performance}
 
-In het verleden, en met name aan de zijde van de auteur, was het nodig een instantie periodiek te stoppen; voor routinematige onderhoudswerkzaamheden en upgrades en updates. Voor sommige klanten resulteerde dit wekelijks in uren van geplande onderbreking.
+In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
 
-### AEM als cloudservice {#aem-as-a-cloud-service-operatioms-and-performance}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
+-->
 
 Met AEM als Cloud Service worden dergelijke bewerkingen geautomatiseerd zodat een onderbreking van de service niet langer nodig is.
 
@@ -290,19 +309,20 @@ Bewerkingen voor AEM als Cloud Service worden ook ondersteund door een nieuwe in
 >For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
 -->
 
-### Vorige versies {#previous-versions-identity-management}
+<!--
+### Previous Versions {#previous-versions-identity-management}
 
-Standaard was identiteitsbeheer intern voor AEM.
+By default, identity management was internal to AEM.
 
 >[!NOTE]
 >
->AEM 6.4.3.0 introduceerde:
+>AEM 6.4.3.0 introduced:
 >
->* Ondersteuning voor beheerconsole voor AEM-instanties.
->* Op Adobe IMS (Identity Management System) gebaseerde verificatie voor klanten van door AEM beheerde services.
+>* Admin Console support for AEM instances. 
+>* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
 
-
-### AEM als cloudservice {#aem-as-a-cloud-service-identity-management}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
+-->
 
 Een belangrijke wijziging in AEM als cloudservice is het volledig geïntegreerde gebruik van Adobe-id&#39;s voor toegang tot de auteurslaag.
 
@@ -322,11 +342,13 @@ Dit combineert de voordelen van:
 >For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
 -->
 
-### Vorige versies {#previous-versions-authoring}
+<!--
+### Previous Versions {#previous-versions-authoring}
 
-De gebruikersinterface van de auteurinstantie (UI), voor zowel Plaatsen als Activa, werd progressief ontwikkeld en geoptimaliseerd om voor alle gebruik-gevallen te behandelen, gebruikend zowel aanraking-toegelaten als klassieke UIs.
+The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
 
-### AEM als cloudservice {#aem-as-a-cloud-service-authoring}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
+-->
 
 De basisbeginselen van het auteursgebruikersinterface (UI), voor zowel Plaatsen als Activa, zullen zeer vertrouwd aan iedereen zijn die AEM in het verleden heeft gebruikt.
 
@@ -345,5 +367,3 @@ Adobe Experience Manager Assets as a Cloud Service biedt een in de cloud geïnte
 Het aanbod van bedrijfsmiddelen omvat de verwerking van bedrijfsmiddelen van de volgende generatie in de cloud en het opnemen en zoeken van bedrijfsmiddelen van hoge kwaliteit.
 
 Zie [overzicht en inleiding tot Elementen als Cloud Service](/help/assets/overview.md)voor meer informatie.
-
-
