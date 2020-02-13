@@ -2,7 +2,7 @@
 title: Lees uw testresultaten - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ In dit JAR-bestand moeten de klassenamen van de eigenlijke tests die uitgevoerd 
 
 Een klasse met de naam `com.myco.tests.aem.ExampleIT` zou bijvoorbeeld worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.ExampleTest` niet.
 
-De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen.
+De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Raadpleeg [Git Link](https://github.com/adobe/aem-testing-clients) voor meer informatie.
 
 ## Aangepaste functionele tests {#custom-functional-test}
 
@@ -126,7 +126,7 @@ De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanw
 Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Deze stap wordt onmiddellijk na de implementatie van het werkgebied uitgevoerd.
 
 > Opmerking:
->Met de knop Logboek **** downloaden hebt u toegang tot een ZIP-bestand met de logbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de hierboven beschreven functionaliteit voor het downloaden of beheren van logbestanden.
+>Met de knop Logboek **** downloaden hebt u toegang tot een ZIP-bestand met de logbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
 
 ## Uitvoering lokale test {#local-test-execution}
 
