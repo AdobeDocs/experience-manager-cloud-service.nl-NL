@@ -2,7 +2,7 @@
 title: Uw code implementeren - cloudservices
 description: Uw code implementeren - cloudservices
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Zodra u uw **Pijpleiding** (bewaarplaats, milieu, en het testen milieu) hebt gev
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
    * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie Een AEM-toepassingsproject [](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) maken voor meer informatie over de ontwikkelomgeving.
-   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [De testresultaten](understand-test-results.md) begrijpen voor meer informatie over het testproces.
+   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
 
       ![](assets/stage-deployment.png)
    Voor het testen **van het** werkgebied worden de volgende stappen uitgevoerd:
 
-   * Functionele tests van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen. Zie [De testresultaten](understand-test-results.md) begrijpen voor meer informatie over het testproces.
-   * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Zie [De testresultaten](understand-test-results.md) begrijpen voor meer informatie over het testproces.
+   * Functionele tests van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
+   * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
 
       ![](assets/stage-testing.png)
 
