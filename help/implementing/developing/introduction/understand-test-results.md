@@ -2,7 +2,7 @@
 title: Lees uw testresultaten - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanw
 
 Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Deze stap wordt onmiddellijk na de implementatie van het werkgebied uitgevoerd.
 
-> Opmerking:
+>[!NOTE]
 >Met de knop Logboek **** downloaden hebt u toegang tot een ZIP-bestand met de logbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
 
 ## Uitvoering lokale test {#local-test-execution}
