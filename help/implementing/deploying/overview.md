@@ -2,7 +2,7 @@
 title: Distribueren naar AEM als cloudservice
 description: 'Distribueren naar AEM als cloudservice '
 translation-type: tm+mt
-source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
+source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 
 ---
 
@@ -48,7 +48,7 @@ Net als bij bestaande AEM-versies buiten de cloud, wordt een lokale, offline ont
 > [!OPMERKING}
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
-Als u aangepaste code voor een interne release wilt ontwikkelen, moet de relevante versie van de [AEM als SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) voor de cloudservice worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/overview.md)voor meer informatie over het gebruik van de functie als een programma voor de verzending van cloudservices.
+Als u aangepaste code voor een interne release wilt ontwikkelen, moet de relevante versie van de [AEM als SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) voor de cloudservice worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/overview.md)voor meer informatie over het gebruik van de AEM als programma&#39;s voor de verzending van cloudservices.
 
 ## Inhoudspakketten implementeren via Cloud Manager en Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
