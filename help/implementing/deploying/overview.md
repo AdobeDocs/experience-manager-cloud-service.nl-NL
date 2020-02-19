@@ -1,19 +1,23 @@
 ---
-title: Distribueren naar AEM als cloudservice
-description: 'Distribueren naar AEM als cloudservice '
+title: Implementeren naar AEM als Cloud Service
+description: 'Implementeren naar AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
 
-# Distribueren naar AEM als cloudservice {#deploying-to-aem-as-a-cloud-service}
+# Implementeren naar AEM als Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Inleiding {#introduction}
 
 De grondbeginselen van codeontwikkeling zijn gelijkaardig in AEM als de Dienst van de Wolk in vergelijking met de oplossingen van AEM op Premise en Beheerde Diensten. Ontwikkelaars schrijven code en testen deze lokaal, waarna AEM als een Cloud Service-omgeving op afstand wordt geplaatst. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor beheerde services, is vereist. Dit is nu het enige mechanisme voor het implementeren van code naar AEM als een Cloud Service-omgeving.
 
 De update van de AEM-versie is altijd een afzonderlijke implementatiegebeurtenis en geen aangepaste code die u wilt doorvoeren. Op een andere manier bekeken, zouden de versies van de douanecode tegen de versie moeten worden getest AEM die op productie is aangezien dat is wat het bovenop van zal worden opgesteld. AEM versie updates die daarna gebeuren, die in vergelijking met de Beheerde Diensten vandaag vaak zullen voorkomen, worden automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
+
+De volgende video biedt een overzicht op hoog niveau over hoe u code als Cloud Service naar AEM kunt implementeren:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun praktijken moeten aanpassen, zodat ze zowel met AEM werken als met de Version-updates van een Cloud Service als met de updates van de klant.
 
@@ -45,7 +49,7 @@ Voor eerdere AEM-oplossingen is de meest recente AEM-versie niet vaak gewijzigd 
 
 Net als bij bestaande AEM-versies buiten de cloud, wordt een lokale, offline ontwikkeling op basis van een specifieke QuickStart ondersteund en wordt verwacht dat deze in de meeste gevallen het juiste middel is om fouten op te sporen.
 
-> [!OPMERKING}
+>[!NOTE]
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
 Als u aangepaste code voor een interne release wilt ontwikkelen, moet de relevante versie van de [AEM als SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) voor de cloudservice worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/overview.md)voor meer informatie over het gebruik van de AEM als programma&#39;s voor de verzending van cloudservices.
@@ -107,7 +111,8 @@ Na de overgang naar de nieuwe versie van de toepassing:
 
 Het is mogelijk om installatie van veranderlijke inhoud tot auteur te beperken of te publiceren door pakketten in te bedden installeer.auteur of installeer.publish omslag onder `/apps`. Nadere bijzonderheden zijn te vinden in de [AEM-documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) over de aanbevolen projectherstructurering.
 
->[!NOTE] Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
+>[!NOTE]
+> Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
 
 Ook, is er geen mechanisme om de veranderlijke veranderingen van het inhoudspakket terug te draaien nadat zij zijn toegepast. Als klanten een probleem ontdekken, kunnen zij verkiezen om het in hun volgende codeversie of als laatste redmiddel te bevestigen, het volledige systeem aan een punt in tijd vóór de plaatsing herstellen.
 
@@ -123,7 +128,8 @@ In de volgende gevallen verdient het de voorkeur de hand te houden aan het coder
 * Groepen maken/verwijderen
 * Gebruikers maken/verwijderen
 * Voeg ACLs toe
-   > [!NOTE] De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
+   > [!NOTE]
+   > De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
 * Pad toevoegen (bijvoorbeeld voor basismapstructuren)
 * CND&#39;s toevoegen (geen typedefinities)
 
