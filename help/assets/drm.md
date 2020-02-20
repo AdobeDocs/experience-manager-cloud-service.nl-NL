@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager-middelen
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ U kunt de vervalstatus van een element op de volgende plaatsen bekijken:
 
 In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlopen subelementen.
 
-1. Klik in de middelenconsole op het pictogram Zoeken op de werkbalk om het vak Universeel zoeken weer te geven.
+1. Klik in de middelenconsole op het pictogram Zoeken op de werkbalk om het veld Zoeken weer te geven.
 
-1. Met de curseur in het Universele vakje van het Onderzoek, druk de sleutel van de Terugkeer om de pagina van de Resultaten van het Onderzoek te tonen.
+1. Met de curseur in het vakje van het Onderzoek, druk de Enter sleutel om de pagina van onderzoeksresultaten te tonen.
 
 1. Klik op het pictogram GlobalNav om het deelvenster Zoeken weer te geven.
 
@@ -42,13 +42,13 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 
 1. Selecteer **[!UICONTROL Verlopen]**. De verlopen elementen worden weergegeven in zoekresultaten.
 
-Wanneer u de optie **Verlopen** kiest, worden in de middelenconsole alleen de verlopen elementen en subelementen weergegeven waarnaar wordt verwezen door samengestelde elementen. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan, worden zij getoond nadat de Middelen van AEM ontdekt dat zij verlopen subassets de volgende tijd van de planner in werking stellen van verwijzingen voorzien.
+Wanneer u de optie **[!UICONTROL Verlopen]** kiest, worden in de middelenconsole alleen de verlopen elementen en subelementen weergegeven waarnaar wordt verwezen door samengestelde elementen. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan, worden zij getoond nadat de Middelen van AEM ontdekt dat zij verlopen subassets de volgende tijd van de planner in werking stellen van verwijzingen voorzien.
 
 Als u de vervaldatum van een gepubliceerd element aan een datum vroeger dan de huidige plannercyclus wijzigt, ontdekt het programma nog dit element als verlopen activa in de volgende tijd het loopt en wijst dienovereenkomstig op status.
 
 Bovendien als een glitch of een fout de planner verhindert verlopen activa in de huidige cyclus te ontdekken, onderzoekt de planner deze activa in de volgende cyclus opnieuw en ontdekt hun verlopen status.
 
-Om de middelenconsole in staat te stellen de referentiecomponenten samen met de verlopen submiddelen weer te geven, configureert u een **Adobe CQ DAM-workflow voor meldingen** bij verlopen in AEM Configuration Manager.
+Om de middelenconsole in staat te stellen de referentiecomponenten samen met de verlopen submiddelen weer te geven, configureert u een **[!UICONTROL Adobe CQ DAM-workflow voor meldingen]** bij verlopen in AEM Configuration Manager.
 
 1. Open AEM Configuration Manager.
 1. Kies Bericht bij verlopen **[!UICONTROL van Adobe CQ DAM]**. Standaard is **[!UICONTROL Tijdgebaseerde planner]** geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
@@ -90,7 +90,7 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
 1. Als u naar elementen wilt zoeken op basis van hun status, klikt of tikt u op het pictogram **[!UICONTROL Zoeken]** om de zoekbalk weer te geven.
 
-1. Druk op Return en klik op het pictogram **[!UICONTROL GlobalNav]** om het deelvenster Zoeken weer te geven.
+1. Druk op Enter en klik/tik op het pictogram AEM om het deelvenster Zoeken weer te geven.
 1. Tik in het deelvenster Zoeken op **[!UICONTROL Publicatiestatus]** of klik op Publiceren en selecteer **[!UICONTROL Gepubliceerd]** om te zoeken naar gepubliceerde elementen in AEM-elementen.
 
 1. Tik/klik op **[!UICONTROL Goedkeuringsstatus]** en klik op de gewenste optie om te zoeken naar goedgekeurde of geweigerde middelen.
