@@ -2,7 +2,7 @@
 title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
 description: De functie voor responsieve code gebruiken om geoptimaliseerde afbeeldingen te leveren
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -15,7 +15,7 @@ Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw
 
 Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
 
-Zie ook URLs aan uw Toepassing van het Web [verbinden.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 **Geoptimaliseerde afbeeldingen leveren voor een responsieve site**:
 
@@ -44,4 +44,4 @@ Zie ook URLs aan uw Toepassing van het Web [verbinden.](linking-urls-to-yourweba
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
