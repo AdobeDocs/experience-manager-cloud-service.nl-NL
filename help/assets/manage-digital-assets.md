@@ -4,12 +4,12 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Elementen beheren {#manag-assets}
+# Elementen beheren {#manage-assets}
 
 In dit artikel wordt beschreven hoe u elementen beheert en bewerkt in Adobe Experience Manager (AEM)-middelen. Zie Elementen van [inhoudsfragmenten](content-fragments/content-fragments.md) voor het beheren van Content Fragments.
 
@@ -32,32 +32,7 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden niet onders
 
 ## Elementen uploaden {#uploading-assets}
 
-Zie Digitale elementen [toevoegen aan Experience Manager](add-assets.md).
-
-### Gestroomde uploads {#streamed-uploads}
-
-Als u veel middelen uploadt naar AEM, nemen de I/O-verzoeken om de server drastisch toe, waardoor de uploadefficiëntie afneemt en zelfs een deel van de uploadtaken time-out kan veroorzaken. AEM Assets ondersteunt gestreamd uploaden van elementen. Gestroomd uploaden vermindert de schijf-I/O tijdens het uploaden door opslag van middelen in een tijdelijke map op de server te voorkomen voordat deze naar de opslagplaats wordt gekopieerd. In plaats daarvan worden de gegevens rechtstreeks naar de gegevensopslagruimte overgedragen. Op deze manier wordt de uploadtijd voor grote middelen en de mogelijkheid van time-outs verminderd. Gestroomde upload wordt standaard ingeschakeld in AEM Assets.
-
->[!NOTE]
->
->Het uploaden naar streaming is uitgeschakeld voor AEM&#39;s die op de JEE-server worden uitgevoerd met servlet-api-versie lager dan 3.1.
-
-### ZIP-archief met elementen extraheren {#extractzip}
-
-U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. Met AEM kunt u een ZIP-archief extraheren naar een DAM-locatie. Als de archiefbestanden geen ZIP als extensie bevatten, schakelt u detectie van bestandstypen met inhoud in.
-
-Selecteer één ZIP-archief tegelijk, klik op Archiveren **** extraheren en selecteer een doelmap. Selecteer een optie om eventuele conflicten af te handelen. Als de elementen in het ZIP-bestand al in de doelmap staan, kunt u een van de volgende opties selecteren: extractie overslaan, bestaande bestanden vervangen, beide elementen behouden door een andere naam te geven of een nieuwe versie te maken.
-
-Nadat de extractie is voltooid, brengt AEM u op de hoogte in het systeemvak. Terwijl AEM het ZIP extraheert, kunt u terugkeren naar uw werk zonder de extractie te onderbreken.
-
-![Melding van de zip-extractie](assets/zip_extract_notification.png)
-
-Enkele beperkingen van de functie zijn:
-
-* Als er op de bestemming een map met dezelfde naam staat, worden de elementen uit het ZIP-bestand geëxtraheerd naar de bestaande map.
-* Als u de extractie annuleert, worden de reeds geëxtraheerde elementen niet verwijderd.
-* U kunt niet twee ZIP-bestanden tegelijk selecteren en extraheren. U kunt slechts één ZIP-archief tegelijk extraheren.
-* Als tijdens het uploaden van een ZIP-archief in het dialoogvenster voor uploaden een serverfout van 500 wordt weergegeven, probeert u het opnieuw nadat u het laatste servicepack hebt geïnstalleerd.
+Zie Digitale elementen [toevoegen aan Experience Manager](add-assets.md)voor meer informatie.
 
 ## Elementen voorvertonen {#previewing-assets}
 
@@ -100,13 +75,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
    >[!NOTE]
    >
-   >Voor het maken van tags is schrijfmachtiging vereist voor `/content/cq:tags/default` de CRX-opslagplaats.
-
-1. Tik/klik op het tabblad **[!UICONTROL Geavanceerd]** en tik/klik op de gewenste positie op de ster om een classificatie voor het element op te geven.
-
-   ![ratings](assets/ratings.png)
-
-   De beoordelingsscore die u aan het element toewijst, wordt onder **[!UICONTROL Uw beoordelingen]** weergegeven. De gemiddelde ratingscore die het actief heeft ontvangen van gebruikers die het actief beoordeelden, wordt weergegeven onder **[!UICONTROL Classificatie]**. Daarnaast wordt de opsplitsing van de ratingscores die bijdragen tot de gemiddelde ratingscore weergegeven onder **[!UICONTROL Beoordelingsonderverdelingen]**. U kunt middelen zoeken op basis van gemiddelde score.
+   >Als u tags wilt maken, moet u schrijfmachtigingen hebben op het `/content/cq:tags/default` pad in de CRX-opslagruimte.
 
 1. Als u gebruiksstatistieken voor het element wilt weergeven, klikt of tikt u op het tabblad **[!UICONTROL Inzichten]** .
 
@@ -118,7 +87,8 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
    Zie [Asset Insights](assets-insights.md)voor meer informatie.
 
 1. Tik/klik op **[!UICONTROL Opslaan en sluiten]**.
-1. Navigeer naar de gebruikersinterface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, waarderingen, enzovoort, worden weergegeven op de elementenkaart in de Kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
+
+1. Navigeer naar de gebruikersinterface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving en tags, worden weergegeven op de elementenkaart in de Kaart-weergave en onder de desbetreffende kolommen in de lijstweergave.
 
 ## Elementen kopiëren {#copying-assets}
 
@@ -239,28 +209,6 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund.
 
-### Subelementen weergeven {#viewing-subassets}
-
-In AEM kunnen subelementen worden gegenereerd voor elementen met ondersteunde bestandsindelingen van meerdere pagina&#39;s, zoals PDF, AI, PowerPoint/Apple Keynote en InDesign. Deze subelementen zijn vergelijkbaar met normale elementen, maar ze zijn gekoppeld aan het bovenliggende element en maken de weergave van meerdere pagina&#39;s in de aanraakinterface eenvoudiger.
-
-Genereren van subelementen is standaard uitgeschakeld. Als u het genereren van subelementen wilt inschakelen, voegt u de stap Subelement **[!UICONTROL maken]** toe aan de DAM-workflow voor het bijwerken van elementen.
-
-Voor Word-documenten genereert de DAM-workflow Word-documenten parseren een `cq:Page` component van de inhoud van het Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
-
-1. Als u subelementen wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina.
-
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Submiddelen]** in de lijst
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >De optie **Subassets** wordt alleen weergegeven als er submiddelen beschikbaar zijn/zijn gegenereerd voor het element.
-
-   Wanneer u **Subassets** in de lijst selecteert, worden op de pagina **Subassets** de subassets weergegeven die aan het bovenliggende element zijn gekoppeld.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
-
 ## Elementen verwijderen {#delete-assets}
 
 Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
@@ -293,7 +241,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 ## Elementen downloaden {#download-assets}
 
-Zie Elementen [downloaden van AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Elementen publiceren {#publish-assets}
 
@@ -365,7 +313,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
 1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat AEM u heeft geverifieerd.
 
-## Zoeken in middelen {#search-assets}
+## Assets doorzoeken {#search-assets}
 
 Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
@@ -564,43 +512,11 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >Als het element subelementen bevat, kunt u alle subelementen samen met de specifieke paginagewijze annotaties afdrukken.
-
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u de PDF-configuratie **[!UICONTROL voor]** annotaties in Configuratiebeheer en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
-
-Als een element annotaties in vreemde talen bevat (met name niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
-
-1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
-
-   * Geef in de directory Systeemlettertypen het volledige pad naar de map met lettertypen op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. AEM haalt de lettertypen op uit deze map.
-   * Maak een map met de naam `fonts` in de ``crx-quickstart`` map. CQ-DAM-Handler-Gibson Font Manager Service haalt de lettertypen automatisch op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de directory Adobe Server Fonts.
-
-   * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory met lettertypen voor klanten.
-
-1. Open de PDF-configuratie van de annotatie via de URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configureer de Annotatie-PDF met de juiste set lettertypefamilies als volgt:
-
-   * Neem de tekenreeks op `<font_family_name_of_custom_font, sans-serif>` in de optie voor de lettertypefamilie. Als u bijvoorbeeld annotaties wilt afdrukken in CJK (Chinees, Japans en Koreaans), neemt u de tekenreeks op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in de optie voor lettertypefamilies. Als u annotaties wilt afdrukken in het Hindi, downloadt u het juiste lettertype en configureert u de lettertypefamilie als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Start de AEM-instantie opnieuw.
-
-Hier ziet u hoe u AEM kunt configureren voor het afdrukken van annotaties in CJK (Chinees, Japans en Koreaans):
-
-1. Download Google Noto CJK-lettertypen van de volgende koppelingen en sla deze op in de lettertypemap die is geconfigureerd in Font Manager Service.
-
-   * All in One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (voor Europese talen): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Geen lettertypen voor een taal van uw keuze: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configureer het PDF-bestand met annotaties door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
-1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een geschikt item (gescheiden door komma&#39;s) toe aan de standaardlettertypefamilie.
 
 ## Asset versioning {#asset-versioning}
 
