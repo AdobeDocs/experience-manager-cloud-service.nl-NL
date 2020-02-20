@@ -4,7 +4,7 @@ description: Begrijp het concept inzameling in activa AEM. Leer hoe u verzamelin
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -102,7 +102,7 @@ U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of ma
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches)te wijzigen.
 
 1. Tik in de gebruikersinterface Middelen op het pictogram **[!UICONTROL Zoeken]** op de werkbalk.
-1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
+1. Druk op Enter terwijl de cursor in het vak Onderzoek staat.
 1. Tik/klik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
 1. Selecteer in de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 1. Selecteer **[!UICONTROL Bestanden]** in de lijst **[!UICONTROL Bestanden en mappen]**.
@@ -225,7 +225,7 @@ U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste ve
 
 In de gebruikersinterface Elementen kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Opgeslagen zoekopdrachten]**, kunt u ze later openen via de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** in het deelvenster Filter. Als u een opgeslagen zoekopdracht maakt, maakt u ook een slimme verzameling.
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** . De opgeslagen vraag van Zoekopdrachten voor de inzameling wordt bewaard in het `dam:query` bezit in CRXDE bij de relatieve plaats `/content/dam/collections/`.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** . De opgeslagen vraag van Zoekopdrachten voor de inzameling wordt bewaard in het `dam:query` bezit in CRX bij de relatieve plaats `/content/dam/collections/`.
 
 >[!NOTE]
 >
