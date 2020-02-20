@@ -2,20 +2,20 @@
 title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
 description: Leer hoe u video of afbeeldingen van dynamische media op een webpagina insluit
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# De Dynamic Media Video- of Image-viewer insluiten op een webpagina {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Gebruik de functie Code **** insluiten wanneer u de video wilt afspelen of een element wilt weergeven dat is ingesloten op een webpagina. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster Code **** insluiten.
 
 U sluit alleen URL&#39;s in als u _geen_ AEM als uw WCM gebruikt. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
-Zie URL&#39;s [koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
+See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
-Zie Geoptimaliseerde afbeeldingen [leveren voor een responsieve site.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 >[!NOTE]
 >
@@ -49,4 +49,4 @@ Zie Geoptimaliseerde afbeeldingen [leveren voor een responsieve site.](responsiv
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
