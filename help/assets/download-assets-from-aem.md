@@ -1,14 +1,14 @@
 ---
-title: Elementen downloaden van AEM
+title: Assets van AEM downloaden
 description: Leer hoe u elementen downloadt van AEM en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Elementen downloaden van AEM {#download-assets-from-aem}
+# Assets van AEM downloaden {#download-assets-from-aem}
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit AEM Assets verzenden. Gedownloade elementen worden gebundeld in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. U kunt maximaal 500 elementen per exporttaak gebruiken.
 
@@ -26,7 +26,7 @@ Hieronder vindt u de opties Exporteren/downloaden. Dynamische uitvoeringen zijn 
 
 | Opties voor exporteren of downloaden | Beschrijvingen |
 |---|---|
-| [!UICONTROL Activa] | Selecteer deze optie om het element in de oorspronkelijke vorm te downloaden zonder dat er uitvoeringen plaatsvinden. |
+| [!UICONTROL Assets] | Selecteer deze optie om het element in de oorspronkelijke vorm te downloaden zonder dat er uitvoeringen plaatsvinden. |
 | [!UICONTROL Uitvoeringen] | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. |
 | [!UICONTROL Dynamische uitvoeringen] | Een dynamische vertoning genereert andere uitvoeringen ter plekke. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst met voorinstellingen voor afbeeldingen. Bovendien kunt u de grootte en de maateenheid, de indeling, de kleurruimte, de resolutie en alle wijzigingstoetsen voor afbeeldingen selecteren (bijvoorbeeld om de afbeelding om te keren) |
 | [!UICONTROL E-mail] | Er wordt een e-mailbericht verzonden naar de gebruiker. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> De malplaatjes die u tijdens plaatsing aanpast zouden op deze plaatsen moeten aanwezig zijn: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>U kunt huurdersspecifieke douanesjablonen bij deze plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
@@ -61,8 +61,6 @@ De functie `Asset Download Servlet` kan worden uitgeschakeld op een AEM-publicat
 1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie geef de `dispatcher.any` configuratie uit en voeg een nieuwe regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. U kunt de component OSGi op een Publish instantie manueel onbruikbaar maken, door aan de Console te navigeren OSGi bij `<aem-host>/system/console/components`. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Uitschakelen]**.
 
 >[!MORELIKETHIS]
 >
