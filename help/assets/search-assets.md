@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -15,7 +15,7 @@ U kunt een hogere snelheid voor inhoud bereiken met gebruikersvriendelijke optie
 
 AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
-| Zoeken in middelen | Configuratie en beheer | Werken met zoekresultaten |
+| Assets doorzoeken | Configuratie en beheer | Werken met zoekresultaten |
 |--- |--- |--- |
 | [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
 | [Gebruiksinterface voor zoeken begrijpen](#searchui) |  | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
@@ -221,7 +221,7 @@ De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken n
 
 Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. Asset Selector is beschikbaar op `https://[aem_server]:[port]/aem/assetpicker.html`. U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
-De elementenkiezer gebruikt het HTML5 Window.postMessage-bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren.
+De elementenkiezer gebruikt het HTML5- `Window.postMessage` bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren.
 
 U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer in een bepaalde context te starten:
 
