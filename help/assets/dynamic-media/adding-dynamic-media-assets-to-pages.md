@@ -2,12 +2,12 @@
 title: Dynamische media-elementen toevoegen aan pagina's
 description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Dynamische media-elementen toevoegen aan pagina&#39;s{#adding-dynamic-media-assets-to-pages}
+# Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
 Als u de functionaliteit Dynamische media wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360 Media** rechtstreeks op de pagina toevoegen. U doet dit door de modus Lay-out in te voeren en de componenten Dynamische media in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en elementen aan de component toevoegen. De dynamische componenten van Media zijn slim - zij weten of u een beeld of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
 
@@ -15,7 +15,7 @@ U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM als 
 
 >[!NOTE]
 >
->U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. Zie Dynamische media-elementen [publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Een component Dynamische media aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
@@ -301,7 +301,7 @@ Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](/help/assets/dynamic-media/http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](/help/assets/dynamic-media/http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
 
 >[!MORELIKETHIS]
 >
