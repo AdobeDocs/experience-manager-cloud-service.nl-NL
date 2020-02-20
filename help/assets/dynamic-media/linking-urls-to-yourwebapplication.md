@@ -1,13 +1,13 @@
 ---
-title: URL's koppelen aan uw webtoepassing
+title: URL's koppelen aan uw webapplicatie
 description: URL's koppelen aan uw webtoepassing in dynamische media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# URL&#39;s koppelen aan uw webtoepassing {#linking-urls-to-your-web-application}
+# URL&#39;s koppelen aan uw webapplicatie {#linking-urls-to-your-web-application}
 
 Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
@@ -19,11 +19,11 @@ Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen,
 >
 >URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de dynamische mediaserver. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
-Zie ook Video- of afbeeldingsviewer [insluiten op een webpagina.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
 
 Zie ook URL&#39;s [koppelen aan uw webtoepassing.](video.md)
 
-Zie ook Geoptimaliseerde afbeeldingen [leveren voor een responsieve site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 Zie ook Elementen [uploaden.](/help/assets/manage-digital-assets.md#uploading-assets)
 
@@ -205,4 +205,4 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
