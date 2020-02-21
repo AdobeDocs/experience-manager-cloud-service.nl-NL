@@ -3,14 +3,14 @@ title: Workflows toepassen op elementen
 description: Leer hoe u workflows toepast op elementen, mappen en verzamelingen in Adobe Experience Manager-middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Workflows toepassen op elementen {#applying-workflows-to-assets}
 
-U gebruikt workflows in digitale elementen om het element te activeren of watermerken te maken. Sommige workflows voor elementen zijn geconfigureerd om automatisch uit te voeren op basis van bepaalde voorwaarden. De workflow die automatisch een vertoning maakt, wordt bijvoorbeeld automatisch uitgevoerd nadat een afbeelding is bewerkt.
+U gebruikt workflows in digitale elementen om het element te activeren. Sommige workflows voor elementen zijn geconfigureerd om automatisch uit te voeren op basis van bepaalde voorwaarden. De workflow die automatisch een vertoning maakt, wordt bijvoorbeeld automatisch uitgevoerd nadat een afbeelding is bewerkt.
 
 ## Een workflow toepassen op een AEM-element {#apply-a-workflow-to-an-aem-asset}
 
