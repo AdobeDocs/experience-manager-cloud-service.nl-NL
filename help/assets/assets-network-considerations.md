@@ -3,7 +3,7 @@ title: Elementennetwerkoverwegingen
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van Middelen AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Hier volgen enkele punten die u in overweging wilt nemen:
 
 * Lezen/schrijven van XMP-metagegevens
 * Automatische activering en replicatie
-* Watermerken
 * Subelement opnemen/pagina uitnemen
 * Overlappende workflows.
 
 Hier volgt een voorbeeld van de klant voor het definiëren van een workflow met middelen.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
