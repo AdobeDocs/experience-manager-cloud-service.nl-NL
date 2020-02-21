@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -36,7 +36,6 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    + [Metadataschema](metadata-schemas.md)
    + [Videoassets beheren](manage-video-assets.md)
    + [Assets van AEM downloaden](download-assets-from-aem.md)
-   + [Watermerk aan assets toevoegen](add-watermark-to-assets.md)
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor assets](drm.md)
 + Assets configureren, beheren en uitbreiden {#admin}
