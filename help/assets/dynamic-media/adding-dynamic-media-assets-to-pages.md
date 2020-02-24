@@ -2,7 +2,7 @@
 title: Dynamische media-elementen toevoegen aan pagina's
 description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ U kunt de volgende instelling voor dynamische media bewerken door in de componen
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
    U kunt de volgende geavanceerde instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+
+* **[!UICONTROL Hoogte-breedteverhouding]** inschakelen - Komt overeen met de hoogte-breedteverhouding van de oorspronkelijke afbeelding wanneer u een slimme uitsnijdvertoning selecteert.
 
 * **[!UICONTROL Titel]**- Wijzig de titel van de afbeelding Slim uitsnijden.
 
