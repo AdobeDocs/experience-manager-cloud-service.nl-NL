@@ -2,7 +2,7 @@
 title: Programma- en programmatypen
 description: Programma- en programmatypen begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # Inzicht in programma&#39;s en programmatypen {#understanding-programs}
 
 In Cloud Manager hebt u de entiteit Tenant helemaal bovenaan, die meerdere programma&#39;s kan bevatten.  Elk programma kan niet meer dan één milieu van de Productie, en veelvoudige niet-productiemilieu&#39;s bevatten.
+
+In het volgende diagram ziet u de hiërarchie van entiteiten in Cloud Manager.
+
+![image](assets/program-types1.png)
 
 ## Programmatypen {#program-types}
 
