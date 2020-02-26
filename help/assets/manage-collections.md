@@ -1,20 +1,19 @@
 ---
-title: Elementenverzamelingen beheren
-description: Begrijp het concept inzameling in activa AEM. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
+title: Verzamelingen digitale middelen beheren
+description: Begrijp het concept van inzameling in de Middelen van de Manager van de Ervaring van Adobe. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
 
 # Verzamelingen beheren {#manage-collections}
 
-Een verzameling is een set elementen in Adobe Experience Manager (AEM)-middelen. Gebruik verzamelingen om elementen tussen gebruikers te delen.
+Een verzameling is een set elementen in Adobe Experience Manager-middelen. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
 
-* Een verzameling kan elementen van verschillende locaties bevatten.
-* U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
+In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
 
 U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
@@ -24,12 +23,11 @@ De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zi
 
 * Een slimme verzameling die dynamisch elementen bevat op basis van zoekcriteria.
 
-## Navigeren door de verzamelingsconsole {#navigate-the-collections-console}
+## Toegang tot de verzamelingsconsole {#navigate-the-collections-console}
 
 De **[!UICONTROL Collections]** -console openen:
 
-1. Tik of klik op het AEM-logo.
-1. Ga op de navigatiepagina naar **[!UICONTROL Middelen]** > **[!UICONTROL Verzamelingen]**. De **[!UICONTROL Collections]** -console wordt weergegeven.
+Tik of klik op het logo van Experience Manager om de **[!UICONTROL verzamelingen]** te openen. Ga op de navigatiepagina naar **[!UICONTROL Middelen]** > **[!UICONTROL Verzamelingen]**.
 
 ## Een verzameling maken {#create-a-collection}
 
@@ -53,15 +51,15 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 
    >[!NOTE]
    >
-   >Met AEM-middelen kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >Met de middelen van Experience Manager kunt u controletaken voor een verzameling maken die lijken op de manier waarop u overzichtstaken voor een map met middelen maakt.
 
    Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#add-assets-to-a-collection)voor meer informatie.
 
-### Verzamelingen maken met Dropzone {#create-collections-using-dropzone}
+### Verzamelingen maken met dropzone {#create-collections-using-dropzone}
 
 U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
 
-1. Selecteer in de interface Elementen de elementen die u aan een verzameling wilt toevoegen.
+1. Selecteer in de gebruikersinterface Elementen de elementen die u aan een verzameling wilt toevoegen.
 1. Sleep de elementen naar de zone **[!UICONTROL Drop in Collection]** . U kunt ook op het pictogram **[!UICONTROL Naar verzameling]** op de werkbalk tikken of erop klikken.
 1. Tik of klik op het pictogram Verzameling **** maken op de werkbalk op de pagina Toevoegen aan verzameling **** . Als u de elementen aan een bestaande verzameling wilt toevoegen, selecteert u deze op de pagina en tikt u op **[!UICONTROL Toevoegen]**. Standaard is de laatst bijgewerkte verzameling geselecteerd.
 1. Geef een naam voor de verzameling op in het dialoogvenster Nieuwe verzameling **** maken. Als u wilt dat de verzameling toegankelijk is voor alle gebruikers, selecteert u **[!UICONTROL Openbare verzameling]**.
@@ -208,7 +206,7 @@ Gebruik de Schema-editor om de pagina [!UICONTROL Eigenschappen] van metagegeven
 
 U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste verzameling maken.
 
-1. Selecteer in de verzamelingsconsole de gewenste verzameling of groep verzamelingen en tik of klik op het pictogram **[!UICONTROL Naar verzameling]** op de werkbalk.
+1. Selecteer in de verzamelingsconsole de gewenste verzameling of groep verzamelingen en tik of klik op **[!UICONTROL Naar verzameling]** op de werkbalk.
 1. Selecteer op de pagina **[!UICONTROL Toevoegen aan verzameling]** de verzameling waarin u de verzameling wilt toevoegen.
 
    >[!NOTE]
@@ -225,7 +223,7 @@ U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste ve
 
 In de gebruikersinterface Elementen kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Opgeslagen zoekopdrachten]**, kunt u ze later openen via de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** in het deelvenster Filter. Als u een opgeslagen zoekopdracht maakt, maakt u ook een slimme verzameling.
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** . De opgeslagen vraag van Zoekopdrachten voor de inzameling wordt bewaard in het `dam:query` bezit in CRX bij de relatieve plaats `/content/dam/collections/`.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** . De opgeslagen vraag van Zoekopdrachten voor de inzameling wordt bewaard in het `dam:query` bezit in CRXDE bij de relatieve plaats `/content/dam/collections/`.
 
 >[!NOTE]
 >
@@ -235,8 +233,9 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
-1. Navigeer naar de gebruikersinterface Middelen en tik op **[!UICONTROL Zoeken]** op de werkbalk.
-1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
+1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
+
+1. Met de curseur op het gebied van Onderzoek, duw op de Enter sleutel.
 1. Klik of tik op het GlobalNav-pictogram om het deelvenster Filters weer te geven.
 1. Tik in de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** op **[!UICONTROL Verwijderen]** of klik op Verwijderen naast de slimme verzameling die u wilt verwijderen.
 1. Tik in het dialoogvenster of klik op **[!UICONTROL Verwijderen]** om de opgeslagen zoekopdracht te verwijderen.
@@ -246,11 +245,11 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
 1. Selecteer in de console Verzamelingen een verzameling waarop u een workflow wilt uitvoeren.
-1. Tik/klik op het pictogram GlobalNav en kies **Tijdlijn** in de lijst.
+1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in de lijst.
 1. Klik of tik vanaf de tijdlijn op het pictogram Caret onderaan en tik op Workflow **** starten.
-1. Selecteer in de sectie **Workflow** starten een workflowmodel in de lijst. Selecteer bijvoorbeeld het model **DAM Update Asset** .
-1. Voer een titel in voor de workflow en tik op **Start**/klik op Start.
-1. Tik/klik op **Doorgaan in het dialoogvenster**. De workflow wordt uitgevoerd op alle elementen in de verzameling.
+1. Selecteer in de sectie **[!UICONTROL Workflow]** starten een workflowmodel in de lijst. Selecteer bijvoorbeeld het model **[!UICONTROL DAM Update Asset]** .
+1. Voer een titel in voor de workflow en tik op **[!UICONTROL Start]**/klik op Start.
+1. Tik/klik op **[!UICONTROL Doorgaan in het dialoogvenster]**. De workflow wordt uitgevoerd op alle elementen in de verzameling.
 
 >[!MORELIKETHIS]
 >
