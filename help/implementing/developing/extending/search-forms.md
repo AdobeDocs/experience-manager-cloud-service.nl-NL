@@ -2,18 +2,32 @@
 title: Zoekformulieren configureren
 description: Zoekformulieren configureren voor Adobe Experience Manager als cloudservice.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Zoekformulieren configureren {#configuring-search-forms}
 
-Met **Zoekformulieren** kunt u de zoekfacetten en filters die beschikbaar zijn in de verschillende zoekvensters van de schrijveromgeving aanpassen. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
+Adobe Experience Manager als Cloud Service wordt geleverd met een krachtig [zoekmechanisme](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Een [waaier van](#predicates-and-their-settings)predikaten is beschikbaar uit-van-de-doos.
+In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde elementen, zoals **Gewijzigde datum**, **Publicatiestatus** of **LiveCycle Status** , om u te helpen snel naar de bronnen te gaan die u nodig hebt.
 
-U kunt de zoekformulieren [](#configuring-your-search-forms) configureren die worden gebruikt in verschillende consoles en in de middelenbrowser (wanneer u pagina&#39;s bewerkt). De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
+![zoeken en filteren](assets/csf-usage.png)
+
+Samen helpen u uw inhoud snel en gemakkelijk te vinden van:
+
+* [Zoeken en filteren](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* de [middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (bij het bewerken van pagina&#39;s)
+
+>[!NOTE]
+>
+>U kunt de onderliggende service [Inhoud zoeken en indexeren](/help/operations/indexing.md) configureren.
+
+Met **Zoeken in formulieren** kunt u deze deelvensters naar wens aanpassen en uitbreiden.
+
+De **zoekformulieren** bieden een keuzelijst met [voorspellingen](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
 
 * **Opties**
 
@@ -21,73 +35,48 @@ U kunt de zoekformulieren [](#configuring-your-search-forms) configureren die wo
 
       * **Zoeken in formulieren**
 
-Wanneer u eerst tot deze console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u de configuratie hebt aangepast zal het slot verdwijnen - tenzij u uw aangepaste configuratie [](#deleting-a-configuration-to-reinstate-the-default)schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
+## Standaardformulieren {#default-forms}
+
+Wanneer u voor het eerst toegang krijgt tot de console **Zoeken in formulieren** , ziet u dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u uw aangepaste configuratie [](#deleting-a-configuration-to-reinstate-the-default)schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
 
 ![overzicht van zoekformulieren configureren](assets/csf-overview.png)
-
-## Configuraties {#configurations}
 
 De standaardconfiguraties (alfabetisch weergegeven) zijn:
 
 * **Middelen Admin Search Rail:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de console van Activa.
-
 * **Pagina-editor (zoeken naar documenten):**
-
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar documenten in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar fragmenten uit ervaring):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar de Fragmenten van de Ervaring in middelenbrowser (wanneer het uitgeven van een pagina).
-
 * **Pagina-editor (zoeken naar afbeeldingen):**
-
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar beelden in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (Manuscript-zoekopdracht):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar manuscripten in middelenbrowser (wanneer het uitgeven van een pagina).
-
 * **Pagina-editor (zoeken naar pagina):**
-
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar pagina&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar alinea&#39;s):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar paragrafen in middelenbrowser (wanneer het uitgeven van een pagina).
-
 * **Pagina-editor (zoeken naar producten):**
-
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **De Redacteur van de pagina (onderzoek Scene7)**:
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar middelen Scene7 in middelenbrowser (wanneer het uitgeven van een pagina).
-
 * **Pagina-editor (videozoekopdracht)**:
-
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar video&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Zoekspoor voor projectbeheerder:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van projecten.
-
 * **Zoekspoor voor vertaling van project:**
-
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van projectvertalingen.
 
 * **Sites Admin Search Rail**:
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de onderzoekslijn van de console van Plaatsen.
-
 * **Fragmenten Zoekspoor** beheerder:
-
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van fragmenten.
 
 * **Zoeken op rails** voor voorraadbeheerder:
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van voorraad.
+>[!NOTE]
+>
+> Zie [Elementen - Zoekfactoren voor meer informatie over aan middelen gerelateerde zoekformulieren](/help/assets/search-facets.md)
+
 
 ## Voorspellen en instellingen {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Datumbereik</td>
-   <td>Zoek in een opgegeven bereik gemaakte elementen naar een datumeigenschap. In het deelvenster Zoeken kunt u begin- en einddatums opgeven.</td>
+   <td>Zoek naar middelen die binnen een gespecificeerde waaier voor een datumbezit worden gecreeerd. In het deelvenster Zoeken kunt u begin- en einddatums opgeven.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -181,7 +170,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Vervalstatus</td>
-   <td>Zoeken in middelen op basis van vervalstatus.</td>
+   <td>Zoek bronnen op basis van de vervalstatus.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -191,7 +180,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Bestandsgrootte</td>
-   <td>Elementen zoeken op basis van hun grootte.</td>
+   <td>Bronnen filteren op basis van hun grootte.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -205,7 +194,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <td>Elementen zoeken op basis van het bestands-/mime-type.</td>
    <td>
     <ul>
-     <li>Veldlabel</li>
+     <li>Veldlabel</li> 
      <li>Eigenschapnaam*</li>
      <li>Mimetype-pad</li>
      <li>Beschrijving</li>
@@ -214,7 +203,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Fulltext</td>
-   <td>Zoeken voorspelt zoekopdrachten in volledige tekst.</td>
+   <td>Zoeken voorspelt zoekopdrachten in volledige tekst. Het is toegewezen met de operator "jcr:contains".</td>
    <td>
     <ul>
      <li>Plaatsaanduiding</li>
@@ -304,7 +293,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Paginastatus</td>
-   <td>Pagina's zoeken op basis van hun status.</td>
+   <td>Pagina's filteren op basis van hun status.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -315,7 +304,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Pad</td>
-   <td>Zoeken naar elementen die zich onder een specifiek pad bevinden.</td>
+   <td>Filter op basis van een specifiek pad. U kunt meerdere paden opgeven als opties.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -325,7 +314,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Padbrowser</td>
-   <td>Geef een padbrowser op waarin u kunt zoeken.</td>
+   <td>Geef een padbrowser op om naar een vooraf gedefinieerd hoofdpad te zoeken.</td>
    <td>
     <ul>
      <li>Plaatsaanduiding</li>
@@ -360,7 +349,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Status publiceren</td>
-   <td>Middelen zoeken op basis van hun publicatiestatus</td>
+   <td>Bronnen filteren op basis van hun publicatiestatus.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -380,7 +369,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Classificatie</td>
-   <td>Elementen zoeken op basis van hun waardering.<br /> </td>
+   <td>Zoek naar middelen volgens hun gemiddelde classificatie.<br /> </td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -391,7 +380,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Relatieve datum</td>
-   <td>Elementen zoeken op basis van de relatieve datum waarop ze zijn gemaakt<br /> </td>
+   <td>Bronnen filteren op basis van de relatieve datum waarop ze zijn gemaakt. 1 week geleden, 1 maand geleden.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -497,23 +486,24 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* De algemene zoekvoorspelling wordt gedefinieerd in:
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Voorspelinstellingen {#predicate-settings}
 
-Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voor configuratie:
+Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar voor de configuratie, waaronder:
 
 * **Veldlabel**
 
@@ -659,22 +649,19 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht;
    * `value` - de waarde van de eigenschap waarop moet worden gezocht
+   ![Predicate definitie](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->U ***mag*** niets in het `/libs` pad wijzigen.
->
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
->
->De aanbevolen methode voor configuratie en andere wijzigingen is:
->
->1. Maak het vereiste item opnieuw, zoals het in, `/libs`onder `/apps`. In dit geval:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Breng wijzigingen aan in `/apps.`
+   >[!NOTE]
+   >
+   >U ***mag*** niets in het `/libs` pad wijzigen.
+   >
+   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >
+   >De aanbevolen methode voor configuratie en andere wijzigingen is:
+   >
+   >1. Maak het vereiste item opnieuw, zoals het in, `/libs`onder `/apps`. In dit geval:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Breng wijzigingen aan in `/apps.`
 
 
 1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****.
@@ -695,16 +682,13 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
       Selecteer het pad naar de locatie waar uw opties staan. Bijvoorbeeld:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Voorspelden van optie](assets/csf-options-predicate-02.png)
 
 1. Selecteer **Gereed** om uw configuratie op te slaan.
-1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open de **Search** -rail. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven:
+1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open de **Search** -rail. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Gebruikersmachtigingen {#user-permissions}
