@@ -2,12 +2,12 @@
 title: Gebruikers en rollen toevoegen - wat is vereist
 description: Gebruikers en rollen toevoegen - wat is vereist
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Gebruikers en rollen toevoegen - wat is vereist {#add-users-roles}
+# Gebruikers en rollen toevoegen {#add-users-roles}
 
 
 Voor veel functies in [!UICONTROL Cloud Manager] zijn specifieke machtigingen vereist. Zo kunnen alleen bepaalde gebruikers de KPI&#39;s (Key Performance Indicators) voor een programma instellen. Deze toestemmingen worden logisch gezien gegroepeerd in rollen.
