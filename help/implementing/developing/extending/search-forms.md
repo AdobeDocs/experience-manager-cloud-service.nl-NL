@@ -664,9 +664,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    >1. Breng wijzigingen aan in `/apps.`
 
 
-1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****.
-
-   Klik vervolgens op het pictogram Zoekformulieren **** bewerken of tik erop.
+1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****. Selecteer vervolgens **Bewerken**.
 
 1. Afhankelijk van de configuratie voeg een **Opties** of het Bezit **van** Opties aan de configuratie toe.
 1. Werk de velden bij, met name:
@@ -685,11 +683,10 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    ![Voorspelden van optie](assets/csf-options-predicate-02.png)
 
 1. Selecteer **Gereed** om uw configuratie op te slaan.
-1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open de **Search** -rail. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
+1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open de track **Zoeken - Filters** . De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![gebruikte opties](assets/csf-options-usage.png)
+
 
 ## Gebruikersmachtigingen {#user-permissions}
 
