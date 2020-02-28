@@ -2,7 +2,7 @@
 title: Op rollen gebaseerde machtigingen
 description: Op rollen gebaseerde machtigingen
 translation-type: tm+mt
-source-git-commit: e59fe55c255d5239a561a9fb878faa81d17b4b48
+source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 
 ---
 
@@ -17,19 +17,29 @@ Elk van de rollen heeft specifieke toestemmingen, vooraf geconfigureerde taken, 
 
 | Machtiging | Beschrijving | Zakelijke eigenaar | Implementatiebeheer | Programmabeheerder | Ontwikkelaar |
 |--- |--- |--- |--- |--- |--- |
-| Programma toevoegen | Nieuw programma toevoegen. | x | x | x | x |
-| Toepassing lezen | Lees Programma-KPI&#39;s. | x | x | x | x |
-| Toepassing schrijven | Programma instellen of bewerken. | x |  |  |  |  |
-| Leesomgeving | Zie Omgevingsdetails. | x | x | x | x |
-| Uitvoering maken | Start Pipeline. | x | x | x |  |
-| Uitvoering lezen | Zie uitvoeringsstatus. | x | x | x | x |
-| Uitvoering hervatten | Kan uitvoering hervatten wanneer gepauzeerd. | x | x | x |  | x |
-| Implementatie Goedkeuren Distributie naar productie | Geef GoLive-goedkeuring op. | x | x | x |  |  |
-| Implementatieschema Distribueren naar productie | Plan de Implementatie van de Productie. | x | x | x |
-| Uitvoering annuleren | Huidige uitvoering annuleren. | x | x | x |  |
-| Uitvoering heeft kwaliteitsfouten genegeerd | Belangrijke kwaliteitsfouten goedkeuren. | x | x | x |  |
-| Pipet maken | Setup/Edit Pipeline. |  | x |  |  |
-| Pipet gelezen | Zie details pijpleiding. | x | x | x | x |
-| Pipet schrijven | Setup/Edit Pipeline. |  | x |  |  |
-| Goedkeuring pijpleiding wijzigen | Hiermee kunt u de optie Bedrijfseigenaar bewerken. |  | x |  |  |
-| Stap lezen | Zie de resultaten van metrische gegevens voor de stapkwaliteit. | x | x | x | x |
+| Tenant maken | Maak een nieuwe huurder. |  |  |  |  |
+| Tenant bijwerken | Update Tenant. |  |  |  |  |
+| Programma toevoegen | Voeg een nieuw programma toe. | x |  |  |  |
+| Omgeving maken | Maak Prod+Stage, Dev, Playground-omgevingen. | x | x |  |  |
+| Omgevingsvariabelen configureren | Omgevingsvariabelen en geheimen configureren. |  | x |  | x |
+| Aangepaste domeinnaam toevoegen of verwijderen, SSL-waarschuwing uploaden of bijwerken | Aangepaste domeinnaam toevoegen/verwijderen, uploaden/SSL-waarschuwing bijwerken. | x | x |  |  |
+| Omgeving bijwerken | Werk Prod+werkgebied, Dev, Playground-omgevingen bij. | x | x |  |  |
+| Omgeving verwijderen | Verwijder niet-prod-, ontwikkelings- en afspeelomgevingen. | x | x |  |  |
+| Omgeving verwijderen | Prod+Stage-omgeving verwijderen. |  |  |  |  |
+| Sluimeromgeving | Niet-prod, Dev, afspeelomgevingen gesiberneerd. | x | x |  |  |
+| Programma instellen | Vorm Programma (met inbegrip van KPIs). | x |  |  |  |
+| Programma instellen | Configureer het schalingsbeleid (algemeen): het vormen maximum aantal lagen en horizontale schaal-uit op bestelling: Inschakelen). | x |  |  |  |
+| Programma instellen | Toegang vastleggen. |  | x |  | x |
+| Instellingen pijpleiding | Setup of Edit Pipeline. |  | x |  |  |
+| Uitvoering pijpleiding | Start de pijplijn. | x | x |  |  |
+| Uitvoering pijpleiding | Belangrijke 3-Tier-fouten afwijzen/goedkeuren. | x | x | x |  |
+| Uitvoering pijpleiding | Geef GoLive-goedkeuring op. | x | x | x |  |
+| Uitvoering pijpleiding | Plan de Implementatie van de Productie. | x | x | x |  |
+| Uitvoering pijpleiding | Hervat de Productiepijpleiding. |  |  |  |  |
+| Inschakelen (of uit) naar provisioning | Opt-binnen aan Horizontale levering op bestelling van het Scherm van de Opstelling van het Programma. Configureer de maximale &#39;toegestane&#39; P-D-segmenten die horizontaal kunnen worden uitgeschaald in PROD- en niet-PROD-omgevingen. | x |  |  |  |
+| Omgeving beheren | Voeg segment Publish-Dispatcher van het Manage Scherm van het Milieu toe. | x | x |  |  |  |
+| Productupdates | AEM-updatekaart is zichtbaar en de gebruiker moet de wizard Bijwerken starten. | x | x | x | x |
+| Productupdates | Wizard Productupdates kan worden ingeschakeld. | x | x |  |  |
+| Push Update | Start Push Update Pipeline. |  |  |  |  |
+| Token voor persoonlijke toegang genereren | Genereer persoonlijke toegangstoken. |  | x |  | x |
+
