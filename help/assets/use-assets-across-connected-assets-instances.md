@@ -3,7 +3,7 @@ title: Verbonden middelen gebruiken om DAM-middelen te delen in de ontwerpworkfl
 description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,7 +27,7 @@ Zorg voor het volgende voordat u deze functie gebruikt of configureert:
 * De gebruikers maken deel uit van aangewezen gebruikersgroepen op elke plaatsing.
 * Voor de implementatietypen van Adobe Experience Manager is aan een van de ondersteunde criteria voldaan.
 
-   |  | AEM-sites als cloudservice | AEM 6.5-sites op AMS | AEM 6.5-sites op locatie |
+   |  | AEM Sites as a Cloud Service | AEM 6.5-sites op AMS | AEM 6.5-sites op locatie |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
    | **AEM 6.5-activa op AMS** | Niet ondersteund | Ondersteund | Ondersteund |
@@ -37,14 +37,10 @@ Zorg voor het volgende voordat u deze functie gebruikt of configureert:
 
 Auteurs kunnen naar afbeeldingen en de volgende typen documenten zoeken in de Inhoudszoeker en de gezochte elementen gebruiken in de Pagina-editor. Documenten kunnen aan de `Download` component worden toegevoegd en afbeeldingen kunnen aan de `Image` component worden toegevoegd. Auteurs kunnen ook de externe elementen toevoegen in elke aangepaste AEM-component die de standaard `Download` of `Image` componenten uitbreidt.
 
-* Microsoft Word (DOC en DOCX)
-* Microsoft Excel (XLS en XLSX)
-* Microsoft PowerPoint (PPT en PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* RTF (Rich Text Format)
-* Onbewerkte tekst (TXT)
-* Webpagina&#39;s (HTML)
+De ondersteunde lijst met indelingen is:
+
+* **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund. Dynamische mediacomponenten worden niet ondersteund.
+* **Documentindelingen**: Zie Ondersteunde documentindelingen [voor](file-format-support.md#supported-document-formats)Connected Assets.
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
 
