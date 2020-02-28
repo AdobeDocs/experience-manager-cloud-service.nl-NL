@@ -1,7 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 # Assets {#assets}
 
-+ [AEM Assets als Cloud Service](/help/assets/home.md)
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Belangrijke wijzigingen in AEM Assets als Cloud Service](assets-cloud-changes.md)
++ [Belangrijke wijzigingen in AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
@@ -46,7 +46,7 @@ source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
    + [Facetten doorzoeken](search-facets.md)
    + [Asset-editor uitbreiden](extend-asset-editor.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+   + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
    + [XMP-metadata](xmp-metadata.md)
