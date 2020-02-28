@@ -3,26 +3,18 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
 
 # Ondersteunde bestandsindelingen {#supported-file-formats}
 
-Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer - opslag, beheer van metagegevens online, versioning, upload en download enzovoort - voor elk binair bestand, onafhankelijk van de indeling. Voor de veelgebruikte bestandsindelingen, zoals afbeeldingen, eigen documenten, documenten en video van Adobe, biedt deze indeling bovendien uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
+Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, upload en download enzovoort — voor elk binair bestand, onafhankelijk van de indeling. Adobe Experience Manager Assets ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Enkele markeringen van dossierformaten met uitgebreide steun omvatten:
+Daarnaast biedt Experience Manager Assets uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
 
-* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, InDesign, Illustrator, XD, Dimension en Acrobat / PDF.
-* Belangrijke indelingen voor [afbeeldingsbestanden](#image-formats)
-* [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, zoals Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw)
-* Algemene [documentindelingen](#document-formats), waaronder [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) en [Open Document](#opendocument-formats) -indelingen
-* Brede reeks [video](#video-formats) - en [audio](#audio-formats) -indelingen
-
-## Legenda voor uitgebreide ondersteuningsinformatie {#legend-for-detailed-support-information}
-
-In de volgende legenda wordt het ondersteuningsniveau voor een functie beschreven:
+De volgende legenda beschrijft het steunniveau.
 
 | Ondersteuningsniveau | Beschrijving |
 | ------------------------------------------------------------ | --------------------------- |
@@ -30,7 +22,17 @@ In de volgende legenda wordt het ondersteuningsniveau voor een functie beschreve
 | * | Zie de opmerkingen onder de tabel |
 | - | Niet van toepassing |
 
-Kolommen van de steunlijsten verstrekken de volgende informatie:
+## Omzetting van bedrijfsmiddelen met behulp van asset microservices {#asset-microservices-supported-formats}
+
+De hooglichten omvatten:
+
+* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, InDesign, Illustrator, XD, Dimension en Acrobat / PDF.
+* Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
+* [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Algemene [documentindelingen](#document-formats), waaronder [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) en [Document](#opendocument-formats) openen.
+* Brede reeks [video](#video-formats) - en [audio](#audio-formats) -indelingen.
+
+Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 | Kolom | Beschrijving |
 | ------------ | --------------------------------------------------------------- |
@@ -42,11 +44,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | TXT | Tekst uit document extraheren voor indexering |
 | Breedte/Hoogte | Ondersteuning voor het definiëren van de breedte en hoogte van een uitvoering (pixels) |
 
-<!-- Adding this checkmark icon ✓ does not look good in table. The icon's shade and size has to be toned down for good readability and less clutter.
-@gklebus: I suggest using a checkmark character, either U+2713 ✓ CHECK MARK or U+2714 ✔ HEAVY CHECK MARK
--->
-
-## Adobe-indelingen {#adobe-formats}
+### Adobe-indelingen {#adobe-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | TXT | XMP | Breedte/Hoogte |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
@@ -64,7 +62,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 
 \* Voor INDD (InDesign-bestanden) wordt de grootte van de uitvoering bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in InDesign (**[!UICONTROL Voorkeuren > Bestandsafhandeling > Voorvertoningsafbeeldingen altijd opslaan met documenten, Grootte]** voorvertoning) om een grotere uitvoering in te sluiten.
 
-## Afbeeldingsindelingen {#image-formats}
+### Afbeeldingsindelingen {#image-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -76,8 +74,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-
-## Camera RAW-indelingen {#camera-raw-formats}
+### Camera RAW-indelingen {#camera-raw-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -109,7 +106,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Documentindelingen {#document-formats}
+### Documentindelingen {#document-formats}
 
 | Bestandsindeling | TXT | XMP |
 | ----------- | --- | --- |
@@ -120,7 +117,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | TEXT | ✓ | - |
 | XML | ✓ | - |
 
-## Microsoft Office-indelingen {#microsoft-office-formats}
+### Microsoft Office-indelingen {#microsoft-office-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | TEXT | Breedte/Hoogte |
 | ----------- | --- | ---- | --- | ---- | ------------ |
@@ -128,7 +125,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## OpenDocument-indelingen {#opendocument-formats}
+### OpenDocument-indelingen {#opendocument-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | TEXT | Hoogte |
 | ----------- | --- | ---- | --- | ---- | ------ |
@@ -139,7 +136,7 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Video-indelingen {#video-formats}
+### Video-indelingen {#video-formats}
 
 | Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -166,15 +163,27 @@ Kolommen van de steunlijsten verstrekken de volgende informatie:
 | WEBM | ✓ | ✓ | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Audio-indelingen {#audio-formats}
+### Audio-indelingen {#audio-formats}
 
 Middelen als Cloud Service biedt XMP-ondersteuning voor deze audio-indelingen: AIF, ASF, M4A, MP3, WAV en WMA.
 
-<!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+## Ondersteunde documentindelingen {#doc-formats}
 
-Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
-https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
--->
+De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer.
+
+| Bestandsindeling | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+|---|---|
+| DOC | ✓ |
+| DOCX | ✓ |
+| ODT | ✓ |
+| PDF | ✓ |
+| HTML | ✓ |
+| RTF | ✓ |
+| TXT | ✓ |
+| XLS | ✓ |
+| XLSX | ✓ |
+| PPT | ✓ |
+| PPTX | ✓ |
 
 >[!MORELIKETHIS]
 >
