@@ -3,7 +3,7 @@ title: Verbonden middelen gebruiken om DAM-middelen te delen in de ontwerpworkfl
 description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
+source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
 
 ---
 
@@ -35,9 +35,7 @@ Zorg voor het volgende voordat u deze functie gebruikt of configureert:
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 
-Auteurs kunnen naar afbeeldingen en de volgende typen documenten zoeken in de Inhoudszoeker en de gezochte elementen gebruiken in de Pagina-editor. Documenten kunnen aan de `Download` component worden toegevoegd en afbeeldingen kunnen aan de `Image` component worden toegevoegd. Auteurs kunnen ook de externe elementen toevoegen in elke aangepaste AEM-component die de standaard `Download` of `Image` componenten uitbreidt.
-
-De ondersteunde lijst met indelingen is:
+Auteurs kunnen naar afbeeldingen en de volgende typen documenten zoeken in de Inhoudszoeker en de gezochte elementen gebruiken in de Pagina-editor. Documenten kunnen aan de `Download` component worden toegevoegd en afbeeldingen kunnen aan de `Image` component worden toegevoegd. Auteurs kunnen ook de externe elementen toevoegen in elke aangepaste AEM-component die de standaard `Download` of `Image` componenten uitbreidt. De lijsten met ondersteunde indelingen zijn:
 
 * **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund. Dynamische mediacomponenten worden niet ondersteund.
 * **Documentindelingen**: Zie Ondersteunde documentindelingen [voor](file-format-support.md#supported-document-formats)Connected Assets.
