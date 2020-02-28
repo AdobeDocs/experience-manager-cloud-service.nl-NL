@@ -3,7 +3,7 @@ title: Weet hoe middelenmicroservices uw digitale middelen in de cloud kunnen ve
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Asset microservices bieden een schaalbare en veerkrachtige verwerking van middel
 * Verbeterde veerkracht van de verwerking van bedrijfsmiddelen. Mogelijke problemen bij het verwerken van atypische bestanden, zoals beschadigde bestanden of extreem grote bestanden, hebben geen gevolgen meer voor de prestaties van de implementatie.
 * Vereenvoudigde configuratie van middelenverwerking voor beheerders.
 * De instellingen voor middelenverwerking worden beheerd en onderhouden door Adobe om de best bekende configuratie te bieden voor de verwerking van uitvoeringen, metagegevens en tekstextractie voor verschillende bestandstypen
-* Waar van toepassing worden native Adobe-bestandsverwerkingsservices gebruikt, die garant staan voor hoogwaardige uitvoer en een efficiënte verwerking van door Adobe gegenereerde indelingen.
+* Waar van toepassing worden native Adobe-bestandsverwerkingsservices gebruikt, die garant staan voor hoogwaardige uitvoer en [efficiënte verwerking van door Adobe zelf gegenereerde indelingen](file-format-support.md).
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
 Middelenmicroservices helpen u de behoefte aan renderingtools van derden (zoals ImageMagick) te voorkomen en vereenvoudigen de configuratie van het systeem, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen.
@@ -82,7 +82,7 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de nabewerkingsworkflo
 
 >[!MORELIKETHIS]
 >
->* [Aan de slag met elementmicroservices](asset-microservices-configure-and-use.md)
+>* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
 >* [Ondersteunde bestandsindelingen](file-format-support.md)
 >* [Adobe-elementkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [AEM-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
