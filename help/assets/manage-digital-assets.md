@@ -4,7 +4,7 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -96,7 +96,7 @@ Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de om
 
 Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden niet overgedragen. Enkele voorbeelden zijn:
 
-* Relatief pad, bron-id, aanmaakdatum en -tijd en versies en versiegeschiedenis. Sommige van deze eigenschappen worden aangegeven door de eigenschappen `dam:relativePath`, `jcr:uuid`, `jcr:created`en `cq:name`.
+* Element-id, aanmaakdatum en -tijd en versies en versiegeschiedenis. Sommige van deze eigenschappen worden aangegeven door de eigenschappen `jcr:uuid`, `jcr:created`en `cq:name`.
 
 * De aanmaaktijd en de paden waarnaar wordt verwezen, zijn uniek voor elk element en elke uitvoering ervan.
 
