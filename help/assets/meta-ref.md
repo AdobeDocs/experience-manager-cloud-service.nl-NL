@@ -3,7 +3,7 @@ title: Referentie metagegevensschema
 description: 'Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
   </tr>
   <tr>
    <td>format</td> 
-   <td>De bestandsindeling, het fysieke medium of de afmetingen van het element. AEM gebruikt <code>dc:format</code> om het mime-type van de activa aan te duiden.<br /> </td> 
+   <td>De bestandsindeling, het fysieke medium of de afmetingen van het element. AEM gebruikt <code>dc:format</code> om het MIME-type van het element aan te duiden.<br /> </td> 
   </tr>
   <tr>
    <td>id</td> 
