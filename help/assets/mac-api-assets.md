@@ -1,14 +1,14 @@
 ---
-title: Elementen HTTP-API
+title: HTTP-API voor assets
 description: Leer over de implementatie, het gegevensmodel, en de eigenschappen van Activa HTTP API. Met de HTTP-API Middelen kunt u verschillende taken uitvoeren met betrekking tot elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Elementen HTTP-API {#assets-http-api}
+# HTTP-API voor assets {#assets-http-api}
 
 ## Overzicht {#overview}
 
@@ -27,7 +27,7 @@ Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar 
 >
 >Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), worden voor AEM gedepreteerd als implementatie van een cloudservice. Gebruik in plaats hiervan [directe binaire upload-API&#39;s](developer-reference-material-apis.md#asset-upload-technical) voor het uploaden van binaire bestanden.
 
-## Inhoudsfragmenten {#content-fragments}
+## Contentfragmenten {#content-fragments}
 
 Een [inhoudsfragment](content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
@@ -58,7 +58,7 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 * `parent`: Koppeling maken naar de bovenliggende map
 * `thumbnail`: (Optioneel) koppeling naar een miniatuurafbeelding van een map
 
-### Activa {#assets}
+### Assets {#assets}
 
 In AEM bevat een element de volgende elementen:
 
