@@ -3,12 +3,12 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Aan de slag met elementmicroservices {#get-started-using-asset-microservices}
+# Aan de slag met microservices voor assets {#get-started-using-asset-microservices}
 
 <!--
 
@@ -97,9 +97,9 @@ Een lege waarde houdt in dat bij de verwerking van elementen de pixelafmetingen 
 
 #### MIME-regels voor typeintegratie {#mime-type-inclusion-rules}
 
-Wanneer een element van een specifiek mime-type wordt verwerkt, wordt het mime-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten mime-typen voor de weergavespecificatie. Als de weergave overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het actief (&quot;zwarte lijst&quot;).
+Wanneer een element van een specifiek MIME-type wordt verwerkt, wordt het MIME-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten MIME-typen voor de weergavespecificatie. Als de weergave overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het actief (&quot;zwarte lijst&quot;).
 
-Anders wordt het mime-type gecontroleerd op basis van het opgenomen mime-type. Als het mime-type overeenkomt met de lijst, wordt de vertoning gegenereerd (&quot;whitelisting&quot;).
+Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type en als het overeenkomt met de lijst, wordt de vertoning gegenereerd (&quot;whitelisting&quot;).
 
 #### Speciale FPO-uitvoering {#special-fpo-rendition}
 
@@ -126,7 +126,7 @@ Nadat een verwerkingsprofiel is toegepast op een map, worden alle nieuwe element
 >
 >Wanneer elementen naar een map worden geüpload, controleert Experience Manager de eigenschappen van de bovenliggende map op een verwerkingsprofiel. Als er niets is toegepast, gaat het omhoog in de mappenstructuur totdat er een toegepast verwerkingsprofiel wordt gevonden en wordt het gebruikt voor het element. Dat betekent dat een verwerkingsprofiel dat is toegepast op een map, werkt voor de gehele structuur, maar kan worden overschreven door een ander profiel dat is toegepast op een submap.
 
-Gebruikers kunnen controleren of de verwerking daadwerkelijk heeft plaatsgevonden door een nieuw geüpload element te openen waarvoor de verwerking is voltooid, een voorvertoning van het element te openen en op de weergave **[!UICONTROL Vertoningen]** van het linkerspoor te klikken. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van mime-typen, moeten zichtbaar en toegankelijk zijn.
+Gebruikers kunnen controleren of de verwerking daadwerkelijk heeft plaatsgevonden door een nieuw geüpload element te openen waarvoor de verwerking is voltooid, een voorvertoning van het element te openen en op de weergave **[!UICONTROL Vertoningen]** van het linkerspoor te klikken. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
 
 ![extra-renditions](assets/renditions-additional-renditions.png)*Figure: Voorbeeld van twee extra vertoningen die worden gegenereerd door een verwerkingsprofiel dat wordt toegepast op de bovenliggende map*
 
