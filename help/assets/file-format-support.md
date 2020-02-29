@@ -3,7 +3,7 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
@@ -171,19 +171,19 @@ Middelen als Cloud Service biedt XMP-ondersteuning voor deze audio-indelingen: A
 
 De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer.
 
-| Bestandsindeling | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
-|---|---|
-| DOC | ✓ |
-| DOCX | ✓ |
-| ODT | ✓ |
-| PDF | ✓ |
-| HTML | ✓ |
-| RTF | ✓ |
-| TXT | ✓ |
-| XLS | ✓ |
-| XLSX | ✓ |
-| PPT | ✓ |
-| PPTX | ✓ |
+| Bestandsindeling | Opslag | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|
+| DOC | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ |
+| ODT | ✓ | ✓ | ✓ |
+| PDF | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |
+| RTF | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | ✓ |
+| XLS | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ |
+| PPT | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ |
 
 >[!MORELIKETHIS]
 >
