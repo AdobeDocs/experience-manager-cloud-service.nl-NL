@@ -3,7 +3,7 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -151,7 +151,7 @@ Hier volgt een voorbeeldsjabloon:
 
 De interface en de klassen omvatten:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke mime types toevoegt. Wanneer u een nieuw mime-type toevoegt, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` klasse:
    *  Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
@@ -162,7 +162,7 @@ De volgende methoden moeten worden toegepast:
 
 * `extractMetadata()`: met deze methode worden alle beschikbare metagegevens geëxtraheerd.
 * `getThumbnailImage()`: met deze methode maakt u een miniatuurafbeelding van het doorgegeven element.
-* `getMimeTypes()`: Deze methode retourneert het type(n) mime van het element.
+* `getMimeTypes()`: Deze methode retourneert het MIME-type(n) van het element.
 
 Hier volgt een voorbeeldsjabloon:
 
@@ -170,7 +170,7 @@ pakket my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;
 
 De interface en de klassen omvatten:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke mime types toevoegt. Wanneer u een nieuw mime-type toevoegt, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
 
@@ -391,7 +391,7 @@ De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen
 
 Het `CommandLineProcess` proces voert de volgende bewerkingen uit in de volgorde waarin deze worden weergegeven:
 
-* Hiermee wordt het bestand gefilterd op basis van specifieke mime-typen, indien opgegeven.
+* Hiermee wordt het bestand gefilterd op basis van specifieke MIME-typen, indien opgegeven.
 * Maakt een tijdelijke map op de schijf die als host fungeert voor de AEM-server.
 * Hiermee wordt het oorspronkelijke bestand gestroomd naar de tijdelijke map.
 * Voert de opdracht uit die door de argumenten van de stap wordt gedefinieerd. De opdracht wordt uitgevoerd in de tijdelijke map met de machtigingen van de gebruiker die AEM uitvoert.
@@ -453,7 +453,7 @@ De waarden van de **procesargumenten** moeten door een komma worden gescheiden e
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Optioneel argument. Het proces wordt toegepast als het element hetzelfde mime-type heeft als het argument.</p> <p>Verschillende mime-typen kunnen worden gedefinieerd.</p> </td>
+   <td><p>Optioneel argument. Het proces wordt toegepast als het element hetzelfde MIME-type heeft als het argument.</p> <p>Verschillende mime-typen kunnen worden gedefinieerd.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ De waarden van de **procesargumenten** moeten door een komma worden gescheiden e
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af.</p> <p>Er kan slechts één opdracht worden gedefinieerd.</p> <p>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br/></p> <p><code>${filename}</code>: naam van het invoerbestand, bijvoorbeeld original.jpg<br/><code>${file}</code>: volledige padnaam van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: map van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: naam van het invoerbestand zonder extensie, bijvoorbeeld origineel<br/> <code>${extension}</code>: extensie van het invoerbestand, bijvoorbeeld jpg<br/></p></td>
+   <td><p>Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af.</p> <p>Er kan slechts één opdracht worden gedefinieerd.</p> <p>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br/></p> <p><code>${filename}</code>: naam van het invoerbestand, bijvoorbeeld 'original.jpg'<br/><code>${file}</code>: de volledige padnaam van het invoerbestand, bijvoorbeeld "/tmp/cqdam0816.tmp/original.jpg"<br/><code>${directory}</code>: map van het invoerbestand, bijvoorbeeld "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: naam van het invoerbestand zonder extensie, bijvoorbeeld origineel<br/> <code>${extension}</code>: extensie van het invoerbestand, bijvoorbeeld JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
