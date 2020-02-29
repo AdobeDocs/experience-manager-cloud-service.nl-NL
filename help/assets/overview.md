@@ -1,14 +1,14 @@
 ---
-title: Inleiding tot middelen als cloudservice
+title: Inleiding tot Assets as a Cloud Service
 description: Nieuwe functies in Middelen als cloudservice.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Elementen introduceren als cloudservice {#assets-cloud-service-introduction}
+# Inleiding tot Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ Gelijktijdige inname van een groot aantal elementen of complexe elementen is een
 
 Bedrijven hebben ondersteuning nodig voor een groot aantal verschillende bestandsindelingen en inhoudsresoluties voor meervoudige apparaten, transgeografische situaties en meertalige gebruiksgevallen. Voor de verwerking en opslag van bedrijfsmiddelen zijn middelen en mogelijkheden nodig die een traditionele oplossing kunnen overbelasten. Soms leveren technische beperkingen van de verwerking van activa niet de gewenste resultaten op en op andere tijdstippen vormen de opslagkosten een belemmering voor winstmarges.
 
-Om te beginnen, begrijp de [voordelen van een cloud-inheemse aanbieding](#solution-benefits). Ontdek de opmerkelijke [wijzigingen in AEM als Cloud Service](/help/release-notes/aem-cloud-changes.md) die ook van invloed zijn op de Middelen, en volg de opmerkelijke [wijzigingen in Middelen](/help/assets/assets-cloud-changes.md).
+Om te beginnen, begrijp de [voordelen van een cloud-inheemse aanbieding](#solution-benefits). Bekijk de opmerkelijke [wijzigingen in AEM als Cloud Service](/help/release-notes/aem-cloud-changes.md) die ook invloed hebben op de Experience Manager Assets en vervolg de opmerkelijke [wijzigingen in Middelen](/help/assets/assets-cloud-changes.md).
 
 Lees meer over de [details van de nieuwe middelenmogelijkheden](#whats-new-assets) en de [bekende problemen](/help/release-notes/known-issues.md). Bekijk een lijst met [vervangen of verwijderde functionaliteit](/help/release-notes/deprecated-removed-features.md) om te weten wat in deze versie wordt verwijderd en zie deze [lijst van aanstaande mogelijkheden](/help/release-notes/known-issues.md#upcoming-assets-capabilities) om te weten wat in de nabije toekomst komt. Tot slot, begrijp de termen van AEM met de hulp van deze [verklarende woordenlijst](/help/overview/terminology.md).
 
@@ -37,5 +37,5 @@ Hieronder vindt u de belangrijkste voordelen van Elementen als Cloud Service. Zi
 
 De belangrijkste nieuwe mogelijkheden zijn:
 
-* [Middelenmicroservices](/help/assets/asset-microservices-overview.md)
+* [Asset-microservices](/help/assets/asset-microservices-overview.md)
 * [Methoden voor het uploaden van middelen](/help/assets/add-assets.md)
