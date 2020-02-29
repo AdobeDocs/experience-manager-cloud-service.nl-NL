@@ -3,7 +3,7 @@ title: Beperkingen voor uploaden van middelen configureren
 description: Leer hoe u AEM-middelen (Adobe Experience Manager) configureert om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -22,4 +22,3 @@ U kunt Adobe Experience Manager (AEM)-middelen configureren om het type elemente
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
 1. Klik op **[!UICONTROL Opslaan]** of tik op Opslaan om de wijzigingen op te slaan. Als u MIME-tekenreeksen opgeeft voor toegestane MIME-typen, mislukt de uploadbewerking voor elk element met MIME-type dat niet overeenkomt met de geconfigureerde MIME-tekenreeksen in deze velden.
-
