@@ -2,7 +2,7 @@
 title: Op rollen gebaseerde machtigingen
 description: Op rollen gebaseerde machtigingen
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ Elk van de rollen heeft specifieke toestemmingen, vooraf geconfigureerde taken, 
 
 | Machtiging | Beschrijving | Zakelijke eigenaar | Implementatiebeheer | Programmabeheerder | Ontwikkelaar |
 |--- |--- |--- |--- |--- |--- |
-| Tenant maken | Maak een nieuwe huurder. |  |  |  |  |
-| Tenant bijwerken | Update Tenant. |  |  |  |  |
 | Programma toevoegen | Voeg een nieuw programma toe. | x |  |  |  |
 | Omgeving maken | Maak Prod+Stage, Dev, Playground-omgevingen. | x | x |  |  |
-| Omgevingsvariabelen configureren | Omgevingsvariabelen en geheimen configureren. |  | x |  | x |
-| Aangepaste domeinnaam toevoegen of verwijderen, SSL-waarschuwing uploaden of bijwerken | Aangepaste domeinnaam toevoegen/verwijderen, uploaden/SSL-waarschuwing bijwerken. | x | x |  |  |
 | Omgeving bijwerken | Werk Prod+werkgebied, Dev, Playground-omgevingen bij. | x | x |  |  |
 | Omgeving verwijderen | Verwijder niet-prod-, ontwikkelings- en afspeelomgevingen. | x | x |  |  |
 | Omgeving verwijderen | Prod+Stage-omgeving verwijderen. |  |  |  |  |
