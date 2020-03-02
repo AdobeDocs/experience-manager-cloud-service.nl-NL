@@ -2,7 +2,7 @@
 title: Op rollen gebaseerde machtigingen
 description: Op rollen gebaseerde machtigingen
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ Elk van de rollen heeft specifieke toestemmingen, vooraf geconfigureerde taken, 
 | Omgeving bijwerken | Werk Prod+werkgebied, Dev, Playground-omgevingen bij. | x | x |  |  |
 | Omgeving verwijderen | Verwijder niet-prod-, ontwikkelings- en afspeelomgevingen. | x | x |  |  |
 | Omgeving verwijderen | Prod+Stage-omgeving verwijderen. |  |  |  |  |
-| Sluimeromgeving | Niet-prod, Dev, afspeelomgevingen gesiberneerd. | x | x |  |  |
 | Programma instellen | Vorm Programma (met inbegrip van KPIs). | x |  |  |  |
-| Programma instellen | Configureer het schalingsbeleid (algemeen): het vormen maximum aantal lagen en horizontale schaal-uit op bestelling: Inschakelen). | x |  |  |  |
 | Programma instellen | Toegang vastleggen. |  | x |  | x |
 | Instellingen pijpleiding | Setup of Edit Pipeline. |  | x |  |  |
 | Uitvoering pijpleiding | Start de pijplijn. | x | x |  |  |
@@ -36,10 +34,7 @@ Elk van de rollen heeft specifieke toestemmingen, vooraf geconfigureerde taken, 
 | Uitvoering pijpleiding | Geef GoLive-goedkeuring op. | x | x | x |  |
 | Uitvoering pijpleiding | Plan de Implementatie van de Productie. | x | x | x |  |
 | Uitvoering pijpleiding | Hervat de Productiepijpleiding. |  |  |  |  |
-| Inschakelen (of uit) naar provisioning | Opt-binnen aan Horizontale levering op bestelling van het Scherm van de Opstelling van het Programma. Configureer de maximale &#39;toegestane&#39; P-D-segmenten die horizontaal kunnen worden uitgeschaald in PROD- en niet-PROD-omgevingen. | x |  |  |  |
 | Omgeving beheren | Voeg segment Publish-Dispatcher van het Manage Scherm van het Milieu toe. | x | x |  |  |  |
-| Productupdates | AEM-updatekaart is zichtbaar en de gebruiker moet de wizard Bijwerken starten. | x | x | x | x |
-| Productupdates | Wizard Productupdates kan worden ingeschakeld. | x | x |  |  |
 | Push Update | Start Push Update Pipeline. |  |  |  |  |
 | Token voor persoonlijke toegang genereren | Genereer persoonlijke toegangstoken. |  | x |  | x |
 
