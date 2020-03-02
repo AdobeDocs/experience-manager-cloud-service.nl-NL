@@ -1,76 +1,76 @@
 ---
-title: Inleiding tot Adobe Experience Manager als cloudservice
-description: 'Inleiding tot Adobe Experience Manager (AEM) als cloudservice. '
-translation-type: tm+mt
+title: Inleiding tot Adobe Experience Manager as a Cloud Service
+description: 'Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service. '
+translation-type: ht
 source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# Inleiding tot Adobe Experience Manager als cloudservice {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Inleiding tot Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) is nu beschikbaar als cloudservice.
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) is nu beschikbaar as a Cloud Service.
 
-Adobe Experience Manager als cloudservice:
+Adobe Experience Manager as a Cloud Service:
 
-* Is de cloud-native manier om de AEM-toepassingen te benutten.
+* Is de cloud-native manier om de AEM-applicaties te benutten.
 
-* Met deze optie kunt u uw klanten persoonlijke ervaringen met inhoud bieden door de kracht van het AEM Content Management System te combineren met AEM Digital Asset Management.
+* Maakt het mogelijk om uw klanten gepersonaliseerde, contentgestuurde ervaringen te bieden door de gecombineerde kracht van AEM Content Management System en AEM Digital Asset Management.
 
-* Verstrekt Ononderbroken Levering en Ononderbroken Integratie voor updates met nul onderbreking.
+* Biedt Continuous Delivery en Continuous Integration voor updates zonder uitvaltijd.
 
-* Is gebaseerd op een dynamische architectuur die autoscales, zo verwijderend infrastructuuroverwegingen.
+* Is gebaseerd op een dynamische architectuur die automatisch schaalt, waardoor infrastructuur geen zorg meer is.
 
-* Is veiligheid geconcentreerd, die geautomatiseerde tests gebruiken om op gemeenschappelijke kwetsbaarheid af te tasten.
+* Is op veiligheid gefocust: er worden geautomatiseerde testen gebruikt om te zoeken naar gemeenschappelijke kwetsbaarheden.
 
-* Valideert de klantcode met behulp van geautomatiseerde tests.
+* Valideert de klantcode aan de hand van geautomatiseerde testen.
 
-* Bevat prestatietopologieën die zijn geoptimaliseerd voor maximale veerkracht en efficiëntie.
+* Bevat prestatietopologieën die zijn geoptimaliseerd voor maximale flexibiliteit en efficiëntie.
 
-* Hiermee vermindert u aanzienlijk de vereiste handmatige configuratie.
+* Zorgt dat er aanzienlijk minder handmatige configuratie nodig is.
 
 * Is diep geïntegreerd met de Adobe Experience Cloud.
 
-* Introduceert de volgende generatie van de Adobe Experience Manager-productlijn, voortbouwend op eerdere investeringen en innovaties, waarbij alle gebruiksgevallen en -functies behouden en uitgebreid blijven.
+* Introduceert de volgende generatie van de Adobe Experience Manager-productlijn, voortbouwend op eerdere investeringen en innovaties, waarbij alle gebruiksgevallen en -functies bewaard blijven en worden uitgebreid.
 
-Al deze hulp:
+Dit alles helpt bij het volgende:
 
-* Ontwikkelaars richten zich op het configureren en uitbreiden van AEM, waarbij ze dezelfde patronen volgen die AEM tot nu toe succesvol hebben gemaakt en die zijn vergroot met het nieuwe, op cloud gebaseerde ontwikkelingspatroon.
+* Ontwikkelaars kunnen zich concentreren op de configuratie en uitbreiding van AEM, waarbij ze dezelfde patronen volgen die AEM tot nu toe succesvol hebben gemaakt, aangevuld met het nieuwe, cloudgebaseerde ontwikkelingspatroon.
 
-* Auteurs genieten van de nieuwste innovaties, die regelmatig aan hen worden geleverd.
+* Auteurs profiteren van de nieuwste innovaties, die hun regelmatig worden aangeboden.
 
-* Vereenvoudig configuratie en infrastructuur voor de systeembeheerders.
+* Configuratie en infrastructuur zijn eenvoudiger geworden voor de systeembeheerders.
 
-* De beroeps van de marketing ervaren snellere tijd-aan-waarde.
+* Marketingprofessionals ervaren een snellere terugverdientijd.
 
 >[!NOTE]
 >
->Zie [Terminologie](terminology.md) voor enkele nieuwe termijnen die met AEM als Dienst van de Wolk zijn geïntroduceerd.
+>Zie [Terminologie](terminology.md) voor een aantal nieuwe termen die met AEM as a Cloud Service zijn geïntroduceerd.
 
-## Toegevoegde waarde als cloudservice {#value-added-as-a-cloud-service}
+## Toegevoegde waarde as a Cloud Service {#value-added-as-a-cloud-service}
 
-AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne cloudservices over te nemen:
+AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne cloudservices toe te passen:
 
-* Het staat altijd op:
+* Het staat altijd aan:
 
-   * De volledige de dienstarchitectuur is herzien zodat u geen onderbreking ervaart; voor noch het inhoudsbeheer, noch de mogelijkheden van de inhoudslevering.
+   * De volledige servicearchitectuur is herzien, zodat er geen uitvaltijd is: niet voor contentmanagement en niet voor contentlevering.
 
 * Het is altijd op schaal:
 
-   * Alle exemplaren van AEM als Cloud Service worden gelijk gemaakt. zo zal de de dienstarchitectuur automatisch schrapen, omhoog en neer, afhankelijk van uw behoeften.
+   * Alle instanties van AEM as a Cloud Service worden even groot gecreëerd. Daardoor kan de servicearchitectuur automatisch groter en kleiner worden, afhankelijk van wat nodig is.
 
-* Deze is altijd actueel:
+* Het is altijd actueel:
 
-   * AEM als Cloud Service implementeert een nieuwe, ononderbroken leveringspijplijn voor de AEM-codebase, met automatische updates tot een paar keer per maand. Dit lost één van de belangrijkste uitdagingen van toepassingen AEM op, door u op de recentste versie te houden.
+   * AEM as a Cloud Service implementeert een nieuwe, continue leveringspijplijn voor de AEM-codebase, met automatische updates tot een paar keer per maand. Dit lost één van de belangrijkste uitdagingen van AEM-applicaties op doordat u steeds de recentste versie hebt.
 
-* Het evolueert altijd:
+* Het is altijd in ontwikkeling:
 
-   * AEM als Cloud Service evolueert dagelijks op basis van de projecten die door onze klanten worden geïmplementeerd. De inhoud, de code en de configuraties worden constant herzien en tegen beste praktijken gecontroleerd, die ons toestaan om u op te begeleiden hoe te om uw bedrijfsdoelstellingen te bereiken.
+   * AEM as a Cloud Service evolueert dagelijks, op basis van de projecten die door onze klanten worden geïmplementeerd. De content, de code en de configuraties worden voortdurend herzien en vergeleken met de beste methoden, waardoor we u kunnen begeleiden bij het bereiken van uw bedrijfsdoelstellingen.
 
-## Adobe Experience Manager leren kennen als cloudservice {#getting-to-know-aem-as-cloud-service}
+## Kennismaken met Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-* [Nieuw en Wat is er anders](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager als cloudservice en eerdere versies
-* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager als Cloud Service
-* [Opvallende wijzigingen in AEM-sites in AEM als cloudservice](/help/sites-cloud/sites-cloud-changes.md)
-* [Elementen introduceren als cloudservice](/help/assets/overview.md)
-* [Zelfstudies voor Adobe Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies
+* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
+* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Inleiding tot Assets as a Cloud Service](/help/assets/overview.md)
+* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/nl/experience-manager-learn/cloud-service/overview.html)
