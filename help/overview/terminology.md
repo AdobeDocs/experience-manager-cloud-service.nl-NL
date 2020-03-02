@@ -1,31 +1,31 @@
 ---
-title: Inleiding tot Adobe Experience Manager als cloudservice - Terminologie
-description: 'Inleiding tot Adobe Experience Manager als cloudservice - Terminologie. '
-translation-type: tm+mt
+title: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie
+description: 'Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie. '
+translation-type: ht
 source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# Adobe Experience Manager als cloudservice - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
 
-Met betrekking tot Adobe Experience Manager (AEM) worden de volgende termen gebruikt als Cloud Service:
+De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a Cloud Service:
 
 ## Producten {#products}
 
 | Product | Beschrijving |
 |---|---|
-| AEM als cloudservice | De &#39;cloud-native&#39; manier om de AEM-toepassingen te benutten |
-| AEM Assets as a Cloud Service | DAM-mogelijkheden (Digital Asset Management) zijn cloudnative, schaalbare oplossing voor het opnemen, verwerken en beheren van uw digitale middelen, en integreren met het bredere ecosysteem van Adobe Experience Cloud en Adobe Creative Cloud. |
-| AEM-sites als cloudservice | Een instantie van de AEM als Cloud Service met de toepassing AEM Sites. |
+| AEM as a Cloud Service | De &#39;cloud-native&#39; manier om de AEM-applicaties te benutten |
+| AEM Assets as a Cloud Service | DAM-mogelijkheden (Digital Asset Management) als cloud-native, schaalbare oplossing voor het opnemen, verwerken en beheren van uw digitale assets, en tegelijk integreren met het bredere ecosysteem van Adobe Experience Cloud en Adobe Creative Cloud. |
+| AEM Sites as a Cloud Service | Een instantie van AEM as a Cloud Service met de applicatie AEM Sites. |
 
-## Instanties en pijpleidingen {#instances-and-pipelines}
+## Instanties en pijplijnen {#instances-and-pipelines}
 
-| Instance | Beschrijving |
+| Instantie | Beschrijving |
 |---|---|
-| Adobe Pipet | Het mechanisme voor het publiceren van inhoud van auteur die moet worden gepubliceerd. |
-| AEM-auteurlijst | Beschrijft het auteursmilieu voor Plaatsen en Activa. |
-| AEM-publicatieniveau | Beschrijft het publiceren milieu voor Plaatsen. |
+| Adobe Pipeline | Het mechanisme voor contentpublicatie vanaf auteur tot aan publicatie. |
+| AEM Author-laag | Beschrijft de authoringomgeving voor Sites en Assets. |
+| AEM Publish-laag | Beschrijft de publicatieomgeving voor Sites. |
 
 
 <!-- This section of the table must be alphabetic -->
@@ -34,11 +34,11 @@ Met betrekking tot Adobe Experience Manager (AEM) worden de volgende termen gebr
 
 | Term | Beschrijving |
 |---|---|
-| AEM-afbeelding | Een plaatsbaar artefact dat de AEM productcode samen met de klantencode bevat. |
-| Middelenmicroservices | Cloud-gebaseerde services voor de verwerking van digitale elementen die verschillende gebruiksgevallen voor elementverwerking verwerken, zoals het genereren van uitvoeringen, PDF-verwerkingen, het verwerken van submiddelen, het extraheren van tekst, enzovoort. Zie Overzicht [van](/help/assets/asset-microservices-overview.md)assetmicroservices voor meer informatie. |
-| Opslagplaats voor wolkenbeheer | Waar klanten hun code en configuratie montages opslaan. |
-| Cloud Provider | AEM als Cloud Service ondersteunt zowel Azure als AWS als cloud providers. |
-| Inhoudsopslagplaats | Waar de inhoud wordt geduurd. |
-| Enterprise-isolatie | Elke instantie van de AEM als Cloud-service is gescheiden van de andere instanties. |
-| Gouden meester | De publicatielaag van AEM. |
-| Orchestration Engine | AEM als Cloud Service gebruikt een orchestration-engine om ervoor te zorgen dat alle auteur- en publicatieservices naar wens worden geschaald. |
+| AEM Image | Een implementeerbaar artefact dat de AEM-productcode samen met de klantcode bevat. |
+| Asset-microservices | Cloudgebaseerde verwerkingsservices voor digitale assets die verschillende gebruiksgevallen voor assetverwerking bedienen, zoals het genereren van weergaven, PDF-verwerkingen, verwerking van subassets, tekstextractie, enzovoort. Zie [Asset-microservices - Overzicht](/help/assets/asset-microservices-overview.md) voor meer informatie. |
+| Git-repository voor Cloud Manager | Waar klanten hun code en configuratie-instellingen opslaan. |
+| Cloudprovider | AEM as a Cloud Service ondersteunt zowel Azure als AWS als cloudproviders. |
+| Content-repository | Waar de content wordt bewaard. |
+| Enterprise Isolation | Elke instantie van de AEM as a Cloud Service is gescheiden van de andere instanties. |
+| Golden Master | De AEM-publicatielaag. |
+| Orkestratie-engine | AEM as a Cloud Service gebruikt een orkestratie-engine om ervoor te zorgen dat alle authoring- en publicatieservices naar behoefte worden geschaald. |
