@@ -2,7 +2,7 @@
 sub-product: Adobe Experience Manager as a Cloud Service Help
 user-guide-title: Adobe Experience Manager as a Cloud Service Help
 translation-type: tm+mt
-source-git-commit: 90f9bf1484d8a886c3309ccc8b01752934255906
+source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
 
 ---
 
@@ -20,4 +20,3 @@ source-git-commit: 90f9bf1484d8a886c3309ccc8b01752934255906
 + [Applicaties voor AEM as a Cloud Service implementeren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
 + [Connectors voor AEM as a Cloud Service implementeren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
 + [Bewerkingen en onderhoud van AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
-+ [Verplaatsen naar AEM als cloudservice](/help/move-to-cloud-service/home.md)
