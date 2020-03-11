@@ -2,7 +2,7 @@
 title: Inhoud zoeken en indexeren
 description: 'Inhoud zoeken en indexeren '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -45,7 +45,7 @@ AS NOTE: the above is internal for now.
 
 -->
 
-## Hoe wordt het gebruikt {#how-to-use}
+## Het gebruik {#how-to-use}
 
 De volgende drie gebruiksgevallen kunnen in indexen worden gedefinieerd:
 
@@ -61,7 +61,7 @@ U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexde
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-en dat moet dan nog onderuit `ui.content/src/main/content/jcr_root`. Subhoofdmappen worden op dit moment niet ondersteund.
+en dat moet dan nog onderuit `ui.apps/src/main/content/jcr_root`. Subhoofdmappen worden op dit moment niet ondersteund.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,9 +71,9 @@ Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite
 
 Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
 
-* De indexdefinitie zelf (bijvoorbeeld `/oak:index/ntBaseLucene-custom-1`MUTABLE-inhoud)
+* De indexdefinitie zelf (bijvoorbeeld `/oak:index/ntBaseLucene-custom-1`)
 
-Om een index te kunnen implementeren, moet de indexdefinitie (`/oak:index/definitionname`) daarom worden geleverd via het **veranderbare pakket**, meestal `ui.content` via Git en het implementatieproces van Cloud Manager.
+Om een index te kunnen implementeren, moet de indexdefinitie (`/oak:index/definitionname``ui.apps` ) daarom via Git en het implementatieproces van Cloud Manager worden geleverd.
 
 Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedestilleerd met de nieuwe indexdefinities, voordat de Blauw-Groen omschakeling plaatsvindt.
 
@@ -85,7 +85,7 @@ Indexbeheer gaat over het toevoegen, verwijderen en wijzigen van indexen. Het wi
 
 ### Wat is een blauw-groene implementatie {#what-is-blue-green-deployment}
 
-Met blauw-groene implementatie kunt u downtime verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing (blauw) wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd (groen).
+Blauw-groene implementatie kan downtime verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing (blauw) wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd (groen).
 
 ### Alleen-lezen en Gebieden lezen/schrijven {#read-only-and-read-write-areas}
 
