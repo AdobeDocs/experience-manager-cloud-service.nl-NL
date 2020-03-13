@@ -1,7 +1,7 @@
 ---
 title: Gereedschapsconsoles
 description: Leer meer over de verschillende gereedschapsconsoles in AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
@@ -9,19 +9,19 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde hulpmiddelen die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren.
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository.
 
-Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globale navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
+Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen in het algemene navigatievenster](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
->Aangezien de kaarten in UI details over het doel van elke optie verstrekken, verstrekt deze lijst eenvoudig snelle verwijzing over de plaats van eigenschappen in het paneel van Hulpmiddelen.
+>De kaarten in de gebruikersinterface beschrijven gedetailleerd het doel van elke optie, terwijl u in deze tabel heel eenvoudig kunt zien waar de functies in het deelvenster Gereedschappen te vinden zijn.
 
 <table>
  <tbody>
   <tr>
    <td>Sectie</td>
-   <td>Option</td>
+   <td>Optie</td>
   </tr>
   <tr>
    <td>Algemeen</td>
@@ -53,7 +53,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie vertaling</td>
+   <td>Configuratie van vertaalmodule</td>
   </tr>
   <tr>
    <td> </td>
@@ -73,15 +73,15 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Launchers</td>
+   <td>Startprogramma's</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Archief</td>
+   <td>Archivering</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Mislukt</td>
+   <td>Fouten</td>
   </tr>
   <tr>
    <td> </td>
@@ -105,7 +105,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Externe koppelingencontrole<br /> </td>
+   <td>Controle van externe koppelingen<br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -113,15 +113,15 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensprofielen</td>
+   <td>Metadataprofielen</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensschema's van map<br /> </td>
+   <td>Map met metadataschema's<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensschema's</td>
+   <td>Metadataschema's</td>
   </tr>
   <tr>
    <td> </td>
@@ -129,7 +129,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie van inzichten</td>
+   <td>Configuratie van Insights</td>
   </tr>
   <tr>
    <td> </td>
@@ -141,7 +141,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie van aangesloten middelen</td>
+   <td>Configuratie van gekoppelde assets</td>
   </tr>
   <tr>
    <td>Bronnen</td>
@@ -173,7 +173,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Pakket delen</td>
+   <td>Package Share</td>
   </tr>
   <tr>
    <td>Beveiliging</td>
@@ -217,15 +217,15 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Cloudservices voor vertaling</td>
+   <td>Cloud Services voor vertalingen</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Publishing-configuratie op YouTube</td>
+   <td>YouTube Publishing-configuratie</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Dynamische mediaconfiguratie</td>
+   <td>Dynamic Media-configuratie</td>
   </tr>
   <tr>
    <td> </td>
@@ -233,11 +233,11 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Adobe-opstartconfiguraties</td>
+   <td>Adobe Launch-configuraties</td>
   </tr>
   <tr>
    <td> </td>
-   <td>BrightStor Content Optimizer</td>
+   <td>BrightEdge Content Optimizer</td>
   </tr>
   <tr>
    <td>Bewerkingen</td>
@@ -265,7 +265,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Gezondheidsrapporten</td>
+   <td>Gezondheidsrapportage</td>
   </tr>
   <tr>
    <td> </td>
@@ -277,7 +277,7 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globa
   </tr>
   <tr>
    <td> </td>
-   <td>Toezicht</td>
+   <td>Bewaking</td>
   </tr>
  </tbody>
 </table>
