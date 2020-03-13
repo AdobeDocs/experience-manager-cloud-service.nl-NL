@@ -1,7 +1,7 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
@@ -9,14 +9,14 @@ source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 # On-boarding {#onboarding}
 
-+ [On-boarding van AEM als Cloud Service](/help/onboarding/home.md)
++ [On-boarding van AEM as a Cloud Service](/help/onboarding/home.md)
 + Wat is vereist {#what-is-required}
    + [Toegangsrechten verleend](what-is-required/access-rights-granted.md)
    + [Gebruikers en rollen toevoegen](what-is-required/add-users-roles.md)
    + [Op rollen gebaseerde machtigingen](what-is-required/role-based-permissions.md)
    + [Broncodeopslagplaats](what-is-required/source-code-repository.md)
 + Toegang krijgen tot AEM in de cloud {#getting-access}
-   + [Experience Manager als Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
+   + [Experience Manager as a Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
    + [Toegang tot programma&#39;s](getting-access-to-aem-in-cloud/first-time-login.md)
    + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
    + [Een programma maken](getting-access-to-aem-in-cloud/creating-a-program.md)
@@ -25,4 +25,4 @@ source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites-gereedheid voor regelgeving inzake gegevensbescherming en -bescherming](data-privacy-and-protection-readiness/sites-readiness.md)
-+ [Overzicht van de gereedschapsconsoles](tools-consoles.md)
++ [Overzicht van de toolconsoles](tools-consoles.md)
