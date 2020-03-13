@@ -1,7 +1,7 @@
 ---
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
@@ -34,7 +34,7 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Raadpleeg de documentatieset voor [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html) voor meer informatie over de versies On-Premise en Managed Service.
+>Raadpleeg de documentatieset voor [AEM 6.5](https://helpx.adobe.com/nl/support/experience-manager/6-5.html) voor meer informatie over de versies On-Premise en Managed Service.
 
 ## Architectuur {#architecture}
 
@@ -67,7 +67,7 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 
 >[!NOTE]
 >
->Voor meer details zie de [het Opstellen Inleiding](/help/implementing/deploying/overview.md).
+>Voor meer details zie de [Inleiding tot implementatie](/help/implementing/deploying/overview.md).
 
 AEM as a Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten volledig up-to-date zijn. Dit betekent dat alle upgradebewerkingen volledig geautomatiseerd zijn, en de gebruikers dus geen onderbreking van de service ervaren.
 
@@ -105,7 +105,7 @@ Cloud Manager:
 
 Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan worden gemaakt, zijn afgeleid van:
 
-* van de licentieovereenkomst voor klanten,
+* De licentieovereenkomst voor klanten;
 
 * Interne actoren wanneer AEM as a Cloud Service wordt gebruikt voor activering of training;
 
@@ -133,9 +133,9 @@ Cloud Manager kan omgevingen maken in drie geografische regio&#39;s (meer regio&
 
 >[!NOTE]
 >
->For further details see [Onboarding](/help/onboarding/home.md).
+>Zie [On-boarding](/help/onboarding/home.md) voor meer informatie.
 
-Het starten en beheren van een AEM-project is eenvoudig wanneer u AEM gebruikt als cloudservice omdat Adobe verantwoordelijk is voor vele aspecten:
+Het starten en beheren van een AEM-project is heel eenvoudig wanneer u AEM as a Cloud Service gebruikt, omdat Adobe verantwoordelijk is voor vele aspecten:
 
 * AEM-basisinstallatiekopieën zijn geoptimaliseerd voor specifieke gebruiksgevallen.
 
@@ -181,7 +181,7 @@ De webconsole, waar OSGI-bundels en de bijbehorende configuratie worden beheerd 
 
 >[!NOTE]
 >
->Zie ook Configuratie [OSGi](/help/implementing/deploying/overview.md#osgi-configuration)
+>Zie ook [OSGi-configuratie](/help/implementing/deploying/overview.md#osgi-configuration)
 
 Een andere veelvoorkomende eis voor ontwikkelaars is snelle toegang tot de logbestanden van de verschillende omgevingen. Met AEM as a Cloud Service worden de logbestanden van de verschillende nodes in de authoring- en publicatienode beschikbaar gesteld via Cloud Manager, in de vorm van bestanden die kunnen worden gedownload, of via API&#39;s.
 
@@ -229,11 +229,11 @@ Bewerkingen voor AEM as a Cloud Service worden ook ondersteund door een nieuwe i
 
 >[!NOTE]
 >
->Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md)voor meer informatie.
+>Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md) voor meer informatie.
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.
 
-Hiervoor moet de [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) worden gebruikt om gebruikers en gebruikersgroepen te beheren. Met gebruikersaccounts hebben uw gebruikers toegang tot Adobe-producten en -services, aangezien gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) en deze gegevens worden gedeeld door alle cloudservices. Zodra de gebruikersaccounts toegang tot AEM hebben gekregen, kan er in AEM as a Cloud Service naar worden verwezen (zoals vroeger), bijvoorbeeld voor het definiëren van rollen en toestemmingen vanuit de gebruikersinterfaces van AEM Security.
+Hiervoor moet de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) worden gebruikt om gebruikers en gebruikersgroepen te beheren. Met gebruikersaccounts hebben uw gebruikers toegang tot Adobe-producten en -services, aangezien gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) en deze gegevens worden gedeeld door alle cloudservices. Zodra de gebruikersaccounts toegang tot AEM hebben gekregen, kan er in AEM as a Cloud Service naar worden verwezen (zoals vroeger), bijvoorbeeld voor het definiëren van rollen en toestemmingen vanuit de gebruikersinterfaces van AEM Security.
 
 Dit biedt een combinatie van de volgende voordelen:
 
@@ -245,7 +245,7 @@ Dit biedt een combinatie van de volgende voordelen:
 
 >[!NOTE]
 >
->Voor meer details, is de [Basisbehandeling](/help/sites-cloud/authoring/getting-started/basic-handling.md) een goed uitgangspunt.
+>Voor meer informatie is de sectie [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md) een goed uitgangspunt.
 
 De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
 
