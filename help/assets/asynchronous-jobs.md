@@ -1,9 +1,9 @@
 ---
 title: Asynchrone bewerkingen
-description: AEM Assets optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
+description: AEM Assets optimaliseert prestaties door sommige middel-intensieve taken asynchroon te voltooien.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ U kunt de status van asynchrone taken weergeven op de pagina **[!UICONTROL Taaks
 
 ## De status van asynchrone bewerkingen controleren {#monitoring-the-status-of-asynchronous-operations}
 
-Telkens wanneer AEM Assets een verrichting asynchroon verwerkt, ontvangt u een bericht bij uw inbox en door e-mail.
+Wanneer AEM Assets een verrichting asynchroon verwerkt, ontvangt u een bericht bij uw inbox <!-- and through email -->.
 
 Als u de status van de asynchrone bewerkingen in detail wilt weergeven, navigeert u naar de pagina **[!UICONTROL Taakstatus]** synchroniseren.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Middelen]** > **[!UICONTROL Taken]**.
+1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** > **[!UICONTROL Jobs]**.
 1. Controleer de details van de bewerkingen op de pagina Taakstatus **** synchroniseren.
 
    ![job_status](assets/job_status.png)
@@ -72,12 +72,12 @@ AEM Assets stelt elke dag om 1:00 in werking om voltooide asynchrone banen te sc
 
 U kunt het schema voor de zuiveringstaak en de duur wijzigen waarvoor de details van voltooide banen worden behouden alvorens zij worden geschrapt. U kunt ook het maximumaantal voltooide taken configureren waarvoor de details op elk gewenst moment behouden blijven.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open de **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** -taak.
 1. Vermeld het drempelaantal dagen waarna voltooide taken worden verwijderd en het maximumaantal banen waarvoor gegevens in de geschiedenis worden bewaard.
 
    ![Configuratie om het leegmaken van asynchrone taken te plannen](assets/configmgr_purge_asyncjobs.png)
-   *Afbeelding:Configuratie om het leegmaken van asynchrone taken te plannen*
+   *Afbeelding: Configuratie om het leegmaken van asynchrone taken te plannen*
 
 1. Sla de wijzigingen op.
 
@@ -89,7 +89,7 @@ U kunt het drempelaantal elementen of verwijzingen voor AEM-elementen zodanig co
 
 Als het aantal te verwijderen elementen of mappen de drempelwaarde overschrijdt, wordt de verwijderbewerking asynchroon uitgevoerd.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async-configuratie Taakverwerking]** verwijderen.
 1. Geef in het vak **[!UICONTROL Drempelwaarde voor het aantal elementen]** het drempelaantal elementen/mappen voor asynchrone verwerking van verwijderingsbewerkingen op.
 
@@ -101,7 +101,7 @@ Als het aantal te verwijderen elementen of mappen de drempelwaarde overschrijdt,
 
 Als het aantal te verplaatsen elementen/mappen of verwijzingen het drempelnummer overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async-configuratie Taakverwerking]** verplaatsen.
 1. Geef in het vak **[!UICONTROL Drempelwaarde aantal elementen/referenties]** het drempelaantal elementen/mappen of verwijzingen voor asynchrone verwerking van verplaatsingsbewerkingen op.
 
