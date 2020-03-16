@@ -3,7 +3,7 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt in de middelen van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,63 +29,82 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 
 1. Selecteer in de gebruikersinterface Elementen het element dat u wilt delen als een koppeling.
-1. Klik/tik op de werkbalk op de koppeling **[!UICONTROL Delen]**.
-
-   Er wordt automatisch een elementkoppeling gemaakt in het veld Koppeling **** delen. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
-
-   Alternatief, ga te werk om stappen 3-7 van deze procedure uit te voeren om e-mailontvangers toe te voegen, de vervaltijd voor de verbinding te vormen, en het van de dialoog te verzenden.
+1. Klik/tik op de werkbalk op de koppeling **[!UICONTROL Delen]**. Er wordt automatisch een elementkoppeling gemaakt in het veld Koppeling **** delen. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
 
    >[!NOTE]
    >
    >Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
 
-1. Van de Webconsole, open de Configuratie van de Verbinding External **[!UICONTROL van de Verbinding van]** Dag CQ en wijzig de volgende eigenschappen op het gebied van **[!UICONTROL Domeinen]** met de waarden die tegen elk worden vermeld:
+<!--
+## Share assets as a link {#sharelink}
 
-   * lokaal
-   * author
-   * publish
-   Geef voor de lokale en auteur-eigenschappen de URL op voor respectievelijk de lokale instantie en de auteur. Zowel de lokale als de auteur-eigenschappen hebben dezelfde waarde als u één AEM-auteurinstantie uitvoert. Geef voor publiceren de URL voor de publicatie-instantie op.
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
-1. Typ in het vak E-mailadres van het dialoogvenster **[!UICONTROL Delen]** van koppeling de e-mailid van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling ook delen met meerdere gebruikers.
+>[!NOTE]
+>
+>* You need Edit ACL permission on the folder or the asset that you want to share as a link.
+>* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
-   Als de gebruiker lid is van uw organisatie, selecteert u de e-mailid van de gebruiker in de voorgestelde e-mailadressen die worden weergegeven in de lijst onder het invoergebied. Voor een externe gebruiker typt u de volledige e-mailid en selecteert u deze in de lijst.
+1. In the Assets user interface, select the asset to share as a link.
+1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
 
-   Als u wilt dat e-mailberichten naar gebruikers kunnen worden verzonden, configureert u de SMTP-servergegevens in [Day CQ Mail Service](/help/assets/configure-asset-sharing.md#configmailservice).
+   An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
-   >[!NOTE]
-   >
-   >Als u een e-mailadres invoert van een gebruiker die geen lid is van uw organisatie, wordt het woord &quot;Externe gebruiker&quot; voorafgegaan door de e-mailid van de gebruiker.
-
-1. Voer in het vak **[!UICONTROL Onderwerp]** een onderwerp in voor het element dat u wilt delen.
-1. Voer in het vak **[!UICONTROL Bericht]** een optioneel bericht in.
-1. Geef in het veld **[!UICONTROL Verlopen]** een vervaldatum en -tijd voor de koppeling op met de datumkiezer. De vervaldatum wordt standaard ingesteld voor een week vanaf de datum waarop u de koppeling deelt.
-1. Als u gebruikers de oorspronkelijke afbeelding samen met de uitvoeringen wilt laten downloaden, selecteert u **[!UICONTROL Downloaden van origineel bestand]** toestaan.
+   Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 
    >[!NOTE]
    >
-   >Standaard kunnen gebruikers alleen de uitvoeringen downloaden van het element dat u als koppeling deelt.
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
-1. Klik op **[!UICONTROL Delen]**. Een bericht bevestigt dat de koppeling via e-mail met de gebruikers wordt gedeeld.
-1. Als u het gedeelde element wilt weergeven, klikt of tikt u op de koppeling in het e-mailbericht dat naar de gebruiker is verzonden. Het gedeelde element wordt weergegeven op de pagina **[!UICONTROL Adobe Marketing Cloud]** .
+1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
-   Als u wilt schakelen naar de lijstweergave, klikt of tikt u op het layoutpictogram op de werkbalk.
+    * local
+    * author
+    * publish
 
-1. Als u een voorvertoning van het element wilt genereren, klikt of tikt u op het gedeelde element. Als u de voorvertoning wilt sluiten en wilt terugkeren naar de pagina **[!UICONTROL Marketing Cloud]** , klikt of tikt u op **[!UICONTROL Terug]** op de werkbalk. Als u een map hebt gedeeld, klikt of tikt u op **[!UICONTROL Bovenliggende map]** om terug te keren naar de bovenliggende map.
+   For the local and author properties, provide the URL for the local and author instance respectively. Both local and author properties have the same value if you run a single AEM author instance. For publish, provide the URL for the publish instance.
+
+1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can also share the link with multiple users.
+
+   If the user is a member of your organization, select the user's email ID from the suggested email IDs that appear in the list below the typing area. For an external user, type the complete email ID and then select it from the list.
+
+   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](/help/assets/configure-asset-sharing.md#configmailservice).
 
    >[!NOTE]
    >
-   >AEM ondersteunt het genereren van een voorvertoning van elementen van deze MIME-typen: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
+   >If you enter an email ID of a user that is not a member of your organization, the words "External User" are prefixed with the email ID of the user.
 
-1. Als u het gedeelde element wilt downloaden, klikt of tikt u op **[!UICONTROL Selecteren]** op de werkbalk, klikt/tikt u op het element en klikt/tikt u op **[!UICONTROL Downloaden]** op de werkbalk.
-1. Als u de elementen die u als koppelingen hebt gedeeld, wilt weergeven, gaat u naar de interface Middelen en klikt of tikt u op het pictogram GlobalNav. Kies **[!UICONTROL Navigatie]** in de lijst om het navigatievenster weer te geven.
-1. Kies in het navigatievenster de optie **[!UICONTROL Gedeelde koppelingen]** om een lijst met gedeelde elementen weer te geven.
-1. Als u een element niet meer wilt delen, selecteert u het en tikt u op Delen **[!UICONTROL opheffen]** of klikt u op de werkbalk.
+1. In the **[!UICONTROL Subject]** box, enter a subject for the asset you want to share.
+1. In the **[!UICONTROL Message]** box, enter an optional message.
+1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
+1. To let users download the original image along with the renditions, select **[!UICONTROL Allow download of original file]**.
 
-Een bericht bevestigt dat u het element niet hebt gedeeld. Bovendien wordt de vermelding voor het element uit de lijst verwijderd.
+   >[!NOTE]
+   >
+   >By default, users can only download the renditions of the asset that you share as a link.
+
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
+1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+
+   To toggle to the list view, click/tap the layout icon in the toolbar.
+
+1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
+
+   >[!NOTE]
+   >
+   >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
+
+1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+
+A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+-->
 
 ## Elementen downloaden en delen {#download-and-share-assets}
 
-Gebruikers kunnen bepaalde middelen downloaden en deze delen buiten Experience Manager. Zie voor meer informatie [hoe u elementen](/help/assets/search-assets.md)kunt zoeken, [hoe u elementen](/help/assets/download-assets-from-aem.md)kunt downloaden en [hoe u verzamelingen kunt downloaden](manage-collections.md#download-a-collection)
+Gebruikers kunnen bepaalde assets downloaden en deze delen buiten Experience Manager. Zie voor meer informatie [hoe u elementen](/help/assets/search-assets.md)kunt zoeken, [hoe u elementen](/help/assets/download-assets-from-aem.md)kunt downloaden en [hoe u verzamelingen kunt downloaden](manage-collections.md#download-a-collection)
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
@@ -95,13 +114,74 @@ Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvo
 
 * **Adobe-elementkoppeling**: De creatieve professionals kunnen rechtstreeks vanuit Adobe InDesign, Adobe Illustrator en Adobe Photoshop zoeken en middelen gebruiken.
 
-### Beste werkwijzen en probleemoplossing {#bestpractices}
+## Assets delen configureren {#configure-sharing}
 
-* Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de AEM-beheerder na welke [downloadlimieten](/help/assets/configure-asset-sharing.md#maxdatasize) gelden.
-* Als u geen e-mail met koppelingen naar gedeelde elementen kunt verzenden of als de andere gebruikers uw e-mail niet kunnen ontvangen, raadpleegt u uw AEM-beheerder als de [e-mailservice](/help/assets/configure-asset-sharing.md#configmailservice) is geconfigureerd of niet.
-* Als u geen elementen kunt delen via de functie voor het delen van koppelingen, controleert u of u de juiste machtigingen hebt. Zie [Elementen](#sharelink)delen.
+### Delen van koppelingen voor elementen configureren {#asset-link-sharing}
+
+<!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
+
+Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op de `/var/dam/share` locatie kunnen de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij AEM Assets.
+
+>[!NOTE]
+>
+>Als u koppelingen van uw AEM-auteur naar externe entiteiten wilt delen, dient u alleen de volgende URL&#39;s voor `GET` aanvragen beschikbaar te maken. Blokkeer andere URL&#39;s om ervoor te zorgen dat uw AEM-auteur-instantie veilig is.
+>* `[aem_server]:[port]/linkshare.html`
+>* `[aem_server]:[port]/linksharepreview.html`
+>* `[aem_server]:[port]/linkexpired.html`
+
 
 <!--
-Add content or link about how to share using BP, DA, AAL, etc.
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+
+    * SMTP server host name: email server host name
+    * SMTP server port: email server port
+    * SMTP user: email server user name
+    * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
+-->
+
+### Maximale gegevensgrootte configureren {#maxdatasize}
+
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de opslagplaats en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, kunt u de maximumgrootte van de gedownloade dossiers vormen. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+
+1. Klik of tik op het AEM-logo en ga vervolgens naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
+1. Zoek vanuit de webconsole de configuratie van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
+1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Sla de wijzigingen op.
+
+<!--
+Add content or link about how to configure sharing via BP, DA, AAL, etc.
+-->
+
+### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
+
+Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden Desktopacties genoemd en als deze niet worden toegelaten, zie [toelaten Desktopacties in AEM Webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+
+![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
+
+### Configuraties voor het gebruik van Adobe Asset Link {#configure-asset-link}
+
+Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager-middelen (AEM) worden verbonden met Creative Cloud-bureaubladtoepassingen, Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in AEM Assets, en kunnen ze deze inhoud wijzigen zonder de creatieve apps te verlaten waarmee ze het meest vertrouwd zijn.
+
+Zie [hoe u AEM kunt configureren voor gebruik met Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+
+## Beste werkwijzen en probleemoplossing {#bestpractices}
+
+* Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de AEM-beheerder na welke [downloadlimieten](#maxdatasize) gelden.
+
+<!--
+* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
+* If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+-->
+
+<!--
+Add content or link about how to share using Brand Portal when it is available on Cloud Service.
 -->
