@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager-middelen
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -38,7 +38,7 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 
 1. Klik op het pictogram GlobalNav om het deelvenster Zoeken weer te geven.
 
-1. Klik op de optie **[!UICONTROL Vervalstatus]** of tik erop om deze uit te vouwen.
+1. Click/tap the **[!UICONTROL Expiry Status]** option to expand it.
 
 1. Selecteer **[!UICONTROL Verlopen]**. De verlopen elementen worden weergegeven in zoekresultaten.
 
@@ -48,17 +48,19 @@ Als u de vervaldatum van een gepubliceerd element aan een datum vroeger dan de h
 
 Bovendien als een glitch of een fout de planner verhindert verlopen activa in de huidige cyclus te ontdekken, onderzoekt de planner deze activa in de volgende cyclus opnieuw en ontdekt hun verlopen status.
 
-Om de middelenconsole in staat te stellen de referentiecomponenten samen met de verlopen submiddelen weer te geven, configureert u een **[!UICONTROL Adobe CQ DAM-workflow voor meldingen]** bij verlopen in AEM Configuration Manager.
+Om de assetconsole in staat te stellen de refererende samengestelde assets samen met de verlopen subassets weer te geven configureert u een **[!UICONTROL Adobe CQ DAM-workflow voor verloopmeldingen]** in AEM Configuration Manager.
 
 1. Open AEM Configuration Manager.
 1. Kies Bericht bij verlopen **[!UICONTROL van Adobe CQ DAM]**. Standaard is **[!UICONTROL Tijdgebaseerde planner]** geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
-1. Om de baan periodiek in werking te stellen, ontruim het **[!UICONTROL Op tijd gebaseerde gebied van de Regel]** van de Planner en wijzig de tijd in seconden op het gebied van de **[!UICONTROL Periodieke Planner]** . Bijvoorbeeld de voorbeeldexpressie &#39;0 0 &amp;ast; &amp;ast; ? wordt de taak om 00 uur gestart.
-1. Selecteer E-mail **** verzenden om e-mails te ontvangen wanneer een element verloopt.
+1. Om de baan periodiek in werking te stellen, ontruim het **[!UICONTROL Op tijd gebaseerde gebied van de Regel]** van de Planner en wijzig de tijd in seconden op het gebied van de **[!UICONTROL Periodieke Planner]** . Bijvoorbeeld bij de voorbeeldexpressie &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; wordt de taak om 00 uur gestart.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Alleen de maker van het element (de persoon die een bepaald middel uploadt naar AEM Assets) ontvangt een e-mail wanneer het middel vervalt. Zie hoe u e-mailmeldingen configureert voor meer informatie over het configureren van e-mailmeldingen op algemeen AEM-niveau.
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. In het **[!UICONTROL Voorafgaande bericht in secondengebied]** , specificeer de tijd in seconden voorafgaand aan de tijd een activa verloopt wanneer u een bericht betreffende de vervaldatum wilt ontvangen. Als u een beheerder of de maker van het element bent, ontvangt u een bericht vóór het verlopen van het element om u te laten weten dat het element op het punt staat na de opgegeven tijd te verlopen.
 
@@ -72,7 +74,7 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
 1. Selecteer een element in de gebruikersinterface Elementen.
 
-1. Tik/klik op het pictogram **[!UICONTROL Publiceren]** op de werkbalk. Als u het pictogram **Publiceren** niet kunt zien op de werkbalk, tikt u op **[!UICONTROL Meer]** op de werkbalk en klikt u op het pictogram **[!UICONTROL Publiceren]** .
+1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. If you can&#39;t see the **Publish** icon on the toolbar, tap/click **[!UICONTROL More]** on the toolbar and locate the **[!UICONTROL Publish]** icon.
 
 1. Kies **[!UICONTROL Publiceren]** in het menu en sluit het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
@@ -91,11 +93,11 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 1. Als u naar elementen wilt zoeken op basis van hun status, klikt of tikt u op het pictogram **[!UICONTROL Zoeken]** om de zoekbalk weer te geven.
 
 1. Druk op Enter en klik/tik op het pictogram AEM om het deelvenster Zoeken weer te geven.
-1. Tik in het deelvenster Zoeken op **[!UICONTROL Publicatiestatus]** of klik op Publiceren en selecteer **[!UICONTROL Gepubliceerd]** om te zoeken naar gepubliceerde elementen in AEM-elementen.
+1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
-1. Tik/klik op **[!UICONTROL Goedkeuringsstatus]** en klik op de gewenste optie om te zoeken naar goedgekeurde of geweigerde middelen.
+1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
-1. Als u naar elementen wilt zoeken op basis van hun vervalstatus, selecteert u **[!UICONTROL Vervalstatus]** in het deelvenster Zoeken en kiest u de gewenste optie.
+1. To search for assets based on their expiration status, select **[!UICONTROL Expiry Status]** in the Search panel and choose the appropriate option.
 
 1. U kunt ook naar elementen zoeken op basis van een combinatie van statussen onder verschillende zoekfacetten. U kunt bijvoorbeeld zoeken naar gepubliceerde elementen die zijn goedgekeurd in een overzichtstaak en die nog niet zijn verlopen door de juiste opties te selecteren in de zoekfacetten.
 
@@ -121,11 +123,11 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 ### DRM-middelen downloaden {#downloading-drm-assets}
 
 1. Selecteer in de kaartweergave de elementen die u wilt downloaden en klik op het pictogram **[!UICONTROL Downloaden]** .
-1. Selecteer op de pagina **[!UICONTROL Copyrightbeheer]** het element dat u wilt downloaden in de lijst.
+1. In the **[!UICONTROL Copyright Management]** page, select the asset you want to download from the list.
 1. Kies **[!UICONTROL Akkoord]** in het venster Licentie. Naast het element waarvoor u de licentieovereenkomst accepteert, wordt een vinkje weergegeven. Tik/klik op de knop **[!UICONTROL Downloaden]** .
 
    >[!NOTE]
    >
-   >De knop **[!UICONTROL Downloaden]** is alleen ingeschakeld als u akkoord gaat met de licentieovereenkomst voor een beveiligd element. Als uw selectie echter zowel beveiligde als niet-beveiligde elementen bevat, worden alleen de beveiligde elementen weergegeven in het linkervenster en wordt de knop **[!UICONTROL Downloaden]** ingeschakeld om de niet-beveiligde elementen te downloaden. Als u tegelijkertijd licentieovereenkomsten voor meerdere beveiligde elementen wilt accepteren, selecteert u de elementen in de lijst en kiest u **[!UICONTROL Akkoord]**.
+   >The **[!UICONTROL Download]** button is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the left pane and the **[!UICONTROL Download]** button is enabled to download the unprotected assets. To simultaneously accept license agreements for multiple protected assets, select the assets from the list and then choose **[!UICONTROL Agree]**.
 
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Downloaden]** om het element of de uitvoeringen te downloaden.
