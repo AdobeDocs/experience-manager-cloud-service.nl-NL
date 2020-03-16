@@ -1,14 +1,14 @@
 ---
-title: Elementen rapporteren
+title: Rapporten over assets
 description: In dit artikel worden diverse rapporten beschreven over elementen in AEM Assets en hoe rapporten kunnen worden gegenereerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
-# Elementrapporten {#asset-reports}
+# Asset Reports {#asset-reports}
 
 Asset Reporting is een belangrijk hulpmiddel om het nut van de implementatie van Adobe Experience Manager (AEM)-middelen te beoordelen. Met AEM Assets kunt u diverse rapporten genereren over uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
@@ -18,7 +18,7 @@ Het rapportagekader voor AEM Assets gebruikt Sling-taken om rapportageaanvragen 
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
-Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (optioneel) en een postbusmelding. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
+Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- through an email (optional) and --> een inbox bericht. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
 
 ## Rapporten genereren {#generate-reports}
 
@@ -47,7 +47,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    >[!NOTE]
    >
-   >Voordat u een rapport **[!UICONTROL Asset Downloaded]** kunt genereren, moet u controleren of de service Asset Download is ingeschakeld. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie van de DAM-gebeurtenisrecorder **[!UICONTROL voor]** dagen van CQ en selecteer de optie **[!UICONTROL Gedownloade]** middelen (GEDOWNLOAD)in gebeurtenistypen als deze optie nog niet is geselecteerd.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie van de DAM-gebeurtenisrecorder **[!UICONTROL voor]** dagen van CQ en selecteer de optie **[!UICONTROL Gedownloade]** middelen (GEDOWNLOAD)in gebeurtenistypen als deze optie nog niet is geselecteerd.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    >[!NOTE]
    >
-   >Het rapport **[!UICONTROL Schijfgebruik]** bevat geen datumbereikvelden omdat het alleen het huidige gebruik van schijfruimte aangeeft.
+   >The **[!UICONTROL Disk Usage]** report does not include date range fields because it indicates current disk space usage only.
 
    ![disk_usage_configuration](assets/disk_usage_configuration.png)
 
@@ -79,9 +79,9 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    ![files_report](assets/files_report.png)
 
-   In het rapport **[!UICONTROL Koppeling delen]** worden URL&#39;s weergegeven naar elementen die vanuit AEM-elementen worden gedeeld met externe gebruikers. Het bevat e-mailadressen van de gebruiker die de middelen heeft gedeeld, e-mailadressen van gebruikers met wie de middelen worden gedeeld, datum van delen en vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> De kolommen kunnen niet worden aangepast.
 
-   Het rapport **[!UICONTROL Koppeling delen]** bevat geen opties voor submappen en uitvoeringen omdat het alleen de gedeelde URL&#39;s publiceert die onder */var/dam/share* worden weergegeven.
+   The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
 
    ![link_share](assets/link_share.png)
 
@@ -122,7 +122,7 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en tik op **[!UICONTROL Volgende]**.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad, datumbereik enzovoort, al naar gelang van toepassing.
 
-1. Als u een aangepaste kolom wilt weergeven, geeft u de naam van de kolom op onder **[!UICONTROL Aangepaste kolommen]**.
+1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
