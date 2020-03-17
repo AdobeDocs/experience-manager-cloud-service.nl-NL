@@ -1,8 +1,8 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
+translation-type: tm+mt
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
@@ -22,8 +22,8 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
    + [Toegang tot Git](cloud-manager/accessing-git.md)
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Ontwikkelen voor AEM as a Cloud Service {#developing}
-   + [AEM-projectpakketstructuur](developing/introduction/aem-project-content-package-structure.md)
-   + [Pakket voor opslagplaatsstructuur ontwikkelen](developing/introduction/repository-structure-package.md)
+   + [AEM-projectstructuur](developing/introduction/aem-project-content-package-structure.md)
+   + [Structuurpakket voor AEM-projectopslagplaats](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Inhoud zoeken en indexeren](/help/operations/indexing.md)
    + [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](developing/introduction/development-guidelines.md)
