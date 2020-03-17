@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
@@ -394,7 +394,7 @@ Voeg in de `ui.apps/pom.xml` en een andere `pom.xml` code die een codepakket (`<
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
