@@ -1,17 +1,17 @@
 ---
-title: 'Een structuurpakket voor opslagplaats ontwikkelen   '
+title: 'Structuurpakket voor AEM-projectopslagplaats  '
 description: Voor Adobe Experience Manager als een met cloudservice gefinancierde projecten is een definitie vereist van het subpakket Structuur in opslagplaats met als enig doel de wortels van de JCR-opslagplaats te definiëren waarin de subpakketten Code van het project worden geïmplementeerd.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Een structuurpakket voor opslagplaats ontwikkelen
+# Structuurpakket voor AEM-projectopslagplaats
 
 Voor geMaven projecten voor Adobe Experience Manager als Cloud Service is een subpakketdefinitie vereist in de opslagplaats met als enig doel het definiëren van de wortels van de JCR-opslagplaats waarin de code-subpakketten van het project worden geïmplementeerd. Dit zorgt ervoor dat de installatie van pakketten in de Manager van de Ervaring als Dienst van de Wolk automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 
-Als uw codepakket in een plaats opstelt die **niet door het codepakket wordt behandeld** , dan moeten om het even welke vooroudermiddelen (middelen JCR dichter bij de wortel JCR) in het pakket van de gegevensopslagstructuur worden opgesomd om deze gebiedsdelen te vestigen.
+Als uw codepakket wordt geïmplementeerd op een locatie die **niet door het codepakket wordt gedekt**, dan moeten bovenliggende resources (JCR-resources die zich dichter bij de JCR-root bevinden) in het pakket van de dataopslagstructuur worden opgesomd om deze afhankelijkheden tot stand te brengen.
 
 ![Structuurpakket opslagplaats](./assets/repository-structure-packages.png)
 
