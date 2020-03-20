@@ -2,7 +2,7 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
+source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
 
 ---
 
@@ -42,7 +42,7 @@ Voer de volgende taken uit om met Doel te integreren:
 
 >[!CAUTION]
 >
->&quot;In AEM als Cloud Service is de replicatieagent die aanbiedingen en activiteiten van AEM synchroniseert met Adobe Target standaard uitgeschakeld. Neem contact op met de [ondersteuning](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) van Adobe als u de replicatieagent opnieuw moet inschakelen.&quot;
+>In AEM als Cloud Service is de replicatieagent die aanbiedingen en activiteiten van AEM synchroniseert met Adobe Target standaard uitgeschakeld. Neem contact op met de [ondersteuning](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) van Adobe als u de replicatieagent opnieuw moet inschakelen.
 
 >[!NOTE]
 >
