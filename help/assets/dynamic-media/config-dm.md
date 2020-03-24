@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van dynamische media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
+source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
 
 ---
 
@@ -65,28 +65,32 @@ Dynamische mediawolkenservices configureren:
 
    * **[!UICONTROL Pad naar hoofdmap van bedrijf]**
 
-   * **[!UICONTROL Elementen]** publiceren - de optie **[!UICONTROL Onmiddellijk]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en direct de URL/Embed levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren. De optie **[!UICONTROL Bij activering]** (standaard) houdt in dat u het element eerst expliciet moet publiceren voordat er een koppeling URL/Embed wordt opgegeven.
+   * **[!UICONTROL Middelen]** publiceren - U kunt uit de volgende drie opties kiezen:
+      * **[!UICONTROL Onmiddellijk]** betekent dit dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en direct de URL/Embed levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
+      * **[!UICONTROL Bij activering]** betekent dit dat u het element eerst expliciet moet publiceren voordat er een URL/insluitkoppeling wordt opgegeven.
+<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
 
-   * **[!UICONTROL Beveiligde voorvertoningsserver]** - hiermee kunt u het URL-pad naar de beveiligde voorvertoningsserver voor vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang heeft tot de externe dynamische media-uitvoeringen en deze voorvertoning kan bekijken (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
-Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u dit het plaatsen zoals gespecificeerd verlaat.
+    * **[!UICONTROL Beveiligde voorvertoningsserver]** - hiermee kunt u het URL-pad naar de beveiligde voorvertoningsserver voor vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang heeft tot de externe dynamische media-uitvoeringen en deze voorvertoning kan bekijken (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
+    Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u dit het plaatsen zoals gespecificeerd verlaat.
+    
+    * **[!UICONTROL Alle inhoud]synchroniseren** - Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:
+    
+    * **[!UICONTROL Dynamische media-synchronisatiemodus]**
+    ***[!UICONTROL Standaard]ingeschakeld** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld om te worden uitgesloten. &lt;!— u kunt vervolgens de mappen deselecteren waarop u de configuratie niet wilt toepassen.—>
+    * **[!UICONTROL Uitgeschakeld door gebrek]** - de configuratie wordt niet toegepast op om het even welke omslag tot u uitdrukkelijk een geselecteerde omslag voor synchronisatie aan Dynamische Media markeert.
+    Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische media, opent u de pagina Eigenschappen van uw assetmap. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
+    * **[!UICONTROL Overerfd]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan overerft de map de synchronisatiewaarde van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
+    * **[!UICONTROL Inschakelen voor submappen]** - Alles in deze substructuur opnemen voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
+    * **[!UICONTROL Uitgeschakeld voor submappen]** - Alles in deze substructuur uitsluiten van synchroniseren naar dynamische media.
 
-   * **[!UICONTROL Alle inhoud]** synchroniseren - Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:
+>[!NOTE]
+>
+>Er is geen ondersteuning voor versiebeheer in Dynamische media. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
+>
+>
+>Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
-   * **[!UICONTROL Dynamische media-synchronisatiemodus]**
-      * **[!UICONTROL Standaard]** ingeschakeld - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Deze optie is standaard]** uitgeschakeld. De configuratie wordt pas op een map toegepast als u expliciet een geselecteerde map markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische media, opent u de pagina Eigenschappen van uw assetmap. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL Overgenomen]** - geen expliciete synchronisatiewaarde in de map; in plaats daarvan overerft de map de synchronisatiewaarde van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
-         * **[!UICONTROL Inschakelen voor submappen]** - Alles opnemen in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
-         * **[!UICONTROL Uitgeschakeld voor submappen]** - sluit alles in deze substructuur uit van synchroniseren naar dynamische media.
-   >[!NOTE]
-   >
-   >Er is geen ondersteuning voor versiebeheer in Dynamische media. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
-   >
-   >
-   >Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tik op **[!UICONTROL Opslaan]**.
 1. Als u de dynamische media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM-auteurinstantie &#39;whitelist&#39; om verbinding te maken met Dynamic Media:
