@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -55,7 +55,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
+   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
    * Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
 * **Uit-tijd**
@@ -181,8 +181,10 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **Doelconfiguratie**
 
    * Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-cloud/authoring/personalization/targeted-content.md)op te geven.
+   >[!NOTE]
+   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
 * **Machtigingen**
 
@@ -216,7 +218,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
       * Voor één pagina
       * Voor meerdere pagina&#39;s (alleen een subset van de eigenschappen is beschikbaar voor massabewerking)
 * Vanuit de pagina-editor:
-   * Pagina- **informatie** gebruiken (en vervolgens Eigenschappen **** openen)
+   * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
 ### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
@@ -236,14 +238,14 @@ Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigensc
 
 1. Open de pagina waarvan u de eigenschappen wilt bewerken.
 1. Selecteer het pictogram **Pagina-informatie** om het selectiemenu te openen:
-1. Selecteer Eigenschappen **** openen en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
+1. Selecteer **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
    * **Annuleren**
    * **Opslaan en sluiten**
 1. Sla de wijzigingen op met de knop **Opslaan en sluiten** .
 
 ### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
-Vanuit de **Sites** -console kunt u meerdere pagina&#39;s selecteren en vervolgens de pagina-eigenschappen **bekijken en/of bewerken met** Weergave-eigenschappen. Dit wordt het bulkbewerken van pagina-eigenschappen genoemd.
+Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
 >[!NOTE]
 >
@@ -261,7 +263,7 @@ U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende mani
 * Bij het bladeren door de **Sites** -console
 * Nadat u **Zoeken** hebt gebruikt om een set pagina&#39;s te zoeken
 
-Nadat u de pagina&#39;s hebt geselecteerd en op de optie **** Eigenschappen hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
+Nadat u de pagina&#39;s hebt geselecteerd en op de optie **Eigenschappen** hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
 
 ![Pagina-eigenschappen voor bulkbewerking](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
