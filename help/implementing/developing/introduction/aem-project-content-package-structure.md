@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
@@ -43,7 +43,7 @@ Dit diagram verstrekt een overzicht van de geadviseerde projectstructuur en pakk
 
 De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
-+ Het `ui.apps` pakket, of het Pakket van de Inhoud, bevat alle code die moet worden opgesteld en slechts aan opstellen `/apps`. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
++ Het `ui.apps` pakket, of het Pakket van de Code, bevat alle code die moet worden opgesteld en slechts aan `/apps`opstelt. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
    + OSGi-bundels
       + `/apps/my-app/install`
    + OSGi-configuraties
@@ -69,7 +69,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Groepen
          + ACLs (toestemmingen)
             + Willekeurig pad `rep:policy` (veranderbaar of onveranderbaar)
-+ Het `ui.content` pakket, of het Pakket van de Code, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
++ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
    + Contextbewuste configuraties
       + `/conf`
    + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren uitbreidt van de Basislijn die in RepoInit worden bepaald.
@@ -489,7 +489,7 @@ Als de veelvoudige `/apps/*-packages` in ingebedde doelstellingen worden gebruik
 >[!WARNING]
 > Als u meer Maven-repositories toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagplaatsen op afhankelijkheden worden gecontroleerd.
 
-Voeg in het reactorproject de noodzakelijke richtlijnen van de derde partij inzake openbare opslagplaats Maven toe `pom.xml`. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
+Voeg in het reactorproject `pom.xml`de noodzakelijke richtlijnen van derden inzake openbare opslagplaats Maven toe. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
 
 ```xml
 <repositories>
