@@ -2,14 +2,14 @@
 title: Inhoud leveren
 description: 'Inhoud leveren '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 # Inhoud leveren in AEM als cloudservice {#content-delivery}
 
-De levering van de de dienstinhoud van de publicatie omvat:
+Op de huidige pagina vindt u details van de inhoud van de publicatieservice in AEM als een Cloud Service. De levering van de de dienstinhoud van de publicatie omvat:
 
 * CDN (wordt meestal beheerd door Adobe)
 * AEM-verzender
