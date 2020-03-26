@@ -4,7 +4,7 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
+source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
 
 ---
 
@@ -419,29 +419,30 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
-   >[!NOTE]
-   >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+>[!NOTE]
+>
+>Voor een niet-beheerdersgebruiker, verschijnen de suggesties slechts als de gebruiker Gelezen toestemmingen bij `/home` in CRXDE heeft.
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
+1. Nadat u de annotatie hebt toegevoegd, klikt u op **[!UICONTROL Toevoegen]** om deze op te slaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >You can add multiple annotations, before you save them.
+   >U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
-1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
-1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. Tik/klik op **[!UICONTROL Sluiten]** om de annotatiemodus te verlaten.
+1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en klik op het pictogram **[!UICONTROL Meldingen]** om de melding weer te geven.
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
+   >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Zie Video-elementen [beheren voor meer informatie](manage-video-assets.md).
 
-1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
+1. Als u een andere kleur wilt kiezen zodat u onderscheid kunt maken tussen gebruikers, klikt of tikt u op het pictogram Profiel en klikt of tikt u op **[!UICONTROL Mijn voorkeuren]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -451,13 +452,13 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 >[!NOTE]
 >
->You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
+>U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties/opmerkingen aan de bovenliggende verzameling toevoegen. De optie Annoteren is niet beschikbaar voor onderliggende verzamelingen.
 
-### View saved annotations {#viewing-saved-annotations}
+### Opgeslagen notities weergeven {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
+1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in de lijst.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -465,31 +466,31 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
+   Tik op een opmerking of klik op een opmerking in het deelvenster **[!UICONTROL Tijdlijn]** om de bijbehorende annotatie in de afbeelding weer te geven.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
+   Tik/klik op **[!UICONTROL Verwijderen]** om een bepaalde opmerking te verwijderen.
 
-### Print annotations {#printing-annotations}
+### Annotaties afdrukken {#printing-annotations}
 
-If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
+Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
-You can also choose to print only the annotations or review status.
+U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
-To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wizard om de annotaties en de revisiestatus af te drukken. Het pictogram **[!UICONTROL Afdrukken]** wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
 
-1. From the Assets UI, open the preview page for an asset.
-1. Do one of the following:
+1. Open vanuit de interface Middelen de voorvertoningspagina voor een element.
+1. Voer een van de volgende handelingen uit:
 
-    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
+   * Als u alle annotaties en de revisiestatus wilt afdrukken, slaat u stap 3 over en gaat u rechtstreeks naar stap 4.
+   * Als u specifieke annotaties en de revisiestatus wilt afdrukken, opent u de [tijdlijn](/help/assets/manage-digital-assets.md#timeline) en gaat u naar stap 3.
 
-1. To print specific annotations, select the annotations from the timeline.
+1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de tijdlijn.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   To print the review status only, select it from the timeline.
+   Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in de tijdlijn.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -497,100 +498,100 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
+1. Kies in het dialoogvenster Afdrukken de positie waar u de annotaties/revisiestatus wilt weergeven in de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **Linksboven** . Deze optie is standaard geselecteerd.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties/status wilt weergeven in de afgedrukte PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
+   >Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
 
-1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Tik/klik op **[!UICONTROL Afdrukken]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Download or print the PDF using the options at the top-right.
+1. Download of druk de PDF af met de opties rechtsboven.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u de PDF-configuratie **[!UICONTROL voor]** annotaties in Configuratiebeheer en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
+   Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
 ## Asset versioning {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element.
 
-The following are scenarios where you create versions:
+Hieronder vindt u scenario&#39;s waarin u versies maakt:
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar AEM Assets. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
+* U bewerkt de metagegevens van een element.
+* Met de AEM-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
-The versioning functionality lets you do the following:
+Met de versiefunctionaliteit kunt u het volgende doen:
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+* Maak een versie van een element.
+* De huidige revisie voor een element weergeven.
+* Herstel het element naar een vorige versie.
 
-1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
+1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en tik op het element of klik erop om de elementpagina te openen.
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in het menu.
 
-   ![timeline](assets/timeline.png)
+   ![tijdlijn](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+1. Tik/klik op het pictogram **[!UICONTROL Handelingen]** (pijl) onderaan om de beschikbare handelingen weer te geven die u op het element kunt uitvoeren.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
+1. Tik/klik op **[!UICONTROL Opslaan als versie]** om een versie voor het element te maken.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. Voeg een label en opmerking toe en klik op **[!UICONTROL Maken]** om een versie te maken. Of tik op **Annuleren** of klik op Annuleren om de bewerking af te sluiten.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. Alle versies die voor een asset zijn gemaakt, worden weergegeven onder het tabblad Tijdlijn. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
-   ![versions_option](assets/versions_option.png)
+   ![version_option](assets/versions_option.png)
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+1. Selecteer een specifieke versie voor het element om er een voorvertoning van weer te geven of schakel de optie in voor weergave in de interface Middelen.
 
    ![select_version](assets/select_version.png)
 
-1. Add a label and comment for the version to revert to the particular version in the Assets UI.
+1. Voeg een label en een opmerking voor de versie toe om terug te keren naar de specifieke versie in de interface Middelen.
 
    ![save_version](assets/save_version.png)
 
 1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
+1. Selecteer **[!UICONTROL Terugkeren naar deze versie]** om deze versie weer te geven in de interface Elementen.
+1. Als u twee versies wilt vergelijken, gaat u naar de elementpagina van het element en tikt u op de versie die u met de huidige versie wilt vergelijken.
 
-   ![select_version_tocompare](assets/select_version_tocompare.png)
+   ![select_version_to_compare](assets/select_version_tocompare.png)
 
-1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
+1. Selecteer in de tijdlijn de versie die u wilt vergelijken en sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Een workflow op een middel starten {#starting-a-workflow-on-an-asset}
 
-1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik erop om de elementpagina te openen.
+1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
+1. Tik op het pictogram **[!UICONTROL Handelingen]** (pijl) onderaan of klik op dit pictogram om de lijst met beschikbare handelingen voor het element te openen.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tap/click **[!UICONTROL Start Workflow]** from the list.
+1. Tik/klik in de lijst op Workflow **** starten.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -598,19 +599,19 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
+1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-## Collections {#collections}
+## Verzamelingen {#collections}
 
-A collection is an ordered set of assets. Use collections to share assets between users.
+Een verzameling is een geordende set elementen. Gebruik verzamelingen om elementen tussen gebruikers te delen.
 
-* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
-* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
+* Een verzameling kan elementen van verschillende locaties bevatten, omdat deze alleen verwijzingen naar deze elementen bevatten. Bij elke verzameling blijft de referentiële integriteit van de elementen behouden.
+* U kunt verzamelingen delen met meerdere gebruikers met verschillende machtigingsniveaus, zoals bewerken, weergeven, enzovoort.
 
-See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
+Zie [Verzamelingen](/help/assets/manage-collections.md) beheren voor meer informatie over verzamelingsbeheer.
