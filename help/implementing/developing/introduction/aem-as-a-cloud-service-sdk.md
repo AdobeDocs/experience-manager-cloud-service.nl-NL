@@ -1,20 +1,20 @@
 ---
-title: AEM als SDK van de Cloud Service
+title: AEM as a Cloud Service SDK
 description: 'In te vullen '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# De AEM als SDK van de Cloud Service {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 De AEM als Cloud Service SDK bestaat uit de volgende artefacten:
 
 * **QuickStart Jar** - De AEM-runtime die wordt gebruikt voor lokale ontwikkeling
 * **Java API Jar** - De Java Jar/Maven-afhankelijkheid die alle toegestane Java API&#39;s beschikbaar maakt die kunnen worden gebruikt om zich te ontwikkelen tegen AEM als Cloud Service. Vroeger Uberjar genoemd
 * **Javadoc Jar** - De javadocs voor de Java API Jar
-* **Dispatcher Tools** - De set gereedschappen die wordt gebruikt om zich lokaal te ontwikkelen tegen Dispatcher. Afzonderlijke artefacten voor unix en vensters
+* **Dispatcher Tools** - De set gereedschappen die wordt gebruikt om zich te ontwikkelen tegen Dispatcher lokaal. Afzonderlijke artefacten voor unix en vensters
 
 Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werden opgesteld de artefacten hieronder gebruiken. Als de lokale compilatie niet werkt met de Quickstart-jar en u vermoedt dat dit te wijten is aan interfaces die zijn verwijderd uit AEM die als Cloud Service zijn geïmplementeerd, neemt u contact op met de Klantenondersteuning om te bepalen of u toegang nodig hebt. Dit zal veranderingen in het achterste eind vereisen.
 
@@ -24,7 +24,7 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 ## De AEM benaderen als SDK van de Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * U kunt het pictogram **Over Adobe Experience Manager** van de AEM Admin Console controleren om te zien welke versie van AEM u uitvoert op productie.
-* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van de [portal](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)Softwaredistributie. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
+* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van de [portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)Softwaredistributie. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
 * Java API Jar en Javadoc Jar kunnen via gefabriceerde hulpmiddelen, of bevellijn of met uw aangewezen winde worden gedownload.
 * De toegewezen projectruimten moeten verwijzen naar het volgende API Jar-pakket. Naar deze afhankelijkheid moet ook worden verwezen in subpakketformulieren.
 
@@ -92,5 +92,5 @@ Als u inhoudspakketten met de gecodeerde waarden wilt hergebruiken, moet u de vo
 
 * Wanneer u eerst de lokale quickstart.jar start, moet u de onderstaande parameter toevoegen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Het wordt aanbevolen, maar optioneel, om deze altijd toe te voegen.
 * De allereerste keer dat u een instantie opstart, maakt u een pakket dat een filter voor de hoofdmap &quot;`/etc/key`&quot; bevat. Dit zal het geheim houden om over alle milieu&#39;s opnieuw te worden gebruikt waarvoor u hen zou willen hergebruiken
-* Exporteer alle gemuteerde inhoud die geheimen bevat, of kijk de gecodeerde waarden naar boven `/crx/de` om deze toe te voegen aan het pakket dat opnieuw wordt gebruikt in installaties
+* Exporteer alle gemuteerde inhoud die geheimen bevat, of kijk de gecodeerde waarden op door deze toe te voegen `/crx/de` aan het pakket dat opnieuw wordt gebruikt in installaties
 * Wanneer u een nieuw exemplaar (of om met een nieuwe versie te vervangen of als veelvoudige dev milieu&#39;s de geloofsbrieven voor het testen zouden moeten delen) uitdraait, installeer het pakket dat in stap 2 en 3 wordt geproduceerd om de inhoud te kunnen opnieuw gebruiken zonder de behoefte om manueel aan te passen. Dit komt omdat de cryptokey nu synchroon is.
