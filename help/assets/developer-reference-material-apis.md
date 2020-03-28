@@ -3,12 +3,12 @@ title: 'Middelen-API''s voor beheer van digitale middelen in Adobe Experience Ma
 description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# Middelen als cloudservice-API&#39;s {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -108,7 +108,7 @@ Wanneer alle delen van een binair getal zijn geüpload, bestaat de laatste stap 
 * `(bool) createVersion`: Optioneel. Als de waarde true is en er al een element met de opgegeven naam bestaat, maakt de instantie een nieuwe versie van het element.
 * `(string) versionLabel`: Optioneel. Als er een nieuwe versie wordt gemaakt, het label dat aan de versie wordt gekoppeld.
 * `(string) versionComment`: Optioneel. Als er een nieuwe versie wordt gemaakt, worden opmerkingen toegevoegd die aan de versie worden gekoppeld.
-* `(bool) replace`:Optioneel: Als true en een element met de opgegeven naam al bestaat, verwijdert de instantie het element en maakt deze opnieuw.
+* `(bool) replace`: Optioneel: Als true en een element met de opgegeven naam al bestaat, verwijdert de instantie het element en maakt deze opnieuw.
 
 >!![NOTE]
 >
@@ -129,7 +129,7 @@ Voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -g
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Voor Experience Manager als Cloud Service worden alleen de nieuwe upload-API&#39;s ondersteund. API&#39;s van Experience Manager 6.5 zijn afgekeurd.
