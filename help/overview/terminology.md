@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie
 description: 'Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie. '
-translation-type: ht
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+translation-type: tm+mt
+source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
 
 ---
 
@@ -38,6 +38,7 @@ De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a C
 | Asset-microservices | Cloudgebaseerde verwerkingsservices voor digitale assets die verschillende gebruiksgevallen voor assetverwerking bedienen, zoals het genereren van weergaven, PDF-verwerkingen, verwerking van subassets, tekstextractie, enzovoort. Zie [Asset-microservices - Overzicht](/help/assets/asset-microservices-overview.md) voor meer informatie. |
 | Git-repository voor Cloud Manager | Waar klanten hun code en configuratie-instellingen opslaan. |
 | Cloudprovider | AEM as a Cloud Service ondersteunt zowel Azure als AWS als cloudproviders. |
+| Content Delivery Network (CDN) | AEM als Cloud Service wordt geleverd met een standaard-CDN. Het belangrijkste doel is het verminderen van latentie door cacheable inhoud van de knopen CDN bij de rand, dichtbij browser te leveren. Het wordt volledig beheerd en gevormd voor optimale prestaties van toepassingen AEM. |
 | Content-repository | Waar de content wordt bewaard. |
 | Enterprise Isolation | Elke instantie van de AEM as a Cloud Service is gescheiden van de andere instanties. |
 | Golden Master | De AEM-publicatielaag. |
