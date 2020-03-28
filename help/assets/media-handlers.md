@@ -3,7 +3,7 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -18,7 +18,7 @@ Mediahandlers zijn services binnen AEM Assets die specifieke handelingen uitvoer
 
 >[!NOTE]
 >
->Raadpleeg de pagina met door [Middelen ondersteunde indelingen](file-format-support.md) voor een beschrijving van alle indelingen die door AEM Assets worden ondersteund, en van de functies die voor elke indeling worden ondersteund.
+>Zie het artikel over [ondersteunde bestandsindelingen](file-format-support.md) voor elementen voor een beschrijving van alle indelingen die worden ondersteund door AEM Assets en de functies die worden ondersteund voor elke indeling.
 
 ## Standaardmediafuncties {#default-media-handlers}
 
@@ -116,7 +116,7 @@ AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de w
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
-In het volgende voorbeeld ziet u hoe u de workflow voor de synchronisatie **[!UICONTROL van]** AEM-elementen verbetert, zodat subelementen worden gegenereerd voor alle elementen behalve PDF-documenten.
+The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
 
 ### Media Handler uitschakelen/inschakelen {#disabling-enabling-a-media-handler}
 
@@ -153,8 +153,8 @@ De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` klasse:
-   *  Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
+   * Deze klasse fungeert als basis voor alle andere implementaties van assethandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subassets.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
    * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de overervingsvlag aan waar plaatst.
 
@@ -407,7 +407,7 @@ Hiervoor gebruikt u ImageMagick. ImageMagick is een gratis softwaresuite voor he
 
 Installeer ImageMagick eerst op de schijf die als host fungeert voor de AEM-server:
 
-1. ImageMagick installeren: raadpleeg de [documentatie](https://www.imagemagick.org/script/download.php)van ImageMagick.
+1. ImageMagick installeren: Zie [documentatie](https://www.imagemagick.org/script/download.php)van ImageMagick.
 1. Stel het gereedschap zo in dat u het op de opdrachtregel kunt omzetten.
 1. Als u wilt controleren of het gereedschap op de juiste wijze is geïnstalleerd, voert u de volgende opdracht uit `convert -h` op de opdrachtregel.
 
@@ -421,7 +421,7 @@ Installeer ImageMagick eerst op de schijf die als host fungeert voor de AEM-serv
 
    Er wordt een gespiegelde afbeelding aan de map toegevoegd.
 
-Voeg vervolgens de processtap voor de opdrachtregel toe aan de workflow **[!UICONTROL DAM Update Asset]** :
+Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
 
 1. Ga naar de **[!UICONTROL Workflowconsole]** .
 1. Bewerk op het tabblad **[!UICONTROL Modellen]** het model **[!UICONTROL DAM Update Asset]** .
@@ -441,7 +441,7 @@ U kunt de gewijzigde workflow testen door middel van een element aan `/content/d
 
 #### De CommandLineProcess-stap configureren {#configuring-the-commandlineprocess-process-step}
 
-Deze sectie beschrijft hoe te om de Argumenten **van het** Proces van **CommandLineProcess** te plaatsen.
+Deze sectie beschrijft hoe u de **procesargumenten** van **CommandLineProcess** kunt instellen.
 
 De waarden van de **procesargumenten** moeten door een komma worden gescheiden en mogen niet beginnen met een spatie.
 
