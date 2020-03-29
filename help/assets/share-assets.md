@@ -3,20 +3,20 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt in de middelen van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Elementen delen en distribueren die worden beheerd in Experience Manager {#share-assets-from-aem}
 
-Met Adobe Experience Manager (AEM) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. U kunt de volgende methoden gebruiken om elementen van Experience Manager-middelen te delen als cloudservice:
+Met Adobe Experience Manager (AEM) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om middelen van Experience Manager-middelen te delen als cloudservice:
 
-* Delen als koppeling
-* Elementen downloaden
-* Delen via AEM-bureaubladtoepassing
-* Delen via Adobe Asset Link
-* (Opkomende functionaliteit) Delen met behulp van Brand Portal
+* Delen als een koppeling.
+* Download elementen en deel ze afzonderlijk.
+* Delen via AEM-bureaubladtoepassing.
+* Delen via Adobe Asset Link.
+* (Binnenkomende functionaliteit) Delen met behulp van Brand Portal.
 
 ## Elementen delen als koppeling {#sharelink}
 
@@ -110,11 +110,13 @@ Gebruikers kunnen bepaalde assets downloaden en deze delen buiten Experience Man
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **AEM-bureaubladtoepassing**: De app werkt op Windows en Mac. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen nieuwe elementen maken en deze delen met hun collega&#39;s die AEM-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM-bureaubladtoepassing**: De app werkt op Windows en Mac. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die AEM-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe-elementkoppeling**: De creatieve professionals kunnen rechtstreeks vanuit Adobe InDesign, Adobe Illustrator en Adobe Photoshop zoeken en middelen gebruiken.
 
 ## Assets delen configureren {#configure-sharing}
+
+De verschillende opties om de activa te delen vereisen specifieke configuratie en hebben specifieke eerste vereisten.
 
 ### Delen van koppelingen voor elementen configureren {#asset-link-sharing}
 
@@ -149,7 +151,7 @@ Before you can share assets as links, configure the email service.
 
 ### Maximale gegevensgrootte configureren {#maxdatasize}
 
-Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de opslagplaats en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, kunt u de maximumgrootte van de gedownloade dossiers vormen. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de gegevensopslagruimte en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, kunt u de maximumgrootte van de gedownloade dossiers vormen. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
 1. Klik of tik op het AEM-logo en ga vervolgens naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
 1. Zoek vanuit de webconsole de configuratie van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden Desktopacties genoemd en als deze niet worden toegelaten, zie [toelaten Desktopacties in AEM Webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden bureaubladacties genoemd en om deze in te schakelen, raadpleegt u bureaubladacties [inschakelen in de AEM-webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
 
