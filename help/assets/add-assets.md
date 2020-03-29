@@ -2,14 +2,14 @@
 title: Voeg uw digitale middelen toe aan Adobe Experience Manager
 description: Voeg uw digitale middelen toe aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Digitale middelen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Door uw digitale bestanden te uploaden naar Adobe Experience Manager wordt de binaire inhoud van het bestand verrijkt met rijke metagegevens, slimme tags, vertoningen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen (zoals afbeeldingen, PDF-bestanden, Raw-bestanden, enzovoort) uploaden van uw lokale map of een netwerkstation naar de middelen van Experience Manager.
+Adobe Experience Manager verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, vertoningen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar de middelen van Experience Manager, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
 
 Er is een aantal uploadmethoden beschikbaar. Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om middelen toe te voegen aan de gegevensopslagruimte van Experience Manager, zoals desktopclients, zoals Adobe Asset Link of Experience Manager, scripts voor het uploaden en opnemen van gegevens die klanten zouden maken, en geautomatiseerde integratie van innamen die als AEM-extensies zouden worden toegevoegd.
 
