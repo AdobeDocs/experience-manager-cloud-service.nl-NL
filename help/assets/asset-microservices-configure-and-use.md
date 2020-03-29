@@ -3,7 +3,7 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 # Aan de slag met microservices voor assets {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices, die door Adobe worden beheerd voor een optimale verwerking van verschillende typen bedrijfsmiddelen en verwerkingsopties.
+Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de services voor een optimale verwerking van verschillende elementtypen en verwerkingsopties.
 
-De verwerking van activa wordt uitgevoerd gebaseerd op configuratie in de Profielen **[!UICONTROL van de]** Verwerking, die een standaardopstelling verstrekken, en de beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Om rekbaarheid en volledige aanpassing mogelijk te maken, maakt de verwerking van bedrijfsmiddelen een optionele configuratie van workflows na verwerking mogelijk, die vervolgens door de beheerder worden gemaakt en onderhouden.
+De verwerking van activa hangt van de configuratie in Profielen **[!UICONTROL van de]** Verwerking af, die een standaardopstelling verstrekken, en een beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Beheerders kunnen de configuraties van naverwerkingsworkflows maken en onderhouden, inclusief optionele aanpassing. Door workflows aan te passen zijn uitbreidbaarheid en volledige aanpassing mogelijk.
 
-Hieronder vindt u een debiet op hoog niveau voor middelenverwerking in Experience Manager als cloudservice.
+Een stroom op hoog niveau voor de verwerking van bedrijfsmiddelen is lager.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Voor klanten die een update uitvoeren van eerdere versies van Experience Manager: de in deze sectie beschreven verwerking van middelen vervangt het workflowmodel &quot;DAM Update Asset&quot; dat eerder werd gebruikt voor verwerking van het opnemen van elementen. De meeste stappen voor het genereren van standaardvertoningen en het genereren van metagegevens worden vervangen door de verwerking van de asset microservices. Eventuele resterende stappen kunnen worden vervangen door de configuratie van de workflow na verwerking.
+> De hier beschreven elementverwerking vervangt het `DAM Update Asset` workflowmodel in de vorige versies van Experience Manager. De meeste stappen voor het genereren van standaardvertoningen en het genereren van metagegevens worden vervangen door de verwerking van de asset microservices. Eventuele resterende stappen kunnen worden vervangen door de configuratie van de workflow na verwerking.
 
 ## Aan de slag met middelenverwerking {#get-started}
 
@@ -77,17 +75,18 @@ U kunt extra verwerkingsprofielen toevoegen met de handeling **[!UICONTROL Maken
 
 Elke configuratie met het verwerkingsprofiel bevat een lijst met uitvoeringen. Voor elke vertoning kunt u het volgende opgeven:
 
-* naam van vertoning
-* rendition-indeling (JPEG, PNG of GIF worden ondersteund)
-* de breedte en hoogte van de vertoning in pixels (indien niet opgegeven, wordt de volledige pixelgrootte van het origineel aangenomen)
-* renditiekwaliteit (voor JPEG) in procenten
-* Opgenomen en uitgesloten MIME-typen definiëren op welke elementtypen het verwerkingsprofiel van toepassing is
+* Naam van vertoning.
+* Ondersteunde renditie-indeling, zoals JPEG, PNG of GIF.
+* Breedte en hoogte van vertoning in pixels. Als deze optie niet is opgegeven, wordt de volledige pixelgrootte van de oorspronkelijke afbeelding gebruikt.
+* Uitvoerkwaliteit van JPEG in procenten.
+* MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
 ![verwerkingsprofielen, toevoegen](assets/processing-profiles-adding.png)
 
-Wanneer een nieuw verwerkingsprofiel wordt opgeslagen, wordt dit toegevoegd aan de lijst met geconfigureerde verwerkingsprofielen. Deze verwerkingsprofielen kunnen vervolgens worden toegepast op mappen in de mappenhiërarchie, zodat ze effectief zijn voor het uploaden van middelen en de middelen die daar zijn gemaakt.
+Wanneer u een nieuw verwerkingsprofiel maakt en opslaat, wordt dit toegevoegd aan de lijst met geconfigureerde verwerkingsprofielen. U kunt deze verwerkingsprofielen toepassen op mappen in de mappenhiërarchie om ze effectief te maken voor het uploaden van elementen en het verwerken van elementen.
 
-![processing-profiles-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Breedte en hoogte van vertoning {#rendition-width-height}
 
