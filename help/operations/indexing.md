@@ -2,7 +2,7 @@
 title: Inhoud zoeken en indexeren
 description: 'Inhoud zoeken en indexeren '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -31,7 +31,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 1. Op een hoog niveau voor AEM als Cloud Service, met de introductie van het [Blauw-Groen implementatiemodel](#index-management-using-blue-green-deployments) zullen twee sets indexen bestaan: één set voor de oude versie (blauw) en één set voor de nieuwe versie (groen).
 
-De versie van de index die wordt gebruikt wordt gevormd gebruikend vlaggen in de indexdefinities via de `useIfExist` vlag. Een index kan slechts in één versie van de toepassing (bijvoorbeeld alleen blauw of alleen groen) of in beide versies worden gebruikt. De gedetailleerde documentatie is beschikbaar bij het Beheer van de [Index gebruikend Blauw-Groene Plaatsingen](#index-management-using-blue-green-deployments).
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
