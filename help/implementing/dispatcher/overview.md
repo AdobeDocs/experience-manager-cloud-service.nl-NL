@@ -2,7 +2,7 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -258,13 +258,13 @@ Hieronder vindt u technieken voor het oplossen van problemen waarmee algemene va
 
 **kan geen`conf.dispatcher.d`submap vinden in het archief**
 
-Uw archief moet mappen `conf.d` en `conf.dispatcher.d`. Let op: u moet het voorvoegsel **niet** gebruiken `etc/httpd` in uw archief.
+Uw archief moet mappen `conf.d` en `conf.dispatcher.d` bevatten. Let op: gebruik het voorvoegsel `etc/httpd` **niet** in uw archief.
 
 **geen bedrijf kunnen vinden in`conf.dispatcher.d/enabled_farms`**
 
 Uw ingeschakelde landbouwbedrijven zouden in bovengenoemde subfolder moeten worden gevestigd.
 
-**Ingesloten bestand (...) moet een naam hebben:...**
+**Ingesloten bestand (...) moet een naam hebben: ...**
 
 Er zijn twee secties in uw landbouwbedrijfconfiguratie die een specifiek dossier **moeten** omvatten: `/renders` en `/allowedClients` in de `/cache` sectie. Deze selecties moeten er als volgt uitzien:
 
@@ -282,7 +282,7 @@ and:
 }
 ```
 
-**bestand opgenomen op onbekende locatie:...**
+**bestand opgenomen op onbekende locatie: ...**
 
 Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` sectie en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
 
@@ -295,7 +295,7 @@ Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier m
 
 U kunt ook de **standaardversie** van deze bestanden opnemen, waarvan de namen worden voorafgegaan door het woord `default_`, bijvoorbeeld `../filters/default_filters.any`.
 
-**include statement at (...), outside any known location:...**
+**include statement at (...), outside any known location: ...**
 
 Naast de zes in de bovenstaande alinea&#39;s vermelde secties kunt u de `$include` instructie niet gebruiken. Deze fout kan bijvoorbeeld worden gegenereerd door:
 
@@ -305,9 +305,9 @@ Naast de zes in de bovenstaande alinea&#39;s vermelde secties kunt u de `$includ
 }
 ```
 
-**toegestane clients/renderingen zijn niet inbegrepen bij:...**
+**toegestane clients/renderingen zijn niet inbegrepen bij: ...**
 
-Deze fout wordt geproduceerd wanneer u geen omvat voor `/renders` en `/allowedClients` in de `/cache` sectie specificeert. **Zie het** ingesloten bestand (...) met de volgende naam:... voor meer informatie.
+Deze fout wordt geproduceerd wanneer u geen omvat voor `/renders` en `/allowedClients` in de `/cache` sectie specificeert. Zie het **ingesloten bestand (...) met de volgende naam: ...** voor meer informatie.
 
 **filter mag geen globpatroon gebruiken om verzoeken toe te staan**
 
@@ -694,135 +694,3 @@ Dit zal de container beginnen en Apache op lokale haven 8080 blootstellen.
 Gefeliciteerd! Als de validator geen probleem meer rapporteert en de dockercontainer wordt gestart zonder fouten of waarschuwingen, kunt u uw configuratie verplaatsen naar een `dispatcher/src` subdirectory van uw it-opslagplaats.
 
 **Klanten die AMS Dispatcher Configuration versie 1 gebruiken, dienen contact op te nemen met de klantenondersteuning om hen te helpen bij de migratie van versie 1 naar versie 2, zodat bovenstaande instructies kunnen worden opgevolgd.**
-
-## Dispatcher en CDN {#dispatcher-cdn}
-
-De levering van de de dienstinhoud van de publicatie omvat:
-
-* CDN (wordt meestal beheerd door Adobe)
-* AEM-verzender
-* AEM-publicatie
-
-De gegevensstroom is als volgt:
-
-1. De URL wordt toegevoegd in de browser
-1. Verzoek dat aan CDN wordt gemaakt die in DNS aan dat domein wordt toegewezen
-1. Als de inhoud volledig in het cachegeheugen is opgeslagen op CDN, geeft CDN deze aan de browser
-1. Als de inhoud niet volledig in het cachegeheugen is opgeslagen, roept de CDN (reverse-proxy) de dispatcher aan
-1. Als de inhoud volledig in het cachegeheugen is opgeslagen op de verzender, wordt deze naar de CDN verzonden
-1. Als de inhoud niet volledig in het cachegeheugen is opgeslagen, roept de verzender (reverse-proxy) de AEM-publicatie aan
-1. De inhoud wordt gerenderd door de browser, die de inhoud mogelijk ook in cache plaatst, afhankelijk van de kopteksten
-
-De meeste inhoud is ingesteld op verlopen na vijf minuten, een drempel die door zowel de verzendercache als de CDN wordt nageleefd. Tijdens herplaatsingen van de publicatiedienst, wordt het verzendechergeheime voorgeheugen ontruimd en daarna opgewarmd alvorens nieuwe publicatieknooppunten verkeer goedkeuren.
-
-De secties hieronder verstrekken meer detail over inhoudslevering, met inbegrip van configuratie CDN en verzender caching.
-
-Informatie over replicatie van de auteursdienst aan de publicatieservice is [hier](/help/operations/replication.md)beschikbaar.
-
->[!NOTE]
->Het verkeer gaat door een apache Webserver, die modules met inbegrip van de verzender steunt. De verzender wordt vooral als cache gebruikt om de verwerking op de publicatieknooppunten te beperken, zodat de prestaties toenemen.
-
-### CDN {#cdn}
-
-AEM biedt drie opties:
-
-1. Adobe Managed CDN - AEM&#39;s &#39;out-of-the-box&#39; CDN. Dit is de aanbevolen optie omdat deze volledig geïntegreerd is.
-1. Klant Beheerde CDN - de klant brengt hun eigen CDN en is volledig verantwoordelijk voor het beheren van het.
-1. Wijs naar een beheerde CDN van Adobe - de klant wijst een CDN naar een CDN die buiten de box van AEM valt.
-
->[!CAUTION]
->De eerste optie wordt ten zeerste aanbevolen. Adobe kan niet verantwoordelijk worden gehouden voor het resultaat van een verkeerde configuratie als u de tweede optie kiest.
-
-De tweede en derde mogelijkheid worden per geval toegestaan. Dit impliceert het voldoen aan bepaalde voorwaarden met inbegrip van, maar niet beperkt tot de klant die een erfenisintegratie met hun verkoper CDN heeft die moeilijk is ongedaan te maken.
-
-#### Door Adobe beheerde CDN {#adobe-managed-cdn}
-
-Voorbereiden op de levering van inhoud met behulp van de CDN van Adobe-versie buiten de doos is eenvoudig, zoals hieronder wordt beschreven:
-
-1. U geeft het ondertekende SSL-certificaat en de geheime sleutel aan Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
-Opmerking: Aem als de Dienst van de Wolk steunt geen domein Gevalideerde (DV) certificaten.
-1. De steun van de klant zal dan met u de timing voor een CNAME DNS verslag coördineren, richtend hun FQDN aan `adobe-aem.map.fastly.net`.
-1. U wordt op de hoogte gesteld wanneer de SSL-certificaten verlopen, zodat u de nieuwe SSL-certificaten opnieuw kunt verzenden.
-
-Standaard kan voor een CDN-installatie onder beheer van Adobe, al het openbaar verkeer zijn weg maken naar de publicatieservice, voor zowel productie- als niet-productie (ontwikkeling en stadium)-omgevingen. Als u verkeer aan de publicatiedienst voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) zou u met klantensteun moeten werken om deze beperkingen te vormen.
-
-#### Door de klant beheerde CDN {#customer-managed-cdn}
-
-U kunt uw eigen CDN beheren, op voorwaarde:
-
-1. U hebt een bestaande CDN.
-1. Dit moet een ondersteunde CDN zijn. Akamai wordt momenteel ondersteund. Neem contact op met de klantenondersteuning als uw organisatie een CDN wil beheren die momenteel niet wordt ondersteund.
-1. U zult het beheren.
-1. U moet CDN kunnen vormen om met Aem als Dienst van de Wolk te werken - zie de configuratieinstructies hieronder.
-1. U hebt ingenieurs CDN die op vraag zijn in geval de verwante kwesties zich voordoen.
-1. U moet whitelists of CDN-knooppunten opgeven voor Cloud Manager, zoals wordt beschreven in configuratieinstructies.
-1. U moet een ladingstest uitvoeren en met succes overgaan alvorens aan productie te gaan.
-
-Configuratieinstructies:
-
-1. Geef de whitelist van de CDN-leverancier aan Adobe door de omgeving aan te roepen voor het maken/bijwerken van API&#39;s met een lijst van CIDR&#39;s voor whitelist.
-1. Stel de `X-Forwarded-Host` koptekst in met de domeinnaam.
-1. Stel de Hostkop in met het oorspronkelijke domein. Dit is de naam als een Cloud Service-adres. De waarde moet afkomstig zijn van Adobe.
-1. Verzend de kopbal SNI naar de oorsprong. De sni-header moet het oorspronkelijke domein zijn.
-1. Plaats `X-Edge-Key` wat nodig is om verkeer aan de servers van AEM correct te leiden. De waarde moet afkomstig zijn van Adobe.
-
-Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer van begin tot eind het verpletteren correct functioneert.
-
-#### Wijs naar een door Adobe beheerde CDN {#point-to-point-CDN}
-
-Gesteund als u uw bestaande CDN wilt gebruiken, maar kan niet aan de vereisten van een Door Klant beheerde CDN voldoen. In dit geval beheert u uw eigen CDN, maar wijst u naar de beheerde CDN van Adobe.
-
-De klanten moeten een ladingstest uitvoeren en met succes overgaan alvorens aan productie te gaan.
-
-Configuratieinstructies:
-
-1. Stel de `X-Forwarded-Host` koptekst in met de domeinnaam.
-1. Stel de Hostkop in met het oorspronkelijke domein. Dit is de invoer van de CDN van Adobe. De waarde moet afkomstig zijn van Adobe.
-1. Verzend de kopbal SNI naar de oorsprong. Net als de Hostkop moet de sni-header het oorspronkelijke domein zijn.
-1. Plaats `X-Edge-Key`, die nodig is om verkeer aan de servers van AEM correct te leiden. De waarde moet afkomstig zijn van Adobe.
-
-#### CDN-cachevalidatie {#CDN-cache-invalidation}
-
-De ongeldigverklaring van het geheime voorgeheugen volgt deze regels:
-
-* Over het algemeen wordt HTML-inhoud gedurende 5 minuten in de CDN in cache geplaatst op basis van de cachebesturingsheader die door de verzender wordt uitgegeven.
-* Clientbibliotheken (JavaScript en CSS) worden oneindig in cache geplaatst met behulp van het cachebeheer dat is ingesteld op onveranderlijk of 30 dagen voor oudere browsers die de onveranderlijke waarde niet respecteren. Merk op dat de cliëntbibliotheken op een uniek weg worden gediend dat verandert als de cliëntbibliotheken veranderen. Met andere woorden, HTML-code die verwijst naar de clientbibliotheken, wordt indien nodig gemaakt, zodat u nieuwe inhoud kunt ervaren terwijl deze wordt gepubliceerd.
-* Afbeeldingen worden standaard niet in cache geplaatst.
-
-Voorafgaand aan het goedkeuren van levend verkeer, zouden de klanten met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
-
-## Expliciete cachevalidatie van verzender {#explicit-invalidation}
-
-Zoals eerder vermeld, gaat het verkeer door een apache Webserver, die modules met inbegrip van de verzender steunt. De verzender wordt vooral als cache gebruikt om de verwerking op de publicatieknooppunten te beperken, zodat de prestaties toenemen.
-
-Over het algemeen hoeft u de inhoud in de verzender niet handmatig ongeldig te maken, maar dit is mogelijk, zoals hieronder beschreven.
-
-Voorafgaand aan AEM als Cloud Service waren er twee manieren om het cachegeheugen van de verzender ongeldig te maken.
-
-1. Roep de replicatieagent aan, die de publicatiedispatcher spoelagent specificeert
-2. De `invalidate.cache` API rechtstreeks aanroepen (bijvoorbeeld POST /dispatcher/invalidate.cache)
-
-De `invalidate.cache` benadering wordt niet meer ondersteund omdat deze alleen geldt voor een specifiek verzendingsknooppunt.
-AEM als Cloud Service werkt op het serviceniveau, niet op het niveau van de afzonderlijke knooppunten. De instructies voor validatie in de documentatie van de [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) zijn dus niet langer correct.
-In plaats daarvan, zou de replicatie flush agent moeten worden gebruikt.Dit kan worden gedaan gebruikend de Replicatie API. De documentatie van de Replicatie API is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) en voor een voorbeeld van het spoelen van het geheime voorgeheugen, zie de [API voorbeeldpagina](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifiek het `CustomStep` voorbeeld dat een replicatieactie van type ACTIVATE aan alle beschikbare agenten uitgeeft. Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
-
-Dit wordt geïllustreerd in het onderstaande diagram.
-
-![](assets/cdnb.png "CDNCDN")
-
-Als er een probleem is dat de verzender cache niet wordt gewist, neemt u contact op met de klantenondersteuning die de verzender cache indien nodig kan leegmaken.
-
-De door Adobe beheerde CDN respecteert TTL&#39;s en het is dus niet nodig deze te verwijderen. Als een probleem wordt vermoed, neemt u contact op met de klantenondersteuning die zo nodig een CDN-cache met Adobe-beheer kan leegmaken.
-
-### Validatie van cache-verzender tijdens activering/deactivering {#cache-activation-deactivation}
-
-Net als bij eerdere versies van AEM wordt de inhoud gewist uit de cache van de verzender wanneer u pagina&#39;s publiceert of verwijdert. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren.
-
-Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende items verwijderd uit het cachegeheugen van de dispatcher tot een niveau (u kunt dit configureren met het [statusniveau](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
-
-### Inhoud vloeiender en consistenter maken {#content-consistency}
-
-* Pagina&#39;s bestaan uit HTML, JavaScript, CSS en afbeeldingen.
-* U wordt aangeraden het clientlibs-framework te gebruiken om Javascript- en CSS-bronnen te importeren in HTML-pagina&#39;s, rekening houdend met afhankelijkheden tussen JS-bibliotheken.
-* Automatisch versiebeheer wordt verstrekt, betekenend dat de ontwikkelaars veranderingen in bibliotheken JS in broncontrole kunnen inchecken, en de recentste versie zal beschikbaar worden gemaakt wanneer een versie wordt geduwd. Zonder deze optie moeten ontwikkelaars HTML handmatig wijzigen met verwijzingen naar de nieuwe versie van de bibliotheek. Dit is vooral lastig als veel HTML-sjablonen dezelfde bibliotheek delen.
-* Wanneer de nieuwe versies van bibliotheken worden vrijgegeven voor productie, worden de HTML-pagina&#39;s waarnaar wordt verwezen, bijgewerkt met nieuwe koppelingen naar die bijgewerkte bibliotheekversies. Als de browsercache voor een bepaalde HTML-pagina is verlopen, is het niet van belang dat de oude bibliotheken worden geladen vanuit de browsercache, aangezien de vernieuwde pagina (van AEM) nu gegarandeerd naar de nieuwe versies van de bibliotheken verwijst. Met andere woorden, een vernieuwde HTML-pagina bevat alle meest recente bibliotheekversies.
