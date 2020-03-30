@@ -2,7 +2,7 @@
 title: Inhoud leveren
 description: 'Inhoud leveren '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ De gegevensstroom is als volgt:
 
 Het inhoudstype HTML/tekst wordt geplaatst om na 300s (5 minuten) bij de verzender laag te verlopen, een drempel die zowel het verzender geheime voorgeheugen als CDN respecteren. Tijdens herplaatsingen van de publicatiedienst, wordt het verzendechergeheime voorgeheugen ontruimd en daarna opgewarmd alvorens nieuwe publicatieknooppunten verkeer goedkeuren.
 
-De secties hieronder verstrekken meer detail over inhoudslevering, met inbegrip van configuratie CDN en verzender caching.
+De secties hieronder verstrekken meer detail over inhoudslevering, met inbegrip van configuratie CDN en caching.
 
 Informatie over replicatie van de auteursdienst aan de publicatieservice is [hier](/help/operations/replication.md)beschikbaar.
 
 ## CDN {#cdn}
 
-AEM als Cloud Service wordt geleverd met een standaard-CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het wordt volledig beheerd en gevormd voor optimale prestaties van toepassingen AEM.
+AEM als Cloud Service wordt geleverd met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het wordt volledig beheerd en gevormd voor optimale prestaties van toepassingen AEM.
 
 In totaal biedt AEM twee opties:
 
 1. AEM Beheerde CDN - AEM&#39;s &#39;out-of-box&#39; CDN. Het is een strak geïntegreerde optie en vereist geen zware klanteninvestering in het steunen van de integratie CDN met AEM.
 1. Door de klant beheerde CDN verwijst naar een door AEM beheerde CDN. De klant wijst zijn eigen CDN aan een CDN die buiten de box van AEM valt. De klant zal nog hun eigen CDN moeten beheren, maar de investering in de integratie met AEM is gematigd.
 
-De eerste optie zou aan de meeste van de klantenprestaties en veiligheidsvereisten moeten voldoen. Bovendien vereist het het minste bedrag van klanteninvestering en lopend onderhoud.
+De eerste optie zou aan de meeste van de klantenprestaties en veiligheidsvereisten moeten voldoen. Bovendien vereist het minimale klanteninspanning.
 
 De tweede mogelijkheid wordt per geval toegestaan. Het besluit is gebaseerd op het voldoen aan bepaalde voorwaarden met inbegrip van, maar niet beperkt tot, de klant die een erfenisintegratie met hun CDN verkoper heeft die moeilijk is te verlaten.
 
@@ -53,7 +53,7 @@ Hieronder ziet u een beslissingsmatrix waarmee de twee opties worden vergeleken.
 | **CDN-expertise** | Geen | Vereist minstens één middel van de deeltijdtechniek met gedetailleerde kennis CDN die CDN van de klant kan vormen. |
 | **Beveiliging** | Beheerd door Adobe. | Beheerd door Adobe (en optioneel door de klant op hun eigen CDN). |
 | **Prestaties** | Geoptimaliseerd door Adobe. | Zal van sommige mogelijkheden van AEM CDN profiteren, maar potentieel een kleine prestatiesklap toe te schrijven aan de extra hop. **Opmerking**: Hops from customer CDN to Fastly CDN likely to be effective.) |
-| **Caching** | Ondersteunt cachekoppen die op verzendersniveau worden toegepast. | Ondersteunt cachekoppen die op verzendersniveau worden toegepast. |
+| **Caching** | Ondersteunt cachekoppen die worden toegepast op de dispatcher. | Ondersteunt cachekoppen die worden toegepast op de dispatcher. |
 | **Compressiemogelijkheden voor afbeeldingen en video** | Kan werken met dynamische media van Adobe. | Kan werken met Adobe Dynamic Media of CDN-afbeelding/video-oplossing die door klanten wordt beheerd. |
 
 ### Door AEM beheerde CDN {#aem-managed-cdn}
@@ -62,6 +62,9 @@ Voorbereiden op de levering van inhoud met behulp van de CDN van Adobe-versie bu
 
 1. U geeft het ondertekende SSL-certificaat en de geheime sleutel aan Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
    **Opmerking:** Aem als de Dienst van de Wolk steunt geen domein Gevalideerde (DV) certificaten.
+1. U moet de klantenondersteuning op de hoogte stellen:
+   * welk aangepast domein moet worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id.
+   * als om het even welk IP fluitend nodig is om verkeer tot een bepaald milieu te beperken.
 1. De steun van de klant zal dan met u de timing voor een CNAME DNS verslag coördineren, richtend hun FQDN aan `adobe-aem.map.fastly.net`.
 1. U wordt op de hoogte gesteld wanneer de SSL-certificaten verlopen, zodat u de nieuwe SSL-certificaten opnieuw kunt verzenden.
 
@@ -90,9 +93,9 @@ Configuratieinstructies:
 
 Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer van begin tot eind het verpletteren correct functioneert.
 
-### Caching {#caching}
+## Caching {#caching}
 
-Het cacheproces volgt de onderstaande regels.
+Caching bij CDN kan worden gevormd door dispatcherregels te gebruiken. Merk op dat de verzender ook de resulterende kopballen van de geheim voorgeheugenvervalsing naleeft als in de verzender configuratie `enableTTL` wordt toegelaten, die impliceert dat het specifieke inhoud zelfs buiten inhoud zal verfrissen die opnieuw wordt gepubliceerd.
 
 ### HTML/Text {#html-text}
 
@@ -106,15 +109,15 @@ U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volg
 { /glob "*" /type "allow" }
 ```
 
-* kan op een fijner korrelig niveau door apache mod_headers richtlijnen worden met voeten getreden. Bijvoorbeeld:
+* kan op een fijner korrelig niveau door de volgende richtlijnen worden met voeten getreden apache mod_headers:
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volgende regel heeft:
+U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volgende regel heeft (in de standaardconfiguratie):
 
 ```
 /0000
@@ -128,32 +131,41 @@ U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volg
 * door het clientbibliotheekframework van AEM te gebruiken, worden JavaScript- en CSS-code zodanig gegenereerd dat browsers deze oneindig in cache kunnen plaatsen, aangezien eventuele wijzigingen zich manifesteren als nieuwe bestanden met een uniek pad.  Met andere woorden, HTML-code die verwijst naar de clientbibliotheken, wordt naar wens geproduceerd, zodat klanten nieuwe inhoud kunnen ervaren terwijl deze wordt gepubliceerd. Het cache-control wordt ingesteld op &#39;onveranderlijk&#39; of op 30 dagen voor oudere browsers die de waarde &#39;onveranderlijk&#39; niet respecteren.
 * Zie de sectie Bibliotheken aan de [clientzijde en de consistentie](#content-consistency) van de versie voor meer informatie.
 
-### Afbeeldingen {#images}
+### Afbeeldingen en inhoud die groot genoeg is en in blokopslag is opgeslagen {#images}
 
-* niet in cache geplaatst
-
-### Andere inhoudstypen {#other-content}
-
-* geen standaardcaching
-* kan worden overschreven door apache `mod_headers`. Bijvoorbeeld:
+* standaard niet in cache geplaatst
+* kan op fijner korrelig niveau worden ingesteld door de volgende `mod_headers` richtlijnen van apache:
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*Andere methoden voor het instellen van cacheheaders werken mogelijk ook
+U moet ervoor zorgen dat een bestand onder src/conf.dispatcher.d/cache de volgende regel heeft (in de standaardconfiguratie):
 
-Voorafgaand aan het goedkeuren van levend verkeer, zouden de klanten met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+Zorg ervoor dat elementen die bedoeld zijn om privé te blijven in plaats van in cache te worden opgeslagen, geen deel uitmaken van de LocationMatch-instructiefilters.
+
+* Merk op dat andere methodes, met inbegrip van het [verzender-ttl AEM ACS-Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), geen waarden met succes zullen met voeten treden.
+
+### Andere inhoudstypen in nodenarchief {#other-content}
+
+* geen standaardcaching
+* standaard kan niet worden ingesteld met de `EXPIRATION_TIME` variabele die wordt gebruikt voor bestandstypen html/text
+* cache-vervaldatum kan worden ingesteld met dezelfde LocationMatch-strategie die in de html/text-sectie wordt beschreven door de juiste regex op te geven
 
 ## Dispatcher {#disp}
 
 Het verkeer gaat door een apache Webserver, die modules met inbegrip van de verzender steunt. De verzender wordt vooral als cache gebruikt om de verwerking op de publicatieknooppunten te beperken, zodat de prestaties toenemen.
 
-Inhoud van het type HTML/tekst wordt ingesteld met cachekoppen die overeenkomen met een vervaldatum van 300 (5 minuten).
+Zoals beschreven in het cachegeheugen van de CDN, kunnen regels worden toegepast op de configuratie van de verzender om de standaardinstellingen voor de vervaldatum van het cachegeheugen te wijzigen.
 
-In de rest van deze sectie worden overwegingen beschreven met betrekking tot de invalidatie van de cachegeheugen van de verzender.
+In de rest van deze sectie worden overwegingen beschreven met betrekking tot de invalidatie van de cachegeheugen van de verzender. Voor de meeste klanten, zou het niet noodzakelijk moeten zijn om het verzender geheime voorgeheugen ongeldig te maken, in plaats daarvan afhankelijk van de verzender die zijn geheime voorgeheugen verfrist wanneer de inhoud opnieuw wordt gepubliceerd, en CDN die de kopballen van de geheim voorgeheugenvervalsing respecteert.
 
 ### Cache-validatie van Dispatcher tijdens activering/deactivering {#cache-activation-deactivation}
 
