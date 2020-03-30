@@ -2,7 +2,7 @@
 title: Inhoud leveren
 description: 'Inhoud leveren '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ Caching bij CDN kan worden gevormd door dispatcherregels te gebruiken. Merk op d
 
 * door gebrek, caching door browser voor vijf minuten, die op de geheim voorgeheugen-controle kopbal wordt gebaseerd door de apache laag. De CDN neemt deze waarde ook in acht.
 * U kunt overschrijven voor alle HTML/Text-inhoud door de `EXPIRATION_TIME` variabele te definiëren in het `global.vars` gebruik van de AEM als hulpprogramma&#39;s van de SDK van de Cloud Service.
-
-U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volgende regel heeft:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * kan op een fijner korrelig niveau door de volgende richtlijnen worden met voeten getreden apache mod_headers:
 
 ```
@@ -167,7 +159,7 @@ Zoals beschreven in het cachegeheugen van de CDN, kunnen regels worden toegepast
 
 In de rest van deze sectie worden overwegingen beschreven met betrekking tot de invalidatie van de cachegeheugen van de verzender. Voor de meeste klanten, zou het niet noodzakelijk moeten zijn om het verzender geheime voorgeheugen ongeldig te maken, in plaats daarvan afhankelijk van de verzender die zijn geheime voorgeheugen verfrist wanneer de inhoud opnieuw wordt gepubliceerd, en CDN die de kopballen van de geheim voorgeheugenvervalsing respecteert.
 
-### Cache-validatie van Dispatcher tijdens activering/deactivering {#cache-activation-deactivation}
+### Validatie van cache-verzender tijdens activering/deactivering {#cache-activation-deactivation}
 
 Net als bij eerdere versies van AEM wordt de inhoud gewist uit de cache van de verzender wanneer u pagina&#39;s publiceert of verwijdert. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren.
 
