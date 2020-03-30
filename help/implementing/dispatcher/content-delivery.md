@@ -2,7 +2,7 @@
 title: Inhoud leveren
 description: 'Inhoud leveren '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -167,7 +167,7 @@ Zoals beschreven in het cachegeheugen van de CDN, kunnen regels worden toegepast
 
 In de rest van deze sectie worden overwegingen beschreven met betrekking tot de invalidatie van de cachegeheugen van de verzender. Voor de meeste klanten, zou het niet noodzakelijk moeten zijn om het verzender geheime voorgeheugen ongeldig te maken, in plaats daarvan afhankelijk van de verzender die zijn geheime voorgeheugen verfrist wanneer de inhoud opnieuw wordt gepubliceerd, en CDN die de kopballen van de geheim voorgeheugenvervalsing respecteert.
 
-### Validatie van cache-verzender tijdens activering/deactivering {#cache-activation-deactivation}
+### Cache-validatie van Dispatcher tijdens activering/deactivering {#cache-activation-deactivation}
 
 Net als bij eerdere versies van AEM wordt de inhoud gewist uit de cache van de verzender wanneer u pagina&#39;s publiceert of verwijdert. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren.
 
@@ -187,7 +187,7 @@ In plaats daarvan, zou de replicatie flush agent moeten worden gebruikt. Dit kan
 
 Dit wordt geïllustreerd in het onderstaande diagram.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 Als er een probleem is dat de verzender cache niet wordt gewist, neemt u contact op met de [klantenondersteuning](https://helpx.adobe.com/support.ec.html) die de verzender cache indien nodig kan leegmaken.
 
