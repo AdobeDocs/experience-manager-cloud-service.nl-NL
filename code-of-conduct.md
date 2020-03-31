@@ -1,5 +1,5 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
 translation-type: tm+mt
 
 ---
@@ -33,7 +33,7 @@ Projectbeheerders zijn verantwoordelijk voor het verduidelijken van de normen vo
 
 Projectbeheerders hebben het recht en de verantwoordelijkheid om opmerkingen, verbintenissen, code, wiki-bewerkingen, problemen en andere bijdragen die niet aan deze gedragscode zijn aangepast, te verwijderen, te bewerken of af te wijzen, of om een contribuant tijdelijk of permanent te verbieden voor ander gedrag dat zij ongeschikt, bedreigend, aanstootgevend of schadelijk achten.
 
-## Toepassingsgebied
+## Scope
 
 Deze gedragscode is zowel van toepassing binnen projectruimten als in openbare ruimten wanneer een individu het project of zijn gemeenschap vertegenwoordigt. Voorbeelden van het vertegenwoordigen van een project of gemeenschap zijn het gebruik van een officieel e-mailadres voor een project, het posten via een officiële sociale-mediaaccount of het optreden als een aangewezen vertegenwoordiger tijdens een online- of offline-evenement. De representatie van een project kan nader worden omschreven en verduidelijkt door projectbeheerders.
 
