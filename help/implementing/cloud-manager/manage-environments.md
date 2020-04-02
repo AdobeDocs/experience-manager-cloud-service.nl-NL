@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
@@ -32,17 +32,19 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    | Ontwikkeling | Ja | Ja als sites zijn opgenomen | Ja | Ja | Niet-productiepijpleiding |
 
    >[!NOTE]
-   >
-De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.  De gebruiker kan niet alleen een werkgebied of alleen een productieomgeving maken.
+   >De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.  De gebruiker kan niet alleen een werkgebied of alleen een productieomgeving maken.
 
 ## Een omgeving toevoegen {#adding-environments}
 
 
-1. De gebruiker klikt op de knop Omgeving **** toevoegen om een omgeving toe te voegen.
+1. De gebruiker klikt op de knop **Omgeving toevoegen** om een omgeving toe te voegen.
+
+   >[!NOTE]
+   >Deze knop kan ook worden geopend vanaf de pagina Milieu&#39;s of vanaf de kaart voor omgevingen. Als gebruiker zult u deze optie slechts zien, als u vereiste toestemming hebt. Neem contact op met uw vertegenwoordiger van Adobe als u vragen hebt.
 
    ![](assets/add-environment.png)
 
-1. Het dialoogvenster Omgeving **** toevoegen wordt weergegeven. De gebruiker moet details indienen zoals het **Omgevingstype** en de naam **van het** Milieu en de beschrijving **van het** Milieu (afhankelijk van de doelstelling van de gebruiker bij het creëren van de omgeving binnen de grenzen van wat beschikbaar is voor de specifieke huurder).
+1. Het dialoogvenster **Omgeving toevoegen** wordt weergegeven. De gebruiker moet details verzenden zoals het **Omgevingstype**, de **Naam van de omgeving** en de **Beschrijving van de omgeving** (afhankelijk van de doelstelling van de gebruiker bij het creëren van de omgeving binnen de grenzen van wat beschikbaar is voor de specifieke tenant).
 
    ![](assets/add-environment2.png)
 
@@ -66,7 +68,7 @@ Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programm
 ![](assets/manage-environments2.png)
 )
 
-Wanneer deze status wordt weergegeven, is de optie **Bijwerken** beschikbaar in het vervolgkeuzemenu, zowel op de milieucaart als in het menu **Beheren** als u op **Details** van de **MILIEUkaart** klikt.
+Wanneer deze status wordt weergegeven, is de optie **Bijwerken** beschikbaar in het vervolgkeuzemenu, zowel op de kaart met omgevingen als in het menu **Beheren** als u op **Details** klikt in de kaart **OMGEVINGEN**.
 
 ![](assets/add-environment4.png)
 
