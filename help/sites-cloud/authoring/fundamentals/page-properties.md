@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -55,7 +55,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
    * Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
 * **Uit-tijd**
@@ -181,8 +181,6 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **Doelconfiguratie**
 
    * Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-cloud/authoring/personalization/targeted-content.md)op te geven.
-   >[!NOTE]
-   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
 
 ### Machtigingen {#permissions}
 
