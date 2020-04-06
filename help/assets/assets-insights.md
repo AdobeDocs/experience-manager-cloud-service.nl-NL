@@ -3,14 +3,16 @@ title: 'Asset Insights '
 description: Leer hoe u met de functie Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
 
 
 # Asset Insights {#asset-insights}
 
-Asset Insights houdt gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
+<!-- TBD: Add uicontrol tags  -->
+
+Met de functie Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
 
 Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
@@ -36,10 +38,10 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
 1. Controleer de sectie **[!UICONTROL Gebruiksstatistieken]** om te weten bij welke entiteiten het element hoort en welke creatieve oplossingen het onlangs hebben gebruikt. Hoe hoger het gebruik, hoe groter de kans dat het middel populair is bij gebruikers. Gebruiksgegevens worden onder de volgende koppen weergegeven:
 
-   * **[!UICONTROL Element]**: Het aantal keren dat het actief deel uitmaakte van een collectie of samengesteld middel.
-   * **[!UICONTROL Web en mobiel]**: Het aantal keren dat het middel deel uitmaakte van websites en apps.
-   * **[!UICONTROL Sociaal]**: Het aantal keren dat het middel is gebruikt in oplossingen, zoals Adobe Social en Adobe Campaign.
-   * **[!UICONTROL E-mail]**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt.
+   * **Element**: Het aantal keren dat het actief deel uitmaakte van een collectie of samengesteld actief
+   * **Web en mobiel**: Het aantal keren dat het middel deel uitmaakte van websites en apps
+   * **Sociaal**: Het aantal keren dat het middel is gebruikt in oplossingen, zoals Adobe Social en Adobe Campaign
+   * **E-mail**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -93,7 +95,6 @@ Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM-ele
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
 
    ![Adobe Analytics voor Assets Insights configureren in AEM](assets/insights_config2.png)
-
    *Afbeelding: Adobe Analytics voor Assets Insights configureren in AEM*
 
 1. Klik of tik op **[!UICONTROL Verifiëren]**. Nadat AEM uw gegevens heeft geverifieerd, kiest u in de lijst **[!UICONTROL Report Suite]** een Adobe Analytics-rapportsuite waaruit u gegevens wilt ophalen met behulp van Asset Insights. Click **[!UICONTROL Add]**.
