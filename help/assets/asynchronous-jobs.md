@@ -3,7 +3,7 @@ title: Asynchrone bewerkingen
 description: AEM Assets optimaliseert prestaties door sommige middel-intensieve taken asynchroon te voltooien.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -29,7 +29,7 @@ U kunt de status van asynchrone taken weergeven op de pagina **[!UICONTROL Taaks
 
 ## De status van asynchrone bewerkingen controleren {#monitoring-the-status-of-asynchronous-operations}
 
-Wanneer AEM Assets een verrichting asynchroon verwerkt, ontvangt u een bericht bij uw inbox <!-- and through email -->.
+Telkens wanneer AEM Assets een verrichting asynchroon verwerkt, ontvangt u een bericht bij uw inbox en door e-mail.
 
 Als u de status van de asynchrone bewerkingen in detail wilt weergeven, navigeert u naar de pagina **[!UICONTROL Taakstatus]** synchroniseren.
 
