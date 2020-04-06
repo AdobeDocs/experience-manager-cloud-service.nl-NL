@@ -2,7 +2,7 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
+source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
 
 ---
 
@@ -34,15 +34,11 @@ Voer de volgende taken uit om met Doel te integreren:
    * [AEM integreren met Adobe Launch via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [AEM-integratie begrijpen met Starten door Adobe, Analytics en Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
+1. [Activiteiten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)configureren: Koppel uw activiteiten aan de doelwolkenconfiguratie.
+
 >[!NOTE]
 >
 >De IMS-configuratie (technische accounts) voor Starten door Adobe is vooraf geconfigureerd in AEM als een Cloud Service. Gebruikers hoeven deze configuratie niet te maken.
-
-1. [Activiteiten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)configureren: Koppel uw activiteiten aan de doelwolkenconfiguratie.
-
->[!CAUTION]
->
->In AEM als Cloud Service is de replicatieagent die aanbiedingen en activiteiten van AEM synchroniseert met Adobe Target standaard uitgeschakeld. Neem contact op met het ondersteuningsteam van [Adobe](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) als u de replicatieagent opnieuw moet inschakelen.
 
 >[!NOTE]
 >
