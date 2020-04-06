@@ -1,13 +1,13 @@
 ---
-title: 'Structuurpakket voor AEM-projectopslagplaats  '
+title: 'Pakket voor opslagplaatsstructuur ontwikkelen   '
 description: Voor Adobe Experience Manager als een met cloudservice gefinancierde projecten is een definitie vereist van het subpakket Structuur in opslagplaats met als enig doel de wortels van de JCR-opslagplaats te definiëren waarin de subpakketten Code van het project worden geïmplementeerd.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
 
 ---
 
 
-# Structuurpakket voor AEM-projectopslagplaats
+# Pakket voor opslagplaatsstructuur ontwikkelen
 
 Voor geMaven projecten voor Adobe Experience Manager als Cloud Service is een subpakketdefinitie vereist in de opslagplaats met als enig doel het definiëren van de wortels van de JCR-opslagplaats waarin de code-subpakketten van het project worden geïmplementeerd. Dit zorgt ervoor dat de installatie van pakketten in de Manager van de Ervaring als Dienst van de Wolk automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 
@@ -51,9 +51,9 @@ Zorg ervoor om dit nieuwe Maven subproject aan de `<modules>` lijst van ouderpro
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>ui.apps.structure</artifactId>
+    <artifactId>my-app.repository-structure</artifactId>
     <packaging>content-package</packaging>
-    <name>UI Apps Structure - Repository Structure Package for /apps</name>
+    <name>My App - Adobe Experience Manager Repository Structure Package</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,10 +66,6 @@ Zorg ervoor om dit nieuwe Maven subproject aan de `<modules>` lijst van ouderpro
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
-                    <cloudManagerTarget>none</cloudManagerTarget>
-                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -80,29 +76,14 @@ Zorg ervoor om dit nieuwe Maven subproject aan de `<modules>` lijst van ouderpro
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!--
-                        Examples of complex roots
-
-
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
-
-                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
-
+                        <!-- Common overlay roots -->
+                        <filter><root>/apps/sling</root></filter>
                         <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/cq/core</root></filter>
-                        <filter><root>/apps/cq/core/content</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+                        <filter><root>/apps/dam</root></filter>
+                        <filter><root>/apps/wcm</root></filter>
 
-
-                        Any /apps level Context-aware configurations need to enumerated here. 
-                        
-                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
-
+                        <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
-                        <filter><root>/apps/settings/notification-templates</root></filter>
-                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
-                        -->
 
                     </filters>
                 </configuration>
@@ -131,7 +112,7 @@ Voeg in de `ui.apps/pom.xml`en eventuele andere codepakketten een verwijzing `po
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>my-app.repository-structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -143,7 +124,7 @@ Voeg in de `ui.apps/pom.xml`en eventuele andere codepakketten een verwijzing `po
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>ui.apps.structure</artifactId>
+        <artifactId>my-app.repository-structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
