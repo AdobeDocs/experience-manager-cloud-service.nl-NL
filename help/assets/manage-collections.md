@@ -4,7 +4,7 @@ description: Begrijp het concept van inzameling in de Middelen van de Manager va
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
@@ -170,7 +170,7 @@ Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elemente
 
 1. Selecteer een of meer verzamelingen die u wilt downloaden in de console Verzamelingen.
 1. Tik op of klik op het downloadpictogram op de werkbalk.
-1. Tik/klik op **[!UICONTROL Downloaden]** in het dialoogvenster **[!UICONTROL Downloaden]**. Selecteer **[!UICONTROL Uitvoeringen]** als u de uitvoeringen van de elementen in de verzameling wilt downloaden. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
+1. Tik/klik op **[!UICONTROL Downloaden]** in het dialoogvenster **[!UICONTROL Downloaden]**. Selecteer **[!UICONTROL Uitvoeringen]** als u de uitvoeringen van de elementen in de verzameling wilt downloaden. Selecteer de optie **[!UICONTROL E-mail]** om een e-mailbericht naar de eigenaar van de verzameling te verzenden.
 
    Wanneer u een verzameling selecteert die u wilt downloaden, wordt de volledige maphiërarchie onder de verzameling gedownload. Als u elke verzameling die u downloadt (inclusief elementen in onderliggende verzamelingen die onder de bovenliggende verzameling zijn genest), wilt opnemen in een afzonderlijke map, selecteert u **[!UICONTROL Een aparte map maken voor elk element]**.
 
