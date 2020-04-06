@@ -2,7 +2,7 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
@@ -35,7 +35,7 @@ Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden,
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Met de volgende opdracht kunt u logboeken trappen:
+Met de volgende opdracht kunt u logbestanden als tailing weergeven:
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Nofferte]
 >Hoewel **Logboekdownloads** beschikbaar blijven via zowel de gebruikersinterface als de API, is **Logboektailing** alleen beschikbaar via API/CLI.
-
-### Additional Resources {#resources}
-
-Raadpleeg de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en Adobe I/O CLI:
-
-* [Documentatie voor API voor cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
