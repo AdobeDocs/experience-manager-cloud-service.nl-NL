@@ -1,15 +1,14 @@
 ---
-sub-product: Overview of AEM as a Cloud Service
-user-guide-title: Overview of AEM as a Cloud Service
-translation-type: ht
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+sub-product: Overzicht van AEM als cloudservice
+user-guide-title: Overzicht van AEM als cloudservice
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Help voor Experience Manager as a Cloud Service {#overview}
 
-+ [Overzicht](/help/overview/home.md)
 + [Inleiding tot AEM as a Cloud Service](introduction.md)
 + [Nieuwe en aangepaste functies](what-is-new-and-different.md)
 + [Terminologie - Nieuw voor de cloud](terminology.md)
