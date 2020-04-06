@@ -3,14 +3,14 @@ title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van
 description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
 
 # Gekoppelde assets gebruiken om DAM-assets te delen in AEM-sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen kunnen geografisch worden verdeeld bestaande implementaties die vereist zijn om samen te werken of acquisities die leiden tot heterogene infrastructuren die het moederbedrijf samen wil gebruiken.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen hiervoor zijn geografisch verspreide implementaties waardoor er in een 24-uurs economie achtereenvolgens op verschillende locaties aan een project kan worden gewerkt; overnames die leiden tot heterogene infrastructuren die de moedermaatschappij wil consolideren; groei die leidt tot een zodanige schaalvergroting dat een toegewijde instantie is vereist voor asset management.
 
 AEM Sites biedt functies voor het maken van webpagina&#39;s en AEM Assets is het DAM-systeem (Digital Asset Management) dat de vereiste assets voor websites levert. AEM biedt nu ondersteuning voor het bovenstaande gebruiksscenario door de integratie van AEM Sites en AEM Assets.
 
@@ -18,7 +18,7 @@ AEM Sites biedt functies voor het maken van webpagina&#39;s en AEM Assets is het
 
 Bij het bewerken van pagina&#39;s in de Pagina-editor kunnen auteurs naadloos zoeken naar assets van een andere AEM Assets-implementatie, door deze assets bladeren en ze insluiten. Een AEM-beheerder kan een eenmalige integratie uitvoeren van een lokale implementatie van AEM Sites met een andere (externe) implementatie van AEM Assets.
 
-Voor Sites-auteurs zijn externe assets lokaal als alleen-lezen beschikbaar. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets in bulk te migreren.
+Voor Sites-auteurs zijn externe assets lokaal als alleen-lezen beschikbaar. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets in bulk te migreren. Zie de [Assets-migratiegids](/help/assets/assets-migration-guide.md).
 
 ### Vereisten en ondersteunde implementaties {#prerequisites}
 
@@ -164,7 +164,7 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 * Metadataschema&#39;s worden niet opgehaald.
 * Alle Sites-auteurs hebben leesmachtigingen voor de opgehaalde kopieën, zelfs als ze geen toegang hebben tot de externe DAM-implementatie.
 * Geen API-ondersteuning om de integratie aan te passen.
-* De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren.
+* De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren. Zie de [Assets-migratiegids](assets-migration-guide.md).
 * It is not possible to use a remote asset as a thumbnail for a web page in the [!UICONTROL Thumbnail] tab in [!UICONTROL Page Properties] by clicking [!UICONTROL Select Image].
 
 **Installatie en licenties**
