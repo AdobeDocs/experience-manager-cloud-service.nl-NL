@@ -2,7 +2,7 @@
 title: Dynamische media-elementen publiceren
 description: Dynamische media-elementen publiceren
 translation-type: tm+mt
-source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 U publiceert uw dynamische media-elementen door de elementen te selecteren en op **[!UICONTROL Publiceren]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. See [Configuring Dynamic Media](config-dm.md).
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. See [Configuring Dynamic Media](config-dm.md).
 
 In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset&#39;s name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 
