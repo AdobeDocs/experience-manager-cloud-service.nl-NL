@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
+source-git-commit: 7a98b0f77177612bf81d904e8b0fb3645baf1435
 
 ---
 
 
-# Middelen, map en verzamelingen naar Brand Portal publiceren {#publish-aem-assets-to-brand-portal}
+# Middelen, mappen en verzamelingen naar Brand Portal publiceren {#publish-aem-assets-to-brand-portal}
 
 Als beheerder van Adobe Experience Manager (AEM)-middelen kunt u elementen, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een middel of map plannen op een latere datum of tijd. Zodra gepubliceerd, kunnen de gebruikers van het Portaal van het Merk tot de activa, de omslagen, en de inzamelingen aan andere gebruikers toegang hebben en verder verspreiden.
 
