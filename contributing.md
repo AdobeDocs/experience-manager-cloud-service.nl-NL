@@ -1,11 +1,11 @@
 ---
-source-git-commit: 3dd012e70e467be458523ad4a2be4610743e9980
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
 # Bijdragen aan de documentatie van Adobe Experience Manager Cloud Service
 
-Bedankt dat u hebt gekozen om een bijdrage te leveren aan de documentatie van Adobe Experience Manager Cloud Service. Wij zijn verheugd over de bijdragen van de gehele lezergemeenschap en van collega&#39;s van Adobe aan de inhoud.
+Bedankt dat u hebt gekozen om deel te nemen aan de documentatie van [!UICONTROL Adobe Experience Manager] Cloud Service. Wij verwelkomen de bijdragen van onze gemeenschap en medewerkers van Adobe buiten de documentatieteams.
 
 In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de richtlijnen beschreven die u moet volgen bij het maken van uw bijdragen.
 
@@ -13,47 +13,73 @@ In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de ric
 
 Dit project heeft de [Adobe Open Source Code of Conduct](code-of-conduct.md)goedgekeurd. Door bij te dragen aan AEM-documentatie gaat u akkoord met het naleven van deze gedragscode. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Richtsnoeren voor de bijdrage
+## Richtsnoeren voor het bijdragen aan de documentatie van AEM
 
-Hoewel we blij zijn met bijdragen om de AEM-documentatie te verbeteren, vragen we wel dat bijdragen waar mogelijk aan bepaalde richtsnoeren en normen voldoen. Zie de [Richtlijnen voor Bijdragen aan de documentatie](guidelines.md) van AEM voor meer informatie.
+Hoewel we blij zijn met bijdragen om de documentatie van de AEM Cloud Service te verbeteren, vragen we wel dat de bijdragen voldoen aan bepaalde richtlijnen en normen. Zie de [Richtlijnen voor Bijdragen aan de documentatie](guidelines.md) van AEM voor meer informatie.
 
 ## Contribute
 
-We willen het zo eenvoudig mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
+Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
-* [Een uitgave maken](#create-an-issue)
-* [Een pull-verzoek maken](#create-a-pull-request)
+<!--
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
+--- master
+-->
 
-Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub zelf uitgeeft.
+### Een probleem maken
 
->[!NOTE]
->
->De [gebruiksvoorwaarden van Adobe zijn van toepassing op bijdragen die u verzendt.](https://www.adobe.com/legal/terms.html)
+Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Een probleem indienen. De kwesties zijn ook uitstekend als u iets hebt om bij te dragen, maar voel niet comfortabel het uitgeven van de docs of het maken van een trekpleidooi zelf.
 
-### Een probleem maken {#create-an-issue}
+### Kleine wijzigingen
 
-Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Maak vervolgens een probleem. De kwesties zijn ook uitstekend als u iets hebt om bij te dragen, maar voel niet comfortabel het uitgeven van de docs of het maken van een trekpleidooi zelf.
+Om minder belangrijke updates voor te leggen, klik de **Edit** verbinding in een artikel, dat het bronartikel in GitHub opent. Gebruik GitHub UI om uw updates te maken. Zie de algemene handleiding voor [Adobe Docs-medewerkers](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
 
-Met problemen kunt u uw idee eenvoudig beschrijven voor verbetering in de documenten en een lid van het AEM Docs-team kan het beoordelen. Klik op de koppeling **Log een uitgave** boven aan het rechternavigatievenster op een willekeurige pagina om een probleem te maken.
+Kleine correcties of verduidelijkingen die u voor documentatie en codevoorbeelden in dit antwoord opgeeft, worden behandeld in de gebruiksvoorwaarden van Adobe.
 
-### Een volledige aanvraag maken {#create-a-pull-request}
+### Belangrijke wijzigingen of nieuwe artikelen van leden van de Gemeenschap
 
-Als u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u een pull-verzoek maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de koppeling Deze pagina **** bewerken boven aan het navigatievenster rechts op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
+Als u deel uitmaakt van de Adobe-community en een artikel wilt maken of belangrijke wijzigingen wilt indienen, klikt u op het tabblad **Problemen** in de GitHub-opslagplaats om een probleem in te dienen. Met deze indiening start u een gesprek met het documentatieteam. U moet samenwerken met de schrijver (of een andere Adobe-medewerker) om nieuwe content te publiceren.
 
-Alle pull-aanvragen moeten vergezeld gaan van een ondertekende [contributieovereenkomst of CLA.](https://opensource.adobe.com/cla.html)  Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA te verzenden, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
+Als u een trekkingsverzoek met significante veranderingen in documentatie en codevoorbeelden voorlegt, zult u een bericht in het trekpleverzoek zien vragend u om een online overeenkomst van de bijdragevergunning (CLA) voor te leggen. U moet het online formulier invullen voordat we uw intrekkingsverzoek kunnen bekijken.
 
-### Snelle video-introductie
+<!--
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+--master
+-->
 
-Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken en aanvragen kunt intrekken.
+### Belangrijke wijzigingen van Adobe-medewerkers
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+Als u een technisch schrijver, programmamanager of ontwikkelaar van het productteam bent voor een Adobe Experience Cloud-oplossing en het uw taak is om een bijdrage te leveren aan technische artikelen of om technische artikelen te schrijven, moet u de privéopslagruimte gebruiken op `https://git.corp.adobe.com/AdobeDocs`.
 
-### Bijdragen van Adobe-werknemers
+Adobe-werknemers uit andere delen van de Adobe-wereld dienen het openbare antwoord te gebruiken voor kleine updates.
 
-Als u een Adobe-medewerker bent en een bijdrage hebt, gebruikt u de `AdobeDocs` org in de bedrijfskit.
+## Licentieovereenkomst voor contribuant
 
-Uiteraard zijn we blij met elke bijdrage en zullen we uw bijdrage beoordelen als deze wordt geleverd in de openbare opslagplaats. Het is echter gemakkelijker om aanvragen van Adobe-werknemers te verwerken en ze kunnen sneller worden goedgekeurd in het bedrijfsverslag. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
+Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contributieovereenkomst. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. [Onderteken onze CLA.](https://opensource.adobe.com/cla.html) U hoeft slechts één keer een Adobe CLA te verzenden, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
 
-## Aanvullende informatie
 
-Zie de [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie over het gebruik van het GitHub-ontwerpplatform.
+## Gereedschappen en Setup
+
+Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
+
+<!--
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+---master
+-->
+
+Zie de [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor een overzicht van het gebruik van het GitHub-ontwerpplatform.
+
+## Hoe te om Markering te gebruiken om Uw Onderwerp te formatteren
+
+Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. Als u niet vertrouwd bent met markering, zie:
+
+* [Grondbeginselen van markeringen](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Afdrukbare opmaakmodel](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Labels
+
+In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om verzoeken te trekken om ons te helpen de werkschema van het trekkingsverzoek beheren en u te helpen laten weten wat aan de hand is uw trekkrachtverzoek:
+
+* **Naar auteur** verzonden wijziging: De auteur is op de hoogte gesteld van het aanloopverzoek.
+* **kant-en-klaar samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
