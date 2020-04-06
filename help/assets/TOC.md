@@ -1,15 +1,14 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: ht
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+translation-type: tm+mt
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
 # Assets {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
 + [Belangrijke wijzigingen in AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architectuur](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [Digital Rights Management voor assets](drm.md)
 + Assets configureren, beheren en uitbreiden {#admin}
    + [API&#39;s en referentiemateriaal](developer-reference-material-apis.md)
+   + [Assets delen configureren](configure-asset-sharing.md)
    + [Metadataschema van map](folder-metadata-schema.md)
-   + [Profielen verwerken](/help/assets/dynamic-media/processing-profiles.md)
    + [Meertalige assets en de vertaling van assets](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Asset-editor uitbreiden](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [XMP-metadata](xmp-metadata.md)
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
++ Elementen delen en distribueren {#brandportal}
+   + [AEM-middelen configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [AEM-middelen publiceren naar Brand Portal](publish-to-brand-portal.md)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
