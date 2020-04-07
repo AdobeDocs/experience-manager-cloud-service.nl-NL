@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, 
 
 ## Attributie
 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTDeze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+=======
 Deze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+>>>>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
+
+
+
+
+> 
