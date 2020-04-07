@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager-middelen
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -54,11 +54,13 @@ Om de assetconsole in staat te stellen de refererende samengestelde assets samen
 1. Kies Bericht bij verlopen **[!UICONTROL van Adobe CQ DAM]**. Standaard is **[!UICONTROL Tijdgebaseerde planner]** geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
 1. Om de baan periodiek in werking te stellen, ontruim het **[!UICONTROL Op tijd gebaseerde gebied van de Regel]** van de Planner en wijzig de tijd in seconden op het gebied van de **[!UICONTROL Periodieke Planner]** . Bijvoorbeeld bij de voorbeeldexpressie &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; wordt de taak om 00 uur gestart.
-1. Selecteer E-mail **** verzenden om e-mails te ontvangen wanneer een element verloopt.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Alleen de maker van het element (de persoon die een bepaald middel uploadt naar AEM Assets) ontvangt een e-mail wanneer het middel vervalt. Zie hoe u e-mailmeldingen configureert voor meer informatie over het configureren van e-mailmeldingen op algemeen AEM-niveau.
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. In het **[!UICONTROL Voorafgaande bericht in secondengebied]** , specificeer de tijd in seconden voorafgaand aan de tijd een activa verloopt wanneer u een bericht betreffende de vervaldatum wilt ontvangen. Als u een beheerder of de maker van het element bent, ontvangt u een bericht vóór het verlopen van het element om u te laten weten dat het element op het punt staat na de opgegeven tijd te verlopen.
 
