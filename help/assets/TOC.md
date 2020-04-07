@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
+source-git-commit: 2097a49b20225dea01b1ef3b5d0dd79a62e04f68
 
 ---
 
@@ -52,8 +52,8 @@ source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
    + [XMP-metadata](xmp-metadata.md)
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD============
->>>>>>>>>>bovenliggende element van 733b637... update toc
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD===============
+>>>>>>>>>>bovenliggende element van 733b637... update toc======parent van 733b637... update toc
 
 
 
@@ -63,7 +63,8 @@ source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 + Elementen delen en distribueren {#brandportal}
    + [AEM-middelen configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [AEM-middelen publiceren naar Brand Portal](publish-to-brand-portal.md)
->>>>>>>bovenliggende element van 733b637... update toc======parent van da6a8ae.. Brand Portal configureren met AEM-middelen op Cloud======parent van da6a8ae... Brand-portal configureren met AEM-middelen op Cloud
+>>>>>>>bovenliggende element van 733b637... update toc======
+>>>>>>> bovenliggend item van da6a8ae... Brand Portal configureren met AEM-middelen op Cloud======parent van da6a8ae... Brand-portal configureren met AEM-middelen op Cloud
 
 
 
