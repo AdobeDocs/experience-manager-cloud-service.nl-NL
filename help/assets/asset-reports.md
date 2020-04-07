@@ -3,7 +3,7 @@ title: Rapporten over assets
 description: In dit artikel worden diverse rapporten beschreven over elementen in AEM Assets en hoe rapporten kunnen worden gegenereerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Het rapportagekader voor AEM Assets gebruikt Sling-taken om rapportageaanvragen 
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
-Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (optioneel) en een postbusmelding. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
+Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- through an email (optional) and --> een inbox bericht. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
 
 ## Rapporten genereren {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    ![files_report](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> De kolommen kunnen niet worden aangepast.
 
    The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
 
