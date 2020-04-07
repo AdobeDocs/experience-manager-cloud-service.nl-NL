@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,6 +181,8 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **Doelconfiguratie**
 
    * Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-cloud/authoring/personalization/targeted-content.md)op te geven.
+   >[!NOTE]
+   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
 
 ### Machtigingen {#permissions}
 
