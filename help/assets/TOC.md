@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
+source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
 
 ---
 
@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [XMP-metadata](xmp-metadata.md)
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD======
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD======
 + Elementen delen en distribueren {#brandportal}
    + [AEM-middelen configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [AEM-middelen publiceren naar Brand Portal](publish-to-brand-portal.md)
->>>>>>>>>>bovenliggende element van 733b637... update toc======parent van da6a8ae.. Brand-portal configureren met AEM-middelen op Cloud
+>>>>>>>>>>bovenliggende element van 733b637... update toc======parent van da6a8ae.. Brand Portal configureren met AEM-middelen op Cloud======parent van da6a8ae... Brand-portal configureren met AEM-middelen op Cloud
 
 
 
