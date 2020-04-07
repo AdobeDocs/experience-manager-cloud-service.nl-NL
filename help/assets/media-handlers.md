@@ -3,7 +3,7 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Mediahandlers zijn services binnen AEM Assets die specifieke handelingen uitvoer
 
 >[!NOTE]
 >
->Raadpleeg de pagina met door [Middelen ondersteunde indelingen](file-format-support.md) voor een beschrijving van alle indelingen die door AEM Assets worden ondersteund, en van de functies die voor elke indeling worden ondersteund.
+>Zie het artikel over [ondersteunde bestandsindelingen](file-format-support.md) voor elementen voor een beschrijving van alle indelingen die worden ondersteund door AEM Assets en de functies die worden ondersteund voor elke indeling.
 
 ## Standaardmediafuncties {#default-media-handlers}
 
@@ -407,7 +407,7 @@ Hiervoor gebruikt u ImageMagick. ImageMagick is een gratis softwaresuite voor he
 
 Installeer ImageMagick eerst op de schijf die als host fungeert voor de AEM-server:
 
-1. ImageMagick installeren: raadpleeg de [documentatie](https://www.imagemagick.org/script/download.php)van ImageMagick.
+1. ImageMagick installeren: Zie [documentatie](https://www.imagemagick.org/script/download.php)van ImageMagick.
 1. Stel het gereedschap zo in dat u het op de opdrachtregel kunt omzetten.
 1. Als u wilt controleren of het gereedschap op de juiste wijze is geïnstalleerd, voert u de volgende opdracht uit `convert -h` op de opdrachtregel.
 
