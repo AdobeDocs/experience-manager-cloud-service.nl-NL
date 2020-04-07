@@ -2,7 +2,7 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service
 description: 'Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,6 +18,8 @@ Adobe Experience Manager as a Cloud Service:
 * Maakt het mogelijk om uw klanten gepersonaliseerde, contentgestuurde ervaringen te bieden door de gecombineerde kracht van AEM Content Management System en AEM Digital Asset Management.
 
 * Biedt Continuous Delivery en Continuous Integration voor updates zonder uitvaltijd.
+
+* Levert snel en efficiënt content, maakt optimaal gebruik van een ingebouwd CDN-netwerk (Content Delivery Network) en van andere beste praktijken voor netwerklagen.
 
 * Is gebaseerd op een dynamische architectuur die automatisch schaalt, waardoor infrastructuur geen zorg meer is.
 
