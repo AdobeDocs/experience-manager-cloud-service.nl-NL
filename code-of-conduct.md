@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
 translation-type: tm+mt
 
 ---
@@ -45,13 +45,4 @@ Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, 
 
 ## Attributie
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTDeze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
-=======
-Deze gedragscode is aangepast vanuit het [bijdrageconvenant](https://contributor-covenant.org), versie 1.4, dat beschikbaar is op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
->>>>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van 190577c... &#39;master&#39; van vertakking samenvoegen in ophaling
-
-
-
-
-
-> 
+Deze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
