@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service SDK
 description: 'In te vullen '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,7 +24,7 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 ## De AEM benaderen als SDK van de Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * U kunt het pictogram **Over Adobe Experience Manager** van de AEM Admin Console controleren om te zien welke versie van AEM u uitvoert op productie.
-* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van de [portal](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)Softwaredistributie. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
+* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van de [portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)Softwaredistributie. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
 * Java API Jar en Javadoc Jar kunnen via gefabriceerde hulpmiddelen, of bevellijn of met uw aangewezen winde worden gedownload.
 * De toegewezen projectruimten moeten verwijzen naar het volgende API Jar-pakket. Naar deze afhankelijkheid moet ook worden verwezen in subpakketformulieren.
 
