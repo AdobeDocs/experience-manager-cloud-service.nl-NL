@@ -27,7 +27,7 @@ De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan.
 
 ## Status van het bestandssysteem {#state-on-the-filesystem}
 
-Het bestandssysteem van de instantie mag niet in AEM worden gebruikt als cloudservice. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
+Het bestandssysteem van de instantie mag niet in AEM worden gebruikt als cloudservice. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatief effect op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
 Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou de Publish rij ervoor moeten zorgen dat om het even welke gegevens die moeten worden voortgeduurd naar een externe dienst voor opslag op langere termijn wordt verscheept.
 
