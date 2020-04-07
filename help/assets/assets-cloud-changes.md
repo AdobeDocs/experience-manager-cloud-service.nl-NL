@@ -28,7 +28,7 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door het beter sc
    * Asset upload [met directe binaire toegang](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Voor technische details, zie van [direct binair upload protocol en APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
 * De standaardworkflow **[!UICONTROL DAM Asset Update]** in eerdere versies van AEM is niet meer beschikbaar. In plaats daarvan bieden de assetmicroservices een schaalbare, gemakkelijk beschikbare service die het grootste deel van de standaardverwerking van middelen bestrijkt (uitvoeringen, metagegevensextractie, tekstextractie voor indexering).
-   * Zie [configureren en gebruiken van assetmicroservices](/help/assets/asset-microservices-configure-and-use.md)
+   * Zie [configureren en gebruiken van asset microservices](/help/assets/asset-microservices-configure-and-use.md)
    * Voor aangepaste workflowstappen in de verwerking kunnen [naverwerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) worden gebruikt.
 * Middelen die via Package Manager worden binnengebracht, moeten handmatig worden opgerold met behulp van de handeling **[!UICONTROL Element]** opnieuw verwerken in de interface Middelen.
 
