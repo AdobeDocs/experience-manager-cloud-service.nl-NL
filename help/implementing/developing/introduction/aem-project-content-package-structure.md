@@ -1,13 +1,13 @@
 ---
-title: Begrijp de Structuur van het Pakket van de Inhoud van een Project
-description: Leer hoe u pakketstructuren voor implementatie op de juiste wijze definieert voor Adobe Experience Manager Cloud Service.
+title: AEM-projectstructuur
+description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Begrijp de structuur van een pakket met projectinhoud in Adobe Experience Manager Cloud Service {#understand-cloud-service-package-structure}
+# AEM-projectstructuur
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ De pakketstructuur die in dit document wordt beschreven, is compatibel met **zow
 
 `/apps` en `/libs` worden beschouwd als **onveranderbare** gebieden van AEM omdat deze niet kunnen worden gewijzigd (maken, bijwerken, verwijderen) nadat AEM is gestart (dat wil zeggen tijdens runtime). Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
 
-Al het andere in de opslagplaats, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, enz. Dit zijn allemaal **veranderbare** gebieden, wat betekent dat deze tijdens runtime kunnen worden gewijzigd.
+Al het andere in de opslagplaats, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, enz. Dit zijn allemaal **veranderbare** gebieden, wat betekent dat deze tijdens runtime kunnen worden gewijzigd.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ Dit diagram verstrekt een overzicht van de geadviseerde projectstructuur en pakk
 
 De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
-+ Het `ui.apps` pakket, of het Pakket van de Inhoud, bevat alle code die moet worden opgesteld en slechts aan opstellen `/apps`. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
++ Het `ui.apps` pakket, of het Pakket van de Code, bevat alle code die moet worden opgesteld en slechts aan `/apps`opstelt. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
    + OSGi-bundels
       + `/apps/my-app/install`
    + OSGi-configuraties
@@ -58,26 +58,31 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/apps/settings`
    + ACLs (toestemmingen)
       + Willekeurig pad `rep:policy` onder `/apps`
-+ Het `ui.content` pakket, of het Pakket van de Code, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
+   + Repo Init OSGi configuratierichtlijnen (en begeleidende manuscripten)
+      + [Repo Init](#repo-init) is de aanbevolen manier om (muteerbare) inhoud te implementeren die logisch deel uitmaakt van de AEM-toepassing. Repo Init moet worden gebruikt om te definiëren:
+         + Structuren voor basislijninhoud
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + Gebruikers
+         + Servicegebruikers
+         + Groepen
+         + ACLs (toestemmingen)
+            + Willekeurig pad `rep:policy` (veranderbaar of onveranderbaar)
++ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
    + Contextbewuste configuraties
       + `/conf`
-   + Structuren voor basislijninhoud (mappen met elementen, basispagina&#39;s met sites)
+   + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren uitbreidt van de Basislijn die in RepoInit worden bepaald.
       + `/content`, `/content/dam`enz.
    + Regelgevende taggende taxonomieën
       + `/content/cq:tags`
-   + Servicegebruikers
-      + `/home/users`
-   + Gebruikersgroepen
-      + `/home/groups`
    + Eak-indexen
-      + `/oak:indexes`
+      + `/oak:index`
    + Etc oudere knooppunten
       + `/etc`
-   + ACLs (toestemmingen)
-      + Willekeurig `rep:policy` voor pad **dat niet** onder `/apps`
 + Het pakket `all` is een containerpakket dat ALLEEN de pakketten `ui.apps` en `ui.content` als ingesloten items bevat. Het pakket `all` mag geen **eigen content** hebben, maar moet alle implementaties op de opslagplaats delegeren naar zijn subpakketten.
 
-   Pakketten worden nu opgenomen met de insluitconfiguratie [van de Maven](#embeddeds)FileVault-plug-in voor Maven-bestanden in plaats van met de `<subPackages>` configuratie.
+   Pakketten worden nu opgenomen met behulp van de ingesloten configuratie [van de Maven](#embeddeds)FileVault-insteekmodule in plaats van de `<subPackages>` configuratie.
 
    Voor complexe plaatsingen van de Manager van de Ervaring, kan het wenselijk zijn om veelvoudige `ui.apps` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
 
@@ -111,6 +116,35 @@ Standaard worden alle pakketten die door de Maven-build worden gemaakt door Adob
 >[!TIP]
 >
 >Zie de [sectie XML-fragmenten](#pom-xml-snippets) voor POM hieronder voor een volledig fragment.
+
+## Reparatie-item{#repo-init}
+
+Repo Init verstrekt instructies, of manuscripten, die structuren JCR, die zich van gemeenschappelijke knoopstructuren zoals omslagbomen, aan gebruikers, de dienstgebruiker, groepen en ACL definitie bepalen.
+
+De belangrijkste voordelen van Repo Init zijn zij impliciete toestemmingen hebben om alle acties uit te voeren die door hun manuscripten worden bepaald, en worden aangehaald vroeg in de plaatsingslevenscyclus die alle vereiste structuren JCR verzekeren tegen de tijdcode wordt uitgevoerd.
+
+Terwijl de manuscripten van het Begin van de Repo in het `ui.apps` project zelf als manuscripten leven, kunnen en moeten zij worden gebruikt om de volgende veranderbare structuren te bepalen:
+
++ Structuren voor basislijninhoud
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ Servicegebruikers
++ Gebruikers
++ Groepen
++ ACLs
+
+Scripts voor herhalingsindelingen worden opgeslagen als `scripts` vermeldingen van `RepositoryInitializer` OSGi-fabrieksconfiguraties en kunnen dus impliciet worden geactiveerd door de runmode, waardoor er verschillen kunnen optreden tussen de scripts voor de repo-invoer van AEM-auteur en AEM-publicatieservices, of zelfs tussen Envs (Dev, Stage en Prod).
+
+Merk op dat wanneer het bepalen van Gebruikers, en Groepen, slechts groepen als deel van de toepassing worden beschouwd, en integraal aan zijn functie zou hier moeten worden bepaald. Organisatiegebruikers en -groepen moeten nog steeds bij uitvoering in AEM worden gedefinieerd; Bijvoorbeeld, als een douanewerkschema werk aan een genoemde Groep toewijst, zou die Groep binnen via Repo Init in de toepassing AEM moeten worden bepaald, echter als de Groepering slechts organisatorisch, zoals &quot;Team van Wendy&quot;en &quot;Team van Sean&quot;is, worden deze het best bepaald, en bij runtime in AEM geleid.
+
+>[!TIP]
+>
+>Scripts voor herhalingsindelingen *moeten* in het inlineveld worden gedefinieerd en de `scripts` `references` configuratie werkt niet.
+
+De volledige woordenlijst voor scripts van Repo Init is beschikbaar in de documentatie [van](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling Repo Init.
+
+>[!TIP]
+>
+>Zie de sectie [Repo Init Snippets](#snippet-repo-init) hieronder voor een volledig fragment.
 
 ## Structuurpakket opslagplaats {#repository-structure-package}
 
@@ -321,6 +355,28 @@ In elk project dat een pakket genereert, **behalve** voor het containerproject (
     ...
 ```
 
+### Reparatie-item{#snippet-repo-init}
+
+Scripts voor Repo Init die de scripts voor Repo Init bevatten, worden gedefinieerd in de `RepositoryInitializer` OSGi-fabrieksconfiguratie via de `scripts` eigenschap. Merk op dat aangezien deze manuscripten binnen configuraties OSGi worden bepaald, zij gemakkelijk door runmode kunnen zijn gebruikend de gebruikelijke `../config.<runmode>` omslagsemantiek.
+
+Aangezien scripts doorgaans een declaratie met meerdere regels zijn, is het eenvoudiger om ze in het `.config` bestand te definiëren dan in de `sling:OsgiConfig` indeling XML.
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+Het `scripts` bezit OSGi bevat richtlijnen zoals die door de [Repo Init taal](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)van Apache Sling worden bepaald.
+
 ### Structuurpakket opslagplaats {#xml-repository-structure-package}
 
 Voeg in de `ui.apps/pom.xml` en een andere `pom.xml` code die een codepakket (`<packageType>application</packageType>`) declareert, de volgende configuratie van het opslagplaatsstructuurpakket toe aan de FileVault Maven-plug-in. U kunt uw eigen structuurpakket voor uw project [](repository-structure-package.md)maken.
@@ -338,7 +394,7 @@ Voeg in de `ui.apps/pom.xml` en een andere `pom.xml` code die een codepakket (`<
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -430,7 +486,10 @@ Als de veelvoudige `/apps/*-packages` in ingebedde doelstellingen worden gebruik
 
 ### Bewaarplaatsen van derden {#xml-3rd-party-maven-repositories}
 
-Voeg in het reactorproject `pom.xml`de noodzakelijke richtlijnen van derden inzake openbare opslagplaats Maven toe. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
+>[!WARNING]
+> Als u meer Maven-repositories toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagplaatsen op afhankelijkheden worden gecontroleerd.
+
+Voeg in het reactorproject de noodzakelijke richtlijnen van de derde partij inzake openbare opslagplaats Maven toe `pom.xml`. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
 
 ```xml
 <repositories>
