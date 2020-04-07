@@ -47,8 +47,8 @@ Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, 
 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTDeze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
 =======
-Deze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, dat beschikbaar is op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+Deze gedragscode is aangepast uit het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
 
 
