@@ -3,7 +3,7 @@ title: Weet hoe middelenmicroservices uw digitale middelen in de cloud kunnen ve
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-Adobe Experience Manager als Cloud Service biedt een in de cloud geïntegreerde manier om toepassingen en mogelijkheden van Experience Manager te gebruiken. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen.
+Adobe Experience Manager als cloudservice biedt een cloud-native manier om gebruik te maken van Experience Manager-toepassingen en -mogelijkheden. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen.
 
 Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices, die door Adobe worden beheerd voor een optimale verwerking van verschillende typen bedrijfsmiddelen en verwerkingsopties. Belangrijkste voordelen zijn:
 
@@ -51,23 +50,23 @@ De belangrijkste stappen van de opname en verwerking met behulp van asset micros
 * De resultaten van de verwerking, zoals uitvoeringen, worden opgeslagen in de binaire cloudopslag.
 * Experience Manager wordt op de hoogte gesteld dat de verwerking compleet is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) beschikbaar zijn in Experience Manager voor het geüploade element
 
-Dit is de basisstroom van activa het opnemen en verwerken. Indien dit het geval is, kan de Experience Manager ook het workflowmodel van de klant starten om het middel na de verwerking uit te voeren, bijvoorbeeld om enkele aangepaste stappen uit te voeren die specifiek zijn voor de omgeving van de klant, zoals het ophalen van informatie van de bedrijfssystemen van de klant om het element aan de eigenschappen van het bedrijfsmiddel toe te voegen.
+Dit is de basisstroom van activa het opnemen en verwerken. Indien dit het geval is, kan Experience Manager ook het workflowmodel van de klant starten om het middel na de verwerking uit te voeren, bijvoorbeeld om enkele aangepaste stappen uit te voeren die specifiek zijn voor de omgeving van de klant, zoals het ophalen van informatie van de bedrijfssystemen van de klant om het element aan de eigenschappen van het bedrijfsmiddel toe te voegen.
 
-De opname en de verwerkingsstroom tonen een paar zeer belangrijke concepten die door de architectuur van de activa microservices voor de Manager van de Ervaring worden gebruikt:
+De opname- en verwerkingsstroom zijn de belangrijkste concepten van de architectuur voor assetmicroservices voor Experience Manager.
 
-* **Directe binaire toegang** - de activa worden vervoerd (en geupload) aan de Binaire Opslag van de Wolk zodra gevormd voor de milieu&#39;s van de Manager van de Ervaring, en dan AEM, activa microservices, en tenslotte krijgen de cliënten directe toegang tot hen om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
-* **Extern verwerken** - de verwerking van bedrijfsmiddelen vindt plaats buiten de AEM-omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van belangrijke functies voor beheer van digitale bedrijfsmiddelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
+* **Directe binaire toegang**: Elementen worden naar de Cloud Binary Store getransporteerd (en geüpload) als ze eenmaal zijn geconfigureerd voor Experience Manager-omgevingen. Daarna krijgen AEM, asset microservices en ten slotte krijgen klanten directe toegang tot deze services om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
+* **Externe verwerking**: De verwerking van middelen vindt plaats buiten de AEM-omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van belangrijke functies voor het beheer van digitale bedrijfsmiddelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
 
 ## Middelen uploaden met directe binaire toegang {#asset-upload-with-direct-binary-access}
 
-De cliënten van de manager van de ervaring, die een deel van product aanbieden, allen steun uploaden met directe binaire toegang door gebrek. Hiertoe behoren het uploaden via de webinterface, Adobe Asset Link en de AEM-bureaubladtoepassing.
+De cliënten van de Manager van de ervaring, die een deel van product aanbieden, allen steun uploaden met directe binaire toegang door gebrek. Hiertoe behoren het uploaden via de webinterface, Adobe Asset Link en de AEM-bureaubladtoepassing.
 
-U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met AEM HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
+U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met AEM HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
 
-* [Bronuploadbibliotheek openen](https://github.com/adobe/aem-upload)
-* [Opdrachtregelgereedschap van bron openen](https://github.com/adobe/aio-cli-plugin-aem)
+* [Uploadbibliotheek met open bron](https://github.com/adobe/aem-upload)
+* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
 
-Zie Elementen [uploaden](add-assets.md)voor meer informatie.
+Zie [Elementen](add-assets.md)uploaden voor meer informatie.
 
 ## Aangepaste elementen nabewerken toevoegen {#add-custom-asset-post-processing}
 
