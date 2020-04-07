@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -38,9 +38,6 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
 
 1. De gebruiker klikt op de knop **Omgeving toevoegen** om een omgeving toe te voegen.
-
-   >[!NOTE]
-   >Deze knop kan ook worden geopend vanaf de pagina Milieu&#39;s of vanaf de kaart voor omgevingen. Als gebruiker zult u deze optie slechts zien, als u vereiste toestemming hebt. Neem contact op met uw vertegenwoordiger van Adobe als u vragen hebt.
 
    ![](assets/add-environment.png)
 
