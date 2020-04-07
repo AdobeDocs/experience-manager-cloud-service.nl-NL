@@ -19,10 +19,10 @@ Hoewel we blij zijn met bijdragen om de AEM-documentatie te verbeteren, vragen w
 
 ## Contribute
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe wil het zo gemakkelijk mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe wil het zo gemakkelijk mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
 =======
 =======
->>>>>>>>>>bovenliggende element van f6e5291... De tak van de fusie &quot;het opvoeren&quot;van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in stagingHoe u bijdraagt hangt van wie af u bent en het soort veranderingen u zou willen bijdragen:
+>>>>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... De tak van de fusie &quot;het opvoeren&quot;van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in stagingHoe u bijdraagt hangt van wie af u bent en het soort veranderingen u zou willen bijdragen:
 
 
 
@@ -55,15 +55,15 @@ Met problemen kunt u uw idee eenvoudig beschrijven voor verbetering in de docume
 
 ### Een volledige aanvraag maken {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIf u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u overwegen een pull-verzoek te maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de koppeling Deze pagina **** bewerken boven aan het navigatievenster rechts op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIf u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u overwegen een pull-verzoek in te dienen. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de koppeling Deze pagina **** bewerken boven aan het navigatievenster rechts op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
 =======
-=======
->>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+>=======>
+>>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
 
 
 
-
+>> 
 
 ### Belangrijke wijzigingen van Adobe-medewerkers
 >>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
@@ -85,12 +85,12 @@ Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Bijdragen van Adobe-werknemers
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIAls u Adobe-medewerker bent en een bijdrage hebt, gebruikt u de `AdobeDocs` org in de bedrijfskit.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIAls u een Adobe-medewerker bent en een bijdrage hebt, gebruikt u de `AdobeDocs` org in de bedrijfskit.
 
 Uiteraard zijn we blij met elke bijdrage en zullen we uw bijdrage beoordelen als deze wordt geleverd in de openbare opslagplaats. Het is echter gemakkelijker om aanvragen van Adobe-werknemers te verwerken en ze kunnen sneller worden goedgekeurd in het bedrijfsverslag. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
 =======
 =======
->>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+>>>>>>>bovenliggende element van f6e5291... Voeg de vertakking &#39;staging&#39; van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samen tot staging=====parent van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
 
 
