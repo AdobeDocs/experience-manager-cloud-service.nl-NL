@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -19,18 +19,25 @@ Hoewel we blij zijn met bijdragen om de AEM-documentatie te verbeteren, vragen w
 
 ## Contribute
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe wil het zo gemakkelijk mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe wil het zo gemakkelijk mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
 =======
-Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
-
-### Een probleem maken
->>>>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+=======
+>>>>>>>>>>bovenliggende element van f6e5291... De tak van de fusie &quot;het opvoeren&quot;van https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in stagingHoe u bijdraagt hangt van wie af u bent en het soort veranderingen u zou willen bijdragen:
 
 
 
 
 
 > 
+
+### Een probleem maken
+>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+
+
+
+
+
+
 
 * [Een uitgave maken](#create-an-issue)
 * [Een pull-verzoek maken](#create-a-pull-request)
@@ -48,8 +55,16 @@ Met problemen kunt u uw idee eenvoudig beschrijven voor verbetering in de docume
 
 ### Een volledige aanvraag maken {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIals u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u overwegen een pull-verzoek te maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de koppeling Deze pagina **** bewerken boven aan het navigatievenster rechts op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIf u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u overwegen een pull-verzoek te maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de koppeling Deze pagina **** bewerken boven aan het navigatievenster rechts op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
 =======
+=======
+>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+
+
+
+
+
+
 ### Belangrijke wijzigingen van Adobe-medewerkers
 >>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
@@ -70,10 +85,18 @@ Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Bijdragen van Adobe-werknemers
 
-Als u een Adobe-medewerker bent en een bijdrage hebt, gebruikt u de `AdobeDocs` org in de bedrijfskit.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIAls u Adobe-medewerker bent en een bijdrage hebt, gebruikt u de `AdobeDocs` org in de bedrijfskit.
 
 Uiteraard zijn we blij met elke bijdrage en zullen we uw bijdrage beoordelen als deze wordt geleverd in de openbare opslagplaats. Het is echter gemakkelijker om aanvragen van Adobe-werknemers te verwerken en ze kunnen sneller worden goedgekeurd in het bedrijfsverslag. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
 =======
+=======
+>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+
+
+
+
+
+
 ## Gereedschappen en Setup
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
@@ -88,13 +111,13 @@ Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. 
 * [Afdrukbare opmaakmodel](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Labels
->>>>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
+>>>>>>>bovenliggende element van f6e5291... &quot;Staging&quot; van vertakking https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en samenvoegen in staging
 
 
 
 
 
-> 
+
 
 ## Aanvullende informatie
 
