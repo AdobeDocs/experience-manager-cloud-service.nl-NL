@@ -3,7 +3,7 @@ title: Middelen, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer middelen, omslagen, en inzamelingen aan het Portaal van het Merk.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,8 +21,9 @@ Als u volgende wijzigingen aanbrengt in het oorspronkelijke element, de oorspron
 * [Verzamelingen publiceren naar Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
 >
+>Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
+
 
 ## Middelen publiceren naar Brand Portal {#publish-assets-to-bp}
 
