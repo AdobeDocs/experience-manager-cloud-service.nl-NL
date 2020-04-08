@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
@@ -32,7 +32,7 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
    * In het dialoogvenster voor het opwerken van bedrijfsmiddelen kunt u een specifiek verwerkingsprofiel selecteren en besluiten deze opnieuw in submappen te verwerken.
    * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de elementen expliciet worden gepubliceerd naar Experience Manager zonder dat ze naar DMS7 worden gepubliceerd voor levering in het publieke domein.
 
-* De volgende punten werden behandeld:
+* De volgende kwesties worden behandeld:
    * Oplossingen voor problemen met de verwerking van bedrijfsmiddelen.
    * Oplossingen in [!DNL Dynamic Media] configuratie en het publiceren activa aan de [!DNL Dynamic Media] leveringsdienst.
 
