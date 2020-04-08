@@ -2,7 +2,7 @@
 title: Voeg uw digitale middelen toe aan Adobe Experience Manager
 description: Voeg uw digitale middelen toe aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Hoewel u elk binair bestand kunt uploaden en beheren in Experience Manager, bied
 
 Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [Aanvullende verwerking](#additional-processing) hieronder voor meer informatie.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager als Cloud Service gebruikt een nieuwe manier om elementen te uploaden: directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals de AEM-gebruikersinterface, Adobe Asset Link, de AEM-bureaubladtoepassing en dus transparant voor de eindgebruikers.
 >
@@ -75,7 +75,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 
 Daarnaast wordt in de gebruikersinterface Middelen het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Voor het uploaden van geneste maphiërarchieën naar AEM raadpleegt u het [bulkuploaden van elementen](#bulk-upload).
 
@@ -130,7 +130,7 @@ Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een gen
 * Gebruik een aangepast uploadscript of een aangepast gereedschap dat gebruik maakt van API&#39;s voor het uploaden van [elementen](developer-reference-material-apis.md#asset-upload-technical). Een dergelijk aangepast gereedschap kan indien nodig extra elementen verwerken (bijvoorbeeld metagegevens vertalen of de naam van bestanden wijzigen).
 * Gebruik de bureaubladtoepassing [van](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager om geneste maphiërarchieën te uploaden.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan de Manager van de Ervaring vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor richtlijnen voor de aanpak van contentmigratie.
 
@@ -157,7 +157,7 @@ Als Dynamische media ook in uw omgeving is ingeschakeld:
 * [Met afbeeldingsprofielen](dynamic-media/image-profiles.md) kunt u specifieke uitsnijdingen (**[!UICONTROL slim uitsnijden]** en pixeluitsnijden) en verscherpingsconfiguratie toepassen op de geüploade elementen
 * [Met videoprofielen](dynamic-media/video-profiles.md) kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen
 
-> [!NOTE]
+>[!NOTE]
 >
 > Dynamische uitsnijdingen van media en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
 
