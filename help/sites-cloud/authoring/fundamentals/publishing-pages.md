@@ -2,7 +2,7 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 translation-type: tm+mt
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -13,9 +13,9 @@ Nadat u de inhoud hebt gemaakt en gecontroleerd in de auteursomgeving, [stelt u 
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u de pagina publiceert en publiceert, blijft deze beschikbaar in de ontwerpomgeving voor verdere wijzigingen totdat u de pagina verwijdert.
 
-U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of verwijderen.
+U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of de publicatie ervan ongedaan maken.
 
-## Terminologie {#terminology}
+## Terminologie {#terminology}
 
 Tijdens het werken met AEM kunnen er verschillende termen voorkomen die betrekking hebben op publiceren.
 
@@ -33,7 +33,7 @@ Tijdens het werken met AEM kunnen er verschillende termen voorkomen die betrekki
 
 Afhankelijk van uw locatie kunt u publiceren:
 
-* [Vanuit de paginaeditor](#publishing-from-the-editor)
+* [Vanuit de pagina-editor](#publishing-from-the-editor)
 * [Van de plaatsenconsole](#publishing-from-the-console)
 
 >[!NOTE]
@@ -43,6 +43,7 @@ Afhankelijk van uw locatie kunt u publiceren:
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Deze workflow is mogelijk aangepast door uw ontwikkelingsteam.
 >* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -60,7 +61,7 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen heeft die moeten publiceren, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
+   * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
       * Geef aan welke elementen/tags/etc. Als u samen met de pagina wilt publiceren, gebruikt u **Publiceren** om het proces te voltooien.
       * Gebruik **Annuleren** om de handeling af te breken.
    ![Referenties publiceren met de pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -114,7 +115,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Pagina&#39;s selecteren voor publicatie](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. De wizard **Publicatie** beheren wordt gestart. In de eerste stap, **Opties**, kunt u:
+1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, **Opties**, kunt u:
 
    * Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
    * Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
@@ -130,7 +131,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Publicatiebereik beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
-   U kunt de knop Inhoud **** toevoegen gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
+   U kunt de knop **Inhoud toevoegen** gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
 
    Klik op de knop Inhoud toevoegen om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) te starten en de inhoud te selecteren.
 
@@ -182,9 +183,12 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
    De bronnen worden gegroepeerd op basis van de workflows die worden geactiveerd en elke optie heeft de volgende opties:
 
    * Definieer de titel van de workflow.
-   * Behoud het workflowpakket, mits de workflow ondersteuning biedt voor meerdere bronnen. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * Behoud het workflowpakket, mits de workflow ondersteuning biedt voor meerdere bronnen.
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * Definieer een titel van het workflowpakket als de optie om het workflowpakket te behouden is gekozen.
-   Klik op **Publiceren** of Later **** publiceren om de publicatie te voltooien.
+   Klik op **Publiceren** of **Later publiceren** om de publicatie te voltooien.
 
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
@@ -192,7 +196,7 @@ Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw 
 
 Op een [manier die vergelijkbaar is met publiceren](#publishing-pages), kunnen een of meer pagina&#39;s niet worden gepubliceerd:
 
-* [Vanuit de paginaeditor](#unpublishing-from-the-editor)
+* [Vanuit de pagina-editor](#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](#unpublishing-from-the-console)
 
 ### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
@@ -204,7 +208,7 @@ Als u een pagina bewerkt en de publicatie van die pagina ongedaan wilt maken, se
 Net zoals u de optie Publicatie beheren [gebruikt om te publiceren](#manage-publication), kunt u deze ook gebruiken om de publicatie ongedaan te maken.
 
 1. Selecteer de pagina of pagina&#39;s in de siteconsole en klik op de knop Publicatie **beheren** .
-1. De wizard **Publicatie** beheren wordt gestart. In de eerste stap, **Opties**, selecteer om **Unpublish** in plaats van de standaardoptie van **Publiceren** te schrappen.
+1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, bij **Opties**, selecteert u **Publicatie ongedaan maken** in plaats van de standaardoptie **Publiceren**.
 
    ![Publiceren ongedaan maken](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
@@ -221,7 +225,7 @@ Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerk
 Hiervoor kunt u de optie Publicatie [](#manage-publication) beheren op de siteconsole gebruiken.
 
 1. Selecteer in de siteconsole de hoofdpagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
-1. De wizard **Publicatie** beheren wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
+1. De wizard **Publicatie beheren** wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
 1. Selecteer in de stap **Bereik** de basispagina en selecteer **Onderliggende** elementen opnemen.
 
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
@@ -250,7 +254,7 @@ U kunt de publicatiestatus van een pagina bepalen:
 
    ![Status van publicatie in de kaartweergave](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   De publicatiestatus wordt weergegeven in [kaart](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)-, [kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in de siteconsole.
+   De publicatiestatus wordt weergegeven in [kaart](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)-, [kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in de Sites-console.
 
 * In de [tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
