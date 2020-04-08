@@ -1,34 +1,34 @@
 ---
-title: Opmerkingen bij vrijgave 2020.3.0
-description: Opmerkingen bij vrijgave 2020.3.0
+title: Opmerkingen bij de release 2020.4.0
+description: Opmerkingen bij de release 2020.4.0
 translation-type: tm+mt
-source-git-commit: bcbb50f467a0e3b3047e2bb872a8fe39a9f02a1a
+source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 
 ---
 
 
-# De Nota&#39;s van de versie voor AEM als Dienst van de Wolk 2020.3.0 {#release-notes}
+# Opmerkingen bij de release van AEM als Cloud Service 2020.4.0 {#release-notes}
 
-De volgende sectie schetst de algemene Nota&#39;s van de Versie voor de Manager van de Ervaring als Dienst 2020.3.0 van de Wolk.
+In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.4.0.
 
-## Cloud Manager {#cloud-manager}
+## Assets {#assets}
 
-De datum van de Versie van de Manager van de Wolk 2020.3.0 is Maart 05, 2020.
+Volg deze sectie om te weten te komen wat nieuw is en de updates voor Experience Manager Assets en Dynamic Media in AEM als Cloud Service Release 2020.4.0.
 
-Volg deze sectie om over te leren wat nieuw is en de updates voor Versie van de Manager van de Wolk 2020.3.0.
+### Nieuwe functies {#assets-what-is-new}
 
-### Nieuw {#what-is-new}
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) is beschikbaar voor AEM als Cloud Service Assets en ondersteunt toepassingen voor het distribueren van bedrijfsmiddelen. Merk Portal helpt organisaties om aan hun marketingbehoeften te voldoen door goedgekeurde merk- en productmiddelen veilig te distribueren aan externe agentschappen, partners, interne teams en wederverkopers voor downloaden.
+   * Poortconfiguratie van merk wordt uitgevoerd via Adobe I/O-console
+   * Asset sourcing in Brand Portal wordt nog niet ondersteund met AEM als Cloud Service
+* De nieuwe versie van [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 2.0 wordt ondersteund met AEM als Cloud Service. Adobe Asset Link stroomlijnt de samenwerking tussen creatieve en marketingmedewerkers in het proces voor het maken van inhoud door AEM-middelen aan te sluiten op Creative Cloud-bureaubladapps voor Photoshop, Illustrator en InDesign via het deelvenster Asset Link in de app.
+   * AEM als Cloud Service is vooraf geconfigureerd voor Adobe Asset Link, wat resulteert in een [vereenvoudigde configuratie](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+   * Asset Link biedt nu ondersteuning voor een [AEM-omgevingsswitch](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), zodat creatieve gebruikers gemakkelijker verbinding kunnen maken met verschillende AEM-omgevingen (bijvoorbeeld in het geval van ontwerpers van agentschappen die met AEM Assets werken)
+* Auto-start voor [naverwerkingswerkstromen](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) kan worden geconfigureerd in de gebruikersinterface voor mapeigenschappen voor specifieke maphiërarchieën.
+   * De gebruikersinterface voor mapeigenschappen is vereenvoudigd, met het nieuwe tabblad voor middelenverwerking dat het metagegevensprofiel, het verwerkingsprofiel en de nieuwe workflowconfiguratie voor automatisch opstarten bevat.
+* In het dialoogvenster voor het opwerken van bedrijfsmiddelen kunt u een specifiek verwerkingsprofiel selecteren en besluiten om deze opnieuw in submappen te verwerken
+* Dynamische media: Toegevoegde Selectieve publicatieconfiguratie, wat betekent dat de activa auto voor veilige voorproef slechts worden gepubliceerd en uitdrukkelijk aan AEM kunnen worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren.
 
-* Het logboek voor de bouwstijlstap is nu beschikbaar terwijl de bouwstijlstap loopt.
-* Sommige berichten op de de detailpagina van de pijpleidingsuitvoering zijn uitgegeven voor duidelijkheid.
+### Opgeloste problemen {#assets-bug-fixes}
 
-### Bug Fixes {#bug-fixes}
-
-* De dossiers van het logboek voor de douane en product functionele teststappen konden niet door UI worden gedownload.
-* Toen de gegevensopslag voor een Cloud Service-programma niet kon worden gemaakt, konden gebruikers in de rol Deployment Manager zich soms niet herstellen van deze fout.
-* Bepaalde gebruikersactiviteiten tijdens het creëren van een zandbakprogramma konden de programmaverwezenlijking veroorzaken om te ontbreken alvorens de niet productiepijpleiding werd gecreeerd.
-* De tijdelijke instantie SonarQube die in de bouwstijlstap wordt gebruikt was nu en dan verzuimd om binnen de gevormde onderbreking te beginnen.
-* Gelijktijdige creatie van ontwikkelomgevingen in hetzelfde Cloud Service-programma kon een voorwaarde krijgen waarbij slechts één omgeving succesvol kon worden gemaakt.
-* De Cloudmeldingen voor cloudserviceprogramma&#39;s zijn niet altijd ontvangen.
-* In specifieke projecten, zouden de voorwerpen *ResourceResolver altijd moeten worden gesloten* een Volledige Uitzondering van de Wijzer veroorzaken; dit had echter geen gevolgen voor de uitvoering van pijpleidingen .
-
+* Oplossingen in de verwerking van bedrijfsmiddelen
+* Oplossingen in Dynamic Media-configuratie en publicatie van elementen naar Dynamic Media-leveringsservice
