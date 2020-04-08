@@ -1,8 +1,8 @@
 ---
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
-description: 'IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ De User Management-API die door de User Sync Tool wordt gebruikt, wordt [hier](h
 
 ## Adobe Experience as a Cloud Service configureren {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >De vereiste AEM IMS-configuratie wordt automatisch geconfigureerd wanneer de AEM-omgevingen en -instanties worden ingericht. De beheerder kan dit echter naar wens wijzigen volgens de [hier](/help/implementing/deploying/overview.md) beschreven methode.
 
