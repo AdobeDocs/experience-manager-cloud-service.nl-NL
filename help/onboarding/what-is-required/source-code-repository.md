@@ -2,7 +2,7 @@
 title: Inschrijving broncode - cloudservices
 description: Inschrijving broncode - cloudservices
 translation-type: tm+mt
-source-git-commit: 6f323f33663f83043eb8a15fe00e6ed872c3cac1
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -21,5 +21,6 @@ Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, moet u een lokale kopie van
 $ git clone {URL}
 ```
 
-> [!NOTE]
+>[!NOTE]
+>
 > Een gebruiker kan een kopie van de code uitchecken en wijzigingen aanbrengen in de lokale gegevensopslagruimte. Als de gebruiker klaar is, kan hij of zij de wijzigingen in de code doorvoeren naar de externe opslagplaats voor code in Cloud Manager.
