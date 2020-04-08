@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2020.4.0
 description: Opmerkingen bij de release 2020.4.0
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # Opmerkingen bij de release van AEM als Cloud Service 2020.4.0 {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.4.0.
+
+## Releasedatum {#release-date}
+
+De releasedatum voor Experience Manager als Cloud Service 2020.4.0 is 9 april 2020.
 
 ## Assets {#assets}
 
