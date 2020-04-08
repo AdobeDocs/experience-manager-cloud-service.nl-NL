@@ -1,21 +1,14 @@
 ---
 title: Middelen, mappen en verzamelingen naar Brand Portal publiceren
-seo-title: Middelen, mappen en verzamelingen naar Brand Portal publiceren
-description: Leer hoe u elementen, mappen en verzamelingen naar Brand Portal publiceert en de publicatie ervan ongedaan maakt.
-seo-description: Leer hoe u elementen, mappen en verzamelingen naar Brand Portal publiceert en de publicatie ervan ongedaan maakt.
-uuid: null
+description: Publiceer middelen, omslagen, en inzamelingen aan het Portaal van het Merk.
 contentOwner: Vishabh Gupta
-products: SG_EXPERIENCEMANAGER/ASSETS
-topic-tags: brand-portal
-content-type: reference
-discoiquuid: null
 translation-type: tm+mt
-source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
+source-git-commit: 4194f089f87deeb62095703614947a295235edbf
 
 ---
 
 
-# AEM-middelen publiceren naar Brand Portal {#publish-aem-assets-to-brand-portal}
+# Middelen publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
 Als beheerder van Adobe Experience Manager (AEM)-middelen kunt u elementen, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een middel of map plannen op een latere datum of tijd. Zodra gepubliceerd, kunnen de gebruikers van het Portaal van het Merk tot de activa, de omslagen, en de inzamelingen aan andere gebruikers toegang hebben en verder verspreiden.
 
@@ -28,9 +21,8 @@ Als u volgende wijzigingen aanbrengt in het oorspronkelijke element, de oorspron
 * [Verzamelingen publiceren naar Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
+>>Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
 >
->Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
-
 
 ## Middelen publiceren naar Brand Portal {#publish-assets-to-bp}
 
@@ -38,22 +30,25 @@ Hier volgen de stappen voor het publiceren van elementen van AEM Assets naar Bra
 
 1. Open vanuit de middelenconsole de bovenliggende map en selecteer alle elementen die u wilt publiceren, en klik op de werkbalk op de optie **[!UICONTROL Snel publiceren]** .
 
-
    ![publish2bp-2](assets/publish2bp.png)
 
-1. Hieronder vindt u een overzicht van de twee manieren waarop u elementen kunt publiceren:
+1. Hier volgen de twee manieren waarop u elementen kunt publiceren:
    * [Nu](#publish-to-bp-now) publiceren (elementen direct publiceren)
-   * [Later](#publish-to-bp-now) publiceren (publicatiemiddelen plannen)
+   * [Later](#publish-to-bp-later) publiceren (publicatiemiddelen plannen)
 
 ### Elementen nu publiceren {#publish-to-bp-now}
 
 Voer een van de volgende twee handelingen uit om de geselecteerde elementen te publiceren naar Brand Portal:
 
-* Selecteer **[!UICONTROL Snel publiceren]** op de werkbalk. Klik in het menu op **[!UICONTROL Publiceren naar Brand Portal]**.
+* Selecteer **[!UICONTROL Snel publiceren]** op de werkbalk. Klik vervolgens in het menu op **[!UICONTROL Publiceren naar Brand Portal]**.
 
 * Selecteer Publicatie **[!UICONTROL beheren in de werkbalk]**.
 
-   1. Van **[!UICONTROL Actie]**, uitgezocht **[!UICONTROL Publiceren aan het Portaal]** van de Merk, en van **[!UICONTROL Planning]**, uitgezocht **[!UICONTROL nu]**. Click **[!UICONTROL Next]**.
+   1. Kies in **[!UICONTROL Actie]** de optie **[!UICONTROL Publiceren naar Brand Portal]**.
+
+      Selecteer **[!UICONTROL Nu]** bij **[!UICONTROL planning]**.
+
+      Click **[!UICONTROL Next]**.
 
    2. Bevestig uw selectie in **[!UICONTROL Toepassingsgebied]** en klik op **[!UICONTROL Publiceren naar Brand Portal]**.
 
@@ -63,11 +58,15 @@ Er verschijnt een bericht waarin wordt aangegeven dat de elementen in de wachtri
 
 Publiceren van de elementen naar Brand Portal naar een latere datum of tijd plannen:
 
-1. Selecteer de elementen die u wilt plannen voor publiceren, en selecteer Publicatie **** beheren in de werkbalk bovenaan.
+1. Selecteer de elementen die u wilt plannen voor publicatie en klik op Publicatie **** beheren in de werkbalk boven in het scherm.
 
-1. Selecteer op de pagina Publicatie **** beheren de optie **[!UICONTROL Publiceren naar Brand Portal]** in **[!UICONTROL Actie]** en selecteer **[!UICONTROL Later]** in **[!UICONTROL Planning]**.
+1. Selecteer op de pagina Publicatie **** beheren de optie **[!UICONTROL Publiceren naar Brand Portal]** in **[!UICONTROL Handeling]**.
+
+   Selecteer **[!UICONTROL Later]** in **[!UICONTROL Planning]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
+
+1. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Click **[!UICONTROL Next]**.
 
 1. Selecteer een **activeringsdatum** en geef de tijd op. Click **Next**.
 
@@ -75,22 +74,16 @@ Publiceren van de elementen naar Brand Portal naar een latere datum of tijd plan
 
    ![publicatieworkflow](assets/publishworkflow.png)
 
-Meld u aan bij de interface Brand Portal om te zien hoe de gepubliceerde middelen beschikbaar zijn.
+Meld u aan bij de interface Brand Portal om de gepubliceerde elementen weer te geven (afhankelijk van uw geplande datum of tijd).
 
 ![bp_landing_page](assets/bp_landing_page.png)
 
-<!--
 
-End - Publish assets to Brand Portal
-Start- Publish folders to Brand Portal
--->
-
-
-## Mappen publiceren naar Brand Portal{#publish-folders-to-brand-portal}
+## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
 U kunt de mappen met elementen direct publiceren of verwijderen of op een latere datum of tijd plannen.
 
-### Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
+### Mappen publiceren naar Brand Portal {#publish-folders-to-bp}
 
 1. Selecteer in de middelenconsole de mappen die u wilt publiceren en klik op de werkbalk op de optie **[!UICONTROL Snel publiceren]** .
 
@@ -100,105 +93,126 @@ U kunt de mappen met elementen direct publiceren of verwijderen of op een latere
 
    Voer een van de volgende twee handelingen uit om de geselecteerde mappen naar Brand Portal te publiceren:
 
-   * Selecteer **[!UICONTROL Snel publiceren]** op de werkbalk. Selecteer in het menu de optie **[!UICONTROL Publiceren naar Brand Portal]**.
+   * Selecteer **[!UICONTROL Snel publiceren]** op de werkbalk.
+
+      Selecteer in het menu de optie **[!UICONTROL Publiceren naar Brand Portal]**.
 
    * Selecteer Publicatie **[!UICONTROL beheren in de werkbalk]**.
 
-      1. Kies in **[!UICONTROL Actie]** de optie **[!UICONTROL Publiceren naar Brand Portal]**. Selecteer **[!UICONTROL Nu]** bij **[!UICONTROL planning]**. Click **[!UICONTROL Next]**.
+      1. Kies in **[!UICONTROL Actie]** de optie **[!UICONTROL Publiceren naar Brand Portal]**.
+
+         Selecteer **[!UICONTROL Nu]** bij **[!UICONTROL planning]**.
+
+         Click **Next.**
+
       1. Bevestig uw selectie in **[!UICONTROL Toepassingsgebied]** en klik op **[!UICONTROL Publiceren naar Brand Portal]**.
    Er wordt een bericht weergegeven met de mededeling dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface van uw Brand Portal om de gepubliceerde map weer te geven.
 
 1. **Mappen later publiceren**
 
-   Publiceren van de mappen met elementen naar een latere datum of tijd plannen.
+   U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
    1. Selecteer de mappen die u voor publicatie wilt plannen, selecteer Publicatie **** beheren in de werkbalk boven in het scherm.
-   1. Van **[!UICONTROL Actie]**, uitgezocht **[!UICONTROL Publiceren aan het Portaal]** van de Merk, en van het **[!UICONTROL Plannen]** uitgezocht **[!UICONTROL Later]**.
+   1. Kies in **[!UICONTROL Actie]** de optie **[!UICONTROL Publiceren naar Brand Portal]**.
+
+      Selecteer **[!UICONTROL Later]** bij **[!UICONTROL planning]**.
+
+   1. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Click **[!UICONTROL Next]**.
 
       ![uitgeverij](assets/publishlaterbp.png)
 
-   1. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Click **[!UICONTROL Next]**.
    1. Bevestig uw selectie in **[!UICONTROL Bereik]**. Click **[!UICONTROL Next]**.
+
    1. Geef een workflowtitel op onder **[!UICONTROL Workflows]**. Klik op Later **** publiceren.
-   ![manageplannulepub](assets/manageschedulepub.png)
+
+      ![manageplannulepub](assets/manageschedulepub.png)
 
 ### Mappen van Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
 
-U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de AEM Assets-instantie. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor de gebruikers van de Brand Portal.
+U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de AEM Assets-instantie. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor gebruikers van het Brand Portal.
 
-U kunt de publicatie van middelenmappen onmiddellijk ongedaan maken vanaf Brand Portal of deze later plannen.
+U kunt de publicatie van middelenmappen onmiddellijk ongedaan maken vanaf Brand Portal of u kunt deze plannen op een latere datum en tijd.
 
 De publicatie van middelenmappen op Brand Portal ongedaan maken:
 
-1. Selecteer in de AEM Assets-console de map waarvan u de publicatie wilt ongedaan maken.
+1. Selecteer in de middelenconsole de middelenmappen die u wilt publiceren en klik op de werkbalk op de optie Publicatie **** beheren.
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. Klik op Publicatie **[!UICONTROL beheren op de werkbalk]**.
+1. **Elementmappen nu verwijderen**
 
-1. **Publiceren via Brand Portal nu ongedaan maken**
+   U kunt als volgt de publicatie van de geselecteerde elementmap op het Brand Portal ongedaan maken:
 
-   U kunt als volgt de publicatie van de geselecteerde map onmiddellijk ongedaan maken via Brand Portal:
+   1. Selecteer Publicatie **[!UICONTROL beheren in de werkbalk]**.
 
-   1. Selecteer Publicatie **beheren in de werkbalk**.
-   1. Kies in **Handeling** de optie **Publiceren ongedaan maken in Brand Portal** en in **Planning** de optie **Nu**. Click **Next.**
-   1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Publiceren ongedaan maken via Brand Portal**.
-   ![bevestigen-ongedaan maken](assets/confirm-unpublish.png)
+   1. Selecteer in **[!UICONTROL Handeling]** de optie **[!UICONTROL Publiceren ongedaan maken op Brand Portal]**.
 
-1. **Publiceren via Brand Portal later ongedaan maken**
+      Selecteer **[!UICONTROL Nu]** bij **[!UICONTROL planning]**.
 
-   U kunt als volgt de publicatie van een map van Brand Portal naar een latere datum en tijd plannen:
+      Click **[!UICONTROL Next]**.
 
-   1. Selecteer Publicatie **beheren in de werkbalk**.
-   1. Kies in **Actie** de optie **Publiceren ongedaan maken in Brand Portal** en **Planning** de optie **Later**.
-   1. Selecteer een **activeringsdatum** en geef de tijd op. Click **Next**.
-   1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Volgende**.
-   1. Geef een **workflowtitel** op in **Workflows**. Klik op Later **publiceren ongedaan maken.**
+   1. Bevestig uw selectie in **[!UICONTROL Toepassingsgebied]** en klik op **[!UICONTROL Publiceren ongedaan maken via Brand Portal]**.
+
+      ![bevestigen-ongedaan maken](assets/confirm-unpublish.png)
+
+1. **Elementmappen later verwijderen**
+
+   U kunt als volgt de publicatie van een elementenmap op een latere datum en tijd plannen:
+
+   1. Selecteer Publicatie **[!UICONTROL beheren in de werkbalk]**.
+
+   1. Kies in **[!UICONTROL Handeling]** de optie **[!UICONTROL Publicatie ongedaan maken in Brand Portal]**.
+
+      Selecteer **[!UICONTROL Later]** bij **[!UICONTROL planning]**.
+
+   1. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Click **[!UICONTROL Next]**.
+
+   1. Bevestig uw selectie in **[!UICONTROL Toepassingsgebied]** en klik op **[!UICONTROL Volgende]**.
+
+   1. Geef een **[!UICONTROL workflowtitel]** op in **[!UICONTROL Workflows]**. Klik op Later **** publiceren ongedaan maken.
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-
-<!--
-End - Publish folders to Brand Portal
-Start- Publish Collections to Brand Portal
-
--->
-
 ## Verzamelingen publiceren naar Brand Portal {#publish-collections-to-brand-portal}
 
-U kunt verzamelingen publiceren of de publicatie ervan ongedaan maken vanuit uw AEM Assets-instantie.
+U kunt verzamelingen publiceren of de publicatie ervan ongedaan maken vanuit de clouinstantie van AEM Assets.
 
 >[!NOTE]
 >
->Inhoudsfragmenten kunnen niet worden gepubliceerd naar de Brand Portal. Daarom is de actie **[!UICONTROL Publiceren naar Brand Portal]** niet beschikbaar als u inhoudfragment(en) selecteert in AEM Asset.
+>Inhoudsfragmenten kunnen niet worden gepubliceerd naar de Brand Portal. Daarom is de actie **[!UICONTROL Publiceren naar Brand Portal]** niet beschikbaar als u inhoudsfragment(en) selecteert in AEM Assets.
 >
 >Als verzamelingen met inhoudsfragmenten van AEM Assets naar Brand Portal worden gepubliceerd, wordt alle inhoud van de map behalve inhoudsfragmenten gerepliceerd naar de interface Brand Portal.
 
-### Verzamelingen publiceren {#publish-a-collection-to-brand-portal}
+
+### Verzamelingen publiceren {#publish-collections}
 
 Hier volgen de stappen voor het publiceren van verzamelingen van AEM Assets naar Brand Portal:
 
 1. Klik in de UI voor AEM-middelen op AEM-logo.
+
 1. Ga vanuit de **navigatiepagina** naar **[!UICONTROL Middelen]** > **[!UICONTROL Verzamelingen]**.
+
 1. Van de console van **Inzamelingen** , selecteer de inzamelingen die u aan het Portaal van het Merk wilt publiceren.
 
    ![select_collection](assets/select_collection.png)
 
 1. Klik op de werkbalk op **[!UICONTROL Publiceren naar Brand Portal]**.
+
 1. Klik in het bevestigingsvenster op **[!UICONTROL Publiceren]**.
+
 1. Sluit het bevestigingsbericht.
 
-   Meld u aan bij Brand Portal als beheerder. De gepubliceerde inzameling is beschikbaar in de console van **[!UICONTROL Inzamelingen]** .
+   Meld u aan bij Brand Portal als beheerder. De gepubliceerde inzameling is beschikbaar in de console van Inzamelingen.
 
    ![gepubliceerde verzameling](assets/published_collection.png)
 
-## Publicatie van verzamelingen ongedaan maken {#unpublish-collections}
+### Publicatie van verzamelingen ongedaan maken {#unpublish-collections}
 
 U kunt elke verzameling die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ervan uit uw AEM Assets-instantie ongedaan te maken. Nadat u de publicatie van de oorspronkelijke verzameling ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor de gebruikers van het Brand Portal.
 
-Hier volgen de stappen voor het ongedaan maken van de publicatie van verzamelingen:
+Hier volgen de stappen voor het ongedaan maken van de publicatie van een verzameling:
 
-1. Selecteer in de Collections console of your AEM Assets instance de verzameling die u wilt verwijderen.
+1. Selecteer in de **Collections** -console van uw AEM Assets-instantie de verzameling die u wilt verwijderen.
 
    ![select_collection-1](assets/select_collection-1.png)
 
@@ -208,9 +222,16 @@ Hier volgen de stappen voor het ongedaan maken van de publicatie van verzameling
 
 Zie de documentatie [van het Portaal van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Merk voor meer informatie over distributie van activa, omslagen, en inzamelingen aan het eind - gebruikers.
 
+
+
 <!--
+   Comment Type: draft
 
-End - Publish Collections to Brand Portal
+   <li> </li>
+   -->
 
--->
+<!--
+   Comment Type: draft
 
+   <li>Step text</li>
+   -->
