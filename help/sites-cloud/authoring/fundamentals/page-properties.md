@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -55,7 +55,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
+   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
    * Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
 * **Uit-tijd**
@@ -104,6 +104,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    >Bijvoorbeeld: als u een alias van `latin-lang` voor de knoop `/content/we-retail/spanish` bepaalt, dan kan deze pagina via worden betreden `/content/we-retail/latin-language`
    >
    >Zie Gelokaliseerde paginanamen onder SEO en URL Management Best Practices voor meer informatie.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Cloud Services**
 
-   * Eigenschappen definiëren voor cloudservices. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Eigenschappen definiëren voor cloudservices.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalisatie {#personalization}
 
 * **ContextHub-configuraties**
 
-   * Selecteer de Configuratie ContextHub en de Weg van Segmenten. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Selecteer de Configuratie ContextHub en de Weg van Segmenten.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Doelconfiguratie**
 
@@ -188,16 +193,24 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Machtigingen**
 
-   * Machtigingen toevoegen <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Gesloten gebruikersgroep bewerken <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Effectieve machtigingen weergeven <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * Machtigingen toevoegen
+   * Gesloten gebruikersgroep bewerken
+   * Effectieve machtigingen weergeven
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blauwdruk {#blueprint}
 
 * **Blauwdruk**
 
-   * Definieer eigenschappen voor een pagina Vervagen binnen beheer met meerdere sites. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Definieer eigenschappen voor een pagina Vervagen binnen beheer met meerdere sites.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+
 
 ### Live kopie {#live-copy}
 
@@ -252,6 +265,7 @@ Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgen
 >Bulkbewerking van eigenschappen is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen bewerken voor meer informatie.
 >
 >Er is ook de Bulk Editor, waarmee u met GQL (Google Query Language) naar inhoud op meerdere pagina&#39;s kunt zoeken en de inhoud vervolgens rechtstreeks in de bulkeditor kunt bewerken voordat u de wijzigingen op de pagina&#39;s die beginnen opslaat.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 >[!NOTE]
 >
 >De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie Uw pagina configureren voor bulkbewerking van pagina-eigenschappen.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
