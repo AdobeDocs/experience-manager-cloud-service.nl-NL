@@ -1,8 +1,8 @@
 ---
 title: Inhoud zoeken en indexeren
-description: 'Inhoud zoeken en indexeren '
+description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite
 
 ### Indexdefinities implementeren {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Er is een bekend probleem met Jackrabbit FileVult Maven Package Plugin versie **1.1.0** die u niet toestaat om `oak:index` aan modules van toe te voegen `<packageType>application</packageType>`. Gebruik versie **1.0.4** om dit probleem op te lossen.
 
@@ -118,7 +118,8 @@ Met blauwgroene implementaties is er geen downtime. Voor indexbeheer is het echt
 In de volgende tabel worden vijf indexdefinities weergegeven: index `cqPageLucene` wordt in beide versies gebruikt, terwijl index alleen in versie 2 `damAssetLucene-custom-1` wordt gebruikt.
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` AEM is nodig als Cloud Service om dit te markeren als een vervanging voor een bestaande index.
 
 | Index | Index van out-of-the-box | Gebruiken in versie 1 | Gebruiken in versie 2 |
