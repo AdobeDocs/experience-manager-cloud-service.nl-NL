@@ -1,15 +1,15 @@
 ---
-title: Toegang tot it
-seo-title: Toegang tot it
+title: Toegang tot Git
+seo-title: Toegang tot Git
 description: Op deze pagina wordt beschreven hoe u de Git-opslagplaats kunt openen en beheren.
 seo-description: Volg deze pagina voor meer informatie over het openen en beheren van uw Git-opslagplaats.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
-# Toegang tot it {#accessing-git}
+# Toegang tot Git {#accessing-git}
 
 U kunt de Git Repository openen en beheren met Self-Service Git Account Management vanuit de interface van Cloud Manager.
 
@@ -36,9 +36,10 @@ De belangrijkste aspecten voor het beheer van uw Git in Cloud Manager zijn:
 
 * **URL**: De URL van de gegevensopslagruimte
 * **Gebruikersnaam**: De gebruikersnaam
-* **Wachtwoord**: De waarde die wordt weergegeven wanneer op de knop Wachtwoord **** genereren wordt geklikt.
+* **Wachtwoord**: De waarde die wordt weergegeven wanneer op de knop **Wachtwoord genereren** wordt geklikt.
 
 
-> [!NOTE]
-> Een gebruiker kan een kopie van de code uitchecken en wijzigingen aanbrengen in de lokale gegevensopslagruimte. Als de gebruiker klaar is, kan hij of zij de wijzigingen in de code doorvoeren naar de externe opslagplaats voor code in Cloud Manager.
+>[!NOTE]
+>
+>Een gebruiker kan een kopie van de code uitchecken en wijzigingen aanbrengen in de lokale gegevensopslagruimte. Als de gebruiker klaar is, kan hij of zij de wijzigingen in de code doorvoeren naar de externe opslagplaats voor code in Cloud Manager.
 
