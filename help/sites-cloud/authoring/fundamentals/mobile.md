@@ -2,7 +2,7 @@
 title: Een pagina ontwerpen voor mobiele apparaten
 description: Wanneer het ontwerpen voor mobiel, kunt u tussen verscheidene mededingers schakelen om te zien wat de eindgebruiker ziet
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -20,6 +20,7 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 >Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. Zie Een actieve kopie maken voor verschillende kanalen.
 >
 >AEM-ontwikkelaars kunnen nieuwe apparaatgroepen maken. Zie Apparaatgroepfilters maken.
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
