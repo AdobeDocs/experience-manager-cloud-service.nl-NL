@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ De andere paren volgen de standaardconfiguratie:
 
 Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het Registreren van de Sling configuratie OSGI moeten worden gewijzigd, gevolgd door een volledige herplaatsing. Aangezien dit niet onmiddellijk is, ben voorzichtig om uitgebreide logboeken op productiemilieu&#39;s toe te laten die veel verkeer ontvangen. In de toekomst is het mogelijk dat er mechanismen zijn om het logniveau sneller te wijzigen.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Dienst van de Wolk. Zie [Distribueren naar AEM als Cloud Service](/help/implementing/deploying/overview.md)voor meer informatie over hoe u dit kunt doen.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > Door het deBUG-logniveau wereldwijd te activeren, wordt een grote hoeveelheid informatie gegenereerd die moeilijk te doorzoeken is. Het wordt geadviseerd u het slechts voor de diensten toelaat die het zuiveren vereisen. Voor meer informatie, zie [Loggers en Schrijvers voor de Individuele Diensten](logging.md#loggers-and-writers-for-individual-services).
 
