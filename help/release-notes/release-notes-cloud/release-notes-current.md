@@ -1,38 +1,45 @@
 ---
-title: Opmerkingen bij de release 2020.4.0
-description: Opmerkingen bij de release 2020.4.0
+title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
+description: Opmerkingen bij de release Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# Opmerkingen bij de release van AEM als Cloud Service 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.4.0.
+In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] als Cloud Service 2020.4.0 beschreven.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Experience Manager als Cloud Service 2020.4.0 is 9 april 2020.
+De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.4.0 is 9 april 2020.
 
-## Assets {#assets}
+## Nieuwe functies in middelen {#assets}
 
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor Experience Manager Assets en Dynamic Media in AEM als Cloud Service Release 2020.4.0.
+Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Experience Manager Assets] [!DNL Dynamic Media] en in de huidige release.
 
-### Nieuwe functies {#assets-what-is-new}
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ondersteunt de praktijkvoorbeelden van middelendistributie voor Experience Manager-middelen. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
+   * [!DNL Brand Portal] configuratie wordt voltooid door [!DNL Adobe I/O] console.
+   * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNLEExperience Manager] als Cloud Service.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) is beschikbaar voor AEM als Cloud Service Assets en ondersteunt toepassingen voor het distribueren van bedrijfsmiddelen. Merk Portal helpt organisaties om aan hun marketingbehoeften te voldoen door goedgekeurde merk- en productmiddelen veilig te distribueren aan externe agentschappen, partners, interne teams en wederverkopers voor downloaden.
-   * Poortconfiguratie van merk wordt uitgevoerd via Adobe I/O-console
-   * Asset sourcing in Brand Portal wordt nog niet ondersteund met AEM als Cloud Service
-* De nieuwe versie van [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 2.0 wordt ondersteund met AEM als Cloud Service. Adobe Asset Link stroomlijnt de samenwerking tussen creatieve en marketingmedewerkers in het proces voor het maken van inhoud door AEM-middelen aan te sluiten op Creative Cloud-bureaubladapps voor Photoshop, Illustrator en InDesign via het deelvenster Asset Link in de app.
-   * AEM als Cloud Service is vooraf geconfigureerd voor Adobe Asset Link, wat resulteert in een [vereenvoudigde configuratie](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-   * Asset Link biedt nu ondersteuning voor een [AEM-omgevingsswitch](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), zodat creatieve gebruikers gemakkelijker verbinding kunnen maken met verschillende AEM-omgevingen (bijvoorbeeld in het geval van ontwerpers van agentschappen die met AEM Assets werken)
-* Auto-start voor [naverwerkingswerkstromen](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) kan worden geconfigureerd in de gebruikersinterface voor mapeigenschappen voor specifieke maphiërarchieën.
-   * De gebruikersinterface voor mapeigenschappen is vereenvoudigd, met het nieuwe tabblad voor middelenverwerking dat het metagegevensprofiel, het verwerkingsprofiel en de nieuwe workflowconfiguratie voor automatisch opstarten bevat.
-* In het dialoogvenster voor het opwerken van bedrijfsmiddelen kunt u een specifiek verwerkingsprofiel selecteren en besluiten om deze opnieuw in submappen te verwerken
-* Dynamische media: Toegevoegde Selectieve publicatieconfiguratie, wat betekent dat de activa auto voor veilige voorproef slechts worden gepubliceerd en uitdrukkelijk aan AEM kunnen worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 werkt met [!DNL Experience Manager] als cloudservice. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door verbinding te maken [!DNL Experience Manager Assets] met [!DNL Creative Cloud] bureaubladtoepassingen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign] via het [!DNL Asset Link] deelvenster in de app.
+   * [!DNL Experience Manager] is vooraf geconfigureerd voor [!DNL Adobe Asset Link], wat resulteert in [eenvoudige configuratie](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) en snellere implementatie voor creatieve professionals.
+   * [!DNL Asset Link] ondersteunt nu een [Experience Manager-omgevingsswitch](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) waarmee creatieve gebruikers eenvoudig verbinding kunnen maken met een andere [!DNL Experience Manager] omgeving. Een voorbeeld waar deze functionaliteit nuttig is, is voor agentontwerpers die met veelvoudige cliënten werken gebruikend verschillende [!DNL Experience Manager Assets] plaatsingen.
 
-### Opgeloste problemen {#assets-bug-fixes}
+* Gebruikers kunnen workflows [na](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwerking zo configureren dat deze automatisch worden gestart in de gebruikersinterface [!UICONTROL Eigenschappen] van map voor de specifieke maphiërarchieën.
+   * De gebruikersinterface [!UICONTROL Eigenschappen] van map is vereenvoudigd, met het nieuwe tabblad [!UICONTROL Asset Processing] met metagegevensprofiel, verwerkingsprofiel en de nieuwe workflowconfiguratie voor automatisch opstarten.
+   * In het dialoogvenster voor het opwerken van bedrijfsmiddelen kunt u een specifiek verwerkingsprofiel selecteren en besluiten deze opnieuw in submappen te verwerken.
+   * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de elementen expliciet worden gepubliceerd naar Experience Manager zonder dat ze naar DMS7 worden gepubliceerd voor levering in het publieke domein.
 
-* Oplossingen in de verwerking van bedrijfsmiddelen
-* Oplossingen in Dynamic Media-configuratie en publicatie van elementen naar Dynamic Media-leveringsservice
+* De volgende punten werden behandeld:
+   * Oplossingen voor problemen met de verwerking van bedrijfsmiddelen.
+   * Oplossingen in [!DNL Dynamic Media] configuratie en het publiceren activa aan de [!DNL Dynamic Media] leveringsdienst.
+
+>[!MORELIKETHIS]
+>
+>* [Over Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Brand-portal configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Experience Manager configureren om te werken met Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Workflow maken in Experience Manager met behulp van middelen microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
