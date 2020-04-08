@@ -2,7 +2,7 @@
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -65,6 +65,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >* Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
    >* Uw exemplaar als de Vormen van het Onderzoek kan worden aangepast (aangewezen aan de plaats binnen AEM).
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -102,6 +103,6 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
    * Gebruik **x** (tegen de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
    * **Bewerk Opgeslagen zoekopdracht**, wijzig de zoekvoorwaarden en **sla** nogmaals op.
 
-Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder in het zoekvenster op Opgeslagen zoekopdracht **** bewerken te klikken.
+Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
 ![Een opgeslagen zoekopdracht wijzigen](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
