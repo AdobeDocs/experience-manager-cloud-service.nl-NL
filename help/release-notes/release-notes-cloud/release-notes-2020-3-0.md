@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2020.3.0
 description: Opmerkingen bij de release 2020.3.0
 translation-type: tm+mt
-source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
+source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
 
 ---
 
@@ -11,11 +11,14 @@ source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.3.0.
 
+
+## Releasedatum {#release-date}
+
+De releasedatum voor Experience Manager als Cloud Service 2020.3.0 is 5 maart 2020.
+
 ## Cloud Manager {#cloud-manager}
 
-Release 2020.3.0 voor Cloud Manager is 5 maart 2020.
-
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager Release 2020.3.0.
+Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.3.0.
 
 ### Nieuwe functies {#what-is-new}
 
