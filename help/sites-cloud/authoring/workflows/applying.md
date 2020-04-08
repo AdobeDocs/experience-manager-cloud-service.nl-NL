@@ -2,7 +2,7 @@
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -30,7 +30,8 @@ Workflows kunnen worden gestart vanaf:
 >* Hoe te om werkschema&#39;s op activa toe te passen DAM.
 >* [Werken met projectworkflows](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ Workflows kunnen worden gestart vanaf:
 >[!NOTE]
 >
 >AEM-beheerders kunnen workflows starten met verschillende andere methoden.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ U kunt details opgeven:
       * U kunt een titel voor het pakket opgeven om het te identificeren.
    >[!NOTE]
    >
-   >De optie Workflowpakket **** bijeenhouden is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere bronnen en er meerdere bronnen zijn geselecteerd.
+   >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -129,7 +132,7 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
 
    >[!NOTE]
    >
-   >Als u aanvullende bronnen toevoegt, kunt u **Terug** gebruiken om de instelling voor het werkstroompakket **** Behouden aan te passen in de stap **Eigenschappen** .
+   >Als u aanvullende resources toevoegt, kunt u **Terug** gebruiken om de instelling voor **Workflowpakket behouden** aan te passen in de stap **Eigenschappen**.
 
 1. Gebruik **Maken** om de wizard te sluiten en de instantie van de workflow te maken. Een bericht wordt getoond in de console van Plaatsen.
 
