@@ -3,7 +3,7 @@ title: Middelen, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer middelen, omslagen, en inzamelingen aan het Portaal van het Merk.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ Hier volgen de stappen voor het ongedaan maken van de publicatie van een verzame
 
 1. Selecteer in de **Collections** -console van uw AEM Assets-instantie de verzameling die u wilt verwijderen.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. Klik op het pictogram **[!UICONTROL Verwijderen uit Brand Portal]** op de werkbalk.
 1. Klik in het dialoogvenster op **[!UICONTROL Publiceren]** ongedaan maken.
