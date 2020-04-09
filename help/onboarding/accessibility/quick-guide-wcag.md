@@ -2,7 +2,7 @@
 title: Een snelle gids voor WCAG 2.1
 seo-title: Een snelle gids voor WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -89,7 +89,7 @@ Deze lijst is niet bedoeld als limitatief, maar bevat een inleiding op de beschi
 
 [Nieuw in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) verstrekt waardevolle informatie over de delta tussen WCAG en 2.0 en WCAG 2.1.
 
-[WCAG 2.0 en 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) verduidelijken de status van hun relatie.
+In de paragrafen [WCAG 2.0 en 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wordt de status van hun relatie nader toegelicht.
 
 ### Technieken voor WCAG 2.1 {#techniques-for-wcag}
 
