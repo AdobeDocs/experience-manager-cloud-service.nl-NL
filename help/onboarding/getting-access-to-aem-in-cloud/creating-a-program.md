@@ -2,7 +2,7 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
@@ -25,15 +25,14 @@ Afhankelijk van het doel van de gebruiker bij het creëren van het programma bin
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->Als er al een programma bestaat, ziet u **Add Program** rechtsboven op de bestemmingspagina, zoals in de onderstaande afbeelding wordt getoond.
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
 ## Een demo-programma maken {#create-demo-program}
 
 >[!NOTE]
->
-Een demo-programma is vergelijkbaar met een sandboxprogramma in de gebruikersinterface van Cloud Manager.
+>Een demo-programma is vergelijkbaar met een sandboxprogramma in de gebruikersinterface van Cloud Manager.
 
 Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
@@ -61,6 +60,12 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 1. Zodra de niet productiepijplijn die aan ontwikkeling opstelt volledig is, leidt de tovenaar de gebruiker aan of toegang tot AEM (op ontwikkeling) of code aan ontwikkelomgeving op te stellen:
 
    ![](assets/create-program-setup-deploy.png)
+
+   >[!NOTE]
+   >U kunt een programma ook bewerken, overschakelen of toevoegen via de overzichtspagina van Cloud Manager, zoals hieronder wordt getoond:
+
+   ![](assets/create-program-a1.png)
+
 
 
 ## Een regulier programma maken {#create-regular-program}
@@ -97,7 +102,7 @@ Voer de volgende stappen uit om een regulier programma te maken:
 
    >[!NOTE]
    >
-   >Een normaal programma beschikt niet over de functie **Automatisch instellen** .
+   >A regular program does not have **Auto-setup** feature.
 
 
 
