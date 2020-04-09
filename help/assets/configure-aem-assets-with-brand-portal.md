@@ -3,7 +3,7 @@ title: AEM Assets-cloudservice configureren met Brand Portal
 description: AEM Assets cloud service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -163,7 +163,7 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
 
 1. Aanmelden bij de cloud-instantie van AEM Assets
 
-1. Navigeer vanuit het deelvenster **Gereedschappen** ![Gereedschappen](assets/tools.png) naar **[!UICONTROL Cloudservices > AEM Brand Portal]**.
+1. Navigeer vanuit het deelvenster **Gereedschappen** ![Gereedschappen](assets/tools.png) naar **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
    De pagina van de Configuraties van het Merk Portaal opent.
 
@@ -217,7 +217,7 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >Vermijd het onbruikbaar maken van de distributieagent, aangezien het de distributie van de activa (lopende-in-rij) kan veroorzaken om te ontbreken.
 
 
-Zodra het Merk Portal is geconfigureerd met uw AEM Assets Cloud Instance, kunt u:
+De AEM Assets cloud-instantie is geconfigureerd met het Brand Portal. U kunt nu:
 
 * [Elementen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Bij het publiceren van het element worden de volgende aanvraag- en responslogboe
 In het bovenstaande voorbeeld wordt een aanvullende aanvraag en reactie geactiveerd. Het systeem kan de bovenliggende map (ook wel Pad toevoegen genoemd) niet vinden in Brand Portal, omdat het element voor het eerst is gepubliceerd. Daarom wordt een extra aanvraag geactiveerd om een bovenliggende map met dezelfde naam te maken in Brand Portal waar het element wordt gepubliceerd.
 
 >[!NOTE]
->>Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal (in het bovenstaande voorbeeld) of als de bovenliggende map is gewijzigd in AEM Assets.
 >
+>Er wordt een aanvullend verzoek gegenereerd als de bovenliggende map niet bestaat in Brand Portal (in het bovenstaande voorbeeld) of als de bovenliggende map is gewijzigd in AEM Assets.
+
 
 ## Extra informatie {#additional-information}
 
