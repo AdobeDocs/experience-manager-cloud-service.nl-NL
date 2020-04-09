@@ -3,7 +3,7 @@ title: Middelen, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer middelen, omslagen, en inzamelingen aan het Portaal van het Merk.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ Hier volgen de stappen voor het ongedaan maken van de publicatie van een verzame
 1. Klik in het dialoogvenster op **[!UICONTROL Publiceren]** ongedaan maken.
 1. Sluit het bevestigingsbericht. De verzameling wordt verwijderd uit de interface Brand Portal.
 
-Zie de documentatie [van het Portaal van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Merk voor meer informatie over distributie van activa, omslagen, en inzamelingen aan het eind - gebruikers.
+Naast het bovenstaande kunt u ook schema&#39;s voor metagegevens, voorinstellingen voor afbeeldingen, zoekfacetten en tags van AEM-middelen naar Brand Portal publiceren.
 
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Raadpleeg de documentatie [van het](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal voor meer informatie.
 
 
 <!--
