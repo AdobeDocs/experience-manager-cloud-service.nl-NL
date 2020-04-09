@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service SDK
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 </repository>
 ```
 
-## Een lokaal project vernieuwen met een nieuwe SDK-versie {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Een lokaal project vernieuwen met een nieuwe SDK-versie {#refreshing-a-local-project-with-a-new-skd-version}
 
 Wanneer wordt het geadviseerd om het lokale project met een nieuwe SDK te verfrissen?
 
@@ -92,5 +92,5 @@ Als u inhoudspakketten met de gecodeerde waarden wilt hergebruiken, moet u de vo
 
 * Wanneer u eerst de lokale quickstart.jar start, moet u de onderstaande parameter toevoegen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Het wordt aanbevolen, maar optioneel, om deze altijd toe te voegen.
 * De allereerste keer dat u een instantie opstart, maakt u een pakket dat een filter voor de hoofdmap &quot;`/etc/key`&quot; bevat. Dit zal het geheim houden om over alle milieu&#39;s opnieuw te worden gebruikt waarvoor u hen zou willen hergebruiken
-* Exporteer alle gemuteerde inhoud die geheimen bevat, of kijk de gecodeerde waarden op door deze toe te voegen `/crx/de` aan het pakket dat opnieuw wordt gebruikt in installaties
+* Exporteer alle gemuteerde inhoud die geheimen bevat of kijk naar de gecodeerde waarden door deze toe te voegen `/crx/de` aan het pakket dat opnieuw wordt gebruikt in alle installaties
 * Wanneer u een nieuw exemplaar (of om met een nieuwe versie te vervangen of als veelvoudige dev milieu&#39;s de geloofsbrieven voor het testen zouden moeten delen) uitdraait, installeer het pakket dat in stap 2 en 3 wordt geproduceerd om de inhoud te kunnen opnieuw gebruiken zonder de behoefte om manueel aan te passen. Dit komt omdat de cryptokey nu synchroon is.
