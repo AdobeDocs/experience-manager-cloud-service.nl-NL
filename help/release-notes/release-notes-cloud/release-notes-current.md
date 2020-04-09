@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 >* [Workflow maken in Experience Manager met behulp van middelen microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Updates van Cloud Manager {#cloud-manager}
-
 ## Nieuwe functies in Cloud Manager {#whats-new-cloud-manager}
 
 * De uitgever URLs zijn nu beschikbaar bij de pagina van het Milieu in de UI van de Manager van de Wolk.
@@ -57,7 +55,7 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 * Mislukte omgevingen kunnen nu worden verwijderd via de gebruikersinterface en de API.
 * Het proces dat wordt gebruikt om de wachtwoorden van de it te produceren is veerkrachtiger gemaakt aan kwesties in de onderliggende de dienstlaag.
 
-## Opgeloste problemen {#bug-fixes-cloud-manager}
+### Opgeloste problemen {#bug-fixes-cloud-manager}
 
 * De verbindingen aan het werkgebiedmilieu op de de detailpagina van de pijpleidingsuitvoering navigeerden niet constant aan de correcte plaats.
 * Individuele stappen in het proces voor het maken van een omgeving worden eerder dan nodig uitgesteld, waardoor het proces mislukt.
