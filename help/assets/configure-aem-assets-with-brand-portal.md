@@ -3,7 +3,7 @@ title: AEM Assets-cloudservice configureren met Brand Portal
 description: AEM Assets cloud service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    Een distributieagent bevat twee rijen:
    * A processing queue for distribution of assets to Brand Portal.
    * Een foutwachtrij voor de elementen waarbij de distributie is mislukt.
-   U kunt individuele rijen of de algemene configuratie testen.
-
    ![](assets/test-bpconfig3.png)
 
 1. Klik op Verbinding **[!UICONTROL testen om de verbinding tussen AEM-middelen en Brand Portal te controleren]**.
@@ -218,11 +216,20 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >
    >Vermijd het onbruikbaar maken van de distributieagent, aangezien het de distributie van de activa (lopende-in-rij) kan veroorzaken om te ontbreken.
 
-Brand Portal is geconfigureerd met uw AEM Assets cloud-instantie. U kunt nu:
+
+Zodra het Merk Portal is geconfigureerd met uw AEM Assets Cloud Instance, kunt u:
 
 * [Elementen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+Naast het bovenstaande kunt u ook schema&#39;s voor metagegevens, voorinstellingen voor afbeeldingen, zoekfacetten en tags van AEM-middelen naar Brand Portal publiceren.
+
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Raadpleeg de documentatie [van het](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal voor meer informatie.
 
 
 ## Distributielogboeken {#distribution-logs}
@@ -233,7 +240,7 @@ We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd 
 
 1. Volg de stappen (Stap 1 tot 4) zoals aangetoond in de Verbinding **[!UICONTROL van de]** Test en navigeer aan de pagina van de distributiegagent.
 
-1. Selecteer de **[!UICONTROL rij-bpdistributionagent0]** van de distributierij en klik **[!UICONTROL Logs]** om de distributielogboeken te bekijken.
+1. Klik op **[!UICONTROL Logboeken]** om de distributielogboeken weer te geven. Hier ziet u de logboeken voor verwerking en fouten.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,9 @@ Bij het publiceren van het element worden de volgende aanvraag- en responslogboe
 
 In het bovenstaande voorbeeld wordt een aanvullende aanvraag en reactie geactiveerd. Het systeem kan de bovenliggende map (ook wel Pad toevoegen genoemd) niet vinden in Brand Portal, omdat het element voor het eerst is gepubliceerd. Daarom wordt een extra aanvraag geactiveerd om een bovenliggende map met dezelfde naam te maken in Brand Portal waar het element wordt gepubliceerd.
 
-Als de bovenliggende map met dezelfde naam bestaat (ook bekend als Pad toevoegen) in Brand Portal, wordt geen extra verzoek geactiveerd.
-
 >[!NOTE]
+>>Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal (in het bovenstaande voorbeeld) of als de bovenliggende map is gewijzigd in AEM Assets.
 >
->Om de foutenlogboeken te bekijken, selecteer de **[!UICONTROL fout-rij-bpdistributionagent0]** van de distributierij en klik **[!UICONTROL Logs]**.
-
 
 ## Extra informatie {#additional-information}
 
@@ -274,6 +278,7 @@ Ga naar `/system/console/slingmetrics` voor statistieken met betrekking tot de v
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
