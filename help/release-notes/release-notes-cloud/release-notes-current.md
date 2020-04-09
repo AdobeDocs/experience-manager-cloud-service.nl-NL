@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
+source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 ---
 
@@ -21,7 +21,7 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ondersteunt de praktijkvoorbeelden van middelendistributie voor Experience Manager-middelen. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
    * [!DNL Brand Portal] configuratie wordt voltooid door [!DNL Adobe I/O] console.
-   * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNLEExperience Manager] als Cloud Service.
+   * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNL Experience Manager] de Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 werkt met [!DNL Experience Manager] als cloudservice. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door verbinding te maken [!DNL Experience Manager Assets] met [!DNL Creative Cloud] bureaubladtoepassingen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign] via het [!DNL Asset Link] deelvenster in de app.
    * [!DNL Experience Manager] is vooraf geconfigureerd voor [!DNL Adobe Asset Link], wat resulteert in [eenvoudige configuratie](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) en snellere implementatie voor creatieve professionals.
