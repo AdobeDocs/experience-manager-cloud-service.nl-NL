@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
 ---
 
@@ -23,25 +23,22 @@ In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manage
 >
 >Aanmelden bij AEM als cloudservice is gebaseerd op verkoopprincipes. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
 
-## Globale logboekregistratie {#global-logging}
+<!-- ## Global Logging {#global-logging}
 
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) wordt gebruikt om het hoofdlogger te configureren. Dit definieert de algemene instellingen voor het aanmelden bij AEM als cloudservice:
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
-* het registratieniveau
-* de locatie van het centrale logbestand
-* het aantal versies dat moet worden bewaard
-* versierotatie; of maximumgrootte of een tijdinterval
-* de indeling die moet worden gebruikt bij het schrijven van de logberichten
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
 
 ## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
 Naast de globale registrerenmontages, staat AEM als Dienst van de Wolk u toe om specifieke montages voor een individuele dienst te vormen:
 
 * het specifieke registratieniveau
-* de locatie van het individuele logbestand
-* het aantal versies dat moet worden bewaard
-* versierotatie; of maximumgrootte of tijdinterval
-* de indeling die moet worden gebruikt bij het schrijven van de logberichten
 * de registreermachine (de dienst OSGi die de logboekberichten levert)
 
 Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
@@ -158,14 +155,13 @@ U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
    1. Geef het logbestand op.
    1. Geef de logboekregistratie op.
-   1. Configureer de overige parameters naar wens.
 
-1. Maak een nieuw exemplaar van de Configuratie [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
+<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. Geef het logbestand op. Dit moet overeenkomen met het logbestand dat is opgegeven voor de gebruiker.
-   1. Configureer de overige parameters naar wens.
+    1. Specify the Log File - this must match that specified for the Logger.
+    1. Configure the other parameters as required. -->
 
-### Een aangepast logbestand maken {#create-a-custom-log-file}
+### Logboekregistratie configureren {#configure-logging}
 
 >[!NOTE]
 >
@@ -187,130 +183,172 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >
    >Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
 
-1. Stel de volgende eigenschappen in voor dit knooppunt:
+<!-- 1. Set the following properties on this node:
 
-   * Naam: `org.apache.sling.commons.log.file`
+    * Name: `org.apache.sling.commons.log.file`
 
       Type: String
 
-      Waarde: het logbestand specificeren; bijvoorbeeld: `logs/myLogFile.log`
+      Value: specify the Log File; for example, `logs/myLogFile.log`
 
-   * Naam: `org.apache.sling.commons.log.names`
+    * Name: `org.apache.sling.commons.log.names`
 
       Type: String[] (String + Multi)
 
-      Waarde: specificeert de diensten OSGi waarvoor de Logger berichten moet registreren; bijvoorbeeld:
+      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
-   * Naam: `org.apache.sling.commons.log.level`
+        * `org.apache.sling`
+        * `org.apache.felix`
+        * `com.day`
+
+    * Name: `org.apache.sling.commons.log.level`
 
       Type: String
 
-      Waarde: het vereiste logniveau specificeren ( `debug`, `info`, `warn` of `error`); bijvoorbeeld `debug`
+      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
 
-   * Configureer de overige parameters naar wens:
+    * Configure the other parameters as required:
 
-      * Naam: `org.apache.sling.commons.log.pattern`
+        * Name: `org.apache.sling.commons.log.pattern`
 
-         Type: `String`
+          Type: `String`
 
-         Waarde: het patroon van het logbericht specificeren, indien nodig; bijvoorbeeld:
+          Value: specify the pattern of the log message as required; for example,
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
-   >`org.apache.sling.commons.log.pattern` ondersteunt maximaal zes argumenten.
+   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
 
+   >
+   >
    >{0} The timestamp of type `java.util.Date`
+   >{1} the log marker
+   >{2} the name of the current thread
+   >{3} the name of the logger
+   >{4} the log level
+   >{5} the log message
+
    >
-   >{1} the log marker{2} the name of the current thread{3} the name of the logger{4} the log level{5} the log message
-
-   >Als de logboekvraag een `Throwable` stapelspoor omvat wordt toegevoegd aan het bericht.
-
-   >[!CAUTION]
-   org.apache.sling.commons.log.names moet een waarde hebben.
-
-   >[!NOTE]
-   Logschrijfpaden zijn relatief ten opzichte van de `crx-quickstart` locatie.
-   Daarom wordt een logbestand opgegeven als:
-   `logs/thelog.log`
-
-   >schrijft naar:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   En een logbestand dat is opgegeven als:
-   `../logs/thelog.log`
-
-   >schrijft naar een map:
-   ` <*cq-installation-dir*>/logs/`
-&quot;(d.w.z. naast ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
-
-1. Deze stap is alleen nodig wanneer een nieuwe schrijver is vereist (dat wil zeggen met een andere configuratie dan de standaardschrijver).
+   >
+   >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
    >[!CAUTION]
-   Een nieuwe configuratie van de schrijver van het Registreren wordt slechts vereist wanneer het bestaande gebrek niet geschikt is.
+   >
+   >org.apache.sling.commons.log.names must have a value.
 
-   >Als geen expliciete Schrijver wordt gevormd zal het systeem automatisch een impliciete Schrijver produceren die op het gebrek wordt gebaseerd.
-
-   Onder `/apps/<*project-name*>/config`, creeer een knoop voor de nieuwe `Apache Sling Logging Writer` Configuratie:
-
-   * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (aangezien dit een schrijver is)
-
-      Net als bij Logger, `<*identifier*>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-
-   * Type: `sling:OsgiConfig`
    >[!NOTE]
-   Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
+   >
+   >Log writer paths are relative to the `crx-quickstart` location.
+   >
+   >
+   >Therefore, a log file specified as:
+   >
+   >
+   >`logs/thelog.log`
 
-   Stel de volgende eigenschappen in voor dit knooppunt:
+   >
+   >
+   >writes to:
+   >
+   >
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
+   >
+   >And a log file specified as:
+   >
+   >
+   >`../logs/thelog.log`
 
-   * Naam: `org.apache.sling.commons.log.file`
+   >
+   >
+   >writes to a directory:
+   >
+   >
+   >` <*cq-installation-dir*>/logs/`
+   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+ -->
+
+<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
+
+<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
+
+   >[!CAUTION]
+   >
+   >A new Logging Writer Configuration is only required when the existing default is not suitable.
+
+   >
+   >
+   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
+
+   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
+
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
+
+      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+
+    * Type: `sling:OsgiConfig`
+
+   >[!NOTE]
+   >
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
+
+   Set the following properties on this node:
+
+    * Name: `org.apache.sling.commons.log.file`
 
       Type: `String`
 
-      Waarde: geeft het logbestand op, zodat het overeenkomt met het bestand dat is opgegeven in het logbestand;
+      Value: specify the Log File so that it matches the file specified in the Logger;
 
-      voor dit voorbeeld, `../logs/myLogFile.log`.
+      for this example, `../logs/myLogFile.log`.
 
-   * Configureer de overige parameters naar wens:
+    * Configure the other parameters as required:
 
-      * Naam: `org.apache.sling.commons.log.file.number`
+        * Name: `org.apache.sling.commons.log.file.number`
 
-         Type: `Long`
+          Type: `Long`
 
-         Waarde: het aantal logbestanden opgeven dat u wilt behouden; bijvoorbeeld: `5`
+          Value: specify the number of log files you want kept; for example, `5`
 
-      * Naam: `org.apache.sling.commons.log.file.size`
+        * Name: `org.apache.sling.commons.log.file.size`
 
-         Type: `String`
+          Type: `String`
 
-         Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld: `'.'yyyy-MM-dd`
+          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
-   * een maximale bestandsgrootte
-   * een datum-/tijdschema
-   om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
-   * Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
-   * U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
-   De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
-   Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
-       | `&#39;.&#39;yyyy-MM&quot;|Roteren aan het begin van elke maand|
-    |—|—|
-    | `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
-       | `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
-       | `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
-       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. |
- Opmerking     
-     : Wanneer u een tijd/datum opgeeft:
-       1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
-   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
-       1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
+   >
+   >* a maximum file size
+   >* a time/date schedule
+   >
+   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
+   >
+   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
+   >
+   >The default is '.'yyyy-MM-dd (for daily log rotation).
+   >
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
+   >
+   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >      |---|---|
+   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >
+   >      Note: When specifying a time/date:
+   >      1. You should "escape" literal text within a pair of single quotes (' ');
+   >      this is to avoid certain characters being interpreted as pattern letters.
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
 
-1. Lees het nieuwe logbestand met het gekozen gereedschap.
+1. Read your new log file with your chosen tool.
 
-   Het logbestand dat in dit voorbeeld wordt gemaakt, wordt `../crx-quickstart/logs/myLogFile.log`weergegeven.
+   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 De Felix-console biedt ook informatie over de ondersteuning voor het verkooplogboek op `../system/console/slinglog`; bijvoorbeeld `https://localhost:4502/system/console/slinglog`.draf
