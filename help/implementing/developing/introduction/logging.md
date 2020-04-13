@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ AEM als Cloud Service biedt u de mogelijkheid om:
 
 * globale parameters voor de centrale houtkapdienst
 * verzoeken om registratie van gegevens; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
-* specifieke instellingen voor de afzonderlijke diensten; bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
+* specifieke instellingen voor de afzonderlijke diensten
 
 Voor lokale ontwikkeling worden logbestandvermeldingen naar lokale bestanden in de `/crx-quickstart/logs` map geschreven.
 
@@ -55,23 +55,27 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
    Definieer de service(s) die de berichten genereren.
 
-* **Logbestand (Logging Logger)**
+<!-- * **Log File (Logging Logger)**
 
-   Bepaal het fysieke dossier voor het opslaan van de logboekberichten.
+  Define the physical file for storing the log messages.
 
-   Dit wordt gebruikt om een Logging Logger met een het Registreren Schrijver te verbinden. De waarde moet aan de zelfde parameter in de Logging configuratie van de Schrijver identiek zijn om de verbinding te maken.
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **Logbestand (logboekschrijver)**
+* **Log File (Logging Writer)**
 
-   Definieer het fysieke bestand waarnaar de logberichten worden geschreven.
+  Define the physical file that the log messages will be written to.
 
-   Dit moet gelijk zijn aan dezelfde parameter in de configuratie van Logging Writer, anders wordt de overeenkomst niet gemaakt. Als er geen gelijke is dan zal een impliciete Schrijver met standaardconfiguratie (dagelijkse logboekomwenteling) worden gecreeerd.
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties. Als u echter de standaardlogconfiguraties moet aanpassen, dient u ervoor te zorgen dat u deze alleen in `dev` omgevingen uitvoert.
+
 Bepaalde Loggers en schrijvers zijn als cloudservice-installatie opgenomen in een standaard-AEM.
 
-Het eerste is een speciaal geval aangezien het zowel de `request.log` als `access.log` dossiers controleert:
+Het eerste geval is een speciaal geval aangezien het zowel de `request` als `access` logboeken controleert:
 
 * De logboekregistratie:
 
@@ -88,8 +92,6 @@ Het eerste is een speciaal geval aangezien het zowel de `request.log` als `acces
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Schrijft de berichten naar of `request.log` of `access.log`.
-
-Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties.
 
 De andere paren volgen de standaardconfiguratie:
 
@@ -114,6 +116,56 @@ De andere paren volgen de standaardconfiguratie:
    * Schrijft `Warning` berichten aan `../logs/error.log` voor de dienst `org.apache.pdfbox`.
 
 * Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie (dagelijkse logrotatie) wordt gemaakt en gebruikt.
+
+Naast de drie typen logboeken die op een AEM als instantie van de Dienst van de Wolk (`request`, `access` en `error` logboeken) worden voorgesteld is er een ander logboek voor het zuiveren van de kwesties van de Verzender die. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)voor meer informatie.
+
+Wat beproefde praktijken gaan, adviseert u zich aan de configuraties die momenteel in AEM als Cloud Service Maven archetype bestaan. Met deze opties stelt u verschillende loginstellingen en niveaus in voor bepaalde omgevingstypen:
+
+* voor `local dev` - en `dev` omgevingen stelt u het logger in op **DEBUG** -niveau op `error.log`
+* voor `stage`, plaats de registreerder aan **WARN** niveau aan `error.log`
+* Stel voor `prod`, registreerapparaat in op **ERROR** -niveau op de `error.log`
+
+Hieronder vindt u voorbeelden voor elke configuratie:
+
+* `dev` omgevingen:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` omgevingen:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` omgevingen:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## Logniveau instellen {#setting-the-log-level}
 
@@ -153,7 +205,6 @@ U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
 1. Maak een nieuwe instantie van de configuratie- [Apache Sling Logging Logger](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based)van de Fabriek.
 
-   1. Geef het logbestand op.
    1. Geef de logboekregistratie op.
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -167,7 +218,7 @@ U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 >
 >Wanneer u met Adobe Experience Manager werkt, zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren.
 
-In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ander logniveau maken. U kunt dit in de repository doen door:
+In bepaalde omstandigheden kunt u een aangepast logboek met een verschillend logboekniveau willen tot stand brengen. U kunt dit in de repository doen door:
 
 1. Als het nog niet bestaat, creeer een nieuwe configuratiemap ( `sling:Folder`) voor uw project `/apps/<*project-name*>/config`.
 1. Onder `/apps/<*project-name*>/config`, creeer een knoop voor de nieuwe Configuratie van de Logboekregistrator van Apache Sling:
