@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Adobe Experience Manager (AEM) als cloudservice.
 description: 'Opmerkingen bij de release voor Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
+source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
 
 ## Informatie over sleutelrelease {#key-articles}
 
-* [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
+* [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Nieuwe functies](what-is-new.md)
 * [Opmerkelijke wijzigingen](aem-cloud-changes.md)
 * [Bekende problemen](known-issues.md)
