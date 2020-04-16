@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -20,7 +20,7 @@ De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.4.0 is 9 ap
 Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Experience Manager Assets] [!DNL Dynamic Media] en in de huidige release.
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ondersteunt de praktijkvoorbeelden van middelendistributie voor Experience Manager-middelen. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
-   * [!DNL Brand Portal] configuratie wordt voltooid door [!DNL Adobe I/O] console.
+   * [!DNL Brand Portal] configuratie wordt voltooid door [!DNL Adobe I/O] console. Zie Brand Portal [configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNL Experience Manager] de Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 werkt met [!DNL Experience Manager] als cloudservice. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door verbinding te maken [!DNL Experience Manager Assets] met [!DNL Creative Cloud] bureaubladtoepassingen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign] via het [!DNL Asset Link] deelvenster in de app.
@@ -29,7 +29,13 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 
 * Gebruikers kunnen workflows [na](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwerking zo configureren dat deze automatisch worden gestart in de gebruikersinterface [!UICONTROL Eigenschappen] van map voor de specifieke maphiërarchieën.
    * De gebruikersinterface [!UICONTROL Eigenschappen] van map is vereenvoudigd, met het nieuwe tabblad [!UICONTROL Asset Processing] met metagegevensprofiel, verwerkingsprofiel en de nieuwe workflowconfiguratie voor automatisch opstarten.
-   * In het dialoogvenster voor het opwerken van bedrijfsmiddelen kunt u een specifiek verwerkingsprofiel selecteren en besluiten deze opnieuw in submappen te verwerken.
+
+      ![Verwerkingsprofielen kunnen eenvoudig worden toegepast op mappen en alle elementen die naar mappen zijn geüpload, worden verwerkt met deze profielen](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * Met de optie voor herverwerking van middelen kunt u een specifiek verwerkingsprofiel selecteren om door de gebruiker geselecteerde elementen in submappen opnieuw te verwerken.
+
+      ![Geselecteerde elementen opnieuw verwerken met een specifiek verwerkingsprofiel](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de elementen expliciet worden gepubliceerd naar Experience Manager zonder dat ze naar DMS7 worden gepubliceerd voor levering in het publieke domein.
 
 ### Opgeloste problemen {#assets-bug-fixes}
