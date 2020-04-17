@@ -3,7 +3,7 @@ title: AEM Assets as a Cloud Service configureren met Brand Portal
 description: AEM Assets as a Cloud Service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
+source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
 
@@ -152,9 +152,9 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 
 >[!CAUTION]
 >
->U moet slechts één configuratie IMS hebben die de gezondheidscontrole overgaat. Maak geen meerdere IMS-configuraties.
+>U moet slechts één configuratie IMS hebben. Maak geen meerdere IMS-configuraties.
 >
->Als de configuratie niet de gezondheidscontrole slaagt, is het ongeldig. U moet het schrappen en een nieuwe, geldige configuratie creëren.
+>Zorg ervoor dat de configuratie IMS de health check overneemt. Als de configuratie niet de gezondheidscontrole slaagt, is het ongeldig. U moet het schrappen en een nieuwe, geldige configuratie creëren.
 
 
 
