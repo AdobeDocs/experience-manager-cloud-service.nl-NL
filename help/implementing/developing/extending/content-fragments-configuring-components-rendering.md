@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten die componenten voor rendering configureren
 description: Inhoudsfragmenten die componenten voor rendering configureren
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ Deze informatie is vereist wanneer:
 * U moet uw eigen op fragmenten gebaseerde component voor inhoudsfragmenten implementeren,
 * We moeten gebruik maken van de geavanceerde services.
 
-Het wordt echter aanbevolen de Core Components (Basiscomponenten) te gebruiken.
+U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
