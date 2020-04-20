@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ Hoewel [AEM Core Components](https://docs.adobe.com/content/help/en/experience-m
 Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
 >[!NOTE]
+>
 >Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen.
 
 Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
@@ -386,7 +387,7 @@ Zie hier voor gedetailleerde API-referenties:
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#available-features)
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Zie voor meer informatie:
 
