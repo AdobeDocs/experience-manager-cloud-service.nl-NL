@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -66,7 +66,7 @@ CFM (Content Fragment Management) maakt als volgt deel uit van AEM Assets:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enz.).
 
 Inhoudsfragmenten worden als volgt beschouwd als een functie Sites:
 
@@ -292,11 +292,9 @@ Er zij op gewezen dat:
 
 * Taken die extra inspanning zouden kunnen vereisen:
 
-   * Door nieuwe elementen te maken/verwijderen wordt de gegevensstructuur van eenvoudige fragmenten (op basis van de sjabloon **Eenvoudig fragment** ) niet bijgewerkt.
-
    * Maak nieuwe variaties van `ContentFragment` om de gegevensstructuur bij te werken.
 
-   * Als u bestaande variaties verwijdert, wordt de gegevensstructuur niet bijgewerkt.
+   * Als u bestaande variaties via een element verwijdert, worden de algemene gegevensstructuren die aan de variatie zijn toegewezen, niet bijgewerkt `ContentElement.removeVariation()`met het gebruik van dat element. Om ervoor te zorgen dat deze gegevensstructuren gesynchroniseerd blijven, gebruikt u `ContentFragment.removeVariation()` in plaats daarvan, waardoor een variatie wereldwijd wordt verwijderd.
 
 ## De API voor contentfragmentbeheer - Client-kant {#the-content-fragment-management-api-client-side}
 
@@ -310,88 +308,22 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kern van elementen.
+   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kernelementen.
 
 ## Sessies bewerken {#edit-sessions}
 
-Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
+>[!CAUTION]
+>
+>Houd rekening met deze achtergrondinformatie. U wordt geacht hier niets te veranderen (aangezien het als *privé gebied* in de bewaarplaats wordt gemerkt), maar het zou in sommige gevallen kunnen helpen om te begrijpen hoe de dingen onder de kap werken.
 
-### Vereisten {#requirements}
+Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), is atomisch. Aangezien dergelijke atomische multi-view bewerkingsmogelijkheden geen typisch concept AEM zijn, gebruiken de inhoudsfragmenten wat een *het uitgeven zitting* wordt genoemd.
 
-Vereisten voor het besturen van een bewerkingssessie zijn:
+Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in de editor opent. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
 
-* Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), moet atomisch zijn.
+Technisch gezien worden alle bewerkingen uitgevoerd op *live* -inhoud, net als bij alle andere AEM-bewerkingen. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker op **Opslaan** klikt, gebeurt er niets specifieks, aangezien alle bewerkingen zijn uitgevoerd op *live* -inhoud. Alle wijzigingen blijven daarom al behouden. Als u op **Opslaan** klikt, wordt er ook een achtergrondverwerking gestart (zoals het maken van volledige zoekinformatie voor tekst en/of het verwerken van media-elementen met gemengde tekst).
 
-* De bewerking moet ook *transactioneel* zijn; aan het einde van de bewerkingssessie moeten de wijzigingen worden vastgelegd (opgeslagen) of teruggedraaid (geannuleerd).
-
-* Randgevallen moeten op de juiste wijze worden afgehandeld; Dit zijn bijvoorbeeld situaties waarin de gebruiker de pagina verlaat door handmatig een URL in te voeren of door globale navigatie te gebruiken.
-
-* Om gegevensverlies te voorkomen, moet er regelmatig automatisch worden opgeslagen (elke x minuten).
-
-* Als een inhoudsfragment tegelijkertijd door twee gebruikers wordt bewerkt, mogen deze de wijzigingen van elkaar niet overschrijven.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Pagina&#39;s verlaten
-
-   * Als een bewerkingssessie aanwezig is en de wijzigingen niet zijn doorgevoerd, wordt een modaal bevestigingsdialoogvenster weergegeven waarin de gebruiker op de hoogte wordt gebracht van mogelijk verloren inhoud en waarin hij of zij op de pagina kan blijven.
+Er zijn enkele veiligheidsmaatregelen voor randgevallen. bijvoorbeeld als de gebruiker de editor probeert te verlaten zonder de bewerkingssessie op te slaan of te annuleren. Er is ook een periodieke automatische opslag beschikbaar om gegevensverlies te voorkomen.
+Twee gebruikers kunnen hetzelfde inhoudsfragment gelijktijdig bewerken en overschrijven daarom elkaars wijzigingen. Om dit te voorkomen, moet het inhoudsfragment worden vergrendeld door de *uitcheckactie* van de DAM-administratie op het fragment toe te passen.
 
 ## Voorbeelden {#examples}
 
