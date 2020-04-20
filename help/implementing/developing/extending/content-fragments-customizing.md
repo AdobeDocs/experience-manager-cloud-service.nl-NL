@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ Afhankelijk van het type fragment worden ook modellen of de sjabloon **Eenvoudig
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
    >[!NOTE]
    >
-   >Als u een inhoudsfragment wilt weergeven/renderen, moet uw account leesmachtigingen voor het model hebben.
+   >Als u een inhoudsfragment wilt weergeven/renderen, moet uw account `read` machtigingen voor het model hebben.
 
    >[!CAUTION]
    >
@@ -66,7 +66,7 @@ CFM (Content Fragment Management) maakt als volgt deel uit van AEM Assets:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
 
 Inhoudsfragmenten worden als volgt beschouwd als een functie Sites:
 
@@ -308,7 +308,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kernelementen.
+   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kern van elementen.
 
 ## Sessies bewerken {#edit-sessions}
 
