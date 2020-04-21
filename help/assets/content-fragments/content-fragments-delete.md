@@ -1,13 +1,13 @@
 ---
-title: Inhoudsfragmenten - Overwegingen verwijderen
-description: Inhoudsfragmenten - Overwegingen verwijderen
+title: Contentfragmenten - Overwegingen verwijderen
+description: Contentfragmenten - Overwegingen verwijderen
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Inhoudsfragmenten - Overwegingen verwijderen{#content-fragments-delete-considerations}
+# Contentfragmenten - Overwegingen verwijderen{#content-fragments-delete-considerations}
 
 ## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
@@ -25,11 +25,11 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **zonder dat het is toegestaan een volledig fragment** te verwijderen.
-   * **Machtigingen**: Zie Machtigingen alleen vereist voor Editor-functionaliteit. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Machtigingen**: Zie [Machtigingen vereist voor alleen](#permissions-required-for-editor-functionality-only)bewerkingsfunctionaliteit.
 
 >[!NOTE]
 >
->Wanneer een gebruiker geen machtiging Verwijderen heeft, werkt de editor voor inhoudsfragmenten in de modus *Alleen* -lezen. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
-Voor gebruikers die een inhoudsfragment moeten bewerken/bijwerken, **zonder hen toe te staan om een volledig fragment** te verwijderen, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de inhoudsfragmenteditor vereist dat voorbijgaande subelementen kunnen worden verwijderd.
+Voor gebruikers die een contentfragment moeten bewerken of bijwerken, **zonder hun toe te staan om een volledig fragment te verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de contentfragmenteditor vereist dat tijdelijke subelementen kunnen worden verwijderd.
 
 Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
