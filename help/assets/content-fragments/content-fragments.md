@@ -1,13 +1,13 @@
 ---
-title: Werken met inhoudsfragmenten
+title: Werken met contentfragmenten
 description: Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Werken met inhoudsfragmenten{#working-with-content-fragments}
+# Werken met contentfragmenten{#working-with-content-fragments}
 
 Met Adobe Experience Manager (AEM)-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-cloud/authoring/fundamentals/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
 
@@ -143,7 +143,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * U kunt het fragment gemakkelijk gebruiken (als tussenliggende inhoud) op een pagina.
    * Zie [Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) voor meer informatie.
 
-* Middelen beschikbaar in de **middelenbrowser** van de pagina-editor
+* Assets die beschikbaar zijn in de **assetbrowser** van de pagina-editor
 
    * Volledige flexibiliteit toestaan voor de selectie van een element.
    * Biedt enige flexibiliteit voor positionering.
@@ -161,7 +161,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Voor eenvoudige fragmenten:
 
       * De inhoud bevindt zich in een (of meer) tekstveld(en) met meerdere regels of in een of meer elementen.
-      * De elementen worden gedefinieerd in de fragmentsjabloon (kan niet worden gedefinieerd tijdens het ontwerpen van het fragment, zie Sjablonen voor inhoudsfragmenten). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * De elementen worden gedefinieerd in de fragmentsjabloon (kunnen niet worden gedefinieerd tijdens het ontwerpen van het fragment).
 
 * **Fragmentalinea&#39;s**
 
@@ -169,7 +169,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
       * gescheiden door verticale spaties (harde return)
       * in tekstelementen met meerdere regels; in eenvoudige of gestructureerde fragmenten
-   * In de modi [RTF](/help/assets/content-fragments/content-fragments-variations.md#rich-text) en [Markering](/help/assets/content-fragments/content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen de alinea en de volgende alinea bij elkaar als één eenheid.
+   * In de modi [Tekst met opmaak](/help/assets/content-fragments/content-fragments-variations.md#rich-text) en [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen die alinea en de volgende alinea bij elkaar als één eenheid.
 
    * Inhoudsbeheer tijdens het ontwerpen van pagina&#39;s inschakelen.
 
@@ -263,7 +263,7 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
 * **Fragmentsjabloon**
 
    * Vereist voor het [maken van een eenvoudig fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * Gewoonlijk ontwikkeld tijdens de uitvoering van het project; kan niet worden gemaakt tijdens het ontwerpen. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * Gewoonlijk ontwikkeld tijdens de implementatie van het project; kan niet worden gemaakt tijdens het ontwerpen.
    * Definieert de basiseigenschappen van een eenvoudig fragment (titel, aantal tekstelementen, tagdefinities).
    * Sjabloondefinities vereisen een titel en één tekstelement. alles is optioneel . De sjabloon definieert een minimaal bereik van het fragment en de standaardinhoud, indien van toepassing. Auteurs kunnen later een fragment uitbreiden dat verder gaat dan in de sjabloon is gedefinieerd.
 
