@@ -3,7 +3,7 @@ title: HTTP-API voor assets
 description: Leer over de implementatie, het gegevensmodel, en de eigenschappen van Activa HTTP API. Met de HTTP-API Middelen kunt u verschillende taken uitvoeren met betrekking tot elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## Overzicht {#overview}
 
-Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met behulp van AEM Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](content-fragments/content-fragments.md).
+Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met behulp van AEM Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](assets-api-content-fragments.md).
 
 Toegang krijgen tot de API:
 
@@ -31,13 +31,13 @@ Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar 
 
 Een [inhoudsfragment](content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
-Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](content-fragments/content-fragments.md)van AEM Assets voor meer informatie.
+Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](assets-api-content-fragments.md)van AEM Assets voor meer informatie.
 
 ## Gegevensmodel {#data-model}
 
 De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar (voor standaardelementen).
 
-Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie Gegevensmodellen [van](content-fragments/content-fragments.md) inhoudsfragmenten voor meer informatie.
+Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie Gegevensmodellen [van](assets-api-content-fragments.md#content-models-and-content-fragments) inhoudsfragmenten voor meer informatie.
 
 ### Mappen {#folders}
 
@@ -66,7 +66,7 @@ In AEM bevat een element de volgende elementen:
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uit PDF of InDesign geëxtraheerde pagina&#39;s zijn.
 * Optionele opmerkingen
 
-Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](content-fragments/content-fragments.md)van AEM-elementen voor informatie over elementen in inhoudsfragmenten.
+Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](assets-api-content-fragments.md)van AEM-elementen voor informatie over elementen in inhoudsfragmenten.
 
 In AEM heeft een map de volgende componenten:
 
