@@ -1,13 +1,13 @@
 ---
-title: Inhoudsfragmenten beheren
+title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
 
-# Inhoudsfragmenten beheren{#managing-content-fragments}
+# Contentfragmenten beheren{#managing-content-fragments}
 
 Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk worden beheerd vanaf de **middelenconsole** .
 
@@ -24,25 +24,19 @@ Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk wor
 
 >[!NOTE]
 >
->Zie Inhoudsfragmenten ontwikkelen voor meer informatie over sjablonen; worden gebruikt voor eenvoudige inhoudsfragmenten.
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>Zie [Inhoudsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md) ontwikkelen voor meer informatie over sjablonen; worden gebruikt voor eenvoudige inhoudsfragmenten.
 
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
 De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
 
-1. Navigeer naar de map **Middelen** waar u het fragment wilt maken.
+1. Ga naar de map **Assets** waar u het fragment wilt maken.
 2. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 3. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
    * Dit kan een:
 
-      * Sjabloon - bijvoorbeeld **Eenvoudig fragment**<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * Template - for example **Simple Fragment**
 
       * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het model **Airports**
    * Alle beschikbare sjablonen en modellen worden weergegeven.
@@ -50,7 +44,7 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
 
    ![fragmentbasis](assets/cfm-managing-01.png)
 
-4. Geef in de stap **Eigenschappen** op:
+4. Geef in de stap **Eigenschappen** het volgende op:
 
    * **Basis**
 
@@ -72,7 +66,7 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
          Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
 
 
-5. Selecteer **Maken** om de actie te voltooien, dan of **Open** het fragment voor het uitgeven of terugkeer aan de console met **Gedaan**.
+5. Selecteer **Maken** om de actie te voltooien en **open** vervolgens het fragment voor het bewerken of keer terug naar de console met **Gereed**.
 
 ## Handelingen voor een inhoudsfragment {#actions-for-a-content-fragment}
 
@@ -120,11 +114,9 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 Uw fragment openen voor bewerken:
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
 >[!CAUTION]
 >
@@ -142,9 +134,11 @@ Uw fragment openen voor bewerken:
    >[!NOTE]
    >
    >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
-   >
-   >
-   >2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
+      >
+      >
+      >
+
+   2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
 
 
 3. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
@@ -160,7 +154,7 @@ Uw fragment openen voor bewerken:
 
    >[!NOTE]
    >
-   >Zowel **Opslaan** als **Annuleren** sluit de editor af. Zie [Opslaan, Annuleren en Versies](#save-cancel-and-versions) voor volledige informatie over hoe beide opties werken voor inhoudsfragmenten.
+   >Zowel met **Opslaan** als **Annuleren** sluit u de editor af. Zie [Opslaan, annuleren en versies](#save-cancel-and-versions) voor gedetailleerde informatie over hoe beide opties werken voor contentfragmenten.
 
 ## Opslaan, Annuleren en versies {#save-cancel-and-versions}
 
@@ -176,13 +170,7 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >U hebt de juiste machtigingen nodig om een inhoudsfragment te bewerken. Neem contact op met de systeembeheerder als er problemen optreden.
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
    >[!NOTE]
    >
@@ -190,7 +178,7 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw wijzigingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw veranderingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
    >
    >Houd hier rekening mee wanneer u **Opslaan** gebruikt en vervolgens snel de fragmenteditor ingaat om verdere wijzigingen aan te brengen en op te slaan.
@@ -334,4 +322,4 @@ Een fragment verwijderen:
 4. Bevestig de actie **Verwijderen** .
 
    >[!CAUTION]
-   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **Force Delete**. Het fragment wordt samen met de bijbehorende component voor inhoudsfragmenten verwijderd uit alle inhoudspagina&#39;s.
+   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
