@@ -2,7 +2,7 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk wor
 
 [U kunt contentfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
->[!NOTE]
->
->Zie [Inhoudsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md) ontwikkelen voor meer informatie over sjablonen; worden gebruikt voor eenvoudige inhoudsfragmenten.
-
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
 De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
@@ -34,12 +30,13 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
 2. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 3. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
-   * Dit kan een:
+   * Dit kan zijn:
 
-      * Template - for example **Simple Fragment**
+      * de sjabloon **Eenvoudig fragment**
 
       * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het model **Airports**
-   * Alle beschikbare sjablonen en modellen worden weergegeven.
+
+         * Alle beschikbare modellen worden weergegeven.
    Na selectie gebruikt u **Volgende** om door te gaan.
 
    ![fragmentbasis](assets/cfm-managing-01.png)
