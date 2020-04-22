@@ -2,7 +2,7 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bev
 
 Inhoudsfragmenten kunnen:
 
-* Eenvoudige fragmentenDeze hebben geen vooraf gedefinieerde structuur. Ze bevatten alleen tekst en afbeeldingen.
-Deze zijn gebaseerd op de sjabloon **Eenvoudig fragment** .
+* Eenvoudige fragmenten
 
-* Fragmenten die gestructureerde inhoud bevatten. Deze fragmenten zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), dat een structuur vooraf definieert voor het resulterende fragment.
-Deze kunnen ook worden gebruikt om Content Services te realiseren met behulp van JSON Exporter.
+   * Deze hebben geen vooraf gedefinieerde structuur.
+
+   * Ze bevatten alleen tekst en afbeeldingen.
+
+   * Deze zijn gebaseerd op de sjabloon **Eenvoudig fragment** .
+
+* Fragmenten die gestructureerde inhoud bevatten
+
+   * Deze zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), dat een structuur vooraf definieert voor het resulterende fragment.
+
+   * Deze kunnen ook worden gebruikt om Content Services te realiseren met behulp van JSON Exporter.
 
 ## Inhoudstype {#content-type}
 
