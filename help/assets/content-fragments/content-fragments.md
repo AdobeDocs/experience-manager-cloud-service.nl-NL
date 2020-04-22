@@ -2,7 +2,7 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bev
 Inhoudsfragmenten kunnen:
 
 * Eenvoudige fragmentenDeze hebben geen vooraf gedefinieerde structuur. Ze bevatten alleen tekst en afbeeldingen.
-Deze zijn gebaseerd op de sjabloon Eenvoudig fragment.
+Deze zijn gebaseerd op de sjabloon **Eenvoudig fragment** .
 
 * Fragmenten die gestructureerde inhoud bevatten. Deze fragmenten zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), dat een structuur vooraf definieert voor het resulterende fragment.
 Deze kunnen ook worden gebruikt om Content Services te realiseren met behulp van JSON Exporter.
@@ -161,7 +161,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Voor eenvoudige fragmenten:
 
       * De inhoud bevindt zich in een (of meer) tekstveld(en) met meerdere regels of in een of meer elementen.
-      * De elementen worden gedefinieerd in de fragmentsjabloon (kunnen niet worden gedefinieerd tijdens het ontwerpen van het fragment).
+      * De elementen worden gedefinieerd in de sjabloon **Eenvoudig fragment** .
 
 * **Fragmentalinea&#39;s**
 
@@ -197,7 +197,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * De afzonderlijke elementen in de verzameling zijn beschikbaar voor gebruik met het fragment in de pagina-editor wanneer het aan een pagina wordt toegevoegd. Dit betekent dat ze optioneel zijn, afhankelijk van de vereisten van het specifieke kanaal.
    * De activa worden [verbonden aan fragmenten via inzamelingen](/help/assets/content-fragments/content-fragments-assoc-content.md); Met gekoppelde verzamelingen kan de auteur beslissen welke elementen worden gebruikt wanneer deze de pagina ontwerpt.
 
-      * Verzamelingen kunnen tijdens het ontwerpen van fragmenten worden gekoppeld aan fragmenten via sjablonen, als standaardinhoud of door auteurs.
+      * Verzamelingen kunnen tijdens het ontwerpen van fragmenten als standaardinhoud worden gekoppeld.
       * [Elementen (DAM) Verzamelingen](/help/assets/manage-collections.md) vormen de basis voor de bijbehorende inhoud van fragmenten.
    * Desgewenst kunt u het fragment zelf ook aan een verzameling toevoegen om het bijhouden van het fragment te vergemakkelijken.
 
@@ -229,7 +229,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    * Uitvoeringen van fragmenttekst die specifiek zijn voor redactionele doeleinden; kan verband houden met het kanaal, maar is niet verplicht, en kan ook voor ad-hoclokale aanpassingen worden gebruikt.
    * worden gemaakt als kopieën van **stramien**, maar kunnen vervolgens naar wens worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
-   * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten of vooraf worden gedefinieerd in fragmentsjablonen.
+   * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
    * Variaties kunnen worden [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met stramien als de stramieninhoud is bijgewerkt.
    * Kan worden [samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
@@ -262,10 +262,8 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
 
 * **Fragmentsjabloon**
 
-   * Vereist voor het [maken van een eenvoudig fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * Gewoonlijk ontwikkeld tijdens de implementatie van het project; kan niet worden gemaakt tijdens het ontwerpen.
+   * U hebt de sjabloon **Eenvoudig fragment** nodig om een eenvoudig fragment [te](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)maken.
    * Definieert de basiseigenschappen van een eenvoudig fragment (titel, aantal tekstelementen, tagdefinities).
-   * Sjabloondefinities vereisen een titel en één tekstelement. alles is optioneel . De sjabloon definieert een minimaal bereik van het fragment en de standaardinhoud, indien van toepassing. Auteurs kunnen later een fragment uitbreiden dat verder gaat dan in de sjabloon is gedefinieerd.
 
 * **Component Inhoudsfragment**
 
