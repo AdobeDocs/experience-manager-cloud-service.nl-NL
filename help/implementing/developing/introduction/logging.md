@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ De andere paren volgen de standaardconfiguratie:
 
    * Schrijft `Warning` berichten aan `../logs/error.log` voor de dienst `org.apache.pdfbox`.
 
-* Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie (dagelijkse logrotatie) wordt gemaakt en gebruikt.
+* Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie wordt gemaakt en gebruikt.
 
 **AEM als HTTP-aanvraagaanmelding voor cloudservice**
 
@@ -96,7 +96,7 @@ Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregi
 
 Voorbeeld-uitvoer:
 
-**Logboekregistratie voor AEM HTTP-aanvragen/reacties**
+**AEM als HTTP-aanvraag-/antwoordtoegangsregistratie voor cloudservice**
 
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
@@ -183,7 +183,7 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Logniveau instellen {#setting-the-log-level}
+### Logniveau instellen {#setting-the-log-level}
 
 Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het Registreren van de Sling configuratie OSGI moeten worden gewijzigd, gevolgd door een volledige herplaatsing. Aangezien dit niet onmiddellijk is, ben voorzichtig om uitgebreide logboeken op productiemilieu&#39;s toe te laten die veel verkeer ontvangen. In de toekomst is het mogelijk dat er mechanismen zijn om het logniveau sneller te wijzigen.
 
@@ -191,7 +191,7 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 >
 > Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Dienst van de Wolk. Zie [Distribueren naar AEM als Cloud Service](/help/implementing/deploying/overview.md)voor meer informatie over hoe u dit kunt doen.
 
-### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
+**Het FOUTOPSPORINGSlogniveau activeren**
 
 >[!WARNING]
 >
