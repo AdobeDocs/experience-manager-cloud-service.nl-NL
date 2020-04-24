@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -96,7 +96,7 @@ Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregi
 
 Voorbeeld-uitvoer:
 
-**Logbestand AEM HTTP-aanvraag-/antwoordtoegang**
+**Logboekregistratie voor AEM HTTP-aanvragen/reacties**
 
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
@@ -448,7 +448,7 @@ Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden,
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Met de volgende opdracht kunt u logboeken trappen:
+Met de volgende opdracht kunt u logbestanden als tailing weergeven:
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
