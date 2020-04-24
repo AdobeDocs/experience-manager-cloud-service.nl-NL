@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ De andere paren volgen de standaardconfiguratie:
 
 * Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie (dagelijkse logrotatie) wordt gemaakt en gebruikt.
 
-### AEM als HTTP-aanvraagaanmelding voor cloudservice {#request-logging}
+**AEM als HTTP-aanvraagaanmelding voor cloudservice**
 
 Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregistreerd.
 
 Voorbeeld-uitvoer:
 
-### Logbestand AEM HTTP-aanvraag-/antwoordtoegang {#access-logging}
+**Logbestand AEM HTTP-aanvraag-/antwoordtoegang**
 
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
 Voorbeeld-uitvoer:
 
-### Apache-webserver/Dispatcher Logging {#dispatcher-logging}
+**Apache-webserver/Dispatcher Logging**
 
 Dit is een logboek voor gebruikt voor het zuiveren van de kwesties van de Verzender. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)voor meer informatie.
 
