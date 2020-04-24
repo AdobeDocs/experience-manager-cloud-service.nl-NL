@@ -2,12 +2,28 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
+source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
 
 ---
 
 
 # Logboekregistratie{#logging}
+
+AEM als Cloud Service is een platform waarop klanten aangepaste code kunnen opnemen om unieke ervaringen voor hun klanten te creëren. Met dit in mening, is het registreren een kritieke functie om douanecode op wolkenmilieu&#39;s en meer in het bijzonder voor lokale dev milieu&#39;s te zuiveren.
+
+
+<!-- ## Global Logging {#global-logging}
+
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
+
+## AEM als logbestand voor cloudservice {#aem-as-a-cloud-service-logging}
 
 AEM als Cloud Service biedt u de mogelijkheid om:
 
@@ -23,50 +39,7 @@ In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manage
 >
 >Aanmelden bij AEM als cloudservice is gebaseerd op verkoopprincipes. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
 
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
-
-Naast de globale registrerenmontages, staat AEM als Dienst van de Wolk u toe om specifieke montages voor een individuele dienst te vormen:
-
-* het specifieke registratieniveau
-* de registreermachine (de dienst OSGi die de logboekberichten levert)
-
-Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
-
-AEM als Cloud Service gebruikt het volgende om logberichten naar bestand te schrijven:
-
-1. Een **dienst** OSGi (registreerder) schrijft een logboekbericht.
-1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
-1. Een **Logging Schrijver** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
-
-Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende elementen:
-
-* **Logger (Logging Logger)**
-
-   Definieer de service(s) die de berichten genereren.
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
+## Java-aanmelding voor AEM als cloudservice {#aem-as-a-cloud-service-java-logging}
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
@@ -117,7 +90,25 @@ De andere paren volgen de standaardconfiguratie:
 
 * Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie (dagelijkse logrotatie) wordt gemaakt en gebruikt.
 
-Naast de drie typen logboeken die op een AEM als instantie van de Dienst van de Wolk (`request`, `access` en `error` logboeken) worden voorgesteld is er een ander logboek voor het zuiveren van de kwesties van de Verzender die. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)voor meer informatie.
+### AEM als HTTP-aanvraagaanmelding voor cloudservice {#request-logging}
+
+Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregistreerd.
+
+Voorbeeld-uitvoer:
+
+### Logbestand AEM HTTP-aanvraag-/antwoordtoegang {#access-logging}
+
+Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
+
+Voorbeeld-uitvoer:
+
+### Apache-webserver/Dispatcher Logging {#dispatcher-logging}
+
+Dit is een logboek voor gebruikt voor het zuiveren van de kwesties van de Verzender. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)voor meer informatie.
+
+<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
+
+leftover text from the last breakaway chunk (re dispatcher) -->
 
 Wat beproefde praktijken gaan, adviseert u zich aan de configuraties die momenteel in AEM als Cloud Service Maven archetype bestaan. Met deze opties stelt u verschillende loginstellingen en niveaus in voor bepaalde omgevingstypen:
 
@@ -133,11 +124,8 @@ Hieronder vindt u voorbeelden voor elke configuratie:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 
@@ -147,11 +135,8 @@ Hieronder vindt u voorbeelden voor elke configuratie:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 * `prod` omgevingen:
@@ -160,12 +145,43 @@ Hieronder vindt u voorbeelden voor elke configuratie:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
+
+### Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
+
+Naast de globale registrerenmontages, staat AEM als Dienst van de Wolk u toe om specifieke montages voor een individuele dienst te vormen:
+
+* het specifieke registratieniveau
+* de registreermachine (de dienst OSGi die de logboekberichten levert)
+
+Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
+
+AEM als Cloud Service gebruikt het volgende om logberichten naar bestand te schrijven:
+
+1. Een **dienst** OSGi (registreerder) schrijft een logboekbericht.
+1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
+1. Een **Logging Schrijver** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
+
+Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende elementen:
+
+* **Logger (Logging Logger)**
+
+   Definieer de service(s) die de berichten genereren.
+
+<!-- * **Log File (Logging Logger)**
+
+  Define the physical file for storing the log messages.
+
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
+
+* **Log File (Logging Writer)**
+
+  Define the physical file that the log messages will be written to.
+
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ## Logniveau instellen {#setting-the-log-level}
 
@@ -227,7 +243,7 @@ In bepaalde omstandigheden kunt u een aangepast logboek met een verschillend log
 
       Waar `<*identifier*>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten).
 
-      Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -403,3 +419,70 @@ In bepaalde omstandigheden kunt u een aangepast logboek met een verschillend log
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 De Felix-console biedt ook informatie over de ondersteuning voor het verkooplogboek op `../system/console/slinglog`; bijvoorbeeld `https://localhost:4502/system/console/slinglog`.draf
+
+## Logbestanden openen en beheren {#manage-logs}
+
+Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart.  Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
+
+Deze bestanden kunnen worden gedownload via de gebruikersinterface van de pagina **Overzicht** .
+
+![](assets/manage-logs1.png)
+
+Of op de pagina **Omgevingen** :
+
+![](assets/manage-logs2.png)
+
+>[!Nofferte]
+>Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
+
+![](assets/manage-logs3.png)
+
+
+### Logbestanden via API {#logs-thorugh-api}
+
+Naast het downloaden van logboeken door UI, zullen de logboeken door API en de Interface van de Lijn van het Bevel beschikbaar zijn.
+
+Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden, is de opdracht iets apart van de regels van
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+Met de volgende opdracht kunt u logboeken trappen:
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+Voor het verkrijgen van de milieu-id (in dit geval 1884) en de beschikbare service- of lognaamoties kunt u het volgende gebruiken:
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!Nofferte]
+>Hoewel **Logboekdownloads** beschikbaar blijven via zowel de gebruikersinterface als de API, is **Logboektailing** alleen beschikbaar via API/CLI.
+
+### Aanvullende bronnen {#resources}
+
+Raadpleeg de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en Adobe I/O CLI:
+
+* [Documentatie voor API voor cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
