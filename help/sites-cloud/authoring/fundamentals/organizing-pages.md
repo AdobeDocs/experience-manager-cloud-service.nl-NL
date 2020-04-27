@@ -1,13 +1,13 @@
 ---
-title: Pagina's maken en ordenen
+title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
 
-# Pagina&#39;s maken en ordenen {#creating-and-organizing-pages}
+# Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
 In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager Cloud Service, zodat u vervolgens inhoud [op deze pagina&#39;s kunt](/help/sites-cloud/authoring/fundamentals/editing-content.md) maken.
 
@@ -79,7 +79,7 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
 #### Beperkingen en aanbevolen procedures voor paginanamen {#page-name-restrictions-and-best-practices}
 
-De **paginatitel** en - **naam** kunnen afzonderlijk worden gemaakt, maar zijn gerelateerd aan:
+De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar zijn aan elkaar gerelateerd:
 
 * Wanneer u een pagina maakt, is alleen het veld **Titel** vereist. Als er bij het maken van de pagina geen **naam** is opgegeven, genereert AEM een naam uit de eerste 64 tekens van de titel (met inachtneming van de onderstaande validatie). Alleen de eerste 64 tekens worden gebruikt ter ondersteuning van de beste praktijken voor namen van korte pagina&#39;s.
 * Als een paginanaam handmatig door de auteur wordt opgegeven, geldt de limiet van 64 tekens niet, maar kunnen andere technische beperkingen op de lengte van de paginanaam wel van toepassing zijn.
@@ -108,7 +108,7 @@ Alle toegestane tekens worden in de naamgevingsconventies weergegeven. <!--Full 
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een paginatitel **opgeeft, leidt AEM de** paginanaam **** af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam** van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
 Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
 
@@ -132,7 +132,7 @@ Wanneer u een **paginanaam** opgeeft wanneer u een nieuwe pagina maakt, valideer
 >See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
 -->
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
 In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
@@ -150,7 +150,7 @@ AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablone
 >
 >Als dit op uw exemplaar is geconfigureerd, kunnen [sjabloonauteurs sjablonen maken met de Sjablooneditor](/help/sites-cloud/authoring/features/templates.md).
 
-### Componenten {#components}
+### Onderdelen {#components}
 
 Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks kant-en-klare componenten die uitgebreide functionaliteit bieden. Deze omvatten:
 
@@ -174,7 +174,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 1. Open de Sites-console (bijvoorbeeld `https://<host>:<port>/sites.html/content`.
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Open de keuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
+1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
 
    ![Een pagina maken](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -255,19 +255,21 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
    En dan het paginapictogram **Kopiëren** :
 
-   ![Kopiëren, knop](/help/sites-cloud/authoring/assets/copy.png)
+   ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. Gebruik het pictogram van de pagina **Plakken** :
+1. Het pictogram **Plakken** is rechtstreeks naar rechts beschikbaar met een vervolgkeuzepijl:
 
-   ![Knop Plakken](/help/sites-cloud/authoring/assets/paste.png)
+   ![Plakken](/help/sites-cloud/authoring/assets/paste.png)
 
-   Op deze locatie worden een kopie van de originele pagina en eventuele subpagina&#39;s gemaakt.
+   U kunt:
 
+   1. Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
+   1. Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
    >[!NOTE]
    >
    >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als er bijvoorbeeld `beach` al een nieuwe pagina met deze naam bestaat, `beach` wordt deze gewijzigd `beach1`.
@@ -336,7 +338,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Deze wordt standaard opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door het **veld Opnieuw** publiceren uit te schakelen in de stap **Aanpassen/Opnieuw** .
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Deze wordt standaard opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar u kunt dit veranderen door het veld **Opnieuw publiceren** uit te schakelen in de stap **Aanpassen/opnieuw publiceren**.
 
 >[!NOTE]
 >
@@ -362,7 +364,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Uit veiligheidsoverwegingen is **het pictogram op de pagina Verwijderen** niet beschikbaar als een snelle actie.
+   >Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
 
 1. In een dialoogvenster wordt om bevestiging gevraagd, gebruik:
 
@@ -386,7 +388,7 @@ U kunt een pagina [](/help/sites-cloud/authoring/fundamentals/editing-content.md
 
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
-1. Open de **Sites** -console en navigeer naar de gewenste locatie.
+1. Open the **Sites** console and navigate to the required location.
 1. Selecteer **Maken** in de werkbalk om de lijst met opties te openen
 1. Selecteer **Map** om het dialoogvenster te openen. Hier kunt u de **naam** en de **titel** invoeren:
 
