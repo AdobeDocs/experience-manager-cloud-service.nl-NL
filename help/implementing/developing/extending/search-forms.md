@@ -2,7 +2,7 @@
 title: Zoekformulieren configureren
 description: Zoekformulieren configureren voor Adobe Experience Manager als cloudservice.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -112,7 +112,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    </td>
   </tr>
   <tr>
-   <td>Author</td>
+   <td>Auteur</td>
    <td>Zoeken volgens auteur.</td>
    <td>
     <ul>
@@ -135,7 +135,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Afhandelingsstatus</td>
-   <td>Zoeken naar elementen met een specifieke uitcheckstatus.</td>
+   <td>Zoeken naar elementen met een specifieke status voor uitchecken.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -146,7 +146,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Onderdelen</td>
-   <td>Hiermee kan een auteur zoeken/filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td>
+   <td>Hiermee kan een auteur zoeken of filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td>
    <td>
     <ul>
      <li>Plaatsaanduiding</li>
@@ -666,7 +666,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
 1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****. Selecteer vervolgens **Bewerken**.
 
-1. Afhankelijk van de configuratie voeg een **Opties** of het Bezit **van** Opties aan de configuratie toe.
+1. Afhankelijk van de configuratie voegt een **Opties** of het Bezit **van** Opties aan de configuratie toe.
 1. Werk de velden bij, met name:
 
    * **Eigenschapnaam**
@@ -693,11 +693,13 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor het uitvoeren van bewerkingen, verwijderen en voorvertoningen van handelingen op zoekformulieren.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Actie</strong></td>
    <td><strong>Machtigingen</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Bewerken </td>
    <td>Lezen, schrijven toestemmingen op de <code>/apps </code>knoop.</td>
