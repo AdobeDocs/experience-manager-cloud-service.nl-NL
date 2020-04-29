@@ -1,15 +1,15 @@
 ---
-title: Inhoudsfragmenten
+title: Contentfragmenten
 description: Met Adobe Experience Manager kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
-# Inhoudsfragmenten {#content-fragments}
+# Contentfragmenten {#content-fragments}
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md).
+Inhoudsfragmenten in Adobe Experience Manager (AEM) als cloudservice worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md).
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
@@ -68,7 +68,7 @@ Met de inhoudsfragmenten kunt u:
    >Zie ook voor meer informatie over de verdere bewerkingsfunctionaliteit:
    >
    >    * [Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Pagina-inhoud bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >    * [Paginacontent bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
@@ -83,14 +83,14 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * **Element voor één tekst**
    * **Meerdere elementen**
 * **Element**
-   * De standaard **Hoofd** zal altijd beschikbaar zijn.
+   * The default **Main** will always be available.
    * Er is een selectie beschikbaar als het fragment met een geschikte sjabloon is gemaakt.
    >[!NOTE]
    >
    >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
 
 * **Variatie**
-   * Het standaardstramien **** is altijd beschikbaar.
+   * De standaard **master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 * **Alinea**&#39;s: het bereik van de alinea(&#39;s) specificeren dat moet worden opgenomen:
    * **Alles**
@@ -143,7 +143,7 @@ Voor tussenliggende inhoud kunt u:
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u inhoud [aan het](/help/assets/content-fragments/content-fragments-assoc-content.md) inhoudsfragment [hebt](/help/assets/content-fragments/content-fragments.md) gekoppeld, zijn deze elementen beschikbaar in het zijpaneel (nadat u het fragment op de inhoudspagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale bron van inhoud voor [tussen inhoud](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
