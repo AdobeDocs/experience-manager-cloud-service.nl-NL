@@ -2,7 +2,7 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -366,8 +366,13 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    >
    >Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
 
-1. In een dialoogvenster wordt om bevestiging gevraagd, gebruik:
+1. Een dialoogvenster zal om bevestiging vragen.
 
+   ![Dialoogvenster Verwijderen](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden bij het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
+      * [Versies kunnen later worden hersteld.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Pagina&#39;s die zonder vorige versies zijn verwijderd, kunnen niet worden hersteld.
    * **Annuleren** om de handeling af te breken
    * **Verwijder** om de handeling te bevestigen:
 
