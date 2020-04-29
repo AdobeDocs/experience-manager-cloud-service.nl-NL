@@ -1,8 +1,8 @@
 ---
 title: Gereedschapsconsoles
 description: Leer meer over de verschillende gereedschapsconsoles in AEM.
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen in het algem
 >De kaarten in de gebruikersinterface beschrijven gedetailleerd het doel van elke optie, terwijl u in deze tabel heel eenvoudig kunt zien waar de functies in het deelvenster Gereedschappen te vinden zijn.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Sectie</td>
    <td>Optie</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Algemeen</td>
    <td> </td>
