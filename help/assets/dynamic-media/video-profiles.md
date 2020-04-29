@@ -2,7 +2,7 @@
 title: Videoprofielen
 description: Dynamische media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
 
 ---
 
@@ -27,7 +27,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 >[!NOTE]
 >
->Als u de metagegevens van een video en de bijbehorende miniaturen van videoafbeeldingen wilt genereren, moet de video zelf het coderingsproces doorlopen in Dynamische media. In AEM codeert de workflow **[!UICONTROL Dynamische media coderen video]** als u dynamische media hebt ingeschakeld en videocloudservices hebt ingesteld. In deze workflow worden de historie en informatie over mislukkingen van het workflowproces vastgelegd. Zie [De videocodering controleren en de voortgang](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)van het publiceren op YouTube. Als u dynamische media hebt ingeschakeld en videocloudservices hebt ingesteld, wordt de workflow **[!UICONTROL Dynamische media coderen video]** automatisch van kracht wanneer u een video uploadt. (Als u geen dynamische media gebruikt, wordt de workflow voor **[!UICONTROL DAM-updatemiddelen]** van kracht.)
+>Als u de metadata van een video en de bijbehorende miniaturen van videoafbeeldingen wilt genereren, moet de video zelf het coderingsproces doorlopen in Dynamische media. In AEM, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled dynamic media and set up video cloud services. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [De voortgang van videocodering en YouTube-publicatie controleren](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled dynamic media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using dynamic media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 >
 >Metagegevens zijn handig wanneer u naar elementen zoekt. De miniaturen zijn statische videobeelden die tijdens het coderen worden gegenereerd. Ze zijn vereist door het AEM-systeem en worden gebruikt in de gebruikersinterface om u te helpen video&#39;s visueel te identificeren in de weergave Kaarten, de weergave Zoekresultaten en de weergave Lijst met middelen. De gegenereerde miniaturen worden weergegeven wanneer u op het pictogram Uitvoeringen (het palet van een schilder) van een gecodeerde video tikt.
 
@@ -110,7 +110,7 @@ Als u SmartCrop voor video wilt gebruiken, maakt u een adaptief of progressief v
 
 ![Een videocoderingsprofiel bewerken met slim uitsnijden](assets/edit-smart-crop-video2.png)
 
-Let op: u kunt slimme uitsnijding van video in het videoprofiel in- of uitschakelen met de schuifregelaar helemaal rechts van de **[!UICONTROL slimme uitsnijdverhouding]** in de gebruikersinterface.
+Note that you can toggle video smart crop in the video profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.
 
 Nadat u het videoprofiel hebt gemaakt en opgeslagen, kunt u het toepassen op de gewenste mappen.
 
@@ -137,7 +137,7 @@ Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de 
 * H264-profiel
 * Samplingfrequentie audio
 
-Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Let er echter op dat adaptieve streaming niet mogelijk is. In plaats daarvan krijgen gebruikers last van streaming met één bitsnelheid. Het wordt aanbevolen de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De videoprofiel/voorinstellingseditor moet pariteit van de aangepaste instellingen voor videocodering afdwingen als &quot;Coderen voor adaptieve streaming&quot; is ingeschakeld.)
+Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Let er echter op dat adaptieve streaming niet mogelijk is. In plaats daarvan krijgen gebruikers last van streaming met één bitsnelheid. Het wordt aanbevolen de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De videoprofiel/voorinstellingseditor moet pariteit van de adaptieve instellingen voor videocodering afdwingen als &quot;Coderen voor adaptieve streaming&quot; is ingeschakeld.)
 
 Zie ook Een videocoderingsprofiel [maken voor progressieve streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -159,12 +159,12 @@ Tik op het informatiepictogram naast elke optie voor extra beschrijvingen of aan
 
 1. Voer een van de volgende handelingen uit:
 
-   * Voer in het veld **[!UICONTROL Breedte]** **[!UICONTROL automatisch]** in. Voer in het veld **[!UICONTROL Hoogte]** een waarde in pixels in.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
 
    * Tik op het informatiepictogram (i) rechts van **[!UICONTROL Hoogte]** om de pagina voor de berekening van grootte te openen, zodat u de grootte van de video kunt visualiseren. Met de **[!UICONTROL maatcalculator]** kunt u de gewenste videoafmetingen instellen (weergegeven door het blauwe vak). Tik op **[!UICONTROL X]** in de rechterbovenhoek als u klaar bent.
 
 1. (Optioneel) Tik op het tabblad **[!UICONTROL Geavanceerd]** en schakel het selectievakje Standaardwaarden **** gebruiken in (aanbevolen). U kunt ook geavanceerde video- en audio-instellingen wijzigen.
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]** om de voorinstelling op te slaan.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Voer een van de volgende handelingen uit:
    * Herhaal stap 4-10 om aanvullende coderingsvoorinstellingen te maken. (Voor adaptieve videostreaming zijn meerdere videovoorinstellingen vereist.)
    * Ga door met de volgende stap.
@@ -179,13 +179,13 @@ Tik op het informatiepictogram naast elke optie voor extra beschrijvingen of aan
    * Voeg desgewenst nieuwe uitsnijdverhoudingen toe.
    * Ga door met de volgende stap.
 
-1. Tik in de rechterbovenhoek van de pagina nogmaals op **[!UICONTROL Opslaan]** om het profiel op te slaan.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** again to save the profile.
 
 U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie Een videoprofiel [toepassen op mappen](#applying-a-video-profile-to-folders) of een videoprofiel [algemeen](#applying-a-video-profile-globally)toepassen.
 
 ## Een videoprofiel voor progressieve streaming maken {#creating-a-video-encoding-profile-for-progressive-streaming}
 
-Als u ervoor kiest de optie **[!UICONTROL Coderen voor adaptieve streaming]** niet te gebruiken, moet u er rekening mee houden dat alle coderingsvoorinstellingen die u aan het profiel toevoegt, worden beschouwd als afzonderlijke video-uitvoeringen voor streaming met één bitsnelheid of progressieve videoverzending. Er is ook geen validatie om ervoor te zorgen dat alle video-uitvoeringen dezelfde hoogte-breedteverhouding hebben.
+If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]**, be aware that all encoding presets that you add to the profile are treated as individual video renditions for single-bitrate streaming or progressive video delivery. Er is ook geen validatie om ervoor te zorgen dat alle video-uitvoeringen dezelfde hoogte-breedteverhouding hebben.
 
 De ondersteunde video-indelingscodecs zijn H.264 (.mp4) en WebM.
 
@@ -205,9 +205,9 @@ Zie [Elementverwerking](/help/assets/dynamic-media/config-dm.md#configuring-asse
 Tik op het informatiepictogram naast elke optie voor extra beschrijvingen of aanbevolen instellingen op basis van de geselecteerde video-indelingscodec.
 1. (Optioneel) Schakel onder de kop Videogrootte de optie Hoogte-breedteverhouding **** behouden uit.
 1. Ga als volgt te werk:
-   * Voer in het veld **[!UICONTROL Breedte]** **[!UICONTROL automatisch]** in.
-   * Voer in het veld **[!UICONTROL Hoogte]** een waarde in pixels in.
-Tik op het informatiepictogram Hoogte om de pagina **[!UICONTROL Grootte berekenen]** te openen, zodat u de grootte van de video kunt visualiseren. Gebruik de pagina **[!UICONTROL Groottecalculator]** om de videodimensie (blauw vakje) verder te plaatsen hoe u wilt. Tik op **[!UICONTROL X]** in de rechterbovenhoek van het dialoogvenster als u klaar bent.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
+   * In the **[!UICONTROL Height]** field, enter a value in pixels.
+To help you visualize the size of the video, tap the Height&#39;s information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
    * Tik op het tabblad **[!UICONTROL Geavanceerd]** en schakel het selectievakje Standaardwaarden **** gebruiken in (aanbevolen).
@@ -215,7 +215,7 @@ Tik op het informatiepictogram Hoogte om de pagina **[!UICONTROL Grootte bereken
    * Schakel het selectievakje Standaardwaarden **** gebruiken uit en geef de gewenste video-instellingen en audio-instellingen op.
 Tik op het informatiepictogram naast elke optie voor extra beschrijvingen of aanbevolen instellingen op basis van de geselecteerde video-indelingscodec.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]** om de voorinstelling op te slaan.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Voer een van de volgende handelingen uit:
 
    * Herhaal stap 4-9 om aanvullende coderingsvoorinstellingen te maken.
@@ -232,7 +232,7 @@ Tik op het informatiepictogram naast elke optie voor extra beschrijvingen of aan
    * Voeg desgewenst nieuwe uitsnijdverhoudingen toe.
    * Ga door met de volgende stap.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]** om het profiel op te slaan.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the profile.
 
 U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie Een videoprofiel [toepassen op mappen](#applying-a-video-profile-to-folders) of een videoprofiel [algemeen](#applying-a-video-profile-globally)toepassen.
 
@@ -247,7 +247,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
-1. In het paneel op de laag-juiste kant van de pagina, van het lusje van Eigenschappen, specificeer de **[!UICONTROL Naam]**, het **[!UICONTROL Type]**, en de **[!UICONTROL Waarde]** van de parameter u wilt gebruiken.
+1. In the panel on the lower-right side of the page, from the Properties tab, specify the **[!UICONTROL Name]**, **[!UICONTROL Type]**, and **[!UICONTROL Value]** of the parameter you want to use.
 
    U kunt de volgende geavanceerde parameters gebruiken:
 
@@ -294,11 +294,11 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Tik in de rechterbenedenhoek van de pagina op **[!UICONTROL Toevoegen]**.
+1. Near the lower-right corner of the page, tap **[!UICONTROL Add]**.
 1. Voer een van de volgende handelingen uit:
 
    * Herhaal stap 3 en 4 om een andere parameter toe te voegen aan uw videocoderingsprofiel.
-   * Tik in de linkerbovenhoek van de pagina op Alles **[!UICONTROL opslaan]**.
+   * Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
 
 1. Tik in de linkerbovenhoek van de pagina van CRXDE Lite op het pictogram **[!UICONTROL Terug startpunt]** om terug te keren naar AEM.
 
@@ -322,7 +322,7 @@ Zie [Elementverwerking](/help/assets/dynamic-media/config-dm.md#configuring-asse
 Tik op het informatiepictogram voor een beschrijving van adaptieve streaming. (Schakel dit selectievakje niet in als u een progressief videoprofiel bewerkt.)
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
 
-   Tik op het informatiepictogram naast elke optie op de tabbladen **[!UICONTROL Standaard]** en **[!UICONTROL Geavanceerd]** voor extra beschrijvingen of aanbevolen instellingen die zijn gebaseerd op de codec voor de geselecteerde video-indeling.
+   Tap the information icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for additional descriptions or recommended settings based on the selected video format codec.
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]**.
 
@@ -364,7 +364,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 ### Een videoprofiel toepassen op specifieke mappen {#applying-video-profiles-to-specific-folders}
 
-U kunt een videoprofiel toepassen op een map vanuit het menu **[!UICONTROL Gereedschappen]** of vanuit de map **[!UICONTROL Eigenschappen]**. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren op mappen kunt toepassen.
+You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren op mappen kunt toepassen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
@@ -374,20 +374,20 @@ Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](
 
 1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Videoprofielen]**.
 1. Selecteer het videoprofiel dat u wilt toepassen op een of meerdere mappen.
-1. Tik op Profiel **[!UICONTROL toepassen op map(pen)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik op **[!UICONTROL Toepassen]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven in de **[!UICONTROL kaartweergave]**.
+1. Tap **[!UICONTROL Apply Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name while in **[!UICONTROL Card View]**.
 U kunt de voortgang van een verwerkingstaak [van een videoprofiel](#monitoring-the-progress-of-an-encoding-job)controleren.
 
 #### Een videoprofiel vanuit Eigenschappen toepassen op mappen {#applying-video-profiles-to-folders-from-properties}
 
 1. Tik of klik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar de map waarop u een videoprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Eigenschappen]**.
-1. Selecteer het tabblad **[!UICONTROL Videoprofielen]** en selecteer het profiel in de keuzelijst en klik op **[!UICONTROL Opslaan en sluiten]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save &amp; Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)U kunt de voortgang van een videoprofielverwerkingstaak [](#monitoring-the-progress-of-an-encoding-job)controleren.
 
 ### Een videoprofiel wereldwijd toepassen {#applying-a-video-profile-globally}
 
-Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in AEM-elementen in een map is geüpload.
+Naast het toepassen van een profiel op een map, kunt u ook een profiel globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in AEM-elementen in een map is geüpload.
 
 Zie ook Elementen [opnieuw verwerken in een map](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
@@ -408,13 +408,13 @@ U kunt het `error.log` bestand ook weergeven om de voortgang van een coderingsta
 
 Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
-U kunt een videoprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Gereedschappen]** of vanuit de map Instellingen **** map. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren uit mappen kunt verwijderen.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren uit mappen kunt verwijderen.
 
 ### Een videoprofiel uit mappen verwijderen via de gebruikersinterface Profielen {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Videoprofielen]**.
 1. Selecteer het videoprofiel dat u uit een of meerdere mappen wilt verwijderen.
-1. Tik op Profiel **[!UICONTROL verwijderen uit mappen]** en selecteer de map of meerdere mappen waaruit u het profiel wilt verwijderen en tik op **[!UICONTROL Verwijderen]**.
+1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
 
    U kunt bevestigen dat het videoprofiel niet meer wordt toegepast op een map omdat de naam niet meer onder de mapnaam wordt weergegeven.
 
