@@ -2,35 +2,37 @@
 title: Op rollen gebaseerde machtigingen
 description: Op rollen gebaseerde machtigingen
 translation-type: tm+mt
-source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
+source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 ---
 
 
 # Op rollen gebaseerde machtigingen {#role-based-permissions}
 
-[!UICONTROL De Manager] van de wolk heeft pre-gevormde rollen met aangewezen toestemmingen. Bijvoorbeeld, ontwikkelt een ontwikkelaar code en heeft de toestemming om de code aan de Bewaarplaats van de **it te duwen**. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om de Belangrijkste Indicatoren van Prestaties (KPIs) te bepalen en plaatsingen goed te keuren.
+[!UICONTROL Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. ] Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code naar de **Git Repository** te duwen. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om de Zeer belangrijke Indicatoren van Prestaties (KPIs) te bepalen en plaatsingen goed te keuren.
 
-## Gebruikersrechten {#user-permissions}
+## Gebruikersmachtigingen {#user-permissions}
 
-Elk van de rollen heeft specifieke toestemmingen, preconfigured taken, of toestemmingen, verbonden aan elke rol. Deze lijst maakt een lijst van de beschikbare functies en de rollen die de functie kunnen uitvoeren.
+Elk van de rollen heeft specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol. Deze lijst maakt een lijst van de beschikbare functies en de rollen die de functie kunnen uitvoeren.
 
-| Toestemming | Beschrijving | Zakelijke eigenaar | Deployment Manager | Programmabeheer | Ontwikkelaar |
+| Machtiging | Beschrijving | Business Owner | Deployment Manager | Program Manager | Developer |
 |--- |--- |--- |--- |--- |--- |
 | Programma toevoegen | Voeg een nieuw programma toe. | x |  |  |  |
-| Omgeving maken | Creëer Prod+Stage, Dev, afspeelomgevingen. | x | x |  |  |
-| Update-omgeving | Werk Prod+Stage bij, ontwikkel, afspeelomgevingen. | x | x |  |  |
-| Omgeving verwijderen | Verwijder non-prod-, ontwikkelings- en afspeelomgevingen. | x | x |  |  |
-| Omgeving verwijderen | Schrap Prod+Stage Milieu. |  |  |  |  |
+| Omgeving maken | Maak Prod+Stage, Dev, Playground-omgevingen. | x | x |  |  |
+| Omgeving bijwerken | Werk Prod+werkgebied, Dev, Playground-omgevingen bij. | x | x |  |  |
+| Omgeving verwijderen | Verwijder niet-prod-, ontwikkelings- en afspeelomgevingen. | x | x |  |  |
+| Omgeving verwijderen | Prod+Stage-omgeving verwijderen. |  |  |  |  |
 | Programma instellen | Vorm Programma (met inbegrip van KPIs). | x |  |  |  |
-| Programma instellen | Git Commit Access. |  | x |  | x |
-| Opstelling pijpleiding | Opstelling of geef Pijpleiding uit. |  | x |  |  |
-| Uitvoering pijpleiding | Start de pijpleiding. | x | x |  |  |
-| Uitvoering pijpleiding | Belangrijke fouten van drie niveaus afwijzen/goedkeuren. | x | x | x |  |
+| Programma instellen | Toegang vastleggen. |  | x |  | x |
+| Instellingen pijpleiding | Setup of Edit Pipeline. |  | x |  |  |
+| Uitvoering pijpleiding | Start de pijplijn. | x | x |  |  |
+| Uitvoering pijpleiding | Belangrijke 3-Tier-fouten afwijzen/goedkeuren. | x | x | x |  |
 | Uitvoering pijpleiding | Geef GoLive-goedkeuring op. | x | x | x |  |
-| Uitvoering pijpleiding | Implementatie van productie plannen. | x | x | x |  |
+| Uitvoering pijpleiding | Plan de Implementatie van de Productie. | x | x | x |  |
 | Uitvoering pijpleiding | Hervat de Productiepijpleiding. |  |  |  |  |
+| Pipet verwijderen | Hiermee wordt het verwijderen van een pijpleiding toegestaan. |  | x |  |  |
+| Uitvoering annuleren | Huidige uitvoering annuleren. |  | x |  |  |
 | Omgeving beheren | Voeg segment Publish-Dispatcher van het Manage Scherm van het Milieu toe. | x | x |  |  |  |
-| Push Update | Start de pijplijn bijwerken. |  |  |  |  |
-| Produceer Persoonlijk Token van de Toegang | Toegangspunt. |  | x |  | x |
+| Push Update | Start Push Update Pipeline. |  |  |  |  |
+| Token voor persoonlijke toegang genereren | Toegangspoort. |  | x |  | x |
 
