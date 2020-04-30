@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
 
 ---
 
@@ -69,7 +69,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Groepen
          + ACLs (toestemmingen)
             + Willekeurig pad `rep:policy` (veranderbaar of onveranderbaar)
-+ Het `ui.apps` pakket, of het Pakket van de Code, bevat alle code die moet worden opgesteld en slechts aan `/apps`opstelt. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer: <!-- GRANITE-29128 -->
++ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
    + Contextbewuste configuraties
       + `/conf`
    + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren uitbreidt van de Basislijn die in RepoInit worden bepaald.
