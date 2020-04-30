@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Groepen
          + ACLs (toestemmingen)
             + Willekeurig pad `rep:policy` (veranderbaar of onveranderbaar)
-+ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
++ Het `ui.apps` pakket, of het Pakket van de Code, bevat alle code die moet worden opgesteld en slechts aan `/apps`opstelt. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer: <!-- GRANITE-29128 -->
    + Contextbewuste configuraties
       + `/conf`
    + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren uitbreidt van de Basislijn die in RepoInit worden bepaald.
@@ -82,7 +82,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/etc`
 + Het pakket `all` is een containerpakket dat ALLEEN de pakketten `ui.apps` en `ui.content` als ingesloten items bevat. Het pakket `all` mag geen **eigen content** hebben, maar moet alle implementaties op de opslagplaats delegeren naar zijn subpakketten.
 
-   Pakketten worden nu opgenomen met de insluitconfiguratie [van de Maven](#embeddeds)FileVault-plug-in voor Maven-bestanden in plaats van met de `<subPackages>` configuratie.
+   Pakketten worden nu opgenomen met behulp van de ingesloten configuratie [van de Maven](#embeddeds)FileVault-insteekmodule in plaats van de `<subPackages>` configuratie.
 
    Voor complexe plaatsingen van de Manager van de Ervaring, kan het wenselijk zijn om veelvoudige `ui.apps` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
 
@@ -560,7 +560,7 @@ Voeg in het `all/pom.xml` dialoogvenster de `maven-clean-plugin` plug-in toe waa
 </plugins>
 ```
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 + [Pakketten beheren met Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
 + [Maven-plug-in voor het pakket met bestandsVault-inhoud](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
