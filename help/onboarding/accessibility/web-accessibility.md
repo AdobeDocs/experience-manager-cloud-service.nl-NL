@@ -1,60 +1,60 @@
 ---
-title: Adobe Experience Manager als Cloud Service en de Web Accessibility Guidelines
-seo-title: Adobe Experience Manager als Cloud Service en de Web Accessibility Guidelines
+title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
+seo-title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 translation-type: tm+mt
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
-# Adobe Experience Manager als Cloud Service en de Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 
-Er zijn veel sociale, economische en juridische redenen om ervoor te zorgen dat webinhoud zo is ontworpen dat deze zo toegankelijk mogelijk is voor het doelpubliek, ongeacht eventuele beperkingen of beperkingen. Webtoegankelijkheid is daarom een steeds belangrijker aspect van goed webontwerp.
+Er zijn veel sociale, economische en juridische redenen om ervoor te zorgen dat webcontent zo is ontworpen dat deze zo toegankelijk mogelijk is voor het doelpubliek, ongeacht eventuele handicaps of beperkingen. Webtoegankelijkheid met Adobe Experience Manager (AEM) als cloudservice is daarom een steeds belangrijker aspect van goed webontwerp.
 
-Toegankelijke websites en inhoud maken met AEM als een Cloud Service-effect:
+Toegankelijke websites en content maken met AEM as a Cloud Service heeft betrekking op de volgende personen:
 
-* Beheerders die verantwoordelijk zijn voor het configureren van Adobe Experience Manager (AEM) om ervoor te zorgen dat toegankelijkheidsfuncties correct worden ingeschakeld.
+* Beheerders die verantwoordelijk zijn voor het configureren van AEM om ervoor te zorgen dat toegankelijkheidsfuncties correct zijn ingeschakeld.
 
 * Auteurs die deze functies gebruiken om toegankelijke websites te maken.
 
-   * Het maken van toegankelijke inhoud is een proces. AEM biedt de mogelijkheden, maar de auteurs van de inhoud moeten ervoor zorgen dat zij de technieken volgen die worden vereist om toegankelijke inhoud tot stand te brengen.
+   * Het maken van toegankelijke content is een proces. AEM biedt veel mogelijkheden, maar contentauteurs moeten ervoor zorgen dat zij de technieken volgen die nodig zijn om toegankelijke content te creëren.
 
 * Sjabloonontwikkelaars dienen zich bij de implementatie van het websiteontwerp ook bewust te zijn van dergelijke problemen.
 
-Adobe Experience Manager als Cloud Service werkt met de [richtlijnen](#wcag-accessibility-guideslines) van het [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager as a Cloud Service werkt met de [richtlijnen](#wcag-accessibility-guideslines) van het [World Wide Web Consortium](#world-wide-web-consortium).
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
-Het [World Wide Web Consortium (W3C)](https://www.w3.org/) is een internationale gemeenschap die zich inzet voor het ontwikkelen van webstandaarden. In hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) worden de [Web Content Accessibility Guidelines](#wcag-accessibility-guidelines)gepubliceerd.
+Het [World Wide Web Consortium (W3C)](https://www.w3.org/) is een internationale gemeenschap die zich inzet voor het ontwikkelen van webstandaarden. Hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) is verantwoordelijk voor de publicatie van de [Web Content Accessibility Guidelines](#wcag-accessibility-guidelines).
 
 ## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
-Om webontwerpers en -ontwikkelaars te helpen toegankelijke websites te maken, heeft het [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) in juni 2018 de Web Content Accessibility Guidelines (WCAG) 2.1 [](https://www.w3.org/TR/WCAG/) gepubliceerd.
+Om webontwerpers en -ontwikkelaars te helpen toegankelijke websites te maken, heeft het [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) in juni 2018 de [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) gepubliceerd.
 
 >[!NOTE]
 > 
-> WCAG 2.1 werkt de vorige versie, WCAG 2.0, van 2008 bij. Zie [WCAG 2.1 - Vergelijking met WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> WCAG 2.1 is een update van versie WCAG 2.0 uit 2008. Zie [WCAG 2.1 - Vergelijking met WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
->Een [bijgewerkte versie van de richtsnoeren, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is momenteel in ontwikkeling, maar zal op dit moment niet in overweging worden genomen.
+>Een [bijgewerkte versie van de richtlijnen, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) wordt momenteel ontwikkeld, maar wordt hier niet in overweging genomen.
 
 
-WCAG 2.1 bevat [richtsnoeren (met bijbehorende succescriteria) die de toegankelijkheidsniveaus en de wijze waarop deze](https://www.w3.org/TR/WCAG/#conformance)moeten worden nageleefd, omvatten.
+WCAG 2.1 bevat [richtlijnen (en bijbehorende succescriteria) voor toegankelijkheidsniveaus en de wijze waarop deze moeten worden nageleefd](https://www.w3.org/TR/WCAG/#conformance).
 
-## WCAG 2.1 en AEM als cloudservice {#wcag-aem-cloud-service}
+## WCAG 2.1 en AEM as a Cloud Service {#wcag-aem-cloud-service}
 
-Met Adobe Experience Manager kunnen auteurs van inhoud en/of eigenaars van websites webinhoud maken die voldoet aan de succescriteria van WCAG 2.1 Niveau A en Niveau AA:
+Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webcontent maken die voldoet aan de succescriteria van WCAG 2.1 niveau A en niveau AA:
 
-* Specifieke aspecten van WCAG 2.1 worden benadrukt in onze [snelle gids aan WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Specifieke aspecten van WCAG 2.1 worden benadrukt in onze [snelgids over WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 
-* [Door Toegankelijke inhoud](/help/sites-cloud/authoring/fundamentals/accessible-content.md) te maken, bepaalt u hoe deze zich verhoudt tot AEM.
+* In [Toegankelijke content maken](/help/sites-cloud/authoring/fundamentals/accessible-content.md) wordt de relatie tussen de richtlijnen en AEM uitgelegd.
 
 >[!NOTE]
 > 
->Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u de site wilt laten voldoen.
+>Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 >
->Aangezien het niet mogelijk is om voor bepaalde typen inhoud te voldoen aan alle criteria voor AAA-succes op niveau, wordt dit niet aanbevolen als een vereiste mate van conformiteit.
+>Aangezien het niet mogelijk is om voor bepaalde typen content te voldoen aan alle succescriteria voor niveau AAA, wordt dit niet aanbevolen als het vereiste nalevingsniveau.
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
