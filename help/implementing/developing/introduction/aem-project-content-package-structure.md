@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,20 +69,18 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Groepen
          + ACLs (toestemmingen)
             + Willekeurig pad `rep:policy` (veranderbaar of onveranderbaar)
-+ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
++ Het `ui.content` pakket, of het Pakket van de Inhoud, bevat al inhoud en configuratie. Het inhoudspakket bevat alles wat niet in het `ui.apps` pakket staat, met andere woorden niets in `/apps` of `/oak:index`. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
    + Contextbewuste configuraties
       + `/conf`
    + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren uitbreidt van de Basislijn die in RepoInit worden bepaald.
       + `/content`, `/content/dam`enz.
    + Regelgevende taggende taxonomieën
       + `/content/cq:tags`
-   + Eak-indexen
-      + `/oak:index`
    + Etc oudere knooppunten
       + `/etc`
 + Het pakket `all` is een containerpakket dat ALLEEN de pakketten `ui.apps` en `ui.content` als ingesloten items bevat. Het pakket `all` mag geen **eigen content** hebben, maar moet alle implementaties op de opslagplaats delegeren naar zijn subpakketten.
 
-   Pakketten worden nu opgenomen met behulp van de ingesloten configuratie [van de Maven](#embeddeds)FileVault-insteekmodule in plaats van de `<subPackages>` configuratie.
+   Pakketten worden nu opgenomen met de insluitconfiguratie [van de Maven](#embeddeds)FileVault-plug-in voor Maven-bestanden in plaats van met de `<subPackages>` configuratie.
 
    Voor complexe plaatsingen van de Manager van de Ervaring, kan het wenselijk zijn om veelvoudige `ui.apps` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
 
