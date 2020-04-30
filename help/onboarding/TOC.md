@@ -2,7 +2,7 @@
 sub-product: On-boarding van AEM as a Cloud Service
 user-guide-title: On-boarding van AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites-gereedheid voor regelgeving inzake gegevensbescherming en -bescherming](data-privacy-and-protection-readiness/sites-readiness.md)
++ Toegankelijkheid {#accessibility}
+   + [AEM als Cloud Service en Web Accessibility Guidelines](accessibility/web-accessibility.md)
+   + [Snelgids voor WCAG 2.1](accessibility/quick-guide-wcag.md)
 + [Overzicht van de toolconsoles](tools-consoles.md)
