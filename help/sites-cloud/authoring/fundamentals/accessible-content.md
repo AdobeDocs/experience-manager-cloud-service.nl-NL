@@ -2,14 +2,14 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als cloudservice (WCAG 2.1-compatibiliteit)
 description: Help webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), opgesteld door [een werkgroep van het World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), bestaat uit een reeks technologische onafhankelijke richtsnoeren en succescriteria om webinhoud toegankelijk en bruikbaar te maken voor personen met een handicap.
+De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), opgesteld door [een werkgroep van het World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), bestaan uit een reeks technologische onafhankelijke richtsnoeren en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
 
 Als inleiding geeft het consortium een reeks secties en ondersteunende documenten:
 
@@ -491,7 +491,7 @@ Als kleur wordt gebruikt als actiepunt voor het verschaffen van informatie, moet
 #### Meer informatie - Gebruik van kleur (1.4.1) {#more-information-use-of-color}
 
 * [Werken met succescriteria 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-* [Voldoen aan criteria 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+* [Voldoen aan criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
 <!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 -->
@@ -552,7 +552,7 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, moet u
 #### Meer informatie - Contrast (minimaal) (1.4.3) {#more-information-contrast-minimum}
 
 * [Werken met succescriteria 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [Voldoen aan criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [Voldoen aan criteria 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
 ### Tekst vergroten/verkleinen (1.4.4) {#resize-text}
 
