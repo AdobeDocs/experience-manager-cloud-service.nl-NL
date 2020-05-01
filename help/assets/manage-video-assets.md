@@ -3,14 +3,14 @@ title: Videoassets beheren
 description: Leer hoe u video-elementen kunt uploaden, voorvertonen, annoteren en publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Videoassets beheren {#manage-video-assets}
 
-Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager (AEM) Assets. Videocodering en -transcodering is alleen mogelijk met Dynamic Media-integratie. Zonder Dynamische media krijgt u basisondersteuning voor video&#39;s, zoals het uitnemen van voorvertoningsminiaturen voor de ondersteunde bestandsindelingen en een voorvertoning in de gebruikersinterface voor indelingen die worden ondersteund voor rechtstreeks afspelen in de browser.
+Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager (AEM) Assets. Videocodering en -transcodering, bijvoorbeeld MPEG-transcodering, is alleen mogelijk met Dynamic Media-integratie. Zonder Dynamische media krijgt u basisondersteuning voor video&#39;s, zoals het uitnemen van voorvertoningsminiaturen voor de ondersteunde bestandsindelingen en een voorvertoning in de gebruikersinterface voor indelingen die worden ondersteund voor rechtstreeks afspelen in de browser.
 
 <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
 
@@ -32,5 +32,5 @@ Nadat uw video-elementen zijn gepubliceerd, kunt u ze als URL of insluiting op e
 1. Klik of tik vanuit de middelenconsole op het pictogram [!UICONTROL Bewerken] op de elementenkaart om de pagina met elementdetails weer te geven.
 1. Als u de video wilt afspelen, klikt of tikt u op het pictogram [!UICONTROL Voorvertoning] .
 1. Klik op de knop **[!UICONTROL Annoteren]** om de video van een annotatie te voorzien. Er wordt een aantekening toegevoegd op het specifieke tijdpunt (frame) in de video. Wanneer u notities maakt, kunt u op het canvas tekenen en een opmerking bij de tekening opnemen. Opmerkingen worden automatisch opgeslagen. Klik op **[!UICONTROL Sluiten om de wizard Annotatie af te sluiten]**.
-1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het **tekstveld** en klik op **Springen**. Als u bijvoorbeeld de eerste 10 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
+1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 10 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
 1. Klik op een annotatie om deze in de tijdlijn weer te geven. Als u de annotatie uit de tijdlijn wilt verwijderen, klikt u op **[!UICONTROL Verwijderen]**.
