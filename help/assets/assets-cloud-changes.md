@@ -2,25 +2,22 @@
 title: Opvallende wijzigingen in Adobe Experience Manager-middelen als cloudservice
 description: Opmerkelijke wijzigingen in de Adobe Experience Manager-middelen in AEM Cloud Service in vergelijking met Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager als Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM-projecten te beheren. Er zijn echter veel verschillen tussen de middelen van Experience Manager op locatie of in de beheerde service van Adobe in vergelijking met Experience Manager als cloudservice. In dit document worden de belangrijke verschillen belicht.
-
->[!NOTE]
->
->In dit document worden de opmerkelijke wijzigingen gemarkeerd die specifiek zijn voor Experience Manager Assets als Cloud Service. Zie de algemene [wijzigingen in Experience Manager als Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager als Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM-projecten te beheren. Er zijn echter veel verschillen tussen de middelen van Experience Manager op locatie of in de beheerde service van Adobe in vergelijking met Experience Manager als cloudservice. In dit document worden de belangrijke verschillen voor middelenmogelijkheden belicht. Voor andere veranderingen, zie de generische [veranderingen in de Manager van de Ervaring als de Dienst](/help/release-notes/aem-cloud-changes.md)van de Wolk.
 
 De belangrijkste verschillen ten opzichte van Experience Manager 6.5 zijn op de volgende gebieden:
 
-* [Inname van bedrijfsmiddelen](#asset-ingestion)
-* [Verwijderen van klassieke gebruikersinterface](#classic-ui)
+* [Inname en uploaden](#asset-ingestion)van bedrijfsmiddelen.
+* [Asset microservices voor cloudverwerking](#asset-microservices).
+* [Verwijderen van klassieke gebruikersinterface](#classic-ui).
 
-## Inname van bedrijfsmiddelen {#asset-ingestion}
+## Inname en uploaden van bedrijfsmiddelen {#asset-ingestion}
 
 Het uploaden van middelen is geoptimaliseerd voor efficiëntie door het beter schalen van het opnemen van middelen en het sneller uploaden van middelen mogelijk te maken. Productmogelijkheden (webgebruikersinterfaces, desktopclients) zijn bijgewerkt. Dit kan echter gevolgen hebben voor een aantal bestaande aanpassingen.
 
@@ -34,12 +31,14 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door het beter sc
 
 Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met eerdere versies in knooppunten in de opslagplaats van middelen (dezelfde naamgevingsconventies).
 
-## Middelen-microservices ontwikkelen en testen {#developing-testing-asset-microservices}
+## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
-Asset microservices is een native cloudservice die automatisch wordt ingericht en bekabeld voor Experience Manager in programma&#39;s en omgevingen die worden beheerd in Cloud Manager. Ontwikkelaars die werken om Experience Manager uit te breiden of aangepaste bewerkingen uit te voeren, kunnen de bestaande inhoud (of elementen met uitvoeringen die zijn gegenereerd in een cloud-omgeving) gebruiken om hun code te testen en te valideren met behulp van, het weergeven en downloaden van elementen.
+Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale verwerking van verschillende elementtypen en verwerkingsopties. Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen. ImageMagick-integratie en FFMmpeg-transcodering zijn momenteel niet beschikbaar in de cloudservice.
 
-Om een volledige bevestiging van de code en het proces met inbegrip van activaopname en verwerking te doen, stel de codeveranderingen in een wolk-ontwikkelomgeving op gebruikend de pijpleiding en test met volledige uitvoering van de verwerking van activa-microdiensten.
+Asset microservices is een cloudservice die automatisch wordt ingericht en bekabeld voor Experience Manager in programma&#39;s en omgevingen die worden beheerd in Cloud Manager. Om Experience Manager uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of elementen gebruiken met uitvoeringen die zijn gegenereerd in een wolkenomgeving, om hun code te testen en te valideren met behulp van, het weergeven en downloaden van elementen.
+
+Om een volledige bevestiging van de code en het proces met inbegrip van activa het opnemen en verwerking te doen, stel de codeveranderingen in een wolk-ontwikkelomgeving op gebruikend [de pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) en test met volledige uitvoering van activa microservices verwerking.
 
 ## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
-De klassieke gebruikersinterface is niet meer beschikbaar in Experience Manager als cloudservice.
+De klassieke gebruikersinterface is niet meer beschikbaar in Experience Manager als cloudservice. De standaardinterface is de interface met aanraakbediening.
