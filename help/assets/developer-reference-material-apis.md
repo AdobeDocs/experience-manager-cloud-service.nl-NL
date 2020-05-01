@@ -3,7 +3,7 @@ title: 'Middelen-API''s voor beheer van digitale middelen in Adobe Experience Ma
 description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -40,7 +40,7 @@ Belangrijke verschillen in vergelijking met eerdere versies van AEM zijn:
 Deze aanpak moet zorgen voor een schaalbaardere en krachtigere verwerking van geüploade bedrijfsmiddelen.
 
 > !![NOTE]
-Als u de clientcode wilt bekijken die deze aanpak implementeert, raadpleegt u de open-source [aem-upload bibliotheek](https://github.com/adobe/aem-upload)
+Als u de clientcode wilt controleren die deze aanpak implementeert, raadpleegt u de open-source [em-upload bibliotheek](https://github.com/adobe/aem-upload)
 
 ### Uploaden starten {#initiate-upload}
 
@@ -92,25 +92,27 @@ Dit kan onder andere worden bereikt door de grootte van de onderdelen te bereken
 
 * Onderdeelgrootte berekenen door totale grootte te delen door aantal URI&#39;s: 20,000 / 2 = 10,000
 * POST bytewaaier 0-9.999 van binair aan eerste URI in de lijst van upload URIs
-* POST bytewaaier 10.000-19.999 van binair aan tweede URI in de lijst van upload URIs
+* POST-bytebereik 10.000 - 19.999 van binair aan de tweede URI in de lijst met URI&#39;s voor uploaden
 
 Als dit gelukt is, reageert de server op elke aanvraag met een `201` statuscode.
 
 ### Uploaden voltooien {#complete-upload}
 
-Wanneer alle delen van een binair getal zijn geüpload, bestaat de laatste stap uit het verzenden van een HTTP POST-aanvraag naar de volledige URI die door de initiatiegegevens wordt verschaft. Het inhoudstype van de aanvraaginstantie moet toepassings-/`x-www-form-urlencoded` formuliergegevens zijn, die de volgende velden bevatten:
+Nadat alle delen van een binair bestand zijn geüpload, verzendt u een HTTP POST-aanvraag naar de volledige URI die door de initiatiegegevens wordt verschaft. Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten. `application/x-www-form-urlencoded`
 
-* `(string) fileName`: Vereist. De naam van het element, zoals deze werd verstrekt in de inleidingsgegevens.
-* `(string) mimeType`: Vereist. Het HTTP-inhoudstype van het binaire getal, zoals is opgegeven door de initiatiegegevens.
-* `(string) uploadToken`: Vereist. Upload token voor het binaire bestand, zoals werd opgegeven in de initiatiegegevens.
-* `(bool) createVersion`: Optioneel. Als de waarde true is en er al een element met de opgegeven naam bestaat, maakt de instantie een nieuwe versie van het element.
-* `(string) versionLabel`: Optioneel. Als er een nieuwe versie wordt gemaakt, het label dat aan de versie wordt gekoppeld.
-* `(string) versionComment`: Optioneel. Als er een nieuwe versie wordt gemaakt, worden opmerkingen toegevoegd die aan de versie worden gekoppeld.
-* `(bool) replace`: Optioneel: Als true en een element met de opgegeven naam al bestaat, verwijdert de instantie het element en maakt deze opnieuw.
+| Fields | Type | Vereist of niet | Beschrijving |
+|---|---|---|---|
+| `fileName` | Tekenreeks | Vereist | De naam van het element, zoals deze werd verstrekt in de inleidingsgegevens. |
+| `mimeType` | Tekenreeks | Vereist | Het HTTP-inhoudstype van het binaire getal, zoals is opgegeven door de initiatiegegevens. |
+| `uploadToken` | Tekenreeks | Vereist | Upload token voor het binaire bestand, zoals werd opgegeven in de initiatiegegevens. |
+| `createVersion` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam al bestaan, maakt Experience Manager een nieuwe versie van het element. |
+| `versionLabel` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, wordt het label gekoppeld aan de nieuwe versie van een element. |
+| `versionComment` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
+| `replace` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam al bestaan, verwijdert Experience Manager het element en maakt het opnieuw. |
 
 >!![NOTE]
 >
-> Als het element al bestaat en createVersion noch replace is opgegeven, werkt de instantie de huidige versie van het element bij met het nieuwe binaire getal.
+> Als het element al bestaat en noch `createVersion` `replace` noch is opgegeven, werkt Experience Manager de huidige versie van het element bij met het nieuwe binaire element.
 
 Net als bij het initiëringsproces kunnen de volledige aanvraaggegevens informatie voor meer dan één bestand bevatten.
 
@@ -120,46 +122,36 @@ Als dit gelukt is, reageert de server met een `200` statuscode.
 
 ### Uploadbibliotheek met open bron {#open-source-upload-library}
 
-Voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken, biedt Adobe opensource-bibliotheken en -gereedschappen als uitgangspunt:
+Voor meer informatie over de uploadalgoritmen of voor het maken van uw eigen uploadscripts en -gereedschappen biedt Adobe opensource-bibliotheken en -gereedschappen als uitgangspunt:
 
-* [Bibliotheek voor het uploaden van bronbestanden openen](https://github.com/adobe/aem-upload)
-* [Opdrachtregelgereedschap van bron openen](https://github.com/adobe/aio-cli-plugin-aem)
+* [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload)
+* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
->[!NOTE]
-Voor Experience Manager als Cloud Service worden alleen de nieuwe upload-API&#39;s ondersteund. API&#39;s van Experience Manager 6.5 zijn afgekeurd.
-
-Methoden die betrekking hebben op het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
+Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;s voor uploaden ondersteund. De API&#39;s van Adobe Experience Manager 6.5 zijn afgekeurd. De methoden voor het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, zoals `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Bibliotheek voor het uploaden van bronbestanden openen](https://github.com/adobe/aem-upload)
-* [Opdrachtregelgereedschap van bron openen](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-source Aem-upload bibliotheek](https://github.com/adobe/aem-upload).
+* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-De meeste verwerking van bedrijfsmiddelen wordt uitgevoerd op basis van de configuratie van **[!UICONTROL verwerkingsprofielen]** door [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)en vereist geen ontwikkelaarsextensies.
+In de Manager van de Ervaring, is de activaverwerking gebaseerd op de configuratie van Profielen **[!UICONTROL van de]** Verwerking die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
-Voor de configuratie van de workflow na verwerking, standaard AEM Workflows met extensies (aangepaste stappen kunnen bijvoorbeeld worden gebruikt). Lees de volgende subsectie om te begrijpen welke workflowstappen kunnen worden gebruikt in de workflows voor het naverwerken van bedrijfsmiddelen.
+Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
-### Workflowstappen in de workflow na verwerking {#post-processing-workflows-steps}
+## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
->[!NOTE]
-Deze sectie is vooral van toepassing op klanten die als Cloud Service van vorige versies van AEM bijwerken aan AEM.
+Klanten die een upgrade uitvoeren naar Experience Manager als cloudservice uit eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van middelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] -workflow werden gebruikt, worden niet ondersteund.
 
-Vanwege een nieuw implementatiemodel dat is geïntroduceerd met Experience Manager als Cloud Service, worden bepaalde workflowstappen die vóór de introductie van asset microservices in de `DAM Update Asset` workflow zijn gebruikt, mogelijk niet meer ondersteund voor workflows na verwerking. Merk op dat de meeste van hen door een veel eenvoudiger worden vervangen om activa microdiensten te vormen en te gebruiken.
-
-Hier volgt een lijst met technische workflowmodellen en hun supportniveau in AEM als cloudservice:
-
-### Ondersteunde workflowstappen {#supported-workflow-steps}
-
-De volgende workflowstappen worden ondersteund in de Cloud Service.
+De volgende workflowstappen worden in Experience Manager ondersteund als Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -170,8 +162,6 @@ De volgende workflowstappen worden ondersteund in de Cloud Service.
 * `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
-
-### Niet-ondersteunde of vervangen modellen {#unsupported-replaced-models}
 
 De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar.
 
