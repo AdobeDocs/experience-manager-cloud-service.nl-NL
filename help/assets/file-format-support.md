@@ -3,7 +3,7 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -17,7 +17,7 @@ Daarnaast biedt Experience Manager Assets uitgebreide ondersteuning voor het gen
 De volgende legenda beschrijft het steunniveau.
 
 | Ondersteuningsniveau | Beschrijving |
-| ------------------------------------------------------------ | --------------------------- |
+| ------------- | --------------------------- |
 | ✓ | Ondersteund |
 | * | Zie de opmerkingen onder de tabel |
 | - | Niet van toepassing |
@@ -26,28 +26,26 @@ De volgende legenda beschrijft het steunniveau.
 
 De hooglichten omvatten:
 
-* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, InDesign, Illustrator, XD, Dimension en Acrobat / PDF.
+* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension en Adobe Acrobat of PDF.
 * Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
 * [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Algemene [documentindelingen](#document-formats), waaronder [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) en [Document](#opendocument-formats) openen.
+* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
 Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 | Kolom | Beschrijving |
 | ------------ | --------------------------------------------------------------- |
-| Format | Bestandsindeling (bestandsextensie) van het element voor het oorspronkelijke binaire bestand |
-| GIF | GIF-indeling voor genereren van vertoning |
-| JPEG | JPEG-indeling voor genereren van vertoning |
-| PNG | PNG-indeling voor genereren van vertoning |
-| XMP | Extractie van metagegevens van het oorspronkelijke binaire bestand |
-| TXT | Tekst uit document extraheren voor indexering |
-| Breedte/Hoogte | Ondersteuning voor het definiëren van de breedte en hoogte van een uitvoering (pixels) |
+| Format | Bestandsindeling (bestandsextensie) van het oorspronkelijke binaire bestand van het element. |
+| GIF | GIF-indeling voor genereren van vertoning. |
+| JPEG | JPEG-indeling voor genereren van vertoning. |
+| PNG | PNG-indeling voor genereren van vertoning. |
+| Breedte/Hoogte | Ondersteuning voor het definiëren van de breedte en hoogte van een vertoning in pixels. |
 
 ### Adobe-indelingen {#adobe-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | TXT | XMP | Breedte/Hoogte |
-| ----------- | --- | ---- | --- | --- | --- | ------------ |
+| Bestandsindeling | GIF | JPEG | PNG | Volledige tekstextractie | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | KLLAGE | - | - | - | - | ✓ | - |
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -64,8 +62,8 @@ Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 ### Afbeeldingsindelingen {#image-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Bestandsindeling | GIF | JPEG | PNG | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | BMP | ✓ | ✓ | ✓ | - | ✓ |
 | EPS | - | - | - | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -76,8 +74,8 @@ Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 ### Camera RAW-indelingen {#camera-raw-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Bestandsindeling | GIF | JPEG | PNG | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -108,38 +106,34 @@ Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 ### Documentindelingen {#document-formats}
 
-| Bestandsindeling | TXT | XMP |
-| ----------- | --- | --- |
-| EPUB | ✓ | - |
-| HTML | ✓ | - |
-| PS | - | ✓ |
-| RTF | ✓ | - |
-| TEXT | ✓ | - |
-| XML | ✓ | - |
+De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
-### Microsoft Office-indelingen {#microsoft-office-formats}
-
-| Bestandsindeling | GIF | JPEG | PNG | TEXT | Breedte/Hoogte |
-| ----------- | --- | ---- | --- | ---- | ------------ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-### OpenDocument-indelingen {#opendocument-formats}
-
-| Bestandsindeling | GIF | JPEG | PNG | TEXT | Hoogte |
-| ----------- | --- | ---- | --- | ---- | ------ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| UIT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+|  | GIF | JPEG | PNG | Volledige tekstextractie | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| UIT | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - |
+| HTML | - | - | - | ✓ | - | ✓ | ✓ |
+| PS | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - |
 
 ### Video-indelingen {#video-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | XMP | Breedte/Hoogte |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Bestandsindeling | GIF | JPEG | PNG | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3G2 | - | - | - | ✓ | - |
 | 3GP | - | - | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -165,25 +159,7 @@ Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 ### Audio-indelingen {#audio-formats}
 
-Middelen als Cloud Service biedt XMP-ondersteuning voor deze audio-indelingen: AIF, ASF, M4A, MP3, WAV en WMA.
-
-## Ondersteunde documentindelingen {#doc-formats}
-
-Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt.
-
-| Bestandsindeling | Opslag | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
-|---|---|---|---|
-| DOC | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ |
-| PDF | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |
-| RTF | ✓ | ✓ | ✓ |
-| TXT | ✓ | ✓ | ✓ |
-| XLS | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ |
-| PPT | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ |
+Middelen als Cloud Service bieden ondersteuning voor het ophalen van XMP-metagegevens voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
 >[!MORELIKETHIS]
 >
