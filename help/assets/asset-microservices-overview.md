@@ -3,7 +3,7 @@ title: Weet hoe middelenmicroservices uw digitale middelen in de cloud kunnen ve
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -15,9 +15,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-Adobe Experience Manager als cloudservice biedt een cloud-native manier om gebruik te maken van Experience Manager-toepassingen en -mogelijkheden. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen.
-
-Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices, die door Adobe worden beheerd voor een optimale verwerking van verschillende typen bedrijfsmiddelen en verwerkingsopties. Belangrijkste voordelen zijn:
+Adobe Experience Manager als Cloud Service biedt een methode die in de cloud zelf kan worden gebruikt om Experience Manager-toepassingen en -mogelijkheden te benutten. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen. Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale verwerking van verschillende elementtypen en verwerkingsopties. De belangrijkste voordelen van cloudnative assetmicroservices zijn:
 
 * Schaalbare architectuur die een naadloze verwerking mogelijk maakt voor bronintensieve bewerkingen.
 * Efficiënte indexering en tekstextracties die geen invloed hebben op de prestaties van uw Experience Manager-omgevingen.
@@ -28,7 +26,7 @@ Asset microservices bieden een schaalbare en veerkrachtige verwerking van middel
 * Waar van toepassing worden native Adobe-bestandsverwerkingsservices gebruikt, die garant staan voor hoogwaardige uitvoer en [efficiënte verwerking van door Adobe zelf gegenereerde indelingen](file-format-support.md).
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
-Middelenmicroservices helpen u de behoefte aan renderingtools van derden (zoals ImageMagick) te voorkomen en vereenvoudigen de configuratie van het systeem, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen.
+Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen.
 
 ## Architectuur op hoog niveau {#asset-microservices-architecture}
 
@@ -45,12 +43,12 @@ De belangrijkste stappen van de opname en verwerking met behulp van asset micros
 
 * Clients, zoals webbrowsers of Adobe Asset Link, sturen een aanvraag voor het uploaden naar Experience Manager en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
 * Wanneer het directe binaire uploaden is voltooid, brengt de client een melding naar Experience Manager.
-* De Manager van de ervaring verzendt een verwerkingsverzoek naar activa microservices. De inhoud van de aanvraag is afhankelijk van de configuratie van de verwerkingsprofielen in Experience Manager die bepaalt welke uitvoeringen moeten worden gegenereerd
+* De Manager van de ervaring verzendt een verwerkingsverzoek naar activa microservices. De inhoud van de aanvraag is afhankelijk van de configuratie van de verwerkingsprofielen in Experience Manager die opgeeft welke uitvoeringen moeten worden gegenereerd.
 * De back-end van de microservices van activa ontvangt het verzoek, verzendt het naar één of meerdere microservices die op het verzoek worden gebaseerd. Elke microservice krijgt rechtstreeks vanuit de binaire cloudopslag toegang tot het oorspronkelijke binaire bestand.
 * De resultaten van de verwerking, zoals uitvoeringen, worden opgeslagen in de binaire cloudopslag.
-* Experience Manager wordt op de hoogte gesteld dat de verwerking compleet is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) beschikbaar zijn in Experience Manager voor het geüploade element
+* Experience Manager wordt op de hoogte gesteld dat de verwerking voltooid is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in Experience Manager voor het geüploade element.
 
-Dit is de basisstroom van activa het opnemen en verwerken. Indien dit het geval is, kan Experience Manager ook het workflowmodel van de klant starten om het middel na de verwerking uit te voeren, bijvoorbeeld om enkele aangepaste stappen uit te voeren die specifiek zijn voor de omgeving van de klant, zoals het ophalen van informatie van de bedrijfssystemen van de klant om het element aan de eigenschappen van het bedrijfsmiddel toe te voegen.
+Dit is de basisstroom van activa het opnemen en verwerken. Indien geconfigureerd, kan Experience Manager ook een aangepast workflowmodel starten voor de naverwerking van het element. Voer bijvoorbeeld aangepaste stappen uit die specifiek zijn voor uw omgeving, zoals het ophalen van informatie van een bedrijfssysteem en het toevoegen van elementen aan eigenschappen.
 
 De opname- en verwerkingsstroom zijn de belangrijkste concepten van de architectuur voor assetmicroservices voor Experience Manager.
 
