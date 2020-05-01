@@ -3,7 +3,7 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,14 +24,14 @@ Asset microservices bieden een schaalbare en veerkrachtige verwerking van middel
 
 De verwerking van activa hangt van de configuratie in Profielen **[!UICONTROL van de]** Verwerking af, die een standaardopstelling verstrekken, en een beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Beheerders kunnen de configuraties van naverwerkingsworkflows maken en onderhouden, inclusief optionele aanpassing. Door workflows aan te passen zijn uitbreidbaarheid en volledige aanpassing mogelijk.
 
-Een stroom op hoog niveau voor de verwerking van bedrijfsmiddelen is lager.
+Met Asset microservices kunt u een [breed scala aan bestandstypen](/help/assets/file-format-support.md) verwerken die meer indelingen offline bestrijken dan in eerdere versies van Experience Manager mogelijk was, bijvoorbeeld door miniatuurextractie van PSD- en PSB-indelingen waarvoor eerder oplossingen van derden zoals ImageMagick waren vereist.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![Een overzicht op hoog niveau van de](assets/asset-microservices-flow.png "verwerking van bedrijfsmiddelenEen overzicht op hoog niveau van de verwerking van bedrijfsmiddelen")
 
 >[!NOTE]
 >
