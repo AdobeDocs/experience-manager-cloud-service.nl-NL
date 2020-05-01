@@ -2,7 +2,7 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager als cloudservice.
 translation-type: tm+mt
-source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,11 +24,12 @@ Deze sectie bevat een lijst met functies en mogelijkheden die in Experience Mana
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
-| Gebied | Functie | Vervanging |
+| Mogelijkheden | Verouderde functie | Vervanging |
 | ------------ | ------------------ | ----------- |
-| Activa | Inname en verwerking van bedrijfsmiddelen maakt niet langer gebruik van `DAM Asset Update` workflow | Asset-opname maakt nu gebruik van [asset-microservices](/help/assets/asset-microservices-overview.md) . |
-| Activa | Elementen rechtstreeks uploaden naar AEM - zie API&#39;s voor het uploaden van [afgekeurde elementen](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | [Directe binaire upload](/help/assets/add-assets.md) wordt gebruikt in de Manager van de Ervaring als Dienst van de Wolk. Zie API&#39;s voor [directe upload voor meer informatie](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Activa | [Bepaalde workflowstappen](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in de `DAM Asset Update` workflow worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s zoals ImageMagick | [Asset microservices](/help/assets/asset-microservices-overview.md) bieden een vervanging voor veel workflows. Gebruik voor aangepaste verwerking [naverwerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets | `DAM Asset Update` werkwijze voor het verwerken van opgenomen afbeeldingen. | Asset-opname maakt nu gebruik van [asset-microservices](/help/assets/asset-microservices-overview.md) . |
+| Assets | Elementen rechtstreeks uploaden naar AEM. Zie API&#39;s voor het uploaden van [afgekeurde elementen](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Gebruik [Direct binair uploaden](/help/assets/add-assets.md). Zie API&#39;s voor [directe upload voor meer informatie](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Assets | [Bepaalde workflowstappen](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in de `DAM Asset Update` workflow worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s zoals ImageMagick. | [Asset microservices](/help/assets/asset-microservices-overview.md) bieden een vervanging voor veel workflows. Gebruik voor aangepaste verwerking [naverwerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets | MPEG-transcodering van video&#39;s. | Gebruik [Asset microservices](/help/assets/asset-microservices-overview.md)voor het genereren van miniaturen in MPEG. Gebruik [Dynamische media](/help/assets/manage-video-assets.md)voor MPEG-transcodering. |
 
 ## Verwijderde functies {#removed-features}
 
@@ -37,7 +38,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit AEM zijn verwi
 | Gebied | Functie | Vervanging |
 | ------------ | ------------------ | ----------- |
 | UI | Terwijl sommige Klassieke dialogen UI voorlopig voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, het Leegmaken van de Versie en sommige configuraties van de Dienst van de Wolk blijven, is de toegang tot Klassieke UI in het algemeen verwijderd in het product van AEM UI. | Standaardinterface |
-| Dynamische media | Eerdere integraties met de [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) en de [Dynamic Media Hybrid-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) zijn niet beschikbaar in AEM als Cloud Service. | Gebruik [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) die met Experience Manager worden geleverd als cloudservice. |
+|  Dynamic Media  | Previous integrations with [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/scene7.html) and [Dynamic Media Hybrid mode](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html) are not available in AEM as a Cloud Service. | Gebruik [Dynamische media](/help/assets/dynamic-media/dynamic-media.md) die bij Experience Manager worden geleverd als een cloudservice. |
 | Sites | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in AEM 6.4 en zijn nu verwijderd uit AEM. |
 | Sites | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de AEM-opslagplaats niet toegankelijk zijn tijdens runtime. |
-| Activa | [Delen van AEM-middelen via de Marketing Cloud Assets Core Service en Creative Cloud-services](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) is niet beschikbaar. | Voor integratie met Creative Cloud gebruikt u [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
+| Assets | [Delen van AEM-middelen via de Marketing Cloud Assets Core Service en Creative Cloud-services](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) is niet beschikbaar. | Voor integratie met Creative Cloud gebruikt u [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
