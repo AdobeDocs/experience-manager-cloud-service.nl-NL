@@ -3,7 +3,7 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 4729f0bdd3cf7e2c6fc80e52bf2f70d689956296
 
 ---
 
@@ -44,91 +44,91 @@ Kolommen van de volgende tabellen bevatten de volgende informatie:
 
 ### Adobe-indelingen {#adobe-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | Volledige tekstextractie | Metagegevensextractie | Breedte/Hoogte |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| KLLAGE | - | - | - | - | ✓ | - |
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| IDEAS | - | - | - | - | ✓ | - |
-| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓* |
-| INDT | - | - | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | - | - | ✓ | - |
-| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| Bestandsindeling | GIF | JPEG | PNG | Volledige tekstextractie | TIFF | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | ------------------- | -------- | ------------------- | ------------ |
+| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| KLLAGE | - | - | - | - | - | ✓ | - |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |
+| IDEAS | - | - | - | - | - | ✓ | - |
+| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓* |
+| INDT | - | - | - | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | - | - | - | ✓ | - |
+| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
 
 \* Voor INDD (InDesign-bestanden) wordt de grootte van de uitvoering bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in InDesign (**[!UICONTROL Voorkeuren > Bestandsafhandeling > Voorvertoningsafbeeldingen altijd opslaan met documenten, Grootte]** voorvertoning) om een grotere uitvoering in te sluiten.
 
 ### Afbeeldingsindelingen {#image-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | Metagegevensextractie | Breedte/Hoogte |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| BMP | ✓ | ✓ | ✓ | - | ✓ |
-| EPS | - | - | - | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | - | - | ✓ | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Bestandsindeling | GIF | JPEG | PNG | TIFF | Metagegevensextractie | Breedte/Hoogte | Uitsnijden |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ | -------- |
+| BMP | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| EPS | - | - | - | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SVG | - | - | - | - | ✓ | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 
 ### Camera RAW-indelingen {#camera-raw-formats}
 
-| Bestandsindeling | GIF | JPEG | PNG | Metagegevensextractie | Breedte/Hoogte |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Bestandsindeling | GIF | JPEG | PNG | TIFF | Metagegevensextractie | Breedte/Hoogte |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ |
+| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ### Documentindelingen {#document-formats}
 
 De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
-|  | GIF | JPEG | PNG | Volledige tekstextractie | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
-| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| UIT | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | - | - | ✓ | - | - | - |
-| HTML | - | - | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | - | - | ✓ | - | - |
-| RTF | - | - | - | ✓ | - | ✓ | ✓ |
-| TXT | - | - | - | ✓ | - | ✓ | ✓ |
-| XML | - | - | - | ✓ | - | - | - |
+|  | GIF | JPEG | PNG | Volledige tekstextractie | TIFF | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | -------- | ------------ | ------------------- | ------------------------------------------------------------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| UIT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - | - |
+| HTML | - | - | - | ✓ | - | - | ✓ | ✓ |
+| PS | - | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - | - |
 
 ### Video-indelingen {#video-formats}
 
