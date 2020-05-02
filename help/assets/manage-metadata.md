@@ -4,7 +4,7 @@ description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
 ### Standaardmetagegevens {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is de belangrijkste en meest gebruikte reeks metagegevens .
+* DC - [!DNL Dublin Core] is een belangrijke en veelgebruikte reeks metagegevens.
 * DICOM - Digital Imaging and Communications in Medicine.
 * Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard bevat veel onderwerpspecifieke metagegevens.
 * rdf - Resource Description Framework - voor algemene semantische webmetagegevens.
@@ -173,45 +173,45 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u deze gebruikt, kunnen andere toepassingen mogelijk de meta-gegevens niet gebruiken. Als u bijvoorbeeld een element met [!DNL Adobe Photoshop] metagegevens hebt en een andere toepassing voor het renderen van afbeeldingen probeert toegang te krijgen tot de metagegevens, heeft deze mogelijk geen toegang tot de metagegevens. Als u ontdekt dat u veel toepassing-specifieke meta-gegevens in uw activa hebt, kunt u een werkschemagestap tot stand brengen die een toepassing-specifieke bezit in een standaardbezit verandert.
 
 * ACDSee - Metagegevens die door het [!DNL ACDSee] programma worden beheerd. Zie [www.acdsee.com/](https://www.acdsee.com/).
-* album - [!DNL Adobe Photoshop Album].
-* cq - Gebruikt door [!DNL Experience Manager Assets].
-* dam - Gebruikt door [!DNL Experience Manager Assets].
-* Index - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro - IView MediaPro.
+* Album - [!DNL Adobe Photoshop Album].
+* CQ - Gebruikt door [!DNL Experience Manager Assets].
+* DAM - Gebruikt door [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) is een verzameling hulpmiddelen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto &amp; MP - Microsoft Photo.
-* pdf en pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF en PDF/X.
+* Photoshop en psAux - [!DNL Adobe Photoshop].
 
 ### Metagegevens van Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* prism - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
-* xmpPlus - Integratie van PLUS met XMP.
+* `xmpPlus` - Integratie van PLUS met XMP.
 
 ### Specifieke metagegevens voor fotografie {#photography-specific-metadata}
 
 * EXIF - Technische informatie van camera, inclusief GPS-positie.
 * CRS - [!DNL Camera Raw] schema.
-* Iptc4xmpCore en iptc4xmpExt.
+* `iptc4xmpCore` and `iptc4xmpExt`.
 * TIFF - metagegevens van afbeeldingen (niet alleen voor TIFF-afbeeldingen).
 
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
 
-* pdf en pdfx - Adobe PDF en toepassingen van derden.
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* PDF en PDF/X - Adobe PDF en toepassingen van derden.
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP.
-* xmpPG - XMP-metagegevens voor gepagineerde tekst.
+* `xmpPG` - XMP-metagegevens voor gepagineerde tekst.
 
 ### Multimediaspecifieke metagegevens {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - Mediabeheer.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Mediabeheer.
 
 ## Workflows met metagegevens {#metadata-driven-workflows}
 
