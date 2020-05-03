@@ -3,7 +3,7 @@ title: Metagegevens van elementen in bulk importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 
 ---
 
@@ -21,8 +21,8 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
 1. Navigeer naar de gebruikersinterface Middelen en tik op **[!UICONTROL Maken]** /klik op de werkbalk.
-1. Selecteer **[!UICONTROL Metagegevens]** in het menu.
-1. Tik op de pagina **[!UICONTROL Metagegevens importeren]** of klik op **[!UICONTROL Bestand]** selecteren. Selecteer het CSV-bestand met de metagegevens.
+1. From the menu, select **[!UICONTROL Metadata]**.
+1. Tik op de pagina **[!UICONTROL Metagegevens importeren]** of klik op **[!UICONTROL Bestand]** selecteren. Selecteer het CSV-bestand met de metadata.
 1. Geef de volgende parameters op:
 
    | Parameter | Beschrijving |
@@ -34,6 +34,12 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Tik/klik op **[!UICONTROL Importeren]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
+
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, is `hh` uren in 24-uursnotatie, `fff` is nanoseconden, en `-00:00` is timezone offset. Bijvoorbeeld, `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 AM PST tijd.
+
+>[!CAUTION]
+>
+>Als de datumnotatie niet overeenkomt `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
 
 ## Metagegevens exporteren {#export-metadata}
 
@@ -56,7 +62,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 1. Geef in het veld **[!UICONTROL Eigenschappen die u wilt exporteren]** op of u alle of specifieke eigenschappen wilt exporteren. Als u Selectieve eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
 
 1. Tik op de werkbalk of klik op **[!UICONTROL Exporteren]**. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
-1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Openen]** op de werkbalk. Tik op of klik op **[!UICONTROL CSV-download]** op de werkbalk om het CSV-bestand met de metagegevens te downloaden. Click **[!UICONTROL Close]**.
+1. Open het bericht in het Postvak IN voor de exporttaak. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd](assets/csv_download.png)
-   *Afbeelding:Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd*
+   *Afbeelding: Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd*
