@@ -3,7 +3,7 @@ title: 'Middelen-API''s voor beheer van digitale middelen in Adobe Experience Ma
 description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,7 +48,7 @@ De eerste stap bestaat uit het indienen van een HTTP POST-aanvraag bij de map wa
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten: `application/x-www-form-urlencoded`
 
