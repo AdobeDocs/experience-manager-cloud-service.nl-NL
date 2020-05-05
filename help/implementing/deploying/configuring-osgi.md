@@ -2,7 +2,7 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ Als bijvoorbeeld `$[secret:server_password]` wordt gebruikt, moet een tekstbesta
 Als voor een OSGI-eigenschap andere waarden zijn vereist voor auteur en publiceren:
 
 * Er moeten aparte `config.author` en `config.publish` OSGi-mappen worden gebruikt, zoals wordt beschreven in de sectie [Resolutie van](#runmode-resolution)uitvoermodus.
-* er moeten onafhankelijke variabelenamen worden gebruikt . Het wordt aangeraden een voorvoegsel te gebruiken, bijvoorbeeld auteur_<variablename> en publish_<variablename> waarbij de namen van variabelen gelijk zijn
+* er moeten onafhankelijke variabelenamen worden gebruikt . Het wordt aanbevolen een voorvoegsel te gebruiken, bijvoorbeeld `author_<variablename>` en `publish_<variablename>` wanneer de namen van variabelen gelijk zijn
 
 ### Configuratievoorbeelden {#configuration-examples}
 
