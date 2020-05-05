@@ -2,7 +2,7 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 De bedoeling is dat de waarde van de eigenschap OSGI `my_var1` verschilt voor het werkgebied, de prod en voor elk van de drie dev-omgevingen. De API voor Cloud Manager moet dus worden aangeroepen om de waarde voor elke dev- `my_var1` gebeurtenis in te stellen.
 
+<table>
+<tr>
+<td>
+<b>Map</b>
+</td>
+<td>
+<b>Inhoud van myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**Voorbeeld 3**
+
+De bedoeling is dat de waarde van het bezit OSGi voor stadium, productie, en enkel één van de ontwikkelomgevingen gelijk `my_var1` moet zijn, maar voor het om voor de andere twee dev milieu&#39;s te verschillen. In dit geval moet de API voor Cloud Manager worden aangeroepen om de waarde van `my_var1` voor elke ontwikkelomgeving in te stellen, inclusief voor de ontwikkelomgeving die dezelfde waarde moet hebben als werkgebied en productie. Het zal niet de waarde erven die in de omslag **config** wordt geplaatst.
+
+<table>
+<tr>
+<td>
+<b>Map</b>
+</td>
+<td>
+<b>Inhoud van myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+Een andere manier om dit te verwezenlijken zou moeten een standaardwaarde voor het vervangingsteken in config.dev omslag plaatsen dusdanig dat het de zelfde waarde zoals in de **config** omslag is.
+
+<table>
+<tr>
+<td>
+<b>Map</b>
+</td>
+<td>
+<b>Inhoud van myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## Cloud Manager API-indeling voor het instellen van eigenschappen {#cloud-manager-api-format-for-setting-properties}
+
+### Waarden instellen via API {#setting-values-via-api}
+
+Het roepen van API zal de nieuwe variabelen en de waarden aan een milieu van de Wolk opstellen, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Merk op dat standaardvariabelen niet via API, maar eerder in het bezit OSGi zelf worden geplaatst.
+
+Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) voor meer informatie.
+
+### Waarden ophalen via API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) voor meer informatie.
+
+### Waarden verwijderen via API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+Als u een variabele wilt verwijderen, neemt u deze op met een lege waarde.
+
+Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) voor meer informatie.
+
+### Waarden ophalen via de opdrachtregel {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Waarden instellen via de opdrachtregel {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Waarden verwijderen via de opdrachtregel {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Zie [deze pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over het configureren van waarden met de plug-in Cloud Manager voor Adobe I/O CLI.
+
+### Aantal variabelen {#number-of-variables}
+
+Er kunnen maximaal 20 variabelen worden gedeclareerd.
+
+## Overwegingen bij de implementatie voor geheime en omgevingsspecifieke configuratiewaarden {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Omdat de geheime en milieu-specifieke configuratiewaarden buiten Git leven, en daarom geen deel van formele AEM als mechanismen van de de plaatsing van de Dienst van de Wolk uitmaken, zou de klant moeten leiden, besturen en in AEM als implementatieproces van de Dienst van de Wolk integreren.
+
+Zoals hierboven vermeld, zal het roepen van API de nieuwe variabelen en de waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode opstellen. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
+
+Klanten bellen de API doorgaans om omgevingsvariabelen in te stellen voordat ze code implementeren die op hen is gebaseerd in Cloud Manager. In sommige situaties, zou men een bestaande variabele kunnen willen wijzigen nadat de code reeds is opgesteld.
+
+Merk op dat API niet kan slagen wanneer een pijpleiding in gebruik is, of een update AEM of klantenplaatsing, afhankelijk van welk deel van het eind aan eind pijpleiding op dat ogenblik wordt uitgevoerd. Het antwoord op de fout geeft aan dat het verzoek niet is geslaagd, hoewel de specifieke reden niet wordt vermeld.
+
+Er kunnen scenario&#39;s zijn waar een geplande plaatsing van de klantencode op bestaande variabelen baseert om nieuwe waarden te hebben, die niet met de huidige code aangewezen zouden zijn. Als dit reden tot zorg is, wordt aanbevolen op additieve wijze variabele wijzigingen aan te brengen. Hiertoe maakt u nieuwe variabelenamen in plaats van alleen de waarde van oude variabelen te wijzigen zodat oude code nooit naar de nieuwe waarde verwijst. Wanneer de nieuwe versie van de klant stabiel lijkt, kunt u de oudere waarden verwijderen.
+
+Op dezelfde manier aangezien de waarden van een variabele niet versioned zijn, zou een terugdraaiing van code het kunnen veroorzaken om nieuwere waarden te verwijzen die kwesties veroorzaken. De bovengenoemde additieve variabele-strategie zou ook hier helpen.
+
+Deze additieve variabele strategie is ook nuttig voor scenario&#39;s van de rampenterugwinning waar als de code van verscheidene dagen vóór moest worden opnieuw opgesteld, de veranderlijke namen en de waarden het verwijzingen nog intact zal zijn. Dit is gebaseerd op een strategie waarbij een klant een paar dagen wacht voordat deze oudere variabelen worden verwijderd, anders zou de oudere code geen geschikte variabelen hebben om naar te verwijzen.
