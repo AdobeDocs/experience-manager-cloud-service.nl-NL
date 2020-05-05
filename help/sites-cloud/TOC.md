@@ -2,7 +2,7 @@
 sub-product: Inhoud in AEM ontwerpen als cloudservice
 user-guide-title: Inhoud in AEM ontwerpen als cloudservice
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [Exporteren naar CSV](authoring/fundamentals/csv-export.md)
       + [Onderdelen](authoring/fundamentals/components.md)
       + [Authoring voor mobiele apparaten](authoring/fundamentals/mobile.md)
-      + [Toegankelijke content (WCAG 2.0-compatibiliteit)](authoring/fundamentals/accessible-content.md)
+      + [Toegankelijke inhoud maken (WCAG 2.1-compatibiliteit)](authoring/fundamentals/accessible-content.md)
       + [Problemen oplossen](authoring/fundamentals/troubleshooting.md)
       + [Sneltoetsen](authoring/fundamentals/keyboard-shortcuts.md)
    + Functies voor authoring {#features}
