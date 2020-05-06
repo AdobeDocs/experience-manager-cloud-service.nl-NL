@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## De configuratie maken in de opslagplaats {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. Maak in uw ui.apps-project zo nodig een `/apps/…/config.xxx` map op basis van de runmode die u gebruikt
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. Maak een nieuw JSON-bestand met de naam van de PID en voeg de `.cfg.json` extensie toe
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. Vul het JSON-bestand met de waardeparen van de OSGi-configuratiesleutel
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >Als u uit de doosOSGi dienst vormt, kunt u omhoog de OSGi bezitsnamen via kijken `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. Sla het JSON-bestand op in uw project. -->
 
 ## Indeling van eigenschappen configuratie in bronbeheer {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+Het creëren van een nieuw bezit van de Configuratie OSGI wordt beschreven in het [Toevoegen van een nieuwe configuratie aan de bewaarplaats](#creating-the-configuration-in-the-repository) hierboven sectie.
 
 Voer de volgende stappen uit en wijzig de syntaxis zoals beschreven in de onderstaande subsecties:
 
