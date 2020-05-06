@@ -2,12 +2,15 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# OSGi-configuraties {#osgi-configurations}
+# OSGi configureren voor AEM als cloudservice {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
@@ -95,7 +98,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met AEM als Dienst van de Wolk
 
 Het algemene geval voor OSGi gebruikt inline OSGi configuratiewaarden. Milieu-specifieke configuraties worden gebruikt slechts voor specifieke gebruiksgevallen waar een waarde tussen dev milieu&#39;s verschilt.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 De milieu-specifieke configuraties breiden de traditionele, statisch-bepaalde configuraties OSGi uit die gealigneerde waarden bevatten, die de capaciteit verstrekken om de OSGi configuratiewaarden extern via de Manager API van de Wolk te beheren. Het is belangrijk om te begrijpen wanneer de gemeenschappelijke en traditionele benadering van het bepalen van gealigneerde waarden en het opslaan van hen in Git, zou moeten worden gebruikt, tegenover het abstraheren van de waarden in milieu-specifieke configuraties.
 
@@ -165,50 +168,19 @@ Om een nieuwe configuratie aan de bewaarplaats toe te voegen moet u het volgende
 
 Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
-1. Gebruik CRXDE Lite om te navigeren naar:
+1. Maak in uw ui.apps-project zo nodig een `/apps/…/config.xxx` map op basis van de runmode die u gebruikt
 
-   ` /apps/<yourProject>`
+1. Maak een nieuw JSON-bestand met de naam van de PID en voeg de `.cfg.json` extensie toe
 
-1. Als deze nog niet bestaat, maakt u de `config` map ( `sling:Folder`):
 
-   * `config` - van toepassing op alle uitvoeringsmodi
-   * `config.<run-mode>` - specifiek voor een bepaalde uitvoeringsmodus
+1. Vul het JSON-bestand met de waardeparen van de OSGi-configuratiesleutel
 
-1. Maak in deze map een knooppunt:
-
-   * Type: `sling:OsgiConfig`
-   * Naam: de persistente identiteit (PID);
-
-      bijvoorbeeld het gebruik van AEM WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >Wanneer het maken van een Configuratie van de Fabriek voegt `-<identifier>` aan de naam toe.
-   >
-   >Zoals in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Waar `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten); bijvoorbeeld:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >Als u uit de doosOSGi dienst vormt, kunt u omhoog de OSGi bezitsnamen via kijken `/system/console/configMgr`
 
-1. Voor elke parameter die u wilt vormen, creeer een bezit op deze knoop:
 
-   * Naam: de parameternaam zoals aangetoond in de console van het Web; de naam wordt tussen haakjes weergegeven aan het einde van de veldbeschrijving. Bijvoorbeeld voor `Create Version on Activation` gebruik `versionmanager.createVersionOnActivation`
-   * Type: in voorkomend geval.
-   * Waarde: zoals vereist.
-   U hoeft alleen eigenschappen te maken voor de parameters die u wilt configureren, anderen gebruiken nog steeds de standaardwaarden die door AEM zijn ingesteld.
-
-1. Sla alle wijzigingen op.
-
-   De veranderingen worden toegepast zodra de knoop door de dienst (zoals met veranderingen die in de console van het Web worden aangebracht) opnieuw te beginnen wordt bijgewerkt.
-
->[!CAUTION]
->
->U mag niets in het `/libs` pad wijzigen.
-
->[!CAUTION]
->
->De volledige weg van een configuratie moet correct zijn om het bij opstarten te lezen.
-
+1. Sla het JSON-bestand op in uw project.
 
 ## Indeling van eigenschappen configuratie in bronbeheer {#configuration-property-format-in-source-control}
 
