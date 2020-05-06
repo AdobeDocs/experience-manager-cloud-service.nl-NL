@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -127,64 +127,66 @@ AEM als Dienst van de Wolk vereist het gebruik van milieu-specifieke configurati
 
 Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle AEM als milieu&#39;s van de Dienst van de Wolk, met inbegrip van Stadium en Productie op te slaan.
 
-### Een nieuwe configuratie toevoegen aan de opslagplaats {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### Wat u moet weten {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-Om een nieuwe configuratie aan de bewaarplaats toe te voegen moet u het volgende weten:
+To add a new configuration to the repository you need to know the following:
 
 1. The **Persistent Identity** (PID) of the service.
 
-   Verwijs naar het gebied van **Configuraties** in de console van het Web. De naam wordt tussen haakjes weergegeven na de bundelnaam (of in de **configuratiegegevens** onder aan de pagina).
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   Maak bijvoorbeeld een knooppunt `com.day.cq.wcm.core.impl.VersionManagerImpl.` om **AEM WCM Version Manager** te configureren.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Of een specifieke runmode wordt vereist. Maak de map:
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - voor alle uitvoeringsmodi
-   * `config.author` - voor de auteursomgeving
-   * `config.publish` - voor de publicatieomgeving
-   * `config.<run-mode>` - in voorkomend geval
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. Of een **Configuratie** of een Configuratie **van de** Fabriek noodzakelijk is.
-1. de afzonderlijke parameters die moeten worden geconfigureerd; met inbegrip van bestaande parameterdefinities die opnieuw moeten worden gemaakt.
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Verwijs het individuele parametergebied in de console van het Web. De naam wordt tussen haakjes weergegeven voor elke parameter.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   Maak bijvoorbeeld een eigenschap
-   `versionmanager.createVersionOnActivation` om versie **maken bij activering** te configureren.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Bestaat er al een configuratie in `/libs`? Als u alle configuraties in uw instantie wilt weergeven, gebruikt u het gereedschap **Query** in CRXDE Lite om de volgende SQL-query te verzenden:
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   Als zo, kan deze configuratie aan worden gekopieerd ` /apps/<yourProject>/`, dan in de nieuwe plaats worden aangepast.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## De configuratie maken in de opslagplaats {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
+To actually add the new configuration to the repository:
 
-1. Maak in uw ui.apps-project zo nodig een `/apps/…/config.xxx` map op basis van de runmode die u gebruikt
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. Maak een nieuw JSON-bestand met de naam van de PID en voeg de `.cfg.json` extensie toe
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. Vul het JSON-bestand met de waardeparen van de OSGi-configuratiesleutel
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >Als u uit de doosOSGi dienst vormt, kunt u omhoog de OSGi bezitsnamen via kijken `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Sla het JSON-bestand op in uw project.
+1. Save the JSON file to your project. -->
 
 ## Indeling van eigenschappen configuratie in bronbeheer {#configuration-property-format-in-source-control}
 
-Het creëren van een nieuw bezit van de Configuratie OSGI wordt beschreven in het [Toevoegen van een nieuwe configuratie aan de bewaarplaats](#creating-the-configuration-in-the-repository) hierboven sectie. Voer de volgende stappen uit en wijzig de syntaxis zoals beschreven in de onderstaande subsecties:
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Voer de volgende stappen uit en wijzig de syntaxis zoals beschreven in de onderstaande subsecties:
 
 ### Inline-waarden {#inline-values}
 
