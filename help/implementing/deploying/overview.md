@@ -1,13 +1,16 @@
 ---
-title: Implementeren naar AEM als Cloud Service
-description: 'Implementeren naar AEM als Cloud Service '
+title: Implementeren naar AEM as a Cloud Service
+description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '3512'
+ht-degree: 1%
 
 ---
 
 
-# Implementeren naar AEM als Cloud Service {#deploying-to-aem-as-a-cloud-service}
+# Implementeren naar AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Inleiding {#introduction}
 
@@ -81,6 +84,8 @@ Zoals hierboven vermeld, zou de configuratie OSGI aan broncontrole eerder dan do
 * De noodzakelijke wijzigingen aanbrengen in de lokale AEM-omgeving van de ontwikkelaar met de configuratiemanager van de AEM-webconsole en de resultaten vervolgens exporteren naar het AEM-project op het lokale bestandssysteem
 * Creërend manueel de configuratie OSGI in het AEM- project op het lokale dossiersysteem, het van verwijzingen voorzien van de configuratiemanager van de console AEM voor de bezitsnamen.
 
+Lees meer over configuratie OSGI bij het [Vormen OSGi voor AEM als de Dienst](/help/implementing/deploying/configuring-osgi.md)van de Wolk.
+
 ## Mabelinhoud {#mutable-content}
 
 In sommige gevallen is het handig om wijzigingen in de inhoud voor te bereiden in bronbeheer, zodat dit kan worden geïmplementeerd door Cloud Manager wanneer een omgeving is bijgewerkt. Het kan bijvoorbeeld redelijk zijn om bepaalde basismapstructuren of regelwijzigingen in bewerkbare sjablonen toe te staan om beleid in te schakelen voor componenten die door de implementatie van de toepassing zijn bijgewerkt.
@@ -112,7 +117,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
 Het is mogelijk om installatie van veranderlijke inhoud tot auteur te beperken of te publiceren door pakketten in te bedden installeer.auteur of installeer.publish omslag onder `/apps`. Nadere bijzonderheden zijn te vinden in de [AEM-documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) over de aanbevolen projectherstructurering.
 
 >[!NOTE]
-> Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
+>Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
 
 Ook, is er geen mechanisme om de veranderlijke veranderingen van het inhoudspakket terug te draaien nadat zij zijn toegepast. Als klanten een probleem ontdekken, kunnen zij verkiezen om het in hun volgende codeversie of als laatste redmiddel te bevestigen, het volledige systeem aan een punt in tijd vóór de plaatsing herstellen.
 
@@ -129,7 +134,7 @@ In de volgende gevallen verdient het de voorkeur de hand te houden aan het coder
 * Gebruikers maken/verwijderen
 * Voeg ACLs toe
    > [!NOTE]
-   > De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
+   >De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
 * Pad toevoegen (bijvoorbeeld voor basismapstructuren)
 * CND&#39;s toevoegen (geen typedefinities)
 
@@ -137,7 +142,7 @@ Het is aan te raden deze gevallen van wijziging van inhoud opnieuw te plaatsen o
 
 * Herpoinit leidt tot middelen bij opstarten zodat de logica het bestaan van die middelen voor vanzelfsprekend kan nemen. In de veranderlijke benadering van het inhoudspakket, worden de middelen gecreeerd na opstarten, zodat de toepassingscode die op hen baseert kan ontbreken.
 * Opnieuw aanwijzen is een relatief veilige instructieset aangezien u uitdrukkelijk de te nemen actie controleert. Bovendien zijn de enige ondersteunde bewerkingen additief, met uitzondering van een paar beveiligingsgerelateerde gevallen die verwijdering van Gebruikers, Gebruikers en Groepen toestaan. Daarentegen is het expliciet schrappen van iets in de aanpak van het veranderbare inhoudspakket;  als u een filter definieert, wordt alles wat aanwezig is en door een filter wordt bedekt, verwijderd. Toch moet voorzichtigheid worden betracht, aangezien er scenario&#39;s zijn waarin de aanwezigheid van nieuwe inhoud het gedrag van de toepassing kan veranderen.
-* Repoinit voert snelle en atomische bewerkingen uit. De uitvoerbare inhoudspakketten in tegenstelling tot kunnen sterk afhankelijk van prestaties van de structuren die door een filter worden behandeld. Zelfs als u één knooppunt bijwerkt, kan een momentopname van een grote boomstructuur worden gemaakt.
+* Repoinit voert snelle en atomische bewerkingen uit. De veranderlijke inhoudspakketten in contrast kunnen hoogst afhankelijk van prestaties van de structuren die door een filter worden behandeld. Zelfs als u één knooppunt bijwerkt, kan een momentopname van een grote boomstructuur worden gemaakt.
 * Het is mogelijk om opnieuw richt verklaringen op een lokaal dev milieu bij runtime te bevestigen aangezien zij zullen worden uitgevoerd wanneer de configuratie OSGi wordt geregistreerd.
 * Herpointe-instructies zijn atomisch en expliciet en worden overgeslagen als de status al overeenkomt.
 
@@ -192,7 +197,7 @@ Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kun
 
 Alle meegeleverde pakketten van derden moeten aan de AEM-code en verpakkingsrichtlijnen van de cloudservice worden gekoppeld, zoals in dit artikel wordt beschreven. Als dit niet gebeurt, treedt een implementatiefout op.
 
-Het volgende Maven POM XML fragment toont hoe de derdepakketten in het &quot;Container&quot;pakket van het project kunnen worden ingebed, typisch genoemd **&#39;all&#39;**, via de **filevault-package-maven-plugin** Geweven plugin configuratie.
+Het volgende Maven POM XML-fragment toont hoe pakketten van derden in het &quot;Container&quot;-pakket van het project kunnen worden ingesloten, doorgaans **&#39;all&#39;** genoemd, via de configuratie voor de Maven-invoegtoepassing **filevault-package-maven-plugin**.
 
 ```
 ...
@@ -275,11 +280,11 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 ## Runmodi {#runmodes}
 
-In bestaande AEM oplossingen, hebben de klanten de optie om instanties met willekeurige looppaswijzen in werking te stellen en de configuratie toe te passen OSGI of bundels te installeren OSGI op die specifieke instanties. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceer) en het milieu (dev, stadium, prod).
+In bestaande AEM oplossingen, hebben de klanten de optie om instanties met willekeurige looppaswijzen in werking te stellen en de configuratie toe te passen OSGI of bundels te installeren OSGI op die specifieke instanties. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceert) en het milieu (dev, stadium, prod).
 
 AEM als Cloud Service daarentegen is meer overtuigd over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
-* De de configuratieloopwijzen van OSGI moeten dev, stadium, prod voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Een combinatie van `<service>.<environment_type>` wordt ondersteund, terwijl deze in deze volgorde moeten worden gebruikt (bijvoorbeeld auteur.dev of publish.prod). Er moet rechtstreeks vanuit de code naar de OSGI-tokens worden verwezen in plaats van de `getRunModes` methode, die de tokens niet meer `environment_type` bij uitvoering bevat.
+* De de configuratieloopwijzen van OSGI moeten dev, stadium, prod voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Er `<service>.<environment_type>` wordt een combinatie van beide ondersteund, terwijl deze in deze volgorde moeten worden gebruikt (bijvoorbeeld `author.dev` of `publish.prod`). Er moet rechtstreeks vanuit de code naar de OSGI-tokens worden verwezen in plaats van de `getRunModes` methode, die de tokens niet meer `environment_type` bij uitvoering bevat. Voor meer informatie, zie het [Vormen OSGi voor AEM als de Dienst](/help/implementing/deploying/configuring-osgi.md)van de Wolk.
 * De de bundelloopwijzen van OSGI zijn beperkt tot de dienst (auteur, publiceer). OSGI-bundels per run-modus moeten in het inhoudspakket worden geïnstalleerd onder `install/author` of `install/publish`.
 
 Net als de bestaande AEM-oplossingen is er geen manier om runmodi te gebruiken om alleen inhoud voor specifieke omgevingen of services te installeren. Als u een ontwikkelomgeving wilt laten doorlopen met gegevens of HTML-code die zich niet in het werkgebied of de productie bevindt, kan de pakketmanager worden gebruikt.
