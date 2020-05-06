@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ een OSGi-configuratiebestand wordt gedefinieerd op:
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-volgend op het [cfg.json OSGi configuratieformaat](volgens het cfg.json OSGi configuratieformaat).
+volgend op de configuratie-indeling cfg.json OSGi.
 
 > [!NOTE]
 >
