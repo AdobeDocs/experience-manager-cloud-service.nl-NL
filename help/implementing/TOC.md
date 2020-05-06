@@ -2,7 +2,10 @@
 sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
    + [Zoekformulieren configureren](developing/extending/search-forms.md)
 + Implementeren naar AEM as a Cloud Service {#deploying}
    + [Implementeren naar AEM as a Cloud Service](deploying/overview.md)
+   + [OSGi configureren voor AEM als cloudservice](deploying/configuring-osgi.md)
 + Dispatcher in de cloud {#dispatcher}
    + [Dispatcher in de cloud](dispatcher/overview.md)
    + [Levering van content in AEM as a Cloud Service](dispatcher/content-delivery.md)
