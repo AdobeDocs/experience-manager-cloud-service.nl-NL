@@ -2,12 +2,15 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '2254'
+ht-degree: 5%
 
 ---
 
 
-# Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
+# Inzicht in aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
 
 Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die worden uitgevoerd door Cloud Manager en die zijn gemaakt op basis van de beste werkwijzen van AEM Engineering.
@@ -30,7 +33,7 @@ In de volgende sectie worden de SonarQube-regels gemarkeerd:
 
 **Sinds**: Versie 2018.4.0
 
-De methoden ***Thread.stop()*** en ***Thread.interrupt()*** kunnen problemen veroorzaken die moeilijk te reproduceren zijn en in sommige gevallen beveiligingsproblemen. Het gebruik ervan moet zorgvuldig worden gecontroleerd en gevalideerd. Over het algemeen is het doorgeven van berichten een veiligere manier om vergelijkbare doelen te bereiken.
+De methoden ***Thread.stop()*** en ***Thread.interrupt()*** kunnen problemen veroorzaken die moeilijk te reproduceren zijn en in sommige gevallen beveiligingsproblemen veroorzaken. Het gebruik ervan moet zorgvuldig worden gecontroleerd en gevalideerd. Over het algemeen is het doorgeven van berichten een veiligere manier om vergelijkbare doelen te bereiken.
 
 #### Niet-compatibele code {#non-compliant-code}
 
@@ -189,9 +192,9 @@ public void orDoThis() {
 
 **Sinds**: Versie 2018.7.0
 
-De AEM-API bevat Java-interfaces en -klassen die alleen moeten worden gebruikt, maar niet geïmplementeerd door aangepaste code. De interface *com.day.cq.wcm.api.Page* is bijvoorbeeld ontworpen om alleen ***door*** AEM te worden geïmplementeerd.
+De AEM-API bevat Java-interfaces en -klassen die alleen door aangepaste code mogen worden gebruikt, maar niet geïmplementeerd. De interface *com.day.cq.wcm.api.Page* is bijvoorbeeld ontworpen om ***alleen door AEM*** te worden geïmplementeerd.
 
-Wanneer nieuwe methodes aan deze interfaces worden toegevoegd, beïnvloeden die extra methodes geen bestaande code die deze interfaces gebruikt en, dientengevolge, wordt de toevoeging van nieuwe methodes aan deze interfaces beschouwd als achterwaarts-compatibel. Nochtans, als de douanecode één van deze interfaces ***uitvoert*** , heeft die douanecode een achterwaarts-verenigbaarheidsrisico voor de klant geïntroduceerd.
+Wanneer nieuwe methoden aan deze interfaces worden toegevoegd, beïnvloeden deze aanvullende methoden geen bestaande code die deze interfaces gebruikt en daardoor wordt de toevoeging van nieuwe methoden aan deze interfaces beschouwd als compatibel met eerdere versies. Als echter door aangepaste code één van deze interfaces ***wordt geïmplementeerd***, heeft deze aangepaste code een risico voor compatibiliteit met eerdere versies voor de klant geïntroduceerd.
 
 Interfaces (en klassen) die alleen bedoeld zijn om door AEM te worden geïmplementeerd, zijn voorzien van een annotatie met *org.osgi.annotation.versioning.ProviderType* (of, in sommige gevallen, een vergelijkbare oudere annotatie *Qute.bnd.annotation.ProviderType*). Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd (of een klasse wordt uitgebreid) door douanecode.
 
@@ -217,7 +220,7 @@ public class DontDoThis implements Page {
 
 ResourceResolver-objecten die zijn verkregen van de ResourceResolverFactory gebruiken systeembronnen. Hoewel er maatregelen op zijn plaats zijn om deze middelen terug te winnen wanneer een ResourceResolver niet meer in gebruik is, is het efficiënter om om het even welke geopende voorwerpen uitdrukkelijk te sluiten ResourceResolver door de close () methode te roepen.
 
-Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis in plaats van uitdrukkelijk te gebruiken close().
+Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis te gebruiken in plaats van uitdrukkelijk het aanhalen van close().
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
@@ -549,6 +552,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### Verkoopplanner mag niet worden gebruikt {#sonarqube-sling-scheduler}
+
+**Sleutel**: CQRules:AMSCORE-554
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+De Planner van de Verkoop moet niet voor taken worden gebruikt die een gewaarborgde uitvoering vereisen. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
+
+Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) voor meer informatie over de manier waarop saldertaken worden verwerkt in een geclusterde omgeving.
+
+### Vervangen API&#39;s van AEM mogen niet worden gebruikt {#sonarqube-aem-deprecated}
+
+**Sleutel**: AMSCORE-553
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+Het AEM API-oppervlak wordt voortdurend herzien om te bepalen voor welke API&#39;s het gebruik wordt ontmoedigd en dus als afgekeurd wordt beschouwd.
+
+In veel gevallen worden deze API&#39;s vervangen door de standaard Java *@Deprecated* -annotatie en, als zodanig, zoals bepaald door `squid:CallToDeprecatedMethod`.
+
+Er zijn echter gevallen waarin een API afgekeurd is in de context van AEM, maar in andere contexten niet mag worden afgekeurd. Deze regel identificeert deze tweede klasse.
 
 ## Regels voor OakPAL-inhoud {#oakpal-rules}
 
@@ -644,3 +676,62 @@ Een veelvoorkomend probleem is het gebruik van knooppunten die `config` in compo
 **Sinds**: Versie 2019.6.0
 
 Gelijkaardig aan de *Pakketten zouden geen Dubbele OSGi Configuraties* moeten bevatten dit is een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
+
+### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
+
+**Sleutel**: ClassicUIAuthoringMode
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaalt de standaard auteurswijze binnen AEM. Aangezien Klassieke UI sinds AEM 6.4 is afgekeurd, zal een kwestie nu worden opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
+
+### Componenten met dialoogvensters moeten aanraakinterface-dialoogvensters hebben {#oakpal-components-dialogs}
+
+**Sleutel**: ComponentWithOnlyClassicUIDialog
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+AEM-componenten die een Klassieke UI-dialoogvenster hebben, moeten altijd een corresponderend Touch UI-dialoogvenster hebben voor een optimale ontwerpervaring en compatibel zijn met het implementatiemodel van de Cloud Service, waarbij Klassieke UI niet wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
+
+* Een component met een klassieke UI-dialoogvenster (dat wil zeggen een onderliggende dialoognode) moet een overeenkomend dialoogvenster Touch UI hebben (dat wil zeggen een `cq:dialog` onderliggende node).
+* Een component met een Klassieke UI-ontwerpdialoogvenster (d.w.z. een design_dialog-knooppunt) moet een overeenkomend dialoogvenster voor het aanraakinterface-ontwerp hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
+* Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
+
+De documentatie van de Hulpmiddelen van de Modernisering AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Raadpleeg [de moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) van AEM voor meer informatie.
+
+### Pakketten mogen geen MIP-bestand en onveranderbare inhoud mengen {#oakpal-packages-immutable}
+
+**Sleutel**: ImmutableMutableMixedPackage
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+Om compatibel te zijn met het implementatiemodel van de cloudservice, moeten afzonderlijke inhoudspakketten inhoud bevatten voor de onveranderlijke gebieden van de opslagplaats (dat wil zeggen, `/apps and /libs, although /libs` moeten ze niet worden gewijzigd door de code van de klant en veroorzaken ze een afzonderlijke schending) of het veranderbare gebied (dat wil zeggen alles anders), maar niet beide. Een pakket dat beide bevat, is bijvoorbeeld niet compatibel met Cloud Service en zorgt ervoor dat een probleem wordt gemeld. `/apps/myco/components/text and /etc/clientlibs/myco`
+
+Raadpleeg de [AEM-projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie.
+
+### Reverse Replication Agents mogen niet worden gebruikt {#oakpal-reverse-replication}
+
+**Sleutel**: ReverseReplication
+
+**Type**: Code Smell
+
+**Ernst**: Klein
+
+**Sinds**: Versie 2020.5.0
+
+Ondersteuning voor omgekeerde replicatie is niet beschikbaar in implementaties van cloudservice, zoals beschreven in [Opmerkingen bij de release: Verwijderen van replicatieagents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+
+Klanten die omgekeerde replicatie gebruiken, moeten contact opnemen met Adobe voor alternatieve oplossingen.
+
