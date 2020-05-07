@@ -3,7 +3,10 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2e73a9bba91f15702bdeb1d57e87b688360661bd
+source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 5%
 
 ---
 
@@ -14,6 +17,14 @@ Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor i
 
 Daarnaast biedt Experience Manager Assets uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
 
+De hoogtepunten voor de omzetting van Activa die de microservices van activa gebruiken omvatten:
+
+* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension en Adobe Acrobat of PDF.
+* Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
+* [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
+* Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
+
 De volgende legenda beschrijft het steunniveau.
 
 | Ondersteuningsniveau | Beschrijving |
@@ -22,17 +33,7 @@ De volgende legenda beschrijft het steunniveau.
 | * | Zie de opmerkingen onder de tabel |
 | - | Niet van toepassing |
 
-## Omzetting van bedrijfsmiddelen met behulp van asset microservices {#asset-microservices-supported-formats}
-
-De hooglichten omvatten:
-
-* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension en Adobe Acrobat of PDF.
-* Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
-* [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
-* Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
-
-### Adobe-indelingen {#adobe-formats}
+## Adobe-indelingen {#adobe-formats}
 
 | Bestandsindeling | Miniaturen genereren | Volledige tekstextractie | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -48,9 +49,9 @@ De hooglichten omvatten:
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Voor INDD (InDesign-bestanden) wordt de grootte van de uitvoering bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in InDesign (**[!UICONTROL Voorkeuren > Bestandsafhandeling > Voorvertoningsafbeeldingen altijd opslaan met documenten, Grootte]** voorvertoning) om een grotere uitvoering in te sluiten.
+\* Voor [!DNL Adobe InDesign] bestanden (INDD) wordt de grootte van de uitvoering bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
 
-### Afbeeldingsindelingen {#image-formats}
+## Afbeeldingsindelingen {#image-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte | Uitsnijden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
@@ -62,7 +63,31 @@ De hooglichten omvatten:
 | SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-### Camera RAW-indelingen {#camera-raw-formats}
+## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
+
+| Format | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ | - | - | - | - |
+
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+
+De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet worden ondersteund in [!DNL Dynamic Media]:
+
+* PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
+* PSB-bestanden.
+* PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
+* PSD-bestanden met een bitdiepte groter dan 16.
+* TIFF-bestanden met zwevende-kommagegevens.
+* TIFF-bestanden met LAB-kleurruimte.
+
+## [!DNL Camera RAW] formaten {#camera-raw-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -94,7 +119,7 @@ De hooglichten omvatten:
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-### Documentindelingen {#document-formats}
+## Documentindelingen {#document-formats}
 
 De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
@@ -120,7 +145,15 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-### Video-indelingen {#video-formats}
+## Documentindelingen in [!DNL Dynamic Media] {#document-support-dynamic-media}
+
+| Format | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| INDD | ✓ | - | - | - | - |
+
+## Video-indelingen {#video-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -147,7 +180,28 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-### Audio-indelingen {#audio-formats}
+## Video-indelingen in [!DNL Dynamic Media] voor transcodering {#video-dynamic-media-transcoding}
+
+| Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
+|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| MP4 | MPEG-4 | H264/AVC (alle profielen) |  |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
+| M4V | Apple iTunes | H264/AVC |  |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| WebM | WebM | Google VP8 |  |
+| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
+| MTS | AVCHD | H264/AVC |  |
+| MKV | Matroska | H264/AVC |  |
+| R3D, RM | Raw-video, rood | MJPEG 2000 |  |
+| RAM, RM | RealVideo | Niet ondersteund | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
+| FLAC | Native Flac | Vrije, verliesvrije audiocodec |  |
+| MJ2 | Beweging JPEG 2000 | Motion JPEG 2000-codec |  |
+
+## Audio-indelingen {#audio-formats}
 
 Middelen als Cloud Service bieden ondersteuning voor het ophalen van XMP-metagegevens voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
