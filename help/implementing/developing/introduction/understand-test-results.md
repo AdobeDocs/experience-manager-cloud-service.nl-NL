@@ -2,12 +2,15 @@
 title: Lees uw testresultaten - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '997'
+ht-degree: 3%
 
 ---
 
 
-# De testresultaten begrijpen {#understand-test-results}
+# Inzicht in de testresultaten {#understand-test-results}
 
 Cloud Manager for Cloud Services-pijplijnuitvoeringen ondersteunen de uitvoering van tests die worden uitgevoerd tegen de werkgebiedomgeving. Dit is in tegenstelling tot tests die tijdens de het Testen stap van de Bouwstijl en van de Eenheid worden uitgevoerd die offline, zonder toegang tot om het even welke lopende milieu AEM in werking worden gesteld.
 Er zijn twee soorten tests in deze context die worden uitgevoerd:
@@ -23,20 +26,21 @@ Als deel van de pijpleiding wordt de broncode gescand om ervoor te zorgen dat de
 
 | Naam | Definitie | Categorie | Drempel voor fout |
 |--- |--- |--- |--- |
-| Beveiligingsbeoordeling | A = 0 Kwetsbaarheid <br/>B = ten minste 1 Kleine Kwetsbaarheid<br/> C = ten minste 1 Ernstige Kwetsbaarheid <br/>D = ten minste 1 Kritieke Kwetsbaarheid <br/>E = ten minste 1 Kwetsbaarheid |  Kritiek | &lt; B |
+| Beveiligingsbeoordeling | A = 0 Kwetsbaarheid <br/>B = ten minste 1 Kleine Kwetsbaarheid<br/> C = ten minste 1 Ernstige Kwetsbaarheid <br/>D = ten minste 1 Kritieke Kwetsbaarheid <br/>E = ten minste 1 Kwetsbaarheid | Kritiek | &lt; B |
 | Betrouwbaarheidsbeoordeling | A = 0 Bug <br/>B = ten minste 1 kleine bug <br/>C = ten minste 1 groot probleem <br/>D = ten minste 1 kritisch probleem E = ten minste 1 blokkeerprobleem | Belangrijk | &lt; C |
 | Onderhoudsverklaring | Uitstaande herstelkosten voor codegeuren zijn: <br/><ul><li>&lt;=5% van de tijd die al in de toepassing is ingegaan, is de rating A </li><li>tussen 6 en 10% is de rating een B </li><li>tussen 11 en 20% is de rating een C </li><li>tussen 21 en 50% is de rating een D</li><li>iets meer dan 50% is een E</li></ul> | Belangrijk | &lt; A |
-| Dekking | Een combinatie van de dekking van de meetlijn en de toestand volgens deze formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>waarbij: CT = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;true&#39; tijdens het uitvoeren van eenheidstests <br/>CF = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;false&#39; tijdens het uitvoeren van eenheidstests <br/>LC = gedekte lijnen = lines_to_cover - uncoverlines <br/><br/> B = totaal aantal voorwaarden <br/>EL = totaal aantal uitvoerbare lijnen (lines_to_cover) | Belangrijk | &lt; 50% |
+| Dekking | Een combinatie van de dekking van de meetlijn en de toestand volgens deze formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>waarbij: CT = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;true&#39; tijdens het uitvoeren van eenheidstests <br/>CF = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;false&#39; tijdens het uitvoeren van eenheidstests <br/>LC = gedekte lijnen = lines_to_cover - uncoverlines <br/><br/> B = totaal aantal voorwaarden <br/>EL = totaal aantal uitvoerbare lijnen (lines_to_cover) | Belangrijk | &lt; 50% |
 | Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests. | Info | > 1 |
-| Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 1 |
+| Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
 | Gedupliceerde lijnen | Aantal lijnen betrokken bij gedupliceerde blokken. <br/>Een codeblok dat als gedupliceerd moet worden beschouwd: <br/><ul><li>**Niet-Java-projecten:**</li><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste op: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li><li>**Java-projecten:**</li><li> Er moeten minstens tien opeenvolgende en gedupliceerde verklaringen zijn, ongeacht het aantal tokens en lijnen.</li></ul> <br/>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd bij het detecteren van duplicaten. | Info | > 1% |
+| Compatibiliteit met cloudservice | Aantal geïdentificeerde compatibiliteitsproblemen met de cloudservice. | Info | > 0 |
 
 
 >[!NOTE]
 >
 >Zie [Metrische definities](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
 
-U kunt de lijst met regels hier downloaden [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx)
+U kunt de lijst met regels hier downloaden [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -126,7 +130,7 @@ De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanw
 Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Deze stap wordt onmiddellijk na de implementatie van het werkgebied uitgevoerd.
 
 >[!NOTE]
->Met de knop Logboek **** downloaden hebt u toegang tot een ZIP-bestand met de logbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
+>Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
 
 ## Uitvoering lokale test {#local-test-execution}
 
