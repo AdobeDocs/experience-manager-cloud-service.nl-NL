@@ -2,7 +2,10 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +18,9 @@ In deze sectie wordt beschreven hoe u de AEM kunt structureren als een Apache- e
 
 >[!NOTE]
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
+
+>[!WARNING]
+> Windows-gebruikers: De huidige versie van AEM als lokale Dispatcher Tools voor cloudservice (v2.0.20) is niet compatibel met Windows. Neem contact op met de ondersteuning [van](https://daycare.day.com/home.html) Adobe voor updates over Windows-compatibiliteit.
 
 ## Verzendgereedschappen {#dispatcher-sdk}
 
@@ -266,7 +272,7 @@ Uw ingeschakelde landbouwbedrijven zouden in bovengenoemde subfolder moeten word
 
 **Ingesloten bestand (...) moet een naam hebben: ...**
 
-Er zijn twee secties in uw landbouwbedrijfconfiguratie die een specifiek dossier **moeten** omvatten: `/renders` en `/allowedClients` in de `/cache` sectie. Deze selecties moeten er als volgt uitzien:
+Er zijn twee secties in uw landbouwbedrijfconfiguratie die een specifiek dossier **moeten** omvatten: `/renders` en `/allowedClients` in het `/cache` gedeelte. Deze selecties moeten er als volgt uitzien:
 
 ```
 /renders {
@@ -284,7 +290,7 @@ and:
 
 **bestand opgenomen op onbekende locatie: ...**
 
-Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` sectie en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
+Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` afdeling en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
 
 | Sectie | Bestandsnaam opnemen |
 |------------------|--------------------------------------|
