@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM als cloudservice
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## De configuratie maken in de opslagplaats {#creating-the-configuration-in-the-repository}
+## OSGi-configuraties maken
 
-Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
+Er zijn twee manieren om nieuwe configuraties tot stand te brengen OSGi, zoals hieronder beschreven. De eerste benadering wordt typisch gebruikt voor het vormen van douaneOSGi componenten die bekende eigenschappen OSGi en waarden door de ontwikkelaar hebben, en laatstgenoemde voor AEM-Geleverde componenten OSGi.
 
-1. Maak in uw ui.apps-project zo nodig een `/apps/…/config.xxx` map op basis van de runmode die u gebruikt
+### OSGi-configuraties schrijven
 
-1. Maak een nieuw JSON-bestand met de naam van de PID en voeg de `.cfg.json` extensie toe
+JSON-geformatteerde OSGi-configuratiebestanden kunnen rechtstreeks met de hand worden geschreven in het AEM-project. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
+
+1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben
+1. Maak een nieuw `<PID>.cfg.json` bestand in deze configuratiemap. PID is de Blijvende Identiteit van de component OSGi is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+Merk op dat OSGi de namen van de configuratiefabrieksdossiers, de noemende overeenkomst gebruiken `<PID>-<factory-name>.cfg.json`
+1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, die het [JSON OSGi- configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)volgen.
+1. Wijzigingen opslaan in het nieuwe `.cfg.json` bestand
+1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
+
+### OSGi-configuraties genereren met de AEM SDK Quickstart
+
+Met de AEM SDK QuickStart Jar&#39;s AEM Web Console kunt u OSGi-componenten configureren en OSGi-configuraties exporteren als JSON. Dit is nuttig om AEM-Geleverde componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM- project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de Console van het Web AEM `.cfg.json` dossiers in de bewaarplaats schrijft, zodat me bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
+
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM Web-console als beheerder
+1. Navigeer naar OSGi > Configuratie
+1. Zoek de OSGi-component die u wilt configureren en tik op de titel die u wilt bewerken
+   ![OSGi-configuratie](./assets/configuring-osgi/configuration.png)
+1. Bewerk indien nodig de OSGi-waarden van het configuratiebezit via de webinterface
+1. Registreer de Persistent Identiteit (PID) aan veilige plaats, zal dit later worden gebruikt om de configuratie OSGi JSON te produceren
+1. Tik op Opslaan
+1. Navigeer naar OSGi > OSGi Installer Configuration Printer
+1. Plak in PID die in Stap 5 wordt gekopieerd, zorg ervoor de Formaat van de Rangschikking wordt geplaatst aan &quot;OSGi Configurator JSON&quot;
+1. Tikken,
+1. De configuratie OSGi in formaat JSON zal in de Serialized sectie van de Eigenschappen van de Configuratie tonen
+   ![OSGi-installateursconfiguratieserver](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben.
+1. Maak een nieuw `<PID>.cfg.json` bestand in deze configuratiemap. De PID is dezelfde waarde uit stap 5.
+1. Plak de Generialiseerde Eigenschappen van de Configuratie van Stap 10 in het `.cfg.json` dossier.
+1. Sla uw wijzigingen op in het nieuwe `.cfg.json` bestand.
+1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe.
 
 
-1. Vul het JSON-bestand met de waardeparen van de OSGi-configuratiesleutel
-
-   >[!NOTE]
-   >
-   >Als u uit de doosOSGi dienst vormt, kunt u omhoog de OSGi bezitsnamen via kijken `/system/console/configMgr`
-
-
-1. Sla het JSON-bestand op in uw project. -->
-
-## Indeling van eigenschappen configuratie in bronbeheer {#configuration-property-format-in-source-control}
-
-Het creëren van een nieuw bezit van de Configuratie OSGI wordt beschreven in het [Toevoegen van een nieuwe configuratie aan de bewaarplaats](#creating-the-configuration-in-the-repository) hierboven sectie.
-
-Voer de volgende stappen uit en wijzig de syntaxis zoals beschreven in de onderstaande subsecties:
+## Indelingen van eigenschappen van OSGi-configuratie
 
 ### Inline-waarden {#inline-values}
 
 Zoals u zou kunnen verwachten, worden inline waarden geformatteerd als standaardnaam-waarde paren, volgens standaardJSON syntaxis. Bijvoorbeeld:
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
