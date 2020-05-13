@@ -2,7 +2,10 @@
 title: Snelgids voor WCAG 2.1
 seo-title: Snelgids voor WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 93%
 
 ---
 
@@ -11,13 +14,21 @@ source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 Adobe Experience Manager (AEM) as a Cloud Service is ontwikkeld om maximale naleving van de Web Content Accessibility Guidelines te bereiken.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die door het [World Wide Web Consortium (W3C)](https://www.w3.org/) in het kader van hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) zijn ontwikkeld.
+
+>[!NOTE]
+> 
+> WCAG 2.1 is een update van versie WCAG 2.0 uit 2008. Zie [WCAG 2.1 - Vergelijking met WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+
+>[!NOTE]
+> 
+>Een [bijgewerkte versie van de richtlijnen, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) wordt momenteel ontwikkeld, maar wordt hier niet in overweging genomen.
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webcontent om ervoor te zorgen dat de bronnen die zij produceren, zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap, bijvoorbeeld een visuele handicap, gehoorverlies, leermoeilijkheden of leeftijdsgebonden beperkingen.
 
 Als u bijvoorbeeld een afbeelding (of andere niet-tekstuele content) beschrijft met het `alt`-kenmerk in HTML, heeft dit grote voordelen voor blinden of slechtzienden. De tekstuele beschrijving in het `alt`-kenmerk kan worden omgezet naar spraakuitvoer of worden verzonden naar elektronische vernieuwbare brailleweergaven.
 
-Daarnaast kan WCAG 2.1 voordelen opleveren voor andere begunstigden, waaronder personen die mogelijk als *arbeidsongeschikt* worden beschouwd. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
 
 Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webcontent maken die voldoet aan de relevante succescriteria van WCAG 2.1 niveau A en niveau AA.
 
@@ -65,14 +76,14 @@ Iets meer uitgewerkt:
 * Elke richtlijn bestaat uit een of meer **succescriteria**.
 * Succescriteria worden geschreven als instructies, die ofwel `True` of `False` zijn voor een bepaalde webpagina.
 * Succescriteria kunnen ofwel/of-keuzes omvatten, of uitzonderingen. Dit zijn situaties waarin niet aan de succescriteria moet worden voldaan.
-* Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. Het succescriterium 1.1.1 is bijvoorbeeld Niet-tekstueel alternatief.
+* Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. Het succescriterium 1.1.1 is bijvoorbeeld Niet-tekstuele inhoud.
 * De succescriteria omvatten een lijst met verwante **technieken** (hieronder nader beschreven).
 
 ## Ondersteunende bronnen {#supporting-resources}
 
 Naast de kerncomponenten van WCAG 2.1 van Beginselen, Richtlijnen en Succescriteria, is er een aantal ondersteunende documenten. Sommige daarvan geven specifiek advies over hoe te voldoen aan aspecten van de richtlijnen, andere zijn meer algemene verwijzingen die webauteurs, ontwerpers en ontwikkelaars helpen WCAG 2.1 te begrijpen en zo effectief mogelijk te gebruiken.
 
-Hoewel WCAG 2.1 een stabiel document is en niet zal veranderen, zijn de meeste van deze ondersteunende bronnen dynamische documenten. Dit betekent dat zij in de loop der tijd zullen worden aangepast en uitgebreid wanneer nieuwe technologieën worden ontwikkeld, en er nieuwe voorbeelden zijn van de manier waarop webtoegankelijkheid kan worden bereikt .
+Hoewel WCAG 2.1 zelf een stabiel document is en niet zal veranderen, zijn de meeste van deze ondersteunende hulpmiddelen dynamische documenten; zij zullen in de loop der tijd veranderen en groeien naarmate nieuwe technologieën zich ontwikkelen , en er zijn nieuwe voorbeelden te vinden van de wijze waarop toegankelijkheid van het web kan worden bereikt .
 
 ### WCAG 2.1-bronnen {#wcag-resources}
 
@@ -87,7 +98,7 @@ Deze lijst is niet uitvoerig, en is bedoeld als een inleiding op de beschikbare 
 
 ### Nieuw in WCAG 2.1 {#what-is-new}
 
-[Nieuw in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) biedt waardevolle informatie over de delta tussen WCAG en 2.0 en WCAG 2.1.
+[Nieuw in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) verstrekt waardevolle informatie over de delta tussen WCAG 2.0 en WCAG 2.1.
 
 In de sectie [WCAG 2.0 en 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wordt de status van hun relatie nader toegelicht.
 
@@ -138,7 +149,7 @@ Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele cont
 
 ### Voldoen aan WCAG 2.1 {#how-to-meet-wcag}
 
-De sectie &quot;Voldoen&quot; is beschikbaar op de pagina [Hoe kan ik voldoen aan WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Deze sectie biedt een alternatieve presentatie van WCAG, waarin de content van de richtlijnen wordt verfijnd tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
+De sectie &quot;Voldoen&quot; is beschikbaar op de pagina [Hoe kan ik voldoen aan WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). In dit deel wordt een alternatieve presentatie van WCAG gegeven, zodat lezers de inhoud van de richtsnoeren kunnen verfijnen tot de richtsnoeren die het meest relevant zijn voor hun eigen belangen en/of omstandigheden. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 
 Zonder filteren biedt deze bron alle succescriteria gegroepeerd op richtlijn. Voor elk succescriterium wordt het volgende verstrekt:
 
