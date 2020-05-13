@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 seo-title: Snelgids voor WCAG 2.1
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 93%
+source-wordcount: '1758'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 > 
-> WCAG 2.1 is een update van versie WCAG 2.0 uit 2008. Zie [WCAG 2.1 - Vergelijking met WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> WCAG 2.1 werkt de vorige versie van WCAG 2.0, vanaf 2008, bij. Zie [WCAG 2.1 - Vergelijking met WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
@@ -37,25 +37,19 @@ Daarom is het begrijpen van de doelstellingen van WCAG 2.1 en de structuur van d
 De bedoeling van WCAG 2.1 is het verstrekken van richtlijnen die:
 
 * **Technologieonafhankelijk zijn:**
-Met andere woorden, richtlijnen die kunnen worden toegepast op verschillende webcontentindelingen, niet alleen op HTML. WCAG 2.1 kan dus betrekking hebben op content die is gegenereerd door of wordt geleverd in PDF, Flash, JavaScript en andere huidige en toekomstige webtechnologieën. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+Met andere woorden, richtlijnen die kunnen worden toegepast op verschillende webcontentindelingen, niet alleen op HTML. WCAG 2.1 kan dus betrekking hebben op content die is gegenereerd door of wordt geleverd in PDF, Flash, JavaScript en andere huidige en toekomstige webtechnologieën.
 
 * Kunnen worden **getest:**
-Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan de richtlijn is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan de richtlijn is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd.
 
-* **Prioritaire en contextafhankelijke implementatie ondersteunen:**
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* Prioritaire en contextafhankelijke implementatie **van ondersteuning:**
+De richtsnoeren van WCAG 2.1 hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtsnoer voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtsnoeren voor hun specifieke situatie. Daarnaast wordt het concept van ondersteunde ** toegankelijkheid geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
 
 Deze doelstellingen hebben de structuur van WCAG 2.1 aanzienlijk beïnvloed.
 
 >[!NOTE]
 >
 >Het is niet mogelijk om een website te maken die tegemoet komt aan alle mogelijke handicaps of personen. Het doel van WCAG 2.1 is om webauteurs te helpen sites te maken die, voor zover mogelijk, binnen bepaalde omstandigheden en binnen het redelijke toegankelijk zijn.
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## Structuur {#structure}
 
@@ -115,7 +109,7 @@ U hebt op de volgende manieren toegang tot technieken:
 * Op verzameling (technieken kunnen algemeen zijn of betrekking hebben op een specifieke technologie of indeling, zoals HTML, CSS of clientscripts), of
 * Via gerelateerde succescriteria. Technieken kunnen op meer dan een succescriterium van toepassing zijn.
 
-Elke techniek heeft een uniek getal dat betrekking heeft op de verzameling ervan. Een van de ARIA-technieken is bijvoorbeeld *Technique ARIA2: Vereiste velden identificeren met de eigenschap &quot;required&quot;*.
+Elke techniek heeft een uniek getal dat betrekking heeft op de verzameling ervan. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Technieken kunnen Sufficient (toereikend), Advisory (adviserend) of een Failure (mislukking) zijn:
 
