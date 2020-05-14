@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 seo-title: Snelgids voor WCAG 2.1
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 86%
+source-wordcount: '1774'
+ht-degree: 85%
 
 ---
 
@@ -70,7 +70,7 @@ Iets meer uitgewerkt:
 * Elke richtlijn bestaat uit een of meer **succescriteria**.
 * Succescriteria worden geschreven als instructies, die ofwel `True` of `False` zijn voor een bepaalde webpagina.
 * Succescriteria kunnen ofwel/of-keuzes omvatten, of uitzonderingen. Dit zijn situaties waarin niet aan de succescriteria moet worden voldaan.
-* Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. Het succescriterium 1.1.1 is bijvoorbeeld Niet-tekstuele inhoud.
+* Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * De succescriteria omvatten een lijst met verwante **technieken** (hieronder nader beschreven).
 
 ## Ondersteunende bronnen {#supporting-resources}
@@ -92,9 +92,11 @@ Deze lijst is niet uitvoerig, en is bedoeld als een inleiding op de beschikbare 
 
 ### Nieuw in WCAG 2.1 {#what-is-new}
 
-[Nieuw in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) verstrekt waardevolle informatie over de delta tussen WCAG 2.0 en WCAG 2.1.
+De richtsnoeren bevatten informatie over wat nieuw is in WCAG 2.1:
 
-In de sectie [WCAG 2.0 en 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wordt de status van hun relatie nader toegelicht.
+* [Nieuw in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) verstrekt waardevolle informatie over de delta tussen WCAG 2.0 en WCAG 2.1.
+
+* In de sectie [WCAG 2.0 en 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wordt de status van hun relatie nader toegelicht.
 
 ### Technieken voor WCAG 2.1 {#techniques-for-wcag}
 
