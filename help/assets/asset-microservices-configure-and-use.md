@@ -3,7 +3,10 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1844'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de services voor een optimale verwerking van verschillende elementtypen en verwerkingsopties.
 
-De verwerking van activa hangt van de configuratie in Profielen **[!UICONTROL van de]** Verwerking af, die een standaardopstelling verstrekken, en een beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Beheerders kunnen de configuraties van naverwerkingsworkflows maken en onderhouden, inclusief optionele aanpassing. Door workflows aan te passen zijn uitbreidbaarheid en volledige aanpassing mogelijk.
+De verwerking van activa hangt van de configuratie binnen af **[!UICONTROL Processing Profiles]**, die een standaardopstelling verstrekken, en een beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Beheerders kunnen de configuraties van naverwerkingsworkflows maken en onderhouden, inclusief optionele aanpassing. Door workflows aan te passen zijn uitbreidbaarheid en volledige aanpassing mogelijk.
 
 Met Asset microservices kunt u een [groot aantal bestandstypen](/help/assets/file-format-support.md) verwerken die meer indelingen offline bestrijken dan in eerdere versies van Experience Manager. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist.
 
@@ -41,7 +44,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 De verwerking van activa met activa microservices wordt pre-gevormd met een standaardconfiguratie, die ervoor zorgt dat de standaardvertoningen die door het systeem worden vereist beschikbaar zijn. Het zorgt er ook voor dat extractie van metagegevens en tekstextractie beschikbaar zijn. Gebruikers kunnen direct beginnen met het uploaden of bijwerken van elementen en de standaardverwerking is standaard beschikbaar.
 
-Voor specifieke vereisten voor het genereren van vertoningen of het verwerken van elementen kan een AEM-beheerder extra [!UICONTROL verwerkingsprofielen]maken. Gebruikers kunnen een of meer van de beschikbare profielen aan specifieke mappen toewijzen om extra verwerkingstijd te krijgen. U kunt bijvoorbeeld specifieke uitvoeringen voor het web, mobiele apparaten en tablets genereren. In de volgende video ziet u hoe u [!UICONTROL verwerkingsprofielen] maakt en toepast en hoe u toegang krijgt tot de gemaakte uitvoeringen.
+Voor specifieke vereisten voor het genereren van vertoningen of het verwerken van elementen, kan een AEM-beheerder extra bestanden maken [!UICONTROL Processing Profiles]. Gebruikers kunnen een of meer van de beschikbare profielen aan specifieke mappen toewijzen om extra verwerkingstijd te krijgen. U kunt bijvoorbeeld specifieke uitvoeringen voor het web, mobiele apparaten en tablets genereren. In de volgende video ziet u hoe u de gemaakte uitvoeringen kunt maken en toepassen [!UICONTROL Processing Profiles] en hoe u deze kunt openen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
@@ -50,7 +53,7 @@ Zie [nabewerkingsworkflows](#post-processing-workflows)voor informatie over het 
 
 ## Configuraties voor assetmicroservices {#configure-asset-microservices}
 
-Om de microservices voor elementen te configureren, kunnen beheerders de gebruikersinterface voor configuratie gebruiken via **[!UICONTROL Gereedschappen > Middelen > Profielen]** verwerken.
+Beheerders kunnen de gebruikersinterface van de configuratie onder gebruiken om de elementmicroservices te configureren. **[!UICONTROL Tools > Assets > Processing Profiles]**
 
 ### Standaardconfiguratie {#default-config}
 
@@ -71,7 +74,7 @@ Middelenmicroservices bieden ondersteuning voor een groot aantal verschillende b
 
 ### Extra verwerkingsprofielen toevoegen {#processing-profiles}
 
-U kunt extra verwerkingsprofielen toevoegen met de handeling **[!UICONTROL Maken]** .
+Met de **[!UICONTROL Create]** handeling kunt u aanvullende verwerkingsprofielen toevoegen.
 
 Elke configuratie met het verwerkingsprofiel bevat een lijst met uitvoeringen. Voor elke vertoning kunt u het volgende opgeven:
 
@@ -112,8 +115,8 @@ Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen di
 
 Er zijn twee manieren om verwerkingsprofielen toe te passen op mappen:
 
-* Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Gereedschappen > Middelen > Profielen]** verwerken en de handeling Profiel **[!UICONTROL toepassen op map(pen)]** gebruiken. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the drop-down, select the right processing profile for that folder. The choice will be save upon **[!UICONTROL Save &amp; Close]** action.
+* Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools > Assets > Processing Profiles]** en **[!UICONTROL Apply Profile to Folder(s)]** actie gebruiken. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
+* Gebruikers kunnen een map selecteren in de gebruikersinterface voor assets, de actie **[!UICONTROL Properties]** gebruiken om het scherm met mapeigenschappen te openen, op het tabblad **[!UICONTROL Processing Profiles]** klikken en in de vervolgkeuzelijst het juiste verwerkingsprofiel voor die map selecteren. De keuze wordt opgeslagen bij een actie **[!UICONTROL Save & Close]**.
 
 >[!NOTE]
 >
@@ -125,7 +128,7 @@ Nadat een verwerkingsprofiel op een map is toegepast, worden alle nieuwe element
 >
 >Wanneer elementen naar een map worden geüpload, controleert Experience Manager de eigenschappen van de bovenliggende map op een verwerkingsprofiel. Als er niets is toegepast, gaat het omhoog in de mappenstructuur totdat er een toegepast verwerkingsprofiel wordt gevonden en wordt het gebruikt voor het element. Dat betekent dat een verwerkingsprofiel dat is toegepast op een map, werkt voor de gehele structuur, maar kan worden overschreven door een ander profiel dat is toegepast op een submap.
 
-Gebruikers kunnen controleren of de verwerking daadwerkelijk heeft plaatsgevonden door een nieuw geüpload element te openen waarvoor de verwerking is voltooid, een voorvertoning van het element te openen en op de weergave **[!UICONTROL Vertoningen]** van het linkerspoor te klikken. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
+Gebruikers kunnen controleren of de verwerking daadwerkelijk heeft plaatsgevonden door een nieuw geüpload element te openen waarvoor de verwerking is voltooid, een voorvertoning van het element te openen en op de **[!UICONTROL Renditions]** weergave van het linkerspoor te klikken. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
 
 ![extra-renditions](assets/renditions-additional-renditions.png)*Figure: Voorbeeld van twee extra vertoningen die worden gegenereerd door een verwerkingsprofiel dat wordt toegepast op de bovenliggende map*
 
@@ -171,3 +174,7 @@ De dienst van de Runner van het Werkschema van de Douane (`com.adobe.cq.dam.proc
 > OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van AEM, niet rechtstreeks beschikbaar in de cloudservice-implementaties.
 
 Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor meer informatie over de standaardworkflowstap die u kunt gebruiken in de naverwerkingsworkflow.
+
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
+
+* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u aanpassen [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
