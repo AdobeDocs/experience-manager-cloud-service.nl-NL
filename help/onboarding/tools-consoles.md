@@ -1,7 +1,7 @@
 ---
 title: Gereedschapsconsoles
 description: Leer meer over de verschillende gereedschapsconsoles in AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
