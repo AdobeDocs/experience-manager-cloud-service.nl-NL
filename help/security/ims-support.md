@@ -1,7 +1,7 @@
 ---
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -21,7 +21,7 @@ AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auth
 
 * De Admin Console zal klanten als IMS-organisaties, Author- en Publish-instanties in een omgeving als Product Context-instanties representeren. Hierdoor kunnen systeem- en productbeheerders de toegang tot instanties beheren.
 * Productprofielen in de Admin Console bepalen tot welke instanties een gebruiker toegang heeft.
-* Klanten kunnen hun eigen SAML 2-compatibele identiteitsproviders (afgekort IDP) gebruiken voor &#39;Single Sign On&#39; (eenmalig aanmelden).
+* Klanten kunnen hun eigen SAML 2-compatibele identiteitsproviders (afgekort IDP) gebruiken voor &quot;Single Sign On&quot; (eenmalig aanmelden).
 * Alleen Enterprise- of federatieve id&#39;s voor Single Sign On (eenmalige aanmelding) van klanten worden ondersteund, geen persoonlijke Adobe ID&#39;s.
 
 ## Architectuur {#architecture}
@@ -84,7 +84,7 @@ Voor het instellen van User Sync moet de organisatie een set referenties maken o
 
 ![User Sync Tool](/help/security/assets/ims5.png)
 
-De User Sync Tool wordt [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)gedistribueerd via de Adobe Github-repository.
+De User Sync Tool wordt [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/latest) gedistribueerd via de Adobe Github-repository.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Voor andere gebruikers kan de op IMS gebaseerde aanmelding worden gebruikt zodra
 
 
 >[!NOTE]
-> Elke gebruiker die in IMS is gemaakt, kan met een Adobe-id of federatieve id worden gemaakt. Als een gebruiker wordt ingesteld met een Adobe-id, wordt deze geverifieerd met de Identiteitsprovider van het bedrijf.
+> Elke gebruiker die in IMS is gemaakt, kan met een Adobe ID of Federated ID worden gemaakt. Als een gebruiker wordt ingesteld met een Adobe ID, wordt deze geverifieerd met de identiteitsprovider van het bedrijf voor aanmelding.
 
 De gebruiker wordt vervolgens omgeleid naar het IMS-aanmeldingsscherm en moet zijn/haar referenties invoeren:
 
@@ -197,18 +197,18 @@ Zoals hieronder getoond neemt de groep **AEM-GRP_008** de toestemmingen en de re
 
 ### Cloud Manager openen {#accessing-cloud-manager}
 
-Als u toegang wilt tot Cloud Manager of AEM als een Cloud Service-omgeving, moet u worden toegewezen aan profielen van het Cloud Manager-product.
+Als u toegang wilt tot Cloud Manager of AEM as a Cloud Service-omgevingen, moet u worden toegewezen aan profielen van het Cloud Manager-product.
 
 Raadpleeg [Roldefinities](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) voor meer informatie over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
 
 >[!NOTE]
->Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, verwijs naar Op [Rol gebaseerde Toestemmingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Voor informatie over elk van de rollen met specifieke machtigingen, vooraf geconfigureerde taken of machtigingen, gekoppeld aan elke rol, raadpleegt u [Op rollen gebaseerde machtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
-**Stappen voor het toevoegen van een Gebruiker**
+**Stappen voor het toevoegen van een gebruiker**
 
-1. Voeg een gebruiker aan een bepaald profiel of van het bestaande scherm van de gebruiker of van een nieuw gebruikersscherm toe.
+1. Voeg een gebruiker toe aan een bepaald profiel vanaf het scherm van een bestaande gebruiker of vanaf het scherm van een nieuwe gebruiker.
 
-1. U kunt ook een gebruiker toevoegen vanuit het scherm **Overzicht** , zoals in de onderstaande afbeelding wordt getoond.
+1. U kunt ook een gebruiker toevoegen vanaf het scherm **Overview**, zoals in de onderstaande afbeelding wordt getoond.
 
    ![ACL3](/help/security/assets/ims23.png)
 
@@ -218,23 +218,23 @@ Raadpleeg [Roldefinities](/help/onboarding/what-is-required/add-users-roles.md#r
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Nadat u aan het juiste profiel bent toegevoegd, hebt u via [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) toegang tot de respectievelijke huurders in Cloud Manager via de rechterbovenhoek van de gebruikersinterface.
+1. Nadat u aan het juiste profiel bent toegevoegd, hebt u via [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) toegang tot de respectievelijke tenants in Cloud Manager via de rechterbovenhoek van de gebruikersinterface.
 
 
-### Instantie in AEM benaderen als cloudservice {#accessing-instance-cloud-service}
+### Een instantie openen in AEM as a Cloud Service {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->De stappen die in het voorgaande gedeelte worden vermeld, moeten al zijn uitgevoerd voordat u toegang krijgt tot een instantie in AEM als Cloud Service.
+>De stappen die in het voorgaande gedeelte worden vermeld, moeten al zijn uitgevoerd voordat u toegang krijgt tot een instantie in AEM as a Cloud Service.
 
-Als u toegang wilt hebben tot een AEM-instantie in de **beheerconsole**, raadpleegt u het Cloud Manager-programma en de omgevingen in het programma in de productlijst in de **beheerconsole**.
+Als u toegang wilt hebben tot een AEM-instantie in de **Admin Console**, raadpleegt u het Cloud Manager-programma en de omgevingen in het programma in de productlijst in de **Admin Console**.
 
-In de onderstaande schermafbeelding ziet u bijvoorbeeld twee beschikbare omgevingen, namelijk de *dev-auteur* en een *publicatie*.
+In de onderstaande schermafbeelding ziet u bijvoorbeeld twee beschikbare omgevingen, namelijk *dev author* en *publish*.
 
 ![ACL3](/help/security/assets/ims19.png)
 
-Om toegang te krijgen tot AEM-instanties moet de gebruiker worden toegevoegd aan een groep van het desbetreffende Cloud Service Product.
+Om toegang te krijgen tot AEM-instanties moet de gebruiker worden toegevoegd aan een groep van het desbetreffende Cloud Service-product.
 
-Elke instantie van de auteur heeft een AEM-beheerdersprofiel en een AEM-gebruikersprofiel en elke publicatie-instantie heeft een AEM-gebruikersprofiel. U kunt desgewenst andere profielen toevoegen.
+Elke auteurinstantie heeft een AEM-beheerdersprofiel en een AEM-gebruikersprofiel en elke publicatie-instantie heeft een AEM-gebruikersprofiel. U kunt desgewenst andere profielen toevoegen.
 
-Als u toegang tot het beheerniveau wilt krijgen tot de AEM-instantie, voegt u de gebruiker toe aan het AEM-beheerdersprofiel voor dat specifieke product.
+Als u toegang tot het beheerniveau van de AEM-instantie wilt krijgen, voegt u de gebruiker toe aan het AEM-beheerdersprofiel voor dat specifieke product.
 
