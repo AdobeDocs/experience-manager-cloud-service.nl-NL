@@ -2,15 +2,15 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als cloudservice (WCAG 2.1-compatibiliteit)
 description: Help webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 translation-type: tm+mt
-source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
+source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
 workflow-type: tm+mt
-source-wordcount: '13935'
+source-wordcount: '13936'
 ht-degree: 5%
 
 ---
 
 
-# Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
+# Toegankelijke content maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
 
 De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), opgesteld door [een werkgroep van het World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), bestaan uit een reeks technologische onafhankelijke richtsnoeren en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
 
@@ -534,7 +534,7 @@ Volg de richtlijnen onder [Hoe te om Succes Criteria 1.4.2](https://www.w3.org/W
    * Logotypes: Voor tekst die deel uitmaakt van een logo of merknaam is geen minimaal contrast vereist.
    >[!NOTE]
    >
-   >Zie Contrast [voor niet-tekst](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) begrijpen voor meer informatie om ervoor te zorgen dat lezers de extra vereisten rond niet-tekstelementen (zoals pictogrammen, interface-elementen) begrijpen.
+   >Zie Contrast [voor niet-tekst](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) begrijpen voor meer informatie om ervoor te zorgen dat auteurs van inhoud de extra vereisten rond niet-tekstelementen (met inbegrip van pictogrammen, interface-elementen, onder andere) begrijpen.
 
 #### Doel - Contrast (minimaal) (1.4.3) {#purpose-contrast-minimum}
 
@@ -808,7 +808,7 @@ U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
 * [Succescriterium 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [Voldoen aan criterium 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
 ### Focusvolgorde (2.4.3)  {#focus-order}
 
