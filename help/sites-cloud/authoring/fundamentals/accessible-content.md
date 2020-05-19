@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als cloudservice (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken als Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 5%
 
 ---
@@ -808,7 +808,7 @@ U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
 * [Succescriterium 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [Voldoen aan criterium 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
 ### Focusvolgorde (2.4.3)  {#focus-order}
 
@@ -1159,7 +1159,7 @@ Volg de richtlijnen onder [Hoe te om Succes Criteria 3.2.4](https://www.w3.org/W
 
 #### Doel - Foutidentificatie (3.3.1) {#purpose-error-identification}
 
-Dit succescriterium is bedoeld om ervoor te zorgen dat gebruikers weten dat er een fout is opgetreden en kunnen bepalen wat fout is. Het foutbericht moet zo specifiek mogelijk zijn. Als het verzenden van een formulier mislukt is, is het niet voldoende om het formulier opnieuw weer te geven en de foutvelden aan te geven om te zien dat er een fout is opgetreden. Gebruikers van schermlezers weten bijvoorbeeld pas dat er een fout is opgetreden als ze een van de indicatoren tegenkomen. Ze kunnen het formulier helemaal verlaten voordat ze de foutindicator tegenkomen, omdat ze denken dat de pagina gewoon niet functioneel is. Volgens de definitie in WCAG 2.0 is een &quot;inputfout&quot;informatie die door de gebruiker wordt verstrekt die niet wordt goedgekeurd. Dit omvat:
+Dit succescriterium is bedoeld om ervoor te zorgen dat gebruikers weten dat er een fout is opgetreden en kunnen bepalen wat fout is. Het foutbericht moet zo specifiek mogelijk zijn. Als het verzenden van een formulier mislukt is, is het niet voldoende om het formulier opnieuw weer te geven en de foutvelden aan te geven om te zien dat er een fout is opgetreden. Gebruikers van schermlezers weten bijvoorbeeld pas dat er een fout is opgetreden als ze een van de indicatoren tegenkomen. Ze kunnen het formulier helemaal verlaten voordat ze de foutindicator tegenkomen, omdat ze denken dat de pagina gewoon niet functioneel is. Volgens de definitie in WCAG is een [invoerfout](https://www.w3.org/TR/WCAG/#dfn-input-error) informatie die door de gebruiker is opgegeven en die niet is geaccepteerd. Dit omvat:
 
 informatie die door de webpagina wordt vereist maar door de gebruiker wordt weggelaten, of informatie die door de gebruiker wordt verstrekt maar die buiten het vereiste gegevensformaat of toegestane waarden valt.
 Bijvoorbeeld:
@@ -1240,7 +1240,7 @@ In eenvoudige formulieren met een zeer beperkte functionaliteit kan een juiste e
 
 #### Doel - Foutvoorstel (3.3.3) {#purpose-error-suggestion}
 
-Het doel van dit succescriterium is ervoor te zorgen dat gebruikers passende suggesties ontvangen voor het corrigeren van een invoerfout als dat mogelijk is. In de WCAG 2.0-definitie van &quot;invoerfout&quot; staat dat het &quot;door de gebruiker verstrekte informatie betreft die niet door het systeem wordt geaccepteerd&quot;. Voorbeelden van informatie die niet wordt geaccepteerd, zijn informatie die vereist is maar door de gebruiker wordt weggelaten en informatie die door de gebruiker wordt verstrekt maar die buiten de vereiste of toegestane gegevensindeling valt.
+Het doel van dit succescriterium is ervoor te zorgen dat gebruikers passende suggesties ontvangen voor het corrigeren van een invoerfout als dat mogelijk is. In de WCAG-definitie van [invoerfout](https://www.w3.org/TR/WCAG/#dfn-input-error) staat dat het gaat om &quot;informatie die door de gebruiker is verstrekt en die niet door het systeem wordt geaccepteerd&quot;. Voorbeelden van informatie die niet wordt geaccepteerd, zijn informatie die vereist is maar door de gebruiker wordt weggelaten en informatie die door de gebruiker wordt verstrekt maar die buiten de vereiste of toegestane gegevensindeling valt.
 
 In criterium 3.3.1 van het succescriterium is voorzien in een foutmelding. Personen met cognitieve beperkingen kunnen het echter moeilijk vinden te begrijpen hoe de fouten moeten worden gecorrigeerd. Mensen met een visuele handicap kunnen wellicht niet precies uitzoeken hoe de fout kan worden gecorrigeerd. In het geval van een niet-succesvol verzonden formulier kunnen gebruikers het formulier verlaten omdat ze niet zeker weten hoe de fout kan worden gecorrigeerd, ook al weten ze dat deze is opgetreden.
 
