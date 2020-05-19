@@ -1,10 +1,10 @@
 ---
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als cloudservice (WCAG 2.1-compatibiliteit)
-description: Help webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
+description: AEM gebruiken als Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 5%
 
 ---
@@ -808,7 +808,7 @@ U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
 * [Succescriterium 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [Voldoen aan criterium 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
 ### Focusvolgorde (2.4.3)  {#focus-order}
 
