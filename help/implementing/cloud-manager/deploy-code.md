@@ -2,7 +2,10 @@
 title: Uw code implementeren - cloudservices
 description: Uw code implementeren - cloudservices
 translation-type: tm+mt
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ## Code implementeren met Cloud Manager {#deploying-code-with-cloud-manager}
 
-Zodra u uw **Pijpleiding** (bewaarplaats, milieu, en het testen milieu) hebt gevormd, bent u bereid om uw code op te stellen.
+Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigureerd, bent u klaar om uw code te implementeren.
 
 1. Klik op **Implementeren** in Cloud Manager om het implementatieproces te starten.
 
@@ -35,7 +38,7 @@ Zodra u uw **Pijpleiding** (bewaarplaats, milieu, en het testen milieu) hebt gev
    >
    >Bovendien, kunt u de stappen van diverse plaatsingsprocessen herzien door logboeken, of het herzien van resultaten, voor de testende criteria te bekijken.
 
-   De **Stage-implementatie** omvat de volgende stappen:
+   De **Fase-implementatie** omvat de volgende stappen:
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
    * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie Een AEM-toepassingsproject [](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) maken voor meer informatie over de ontwikkelomgeving.
@@ -44,7 +47,7 @@ Zodra u uw **Pijpleiding** (bewaarplaats, milieu, en het testen milieu) hebt gev
    * Distribueren naar werkgebied
 
       ![](assets/stage-deployment.png)
-   Voor het testen **van het** werkgebied worden de volgende stappen uitgevoerd:
+   Voor het **testen van de fase** worden de volgende stappen uitgevoerd:
 
    * Functionele tests van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
    * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
@@ -98,7 +101,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
 
    >[!NOTE]
    >
-   >U kunt ladingsannulerveranderingen in ontwikkeling en werkgebiedplaatsingen overslaan, namelijk losmaken en stappen in zowel niet productiepijpleidingen, voor ontwikkelaarmilieu&#39;s, als de productiepijpleiding, voor werkgebiedmilieu&#39;s vastmaken.
+   >U kunt de veranderingen van het taakverdelingsmechanisme in ontwikkeling en werkgebiedplaatsingen overslaan, namelijk losmaken en stappen in zowel niet productiepijpleidingen, voor ontwikkelaarmilieu&#39;s, als de productiepijplijn, voor werkgebiedmilieu&#39;s vastmaken.
 
 ### Implementatie naar productiefase {#deployment-production-phase}
 
