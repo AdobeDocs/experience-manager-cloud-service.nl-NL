@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 14%
+source-wordcount: '629'
+ht-degree: 8%
 
 ---
 
@@ -65,7 +65,6 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    >[!NOTE]
    >Als, u nog niet opstelling uw niet productiepijplijn hebt, toont het *scherm van het Overzicht* de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
 
-
 ## Omgeving bijwerken {#updating-dev-environment}
 
 Updates van werkgebied- en productieomgevingen worden automatisch beheerd door Adobe.
@@ -73,11 +72,12 @@ Updates van werkgebied- en productieomgevingen worden automatisch beheerd door A
 Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Als een omgeving niet de nieuwste openbaar beschikbare AEM-versie uitvoert, wordt in de status op de milieuvriendenkaart op het startscherm de **UPDATE-BESCHIKBAAR** weergegeven.
 
 ![](assets/manage-environments2.png)
-)
 
-Wanneer deze status wordt weergegeven, is de optie **Bijwerken** beschikbaar in het vervolgkeuzemenu, zowel op de kaart met omgevingen als in het menu **Beheren** als u op **Details** klikt in de kaart **OMGEVINGEN**.
 
-![](assets/add-environment4.png)
+De optie **Bijwerken** is beschikbaar in het vervolgkeuzemenu in de **milieucaart** .
+Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
+
+![](assets/update-environment2.png)
 
 Het selecteren van dit van dropdown menu zal een Manager van de Plaatsing toestaan om de pijpleiding verbonden aan dit milieu aan de recentste versie bij te werken en dan de pijpleiding uit te voeren.
 
@@ -87,10 +87,19 @@ Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de 
 
 De gebruiker met de vereiste toestemmingen zal een milieu van de Ontwikkeling kunnen schrappen.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieucaart** .
+Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
+
+## Developer Console openen {#accessing-developer-console}
+
+Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment** Card.
+
+![](assets/dev-console1.png)
+
+U kunt deze optie ook selecteren via de knop **Beheren** als u op **Details** van de kaart **Omgevingen** klikt.
 
