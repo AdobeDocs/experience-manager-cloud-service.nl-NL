@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
    ![](assets/no-environments.png)
 
-   >[!OPMERKING)
+   >[!NOTE]
    >De optie Omgeving **** toevoegen wordt uitgeschakeld bij gebrek aan machtigingen of bij een eventuele overeenkomst.
 
 1. Het dialoogvenster **Omgeving toevoegen** wordt weergegeven. De gebruiker moet details verzenden zoals het **Omgevingstype**, de **Naam van de omgeving** en de **Beschrijving van de omgeving** (afhankelijk van de doelstelling van de gebruiker bij het creëren van de omgeving binnen de grenzen van wat beschikbaar is voor de specifieke tenant).
