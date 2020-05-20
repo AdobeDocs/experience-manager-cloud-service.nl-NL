@@ -2,7 +2,10 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 14%
 
 ---
 
@@ -37,9 +40,16 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 ## Een omgeving toevoegen {#adding-environments}
 
 
-1. De gebruiker klikt op de knop **Omgeving toevoegen** om een omgeving toe te voegen.
+1. Klik op **Omgeving** toevoegen om een omgeving toe te voegen. Deze knop is toegankelijk via het scherm **Omgevingen** .
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   De optie **Omgeving** toevoegen is ook beschikbaar op de **milieukeuren** wanneer het programma geen omgevingen bevat.
+
+   ![](assets/no-environments.png)
+
+   >[!OPMERKING)
+   >De optie Omgeving **** toevoegen wordt uitgeschakeld bij gebrek aan machtigingen of bij een eventuele overeenkomst.
 
 1. Het dialoogvenster **Omgeving toevoegen** wordt weergegeven. De gebruiker moet details verzenden zoals het **Omgevingstype**, de **Naam van de omgeving** en de **Beschrijving van de omgeving** (afhankelijk van de doelstelling van de gebruiker bij het creëren van de omgeving binnen de grenzen van wat beschikbaar is voor de specifieke tenant).
 
@@ -72,3 +82,15 @@ Wanneer deze status wordt weergegeven, is de optie **Bijwerken** beschikbaar in 
 Het selecteren van dit van dropdown menu zal een Manager van de Plaatsing toestaan om de pijpleiding verbonden aan dit milieu aan de recentste versie bij te werken en dan de pijpleiding uit te voeren.
 
 Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de pijpleiding uit te voeren.
+
+## Omgeving verwijderen {#deleting-environment}
+
+De gebruiker met de vereiste toestemmingen zal een milieu van de Ontwikkeling kunnen schrappen.
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
+
