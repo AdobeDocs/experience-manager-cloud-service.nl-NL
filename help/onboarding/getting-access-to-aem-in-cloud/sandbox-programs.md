@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo
 
 Sandbox-programma&#39;s omvatten Sites en Middelen en worden automatisch gevuld met een Git-vertakking die voorbeeldcode, een ontwikkelomgeving en een niet-productiepijplijn bevat.
 
-Voor meer informatie over programmatypes, verwijs naar het [Begrip van Programma&#39;s en de Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)van Programma.
+Verwijs naar het [Begrip van Programma&#39;s en de Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) van Programma om meer over de Types van Programma te leren.
 
 ### Attributen van Sandbox-programma&#39;s {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te 
 
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
-1. Klik op Slaapstand, zoals in de onderstaande afbeelding wordt getoond:
-1. Klik op **Slaapstand** om de stap te bevestigen
-1. Wanneer de slaapstand is gelukt, ziet u het volgende scherm.
+
+1. Klik op Slaapstand, zoals in de onderstaande afbeelding wordt getoond
+
+   ![](assets/hibernate-1.png)
+1. Klik op **Slaapstand** om de stap te bevestigen.
+
+   ![](assets/hibernate-2.png)
+
+1. Wanneer de slaapstand is gelukt, wordt het volledige bericht voor uw omgeving weergegeven in het scherm **Developer Console** .
+
+   ![](assets/hibernate-4.png)
 
 #### Een gedownloade omgeving openen {#accessing-hibernated-environment}
 
