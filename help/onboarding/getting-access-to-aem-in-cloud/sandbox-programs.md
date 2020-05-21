@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Een Sandbox-programma is een van de twee typen programma&#39;s die beschikbaar z
 
 Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren.
 
-Sandbox-programma&#39;s omvatten Sites en Middelen en worden automatisch gevuld met een Git-vertakking die voorbeeldcode, een ontwikkelomgeving en een niet-productiepijplijn bevat.
+Sandbox-programma&#39;s omvatten sites en middelen en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het archetype van het Project AEM wordt gebaseerd.
 
 Verwijs naar het [Begrip van Programma&#39;s en de Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) van Programma om meer over de Types van Programma te leren.
 
@@ -41,7 +41,7 @@ Sandbox-programma&#39;s hebben de volgende kenmerken:
 
 Met een wizard voor het maken van programma&#39;s kunt u een Sandbox-programma maken.
 
-Raadpleeg voor meer informatie over het maken van een Sandbox-programma.
+Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar het [Creëren van een Programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) Sandbox voor meer details.
 
 ### Sandbox-omgevingen maken {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ Sluimerstand wordt gecategoriseerd als:
 * **De automatische** milieu&#39;s van het Programma van Sandbox worden automatisch gehiberneerd na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoek ontvangen.
 
 * **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet verplicht is, aangezien er na een bepaalde periode (acht uur) van inactiviteit automatisch sprake zal zijn van herberging.
+
+>[!CAUTION]
+>In de meest recente versie kunt u de omgeving van het Sandbox-programma niet onderbreken door een koppeling naar de Developer Console of Cloud Manager te maken.
 
 #### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Een gebruiker met de **Cloud Manager - de Rol** van de Ontwikkelaar kan op de Co
 >[!NOTE]
 > Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist. Meer over rollen voor gebruikers leren die de beschikbaarheid van specifieke eigenschappen bepalen, verwijs[naar Add Gebruikers en Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### Belangrijke overwegingen {#important-considerations}
+
+Weinig belangrijke overwegingen met betrekking tot gehiberneerde en gedeshiberneerde milieu&#39;s zijn:
+
+* Een gebruiker kan een pijpleiding gebruiken om douanecode aan gehiberneerde milieu&#39;s op te stellen. Het milieu zal gehiberneerd blijven en de nieuwe code zal in het milieu verschijnen zodra ontruimd-hibernated.
+
+* AEM-upgrades kunnen worden toegepast op gehiberde omgevingen, die klanten handmatig kunnen activeren via Cloud Manager. Het milieu zal gehiberneerd blijven en de nieuwe introductie zal in het milieu verschijnen zodra het wordt gedehiberneerd.
+
+>[!NOTE]
+>Cloud Manager geeft op dit moment niet aan of een omgeving is gehiberneerd.
+
 ## AEM-updates voor Sandbox-omgevingen {#aem-updates-sandbox}
 
 Raadpleeg de [AEM-versie-updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) voor meer informatie.
@@ -158,13 +172,9 @@ Een gebruiker kan AEM-updates handmatig toepassen op de omgevingen in een Sandbo
 Raadpleeg [Bijgewerkt omgeving](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
 
 >[!NOTE]
->Een *niet-productiepijpleiding* die aan het ontwikkelmilieu van belang opstelt moet worden gevormd om een handupdate pijpleiding in werking te stellen.
+>* Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
+>* Een handmatige update van *Productie* - of *Stage* -omgeving werkt automatisch de andere bij. De omgeving Production+Stage moet zich op dezelfde AEM-versie bevinden.
 
->[!NOTE]
->Er moet een *productiepijpleiding* worden geconfigureerd om een handmatige updatepijpleiding naar Production+Stage-omgeving te laten starten.
-
->[!NOTE]
->Handmatige update naar *Productie* - of *werkgebiedomgeving* werkt automatisch de andere bij. De omgeving Production+Stage moet zich op dezelfde AEM-versie bevinden.
 
 
 
