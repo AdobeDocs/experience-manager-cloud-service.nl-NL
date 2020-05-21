@@ -1,8 +1,11 @@
 ---
 sub-product: On-boarding van AEM as a Cloud Service
 user-guide-title: On-boarding van AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
+translation-type: tm+mt
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 96%
 
 ---
 
@@ -17,9 +20,11 @@ source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
    + [Broncodeopslagplaats](what-is-required/source-code-repository.md)
 + Toegang krijgen tot AEM in de cloud {#getting-access}
    + [Experience Manager as a Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
-   + [Toegang tot programma&#39;s](getting-access-to-aem-in-cloud/first-time-login.md)
-   + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + [Een programma maken](getting-access-to-aem-in-cloud/creating-a-program.md)
+   + Cloud-serviceprogramma&#39;s {#cloud-service-programs}
+      + [Toegang tot programma&#39;s](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
+      + [Een programma maken](getting-access-to-aem-in-cloud/creating-a-program.md)
+      + [Sandbox-programma&#39;s](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [Een AEM-applicatieproject maken](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
