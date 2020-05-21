@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -137,9 +137,9 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
 Raadpleeg de [AEM-versie-updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) voor meer informatie.
 
-Een gebruiker kan AEM-updates handmatig toepassen op de omgevingen in een Sandbox-programma (zie onderstaande afbeelding). Dit kan worden gedaan wanneer de getoonde status **UPDATE BESCHIKBAAR** is.
+Een gebruiker kan AEM-updates handmatig toepassen op de omgevingen in een Sandbox-programma.
 
-De optie Bijwerken is beschikbaar in het vervolgkeuzemenu op de **milieucaart** . Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
+Raadpleeg [Bijgewerkt omgeving](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
 
 >[!NOTE]
 >Een *niet-productiepijpleiding* die aan het ontwikkelmilieu van belang opstelt moet worden gevormd om een handupdate pijpleiding in werking te stellen.
