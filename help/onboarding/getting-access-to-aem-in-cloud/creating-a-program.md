@@ -2,7 +2,7 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,13 +32,13 @@ Afhankelijk van het doel van de gebruiker bij het creëren van het programma bin
 
 ![](assets/create-program-add.png)
 
-## Sandboxprogramma&#39;s maken {#create-demo-program}
+## Sandboxprogramma&#39;s maken {#create-sandbox-program}
 
 Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
 1. Selecteer in de wizard Programma maken een **demo** instellen. Gebruiker verzendt de naam van het programma voordat u **Maken** selecteert.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. De gebruiker ziet de nieuwe sandbox-programmakaart op de bestemmingspagina en kan de muisaanwijzer boven de nieuwe sandbox plaatsen om het pictogram Cloud Manager te selecteren en naar de overzichtspagina van Cloud Manager te navigeren. De kaart informeert de gebruiker over de status van automatische installatie van het nieuwe sandboxprogramma. De gebruiker zal progressie zien.
 
