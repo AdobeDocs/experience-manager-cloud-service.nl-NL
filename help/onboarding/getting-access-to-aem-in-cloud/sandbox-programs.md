@@ -4,7 +4,7 @@ description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
 source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Sandbox-programma&#39;s hebben de volgende kenmerken:
 
 Met een wizard voor het maken van programma&#39;s kunt u een Sandbox-programma maken.
 
-Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar het [Creëren van een Programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)Sandbox.
+Raadpleeg voor meer informatie over het maken van een Sandbox-programma.
 
 ### Sandbox-omgevingen maken {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ De productie-Stadium milieureeks kan manueel aan het Programma van Sandbox worde
 
 Raadpleeg [Omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) toevoegen voor meer informatie over het handmatig maken van een omgeving.
 
-### Sandbox-omgevingen verwijderen  {#deleting-sandbox-environments}
+### Sandbox-omgevingen verwijderen {#deleting-sandbox-environments}
 
 Gebruiker met de vereiste machtigingen kan een ontwikkelings- of productie-/werkgebiedomgeving of -sets verwijderen.
 
@@ -87,9 +87,16 @@ Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te 
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
 
-1. Klik op Slaapstand, zoals in de onderstaande afbeelding wordt getoond
+1. Klik op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
 
    ![](assets/hibernate-1.png)
+
+   Of
+
+   Klik op **Sluimerstand** in de lijst Milieu&#39;s, zoals in de onderstaande afbeelding wordt getoond:
+
+   ![](assets/hibernate-1b.png)
+
 1. Klik op **Slaapstand** om de stap te bevestigen.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +104,6 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 1. Wanneer de slaapstand is gelukt, wordt het volledige bericht voor uw omgeving weergegeven in het scherm **Developer Console** .
 
    ![](assets/hibernate-4.png)
-
-#### Een gedownloade omgeving openen {#accessing-hibernated-environment}
-
-Wanneer de gebruiker een browser aanvraagt tegen de auteur of de publicatielaag van een gehiberneerde omgeving, komt de gebruiker een bestemmingspagina tegen waarin de gehiberneerde status van de omgeving wordt beschreven, zoals hieronder wordt geïllustreerd:
-
-Een gebruiker met **Cloud Manager - de Rol** van de Ontwikkelaar kan op de knoop van de Console van de Ontwikkelaar klikken om tot de ontwikkelaarsconsole toegang te hebben en het milieu te ontruimen. Informatie over het instellen van rollen vindt u in de documentatie van Cloud Manager.
-
-Als een gebruiker in een organisatie niet op de knop Developer Console kan klikken om naar de Developer Console te worden gebracht, is het waarschijnlijk dat hij of zij de rol &quot;Cloud Manager - Developer&quot; moet krijgen.
 
 
 ### De-hibernatie {#de-hibernation-introduction}
@@ -119,6 +118,13 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
    ![](assets/de-hibernation-img1.png)
 
+   Of
+
+   Klik op De- **hibernate** uit de lijst **Omgevingen** , zoals hieronder getoond:
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Klik op **De Hibernate** om de stap te bevestigen.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,9 +137,19 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
    ![](assets/de-hibernation-img4.png)
 
+#### Een gedownloade omgeving openen {#accessing-hibernated-environment}
+
+Wanneer de gebruiker om het even welke browser verzoeken tegen of de auteur of publicatielaag van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu beschrijft, zoals aangetoond in het hieronder cijfer beschrijft:
+
+![](assets/de-hibernation-img5.png)
+
+
+Een gebruiker met de **Cloud Manager - de Rol** van de Ontwikkelaar kan op de Console **van de** Ontwikkelaar klikken om tot de ontwikkelaarsconsole toegang te hebben en het milieu te dehiberneren.
+
+>[!NOTE]
+> Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist. Meer over rollen voor gebruikers leren die de beschikbaarheid van specifieke eigenschappen bepalen, verwijs[naar Add Gebruikers en Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ## AEM-updates voor Sandbox-omgevingen {#aem-updates-sandbox}
-
 
 Raadpleeg de [AEM-versie-updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) voor meer informatie.
 
