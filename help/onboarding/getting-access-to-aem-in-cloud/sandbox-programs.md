@@ -4,7 +4,7 @@ description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Een Sandbox-programma is een van de twee typen programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een Regular-programma is.
 
-Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan de [AEM als Cloud Service Verbintenissen](https://www.adobe.com/legal/service-commitments.html).
+Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan de [AEM als verbintenissen](https://www.adobe.com/legal/service-commitments.html)van de Cloud Service.
 
 De milieu&#39;s die in een zandbak worden gecreeerd worden niet gevormd voor auto-schrapen. Daarom zijn ze niet geschikt voor prestatie- of belastingtests.
 
@@ -91,8 +91,8 @@ Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te 
 
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
-   >[!IMPORTANT]
-   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
+   >[!NOTE]
+   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de Developer Console maakt, kunt u een Sandbox-programmaomgeving niet hervestigen. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
 1. Klik op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
 
@@ -117,9 +117,6 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
-
-   >[!IMPORTANT]
-   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet deïnstalleren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
    >[!NOTE]
    >U kunt ook naar de **ontwikkelaarsconsole** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gehiberneerde omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
