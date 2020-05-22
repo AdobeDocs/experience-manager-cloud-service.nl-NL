@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.5.0
 description: Opmerkingen bij de release Experience Manager voor 2020.5.0
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,22 @@ ht-degree: 0%
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.5.0.
 
-## Cloud Manager {#cloud-manager}
+## Releasedatum {#release-date}
+
+De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.5.0 is 7 mei 2020.
+
+## Nieuw in AEM-sites {#aem-sites}
+
+Volg deze sectie om te weten te komen wat nieuw is en de updates voor AEM-sites in AEM als Cloud Service Release 2020.5.0.
+
+* Gedetailleerde taakgegevens zijn nu beschikbaar nadat grote pagina&#39;s zijn verwerkt en als asynchrone taken zijn verplaatst.
+* Wanneer u een paginastructuur kopieert/plakt, kunt u nu kiezen tussen alleen het plakken van de basispagina of ook van de subpagina&#39;s van de structuur.
+* AEM Experience Fragments die naar de werkruimten van het Doel van Adobe worden uitgevoerd verschijnen nu als unieke aanbiedingstypes en aanbiedingen bronnen in Doel.
+* MSM - het gebruiken van *publiceer* trekker rolt nu met succes verwijderingsgebeurtenissen voor componenten in levende exemplaarbron uit, namelijk het schrappen van componenten in een levende kopie die in levende exemplaarbron werden geschrapt.
+* MSM - de levende exemplaarcomponenten worden nu anders genoemd aan *_msm_moving* na de zelfde componentenuitrol van levende exemplaarbron.
+
+
+## Nieuwe functies in Cloud Manager {#cloud-manager}
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.5.0.
 
