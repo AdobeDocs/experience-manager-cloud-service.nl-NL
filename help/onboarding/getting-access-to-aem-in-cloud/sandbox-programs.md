@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -71,12 +71,12 @@ Sluimerstand kan automatisch of handmatig plaatsvinden. Het kan tot een paar min
 
 Sluimerstand wordt gecategoriseerd als:
 
-* **De automatische** milieu&#39;s van het Programma van Sandbox worden automatisch gehiberneerd na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoek ontvangen.
+* **De automatische** milieu&#39;s van het Programma van Sandbox worden automatisch gehiberneerd na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoeken ontvangen.
 
-* **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet verplicht is, aangezien er na een bepaalde periode (acht uur) van inactiviteit automatisch sprake zal zijn van herberging.
+* **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet nodig is omdat de slaapstand automatisch zal plaatsvinden na een bepaalde periode (acht uur) van inactiviteit.
 
 >[!CAUTION]
->In de meest recente versie kunt u de omgeving van het Sandbox-programma niet onderbreken door een koppeling naar de Developer Console of Cloud Manager te maken.
+>In de meest recente versie kunt u een koppeling rechtstreeks vanuit Cloud Manager naar de Developer Console niet gebruiken om een Sandbox-programmaomgeving te onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
 #### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te 
 
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
+   >[!NOTE]
+   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de Developer Console maakt, kunt u een Sandbox-programmaomgeving niet hervestigen. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
 1. Klik op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
 
@@ -96,7 +98,7 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
    Of
 
-   Klik op **Sluimerstand** in de lijst Milieu&#39;s, zoals in de onderstaande afbeelding wordt getoond:
+   Klik op de koppeling **Omgevingen** linksboven om de lijst met omgevingen weer te geven en klik vervolgens op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 1. Navigeer naar de **Developer Console**.
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
 
+   >[!NOTE]
+   >U kunt ook naar de **ontwikkelaarsconsole** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gehiberneerde omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
+
    >[!IMPORTANT]
    >Toegang tot de ontwikkelaarsconsole wordt gedefinieerd door de rol **Ontwikkelaar in** Cloud Manager in de **beheerconsole**. Een gebruiker met een ontwikkelaarrol machtiging kan een Sandbox-programmaomgeving dehiberneren.
 
@@ -123,7 +128,7 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
    Of
 
-   Klik op De- **hibernate** uit de lijst **Omgevingen** , zoals hieronder getoond:
+   Klik op de koppeling **Omgevingen** linksboven om de lijst met omgevingen weer te geven en klik vervolgens op **De-hibernate**, zoals in de onderstaande afbeelding wordt getoond
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Een gebruiker met de **Cloud Manager - de Rol** van de Ontwikkelaar kan op de Co
 >[!NOTE]
 > Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist. Meer over rollen voor gebruikers leren die de beschikbaarheid van specifieke eigenschappen bepalen, verwijs[naar Add Gebruikers en Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Belangrijke overwegingen {#important-considerations}
+### Belangrijke overwegingen {#important-considerations}
 
 Weinig belangrijke overwegingen met betrekking tot gehiberneerde en gedeshiberneerde milieu&#39;s zijn:
 
