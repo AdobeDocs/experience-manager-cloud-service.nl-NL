@@ -2,12 +2,15 @@
 title: Inhoud leveren
 description: 'Inhoud leveren '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 1%
 
 ---
 
 
-# Inhoud leveren in AEM als cloudservice {#content-delivery}
+# Levering van content in AEM as a Cloud Service {#content-delivery}
 
 Op de huidige pagina vindt u details van de inhoud van de publicatieservice in AEM als een Cloud Service. De levering van de de dienstinhoud van de publicatie omvat:
 
@@ -52,11 +55,11 @@ Hieronder ziet u een beslissingsmatrix waarmee de twee opties worden vergeleken.
 | **Voorwaarden** | Geen | Bestaande CDN die te vervangen is. moet een geslaagde belastingstest aantonen voordat hij in leven wordt gehouden. |
 | **CDN-expertise** | Geen | Vereist minstens één middel van de deeltijdtechniek met gedetailleerde kennis CDN die CDN van de klant kan vormen. |
 | **Beveiliging** | Beheerd door Adobe. | Beheerd door Adobe (en optioneel door de klant op hun eigen CDN). |
-| **Prestaties** | Geoptimaliseerd door Adobe. | Zal van sommige mogelijkheden van AEM CDN profiteren, maar potentieel een kleine prestatiesklap toe te schrijven aan de extra hop. **Opmerking**: Hops from customer CDN to Fastly CDN likely to be effective.) |
+| **Prestaties** | Geoptimaliseerd door Adobe. | Zal van sommige mogelijkheden van AEM CDN profiteren, maar potentieel een kleine prestatiesklap toe te schrijven aan de extra hop. **Opmerking**: Hops from customer CDN to Adobe&#39;s out of the box CDN likely to be effective.) |
 | **Caching** | Ondersteunt cachekoppen die worden toegepast op de dispatcher. | Ondersteunt cachekoppen die worden toegepast op de dispatcher. |
 | **Compressiemogelijkheden voor afbeeldingen en video** | Kan werken met dynamische media van Adobe. | Kan werken met Adobe Dynamic Media of CDN-afbeelding/video-oplossing die door klanten wordt beheerd. |
 
-### Door AEM beheerde CDN {#aem-managed-cdn}
+### Door AEM beheerde CDN  {#aem-managed-cdn}
 
 Voorbereiden op de levering van inhoud met behulp van de CDN van Adobe-versie buiten de doos is eenvoudig, zoals hieronder wordt beschreven:
 
@@ -65,7 +68,7 @@ Voorbereiden op de levering van inhoud met behulp van de CDN van Adobe-versie bu
 1. U moet de klantenondersteuning op de hoogte stellen:
    * welk aangepast domein moet worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id.
    * als om het even welk IP fluitend nodig is om verkeer tot een bepaald milieu te beperken.
-1. De steun van de klant zal dan met u de timing voor een CNAME DNS verslag coördineren, richtend hun FQDN aan `adobe-aem.map.fastly.net`.
+1. De steun van de klant zal dan met u de timing voor een CNAME DNS verslag coördineren, richtend hun FQDN aan `cdn.adobeaemcloud.com`.
 1. U wordt op de hoogte gesteld wanneer de SSL-certificaten verlopen, zodat u de nieuwe SSL-certificaten opnieuw kunt verzenden.
 
 **Beperking van het verkeer**
