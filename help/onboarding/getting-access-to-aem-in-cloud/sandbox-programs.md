@@ -4,7 +4,7 @@ description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Een Sandbox-programma is een van de twee typen programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een Regular-programma is.
 
-Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan de [AEM als verbintenissen](https://www.adobe.com/legal/service-commitments.html)van de Cloud Service.
+Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan de [AEM als Cloud Service Verbintenissen](https://www.adobe.com/legal/service-commitments.html).
 
 De milieu&#39;s die in een zandbak worden gecreeerd worden niet gevormd voor auto-schrapen. Daarom zijn ze niet geschikt voor prestatie- of belastingtests.
 
