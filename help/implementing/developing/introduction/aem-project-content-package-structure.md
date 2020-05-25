@@ -2,7 +2,10 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
+source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+workflow-type: tm+mt
+source-wordcount: '2352'
+ht-degree: 18%
 
 ---
 
@@ -80,7 +83,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/etc`
 + Het pakket `all` is een containerpakket dat ALLEEN de pakketten `ui.apps` en `ui.content` als ingesloten items bevat. Het pakket `all` mag geen **eigen content** hebben, maar moet alle implementaties op de opslagplaats delegeren naar zijn subpakketten.
 
-   Pakketten worden nu opgenomen met de insluitconfiguratie [van de Maven](#embeddeds)FileVault-plug-in voor Maven-bestanden in plaats van met de `<subPackages>` configuratie.
+   Pakketten worden nu opgenomen met behulp van de ingesloten configuratie [van de Maven](#embeddeds)FileVault-insteekmodule in plaats van de `<subPackages>` configuratie.
 
    Voor complexe plaatsingen van de Manager van de Ervaring, kan het wenselijk zijn om veelvoudige `ui.apps` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
 
@@ -130,7 +133,7 @@ Terwijl de manuscripten van het Begin van de Repo in het `ui.apps` project zelf 
 + Groepen
 + ACLs
 
-Scripts voor herhalingsindelingen worden opgeslagen als `scripts` vermeldingen van `RepositoryInitializer` OSGi-fabrieksconfiguraties en kunnen dus impliciet worden geactiveerd door de runmode, waardoor er verschillen kunnen optreden tussen de scripts voor de repo-invoer van AEM-auteur en AEM-publicatieservices, of zelfs tussen Envs (Dev, Stage en Prod).
+De manuscripten van de Inzet van de Repo worden opgeslagen als `scripts` ingangen van `RepositoryInitializer` OSGi fabrieksconfiguraties, en kunnen daarom impliciet door runmode worden gericht, die voor verschillen tussen de manuscripten van de Inzet van de Auteur van AEM en van de Diensten van de Publicatie AEM, of zelfs tussen Envs (Dev, Stadium en Prod) toestaan.
 
 Merk op dat wanneer het bepalen van Gebruikers, en Groepen, slechts groepen als deel van de toepassing worden beschouwd, en integraal aan zijn functie zou hier moeten worden bepaald. Organisatiegebruikers en -groepen moeten nog steeds bij uitvoering in AEM worden gedefinieerd; Bijvoorbeeld, als een douanewerkschema werk aan een genoemde Groep toewijst, zou die Groep binnen via Repo Init in de toepassing AEM moeten worden bepaald, echter als de Groepering slechts organisatorisch, zoals &quot;Team van Wendy&quot;en &quot;Team van Sean&quot;is, worden deze het best bepaald, en bij runtime in AEM geleid.
 
@@ -188,7 +191,7 @@ Deze mappenstructuur omlaag splitsen:
 + De map op het derde niveau moet ofwel
    `application` or `content`
    + De `application` map bevat codepakketten
-   + De `content` map bevat pakketten met goudinhoud. Deze mapnaam moet overeenkomen met de [pakkettypen](#package-types) van de pakketten die de map bevat.
+   + De `content` map bevat inhoudspakketten. Deze mapnaam moet overeenkomen met de [pakkettypen](#package-types) van de pakketten die de map bevat.
 + De map op het vierde niveau bevat de subpakketten en moet een van de volgende zijn:
    + `install` om te installeren op **zowel** de AEM-auteur als de AEM-publicatie
    + `install.author` om **alleen** te installeren op de AEM-auteur
@@ -333,7 +336,7 @@ In de `ui.content/pom.xml`, verklaart de richtlijn van de `<packageType>content<
 
 ### Pakketten markeren voor implementatie van Adobe Cloud Manager {#cloud-manager-target}
 
-In elk project dat een pakket genereert, **behalve** voor het containerproject (`all`), voegt u `<cloudManagerTarget>none</cloudManagerTarget>` aan de `<properties>`-configuratie van de declaratie van de invoegtoepassing `filevault-package-maven-plugin` toe om ervoor te zorgen dat deze **niet** door Adobe Cloud Manager worden geïmplementeerd. Het containerpakket (`all`) moet het enkelvoudige pakket zijn dat via Cloud Manager wordt geïmplementeerd en dat op zijn beurt alle vereiste code- en contentpakketten insluit.
+In elk project dat een pakket genereert, **behalve** voor het containerproject (`all`), voegt u `<cloudManagerTarget>none</cloudManagerTarget>` aan de `<properties>`-configuratie van de declaratie van de invoegtoepassing `filevault-package-maven-plugin` toe om ervoor te zorgen dat deze **niet** door Adobe Cloud Manager worden geïmplementeerd. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -485,7 +488,7 @@ Als de veelvoudige `/apps/*-packages` in ingebedde doelstellingen worden gebruik
 ### Bewaarplaatsen van derden {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Als u meer Maven-repositories toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagplaatsen op afhankelijkheden worden gecontroleerd.
+> Als u meer Maven-opslagruimten toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagruimten op afhankelijkheden worden gecontroleerd.
 
 Voeg in het reactorproject de noodzakelijke richtlijnen van de derde partij inzake openbare opslagplaats Maven toe `pom.xml`. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
 
