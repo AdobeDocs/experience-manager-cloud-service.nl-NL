@@ -1,13 +1,16 @@
 ---
-title: Basisverwerking
+title: Basisbewerkingen
 description: Geniet van comfortabel navigeren door AEM en het basisgebruik ervan
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 4%
 
 ---
 
 
-# Basisverwerking {#basic-handling}
+# Basisbewerkingen {#basic-handling}
 
 Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij het gebruik van de AEM-auteuromgeving. Het gebruikt de console van **Plaatsen** als basis.
 
@@ -19,11 +22,11 @@ Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij 
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-De gebruikersinterface van AEM is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Omdat de AEM UI aanraking-toegelaten is, kunt u aanraakgebaren op uw aanrakingsapparaten zoals uw mobiele telefoon of tablet gebruiken. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op flexibele wijze uw inhoud kunt ontwerpen.
+De gebruikersinterface van AEM is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Omdat de AEM UI aanraking-toegelaten is, kunt u aanraakgebaren op uw aanraakapparaten zoals uw mobiele telefoon of tablet gebruiken. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op flexibele wijze uw inhoud kunt ontwerpen.
 
 ## Eerste stappen {#first-steps}
 
-Direct nadat u zich hebt aangemeld, gaat u naar het [navigatievenster](#navigation-panel). Als u een van de opties selecteert, wordt de desbetreffende console geopend.
+Vlak nadat u zich hebt aangemeld, gaat u naar het [navigatievenster](#navigation-panel). Als u een van de opties selecteert, wordt de desbetreffende console geopend.
 
 ![Navigatievenster](/help/sites-cloud/authoring/assets/navigation.png)
 
@@ -47,7 +50,7 @@ U kunt het algemene navigatievenster sluiten door op **Sluiten** te klikken of e
 
 ![Bovenste balk van het navigatievenster](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
+Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkermarge van het scherm worden vertegenwoordigd:
 
 * **[Navigatie](#navigation-panel)**- Wordt vertegenwoordigd door een kompas en het standaarddeelvenster wanneer u zich aanmeldt bij AEM
 * **[Gereedschappen](#tools-panel)**- Vertegenwoordigd door een hamer
@@ -60,19 +63,21 @@ Het navigatievenster:
 
 ![Navigatievenster](/help/sites-cloud/authoring/assets/navigation.png)
 
+De titel van het browsertabblad wordt aangepast aan uw locatie wanneer u door de consoles en inhoud navigeert.
+
 Vanuit Navigatie zijn de beschikbare consoles:
 
 | Console | Doel |
 |---|---|
 | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [Projecten zijn virtuele dashboards](/help/sites-cloud/authoring/projects/overview.md) die kunnen worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
 | Sites | Met de Sites-consoles kunt u sites [](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) maken, weergeven en beheren die op uw AEM-instantie worden uitgevoerd. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
-| Ervaar fragmenten | Een [ervaringsfragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een zelfstandige ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard. |
-| Activa | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM-instantie wordt uitgevoerd.<!--add some kind of assets link--> |
+| Ervaringsfragmenten | Een [ervaringsfragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een zelfstandige ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard. |
+| Assets | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM-instantie wordt uitgevoerd.<!--add some kind of assets link--> |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het [ontwerpen van gerichte inhoud en het presenteren van persoonlijke ervaringen.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 
-In het deelvenster Gereedschappen heeft u een zijpaneel met een reeks categorieën, waarin vergelijkbare gereedschapsconsoles worden gegroepeerd. De gereedschapsconsoles bieden toegang tot een aantal gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In het deelvenster Gereedschappen heeft u een zijpaneel met een reeks categorieën, waarin vergelijkbare gereedschapsconsoles worden gegroepeerd. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Deelvenster Gereedschappen](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -148,7 +153,15 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
    >[!NOTE]
    >
-   >De optie Instellingen **** weergeven is alleen beschikbaar in de modus **Lijstweergave** .
+   >De optie **Instellingen weergeven** is alleen beschikbaar in de modus **Lijstweergave**.
+
+* Toetsenbordnavigatie
+
+   U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van de **TAB** -toets (of **OPT+TAB**) gebruikt om u te verplaatsen tussen elementen op de pagina die focus kunnen krijgen.
+
+   In de **Sites** -console is er de extra optie voor **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties van labels voorziet, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
+
+   ![Overslaan naar hoofdinhoud](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Toegang tot Help {#accessing-help}
 
@@ -204,7 +217,7 @@ De actie die beschikbaar is op de werkbalk, wijzigt in de richting van de acties
 
 Hoe u een bron [](#viewing-and-selecting-resources) selecteert, is afhankelijk van de weergave.
 
-Door de ruimtebeperkingen in sommige vensters, kan de toolbar snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op de ellips klikt of erop tikt (de drie stippen of **...**), wordt een keuzelijst geopend met alle resterende handelingen. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites** -console:
+Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op het beletselteken (de drie stippen of **...**) klikt of tikt, wordt een vervolgkeuzelijst geopend met alle resterende acties. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
 
 ![Aanvullende opties](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -388,7 +401,7 @@ Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorsta
 
 Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
-Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur navigeren met de zijpaneel van de inhoudsboom, evenals meningsgedetailleerde paginainformatie in de lijstmening.
+Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de kant-paneel van de inhoudsboom navigeren, evenals gedetailleerde paginainformatie in de lijstmening.
 
 ![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -413,13 +426,13 @@ In de tijdlijnkolom kunt u:
       * Opmerkingen
       * [Annotaties](/help/sites-cloud/authoring/fundamentals/annotations.md)
       * [Activiteiten](/help/sites-cloud/authoring/personalization/activities.md)
-      * [Starten](/help/sites-cloud/authoring/launches/overview.md)
+      * [Lanceringen](/help/sites-cloud/authoring/launches/overview.md)
       * [Versies](/help/sites-cloud/authoring/features/page-versions.md)
       * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
          * Met uitzondering van tijdelijke workflows omdat er voor deze workflows geen geschiedenisgegevens worden opgeslagen <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Alles tonen
 
-* Opmerkingen over het geselecteerde item toevoegen/weergeven. Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Als u een opmerking typt die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of Alles **** tonen is geselecteerd.
+* Opmerkingen over het geselecteerde item toevoegen/weergeven. Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Als u een opmerking typt die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
 * Specifieke consoles hebben extra functionaliteit. In de Sites-console kunt u bijvoorbeeld:
 
@@ -434,7 +447,7 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking** .
 
 **De verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. In de **Sites** -consoleverwijzingen [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) voor pagina&#39;s ziet u bijvoorbeeld:
 
-* [Starten](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+* [Lanceringen](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * Live kopieën<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
 * Taalkopieën<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * Content references:
@@ -446,6 +459,6 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking** .
 
 ### Filter {#filter}
 
-Hiermee wordt een deelvenster geopend dat lijkt op het [zoeken](/help/sites-cloud/authoring/getting-started/search.md) met de juiste locatiefilters ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
+Hiermee wordt een deelvenster geopend dat lijkt op het [zoeken](/help/sites-cloud/authoring/getting-started/search.md) met de juiste locatiefilters die al zijn ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
 
 ![Voorbeeld van filter](/help/sites-cloud/authoring/assets/filter.png)
