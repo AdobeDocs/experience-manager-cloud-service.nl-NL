@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
    ![](assets/de-hibernation-img4.png)
 
+#### Machtigingen voor de-hibernate {#permissions-de-hibernate}
+
+Elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service, moet toegang hebben tot de **Developer Console**, zodat hij of zij de omgeving kan dehiberneren.
+
+Raadpleeg Gebruikers en rollen [](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) toevoegen in Cloud Manager voor informatie over het instellen van gebruikersmachtigingen.
+
 #### Een gedownloade omgeving openen {#accessing-hibernated-environment}
 
 Wanneer de gebruiker om het even welke browser verzoeken tegen of de auteur of publicatielaag van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu beschrijft, zoals aangetoond in het hieronder cijfer beschrijft:
 
 ![](assets/de-hibernation-img5.png)
-
-
-Een gebruiker met de **Cloud Manager - de Rol** van de Ontwikkelaar kan op de Console **van de** Ontwikkelaar klikken om tot de ontwikkelaarsconsole toegang te hebben en het milieu te dehiberneren.
-
->[!NOTE]
-> Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist. Meer over rollen voor gebruikers leren die de beschikbaarheid van specifieke eigenschappen bepalen, verwijs[naar Add Gebruikers en Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Belangrijke overwegingen {#important-considerations}
 
