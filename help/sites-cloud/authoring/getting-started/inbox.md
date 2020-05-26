@@ -1,19 +1,22 @@
 ---
-title: Uw Postvak IN
+title: Uw inbox
 description: Taken beheren met de Postvak IN
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 15%
 
 ---
 
 
-# Uw Postvak IN {#your-inbox}
+# Uw inbox {#your-inbox}
 
 U kunt meldingen ontvangen van verschillende onderdelen van AEM, zoals workflows en projecten. U ontvangt bijvoorbeeld meldingen over:
 
 * Taken:
    * Deze kunnen ook op diverse punten binnen AEM UI, bijvoorbeeld, onder **Projecten** worden gecreeerd.
-   * Dit kan het product van een werkschema zijn **creeer Taak** of **creeer de stap** van de Taak van het Project.
+   * Dit kan het product zijn van een stap voor **Taak maken** of **Projecttaak maken** van een workflow.
 * Workflows:
    * Werkitems die acties vertegenwoordigen die u moet uitvoeren op pagina-inhoud
       * Dit is het product van de stappen van de werkstroom **Deelnemer** .
@@ -46,7 +49,7 @@ Het AEM-meldingsvak openen:
 
 1. Klik/tik op de indicator in de werkbalk.
 
-1. Selecteer Alles **** weergeven. Het **AEM Inbox** wordt geopend. In het Postvak In ziet u items uit workflows, projecten en taken.
+1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
    Voor beide weergaven kunt u ook [Weergave-instellingen](#inbox-view-settings)definiëren. Welke opties beschikbaar zijn, is afhankelijk van de huidige weergave.
@@ -55,7 +58,7 @@ Het AEM-meldingsvak openen:
 
 >[!NOTE]
 >
->Inbox werkt als console, zo gebruik [Globale Navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) of [Onderzoek](/help/sites-cloud/authoring/getting-started/search.md) om aan een andere plaats te navigeren wanneer u wordt gebeëindigd.
+>De inbox werkt als console, gebruik dus [Globale navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) of [Zoeken](/help/sites-cloud/authoring/getting-started/search.md) om naar een andere locatie te gaan wanneer u klaar bent.
 
 ### Postvak IN - Lijstweergave {#inbox-list-view}
 
@@ -71,8 +74,8 @@ In deze weergave worden de items weergegeven op basis van hun positie in de kale
 
 U kunt:
 
-* Selecteer een specifieke weergave: **Tijdlijn**, **Kolom**, **Lijst**
-* Geef de taken op die u wilt weergeven volgens het **schema**: **Alles**, **gepland**, **in uitvoering**, **spoedig**, **achterstallig**
+* Selecteer een specifieke weergave: **Tijdlijn**, **kolom**, **lijst**
+* Geef de taken op die u wilt weergeven volgens **Planning**: **Alles**, **Gepland**, **In uitvoering**, **Vervalt binnenkort**, **Vervallen**
 * Boor neer voor meer gedetailleerde informatie over een punt
 * Selecteer een datumbereik waarop u de focus op de weergave wilt plaatsen:
 
@@ -87,7 +90,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    Voor de **kalenderweergave** kunt u het volgende configureren:
 
    * **Groeperen op**
-   * **Schema** of **Geen**
+   * **Planning** of **Geen**
    * **Kaartgrootte**
    ![Instellingen voor de postkalenderweergave in het vak](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
@@ -105,6 +108,10 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Hoewel het mogelijk is meerdere items te selecteren, kunnen acties slechts op één item tegelijk worden uitgevoerd.
+
 1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 
    ![Item in vak selecteren](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -115,7 +122,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Een item delegeren**
    * **Open** een item, afhankelijk van het type item dat deze handeling kan bevatten:
 
-      * De itemeigenschappen weergeven
+      * Eigenschappen van item weergeven
       * Open een geschikt dashboard of een geschikte wizard voor verdere actie
       * Gerelateerde documentatie openen
    * **Terug naar** een vorige stap
@@ -128,7 +135,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    >* Workflowitems - [Deelnemen aan workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
+2. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
    * Er wordt een dialoog geopend die geschikt is voor de actie
    * Er wordt een wizard Handelingen gestart
@@ -149,7 +156,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 In het Postvak IN kunt u taken maken:
 
 1. Selecteer **Maken**, dan **Taak**.
-1. Vul de vereiste velden in op de tabbladen **Standaard** en **Geavanceerd** (alleen de **titel** is verplicht, alle andere velden zijn optioneel):
+1. Vul de vereiste velden in op de tabbladen **Standaard** en **Geavanceerd** (alleen de **Titel** is verplicht, alle andere velden zijn optioneel):
 
    * **Standaard**:
 
@@ -182,8 +189,8 @@ Voor bepaalde taken kunt u een [Project](/help/sites-cloud/authoring/projects/ov
    >
    >De punten van het werk (van een werkschema) kunnen niet worden gebruikt om een project tot stand te brengen.
 
-1. Selecteer Project **** maken op de werkbalk om de wizard te openen.
-1. Selecteer de gewenste sjabloon en **daarna**.
+1. Selecteer **Project maken** op de werkbalk om de wizard te openen.
+1. Select the appropriate template, then **Next**.
 1. Geef de vereiste eigenschappen op:
 
    * **Basis**
