@@ -3,9 +3,9 @@ title: AEM Assets as a Cloud Service configureren met Brand Portal
 description: AEM Assets as a Cloud Service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1703'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager-middelen (AEM) worden geconfigureerd met Brand Portal v
 
 **Hoe werkt de configuratie?**
 
-Het configureren van een AEM Assets cloud-instantie met uw Brand Portal-huurder (organisatie) is een proces dat uit meerdere stappen bestaat en dat configuraties vereist in zowel de AEM Assets-cloudinstantie als in de Adobe Developer Console.
+Voor het configureren van de AEM Assets cloud-instantie met een Brand Portal-gebruiker (organisatie) zijn configuraties vereist in zowel de AEM Assets-cloudinstantie als in Adobe Developer Console.
 
 1. Maak in de cloud-instantie van AEM Assets een IMS-account en genereer een openbaar certificaat (openbare sleutel).
 1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw Poorthuurder van het Merk (organisatie).
@@ -28,9 +28,11 @@ Het configureren van een AEM Assets cloud-instantie met uw Brand Portal-huurder 
 1. Test de configuratie door een middel van de cloudinstantie van AEM Assets naar Brand Portal te publiceren.
 
 >[!NOTE]
->>Een Poorthuurder voor merken mag slechts met één AEM Assets cloud-instantie worden geconfigureerd.
->>Configureer geen Brand Portal-gebruiker met meerdere AEM Assets-wolkenvarianten.
 >
+>Een Brand Portal-huurder mag slechts met één AEM Assets-wolkeninstantie worden geconfigureerd.
+>
+>Configureer geen Brand Portal-huurder met meerdere AEM Assets-wolkeninstanties.
+
 
 ## Vereisten {#prerequisites}
 
