@@ -2,10 +2,10 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 18%
+source-wordcount: '2417'
+ht-degree: 17%
 
 ---
 
@@ -237,7 +237,9 @@ Het toevoegen van Geweven gebiedsdelen volgt standaard Geweven praktijken, en he
 
 Om een correcte installatie van de pakketten te waarborgen, wordt aanbevolen om afhankelijkheden tussen pakketten tot stand te brengen.
 
-De algemene regel is dat pakketten met veranderbare inhoud (`ui.content`) afhankelijk moeten zijn van de onveranderlijke inhoud (`ui.apps`) die het renderen en het gebruik van de veranderbare inhoud ondersteunt.
+De algemene regel is pakketten met veranderbare inhoud (`ui.content`) die afhankelijk moeten zijn van de onveranderlijke code (`ui.apps`) die het teruggeven en het gebruik van de veranderlijke inhoud steunt.
+
+Een opmerkelijke uitzondering op deze algemene regel is als het onveranderlijke codepakket (`ui.apps` of een ander), __slechts__ bundels OSGi bevat. Als dat het geval is, zou geen AEM-pakket ervan afhankelijk moeten verklaren. Dit is omdat onveranderlijke codepakketten __slechts__ die OSGi- bundels bevatten niet bij de Manager van het Pakket AEM worden geregistreerd, en daarom zal om het even welk pakket AEM afhankelijk van het een ontevreden gebiedsdeel hebben en niet om te installeren.
 
 >[!TIP]
 >
