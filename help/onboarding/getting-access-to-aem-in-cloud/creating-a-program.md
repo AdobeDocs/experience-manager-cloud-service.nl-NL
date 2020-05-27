@@ -2,7 +2,7 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ In het geval van eerste toegang tot de Manager van de Wolk of als geen programma
 
 Afhankelijk van het doel van de gebruiker bij het creëren van het programma binnen de grenzen van wat aan de specifieke klant/organisatie beschikbaar is, zal een tovenaar van de programmaverwezenlijking de gebruiker vragen om één of meerdere details voor te leggen.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ Afhankelijk van het doel van de gebruiker bij het creëren van het programma bin
 
 Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
-1. Selecteer in de wizard Programma maken een **demo** instellen. Gebruiker verzendt de naam van het programma voordat u **Maken** selecteert.
+1. Selecteer in de wizard Programma maken een **sandbox** instellen. Gebruiker verzendt de naam van het programma voordat u **Maken** selecteert.
 
    ![](assets/create-sandbox.png)
 
