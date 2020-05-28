@@ -1,8 +1,11 @@
 ---
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 seo-title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Er zijn enkele algemeen aanvaarde best practices voor URL&#39;s.
 
 Stel uzelf de volgende vragen wanneer u uw URL&#39;s evalueert in uw AEM-project:
 
-&quot;Als een gebruiker deze URL zou zien, maar niet de content op de pagina, zou de gebruiker dan kunnen beschrijven waarover deze pagina gaat?&quot;
+*&quot;Als een gebruiker deze URL zou zien, maar niet de content op de pagina, zou de gebruiker dan kunnen beschrijven waarover deze pagina gaat?&quot;*
 
 Als het antwoord &quot;ja&quot; is, zal de URL waarschijnlijk goed werken voor een zoekmachine.
 
