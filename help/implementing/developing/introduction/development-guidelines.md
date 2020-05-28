@@ -2,7 +2,10 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 1%
 
 ---
 
@@ -156,6 +159,10 @@ Zoals hieronder geïllustreerd, kunnen de ontwikkelaars pakketgebiedsdelen en se
 Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbinding aan het Uitleg hulpmiddel van de Vraag:
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+
+Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de beheerconsole, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+
+
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
 
