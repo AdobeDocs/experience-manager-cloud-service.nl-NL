@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud-service
 description: Omgevingen beheren - Cloud-service
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 8%
+source-wordcount: '702'
+ht-degree: 7%
 
 ---
 
@@ -97,7 +97,12 @@ Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is in
 
 ## Developer Console openen {#accessing-developer-console}
 
-Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment** Card.
+Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment** Card. Hiermee wordt een nieuw tabblad in uw browser geopend met de aanmeldingspagina naar de **Developer Console**.
+
+Alleen gebruikers met de rol Developer hebben toegang tot de **Developer Console**. De uitzondering voor Sandbox-programma&#39;s, waar gebruikers met toegang tot het Sandbox-programma van Cloud Manager toegang hebben tot de **Developer Console**.
+
+Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) voor meer informatie.
+
 
 ![](assets/dev-console1.png)
 
