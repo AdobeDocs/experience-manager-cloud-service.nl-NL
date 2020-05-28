@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud-service
 description: Sandbox-programma's - Cloud-service
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,9 @@ U kunt uw Sandbox-programma handmatig op twee verschillende manieren via de Deve
 * Detailscherm omgeving
 * Omgevingsscherm
 
+>[!NOTE]
+>Alle gebruikers van Cloud Manager hebben toegang tot de ontwikkelaarsconsole voor een Sandbox-programma.
+
 Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te hiberneren:
 
 1. Navigeer naar de **Developer Console**.
@@ -119,7 +122,7 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
 
    >[!IMPORTANT]
-   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet deïnstalleren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
+   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet dehiberneren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
    >[!NOTE]
    >U kunt ook naar de **ontwikkelaarsconsole** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gehiberneerde omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
