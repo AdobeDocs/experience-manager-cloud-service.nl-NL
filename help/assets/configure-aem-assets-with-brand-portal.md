@@ -3,9 +3,9 @@ title: AEM Assets as a Cloud Service configureren met Brand Portal
 description: AEM Assets as a Cloud Service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1659'
 ht-degree: 38%
 
 ---
@@ -69,7 +69,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
 1. Meld u aan bij uw AEM Assets Cloud Instance.
 
-1. Ga vanuit het deelvenster **Tools** ![Tools](assets/tools.png) naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Gebruikersinterface voor Adobe IMS-accountconfiguratie](assets/ims-configuration1.png)
 
@@ -114,7 +114,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
 1. Klik op **[!UICONTROL Create new project]**. Er wordt een leeg project gemaakt voor uw organisatie.
 
-   Klik **[!UICONTROL Edit project]** om de pagina bij te werken **[!UICONTROL Project Title]** , **[!UICONTROL Description]** en klik **[!UICONTROL Save]**.
+   Klik **[!UICONTROL Edit project]** om het **[!UICONTROL Project Title]** en **[!UICONTROL Description]** bij te werken, en klik **[!UICONTROL Save]**.
 
    ![Project maken](assets/service-account1.png)
 
@@ -134,9 +134,11 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
 1. Controleer het openbare certificaat en klik op **[!UICONTROL Next]**.
 
-1. In het Portaal van het Merk, wordt een standaardprofiel gecreeerd voor elke organisatie. De profielen van het Product worden gecreeerd in admin console voor het toewijzen van gebruikers aan groepen (die op de rollen en de toestemmingen worden gebaseerd). Voor configuratie met het Portaal van het Merk, wordt het token OAuth gecreeerd op organisatieniveau. Daarom moet u het standaardprofiel van het Product voor uw organisatie vormen.
+1. Select the default product profile **[!UICONTROL Assets Brand Portal]** and click **[!UICONTROL Save configuration]**.
 
-   Selecteer het standaardproductprofiel **[!UICONTROL Assets Brand Portal]**.
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![Productprofiel selecteren](assets/service-account4.png)
 
@@ -144,7 +146,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
    >[!NOTE]
    >
-   >U kunt de geloofsbrieven bekijken en andere acties uitvoeren (produceert tokens JWT, kopieert credentiedetails, wint cliëntgeheimen terug, etc.) zoals nodig.
+   >U kunt de geloofsbrieven bekijken en andere acties uitvoeren (produceren de tokens van JWT, kopiëren credentiedetails, terugwinnen cliëntgeheim, etc.) zoals nodig.
 
 1. Kopieer het **[!UICONTROL Client Credentials]** tabblad **[!UICONTROL client ID]**.
 
@@ -237,7 +239,7 @@ Voer de volgende stappen uit om de merkportalcloudservice te configureren:
 
 1. Meld u aan bij uw AEM Assets Cloud Instance.
 
-1. Ga vanuit het deelvenster **Tools** ![Tools](assets/tools.png) naar **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Klik op de pagina Merkorportaalconfiguraties **[!UICONTROL Create]**.
 
@@ -257,7 +259,7 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
 1. Meld u aan bij uw AEM Assets Cloud Instance.
 
-1. Ga vanuit het deelvenster **Tools** ![Tools](assets/tools.png) naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ U kunt de logboeken voor gedetailleerde informatie over de acties controleren di
 
 We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Volg de stappen (van 1 tot 4) zoals aangetoond in de sectie van de [testverbinding](#test-configuration) en navigeer aan de pagina van de distributieagent.
 
 1. Klik op **[!UICONTROL Logs]** om de distributielogboeken te bekijken. Hier ziet u de logboeken voor verwerking en fouten.
 
