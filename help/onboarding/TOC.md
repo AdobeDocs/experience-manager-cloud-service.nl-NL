@@ -2,10 +2,10 @@
 sub-product: On-boarding van AEM as a Cloud Service
 user-guide-title: On-boarding van AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 96%
+source-wordcount: '133'
+ht-degree: 91%
 
 ---
 
@@ -33,4 +33,6 @@ ht-degree: 96%
 + Toegankelijkheid {#accessibility}
    + [AEM as a Cloud Service en Web Accessibility Guidelines](accessibility/web-accessibility.md)
    + [Snelgids voor WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Best Practices {#best-practices}
+   + [SEO- en URL-beheer](best-practices/seo-and-url-management.md)
 + [Overzicht van de toolconsoles](tools-consoles.md)
