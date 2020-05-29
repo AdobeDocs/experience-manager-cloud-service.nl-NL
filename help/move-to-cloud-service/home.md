@@ -2,7 +2,7 @@
 title: Ga naar AEM als Cloud Service
 description: Adobe Experience Manager als Cloud Service die overschakelt naar AEM als zelfhulp voor cloudservices en documentatiekoppelingen
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## Voordelen van de overstap naar AEM als cloudservice {#benefits-aem-moving-to-aem-guide}
 
