@@ -2,7 +2,7 @@
 sub-product: Ga naar AEM als Cloud Service
 user-guide-title: Ga naar AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Verplaatsen naar AEM als Cloud Service Guide {#moving}
 
-+ [Ga naar AEM als Cloud Service](/help/move-to-cloud-service/home.md)
++ [Verplaatsen naar AEM als cloudservice](/help/move-to-cloud-service/home.md)
 + Fases van de overgang {#phases}
    + [Planning](/help/move-to-cloud-service/planning.md)
    + [Uitvoering](/help/move-to-cloud-service/execution.md)
