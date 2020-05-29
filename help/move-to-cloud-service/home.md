@@ -2,7 +2,7 @@
 title: Ga naar AEM als Cloud Service
 description: Adobe Experience Manager als Cloud Service die overschakelt naar AEM als zelfhulp voor cloudservices en documentatiekoppelingen
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -46,7 +46,7 @@ Meer informatie over de verschillende fasen van de overgang naar de cloudservice
 | [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service beheert. |
-| [Verplaatsen naar AEM als gebruikershandleiding voor de cloudservice](/help/move-to-cloud-service/home.md) | Begrijp de overgang naar Cloud Service. |
+| [Verplaatsen naar AEM als Gebruikershandleiding voor cloudservice](/help/move-to-cloud-service/home.md) | Begrijp de overgang naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkelimplementatie. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u oplossingen integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
