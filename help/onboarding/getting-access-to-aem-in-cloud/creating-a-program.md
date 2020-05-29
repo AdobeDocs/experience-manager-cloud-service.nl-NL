@@ -2,7 +2,7 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Voer de volgende stappen uit om een regulier programma te maken:
 
 1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een regelmatig programma tot stand te brengen. De gebruiker kan de standaardprogrammanaam accepteren of deze bewerken voordat hij of zij **Doorgaan** selecteert.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. De gebruiker zal oplossingen selecteren die in het programma in het scherm moeten worden opgenomen dat na het bovenstaande scherm zal worden voorgesteld.
 
