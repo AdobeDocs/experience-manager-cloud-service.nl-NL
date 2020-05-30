@@ -2,10 +2,10 @@
 title: Het gereedschap Inhoud overbrengen gebruiken
 description: Het gereedschap Inhoud overbrengen gebruiken
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 * Als u een *Sandbox Milieu* gebruikt, zorg ervoor dat uw milieu wordt bevorderd tot Versie van 29 mei 2020 of later. Als u een *Productomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
+* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de beleidsgroep in de instantie behoren van de Dienst van de Wolk u inhoud overbrengt naar. De onbevoorrechte gebruikers zullen niet het toegangstoken kunnen terugwinnen om het Hulpmiddel van de Overdracht van de Inhoud te gebruiken.
+
 * Tijdens de extractiefase wordt het gereedschap Inhoud overbrengen uitgevoerd op een actieve AEM-broninstantie.
 
 * De *Ingestiefase* voor de auteur zal de volledige auteursplaatsing verminderen. Dit betekent dat de auteur AEM niet beschikbaar zal zijn tijdens het volledige innameproces.
@@ -29,7 +31,7 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de portal Software Distribution. U kunt het pakket installeren via Package Manager op uw AEM-bronexemplaar (Adobe Experience Manager).
 
 >[!NOTE]
->Raadpleeg [Toegang tot de AEM als SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) van de Cloud Service voor meer informatie.
+>Download de Content Transfer Tool van [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Het gereedschap Inhoud overbrengen uitvoeren {#running-tool}
 
@@ -120,7 +122,8 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit het gereeds
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > U moet de pagina vernieuwen om de bijgewerkte status weer te geven.
+   >U moet de pagina vernieuwen om de bijgewerkte status weer te geven.
+   >Wanneer de extractiefase wordt gestart, wordt de schrijfvergrendeling gemaakt en na *60 seconden* vrijgegeven. Dus als een extractie wordt gestopt, moet je een minuut wachten tot de vergrendeling weer wordt losgelaten voordat je de extractie opnieuw start.
 
 #### Extractie bovenaan {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunne
 
 Als gebruiker, zou u de volgende gedragsveranderingen in het Gebruikersinterface (UI) voor het Hulpmiddel van de Overdracht van de Inhoud kunnen zien:
 
-1. De gebruiker maakt een migratieset voor een auteur-URL (Development/Stage/Production) en voert de extractie en opname uit.
+* De gebruiker maakt een migratieset voor een auteur-URL (Development/Stage/Production) en voert de extractie en opname uit.
 
-1. De gebruiker maakt vervolgens een nieuwe migratieset voor dezelfde auteur-URL en voert de extractie en opname uit voor de nieuwe migratieset. UI toont aan dat de innamestatus van de eerste migratieset verandert in **MISLUKT** en geen logboeken beschikbaar zijn.
+* De gebruiker maakt vervolgens een nieuwe migratieset voor dezelfde auteur-URL en voert de extractie en opname uit voor de nieuwe migratieset. UI toont aan dat de innamestatus van de eerste migratieset verandert in **MISLUKT** en geen logboeken beschikbaar zijn.
 
-1. Dit betekent niet dat de opname voor de eerste migratieset is mislukt. Dit gedrag wordt gezien omdat wanneer een nieuwe innametaak wordt gestart, de vorige innametaak wordt verwijderd. De status van de wijzigingen in de eerste migratieset moet daarom worden genegeerd.
+* Dit betekent niet dat de opname voor de eerste migratieset is mislukt. Dit gedrag wordt gezien omdat wanneer een nieuwe innametaak wordt gestart, de vorige innametaak wordt verwijderd. De status van de wijzigingen in de eerste migratieset moet daarom worden genegeerd.
+
+* De pictogrammen in de gebruikersinterface van het gereedschap Inhoud overbrengen kunnen afwijken van de schermafbeeldingen die in deze handleiding worden getoond of worden mogelijk helemaal niet weergegeven, afhankelijk van de versie van de AEM-broninstantie.
 
 
