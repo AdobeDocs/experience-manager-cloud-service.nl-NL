@@ -2,7 +2,10 @@
 title: 3D-elementen voorvertonen
 description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 4%
 
 ---
 
@@ -12,6 +15,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
 
 De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in AEM. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
+
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
 ## Ondersteunde indelingen voor 3D-voorvertoning{#supported-3d-previewing-assets}
 
@@ -44,12 +49,12 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 **Een voorvertoning weergeven van 3D-elementen**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar AEM.
-Zie [Ondersteunde indelingen voor voorvertoningen](#supported-3d-previewing-assets) in 3D en voor [het uploaden van elementen](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Tik in AEM op de **[!UICONTROL navigatiepagina]** op **[!UICONTROL Middelen > Bestanden]**.
+See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
+1. Tik op de **[!UICONTROL Navigation]** pagina vanaf AEM op **[!UICONTROL Assets > Files]**.
 
    ![Navigatiepagina](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Tik in de rechterbovenhoek van de pagina vanuit de vervolgkeuzelijst Weergave op **[!UICONTROL Kaartweergave]** en navigeer naar een 3D-element waarvan u een voorvertoning wilt weergeven.
+1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave op **[!UICONTROL Card View]** en ga naar een 3D-asset waarvan u een voorvertoning wilt weergeven.
 
    ![3D-kaart selecteren](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Tik in de Kaartweergave op de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
@@ -74,4 +79,4 @@ Zie [Ondersteunde indelingen voor voorvertoningen](#supported-3d-previewing-asse
    * **Herstellen**- Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven.
    * **Modus** Volledig scherm - Tik op het pictogram Volledig scherm rechtsonder op de pagina om de modus Volledig scherm te activeren.
 
-1. Tik op **[!UICONTROL Sluiten]** in de rechterbovenhoek van de pagina als u klaar bent.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
