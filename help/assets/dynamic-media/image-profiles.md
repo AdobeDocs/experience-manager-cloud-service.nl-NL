@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of voor slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2578'
 ht-degree: 11%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 11%
 # Dynamic Media-afbeeldingsprofielen {#image-profiles}
 
 Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automatisch uitsnijden door een afbeeldingsprofiel toe te passen op de map.
+
+>[!IMPORTANT]
+>
+>Afbeeldingsprofielen zijn niet van toepassing op PDF-bestanden.
 
 ## Opties voor uitsnijden {#crop-options}
 
