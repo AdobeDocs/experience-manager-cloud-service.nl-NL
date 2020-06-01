@@ -2,15 +2,15 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van dynamische media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+source-git-commit: bc0852120580065a93923e7fe730485012afba6e
 workflow-type: tm+mt
-source-wordcount: '4793'
+source-wordcount: '4796'
 ht-degree: 8%
 
 ---
 
 
-# Dynamic Media configureren {#configuring-dynamic-media-scene-mode}
+# Dynamic Media Cloud Service configureren {#configuring-dynamic-media-scene-mode}
 
 Als u Adobe Experience Manager gebruikt die is ingesteld voor verschillende omgevingen, zoals een voor ontwikkeling, een voor ophaling en een voor live productie, moet u Dynamic Media Cloud Services configureren voor elk van deze omgevingen.
 
@@ -18,7 +18,7 @@ Als u Adobe Experience Manager gebruikt die is ingesteld voor verschillende omge
 
 In het volgende architectuurdiagram wordt beschreven hoe Dynamic Media werkt.
 
-Met de nieuwe architectuur is AEM verantwoordelijk voor hoofdmiddelen en synchronisaties met Dynamic Media voor het verwerken en publiceren van bedrijfsmiddelen:
+Met de nieuwe architectuur is AEM verantwoordelijk voor hoofdelementen en synchronisaties met Dynamic Media voor het verwerken en publiceren van bedrijfsmiddelen:
 
 1. Wanneer het hoofdelement naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden met Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding, verwerkt.
 1. Nadat de vertoningen worden geproduceerd, kan AEM veilig tot de verre Dynamische vertoningen van Media toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie AEM).
@@ -154,7 +154,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op de knop Dynamische mediaclassieke globale navigatiebalk **[!UICONTROL Setup > Application Setup > General Settings]**.
+Klik op Dynamische media Classic Global Navigation Bar om de pagina Algemene instellingen toepassing te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
 
 * **[!UICONTROL Servers]** - Dynamische media biedt via provisioning van accounts automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij dit expliciet wordt opgedragen door AEM-ondersteuning.
 
