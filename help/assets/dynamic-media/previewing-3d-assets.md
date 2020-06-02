@@ -2,25 +2,25 @@
 title: 3D-elementen voorvertonen
 description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '560'
 ht-degree: 4%
 
 ---
 
 
-# 3D-elementen voorvertonen{#previewing-3d-assets}
+# Voorvertoning van 3D-elementen weergeven in AEM{#previewing-3d-assets}
 
-Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
+Adobe Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-middelen als onderdeel van het ontwerpproces.
 
 De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in AEM. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Ondersteunde indelingen voor 3D-voorvertoning{#supported-3d-previewing-assets}
+## Ondersteunde indelingen voor 3D-voorvertoning in AEM{#supported-3d-previewing-assets}
 
-Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
+Interactieve 3D-voorvertoning in AEM ondersteunt de volgende bestandsindelingen:
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
 |---|---|---|---|
@@ -40,13 +40,13 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Prestatieaspecten wanneer u een voorvertoning van 3D-elementen weergeeft{#performance-3d-previewing-assets}
+## Prestatieaspecten wanneer u een voorvertoning weergeeft van 3D-elementen in AEM{#performance-3d-previewing-assets}
 
 De tijd die nodig is om een 3D-element te openen op de pagina met de elementdetails, is afhankelijk van verschillende factoren, zoals bandbreedte, de complexiteit van de afbeelding en de vertraging van de server.
 
 Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, laptop of mobiel aanraakapparaat, ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
-**Een voorvertoning weergeven van 3D-elementen**
+**Een voorvertoning weergeven van 3D-elementen in AEM**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
