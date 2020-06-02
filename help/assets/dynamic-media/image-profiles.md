@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of voor slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
+source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2651'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,9 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 ## Opties voor uitsnijden {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for the paragraph directly below -->
+
+De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding verzonden naar dynamische media. Daarom raadt Adobe u aan hetzelfde uitsnijdgebied te gebruiken. Zo voorkomt u dat verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt, worden beïnvloed.
 
 Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden kunt toepassen op mapniveau, raadt Adobe u aan het effect *alleen* in mappen te gebruiken als dat nodig is.
 
