@@ -2,9 +2,9 @@
 title: Dynamische media-elementen toevoegen aan pagina's
 description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3004'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ U voegt dynamische media-assets rechtstreeks aan de pagina toe als u AEM als uw 
 
 ## Een component Dynamische media aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
-Het toevoegen van een mediacomponent Dynamische media, Interactieve media, Panoramische media of Video 360 aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De dynamische componenten van Media worden beschreven in de volgende secties.
+Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De dynamische componenten van Media worden beschreven in de volgende secties.
 
 **Een component Dynamische media aan een pagina toevoegen**
 
@@ -39,7 +39,7 @@ Het toevoegen van een mediacomponent Dynamische media, Interactieve media, Panor
 
    ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
-1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
+1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
