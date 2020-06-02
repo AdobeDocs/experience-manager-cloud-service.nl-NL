@@ -1,19 +1,23 @@
 ---
 title: Dynamische media-elementen publiceren
 description: Dynamische media-elementen publiceren
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren en op **[!UICONTROL Publiceren]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
+U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en te tikken **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]**. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
 
 U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. See [Configuring Dynamic Media](config-dm.md).
 
-In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset&#39;s name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+In het **[!UICONTROL Card View]** gedeelte ziet u een klein globpictogram direct onder de naam van een element en links van de datum en tijd om aan te geven dat het is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorge
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
+Zie ook [De Dynamic Media Video-viewer of de Afbeeldingsviewer insluiten op een webpagina.](embed-code.md)
 
 >[!NOTE]
 >
