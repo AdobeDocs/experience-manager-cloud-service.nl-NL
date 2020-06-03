@@ -2,7 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
+source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+workflow-type: tm+mt
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
@@ -37,24 +40,8 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 </dependency>
 ```
 
->[!NOTE] Het versieitem voor de SDK moet overeenkomen met de versie van AEM als Cloud Service. U kunt zien welke versie u gebruikt door u aan te melden bij AEM, naar het vraagteken in de rechterbovenhoek van het scherm te gaan en **[!UICONTROL Info over Adobe Experience Manager te selecteren]**
+>[!NOTE] Het versieitem voor de SDK moet overeenkomen met de versie van AEM als Cloud Service. U kunt zien welke versie u gebruikt door u aan te melden bij AEM, dan naar het vraagteken in de rechterbovenhoek van het scherm te gaan en te selecteren **[!UICONTROL About Adobe Experience Manager]**
 
-* De externe coördinaat van de beheerde opslagplaats waar het pakket wordt gehost, moet in het pombestand worden opgenomen.
-
-```
-<repository>
-    <id>adobe-aem-releases</id>
-    <name>Adobe AEM Repository</name>
-    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
-    <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-    </releases>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
-```
 
 ## Een lokaal project vernieuwen met een nieuwe SDK-versie {#refreshing-a-local-project-with-a-new-skd-version}
 
