@@ -2,9 +2,9 @@
 title: Dynamische media-elementen toevoegen aan pagina's
 description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '2993'
 ht-degree: 8%
 
 ---
@@ -34,10 +34,6 @@ Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische m
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Sleep een **[!UICONTROL Dynamic Media]** component en zet deze neer op de gewenste locatie op de pagina.
-
-   In het onderstaande voorbeeld wordt de **[!UICONTROL Video 360 Media]** component gebruikt.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
 
