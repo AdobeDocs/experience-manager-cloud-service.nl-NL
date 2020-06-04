@@ -2,18 +2,36 @@
 title: Navigatie
 description: Navigatie - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 2%
 
 ---
 
 
-# Experience Manager openen als cloudservice {#navigation}
+# Experience Manager as a Cloud Service openen {#navigation}
 
 Zodra uw systeembeheerder u toegang tot Cloud Manager verleent, ontvangt u een e-mail die u naar de aanmeldingspagina van Cloud Manager stuurt die ook toegankelijk is via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
 Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt weergegeven.
 
 ![](assets/first_timelogin1.png)
+
+## Toegang tot SysAdmin {#sysadmin-access}
+
+Een gebruiker in de rol SysAdmin heeft one-click toegang tot de plaats in Console Admin van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk worden beheerd.
+
+### Rollen beheren {#manage-roles}
+
+Als gebruiker in SysAdmin, is een **Manage optie van Rollen** beschikbaar op de landingspagina naast het **Add Programma**. Dit geeft u eenklikken toegang tot de plaats in Console Admin van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd.
+
+Ga naar [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) voor meer informatie over het toevoegen van gebruikers aan een profiel via Cloud Manager
+
+### Toegang tot AEM beheren {#manage-access-aem}
+
+Als gebruiker in SysAdmin, hebt u one-click toegang tot de instantie van de Auteur direct van de Manager van de Wolk.
+Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
 
 ## Voor bestaande AMS-klanten {#existing-aem}
 
