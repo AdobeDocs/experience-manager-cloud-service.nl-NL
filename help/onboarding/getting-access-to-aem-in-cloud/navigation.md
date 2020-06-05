@@ -2,7 +2,7 @@
 title: Navigatie
 description: Navigatie - Cloud Service
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Raadpleeg [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/exp
 
 1. Navigeer naar de openingspagina van Cloud Manager en klik op **Toegang** beheren.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Als u op Toegang **** beheren klikt, gaat u naar de **beheerconsole** vanwaar u de gebruikersrollen of machtigingen kunt beheren naar Cloud Manager.
-
-   ![](assets/sys-admin2.png)
 
 ### Toegang tot instantie Auteur beheren {#manage-access-aem}
 
@@ -48,14 +46,17 @@ Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de Console **** A
 
 Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
 
-1. Navigeer naar de **milieucaart** van de pagina *Overzicht* of naar de pagina **Milieu** om de optie **Toegang** beheren te gebruiken, zoals hieronder getoond in het cijfer.
+1. Navigeer naar de kaart **van Milieu** van de pagina van het Overzicht **van het** Programma.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   Of
+
+   Klik op **Details** van de kaart van **Milieu** om de pagina van Milieu&#39;s te openen. Klik op **Beheren** -> Toegang **beheren**.
+
+   ![](assets/sys-admin4.png)
 
 1. Wanneer u op Toegang **** beheren klikt, gaat u naar de **beheerconsole** vanwaar u toegang hebt tot de instantie Auteur van een omgeving.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Voor bestaande AMS-klanten {#existing-aem}
 
