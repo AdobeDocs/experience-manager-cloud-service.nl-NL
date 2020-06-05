@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1808'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.6.0 is 4 ju
 ## Nieuw in AEM-sites {#aem-sites}
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor AEM-sites in AEM als Cloud Service Release 2020.6.0.
+
+### What&#39;s New {#whats-new-2020.6.0}
+
+Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM-sites, waaronder:
+
+* Integratie tussen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) en de Core Components
+* Configureerbare HTML-id-kenmerken voor alle componenten
+* Een nieuwe component ProgressBar
+* Veel opgeloste problemen
 
 ### Bug Fixes {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Mana
 
 * Een gebruiker met de rol *Zakelijke eigenaar* in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de programmakaart) of van binnen het programma.
 
-* Een gebruiker van het Sandbox- programma in de rol van *bedrijfseigenaar* of *plaatsingsmanager* in de Manager van de Wolk kan nu hun Productie en milieu van het Stadium schrappen die via de UI van de Manager van de Wolk wordt geplaatst. De verwijderingsoptie is nu zowel beschikbaar op de kaart Environment op de overzichtspagina als op de pagina Environment. Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+   Raadpleeg [Sandbox-programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) verwijderen voor meer informatie.
+
+* Een gebruiker van het Sandbox- programma in de rol van *bedrijfseigenaar* of *plaatsingsmanager* in de Manager van de Wolk kan nu hun Productie en milieu van het Stadium schrappen die via de UI van de Manager van de Wolk wordt geplaatst. De verwijderingsoptie is nu zowel beschikbaar op de kaart Milieu op de pagina Overzicht **van** Programma&#39;s als op de pagina **Milieu** . Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+
+   Raadpleeg [Sandbox-programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) verwijderen voor meer informatie.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
-* Op de pagina *Overzicht* kunt u codetekens gebruiken om de gebruiker te informeren over en te instrueren over de standaardnavigatie in Cloud Manager om deze te starten.
+* Op de pagina **Programmaoverzicht** staan codetekens waarmee u de gebruiker informeert en informeert over de standaardnavigatie in Cloud Manager om deze te starten.
 
 * Er is nu een pagina **LEREN** beschikbaar in Cloud Manager, die toegankelijk is via de bovenste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die zijn toegewezen in Cloud Manager.
 
-* Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** -badge die wordt weergegeven op de programmakaart op de landingspagina en naast de programmanaam op de pagina *Overzicht* .
+* Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** -badge die wordt weergegeven op de programmacode op de landingspagina en naast de programmanaam op de pagina **Program Overview** .
 
-* Een gebruiker met de rol *SysAdmin* heeft nu met één klik toegang tot de locatie in Admin Console vanwaar gebruikersrollen of machtigingen voor Cloud Manager kunnen worden beheerd. Een knop Rollen **** beheren is beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
+* Een gebruiker met de rol SysAdmin heeft nu met één klik toegang tot de locatie in Admin Console vanwaar gebruikersrollen of toestemmingen aan de Manager van de Wolk kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
 
-* Een gebruiker in de rol SysAdmin heeft nu één-klik toegang tot de instantie van de Auteur direct van cm.
+   Raadpleeg [SysAdmin-taken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie.
+
+* Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
+
+   Zie Toegang [beheren tot instantie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Auteur voor meer informatie.
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
@@ -77,7 +94,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Mana
 
 * In bepaalde situaties zijn de pictogrammen in het dialoogvenster **Programma** maken onjuist uitgelijnd.
 
-* De AEM-release-id wordt niet consistent weergegeven op de pagina *Overzicht* .
+* De AEM-release-id wordt niet consistent weergegeven op de pagina Overzicht **van** programma&#39;s.
 
 * Wanneer het vormen van de productiepijpleiding, was de **Geplande optie van de Plaatsing** niet zichtbaar voor sommige klanten.
 
