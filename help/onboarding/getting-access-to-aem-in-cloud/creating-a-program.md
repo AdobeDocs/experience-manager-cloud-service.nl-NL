@@ -2,9 +2,9 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
 Een gebruiker van het Sandbox-programma in de rol van *bedrijfseigenaar* of *implementatiebeheerder* in Cloud Manager kan zijn productie- en werkgebiedomgeving verwijderen die is ingesteld via de interface van Cloud Manager.
 
-De verwijderingsoptie is zowel beschikbaar op de kaart Omgeving op de pagina *Overzicht* als op de pagina **Omgevingen** . Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+>[!NOTE]
+>Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+
+De verwijderoptie is beschikbaar op de bestemmingspagina, zoals hieronder wordt getoond:
+
+![](assets/delete-sandbox1.png)
+
+Of
+
+Selecteer Programma **** verwijderen op de pagina *Overzicht* om uw Sandbox-programma te verwijderen.
+
+![](assets/delete-sandbox2.png)
+
 
 ## Een regulier programma maken {#create-regular-program}
 
