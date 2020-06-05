@@ -1,9 +1,9 @@
 ---
 title: Snelgids voor WCAG 2.1
 description: Snelgids voor WCAG 2.1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
 ht-degree: 100%
 
