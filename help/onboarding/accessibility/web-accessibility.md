@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
-description: Een inleiding tot Adobe Experience Manager als cloudservice en de Web Accessibility Guidelines
-translation-type: tm+mt
+description: Een inleiding in Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
