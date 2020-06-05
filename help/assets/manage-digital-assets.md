@@ -4,9 +4,9 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4145'
+source-wordcount: '4274'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,19 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden niet onders
 
 ## Elementen uploaden {#uploading-assets}
 
-Zie Digitale elementen [toevoegen aan Experience Manager](add-assets.md)voor meer informatie.
+Zie Digitale elementen [toevoegen aan Experience Manager](add-assets.md).
+
+## Gedupliceerde elementen detecteren {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Als een DAM-gebruiker een of meer middelen uploadt die al in de opslagplaats aanwezig zijn, [!DNL Experience Manager] wordt de duplicatie gedetecteerd en wordt de gebruiker op de hoogte gebracht. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen. Om de eigenschap toe te laten, vorm [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Zie [hoe te configuraties](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi doen. De duplicatiedetectie is gebaseerd op de unieke `dam:sha1` waarde die is opgeslagen op `jcr:content/metadata/dam:sha1`. Dit betekent dat dubbele elementen worden gedetecteerd, zelfs als de bestandsnamen verschillend zijn.
+
+![Detecteren van dubbele OSGi-configuratie](assets/duplicate-detection.png)
+
+Zodra toegelaten, verzendt de Manager van de Ervaring berichten van dubbele activa naar inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
+
+![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
 
 ## Elementen voorvertonen {#previewing-assets}
 
