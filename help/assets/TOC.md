@@ -2,10 +2,10 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 7e3765f2d8da889c42ab48e361e294c72114a1b0
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 99%
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 99%
    + [API&#39;s en referentiemateriaal](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Profielen verwerken](/help/assets/dynamic-media/processing-profiles.md)
+   + [Slimme tags configureren](smart-tags-configuration.md)
    + [Meertalige assets en de vertaling van assets](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Asset-editor uitbreiden](extend-asset-editor.md)
