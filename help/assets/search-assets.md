@@ -4,7 +4,10 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+workflow-type: tm+mt
+source-wordcount: '4491'
+ht-degree: 6%
 
 ---
 
@@ -23,14 +26,14 @@ AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, d
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
 | [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten](#unexpectedresults) begrijpen en [problemen oplossen](#troubleshoot) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch): <br />Asset Link [](#aal) Desktop-app <br />[](#desktopapp)<br />     [Adobe Stock-afbeeldingen](#adobestock)<br />     [Dynamische media-elementen](#dynamicmedia) |  |  |
+| [Zoeken in andere oplossingen en apps](#beyondomnisearch): <br />     [Asset Link](#aal) <br />[Desktop-app](#desktopapp) <br />     [Adobe Stock-afbeeldingen](#adobestock) <br />     [Dynamische media-elementen](#dynamicmedia) |  |  |
 | [Kiezer/kiezer voor element](#assetselector) |  |  |
 | [Beperkingen](#tips) en [tips](#limitations) |  |  |
-| [Illustreerde voorbeelden](#samples) |  |  |
+| [Afbeeldingsvoorbeelden](#samples) |  |  |
 
-Zoek elementen met behulp van het veld Onderzoek boven aan de AEM-webinterface. Ga naar **[!UICONTROL Middelen]** > **[!UICONTROL Dossiers]** in AEM, klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. U kunt geavanceerde zoekopdrachten uitvoeren om het [zoekbereik](#scope)te vergroten of te beperken.
+Zoek elementen met behulp van het veld Onderzoek boven aan de AEM-webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. U kunt geavanceerde zoekopdrachten uitvoeren om het [zoekbereik](#scope)te vergroten of te beperken.
 
-Gebruik het deelvenster **[!UICONTROL Filters]** om te zoeken naar elementen, mappen, tags en metagegevens. U kunt de zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van het element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md).
+Gebruik het **[!UICONTROL Filters]** deelvenster om te zoeken naar elementen, mappen, tags en metagegevens. U kunt de zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van het element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md).
 
 De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
@@ -38,9 +41,9 @@ De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken n
 
 Verken uzelf met de zoekinterface en de beschikbare acties.
 
-![](assets/aem_search_results.png) Werken met delen van de Resultaten van middelenzoekopdrachten interface ** Afbeelding: Werken met delen van de interface voor zoekresultaten van middelen
+![Werken met delen van de Resultaten van middelenzoekopdrachten interface](assets/aem_search_results.png)*Afbeelding:* Werken met delen van de interface voor zoekresultaten van middelen
 
-**** A. Sla de zoekopdracht op als een slimme verzameling. **** B. Filters (voorspellingen) om de zoekresultaten te verfijnen. **C.** Geef bestanden, mappen of beide weer in de zoekresultaten. **** D. Klik op Filters om de linkertrack te openen of te sluiten. **** E. Zoeklocatie is DAM. ************ F. Het gebied van het onderzoek met user-provided onderzoekssleutelwoord **G. Schakel het selectievakje in om alle zoekresultaten te selecteren** H. Aantal weergegeven zoekresultaten van de totale zoekresultaten **I. Sluit zoekopdracht** J. Schakelen tussen de kaartweergave en de lijstweergave
+**A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Filters (predicaten) om de zoekresultaten te verfijnen. **C.** Geef bestanden, mappen of beide weer in de zoekresultaten. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Omnisearch-veld met door gebruik opgegeven trefwoord voor zoeken **G.** Schakel het selectievakje in om alle zoekresultaten te selecteren **H.** Aantal weergegeven zoekresultaten van het totale aantal zoekresultaten **I.** Sluit de zoekopdracht **J.** Schakel tussen kaart- en lijstweergave
 
 ### Dynamische zoekfacetten {#dynamicfacets}
 
@@ -101,9 +104,9 @@ De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden wor
 
 U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
 
-1. Open vanuit de gebruikersinterface Elementen de pagina met eigenschappen voor het element. Klik op **[!UICONTROL Geavanceerd]** en klik of tik op **[!UICONTROL Toevoegen]** onder **[!UICONTROL Vergroten voor zoektrefwoorden]**.
-1. Geef in het vak **[!UICONTROL Zoeken bevorderen]** een trefwoord op waarvoor u de zoekactie naar de afbeelding wilt opvoeren en klik op **[!UICONTROL Toevoegen]**. U kunt meerdere trefwoorden op dezelfde manier opgeven.
-1. Klik/tik op **[!UICONTROL Opslaan en sluiten]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
+1. Open vanuit de gebruikersinterface Assets de pagina met eigenschappen voor de asset. Klik op **[!UICONTROL Advanced]** en klik of tik op **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
+1. Geef in het **[!UICONTROL Search Promote]** vak een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik op de afbeelding **[!UICONTROL Add]**. U kunt meerdere trefwoorden op dezelfde manier opgeven.
+1. Klik of tik op **[!UICONTROL Save & Close]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
 
 U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Zie [Zoeken in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html)voor meer informatie.
 
@@ -115,9 +118,9 @@ U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de
 
 AEM biedt verschillende methoden, zoals filters die van toepassing zijn op de gezochte elementen, zodat u de gewenste elementen sneller kunt vinden. Hieronder worden enkele veelgebruikte methoden beschreven. Enkele [geïllustreerde voorbeelden](#samples) worden hieronder gedeeld.
 
-**Bestanden of mappen** zoeken: Zie bestanden, mappen of beide in de zoekresultaten. In het deelvenster **[!UICONTROL Filters]** kunt u de juiste optie selecteren. Zie [zoekinterface](#searchui).
+**Bestanden of mappen** zoeken: Zie bestanden, mappen of beide in de zoekresultaten. Vanuit **[!UICONTROL Filters]** het deelvenster kunt u de gewenste optie selecteren. Zie [zoekinterface](#searchui).
 
-**Zoeken naar elementen in een map**: U kunt de zoekopdracht beperken tot een specifieke map. Voeg in het deelvenster **[!UICONTROL Filters]** het pad van een map toe. U kunt slechts één map tegelijk selecteren.
+**Zoeken naar elementen in een map**: U kunt de zoekopdracht beperken tot een specifieke map. Voeg in het **[!UICONTROL Filters]** deelvenster het pad van een map toe. U kunt slechts één map tegelijk selecteren.
 
 ![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/search_folder_select.gif)
 
@@ -138,7 +141,7 @@ Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock-midde
 
 ### Dynamische media-elementen {#dmassets}
 
-U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamische media > Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]** . Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
 ### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
 
@@ -200,11 +203,11 @@ De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van he
 
 ### Adobe Stock-afbeeldingen zoeken {#adobestock-1}
 
-Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt ook het deelvenster **[!UICONTROL Filters]** gebruiken om alle middelen met of zonder licentie te zoeken of om een bepaald middel te zoeken aan de hand van het Adobe Stock-bestandsnummer. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt **[!UICONTROL Filters]** dit deelvenster ook gebruiken om alle onder licentie of zonder licentie geplaatste middelen te zoeken of een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Dynamische media-elementen zoeken {#dynamicmedia}
 
-U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamische media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]** . Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen. Tijdens het ontwerpen van webpagina&#39;s kunnen de auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
+U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
 ### Middelen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#contentfinder}
 
@@ -229,10 +232,10 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 |---|---|---|---|
 | bronachtervoegsel (B) | Mappad als resfix van de bron in de URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de map /content/dam/we-retail/en/activities geselecteerd, moet de URL de volgende notatie hebben: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
 | mode | enkelvoudig, meerdere | [https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single) | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
-| mimetype | Mimetype(s) (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Hiermee kunt u elementen filteren op basis van MIME-typen |
+| mimetype | Mimetype(s) (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Hiermee kunt u elementen filteren op basis van MIME-typen |
 | dialoogvenster | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
 | assettype (S) | afbeeldingen, documenten, multimedia, archieven | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Gebruik deze optie om elementtypen te filteren op basis van de doorgegeven waarde. |
-| basis | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
+| basis | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
 
 Ga naar `https://[AEM server]:[port]/aem/assetpicker`om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
 
@@ -251,7 +254,7 @@ De zoekfunctie in AEM Assets heeft de volgende beperkingen:
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
-* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
+* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimumaantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
 * U kunt het model niet wijzigen of AEM trainen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
 
 ## Zoektips {#tips}
@@ -301,7 +304,7 @@ Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de 
 
 **Een trefwoord** uitsluiten: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. De query retourneert bijvoorbeeld elementen die wel `running -shoe` , maar niet `running``shoe`. Op dezelfde manier retourneert `camp -night` query elementen die wel `camp` maar niet `night`bevatten. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`bevatten.
 
-![Gebruik van streepje om naar activa te zoeken die geen uitgesloten sleutelwoord](assets/search_dash_exclude_keyword.gif)*Cijfer bevatten:Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten*
+![Gebruik van streepje om naar activa te zoeken die geen uitgesloten sleutelwoord](assets/search_dash_exclude_keyword.gif)*Cijfer bevatten: Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -309,10 +312,6 @@ Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de 
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
-
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -349,8 +348,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
-<!--
 
+<!--
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -399,21 +398,21 @@ Wanneer bepaalde gezochte elementen aan uw criteria voldoen, kunt u de volgende 
 * Gebruik Desktophandelingen om deze middelen in de bureaubladtoepassing te openen.
 * Slimme verzamelingen maken.
 
-### Gezochte resultaten sorteren {#sort}
+### Zoekresultaten sorteren {#sort}
 
-Door de zoekresultaten te sorteren, kunt u sneller de vereiste middelen vinden. Zoekresultaten sorteren werkt alleen in de lijstweergave en wanneer u **[!UICONTROL [Bestanden](#searchui)]**in het deelvenster**[!UICONTROL  Filters ]**selecteert. AEM Assets gebruikt server-zijsorteren om snel alle activa (hoe talrijk ook) binnen een omslag of resultaten van een onderzoeksvraag te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Het sorteren van zoekresultaten werkt in de lijstweergave en alleen wanneer u **[!UICONTROL [Bestanden](#searchui)]** selecteert in het deelvenster **[!UICONTROL Filters]**. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Titel, Status, Dimensies, Grootte, Classificatie, Gebruik, (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
-Zie sorteren op kolom [Naam](#sortbyname)configureren. Zie [beperkingen](#limitations)voor beperkingen van de sorteerfunctionaliteit.
+Zie [beperkingen](#limitations)voor beperkingen van de sorteerfunctionaliteit.
 
 ### Gedetailleerde informatie over een element controleren {#checkinfo}
 
 Op de pagina met zoekresultaten kunt u gedetailleerde informatie over een doorzocht element controleren.
 
-Als u alle metagegevens van een element wilt weergeven, selecteert u het element en klikt u op de **[!UICONTROL eigenschappen]** op de werkbalk.
+Als u alle metagegevens van een element wilt weergeven, selecteert u het element en klikt u op **[!UICONTROL properties]** de werkbalk.
 
-Als u de opmerkingen over een element of de versiegeschiedenis van een element wilt controleren, klikt u op het element om een voorvertoning op grote grootte te openen. Open de tijdlijn in de linkertrack en selecteer **[!UICONTROL Opmerkingen]** of **[!UICONTROL Versies]**. U kunt de tijdlijnactiviteit zoals commentaren of versies in chronologische orde ook sorteren.
+Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt controleren, klikt u op de asset om een voorvertoning op grote grootte te openen. Open de tijdlijn in het linkerspoor en selecteer **[!UICONTROL Comments]** of **[!UICONTROL Versions]**. U kunt de tijdlijnactiviteit zoals opmerkingen of versies ook in chronologische volgorde sorteren.
 
 ![Tijdlijnitems voor een zoekmiddel sorteren](assets/sort_timeline_search_results.gif)
 
@@ -421,11 +420,11 @@ Tijdlijnitems voor een zoekmiddel sorteren
 
 ### Gezochte middelen downloaden {#download}
 
-U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer een of meer middelen in de zoekresultaten en klik op **[!UICONTROL Downloaden]** op de werkbalk.
+U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer een of meer elementen in de zoekresultaten en klik op **[!UICONTROL Download]** de werkbalk.
 
 ### Eigenschappen van metagegevens voor bulkupdates {#metadataupdates}
 
-Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Eigenschappen]** op de werkbalk en werk de metagegevens naar wens bij. Klik op **[!UICONTROL Opslaan en Sluiten]** als u klaar bent. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
+Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Properties]** de werkbalk en werk de metagegevens naar wens bij. Klik **[!UICONTROL Save and Close]** wanneer gereed. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
 
 Voor de elementen die in één map of verzameling beschikbaar zijn, is het eenvoudiger om de metagegevens bulksgewijs [bij te](/help/assets/manage-metadata.md#manage-assets-metadata)werken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
 
@@ -436,7 +435,7 @@ Een verzameling is een geordende set elementen die elementen van verschillende l
 * Een statische referentielijst met elementen, mappen en andere verzamelingen.
 * Een dynamische lijst (slimme verzameling) die elementen in de verzameling vult op basis van zoekcriteria.
 
-U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer **[!UICONTROL Bestanden]** in het deelvenster **[!UICONTROL Filters]** en klik op Slimme verzameling **** opslaan. Zie Verzamelingen [beheren](/help/assets/manage-collections.md).
+U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Files]** en klik op **[!UICONTROL Save Smart Collection]**. Zie [Verzamelingen beheren](/help/assets/manage-collections.md).
 
 ## Onverwachte zoekresultaten {#unexpectedresults}
 
