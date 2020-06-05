@@ -2,7 +2,10 @@
 title: Bekende problemen
 description: Opmerkingen vrij die specifiek zijn voor de bekende problemen met Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 1%
 
 ---
 
@@ -31,13 +34,12 @@ Enkele bekende problemen zijn:
 
 Enkele mogelijkheden van Adobe Experience Manager-middelen die afhankelijk zijn van de funderingsmogelijkheden, die nog niet beschikbaar zijn in de Experience Manager als implementatiearchitectuur voor de cloudservice, zullen naar verwachting later worden ingeschakeld:
 
-* De verbeterde functionaliteit voor slimme tags die gebruikmaakt van AI-services van Adobe I/O is momenteel niet beschikbaar.
 * Capabilities not enabled in this stage due to dependency on Commerce Integration Framework APIs:
    * Workflowmodellen voor foto&#39;s.
    * Tabblad met productinformatie in de gebruikersinterface voor eigenschappen van elementen is niet ingevuld.
 * Mogelijkheden die op dit moment niet zijn ingeschakeld, zijn afhankelijk van de integratie met InDesign Server:
    * Asset Templates en Asset Catalogs.
-   * Voorvertoning van InDesign-bestanden op meerdere pagina&#39;s.
+   * Voorvertoning van Adobe InDesign-bestanden met meerdere pagina&#39;s.
 
 >[!MORELIKETHIS]
 >
