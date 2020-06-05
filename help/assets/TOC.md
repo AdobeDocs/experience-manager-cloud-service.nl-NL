@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b03fcba0dc2e03b6ca0d57aa804bddf0817f227e
+source-git-commit: 7e3765f2d8da889c42ab48e361e294c72114a1b0
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 99%
@@ -86,7 +86,7 @@ ht-degree: 99%
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Dynamic Media-assets leveren](dynamic-media/delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](dynamic-media/hotlink-protection.md)
-   + [3D-afbeeldingen](dynamic-media/assets-3d.md)
+   + [3D-ondersteuning](dynamic-media/assets-3d.md)
    + [Image Sets](dynamic-media/image-sets.md)
    + [Panoramische afbeeldingen](dynamic-media/panoramic-images.md)
    + [Mixed Media Sets](dynamic-media/mixed-media-sets.md)
