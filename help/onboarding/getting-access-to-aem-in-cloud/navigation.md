@@ -2,9 +2,9 @@
 title: Navigatie
 description: Navigatie - Cloud Service
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -35,28 +35,30 @@ Raadpleeg [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/exp
 
    ![](assets/sys-admin5.png)
 
-1. Als u op Toegang **** beheren klikt, gaat u naar de **beheerconsole** vanwaar u de gebruikersrollen of machtigingen kunt beheren naar Cloud Manager.
+1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar **Admin Console** waar u de gebruikersrollen of machtigingen kunt beheren in Cloud Manager.
+
+   ![](assets/sys-admin1.png)
 
 ### Toegang tot instantie Auteur beheren {#manage-access-aem}
 
-Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de Console **** Admin van waar u aan de instantie van de Auteur kunt direct navigeren en toegang beheren.
+Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de Console **** Admin van waar u aan de auteursinstantie direct kunt navigeren en toegang beheren.
 
 >[!NOTE]
 >Voor sommige organisaties die vóór januari 2020 toegang hebben gekregen tot AEM als Cloud Service, worden deze doorgestuurd naar de Adobe Admin Console en moet het Product and Environment Product Profile worden geselecteerd.
 
 Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
 
-1. Navigeer naar de kaart **van Milieu** van de pagina van het Overzicht **van het** Programma.
+1. Navigeer naar de **milieucaart** van de pagina Overzicht **van het** Programma en klik op Toegang **** beheren.
 
    ![](assets/sys-admin6.png)
 
    Of
 
-   Klik op **Details** van de kaart van **Milieu** om de pagina van Milieu&#39;s te openen. Klik op **Beheren** -> Toegang **beheren**.
+   **Toegang** beheren is ook beschikbaar via de knop **Beheren** als u klikt op **Details** van de kaart **Omgevingen** .
 
    ![](assets/sys-admin4.png)
 
-1. Wanneer u op Toegang **** beheren klikt, gaat u naar de **beheerconsole** vanwaar u toegang hebt tot de instantie Auteur van een omgeving.
+1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar de **beheerconsole** vanwaar u toegang hebt tot de auteurinstantie van de omgeving.
 
 ## Voor bestaande AMS-klanten {#existing-aem}
 
