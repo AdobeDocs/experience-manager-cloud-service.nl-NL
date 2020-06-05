@@ -3,10 +3,10 @@ title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van middelen en de snelheid van inhoud te verbeteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 8%
+source-wordcount: '859'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen eenvoudig herkennen en ophalen door zoekopdrachten op basis van tags. Adobe biedt slimme tags die gebruikmaken van algoritmen voor kunstmatige intelligentie en het leren van machines om afbeeldingen op te leiden. Slimme tags gebruiken een kunstmatig intelligentieframework van [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden voor uw tagstructuur en bedrijfscatonomie.
 
-De functie Slimme tags kan als een invoegtoepassing worden aangeschaft [!DNL Experience Manager]. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar de Adobe I/O. De beheerder heeft toegang tot de koppeling om de slimme tags te integreren met [!DNL Experience Manager] gebruik van Adobe I/O.
+De functie Slimme tags kan als een invoegtoepassing worden aangeschaft [!DNL Experience Manager]. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar de Adobe Developer Console. De beheerder opent de koppeling om de slimme tags te integreren met [!DNL Experience Manager] gebruik van Adobe Developer Console.
 
 <!-- TBD: 
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
@@ -24,45 +24,35 @@ De functie Slimme tags kan als een invoegtoepassing worden aangeschaft [!DNL Exp
 4. Post-GA, if time permits, create a video.
 -->
 
-## Integreren met Adobe I/O {#aio-integration}
+## Integreren met Adobe Developer Console {#aio-integration}
 
-Voordat u de afbeeldingen kunt voorzien van tags met behulp van SCS, moet u ze integreren [!DNL Adobe Experience Manager] met de service Slimme tags aan de hand van Adobe I/O. Aan de achterkant verifieert de [!DNL Experience Manager] server uw servicegegevens met de Adobe I/O-gateway voordat uw verzoek naar de service wordt doorgestuurd.
+Voordat u de afbeeldingen kunt voorzien van tags met behulp van SCS, dient u ze te integreren [!DNL Adobe Experience Manager] met de service Slimme tags met behulp van Adobe Developer Console. Aan de achterkant verifieert de [!DNL Experience Manager] server uw servicegegevens met de Adobe Developer Console-gateway voordat uw verzoek naar de service wordt doorgestuurd.
 
 * Creeer een configuratie binnen [!DNL Experience Manager] om een openbare sleutel te produceren. Overheidscertificaat verkrijgen voor OAuth-integratie.
-* Maak een integratie in Adobe I/O en upload de gegenereerde openbare sleutel.
-* Configureer uw [!DNL Experience Manager] instantie met behulp van de API-sleutel en andere referenties van Adobe I/O.
+* Maak een integratie in Adobe Developer Console en upload de gegenereerde openbare sleutel.
+* Configureer uw [!DNL Experience Manager] instantie met behulp van de API-sleutel en andere gegevens uit de Adobe Developer Console.
 * Schakel eventueel automatische labeling in bij het uploaden van elementen.
 
-### Vereisten voor Adobe I/O-integratie {#prerequisite-for-aio-integration}
+### Vereisten voor de integratie van Adobe Developer Console {#prerequisite-for-aio-integration}
 
-Voordat u de slimme tags kunt gebruiken, moet u het volgende doen om een integratie in de Adobe I/O te maken:
+Voordat u Slimme tags kunt gebruiken, moet u het volgende doen om een integratie te maken in Adobe Developer Console:
 
 * Een Adobe-id-account met beheerdersrechten voor de organisatie.
 * De slimme tags zijn ingeschakeld voor uw organisatie.
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
+Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Console. U maakt een certificaat vanuit [!DNL Experience Manager]de toepassing zelf.
 
-1. Ga in de [!DNL Experience Manager] gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
+1. Ga in de [!DNL Experience Manager] gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. Klik op de [!UICONTROL Adobe IMS Configurations] pagina **[!UICONTROL Create]**. From **[!UICONTROL Cloud Solution]** menu, select **[!UICONTROL Smart Tags]**.
 
-1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een titel en naam op voor de configuratie Slimme tags. Klik op **[!UICONTROL Create]**.
+1. Selecteer **[!UICONTROL Create new certificate]**. Geef een naam op en klik op **[!UICONTROL Create certificate]**. Klik op **[!UICONTROL OK]**.
 
-1. Gebruik de volgende waarden in het **[!UICONTROL AEM Smart Content Service]** dialoogvenster:
+1. Klik op **[!UICONTROL Download Public Key]**.
 
-   **[!UICONTROL Service URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
-
-   **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
-
-   Laat de overige velden voorlopig leeg (later te verstrekken). Klik op **[!UICONTROL OK]**.
-
-   ![Het dialoogvenster Experience Manager Smart Content Service om de contentservice URL te bieden](assets/aem_scs.png)
-
-1. Klik **[!UICONTROL Download Public Certificate for OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt`.
-
-   ![Instellingen gemaakt voor de service voor slimme tags](assets/download_link.png)
+   ![Met Slimme tags van Experience Manager kunt u een openbare sleutel maken](assets/aem_smarttags-config1.png)
 
 ### Opnieuw configureren als een certificaat verloopt {#certrenew}
 
@@ -77,47 +67,43 @@ Wanneer het certificaat verloopt, wordt het niet meer vertrouwd. Voer de volgend
 
    *Afbeelding: Verwijder het bestaande`similaritysearch`item in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Klik op **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Klik op de gewenste configuratie.
+1. Ga in de [!DNL Experience Manager] gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open de beschikbare configuratie voor slimme tags. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate]**.
 
-1. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate for OAuth Integration]**.
-
-1. Open [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande service in het project. Upload het nieuwe certificaat. Zie de instructies in Adobe I/O-integratie [](#create-aio-integration)maken voor meer informatie.
+1. Open [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande service in het project. Upload het nieuwe certificaat en configureer het. Zie de instructies in de integratie [van Adobe Developer Console](#create-aio-integration)maken voor meer informatie over de configuratie.
 
 ### Een integratie maken {#create-aio-integration}
 
-Als u API&#39;s met slimme tags wilt gebruiken, maakt u een integratie in Adobe I/O om API-sleutel, technische account-id, organisatie-id en clientgeheim te genereren.
+Als u slimme tags wilt gebruiken, maakt u een integratie in Adobe Developer Console om API-sleutel, technische account-id, organisatie-id en clientgeheim te genereren.
 
-1. Ga naar [https://console.adobe.io](https://console.adobe.io/).
-1. Selecteer de aangewezen rekening en verifieer dat de bijbehorende organisatierol systeembeheerder is. Maak een project of open een bestaand project. Voor de projectpagina, klik **[!UICONTROL Add API]**.
-1. Selecteer op de **[!UICONTROL Add an API]** pagina **[!UICONTROL Experience Cloud]** en selecteer **[!UICONTROL Smart Content]**. Klik op **[!UICONTROL Continue]**.
-1. Selecteer op de volgende pagina **[!UICONTROL New integration]**. Klik op **[!UICONTROL Continue]**.
-1. Voor de **[!UICONTROL Integration Details]** pagina, specificeer een naam voor de integratiesgateway en voeg een beschrijving toe.
-1. Upload in het **[!UICONTROL Public keys certificates]** bestand `AEM-SmartTags.crt` dat u hierboven hebt gedownload.
-1. Klik op **[!UICONTROL Create Integration]**.
-1. Klik op **[!UICONTROL Continue to integration details]** om de integratiegegevens weer te geven.
+1. Ga naar [https://console.adobe.io](https://console.adobe.io/) in een browser. Selecteer de aangewezen rekening en verifieer dat de bijbehorende organisatierol systeembeheerder is.
+1. Maak een project met de gewenste naam. Klik op **[!UICONTROL Add API]**.
+1. Selecteer op de **[!UICONTROL Add an API]** pagina **[!UICONTROL Experience Cloud]** en selecteer **[!UICONTROL Smart Content]**. Klik op **[!UICONTROL Next]**.
+1. Selecteer **[!UICONTROL Upload your public key]**. Geef het certificaatbestand op dat u hebt gedownload van [!DNL Experience Manager]. Er [!UICONTROL Public key(s) uploaded successfully] wordt een bericht weergegeven. Klik op **[!UICONTROL Next]**.
+1. [!UICONTROL Create a new Service Account (JWT) credential] De pagina toont de openbare sleutel voor de de dienstrekening enkel gevormd. Klik op **[!UICONTROL Next]**.
+1. Selecteer op de **[!UICONTROL Select product profiles]** pagina **[!UICONTROL Smart Content Services]**. Klik **[!UICONTROL Save configured API]**. Op een pagina wordt meer informatie over de configuratie weergegeven. Laat deze pagina open om deze waarden te kopiëren en toe te voegen in Experience Manager wanneer u Slimme tags verder configureert in [!DNL Experience Manager].
 
    ![Op het tabblad Overzicht kunt u de informatie bekijken die voor integratie is opgegeven.](assets/integration_details.png)
 
 ### Slimme tags configureren {#configure-smart-content-service}
 
-Als u de integratie wilt configureren, gebruikt u de waarden Technical Account ID, Organization ID, Client Secret, Authorization Server en API-sleutelvelden van de Adobe I/O-integratie. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de [!DNL Experience Manager] instantie worden geverifieerd.
+Als u de integratie wilt configureren, gebruikt u de waarden Payload, Client Secret, Authorization Server en API-sleutelvelden uit de integratie met de Adobe Developer Console.
 
-1. Navigeer in [!DNL Experience Manager]naar **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** om de [!UICONTROL Cloud Services] console te openen.
-1. Open onder de **[!UICONTROL Assets Smart Tags]** sectie de configuratie die hierboven is gemaakt. Klik op de pagina met service-instellingen **[!UICONTROL Edit]**.
-1. Gebruik in het dialoogvenster **[!UICONTROL AEM Smart Content Service]** de vooraf ingevulde waarden voor de velden **[!UICONTROL Service URL]** en **[!UICONTROL Authorization Server]**.
-1. Voor de velden **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]** en **[!UICONTROL Client Secret]** gebruikt u de hierboven gegenereerde waarden.
+1. Ga in de [!DNL Experience Manager] gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Geef de gewenste **[!UICONTROL Adobe IMS Technical Account Configuration]** toegangspagina op **[!UICONTROL Title]**.
+1. Geef in **[!UICONTROL Authorization Server]** veld de `https://ims-na1.adobelogin.com` URL op.
+1. Geef in het **[!UICONTROL API Key]** veld **[!UICONTROL Client ID]** de gegevens op [!DNL Adobe Developer Console].
+1. Geef in het **[!UICONTROL Client Secret]** veld de **[!UICONTROL Client Secret]** gegevens op van de [!DNL Adobe Developer Console]. Klik op **[!UICONTROL Retrieve Client Secret]** optie om deze weer te geven.
+1. Klik in [!DNL Adobe Developer Console]het project op de linkermarge **[!UICONTROL Service Account (JWT)]** . Klik op **[!UICONTROL Generate JWT]** tab. Klik **[!UICONTROL Copy]** om de getoonde te kopiëren **[!UICONTROL JWT Payload]**. Geef deze waarde op in het **[!UICONTROL Payload]** veld in [!DNL Experience Manager]. Klik op **[!UICONTROL Create]**.
 
 ### De configuratie valideren {#validate-the-configuration}
 
-Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de configuratie te bevestigen. Voer de volgende stappen uit om te valideren.
+Nadat u de configuratie hebt voltooid, volg deze stappen om de configuratie te bevestigen.
 
-1. Open uw [!DNL Experience Manager] server op `https://[aem_server]:[port]`.
+1. Ga in de [!DNL Experience Manager] gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. Ga naar **[!UICONTROL Tools > Operations > Web Console]** om de console te openen OSGi. Klik op **[!UICONTROL Main > JMX]**.
-1. Klik op **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Het wordt geopend **[!UICONTROL SimilaritySearch Miscellaneous Tasks.]**.
-1. Klik op **[!UICONTROL validateConfigs()]**. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+1. Selecteer de configuratie Slimme tags. Klik op **[!UICONTROL Check Health]** de werkbalk. Klik op **[!UICONTROL Check]**. Een dialoog met [!UICONTROL Healthy configuration] bericht bevestigt dat de configuratie werkt.
 
-   Het validatieresultaat wordt in hetzelfde dialoogvenster weergegeven.
+![Configuratie van slimme tags valideren](assets/smart-tag-config-validation.png)
 
 ## Slimme tags toepassen op nieuw geüploade elementen inschakelen (optioneel) {#enable-smart-tagging-for-uploaded-assets}
 
