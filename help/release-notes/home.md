@@ -2,7 +2,10 @@
 title: Opmerkingen bij de release voor Adobe Experience Manager (AEM) als cloudservice.
 description: 'Opmerkingen bij de release voor Adobe Experience Manager (AEM) als cloudservice. '
 translation-type: tm+mt
-source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
+source-git-commit: f3bc33191c66e48ce995c8656e9669f9015f7755
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 87%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2020.04.0 |
+| Versie | 2020.6.0 |
 | Type | Continue update |
 | Beschikbaarheidsdatum | Continue update |
 
