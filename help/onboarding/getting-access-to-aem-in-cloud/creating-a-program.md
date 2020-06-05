@@ -2,9 +2,9 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ De verwijderoptie is beschikbaar op de bestemmingspagina, zoals hieronder wordt 
 
 Of
 
-Selecteer Programma **** verwijderen op de pagina *Overzicht* om uw Sandbox-programma te verwijderen.
+Selecteer Programma **** verwijderen op de pagina **Program Overview** om uw Sandbox-programma te verwijderen.
 
 ![](assets/delete-sandbox2.png)
 
