@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -120,17 +120,12 @@ Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM-elementen. De gebruiker kan, een voorproef, en hefboomwerking een verscheidenheid van kern 3D dossiers, met inbegrip van .obj, .stl, .gltf, en .glb dossiers uploaden. Met de toevoeging van [!DNL Dynamic Media], kunnen 3D ervaringen worden gevormd en via agnostische URLs of kijkers worden geleverd. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR).
-
-<!-- TBD: Add link to the DM help article, if any. -->
+Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM-elementen. De gebruiker kan, een voorproef, en hefboomwerking een verscheidenheid van kern 3D dossiers, met inbegrip van .obj, .stl, .gltf, en .glb dossiers uploaden. Met de toevoeging van [!DNL Dynamic Media], kunnen 3D ervaringen worden gevormd en via agnostische URLs of kijkers worden geleverd. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Verbeteringen voor toegankelijkheid**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * Gebruikersinterface-elementen, besturingselementen en invoerformuliervelden zijn toegankelijk via het toetsenbord.
 * Verandering in kleur of contrast van sommige interface-elementen om deze beter te kunnen onderscheiden door gebruikers met een beperkt gezichtsvermogen en zonder kleurperceptie. Elementen hebben nu bijvoorbeeld het juiste contrast in de pictogrammen voor sterwaardering op de [!UICONTROL Properties] pagina en in de kaartweergave.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Andere verbeteringen**
 
 De release biedt de volgende aanvullende verbeteringen:
 
-* Verbeterde toegankelijkheid voor de gebruikersinterface van Elementen.
 * Mogelijkheid om elementen opnieuw te verwerken met profielen voor middelenverwerking, zodat gebruikers volledige controle hebben over het proces (volledige verwerking van bedrijfsmiddelen uitvoeren, gewoon een specifiek verwerkingsprofiel toepassen en beslissen of de naverwerkingsworkflow moet worden uitgevoerd).
 * Zoekopdrachten retourneren nu sneller resultaten wanneer de onderliggende clusterinstantie achter de schermen opnieuw is gestart (de eerste zoekopdracht kan in een dergelijk geval langer duren).
-* Sorteren op &#39;Naam&#39; wanneer elementen in de lijstweergave in de interface Middelen en in de zoekresultaten worden weergegeven.
-* Sorteren op &#39;Gemaakt&#39; (Datum) wanneer elementen worden weergegeven in de lijstweergave in de interface Middelen en in de zoekresultaten.
-* Ondersteuning voor het converteren van EPS-bestanden naar afbeeldingen.
+* Sorteren op &#39;Naam&#39; wanneer elementen in de lijstweergave in de interface Middelen en in de zoekresultaten worden weergegeven. Zie [zoekmiddelen](/help/assets/search-assets.md#sort).
+* Sorteren op &#39;Gemaakt&#39; (Datum) wanneer elementen worden weergegeven in de lijstweergave in de interface Middelen en in de zoekresultaten. Zie [zoekmiddelen](/help/assets/search-assets.md#sort).
+* Ondersteuning voor het converteren van EPS-bestanden naar afbeeldingen met behulp van de asset microservices.
 
 ### Bug Fixes {#assets-bug-fixes}
 
