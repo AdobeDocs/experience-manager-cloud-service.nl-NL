@@ -2,7 +2,10 @@
 title: Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 1%
 
 ---
 
@@ -62,8 +65,8 @@ Bijvoorbeeld om toegang te krijgen `/content/dam/wknd/en/adventures/cycling-tusc
 
 >[!NOTE]
 >Toegang over:
->* `/api/assets` Het gebruik van de **kiezer is** niet `.model` nodig.
->* `/content/assets` **vereist** wel het gebruik van de `.model` kiezer.
+>* `/api/assets` **heeft het gebruik van de** kiezer niet `.model` nodig.
+>* `/content/assets` **vereist** het gebruik van de `.model` kiezer.
 
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
@@ -310,7 +313,7 @@ Er zijn enkele beperkingen:
 
 De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
-1. 200 (OK)
+* **200** (OK)
 
    Geretourneerd wanneer:
 
@@ -318,19 +321,19 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
    * het bijwerken van een inhoudsfragment via `PUT`
 
-1. 201 (gemaakt)
+* **201** (gemaakt)
 
    Geretourneerd wanneer:
 
    * een inhoudsfragment maken via `POST`
 
-1. 404 (Niet gevonden)
+* **404** (Niet gevonden)
 
    Geretourneerd wanneer:
 
    * het gewenste inhoudsfragment bestaat niet
 
-1. 500 (Interne serverfout)
+* **500** (interne serverfout)
 
    >[!NOTE]
    >
