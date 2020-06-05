@@ -3,17 +3,17 @@ title: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services.
 description: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met Adobe Sensei-services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2331'
 ht-degree: 5%
 
 ---
 
 
-# Uw afbeeldingen coderen met behulp van slimme services {#smart-tag-assets}
+# De service Slimme tags toepassen en uw afbeeldingen labelen {#train-service-tag-assets}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen eenvoudig herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen eenvoudig herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -25,7 +25,7 @@ Op de achtergrond gebruiken de Slimme tags een kunstmatig intelligentiekader van
 
 Voer de volgende taken uit als u slimme tags wilt gebruiken:
 
-* [Integreer Experience Manager met Adobe I/O](#integrate-aem-with-aio).
+* [Integreer Experience Manager met Adobe Developer Console](#integrate-aem-with-aio).
 * [Leer labelmodellen en richtlijnen](#understand-tag-models-guidelines).
 * [Trein het model](#train-model).
 * [Tags toewijzen aan uw digitale elementen](#tag-assets).
@@ -35,11 +35,11 @@ Slimme tags zijn alleen van toepassing op [!DNL Adobe Experience Manager Assets]
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integreren [!DNL Experience Manager] met Adobe I/O {#integrate-aem-with-aio}
+## Integreren [!DNL Experience Manager] met Adobe Developer Console {#integrate-aem-with-aio}
 
-Met Adobe I/O kunt u [!DNL Adobe Experience Manager] de slimme tags integreren. Gebruik deze configuratie om de dienst van Slimme Markeringen van binnen toegang te hebben [!DNL Experience Manager].
+Met Adobe Developer Console kunt u [!DNL Adobe Experience Manager] de slimme tags integreren. Gebruik deze configuratie om de dienst van Slimme Markeringen van binnen toegang te hebben [!DNL Experience Manager].
 
-Zie Experience Manager [configureren voor slimme tags van elementen](smart-tags-configuration.md) voor taken om de slimme tags te configureren. Aan de achterkant verifieert de [!DNL Experience Manager] server uw servicegegevens met de Adobe I/O-gateway voordat uw verzoek naar de service Slimme tags wordt doorgestuurd.
+Zie Experience Manager [configureren voor slimme tags van elementen](smart-tags-configuration.md) voor taken om de slimme tags te configureren. Aan de achterkant verifieert de [!DNL Experience Manager] server uw servicegegevens met de Adobe Developer Console-gateway voordat uw verzoek naar de service Slimme tags wordt doorgestuurd.
 
 ## Leer labelmodellen en -richtlijnen {#understand-tag-models-guidelines}
 
@@ -87,7 +87,7 @@ De afbeeldingen in uw trainingsset moeten aan de volgende richtlijnen voldoen:
    * alleen de labels die betrekking hebben op kleuren van overhemden.
    * alleen de labels voor jassen voor vrouwen en mannen.
 * Niet maken,
-   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht.
+   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht .
    * meerdere tagmodellen met dezelfde paar automodellen.
 
 **Afbeeldingen die worden gebruikt om te trainen**: U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. De optie Koppel een afbeelding echter niet aan meer dan één tag in een labelmodel. Daarom is het mogelijk om dezelfde afbeelding te voorzien van verschillende tags die bij verschillende labelmodellen horen.
