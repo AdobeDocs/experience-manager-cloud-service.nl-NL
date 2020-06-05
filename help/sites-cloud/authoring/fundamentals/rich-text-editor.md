@@ -1,17 +1,20 @@
 ---
-title: De Rich Text Editor gebruiken om inhoud te ontwerpen
-description: De Rich Text Editor gebruiken om inhoud te ontwerpen
+title: Gebruik de Rich Text Editor in Adobe Experience Manager om inhoud te ontwerpen.
+description: Met de Experience Manager Rich Text Editor kunt u inhoud ontwerpen.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
 
-# De Rich Text Editor gebruiken om inhoud te ontwerpen {#use-rich-text-editor-to-author-content}
+# De Rich Text Editor gebruiken om inhoud te schrijven {#use-rich-text-editor-to-author-content}
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten
 
-## Plaatselijk bewerken {#in-place-editing}
+## Lokaal bewerken {#in-place-editing}
 
 Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [van de](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) component net als elke component weergegeven.
 
@@ -23,19 +26,17 @@ Als u nogmaals tikt of erop klikt of de component aanvankelijk selecteert met ee
 
 Deze werkbalk bevat de volgende opties:
 
-* **Indeling**: Op deze manier kunt u de opties Vet, Cursief en Onderstrepen instellen.
-* **Lijsten**: Hiermee kunt u lijsten met opsommingstekens of nummers maken of de inspringing instellen.
-* **Hyperlink**
-* **Ontkoppelen**
-* **Volledig scherm**
-* **Sluiten**
-* **Opslaan**
+* **Indeling**: Tekst vet of cursief maken of de tekst onderstrepen.
+* **Lijsten**: Lijsten met opsommingstekens of nummers maken en de inspringing instellen.
+* **Hyperlink**: Maak koppelingen.
+* **Ontkoppelen**: Hyperlink verwijderen.
+* **Volledig scherm**: Open de editor in de modus Volledig scherm.
+* **Sluiten**: Bewerken stoppen.
+* **Opslaan**: Wijzigingen opslaan.
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de [werkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) , wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen.
-
-![RTE-knop voor volledig scherm](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+Tik voor op tekst gebaseerde componenten op de knop ![Volledig scherm in de modus](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTE op de [werkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) om de teksteditor met tekstopmaak te openen en de rest van de pagina-inhoud te verbergen.
 
 In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties is afhankelijk van de configuratie. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u
 
 Extra opties voor teksteditors met tekstopmaak zijn:
 
-* **Anker**: Maak een anker in de tekst waarnaar u later kunt koppelen.
+* **Anker**: Maak een anker in de tekst waarnaar u later een koppeling kunt maken of een verwijzing kunt maken.
 * **Tekst links uitlijnen**
 * **Tekst centreren**
 * **Tekst rechts uitlijnen**
 
-Sluit de modus Volledig scherm door op het pictogram Minimaliseren te klikken.
+Klik op minimaliseren om de modus Volledig scherm te sluiten.
 
 ![Knop RTE minimaliseren](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->Het kopiëren van genestelde lijsten van Microsoft Word in RTE kan inconsistente resultaten geven en kan handaanpassing vereisen na het kleven van de tekst in RTE.
+>Het kopiëren van genestelde lijsten van Microsoft Word in RTE kan inconsistente resultaten geven. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
