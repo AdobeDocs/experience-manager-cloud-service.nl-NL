@@ -2,7 +2,7 @@
 title: Navigatie
 description: Navigatie - Cloud Service
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe
    ![](assets/sys-admin4.png)
 
 1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar de **beheerconsole** vanwaar u toegang hebt tot de auteurinstantie van de omgeving.
+
+   ![](assets/sys-admin-2.png)
 
 ## Voor bestaande AMS-klanten {#existing-aem}
 
