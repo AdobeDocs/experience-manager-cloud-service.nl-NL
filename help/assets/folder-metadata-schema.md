@@ -3,12 +3,15 @@ title: Metagegevensschema van map
 description: Leer hoe u een metagegevensschema voor middelenmappen maakt in AEM Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 7%
 
 ---
 
 
-# Metagegevensschema van map {#folder-metadata-schema}
+# Folder Metadata Schema {#folder-metadata-schema}
 
 Met Adobe Experience Manager (AEM)-middelen kunt u metagegevensschema&#39;s voor middelenmappen maken, waarmee de lay-out en de metagegevens worden gedefinieerd die worden weergegeven in pagina&#39;s met eigenschappen van mappen.
 
@@ -16,9 +19,9 @@ Met Adobe Experience Manager (AEM)-middelen kunt u metagegevensschema&#39;s voor
 
 Met de editor voor Mapmetagegevensschemaformulieren kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]** van map.
-1. Tik op of klik op **[!UICONTROL Maken]** op de pagina Metagegevensschema-formulierformulieren.
-1. Geef een naam voor het formulier op en tik op of klik op **[!UICONTROL Maken]**. De nieuwe schemavorm wordt vermeld op de pagina van de Vormen van het Schema.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. Tik/klik op de pagina Metagegevensschema-formulierbestanden van de map **[!UICONTROL Create]**.
+1. Geef een naam op voor het formulier en tik/klik **[!UICONTROL Create]**. De nieuwe schemavorm wordt vermeld op de pagina van de Vormen van het Schema.
 
 ## Formulieren met metagegevens van mappen bewerken {#edit-folder-metadata-schema-forms}
 
@@ -29,30 +32,30 @@ U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken, dat h
 
 U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemaformulier.
 
-1. Selecteer op de pagina Schema-formulieren het formulier dat u hebt gemaakt en tik op het pictogram **[!UICONTROL Bewerken]** of klik op de werkbalk.
-1. Tik op het pictogram **[!UICONTROL +]** op de pagina van de Editor van het metagegevensschema van de map of klik op dit pictogram om een tabblad aan het formulier toe te voegen. Als u de naam van het tabblad wilt wijzigen, tikt u op de standaardnaam of klikt u erop en geeft u de nieuwe naam op onder **[!UICONTROL Instellingen]**.
+1. Selecteer op de pagina Schema-formulieren het formulier dat u hebt gemaakt en tik op het pictogram of klik op het **[!UICONTROL Edit]** pictogram op de werkbalk.
+1. Tik op het pictogram of klik op het pictogram in de pagina Editor van het metagegevensschema van de map om een tabblad aan het formulier toe te voegen. **[!UICONTROL +]** Als u de naam van het tabblad wilt wijzigen, tikt u op de standaardnaam of klikt u erop en geeft u de nieuwe naam op onder **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Tik op het pictogram **[!UICONTROL +]** of klik op het pictogram om meer tabbladen toe te voegen. Tik/klik op **[!UICONTROL X]** om een tab te verwijderen.
+   Tik op het **[!UICONTROL +]** pictogram of klik op het pictogram om meer tabbladen toe te voegen. Tik/klik **[!UICONTROL X]** om een tabblad te verwijderen.
 
-1. Voeg op het actieve tabblad een of meer componenten toe vanaf het tabblad **[!UICONTROL Formulier]** samenstellen.
+1. Voeg op het actieve tabblad een of meer componenten toe vanaf het **[!UICONTROL Build Form]** tabblad.
 
    ![adding_components](assets/adding_components.png)
 
    Als u meerdere tabbladen maakt, tikt of klikt u op een bepaald tabblad om componenten toe te voegen.
 
-1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het tabblad **[!UICONTROL Instellingen]** .
+1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het **[!UICONTROL Settings]** tabblad.
 
-   Verwijder zo nodig een component van het tabblad **[!UICONTROL Instellingen]** .
+   Verwijder indien nodig een component van het **[!UICONTROL Settings]** tabblad.
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Tik/klik op **[!UICONTROL Opslaan]** op de werkbalk om de wijzigingen op te slaan.
+1. Tik/klik op **[!UICONTROL Save]** de werkbalk om de wijzigingen op te slaan.
 
 ### Componenten om formulieren te maken {#components-to-build-forms}
 
-Het tabblad **[!UICONTROL Formulier]** samenstellen bevat formulieritems die u in het metagegevensschema van uw map gebruikt. Op het tabblad **[!UICONTROL Instellingen]** worden de kenmerken weergegeven voor elk item dat u selecteert op het tabblad **[!UICONTROL Formulier]** samenstellen. Hier volgt een lijst met formulieritems die beschikbaar zijn op het tabblad **[!UICONTROL Formulier]** samenstellen:
+Op het **[!UICONTROL Build Form]** tabblad vindt u een lijst met formulieritems die u in het metagegevensschema van uw map gebruikt. Het **[!UICONTROL Settings]** lusje toont de attributen voor elk punt dat u op het **[!UICONTROL Build Form]** lusje selecteert. Hier volgt een lijst met formulieritems die beschikbaar zijn op het **[!UICONTROL Build Form]** tabblad:
 
 <table>
  <tbody>
@@ -73,7 +76,7 @@ Het tabblad **[!UICONTROL Formulier]** samenstellen bevat formulieritems die u i
    <td><p> Voeg een teksteigenschap voor meerdere waarden toe. Deze wordt opgeslagen als een tekenreeks-array.</p> </td>
   </tr>
   <tr>
-   <td><p> Getal</p> </td>
+   <td><p>Getal</p> </td>
    <td><p> Voeg een getalcomponent toe.</p> </td>
   </tr>
   <tr>
@@ -97,29 +100,29 @@ Het tabblad **[!UICONTROL Formulier]** samenstellen bevat formulieritems die u i
 
 ### Formulieritems bewerken {#editing-form-items}
 
-Als u de eigenschappen van formulieritems wilt bewerken, tikt u op de component of klikt u op de component en bewerkt u alle eigenschappen of een subset van de volgende eigenschappen op het tabblad **[!UICONTROL Instellingen]** .
+Als u de eigenschappen van formulieritems wilt bewerken, tikt u op de component of klikt u op de component en bewerkt u alle eigenschappen of een subset van de volgende eigenschappen op het **[!UICONTROL Settings]** tabblad.
 
-**[!UICONTROL Veldlabel]**: De naam van de eigenschap metadata die wordt weergegeven op de eigenschappenpagina voor de map.
+**[!UICONTROL Field Label]**: De naam van de eigenschap metadata die wordt weergegeven op de eigenschappenpagina voor de map.
 
-**[!UICONTROL Toewijzen aan eigenschap]**: This property specifies the relative path of the folder node in the CRX repository where it is saved. Het begint met &quot;**./**&quot;. Dit geeft aan dat het pad zich onder het knooppunt van de map bevindt.
+**[!UICONTROL Map to Property]**: This property specifies the relative path of the folder node in the CRX repository where it is saved. Het begint met &quot;**./**&quot;. Dit geeft aan dat het pad zich onder het knooppunt van de map bevindt.
 
 Hier volgen de geldige waarden voor deze eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metagegevensknooppunt van de map opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: Geeft de JCR-eigenschap op het knooppunt van de map weer. Als u deze eigenschappen configureert in CRXDE, raadt Adobe u aan ze te markeren als Uitschakelen, omdat ze zijn beveiligd. Anders treedt de fout &#39; `Asset(s) failed to modify`&#39; op wanneer u de eigenschappen van het element opslaat.
+* `./jcr:created`: Hiermee slaat u de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, wordt u aangeraden deze als [!UICONTROL Disable Edit]eigenschappen te markeren.
 
 Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component correct wordt weergegeven in het schema voor metagegevens.
 
-**[!UICONTROL JSON-pad]**: Gebruik deze optie om het pad van het JSON-bestand op te geven waarin u sleutelwaardeparen voor opties opgeeft.
+**[!UICONTROL JSON Path]**: Gebruik deze optie om het pad van het JSON-bestand op te geven waarin u sleutelwaardeparen voor opties opgeeft.
 
-**[!UICONTROL Tijdelijke aanduiding]**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
+**[!UICONTROL Placeholder]**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
 
-**[!UICONTROL Keuzen]**: Gebruik deze eigenschap om keuzen in een lijst op te geven.
+**[!UICONTROL Choices]**: Gebruik deze eigenschap om keuzen in een lijst op te geven.
 
-**[!UICONTROL Omschrijving]**: Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
+**[!UICONTROL Description]**: Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
 
-**[!UICONTROL Klasse]**: Objectklasse waaraan de eigenschap is gekoppeld.
+**[!UICONTROL Class]**: Objectklasse waaraan de eigenschap is gekoppeld.
 
 ## Formulieren met metagegevens van mappen verwijderen {#delete-folder-metadata-schema-forms}
 
@@ -135,37 +138,37 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
 ### Wijs aan een schema van de pagina van het Schema van Meta-gegevens van de Omslag toe {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]**> **[!UICONTROL Metagegevensschema&#39;s]** van map.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer op de pagina Formulieren schema met metagegevens van map het schema dat u op een map wilt toepassen.
-1. Tik op de werkbalk of klik op **[!UICONTROL Toepassen op map(pen)]**.
+1. From the toolbar, tap/click **[!UICONTROL Apply to Folder(s)]**.
 
-1. Selecteer de map waarop u het schema wilt toepassen en klik op **[!UICONTROL Toepassen]**. Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Tik/klik op **[!UICONTROL Overschrijven]**.
+1. Selecteer de map waarop u het schema wilt toepassen en klik/tik op **[!UICONTROL Apply]**. Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Tik of klik op **[!UICONTROL Overwrite]**.
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 
    ![folder_properties](assets/folder_properties.png)
 
-   Tik op het tabblad Metagegevens van **[!UICONTROL map of klik op het tabblad Metagegevens]** van de map om de velden met metagegevens van de map weer te geven.
+   Tik of klik op het tabblad **[!UICONTROL Folder Metadata]** om de velden met metadata van de map weer te geven.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
 ### Een schema toewijzen bij het maken van een map {#assign-a-schema-when-creating-a-folder}
 
-U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een omslag. Als het systeem ten minste één schema voor metagegevens van mappen bevat, wordt een extra lijst weergegeven in het dialoogvenster Map **** maken. U kunt het gewenste schema selecteren. Standaard is geen schema geselecteerd.
+U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een omslag. Als het systeem minstens één schema van omslagmeta-gegevens bevat, wordt een extra lijst getoond in de **[!UICONTROL Create Folder]** dialoog. U kunt het gewenste schema selecteren. Standaard is geen schema geselecteerd.
 
-1. Tik in de gebruikersinterface van AEM Assets op **[!UICONTROL Maken]** of klik op de werkbalk.
+1. Tik in de gebruikersinterface van AEM Assets op de werkbalk of klik erop **[!UICONTROL Create]** .
 1. Geef een titel en naam voor de map op.
-1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Maken]** of klik op Maken.
+1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens of klik op **[!UICONTROL Create]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
-1. Tik op het tabblad Metagegevens van **[!UICONTROL map of klik op het tabblad Metagegevens]** van de map om de velden met metagegevens van de map weer te geven.
+1. Tik of klik op het tabblad **[!UICONTROL Folder Metadata]** om de velden met metadata van de map weer te geven.
 
 ## Het schema voor metagegevens van de map gebruiken {#use-the-folder-metadata-schema}
 
-Open de eigenschappen voor een omslag die met een schema van omslagmeta-gegevens wordt gevormd. Het tabblad Metagegevens **[!UICONTROL van]** map wordt weergegeven op de pagina met eigenschappen van de map. Selecteer dit tabblad om het schema van de mapmetagegevens weer te geven.
+Open de eigenschappen voor een map die met een mapmetadataschema is geconfigureerd. Er wordt een tabblad **[!UICONTROL Folder Metadata]** weergegeven op de pagina met mapeigenschappen. Selecteer dit tabblad om het formulier van het mapmetadataschema weer te geven.
 
-Voer waarden voor metagegevens in de verschillende velden in en tik op **[!UICONTROL Opslaan]** of klik op Opslaan om de waarden op te slaan. De waarden die u opgeeft, worden opgeslagen in het mapknooppunt in de CRX-opslagruimte.
+Voer waarden voor metagegevens in de verschillende velden in en tik/klik **[!UICONTROL Save]** om de waarden op te slaan. De waarden die u opgeeft, worden opgeslagen in het mapknooppunt in de CRX-opslagruimte.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
