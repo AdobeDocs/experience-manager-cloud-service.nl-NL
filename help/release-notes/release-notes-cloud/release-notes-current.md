@@ -76,7 +76,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Mana
 
 * Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** -badge die wordt weergegeven op de programmacode op de landingspagina en naast de programmanaam op de pagina **Program Overview** .
 
-* Een gebruiker met de rol SysAdmin heeft nu met één klik toegang tot de locatie in Admin Console vanwaar gebruikersrollen of toestemmingen aan de Manager van de Wolk kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
+* Een gebruiker met de rol SysAdmin heeft nu met één muisklik toegang tot de locatie in Admin Console vanwaar gebruikersrollen of machtigingen voor Cloud Manager kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
 
    Raadpleeg [SysAdmin-taken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie.
 
