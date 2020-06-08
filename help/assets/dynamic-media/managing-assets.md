@@ -3,11 +3,14 @@ title: Dynamische media-elementen beheren
 description: Leer hoe u met Dynamic Media-middelen werkt
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 13%
 
 ---
 
 
-# Dynamische media-elementen beheren {#managing-assets}
+# About managing Dynamic Media assets {#managing-assets}
 
 Het beheren van dynamische media elementen-beelden, video, en interactieve activa-nadat zij worden geupload-impliceert vele taken met inbegrip van het voorvertonen, het downloaden, of het publiceren van hen.
 
@@ -17,8 +20,8 @@ Algemene informatie over het beheer van middelen vindt u in Elementen [beheren m
 
 De volgende onderwerpen beschrijven wat u moet doen om Dynamische activa van Media te beheren:
 
-* [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Dynamische media-elementen voorvertonen](previewing-assets.md)
+* [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
 * [Dynamische media-elementen publiceren](publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](working-with-selectors.md)
 
