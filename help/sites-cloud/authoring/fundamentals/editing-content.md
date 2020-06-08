@@ -1,13 +1,16 @@
 ---
-title: Pagina-inhoud bewerken
+title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 6%
 
 ---
 
 
-# Pagina-inhoud bewerken{#editing-page-content}
+# Paginacontent bewerken{#editing-page-content}
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
@@ -142,13 +145,13 @@ U kunt een nieuwe component toevoegen door de componenten van de **Belemmering h
 1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
-   * Selecteer de optie Component **** invoegen (+) op de werkbalk van een bestaande component of selecteer de component **slepen hier** .
+   * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
 
       ![Een component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * Als u zich op een bureaubladapparaat bevindt, kunt u hier **dubbelklikken op de componenten** Slepen.
 
-   * Het dialoogvenster Nieuwe component **** invoegen wordt geopend, zodat u de gewenste component kunt selecteren:
+   * The **Insert New Component** dialog will open to allow you to select your required component:
 
       ![Dialoogvenster Nieuwe component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -268,7 +271,7 @@ Er zijn twee methoden om inhoud toe te voegen en/of te bewerken in componenten:
 
 ### Dialoogvenster Component Edit {#component-edit-dialog}
 
-U kunt een component openen om de inhoud te bewerken met het pictogram [Bewerken (potlood) op de werkbalk](#component-toolbar)van de component.
+U kunt een component openen om de content te bewerken met het pictogram [Bewerken (potlood) van de werkbalk van de component](#component-toolbar).
 
 De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige componenten zijn [alle handelingen alleen beschikbaar in de modus](#edit-content-full-screen-mode)Volledig scherm. Bijvoorbeeld:
 
@@ -288,7 +291,7 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * Afbeeldingscomponent - volledig scherm
 
-   [Door de modus](#edit-content-full-screen-mode) Volledig scherm in te voeren voor de afbeeldingscomponent, kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart** starten en Zoomen **herstellen**. Bovendien kunt u op volledig scherm voorinstellingen voor uitsnijden selecteren.
+   [Door de volledige-schermmodus te openen](#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
    ![De modus Volledig scherm van de component Image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -329,7 +332,7 @@ Een alineacomponent verplaatsen:
 
 ## Componentindeling bewerken {#edit-component-layout}
 
-In plaats van herhaaldelijk over te schakelen van bewerkingsmodus naar [lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
+In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
 1. Als u in de modus **Bewerken** van de siteconsole een component selecteert, wordt de werkbalk van de component zichtbaar.
 
@@ -337,7 +340,7 @@ In plaats van herhaaldelijk over te schakelen van bewerkingsmodus naar [lay-outm
 
    Klik of tik op de actie **Lay-out** om de lay-out van de component aan te passen.
 
-   ![De knop Lay-out van de componentwerkbalk](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![De knop Lay-out van de werkbalk van de component](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. Nadat de handeling Lay-out is geselecteerd:
 
@@ -385,7 +388,7 @@ Bijvoorbeeld:
 
 ## De paginasjabloon bewerken {#editing-the-page-template}
 
-U kunt eenvoudig overschakelen naar de [sjablooneditor](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) door Sjabloon **** bewerken te selecteren in het menu [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)Pagina-informatie.
+U kunt eenvoudig overschakelen naar de [sjablooneditor](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) door **Sjabloon bewerken** te selecteren in het menu [Pagina-informatie](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
 
 U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pagina selecteert in de [kolomweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) of de [lijstweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
@@ -454,7 +457,7 @@ Een pagina kan worden vergrendeld vanuit:
 * **Pagina-editor**
 
    1. Selecteer het pictogram **Pagina-informatie** om het menu te openen.
-   1. Selecteer de optie Pagina **** vergrendelen.
+   1. Select the **Lock Page** option.
 
 Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt en wanneer u een vergrendelingssymbool bewerkt, wordt deze weergegeven op de werkbalk.
 
@@ -473,7 +476,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 Het ontgrendelen van een pagina lijkt erg op het [vergrendelen van de pagina](#locking-a-page). Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
 
-In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de siteconsole wordt vervangen door een **pictogram Ontgrendelen** .
+In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de Sites-console wordt vervangen door een pictogram **Ontgrendelen**.
 
 ![Knop Ontgrendelen](/help/sites-cloud/authoring/assets/unlock.png)
 
