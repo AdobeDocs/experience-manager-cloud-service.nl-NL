@@ -3,6 +3,9 @@ title: Werken met taken
 description: De taken vertegenwoordigen punten van werk dat op inhoud moet worden gedaan en in projecten worden gebruikt om het niveau van volledigheid van huidige taken te bepalen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 11%
 
 ---
 
@@ -17,9 +20,9 @@ De taken worden ook gebruikt in projecten om het niveau van volledigheid van hui
 
 U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een project te bekijken dat door de tegel van **Taken** wordt vertegenwoordigd. De voortgang van het project kan worden bepaald door:
 
-* **** Taaktegel: Een algemene vooruitgang van het project wordt getoond in Taaktegel beschikbaar op de pagina van de projectdetails.
+* **Taaktegel:** Een algemene vooruitgang van het project wordt getoond in Taaktegel op de pagina met projectdetails.
 
-* **** Taaklijst: Wanneer u op de taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken in verband met het project.
+* **Taaklijst:** Wanneer u op de Taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
 
 Zowel taken voor de lijstwerkstroom als taken die u rechtstreeks in de tegel **Taken** maakt.
 
@@ -61,7 +64,7 @@ U kunt nieuwe taken aan projecten toevoegen. Deze taken verschijnen dan in de te
 
 Een taak toevoegen:
 
-1. Tik of klik in het project in de tegel **Taken** op het pictogram +. Het venster Taak **** toevoegen wordt geopend.
+1. Tik of klik in het project in de tegel **Taken** op het +-pictogram. Het venster **Taak toevoegen** wordt geopend.
 1. Voer informatie in over de taak. De titel van de taak en de groep waaraan deze is toegewezen, zijn verplicht. Aanvullende informatie zoals het inhoudspad, de beschrijving, de taakprioriteit en de vervaldatum zijn optioneel. Daarnaast kunt u het tabblad **Geavanceerd** selecteren en de naam van de taak invoeren. Hiermee geeft u de URL een naam.
 
    ![Een taak toevoegen](/help/sites-cloud/authoring/assets/projects-add-task.png)
