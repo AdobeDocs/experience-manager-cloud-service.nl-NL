@@ -1,13 +1,16 @@
 ---
-title: Een AEM-aansluiting implementeren
-description: Een AEM-aansluiting implementeren
+title: Een AEM-connector implementeren
+description: Een AEM-connector implementeren
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 7%
 
 ---
 
 
-Een AEM-aansluiting implementeren
+Een AEM-connector implementeren
 =============================
 
 Hieronder vindt u nuttige verwijzingen voor het bouwen van [AEM-connectors](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) en deze dienen te worden gelezen in combinatie met richtlijnen voor het [verzenden](submit.md) en [onderhouden](maintain.md) van connectors.
@@ -45,7 +48,7 @@ Naast de bovenstaande statische documentatie bieden Adobe en de AEM-community re
 
 * Het [AEM Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) van de Gemeenschap van Adobe is een actieve plaats waar uw gelijken vragen stellen en antwoorden op vragen
 * Voor bepaalde partnerniveaus zijn aanvullende technische bronnen van Adobe beschikbaar. Meer informatie over het [Adobe Exchange-programma](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
-* Als uw organisatie implementatie hulp zou willen, overweeg het team van de [Professionele Diensten](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) van Adobe of zie de Vinder [van de Partner van de](https://solutionpartners.adobe.com/home/partnerFinder.html) Oplossing voor een lijst van partners van Adobe over de hele wereld
+* Als uw organisatie implementatiehulp nodig heeft, kunt u contact opnemen met het [Professionele services-team](http://www.adobe.com/nl/marketing-cloud/service-support/professional-consulting-training.html) van Adobe of [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) raadplegen voor een lijst van partners van Adobe over de hele wereld
 
 Pakketstructuurregels
 -----------------------
