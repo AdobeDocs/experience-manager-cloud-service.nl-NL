@@ -1,8 +1,11 @@
 ---
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 100%
 
 ---
 
