@@ -1,13 +1,16 @@
 ---
-title: Starten
+title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 6%
 
 ---
 
 
-# Starten {#launches}
+# Lanceringen {#launches}
 
 Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release.
 
@@ -27,9 +30,9 @@ Launches kunnen ook:
 
 In deze sectie wordt beschreven hoe u startpagina&#39;s kunt maken, bewerken en promoten (en zo nodig [verwijderen](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) vanuit de Sites-console of [de Launches-console](#the-launches-console):
 
-* [Starten maken](/help/sites-cloud/authoring/launches/creating.md)
-* [Starten bewerken](/help/sites-cloud/authoring/launches/editing.md)
-* [Starten promoten](/help/sites-cloud/authoring/launches/promoting.md)
+* [Lanceringen maken](/help/sites-cloud/authoring/launches/creating.md)
+* [Lanceringen bewerken](/help/sites-cloud/authoring/launches/editing.md)
+* [Lanceringen promoten](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Starten - de volgorde van gebeurtenissen {#launches-the-order-of-events}
 
@@ -38,23 +41,23 @@ Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikk
 Met Launches kunt u:
 
 * Een kopie van de bronpagina&#39;s maken:
-   * Het exemplaar is uw lancering.
+   * De kopie is uw lancering.
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
    ![Volgorde van de lanceringen](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * De startconfiguratie bewerken:
    * Voeg pagina&#39;s en/of vertakkingen toe aan/van de lancering of verwijder deze.
-   * Starteigenschappen bewerken; zoals **Titel**, **Startdatum**, **Productie Klaar** vlag.
+   * Bewerk starteigenschappen, zoals markeringen voor **Titel**, **Startdatum**, **Geschikt voor productie**.
 * U kunt de inhoud handmatig of automatisch publiceren:
    * Handmatig:
       * Bevestig uw lanceringsinhoud terug naar het **Doel** (bronpagina&#39;s) wanneer het klaar is om te worden gepubliceerd.
       * Publiceer de inhoud van de bronpagina&#39;s (na het promoten van de achterpagina&#39;s).
       * Alle pagina&#39;s of alleen gewijzigde pagina&#39;s promoten.
    * Automatisch - dit omvat het volgende:
-      * Het veld **Launch**(**Live**) **date** : dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
+      * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
       * De markering **Production Ready** : dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
-      * Als de markering **Production Ready** is ingesteld, wordt het starten automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **startdatum**(**Live**) **datum**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.\
+      * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
          Als er geen datum is ingesteld, heeft de markering geen effect.
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
