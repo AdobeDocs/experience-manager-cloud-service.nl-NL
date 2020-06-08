@@ -1,19 +1,22 @@
 ---
-title: Sets draaien
+title: Spin Sets
 description: Leer hoe u met centrifuges werkt in Dynamic Media
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1742'
+ht-degree: 13%
 
 ---
 
 
-# Sets draaien{#spin-sets}
+# Spin Sets{#spin-sets}
 
-Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
+Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
 
 Een centrifugeerset simuleert een kijkervaring van 360 graden. Dynamische media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
 
-De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UICONTROL SPINSET]**. Als de Spin-set wordt gepubliceerd, staat bovendien de publicatiedatum, die wordt aangegeven door het pictogram **[!UICONTROL Wereld]** , op de banner samen met de laatste wijzigingsdatum, die wordt aangegeven door het pictogram **[!UICONTROL Potlood]** .
+Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -31,19 +34,19 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
 1. [Spin-sets maken.](#creating-spin-sets)
 
-   Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Maken > Spin-set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
+   Als u een centrifugeset wilt maken, selecteert u de set **[!UICONTROL Create > Spin Set]** en geeft u een naam op. Kies vervolgens de elementen en kies de volgorde waarin de afbeeldingen worden weergegeven.
 
-   Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
    >[!NOTE]
    >
-   >U kunt ook automatisch spin-sets maken via voorinstellingen voor [batchsets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **** Belangrijk:De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen.
+   >U kunt ook automatisch spinsets maken via [voorinstellingen voor batchsets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Belangrijk:** Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
 
 1. Stel, indien nodig, [voorinstellingen](/help/assets/dynamic-media/managing-viewer-presets.md)voor de draaiende viewer in.
 
-   Beheerders kunnen voorinstellingen voor de voorinstelling van een draaiset-viewer maken of wijzigen. Als u de centrifugeset wilt weergeven met een viewervoorinstelling, selecteert u de centrifugeset en selecteert u **Viewers** in de vervolgkeuzelijst voor de linkertrack.
+   Beheerders kunnen viewervoorinstellingen voor spinsets maken of wijzigen. Als u uw spinset wilt weergeven met een viewervoorinstelling, selecteert u de spinset en selecteert u **Viewers** in het vervolgkeuzemenu voor het linkerspoor.
 
-   Zie **[!UICONTROL Gereedschappen > Middelen > Voorinstellingen]** viewer om voorinstellingen voor viewers te maken of te bewerken.
+   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** viewervoorinstellingen maken of bewerken.
 
    Zie Voorinstellingen voor viewers [toevoegen en bewerken.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -51,7 +54,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
 1. [Voorvertoning van centrifuges.](/help/assets/dynamic-media/previewing-assets.md)
 
-   Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** , beschikbaar in het keuzemenu voor de linkertrack.
+   Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende kijkers van het **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
 1. [Spin-sets publiceren.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
@@ -61,9 +64,9 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    AEM Assets leidt tot URL vraag naar de Reeksen van de Rotatie en activeert hen nadat u de spin reeksen publiceert. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
-   Selecteer eerst de centrifugeset en vervolgens **[!UICONTROL Viewers]** in het vervolgkeuzemenu voor de linkertrack.
+   Selecteer eerst de spinset en selecteer vervolgens **[!UICONTROL Viewers]** in het vervolgkeuzemenu voor het linkerspoor.
 
-   Zie Een centrifugeerset [koppelen aan een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en de video- of afbeeldingsviewer [](/help/assets/dynamic-media/embed-code.md)insluiten.
+   Zie [Een spinset koppelen aan een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/dynamic-media/embed-code.md).
 
 Indien nodig kunt u [centrifuges](#editing-spin-sets)bewerken. Bovendien kunt u de eigenschappen [van de](/help/assets/manage-digital-assets.md#editing-properties)Spin-set weergeven en wijzigen.
 
@@ -89,7 +92,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 >[!NOTE]
 >
->U kunt ook automatisch spin-sets maken via voorinstellingen voor [batchsets](/help/assets/dynamic-media/config-dm.md). **** Belangrijk:De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen.
+>U kunt ook automatisch spinsets maken via [voorinstellingen voor batchsets](/help/assets/dynamic-media/config-dm.md). **Belangrijk:** Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
 >
 >Zie &quot;Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges te genereren&quot; in Dynamische media [](/help/assets/dynamic-media/config-dm.md)configureren.
 
@@ -99,28 +102,28 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 **Draaisets maken**
 
-1. Navigeer in Elementen naar de plaats waar u een centrifugeset wilt maken, klik op **[!UICONTROL Maken]** en selecteer **[!UICONTROL Spin-set]**. U kunt de set ook maken vanuit een map die uw elementen bevat. De Editor voor de centrifugeset wordt weergegeven.
+1. Ga in Assets naar de plaats waar u een spinset wilt maken, klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Spin Set]**. U kunt de set ook maken vanuit een map die uw assets bevat. De Editor van spinset wordt weergegeven.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
-1. Voer in het veld **[!UICONTROL Titel]** in de Editor van de centrifugeset een naam in voor de centrifugeset. De naam wordt weergegeven in de banner over de centrifugeset. Voer eventueel een beschrijving in.
+1. Voer in het **[!UICONTROL Title]** veld in de Editor van de centrifugeset een naam in voor de centrifugeset. De naam wordt weergegeven in de banner over de centrifugeset. Voer eventueel een beschrijving in.
 
    ![6_5_spinset-spinseteditortitle](assets/6_5_spinset-spinseteditortitle.png)
 
    >[!NOTE]
    >
-   >Wanneer u de centrifugeset maakt, kunt u de miniatuur van de centrifugeset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de elementen in de centrifugeset. Als u een miniatuur wilt selecteren, klikt u op de miniatuur **** Wijzigen en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens besluit dat u een miniatuur van de centrifugeset wilt genereren, selecteert u **[!UICONTROL Schakelen naar automatische miniatuur]**.
+   >Wanneer u de centrifugeset maakt, kunt u de miniatuur van de centrifugeset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de elementen in de centrifugeset. Als u een miniatuur wilt selecteren, klikt u op een willekeurige afbeelding **[!UICONTROL Change thumbnail]** en selecteert u deze (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik in de linkerbovenhoek van de pagina van de Editor voor de centrifugeset op Element **[!UICONTROL toevoegen]**.
+   * Tik in de linkerbovenhoek van de pagina van de Editor voor de speldenset op **[!UICONTROL Add Asset]**.
 
-   * Tik in het midden van de pagina van de Editor voor de centrifugeset op **[!UICONTROL Tikken om de Asset Selector]** te openen.
-   Tik om de elementen te selecteren die u in de centrifugeset wilt opnemen. Geselecteerde elementen hebben een vinkje erboven. Tik op **[!UICONTROL Selecteren]** in de rechterbovenhoek van de pagina als u klaar bent.
+   * Tik in het midden van de pagina van de Editor voor de centrifugeset op **[!UICONTROL Tap to open Asset Selector]**.
+   Tik om de elementen te selecteren die u in de centrifugeset wilt opnemen. Geselecteerde assets hebben een vinkje. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   Met de Kiezer van Activa, kunt u naar activa zoeken door in een sleutelwoord te typen en **[!UICONTROL Terugkeer** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door op het pictogram Weergave te tikken en **[!UICONTROL Kolomweergave]**, **[!UICONTROL Kaartweergave]** of **[!UICONTROL Lijstweergave]** te selecteren.
+   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Terug]** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
-   Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -134,11 +137,11 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op Element **** verwijderen.
+   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Asset]**.
 
-   * Tik op **[!UICONTROL Voorinstelling]** en selecteer vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
+   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
-1. Click **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Klik op **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Spin-sets weergeven {#viewing-spin-sets}
 
@@ -150,15 +153,15 @@ U kunt spin-sets maken in de gebruikersinterface of automatisch met behulp van v
 
 **Draaisets weergeven**
 
-1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element is ingesteld als lid van (onder **[!UICONTROL Lid van Sets]**). Klik op de naam van de set om de volledige set weer te geven.
+1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Klik op de naam van de set om de volledige set weer te geven.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. Van een lidafbeelding van om het even welke reeks. Selecteer het menu **[!UICONTROL Sets]** om de sets weer te geven waarvan het element lid is.
+1. Van een lidafbeelding van om het even welke set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. Vanuit het zoeken kunt u **[!UICONTROL Filters]** selecteren, vervolgens **[!UICONTROL Dynamische media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
+1. Vanuit de zoekopdracht kunt u **[!UICONTROL Filters]** selecteren, **[!UICONTROL Dynamic Media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
    De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde sets wordt de zoekopdracht uitgevoerd aan de hand van `Starts with` zoekcriteria die afwijken van de AEM-zoekopdracht die is gebaseerd op het gebruik van `Contains` zoekcriteria. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
 
@@ -178,25 +181,25 @@ U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges
 
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de muisaanwijzer boven een gecentreerd element en tik op **[!UICONTROL Bewerken]** (potloodpictogram).
-   * Houd de muisaanwijzer boven een gecentreerd element, tik op **[!UICONTROL Selecteren]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Bewerken]** op de werkbalk.
+   * Houd de muisaanwijzer boven een set met centrifuges en tik op **[!UICONTROL Edit]** (potloodpictogram).
+   * Houd de muisaanwijzer boven een in een centrifugeerset geplaatst element, tik op **[!UICONTROL Select]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Edit]** de werkbalk.
 
-   * Tik op een gecentreerd element en tik vervolgens op **[!UICONTROL Bewerken]** (potloodpictogram) op de werkbalk.
+   * Tik op een gecentreerd element en tik vervolgens op **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit om de centrifugeset te bewerken:
 
    * Als u de volgorde van afbeeldingen wilt wijzigen, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor herschikken om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, klikt u op de kolomkop.
-   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op Element **[!UICONTROL toevoegen]**. Navigeer naar een element, selecteer het en tik op **[!UICONTROL Selecteren]** in de rechterbovenhoek.
+   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u **[!UICONTROL Add Asset]** op. Navigeer naar een element, selecteer het en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek.
 Als u de afbeelding verwijdert die AEM voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
-   * Als u een element wilt verwijderen, selecteert u het en klikt of tikt u op Element **** verwijderen.
+   * Als u een element wilt verwijderen, selecteert u het en klikt of tikt u op **[!UICONTROL Delete Asset]**.
    * Tik op het pictogram Voorinstelling of klik op het pictogram Voorinstelling om een voorinstelling toe te passen.
-   * Als u een volledige centrifugeset wilt verwijderen, navigeert u naar de centrifugeset, selecteert u deze en selecteert u **[!UICONTROL Verwijderen]**
+   * Als u een volledige centrifugeset wilt verwijderen, navigeert u naar de centrifugeset, selecteert u deze en selecteert u **[!UICONTROL Delete]**
    >[!NOTE]
    >
-   >U kunt de afbeeldingen in een centrifugeset bewerken door naar de set te navigeren, op Leden **** instellen in de linkertrack te tikken en vervolgens op het potloodpictogram op een afzonderlijk element te tikken om het bewerkingsvenster te openen.
+   >You can edit the images in a Spin Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the Pencil icon on an individual asset to open the editing window.
 
-1. Klik op **[!UICONTROL Opslaan]** wanneer u klaar bent met bewerken.
+1. Klik **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
 ## Voorvertoning van centrifuges weergeven {#previewing-spin-sets}
 
