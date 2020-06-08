@@ -1,13 +1,16 @@
 ---
-title: Beheersactiviteiten
+title: Activiteiten beheren
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 18%
 
 ---
 
 
-# Beheersactiviteiten {#managing-activities}
+# Activiteiten beheren {#managing-activities}
 
 Met de activiteitenconsole kunt u de marketingactiviteiten [](/help/sites-cloud/authoring/personalization/overview.md#activities) van uw merken maken, organiseren en beheren:
 
@@ -35,13 +38,13 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 >
 >Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 >
->* Als de `xt_only` optie is ingeschakeld in de Adobe Target-agent (clientcode) die op de AEM-zijde wordt gebruikt om verbinding te maken met Adobe Target, kunt u **alleen** XT-activiteiten maken in AEM.
+>* Als de optie `xt_only` is ingeschakeld in de Adobe Target-tenant (clientcode) die op de AEM-zijde wordt gebruikt om verbinding te maken met Adobe Target, kunt u **alleen** XT-activiteiten maken in AEM.
    >
    >
-* Als de `xt_only` opties **niet** op de huurder van het Doel van Adobe (cliëntcode) worden toegelaten, dan kunt u **zowel** XT als A/B activiteiten in AEM tot stand brengen.
+* Als de optie `xt_only` **niet** is ingeschakeld op de Adobe Target-tenant (clientcode), kunt u **zowel** XT- als A/B-activiteiten in AEM maken.
 >
 >
-**** Aanvullende opmerking: De `xt_only` optie is een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kan alleen rechtstreeks worden gewijzigd in Adobe Target. U kunt deze optie niet in- of uitschakelen in AEM.
+**Aanvullende opmerking:** De optie `xt_only` is een instelling die wordt toegepast op een bepaalde doeltenant (clientcode) en kan alleen rechtstreeks worden gewijzigd in Adobe Target. U kunt deze optie niet in- of uitschakelen in AEM.
 
 >[!CAUTION]
 >
@@ -58,7 +61,7 @@ Maak een merk waarvoor u marketingactiviteiten wilt beheren.
 
 Wanneer u een merk creeert gebruikend de console van Activiteiten, verschijnt het ook in de console [van](/help/sites-cloud/authoring/personalization/offers.md) Aanbiedingen waar u aanbiedingen voor de ervaringen van uw activiteiten kunt tot stand brengen.
 
-1. Klik of tik op **Personalisatie** in de navigatieconsole. Klik of tik **Activiteiten**.
+1. In the Navigation console, click or tap **Personalization**. Klik of tik **Activiteiten**.
 
    ![Navigeren naar activiteiten](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
@@ -71,33 +74,33 @@ Wanneer u een merk creeert gebruikend de console van Activiteiten, verschijnt he
 
 Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspanningen op specifieke doelgroepen te concentreren. Wanneer u een activiteit creeert/uitgeeft, specificeert u de volgende informatie:
 
-* **** Naam: De naam van de activiteit.
-* **** Richtingsmotor: Of [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) of [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) als motor voor gerichte inhoud.
-* **** Selecteer een doelconfiguratie: (Alleen Adobe Target) De cloudconfiguratie die deze activiteit moet gebruiken om verbinding te maken met Adobe Target. Deze optie wordt alleen weergegeven als Adobe Target is geselecteerd voor Targeting Engine.
+* **Naam:** De naam van de activiteit.
+* **Targeting engine:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) of [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) als de engine voor gerichte content.
+* **Een doelconfiguratie selecteren:** (alleen voor Adobe Target) De cloudconfiguratie die deze activiteit moet gebruiken om verbinding te maken met Adobe Target. Deze optie wordt alleen weergegeven als Adobe Target is geselecteerd als doelengine.
 * **Type** activiteit: Type activiteit - A/B-test of ervaring gericht op
-* **** Doel: (Optioneel) Een beschrijving van de activiteit.
-* **** Ervaringen: Toewijzingen tussen publieksnamen en de marketingsegmenten waarop u zich richt.
-* **** Verkeerspercentages: Als de test A/B wordt geselecteerd, kunt u veranderen hoeveel verkeer (in percenten) naar elke ervaring gaat.
-* **** Duur: De periode waarin de activiteit wordt toegepast.
-* **** Prioriteit: De relatieve prioriteit van de activiteit. Wanneer de activiteiten inhoud voor de zelfde gebruikerssegmenten verstrekken, krijgt de activiteit van de hogere prioriteit belangrijkheid.
-* **** Metrisch doel: Als Adobe Target is geselecteerd als de doelengine, kunt u succeswaarden aan de activiteit toevoegen. Één succesmetrisch wordt vereist.
+* **Doelstelling:** (optioneel) Een beschrijving van de activiteit.
+* **Ervaringen:** Toewijzingen tussen doelgroepnamen en de marketingsegmenten waarop u zich richt.
+* **Verkeerspercentages:** Als A/B-test is geselecteerd, kunt u aanpassen hoeveel verkeer (in percenten) naar elke ervaring gaat.
+* **Duur:** De periode waarin de activiteit wordt toegepast.
+* **Prioriteit:** De relatieve prioriteit van de activiteit. Wanneer de activiteiten content voor dezelfde gebruikerssegmenten bieden, krijgt de activiteit met de hogere prioriteit voorrang.
+* **Metrische data van doel:** Als Adobe Target is geselecteerd als de doelengine, kunt u metrische data van successen aan de activiteit toevoegen. Eén metrische waarde van successen is vereist.
 
 >[!NOTE]
 >
->De nieuwe activiteiten van het Doel van Adobe moeten in de gerichte inhoudsredacteur, niet in de console van *Activiteiten* worden **** gecreeerd, aangezien de synchronisatie aan Adobe Target zal ontbreken.
+>De nieuwe Adobe Target-activiteiten moeten in de gerichte contenteditor worden *gemaakt*, en niet in de console **Activiteiten**, omdat de synchronisatie met Adobe Target dan mislukt.
 >
 >U kunt echter bestaande Adobe Target-activiteiten in de console bewerken.
 
 Een activiteit toevoegen:
 
-1. Klik of tik op het merk waarvoor u de activiteit maakt en klik op **Maken** of tik vervolgens op Activiteit **** maken. Selecteer bij het bewerken de activiteit in het scherm Hoofdgebied en klik op Activiteit **** bewerken of tikt erop.
+1. Klik of tik op het merk waarvoor u de activiteit maakt en klik of tik vervolgens op **Maken** en vervolgens op **Activiteit maken**. Selecteer bij het bewerken de activiteit in het scherm Mastergebied en klik of tik op **Activiteit bewerken**.
 1. Geef de volgende informatie op en klik of tik op **Volgende**:
    * Een naam voor de activiteit.
    * De doelengine die moet worden gebruikt. ContextHub (AEM) wordt geselecteerd door gebrek. Als u Adobe Target moet gebruiken, maakt u de activiteit in de beoogde inhoudseditor.
    * Als u Adobe Target hebt geselecteerd als de doelengine, selecteert of bewerkt u de cloudconfiguratie die u wilt gebruiken om verbinding te maken met Adobe Target. (Zorg ervoor dat u geen framework selecteert dat u hebt gemaakt voor uw cloudconfiguratie.)
    * (Optioneel) Het doel of een beschrijving van de activiteit.
    * Selecteer het type activiteit.
-1. Voeg een of meer ervaringen toe aan de activiteit. Klik of tik op Ervaring **** toevoegen.
+1. Voeg een of meer ervaringen toe aan de activiteit. Klik of tik op **Ervaring toevoegen**.
 1. Als u AEM-doelversie of Adobe Target-ervaring gebruikt voor:
    1. Klik of tik **Uitgezochte Publiek** en selecteer het segment dat uw ervaringsdoelstellingen.
    1. Klik of tik op **Ervaring** toevoegen, typ een naam en klik of tik op **OK**.
@@ -108,8 +111,8 @@ Als u Adobe Target A/B Testing gebruikt:
    1. Ga het percentage van verkeer in dat elke ervaring toont.
    1. Klik of tik op **Volgende**.
 1. Als u wilt opgeven wanneer de activiteit begint, selecteert u een van de volgende waarden in het keuzemenu **Start** :
-   * **** Indien geactiveerd: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **** Opgegeven datum en tijd: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **Indien geactiveerd:** De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
+   * **Opgegeven datum en tijd:** Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu Einde om een van de volgende waarden te selecteren:
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
@@ -153,7 +156,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 
 1. Klik of tik op **Activiteiten** in **Personalisatie** om naar de **Activiteiten** -console te navigeren.
 1. Klik of tik op het merk waarvoor u activiteiten wilt zien.
-1. Selecteer de activiteit en klik of tik Eigenschappen **van de** Mening en klik het lusje van **Rapporten** en selecteer de activiteit u prestaties voor wilt bekijken/het winnen ervaringen voor omzetten. Prestatiegegevens worden weergegeven.
+1. Selecteer de activiteit, klik of tik op **Weergave-eigenschappen**, klik op het tabblad **Rapporten** en selecteer de activiteit waarvoor u prestaties wilt bekijken of waarvoor u winnende ervaringen wilt converteren. Prestatiedata worden weergegeven.
 
    ![Prestaties van activiteiten controleren](/help/sites-cloud/authoring/assets/activities-performance.png)
 
@@ -162,7 +165,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
    Als u de winnaar omzet, gebeurt het volgende:
 
    * De huidige activiteit wordt uitgeschakeld
-   * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de winnende ervaring wordt onderdeel van de normale pagina **zonder** doeleinde.
+   * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de winnende ervaring wordt onderdeel van de normale pagina **zonder** doelframes.
    ![Winnaar omzetten](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
