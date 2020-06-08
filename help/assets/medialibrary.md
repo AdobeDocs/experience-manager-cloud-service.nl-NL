@@ -4,6 +4,9 @@ description: Veelgestelde vragen over AEM Assets en. AEM-mediabibliotheek, inclu
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 
 ## Een gedetailleerde lijst met functies die beschikbaar zijn in AEM Assets versus Media Library {#listoffeatures}
 
-**AEM-middelen**
+**AEM Assets**
 
 * Verzamelingen en lichtbak
 * Geavanceerde eigenschappen en beheer van metagegevens
@@ -77,9 +80,9 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 * Camera RAW-ondersteuning
 * Beheer en configuratie van zoekfactoren
 * Vooraf gebouwde DAM-workflows (bijvoorbeeld foto&#39;s)
-* Rapportage en analyse van bedrijfsmiddelen:Asset Insights
+* Rapportage en analyse van bedrijfsmiddelen: Asset Insights
 * 3D-beheer van bedrijfsmiddelen
-* Verbonden elementen
+* Gekoppelde assets
 * Brand Portal
 * Zelfbedieningstoegang
 * Bladeren, zoeken en downloaden
