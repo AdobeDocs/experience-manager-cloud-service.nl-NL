@@ -3,6 +3,9 @@ title: Deelnemen aan workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 ## Meldingen van beschikbare workflowacties {#notifications-of-available-workflow-actions}
 
-Wanneer u een tijdelijk onderdeel hebt toegewezen (bijvoorbeeld Inhoud **** goedkeuren), worden verschillende waarschuwingen en/of meldingen weergegeven:
+Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
 * De [meldingsindicator](/help/sites-cloud/authoring/getting-started/inbox.md) (werkbalk) wordt verhoogd:
 
