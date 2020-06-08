@@ -1,13 +1,16 @@
 ---
-title: Pagina grijs
+title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 0%
 
 ---
 
 
-# Pagina grijs {#page-diff}
+# Page Diff-optie {#page-diff}
 
 ## Inleiding {#introduction}
 
