@@ -280,7 +280,7 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 ## Runmodi {#runmodes}
 
-In bestaande AEM oplossingen, hebben de klanten de optie om instanties met willekeurige looppaswijzen in werking te stellen en de configuratie toe te passen OSGI of bundels te installeren OSGI op die specifieke instanties. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceert) en het milieu (dev, stadium, prod).
+In bestaande AEM oplossingen, hebben de klanten de optie om instanties met willekeurige looppaswijzen in werking te stellen en de configuratie toe te passen OSGI of bundels te installeren OSGI op die specifieke instanties. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceer) en het milieu (dev, stadium, prod).
 
 AEM als Cloud Service daarentegen is meer overtuigd over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
