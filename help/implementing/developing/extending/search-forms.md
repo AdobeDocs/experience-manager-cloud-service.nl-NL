@@ -3,6 +3,9 @@ title: Zoekformulieren configureren
 description: Zoekformulieren configureren voor Adobe Experience Manager als cloudservice.
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: tm+mt
+source-wordcount: '2030'
+ht-degree: 2%
 
 ---
 
