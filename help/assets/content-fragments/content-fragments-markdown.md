@@ -3,6 +3,9 @@ title: Markering
 description: Wanneer u ontwerpt, gebruikt de inhoudsfragmenteditor markeringssyntaxis, zodat u gemakkelijk inhoud kunt schrijven.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 4%
 
 ---
 
