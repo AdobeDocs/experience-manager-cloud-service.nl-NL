@@ -3,6 +3,9 @@ title: Sneltoetsen voor consoles
 description: Bespaar tijd bij het ontwerpen met deze sneltoetsen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
