@@ -4,6 +4,9 @@ description: Meer informatie over metagegevens van elementen in AEM Assets en ve
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 8%
 
 ---
 
@@ -20,12 +23,12 @@ Metagegevens bewerken:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer het element in de interface Elementen en klik op het pictogram **[!UICONTROL Weergave-eigenschappen]** of tik erop op de werkbalk.
-   * Selecteer in de elementminiatuur de snelle actie **[!UICONTROL Weergave-eigenschappen]** .
-   * Klik/tik op **[!UICONTROL Weergave-eigenschappen]** op de werkbalk op de elementpagina.
+   * Selecteer het element in de interface Elementen en klik op het **[!UICONTROL View Properties]** pictogram of tik op het pictogram op de werkbalk.
+   * Selecteer de **[!UICONTROL View Properties]** handeling Snel bij de elementminiatuur.
+   * Klik/tik op de werkbalk vanaf de elementpagina. **[!UICONTROL View Properties]**
    Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens zijn automatisch geëxtraheerd wanneer deze werden geüpload (opgenomen) naar AEM Assets.
 
-1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en klik, wanneer u klaar bent, op **[!UICONTROL Opslaan]** op de werkbalk om de wijzigingen op te slaan. Klik op **[!UICONTROL Sluiten]** /tik op Sluiten om terug te keren naar de webinterface Middelen.
+1. Bewerk desgewenst de metadata op de verschillende tabbladen en klik of tik wanneer u klaar bent op **[!UICONTROL Save]** op de werkbalk om de wijzigingen op te slaan. Klik of tik op **[!UICONTROL Close]** om terug te keren naar de webinterface voor assets.
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ Zie Formulieren [met metagegevensschema&#39;s](metadata-schemas.md#edit-metadata
 U kunt uw eigen naamruimten toevoegen in AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
 1. Ga naar de pagina van het knooptype beleid *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Klik of tik **[!UICONTROL Namespaces]** bij de bovenkant van de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
+1. Klik of tik **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
 
-1. Als u een naamruimte wilt toevoegen, klikt u of tikt u onderaan op **[!UICONTROL Nieuw]** .
-1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en klik of tik op **[!UICONTROL Opslaan]**.
+1. Als u een naamruimte wilt toevoegen, klikt of tikt u **[!UICONTROL New]** onderaan.
+1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en klik of tik **[!UICONTROL Save]**.
