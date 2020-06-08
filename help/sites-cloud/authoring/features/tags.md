@@ -3,6 +3,9 @@ title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +36,7 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in het gebied van **Markeringen/Trefwoorden** in te gaan.
 
-Als u vooraf gedefinieerde labels wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** het veld **Codes** en het venster **Codes** selecteren. Het tabblad **Standaardcodes** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorvoegsel is voor de taxonomie. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+Als u vooraf gedefinieerde tags wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** het veld **Tags** en het venster **Tags selecteren**. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![Meerdere tags selecteren](/help/sites-cloud/authoring/assets/tags-select.png)
 
