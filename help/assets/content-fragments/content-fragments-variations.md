@@ -1,13 +1,16 @@
 ---
-title: Variaties - Fragmentinhoud ontwerpen
+title: Variaties - Authoring van content voor fragmenten
 description: Met behulp van variaties kunt u inhoud voor het fragment ontwerpen en vervolgens variaties van die inhoud maken op basis van het doel (indien nodig).
 translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 15%
 
 ---
 
 
-# Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
+# Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
 [Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van inhoudsfragmenten, omdat u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s.
 
@@ -54,7 +57,7 @@ Bijvoorbeeld:
 
    ![eenvoudig fragment](assets/cfm-variations-01.png)
 
-* Een fragment bewerken met gestructureerde inhoud
+* Een fragment met gestructureerde inhoud bewerken
 
    Een gestructureerd fragment bevat diverse velden, van verschillende gegevenstypen, die zijn gedefinieerd in het inhoudsmodel. Voor velden met meerdere regels is de [schermvullende editor](#full-screen-editor) beschikbaar.
 
@@ -130,7 +133,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!CAUTION]
 >
->Als u **Onbewerkte tekst** selecteert, gaan opmaak, markeringen en/of elementen verloren die u hebt ingevoegd in **RTF** of **Markering**.
+>Als u **Tekst zonder opmaak** selecteert, gaan opmaak, markdown en/of assets die u hebt ingevoegd in **Tekst met opmaak** of **Markdown** verloren.
 
 ### Markering {#markdown}
 
@@ -154,11 +157,11 @@ U kunt de volledige-schermredacteur voor verdere [acties](#actions)ook openen.
 
 >[!CAUTION]
 >
->Als u tussen **RTF** en **Markering** schakelt, kunt u onverwachte gevolgen met de Aanhalingstekens van het Blok en de Blokken van de Code ervaren, aangezien deze twee formaten verschillen in hoe zij worden behandeld kunnen hebben.
+>Als u tussen **Tekst met opmaak** en **Markdown** schakelt, kunt u onverwachte effecten met Blokcitaten en Codeblokken ervaren, aangezien deze twee opmaakindelingen verschillen in hoe zij worden behandeld.
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
-Wanneer de volledige het schermredacteur open is, zal de actie de Statistieken **van de** Tekst een waaier van informatie over de tekst tonen.
+Wanneer de volledige-schermeditor open is, zal de actie **Tekststatistieken** allerlei informatie over de tekst tonen.
 
 Bijvoorbeeld:
 
@@ -256,7 +259,7 @@ Opmaak van het element (bijvoorbeeld de grootte) moet echter wel plaatsvinden in
 Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) toe te voegen aan het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
-2. Gebruik het pictogram Element **** invoegen om het zoekdialoogvenster te openen.
+2. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
 
    ![middelenpictogram invoegen](assets/cfm-variations-09.png)
 
@@ -266,12 +269,12 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
    * zoeken naar de middelen in DAM
    Selecteer het gewenste element door op de miniatuur te klikken.
 
-4. Gebruik **Selecteren** om het element op de huidige locatie toe te voegen aan het alineasysteem van het inhoudsfragment.
+4. Gebruik **Selecteren** om de asset op de huidige locatie toe te voegen aan het alineasysteem van het contentfragment.
 
    >[!CAUTION]
-   Als u na het toevoegen van een element de indeling wijzigt in:
-   * **Onbewerkte tekst**: het element wordt volledig uit het fragment verwijderd.
-   * **Markering**: het element is niet zichtbaar, maar blijft aanwezig wanneer u terugkeert naar **RTF**.
+   Als u na het toevoegen van een asset de indeling wijzigt in:
+   * **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
+   * **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
 
 
 ## Variaties beheren {#managing-variations}
@@ -285,8 +288,8 @@ Een nieuwe variatie maken:
 1. Open het fragment en controleer of het zijpaneel zichtbaar is.
 1. Selecteer **Variaties** in de pictogrambalk in het zijpaneel.
 1. Selecteer Variatie **maken**.
-1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe wijziging kunt opgeven.
-1. Selecteer **Toevoegen**. De **fragmentstramien** wordt gekopieerd naar de nieuwe variant, die nu is geopend voor [bewerking](#editing-a-variation).
+1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe variatie kunt opgeven.
+1. Selecteer **Toevoegen**. De **fragmentmaster** wordt gekopieerd naar de nieuwe variatie, die nu kan worden [bewerkt](#editing-a-variation).
 
    >[!NOTE]
    Wanneer u een nieuwe variant maakt, wordt deze altijd gekopieerd naar het **stramien** , niet naar de variant die momenteel is geopend.
@@ -304,7 +307,7 @@ U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
 Een bestaande variatie een andere naam geven:
 
-1. Open het fragment en selecteer **Variaties** in het zijpaneel.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecteer de gewenste variatie.
 1. Selecteer **Naam wijzigen** in het keuzemenu **Handelingen** .
 
@@ -319,7 +322,7 @@ Dit is alleen van invloed op de **titel** van de variatie.
 
 Een bestaande wijziging verwijderen:
 
-1. Open het fragment en selecteer **Variaties** in het zijpaneel.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecteer de gewenste variatie.
 1. Selecteer **Verwijderen** in het keuzemenu **Handelingen** .
 
@@ -335,10 +338,10 @@ U kunt **stramien** niet verwijderen.
 Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met stramien. Op deze manier kunt u automatisch wijzigingen kopiëren die in het stramien zijn aangebracht naar de gewenste variatie.
 
 >[!CAUTION]
-De synchronisatie is alleen beschikbaar om wijzigingen *van **Stramien**naar variatie* te kopiëren.
+De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 Alleen het huidige element van de variatie wordt gesynchroniseerd.
-Synchronisatie werkt alleen op het gegevenstype **Meerdere regels** .
-Het overbrengen van wijzigingen *van een variatie naar **stramien ***is niet beschikbaar als optie.
+Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
+Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **stramien** is bewerkt.
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
