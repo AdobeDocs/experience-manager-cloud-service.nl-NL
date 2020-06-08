@@ -3,6 +3,9 @@ title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience
 description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Sites voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
 source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +30,11 @@ Zie het [Adobe Privacy Center](https://www.adobe.com/privacy.html)voor meer info
 >
 >Zie [Adobe Experience Manager als voorbereiding van de Cloud Service voor gegevensbescherming en gegevensprivacyregels](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) voor meer informatie.
 
-## AEM-auteurlijst {#aem-author-tier}
+## AEM Author-laag {#aem-author-tier}
 
 Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de documentatie [van](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
-## AEM-publicatieniveau {#aem-publish-tier}
+## AEM Publish-laag {#aem-publish-tier}
 
 Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden behandeld in de documentatie [van de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
@@ -47,7 +50,7 @@ Adobe Experience Manager is onderworpen aan een uitschakelservice voor cookies d
 
 Naar Weigeren:
 
-1. Navigeren naar:
+1. Ga naar:
    [Adobe Privacy Center - Uitschakelen](https://www.adobe.com/privacy/opt-out.html)
 
 1. Schuif omlaag naar **Services** - **Ervaar het gebruik van cloudservices**.
