@@ -5,6 +5,9 @@ description: Op deze pagina wordt beschreven hoe u de Git-opslagplaats kunt open
 seo-description: Volg deze pagina voor meer informatie over het openen en beheren van uw Git-opslagplaats.
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
 
