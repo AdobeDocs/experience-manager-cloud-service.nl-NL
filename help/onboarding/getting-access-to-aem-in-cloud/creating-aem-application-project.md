@@ -3,11 +3,14 @@ title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 11%
 
 ---
 
 
-# Een AEM-toepassingsproject maken {#aem-application-project}
+# Een AEM-applicatieproject maken {#aem-application-project}
 
 ## Wizard gebruiken om een AEM-toepassingsproject te maken {#using-wizard-to-create-an-aem-application-project}
 
@@ -16,11 +19,11 @@ Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM-p
 
 Voer de onderstaande stappen uit om een AEM-toepassingsproject te maken in Cloud Manager:
 
-1. Nadat u zich hebt aangemeld bij Cloud Manager en de basisconfiguratie van het programma is voltooid, wordt een speciale aanroep naar een actiekaart weergegeven op het scherm **Overzicht** als de gegevensopslagruimte leeg is.
+1. Nadat u zich hebt aangemeld bij Cloud Manager en de basisconfiguratie van het programma is voltooid, wordt een speciale aanroep naar een actiekaart weergegeven op het scherm **Overzicht** als de opslagplaats leeg is.
 
    ![](assets/create-wizard1.png)
 
-1. Klik op **Maken** om naar het scherm **Een vertakking maken en Project** te navigeren.
+1. Klik op **Maken** om naar het scherm **Een vertakking en een project maken** te gaan.
 
    ![](assets/create-wizard2.png)
 
@@ -28,7 +31,7 @@ Voer de onderstaande stappen uit om een AEM-toepassingsproject te maken in Cloud
 
    ![](assets/create-wizard3.png)
 
-1. Nadat het programma is gemaakt, wordt de tegel Omgeving **** toevoegen weergegeven op de pagina *Programmaoverzicht* .
+1. Nadat het programma is gemaakt, wordt de tegel **Omgeving toevoegen** weergegeven op de pagina *Programmaoverzicht*.
    ![](assets/create-wizard4.png)
 
    Raadpleeg [Uw omgevingen](/help/implementing/cloud-manager/manage-environments.md) beheren voor meer informatie over het toevoegen of beheren van omgevingen.
@@ -262,7 +265,7 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren.
 Om diverse redenen kan het wenselijk zijn een inhoudspakket te maken, maar het niet te implementeren. Dit kan bijvoorbeeld handig zijn wanneer u inhoudspakketten maakt die alleen voor testen worden gebruikt of die door een andere stap in het constructieproces opnieuw worden verpakt, dat wil zeggen als een subpakket van een ander pakket.
 
-Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam ***cloudManagerTarget*** in de eigenschappen van samengestelde inhoudspakketten. Als dit bezit aan niets wordt geplaatst, zal het pakket worden overgeslagen en niet opgesteld. Het mechanisme om dit bezit te plaatsen hangt van de manier af de bouwstijl het inhoudspakket produceert. Met de insteekmodule filevault kunt u de insteekmodule bijvoorbeeld als volgt configureren:
+Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam ***cloudManagerTarget*** in de eigenschappen van samengestelde contentpakketten. Als deze eigenschap is ingesteld op Geen, zal het pakket worden overgeslagen en niet geïmplementeerd. Het mechanisme om deze eigenschap in te stellen hangt af van de manier waarop de build het contentpakket produceert. Met de invoegtoepassing filevault-maven-plugin kunt u de invoegtoepassing bijvoorbeeld als volgt configureren:
 
 ```xml
         <plugin>
