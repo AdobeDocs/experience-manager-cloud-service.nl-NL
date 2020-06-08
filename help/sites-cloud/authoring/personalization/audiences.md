@@ -1,13 +1,16 @@
 ---
-title: Soorten publiek beheren
+title: Audiences beheren
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 11%
 
 ---
 
 
-# Soorten publiek beheren{#managing-audiences}
+# Audiences beheren{#managing-audiences}
 
 Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren:
 
@@ -31,7 +34,7 @@ U kunt een segment ContextHub of in de console van het publiek of tijdens het he
 
 Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
-1. Klik of tik op **Personalisatie** in de navigatieconsole. Klik of tik **Soorten publiek**.
+1. In the Navigation console, click or tap **Personalization**. Klik of tik **Soorten publiek**.
 1. Tik of klik op **ContextHub-segment** maken.
 
    ![Een segment maken](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
@@ -40,7 +43,7 @@ Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
    >[!NOTE]
    >
-   >U kunt de gewijzigde lijst sorteren door op Gewijzigd **** te tikken of te klikken om in aflopende volgorde te sorteren om het nieuwe publiek te zien.
+   >U kunt de gewijzigde lijst sorteren door op **Gewijzigd** te tikken of te klikken om in aflopende volgorde te sorteren om de nieuwe doelgroep te zien.
 
 Voor meer detail over het creëren van segmenten die ContextHub gebruiken, gelieve te zien de het Vormen Segmentatie met documentatie ContextHub. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
 
@@ -54,21 +57,21 @@ Wanneer u meer dan één regel gebruikt, worden deze regels gecombineerd door de
 
 >[!NOTE]
 >
->Als u het Doelpubliek **** maken niet ziet in het menu **Maken** , hebt u niet de benodigde machtigingen om een publiek te maken. U hebt schrijfmachtigingen nodig onder om een publiek `/etc/segmentation` te kunnen maken. De groep inhoudauteurs hebben standaard schrijfmachtigingen.
+>Als u **Doelgroep maken** niet ziet in het menu **Maken**, hebt u niet de benodigde machtigingen om een doelgroep te maken. U hebt schrijfmachtigingen nodig onder `/etc/segmentation` om een doelgroep te kunnen maken. De makers van groepscontent hebben standaard schrijfmachtigingen.
 
 Een Adobe Target-publiek maken:
 
-1. Klik of tik op **Personalisatie** in de navigatieconsole. Klik of tik **Soorten publiek**.
+1. In the Navigation console, click or tap **Personalization**. Klik of tik **Soorten publiek**.
 
    ![Navigeren naar publiek](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Tik in de console Soorten publiek op **Maken** of klik op Maken en vervolgens op** Doelpubliek maken**.
+1. Tik op of klik op **Maken** in de console Soorten publiek en maak vervolgens ** Doelpubliek**.
 
    ![Doelgroep maken](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
 1. Selecteer in het dialoogvenster **Adobe Target Configuration** de doelconfiguratie en tik of klik op **OK**.
 1. Tik of klik in het gebied Rule#1 op het kenmerktype en voer in de velden die beschikbaar zijn kenmerkgegevens in. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
-1. Klik op Regel **** toevoegen om een andere regel toe te voegen. Voer zo veel regels in als nodig is. De regels worden gecombineerd met de booleaanse exploitant AND, wat betekent dat het publiek aan alle vereisten van elke regel moet voldoen om voor een activiteit in aanmerking te komen.
+1. Klik op **Regel toevoegen** om nog een regel toe te voegen. Voer zoveel regels in als nodig is. De regels worden gecombineerd met de booleaanse operator AND, wat betekent dat de doelgroep aan alle vereisten van elke regel moet voldoen om voor een activiteit in aanmerking te komen.
 1. Tik of klik op **Volgende**.
 1. Voer een naam voor de doelgroep in en tik of klik op **Opslaan**.
 1. Tik of klik op **Opslaan**. Uw publiek wordt vermeld in de lijst van het Publiek.
@@ -95,6 +98,6 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 
 U kunt om het even welk publiek ContextHub van de console van het Publiek uitgeven. U kunt ook het doelpubliek van Adobe bewerken, maar alleen de doelgroepen die zijn gemaakt in AEM:
 
-1. Klik of tik op **Personalisatie** in de navigatieconsole. Klik of tik **Soorten publiek**.
+1. In the Navigation console, click or tap **Personalization**. Klik of tik **Soorten publiek**.
 1. Tik of klik op het pictogram naast het ContextHub-segment dat u wilt bewerken en tik of klik op **Bewerken**.
 1. Breng desgewenst wijzigingen aan in de segmenteditor. Zie de documentatie ContextHub voor meer informatie. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
