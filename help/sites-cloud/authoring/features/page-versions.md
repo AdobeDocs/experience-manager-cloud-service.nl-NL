@@ -3,6 +3,9 @@ title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 6%
 
 ---
 
@@ -71,7 +74,7 @@ Een vorige versie herstellen:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen. De paginaversies voor de geselecteerde pagina worden weergegeven.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
    ![Vorige versie](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -84,7 +87,7 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
    ![Voorvertoning versie](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -103,7 +106,7 @@ Een vorige versie vergelijken met de huidige pagina:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
    ![Versies vergelijken](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ Timewarp is een [modus](/help/sites-cloud/authoring/fundamentals/environment-too
 
    ![Modus Tijdlijn verdraaien](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op Datum **** instellen. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
+1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
 
    ![Tijdlijndatum tijdverdraaiingsdoel](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
@@ -144,7 +147,7 @@ Timewarp is een [modus](/help/sites-cloud/authoring/fundamentals/environment-too
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
 * **Tijdlijnverdraaiing werkt op basis van gepubliceerde pagina** &#39;s. Tijdverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
-* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
+* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies hebben invloed op Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp de juiste weergave niet weergeven.
 * **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#reverting-to-a-page-version).
 * **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat deze oorspronkelijk was, aangezien deze items niet zijn geversieerd in de opslagplaats.
