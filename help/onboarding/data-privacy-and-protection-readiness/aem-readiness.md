@@ -3,6 +3,9 @@ title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience
 description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +66,7 @@ Voor Adobe Experience Manager als cloudservice:
 
 * Er is geen nieuwe service of interface toegevoegd.
 
-   * In plaats daarvan worden procedures en APIs gedocumenteerd voor gebruik door de klanten UIs/portals die verzoeken van de privacyverordening behandelen.
+   * In plaats daarvan worden procedures en APIs gedocumenteerd voor gebruik door klant UIs/portals die verzoeken van de privacyverordening behandelen.
 
 * AEM zal geen uit-van-de-doos hulpmiddelen omvatten om het privacyverzoekwerkschema te steunen.
 
@@ -79,13 +82,13 @@ In het volgende diagram ziet u hoe een workflow voor privacyverzoeken eruit kan 
 
 Zie de volgende secties voor documentatie over regelgeving voor productgebieden van AEM als Cloud Service.
 
-## Adobe Experience Manager als Cloud Service Foundation {#aem-foundation}
+## Adobe Experience Manager as a Cloud Service Foundation {#aem-foundation}
 
-Zie [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
-## Adobe Experience Manager als Cloud Service-sites {#aem-sites}
+## Adobe Experience Manager as a Cloud Service-sites {#aem-sites}
 
-Zie [AEM-site Gereedheid voor gegevensbeveiliging en gegevensprivacyregels.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
 ## Adobe Experience Manager als Cloud Service-integratie met Adobe Target en Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
