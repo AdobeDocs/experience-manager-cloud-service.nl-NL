@@ -1,8 +1,11 @@
 ---
 title: Overzicht van Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1e49306fb89cffa286c8723758618ce7a5d1e8b9
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 100%
 
 ---
 
