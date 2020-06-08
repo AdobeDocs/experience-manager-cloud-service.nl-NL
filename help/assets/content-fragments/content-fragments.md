@@ -3,6 +3,9 @@ title: Werken met contentfragmenten
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: tm+mt
+source-wordcount: '1936'
+ht-degree: 3%
 
 ---
 
