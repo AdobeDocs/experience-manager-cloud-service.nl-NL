@@ -1,13 +1,16 @@
 ---
-title: Werken met dynamische media
+title: Werken met Dynamic Media
 description: Met Dynamic Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set hoofdelementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
 
 
-# Werken met dynamische media{#working-with-dynamic-media}
+# Werken met Dynamic Media{#working-with-dynamic-media}
 
 [Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u op aanvraag rijke visuele producten en marketingmaterialen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set hoofdelementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
