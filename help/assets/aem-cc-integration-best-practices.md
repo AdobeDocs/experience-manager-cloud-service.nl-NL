@@ -5,6 +5,9 @@ contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3300'
+ht-degree: 18%
 
 ---
 
@@ -38,7 +41,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in AEM en het uploaden van nieuwe bestanden naar AEM vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [AEM-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM-bureaubladtoepassing op Windows- en Mac-bureaublad |
 | Marketers en zakelijke gebruikers ontdekken, voorvertonen, licentiëren en opslaan de Adobe Stock Assets vanuit AEM en beheren deze. Gelicentieerde en opgeslagen middelen bieden geselecteerde Adobe Stock-metagegevens voor beter beheer. | [Experience Manager en Adobe Stock-integratie](aem-assets-adobe-stock.md) | AEM-webinterface |
 
-Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en aanschaf van activa op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternatieve oplossingen zoals [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), oplossingen die kunnen worden gebouwd op basis van de componenten van Commons [van het Aandeel van](https://adobe-marketing-cloud.github.io/asset-share-commons/) Activa, het Aandeel [van de](share-assets.md)Verbinding, gebruikend het Web UI [van de Middelen van](/help/assets/manage-digital-assets.md) AEM zouden op specifieke vereiste moeten worden herzien.
+Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en sourcing van assets op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternatieve oplossingen zoals [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html), oplossingen die kunnen worden gebouwd op basis van componenten van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](share-assets.md), met behulp van de [AEM Assets-interface](/help/assets/manage-digital-assets.md) moeten worden gecontroleerd op basis van een specifieke vereiste.
 
 ![Creative Cloud-verbindingen voor AEM: Bepalen welke mogelijkheid moet worden gebruikt](assets/creative-connections-aem.png)
 
@@ -53,9 +56,9 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 | Discover - zoek naar middelen van AEM | Ja | AEM Web UI + Desktopacties |  |
 | Gebruiken - element openen | Ja | Ja, voor elke app | [Openen vanuit webinterface](/help/assets/manage-digital-assets.md#previewing-assets) of vanuit Finder |
 | Gebruiken - middelen van AEM in een document plaatsen | Ja - insluiten | Ja - koppelen of insluiten | De AEM-bureaubladtoepassing biedt toegang tot elementen als bestanden op het lokale bestandssysteem. Deze koppelingen in de native apps worden weergegeven door lokale paden. |
-| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Met Uitchecken in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) wordt het middel standaard opgeslagen op de Creative Cloud Storage-account (gesynchroniseerd door de Creative Cloud-toepassing) van de gebruiker. |
+| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Met Uitchecken in AAL](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) wordt het middel standaard opgeslagen op de Creative Cloud Storage-account (gesynchroniseerd door de Creative Cloud-toepassing) van de gebruiker. |
 | Bewerken - werk wordt uitgevoerd buiten AEM | Ja, middelen beschikbaar in de Creative Cloud-opslagaccount van de gebruiker worden gesynchroniseerd met bureaublad. | Ja |  |
-| Bewerken - wijzigingen uploaden | Ja - [Inchecken](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
+| Bewerken - wijzigingen uploaden | Ja - [Inchecken](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
 | Uploaden - één bestand | Ja - het actieve document wordt geüpload | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets); Aangepaste scripts of gereedschappen |
 | Diverse - gebruiker en aanmelding | Creative Cloud-gebruiker die zich heeft aangemeld bij Creative Cloud-bureaubladtoepassing wordt herkend (SSO) | AEM-gebruiker/aanmelding | Gebruikers van beide oplossingen tellen mee voor de AEM-gebruikersquota. |
@@ -68,7 +71,7 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) voor een configureerbare, SaaS-invoegtoepassing op AEM Assets om elementen te publiceren.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor een configureerbare, SaaS-invoegtoepassing op AEM Assets om elementen te publiceren.
 
 * De oplossingen van de douane worden gecreeerd gebaseerd op de codebasis van de Commons [van het Aandeel van](https://adobe-marketing-cloud.github.io/asset-share-commons/) Activa.
 * AEM- [koppelingen delen](/help/assets/share-assets.md) met koppelingen om elementen ad hoc te delen.
@@ -78,17 +81,17 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 ### Verklarende woordenlijst {#glossary-of-common-terms}
 
-* **** Werk in uitvoering of creatief werk in uitvoering (WIP): Een fase in de levenscyclus van bedrijfsmiddelen waarbij een middel meerdere wijzigingen ondergaat en doorgaans nog niet klaar is om te worden gedeeld met bredere teams.
-* **** Creatieve elementen: Elementen die klaar zijn om te worden gedeeld met een breder team, of die zijn geselecteerd/goedgekeurd door het creatieve team voor delen met marketing- of LOB-teams.
+* **Werk in uitvoering of creatief werk in uitvoering (WIP):** Een fase in de levenscyclus van assets waarbij een asset meerdere wijzigingen ondergaat en doorgaans nog niet klaar is om te worden gedeeld met grotere teams.
+* **Creatieve assets:** Assets die klaar zijn om te worden gedeeld met een groter team, of die zijn geselecteerd/goedgekeurd door het creatieve team om te delen met marketing- of LOB-teams.
 
-* **** Goedkeuring van bedrijfsmiddelen: Het goedkeuringsproces dat loopt voor activa die reeds aan DAM worden geupload, die typisch merkgoedkeuringen, wettelijke goedkeuringen, etc. omvat.
-* **** Definitief actief: Een middel dat door alle goedkeuringen/meta-gegevens het etiketteren is gegaan en klaar is om door het bredere team te worden gebruikt. Een dergelijk middel wordt opgeslagen in DAM en beschikbaar gesteld aan alle (of alle geïnteresseerde) gebruikers. Het kan in marketing kanalen of door creatieve teams worden gebruikt om ontwerpen tot stand te brengen.
+* **Goedkeuring van assets:** Het goedkeuringsproces dat wordt uitgevoerd voor assets die reeds naar DAM zijn geüpload, en dat typisch merkgoedkeuringen, wettelijke goedkeuringen, enz. omvat.
+* **Definitieve asset:** Een asset die alle goedkeuringen/metadatatagging heeft doorlopen en klaar is om door het grotere team te worden gebruikt. Een dergelijke asset wordt opgeslagen in DAM en beschikbaar gesteld aan alle (geïnteresseerde) gebruikers. Deze kan in marketingkanalen of door creatieve teams worden gebruikt om ontwerpen te maken.
 
-* **** Kleine update/wijziging van bedrijfsmiddelen: Een snelle en kleine wijziging in een digitaal middel. Deze wordt vaak uitgevoerd als reactie op een retoucheerverzoek of een verzoek om kleine bewerkingen, een elementenrevisie of goedkeuring (bijvoorbeeld door de positie te wijzigen, de tekstgrootte te wijzigen, de verzadiging/helderheid, de kleur aan te passen, enzovoort).
-* **** Belangrijke update/wijziging van bedrijfsmiddelen: Een verandering in een digitaal goed dat aanzienlijk werk vereist, en soms over een langere periode moet gebeuren. Dit omvat doorgaans meerdere wijzigingen. Het element moet tijdens het bijwerken meerdere keren worden opgeslagen. De belangrijkste activa updates veroorzaken typisch de activa om een stadium van het WIP in te gaan.
-* **** DAM: Beheer van digitale middelen. In dit document is dit gelijk aan AEM Experience Manager-middelen, tenzij anders vermeld.
-* **** Creatieve gebruiker: Een creatieve professional die digitale middelen maakt met Creative Cloud-apps en -services. In sommige gevallen is een creatieve gebruiker lid van een creatief team dat mogelijk Creative Cloud gebruikt, maar geen digitale middelen maakt (zoals een creatieve directeur of een creatieve teammanager).
-* **** DAM-gebruiker: Een typische gebruiker van een systeem DAM. Afhankelijk van de organisatie, kan een gebruiker DAM een marketing of een niet-marketing gebruiker, bijvoorbeeld een Line-of-Business (LOB) gebruiker, bibliothecaris, verkooppersoon, etc. zijn.
+* **Kleine update/wijziging van assets:** Een snelle en kleine wijziging in een digitale asset. Deze wordt vaak uitgevoerd als reactie op een retoucheerverzoek of een verzoek om kleine bewerkingen, een assetrevisie of goedkeuring (bijvoorbeeld om de positie te wijzigen, de tekstgrootte te wijzigen, de verzadiging/helderheid en kleur aan te passen, enz.).
+* **Belangrijke update/wijziging van assets:** Een verandering in een digitale asset die aanzienlijk werk vereist, en soms over een langere periode moet worden uitgevoerd. Dit omvat doorgaans meerdere wijzigingen. De asset moet tijdens het bijwerken meerdere keren worden opgeslagen. De belangrijkste assetupdates leiden er doorgaans toe dat de asset een WIP-status krijgt.
+* **DAM:** Beheer van digitale assets. In dit document is dit gelijk aan AEM Experience Manager-assets, tenzij anders vermeld.
+* **Creatieve gebruiker:** Een creatieve professional die digitale assets maakt met Creative Cloud-apps en -services. In sommige gevallen is een creatieve gebruiker lid van een creatief team dat mogelijk Creative Cloud gebruikt, maar geen digitale assets maakt (zoals een creatieve directeur of een creatieve teammanager).
+* **DAM-gebruiker:** Een typische gebruiker van een DAM-systeem. Afhankelijk van de organisatie kan een DAM-gebruiker een marketing- of niet-marketinggebruiker zijn, bijvoorbeeld een LOB-gebruiker (Line-of-Business), bibliothecaris, verkoopmedewerker, enz. zijn.
 
 ### Overwegingen bij het gebruik van de integratie met AEM en Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -103,12 +106,12 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 Hier volgt een korte samenvatting van aanbevolen procedures voor AEM- en Creative Cloud-integratie. Lees de rest van dit document voor een gedetailleerd begrip hiervan.
 
-* **** Voor creatieve gebruikers die in Photoshop, InDesign of Illustrator werken: Adobe Asset Link biedt de beste gebruikerservaring, zoals een schone verwerking van de onderhanden werk op middelen die zijn uitgecheckt bij AEM
-* **** Voor het vereenvoudigen van de toegang tot middelen van de Desktop voor om het even welke generische dossierformaat of toepassing: AEM-bureaubladtoepassing gebruiken
-* **** Begrijp waarom en wanneer om activa in DAM op te slaan: Updates die ter beschikking moeten worden gesteld aan het bredere team in uw organisatie
-* **** Bedenk het volume van de gedeelde elementen: Als je gebruik maakt van vermogensdistributie, kunnen bestuur en beveiliging de belangrijkste aspecten zijn. Overweeg om hulpmiddelen te gebruiken die voor het doen van dat bij schaal, zoals het Portaal van het Merk worden gebouwd.
-* **** Levenscyclus van middelen begrijpen: Weet hoe elementen in uw organisatie worden verwerkt door verschillende teams
-* **** Regelmatig opslaan van middelen met zorg afhandelen: Adobe Asset Link verzorgt die voor u met PS, AI, ID. Voer voor andere toepassingen geen actieve taken uit in toegewezen/gedeelde map tenzij u alle wijzigingen in DAM nodig hebt
+* **Voor creatieve gebruikers die in Photoshop, InDesign of Illustrator werken:** Adobe Asset Link biedt de beste gebruikerservaring, zoals een schone verwerking van het werk in uitvoering op assets die zijn uitgecheckt bij AEM
+* **Voor het vereenvoudigen van de toegang tot assets van de desktop voor een generieke bestandsindeling of applicatie:** Gebruik een AEM-desktopapp
+* **Begrijpen waarom en wanneer assets in DAM moeten worden opgeslagen:** Updates die ter beschikking moeten worden gesteld aan een groter team in uw organisatie
+* **Houd rekening met het volume van de gedeelde assets:** Als u gebruikmaakt van assetdistributie, kunnen governance en beveiliging de belangrijkste aspecten zijn. Overweeg om tools te gebruiken die bedoeld zijn om governance en beveiliging op grote schaal toe te passen, zoals de Brand Portal.
+* **De levenscyclus van assets begrijpen:** Begrijp hoe assets in uw organisatie worden verwerkt door verschillende teams
+* **Correct en regelmatig opslaan van assets:** Adobe Asset Link doet dit voor u met PS, AI, ID. Voer voor andere applicaties geen taken in uitvoering uit in een toegewezen/gedeelde map, tenzij u alle wijzigingen in DAM nodig hebt
 
 ### Toegang tot Adobe Stock Assets van AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -121,7 +124,7 @@ Een paar belangrijke punten over deze integratie:
 
 **Werken met middelen die zijn opgeslagen van Adobe Stock in AEM in Creative Cloud**. Deze integratie is onafhankelijk van Adobe Asset Link, maar Adobe Asset Link herkent deze middelen die op die manier uit Stock zijn opgeslagen en geeft aanvullende metagegevens en het pictogram Stock weer voor deze middelen in de gebruikersinterface van de Adobe Asset Link-extensie in Photoshop, Illustrator of InDesign. De bestanden zijn beschikbaar voor bladeren, openen, enzovoort, omdat het normale AEM-elementen zijn die worden opgeslagen in AEM.
 Creatieve gebruikers die werken in Creative Cloud-apps met de Adobe Asset Link-extensie, hebben niet alleen toegang tot middelen met een licentie van Adobe Stock in AEM, maar kunnen ook het deelvenster Creative Cloud Libraries gebruiken om Adobe Stock-middelen te zoeken, voor te vertonen en in licentie te geven.
-Elementen van Adobe Stock die in licentie zijn gegeven en in AEM zijn opgeslagen, worden beschikbaar voor bredere teams die toegang hebben tot de implementatie van AEM Assets, terwijl creatieve licentiebestanden van Adobe Stock via het deelvenster Creative Cloud Libraries ze alleen standaard beschikbaar maken voor zichzelf in hun Creative Cloud-account.
+Elementen van Adobe Stock die in licentie zijn gegeven en in AEM zijn opgeslagen, worden beschikbaar voor bredere teams die toegang hebben tot de implementatie van AEM Assets, terwijl creatieve licentiemiddelen van Adobe Stock via het deelvenster Creative Cloud Libraries ze alleen standaard beschikbaar maken voor zichzelf in hun Creative Cloud-account.
 
 ## Elementen opslaan in een DAM {#about-storing-assets-in-a-dam}
 
@@ -181,7 +184,7 @@ Externe agentschappen en freelancers zonder directe toegang tot het DAM-exemplaa
 Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgekeurde middelen:
 
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
-* Gebruik [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
+* Gebruik [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
 * Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Het Toegangsbeheer van het gebruik opstelling in AEM en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP flits) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen AEM Web UI gebruiken om middelen op te halen en nieuwe inhoud te uploaden in uw DAM.
 
