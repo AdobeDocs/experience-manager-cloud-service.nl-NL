@@ -3,6 +3,9 @@ title: Levering van milieu's - wat is vereist
 description: Levering van milieu's - wat is vereist
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ Alle AEM-cloudomgevingen die door een klant worden aangeschaft, worden automatis
 
 ## Welkom-e-mail {#welcome-email}
 
-Na voltooiing van het installatieproces voor de omgeving ontvangt de aangewezen klantenbeheerder een welkomstbericht met de bevestiging dat hun toegang tot de Adobe Experience Cloud is verleend. Het e-mailbericht bevat gedetailleerde informatie over hoe u aan de slag kunt met de Experience Cloud-services en het zelfserviceportaal van Cloud Manager. Bovendien bevat de e-mail belangrijke informatie, zoals waar u naar Support Resources, Forums of FAQ&#39;s en nog veel meer wilt gaan. In de lijst met bronnen in de e-mail ontvangt u ook meer informatie over hoe u toegang kunt krijgen tot Cloud Manager of uw AEM-cloudomgevingen.
+Na voltooiing van het installatieproces voor de omgeving ontvangt de aangewezen klantenbeheerder een welkomstbericht met de bevestiging dat hun toegang tot de Adobe Experience Cloud is verleend. Het e-mailbericht bevat gedetailleerde informatie over hoe u aan de slag kunt met de Experience Cloud-services en het zelfserviceportaal van Cloud Manager. Bovendien bevat de e-mail belangrijke informatie, zoals waar u naartoe kunt gaan voor ondersteuningsbronnen, forums of veelgestelde vragen, en nog veel meer. In de lijst met bronnen in de e-mail ontvangt u ook meer informatie over hoe u toegang kunt krijgen tot Cloud Manager of uw AEM-cloudomgevingen.
 
 ## Volgende stappen {#next-steps}
 
