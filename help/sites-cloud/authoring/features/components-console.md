@@ -1,17 +1,20 @@
 ---
-title: Componentenconsole
+title: Onderdelenconsole
 description: Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 17%
 
 ---
 
 
-# Componentenconsole {#components-console}
+# Onderdelenconsole {#components-console}
 
 Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd en sleutelinformatie voor elke component bekijken.
 
-U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. Omdat er geen boomstructuur is voor componenten, is alleen de lijstweergave beschikbaar.
+U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. Omdat er geen boomstructuur voor componenten is, is alleen de lijstweergave beschikbaar.
 
 ![De componentenconsole](/help/sites-cloud/authoring/assets/components-console.png)
 
@@ -21,7 +24,7 @@ U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. Om
 
 ## Zoeken {#search-field}
 
-Met het pictogram Alleen **** inhoud (linksboven) kunt u het deelvenster **Zoeken** openen om de componenten te zoeken en/of te filteren:
+Met het pictogram **Alleen content** (linksboven) kunt u het deelvenster **Zoeken** openen om de componenten te zoeken en/of te filteren:
 
 ![Zoeken in de componentenconsole](/help/sites-cloud/authoring/assets/components-console-search.png)
 
