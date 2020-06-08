@@ -3,6 +3,9 @@ title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het 
 description: Tips en tips en trucs voor het benoemen, ordenen en beheren van metagegevens voor bestanden met digitale elementen.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 0%
 
 ---
 
