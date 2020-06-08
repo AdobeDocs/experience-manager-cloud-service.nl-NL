@@ -3,6 +3,9 @@ title: Gekoppelde inhoud
 description: Gekoppelde inhoud biedt de verbinding, zodat elementen (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 13%
 
 ---
 
@@ -19,11 +22,11 @@ Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met 
 
 Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](/help/assets/manage-collections.md). Daarna kunt u:
 
-1. Open het fragment en selecteer **Gekoppelde inhoud** in het zijpaneel.
+1. Open uw fragment en selecteer **Gekoppelde content** in het zijpaneel.
 
    ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-2. Selecteer Inhoud **** koppelen of Verzameling **** koppelen (afhankelijk van of verzamelingen al zijn gekoppeld of niet).
+2. Selecteer **Inhoud koppelen** of **Verzameling koppelen** (afhankelijk van of verzamelingen al zijn gekoppeld of niet).
 3. Selecteer de gewenste verzameling.
 
    U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
