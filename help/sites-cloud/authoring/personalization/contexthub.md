@@ -3,11 +3,14 @@ title: Pagina's voorvertonen met ContextHub-gegevens
 description: De ContextHub toolbarvertoningen gegevens van Opslag ContextHub en laat u toe om opslaggegevens te veranderen en is nuttig om inhoud te previewing
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
 
-# Pagina&#39;s voorvertonen met ContextHub-gegevens {#previewing-pages-using-contexthub-data}
+# Pagina&#39;s voorvertonen met ContextHub-gegevens  {#previewing-pages-using-contexthub-data}
 
 De ContextHub toolbarvertoningengegevens van opslag ContextHub en laat u toe om opslaggegevens te veranderen. De toolbar ContextHub is nuttig om inhoud te previewing die door gegevens in een opslag ContextHub wordt bepaald.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
 
