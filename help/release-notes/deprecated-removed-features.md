@@ -3,6 +3,9 @@ title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager als cloudservice.
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 6%
 
 ---
 
