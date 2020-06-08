@@ -223,7 +223,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 >[!NOTE]
 >
->De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
+>De afzonderlijke beschikbare pictogrammen worden gedocumenteerd ten opzichte van de juiste console/functie/scenario.
 
 ## Snelle handelingen {#quick-actions}
 
