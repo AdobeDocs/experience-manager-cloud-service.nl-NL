@@ -3,6 +3,9 @@ title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 11%
 
 ---
 
