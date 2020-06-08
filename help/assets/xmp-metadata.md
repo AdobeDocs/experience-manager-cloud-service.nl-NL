@@ -1,14 +1,17 @@
 ---
-title: XMP-metagegevens
+title: XMP-metadata
 description: Meer informatie over de XMP-metagegevensstandaard (Extensible Metadata Platform) voor metagegevensbeheer. Het wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1386'
+ht-degree: 18%
 
 ---
 
 
-# XMP-metagegevens {#xmp-metadata}
+# XMP-metadata {#xmp-metadata}
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door AEM Assets voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
 
@@ -22,13 +25,13 @@ Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in
 
 XMP is gestandaardiseerd hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
-Alle oudere metagegevens van EXIF, ID3 of Microsoft Office worden automatisch vertaald naar XMP, dat kan worden uitgebreid voor ondersteuning van klantspecifiek metagegevensschema, zoals productcatalogi.
+Alle oudere metagegevens van EXIF, ID3 of Microsoft Office worden automatisch vertaald naar XMP, dat kan worden uitgebreid ter ondersteuning van klantspecifiek metagegevensschema, zoals productcatalogi.
 
 Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een specifieke entiteit die als middel wordt bedoeld; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het element.
 
-XMP definieert een [metagegevensmodel](https://en.wikipedia.org/wiki/Metadata) dat kan worden gebruikt met elke gedefinieerde set metagegevensitems. XMP definieert ook bepaalde [schema&#39;s](https://en.wikipedia.org/wiki/XML_schema) voor basiseigenschappen die nuttig zijn voor het opnemen van de geschiedenis van een bron tijdens het doorlopen van meerdere verwerkingsstappen, van het fotograferen, [scannen](https://en.wikipedia.org/wiki/Image_scanner)of ontwerpen als tekst, via fotomewerkingsstappen (zoals [uitsnijden](https://en.wikipedia.org/wiki/Cropping_%28image%29) of kleuraanpassing) tot het samenvoegen in een uiteindelijke afbeelding. Met XMP kan elk softwareprogramma of apparaat onderweg zijn eigen informatie toevoegen aan een digitale bron, die vervolgens in het uiteindelijke digitale bestand kan worden bewaard.
+XMP definieert een [metadatamodel](https://nl.wikipedia.org/wiki/Metadata) dat kan worden gebruikt met elke gedefinieerde set metadataitems. XMP definieert ook bepaalde [schema&#39;s](https://nl.wikipedia.org/wiki/XML_schema) voor basiseigenschappen die nuttig zijn voor het opnemen van de geschiedenis van een resource tijdens het doorlopen van meerdere verwerkingsstappen, van het fotograferen, [scannen](https://en.wikipedia.org/wiki/Image_scanner) of ontwerpen als tekst, het doorlopen van fotobewerkingsstappen (zoals [bijsnijden](https://en.wikipedia.org/wiki/Cropping_%28image%29) of kleuraanpassing) tot het samenvoegen in een uiteindelijke afbeelding. Met XMP kan elk softwareprogramma of apparaat in de loop van de tijd zijn eigen informatie toevoegen aan een digitale resource, die vervolgens in het uiteindelijke digitale bestand kan worden bewaard.
 
-XMP wordt het meest algemeen geserialiseerd en opgeslagen gebruikend een ondergroep van het Kader [van de Beschrijving van het](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) Middel [W3C](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), dat beurtelings in [XML](https://en.wikipedia.org/wiki/XML)wordt uitgedrukt.
+XMP wordt doorgaans geserialiseerd en opgeslagen met behulp van een subset van het [W3C](https://nl.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://nl.wikipedia.org/wiki/Resource_Description_Framework) (RDF), dat op zijn beurt wordt uitgedrukt in [XML](https://nl.wikipedia.org/wiki/XML).
 
 ### Voordelen van XMP {#advantages-of-xmp}
 
@@ -74,11 +77,11 @@ Wanneer u de metagegevens voor een element wijzigt vanuit AEM-elementen of wanne
 
 De functie voor terugschrijven van XMP verspreidt de metagegevenswijzigingen in alle of specifieke uitvoeringen van het element.
 
-Overweeg een scenario waar u het bezit van de [!UICONTROL Titel] van het element `Classic Leather` aan `Nylon`. wijzigt.
+Neem bijvoorbeeld een scenario waarin u de [!UICONTROL Title] eigenschap van het element `Classic Leather` met de naam wijzigt `Nylon`.
 
 ![metadata](assets/metadata.png)
 
-In dit geval slaat AEM Assets de veranderingen in het bezit van de **[!UICONTROL Titel]** in de `dc:title` parameter voor de activa op die meta-gegevens in de activahiërarchie worden opgeslagen.
+In dit geval slaat AEM Assets de veranderingen in het **[!UICONTROL Title]** bezit in de `dc:title` parameter voor de activa op die meta-gegevens in de activahiërarchie worden opgeslagen.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -91,28 +94,28 @@ Met de functie voor terugschrijven van XMP kunt u de wijzigingen in metagegevens
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activa worden verspreid wanneer het uploaden van het, wijzig de configuratie van de Maker **[!UICONTROL van de Vertoning van]** Adobe CQ DAM in de Manager van de Configuratie.
+Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activa worden verspreid wanneer het uploaden van het, wijzig de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie in de Manager van de Configuratie.
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de configuratie van **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
-1. Selecteer de optie **[!UICONTROL XMP]** doorgeven en sla de wijzigingen op.
+1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie.
+1. Selecteer de **[!UICONTROL Propagate XMP]** optie en sla de wijzigingen op.
 
 ### Terugschrijven van XMP inschakelen voor specifieke uitvoeringen {#enable-xmp-writeback-for-specific-renditions}
 
-Als u wilt dat de XMP-schrijffunctie wijzigingen in metagegevens doorgeeft aan geselecteerde uitvoeringen, geeft u deze uitvoeringen op in de werkstroomstap [!UICONTROL XMP-terugschrijfproces] van de DAM-workflow voor het terugschrijven van metagegevens. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
+Als u wilt dat de XMP-schrijffunctie wijzigingen in metagegevens doorgeeft aan geselecteerde uitvoeringen, geeft u deze uitvoeringen op in de [!UICONTROL XMP Writeback Process] workflowstap van de DAM-workflow voor het schrijven van metagegevens. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
 
 Voer de volgende stappen uit voor de functie voor terugschrijven van XMP om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
-1. Tik/klik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modellen]**.
-1. Open vanaf de pagina Modellen het workflowmodel voor terugschrijven van **[!UICONTROL DAM-metagegevens]** .
-1. Open de stap **[!UICONTROL XMP-terugschrijfproces]** op de pagina met eigenschappen voor terugschrijven van metagegevens van **[!UICONTROL DAM]** .
-1. Tik in het dialoogvenster **[!UICONTROL Step Properties]** op het tabblad **[!UICONTROL Process]** of klik op dit tabblad.
-1. Voeg in het vak **[!UICONTROL Argumenten]** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`toe en tik/klik op **[!UICONTROL OK]**.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Open het **[!UICONTROL DAM Metadata Writeback]** workflowmodel op de pagina Modellen.
+1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
+1. Tik of klik in het dialoogvenster **[!UICONTROL Step Properties]** op het tabblad **[!UICONTROL Process]**.
+1. Voeg in het **[!UICONTROL Arguments]** vak toe `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`en tik/klik op **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Sla de wijzigingen op.
-1. Als u de Piramid TIFF-uitvoeringen (PTIFF) voor dynamische media-afbeeldingen met de nieuwe kenmerken opnieuw wilt genereren, voegt u de stap **[!UICONTROL Dynamische media-afbeeldingselementen]** verwerken toe aan de terugschrijfworkflow voor DAM-metagegevens. PTIFF-uitvoeringen worden alleen lokaal gemaakt en opgeslagen in een Dynamic Media Hybrid-implementatie.
+1. Als u de PTIFF-uitvoeringen (Piramid TIFF) voor dynamische media-afbeeldingen met de nieuwe kenmerken opnieuw wilt genereren, voegt u de stap **[!UICONTROL Dynamic Media Process Image Assets]** toe aan de terugschrijfworkflow voor DAM-metadata. PTIFF-uitvoeringen worden alleen lokaal gemaakt en opgeslagen in een Dynamic Media Hybrid-implementatie.
 
 1. Sla de workflow op.
 
@@ -139,14 +142,14 @@ Door het filteren met whitelist van XMP-metagegevens wordt dit probleem opgelost
 >Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Deze waarde wordt in het metagegevensveld genaamd `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de **[!UICONTROL configuratie van Adobe CQ DAM XmpFilter]** .
-1. Als u witfilters wilt toepassen, selecteert u Whitelist **[!UICONTROL toepassen op XMP-eigenschappen]** en geeft u de eigenschappen op die moeten worden geïmporteerd in het vak **[!UICONTROL Whitelisted XML Names for XMP filtering]** .
+1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
+1. Als u whitelistfilters wilt toepassen, selecteert u **[!UICONTROL Apply Whitelist to XMP Properties]** en geeft u de eigenschappen die u wilt importeren op in het vak **[!UICONTROL Whitelisted XML Names for XMP filtering]**.
 
-1. Als u de op de zwarte lijst geplaatste XMP-eigenschappen wilt uitfilteren nadat u een whitelist-filter hebt toegepast, geeft u deze op in het vak XML-namen op de zwarte lijst voor het filteren **** van XMP.
+1. Als u XMP-eigenschappen op de blacklist wilt uitfilteren nadat u een whitelistfilter hebt toegepast, geeft u ze op in het vak **[!UICONTROL Blacklisted XML Names for XMP filtering]**.
 
    >[!NOTE]
    >
-   >De optie Blacklist **[!UICONTROL toepassen op XMP-eigenschappen]** is standaard geselecteerd. Met andere woorden, filtering op zwarte lijsten is standaard ingeschakeld. Als u filteren op zwarte lijsten wilt uitschakelen, schakelt u de optie Blacklist **[!UICONTROL toepassen op XMP-eigenschappen]** uit.
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, filtering op zwarte lijsten is standaard ingeschakeld. Als u filteren op zwarte lijsten wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
 
 1. Sla de wijzigingen op.
 
