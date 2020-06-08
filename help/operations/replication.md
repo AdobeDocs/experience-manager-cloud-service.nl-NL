@@ -3,6 +3,9 @@ title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
