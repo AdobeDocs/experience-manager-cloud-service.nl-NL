@@ -3,6 +3,9 @@ title: CI/CD Pipeline configureren - Cloud Services
 description: CI/CD Pipeline configureren - Cloud Services
 translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 2%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ## De stroom begrijpen {#understanding-the-flow}
 
-U kunt uw pijpleiding van de **Stegel van Montages** van de Pijpleiding in de UI van de Manager [!UICONTROL van de] Wolk vormen.
+U kunt uw pipeline configureren vanaf de tegel **Pipelines** in de [!UICONTROL Cloud Manager]-gebruikersinterface.
 
 De Manager van de Plaatsing is verantwoordelijk voor vestiging de pijpleiding. Als u dit doet, selecteert u eerst een vertakking in de **Git Repository**.
 
@@ -28,15 +31,15 @@ Om uw pijpleiding te vormen, moet de gebruiker:
 >
 >De pijplijn kan niet worden ingesteld tot één programma volledig is gemaakt en de opslagplaats van Git heeft minstens één tak.
 
-Voordat u begint met het implementeren van uw code, moet u de pijpleidinginstellingen configureren vanuit [!UICONTROL Cloud Manager].
+Alvorens u begint om uw code op te stellen, moet u uw pijpleidingsmontages van [!UICONTROL Cloud Manager]vormen.
 
 >[!NOTE]
 >
 >U kunt de pijpleidingsmontages na aanvankelijke opstelling veranderen.
 
-## Instellingen voor de pijplijn configureren vanuit [!UICONTROL Cloudinbeheer]{#configuring-the-pipeline-settings-from-cloud-manager}
+## Het vormen van de Montages van de Pijpleiding van [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
-Als u uw programma hebt ingesteld en minstens één omgeving hebt met [!UICONTROL Cloud Manager] UI, kunt u uw implementatiepijplijn instellen.
+Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u bereid om uw plaatsingspijpleiding te plaatsen.
 
 Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te configureren:
 
