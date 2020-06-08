@@ -3,13 +3,16 @@ title: Op rollen gebaseerde machtigingen
 description: Op rollen gebaseerde machtigingen
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 19%
 
 ---
 
 
 # Op rollen gebaseerde machtigingen {#role-based-permissions}
 
-[!UICONTROL Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. ] Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code naar de **Git Repository** te duwen. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om de Zeer belangrijke Indicatoren van Prestaties (KPIs) te bepalen en plaatsingen goed te keuren.
+[!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code naar de **Git Repository** te duwen. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om de Zeer belangrijke Indicatoren van Prestaties (KPIs) te bepalen en plaatsingen goed te keuren.
 
 ## Gebruikersmachtigingen {#user-permissions}
 
