@@ -1,13 +1,16 @@
 ---
-title: Ervaar fragmenten
+title: Ervaringsfragmenten
 description: Breid Adobe Experience Manager uit als fragmenten voor de cloud-service.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 0%
 
 ---
 
 
-# Ervaar fragmenten{#experience-fragments}
+# Ervaringsfragmenten{#experience-fragments}
 
 ## De basisbeginselen {#the-basics}
 
