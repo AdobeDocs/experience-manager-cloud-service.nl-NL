@@ -3,6 +3,9 @@ title: Aanbiedingen maken en beheren
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +78,7 @@ U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoe
 
 Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u probeert om een voorstel te schrappen dat in een ervaring wordt gebruikt, wordt u ertoe aangezet om de schrapping te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
 
-U kunt een voorstel schrappen terwijl het bekijken van of omslaginhoud in een aanbiedingsbibliotheek of onderzoeksresultaten.
+U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 
 1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Verwijderen**.
 
