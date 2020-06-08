@@ -3,6 +3,9 @@ title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience
 description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor de Cloud Service Foundation voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +30,7 @@ Op het niveau van de Stichting AEM, wordt het Persoonlijke Gegevens die wordt op
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de console van het Beleid van de Gebruiker, door aan **[!UICONTROL Hulpmiddelen te doorbladeren - Veiligheid - Gebruikers]** of door rechtstreeks te doorbladeren aan `https://<serveraddress>:<serverport>/security/users.html`
+1. Open de console van het Beleid van de Gebruiker, door aan **[!UICONTROL Tools - Security - Users]** of rechtstreeks te doorbladeren aan `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -37,11 +40,11 @@ Op het niveau van de Stichting AEM, wordt het Persoonlijke Gegevens die wordt op
 
    ![zoeken naar account](assets/dpp-foundation-01.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder het lusje van **[!UICONTROL Details]** .
+1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder het **[!UICONTROL Details]** lusje.
 
    ![gebruikersprofiel](assets/dpp-foundation-02.png)
 
-### HTTP-API {#http-api}
+### HTTP API {#http-api}
 
 Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
@@ -95,9 +98,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 >
 > Voor AEM als cloudservice is er geen handmatige procedure beschikbaar in de gebruikersinterface voor het verwijderen van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
 
-### HTTP-API {#http-api-1}
+### HTTP API {#http-api-1}
 
-De volgende procedures gebruiken het hulpmiddel van de `curl` bevellijn om te illustreren hoe te om de gebruiker met de **[!UICONTROL kavery]** `userId` onbruikbaar te maken en haar profielen te schrappen beschikbaar bij de standaardplaats.
+In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en hoe u de profielen die beschikbaar zijn op de standaardlocatie, kunt verwijderen.
 
 **De startpagina van de gebruiker opzoeken:**
 
