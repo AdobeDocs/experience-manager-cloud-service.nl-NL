@@ -4,6 +4,9 @@ description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (c
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: tm+mt
+source-wordcount: '1244'
+ht-degree: 1%
 
 ---
 
@@ -143,13 +146,13 @@ Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-In de Manager van de Ervaring, is de activaverwerking gebaseerd op de configuratie van Profielen **[!UICONTROL van de]** Verwerking die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
+In de Manager van de Ervaring, is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
 Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Klanten die een upgrade uitvoeren naar Experience Manager als cloudservice uit eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van middelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] -workflow werden gebruikt, worden niet ondersteund.
+Klanten die een upgrade uitvoeren naar Experience Manager als cloudservice uit eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van middelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
 
 De volgende workflowstappen worden in Experience Manager ondersteund als Cloud Service.
 
