@@ -1,13 +1,16 @@
 ---
-title: Handleiding Snel aan de slag voor het ontwerpen van pagina's
+title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 4%
 
 ---
 
 
-# Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s {#quick-guide-to-authoring-pages}
+# Handleiding Snel aan de slag met de authoring van pagina&#39;s {#quick-guide-to-authoring-pages}
 
 Dit document is bedoeld als snelle handleiding op hoog niveau voor het ontwerpen van belangrijke pagina&#39;s in AEM. Dit document:
 
@@ -17,7 +20,7 @@ Dit document is bedoeld als snelle handleiding op hoog niveau voor het ontwerpen
 Zie voor meer informatie over ontwerpen met AEM:
 
 * [Concepten van authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
 ## Enkele snelle tips {#a-few-quick-hints}
 
@@ -194,7 +197,7 @@ Er zijn twee (hoofd)methoden voor het [bewerken van pagina-eigenschappen](/help/
 * Tijdens het [bewerken van de pagina](#editing-your-page-content):
 
    1. Open het menu **Pagina-informatie** .
-   1. Selecteer Eigenschappen **** openen om het dialoogvenster voor het bewerken van de eigenschappen te openen.
+   1. Select **Open Properties** to open the dialog for editing the properties.
 
       ![Paginagegevens, knop](/help/sites-cloud/authoring/assets/page-information.png)
 
@@ -217,7 +220,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-cloud/authoring/fundame
    1. Open het menu **Pagina-informatie** .
    1. Selecteer **Pagina** publiceren.
 
-* U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie Publicatie **** beheren, die alleen beschikbaar is op de werkbalk (niet via de snelle handelingen).
+* U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie **Publicatie beheren**, die alleen beschikbaar is op de werkbalk (niet via de snelle acties).
 
    ![Knop Publicatie beheren](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,7 +233,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-cloud/authoring/fundame
 Deze acties kunnen allemaal worden geactiveerd door:
 
 1. [Navigeer naar de pagina](#finding-your-page) die u wilt verplaatsen, kopiëren en plakken of verwijderen.
-1. Selecteer het pictogram Kopiëren (en vervolgens plakken), Verplaatsen of Verwijderen naar wens met een van de volgende methoden:
+1. Selecteer het pictogram voor kopiëren (en vervolgens plakken), verplaatsen of verwijderen naar wens met een van de volgende methoden:
 
    * [Snelle handelingen (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de vereiste bron.
    * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
@@ -251,7 +254,7 @@ Deze acties kunnen allemaal worden geactiveerd door:
 
 ### De pagina vergrendelen (en vervolgens ontgrendelen) {#locking-your-page-then-unlocking}
 
-[Door een pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) te vergrendelen voorkomt u dat andere auteurs er tijdens het vergrendelen aan werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u:
+[Door een pagina te vergrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
 * Het vervolgkeuzemenu [](#editing-the-page-properties) Pagina-informatie wanneer u een pagina bewerkt.
