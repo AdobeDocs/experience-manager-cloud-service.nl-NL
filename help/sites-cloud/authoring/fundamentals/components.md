@@ -1,13 +1,16 @@
 ---
-title: Componenten
+title: Onderdelen
 description: Componenten vormen de fundamentele bouwsteen voor inhoudspagina's in AEM
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 3%
 
 ---
 
 
-# Componenten {#components}
+# Onderdelen {#components}
 
 Componenten vormen de fundamentele bouwsteen voor inhoudspagina&#39;s in Adobe Experience Manager (AEM). Componenten zoals afbeeldingen, tekst, titels, enz. kunt u eenvoudig slepen en neerzetten om uw inhoud samen te stellen.
 
