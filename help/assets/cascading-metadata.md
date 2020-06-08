@@ -1,14 +1,17 @@
 ---
-title: Trapsgewijze metagegevens
+title: Trapsgewijze metadata
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 11%
 
 ---
 
 
-# Trapsgewijze metagegevens {#cascading-metadata}
+# Cascading Metadata {#cascading-metadata}
 
 Wanneer gebruikers de metagegevens van een element vastleggen, verschaffen ze informatie in de verschillende beschikbare velden. U kunt specifieke metagegevensvelden of veldwaarden weergeven die afhankelijk zijn van de opties die in de andere velden zijn geselecteerd. Een dergelijke voorwaardelijke weergave van metagegevens wordt trapsgewijze metagegevens genoemd. Met andere woorden, u kunt een afhankelijkheid maken tussen een bepaald metagegevensveld/een bepaalde waarde en een of meer velden en/of hun waarden.
 
@@ -32,26 +35,26 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
-1. Selecteer op de pagina **[!UICONTROL Schema-formulieren]** een schema en tik op **[!UICONTROL Bewerken]** of klik op Bewerken op de werkbalk om het schema te bewerken.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. Selecteer op de pagina **[!UICONTROL Schema Forms]** een schemaformulier en tik of klik op **[!UICONTROL Edit]** op de werkbalk om het schema te bewerken.
 
    ![select_form](assets/select_form.png)
 
-1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op het tabblad **[!UICONTROL Instellingen]** .
+1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het **[!UICONTROL Settings]** tabblad op.
 
    Als u een nieuw tabblad wilt maken, tikt u of klikt u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
    ![add_tab](assets/add_tab.png)
 
-1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschappenpad op het tabblad **[!UICONTROL Instellingen]** . Voeg een optionele beschrijving toe.
+1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het **[!UICONTROL Settings]** tabblad op. Voeg een optionele beschrijving toe.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u Handmatig **** toevoegen en tikt u op Keuze **** toevoegen en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
+   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** de optie, tikt u erop of klikt u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
-   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Toevoegen via JSON-pad]** en geeft u het pad van het JSON-bestand op. AEM haalt de sleutel-waarde paren in real time op wanneer het formulier aan de gebruiker wordt gepresenteerd.
+   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. AEM haalt de sleutel-waarde paren in real time op wanneer het formulier aan de gebruiker wordt gepresenteerd.
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
    ![add_choice](assets/add_choice.png)
@@ -70,12 +73,12 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het tabblad **[!UICONTROL Regels]** .
+1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het **[!UICONTROL Rules]** tabblad.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Kies onder **[!UICONTROL Vereiste]** de optie **[!UICONTROL Vereist op basis van de optie Nieuwe regel]** .
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]**.
+1. Tik of klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik of klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
    ![define_rule](assets/define_rule.png)
 
@@ -83,9 +86,9 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    >
    >U kunt regels gebruiken voor vervolgkeuzelijsten met handmatig vooraf gedefinieerde waarden. Vervolgkeuzemenu&#39;s met geconfigureerd JSON-pad kunnen niet worden gebruikt met regels die vooraf gedefinieerde waarden gebruiken om voorwaarden toe te passen. Als de waarden bij uitvoering vanuit JSON worden geladen, is het niet mogelijk een vooraf gedefinieerde regel toe te passen.
 
-1. Kies onder **[!UICONTROL Zichtbaarheid]** de optie **[!UICONTROL Zichtbaar op basis van de nieuwe regeloptie]** .
+1. Kies onder **[!UICONTROL Visibility]** de optie **[!UICONTROL Visible, based on new rule]**.
 
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Tik of klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik of klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -95,16 +98,16 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    >[!NOTE]
    >
-   >U kunt **[!UICONTROL Vereiste]** - en **[!UICONTROL Zichtbaarheidsvoorwaarde]** onafhankelijk van elkaar toepassen.
+   >U kunt de voorwaarde **[!UICONTROL Requirement]** en de voorwaarde **[!UICONTROL Visibility]** onafhankelijk van elkaar toepassen.
 
 1. Op dezelfde manier creeer een gebiedsdeel tussen de waarde Video op het gebied van het Type van Activa en andere gebieden, zoals Codec en Duur.
-1. Herhaal de stappen om documentelementen (PDF en Word) afhankelijk te maken in het veld [!UICONTROL Elementtype] en velden zoals Aantal  pagina&#39;s en [!UICONTROL Auteur].
-1. Click **[!UICONTROL Save]**. Pas het metagegevensschema toe op een map.
+1. Herhaal de stappen om documentelementen (PDF en Word) in het [!UICONTROL Asset Type] veld en velden zoals [!UICONTROL Page Count] en [!UICONTROL Author], afhankelijk te maken.
+1. Klik op **[!UICONTROL Save]**. Pas het metagegevensschema toe op een map.
 
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
 
    ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
-   *Afbeelding:Trapsgewijze metagegevens voor video-elementen*
+   *Afbeelding: Trapsgewijze metagegevens voor video-elementen*
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
-   *Afbeelding:Trapsgewijze metagegevens voor documentelementen*
+   *Afbeelding: Trapsgewijze metagegevens voor documentelementen*
