@@ -3,6 +3,9 @@ title: Een AEM-connector onderhouden
 description: Een AEM-connector onderhouden
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 20%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 Een AEM-connector onderhouden
 ============================
 
-Dit artikel bevat informatie over het handhaven van een Schakelaar AEM en zou samen met artikelen over het [uitvoeren](implement.md) en het [voorleggen](submit.md) van schakelaars moeten worden gelezen.
+Dit artikel bevat informatie over het onderhouden van een AEM-connector en moet worden gelezen in combinatie met artikelen over het [implementeren](implement.md) en [verzenden](submit.md) van connectors.
 
 Zelfs na de eerste voorlegging, kunnen er redenen voor een partner zijn schakelaar van AEM bijwerken, of toe te schrijven aan een nieuwe versie van AEM of onafhankelijk van dat - bijvoorbeeld om eigenschappen toe te voegen of insecten te bevestigen. Dit artikel schetst het proces voor beide scenario&#39;s en beschrijft ook het typische proces van een klant om schakelaars te bevestigen wanneer het bevorderen van AEM.
 
