@@ -1,8 +1,11 @@
 ---
 title: Bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
