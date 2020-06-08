@@ -1,13 +1,16 @@
 ---
-title: Doelinhoud ontwerpen met doelmodus
+title: Authoring van getargete content met targetingmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '5351'
+ht-degree: 6%
 
 ---
 
 
-# Doelinhoud ontwerpen met doelmodus {#authoring-targeted-content-using-targeting-mode}
+# Authoring van getargete content met targetingmodus {#authoring-targeted-content-using-targeting-mode}
 
 Maak specifieke inhoud met behulp van de doelmodus van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen:
 
@@ -48,7 +51,7 @@ Schakel over naar de modus Doel om toegang te krijgen tot de gereedschappen voor
 Ga naar de modus Doel:
 
 1. Open de pagina waarvoor u doelinhoud wilt ontwerpen.
-1. Klik of tik op de werkbalk boven aan de pagina op het vervolgkeuzemenu voor de modus om de beschikbare modustypen weer te geven.
+1. Klik of tik op de werkbalk boven aan de pagina op de vervolgkeuzelijst met modi om de beschikbare modustypen weer te geven.
 
    ![Doelmodus](/help/sites-cloud/authoring/assets/targeted-mode.png)
 
@@ -137,7 +140,7 @@ Nadat u het doelproces [hebt](#the-targeting-process-create-target-and-goals-set
 >
 >Een aanbieding is de inhoud van een doelcomponent.
 
-De ervaringen worden getoond in de ruit van het publiek. In het volgende voorbeeld zijn de ervaringen **Standaard**, **Vrouwelijk**, **Vrouwelijk ouder dan 30** en **Vrouwelijk jonger dan 30**. In dit voorbeeld wordt het standaardaanbod van een beoogde **afbeeldingscomponent** getoond.
+De ervaringen worden weergegeven in het deelvenster Doelgroep. In het volgende voorbeeld zijn de ervaringen **Standaard**, **Vrouwelijk**, **Vrouwelijk ouder dan 30** en **Vrouwelijk jonger dan 30**. In dit voorbeeld wordt het standaardaanbod van een beoogde **afbeeldingscomponent** getoond.
 
 ![Doelafbeeldingscomponent](/help/sites-cloud/authoring/assets/targeted-image-component.png)
 
@@ -145,7 +148,7 @@ Wanneer u een andere ervaring hebt geselecteerd, wordt in de component Image het
 
 ![Doelafbeeldingscomponent gewijzigd](/help/sites-cloud/authoring/assets/targeted-image-different.png)
 
-Wanneer een ervaring wordt geselecteerd en de doelcomponent geen aanbieding voor die ervaring omvat, toont de component **Add Voorstel** bovenop de semi-transparante standaardaanbieding. Wanneer geen aanbieding voor een ervaring is gecreeerd, wordt de **Standaard** aanbieding getoond voor het segment dat aan de ervaring in kaart wordt gebracht.
+Wanneer een ervaring wordt geselecteerd en de doelcomponent geen aanbieding voor die ervaring omvat, toont de component **Aanbieding toevoegen** bovenop de semitransparante standaardaanbieding. Wanneer geen aanbieding voor een ervaring is gecreëerd, wordt de **Standaardaanbieding** getoond voor het segment dat aan de ervaring is toegewezen.
 
 ![Voorstel toevoegen](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
 
@@ -283,7 +286,7 @@ Als u de doelinhoud wilt bewerken, klikt of tikt u op **Doelstelling starten **v
    >
    >Beheerders kunnen bepalen of deze configuratie vereist is bij `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
-   >Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje Locatie **** forceren in.
+   >Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje **Locatie forceren** in.
 
 1. Selecteer de ervaring waarvoor u de aanbieding wilt maken.
 1. Maak het voorstel:
@@ -388,7 +391,7 @@ Het publiek verschijnt aan de linkerkant van het kaartdiagram, en de ervaringen 
 
 ![Toewijzingspubliek](/help/sites-cloud/authoring/assets/targeted-diagram.png)
 
-Definieer een publiek met een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Als de pagina niet is gekoppeld aan een Adobe Target-cloudconfiguratie, zijn AEM-segmenten beschikbaar voor het definiëren van soorten publiek. Als de pagina is gekoppeld aan een Adobe Target-cloudconfiguratie, gebruikt u Doelsegmenten.
+Definieer een publiek met een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Wanneer de pagina niet is gekoppeld aan een Adobe Target-wolkenconfiguratie, zijn AEM-segmenten beschikbaar voor het definiëren van soorten publiek. Als de pagina is gekoppeld aan een Adobe Target-cloudconfiguratie, gebruikt u Doelsegmenten.
 
 Zie [Richtingsmotor](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine)voor informatie over motoren.
 
@@ -436,7 +439,7 @@ Als Adobe Target wordt gebruikt als de doelengine:
 
 ![Adobe Target als doelengine](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
-Als u Adobe Target gebruikt als de doelengine en u A4T Analytics hebt geconfigureerd voor de account, hebt u een extra vervolgkeuzelijst Bron **** rapporteren:
+Als u Adobe Target gebruikt als de doelengine en u A4T Analytics hebt geconfigureerd voor het account, hebt u een extra vervolgkeuzemenu voor **Bron van rapportage**:
 
 ![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
 
@@ -467,7 +470,7 @@ Om montages te vormen wanneer het gebruiken van AEM richtend:
 1. Als u wilt opgeven wanneer de activiteit begint, selecteert u een van de volgende waarden in het keuzemenu **Start** :
 
    * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu **Einde** om een van de volgende waarden te selecteren:
 
@@ -483,7 +486,7 @@ Doelstellingen en instellingen configureren als Adobe Target wordt gebruikt:
 1. Als u wilt opgeven wanneer de activiteit begint, selecteert u een van de volgende waarden in het keuzemenu **Start** :
 
    * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu **Einde** om een van de volgende waarden te selecteren:
 
@@ -491,17 +494,17 @@ Doelstellingen en instellingen configureren als Adobe Target wordt gebruikt:
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
 1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal** of **Hoog** te selecteren.
-1. Als u Adobe Analytics hebt geconfigureerd voor uw Adobe Target-account, wordt het vervolgkeuzemenu **Bron** rapporteren weergegeven. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
+1. Als u Adobe Analytics hebt geconfigureerd voor uw Adobe Target-account, wordt het vervolgkeuzemenu **Bron van rapportage** weergegeven. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
 
    Als u **Adobe Analytics** selecteert, selecteert u het bedrijf en de rapportsuite. Als u **Adobe Target** selecteert, is geen actie vereist.
 
    ![Rapportbron](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. In het Metrische **gebied van het** Goal, onder **Mijn Primair Doel** selecteer succesmetrisch u wilt volgen - Omzetting, Inkomsten, Betrokkenheid - en ga in hoe die metrisch wordt gemeten (of welke actie het publiek neemt om erop te wijzen dat een doel is bereikt). Zie de definitie van de streefcijfers in de vorige tabel en zie de documentatie [van](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) Adobe Target over succesmetriek.
+1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) over metrische data voor succes.
 
    U kunt de naam van het doel wijzigen door op de drie stippen in de rechterbovenhoek te klikken en **Naam wijzigen** te selecteren.
 
-   Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u Alle velden **** wissen.
+   Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u **Alle velden wissen**.
 
    Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde instellingen** om deze te openen. Zie hoe succesmetriek worden geteld in de vorige tabel en [Adobe Target-documentatie](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
 
@@ -586,7 +589,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
 
 1. Configureer de instellingen voor de doelcomponent zoals beschreven in de volgende tabellen.
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | Locatie | De locatie is een tekenreeks die de doellocatie van de inhoud een naam geeft en aanbiedingen verbindt met plaatsen (of locaties of componenten) op de pagina waar deze aanbiedingen moeten worden geplaatst. Dit veld is een algemene waarde. Als u een voorstel in een component zet, onthoudt de aanbieding de locatie-id. Wanneer de pagina wordt uitgevoerd, evalueert de motor de segmenten van de gebruiker en gebaseerd op dit, lost het de ervaringen van de actieve campagnes op die zouden moeten worden getoond. Vervolgens worden de locatie-id&#39;s op de pagina gecontroleerd en wordt geprobeerd voorstellen met die locatie-id&#39;s aan te passen. |
 | Engine | Selecteer tussen Regels aan de clientzijde (zonder reeksspatiëring), Adobe Target, ContextHub en Adobe Campagne, afhankelijk van de engine die u wilt gebruiken. |
@@ -595,7 +598,7 @@ Als u Adobe Target als engine selecteert:
 
 ![Doel als motor](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | Nauwkeurige bestemming | Als u nauwkeurige adressering inschakelt, weet de component dat deze moet wachten totdat de context- of contexthubgegevens beschikbaar zijn voordat de aanvraag naar Adobe Target wordt verzonden. Hierdoor kan de laadtijd toenemen. Voor creatie, wordt het nauwkeurige richten altijd toegelaten. Als u het selectievakje Nauwkeurig aanwijzen inschakelt, voert het selectievakje eerst een mboxDefine uit en later een mboxUpdate. Dit resulteert in een Ajax-aanvraag zodra de gegevens beschikbaar zijn. Als u het selectievakje Nauwkeurig aanwijzen niet inschakelt, voert de mbox een mboxCreate uit die onmiddellijk een synchrone aanvraag oplevert (in dit geval zijn mogelijk nog niet alle contextgegevens beschikbaar). Opmerking: Het in- of uitschakelen van het nauwkeurig opgeven van een bepaald onderdeel heeft geen invloed op de instellingen die u globaal hebt ingesteld. U kunt globale instellingen altijd overschrijven door Accurate doelen selecteren in de component. |
 | Omgezette segmenten opnemen | Het selecteren van deze controledoos omvat alle opgeloste segmenten in de mbox vraag en om het even welke parameters die in de pagina en in het kader worden gevormd. Dit werkt alleen in situaties met XML API waarin u AEM-segmenten synchroniseert. Als u segmenten in AEM hebt die niet door Adobe Target (als manuscriptsegmenten) worden behandeld, dan staat deze optie u toe om het segment in AEM op te lossen en informatie te verzenden naar Adobe Target dat het segment actief is. |
