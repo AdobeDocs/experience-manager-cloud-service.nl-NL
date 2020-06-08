@@ -3,6 +3,9 @@ title: 'AEM-projectopslagplaatsstructuurpakket  '
 description: Voor Adobe Experience Manager als een met cloudservice gefinancierde projecten is een definitie vereist van het subpakket Structuur in opslagplaats met als enig doel de wortels van de JCR-opslagplaats te definiëren waarin de subpakketten Code van het project worden geïmplementeerd.
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 9%
 
 ---
 
