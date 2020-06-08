@@ -3,6 +3,9 @@ title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 5%
 
 ---
 
