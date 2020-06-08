@@ -3,6 +3,9 @@ title: Werken met workflows
 description: Met workflows in AEM kunt u een reeks stappen automatiseren die worden uitgevoerd op een pagina of element.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 7%
 
 ---
 
