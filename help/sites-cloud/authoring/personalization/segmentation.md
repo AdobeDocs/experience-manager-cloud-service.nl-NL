@@ -1,13 +1,16 @@
 ---
-title: Segmentering begrijpen
+title: Inzicht in segmentering
 description: Segmentering is een belangrijke overweging bij het maken van een campagne
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 0%
 
 ---
 
 
-# Segmentering begrijpen {#understanding-segmentation}
+# Inzicht in segmentering {#understanding-segmentation}
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. In de meeste gevallen zult u segmenten moeten hebben die reeds worden bepaald alvorens uw campagne te beginnen.
 
