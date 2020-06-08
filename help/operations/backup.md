@@ -3,6 +3,9 @@ title: Back-up en herstel in AEM als cloudservice
 description: 'Back-up en herstel in AEM als cloudservice '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of ge
 >
 >Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld.
 
-## Hoe wordt het gebruikt
+## Het gebruik
 
 Klanten dienen een ondersteuningsticket in te dienen waarin het probleem wordt beschreven dat zich voordoet. Dit zal leiden tot een onderzoek door de Steun van Adobe die zal bepalen als herstelt noodzakelijk is.
 
