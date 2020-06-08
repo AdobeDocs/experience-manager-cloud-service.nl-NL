@@ -1,16 +1,19 @@
 ---
-title: Maven Project Version Handling
+title: Maven-projectversiebeheer
 description: Maven Project Version Handling - Cloud Services
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 6%
 
 ---
 
 
-# Maven Project Version Handling {#maven-project-version-handling}
+# Maven-projectversiebeheer {#maven-project-version-handling}
 
 
-## Werken met beheer van beheerde projectversie {#understanding-project-version}
+## Understanding Maven Project Version Handling {#understanding-project-version}
 
 Voor stage- en productieimplementaties genereert Cloud Manager een unieke, incrementele versie.
 
