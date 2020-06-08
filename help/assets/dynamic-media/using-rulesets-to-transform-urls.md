@@ -3,6 +3,9 @@ title: Regels gebruiken om URL's te transformeren
 description: U kunt regelsets implementeren in dynamische media om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 3%
 
 ---
 
@@ -58,19 +61,19 @@ Zie ook &#39;element&#39; [gebruiken in plaats van &#39;is&#39;-afbeelding in ee
 
 1. Upload het bestand met de regelset als volgt:
 
-   * Klik op **[!UICONTROL Uploaden]** op de algemene navigatiebalk.
-   * Klik in de linkerbovenhoek van de pagina **[!UICONTROL Uploaden]** op **[!UICONTROL Bladeren]**.
-   * Blader in het dialoogvenster **[!UICONTROL Openen]** naar het bestand met de regelset (XML).
-   * Selecteer het bestand en klik op **[!UICONTROL Openen]**.
-   * Selecteer rechts van de pagina **[!UICONTROL Uploaden]** een doelmap voor het bestand met regelsets.
-   * Controleer of onder aan de pagina de optie **[!UICONTROL Publiceren na uploaden]** is ingeschakeld.
-   * Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Uploaden]** verzenden.
-   * Klik op **[!UICONTROL Taken]** op de algemene navigatiebalk om de status van de uploadtaak te controleren. Wanneer de kolom **[!UICONTROL Status]** op de pagina **[!UICONTROL Taak]** aangeeft Uploaden voltooid, gaat u door met de volgende stappen.
+   * Klik op de algemene navigatiebalk **[!UICONTROL Upload]**.
+   * Klik op de **[!UICONTROL Upload]** pagina in de linkerbovenhoek **[!UICONTROL Browse]**.
+   * Blader in het **[!UICONTROL Open]** dialoogvenster naar het bestand met de regelset (XML).
+   * Selecteer het bestand en klik op **[!UICONTROL Open]**.
+   * On the right side of the **[!UICONTROL Upload]** page, select a destination folder for the rule set file.
+   * Controleer of onder aan de pagina **[!UICONTROL Publish After Uploading]** is ingeschakeld.
+   * In the bottom right corner of the page, click **[!UICONTROL Submit Upload]**.
+   * Klik op de algemene navigatiebalk om de status van de uploadtaak **[!UICONTROL Jobs]** te controleren. Ga door met de volgende stappen als de **[!UICONTROL Status]** kolom op de **[!UICONTROL Job]** pagina zegt: Uploaden voltooid.
 
-1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Instellingen > Toepassingsinstellingen > Publicatie-instelling > Afbeeldingsserver]**.
-1. Ga naar de pagina Publiceren **[!UICONTROL van]** afbeeldingsserver onder de groep **[!UICONTROL Catalog Management]** en zoek het pad **[!UICONTROL voor het]** regelsetdefinitiebestand en klik op **[!UICONTROL Selecteren]**.
-1. Op de **[!UICONTROL Uitgezochte pagina van het Dossier van de Definitie van de Reeks van de Regel (XML)]** , doorblader aan uw dossier van de regelreeks, dan in de laag-juiste hoek van de pagina, klik **[!UICONTROL Uitgezocht]**.
-1. Klik in de rechterbenedenhoek van de pagina Setup op **[!UICONTROL Sluiten]**.
+1. Klik op de navigatiebalk boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Zoek op de pagina **[!UICONTROL Image Server Publish]** onder de groep **[!UICONTROL Catalog Management]** naar **[!UICONTROL Rule Set Definition File Path]** en klik vervolgens op **[!UICONTROL Select]**.
+1. Blader op de pagina **[!UICONTROL Select Rule Set Definition File (XML)]** naar het bestand met de regelset en klik vervolgens in de rechterbenedenhoek van de pagina op **[!UICONTROL Select]**.
+1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.
 1. Voer een publicatietaak voor afbeeldingsservers uit.
 
    De regelvastgestelde voorwaarden worden toegepast op de aanvragen voor de live dynamische mediafbeeldenservers.
