@@ -3,6 +3,9 @@ title: Projecten beheren
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 11%
 
 ---
 
@@ -26,9 +29,9 @@ Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een proje
 * Fotoproject van product
 * Omzettingsproject
 
-De procedure om een project tot stand te brengen is het zelfde van project aan project. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-cloud/authoring/projects/overview.md) en [werkschema](/help/sites-cloud/authoring/projects/workflows.md).  Een nieuw project maken:
+De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-cloud/authoring/projects/overview.md) en [workflows](/help/sites-cloud/authoring/projects/workflows.md).  Een nieuw project maken:
 
-1. Tik/klik in **Projecten** op **Maken** om de wizard Project **** maken te openen:
+1. Tik of klik in **Projecten** op **Maken** om de wizard **Project maken** te openen:
 1. Selecteer een sjabloon en klik op **Volgende**.
 
    ![Een project maken](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -72,7 +75,7 @@ De zelfde methode wordt gebruikt om een project van de console of een verbonden 
 
 >[!NOTE]
 >
->Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren. Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **MijnProjecteigenaars**, **Mijn Projecteditors**, **Mijn projectwaarnemers** hebben. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
 
 ### Items toevoegen aan een tegel {#adding-items-to-a-tile}
 
