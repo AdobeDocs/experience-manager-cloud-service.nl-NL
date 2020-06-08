@@ -1,13 +1,16 @@
 ---
-title: Ervaar fragmenten
+title: Ervaringsfragmenten
 description: Met Adobe Experience Manager kunt u uw ervaringen herbruikbaar en flexibel maken.
 translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 7%
 
 ---
 
 
-# Ervaar fragmenten {#experience-fragments}
+# Ervaringsfragmenten {#experience-fragments}
 
 In Adobe Experience Manager als Cloud Service, een Experience Fragment:
 * is een groep van een of meer componenten
@@ -165,12 +168,12 @@ Een ervaringsfragment maken:
 
 1. Selecteer Fragment **van de** Ervaring om de **Create tovenaar van het Fragment** van de Ervaring te openen.
 
-   Selecteer de vereiste **sjabloon** en **kies Volgende**:
+   Selecteer de vereiste **sjabloon** en kies vervolgens **Volgende**:
 
    ![Een ervaringsfragmentsjabloon selecteren](/help/sites-cloud/authoring/assets/xf-03.png)
 
 
-1. Voer de **eigenschappen** in voor het **ervaringsfragment**.
+1. Voer de **Eigenschappen** voor uw **Experience-fragment** in.
 
    Een **titel** is verplicht. Als de **naam** leeg blijft, wordt deze afgeleid van de **titel**.
 
@@ -243,7 +246,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 1. Voeg het daadwerkelijke fragment van de Ervaring aan de componenteninstantie toe; ofwel:
 
    * Sleep het vereiste fragment uit de middelenbrowser en zet het neer op de component.
-   * Selecteer **Vorm** van de componententoolbar en specificeer het te gebruiken fragment, bevestig met **Gedaan**.
+   * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
    >[!NOTE]
    >
    >Bewerken werkt op de werkbalk van de component als een sneltoets waarmee het fragment in de fragmenteditor wordt geopend.
@@ -268,11 +271,11 @@ Een nieuw bouwblok maken:
 
    ![Knop Gebouwd blok](/help/sites-cloud/authoring/assets/xf-10.png)
 
-1. Voer de naam van het **bouwblok** in en bevestig dit met **Omzetten**:
+1. Voer de naam van de **bouwsteen** in en bevestig dit met **Converteren**:
 
    ![Naambouwblok](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Het **bouwblok** wordt weergegeven op het linkertabblad (**Lokaal**) en kan worden geselecteerd voor verdere actie:
+1. De **bouwsteen** wordt weergegeven op het linkertabblad (**Lokaal**) en kan worden geselecteerd voor verdere actie:
 
    ![Bouwblok in de spoorstaaf](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -280,7 +283,7 @@ Een nieuw bouwblok maken:
 
 Uw bouwsteen is zichtbaar in de Blokken van de **Bouwstijl** tabel. Voor elk blok zijn de volgende acties beschikbaar:
 
-* **Ga naar stramien**: de hoofdvariant openen op een nieuw tabblad
+* **Ga naar master**: open de mastervariatie op een nieuw tabblad
 * **Naam wijzigen**
 * **Verwijderen**
 
@@ -302,7 +305,7 @@ Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergege
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-De details worden getoond in alle meningen van de console van de Fragmenten **van de** Ervaring, met de Mening **van de** Lijst met details van het uitvoeren naar Doel: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Details worden getoond in alle weergaven van de console voor **Experience-fragmenten**, met de **Lijstweergave** inclusief details van een exportbewerking naar het doel: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
 
    ![Ervaar fragmentdetails](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -316,7 +319,7 @@ De details worden getoond in alle meningen van de console van de Fragmenten **va
    >
    >Deze lusjes worden getoond wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring opent.
    >
-   >Als u Eigenschappen **** opent tijdens het bewerken van een Ervingsfragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
+   >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
 
    ![Ervaar fragmenteigenschappen](/help/sites-cloud/authoring/assets/xf-17.png)
 
