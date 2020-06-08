@@ -3,6 +3,9 @@ title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 12%
 
 ---
 
@@ -13,13 +16,13 @@ De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren 
 
 ## Uw site beheren {#managing-your-site}
 
-Met de **Sites** -console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde bron), broodkruimels en, indien geselecteerd, secundaire rails (bijvoorbeeld tijdlijn en verwijzingen).
+Met de **Sites**-console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde resource), navigatiepaden en, indien geselecteerd, secundaire sporen (bijvoorbeeld tijdlijn en verwijzingen).
 
 Bijvoorbeeld, kolommening:
 
 ![Kolomweergave](/help/sites-cloud/authoring/assets/column-view.png)
 
-## Pagina-inhoud bewerken {#editing-page-content}
+## Paginacontent bewerken {#editing-page-content}
 
 U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
@@ -48,7 +51,7 @@ Componenten zijn de bouwstenen van AEM-inhoud. U plaatst veelvoudige componenten
 
 De componentenbrowser toont alle componenten die voor gebruik op uw huidige pagina beschikbaar zijn. U kunt deze naar de juiste locatie slepen en vervolgens bewerken om uw inhoud toe te voegen.
 
-De componentenbrowser is een lusje binnen het zijpaneel (samen met [activa browser](#assets-browser) en [inhoudsboom](#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
+De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowser](#assets-browser) en de [contentstructuur](#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
 ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -83,7 +86,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
-   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of hierop tikken (indien beschikbaar). Bijvoorbeeld voor het **inhoudsfragment**:
+   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor het **inhoudsfragment**:
 
    ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -97,7 +100,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 In de middelenbrowser worden alle elementen weergegeven die beschikbaar zijn voor rechtstreeks gebruik op de huidige pagina. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
 
-De middelenbrowser is een tab in het zijpaneel, samen met de [componentenbrowser](#components-browser) en de [inhoudsstructuur](#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
+De assetbrowser is een tabblad in het zijpaneel, samen met de [componentenbrowser](#components-browser) en de [contentstructuur](#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
 ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -134,7 +137,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
    De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
+   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de gewenste component kunt toevoegen.
 
    ![Berichtenbrowser op mobiele apparaten](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
@@ -201,7 +204,7 @@ Als uw pagina Content Fragments bevat, hebt u ook toegang tot de [browser voor G
 **Verwijzingen** tonen verbindingen met de geselecteerde pagina:
 
 * Blauwdrukken
-* Starten
+* Lanceringen
 * Live kopieën
 * Taalkopieën
 * Binnenkomende koppelingen
@@ -307,7 +310,7 @@ De wegbrowser is georganiseerd als de [kolommening](/help/sites-cloud/authoring/
 ![Padbrowser](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Zodra een bron is geselecteerd, wordt de knop **Selecteren** rechtsboven in het dialoogvenster actief. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
-* Als de context voor de selectie van veelvoudige middelen toestaat, activeert het selecteren van een middel ook de **Uitgezochte** knoop, maar voegt ook een telling van het aantal geselecteerde middelen aan het hoger-recht van het venster toe. Klik op de **X** naast het getal om de selectie van alles op te heffen.
+* Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de **X** naast het getal om de selectie op te heffen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de **X** in het zoekveld om de zoekopdracht te wissen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
