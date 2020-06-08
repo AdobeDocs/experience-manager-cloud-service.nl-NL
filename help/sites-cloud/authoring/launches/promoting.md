@@ -1,13 +1,16 @@
 ---
-title: Starten promoten
+title: Lanceringen promoten
 description: 'U moet opstartiepagina''s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 1%
 
 ---
 
 
-# Starten promoten {#promoting-launches}
+# Lanceringen promoten {#promoting-launches}
 
 U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. Wanneer een startpagina wordt bevorderd, wordt de bijbehorende pagina van de bronpagina&#39;s vervangen door de inhoud van de gepromoveerde pagina. De volgende opties zijn beschikbaar bij het promoten van een startpagina:
 
@@ -18,7 +21,7 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 >[!NOTE]
 >
->Nadat u de startpagina&#39;s naar het doel hebt opgewaardeerd (**Productie**), kunt u de **Productiepagina** &#39;s activeren als een entiteit (om het proces sneller te maken). Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. Zie Promoted Pages [verwerken met AEM-workflow](#processing-promoted-pages-using-aem-workflow).
+>Nadat u de startpagina&#39;s naar het doel hebt opgewaardeerd (**Productie**), kunt u de **Productiepagina** &#39;s activeren als een entiteit (om het proces sneller te maken). Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. See [Processing Promoted Pages Using AEM Workflow](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -42,7 +45,7 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 U kunt lanceringen van of de console van **Plaatsen** of de console van **Lanceringen** bevorderen:
 
-1. Openen:
+1. Open:
    * De **Sites** -console:
       1. Open de [referentieslegel](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) en selecteer de vereiste bronpagina in de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) (of selecteer en open de referentieslegel, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
       1. Selecteer **Starten** (bijvoorbeeld Starten (1)) om een lijst van de specifieke lanceringen te tonen.
@@ -54,7 +57,7 @@ U kunt lanceringen van of de console van **Plaatsen** of de console van **Lancer
 1. In de eerste stap kunt u het volgende opgeven:
    * **Doel**
       * **Starten na promotie verwijderen**
-   * **Toepassingsgebied**
+   * **Scope**
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**
       * **Huidige pagina promoten**
@@ -103,7 +106,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
    ![Starten van instellingen bevorderen](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Selecteer **Volgende**.
-1. Bekijk de promotiegegevens voordat je **Promoten** selecteert:
+1. Bekijk de details van de aanbieding voordat je **Promoten** selecteert:
 
    ![Promotie-instellingen bekijken](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
 
