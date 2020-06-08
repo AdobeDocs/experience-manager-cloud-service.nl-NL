@@ -1,13 +1,16 @@
 ---
-title: Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen
+title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
 description: Leer beste praktijken voor het optimaliseren van beeldkwaliteit in Dynamische Media
 translation-type: tm+mt
 source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+workflow-type: tm+mt
+source-wordcount: '1476'
+ht-degree: 5%
 
 ---
 
 
-# Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen {#best-practices-for-optimizing-the-quality-of-your-images}
+# Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
@@ -50,14 +53,14 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
    * `&op_sharpen=`bedrag,straal,drempel
 
-      * **[!UICONTROL hoeveelheid]** (0-5, sterkte van het effect.)
-      * **[!UICONTROL straal]** (0-250, breedte van de &quot;het scherpen lijnen&quot;getekend rond het scherpte voorwerp, zoals gemeten in pixel.)
+      * **[!UICONTROL amount]** (0-5, sterkte van het effect.)
+      * **[!UICONTROL radius]** (0-250, breedte van de &#39;verscherpingslijnen&#39; die worden getekend rond het verscherpte object, zoals wordt gemeten in pixels.)
 
          Onthoud dat de parameterstraal en de hoeveelheid tegen elkaar werken. Het verminderen van straal kan door stijgende hoeveelheid worden gecompenseerd. Met Straal kunt u nauwkeuriger omgaan, aangezien een lagere waarde alleen de randpixels verscherpt, terwijl met een hogere waarde een bredere reeks pixels wordt verscherpt.
 
-      * **[!UICONTROL drempel]** (0-255, gevoeligheid van effect.)
+      * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
 
-         Deze parameter bepaalt hoe verschillend de verscherpte pixel van het omringende gebied moeten zijn alvorens zij als randpixel worden beschouwd en de filter scherpt hen. Met de parameter **[!UICONTROL threshold]** voorkomt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &#39;ruis&#39; te voorkomen, terwijl randcontrast wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
+         Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
       Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
 
       Help-onderwerp over het verscherpen van een afbeelding in AEM.
@@ -70,9 +73,9 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 Als beste praktijken, begin met de onscherpe parameter van de maskerstraal. De volgende instellingen voor Straal kunt u gebruiken:
 
 * **[!UICONTROL Website]**: 0,2-0,3 pixels
-* **[!UICONTROL Fotografisch afdrukken (250-300 ppi)]**: 0,3-0,5 pixels
-* **[!UICONTROL Offsetdrukwerk (266-300 ppi)]**: 0,7-1,0 pixels
-* **[!UICONTROL Afdrukken van canvas (150 ppi)]**: 1,5-2,0 pixels
+* **[!UICONTROL Photographic printing (250-300 ppi)]**: 0,3-0,5 pixels
+* **[!UICONTROL Offset printing (266-300 ppi)]**: 0,7-1,0 pixels
+* **[!UICONTROL Canvas printing (150 ppi)]**: 1,5-2,0 pixels
 
 Verhoog de waarde geleidelijk van 1,75 naar 4. Als de verscherping nog steeds niet de gewenste manier is, vergroot u de straal met een decimaalteken en voer de hoeveelheid nogmaals uit van 1,75 naar 4. Herhaal deze bewerking zo nodig.
 
@@ -96,7 +99,7 @@ U kunt het beste JPG-compressie gebruiken `&qlt=85,0`.
 jpegSize is een nuttige parameter als u wilt waarborgen dat een beeld een bepaalde grootte voor levering aan apparaten niet overschrijdt die beperkte geheugen hebben.
 
 * Deze parameter wordt ingesteld in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Hiermee wordt de maximaal toegestane grootte voor het leveren van de afbeelding gedefinieerd.
-* `&jpegSize=` communiceert met de JPG-compressieparameter `&qlt=`. Als de JPG-reactie met de opgegeven JPG-compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` de gedefinieerde waarde. Anders `&qlt=` wordt de afbeelding geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte of totdat het systeem bepaalt dat de afbeelding niet past en een fout retourneert.
+* `&jpegSize=` communiceert met de JPG-compressieparameter `&qlt=`. Als de JPG-reactie met de opgegeven JPG-compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` de gedefinieerde waarde. Anders `&qlt=` wordt de afbeelding geleidelijk verkleind totdat deze past in de maximaal toegestane grootte of totdat het systeem bepaalt dat de afbeelding niet past en een fout retourneert.
 
 U kunt de parameter het beste instellen `&jpegSize=` en toevoegen `&qlt=` als u JPG-afbeeldingen levert aan apparaten met een beperkt geheugen.
 
