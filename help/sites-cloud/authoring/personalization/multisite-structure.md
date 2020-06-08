@@ -1,13 +1,16 @@
 ---
-title: Hoe multisite beheer voor gerichte inhoud is gestructureerd
+title: Structurering van beheer voor meerdere sites voor getargete content
 description: Een diagram toont hoe multisite steun voor gerichte inhoud gestructureerd is
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 8%
 
 ---
 
 
-# Hoe multisite beheer voor gerichte inhoud is gestructureerd {#how-multisite-management-for-targeted-content-is-structured}
+# Structurering van beheer voor meerdere sites voor getargete content {#how-multisite-management-for-targeted-content-is-structured}
 
 Het volgende diagram toont hoe multisite steun voor gerichte inhoud gestructureerd is.
 
