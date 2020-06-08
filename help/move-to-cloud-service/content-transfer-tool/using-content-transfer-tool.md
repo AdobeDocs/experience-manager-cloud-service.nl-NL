@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud overbrengen gebruiken
 description: Het gereedschap Inhoud overbrengen gebruiken
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Volg deze sectie om te leren hoe u het gereedschap Inhoud overbrengen kunt gebru
    1. **Toegangstoken**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken van de auteursinstantie terugwinnen door aan te navigeren `/libs/granite/migration/token.json`.
+      >U kunt het toegangstoken van de auteursinstantie terugwinnen door aan te navigeren `/libs/granite/migration/token.json`. Het toegangstoken wordt teruggewonnen van de auteursinstantie van de Dienst van de Wolk.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
