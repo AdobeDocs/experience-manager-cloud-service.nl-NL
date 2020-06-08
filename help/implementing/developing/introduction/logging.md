@@ -3,6 +3,9 @@ title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 1%
 
 ---
 
