@@ -1,17 +1,20 @@
 ---
-title: Concepten ontwerpen
+title: Authoring van concepten
 description: Concepten van ontwerpen in AEM
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
 
-# Concepten ontwerpen {#authoring-concepts}
+# Authoring van concepten {#authoring-concepts}
 
 Een AEM-installatie bestaat meestal uit minstens twee omgevingen:
 
-* Author
+* Auteur
 * Publiceren
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken zodat uw bezoekers deze kunnen openen.
