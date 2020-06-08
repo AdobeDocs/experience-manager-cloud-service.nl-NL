@@ -3,6 +3,9 @@ title: Responsieve lay-out
 description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 7%
 
 ---
 
@@ -104,7 +107,7 @@ Wanneer u bijvoorbeeld de **iPhone 6 Plus** van het apparaat (gedefinieerd met e
 
    * Gebruik het pictogram Apparaat selecteren en selecteer een keuze in een vervolgkeuzelijst.
    * Tik/klik op de apparaatindicator op de emulatorwerkbalk.
-   ![Apparaatvervolgkeuzelijst selecteren](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   ![Vervolgkeuzelijst Apparaat selecteren](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
 1. Nadat een specifiek apparaat is geselecteerd, kunt u:
 
@@ -118,7 +121,7 @@ Wanneer u bijvoorbeeld de **iPhone 6 Plus** van het apparaat (gedefinieerd met e
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
 
-## Een container voor lay-out en de bijbehorende inhoud toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
+## Een lay-outcontainer en de bijbehorende content toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
 
 Een **container** voor layout is een alineasysteem dat:
 
@@ -130,7 +133,7 @@ Een **container** voor layout is een alineasysteem dat:
 >
 >Als de **container** voor layout nog niet beschikbaar is, moet deze expliciet worden geactiveerd voor een alineasysteem/pagina. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. De **container** van de Lay-out is beschikbaar als standaardcomponent in Browser [van](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)Componenten. Van hieruit kunt u het naar de vereiste plaats op de pagina slepen waarna u de Componenten van de **Belemmering hier** placeholder zult zien.
+1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Van hieruit kunt u het naar de vereiste locatie op de pagina slepen waarna u de tijdelijke aanduiding **Componenten hierheen slepen** zult zien.
 1. Vervolgens kunt u componenten aan de lay-outcontainer toevoegen. Deze componenten bevatten de werkelijke inhoud:
 
    ![Lay-outcontainer](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -171,9 +174,9 @@ Als u de lay-out wilt configureren van een responsief raster dat met de containe
 
 **De lay-outmodus** kan op twee manieren worden gestart.
 
-* Gebruik het [modusmenu op de werkbalk](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kies de **modus Indeling** .
-   * Selecteer de modus **Lay-out** op dezelfde manier als u schakelt naar de modus **Bewerken** of **Doelmodus** .
-   * **De modus Lay-out** blijft blijvend en u laat de modus **Lay-out** pas weer los als u een andere modus selecteert via de moduskiezer.
+* Gebruik het [modusmenu op de werkbalk](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kies de modus **Lay-out**
+   * Selecteer de modus **Lay-out** op dezelfde manier als wanneer u schakelt naar de modus **Bewerken** of de modus **Targeting**.
+   * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
 * Wanneer u een afzonderlijke component [bewerkt.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
    * Met de optie **Lay-out** in het snelmenu van de component kunt u overschakelen naar de modus **Lay-out** .
    * **De modus Lay-out** blijft bestaan tijdens het bewerken van de component en keert terug naar de modus **Bewerken** als de focus naar een andere component is gewijzigd.
@@ -224,7 +227,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
    * **Onzichtbaar maken componenten** Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de optie Verborgen componenten **** tonen. In dit voorbeeld zijn twee componenten verborgen.
 
       ![Componenten zichtbaar maken](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Als u de optie Verborgen onderdelen **** tonen selecteert, worden de onderdelen die momenteel op hun oorspronkelijke positie zijn verborgen blauw weergegeven.
+   Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
 
    ![Alle knoppen herstellen](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
 
