@@ -3,11 +3,14 @@ title: Opmerkelijke wijzigingen in Adobe Experience Manager (AEM) als cloudservi
 description: Opmerkelijke wijzigingen in Adobe Experience Manager (AEM) als cloudservice
 translation-type: tm+mt
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkelijke wijzigingen in Adobe Experience Manager (AEM) als cloudservice {#notable-changes-aem-cloud}
+# Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 De AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM-sites op locatie of in de beheerde service van Adobe in vergelijking met de AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
@@ -52,7 +55,7 @@ De webconsole, die in eerdere versies van AEM werd gebruikt om OSGi-instellingen
 
 ## Wijzigingen in publicatieruimte zijn niet toegestaan {#changes-to-publish-repo}
 
-Directe wijzigingen in de publicatieopslagplaats zijn niet toegestaan op AEM Cloud Service. In eerdere versies van AEM (on-premise) of AEM (on-premise) op AMS konden wijzigingen in de code rechtstreeks worden aangebracht in de publicatieopslagplaats, bijvoorbeeld om gebruikers te maken, gebruikersprofielen bij te werken en knooppunten te maken. Dit is niet meer mogelijk en kan op de volgende manieren worden beperkt:
+Directe wijzigingen in de publicatieopslagplaats zijn niet toegestaan op AEM Cloud Service. In eerdere versies van AEM (on-premise) of AEM (on-premise) op AMS konden wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats, bijvoorbeeld om gebruikers te maken, gebruikersprofielen bij te werken en knooppunten te maken. Dit is niet meer mogelijk en kan op de volgende manieren worden beperkt:
 
 * Voor op inhoud en inhoud gebaseerde configuratie: Breng de wijzigingen aan in de auteurinstantie en publiceer deze.
 * Voor code en configuratie: de wijzigingen in de GIT-opslagplaats aan te brengen en de CI/CD-pijpleiding uit te voeren.
@@ -90,7 +93,7 @@ De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
 ## Levering op de website publiceren {#publish-side-delivery}
 
-De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor auteur en publicatieservices worden door gebrek verstrekt in de Dienst van de Wolk AEM.
+De versnelling van HTTP met inbegrip van CDN en het verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in de Dienst van de Wolk AEM.
 
 Voor projectovergangen van AMS of een installatie op locatie raadt Adobe u ten zeerste aan de ingebouwde CDN te gebruiken, omdat de functies in de AEM Cloud Service zijn geoptimaliseerd voor de geleverde CDN.
 
