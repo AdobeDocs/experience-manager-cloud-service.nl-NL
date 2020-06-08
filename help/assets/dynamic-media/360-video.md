@@ -3,11 +3,14 @@ title: 360/VR-video
 description: Leer hoe u werkt met 360 en VR-video (Virtual Reality) in dynamische media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
 
-# 360/VR-video {#vr-video}
+# 360/VR Video {#vr-video}
 
 Bij video&#39;s van 360 graden wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspelen op mobiele apparaten maakt doorgaans gebruik van de ingebouwde gyroscopische besturingselementen.
 
@@ -91,27 +94,27 @@ Zie ook Voorinstellingen [van viewer](/help/assets/dynamic-media/managing-viewer
 
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
-Zie De video- of afbeeldingsviewer [insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie URL&#39;s [koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
-Zie Dynamische media-elementen [toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
+See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Een voorvertoning van 360 video&#39;s weergeven**
 
-1. Navigeer in **[!UICONTROL Elementen]** naar een bestaande 360 Video die u hebt gemaakt. Tik op het 360 Video-element om dit te openen in de voorvertoningsmodus.
+1. Navigeer in **[!UICONTROL Assets]** naar een bestaande 360-video die u hebt gemaakt. Tik op het 360 Video-element om dit te openen in de voorvertoningsmodus.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Tik op het 360-video-element om een voorvertoning van de video weer te geven.
 
-1. Tik in de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
+1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Tik in de lijst Viewers op **[!UICONTROL Video360_social]** en voer een van de volgende handelingen uit:
+   Tik in de lijst Viewers op **[!UICONTROL Video360_social]** een van de volgende handelingen:
 
    * Sleep de muisaanwijzer over de video om de kijkhoek van de statische scène te wijzigen.
-   * Tik op de knop **[!UICONTROL Afspelen]** van de video om te beginnen met afspelen; terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
-   ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 video screenshot.*
+   * Tik op de **[!UICONTROL Play]** knop van de video om te beginnen met afspelen; terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
+   ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
 
    * Tik in de lijst Viewers op **[!UICONTROL Video360VR]**.
 
@@ -119,13 +122,13 @@ Zie Dynamische media-elementen [toevoegen aan pagina&#39;s.](/help/assets/dynami
    ![6_5_360video-voorvertoning-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 
-1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Sluiten]**.
+1. Tik in de rechterbovenhoek van de voorvertoningspagina op **[!UICONTROL Close]**.
 
 ## 360-video publiceren {#publishing-video}
 
 U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de Dynamische wolk van Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
 Zie Dynamische media-elementen [](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van 360-video.
-Zie ook Video- of afbeeldingsviewer [insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie ook URL&#39;s [koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
-Zie ook Dynamische media-elementen [toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
+See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
