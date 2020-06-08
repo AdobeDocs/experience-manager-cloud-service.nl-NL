@@ -3,6 +3,9 @@ title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
@@ -54,10 +57,10 @@ Aan uw project kunnen de volgende tegels zijn gekoppeld. Elk wordt beschreven in
 * Openingspagina&#39;s
 * E-mails
 * Workflows
-* Starten
+* Lanceringen
 * Taken
 
-### Activa {#assets}
+### Assets {#assets}
 
 In de **middelentegel** kunt u alle elementen verzamelen die u voor een bepaald project gebruikt.
 
@@ -73,7 +76,7 @@ Net als bij elementen kunt u verzamelingen elementen rechtstreeks aan uw project
 
 ![Verzameling van middelen](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
-Voeg een verzameling toe door op Verzameling **** toevoegen te klikken en de gewenste verzameling in de lijst te selecteren.
+Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
 ### Ervaringen {#experiences}
 
@@ -81,7 +84,7 @@ Met de tegel **Ervaring** kunt u een mobiele app, website of publicatie aan het 
 
 ![Ervaringen](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele toepassing of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op Ervaring **** toevoegen te klikken en het type ervaring te selecteren.
+De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op **Ervaring toevoegen** te klikken en het type ervaring te selecteren.
 
 ![Een ervaring toevoegen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -137,11 +140,11 @@ U kunt uw project toewijzen om bepaalde workflows te volgen. Afhankelijk van wel
 
 Deze worden beschreven in [Werken met projectworkflows.](/help/sites-cloud/authoring/projects/workflows.md)
 
-### Starten {#launches}
+### Lanceringen {#launches}
 
 In de tegel Opstarten worden alle opstarten weergegeven die zijn aangevraagd met een workflow voor het [starten van een aanvraag.](/help/sites-cloud/authoring/projects/workflows.md)
 
-![Starten](/help/sites-cloud/authoring/assets/project-launches.png)
+![Lanceringen](/help/sites-cloud/authoring/assets/project-launches.png)
 
 ### Taken {#tasks}
 
@@ -155,7 +158,7 @@ AEM verzendt drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
 * Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het omvat ook twee workflows met betrekking tot media-inhoud - Verzoek om kopie (voor het aanvragen en reviseren van tekst) en Fotoopname van product (voor het beheren van productgerelateerde fotografie)
-* Een vertaalproject - een referentiemonster voor het beheer van activiteiten in verband met vertalingen. Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers). Het omvat twee werkschema&#39;s die in het gebruikersinterface van Workflows worden betreden. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* Een vertaalproject - een referentiemonster voor het beheer van activiteiten op het gebied van vertaling. Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers). Het omvat twee werkschema&#39;s die in het gebruikersinterface van Workflows worden betreden. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
 
 Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaar aan u met name rond gebruikersrollen en werkschema&#39;s.
 
@@ -176,4 +179,4 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 
 >[!NOTE]
 >
->Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren. Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **MijnProjecteigenaars**, **Mijn Projecteditors**, **Mijn projectwaarnemers** hebben. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
