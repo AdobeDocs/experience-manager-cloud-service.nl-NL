@@ -593,7 +593,7 @@ Het doel van dit succescriterium is ervoor te zorgen dat visueel weergegeven tek
 
 #### Procedure - Formaat tekst wijzigen (1.4.4) {#how-to-meet-resize-text}
 
-Naast het volgen van de richtlijnen onder [Hoe te om Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) van het Succes te ontmoeten kunt u inhoudsauteurs aanmoedigen om dynamische, flexibele breedten en hoogten in hun paginaontwerpen en doopvontgrootte (bijvoorbeeld, Responsief Web Design) te gebruiken om lezers de capaciteit toe te staan om tekst te resize.
+Naast het volgen van de richtlijnen onder [Hoe te voldoen aan Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) van het Succes kunt u tevreden auteurs aanmoedigen om dynamische, flexibele breedten en hoogten in hun paginaontwerpen en doopvontgrootte (bijvoorbeeld, Responsief Web Design) te gebruiken om lezers de capaciteit toe te staan om tekst te resize.
 
 #### Meer informatie - Tekst vergroten/verkleinen (1.4.4) {#more-information-resize-text}
 
@@ -732,7 +732,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 #### Meer informatie - Pauzeren, Stoppen, Verbergen (2.2.2) {#more-information-pause-stop-hide}
 
 * [Succescriterium 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [Voldoen aan criterium 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
 ### Convulsies en fysieke reacties (2.3) {#seizures-and-physcial-reactions}
 
