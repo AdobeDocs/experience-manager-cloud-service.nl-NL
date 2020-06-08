@@ -2,8 +2,11 @@
 title: Assets, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer assets, mappen en verzamelingen naar Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 100%
 
 ---
 
