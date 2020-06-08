@@ -1,13 +1,16 @@
 ---
-title: Veelgestelde vragen over einde levensduur van DHTML Viewer
+title: Veelgestelde vragen over de gebruiksduur van de DHTML-viewer
 description: Met ingang van 31 januari 2014 zal het DHTML-viewerplatform van Scene7 officieel het einde van de levensduur bepalen. Deze melding geeft u antwoorden op veelgestelde vragen, zodat u zich kunt voorbereiden op deze overgang naar ons nieuwe HTML5-viewerplatform.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 1%
 
 ---
 
 
-# Veelgestelde vragen over einde levensduur van DHTML Viewer{#dhtml-viewer-end-of-life-faqs}
+# Veelgestelde vragen over de gebruiksduur van de DHTML-viewer{#dhtml-viewer-end-of-life-faqs}
 
 Met ingang van 31 januari 2014 zal het DHTML-viewerplatform van Scene7 officieel het einde van de levensduur bepalen. Deze melding geeft u antwoorden op veelgestelde vragen, zodat u zich kunt voorbereiden op deze overgang naar ons nieuwe HTML5-viewerplatform.
 
@@ -98,7 +101,7 @@ Scene7 biedt de volgende opties aan om uw kijkers naar het HTML5 platform over t
 
 **En browsers die geen HTML5 ondersteunen?**
 
-HTML5 wordt ondersteund op veel mobiele apparaten en in webbrowsers en wordt nog steeds getraceerd. Hoewel HTML5 momenteel niet wordt ondersteund door Internet Explorer 8 of lager, heeft Scene7 ons HTML5-viewerplatform vernieuwd om zelfs ondersteuning toe te kennen aan IE 7 en IE 8. Met het Scene7 HTML5 viewerplatform, kunt u de overgrote meerderheid van zowel Desktop als mobiele gebruikers met één enkel ontwikkelingsplatform bereiken.
+HTML5 wordt ondersteund op veel mobiele apparaten en in webbrowsers en wordt nog steeds getraceerd. Hoewel HTML5 momenteel niet wordt ondersteund door Internet Explorer 8 of lager, heeft Scene7 ons HTML5-viewerplatform vernieuwd om zelfs ondersteuning toe te kennen aan IE 7 en IE 8. Met het Scene7 HTML5 viewerplatform, kunt u de overweldigende meerderheid van zowel Desktop als mobiele gebruikers met één enkel ontwikkelingsplatform bereiken.
 
 De huidige systeemvereisten vanaf HTML5 SDK versie 2.2.1 zijn:
 
@@ -120,4 +123,4 @@ Hoewel u nog steeds in productie met op DHTML-Gebaseerde kijkers kunt zijn, is h
 
 **Wie neem ik contact op voor meer informatie?**
 
-Als deze veelgestelde vragen niet alle vragen hebben beantwoord, neemt u contact op met de technische ondersteuning ([s7support@adobe.com](mailto:s7support@adobe.com)) of uw accountmanager van Adobe.
+Als u geen antwoord op al uw vragen hebt gevonden in deze veelgestelde vragen, neemt u contact op met de ondersteuningsdienst ([s7support@adobe.com](mailto:s7support@adobe.com)) of uw Adobe-accountmanager.
