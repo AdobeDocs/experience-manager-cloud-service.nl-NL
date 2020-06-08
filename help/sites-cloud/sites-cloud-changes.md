@@ -1,13 +1,16 @@
 ---
-title: Opvallende wijzigingen in AEM-sites in AEM Cloud Service
-description: 'Opvallende wijzigingen in AEM-sites in AEM Cloud Service '
+title: Opvallende wijzigingen in AEM Sites in AEM Cloud Service
+description: 'Opvallende wijzigingen in AEM Sites in AEM Cloud Service '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 5%
 
 ---
 
 
-# Opvallende wijzigingen in AEM-sites als cloudservice {#notable-changes}
+# Belangrijke wijzigingen in AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites as a Cloud Service biedt mogelijkheden voor ervaringsbeheer als onderdeel van de native AEM voor de cloud als een Cloud Service-platform. Naast de belangrijkste voordelen van AEM als cloudservice, zoals eigen schaalbaarheid in de cloud, uptime en altijd up-to-date, biedt AEM-sites als cloudservice ook een aantal specifieke wijzigingen en toevoegingen voor sites.
 
