@@ -1,13 +1,16 @@
 ---
-title: Problemen met dynamische media oplossen
-description: Problemen met dynamische media oplossen.
+title: Problemen met Dynamic Media oplossen
+description: Problemen met Dynamic Media oplossen.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
 
-# Problemen met dynamische media oplossen {#troubleshooting-dynamic-media-scene-mode}
+# Problemen met Dynamic Media oplossen {#troubleshooting-dynamic-media-scene-mode}
 
 In het volgende document wordt het oplossen van problemen voor dynamische media beschreven.
 
@@ -90,7 +93,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr>
   <tr>
    <td>Afbeelding geeft geen voorvertoning weer met de Dynamic Media-viewer</td>
-   <td><p>Controleer of het element <code>dam:scene7File</code> in de metagegevenseigenschappen (CRXDE Lite) staat</p> </td>
+   <td><p>Controleren of het element <code>dam:scene7File</code> in de metagegevenseigenschappen (CRXDE Lite) staat</p> </td>
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td>
   </tr>
   <tr>
@@ -191,7 +194,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   <tr>
    <td>Voorinstellingen van viewer worden niet gepubliceerd</td>
    <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Als u correct werkt, ziet u het volgende:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de instellingen van de Dynamic Media-cloud zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de knoppen <strong>Alle niet-geactiveerde elementen</strong> weergeven om details weer te geven.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de instellingen voor de dynamische mediolcloud zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de knoppen <strong>Alle niet-geactiveerde elementen</strong> weergeven om details weer te geven.</p> </td>
    <td>
     <ol>
      <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
