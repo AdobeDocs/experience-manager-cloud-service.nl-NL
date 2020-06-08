@@ -4,6 +4,9 @@ description: Leer hoe u workflows toepast op elementen, mappen en verzamelingen 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 7%
 
 ---
 
@@ -19,12 +22,12 @@ Zie Een workflow [starten voor een element](/help/assets/manage-digital-assets.m
 Voer de volgende stappen uit om een workflow toe te passen op meerdere elementen:
 
 1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen.
-1. Klik op het AEM-pictogram en kies **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
+1. Klik op het AEM-pictogram en kies een optie in het **[!UICONTROL Timeline]** menu om de tijdlijn weer te geven.
 1. Klik op het pictogram Handelingen onderaan.
-1. Klik op Workflow **** starten.
-1. Selecteer in het dialoogvenster Workflow **** starten een workflowmodel in de lijst.
+1. Klik op **[!UICONTROL Start Workflow]**.
+1. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
-1. Klik op **[!UICONTROL Start]** en vervolgens op **[!UICONTROL Bevestigen]** in het dialoogvenster. De workflow wordt uitgevoerd op alle elementen die u hebt geselecteerd.
+1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.
 
 ## Een workflow toepassen op meerdere mappen {#applying-a-workflow-to-multiple-folders}
 
