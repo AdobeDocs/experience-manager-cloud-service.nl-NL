@@ -1,17 +1,20 @@
 ---
-title: Modellen van inhoudsfragmenten
+title: Modellen van contentfragmenten
 description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 21%
 
 ---
 
 
-# Modellen van inhoudsfragmenten{#content-fragment-models}
+# Modellen van contentfragmenten{#content-fragment-models}
 
 Met Content Fragment Models wordt de structuur van de inhoud voor [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)gedefinieerd.
 
-## Modellen van inhoudsfragmenten inschakelen {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -26,7 +29,7 @@ Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 
 Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragment-model) creëren **moet** u hen eerst toelaten gebruikend de Manager van de Configuratie:
 
-1. Navigeer aan **Hulpmiddelen**, **Algemeen**, dan open Browser **van de** Configuratie.
+1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 2. Selecteer de locatie die geschikt is voor uw website.
 3. Gebruik **Maken** om het dialoogvenster te openen waarin u:
 
@@ -40,7 +43,7 @@ Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragm
 
 Wanneer de configuratie **globaal** is ingeschakeld voor modellen van inhoudsfragmenten, kunnen alle modellen die gebruikers maken, worden gebruikt in elke map Middelen.
 
-Als u andere configuraties (d.w.z. exclusief globaal) wilt gebruiken met een vergelijkbare map Middelen, moet u de verbinding definiëren. Dit wordt gedaan door de aangewezen **Configuratie** op het lusje van de Diensten **van de** Wolk van de Eigenschappen **van de** Omslag van de aangewezen omslag te selecteren.
+Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met een vergelijkbare map met assets, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
@@ -74,10 +77,10 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
    Zodra open de modelredacteur toont:
 
    * links: velden al gedefinieerd
-   * rechts: Er zijn **gegevenstypen** beschikbaar voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
+   * rechts: **datatypen** voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
    >[!NOTE]
    >
-   >Als een veld **vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een asterisk (*****).
+   >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (*****).
 
    ![eigenschappen](assets/cfm-models-03.png)
 
@@ -90,12 +93,12 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
    ![veldeigenschappen](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Voor het gegevenstype **Meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
+   Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
    * **RTF**
    * **Markering**
    * **Onbewerkte tekst**
    Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
-   Het wijzigen van het **standaardtype** in een inhoudsfragmentmodel heeft alleen effect op een bestaand, verwant inhoudsfragment nadat dat fragment is geopend in de editor en opgeslagen.
+   Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 1. **Een veld verwijderen**
 
