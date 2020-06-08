@@ -5,6 +5,9 @@ contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+workflow-type: tm+mt
+source-wordcount: '1830'
+ht-degree: 4%
 
 ---
 
@@ -109,7 +112,7 @@ Andere metagegevens die kunnen worden ingesloten vanuit bestanden zijn onder and
 
 ## Metagegevens van uw digitale middelen beheren {#manage-assets-metadata}
 
-Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in elementen bulksgewijs kunt doorgeven. Met de pagina [!UICONTROL Eigenschappen] kunt u eigenschappen van metagegevens wijzigen in een algemene waarde of tags toevoegen of wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
+Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in elementen bulksgewijs kunt doorgeven. Met de [!UICONTROL Properties] pagina kunt u eigenschappen van metagegevens wijzigen in een algemene waarde of tags toevoegen of wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
 
 >[!NOTE]
 >
@@ -117,27 +120,27 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
 
 1. Navigeer naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Tik op de werkbalk of klik op **[!UICONTROL Eigenschappen]** om de pagina [!UICONTROL Eigenschappen] voor de geselecteerde elementen te openen.
+1. Tik op de werkbalk of klik **[!UICONTROL Properties]** om de [!UICONTROL Properties] pagina voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
-   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de pagina [!UICONTROL Eigenschappen] worden alleen metagegevensvelden weergegeven die op de pagina&#39;s [!UICONTROL Eigenschappen] van alle afzonderlijke elementen gemeenschappelijk zijn.
+   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de [!UICONTROL Properties] [!UICONTROL Properties] pagina worden alleen metagegevensvelden weergegeven die op de pagina&#39;s van alle afzonderlijke elementen gemeenschappelijk zijn.
 
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
 1. Schakel de overige elementen in de lijst uit als u de metagegevenseditor voor een bepaald element wilt weergeven. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
 
    >[!NOTE]
    >
-   >* Op de pagina [!UICONTROL Eigenschappen] kunt u elementen uit de lijst met elementen verwijderen door deze uit te schakelen. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
-   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Titel]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
+   >* Op de [!UICONTROL Properties] pagina kunt u elementen uit de elementenlijst verwijderen door deze uit te schakelen. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
+   >* Schakel boven aan de lijst met elementen het selectievakje in **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
-1. Tik op **[!UICONTROL Instellingen]** op de werkbalk en selecteer het gewenste schema om een ander metagegevensschema voor de elementen te selecteren. Sla de wijzigingen op.
-1. Als u de nieuwe metadata wilt toevoegen aan de bestaande metadata in velden met meerdere waarden, selecteert u de **[!UICONTROL modus Toevoegen]**. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Verzenden]**.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, tikt u op de werkbalk of klikt u erop. Vervolgens selecteert u het gewenste schema. **[!UICONTROL Settings]** Sla de wijzigingen op.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >
-   >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u de modus **[!UICONTROL Toevoegen]** selecteert.
+   >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u **[!UICONTROL Append mode]** selecteert.
 
 ## Limiet voor bijwerken van bulkmetagegevens configureren {#configlimit}
 
@@ -145,7 +148,7 @@ Om DOS-achtige situatie te verhinderen, beperkt AEM het aantal parameters die in
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Als u de limiet wilt wijzigen, opent u de webconsole ( **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**) en wijzigt u de waarde van **[!UICONTROL Maximale POST-parameters]** in de OSGi-configuratie van **[!UICONTROL Apache Sling Request-parameters]** .
+Als u de limiet wilt wijzigen, opent u de webconsole ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) en wijzigt u de waarde van **[!UICONTROL Maximum POST Parameters]** in de **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi-configuratie.
 
 ## Metagegevensschema {#metadata-schemata}
 
