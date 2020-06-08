@@ -3,6 +3,9 @@ title: Voeg uw digitale middelen toe aan Adobe Experience Manager
 description: Voeg uw digitale middelen toe aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1340'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 1. Navigeer in de gebruikersinterface Elementen naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
 
-   * Tik op het pictogram **[!UICONTROL Maken]** op de werkbalk. Tik vervolgens in het menu op **[!UICONTROL Bestanden]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
+   * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de gebruikersinterface van Elementen. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
    ![create_menu](assets/create_menu.png)
 
@@ -106,17 +109,17 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 
 >[!NOTE]
 >
->Wanneer u **[!UICONTROL Vervangen]** selecteert in het dialoogvenster [!UICONTROL Naamconflict] , wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
+>Wanneer u **[!UICONTROL Replace]** in het [!UICONTROL Name Conflict] dialoogvenster selecteert, wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
 >
 >Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
 
-Tik of klik op **[!UICONTROL Behouden]** om het gedupliceerde element in AEM Assets te behouden. Tik/klik op **[!UICONTROL Verwijderen]** om het geüploade dubbele element te verwijderen.
+Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te behouden **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
 Met AEM-elementen kunt u geen elementen uploaden met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt in AEM Assets een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-In het dialoogvenster Elementen  uploaden kunt u lange namen opgeven voor de bestanden die u uploadt, zodat uw organisatie deze specifieke naamconventies voor bestanden ookkan gebruiken.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -143,7 +146,7 @@ In aanvulling op de gebruikersinterface van de webbrowser biedt Experience Manag
 
 ## Aanvullende verwerking {#additional-processing}
 
-Als u extra verwerkingen wilt uitvoeren op de geüploade elementen, kunt u profielen voor middelenverwerking gebruiken in de map waarin elementen worden geüpload. Deze bestanden zijn beschikbaar in het dialoogvenster **[!UICONTROL Eigenschappen]** van map.
+Als u extra verwerkingen wilt uitvoeren op de geüploade elementen, kunt u profielen voor middelenverwerking gebruiken in de map waarin elementen worden geüpload. Deze bestanden zijn beschikbaar in het **[!UICONTROL Properties]** dialoogvenster Map.
 
 ![assets-folder-eigenschappen](assets/assets-folder-properties.png)
 
@@ -154,14 +157,14 @@ De volgende profielen zijn beschikbaar:
 
 Als Dynamische media ook in uw omgeving is ingeschakeld:
 
-* [Met afbeeldingsprofielen](dynamic-media/image-profiles.md) kunt u specifieke uitsnijdingen (**[!UICONTROL slim uitsnijden]** en pixeluitsnijden) en verscherpingsconfiguratie toepassen op de geüploade elementen
+* Met [afbeeldingsprofielen](dynamic-media/image-profiles.md) kunt u specifieke configuraties voor bijsnijden (**[!UICONTROL Smart Cropping]** en pixels bijsnijden) en verscherpen toepassen op de geüploade assets
 * [Met videoprofielen](dynamic-media/video-profiles.md) kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen
 
 >[!NOTE]
 >
 > Dynamische uitsnijdingen van media en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
 
-Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de kolom **[!UICONTROL Verwerkingsprofiel]** .
+Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de **[!UICONTROL Processing Profile]** kolom.
 
 ## Elementen uploaden of toevoegen met API&#39;s {#upload-using-apis}
 
