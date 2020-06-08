@@ -1,13 +1,16 @@
 ---
-title: Paginaannotaties toevoegen
+title: Pagina-annotaties toevoegen
 description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Paginaannotaties toevoegen {#adding-page-annotations}
+# Pagina-annotaties toevoegen {#adding-page-annotations}
 
 Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u toe om een aantekening toe te voegen.
 
