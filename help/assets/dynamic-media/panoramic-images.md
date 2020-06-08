@@ -3,11 +3,14 @@ title: Panoramische afbeeldingen
 description: Leer hoe u met panoramische afbeeldingen werkt in Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 15%
 
 ---
 
 
-# Panoramische afbeeldingen{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
@@ -24,7 +27,7 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Gelabeld met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags](/help/sites-cloud/authoring/features/tags.md)gebruiken.
 
-Zowel zijn de aspectverhouding als de sleutelwoordcriteria op panoramische activa voor de pagina van activa detailleert en de component `Panoramic Media` WCM van toepassing.
+Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
 Zie [Elementen](/help/assets/manage-digital-assets.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
 
