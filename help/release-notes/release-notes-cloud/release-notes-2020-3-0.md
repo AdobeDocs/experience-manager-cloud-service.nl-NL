@@ -3,6 +3,9 @@ title: Opmerkingen bij de release 2020.3.0
 description: Opmerkingen bij de release 2020.3.0
 translation-type: tm+mt
 source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -20,12 +23,12 @@ De releasedatum voor Experience Manager als Cloud Service 2020.3.0 is 5 maart 20
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.3.0.
 
-### Nieuwe functies {#what-is-new}
+### What&#39;s New {#what-is-new}
 
 * Het logboek voor de bouwstijlstap is nu beschikbaar terwijl de bouwstijlstap loopt.
 * Sommige berichten op de pagina van de details van de pijpleidingsuitvoering zijn uitgegeven voor duidelijkheid.
 
-### Opgeloste problemen {#bug-fixes}
+### Bug Fixes  {#bug-fixes}
 
 * Logbestanden voor de aangepaste teststappen en de functionele teststappen voor het product kunnen niet worden gedownload via de gebruikersinterface.
 * Wanneer de opslagruimte voor een Cloud Service-programma niet kon worden gemaakt, konden gebruikers met de rol van Deployment Manager zich soms niet herstellen van deze fout.
