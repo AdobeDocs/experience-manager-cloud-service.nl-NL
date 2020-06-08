@@ -3,6 +3,9 @@ title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+workflow-type: tm+mt
+source-wordcount: '1470'
+ht-degree: 10%
 
 ---
 
@@ -140,7 +143,7 @@ Uw fragment openen voor bewerken:
 
 3. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
 
-   * Variaties: De inhoud [](#editing-the-content-of-your-fragment) bewerken en de variaties [beheren](#creating-and-managing-variations-within-your-fragment)
+   * Variaties: [De inhoud](#editing-the-content-of-your-fragment) bewerken en de variaties [beheren](#creating-and-managing-variations-within-your-fragment)
 
    * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Gekoppelde inhoud](#associating-content-with-your-fragment)
@@ -281,7 +284,7 @@ U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
 
-## Een versie herstellen {#reverting-to-a-version}
+## Een versie herstellen  {#reverting-to-a-version}
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
