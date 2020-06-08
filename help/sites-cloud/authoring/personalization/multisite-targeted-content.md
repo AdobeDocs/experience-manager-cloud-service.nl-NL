@@ -1,13 +1,16 @@
 ---
-title: Werken met gerichte inhoud in meerdere sites
+title: Werken met getargete content in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit de ingebouwde multisite steun van AEM voor gerichte inhoud voordeel halen
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 5%
 
 ---
 
 
-# Werken met gerichte inhoud in meerdere sites {#working-with-targeted-content-in-multisites}
+# Werken met getargete content in meerdere sites {#working-with-targeted-content-in-multisites}
 
 Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit de ingebouwde multisite steun van AEM voor gerichte inhoud voordeel halen.
 
@@ -147,11 +150,11 @@ Gebieden kunnen activiteiten en aanbiedingen omvatten. Nadat u een gebied in é�
 
 >[!NOTE]
 >
->Het standaardgebied Master Area wordt standaard samengevouwen wanneer u op de naam van een merk tikt of erop klikt **totdat** u een ander gebied maakt. Dan, wanneer u een merk in of de **Activiteit** of de console van **Aanbiedingen** selecteert, ziet u de console van het **Gebied** .
+>Het standaardgebied genaamd Mastergebied wordt standaard samengevouwen wanneer u op de naam van een merk tikt of klikt **totdat** u een ander gebied maakt. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
 
 Een nieuw gebied maken:
 
-1. Navigeer naar **Persoonlijk maken** > **Activiteiten** of **Aanbiedingen** of en ga vervolgens naar uw merk.
+1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Tik of klik op **Gebied** maken.
 
    ![Gebied maken](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -170,7 +173,7 @@ U maakt een gebied als een live kopie om de doelinhoud over te nemen in de sites
 
 Een gebied maken als een livecopy:
 
-1. Navigeer naar **Persoonlijk maken** > **Activiteiten** of **aanbiedingen** en ga vervolgens naar uw merk.
+1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Tik of klik op Gebied **maken als actieve kopie**.
 
    ![Gebied maken als livekopie](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -179,7 +182,7 @@ Een gebied maken als een livecopy:
 
    ![Live kopie maken](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. Voer in het veld **Naam** een naam in voor de actieve kopie. Standaard worden subpagina&#39;s opgenomen; sluit ze uit door het selectievakje Subpagina&#39;s **** uitsluiten in te schakelen.
+1. Voer in het veld **Naam** een naam in voor de livekopie. Standaard worden subpagina&#39;s opgenomen. Sluit ze uit door het selectievakje **Subpagina&#39;s uitsluiten** in te schakelen.
 
    ![Live kopie maken](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -249,7 +252,7 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 1. Voer een van de volgende handelingen uit om een activiteit op te schorten:
 
    1. Selecteer een element van de activiteit, zoals het publiek. AEM geeft automatisch een bevestigingsvak voor Live kopie onderbreken weer. (U kunt livekopieën opschorten door tijdens het doelproces op een element te tikken of te klikken.)
-   1. Selecteer Live kopie **** onderbreken in het keuzemenu op de werkbalk.
+   1. Select **Suspend Live Copy** from the drop-down menu in the toolbar.
    ![Live kopie onderbreken](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tik of klik op **Onderbreken** om de activiteit te onderbreken. Uitgestelde activiteiten worden rood gemarkeerd.
@@ -262,7 +265,7 @@ Overerving van doelinhoud in een activiteit onderbreken:
 
 1. Navigeer naar de pagina waar u de live kopie van het stramien wilt loskoppelen en tik of klik op **Doel** in het vervolgkeuzemenu van de modus.
 1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Tik of klik op **Doelgroep** starten.
-1. Selecteer Live kopie **** loskoppelen in het keuzemenu op de werkbalk. AEM bevestigt dat u de live kopie wilt loskoppelen.
+1. Selecteer **Livekopie loskoppelen** in het vervolgkeuzemenu op de werkbalk. AEM bevestigt dat u de livekopie wilt loskoppelen.
 1. Tik of klik op **Koppelen** om de actieve kopie los te koppelen van de activiteit. Nadat deze is losgekoppeld, wordt het vervolgkeuzemenu met betrekking tot overerving niet meer weergegeven. De activiteit is nu een lokale activiteit.
 
    ![Lokale activiteit](/help/sites-cloud/authoring/assets/multisite-winter.png)
@@ -275,7 +278,7 @@ Om erfenis van gerichte inhoud in een activiteit te herstellen:
 
 1. Navigeer naar de pagina waar u overerving wilt herstellen en tik of klik op **Doel** in het vervolgkeuzemenu van de modus.
 1. Tik of klik op **Doelgroep** starten.
-1. Selecteer Live kopie **** hervatten in het keuzemenu op de werkbalk.
+1. Selecteer **Livekopie hervatten** in het vervolgkeuzemenu op de werkbalk.
 
    ![Actieve kopie hervatten](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
@@ -287,6 +290,6 @@ Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. A
 
 Een gebied verwijderen:
 
-1. Navigeer naar **Persoonlijk maken** > **Activiteiten** of **aanbiedingen** en kies vervolgens uw merk.
+1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
 1. Tik of klik op het pictogram naast het gebied dat u wilt verwijderen.
 1. Tik of klik op **Verwijderen** en bevestig dat u het gebied wilt verwijderen.
