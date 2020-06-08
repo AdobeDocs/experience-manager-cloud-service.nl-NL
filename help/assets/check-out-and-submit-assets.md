@@ -4,6 +4,9 @@ description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +25,11 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. Klik/tik op het pictogram **[!UICONTROL Uitchecken]** op de werkbalk.
+1. Klik/tik op het **[!UICONTROL Checkout]** pictogram op de werkbalk.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   Houd er rekening mee dat het pictogram **[!UICONTROL Uitchecken]** verandert in het pictogram **[!UICONTROL Inchecken]** terwijl de vergrendeling is geopend.
+   Houd er rekening mee dat het **[!UICONTROL Checkout]** pictogram met de geopende vergrendeling naar het **[!UICONTROL Checkin]** pictogram schakelt.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -38,7 +41,7 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   U kunt echter op het pictogram **[!UICONTROL Weergave-eigenschappen]** klikken of erop tikken om de metagegevens voor het vergrendelde element te bewerken.
+   U kunt echter op het **[!UICONTROL View Properties]** pictogram klikken of erop tikken om de metagegevens voor het vergrendelde element te bewerken.
 
 1. Klik of tik op het pictogram Bewerken om het element in de bewerkingsmodus te openen.
 
@@ -50,7 +53,7 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
    U kunt er ook voor kiezen om het element te annoteren of te publiceren.
 
-1. Selecteer het bewerkte element in de interface Elementen en klik/tik op het pictogram **[!UICONTROL Inchecken]** op de werkbalk.
+1. Selecteer de bewerkte asset in de asset-interface en klik of tik op het pictogram **[!UICONTROL Checkin]** op de werkbalk.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
@@ -65,6 +68,6 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Klik/tik op het pictogram **[!UICONTROL Geen vergrendeling]** op de werkbalk. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
+1. Klik/tik op het **[!UICONTROL Release Lock]** pictogram op de werkbalk. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)
