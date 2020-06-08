@@ -1,16 +1,16 @@
 ---
-title: OSGi configureren voor AEM als cloudservice
+title: OSGi configureren voor AEM as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
 source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# OSGi configureren voor AEM als cloudservice {#configuring-osgi-for-aem-as-a-cloud-service}
+# OSGi configureren voor AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
