@@ -116,7 +116,7 @@ De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor u
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
-Een component werkt alleen met het Stijlsysteem van AEM en geeft het stijltabblad weer in het ontwerpdialoogvenster, als de ontwikkelaar van de component het stijltabblad bevat met de volgende instellingen voor de component:
+Een component werkt alleen met het Stijlsysteem van AEM en geeft het stijltabblad weer in het ontwerpdialoogvenster, als de ontwikkelaar van de component het tabblad Stijl bevat met de volgende instellingen voor de component:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
