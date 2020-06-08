@@ -3,6 +3,9 @@ title: Exporteren naar CSV
 description: Informatie over uw pagina's exporteren naar een CSV-bestand op uw lokale systeem
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 29%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >De downloadfunctie en de standaardbestemming van uw browser worden gebruikt.
 
-Met de wizard **CSV-export** maken kunt u het volgende selecteren:
+Met de wizard **CSV-export maken** kunt u het volgende selecteren:
 
 * Te exporteren eigenschappen
    * Metagegevens
@@ -44,8 +47,8 @@ Het resulterende `export.csv` bestand kan worden geopend in Excel of een andere 
 
 Een CSV-export maken:
 
-1. Open de **Sites** -console en navigeer indien nodig naar de gewenste locatie.
-   * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites** -console bladert (in de lijstweergave)
+1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
+   * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave)
    * Dit is een optie in het keuzemenu **Maken** :
 
       ![CSV maken, optie](/help/sites-cloud/authoring/assets/csv-create.png)
