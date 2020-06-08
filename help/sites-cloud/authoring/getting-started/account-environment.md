@@ -3,15 +3,18 @@ title: Uw accountomgeving configureren
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 4%
 
 ---
 
 
-# Uw accountomgeving configureren {#configuring-your-account-environment}
+# Configuring Your Account Environment {#configuring-your-account-environment}
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u gebruikersopties wijzigen, zoals
+Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
 Begin door tot de optie van de [Gebruiker](#user-settings) in de kopbal toegang te hebben.
 
