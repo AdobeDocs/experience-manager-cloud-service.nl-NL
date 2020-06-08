@@ -3,7 +3,7 @@ title: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services.
 description: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met Adobe Sensei-services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # De service Slimme tags toepassen en uw afbeeldingen labelen {#train-service-tag-assets}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen eenvoudig herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen eenvoudig herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -87,7 +87,7 @@ De afbeeldingen in uw trainingsset moeten aan de volgende richtlijnen voldoen:
    * alleen de labels die betrekking hebben op kleuren van overhemden.
    * alleen de labels voor jassen voor vrouwen en mannen.
 * Niet maken,
-   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht.
+   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht .
    * meerdere tagmodellen met dezelfde paar automodellen.
 
 **Afbeeldingen die worden gebruikt om te trainen**: U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. De optie Koppel een afbeelding echter niet aan meer dan één tag in een labelmodel. Daarom is het mogelijk om dezelfde afbeelding te voorzien van verschillende tags die bij verschillende labelmodellen horen.
@@ -99,7 +99,7 @@ U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlij
 Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te maken en op te leiden:
 
 1. Maak de benodigde labels en de juiste codestructuur. Upload de relevante afbeeldingen in de DAM-opslagplaats.
-1. Ga in [!DNL Experience Manager] de gebruikersinterface naar **[!UICONTROL Assets]** > **[!UICONTROL Training Model]**.
+1. Ga in [!DNL Experience Manager] de gebruikersinterface naar **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**.
 1. Klik op **[!UICONTROL Create]**. Geef een **[!UICONTROL Title]**, **[!UICONTROL Description]**.
 1. Blader en selecteer de tags van de bestaande tags in `cq:tags` waarvoor u het model wilt trainen. Klik op **[!UICONTROL Next]**.
 1. Klik in het **[!UICONTROL Select Assets]** dialoogvenster op **[!UICONTROL Add Assets]** elk label. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]**.
