@@ -3,6 +3,9 @@ title: Inhoudsfragmenten die componenten voor rendering configureren
 description: Inhoudsfragmenten die componenten voor rendering configureren
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 5%
 
 ---
 
