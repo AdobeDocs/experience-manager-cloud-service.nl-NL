@@ -3,6 +3,9 @@ title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +16,7 @@ Nadat u de inhoud hebt gemaakt en gecontroleerd in de auteursomgeving, [stelt u 
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u de pagina publiceert en publiceert, blijft deze beschikbaar in de ontwerpomgeving voor verdere wijzigingen totdat u de pagina verwijdert.
 
-U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of de publicatie ervan ongedaan maken.
+U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of verwijderen.
 
 ## Terminologie {#terminology}
 
@@ -224,7 +227,7 @@ Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerk
 
 Hiervoor kunt u de optie Publicatie [](#manage-publication) beheren op de siteconsole gebruiken.
 
-1. Selecteer in de siteconsole de hoofdpagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
+1. Selecteer in de siteconsole de basispagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
 1. De wizard **Publicatie beheren** wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
 1. Selecteer in de stap **Bereik** de basispagina en selecteer **Onderliggende** elementen opnemen.
 
