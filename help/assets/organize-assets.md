@@ -4,6 +4,9 @@ description: Uw digitale middelen ordenen met behulp van verschillende methoden 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 0%
 
 ---
 
@@ -23,9 +26,9 @@ Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur* -afbeeldi
 >Het delen van een map Middelen (in de marketingcloud) van het type `sling:OrderedFolder`, wordt niet ondersteund. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken.
-1. Klik in het menu op **[!UICONTROL Maken]**. Selecteer **[!UICONTROL Nieuwe map]**.
-1. Geef in het veld **[!UICONTROL Titel]** een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
-1. Klik op **[!UICONTROL Maken]**. De map wordt weergegeven in de map met digitale middelen.
+1. In the menu, click **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
+1. Geef in het **[!UICONTROL Title]** veld een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
+1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
 
 ## CUG-eigenschappen toevoegen aan mappen {#add-cug-properties-to-folders}
 
