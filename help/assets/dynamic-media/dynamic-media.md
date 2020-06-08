@@ -1,13 +1,16 @@
 ---
-title: Werken met dynamische media
+title: Werken met Dynamic Media
 description: Leer hoe u Dynamic Media gebruikt om middelen te leveren voor gebruik op internet, mobiele en sociale sites.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 7%
 
 ---
 
 
-# Werken met dynamische media {#working-with-dynamic-media}
+# Werken met Dynamic Media {#working-with-dynamic-media}
 
 [Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u op aanvraag rijke visuele producten en marketingmaterialen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set hoofdelementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
@@ -23,14 +26,14 @@ Met Dynamische media kunt u uw elementen beheren voordat u ze publiceert. Over h
 
 De dynamische Media-enige eigenschappen omvatten het volgende:
 
-* [Carousel Banners](carousel-banners.md)
-* [Afbeeldingssets](image-sets.md)
+* [Carousel-banners](carousel-banners.md)
+* [Image Sets](image-sets.md)
 * [Interactieve afbeeldingen](interactive-images.md)
 * [Interactieve video&#39;s](interactive-videos.md)
-* [Gemengde mediasets](mixed-media-sets.md)
+* [Mixed Media Sets](mixed-media-sets.md)
 * [Panoramische afbeeldingen](panoramic-images.md)
 
-* [Sets draaien](spin-sets.md)
+* [Spin Sets](spin-sets.md)
 * [Video](video.md)
 * [Dynamische media-elementen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)
@@ -59,7 +62,7 @@ Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
-Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamisch]**) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
+Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]**) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
