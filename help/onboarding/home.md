@@ -1,8 +1,11 @@
 ---
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 848601903cb83b930d8ec4523720a5c1287d720b
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 100%
 
 ---
 
