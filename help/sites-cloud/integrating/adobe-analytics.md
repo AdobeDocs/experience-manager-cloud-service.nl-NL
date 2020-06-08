@@ -3,13 +3,16 @@ title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 translation-type: tm+mt
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 13%
 
 ---
 
 
 # Integreren met Adobe Analytics{#integrating-with-adobe-analytics}
 
-Door Adobe Analytics en AEM als Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen:
+Door Adobe Analytics en AEM als Cloud Service te integreren, kunt u de activiteiten van uw webpagina volgen:
 
 * Met een configuratie voor Adobe Analytics kan AEM verificatie uitvoeren met Adobe Analytics.
 * Een framework geeft de gegevens aan die naar uw Adobe Analytics-rapportsuite worden verzonden.
@@ -49,7 +52,7 @@ Zie:
 
 >[!NOTE]
 >
->Als u Adobe Analytics met een configuratie van de douanevolmacht gebruikt, moet u twee bundels [OSGi (bijvoorbeeld, met de console van het Web)](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) vormen die voor de de volmachtsconfiguraties van de Cliënt **van** Apache HTTP wordt vereist. Beide zijn vereist omdat sommige functies van AEM de 3.x API&#39;s gebruiken, terwijl andere de 4.x API&#39;s gebruiken. Configureren:
+>Als u Adobe Analytics gebruikt met een aangepaste proxyconfiguratie, moet u [twee OSGi-bundels configureren](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) (bijvoorbeeld met de webconsole) die voor de **Apache HTTP Client**-proxyconfiguraties vereist zijn. Beide zijn vereist omdat sommige functies van AEM de 3.x-API&#39;s gebruiken, terwijl andere de 4.x-API&#39;s gebruiken. Configureren:
 >
 >* **Day Commons HTTP Client 3.1** om de 3.x API te configureren;
    >  bijvoorbeeld [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
