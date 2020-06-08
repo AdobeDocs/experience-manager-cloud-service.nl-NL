@@ -3,11 +3,14 @@ title: Dynamische media instellen
 description: Als u dynamische media wilt instellen, moet u dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 3%
 
 ---
 
 
-# Dynamische media instellen {#setting-up-dynamic-media}
+# Setting Up Dynamic Media {#setting-up-dynamic-media}
 
 [Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u elementen beheren door op aanvraag rijke visuele merchandising- en marketingmiddelen te leveren, die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set hoofdelementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
@@ -23,10 +26,10 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 Als u Dynamische Media beheert, zijn de volgende onderwerpen van belang:
 
-* [Dynamische media configureren](config-dm.md)
+* [Dynamic Media configureren](config-dm.md)
 * [Voorinstellingen afbeelding beheren](managing-image-presets.md)
 * [Viewer-voorinstellingen beheren](managing-viewer-presets.md)
-* [Problemen met dynamische media oplossen](troubleshoot-dm.md)
+* [Problemen met Dynamic Media oplossen](troubleshoot-dm.md)
 
 Zie ook de volgende onderwerpen:
 
