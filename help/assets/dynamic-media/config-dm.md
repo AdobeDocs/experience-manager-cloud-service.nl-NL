@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van dynamische media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: bc0852120580065a93923e7fe730485012afba6e
+source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
 workflow-type: tm+mt
 source-wordcount: '4796'
 ht-degree: 8%
@@ -94,7 +94,7 @@ Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische med
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tik op **[!UICONTROL Save]**.
-1. Als u de dynamische media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM-auteurinstantie &#39;whitelist&#39; om verbinding te maken met Dynamic Media:
+1. Als u de dynamische media-inhoud op een veilige manier wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM-auteur-instantie toestaan verbinding te maken met Dynamic Media:
 
    * Meld u aan bij uw Dynamic Media Classic-account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe heeft uw gegevens en aanmeldingsgegevens opgegeven op het moment van de provisioning. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Klik op de navigatiebalk rechts boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -154,7 +154,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Klik op Dynamische media Classic Global Navigation Bar om de pagina Algemene instellingen toepassing te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
+Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op de knop Dynamische mediaclassieke globale navigatiebalk **[!UICONTROL Setup > Application Setup > General Settings]**.
 
 * **[!UICONTROL Servers]** - Dynamische media biedt via provisioning van accounts automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij dit expliciet wordt opgedragen door AEM-ondersteuning.
 
