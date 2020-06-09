@@ -2,9 +2,9 @@
 title: URL's koppelen aan uw webapplicatie
 description: URL's koppelen aan uw webtoepassing in dynamische media
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1210'
 ht-degree: 10%
 
 ---
@@ -22,13 +22,13 @@ Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen,
 >
 >URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de dynamische mediaserver. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-Zie ook URL&#39;s [koppelen aan uw webtoepassing.](video.md)
+Zie ook URL&#39;s [koppelen aan uw webtoepassing](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-Zie ook Elementen [uploaden.](/help/assets/manage-digital-assets.md#uploading-assets)
+Zie ook Elementen [uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Een URL ophalen voor een element {#obtaining-a-url-for-an-asset}
 
@@ -52,7 +52,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie Elementen [publiceren.](publishing-dynamicmedia-assets.md)
+   Zie Elementen [](publishing-dynamicmedia-assets.md)publiceren.
 
    Zie Voorinstellingen [voor](managing-viewer-presets.md#publishing-viewer-presets)viewers publiceren.
 
@@ -84,6 +84,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
 
+* 3D-bestanden
 * Geanimeerde GIF
 * Audiobestanden
 * CSS
@@ -99,7 +100,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   Zie Elementen [publiceren.](publishing-dynamicmedia-assets.md)
+   Zie Elementen [](publishing-dynamicmedia-assets.md)publiceren.
 
 1. Gebruik een van de volgende methoden om de URL van het gepubliceerde statische element te verkrijgen:
 
@@ -108,7 +109,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Bijvoorbeeld, `https://aem.com/is/content/adobe/image.gif`.
-   * Klik **[!UICONTROL Asset > Dynamic Renditions]**, tik dan een dynamische vertoning van het statische element en kopieer URL.
+   * Tik **[!UICONTROL Asset > Dynamic Renditions]** vervolgens op een dynamische uitvoering van het statische element en kopieer de URL.
 
       Wijzig de gekopieerde URL in plaats van de URL die u `is/content` in het pad wilt gebruiken `is/image/`.
 
