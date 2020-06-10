@@ -1,18 +1,21 @@
 ---
-title: Caching in AEM als Cloud Service
-description: 'Caching in AEM als Cloud Service '
+title: Caching in AEM as a Cloud Service
+description: 'Caching in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1358'
+ht-degree: 1%
 
 ---
 
 
 # Inleiding {#intro}
 
-Caching bij CDN kan worden gevormd door dispatcherregels te gebruiken. Merk op dat de verzender ook de resulterende kopballen van de geheim voorgeheugenvervalsing naleeft als in de verzender configuratie `enableTTL` wordt toegelaten, die impliceert dat het specifieke inhoud zelfs buiten inhoud zal verfrissen die opnieuw wordt gepubliceerd.
+Het verkeer gaat door CDN tot een laag van de apacheWebserver over, die modules met inbegrip van de verzender steunt. Om de prestaties te verbeteren, wordt de verzender vooral gebruikt als cache om de verwerking op de publicatieknooppunten te beperken.
+De regels kunnen op de dispatcherconfiguratie worden toegepast om het even welke montages van de standaardgeheim voorgeheugenvervalsing te wijzigen, resulterend in caching bij CDN. Merk op dat de dispatcher ook de resulterende kopballen van de geheim voorgeheugenvervalsing naleeft als in de dispatcherconfiguratie `enableTTL` wordt toegelaten, die impliceert dat het specifieke inhoud zal verfrissen zelfs buiten inhoud die opnieuw wordt gepubliceerd.
+
+Op deze pagina wordt ook beschreven hoe de cachegeheugen van de verzender ongeldig wordt gemaakt en hoe caching werkt op browserniveau met betrekking tot bibliotheken aan de clientzijde.
 
 ## Caching {#caching}
 
@@ -33,6 +36,14 @@ U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volg
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan &quot;privé&quot;. Met de volgende code wordt bijvoorbeeld voorkomen dat HTML-inhoud in een map met de naam &quot;myfolder&quot; in de cache wordt opgeslagen:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Merk op dat andere methodes, met inbegrip van het [verzender-ttl AEM ACS-Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), geen waarden met succes zullen met voeten treden.
@@ -70,13 +81,9 @@ Zorg ervoor dat elementen die bedoeld zijn om privé te blijven in plaats van in
 * standaard kan niet worden ingesteld met de `EXPIRATION_TIME` variabele die wordt gebruikt voor bestandstypen html/text
 * cache-vervaldatum kan worden ingesteld met dezelfde LocationMatch-strategie die in de html/text-sectie wordt beschreven door de juiste regex op te geven
 
-## Dispatcher {#disp}
+## Ongeldige validatie van cache-verzending {#disp}
 
-Het verkeer gaat door een apache Webserver, die modules met inbegrip van de verzender steunt. De verzender wordt vooral als cache gebruikt om de verwerking op de publicatieknooppunten te beperken, zodat de prestaties toenemen.
-
-Zoals beschreven in het cachegeheugen van de CDN, kunnen regels worden toegepast op de configuratie van de verzender om de standaardinstellingen voor de vervaldatum van het cachegeheugen te wijzigen.
-
-In de rest van deze sectie worden overwegingen beschreven met betrekking tot de invalidatie van de cachegeheugen van de verzender. Voor de meeste klanten, zou het niet noodzakelijk moeten zijn om het verzender geheime voorgeheugen ongeldig te maken, in plaats daarvan afhankelijk van de verzender die zijn geheime voorgeheugen verfrist wanneer de inhoud opnieuw wordt gepubliceerd, en CDN die de kopballen van de geheim voorgeheugenvervalsing respecteert.
+Over het algemeen moet het niet nodig zijn om de verzendingscache ongeldig te maken. In plaats daarvan moet u erop vertrouwen dat de verzender de cache vernieuwt wanneer de inhoud opnieuw wordt gepubliceerd en dat de CDN de headers voor het verlopen van de cache respecteert.
 
 ### Validatie van cache-verzender tijdens activering/deactivering {#cache-activation-deactivation}
 
