@@ -2,9 +2,9 @@
 description: 'De Dynamic Media Newsletter van Experience League is een maandelijkse nieuwsbrief. Deze is ontworpen om u te helpen snel aan de slag te gaan met Dynamic Media en Dynamic Media Classic, zodat u meteen aan de slag kunt met het realiseren van waarde. De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop bulletin, met inbegrip van hoe te video''s, oplossingsoverzichten, en inleiding aan enkele zeer belangrijke eigenschappen en mogelijkheden zoals beeldvoorinstellingen, kijkersvoorinstellingen, videoprofielen, en meer. '
 title: Dynamische media-nieuwsbrief
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 [Meld u aan](https://www.adobe.com/subscription/dynamic-media-newsletter.html) om de nieuwsbrief voor dynamische media maandelijks in uw postvak te ontvangen.
 
 ## Hebt u een probleem met de Dynamic Media Newsletter gemist?
+
+* **[Mei 2020, uitgave 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   In dit verband:
+
+   * Wat bedrijfscontinuïteit in onzekere tijden betekent.
+   * Belangrijke resultaten van de eerste all-digital Adobe-top.
+   * Brainstormsessies van Experience Manager moeten worden gecontroleerd.
+   * Klantspotlight van top: Onder Armor.
+   * Mis nooit een webinar van Experience Insider.
+   * Spotlicht in de publieke sector: De dringende behoefte aan digitale inschrijving.
+   * Kijk wat er nieuw is in de Innovatie van Experience Manager.
+   * Creëer uw vaardigheden in Experience Manager *live* met de Adobe-professionals.
+   * Maak verbinding met de Adobe Experience Manager-gemeenschap.
+   * Snel uw Adobe-expertise bijhouden met Adobe Experience League.
 
 * **[April 2020, uitgave 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
