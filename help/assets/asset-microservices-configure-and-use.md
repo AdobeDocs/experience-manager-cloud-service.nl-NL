@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1846'
 ht-degree: 3%
 
 ---
@@ -99,9 +99,9 @@ Een lege waarde houdt in dat bij de verwerking van elementen de pixelafmetingen 
 
 #### MIME-regels voor typeintegratie {#mime-type-inclusion-rules}
 
-Wanneer een element van een specifiek MIME-type wordt verwerkt, wordt het MIME-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten MIME-typen voor de weergavespecificatie. Als de weergave overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het actief (&quot;zwarte lijst&quot;).
+Wanneer een element van een specifiek MIME-type wordt verwerkt, wordt het MIME-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten MIME-typen voor de weergavespecificatie. Als de weergave overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het element (geblokkeerde lijst).
 
-Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type en als het overeenkomt met de lijst, wordt de vertoning gegenereerd (&quot;whitelisting&quot;).
+Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type. Als het MIME-type overeenkomt met de lijst, wordt de vertoning gegenereerd (toegestane lijst).
 
 #### Speciale FPO-uitvoering {#special-fpo-rendition}
 
