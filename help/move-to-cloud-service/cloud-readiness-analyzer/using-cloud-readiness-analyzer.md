@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 3d818278c53f3d3b4c5b53aa5b78d06d876bf05f
+source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 5%
+source-wordcount: '390'
+ht-degree: 4%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 5%
 
 Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Cloud Readiness Analyzer (CRA):
 
-* CRA wordt ondersteund op AEM-broninstanties met versie 6.1 en hoger.
-* CRA kan op om het even welk milieu lopen.
+* CRA wordt ondersteund op AEM-broninstanties met versie 6.1 en hoger
+* CRA kan in elke omgeving worden uitgevoerd (bij voorkeur in *een werkgebiedomgeving* )
 
    >[!NOTE]
-   >Om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, wordt het geadviseerd om CRA op de bronauteur het opvoeren milieu&#39;s in werking te stellen die zo dicht mogelijk aan productiegroepen op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen zijn. Het kan ook worden uitgevoerd op een kloon van de publicatieomgeving.
+   >Om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, wordt het geadviseerd om CRA op de bronauteur het opvoeren milieu&#39;s in werking te stellen die zo dicht mogelijk aan productiegroepen op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen zijn. Het kan ook worden uitgevoerd op een kloon van de *publicatieomgeving* .
 
 ## Beschikbaarheid {#availability}
 
-De Cloud Readiness Analyzer (CRA) kan als zip- dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+De Cloud Readiness Analyzer kan als zip- dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
->Download de Cloud Readiness Analyzer (CRA) van *in behandeling*.
+>Download de Cloud Readiness Analyzer van het Portaal van de Distributie van de Software *hangend*.
 
 ## De Cloud Readiness Analyzer uitvoeren {#running-tool}
 
@@ -37,20 +37,32 @@ Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
 
 ### De resultaten bekijken {#viewing-the-results}
 
-Er zijn twee manieren om de output van CRA te bekijken:
+>[!IMPORTANT]
+>The reports generated from Cloud Readiness Analyzer are based on Pattern Detectors. Raadpleeg [Patroondetectoren](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) voor meer informatie.
 
-1. Het georganiseerde rapport gebruiken
+There are two ways to view the output from the Cloud Readiness Analyzer:
+
+1. **Using the Organized Report**
 
    >[!NOTE]
    >Het georganiseerde rapport is beschikbaar op AEM versie 6.3 en hoger.
 
-Verwijs naar de Planning en Status van het Document van CRA om belangrijkheidsniveaus in het rapport te beschrijven
+   Of
 
-1. De uitvoer van het CRA (kan worden gebruikt met AEM versie 6.1 en hoger) weergeven:
+1. **Viewing the output of the CRA**
 
-   1. Navigeer naar de AEM-webconsole door ernaar te bladeren.
+   Voer de onderstaande stappen uit om de uitvoer van de Cloud Readiness Analyzer weer te geven:
 
-   1. Selecteer Status - Cloud Readiness Analyzer zoals in de onderstaande afbeelding wordt getoond.
+   >[!NOTE]
+   >De onderstaande stappen zijn van toepassing op AEM versie 6.1 en hoger.
+
+   1. Navigeer naar de **AEM-webconsole** met `https://serveraddress:serverport/system/console/configMgr`.
+
+   1. Selecteer **Status - Patroondetector** , zoals in de onderstaande afbeelding wordt getoond.
+
+#### Het rapport bekijken in AEM 6.1 Instanties {#aem-instances-report}
+
+U kunt het CSV-rapport voor AEM 6.1 downloaden. Dit is in behandeling.
 
 #### Belangrijkste niveaus in het rapport {#importance-levels}
 
