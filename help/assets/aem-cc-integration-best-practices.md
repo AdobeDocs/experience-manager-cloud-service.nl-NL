@@ -4,9 +4,9 @@ description: Aanbevolen procedures voor de integratie van een AEM-instantie met 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ AEM Assets ondersteunt twee soorten gebruikers op basis van hun toegang tot de i
 
 #### Creatieve gebruikers met directe toegang tot DAM {#creative-users-with-direct-access-to-dam}
 
-In het algemeen hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot het DAM-exemplaar, inclusief AEM-aanmelding. AEM en netwerkinfrastructuur kunnen worden opgezet om directe toegang tot externe partijen - gewoonlijk vertrouwde organisaties zoals agentschappen die voor een cliënt werken - toe te staan om toegang tot AEM over netwerk, bijvoorbeeld, via VPN of IP whitelisting te hebben.
+In het algemeen hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot het DAM-exemplaar, inclusief AEM-aanmelding. AEM en de netwerkinfrastructuur kunnen opstelling zijn om directe toegang tot externe partijen - gewoonlijk vertrouwde op organisaties zoals agentschappen die voor een cliënt werken - te verlenen om toegang tot AEM over netwerk, bijvoorbeeld, via VPN of IP toegestane lijst te hebben.
 
 In dergelijke gevallen biedt de Adobe Asset Link- of AEM-bureaubladtoepassing eenvoudige toegang tot definitieve/goedgekeurde middelen en kunt u creatieve middelen opslaan in DAM.
 
@@ -186,7 +186,7 @@ Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgeke
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
 * Gebruik [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
 * Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Het Toegangsbeheer van het gebruik opstelling in AEM en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP flits) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen AEM Web UI gebruiken om middelen op te halen en nieuwe inhoud te uploaden in uw DAM.
+* Het Toegangsbeheer van het gebruik opstelling in AEM en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP toegestaan lijst) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen AEM Web UI gebruiken om middelen op te halen en nieuwe inhoud te uploaden in uw DAM.
 
 #### Werk bezig met middelen van AEM {#work-in-progress-on-assets-from-aem}
 
