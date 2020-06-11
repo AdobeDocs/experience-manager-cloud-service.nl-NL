@@ -2,7 +2,7 @@
 title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 1%
@@ -83,9 +83,9 @@ Zorg ervoor dat elementen die bedoeld zijn om privé te blijven in plaats van in
 
 ## Ongeldige validatie van cache-verzending {#disp}
 
-Over het algemeen moet het niet nodig zijn om de verzendingscache ongeldig te maken. In plaats daarvan moet u erop vertrouwen dat de verzender de cache vernieuwt wanneer de inhoud opnieuw wordt gepubliceerd en dat de CDN de headers voor het verlopen van de cache respecteert.
+Over het algemeen is het niet nodig om de cachegeheugen van de verzender ongeldig te maken. In plaats daarvan moet u erop vertrouwen dat de verzender de cache vernieuwt wanneer de inhoud opnieuw wordt gepubliceerd en de CDN de headers voor het verlopen van de cache respecteert.
 
-### Validatie van cache-verzender tijdens activering/deactivering {#cache-activation-deactivation}
+### Cache-validatie van Dispatcher tijdens activering/deactivering {#cache-activation-deactivation}
 
 Net als bij eerdere versies van AEM wordt de inhoud gewist uit de cache van de verzender wanneer u pagina&#39;s publiceert of verwijdert. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren.
 
