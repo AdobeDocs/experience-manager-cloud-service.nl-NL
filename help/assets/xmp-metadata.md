@@ -3,10 +3,10 @@ title: XMP-metadata
 description: Meer informatie over de XMP-metagegevensstandaard (Extensible Metadata Platform) voor metagegevensbeheer. Het wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 18%
+source-wordcount: '1413'
+ht-degree: 15%
 
 ---
 
@@ -131,11 +131,11 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 ### XMP-metagegevens filteren {#filtering-xmp-metadata}
 
-AEM-elementen ondersteunen zowel blacklist- als whitelist-filtering van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen van binaire elementen die in JCR worden opgeslagen wanneer elementen worden opgenomen.
+AEM-elementen ondersteunen het filteren van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen van binaire elementen van elementen en die worden opgeslagen in JCR wanneer elementen worden ingepakt. Filteren is mogelijk via een geblokkeerde lijst en een toegestane lijst.
 
-Met filtering van zwarte lijsten kunt u alle XMP-metagegevenseigenschappen importeren, behalve de eigenschappen die zijn opgegeven voor uitsluiting. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als door filtering op zwarte lijsten een groot aantal elementen met een groot aantal XMP-metagegevens kan worden geïmporteerd, kunnen bij de AEM-instantie/cluster stabiliteitsproblemen optreden, bijvoorbeeld verstopte wachtrijen voor waarneming.
+Als u filtert met een geblokkeerde lijst, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een geblokkeerde lijst een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de instantie AEM/de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
-Door het filteren met whitelist van XMP-metagegevens wordt dit probleem opgelost door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere/onbekende XMP-eigenschappen genegeerd. U kunt enkele van deze eigenschappen toevoegen aan het filter voor zwarte lijsten voor achterwaartse compatibiliteit.
+Door het filteren van XMP-metagegevens via de toegestane lijst verhelpt u dit probleem door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere/onbekende XMP-eigenschappen genegeerd. Voor achterwaartse verenigbaarheid, kunt u sommige van deze eigenschappen aan het filter toevoegen dat een geblokkeerde lijst gebruikt.
 
 >[!NOTE]
 >
@@ -143,16 +143,17 @@ Door het filteren met whitelist van XMP-metagegevens wordt dit probleem opgelost
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u whitelistfilters wilt toepassen, selecteert u **[!UICONTROL Apply Whitelist to XMP Properties]** en geeft u de eigenschappen die u wilt importeren op in het vak **[!UICONTROL Whitelisted XML Names for XMP filtering]**.
+1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Whitelist to XMP Properties]****[!UICONTROL Whitelisted XML Names for XMP filtering]** vak en geeft u deze op.
 
-1. Als u XMP-eigenschappen op de blacklist wilt uitfilteren nadat u een whitelistfilter hebt toegepast, geeft u ze op in het vak **[!UICONTROL Blacklisted XML Names for XMP filtering]**.
+1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filters hebt toegepast via de lijst met toegestane waarden, geeft u ze op in het **[!UICONTROL Blacklisted XML Names for XMP filtering]** vak.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, filtering op zwarte lijsten is standaard ingeschakeld. Als u filteren op zwarte lijsten wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
 
 1. Sla de wijzigingen op.
 
 >[!MORELIKETHIS]
 >
 >* [XMP-specificatie van Adobe](https://www.adobe.com/devnet/xmp.html)
+
