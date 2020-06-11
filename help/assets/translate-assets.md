@@ -3,9 +3,9 @@ title: Digitale middelen maken en beheren in meerdere talen en vertaalworkflows 
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2465'
 ht-degree: 19%
 
 ---
@@ -55,7 +55,7 @@ In Adobe Experience Manager (AEM)-middelen worden meertalige middelen opgenomen 
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld, `/content/dam/it` is de Italiaanse taalwortel voor het Italiaans taalexemplaar. De exemplaren van de taal moeten een [correct-gevormde taalwortel](#create-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
-De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
+De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
 ```shell
 /content
@@ -71,9 +71,9 @@ De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de hoofdtaal. De t
 
 Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 
-1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalmap van de Engelse kopie in de voorbeeldmaphiërarchie is bijvoorbeeld */content/dam/nl*. Zorg ervoor dat de taalwortel correct volgens de informatie in [Create een taalwortel](#create-a-language-root)wordt gevormd.
+1. Maak de hoofdtaalhoofdmap van uw primaire taal. De hoofdmap voor de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en`. Zorg ervoor dat de taalwortel correct volgens de informatie in [Create een taalwortel](#create-a-language-root)wordt gevormd.
 
-1. Voeg elementen toe aan uw taalstramien.
+1. Voeg middelen toe aan uw primaire taal.
 1. Creeer de taalwortel van elke doeltaal waarvoor u een taalexemplaar vereist.
 
 ### Een hoofdmap voor talen maken {#create-a-language-root}
@@ -90,7 +90,7 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 De interface die is geoptimaliseerd voor aanrakingen biedt een paneel Referenties met een lijst van taalwortels die zijn gemaakt in AEM-elementen.
 
-1. Selecteer in de middelenconsole de hoofdtaal waarvoor u taalkopieën wilt maken.
+1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.
 1. Klik of tik op het venster Referenties **[!UICONTROL Language Copies]**. In het deelvenster Taalkopieën worden de taalkopieën van de elementen weergegeven.
 
