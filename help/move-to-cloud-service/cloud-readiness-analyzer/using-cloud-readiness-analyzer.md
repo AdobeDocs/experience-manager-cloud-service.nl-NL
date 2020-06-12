@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 4%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Zodra u op de Analysator **van de Bereidheid van de** Wolk klikt, begint het hulpmiddel het rapport te produceren en na een paar minuten zult u het geproduceerde rapport zien.
+1. Nadat u op **Cloud Readiness Analyzer** hebt geklikt, wordt het rapport gegenereerd en na enkele minuten is het samenvattingsrapport beschikbaar voor uw AEM-instantie.
 
    >[!NOTE]
    >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
@@ -77,12 +77,21 @@ Voer de onderstaande stappen uit om een CSV-indeling van uw samenvattingsrapport
 1. 
    1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-1. Zodra uw rapport wordt geproduceerd, klik op **CSV** om het volledige samenvattingsrapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in het hieronder cijfer te downloaden.
+1. Zodra het rapport beschikbaar is, klik op **CSV** om het volledige samenvattingsrapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Het rapport bekijken in AEM 6.1 Instanties {#aem-instances-report}
 
-U kunt het CSV-rapport voor AEM 6.1 downloaden. Dit is in behandeling.
+Voer de onderstaande stappen uit om het CSV-rapport voor Adobe Experience Manager (AEM) 6.1 te downloaden:
+
+1.Navigeer aan **Adobe Experience Manager Web ConsoleConfiguration** gebruikend `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selecteer het tabblad **Status** en zoek in de vervolgkeuzelijst naar **Patroondetector** , zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. U kunt het samenvattingsrapport downloaden in een ZIP-map of in JSON-indeling.
+
 
