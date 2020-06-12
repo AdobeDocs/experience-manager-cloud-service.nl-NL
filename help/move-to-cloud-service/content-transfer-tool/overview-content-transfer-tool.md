@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 82%
+source-wordcount: '626'
+ht-degree: 83%
 
 ---
 
@@ -57,8 +57,8 @@ Volg de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen 
 
 * Voordat u het gereedschap Inhoud overbrengen uitvoert, moet u ervoor zorgen dat er voldoende schijfruimte is in de `crx-quickstart` submap van de AEM-broninstantie. De reden hiervoor is dat met het gereedschap Inhoud overbrengen een lokale kopie van de opslagplaats wordt gemaakt die later wordt geüpload naar de migratieset.
 De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als volgt:
-   *grootte van gegevensopslag + grootte van nodeopslag * 1.5*
+   `data store size + node store size * 1.5`
 
-   * Voor de grootte *van de* gegevensopslag gebruikt het gereedschap Inhoud overbrengen 64 GB, zelfs als de feitelijke gegevensopslag groter is.
-   * De grootte *van de* knooparchiefopslag is de grootte van de segmentopslagfolder of de grootte van het gegevensbestand MongoDB.
+   * *grootte* gegevensopslag: Het gereedschap Inhoud overbrengen gebruikt 64 GB, zelfs als de gegevensopslag in werkelijkheid groter is.
+   * *archiefgrootte*knooppunt: de grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslaggrootte van 20 GB is dus 94 GB vrije schijfruimte vereist.
