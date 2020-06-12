@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 93%
+source-wordcount: '1582'
+ht-degree: 91%
 
 ---
 
@@ -18,17 +18,19 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
 
-* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
-* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admingebruiker op uw broninstantie moeten zijn en tot de AEM beheerdersgroep in de instantie van de Dienst van de Wolk behoren u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
 * In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces.
 
+* De aanbevolen bovengrens voor de grootte van de opslagplaats die de Content Transfer Tool tegelijkertijd kan ondersteunen, is 20 GB.
+
 ## Beschikbaarheid {#availability}
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand (Content Transfer Tool v1.0.0) worden gedownload van de portal Software Distribution. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+Het gereedschap Inhoud overbrengen kan als ZIP-bestand (Content Transfer Tool v1.0.0) worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
 >Download het Content Transfer Tool van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -57,7 +59,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
       >[!NOTE]
       >Er zijn geen speciale tekens toegestaan voor de naam van de migratieset.
 
-   1. **Cloud Service Configuration**: voer de doelversie in van de auteur-URL voor AEM as a Cloud Service.
+   1. **Cloud Service Configuration**: Voer de doelversie in van de auteur-URL voor AEM as a Cloud Service.
 
       >[!NOTE]
       >Tijdens de contentoverdracht kunt u maximaal vier migratiesets tegelijk maken en onderhouden.
@@ -66,7 +68,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken vanuit de auteurinstantie ophalen door te navigeren naar `/libs/granite/migration/token.json`. Het toegangstoken wordt teruggewonnen van de auteursinstantie van de Dienst van de Wolk.
+      >U kunt het toegangstoken vanuit de auteurinstantie ophalen door te navigeren naar `/libs/granite/migration/token.json`. Het toegangstoken wordt teruggewonnen van de instantie van de Cloud Service auteur.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
@@ -134,7 +136,7 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen. Voer de onderstaande stappen uit:
 
-1. Ga naar de *overzichtspagina* en selecteer de migratieset waarvoor u de aanvullingsextractie wilt uitvoeren.
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsextractie wilt uitvoeren.
 
 1. Klik op **Extract** om de extractie te starten.
 
@@ -143,7 +145,7 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 1. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven.
 
    >[!IMPORTANT]
-   >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie )is uitgeschakeld.
+   >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
 
 ### Opnameproces in Content Transfer {#ingestion-process}
@@ -179,7 +181,7 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
 
-1. Ga naar de *overzichtspagina* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren.
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren.
 
 1. Klik op **Ingest** om de opname te starten.
 
@@ -193,10 +195,10 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
-Op de *overzichtspagina* kunt u de logboeken voor een bestaande migratieset bekijken.
+Op de pagina *Overview* kunt u de logboeken voor een bestaande migratieset bekijken.
 Voer de onderstaande stappen uit:
 
-1. Ga naar de *overzichtspagina* en selecteer de migratieset waarvan u het logboek u wilt bekijken. Klik op **View Log** op de actiebalk.
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvan u het logboek wilt bekijken. Klik op **View Log** op de actiebalk.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
@@ -205,20 +207,22 @@ Voer de onderstaande stappen uit:
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
 Of:
 
-   U kunt de logboeken voor uw migratieset ook bekijken op het *overzichtsscherm*. Selecteer de migratieset en klik op de status onder het veld **EXTRACTION**. Klik in dit geval op **FINISHED** om de logbestanden op een nieuw tabblad weer te geven.
+   U kunt de logboeken voor uw migratieset ook bekijken op het scherm *Overview*. Selecteer de migratieset en klik op de status onder het veld **EXTRACTION**. Klik in dit geval op **FINISHED** om de logbestanden op een nieuw tabblad weer te geven.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
+1. Om de logboeken te staart zonder het gebruikersinterface te gebruiken, kunt u SSH in uw bronAEM milieu en staart `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
 ### Een migratieset verwijderen {#deleting-migration-set}
 
-U kunt de migratieset verwijderen vanaf de *overzichtspagina*.
+U kunt de migratieset verwijderen vanaf de pagina *Overview*.
 Voer de onderstaande stappen uit:
 
-1. Ga naar de *overzichtspagina* en selecteer de migratieset die u wilt verwijderen. Klik op **Delete** op de actiebalk.
+1. Ga naar de pagina *Overview* en selecteer de migratieset die u wilt verwijderen. Klik op **Delete** op de actiebalk.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. Klik op **Delete** in het dialoogvenster **Delete Migration Set** de verwijdering te bevestigen.
+1. Klik op **Delete** in het dialoogvenster **Delete Migration Set** om de verwijdering te bevestigen.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
@@ -232,7 +236,7 @@ Als er ontbrekende blob-id&#39;s worden gerapporteerd, zoals hieronder vermeld, 
 De volgende opdracht wordt uitgevoerd 
 
 >[!NOTE]
-> `--verbose` markering is vereist om te rapporteren vanuit welke nodepaden wordt verwezen naar de blobs.
+> `--verbose` markering is vereist om te rapporteren vanuit welke knooppuntpaden wordt verwezen naar de blobs.
 
 **Voor repository&#39;s van AEM 6.5 (Oak 1.8 en lager)**
 
