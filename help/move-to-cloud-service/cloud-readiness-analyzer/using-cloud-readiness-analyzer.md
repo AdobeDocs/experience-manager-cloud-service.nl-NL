@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 * Het CRA-rapport wordt samengesteld met behulp van de uitvoer van de [Patroondetector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)van de Adobe Experience Manager (AEM). De versie van Patroondetector die door CRA wordt gebruikt, is opgenomen in het installatiepakket van CRA.
 
-* De CRA kan alleen worden uitgevoerd door de `admin` gebruiker of een gebruiker in de `Administrators` groep.
+* CRA kan slechts door de *admin* gebruiker of een gebruiker in de groep van **Beheerders** worden in werking gesteld.
 
 * CRA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
 
@@ -57,30 +57,47 @@ Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
 
 Voor AEM 6.3 en hoger is de primaire manier om Cloud Readiness Analyzer uit te voeren:
 
-1. In de gebruikersinterface van de Adobe Experience Manager navigeert u naar Gereedschappen -> **Bewerkingen** -> **Cloud Readiness Analyzer**.
+1. Selecteer de Adobe Experience Manager-instantie en navigeer naar gereedschappen -> **Bewerkingen** -> **Cloud Readiness Analyzer**.
 
    >[!NOTE]
    >Het CRA zal een achtergrondproces beginnen om het rapport te produceren zodra het hulpmiddel wordt geopend. Het toont een aanwijzing dat de rapportgeneratie in proces is tot het rapport klaar is. U kunt het browsertabblad sluiten en later terugkeren om het rapport te bekijken wanneer het is voltooid.
 
-Zodra het CRA- rapport is geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden formaat (CSV) te downloaden door de knoop **CSV** in de hogere juiste hoek van de hulpmiddelpagina te klikken.
+1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) te downloaden. Klik op **CSV** om het volledige samenvattingsrapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
 
-U kunt CRA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door de &quot;Refresh knoop van het Rapport&quot;in de hogere linkerhoek te klikken.
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >U kunt CRA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door de **Refresh knoop van het Rapport** in de hogere linkerhoek te klikken.
 
 ### AEM 6.2 en 6.1 {#aem-specific-versions}
 
-De gebruikersinterface van CRA is beperkt in AEM 6.2 aan een verbinding die het CSV- rapport produceert en downloadt. Voor AEM 6.1 is de gebruikersinterface niet functioneel en kan alleen de HTTP-interface worden gebruikt.
+De gebruikersinterface van de Cloud Readiness Analyzer is in AEM 6.2 beperkt tot een koppeling die het CSV-rapport genereert en downloadt. Voor AEM 6.1 is de gebruikersinterface niet functioneel en kan alleen de HTTP-interface worden gebruikt.
 
 In alle versies kan de opgenomen Patroondetector onafhankelijk worden uitgevoerd.
 
+Voer de onderstaande stappen uit om het CSV-rapport voor Adobe Experience Manager (AEM) 6.1 en 6.2 te downloaden:
+
+1.Navigeer aan **Adobe Experience Manager Web ConsoleConfiguration** gebruikend `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selecteer het tabblad **Status** en zoek in de vervolgkeuzelijst naar **Patroondetector** , zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. U kunt het samenvattingsrapport downloaden in een ZIP-map of in JSON-indeling.
+
 ## CRA-overzichtsrapport {#cra-summary-report}
 
-Wanneer CRA in het gebruikersinterface van AEM in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster. De vorm van het rapport is:
+Wanneer de Cloud Readiness Analyzer in de gebruikersinterface van AEM in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
 
-* Overzicht van rapport: Informatie over het verslag zelf, ook wanneer het is opgesteld.
-* Systeemoverzicht: Informatie over het AEM-systeem waarop het CRA is uitgevoerd.
-* Categorieën zoeken: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie behandelt. Elk gedeelte bevat het volgende: Naam van categorie, subtypen, aantal en belang zoeken, overzicht, koppeling naar categoriedocumentatie en individuele zoekinformatie.
+De vorm van het rapport is:
 
-Aan elke bevinding wordt een belangrijk niveau toegewezen om een ruwe prioriteit voor actie aan te geven. De gebruikte hoeveelheden zijn als volgt:
+* *Overzicht* van rapport: Informatie over het verslag zelf, ook wanneer het is opgesteld.
+* *Systeemoverzicht*: Informatie over het AEM-systeem waarop het CRA is uitgevoerd.
+* *Categorieën* zoeken: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie behandelt. Elk gedeelte bevat het volgende: Naam van categorie, subtypen, aantal en belang zoeken, overzicht, koppeling naar categoriedocumentatie en individuele zoekinformatie.
+
+Aan elke bevinding wordt een belangrijk niveau toegewezen om een ruwe prioriteit voor actie aan te geven.
+
+Volg de onderstaande tabel om inzicht te krijgen in de belangrijkste niveaus:
 
 | Belang | Beschrijving |
 |--- |--- |
@@ -91,16 +108,7 @@ Aan elke bevinding wordt een belangrijk niveau toegewezen om een ruwe prioriteit
 
 ## CRA CSV-rapport {#crs-csv-report}
 
-Wanneer op de knop &quot;CSV&quot; wordt gedrukt, wordt de CSV-indeling van het CRA-rapport opgebouwd uit de resultaatcache en geretourneerd aan uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`. Als de cache is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
-
-Voer de onderstaande stappen uit om een CSV-indeling van het samenvattingsrapport van uw AEM-instantie te genereren:
-
-1. 
-   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
-
-1. Zodra het rapport beschikbaar is, klik op **CSV** om het volledige samenvattingsrapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het rapport van Cloud Readiness Analyzer gemaakt op basis van de resultaatcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`. Als de cache is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
 
 De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de uitvoer van de patroondetector, gesorteerd en ingedeeld op categorietype, subtype en belangrijkheidsniveau. De indeling is geschikt voor weergave en bewerking in een toepassing zoals Microsoft Excel. Het is bedoeld om alle vindingsinformatie in een herhaalbaar formaat te verstrekken dat wanneer het vergelijken van rapporten in tijd kan nuttig zijn om vooruitgang te meten.
 
@@ -133,8 +141,10 @@ De HTTP-interface kan in verschillende methoden worden gebruikt.
 
 Een eenvoudige manier is om een browsertabblad te openen in dezelfde browser waarin u zich al als beheerder hebt aangemeld bij AEM. U kunt de URL invoeren op het browsertabblad en de resultaten laten weergeven of downloaden door de browser.
 
-U kunt ook een opdrachtregelprogramma gebruiken, zoals `curl` of `wget` elke HTTP-clienttoepassing. Wanneer u geen browsertabblad gebruikt met een geverifieerde sessie, moet u een beheergebruikersnaam en -wachtwoord opgeven als onderdeel van de opmerking. Hieronder ziet u hoe u dit kunt doen:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+U kunt ook een opdrachtregelprogramma gebruiken, zoals `curl` of `wget` elke HTTP-clienttoepassing. Wanneer u geen browsertabblad gebruikt met een geverifieerde sessie, moet u een beheergebruikersnaam en -wachtwoord opgeven als onderdeel van de opmerking.
+
+Hieronder ziet u hoe u dit kunt doen:
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### Kopteksten en parameters {#http-headers-and-parameters}
 
@@ -151,7 +161,7 @@ De volgende HTTP-queryparameters zijn beschikbaar als handig wanneer HTTP-header
 Wanneer zowel een HTTP- kopbal als overeenkomstige vraagparameter aanwezig zijn, zal de vraagparameter belangrijkheid nemen.
 
 Een eenvoudige manier om de generatie van het rapport via de interface van HTTP in werking te stellen is met het volgende bevel:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 Zodra een verzoek is ingediend, te hoeven de cliënt niet actief voor het te produceren rapport te blijven. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend HTTP KRIJGT verzoek en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen in een andere cliënt of het hulpmiddel CSV in het AEM gebruikersinterface.
 
@@ -175,16 +185,7 @@ De waarde van het geheim voorgeheugenleven wordt opgeslagen als `maxCacheAge` be
 
 De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend de interface CRX/DE Lite aan AEM.
 
-## Het rapport bekijken in AEM 6.1 Instanties {#aem-instances-report}
 
-Voer de onderstaande stappen uit om het CSV-rapport voor Adobe Experience Manager (AEM) 6.1 te downloaden:
 
-1.Navigeer aan **Adobe Experience Manager Web ConsoleConfiguration** gebruikend `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Selecteer het tabblad **Status** en zoek in de vervolgkeuzelijst naar **Patroondetector** , zoals in de onderstaande afbeelding wordt getoond.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. U kunt het samenvattingsrapport downloaden in een ZIP-map of in JSON-indeling.
 
 
