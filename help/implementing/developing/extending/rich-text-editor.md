@@ -1,11 +1,11 @@
 ---
-title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Experience Manager als cloudservice.
-description: Configureer Rich Text Editor om inhoud in Adobe Experience Manager te ontwerpen als Cloud Service.
+title: Vorm de Rich Text Editor aan auteursinhoud in Adobe Experience Manager als Cloud Service.
+description: Vorm Rich Text Editor aan auteursinhoud in Adobe Experience Manager als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Auteurs kunnen tekstinhoud maken en bewerken in Experience Manager met behulp va
 | Inline | Op locatie bewerken voor snelle, kleine bewerkingen; Opmaken zonder dialoogvenster te openen | Minimale RTE-functies |
 | RTE volledig scherm | Behandelt gehele pagina | Alle vereiste eigenschappen van RTE |
 | Dialoog | Dialoogvenster boven op de pagina-inhoud, maar heeft geen betrekking op de gehele pagina | Functies correct inschakelen |
-| Dialoogvenster volledig scherm | Hetzelfde als de modus Volledig scherm; bevat gebieden van de dialoog naast RTE | Alle vereiste eigenschappen van RTE |
+| Dialoogvenster op volledig scherm | Hetzelfde als de modus Volledig scherm; bevat gebieden van de dialoog naast RTE | Alle vereiste eigenschappen van RTE |
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Als u de inhoud opent (met een langzaam dubbelklikken), kan deze op de pagina wo
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
-De componenten van de Manager van de ervaring kunnen in het volledige schermmening worden geopend die de paginainhoud verbergt en het beschikbare scherm bezet. U kunt overwegen om een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
+De componenten van de Manager van de ervaring kunnen in het volledig-schermmening worden geopend die de paginainhoud verbergt en het beschikbare scherm bezet. U kunt overwegen een gedetailleerde versie van inlinebewerking op een volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
 
 In de modus Volledig scherm van het dialoogvenster zijn, samen met een gedetailleerde RTE-werkbalk, ook de opties en componenten beschikbaar in een dialoogvenster. Het is alleen van toepassing voor een dialoog die naast andere componenten RTE bevat.
 
-![De gedetailleerde RTE toolbar wanneer het uitgeven op volledig het schermwijze](assets/rte-toolbar-full-screen-mode.png)
+![De gedetailleerde RTE toolbar wanneer het uitgeven op volledig-schermwijze](assets/rte-toolbar-full-screen-mode.png)
 
-*Afbeelding: De gedetailleerde RTE toolbar wanneer het uitgeven op volledig het schermwijze.*
+*Afbeelding: De gedetailleerde RTE toolbar wanneer het uitgeven op volledig-schermwijze.*
 
 ### Dialoogbewerkingen {#dialog-editing}
 
@@ -98,7 +98,7 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | bewerken | cut copy paste-default paste-plaintext paste-wordhtml | [Knip, kopieer en kopieer de drie plakmodi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | zoeken, vervangen | Zoeken en vervangen. |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | vet cursief onderstrepen | [Basistekstopmaak](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| [afbeelding](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | afbeelding | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
 | [toetsen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Zie de [tabgrootte](configure-rich-text-editor-plug-ins.md#tabsize)om deze waarde te definiëren. |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
 | [koppelingen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -213,13 +213,13 @@ Gebruik de volgende voorbeeldconfiguratie om de werkbalk voor `dialogFullScreen`
 </uiSettings>
 ```
 
-Er worden verschillende UI-instellingen gebruikt voor de inlinemodus en de modus Volledig scherm. De eigenschap toolbar wordt gebruikt om de knoppen van de werkbalk op te geven.
+Er worden verschillende instellingen voor de gebruikersinterface gebruikt voor de inlinemodus en de modus Volledig scherm. Met de eigenschap toolbar geeft u de optie van de werkbalk op.
 
-Als de knop zelf bijvoorbeeld een functie is (bijvoorbeeld `Bold`), wordt deze opgegeven als `PluginName#FeatureName` (bijvoorbeeld `links#modifylink`).
+Als de optie zelf bijvoorbeeld een functie is (bijvoorbeeld `Bold`), wordt deze opgegeven als `PluginName#FeatureName` (bijvoorbeeld `links#modifylink`).
 
-Als de knop een pop-up is (met enkele functies van een plug-in), wordt deze opgegeven als `#PluginName` (bijvoorbeeld `#format`).
+Als de optie een pop-up is (met enkele functies van een plug-in), wordt deze opgegeven als `#PluginName` (bijvoorbeeld `#format`).
 
-U kunt scheidingstekens (`|`) tussen een groep knoppen opgeven met `-`.
+U kunt scheidingstekens (`|`) tussen een groep opties opgeven met `-`.
 
 Het pop-upknooppunt onder de modus Inline of Volledig scherm bevat een lijst met de popovers die worden gebruikt. Elk onderliggend knooppunt onder het knooppunt &#39;popovers&#39; krijgt een naam na de insteekmodule (bijvoorbeeld de indeling). Deze heeft een eigenschap &#39;items&#39; die een lijst bevat met functies van de plug-in (bijvoorbeeld format#bold).
 
