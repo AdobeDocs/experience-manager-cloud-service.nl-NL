@@ -4,7 +4,7 @@ description: Leer om de stop-ins van de Redacteur van de Tekst te vormen AEM Ric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b5af8cad55c8644ba613370cf65b6a04b3abf9ed
+source-git-commit: 78f1e6427d5918639e56a89ca1f94fc402e34fee
 workflow-type: tm+mt
 source-wordcount: '4334'
 ht-degree: 0%
@@ -350,7 +350,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 *Type: `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -490,7 +490,7 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 
 ### Een tekenbereik definiëren {#definerangechar}
 
-1. Gebruik stap 1 tot en met 3 van [Eén teken](#definingasinglecharacter)definiëren.
+1. Gebruik stap 1 tot en met 3 van [Eén teken](#definesinglechar)definiëren.
 1. Voeg onder `chars` een nieuw knooppunt toe voor de definitie van het tekenbereik:
 
    * **U kunt een naam** opgeven, maar deze moet wel het tekenbereik weerspiegelen. bijvoorbeeld potloden .
