@@ -2,9 +2,9 @@
 title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van profielen
 description: Tips en tips en trucs voor het benoemen, ordenen en beheren van metagegevens voor bestanden met digitale elementen.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Hier volgt een overzicht van tips voor het organiseren van digitale elementbesta
 
    * **Ontwikkelingsmappen** - bevat digitale elementen waaraan u momenteel werkt.
    * **Clientmappen** - bevat digitale elementen op basis van clients of projectnamen.
-   * **Hoofdmappen** - bevat originele, brondigitale elementen.
+   * **Primaire bronmappen** - bevat originele, brondigitale elementen.
    * **Uitvoermappen** - bevat uitvoeringen en kopieën van de originele, brondigitale elementen.
    * **Bestandsgroottemappen** - bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
    * **Mappen** organiseren - bevat digitale elementen die klaar zijn om live op uw website te publiceren.
