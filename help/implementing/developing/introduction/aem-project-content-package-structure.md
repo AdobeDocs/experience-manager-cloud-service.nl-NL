@@ -1,11 +1,11 @@
 ---
 title: AEM-projectstructuur
-description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
+description: Leer over hoe te om pakketstructuren voor plaatsing aan de Cloud Service van de Adobe Experience Manager te bepalen.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 17%
+source-wordcount: '2522'
+ht-degree: 16%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >Zorg dat u uzelf vertrouwd bent met het basisgebruik [van de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM-projectarchitectuur en de [insteekmodule](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven, aangezien dit artikel voortbouwt op deze lessen en concepten.
 
-In dit artikel worden de wijzigingen beschreven die nodig zijn om Adobe Experience Manager Maven-projecten compatibel te maken met AEM Cloud Service door ervoor te zorgen dat ze de splitsing van muteerbare en onveranderbare inhoud respecteren. de nodige afhankelijkheden worden gecreëerd om niet-conflicterende, deterministische implementaties te creëren; en dat zij in een inzetbare structuur worden verpakt.
+In dit artikel worden de wijzigingen beschreven die nodig zijn om Maven-projecten te Adobe Experience Managers als AEM-Cloud Service die verenigbaar is, door ervoor te zorgen dat zij de opsplitsing van muteerbare en onveranderlijke inhoud respecteren; de nodige afhankelijkheden worden gecreëerd om niet-conflicterende, deterministische implementaties te creëren; en dat zij in een inzetbare structuur worden verpakt.
 
 Implementaties van AEM-toepassingen moeten uit één AEM-pakket bestaan. Dit pakket dient op zijn beurt subpakketten te bevatten die alles omvatten wat door de toepassing wordt vereist om te functioneren, met inbegrip van code, configuratie en om het even welke ondersteunende basislijninhoud.
 
@@ -30,13 +30,23 @@ De pakketstructuur die in dit document wordt beschreven, is compatibel met **zow
 
 ## Mutable versus Immuable Areas of the Repository {#mutable-vs-immutable}
 
-`/apps` en `/libs` worden beschouwd als **onveranderbare** gebieden van AEM omdat deze niet kunnen worden gewijzigd (maken, bijwerken, verwijderen) nadat AEM is gestart (dat wil zeggen tijdens runtime). Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
+`/apps` en `/libs`**worden beschouwd als onveranderbare gebieden van AEM omdat deze niet kunnen worden gewijzigd (maken, bijwerken, verwijderen) nadat AEM is gestart (dat wil zeggen tijdens runtime).** Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
 
-Al het andere in de opslagplaats, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, enz. Dit zijn allemaal **veranderbare** gebieden, wat betekent dat deze tijdens runtime kunnen worden gewijzigd.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
 > Zoals in vorige versies van AEM, `/libs` zou niet moeten worden gewijzigd. Alleen AEM-productcode kan worden geïmplementeerd op `/libs`.
+
+### eiken indexen {#oak-indexes}
+
+Oak-indexen (`/oak:index`) worden specifiek beheerd door het implementatieproces van de AEM Cloud Service. De reden hiervoor is dat de Cloud Manager moet wachten totdat een nieuwe index wordt geïmplementeerd en volledig opnieuw wordt gekoppeld voordat naar de nieuwe codeafbeelding wordt overgeschakeld.
+
+Daarom, hoewel de indexen van de eiken in runtime veranderbaar zijn, moeten zij als code worden opgesteld zodat zij kunnen worden geïnstalleerd alvorens om het even welke veranderlijke pakketten worden geïnstalleerd. Daarom maken `/oak:index` configuraties deel uit van het codepakket en geen deel uit van het inhoudspakket [zoals hieronder beschreven.](#recommended-package-structure)
+
+>[!TIP]
+>
+>Meer informatie over het indexeren in AEM als Cloud Service vindt u in het document [Inhoud zoeken en indexeren.](/help/operations/indexing.md)
 
 ## Aanbevolen pakketstructuur {#recommended-package-structure}
 
@@ -133,7 +143,7 @@ Terwijl de manuscripten van het Begin van de Repo in het `ui.apps` project zelf 
 + Groepen
 + ACLs
 
-De manuscripten van de Inzet van de Repo worden opgeslagen als `scripts` ingangen van `RepositoryInitializer` OSGi fabrieksconfiguraties, en kunnen daarom impliciet door runmode worden gericht, die voor verschillen tussen de manuscripten van de Inzet van de Auteur van AEM en van de Diensten van de Publicatie AEM, of zelfs tussen Envs (Dev, Stadium en Prod) toestaan.
+De manuscripten van de Inzet van de Repo worden opgeslagen als `scripts` ingangen van `RepositoryInitializer` OSGi fabrieksconfiguraties, en kunnen daarom impliciet door runmode worden gericht, die voor verschillen tussen de manuscripten van de Inzet van de AEM Author en van de Diensten van de AEM Publish, of zelfs tussen Envs (Dev, Stadium en Prod) toestaan.
 
 Merk op dat wanneer het bepalen van Gebruikers, en Groepen, slechts groepen als deel van de toepassing worden beschouwd, en integraal aan zijn functie zou hier moeten worden bepaald. Organisatiegebruikers en -groepen moeten nog steeds bij uitvoering in AEM worden gedefinieerd; Bijvoorbeeld, als een douanewerkschema werk aan een genoemde Groep toewijst, zou die Groep binnen via Repo Init in de toepassing AEM moeten worden bepaald, echter als de Groepering slechts organisatorisch, zoals &quot;Team van Wendy&quot;en &quot;Team van Sean&quot;is, worden deze het best bepaald, en bij runtime in AEM geleid.
 
@@ -539,7 +549,7 @@ Voeg in de `ui.content/pom.xml`sectie de volgende `<dependencies>` instructies t
 ...
 ```
 
-### De doelmap van het containerproject opschonen {#xml-clean-container-package}
+### De Target-map van het containerproject opschonen {#xml-clean-container-package}
 
 Voeg in het `all/pom.xml` dialoogvenster de `maven-clean-plugin` plug-in toe waarmee de doelmap wordt gewist voordat een Maven-versie wordt gemaakt.
 
