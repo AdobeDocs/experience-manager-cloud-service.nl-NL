@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -46,14 +46,14 @@ Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Nadat u op **Cloud Readiness Analyzer** hebt geklikt, wordt het rapport gegenereerd en na enkele minuten is het samenvattingsrapport beschikbaar voor uw AEM-instantie.
+1. Nadat u op de **Cloud Readiness Analyzer** hebt geklikt, wordt het rapport gegenereerd en na enkele minuten is het CRA-rapport beschikbaar voor uw AEM-instantie.
 
    >[!NOTE]
    >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Rapport met de Cloud Readiness Analyzer Organised {#organized-report}
+## Het Rapport Cloud Readiness Analyzer interpreteren {#cra-report}
 
 Wanneer de Cloud Readiness Analyzer in de instantie AEM in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
 
@@ -83,7 +83,7 @@ Voor AEM 6.3 en hoger is de primaire manier om Cloud Readiness Analyzer uit te v
    >[!NOTE]
    >Het CRA zal een achtergrondproces beginnen om het rapport te produceren zodra het hulpmiddel wordt geopend. Het toont een aanwijzing dat de rapportgeneratie in proces is tot het rapport klaar is. U kunt het browsertabblad sluiten en later terugkeren om het rapport te bekijken wanneer het is voltooid.
 
-1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) te downloaden. Klik op **CSV** om het volledige samenvattingsrapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
+1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) te downloaden. Klik op **CSV** om het volledige CRA rapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,29 +92,18 @@ Voor AEM 6.3 en hoger is de primaire manier om Cloud Readiness Analyzer uit te v
 
 ### Adobe Experience Managers 6.2 en 6.1 {#aem-specific-versions}
 
-De Cloud Readiness Analyzer in Adobe Experience Manager (AEM) 6.2 is beperkt tot een verbinding die het CSV-rapport produceert en downloadt.
+De Cloud Readiness Analyzer in Adobe Experience Manager 6.2 is beperkt tot een verbinding die het Csv- rapport produceert en downloadt.
+
+Voor Adobe Experience Manager 6.1 is het gereedschap niet functioneel en kan alleen de HTTP-interface worden gebruikt.
 
 >[!NOTE]
->
->* Voor Adobe Experience Manager 6.1 is het gereedschap niet functioneel en kan alleen de HTTP-interface worden gebruikt.
-   >
-   >
-* In alle versies kan de opgenomen Patroondetector onafhankelijk worden uitgevoerd.
+>In alle versies kan de opgenomen Patroondetector onafhankelijk worden uitgevoerd.
 
+## Het CSV-rapport van de Cloud Readiness Analyzer interpreteren {#cra-csv-report}
 
-Voer de onderstaande stappen uit om het CSV-rapport voor Adobe Experience Manager (AEM) 6.1 en 6.2 te downloaden:
+Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het rapport van Cloud Readiness Analyzer gemaakt op basis van de resultaatcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
 
-1.Navigeer aan **Adobe Experience Manager Web ConsoleConfiguration** gebruikend `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Selecteer het tabblad **Status** en zoek in de vervolgkeuzelijst naar **Patroondetector** , zoals in de onderstaande afbeelding wordt getoond.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. U kunt het samenvattingsrapport downloaden in een ZIP-map of in JSON-indeling.
-
-## Het CSV-rapport van de Cloud Readiness Analyzer interpreteren {#crs-csv-report}
-
-Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het rapport van Cloud Readiness Analyzer gemaakt op basis van de resultaatcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`. Als de cache is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
+Als de cache is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
 
 De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de uitvoer van de patroondetector, gesorteerd en ingedeeld op categorietype, subtype en belangrijkheidsniveau. De indeling is geschikt voor weergave en bewerking in een toepassing zoals Microsoft Excel. Het is bedoeld om alle vindingsinformatie in een herhaalbaar formaat te verstrekken dat wanneer het vergelijken van rapporten in tijd kan nuttig zijn om vooruitgang te meten.
 
@@ -189,7 +178,7 @@ De standaard CRA geheim voorgeheugenlevensduur is 24 uren. Met de optie om een r
 De waarde van het geheim voorgeheugenleven wordt opgeslagen als `maxCacheAge` bezit op de volgende gegevensopslagplaats knoop:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend CRX/DE Lite.
+De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend **CRXDE Lite**.
 
 
 
