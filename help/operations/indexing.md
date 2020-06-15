@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 2%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Inhoud zoeken en indexeren {#indexing}
 
-## Wijzigingen in AEM als cloudservice {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM als Cloud Service beweegt Adobe zich van een AEM instantie centric model aan een de dienst gebaseerde mening met n-x AEM Containers, aangedreven door CI/CD pijpleidingen in de Manager van de Wolk. In plaats van het vormen van en het handhaven van Indexen op enige instanties AEM, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als dit niet wordt gespecificeerd en getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM als Cloud Service, beweegt Adobe zich van een AEM instantie centric model aan een de dienst gebaseerde mening met n-x AEM Containers, aangedreven door CI/CD pijpleidingen in de Manager van de Wolk. In plaats van het vormen van en het handhaven van Indexen op enige instanties AEM, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als dit niet wordt gespecificeerd en getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
@@ -32,7 +32,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
 
-1. Op een hoog niveau voor AEM als Cloud Service, met de introductie van het [Blauw-Groen implementatiemodel](#index-management-using-blue-green-deployments) zullen twee sets indexen bestaan: één set voor de oude versie (blauw) en één set voor de nieuwe versie (groen).
+1. Op een hoog niveau voor AEM als Cloud Service, met de introductie van het [blauw-Groene plaatsingsmodel](#index-management-using-blue-green-deployments) zullen twee reeksen indexen bestaan: één set voor de oude versie (blauw) en één set voor de nieuwe versie (groen).
 
 <!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
@@ -56,7 +56,7 @@ De volgende drie gebruiksgevallen kunnen in indexen worden gedefinieerd:
 1. Een bestaande indexdefinitie bijwerken. Dit betekent in feite dat een nieuwe versie van een bestaande indexdefinitie moet worden toegevoegd
 1. Verwijderen van een bestaande index die overbodig of verouderd is.
 
-Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Raadpleeg de documentatie [bij](/help/implementing/deploying/overview.md)Implementeren naar AEM als Cloud Service voor meer informatie.
+Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Voor meer informatie, zie het [Opstellen aan AEM als documentatie](/help/implementing/deploying/overview.md)van de Cloud Service.
 
 ### De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
@@ -83,6 +83,10 @@ Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
 Om een index te kunnen implementeren, moet de indexdefinitie (`/oak:index/definitionname``ui.apps` ) daarom via Git en het implementatieproces van Cloud Manager worden geleverd.
 
 Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedestilleerd met de nieuwe indexdefinities, voordat de Blauw-Groen omschakeling plaatsvindt.
+
+>[!TIP]
+>
+>Zie het document [AEM Project Structure voor meer informatie over de vereiste pakketstructuur voor AEM als Cloud Service.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Indexbeheer met Blauw-groene implementaties {#index-management-using-blue-green-deployments}
 
