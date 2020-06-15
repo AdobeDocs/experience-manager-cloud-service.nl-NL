@@ -2,9 +2,9 @@
 title: Overzicht van de Cloud Readiness Analyzer
 description: Overzicht van de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Aanvullende informatie over de categorieën en de mogelijke implicaties en oplos
 >[!NOTE]
 >Het rapport van de Analysator van de Bereidheid van de Wolk versnelt het proces om de tijd en de kosten te schatten die aan overgang aan AEM als Cloud Service worden vereist door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
 
-U kunt het samenvattingsrapport ook downloaden via de AEM-gebruikersinterface. Zie De resultaten **weergeven in een CSV-indeling** voor meer informatie die in behandeling is.
+U kunt het rapport Cloud Readiness Analyzer ook downloaden van uw AEM-instantie. Zie De resultaten **weergeven in een CSV-indeling** voor meer informatie die in behandeling is.
