@@ -2,10 +2,10 @@
 sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 83%
+source-wordcount: '213'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 83%
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Ontwikkelen voor AEM as a Cloud Service {#developing}
    + [AEM-projectstructuur](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM-projectopslagplaatsstructuurpakket](developing/introduction/repository-structure-package.md)
+   + [AEM-projectrepositorystructuurpakket](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](developing/introduction/develop-wknd-tutorial.md)
@@ -43,8 +43,11 @@ ht-degree: 83%
 + Implementeren naar AEM as a Cloud Service {#deploying}
    + [Implementeren naar AEM as a Cloud Service](deploying/overview.md)
    + [OSGi configureren voor AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Overzicht van levering van inhoud {#content-delivery}
-   + [Inhoudsleveringsstroom](dispatcher/overview.md)
++ Author Tier {#author-tier}
+   + [Toegang tot de lijst met auteurs](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [De lijst van auteurs beveiligen](/help/implementing/author-tier/securing-the-author-tier.md)
++ Overzicht van contentlevering {#content-delivery}
+   + [Workflow voor contentlevering](dispatcher/overview.md)
    + [Dispatcher in de cloud](dispatcher/disp-overview.md)
-   + [CDN in AEM als cloudservice](dispatcher/cdn.md)
-   + [Caching in AEM als Cloud Service](dispatcher/caching.md)
+   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
