@@ -2,9 +2,9 @@
 title: Overzicht van de Cloud Readiness Analyzer
 description: Overzicht van de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ De Cloud Readiness Analyzer helpt de processen te versnellen om bereidheid te be
 
 Dit hulpmiddel produceert een rapport dat gebieden van potentieel refactoring identificeert, die de eerste stap in de overgangsreis aan AEM als Cloud Service is.
 
-## Samenvattingsrapport in Cloud Readiness Analyzer {#summary-report}
+## Rapport Cloud Readiness Analyzer {#cra-report}
 
-Het samenvattingsrapport van de Cloud Readiness Analyzer wordt gebruikt om inzicht op hoog niveau te krijgen in de algemene gereedheid voor upgrades. Het verslag bestaat uit bevindingen binnen categorieën van kwesties die moeten worden aangepakt voordat een geslaagde implementatie bij AEM als Cloud Service kan plaatsvinden.
+Met het Rapport Cloud Readiness Analyzer wordt op hoog niveau inzicht verkregen in de algemene gereedheid voor upgrades. Het verslag bestaat uit bevindingen binnen categorieën van kwesties die moeten worden aangepakt voordat een geslaagde implementatie bij AEM als Cloud Service kan plaatsvinden.
 
-Het samenvattingsrapport bevat de volgende categorieën:
+Het rapport Cloud Readiness Analyzer bevat de volgende categorieën:
 
 * Toepassingsfunctionaliteit die moet worden vernieuwd
 * Items in opslagplaats die naar een ondersteunde locatie moeten worden verplaatst
@@ -28,9 +28,9 @@ Het samenvattingsrapport bevat de volgende categorieën:
 * Implementatie- en configuratieproblemen
 * AEM 6.x-functies die zijn vervangen door nieuwe functionaliteit of die momenteel niet worden ondersteund in AEM als Cloud Service
 
-Aanvullende informatie over de categorieën en de mogelijke implicaties en oplossingen die aan die categorieën zijn gekoppeld, wordt verstrekt via links vanuit het samenvattend verslag.
+Aanvullende informatie over de categorieën en mogelijke implicaties en oplossingen die aan deze categorieën zijn gekoppeld, vindt u via koppelingen vanuit het Rapport Cloud Readiness Analyzer.
 
 >[!NOTE]
->Het rapport van de Analysator van de Bereidheid van de Wolk versnelt het proces om de tijd en de kosten te schatten die aan overgang aan AEM als Cloud Service worden vereist door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
+>Het Rapport van de Analysator van de Bereidheid van de Wolk versnelt het proces om de tijd en de kosten te schatten die worden vereist om naar AEM als Cloud Service over te gaan door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
 
 U kunt het rapport Cloud Readiness Analyzer ook downloaden van uw AEM-instantie. Zie De resultaten **weergeven in een CSV-indeling** voor meer informatie die in behandeling is.
