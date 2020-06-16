@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Wanneer zowel een HTTP- kopbal als overeenkomstige vraagparameter aanwezig zijn,
 Een eenvoudige manier om de generatie van het rapport via de interface van HTTP in werking te stellen is met het volgende bevel:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Zodra een verzoek is ingediend, te hoeven de cliënt niet actief voor het te produceren rapport te blijven. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend HTTP KRIJGT verzoek en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen in een andere cliënt of het hulpmiddel CSV in de instantie AEM.
+Zodra een verzoek is ingediend, te hoeven de cliënt niet actief voor het te produceren rapport te blijven. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend HTTP KRIJGT verzoek en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen in een andere cliënt of het hulpmiddel CSV in het gebruikersinterface binnen AEM.
 
 ### Reacties (#http-responses)
 
