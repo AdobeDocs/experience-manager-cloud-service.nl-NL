@@ -1,6 +1,6 @@
 ---
 title: Zoekformulieren configureren
-description: Zoekformulieren configureren voor Adobe Experience Manager als cloudservice.
+description: Het vormen Vormen van het Onderzoek Vormen voor Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 workflow-type: tm+mt
@@ -95,8 +95,8 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <th>Instellingen</th>
   </tr>
   <tr>
-   <td>Analyse</td>
-   <td>Mogelijkheden zoeken/filteren in de Sites-browser bij het weergeven van gegevens met analysemogelijkheden. De zoekfilters van Analytics laden tot aan de in kaart gebrachte aangepaste analytische kolommen.</td>
+   <td>Analytics</td>
+   <td>Mogelijkheden zoeken/filteren in de Sites-browser bij het weergeven van gegevens met analysemogelijkheden. Analytics-zoekfilters worden geladen tot ze overeenkomen met de toegewezen kolommen voor aangepaste analyse.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
