@@ -1,10 +1,10 @@
 ---
-title: Uw code implementeren - cloudservices
-description: Uw code implementeren - cloudservices
+title: Uw code implementeren - Cloud Servicen
+description: Uw code implementeren - Cloud Servicen
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 3%
 
 ---
@@ -58,8 +58,8 @@ Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigur
 
 
 
->Let op:
->De volgende secties moeten worden bijgewerkt voor Cloud Manager voor AEM Cloud Services en zijn in uitvoering.
+>[!IMPORTANT]:
+>De volgende secties moeten worden bijgewerkt voor Cloud Manager voor AEM cloud services en zijn in uitvoering.
 
 ## Implementatieproces {#deployment-process}
 
@@ -89,7 +89,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
 1. Het artefact van de verzender wordt als volgt op elke verzender geïmplementeerd:
 
    1. Er wordt een back-up gemaakt van de huidige configuraties en deze worden naar een tijdelijke locatie gekopieerd
-   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Raadpleeg Uw Dispatcher Configurations beheren voor meer informatie. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
+   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Raadpleeg Uw Dispatcher-configuraties beheren voor meer informatie. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
    1. Het artefact wordt geëxtraheerd naar de httpd-map.  Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie.  Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout gemeld aan Cloud Manager.
    1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het cachegeheugen van de verzender.
