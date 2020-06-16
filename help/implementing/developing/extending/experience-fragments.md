@@ -1,6 +1,6 @@
 ---
 title: Ervaringsfragmenten
-description: Breid Adobe Experience Manager uit als fragmenten voor de cloud-service.
+description: Breid Adobe Experience Manager als Fragmenten van de Ervaring van de Cloud Service uit.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
@@ -135,27 +135,27 @@ Een van de gebruiksgevallen voor dergelijke groepen is het insluiten van inhoud 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-Met de functie Exporteren naar doel kunt u:
+Met de functie Exporteren naar Target kunt u:
 
 * een fragment van de Ervaring tot stand brengen,
 * er componenten aan toevoegen,
 * en exporteer het vervolgens als een Adobe Target-aanbieding in HTML-indeling of in JSON-indeling.
 
-Deze functie kan worden ingeschakeld op een auteur-instantie van AEM. Hiervoor is een geldige Adobe Target-configuratie en configuratie voor de Link Externalzer vereist.
+Deze functie kan worden ingeschakeld op een auteur-instantie van AEM. Het vereist een geldige Configuratie van Adobe Target, en configuraties voor de Verbinding Externalzer.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-De Link Externalzer wordt gebruikt om te bepalen welke URL&#39;s correct zijn wanneer de HTML-versie van het Target Offer wordt gemaakt. Deze versie wordt vervolgens naar Adobe Target verzonden. Dit is nodig omdat Adobe Target vereist dat alle koppelingen binnen de HTML-doelaanbieding voor iedereen toegankelijk zijn. dit betekent dat alle bronnen waarnaar de koppelingen verwijzen, en het ervaringsfragment zelf, moeten worden gepubliceerd voordat ze kunnen worden gebruikt.
+De functie Extern koppelen wordt gebruikt om de juiste URL&#39;s vast te stellen die nodig zijn voor het maken van de HTML-versie van de Target-aanbieding, die vervolgens naar Adobe Target wordt verzonden. Dit is noodzakelijk omdat Adobe Target vereist dat alle koppelingen in de Target HTML-aanbieding openbaar toegankelijk zijn; dit betekent dat alle bronnen waarnaar de koppelingen verwijzen, en het ervaringsfragment zelf, moeten worden gepubliceerd voordat ze kunnen worden gebruikt.
 
-Wanneer u een HTML-doelaanbieding samenstelt, wordt standaard een aanvraag verzonden naar een aangepaste Sling-kiezer in AEM. Deze kiezer wordt aangeroepen `.nocloudconfigs.html`. Zoals de naam al aangeeft, wordt er een gewone HTML-rendering van een Experience-fragment gemaakt, maar worden er geen cloudconfiguraties in opgenomen (wat overbodige informatie zou zijn).
+Wanneer u een Target HTML-aanbieding maakt, wordt standaard een aanvraag verzonden naar een aangepaste Sling-kiezer in AEM. Deze kiezer wordt aangeroepen `.nocloudconfigs.html`. Zoals de naam al aangeeft, wordt er een gewone HTML-rendering van een Experience-fragment gemaakt, maar worden er geen cloudconfiguraties in opgenomen (wat overbodige informatie zou zijn).
 
 Nadat u de HTML-pagina hebt gegenereerd, brengt de Sling Rewriter-pijplijn wijzigingen aan in de uitvoer:
 
 1. De `html`, `head`en `body` elementen worden vervangen door `div` elementen. De `meta`, `noscript` en `title` elementen worden verwijderd (het zijn onderliggende elementen van het oorspronkelijke `head` element en worden niet meegenomen wanneer dit wordt vervangen door het `div` element).
 
-   Dit wordt gedaan om ervoor te zorgen dat het HTML- Doelaanbod in de Activiteiten van het Doel kan worden omvat.
+   Dit wordt gedaan om ervoor te zorgen dat de HTML Target-aanbieding kan worden opgenomen in Target-activiteiten.
 
 2. AEM wijzigt alle interne koppelingen in de HTML, zodat deze verwijzen naar een gepubliceerde bron.
 
@@ -171,10 +171,10 @@ Nadat u de HTML-pagina hebt gegenereerd, brengt de Sling Rewriter-pijplijn wijzi
 
    De koppelingen in deze kenmerken worden uitgevoerd via de AEM Link Externalzer om de URL opnieuw te maken alsof deze op een gepubliceerde instantie staat en als zodanig openbaar beschikbaar is. `publishLink()`
 
-Als u een out-of-the-box-implementatie gebruikt, moet het hierboven beschreven proces voldoende zijn om het doelaanbod te genereren uit het ervaringsfragment en het vervolgens te exporteren naar Adobe Target. Er zijn echter enkele gebruiksgevallen die in dit proces niet in aanmerking worden genomen; deze omvatten :
+Als u een out-of-the-box-implementatie gebruikt, moet het hierboven beschreven proces voldoende zijn om de Target-aanbieding te genereren op basis van het Experience Fragment en deze vervolgens te exporteren naar Adobe Target. Er zijn echter enkele gebruiksgevallen die in dit proces niet in aanmerking worden genomen; deze omvatten :
 
 * Sling Mapping beschikbaar op de publicatie-instantie
-* Omleiding van Dispatcher
+* Dispatcher omleiding
 
 Voor deze gebruiksgevallen verstrekt AEM de Interface van de Leverancier van de Verbinding Rewriter.
 
@@ -190,7 +190,7 @@ Voorbeelden van gebruiksgevallen om deze interface als dienst uit te voeren omva
 
 >[!NOTE]
 >
->Deze interface verwerkt alleen de interne HTML-koppelingen van het gegenereerde doelaanbod.
+>Deze interface verwerkt alleen de interne HTML-koppelingen van de gegenereerde Target-aanbieding.
 
 De interface van de Leverancier van de Verbinding Rewriter ( `ExperienceFragmentLinkRewriterProvider`) is als volgt:
 
@@ -210,7 +210,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Om de interface te gebruiken moet u eerst een bundel tot stand brengen die een nieuwe de dienstcomponent bevat die de interface van de Leverancier van Rewriter van de Verbinding uitvoert.
 
-Deze service wordt gebruikt om de functie Exporteren naar doel van fragment uit ervaring in te sluiten voor toegang tot de verschillende koppelingen.
+Deze service wordt gebruikt om in te sluiten bij het herschrijven van Experience Fragment Exporteren naar Target, zodat u toegang hebt tot de verschillende koppelingen.
 
 Bijvoorbeeld, `ComponentService`:
 
@@ -253,7 +253,7 @@ Voor de dienst aan het werk, zijn er nu drie methodes die binnen de dienst moete
 
 #### shouldRewrite {#shouldrewrite}
 
-U moet aan het systeem erop wijzen of het de verbindingen moet herschrijven wanneer een vraag voor de Uitvoer aan Doel op een bepaalde wijziging van het Fragment van de Ervaring wordt gemaakt. U doet dit door de methode uit te voeren:
+U moet aan het systeem erop wijzen of het de verbindingen moet herschrijven wanneer een vraag voor de Uitvoer aan Target op een bepaalde verandering van het Fragment van de Ervaring wordt gemaakt. U doet dit door de methode uit te voeren:
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -266,7 +266,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-Deze methode ontvangt, als parameter, de Variatie van het Fragment van de Ervaring die de Uitvoer naar systeem van het Doel momenteel herschrijft.
+Deze methode ontvangt, als parameter, de Variatie van het Fragment van de Ervaring die het systeem van de Uitvoer aan Target momenteel herschrijft.
 
 In het bovenstaande voorbeeld willen we het volgende herschrijven:
 
@@ -277,7 +277,7 @@ In het bovenstaande voorbeeld willen we het volgende herschrijven:
 * voor een specifiek ervaringsfragment:
    `/content/experience-fragment/master`
 
-Eventuele andere Erviteitsfragmenten die door het systeem Exporteren naar doel worden doorgegeven, worden genegeerd en niet beïnvloed door wijzigingen die in deze service worden geïmplementeerd.
+Eventuele andere Erviteitsfragmenten die via het systeem Exporteren naar Target worden uitgevoerd, worden genegeerd en niet beïnvloed door wijzigingen die in deze service zijn geïmplementeerd.
 
 #### rewriteLink {#rewritelink}
 
@@ -296,7 +296,7 @@ De naam van het HTML-element dat momenteel wordt verwerkt.
 * `attribute`
 De exacte kenmerknaam.
 
-Als dit element momenteel bijvoorbeeld wordt verwerkt door het systeem Exporteren naar doel, kunt u het definiëren `CSSInclude` als:
+Als dit element bijvoorbeeld wordt verwerkt door het systeem Exporteren naar Target, kunt u het definiëren `CSSInclude` als:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -347,7 +347,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Als de bovengenoemde methode terugkeert `null`, dan zal de Uitvoer naar het systeem van het Doel de verbinding zoals het is, een relatieve verbinding aan een middel verlaten.
+>Als de bovenstaande methode terugkeert `null`, dan zal het systeem van de Uitvoer aan Target de verbinding zoals het is, een relatieve verbinding aan een middel verlaten.
 
 #### Prioriteiten - getPriority {#priorities-getpriority}
 
