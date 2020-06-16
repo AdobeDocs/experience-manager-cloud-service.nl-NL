@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 83%
+ht-degree: 75%
 
 ---
 
@@ -49,7 +49,7 @@ Volg de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen 
 
 * Het is aan te raden om vooraf &#39;data store&#39;-controles uit te voeren op de consistentie van de repository&#39;s om mogelijke problemen te detecteren en het om aantal aanwezige, eerder verwijderde bestanden in de repository te verkleinen.
 
-* Als de AEM Cloud CDN-configuratie (Content Delivery Network) is geconfigureerd met een IP-whitelist, moet u ervoor zorgen dat de IP&#39;s van de bronomgeving worden toegevoegd aan de whitelist, zodat de bronomgeving en de AEM Cloud-omgeving met elkaar kunnen communiceren.
+* Als de configuratie van het Netwerk van de Levering van de Inhoud van de Inhoud van de Auteur AEM Cloud (CDN) wordt gevormd om een whitelist van IPs te hebben dan zou het moeten worden gewaarborgd dat de bronmilieu IPs ook aan allowlist wordt toegevoegd zodat het bronmilieu en het milieu van de Wolk AEM met elkaar kunnen communiceren.
 
 * Tijdens de opnamefase wordt het aanbevolen dat u de modus voor *wissen* inschakelt. Hiermee wordt de bestaande repository (auteur of publicatie) in de AEM Cloud Service-doelomgeving volledig gewist en vervolgens bijgewerkt met de content van de migratieset. Deze modus is veel sneller dan de modus voor niet-wissen, waarbij de migratieset boven op de huidige content wordt toegepast.
 
