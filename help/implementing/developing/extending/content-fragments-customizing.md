@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Inhoudsfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
-In Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een standaard element uit. zie:
+Binnen de Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een standaardelement uit; zie:
 
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) en [paginascripts maken en beheren met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
@@ -65,7 +65,7 @@ Afhankelijk van het type fragment worden ook modellen of de sjabloon **Eenvoudig
 
 ### Integratie van sites met middelen {#integration-of-sites-with-assets}
 
-CFM (Content Fragment Management) maakt als volgt deel uit van AEM Assets:
+CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
@@ -311,7 +311,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kernelementen.
+   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kern van elementen.
 
 ## Sessies bewerken {#edit-sessions}
 
