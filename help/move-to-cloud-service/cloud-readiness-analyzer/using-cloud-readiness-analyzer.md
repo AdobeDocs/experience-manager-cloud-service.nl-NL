@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1747'
 ht-degree: 1%
 
 ---
@@ -18,18 +18,18 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 * Het CRA-rapport wordt samengesteld met behulp van de uitvoer van de [Patroondetector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)van de Adobe Experience Manager (AEM). De versie van Patroondetector die door CRA wordt gebruikt, is opgenomen in het installatiepakket van CRA.
 
-* CRA kan slechts door de *admin* gebruiker of een gebruiker in de groep van **Beheerders** worden in werking gesteld.
+* De CRA mag alleen worden uitgevoerd door de **beheerder** of door een gebruiker in de **beheerders**.
 
 * CRA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
 
 * CRA kan op om het even welke milieu lopen, maar het verkiest om het op een milieu van het *Stadium* te laten lopen.
 
    >[!NOTE]
-   >Om een impact op bedrijfskritieke instanties te vermijden, wordt aanbevolen om CRA uit te voeren op een testomgeving voor auteurs die zo dicht mogelijk bij de productieomgeving ligt op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. Het kan ook worden uitgevoerd op een kloon van de productieauteur-omgeving.
+   >Om een impact op bedrijfskritieke instanties te vermijden, wordt aanbevolen om CRA uit te voeren op een *Auteur* -omgeving die zo dicht mogelijk bij de *Productieomgeving* ligt op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. Het kan ook worden uitgevoerd op een kloon van de *Auteur* -omgeving van de productie.
 
-* Het genereren van het CRA-rapport kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot enkele uren. De vereiste tijd is in hoge mate afhankelijk van de grootte en aard van de inhoud van de AEM-opslagplaats, de AEM-versie en andere factoren.
+* Het genereren van CRA-rapportinhoud kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot een paar uur. De vereiste tijd is in hoge mate afhankelijk van de grootte en aard van de inhoud van de AEM-opslagplaats, de AEM-versie en andere factoren.
 
-* Wegens de significante tijd die wordt vereist om het rapport te produceren, worden de resultaten gehouden in een geheim voorgeheugen en zijn beschikbaar voor het verdere bekijken en het downloaden tot het geheime voorgeheugen verloopt of het rapport uitdrukkelijk wordt verfrist.
+* Wegens de significante tijd die kan worden vereist om de rapportinhoud te produceren, worden zij geproduceerd door een achtergrondproces en in een geheim voorgeheugen gehouden. Het bekijken van en het downloaden van het rapport zou vrij snel moeten zijn omdat het het inhoudsgeheime voorgeheugen tot het verloopt of het rapport uitdrukkelijk wordt verfrist. Tijdens de generatie van rapportinhoud kunt u uw browser lusje sluiten en in een recentere tijd terugkeren om het rapport te bekijken zodra zijn inhoud in het geheime voorgeheugen beschikbaar is.
 
 ## Beschikbaarheid {#availability}
 
@@ -42,11 +42,11 @@ De Cloud Readiness Analyzer kan als zip- dossier van het Portaal van de Distribu
 
 Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
 
-1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Cloud Readiness Analyzer**.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Nadat u op de **Cloud Readiness Analyzer** hebt geklikt, wordt het rapport gegenereerd en na enkele minuten is het CRA-rapport beschikbaar voor uw AEM-instantie.
+1. Nadat u op **Cloud Readiness Analyzer** hebt geklikt, genereert het programma het rapport en geeft het weer wanneer het beschikbaar is.
 
    >[!NOTE]
    >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
@@ -88,7 +88,7 @@ Voor AEM 6.3 en hoger is de primaire manier om Cloud Readiness Analyzer uit te v
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
    >[!NOTE]
-   >U kunt CRA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door de **Refresh knoop van het Rapport** in de hogere linkerhoek te klikken.
+   >U kunt CRA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **verfrist Rapport**.
 
 ### Adobe Experience Managers 6.2 en 6.1 {#aem-specific-versions}
 
@@ -101,7 +101,7 @@ Voor Adobe Experience Manager 6.1 is het gereedschap niet functioneel en kan all
 
 ## Het CSV-rapport van de Cloud Readiness Analyzer interpreteren {#cra-csv-report}
 
-Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het rapport van Cloud Readiness Analyzer gemaakt op basis van de resultaatcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
+Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het rapport van de Cloud Readiness Analyzer gemaakt vanuit de inhoudcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
 
 Als de cache is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
 
@@ -123,7 +123,7 @@ De waarde &quot;\N&quot; in een kolom voor een individuele bevinding geeft aan d
 
 ## HTTP-interface {#http-interface}
 
-CRA verstrekt een interface van HTTP die als alternatief voor de instantie AEM kan worden gebruikt. De interface steunt zowel HEAD als GET bevelen. Het kan worden gebruikt om het rapport van CRA te produceren en het in één van drie formaten terug te keren: JSON, CSV en door tabs gescheiden waarden (TSV).
+CRA verstrekt een interface van HTTP die als alternatief voor zijn gebruikersinterface binnen AEM kan worden gebruikt. De interface steunt zowel HEAD als GET bevelen. Het kan worden gebruikt om het rapport van CRA te produceren en het in één van drie formaten terug te keren: JSON, CSV en door tabs gescheiden waarden (TSV).
 
 De volgende URL&#39;s zijn beschikbaar voor HTTP-toegang, waarbij `<host>` de hostnaam en poort, indien nodig, van de server is waarop de CRA is geïnstalleerd:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` voor JSON-indeling
@@ -178,7 +178,7 @@ De standaard CRA geheim voorgeheugenlevensduur is 24 uren. Met de optie om een r
 De waarde van het geheim voorgeheugenleven wordt opgeslagen als `maxCacheAge` bezit op de volgende gegevensopslagplaats knoop:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend **CRXDE Lite**.
+De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend CRXDE Lite.
 
 
 
