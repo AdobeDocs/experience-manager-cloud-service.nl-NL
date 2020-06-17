@@ -1,27 +1,30 @@
 ---
-sub-product: Ga naar AEM als Cloud Service
-user-guide-title: Ga naar AEM als Cloud Service
+sub-product: Overstappen naar AEM as a Cloud Service
+user-guide-title: Overstappen naar AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 3ad0b34d4804baa9605f13e2e4f4533399e1cb64
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: '68'
+ht-degree: 89%
 
 ---
 
 
-# Verplaatsen naar AEM als Cloud Service Guide {#moving}
+# Gids Overstappen naar AEM as a Cloud Service {#moving}
 
-+ [Verplaatsen naar AEM als cloudservice](/help/move-to-cloud-service/home.md)
++ [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Fases van de overgang {#phases}
    + [Planning](/help/move-to-cloud-service/planning.md)
    + [Uitvoering](/help/move-to-cloud-service/execution.md)
-   + [Online plaatsen](/help/move-to-cloud-service/post-go-live.md)
-+ Gereedschappen voor cloudovergang {#cloud-migration}
-   + Inhoud overbrengen {#content-transfer-tool}
+   + [Stappen na Go-Live](/help/move-to-cloud-service/post-go-live.md)
++ Tools voor de overgang naar Cloud Service {#cloud-migration}
+   + De tool Content Transfer {#content-transfer-tool}
       + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Het gereedschap Inhoud overbrengen gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
-+ Gereedschappen voor het verfijnen van code {#refactoring-tools}
-   + [Workflowmigratie van middelen](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [De tool Content Transfer gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+      + [Overzicht](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
+      + [Cloud Readiness Analyzer gebruiken](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
++ Tools voor herstructurering van code {#refactoring-tools}
+   + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-   + [AEM-moderniseringsgereedschappen](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+   + [AEM-moderniseringstools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
