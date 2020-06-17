@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,13 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 De Cloud Readiness Analyzer kan als zip- dossier van het Portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
->Download de Cloud Readiness Analyzer van het Portaal van de Distributie van de Software *hangend*.
+>Download de Cloud Readiness Analyzer van het portaal van de Distributie van de Software.
 
-## De Cloud Readiness Analyzer uitvoeren {#running-tool}
+## Het Rapport van de Cloud Readiness Analyzer weergeven {#viewing-report}
 
-Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
+### Adobe Experience Manager 6.3 en hoger {#aem-later-versions}
+
+Ga als volgt te werk om het rapport Cloud Readiness Analyzer te bekijken:
 
 1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Cloud Readiness Analyzer**.
 
@@ -51,41 +53,11 @@ Ga als volgt te werk om Cloud Readiness Analyzer uit te voeren:
    >[!NOTE]
    >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Het Rapport Cloud Readiness Analyzer interpreteren {#cra-report}
-
-Wanneer de Cloud Readiness Analyzer in de instantie AEM in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
-
-De vorm van het rapport is:
-
-* *Overzicht* van rapport: Informatie over het verslag zelf, ook wanneer het is opgesteld.
-* *Systeemoverzicht*: Informatie over het AEM-systeem waarop het CRA is uitgevoerd.
-* *Categorieën* zoeken: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie behandelt. Elk gedeelte bevat het volgende: Naam van categorie, subtypen, aantal en belang zoeken, overzicht, koppeling naar categoriedocumentatie en individuele zoekinformatie.
-
-Aan elke bevinding wordt een belangrijk niveau toegewezen om een ruwe prioriteit voor actie aan te geven.
-
-Volg de onderstaande tabel om inzicht te krijgen in de belangrijkste niveaus:
-
-| Belang | Beschrijving |
-|--- |--- |
-| INFO | Deze bevinding wordt ter informatie verstrekt. |
-| ADVISORY | Deze bevinding is mogelijk een upgradeprobleem. Verdere onderzoeken worden aanbevolen. |
-| MAJOR | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt. |
-| KRITIEK | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt om functieverlies of prestatieverlies te voorkomen. |
-
-### Adobe Experience Manager 6.3 en hoger {#aem-older-version}
-
-Voor AEM 6.3 en hoger is de primaire manier om Cloud Readiness Analyzer uit te voeren:
-
-1. Selecteer de Adobe Experience Manager-instantie en navigeer naar gereedschappen -> **Bewerkingen** -> **Cloud Readiness Analyzer**.
-
-   >[!NOTE]
-   >Het CRA zal een achtergrondproces beginnen om het rapport te produceren zodra het hulpmiddel wordt geopend. Het toont een aanwijzing dat de rapportgeneratie in proces is tot het rapport klaar is. U kunt het browsertabblad sluiten en later terugkeren om het rapport te bekijken wanneer het is voltooid.
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) te downloaden. Klik op **CSV** om het volledige CRA rapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >U kunt CRA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **verfrist Rapport**.
@@ -98,6 +70,32 @@ Voor Adobe Experience Manager 6.1 is het gereedschap niet functioneel en kan all
 
 >[!NOTE]
 >In alle versies kan de opgenomen Patroondetector onafhankelijk worden uitgevoerd.
+
+## Het Rapport Cloud Readiness Analyzer interpreteren {#cra-report}
+
+Wanneer het hulpprogramma Cloud Readiness Analyzer wordt uitgevoerd in de AEM-instantie, wordt het rapport als resultaten weergegeven in het gereedschapsvenster.
+
+De vorm van het rapport is:
+
+* **Overzicht** van rapport: Informatie over het verslag zelf en informatie zoals:
+   * *Rapporttijd*: Wanneer de rapportinhoud is gegenereerd en voor het eerst beschikbaar is gesteld.
+   * *Vervaltijd*: Wanneer het geheime voorgeheugen van de rapportinhoud zal verlopen.
+   * *Generatietijd*: De tijd die door het proces van de het genereren van de rapportinhoud wordt doorgebracht.
+   * *Aantal* zoeken: Het totale aantal bevindingen in het verslag.
+* **Systeemoverzicht**: Informatie over het AEM-systeem waarop het CRA is uitgevoerd.
+* **Categorieën** zoeken: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie behandelt. Elk gedeelte bevat het volgende: Naam van categorie, subtypen, aantal en belang zoeken, overzicht, koppeling naar categoriedocumentatie en individuele zoekinformatie.
+
+Aan elke bevinding wordt een belangrijk niveau toegewezen om een ruwe prioriteit voor actie aan te geven.
+
+Volg de onderstaande tabel om inzicht te krijgen in de belangrijkste niveaus:
+
+| Belang | Beschrijving |
+|--- |--- |
+| INFO | Deze bevinding wordt ter informatie verstrekt. |
+| ADVISORY | Deze bevinding is mogelijk een upgradeprobleem. Verdere onderzoeken worden aanbevolen. |
+| MAJOR | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt. |
+| KRITIEK | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt om functieverlies of prestatieverlies te voorkomen. |
+
 
 ## Het CSV-rapport van de Cloud Readiness Analyzer interpreteren {#cra-csv-report}
 
