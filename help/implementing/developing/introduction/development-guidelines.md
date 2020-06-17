@@ -2,19 +2,19 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # Ontwikkelingsrichtlijnen voor AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Code die in AEM als Cloud Service wordt uitgevoerd, moet zich ervan bewust zijn dat deze altijd in een cluster wordt uitgevoerd. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
+Code die in AEM als Cloud Service loopt moet zich ervan bewust zijn dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
 
-Tijdens de update van AEM als Cloud Service zijn er exemplaren met oude en nieuwe code die parallel lopen. Daarom moet oude code niet breken met inhoud die door nieuwe code wordt gecreeerd en de nieuwe code moet oude inhoud kunnen behandelen.
+Tijdens de update van AEM als Cloud Service, zullen er instanties zijn met oude en nieuwe code die parallel lopen. Daarom moet oude code niet breken met inhoud die door nieuwe code wordt gecreeerd en de nieuwe code moet oude inhoud kunnen behandelen.
 <!--
 
 >[!NOTE]
@@ -22,7 +22,7 @@ Tijdens de update van AEM als Cloud Service zijn er exemplaren met oude en nieuw
 
 -->
 
-Als de master in de cluster moet worden geïdentificeerd, kan de API voor detectie van Apache Sling worden gebruikt om deze te detecteren.
+Als de primaire code in de cluster moet worden geïdentificeerd, kan de API voor detectie van Apache Sling worden gebruikt om deze te detecteren.
 
 ## Staat in geheugen {#state-in-memory}
 
@@ -30,7 +30,7 @@ De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan.
 
 ## Status van het bestandssysteem {#state-on-the-filesystem}
 
-Het bestandssysteem van de instantie mag niet in AEM worden gebruikt als cloudservice. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
+Het bestandssysteem van de instantie mag niet in AEM als Cloud Service worden gebruikt. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
 Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou de Publish rij ervoor moeten zorgen dat om het even welke gegevens die moeten worden voortgeduurd naar een externe dienst voor opslag op langere termijn wordt verscheept.
 
@@ -40,7 +40,7 @@ Net als bij alles wat asynchroon gebeurt, zoals bij observatiegebeurtenissen, ka
 
 ## Achtergrondtaken en langdurige taken {#background-tasks-and-long-running-jobs}
 
-Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn en het meest invoer herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuwe vereiste voor dit soort code is, is het in AEM als Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
+Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn en het meest invoer herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuw vereiste voor dit soort code is, is het in AEM als Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
 
 Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en deze moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke banen, is het best om de het [Verkopen planner van Banen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) als dit opnieuw minstens één uitvoering te gebruiken.
 
@@ -50,7 +50,7 @@ Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observa
 
 ## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
-Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, dwingen AEM-instanties die als Cloud Service op AEM worden uitgevoerd een algemene time-out af. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
+Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, zullen AEM-instanties die als Cloud Service op AEM worden uitgevoerd, een algemene time-outs afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
 
 Adobe raadt het gebruik van de meegeleverde [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) aan voor het maken van HTTP-verbindingen.
 
@@ -68,7 +68,7 @@ AEM als Cloud Service ondersteunt alleen de Touch UI voor klantcode van derden. 
 
 Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen. Zo kan het bijvoorbeeld geen bestanden uitpakken `jar` of `tar` uitpakken.
 
-## Geen streamingbinaries via AEM als cloudservice {#no-streaming-binaries}
+## Geen streamingbinaire getallen via AEM als Cloud Service {#no-streaming-binaries}
 
 De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kernAEM diensten zal dienen.
 
@@ -76,7 +76,7 @@ Gebruik bijvoorbeeld niet `asset.getOriginal().getStream()`, waardoor het downlo
 
 ## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
-De omgekeerde replicatie van Publiceren naar Auteur wordt niet ondersteund in AEM als Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van Publish instanties en potentieel de cluster van de Auteur wordt gedeeld.
+De omgekeerde replicatie van Publiceren aan Auteur wordt niet gesteund in AEM als Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van Publish instanties en potentieel de cluster van de Auteur wordt gedeeld.
 
 ## De voorwaartse Medewerkers van de Replicatie zouden kunnen moeten worden gesteund {#forward-replication-agents}
 
@@ -96,7 +96,7 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 
 >[!NOTE]
 >
->Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Dienst van de Wolk. Zie [Distribueren naar AEM als Cloud Service](/help/implementing/deploying/overview.md)voor meer informatie over hoe u dit kunt doen.
+>Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie [het Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 **Het FOUTOPSPORINGSlogniveau activeren**
 
@@ -134,7 +134,7 @@ Let op: bij lokale ontwikkeling (met gebruik van de snelstartprocedure voor de c
 
 Klanten hebben toegang tot CRXDE-site in de ontwikkelomgeving, maar niet tot het stadium of de productie. Er kan niet naar de onveranderlijke opslagplaats (`/libs`, `/apps`) worden geschreven bij uitvoering, zodat dit tot fouten leidt.
 
-In de Developer Console for dev, stage, and production environment is een set tools beschikbaar voor foutopsporing in AEM als een Cloud Service Developer-omgeving. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
+Een reeks hulpmiddelen om AEM als ontwikkelaarmilieu&#39;s van de Cloud Service te zuiveren zijn beschikbaar in de Console van de Ontwikkelaar voor ontwikkelings, stadium, en productiemilieu&#39;s. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de beheerconsole, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 
