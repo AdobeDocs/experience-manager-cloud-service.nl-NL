@@ -3,25 +3,25 @@ title: XMP-metadata
 description: Meer informatie over de XMP-metagegevensstandaard (Extensible Metadata Platform) voor metagegevensbeheer. Het wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 15%
+source-wordcount: '1104'
+ht-degree: 20%
 
 ---
 
 
 # XMP-metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door AEM Assets voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
+XMP (Extensible Metadata Platform) is de metagegevensstandaard die door AEM Assets wordt gebruikt voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
 
-XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een rijk [inhoudsmodel](#xmp-core-concepts) en wordt [ondersteund door Adobe](#advantages-of-xmp) en andere bedrijven, zodat gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben waarop kan worden gebouwd.
+XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een rijk [inhoudsmodel](#xmp-core-concepts) en wordt [ondersteund door Adobe](#advantages-of-xmp) en andere bedrijven, zodat gebruikers van XMP in combinatie met AEM Assets over een krachtig platform kunnen beschikken om hierop voort te bouwen.
 
 ## XMP-overzicht en ecosysteem {#xmp-ecosystem}
 
-AEM-middelen bieden native ondersteuning voor de standaard voor XMP-metagegevens. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP is ontworpen als de algemene standaard die meerdere toepassingen in staat stelt effectief met metagegevens te werken.
+AEM Assets ondersteunen native de standaard voor XMP-metagegevens. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP is ontworpen als de algemene standaard die meerdere toepassingen in staat stelt effectief met metagegevens te werken.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in Adobe-toepassingen om informatie door te geven in meerdere bestandsindelingen. De AEM Assets-opslagplaats extraheert de XMP-metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in Adobe-toepassingen om informatie door te geven in meerdere bestandsindelingen. De gegevensopslagplaats van AEM Assets haalt de meta-gegevens XMP uit en gebruikt het om de inhoudslevenscyclus te beheren en biedt de capaciteit om automatiseringswerkschema&#39;s tot stand te brengen.
 
 XMP is gestandaardiseerd hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
@@ -71,9 +71,9 @@ Met XMP kunt u een `xml:lang` eigenschap aan teksteigenschappen toevoegen om de 
 
 ## XMP-terugverwijzing naar uitvoeringen {#xmp-writeback-to-renditions}
 
-Met deze functie voor terugschrijven van XMP in Adobe Experience Manager (AEM) Elementen worden wijzigingen in de metagegevens van elementen overgenomen in de uitvoeringen van het element.
+Met deze functie voor terugschrijven van XMP-gegevens in AEM-elementen (Adobe Experience Manager) worden wijzigingen in de metagegevens van elementen in de uitvoeringen van het element gerepliceerd.
 
-Wanneer u de metagegevens voor een element wijzigt vanuit AEM-elementen of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het knooppunt met elementen in CRXDE.
+Wanneer u de metagegevens van een element wijzigt vanuit AEM Assets of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het knooppunt met elementen in CRXDE.
 
 De functie voor terugschrijven van XMP verspreidt de metagegevenswijzigingen in alle of specifieke uitvoeringen van het element.
 
@@ -81,11 +81,11 @@ Neem bijvoorbeeld een scenario waarin u de [!UICONTROL Title] eigenschap van het
 
 ![metadata](assets/metadata.png)
 
-In dit geval slaat AEM Assets de veranderingen in het **[!UICONTROL Title]** bezit in de `dc:title` parameter voor de activa op die meta-gegevens in de activahiërarchie worden opgeslagen.
+In dit geval slaan de AEM Assets de wijzigingen in de **[!UICONTROL Title]** eigenschap op in de `dc:title` parameter voor de metagegevens van de elementen die in de elementenhiërarchie zijn opgeslagen.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-AEM-elementen geven echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element.
+AEM Assets geven echter niet automatisch metagegevenswijzigingen door aan de uitvoeringen van een element.
 
 Met de functie voor terugschrijven van XMP kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De wijzigingen worden echter niet opgeslagen onder het metagegevensknooppunt in de elementenhiërarchie. In plaats daarvan worden de wijzigingen in de binaire bestanden voor de uitvoeringen ingesloten.
 
@@ -129,29 +129,33 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
-### XMP-metagegevens filteren {#filtering-xmp-metadata}
+<!--
+TBD: The method has changed in AEMaaCS. Find the new ones.
 
-AEM-elementen ondersteunen het filteren van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen van binaire elementen van elementen en die worden opgeslagen in JCR wanneer elementen worden ingepakt. Filteren is mogelijk via een geblokkeerde lijst en een toegestane lijst.
+### Filter XMP metadata {#filtering-xmp-metadata}
 
-Als u filtert met een geblokkeerde lijst, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een geblokkeerde lijst een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de instantie AEM/de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
+AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
 
-Door het filteren van XMP-metagegevens via de toegestane lijst verhelpt u dit probleem door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere/onbekende XMP-eigenschappen genegeerd. Voor achterwaartse verenigbaarheid, kunt u sommige van deze eigenschappen aan het filter toevoegen dat een geblokkeerde lijst gebruikt.
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
+
+Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
 
 >[!NOTE]
 >
->Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Deze waarde wordt in het metagegevensveld genaamd `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
+>Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
 
-1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Whitelist to XMP Properties]****[!UICONTROL Whitelisted XML Names for XMP filtering]** vak en geeft u deze op.
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
-1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filters hebt toegepast via de lijst met toegestane waarden, geeft u ze op in het **[!UICONTROL Blacklisted XML Names for XMP filtering]** vak.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
-1. Sla de wijzigingen op.
+1. Save the changes.
+-->
 
 >[!MORELIKETHIS]
 >
