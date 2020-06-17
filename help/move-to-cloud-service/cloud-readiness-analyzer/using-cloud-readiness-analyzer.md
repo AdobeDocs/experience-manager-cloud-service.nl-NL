@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 1%
 
 ## Belangrijke overwegingen voor het gebruik van Cloud Readiness Analyzer {#imp-considerations}
 
-Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Cloud Readiness Analyzer (CRA):
+Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen voor het uitvoeren van de Cloud Readiness Analyzer (CRA):
 
 * Het CRA-rapport wordt samengesteld met behulp van de uitvoer van de [Patroondetector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)van de Adobe Experience Manager (AEM). De versie van Patroondetector die door CRA wordt gebruikt, is opgenomen in het installatiepakket van CRA.
 
-* De CRA mag alleen worden uitgevoerd door de **beheerder** of door een gebruiker in de **beheerders**.
+* CRA kan slechts door de **admin** gebruiker of een gebruiker in de groep van **Beheerders** worden in werking gesteld.
 
 * CRA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
 
 * CRA kan op om het even welke milieu lopen, maar het verkiest om het op een milieu van het *Stadium* te laten lopen.
 
    >[!NOTE]
-   >Om een impact op bedrijfskritieke instanties te vermijden, wordt aanbevolen om CRA uit te voeren op een *Auteur* -omgeving die zo dicht mogelijk bij de *Productieomgeving* ligt op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. Het kan ook worden uitgevoerd op een kloon van de *Auteur* -omgeving van de productie.
+   >Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden om CRA uit te voeren op een *Auteur* -omgeving die zo dicht mogelijk bij de *Productieomgeving* ligt op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. Het kan ook worden uitgevoerd op een kloon van de *Auteur* -omgeving van de productie.
 
 * Het genereren van CRA-rapportinhoud kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot een paar uur. De vereiste tijd is in hoge mate afhankelijk van de grootte en aard van de inhoud van de AEM-opslagplaats, de AEM-versie en andere factoren.
 
@@ -55,7 +55,7 @@ Ga als volgt te werk om het rapport Cloud Readiness Analyzer te bekijken:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) te downloaden. Klik op **CSV** om het volledige CRA rapport in komma-gescheiden waarden (CSV) formaat, zoals aangetoond in hieronder figuur te downloaden.
+1. Zodra het CRA- rapport wordt geproduceerd en getoond, hebt u de optie om het rapport in een komma-gescheiden waarden (CSV) formaat te downloaden door op **CSV** te klikken, zoals aangetoond in het hieronder cijfer.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Wanneer het hulpprogramma Cloud Readiness Analyzer wordt uitgevoerd in de AEM-in
 
 De vorm van het rapport is:
 
-* **Overzicht** van rapport: Informatie over het verslag zelf en bevat de volgende informatie:
+* **Overzicht** van rapport: Informatie over het rapport zelf, die de volgende informatie bevat:
    * **Rapporttijd**: Wanneer de rapportinhoud is gegenereerd en voor het eerst beschikbaar is gesteld.
    * **Vervaltijd**: Wanneer het geheime voorgeheugen van de rapportinhoud zal verlopen.
    * **Generatietijd**: De tijd die door het proces van de het genereren van de rapportinhoud wordt doorgebracht.
@@ -176,7 +176,7 @@ De standaard CRA geheim voorgeheugenlevensduur is 24 uren. Met de optie om een r
 De waarde van het geheim voorgeheugenleven wordt opgeslagen als `maxCacheAge` bezit op de volgende gegevensopslagplaats knoop:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend CRXDE Lite.
+De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend CRX/DE Lite.
 
 
 
