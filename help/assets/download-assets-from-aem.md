@@ -3,7 +3,7 @@ title: Assets van AEM downloaden
 description: Leer hoe u elementen downloadt van AEM en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 1%
@@ -29,7 +29,7 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 1. Selecteer de map of selecteer een of meer middelen in de map.
 1. Tik op de werkbalk **[!UICONTROL Download]**.
 
-   ![Beschikbare opties voor het downloaden van middelen van Experience Manager Assets](/help/assets/assets/asset-download.png)
+   ![Beschikbare opties voor het downloaden van middelen van Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
    *Opties in het dialoogvenster Downloaden.*
 
