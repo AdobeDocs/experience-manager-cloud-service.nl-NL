@@ -2,7 +2,7 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # CDN in AEM as a Cloud Service {#cdn}
 
-AEM als Cloud Service wordt geleverd met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
+AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
 
 AEM beheerde CDN zal aan de prestaties en veiligheidsvereisten van de meeste klant voldoen. De klanten kunnen naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
 
@@ -21,10 +21,10 @@ AEM beheerde CDN zal aan de prestaties en veiligheidsvereisten van de meeste kla
 Voer de volgende handelingen uit om de levering van inhoud voor te bereiden met CDN van Adobe buiten de doos:
 
 1. Geef het ondertekende SSL-certificaat en de geheime sleutel aan Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
-   **Opmerking:** Aem als de Dienst van de Wolk steunt geen domein Gevalideerde (DV) certificaten.
+   **Opmerking:** Aem als Cloud Service ondersteunt geen domein-gevalideerde (DV) certificaten.
 1. Klantenondersteuning informeren:
    * welk aangepast domein moet worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
-   * als om het even welk IP fluitend nodig is om verkeer tot een bepaald milieu te beperken.
+   * als om het even welk IP toegestaan is nodig om verkeer tot een bepaalde milieu te beperken.
 1. Coördineer met klantensteun over timing van de noodzakelijke veranderingen in de DNS verslagen. De instructies zijn verschillend op basis van of een apex-record nodig is:
    * als een apex-record niet nodig is, moeten klanten het CNAME DNS-record zo instellen dat deze zijn FQDN aanwijst op `cdn.adobeaemcloud.com`.
    * als een apex-record nodig is, maakt u een A-record die verwijst naar de volgende IP&#39;s: 151.101.3.10, 15.101.67.10, 15.10.131.10, 15.10.195.10. Klanten hebben een apex-record nodig als de gewenste FQDN overeenkomt met de DNS-zone. Dit kan worden getest door het Unix gravingsbevel te gebruiken om te zien of past de waarde SOA van de output het domein aan. De opdracht `dig anything.dev.adobeaemcloud.com` retourneert bijvoorbeeld een SOA (Start of Authority, d.w.z. de zone) van `dev.adobeaemcloud.com` zodat het geen APEX-record is, terwijl een SOA wordt `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` geretourneerd, zodat het een apex-record is.
@@ -40,7 +40,7 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het leiden en het ri
 
 * De klant moet een bestaande CDN hebben die bezwaarlijk zou zijn om te vervangen.
 * De klant moet het beheren.
-* De Klant moet CDN kunnen vormen om met AEM als Dienst van de Wolk te werken - zie de configuratieinstructies hieronder.
+* De klant moet CDN kunnen vormen om met AEM als Cloud Service te werken - zie de configuratieinstructies hieronder.
 * De klant moet ingenieurs CDN hebben die op vraag zijn in geval de verwante kwesties zich voordoen.
 * De klant moet een laadtest uitvoeren en met succes doorstaan alvorens naar productie te gaan.
 
