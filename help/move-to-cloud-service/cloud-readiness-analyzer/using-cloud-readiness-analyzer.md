@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ De Cloud Readiness Analyzer kan als zip- dossier van het Portaal van de Distribu
 
 ## Het Rapport van de Cloud Readiness Analyzer weergeven {#viewing-report}
 
-### Adobe Experience Manager 6.3 en hoger {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 en hoger {#aem-later-versions}
 
 Ga als volgt te werk om het rapport Cloud Readiness Analyzer te bekijken:
 
@@ -64,7 +64,7 @@ Ga als volgt te werk om het rapport Cloud Readiness Analyzer te bekijken:
 
 ### Adobe Experience Managers 6.2 en 6.1 {#aem-specific-versions}
 
-De Cloud Readiness Analyzer in Adobe Experience Manager 6.2 is beperkt tot een verbinding die het Csv- rapport produceert en downloadt.
+Het hulpprogramma Cloud Readiness Analyzer is in Adobe Experience Manager 6.2 beperkt tot een koppeling waarmee het CSV-rapport wordt gegenereerd en gedownload.
 
 Voor Adobe Experience Manager 6.1 is het gereedschap niet functioneel en kan alleen de HTTP-interface worden gebruikt.
 
@@ -77,11 +77,11 @@ Wanneer het hulpprogramma Cloud Readiness Analyzer wordt uitgevoerd in de AEM-in
 
 De vorm van het rapport is:
 
-* **Overzicht** van rapport: Informatie over het verslag zelf en informatie zoals:
-   * *Rapporttijd*: Wanneer de rapportinhoud is gegenereerd en voor het eerst beschikbaar is gesteld.
-   * *Vervaltijd*: Wanneer het geheime voorgeheugen van de rapportinhoud zal verlopen.
-   * *Generatietijd*: De tijd die door het proces van de het genereren van de rapportinhoud wordt doorgebracht.
-   * *Aantal* zoeken: Het totale aantal bevindingen in het verslag.
+* **Overzicht** van rapport: Informatie over het verslag zelf en bevat de volgende informatie:
+   * **Rapporttijd**: Wanneer de rapportinhoud is gegenereerd en voor het eerst beschikbaar is gesteld.
+   * **Vervaltijd**: Wanneer het geheime voorgeheugen van de rapportinhoud zal verlopen.
+   * **Generatietijd**: De tijd die door het proces van de het genereren van de rapportinhoud wordt doorgebracht.
+   * **Aantal** zoeken: Het totale aantal bevindingen in het verslag.
 * **Systeemoverzicht**: Informatie over het AEM-systeem waarop het CRA is uitgevoerd.
 * **Categorieën** zoeken: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie behandelt. Elk gedeelte bevat het volgende: Naam van categorie, subtypen, aantal en belang zoeken, overzicht, koppeling naar categoriedocumentatie en individuele zoekinformatie.
 
