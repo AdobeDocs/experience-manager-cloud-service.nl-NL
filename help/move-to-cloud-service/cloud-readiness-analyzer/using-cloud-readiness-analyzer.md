@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Een eenvoudige manier om de generatie van het rapport via de interface van HTTP 
 
 Zodra een verzoek is ingediend, te hoeven de cliënt niet actief voor het te produceren rapport te blijven. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend HTTP KRIJGT verzoek en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen in een andere cliënt of het hulpmiddel CSV in het gebruikersinterface binnen AEM.
 
-### Reacties (#http-responses)
+### Reacties {#http-responses}
 
 De volgende responswaarden zijn mogelijk:
 
