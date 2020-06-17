@@ -2,7 +2,7 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -167,7 +167,7 @@ De volgende responswaarden zijn mogelijk:
 * `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in het formaat van de Details van het Probleem (zie [RFC 7807](https://tools.ietf.org/html/rfc7807)) verstrekt meer details.
 * `401 Unauthorized`: Het verzoek is niet ingewilligd.
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in het formaat van de Details van het Probleem verstrekt meer details.
-* `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere reactie en dit verzoek niet tijdig kan uitvoeren. Dit is slechts als voorkomen wanneer de synchrone verzoeken worden gemaakt. Een bericht in het formaat van de Details van het Probleem verstrekt meer details.
+* `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere reactie en dit verzoek niet tijdig kan uitvoeren. Dit zal alleen gebeuren wanneer synchrone verzoeken worden gedaan. Een bericht in het formaat van de Details van het Probleem verstrekt meer details.
 
 ## Aanpassing van levensduur cache {#cache-adjustment}
 
