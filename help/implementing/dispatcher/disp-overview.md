@@ -2,9 +2,9 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 9%
 
 ---
@@ -236,7 +236,7 @@ In de onderstaande tabel staan de ondersteunde apache-modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies voor een bepaalde Dispatcher-versie vinden door &#39;whitelist voor validatie&#39; uit te voeren in de SDK, zoals hierboven beschreven.
+Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies voor een bepaalde Dispatcher-versie vinden door de allowlist-opdracht van de validator uit te voeren in de SDK, zoals hierboven beschreven.
 
 De allowlist bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is toegestaan, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als er geen allowlist is opgegeven op de opdrachtregel (zoals deze moet worden aangeroepen), gebruikt het hulpprogramma een standaard allowlist die Cloud Manager zal gebruiken voor validatie voordat het programma wordt geïmplementeerd naar Cloud-omgevingen.
 
