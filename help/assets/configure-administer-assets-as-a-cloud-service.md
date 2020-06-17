@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager-middelen configureren en beheren als cloudservice
-description: Kennis van de configuratie- en beheertaken die vereist zijn voor Middelen als cloudservice
+title: Adobe Experience Manager Assets configureren en beheren als Cloud Service
+description: Kennis van de configuratie en de beleidstaken die voor Activa als Cloud Service worden vereist
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Elementen configureren en beheren als cloudservice {#config-administer-assets-cloud-service}
+# Elementen configureren en beheren als Cloud Service {#config-administer-assets-cloud-service}
 
-Het artikel bevat een overzicht van de configuratie- of beheertaken op hoofdniveau die nodig zijn om aan de slag te gaan met het gebruik van Adobe Experience Manager Assets als Cloud Service.
+Het artikel maakt een lijst van de top-level configuratie of beleidstaken die worden vereist om begonnen te worden het gebruiken van de Middelen van de Adobe Experience Manager als Cloud Service.
 
 <!-- SCOPE 
 
@@ -24,7 +24,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * How to monitor health of services
 * How to see the running statuses
 * How to get service-level reports like usage, performance, uptime, etc.
-* Enable asset download by configuring the download servlet. It is disbaled to prevent DDOS kind of situations.
+* Enable asset download by configuring the download servlet. It is disabled to prevent DDOS kind of situations.
 * Configure SMTP to enable email notifications.
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
