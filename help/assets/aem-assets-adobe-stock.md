@@ -1,9 +1,9 @@
 ---
-title: Adobe Stock Digital Assets gebruiken in AEM Assets
-description: Adobe Stock-middelen zoeken, ophalen, licentiëren en beheren in Experience Manager. Behandel de gelicentieerde elementen als elk ander Experience Manager-element.
+title: Digitale Adobe Stock-middelen gebruiken in AEM Assets
+description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren in Experience Manager. Behandel de in licentie gegeven activa als elk ander Experience Manager-actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 18%
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 # Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
-Organisaties kunnen hun Adobe Stock Enterprise Plan integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM.
+Organisaties kunnen hun Adobe Stock Enterprise Plan met AEM Assets integreren om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM.
 
 De voorraadservice van Adobe biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten. AEM-gebruikers kunnen snel Adobe Stock-middelen vinden, voorvertonen en in licentie geven die in AEM zijn opgeslagen, zonder de AEM-werkruimte te verlaten.
 
@@ -23,7 +23,7 @@ Als u communicatie tussen AEM en Adobe Stock wilt toestaan, maakt u een IMS-conf
 
 >[!NOTE]
 >
->Alleen AEM-beheerders en beheerders van beheerconsole voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten vereist zijn.
+>Alleen AEM-beheerders en beheerders van Admin Consoles voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten zijn vereist.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -32,6 +32,10 @@ Als u communicatie tussen AEM en Adobe Stock wilt toestaan, maakt u een IMS-conf
 1. Klik op **[!UICONTROL Create certificate]**. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
 1. Geef de juiste waarden op in de velden met de namen **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** en **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
 1. Voeg de gedownloade openbare sleutel toe aan uw Adobe Developer Console-serviceaccount.
+
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
 
 ### Adobe Stock-configuratie maken in AEM {#create-adobe-stock-configuration-in-aem}
 
@@ -84,9 +88,9 @@ De volgende keer dat u naar elementen zoekt, worden de opgeslagen elementen gema
 
 ### Licentie-elementen {#licenseassets}
 
-Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quotum van hun Adobe Stock Enterprise-abonnement. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen en is het beschikbaar voor zoeken en gebruiken in AEM-elementen.
+Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quotum van hun Adobe Stock Enterprise-abonnement. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen. U kunt het middel ook zoeken en gebruiken in AEM Assets.
 
-![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-elementen in AEM Assets](assets/aem-stock_licenseandsave.jpg)*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets*
+![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets](assets/aem-stock_licenseandsave.jpg)*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets*
 
 ### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
@@ -100,7 +104,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 ### Waarschuwing voor redactionele afbeelding wordt niet weergegeven
 
-Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele middelen van de Console van Admin uitzetten.
+Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitschakelen.
 
 ### Onjuist licentietype wordt weergegeven
 
