@@ -1,30 +1,30 @@
 ---
-title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.6.0
-description: Opmerkingen bij de release Experience Manager voor 2020.6.0
+title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.6.0
+description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: 972e6322a313c9e6afcf09262290992272406491
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van AEM als Cloud Service 2020.6.0 {#release-notes}
+# Opmerkingen bij de release voor AEM als Cloud Service 2020.6.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager weergegeven als Cloud Service 2020.6.0.
+In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.6.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.6.0 is 4 juni 2020.
+De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.6.0 is 4 juni 2020.
 
-## Nieuw in AEM-sites {#aem-sites}
+## Nieuwe functies in AEM Sites {#aem-sites}
 
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor AEM-sites in AEM als Cloud Service Release 2020.6.0.
+Volg deze sectie om te leren over wat nieuw en de updates voor AEM Sites in AEM als Versie van de Cloud Service 2020.6.0 is.
 
 ### What&#39;s New {#whats-new-2020.6.0}
 
-Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM-sites, waaronder:
+Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites zoals:
 
 * Integratie tussen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) en de Core Components
 * Configureerbare HTML-id-kenmerken voor alle componenten
@@ -47,16 +47,15 @@ Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/ex
 
 * Verbeteringen voor schermlezers.
 
-
-## Nieuwe functies in AEM als cloudservice {#foundations}
+## Nieuw in stichtingen in AEM als Cloud Service {#foundations}
 
 De bouwtijden van het AEM- project zullen verbeteren door alle verwijzingen in pom.xml van het AEM- project aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-De AEM als API Jar voor de SDK van de Cloud-service, die eerder op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats voor artefacten van Maven.
+De AEM als Cloud Service SDK API Jar, die eerder op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats van Maven.
 
 ## Nieuwe functies in Cloud Manager {#cloud-manager}
 
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.6.0.
+Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.6.0.
 
 ### What&#39;s New {#what-is-new-cloud-manager}
 
@@ -76,7 +75,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Mana
 
 * Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** -badge die wordt weergegeven op de programmacode op de landingspagina en naast de programmanaam op de pagina **Program Overview** .
 
-* Een gebruiker met de rol SysAdmin heeft nu met één muisklik toegang tot de locatie in Admin Console vanwaar gebruikersrollen of machtigingen voor Cloud Manager kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
+* Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
 
    Raadpleeg [SysAdmin-taken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie.
 
@@ -106,21 +105,16 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Mana
 
 ## Nieuwe functies in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-<!-- 
-Assets RNs are being authored and are a work in progress.
-PM/EM review required before publishing.
--->
-
 **Gebruikerservaring met instructies voor verbeterde slimme tags, aangedreven door Adobe Sensei**
 
 Met verbeterde slimme tags kunnen organisaties slimme-tagmodellen trainen om images te herkennen op basis van klantspecifieke bedrijfstags, naast algemene slimme tags.
 
 Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. Dit is een meer intuïtieve ervaring.
-Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe u slimme tags](/help/assets/smart-tags.md) kunt toepassen en slimme tags kunt [configureren](/help/assets/smart-tags-configuration.md).
+Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe u slimme tags aan elementen](/help/assets/smart-tags.md) kunt toevoegen en slimme tags kunt [configureren](/help/assets/smart-tags-configuration.md).
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM-elementen. De gebruiker kan, een voorproef, en hefboomwerking een verscheidenheid van kern 3D dossiers, met inbegrip van .obj, .stl, .gltf, en .glb dossiers uploaden. Met de toevoeging van [!DNL Dynamic Media], kunnen 3D ervaringen worden gevormd en via agnostische URLs of kijkers worden geleverd. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen 3D-bestanden nu opslaan en gebruiken in AEM Assets. De gebruiker kan, een voorproef, en hefboomwerking een verscheidenheid van kern 3D dossiers, met inbegrip van .obj, .stl, .gltf, en .glb dossiers uploaden. Met de toevoeging van [!DNL Dynamic Media], kunnen 3D ervaringen worden gevormd en via agnostische URLs of kijkers worden geleverd. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Ondersteuning voor Adobe Asset Link voor Adobe XD**
 
@@ -132,9 +126,49 @@ Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middele
 
 [!DNL Adobe Experience Manager Assets] is nu toegankelijker in overeenstemming met de Web Content Accessibility Guidelines (WCAG) v2.1-richtlijnen. De toegankelijkheid is verbeterd voor de volgende gebruiksgevallen of interfaces:
 
-* Gebruikersinterface-elementen, besturingselementen, pagina&#39;s en dialoogvensters zijn schermlezervriendelijk.
-* Gebruikersinterface-elementen, besturingselementen en invoerformuliervelden zijn toegankelijk via het toetsenbord.
-* Verandering in kleur of contrast van sommige interface-elementen om deze beter te kunnen onderscheiden door gebruikers met een beperkt gezichtsvermogen en zonder kleurperceptie. Elementen hebben nu bijvoorbeeld het juiste contrast in de pictogrammen voor sterwaardering op de [!UICONTROL Properties] pagina en in de kaartweergave.
+De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegankelijk met een toetsenbord en hebben een beter contrast. Hieronder vindt u een gedetailleerde lijst met verbeteringen:
+
+* De [!UICONTROL Options]-, [!UICONTROL Scope]- en [!UICONTROL Workflows] voortgangsindicatoren op de [!UICONTROL Manage Publication] pagina worden door de schermlezer niet gelezen als voortgangsindicatoren. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
+
+* Wanneer gebruikers tags aan [!UICONTROL Properties] pagina&#39;s van een element toevoegen, bladeren ze door een boomstructuur met codes. De structuur van de structuur is niet toegankelijk omdat gebruikers van schermlezers tijdens het navigeren niets horen. (CQ-4272964)
+
+* In het dialoogvenster voor het delen van koppelingen navigeert de schermlezer in de bladermodus,
+
+   * De tabelgegevens worden van commentaar voorzien zodra het dialoogvenster wordt geladen.
+   * kan niet naar alle vermelde automatische suggesties navigeren.
+   * maakt geen commentaar op de weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak. (CQ-4294232)
+
+* De [!UICONTROL Metadata Schema Editor] pagina en de bijbehorende elementen zijn nu toegankelijk en schermlezervriendelijk. U kunt de opties gebruiken met een toetsenbord. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
+
+* In de gebruikersinterface Middelen zijn de weergave-instellingen niet toegankelijk via het toetsenbord. (CQ-4289038)
+
+* De lichtsterkteverhouding voor geelgekleurde classificatiepictogrammen is minder dan 3:1. Het is niet nuttig voor gebruikers met een beperkt gezichtsvermogen en zonder kleurperceptie. De classificatiesterren worden weergegeven op het tabblad in de asset- of kaartweergave
+
+* De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenbeoordelingspictogrammen in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] [!UICONTROL Properties] tabblad in een element en in de kaartweergave wordt bijvoorbeeld gewijzigd voor het juiste contrast. (CQ-4295/106)
+
+* In het keuzemenu met keuzelijsten met invoervak (in verschillende velden op verschillende pagina&#39;s) worden nu items weergegeven als een lijst met opties die door schermlezers kunnen worden aangekondigd. (CQ-4294/017)
+
+* Als u een workflow op een element wilt toepassen, [!UICONTROL Timeline] kunt u de chevron-pijl in het element openen met een toetsenbord. (CQ-4289268)
+
+* Gebruikers kunnen geselecteerde tags in het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element verwijderen met behulp van `x` symbolen. Het doel wordt nu door schermlezers bekendgemaakt samen met het aantal geselecteerde tags (CQ-4273033).
+
+* De formuliervelden alleen-lezen kunnen worden gebruikt met een toetsenbord. De uitgeschakelde velden op het [!UICONTROL Basic] tabblad op de [!UICONTROL Properties] pagina van een element. (CQ-4273031)
+
+* Open nu met een toetsenbord de opties voor het filteren van elementen in de linkerzijbalk. (CQ-4273/018)
+
+* Het doel van verschillende keuzelijstelelementen, zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element, worden nu correct door schermlezers aangekondigd. (CQ-4273/016)
+
+* De volumeregelaars voor video&#39;s zijn toegankelijk via een toetsenbord. (CQ-4272696)
+
+* Veel actioneerbare opties in de gebruikersinterface Elementen geven geen focus aan wanneer u het toetsenbord gebruikt. (CQ-4272694)
+
+* Gebruikers van schermlezers weten nu wanneer de rijen in de lijstweergave met een toetsenbord kunnen worden geselecteerd. De informatie wordt aangekondigd wanneer de aanwijzer op de rijen wordt geplaatst. (CQ-4271824)
+
+* Sommige formuliervelden, zoals de velden voor gebruikersnaam en wachtwoord op de aanmeldingspagina, zijn afhankelijk van plaatsaanduidingswaarden voor een toegankelijk label. (CQ-4271716)
+
+* Interactieve elementen in de gebruikersinterface, zoals koppelingen en opties, zoals opties voor koptekst en zoomen op de elementenpagina of mapnavigatie, zijn nu toegankelijk met een toetsenbord. (CQ-4271412)
+
+* De titels van alle gebrowste pagina&#39;s op [!DNL Adobe Experience Manager] Elementen zijn nu uniek. (CQ-4271409)
 
 **Andere verbeteringen**
 
@@ -153,36 +187,11 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-Naast de bovenstaande nieuwe functies biedt de huidige release de volgende verbeteringen en foutoplossingen op basis van feedback van klanten voor [!DNL Assets].
+Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volgende insectenmoeilijke situaties die op klant worden gebaseerd terugkoppelt voor [!DNL Assets].
 
 * Voor MP3-muziekbestanden werkt de afspeelknop die op de miniatuur in de DAM-voorvertoning wordt weergegeven, niet. (CQ-4294731)
 * Als u de aanwijzer op de kaartweergave plaatst, schuift het scherm als gevolg van (automatische) focus op de snelle acties die beschikbaar zijn op de kaart. (GRANITE-26895)
 * Als u te veel afbeeldingen weergeeft nadat u door een groot aantal zoekresultaten hebt geschoven, loopt de browser vast. (GRANITE-26432)
-* De [!UICONTROL Options]-, [!UICONTROL Scope]- en [!UICONTROL Workflows] voortgangsindicatoren op de [!UICONTROL Manage Publication] pagina worden door de schermlezer niet gelezen als voortgangsindicatoren. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
 * Als bij het downloaden van middelen de optie E-mail is geselecteerd en zelfs als een geldige e-mailadres is opgegeven, is de optie Downloaden niet beschikbaar. (CQ-4296535)
-
-* Wanneer gebruikers tags aan [!UICONTROL Properties] pagina&#39;s van een element toevoegen, bladeren ze door een boomstructuur met codes. De structuur van de structuur is niet toegankelijk omdat gebruikers van schermlezers tijdens het navigeren niets horen. (CQ-4272964)
-* In het dialoogvenster voor het delen van koppelingen navigeert de schermlezer in de bladermodus,
-
-   * De tabelgegevens worden van commentaar voorzien zodra het dialoogvenster wordt geladen.
-   * kan niet naar alle vermelde automatische suggesties navigeren.
-   * maakt geen commentaar op de weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak. (CQ-4294232)
-
-* De sleepopties werken niet met het toetsenbord in de NVDA-bladermodus in de metagegevensschemaeditor. (CQ-4296326)
-* In de gebruikersinterface Middelen zijn de weergave-instellingen niet toegankelijk via het toetsenbord. (CQ-4289038)
 * Aangepaste filters die zijn opgeslagen als slimme verzamelingen, worden niet correct toegepast op elementen. (CQ-4294942)
 * De veelvoudige onderzoek en indexerende verhogingen en insectenmoeilijke situaties om prestaties te verbeteren. (CQ-4286373)
-* De lichtsterkteverhouding voor geelgekleurde classificatiepictogrammen is minder dan 3:1. Het is niet nuttig voor gebruikers met een beperkt gezichtsvermogen en zonder kleurperceptie. De classificatiesterren worden weergegeven in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] tabblad in de asset- [!UICONTROL Properties] of kaartweergave (CQ-4295106)
-* In de keuzelijst met keuzelijsten met invoervakken (in verschillende velden op verschillende pagina&#39;s) worden nu vermeldingen weergegeven als een lijst met opties die door schermlezers kunnen worden aangekondigd. (CQ-4294/017)
-* De pijl-omhoog in het deelvenster [!UICONTROL Timeline] kan niet worden geopend met een toetsenbord om een workflow toe te passen op een element. (CQ-4289268)
-* De opties (voor [!UICONTROL x]) voor het verwijderen van alle geselecteerde codes onder het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad [!UICONTROL Properties] zijn nu toegankelijk voor schermlezers. (CQ-4273/033)
-* Alleen-lezen formuliervelden (bijvoorbeeld uitgeschakelde velden op [!UICONTROL Basic tab] element [!UICONTROL Properties]) kunnen nu met het toetsenbord worden geactiveerd. (CQ-4273031)
-* De optie om filterzijbalk te openen kan nu met het toetsenbord worden geopend. (CQ-4273/018)
-* Het doel van verschillende keuzelijstelelementen (zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het tabblad Standaard van Eigenschappen van element) worden nu correct door schermlezers aangekondigd. (CQ-4273/016)
-* [!UICONTROL Metadata Schema Editor] De pagina en de bijbehorende elementen zijn niet toegankelijk met het toetsenbord en zijn niet compatibel met schermlezers. (CQ-4272953)
-* Besturingselementen voor videovolume zijn niet toegankelijk via een toetsenbord. (CQ-4272696)
-* Veel actioneerbare opties in de gebruikersinterface Elementen geven geen focus aan wanneer u het toetsenbord gebruikt. (CQ-4272694)
-* Gebruikers van schermlezers weten niet dat de rijen in de lijstweergave selecteerbaar zijn wanneer ze een toetsenbord gebruiken. De informatie wordt alleen aangekondigd wanneer de muis op de rijen wordt geplaatst. (CQ-4271824)
-* Sommige formuliervelden, zoals de velden gebruikersnaam en wachtwoord op de aanmeldingspagina, vertrouwen alleen op plaatsaanduidingswaarden voor een toegankelijk label. (CQ-4271716)
-* Interactieve elementen in de gebruikersinterface, zoals koppelingen en opties (voor koptekst- en zoomopties op de elementenpagina, mapnavigatie), zijn nu toegankelijk met een toetsenbord. (CQ-4271412)
-* De titels van alle gebrowste pagina&#39;s op [!DNL Adobe Experience Manager] Elementen zijn nu uniek. (CQ-4271409)
