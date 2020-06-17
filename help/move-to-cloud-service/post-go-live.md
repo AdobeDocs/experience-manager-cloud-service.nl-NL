@@ -1,47 +1,47 @@
 ---
-title: Fase na introductie
-description: Fase na introductie
+title: Fase na Go-Live
+description: Fase na Go-Live
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '242'
+ht-degree: 82%
 
 ---
 
 
-# Online plaatsen {#post-go-live}
+# Na Go-Live {#post-go-live}
 
-In de post-levende fase, zou u moeten verzekeren schoonmaakbeurt van tijdelijke dossiers, bespreek beste praktijken voor ononderbroken ontwikkeling en beheer logboeken.
+In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opgeschoond. Het is ook tijd om de best practices te evalueren voor continue ontwikkeling en voor het beheer van de logbestanden.
 
-De volgende programma&#39;s zijn beschikbaar om AEM als milieu&#39;s van de Dienst van de Wolk problemen op te lossen:
+De volgende tools zijn handig om problemen met AEM as a Cloud Service op te lossen:
 
-* **Ontwerpconsole**
-* **CRXDE Lite**
-* **Logbestanden beheren**
+* **Developer Console**
+* **CRX/DE Lite**
+* **Tool voor beheren van logbestanden**
 
 
-## Ontwerpconsole {#developer-console}
+## Developer Console {#developer-console}
 
-Fouten opsporen in AEM als ontwikkelomgeving van de Cloud Service zijn beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
+Foutopsporing van AEM as a Cloud Service-ontwikkelomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
 
-Raadpleeg [Implementeren voor AEM als cloudservice](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
+Raadpleeg [Implementeren voor AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
 
-## CRXDE Lite {#crxde-lite}
+## CRX/DE Lite {#crxde-lite}
 
-Als gebruiker, kunt u tot **CRXDE Lite** op de ontwikkelomgeving maar niet stadium of productie toegang hebben.
+Als gebruiker, kunt u tot CRX/DE Lite op de ontwikkelomgeving maar niet stadium of productie toegang hebben.
 
 >[BELANGRIJK]
->Het schrijven naar onveranderlijke opslagplaatsen zoals `/libs` en `/apps` bij uitvoering resulteert in fouten. Bovendien, als klant, zult u geen toegang tot ontwikkelaarstooling voor het opvoeren en productiemilieu&#39;s hebben.
+>Het schrijven naar onveranderlijke repository&#39;s zoals `/libs` en `/apps` tijdens uitvoering resulteert in fouten. Bovendien hebt u als klant geen toegang tot ontwikkelaarstools voor staging- en productieomgevingen.
 
-Raadpleeg [Ontwikkelen met CRXDE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) voor meer informatie over het ontwikkelen van uw AEM-toepassing met behulp van CRXDE Lite.
+Refer to [Developing with CRX/DE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRX/DE Lite.
 
 ## Logbestanden beheren {#managing-logs}
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Raadpleeg [Toegang tot en beheer van logbestanden](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of via de API via Cloud Manager.
+Raadpleeg [Logbestanden openen en beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
 
 ### Aanvullende ondersteuning {#additional-support}
 
-Als u vragen hebt over toegang tot de Cloud Service, neemt u contact op met uw Adobe-vertegenwoordiger of Adobe AEM CQ Support Portal.
+Als u vragen hebt over toegang tot Cloud Service, neemt u contact op met uw Adobe-vertegenwoordiger of de Adobe AEM CQ-ondersteuningsportal.
