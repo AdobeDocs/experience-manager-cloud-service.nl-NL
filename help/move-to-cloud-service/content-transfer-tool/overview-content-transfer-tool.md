@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 75%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ Als u in de opnamefase de deltacontent boven op de huidige content wilt toepasse
 
 Volg de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen procedures voor het gebruik van de Content Transfer-tool:
 
-* Het is aan te raden om vooraf &#39;data store&#39;-controles uit te voeren op de consistentie van de repository&#39;s om mogelijke problemen te detecteren en het om aantal aanwezige, eerder verwijderde bestanden in de repository te verkleinen.
+* Het is raadzaam om [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) en [gegevensopslag consistentiecontroles](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) uit te voeren op de **bronopslagplaats** om potentiële problemen te identificeren en de grootte van de opslagplaats te verminderen.
 
 * Als de configuratie van het Netwerk van de Levering van de Inhoud van de Inhoud van de Auteur AEM Cloud (CDN) wordt gevormd om een whitelist van IPs te hebben dan zou het moeten worden gewaarborgd dat de bronmilieu IPs ook aan allowlist wordt toegevoegd zodat het bronmilieu en het milieu van de Wolk AEM met elkaar kunnen communiceren.
 
