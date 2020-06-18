@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 De Cloud Readiness Analyzer kan als zip- dossier van het Portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
->Download de Cloud Readiness Analyzer van het portaal van de Distributie van de Software.
+>Download de Cloud Readiness Analyzer van het portaal van de Distributie van de [Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) .
 
 ## Het Rapport van de Cloud Readiness Analyzer weergeven {#viewing-report}
 
