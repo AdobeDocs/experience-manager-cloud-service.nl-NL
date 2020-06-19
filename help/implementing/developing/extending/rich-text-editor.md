@@ -3,9 +3,9 @@ title: Vorm de Rich Text Editor aan auteursinhoud in Adobe Experience Manager al
 description: Vorm Rich Text Editor aan auteursinhoud in Adobe Experience Manager als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](rich-text-editor.md). Zie hoe ontwerpers RTE [gebruiken voor het ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) van webinhoud.
+De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Zie hoe ontwerpers RTE [gebruiken voor het ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) van webinhoud.
 
 De concepten en de stappen van RTE die worden vereist om het te vormen zijn hieronder vermeld.
 
@@ -31,11 +31,11 @@ De interface RTE biedt een [ontvankelijk ontwerp](/help/sites-cloud/authoring/fe
 
 *Afbeelding: De werkbalk van de Rich Text Editor met alle beschikbare opties ingeschakeld.*
 
-De werkbalk bevat de opties voor de WYSIWYG-ontwerpervaring. De beheerders van de Manager van de ervaring kunnen de opties vormen beschikbaar in de toolbar op de interface. Er is standaard een uitgebreide set bewerkingsopties beschikbaar in Experience Manager. Ontwikkelaars kunnen Experience Manager aanpassen om meer bewerkingsopties toe te voegen.
+De werkbalk bevat de opties voor de WYSIWYG-ontwerpervaring. Experience Manager-beheerders kunnen de opties configureren die beschikbaar zijn op de werkbalk in de interface. In Experience Manager is standaard een uitgebreide set bewerkingsopties beschikbaar. Ontwikkelaars kunnen Experience Manager aanpassen om meer bewerkingsopties toe te voegen.
 
 ## Verschillende bewerkingsmodi {#editingmodes}
 
-Auteurs kunnen tekstinhoud maken en bewerken in Experience Manager met behulp van de verschillende modi van componenten. De toolbaropties voor het ontwerpen en het formatteren van inhoud en de gebruikerservaring van rte-toegelaten componenten op verschillende het uitgeven wijze variëren gebaseerd op configuraties RTE.
+Auteurs kunnen tekstinhoud in Experience Manager maken en bewerken met de verschillende modi van componenten. De toolbaropties voor het ontwerpen en het formatteren van inhoud en de gebruikerservaring van rte-toegelaten componenten op verschillende het uitgeven wijze variëren gebaseerd op configuraties RTE.
 
 | Bewerkmodus | Bewerkingsgebied | Aanbevolen functies om te worden ingeschakeld |
 |--- |--- |--- |
@@ -58,7 +58,7 @@ Als u de inhoud opent (met een langzaam dubbelklikken), kan deze op de pagina wo
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
-De componenten van de Manager van de ervaring kunnen in het volledig-schermmening worden geopend die de paginainhoud verbergt en het beschikbare scherm bezet. U kunt overwegen een gedetailleerde versie van inlinebewerking op een volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
+Experience Manager-componenten kunnen worden geopend in de weergave Volledig scherm, waarin de pagina-inhoud wordt verborgen en het beschikbare scherm wordt ingenomen. U kunt overwegen een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
 
 In de modus Volledig scherm van het dialoogvenster zijn, samen met een gedetailleerde RTE-werkbalk, ook de opties en componenten beschikbaar in een dialoogvenster. Het is alleen van toepassing voor een dialoog die naast andere componenten RTE bevat.
 
@@ -108,7 +108,7 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | spellingcontrole | checktext | [Spellingcontrole](configure-rich-text-editor-plug-ins.md#adddict)met behoud van taal. |
 | stijlen | stijlen | Ondersteuning voor opmaak met behulp van een CSS-klasse. [Voeg nieuwe tekststijlen](configure-rich-text-editor-plug-ins.md#textstyles) toe als u uw eigen reeks stijlen voor gebruik met tekst wilt toevoegen (of uitbreiden). |
 | subsuperscript | subscript, superscript | Extensies voor de basisindelingen, subscript en superscript toevoegen. |
-| table | verwijderbaar inzetbare verwijderbare insteekmodule removerow insert column removecolumn cellprops mergecells splitcell selectrow selected columns | Zie tabelstijlen [](configure-rich-text-editor-plug-ins.md#tablestyles)configureren als u uw eigen stijlen voor gehele tabellen of afzonderlijke cellen wilt toevoegen. |
+| table | verwijderbaar verwijderbaar insteekmodule removerow insert column removecolumn cellprops mergecell splitcell selectrow selectrow kolommen samenvoegen | Zie tabelstijlen [](configure-rich-text-editor-plug-ins.md#tablestyles)configureren als u uw eigen stijlen voor gehele tabellen of afzonderlijke cellen wilt toevoegen. |
 | ongedaan maken | ongedaan maken, opnieuw uitvoeren | Grootte historie van bewerkingen voor [ongedaan maken en opnieuw uitvoeren](configure-rich-text-editor-plug-ins.md#undohistory) . |
 
 >[!NOTE]
@@ -141,7 +141,7 @@ Configureer de volgende eigenschappen die van toepassing zijn in de bewerkingsmo
 
    Wanneer deze eigenschap true is, wordt het bewerken van Richtingstekst standaard gestart op de gebeurtenis &quot;foundation-contentloaded&quot;.
 
-   Om dit te verhinderen, plaats het bezit aan `customStart` `True`en teweegbrengt de gebeurtenis &quot;rte-start&quot;om RTE het uitgeven te beginnen. Wanneer deze eigenschap &#39;true&#39; is, werkt het standaardgedrag bij klikken met de beginwaarde niet.
+   Om dit te verhinderen, plaats het bezit aan `customStart` `True`en teweegbrengt de gebeurtenis &quot;rte-start&quot;om RTE het uitgeven te beginnen. Wanneer deze eigenschap &#39;true&#39; is, werkt het standaardgedrag, het starten bij klikken.
 
 * `customStart`: Plaats dit bezit Van Boole dat op de knoop RTE aan wordt bepaald, om te controleren wanneer om RTE te beginnen door de gebeurtenis te teweegbrengen `True``rte-start`.
 
@@ -170,7 +170,7 @@ Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component i
 
 ## RTE-werkbalk configureren {#dialogfullscreen}
 
-Met Experience Manager kunt u de interface voor de Rich Text Editor op verschillende manieren configureren voor de verschillende bewerkingsmodi. De standaardinstellingen worden hieronder gegeven. U kunt deze standaardinstellingen op basis van uw vereisten overschrijven. U kunt alleen de werkbalkfuncties aanpassen die u aan de auteurs wilt geven. U hoeft niet alle werkbalkconfiguraties op te geven.
+Met Experience Manager kunt u de interface voor de Rich Text Editor op een andere manier configureren voor de verschillende bewerkingsmodi. De standaardinstellingen worden hieronder gegeven. U kunt deze standaardinstellingen op basis van uw vereisten overschrijven. U kunt alleen de werkbalkfuncties aanpassen die u aan de auteurs wilt geven. U hoeft niet alle werkbalkconfiguraties op te geven.
 
 Gebruik de volgende voorbeeldconfiguratie om de werkbalk voor `dialogFullScreen`te configureren.
 
@@ -268,9 +268,9 @@ Hieronder ziet u een voorbeeldfragment waarmee u de opdracht Vet maken toewijst 
 
 ## Bekende beperkingen {#known-limitations}
 
-De capaciteit van RTE van de Manager van de ervaring heeft de volgende beperkingen:
+Experience Manager RTE-functionaliteit heeft de volgende beperkingen:
 
-* RTE-mogelijkheden worden alleen ondersteund in de dialoogvensters van de component Experience Manager. RTE wordt niet gesteund op tovenaars of stichting-vormen.
+* RTE-mogelijkheden worden alleen ondersteund in dialoogvensters van Experience Manager-componenten. RTE wordt niet gesteund op tovenaars of stichting-vormen.
 
 * Experience Manager werkt niet op hybride apparaten. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
