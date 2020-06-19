@@ -3,7 +3,7 @@ title: Weet hoe middelenmicroservices uw digitale middelen in de cloud kunnen ve
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 0%
@@ -13,16 +13,11 @@ ht-degree: 0%
 
 # Overzicht van het opnemen en verwerken van bedrijfsmiddelen met microservices voor bedrijfsmiddelen {#asset-microservices-overview}
 
-<!--
-First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
--->
-
-Adobe Experience Manager als Cloud Service biedt een methode die in de cloud zelf kan worden gebruikt om Experience Manager-toepassingen en -mogelijkheden te benutten. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen. Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale verwerking van verschillende elementtypen en verwerkingsopties. De belangrijkste voordelen van cloudnative assetmicroservices zijn:
+Adobe Experience Manager als Cloud Service biedt een &#39;cloud-native&#39; methode om Experience Manager-toepassingen en -mogelijkheden te benutten. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen. Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale verwerking van verschillende elementtypen en verwerkingsopties. De belangrijkste voordelen van cloudnative assetmicroservices zijn:
 
 * Schaalbare architectuur die een naadloze verwerking mogelijk maakt voor bronintensieve bewerkingen.
 * Efficiënte indexering en tekstextracties die geen invloed hebben op de prestaties van uw Experience Manager-omgevingen.
-* Minimaliseer de behoefte aan werkschema&#39;s om activa verwerking in het milieu van de Manager van de Ervaring te behandelen. Hierdoor worden bronnen vrijgemaakt, wordt de belasting op de Experience Manager tot een minimum beperkt en is schaalbaarheid mogelijk.
+* Minimaliseer de behoefte aan werkschema&#39;s om activa verwerking in het milieu van Experience Manager te behandelen. Hierdoor worden bronnen vrijgemaakt, wordt de belasting op Experience Manager tot een minimum beperkt en is schaalbaarheid mogelijk.
 * Verbeterde veerkracht van de verwerking van bedrijfsmiddelen. Mogelijke problemen bij het verwerken van atypische bestanden, zoals beschadigde bestanden of extreem grote bestanden, hebben geen gevolgen meer voor de prestaties van de implementatie.
 * Vereenvoudigde configuratie van middelenverwerking voor beheerders.
 * De instellingen voor middelenverwerking worden beheerd en onderhouden door Adobe om de best bekende configuratie te bieden voor de verwerking van uitvoeringen, metagegevens en tekstextractie voor verschillende bestandstypen
@@ -44,23 +39,23 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 De belangrijkste stappen van de opname en verwerking met behulp van asset microservices zijn:
 
-* Clients, zoals webbrowsers of Adobe Asset Link, sturen een aanvraag voor het uploaden naar Experience Manager en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
-* Wanneer het directe binaire uploaden is voltooid, brengt de client een melding naar Experience Manager.
-* De Manager van de ervaring verzendt een verwerkingsverzoek naar activa microservices. De inhoud van de aanvraag is afhankelijk van de configuratie van de verwerkingsprofielen in Experience Manager die opgeeft welke uitvoeringen moeten worden gegenereerd.
+* Clients, zoals webbrowsers of Adobe Asset Link, verzenden een aanvraag voor het uploaden naar Experience Manager en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
+* Wanneer de directe binaire upload is voltooid, brengt de client Experience Manager op de hoogte.
+* Experience Manager verzendt een verwerkingsverzoek naar assetmicroservices. De inhoud van de aanvraag is afhankelijk van de configuratie van de verwerkingsprofielen in Experience Manager die bepaalt welke uitvoeringen moeten worden gegenereerd.
 * De back-end van de microservices van activa ontvangt het verzoek, verzendt het naar één of meerdere microservices die op het verzoek worden gebaseerd. Elke microservice krijgt rechtstreeks vanuit de binaire cloudopslag toegang tot het oorspronkelijke binaire bestand.
 * De resultaten van de verwerking, zoals uitvoeringen, worden opgeslagen in de binaire cloudopslag.
-* Experience Manager wordt op de hoogte gesteld dat de verwerking voltooid is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in Experience Manager voor het geüploade element.
+* Experience Manager wordt op de hoogte gesteld van het feit dat de verwerking voltooid is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in Experience Manager voor het geüploade element.
 
-Dit is de basisstroom van activa het opnemen en verwerken. Indien geconfigureerd, kan Experience Manager ook een aangepast workflowmodel starten voor de naverwerking van het element. Voer bijvoorbeeld aangepaste stappen uit die specifiek zijn voor uw omgeving, zoals het ophalen van informatie van een bedrijfssysteem en het toevoegen van elementen aan eigenschappen.
+Dit is de basisstroom van activa het opnemen en verwerken. Indien dit is geconfigureerd, kan Experience Manager ook een aangepast workflowmodel starten voor naverwerking van het middel. Voer bijvoorbeeld aangepaste stappen uit die specifiek zijn voor uw omgeving, zoals het ophalen van informatie van een bedrijfssysteem en het toevoegen van elementen aan eigenschappen.
 
 De opname- en verwerkingsstroom zijn de belangrijkste concepten van de architectuur voor assetmicroservices voor Experience Manager.
 
-* **Directe binaire toegang**: Elementen worden naar de Cloud Binary Store getransporteerd (en geüpload) als ze eenmaal zijn geconfigureerd voor Experience Manager-omgevingen. Daarna krijgen AEM, asset microservices en ten slotte krijgen klanten directe toegang tot deze services om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
+* **Directe binaire toegang**: Elementen worden naar de Binaire Store van de Wolk vervoerd (en geüpload) zodra ze voor Experience Manager-omgevingen zijn geconfigureerd, en daarna AEM, asset-microservices, en ten slotte krijgen klanten directe toegang tot deze systemen om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
 * **Externe verwerking**: De verwerking van middelen vindt plaats buiten de AEM-omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van belangrijke functies voor het beheer van digitale bedrijfsmiddelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
 
 ## Middelen uploaden met directe binaire toegang {#asset-upload-with-direct-binary-access}
 
-De cliënten van de Manager van de ervaring, die een deel van product aanbieden, allen steun uploaden met directe binaire toegang door gebrek. Hiertoe behoren het uploaden via de webinterface, Adobe Asset Link en de AEM-bureaubladtoepassing.
+Experience Manager-clients, die onderdeel zijn van productaanbiedingen, bieden standaard standaard standaard ondersteuning voor uploaden met directe binaire toegang. Hiertoe behoren het uploaden via de webinterface, Adobe Asset Link en de AEM-bureaubladtoepassing.
 
 U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met AEM HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
 
@@ -75,7 +70,7 @@ Terwijl de meeste klanten al hun behoeften van de activaverwerking van de config
 
 Nabewerkingsworkflows zijn gewone AEM-workflowmodellen die zijn gemaakt en beheerd in de AEM Workflow Editor. Klanten kunnen de workflows configureren om aanvullende verwerkingsstappen uit te voeren op een middel, waaronder het gebruik van beschikbare workflowstappen buiten de box en aangepaste workflows.
 
-Adobe Experience Manager kan zo worden geconfigureerd dat de nabewerkingsworkflows automatisch worden geactiveerd nadat de verwerking van de middelen is voltooid.
+Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkflows automatisch worden geactiveerd nadat de verwerking van de elementen is voltooid.
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
