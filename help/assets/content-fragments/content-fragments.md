@@ -1,18 +1,22 @@
 ---
 title: Werken met contentfragmenten
-description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
+description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 3%
+source-wordcount: '1804'
+ht-degree: 2%
 
 ---
 
 
 # Werken met contentfragmenten{#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Content Fragments pagina-onafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-cloud/authoring/fundamentals/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Inhoudsfragmenten paginaonafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-cloud/authoring/fundamentals/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+
+Inhoudsfragmenten bevatten gestructureerde inhoud:
+
+* Ze zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), waarin een structuur voor het resulterende fragment vooraf wordt gedefinieerd.
 
 Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM-kerncomponenten. Deze leveringsvorm:
 
@@ -59,7 +63,7 @@ Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, me
 * Systeemeigen mobiele toepassingen
 * andere kanalen en aanraakpunten buiten AEM
 
-De levering wordt uitgevoerd in JSON-indeling.
+De levering wordt uitgevoerd in JSON-indeling met behulp van de JSON Exporter.
 
 Met AEM-inhoudsfragmenten kunt u gestructureerde inhoud beschrijven en beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten; waaronder tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
 
@@ -76,12 +80,6 @@ De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bev
 >
 >Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)voor meer informatie.
 
->[!CAUTION]
->
->Inhoudsfragmenten zijn niet beschikbaar in de klassieke UI.
->
->De component van het Fragment van de Inhoud kan in klassieke UI hulpje worden gezien, maar de verdere functionaliteit is niet beschikbaar.
-
 >[!NOTE]
 >
 >AEM ondersteunt ook het vertalen van fragmentinhoud. Zie Vertaalprojecten maken voor inhoudsfragmenten voor meer informatie.
@@ -91,24 +89,6 @@ De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bev
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## Typen inhoudsfragmenten {#types-of-content-fragment}
-
-Inhoudsfragmenten kunnen:
-
-* Eenvoudige fragmenten
-
-   * Deze hebben geen vooraf gedefinieerde structuur.
-
-   * Ze bevatten alleen tekst en afbeeldingen.
-
-   * Deze zijn gebaseerd op de sjabloon **Eenvoudig fragment** .
-
-* Fragmenten die gestructureerde inhoud bevatten
-
-   * Deze zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), dat een structuur vooraf definieert voor het resulterende fragment.
-
-   * Deze kunnen ook worden gebruikt om Content Services te realiseren met behulp van JSON Exporter.
 
 ## Inhoudstype {#content-type}
 
@@ -168,18 +148,14 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 * **Fragmentelementen**
 
    * Elementen correleren met de gegevensvelden die inhoud bevatten.
-   * Voor fragmenten met gestructureerde inhoud gebruikt u een inhoudsmodel om het inhoudsfragment te maken. De elementen (velden) die in het model zijn opgegeven, definiëren de structuur van het fragment. Deze elementen (velden) kunnen van verschillende gegevenstypen zijn.
-   * Voor eenvoudige fragmenten:
-
-      * De inhoud bevindt zich in een (of meer) tekstveld(en) met meerdere regels of in een of meer elementen.
-      * De elementen worden gedefinieerd in de sjabloon **Eenvoudig fragment** .
+   * U gebruikt een inhoudsmodel om het inhoudsfragment te maken. De elementen (velden) die in het model zijn opgegeven, definiëren de structuur van het fragment. Deze elementen (velden) kunnen van verschillende gegevenstypen zijn.
 
 * **Fragmentalinea&#39;s**
 
    * Tekstblokken, dat wil zeggen:
 
       * gescheiden door verticale spaties (harde return)
-      * in tekstelementen met meerdere regels; in eenvoudige of gestructureerde fragmenten
+      * in tekstelementen met meerdere regels
    * In de modi [Tekst met opmaak](/help/assets/content-fragments/content-fragments-variations.md#rich-text) en [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen die alinea en de volgende alinea bij elkaar als één eenheid.
 
    * Inhoudsbeheer tijdens het ontwerpen van pagina&#39;s inschakelen.
@@ -271,11 +247,6 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
    * Definieert de structuur van een fragment (titel, inhoudselementen, tagdefinities).
    * Definities van inhoudsmodellen vereisen een titel en één gegevenselement. alles is optioneel . Het model definieert een minimaal bereik van het fragment en de standaardinhoud, indien van toepassing. Auteurs kunnen de gedefinieerde structuur niet wijzigen tijdens het ontwerpen van fragmentinhoud.
 
-* **Fragmentsjabloon**
-
-   * U hebt de sjabloon **Eenvoudig fragment** nodig om een eenvoudig fragment [te](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)maken.
-   * Definieert de basiseigenschappen van een eenvoudig fragment (titel, aantal tekstelementen, tagdefinities).
-
 * **Component Inhoudsfragment**
 
    * Instrumentaal voor het leveren van het fragment in HTML- en/of JSON-indeling.
@@ -290,6 +261,6 @@ Een fragment met de elementen en variaties kan worden gebruikt om coherente inho
 
 ### WKND-voorbeeld {#wknd-sample}
 
-De voorbeelden van de [WKND-site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) zijn beschikbaar om u te helpen bij het leren van informatie over AEM als cloudservice. Het omvat voorbeeldfragmenten, deze kunnen worden gezien bij:
+De [steekproeven van de Plaats](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND worden verstrekt om u te helpen over AEM als Cloud Service leren. Het omvat voorbeeldfragmenten, deze kunnen worden gezien bij:
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
