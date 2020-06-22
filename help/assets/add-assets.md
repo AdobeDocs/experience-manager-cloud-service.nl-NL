@@ -1,24 +1,24 @@
 ---
-title: Voeg uw digitale middelen toe aan Adobe Experience Manager
-description: Voeg uw digitale middelen toe aan Adobe Experience Manager als Cloud Service
+title: Digitale middelen toevoegen aan Adobe Experience Manager
+description: Digitale elementen toevoegen aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 1%
+source-wordcount: '1344'
+ht-degree: 0%
 
 ---
 
 
-# Digitale middelen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
+# Digitale elementen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, vertoningen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar de middelen van Experience Manager, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
+Adobe Experience Manager verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar Experience Manager Assets, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
 
-Er is een aantal uploadmethoden beschikbaar. Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om middelen toe te voegen aan de gegevensopslagruimte van Experience Manager, zoals desktopclients, zoals Adobe Asset Link of Experience Manager, scripts voor het uploaden en opnemen van gegevens die klanten zouden maken, en geautomatiseerde integratie van innamen die als AEM-extensies zouden worden toegevoegd.
+Er is een aantal uploadmethoden beschikbaar. Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om middelen toe te voegen aan de Experience Manager-opslagplaats, zoals bureaubladclients, zoals Adobe Asset Link of Experience Manager-bureaubladtoepassing, scripts voor het uploaden en opnemen van gegevens die klanten zouden maken, en geïntegreerde geautomatiseerde inname die als AEM-extensies zouden worden toegevoegd.
 
-We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen naar artikelen aanbieden waarin technische aspecten van het uploaden en opnemen van middelen worden beschreven met behulp van API&#39;s en SDK&#39;s van Experience Manager.
+We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen naar artikelen verschaffen waarin technische aspecten van het uploaden en opnemen van middelen worden beschreven met behulp van Experience Manager API&#39;s en SDK&#39;s.
 
-Hoewel u elk binair bestand kunt uploaden en beheren in Experience Manager, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg de [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
+Hoewel u elk binair bestand in Experience Manager kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg de [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
 
 Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [Aanvullende verwerking](#additional-processing) hieronder voor meer informatie.
 
@@ -60,7 +60,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 
 1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, verwijdert AEM Assets het gedeeltelijk geüploade gedeelte van het element.
 
-   Als u het uploaden annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
+   Als u het uploaden annuleert voordat de bestanden zijn geüpload, stoppen AEM Assets met het uploaden van het huidige bestand en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -74,7 +74,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 -->
 
 
-1. In het dialoogvenster Uploadvoortgang in AEM Assets wordt het aantal bestanden weergegeven dat is geüpload en de bestanden die niet zijn geüpload.
+1. Het dialoogvenster voor uploadvoortgang in AEM Assets geeft het aantal bestanden weer dat is geüpload en de bestanden die niet zijn geüpload.
 
 Daarnaast wordt in de gebruikersinterface Middelen het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
@@ -111,15 +111,15 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 >
 >Wanneer u **[!UICONTROL Replace]** in het [!UICONTROL Name Conflict] dialoogvenster selecteert, wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
 >
->Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
+>Als Asset Insights is ingeschakeld voor het bijhouden van indrukkingen/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevens die voor het middel zijn vastgelegd op Analytics ongeldig.
 
-Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te behouden **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
+Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te behouden. **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
-Met AEM-elementen kunt u geen elementen uploaden met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt in AEM Assets een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+AEM Assets voorkomen dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, geven AEM Assets een waarschuwingsbericht weer en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -131,18 +131,18 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet
 Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een geneste maphiërarchie op schijf bevinden, kunt u de volgende methoden gebruiken:
 
 * Gebruik een aangepast uploadscript of een aangepast gereedschap dat gebruik maakt van API&#39;s voor het uploaden van [elementen](developer-reference-material-apis.md#asset-upload-technical). Een dergelijk aangepast gereedschap kan indien nodig extra elementen verwerken (bijvoorbeeld metagegevens vertalen of de naam van bestanden wijzigen).
-* Gebruik de bureaubladtoepassing [van](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager om geneste maphiërarchieën te uploaden.
+* Gebruik de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) om geneste maphiërarchieën te uploaden.
 
 >[!NOTE]
 >
-> Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan de Manager van de Ervaring vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor richtlijnen voor de aanpak van contentmigratie.
+> Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan Experience Manager vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor richtlijnen voor de aanpak van contentmigratie.
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
-In aanvulling op de gebruikersinterface van de webbrowser biedt Experience Manager ondersteuning voor andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
+Naast de gebruikersinterface van de webbrowser biedt Experience Manager ondersteuning voor andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van AEM in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden naar AEM vanuit deze bureaubladtoepassingen.
-* [De Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op het bureaublad, onafhankelijk van het bestandstype of de native toepassing waarin ze worden verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
+* [De Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op het bureaublad, onafhankelijk van het bestandstype of de native toepassing waarin deze worden verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Aanvullende verwerking {#additional-processing}
 
@@ -155,14 +155,14 @@ De volgende profielen zijn beschikbaar:
 * [Met metagegevensprofielen](metadata-profiles.md) kunt u standaardeigenschappen voor metagegevens toepassen op elementen die naar die map zijn geüpload
 * [Met verwerkingsprofielen](asset-microservices-configure-and-use.md#processing-profiles) kunt u de verwerking van vertoningen toepassen en uitvoeringen genereren in aanvulling op de standaarduitvoeringen
 
-Als Dynamische media ook in uw omgeving is ingeschakeld:
+Als Dynamic Media ook in uw omgeving zijn ingeschakeld:
 
-* Met [afbeeldingsprofielen](dynamic-media/image-profiles.md) kunt u specifieke configuraties voor bijsnijden (**[!UICONTROL Smart Cropping]** en pixels bijsnijden) en verscherpen toepassen op de geüploade assets
-* [Met videoprofielen](dynamic-media/video-profiles.md) kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen
+* [Met de afbeeldingsprofielen](dynamic-media/image-profiles.md)**[!UICONTROL Smart Cropping]** Dynamic Media kunt u specifieke uitsnijdconfiguratie (en pixeluitsnijding) en verscherpingsconfiguratie toepassen op de geüploade .
+* [Met videoprofielen](dynamic-media/video-profiles.md) voor Dynamic Media kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
 
 >[!NOTE]
 >
-> Dynamische uitsnijdingen van media en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
+> Dynamic Media bijsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters voor bijsnijden of mediatransformatie bieden die moeten worden uitgevoerd wanneer de elementen worden geleverd
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de **[!UICONTROL Processing Profile]** kolom.
 
