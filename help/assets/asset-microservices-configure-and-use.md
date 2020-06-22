@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1843'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ Beheerders kunnen de gebruikersinterface van de configuratie onder gebruiken om 
 
 ### Standaardconfiguratie {#default-config}
 
-Met de standaardconfiguratie, slechts wordt het standaardverwerkingsprofiel gevormd. Het standaardverwerkingsprofiel is niet zichtbaar in de gebruikersinterface en u kunt het niet wijzigen. Het wordt altijd uitgevoerd om geüploade elementen te verwerken. Een standaard verwerkingsprofiel zorgt ervoor dat alle vereiste basisverwerking voor Experience Manager op alle middelen is voltooid.
+Met de standaardconfiguratie, slechts wordt het standaardverwerkingsprofiel gevormd. Het standaardverwerkingsprofiel is niet zichtbaar in de gebruikersinterface en u kunt het niet wijzigen. Het wordt altijd uitgevoerd om geüploade elementen te verwerken. Een standaard verwerkingsprofiel zorgt ervoor dat alle basisverwerkingsprocessen die door Experience Manager worden vereist, op alle assets zijn voltooid.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
@@ -105,13 +105,13 @@ Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type. A
 
 #### Speciale FPO-uitvoering {#special-fpo-rendition}
 
-Wanneer u grote middelen van AEM in Adobe InDesign-documenten plaatst, moet een creatieve professional een lange tijd wachten nadat ze een middel [hebben](https://helpx.adobe.com/indesign/using/placing-graphics.html)geplaatst. Ondertussen kan de gebruiker InDesign niet gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in InDesign-documenten plaatsen. U kunt deze later op verzoek vervangen door middelen met volledige resolutie. De Manager van de ervaring verstrekt vertoningen die voor plaatsing slechts (FPO) worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding.
+Wanneer u grote middelen van AEM in Adobe InDesign-documenten plaatst, moet een creatieve professional een lange tijd wachten nadat ze een middel [hebben](https://helpx.adobe.com/indesign/using/placing-graphics.html)geplaatst. Ondertussen kan de gebruiker InDesign niet gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in InDesign-documenten plaatsen. U kunt deze later op verzoek vervangen door middelen met volledige resolutie. Experience Manager biedt uitvoeringen die alleen voor plaatsing (FPO) worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding.
 
 Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. Raadpleeg de [documentatie](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) bij Adobe Asset Link als u deze nodig hebt voor uw verwerkingsprofiel. Zie de volledige documentatie [van](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)Adobe Asset Link voor meer informatie.
 
 ## Middelenmicroservices gebruiken om elementen te verwerken {#use-asset-microservices}
 
-Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen die Ervingenbeheer kan verwerken voor elementen die zijn geüpload naar of bijgewerkt in deze mappen. Het standaard ingebouwde standaard verwerkingsprofiel wordt altijd uitgevoerd, maar is niet zichtbaar in de gebruikersinterface. Als u een aangepast profiel toevoegt, worden beide profielen gebruikt om de geüploade elementen te verwerken.
+Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen die Experience Manager kan verwerken voor elementen die zijn geüpload naar of bijgewerkt in deze mappen. Het standaard ingebouwde standaard verwerkingsprofiel wordt altijd uitgevoerd, maar is niet zichtbaar in de gebruikersinterface. Als u een aangepast profiel toevoegt, worden beide profielen gebruikt om de geüploade elementen te verwerken.
 
 Er zijn twee manieren om verwerkingsprofielen toe te passen op mappen:
 
@@ -136,20 +136,18 @@ Gebruikers kunnen controleren of de verwerking daadwerkelijk heeft plaatsgevonde
 
 Voor situaties waarin aanvullende verwerking van activa vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra naverwerkingsworkflows aan de configuratie worden toegevoegd. Zo kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-De workflows na verwerking, indien geconfigureerd, worden automatisch uitgevoerd door AEM nadat de verwerking van de microservices is voltooid. Het is niet nodig om werkstroomlanceerinrichtingen handmatig toe te voegen om ze te activeren.
+De workflows na verwerking, indien geconfigureerd, worden automatisch uitgevoerd door AEM nadat de verwerking van de microservices is voltooid. Het is niet nodig om werkstroomlanceerinrichtingen handmatig toe te voegen om ze te activeren. De voorbeelden zijn:
 
-Voorbeelden zijn:
-
-* aangepaste workflowstappen voor het verwerken van elementen, bijvoorbeeld Java-code om uitvoeringen te genereren op basis van de eigen bestandsindelingen.
-* integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
-* aanvullende verwerking door externe diensten
+* Aangepaste workflowstappen om elementen te verwerken.
+* Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
+* Aanvullende verwerking door externe services.
 
 Het toevoegen van een workflowconfiguratie na verwerking aan Experience Manager bestaat uit de volgende stappen:
 
-* Een of meer workflowmodellen maken. We noemen ze &#39;workflowmodellen na verwerking&#39;, maar het zijn gewone AEM-workflowmodellen.
-* Specifieke workflowstappen toevoegen aan deze modellen. Deze stappen worden uitgevoerd op de elementen die zijn gebaseerd op de configuratie van het workflowmodel.
-* De laatste stap van een dergelijk model moet de `DAM Update Asset Workflow Completed Process` stap zijn. Dit is nodig om ervoor te zorgen dat AEM weet dat de verwerking is beëindigd en dat het actief kan worden gemarkeerd als verwerkt (&quot;Nieuw&quot;)
-* Het creëren van een configuratie voor de Dienst van de Runner van het Werkschema van de Douane, die voor het vormen van uitvoering van een model van het post-verwerkingswerkschema of door weg (omslagplaats) of regelmatige uitdrukking toestaat
+* Maak een of meer workflowmodellen. In de documenten wordt het als workflowmodellen *voor* naverwerking genoemd, maar dit zijn standaard Experience Manager-workflowmodellen.
+* Voeg specifieke workflowstappen toe aan deze modellen. De stappen worden uitgevoerd op de activa die op een configuratie van het werkschemamodel worden gebaseerd.
+* Voeg [!UICONTROL DAM Update Asset Workflow Completed Process] stap aan het einde toe. Als u deze stap toevoegt, weet Experience Manager wanneer de verwerking eindigt en kan het element worden gemarkeerd als verwerkt. Dit is *Nieuw* en wordt weergegeven op het element.
+* Creeer een configuratie voor de Dienst van de Runner van het Werkschema van de Douane die toestaat om uitvoering van een model van het post-verwerkingswerkschema of door een weg (omslagplaats) of door een regelmatige uitdrukking te vormen.
 
 ### Workflowmodellen voor naverwerking maken {#create-post-processing-workflow-models}
 
@@ -157,7 +155,7 @@ Workflowmodellen na verwerking zijn gewone AEM-workflowmodellen. Maak verschille
 
 Verwerkingsstappen moeten op basis van behoeften worden toegevoegd. U kunt alle ondersteunde stappen gebruiken die beschikbaar zijn, maar ook alle aangepaste workflowstappen.
 
-Zorg ervoor dat de laatste stap van elke naverwerkingwerkstroom is `DAM Update Asset Workflow Completed Process`. De laatste stap helpt ervoor te zorgen dat Experience Manager weet wanneer de verwerking van middelen is voltooid.
+Zorg ervoor dat de laatste stap van elke naverwerkingwerkstroom is `DAM Update Asset Workflow Completed Process`. Met de laatste stap weet Experience Manager wanneer de verwerking van bedrijfsmiddelen is voltooid.
 
 ### Workflowuitvoering na verwerking configureren {#configure-post-processing-workflow-execution}
 
@@ -170,7 +168,7 @@ De dienst van de Runner van het Werkschema van de Douane (`com.adobe.cq.dam.proc
 
 >[!NOTE]
 >
->De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan de Manager](/help/implementing/deploying/overview.md) van de Ervaring voor informatie over hoe te om een configuratie op te stellen OSGi.
+>De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan Experience Manager](/help/implementing/deploying/overview.md) voor informatie over hoe te om een configuratie op te stellen OSGi.
 > OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van AEM, niet rechtstreeks beschikbaar in de cloudservice-implementaties.
 
 Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor meer informatie over de standaardworkflowstap die u kunt gebruiken in de naverwerkingsworkflow.
