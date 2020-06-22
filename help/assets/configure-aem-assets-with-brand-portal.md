@@ -3,7 +3,7 @@ title: AEM Assets as a Cloud Service configureren met Brand Portal
 description: AEM Assets as a Cloud Service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 37%
@@ -13,25 +13,25 @@ ht-degree: 37%
 
 # AEM Assets configureren met Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager-middelen (AEM) worden geconfigureerd met Brand Portal via Adobe Developer Console, die een IMS-token aanschaft voor goedkeuring van uw Brand Portal-huurder.
+Adobe Experience Manager-elementen (AEM) worden geconfigureerd met het Brand Portal via de Adobe Developer Console, die een IMS-token aanschaft voor goedkeuring door uw Pandhouder.
 
 **Hoe werkt de configuratie?**
 
-Voor het configureren van de AEM Assets cloud-instantie met een Brand Portal-gebruiker (organisatie) zijn configuraties vereist in zowel de AEM Assets-cloudinstantie als in Adobe Developer Console.
+Voor het configureren van de AEM Assets cloud-instantie met een Brand Portal-gebruiker (organisatie) zijn configuraties vereist in zowel de cloudinstantie AEM Assets als in de Adobe Developer Console.
 
-1. Maak in de cloud-instantie van AEM Assets een IMS-account en genereer een openbaar certificaat (openbare sleutel).
+1. Maak in de cloud-instantie AEM Assets een IMS-account en genereren een openbaar certificaat (openbare sleutel).
 1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw Poorthuurder van het Merk (organisatie).
 1. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen.
 1. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
-1. Configureer in de AEM Assets-cloud-instantie de IMS-account met behulp van de gegevens van de serviceaccount en de JWT-payload.
-1. Configureer in de AEM Assets-cloudinstantie de Brand Portal-cloudservice met behulp van het IMS-account en het Brand Portal-eindpunt (organisatie-URL).
-1. Test de configuratie door een middel van de cloudinstantie van AEM Assets naar Brand Portal te publiceren.
+1. In de cloudinstantie AEM Assets, vorm de rekening IMS gebruikend de geloofsbrieven van de de dienstrekening en JWT lading.
+1. In de wolkeninstantie van AEM Assets, vorm de Poortwolkendienst van het Merk gebruikend de rekening IMS en het Poorteindpunt van het Merk (organisatie URL).
+1. Test de configuratie door middelen van de wolkeninstantie van AEM Assets aan het Portaal van het Merk te publiceren.
 
 >[!NOTE]
 >
->Een Brand Portal-huurder mag slechts met één AEM Assets-wolkeninstantie worden geconfigureerd.
+>Een Brand Portal-huurder mag slechts met één AEM Assets-wolkenexemplaar worden geconfigureerd.
 >
->Configureer geen Brand Portal-huurder met meerdere AEM Assets-wolkeninstanties.
+>Vorm geen huurder van het Portaal van het Merk met veelvoudige de wolkeninstanties van AEM Assets.
 
 
 ## Vereisten {#prerequisites}
@@ -46,7 +46,7 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 ## Configuratie maken {#create-new-configuration}
 
-Voer de volgende stappen in de opgegeven reeks uit om AEM Assets cloud-instantie te configureren met Brand Portal.
+Voer de volgende stappen in de gespecificeerde opeenvolging uit om de cloudinstantie van AEM Assets met het Portaal van het Merk te vormen.
 
 1. [Openbaar certificaat verkrijgen](#public-certificate)
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
@@ -56,7 +56,7 @@ Voer de volgende stappen in de opgegeven reeks uit om AEM Assets cloud-instantie
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
-IMS-configuratie verifieert uw Poorthuurder voor merken met de AEM Assets-cloudinstantie.
+IMS-configuratie verifieert uw Poorthuurder van het merk met de wolkeninstantie van AEM Assets.
 
 De IMS-configuratie omvat twee stappen:
 
@@ -67,7 +67,7 @@ De IMS-configuratie omvat twee stappen:
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Console.
 
-1. Meld u aan bij uw AEM Assets Cloud Instance.
+1. Meld u aan bij de cloud-instantie van uw AEM Assets.
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
@@ -99,7 +99,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
 ### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
 
-In de Console van de Ontwikkelaar van Adobe, worden de projecten en APIs gevormd op organisatie (de huurder van het Portaal van het Merk) niveau. Als u een API configureert, wordt er een JWT-verbinding (Service Account) gemaakt in de Adobe Developer Console. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u een AEM Assets-cloudinstantie wilt configureren met Brand Portal, moet u een openbaar certificaat (openbare sleutel) genereren in de AEM Assets-cloudinstantie en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze openbare sleutel wordt gebruikt om API voor de geselecteerde organisatie van het Portaal van het Merk te vormen en produceert de geloofsbrieven en JWT nuttige lading voor de de dienstrekening. Deze gegevens worden verder gebruikt om de IMS-account in de AEM Assets-cloudinstantie te configureren. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice configureren in AEM Assets-cloudinstantie.
+In de Console van de Ontwikkelaar van Adobe, worden de projecten en APIs gevormd op organisatie (de huurder van het Portaal van het Merk) niveau. Als u een API configureert, wordt er een JWT-verbinding (Service Account) gemaakt in de Adobe Developer Console. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u een AEM Assets-cloudinstantie wilt configureren met Brand Portal, moet u een openbaar certificaat (openbare sleutel) genereren in een AEM Assets-cloudinstantie en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze openbare sleutel wordt gebruikt om API voor de geselecteerde organisatie van het Portaal van het Merk te vormen en produceert de geloofsbrieven en JWT nuttige lading voor de de dienstrekening. Deze referenties worden verder gebruikt om de IMS-account in de cloud-instantie AEM Assets te configureren. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice configureren in AEM Assets-cloudinstantie.
 
 Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en lading van JWT te produceren:
 
@@ -156,7 +156,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**.
 
-U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruiken om de IMS-account [te](#create-ims-account-configuration) configureren in de cloudinstantie van AEM Assets.
+U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruiken om de IMS-account [te](#create-ims-account-configuration) configureren in de AEM Assets-cloud-instantie.
 
 <!--
 1. Click **[!UICONTROL Create Integration]**.
@@ -237,7 +237,7 @@ Voer de volgende stappen uit om de rekening te vormen IMS die u in [verkrijgen o
 
 Voer de volgende stappen uit om de merkportalcloudservice te configureren:
 
-1. Meld u aan bij uw AEM Assets Cloud Instance.
+1. Meld u aan bij de cloud-instantie van uw AEM Assets.
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
@@ -257,7 +257,7 @@ Voer de volgende stappen uit om de merkportalcloudservice te configureren:
 
 Voer de volgende stappen uit om de configuratie te valideren:
 
-1. Meld u aan bij uw AEM Assets Cloud Instance.
+1. Meld u aan bij de cloud-instantie van uw AEM Assets.
 
 1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
@@ -315,9 +315,9 @@ Raadpleeg de [Brand Portal-documentatie](https://docs.adobe.com/content/help/en/
 
 U kunt de logboeken voor gedetailleerde informatie over de acties controleren die door de verdeler worden uitgevoerd.
 
-We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
+Bijvoorbeeld, hebben wij een middel van AEM Assets aan het Portaal van het Merk gepubliceerd om de configuratie te bevestigen.
 
-1. Volg de stappen (van 1 tot 4) zoals aangetoond in de sectie van de [testverbinding](#test-configuration) en navigeer aan de pagina van de distributieagent.
+1. Volg de stappen (van 1 tot 4) zoals aangetoond in de sectie van de Configuratie [van de](#test-configuration) Test en navigeer aan de pagina van de distributiegagent.
 
 1. Klik op **[!UICONTROL Logs]** om de distributielogboeken te bekijken. Hier ziet u de logboeken voor verwerking en fouten.
 
