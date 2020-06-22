@@ -1,22 +1,22 @@
 ---
-title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van profielen
-description: Tips en tips en trucs voor het benoemen, ordenen en beheren van metagegevens voor bestanden met digitale elementen.
+title: Tips en trucs voor het ordenen van uw digitale middelen voor het gebruik van Dynamic Media Afbeeldingsprofielen of Videoprofielen
+description: Tips en tips en tips voor het benoemen, organiseren en beheren van Dynamic Media voor afbeeldings- en videobestanden.
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Aanbevolen procedures voor het ordenen van digitale elementen voor het gebruik van profielen {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van afbeeldingsprofielen of videoprofielen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Een belangrijk concept voor het gebruik van profielen in AEM Assets is dat deze aan mappen worden toegewezen. Binnen een profiel bevinden zich instellingen in de vorm van metagegevensprofielen, samen met videoprofielen of afbeeldingsprofielen. Met deze instellingen wordt de inhoud van een map samen met een van de submappen verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door een profiel worden verwerkt.
+Een belangrijk concept voor het gebruik van Dynamic Media Image Profiles of Video Profiles is dat deze aan mappen worden toegewezen. Binnen een profiel bevinden zich instellingen voor een afbeelding of video. Met deze instellingen wordt de inhoud van een map samen met een van de submappen verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door het profiel worden verwerkt.
 
 Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de verzameling van digitale elementen en ervoor zorgen dat de juiste bestanden worden verwerkt door het juiste profiel.
 
-Zie [Profielen voor het verwerken van video, metagegevens en afbeeldingen](processing-profiles.md).
+Zie [Informatie over het Profiel van het Beeld van Dynamic Media en Videoprofielen](about-image-video-profiles.md).
 
 Hier volgt een overzicht van tips voor het organiseren van digitale elementbestanden.
 
