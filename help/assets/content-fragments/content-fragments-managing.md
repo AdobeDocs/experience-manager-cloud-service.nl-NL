@@ -2,9 +2,9 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1454'
 ht-degree: 10%
 
 ---
@@ -22,24 +22,19 @@ Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk wor
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
-
 [U kunt contentfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
-De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
+De methode voor het maken van een inhoudsfragment is:
 
 1. Ga naar de map **Assets** waar u het fragment wilt maken.
 2. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 3. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
-   * Dit kan zijn:
+   * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het **Adventure** -model
 
-      * de sjabloon **Eenvoudig fragment**
-
-      * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het model **Airports**
-
-         * Alle beschikbare modellen worden weergegeven.
+      * Alle beschikbare modellen worden weergegeven.
    Na selectie gebruikt u **Volgende** om door te gaan.
 
    ![fragmentbasis](assets/cfm-managing-01.png)
