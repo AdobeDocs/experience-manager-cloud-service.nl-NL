@@ -1,8 +1,8 @@
 ---
-title: Onderhoudstaken in AEM als cloudservice
-description: 'Onderhoudstaken in AEM als cloudservice '
+title: Onderhoudstaken in AEM als Cloud Service
+description: 'Onderhoudstaken in AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: e9ee1064c5fa62b56c822a18ad6ca8cc4d09fa75
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 0%
@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Onderhoudstaken in AEM als cloudservice
+# Onderhoudstaken in AEM als Cloud Service
 
-Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM als Cloud Service is de noodzaak voor klanten om de operationele eigenschappen van onderhoudstaken te configureren minimaal. Klanten kunnen hun bronnen richten op problemen op toepassingsniveau en de infrastructuurbewerkingen aan Adobe overlaten.
+Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM als Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. Klanten kunnen hun bronnen richten op problemen op toepassingsniveau en de infrastructuurbewerkingen aan Adobe overlaten.
 
 Raadpleeg de volgende pagina&#39;s voor meer informatie over onderhoudstaken:
 
@@ -21,13 +21,13 @@ Raadpleeg de volgende pagina&#39;s voor meer informatie over onderhoudstaken:
 
 ## Onderhoudstaken configureren
 
-In eerdere versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM als cloudservice is de onderhoudskaart niet meer beschikbaar, dus configuraties moeten worden toegewezen aan broncontrole en worden geïmplementeerd met gebruik van de cloudbeheer. Adobe zal onderhoudstaken beheren waarvoor geen beslissingen van de klant nodig zijn (bijvoorbeeld Gegevensopslag opschonen), terwijl andere onderhoudstaken door de klant kunnen worden geconfigureerd (zie de onderstaande tabel).
+In eerdere versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM als Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe zal onderhoudstaken beheren waarvoor geen beslissingen van de klant nodig zijn (bijvoorbeeld Gegevensopslag opschonen), terwijl andere onderhoudstaken door de klant kunnen worden geconfigureerd (zie de onderstaande tabel).
 
 >[!CAUTION]
 >
 >Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaken van de klant te negeren om problemen zoals de verslechtering van de prestaties te beperken.
 
-In de volgende tabel worden de onderhoudstaken weergegeven die beschikbaar zijn op het moment van de release van AEM als Cloud Service.
+De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het moment van de release van AEM als Cloud Service.
 
 | Onderhoudstaken | Wie eigenaar is van de configuratie | Hoe te om (facultatief) te vormen |
 |---|---|---|
@@ -35,9 +35,9 @@ In de volgende tabel worden de onderhoudstaken weergegeven die beschikbaar zijn 
 | Versie wissen | Adobe | Volledig eigendom van Adobe, maar in de toekomst kunnen klanten bepaalde parameters configureren. |
 | Logboek controleren leegmaken | Adobe | Volledig eigendom van Adobe, maar in de toekomst kunnen klanten bepaalde parameters configureren. |
 | Lucene Binaries Cleanup | Adobe | Ongebruikt en daarom door Adobe uitgeschakeld. |
-| Ad-hoc taak wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf het de configuratieknooppunt van het venster van het Onderhoud onder `/libs` en `/apps` met `/conf/global/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (noem het `granite_TaskPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf het de configuratieknooppunt van het venster van het Onderhoud onder `/libs` en `/apps` met `/conf/global/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (noem het `granite_WorkflowPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf het de configuratieknooppunt van het venster van het Onderhoud onder `/libs` en `/apps` met `/conf/global/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven (naam het `granite_ProjectPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Ad-hoc taak wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de omslag `/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (noem het `granite_TaskPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de omslag`/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (noem het `granite_WorkflowPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de omslag `/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven (naam het `granite_ProjectPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm eigenschappen OSGI zie [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten uitgeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster.
 
@@ -54,7 +54,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_daily </code> (waarmee het knooppunt in <code>/apps</code> en <code>/libs</code>wordt overschreven)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
     <td>Zie voorbeeld 1 hieronder</td>
    <td>
     <ul>
@@ -67,7 +67,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Wekelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> (waarmee het knooppunt in <code>/apps</code> en <code>/libs</code>wordt overschreven)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
     <td>Zie voorbeeld 2 hieronder</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Maandelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (waarmee het knooppunt in <code>/apps</code> en <code>/libs</code>wordt overschreven)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
     <td>Zie codevoorbeeld 3 hieronder</td>
      <td>
     <ul>
@@ -124,7 +124,7 @@ Codevoorbeeld 2
    windowStartTime="14:30"/>
 ```
 
-Codevoorbeeld 2
+Codevoorbeeld 3
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
