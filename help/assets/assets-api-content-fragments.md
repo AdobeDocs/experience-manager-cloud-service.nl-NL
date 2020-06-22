@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen
-description: Meer informatie over Adobe Experience Manager als ondersteuning voor contentfragmenten voor cloudservice in HTTP-API voor middelen.
+title: Adobe Experience Manager als de Fragments van de Inhoud van de Cloud Service Steun in Activa HTTP API
+description: Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Content Fragments in Assets HTTP API.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 1%
 >
 De huidige implementatie van de Elementen HTTP API is gebaseerd op de architecturale stijl [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-Met de REST API [voor](/help/assets/mac-api-assets.md) middelen hebben ontwikkelaars van Adobe Experience Manager als Cloud Service via CRUD-bewerkingen rechtstreeks toegang tot inhoud (opgeslagen in AEM) (maken, lezen, bijwerken, verwijderen).
+Met de REST-API [voor](/help/assets/mac-api-assets.md) middelen hebben ontwikkelaars voor Adobe Experience Manager als Cloud Service via CRUD-bewerkingen rechtstreeks toegang tot inhoud (opgeslagen in AEM) (maken, lezen, bijwerken, verwijderen) via de HTTP-API.
 
-Met de API kunt u Adobe Experience Manager gebruiken als een cloudservice als een CMS zonder kop (Content Management System) door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
+Met de API kunt u Adobe Experience Manager als een Cloud Service als een CMS (Content Management System) zonder kop gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
 Bijvoorbeeld, de Enige Toepassingen van de Pagina (SPA), op kader-gebaseerd of douane, vereisen inhoud die over HTTP API, vaak in formaat JSON wordt verstrekt.
 
@@ -48,7 +48,7 @@ De REST-API voor middelen:
 
 ## Vereisten {#prerequisites}
 
-De REST-API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager die buiten de box valt als cloudservice-versie.
+De REST API van Middelen is beschikbaar op elke uit-van-de-doos installatie van een recente Adobe Experience Manager als versie van de Cloud Service.
 
 ## Belangrijke concepten {#key-concepts}
 
@@ -74,7 +74,7 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 * **GET** - voor het ophalen van een JSON-representatie van een middel of een map
 * **POST** - voor het maken van nieuwe elementen of mappen
 * **PUT** - om de eigenschappen van een middel of een omslag bij te werken
-* **VERWIJDEREN** - om een middel of een omslag te schrappen
+* **DELETE** - om een middel of een omslag te schrappen
 
 >[!NOTE]
 >
@@ -346,11 +346,10 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
    In het volgende voorbeeld worden algemene scenario&#39;s weergegeven wanneer deze foutstatus wordt geretourneerd, samen met het gegenereerde foutbericht (monospace):
 
    * Bovenliggende map bestaat niet (wanneer u een inhoudsfragment maakt via `POST`)
-   * Er wordt geen inhoudsfragmentmodel opgegeven (cq:model ontbreekt), kan niet worden gelezen (vanwege een ongeldig pad of een machtigingsprobleem) of er is geen geldig fragmentmodel/sjabloon:
+   * Er is geen inhoudsfragmentmodel opgegeven (cq:model ontbreekt), kan niet worden gelezen (vanwege een ongeldig pad of een machtigingsprobleem) of er is geen geldig fragmentmodel:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * Het inhoudsfragment kan niet worden gemaakt (mogelijk een probleem met de machtigingen):
 
       * `Could not create content fragment`
