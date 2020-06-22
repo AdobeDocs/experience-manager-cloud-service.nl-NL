@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1918'
 ht-degree: 0%
 
 ---
@@ -109,16 +109,16 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 Met verbeterde slimme tags kunnen organisaties slimme-tagmodellen trainen om images te herkennen op basis van klantspecifieke bedrijfstags, naast algemene slimme tags.
 
-Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. Dit is een meer intuïtieve ervaring.
+Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. De ervaring is nu intuïtiever.
 Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe u slimme tags aan elementen](/help/assets/smart-tags.md) kunt toevoegen en slimme tags kunt [configureren](/help/assets/smart-tags-configuration.md).
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen 3D-bestanden nu opslaan en gebruiken in AEM Assets. De gebruiker kan, een voorproef, en hefboomwerking een verscheidenheid van kern 3D dossiers, met inbegrip van .obj, .stl, .gltf, en .glb dossiers uploaden. Met de toevoeging van [!DNL Dynamic Media], kunnen 3D ervaringen worden gevormd en via agnostische URLs of kijkers worden geleverd. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen 3D-bestanden nu opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met toevoeging van [!DNL Dynamic Media], kunt u 3D ervaringen vormen en leveren gebruikend agnostische URLs of kijkers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Ondersteuning voor Adobe Asset Link voor Adobe XD**
 
-Met de nieuwste release [!DNL Experience Manager Assets] biedt u ondersteuning voor een nieuwe [!DNL Adobe Asset Link] plug-in die wordt losgelaten met [!DNL Adobe XD] versie 29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen en kunnen ze deze gebruiken vanuit [!DNL Experience Manager] hun ontwerpen, zonder dat ze de [!DNL Adobe XD] toepassing hoeven te verlaten. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Met de nieuwste release [!DNL Experience Manager Assets] wordt een nieuwe [!DNL Adobe Asset Link] plug-in ondersteund die wordt uitgebracht met [!DNL Adobe XD] versie 29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen en kunnen ze deze gebruiken vanuit [!DNL Experience Manager] hun ontwerpen, zonder dat ze de [!DNL Adobe XD] toepassing hoeven te verlaten. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] een groot aantal Creative Cloud-bureaubladtoepassingen, zoals [!DNL Adobe Asset Link] , [!DNL Adobe XD], [!DNL Photoshop]en [!DNL Illustrator][!DNL InDesign].
 
@@ -128,17 +128,17 @@ Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middele
 
 De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegankelijk met een toetsenbord en hebben een beter contrast. Hieronder vindt u een gedetailleerde lijst met verbeteringen:
 
-* De [!UICONTROL Options]-, [!UICONTROL Scope]- en [!UICONTROL Workflows] voortgangsindicatoren op de [!UICONTROL Manage Publication] pagina worden door de schermlezer niet gelezen als voortgangsindicatoren. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
+* De [!UICONTROL Options], [!UICONTROL Scope]en [!UICONTROL Workflows] voortgangsbalken op de [!UICONTROL Manage Publication] pagina worden niet door de schermlezer gelezen als voortgangsbalk. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
 
 * Wanneer gebruikers tags aan [!UICONTROL Properties] pagina&#39;s van een element toevoegen, bladeren ze door een boomstructuur met codes. De structuur van de structuur is niet toegankelijk omdat gebruikers van schermlezers tijdens het navigeren niets horen. (CQ-4272964)
 
 * In het dialoogvenster voor het delen van koppelingen navigeert de schermlezer in de bladermodus,
 
-   * De tabelgegevens worden van commentaar voorzien zodra het dialoogvenster wordt geladen.
-   * kan niet naar alle vermelde automatische suggesties navigeren.
-   * maakt geen commentaar op de weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak. (CQ-4294232)
+   * Hiermee worden de tabelgegevens meteen vermeld wanneer het dialoogvenster wordt geladen.
+   * Kan niet naar alle vermelde automatische suggesties navigeren.
+   * De weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak worden niet van commentaar voorzien. (CQ-4294232)
 
-* De [!UICONTROL Metadata Schema Editor] pagina en de bijbehorende elementen zijn nu toegankelijk en schermlezervriendelijk. U kunt de opties gebruiken met een toetsenbord. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
+* De [!UICONTROL Metadata Schema Editor] pagina en de bijbehorende elementen zijn nu toegankelijk met een toetsenbord en zijn schermlezervriendelijk. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
 
 * In de gebruikersinterface Middelen zijn de weergave-instellingen niet toegankelijk via het toetsenbord. (CQ-4289038)
 
@@ -146,17 +146,17 @@ De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegan
 
 * De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenbeoordelingspictogrammen in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] [!UICONTROL Properties] tabblad in een element en in de kaartweergave wordt bijvoorbeeld gewijzigd voor het juiste contrast. (CQ-4295/106)
 
-* In het keuzemenu met keuzelijsten met invoervak (in verschillende velden op verschillende pagina&#39;s) worden nu items weergegeven als een lijst met opties die door schermlezers kunnen worden aangekondigd. (CQ-4294/017)
+* De schermlezers kunnen nu de items in het pop-upmenu met keuzelijsten met invoervak (in verschillende velden op verschillende pagina&#39;s) lezen als een lijst met opties. (CQ-4294/017)
 
 * Als u een workflow op een element wilt toepassen, [!UICONTROL Timeline] kunt u de chevron-pijl in het element openen met een toetsenbord. (CQ-4289268)
 
-* Gebruikers kunnen geselecteerde tags in het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element verwijderen met behulp van `x` symbolen. Het doel wordt nu door schermlezers bekendgemaakt samen met het aantal geselecteerde tags (CQ-4273033).
+* Gebruikers kunnen geselecteerde tags in het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element verwijderen met behulp van `x` symbolen. De schermlezers geven nu het doel en het aantal geselecteerde labels aan (CQ-4273033).
 
 * De formuliervelden alleen-lezen kunnen worden gebruikt met een toetsenbord. De uitgeschakelde velden op het [!UICONTROL Basic] tabblad op de [!UICONTROL Properties] pagina van een element. (CQ-4273031)
 
 * Open nu met een toetsenbord de opties voor het filteren van elementen in de linkerzijbalk. (CQ-4273/018)
 
-* Het doel van verschillende keuzelijstelelementen, zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element, worden nu correct door schermlezers aangekondigd. (CQ-4273/016)
+* De schermlezer kondigt het doel aan van verschillende keuzelijstelementen, zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element. (CQ-4273/016)
 
 * De volumeregelaars voor video&#39;s zijn toegankelijk via een toetsenbord. (CQ-4272696)
 
@@ -172,7 +172,7 @@ De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegan
 
 **Andere verbeteringen**
 
-De release biedt de volgende aanvullende verbeteringen:
+De release biedt de volgende andere verbeteringen:
 
 * Mogelijkheid om elementen opnieuw te verwerken met profielen voor middelenverwerking, zodat gebruikers volledige controle hebben over het proces (volledige verwerking van bedrijfsmiddelen uitvoeren, gewoon een specifiek verwerkingsprofiel toepassen en beslissen of de naverwerkingsworkflow moet worden uitgevoerd).
 * Zoekopdrachten retourneren nu sneller resultaten wanneer de onderliggende clusterinstantie achter de schermen opnieuw is gestart (de eerste zoekopdracht kan in een dergelijk geval langer duren).
@@ -191,7 +191,7 @@ Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volg
 
 * Voor MP3-muziekbestanden werkt de afspeelknop die op de miniatuur in de DAM-voorvertoning wordt weergegeven, niet. (CQ-4294731)
 * Als u de aanwijzer op de kaartweergave plaatst, schuift het scherm als gevolg van (automatische) focus op de snelle acties die beschikbaar zijn op de kaart. (GRANITE-26895)
-* Als u te veel afbeeldingen weergeeft nadat u door een groot aantal zoekresultaten hebt geschoven, loopt de browser vast. (GRANITE-26432)
+* Als u te veel afbeeldingen weergeeft nadat u door veel zoekresultaten hebt geschoven, loopt de browser vast. (GRANITE-26432)
 * Als bij het downloaden van middelen de optie E-mail is geselecteerd en zelfs als een geldige e-mailadres is opgegeven, is de optie Downloaden niet beschikbaar. (CQ-4296535)
 * Aangepaste filters die zijn opgeslagen als slimme verzamelingen, worden niet correct toegepast op elementen. (CQ-4294942)
 * De veelvoudige onderzoek en indexerende verhogingen en insectenmoeilijke situaties om prestaties te verbeteren. (CQ-4286373)
