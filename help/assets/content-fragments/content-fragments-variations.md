@@ -2,9 +2,9 @@
 title: Variaties - Authoring van content voor fragmenten
 description: Met behulp van variaties kunt u inhoud voor het fragment ontwerpen en vervolgens variaties van die inhoud maken op basis van het doel (indien nodig).
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 15%
 
 ---
@@ -50,12 +50,6 @@ Wanneer u het inhoudsfragment opent voor bewerking, is het tabblad **Variaties**
    * toegang tot een reeks [acties](#actions)
 
 Bijvoorbeeld:
-
-* Een eenvoudig fragment bewerken
-
-   Een eenvoudig fragment bestaat uit één tekstveld met meerdere regels (visuele elementen kunnen worden toegevoegd vanuit de volledige-schermeditor).
-
-   ![eenvoudig fragment](assets/cfm-variations-01.png)
 
 * Een fragment met gestructureerde inhoud bewerken
 
