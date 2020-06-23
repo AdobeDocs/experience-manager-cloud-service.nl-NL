@@ -2,10 +2,10 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 99%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 + Assets configureren, beheren en uitbreiden {#admin}
    + [API&#39;s en referentiemateriaal](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
-   + [Profielen verwerken](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Werken met afbeeldingsprofielen en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Slimme tags configureren](smart-tags-configuration.md)
    + [Meertalige assets en de vertaling van assets](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 99%
    + [Voorinstellingen voor Dynamic Media-viewer toepassen](dynamic-media/viewer-presets.md)
    + [Voorinstellingen voor Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
    + [Voorinstellingen voor Dynamic Media-afbeelding toepassen](dynamic-media/image-presets.md)
-   + [Dynamic Media-videoprofielen](dynamic-media/video-profiles.md)
-   + [Dynamic Media-afbeeldingsprofielen](dynamic-media/image-profiles.md)
+   + [Afbeeldingsprofielen](dynamic-media/image-profiles.md)
+   + [Videoprofielen](dynamic-media/video-profiles.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Dynamic Media-assets leveren](dynamic-media/delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](dynamic-media/hotlink-protection.md)
