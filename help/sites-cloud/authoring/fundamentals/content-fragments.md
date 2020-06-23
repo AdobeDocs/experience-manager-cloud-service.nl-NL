@@ -1,10 +1,10 @@
 ---
 title: Contentfragmenten
-description: Met Adobe Experience Manager kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+description: Met Adobe Experience Managers als Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1127'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Contentfragmenten {#content-fragments}
 
-Inhoudsfragmenten in Adobe Experience Manager (AEM) als cloudservice worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md).
+Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md).
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
@@ -70,8 +70,8 @@ Met de inhoudsfragmenten kunt u:
    >
    >Zie ook voor meer informatie over de verdere bewerkingsfunctionaliteit:
    >
-   >    * [Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Paginacontent bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Paginacontent bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
@@ -86,20 +86,18 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * **Element voor één tekst**
    * **Meerdere elementen**
 * **Element**
-   * The default **Main** will always be available.
-   * Er is een selectie beschikbaar als het fragment met een geschikte sjabloon is gemaakt.
+   * Afhankelijk van het gebruikte model is een selectie beschikbaar.
    >[!NOTE]
    >
-   >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
+   >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
 
 * **Variatie**
    * De standaard **master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
-* **Alinea**&#39;s: het bereik van de alinea(&#39;s) specificeren dat moet worden opgenomen:
-   * **Alles**
-   * **Bereik**: bijvoorbeeld, `1`, `3-5``9-*`
-      * **Koppen als eigen alinea&#39;s verwerken**
-* **Koppen als eigen alinea&#39;s verwerken**
+
+* **ID**
+
+   * **HTML ID** -kenmerk dat op de component moet worden toegepast.
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
