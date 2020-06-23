@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1538'
 ht-degree: 6%
 
 ---
@@ -39,6 +39,10 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 * **Verbergen in navigatie**
 
    * Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
+
+* **HTML-id**
+
+   * HTML-id die op de component moet worden toegepast.
 
 * **Paginatitel**
 
@@ -97,6 +101,10 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
 
+* **Ontwerp**
+
+   * Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
+
 * **Alias**
 
    * Geef een alias op die voor deze pagina moet worden gebruikt.
@@ -112,9 +120,11 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Overgenomen van &lt;*path*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Geeft aan of de pagina wordt overgeërfd. en waar van.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Cloud Configuration**
 
@@ -172,7 +182,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Configuraties van Cloud Servicen**
 
    * Eigenschappen definiëren voor cloudservices.
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
