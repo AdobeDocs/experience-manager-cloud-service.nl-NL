@@ -2,9 +2,9 @@
 title: Quickviews gebruiken om aangepaste pop-ups te maken
 description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,9 +129,9 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
    Ga als volgt te werk voor meer informatie over `quickViewActivate` methoden:
 
-   * Interactieve afbeeldingsviewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * Interactieve videoviewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * Interactieve gegevensondersteuning in de interactieve videoviewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * Interactieve afbeeldingsviewer - [Gebeurteniscallbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Interactieve videoviewer - [Gebeurteniscallbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Interactieve gegevensondersteuning in de interactieve videoviewer - [Interactieve gegevensondersteuning](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Ga als volgt te werk:
 
@@ -207,8 +207,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
    Ga als volgt te werk voor meer informatie over `init()` methoden:
 
-   * Interactieve afbeeldingsviewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * Interactieve videoviewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * Interactieve afbeeldingsviewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Interactieve videoviewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Gebruik de volgende code om het pop-up-beschreven in de vorige stappen-aan de kijker vast te maken:
 
