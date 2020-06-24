@@ -2,9 +2,9 @@
 title: Video
 description: Leer hoe u met video werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '9783'
+source-wordcount: '9760'
 ht-degree: 9%
 
 ---
@@ -125,7 +125,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -144,7 +144,7 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web, naar desktops en mobiele apparaten, waaronder de iPhone, iPad, Android, Blackberry en Windows-telefoon.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie de Gids [van de Verwijzing van](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html)Kijkers Scene7.
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie de Gids [van de Verwijzing van](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Kijkers Scene7.
 
 Dynamic Media ondersteunen het afspelen van mobiele video voor MP4 H.264-video. U vindt Blackberry-apparaten die deze video-indeling ondersteunen op de volgende locatie: [Ondersteunde video-indelingen op Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -160,7 +160,7 @@ U kunt de apparaten van Vensters vinden die dit videoformaat bij het volgende st
 
 Zie [Dynamisch voorbeeld van afspelen](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) van video.
 
-Zie ook [Viewers voor AEM en Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) en [Viewers voor activa AEM slechts](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) in de Gids van de Verwijzing van de Kijkers van Adobe Scene7.
+Zie ook [Viewers voor AEM en Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) en [Viewers voor activa AEM slechts](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in de Gids van de Verwijzing van de Kijkers van Adobe Scene7.
 
 ## Beste praktijken: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
@@ -172,7 +172,7 @@ Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de br
 
 Door de combinatie in één speler van de capaciteit om de playbackcomponenten te ontwerpen gebruikend HTML5 en CSS, ingebedde playback te hebben, en adaptieve en progressieve het stromen te gebruiken afhankelijk van het vermogen van browser, breidt u het bereik van uw rijke media inhoud tot zowel Desktop als mobiele gebruikers uit en verzekert een gestroomlijnde videoervaring.
 
-Zie ook [Informatie over HTML5 Viewers](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) in de Adobe Scene7 Viewer Reference Guide.
+Zie ook [Informatie over HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in de Adobe Scene7 Viewer Reference Guide.
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -369,7 +369,7 @@ Over het algemeen geldt dat hoe hoger de gegevenssnelheid, hoe beter uw video er
 Omdat de resolutie en de gegevenssnelheid zijn gekoppeld, hebt u twee opties bij het coderen van video:
 
 * Kies een gegevenssnelheid en codeer vervolgens met de hoogste resolutie die er goed uitziet in de gekozen gegevenssnelheid.
-* Kies een resolutie en codeer met de gegevenssnelheid die nodig is voor video van hoge kwaliteit bij de gekozen resolutie.
+* Kies een resolutie en codeer met de gegevenssnelheid die nodig is voor video van hoge kwaliteit met de gekozen resolutie.
 
 Wanneer u een voorinstelling voor videocodering kiest (of maakt) voor uw primaire bronvideobestand, gebruikt u deze tabel om de juiste resolutie in te stellen:
 
@@ -1000,7 +1000,7 @@ Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstre
 
 Gebruik de Verwijzing van Kijkers Scene7 en Scene7 HTML5 Viewers SDK om uw eigen videokijkers tot stand te brengen.
 
-Zie de Gids [van de Verwijzing van](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)Kijkers Scene7.
+Zie de Gids [van de Verwijzing van](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Kijkers Scene7.
 
 <!-- 
 
@@ -1073,7 +1073,7 @@ Ondertiteling maakt ook een betere toegankelijkheid mogelijk door ondertiteling 
 
 Dynamic Media kunnen bijschriftbestanden omzetten in de indeling JSON (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [Het dienen van statische (niet-beeld) inhoud](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) in het Beeld *Scene7 die API Hulp* voor meer informatie over het gebruiken van de functie JSON in een URL dienen.
+Zie [Het dienen van statische (niet-beeld) inhoud](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) in het Beeld *Scene7 die API Hulp* voor meer informatie over het gebruiken van de functie JSON in een URL dienen.
 
 **Bijschriften of ondertitels toevoegen aan video**
 
@@ -1179,7 +1179,7 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://dev.w3.org/html5/webvtt/)
        <li>Klik of tik op <strong>Viewers</strong>in het keuzemenu.</li>
        <li>Tik of klik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
        <li>Klik op <strong>URL</strong>in het linkerspoor onderaan.</li>
-       <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li>
+       <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li>
        <li>Voeg de gekopieerde URL van de video toe aan de volgende syntaxis om deze te koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
