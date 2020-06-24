@@ -1,8 +1,8 @@
 ---
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
-description: Leer beste praktijken voor het optimaliseren van beeldkwaliteit in Dynamische Media
+description: Leer de beste werkwijzen voor het optimaliseren van de beeldkwaliteit in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 5%
@@ -14,12 +14,12 @@ ht-degree: 5%
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
-AEM bevat meer dan 100 opdrachten voor het leveren van dynamische media-afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
+AEM bevat meer dan 100 Dynamic Media opdrachten voor het leveren van afbeeldingen voor het afstemmen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
 
 ## Aanbevolen werkwijzen voor afbeeldingsindeling (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG of PNG zijn de beste keuze om afbeeldingen van goede kwaliteit en met beheerbare grootte en gewicht te leveren.
-* Als er geen indelingsopdracht in de URL is opgegeven, wordt bij Dynamische aflevering van mediaafbeelding standaard JPG gebruikt voor levering.
+* Als er geen indelingsopdracht in de URL is opgegeven, wordt bij Aflevering Dynamic Media standaard JPG gebruikt voor levering.
 * JPG wordt met een verhouding van 10:1 gecomprimeerd en levert doorgaans kleinere afbeeldingsbestanden op. PNG wordt gecomprimeerd met een verhouding van ongeveer 2:1, behalve in sommige gevallen, bijvoorbeeld wanneer afbeeldingen een witte achtergrond bevatten. PNG-bestanden zijn doorgaans echter groter dan JPG-bestanden.
 * JPG maakt gebruik van compressie met verlies. Dit betekent dat afbeeldingselementen (pixels) tijdens compressie verloren gaan. PNG gebruikt daarentegen compressie zonder verlies.
 * In JPG worden foto&#39;s vaak gecomprimeerd met een hogere kwaliteit dan in synthetische afbeeldingen met scherpe randen en contrast.
@@ -65,7 +65,7 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
       Help-onderwerp over het verscherpen van een afbeelding in AEM.
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System en op Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System en on Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * Met AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
@@ -118,6 +118,6 @@ Als de verscherpingsresultaten nog steeds niet bevredigend zijn, vergroot u de s
 Tijdens het experimenteren kunt u ook de volgende algemene suggesties gebruiken om uw workflow te optimaliseren:
 
 * Probeer uit en test verschillende parameters in echt - tijd, of direct op een URL of gebruikend de het Publiceren Scene7 functionaliteit van het Systeem van het Beeldaanpassing die voorproeven in real time voor aanpassingsverrichtingen verstrekt.
-* Houd er rekening mee dat u de opdrachten Dynamische mediabeeldverwerking in een voorinstelling kunt groeperen. Een voorinstelling voor afbeeldingen is in feite URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$`. De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
+* Houd er rekening mee dat u de opdrachten voor het leveren van Dynamic Media-afbeeldingen kunt groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor afbeeldingen is in feite URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$`. De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
 * AEM biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerde gebruiksgevallen waarin dit een optie kan zijn om de renderresultaten verder te perfectioneren en te optimaliseren, kan [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) u helpen met aangepaste inzichten en aanbevolen procedures.
 
