@@ -2,9 +2,9 @@
 title: Een AEM-connector verzenden
 description: Een AEM-connector verzenden
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '262'
 ht-degree: 12%
 
 ---
@@ -15,9 +15,9 @@ Een AEM-connector verzenden
 
 Hieronder vindt u nuttige informatie over het verzenden van AEM-connectors. U dient deze informatie te lezen in combinatie met artikelen over het [implementeren](implement.md) en [onderhouden](maintain.md) van connectors.
 
-AEM-connectors worden vermeld op de [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html).
+AEM-connectors worden vermeld op de [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-In vorige AEM-oplossingen werd Package Manager gebruikt om connectors op verschillende AEM-instanties te installeren. Met AEM als Cloud Service worden connectors echter geïmplementeerd tijdens het CI-/CD-proces in Cloud Manager. Opdat de schakelaars worden opgesteld, moeten de schakelaars in pom.xml van het bepaalde project van verwijzingen worden voorzien.
+In vorige AEM-oplossingen werd Package Manager gebruikt om connectors op verschillende AEM-instanties te installeren. Met AEM als Cloud Service worden connectors echter geïmplementeerd tijdens het CI/CD-proces in Cloud Manager. Opdat de schakelaars worden opgesteld, moeten de schakelaars in pom.xml van het bepaalde project van verwijzingen worden voorzien.
 
 Er zijn verschillende opties voor het opnemen van pakketten in een project:
 
