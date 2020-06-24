@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak afbeeldingsprofielen met Dynamic Media die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten en pas het profiel vervolgens toe op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2647'
 ht-degree: 8%
 
 ---
@@ -93,7 +93,7 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
  </tbody>
 </table>
 
-Verscherpen wordt beschreven in [Verscherpen van afbeeldingen](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf.
+Verscherpen wordt beschreven in Afbeeldingen [verscherpen.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
