@@ -3,7 +3,7 @@ title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als C
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 5%
@@ -87,11 +87,11 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met LAB-kleurruimte.
 
-## Ondersteunde 3D-indelingen {#support-3d-formats}
+## 3D-indelingen {#support-3d-formats}
 
 De volgende lijst met 3D-indelingen wordt ondersteund.
 
-Zie [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Levering Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
