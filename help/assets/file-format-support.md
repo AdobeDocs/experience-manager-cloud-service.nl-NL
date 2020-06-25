@@ -1,11 +1,11 @@
 ---
 title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund
-description: Bestandsindelingen en MIME-typen die door Experience Manager Assets worden ondersteund als Cloud Service.
+description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '810'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, upload en download, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. Adobe Experience Manager Assets ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
+Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. Adobe Experience Manager Assets ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
 Daarnaast biedt Experience Manager Assets uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
 
@@ -86,6 +86,21 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 * PSD-bestanden met een bitdiepte groter dan 16.
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met LAB-kleurruimte.
+
+## Ondersteunde 3D-indelingen {#support-3d-formats}
+
+De volgende lijst met 3D-indelingen wordt ondersteund.
+
+Zie [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Levering Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] formaten {#camera-raw-formats}
 
@@ -203,7 +218,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-Middelen als Cloud Service bieden ondersteuning voor het ophalen van XMP-metagegevens voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+Middelen als Cloud Service bieden ondersteuning voor het ophalen van XMP-metagegevens voor de audio-indelingen AIF, ASF, M4A, MP3, WAV en WMA.
 
 >[!MORELIKETHIS]
 >
