@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 0%
+source-wordcount: '1786'
+ht-degree: 1%
 
 ---
 
@@ -26,21 +26,13 @@ De basisonderdelen [van een inhoudsfragment](/help/assets/content-fragments/cont
 * bestaande uit een of meer *inhoudselementen*,
 * en die een of meer *inhoudvariaties* kunnen hebben.
 
-Afhankelijk van het type fragment worden ook modellen of de sjabloon **Eenvoudig fragment** gebruikt:
+De afzonderlijke inhoudsfragmenten zijn gebaseerd op modellen van inhoudsfragmenten:
 
->[!CAUTION]
->
->[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
->
->Inhoudsfragmentmodellen worden voor alle voorbeelden in WKND gebruikt.
+* Inhoudsfragmentmodellen definiëren de structuur van een inhoudsfragment wanneer dit wordt gemaakt.
+* Een fragment verwijst naar het model; wijzigingen in het model kunnen/zullen dus gevolgen hebben voor afhankelijke fragmenten.
+* Modellen zijn samengesteld uit gegevenstypen.
+* Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
 
-* Modellen van contentfragmenten:
-
-   * Wordt gebruikt voor het definiëren van inhoudsfragmenten die gestructureerde inhoud bevatten.
-   * Inhoudsfragmentmodellen definiëren de structuur van een inhoudsfragment wanneer dit wordt gemaakt.
-   * Een fragment verwijst naar het model; wijzigingen in het model kunnen/zullen dus gevolgen hebben voor afhankelijke fragmenten.
-   * Modellen zijn samengesteld uit gegevenstypen.
-   * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
    >[!NOTE]
    >
    >Als u een inhoudsfragment wilt weergeven/renderen, moet uw account `read` machtigingen voor het model hebben.
@@ -48,20 +40,6 @@ Afhankelijk van het type fragment worden ook modellen of de sjabloon **Eenvoudig
    >[!CAUTION]
    >
    >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
-
-* Sjabloon voor inhoudsfragment - **Eenvoudig fragment**:
-
-   * Wordt gebruikt voor het definiëren van eenvoudige inhoudsfragmenten.
-
-   * Deze sjabloon definieert de (basis, alleen-tekst) structuur van een inhoudsfragment wanneer het wordt gemaakt.
-
-   * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt.
-
-   * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
-
-   * De sjabloon voor het inhoudsfragment (**eenvoudig fragment**) werkt op een andere manier dan andere sjablonen in het AEM-ecosysteem (bijvoorbeeld paginasjablonen, enz.). Daarom moet deze afzonderlijk worden beschouwd.
-
-   * Wanneer gebaseerd op het **Eenvoudige malplaatje van het Fragment** wordt het MIME type van de inhoud beheerd op de daadwerkelijke inhoud; dit betekent dat elk element en elke variatie een ander MIME-type kunnen hebben.
 
 ### Integratie van sites met middelen {#integration-of-sites-with-assets}
 
@@ -75,11 +53,11 @@ Inhoudsfragmenten worden als volgt beschouwd als een functie Sites:
 
 * Deze worden gebruikt bij het ontwerpen van uw pagina&#39;s.
 
-#### Gestructureerde inhoudsfragmenten toewijzen aan elementen {#mapping-structured-content-fragments-to-assets}
+#### Inhoudsfragmenten toewijzen aan elementen {#mapping-content-fragments-to-assets}
 
-![inhoudsfragment naar gestructureerde elementen](assets/content-fragment-to-assets-structured.png)
+![inhoudsfragment naar elementen](assets/content-fragment-to-assets.png)
 
-Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfragmentmodel) worden toegewezen aan één element:
+Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan één element:
 
 * Alle inhoud wordt opgeslagen onder het `jcr:content/data` knooppunt van het element:
 
@@ -93,22 +71,6 @@ bijv. `jcr:content/data/myvariation`
 De inhoud van het element `text` wordt bijvoorbeeld opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
 * Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`Met uitzondering van de titel en beschrijving, die niet als traditionele metagegevens worden beschouwd en die worden opgeslagen op `jcr:content`
-
-#### Eenvoudige inhoudsfragmenten toewijzen aan elementen {#mapping-simple-content-fragments-to-assets}
-
-![inhoudsfragment naar elementen eenvoudig](assets/content-fragment-to-assets-simple.png)
-
-Eenvoudige inhoudsfragmenten (gebaseerd op de sjabloon **Eenvoudig fragment** ) worden toegewezen aan een samenstelling die bestaat uit een hoofdelement en (optionele) subelementen:
-
-* Alle niet-inhoudinformatie van een fragment (zoals titel, beschrijving, metagegevens, structuur) wordt uitsluitend beheerd op het hoofdelement.
-* De inhoud van het eerste element van een fragment wordt toegewezen aan de oorspronkelijke uitvoering van het hoofdelement.
-
-   * De variaties (indien aanwezig) van het eerste element worden toegewezen aan andere uitvoeringen van het hoofdelement.
-
-* Aanvullende elementen (indien aanwezig) worden toegewezen aan subactiva van het hoofdactief.
-
-   * De belangrijkste inhoud van deze aanvullende elementen is gekoppeld aan de oorspronkelijke uitvoering van het respectieve subactief.
-   * Andere variaties (indien van toepassing) van eventuele aanvullende elementen die zijn toegewezen aan andere uitvoeringen van het desbetreffende subactief.
 
 #### Locatie van element {#asset-location}
 
@@ -158,11 +120,9 @@ Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 >
 >**Inhoudsfragmentmodel:**
 >
->Wanneer u een inhoudsfragment gebruikt dat is gebaseerd op een inhoudsfragmentmodel op een pagina, wordt naar het model verwezen. Dit betekent dat als het model niet is gepubliceerd op het moment dat u de pagina publiceert, dit wordt gemarkeerd en het model wordt toegevoegd aan de bronnen die met de pagina moeten worden gepubliceerd.
+>Wanneer een inhoudsfragment op een pagina wordt gebruikt, wordt verwezen naar het model van het inhoudsfragment waarop het is gebaseerd.
 >
->**Sjabloon voor inhoudsfragment - Eenvoudig fragment:**
->
->Wanneer u een inhoudsfragment gebruikt dat is gebaseerd op de sjabloon **Eenvoudig fragment** van het inhoudsfragment op een pagina, is er geen verwijzing omdat de sjabloon is gekopieerd bij het maken van het fragment.
+>Dit betekent dat als het model niet is gepubliceerd op het moment dat u de pagina publiceert, dit wordt gemarkeerd en het model wordt toegevoegd aan de bronnen die met de pagina moeten worden gepubliceerd.
 
 ### Integratie met andere frameworks {#integration-with-other-frameworks}
 
@@ -237,7 +197,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Lijstverzamelingen
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
-   * Open het model of de sjabloon van het fragment
+   * Toegang krijgen tot het model van het fragment
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
    * **Content Element** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -350,13 +310,13 @@ if (fragmentResource != null) {
 
 ### Voorbeeld: Een nieuw inhoudsfragment maken {#example-creating-a-new-content-fragment}
 
-Als u programmatisch een nieuw inhoudsfragment wilt maken, moet u een`FragmentTemplate` aangepast fragment gebruiken op basis van een model of sjabloonbron.
+Als u programmatisch een nieuw inhoudsfragment wilt maken, moet u een`FragmentTemplate` aangepast fragment gebruiken op basis van een modelbron.
 
 Bijvoorbeeld:
 
 ```java
-Resource templateOrModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+Resource ModelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
