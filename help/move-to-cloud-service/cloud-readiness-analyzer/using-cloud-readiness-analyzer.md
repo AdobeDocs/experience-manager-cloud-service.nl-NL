@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,12 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 * Het CRA-rapport wordt samengesteld met behulp van de uitvoer van de [Patroondetector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)van de Adobe Experience Manager (AEM). De versie van Patroondetector die door CRA wordt gebruikt, is opgenomen in het installatiepakket van CRA.
 
-* CRA kan slechts door de **admin** gebruiker of een gebruiker in de groep van **Beheerders** worden in werking gesteld.
+* CRA kan alleen worden uitgevoerd door de **beheerder** of een gebruiker in de **beheerdersgroep** .
 
 * CRA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
+
+   >[!NOTE]
+   > Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale vereisten voor de installatie van CRA op AEM 6.1.
 
 * CRA kan op om het even welke milieu lopen, maar het verkiest om het op een milieu van het *Stadium* te laten lopen.
 
@@ -33,7 +36,7 @@ Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen
 
 ## Beschikbaarheid {#availability}
 
-De Cloud Readiness Analyzer kan als zip- dossier van het Portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+De Cloud Readiness Analyzer kan als zip- dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
 >Download de Cloud Readiness Analyzer van het portaal van de Distributie van de [Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) .
@@ -169,7 +172,9 @@ De volgende responswaarden zijn mogelijk:
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in het formaat van de Details van het Probleem verstrekt meer details.
 * `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere reactie en dit verzoek niet tijdig kan uitvoeren. Dit zal alleen gebeuren wanneer synchrone verzoeken worden gedaan. Een bericht in het formaat van de Details van het Probleem verstrekt meer details.
 
-## Aanpassing van levensduur cache {#cache-adjustment}
+## Beheerdersgegevens
+
+### Aanpassing van levensduur cache {#cache-adjustment}
 
 De standaard CRA geheim voorgeheugenlevensduur is 24 uren. Met de optie om een rapport te verfrissen, en het geheime voorgeheugen, in zowel de instantie AEM als de interface van HTTP te regenereren, zal deze standaardwaarde waarschijnlijk voor de meeste toepassingen van CRA aangewezen zijn. Als de tijd van de rapportgeneratie voor uw instantie AEM bijzonder lang is, kunt u het geheim voorgeheugenleven willen aanpassen om de regeneratie van het rapport te minimaliseren.
 
@@ -178,7 +183,12 @@ De waarde van het geheim voorgeheugenleven wordt opgeslagen als `maxCacheAge` be
 
 De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan het geheim voorgeheugenleven aanpassen gebruikend CRX/DE Lite.
 
+### Installeren op AEM 6.1 {#installing-on-aem61}
 
+CRA gebruikt een gebruikersrekening van de systeemdienst genoemd `repository-reader-service` om de Detector van het Patroon uit te voeren. Deze account is beschikbaar op AEM 6.2 en hoger. In AEM 6.1 moet dit account worden aangemaakt *voordat* een CRA kan worden geïnstalleerd door de volgende stappen uit te voeren:
 
+1. Volg de instructies bij het [Creëren van een nieuwe de dienstgebruiker](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) om een gebruiker tot stand te brengen. Stel de gebruikersnaam in op `repository-reader-service` en laat het tijdelijke pad leeg en klik op het groene vinkje.
 
+2. Volg de instructies bij het [Leiden Gebruikers en Groepen](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifiek de instructies voor het Toevoegen van Gebruikers aan een Groep om de `repository-reader-service` gebruiker aan de `administrators` groep toe te voegen.
 
+3. Installeer het CRA-pakket via Package Manager op uw AEM-broninstantie. (Dit zal de noodzakelijke configuratiewijziging aan de configuratie ServiceUserMapper voor de gebruiker van de `repository-reader-service` systeemdienst toevoegen.)
