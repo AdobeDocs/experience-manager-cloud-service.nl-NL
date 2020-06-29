@@ -1,35 +1,45 @@
 ---
-title: Opmerkelijke wijzigingen in Adobe Experience Manager (AEM) als cloudservice
-description: Opmerkelijke wijzigingen in Adobe Experience Manager (AEM) als cloudservice
+title: Notable Wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
+description: Notable Wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 0%
+source-wordcount: '861'
+ht-degree: 6%
 
 ---
 
 
 # Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
-De AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM-sites op locatie of in de beheerde service van Adobe in vergelijking met de AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
+AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
 >[!NOTE]
->Dit document benadrukt de opmerkelijke veranderingen in AEM als geheel. Voor oplossing-specifieke veranderingen zie:
+>Dit document benadrukt de opmerkelijke veranderingen in AEM als geheel. Voor meer informatie en oplossingsspecifieke veranderingen zie:
 >
->* [Opvallende wijzigingen in AEM-sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Opvallende wijzigingen in AEM-middelen in AEM Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies
+>* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
+>* [Opvallende wijzigingen in AEM Sites als Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Opvallende wijzigingen in AEM Assets als Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [/apps en /libs zijn onveranderlijk bij runtime](#apps-libs-immutable)
+
 * [OSGi-bundels en -instellingen moeten zijn gebaseerd op gegevensopslagruimte](#osgi)
+
 * [Wijzigingen in publicatieruimte zijn niet toegestaan](#changes-to-publish-repo)
+
 * [Aangepaste runmodi zijn niet toegestaan](#custom-runmodes)
+
 * [Verwijderen van replicatieagents](#replication-agents)
+
 * [Verwijderen van klassieke gebruikersinterface](#classic-ui)
+
 * [Levering op de website publiceren](#publish-side-delivery)
+
 * [Afhandeling en levering van bedrijfsmiddelen](#asset-handling)
 
 ## /apps en /libs zijn onveranderlijk bij runtime {#apps-libs-immutable}
@@ -48,22 +58,22 @@ Alle inhoud en submappen in `/apps` en `/libs` zijn alleen-lezen. Om het even we
 
 ## OSGi-bundels en -instellingen moeten zijn gebaseerd op gegevensopslagruimte {#osgi}
 
-De webconsole, die in eerdere versies van AEM werd gebruikt om OSGi-instellingen te wijzigen, is niet beschikbaar in AEM Cloud Service. Daarom moeten wijzigingen in OSGi worden aangebracht via de CI/CD-pijplijn.
+De webconsole, die in eerdere versies van AEM werd gebruikt om OSGi-instellingen te wijzigen, is niet beschikbaar in AEM-Cloud Service. Daarom moeten wijzigingen in OSGi worden aangebracht via de CI/CD-pijplijn.
 
 * Wijzigingen in OSGi-instellingen kunnen alleen via Git-persistentie worden uitgevoerd als op JCR gebaseerde OSGi-instellingen.
 * Nieuwe of bijgewerkte OSGi-bundels moeten via Git worden geïntroduceerd als onderdeel van het aanlegproces van de CI/CD-pijplijn.
 
 ## Wijzigingen in publicatieruimte zijn niet toegestaan {#changes-to-publish-repo}
 
-Directe wijzigingen in de publicatieopslagplaats zijn niet toegestaan op AEM Cloud Service. In eerdere versies van AEM (on-premise) of AEM (on-premise) op AMS konden wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats, bijvoorbeeld om gebruikers te maken, gebruikersprofielen bij te werken en knooppunten te maken. Dit is niet meer mogelijk en kan op de volgende manieren worden beperkt:
+Directe wijzigingen in de publicatieopslagplaats zijn niet toegestaan op AEM-Cloud Service. In eerdere versies van AEM (on-premise) of AEM (on-premise) op AMS konden wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats, bijvoorbeeld om gebruikers te maken, gebruikersprofielen bij te werken en knooppunten te maken. Dit is niet meer mogelijk en kan op de volgende manieren worden beperkt:
 
 * Voor op inhoud en inhoud gebaseerde configuratie: Breng de wijzigingen aan in de auteurinstantie en publiceer deze.
 * Voor code en configuratie: de wijzigingen in de GIT-opslagplaats aan te brengen en de CI/CD-pijpleiding uit te voeren.
-* Voor gebruikersgerelateerde gegevens zoals formulierverzendingen of profielgegevens: gebruik de Unified Profile Service van Experience Cloud Platform of een andere sessie van derden.
+* Voor gebruikersgerelateerde gegevens zoals formulierverzendingen of profielgegevens: gebruik de Verenigde Dienst van het Profiel van het Platform van Experience Cloud of andere derde partij zitting bewuste opslag.
 
 ## Aangepaste runmodi zijn niet toegestaan {#custom-runmodes}
 
-De volgende runmodi zijn beschikbaar buiten de box voor AEM Cloud Service:
+De volgende runmodes worden verstrekt uit-van-de-doos voor Cloud Service AEM:
 
 * `author`
 * `publish`
@@ -77,11 +87,11 @@ De volgende runmodi zijn beschikbaar buiten de box voor AEM Cloud Service:
 * `author.dev`
 * `publish.dev`
 
-Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service.
+Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM-Cloud Service.
 
 ## Verwijderen van replicatieagents {#replication-agents}
 
-In AEM Cloud Service wordt inhoud gepubliceerd met behulp van [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande projecten zouden kunnen beïnvloeden AEM:
+In AEM Cloud Service, wordt de inhoud gepubliceerd gebruikend de Distributie van de Inhoud van de [Verkoop](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande projecten zouden kunnen beïnvloeden AEM:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten
@@ -93,13 +103,13 @@ De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
 ## Levering op de website publiceren {#publish-side-delivery}
 
-De versnelling van HTTP met inbegrip van CDN en het verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in de Dienst van de Wolk AEM.
+De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in Cloud Service AEM.
 
-Voor projectovergangen van AMS of een installatie op locatie raadt Adobe u ten zeerste aan de ingebouwde CDN te gebruiken, omdat de functies in de AEM Cloud Service zijn geoptimaliseerd voor de geleverde CDN.
+Voor project dat van AMS of een op-gebouw installatie overgaat adviseert Adobe sterk leveraging de ingebouwde CDN, omdat de eigenschappen binnen Cloud Service AEM voor CDN worden geoptimaliseerd verstrekt.
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van bedrijfsmiddelen is geoptimaliseerd in de AEM Cloud Service, zodat deze efficiënter kan worden geschaald en sneller kan worden geüpload en gedownload. Dit kan echter invloed hebben op sommige bestaande aangepaste code.
+Het uploaden, de verwerking en het downloaden van bedrijfsmiddelen zijn geoptimaliseerd in AEM Cloud Service om efficiënter te kunnen schalen en het uploaden en downloaden te versnellen. Dit kan echter invloed hebben op sommige bestaande aangepaste code.
 
 * De standaardworkflow **DAM Asset Update** in eerdere versies van AEM is niet meer beschikbaar.
 * De componenten van de website die een binair **zonder transformatie** leveren zouden directe download moeten gebruiken.
