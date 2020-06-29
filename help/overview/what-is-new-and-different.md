@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 100%
+source-wordcount: '1809'
+ht-degree: 97%
 
 ---
 
@@ -267,3 +267,15 @@ Adobe Experience Manager Assets as a Cloud Service biedt een in cloud-native Saa
 Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, en hoogkwalitatieve opname en zoekfunctie van assets.
 
 Zie [overzicht en inleiding tot Assets as a Cloud Service](/help/assets/overview.md) voor meer informatie.
+
+## Kennismaken met Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
+
+Zie voor meer informatie:
+
+* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
+* [Opvallende wijzigingen in AEM als Cloud Service (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Sites als Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Assets als Cloud Service](/help/assets/assets-cloud-changes.md)
+* [AEM Assets introduceren als Cloud Service](/help/assets/overview.md)
+* [Zelfstudies voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
