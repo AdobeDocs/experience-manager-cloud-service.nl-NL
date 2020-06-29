@@ -2,10 +2,10 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service
 description: 'Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 94%
 
 ---
 
@@ -76,6 +76,8 @@ AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne clou
 
 * [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies
 * De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
-* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Opvallende wijzigingen in AEM als Cloud Service (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Sites als Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Assets als Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Inleiding tot Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
