@@ -2,9 +2,9 @@
 title: Het gebruiken van de Verschuivende Fusie van het Middel in Adobe Experience Manager als Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 >
 >De Sling Resource Merger en verwante methodes kunnen slechts met [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)worden gebruikt. Dit betekent ook dat het alleen geschikt is voor de standaardinterface met aanraakbediening. met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing op het aanraakdialoogvenster van een component.
 >
->Bij overlays/overschrijvingen voor andere gebieden (waaronder andere aspecten van een aanraakcomponent of de klassieke UI) worden het juiste knooppunt en de juiste structuur van het origineel naar waar de aanpassing wordt gedefinieerd, gekopieerd.
+>Overlays/overschrijvingen voor andere gebieden (inclusief andere aspecten van een component met aanraakbediening) omvatten het kopiëren van het juiste knooppunt en de juiste structuur van het origineel naar de locatie waar de aanpassing wordt gedefinieerd.
 
 ### Doelen voor AEM {#goals-for-aem}
 
