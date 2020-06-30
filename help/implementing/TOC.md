@@ -2,10 +2,10 @@
 sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 88%
+source-wordcount: '231'
+ht-degree: 81%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 88%
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](developing/introduction/develop-wknd-tutorial.md)
+   + [Bedekkingen in AEM als Cloud Service](developing/introduction/overlays.md)
+   + [Het gebruiken van de Verschuivende Fusie van het Middel in AEM als Cloud Service](developing/introduction/sling-resource-merger.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
