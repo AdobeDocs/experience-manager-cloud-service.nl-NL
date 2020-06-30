@@ -2,9 +2,9 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 translation-type: tm+mt
-source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1329'
 ht-degree: 1%
 
 ---
@@ -116,10 +116,13 @@ De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor u
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
-Een component werkt alleen met het Stijlsysteem van AEM en geeft het stijltabblad weer in het ontwerpdialoogvenster, als de ontwikkelaar van de component het tabblad Stijl bevat met de volgende instellingen voor de component:
+Een component werkt alleen met het Stijlsysteem van AEM en toont het stijltabblad in het ontwerpdialoogvenster als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen in de component heeft opgenomen:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van de [Verschuivende Fusie](/help/implementing/developing/introduction/sling-resource-merger.md)van Middel.
 
 Met de gevormde component, zullen de stijlen die door de paginaauteurs worden gevormd automatisch door AEM op het decoratie element worden opgenomen dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
 
@@ -131,6 +134,9 @@ Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van de [Verschuivende Fusie](/help/implementing/developing/introduction/sling-resource-merger.md)van Middel.
 
 >[!NOTE]
 >
