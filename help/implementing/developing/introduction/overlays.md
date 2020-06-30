@@ -2,9 +2,9 @@
 title: Bedekkingen voor Adobe Experience Manager als Cloud Service
 description: AEM als Cloud Service gebruikt het principe van overlays zodat u consoles en andere functionaliteit kunt uitbreiden en aanpassen
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In een standaardinstantie wordt de vooraf gedefinieerde functionaliteit onder ge
 
       * Reconstrueer de juiste `/libs` structuur onder `/apps`.
 
-         Dit vereist geen 1:1 exemplaar, wordt de [Verschuivende Samenvoeging](/help/implementing/developing/introduction/sling-resource-merger.md) van het Middel gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen door (het differentiëren) mechanismen af te schilderen.
+         Dit vereist geen 1:1 exemplaar, aangezien de [Verschuivende Fusie](/help/implementing/developing/introduction/sling-resource-merger.md) van het Middel wordt gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen door (het differentiëren) mechanismen af te schilderen.
 
       * Breng eventuele wijzigingen aan onder `/apps`.
    * Voordelen
