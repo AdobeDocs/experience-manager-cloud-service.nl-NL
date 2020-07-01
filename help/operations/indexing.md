@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 2%
 
 ---
@@ -33,8 +33,6 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
 
 1. Op een hoog niveau voor AEM als Cloud Service, met de introductie van het [blauw-Groene plaatsingsmodel](#index-management-using-blue-green-deployments) zullen twee reeksen indexen bestaan: één set voor de oude versie (blauw) en één set voor de nieuwe versie (groen).
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
@@ -161,7 +159,9 @@ Als een index in een recentere versie van de toepassing moet worden verwijderd, 
 
 Als u een index met de naam &quot;/oak:index/acmeProduct-custom-1&quot; wilt toevoegen die moet worden gebruikt in een nieuwe versie van de toepassing en hoger, moet de index als volgt worden geconfigureerd:
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+Dit werkt door een aangepaste id vooraf op de indexnaam in te stellen, gevolgd door een punt (**.**). De id moet tussen 1 en 4 tekens lang zijn.
 
 Zoals hierboven, verzekert dit dat de index slechts door de nieuwe versie van de toepassing wordt gebruikt.
 
