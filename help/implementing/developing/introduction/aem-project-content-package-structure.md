@@ -2,10 +2,10 @@
 title: AEM-projectstructuur
 description: Leer over hoe te om pakketstructuren voor plaatsing aan de Cloud Service van de Adobe Experience Manager te bepalen.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 16%
+source-wordcount: '2530'
+ht-degree: 17%
 
 ---
 
@@ -59,13 +59,13 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + Het `ui.apps` pakket, of het Pakket van de Code, bevat alle code die moet worden opgesteld en slechts aan `/apps`opstelt. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
    + OSGi-bundels
       + `/apps/my-app/install`
-   + OSGi-configuraties
+   + [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + HTML-scripts
+   + [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) -scripts
       + `/apps/my-app/components`
    + JavaScript en CSS (via clientbibliotheken)
       + `/apps/my-app/clientlibs`
-   + Bedekkingen van /libs
+   + [Bedekkingen](/help/implementing/developing/introduction/overlays.md) van /libs
       + `/apps/cq`, `/apps/dam/`enz.
    + Contextbewuste configuraties voor alternatieven
       + `/apps/settings`
@@ -95,7 +95,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
    Pakketten worden nu opgenomen met behulp van de ingesloten configuratie [van de Maven](#embeddeds)FileVault-insteekmodule in plaats van de `<subPackages>` configuratie.
 
-   Voor complexe plaatsingen van de Manager van de Ervaring, kan het wenselijk zijn om veelvoudige `ui.apps` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
+   Voor complexe Experience Manager-implementaties kan het wenselijk zijn om meerdere `ui.apps` en `ui.content` projecten/pakketten te maken die specifieke sites of huurders in AEM vertegenwoordigen. Als dit gebeurt, moet u ervoor zorgen dat de splitsing tussen muteerbare en onveranderlijke inhoud wordt gerespecteerd en dat de vereiste inhoudspakketten als subpakketten worden toegevoegd in het inhoudspakket van de `all` container.
 
    Een complexe structuur voor het pakket met implementatieinhoud kan er bijvoorbeeld als volgt uitzien:
 
