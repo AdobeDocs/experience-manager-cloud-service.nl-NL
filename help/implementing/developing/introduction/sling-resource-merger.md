@@ -2,9 +2,9 @@
 title: Het gebruiken van de Verschuivende Fusie van het Middel in Adobe Experience Manager als Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)**van bronnen die de[geconfigureerde zoekpaden](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)gebruiken.
+* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)**van bronnen die gebruikmaken van de[zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
 
 * **Overschrijft** de componentdialoogvensters voor de interface met aanraakbediening (`cq:dialog`) met behulp van de hiërarchie van het middeltype (via de eigenschap `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 
 >[!CAUTION]
 >
->De Sling Resource Merger en verwante methodes kunnen slechts met [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)worden gebruikt. Dit betekent ook dat het alleen geschikt is voor de standaardinterface met aanraakbediening. met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing op het aanraakdialoogvenster van een component.
->
->Overlays/overschrijvingen voor andere gebieden (inclusief andere aspecten van een component met aanraakbediening) omvatten het kopiëren van het juiste knooppunt en de juiste structuur van het origineel naar de locatie waar de aanpassing wordt gedefinieerd.
+>De Sling Resource Merger en verwante methoden kunnen alleen worden gebruikt met de interface met aanraakbediening (de enige interface die beschikbaar is voor AEM als Cloud Service).
 
 ### Doelen voor AEM {#goals-for-aem}
 
@@ -43,26 +41,17 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 
    Wanneer het gebruiken van de Verzameling van het Middel wordt het niet geadviseerd om de volledige structuur van te kopiëren `/libs` aangezien dit in teveel informatie zou resulteren die in de aanpassing (gewoonlijk `/apps`) wordt gehouden. Het dupliceren van informatie vergroot onnodig de kans op problemen wanneer het systeem op om het even welke manier wordt verbeterd.
 
->[!NOTE]
->
->Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
->
->Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM aanpassingen onder `/apps`moeten bepalen; dat komt omdat je niets moet veranderen onder `/libs`.
-
 >[!CAUTION]
 >
 >U ***mag*** niets in het `/libs` pad wijzigen.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw exemplaar worden toegepast.
 >
->De aanbevolen methode voor configuratie en andere wijzigingen is:
->
->1. Het vereiste item opnieuw maken (d.w.z. zoals het in `/libs`) `/apps`
+>* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
    >
    >
-1. Breng wijzigingen aan in `/apps`
->
-
+* Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
+   >  Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
 
 
 ### Eigenschappen {#properties}
