@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service-sites
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Sites as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 72%
 
 ---
 
@@ -31,19 +31,21 @@ Deze pagina bevat zelfhulpbronnen over Sites in Experience Manager as a Cloud Se
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
+| [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Voor een overzicht van de Experience Manager als documentatie van de Cloud Service, begin hier. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
-| [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
+| [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager als Cloud Service, zoals nieuwe functies, vervangen en verwijderde functies en bekende problemen. |
 | [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
-| [On-boarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
-| [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service beheert. |
-| [Handboek voor implementatie](/help/implementing/home.md) | Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkelimplementatie. |
-| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u oplossingen integreert in Experience Manager as a Cloud Service. |
-| [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
+| [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
+| [Handboek voor Assets](/help/assets/home.md) | Begrijp hoe u Experience Manager Assets als Cloud Service gebruikt en beheert. |
+| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
+| [Handboek voor implementatie](/help/implementing/home.md) | Leer hoe u uw Experience Manager kunt aanpassen als implementatie van een Cloud Service, inclusief ontwikkelings- en implementatieonderwerpen. |
+| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u Connectors als Cloud Service kunt integreren in Experience Manager. |
+| [Handboek voor bewerkingen](/help/operations/home.md) | Meer informatie over de back-endbewerkingen van Experience Manager als Cloud Service, zoals indexering en onderhoudstaken. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
+* [Recente documentatieupdates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
