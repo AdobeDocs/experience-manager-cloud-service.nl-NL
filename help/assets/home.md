@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Assets as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 72%
 
 ---
 
@@ -24,18 +24,20 @@ Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a Cloud Serv
 | Handboek | Beschrijving |
 |---|---|
 | [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Volledige documentatie van Experience Manager as a Cloud Service. |
-| [Overzicht](/help/overview/home.md) | Inleidend overzicht en verklarende woordenlijst van Experience Manager as a Cloud Service. |
-| [Release-opmerkingen](/help/release-notes/home.md) | Release-opmerkingen, nieuwe functies, verouderde en verwijderde functies en bekende problemen. |
+| [Overzicht](/help/overview/home.md) | Inleiding tot overzicht, en verklarende woordenlijst, van Experience Manager als dienst van de Wolk. |
+| [Release-opmerkingen](/help/release-notes/home.md) | Opmerkingen bij de release, nieuwe functies, vervangen en verwijderde functies en de bekende problemen. |
 | [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
-| [Handboek voor beveiliging](/help/security/home.md) | Onderwerpen over beveiliging voor Experience Manager as a Cloud Service. |
-| [On-boarding](/help/onboarding/home.md) | Ga aan de slag met Experience Manager as a Cloud Service: krijg toegang tot en bescherm belangrijke data. |
-| [Handboek voor Sites](/help/sites-cloud/home.md) | Beheer Experience Manager Sites as a Cloud Service. |
+| [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
+| [Onboarding](/help/onboarding/home.md) | Ga aan de slag met Experience Manager als Cloud Service — krijg toegang en bescherm belangrijke gegevens. |
+| [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe u met Experience Manager Sites als Cloud Service kunt ontwerpen en beheren. |
+| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Experience Manager as a Cloud Service aanpassen, ontwikkelen en implementeren. |
-| [Handboek voor connectors](/help/connectors/home.md) | Oplossingen integreren met Experience Manager as a Cloud Service. |
-| [Handboek voor bewerkingen](/help/operations/home.md) | Back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
+| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u Connectors als Cloud Service kunt integreren in Experience Manager. |
+| [Handboek voor bewerkingen](/help/operations/home.md) | Meer informatie over de back-endbewerkingen van Experience Manager als Cloud Service, zoals indexering en onderhoudstaken. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
+* [Recente documentatieupdates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
