@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service-connector
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager as a Cloud Service-connector
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 68%
+source-wordcount: '379'
+ht-degree: 70%
 
 ---
 
@@ -34,7 +34,6 @@ Deze pagina bevat zelfhulpbronnen over connectors voor Experience Manager as a C
 | [Handboek voor Assets](/help/assets/home.md) | Begrijp hoe u Experience Manager Assets als Cloud Service gebruikt en beheert. |
 | [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Leer hoe u uw Experience Manager kunt aanpassen als implementatie van een Cloud Service, inclusief ontwikkelings- en implementatieonderwerpen. |
-| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u Connectors als Cloud Service kunt integreren in Experience Manager. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Meer informatie over de back-endbewerkingen van Experience Manager als Cloud Service, zoals indexering en onderhoudstaken. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
