@@ -1,36 +1,36 @@
 ---
-title: Overzicht van de Cloud Readiness Analyzer
-description: Overzicht van de Cloud Readiness Analyzer
-translation-type: tm+mt
+title: Overzicht van Cloud Readiness Analyzer
+description: Overzicht van Cloud Readiness Analyzer
+translation-type: ht
 source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Overzicht {#overview-cloud-readiness-analyzer}
 
-De Cloud Readiness Analyzer helpt de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van de Adobe Experience Manager (AEM) aan AEM als Cloud Service over te gaan.
+Met Cloud Readiness Analyzer kunt u nog sneller beoordelen of uw bedrijf gereed is voor de transitie van een bestaande Adobe Experience Manager (AEM) naar AEM as a Cloud Service.
 
-Dit hulpmiddel produceert een rapport dat gebieden van potentieel refactoring identificeert, die de eerste stap in de overgangsreis aan AEM als Cloud Service is.
+Deze tool produceert een rapport waarin aspecten voor mogelijke herstructurering worden geïdentificeerd. Dit is de eerste stap in het overgangstraject naar AEM as a Cloud Service.
 
-## Rapport Cloud Readiness Analyzer {#cra-report}
+## Cloud Readiness Analyzer-rapport {#cra-report}
 
-Met het Rapport Cloud Readiness Analyzer wordt op hoog niveau inzicht verkregen in de algemene gereedheid voor upgrades. Het verslag bestaat uit bevindingen binnen categorieën van kwesties die moeten worden aangepakt voordat een geslaagde implementatie bij AEM als Cloud Service kan plaatsvinden.
+Het Cloud Readiness Analyzer-rapport biedt inzicht op hoog niveau in de algemene gereedheid voor upgrades. Het rapport bestaat uit bevindingen binnen bepaalde categorieën met kwesties die moeten worden aangepakt voordat een geslaagde implementatie van AEM as a Cloud Service kan plaatsvinden.
 
-Het rapport Cloud Readiness Analyzer bevat de volgende categorieën:
+Het Cloud Readiness Analyzer-rapport bevat de volgende categorieën:
 
-* Toepassingsfunctionaliteit die moet worden vernieuwd
-* Items in opslagplaats die naar een ondersteunde locatie moeten worden verplaatst
+* Applicatiefunctionaliteit die moet worden geherstructureerd
+* Repository-items die naar een ondersteunde locatie moeten worden verplaatst
 * Dialoogvensters en componenten van de verouderde gebruikersinterface die moeten worden gemoderniseerd
 * Implementatie- en configuratieproblemen
-* AEM 6.x-functies die zijn vervangen door nieuwe functionaliteit of die momenteel niet worden ondersteund in AEM als Cloud Service
+* AEM 6.x-functies die zijn vervangen door nieuwe functionaliteit of die momenteel niet worden ondersteund op AEM as a Cloud Service
 
-Aanvullende informatie over de categorieën en mogelijke implicaties en oplossingen die aan deze categorieën zijn gekoppeld, vindt u via koppelingen vanuit het Rapport Cloud Readiness Analyzer.
+Aanvullende informatie over de categorieën en mogelijke implicaties en oplossingen die aan deze categorieën zijn gekoppeld, vindt u via koppelingen vanuit het Cloud Readiness Analyzer-rapport.
 
 >[!NOTE]
->Het Rapport van de Analysator van de Bereidheid van de Wolk versnelt het proces om de tijd en de kosten te schatten die worden vereist om naar AEM als Cloud Service over te gaan door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
+>Met het Cloud Readiness Analyzer-rapport kunt u sneller inschatten hoeveel tijd en geld is vereist om de overstap naar AEM as a Cloud Service te maken. Het rapport biedt informatie die normaal gesproken handmatig zou moeten worden verzameld en geëvalueerd.
 
-U kunt het rapport Cloud Readiness Analyzer ook downloaden van uw AEM-instantie. Raadpleeg [Het Rapport](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) van de Cloud Readiness Analyzer voor meer informatie.
+U kunt het Cloud Readiness Analyzer-rapport ook downloaden via uw AEM-instantie. Raadpleeg [Het Cloud Readiness Analyzer-rapport bekijken](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) voor meer informatie.
