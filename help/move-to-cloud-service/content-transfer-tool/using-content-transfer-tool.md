@@ -1,11 +1,11 @@
 ---
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,30 +14,30 @@ ht-degree: 91%
 
 ## Belangrijke overwegingen voor het gebruik van de Content Transfer-tool {#pre-reqs}
 
-Volg de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
+Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
 
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
+* Als u een *Sandbox-omgeving* gebruikt, moet u deze upgraden naar de versie van 10 juni 2020 of later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
-* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+* Om de Content Transfer-tool te gebruiken moet u beheerder-gebruiker op uw broninstantie zijn en ook lid zijn van de AEM-beheerdersgroep in de Cloud Service-instantie waarnaar u content overdraagt. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
 * In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces.
 
-* De aanbevolen bovengrens voor de grootte van de opslagplaats die de Content Transfer Tool tegelijkertijd kan ondersteunen, is 20 GB.
+* De aanbevolen bovengrens voor de grootte van de repository die de Content Transfer-tool gelijktijdig kan ondersteunen, is 20 GB.
 
 ## Beschikbaarheid {#availability}
 
-Het gereedschap Inhoud overbrengen kan als ZIP-bestand (Content Transfer Tool v1.0.0) worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+De Content Transfer-tool kan als ZIP-bestand (Content Transfer Tool v1.0.0) worden gedownload van de Software Distribution-portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
->Download het Content Transfer Tool van het [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Portal.
+>Download de Content Transfer-tool van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=dut)
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
@@ -70,7 +70,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken vanuit de auteurinstantie ophalen door te navigeren naar `/libs/granite/migration/token.json`. Het toegangstoken wordt teruggewonnen van de instantie van de Cloud Service auteur.
+      >U kunt het toegangstoken vanuit de auteurinstantie ophalen door te navigeren naar `/libs/granite/migration/token.json`. Het toegangstoken wordt opgehaald van de Cloud Service-auteursinstantie.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
@@ -213,7 +213,7 @@ Of:
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. Om de logboeken te staart zonder het gebruikersinterface te gebruiken, kunt u SSH in uw bronAEM milieu en staart `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+1. Als u de logboeken wilt koppelen zonder de gebruikersinterface te gebruiken, past u SSH toe in uw bron AEM-omgeving op `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Een migratieset verwijderen {#deleting-migration-set}
 
