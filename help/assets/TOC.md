@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    + [API&#39;s en referentiemateriaal](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Werken met afbeeldingsprofielen en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Slimme tags configureren](smart-tags-configuration.md)
+   + [De functie Smart Tags configureren ](smart-tags-configuration.md)
    + [Meertalige assets en de vertaling van assets](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Asset-editor uitbreiden](extend-asset-editor.md)
