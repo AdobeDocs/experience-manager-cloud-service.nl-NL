@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 81%
+ht-degree: 92%
 
 ---
 
@@ -39,15 +39,15 @@ ht-degree: 81%
    + [Inhoudsfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
    + [Inhoudsfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Zoekformulieren configureren](developing/extending/search-forms.md)
-   + [RTF-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)
-   + [Vorm de stop-ins van RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [De Rich Text-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)
+   + [De RTE-insteekmodules configureren](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [RTE configureren om toegankelijke sites te maken](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementeren naar AEM as a Cloud Service {#deploying}
    + [Implementeren naar AEM as a Cloud Service](deploying/overview.md)
    + [OSGi configureren voor AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Author Tier {#author-tier}
-   + [Toegang tot de lijst met auteurs](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [De lijst van auteurs beveiligen](/help/implementing/author-tier/securing-the-author-tier.md)
++ Auteurlaag {#author-tier}
+   + [Toegang tot de auteurlaag](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Beveiliging van de auteurlaag](/help/implementing/author-tier/securing-the-author-tier.md)
 + Overzicht van contentlevering {#content-delivery}
    + [Workflow voor contentlevering](dispatcher/overview.md)
    + [Dispatcher in de cloud](dispatcher/disp-overview.md)
