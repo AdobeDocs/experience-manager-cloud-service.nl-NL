@@ -1,11 +1,11 @@
 ---
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -45,20 +45,20 @@ Als u in de opnamefase de deltacontent boven op de huidige content wilt toepasse
 
 ## Richtlijnen en best practices {#best-practices}
 
-Volg de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen procedures voor het gebruik van de Content Transfer-tool:
+Bekijk de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen procedures voor het gebruik van de Content Transfer-tool:
 
-* Het is raadzaam om [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) en [gegevensopslag consistentiecontroles](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) uit te voeren op de **bronopslagplaats** om potentiële problemen te identificeren en de grootte van de opslagplaats te verminderen.
+* Het is raadzaam om [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles voor de dataopslagplaats](https://helpx.adobe.com/nl/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) op de **bronrepository** uit te voeren om potentiële problemen te identificeren en de repository te verkleinen.
 
-* Als de configuratie van het Netwerk van de Levering van de Inhoud van de Inhoud van de Auteur AEM Cloud (CDN) wordt gevormd om een whitelist van IPs te hebben dan zou het moeten worden gewaarborgd dat de bronmilieu IPs ook aan allowlist wordt toegevoegd zodat het bronmilieu en het milieu van de Wolk AEM met elkaar kunnen communiceren.
+* Als de AEM Cloud CDN-configuratie (Content Delivery Network) is geconfigureerd met een lijst met toegestane IP&#39;s, moet u ervoor zorgen dat de IP&#39;s van de bronomgeving worden toegevoegd aan deze lijst, zodat de bronomgeving en de AEM Cloud-omgeving met elkaar kunnen communiceren.
 
 * Tijdens de opnamefase wordt het aanbevolen dat u de modus voor *wissen* inschakelt. Hiermee wordt de bestaande repository (auteur of publicatie) in de AEM Cloud Service-doelomgeving volledig gewist en vervolgens bijgewerkt met de content van de migratieset. Deze modus is veel sneller dan de modus voor niet-wissen, waarbij de migratieset boven op de huidige content wordt toegepast.
 
 * Wanneer alle content is verplaatst, is de juiste projectstructuur in de Cloud Service-omgeving vereist. Anders wordt de content niet correct weergegeven in de Cloud Service-omgeving.
 
-* Voordat u het gereedschap Inhoud overbrengen uitvoert, moet u ervoor zorgen dat er voldoende schijfruimte is in de `crx-quickstart` submap van de AEM-broninstantie. De reden hiervoor is dat met het gereedschap Inhoud overbrengen een lokale kopie van de opslagplaats wordt gemaakt die later wordt geüpload naar de migratieset.
+* Voordat u de content Transfer-tool uitvoert, moet u ervoor zorgen dat er voldoende schijfruimte is in de submap `crx-quickstart` van de AEM-broninstantie. Dit is omdat de Content Transfer-tool een lokale kopie van de repository maakt die later wordt geüpload naar de migratieset.
 De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als volgt:
    `data store size + node store size * 1.5`
 
-   * *grootte* gegevensopslag: Het gereedschap Inhoud overbrengen gebruikt 64 GB, zelfs als de gegevensopslag in werkelijkheid groter is.
-   * *archiefgrootte*knooppunt: de grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
-Voor een segmentopslaggrootte van 20 GB is dus 94 GB vrije schijfruimte vereist.
+   * *Grootte van dataopslagplaats*: De Content Transfer-tool gebruikt 64 GB, ook als de werkelijke dataopslagplaats groter is.
+   * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
+Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
