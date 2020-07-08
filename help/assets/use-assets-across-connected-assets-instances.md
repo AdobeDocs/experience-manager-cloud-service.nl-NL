@@ -1,12 +1,12 @@
 ---
-title: Gebruik Connected Assets om DAM-middelen te delen in de ontwerpworkflow [!DNL Adobe Experience Manager Sites].
-description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van [!DNL Adobe Experience Manager Assets] bij het maken van uw webpagina's op een andere implementatie van [!DNL Adobe Experience Manager Sites].
+title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 50%
+source-wordcount: '1963'
+ht-degree: 51%
 
 ---
 
@@ -92,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Selecteer het workflowstartprogramma en klik op **[!UICONTROL Properties]** op de actiebalk.
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | Voor | Na |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -138,13 +139,13 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
    *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM.*
 
-1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
+1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/operations/asynchronous-jobs.md).
 
    ![Melding van het asynchroon op de achtergrond ophalen van assets.](assets/assets_async_transfer_fails.png)
 
    *Afbeelding: Melding van het asynchroon op de achtergrond ophalen van assets.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -188,4 +189,4 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 Voer de volgende stappen uit om problemen op te lossen voor algemene foutscenario&#39;s:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Assets die worden opgehaald van een externe DAM, worden mogelijk niet op een webpagina gepubliceerd. Dit kan gebeuren in de volgende gevallen: de asset is niet aanwezig op de externe DAM; de juiste machtigingen voor het ophalen ontbreken; netwerkfout. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM of dat de machtigingen niet worden gewijzigd. Ervoor zorgen dat aan de juiste voorwaarden wordt voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/assets/asynchronous-jobs.md) op fouten bij het ophalen van assets.
+* Assets die worden opgehaald van een externe DAM, worden mogelijk niet op een webpagina gepubliceerd. Dit kan gebeuren in de volgende gevallen: de asset is niet aanwezig op de externe DAM; de juiste machtigingen voor het ophalen ontbreken; netwerkfout. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM of dat de machtigingen niet worden gewijzigd. Ervoor zorgen dat aan de juiste voorwaarden wordt voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/operations/asynchronous-jobs.md) op fouten bij het ophalen van assets.
