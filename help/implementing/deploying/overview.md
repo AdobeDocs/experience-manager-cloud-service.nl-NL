@@ -2,7 +2,7 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Het is belangrijk om te begrijpen dat AEM regelmatig, potentieel zo vaak als een
 
 >[!NOTE]
 >
-> Als de douanecode aan het opvoeren werd geduwd en dan door u werd verworpen, zal de volgende update AEM die veranderingen verwijderen om de git markering van de laatste succesvolle klantenversie aan productie te weerspiegelen.
+>Als de douanecode aan het opvoeren werd geduwd en dan door u werd verworpen, zal de volgende update AEM die veranderingen verwijderen om de git markering van de laatste succesvolle klantenversie aan productie te weerspiegelen.
 
 Op een regelmatige frequentie, zal een eigenschapversie plaatsvinden, die zich op eigenschaptoevoegingen en verhogingen concentreert die wezenlijk de gebruikerservaring in vergelijking met de dagelijkse versies zullen beïnvloeden. Een eigenschapversie wordt teweeggebracht niet door de plaatsing van een grote veranderingsreeks, maar eerder door het omdraaien van een versiesknevel, activerende code die zich in de loop van dagen of weken door de dagelijkse updates heeft verzameld.
 
@@ -133,8 +133,11 @@ In de volgende gevallen verdient het de voorkeur de hand te houden aan het coder
 * Groepen maken/verwijderen
 * Gebruikers maken/verwijderen
 * Voeg ACLs toe
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
+
 * Pad toevoegen (bijvoorbeeld voor basismapstructuren)
 * CND&#39;s toevoegen (geen typedefinities)
 
