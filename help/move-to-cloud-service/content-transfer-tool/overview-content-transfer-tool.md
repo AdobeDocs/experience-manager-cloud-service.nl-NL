@@ -1,9 +1,9 @@
 ---
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -36,7 +36,8 @@ Een *migratieset* heeft de volgende kenmerken:
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
-> Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
+>
+>Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
 Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Raadpleeg [Extractie aanvullen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process) voor meer informatie.
 
