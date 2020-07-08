@@ -2,7 +2,7 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: 'Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
@@ -60,7 +60,7 @@ De schaling van instanties per tenant van de service kan automatisch of handmati
 
 >[!NOTE]
 >
-> Zie [Implementeren - Runmodi](/help/implementing/deploying/overview.md#runmodes) voor meer informatie
+>Zie [Implementeren - Runmodi](/help/implementing/deploying/overview.md#runmodes) voor meer informatie
 
 AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties waarbij elke instantie een volledige AEM-omgeving vertegenwoordigt. Er zijn vier typen omgevingen beschikbaar met AEM as a Cloud Service:
 
