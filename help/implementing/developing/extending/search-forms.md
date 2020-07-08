@@ -2,7 +2,7 @@
 title: Zoekformulieren configureren
 description: Het vormen Vormen van het Onderzoek Vormen voor Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 2%
@@ -78,7 +78,7 @@ De standaardconfiguraties (alfabetisch weergegeven) zijn:
 
 >[!NOTE]
 >
-> Zie [Elementen - Zoekfactoren voor meer informatie over aan middelen gerelateerde zoekformulieren](/help/assets/search-facets.md)
+>Zie [Elementen - Zoekfactoren voor meer informatie over aan middelen gerelateerde zoekformulieren](/help/assets/search-facets.md)
 
 
 ## Voorspellen en instellingen {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 
 >[!NOTE]
 >
->* De algemene zoekvoorspelling wordt gedefinieerd in:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>De algemene zoekvoorspelling wordt gedefinieerd in:
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
+>Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
