@@ -2,7 +2,7 @@
 title: Digitale middelen toevoegen aan Adobe Experience Manager
 description: Digitale elementen toevoegen aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 
 >[!NOTE]
 >
-> Experience Manager als Cloud Service gebruikt een nieuwe manier om elementen te uploaden: directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals de AEM-gebruikersinterface, Adobe Asset Link, de AEM-bureaubladtoepassing en dus transparant voor de eindgebruikers.
+>Experience Manager als Cloud Service gebruikt een nieuwe manier om elementen te uploaden: directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals de AEM-gebruikersinterface, Adobe Asset Link, de AEM-bureaubladtoepassing en dus transparant voor de eindgebruikers.
 >
-> Upload code die door klanten technische teams wordt aangepast of uitgebreid moet de nieuwe upload APIs en protocollen gebruiken.
+>Upload code die door klanten technische teams wordt aangepast of uitgebreid moet de nieuwe upload APIs en protocollen gebruiken.
 
 ## Elementen uploaden {#upload-assets}
 
@@ -80,7 +80,7 @@ Daarnaast wordt in de gebruikersinterface Middelen het meest recente element wee
 
 >[!NOTE]
 >
-> Voor het uploaden van geneste maphiërarchieën naar AEM raadpleegt u het [bulkuploaden van elementen](#bulk-upload).
+>Voor het uploaden van geneste maphiërarchieën naar AEM raadpleegt u het [bulkuploaden van elementen](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -119,7 +119,7 @@ Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te be
 
 AEM Assets voorkomen dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, geven AEM Assets een waarschuwingsbericht weer en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -135,7 +135,7 @@ Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een gen
 
 >[!NOTE]
 >
-> Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan Experience Manager vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor richtlijnen voor de aanpak van contentmigratie.
+>Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan Experience Manager vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor richtlijnen voor de aanpak van contentmigratie.
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
@@ -162,7 +162,7 @@ Als Dynamic Media ook in uw omgeving zijn ingeschakeld:
 
 >[!NOTE]
 >
-> Dynamic Media bijsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters voor bijsnijden of mediatransformatie bieden die moeten worden uitgevoerd wanneer de elementen worden geleverd
+>Dynamic Media bijsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters voor bijsnijden of mediatransformatie bieden die moeten worden uitgevoerd wanneer de elementen worden geleverd
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de **[!UICONTROL Processing Profile]** kolom.
 
