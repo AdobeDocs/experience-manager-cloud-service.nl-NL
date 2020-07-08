@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2550'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
-In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager Cloud Service, zodat u vervolgens inhoud [op deze pagina&#39;s kunt](/help/sites-cloud/authoring/fundamentals/editing-content.md) maken.
+In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager Cloud Service, zodat u vervolgens inhoud [op die pagina&#39;s kunt](/help/sites-cloud/authoring/fundamentals/editing-content.md) maken.
 
 >[!NOTE]
 >
@@ -186,6 +186,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik op **Volgende** of tik op Volgende om door te gaan.
 
    * **Annuleer** om het proces af te breken.
+
    ![Een sjabloon voor een nieuwe pagina selecteren](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
@@ -193,6 +194,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) in te voeren die u aan de nieuwe pagina wilt toewijzen. Klik vervolgens op **Maken** of tik op Maken om de pagina daadwerkelijk te maken.
 
    * Gebruik **Vorige** om terug te keren naar de sjabloonselectie.
+
    Hoofdvelden zijn:
 
    * **Titel**:
@@ -203,6 +205,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
       * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die door AEM en JCR worden opgelegd. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+
    >[!TIP]
    >
    >Zie conventies voor [paginanamen](#page-naming-conventions).
@@ -237,6 +240,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+
    Selecteer vervolgens het pictogram **Bewerken** :
 
    ![Bewerken, knop](/help/sites-cloud/authoring/assets/edit.png)
@@ -256,6 +260,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+
    En dan het paginapictogram **Kopiëren** :
 
    ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
@@ -273,6 +278,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
    1. Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
    1. Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+
    >[!NOTE]
    >
    >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als er bijvoorbeeld `beach` al een nieuwe pagina met deze naam bestaat, `beach` wordt deze gewijzigd `beach1`.
@@ -292,6 +298,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+
    Selecteer vervolgens het paginapictogram **Verplaatsen** :
 
    ![Knop Verplaatsen](/help/sites-cloud/authoring/assets/move.png)
@@ -302,6 +309,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik op **Volgende** of tik op Volgende om door te gaan.
    * **Annuleer** om het proces af te breken.
+
    ![Pagina verplaatsen en hernoemen](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    De paginanaam kan hetzelfde blijven als u alleen de pagina verplaatst.
@@ -317,6 +325,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
       * Klik op **Volgende** om door te gaan.
    * Gebruik **Vorige** om terug te keren naar de specificatie van de paginanaam.
+
    >[!NOTE]
    >
    >Standaard wordt het bovenliggende element van de pagina waarvan u de naam verplaatst of wijzigt, geselecteerd als het doel.
@@ -357,6 +366,27 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### Asynchrone handelingen {#asynchronous-actions}
+
+Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
+
+Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
+
+* Wanneer het klikken van **Beweging** in de laatste stap hierboven, controleert AEM de gevormde grens.
+* Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
+* Als het aantal pagina&#39;s waarop de actie betrekking heeft, boven de limiet ligt, wordt een asynchrone bewerking uitgevoerd.
+   * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
+      * **De uitvoering van de asynchrone taak wordt nu** direct gestart.
+      * **Later** kan de gebruiker bepalen wanneer de asynchrone taak wordt gestart.
+
+         ![Asynchrone verplaatsing van pagina](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Status **dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)bij** Globale Navigatie **->** Hulpmiddelen **->** Verrichtingen **->** Banen **
+
+>[!NOTE]
+>
+>Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, te zien gelieve het [Asynchrone document van Banen](/help/operations/asynchronous-jobs.md) in de de gebruikersgids van Verrichtingen.
 
 ### Een pagina verwijderen {#deleting-a-page}
 
