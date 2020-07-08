@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1631'
 ht-degree: 2%
 
 ---
@@ -160,8 +160,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
+Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &#39;Cloud Manager - rol ontwikkelaar&#39; vereist voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM-gebruikers of AEM-beheerders voor zowel auteur- als publicatieservices om statusdumpgegevens van beide services te kunnen bekijken. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
