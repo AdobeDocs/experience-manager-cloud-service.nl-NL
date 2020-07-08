@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 description: Een inleiding in Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service werkt met de [richtlijnen](#wcag-acc
 
 >[!NOTE]
 >
-> Zie de [rapporten over toegankelijkheidscompatibiliteit voor Adobe-oplossingen](https://www.adobe.com/accessibility/compliance.html) voor meer informatie.
+>Zie de [rapporten over toegankelijkheidscompatibiliteit voor Adobe-oplossingen](https://www.adobe.com/accessibility/compliance.html) voor meer informatie.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 * In [Toegankelijke content maken](/help/sites-cloud/authoring/fundamentals/accessible-content.md) wordt de relatie tussen de richtlijnen en AEM uitgelegd.
 
 >[!NOTE]
-> 
+>
 >Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
 <!--
