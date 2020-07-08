@@ -2,7 +2,7 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -17,10 +17,12 @@ ht-degree: 9%
 In deze sectie wordt beschreven hoe u de AEM kunt structureren als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u de AEM lokaal kunt valideren en uitvoeren voordat u de AEM implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de documentatie bij [AEM Dispatcher voor meer informatie over Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
+>
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het opsporen van fouten in Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
 
 >[!WARNING]
-> Windows-gebruikers: de huidige versie van AEM als Cloud Service lokale Dispatcher Tools (v2.0.20) is niet compatibel met Windows. Neem contact op met de ondersteuning [van](https://daycare.day.com/home.html) Adobe voor updates over Windows-compatibiliteit.
+>
+>Windows-gebruikers: de huidige versie van AEM als Cloud Service lokale Dispatcher Tools (v2.0.20) is niet compatibel met Windows. Neem contact op met de ondersteuning [van](https://daycare.day.com/home.html) Adobe voor updates over Windows-compatibiliteit.
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -197,7 +199,7 @@ Het validatieprogramma is beschikbaar in de SDK `bin/validator` als binair besta
 
 Deze wordt aangeroepen als: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Het gereedschap valideert de configuratie van Apache en dispatcher. Alle bestanden worden gescand met een patroon `conf.d/enabled_vhosts/*.vhost` en er wordt gecontroleerd of alleen toegestane instructies worden gebruikt. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de allowlist-opdracht van de validator uit te voeren:
+Het gereedschap valideert de configuratie van Apache en dispatcher. Alle bestanden worden gescand met een patroon `conf.d/enabled_vhosts/*.vhost` en er wordt gecontroleerd of alleen op de lijst met gewenste personen gestane instructies worden gebruikt. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
 
 ```
 $ validator whitelist
@@ -236,9 +238,9 @@ In de onderstaande tabel staan de ondersteunde apache-modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies voor een bepaalde Dispatcher-versie vinden door de allowlist-opdracht van de validator uit te voeren in de SDK, zoals hierboven beschreven.
+Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies voor een bepaalde Dispatcher-versie vinden door de opdracht lijst van gewenste personen van de validator uit te voeren in de SDK, zoals hierboven beschreven.
 
-De allowlist bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is toegestaan, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als er geen allowlist is opgegeven op de opdrachtregel (zoals deze moet worden aangeroepen), gebruikt het hulpprogramma een standaard allowlist die Cloud Manager zal gebruiken voor validatie voordat het programma wordt geïmplementeerd naar Cloud-omgevingen.
+De lijst van gewenste personen bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is op de lijst met gewenste personen gestaan, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als geen lijst van gewenste personen op de bevellijn wordt gegeven (die de manier is het zou moeten worden aangehaald), gebruikt het hulpmiddel een standaard lijst van gewenste personen die de Manager van de Wolk voor bevestiging alvorens aan milieu&#39;s van de Wolk zal gebruiken te opstellen.
 
 Bovendien worden alle bestanden gescand met een patroon `conf.dispatcher.d/enabled_farms/*.farm` en wordt gecontroleerd of:
 
@@ -256,7 +258,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn toegestaan. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
+Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn op de lijst met gewenste personen gestaan. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
 
 Wanneer geen bevestigingsmislukkingen worden gemeld, is uw configuratie klaar voor plaatsing.
 
@@ -528,7 +530,7 @@ forget to adapt the `Include` statements referring to that file in the virtual h
 If the folder however contains multiple, virtual host specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
-### Toegestane lijsten verwijderen
+### lijsten van gewenste personen verwijderen
 
 Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
 some file in that subfolder.
@@ -549,7 +551,7 @@ $ validator httpd .
 
 Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
-Als u Apache-instructies ziet die niet zijn toegestaan, verwijdert u deze.
+Als u Apache-instructies ziet die niet zijn op de lijst met gewenste personen gestaan, verwijdert u deze.
 
 ### Alle niet-publicatiefarms verwijderen
 
