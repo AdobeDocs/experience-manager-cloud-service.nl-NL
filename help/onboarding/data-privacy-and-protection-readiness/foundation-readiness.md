@@ -1,8 +1,8 @@
 ---
-title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager als voorbereiding van de Cloud Service Foundation
-description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor de Cloud Service Foundation voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als Cloud Service-project moet worden geïmplementeerd. '
+title: Regels voor gegevensbescherming en gegevensprivacy - Adobe Experience Manager als gereedheid voor de Cloud Service
+description: 'Leer over Adobe Experience Manager als steun van de Stichting van de Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 5%
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Voor AEM als cloudservice is er geen handmatige procedure beschikbaar in de gebruikersinterface voor het verwijderen van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
+>Voor AEM als Cloud Service is er geen handprocedure beschikbaar van UI voor het schrappen van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
 
 ### HTTP API {#http-api-1}
 
