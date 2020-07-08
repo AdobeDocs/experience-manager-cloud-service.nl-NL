@@ -1,29 +1,29 @@
 ---
-title: Een AMS converteren naar een Adobe Experience Manager als een Cloud Service Dispatcher Configuration
-description: Een AMS converteren naar een Adobe Experience Manager als een Cloud Service Dispatcher Configuration
+title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
+description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Een AMS converteren naar een Adobe Experience Manager (AEM) als een Cloud Service Dispatcher Configuration
+# Een AMS converteren naar een Adobe Experience Manager (AEM) as a Cloud Service Dispatcher-configuratie
 
 ## Inleiding {#introduction}
 
 Deze sectie biedt stapsgewijze instructies voor het omzetten van een AMS-configuratie.
 
 >[!NOTE]
->Hierbij wordt ervan uitgegaan dat u een archief hebt met een structuur die vergelijkbaar is met de structuur die wordt beschreven in [Uw Dispatcher Configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)beheren.
+>Hierbij wordt ervan uitgegaan dat u een archief hebt met een structuur die vergelijkbaar is met de structuur die wordt beschreven in [Uw Dispatcher-configuraties beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html).
 
-## Stappen voor het omzetten van een AMS in AEM als configuratie van een serviceverzender voor de cloud
+## Stappen voor het omzetten van een AMS in AEM as a Cloud Service Dispatcher-configuratie
 
 1. **Het archief extraheren en een eventueel voorvoegsel verwijderen**
 
-   Extraheer het archief naar een map en zorg ervoor dat de directe submappen beginnen met conf, conf.d, conf.dispatcher.d en conf.modules.d. Als ze dat niet doen, verplaats ze omhoog in de hiërarchie.
+   Extraheer het archief naar een map en zorg ervoor dat de directe submappen beginnen met conf, conf.d, conf.dispatcher.d en conf.modules.d. Als dat niet zo is, plaatst u ze hoger in de hiërarchie.
 
 1. **Ongebruikte submappen en bestanden verwijderen**
 
@@ -31,40 +31,40 @@ Deze sectie biedt stapsgewijze instructies voor het omzetten van een AMS-configu
 
 1. **Alle niet-gepubliceerde virtuele hosts verwijderen**
 
-1. **Verwijder een virtueel hostbestand**
+1. **Een virtueel hostbestand verwijderen**
 
-   In conf.d/enabled_hosts die de naam auteur, ongezond, gezondheid, lc of flush heeft. Alle virtuele hostbestanden in conf.d/available_hosts die niet zijn gekoppeld, kunnen ook worden verwijderd.
+   In conf.d/enabled_vhosts met author, unhealthy, health, lc of flush in de naam. Alle virtuele hostbestanden in conf.d/available_vhosts die niet zijn gekoppeld, kunnen ook worden verwijderd.
 
-1. Verwijder of becommentariër virtuele gastheersecties die niet naar haven 80 verwijzen
+1. Verwijder of becommentarieer virtuele hostsecties die niet verwijzen naar poort 80
 
-   Als u nog secties in uw virtuele gastheerdossiers hebt die uitsluitend naar andere havens dan haven 80 verwijzen, b.v.
+   Als u nog secties in uw virtuele hostbestanden hebt die uitsluitend verwijzen naar andere poorten dan poort 80, b.v.
 
    `<VirtualHost *:443>`
    `...`
    `</VirtualHost>`
-verwijderen of opmerkingen maken. Instructies in deze secties worden niet verwerkt, maar als u ze in de buurt houdt, kunt u ze waarschijnlijk nog steeds zonder effect bewerken. Dat is verwarrend.
+verwijder deze dan of plaats een opmerking. Instructies in deze secties worden niet verwerkt, maar als u ze niet verwijdert, kan het gebeuren dat u ze alsnog bewerkt, zonder effect. En dat kan verwarrend zijn.
 
 1. **Herschrijvingen controleren**
 
-   * Voer de directory conf.d/rewrites in.
+   * Open de directory conf.d/rewrites.
 
-   * Verwijder om het even welk dossier genoemd base_rewrite.rules en xdoor:sturen_forcessl_rewrite.rules en herinner me om omvatten verklaringen in de virtuele gastheerdossiers te verwijderen die naar hen verwijzen.
+   * Verwijder alle bestanden met de naam base_rewrite.rules en xforwarded_forcessl_rewrite.rules en verwijder alle Include-instructies in de virtuele hostbestanden die hiernaar verwijzen.
 
-   * Als conf.d/rewrites nu één enkel dossier bevat, zou het moeten worden anders genoemd om.rules te herschrijven en vergeet niet om de Include verklaringen aan te passen die naar dat dossier verwijzen in de virtuele gastheerdossiers eveneens.
+   * Als conf.d/rewrites nu een enkel bestand bevat, moet dit worden hernoemd naar rewrite.rules. Vergeet niet om de Include-instructies die naar dat bestand verwijzen in de virtuele hostbestanden aan te passen.
 
-   * Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de instructie Include die naar deze bestanden in de virtuele hostbestanden verwijst.
+   * Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de Include-instructie in de virtuele hostbestanden die naar deze specifieke bestanden verwijst.
 
 1. **Variabelen controleren**
 
-   1. Voer de directory conf.d/variables in.
+   1. Open de directory conf.d/variables.
 
-   1. Verwijder alle bestanden met de naam ams_default.vars en vergeet niet om de instructies Include in de virtuele hostbestanden te verwijderen die naar deze instructies verwijzen.
+   1. Verwijder alle bestanden met de naam ams_default.vars en verwijder alle Include-instructies in de virtuele hostbestanden die hiernaar verwijzen.
 
-   1. Als conf.d/variables nu één enkel dossier bevat, zou het aan custom.vars moeten worden anders genoemd en vergeet niet ook om de Include verklaringen aan te passen die naar dat dossier in de virtuele gastheerdossiers verwijzen.
+   1. Als conf.d/variables nu een enkel bestand bevat, moet dit worden hernoemd naar custom.vars. Vergeet niet om de Include-instructies die naar dat bestand verwijzen in de virtuele hostbestanden aan te passen.
 
-   1. Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de instructie Include die naar deze bestanden in de virtuele hostbestanden verwijst.
+   1. Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de Include-instructie in de virtuele hostbestanden die naar deze specifieke bestanden verwijst.
 
-1. **Witlijsten verwijderen**
+1. **Whitelists verwijderen**
 
    Verwijder de map conf.d/whitelists en verwijder Include-instructies in de virtuele hostbestanden die verwijzen naar een bestand in die submap.
 
@@ -72,149 +72,152 @@ verwijderen of opmerkingen maken. Instructies in deze secties worden niet verwer
 
    In alle virtuele hostbestanden:
 
-   Naam van PUBLISH_DOCROOT wijzigen in DOCROOTRemove-secties die verwijzen naar variabelen met de naam DISP_ID, PUBLISH_FORCE_SSL of PUBLISH_WHITELIST_ENABLED
+   Wijzig de naam van PUBLISH_DOCROOT naar DOCROOT
+Verwijder de secties die verwijzen naar variabelen met de naam DISP_ID, PUBLISH_FORCE_SSL of PUBLISH_WHITELIST_ENABLED
 
-1. **Controleer uw status door validator uit te voeren**
+1. **Uw status controleren door de validatietool uit te voeren**
 
-   Voer de verzender-validator in uw map uit met de httpd-subopdracht:
+   Voer de dispatcher-validator in uw directory uit met de httpd-subopdracht:
 
    `$ validator httpd`
-Als er fouten optreden bij ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
-   Als u Apache-instructies ziet die niet zijn gewhitelist, verwijdert u deze.
+   Als u Apache-instructies ziet die op de whitelist staan, verwijdert u deze.
 
-1. **Alle niet-publicatiebedrijven verwijderen**
+1. **Alle niet-publicatiefarms verwijderen**
 
-   Verwijder om het even welk landbouwbedrijfdossier in conf.dispatcher.d/enabled_farm die auteur, ongezond, gezondheid, lc of flush in zijn naam heeft. Alle landbouwbedrijfdossiers in conf.dispatcher.d/available_farm die niet met worden verbonden kunnen eveneens worden verwijderd.
+   Verwijder elk farmbestand in conf.dispatcher.d/enabled_farms waarbij author, unhealthy, health, lc of flush in de naam voorkomt. Alle farmbestanden in conf.dispatcher.d/available_farms die niet zijn gekoppeld, kunnen ook worden verwijderd.
 
-1. **Namen van landbouwbestanden wijzigen**
+1. **De naam van farmbestanden wijzigen**
 
-   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen, zodat zou een landbouwbedrijfdossier genoemd customerX_farm.any anders moeten worden genoemd customerX.farm.
+   Alle farms in conf.dispatcher.d/enabled_farms moeten worden hernoemd, zodat ze overeenkomen met het patroon *.farm. Als een farmbestand bijvoorbeeld customerX_farm.any heet, moet u dit hernoemen naar customerX.farm.
 
 1. **Cache controleren**
 
-   Voer de map conf.dispatcher.d/cache in.
+   Open de directory conf.dispatcher.d/cache.
 
-   Verwijder om het even welk dossier vooraf bevestigde ams_.
+   Verwijder alle bestanden met het voorvoegsel ams_.
 
-   Als conf.dispatcher.d/cache nu leeg is, kopieert u het bestand conf.dispatcher.d/cache/rules.any van de standaardconfiguratie van de verzender naar deze map. De standaardconfiguratie voor de verzender vindt u in de mapbron van deze SDK. Vergeet niet om $include verklaringen aan te passen die naar de ams_*_cache.any regeldossiers in de landbouwbedrijfdossiers verwijzen eveneens.
+   Als conf.dispatcher.d/cache nu leeg is, kopieert u het bestand conf.dispatcher.d/cache/rules.any vanuit de standaard Dispatcher-configuratie naar deze map. De standaard Dispatcher-configuratie staat in de map src van deze SDK. Vergeet niet om de $include-instructies die verwijzen naar de ams_*_cache.any-regelbestanden in de farmbestanden ook aan te passen.
 
-   Als in plaats daarvan conf.dispatcher.d/cache nu één enkel dossier met achtervoegsel _cache.any bevat, zou het aan rules.any moeten worden anders genoemd en vergeet niet om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   Als conf.dispatcher.d/cache nu echter een enkel bestand bevat met het achtervoegsel _cache.any, moet dit worden hernoemd naar rules.any. Vergeet niet om de $include-instructies die naar dat bestand verwijzen in de farmbestanden ook aan te passen.
 
-   Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
+   Als de map echter meerdere, farmspecifieke bestanden met dat patroon bevat, moet hun inhoud worden gekopieerd naar de $include-instructie in de farmbestanden die naar deze specifieke bestanden verwijst.
 
    Verwijder elk bestand met het achtervoegsel _invalidate_allowed.any.
 
-   Kopieer het bestand conf.dispatcher.d/cache/default_invalidate_any van de standaardconfiguratie van de verzender naar die locatie.
+   Kopieer het bestand conf.dispatcher.d/cache/default_invalidate_any vanuit de standaard Dispatcher-configuratie naar die locatie.
 
-   In elk landbouwbedrijfdossier, verwijder om het even welke inhoud in de cache/allowedClients sectie en vervang het met:
+   Verwijder alle inhoud in de sectie cache/allowedClients voor elk farmbestand en vervang deze door:
 
    $include &quot;../cache/default_invalidate.any&quot;
 
-1. **Clientkoppen controleren**
+1. **Clientheaders controleren**
 
-   Voer de map conf.dispatcher.d/clientheaders in.
+   Open de directory conf.dispatcher.d/clientheaders.
 
-   Verwijder om het even welk dossier vooraf bevestigde ams_.
+   Verwijder alle bestanden met het voorvoegsel ams_.
 
-   Als conf.dispatcher.d/clientheaders nu één enkel dossier met achtervoegsel _clientheaders.any bevat, zou het aan client.any moeten worden anders genoemd en niet vergeet om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   Als conf.dispatcher.d/clientheaders nu een enkel bestand bevat met het achtervoegsel _clientheaders.any, moet dit worden hernoemd naar clientheaders.any. Vergeet niet om de $include-instructies die naar dat bestand verwijzen in de farmbestanden ook aan te passen.
 
-   Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
+   Als de map echter meerdere, farmspecifieke bestanden met dat patroon bevat, moet hun inhoud worden gekopieerd naar de $include-instructie in de farmbestanden die naar deze specifieke bestanden verwijst.
 
-   Kopieer de bestandconf.dispatcher/clientheaders/default_clientheaders.any.
+   Kopieer het bestand conf.dispatcher/clientheaders/default_clientheaders.any vanuit de standaard Dispatcher-configuratie naar die locatie.
 
-   In elk landbouwbedrijfdossier, vervang om het even welke cliënt omvat verklaringen die als volgt kijken:
+   In elk farmbestand vervangt u elke include-instructie voor clientheaders die er als volgt uitziet:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"`
 
-   met de verklaring:
+   met de instructie:
 
    `$include "../clientheaders/default_clientheaders.any"`
 
 1. **Filter controleren**
 
-   * Voer de map conf.dispatcher.d/filters in.
+   * Open de directory conf.dispatcher.d/filters.
 
-   * Verwijder om het even welk dossier vooraf bevestigde ams_.
+   * Verwijder alle bestanden met het voorvoegsel ams_.
 
-   * Als conf.dispatcher.d/filters nu één enkel dossier bevat zou het aan filters.any moeten worden anders genoemd en vergeet niet om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   * Als conf.dispatcher.d/filters nu een enkel bestand bevat, moet dit worden hernoemd naar filters.any. Vergeet niet om de $include-instructies die naar dat bestand verwijzen in de farmbestanden ook aan te passen.
 
-   * Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
+   * Als de map echter meerdere, farmspecifieke bestanden met dat patroon bevat, moet hun inhoud worden gekopieerd naar de $include-instructie in de farmbestanden die naar deze specifieke bestanden verwijst.
 
-   * Kopieer de bestandconf.dispatcher/filters/default_filters.any.
+   * Kopieer het bestand conf.dispatcher/filters/default_filters.any vanuit de standaard Dispatcher-configuratie naar die locatie.
 
-   * In elk landbouwbedrijfdossier, vervang om het even welke filter omvat verklaringen die als volgt kijken:
+   * In elk farmbestand vervangt u elke include-instructie voor filters die er als volgt uitziet:
 
-   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`met de instructie:
+   * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
+met de instructie:
 
       `$include "../filters/default_filters.any"`
 
 1. **Renderingen controleren**
 
-   * Voer de map conf.dispatcher.d/renders in.
+   * Open de directory conf.dispatcher.d/renders.
 
    * Verwijder alle bestanden in die map.
 
-   * Kopieer het bestand conf.dispatcher.d/renders/default_renders.any van de standaardconfiguratie van de verzender naar die locatie.
+   * Kopieer het bestand conf.dispatcher.d/renders/default_renders.any vanuit de standaard Dispatcher-configuratie naar die locatie.
 
-   * In elk landbouwbedrijfdossier, verwijder om het even welke inhoud in de renderensectie en vervang het met:
+   * Verwijder alle inhoud in de sectie renders voor elk farmbestand en vervang deze door:
 
       `$include "../renders/default_renders.any"`
 
 1. **Virtuele hosts controleren**
 
-   * Wijzig de naam van de map `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts` en voer deze in.
+   * Wijzig de naam van de directory `conf.dispatcher.d/vhosts to conf.dispatcher.d/virtualhosts` en open de directory.
 
-   * Verwijder alle vooraf ingestelde bestanden `ams_`.
+   * Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-   * Als conf.dispatcher.d/virtualhosts nu één bestand bevat, moet de naam worden gewijzigd in virtueel hosts.any en moet u de $include-instructies die verwijzen naar dat bestand ook in de bestanden op de boerderij aanpassen.
+   * Als conf.dispatcher.d/virtualhosts nu een enkel bestand bevat, moet dit worden hernoemd naar virtualhosts .any. Vergeet niet om de $include-instructies die naar dat bestand verwijzen in de farmbestanden ook aan te passen.
 
-   * Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
+   * Als de map echter meerdere, farmspecifieke bestanden met dat patroon bevat, moet hun inhoud worden gekopieerd naar de $include-instructie in de farmbestanden die naar deze specifieke bestanden verwijst.
 
-   * Kopieer de bestandconf.dispatcher/virtualhosts/default_virtualhosts.any.
+   * Kopieer het bestand conf.dispatcher/virtualhosts/default_virtualhosts.any vanuit de standaard Dispatcher-configuratie naar die locatie.
 
-   * In elk landbouwbedrijfdossier, vervang om het even welke filter omvat verklaringen die als volgt kijken:
+   * In elk farmbestand vervangt u elke include-instructie voor filters die er als volgt uitziet:
 
       `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
-met de verklaring:
+met de instructie:
 
       `$include "../virtualhosts/default_virtualhosts.any"`
 
 
-1. **Controleer uw status door validator uit te voeren**
+1. **Uw status controleren door de validatietool uit te voeren**
 
-   * Voer de verzender-validator in uw map uit met de subopdracht van de verzender:
+   * Voer de dispatcher-validator in uw directory uit met de dispatcher-subopdracht:
 
       `$ validator dispatcher`
 
-   * Als er fouten optreden bij ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+   * Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
-   * Als er fouten optreden met betrekking tot een niet-gedefinieerde variabele, wijzigt u de naam `PUBLISH_DOCROOT`in `DOCROOT`.
+   * Als er fouten optreden met betrekking tot een niet-gedefinieerde variabele `PUBLISH_DOCROOT`, wijzigt u de naam hiervan naar `DOCROOT`.
 
-   * Zie de sectie Problemen oplossen in de documentatie over het validatieprogramma voor elke andere fout.
+   * Bij andere fouten bekijkt u de sectie Problemen oplossen in de documentatie over de validatietool.
 
 ## Uw configuratie testen met een lokale implementatie {#testing-config-local-deployment}
 
 >[!IMPORTANT]
-> Voor het testen van uw configuratie met een lokale implementatie is de installatie van Docker vereist.
+>
+>Voor het testen van uw configuratie met een lokale implementatie is de installatie van Docker vereist.
 
-Gebruikend het manuscript `docker_run.sh` in Dispatcher SDK, kunt u testen dat uw configuratie geen andere fout bevat die slechts in plaatsing zou verschijnen:
+Met het script `docker_run.sh` in de Dispatcher SDK kunt u testen dat uw configuratie geen andere fouten bevat die pas bij de implementatie optreden:
 
-1. Implementatiegegevens genereren met de validator
+1. Implementatiegegevens genereren met de validatietool
 
    `validator full -d out`
-Dit bevestigt de volledige configuratie en produceert plaatsingsinformatie binnen uit
+Hiermee wordt de volledige configuratie gevalideerd en worden implementatiegegevens gegeneerd
 
-1. Start de dispatcher in een docker-image met die implementatiegegevens
+1. Start de Dispatcher in een docker-image met die implementatiegegevens
 
-   Als uw AEM-publicatieserver op uw MacOS-computer wordt uitgevoerd en u luistert naar poort 4503, kunt u de dispatcher als volgt voor die server starten:
+   Als uw AEM-publicatieserver op uw MacOS-computer wordt uitgevoerd en u luistert naar poort 4503, kunt u de Dispatcher als volgt voor die server starten:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   Dit zal de container beginnen en Apache op lokale haven 8080 blootstellen.
+   Hierdoor wordt de container gestart en is Apache beschikbaar op de lokale poort 8080.
 
-## De nieuwe configuratie van de verzender gebruiken {#using-dispatcher-config}
+## Uw nieuwe Dispatcher-configuratie gebruiken {#using-dispatcher-config}
 
-Als de validator geen problemen meer rapporteert en de dockercontainer wordt gestart zonder fouten of waarschuwingen, kunt u uw configuratie verplaatsen naar een D`ispatcher/src` -submap van uw it-opslagplaats.
+Als de validatietool geen problemen meer rapporteert en de dockercontainer wordt gestart zonder fouten of waarschuwingen, kunt u uw configuratie verplaatsen naar een d`ispatcher/src`-submap van uw Git-repository.
