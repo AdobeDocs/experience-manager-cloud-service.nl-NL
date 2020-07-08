@@ -1,9 +1,9 @@
 ---
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ De Content Transfer-tool kan als ZIP-bestand (Content Transfer Tool v1.0.0) word
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
@@ -238,7 +238,8 @@ Als er ontbrekende blob-id&#39;s worden gerapporteerd, zoals hieronder vermeld, 
 De volgende opdracht wordt uitgevoerd 
 
 >[!NOTE]
-> `--verbose` markering is vereist om te rapporteren vanuit welke knooppuntpaden wordt verwezen naar de blobs.
+>
+>`--verbose` markering is vereist om te rapporteren vanuit welke knooppuntpaden wordt verwezen naar de blobs.
 
 **Voor repository&#39;s van AEM 6.5 (Oak 1.8 en lager)**
 
