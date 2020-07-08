@@ -2,7 +2,7 @@
 title: Het gebruiken van de Verschuivende Fusie van het Middel in Adobe Experience Manager als Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -51,8 +51,9 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
    >
    >
 * Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
-   >  Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
-
+>
+>
+Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
 
 ### Eigenschappen {#properties}
 
