@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer over hoe te om pakketstructuren voor plaatsing aan de Cloud Service van de Adobe Experience Manager te bepalen.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -36,7 +36,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> Zoals in vorige versies van AEM, `/libs` zou niet moeten worden gewijzigd. Alleen AEM-productcode kan worden geïmplementeerd op `/libs`.
+>Zoals in vorige versies van AEM, `/libs` zou niet moeten worden gewijzigd. Alleen AEM-productcode kan worden geïmplementeerd op `/libs`.
 
 ### eiken indexen {#oak-indexes}
 
@@ -500,7 +500,8 @@ Als de veelvoudige `/apps/*-packages` in ingebedde doelstellingen worden gebruik
 ### Bewaarplaatsen van derden {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Als u meer Maven-opslagruimten toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagruimten op afhankelijkheden worden gecontroleerd.
+>
+>Als u meer Maven-opslagruimten toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagruimten op afhankelijkheden worden gecontroleerd.
 
 Voeg in het reactorproject de noodzakelijke richtlijnen van de derde partij inzake openbare opslagplaats Maven toe `pom.xml`. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
 
