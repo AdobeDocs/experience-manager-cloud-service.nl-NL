@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Logboekregistratie{#logging}
 
-AEM als Cloud Service is een platform waarop klanten aangepaste code kunnen opnemen om unieke ervaringen voor hun klanten te creëren. Met dit in mening, is het registreren een kritieke functie om douanecode op wolkenmilieu&#39;s en meer in het bijzonder voor lokale dev milieu&#39;s te zuiveren.
+AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is het registreren een kritieke functie om douanecode op wolkenmilieu&#39;s en meer in het bijzonder voor lokale dev milieu&#39;s te zuiveren.
 
 
 <!-- ## Global Logging {#global-logging}
@@ -26,9 +26,9 @@ AEM als Cloud Service is een platform waarop klanten aangepaste code kunnen opne
 * the format to be used when writing the log messages
 -->
 
-## AEM als logbestand voor cloudservice {#aem-as-a-cloud-service-logging}
+## AEM als logboekregistratie voor Cloud Servicen {#aem-as-a-cloud-service-logging}
 
-AEM als Cloud Service biedt u de mogelijkheid om:
+AEM als Cloud Service biedt u de mogelijkheid om te vormen:
 
 * globale parameters voor de centrale houtkapdienst
 * verzoeken om registratie van gegevens; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
@@ -40,16 +40,17 @@ In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manage
 
 >[!NOTE]
 >
->Aanmelden bij AEM als cloudservice is gebaseerd op verkoopprincipes. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
+>Aanmelden als Cloud Service bij AEM is gebaseerd op verkoopbeginselen. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
 
-## Java-aanmelding voor AEM als cloudservice {#aem-as-a-cloud-service-java-logging}
+## AEM als Java-aanmelding voor Cloud Servicen {#aem-as-a-cloud-service-java-logging}
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties. Als u echter de standaardlogconfiguraties moet aanpassen, dient u ervoor te zorgen dat u deze alleen in `dev` omgevingen uitvoert.
+>[!IMPORTANT]
+>
+>Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties. Als u echter de standaardlogconfiguraties moet aanpassen, dient u ervoor te zorgen dat u deze alleen in `dev` omgevingen uitvoert.
 
-Bepaalde Loggers en schrijvers zijn als cloudservice-installatie opgenomen in een standaard-AEM.
+Bepaalde Loggers en Schrijvers zijn als Cloud Service opgenomen in een standaard-AEM.
 
 Het eerste geval is een speciaal geval aangezien het zowel de `request` als `access` logboeken controleert:
 
@@ -93,27 +94,27 @@ De andere paren volgen de standaardconfiguratie:
 
 * Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie wordt gemaakt en gebruikt.
 
-**AEM als HTTP-aanvraagaanmelding voor cloudservice**
+**AEM als HTTP-aanvraaglogboek van Cloud Service**
 
 Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregistreerd.
 
 Voorbeeld-uitvoer:
 
-**AEM als HTTP-aanvraag-/antwoordtoegangsregistratie voor cloudservice**
+**AEM als HTTP-aanvraag-/antwoordlogboek voor Cloud Service**
 
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
 Voorbeeld-uitvoer:
 
-**Apache-webserver/Dispatcher Logging**
+**Apache-webserver/Dispatcher-aanmelding**
 
-Dit is een logboek voor gebruikt voor het zuiveren van de kwesties van de Verzender. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)voor meer informatie.
+Dit is een logboek voor gebruikt voor het zuiveren van de kwesties van Dispatcher. Zie [Fouten opsporen in uw Apache- en Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)voor meer informatie.
 
 <!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-Wat beproefde praktijken gaan, adviseert u zich aan de configuraties die momenteel in AEM als Cloud Service Maven archetype bestaan. Met deze opties stelt u verschillende loginstellingen en niveaus in voor bepaalde omgevingstypen:
+Wat bedelpraktijken gaan, adviseert u zich met de configuraties die momenteel in AEM als Cloud Service Maven archetype bestaan. Met deze opties stelt u verschillende loginstellingen en niveaus in voor bepaalde omgevingstypen:
 
 * voor `local dev` - en `dev` omgevingen stelt u het logger in op **DEBUG** -niveau op `error.log`
 * voor `stage`, plaats de registreerder aan **WARN** niveau aan `error.log`
@@ -154,14 +155,14 @@ Hieronder vindt u voorbeelden voor elke configuratie:
 
 ### Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
-Naast de globale registrerenmontages, staat AEM als Dienst van de Wolk u toe om specifieke montages voor een individuele dienst te vormen:
+Naast de globale registrerenmontages, staat AEM als Cloud Service u toe om specifieke montages voor de individuele dienst te vormen:
 
 * het specifieke registratieniveau
 * de registreermachine (de dienst OSGi die de logboekberichten levert)
 
 Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
 
-AEM als Cloud Service gebruikt het volgende om logberichten naar bestand te schrijven:
+AEM als Cloud Service gebruikt het volgende om logboekberichten aan dossier te schrijven:
 
 1. Een **dienst** OSGi (registreerder) schrijft een logboekbericht.
 1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
@@ -192,13 +193,13 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 
 >[!NOTE]
 >
-> Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Dienst van de Wolk. Zie [Distribueren naar AEM als Cloud Service](/help/implementing/deploying/overview.md)voor meer informatie over hoe u dit kunt doen.
+>Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie [het Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 **Het FOUTOPSPORINGSlogniveau activeren**
 
 >[!WARNING]
 >
-> Door het deBUG-logniveau wereldwijd te activeren, wordt een grote hoeveelheid informatie gegenereerd die moeilijk te doorzoeken is. Het wordt geadviseerd u het slechts voor de diensten toelaat die het zuiveren vereisen. Voor meer informatie, zie [Loggers en Schrijvers voor de Individuele Diensten](logging.md#loggers-and-writers-for-individual-services).
+>Door het deBUG-logniveau wereldwijd te activeren, wordt een grote hoeveelheid informatie gegenereerd die moeilijk te doorzoeken is. Het wordt geadviseerd u het slechts voor de diensten toelaat die het zuiveren vereisen. Voor meer informatie, zie [Loggers en Schrijvers voor de Individuele Diensten](logging.md#loggers-and-writers-for-individual-services).
 
 Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd.
 Als u het niveau van het FOUTOPSPORINGSlogbestand wilt activeren, stelt u de optie
@@ -235,7 +236,7 @@ U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
 >[!NOTE]
 >
->Wanneer u met Adobe Experience Manager werkt, zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren.
+>Wanneer het werken met Adobe Experience Manager zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren.
 
 In bepaalde omstandigheden kunt u een aangepast logboek met een verschillend logboekniveau willen tot stand brengen. U kunt dit in de repository doen door:
 
