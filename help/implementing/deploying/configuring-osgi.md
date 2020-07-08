@@ -2,7 +2,7 @@
 title: OSGi configureren voor AEM as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # OSGi configureren voor AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
+[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
 OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare en samenwerkende componenten worden gebouwd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Zie de [OSGi-specificatie](https://www.osgi.org/Specifications/HomePage)voor meer informatie.
 
@@ -36,9 +36,9 @@ een OSGi-configuratiebestand wordt gedefinieerd op:
 
 volgend op de configuratie-indeling cfg.json OSGi.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Eerdere versies van AEM ondersteunden OSGi configuratiedossiers gebruikend verschillende dossierformaten zoals .cfg., .config en als het sling van XML:OsgiConfig middeldefinities. Deze formaten worden vervangen door het cfg.json OSGi configuratieformaat.
+>Eerdere versies van AEM ondersteunden OSGi configuratiedossiers gebruikend verschillende dossierformaten zoals .cfg., .config en als het sling van XML:OsgiConfig middeldefinities. Deze formaten worden vervangen door het cfg.json OSGi configuratieformaat.
 
 ## Resolutie van de uitvoermodus {#runmode-resolution}
 
@@ -58,7 +58,7 @@ Wanneer het ontwikkelen plaatselijk, kan een loopmode startparameter worden over
 
 ## Typen OSGi-configuratiewaarden {#types-of-osgi-configuration-values}
 
-Er zijn drie soorten OSGi configuratiewaarden die met AEM als Dienst van de Wolk kunnen worden gebruikt.
+Er zijn drie soorten OSGi configuratiewaarden die met AEM als Cloud Service kunnen worden gebruikt.
 
 1. **Inline waarden**, die waarden zijn die hard-gecodeerd in de configuratie OSGi zijn en in Git worden opgeslagen. Bijvoorbeeld:
 
@@ -76,7 +76,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met AEM als Dienst van de Wolk
    } 
    ```
 
-1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele `dev` runmode in AEM als Dienst van de Wolk is). Bijvoorbeeld:
+1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele `dev` runmode in AEM als Cloud Service is). Bijvoorbeeld:
 
    ```json
    {
@@ -116,16 +116,16 @@ Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waar
 
 ### Wanneer te gebruiken de niet geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en elke AEM als een Cloud Service Development-omgeving. Vermijd het gebruik van niet-geheime omgevingspecifieke configuraties voor AEM als een Cloud Service Stage of Production-omgeving.
+Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en om het even welke AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service. Vermijd het gebruik van niet-geheime omgevingspecifieke configuraties voor AEM als Cloud Service Stage of Production omgevingen.
 
 * Gebruik alleen niet-geheime omgevings-specifieke configuraties voor configuratiewaarden die verschillen tussen ontwikkelomgevingen, inclusief lokale ontwikkelingsinstanties.
 * In plaats daarvan, gebruik de standaard gealigneerde waarden in de configuraties OSGi voor Stadium en Productie niet-geheime waarden.  In verband hiermee wordt het niet aanbevolen om omgevingspecifieke configuraties te gebruiken om het aanbrengen van configuratiewijzigingen tijdens runtime in werkgebied- en productieomgevingen te vergemakkelijken. deze wijzigingen moeten worden ingevoerd via het beheer van de broncode .
 
 ### Wanneer om geheime milieu-specifieke configuratiewaarden te gebruiken {#when-to-use-secret-environment-specific-configuration-values}
 
-AEM als Dienst van de Wolk vereist het gebruik van milieu-specifieke configuraties (`$[secret:SECRET_VAR_NAME]`) voor om het even welke geheime OSGi configuratiewaarden, zoals wachtwoorden, privé API sleutels, of een andere waarden die niet in Git om veiligheidsredenen kunnen worden opgeslagen.
+AEM als Cloud Service vereist het gebruik van milieu-specifieke configuraties (`$[secret:SECRET_VAR_NAME]`) voor om het even welke geheime OSGi configuratiewaarden, zoals wachtwoorden, privé API sleutels, of een andere waarden die niet in Git om veiligheidsredenen kunnen worden opgeslagen.
 
-Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle AEM als milieu&#39;s van de Dienst van de Wolk, met inbegrip van Stadium en Productie op te slaan.
+Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle AEM als milieu&#39;s van de Cloud Service, met inbegrip van Stadium en Productie op te slaan.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Zie [deze pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over het configureren van waarden met de plug-in Cloud Manager voor Adobe I/O CLI.
+>Zie [deze pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over het configureren van waarden met de plug-in Cloud Manager voor Adobe I/O CLI.
 
 ### Aantal variabelen {#number-of-variables}
 
@@ -513,7 +513,7 @@ Er kunnen maximaal 20 variabelen worden gedeclareerd.
 
 ## Overwegingen bij de implementatie voor geheime en omgevingsspecifieke configuratiewaarden {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Omdat de geheime en milieu-specifieke configuratiewaarden buiten Git leven, en daarom geen deel van formele AEM als mechanismen van de de plaatsing van de Dienst van de Wolk uitmaken, zou de klant moeten leiden, besturen en in AEM als implementatieproces van de Dienst van de Wolk integreren.
+Omdat de geheime en milieu specifieke configuratiewaarden buiten Git leven, en daarom geen deel van formele AEM als mechanismen van de plaatsing van de Cloud Service uitmaken, zou de klant moeten leiden, besturen en in AEM als proces van de Cloud Service integreren plaatsing.
 
 Zoals hierboven vermeld, zal het roepen van API de nieuwe variabelen en de waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode opstellen. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
 
