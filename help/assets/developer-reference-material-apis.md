@@ -1,9 +1,9 @@
 ---
-title: 'Middelen-API''s voor beheer van digitale middelen in Adobe Experience Manager als Cloud Service '
+title: 'Elementen-API''s voor beheer van digitale middelen in Adobe Experience Manager als Cloud Service '
 description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 1%
@@ -42,8 +42,9 @@ Belangrijke verschillen in vergelijking met eerdere versies van AEM zijn:
 
 Deze aanpak moet zorgen voor een schaalbaardere en krachtigere verwerking van geüploade bedrijfsmiddelen.
 
-> !![NOTE]
-Als u de clientcode wilt controleren die deze aanpak implementeert, raadpleegt u de open-source [em-upload bibliotheek](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>Als u de clientcode wilt controleren die deze aanpak implementeert, raadpleegt u de open-source [em-upload bibliotheek](https://github.com/adobe/aem-upload)
 
 ### Uploaden starten {#initiate-upload}
 
@@ -114,8 +115,7 @@ Nadat alle delen van een binair bestand zijn geüpload, verzendt u een HTTP POST
 | `replace` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam al bestaan, verwijdert Experience Manager het element en maakt het opnieuw. |
 
 >!![NOTE]
->
-> Als het element al bestaat en noch `createVersion` `replace` noch is opgegeven, werkt Experience Manager de huidige versie van het element bij met het nieuwe binaire element.
+Als het element al bestaat en noch `createVersion` `replace` noch is opgegeven, werkt Experience Manager de huidige versie van het element bij met het nieuwe binaire getal.
 
 Net als bij het initiëringsproces kunnen de volledige aanvraaggegevens informatie voor meer dan één bestand bevatten.
 
@@ -146,15 +146,15 @@ Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-In de Manager van de Ervaring, is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
+In Experience Manager is de verwerking van bedrijfsmiddelen gebaseerd op een **[!UICONTROL Processing Profiles]** configuratie die gebruik maakt van [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
 Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Klanten die een upgrade uitvoeren naar Experience Manager als cloudservice uit eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van middelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
+Klanten die een upgrade naar Experience Manager uitvoeren als Cloud Service van eerdere versies van Experience Manager, kunnen assetmicroservices gebruiken voor de verwerking van bedrijfsmiddelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
 
-De volgende workflowstappen worden in Experience Manager ondersteund als Cloud Service.
+De volgende workflowstappen worden in Experience Manager als Cloud Service ondersteund.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
