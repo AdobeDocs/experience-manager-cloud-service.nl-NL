@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 0%
 De AEM als Cloud Service SDK bestaat uit de volgende artefacten:
 
 * **QuickStart Jar** - De AEM-runtime die wordt gebruikt voor lokale ontwikkeling
-* **Java API Jar** - De Java Jar/Maven-afhankelijkheid die alle toegestane Java API&#39;s beschikbaar maakt die kunnen worden gebruikt om zich te ontwikkelen tegen AEM als Cloud Service. Vroeger Uberjar genoemd
+* **Java API Jar** - De Java Jar/Maven Dependency die alle toegestane Java APIs blootstelt die kunnen worden gebruikt om tegen AEM als Cloud Service te ontwikkelen. Vroeger Uberjar genoemd
 * **Javadoc Jar** - De javadocs voor de Java API Jar
-* **Dispatcher Tools** - De set gereedschappen die wordt gebruikt om zich te ontwikkelen tegen Dispatcher lokaal. Afzonderlijke artefacten voor unix en vensters
+* **Dispatcher Tools** - De set gereedschappen die wordt gebruikt om zich te ontwikkelen tegen Dispatcher. Afzonderlijke artefacten voor unix en vensters
 
-Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werden opgesteld de artefacten hieronder gebruiken. Als de lokale compilatie niet werkt met de Quickstart-jar en u vermoedt dat dit te wijten is aan interfaces die zijn verwijderd uit AEM die als Cloud Service zijn geïmplementeerd, neemt u contact op met de Klantenondersteuning om te bepalen of u toegang nodig hebt. Dit zal veranderingen in het achterste eind vereisen.
+Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werden opgesteld de artefacten hieronder gebruiken. Als de lokale compilatie niet met Quickstart jar werkt en u vermoedt dat het toe te schrijven is aan interfaces die uit AEM die als Cloud Service zijn opgesteld, bereik aan de Steun van de Klant om te bepalen als u toegang nodig hebt. Dit zal veranderingen in het achterste eind vereisen.
 
 * **6.5 Vervangen Java API Jar** - een extra set gekoppelde bestanden die zijn verwijderd sinds AEM 6.5
 * **6.5 Vervangen Javadoc Jar** - de JavaDocs voor de extra reeks verbonden documenten
 
-## De AEM benaderen als SDK van de Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
+## De AEM openen als Cloud Service-SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* U kunt het pictogram **Over Adobe Experience Manager** van de AEM Admin Console controleren om te zien welke versie van AEM u uitvoert op productie.
-* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van de [portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)Softwaredistributie. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
+* U kunt het pictogram **Info Adobe Experience Manager** van de Admin Console AEM controleren om de versie van AEM te weten te komen u op productie loopt.
+* De QuickStart-jar en Dispatcher Tools kunnen als een zip-bestand worden gedownload van de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving.
 * Java API Jar en Javadoc Jar kunnen via gefabriceerde hulpmiddelen, of bevellijn of met uw aangewezen winde worden gedownload.
 * De toegewezen projectruimten moeten verwijzen naar het volgende API Jar-pakket. Naar deze afhankelijkheid moet ook worden verwezen in subpakketformulieren.
 
@@ -40,7 +40,9 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 </dependency>
 ```
 
->[!NOTE] Het versieitem voor de SDK moet overeenkomen met de versie van AEM als Cloud Service. U kunt zien welke versie u gebruikt door u aan te melden bij AEM, dan naar het vraagteken in de rechterbovenhoek van het scherm te gaan en te selecteren **[!UICONTROL About Adobe Experience Manager]**
+>[!NOTE]
+>
+>Het versieitem voor de SDK moet overeenkomen met de versie van AEM als Cloud Service. U kunt zien welke versie u gebruikt door u aan te melden bij AEM, dan naar het vraagteken in de rechterbovenhoek van het scherm te gaan en te selecteren **[!UICONTROL About Adobe Experience Manager]**
 
 
 ## Een lokaal project vernieuwen met een nieuwe SDK-versie {#refreshing-a-local-project-with-a-new-skd-version}
