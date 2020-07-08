@@ -3,7 +3,7 @@ title: Assets, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer assets, mappen en verzamelingen naar Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >[!NOTE]
 >
 >Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
-
 
 ## Assets publiceren naar Brand Portal {#publish-assets-to-bp}
 
@@ -186,7 +185,6 @@ U kunt verzamelingen publiceren of de publicatie ervan ongedaan maken vanuit uw 
 >Contentfragmenten kunnen niet naar Brand Portal worden gepubliceerd. Als u dus een of meerdere contentfragmenten selecteert in AEM Assets, is de actie **[!UICONTROL Publish to Brand Portal]** niet beschikbaar.
 >
 >Als verzamelingen met contentfragmenten van AEM Assets naar Brand Portal worden gepubliceerd, wordt alle content van de map behalve contentfragmenten gerepliceerd naar de Brand Portal-interface.
-
 
 ### Verzamelingen publiceren {#publish-collections}
 
