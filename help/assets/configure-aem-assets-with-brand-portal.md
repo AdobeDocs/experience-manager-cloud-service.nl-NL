@@ -3,7 +3,7 @@ title: AEM Assets as a Cloud Service configureren met Brand Portal
 description: AEM Assets as a Cloud Service configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 37%
@@ -32,7 +32,6 @@ Voor het configureren van de AEM Assets cloud-instantie met een Brand Portal-geb
 >Een Brand Portal-huurder mag slechts met één AEM Assets-wolkenexemplaar worden geconfigureerd.
 >
 >Vorm geen huurder van het Portaal van het Merk met veelvoudige de wolkeninstanties van AEM Assets.
-
 
 ## Vereisten {#prerequisites}
 
@@ -231,8 +230,6 @@ Voer de volgende stappen uit om de rekening te vormen IMS die u in [verkrijgen o
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet deze dan verwijderen en een nieuwe, geldige configuratie maken.
 
-
-
 ### Cloudservice configureren {#configure-the-cloud-service}
 
 Voer de volgende stappen uit om de merkportalcloudservice te configureren:
@@ -343,8 +340,6 @@ In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend 
 >[!NOTE]
 >
 >Er wordt een aanvullende aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal (in het bovenstaande voorbeeld) of als de bovenliggende map is gewijzigd in AEM Assets.
-
-
 
 <!--
 
