@@ -3,7 +3,7 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> De hier beschreven elementverwerking vervangt het `DAM Update Asset` workflowmodel in de vorige versies van Experience Manager. De meeste stappen voor het genereren van standaardvertoningen en het genereren van metagegevens worden vervangen door de verwerking van de asset microservices. Eventuele resterende stappen kunnen worden vervangen door de configuratie van de workflow na verwerking.
+>De hier beschreven elementverwerking vervangt het `DAM Update Asset` workflowmodel in de vorige versies van Experience Manager. De meeste stappen voor het genereren van standaardvertoningen en het genereren van metagegevens worden vervangen door de verwerking van de asset microservices. Eventuele resterende stappen kunnen worden vervangen door de configuratie van de workflow na verwerking.
 
 ## Aan de slag met middelenverwerking {#get-started}
 
@@ -99,9 +99,9 @@ Een lege waarde houdt in dat bij de verwerking van elementen de pixelafmetingen 
 
 #### MIME-regels voor typeintegratie {#mime-type-inclusion-rules}
 
-Wanneer een element van een specifiek MIME-type wordt verwerkt, wordt het MIME-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten MIME-typen voor de weergavespecificatie. Als de weergave overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het element (geblokkeerde lijst).
+Wanneer een element van een specifiek MIME-type wordt verwerkt, wordt het MIME-type eerst gecontroleerd aan de hand van de waarde van de uitgesloten MIME-typen voor de weergavespecificatie. Als deze overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het element (lijst van afgewezen personen).
 
-Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type. Als het MIME-type overeenkomt met de lijst, wordt de vertoning gegenereerd (toegestane lijst).
+Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type en als het overeenkomt met de lijst, wordt de vertoning gegenereerd (lijst van gewenste personen).
 
 #### Speciale FPO-uitvoering {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ De dienst van de Runner van het Werkschema van de Douane (`com.adobe.cq.dam.proc
 >[!NOTE]
 >
 >De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan Experience Manager](/help/implementing/deploying/overview.md) voor informatie over hoe te om een configuratie op te stellen OSGi.
-> OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van AEM, niet rechtstreeks beschikbaar in de cloudservice-implementaties.
+>OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van AEM, niet rechtstreeks beschikbaar in de cloudservice-implementaties.
 
 Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor meer informatie over de standaardworkflowstap die u kunt gebruiken in de naverwerkingsworkflow.
 
