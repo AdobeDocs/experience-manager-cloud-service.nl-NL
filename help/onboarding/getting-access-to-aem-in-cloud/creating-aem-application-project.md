@@ -1,11 +1,11 @@
 ---
-title: AEM Application Project - Cloud Service
-description: AEM Application Project - Cloud Service
+title: AEM-toepassingsproject - Cloud Service
+description: AEM-toepassingsproject - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ Voor een correcte bouw en implementatie met Cloud Manager moeten bestaande AEM-p
 * U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw *pom.xml* - dossiers. De toegang tot met een wachtwoord beveiligde of door het netwerk beveiligde gegevensopslagruimten voor artefacten wordt echter niet ondersteund.
 * Implementeerbare inhoudspakketten worden ontdekt door te zoeken naar *ZIP* -bestanden van inhoudspakketten die zich in een map met de naam *target* bevinden. Elk aantal submodules kan inhoudspakketten produceren.
 
-* Implementeerbare Dispatcher-artefacten worden gedetecteerd door te zoeken naar *ZIP* -bestanden (opnieuw opgenomen in een map met de naam *target*) met mappen met de naam *conf* en *conf.d*.
+* Inzetbare Dispatcher-artefacten worden ontdekt door te zoeken naar *ZIP* -bestanden (opnieuw opgenomen in een map met de naam *target*) met mappen met de naam *conf* en *conf.d*.
 
 * Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd. Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen. Pakketten kunnen van plaatsing worden [overgeslagen](#skipping-content-packages) .
 
@@ -59,7 +59,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 18.04.
 * Apache Maven 3.6.0 is geïnstalleerd.
-* De geïnstalleerde Java-versie is Oracle JDK 8u202.
+* De Java-versie installeerde Oracle JDK 8u202 en 11.0.2.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn:
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 * Maven wordt altijd uitgevoerd met de opdracht: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven wordt geconfigureerd op systeemniveau met een bestand settings.xml dat automatisch de openbare Adobe **Artefact** -opslagplaats omvat. (Raadpleeg de [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie.)
 
+### Java 11 gebruiken {#using-java-11}
+
+Cloud Manager ondersteunt nu het maken van klantprojecten met zowel Java 8 als Java 11. Standaard worden projecten gemaakt met behulp van Java 8. Klanten die van plan zijn Java 11 in hun projecten te gebruiken, kunnen dit doen gebruikend de Insteekmodule van Toolketens [Apache Maven](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt uitziet:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>De ondersteunde leveranciers zijn Oracle- en Sun Microsystems en de ondersteunde versies zijn 1,8, 1,11 en 11.
 
 ## Omgevingsvariabelen {#environment-variables}
 
@@ -258,7 +289,7 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 
 >[!NOTE]
 >
->Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die voor het uitvoeren van Adobe Experience Manager wordt gebruikt. Neem contact op met uw Adobe-vertegenwoordiger als u een systeempakket op de AEM-omgeving wilt installeren.
+>Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die wordt gebruikt voor het uitvoeren van Adobe Experience Manager. Neem contact op met uw Adobe-vertegenwoordiger als u een systeempakket op de AEM-omgeving wilt installeren.
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
