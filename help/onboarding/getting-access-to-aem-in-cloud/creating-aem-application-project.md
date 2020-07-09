@@ -2,9 +2,9 @@
 title: AEM-toepassingsproject - Cloud Service
 description: AEM-toepassingsproject - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1251'
 ht-degree: 10%
 
 ---
@@ -94,16 +94,17 @@ Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
-        </plugin>
 ```
 
 >[!NOTE]
->De ondersteunde leveranciers zijn Oracle- en Sun Microsystems en de ondersteunde versies zijn 1,8, 1,11 en 11.
+>* De ondersteunde leveranciers zijn `oracle` en `sun`.
+>* De ondersteunde versies zijn `1.8`, `1.11`en `11`.
+
 
 ## Omgevingsvariabelen {#environment-variables}
 
