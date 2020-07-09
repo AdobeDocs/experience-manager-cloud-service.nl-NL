@@ -2,10 +2,10 @@
 title: AEM-toepassingsproject - Cloud Service
 description: AEM-toepassingsproject - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
+source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 10%
+source-wordcount: '1120'
+ht-degree: 11%
 
 ---
 
@@ -125,31 +125,6 @@ Ter ondersteuning hiervan voegt Cloud Manager deze standaardomgevingsvariabelen 
 | CM_PROGRAM_NAME | De naam van het programma |
 | ARTIFACTS_VERSION | Voor een stadium of productiepijplijn, de synthetische versie die door Cloud Manager wordt geproduceerd |
 | CM_AEM_PRODUCT_VERSION | De releasenaam |
-
-
-### Aangepaste omgevingsvariabelen {#custom-environ-variables}
-
-In sommige gevallen kan het constructieproces van een klant afhangen van specifieke configuratievariabelen die niet geschikt zijn om in de opslagplaats voor it te plaatsen. Met Cloud Manager kunnen deze variabelen door een Adobe-vertegenwoordiger per klant worden geconfigureerd. Deze variabelen worden opgeslagen in een veilige opslagplaats en zijn slechts zichtbaar in de bouwstijlcontainer voor de specifieke klant. Klanten die deze functie willen gebruiken, moeten contact opnemen met hun Adobe-vertegenwoordiger om hun variabelen te configureren.
-
-Zodra gevormd, zullen deze variabelen als omgevingsvariabelen beschikbaar zijn. Als u deze eigenschappen als Maven-eigenschappen wilt gebruiken, kunt u ernaar verwijzen in het bestand pom.xml, mogelijk binnen een profiel zoals hierboven beschreven:
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->Namen van omgevingsvariabelen mogen alleen alfanumerieke tekens en onderstrepingstekens (_) bevatten. Volgens de conventie moeten de namen allemaal hoofdletters zijn.
 
 ## GeMaven profielen activeren in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
