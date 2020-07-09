@@ -1,11 +1,11 @@
 ---
-title: Omgevingen beheren - Cloud-service
-description: Omgevingen beheren - Cloud-service
+title: Omgevingen beheren - Cloud Service
+description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
    De volgende tabel geeft een overzicht van de typen omgeving en hun kenmerken:
 
-   | Naam | Auteurslijst | Lijst publiceren | Gebruiker kan maken | Gebruiker kan | Pijpleiding die in verband kan worden gebracht met het milieu |
+   | Naam | Auteurlaag | Lijst publiceren | Gebruiker kan maken | Gebruiker kan | Pijpleiding die in verband kan worden gebracht met het milieu |
    |--- |--- |--- |--- |---|---|
    | Productie | Ja | Ja als sites zijn opgenomen | Ja | Nee | Productiepijpleiding |
    | Werkgebied | Ja | Ja als sites zijn opgenomen | Ja | Nee | Productiepijpleiding |
@@ -41,8 +41,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
 
 1. Klik op **Omgeving** toevoegen om een omgeving toe te voegen. Deze knop is toegankelijk via het scherm **Omgevingen** .
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    De optie **Omgeving** toevoegen is ook beschikbaar op de **milieukeuren** wanneer het programma geen omgevingen bevat.
 
@@ -74,12 +73,12 @@ Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programm
 ![](assets/manage-environments2.png)
 
 
-De optie **Bijwerken** is beschikbaar in het vervolgkeuzemenu in de **milieucaart** .
+De optie **Bijwerken** is beschikbaar via de **Omgevingskaart** .
 Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Het selecteren van dit van dropdown menu zal een Manager van de Plaatsing toestaan om de pijpleiding verbonden aan dit milieu aan de recentste versie bij te werken en dan de pijpleiding uit te voeren.
+Het selecteren van deze optie zal een Manager van de Plaatsing toestaan om de pijpleiding verbonden aan dit milieu aan de recentste versie bij te werken en dan de pijpleiding uit te voeren.
 
 Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de pijpleiding uit te voeren.
 
