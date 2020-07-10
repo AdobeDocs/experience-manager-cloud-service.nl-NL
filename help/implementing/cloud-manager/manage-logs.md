@@ -2,10 +2,10 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
@@ -20,7 +20,7 @@ Deze bestanden kunnen worden gedownload via de gebruikersinterface van de pagina
 
 Of op de pagina **Omgevingen** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Nofferte]
 >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
@@ -38,7 +38,7 @@ Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden,
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Met de volgende opdracht kunt u logboeken trappen:
+Met de volgende opdracht kunt u logbestanden als tailing weergeven:
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
