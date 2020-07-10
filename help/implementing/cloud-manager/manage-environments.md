@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ Updates van werkgebied- en productieomgevingen worden automatisch beheerd door A
 
 Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Als een omgeving niet de nieuwste openbaar beschikbare AEM-versie uitvoert, wordt in de status op de milieuvriendenkaart op het startscherm de **UPDATE-BESCHIKBAAR** weergegeven.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 De optie **Bijwerken** is beschikbaar via de **Omgevingskaart** .
@@ -86,10 +86,14 @@ Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de 
 
 De gebruiker met de vereiste toestemmingen zal een milieu van de Ontwikkeling kunnen schrappen.
 
-De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieucaart** .
-Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
+De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieucaart** . Klik op **...** voor een ontwikkelomgeving die u wilt verwijderen.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+U kunt ook een omgeving verwijderen als u op **Details** klikt op de kaart **Omgevingen** .
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
@@ -103,7 +107,7 @@ Alleen gebruikers met de rol Developer hebben toegang tot de **Developer Console
 Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) voor meer informatie.
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 U kunt deze optie ook selecteren via de knop **Beheren** als u op **Details** van de kaart **Omgevingen** klikt.
 
