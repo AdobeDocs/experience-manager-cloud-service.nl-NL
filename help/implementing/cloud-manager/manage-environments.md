@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 8%
+source-wordcount: '753'
+ht-degree: 7%
 
 ---
 
@@ -74,7 +74,7 @@ Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programm
 
 
 De optie **Bijwerken** is beschikbaar via de **Omgevingskaart** .
-Deze optie is ook beschikbaar via de knop **Beheren** als u op **Details** van de **kaart voor omgevingen** klikt.
+Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Update**, zoals aangetoond in hieronder figuur:
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieuc
 
 ![](assets/environ-delete.png)
 
-U kunt ook een omgeving verwijderen als u op **Details** klikt op de kaart **Omgevingen** .
+De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart **Omgevingen** . De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Verwijderen**, zoals in onderstaande afbeelding wordt getoond:
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe
 
 ![](assets/environ-dev-console.png)
 
-U kunt deze optie ook selecteren via de knop **Beheren** als u op **Details** van de kaart **Omgevingen** klikt.
+Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u een omgeving selecteert, klikt u op **...** en selecteer **Developer Console**.
 
