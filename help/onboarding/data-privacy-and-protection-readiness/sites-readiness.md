@@ -2,9 +2,9 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager als gereedheid voor Cloud Servicen
 description: 'Leer over Adobe Experience Manager als steun van de Plaatsen van de Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -30,11 +30,11 @@ Zie het [Adobe Privacy Center](https://www.adobe.com/privacy.html)voor meer info
 >
 >Zie [Adobe Experience Manager als Gereedheid van de Cloud Service voor de Regels](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) van de Bescherming van Gegevens en van de Privacy van Gegevens voor meer details.
 
-## AEM Author-laag {#aem-author-tier}
+## AEM-auteurlaag {#aem-author-tier}
 
 Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de documentatie [van](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
-## AEM Publish-laag {#aem-publish-tier}
+## AEM-publicatielaag {#aem-publish-tier}
 
 Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden behandeld in de documentatie [van de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
@@ -68,13 +68,9 @@ Naar Weigeren:
       Inschakelen - Neem mij op in aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` uitschakelcookie niet) - Klik hier.
    Voer de bovenstaande stappen uit om de werkelijke koppelingen te openen.
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > In het gedeelte **Privacybeleid** van de [Gebruiksvoorwaarden](https://marketing.adobe.com/resources/help/en_US/terms.html)vindt u een nadere beschrijving.
+   > Er is een nadere beschrijving in de **2. Privacy.** van de Algemene Gebruiksvoorwaarden van [Adobe](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -177,6 +173,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 
@@ -206,6 +203,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 
