@@ -2,7 +2,7 @@
 title: Video
 description: Leer hoe u met video werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '9686'
 ht-degree: 9%
@@ -126,7 +126,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -567,7 +567,7 @@ Of als u de standaardlabels wilt gebruiken in AEM, kunt u deze taak overslaan en
 
 >[!NOTE]
 >
->Nadat de cloudservice is geconfigureerd, is geen aanvullende configuratie vereist om de publicatie-replicatieagent voor YouTube als dit punt in te schakelen. De reden is dat deze functie was ingeschakeld toen de configuratie van de cloudservice werd opgeslagen.
+>Nadat de cloudservice is geconfigureerd, is geen aanvullende configuratie vereist om de publicatie-replicatieagent voor YouTube nu in te schakelen. De reden is dat deze functie was ingeschakeld toen de configuratie van de cloudservice werd opgeslagen.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
