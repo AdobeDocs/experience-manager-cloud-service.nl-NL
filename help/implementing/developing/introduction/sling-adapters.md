@@ -2,7 +2,7 @@
 title: Sling Adapters gebruiken
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Sling Adapters gebruiken{#using-sling-adapters}
+# Sling Adapters gebruiken {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) biedt een [adapterpatroon](https://sling.apache.org/site/adapters.html) aan om voorwerpen gemakkelijk te vertalen die de [Aanpasbare](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface uitvoeren. Deze interface biedt een algemene methode [adjustTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) die het object omzet in het klassetype dat als argument wordt doorgegeven.
 
