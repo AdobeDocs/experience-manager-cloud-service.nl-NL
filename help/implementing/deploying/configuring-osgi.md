@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2691'
 ht-degree: 1%
 
 ---
@@ -509,7 +509,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### Aantal variabelen {#number-of-variables}
 
-Er kunnen maximaal 20 variabelen worden gedeclareerd.
+Er kunnen maximaal 200 variabelen per omgeving worden gedeclareerd.
 
 ## Overwegingen bij de implementatie voor geheime en omgevingsspecifieke configuratiewaarden {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
