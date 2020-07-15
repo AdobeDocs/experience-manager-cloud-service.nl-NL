@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.7.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.7.0
 translation-type: tm+mt
-source-git-commit: d800ffd57826251031206290405ec1dd5febede8
+source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -49,3 +49,20 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * De validatie van omgevingsnamen had een off-by-one fout.
 
 * Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
+
+## Nieuwe functies in de Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer.
+
+### Bug Fixes {#cra-bug-fixes}
+
+* Eerdere versie van de CRA kan niet worden uitgevoerd op Adobe Experience Manager (AEM) 6.1. Er is expliciete ondersteuning toegevoegd om gebruikers in de beheerdersgroep toe te staan.
+
+   Raadpleeg [CRA installeren op AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) voor meer informatie.
+
+* De tijdstempel voor verlopen die in het samenvattingsrapport wordt weergegeven, is onjuist.
+
+* CRA detecteerde dubbele aangepaste componenten.
+
+* Op AEM 6.1 werd de inhoudsinspectie afgesloten voordat de volledige inspectie werd voltooid. Uitzonderingsafhandeling is toegevoegd, zodat de controle kan overslaan en doorgaan totdat de volledige inspectie is voltooid.
+
