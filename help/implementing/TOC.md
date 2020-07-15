@@ -2,10 +2,10 @@
 sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 92%
+source-wordcount: '236'
+ht-degree: 97%
 
 ---
 
@@ -29,15 +29,17 @@ ht-degree: 92%
    + [AEM-projectrepositorystructuurpakket](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](developing/introduction/develop-wknd-tutorial.md)
-   + [Bedekkingen in AEM als Cloud Service](developing/introduction/overlays.md)
-   + [Het gebruiken van de Verschuivende Fusie van het Middel in AEM als Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](developing/introduction/develop-wknd-tutorial.md)
+   + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
+   + [Sling Adapters gebruiken](developing/introduction/sling-adapters.md)
+   + [De Sling Resource Merger in AEM as a Cloud Service gebruiken](developing/introduction/sling-resource-merger.md)
+   + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
-   + [Inhoudsfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
-   + [Inhoudsfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
+   + [Contentfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Zoekformulieren configureren](developing/extending/search-forms.md)
    + [De Rich Text-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)
    + [De RTE-insteekmodules configureren](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
