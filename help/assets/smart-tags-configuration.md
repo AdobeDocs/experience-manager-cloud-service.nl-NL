@@ -2,11 +2,11 @@
 title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van assets en de snelheid van content te verbeteren.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangescha
 
 ## Integreren met Adobe Developer Console {#aio-integration}
 
-Voordat u afbeeldingen kunt voorzien van tags met gebruik van SCS, moet u [!DNL Adobe Experience Manager] integreren met de Smart Tags-service via Adobe Developer Console. Bij de back-end verifieert de [!DNL Experience Manager]-server uw servicegegevens met de Adobe Developer Console-gateway voordat uw verzoek naar de service wordt doorgestuurd.
+Voordat u afbeeldingen kunt voorzien van tags met gebruik van SCS, moet u [!DNL Adobe Experience Manager] integreren met de Smart Tags-service via Adobe Developer Console. Bij de back-end verifieert de [!DNL Experience Manager]-server uw servicegegevens met de Adobe Developer Console-gateway voordat uw aanvraag naar de service wordt doorgestuurd.
 
 * Maak een configuratie in [!DNL Experience Manager] om een openbare sleutel te genereren. [Verkrijg een openbaar certificaat voor OAuth-integratie.](#obtain-public-certificate)
 * [Maak een integratie in Adobe Developer Console en upload de gegenereerde openbare sleutel.](#create-aio-integration)
-* [Configureer slimme tags](#configure-smart-content-service) in uw [!DNL Experience Manager] exemplaar met behulp van de API-sleutel en andere referenties uit de Adobe Developer Console.
+* [Configureer Smart Tags](#configure-smart-content-service) in uw [!DNL Experience Manager] instantie met de API-sleutel en andere referenties van Adobe Developer Console.
 * [Test de configuratie](#validate-the-configuration).
-* [Opnieuw configureren na verlopen](#certrenew)van certificaat.
+* [Configureer opnieuw na het verlopen van het certificaat](#certrenew).
 
 ### Vereisten voor Adobe Developer Console-integratie {#prerequisite-for-aio-integration}
 
@@ -44,7 +44,7 @@ Voordat u de Smart Tags-functie kunt gebruiken, moet u de volgende stappen uitvo
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Console. U maakt een certificaat vanuit [!DNL Experience Manager].
 
-1. Ga in de [!DNL Experience Manager]-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Ga in de [!DNL Experience Manager]-gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
 1. Ga naar de pagina [!UICONTROL Adobe IMS Configurations] en klik op **[!UICONTROL Create]**. In het menu **[!UICONTROL Cloud Solution]** selecteert u **[!UICONTROL Smart Tags]**.
 
@@ -71,7 +71,7 @@ Om de Smart Tags-functie te gebruiken moet u een integratie in Adobe Developer C
 
 Om de integratie te configureren gebruikt u de waarden in de velden Payload, Client Secret, Authorization Server en API Key uit de Adobe Developer Console-integratie.
 
-1. Ga in de [!DNL Experience Manager]-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Ga in de [!DNL Experience Manager]-gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 1. Ga naar de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** en geef de gewenste **[!UICONTROL Title]** op.
 1. Geef in het veld **[!UICONTROL Authorization Server]** de `https://ims-na1.adobelogin.com`-URL op.
 1. Geef in het veld **[!UICONTROL API Key]** de waarde **[!UICONTROL Client ID]** op van [!DNL Adobe Developer Console].
@@ -82,7 +82,7 @@ Om de integratie te configureren gebruikt u de waarden in de velden Payload, Cli
 
 Nadat u de configuratie hebt voltooid, volgt u deze stappen om de configuratie te bevestigen.
 
-1. Ga in de [!DNL Experience Manager]-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Ga in de [!DNL Experience Manager]-gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
 1. Selecteer de Smart Tags-configuratie. Klik op **[!UICONTROL Check Health]** op de werkbalk. Klik op **[!UICONTROL Check]**. Een dialoogvenster met een [!UICONTROL Healthy configuration]-bericht bevestigt dat de configuratie goed functioneert.
 
@@ -90,7 +90,7 @@ Nadat u de configuratie hebt voltooid, volgt u deze stappen om de configuratie t
 
 ### Opnieuw configureren als een certificaat verloopt {#certrenew}
 
-Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderstaande stappen uit om een nieuw certificaat toe te voegen. U kunt een verlopen certificaat niet vernieuwen.
+Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderstaande stappen uit om een nieuw certificaat toe te voegen. U kunt een verlopen certificaat niet verlengen.
 
 1. Meld u als beheerder aan bij uw [!DNL Experience Manager]-implementatie. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -101,7 +101,7 @@ Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderst
 
    *Afbeelding: Verwijder de bestaande`similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
 
-1. Ga in de [!DNL Experience Manager]-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open de beschikbare Smart Tags-configuratie. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate]**.
+1. Ga in de [!DNL Experience Manager]-gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open de beschikbare Smart Tags-configuratie. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate]**.
 
 1. Open [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande service in het project. Upload en configureer het nieuwe certificaat. Zie de instructies in [Adobe Developer Console-integratie maken](#create-aio-integration) voor meer informatie over de configuratie.
 
