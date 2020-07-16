@@ -2,9 +2,9 @@
 title: AEM-toepassingsproject - Cloud Service
 description: AEM-toepassingsproject - Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1138'
 ht-degree: 11%
 
 ---
@@ -72,6 +72,9 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 * Elke bouw wordt gedaan op een ongerepte milieu; de bouwstijlcontainer houdt geen staat tussen uitvoeringen.
 * Maven wordt altijd uitgevoerd met de opdracht: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven wordt geconfigureerd op systeemniveau met een bestand settings.xml dat automatisch de openbare Adobe **Artefact** -opslagplaats omvat. (Raadpleeg de [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie.)
+
+>[!NOTE]
+>Hoewel in Cloud Manager geen specifieke versie van de versie wordt gedefinieerd, moet de gebruikte versie minstens `jacoco-maven-plugin``0.7.5.201505241946`zijn.
 
 ### Java 11 gebruiken {#using-java-11}
 
