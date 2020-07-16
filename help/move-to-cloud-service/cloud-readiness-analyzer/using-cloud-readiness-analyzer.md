@@ -1,11 +1,11 @@
 ---
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1871'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Het CRA-rapport wordt samengesteld met de uitvoer van de [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)-functie van Adobe Experience Manager (AEM). De versie van Pattern Detector die door CRA wordt gebruikt, is opgenomen in het installatiepakket van CRA.
 
-* CRA may only be run by the **admin** user or a user in the **administrators** group.
+* CRA kan alleen worden uitgevoerd door de **admin**-gebruiker of een gebruiker in de **beheerders** groep.
 
 * CRA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
 
@@ -32,11 +32,11 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Het maken van een CRA-rapport kan flink wat tijd in beslag nemen, van enkele minuten tot een paar uur. De benodigde tijd is in hoge mate afhankelijk van de grootte en aard van de AEM-repository-content, de AEM-versie en andere factoren.
 
-* Vanwege de tijd die nodig is om de rapportinhoud te produceren, gebeurt dit in een achtergrondproces, waarbij de data in cache worden opgeslagen. Het bekijken en downloaden van het rapport gaat relatief snel, omdat hierbij de inhoud in het cachegeheugen wordt opgehaald, totdat het geheugen verloopt of het rapport uitdrukkelijk wordt vernieuwd. Tijdens de generatie van de rapportinhoud kunt u uw browsertabblad sluiten en later terugkeren om het rapport te bekijken zodra de inhoud in het cachegeheugen beschikbaar is.
+* Vanwege de tijd die nodig is om de rapportcontent te produceren, gebeurt dit in een achtergrondproces, waarbij de data in cache worden opgeslagen. Het bekijken en downloaden van het rapport gaat relatief snel, omdat hierbij de content in het cachegeheugen wordt opgehaald, totdat het geheugen verloopt of het rapport uitdrukkelijk wordt vernieuwd. Tijdens de generatie van de rapportcontent kunt u uw browsertabblad sluiten en later terugkeren om het rapport te bekijken zodra de content in het cachegeheugen beschikbaar is.
 
 ## Beschikbaarheid {#availability}
 
-De Cloud Readiness Analyzer kan als zip- dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+De Content Readiness Analyzer-tool kan als ZIP-bestand worden gedownload van de Software Distribution-portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
 >Download de Cloud Readiness Analyzer van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
@@ -51,7 +51,7 @@ In deze sectie wordt beschreven hoe u het Cloud Readiness Analyzer-rapport bekij
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Zodra u op **Cloud Readiness Analyzer** klikt, wordt het rapport aangemaakt en vervolgens weergegeven.
+1. Zodra u op **Cloud Readiness Analyzer** klikt, wordt het rapport gemaakt en vervolgens weergegeven.
 
    >[!NOTE]
    >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
@@ -81,9 +81,9 @@ Wanneer de Cloud Readiness Analyzer-tool wordt uitgevoerd in de AEM-instantie, w
 Het rapport is als volgt ingedeeld:
 
 * **Overzicht van rapport**: Informatie over het rapport zelf. het overzicht biedt de volgende gegevens:
-   * **Tijd van rapport**: Tijdstip waarop de rapportinhoud is gegenereerd en voor het eerst beschikbaar gesteld.
-   * **Vervaltijd**: Tijdstip waarop de cache-inhoud verloopt.
-   * **Tijdsperiode voor genereren**: De benodigde tijd om de rapportinhoud te genereren.
+   * **Tijd van rapport**: Tijdstip waarop de rapportcontent is gegenereerd en voor het eerst beschikbaar gesteld.
+   * **Vervaltijd**: Tijdstip waarop de cachecontent verloopt.
+   * **Tijdsperiode voor genereren**: De benodigde tijd om de rapportcontent te genereren.
    * **Aantal bevindingen**: Het totale aantal bevindingen in het rapport.
 * **Systeemoverzicht**: Informatie over het AEM-systeem waarop CRA is uitgevoerd.
 * **Categorieën voor bevindingen**: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie worden behandeld. Elke sectie bevat de volgende items: categorienaam, subtypen, aantal en belang, samenvatting, koppeling naar categoriedocumentatie en individuele informatie over de bevindingen.
@@ -102,7 +102,7 @@ Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 
 ## Het Cloud Readiness Analyzer CSV-rapport interpreteren {#cra-csv-report}
 
-Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het Cloud Readiness Analyzer-rapport gemaakt op basis van de inhoudcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
+Wanneer u op de optie **CSV** van uw AEM-instantie klikt, wordt de CSV-indeling van het Cloud Readiness Analyzer-rapport gemaakt op basis van de contentcache en geretourneerd naar uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
 
 Als het cachegeheugen is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
 
@@ -131,7 +131,7 @@ De volgende URL&#39;s zijn beschikbaar voor HTTP-toegang, waarbij `<host>` de ho
 * `http://<host>/apps/readiness-analyzer/analysis/result.csv` voor de CSV-indeling
 * `http://<host>/apps/readiness-analyzer/analysis/result.tsv` voor de TSV-indeling
 
-### Een HTTP-verzoek uitvoeren {#executing-http-request}
+### Een HTTP-aanvraag uitvoeren {#executing-http-request}
 
 De HTTP-interface kan op een aantal manieren worden gebruikt.
 
@@ -151,7 +151,7 @@ De volgende HTTP-headers worden door deze interface gebruikt:
 
 De volgende handige HTTP-queryparameters zijn beschikbaar wanneer HTTP-headers niet gemakkelijk kunnen worden gebruikt:
 
-* `max-age` (getal, optioneel): Geeft de levensduur van de cache op in seconden. Dit getal moet 0 of hoger zijn. De standaardlevensduur is 86.400 seconden. Dit betekent dat een nieuwe cache, zonder deze parameter of overeenkomstige header, 24 uur lang kan worden gebruikt om verzoeken te &#39;bedienen&#39; voordat het rapport opnieuw moet worden geproduceerd. Door gebruik van `max-age=0` wordt de cache gewist en het rapport opnieuw gegenereerd. Onmiddellijk na dit verzoek wordt de versheidslevensduur teruggezet naar de vorige waarde die niet gelijk is aan nul.
+* `max-age` (getal, optioneel): Geeft de levensduur van de cache op in seconden. Dit getal moet 0 of hoger zijn. De standaardlevensduur is 86.400 seconden. Dit betekent dat een nieuwe cache, zonder deze parameter of overeenkomstige header, 24 uur lang kan worden gebruikt om aanvragen te &#39;bedienen&#39; voordat het rapport opnieuw moet worden geproduceerd. Door gebruik van `max-age=0` wordt de cache gewist en het rapport opnieuw gegenereerd. Onmiddellijk na deze aanvraag wordt de versheidslevensduur teruggezet naar de vorige waarde die niet gelijk is aan nul.
 * `respond-async` (Booleaans, optioneel): Geeft aan of de respons asynchroon moet worden aangeboden. Als u `respond-async=true` gebruikt wanneer de cache verouderd is, retourneert de server een respons van `202 Accepted, processing cache`. In dit geval wordt er niet gewacht op het opnieuw gegenereerde rapport of de vernieuwde cache. Als de cache vernieuwd is, heeft deze parameter geen effect. De standaardwaarde is `false`. Dit houdt in dat de server synchroon reageert als deze parameter of de overeenkomstige header niet worden toegepast. Dit kan erg lang duren en een aanpassing van de maximale responstijd voor de HTTP-client vereisen.
 
 Wanneer zowel de HTTP-header en de overeenkomstige queryparameter aanwezig zijn, heeft de queryparameter prioriteit.
@@ -159,7 +159,7 @@ Wanneer zowel de HTTP-header en de overeenkomstige queryparameter aanwezig zijn,
 De volgende opdracht vormt een eenvoudige manier om de productie van het rapport via de HTTP-interface te starten:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Zodra een verzoek is ingediend, hoeft de client niet actief te zijn voor het produceren van het rapport. Het rapport kan worden gemaakt doordat één client een HTTP GET-verzoek indient. Nadat het rapport is gemaakt, kan het vanuit de cache worden bekeken door een andere client of in de CSV-tool in de gebruikersinterface binnen AEM.
+Zodra een aanvraag is ingediend, hoeft de client niet actief te zijn voor het produceren van het rapport. Het rapport kan worden gemaakt doordat één client een HTTP GET-aanvraag indient. Nadat het rapport is gemaakt, kan het vanuit de cache worden bekeken door een andere client of in de CSV-tool in de gebruikersinterface binnen AEM.
 
 ### Respons {#http-responses}
 
@@ -167,28 +167,28 @@ De volgende responswaarden zijn mogelijk:
 
 * `200 OK`: De respons bevat bevindingen van de Pattern Detector die zijn gegenereerd tijdens de vernieuwingslevensduur van de cache.
 * `202 Accepted, processing cache`: Geboden bij asynchrone respons om aan te geven dat de cache verouderd is en dat er een vernieuwingsbewerking wordt uitgevoerd.
-* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met het verzoek. Een bericht in de indeling voor probleemdetails (zie [RFC 7807](https://tools.ietf.org/html/rfc7807)) voor meer informatie.
-* `401 Unauthorized`: Het verzoek is niet ingewilligd.
+* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in de indeling voor probleemdetails (zie [RFC 7807](https://tools.ietf.org/html/rfc7807)) voor meer informatie.
+* `401 Unauthorized`: De aanvraag is niet ingewilligd.
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in de indeling voor probleemdetails biedt meer informatie.
-* `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere respons en dit verzoek niet tijdig kan uitvoeren. Dit gebeurt alleen bij synchrone verzoeken. Een bericht in de indeling voor probleemdetails biedt meer informatie.
+* `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere respons en deze aanvraag niet tijdig kan uitvoeren. Dit gebeurt alleen bij synchrone aanvragen. Een bericht in de indeling voor probleemdetails biedt meer informatie.
 
-## Beheerdersgegevens
+## Beheerdersinformatie
 
 ### Levensduur van cache aanpassen {#cache-adjustment}
 
 Standaard is de levensduur van de CRA-cache 24 uur. Deze standaardwaarde is geschikt voor de meeste toepassingen van CRA. De gebruiker beschikt namelijk ook over de optie om een rapport te vernieuwen en de cache te regenereren, zowel in de AEM-instantie als in de HTTP-interface. Als het erg lang duurt om een rapport te maken in de AEM-instantie, kunt u de levensduur van de cache aanpassen om de regeneratie van het rapport te minimaliseren.
 
-De waarde voor de levensduur is opgeslagen als de eigenschap `maxCacheAge` op de volgende repository-node:
+De langetermijnwaarde is opgeslagen als de eigenschap `maxCacheAge` op de volgende repository-node:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
 De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beheerder kan de levensduur aanpassen met CRX/DE Lite.
 
 ### Installeren op AEM 6.1 {#installing-on-aem61}
 
-CRA gebruikt een gebruikersrekening van de systeemdienst genoemd `repository-reader-service` om de Detector van het Patroon uit te voeren. Deze account is beschikbaar op AEM 6.2 en hoger. In AEM 6.1 moet dit account worden aangemaakt *voordat* een CRA kan worden geïnstalleerd door de volgende stappen uit te voeren:
+CRA gebruikt een systeemservicegebruikersaccount genaamd `repository-reader-service` om de Pattern Detector uit te voeren. Dit account is beschikbaar op AEM 6.2 en hoger.   In AEM 6.1 moet dit account worden gemaakt *voordat* een CRA kan worden geïnstalleerd door de volgende stappen uit te voeren:
 
-1. Volg de instructies bij het [Creëren van een nieuwe de dienstgebruiker](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) om een gebruiker tot stand te brengen. Stel de gebruikersnaam in op `repository-reader-service` en laat het tijdelijke pad leeg en klik op het groene vinkje.
+1. Volg de instructies bij het [Nieuwe servicegebruiker maken](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) om een gebruiker te maken. Stel de UserID in op `repository-reader-service` en laat het tussenpad leeg en klik op het groene vinkje.
 
-2. Volg de instructies bij het [Leiden Gebruikers en Groepen](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifiek de instructies voor het Toevoegen van Gebruikers aan een Groep om de `repository-reader-service` gebruiker aan de `administrators` groep toe te voegen.
+2. Volg de instructies bij [Gebruikers en groepen beheren](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), met name de instructies voor het toevoegen van gebruikers aan een groep om de `repository-reader-service`-gebruiker aan de groep `administrators` toe te voegen.
 
-3. Installeer het CRA-pakket via Package Manager op uw AEM-broninstantie. (Dit zal de noodzakelijke configuratiewijziging aan de configuratie ServiceUserMapper voor de gebruiker van de `repository-reader-service` systeemdienst toevoegen.)
+3. Installeer het CRA-pakket via Package Manager op uw AEM-broninstantie. (Dit zal de noodzakelijke configuratiewijziging toevoegen aan de ServiceUserMapper-configuratie voor de gebruiker van de `repository-reader-service`-systeemservicegebruiker.)
