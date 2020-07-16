@@ -1,11 +1,11 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 97%
    + [Overzicht van metadata](manage-metadata.md)
    + [Integratie met Adobe Creative Cloud](aem-cc-integration-best-practices.md)
    + [Metadata toevoegen of bewerken](meta-edit.md)
-   + [Map-assets en verzamelingen controleren](bulk-approval.md)
+   + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Assets Insights gebruiken en configureren](assets-insights.md)
    + [Asynchrone taken](asynchronous-jobs.md)
    + [Metadataprofielen](metadata-profiles.md)
@@ -50,7 +50,7 @@ ht-degree: 97%
    + [Facetten doorzoeken](search-facets.md)
    + [Asset-editor uitbreiden](extend-asset-editor.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Ondersteuning voor inhoudsfragmenten in HTTP-API van AEM Assets](assets-api-content-fragments.md)
+   + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](assets-api-content-fragments.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
