@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.7.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.7.0
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,10 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * De validatie van omgevingsnamen had een off-by-one fout.
 
 * Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
+
+### Bekende problemen {#known-issues}
+
+* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, is de _minimale_ versie van de Jacoco-plug-in nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.
 
 ## Nieuwe functies in de Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
