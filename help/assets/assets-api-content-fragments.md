@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als de Fragments van de Inhoud van de Cloud Service Steun in Activa HTTP API
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Content Fragments in Assets HTTP API.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ De REST API van Middelen stelt toegang tot de eigenschappen van een omslag bloot
 
 Als een element wordt gevraagd, zal de reactie zijn meta-gegevens terugkeren; zoals titel, naam en andere informatie zoals gedefinieerd in het desbetreffende elementschema.
 
-De binaire gegevens van een element worden blootgesteld als verbinding SIREN van type `content` (die ook als `rel attribute`) wordt bekend.
+De binaire gegevens van een element worden blootgesteld als verbinding SIREN van type `content`.
 
 Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven als onderliggende entiteiten, waarbij één uitzondering een miniatuuruitvoering is, die wordt weergegeven als een koppeling van het type `thumbnail` ( `rel="thumbnail"`).
 
@@ -244,7 +244,7 @@ Gekoppelde inhoud wordt momenteel niet weergegeven.
 
 Het gebruik kan verschillen afhankelijk van of u een auteur AEM of publicatiemilieu, samen met uw specifiek gebruiksgeval gebruikt.
 
-* Het maken is strikt gebonden aan een instantie van de auteur ([en er is momenteel geen manier om een fragment te repliceren om te publiceren met behulp van deze API](/help/assets/assets-api-content-fragments.md#limitations)).
+* Het wordt sterk aanbevolen dat het maken is gebonden aan een instantie van de auteur ([en momenteel is er geen manier om een fragment te repliceren voor publicatie met deze API](/help/assets/assets-api-content-fragments.md#limitations)).
 * De levering is mogelijk van beide, aangezien AEM gevraagde inhoud slechts in formaat JSON dient.
 
    * Opslag en levering van een AEM-auteur-instantie zou voldoende moeten zijn voor toepassingen achter de firewall en in de mediabibliotheek.
