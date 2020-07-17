@@ -2,15 +2,15 @@
 title: Adobe Experience Manager als de Fragments van de Inhoud van de Cloud Service Steun in Activa HTTP API
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Content Fragments in Assets HTTP API.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Ondersteuning voor inhoudsfragmenten in HTTP-API van AEM Assets{#content-fragments-support-in-aem-assets-http-api}
+# Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
 ## Overzicht {#overview}
 
@@ -20,6 +20,7 @@ ht-degree: 1%
 >
 >* REST-API voor middelen
 >* inclusief ondersteuning voor inhoudsfragmenten
+
 >
 >
 De huidige implementatie van de Elementen HTTP API is gebaseerd op de architecturale stijl [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
@@ -66,7 +67,7 @@ Bijvoorbeeld om toegang te krijgen `/content/dam/wknd/en/adventures/cycling-tusc
 >[!NOTE]
 >Toegang over:
 >* `/api/assets` **heeft het gebruik van de** kiezer niet `.model` nodig.
->* `/content/assets` **vereist** het gebruik van de `.model` kiezer.
+>* `/content/path/to/page` **vereist** het gebruik van de `.model` kiezer.
 
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
@@ -147,6 +148,7 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >
 >* [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -363,6 +365,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    De gedetailleerde foutberichten worden meestal als volgt geretourneerd:
 
    ```xml
