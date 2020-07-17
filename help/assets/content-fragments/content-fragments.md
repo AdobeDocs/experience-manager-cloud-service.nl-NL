@@ -2,7 +2,7 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 2%
@@ -249,7 +249,7 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
    * Definities van inhoudsmodellen vereisen een titel en één gegevenselement. alles is optioneel .
    * Het model kan de standaardinhoud definiëren, indien van toepassing.
    * Auteurs kunnen de gedefinieerde structuur niet wijzigen tijdens het ontwerpen van fragmentinhoud.
-   * Wijzigingen die worden aangebracht in een model nadat afhankelijke inhoudsfragmenten zijn gemaakt, zijn van invloed op die inhoudsfragmenten.
+   * Wijzigingen die worden aangebracht in een model nadat afhankelijke inhoudsfragmenten zijn gemaakt, kunnen van invloed zijn op die inhoudsfragmenten.
 
 * **Component Inhoudsfragment**
 
