@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -182,11 +182,6 @@ De release biedt de volgende andere verbeteringen:
 
 ### Bug Fixes {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volgende insectenmoeilijke situaties die op klant worden gebaseerd terugkoppelt voor [!DNL Assets].
 
 * Voor MP3-muziekbestanden werkt de afspeelknop die op de miniatuur in de DAM-voorvertoning wordt weergegeven, niet. (CQ-4294731)
@@ -195,3 +190,4 @@ Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volg
 * Als bij het downloaden van middelen de optie E-mail is geselecteerd en zelfs als een geldige e-mailadres is opgegeven, is de optie Downloaden niet beschikbaar. (CQ-4296535)
 * Aangepaste filters die zijn opgeslagen als slimme verzamelingen, worden niet correct toegepast op elementen. (CQ-4294942)
 * De veelvoudige onderzoek en indexerende verhogingen en insectenmoeilijke situaties om prestaties te verbeteren. (CQ-4286373)
+* Mapeigenschappen geven een interne serverfout van 500 weer. (CQ-4295701)
