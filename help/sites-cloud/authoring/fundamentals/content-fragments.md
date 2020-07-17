@@ -2,10 +2,10 @@
 title: Contentfragmenten
 description: Met Adobe Experience Managers als Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 5%
+source-wordcount: '1165'
+ht-degree: 3%
 
 ---
 
@@ -24,6 +24,7 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **De Fragmenten** van de ervaring zijn volledig opgemaakt inhoud en zo fragmenten van een Web-pagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
@@ -58,6 +59,7 @@ Met de inhoudsfragmenten kunt u:
 3. U kunt:
    * Open de **middelenbrowser** en filter voor **inhoudsfragmenten** (de standaardinstelling is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
    * Selecteer de component van het inhoudsfragment, dan **vorm** van de toolbar. In het dialoogvenster kunt u het selectiedialoogvenster openen waarin u het gewenste **inhoudsfragment** kunt selecteren.
+
    >[!NOTE]
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
@@ -78,6 +80,10 @@ Met de inhoudsfragmenten kunt u:
 
 Open het dialoogvenster **Configuratie** van het fragment om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
+>[!NOTE]
+>
+>Zie ook [Core Components, de component Content Fragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 
 * **Inhoudsfragment**
@@ -87,6 +93,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * **Meerdere elementen**
 * **Element**
    * Afhankelijk van het gebruikte model is een selectie beschikbaar.
+
    >[!NOTE]
    >
    >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
@@ -129,7 +136,7 @@ Voor tussenliggende inhoud kunt u:
 >
 >U kunt ook visuele elementen (afbeeldingen) [invoegen in het fragment zelf](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen.
+>Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen. Als u dit verbindingsniveau nodig hebt, kunt u de afbeelding aan het fragment toevoegen (als een fragment met [gemengde media](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -146,7 +153,7 @@ Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -164,7 +171,7 @@ Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaa
 
 ### Elementen die in het fragment zijn ingevoegd {#assets-inserted-into-the-fragment}
 
-Als elementen (bijvoorbeeld afbeeldingen) in het fragment zelf zijn ingevoegd, zijn de opties voor het bewerken van deze elementen in de pagina-editor beperkt.
+Als elementen (bijvoorbeeld afbeeldingen) in het fragment zelf zijn ingevoegd (als [gemengde-mediafragmenten](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), zijn de opties voor het bewerken van deze elementen in de pagina-editor beperkt.
 
 Voor een afbeelding kunt u bijvoorbeeld
 
