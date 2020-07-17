@@ -1,16 +1,16 @@
 ---
-title: Inhoudsfragmenten aanpassen en uitbreiden
+title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1849'
 ht-degree: 1%
 
 ---
 
 
-# Inhoudsfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
+# Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
 Binnen de Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een standaardelement uit; zie:
 
@@ -61,7 +61,7 @@ Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan 
 
 * Alle inhoud wordt opgeslagen onder het `jcr:content/data` knooppunt van het element:
 
-   * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
+   * De elementgegevens worden opgeslagen onder het master subknooppunt:
       `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
@@ -70,7 +70,8 @@ bijv. `jcr:content/data/myvariation`
    * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam:
 De inhoud van het element `text` wordt bijvoorbeeld opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
-* Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`Met uitzondering van de titel en beschrijving, die niet als traditionele metagegevens worden beschouwd en die worden opgeslagen op `jcr:content`
+* Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`Met uitzondering van de titel en beschrijving, die niet als traditionele metagegevens worden beschouwd en die worden opgeslagen op 
+`jcr:content`
 
 #### Locatie van element {#asset-location}
 
@@ -165,7 +166,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebben; zie:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -198,6 +199,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
    * Toegang krijgen tot het model van het fragment
+
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
    * **Content Element** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -217,6 +219,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
       * Eenvoudige synchronisatie, gebaseerd op laatst gewijzigde informatie
+
    Alle drie interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) breiden de `Versionable` interface uit, die versiemogelijkheden toevoegt, die voor inhoudsfragmenten worden vereist:
 
    * Nieuwe versie van het element maken
@@ -241,7 +244,9 @@ Het volgende kan worden aangepast:
 
 * `ContentElement` kan worden aangepast aan:
 
-   * `ElementTemplate` - voor toegang tot de structurele informatie van het element.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - voor toegang tot de structurele informatie van het element.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` kan worden aangepast aan:
 
@@ -255,7 +260,7 @@ Er zij op gewezen dat:
 
 * Taken die extra inspanning zouden kunnen vereisen:
 
-   * Maak nieuwe variaties van `ContentFragment` om de gegevensstructuur bij te werken.
+   * Het wordt ten zeerste aanbevolen nieuwe variaties te maken van `ContentFragment`. Dit zorgt ervoor dat alle elementen deze variatie zullen delen en dat de aangewezen globale gegevensstructuren zonodig zullen worden bijgewerkt om de pas gecreëerde variatie in de inhoudsstructuur te weerspiegelen.
 
    * Als u bestaande variaties via een element verwijdert, worden de algemene gegevensstructuren die aan de variatie zijn toegewezen, niet bijgewerkt `ContentElement.removeVariation()`met het gebruik van dat element. Om ervoor te zorgen dat deze gegevensstructuren gesynchroniseerd blijven, gebruikt u `ContentFragment.removeVariation()` in plaats daarvan, waardoor een variatie wereldwijd wordt verwijderd.
 
@@ -315,8 +320,8 @@ Als u programmatisch een nieuw inhoudsfragment wilt maken, moet u een`FragmentTe
 Bijvoorbeeld:
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
