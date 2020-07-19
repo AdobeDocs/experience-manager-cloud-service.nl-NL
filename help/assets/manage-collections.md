@@ -1,12 +1,12 @@
 ---
 title: Verzamelingen digitale middelen beheren
-description: Begrijp het concept van inzameling in de Middelen van de Manager van de Ervaring van Adobe. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
+description: Begrijp het concept van inzameling in de Activa van de Adobe Experience Manager. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2248'
 ht-degree: 18%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 18%
 
 # Verzamelingen beheren {#manage-collections}
 
-Een verzameling is een set elementen in Adobe Experience Manager-middelen. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
+Een verzameling is een set elementen binnen Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
 
 In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
 
@@ -30,7 +30,7 @@ De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zi
 
 De **[!UICONTROL Collections]** console openen:
 
-Tik of klik op het logo van Experience Manager om dit te openen. **[!UICONTROL Collections]** From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Tik of klik op het Experience Manager-logo om het te openen. **[!UICONTROL Collections]** From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Een verzameling maken {#create-a-collection}
 
@@ -54,7 +54,7 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 
    >[!NOTE]
    >
-   >Met de middelen van Experience Manager kunt u controletaken voor een verzameling maken die lijken op de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >Met Experience Manager Assets kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
 
    Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#add-assets-to-a-collection)voor meer informatie.
 
@@ -140,7 +140,7 @@ De functie Zoeken in verzamelingen ondersteunt zowel [Zoeken naar verzamelingen]
 
 ### Verzamelingen zoeken {#search-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt AEM-middelen naar verzamelingsnamen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt de AEM Assets naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
 
 Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
@@ -226,7 +226,7 @@ U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste ve
 
 In de gebruikersinterface Assets kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Saved Searches]**, kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filteren. Als u een opgeslagen zoekopdracht maakt, wordt ook een slimme verzameling gemaakt.
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De query voor opgeslagen zoekopdrachten voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/`.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De query voor opgeslagen zoekopdrachten voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/`. Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
 
 >[!NOTE]
 >
