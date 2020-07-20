@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.7.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.7.0
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,9 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
 * De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
+
+* De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
+Raadpleeg [Pipetvariabelen](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) voor meer informatie.
 
 ### Bug Fixes {#bug-fixes-cm}
 
