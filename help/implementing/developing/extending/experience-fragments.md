@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Een fragment [van de](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) Ervaring is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien.
 
-Een Master- en/of varianttoepassing van het fragment van de ervaring:
+Een ervaringsfragment dat Master en/of variant wordt gebruikt:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -96,7 +96,8 @@ Als u een ervaringsfragmentsjabloon wilt maken die wordt gedetecteerd door de wi
 
    1. De naam van de sjabloon moet beginnen met:
       `experience-fragments`
-Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments, aangezien de `cq:allowedTemplates` eigenschap van deze map alle sjablonen bevat die namen hebben die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
+Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments als de 
+`cq:allowedTemplates` Deze eigenschap bevat alle sjablonen met namen die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
 1. [De toegelaten malplaatjes](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) kunnen in de console van de Fragmenten van de Ervaring worden gevormd.
 
@@ -165,6 +166,7 @@ Nadat u de HTML-pagina hebt gegenereerd, brengt de Sling Rewriter-pijplijn wijzi
    2. `href` attributes
    3. `*-src` kenmerken (zoals data-src, custom-src, enz.)
    4. `*-href` kenmerken (zoals `data-href`, `custom-href`, `img-href`enz.)
+
    >[!NOTE]
    >
    >In de meeste gevallen zijn de interne koppelingen in de HTML relatieve koppelingen, maar het kan voorkomen dat aangepaste componenten volledige URL&#39;s in de HTML bevatten. Standaard negeert AEM deze volledige URL&#39;s en worden er geen wijzigingen aangebracht.
@@ -288,7 +290,8 @@ Voor de wijziging van het Fragment van de Ervaring die door het herschrijven pro
 De methode ontvangt de parameters als invoer:
 
 * `link`
-De `String` representatie van de koppeling die momenteel wordt verwerkt. Dit is meestal een relatieve URL die naar de bron op de auteurinstantie verwijst.
+The 
+`String` een weergave van de koppeling die momenteel wordt verwerkt. Dit is meestal een relatieve URL die naar de bron op de auteurinstantie verwijst.
 
 * `tag`
 De naam van het HTML-element dat momenteel wordt verwerkt.
