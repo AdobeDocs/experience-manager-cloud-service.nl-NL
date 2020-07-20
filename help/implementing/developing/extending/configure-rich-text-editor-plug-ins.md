@@ -1,12 +1,12 @@
 ---
-title: Configureer de plug-ins van de Rich Text Editor in [!DNL Adobe Experience Manager].
-description: Leer om de [!DNL Adobe Experience Manager] Rich Text Editor stop-ins te vormen.
+title: Configureer de plug-ins van de RTF-editor [!DNL Adobe Experience Manager].
+description: Leer om [!DNL Adobe Experience Manager] de Rich Text Editor stop-ins te vormen.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4279'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,7 @@ Om te vormen welke formaten worden toegestaan wanneer het kleven van tekst in [!
    * **Naam** `underline`
    * **Naam** `anchor` (voor zowel koppelingen als benoemde ankers)
    * **Naam** `image`
+
    Alle eigenschappen zijn van het **Type** `Boolean`, zodat kunt u in de aangewezen **Waarde** of het vinkje selecteren of verwijderen om de functionaliteit toe te laten of onbruikbaar te maken.
 
    >[!NOTE]
@@ -234,6 +235,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
    * **Naam** `externalStyleSheets`
    * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
+
    >[!NOTE]
    >
    >U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
@@ -302,7 +304,8 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 
 1. Voeg de bezitstekst aan de zelfde knoop toe. De waarde is de naam van de stijl die de auteurs zien wanneer ze de stijl selecteren.
    * Naam: `text`
-*Type: `String`
+*Type: 
+`String`
    * Waarde: `Japanese word-wrap`
 
 1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
@@ -450,10 +453,12 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 1. Voeg onder dit knooppunt (benoemd op basis van uw speciale tekenbereik) de volgende twee eigenschappen toe:
 
    * **Naam** `rangeStart`
+
       **Type** `Long`
       **Waarde** de [Unicode](https://unicode.org/) -representatie (decimaal) van het eerste teken in het bereik
 
    * **Naam** `rangeEnd`
+
       **Type** `Long`
       **Waarde** de [Unicode](https://unicode.org/) -representatie (decimaal) van het laatste teken in het bereik
 
@@ -483,6 +488,7 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
    * **Naam** `features`
    * **Type** `String`
    * **Waarde** `*`
+
    >[!NOTE]
    Als u niet alle tabelfuncties wilt inschakelen, kunt u de `features` eigenschap als volgt maken:
    * **Type** `String[]`
@@ -640,11 +646,13 @@ Wanneer u koppelingen toevoegt in, kunt u de CSS-stijlen definiëren die moeten 
 
    * **Naam** `htmlRules`
    * **Type** `nt:unstructured`
+
    >[!NOTE]
    Het `../items/text` knooppunt heeft de eigenschap:
    * **Naam** `xtype`
    * **Type** `String`
    * **Waarde** `richtext`
+
    De locatie van het `../items/text` knooppunt kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Maak onder `htmlRules`een knooppunt.
@@ -678,6 +686,7 @@ Wanneer u koppelingen toevoegt in, kunt u de CSS-stijlen definiëren die moeten 
 
       * **Naam** `targetConfig`
       * **Type** `nt:unstructured`
+
       Op het knooppunt `targetConfig`: de vereiste eigenschappen definiëren:
 
       * Geef de doelmodus op:
