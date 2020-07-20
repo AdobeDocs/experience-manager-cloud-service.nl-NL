@@ -2,9 +2,9 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
+source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bev
 
 >[!NOTE]
 >
->AEM ondersteunt ook het vertalen van fragmentinhoud. Zie Vertaalprojecten maken voor inhoudsfragmenten voor meer informatie.
+>AEM ondersteunt ook het vertalen van fragmentinhoud.
 
 <!--
 >[!NOTE]
