@@ -48,7 +48,8 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
    * Als mensen uw URL niet kunnen lezen, kan een zoekmachine dat ook niet.
    * Bijvoorbeeld:
       `mybrand.com/products/product-detail.product-category.product-name.html`
-heeft de voorkeur boven `mybrand.com/products/product-detail.1234.html`
+heeft de voorkeur boven 
+`mybrand.com/products/product-detail.1234.html`
 
 * Vermijd waar mogelijk subdomeinen, aangezien zoekmachines deze als verschillende entiteiten behandelen, waardoor de SEO-waarde van de site wordt gefragmenteerd.
 
@@ -219,7 +220,8 @@ In een standaard AEM-installatie:
 
 * Voor de OSGi-configuratie
    **Apache Sling Resource Resolver Factory**
-( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+( 
+`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * Is de eigenschap
    **Mapping Location** ( `resource.resolver.map.location`)
@@ -251,6 +253,7 @@ Er is echter ook een eenvoudigere manier om dit te beheren:
    Met behulp van de webconsole (bijvoorbeeld localhost:4502/system/console/configMgr) kunt u de Sling Resource Resolver configureren:
 
    * **Apache Sling Resource Resolver Factory**
+
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    We raden u aan de toewijzingen die nodig zijn voor het verkorten van URL&#39;s als reguliere expressies, samen te stellen en vervolgens deze configuraties onder een OsgiConfignode, `config.publish`, die in uw build is inbegrepen, te definiëren.
 
@@ -266,6 +269,7 @@ Er is echter ook een eenvoudigere manier om dit te beheren:
 
    * Van `/content/my-brand/my-page.html`
    * Naar gewoon `/my-page.html`
+
    Dit is in overeenstemming met de aanbevolen praktijk om URL&#39;s zo kort mogelijk te houden.
 
 1. **URL-uitvoer op pagina&#39;s toewijzen**
