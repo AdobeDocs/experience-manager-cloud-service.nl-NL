@@ -276,7 +276,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kern van elementen.
+   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kernelementen.
 
 ## Sessies bewerken {#edit-sessions}
 
