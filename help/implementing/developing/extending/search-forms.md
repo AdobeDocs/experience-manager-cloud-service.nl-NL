@@ -547,7 +547,8 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Het de knoopweg** van opties richtIn feite het zelfde als de Weg **van** Opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
+* **Pad** van knooppunt Opties komt in feite overeen met het pad 
+**Het Weg** van opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
 
 * **Enkel selecteren** Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
 
@@ -651,6 +652,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht;
    * `value` - de waarde van de eigenschap waarop moet worden gezocht
+
    ![Predicate definitie](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
