@@ -97,16 +97,19 @@ Wanneer u bijvoorbeeld de **iPhone 6 Plus** van het apparaat (gedefinieerd met e
    Op de emulatorwerkbalk worden extra layoutopties weergegeven:
 
    * **Apparaat** roteren - Hiermee kunt u een apparaat roteren van verticale (staande) richting naar horizontale (liggende) richting en andersom.
+
    ![De knop Apparaat liggend roteren](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![De knop Staand apparaat roteren](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
    * **Selecteer Apparaat** - Definieer een specifiek apparaat dat u wilt emuleren in een lijst (zie de volgende stap voor meer informatie)
+
    ![Apparaat selecteren, knop](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
    * Gebruik het pictogram Apparaat selecteren en selecteer een keuze in een vervolgkeuzelijst.
    * Tik/klik op de apparaatindicator op de emulatorwerkbalk.
+
    ![Vervolgkeuzelijst Apparaat selecteren](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
 1. Nadat een specifiek apparaat is geselecteerd, kunt u:
@@ -114,6 +117,7 @@ Wanneer u bijvoorbeeld de **iPhone 6 Plus** van het apparaat (gedefinieerd met e
    * Zie de actieve markering voor het geselecteerde apparaat, zoals **iPad.**
    * Zie de actieve markering voor het juiste [breekpunt](#layout-definitions-device-emulation-and-breakpoints) , zoals **Tablet.**
    * De blauwe stippellijn geeft de *voud* voor het geselecteerde apparaat aan (hier is een **iPhone 6 Plus** liggend).
+
    ![De vouw](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
    * De vouwlijn kan ook worden beschouwd als het pagina-regeleinde (niet te verwarren met de [onderbrekingspunten](#layout-definitions-device-emulation-and-breakpoints)) voor de inhoud. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
@@ -160,6 +164,7 @@ Net als bij andere componenten kunt u een container van de layout selecteren en 
 
    * De laagst geneste container voor de layout wordt omgeven door een blauwe omtrek.
    * Elke volgende container zal een lichtere schaduw van blauw zijn.
+
    ![Geneste containers](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
 1. Hierdoor wordt het volledige raster met de inhoud gemarkeerd. De actiewerkbalk wordt weergegeven, waar u een handeling zoals **Verwijderen kunt selecteren.**
@@ -195,6 +200,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
    * **Bovenliggend element** - Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen over het geheel.
    * **Zweven naar nieuwe regel** - De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
    * **Component** verbergen - De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor de layout).
+
    ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * In de modus **Lay-out** kunt u op de componenten voor **slepen hier** tikken of klikken om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
@@ -224,7 +230,8 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
    >
    >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
 
-   * **Onzichtbaar maken componenten** Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de optie Verborgen componenten **** tonen. In dit voorbeeld zijn twee componenten verborgen.
+   * **De verbergen van componenten** opheffen Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht 
+**Verborgen componenten** tonen, optie. In dit voorbeeld zijn twee componenten verborgen.
 
       ![Componenten zichtbaar maken](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
