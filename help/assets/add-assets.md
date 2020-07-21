@@ -2,9 +2,9 @@
 title: Digitale middelen toevoegen aan Adobe Experience Manager
 description: Digitale elementen toevoegen aan Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 
    * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de gebruikersinterface van Elementen. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
+
    ![create_menu](assets/create_menu.png)
 
    Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
@@ -80,7 +81,7 @@ Daarnaast wordt in de gebruikersinterface Middelen het meest recente element wee
 
 >[!NOTE]
 >
->Voor het uploaden van geneste maphiërarchieën naar AEM raadpleegt u het [bulkuploaden van elementen](#bulk-upload).
+>Voor het uploaden van geneste maphiërarchieën naar AEM raadpleegt u [bulkupload-elementen](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -119,14 +120,14 @@ Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te be
 
 AEM Assets voorkomen dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, geven AEM Assets een waarschuwingsbericht weer en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
 * de naam van het elementbestand mag geen elementen bevatten `* / : [ \\ ] | # % { } ? &`
 * de naam van de elementenmap mag niet bevatten `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Bulkupload van elementen {#bulk-upload}
+## Bulkupload-elementen {#bulk-upload}
 
 Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een geneste maphiërarchie op schijf bevinden, kunt u de volgende methoden gebruiken:
 
