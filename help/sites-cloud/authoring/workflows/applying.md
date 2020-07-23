@@ -2,7 +2,7 @@
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 11%
@@ -23,8 +23,8 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 Workflows kunnen worden gestart vanaf:
 
-* [de **Sites** -console](#starting-a-workflow-from-the-sites-console).
-* [bij het bewerken van een pagina, uit **Pagina-informatie **](#starting-a-workflow-from-the-page-editor).
+* [de Sites-console](#starting-a-workflow-from-the-sites-console).
+* [bij het bewerken van een pagina, vanuit Pagina-informatie](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Workflows kunnen worden gestart vanaf:
 
 U kunt een workflow starten vanuit:
 
-* [de optie **Maken** van de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
-* [de **tijdlijn** van de Sites-console](#starting-a-workflow-from-the-timeline).
+* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
+* [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 In beide gevallen moet u:
 
@@ -87,8 +87,8 @@ Met de wizard **Workflow** maken kunt u de workflow selecteren en de vereiste de
 
 Nadat u de wizard **Workflow** maken hebt geopend vanuit:
 
-* [de optie **Maken** van de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
-* [de **tijdlijn** van de Sites-console](#starting-a-workflow-from-the-timeline).
+* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
+* [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 U kunt details opgeven:
 
@@ -98,6 +98,7 @@ U kunt details opgeven:
    * **Titel werkstroom**
 
       * U kunt een titel voor dit exemplaar specificeren, om u te helpen het in een later stadium identificeren.
+
    Afhankelijk van het workflowmodel zijn ook de volgende opties beschikbaar. Hierdoor kan het pakket dat als lading is gemaakt, worden bewaard nadat de workflow is voltooid.
 
    * **Workflowpakket behouden**
@@ -128,9 +129,11 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
          * Alleen directe kinderen opnemen.
          * Alleen gewijzigde pagina&#39;s opnemen.
          * Alleen al gepubliceerde pagina&#39;s opnemen.
+
          Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
       * **Selectie** verwijderen om die bron uit de workflow te verwijderen.
+
    ![Werkstroombereik definiëren](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
