@@ -1,18 +1,19 @@
 ---
-sub-product: On-boarding van AEM as a Cloud Service
-user-guide-title: On-boarding van AEM as a Cloud Service
+sub-product: Onboarding van AEM as a Cloud Service
+user-guide-title: Onboarding van AEM as a Cloud Service
+user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# On-boarding {#onboarding}
+# Onboarding {#onboarding}
 
-+ [On-boarding van AEM as a Cloud Service](/help/onboarding/home.md)
++ [Onboarding van AEM as a Cloud Service](/help/onboarding/home.md)
 + Wat is vereist {#what-is-required}
    + [Toegangsrechten verleend](what-is-required/access-rights-granted.md)
    + [Gebruikers en rollen toevoegen](what-is-required/add-users-roles.md)
@@ -29,10 +30,10 @@ ht-degree: 95%
 + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [AEM Sites-gereedheid voor regelgeving inzake gegevensbescherming en -bescherming](data-privacy-and-protection-readiness/sites-readiness.md)
+   + [AEM Sites-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/sites-readiness.md)
 + Toegankelijkheid {#accessibility}
    + [AEM as a Cloud Service en Web Accessibility Guidelines](accessibility/web-accessibility.md)
    + [Snelgids voor WCAG 2.1](accessibility/quick-guide-wcag.md)
-+ Best Practices {#best-practices}
++ Best practices voor {#best-practices}
    + [SEO- en URL-beheer](best-practices/seo-and-url-management.md)
 + [Overzicht van de toolconsoles](tools-consoles.md)
