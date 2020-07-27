@@ -1,9 +1,9 @@
 ---
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: 'Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1679'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service heeft nu:
 
 Deze architectuur:
 
-* Wordt geschaald op basis van het *werkelijke* verkeer en de *werkelijke* activiteit.
+* Wordt geschaald op basis van de *werkelijke* traffic en de *werkelijke* activiteit.
 
 * Bevat afzonderlijke instanties die alleen worden uitgevoerd wanneer dat nodig is.
 
