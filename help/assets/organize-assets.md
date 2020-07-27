@@ -1,25 +1,25 @@
 ---
 title: Digitale elementen ordenen
-description: Uw digitale middelen ordenen met behulp van verschillende methoden die worden geboden in Adobe Experience Manager Assets.
+description: Organiseer uw digitale middelen gebruikend diverse methodes die in de Middelen van de Adobe Experience Manager worden verstrekt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
 
-# Digitale middelen organiseren{#organize-digital-assets}
+# Digitale elementen ordenen {#organize-digital-assets}
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
 
-AEM-elementen bieden ondersteuning voor verschillende manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+AEM Assets ondersteunen meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Mappen maken {#create-folders}
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur* -afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM-elementen hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur* -afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. AEM Assets vereisen niet dat u elementen in mappen ordent om beter te werken.
 
 >[!NOTE]
 >
@@ -44,5 +44,5 @@ U kunt beperken wie tot bepaalde omslagen in Middelen toegang heeft door tot de 
 U kunt mappen, tags of beide gebruiken om elementen te ordenen. Door tags aan elementen toe te voegen, kunt u deze tijdens een zoekopdracht gemakkelijker terugvinden. Voer de volgende stappen uit om tags aan een element toe te voegen:
 
 1. Dubbelklik in Digital Asset Manager op het element om het te openen.
-1. Klik in het gebied **Codes** op de vervolgkeuzelijst om de beschikbare codes weer te geven. Selecteer de gewenste tags om een tag toe te voegen. Als u een tag wilt verwijderen, plaatst u de muis boven de tag en klikt u op de **x** om deze te verwijderen.
+1. Open het menu in het gebied **Codes** om de beschikbare codes weer te geven. Selecteer de gewenste labels. Als u een tag wilt verwijderen, plaatst u de aanwijzer op de tag en klikt u `X` om deze te verwijderen.
 1. Klik op **Opslaan** om de toegevoegde tags op te slaan.
