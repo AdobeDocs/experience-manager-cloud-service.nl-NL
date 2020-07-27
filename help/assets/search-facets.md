@@ -1,10 +1,10 @@
 ---
-title: Facetten doorzoeken
+title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2258'
 ht-degree: 18%
 
 ---
@@ -12,9 +12,7 @@ ht-degree: 18%
 
 # Facetten doorzoeken {#search-facets}
 
-Leer hoe u zoekfacetten in AEM maakt, wijzigt en gebruikt.
-
-Een bedrijfsbrede implementatie van Adobe Experience Manager (AEM)-middelen biedt de mogelijkheid om veel middelen op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van AEM gebruikt.
+Een bedrijfsbrede plaatsing van de Activa van de Adobe Experience Manager (AEM) heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van AEM gebruikt.
 
 Gebruik zoekfacetten in het deelvenster Filters om de zoekervaring gedetailleerder te maken en de zoekfunctionaliteit efficiënter en veelzijdiger te maken. De facetten van het onderzoek voegen veelvoudige afmetingen (predikaten) toe die u toelaten om complexere onderzoeken uit te voeren. Het deelvenster Filters bevat een aantal standaardfacetten. U kunt ook aangepaste zoekfacetten toevoegen.
 
@@ -35,34 +33,30 @@ Voor zoekopdrachten in volledige tekst voegt u de voorspelling toe aan het formu
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]**.
 
-   ![Sleep een voorspelling om de zoekfilters aan te passen](assets/drag_predicate.png)
+   ![Druk op een voorvertoning en verplaats deze om de zoekfilters aan te passen](assets/drag_predicate.png)
 
-   Sleep een voorspelling om de zoekfilters aan te passen
+   *Afbeelding: Druk op en verplaats een voorspelling om de zoekfilters aan te passen.*
 
-1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen.
-
-   Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
+1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
 
    ![Gebruik het tabblad Instellingen om de vereiste opties voor een voorspelling op te geven](assets/settings.png)
 
-   Gebruik het tabblad Instellingen om de vereiste opties voor een voorspelling op te geven
+   *Afbeelding: Gebruik het lusje van Montages om de vereiste opties van een predikaat te verstrekken.*
 
-1. Geef in het veld **[!UICONTROL Property Name]** een geldige naam op voor de metadata-eigenschap die u aan het predicaat wilt koppelen. Dit is de naam op basis waarvan de zoekopdracht wordt uitgevoerd. Voer bijvoorbeeld `jcr:content/metadata/dc:description` of `./jcr:content/metadata/dc:description` in.
-
-   U kunt ook een bestaand knooppunt selecteren in het dialoogvenster Selecteren.
+1. Geef in het veld **[!UICONTROL Property Name]** een geldige naam op voor de metadata-eigenschap die u aan het predicaat wilt koppelen. Dit is de naam op basis waarvan de zoekopdracht wordt uitgevoerd. Voer bijvoorbeeld `jcr:content/metadata/dc:description` of `./jcr:content/metadata/dc:description` in. U kunt ook een bestaand knooppunt selecteren in het dialoogvenster Selecteren.
 
    ![Een metagegevenseigenschap koppelen aan een voorspelling in het veld Eigenschapnaam](assets/property_settings.png)
 
-   Een metagegevenseigenschap koppelen aan een voorspelling in het veld Eigenschapnaam
+   *Afbeelding: Koppel een eigenschap metadata aan een voorspelling in het veld Eigenschapnaam.*
 
-1. Tik/klik op de **[!UICONTROL Preview]** voorvertoning ![](assets/preview.png) om een voorvertoning van het deelvenster Filters te genereren zoals deze wordt weergegeven nadat u de voorvertoning hebt toegevoegd.
+1. Klik op de **[!UICONTROL Preview]** voorvertoning ![](assets/preview.png) om een voorvertoning van het deelvenster Filters te genereren zoals deze wordt weergegeven nadat u de voorvertoning hebt toegevoegd.
 1. Bekijk de lay-out van de voorspelling in de modus Voorbeeld.
 
    ![Voorbeeld van het zoekformulier bekijken voordat de wijzigingen worden verzonden](assets/preview-1.png)
 
    Voorbeeld van het zoekformulier bekijken voordat de wijzigingen worden verzonden
 
-1. Tik op of klik op de **[!UICONTROL Close]** close ![](assets/do-not-localize/close_icon.png) in de rechterbovenhoek van de voorvertoning om de voorvertoning te sluiten.
+1. Als u de voorvertoning wilt sluiten, klikt u op de knop **[!UICONTROL Close]** Sluiten ![](assets/do-not-localize/close_icon.png) rechtsboven in de voorvertoning.
 1. Tik **[!UICONTROL Done]** om de instellingen op te slaan.
 1. Navigeer naar het deelvenster Zoeken in de gebruikersinterface Elementen. De voorspelling van de eigenschap wordt toegevoegd aan het deelvenster.
 1. Voer in het tekstvak een beschrijving in voor het element dat u wilt doorzoeken. Voer bijvoorbeeld &quot;Adobe&quot; in. Wanneer u een zoekopdracht uitvoert, worden elementen met een beschrijving die overeenkomt met &quot;Adobe&quot;, weergegeven in de zoekresultaten.
@@ -121,7 +115,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 
 ## Een voorspelling van een eigenschap met meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
 
-Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarbij u afbeeldingen van meerdere producten in AEM-elementen hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
+Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarbij u afbeeldingen van meerdere producten in AEM Assets hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer op de pagina Formulieren zoeken **[!UICONTROL Assets Admin Search Rail]** de optie **Aemassets_edit** ![tikken](assets/aemassets_edit.png).
@@ -134,18 +128,16 @@ Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere
 
 ## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
-Met de `Tags` voorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM-elementen naar elementen op basis van een of meer tags die overeenkomen met de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
+Met de `Tags` voorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM Assets elementen naar een of meer tags die overeenkomen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer op de pagina Formulieren zoeken de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Edit** ![amassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
+1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
 1. Selecteer **[!UICONTROL Show match all tags option]** om te zoeken naar assets die alle tags bevatten die u opgeeft.
 
    ![Typische instellingen van labels voorspellen](assets/tags_predicate.png)
-
-   Typische instellingen van labels voorspellen
 
 1. Voer in het **[!UICONTROL Description]** veld een optionele beschrijving in en klik/tik op **[!UICONTROL Done]**.
 1. Navigeer naar het deelvenster Zoeken. The **[!UICONTROL Tags]** predicate is added to the Search panel.
@@ -316,7 +308,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 Standaard wordt een vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het vergrendelingspictogram verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.
+Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
@@ -330,28 +322,13 @@ Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
 Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigingen die u nodig hebt voor het uitvoeren van bewerkingen, verwijderen en voorvertoningen van handelingen met zoekfacetten.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Actie</strong></td>
-   <td><strong>Machtigingen</strong></td>
-  </tr>
-  <tr>
-   <td>Bewerken </td>
-   <td>De lees en schrijft toestemmingen op de <code>/apps</code> knoop in CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Verwijderen</td>
-   <td>De lees, schrijft en schrapt toestemmingen op de <code>/apps</code> knoop in CRX</td>
-  </tr>
-  <tr>
-   <td>Voorvertoning</td>
-   <td>De lees, schrijft, en schrapt toestemmingen op de <code>/var/dam/content</code> knoop in CRX. Ook, lees en schrijf toestemmingen op <code>/apps</code> knoop.</td>
-  </tr>
- </tbody>
-</table>
+| Actie | Machtiging |
+|---|---|
+| Bewerken | Lees en schrijf toestemmingen op de `/apps` knoop in CRX. |
+| Verwijderen | Leest, schrijft, en schrapt toestemmingen op de `/apps` knoop in CRX. |
+| Voorvertoning | Leest, schrijft, en schrapt toestemmingen op de `/var/dam/content` knoop in CRX. Ook, lees en schrijf toestemmingen op `/apps` knoop. |
 
 >[!MORELIKETHIS]
 >
->* [Digitale middelen zoeken](search-assets.md)
+>* [Digitale middelen](search-assets.md)zoeken.
 
