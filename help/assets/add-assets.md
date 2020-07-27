@@ -1,10 +1,10 @@
 ---
-title: Digitale middelen toevoegen aan Adobe Experience Manager
-description: Digitale elementen toevoegen aan Adobe Experience Manager als Cloud Service
+title: Voeg uw digitale elementen toe aan [!DNL Adobe Experience Manager].
+description: Voeg uw digitale elementen toe [!DNL Adobe Experience Manager] aan een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Digitale elementen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar Experience Manager Assets, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
+[!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden, van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets].
 
-Er is een aantal uploadmethoden beschikbaar. Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om middelen toe te voegen aan de Experience Manager-opslagplaats, zoals bureaubladclients, zoals Adobe Asset Link of Experience Manager-bureaubladtoepassing, scripts voor het uploaden en opnemen van gegevens die klanten zouden maken, en geïntegreerde geautomatiseerde inname die als AEM-extensies zouden worden toegevoegd.
+Er is een aantal uploadmethoden beschikbaar. Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om middelen toe te voegen aan de Experience Manager-opslagplaats, zoals bureaubladclients, zoals Adobe Asset Link of Experience Manager-bureaubladtoepassing, scripts voor het uploaden en opnemen van gegevens die klanten zouden maken, en geïntegreerde geautomatiseerde inname die als Experience Manager-extensies zouden worden toegevoegd.
 
 We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen naar artikelen verschaffen waarin technische aspecten van het uploaden en opnemen van middelen worden beschreven met behulp van Experience Manager API&#39;s en SDK&#39;s.
 
@@ -24,19 +24,19 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 
 >[!NOTE]
 >
->Experience Manager als Cloud Service gebruikt een nieuwe manier om elementen te uploaden: directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals de AEM-gebruikersinterface, Adobe Asset Link, de AEM-bureaubladtoepassing en dus transparant voor de eindgebruikers.
+>Experience Manager als Cloud Service gebruikt een nieuwe manier om elementen te uploaden: directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals Experience Manager-gebruikersinterface, Adobe Asset Link, Experience Manager-bureaubladtoepassing en dus transparant voor de eindgebruikers.
 >
 >Upload code die door klanten technische teams wordt aangepast of uitgebreid moet de nieuwe upload APIs en protocollen gebruiken.
 
 ## Elementen uploaden {#upload-assets}
 
-Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op uw bureaublad selecteren en naar de gebruikersinterface (webbrowser) naar de doelmap slepen. U kunt het uploaden ook starten vanuit de gebruikersinterface.
+Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op uw bureaublad selecteren en in de gebruikersinterface (webbrowser) naar de doelmap slepen. U kunt het uploaden ook starten vanuit de gebruikersinterface.
 
-1. Navigeer in de gebruikersinterface Elementen naar de locatie waar u digitale elementen wilt toevoegen.
+1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
 
    * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
-   * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de gebruikersinterface van Elementen. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
+   * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, verwijdert AEM Assets het gedeeltelijk geüploade gedeelte van het element.
+1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, [!DNL Assets] verwijdert u het gedeeltelijk geüploade gedeelte van het element.
 
-   Als u het uploaden annuleert voordat de bestanden zijn geüpload, stoppen AEM Assets met het uploaden van het huidige bestand en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
+   Als u het uploaden annuleert voordat de bestanden zijn geüpload, [!DNL Assets] stopt u met het uploaden van het huidige bestand en vernieuwt u de inhoud. Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -69,13 +69,13 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 -->
 
 <!-- #ENGCHECK assuming this is not relevant? remove after confirming#
-   During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
+   During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
 
-1. Het dialoogvenster voor uploadvoortgang in AEM Assets geeft het aantal bestanden weer dat is geüpload en de bestanden die niet zijn geüpload.
+1. In het dialoogvenster Uploadvoortgang in [!DNL Assets] worden het aantal geüploade bestanden en de bestanden weergegeven die niet zijn geüpload.
 
 Daarnaast wordt in de gebruikersinterface Middelen het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
@@ -87,19 +87,19 @@ Daarnaast wordt in de gebruikersinterface Middelen het meest recente element wee
 
 ### Serial uploads {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your AEM Assets instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests AEM Assets can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, AEM assets may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of [!DNL Assets]. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, [!DNL Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
-To overcome this situation, AEM Assets ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
+To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
+If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
+>Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
 ### Uploads verwerken wanneer element al bestaat {#handling-upload-existing-file}
@@ -114,13 +114,13 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 >
 >Als Asset Insights is ingeschakeld voor het bijhouden van indrukkingen/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevens die voor het middel zijn vastgelegd op Analytics ongeldig.
 
-Tik/klik op het dubbele element om het gedupliceerde element in AEM Assets te behouden. **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
+Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
-AEM Assets voorkomen dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, geven AEM Assets een waarschuwingsbericht weer en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+[!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -142,7 +142,7 @@ Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een gen
 
 Naast de gebruikersinterface van de webbrowser biedt Experience Manager ondersteuning voor andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van AEM in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden naar AEM vanuit deze bureaubladtoepassingen.
+* [Met Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) hebt u toegang tot elementen [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document [!DNL Experience Manager] rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden vanuit deze bureaubladtoepassingen.
 * [De Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op het bureaublad, onafhankelijk van het bestandstype of de native toepassing waarin deze worden verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Aanvullende verwerking {#additional-processing}
