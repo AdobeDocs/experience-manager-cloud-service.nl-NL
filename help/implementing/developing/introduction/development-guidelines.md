@@ -2,10 +2,10 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 2%
+source-wordcount: '1940'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan.
 
 ## Status van het bestandssysteem {#state-on-the-filesystem}
 
-Het bestandssysteem van de instantie mag niet in AEM als Cloud Service worden gebruikt. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
+Het bestandssysteem van de instantie mag niet in AEM als Cloud Service worden gebruikt. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatief effect op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
 Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou de Publish rij ervoor moeten zorgen dat om het even welke gegevens die moeten worden voortgeduurd naar een externe dienst voor opslag op langere termijn wordt verscheept.
 
@@ -170,3 +170,45 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 ### Prestatiebewaking {#performance-monitoring}
 
 Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
+
+## IP-adres van speciale egress
+
+Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
+
+### Voordelen
+
+Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM als Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van de Cloud Service AEM van de klant zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+
+Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt als Cloud Service door een reeks IPs stroomt die met andere klanten wordt gedeeld.
+
+### Configuratie
+
+Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Voor elke omgeving moet een aanvraag worden ingediend, inclusief alle nieuwe omgevingen die na de eerste aanvraag zijn gemaakt.
+
+### Functiegebruik
+
+De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit de meest gangbare bibliotheken omvatten.
+
+Hieronder ziet u een codevoorbeeld:
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+Hetzelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in de Adobe-organisatie en voor alle omgevingen in elk van de programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
+
+Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
+
+### Foutopsporingsoverwegingen
+
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip), die het roepende IP adres zal terugkeren.
