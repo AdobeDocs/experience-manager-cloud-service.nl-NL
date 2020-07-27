@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden gete
 
 * **Prioritaire en contextafhankelijke implementatie ondersteunen:**
 De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het begrip 
-*toegankelijkheid wordt ondersteund* . Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
+*ondersteuning van toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
 
 Deze doelstellingen hebben de structuur van WCAG 2.1 aanzienlijk beïnvloed.
 
