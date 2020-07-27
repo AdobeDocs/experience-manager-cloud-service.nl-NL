@@ -1,9 +1,9 @@
 ---
 title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1342'
 ht-degree: 100%
 
