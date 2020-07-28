@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1949'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Ontwikkelingsrichtlijnen voor AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Code die in AEM als Cloud Service loopt moet zich ervan bewust zijn dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
+De code die in AEM als Cloud Service loopt moet zich bewust zijn van het feit dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
 
 Tijdens de update van AEM als Cloud Service, zullen er instanties zijn met oude en nieuwe code die parallel lopen. Daarom moet oude code niet breken met inhoud die door nieuwe code wordt gecreeerd en de nieuwe code moet oude inhoud kunnen behandelen.
 <!--
@@ -46,11 +46,11 @@ Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen
 
 De Sling Commons Planner zou niet voor het plannen moeten worden gebruikt aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het zal worden gepland.
 
-Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet gegarandeerd worden uitgevoerd en daarom met voorzichtigheid worden gebruikt. Dit geldt al voor AEM-implementaties in het heden.
+Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet gegarandeerd worden uitgevoerd en daarom met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
 
 ## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
-Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, zullen AEM-instanties die als Cloud Service op AEM worden uitgevoerd, een algemene time-outs afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
+Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, AEM instanties die op AEM als Cloud Service worden uitgevoerd, zullen een algemene time-outs afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
 
 Adobe raadt het gebruik van de meegeleverde [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) aan voor het maken van HTTP-verbindingen.
 
@@ -58,7 +58,7 @@ Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid 
 
 * [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) en/of [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (geleverd door AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (niet aanbevolen omdat het verouderd is en vervangen wordt door versie 4.x)
-* [OK Http](https://square.github.io/okhttp/) (niet verstrekt door AEM)
+* [OK Http](https://square.github.io/okhttp/) (niet opgegeven door AEM)
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
 
@@ -70,9 +70,9 @@ Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen
 
 ## Geen streamingbinaire getallen via AEM als Cloud Service {#no-streaming-binaries}
 
-De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kernAEM diensten zal dienen.
+De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kern AEM diensten zal dienen.
 
-Gebruik bijvoorbeeld niet `asset.getOriginal().getStream()`, waardoor het downloaden van een binair getal naar de vaste schijf van de AEM-service wordt geactiveerd.
+Bijvoorbeeld, gebruik niet `asset.getOriginal().getStream()`, die het downloaden van een binair getal op de van de dienst van de AEM tot stand brengt.
 
 ## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
@@ -96,7 +96,7 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 
 >[!NOTE]
 >
->Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie [het Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
+>Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie het [Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 **Het FOUTOPSPORINGSlogniveau activeren**
 
@@ -126,7 +126,7 @@ Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op di
 
 ### Lokale ontwikkeling {#local-development}
 
-Voor lokale ontwikkeling hebben ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de AEM Webconsole (`/system/console`).
+Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de AEMConsole van het Web (`/system/console`).
 
 Let op: bij lokale ontwikkeling (met gebruik van de snelstartprocedure voor de cloud) `/apps` en `/libs` kan rechtstreeks naar deze map worden geschreven. Dit is anders dan in cloudomgevingen waar deze mappen op hoofdniveau onveranderbaar zijn.
 
@@ -160,7 +160,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &#39;Cloud Manager - rol ontwikkelaar&#39; vereist voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM-gebruikers of AEM-beheerders voor zowel auteur- als publicatieservices om statusdumpgegevens van beide services te kunnen bekijken. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
@@ -177,17 +177,17 @@ Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTT
 
 ### Voordelen
 
-Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM als Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van de Cloud Service AEM van de klant zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM als Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van de AEM van de klant Cloud Service zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
 
 Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt als Cloud Service door een reeks IPs stroomt die met andere klanten wordt gedeeld.
 
 ### Configuratie
 
-Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Voor elke omgeving moet een aanvraag worden ingediend, inclusief alle nieuwe omgevingen die na de eerste aanvraag zijn gemaakt.
+Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie na het eerste verzoek nodig hebben. Sandbox-programmaomgevingen worden niet ondersteund.
 
 ### Functiegebruik
 
-De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit de meest gangbare bibliotheken omvatten.
+De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
 
 Hieronder ziet u een codevoorbeeld:
 
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Hetzelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in de Adobe-organisatie en voor alle omgevingen in elk van de programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
+Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in hun organisatie van de Adobe en voor alle milieu&#39;s in elk van hun programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
 
 Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
 
