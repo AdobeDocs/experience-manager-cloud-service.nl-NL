@@ -2,7 +2,7 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: In te vullen
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,23 +171,23 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 
 Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
 
-## IP-adres van speciale egress
+## IP-adres van speciale egress {#dedicated-egress-ip-address}
 
 Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
 
-### Voordelen
+### Voordelen {#benefits}
 
 Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM als Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van de AEM van de klant Cloud Service zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
 
 Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt als Cloud Service door een reeks IPs stroomt die met andere klanten wordt gedeeld.
 
-### Configuratie
+### Configuratie {#configuration}
 
 Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie na het eerste verzoek nodig hebben. Sandbox-programmaomgevingen worden niet ondersteund.
 
-### Functiegebruik
+### Functiegebruik {#feature-usage}
 
-De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
+De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit de meest gangbare bibliotheken omvatten.
 
 Hieronder ziet u een codevoorbeeld:
 
@@ -209,6 +209,6 @@ Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant i
 
 Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
 
-### Foutopsporingsoverwegingen
+### Foutopsporingsoverwegingen {#debugging-considerations}
 
 Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip), die het roepende IP adres zal terugkeren.
