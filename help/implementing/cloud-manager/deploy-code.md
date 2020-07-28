@@ -2,7 +2,7 @@
 title: Uw code implementeren - Cloud Servicen
 description: Uw code implementeren - Cloud Servicen
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -34,6 +34,7 @@ Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigur
    1. Werkgebiedimplementatie
    1. Werkgebiedtests
    1. Implementatie van productie
+
    >[!NOTE]
    >
    >Bovendien, kunt u de stappen van diverse plaatsingsprocessen herzien door logboeken, of het herzien van resultaten, voor de testende criteria te bekijken.
@@ -58,7 +59,8 @@ Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigur
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >De volgende secties moeten worden bijgewerkt voor Cloud Manager voor AEM cloud services en zijn in uitvoering.
 
 ## Implementatieproces {#deployment-process}
@@ -93,6 +95,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
    1. Het artefact wordt geëxtraheerd naar de httpd-map.  Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie.  Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout gemeld aan Cloud Manager.
    1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het cachegeheugen van de verzender.
+
    >[!NOTE]
    >
    >Cloud Manager verwacht dat het artefact van de verzender de volledige bestandsset bevat.  Alle Dispatcher-configuratiebestanden moeten aanwezig zijn in de it-opslagplaats. Ontbrekende bestanden of mappen leiden tot een implementatiefout.
