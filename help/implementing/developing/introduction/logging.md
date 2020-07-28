@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ Merk op dat HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van 
 AEM als Cloud Service biedt toegang tot Java-loginstructies. Ontwikkelaars van toepassingen voor AEM moeten de algemene Java-logboekbest practices volgen en relevante instructies over de uitvoering van aangepaste code registreren op de volgende logniveaus:
 
 <table>
-<tbody>
 <tr>
-<td> <b>AEM</b></td>
-<td> <b>Logboekniveau</b></td>
-<td> <b>Beschrijving</b></td>
-<td> <b>Beschikbaarheid van logboekverklaring</b></td>
+<td>
+<b>AEM</b></td>
+<td>
+<b>Logboekniveau</b></td>
+<td>
+<b>Beschrijving</b></td>
+<td>
+<b>Beschikbaarheid van logboekverklaring</b></td>
 </tr>
 <tr>
-<td> Ontwikkeling</td>
-<td> DEBUG</td>
-<td> Beschrijft wat in de toepassing gebeurt.
+<td>
+Ontwikkeling</td>
+<td>
+DEBUG</td>
+<td>
+Beschrijft wat in de toepassing gebeurt.<br>
 
 Wanneer het DEBUG registreren actief is, worden de verklaringen die een duidelijk beeld van verstrekken welke activiteiten voorkomen evenals om het even welke zeer belangrijke parameters die verwerking beïnvloeden geregistreerd.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale ontwikkeling</li>
 <li>Ontwikkeling</li>
 </ul></td>
 </tr>
 <tr>
-<td> Werkgebied</td>
-<td> WAARSCHUWING</td>
-<td> Beschrijft voorwaarden die het potentieel hebben om fouten te worden.
+<td>
+Werkgebied</td>
+<td>
+WAARSCHUWING</td>
+<td>
+Beschrijft voorwaarden die het potentieel hebben om fouten te worden.<br>
 
 Wanneer het registreren WARN actief is, slechts worden de verklaringen die op voorwaarden wijzen die sub-optimaliteit naderen geregistreerd.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale ontwikkeling</li>
 <li>Ontwikkeling</li>
 <li>Werkgebied</li>
 </ul></td>
 </tr>
 <tr>
-<td> Productie</td>
-<td> FOUT</td>
-<td> Beschrijft voorwaarden die op een mislukking wijzen, en behoefte om op te lossen.
+<td>
+Productie</td>
+<td>
+FOUT</td>
+<td>
+Beschrijft voorwaarden die op een mislukking wijzen, en behoefte om op te lossen.<br>
 
 Wanneer het registreren van de FOUT actief is, slechts worden de verklaringen die op mislukkingen wijzen geregistreerd. FOUTloginstructies geven een ernstig probleem aan dat zo snel mogelijk moet worden opgelost.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale ontwikkeling</li>
 <li>Ontwikkeling</li>
 <li>Werkgebied</li>
 <li>Productie</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
