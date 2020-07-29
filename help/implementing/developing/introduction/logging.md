@@ -2,10 +2,10 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 3%
+source-wordcount: '1077'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,6 @@ Ontwikkeling</td>
 DEBUG</td>
 <td>
 Beschrijft wat in de toepassing gebeurt.<br>
-
 Wanneer het DEBUG registreren actief is, worden de verklaringen die een duidelijk beeld van verstrekken welke activiteiten voorkomen evenals om het even welke zeer belangrijke parameters die verwerking beïnvloeden geregistreerd.</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### Het HTTP Access-logboek configureren {#configuring-the-http-access-log}
+
+Het logboek van de Toegang van HTTP is niet configureerbaar in AEM als Cloud Service.
+
+## Apache-webserver/Dispatcher-aanmelding {#dispatcher-logging}
+
+AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apache en verzender laag op Publish:
+
+* Apache HTTPD Web Server Access-logboek
+* Apache HTTPD Web Server Error log
+* Dispatcher-logboek
+
+Deze logbestanden zijn alleen beschikbaar voor de publicatielijst.
+
+Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud Service publiceren rij voorafgaand aan die verzoeken die de AEM toepassing bereiken. Dit is belangrijk om te begrijpen aangezien, idealiter, de meeste HTTP- verzoeken aan de Publish rijservers door caching inhoud door de Server van het Web Apache HTTPD en AEM Dispatcher worden gediend, en nooit de AEM toepassing zelf bereiken, zodat zijn er geen logboekverklaringen voor deze verzoeken in AEM Java, Verzoek of Logboeken van de Toegang.
