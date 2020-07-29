@@ -2,9 +2,9 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '2053'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,9 @@ Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeke
 1. De logboeken van het Verzoek van HTTP, die logboekinformatie over HTTP- verzoeken en hun antwoorden registreren die door AEM worden gediend
 1. De logboeken van de Toegang van HTTP, die logboek samenvatte informatie en HTTP- verzoeken die door AEM worden gediend
 
-Merk op dat HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van de Publish rij of upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
+> [!NOTE]
+> 
+> De HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van de Publish rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
 ## Java-registratie AEM {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 
 ### Logbestandsindeling {#log-format}
 
-| Datum en tijd | AEM als Cloud Service dode-id | Logboekniveau | Thread | Java-klasse | Logbericht |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **Voorbeeld van loguitvoer**
 
 ```
@@ -110,6 +108,35 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Datum en tijd</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM als knooppunt-id voor Cloud Service</td>
+<td>[cm-p1234-e5678-aem-auteur-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>Logboekniveau</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java-klasse</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>Logbericht</td>
+<td>Geen opgegeven fiatteur, standaard ingesteld op [ Creative Approvers-gebruikersgroep ]</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuratieloggers {#configuration-loggers}
 
@@ -167,10 +194,6 @@ De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- v
 
 ### Logbestandsindeling {#http-request-logging-format}
 
-| Datum en tijd | ID Vragen/beantwoorden |  | HTTP-methode | URL | Protocol | AEM als knooppunt-id voor Cloud Service |
-|---|---|---|---|---|---|---|
-| 29/apr/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **Voorbeeldlogboek**
 
 ```
@@ -182,6 +205,36 @@ De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- v
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Datum en tijd</td>
+<td>29/apr/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>ID Vragen/beantwoorden</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP-methode</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM als knooppunt-id voor Cloud Service</td>
+<td>[cm-p1234-e5678-aem-auteur-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### Logboek configureren {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher Log {#dispatcher-log}
 
-**Logbestandsindeling**
+<!--de completat-->
 
+**Voorbeeld**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### Logbestandsindeling {#dispatcher-log-format}
+
+### Het Dispatcher-foutenlogboek configureren {#configuring-the-dispatcher-error-log}
+
+De het logboekniveaus van de verzender worden bepaald door veranderlijke DISP_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
+
+Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1, met de standaardwaarde Waarschuwing.
+
+Hoewel het registreren van Dispatcher verscheidene andere niveaus van het registreren granularity steunt, beveelt de AEM als Cloud Service het gebruiken van de hieronder beschreven niveaus aan.
+
+Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het `global.var` bestand, zoals hieronder wordt beschreven:
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Hoe te om Logs toegang te hebben {#how-to-access-logs}
+
+### Cloud-omgevingen {#cloud-environments}
+
+AEM als Cloud Service logboeken voor wolkendiensten kunnen worden betreden of door door de interface van de Manager van de Wolk te downloaden of door logboeken bij de bevellijn te hangen gebruikend de Adobe I/O bevellijninterface. Raadpleeg de logdocumentatie bij [Cloud Manager voor meer informatie](/help/implementing/cloud-manager/manage-logs.md).
+
+### Lokale SDK {#local-sdk}
+
+AEM als Cloud Service SDK verstrekt logboekdossiers om lokale ontwikkeling te steunen.
+
+AEM logboeken bevinden zich in de map `crx-quickstart/logs`waarin de volgende logbestanden kunnen worden weergegeven:
+
+* Java-logbestand AEM: `error.log`
+* Logbestand HTTP-aanvraag AEM: `request.log`
+* Logbestand HTTP-toegang AEM: `access.log`
+
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Raadpleeg de documentatie [bij](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher voor informatie over het starten van de Dispatcher.
+
+De logbestanden ophalen:
+
+1. Typ op de opdrachtregel `docker ps` om de containers weer te geven
+1. Als u zich wilt aanmelden bij de container, typt u &quot;`docker exec -it <container> /bin/sh`&quot;, waarbij `<container>` de verzendingscontainer-id van de vorige stap is.
+1. Ga naar de cachroot onder `/mnt/var/www/html`
+1. De logbestanden bevinden zich onder `/etc/httpd/logs`
+1. Inspect the logs: ze zijn toegankelijk in de map XYZ, waar de volgende logbestanden kunnen worden weergegeven:
+   * Apache HTTPD Logboek van de de servertoegang van het Web - `httpd_access.log`
+   * Logboeken van fouten van de Apache HTTPD-webserver - `httpd_error.log`
+   * Dispatcher-logboeken - `dispatcher.log`
+
+Logbestanden worden ook rechtstreeks afgedrukt op de einduitvoer. Meestal, zouden deze logboeken DEBUG moeten zijn, die kan worden verwezenlijkt door in het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld:
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## Fouten opsporen in productie en werkgebied {#debugging-production-and-stage}
+
+In uitzonderlijke omstandigheden moeten de logniveaus worden gewijzigd om zich bij een fijnere granulariteit in het werkgebied of de productieomgeving aan te melden.
+
+Terwijl dit mogelijk is, vereist het veranderingen in de logboekniveaus in de configuratiedossiers in Git van Waarschuwen en Fout aan Zuiver, en het uitvoeren van een plaatsing aan AEM als Cloud Service om deze configuratieveranderingen met de milieu&#39;s te registreren.
+
+Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug wordt geschreven, kan dit in een negatief prestatieseffect op het milieu resulteren, daarom wordt geadviseerd dat de veranderingen in Stadium en Productie zuivert niveaus zijn:
+
+* Op een verstandige manier en alleen wanneer dat absoluut noodzakelijk is
+* Omgekeerd naar de juiste niveaus en zo snel mogelijk opnieuw ingezet
+
+## Logbestanden splitsen {#splunk-logs}
+
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
+
+De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
+
+### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
+
+In het supportverzoek moeten klanten aangeven:
+
+* De Splunk-host
+* De segmentindex
+* De segmentpoort
+* De Splunk HEC-token. Zie [deze pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) voor meer informatie.
+
+De bovenstaande eigenschappen moeten voor elke relevante combinatie van programma/omgevingstype worden gespecificeerd.  Als een klant bijvoorbeeld ontwikkelings-, staging- en productieomgevingen wilde, moeten deze drie informatiesets leveren, zoals hieronder wordt aangegeven.
+
+> [!NOTE]
+>
+> Splunk forward for sandbox program environment is not supported.
+
+Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
+
+Programma 123, Production Env
+
+* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk-index: acme_123prod (de klant kan kiezen welke noemende overeenkomst het wenst)
+* Splunk-poort: 443
+* Splunk HEC-token: ABC123
+
+Programma 123, Stage Env
+
+* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk-index: acme_123stage
+* Splunk-poort: 443
+* Splunk HEC-token: ABC123
+
+Programma 123, Dev Envs
+
+* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk-index: acme_123dev
+* Splunk-poort: 443
+* Splunk HEC-token: ABC123
+
+Het kan voldoende zijn om voor elke omgeving dezelfde segmentindex te gebruiken. In dat geval kan het `aem_env_type` veld worden gebruikt om onderscheid te maken op basis van de waarden dev, stage en prod. Als er meerdere ontwikkelomgevingen zijn, kan het `aem_env_id` veld ook worden gebruikt. Sommige organisaties kunnen een afzonderlijke index voor de logboeken van het productiemilieu kiezen als de bijbehorende index toegang tot een verminderde reeks gebruikers van de Splunk beperkt.
+
+Hier volgt een voorbeeld van een logbestandvermelding:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
