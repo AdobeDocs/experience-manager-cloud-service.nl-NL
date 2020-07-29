@@ -2,9 +2,9 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 9%
 
 ---
@@ -189,6 +189,7 @@ Als onderdeel van het basisframework wordt dit bestand bij het opstarten gegener
 Standaardhostglobing geschikt voor een standaardproject. Wijzig de instellingen als u deze wilt aanpassen `virtualhosts.any`. In uw aanpassing, zou u niet het standaard gastheer het globbings moeten omvatten, aangezien het **elk** inkomend verzoek aanpast.
 
 >[!NOTE]
+>
 >De AEM als Cloud Service wordt gemaakt archetype zal de zelfde structuur van het dossier van de berichtconfiguratie produceren.
 
 In de onderstaande secties wordt beschreven hoe u de configuratie lokaal kunt valideren zodat deze de bijbehorende kwaliteitspoort in Cloud Manager kan doorgeven bij het implementeren van een interne release.
@@ -371,37 +372,7 @@ Hierdoor start de dispatcher in een container met de achterkant naar een AEM ins
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
-De volgende strategie kan worden gebruikt om de logboekoutput voor de verzender module te verhogen en het resultaat van de `RewriteRule` evaluatie in zowel lokale als wolkenmilieu&#39;s te zien.
-
-De logboekniveaus voor deze modules worden bepaald door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL`. Deze kunnen in het bestand worden ingesteld `conf.d/variables/global.vars`. Het relevante deel is als volgt:
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-Wanneer u de Dispatcher lokaal uitvoert, worden de logbestanden ook rechtstreeks afgedrukt op de einduitvoer. Meestal, zouden deze logboeken in DEBUG moeten zijn, die kan worden verwezenlijkt door in Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld:
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-Logbestanden voor cloudomgevingen worden weergegeven via de logservice die beschikbaar is in Cloud Manager.
+De logbestandniveaus worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s.&quot;. Raadpleeg de documentatie bij [Logging](/help/implementing/developing/introduction/logging.md) voor meer informatie.
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
 
