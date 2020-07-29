@@ -1,8 +1,8 @@
 ---
-title: 'AEM-projectopslagplaatsstructuurpakket  '
-description: Voor Adobe Experience Manager als een met cloudservice gefinancierde projecten is een definitie vereist van het subpakket Structuur in opslagplaats met als enig doel de wortels van de JCR-opslagplaats te definiëren waarin de subpakketten Code van het project worden geïmplementeerd.
+title: 'AEM-projectrepositorystructuurpakket  '
+description: Voor Adobe Experience Manager als een Cloud Service Maven-project is een definitie vereist van het subpakket "Structuur van opslagplaats" dat uitsluitend tot doel heeft de wortels van de JCR-opslagplaats te bepalen waarin de subpakketten code van het project worden geïmplementeerd.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -10,9 +10,9 @@ ht-degree: 9%
 ---
 
 
-# AEM-projectopslagplaatsstructuurpakket
+# AEM-projectrepositorystructuurpakket
 
-Voor geMaven projecten voor Adobe Experience Manager als Cloud Service is een subpakketdefinitie vereist in de opslagplaats met als enig doel het definiëren van de wortels van de JCR-opslagplaats waarin de code-subpakketten van het project worden geïmplementeerd. Dit zorgt ervoor dat de installatie van pakketten in de Manager van de Ervaring als Dienst van de Wolk automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
+GeMaven projecten voor Adobe Experience Manager als Cloud Service vereisen een subpakketdefinitie in de repository structuur met als enig doel het bepalen van de wortels van de JCR opslagplaats waarin de code-subpakketten van het project worden geïmplementeerd. Dit verzekert de installatie van pakketten in Experience Manager als Cloud Service automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 
 Als uw codepakket wordt geïmplementeerd op een locatie die **niet door het codepakket wordt gedekt**, dan moeten bovenliggende resources (JCR-resources die zich dichter bij de JCR-root bevinden) in het pakket van de dataopslagstructuur worden opgesomd om deze afhankelijkheden tot stand te brengen.
 
