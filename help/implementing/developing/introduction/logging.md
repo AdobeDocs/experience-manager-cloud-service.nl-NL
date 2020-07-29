@@ -2,9 +2,9 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
+source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2212'
 ht-degree: 2%
 
 ---
@@ -97,9 +97,7 @@ Hoewel Java-logboekregistratie verschillende andere niveaus van granulariteit vo
 
 AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie OSGi, die beurtelings aan Git wordt geëngageerd, en via de Manager van de Wolk aan AEM als Cloud Service worden opgesteld. Wegens dit, is het best om logboekverklaringen verenigbaar en bekend voor omgevingstypes te houden, om de logboeken beschikbaar via AEM als Cloud Service te verzekeren zijn beschikbaar op het optimale logboekniveau zonder herplaatsing van toepassing met de bijgewerkte configuratie van het logboekniveau te vereisen.
 
-### Logbestandsindeling {#log-format}
-
-**Voorbeeld van loguitvoer**
+**Uitvoer voorbeeldlog**
 
 ```
 22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge
@@ -108,6 +106,8 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+**Logbestandsindeling**
 
 <table>
 <tbody>
@@ -192,8 +192,6 @@ AEM als het verzoekregistreren van HTTP van een Cloud Service verstrekt inzicht 
 
 De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- verzoek en antwoordparen door hun IDs, die door de numerieke waarde in de steunen wordt aangegeven. Merk op dat vaak de verzoeken en hun overeenkomstige reacties andere HTTP- verzoeken en reacties tussen hen in het logboek worden geworpen.
 
-### Logbestandsindeling {#http-request-logging-format}
-
 **Voorbeeldlogboek**
 
 ```
@@ -205,6 +203,8 @@ De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- v
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+**Logbestandsindeling**
 
 <table>
 <tbody>
@@ -246,15 +246,15 @@ AEM als het de toegangslogboek van HTTP van de Cloud Service toont HTTP- verzoek
 
 Dit logboek is nuttig om snel te begrijpen welke HTTP- verzoeken aan AEM worden gemaakt, als zij door de begeleidende code van de de reactiestatus van HTTP te bekijken slagen, en hoe lang het HTTP- verzoek duurde om te voltooien. Dit logboek kan ook nuttig zijn om de activiteit van een specifieke gebruiker te zuiveren door logboekingangen door Gebruikers te filtreren.
 
-### Logbestandsindeling {#access-log-format}
-
-**Voorbeeld**
+**Uitvoer voorbeeldlog**
 
 ```
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css HTTP/1.1" 200 1141 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+**Logbestandsindeling**
 
 <table>
 <tbody>
@@ -327,11 +327,7 @@ Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklari
 
 Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-**Logbestandsindeling**
-
-<!--blank until prod build finishes-->
-
-**Voorbeeld**
+**Uitvoer voorbeeldlog**
 
 ```
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
@@ -339,27 +335,101 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET 
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
 
+**Logbestandsindeling**
+
+<table>
+<tbody>
+<tr>
+<td>AEM als Cloud Service-knooppunt-id</td>
+<td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
+</tr>
+<tr>
+<td>IP Adres van de cliënt</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Gebruiker</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum en tijd</td>
+<td>01/mei/2020:00:09:46 +000</td>
+</tr>
+<tr>
+<td>HTTP-methode</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/example.html</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>HTTP-responsstatus</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Grootte</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Verwijzing</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Gebruikersagent</td>
+<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 ### Het Apache HTTPD Web Server Access Log configureren {#configuring-the-apache-httpd-webs-server-access-log}
 
 Dit logboek is niet configureerbaar in AEM als Cloud Service.
 
-## Apache HTTPD Web Server-foutenlogboek {#apache-httpd-web-server-error-log}
+## Apache HTTPD Web Server Error Log {#apache-httpd-web-server-error-log}
 
 Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server van het Web van de rij/Dispatcher.
 
 Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
-**Logbestandsindeling**
-
-<!--placeholder-->
-
-**Voorbeeld**
+**Uitvoer voorbeeldlog**
 
 ```
 Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
 Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
+
+**Logbestandsindeling**
+
+<table>
+<tbody>
+<tr>
+<td>Datum en tijd</td>
+<td>17 jul. 02:16:42.608913 2020</td>
+</tr>
+<tr>
+<td>Gebeurtenisniveau</td>
+<td>[mpm_worker:notice]</td>
+</tr>
+<tr>
+<td>Proces-id</td>
+<td>[pid 1:tid 140715149343624]</td>
+</tr>
+<tr>
+<td>Naam pod</td>
+<td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
+</tr>
+<tr>
+<td>Bericht</td>
+<td>AH00094: Opdrachtregel: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+</tr>
+</tbody>
+</table>
 
 ### Het Apache HTTPD Web Server Error Log configureren {#configuring-the-apache-httpd-web-server-error-log}
 
@@ -388,8 +458,6 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher Log {#dispatcher-log}
 
-<!--de completat-->
-
 **Voorbeeld**
 
 ```
@@ -398,7 +466,48 @@ Define REWRITE_LOG_LEVEL Debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-### Logbestandsindeling {#dispatcher-log-format}
+**Logbestandsindeling**
+
+<table>
+<tbody>
+<tr>
+<td>Datum en tijd</td>
+<td>[17/jul/2020:23:48:16 +000]</td>
+</tr>
+<tr>
+<td>Podnaam</td>
+<td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Dispatcher-antwoordstatuscode</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Duur</td>
+<td>1949ms</td>
+</tr>
+<tr>
+<td>Landbouwbedrijf</td>
+<td>[uitgeverij/0]</td>
+</tr>
+<tr>
+<td>Cachestatus</td>
+<td>[actie missen]</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>"publish-p12904-e25628.adobeaemcloud.com"</td>
+</tr>
+</tbody>
+</table>
 
 ### Het Dispatcher-foutenlogboek configureren {#configuring-the-dispatcher-error-log}
 
@@ -471,7 +580,7 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
