@@ -2,9 +2,9 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1304'
 ht-degree: 2%
 
 ---
@@ -195,41 +195,18 @@ Dit logboek is nuttig om snel te begrijpen welke HTTP- verzoeken aan AEM worden 
 
 ### Logbestandsindeling {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM als knooppunt-id voor Cloud Service</b></td>
-<td><b>IP-adres van de client</b></td>
-<td><b>Gebruiker</b></td>
-<td><b>Datum en tijd</b></td>
-<td><b>Leeg</b></td>
-<td><b>HTTP-methode</b></td>
-<td><b>URL</b></td>
-<td><b>Protocol</b></td>
-<td><b>Leeg</b></td>
-<td><b>HTTP-reactiestatus</b></td>
-<td><b>HTTP-responstijd in milliseconden</b></td>
-<td><b>Referenter</b></td>
-<td><b>Gebruikersagent</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-auteur-59555cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/apr/2020:17:37:14 +0000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| AEM als knooppunt-id voor Cloud Service | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| IP Adres van de Cliënt | - |
+| Gebruiker | myuser@adobe.com |
+| Datum en tijd | 30/apr/2020:17:37:14 +0000 |
+| HTTP-methode | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| Protocol | HTTP/1.1 |
+| HTTP-reactiestatus | 200 |
+| HTTP-aanvraagtijd in milliseconden | 1141 |
+| Referenter | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Gebruikersagent | &quot;Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
 
 **Voorbeeld**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 Het logboek van de Toegang van HTTP is niet configureerbaar in AEM als Cloud Service.
 
-## Apache-webserver/Dispatcher-aanmelding {#dispatcher-logging}
+## Apache Web Server en Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
 AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apache en verzender laag op Publish:
 
@@ -253,4 +230,74 @@ AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apach
 
 Deze logbestanden zijn alleen beschikbaar voor de publicatielijst.
 
-Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud Service publiceren rij voorafgaand aan die verzoeken die de AEM toepassing bereiken. Dit is belangrijk om te begrijpen aangezien, idealiter, de meeste HTTP- verzoeken aan de Publish rijservers door caching inhoud door de Server van het Web Apache HTTPD en AEM Dispatcher worden gediend, en nooit de AEM toepassing zelf bereiken, zodat zijn er geen logboekverklaringen voor deze verzoeken in AEM Java, Verzoek of Logboeken van de Toegang.
+Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud Service publiceren rij voorafgaand aan die verzoeken die de AEM toepassing bereiken. Dit is belangrijk om te begrijpen aangezien, idealiter, de meeste HTTP- verzoeken aan de Publish rijservers door inhoud worden gediend die door de Server van het Web van Apache HTTPD en AEM Dispatcher in de cache wordt opgeslagen, en nooit de AEM toepassing zelf bereiken. Er zijn dus geen loginstructies voor deze aanvragen in AEM Java-, verzoek- of toegangslogboeken.
+
+### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
+
+Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server van het Web van de rij/Dispatcher bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
+
+Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+
+**Logbestandsindeling**
+
+<!--blank until prod build finishes-->
+
+**Voorbeeld**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Het Apache HTTPD Web Server Access Log configureren {#configuring-the-apache-httpd-webs-server-access-log}
+
+Dit logboek is niet configureerbaar in AEM als Cloud Service.
+
+## Apache HTTPD Web Server-foutenlogboek {#apache-httpd-web-server-error-log}
+
+Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server van het Web van de rij/Dispatcher.
+
+Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+
+**Logbestandsindeling**
+
+<!--placeholder-->
+
+**Voorbeeld**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Het Apache HTTPD Web Server Error Log configureren {#configuring-the-apache-httpd-web-server-error-log}
+
+De mod_rewrite logboekniveaus worden bepaald door veranderlijke REWRITE_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
+
+Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1 - Trace8, met de standaardwaarde voor Waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan Trace2 op te heffen.
+
+Zie de mod_rewrite moduledocumentatie [](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie.
+
+Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het bestand global.var, zoals hieronder wordt beschreven:
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcher Log {#dispatcher-log}
+
+**Logbestandsindeling**
+
