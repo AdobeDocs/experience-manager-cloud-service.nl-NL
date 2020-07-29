@@ -2,7 +2,7 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 9%
@@ -372,7 +372,7 @@ Hierdoor start de dispatcher in een container met de achterkant naar een AEM ins
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
-De logbestandniveaus worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s.&quot;. Raadpleeg de documentatie bij [Logging](/help/implementing/developing/introduction/logging.md) voor meer informatie.
+De logbestandniveaus worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s.&quot;. Raadpleeg de documentatie bij [Logging](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) voor meer informatie.
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
 
