@@ -1,23 +1,23 @@
 ---
-title: AEM-toepassingsproject - Cloud Service
-description: AEM-toepassingsproject - Cloud Service
+title: Toepassingsproject AEM - Cloud Service
+description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 9%
 
 ---
 
 
 # Een AEM-applicatieproject maken {#aem-application-project}
 
-## Wizard gebruiken om een AEM-toepassingsproject te maken {#using-wizard-to-create-an-aem-application-project}
+## Het gebruiken van Tovenaar om een Project van de AEMToepassing te creëren {#using-wizard-to-create-an-aem-application-project}
 
-Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM-project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
-Voer de onderstaande stappen uit om een AEM-toepassingsproject te maken in Cloud Manager:
+Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud Manager:
 
 1. Nadat u zich hebt aangemeld bij Cloud Manager en de basisconfiguratie van het programma is voltooid, wordt een speciale aanroep naar een actiekaart weergegeven op het scherm **Overzicht** als de opslagplaats leeg is.
 
@@ -40,7 +40,7 @@ Voer de onderstaande stappen uit om een AEM-toepassingsproject te maken in Cloud
 
 ### Details projectinstelling wijzigen {#modifying-project-setup-details}
 
-Voor een correcte bouw en implementatie met Cloud Manager moeten bestaande AEM-projecten zich aan een aantal basisregels houden:
+Om te kunnen worden gebouwd en geïmplementeerd met Cloud Manager, moeten bestaande AEM projecten zich aan een aantal basisregels houden:
 
 * Projecten moeten worden gebouwd met Apache Maven.
 * Er moet een *pom.xml* -bestand aanwezig zijn in de hoofdmap van de Git-opslagplaats. Dit *pom.xml* -bestand kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enzovoort) indien nodig.
@@ -71,42 +71,11 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 * Andere pakketten kunnen worden geïnstalleerd tijdens het samenstellen zoals [hieronder](#installing-additional-system-packages)wordt beschreven.
 * Elke bouw wordt gedaan op een ongerepte milieu; de bouwstijlcontainer houdt geen staat tussen uitvoeringen.
 * Maven wordt altijd uitgevoerd met de opdracht: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
-* Maven wordt geconfigureerd op systeemniveau met een bestand settings.xml dat automatisch de openbare Adobe **Artefact** -opslagplaats omvat. (Raadpleeg de [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie.)
+* Maven wordt gevormd op systeemniveau met een settings.xml- dossier dat automatisch de openbare bewaarplaats van het **Artefact** van de Adobe omvat. (Zie [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie.)
 
 >[!NOTE]
 >Hoewel in Cloud Manager geen specifieke versie van de versie wordt gedefinieerd, moet de gebruikte versie minstens `jacoco-maven-plugin``0.7.5.201505241946`zijn.
 
-### Java 11 gebruiken {#using-java-11}
-
-Cloud Manager ondersteunt nu het maken van klantprojecten met zowel Java 8 als Java 11. Standaard worden projecten gemaakt met behulp van Java 8. Klanten die van plan zijn Java 11 in hun projecten te gebruiken, kunnen dit doen gebruikend de Insteekmodule van Toolketens [Apache Maven](https://maven.apache.org/plugins/maven-toolchains-plugin/).
-
-Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt uitziet:
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->De ondersteunde `vendor` waarden zijn `oracle` en `sun` en de ondersteunde `version` waarden zijn `1.8`, `1.11`en `11`.
 
 ## Omgevingsvariabelen {#environment-variables}
 
@@ -368,7 +337,7 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 
 >[!NOTE]
 >
->Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die wordt gebruikt voor het uitvoeren van Adobe Experience Manager. Neem contact op met uw Adobe-vertegenwoordiger als u een systeempakket op de AEM-omgeving wilt installeren.
+>Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die wordt gebruikt voor het uitvoeren van Adobe Experience Manager. Als u een systeempakket nodig hebt dat op de AEM-omgeving is geïnstalleerd, neemt u contact op met uw Adobe-vertegenwoordiger.
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
