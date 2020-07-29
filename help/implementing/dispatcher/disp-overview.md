@@ -2,7 +2,7 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-In deze sectie wordt beschreven hoe u de AEM kunt structureren als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u de AEM lokaal kunt valideren en uitvoeren voordat u de AEM implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de documentatie bij [AEM Dispatcher voor meer informatie over Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
+In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de documentatie bij [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM Dispatcher voor meer informatie over Dispatcher.
 
 >[!NOTE]
 >
@@ -22,11 +22,11 @@ In deze sectie wordt beschreven hoe u de AEM kunt structureren als Apache- en Di
 
 >[!WARNING]
 >
->Windows-gebruikers: de huidige versie van AEM als Cloud Service lokale Dispatcher Tools (v2.0.20) is niet compatibel met Windows. Neem contact op met de ondersteuning [van](https://daycare.day.com/home.html) Adobe voor updates over Windows-compatibiliteit.
+>Windows-gebruikers: de huidige versie van AEM als Cloud Service lokale Dispatcher Tools (v2.0.20) is incompatibel met Windows. Neem contact op met de [Adobe Support](https://daycare.day.com/home.html) voor updates over Windows-compatibiliteit.
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
-De Dispatcher Tools maakt deel uit van de algemene AEM als Cloud Service SDK en biedt:
+De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en bieden:
 
 * Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een bepaald project voor dispatcher.
 * Klanten kunnen kiezen voor lokale validatie van een verzendersconfiguratie.
@@ -34,7 +34,7 @@ De Dispatcher Tools maakt deel uit van de algemene AEM als Cloud Service SDK en 
 
 ## De gereedschappen downloaden en extraheren {#extracting-the-sdk}
 
-De Dispatcher Tools kan worden gedownload van een ZIP-bestand op de [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal. De toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als een Cloud Service-omgeving. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt voor implementatie in cloudomgevingen met die versie van AEM in de cloud of hoger.
+De Dispatcher Tools kan worden gedownload van een ZIP-bestand op de [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal. Let op: toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als Cloud Service. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools, kan worden gebruikt voor implementatie in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
 **Voor MacOS en Linux** downloadt u het shellscript naar een map op uw computer, maakt u het uitvoerbaar en voert u het uit. De bestanden met Dispatcher Tools worden zelf uitgepakt onder de map waarin u deze hebt opgeslagen (waar `version` is de versie van de verzendprogramma&#39;s).
 
@@ -189,7 +189,7 @@ Als onderdeel van het basisframework wordt dit bestand bij het opstarten gegener
 Standaardhostglobing geschikt voor een standaardproject. Wijzig de instellingen als u deze wilt aanpassen `virtualhosts.any`. In uw aanpassing, zou u niet het standaard gastheer het globbings moeten omvatten, aangezien het **elk** inkomend verzoek aanpast.
 
 >[!NOTE]
->AEM als Cloud Service wordt gemaakt archetype zal de zelfde structuur van het de configuratiedossier van de verzender produceren.
+>De AEM als Cloud Service wordt gemaakt archetype zal de zelfde structuur van het dossier van de berichtconfiguratie produceren.
 
 In de onderstaande secties wordt beschreven hoe u de configuratie lokaal kunt valideren zodat deze de bijbehorende kwaliteitspoort in Cloud Manager kan doorgeven bij het implementeren van een interne release.
 
@@ -253,9 +253,9 @@ Wanneer de looppas tegen uw beven artefact of uw `dispatcher/src` subdirectory, 
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn op de lijst met gewenste personen gestaan. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
@@ -367,7 +367,7 @@ Starting httpd server
 ...
 ```
 
-Hierdoor wordt de verzender in een container gestart, waarbij de achtergrond naar een AEM-instantie verwijst die op uw lokale Mac OS-computer op poort 4503 wordt uitgevoerd.
+Hierdoor start de dispatcher in een container met de achterkant naar een AEM instantie die op uw lokale Mac OS-computer op poort 4503 wordt uitgevoerd.
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
@@ -464,15 +464,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Belangrijkste verschillen tussen AMS Dispatcher en AEM als Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-Zoals hierboven op de referentiepagina is beschreven, lijken de Apache- en Dispatcher-configuratie in AEM als Cloud Service sterk op die in AMS. De belangrijkste verschillen zijn:
+Zoals hierboven op de referentiepagina is beschreven, lijken de configuratie van Apache en Dispatcher in AEM als Cloud Service sterk op die van AMS. De belangrijkste verschillen zijn:
 
-* In AEM als Cloud Service kunnen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
-* In AEM als Cloud Service, kunnen slechts sommige stukken van de configuratie van Dispatcher in omvat dossiers worden gezet en hun het noemen is belangrijk. Zo moeten filterregels die u op verschillende hosts opnieuw wilt gebruiken, in een bestand met de naam `filters/filters.any`worden geplaatst. Zie de referentiepagina voor meer informatie.
-* In AEM als Cloud Service is er extra validatie om filterregels te weigeren die worden geschreven met behulp `/glob` om beveiligingsproblemen te voorkomen. Aangezien `deny *` wordt gebruikt in plaats `allow *` (en niet kan worden gebruikt), zullen klanten er baat bij hebben om de Dispatcher lokaal uit te voeren en fouten te maken. In de logboeken wordt precies nagegaan welke paden door de Dispatcher-filters worden geblokkeerd, zodat deze kunnen worden toegevoegd.
+* In AEM als Cloud Service mogen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
+* In AEM als Cloud Service, slechts kunnen sommige stukken van de configuratie van Dispatcher in omvat dossiers worden gezet en hun het noemen is belangrijk. Zo moeten filterregels die u op verschillende hosts opnieuw wilt gebruiken, in een bestand met de naam `filters/filters.any`worden geplaatst. Zie de referentiepagina voor meer informatie.
+* In AEM als Cloud Service is er extra bevestiging om filterregels te verbieden die worden geschreven gebruikend `/glob` om veiligheidskwesties te verhinderen. Aangezien `deny *` wordt gebruikt in plaats `allow *` (en niet kan worden gebruikt), zullen klanten er baat bij hebben om de Dispatcher lokaal uit te voeren en fouten te maken. In de logboeken wordt precies nagegaan welke paden door de Dispatcher-filters worden geblokkeerd, zodat deze kunnen worden toegevoegd.
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM als Cloud Service
 
-De de configuratiestructuur van de verzender heeft verschillen tussen Beheerde Diensten en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher-configuratieversie 2 naar AEM als Cloud Service.
+De configuratiestructuur van de verzender heeft verschillen tussen Managed Services en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher-configuratieversie 2 naar AEM als Cloud Service.
 
 ## Een AMS converteren naar een AEM als configuratie voor een serviceverzender in de cloud
 
