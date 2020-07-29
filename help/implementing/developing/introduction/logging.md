@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ Werkgebied</td>
 WAARSCHUWING</td>
 <td>
 Beschrijft voorwaarden die het potentieel hebben om fouten te worden.<br>
-
 Wanneer het registreren WARN actief is, slechts worden de verklaringen die op voorwaarden wijzen die sub-optimaliteit naderen geregistreerd.</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ Productie</td>
 FOUT</td>
 <td>
 Beschrijft voorwaarden die op een mislukking wijzen, en behoefte om op te lossen.<br>
-
 Wanneer het registreren van de FOUT actief is, slechts worden de verklaringen die op mislukkingen wijzen geregistreerd. FOUTloginstructies geven een ernstig probleem aan dat zo snel mogelijk moet worden opgelost.</td>
 <td>
 <ul>
