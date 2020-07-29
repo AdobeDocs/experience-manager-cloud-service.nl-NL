@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.7.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.7.0
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -29,8 +29,6 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
-
-* De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
 
 * De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
 Raadpleeg [Pipetvariabelen](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) voor meer informatie.
@@ -63,7 +61,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 ### Bug Fixes {#cra-bug-fixes}
 
-* Eerdere versie van de CRA kan niet worden uitgevoerd op Adobe Experience Manager (AEM) 6.1. Er is expliciete ondersteuning toegevoegd om gebruikers in de beheerdersgroep toe te staan.
+* Eerdere versie van de CRA kon niet worden uitgevoerd op Adobe Experience Manager (AEM) 6.1. Er is expliciete ondersteuning toegevoegd om gebruikers in de beheerdersgroep toe te staan.
 
    Raadpleeg [CRA installeren op AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) voor meer informatie.
 
@@ -71,5 +69,5 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 * CRA detecteerde dubbele aangepaste componenten.
 
-* Op AEM 6.1 werd de inhoudsinspectie afgesloten voordat de volledige inspectie werd voltooid. Uitzonderingsafhandeling is toegevoegd, zodat de controle kan overslaan en doorgaan totdat de volledige inspectie is voltooid.
+* Op AEM 6.1 was de inhoudsinspectie afgesloten voordat de volledige inspectie werd voltooid. Uitzonderingsafhandeling is toegevoegd, zodat de controle kan overslaan en doorgaan totdat de volledige inspectie is voltooid.
 
