@@ -2,9 +2,9 @@
 title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Opmerkingen bij de release voor AEM als Cloud Service 2020.6.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.6.0.
+Deze pagina schetst de algemene opmerkingen bij de release voor Experience Manager als Cloud Service 2020.6.0.
 
 ## Releasedatum {#release-date}
 
@@ -20,13 +20,13 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.6.0 is 4 j
 
 ## Nieuwe functies in AEM Sites {#aem-sites}
 
-Volg deze sectie om te leren over wat nieuw en de updates voor AEM Sites in AEM als Versie van de Cloud Service 2020.6.0 is.
+Volg deze sectie om over wat nieuw en de updates voor AEM Sites in AEM als Versie van de Cloud Service 2020.6.0 is te leren.
 
 ### What&#39;s New {#whats-new-2020.6.0}
 
 Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites zoals:
 
-* Integratie tussen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) en de Core Components
+* Integratie tussen de Gegevenslaag [van de Cliënt van](https://github.com/adobe/adobe-client-data-layer) Adobe en de Componenten van de Kern
 * Configureerbare HTML-id-kenmerken voor alle componenten
 * Een nieuwe component ProgressBar
 * Veel opgeloste problemen
@@ -47,11 +47,11 @@ Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/ex
 
 * Verbeteringen voor schermlezers.
 
-## Nieuw in stichtingen in AEM als Cloud Service {#foundations}
+## Nieuwe functies in stichtingen in AEM als Cloud Service {#foundations}
 
-De bouwtijden van het AEM- project zullen verbeteren door alle verwijzingen in pom.xml van het AEM- project aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM project bouwt tijden zal verbeteren door alle verwijzingen in pom.xml van het AEM project aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-De AEM als Cloud Service SDK API Jar, die eerder op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats van Maven.
+De AEM als Cloud Service SDK API Jar, die eerder op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats voor artefacten van Maven.
 
 ## Nieuwe functies in Cloud Manager {#cloud-manager}
 
@@ -93,7 +93,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * In bepaalde situaties zijn de pictogrammen in het dialoogvenster **Programma** maken onjuist uitgelijnd.
 
-* De AEM-release-id wordt niet consistent weergegeven op de pagina Overzicht **van** programma&#39;s.
+* De AEM release-id wordt niet consistent weergegeven op de pagina Overzicht **van** programma&#39;s.
 
 * Wanneer het vormen van de productiepijpleiding, was de **Geplande optie van de Plaatsing** niet zichtbaar voor sommige klanten.
 
@@ -116,7 +116,7 @@ Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe
 
 Organisaties kunnen 3D-bestanden nu opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met toevoeging van [!DNL Dynamic Media], kunt u 3D ervaringen vormen en leveren gebruikend agnostische URLs of kijkers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-**Ondersteuning voor Adobe Asset Link voor Adobe XD**
+**Adobe Asset Link-ondersteuning voor Adobe XD**
 
 Met de nieuwste release [!DNL Experience Manager Assets] wordt een nieuwe [!DNL Adobe Asset Link] plug-in ondersteund die wordt uitgebracht met [!DNL Adobe XD] versie 29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen en kunnen ze deze gebruiken vanuit [!DNL Experience Manager] hun ontwerpen, zonder dat ze de [!DNL Adobe XD] toepassing hoeven te verlaten. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
