@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager as a Cloud Service-sites
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Sites as a Cloud Service
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ Deze pagina bevat zelfhulpbronnen over Sites in Experience Manager as a Cloud Se
 * [Ervaringsfragmenten gebruiken](authoring/fundamentals/experience-fragments.md)
 * [Lanceringen gebruiken](authoring/launches/overview.md)
 * [Content personaliseren met ContextHub](authoring/personalization/contexthub.md)
-* [Integreren met Adobe Analytics](integrating/adobe-analytics.md)
-* [Integreren met Adobe Target](integrating/adobe-target.md)
+* [Integreren met Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [Integreren met Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
