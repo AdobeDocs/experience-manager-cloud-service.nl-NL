@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release Adobe Experience Manager als Cloud Service voor 2020.4.0
-description: Opmerkingen bij de release Experience Manager voor 2020.4.0
+title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.4.0
+description: Opmerkingen bij de release van Experience Manager voor 2020.4.0
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
@@ -12,21 +12,21 @@ ht-degree: 1%
 
 # Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] als Cloud Service 2020.4.0 beschreven.
+Deze pagina bevat een overzicht van de algemene releaseopmerkingen voor [!DNL Experience Manager] als Cloud Service 2020.4.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor [!DNL Experience Manager] als cloudservice 2020.4.0 is 9 april 2020.
+De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.4.0 is 9 april 2020.
 
 ## Nieuwe functies in middelen {#assets}
 
 Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Experience Manager Assets] [!DNL Dynamic Media] en in de huidige release.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ondersteunt de praktijkvoorbeelden van middelendistributie voor Experience Manager-middelen. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
+* [Het Portaal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) van het merk steunt de het gebruiksgevallen van de activadistributie voor de Activa van de Experience Manager. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
    * [!DNL Brand Portal] configuratie wordt voltooid door [!DNL Adobe I/O] console. Zie Brand Portal [configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
-   * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNL Experience Manager] de Cloud Service.
+   * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNL Experience Manager] als Cloud Service.
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 werkt met [!DNL Experience Manager] als cloudservice. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door verbinding te maken [!DNL Experience Manager Assets] met [!DNL Creative Cloud] bureaubladtoepassingen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign] via het [!DNL Asset Link] deelvenster in de app.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 werkt met [!DNL Experience Manager] als Cloud Service. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door verbinding te maken [!DNL Experience Manager Assets] met [!DNL Creative Cloud] bureaubladtoepassingen [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign] via het [!DNL Asset Link] deelvenster in de app.
    * [!DNL Experience Manager] is vooraf geconfigureerd voor [!DNL Adobe Asset Link], wat resulteert in [eenvoudige configuratie](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) en snellere implementatie voor creatieve professionals.
    * [!DNL Asset Link] ondersteunt nu een [Experience Manager-omgevingsswitch](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) waarmee creatieve gebruikers eenvoudig verbinding kunnen maken met een andere [!DNL Experience Manager] omgeving. Een voorbeeld waar deze functionaliteit nuttig is, is voor agentontwerpers die met veelvoudige cliënten werken gebruikend verschillende [!DNL Experience Manager Assets] plaatsingen.
 
@@ -39,7 +39,7 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 
       ![Geselecteerde elementen opnieuw verwerken met een specifiek verwerkingsprofiel](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de elementen expliciet worden gepubliceerd naar Experience Manager zonder dat ze naar DMS7 worden gepubliceerd voor levering in het publieke domein.
+   * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de activa uitdrukkelijk aan Experience Manager worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren.
 
 ### Bug Fixes {#assets-bug-fixes}
 
@@ -48,10 +48,10 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 
 >[!MORELIKETHIS]
 >
->* [Over Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Over Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand-portal configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Experience Manager configureren om te werken met Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Workflow maken in Experience Manager met behulp van middelen microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Vorm Experience Manager om met de Verbinding van Activa te werken](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Workflow maken in Experience Manager met behulp van middelen-microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Nieuwe functies in Cloud Manager {#whats-new-cloud-manager}
@@ -72,4 +72,4 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 * De Gemaakt configuratie die in de bouwstijlcontainer wordt gebruikt werd bijgewerkt om imaturen te vermijden toen het downloaden van artefactmeta-gegevens.
 * In sommige gevallen, zou de stap van het Beeld van de Bouwstijl er niet in slagen om klantenpakketten met succes te downloaden.
 * Bepaalde omstandigheden die zich niet vaak voordoen, verhinderen dat omgevingen worden verwijderd.
-* Experience Cloud-meldingen zijn niet altijd ontvangen.
+* Experience Cloud-meldingen werden niet altijd ontvangen.
