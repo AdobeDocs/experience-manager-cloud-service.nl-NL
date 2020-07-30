@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als de Nota''s van de Versie van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,8 @@ Release 2.11.0 van de [AEM Core Components](https://docs.adobe.com/content/help/
 
 * Introductie van een nieuwe [PDF Viewer-component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
 
-* Dankzij de versnelde ondersteuning voor mobiele pagina&#39;s (AMP) van Core Components kunnen klanten sneller ervaringen opdoen door de paginaovergang onmiddellijk te maken wanneer ze de site betreden vanuit een Google mobile-zoekresultaat, wat de betrokkenheid van gebruikers en SEO verbetert.
+* Ondersteuning voor versnelde mobiele pagina&#39;s (AMP) van kerncomponenten is nu beschikbaar. Het helpt klanten sneller ervaringen op te doen door de paginaovergang onmiddellijk te maken wanneer ze de site betreden vanuit een mobiel zoekresultaat van Google, wat de betrokkenheid van gebruikers en SEO verbetert.
+Raadpleeg [AMP Support for the Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) voor meer informatie.
 
 * Compatibiliteit met versie 1.0.2 van de gegevenslaag [van de Cliënt van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)Adobe.
 
