@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als de Nota''s van de Versie van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '964'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 * Een nieuwe die implementatie van het gebruikersinterface vervangt de implementatie op Klassieke UI wordt gebaseerd.
 
-* Vereenvoudigde dialoogvensters voor gebruikersinterfaces, waarbij het maken van een framework voor variabele toewijzing en andere configuraties overblijft [!DNL Adobe Launch].
+* Vereenvoudigde dialoogvensters voor gebruikersinterfaces, waarbij het maken van een framework voor variabele toewijzing en andere configuraties overblijft [!DNL Adobe Launch]. Zie [Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) integreren en [Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)integreren.
 
 * Configuraties worden nu opgeslagen in `/conf` plaats `/etc/cloudsettings` in de opslagplaats van de Experience Manager.
 
