@@ -2,9 +2,9 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -17,18 +17,18 @@ Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie
 * via de aanraakinterface een Analytics-configuratie in AEM maken als Cloud Service (vereiste IMS-configuratie).
 * Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-De integratie met het Lanceren is nodig voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
+Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
 
 >[!NOTE]
 >
->Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Target hebben, kan om toegang tot het Pak van de Stichting van Target voor Experience Cloud verzoeken.  Foundation Pack biedt een beperkt gebruik van Target voor volumes.
+>Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Target hebben, kan om toegang tot het Pak van de Stichting van Target voor Experience Cloud verzoeken. Foundation Pack biedt een beperkt gebruik van Target voor volumes.
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
 1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
    ![](assets/cloudservice.png "NavigationNavigation")
 2. Selecteer **Adobe Target**.
-3. Klik op de knop **Maken** .
+3. Selecteer de knop **Maken** .
    ![](assets/tenant.png "CreateCreate")
 4. Vul de gegevens in (zie hieronder) en selecteer **Connect**.
    ![](assets/open_screen.png "Connect")
@@ -59,10 +59,6 @@ AEM biedt een out of the box integratie met Experience Platform Launch. Door de 
 >
 >Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
 
->[!NOTE]
->
->Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
-
 Als algemeen overzicht, zijn de integratiestappen:
 
 1. Een opstarteigenschap maken
@@ -83,7 +79,7 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 
 ### De vereiste extensies toevoegen {#add-extension}
 
-Extensies is de container die de kernbibliotheekinstellingen beheert. De Adobe Target-extensie ondersteunt client-side implementaties met Target JavaScript SDK voor het moderne web, at.js. U moet zowel de uitbreidingen **Adobe Target** als **Adobe ContextHub** toevoegen.
+**Extensies** is de container die de kernbibliotheekinstellingen beheert. De extensie Adobe Target ondersteunt client-side implementaties door Target JavaScript SDK te gebruiken voor het moderne web, at.js. U moet zowel de uitbreidingen **Adobe Target** als **Adobe ContextHub** toevoegen.
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteer **Adobe Target** om.js en klik op de installatieoptie.
@@ -95,7 +91,7 @@ Extensies is de container die de kernbibliotheekinstellingen beheert. De Adobe T
 
 ### Een gegevenselement maken {#data-element}
 
-De elementen van gegevens zijn placeholders waaraan u de parameters van de contexthub kunt in kaart brengen.
+**De elementen** van gegevens zijn placeholders waaraan u de parameters van de contexthub kunt in kaart brengen.
 
 1. Selecteer **Gegevenselementen**.
 2. Selecteer Gegevenselement **** toevoegen.
@@ -105,7 +101,7 @@ De elementen van gegevens zijn placeholders waaraan u de parameters van de conte
 
 ### Een paginalijn maken {#page-rule}
 
-In de regel definiëren en ordenen we een reeks acties, die ter plaatse zullen worden uitgevoerd, om doelgericht te zijn.
+In **artikel** definiëren en ordenen we een reeks acties, die ter plaatse zullen worden uitgevoerd, om doelgericht te zijn.
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
    ![](assets/rules.png "ActionsActions")
