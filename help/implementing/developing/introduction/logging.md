@@ -2,7 +2,7 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 2%
@@ -27,9 +27,9 @@ Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeke
 1. De logboeken van het Verzoek van HTTP, die logboekinformatie over HTTP- verzoeken en hun antwoorden registreren die door AEM worden gediend
 1. De logboeken van de Toegang van HTTP, die logboek samenvatte informatie en HTTP- verzoeken die door AEM worden gediend
 
-> [!NOTE]
-> 
-> De HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van de Publish rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
+>[!NOTE]
+>
+>De HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van de Publish rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
 ## Java-registratie AEM {#aem-java-logging}
 
@@ -595,9 +595,9 @@ In het supportverzoek moeten klanten aangeven:
 
 De bovenstaande eigenschappen moeten voor elke relevante combinatie van programma/omgevingstype worden gespecificeerd.  Als een klant bijvoorbeeld ontwikkelings-, staging- en productieomgevingen wilde, moeten deze drie informatiesets leveren, zoals hieronder wordt aangegeven.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Splunk forward for sandbox program environment is not supported.
+>Splunk forward for sandbox program environment is not supported.
 
 Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
 
