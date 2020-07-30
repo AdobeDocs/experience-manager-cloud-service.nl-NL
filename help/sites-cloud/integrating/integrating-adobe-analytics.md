@@ -2,7 +2,7 @@
 title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 
 1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
 2. Selecteer **Adobe Analytics Configurations**.
-   ![Analytics](assets/analytics_screen.png "WindowAnalytics-venster")
+   ![Analytics](assets/analytics_screen1.png "WindowAnalytics-venster")
 3. Selecteer de knop **Maken** .
 4. Vul de gegevens in (zie hieronder) en klik op **Verbinden**.
 
@@ -35,7 +35,7 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 
 De configuratiegebieden in het venster van de Configuratie van Adobe Analytics zijn:
 
-![Configuratieparameters](assets/properties_field.png "ParametersConfiguration")
+![Configuratieparameters](assets/properties_field1.png "ParametersConfiguration")
 
 | Eigenschap | Beschrijving |
 |---|---|
