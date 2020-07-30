@@ -2,9 +2,9 @@
 title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 2%
 Door Adobe Analytics en AEM als Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
 * met de aanraakinterface een Analytics Configuration in AEM als Cloud Service maken.
-* Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM als Cloud Service. In plaats daarvan wordt het nu gedaan door Adobe Launch, dat het feitelijk hulpmiddel is om een AEM plaats met de mogelijkheden van Analytics (JS bibliotheken) van instrumenten te voorzien. In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
+Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM als Cloud Service. In plaats daarvan gebeurt dit nu via Adobe Launch, dat het defacto instrument is voor het instrumenteren van een AEM site met Analytics-mogelijkheden (JS-bibliotheken). In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 
 >[!NOTE]
 >
->Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken.  This Foundation Pack provided volume limited use of Analytics.
+>Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken. This Foundation Pack provided volume limited use of Analytics.
 
 ## Analytics-configuratie maken {#analytics-configuration}
 
@@ -33,7 +33,7 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 
 ### Configuratieparameters {#configuration-parameters}
 
-De configuratiegebieden in het venster van de Configuratie van Adobe Analytics zijn als volgt:
+De configuratiegebieden in het venster van de Configuratie van Adobe Analytics zijn:
 
 ![Configuratieparameters](assets/properties_field.png "ParametersConfiguration")
 
@@ -52,7 +52,7 @@ Ga naar: **Plaatsen** → **selecteer om het even welke plaatspagina** → **Eig
 
 ## Adobe Analytics integreren op AEM sites met behulp van Adobe starten
 
-Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. Regels kunnen worden gedefinieerd om toewijzingen uit te voeren en een postgesprek met Adobe Analytics te voeren.
+Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De regels kunnen worden bepaald om afbeelding uit te voeren en een postvraag aan Adobe Analytics te maken:
 
 * Bekijk [deze video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) voor informatie over het configureren van de Analytics-extensie in Launch voor een basissite.
 
@@ -60,7 +60,7 @@ Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. Reg
 
 >[!NOTE]
 >
->Bestaande frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
+>Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
 
 >[!NOTE]
 >
