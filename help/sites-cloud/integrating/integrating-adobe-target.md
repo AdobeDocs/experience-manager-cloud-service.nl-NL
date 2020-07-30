@@ -2,7 +2,7 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -26,12 +26,12 @@ Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel 
 ## Adobe Target-configuratie maken {#create-configuration}
 
 1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
-   ![](assets/cloudservice.png "NavigationNavigation")
+   ![](assets/cloudservice1.png "NavigationNavigation")
 2. Selecteer **Adobe Target**.
 3. Selecteer de knop **Maken** .
-   ![](assets/tenant.png "CreateCreate")
+   ![](assets/tenant1.png "CreateCreate")
 4. Vul de gegevens in (zie hieronder) en selecteer **Connect**.
-   ![](assets/open_screen.png "Connect")
+   ![](assets/open_screen1.png "Connect")
 
 ### IMS-configuratie
 
@@ -44,7 +44,7 @@ Ga als volgt te werk om de Target-configuratie te bewerken:
 1. Selecteer een bestaande configuratie en klik op **Eigenschappen**.
 2. Bewerk de eigenschappen.
 3. Selecteer **Opnieuw verbinden met Adobe Target**.
-   ![Opnieuw](assets/edit_config_page.png "verbindenOpnieuw verbinden")
+   ![Opnieuw](assets/edit_config_page1.png "verbindenOpnieuw verbinden")
 4. Selecteer **Opslaan en Sluiten**.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
@@ -75,7 +75,7 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 2. Geef een naam op voor de eigenschap.
 3. Terwijl het domein de IP/host invoert waarop u de startbibliotheek wilt laden.
 4. Selecteer de knop **Opslaan** .
-   ![](assets/properties_newproperty.png "LaunchpropertyLaunchproperty")
+   ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### De vereiste extensies toevoegen {#add-extension}
 
@@ -83,10 +83,10 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteer **Adobe Target** om.js en klik op de installatieoptie.
-   ![Target](assets/search_ext.png "SearchTarget Search")
+   ![Target](assets/search_ext1.png "SearchTarget Search")
 3. Selecteer de **Configure** knoop. Let op het configuratievenster met de geïmporteerde Target-accountgegevens en de versie at.js voor deze extensie.
 4. Selecteer **Opslaan** om de extensie Doel toe te voegen aan de eigenschap Starten. U zou de uitbreiding van het Doel moeten kunnen zien onder de **Geïnstalleerde lijst van Uitbreidingen** wordt vermeld die.
-   ![Extensie](assets/configure_extension.png "opslaan")
+   ![Extensie](assets/configure_extension1.png "opslaan")
 5. Herhaal de stappen hierboven om naar de uitbreiding te zoeken **Adobe ContextHub** en het te installeren (dit wordt vereist voor de integratie met contexthub parameters, die waarop het richten zal worden gedaan).
 
 ### Een gegevenselement maken {#data-element}
@@ -97,16 +97,16 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 2. Selecteer Gegevenselement **** toevoegen.
 3. Geef de naam van het gegevenselement op en wijs dit toe aan een parameter van een contexthub.
 4. Selecteer **Opslaan**.
-   ![Data](assets/data_elem.png "ElementData")
+   ![Data](assets/data_elem1.png "ElementData")
 
 ### Een paginalijn maken {#page-rule}
 
 In **artikel** definiëren en ordenen we een reeks acties, die ter plaatse zullen worden uitgevoerd, om doelgericht te zijn.
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
-   ![](assets/rules.png "ActionsActions")
+   ![](assets/rules1.png "ActionsActions")
 2. In Add Params aan Alle Mboxes voegt het gegevenselement toe dat vroeger wordt gevormd (zie gegevenselement hierboven), aan de parameter die in de mbox vraag zal worden verzonden.
-   ![](assets/map_data.png "MboxActions")
+   ![](assets/map_data1.png "MboxActions")
 
 ### Samenstellen en publiceren {#build-publish}
 
