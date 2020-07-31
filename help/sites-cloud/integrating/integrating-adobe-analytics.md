@@ -2,9 +2,9 @@
 title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '530'
 ht-degree: 2%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 2%
 
 Door Adobe Analytics en AEM als Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
-* met de aanraakinterface een Analytics Configuration in AEM als Cloud Service maken.
-* Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* met de aanraakinterface een Analytics-configuratie in AEM maken als Cloud Service.
+* Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM als Cloud Service. In plaats daarvan gebeurt dit nu via Adobe Launch, dat het defacto instrument is voor het instrumenteren van een AEM site met Analytics-mogelijkheden (JS-bibliotheken). In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 
@@ -23,11 +23,11 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 >
 >Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken. This Foundation Pack provided volume limited use of Analytics.
 
-## Analytics-configuratie maken {#analytics-configuration}
+## Adobe Analytics-configuratie maken {#analytics-configuration}
 
 1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
-2. Selecteer **Adobe Analytics Configurations**.
-   ![Analytics](assets/analytics_screen1.png "WindowAnalytics-venster")
+2. Selecteer **Adobe Analytics**.
+   ![Adobe Analytics](assets/analytics_screen2.png "WindowAdobe Analytics Window")
 3. Selecteer de knop **Maken** .
 4. Vul de gegevens in (zie hieronder) en klik op **Verbinden**.
 
