@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2159'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Voer de volgende stappen uit om een standaardverwerkingsprofiel te maken:
    * Kwaliteit in procenten van elke JPEG-uitvoering.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
-![verwerkingsprofielen, toevoegen](assets/processing-profiles-adding.png)
+   ![verwerkingsprofielen, toevoegen](assets/processing-profiles-adding.png)
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -106,23 +106,22 @@ In de volgende video ziet u het nut en het gebruik van het standaardprofiel.
 
 ## Aangepast profiel en gebruik hoofdletters en kleine letters {#custom-config}
 
-**TBD-items**:
+<!-- **TBD items**:
 
-* Globale cross-linking met de uitbreidbaarheidsinhoud.
-* Geef aan hoe de URL van de worker moet worden opgehaald. Worker-URL voor ontwikkelings-, werkgebied- en Prod-omgevingen.
-* Meningstoewijzing van de dienstparameters. Link naar compute service article.
-* Herziening vanuit stroomperspectief gedeeld in Jira-ticket.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 Sommige complexe situaties waarin gebruik wordt gemaakt van middelenverwerking kunnen niet worden verwezenlijkt met standaardconfiguraties omdat de behoeften van de organisaties verschillend zijn. Adobe biedt [!DNL Asset Compute Service] dergelijke gebruiksgevallen aan. Het is een schaalbare en uitbreidbare service voor het verwerken van digitale elementen. Het kan beeld, video, document en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst &amp; meta-gegevens en archieven omzetten.
 
-Ontwikkelaars kunnen de Asset Compute Service gebruiken om gespecialiseerde aangepaste workers te maken die omgaan met vooraf gedefinieerde, complexe gebruiksgevallen. [!DNL Experience Manager] U kunt deze douanearbeiders van het gebruikersinterface aanhalen door douaneprofielen te gebruiken die de beheerders vormen. [!DNL Asset Compute Service] ondersteunt de volgende gebruiksgevallen:
+Ontwikkelaars kunnen de Asset Compute Service gebruiken om gespecialiseerde aangepaste workers te maken die omgaan met vooraf gedefinieerde, complexe gebruiksgevallen. [!DNL Experience Manager] U kunt deze douanearbeiders van het gebruikersinterface aanhalen door douaneprofielen te gebruiken die de beheerders vormen. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
-* Met Adobe Sensei aangepaste verbeterde slimme tags voor digitale elementen genereren.
-* Uitsnijdmasker van een onderwerp genereren met Adobe Sensei.
-* Haal metagegevens van producten op van het PIM-systeem en maak de metagegevens onderdeel van binaire elementen tijdens de opname van elementen.
-* Wijzig de achtergrondkleur van een transparante afbeelding met behulp van [!DNL Adobe Photoshop] API.
-* Retoucheren van een afbeelding met behulp van [!DNL Photoshop] API.
-* Een afbeelding rechttrekken met behulp van [!DNL Adobe Lightroom] API.
+* Roep de uitsnede-API van Afbeelding [!DNL Adobe Photoshop] aan en sla het resultaat op als uitvoering.
+* Vraag systemen van derden aan om gegevens bij te werken, bijvoorbeeld een PIM-systeem.
+* Gebruik API [!DNL Photoshop] om verschillende uitvoeringen te genereren op basis van de Photoshop-sjabloon.
+* Gebruik de API om de opgenomen elementen te optimaliseren en deze op te slaan als uitvoeringen. [!DNL Adobe Lightroom]
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-a
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u aanpassen [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
+* Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
