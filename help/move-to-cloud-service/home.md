@@ -1,11 +1,11 @@
 ---
 title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
-translation-type: ht
-source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 97%
 
 ---
 
@@ -50,6 +50,7 @@ Meer informatie over de verschillende fasen van de overgang naar de Cloud Servic
 | [Handboek voor implementatie](/help/implementing/home.md) | Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als Cloud Service. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
