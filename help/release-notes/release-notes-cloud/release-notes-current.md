@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als de Nota''s van de Versie van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
+source-git-commit: de220114d7eb4ac1fcee028890ff029de168d0c3
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 2%
@@ -115,9 +115,9 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 
 ### What&#39;s New {#what-is-new-commerce}
 
-* AEM Commerce is nu beschikbaar op Cloud Service.
+AEM Commerce is nu beschikbaar op Cloud Service.
 
-   Raadpleeg [Aan de slag met AEM Handel als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) voor meer informatie.
+Raadpleeg [Aan de slag met AEM Handel als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) voor meer informatie.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
