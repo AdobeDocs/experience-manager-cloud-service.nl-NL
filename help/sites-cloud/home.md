@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service-sites
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Sites as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+source-git-commit: 6c2215cdc83aaaf15e9ef9905805d3da10c1e8f6
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ Deze pagina bevat zelfhulpbronnen over Sites in Experience Manager as a Cloud Se
 | [Handboek voor implementatie](/help/implementing/home.md) | Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als Cloud Service. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
