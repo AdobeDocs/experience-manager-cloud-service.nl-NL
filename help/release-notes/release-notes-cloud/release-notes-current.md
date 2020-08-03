@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als de Nota''s van de Versie van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,6 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 * Configuraties worden nu opgeslagen in `/conf` plaats `/etc/cloudsettings` in de opslagplaats van de Experience Manager.
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
->[!NOTE]
->AEM Assets als Cloud Service worden in de komende dagen geïntroduceerd.
 
 ### What&#39;s New {#what-is-new-assets}
 
