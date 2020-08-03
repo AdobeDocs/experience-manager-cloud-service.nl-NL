@@ -1,11 +1,11 @@
 ---
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1582'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+workflow-type: tm+mt
+source-wordcount: '1616'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
 
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
+
+* U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store en Shared S3 Data Store. Het biedt momenteel geen ondersteuning voor Azure Blob Store Data Store.
 
 * Als u een *Sandbox-omgeving* gebruikt, moet u deze upgraden naar de versie van 10 juni 2020 of later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
@@ -37,7 +39,7 @@ De Content Transfer-tool kan als ZIP-bestand (Content Transfer Tool v1.0.0) word
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
