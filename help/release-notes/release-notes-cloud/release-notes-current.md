@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als de Nota''s van de Versie van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
+source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '981'
 ht-degree: 2%
 
 ---
@@ -43,6 +43,12 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 * De stappen van het werkschema die niet compatibel met een plaatsing van de Cloud Service zijn nu duidelijk met een waarschuwing in de [!UICONTROL workflow model] redacteur. Bovendien, wanneer het uitvoeren van de bestaande werkschema&#39;s op het milieu van de Cloud Service, worden de incompatibele werkschemasstappen overgeslagen.
 
 * De modellen van het werkschema die door klanten worden gecreeerd die aan `/conf/global` in het project van Git verbonden aan het milieu in de Manager van de Wolk worden opgesteld worden automatisch opgesteld aan `/var` en zo beschikbaar in Experience Manager. De modellen van het productwerkschema onder `/libs` die door klant werden veranderd worden niet automatisch opgesteld aan `/var`.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What&#39;s New {#what-is-new-commerce}
+
+* AEM Commerce is nu beschikbaar op Cloud Service. Raadpleeg [Aan de slag](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)voor meer informatie.
 
 ## Kernonderdelen {#core-components}
 
