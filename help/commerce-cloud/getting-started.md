@@ -2,7 +2,7 @@
 title: Aan de slag met AEM Commerce als Cloud Service
 description: Aan de slag met AEM Commerce als Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 # Aan de slag met AEM Commerce als Cloud Service {#start}
 
 Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De toe:voegen-op CIF is een extra module bovenop [AEM Sites als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## Onboarding {#onboarding}
 
