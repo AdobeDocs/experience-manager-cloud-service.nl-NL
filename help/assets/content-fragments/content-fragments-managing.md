@@ -2,7 +2,7 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 10%
@@ -35,6 +35,7 @@ De methode voor het maken van een inhoudsfragment is:
    * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het **Adventure** -model
 
       * Alle beschikbare modellen worden weergegeven.
+
    Na selectie gebruikt u **Volgende** om door te gaan.
 
    ![fragmentbasis](assets/cfm-managing-01.png)
@@ -103,7 +104,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/manage-digital-assets.md) en/of de [AEM-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/manage-digital-assets.md) en/of de [AEM bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -122,6 +123,7 @@ Uw fragment openen voor bewerken:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
    * Selecteer het fragment en **bewerk** het vervolgens op de werkbalk.
+
    De fragmenteditor wordt geopend:
 
    ![fragmenteditor](assets/cfm-managing-03.png)
@@ -131,8 +133,6 @@ Uw fragment openen voor bewerken:
    >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
       >
       >
-      >
-
    2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
 
 
@@ -143,6 +143,7 @@ Uw fragment openen voor bewerken:
    * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Gekoppelde inhoud](#associating-content-with-your-fragment)
    * [Metagegevens](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![modi](assets/cfm-managing-04.png)
 
 4. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan** of **Annuleren** .
@@ -182,9 +183,9 @@ De editor heeft twee opties:
 
    Sluit de editor af zonder de laatste wijzigingen op te slaan.
 
-Tijdens het bewerken van het inhoudsfragment maakt AEM automatisch versies om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen **annuleert** :
+Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen **annuleert** :
 
-1. Wanneer een inhoudsfragment wordt geopend voor het bewerken van AEM, wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
+1. Wanneer een inhoudsfragment wordt geopend voor het bewerken AEM wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
 
    1. Als het token wordt gevonden, wordt het fragment beschouwd als onderdeel van de bestaande bewerkingssessie.
    2. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie verzonden naar de client, waar deze wordt opgeslagen in een cookie.
@@ -207,7 +208,7 @@ Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](/help/assets/c
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Als u de inhoud van het stramien hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
+Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
@@ -301,7 +302,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 * Wanneer u een pagina [publiceert die het fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
-Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
