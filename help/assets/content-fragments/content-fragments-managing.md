@@ -2,7 +2,7 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 10%
@@ -131,9 +131,7 @@ Uw fragment openen voor bewerken:
    >[!NOTE]
    >
    >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
-      >
-      >
-   2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
+   >2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
 
 
 3. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
