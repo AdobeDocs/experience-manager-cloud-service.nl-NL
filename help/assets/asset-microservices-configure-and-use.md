@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2447'
 ht-degree: 0%
 
 ---
@@ -146,8 +146,8 @@ Ga als volgt te werk om een aangepast profiel te maken:
 1. Geef de volgende informatie op.
 
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
-   * Eindpunt-URL van een Firefly-aangepaste app. De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
-   * Voeg toe [!UICONTROL Service Parameters] om extra informatie of parameters tot de douanearbeider over te gaan.
+   * [Eindpunt-URL van een Firefly-aangepaste app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
+   * Voeg de Parameters van de Dienst toe om extra informatie of parameters tot de douanearbeider [over te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)gaan.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
    Klik op **[!UICONTROL Save]**.
