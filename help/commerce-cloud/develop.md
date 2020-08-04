@@ -2,7 +2,7 @@
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
 description: Ontwikkelen AEM Handel voor AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 9%
@@ -67,13 +67,13 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Voorbeeld van Windows:
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Deze variabele moet ook voor de AEM worden ingesteld als een Cloud Service-omgeving.
 
