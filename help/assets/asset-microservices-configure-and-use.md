@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Met Experience Manager kunnen de volgende verwerkingsniveaus worden toegepast.
 |---|---|---|
 | [Standaardconfiguratie](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt de mogelijkheid voor het genereren van zeer eenvoudige vertoningen. | <ul> <li>Standaardminiaturen die door de [!DNL Assets] gebruikersinterface worden gebruikt (48, 140 en 319 px) </li> <li> Grote voorvertoning (webuitvoering, 1280 px) </li><li> Metagegevens en tekstextractie.</li></ul> |
 | [Aangepaste configuratie](#standard-config) | Gevormd door beheerders via gebruikersinterface. Biedt meer opties voor het genereren van vertoningen door de standaardoptie uit te breiden. Breid de uit-van-de-doos worker uit om verschillende formaten en vertoningen te verstrekken. | <ul><li>FPO-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
-| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanearbeiders te gebruiken om aan te halen [!DNL Asset Compute Service]. Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
+| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanearbeiders te gebruiken om de Dienst van de Compute van [Activa aan te halen](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen, zoals standaardverwerking, verwerking van Adobe-specifieke indelingen zoals Photoshop-bestanden en implementatie van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt standaard of via configuratie van verwerkingsprofielen in de gebruikersinterface afgehandeld. Als deze verwerking niet aan de bedrijfsbehoeften voldoet, raadt Adobe aan de standaardmogelijkheden uit te breiden door Asset Compute Service te ontwikkelen en te gebruiken.
+De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen, zoals standaardverwerking, verwerking van Adobe-specifieke indelingen zoals Photoshop-bestanden en implementatie van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als deze verwerkingsopties niet aan de bedrijfsbehoeften voldoen, raadt Adobe aan de standaardmogelijkheden te ontwikkelen en [!DNL Asset Compute Service] te gebruiken. Voor een overzicht, zie [begrip rekbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen,
 
 Het kan beeld, video, document en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst &amp; meta-gegevens en archieven omzetten.
 
-Ontwikkelaars kunnen het programma gebruiken [!DNL Asset Compute Service] om gespecialiseerde aangepaste workers te maken die op vooraf gedefinieerde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze douanearbeiders van het gebruikersinterface aanhalen door douaneprofielen te gebruiken die de beheerders vormen. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
+Ontwikkelaars kunnen de code gebruiken [!DNL Asset Compute Service] om aangepaste workers [te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) maken die op de ondersteunde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze douanearbeiders van het gebruikersinterface aanhalen door douaneprofielen te gebruiken die de beheerders vormen. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
 * Gebruik [!DNL Adobe Photoshop]de [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) en sla het resultaat op als uitvoering.
 * Vraag systemen van derden aan om gegevens bij te werken, bijvoorbeeld een PIM-systeem.
@@ -238,3 +238,10 @@ Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-a
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u aanpassen [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 * Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
+
+>[!MORELIKETHIS]
+>
+>* [Inleiding tot Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
+>* [Begrijp uitbreidbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
+>* [Aangepaste workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)maken.
+
