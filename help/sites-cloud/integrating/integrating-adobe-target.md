@@ -2,7 +2,7 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -14,18 +14,18 @@ ht-degree: 1%
 
 Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM als Cloud Service is het volgende vereist:
 
-* via de aanraakinterface een Analytics-configuratie in AEM maken als Cloud Service (vereiste IMS-configuratie).
+* het gebruiken van Touch UI om een Configuratie van het Doel in AEM als Cloud Service (vereiste configuratie IMS) tot stand te brengen.
 * Adobe Target toevoegen en configureren als een extensie in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
+Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
 
 >[!NOTE]
 >
->Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Target hebben, kan om toegang tot het Pak van de Stichting van Target voor Experience Cloud verzoeken. Foundation Pack biedt een beperkt gebruik van Target voor volumes.
+>Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van het Doel hebben, kan om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken. Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
-1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
+1. Navigeer naar **Gereedschappen** → **Cloud Services**.
    ![](assets/cloudservice1.png "NavigationNavigation")
 2. Selecteer **Adobe Target**.
 3. Selecteer de knop **Maken** .
@@ -35,11 +35,11 @@ Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel 
 
 ### IMS-configuratie
 
-Een IMS-configuratie voor zowel Launch als Target is nodig om Target op de juiste manier te integreren met AEM en Launch. Terwijl de configuratie IMS voor Lancering vooraf in AEM als Cloud Service wordt gevormd, moet de configuratie van Target IMS worden gecreeerd (nadat Target provisioned is). Raadpleeg [deze video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) en [deze pagina](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) voor informatie over het maken van de Target IMS-configuratie.
+Een configuratie IMS voor zowel Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM als Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Raadpleeg [deze video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) en [deze pagina](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) voor meer informatie over het maken van de IMS-configuratie van het doel.
 
-### De Target-configuratie bewerken {#edit-target-configuration}
+### De doelconfiguratie bewerken {#edit-target-configuration}
 
-Ga als volgt te werk om de Target-configuratie te bewerken:
+Ga als volgt te werk om de doelconfiguratie te bewerken:
 
 1. Selecteer een bestaande configuratie en klik op **Eigenschappen**.
 2. Bewerk de eigenschappen.
@@ -53,7 +53,7 @@ Ga naar: **Plaatsen** → **selecteer om het even welke plaatspagina** → **Eig
 
 ## Adobe Target integreren op AEM sites met behulp van Adobe starten {#integrate-target-launch}
 
-AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan het Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina(&#39;s) gebruiken. Target-bibliotheken worden alleen gerenderd met Launch.
+AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan het Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina(&#39;s) gebruiken. Doelbibliotheken worden alleen gerenderd met Launch.
 
 >[!NOTE]
 >
@@ -83,8 +83,8 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteer **Adobe Target** om.js en klik op de installatieoptie.
-   ![Target](assets/search_ext1.png "SearchTarget Search")
-3. Selecteer de **Configure** knoop. Let op het configuratievenster met de geïmporteerde Target-accountgegevens en de versie at.js voor deze extensie.
+   ![Doel](assets/search_ext1.png "zoekenDoel")
+3. Selecteer de **Configure** knoop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
 4. Selecteer **Opslaan** om de extensie Doel toe te voegen aan de eigenschap Starten. U zou de uitbreiding van het Doel moeten kunnen zien onder de **Geïnstalleerde lijst van Uitbreidingen** wordt vermeld die.
    ![Extensie](assets/configure_extension1.png "opslaan")
 5. Herhaal de stappen hierboven om naar de uitbreiding te zoeken **Adobe ContextHub** en het te installeren (dit wordt vereist voor de integratie met contexthub parameters, die waarop het richten zal worden gedaan).
@@ -116,7 +116,7 @@ Raadpleeg deze [pagina](https://docs.adobe.com/content/help/en/experience-manage
 
 | **Wijzigen** | **Klassieke UI-configuratie** | **Touch UI-configuratie** | **Gevolgen** |
 |---|---|---|---|
-| Locatie van de Target-configuratie. | /etc/cloudservices/testandtarget/ | /conf/huurder/settings/cloudservices/target | Eerder waren de veelvoudige configuraties aanwezig onder /etc/cloudservices/testandtarget maar nu zal één enkele configuratie onder een huurder aanwezig zijn. |
+| Plaats van de Configuratie van het Doel. | /etc/cloudservices/testandtarget/ | /conf/huurder/settings/cloudservices/target | Eerder waren de veelvoudige configuraties aanwezig onder /etc/cloudservices/testandtarget maar nu zal één enkele configuratie onder een huurder aanwezig zijn. |
 
 >[!NOTE]
 >
