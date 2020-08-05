@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM als Cloud Service, beweegt Adobe zich van een AEM instantie centric model aan een de dienst gebaseerde mening met n-x AEM Containers, aangedreven door CI/CD pijpleidingen in de Manager van de Wolk. In plaats van het vormen van en het handhaven van Indexen op enige instanties AEM, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als dit niet wordt gespecificeerd en getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM als Cloud Service, beweegt Adobe zich weg van een AEM instantie centric model aan een de dienst gebaseerde mening met n-x AEM Containers, die door pijpleidingen CI/CD in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als dit niet wordt gespecificeerd en getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
-1. De gebruikers zullen geen toegang tot de Manager van de Index van één enkele instantie AEM hebben om het indexeren te zuiveren, te vormen of te handhaven. Het wordt alleen gebruikt voor lokale ontwikkeling en on-prem-implementaties.
+1. De gebruikers zullen geen toegang tot de Manager van de Index van één enkele AEMInstantie hebben om het indexeren te zuiveren, te vormen of te handhaven. Het wordt alleen gebruikt voor lokale ontwikkeling en on-prem-implementaties.
 
-1. De gebruikers zullen geen indexen op één enkel Instantie veranderen AEM noch zullen zij zich over consistentiecontroles of het opnieuw indexeren moeten meer ongerust maken.
+1. De gebruikers zullen geen Indexen op één enkel AEMInstantie veranderen noch zullen zij zich over consistentiecontroles of het opnieuw indexeren meer moeten ongerust maken.
 
 1. Over het algemeen worden indexwijzigingen doorgevoerd voordat naar de productie wordt gegaan om kwaliteitsgateways in de CBI/CD-leidingen van de Cloud Manager niet te omzeilen en geen invloed te hebben op de KPI&#39;s van de Business.
 
@@ -36,7 +36,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
-1. Beperkingen: momenteel wordt indexbeheer op AEM als Cloud Service alleen ondersteund voor indexen van het type lucene.
+1. Beperkingen: momenteel, wordt het indexbeheer op AEM als Cloud Service slechts gesteund voor indexen van type lucene.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -84,7 +84,7 @@ Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden g
 
 >[!TIP]
 >
->Zie het document [AEM Project Structure voor meer informatie over de vereiste pakketstructuur voor AEM als Cloud Service.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Zie het document [AEM Projectstructuur voor meer informatie over de vereiste pakketstructuur voor AEM als Cloud Service.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Indexbeheer met Blauw-groene implementaties {#index-management-using-blue-green-deployments}
 
@@ -105,7 +105,7 @@ Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats)
 * **/content**
 * */libs (alleen-lezen)*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme.**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -124,14 +124,14 @@ In de volgende tabel worden vijf indexdefinities weergegeven: index `cqPageLucen
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` AEM is nodig als Cloud Service om dit te markeren als een vervanging voor een bestaande index.
+>`<indexName>-custom-<customerVersionNumber>` is nodig voor AEM als Cloud Service om dit te markeren als een vervanging voor een bestaande index.
 
 | Index | Index van out-of-the-box | Gebruiken in versie 1 | Gebruiken in versie 2 |
 |---|---|---|---|
 | /eak:index/damAssetLucene | Ja | Ja | Nee |
 | /eak:index/damAssetLucene-custom-1 | Ja (aangepast) | Nee | Ja |
-| /ak:index/acmeProduct-custom-1 | Nee | Ja | Nee |
-| /ak:index/acmeProduct-custom-2 | Nee | Nee | Ja |
+| /oak:index/acme.product-custom-1 | Nee | Ja | Nee |
+| /oak:index/acme.product-custom-2 | Nee | Nee | Ja |
 | /oak:index/cqPageLucene | Ja | Ja | Ja |
 
 Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Als u wilt voorkomen dat aangepaste indexnamen botsen met indexnamen van het product zelf, moeten aangepaste indexen en wijzigingen in indexen uit het vak eindigen met `-custom-<number>`.
@@ -153,26 +153,26 @@ Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene
 
 ### Een index verwijderen {#removing-an-index}
 
-Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een index zonder gegevens aan index), met een nieuwe naam bepalen. U kunt deze bijvoorbeeld een naam geven `/oak:index/acmeProduct-custom-3`. Hiermee vervangt u de index `/oak:index/acmeProduct-custom-2`. Nadat de lege index door het systeem `/oak:index/acmeProduct-custom-2` is verwijderd, `/oak:index/acmeProduct-custom-3` kan deze ook worden verwijderd.
+Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een index zonder gegevens aan index), met een nieuwe naam bepalen. U kunt deze bijvoorbeeld een naam geven `/oak:index/acme.product-custom-3`. Hiermee vervangt u de index `/oak:index/acme.product-custom-2`. Nadat de lege index door het systeem `/oak:index/acme.product-custom-2` is verwijderd, `/oak:index/acme.product-custom-3` kan deze ook worden verwijderd.
 
 ### Een index toevoegen {#adding-an-index}
 
-Als u een index met de naam &quot;/oak:index/acmeProduct-custom-1&quot; wilt toevoegen die moet worden gebruikt in een nieuwe versie van de toepassing en hoger, moet de index als volgt worden geconfigureerd:
+Als u een index met de naam &quot;/oak:index/acme.product-custom-1&quot; wilt toevoegen die in een nieuwe versie van de toepassing en hoger moet worden gebruikt, moet de index als volgt worden geconfigureerd:
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-Dit werkt door een aangepaste id vooraf op de indexnaam in te stellen, gevolgd door een punt (**.**). De id moet tussen 1 en 4 tekens lang zijn.
+Dit werkt door een aangepaste id vooraf in te stellen op de indexnaam, gevolgd door een punt (**`.`**). De id moet minimaal 2 en maximaal 5 tekens lang zijn.
 
 Zoals hierboven, verzekert dit dat de index slechts door de nieuwe versie van de toepassing wordt gebruikt.
 
 ### Index wijzigen {#changing-an-index}
 
-Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Stel dat de bestaande index &quot;/oak:index/acmeProduct-custom-1&quot; is gewijzigd. De oude index wordt opgeslagen onder `/oak:index/acmeProduct-custom-1`en de nieuwe index wordt opgeslagen onder `/oak:index/acmeProduct-custom-2`.
+Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Stel dat de bestaande index &quot;/oak:index/acme.product-custom-1&quot; is gewijzigd. De oude index wordt opgeslagen onder `/oak:index/acme.product-custom-1`en de nieuwe index wordt opgeslagen onder `/oak:index/acme.product-custom-2`.
 
 De oude versie van de toepassing gebruikt de volgende configuratie:
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 De nieuwe versie van de toepassing gebruikt de volgende (veranderde) configuratie:
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
