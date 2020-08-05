@@ -1,21 +1,21 @@
 ---
-title: CI/CD Pipeline configureren - Cloud Services
-description: CI/CD Pipeline configureren - Cloud Services
+title: CI/CD-pijpleiding configureren - Cloud Services
+description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 2%
+source-wordcount: '570'
+ht-degree: 0%
 
 ---
 
 
-# Het vormen van uw CI-CD Pijpleiding {#configure-ci-cd-pipeline}
+# De CI/CD-pipeline configureren {#configure-ci-cd-pipeline}
 
 
 ## De stroom begrijpen {#understanding-the-flow}
 
-U kunt uw pipeline configureren vanaf de tegel **Pipelines** in de [!UICONTROL Cloud Manager]-gebruikersinterface.
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 De Manager van de Plaatsing is verantwoordelijk voor vestiging de pijpleiding. Als u dit doet, selecteert u eerst een vertakking in de **Git Repository**.
 
@@ -59,6 +59,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    * **Handmatig** - de UI gebruikt manueel begint de pijpleiding.
    * **Bij de Veranderingen** van het Git - begint de pijpleiding CI/CD wanneer er toezeggingen aan de gevormde git tak worden toegevoegd. Zelfs als u deze optie selecteert, kunt u de pijpleiding altijd manueel beginnen.
+
    Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet.
 
    Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
