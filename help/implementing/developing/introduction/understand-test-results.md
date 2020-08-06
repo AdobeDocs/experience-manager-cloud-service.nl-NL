@@ -2,7 +2,7 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 3%
@@ -176,7 +176,9 @@ De waarde van de metrische waarde van de Verandering kan één van het volgende 
 #### Scores op paginaniveau {#page-level-scores}
 
 Door in een van de tests te boren, kunt u een gedetailleerdere score op paginaniveau zien. De gebruiker zal kunnen zien hoe de individuele pagina&#39;s voor de specifieke test samen met de verandering van de vorige tijd de test in werking werden gesteld.
-Als u op Details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd en kunt u informatie gebruiken om problemen op te lossen als er mogelijkheden voor verbetering zijn gevonden. De details van de tests en de bijbehorende richtsnoeren worden verstrekt door Google Lighthouse.
+
+Als u op de details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd, en kunt u aangeven welke problemen u kunt oplossen als er mogelijkheden voor verbetering zijn gevonden. De details van de tests en de bijbehorende richtsnoeren worden verstrekt door Google Lighthouse.
+
 ![](assets/page-level-scores.png)
 
 ## Uitvoering lokale test {#local-test-execution}
