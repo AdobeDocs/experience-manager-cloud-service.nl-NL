@@ -2,20 +2,28 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 0%
+source-wordcount: '762'
+ht-degree: 2%
 
 ---
 
 
 # De CI/CD-pipeline configureren {#configure-ci-cd-pipeline}
 
+In Cloud Manager zijn er twee typen pijplijn:
+
+* **Productiepijpleidingen**:
+Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd. Raadpleeg de sectie [Pipeline](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
+
+* **Niet-productiepijpleidingen**:
+
+   Een niet-productiepijpleiding kan van de pagina van het **Overzicht** van het gebruikersinterface van de Manager van de Wolk worden toegevoegd. Raadpleeg de [pijplijnen](configure-pipeline.md#non-production-pipelines) voor niet-productie en alleen codekwaliteit voor meer informatie.
 
 ## De stroom begrijpen {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+U kunt uw pipeline configureren vanaf de tegel **Pipelines** in de [!UICONTROL Cloud Manager]-gebruikersinterface.
 
 De Manager van de Plaatsing is verantwoordelijk voor vestiging de pijpleiding. Als u dit doet, selecteert u eerst een vertakking in de **Git Repository**.
 
@@ -69,16 +77,27 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    * **Ga onmiddellijk** verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. Klik op **Volgende** om het tabblad **Testen** te openen en de testcriteria voor uw programma te definiëren.
+1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als **Inhoud Controle**.
 
-   ![](assets/set-up-pipeline4.png)
+   Deze optie biedt een tabel voor de URL-paden die altijd moeten worden opgenomen in de Content Audit. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de inhoudscontrole.
 
-1. Click **Save**. Op de pagina *Overzicht* wordt nu de **Programmakaart** implementeren weergegeven. Klik op de knop **Implementeren** om uw programma te implementeren.
+   >[!NOTE]
+   > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
+
+   Raadpleeg [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) voor meer informatie.
+
+   ![](assets/content-audit-1.png)
+
+   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de inhoud. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
+
+   ![](assets/content-audit-2.png)
+
+1. Klik op **Opslaan** in het scherm **Pipet** bewerken. Op de pagina **Overzicht** wordt nu de **Programmakaart** implementeren weergegeven. Klik op de knop **Implementeren** om uw programma te implementeren.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Uitsluitend pijplijnen zonder productie en codekwaliteit
+## Uitsluitend pijplijnen zonder productie en codekwaliteit {#non-production-pipelines}
 
 Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die **niet-productiepijpleidingen** worden genoemd. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Ze kunnen optioneel ook worden geïmplementeerd in de omgeving van Adobe Managed Services.
 
