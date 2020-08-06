@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -28,7 +28,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * Nieuw gemaakte omgevingen in middelenprogramma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 
-* Gesamberde omgevingen kunnen worden gedehiberneerd via de overzichtspagina van Cloud Manager.
+* Gesamberde omgevingen kunnen worden gedehiberneerd op de pagina **Overzicht** van Cloud Manager.
 
 * Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
 
@@ -52,7 +52,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * Er is een kleurfout opgetreden op de overzichtspagina.
 
-### Bekende problemen {#known-issues}
+### Bekende problemen {#known-issues-cm}
 
 * Ongeldige pagina&#39;s worden opgenomen waardoor de gemiddelde score voor controle van inhoud lager wordt dan wat ze moeten zijn.
 
