@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 2%
@@ -34,7 +34,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 ### What&#39;s New {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen Experience Manager configureren om een aangepaste worker aan te roepen die is gemaakt met de [!DNL Asset Compute Service]code. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanearbeiders tot stand te brengen die aan complexe gebruiksgevallen behandelen. Deze webservice kan miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit in de bestandsindelingen Adobe, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en een element uitvoeren via alle beschikbare Sensei-services. Zie [Elementmicroservices en verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md)gebruiken.
+* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen Experience Manager configureren om aangepaste toepassingen aan te roepen die zijn gemaakt met de [!DNL Asset Compute Service]. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanetoepassingen tot stand te brengen die aan complexe gebruiksgevallen behandelen. Deze webservice kan miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit in de bestandsindelingen Adobe, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en een element uitvoeren via alle beschikbare Sensei-services. Zie [Elementmicroservices en verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md)gebruiken.
 
 * De aanvankelijke configuratie van [!DNL Dynamic Media] binnen [!DNL Experience Manager] als Cloud Service wordt verbeterd om robuuster te zijn. Het verstrekt nu vooruitgang van de processen aan de beheerders.
 
