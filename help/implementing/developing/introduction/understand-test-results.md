@@ -1,10 +1,10 @@
 ---
-title: Lees uw testresultaten - Cloud Services
+title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1484'
 ht-degree: 3%
 
 ---
@@ -12,12 +12,14 @@ ht-degree: 3%
 
 # Inzicht in de testresultaten {#understand-test-results}
 
-Cloud Manager for Cloud Services-pijplijnuitvoeringen ondersteunen de uitvoering van tests die worden uitgevoerd tegen de werkgebiedomgeving. Dit is in tegenstelling tot tests die tijdens de het Testen stap van de Bouwstijl en van de Eenheid worden uitgevoerd die offline, zonder toegang tot om het even welke lopende milieu AEM in werking worden gesteld.
+Cloud Manager for Cloud Services-pipeline-uitvoeringen ondersteunen de uitvoering van tests die worden uitgevoerd voor de stagingomgeving. Dit is in tegenstelling tot tests die tijdens de het Testen stap van de Bouwstijl en van de Eenheid worden in werking gesteld die offline, zonder toegang tot om het even welke lopende AEM milieu in werking worden gesteld.
 Er zijn twee soorten tests in deze context die worden uitgevoerd:
 * Door de klant geschreven tests
-* Door Adobe geschreven tests
+* Met Adobe geschreven tests
+* Open source tool powered by Lighthouse from Google
 
-Beide soorten tests worden in een containerinfrastructuur in werking gesteld die voor het runnen van deze types van tests wordt ontworpen.
+   >[!NOTE]
+   > Zowel door de klant geschreven tests als Adobe geschreven tests worden uitgevoerd in een containerinfrastructuur die is ontworpen voor het uitvoeren van deze tests.
 
 
 ## Testen van de codekwaliteit {#code-quality-testing}
@@ -33,7 +35,7 @@ Als deel van de pijpleiding wordt de broncode gescand om ervoor te zorgen dat de
 | Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests. | Info | > 1 |
 | Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
 | Gedupliceerde lijnen | Aantal lijnen betrokken bij gedupliceerde blokken. <br/>Een codeblok dat als gedupliceerd moet worden beschouwd: <br/><ul><li>**Niet-Java-projecten:**</li><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste op: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li><li>**Java-projecten:**</li><li> Er moeten minstens tien opeenvolgende en gedupliceerde verklaringen zijn, ongeacht het aantal tokens en lijnen.</li></ul> <br/>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd bij het detecteren van duplicaten. | Info | > 1% |
-| Compatibiliteit met cloudservice | Aantal geïdentificeerde compatibiliteitsproblemen met de cloudservice. | Info | > 0 |
+| Compatibiliteit met Cloud Service | Aantal geïdentificeerde kwesties van de Verenigbaarheid van de Cloud Service. | Info | > 0 |
 
 
 >[!NOTE]
@@ -52,7 +54,7 @@ Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen 
 
 In deze gevallen kan de broncode worden geannoteerd met de standaard-Java- `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Een veelvoorkomend probleem is bijvoorbeeld dat de SonarQube-regel voor het detecteren van gecodeerde wachtwoorden agressief kan zijn ten aanzien van de manier waarop een gecodeerd wachtwoord wordt geïdentificeerd.
 
-Om naar een specifiek voorbeeld te kijken, zou deze code vrij gemeenschappelijk in een project zijn AEM dat code heeft om met één of andere externe dienst te verbinden:
+Om naar een specifiek voorbeeld te kijken, zou deze code vrij gemeenschappelijk in een AEM project zijn dat code heeft om met één of andere externe dienst te verbinden:
 
 ```java
 @Property(label = "Service Password")
@@ -82,7 +84,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 ## Functionele tests schrijven {#writing-functional-tests}
 
-Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat door dezelfde Maven-build wordt geproduceerd als de artefacten die op AEM moeten worden geïmplementeerd. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
+Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden geïmplementeerd op AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
 
 Bovendien moet de JAR de Cloud-Manager-TestType manifestkopbal hebben die aan integratie-test wordt geplaatst. In de toekomst wordt verwacht dat extra headerwaarden worden ondersteund. Een voorbeeldconfiguratie voor maven-assemblage-stop is:
 
@@ -130,7 +132,52 @@ De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanw
 Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Deze stap wordt onmiddellijk na de implementatie van het werkgebied uitgevoerd.
 
 >[!NOTE]
->Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM-runtimeproces. Deze logboeken zijn toegankelijk via de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
+>Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
+
+## Testen van content-controle {#content-audit-testing}
+
+Content Audit is een functie die beschikbaar is in de productiepijplijnen van Cloud Manager voor sites die worden aangedreven door Lighthouse, een opensource-programma van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+
+Het valideert het plaatsingsproces en de hulp zorgt ervoor dat de ingevoerde veranderingen:
+
+1. Voldoe aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, SEO (de Optimalisering van de Motor van het Onderzoek), en PWA (de Progressieve App van het Web).
+
+1. Neem geen regressies op in deze afmetingen.
+
+De controle van de inhoud in de Manager van de Wolk zorgt ervoor dat de digitale ervaring van eindgebruikers op de plaats aan de hoogste normen kan worden gehandhaafd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
+
+### Resultaten van controle van inhoud {#understanding-content-audit-results}
+
+De Controle van de inhoud verstrekt geaggregeerde en gedetailleerde op paginaniveau testresultaten via de de uitvoeringspagina van de Pijl van de Productie.
+
+* De cijfers op het niveau van het samengevoegde niveau meten de gemiddelde score over de pagina&#39;s die werden gecontroleerd.
+* Afzonderlijke scores op paginaniveau zijn ook beschikbaar via de neerwaartse boor.
+* Er zijn details van de scores beschikbaar om te zien wat de resultaten zijn van de afzonderlijke tests, samen met aanwijzingen voor het verhelpen van problemen die tijdens de inhoudscontrole zijn vastgesteld.
+* Een geschiedenis van de testresultaten wordt voortgeduurd binnen de Manager van de Wolk zodat kunnen de klanten zien of de veranderingen die in de pijpleidingslooppas worden geïntroduceerd om het even welke regressies van de vorige looppas omvatten.
+
+#### Samengevoegde scores {#aggregate-scores}
+
+Voor elk type test (prestaties, toegankelijkheid, SEO, aanbevolen methoden en PWA) is een score voor het geaggregeerde niveau beschikbaar.
+
+De score voor het geaggregeerde niveau is gebaseerd op de gemiddelde score van de pagina&#39;s die in de run zijn opgenomen. De verandering op het gezamenlijke niveau vertegenwoordigt de gemiddelde score van de pagina&#39;s in de huidige looppas in vergelijking met het gemiddelde van de scores van de vorige looppas, zelfs als de inzameling van pagina&#39;s die om worden gevormd om zijn omvat tussen looppas is veranderd.
+
+De waarde van de metrische waarde van de Verandering kan één van het volgende zijn:
+
+* **Positieve waarde** : de pagina(&#39;s) zijn verbeterd op de geselecteerde test sinds de laatste productiepijpleiding
+
+* **Negatieve waarde** : de pagina(&#39;s) zijn tijdens de geselecteerde test opnieuw geperst sinds de laatste productiepijpleiding
+
+* **Geen wijziging** - de pagina(&#39;s) hebben dezelfde score behaald sinds de laatste productiepijpleiding
+
+* **N.v.t** . - er was geen vorige score beschikbaar om te vergelijken
+
+   ![](assets/content-audit-test1.png)
+
+#### Scores op paginaniveau {#page-level-scores}
+
+Door in een van de tests te boren, kunt u een gedetailleerdere score op paginaniveau zien. De gebruiker zal kunnen zien hoe de individuele pagina&#39;s voor de specifieke test samen met de verandering van de vorige tijd de test in werking werden gesteld.
+Als u op Details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd en kunt u informatie gebruiken om problemen op te lossen als er mogelijkheden voor verbetering zijn gevonden. De details van de tests en de bijbehorende richtsnoeren worden verstrekt door Google Lighthouse.
+![](assets/page-level-scores.png)
 
 ## Uitvoering lokale test {#local-test-execution}
 
@@ -149,3 +196,4 @@ De systeemeigenschappen zijn als volgt:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
