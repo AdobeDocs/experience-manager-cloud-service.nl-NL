@@ -2,7 +2,7 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Raadpleeg de [testresultaten](/help/implementing/developing/introduction/underst
    * Controle van inhoud: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de inhoudcontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
 Raadpleeg de resultaten [van](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) Content Audit voor meer informatie.
 
-      ![](assets/stage-testing.png)
+      ![](assets/testing-tab.png)
 
 
 
