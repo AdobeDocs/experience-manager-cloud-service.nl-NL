@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 2%
@@ -15,11 +15,15 @@ ht-degree: 2%
 In Cloud Manager zijn er twee typen pijplijn:
 
 * **Productiepijpleidingen**:
-Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd. Raadpleeg de sectie [Pipeline](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
+Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd.
+
+   Raadpleeg de sectie [Pipeline](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
 
 * **Niet-productiepijpleidingen**:
 
-   Een niet-productiepijpleiding kan van de pagina van het **Overzicht** van het gebruikersinterface van de Manager van de Wolk worden toegevoegd. Raadpleeg de [pijplijnen](configure-pipeline.md#non-production-pipelines) voor niet-productie en alleen codekwaliteit voor meer informatie.
+   Een niet-productiepijpleiding kan van de pagina van het **Overzicht** van het gebruikersinterface van de Manager van de Wolk worden toegevoegd.
+
+   Raadpleeg de [pijplijnen](configure-pipeline.md#non-production-pipelines) voor niet-productie en alleen codekwaliteit voor meer informatie.
 
 ## De stroom begrijpen {#understanding-the-flow}
 
@@ -57,11 +61,11 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
 1. De het schermvertoningen van de Pijpleiding van de **Opstelling** . Selecteer de vertakking en klik op **Volgende**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. Configureer uw implementatieopties.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    U kunt de trekker bepalen om de pijpleiding te beginnen:
 
@@ -90,7 +94,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de inhoud. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. Klik op **Opslaan** in het scherm **Pipet** bewerken. Op de pagina **Overzicht** wordt nu de **Programmakaart** implementeren weergegeven. Klik op de knop **Implementeren** om uw programma te implementeren.
 
