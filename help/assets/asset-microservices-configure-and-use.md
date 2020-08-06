@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2468'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 # Middelenmicroservices en verwerkingsprofielen gebruiken {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Met Experience Manager kunnen de volgende verwerkingsniveaus worden toegepast.
 | Optie | Beschrijving | Gebruikte gevallen |
 |---|---|---|
 | [Standaardconfiguratie](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt de mogelijkheid voor het genereren van zeer eenvoudige vertoningen. | <ul> <li>Standaardminiaturen die door de [!DNL Assets] gebruikersinterface worden gebruikt (48, 140 en 319 px) </li> <li> Grote voorvertoning (webuitvoering, 1280 px) </li><li> Metagegevens en tekstextractie.</li></ul> |
-| [Aangepaste configuratie](#standard-config) | Gevormd door beheerders via gebruikersinterface. Biedt meer opties voor het genereren van vertoningen door de standaardoptie uit te breiden. Breid de uit-van-de-doos worker uit om verschillende formaten en vertoningen te verstrekken. | <ul><li>FPO-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
-| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanearbeiders te gebruiken om de Dienst van de Compute van [Activa aan te halen](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
+| [Aangepaste configuratie](#standard-config) | Gevormd door beheerders via gebruikersinterface. Biedt meer opties voor het genereren van vertoningen door de standaardoptie uit te breiden. De optie voor het uit-van-de-doos uitbreiden voor verschillende indelingen en uitvoeringen. | <ul><li>FPO-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
+| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om de Dienst [van de Compute van](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Activa aan te halen. Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen,
 
 >[!NOTE]
 >
->Adobe raadt u aan alleen een aangepaste worker te gebruiken als de zakelijke behoeften niet kunnen worden vervuld met de standaardconfiguraties of het standaardprofiel.
+>Adobe raadt u aan een aangepaste toepassing alleen te gebruiken als de zakelijke vereisten niet kunnen worden vervuld met de standaardconfiguraties of het standaardprofiel.
 
-Het kan beeld, video, document en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst &amp; meta-gegevens en archieven omzetten.
+Het kan beeld, video, document, en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst en meta-gegevens, en archieven omzetten.
 
-Ontwikkelaars kunnen de code gebruiken [!DNL Asset Compute Service] om aangepaste workers [te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) maken die op de ondersteunde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze douanearbeiders van het gebruikersinterface aanhalen door douaneprofielen te gebruiken die de beheerders vormen. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
+Ontwikkelaars kunnen het programma gebruiken [!DNL Asset Compute Service] om aangepaste toepassingen [te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) maken die op de ondersteunde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface oproepen door aangepaste profielen te gebruiken die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
 * Gebruik [!DNL Adobe Photoshop]de [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) en sla het resultaat op als uitvoering.
 * Vraag systemen van derden aan om gegevens bij te werken, bijvoorbeeld een PIM-systeem.
@@ -135,7 +135,7 @@ Ontwikkelaars kunnen de code gebruiken [!DNL Asset Compute Service] om aangepast
 
 >[!NOTE]
 >
->U kunt de standaardmetagegevens niet bewerken met de aangepaste workers. U kunt alleen aangepaste metagegevens wijzigen.
+>U kunt de standaardmetagegevens niet bewerken met de aangepaste toepassingen. U kunt alleen aangepaste metagegevens wijzigen.
 
 ### Een aangepast profiel maken {#create-custom-profile}
 
@@ -146,11 +146,13 @@ Ga als volgt te werk om een aangepast profiel te maken:
 1. Geef de volgende informatie op.
 
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
-   * [Eindpunt-URL van een Firefly-aangepaste app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
-   * Voeg de Parameters van de Dienst toe om extra informatie of parameters tot de douanearbeider [over te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)gaan.
+   * [Eindpunt-URL van een Firefly-aangepaste app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
+   * Voeg de Parameters van de Dienst toe om extra informatie of parameters [tot de douanetoepassing](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)over te gaan.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
    Klik op **[!UICONTROL Save]**.
+
+De aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ Ga als volgt te werk om een aangepast profiel te maken:
 
 Als u het gebruik van een aangepast profiel wilt illustreren, kunt u het beste een kwestie-case gebruiken om aangepaste tekst toe te passen op campagneafbeeldingen. U kunt een verwerkingsprofiel maken dat de Photoshop API gebruikt om de afbeeldingen te bewerken.
 
-Dankzij de integratie van Asset Compute Service kan Experience Manager deze parameters aan de aangepaste worker doorgeven met behulp van het [!UICONTROL Service Parameters] veld. De aangepaste worker roept vervolgens de Photoshop API aan en geeft deze waarden door aan de API. U kunt bijvoorbeeld lettertypenaam, tekstkleur, tekstdikte en tekstgrootte doorgeven om aangepaste tekst toe te voegen aan campagneafbeeldingen.
+Dankzij de integratie van Asset Compute Service kan Experience Manager deze parameters aan de aangepaste toepassing doorgeven met behulp van het [!UICONTROL Service Parameters] veld. De aangepaste toepassing roept vervolgens de Photoshop API aan en geeft deze waarden door aan de API. U kunt bijvoorbeeld lettertypenaam, tekstkleur, tekstdikte en tekstgrootte doorgeven om aangepaste tekst toe te voegen aan campagneafbeeldingen.
 
 ![aangepast verwerkingsprofiel](assets/custom-processing-profile.png)
 
-*Afbeelding: Gebruik[!UICONTROL Service Parameters]veld om toegevoegde informatie door te geven aan vooraf gedefinieerde parameters die in de aangepaste worker zijn ingebouwd.*
+*Afbeelding: Het gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing.[!UICONTROL Service Parameters]*
 
 Wanneer campagneafbeeldingen worden geüpload naar de map waarop dit verwerkingsprofiel is toegepast, worden de afbeeldingen bijgewerkt met `Jumanji` tekst in het `Arial-BoldMT` lettertype.
 
@@ -243,5 +245,5 @@ Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-a
 >
 >* [Inleiding tot Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Begrijp uitbreidbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
->* [Aangepaste workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)maken.
+>* [Aangepaste toepassingen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)maken.
 
