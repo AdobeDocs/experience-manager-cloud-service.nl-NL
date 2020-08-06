@@ -2,10 +2,10 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 2%
+source-wordcount: '766'
+ht-degree: 0%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 2%
 
 In Cloud Manager zijn er twee typen pijplijn:
 
-* **Productiepijpleidingen**:
+* **Productiepijpleiding**:
 
-   Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd.
+   Een productiepijpleiding kan alleen worden toegevoegd als een productie- en werkgebiedomgeving is ingesteld.
 
-   Raadpleeg [De pijplijn](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
+   Raadpleeg [Productiepijplijn](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
 
-* **Niet-productiepijpleidingen**:
+* **Niet-productiepijpleiding**:
 
    Een niet-productiepijpleiding kan van de pagina van het **Overzicht** van het gebruikersinterface van de Manager van de Wolk worden toegevoegd.
 
    Raadpleeg de [pijplijnen](configure-pipeline.md#non-production-pipelines) voor niet-productie en alleen codekwaliteit voor meer informatie.
 
-## De stroom begrijpen {#understanding-the-flow}
+>[!NOTE]
+>Om uw pijpleiding te vormen, moet u:
+> * bepaal de trekker die de pijpleiding zal beginnen.
+> * de parameters voor de implementatie van de productie te definiëren.
+> * de testparameters voor de prestaties configureren.
 
-U kunt uw pipeline configureren vanaf de tegel **Pipelines** in de [!UICONTROL Cloud Manager]-gebruikersinterface.
 
-De Manager van de Plaatsing is verantwoordelijk voor vestiging de pijpleiding. Als u dit doet, selecteert u eerst een vertakking in de **Git Repository**.
+## Productiepijpleiding instellen {#setting-up-production-pipeline}
 
-Om uw pijpleiding te vormen, moet de gebruiker:
+De Manager van de Plaatsing is verantwoordelijk voor vestiging de Pijpleiding van de Productie.
 
-* bepaal de trekker die de pijpleiding zal beginnen.
-* de parameters voor de implementatie van de productie te definiëren.
-* de testparameters voor de prestaties configureren.
-
-## De pijplijn instellen {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->De pijplijn kan niet worden ingesteld tot één programma volledig is gemaakt en de opslagplaats van Git heeft minstens één tak.
+>[!NOTE]
+>Een productiepijpleiding kan pas worden ingesteld als het programma is gemaakt, de Git-opslagplaats ten minste één vertakking heeft en er een productie- en werkgebiedomgeving is ingesteld.
 
 Alvorens u begint om uw code op te stellen, moet u uw pijpleidingsmontages van [!UICONTROL Cloud Manager]vormen.
 
