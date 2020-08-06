@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '785'
 ht-degree: 2%
 
 ---
@@ -15,9 +15,10 @@ ht-degree: 2%
 In Cloud Manager zijn er twee typen pijplijn:
 
 * **Productiepijpleidingen**:
-Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd.
 
-   Raadpleeg de sectie [Pipeline](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
+   Een productiepijpleiding kan alleen worden toegevoegd wanneer een productie- en werkgebiedomgeving is gecreëerd.
+
+   Raadpleeg [De pijplijn](configure-pipeline.md#setting-up-the-pipeline) instellen voor meer informatie.
 
 * **Niet-productiepijpleidingen**:
 
@@ -83,6 +84,8 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
 1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als **Inhoud Controle**.
 
+   ![](assets/content-audit-1.png)
+
    Deze optie biedt een tabel voor de URL-paden die altijd moeten worden opgenomen in de Content Audit. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de inhoudscontrole.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    Raadpleeg [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) voor meer informatie.
 
-   ![](assets/content-audit-1.png)
-
    Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de inhoud. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
+
+   >[!NOTE]
+   >Om de stap van de Controle van de Inhoud te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Raadpleeg [Bekende problemen](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) voor meer informatie.
 
    ![](assets/content-audit2.png)
 
