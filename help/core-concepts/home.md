@@ -2,10 +2,10 @@
 title: Kernbegrippen van Adobe Experience Manager as a Cloud Service
 description: Kernbegrippen, zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+source-wordcount: '384'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ Deze pagina bevat een zelfhulpbronnen met de kernbegrippen van Experience Manage
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
