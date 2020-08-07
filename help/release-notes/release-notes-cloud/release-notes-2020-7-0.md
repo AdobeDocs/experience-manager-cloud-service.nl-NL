@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 2%
@@ -43,6 +43,14 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 * De stappen van het werkschema die niet compatibel met een plaatsing van de Cloud Service zijn nu duidelijk met een waarschuwing in de [!UICONTROL workflow model] redacteur. Bovendien, wanneer het uitvoeren van de bestaande werkschema&#39;s op het milieu van de Cloud Service, worden de incompatibele werkschemasstappen overgeslagen.
 
 * De modellen van het werkschema die door klanten worden gecreeerd die aan `/conf/global` in het project van Git verbonden aan het milieu in de Manager van de Wolk worden opgesteld worden automatisch opgesteld aan `/var` en zo beschikbaar in Experience Manager. De modellen van het productwerkschema onder `/libs` die door klant werden veranderd worden niet automatisch opgesteld aan `/var`.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What&#39;s New {#what-is-new-commerce}
+
+AEM Commerce is nu beschikbaar op Cloud Service.
+
+Raadpleeg [Aan de slag met AEM Handel als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) voor meer informatie.
 
 ## Kernonderdelen {#core-components}
 
@@ -110,14 +118,6 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * GePorted AEM Analytics Cloud Service UI van Klassieke UI naar nieuwe AEM UI. Ook de locatie van de cloudservice Analytics in AEM opslagplaats verplaatst van `/etc` naar `/conf`, zodat deze overeenkomt met andere cloudservices van AEM.
 
 * GePorted AEM Target cloud service UI van klassieke UI naar nieuwe AEM UI. Ook de locatie van de doelcloudservice in AEM opslagplaats verplaatst van `/etc` naar `/conf`, om deze uit te lijnen met andere AEM-cloudservices.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### What&#39;s New {#what-is-new-commerce}
-
-AEM Commerce is nu beschikbaar op Cloud Service.
-
-Raadpleeg [Aan de slag met AEM Handel als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) voor meer informatie.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
