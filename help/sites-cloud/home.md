@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service-sites
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Sites as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c2215cdc83aaaf15e9ef9905805d3da10c1e8f6
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 96%
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Deze pagina bevat zelfhulpbronnen over Sites in Experience Manager as a Cloud Se
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
