@@ -1,8 +1,8 @@
 ---
-title: Adobe Experience Manager als de Fragments van de Inhoud van de Cloud Service Steun in Activa HTTP API
+title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Content Fragments in Assets HTTP API.
 translation-type: tm+mt
-source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -25,13 +25,13 @@ ht-degree: 2%
 >
 De huidige implementatie van de Elementen HTTP API is gebaseerd op de architecturale stijl [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-Met de REST-API [voor](/help/assets/mac-api-assets.md) middelen hebben ontwikkelaars voor Adobe Experience Manager als Cloud Service via CRUD-bewerkingen rechtstreeks toegang tot inhoud (opgeslagen in AEM) (maken, lezen, bijwerken, verwijderen) via de HTTP-API.
+Met de REST-API [voor](/help/assets/mac-api-assets.md) middelen hebben ontwikkelaars van Adobe Experience Manager als Cloud Service via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen) rechtstreeks toegang tot inhoud (opgeslagen in AEM) via de HTTP-API.
 
-Met de API kunt u Adobe Experience Manager als een Cloud Service als een CMS (Content Management System) zonder kop gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
+Met de API kunt u Adobe Experience Manager als een Cloud Service als een CMS zonder kop (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
 Bijvoorbeeld, de Enige Toepassingen van de Pagina (SPA), op kader-gebaseerd of douane, vereisen inhoud die over HTTP API, vaak in formaat JSON wordt verstrekt.
 
-Hoewel [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) een zeer uitvoerige, flexibele en aanpasbare API biedt die de vereiste leesbewerkingen voor dit doel kan dienen en waarvan de JSON-uitvoer kan worden aangepast, is voor de implementatie wel AEM WCM (Web Content Management)-knowhow vereist, omdat deze moet worden gehost op pagina&#39;s die zijn gebaseerd op speciale AEM-sjablonen. Niet elke SBZ-ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
+Terwijl [AEM de Componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) van de Kern een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SBZ-ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
 
 Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
@@ -49,11 +49,11 @@ De REST-API voor middelen:
 
 ## Vereisten {#prerequisites}
 
-De REST API van Middelen is beschikbaar op elke uit-van-de-doos installatie van een recente Adobe Experience Manager als versie van de Cloud Service.
+De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager als Cloud Service buiten de box.
 
 ## Belangrijke concepten {#key-concepts}
 
-De REST API van Activa biedt [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-stijl toegang tot activa die binnen een instantie AEM worden opgeslagen.
+De REST API van Middelen biedt [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-stijl toegang tot activa die binnen een AEM instantie worden opgeslagen.
 
 Het gebruikt het `/api/assets` eindpunt en vereist de weg van de activa om tot het (zonder het leiden `/content/dam`) toegang te hebben.
 
@@ -72,14 +72,14 @@ Bijvoorbeeld om toegang te krijgen `/content/dam/wknd/en/adventures/cycling-tusc
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
-* **GET** - voor het ophalen van een JSON-representatie van een middel of een map
-* **POST** - voor het maken van nieuwe elementen of mappen
+* **GET** - om een JSON-representatie van een element of map op te halen
+* **POST** - om nieuwe elementen of mappen te maken
 * **PUT** - om de eigenschappen van een middel of een omslag bij te werken
 * **DELETE** - om een middel of een omslag te schrappen
 
 >[!NOTE]
 >
->De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; U kunt bijvoorbeeld definiëren dat een map of element moet worden gemaakt door een **POST** -aanvraag.
+>De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; Stel bijvoorbeeld dat een map of element moet worden gemaakt door een **POST** -aanvraag.
 
 <!--
 The exact format of supported requests is defined in the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
@@ -91,14 +91,14 @@ Alle verzoeken zijn atomisch.
 
 Dit betekent dat latere (`write`) verzoeken niet kunnen worden gecombineerd tot één enkele transactie die als één enkele entiteit zou kunnen slagen of mislukken.
 
-### AEM (Middelen) REST API versus AEM-componenten {#aem-assets-rest-api-versus-aem-components}
+### AEM (Middelen) REST API versus AEM componenten {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
   <tr>
    <td>Verhouding</td>
    <td>REST-API voor middelen<br/> </td>
-   <td>AEM-component<br/> (componenten die gebruikmaken van Sling-modellen)</td>
+   <td>AEM component<br/> (componenten die gebruikmaken van Sling-modellen)</td>
   </tr>
  </thead>
  <tbody>
@@ -117,13 +117,13 @@ Dit betekent dat latere (`write`) verzoeken niet kunnen worden gecombineerd tot 
    <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt het <code>/api/assets </code>eindpunt, in kaart gebracht aan <code>/content/dam</code> (in de bewaarplaats).</p> 
    <p>Een voorbeeldpad zou er als volgt uitzien: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>Er moet naar worden verwezen via een AEM-component op een AEM-pagina.</p> <p>Gebruikt de <code>.model</code> kiezer om de JSON-representatie te maken.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>Moet door een AEM component op een AEM pagina worden van verwijzingen voorzien.</p> <p>Gebruikt de <code>.model</code> kiezer om de JSON-representatie te maken.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
    <td>Beveiliging</td>
    <td><p>Er zijn meerdere opties mogelijk.</p> <p>OAuth wordt voorgesteld; kan los van standaardopstelling worden gevormd.</p> </td>
-   <td>Gebruikt de standaardinstallatie van AEM.</td>
+   <td>Gebruikt AEM standaardinstallatie.</td>
   </tr>
   <tr>
    <td>Architecten</td>
@@ -140,7 +140,7 @@ Dit betekent dat latere (`write`) verzoeken niet kunnen worden gecombineerd tot 
 
 ### Beveiliging {#security}
 
-Als de REST API van Middelen binnen een milieu zonder specifieke authentificatievereisten wordt gebruikt, moet het filter van CORS van AEM correct worden gevormd.
+Als de REST API van Middelen binnen een milieu zonder specifieke authentificatievereisten wordt gebruikt, moet AEM filter CORS correct worden gevormd.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ De reactie zal het pagineren informatie als deel van de `properties` sectie van 
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...
@@ -242,12 +242,12 @@ Gekoppelde inhoud wordt momenteel niet weergegeven.
 
 ## Gebruiken {#using}
 
-Het gebruik kan verschillen afhankelijk van of u een auteur AEM of publicatiemilieu, samen met uw specifiek gebruiksgeval gebruikt.
+Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
 * Het wordt sterk aanbevolen dat het maken is gebonden aan een instantie van de auteur ([en momenteel is er geen manier om een fragment te repliceren voor publicatie met deze API](/help/assets/assets-api-content-fragments.md#limitations)).
-* De levering is mogelijk van beide, aangezien AEM gevraagde inhoud slechts in formaat JSON dient.
+* De levering is mogelijk van beide, aangezien AEM gevraagde inhoud in formaat slechts JSON dient.
 
-   * Opslag en levering van een AEM-auteur-instantie zou voldoende moeten zijn voor toepassingen achter de firewall en in de mediabibliotheek.
+   * Opslag en levering vanuit een AEM auteur-instantie zouden voldoende moeten zijn voor toepassingen achter de firewall, in de mediabibliotheek.
 
    * Voor live webweergave wordt een AEM-publicatie-instantie aanbevolen.
 
