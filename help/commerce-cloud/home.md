@@ -2,10 +2,10 @@
 title: AEM Handel als Cloud Service
 description: AEM Handel als Cloud Service zelf-hulpmiddelen en documentatiekoppelingen
 translation-type: tm+mt
-source-git-commit: db2e6745f73ad95fe7e5a01945e95a386dc9e95f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 84%
+source-wordcount: '362'
+ht-degree: 82%
 
 ---
 
@@ -41,7 +41,7 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel als 
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentatie voor Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
