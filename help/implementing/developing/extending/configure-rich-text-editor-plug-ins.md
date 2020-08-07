@@ -4,9 +4,9 @@ description: Leer om [!DNL Adobe Experience Manager] de Rich Text Editor stop-in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '4279'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Voor details over de andere configuraties RTE, zie [vormen Rich Text Editor](/he
 
 >[!NOTE]
 >
->Als u werkt met CRXDE Lite, wordt u aangeraden de wijzigingen regelmatig op te slaan met [!UICONTROL Save All] deze optie.
+>Als u met CRXDE Lite werkt, wordt u aangeraden de wijzigingen regelmatig op te slaan met behulp van [!UICONTROL Save All] deze optie.
 
 ## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
@@ -32,7 +32,7 @@ Standaard worden `format`, `link`, `list`, `justify`, en `control` stop-ins en a
 >
 >Het respectieve `rtePlugins` knooppunt wordt genoemd `<rtePlugins-node>` om dubbel werk in dit artikel te voorkomen.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Creeer de ouderknoop van `<rtePlugins-node>` als het niet bestaat, alvorens om het even welke stop-ins te vormen RTE:
 
    * Afhankelijk van uw component zijn de bovenliggende knooppunten:
@@ -63,7 +63,7 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de `feat
 |  | Alle functies inschakelen | Schakel een aantal specifieke functies in. | Alle functies uitschakelen. |
 |---|---|---|---|
 | Naam | functies | functies | functies |
-| Type | Tekenreeks | `String` (meerdere tekenreeksen; Type instellen op `String` en klikken `Multi` (CRXDE Lite) | Tekenreeks |
+| Type | Tekenreeks | `String` (meerdere tekenreeksen; Type instellen op `String` en klikken `Multi` in CRXDE Lite) | Tekenreeks |
 | Waarde | `*` (een sterretje) | Instellen op een of meer functiewaarden. | - |
 
 ## Begrijp de findreplace plug-in {#findreplace}
@@ -233,7 +233,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
 
    >[!NOTE]
@@ -308,7 +308,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -559,7 +559,7 @@ Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE w
 >[!NOTE]
 Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
 
-Een standaard Experience Manager-installatie bevat de woordenboeken voor:
+Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 
 * Amerikaans Engels (nl_nl)
 * Brits Engels (en_gb)
@@ -641,7 +641,7 @@ U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster 
 
 Wanneer u koppelingen toevoegt in, kunt u de CSS-stijlen definiëren die moeten worden gebruikt en de protocollen die automatisch moeten worden geaccepteerd. [!DNL Experience Manager] Om te vormen hoe de verbindingen binnen [!DNL Experience Manager] van een ander programma worden toegevoegd, bepaal de regels van HTML.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Maak een knooppunt op hetzelfde niveau als `<rtePlugins-node>`, dat wil zeggen, maak het knooppunt onder het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `htmlRules`
@@ -705,7 +705,7 @@ Wanneer u koppelingen toevoegt in, kunt u de CSS-stijlen definiëren die moeten 
 
          * **Naam** `targetInternal`
          * **Type** `String`
-         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken wanneer de modus &quot;is `auto`)
+         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken als de modus is `auto`)
       * Het doel voor externe koppelingen:
 
          * **Naam** `targetExternal`
