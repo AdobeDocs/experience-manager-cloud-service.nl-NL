@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * In sommige gevallen werden voltooide executies van pijpleidingen niet met succes geregistreerd als voltooid, waardoor nieuwe executies van de pijpleiding werden voorkomen.
 
-* De executies van pijpleidingen zouden af en toe &quot;vastzitten&quot;wegens interne communicatie kwesties.
+* De executies van pijpleidingen zouden af en toe *vastzitten* als gevolg van interne communicatieproblemen.
 
 * Bij de provisioning van een nieuwe organisatie kregen sommige gebruikers met andere beheerrollen dan systeembeheerders ten onrechte toegang tot Cloud Manager.
 
@@ -58,7 +58,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * De gebruikersinterface stond abusievelijk toe dat bewerkingen werden uitgevoerd in een omgeving terwijl deze werd verwijderd.
 
-* Er is een kleurfout opgetreden op de overzichtspagina.
+* Er is een kleurfout opgetreden op de pagina **Overzicht** van Cloud Manager.
 
 ### Bekende problemen {#known-issues-cm}
 
