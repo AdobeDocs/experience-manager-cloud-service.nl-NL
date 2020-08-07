@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken voor de verwerking van bed
 description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -110,14 +110,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Aangepast profiel en gebruik hoofdletters en kleine letters {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen, zoals standaardverwerking, verwerking van Adobe-specifieke indelingen zoals Photoshop-bestanden en implementatie van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als deze verwerkingsopties niet aan de bedrijfsbehoeften voldoen, raadt Adobe aan de standaardmogelijkheden te ontwikkelen en [!DNL Asset Compute Service] te gebruiken. Voor een overzicht, zie [begrip rekbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
 
 >[!NOTE]
@@ -148,11 +140,11 @@ Ga als volgt te werk om een aangepast profiel te maken:
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
    * [Eindpunt-URL van een Firefly-aangepaste app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
    * Voeg de Parameters van de Dienst toe om extra informatie of parameters [tot de douanetoepassing](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)over te gaan.
-   * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
+   * MIME-typen zijn opgenomen en uitgesloten om de verwerking te beperken tot een paar specifieke bestandsindelingen.
 
    Klik op **[!UICONTROL Save]**.
 
-De aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
+De aangepaste toepassingen zijn toepassingen zonder hoofd voor [probleemloze](https://github.com/AdobeDocs/project-firefly) projecttoepassingen. De aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
 
 >[!CAUTION]
 >
