@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 ## Beschikbaarheid {#availability}
 
-De Content Transfer-tool kan als ZIP-bestand (Content Transfer Tool v1.0.0) worden gedownload van de Software Distribution-portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Zie Opmerkingen bij de [release voor meer informatie over de meest recente versie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Download de Content Transfer-tool van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
