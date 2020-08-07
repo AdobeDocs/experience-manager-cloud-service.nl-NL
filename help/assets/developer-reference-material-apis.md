@@ -3,15 +3,15 @@ title: 'Elementen-API''s voor beheer van digitale middelen in Adobe Experience M
 description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# Elementen als Cloud Service-API&#39;s {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -23,19 +23,19 @@ Give a list of and overview of all reference information available.
 
 ## Elementen uploaden {#asset-upload-technical}
 
-Experience Manager als cloudservice biedt een nieuwe manier om elementen naar de opslagplaats te uploaden: directe binaire upload naar binaire cloudopslag. Dit gedeelte geeft een technisch overzicht.
+Experience Manager als cloudservice biedt een nieuwe manier om elementen naar de opslagplaats te uploaden - directe binaire upload naar binaire cloudopslag. Dit gedeelte geeft een technisch overzicht.
 
 ### Overzicht van directe binaire upload {#overview-binary-upload}
 
 Het algoritme op hoog niveau om een binair getal te uploaden is:
 
 1. Verzend een HTTP-aanvraag om AEM te informeren over de intentie om een nieuw binair getal te uploaden.
-1. POST de inhoud van binair binair aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
+1. POST de inhoud van binair aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
 1. Verzend een HTTP- verzoek om de server mee te delen dat de inhoud van binair getal met succes werd geupload.
 
 ![Overzicht van het directe binaire upload protocol](assets/add-assets-technical.png)
 
-Belangrijke verschillen in vergelijking met eerdere versies van AEM zijn:
+Belangrijke verschillen ten opzichte van eerdere versies van AEM zijn:
 
 * De binaire getallen gaan niet door AEM, die nu eenvoudig het uploadproces met de binaire wolkenopslag coördineert die voor de plaatsing wordt gevormd
 * Binaire cloudopslag wordt voorafgegaan door een Content Delivery Network (CDN, Edge Network), dat het uploadeindpunt dichter bij de client brengt, waardoor uploadprestaties en gebruikerservaring worden verbeterd, met name voor gedistribueerde teams die middelen uploaden
@@ -48,11 +48,7 @@ Deze aanpak moet zorgen voor een schaalbaardere en krachtigere verwerking van ge
 
 ### Uploaden starten {#initiate-upload}
 
-De eerste stap bestaat uit het indienen van een HTTP POST-aanvraag bij de map waarin het element moet worden gemaakt of bijgewerkt. Neem de kiezer op `.initiateUpload.json` om aan te geven dat de aanvraag moet beginnen met een binaire upload. Het pad naar de map waar het element moet worden gemaakt is bijvoorbeeld `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+De eerste stap bestaat uit het indienen van een aanvraag voor een HTTP-POST bij de map waarin het element moet worden gemaakt of bijgewerkt. Neem de kiezer op `.initiateUpload.json` om aan te geven dat de aanvraag moet beginnen met een binaire upload. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder`. Het verzoek van de POST is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten: `application/x-www-form-urlencoded`
 
@@ -61,7 +57,7 @@ Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de vol
 
 Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te starten, zolang elk binair getal de vereiste velden bevat. Als dit lukt, reageert de aanvraag met een `201` statuscode en een body die JSON-gegevens in de volgende indeling bevat:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
@@ -90,19 +86,19 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 
 ### Binair bestand uploaden {#upload-binary}
 
-De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als meer dan één URI wordt verstrekt, is het de verantwoordelijkheid van de cliënt om het binaire getal in delen en POST elk deel, in orde, aan elk URI te &quot;verdelen&quot;, in orde. Alle URI&#39;s moeten worden gebruikt en elk onderdeel moet groter zijn dan de minimale grootte en kleiner dan de maximale grootte die is opgegeven in het initiëringsantwoord. Die verzoeken zullen door CDN randknopen worden genegeerd om het uploaden van binaire getallen te versnellen.
+De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als meer dan één URI wordt verstrekt, is het de verantwoordelijkheid van de cliënt om het binaire getal in delen en POST elk deel, in orde, aan elke URI te &quot;verdelen&quot;in orde. Alle URI&#39;s moeten worden gebruikt en elk onderdeel moet groter zijn dan de minimale grootte en kleiner dan de maximale grootte die is opgegeven in het initiëringsantwoord. Die verzoeken zullen door CDN randknopen worden genegeerd om het uploaden van binaire getallen te versnellen.
 
 Dit kan onder andere worden bereikt door de grootte van de onderdelen te berekenen op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Voorbeeld dat de totale grootte van het binaire getal 20.000 bytes is en het aantal URI&#39;s voor uploaden 2 is:
 
 * Onderdeelgrootte berekenen door totale grootte te delen door aantal URI&#39;s: 20,000 / 2 = 10,000
 * POST bytewaaier 0-9.999 van binair aan eerste URI in de lijst van upload URIs
-* POST-bytebereik 10.000 - 19.999 van binair aan de tweede URI in de lijst met URI&#39;s voor uploaden
+* POST bytewaaier 10.000 - 19.999 van binair aan tweede URI in de lijst van upload URIs
 
 Als dit gelukt is, reageert de server op elke aanvraag met een `201` statuscode.
 
 ### Uploaden voltooien {#complete-upload}
 
-Nadat alle delen van een binair bestand zijn geüpload, verzendt u een HTTP POST-aanvraag naar de volledige URI die door de initiatiegegevens wordt verschaft. Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten. `application/x-www-form-urlencoded`
+Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de POST van HTTP aan volledige URI voor die door de initiatiegegevens wordt verstrekt. Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten. `application/x-www-form-urlencoded`
 
 | Fields | Type | Vereist of niet | Beschrijving |
 |---|---|---|---|
@@ -125,7 +121,7 @@ Als dit gelukt is, reageert de server met een `200` statuscode.
 
 ### Uploadbibliotheek met open bron {#open-source-upload-library}
 
-Voor meer informatie over de uploadalgoritmen of voor het maken van uw eigen uploadscripts en -gereedschappen biedt Adobe opensource-bibliotheken en -gereedschappen als uitgangspunt:
+Als u meer wilt weten over de uploadalgoritmen of zelf uploadscripts en -gereedschappen wilt maken, biedt Adobe opensource-bibliotheken en -gereedschappen als uitgangspunt:
 
 * [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload)
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
@@ -146,15 +142,15 @@ Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-In Experience Manager is de verwerking van bedrijfsmiddelen gebaseerd op een **[!UICONTROL Processing Profiles]** configuratie die gebruik maakt van [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Voor verwerking zijn geen ontwikkelaarsextensies vereist.
+In Experience Manager, is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
 Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Klanten die een upgrade naar Experience Manager uitvoeren als Cloud Service van eerdere versies van Experience Manager, kunnen assetmicroservices gebruiken voor de verwerking van bedrijfsmiddelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
+Klanten die een upgrade naar Experience Manager uitvoeren als Cloud Service van eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van bedrijfsmiddelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
 
-De volgende workflowstappen worden in Experience Manager als Cloud Service ondersteund.
+De volgende workflowstappen worden in Experience Manager ondersteund als een Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
