@@ -1,11 +1,11 @@
 ---
 title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
-description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
+description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan 
 
 >[!NOTE]
 >
->Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), worden voor AEM gedepreteerd als implementatie van een cloudservice. Gebruik in plaats hiervan [directe binaire upload-API&#39;s](developer-reference-material-apis.md#asset-upload-technical) voor het uploaden van binaire bestanden.
+>Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), worden voor AEM als implementatie van een Cloud Service genegeerd. Gebruik in plaats hiervan [directe binaire upload-API&#39;s](developer-reference-material-apis.md#asset-upload-technical) voor het uploaden van binaire bestanden.
 
 ## Contentfragmenten {#content-fragments}
 
@@ -71,13 +71,15 @@ In [!DNL Experience Manager] een element bevat het element de volgende elementen
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
 * Optionele opmerkingen.
 
-Zie Ondersteuning van [inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md)voor informatie over elementen in Content Fragments.
+Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](/help/assets/assets-api-content-fragments.md)van Experience Manager Assets voor informatie over elementen in Content Fragments.
 
 In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
 * Entiteiten: De onderliggende elementen van activa zijn de uitvoeringen.
 * Eigenschappen.
 * Koppelingen.
+
+## Beschikbare functies {#available-features}
 
 De HTTP-API voor middelen bevat de volgende functies:
 
