@@ -2,9 +2,9 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1406'
 ht-degree: 9%
 
 ---
@@ -48,7 +48,7 @@ Om te kunnen worden gebouwd en geïmplementeerd met Cloud Manager, moeten bestaa
 * U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw *pom.xml* - dossiers. Toegang tot met [wachtwoord beveiligde gegevensopslagruimten](#password-protected-maven-repositories) voor artefacten wordt ondersteund wanneer dit is geconfigureerd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
 * Implementeerbare inhoudspakketten worden ontdekt door te zoeken naar *ZIP* -bestanden van inhoudspakketten die zich in een map met de naam *target* bevinden. Elk aantal submodules kan inhoudspakketten produceren.
 
-* Inzetbare Dispatcher-artefacten worden ontdekt door te zoeken naar *ZIP* -bestanden (opnieuw opgenomen in een map met de naam *target*) met mappen met de naam *conf* en *conf.d*.
+* Implementeerbare Dispatcher-artefacten worden gedetecteerd door te zoeken naar *ZIP* -bestanden (opnieuw opgenomen in een map met de naam *target*) met mappen met de naam *conf* en *conf.d*.
 
 * Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd. Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen. Pakketten kunnen van plaatsing worden [overgeslagen](#skipping-content-packages) .
 
@@ -59,7 +59,6 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 18.04.
 * Apache Maven 3.6.0 is geïnstalleerd.
-* De Java-versie installeerde Oracle JDK 8u202 en 11.0.2.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn:
 
    * bzip2
@@ -337,7 +336,7 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 
 >[!NOTE]
 >
->Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die wordt gebruikt voor het uitvoeren van Adobe Experience Manager. Als u een systeempakket nodig hebt dat op de AEM-omgeving is geïnstalleerd, neemt u contact op met uw Adobe-vertegenwoordiger.
+>Als u een systeempakket op deze manier installeert, wordt dit **niet** geïnstalleerd in de runtimeomgeving die voor het uitvoeren van Adobe Experience Manager wordt gebruikt. Als u een systeempakket nodig hebt dat op de AEM-omgeving is geïnstalleerd, neemt u contact op met uw Adobe-vertegenwoordiger.
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
