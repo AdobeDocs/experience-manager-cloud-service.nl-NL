@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1675'
 ht-degree: 6%
 
 ---
@@ -62,18 +62,27 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   * De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
-   * Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
+   * De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar (weergegeven) wordt gemaakt in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
+
+      >[!NOTE]
+      >
+      > Zie [Aan en uit Tijden - de Configuratie](/help/operations/replication.md#on-and-off-times-trigger-configuration) van de Trekker voor details van hoe te om de verwante automatische replicatie te vormen.
+
+      * Als deze pagina al is [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , blijft deze slapend (verborgen) totdat de pagina op het opgegeven tijdstip wordt weergegeven.
+      * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
+      * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, zal de pagina niet automatisch gepubliceerd worden, zodat zal 404 worden gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
+   * Laat deze velden (**Aan tijd** en **Uit tijd**) leeg voor pagina&#39;s die u direct wilt publiceren en houd de publicatieomgeving beschikbaar totdat ze zijn gedeactiveerd (het normale scenario).
 
 * **Uit-tijd**
 
-   * De tijd waarop de gepubliceerde pagina wordt gedeactiveerd.
-   * Laat deze velden leeg voor directe actie.
+   * Parallel aan **On Time** definieert dit de tijd waarop de gepubliceerde pagina wordt verborgen in de publicatieomgeving.
+   * Laat deze velden (**Aan tijd** en **Uit tijd**) leeg voor pagina&#39;s die u direct wilt publiceren en houd de publicatieomgeving beschikbaar totdat ze zijn gedeactiveerd (het normale scenario).
 
 * **Vanity URL**
 
    * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of expressieve URL kunt hebben.
    * Als de URL vanity bijvoorbeeld is ingesteld op `welcome` de pagina die wordt aangegeven door het pad `/v1.0/startpage` voor de website `http://example.com`, `http://example.com/welcome` is dit de URL van de vanity van `http://example.com/content/v1.0/startpage`
+
    >[!CAUTION]
    >
    >Vanity-URL&#39;s:
@@ -185,6 +194,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **Configuraties van Cloud Servicen**
 
    * Eigenschappen definiëren voor cloudservices.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -193,6 +203,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **ContextHub-configuraties**
 
    * Selecteer de Configuratie ContextHub en de Weg van Segmenten.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -209,6 +220,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
    * Machtigingen toevoegen
    * Gesloten gebruikersgroep bewerken
    * Effectieve machtigingen weergeven
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -220,6 +232,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 * **Blauwdruk**
 
    * Definieer eigenschappen voor een pagina Vervagen binnen beheer met meerdere sites.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
