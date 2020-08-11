@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1717'
 ht-degree: 5%
 
 ---
@@ -20,14 +20,14 @@ U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of
 
 ## Terminologie {#terminology}
 
-Tijdens het werken met AEM kunnen er verschillende termen voorkomen die betrekking hebben op publiceren.
+Tijdens het werken met Adobe Experience Manager (AEM) als Cloud Service kunnen er verschillende termen voorkomen die betrekking hebben op publiceren.
 
 * **Publiceren/Publiceren ongedaan maken**
    * Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
-   * Dit zijn de termen die worden gebruikt in AEM-documentatie.
+   * Dit zijn de termen die worden gebruikt in AEM documentatie.
 * **Activeren/deactiveren**
    * Deze termen zijn synoniem met publiceren/verwijderen.
-   * Deze termen zijn gebruikt in eerdere versies van AEM.
+   * Deze termen zijn in vorige versies van AEM gebruikt.
 * **Replicatie/replicatie**
    * Dit zijn de technische termen die de verplaatsing van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene omgeving naar de andere beschrijven wanneer u een pagina publiceert.
    * Deze termen worden vooral gebruikt door ontwikkelaars.
@@ -53,6 +53,10 @@ Afhankelijk van uw locatie kunt u publiceren:
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> Zie **Op tijd** en **Uittijd** op het tabblad [Standaard van Pagina-eigenschappen voor meer mogelijkheden](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### Publiceren vanuit de Editor {#publishing-from-the-editor}
 
 Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
@@ -67,6 +71,7 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
    * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
       * Geef aan welke elementen/tags/etc. Als u samen met de pagina wilt publiceren, gebruikt u **Publiceren** om het proces te voltooien.
       * Gebruik **Annuleren** om de handeling af te breken.
+
    ![Referenties publiceren met de pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. Als u **Publiceren** selecteert, wordt de pagina gekopieerd naar de publicatieomgeving. In de paginaeditor wordt een informatiebanner weergegeven die de publicatieactie bevestigt.
@@ -122,6 +127,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    * Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
    * Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
+
    Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
 
    Als u een publicatie/publicatie later wilt annuleren, gaat u naar de workflowconsole om de bijbehorende workflow te beëindigen. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Klik op de knop Inhoud toevoegen om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) te starten en de inhoud te selecteren.
 
-   Selecteer de vereiste pagina&#39;s en klik vervolgens op **Selecteren** om de inhoud aan de wizard toe te voegen of op **Annuleren **om de selectie te annuleren en terug te keren naar de wizard.
+   Selecteer de vereiste pagina&#39;s en klik vervolgens op **Selecteren** om de inhoud aan de wizard toe te voegen of op **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
    Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
 
    * Inclusief de onderliggende elementen.
    * Verwijder het uit de selectie.
    * De gepubliceerde referenties beheren.
+
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    Klik op **Inclusief onderliggende items** om een dialoogvenster te openen waarin u:
@@ -152,6 +159,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
    * Alleen directe kinderen opnemen.
    * Alleen gewijzigde pagina&#39;s opnemen.
    * Alleen al gepubliceerde pagina&#39;s opnemen.
+
    Klik op **Toevoegen** om de onderliggende pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die gepubliceerd of niet gepubliceerd moeten worden op basis van de selectieopties. Klik op **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
    ![Publicatie beheren, waaronder kinderen](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    * Definieer de titel van de workflow.
    * Behoud het workflowpakket, mits de workflow ondersteuning biedt voor meerdere bronnen.
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * Definieer een titel van het workflowpakket als de optie om het workflowpakket te behouden is gekozen.
+
    Klik op **Publiceren** of **Later publiceren** om de publicatie te voltooien.
 
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
@@ -227,7 +237,7 @@ Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerk
 
 Hiervoor kunt u de optie Publicatie [](#manage-publication) beheren op de siteconsole gebruiken.
 
-1. Selecteer in de siteconsole de basispagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
+1. Selecteer in de siteconsole de hoofdpagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
 1. De wizard **Publicatie beheren** wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
 1. Selecteer in de stap **Bereik** de basispagina en selecteer **Onderliggende** elementen opnemen.
 
@@ -237,6 +247,7 @@ Hiervoor kunt u de optie Publicatie [](#manage-publication) beheren op de siteco
 
    * Alleen directe kinderen opnemen
    * Alleen reeds gepubliceerde pagina&#39;s opnemen
+
    Deze opties zijn standaard geselecteerd, dus u moet niet vergeten deze te deselecteren. Klik op **Toevoegen** om de inhoud te bevestigen en toe te voegen aan de publicatie/niet-publicatie.
 
    ![Inclusief kinderen tijdens niet-publiceren](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
