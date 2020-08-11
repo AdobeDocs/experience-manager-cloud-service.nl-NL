@@ -2,9 +2,9 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
+source-git-commit: 32f2581e4aee93da7aac73b49a87cd5202dd4417
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1423'
 ht-degree: 9%
 
 ---
@@ -210,7 +210,7 @@ En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buite
 
 ## Ondersteuning voor met wachtwoord beveiligde gegevensopslagruimte {#password-protected-maven-repositories}
 
-Als u een met een wachtwoord beveiligde gegevensopslagruimte vanuit Cloud Manager wilt gebruiken, geeft u het wachtwoord (en eventueel de gebruikersnaam) op als een geheime [Pipeline-variabele](#pipeline-variables) en verwijst u naar dat geheim in een bestand dat in de gegevensopslagruimte `.cloudmanager/maven/settings.xml` is genoemd. Dit bestand volgt het schema [Maven Settings File](https://maven.apache.org/settings.html) . Wanneer het buildproces van Cloud Manager wordt gestart, wordt het `<servers>` `settings.xml` element in dit bestand samengevoegd met het standaardbestand dat wordt geleverd door Cloud Manager. Als dit bestand is geïnstalleerd, wordt er vanuit een `<repository>` en/of `<pluginRepository>` element in het `pom.xml` bestand naar de server-id verwezen. Over het algemeen worden deze `<repository>` en/of `<pluginRepository>` elementen opgenomen in een specifiek profiel [voor]{#activating-maven-profiles-in-cloud-manager}Cloud Manager, hoewel dat niet strikt noodzakelijk is.
+Als u een met een wachtwoord beveiligde gegevensopslagruimte vanuit Cloud Manager wilt gebruiken, geeft u het wachtwoord (en eventueel de gebruikersnaam) op als een geheime [Pipeline-variabele](#pipeline-variables) en verwijst u naar dat geheim in een bestand dat in de gegevensopslagruimte `.cloudmanager/maven/settings.xml` is genoemd. Dit bestand volgt het schema [Maven Settings File](https://maven.apache.org/settings.html) . Wanneer het buildproces van Cloud Manager wordt gestart, wordt het `<servers>` `settings.xml` element in dit bestand samengevoegd met het standaardbestand dat wordt geleverd door Cloud Manager. Server-id&#39;s die beginnen met `adobe` en `cloud-manager` worden beschouwd als gereserveerd en mogen niet worden gebruikt door aangepaste servers. Als dit bestand is geïnstalleerd, wordt er vanuit een `<repository>` en/of `<pluginRepository>` element in het `pom.xml` bestand naar de server-id verwezen. Over het algemeen worden deze `<repository>` en/of `<pluginRepository>` elementen opgenomen in een specifiek profiel [voor](#activating-maven-profiles-in-cloud-manager)Cloud Manager, hoewel dat niet strikt noodzakelijk is.
 
 Stel bijvoorbeeld dat de gegevensopslagruimte zich bevindt op https://repository.myco.com/maven2, dat de gebruikersnaam is ingesteld op Cloud Manager `cloudmanager` en dat het wachtwoord is `secretword`.
 
