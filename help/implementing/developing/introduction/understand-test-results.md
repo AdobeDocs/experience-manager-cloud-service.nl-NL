@@ -2,7 +2,7 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 # Inzicht in de testresultaten {#understand-test-results}
 
 Cloud Manager for Cloud Services-pipeline-uitvoeringen ondersteunen de uitvoering van tests die worden uitgevoerd voor de stagingomgeving. Dit is in tegenstelling tot tests die tijdens de het Testen stap van de Bouwstijl en van de Eenheid worden in werking gesteld die offline, zonder toegang tot om het even welke lopende AEM milieu in werking worden gesteld.
-Er zijn twee soorten tests in deze context die worden uitgevoerd:
+Er zijn drie soorten tests die in deze context worden uitgevoerd:
 * Door de klant geschreven tests
 * Met Adobe geschreven tests
 * Open source tool powered by Lighthouse from Google
