@@ -2,9 +2,9 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
@@ -51,10 +51,10 @@ Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigur
    Voor het **testen van de fase** worden de volgende stappen uitgevoerd:
 
    * Functioneel testen van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen.
-Raadpleeg Functionele [producttests](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) voor meer informatie over het testproces.
+Raadpleeg Functionele tests voor [producten](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) voor meer informatie.
 
    * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
-      Raadpleeg [Aangepaste functionele tests](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) voor meer informatie over het testproces.
+      Raadpleeg [Aangepaste functionele tests](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) voor meer informatie.
 
    * Controle van inhoud: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de inhoudcontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
 Raadpleeg de resultaten [van](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) Content Audit voor meer informatie.
