@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1612'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Deze tests kunnen:
 
 * Door de klant geschreven
 * met Adobe geschreven
-* Open source tool powered by Lighthouse from Google
+* Powered by Lighthouse from Google as an open source tool
 
    >[!NOTE]
    > Zowel door de klant geschreven tests als Adobe geschreven tests worden uitgevoerd in een containerinfrastructuur die is ontworpen voor het uitvoeren van deze tests.
@@ -90,6 +90,9 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >
 >Het is weliswaar aan te raden de `@SuppressWarnings` annotatie zo specifiek mogelijk te maken, d.w.z. alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, aan te brengen, maar het is wel mogelijk om een annotatie op klasseniveau te maken.
 
+>[!NOTE]
+>Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Verwijs naar het Overzicht van de [Veiligheid voor AEM als Cloud Service](/help/security/cloud-service-security-overview.md) voor meer details.
+
 ## Functionele tests {#functional-testing}
 
 Functionele tests worden gecategoriseerd in twee typen:
@@ -111,7 +114,7 @@ De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanw
 Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.
 
 >[!NOTE]
->Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
+>Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Toegang tot en beheer van logbestanden](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
 
 #### Functionele tests schrijven {#writing-functional-tests}
