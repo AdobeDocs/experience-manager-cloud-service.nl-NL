@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1594'
 ht-degree: 3%
 
 ---
@@ -102,10 +102,9 @@ Functionele tests worden gecategoriseerd in twee typen:
 
 ### Functioneel testen van producten {#product-functional-testing}
 
-De Functionele Tests van het product zijn een reeks stabiele de integratietests van HTTP (ITs) rond ontwerp, replicatie, die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het kernfunctionaliteit in AEM breekt.
-Ze worden automatisch uitgevoerd wanneer een klant nieuwe code implementeert in Cloud Manager.
+De Functionele Tests van het product zijn een reeks stabiele HTTP integratietests (ITs) rond kernfunctionaliteit in AEM (bijvoorbeeld, creatie en replicatie) die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het deze kernfunctionaliteit breekt.
 
-De teststap Functioneel product in de pijplijn is altijd aanwezig en kan niet worden overgeslagen. Deze stap wordt momenteel uitgevoerd direct na de implementatie van het werkgebied.
+Ze worden automatisch uitgevoerd wanneer een klant nieuwe code implementeert in Cloud Manager.
 
 ### Aangepaste functionele tests {#custom-functional-testing}
 
