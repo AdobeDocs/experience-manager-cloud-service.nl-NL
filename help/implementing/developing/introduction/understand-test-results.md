@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,17 @@ ht-degree: 3%
 # Inzicht in de testresultaten {#understand-test-results}
 
 Cloud Manager for Cloud Services-pipeline-uitvoeringen ondersteunen de uitvoering van tests die worden uitgevoerd voor de stagingomgeving. Dit is in tegenstelling tot tests die tijdens de het Testen stap van de Bouwstijl en van de Eenheid worden in werking gesteld die offline, zonder toegang tot om het even welke lopende AEM milieu in werking worden gesteld.
-Er zijn drie soorten tests die in deze context worden uitgevoerd:
-* Door de klant geschreven tests
-* Met Adobe geschreven tests
+
+Er zijn drie brede testcategorieën die worden ondersteund door Cloud Manager for Cloud Services Pipeline:
+
+1. [Testen van de codekwaliteit](#code-quality-testing)
+1. [Functionele tests](#functional-testing)
+1. [Testen van content-controle](#content-audit-testing)
+
+Deze tests kunnen:
+
+* Door de klant geschreven
+* met Adobe geschreven
 * Open source tool powered by Lighthouse from Google
 
    >[!NOTE]
@@ -82,7 +90,31 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >
 >Het is weliswaar aan te raden de `@SuppressWarnings` annotatie zo specifiek mogelijk te maken, d.w.z. alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, aan te brengen, maar het is wel mogelijk om een annotatie op klasseniveau te maken.
 
-## Functionele tests schrijven {#writing-functional-tests}
+## Functionele tests {#functional-testing}
+
+Functionele tests worden gecategoriseerd in twee typen:
+
+* Functioneel testen van producten
+* Aangepaste functionele tests
+
+### Functioneel testen van producten {#product-functional-testing}
+
+De Functionele Tests van het product zijn een reeks stabiele de integratietests van HTTP (ITs) rond ontwerp, replicatie, die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het kernfunctionaliteit in AEM breekt.
+Ze worden automatisch uitgevoerd wanneer een klant nieuwe code implementeert in Cloud Manager.
+
+De teststap Functioneel product in de pijplijn is altijd aanwezig en kan niet worden overgeslagen. Deze stap wordt momenteel uitgevoerd direct na de implementatie van het werkgebied.
+
+### Aangepaste functionele tests {#custom-functional-testing}
+
+De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
+
+Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.
+
+>[!NOTE]
+>Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
+
+
+#### Functionele tests schrijven {#writing-functional-tests}
 
 Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden geïmplementeerd op AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
 
@@ -124,15 +156,6 @@ In dit JAR-bestand moeten de klassenamen van de eigenlijke tests die uitgevoerd 
 Een klasse met de naam `com.myco.tests.aem.ExampleIT` zou bijvoorbeeld worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.ExampleTest` niet.
 
 De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Raadpleeg [Git Link](https://github.com/adobe/aem-testing-clients) voor meer informatie.
-
-## Aangepaste functionele tests {#custom-functional-test}
-
-De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
-
-Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard. Deze stap wordt onmiddellijk na de implementatie van het werkgebied uitgevoerd.
-
->[!NOTE]
->Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Logboeken](/help/implementing/cloud-manager/manage-logs.md) openen en beheren voor meer informatie.
 
 ## Testen van content-controle {#content-audit-testing}
 
