@@ -4,9 +4,9 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4274'
+source-wordcount: '4290'
 ht-degree: 11%
 
 ---
@@ -14,16 +14,16 @@ ht-degree: 11%
 
 # Elementen beheren {#manage-assets}
 
-In dit artikel wordt beschreven hoe u elementen beheert en bewerkt in Adobe Experience Manager Assets. Zie Elementen van [inhoudsfragmenten](content-fragments/content-fragments.md) voor het beheren van Content Fragments.
+In dit artikel wordt beschreven hoe u elementen in Adobe Experience Manager Assets kunt beheren en bewerken. Zie Elementen van [inhoudsfragmenten](content-fragments/content-fragments.md) voor het beheren van Content Fragments.
 
 ## Mappen maken {#creating-folders}
 
-Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM-elementen hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
 
 >[!NOTE]
 >
->* Het delen van een map met middelen van dit type `sling:OrderedFolder`wordt niet ondersteund bij het delen naar de marketingcloud. Als u een map wilt delen, selecteert u deze niet [!UICONTROL Ordered] wanneer u een map maakt.
->* Met Experience Manager kunt u geen `subassets` woord als naam voor een map gebruiken. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
+>* Het delen van een map Middelen van het type `sling:OrderedFolder`wordt niet ondersteund bij het delen naar de Marketing Cloud. Als u een map wilt delen, selecteert u deze niet [!UICONTROL Ordered] wanneer u een map maakt.
+>* Experience Manager staat het gebruik van `subassets` woord als naam van een map niet toe. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
 
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken. In the menu, click **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
@@ -47,7 +47,16 @@ Als een DAM-gebruiker een of meer middelen uploadt die al in de opslagplaats aan
 
 ![Detecteren van dubbele OSGi-configuratie](assets/duplicate-detection.png)
 
-Zodra toegelaten, verzendt de Manager van de Ervaring berichten van dubbele activa naar inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
+U kunt het configuratiebestand toevoegen `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in aangepaste code en het bestand kan het volgende bevatten:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
+
+Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
 
 ![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
 
@@ -101,6 +110,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
    * Aantal keer dat het element is weergegeven of gedownload
    * Kanalen/apparaten waardoor het middel werd gebruikt
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt
+
    Zie [Asset Insights](assets-insights.md)voor meer informatie.
 
 1. Tik of klik op **[!UICONTROL Save & Close]**.
@@ -129,7 +139,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Als u een element op dezelfde locatie kopieert, genereert AEM automatisch een variatie in de naam. Als u bijvoorbeeld een element met de naam kopieert `Square`, genereert AEM automatisch de titel voor de kopie als `Square1`titel.
+   >Als u een element op dezelfde locatie kopieert, AEM automatisch een variatie van de naam. Als u bijvoorbeeld een element met de naam kopieert `Square`, wordt de titel voor de kopie automatisch als `Square1`titel gegenereerd.
 
 1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. Elementen worden naar deze locatie gekopieerd.
 
@@ -172,6 +182,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    * Tik/klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
 
    * Tik/klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
+
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
 
 ### Uitvoeringen beheren {#managing-renditions}
@@ -192,7 +203,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >In AEM Assets wordt standaard de oorspronkelijke uitvoering van het element niet weergegeven in de voorvertoningsmodus. Als beheerder kunt u overlays gebruiken om AEM-elementen te configureren voor de weergave van originele uitvoeringen in de voorvertoningsmodus.
+   >Standaard geeft AEM Assets de oorspronkelijke uitvoering van het element niet weer in de voorvertoningsmodus. Beheerders kunnen met overlays AEM Assets configureren voor het weergeven van originele uitvoeringen in de voorvertoningsmodus.
 
 1. Selecteer een vertoning om de vertoning weer te geven of te verwijderen.
 
@@ -212,7 +223,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Opties zoals het pictogram Uitvoering uploaden worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
-   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning in AEM-elementen weergegeven met de exacte of dichtstbijzijnde afmetingen.
+   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, geeft AEM Assets de vertoning weer met de exacte of dichtstbijzijnde afmetingen.
 
    Als u weergaveafmetingen van een afbeelding op het niveau van de assetdetails wilt configureren, overlapt u het knooppunt `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) en configureert u de waarde van de breedte-eigenschap. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap `preferOriginal` de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
@@ -245,6 +256,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
       * Als het element geen verwijzingen bevat, wordt het element verwijderd.
       * Als het element verwijzingen bevat, wordt u via een foutbericht geïnformeerd dat naar **een of meer elementen wordt verwezen.** U kunt selecteren **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
+
    >[!NOTE]
    >
    >U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwijderen. Als u alleen over wijzigingsmachtigingen beschikt, kunt u alleen de metagegevens van de elementen bewerken en annotaties toevoegen aan het element. U kunt het element of de metagegevens echter niet verwijderen.
@@ -304,13 +316,14 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Cancel]** om de handeling te stoppen
    * **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
+
    >[!NOTE]
    >
    >Wanneer u de publicatie van een complex element ongedaan maakt, maakt u alleen het element bekend. Maak de publicatie van de referenties niet ongedaan omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
-Een gesloten gebruikersgroep (CUG) wordt gebruikt om toegang tot specifieke activaomslagen te beperken die van AEM worden gepubliceerd. Als u een CUG maakt voor een map, is de toegang tot de map (inclusief mapelementen en submappen) beperkt tot alleen toegewezen leden of groepen. Om tot de omslag toegang te hebben, moeten zij login gebruikend hun veiligheidsgeloofsbrieven.
+Een gesloten gebruikersgroep (CUG) wordt gebruikt om toegang tot specifieke middelomslagen te beperken die van AEM worden gepubliceerd. Als u een CUG maakt voor een map, is de toegang tot de map (inclusief mapelementen en submappen) beperkt tot alleen toegewezen leden of groepen. Om tot de omslag toegang te hebben, moeten zij login gebruikend hun veiligheidsgeloofsbrieven.
 
 CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U kunt ook een aanmeldingspagina voor de map configureren.
 
@@ -325,7 +338,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
    >[!NOTE]
    >
-   >Als u het pad naar een aanmeldingspagina niet opgeeft, geeft AEM de standaardaanmeldingspagina weer in de publicatie-instantie.
+   >Als u het pad naar een aanmeldingspagina niet opgeeft, wordt AEM de standaardaanmeldingspagina weergegeven in de publicatie-instantie.
 
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
 1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat AEM u heeft geverifieerd.
@@ -345,7 +358,7 @@ De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. V
 
 ## Afbeeldingen bewerken {#editing-images}
 
-Met de bewerkingsgereedschappen in de interface AEM Assets kunt u kleine bewerkingstaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
+Met de bewerkingsgereedschappen in de AEM Assets-interface kunt u kleine bewerktaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
 
 >[!NOTE]
 >
@@ -356,6 +369,7 @@ Met de bewerkingsgereedschappen in de interface AEM Assets kunt u kleine bewerki
    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
    * Tik/klik op het **[!UICONTROL Edit]** pictogram dat op een element in de kaartweergave wordt weergegeven.
    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Tik of klik op het pictogram **Uitsnijden** om de afbeelding uit te snijden.
@@ -426,6 +440,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    * [Snelle acties](#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
@@ -451,7 +466,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
    >U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
 1. Tik/klik **[!UICONTROL Close]** om de annotatiemodus te verlaten.
-1. Meld u bij AEM Assets aan met de gegevens van Aaron MacDonald en klik op het **[!UICONTROL Notifications]** pictogram om het bericht weer te geven.
+1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en klik op het **[!UICONTROL Notifications]** pictogram om het bericht weer te geven.
 
    >[!NOTE]
    >
@@ -533,7 +548,7 @@ Tik op het pictogram of klik op het pictogram en volg de instructies in de wizar
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het bestand **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
@@ -545,9 +560,9 @@ Hieronder vindt u scenario&#39;s waarin u versies maakt:
 
 * U wijzigt een afbeelding in een andere toepassing en uploadt deze naar AEM Assets. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
 * U bewerkt de metagegevens van een element.
-* Met de AEM-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
+* U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 Met de versiefunctionaliteit kunt u het volgende doen:
 
