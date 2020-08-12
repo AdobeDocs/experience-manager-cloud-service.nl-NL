@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >Het is weliswaar aan te raden de `@SuppressWarnings` annotatie zo specifiek mogelijk te maken, d.w.z. alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, aan te brengen, maar het is wel mogelijk om een annotatie op klasseniveau te maken.
 
 >[!NOTE]
->Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Verwijs naar het Overzicht van de [Veiligheid voor AEM als Cloud Service](/help/security/cloud-service-security-overview.md) voor meer details.
+>Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Verwijs naar het Overzicht van de [Veiligheid voor AEM als Cloud Service](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
 
 ## Functionele tests {#functional-testing}
 
@@ -104,7 +104,9 @@ Functionele tests worden gecategoriseerd in twee typen:
 
 De Functionele Tests van het product zijn een reeks stabiele HTTP integratietests (ITs) rond kernfunctionaliteit in AEM (bijvoorbeeld, creatie en replicatie) die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het deze kernfunctionaliteit breekt.
 
-Functionele tests voor producten worden automatisch uitgevoerd wanneer een klant nieuwe code implementeert in Cloud Manager.
+Functionele tests van het product worden automatisch uitgevoerd wanneer een klant nieuwe code naar Cloud Manager implementeert en kunnen niet worden overgeslagen.
+
+Zie Functionele [producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) voor steekproeftests.
 
 ### Aangepaste functionele tests {#custom-functional-testing}
 
