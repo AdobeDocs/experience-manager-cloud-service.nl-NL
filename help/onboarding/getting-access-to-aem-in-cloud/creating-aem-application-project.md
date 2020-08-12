@@ -2,9 +2,9 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1472'
 ht-degree: 9%
 
 ---
@@ -374,3 +374,12 @@ Met de insteekmodule voor het verpakken van inhoud is deze vergelijkbaar:
             </configuration>
         </plugin>
 ```
+
+## Aanvullende bronnen {#additional-resources}
+
+Raadpleeg de volgende secties voor meer informatie over het gebruik van Cloud Manager in Cloud Service:
+
+* [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
+* [Vorm uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md)
+* [Uw code implementeren](/help/implementing/cloud-manager/deploy-code.md)
+* [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
