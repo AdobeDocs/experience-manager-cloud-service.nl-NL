@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 98%
+source-wordcount: '1856'
+ht-degree: 97%
 
 ---
 
@@ -116,11 +116,11 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* De AEM-omgevingen binnen deze programma&#39;s maken en beheren.
+* Nieuwe programma&#39;s maken en beheren. Raadpleeg voor meer informatie de opties [Programma&#39;s en Programmatypen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) .
 
-* De AEM-omgevingen binnen deze programma&#39;s maken en beheren.
+* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md) beheren voor meer informatie.
 
-* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving.
+* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Verwijs naar het [Vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) voor meer details.
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
