@@ -2,9 +2,9 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ Zodra u uw **Pipeline** (opslagplaats, omgeving en testomgeving) hebt geconfigur
    De **Fase-implementatie** omvat de volgende stappen:
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
-   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Creeer een Project](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) van de Toepassing van de AEM voor details op het bouwstijlmilieu.
-   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [De testresultaten](/help/implementing/developing/introduction/understand-test-results.md) begrijpen voor meer informatie over het testproces.
+   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) voor meer informatie over de ontwikkelomgeving.
+   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteit testen](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
 
