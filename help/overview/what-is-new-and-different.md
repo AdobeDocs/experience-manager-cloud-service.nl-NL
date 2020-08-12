@@ -1,11 +1,11 @@
 ---
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: ht
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
-source-wordcount: '1809'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+workflow-type: tm+mt
+source-wordcount: '1834'
+ht-degree: 98%
 
 ---
 
@@ -116,7 +116,7 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren.
+* De AEM-omgevingen binnen deze programma&#39;s maken en beheren.
 
 * De AEM-omgevingen binnen deze programma&#39;s maken en beheren.
 
@@ -132,7 +132,10 @@ Cloud Manager kan omgevingen maken in drie geografische regio&#39;s (meer regio&
 
 * APAC (Australië)
 
-## On-boarding {#onboarding}
+>[!NOTE]
+>Raadpleeg [Toegang tot Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) om als Cloud Service aan de slag te gaan met Cloud Manager in AEM.
+
+## Onboarding {#onboarding}
 
 >[!NOTE]
 >
