@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.6.0
+title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.6.0 is 4 j
 
 ## Nieuwe functies in AEM Sites {#aem-sites}
 
-Volg deze sectie om over wat nieuw en de updates voor AEM Sites in AEM als Versie van de Cloud Service 2020.6.0 is te leren.
+Volg deze sectie om te leren over wat nieuw is en de updates voor AEM Sites in AEM als Versie van de Cloud Service 2020.6.0.
 
 ### What&#39;s New {#whats-new-2020.6.0}
 
-Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites zoals:
+Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
 * Integratie tussen de Gegevenslaag [van de Cliënt van](https://github.com/adobe/adobe-client-data-layer) Adobe en de Componenten van de Kern
 * Configureerbare HTML-id-kenmerken voor alle componenten
@@ -114,7 +114,7 @@ Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen 3D-bestanden nu opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met toevoeging van [!DNL Dynamic Media], kunt u 3D ervaringen vormen en leveren gebruikend agnostische URLs of kijkers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met toevoeging van [!DNL Dynamic Media], kunt u 3D ervaringen vormen en leveren gebruikend agnostische URLs of kijkers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe Asset Link-ondersteuning voor Adobe XD**
 
@@ -190,4 +190,4 @@ Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volg
 * Als bij het downloaden van middelen de optie E-mail is geselecteerd en zelfs als een geldige e-mailadres is opgegeven, is de optie Downloaden niet beschikbaar. (CQ-4296535)
 * Aangepaste filters die zijn opgeslagen als slimme verzamelingen, worden niet correct toegepast op elementen. (CQ-4294942)
 * De veelvoudige onderzoek en indexerende verhogingen en insectenmoeilijke situaties om prestaties te verbeteren. (CQ-4286373)
-* Mapeigenschappen geven een interne serverfout van 500 weer. (CQ-4295701)
+* Het tabblad Eigenschappen van map kan niet worden geopend in Middelen en retourneert een fout van 500. (CQ-4295701)
