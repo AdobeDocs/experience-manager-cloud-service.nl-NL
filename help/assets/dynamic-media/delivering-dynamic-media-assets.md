@@ -2,9 +2,9 @@
 title: Dynamische media-elementen leveren
 description: Leer hoe u dynamische media-elementen kunt leveren
 translation-type: tm+mt
-source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
+source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,6 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 * [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Geoptimaliseerde afbeeldingen voor een responsieve site leveren](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Levering van inhoud](/help/assets/dynamic-media/http2faq.md)
-* [Het ongeldig maken van uw CDN geheime voorgeheugen door middel van Dynamische Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Het ongeldig maken van uw CDN geheime voorgeheugen door middel van Dynamische Klassieke Media](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Regels gebruiken om URL&#39;s te transformeren](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
