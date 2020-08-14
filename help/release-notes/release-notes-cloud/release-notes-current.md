@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.8.0 {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
+
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+
+* De nieuwe [!DNL Experience Manager Assets] plaatsingen worden geïntegreerd met [!DNL Adobe Developer Console] door gebrek. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, [vormen de beheerders slimme markeringen integratie](/help/assets/smart-tags-configuration.md#aio-integration) zoals voordien.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
