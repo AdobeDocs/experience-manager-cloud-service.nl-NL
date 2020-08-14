@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 5%
+source-wordcount: '668'
+ht-degree: 4%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 5%
 
 AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
 
-AEM beheerde CDN zal aan de prestaties en veiligheidsvereisten van de meeste klant voldoen. De klanten kunnen naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
+De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de meeste klant voldoen. Voor publiceer rij, kunnen de klanten naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
 
-## Door AEM beheerde CDN  {#aem-managed-cdn}
+## AEM beheerde CDN  {#aem-managed-cdn}
 
-Voer de volgende handelingen uit om de levering van inhoud voor te bereiden met CDN van Adobe buiten de doos:
+Volg deze om inhoudslevering voor te bereiden door Adobe uit-van-de-doos CDN te gebruiken:
 
-1. Geef het ondertekende SSL-certificaat en de geheime sleutel aan Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
+1. Geef het ondertekende SSL-certificaat en de geheime sleutel op voor Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
    **Opmerking:** Aem als Cloud Service ondersteunt geen domein-gevalideerde (DV) certificaten.
 1. Klantenondersteuning informeren:
    * welk aangepast domein moet worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
-   * als om het even welk IP toegestaan is nodig om verkeer tot een bepaalde milieu te beperken.
+   * als om het even welke IP toevoegend op lijst van gewenste personen nodig is om verkeer tot een bepaalde milieu te beperken.
 1. Coördineer met klantensteun over timing van de noodzakelijke veranderingen in de DNS verslagen. De instructies zijn verschillend op basis van of een apex-record nodig is:
    * als een apex-record niet nodig is, moeten klanten het CNAME DNS-record zo instellen dat deze zijn FQDN aanwijst op `cdn.adobeaemcloud.com`.
    * als een apex-record nodig is, maakt u een A-record die verwijst naar de volgende IP&#39;s: 151.101.3.10, 15.101.67.10, 15.10.131.10, 15.10.195.10. Klanten hebben een apex-record nodig als de gewenste FQDN overeenkomt met de DNS-zone. Dit kan worden getest door het Unix gravingsbevel te gebruiken om te zien of past de waarde SOA van de output het domein aan. De opdracht `dig anything.dev.adobeaemcloud.com` retourneert bijvoorbeeld een SOA (Start of Authority, d.w.z. de zone) van `dev.adobeaemcloud.com` zodat het geen APEX-record is, terwijl een SOA wordt `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` geretourneerd, zodat het een apex-record is.
@@ -32,11 +32,11 @@ Voer de volgende handelingen uit om de levering van inhoud voor te bereiden met 
 
 **Beperking van het verkeer**
 
-Standaard kan voor een CDN-installatie onder beheer van Adobe, al het openbaar verkeer zijn weg maken naar de publicatieservice, voor zowel productie- als niet-productie (ontwikkeling en stadium)-omgevingen. Als u verkeer aan de publicatiedienst voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) zou u met klantensteun moeten werken om deze beperkingen te vormen.
+Door gebrek, voor een Adobe Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatiedienst voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) zou u met klantensteun moeten werken om deze beperkingen te vormen.
 
-## CDN van klant wijst naar door AEM beheerde CDN {#point-to-point-CDN}
+## CDN van de klant wijst naar AEM Beheerde CDN {#point-to-point-CDN}
 
-Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het leiden en het richten aan beheerde CDN van Adobe, op voorwaarde dat het volgende wordt voldaan:
+Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan Adobe beheerde CDN, op voorwaarde dat wordt voldaan aan het volgende:
 
 * De klant moet een bestaande CDN hebben die bezwaarlijk zou zijn om te vervangen.
 * De klant moet het beheren.
@@ -47,10 +47,12 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het leiden en het ri
 Configuratieinstructies:
 
 1. Stel de `X-Forwarded-Host` koptekst in met de domeinnaam.
-1. Stel de Hostkop in met het oorspronkelijke domein. Dit is de invoer van de CDN van Adobe. De waarde moet afkomstig zijn van Adobe.
+1. Plaats de kopbal van de Gastheer domein, dat de ingang van Adobe CDN is. De waarde moet van Adobe komen.
 1. Verzend de kopbal SNI naar de oorsprong. Net als de Hostkop moet de sni-header het oorspronkelijke domein zijn.
-1. Plaats `X-Edge-Key`, die nodig is om verkeer aan de servers van AEM correct te leiden. De waarde moet afkomstig zijn van Adobe.
+1. Plaats `X-Edge-Key`, die nodig is om verkeer aan de servers van de AEM correct te leiden. De waarde moet van Adobe komen.
 
-Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer van begin tot eind het verpletteren correct functioneert.
+Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
 
-Merk op dat er potentieel een kleine prestatieshit toe te schrijven aan de extra hop is, hoewel de hop van klant CDN aan beheerde CDN van Adobe waarschijnlijk efficiënt zal zijn.
+Er is een kleine prestatiesklap toe te schrijven aan de extra hop, hoewel de hop klant CDN aan een beheerde Adobe CDN waarschijnlijk efficiënt zal zijn.
+
+Merk op dat deze klantCDN configuratie voor publiceert rij, maar niet vóór de auteursrij wordt gesteund.
