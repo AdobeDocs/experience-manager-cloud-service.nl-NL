@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 * Configuraties worden nu opgeslagen in `/conf` plaats `/etc/cloudsettings` in de opslagplaats van de Experience Manager.
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
-### What&#39;s New {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen Experience Manager configureren om aangepaste toepassingen aan te roepen die zijn gemaakt met de [!DNL Asset Compute Service]. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanetoepassingen tot stand te brengen die aan complexe gebruiksgevallen behandelen. Deze webservice kan miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit in de bestandsindelingen Adobe, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en een element uitvoeren via alle beschikbare Sensei-services. Zie [Elementmicroservices en verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md)gebruiken.
+* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen configureren [!DNL Experience Manager] om aangepaste toepassingen aan te roepen die met de [!DNL Asset Compute Service]toepassing zijn gemaakt. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanetoepassingen tot stand te brengen die aan complexe gebruiksgevallen behandelen. Met deze webservice kunt u miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit renderen in de bestandsindelingen Adobe, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en middelen uitvoeren via alle beschikbare [!DNL Sensei] services. zie [gebruik van asset microservices en verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
 
 * De aanvankelijke configuratie van [!DNL Dynamic Media] binnen [!DNL Experience Manager] als Cloud Service wordt verbeterd om robuuster te zijn. Het verstrekt nu vooruitgang van de processen aan de beheerders.
 
@@ -42,7 +42,13 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 * De stappen van het werkschema die niet compatibel met een plaatsing van de Cloud Service zijn nu duidelijk met een waarschuwing in de [!UICONTROL workflow model] redacteur. Bovendien, wanneer het uitvoeren van de bestaande werkschema&#39;s op het milieu van de Cloud Service, worden de incompatibele werkschemasstappen overgeslagen.
 
-* De modellen van het werkschema die door klanten worden gecreeerd die aan `/conf/global` in het project van Git verbonden aan het milieu in de Manager van de Wolk worden opgesteld worden automatisch opgesteld aan `/var` en zo beschikbaar in Experience Manager. De modellen van het productwerkschema onder `/libs` die door klant werden veranderd worden niet automatisch opgesteld aan `/var`.
+* De modellen van het werkschema die door klanten worden gecreeerd die aan `/conf/global` in het project van de Git verbonden aan het milieu in [!DNL Cloud Manager] worden opgesteld worden automatisch opgesteld aan `/var` en zo beschikbaar in [!DNL Experience Manager]. De modellen van het productwerkschema onder `/libs` die door klant werden veranderd worden niet automatisch opgesteld aan `/var`.
+
+### Buizen gecorrigeerd {#assets-bugs-fixed}
+
+* De wizard Element verplaatsen wordt niet naar behoren geladen voor de elementen die in Verzamelingen zijn opgenomen. (CQ-4296756)
+* De waarden van `dam:size` en `dam:sha1` zijn uitgesloten van XMP terugschrijven. (CQ-4237355)
+* Wanneer het unpublishing van activa in bulk, een fout [!DNL Brand Portal] veroorzaakt die erop wijst dat het verzoek URI te lang is. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
