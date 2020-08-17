@@ -2,9 +2,9 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
+source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1549'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,9 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 ### Java 11-ondersteuning gebruiken {#using-java-support}
 
-Cloud Manager ondersteunt nu het maken van klantprojecten met zowel Java 8 als Java 11. Standaard worden projecten gemaakt met behulp van Java 8. Klanten die Java 11 in hun projecten willen gebruiken, kunnen dit doen gebruikend de Geweven Insteekmodule Toolketens.
+Cloud Manager ondersteunt nu het maken van klantprojecten met zowel Java 8 als Java 11. Standaard worden projecten gemaakt met behulp van Java 8.
+
+Klanten die Java 11 in hun projecten willen gebruiken, kunnen dit doen gebruikend de Insteekmodule [van Toolketens](https://maven.apache.org/plugins/maven-toolchains-plugin/)Apache Maven.
 
 Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt uitziet:
 
@@ -107,6 +109,7 @@ Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt
 
 >[!NOTE]
 >Ondersteunde leverancierswaarden zijn `oracle` en `sun`.
+>
 >Ondersteunde versiewaarden zijn `1.8`, `1.11`en `11`.
 
 ## Omgevingsvariabelen {#environment-variables}
