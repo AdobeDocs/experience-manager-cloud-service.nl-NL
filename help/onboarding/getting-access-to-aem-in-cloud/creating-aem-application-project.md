@@ -2,9 +2,9 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1543'
 ht-degree: 9%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## Het gebruiken van Tovenaar om een Project van de AEMToepassing te creëren {#using-wizard-to-create-an-aem-application-project}
 
-Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud Manager:
@@ -59,6 +59,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 18.04.
 * Apache Maven 3.6.0 is geïnstalleerd.
+* De geïnstalleerde Java-versies zijn Oracle JDK 8u202 en 11.0.2.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn:
 
    * bzip2
@@ -75,6 +76,38 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 >[!NOTE]
 >Hoewel in Cloud Manager geen specifieke versie van de versie wordt gedefinieerd, moet de gebruikte versie minstens `jacoco-maven-plugin``0.7.5.201505241946`zijn.
 
+### Java 11-ondersteuning gebruiken {#using-java-support}
+
+Cloud Manager ondersteunt nu het maken van klantprojecten met zowel Java 8 als Java 11. Standaard worden projecten gemaakt met behulp van Java 8. Klanten die Java 11 in hun projecten willen gebruiken, kunnen dit doen gebruikend de Geweven Insteekmodule Toolketens.
+
+Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt uitziet:
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>Ondersteunde leverancierswaarden zijn `oracle` en `sun`.
+>Ondersteunde versiewaarden zijn `1.8`, `1.11`en `11`.
 
 ## Omgevingsvariabelen {#environment-variables}
 
