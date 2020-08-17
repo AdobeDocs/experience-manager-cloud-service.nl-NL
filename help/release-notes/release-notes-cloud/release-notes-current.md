@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '516'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,6 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * Gesamberde omgevingen kunnen worden gedehiberneerd op de pagina **Overzicht** van Cloud Manager.
 
-* Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
-
-* De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
-Raadpleeg Ondersteuning [van Java 11](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) gebruiken voor meer informatie.
 
 ### Bug Fixes {#bug-fixes-cm}
 
