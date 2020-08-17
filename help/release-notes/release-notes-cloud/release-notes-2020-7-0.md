@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1014'
 ht-degree: 2%
 
 ---
@@ -84,6 +84,11 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 * De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
 
    Raadpleeg [Pipetvariabelen](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) voor meer informatie.
+
+* Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
+
+* De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
+Raadpleeg Ondersteuning [van Java 11](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) gebruiken voor meer informatie.
 
 ### Bug Fixes {#bug-fixes-cm}
 
