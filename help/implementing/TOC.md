@@ -3,10 +3,10 @@ sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 99%
+source-wordcount: '246'
+ht-degree: 96%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 99%
    + [Omgevingen beheren](cloud-manager/manage-environments.md)
    + [CI/CD-pipeline configureren](cloud-manager/configure-pipeline.md)
    + [Uw code implementeren](cloud-manager/deploy-code.md)
+   + Inzicht in de testresultaten {#test-results}
+      + [Overzicht](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
+      + [Testen van content-controle](/help/implementing/cloud-manager/content-audit-testing.md)
    + [Inzicht in aangepaste regels voor codekwaliteit](cloud-manager/custom-code-quality-rules.md)
    + [Logbestanden openen en beheren](cloud-manager/manage-logs.md)
    + [Inzicht in meldingen](cloud-manager/notifications.md)
@@ -37,7 +42,6 @@ ht-degree: 99%
    + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Logboekregistratie](developing/introduction/logging.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
    + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
