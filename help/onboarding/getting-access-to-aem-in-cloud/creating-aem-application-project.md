@@ -2,7 +2,7 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 9%
@@ -418,4 +418,4 @@ Raadpleeg de volgende secties voor meer informatie over het gebruik van Cloud Ma
 * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
 * [Vorm uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md)
 * [Uw code implementeren](/help/implementing/cloud-manager/deploy-code.md)
-* [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
+* [Inzicht in de testresultaten](/help/implementing/cloud-manager/overview-test-results.md)
