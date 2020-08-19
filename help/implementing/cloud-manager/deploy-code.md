@@ -2,7 +2,7 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
    * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) voor meer informatie over de ontwikkelomgeving.
-   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteit testen](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) voor meer informatie over het testproces.
+   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteit testen](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    Voor het **testen van de fase** worden de volgende stappen uitgevoerd:
 
    * Functioneel testen van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen.
-Raadpleeg Functionele tests voor [producten](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) voor meer informatie.
+Raadpleeg Functionele tests voor [producten](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer informatie.
 
    * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
-      Raadpleeg [Aangepaste functionele tests](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) voor meer informatie.
+      Raadpleeg [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer informatie.
 
    * Controle van inhoud: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de inhoudcontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
-Raadpleeg de resultaten [van](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) Content Audit voor meer informatie.
+Raadpleeg de resultaten [van](/help/implementing/cloud-manager/content-audit-testing.md) Content Audit voor meer informatie.
 
       ![](assets/testing-tab.png)
 
