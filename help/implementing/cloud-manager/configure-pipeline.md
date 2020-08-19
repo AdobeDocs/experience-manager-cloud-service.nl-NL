@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    >[!NOTE]
    > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
 
-   Raadpleeg [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) voor meer informatie.
+   Raadpleeg [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) voor meer informatie.
 
    Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de inhoud. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
 
