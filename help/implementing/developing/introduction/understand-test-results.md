@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1698'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Deze tests kunnen:
 
 ## Testen van de codekwaliteit {#code-quality-testing}
 
-Als deel van de pijpleiding wordt de broncode gescand om ervoor te zorgen dat de plaatsingen aan bepaalde kwaliteitscriteria voldoen. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. In de volgende tabel wordt de classificatie voor testcriteria samengevat:
+Deze stap evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
+
+Verwijs naar het [Vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) om meer over verschillende types van pijpleidingen te leren.
+
+In het Testen van de Kwaliteit van de Code, wordt de broncode gescand om ervoor te zorgen dat het plaatsingen aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Enkele AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als Regels [van de Kwaliteit van de](/help/implementing/cloud-manager/custom-code-quality-rules.md)Code van de Douane.
+
+De resultaten van deze stap worden geleverd als *Classificatie*. De onderstaande tabel geeft een overzicht van de scores voor verschillende testcriteria:
 
 | Naam | Definitie | Categorie | Drempel voor fout |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Als deel van de pijpleiding wordt de broncode gescand om ervoor te zorgen dat de
 | Compatibiliteit met Cloud Service | Aantal geïdentificeerde kwesties van de Verenigbaarheid van de Cloud Service. | Info | > 0 |
 
 
+U kunt de lijst met regels hier downloaden [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >Zie [Metrische definities](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
 
-U kunt de lijst met regels hier downloaden [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
