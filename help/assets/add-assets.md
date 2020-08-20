@@ -2,15 +2,15 @@
 title: Voeg uw digitale elementen toe aan [!DNL Adobe Experience Manager].
 description: Voeg uw digitale elementen toe [!DNL Adobe Experience Manager] aan een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
 
 
-# Digitale elementen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
+# Digitale middelen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden, zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden, van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets].
 
@@ -110,7 +110,7 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 >
 >Wanneer u **[!UICONTROL Replace]** in het [!UICONTROL Name Conflict] dialoogvenster selecteert, wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
 >
->Als Asset Insights is ingeschakeld voor het bijhouden van indrukkingen/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
+>Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de vastgelegde gegevens voor het element op Analytics ongeldig.
 
 Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u **[!UICONTROL Keep]**. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
 
@@ -118,7 +118,7 @@ Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u **[!UICO
 
 [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -154,14 +154,14 @@ De volgende profielen zijn beschikbaar:
 * [Met metagegevensprofielen](metadata-profiles.md) kunt u standaardeigenschappen voor metagegevens toepassen op elementen die naar die map zijn geüpload
 * [Met verwerkingsprofielen](asset-microservices-configure-and-use.md) kunt u meer uitvoeringen genereren dan standaard mogelijk is.
 
-Als Dynamic Media ook in uw omgeving zijn ingeschakeld:
+Als Dynamische media ook in uw omgeving is ingeschakeld:
 
-* [Met de afbeeldingsprofielen](dynamic-media/image-profiles.md)**[!UICONTROL Smart Cropping]** Dynamic Media kunt u specifieke uitsnijdconfiguratie (en pixeluitsnijding) en verscherpingsconfiguratie toepassen op de geüploade .
-* [Met videoprofielen](dynamic-media/video-profiles.md) voor Dynamic Media kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
+* [Met dynamische mediaafbeeldingsprofielen](dynamic-media/image-profiles.md)**[!UICONTROL Smart Cropping]** kunt u specifieke uitsnijdconfiguratie (en pixeluitsnijding) en verscherpingsconfiguratie toepassen op de geüploade elementen.
+* [Met dynamische mediavideoprofielen](dynamic-media/video-profiles.md) kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
 
 >[!NOTE]
 >
->Dynamic Media bijsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters voor bijsnijden of mediatransformatie bieden die moeten worden uitgevoerd wanneer de elementen worden geleverd
+>Dynamische uitsnijdingen van media en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de **[!UICONTROL Processing Profile]** kolom.
 
