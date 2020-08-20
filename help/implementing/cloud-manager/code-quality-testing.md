@@ -2,10 +2,10 @@
 title: Codekwaliteitstests - Cloud Services
 description: Codekwaliteitstests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 2%
+source-wordcount: '829'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +16,26 @@ Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassing
 
 Verwijs naar het [Vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) om meer over verschillende types van pijpleidingen te leren.
 
-## Inzicht in aangepaste regels voor codekwaliteit {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 Bij het testen van de kwaliteit van de code, wordt de broncode gescand om ervoor te zorgen dat het aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Enkele AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als Regels [van de Kwaliteit van de](/help/implementing/cloud-manager/custom-code-quality-rules.md)Code van de Douane.
 
 >[!NOTE]
 >U kunt de volledige lijst met regels [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)downloaden.
 
-De resultaten van deze stap worden geleverd als *Classificatie*. In de volgende tabel wordt de classificatie voor testcriteria samengevat:
+**Drielagige plaat**
+
+Deze stap voor het testen van de codekwaliteit bevat een structuur met drie niveaus voor de geïdentificeerde problemen:
+
+* **Kritiek**: Dit zijn kwesties die door de poort worden geïdentificeerd en die een directe mislukking van de pijpleiding veroorzaken.
+
+* **Belangrijk**: Dit zijn kwesties die door de poort worden geïdentificeerd die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kunnen of de kwesties met voeten treden, waarin de pijpleiding te werk gaat, of zij kunnen de kwesties goedkeuren, in welk geval de pijpleiding met een mislukking stopt.
+
+* **Info**: Dit zijn kwesties die door de poort worden geïdentificeerd en die uitsluitend ter informatie worden verstrekt en geen invloed hebben op de uitvoering van de pijpleiding
+
+De resultaten van deze stap worden geleverd als *classificaties*.
+
+De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor elk van de categorieën Kritiek, Belangrijk en Informatie:
 
 | Naam | Definitie | Categorie | Drempel voor fout |
 |--- |--- |--- |--- |
