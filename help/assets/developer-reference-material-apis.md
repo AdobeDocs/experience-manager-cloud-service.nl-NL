@@ -1,59 +1,47 @@
 ---
-title: 'Elementen-API''s voor beheer van digitale middelen in Adobe Experience Manager als Cloud Service '
-description: Elementen-API's maken het mogelijk om standaard CRUD-bewerkingen (create-read-update-delete) uit te voeren voor het beheer van elementen, waaronder binaire elementen, metagegevens, uitvoeringen, opmerkingen en inhoudsfragmenten.
+title: Ontwikkelaarsreferenties voor digitaal middelenbeheer [!DNL Adobe Experience Manager] als Cloud Service.
+description: Met de API's van [!DNL Assets] en inhoud van de ontwikkelaarsverwijzing kunt u elementen beheren, waaronder binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1239'
+ht-degree: 1%
 
 ---
 
 
-# Elementen als Cloud Service-API&#39;s {#assets-cloud-service-apis}
+# [!DNL Assets] API&#39;s en referentiemateriaal voor ontwikkelaars {#assets-cloud-service-apis}
 
-<!-- 
-Give a list of and overview of all reference information available.
-* New upload method
-* Javadocs
-* Assets HTTP API documented at [https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html](https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html)
-
--->
+Het artikel bevat referentiemateriaal en bronnen voor ontwikkelaars van [!DNL Assets] als Cloud Service. Het omvat nieuwe uploadmethode, API verwijzing, en informatie over de steun die in postverwerkingswerkschema&#39;s wordt verstrekt.
 
 ## Elementen uploaden {#asset-upload-technical}
 
-Experience Manager als cloudservice biedt een nieuwe manier om elementen naar de opslagplaats te uploaden - directe binaire upload naar binaire cloudopslag. Dit gedeelte geeft een technisch overzicht.
+[!DNL Experience Manager] als Cloud Service een nieuwe methode biedt om elementen te uploaden naar de repository. Gebruikers kunnen de elementen rechtstreeks uploaden naar de cloudopslag met HTTP API. De stappen voor het uploaden van een binair bestand zijn:
 
-### Overzicht van directe binaire upload {#overview-binary-upload}
-
-Het algoritme op hoog niveau om een binair getal te uploaden is:
-
-1. Verzend een HTTP-aanvraag om AEM te informeren over de intentie om een nieuw binair getal te uploaden.
-1. POST de inhoud van binair aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
-1. Verzend een HTTP- verzoek om de server mee te delen dat de inhoud van binair getal met succes werd geupload.
+1. [Verzend een HTTP-aanvraag](#initiate-upload). Het informeert [!DNL Experience Manage]of plaatsing van uw intent om een nieuw binair getal te uploaden.
+1. [POST de inhoud van binair](#upload-binary) aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
+1. [Verzend een HTTP- verzoek](#complete-upload) om de server mee te delen dat de inhoud van binair getal met succes werd geupload.
 
 ![Overzicht van het directe binaire upload protocol](assets/add-assets-technical.png)
 
-Belangrijke verschillen ten opzichte van eerdere versies van AEM zijn:
+Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrijfsmiddelen. De verschillen ten opzichte van [!DNL Experience Manager] 6,5 zijn:
 
-* De binaire getallen gaan niet door AEM, die nu eenvoudig het uploadproces met de binaire wolkenopslag coördineert die voor de plaatsing wordt gevormd
-* Binaire cloudopslag wordt voorafgegaan door een Content Delivery Network (CDN, Edge Network), dat het uploadeindpunt dichter bij de client brengt, waardoor uploadprestaties en gebruikerservaring worden verbeterd, met name voor gedistribueerde teams die middelen uploaden
-
-Deze aanpak moet zorgen voor een schaalbaardere en krachtigere verwerking van geüploade bedrijfsmiddelen.
+* De binaire getallen gaan niet door [!DNL Experience Manager], wat nu eenvoudig het uploadproces met de binaire wolkenopslag coördineert die voor de plaatsing wordt gevormd.
+* Binaire cloudopslag werkt met een Content Delivery Network (CDN) of Edge-netwerk. Een CDN selecteert een uploadeindpunt dat dichter voor een cliënt is. Wanneer de gegevens een kortere afstand aan een nabijgelegen eindpunt reizen, verbeteren de uploadprestaties en de gebruikerservaring, vooral voor geografisch verdeelde teams.
 
 >[!NOTE]
 >
->Als u de clientcode wilt controleren die deze aanpak implementeert, raadpleegt u de open-source [em-upload bibliotheek](https://github.com/adobe/aem-upload)
+>Zie de cliëntcode om deze benadering in open-bron [aem-upload bibliotheek](https://github.com/adobe/aem-upload)uit te voeren.
 
 ### Uploaden starten {#initiate-upload}
 
-De eerste stap bestaat uit het indienen van een aanvraag voor een HTTP-POST bij de map waarin het element moet worden gemaakt of bijgewerkt. Neem de kiezer op `.initiateUpload.json` om aan te geven dat de aanvraag moet beginnen met een binaire upload. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder`. Het verzoek van de POST is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Verzend een HTTP-POST-aanvraag naar de gewenste map. In deze map worden middelen gemaakt of bijgewerkt. Neem de kiezer op `.initiateUpload.json` om aan te geven dat de aanvraag het uploaden van een binair bestand moet starten. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder`. Het verzoek van de POST is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Het inhoudstype van de aanvraaginstantie moet formuliergegevens zijn, die de volgende velden bevatten: `application/x-www-form-urlencoded`
 
-* `(string) fileName`: Vereist. De naam van het element zoals het in de instantie wordt weergegeven.
-* `(number) fileSize`: Vereist. De totale lengte, in bytes, van het binaire getal dat moet worden geüpload.
+* `(string) fileName`: Vereist. De naam van het element waarin het wordt weergegeven [!DNL Experience Manager].
+* `(number) fileSize`: Vereist. De bestandsgrootte, in bytes, van het element dat wordt geüpload.
 
 Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te starten, zolang elk binair getal de vereiste velden bevat. Als dit lukt, reageert de aanvraag met een `201` statuscode en een body die JSON-gegevens in de volgende indeling bevat:
 
@@ -74,11 +62,11 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 }
 ```
 
-* `completeURI` (tekenreeks): Roep deze URI aan wanneer het binaire bestand is geüpload. De URI kan een absolute of relatieve URI zijn en clients moeten beide kunnen afhandelen. De waarde kan dus zijn `"https://author.acme.com/content/dam.completeUpload.json"` of `"/content/dam.completeUpload.json"` Zie het [uploaden](#complete-upload)voltooien.
-* `folderPath` (tekenreeks): Volledig pad naar de map waar het binaire bestand wordt geüpload.
-* `(files)` (array): Een lijst van elementen waarvan lengte en orde de lengte en de orde van de lijst van binaire informatie zal aanpassen die in de in werking stelt verzoek wordt verstrekt.
+* `completeURI` (tekenreeks): Roep deze URI aan wanneer het binaire bestand klaar is met uploaden. De URI kan een absolute of relatieve URI zijn en clients moeten beide kunnen afhandelen. De waarde kan dus zijn `"https://author.acme.com/content/dam.completeUpload.json"` of `"/content/dam.completeUpload.json"` Zie het [uploaden](#complete-upload)voltooien.
+* `folderPath` (tekenreeks): Volledig pad naar de map waarin het binaire bestand is geüpload.
+* `(files)` (array): Een lijst met elementen waarvan de lengte en volgorde overeenkomen met de lengte en volgorde van de lijst met binaire informatie die in het verzoek tot inleiding wordt verstrekt.
 * `fileName` (tekenreeks): De naam van het overeenkomstige binaire getal, zoals opgegeven in het initiërende verzoek. Deze waarde moet in het volledige verzoek worden opgenomen.
-* `mimeType` (tekenreeks): Het mime type van het overeenkomstige binaire getal, zoals die in binnen wordt verstrekt stelt verzoek in werking. Deze waarde moet in het volledige verzoek worden opgenomen.
+* `mimeType` (tekenreeks): Het mime type van het overeenkomstige binaire getal, zoals die in het in werking gestelde verzoek wordt verstrekt. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `uploadToken` (tekenreeks): Een upload token voor het overeenkomstige binaire getal. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `uploadURIs` (array): Een lijst met tekenreeksen waarvan de waarden volledige URI&#39;s zijn waarnaar de inhoud van het binaire bestand moet worden geüpload (zie binair [](#upload-binary)uploaden).
 * `minPartSize` (nummer): De minimale lengte, in bytes, van gegevens die aan om het even welke uploadURIs kunnen worden verstrekt, als er meer dan één URI is.
@@ -86,15 +74,15 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 
 ### Binair bestand uploaden {#upload-binary}
 
-De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als meer dan één URI wordt verstrekt, is het de verantwoordelijkheid van de cliënt om het binaire getal in delen en POST elk deel, in orde, aan elke URI te &quot;verdelen&quot;in orde. Alle URI&#39;s moeten worden gebruikt en elk onderdeel moet groter zijn dan de minimale grootte en kleiner dan de maximale grootte die is opgegeven in het initiëringsantwoord. Die verzoeken zullen door CDN randknopen worden genegeerd om het uploaden van binaire getallen te versnellen.
+De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meer dan één URI is opgegeven, splitst de client het binaire getal in delen en vraagt de POST van elk onderdeel naar elke URI, op volgorde. Alle URI&#39;s gebruiken. Zorg ervoor dat de grootte van elk onderdeel binnen de minimum- en maximumgrootte ligt die in de reactie van de aanvrager zijn opgegeven. Met behulp van CDN-randknooppunten kunt u het opvragen van binaire bestanden versnellen.
 
-Dit kan onder andere worden bereikt door de grootte van de onderdelen te berekenen op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Voorbeeld dat de totale grootte van het binaire getal 20.000 bytes is en het aantal URI&#39;s voor uploaden 2 is:
+Een mogelijke methode hiervoor is het berekenen van de onderdeelgrootte op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Bijvoorbeeld, veronderstel de totale grootte van het binaire getal 20.000 bytes is en het aantal upload URIs 2 is. Voer vervolgens de volgende stappen uit:
 
-* Onderdeelgrootte berekenen door totale grootte te delen door aantal URI&#39;s: 20,000 / 2 = 10,000
-* POST bytewaaier 0-9.999 van binair aan eerste URI in de lijst van upload URIs
-* POST bytewaaier 10.000 - 19.999 van binair aan tweede URI in de lijst van upload URIs
+* Onderdeelgrootte berekenen door totale grootte te delen door aantal URI&#39;s: 20,000 / 2 = 10,000.
+* POST bytewaaier 0-9.999 van binair aan eerste URI in de lijst van upload URIs.
+* POST bytewaaier 10.000 - 19.999 van binair aan tweede URI in de lijst van upload URIs.
 
-Als dit gelukt is, reageert de server op elke aanvraag met een `201` statuscode.
+Als het uploaden is voltooid, reageert de server op elke aanvraag met een `201` statuscode.
 
 ### Uploaden voltooien {#complete-upload}
 
@@ -105,34 +93,34 @@ Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de 
 | `fileName` | Tekenreeks | Vereist | De naam van het element, zoals deze werd verstrekt in de inleidingsgegevens. |
 | `mimeType` | Tekenreeks | Vereist | Het HTTP-inhoudstype van het binaire getal, zoals is opgegeven door de initiatiegegevens. |
 | `uploadToken` | Tekenreeks | Vereist | Upload token voor het binaire bestand, zoals werd opgegeven in de initiatiegegevens. |
-| `createVersion` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam al bestaan, maakt Experience Manager een nieuwe versie van het element. |
+| `createVersion` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam bestaan, [!DNL Experience Manager] maakt u een nieuwe versie van het element. |
 | `versionLabel` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, wordt het label gekoppeld aan de nieuwe versie van een element. |
 | `versionComment` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
-| `replace` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam al bestaan, verwijdert Experience Manager het element en maakt het opnieuw. |
+| `replace` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam bestaat, wordt het element [!DNL Experience Manager] verwijderd en opnieuw gemaakt. |
 
 >!![NOTE]
-Als het element al bestaat en noch `createVersion` `replace` noch is opgegeven, werkt Experience Manager de huidige versie van het element bij met het nieuwe binaire getal.
+Als het element bestaat en noch `createVersion` noch is opgegeven, wordt de huidige versie van het element `replace` [!DNL Experience Manager] bijgewerkt met het nieuwe binaire getal.
 
 Net als bij het initiëringsproces kunnen de volledige aanvraaggegevens informatie voor meer dan één bestand bevatten.
 
-Het uploaden van een binair getal gebeurt pas wanneer de volledige URL voor het bestand wordt aangeroepen. Zelfs als het binaire bestand van een bestand volledig is geüpload, wordt het element pas door de instantie verwerkt nadat het uploadproces is voltooid.
+Het uploaden van een binair getal gebeurt pas wanneer de volledige URL voor het bestand wordt aangeroepen. Een element wordt verwerkt nadat het uploadproces is voltooid. De verwerking wordt niet gestart, zelfs niet als het binaire bestand van het element volledig is geüpload maar het uploadproces niet is voltooid.
 
 Als dit gelukt is, reageert de server met een `200` statuscode.
 
 ### Uploadbibliotheek met open bron {#open-source-upload-library}
 
-Als u meer wilt weten over de uploadalgoritmen of zelf uploadscripts en -gereedschappen wilt maken, biedt Adobe opensource-bibliotheken en -gereedschappen als uitgangspunt:
+Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken:
 
-* [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload)
-* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-source Aem-upload bibliotheek](https://github.com/adobe/aem-upload).
+* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;s voor uploaden ondersteund. De API&#39;s van Adobe Experience Manager 6.5 zijn afgekeurd. De methoden voor het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
+De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Manager] als Cloud Service. De API&#39;s van [!DNL Adobe Experience Manager] 6.5 zijn afgekeurd. De methoden voor het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
 
-* [AEM Assets HTTP API](mac-api-assets.md)
+* [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, zoals `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
@@ -142,15 +130,15 @@ Voor Adobe Experience Manager als Cloud Service worden alleen de nieuwe API&#39;
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-In Experience Manager, is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
+In [!DNL Experience Manager], is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
 Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Klanten die een upgrade naar Experience Manager uitvoeren als Cloud Service van eerdere versies van Experience Manager, kunnen de assetmicroservices gebruiken voor de verwerking van bedrijfsmiddelen. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
+Klanten die een upgrade uitvoeren van eerdere versies van [!DNL Experience Manager] kunnen met behulp van asset-microservices hun middelen verwerken. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
 
-De volgende workflowstappen worden in Experience Manager ondersteund als een Cloud Service.
+[!DNL Experience Manager] als Cloud Service de volgende workflowstappen ondersteunen:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -162,7 +150,7 @@ De volgende workflowstappen worden in Experience Manager ondersteund als een Clo
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar.
+De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar:
 
 * `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
@@ -203,3 +191,7 @@ De volgende technische workflowmodellen worden vervangen door asset microservice
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
+>[!MORELIKETHIS]
+* [De Experience Cloud als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+
