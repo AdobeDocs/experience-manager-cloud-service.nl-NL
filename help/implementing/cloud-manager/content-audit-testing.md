@@ -2,9 +2,9 @@
 title: Testen van contentcontrole - Cloud Services
 description: Testen van contentcontrole - Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Testen van content-controle {#content-audit-testing}
 
-Content Audit is een functie die beschikbaar is in de productiepijplijnen van Cloud Manager voor sites die worden aangedreven door Lighthouse, een opensource-programma van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+Content Audit is een functie die beschikbaar is in Cloud Manager Sites Production pipelines, een opensource tool van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
 
 Het valideert het plaatsingsproces en de hulp zorgt ervoor dat de ingevoerde veranderingen:
 
