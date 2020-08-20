@@ -2,9 +2,9 @@
 title: De testresultaten begrijpen - Cloud Services
 description: Testresultaten begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1695'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Deze tests kunnen:
 
 * Door de klant geschreven
 * met Adobe geschreven
-* Open source tool (aangedreven door Lighthouse van Google)
+* Brongereedschap openen
 
    >[!NOTE]
    > Zowel door de klant geschreven tests als Adobe geschreven tests worden uitgevoerd in een containerinfrastructuur die is ontworpen voor het uitvoeren van deze tests.
