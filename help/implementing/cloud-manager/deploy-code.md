@@ -2,7 +2,7 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Code implementeren met Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en testomgeving), kunt u uw code implementeren.
 
 1. Klik op **Implementeren** in Cloud Manager om het implementatieproces te starten.
 
