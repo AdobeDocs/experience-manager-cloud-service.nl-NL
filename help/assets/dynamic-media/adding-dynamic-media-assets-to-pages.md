@@ -2,9 +2,9 @@
 title: Dynamische media-elementen toevoegen aan pagina's
 description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2985'
 ht-degree: 8%
 
 ---
@@ -35,7 +35,7 @@ Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische m
 
 1. Sleep een **[!UICONTROL Dynamic Media]** component en zet deze neer op de gewenste locatie op de pagina.
 
-1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
+1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -103,7 +103,7 @@ De dynamische componenten van Media die beschikbaar zijn omvatten het volgende:
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten via de sjablooneditor beschikbaar worden gemaakt voordat ze kunnen worden gebruikt. Nadat ze in de sjablooneditor beschikbaar zijn gemaakt, kunt u de componenten aan de pagina toevoegen, net als alle andere AEM-componenten.
+>Deze componenten zijn niet standaard beschikbaar en moeten via de sjablooneditor beschikbaar worden gemaakt voordat ze kunnen worden gebruikt. Nadat ze in de sjablooneditor beschikbaar zijn gemaakt, kunt u de componenten aan de pagina toevoegen, net als elke andere AEM.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -117,6 +117,7 @@ De component Dynamische media is slim. Afhankelijk van het feit of u een afbeeld
 >
 >* Meerdere instanties van de component Dynamic Media die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
+
 >
 >
 Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke Dynamic Media-component op die pagina niet wordt ondersteund.
@@ -188,17 +189,18 @@ U kunt de volgende instellingen voor dynamische media bewerken door in **[!UICON
 >
 >Standaard is de videocomponent Dynamic Media adaptief. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!UICONTROL Viewer preset**—Selecteer een bestaande voorinstelling voor een videoviewer in het vervolgkeuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren.
+* **[!UICONTROL Viewer preset]**—Selecteer een bestaande voorinstelling voor een videoviewer in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren.
 
-* **[!UICONTROL Viewer modifiers**—Viewer modifiers have the form of name=value pair with a &amp; delimiter and let you change viewers as described in the Adobe Viewers Reference Guide. Een voorbeeld van een viewer-modifier is `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Viewer modifiers]**—Viewermodifiers hebben de vorm van name=value pair met een &amp; delimiter en laten u kijkers veranderen zoals die in de Gids van de Verwijzing van de Kijkers van de Adobe worden geschetst. Een voorbeeld van een viewer-modifier is `posterimage=img.jpg&caption=text.vtt,1`
 
    Met viewermodifiers kunt u bijvoorbeeld het volgende doen:
 
    * Een bijschriftbestand koppelen aan een video: [bijschrift](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Een navigatiebestand koppelen aan een video: [navigatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Titel**—Wijzig de titel van de video.
+* **[!UICONTROL Title]**—Wijzig de titel van de video.
 
 * **[!UICONTROL Width]**—Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarde leeg laat, wordt het element adaptief.
 
@@ -208,7 +210,7 @@ U kunt de volgende instellingen voor dynamische media bewerken door in **[!UICON
 
 Met de component Dynamische media kunt u SmartCrop-afbeeldingselementen toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-Zie Slim uitsnijden [gebruiken met dynamische media van AEM-elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Zie Slim uitsnijden [gebruiken met dynamische media van AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Zie ook [Afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md).
 
@@ -254,6 +256,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 >
 >* Meerdere instanties van de component Interactive Media die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
+
 >
 >
 Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke interactieve mediacomponent op die pagina niet wordt ondersteund.
@@ -295,6 +298,7 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 >
 >* Meerdere instanties van de **[!UICONTROL Panoramic Media]** component die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
+
 >
 >
 Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke component **[!UICONTROL Panoramic Media]** op die pagina niet wordt ondersteund.
@@ -333,10 +337,10 @@ Zie [HTTP2 Levering van Inhoud](/help/assets/dynamic-media/http2faq.md) voor vol
 
 >[!MORELIKETHIS]
 >
->* [De videospeler gebruiken in dynamische AEM-media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Interactieve video gebruiken met AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Understanding the Asset Viewer with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Aangepaste videominiatuur gebruiken met dynamische AEM-media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Werken met kleurbeheer met dynamische AEM-media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Afbeelding verscherpen gebruiken met dynamische AEM-media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [De videospeler gebruiken in AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Interactieve video gebruiken met AEM dynamische media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [De Asset Viewer begrijpen met AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Aangepaste videominiatuur gebruiken met AEM dynamische media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Werken met kleurbeheer met AEM dynamische media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Afbeelding verscherpen gebruiken met AEM dynamische media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
