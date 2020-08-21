@@ -2,9 +2,9 @@
 title: Werken met kiezers
 description: Elementen selecteren voor interactieve afbeeldingen, interactieve video en carrouselbanners
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '700'
 ht-degree: 16%
 
 ---
@@ -22,7 +22,7 @@ In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotsp
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De sitekiezer werkt alleen als u een klant van AEM-sites bent. Voor de productkiezer is ook AEM Commerce vereist.
+Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een AEM Sites-klant bent. Voor de productkiezer is ook AEM Commerce vereist.
 
 ## Producten selecteren in dynamische media {#selecting-products}
 
@@ -30,7 +30,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
-   De productkiezer bevindt zich in het gebied **[!UICONTROL-handelingstype** .
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,11 +42,11 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt de locatie waar AEM door productgegevens zoekt wijzigen door te tikken **[!UICONTROL Browse]** en naar een andere map te navigeren.
+   U kunt de locatie waar AEM naar productgegevens zoekt wijzigen door te tikken **[!UICONTROL Browse]** en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tik **[!UICONTROL Sort]** door om te wijzigen of AEM met nieuwste naar oudste of oudste sorteert op nieuwste.
+   Tik **[!UICONTROL Sort]** door om te wijzigen of AEM op Nieuwst naar Oudst of op Nieuwst sorteert.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
 ## Sites selecteren in dynamische media {#selecting-sites}
 
-Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen AEM-sites.
+Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die binnen AEM sites wordt beheerd.
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
@@ -80,7 +80,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de **[!UICONTROL Preview]** modus op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven AEM-sitepagina.
+1. Als u in de **[!UICONTROL Preview]** modus op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven AEM sitepagina.
 
 ## Elementen selecteren in dynamische media {#selecting-assets}
 
