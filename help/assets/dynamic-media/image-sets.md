@@ -1,11 +1,11 @@
 ---
 title: Image Sets
-description: Leer hoe u met afbeeldingssets in Dynamic Media werkt
+description: Leer hoe u met afbeeldingssets werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 20%
+source-wordcount: '1980'
+ht-degree: 18%
 
 ---
 
@@ -34,7 +34,7 @@ Zo kunt u snel aan de slag:
 
 1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven.](#uploading-assets-in-image-sets)
 
-   Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de Vastgestelde Kijker van het Beeld, houd rekening met het zoemen wanneer u beelden kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. AEM Assets ondersteunen een groot aantal bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies in de indeling TIFF, PNG en EPS te gebruiken.
+   Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de Vastgestelde Kijker van het Beeld, houd rekening met het zoemen wanneer u beelden kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. AEM Assets biedt ondersteuning voor veel bestandsindelingen voor afbeeldingen, maar TIFF-, PNG- en EPS-afbeeldingen zonder gegevensverlies worden aanbevolen.
 
 1. [Afbeeldingssets maken.](#creating-image-sets)
 
@@ -69,7 +69,7 @@ Zo kunt u snel aan de slag:
 
 1. [Koppel URL&#39;s aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [sluit de video- of afbeeldingsviewer](/help/assets/dynamic-media/embed-code.md)in.
 
-   AEM Assets maken URL-aanroepen voor afbeeldingssets en activeren deze nadat u de afbeeldingssets hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
+   AEM Assets maakt URL-aanroepen voor afbeeldingssets en activeert deze nadat u de afbeeldingssets hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
    Selecteer de Afbeeldingset en selecteer vervolgens in de vervolgkeuzelijst voor het linkerspoor **[!UICONTROL Viewers]**.
 
@@ -77,11 +77,11 @@ Zo kunt u snel aan de slag:
 
 Zie Afbeeldingssets [bewerken als u Afbeeldingssets wilt bewerken.](#editing-image-sets) Bovendien kunt u de eigenschappen [van de](/help/assets/manage-digital-assets.md#editing-properties)Afbeeldingsset weergeven en bewerken.
 
-Als u problemen hebt met het maken van sets, raadpleegt u Afbeeldingen en sets in Dynamic Media [voor](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)probleemoplossing.
+Als u problemen hebt met het maken van sets, raadpleegt u Afbeeldingen en sets in Dynamische media [](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)oplossen van problemen.
 
 ## Elementen uploaden in afbeeldingssets {#uploading-assets-in-image-sets}
 
-Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de Vastgestelde Kijker van het Beeld, houd rekening met het zoemen wanneer u beelden kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn voor optimale zoomdetails. Dynamic Media kunnen afbeeldingen renderen tot 25 megapixels per pixel. U kunt bijvoorbeeld een afbeelding van 5000 x 5000 megapixel of een andere formaatcombinatie van maximaal 25 megapixels gebruiken.
+Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de Vastgestelde Kijker van het Beeld, houd rekening met het zoemen wanneer u beelden kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn voor optimale zoomdetails. Met dynamische media kunnen afbeeldingen tot 25 megapixels worden gerenderd. U kunt bijvoorbeeld een afbeelding van 5000 x 5000 megapixel of een andere formaatcombinatie van maximaal 25 megapixels gebruiken.
 
 Afbeeldingssets ondersteunen veel bestandsindelingen voor afbeeldingen, maar afbeeldingen zonder verlies van de indeling TIFF, PNG en EPS worden aanbevolen.
 
@@ -112,7 +112,7 @@ U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze s
 >[!NOTE]
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Belangrijk:**Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
+>**Belangrijk:** Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
 
 Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. U kunt elementen handmatig opnieuw ordenen of sorteren nadat u ze hebt toegevoegd.
 
@@ -178,13 +178,13 @@ Set die is gemaakt met voorinstellingen voor batchsets, wordt echter *niet* weer
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* Van een lidafbeelding van om het even welke set. Selecteer het menu **[!UICONTROL Sets]** om de sets weer te geven waarvan de asset lid is.
+* Van een lidafbeelding van om het even welke set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![6_5_imageset-set-pushDownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* U kunt **[!UICONTROL Filter]** selecteren en vervolgens **[!UICONTROL Dynamische media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van het onderzoek AEM verschillend zijn die op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Als u het filter instelt op alleen **[!UICONTROL Sets]** een manier om geautomatiseerde sets te doorzoeken.
+   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van AEM onderzoek verschillend zijn dat op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Als u het filter instelt op alleen **[!UICONTROL Sets]** een manier om geautomatiseerde sets te doorzoeken.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -215,13 +215,15 @@ U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, klikt u op de kolomkop.
    * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op het element **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
+
       >[!NOTE]
       >
-      >Als u de afbeelding verwijdert die AEM voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
+      >Als u de afbeelding verwijdert die AEM gebruikt voor de miniatuur door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
    * Als u een element wilt verwijderen, selecteert u het en tikt u erop of klikt u op **[!UICONTROL Delete Asset]**.
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer dit en tik op **[!UICONTROL Select]**.
    * Als u een volledige afbeeldingsset wilt verwijderen, navigeert u naar de Afbeeldingsset, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
+
    >[!NOTE]
    >
    >U kunt de afbeeldingen in een Afbeeldingset bewerken door naar de set te gaan, in het linkerspoor op **[!UICONTROL Set Members]** te tikken en vervolgens op het pictogram Potlood op een afzonderlijke asset te tikken om het bewerkingsvenster te openen.
