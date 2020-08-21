@@ -2,9 +2,9 @@
 title: URL's koppelen aan uw webapplicatie
 description: URL's koppelen aan uw webtoepassing in dynamische media
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1207'
 ht-degree: 10%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U maakt alleen een koppeling naar URL&#39;s als u AEM *niet* als uw WCM gebruikt. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U koppelt alleen aan URL&#39;s als u *geen* AEM gebruikt als uw WCM. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM gebruikt als uw WCM, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen, kopieert u ze van Dynamic Media.
 
@@ -132,7 +132,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany`is, is de naam van de klant `MyCompany`.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Services**, tik op het AEM-pictogram en navigeer naar **[!UICONTROL General > CRXDE Lite]**.
+1. Tik in de linkerbovenhoek van de pagina **[!UICONTROL Cloud Services]** op het AEM en navigeer naar **[!UICONTROL General > CRXDE Lite]**.
 1. Kopieer het volledige pad voor video-uitvoering vanuit de JCR (Java Content Repository).
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -159,6 +159,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 1. Ga als volgt te werk op de **[!UICONTROL Dynamic Media Cloud Services Settings]** pagina:
 
    * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde URL-pad later in deze stappen nodig. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Bovenstaand pad dient slechts ter illustratie; het is niet het daadwerkelijke pad dat u kopieert.)
@@ -187,7 +188,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
     </tbody>
    </table>
 
-1. Kopieer het volledige pad naar video-elementen in AEM, zoals dit wordt verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
+1. Kopieer het volledige pad naar het video-element in AEM, zoals dit wordt verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
 
    Bijvoorbeeld:
 
@@ -207,6 +208,6 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
 ## Het gebruiken van HTTP/2 om uw Dynamische activa van Media te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijd biedt.
 
 Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
