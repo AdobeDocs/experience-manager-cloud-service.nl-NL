@@ -2,9 +2,9 @@
 title: Voorinstellingen afbeelding beheren
 description: Voorinstellingen voor afbeeldingen begrijpen en leren hoe u voorinstellingen voor afbeeldingen kunt maken, wijzigen en beheren
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3517'
 ht-degree: 9%
 
 ---
@@ -253,7 +253,7 @@ Zie [InDesign-bestandsindeling](#indesign-indd-file-format)(INDD).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Klik op **[!UICONTROL opslaan**.
+1. Klik op **[!UICONTROL Save]**.
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
