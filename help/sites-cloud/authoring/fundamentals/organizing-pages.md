@@ -2,7 +2,7 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 5%
@@ -16,7 +16,7 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 
 >[!NOTE]
 >
->Uw account heeft de juiste toegangsrechten nodig] en machtigingen om actie te ondernemen op pagina&#39;s zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
+>Uw account heeft de juiste toegangsrechten en machtigingen nodig om actie te kunnen ondernemen op pagina&#39;s zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
@@ -30,7 +30,7 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 
 ## Uw website ordenen {#organizing-your-website}
 
-Als auteur moet u uw website organiseren binnen AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Als auteur moet u uw website binnen AEM organiseren. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * U kunt deze gemakkelijk vinden in de ontwerpomgeving
 * Bezoekers naar uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -93,7 +93,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Bij het maken van een nieuwe pagina valideert AEM de paginanaam volgens de conventies die door AEM en het JCR worden opgelegd. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+Bij het maken van een nieuwe pagina valideert AEM de paginanaam volgens de conventies van AEM en het JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
 
 De minimaal toegestane tekens zijn:
 
@@ -122,7 +122,7 @@ Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige te
 
 #### Naam {#name}
 
-Wanneer u een **paginanaam** opgeeft wanneer u een nieuwe pagina maakt, valideert AEM de naam volgens de conventies die door AEM en JCR worden opgelegd. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Wanneer u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die worden opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
 ![Voorbeeld van het invoeren van een ongeldige paginanaam](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -137,11 +137,11 @@ Wanneer u een **paginanaam** opgeeft wanneer u een nieuwe pagina maakt, valideer
 
 ### Sjablonen {#templates}
 
-In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
+In AEM geeft een sjabloon een speciaal type pagina op. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
 De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. Sjablonen bestaan uit [componenten](#components).
 
-AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
+AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
 
 * **Titel** De titel die op de resulterende webpagina wordt weergegeven.
 
@@ -155,7 +155,7 @@ AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablone
 
 ### Onderdelen {#components}
 
-Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks kant-en-klare componenten die uitgebreide functionaliteit bieden. Deze omvatten:
+Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks kant-en-klare componenten die uitgebreide functionaliteit bieden. Deze omvatten:
 
 * Tekst
 * Afbeelding
@@ -203,7 +203,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die door AEM en JCR worden opgelegd. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die worden opgelegd door AEM en JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!TIP]
@@ -382,7 +382,7 @@ Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een ge
 
          ![Asynchrone verplaatsing van pagina](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Status **dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)bij** Globale Navigatie **->** Hulpmiddelen **->** Verrichtingen **->** Banen **
+De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) bij **Globale Navigatie** -> **Hulpmiddelen** -> **Verrichtingen** -> **Banen**
 
 >[!NOTE]
 >
