@@ -1,10 +1,10 @@
 ---
-title: Gebruik de Rich Text Editor in [!DNL Adobe Experience Manager] om inhoud te schrijven.
-description: Gebruik de [!DNL Experience Manager] Rich Text Editor om inhoud te schrijven.
+title: Gebruik de rijke Redacteur van de Tekst [!DNL Adobe Experience Manager] in auteursinhoud.
+description: Gebruik [!DNL Experience Manager] de Rich Text Editor om inhoud te ontwerpen.
 translation-type: tm+mt
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # De Rich Text Editor gebruiken om inhoud te schrijven {#use-rich-text-editor-to-author-content}
 
-De Rich Text Editor (RTE) is een basisbouwsteen om tekstuele inhoud aan toe te voegen [!DNL Adobe Experience Manager]. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. Experience Manager-ontwikkelaars kunnen RTE aanpassen en beheerders configureren RTE voor gebruik door auteurs.
+De Rich Text Editor (RTE) is een basisbouwsteen om tekstuele inhoud aan toe te voegen [!DNL Adobe Experience Manager]. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. De ontwikkelaars van de Experience Manager kunnen RTE aanpassen en de beheerders vormen RTE voor gebruik door auteurs.
 
 ## Lokaal bewerken {#in-place-editing}
 
@@ -51,7 +51,7 @@ De volgende opties voor teksteditors met tekstopmaak zijn beschikbaar:
 
 Klik op minimaliseren om de modus Volledig scherm te sluiten.
 
->[!Tip]
+>[!TIP]
 >
 >Het kopiëren van geneste lijsten van [!DNL Microsoft Word] naar RTE kan inconsistente resultaten geven. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
 
