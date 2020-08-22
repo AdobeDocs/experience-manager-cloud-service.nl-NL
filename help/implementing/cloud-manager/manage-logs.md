@@ -2,9 +2,9 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 17%
 
 ---
@@ -22,7 +22,7 @@ Of op de pagina **Omgevingen** :
 
 ![](assets/download-logs.png)
 
->[!Nofferte]
+>[!NOTE]
 >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
 
 ![](assets/manage-logs3.png)
@@ -38,7 +38,7 @@ Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden,
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Met de volgende opdracht kunt u logbestanden als tailing weergeven:
+Met de volgende opdracht kunt u logboeken trappen:
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -67,12 +67,12 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Nofferte]
+>[!NOTE]
 >Hoewel **Logboekdownloads** beschikbaar blijven via zowel de gebruikersinterface als de API, is **Logboektailing** alleen beschikbaar via API/CLI.
 
 ### Aanvullende bronnen {#resources}
 
-Raadpleeg de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en Adobe I/O CLI:
+Raadpleeg de volgende aanvullende bronnen voor meer informatie over de API en Adobe I/O CLI van Cloud Manager:
 
 * [Documentatie voor API voor cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
