@@ -2,9 +2,9 @@
 title: Aan de slag met AEM Commerce als Cloud Service
 description: Aan de slag met AEM Commerce als Cloud Service
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Aan de slag met AEM Commerce als Cloud Service {#start}
 
-Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De toe:voegen-op CIF is een extra module bovenop [AEM Sites als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De invoegtoepassing CIF is een extra module boven op [AEM Sites als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ Ga als volgt te werk om AEM Handel met Magento te verbinden:
 >
 >U kunt alle variabelen van de Manager van de Wolk een lijst maken gebruikend het volgende bevel om te controleren tweemaal: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!Nofferte]
+>[!NOTE]
 >
 >U kunt ook de API [](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) Cloud Manager gebruiken om de variabelen van Cloud Manager te configureren.
 
