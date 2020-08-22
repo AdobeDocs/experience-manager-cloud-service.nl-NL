@@ -1,10 +1,10 @@
 ---
 title: Fase na Go-Live
 description: Fase na Go-Live
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Raadpleeg [Implementeren voor AEM as a Cloud Service](https://docs.adobe.com/con
 
 Als gebruiker hebt u toegang tot CRX/DE Lite in de ontwikkellingsomgeving, maar niet in de stage- of productieomgeving.
 
->[BELANGRIJK]
+>[!IMPORTANT]
 >Het schrijven naar onveranderlijke repository&#39;s zoals `/libs` en `/apps` tijdens uitvoering resulteert in fouten. Bovendien hebt u als klant geen toegang tot ontwikkelaarstools voor staging- en productieomgevingen.
 
 Raadpleeg [Ontwikkelen met CRX/DE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) voor meer informatie over het ontwikkelen van uw AEM-applicatie met gebruik van CRX/DE Lite.
