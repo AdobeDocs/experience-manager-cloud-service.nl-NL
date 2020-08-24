@@ -2,9 +2,9 @@
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
 description: Ontwikkelen AEM Handel voor AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 9%
 
 ---
@@ -20,11 +20,13 @@ De ontwikkeling van AEM Commerce-projecten op basis van het Kader voor de integr
 
 ## Lokale ontwikkeling met AEM als Cloud Service SDK {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 Een lokale ontwikkelomgeving wordt aanbevolen voor CIF-projecten. De CIF toe:voegen-On die voor AEM als milieu van de Cloud Service wordt verstrekt is ook beschikbaar voor lokale ontwikkeling. Het kan van het portaal [van de Distributie van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)Software worden gedownload.
 
 De CIF Add-On wordt verstrekt als Sling Feature archief. Het ZIP-bestand dat beschikbaar is op de portal Softwaredistributie bevat twee Sling Feature-archiefbestanden: een voor AEM auteur en een voor AEM publicatie-instanties.
 
-**Nieuw bij AEM als Cloud Service?** Raadpleeg de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw bij AEM als Cloud Service?** Bekijk [een gedetailleerdere handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Vereiste software
 
@@ -39,7 +41,7 @@ Het volgende moet lokaal worden geïnstalleerd:
 
 ### Toegang tot de CIF-invoegtoepassing
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Het ZIP-bestand bevat de CIF-invoegtoepassing als Sling Feature-archief. Het is geen AEM pakket. Let op: toegang tot de SDK-aanbiedingen is beperkt tot die met AEM als licentie voor Cloud Servicen.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Het ZIP-bestand bevat de CIF-invoegtoepassing als **Sling Feature-archief**. Dit is geen AEM pakket. Let op: toegang tot de SDK-aanbiedingen is beperkt tot die met AEM als licentie voor Cloud Servicen.
 
 >[!TIP]
 >
@@ -59,7 +61,7 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
 3. Een `crx-quickstart/install` map maken
 4. Kopieer het juiste archiefbestand voor de verkoopfunctie van de CIF-invoegtoepassing naar de `crx-quickstart/install` map.
 
-   Het CIF-ZIP-bestand met invoegtoepassingen bevat twee Sling Feature- `.far` archiefbestanden. Zorg ervoor om correcte te gebruiken voor AEM Author of AEM Publish, afhankelijk van hoe u van plan bent om de lokale AEM als Cloud Service SDK in werking te stellen.
+   Het CIF-ZIP-bestand met invoegtoepassingen bevat twee Sling Feature- `.far` archiefbestanden. Zorg ervoor dat u de juiste methode gebruikt voor AEM-auteur of AEM-publicatie, afhankelijk van hoe u de lokale AEM als Cloud Service-SDK wilt uitvoeren.
 
 5. Creeer een lokale OS omgevingsvariabele genoemd die het eindpunt Magento GraphQL houdt. `COMMERCE_ENDPOINT`
 
