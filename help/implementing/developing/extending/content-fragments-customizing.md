@@ -2,9 +2,9 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 1%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 1%
 
 # Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
-Binnen de Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een standaardelement uit; zie:
+Binnen Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een standaardelement uit. zie:
 
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) en [paginascripts maken en beheren met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
-* [Elementen](/help/assets/manage-digital-assets.md) beheren en de Asset Editor [](/help/assets/extend-asset-editor.md) aanpassen en uitbreiden voor meer informatie over standaardelementen.
+* [Middelen](/help/assets/manage-digital-assets.md) beheren voor meer informatie over standaardactiva.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Architectuur {#architecture}
 
@@ -99,7 +103,7 @@ Integreren met de kern Elementen:
 >
 >De component [Inhoudsfragment maakt deel uit van Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html). Zie [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) ontwikkelen voor meer informatie.
 
-Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de kerncomponent **[van het](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**inhoudsfragment - een[component waarmee u inhoudsfragmenten op uw pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)&#39;s kunt opnemen. U kunt deze kerncomponent**[Inhoudsfragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** ook uitbreiden.
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de kerncomponent **[van het](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** inhoudsfragment - een [component waarmee u inhoudsfragmenten op uw pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)kunt opnemen. U kunt deze kerncomponent **[Inhoudsfragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** ook uitbreiden.
 
 * De component gebruikt de `fragmentPath` eigenschap om naar het daadwerkelijke inhoudsfragment te verwijzen. De `fragmentPath` onroerende goederen worden op dezelfde wijze afgehandeld als soortgelijke eigendommen van andere soorten activa; bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
@@ -131,7 +135,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de AEM-vertaalworkflow. Op architectonisch niveau betekent dit:
+   Inhoudsfragmenten zijn volledig geïntegreerd met de AEM vertaalworkflow. Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
@@ -145,7 +149,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
    * Naast de op regel gebaseerde paden bestaat er geen verdere verbinding tussen de verschillende taalversies van een inhoudsfragment. ze worden behandeld als twee afzonderlijke fragmenten, hoewel de interface de mogelijkheid biedt om tussen de taalvarianten te navigeren.
    >[!NOTE]
    >
-   >De AEM-vertaalworkflow werkt met `/content`:
+   >De AEM vertaalworkflow werkt met `/content`:
    >
    >* Aangezien de modellen van het inhoudsfragment in verblijven `/conf`, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt de UI-tekenreeksen internationaliseren.
 
@@ -198,7 +202,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Lijstverzamelingen
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
-   * Toegang krijgen tot het model van het fragment
+   * Het model van het fragment openen
 
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
@@ -284,11 +288,11 @@ Zie het volgende:
 >
 >Houd rekening met deze achtergrondinformatie. U wordt geacht hier niets te veranderen (aangezien het als *privé gebied* in de bewaarplaats wordt gemerkt), maar het zou in sommige gevallen kunnen helpen om te begrijpen hoe de dingen onder de kap werken.
 
-Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), is atomisch. Aangezien dergelijke atomische multi-view bewerkingsmogelijkheden geen typisch concept AEM zijn, gebruiken de inhoudsfragmenten wat een *het uitgeven zitting* wordt genoemd.
+Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), is atomisch. Aangezien dergelijke atomische multi-view bewerkingsmogelijkheden geen typisch AEM concept zijn, gebruiken de inhoudsfragmenten wat een *het uitgeven zitting* wordt genoemd.
 
 Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in de editor opent. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
 
-Technisch gezien worden alle bewerkingen uitgevoerd op *live* -inhoud, net als bij alle andere AEM-bewerkingen. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker op **Opslaan** klikt, gebeurt er niets specifieks, aangezien alle bewerkingen zijn uitgevoerd op *live* -inhoud. Alle wijzigingen blijven daarom al behouden. Als u op **Opslaan** klikt, wordt er ook een achtergrondverwerking gestart (zoals het maken van volledige zoekinformatie voor tekst en/of het verwerken van media-elementen met gemengde tekst).
+Technisch gezien worden alle bewerkingen uitgevoerd op *live* -inhoud, net als bij alle andere bewerkingen AEM. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker op **Opslaan** klikt, gebeurt er niets specifieks, aangezien alle bewerkingen zijn uitgevoerd op *live* -inhoud. Alle wijzigingen blijven daarom al behouden. Als u op **Opslaan** klikt, wordt er ook een achtergrondverwerking gestart (zoals het maken van volledige zoekinformatie voor tekst en/of het verwerken van media-elementen met gemengde tekst).
 
 Er zijn enkele veiligheidsmaatregelen voor randgevallen. bijvoorbeeld als de gebruiker de editor probeert te verlaten zonder de bewerkingssessie op te slaan of te annuleren. Er is ook een periodieke automatische opslag beschikbaar om gegevensverlies te voorkomen.
 Twee gebruikers kunnen hetzelfde inhoudsfragment gelijktijdig bewerken en overschrijven daarom elkaars wijzigingen. Om dit te voorkomen, moet het inhoudsfragment worden vergrendeld door de *uitcheckactie* van de DAM-administratie op het fragment toe te passen.
