@@ -2,9 +2,9 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 translation-type: tm+mt
-source-git-commit: c00b10b4d564e05099740b9ff991624db4f37a3d
+source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code {#unified-experience}
 
-Meerdere gereedschappen met verschillende interactiepunten voor klanten zorgen voor een ongekoppelde ervaring en vergroten de complexiteit van het gebruik van gereedschappen, waarbij elk gereedschap verschillende uitvoeringsvereisten heeft wat betreft installatie, installatie en uitvoering.
+De Verenigde Ervaring voor de hulpmiddelen van het Refactoring van de Code verenigt de ervaring voor uitvoering van AEM als de hulpmiddelen van het refactoring van de code van de Cloud Service die op de dossiers, de code, en bewaarplaatsen van de verzender werken.
+
+Dit hulpmiddel vermindert de ingewikkeldheid van het gebruiken van code refactoring hulpmiddelen, met elk die verschillende uitvoeringsvereisten in termen van installatie, opstelling en uitvoering hebben.
 
 ## Voordelen {#benefits}
 
@@ -26,9 +28,12 @@ De Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code samen 
 
 * Voor het vereenvoudigen van toekomstige toevoegingen van nieuwe gereedschappen, zoals het toevoegen van een nieuw gereedschap aan de plug-in, is gewoon de toevoeging van een nieuwe opdracht voor ontwikkelaars en een eenvoudige plug-inupdate voor de gebruiker nodig. De ervaring blijft dus consistent met een hogere toegevoegde waarde.
 
-### Het toepassingsontwerp begrijpen
+## Inzicht krijgen in de insteekmodule {#understanding-plugin}
 
-Deze hulpmiddelen verenigt alle code refactoring hulpmiddelen in één die knoop.js toepassing zoals `aio-cli plugin` wordt blootgesteld om een verenigbare gebruikerservaring aan de gebruiker te verstrekken.
+De `aio-cli-plugin-aem-cloud-service-migration` reactoren klanten coderen, de opslagstructuur of configuraties op de lokale computer van de klant. Op deze pagina worden de gedetailleerde vereisten en ontwerpbeslissingen voor een uniforme ervaring vastgelegd.
+Het is beschikbaar als een open bron voor gemeenschap om voor douanetoepassingen uit te breiden.
+
+Deze hulpmiddelen verenigt alle code refactoring hulpmiddelen in één die knoop.js toepassing zoals `aio-cli plugin` wordt blootgesteld om een verenigbare gebruikerservaring aan de gebruiker te verstrekken. De plug-in scant de lokale codebasis van de klant en produceert AEM als code, configuraties en pakketten die compatibel zijn met de Cloud Service en die vervolgens kunnen worden geïmplementeerd in Cloud Service-omgevingen.
 
 De insteekmodule bestaat uit twee hoofdonderdelen:
 
@@ -44,16 +49,12 @@ De insteekmodule bestaat uit twee hoofdonderdelen:
 
    * De tijdens de migratie uitgevoerde bewerkingen in een consistente volgorde opnemen om een samenvattingsrapport te maken.
 
-## De insteekmodule gebruiken {#using-plugin}
-
-De `aio-cli-plugin-aem-cloud-service-migration` reactoren klanten coderen, de opslagstructuur of configuraties op de lokale computer van de klant. Op deze pagina worden de gedetailleerde vereisten en ontwerpbeslissingen voor een uniforme ervaring vastgelegd.
-Het is beschikbaar als een open bron voor gemeenschap om voor douanetoepassingen uit te breiden.
-
 ## Beschikbaarheid {#availability}
 
-U kunt de software installeren en gebruiken `aio-cli-plugin-aem-cloud-service-migration` via `aio-cli` (momenteel alleen geïntegreerd met de verzendingsconverter).
+U kunt de software installeren en gebruiken `aio-cli-plugin-aem-cloud-service-migration` via `aio-cli`.
 
-Zie [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie over het gebruik en de manier waarop u een bijdrage kunt leveren voor dit gereedschap.
+>[!NOTE]
+>Dit gereedschap is momenteel alleen geïntegreerd met de Dispatcher Converter.
 
-De insteekmodulecode is geopend in Github.
+Zie [Git Resource: aio-cli-plugin-aem-wolk-dienst-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) om over het gebruik te leren en hoe u voor deze plugin code kunt bijdragen die open-sourced in GitHub is.
 
