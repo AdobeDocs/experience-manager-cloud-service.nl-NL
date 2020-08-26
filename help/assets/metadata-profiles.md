@@ -89,7 +89,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Tik in de linkertrack **[!UICONTROL Assets]** vervolgens naar de map waarop u een metagegevensprofiel wilt toepassen.
 1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik op **Eigenschappen** of klik op Eigenschappen.
-1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]** en selecteer het profiel in het vervolgkeuzemenu en tik op **[[Opslaan]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]** en selecteer het profiel in het vervolgkeuzemenu en tik op **[Opslaan]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 ### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
