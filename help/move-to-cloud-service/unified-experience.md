@@ -2,7 +2,7 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ De Verenigde Ervaring voor de hulpmiddelen van het Refactoring van de Code veren
 
 Dit hulpmiddel vermindert de ingewikkeldheid van het gebruiken van code refactoring hulpmiddelen, met elk die verschillende uitvoeringsvereisten in termen van installatie, opstelling en uitvoering hebben.
 
-![afbeelding](/help/move-to-cloud-service/assets/unified-1.png)
+![afbeelding](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## Voordelen {#benefits}
 
