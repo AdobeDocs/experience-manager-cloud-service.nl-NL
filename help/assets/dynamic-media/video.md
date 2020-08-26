@@ -689,7 +689,7 @@ U kunt als volgt de standaardeigenschappen van YouTube voor uw geüploade video&
 
 1. Klik in de linkerbovenhoek van AEM op het AEM-logo en klik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Klik op **[!UICONTROL default]**. (Voeg geen vinkje toe aan het selectievak links van &quot;standaard&quot;.)
-1. Schakel op de pagina **[!UICONTROL default]** het vakje links van **[!UICONTROL video]** in en klik op **[[Bewerken]**.
+1. Schakel op de pagina **[!UICONTROL default]** het vakje links van **[!UICONTROL video]** in en klik op **[Bewerken]**.
 1. Klik op het **[!UICONTROL Advanced]** tabblad van de pagina Editor van het metagegevensschema.
 1. Klik onder de kop YouTube-publicatie op **[!UICONTROL YouTube Category]**.
 1. Ga als volgt te werk aan de rechterkant van de pagina, onder het **[!UICONTROL Settings]** tabblad:
