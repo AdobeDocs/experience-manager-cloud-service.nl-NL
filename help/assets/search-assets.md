@@ -400,7 +400,7 @@ Wanneer bepaalde gezochte elementen aan uw criteria voldoen, kunt u de volgende 
 
 ### Zoekresultaten sorteren {#sort}
 
-Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Het sorteren van zoekresultaten werkt in de lijstweergave en alleen wanneer u **[!UICONTROL [Bestanden](#searchui)]** selecteert in het deelvenster **[!UICONTROL Filters]**. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Het sorteren van zoekresultaten werkt in de lijstweergave en alleen wanneer u **[[!UICONTROL Bestanden]](#searchui)** selecteert in het deelvenster **[!UICONTROL Filters]**. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
 In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
