@@ -2,9 +2,9 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,19 @@ De Verenigde Ervaring voor de hulpmiddelen van het Refactoring van de Code veren
 
 Dit hulpmiddel vermindert de ingewikkeldheid van het gebruiken van code refactoring hulpmiddelen, met elk die verschillende uitvoeringsvereisten in termen van installatie, opstelling en uitvoering hebben.
 
+![afbeelding](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Voordelen {#benefits}
 
-De verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code roept en voert alle hulpmiddelen uit van het coderefactoring die aan de broncode van de zelfde plaats werken.
+De Verenigde Ervaring voor de hulpmiddelen van de Refactoring van de Code roept en voert alle hulpmiddelen van het coderefactoring uit die aan de broncode van de zelfde plaats werken.
 
-De Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code samen met de bijbehorende bewaarplaatsen staat toe:
+Met deze gereedschappen en de bijbehorende opslagruimten kunt u:
 
-* Alle gereedschappen die werken aan de migratie van broncode naar één `node.js` toepassing die wordt weergegeven, verenigen `aio-cli plugin` om de gebruiker een consistente gebruikerservaring te bieden.
+* Het verenigen van alle hulpmiddelen die aan broncodemigratie in één `node.js` toepassing werken blootgesteld `aio-cli plugin` om een verenigbare gebruikerservaring aan de gebruiker te verstrekken.
 
-* Voorziening voor het uitvoeren van de algehele migratie via één opdracht, waarbij tevens flexibiliteit wordt geboden om één bepaald gereedschap naar behoefte uit te voeren.
+* Voorziening voor het uitvoeren van de algehele migratie via één opdracht, terwijl ook flexibiliteit wordt geboden om één bepaald gereedschap naar behoefte uit te voeren.
 
-* Voor het vereenvoudigen van toekomstige toevoegingen van nieuwe gereedschappen, zoals het toevoegen van een nieuw gereedschap aan de plug-in, is gewoon de toevoeging van een nieuwe opdracht voor ontwikkelaars en een eenvoudige plug-inupdate voor de gebruiker nodig. De ervaring blijft dus consistent met een hogere toegevoegde waarde.
+* Voor het vereenvoudigen van toekomstige toevoegingen van nieuwe gereedschappen, zoals het toevoegen van een nieuw gereedschap aan de plug-in, is gewoon de toevoeging van een nieuwe opdracht voor ontwikkelaars en een eenvoudige plug-inupdate voor de gebruiker nodig. De ervaring blijft dus consistent met meer toegevoegde waarde.
 
 ## Inzicht krijgen in de insteekmodule {#understanding-plugin}
 
