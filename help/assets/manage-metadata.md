@@ -1,18 +1,18 @@
 ---
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
-description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen en ordenen. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
+description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1908'
 ht-degree: 4%
 
 ---
 
 
-# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden waarnaar geüpload wordt, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. [!DNL Experience Manager Assets] Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
@@ -65,7 +65,7 @@ De twee basistypen metagegevens zijn technische metagegevens en beschrijvende me
 Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
 
 * Grootte van een bestand.
-* Afmetingen (hoogte en breedte) van een afbeelding.
+* Dimension (hoogte en breedte) van een afbeelding.
 * Bitsnelheid van een audio- of videobestand.
 * Resolutie (detailniveau) van een afbeelding.
 
@@ -84,7 +84,7 @@ Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content Model biedt. Gebruikers van de XMP-standaard en van [!DNL Experience Manager Assets] een krachtig platform waarop u kunt bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] een krachtig platform om op te bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Daarom [!DNL Experience Manager Assets] biedt u de toewijzing van EXIF-eigenschappen in [algemene metagegevensschema](metadata-schemas.md) &#39;s en in XMP.
+Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden, [!DNL Experience Manager Assets] biedt afbeelding van eigenschappen Exif in [gemeenschappelijke meta-gegevensschema](metadata-schemas.md) en in XMP aan.
 
 #### Overige metagegevens {#other-metadata}
 
@@ -142,9 +142,19 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
    >
    >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u **[!UICONTROL Append mode]** selecteert.
 
+## Aangepaste metagegevens met verwerkingsprofiel {#metadata-compute-service}
+
+Middelen als Cloud Service kunnen aangepaste metagegevens voor een element genereren met gebruik van services die in de cloud zijn gemaakt. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [hoe u het verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#use-profiles)kunt gebruiken.
+
+![Metagegevensuitvoering in verwerkingsprofiel](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Er kan slechts één verwerkingsprofiel worden toegepast op een map. Als u meerdere verwerkingen wilt toepassen op elementen in een map, voegt u meer opties toe aan één verwerkingsprofiel. Met één profiel kunt u bijvoorbeeld uitvoeringen genereren, elementen transcoderen, aangepaste metagegevens genereren enzovoort. U kunt MIME-typefilters toepassen voor elke taak, zodat de juiste taak wordt geactiveerd voor de vereiste bestandsindeling.
+
 ## Limiet voor bijwerken van bulkmetagegevens configureren {#configlimit}
 
-Om DOS-achtige situatie te verhinderen, beperkt AEM het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van vele elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
+Om DOS-achtige situatie te verhinderen, AEM beperkt het aantal parameters die in een het Verdelen verzoek worden gesteund. Wanneer u metagegevens van veel elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
@@ -183,7 +193,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PDF en PDF/X.
 * Photoshop en psAux - [!DNL Adobe Photoshop].
 
-### Metagegevens van Digital Rights Management {#digital-rights-management-metadata}
+### Metagegevens Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -191,7 +201,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
-* `xmpPlus` - Integratie van PLUS met XMP.
+* `xmpPlus` - integratie van PLUS met XMP.
 
 ### Specifieke metagegevens voor fotografie {#photography-specific-metadata}
 
@@ -205,7 +215,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
 * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - XMP-metagegevens voor gepagineerde tekst.
+* `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 
 ### Multimediaspecifieke metagegevens {#multimedia-specific-metadata}
 
