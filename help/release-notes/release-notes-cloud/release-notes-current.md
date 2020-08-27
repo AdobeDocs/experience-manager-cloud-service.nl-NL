@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 1%
+source-wordcount: '1031'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documentviewer.
 
-* Gebruikersinterface voor het ongeldig maken van de cache is nu beschikbaar in [!DNL Dynamic Media].
+* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks van [!DNL Dynamic Media] in AEM als Cloud Service invalideren (in tegenstelling tot het gebruik [!DNL Dynamic Media Classic]) om ervoor te zorgen dat de meest recente elementen binnen minuten in plaats van uren worden aangeboden. Zie Het [ongeldig maken van de CDN-cache via Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, browse en zoekervaring in [!DNL Assets].
 
