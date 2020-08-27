@@ -1,23 +1,23 @@
 ---
 title: Elementen, mappen en verzamelingen delen als een koppeling
-description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt in de middelen van Experience Manager.
+description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt binnen Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '885'
+ht-degree: 0%
 
 ---
 
 
-# Elementen delen en distribueren die worden beheerd in Experience Manager {#share-assets-from-aem}
+# In Experience Manager beheerde middelen delen en distribueren {#share-assets-from-aem}
 
-Met Adobe Experience Manager (AEM) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om middelen van Experience Manager-middelen te delen als cloudservice:
+Met AEM (Adobe Experience Manager) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van Experience Manager Assets als een Cloud Service te delen:
 
 * Delen als een koppeling.
 * Download elementen en deel ze afzonderlijk.
-* Delen via AEM-bureaubladtoepassing.
+* Delen via AEM bureaubladtoepassing.
 * Delen via Adobe Asset Link.
 * (Binnenkomende functionaliteit) Delen met behulp van Brand Portal.
 
@@ -107,13 +107,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Elementen downloaden en delen {#download-and-share-assets}
 
-Gebruikers kunnen bepaalde assets downloaden en deze delen buiten Experience Manager. Zie voor meer informatie [hoe u elementen](/help/assets/search-assets.md)kunt zoeken, [hoe u elementen](/help/assets/download-assets-from-aem.md)kunt downloaden en [hoe u verzamelingen kunt downloaden](manage-collections.md#download-a-collection)
+Users can download the required assets and share these outside of [!DNL Experience Manager]. Zie voor meer informatie [hoe u elementen](/help/assets/search-assets.md)kunt zoeken, [hoe u elementen](/help/assets/download-assets-from-aem.md)kunt downloaden en [hoe u verzamelingen kunt downloaden](manage-collections.md#download-a-collection)
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **AEM-bureaubladtoepassing**: De app werkt op Windows en Mac. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die AEM-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Desktop-app** AEM: De app werkt op Windows en Mac. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die AEM gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe-elementkoppeling**: De creatieve professionals kunnen rechtstreeks vanuit Adobe InDesign, Adobe Illustrator en Adobe Photoshop zoeken en middelen gebruiken.
 
@@ -154,7 +154,7 @@ Before you can share assets as links, configure the email service.
 
 ### Maximale gegevensgrootte configureren {#maxdatasize}
 
-Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de gegevensopslagruimte en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, kunt u de maximumgrootte van de gedownloade dossiers vormen. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de opslagplaats en retourneert het element in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, kunt u de maximumgrootte van de gedownloade dossiers vormen. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
 1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Zoek vanuit de webconsole de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie.
@@ -167,20 +167,20 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden bureaubladacties genoemd en om deze in te schakelen, raadpleegt u bureaubladacties [inschakelen in de AEM-webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden bureaubladacties genoemd en om deze in te schakelen, raadpleegt u bureaubladacties [inschakelen in AEM webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
+![Desktophandelingen als sneltoets gebruiken bij het werken met de bureaubladtoepassing](assets/enable_desktop_actions.png)
 
 ### Configuraties voor het gebruik van Adobe Asset Link {#configure-asset-link}
 
-Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager-middelen (AEM) worden verbonden met Creative Cloud-bureaubladtoepassingen, Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in AEM Assets, en kunnen ze deze inhoud wijzigen zonder de creatieve apps te verlaten waarmee ze het meest vertrouwd zijn.
+Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager-middelen (AEM) worden verbonden met Creative Cloud-bureaubladapps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve apps hoeven te verlaten.
 
-Zie [hoe u AEM kunt configureren voor gebruik met Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Zie [hoe te om AEM aan gebruik met de Verbinding](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)van Activa te vormen Adobe.
 
 ## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de AEM-beheerder na welke [downloadlimieten](#maxdatasize) gelden.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, moet u bij de AEM controleren wat de [downloadlimieten](#maxdatasize) zijn.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
