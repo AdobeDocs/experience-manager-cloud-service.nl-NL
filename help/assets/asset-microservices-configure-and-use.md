@@ -1,11 +1,11 @@
 ---
-title: Elementmicroservices configureren en gebruiken voor de verwerking van bedrijfsmiddelen
-description: Leer hoe u de 'cloud-native asset microservices' configureert en gebruikt om assets op schaal te verwerken.
+title: Elementmicroservices configureren en gebruiken voor de verwerking van bedrijfsmiddelen.
+description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -13,21 +13,11 @@ ht-degree: 0%
 
 # Middelenmicroservices en verwerkingsprofielen gebruiken {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Asset microservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudnative toepassingen (ook wel workers genoemd). Adobe beheert de services voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Met Asset microservices kunt u een [breed scala aan bestandstypen](/help/assets/file-format-support.md) verwerken die meer indelingen offline bestrijken dan in eerdere versies van [!DNL Experience Manager]. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist.
 
-Middelenmicroservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de services voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties.
-
-De verwerking van activa hangt van de configuratie binnen af **[!UICONTROL Processing Profiles]**, die een standaardopstelling verstrekken, en een beheerder toestaan om specifiekere configuratie van de activaverwerking toe te voegen. Beheerders kunnen de configuraties van naverwerkingsworkflows maken en onderhouden, inclusief optionele aanpassing. Door workflows aan te passen zijn uitbreidbaarheid en volledige aanpassing mogelijk.
-
-Met Asset microservices kunt u een [groot aantal bestandstypen](/help/assets/file-format-support.md) verwerken die meer indelingen buiten de box bestrijken dan met eerdere versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist.
+De verwerking van bedrijfsmiddelen is afhankelijk van de configuratie in **[!UICONTROL Processing Profiles]**. De Experience Manager verstrekt een basisstandaardopstelling en laat beheerders specifiekere configuratie van de activaverwerking toevoegen. Beheerders maken, onderhouden en wijzigen de configuraties van naverwerkingsworkflows, inclusief optionele aanpassing. Door de workflows aan te passen kunnen ontwikkelaars de standaardaanbieding uitbreiden.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Voer de volgende stappen uit om een standaardverwerkingsprofiel te maken:
    * Kwaliteit in procenten van elke JPEG-uitvoering.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
-   ![verwerkingsprofielen, toevoegen](assets/processing-profiles-adding.png)
+   ![verwerkingsprofielen, toevoegen](assets/processing-profiles-image.png)
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -158,9 +148,7 @@ Dankzij de integratie van Asset Compute Service kan Experience Manager deze para
 
 ![aangepast verwerkingsprofiel](assets/custom-processing-profile.png)
 
-*Afbeelding: Het gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing.[!UICONTROL Service Parameters]*
-
-Wanneer campagneafbeeldingen worden geüpload naar de map waarop dit verwerkingsprofiel is toegepast, worden de afbeeldingen bijgewerkt met `Jumanji` tekst in het `Arial-BoldMT` lettertype.
+*Afbeelding: Het gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing.[!UICONTROL Service Parameters]In dit voorbeeld worden de afbeeldingen bijgewerkt met`Jumanji`tekst in het`Arial-BoldMT`lettertype wanneer campagnegamaterialen worden geüpload.*
 
 ## Verwerkingsprofielen gebruiken om elementen te verwerken {#use-profiles}
 
@@ -169,19 +157,20 @@ Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen di
 Pas verwerkingsprofielen toe op mappen met een van de volgende methoden:
 
 * Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en **[!UICONTROL Apply Profile to Folder(s)]** actie gebruiken. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Klik op **[!UICONTROL Save & Close]**om de wijzigingen op te slaan.
+   ![Een verwerkingsprofiel toepassen op een map op het tabblad Eigenschappen van element](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Er kan slechts één verwerkingsprofiel worden toegepast op een specifieke map. Als u meer uitvoeringen wilt genereren, voegt u meer renderdefinities toe aan het bestaande verwerkingsprofiel.
+>Er kan slechts één verwerkingsprofiel worden toegepast op een map. Als u meer uitvoeringen wilt genereren, voegt u meer renderdefinities toe aan het bestaande verwerkingsprofiel.
 
-Nadat een verwerkingsprofiel op een map is toegepast, worden alle nieuwe elementen die in deze map of een van de submappen van deze map zijn geüpload (of bijgewerkt), verwerkt met behulp van het extra verwerkingsprofiel dat is geconfigureerd. Deze verwerking is een aanvulling op het standaardprofiel. Als u meerdere profielen toepast op een map, worden de geüploade of bijgewerkte elementen verwerkt met elk van deze profielen.
+Nadat een verwerkingsprofiel op een map is toegepast, worden alle nieuwe elementen die in deze map of een van de submappen van deze map zijn geüpload (of bijgewerkt), verwerkt met behulp van het extra verwerkingsprofiel dat is geconfigureerd. Deze verwerking is een aanvulling op het standaardprofiel.
 
 >[!NOTE]
 >
 >Een verwerkingsprofiel dat is toegepast op een map, werkt voor de gehele structuur, maar kan worden overschreven door een ander profiel dat is toegepast op een submap. Wanneer middelen aan een omslag worden geupload, controleert de Experience Manager de bevattende omslageigenschappen voor een verwerkingsprofiel. Als er geen toepassing is, wordt gecontroleerd of er een verwerkingsprofiel van toepassing is in een bovenliggende map in de hiërarchie.
 
-Alle gegenereerde uitvoeringen zijn beschikbaar in de [!UICONTROL Renditions] weergave in de linkerrails. Open de voorvertoning van elementen en open de linkerrails voor toegang tot de **[!UICONTROL Renditions]** weergave. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
+Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning van de gegenereerde uitvoeringen in de [!UICONTROL Renditions] weergave in de linkerrails. Open de voorvertoning van elementen en open de linkerrails voor toegang tot de **[!UICONTROL Renditions]** weergave. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
 
 ![aanvullende uitvoeringen](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-a
 >* [Inleiding tot Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Begrijp uitbreidbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
 >* [Aangepaste toepassingen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)maken.
+>* [Ondersteunde MIME-typen voor verschillende gebruiksgevallen](/help/assets/file-format-support.md).
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
