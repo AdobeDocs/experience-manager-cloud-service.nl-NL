@@ -2,9 +2,9 @@
 title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 76db5314369ca0f854482586d5c96474014a47af
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
@@ -14,20 +14,20 @@ ht-degree: 2%
 
 Door Adobe Analytics en AEM als Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
-* met de aanraakinterface een Analytics-configuratie in AEM maken als Cloud Service.
-* Adobe Analytics toevoegen en configureren als een extensie in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* het gebruiken van Touch UI om een configuratie van Analytics in AEM als Cloud Service tot stand te brengen.
+* adobe analytics toevoegen en configureren als een extensie in [Adobe Launch](#analytics-launch). Zie [deze pagina](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)voor meer informatie over het starten van de Adobe.
 
-Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM als Cloud Service. In plaats daarvan gebeurt dit nu via Adobe Launch, dat het defacto instrument is voor het instrumenteren van een AEM site met Analytics-mogelijkheden (JS-bibliotheken). In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
+Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM als Cloud Service. In plaats daarvan wordt het nu gedaan door Adobe Launch, dat het feitelijk hulpmiddel is om een AEM plaats met Analytische mogelijkheden (bibliotheken JS) van instrumenten te voorzien. In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 
 >[!NOTE]
 >
->Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken. This Foundation Pack provided volume limited use of Analytics.
+>Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken. This Foundation Pack provided volume limited use of Analytics.
 
 ## Adobe Analytics-configuratie maken {#analytics-configuration}
 
-1. Navigeer naar **Gereedschappen** → **Cloud Servicen**.
+1. Navigeer naar **Gereedschappen** → **Cloud Services**.
 2. Selecteer **Adobe Analytics**.
-   ![Adobe Analytics](assets/analytics_screen2.png "WindowAdobe Analytics Window")
+   ![Adobe Analytics](assets/analytics_screen2.png "WindowAdobe Analytics-venster")
 3. Selecteer de knop **Maken** .
 4. Vul de gegevens in (zie hieronder) en klik op **Verbinden**.
 
@@ -43,18 +43,18 @@ De configuratiegebieden in het venster van de Configuratie van Adobe Analytics z
 | Gebruikersnaam | Adobe Analytics API-gebruiker |
 | Wachtwoord | Adobe Analytics-wachtwoord voor verificatie |
 | Datacenter | Het Adobe Analytics-datacenter waaraan uw account is gekoppeld (server bijvoorbeeld San Jose, Londen) |
-| Segment | Optie voor het gebruik van een Analytics-segment dat is gedefinieerd in de huidige rapporteringssuite. De Analytics-rapporten worden gefilterd op basis van het segment. Raadpleeg [deze pagina](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html) voor meer informatie. |
+| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Raadpleeg [deze pagina](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html) voor meer informatie. |
 | Rapportageopties | Een opslagplaats waar u gegevens en trekkingsrapporten verzendt. Een rapportsuite definieert de volledige, onafhankelijke rapportage op een gekozen website, een set websites of een subset van websitepagina&#39;s. U kunt de rapporten bekijken die van één enkele rapportreeks worden gehaald en kunt dit gebied in een configuratie op elk ogenblik overeenkomstig uw vereisten uitgeven. |
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
 Ga naar: **Plaatsen** → **selecteer om het even welke plaatspagina** → **Eigenschappen** → **Geavanceerd** → **Configuratie** → selecteer de configuratiehuurder.
 
-## Adobe Analytics integreren op AEM sites met behulp van Adobe starten
+## Adobe Analytics integreren op AEM sites met behulp van Adobe starten {#analytics-launch}
 
 Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De regels kunnen worden bepaald om afbeelding uit te voeren en een postvraag aan Adobe Analytics te maken:
 
-* Bekijk [deze video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) voor informatie over het configureren van de Analytics-extensie in Launch voor een basissite.
+* Bekijk [deze video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) om te leren hoe u de extensie Analytics in Launch kunt configureren voor een basissite.
 
 * Zie [deze pagina](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) voor meer informatie over het maken van regels en het verzenden van gegevens naar Adobe Analytics.
 
