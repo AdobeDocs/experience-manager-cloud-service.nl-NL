@@ -1,12 +1,12 @@
 ---
 title: Digitale middelen en afbeeldingen zoeken in AEM
-description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+source-git-commit: c0c5663999158e326bb4617f3bf34e96e7615f64
 workflow-type: tm+mt
-source-wordcount: '4491'
+source-wordcount: '4489'
 ht-degree: 6%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Middelen zoeken in AEM {#search-assets-in-aem}
 
-U kunt een hogere snelheid voor inhoud bereiken met gebruikersvriendelijke opties voor het detecteren van elementen in Experience Manager. Uw teams kunnen tijd aan markt met naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van AEM Assets of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
+U kunt een hogere snelheid voor inhoud bereiken met gebruiksvriendelijke opties voor het detecteren van elementen in de Experience Manager. Uw teams kunnen tijd aan markt met naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de AEM Assets-gebruikersinterface of andere apps en oppervlakken helpen u deze gebruiksproblemen te verhelpen.
 
 AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
@@ -31,11 +31,11 @@ AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, d
 | [Beperkingen](#tips) en [tips](#limitations) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
 
-Zoek elementen met behulp van het veld Onderzoek boven aan de AEM-webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. U kunt geavanceerde zoekopdrachten uitvoeren om het [zoekbereik](#scope)te vergroten of te beperken.
+Zoek elementen met behulp van het veld Onderzoek boven aan de AEM webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. U kunt geavanceerde zoekopdrachten uitvoeren om het [zoekbereik](#scope)te vergroten of te beperken.
 
-Gebruik het **[!UICONTROL Filters]** deelvenster om te zoeken naar elementen, mappen, tags en metagegevens. U kunt de zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van het element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md).
+Gebruik het **[!UICONTROL Filters]** deelvenster om te zoeken naar elementen, mappen, tags en metagegevens. U kunt zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md).
 
-De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
+AEM zoekfunctie ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
 ## Zoekinterface begrijpen {#searchui}
 
@@ -55,7 +55,7 @@ Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekf
 
 ## Suggesties zoeken terwijl u typt {#searchsuggestions}
 
-Wanneer u een trefwoord begint te typen, stelt AEM de mogelijke zoektrefwoorden of trefwoorden voor. De suggesties zijn gebaseerd op de middelen in AEM. AEM indexeert alle meta-gegevensgebieden om met onderzoek te helpen. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
+Wanneer u een trefwoord begint te typen, AEM u de mogelijke zoektrefwoorden of trefwoorden voor. De suggesties zijn gebaseerd op de middelen in AEM. AEM indexeert alle metagegevensvelden om te helpen met zoeken. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
 
 * Elementlabels. (afbeeldingen naar `jcr:content/metadata/cq:tags`)
 * Titel van element. (afbeeldingen naar `jcr:content/metadata/dc:title`)
@@ -69,13 +69,13 @@ Wanneer u een trefwoord begint te typen, stelt AEM de mogelijke zoektrefwoorden 
 
 U kunt trefwoordzoekopdrachten uitvoeren vanuit het veld UniverseelZoeken. De trefwoordzoekopdracht is niet hoofdlettergevoelig en bestaat uit een zoekopdracht in volledige tekst (in de veelgebruikte metagegevensvelden). Als meer dan één sleutelwoord wordt gebruikt, `AND` is de standaardexploitant tussen de sleutelwoorden. De resultaten worden gesorteerd op relevantie, te beginnen met de dichtstbijzijnde overeenkomsten. Voor meerdere trefwoorden zijn relevantere resultaten de elementen die beide termen in de metagegevens bevatten. Trefwoorden die in de metagegevens voorkomen, krijgen een hogere positie dan trefwoorden die in andere metagegevensvelden worden weergegeven.
 
-Met AEM kan een bepaalde zoekterm een hoger gewicht krijgen. Ook is het mogelijk de positie van een paar doelactiva voor specifieke zoektermen te versterken. AEM-beheerders kunnen deze configuraties uitvoeren zoals hieronder wordt beschreven.
+AEM maakt het mogelijk een bepaalde zoekterm een hoger gewicht te geven. Ook is het mogelijk de positie van een paar doelactiva voor specifieke zoektermen te versterken. AEM beheerders kunnen deze configuraties uitvoeren zoals hieronder wordt beschreven.
 
 Om de relevante activa snel te vinden, verstrekt de rijke interface het filtreren, het sorteren, en selectiemechanismen. U kunt resultaten filteren op basis van meerdere criteria en het aantal gezochte elementen voor verschillende filters bekijken. U kunt de zoekopdracht ook opnieuw uitvoeren door de query in het veld Onderzoek te wijzigen. Wanneer u de zoektermen of filters wijzigt, blijven de andere filters van toepassing om de context van de zoekopdracht te behouden.
 
 Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#unexpectedresults)voor meer informatie.
 
-AEM kan vele dossierformaten zoeken en de onderzoeksfilters kunnen worden aangepast aan uw bedrijfsvereisten. Neem contact op met uw beheerders voor meer informatie over de zoekopties die beschikbaar worden gesteld voor uw DAM-opslagplaats en over de beperkingen die uw aanmelding kan hebben.
+AEM kan zoeken in vele bestandsindelingen en de zoekfilters kunnen worden aangepast aan uw zakelijke vereisten. Neem contact op met uw beheerders voor meer informatie over de zoekopties die beschikbaar worden gesteld voor uw DAM-opslagplaats en over de beperkingen die uw aanmelding kan hebben.
 
 <!-- 
 ### Results with and without Enhanced Smart Tags {#withsmarttags}
@@ -137,7 +137,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ### Adobe Stock-afbeeldingen {#adobestock}
 
-Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock.
+Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken naar [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
 ### Dynamische media-elementen {#dmassets}
 
@@ -183,19 +183,19 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 * Elementen weergeven met eigenschapswaarden die beginnen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:Scott*`
 * Elementen weergeven met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:*Reynolds`
 * Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: titel = Bazel-vergaderruimte): `title:*Meeting*`
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar een Adobe-tekenreeks in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
+* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar string Adobe in assets met title=Jan Smit): `*Adobe* title:"John Doe"`
 
-## Elementen zoeken vanuit andere AEM-aanbiedingen of -interfaces {#beyondomnisearch}
+## Elementen zoeken vanuit andere AEM of interfaces {#beyondomnisearch}
 
-Met Adobe Experience Manager (AEM) wordt de DAM-opslagplaats verbonden met verschillende andere AEM-oplossingen, zodat u sneller toegang hebt tot digitale middelen en de creatieve workflows kunt stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige onderzoeksmethodes veranderen aangezien het doelpubliek, de gebruiksgevallen, en de gebruikersinterface over de oplossingen AEM variëren. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
+Adobe Experience Manager (AEM) verbindt DAM-opslagplaats met verschillende andere AEM oplossingen om snellere toegang tot digitale middelen te bieden en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige onderzoeksmethodes veranderen aangezien het doelpubliek, de gebruiksgevallen, en de gebruikersinterface over de AEM oplossingen variëren. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
-### Middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
+### Middelen zoeken vanuit het deelvenster Adobe-itemkoppeling {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in AEM Assets, zonder de ondersteunde Adobe Creative Cloud-toepassingen te verlaten. Creative Cloud kan naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de Creative Cloud-apps: Photoshop, Illustrator en InDesign. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De visuele resultaten van de zoekweergave worden aangedreven door de computerleeralgoritmen van Adobe Sensei en helpen gebruikers bij het zoeken naar beelden die er esthetisch op lijken. Zie [Zoeken naar en bladeren door middelen](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met Adobe Asset Link.
+Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in AEM Assets, zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve gebruikers kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de Creative Cloud-apps: Photoshop, Illustrator en InDesign. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [Zoeken naar en bladeren door middelen](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met Adobe Asset Link.
 
-### Middelen zoeken in de AEM-bureaubladtoepassing {#desktopapp}
+### Middelen zoeken in AEM bureaubladtoepassing {#desktopapp}
 
-Creatieve professionals gebruiken de desktop-app om de AEM-middelen gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd - de wijzigingen worden weer opgeslagen in AEM met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, * en ? jokertekens en operator AND. Zie middelen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) zoeken, zoeken en voorvertonen in de bureaubladtoepassing.
+Creatieve professionals gebruiken de desktop-app om de AEM Assets gemakkelijk doorzoekbaar te maken en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in AEM met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, * en ? jokertekens en operator AND. Zie middelen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) zoeken, zoeken en voorvertonen in de bureaubladtoepassing.
 
 ### Middelen zoeken in Brand Portal {#brandportal}
 
@@ -203,7 +203,7 @@ De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van he
 
 ### Adobe Stock-afbeeldingen zoeken {#adobestock-1}
 
-Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt **[!UICONTROL Filters]** dit deelvenster ook gebruiken om alle onder licentie of zonder licentie geplaatste middelen te zoeken of een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt ook **[!UICONTROL Filters]** het deelvenster gebruiken om alle onder licentie gegeven of niet-gelicentieerde elementen te zoeken of een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Dynamische media-elementen zoeken {#dynamicmedia}
 
@@ -218,7 +218,7 @@ Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken na
 
 ### Verzamelingen zoeken {#collections}
 
-De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
+AEM zoekfunctie ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
 ## Elementkiezer {#assetselector}
 
@@ -248,13 +248,13 @@ Bladeren en element selecteren in de elementkiezer
 De zoekfunctie in AEM Assets heeft de volgende beperkingen:
 
 * Geef geen regelafstand op in de zoekopdracht als de zoekopdracht anders niet werkt.
-* AEM kan de zoekterm blijven weergeven nadat u eigenschappen van een element hebt geselecteerd uit de gezochte resultaten en vervolgens de zoekopdracht hebt geannuleerd (CQ-4273540).
+* AEM kan de zoekterm blijven weergeven nadat u eigenschappen van een element hebt geselecteerd in de gezochte resultaten en vervolgens de zoekopdracht hebt geannuleerd (CQ-4273540).
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
-* Als u op de geretourneerde waarde drukt zonder iets te koppelen op de zoekbalk, retourneert AEM een lijst met alleen bestanden en niet mappen. Als u specifiek naar mappen zoekt zonder een trefwoord te gebruiken, geeft AEM geen resultaten.
+* Als u op de geretourneerde waarde drukt zonder iets te koppelen op de zoekbalk, wordt AEM een lijst met alleen bestanden en niet mappen geretourneerd. Als u specifiek naar mappen zoekt zonder een trefwoord te gebruiken, retourneert AEM geen resultaten.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
-* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimumaantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
+* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
 * U kunt het model niet wijzigen of AEM trainen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
 
 ## Zoektips {#tips}
@@ -267,7 +267,7 @@ Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 * Bij zoeken in volledige tekst worden onder andere operatoren zoals -, ^ ondersteund. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
 * Als de zoekresultaten te veel zijn, beperkt u het [zoekbereik](#scope) tot nul-in op de gewenste elementen. Het werkt het beste als u een idee hebt van hoe u beter kunt zoeken naar de gewenste elementen, bijvoorbeeld een specifiek bestandstype, een specifieke locatie, specifieke metagegevens, enzovoort.
 
-* **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. AEM biedt methoden om elementen automatisch te labelen met gebruik van de kunstmatig intelligente services van Adobe Sensei, waarmee u uw middelen steeds beter kunt labelen met gebruik en training. Wanneer u naar elementen zoekt, wordt met de slimme tags rekening gehouden als de functie op uw account is ingeschakeld. Het werkt naast de ingebouwde zoekfunctionaliteit. Zie [zoekgedrag](#searchbehavior). Als u de volgorde waarin de zoekresultaten worden weergegeven, wilt optimaliseren, kunt u de zoekpositie [van een aantal geselecteerde elementen](#searchrank) verhogen.
+* **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. AEM biedt methoden om elementen automatisch te labelen met behulp van Adobe Sensei-services die kunstmatig intelligent zijn en die uw middelen steeds beter kunnen coderen met gebruik en training. Wanneer u naar elementen zoekt, wordt met de slimme tags rekening gehouden als de functie op uw account is ingeschakeld. Het werkt naast de ingebouwde zoekfunctionaliteit. Zie [zoekgedrag](#searchbehavior). Als u de volgorde waarin de zoekresultaten worden weergegeven, wilt optimaliseren, kunt u de zoekpositie [van een aantal geselecteerde elementen](#searchrank) verhogen.
 
 * **Indexeren**: Alleen geïndexeerde metagegevens en elementen worden geretourneerd in de zoekresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [indexeren](#searchindex).
 
@@ -400,9 +400,9 @@ Wanneer bepaalde gezochte elementen aan uw criteria voldoen, kunt u de volgende 
 
 ### Zoekresultaten sorteren {#sort}
 
-Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Het sorteren van zoekresultaten werkt in de lijstweergave en alleen wanneer u **[[!UICONTROL Bestanden]](#searchui)** selecteert in het deelvenster **[!UICONTROL Filters]**. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Sorting search results works in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
 Zie [beperkingen](#limitations)voor beperkingen van de sorteerfunctionaliteit.
 
@@ -439,7 +439,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 
 ## Onverwachte zoekresultaten {#unexpectedresults}
 
-**Zoeken naar ontbrekende metagegevens**: Bij het zoeken naar elementen waarvoor de verplichte metagegevens ontbreken, kan AEM elementen weergeven die geldige metagegevens hebben. Ontbrekende metagegevens worden gedetecteerd en gerapporteerd op basis van de eigenschap voor geïndexeerde metagegevens. Zelfs als de metagegevens van de elementen vast zijn, worden deze als ontbrekende metagegevens weergegeven totdat de indexering opnieuw plaatsvindt. Zie [verplichte metagegevens](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+**Zoeken naar ontbrekende metagegevens**: Bij het zoeken naar elementen waarbij de verplichte metagegevens ontbreken, kunnen AEM elementen weergeven die geldige metagegevens hebben. Ontbrekende metagegevens worden gedetecteerd en gerapporteerd op basis van de eigenschap voor geïndexeerde metagegevens. Zelfs als de metagegevens van de elementen vast zijn, worden deze als ontbrekende metagegevens weergegeven totdat de indexering opnieuw plaatsvindt. Zie [verplichte metagegevens](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
 
 **Te veel zoekresultaten**: U kunt voorkomen dat u te veel zoekresultaten krijgt door de zoekresultaten te beperken. Als u bijvoorbeeld naar elementen wilt zoeken in DAM, selecteert u deze `Location:Assets` in de balk Zoeken. Zie [zoekbereik](#scope)voor meer zoekfilters.
 
@@ -450,9 +450,9 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**Geen suggesties voor automatisch aanvullen van nieuw geüploade elementen**: De metagegevens (titels, tags, enzovoort) van de onlangs geüploade elementen zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk gaat typen. AEM-elementen wachten tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegen de metagegevens vervolgens toe aan de lijst met suggesties.
+**Geen suggesties voor automatisch aanvullen van nieuw geüploade elementen**: De metagegevens (titels, tags, enzovoort) van de onlangs geüploade elementen zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk gaat typen. AEM Assets wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt vervolgens de metagegevens toe aan de lijst met suggesties.
 
-**Geen zoekresultaten**: Als AEM en een lege pagina voor een onderzoeksvraag toont, kunnen de volgende redenen zijn:
+**Geen zoekresultaten**: Als AEM en een lege pagina voor een onderzoeksvraag toont, kan het volgende redenen zijn:
 
 * Er bestaan geen elementen die overeenkomen met uw query.
 * U voegt witruimte toe vóór de zoekquery. Het is een [bekende beperking](#limitations).
@@ -468,4 +468,4 @@ Zie de volgende onderwerpen en mogelijke maatregelen:
 
 * Neem contact op met de beheerder als een verwacht zoekfilter/voorspeld niet zichtbaar is.
 * Bij het zoeken naar visueel vergelijkbare afbeeldingen kan het gebeuren dat een verwachte afbeelding in de zoekresultaten ontbreekt. Controleer of deze elementen geïndexeerd en slim gecodeerd zijn.
-* Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt soms een schijnbaar irrelevante afbeelding weergegeven in de zoekresultaten. AEM geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift.
+* Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt soms een schijnbaar irrelevante afbeelding weergegeven in de zoekresultaten. AEM geeft zoveel mogelijk relevante elementen weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift.
