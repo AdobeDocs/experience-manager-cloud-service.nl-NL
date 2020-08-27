@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
+source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '996'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,51 @@ ht-degree: 1%
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
 
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* Mogelijkheid om pagina&#39;s en subpagina&#39;s (paginastructuren) te herstellen naar een eerdere versie.
+
+* Mogelijkheid om Launches te maken in AEM SPA Editor.
+
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
-* De nieuwe [!DNL Experience Manager Assets] plaatsingen worden geïntegreerd met [!DNL Adobe Developer Console] door gebrek. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, [vormen de beheerders slimme markeringen integratie](/help/assets/smart-tags-configuration.md#aio-integration) zoals voordien.
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Videotranscodering wordt nu ondersteund met asset-microservices, met een nieuwe sectie Video op het [!UICONTROL Processing Profiles] scherm die de configuratie van videobitsnelheid en -afmetingen ondersteunt (uitvoerindeling is MP4 met H.264-codec). Zie Video-elementen [beheren voor meer informatie](/help/assets/manage-video-assets.md#transcode-video). Voor meer transcoderingsopties en [!DNL Dynamic Media] invoegtoepassing voor het afleveren van video kan worden gebruikt.
+
+* Voor nieuwe [!DNL Experience Manager Assets] plaatsingen, wordt de slimme etiketteringsfunctionaliteit nu gevormd door gebrek. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties [configureren beheerders de integratie](/help/assets/smart-tags-configuration.md#aio-integration) van slimme tags zoals voorheen.
+
+* Een nieuwe ervaring [bij het downloaden van](/help/assets/download-assets-from-aem.md) middelen is mogelijk.
+
+   * Asynchrone download voor grote downloads zodat de gebruikers niet hoeven te wachten.
+
+   * Een nieuwe modulaire API voor uitbreidbaarheid voor ontwikkelaars.
+
+* [!DNL Experience Manager] heeft de prestaties verbeterd van het ophalen van metagegevens voor assetmicroservices. Het verhoogt de algemene productie van activa.
+
+* Gebruik het verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [Aangepaste metagegevens met verwerkingsprofiel](/help/assets/manage-metadata.md#metadata-compute-service)
+
+* Een eenvoudigere downloadervaring voor gebruikers van het Brand Portal die beheerders kunnen configureren. Zie Overzicht [van](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)downloadervaring.
+
+* Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documentviewer.
+
+* Gebruikersinterface voor het ongeldig maken van de cache is nu beschikbaar in [!DNL Dynamic Media].
+
+* Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, browse en zoekervaring in [!DNL Assets].
+
+   * Als u na het selecteren van de [!UICONTROL Add Rendition] optie op de Esc-toets drukt, keert de focus terug naar de werkbalk. <!-- via CQ-4293594-->
+   * De toetsenbordfocus werkt zoals u had verwacht bij het gebruik van het invoervak E-mail. <!-- via CQ-4286215 -->
+   * De accordeonelementen in de sectie met zoekfilters worden geïnterpreteerd als standaard uitbreidbare accordeons. <!-- via CQ-4273103 -->
+   * Wanneer u een tag toepast op een element, worden labels in het dialoogvenster weergegeven als boomelementen. ARIA-kenmerken worden op de juiste wijze toegepast op de boomelementen om ze nu toegankelijk te maken. <!-- via CQ-4272964 -->
+
+* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Hierdoor wordt de compatibiliteit met versie [!DNL AEM] 6.5.5 verbeterd [!DNL Service Pack] en wordt de compatibiliteitslijst van het besturingssysteem van de client bijgewerkt ( [!DNL Windows] 7 en [!DNL MacOS] versies voor 10.14 worden verwijderd).
+
+### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed}
+
+* De optie Relate en unrelationship reageert niet wanneer voor het eerst geklikt. (CQ-4299022)
+* Als u tijdens het downloaden van een element de optie selecteert om het via e-mail te ontvangen, wordt het e-mailbericht niet verzonden. (CQ-4299146)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -42,6 +84,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * Gesamberde omgevingen kunnen worden gedehiberneerd op de pagina **Overzicht** van Cloud Manager.
 
+* Mogelijkheid om ervaringscontroles uit te voeren op pagina&#39;s, aangedreven door Google Lighthouse. Als onderdeel van de Cloud Manager-pijplijn kunnen maximaal 25 pagina&#39;s worden gecontroleerd en gevalideerd op basis van ervaringen met KPI&#39;s en scores worden weergegeven in de gebruikersinterface van Cloud Manager.
 
 ### Bug Fixes {#bug-fixes-cm}
 
@@ -85,3 +128,14 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 * De gebruikersinterface van eerdere versies toonde soms een geslaagde extractie, ook al toonde het logboek fouten.
 
+## Tools voor herstructurering van code {#code-refactoring-tools}
+
+Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen van het Refactoring van de Code is.
+
+### What&#39;s New {#what-is-new-refactoring}
+
+* De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie.
+
+* AEM Dispatcher Converter uitgebreid om conversies van On-premise- en Adobe Managed Services Dispatcher-configuraties in AEM te ondersteunen als met Cloud Service compatibele Dispatcher-configuraties. Zie [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer informatie.
+
+* AEM Dispatcher Converter herschreven in ` node.js ` en geïntegreerd met de AIO-CLI-plug-in.
