@@ -2,7 +2,7 @@
 title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 translation-type: tm+mt
-source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
+source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 4%
@@ -226,7 +226,7 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **Tijdlijnverdraaiing werkt op basis van gepubliceerde pagina** &#39;s. Tijdverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
 * **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies hebben invloed op Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp de juiste weergave niet weergeven.
-* **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#reverting-to-a-page-version).
+* **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#revert-to-a-version).
 * **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was, aangezien deze items niet in de opslagplaats zijn gecontroleerd.
 
 >[!CAUTION]
