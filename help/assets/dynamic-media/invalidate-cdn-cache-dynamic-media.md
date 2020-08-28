@@ -2,9 +2,9 @@
 title: De CDN-cache ongeldig maken via Dynamic Media
 description: Door de inhoud van uw CDN (Content Delivery Network) die in de cache is opgeslagen te valideren, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
 translation-type: tm+mt
-source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
+source-git-commit: d025a44fea539e1d7a0d76fe20dd818a88c43fd8
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,11 @@ Zie ook [Caching overzicht in Dynamische Media](https://helpx.adobe.com/experien
 
 **De CDN-cache ongeldig maken met behulp van dynamische media**
 
-*Deel 1: Een CDN-validatiesjabloon maken*
+*Deel 1 van 2: Een CDN-validatiesjabloon maken*
 
 1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation Template.]**
 
-<!--
-    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
--->
+   ![Functie voor CDN-validatie](/help/assets/assets-dm/cdn-invalidation-template.png)
 
 1. Voer op de **[!UICONTROL CDN Invalidation Template]** pagina een van de volgende opties uit op basis van uw scenario:
 
@@ -39,9 +37,10 @@ Zie ook [Caching overzicht in Dynamische Media](https://helpx.adobe.com/experien
 
    ![CDN-validatiesjabloon - maken](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Tik in de rechterbovenhoek van de pagina CDN-validatiesjabloon op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK]**.
+1. Tik in de rechterbovenhoek van de pagina CDN-validatiesjabloon op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK]**.<br>
 
-   *Deel 2: Opties voor CDN-validatie instellen*
+   *Deel 2 van 2: Opties voor CDN-validatie instellen*
+   <br>
 
 1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation.]**
 
