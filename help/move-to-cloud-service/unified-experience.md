@@ -2,7 +2,7 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 translation-type: tm+mt
-source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
+source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
