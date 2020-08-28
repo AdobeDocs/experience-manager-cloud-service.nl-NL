@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ Indexbeheer gaat over het toevoegen, verwijderen en wijzigen van indexen. Het wi
 
 ### Wat is een blauw-groene implementatie {#what-is-blue-green-deployment}
 
-Blauw-groene implementatie kan downtime verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing (blauw) wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd (groen).
+Met blauw-groene implementatie kunt u downtime verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing (blauw) wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd (groen).
 
 ### Alleen-lezen en Gebieden lezen/schrijven {#read-only-and-read-write-areas}
 
@@ -153,7 +153,7 @@ Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene
 
 ### Een index verwijderen {#removing-an-index}
 
-Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een index zonder gegevens aan index), met een nieuwe naam bepalen. U kunt deze bijvoorbeeld een naam geven `/oak:index/acme.product-custom-3`. Hiermee vervangt u de index `/oak:index/acme.product-custom-2`. Nadat de lege index door het systeem `/oak:index/acme.product-custom-2` is verwijderd, `/oak:index/acme.product-custom-3` kan deze ook worden verwijderd.
+Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een index zonder gegevens aan index), met een nieuwe naam bepalen. U kunt deze bijvoorbeeld een naam geven `/oak:index/acme.product-custom-3`. Hiermee wordt de index vervangen `/oak:index/acme.product-custom-2`. Nadat de lege index door het systeem `/oak:index/acme.product-custom-2` is verwijderd, `/oak:index/acme.product-custom-3` kan deze ook worden verwijderd.
 
 ### Een index toevoegen {#adding-an-index}
 
@@ -176,3 +176,7 @@ De oude versie van de toepassing gebruikt de volgende configuratie:
 De nieuwe versie van de toepassing gebruikt de volgende (veranderde) configuratie:
 
 `/oak:index/acme.product-custom-2`
+
+### Index-beschikbaarheid/fout-tolerantie {#index-availability}
+
+Het wordt aanbevolen dubbele indexen te maken voor functies die van groot belang zijn (rekening houdend met de bovenstaande naamgevingsconventie voor indexen). In het geval van indexbeschadiging of een dergelijke onvoorziene gebeurtenis is er dus een fallback-index beschikbaar om te reageren op query&#39;s.
