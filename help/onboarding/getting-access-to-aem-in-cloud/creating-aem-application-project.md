@@ -2,10 +2,10 @@
 title: Toepassingsproject AEM - Cloud Service
 description: Toepassingsproject AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 1af31272f0052c557206c82a7e6c7480abca1024
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 9%
+source-wordcount: '1675'
+ht-degree: 8%
 
 ---
 
@@ -246,6 +246,9 @@ En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buite
 
 ## Ondersteuning voor met wachtwoord beveiligde gegevensopslagruimte {#password-protected-maven-repositories}
 
+>[!NOTE]
+>Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd, momenteel niet wordt uitgevoerd via de Quality Gates van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java evenals de volledige code van de projectbron samen met het binaire getal op te stellen.
+
 Als u een met een wachtwoord beveiligde gegevensopslagruimte vanuit Cloud Manager wilt gebruiken, geeft u het wachtwoord (en eventueel de gebruikersnaam) op als een geheime [Pipeline-variabele](#pipeline-variables) en verwijst u naar dat geheim in een bestand dat in de gegevensopslagruimte `.cloudmanager/maven/settings.xml` is genoemd. Dit bestand volgt het schema [Maven Settings File](https://maven.apache.org/settings.html) . Wanneer het buildproces van Cloud Manager wordt gestart, wordt het `<servers>` `settings.xml` element in dit bestand samengevoegd met het standaardbestand dat wordt geleverd door Cloud Manager. Server-id&#39;s die beginnen met `adobe` en `cloud-manager` worden beschouwd als gereserveerd en mogen niet worden gebruikt door aangepaste servers. Server-id&#39;s komen **niet** overeen met een van deze voorvoegsels, anders `central` wordt de standaard-id nooit weerspiegeld door Cloud Manager. Als dit bestand is geïnstalleerd, wordt er vanuit een `<repository>` en/of `<pluginRepository>` element in het `pom.xml` bestand naar de server-id verwezen. Over het algemeen worden deze `<repository>` en/of `<pluginRepository>` elementen opgenomen in een specifiek profiel [voor](#activating-maven-profiles-in-cloud-manager)Cloud Manager, hoewel dat niet strikt noodzakelijk is.
 
 Stel bijvoorbeeld dat de gegevensopslagruimte zich bevindt op https://repository.myco.com/maven2, dat de gebruikersnaam is ingesteld op Cloud Manager `cloudmanager` en dat het wachtwoord is `secretword`.
@@ -311,6 +314,54 @@ En ten slotte verwijs naar de server-id in het `pom.xml` bestand:
         </build>
     </profile>
 </profiles>
+```
+
+### Bronnen implementeren {#deploying-sources}
+
+Het is een goede praktijk om de bronnen van Java samen met binair aan een Geweven bewaarplaats op te stellen.
+
+Vorm maven-bron-stop in uw project:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### Projectbronnen implementeren {#deploying-project-sources}
+
+Het is een goede praktijk om de volledige projectbron samen met binair aan een Geweven bewaarplaats op te stellen - dit staat toe om het nauwkeurige artefact te herbouwen.
+
+Vorm maven-assemblage-stop in uw project:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
