@@ -2,9 +2,9 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
+source-wordcount: '4551'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ Met de **Sjablooneditor** kunnen sjabloonauteurs:
 
 In dit document wordt uitgelegd hoe een **sjabloonauteur** de sjabloonconsole en -editor kan gebruiken om bewerkbare sjablonen te maken en te beheren.
 
-Voor gedetailleerde informatie over hoe de editable malplaatjes op een technisch niveau werken, te zien gelieve het document van de ontwikkelaar Pagina Malplaatjes - editable voor meer informatie. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+Zie het ontwikkelaarsdocument [Paginasjablonen](/help/implementing/developing/components/templates.md) voor meer informatie voor gedetailleerde informatie over hoe bewerkbare sjablonen op technisch niveau werken.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
-Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak die wordt beschreven in het document Paginasjablonen - Bewerkbaar. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak die wordt beschreven in de [paginasjablonen](/help/implementing/developing/components/templates.md#template-folders)voor het document.—>
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
@@ -104,9 +104,9 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
    >[!NOTE]
    >
-   >In een standaard AEM-instantie bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
+   >In een standaard AEM bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
    >
-   >Het wordt aanbevolen een sjabloonmap te gebruiken die voor uw project is gemaakt. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >Het wordt aanbevolen een [sjabloonmap te gebruiken die voor uw project](/help/implementing/developing/components/templates.md#template-folders)is gemaakt.
 
 1. Selecteer **Maken**, gevolgd door **Sjabloon** maken om de wizard te openen.
 
@@ -114,7 +114,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
    >[!NOTE]
    >
-   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie vindt u in het ontwikkelaarsdocument Paginasjablonen - Bewerkbaar. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie vindt u in de [paginasjablonen](/help/implementing/developing/components/templates.md#template-type)van het ontwikkelaarsdocument.—>
 
 1. Voer de **sjabloondetails** in:
 
@@ -204,7 +204,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
    >Als de lijst **Toegestane sjablonen** leeg blijft, wordt de structuur opgetrokken totdat een waarde/lijst wordt gevonden.
    >
    >
-   >Zie Sjabloonbeschikbaarheid - de principes voor toegestane sjablonen blijven ongewijzigd. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >Zie Beschikbaarheid [van](/help/implementing/developing/components/templates.md#template-availability) sjabloon - de principes voor toegestane sjablonen blijven ongewijzigd.
 
 1. Klik op **Opslaan** om de wijzigingen in de pagina-eigenschappen op te slaan.
 
@@ -265,7 +265,7 @@ Wanneer een component ontgrendeld is, kunt u de [eerste inhoud](#editing-a-templ
 
 #### Indeling {#template-layout}
 
-Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf bepalen. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out **voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf bepalen. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Paginabeleid {#template-page-policies}
 
@@ -410,11 +410,11 @@ Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de to
 
 >[!CAUTION]
 >
->In AEM worden uitsnijdverhoudingen gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die pagina&#39;s schrijven, zullen zich niet bewust zijn van enig verschil op voorwaarde dat u de **naam** duidelijk definieert aangezien dit is wat wordt weergegeven in de gebruikersinterface.
+>Let op: in AEM uitsnijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die pagina&#39;s schrijven, zullen zich niet bewust zijn van enig verschil op voorwaarde dat u de **naam** duidelijk definieert aangezien dit is wat wordt weergegeven in de gebruikersinterface.
 
 >[!NOTE]
 >
->Het beleid van de inhoud voor componenten die de rijke tekstredacteur uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages UI ter beschikking worden gesteld. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[Het beleid van de inhoud voor componenten die de rijke tekstredacteur](/help/implementing/developing/extending/rich-text-editor.md) uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages UI ter beschikking worden gesteld.
 
 #### Beleid en eigenschappen (container voor layout) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 >[!NOTE]
 >
->**De modus Oorspronkelijke inhoud** kan worden gebruikt als bewerkingsmodus voor pagina&#39;s die met die sjabloon zijn gemaakt. Het beleid wordt daarom niet gedefinieerd in de modus **Oorspronkelijke inhoud** , maar in de modus [**Structuur **](#editing-a-template-structure-template-author).
+>**De modus Oorspronkelijke inhoud** kan worden gebruikt als bewerkingsmodus voor pagina&#39;s die met die sjabloon zijn gemaakt. Daarom wordt het beleid niet gedefinieerd in de modus **Oorspronkelijke inhoud** , maar in de modus [**Structuur**](#editing-a-template-structure-template-author).
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
@@ -550,6 +550,7 @@ Het dialoogvenster **Paginabeleid** openen:
 
    * De linkerhelft definieert het [paginabeleid](#page-policies)
    * De rechterhelft definieert de [pagina-eigenschappen](#page-properties)
+
    ![Paginaontwerp](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Paginabeleid {#page-policies}
@@ -615,7 +616,7 @@ Met de optie Eigenschappen **van** eerste pagina kunt u de eerste [pagina-eigens
 
 1. Bevestig uw definities met **Gedaan**.
 
-## Best Practices {#best-practices}
+## Best practices voor {#best-practices}
 
 Houd bij het maken van sjablonen rekening met:
 
@@ -638,6 +639,7 @@ Houd bij het maken van sjablonen rekening met:
 
       * Alleen structuur - onmiddellijk toegepast
       * Bevat initiële inhoud - alleen op pagina&#39;s die na de wijziging zijn gemaakt
+
    Wees extra voorzichtig als:
 
    * Componenten op ingeschakelde sjablonen vergrendelen of ontgrendelen.
@@ -645,6 +647,7 @@ Houd bij het maken van sjablonen rekening met:
 
       * Ontgrendelingscomponenten (die vergrendeld waren) ontbreken op bestaande pagina&#39;s.
       * Door componenten te vergrendelen (die bewerkbaar waren) wordt die inhoud niet op de pagina&#39;s weergegeven.
+
    >[!NOTE]
    >
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
