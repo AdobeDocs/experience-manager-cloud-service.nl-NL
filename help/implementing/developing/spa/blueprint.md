@@ -2,7 +2,7 @@
 title: SPA-blauwdruk
 description: Dit document beschrijft het algemene, kader-onafhankelijke contract dat om het even welk kader van het KUUROORD zou moeten vervullen om editable componenten van het KUUROORD binnen AEM uit te voeren.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Om de auteur toe te laten om de AEM Redacteur van het KUUROORD te gebruiken om de inhoud van een KUUROORD uit te geven, zijn er vereisten die het KUUROORD moet vervullen.
 
-## Inleiding {#introdcution}
+## Inleiding {#introduction}
 
 Dit document beschrijft het algemene contract dat om het even welk kader van het KUUROORD (d.w.z. het soort AEM steunlaag) zou moeten vervullen om editable componenten van het KUUROORD binnen AEM uit te voeren.
 
@@ -283,4 +283,3 @@ Zie hoe een eenvoudige KUUROORD werkt en met een KUUROORD zelf experimenteert do
 Voor meer informatie over SPAs in AEM, zie de volgende documenten:
 
 * [Het Overzicht](editor-overview.md) van de Redacteur van het KUUROORD voor een overzicht van SPAs in AEM en het communicatie model
-
