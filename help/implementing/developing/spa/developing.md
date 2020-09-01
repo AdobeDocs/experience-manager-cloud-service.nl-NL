@@ -2,9 +2,9 @@
 title: Het ontwikkelen van SPAs voor AEM
 description: Dit artikel stelt belangrijke vragen in overweging wanneer het in dienst nemen van een front-end ontwikkelaar om een KUUROORD voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPAs om in mening te houden wanneer het opstellen van een ontwikkelde KUUROORD op AEM.
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als headless CMS zonder het kader van SDK van de Redacteur van het <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">KUUROORD te gebruiken.</a></td>
+   <td>AEM wordt gebruikt als headless CMS zonder het kader van SDK van de Redacteur van het <a href="/help/implementing/developing/spa/reference-materials.md">KUUROORD te gebruiken.</a></td>
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td>
    <td><p>Inhoudsauteurs kunnen geen gebruik maken van AEM ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td>
   </tr>
