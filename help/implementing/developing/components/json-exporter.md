@@ -2,7 +2,7 @@
 title: JSON-exportfunctie voor services voor inhoud
 description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt.
 translation-type: tm+mt
-source-git-commit: 02d95b7c45cb4d6d2fbfd9699690ecc1b80e1202
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en de `.js
 
 1. Zal inhoud leveren zoals:
 
-   ![JSON-model van WKND-inhoud](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![JSON-model van WKND-inhoud](assets/json-model-wknd.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
@@ -56,7 +56,7 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 * Zal inhoud leveren zoals:
 
-   ![JSON-model van WKND-inhoudsfragment](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+   ![JSON-model van WKND-inhoudsfragment](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
