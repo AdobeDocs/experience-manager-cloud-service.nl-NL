@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 6%
 
 ---
@@ -129,11 +129,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **Overgenomen van &lt;path>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * Geeft aan of de pagina wordt overgeërfd. en waar van.
 
 * **Cloud Configuration**
 
@@ -148,7 +146,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * Schakel het gebruik van verificatie in (of uit) om toegang te krijgen tot de pagina.
    >[!NOTE]
    >
-   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)**.
+   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)** .
 
 * **Aanmeldingspagina**
 
