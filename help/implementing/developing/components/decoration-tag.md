@@ -2,7 +2,7 @@
 title: Decoratietag
 description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Zie de [HTML-documentatie](https://docs.adobe.com/content/help/en/experience-man
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
-![Beslissingsboom](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![Beslissingsboom](assets/decoration-tag-decision-tree.png)
 
 ### Gevallen gebruiken {#use-cases}
 
