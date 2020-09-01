@@ -2,7 +2,7 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 >
 >De gebruiker moet over de machtiging **Wijzigen/Maken/Verwijderen** op het knooppunt beschikken `/content/versionhistory` om de functie te kunnen gebruiken.
 >
->Zie Developing and Page Diff voor meer technische details over deze functie. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Zie [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details over deze functie.
 
 ## Use {#use}
 
@@ -105,4 +105,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Raadpleeg de documentatie voor ontwikkelaars van deze functie voor meer informatie over de werking van het mechanisme voor paginascheiding en de beperkingen die paginavervorming kunnen beïnvloeden. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Zie de documentatie over [de](/help/implementing/developing/introduction/page-diff.md) ontwikkelaar van deze functie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden.
