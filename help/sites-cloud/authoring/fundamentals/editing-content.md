@@ -2,7 +2,7 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 6%
@@ -129,7 +129,7 @@ De tijdelijke aanduiding van de component is een indicator waarmee wordt aangege
 
 U kunt een nieuwe component toevoegen door [componentenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)te gebruiken. In de [plaatsaanduiding](#component-placeholder) van de component ziet u waar de component wordt geplaatst:
 
-1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Zorg ervoor dat de pagina in de modus [**Bewerken** staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Sleep de vereiste component naar de [gewenste positie](#component-placeholder).
 1. [Bewerk](#edit-content) de component.
@@ -142,7 +142,7 @@ U kunt een nieuwe component toevoegen door [componentenbrowser](/help/sites-clou
 
 U kunt een nieuwe component toevoegen door de componenten van de **Belemmering hier** van het paragraafsysteem te gebruiken:
 
-1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Zorg ervoor dat de pagina in de modus [**Bewerken** staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
    * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
@@ -165,7 +165,7 @@ Dit gedrag kan voor uw installatie worden gevormd. Zie Een alineasysteem configu
 
 Een component maken door een van de bovenstaande elementtypen te slepen:
 
-1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Zorg ervoor dat de pagina in de modus [**Bewerken** staat](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open de [middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Sleep het vereiste element naar de gewenste positie. De [plaatsaanduiding](#component-placeholder) van de component geeft aan waar de component wordt geplaatst.
 
@@ -177,7 +177,7 @@ Een component maken door een van de bovenstaande elementtypen te slepen:
 >
 >Op een mobiel apparaat vult de middelenbrowser het volledige scherm. Nadat u een element hebt gesleept, wordt de pagina in de browser weergegeven, zodat u het element kunt plaatsen.
 
-Als u bij het bladeren door de elementen een snelle wijziging in een element moet aanbrengen, kunt u de middeleneditor rechtstreeks vanuit de browser starten door op het bewerkingspictogram naast de naam van het element te klikken. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+Als u bij het bladeren door de elementen een snelle wijziging in een element moet aanbrengen, kunt u de [middeleneditor](/help/assets/manage-digital-assets.md) rechtstreeks vanuit de browser starten door op het pictogram Bewerken naast de naam van het element te klikken.
 
 ![De knop Element bewerken](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -232,6 +232,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
    * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
+
    ![Knop Plakken](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -340,13 +341,14 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
    Klik of tik op de actie **Lay-out** om de lay-out van de component aan te passen.
 
-   ![De knop Lay-out van de werkbalk van de component](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![De knop Lay-out van de componentwerkbalk](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. Nadat de handeling Lay-out is geselecteerd:
 
    * De formaatgrepen voor de componentweergave.
    * De emulatorwerkbalk wordt boven in het scherm weergegeven.
    * De acties van de lay-out in plaats van de standaard geeft acties uit tonen op de componententoolbar.
+
    ![Een component in de lay-outmodus](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    U kunt de lay-out van de component nu wijzigen zoals u in de [lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)zou doen.
@@ -433,7 +435,7 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven in de
 * Hiermee kunt u navigeren met koppelingen.
 * De pagina-inhoud wordt **niet** vernieuwd.
 
-Tijdens het ontwerpen is de voorvertoningsmodus beschikbaar met het pictogram rechtsboven in de pagina-editor:
+Tijdens het ontwerpen is de voorvertoningsmodus beschikbaar met het pictogram rechtsboven in de paginaeditor:
 
 ![Knop Voorvertoning](/help/sites-cloud/authoring/assets/preview.png)
 
@@ -443,7 +445,7 @@ De optie **Weergeven als gepubliceerd** is beschikbaar in het menu [Pagina-infor
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-Met AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
 
 Een pagina kan worden vergrendeld vanuit:
 
