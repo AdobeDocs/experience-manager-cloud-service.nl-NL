@@ -2,7 +2,7 @@
 title: Uw accountomgeving configureren
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 4%
@@ -57,7 +57,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bureaubladhandelingen voor elementen weergeven**
 
-   Voor deze optie moet de AEM-bureaubladtoepassing worden gebruikt.
+   Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
 
 * **Annotatiekleur**
 
@@ -68,7 +68,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Relatieve datumpresentatie**
 
-   Om de leesbaarheid te verbeteren, worden data binnen de laatste zeven dagen als relatieve data (bijvoorbeeld drie dagen geleden) en oudere data als exacte data weergegeven (bijvoorbeeld 20 maart 2017).
+   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -85,6 +85,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
 
 * **Introductiepagina van middelen inschakelen**
@@ -93,4 +94,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bestandsconfiguratie**
 
-   Met deze optie kunt u de voorkeursconfiguratie voor Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder de integratie van Adobe Stock heeft ingeschakeld. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder de integratie [van](/help/assets/aem-assets-adobe-stock.md)Adobe Stock heeft ingeschakeld.
