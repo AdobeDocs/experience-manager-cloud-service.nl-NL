@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2554'
 ht-degree: 5%
 
 ---
@@ -93,7 +93,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Bij het maken van een nieuwe pagina valideert AEM de paginanaam volgens de conventies van AEM en het JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en het JCR.
 
 De minimaal toegestane tekens zijn:
 
@@ -103,7 +103,7 @@ De minimaal toegestane tekens zijn:
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle toegestane tekens worden in de naamgevingsconventies weergegeven. <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+Alle tekens die zijn toegestaan, staan in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Alle toegestane tekens worden in de naamgevingsconventies weergegeven. <!--Full 
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam** van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd.](/help/implementing/developing/introduction/naming-conventions.md)
 
 Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
 
@@ -122,7 +122,7 @@ Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige te
 
 #### Naam {#name}
 
-Wanneer u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die worden opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Wanneer u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![Voorbeeld van het invoeren van een ongeldige paginanaam](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -203,7 +203,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, valideert AEM de naam volgens de conventies die worden opgelegd door AEM en JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en JCR.
       * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!TIP]
@@ -362,10 +362,8 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie Sjabloonbeschikbaarheid voor meer informatie.
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
--->
+>Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Sjabloonbeschikbaarheid](/help/implementing/developing/components/templates.md#template-availability) voor meer informatie.
+—>
 
 #### Asynchrone handelingen {#asynchronous-actions}
 
@@ -409,7 +407,7 @@ De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Stat
    * **Annuleren** om de handeling af te breken
    * **Verwijder** om de handeling te bevestigen:
 
-      * Als de pagina geen verwijzingen bevat, wordt de pagina verwijderd.
+      * Als de pagina geen verwijzingen heeft, wordt de pagina verwijderd.
       * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Één of meerdere pagina&#39;s van verwijzingen worden voorzien.** U kunt Verwijderen **forceren** of **Annuleren** selecteren.
 
 >[!NOTE]
