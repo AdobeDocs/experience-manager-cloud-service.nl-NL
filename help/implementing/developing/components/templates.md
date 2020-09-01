@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 0%
@@ -512,7 +512,7 @@ Pagina&#39;s die zijn gemaakt op basis van bewerkbare sjablonen:
 
    * `cq:templateType` - Verstrekt een verwijzing naar het malplaatjetype.
 
-![Hoe sjablonen, inhoud en componenten met elkaar samenhangen](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![Hoe sjablonen, inhoud en componenten met elkaar samenhangen](assets/templates-content-components.png)
 
 In het bovenstaande diagram ziet u hoe sjablonen, inhoud en componenten met elkaar verweven zijn:
 
@@ -565,7 +565,7 @@ De evaluatie werkt als volgt:
 
 Het volgende diagram toont het sjabloonevaluatieproces:
 
-![Evaluatieproces van sjabloon](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![Sjabloonevaluatieproces](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
