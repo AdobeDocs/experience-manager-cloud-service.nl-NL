@@ -2,7 +2,7 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 10%
@@ -12,7 +12,7 @@ ht-degree: 10%
 
 # Projecten {#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Banden. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
 
 >[!CAUTION]
 >
@@ -66,13 +66,13 @@ In de **middelentegel** kunt u alle elementen verzamelen die u voor een bepaald 
 
 ![Elementen](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-U uploadt elementen rechtstreeks in de tegel. Bovendien kunt u de Reeksen van het Beeld, Reeksen van de Rotatie, of Gemengde Reeksen van Media tot stand brengen als u de Dynamische toe:voegen-aan van Media hebt.
+U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamische media beschikt.
 
 ![Afbeeldingsset](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Asset Collections {#asset-collections}
 
-Net als bij elementen kunt u verzamelingen elementen rechtstreeks aan uw project toevoegen. U definieert verzamelingen in elementen. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Net als bij elementen kunt u [elementverzamelingen](/help/assets/manage-collections.md) rechtstreeks aan uw project toevoegen. U definieert verzamelingen in elementen.
 
 ![Verzameling van middelen](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ De leden van het team kunnen van deze tegel (of hebben hun rollen veranderd) eve
 
 ### Vertaaltaak {#translation-job}
 
-In de tegel Vertaal-taak begint u een vertaling en ziet u ook de status van uw vertalingen. Zie Vertaalprojecten maken voor informatie over het instellen van uw vertaling. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+In de tegel Vertaal-taak begint u een vertaling en ziet u ook de status van uw vertalingen. Zie [Vertaalprojecten](/help/assets/translate-assets.md)maken voor informatie over het instellen van uw vertaling.
 
 ![Vertaaltaak](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -154,7 +154,7 @@ Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, c
 
 ## Projectsjablonen {#project-templates}
 
-AEM verzendt drie verschillende sjablonen uit de doos:
+AEM schepen met drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
 * Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het omvat ook twee workflows met betrekking tot media-inhoud - Verzoek om kopie (voor het aanvragen en reviseren van tekst) en Fotoopname van product (voor het beheren van productgerelateerde fotografie)
