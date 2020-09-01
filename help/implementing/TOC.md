@@ -3,10 +3,10 @@ sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 67%
+source-wordcount: '371'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,10 @@ ht-degree: 67%
    + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Logboekregistratie](developing/introduction/logging.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [Inzicht in de testresultaten](/help/implementing/developing/introduction/understand-test-results.md)
+   + [De testresultaten begrijpen](/help/implementing/developing/introduction/understand-test-results.md)
+   + [Page Diff-optie](/help/implementing/developing/introduction/page-diff.md)
+   + [Editor-beperkingen](/help/implementing/developing/introduction/editor-limitations.md)
+   + [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md)
 + Componenten en sjablonen {#components-templates}
    + [Overzicht van componenten](developing/components/overview.md)
    + [Sjablonen](developing/components/templates.md)
