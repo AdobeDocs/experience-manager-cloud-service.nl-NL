@@ -2,7 +2,7 @@
 title: Voorwaarden verbergen gebruiken
 description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet.
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
@@ -58,22 +58,22 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
 1. Standaard kan de auteur van de pagina de hoofdcomponent van de lijst gebruiken om een lijst samen te stellen met behulp van onderliggende pagina&#39;s door de optie **Onderliggende pagina&#39;s** te kiezen.
 
-   ![Componentinstellingen weergeven](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![Componentinstellingen weergeven](assets/hide-conditions-list-settings.png)
 
 1. In het ontwerpdialoogvenster van de kerncomponent van de lijst kan de sjabloonauteur de optie Onderliggende **items** uitschakelen kiezen om te voorkomen dat de optie voor het genereren van een lijst op basis van onderliggende pagina&#39;s wordt weergegeven aan de auteur van de pagina.
 
-   ![Dialoogvenster Componentontwerp weergeven](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![Dialoogvenster Componentontwerp weergeven](assets/hide-conditions-list-design.png)
 
 1. Een beleidsknooppunt wordt onder `/conf/wknd/settings/wcm/policies/wknd/components/list` met een eigenschap `disableChildren` ingesteld op `true`.
 
-   ![Knooppuntstructuur van toestand Verbergen](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![Knooppuntstructuur van toestand Verbergen](assets/hide-conditions-node-structure.png)
 
 1. De voorwaarde hide wordt gedefinieerd als de waarde van een `granite:hide` eigenschap op het knooppunt van de eigenschap dialog `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![Evaluatie van de toestand van de huid](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![Evaluatie van de toestand van de huid](assets/hide-conditions-evaluation.png)
 
 1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cdDesign.disableChildren}` evalueert tot `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
 
 1. De optie **Onderliggende pagina** &#39;s wordt niet meer weergegeven voor de auteur van de pagina wanneer deze de component List gebruikt.
 
-   ![Component weergeven met onderliggende optie uitgeschakeld](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![Component weergeven met onderliggende optie uitgeschakeld](assets/hide-conditions-child-disabled.png)
