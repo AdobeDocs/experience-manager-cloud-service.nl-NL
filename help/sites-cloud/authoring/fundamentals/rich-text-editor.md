@@ -2,7 +2,7 @@
 title: Gebruik de rijke Redacteur van de Tekst [!DNL Adobe Experience Manager] in auteursinhoud.
 description: Gebruik [!DNL Experience Manager] de Rich Text Editor om inhoud te ontwerpen.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -38,7 +38,7 @@ De werkbalk bevat doorgaans de volgende opties:
 
 Voor op tekst gebaseerde componenten, klik de volledig-schermwijze ![RTE volledig het schermknoop](/help/sites-cloud/authoring/assets/editing-full-screen.png) van de [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) om de rijke tekstredacteur te openen en de rest van de pagina inhoud te verbergen.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties is afhankelijk van de configuratie. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties is [afhankelijk van de configuratie](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE in de modus Volledig scherm](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
