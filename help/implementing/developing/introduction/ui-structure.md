@@ -2,9 +2,9 @@
 title: Structuur van de AEM-interface
 description: De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschillende sleutelelementen
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
@@ -169,4 +169,4 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening voor meer technische informatie.
+Zie voor meer technische informatie de [JS-documentatiereeks](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor.
