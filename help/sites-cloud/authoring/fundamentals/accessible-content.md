@@ -1,10 +1,10 @@
 ---
-title: Toegankelijke inhoud voor Adobe Experience Manager maken als cloudservice (WCAG 2.1-compatibiliteit)
+title: Toegankelijke inhoud voor Adobe Experience Manager maken als Cloud Service (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken als Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 translation-type: tm+mt
-source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
+source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
 workflow-type: tm+mt
-source-wordcount: '13955'
+source-wordcount: '14057'
 ht-degree: 5%
 
 ---
@@ -23,12 +23,10 @@ Als inleiding geeft het consortium een reeks secties en ondersteunende documente
 * [De WCAG-documenten](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Zie ook:
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
-* De rapporten [van de Overeenstemming van de Toegankelijkheid voor de oplossingen](https://www.adobe.com/accessibility/compliance.html)van Adobe.
 
-<!-- 
->* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
--->
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* De rapporten van de Overeenstemming van de [Toegankelijkheid voor oplossingen](https://www.adobe.com/accessibility/compliance.html)van Adobe.
+* [De Rich Text Editor configureren voor het produceren van toegankelijke inhoud](/help/implementing/developing/extending/rte-accessible-content.md)
 
 De richtsnoeren worden ingedeeld op basis van drie conformiteitsniveaus: Niveau A (laagste), Niveau AA en Niveau AAA (hoogste). De niveaus worden kort samengevat als volgt gedefinieerd:
 
@@ -74,15 +72,13 @@ Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalterna
 
 >[!NOTE]
 >
->Bepaalde Core-componenten buiten de box, zoals **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, beschikken niet over een veld**Alternatieve tekst **waarmee alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen kunnen worden toegevoegd, hoewel het veld**Label **(tabblad**[Toegankelijkheid](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) voor de gehele component aanwezig is.
+>Bepaalde Core-componenten buiten de box, zoals **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** , beschikken niet over een veld **Alternatieve tekst** waarmee alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen kunnen worden toegevoegd, hoewel het veld **Label** (tabblad **[Toegankelijkheid](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) voor de gehele component aanwezig is.
 >
 >Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt` te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken).
-
-<!--
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+>Bepaalde Core-componenten buiten de box, zoals **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** , beschikken niet over een veld **Alternatieve tekst** waarmee alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen kunnen worden toegevoegd, hoewel het veld **Label** (tabblad **[Toegankelijkheid](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) voor de gehele component aanwezig is.
+>
+>Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt`[ te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM vereist dat het veld **Alternatieve tekst** standaard wordt ingevuld. Als de afbeelding zuiver decoratief is en alternatieve tekst overbodig is, kan de optie **Afbeelding decoratief** worden gecontroleerd.
 
@@ -151,7 +147,7 @@ Toegankelijkheidsproblemen voor video en audio kunnen worden ondervonden door:
 * personen met een slechthorende werking of doof zijn, die de soundtrack niet kunnen horen;
 * Mensen die de soundtrack kunnen horen, maar niet begrijpen wat er wordt gesproken (bijvoorbeeld omdat het in een taal staat die ze niet begrijpen).
 
-Video of audio is mogelijk ook niet beschikbaar voor gebruikers die browsers of apparaten gebruiken die het afspelen van inhoud in bepaalde media-indelingen, zoals Adobe Flash, niet ondersteunen.
+Video of audio is mogelijk ook niet beschikbaar voor gebruikers die browsers gebruiken of apparaten die het afspelen van inhoud in specifieke media-indelingen, zoals Adobe Flash, niet ondersteunen.
 
 Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio voor video zonder audio), kunt u deze toegankelijk maken voor mensen die geen toegang hebben tot de oorspronkelijke inhoud.
 
@@ -169,7 +165,7 @@ Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio vo
 >
 >De richtsnoeren, [die WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)begrijpen, bevatten nadere informatie.
 
-Het invoegen van multimedia in uw AEM-webpagina&#39;s lijkt op het invoegen van een afbeelding. Aangezien multimedia-inhoud echter veel meer is dan een stilstaand beeld, zijn er verschillende instellingen en opties om te bepalen hoe de multimedia wordt afgespeeld.
+Het invoegen van multimedia in AEM webpagina&#39;s lijkt op het invoegen van een afbeelding. Aangezien multimedia-inhoud echter veel meer is dan een stilstaand beeld, zijn er verschillende instellingen en opties om te bepalen hoe de multimedia wordt afgespeeld.
 
 >[!NOTE]
 >
@@ -235,7 +231,7 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
    * Maak een tweede versie van de video-inhoud voor uitgebreide audiobeschrijvingen. Dit vermindert de moeilijkheden verbonden aan het verstrekken van gedetailleerde audiobeschrijvingen binnen de hiaten tussen bestaande dialoog, door de audio en video op aangewezen punten tijdelijk te pauzeren. Hierdoor kan een veel langere audiobeschrijving worden gegeven voordat de handeling opnieuw wordt gestart. Zoals in het vorige voorbeeld, wordt dit het best verstrekt als facultatieve extra audiospoor om verstoring voor gebruikers te verhinderen die niet de extra beschrijving nodig hebben.
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. Dit moet, waar van toepassing, een vermelding bevatten over wie spreekt, een beschrijving van de instelling, gebeurtenissen of informatie die visueel worden gepresenteerd, en mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
-Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren.
+Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren.
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
@@ -314,15 +310,16 @@ Dit succescriterium bestaat om ervoor te zorgen dat dergelijke structurele infor
 
 #### Hoe te om te ontmoeten - Informatie en Verband (1.3.1) {#how-to-meet-info-and-relationships}
 
-Met AEM kunt u eenvoudig semantisch betekenisvolle webinhoud maken met de juiste HTML-elementen. Open de pagina-inhoud in de RTE (een tekstcomponent) en gebruik het menu **Paraformat** (alineasymbool) om het juiste structuurelement op te geven (bijvoorbeeld alinea, kop, enz.).
+AEM maakt het eenvoudig semantisch betekenisvolle webinhoud samen te stellen met de juiste HTML-elementen. Open de pagina-inhoud in de RTE (een tekstcomponent) en gebruik het menu **Paraformat** (alineasymbool) om het juiste structuurelement op te geven (bijvoorbeeld alinea, kop, enz.).
 
 U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, waar van toepassing, de volgende elementen te gebruiken:
 
-* **Koppen:** Zolang u de toegankelijkheidsfuncties van RTE hebt ingeschakeld, biedt AEM 3 niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
+* **Koppen:** Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt, AEM biedt 3 niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
 
 * **Lijsten**: Met HTML kunt u drie verschillende typen lijsten opgeven:
    * Het element `<ul>` wordt gebruikt voor *ongeordende* lijsten (met opsommingstekens). Afzonderlijke lijstitems worden geïdentificeerd met behulp van het element `<li>`. Gebruik in de RTE het pictogram **Lijst met opsommingstekens**.
    * The `<ol>` element is used for *numbered* lists. Afzonderlijke lijstitems worden geïdentificeerd met behulp van het `<li>` element. In RTE, gebruik het **Genummerde pictogram van de Lijst** .
+
    Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Net als in het vorige voorbeeld waarin wordt getoond hoe alineatekst wordt ingevoerd, worden de desbetreffende lijstelementen automatisch toegevoegd aan de HTML.
 
    In de volledige-schermmodus zijn de afzonderlijke pictogrammen **Lijst met opsommingstekens** en **Genummerde lijst** zichtbaar. Als de volledige-schermmodus niet is geactiveerd, zijn de twee opties beschikbaar achter het enkele pictogram **Lijsten**.
@@ -332,23 +329,22 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
    * een `<tr>` element voor elke rij van de tabel
    * een `<th>` element voor elke rij- en kolomkop
    * een `<td>` element voor elke gegevenscel
+
    Daarnaast maken toegankelijke tabellen gebruik van de volgende elementen en kenmerken:
 
    * Het `<caption>` element wordt gebruikt om een zichtbaar bijschrift voor de tabel te verstrekken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
    * Het `<summary>` element helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Dit is met name handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
    * Het `scope` kenmerk van het `<th>` element wordt gebruikt om aan te geven of een cel een koptekst voor een bepaalde rij of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
+
    >[!NOTE]
    >
-   >Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen** (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen).
-
-   <!-- removed link syntax for ExL - Bob Bringhurst
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
-  -->
+   >Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    U opent het dialoogvenster **Tabel** door het tabblad **Tabeleigenschappen** te selecteren:
 
    * Geef een geschikt **bijschrift** op.
    * U kunt het beste standaardwaarden voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling** en **Celafstand** verwijderen aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
+
    Vervolgens kunt u met de **Celeigenschappen** kiezen of de cel een gegevens- of een kopcel is:
 
 * **Nadruk**: Gebruik het `<strong>` of het `<em>` element om nadruk te wijzen. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
@@ -357,10 +353,11 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
 
       >[!NOTE]
       >
-      >RTE in een standaardAEM installatie is opstelling aan gebruik:
+      >RTE in een standaard AEM installatie is opstelling aan gebruik:
       >
       >* `<b>` for `<strong>`
       >* `<i>` for `<em>`
+
       >
       >Ze zijn in feite hetzelfde, maar `<strong>` en `<em>` hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen om `<strong>` en `<em>` (in plaats van `<b>` en `<i>`) te gebruiken wanneer het ontwikkelen van uw projectinstantie.
 
@@ -532,6 +529,7 @@ Volg de richtlijnen onder [Hoe te om Succes Criteria 1.4.2](https://www.w3.org/W
    * Grote tekst: Op grote schaal uitgevoerde tekst en afbeeldingen van grote tekst hebben een contrastverhouding van ten minste 3:1.
    * Incidental: Voor tekst of afbeeldingen van tekst die deel uitmaken van een niet-actieve gebruikersinterfacecomponent, die [zuiver versieren](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)zijn, die voor niemand zichtbaar zijn of die deel uitmaken van een afbeelding die belangrijke andere visuele inhoud bevat, is geen contrast vereist.
    * Logotypes: Voor tekst die deel uitmaakt van een logo of merknaam is geen minimaal contrast vereist.
+
    >[!NOTE]
    >
    >Zie Contrast [voor niet-tekst](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) begrijpen voor meer informatie om ervoor te zorgen dat auteurs van inhoud de extra vereisten rond niet-tekstelementen (met inbegrip van pictogrammen, interface-elementen, onder andere) begrijpen.
@@ -593,7 +591,7 @@ Het doel van dit succescriterium is ervoor te zorgen dat visueel weergegeven tek
 
 #### Procedure - Formaat tekst wijzigen (1.4.4) {#how-to-meet-resize-text}
 
-Naast het volgen van de richtlijnen onder [Hoe te voldoen aan Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) van het Succes kunt u tevreden auteurs aanmoedigen om dynamische, flexibele breedten en hoogten in hun paginaontwerpen en doopvontgrootte (bijvoorbeeld, Responsief Web Design) te gebruiken om lezers de capaciteit toe te staan om tekst te resize.
+Naast het volgen van de richtlijnen onder [Hoe te om Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) van het Succes te ontmoeten kunt u inhoudsauteurs aanmoedigen om dynamische, flexibele breedten en hoogten in hun paginaontwerpen en doopvontgrootte (bijvoorbeeld, Responsief Web Design) te gebruiken om lezers de capaciteit toe te staan om tekst te resize.
 
 #### Meer informatie - Tekst vergroten/verkleinen (1.4.4) {#more-information-resize-text}
 
@@ -738,28 +736,28 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 [Richtsnoer 2.3 Convulsies: Ontwerp de inhoud niet op een manier waarvan bekend is dat deze aanvallen of fysieke reacties veroorzaakt.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
-### Drie instanties of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
+### Drie Flash of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
 
 * Succescriterium 2.3.1
 * Niveau A
-* Drie instanties of onder de drempelwaarde: Webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flits is onder de algemene flash- en rode flitsdrempels.
+* Drie Flash of onder drempelwaarde: Webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flits is onder de algemene flash- en rode flitsdrempels.
 
 >[!NOTE]
 >
 >Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (ongeacht of deze wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [Conformiteitsvereiste 5: Geen interferentie](https://www.w3.org/TR/WCAG/#cc5).
 
-#### Doel - Drie instanties van Flash of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
+#### Doel - Drie Flash of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
 In bepaalde gevallen kan knipperende inhoud fotosensitieve aanvallen veroorzaken. Aan de hand van dit succescriterium kunnen dergelijke gebruikers toegang krijgen tot alle inhoud en deze beleven zonder zich zorgen te maken over knipperende inhoud.
 
-#### Hoe te om te ontmoeten - Drie Vlamjes of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### Hoe te om te ontmoeten - Drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toegepast:
 
 * ervoor zorgen dat de onderdelen gedurende een periode van één seconde niet meer dan drie keer knipperen;
 * Als niet aan de bovenstaande voorwaarde kan worden voldaan, kunt u knipperende inhoud binnen een *klein veilig gebied* in pixels op het scherm weergeven. Dit areaal wordt berekend aan de hand van een complexe formule die onder [G176 valt: Het knipperende gebied klein genoeg](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)houden, zodat dient deze techniek alleen te worden gevolgd als knipperende inhoud *absoluut* noodzakelijk is.
 
-#### Meer informatie - Drie instanties of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
+#### Meer informatie - drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Werken met succescriterium 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [Voldoen aan criterium 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
@@ -801,7 +799,7 @@ Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud 
 
 #### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
 
-Wanneer in AEM een nieuwe HTML-pagina wordt gemaakt, kunt u de paginatitel opgeven. Zorg ervoor dat de titel een adequate beschrijving geeft van de inhoud en het doel van de pagina, met name van eventuele unieke aspecten, zodat bezoekers snel kunnen zien of de inhoud al dan niet relevant is voor hun behoeften.
+Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel een adequate beschrijving geeft van de inhoud en het doel van de pagina, met name van eventuele unieke aspecten, zodat bezoekers snel kunnen zien of de inhoud al dan niet relevant is voor hun behoeften.
 
 U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan worden geopend via **Pagina-informatie** - **Eigenschappen.**
 
@@ -948,7 +946,7 @@ Het doel van dit succescriterium is om een persoon te helpen weten welk element 
 
 Het moet voor een persoon mogelijk zijn om te weten welk element onder veelvoudige elementen de toetsenbordnadruk heeft. Als er slechts één besturingselementen voor actioneren van het toetsenbord op het scherm zijn, is aan het succescriterium voldaan omdat het visuele ontwerp slechts één actionabel item voor het toetsenbord voorstelt.
 
-Wanneer het succescriterium &quot;wijze van werking&quot; aangeeft, moet dit worden gebruikt voor platforms die niet altijd een focusindicator kunnen weergeven. In de meeste gevallen is er slechts één werkwijze, zodat deze succescriteria van toepassing zijn.
+Wanneer in het succescriterium &quot;wijze van exploitatie&quot; wordt vermeld, moet rekening worden gehouden met perrons die niet altijd een focusindicator kunnen weergeven. In de meeste gevallen is er slechts één werkwijze, zodat deze succescriteria van toepassing zijn.
 
 #### Hoe kan ik-Focus zichtbaar maken (2.4.7) {#how-to-meet-focus-visible}
 
@@ -991,7 +989,7 @@ In AEM wordt de standaardtaal van de pagina ingesteld bij het maken van de pagin
 
 >[!NOTE]
 >
->AEM verstrekt verdere verfijning voor variaties van een worteltaal; Bijvoorbeeld Amerikaans Engels - en-us, Brits Engels - en-gb en Canadees Engels - en-ca. Dit detailniveau is vaak overbodig voor ondersteunende hulpmiddelen, maar kan worden gebruikt voor regionale variaties in pagina-inhoud.
+>AEM voorziet in verdere verfijning voor variaties van een worteltaal; Bijvoorbeeld Amerikaans Engels - en-us, Brits Engels - en-gb en Canadees Engels - en-ca. Dit detailniveau is vaak overbodig voor ondersteunende hulpmiddelen, maar kan worden gebruikt voor regionale variaties in pagina-inhoud.
 
 #### Meer informatie - Taal van pagina (3.1.1) {#more-information-language-of-page}
 
@@ -1039,10 +1037,7 @@ Op dezelfde manier kan browser een ongewoon woord of een woordgroep correct teru
 >
 >Dit succescriterium hoeft niet te worden gevolgd wanneer namen of steden in verschillende talen worden opgenomen of wanneer leningswoorden of zinnen worden gebruikt die in de standaardtaal gangbaar zijn geworden (zoals *overlijden* in het Engels).
 
-Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie het Toevoegen van Steun voor Extra Elementen en Attributen van HTML).
-<!--
-To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie het [Toevoegen van Steun voor Extra Elementen en Attributen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)van HTML).
 
 #### Meer informatie - Taal van onderdelen (3.1.2) {#more-information-language-of-parts}
 
@@ -1092,7 +1087,7 @@ Het doel van dit succescriterium is ervoor te zorgen dat het invoeren van gegeve
 
 #### Hoe kan ik-op-invoer (3.2.2) {#how-to-meet-on-input}
 
-Volg de richtlijnen onder [Hoe te om Succes Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)te ontmoeten.
+Volg de richtlijnen onder [Hoe te om Succescriteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)te ontmoeten.
 
 #### Meer informatie - Bij invoer (3.2.2) {#more-information-on-input}
 
@@ -1190,9 +1185,9 @@ Volg de richtlijnen onder [Hoe te om Succes Criteria 3.3.1](https://www.w3.org/W
 
 Het geven van instructies om mensen te helpen vormen in te vullen is een fundamenteel onderdeel van goede praktijken in interfacebruikbaarheid. Dit is vooral handig voor mensen met een visuele of cognitieve handicap die anders moeite zouden hebben om de indeling van een formulier en het soort gegevens dat in een bepaald formulierveld moet worden verstrekt, te begrijpen.
 
-##### Formulieren
+##### Forms
 
-In het AEM WKND demoproject wordt een standaardlabel toegevoegd wanneer u een formuliercomponent, zoals een **tekstveld**, aan de pagina toevoegt. Deze standaardtitel is afhankelijk van het type component. U kunt uw eigen titel toevoegen op het tabblad **Titel en Tekst** van het dialoogvenster Bewerken voor dat veld. Het is belangrijk dat labels gebruikers helpen de gegevens te begrijpen die aan elke formuliercomponent zijn gekoppeld.
+In het AEM WKND-demoproject wordt een standaardlabel toegevoegd wanneer u een formuliercomponent, zoals een **tekstveld**, aan de pagina toevoegt. Deze standaardtitel is afhankelijk van het type component. U kunt uw eigen titel toevoegen op het tabblad **Titel en Tekst** van het dialoogvenster Bewerken voor dat veld. Het is belangrijk dat labels gebruikers helpen de gegevens te begrijpen die aan elke formuliercomponent zijn gekoppeld.
 
 Dit veld **Titel** moet worden gebruikt voor veldelementen omdat het een label bevat dat beschikbaar is voor ondersteunende hulpmiddelen. Alleen het schrijven van een label in tekst naast het veld is niet voldoende.
 
@@ -1206,11 +1201,7 @@ Where image buttons are used (for example, the **Image Button** component of the
 
 In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. Wanneer u een set keuzerondjes toevoegt in AEM, wordt in het veld **Titel** deze groepstitel weergegeven, terwijl afzonderlijke titels worden opgegeven wanneer de keuzerondjes (**Items**) worden gemaakt.
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset`- en `legend`-tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Een systeembeheerder kan ook ondersteuning voor deze elementen toevoegen, zodat deze worden weergegeven in het dialoogvenster **Veldeigenschappen** (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen).
-
-<!--
-However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset`- en `legend`-tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Een systeembeheerder kan ook ondersteuning voor deze elementen toevoegen, zodat deze worden weergegeven in het dialoogvenster **Veldeigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 
