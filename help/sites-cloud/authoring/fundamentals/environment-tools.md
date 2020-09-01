@@ -2,7 +2,7 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 12%
@@ -40,14 +40,14 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
 Wanneer u een pagina bewerkt, kunt u de **Help** openen via:
 
-* De kiezer [**Pagina-informatie **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)die de inleidende dia&#39;s weergeeft (zoals de eerste keer dat u de editor opent)
+* De kiezer [**Pagina-informatie**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) die de inleidende dia&#39;s weergeeft (zoals de eerste keer dat u de editor opent)
 * De [configuratiedialoog](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) voor specifieke componenten (gebruikend? pictogram in de dialoogtoolbar), die contextgevoelige hulp toont
 
 Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
 ## Browser voor componenten {#components-browser}
 
-Componenten zijn de bouwstenen van AEM-inhoud. U plaatst veelvoudige componenten op een pagina en vormt hun opties om uw inhoudspagina met AEM te bouwen.
+Componenten zijn de bouwstenen van AEM inhoud. U plaatst veelvoudige componenten op een pagina en vormt hun opties om uw inhoudspagina met AEM te bouwen.
 
 De componentenbrowser toont alle componenten die voor gebruik op uw huidige pagina beschikbaar zijn. U kunt deze naar de juiste locatie slepen en vervolgens bewerken om uw inhoud toe te voegen.
 
@@ -82,10 +82,12 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
    * Pictogram of afkorting
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
+
    Van de hoogste toolbar in browser van **Componenten** kunt u:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
+
    Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor het **inhoudsfragment**:
 
    ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -98,7 +100,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 ## Browser voor middelen {#assets-browser}
 
-In de middelenbrowser worden alle elementen weergegeven die beschikbaar zijn voor rechtstreeks gebruik op de huidige pagina. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+In de middelenbrowser worden alle [elementen](/help/assets/home.md) weergegeven die rechtstreeks op de huidige pagina kunnen worden gebruikt.
 
 De assetbrowser is een tabblad in het zijpaneel, samen met de [componentenbrowser](#components-browser) en de [contentstructuur](#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
@@ -137,7 +139,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
    De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de gewenste component kunt toevoegen.
+   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
 
    ![Berichtenbrowser op mobiele apparaten](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
@@ -153,7 +155,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 >
 >Een mobiel apparaat wordt ontdekt wanneer de breedte minder dan 1024px is; dat wil zeggen ook in een klein bureaubladvenster.
 
-Als u snel een wijziging in een element wilt aanbrengen, kunt u de middeleneditor rechtstreeks vanuit de middelenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Als u snel een wijziging in een element wilt aanbrengen, kunt u de [middeleneditor](/help/assets/manage-digital-assets.md) rechtstreeks vanuit de elementenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken.
 
 ![De knop Element bewerken](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -269,7 +271,7 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 * [Tijdlijn verdraaien](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - hiermee kunt u de status van een pagina op een bepaald tijdstip bekijken.
 * [Live Copy-status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : geeft een snel overzicht van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen.
 * [Voorvertoning](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving. of om te navigeren met koppelingen in de inhoud.
-* [Annoteren](/help/sites-cloud/authoring/fundamentals/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
+* [Annotatie](/help/sites-cloud/authoring/fundamentals/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
 U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pictogram verandert in de modus die u momenteel gebruikt:
 
@@ -281,6 +283,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
 >* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
+
 >
 
 
@@ -299,7 +302,7 @@ Als u op de knop Dialoogvenster **Selectie** openen in het padveld klikt, wordt 
 
 ![Dialoogvenster Selectie openen](/help/sites-cloud/authoring/assets/open-selection-dialog-button.png)
 
-U kunt ook beginnen te typen in het padveld en AEM biedt tijdens het typen overeenkomende paden.
+U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
 
 ![Dialoogvenster Selectie openen](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
