@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 9a54fda87ffb26ad9e811a27a40ee8d7c81b6bea
+source-git-commit: ff50361ca66a5c3685d7701432069fec9521f0d7
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.8.0 {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
+
+## Releasedatum {#release-date}
+
+De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 augustus 2020.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
