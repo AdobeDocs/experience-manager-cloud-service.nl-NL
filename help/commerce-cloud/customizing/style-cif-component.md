@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '2620'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Het [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een re
 
 ## Wat u gaat maken
 
-Er wordt een nieuwe stijl geïmplementeerd voor de component Product Teaser die op een kaart lijkt.
+In deze zelfstudie wordt een nieuwe stijl geïmplementeerd voor de component Product Teaser die op een kaart lijkt. De lessen die in het leerprogramma worden geleerd kunnen op andere Componenten van de Kern worden toegepast CIF.
 
 ![Wat u gaat maken](../assets/style-cif-component/what-you-will-build.png)
 
