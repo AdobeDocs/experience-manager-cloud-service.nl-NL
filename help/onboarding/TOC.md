@@ -3,10 +3,10 @@ sub-product: Onboarding van AEM as a Cloud Service
 user-guide-title: Onboarding van AEM as a Cloud Service
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 93%
+source-wordcount: '144'
+ht-degree: 92%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 93%
       + [Sandbox-programma&#39;s](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Een AEM-applicatieproject maken {#create-application-project}
       + [De wizard gebruiken](getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [Project instellen](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Meer informatie over de Build-omgeving](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Uw project instellen](getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [Inzicht in de omgeving van de build](getting-access-to-aem-in-cloud/build-environment-details.md)
 + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
