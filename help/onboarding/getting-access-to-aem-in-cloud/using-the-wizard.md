@@ -2,20 +2,20 @@
 title: De wizard gebruiken
 description: De wizard gebruiken - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 41%
 
 ---
 
 
-# Het gebruiken van Tovenaar om een Project van de AEMToepassing te creëren {#using-wizard-to-create-an-aem-application-project}
+# De wizard gebruiken {#using-wizard-to-create-an-aem-application-project}
 
 Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
-Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud Manager:
+Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud Manager met de wizard:
 
 1. Nadat u zich hebt aangemeld bij Cloud Manager en de basisconfiguratie van het programma is voltooid, wordt een speciale aanroep naar een actiekaart weergegeven op het scherm **Overzicht** als de opslagplaats leeg is.
 
