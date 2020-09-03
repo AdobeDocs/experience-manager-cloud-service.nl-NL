@@ -2,9 +2,9 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
    De **Fase-implementatie** omvat de volgende stappen:
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
-   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) voor meer informatie over de ontwikkelomgeving.
+   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
    * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteit testen](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
@@ -56,8 +56,8 @@ Raadpleeg Functionele tests voor [producten](/help/implementing/cloud-manager/fu
    * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
       Raadpleeg [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer informatie.
 
-   * Controle van inhoud: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de inhoudcontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
-Raadpleeg de resultaten [van](/help/implementing/cloud-manager/content-audit-testing.md) Content Audit voor meer informatie.
+   * Experience Audit: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
+Raadpleeg de [resultaten](/help/implementing/cloud-manager/experience-audit-testing.md) van Experience Audit voor meer informatie.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
 
    >[!NOTE]
    >
-   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. Runmodi moeten worden gebruikt wanneer knoopspecifieke configuraties vereist zijn. Voor meer informatie over hoe de runmodes u toestaan om uw AEM instantie voor een specifiek doel te stemmen, gelieve te verwijzen naar de Wijzen van de Looppas.
+   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Voor meer informatie over hoe u met de modi Run uw AEM voor een bepaald doel kunt instellen, raadpleegt u de modi Run.
 
 1. Het artefact van de verzender wordt als volgt op elke verzender geïmplementeerd:
 
@@ -112,7 +112,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
 
 Het proces voor het opstellen aan productietopologieën verschilt lichtjes om effect aan AEM bezoekers van de Plaats te minimaliseren.
 
-Productieimplementaties volgen doorgaans dezelfde stappen als hierboven, maar op een voortschrijdende manier:
+Productie-implementaties volgen doorgaans dezelfde stappen als hierboven, maar op doorlopende wijze:
 
 1. Implementeer AEM pakketten naar de auteur.
 1. Dispatcher1 loskoppelen van het taakverdelingsmechanisme.
