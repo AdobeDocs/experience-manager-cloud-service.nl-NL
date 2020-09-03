@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    Raadpleeg [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
 
-   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de ervaring. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
-
-   >[!NOTE]
-   >Om de stap van de Controle van de Ervaring te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Raadpleeg [Bekende problemen](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) voor meer informatie.
+   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat u wilt opnemen in de controle van de ervaring. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
 
    ![](assets/exp-audit2.png)
 
