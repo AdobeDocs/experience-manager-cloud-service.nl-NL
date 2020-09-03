@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -78,21 +78,21 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    * **Ga onmiddellijk** verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als **Inhoud Controle**.
+1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**.
 
    ![](assets/content-audit-1.png)
 
-   Deze optie biedt een tabel voor de URL-paden die altijd moeten worden opgenomen in de Content Audit. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de inhoudscontrole.
+   Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de ervaringscontrole.
 
    >[!NOTE]
    > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
 
-   Raadpleeg [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) voor meer informatie.
+   Raadpleeg [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
 
-   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de inhoud. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
+   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat moet worden opgenomen in de controle van de ervaring. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
 
    >[!NOTE]
-   >Om de stap van de Controle van de Inhoud te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Raadpleeg [Bekende problemen](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) voor meer informatie.
+   >Om de stap van de Controle van de Ervaring te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Raadpleeg [Bekende problemen](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) voor meer informatie.
 
    ![](assets/content-audit2.png)
 
