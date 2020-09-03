@@ -2,9 +2,9 @@
 title: Experience Audit Testing - Cloud Services
 description: Experience Audit Testing - Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ Experience Audit in Cloud Manager zorgt ervoor dat de digitale ervaring van eind
 
 De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde op paginaniveau testresultaten via de de uitvoeringspagina van de Pijpleiding van de Productie.
 
-* De cijfers op het niveau van het samengevoegde niveau meten de gemiddelde score over de pagina&#39;s die werden gecontroleerd.
+* De gegevens op het niveau van het samengevoegde niveau meten de gemiddelde score over de pagina&#39;s die voor prestaties, toegankelijkheid, beste praktijken, SEO (de Optimalisering van de Motor van het Onderzoek) werden gecontroleerd.
+   >[!NOTE]
+   >De progressieve score van de Web App (PWA) is niet inbegrepen in de summiere score en zal slechts in het pagina-vlakke scherm van rapportdetails worden getoond.
 * Afzonderlijke scores op paginaniveau zijn ook beschikbaar via de neerwaartse boor.
 * Er zijn details van de scores beschikbaar om te zien wat de resultaten zijn van de afzonderlijke tests, samen met aanwijzingen voor het verhelpen van problemen die tijdens de inhoudscontrole zijn vastgesteld.
 * Een geschiedenis van de testresultaten wordt voortgeduurd binnen de Manager van de Wolk zodat kunnen de klanten zien of de veranderingen die in de pijpleidingslooppas worden geïntroduceerd om het even welke regressies van de vorige looppas omvatten.
 
 ### Samengevoegde scores {#aggregate-scores}
 
-Voor elk type test (prestaties, toegankelijkheid, SEO, aanbevolen methoden en PWA) is een score voor het geaggregeerde niveau beschikbaar.
+Er is een score voor het geaggregeerde niveau voor elk type test, zoals prestaties, toegankelijkheid, SEO en aanbevolen procedures.
+>[!NOTE]
+>De progressieve score van de Web App (PWA) is niet inbegrepen in de summiere score en zal slechts in het pagina-vlakke scherm van rapportdetails worden getoond.
 
 De score voor het geaggregeerde niveau is gebaseerd op de gemiddelde score van de pagina&#39;s die in de run zijn opgenomen. De verandering op het gezamenlijke niveau vertegenwoordigt de gemiddelde score van de pagina&#39;s in de huidige looppas in vergelijking met het gemiddelde van de scores van de vorige looppas, zelfs als de inzameling van pagina&#39;s die om worden gevormd om zijn omvat tussen looppas is veranderd.
 
