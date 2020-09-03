@@ -2,7 +2,7 @@
 title: Overzicht van de testresultaten - Cloud Services
 description: Overzicht van de testresultaten - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Er zijn drie brede testcategorieën die worden ondersteund door Cloud Manager fo
 
    De functionele tests maken deel uit van de testfase van het werkgebied van een productiepijpleiding.
 
-1. [Testen van content-controle](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Het testen van de Controle van de Inhoud wordt toegelaten in alle de productiepijpleidingen van de Manager van de Wolk en kan niet worden overgeslagen.
+   Het testen van de Controle van de Ervaring wordt toegelaten in alle de productiepijpleidingen van de Manager van de Wolk en kan niet worden overgeslagen.
 
 Deze tests kunnen:
 
