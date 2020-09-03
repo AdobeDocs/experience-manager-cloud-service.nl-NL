@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
 1. De het schermvertoningen van de Pijpleiding van de **Opstelling** . Selecteer de vertakking en klik op **Volgende**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Configureer uw implementatieopties.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    U kunt de trekker bepalen om de pijpleiding te beginnen:
 
@@ -80,7 +80,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
 1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de ervaringscontrole.
 
@@ -94,7 +94,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    >[!NOTE]
    >Om de stap van de Controle van de Ervaring te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Raadpleeg [Bekende problemen](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) voor meer informatie.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Klik op **Opslaan** in het scherm **Pipet** bewerken. Op de pagina **Overzicht** wordt nu de **Programmakaart** implementeren weergegeven. Klik op de knop **Implementeren** om uw programma te implementeren.
 
