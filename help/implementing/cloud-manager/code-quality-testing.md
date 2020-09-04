@@ -2,7 +2,7 @@
 title: Codekwaliteitstests - Cloud Services
 description: Codekwaliteitstests - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 1%
@@ -59,7 +59,7 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
-Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt een &quot;vals-positief&quot; genoemd.
+Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt als *vals positief* bedoeld.
 
 In deze gevallen kan de broncode worden geannoteerd met de standaard-Java- `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Een veelvoorkomend probleem is bijvoorbeeld dat de SonarQube-regel voor het detecteren van gecodeerde wachtwoorden agressief kan zijn ten aanzien van de manier waarop een gecodeerd wachtwoord wordt geïdentificeerd.
 
