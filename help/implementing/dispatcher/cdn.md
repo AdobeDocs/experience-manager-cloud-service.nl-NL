@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '689'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de mees
 Volg deze om inhoudslevering voor te bereiden door Adobe uit-van-de-doos CDN te gebruiken:
 
 1. Geef het ondertekende SSL-certificaat en de geheime sleutel op voor Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning.
-   **Opmerking:** Aem als Cloud Service ondersteunt geen domein-gevalideerde (DV) certificaten.
+   **Opmerking:** Aem als Cloud Service ondersteunt geen domein-gevalideerde (DV) certificaten. Bovendien moet het een X.509 TLS-certificaat van een vertrouwde certificeringsinstantie (CA) zijn met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
 1. Klantenondersteuning informeren:
    * welk aangepast domein moet worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
    * als om het even welke IP toevoegend op lijst van gewenste personen nodig is om verkeer tot een bepaalde milieu te beperken.
