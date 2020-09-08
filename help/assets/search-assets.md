@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster F
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4489'
+source-wordcount: '4485'
 ht-degree: 6%
 
 ---
@@ -106,13 +106,13 @@ U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoeko
 
 1. Open vanuit de gebruikersinterface Assets de pagina met eigenschappen voor de asset. Klik op **[!UICONTROL Advanced]** en klik of tik op **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
 1. Geef in het **[!UICONTROL Search Promote]** vak een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik op de afbeelding **[!UICONTROL Add]**. U kunt meerdere trefwoorden op dezelfde manier opgeven.
-1. Klik of tik op **[!UICONTROL Save & Close]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
+1. Klik op **[!UICONTROL Save & Close]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
 
 U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Zie [Zoeken in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html)voor meer informatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Begrijp hoe de onderzoeksresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
+*Video: Begrijp hoe de onderzoeksresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
 
 ## Geavanceerd zoeken {#scope}
 
@@ -241,7 +241,7 @@ Ga naar `https://[AEM server]:[port]/aem/assetpicker`om de interface van de elem
 
 ![Bladeren en element selecteren in de elementkiezer](assets/assetpicker.png)
 
-Bladeren en element selecteren in de elementkiezer
+*Afbeelding: Blader door elementen en selecteer deze in de elementkiezer.*
 
 ## Beperkingen {#limitations}
 
@@ -263,8 +263,8 @@ Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 * Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
 * Schakel het selectievakje in als u alle zoekresultaten wilt selecteren of de gefilterde zoekresultaten wilt gebruiken voor de selectie. Alle doorzochte elementen worden geselecteerd, ongeacht het aantal elementen dat in de huidige gebruikersweergave wordt weergegeven. U kunt bijvoorbeeld alle geselecteerde elementen downloaden, eigenschappen van metagegevens bulksgewijs bijwerken voor alle geselecteerde elementen of geselecteerde elementen toevoegen aan een verzameling.
 * Zie [verplichte metagegevens](#mandatorymetadata)voor informatie over het zoeken naar elementen die de verplichte metagegevens niet bevatten.
-* Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld *shoe12*).
-* Bij zoeken in volledige tekst worden onder andere operatoren zoals -, ^ ondersteund. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
+* Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld `shoe12`).
+* Bij zoeken in volledige tekst kunt u operatoren zoals `-` en `^`. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld `"Notebook - Beauty"` in plaats van `Notebook - Beauty`.
 * Als de zoekresultaten te veel zijn, beperkt u het [zoekbereik](#scope) tot nul-in op de gewenste elementen. Het werkt het beste als u een idee hebt van hoe u beter kunt zoeken naar de gewenste elementen, bijvoorbeeld een specifiek bestandstype, een specifieke locatie, specifieke metagegevens, enzovoort.
 
 * **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. AEM biedt methoden om elementen automatisch te labelen met behulp van Adobe Sensei-services die kunstmatig intelligent zijn en die uw middelen steeds beter kunnen coderen met gebruik en training. Wanneer u naar elementen zoekt, wordt met de slimme tags rekening gehouden als de functie op uw account is ingeschakeld. Het werkt naast de ingebouwde zoekfunctionaliteit. Zie [zoekgedrag](#searchbehavior). Als u de volgorde waarin de zoekresultaten worden weergegeven, wilt optimaliseren, kunt u de zoekpositie [van een aantal geselecteerde elementen](#searchrank) verhogen.
@@ -277,7 +277,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Gedrag zoeken met en zonder aanhalingstekens](assets/search_with_quotes.gif)
 
-Gedrag zoeken met en zonder aanhalingstekens
+*Afbeelding: Gedrag zoeken met en zonder aanhalingstekens.*
 
 **Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
 
@@ -288,7 +288,7 @@ Gedrag zoeken met en zonder aanhalingstekens
 
 ![Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
 
-Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld
+*Afbeelding: Het illustreren van het gebruik van asteriskvervanging in het onderzoek van Activa gebruikend een voorbeeld.*
 
 **Zoeken met jokerteken voor** vraagtekens: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
 
@@ -300,7 +300,7 @@ Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustr
 
 ![Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld](assets/search_with_questionmark_run.gif)
 
-Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld
+*Afbeelding: Het illustreren van het gebruik van vraagtekenvervanging in de onderzoek van Activa gebruikend een voorbeeld.*
 
 **Een trefwoord** uitsluiten: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. De query retourneert bijvoorbeeld elementen die wel `running -shoe` , maar niet `running``shoe`. Op dezelfde manier retourneert `camp -night` query elementen die wel `camp` maar niet `night`bevatten. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`bevatten.
 
@@ -312,6 +312,7 @@ Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de 
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 **Zoekfilter/voorspelling is niet beschikbaar**: Als een verwachte aanpassing aan onderzoeksfilters niet beschikbaar op het gebruikersinterface is, contacteer uw beheerder om te controleren of werd de aanpassing uitgevoerd voor alle auteurs en op de productieserver u gebruikt. Het is mogelijk dat de configuratie onjuist was.
 
 ## Problemen met zoekopdrachten oplossen {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 Zie de volgende onderwerpen en mogelijke maatregelen:
 
