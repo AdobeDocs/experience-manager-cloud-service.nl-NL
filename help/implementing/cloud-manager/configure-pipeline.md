@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -78,27 +78,23 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    * **Ga onmiddellijk** verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**.
+1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker moet het invoerveld invullen om zijn eigen aangepaste koppeling te definiëren.
 
    ![](assets/setup-3.png)
 
-   Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker moet het invoerveld invullen om zijn eigen aangepaste koppeling te definiëren.
+   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat u wilt opnemen in de controle van de ervaring.
 
    Als u bijvoorbeeld het pad wilt opnemen `https://wknd.site/us/en/about-us.html` in de Experience Audit, voert u het pad `us/en/about-us.html` in dit veld in.
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   De URL die in de tabel wordt weergegeven, wordt `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+   De URL die in de tabel wordt weergegeven, wordt `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
    Raadpleeg [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
-
-   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat u wilt opnemen in de controle van de ervaring. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
