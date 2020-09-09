@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
+source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -88,7 +88,9 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    ![](assets/exp-audit4.png)
 
-   De URL die in de tabel wordt weergegeven, wordt `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
+   De URL die in de tabel wordt weergegeven, is:
+
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
