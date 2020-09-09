@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    ![](assets/setup-3.png)
 
-   Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat u wilt opnemen in de controle van de ervaring.
+   Klik op Nieuwe pagina **** toevoegen om een URL-pad op te geven dat moet worden opgenomen in de Experience Audit.
 
-   Als u bijvoorbeeld het pad wilt opnemen `https://wknd.site/us/en/about-us.html` in de Experience Audit, voert u het pad `us/en/about-us.html` in dit veld in.
+   Als u bijvoorbeeld het pad wilt opnemen `https://wknd.site/us/en/about-us.html` in de Experience Audit, voert u het pad `us/en/about-us.html` in dit veld in en klikt u op **Opslaan**.
 
    ![](assets/exp-audit4.png)
 
