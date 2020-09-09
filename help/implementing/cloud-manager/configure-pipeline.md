@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,10 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    * **Ga onmiddellijk** verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker moet op Nieuwe pagina **** toevoegen klikken om zijn eigen douaneverbinding te bepalen.
+1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als Controle van de **Ervaring**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
+
+   >[!NOTE]
+   >Klik op Nieuwe pagina **** toevoegen om uw eigen aangepaste koppeling te definiëren.
 
    ![](assets/setup-3.png)
 
