@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '791'
 ht-degree: 7%
 
 ---
@@ -55,7 +55,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Wanneer u een omgeving maakt, worden een of meer *integraties* gemaakt in Adobe I/O. Deze zijn zichtbaar voor gebruikers van de klant die toegang hebben tot de Adobe I/O-console en mogen niet worden verwijderd. Dit wordt beschreven in de beschrijving in de Adobe I/O-console.
+   >Bij het maken van een omgeving worden een of meer *integraties* gemaakt in Adobe I/O. Deze zijn zichtbaar voor klanten die toegang hebben tot de I/O-console van Adobe en mogen niet worden verwijderd. Dit wordt in de beschrijving in de I/O-console van Adobe gedisclastreerd.
 
    ![](assets/add-environment-image1.png)
 
@@ -66,9 +66,9 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
 ## Omgeving bijwerken {#updating-dev-environment}
 
-Updates van werkgebied- en productieomgevingen worden automatisch beheerd door Adobe.
+Updates van werkgebied- en productieomgevingen worden automatisch door Adobe beheerd.
 
-Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Als een omgeving niet de nieuwste openbaar beschikbare AEM-versie uitvoert, wordt in de status op de milieuvriendenkaart op het startscherm de **UPDATE-BESCHIKBAAR** weergegeven.
+Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Wanneer een omgeving niet de meest recente openbaar beschikbare AEM-release uitvoert, wordt in de status op Environment Card op het Homescherm de **UPDATE-BESCHIKBAAR** weergegeven.
 
 ![](assets/update-environ-1.png)
 
@@ -97,6 +97,15 @@ De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart *
 
 >[!NOTE]
 Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
+
+## Toegang beheren {#managing-access}
+
+Selecteer Toegang **** beheren in het vervolgkeuzemenu in de **milieucaart** . U kunt rechtstreeks naar de instantie van de auteur navigeren en de toegang voor uw omgeving beheren.
+
+Zie Toegang [beheren tot instantie](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Auteur voor meer informatie.
+
+![](assets/environ-manage-access.png)
+
 
 ## Developer Console openen {#accessing-developer-console}
 
