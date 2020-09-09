@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,26 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    ![](assets/setup-3.png)
 
-   Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker kan handmatig een URL-pad invoeren dat moet worden opgenomen. U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de startpagina van de site standaard opgenomen in de ervaringscontrole.
+   Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat. De gebruiker moet het invoerveld invullen om zijn eigen aangepaste koppeling te definiëren.
 
-   >[!NOTE]
-   > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
+   Als u bijvoorbeeld het pad wilt opnemen `https://wknd.site/us/en/about-us.html` in de Experience Audit, voert u het pad `us/en/about-us.html` in dit veld in.
+
+   ![](assets/set-up-5.png)
+
+   De URL die in de tabel wordt weergegeven, wordt `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+
+   ![](assets/set-up-4.png)
+
+   U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
    Raadpleeg [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
 
    Klik op Nieuwe paginaoverschrijving **toevoegen** om een URL-pad op te geven dat u wilt opnemen in de controle van de ervaring. Als u het pad hebt toegevoegd, klikt u op **Opslaan**.
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
 
 1. Klik op **Opslaan** in het scherm **Pipet** bewerken. Op de pagina **Overzicht** wordt nu de **Programmakaart** implementeren weergegeven. Klik op de knop **Implementeren** om uw programma te implementeren.
 
