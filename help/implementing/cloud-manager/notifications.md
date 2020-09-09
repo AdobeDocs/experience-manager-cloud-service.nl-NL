@@ -2,7 +2,7 @@
 title: Meldingen - Cloud Service
 description: Meldingen - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -37,5 +37,4 @@ Hiermee gaat de gebruiker naar het scherm met voorkeuren voor meldingen in Adobe
 De gebruikers kunnen e-mailberichten inschakelen en (optioneel) de typen berichten selecteren die ze via e-mail willen ontvangen.
 
 >[!NOTE]
->
 >U kunt ook de functie voor het digesten inschakelen vanuit de Adobe [!UICONTROL Experience Cloud].
