@@ -2,9 +2,9 @@
 title: Voorbeeld van ContextHub Store-kandidaten
 description: ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw oplossingen kunt gebruiken
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ De opslag gebruikt een gegevensboom die aan het volgende voorbeeld gelijkaardig 
 
 Hiermee slaat u informatie op over de huidige clientomgeving, zoals het apparaat, het venster, de browser, de datum en het tijdstip.
 
-### Bronlocatie {#source-location-surferinfo
+### Bronlocatie {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
