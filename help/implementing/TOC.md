@@ -3,10 +3,10 @@ sub-product: ' Implementeren voor AEM as a Cloud Service'
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 5eeecedae463f0d3308b0edd5bb3487def885666
+source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 66%
+source-wordcount: '387'
+ht-degree: 64%
 
 ---
 
@@ -74,6 +74,15 @@ ht-degree: 66%
       + [Integratie starten](developing/spa/launch-integration.md)
       + [Rendering serverzijde](developing/spa/ssr.md)
       + [JavaScript API-verwijzingen](developing/spa/reference-materials.md)
++ Personalisatie {#personalization}
+   + [ContextHub](developing/personalization/contexthub.md)
+   + [ContextHub configureren](developing/personalization/configuring-contexthub.md)
+   + [Voorbeeld van winkelkandidaten](developing/personalization/sample-stores.md)
+   + [Voorbeeld van winkelmodules](developing/personalization/sample-modules.md)
+   + [ContextHub Diagnostics](developing/personalization/contexthub-diagnostics.md)
+   + [ContextHub uitbreiden](developing/personalization/extending-contexthub.md)
+   + [ContextHub-API](developing/personalization/contexthub-api.md)
+   + [Integreren met Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
 + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
    + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
