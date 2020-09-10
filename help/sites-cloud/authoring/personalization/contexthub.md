@@ -2,7 +2,7 @@
 title: Pagina's voorvertonen met ContextHub-gegevens
 description: De ContextHub toolbarvertoningen gegevens van Opslag ContextHub en laat u toe om opslaggegevens te veranderen en is nuttig om inhoud te previewing
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 2%
@@ -12,14 +12,14 @@ ht-degree: 2%
 
 # Pagina&#39;s voorvertonen met ContextHub-gegevens  {#previewing-pages-using-contexthub-data}
 
-De ContextHub toolbarvertoningengegevens van opslag ContextHub en laat u toe om opslaggegevens te veranderen. De toolbar ContextHub is nuttig om inhoud te previewing die door gegevens in een opslag ContextHub wordt bepaald.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+De ContextHub toolbarvertoningengegevens van opslag ContextHub en laat u toe om opslaggegevens te veranderen. De toolbar ContextHub is nuttig om inhoud te previewing die door gegevens in een opslag ContextHub wordt bepaald.
 
 De werkbalk bestaat uit een reeks UI-modi die een of meer UI-modules bevatten.
 
 * UI-modi zijn pictogrammen die aan de linkerkant van de werkbalk worden weergegeven. Als u op een pictogram klikt of erop tikt, worden op de werkbalk de UI-modules weergegeven die erin staan.
 * UI de modules tonen gegevens van één of meerdere opslag ContextHub. Sommige modules UI laten u ook toe om opslaggegevens te manipuleren.
 
-ContextHub installeert verscheidene wijzen UI en modules UI. Uw beheerder kan ContextHub hebben gevormd om verschillende degenen te tonen.<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub installeert verscheidene wijzen UI en modules UI. Uw beheerder kan ContextHub [hebben](/help/implementing/developing/personalization/configuring-contexthub.md) gevormd om verschillende degenen te tonen.
 
 ## De werkbalk ContextHub weergeven {#revealing-the-contexthub-toolbar}
 
@@ -51,7 +51,7 @@ Sommige modules UI tonen een popup bekleding wanneer geklikt of getikt. Het pop-
 
 ![ContextHub-profielgegevens](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
-### Pop-upformulieren {#popup-forms}
+### Popup-Forms {#popup-forms}
 
 De popup bekleding van een module kan vormelementen omvatten die u toelaten om de gegevens in de opslag te veranderen ContextHub. Als de pagina-inhoud wordt bepaald door de opslaggegevens, kunt u het formulier gebruiken en de wijzigingen in de pagina-inhoud observeren.
 
