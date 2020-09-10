@@ -3,7 +3,7 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met de HTTP-API voor middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](/help/assets/assets-api-content-fragments.md).
+Met de HTTP-API voor middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Toegang krijgen tot de API:
 
@@ -34,13 +34,13 @@ Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan 
 
 Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
-Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/assets-api-content-fragments.md)van Experience Manager Assets voor meer informatie.
+Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)van Experience Manager Assets voor meer informatie.
 
 ## Gegevensmodel {#data-model}
 
 De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar (voor standaardelementen).
 
-Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie Gegevensmodellen [van](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) inhoudsfragmenten voor meer informatie.
+Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie Gegevensmodellen [van](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) inhoudsfragmenten voor meer informatie.
 
 ### Mappen {#folders}
 
@@ -71,7 +71,7 @@ In [!DNL Experience Manager] een element bevat het element de volgende elementen
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
 * Optionele opmerkingen.
 
-Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](/help/assets/assets-api-content-fragments.md)van Experience Manager Assets voor informatie over elementen in Content Fragments.
+Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)van Experience Manager Assets voor informatie over elementen in Content Fragments.
 
 In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
