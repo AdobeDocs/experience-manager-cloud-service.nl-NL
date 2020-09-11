@@ -2,7 +2,7 @@
 title: Begonnen het worden met SPAs in AEM Gebruikend Reageren
 description: Dit artikel stelt een steekproeftoepassing van het KUUROORD voor, verklaart hoe het wordt samengebracht, en staat u toe om met uw eigen KUUROORD snel in werking te stellen gebruikend het kader van het Reageren.
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -48,9 +48,9 @@ Het `package.json` dossier bepaalt de vereisten van het algemene pakket van SPA.
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ Het ingangspunt in SPA is natuurlijk het hier getoonde `index.js` dossier vereen
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ Wanneer de component statisch wordt geconcretiseerd gebruikend het componentenma
 Door de app te renderen, `index.js` worden aanroepen `App.js`weergegeven in een vereenvoudigde versie om de aandacht op de belangrijke inhoud te vestigen.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 Door de pagina terug te geven, `App.js` `Page.js` vraag hier in een vereenvoudigde versie wordt vermeld die.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ Als de pagina wordt gerenderd, kunnen de componenten zoals `Image.js` zoals hier
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ U kunt een component exporteren en bewerkbaar houden.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
