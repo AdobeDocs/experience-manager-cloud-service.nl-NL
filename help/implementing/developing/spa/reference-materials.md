@@ -2,17 +2,17 @@
 title: SPA-referentiematerialen
 description: Een overzicht van de API-referenties voor één pagina-toepassing en opslagruimten voor broncode
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
 
 
-# API-verwijzingen voor SPA Javascript{#spa-javascript-api-references}
+# SPA-referentiematerialen {#spa-reference-materials}
 
-## API-verwijzingen voor NMP-modules {#api-references}
+## SPA Javascript API Verwijzingen voor Modules NMP {#api-references}
 
 Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het AEM SPA Editor SDK-framework.
 
