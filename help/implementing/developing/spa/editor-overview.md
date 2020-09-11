@@ -2,7 +2,7 @@
 title: Overzicht van SPA-editor
 description: Dit artikel geeft een uitvoerig overzicht van de Redacteur van het KUUROORD en hoe het werkt omvat gedetailleerde werkschema's van interactie van de Redacteur van het KUUROORD binnen AEM.
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn ki
 
 ### Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. Het KUUROORD moet de bibliotheek van het Model van de Pagina gebruiken om worden geïnitialiseerd en door de Redacteur van het KUUROORD worden authored. De bibliotheek Paginamodel die indirect via de `cq-react-editable-components` npm aan de component AEM Pagina wordt verstrekt. Het paginamodel is een tolk tussen AEM en SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, `cq.authoring.pagemodel.messaging` moet een extra bibliotheek worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. Het KUUROORD moet de bibliotheek van het Model van de Pagina gebruiken om worden geïnitialiseerd en door de Redacteur van het KUUROORD worden authored. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm aan de component AEM Pagina wordt verstrekt. Het paginamodel is een tolk tussen AEM en SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, `cq.authoring.pagemodel.messaging` moet een extra bibliotheek worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
 
 Als de de paginacomponent van het KUUROORD van de component van de paginaconnecorrectie erft, zijn er twee opties om de categorie van de `cq.authoring.pagemodel.messaging` cliëntbibliotheek beschikbaar te maken:
 
