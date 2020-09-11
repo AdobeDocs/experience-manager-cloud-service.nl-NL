@@ -2,9 +2,9 @@
 title: Opvallende veranderingen in AEM Handel als Cloud Service
 description: Opvallende veranderingen in AEM Handel als Cloud Service in vergelijking met Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ Hieronder worden de verschillende implementatiemodellen voor het framework voor 
 >
 >Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM On-premisse te gebruiken, verwijs naar het Kader van de Integratie van de [Handel](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Nofferte]
+>[!NOTE]
 >
 >CIF Classic/Quickstart-versie van Commerce Integration Framework kan worden gebruikt voor AEM on-premise aanbieding voor zeer beperkte gebruiksgevallen. Dit is echter niet de aanbevolen oplossing.
 
