@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
+source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -30,25 +30,24 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Videotranscodering wordt nu ondersteund met asset-microservices, met een nieuwe sectie Video op het [!UICONTROL Processing Profiles] scherm die de configuratie van videobitsnelheid en -afmetingen ondersteunt (uitvoerindeling is MP4 met H.264-codec). Zie Video-elementen [beheren voor meer informatie](/help/assets/manage-video-assets.md#transcode-video). Voor meer transcoderingsopties en [!DNL Dynamic Media] invoegtoepassing voor het afleveren van video kan worden gebruikt.
+* Videotranscodering wordt nu ondersteund met middelenmicroservices. Met een nieuwe sectie in de [!UICONTROL Processing Profiles] configuratie kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Zie Video-elementen [beheren voor meer informatie](/help/assets/manage-video-assets.md#transcode-video). Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
 
 * Voor nieuwe [!DNL Experience Manager Assets] plaatsingen, wordt de slimme etiketteringsfunctionaliteit nu gevormd door gebrek. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties [configureren beheerders de integratie](/help/assets/smart-tags-configuration.md#aio-integration) van slimme tags zoals voorheen.
 
 * Een nieuwe ervaring [bij het downloaden van](/help/assets/download-assets-from-aem.md) middelen is mogelijk.
 
    * Asynchrone download voor grote downloads zodat de gebruikers niet hoeven te wachten.
-
    * Een nieuwe modulaire API voor uitbreidbaarheid voor ontwikkelaars.
 
-* [!DNL Experience Manager] heeft de prestaties verbeterd van het ophalen van metagegevens voor assetmicroservices. Het verhoogt de algemene productie van activa.
+* De extractie van metagegevens voor assetmicroservices levert betere prestaties op. Het verhoogt de algemene productie van activa.
 
-* Gebruik het verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [Aangepaste metagegevens met verwerkingsprofiel](/help/assets/manage-metadata.md#metadata-compute-service)
+* Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [Aangepaste metagegevens met verwerkingsprofiel](/help/assets/manage-metadata.md#metadata-compute-service).
 
 * Een eenvoudigere downloadervaring voor gebruikers van het Brand Portal die beheerders kunnen configureren. Zie Overzicht [van](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)downloadervaring.
 
 * Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documentviewer.
 
-* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks van [!DNL Dynamic Media] in AEM als Cloud Service invalideren (in tegenstelling tot het gebruik [!DNL Dynamic Media Classic]) om ervoor te zorgen dat de meest recente elementen binnen minuten in plaats van uren worden aangeboden. Zie Het [ongeldig maken van de CDN-cache via Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* U kunt het CDN-cachegeheugen (Content Delivery Network) nu direct [!DNL Dynamic Media] in AEM invalideren als een Cloud Service (in tegenstelling tot [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie De CDN-cache [ongeldig maken met behulp van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, browse en zoekervaring in [!DNL Assets].
 
@@ -57,7 +56,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 
    * De accordeonelementen in de sectie met zoekfilters worden geïnterpreteerd als standaard uitbreidbare accordeons. <!-- via CQ-4273103 -->
    * Wanneer u een tag toepast op een element, worden labels in het dialoogvenster weergegeven als boomelementen. ARIA-kenmerken worden op de juiste wijze toegepast op de boomelementen om ze nu toegankelijk te maken. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Hierdoor wordt de compatibiliteit met versie [!DNL AEM] 6.5.5 verbeterd [!DNL Service Pack] en wordt de compatibiliteitslijst van het besturingssysteem van de client bijgewerkt ( [!DNL Windows] 7 en [!DNL MacOS] versies voor 10.14 worden verwijderd).
+* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Het verbetert verenigbaarheid met [!DNL Experience Manager] 6.5.5 de dienstpak en heeft een bijgewerkte lijst van de verenigbaarheid van cliëntOS. [!DNL Windows] 7 en [!DNL macOS] versies lager dan 10.14 worden niet ondersteund.
 
 ### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed}
 
