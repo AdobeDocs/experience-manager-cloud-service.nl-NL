@@ -1,11 +1,11 @@
 ---
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ Hieronder ziet u hoe u dit kunt doen:
 
 De volgende HTTP-headers worden door deze interface gebruikt:
 
-* `Cache-Control: max-age=<seconds>`: De levensduur van de cache in seconden. (Zie [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`: Geeft aan dat de server asynchroon moet reageren. (Zie [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Cache-Control: max-age=<seconds>`: Geeft de levensduur van de cachevervaging in seconden aan. (Zie [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async`: Geeft op dat de server asynchroon moet reageren. (Zie [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Prefer: return=minimal`: Geeft aan dat de server een minimale reactie moet retourneren. (Zie [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
 
 De volgende handige HTTP-queryparameters zijn beschikbaar wanneer HTTP-headers niet gemakkelijk kunnen worden gebruikt:
 
-* `max-age` (getal, optioneel): Geeft de levensduur van de cache op in seconden. Dit getal moet 0 of hoger zijn. De standaardlevensduur is 86.400 seconden. Dit betekent dat een nieuwe cache, zonder deze parameter of overeenkomstige header, 24 uur lang kan worden gebruikt om aanvragen te &#39;bedienen&#39; voordat het rapport opnieuw moet worden geproduceerd. Door gebruik van `max-age=0` wordt de cache gewist en het rapport opnieuw gegenereerd. Onmiddellijk na deze aanvraag wordt de versheidslevensduur teruggezet naar de vorige waarde die niet gelijk is aan nul.
-* `respond-async` (Booleaans, optioneel): Geeft aan of de respons asynchroon moet worden aangeboden. Als u `respond-async=true` gebruikt wanneer de cache verouderd is, retourneert de server een respons van `202 Accepted, processing cache`. In dit geval wordt er niet gewacht op het opnieuw gegenereerde rapport of de vernieuwde cache. Als de cache vernieuwd is, heeft deze parameter geen effect. De standaardwaarde is `false`. Dit houdt in dat de server synchroon reageert als deze parameter of de overeenkomstige header niet worden toegepast. Dit kan erg lang duren en een aanpassing van de maximale responstijd voor de HTTP-client vereisen.
+* `max-age` (nummer, optioneel): Geeft de levensduur van de cachevervaging in seconden aan. Dit getal moet 0 of hoger zijn. De standaard versheidslevensduur is 86400 seconden. Zonder deze parameter of de overeenkomstige kopbal zal een vers geheime voorgeheugen worden gebruikt om verzoeken gedurende 24 uren te dienen, waarbij het geheime voorgeheugen moet worden opnieuw geproduceerd. Het gebruiken `max-age=0` zal het geheime voorgeheugen dwingen om worden ontruimd en zal een regeneratie van het rapport in werking stellen, gebruikend het vorige niet-nul freshness leven voor het onlangs geproduceerde geheime voorgeheugen.
+* `respond-async` (Booleaans, optioneel): Geeft op dat de reactie asynchroon moet worden opgegeven. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Als de cache vernieuwd is, heeft deze parameter geen effect. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (Booleaans, optioneel): Geeft aan dat de server de cache kan vernieuwen als reactie op een aanvraag als de huidige cache leeg, leeg of bijna leeg is. Als `may-refresh-cache=true`, of als het niet wordt gespecificeerd, dan kan de server een achtergrondtaak in werking stellen die de Detector van het Patroon aanhaalt en het geheime voorgeheugen vernieuwt. Als `may-refresh-cache=false` dan zal de server geen verfrissingstaak in werking stellen die anders zou gedaan zijn als het geheime voorgeheugen leeg of verouderd is, in welk geval het rapport leeg zal zijn. Deze parameter heeft geen invloed op vernieuwingstaken die al in uitvoering zijn.
+* `return-minimal` (Booleaans, optioneel): Geeft aan dat de reactie van de server alleen de status moet bevatten die de voortgangsindicatie en cachestatus in de JSON-indeling bevat. Als `return-minimal=true`, dan zal het reactievermogen tot het statusvoorwerp worden beperkt. Als `return-minimal=false`, of als het niet wordt gespecificeerd, zal een volledige reactie worden verstrekt.
+* `log-findings` (Booleaans, optioneel): Specificeert dat de server de inhoud van het geheime voorgeheugen zou moeten registreren wanneer het eerst wordt gebouwd of verfrist. Elke bevinding in de cache wordt geregistreerd als een JSON-tekenreeks. Dit registreren zal slechts voorkomen als `log-findings=true` en het verzoek een nieuw geheime voorgeheugen produceert.
 
 Wanneer zowel de HTTP-header en de overeenkomstige queryparameter aanwezig zijn, heeft de queryparameter prioriteit.
 
 De volgende opdracht vormt een eenvoudige manier om de productie van het rapport via de HTTP-interface te starten:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Zodra een aanvraag is ingediend, hoeft de client niet actief te zijn voor het produceren van het rapport. Het rapport kan worden gemaakt doordat één client een HTTP GET-aanvraag indient. Nadat het rapport is gemaakt, kan het vanuit de cache worden bekeken door een andere client of in de CSV-tool in de gebruikersinterface binnen AEM.
+Zodra een aanvraag is ingediend, hoeft de client niet actief te zijn voor het produceren van het rapport. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend een verzoek van de GET van HTTP en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen met een andere cliënt of met het hulpmiddel CRA in het AEM gebruikersinterface.
 
 ### Respons {#http-responses}
 
 De volgende responswaarden zijn mogelijk:
 
-* `200 OK`: De respons bevat bevindingen van de Pattern Detector die zijn gegenereerd tijdens de vernieuwingslevensduur van de cache.
-* `202 Accepted, processing cache`: Geboden bij asynchrone respons om aan te geven dat de cache verouderd is en dat er een vernieuwingsbewerking wordt uitgevoerd.
-* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in de indeling voor probleemdetails (zie [RFC 7807](https://tools.ietf.org/html/rfc7807)) voor meer informatie.
-* `401 Unauthorized`: De aanvraag is niet ingewilligd.
+* `200 OK`: Geeft aan dat de reactie bevindingen van de Patroondetector bevat die zijn gegenereerd binnen de versheidslevensduur van de cache.
+* `202 Accepted`: Wordt gebruikt om aan te geven dat de cache leeg is. Wanneer `respond-async=true` en `may-refresh-cache=true` deze reactie erop wijst dat verfrist taak lopend is. Wanneer `may-refresh-cache=false` deze reactie eenvoudig erop wijst dat het geheime voorgeheugen stabiel is.
+* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`: Geeft aan dat de aanvraag niet is geautoriseerd.
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in de indeling voor probleemdetails biedt meer informatie.
 * `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere respons en deze aanvraag niet tijdig kan uitvoeren. Dit gebeurt alleen bij synchrone aanvragen. Een bericht in de indeling voor probleemdetails biedt meer informatie.
 
