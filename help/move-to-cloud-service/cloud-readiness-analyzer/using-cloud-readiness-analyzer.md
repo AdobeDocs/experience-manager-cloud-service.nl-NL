@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 77%
+source-wordcount: '2189'
+ht-degree: 71%
 
 ---
 
@@ -51,19 +51,37 @@ In deze sectie wordt beschreven hoe u het Cloud Readiness Analyzer-rapport bekij
 
    ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Zodra u op **Cloud Readiness Analyzer** klikt, wordt het rapport gemaakt en vervolgens weergegeven.
+1. Klik op Rapport **genereren** om de Cloud Readiness Analyzer uit te voeren.
 
-   >[!NOTE]
-   >U moet naar beneden schuiven om het volledige rapport te kunnen bekijken.
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+1. Terwijl het CRA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. Hier wordt het aantal geanalyseerde items weergegeven en ook het aantal gevonden bevindingen.
 
-1. Zodra het CRA- rapport is geproduceerd en wordt weergegeven, kunt u het rapport desgewenst in een CSV-indeling (door komma&#39;s gescheiden) downloaden. Klik hiervoor op **CSV**, zoals in de onderstaand afbeelding.
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+1. Zodra het CRA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+
+De bovenstaande actie schuift automatisch naar de locatie van die bevinding in het rapport.
+
+![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
    >Klik op **Refresh Report** om CRA te forceren het cachegeheugen te wissen en het rapport opnieuw te produceren.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+
+   >[!NOTE]
+   >Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+
 
 ### Adobe Experience Manager 6.2 en 6.1 {#aem-specific-versions}
 
