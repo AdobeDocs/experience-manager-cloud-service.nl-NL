@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
+source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 0%
+source-wordcount: '388'
+ht-degree: 1%
 
 ---
 
@@ -53,3 +53,20 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.9.0 is 3 september 2
 ### Bug Fixes {#bug-fixes-cm}
 
 * Op het tabblad Inhoudscontrole wordt de basis-URL onjuist weergegeven met behulp van het auteurdomein in plaats van het publicatiedomein.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer Release v1.1.0.
+
+### What&#39;s New {#what-is-new-cra}
+
+* De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete knop &quot;Generate Report&quot; weergeeft waarmee de gebruiker kan klikken om de CRA uit te voeren.
+
+* De CRA UI toont vooruitgang terwijl het loopt. Er worden items weergegeven die worden geanalyseerd en bevindingen tijdens de uitvoering worden gevonden.
+
+* Het CRA-rapport geeft een samenvatting en het aantal bevindingen in tabelvorm, ingedeeld naar het type bevinding en het belangrijkste niveau. Wanneer u op het nummer van die bevinding klikt, wordt automatisch naar de locatie van die bevinding in het rapport geschoven.
+
+### Bug Fixes {#cra-bug-fixes}
+
+* In bepaalde gevallen werd het CRA-rapport niet bijgewerkt nadat het werd afgedwongen om te vernieuwen. Dit is opgelost in deze versie.
+
