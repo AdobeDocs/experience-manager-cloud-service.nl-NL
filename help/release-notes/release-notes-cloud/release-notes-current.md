@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
+source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.9.0.
+In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.7.0.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
@@ -60,7 +60,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 ### What&#39;s New {#what-is-new-cra}
 
-* De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete knop &quot;Generate Report&quot; weergeeft waarmee de gebruiker kan klikken om de CRA uit te voeren.
+* De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete knop Rapport **** genereren weergeeft waarop de gebruiker kan klikken om de CRA uit te voeren.
 
 * De CRA UI toont vooruitgang terwijl het loopt. Er worden items weergegeven die worden geanalyseerd en bevindingen tijdens de uitvoering worden gevonden.
 
