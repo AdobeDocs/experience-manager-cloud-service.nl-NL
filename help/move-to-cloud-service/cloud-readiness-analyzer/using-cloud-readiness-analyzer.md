@@ -2,7 +2,7 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ In deze sectie wordt beschreven hoe u het Cloud Readiness Analyzer-rapport bekij
 
 1. Zodra het CRA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    De bovenstaande actie schuift automatisch naar de locatie van die bevinding in het rapport.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >Klik op **Refresh Report** om CRA te forceren het cachegeheugen te wissen en het rapport opnieuw te produceren.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
