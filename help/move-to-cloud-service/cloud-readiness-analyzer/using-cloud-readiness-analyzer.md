@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzer gebruiken
 description: Cloud Readiness Analyzer gebruiken
 translation-type: tm+mt
-source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
+source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 71%
+source-wordcount: '2209'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ Het rapport is als volgt ingedeeld:
 * **Systeemoverzicht**: Informatie over het AEM-systeem waarop CRA is uitgevoerd.
 * **Categorieën voor bevindingen**: Meerdere secties waarin elk een of meer bevindingen van dezelfde categorie worden behandeld. Elke sectie bevat de volgende items: categorienaam, subtypen, aantal en belang, samenvatting, koppeling naar categoriedocumentatie en individuele informatie over de bevindingen.
 
-Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
+Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie. Zie Categorieën van [patroondetectors voor meer informatie over elke zoekcategorie](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 
