@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
+source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Daarna, gebruik IDE GraphQL om te verifiëren dat het `eco_friendly` attribuut a
    }
    ```
 
-   ![Sample GraphlQL-respons](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Sample GraphQL-respons](../assets/customize-cif-components/sample-graphql-query.png)
 
    De waarde van **Ja** is een geheel getal van **1**. Dit zal nuttig zijn wanneer wij de vraag GraphQL in Java schrijven.
 
