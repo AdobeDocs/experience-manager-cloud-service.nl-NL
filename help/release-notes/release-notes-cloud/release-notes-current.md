@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 1%
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### What&#39;s New {#what-is-new-commerce}
+### Wat is er nieuw?{#what-is-new-commerce}
 
 * Uitgebrachte CIF Core Components v1.3.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie.
 
@@ -44,7 +44,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.9.0 is 3 september 2020.
 
-### What&#39;s New {#what-is-new-cloud-manager}
+### Wat is er nieuw?{#what-is-new-cloud-manager}
 
 * De controle van de inhoud is opnieuw geëtiketteerd als ErvingsControle.
 * Het bouwstijlproces is gescheiden in drie afzonderlijke Maven bevelen.
@@ -58,7 +58,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.9.0 is 3 september 2
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer Release v1.1.0.
 
-### What&#39;s New {#what-is-new-cra}
+### Wat is er nieuw?{#what-is-new-cra}
 
 * De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete knop Rapport **** genereren weergeeft waarop de gebruiker kan klikken om de CRA uit te voeren.
 
@@ -70,3 +70,16 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 * In bepaalde gevallen werd het CRA-rapport niet bijgewerkt nadat het werd afgedwongen om te vernieuwen. Dit is opgelost in deze versie.
 
+## De tool Content Transfer {#content-transfer-tool}
+
+Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het Hulpmiddel van de Overdracht van de Inhoud v1.1.10.
+
+### Nieuwe functies {#what-is-new-ctt}
+
+* De CTT (Content Transfer Tool) biedt ondersteuning voor Azure Blob Store Data Store.
+
+* De CTT-gebruikersinterface heeft een functie voor automatisch opnieuw laden waarmee de overzichtspagina elke 30 seconden opnieuw wordt geladen.
+
+* Knop die aan CTT gebruikersinterface wordt toegevoegd om *Toegangstoken* gemakkelijk terug te winnen.
+
+* Er is een beschrijvend validatiebericht toegevoegd voor de naam *van de* URL *en de* migratieset.
