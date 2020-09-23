@@ -2,7 +2,7 @@
 title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert
 translation-type: tm+mt
-source-git-commit: 85e4104c3c2dbe4b67005bab52edb7ab90767406
+source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
@@ -40,16 +40,16 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Selecteer de zoekcriteria voor de workflow in het dialoogvenster Filter. U kunt zoeken op basis van de volgende gegevens:
 
-* Payloadpad: Een specifiek pad selecteren
-* Workflowmodel: Een workflowmodel selecteren
-* Geadresseerde: Een werkstroomontvanger selecteren
-* Type: Taak, workflowitem of workflowfout
-* Taakstatus: Actief, volledig of beëindigd
-* Waar ik ben: Eigenaar EN gemachtigde, alleen eigenaar, alleen gevolmachtigde
-* Begindatum: Begindatum voor of na een opgegeven datum
-* Einddatum: Einddatum voor of na een opgegeven datum
-* Vervaldatum: Vervaldatum voor of na een bepaalde datum
-* Bijgewerkte datum: Bijgewerkte datum voor of na een opgegeven datum
+   * Payloadpad: Een specifiek pad selecteren
+   * Workflowmodel: Een workflowmodel selecteren
+   * Geadresseerde: Een werkstroomontvanger selecteren
+   * Type: Taak, workflowitem of workflowfout
+   * Taakstatus: Actief, volledig of beëindigd
+   * Waar ik ben: Eigenaar EN gemachtigde, alleen eigenaar, alleen gevolmachtigde
+   * Begindatum: Begindatum voor of na een opgegeven datum
+   * Einddatum: Einddatum voor of na een opgegeven datum
+   * Vervaldatum: Vervaldatum voor of na een bepaalde datum
+   * Bijgewerkte datum: Bijgewerkte datum voor of na een opgegeven datum
 
 ## Het onderbreken, Hervatten, en het Eindigen van een Instantie van het Werkschema {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -65,12 +65,12 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 ## Gearchiveerde workflows weergeven {#viewing-archived-workflows}
 
 1. Selecteer eerst Navigatiehulpmiddelen **en vervolgens** Workflow ****.
+
 1. Selecteer **Archiveren** om de lijst met workflowinstanties weer te geven die met succes zijn voltooid.
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >
    >De afbreekstatus wordt beschouwd als een succesvolle beëindiging aangezien het als resultaat van gebruikersactie voorkomt; bijvoorbeeld:
    >
    >* gebruik van de actie **Beëindigen**
@@ -91,12 +91,13 @@ Wanneer een werkschema ontbreekt, verstrekt AEM de console van **Mislukt** om u 
 * **Open Geschiedenis** geeft details van de werkschemageschiedenis weer.
 
 * **Stap** opnieuw voert de de componenteninstantie van de Stap van het Manuscript opnieuw uit. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindig** de workflow als de fout heeft geleid tot een onherstelbare situatie voor de workflow. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagruimte die niet langer geldig is voor de werkstroominstantie.
+* **Beëindig** de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
 * **Beëindig en probeer opnieuw** Vergelijkbaar met **Beëindigen** behalve dat wordt een nieuwe werkschemainstantie begonnen gebruikend de originele nuttige lading, de titel, en de beschrijving.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
 
 1. Selecteer eerst Navigatiehulpmiddelen **en vervolgens** Workflow ****.
+
 1. Selecteer **Problemen** om de lijst met workflowinstanties weer te geven die niet met succes zijn voltooid.
 1. Selecteer een specifiek item en voer de gewenste actie uit:
 
@@ -110,16 +111,12 @@ Configureer **Adobe Granite Workflow Purge Configuration** om workflowinstanties
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
-Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGI zie [OSGi configuratiedossiers](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
+Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGi zien [OSGi configuratiedossiers](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
 
 >[!NOTE]
->
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
->
 >`com.adobe.granite.workflow.purge.Scheduler`
->
 >Omdat de dienst een fabrieksdienst is, vereist de naam van de `sling:OsgiConfig` knoop een herkenningstekenachtervoegsel, bijvoorbeeld:
->
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -161,9 +158,7 @@ Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGI zie [
 U kunt de maximumgrootte van inbox plaatsen door de Dienst **van het Werkschema van** Adobe Granite te vormen, zie een configuratie OSGi [toevoegen aan de bewaarplaats](/help/implementing/deploying/configuring-osgi.md). De volgende lijst beschrijft het bezit dat u vormt.
 
 >[!NOTE]
->
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
->
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam |
