@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 95%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
 
-* U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store en Shared S3 Data Store. Azure Blob Store Data Store wordt momenteel niet ondersteund.
+* U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
 
 * Als u een *Sandbox-omgeving* gebruikt, moet u deze upgraden naar de versie van 10 juni 2020 of later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
@@ -47,16 +47,16 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Klik op **Create Migration Set** om een nieuwe migratieset te maken. De details van de **contentmigratieset** worden weergegeven.
+1. De onderstaande console wordt weergegeven wanneer u de eerste migratieset maakt. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >Het scherm toont de bestaande migratiesets en hun huidige status.
-
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
 
 1. Vul de velden in het scherm met de gegevens voor de **contentmigratieset** in, zoals hieronder beschreven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **Name**: Voer de naam van de migratieset in.
@@ -72,13 +72,13 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken vanuit de auteurinstantie ophalen door te navigeren naar `/libs/granite/migration/token.json`. Het toegangstoken wordt opgehaald van de Cloud Service-auteursinstantie.
+      >U kunt het toegangstoken terugwinnen door de **Open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de AEM beheerdersgroep in de instantie van de doelCloud Service behoort.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen.
 
-      1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd.
+      1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
          >[!IMPORTANT]
          >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:
@@ -92,43 +92,40 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. U kunt de migratieset bekijken op de overzichtspagina *Overview*.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle bestaande migratiesets op dit scherm worden met hun huidige status en statusinformatie weergegeven op de pagina *Overview*.
+   Alle bestaande migratiesets op dit scherm worden met hun huidige status en statusinformatie weergegeven op de pagina *Overview.* Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
    * Een *groene wolk* geeft aan dat u het extractieproces wel kunt voltooien.
    * Een *geel pictogram* geeft aan dat u de bestaande migratieset niet hebt gemaakt en dat de specifieke migratieset door een andere gebruiker in dezelfde instantie wordt gemaakt.
 
-1. Selecteer een migratieset op de overzichtspagina en klik op **Properties** om de eigenschappen van de migratieset weer te geven of te bewerken.
+1. Selecteer een migratieset op de overzichtspagina en klik op **Properties** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de containernaam of de service-URL te wijzigen.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### Extractieproces in Content Transfer {#extraction-process}
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten.
+1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven. Klik op **Extract** om de extractiefase te voltooien.
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >U kunt de stagingcontainer tijdens de extractiefase overschrijven indien u dat wilt.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. Het veld **EXTRACTION** toont nu de status **RUNNING** voor het extractieproces dat wordt uitgevoerd.
+1. In het veld **EXTRACTION** wordt nu de status **RUNNING** weergegeven om aan te geven dat de extractie wordt uitgevoerd.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    Zodra de extractie is voltooid, wordt de status van de migratieset bijgewerkt naar **FINISHED** en wordt een *effen groen* wolkpictogram weergegeven onder het veld **INFO**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >U moet de pagina vernieuwen om de bijgewerkte status weer te geven.
+   >De interface heeft een functie voor automatisch opnieuw laden waarmee de overzichtspagina elke 30 seconden opnieuw wordt geladen.
    >Bij het starten van de extractiefase wordt een schrijfvergrendeling geactiveerd. Deze wordt na *60 seconden* weer vrijgegeven. Als u een extractie stopt, moet u dus eerst een minuut wachten tot de vergrendeling is gedeactiveerd voordat u opnieuw een extractie start.
 
 #### Extractie aanvullen {#top-up-extraction-process}
@@ -140,41 +137,25 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen. Voer de onderstaande stappen uit:
 
-1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsextractie wilt uitvoeren.
-
-1. Klik op **Extract** om de extractie te starten.
-
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven.
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsextractie wilt uitvoeren. Klik op **Extract** om de extractie te starten. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven.
 
    >[!IMPORTANT]
    >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Opnameproces in Content Transfer {#ingestion-process}
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten.
+1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Click on **Ingest** to start the ingestion phase. Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. Zodra de opname is voltooid, wordt de status in het veld **PUBLISH INGESTION** bijgewerkt naar **FINISHED**.
 
-   Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   Klik op **Ingest** om de opnamefase te voltooien.
-
-1. Zodra de opname is voltooid, wordt de status in het veld **AUTHOR INGESTION** bijgewerkt naar **FINISHED** en wordt een effen groen wolkpictogram weergegeven onder **INFO**.
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > U moet de pagina vernieuwen om de bijgewerkte status weer te geven.
 
 #### Opname aanvullen {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
 
-1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren.
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
 
-1. Klik op **Ingest** om de opname te starten.
-
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
-
-   >[!NOTE]
-   >Schakel de optie *Wipe* (Wissen) uit om te voorkomen dat de bestaande content van de vorige opnameactiviteit wordt verwijderd.
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >Schakel de optie Bestaande inhoud **wissen op een Cloud-instantie uit voordat u de inhoud inneemt** , om te voorkomen dat de bestaande inhoud uit de vorige insluitingsactiviteit wordt verwijderd.
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
