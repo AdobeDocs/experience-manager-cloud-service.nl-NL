@@ -2,9 +2,9 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee h
 Zie [Git Resource: aio-cli-plugin-aem-wolk-dienst-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) om over het gebruik te leren en hoe u aan deze plugin code kunt bijdragen die open-sourced in GitHub is.
 
 >[!NOTE]
->Momenteel is alleen de Dispatcher Converter geïntegreerd met de plug-in.
+>De plug-in is momenteel geïntegreerd met AEM Dispatcher Converter en Repository Modernizer.
