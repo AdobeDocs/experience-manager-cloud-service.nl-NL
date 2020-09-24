@@ -3,7 +3,7 @@ title: Watermerk uw elementen
 description: Voeg een watermerk toe aan uw digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Voer de volgende stappen uit om Experience Manager te configureren naar watermer
 
 1. [Maak een verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) om de assetmicroservices te gebruiken voor het toepassen van het watermerk.
 
-![Middelverwerkingsprofiel om watermerk te maken](assets/watermark-processing-profile.png)
+   ![Middelverwerkingsprofiel om watermerk te maken](assets/watermark-processing-profile.png)
 
 1. [Pas de verwerkingsprofielen toe op een map](/help/assets/asset-microservices-configure-and-use.md#use-profiles) om elementen met een watermerk te maken.
 
