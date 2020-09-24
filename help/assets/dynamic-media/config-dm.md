@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
+source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
 workflow-type: tm+mt
 source-wordcount: '4786'
 ht-degree: 8%
@@ -155,7 +155,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Klik op Dynamische media Classic Global Navigation Bar om de pagina Algemene instellingen toepassing te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
+Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op de balk Dynamische mediaclassieke globale navigatie op **[!UICONTROL Setup > Application Setup > General Settings.]**
 
 * **[!UICONTROL Servers]** - Dynamische media biedt via provisioning van accounts automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij uitdrukkelijk om dit te doen door AEM ondersteuning.
 * **[!UICONTROL Overwrite Images]** - Dynamische media staat niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die naar een andere map zijn geüpload dan het origineel of op elementen met een andere bestandsnaamextensie dan het origineel (zoals JPG, TIF of PNG).
@@ -232,7 +232,7 @@ Zie Elementen [uploaden](/help/assets/add-assets.md).
 1. Voer een van de volgende handelingen uit:
 
    * Herhaal stap 3-4 om extra mime-typen te bewerken.
-   * Klik op de menubalk van de pagina CRXDE Lite **[!UICONTROL Save All]**.
+   * Klik op de menubalk van de pagina CRXDE Lite op **[!UICONTROL Save All.]**
 
 1. Tik in de linkerbovenhoek van de pagina **[!UICONTROL CRXDE Lite]** om terug te keren naar AEM.
 
@@ -242,7 +242,7 @@ U kunt aangepaste MIME-typen voor niet-ondersteunde indelingen toevoegen in AEM 
 
 **Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen**
 
-1. Tik vanaf AEM **[!UICONTROL Tools > Operations > Web Console]**.
+1. Tik vanaf AEM **[!UICONTROL Tools > Operations > Web Console.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
