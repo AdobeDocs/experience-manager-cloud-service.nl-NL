@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 0%
+source-wordcount: '1048'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +14,6 @@ ht-degree: 0%
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
 
-## Releasedatum {#release-date}
-
-De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 augustus 2020.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
@@ -25,6 +22,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 
 * Mogelijkheid om pagina&#39;s en subpagina&#39;s (paginastructuren) te [herstellen naar een eerdere versie](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
 * Mogelijkheid om Launches [te](/help/sites-cloud/authoring/launches/overview.md) maken in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
@@ -65,7 +63,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### What&#39;s New {#what-is-new-commerce}
+### Wat is er nieuw?{#what-is-new-commerce}
 
 * De functie Productconsole is nu beschikbaar. Dit staat marketers/auteurs in AEM toe om categorieën en producten te bekijken en te navigeren die in de handelskern worden opgeslagen. Er wordt ook ondersteuning geboden voor eigenschappen voor categorieën en producten in de productconsole.
 
@@ -77,9 +75,10 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.8.0 is 27 
 
 De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 2020.
 
-### What&#39;s New {#what-is-new-cloud-manager}
+### Wat is er nieuw?{#what-is-new-cloud-manager}
 
 * De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde lusje genoemd **Inhoud Controle**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
+
 
    >[!NOTE]
    >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
@@ -124,7 +123,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het Hulpmiddel van de Overdracht van de Inhoud v1.0.4.
 
-### What&#39;s New {#what-is-new-ctt}
+### Wat is er nieuw?{#what-is-new-ctt}
 
 * Content Transfer Tool biedt nu ondersteuning voor Shared S3 DataStore.
 
@@ -138,7 +137,7 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen van het Refactoring van de Code is.
 
-### What&#39;s New {#what-is-new-refactoring}
+### Wat is er nieuw?{#what-is-new-refactoring}
 
 * De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie.
 
