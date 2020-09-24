@@ -2,25 +2,36 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 3830fd0943e34671f8472eb7524de889fda9aa69
+source-git-commit: fd70f5b6a17666d411a64a8fb3961555a42a5430
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
 
 # Repository Modernizer {#repo-modernizer}
 
-## Voordelen {#benefits}
+Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projectpakketten te herstructureren door inhoud en code te scheiden in afzonderlijke pakketten, zodat deze compatibel zijn met de projectstructuur die voor Adobe Experience Manager als Cloud Service is gedefinieerd.
 
-Het hulpprogramma Repository Modernizer automatiseert de activiteit om de code van de klant te scheiden in geschikte pakketten die compatibel zijn met Adobe Experience Manager (AEM) als Cloud Service.
+## Inleiding {#introduction}
 
-## Inzicht krijgen in de insteekmodule {#understanding-plugin}
+Adobe Experience Manager als Cloud Service brengt vele nieuwe eigenschappen en mogelijkheden in uw AEM projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **inhoud** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Raadpleeg de [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
 
->[!NOTE]
->Het wordt aangeraden dit hulpprogramma via de AIO CLI-plug-in te gebruiken voor bronmigratie, maar het kan ook op zichzelf worden uitgevoerd.
+De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstructuur van de Cloud Service door de volgende plaatsingsstructuur te creëren:
 
-## Beschikbaarheid {#availability}
+* `ui.apps` pakket wordt geïmplementeerd naar `/apps` en bevat alle code
 
-Zie [Git Resource: aem-cs-bron-migratie-bewaarplaats-modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) om over het gebruik te leren en hoe u aan deze plugin code kunt bijdragen die open gesourced in GitHub is.
+* `ui.content` pakketimplementaties naar runtime-schrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home`of iets anders `/apps`) en bevat alle inhoud en configuratie.
+
+* `all` pakket is een containerpakket dat de subpakketten `ui.apps` en `ui.content`.
+
+## De Repository Modernizer gebruiken {#using-repo-modernizer}
+
+* Via Adobe I/O CLI: Aanbevolen wordt de functie Opslagfunctie Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM als plug-in voor het refactoring van Cloud Service voor de Adobe I/O CLI) te gebruiken.
+
+   Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor het installeren en gebruiken van de plug-in.
+
+* Als zelfstandig hulpprogramma: De Repository Modernizer kan ook als standalone nut worden uitgevoerd.
+
+   Zie **[Git Resource: Modernisering](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** van opslagplaats voor informatie over het gebruik van dit gereedschap.
