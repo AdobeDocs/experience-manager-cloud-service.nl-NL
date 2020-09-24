@@ -1,23 +1,25 @@
 ---
-title: Adobe Experience Manager Assets as a Cloud Service
+title: Middelen als hulplijn voor Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 
 
-# Adobe Experience Manager Assets as a Cloud Service {#aem-assets-guide}
+# Middelen als hulplijn voor Cloud Service {#aem-assets-guide}
 
 Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a Cloud Service.
 
 ## Belangrijkste Assets-artikelen {#key-articles}
 
-* [Inleiding tot Assets as a Cloud Service](overview.md)
+* [Overzicht en nieuw](overview.md)
+* [Opvallende wijzigingen](/help/assets/assets-cloud-changes.md)
 * [Architectuur van Assets as a Cloud Service](architecture.md)
+* [Overzicht van microservices voor assets](/help/assets/asset-microservices-overview.md)
 
 ## Experience Manager-handleidingen {#aem-guides}
 
