@@ -2,7 +2,7 @@
 title: Experience Audit Testing - Cloud Services
 description: Experience Audit Testing - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde op paginanive
    >[!NOTE]
    >De progressieve score van de Web App (PWA) is niet inbegrepen in de summiere score en zal slechts in het pagina-vlakke scherm van rapportdetails worden getoond.
 * Afzonderlijke scores op paginaniveau zijn ook beschikbaar via de neerwaartse boor.
-* Er zijn details van de scores beschikbaar om te zien wat de resultaten zijn van de afzonderlijke tests, samen met aanwijzingen voor het verhelpen van problemen die tijdens de inhoudscontrole zijn vastgesteld.
+* Nadere bijzonderheden over de scores zijn beschikbaar om te zien wat de resultaten zijn van de afzonderlijke tests, samen met aanwijzingen voor het verhelpen van eventuele problemen die tijdens de ervaringsaudit zijn vastgesteld.
 * Een geschiedenis van de testresultaten wordt voortgeduurd binnen de Manager van de Wolk zodat kunnen de klanten zien of de veranderingen die in de pijpleidingslooppas worden geïntroduceerd om het even welke regressies van de vorige looppas omvatten.
 
 ### Samengevoegde scores {#aggregate-scores}
