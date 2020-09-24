@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan [!DNL Adobe Experience Manager].
 description: Voeg uw digitale elementen toe [!DNL Adobe Experience Manager] aan een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,6 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 
 ## Elementen uploaden {#upload-assets}
 
-Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op uw bureaublad selecteren en in de gebruikersinterface (webbrowser) naar de doelmap slepen. U kunt het uploaden ook starten vanuit de gebruikersinterface.
-
-1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie waar u digitale elementen wilt toevoegen.
-1. Voer een van de volgende handelingen uit om de elementen te uploaden:
-
-   * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
-   * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
-
-   ![create_menu](assets/create_menu.png)
-
-   Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -59,10 +47,6 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, [!DNL Assets] verwijdert u het gedeeltelijk geüploade gedeelte van het element.
-
-   Als u het uploaden annuleert voordat de bestanden zijn geüpload, [!DNL Assets] stopt u met het uploaden van het huidige bestand en vernieuwt u de inhoud. Bestanden die al zijn geüpload, worden echter niet verwijderd.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op uw bureaublad selecteren en in de gebruikersinterface (webbrowser) naar de doelmap slepen. U kunt het uploaden ook starten vanuit de gebruikersinterface.
+
+1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie waar u digitale elementen wilt toevoegen.
+1. Voer een van de volgende handelingen uit om de elementen te uploaden:
+
+   * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
+   * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
+
+   ![create_menu](assets/create_menu.png)
+
+   Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
+
+1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, [!DNL Assets] verwijdert u het gedeeltelijk geüploade gedeelte van het element.
+
+   Als u het uploaden annuleert voordat de bestanden zijn geüpload, [!DNL Assets] stopt u met het uploaden van het huidige bestand en vernieuwt u de inhoud. Bestanden die al zijn geüpload, worden echter niet verwijderd.
+
 1. In het dialoogvenster Uploadvoortgang in [!DNL Assets] worden het aantal geüploade bestanden en de bestanden weergegeven die niet zijn geüpload.
 
-Daarnaast wordt in de gebruikersinterface Middelen het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
+   Daarnaast wordt in de gebruikersinterface Middelen het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
 >[!NOTE]
 >
->Zie [bulkupload-elementen](#bulk-upload)voor informatie over het uploaden van geneste maphiërarchieën naar AEM.
+>Voor het uploaden van geneste maphiërarchieën raadpleegt u [bulkupload-elementen](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -118,7 +118,7 @@ Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u **[!UICO
 
 [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
