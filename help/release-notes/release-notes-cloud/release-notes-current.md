@@ -2,27 +2,54 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 3%
+source-wordcount: '627'
+ht-degree: 1%
 
 ---
 
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.7.0.
+In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.9.0.
+
+## Releasedatum {#release-date}
+
+De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 is 24 september 2020.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* De Single Page Application (SPA) Editor Javascript SDK [is nu open source.](/help/implementing/developing/spa/reference-materials.md)
+* De Single Page Application (SPA) Editor JavaScript SDK [is nu open source.](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Het aanbrengen van watermerken op een PNG-afbeelding wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Het kan als Profiel van de Verwerking worden gevormd. &lt;!— TBD: Link naar het Help-artikel.>
+
+* Verbeteringen in [!DNL Dynamic Media]
+
+   * Selectieve publicatie - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen waarmee wordt gesynchroniseerd [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze elementen hoeven te publiceren [!DNL Dynamic Media] voor levering over de hele wereld. AEM en [!DNL Dynamic Media] uitgeverijen worden ontkoppeld en kunnen afzonderlijk worden uitgevoerd om dit te bereiken.
+   * Beheerders kunnen het wachtwoord voor de [!DNL Dynamic Media] Cloud Service dat bij levering is ontvangen, rechtstreeks in AEM gebruikersinterface herstellen zonder dat ze de [!DNL Dynamic Media Classic] bureaubladtoepassing hoeven te gebruiken.
+
+* Zie [wat nieuw is in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)voor informatie over de volgende verbeteringen.
+
+   * Uitgebreide PDF-voorvertoning met integratie van Adobe Document Cloud View SDK.
+   * Downloadfunctionaliteit met één klik.
+   * Nieuwe beheerconfiguraties voor de downloadervaring.
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### Wat is er nieuw?{#what-is-new-commerce}
+### Nieuwe functies {#what-is-new-commerce}
 
 * Uitgebrachte CIF Core Components v1.3.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie.
 
@@ -58,7 +85,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.9.0 is 3 september 2
 
 Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer Release v1.1.0.
 
-### Wat is er nieuw?{#what-is-new-cra}
+### Nieuwe functies {#what-is-new-cra}
 
 * De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete knop Rapport **** genereren weergeeft waarop de gebruiker kan klikken om de CRA uit te voeren.
 
