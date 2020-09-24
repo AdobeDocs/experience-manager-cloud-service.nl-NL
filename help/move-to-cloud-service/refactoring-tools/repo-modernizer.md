@@ -2,9 +2,9 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '301'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,9 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
 
 * `all` pakket is een containerpakket dat de subpakketten `ui.apps` en `ui.content`.
 
+>[!NOTE]
+>De projectstructuur is gebaseerd op *Archetype 24* voor pakketten en hun `pom.xml/filter.xml files`. Zie [Archetype 24](https://github.com/adobe/aem-project-archetype) voor meer informatie.
+
 ## De Repository Modernizer gebruiken {#using-repo-modernizer}
 
 * Via Adobe I/O CLI: Aanbevolen wordt de functie Opslagfunctie Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM als plug-in voor het refactoring van Cloud Service voor de Adobe I/O CLI) te gebruiken.
@@ -36,5 +39,5 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
 
    Zie **[Git Resource: Modernisering](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** van opslagplaats voor informatie over het gebruik van dit gereedschap.
 
->[!NOTE]
->Repository Modernizer wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
+   >[!NOTE]
+   >De Repository Modernizer wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
