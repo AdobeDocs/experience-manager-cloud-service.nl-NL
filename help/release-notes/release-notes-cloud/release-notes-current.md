@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.7.0.
+In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.9.0 beschreven.
 
 ## Releasedatum {#release-date}
 
@@ -28,12 +28,12 @@ De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Het aanbrengen van watermerken op een PNG-afbeelding wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Het kan als Profiel van de Verwerking worden gevormd.
+* Watermerken van afbeeldingsbestanden wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Deze kan worden geconfigureerd als een verwerkingsprofiel en gebruikt een PNG-bestand als watermerk. Zie [watermerk uw elementen](/help/assets/watermark-assets.md).
 
 * Verbeteringen in [!DNL Dynamic Media]
 
-   * Selectieve publicatie - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen waarmee wordt gesynchroniseerd [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze elementen hoeven te publiceren [!DNL Dynamic Media] voor levering over de hele wereld. AEM en [!DNL Dynamic Media] uitgeverijen worden ontkoppeld en kunnen afzonderlijk worden uitgevoerd om dit te bereiken.
-   * Beheerders kunnen het wachtwoord voor de [!DNL Dynamic Media] Cloud Service dat bij levering is ontvangen, rechtstreeks in AEM gebruikersinterface herstellen zonder dat ze de [!DNL Dynamic Media Classic] bureaubladtoepassing hoeven te gebruiken.
+   * Selectieve publicatie - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd, [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze elementen hoeven te publiceren [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en [!DNL Dynamic Media] publicatie wordt ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [Selectieve publicatie](/help/assets/dynamic-media/selective-publishing.md).
+   * Beheerders kunnen nu het wachtwoord voor [!DNL Dynamic Media] Cloud Servicen opnieuw instellen dat bij provisioning wordt ontvangen. U kunt de instellingen opnieuw instellen in de [!DNL Experience Manager] gebruikersinterface zonder dat u de [!DNL Dynamic Media Classic] bureaubladtoepassing hoeft te gebruiken.
 
 * Zie [wat nieuw is in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)voor informatie over de volgende verbeteringen.
 
