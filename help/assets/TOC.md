@@ -4,10 +4,10 @@ user-guide-title: AEM Assets as a Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 62cb875355691ebfde6ce1240011782fb59f77ab
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 94%
+source-wordcount: '425'
+ht-degree: 92%
 
 ---
 
@@ -107,6 +107,7 @@ ht-degree: 94%
    + [URL&#39;s koppelen aan uw webapplicatie](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media-assets publiceren](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [Werken met Selectief publiceren in dynamische media](dynamic-media/selective-publishing.md)
    + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [De CDN-cache ongeldig maken door middel van Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Werken met kiezers](dynamic-media/working-with-selectors.md)
