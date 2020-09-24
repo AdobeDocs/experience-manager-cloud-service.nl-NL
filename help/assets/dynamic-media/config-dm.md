@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '4775'
+source-wordcount: '5216'
 ht-degree: 8%
 
 ---
@@ -46,53 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Dynamic Media Cloud Service configureren {#configuring-dynamic-media-cloud-services}
+## Nieuwe dynamische mediaconfiguratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Voordat u Dynamic Media Cloud Service** configureert: Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat Dynamic Media Cloud Service is ingesteld met de juiste referenties.
-
-Dynamische mediawolkenservices configureren:
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole.
-1. Tik links van de console onder de kop **[!UICONTROL Tools]** op **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. Tik links van de console op het pictogram Extra en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Tik op de pagina Configuratiebrowser voor dynamische media in het linkerdeelvenster op **[!UICONTROL global]** (tik niet op het mappictogram links van **[!UICONTROL global]** of selecteer dit niet) en tik vervolgens op **[!UICONTROL Create]**.
-1. Voer op de pagina Dynamische mediaconfiguratie maken een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens het gebied. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
+1. Voer op de **[!UICONTROL Create Dynamic Media Configuration]** pagina een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
 1. Klik op **[!UICONTROL Connect to Dynamic Media]**.
+1. Voer in het **[!UICONTROL Change Password]** dialoogvenster in het **[!UICONTROL New Password]** veld een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
 
-   >[!NOTE]
-   >
-   >Nadat u een e-mailbericht met dynamische media-referenties hebt ontvangen, [meldt u zich aan bij](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Dynamic Media Cloud Service wordt ingesteld met de juiste referenties.
+   * Hoofdletter
+   * Kleine letter
+   * Getal
+   * Speciaal teken: `# $ & . - _ : { }`
+
+   Het **[!UICONTROL Current Password]** veld is opzettelijk voorgevuld en verborgen voor interactie.
+
+   Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt of getypt door op het oogpictogram voor het wachtwoord te tikken om het wachtwoord weer te geven. Tik nogmaals op het pictogram om het wachtwoord te verbergen.
+
+1. Typ in het **[!UICONTROL Repeat Password]** veld het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done.]**
+
+   Het nieuwe wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van de **[!UICONTROL Create Dynamic Media Configuration]** pagina tikt.
+
+   Als u tikt **[!UICONTROL Cancel]** in het **[!UICONTROL Change Password]** dialoogvenster, moet u nog steeds een nieuw wachtwoord invoeren wanneer u tikt om de nieuwe dynamische mediaconfiguratie op **[!UICONTROL Save]** te slaan.
+
+   Zie ook Wachtwoord [wijzigen in Dynamische media](#change-dm-password).
 
 1. Wanneer de verbinding tot stand is gebracht, kunt u het volgende instellen:
 
-* **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
-
-* **[!UICONTROL Company Root Folder Path]**
-
-* **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
-
-* **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
-
-* **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat een URL/koppeling Insluiten wordt opgegeven.
-
-* **[!UICONTROL Selective Publish]** betekent dat de activa auto voor veilige voorproef slechts worden gepubliceerd en uitdrukkelijk aan AEM kunnen worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst zal Adobe deze optie verbeteren om elementen te publiceren om elementen te AEM en te publiceren naar Dynamic Media, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen in AEM publiceren om een voorvertoning weer te geven; dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein.
-
-* **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
-Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u deze het plaatsen zoals gespecificeerd verlaat.
-
-* **[!UICONTROL Sync all content]** - Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:
-
-* **[!UICONTROL Dynamic Media sync mode]**
-
-* **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische media, opent u de pagina Eigenschappen van uw assetmap. Tik op de **[!UICONTROL Details]** tab en kies vervolgens in de **[!UICONTROL Dynamic Media sync mode]** vervolgkeuzelijst een van de volgende drie opties en sla vervolgens op Tik op **[!UICONTROL Save]**.
-
-* **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
-
-* **[!UICONTROL Enable for sub-folders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
-
-* **[!UICONTROL Disabled for sub-folders]** - Sluit alles in deze substructuur uit van synchroniseren naar dynamische media.
+   | Eigenschap | Beschrijving |
+   |---|---|
+   | Bedrijf | De naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen. |
+   | Pad naar hoofdmap van bedrijf | Het pad naar de hoofdmap van uw bedrijf. |
+   | Middelen publiceren | U kunt uit de volgende drie opties kiezen:<br>**[!UICONTROL Immediately]**: Wanneer elementen worden geüpload, neemt het systeem de elementen op en wordt direct de URL/Embed weergegeven. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>**[!UICONTROL Upon Activation]**: U moet het element eerst expliciet publiceren voordat een URL/koppeling Insluiten wordt opgegeven.<br>**[!UICONTROL Selective Publish]**: De activa worden auto gepubliceerd voor veilige voorproef slechts en kunnen uitdrukkelijk aan AEM worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst zal Adobe deze optie verbeteren om elementen te publiceren om elementen te AEM en te publiceren naar Dynamic Media, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen in AEM publiceren om een voorvertoning weer te geven; dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein. |
+   | Beveiligde voorvertoningsserver | Hier kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).<br>Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u deze het plaatsen zoals gespecificeerd verlaat. |
+   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u de selectie van deze optie opheft, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.<br>Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en tikt u vervolgens op de werkbalk op **[!UICONTROL Properties]**. Kies op het **[!UICONTROL Details]** tabblad in de **[!UICONTROL Dynamic Media sync mode]** vervolgkeuzelijst een van de volgende drie opties. Tik op **[!UICONTROL Save]** als u klaar bent. *Onthoud: Deze drie opties zijn niet beschikbaar als u Alle inhoud ****synchroniseren eerder hebt geselecteerd.* Zie ook [Werken met Selectief publiceren op mapniveau in Dynamische media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Inherited]**: Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.<br>**[!UICONTROL Enable for sub-folders]**: Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for sub-folders]**: Sluit alles in deze substructuur uit van synchroniseren naar dynamische media. |
 
    >[!NOTE]
    >
@@ -101,10 +91,19 @@ Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische med
    >
    >Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Tik op **[!UICONTROL Save]**.
-1. Als u de dynamische media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM auteur-instantie &quot;lijsten van gewenste personen&quot; om verbinding te maken met Dynamic Media:
+1. Tik op **[!UICONTROL Save]**. Het nieuwe wachtwoord en de nieuwe configuratie voor dynamische media worden opgeslagen. Als u **[!UICONTROL Cancel]** in plaats daarvan tikt, komt geen wachtwoordupdate voor.
+1. Tik in het **[!UICONTROL Configuring Dynamic Media]** **[!UICONTROL OK]** dialoogvenster om de configuratie te starten.
+
+   >[!IMPORTANT]
+   >
+   >Wanneer de nieuwe Dynamische configuratie van Media zijn opstelling voltooit, zult u een statusbericht binnen AEM Inbox ontvangen.
+   >
+   >Dit Inbox bericht deelt u als de configuratie of succesvol of niet was.
+   > Zie het Oplossen van [Problemen een nieuwe Dynamische configuratie](#troubleshoot-dm-config) van Media en [Uw Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie.
+
+1. Als u dynamische media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM auteur-instantie &quot;lijsten van gewenste personen&quot; om verbinding te maken met Dynamic Media. Ga als volgt te werk om dit in te stellen:
 
    * Meld u aan bij uw Dynamic Media Classic-account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Klik op de navigatiebalk rechts boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -117,6 +116,58 @@ Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische med
 U wordt nu gebeëindigd met de basisconfiguratie; u kunt Dynamische media gebruiken.
 
 Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke taken voltooien onder het [Vormen Geavanceerde Montages in Dynamische Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Het oplossen van problemen een nieuwe Dynamische Configuratie van Media {#troubleshoot-dm-config}
+
+Wanneer een nieuwe Dynamische configuratie van Media zijn opstelling voltooit, zult u een statusbericht binnen AEM Inbox ontvangen. Deze melding geeft aan of de configuratie is gelukt of niet, zoals in de volgende afbeeldingen in het Postvak In wordt getoond.
+
+![aeminbox-succes](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminbox-fout](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+Zie ook [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**Om een nieuwe Dynamische configuratie van Media problemen op te lossen**
+
+1. Tik in de rechterbovenhoek van de AEM op het belpictogram en tik vervolgens op **[!UICONTROL View All]**.
+1. Tik op de pagina Inbox op het succesbericht om een overzicht te lezen van de status en logboeken van de configuratie.
+
+   Als de configuratie ontbrak, tik het mislukkingsbericht gelijkend op het volgende screenshot.
+
+   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. Controleer op de **[!UICONTROL DMSETUP]** pagina de configuratiedetails die de fout beschrijven. Let met name op foutberichten of foutcodes. U dient contact op te nemen met de Adobe Care voor deze informatie.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### Het wachtwoord wijzigen in Dynamische media {#change-dm-password}
+
+Het verstrijken van het wachtwoord in Dynamische Media wordt geplaatst aan 100 jaar vanaf de huidige systeemdatum.
+
+Het wachtwoord moet ten minste een van de volgende elementen bevatten:
+
+* Hoofdletter
+* Kleine letter
+* Getal
+* Speciaal teken: `# $ & . - _ : { }`
+
+Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt of getypt door op het oogpictogram voor het wachtwoord te tikken om het wachtwoord weer te geven. Tik nogmaals op het pictogram om het wachtwoord te verbergen.
+
+Het gewijzigde wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van de **[!UICONTROL Edit Dynamic Media Configuration]** pagina tikt.
+
+1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole.
+1. Tik links van de console op het pictogram Extra en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. Tik op de pagina Configuratiebrowser voor dynamische media in het linkerdeelvenster op **[!UICONTROL global]** (tik niet op het mappictogram links van **[!UICONTROL global]** of selecteer dit niet) en tik vervolgens op **[!UICONTROL Edit.]**
+1. Tik op de **[!UICONTROL Edit Dynamic Media Configuration]** pagina, direct onder het **[!UICONTROL Password]** veld **[!UICONTROL Change Password.]**
+1. Ga als volgt te werk in het **[!UICONTROL Change Password]** dialoogvenster:
+
+   * Voer in het **[!UICONTROL New Password]** veld een nieuw wachtwoord in.
+
+      Het **[!UICONTROL Current Password]** veld is opzettelijk voorgevuld en verborgen voor interactie.
+
+   * Typ in het **[!UICONTROL Repeat Password]** veld het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done.]**
+
+1. Tik in de rechterbovenhoek van de **[!UICONTROL Edit Dynamic Media Configuration]** pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK.]**
 
 ## (Optioneel) Geavanceerde instellingen configureren in dynamische media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -182,13 +233,14 @@ De standaardeigenschappen voor kleuren configureren om kleurcorrectie in te scha
 1. [Meld u aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) met aanmeldingsgegevens die tijdens de provisioning worden geleverd. Ga naar **[!UICONTROL Setup > Application Setup]**.
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u wilt wijzigen, bijvoorbeeld een eigenschap in het **[!UICONTROL Color Management Attributes]** gebied.
+U kunt de volgende eigenschappen voor kleurcorrectie instellen:
 
-   U kunt de volgende eigenschappen voor kleurcorrectie instellen:
-
-   **[!UICONTROL CMYK Default Color Space]** - Naam van het standaard CMYK-kleurprofiel.
-   **[!UICONTROL Gray-Scale Default Color Space]** - Naam van het standaardgrijskleurprofiel.
-   **[!UICONTROL RGB Default Color Space]** - Naam van het standaard RGB-kleurprofiel.
-   **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe adviseert **[!UICONTROL relative]** als gebrek.
+   | Eigenschap | Beschrijving |
+   |---|---|
+   | CMYK-standaardkleurruimte | Naam van het standaard CMYK-kleurprofiel. |
+   | Standaardkleurruimte grijswaarden | Naam van het standaardkleurprofiel Grijs. |
+   | Standaardkleurruimte RGB | Naam van het standaard RGB-kleurprofiel. |
+   | Render-intentie kleurconversie | Geeft de render-intentie aan. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe adviseert **[!UICONTROL relative]** als gebrek. |
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -474,7 +526,7 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, Postscript- en PSD-besta
 | PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Als u een van deze parameters wilt bijwerken, volgt u de stappen in Op MIME gebaseerde elementen [inschakelen/Dynamische media Klassieke ondersteuning](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)voor taakparameters uploaden.
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### De Granite Transient Workflow-wachtrij bijwerken {#updating-the-granite-transient-workflow-queue}
 
