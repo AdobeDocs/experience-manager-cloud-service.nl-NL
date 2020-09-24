@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '4775'
 ht-degree: 8%
@@ -64,26 +64,35 @@ Dynamische mediawolkenservices configureren:
 
 1. Wanneer de verbinding tot stand is gebracht, kunt u het volgende instellen:
 
-   * **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
+* **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
 
-   * **[!UICONTROL Company Root Folder Path]**
+* **[!UICONTROL Company Root Folder Path]**
 
-   * **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
-      * **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
-      * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat een URL/koppeling Insluiten wordt opgegeven.
-      * **[!UICONTROL Selective Publish]** betekent dat de activa auto voor veilige voorproef slechts worden gepubliceerd en uitdrukkelijk aan AEM kunnen worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst zal Adobe deze optie verbeteren om elementen te publiceren om elementen te AEM en te publiceren naar Dynamic Media, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen in AEM publiceren om een voorvertoning weer te geven; dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein.
-   * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
+* **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
+
+* **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
+
+* **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat een URL/koppeling Insluiten wordt opgegeven.
+
+* **[!UICONTROL Selective Publish]** betekent dat de activa auto voor veilige voorproef slechts worden gepubliceerd en uitdrukkelijk aan AEM kunnen worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst zal Adobe deze optie verbeteren om elementen te publiceren om elementen te AEM en te publiceren naar Dynamic Media, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen in AEM publiceren om een voorvertoning weer te geven; dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein.
+
+* **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
 Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u deze het plaatsen zoals gespecificeerd verlaat.
 
-   * **[!UICONTROL Sync all content]** - Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:
+* **[!UICONTROL Sync all content]** - Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:
 
-   * **[!UICONTROL Dynamic Media sync mode]**
-      * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
+* **[!UICONTROL Dynamic Media sync mode]**
+
+* **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
 Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamische media, opent u de pagina Eigenschappen van uw assetmap. Tik op de **[!UICONTROL Details]** tab en kies vervolgens in de **[!UICONTROL Dynamic Media sync mode]** vervolgkeuzelijst een van de volgende drie opties en sla vervolgens op Tik op **[!UICONTROL Save]**.
-         * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
-         * **[!UICONTROL Enable for sub-folders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
-         * **[!UICONTROL Disabled for sub-folders]** - Sluit alles in deze substructuur uit van synchroniseren naar dynamische media.
+
+* **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
+
+* **[!UICONTROL Enable for sub-folders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
+
+* **[!UICONTROL Disabled for sub-folders]** - Sluit alles in deze substructuur uit van synchroniseren naar dynamische media.
 
    >[!NOTE]
    >
@@ -176,10 +185,10 @@ De standaardeigenschappen voor kleuren configureren om kleurcorrectie in te scha
 
    U kunt de volgende eigenschappen voor kleurcorrectie instellen:
 
-   * **[!UICONTROL CMYK Default Color Space]** - Naam van het standaard CMYK-kleurprofiel.
-   * **[!UICONTROL Gray-Scale Default Color Space]** - Naam van het standaardgrijskleurprofiel.
-   * **[!UICONTROL RGB Default Color Space]** - Naam van het standaard RGB-kleurprofiel.
-   * **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe adviseert **[!UICONTROL relative]** als gebrek.
+   **[!UICONTROL CMYK Default Color Space]** - Naam van het standaard CMYK-kleurprofiel.
+   **[!UICONTROL Gray-Scale Default Color Space]** - Naam van het standaardgrijskleurprofiel.
+   **[!UICONTROL RGB Default Color Space]** - Naam van het standaard RGB-kleurprofiel.
+   **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe adviseert **[!UICONTROL relative]** als gebrek.
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -190,7 +199,7 @@ Dit doet het volgende:
 * Hiermee schakelt u kleurcorrectie in voor RGB- en CMYK-afbeeldingen.
 * RGB-afbeeldingen die geen kleurprofiel hebben, worden verondersteld zich in de *sRGB* -kleurruimte te bevinden.
 * CMYK-afbeeldingen die geen kleurprofiel hebben, worden aangenomen in *WebCoated* -kleurruimte.
-* Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de *sRGB *kleurruimte.
+* Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de *sRGB* -kleurruimte.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de *WebCoated* -kleurruimte.
 
 #### Elementverwerking configureren {#configuring-asset-processing}
