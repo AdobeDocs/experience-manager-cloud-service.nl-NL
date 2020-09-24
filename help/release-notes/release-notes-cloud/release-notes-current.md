@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Het aanbrengen van watermerken op een PNG-afbeelding wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Het kan als Profiel van de Verwerking worden gevormd. &lt;!— TBD: Link naar het Help-artikel.>
+* Het aanbrengen van watermerken op een PNG-afbeelding wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Het kan als Profiel van de Verwerking worden gevormd.
 
 * Verbeteringen in [!DNL Dynamic Media]
 
