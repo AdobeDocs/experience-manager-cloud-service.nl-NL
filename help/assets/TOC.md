@@ -4,10 +4,10 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 90%
+source-wordcount: '434'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 90%
    + [Assets van AEM downloaden](download-assets-from-aem.md)
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor assets](drm.md)
+   + [Watermerkelementen](watermark-assets.md)
 + Assets configureren, beheren en uitbreiden {#admin}
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
