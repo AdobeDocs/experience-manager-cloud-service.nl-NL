@@ -2,7 +2,7 @@
 title: Introductie van het KUUROORD en Analyse
 description: Dit artikel introduceert de concepten een KUUROORD en loopt door het gebruiken van een basistoepassing van het KUUROORD voor creatie, tonend hoe het op de onderliggende AEM Redacteur van het KUUROORD betrekking heeft.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pag
 
 De volgende sectie, die een Toepassing [van het KUUROORD](#loading-a-spa-application)laadt, graaft dieper in de mechanica van het laden van het KUUROORD en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
-### Een SPA-toepassing laden {#loading-an-spa-application}
+### Een SPA-toepassing laden {#loading-a-spa-application}
 
 1. Als niet reeds geladen, laad de toepassing van het Dagboek Wij.Retail of op de publicatieserver of gebruikend de optie **Mening zoals Gepubliceerd** van het menu van de Informatie **van de** Pagina in de paginaredacteur.
 
