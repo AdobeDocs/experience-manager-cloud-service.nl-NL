@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API-naslaggids
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # ContextHub JavaScript API-naslaggids {#contexthub-javascript-api-reference}
 
-De JavaScript-API van ContextHub is beschikbaar voor uw scripts wanneer de [component ContextHub aan de pagina](configuring-contexthub.md#adding-contexthub-to-a-page-component)is toegevoegd.
+De JavaScript-API van ContextHub is beschikbaar voor uw scripts wanneer de [component ContextHub aan de pagina](adding-contexthub.md)is toegevoegd.
 
 ## ContextHub-constanten {#contexthub-constants}
 
@@ -20,7 +20,7 @@ Constante waarden die door de JavaScript-API van ContextHub worden gedefinieerd.
 
 ### Gebeurtenisconstanten {#event-constants}
 
-De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels ContextHub voorkomen. Zie ook [ContextHub.Utils.Event](contexthub-api.md#contexthub-utils-eventing).
+De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels ContextHub voorkomen. Zie ook [ContextHub.Utils.Event](#contexthub-utils-eventing).
 
 | Constante | Beschrijving | Waarde |
 |---|---|---|
@@ -482,7 +482,7 @@ Hiermee wordt de opgegeven parameter omgezet.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` breidt [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [Persistentiemodi:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` breidt [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [Persistentiemodi:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
