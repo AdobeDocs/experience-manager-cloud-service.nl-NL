@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -292,7 +292,7 @@ Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
 
    * Het middeltype van de paginacomponent.
    * Het beleid van de wortelknoop, die de componenten bepaalt die in de malplaatjeredacteur worden toegestaan.
-   * Het wordt aanbevolen de onderbrekingspunten voor het responsieve raster en de instelling van de mobiele emulator op te geven voor het sjabloontype. Dit is optioneel, omdat de configuratie ook op de afzonderlijke sjabloon kan worden gedefinieerd (zie de sectie [Sjabloontype en Mobiele apparaatgroepen](#p-template-type-and-mobile-device-groups-br-p)).
+   * Het wordt aanbevolen de onderbrekingspunten voor het responsieve raster en de instelling van de mobiele emulator op te geven voor het sjabloontype.
 
 * AEM biedt een kleine selectie van out-of-box sjabloontypen, zoals HTML5 Page en Adaptive Form Page.
 
@@ -476,7 +476,7 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
 
    Voordat een sjabloon kan worden gebruikt, moet deze zijn ingeschakeld door:
 
-   * [Het toelaten van het malplaatje](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) van de console van **Malplaatjes** .
+   * [Het toelaten van het malplaatje](/help/sites-cloud/authoring/features/templates.md) van de console van **Malplaatjes** .
 
    * Setting the status property on the `jcr:content` node.
 
