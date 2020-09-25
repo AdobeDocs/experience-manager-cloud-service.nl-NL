@@ -2,7 +2,7 @@
 title: SPA-blauwdruk
 description: Dit document beschrijft het algemene, kader-onafhankelijke contract dat om het even welk kader van het KUUROORD zou moeten vervullen om editable componenten van het KUUROORD binnen AEM uit te voeren.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ De component van het KUUROORD wordt in kaart gebracht aan een grafische containe
 
 Bijvoorbeeld:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Bijvoorbeeld:
 
 De onderliggende [`Component Mapping`](#componentmapping) bibliotheek en zijn `MapTo` functie kunnen worden ingekapseld en worden uitgebreid om de functionaliteiten met betrekking tot te verstrekken uitgeeft configuratie die naast de huidige componentenklasse wordt verstrekt.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens wordt geregistreerd in de opslag van de Afbeelding van de [Component](#componentmapping) . Dit wordt gedaan door de [`ComponentMapping`](#componentmapping) bibliotheek in te kapselen en uit te breiden om de steun van het `EditConfig` configuratievoorwerp te introduceren:
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 * Het responsieve rasterelement bevat vooraf ingestelde klassenamen `aem-Grid--`
 * Het responsieve kolomelement bevat vooraf ingestelde klassenamen `aem-GridColumn--`
 * Een responsief raster dat ook de kolom van een bovenliggend raster is, wordt omlopen, zoals de twee vorige voorvoegsels, worden niet op hetzelfde element weergegeven
-* Elementen die overeenkomen met bewerkbare bronnen hebben een `data-cq-data-path` eigenschap. Zie het [Contract met de sectie van de Redacteur](#contract-wtih-the-page-editor) van de Pagina van dit document.
+* Elementen die overeenkomen met bewerkbare bronnen hebben een `data-cq-data-path` eigenschap. Zie het [Contract met de sectie van de Redacteur](#contract-with-the-page-editor) van de Pagina van dit document.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
