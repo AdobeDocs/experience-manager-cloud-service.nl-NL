@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -43,8 +43,8 @@ Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 * ContextHub verstrekt verscheidene types [van](sample-stores.md)steekproefopslag.
 * Gebruik AEM consoles om winkels te [maken](configuring-contexthub.md#creating-a-contexthub-store).
 * Ontwikkelaars kunnen aangepaste winkeltypen [maken](extending-contexthub.md#creating-custom-store-candidates).
-* Ontwikkelaars hebben [toegang tot opslaggegevens](configuring-contexthub.md#interacting-with-contexthub-stores) via JavaScript.
+* Ontwikkelaars hebben [toegang tot opslaggegevens](adding-contexthub.md#interacting-with-contexthub-stores) via JavaScript.
 
 ## Segmentering {#segmentation}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de Javascript API gebruiken om opgeloste segmenten [te](configuring-contexthub.md#determining-resolved-contexthub-segments)bepalen.
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de Javascript API gebruiken om opgeloste segmenten [te](adding-contexthub.md#determining-resolved-contexthub-segments)bepalen.
