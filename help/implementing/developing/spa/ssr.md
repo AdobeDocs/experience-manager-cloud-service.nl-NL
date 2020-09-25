@@ -2,9 +2,9 @@
 title: SPA en rendering op de server
 description: Het gebruiken van server zijhet teruggeven (SSR) in uw SPA kan de aanvankelijke lading van de pagina versnellen en dan verdere het teruggeven tot de cliënt overgaan.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De volgende secties specificeren hoe Adobe I/O Runtime kan worden gebruikt om SS
 >
 >Adobe raadt een aparte Adobe I/O Runtime-instantie aan voor elke AEM omgeving (auteur, publicatie, werkgebied, enz.).
 
-## Configuratie van externe renderer {#remote-renderer-configuration}
+## Configuratie van externe renderer {#remote-content-renderer-configuration}
 
 AEM moet weten waar de op afstand gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR uit te voeren,](#adobe-i-o-runtime) zult u aan AEM moeten specificeren hoe te om tot deze verre teruggevende dienst toegang te hebben.
 
@@ -67,8 +67,6 @@ De volgende velden zijn beschikbaar voor de configuratie:
 >[!NOTE]
 >
 >Ongeacht of u verkiest om de [AEM-gedreven communicatie stroom](#aem-driven-communication-flow) of de [Adobe I/O Runtime-gedreven stroom uit te voeren,](#adobe-i-o-runtime-driven-communication-flow) moet u een verre configuratie van inhoudrenderer bepalen.
->
->Deze configuratie moet ook worden bepaald als u verkiest om een server van Node.js te [gebruiken.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ De volgende velden zijn beschikbaar voor de configuratie:
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
-Wanneer het gebruiken van SSR, omvat het werkschema [van de](introduction.md#workflow) componenteninteractie van SPAs in AEM een fase waarin de aanvankelijke inhoud van app op Adobe I/O Runtime wordt geproduceerd.
+Wanneer het gebruiken van SSR, omvat het werkschema [van de](introduction.md#interaction-with-the-spa-editor) componenteninteractie van SPAs in AEM een fase waarin de aanvankelijke inhoud van app op Adobe I/O Runtime wordt geproduceerd.
 
 1. De browser vraagt om de SSR-inhoud van AEM.
 1. AEM plaatst het model op Adobe I/O Runtime.
@@ -164,7 +162,7 @@ Het `RemoteContentRendererRequestHandlerServlet` kan worden gebruikt om de verzo
 
 Om een manager van het douaneverzoek toe te voegen, voer de `RemoteContentRendererRequestHandler` interface uit. Ben zeker om het `Constants.SERVICE_RANKING` componentenbezit aan een geheel te plaatsen hoger dan 100, dat de rangschikking van `DefaultRemoteContentRendererRequestHandlerImpl`is.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ Om een servlet te hebben halen en wat inhoud terug te keren die in de pagina kan
 
 Gewoonlijk is de HTML-sjabloon van een paginacomponent de belangrijkste ontvanger van een dergelijke functie.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
