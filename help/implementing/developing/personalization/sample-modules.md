@@ -2,9 +2,9 @@
 title: Voorbeeld van UI-moduletypen van ContextHub
 description: ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossingen kunt gebruiken
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Instanties van de module Contextthub.browserinfo UI vereisen geen waarde voor de
 
 ## Het type van de module contextthub.datetime {#contexthub-datetime-ui-module-type}
 
-De module `contexthub.datetime` UI toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) opslagkandidaat gebaseerd is.
+De module `contexthub.datetime` UI toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de `contexthub.datetime` opslagkandidaat gebaseerd is.
 
 ![contexthub.datetime, module](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ De instanties van de module `contexthub.screen-orientation` UI vereisen geen waa
 
 ## Contextthub.tagcloud-UI-moduletype {#contexthub-tagcloud-ui-module-type}
 
-In de module `contexthub.tagcloud` UI wordt informatie over tags weergegeven. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op de [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) opslagkandidaat gebaseerd is.
+In de module `contexthub.tagcloud` UI wordt informatie over tags weergegeven. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op de `contexthub.tagcloud` opslagkandidaat gebaseerd is.
 
 ![contexthub.tagcloud, module](assets/tagcloud-module.png)
 
