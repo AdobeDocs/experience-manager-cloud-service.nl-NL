@@ -2,9 +2,9 @@
 title: ContextHub configureren
 description: Leer hoe te om de Hub van de Context te vormen.
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,6 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Een generiek type UI-module | Gevormd in de eigenschappen van de UI module |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Hiermee wordt informatie over de browser weergegeven | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Datum- en tijdgegevens weergeven | `datetime` |
-| [contexthub.device](sample-modules.md#contexthub-device-ui-module-type) | Het clientapparaat weergeven | `emulators` |
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Hiermee geeft u de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Geeft de schermstand van het apparaat (liggend of staand) weer | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | `tagcloud` |
@@ -112,14 +111,10 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
 | Winkeltype | Beschrijving |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch segmenten van ContextHub SegmentManager terug |
-| [aem.resolvedsegments](sample-stores.md#aem-resolvedsegments-sample-store-candidate) | Hiermee slaat u de momenteel opgeloste segmenten op. Luistert aan de dienst ContextHub SegmentManager om de opslag automatisch bij te werken |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Hiermee slaat u de breedte en lengte van de browserlocatie op. |
-| [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) | Hiermee worden de huidige datum, tijd en het huidige seizoen voor de browserlocatie opgeslagen |
 | [graniet.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Definieert eigenschappen en mogelijkheden voor een aantal apparaten en detecteert het huidige clientapparaat |
-| [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) | Wint en slaat gegevens van de dienst JSONP op |
 | [graniet.profile](sample-stores.md#granite-profile-sample-store-candidate) | Hiermee worden profielgegevens voor de huidige gebruiker opgeslagen |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Hiermee wordt informatie over de client opgeslagen, zoals apparaatinformatie, browsertype en vensterrichting |
-| [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) | Hiermee worden paginatags en tellingen van tags opgeslagen |
 
 1. Klik of tik op Extra > Sites > ContextHub in de Experience Manager.
 1. Klik of tik de standaardconfiguratiecontainer.
@@ -144,7 +139,7 @@ Dit voorbeeld illustreert hoe te om een opslag te vormen en de gegevens in een m
 
 Een opslag contextthub.generic-jsonp wordt gevormd zodat het gegevens voor de de dienstvraag opslaat `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. De dienst keert de volgende gegevens terug die in een module UI worden getoond:
 
-```xml
+```javascript
 {
    "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
    "original": "\"text to md5\""
@@ -165,7 +160,7 @@ Om gegevens van de MD5 dienst van de plaats op te slaan jsontest.com, gebruik de
 * **Ingeschakeld:** Selecteren
 * **Detailconfiguratie (JSON):**
 
-   ```xml
+   ```javascript
    {
     "service": {
     "jsonp": false,
@@ -193,7 +188,7 @@ Gebruik de procedure in het [Toevoegen van een Module](#adding-a-ui-module) UI o
 * **Moduletype:** contexthub.base
 * **Detailconfiguratie (JSON):**
 
-   ```xml
+   ```javascript
    {
     "icon": "coral-Icon--data",
     "title": "MD5 Conversion",
@@ -222,6 +217,15 @@ Gebruik CRXDE Lite om de eigenschap in `debug` te stellen op **true** onder:
 
 * `/conf/global/settings/cloudsettings` or
 * `/conf/<site>/settings/cloudsettings`
+
+### Het registreren zuivert Berichten voor ContextHub {#logging-debug-messages-for-contexthub}
+
+Vorm de dienst van ContextHub OSGi van Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) om gedetailleerde Debug berichten te registreren die wanneer het ontwikkelen nuttig zijn.
+
+Om de dienst te vormen kunt u of de Console [van het](/help/implementing/deploying/configuring-osgi.md) Web gebruiken of een knoop JCR in de bewaarplaats gebruiken:
+
+* Webconsole: Om te registreren zuivert berichten, selecteer het Debug bezit.
+* JCR-knooppunt: Om te registreren zuivert berichten, plaats het booleaanse `com.adobe.granite.contexthub.debug` bezit aan `true`.
 
 ### Stille modus {#silent-mode}
 
