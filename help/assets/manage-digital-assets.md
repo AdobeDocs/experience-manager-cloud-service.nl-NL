@@ -1,12 +1,12 @@
 ---
-title: Uw digitale middelen beheren in Experience Manager
+title: Digitale middelen beheren
 description: Meer informatie over verschillende methoden voor middelenbeheer en -bewerking.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4290'
+source-wordcount: '4286'
 ht-degree: 11%
 
 ---
@@ -548,7 +548,7 @@ Tik op het pictogram of klik op het pictogram en volg de instructies in de wizar
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het bestand **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
@@ -562,7 +562,7 @@ Hieronder vindt u scenario&#39;s waarin u versies maakt:
 * U bewerkt de metagegevens van een element.
 * U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 Met de versiefunctionaliteit kunt u het volgende doen:
 
