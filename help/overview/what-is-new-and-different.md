@@ -2,9 +2,9 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1884'
 ht-degree: 91%
 
 ---
@@ -82,17 +82,14 @@ AEM versie-updates zijn van twee typen:
    * Kunnen dagelijks worden uitgebracht.
    * Meestal onderhoud, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
 
-   Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
+      Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
 
->[!NOTE]
->Raadpleeg het whitepaper over [Adobe Experience Manager als een Cloud Service Continuous Delivery Model voor meer informatie over AEM push-updates](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      >[!NOTE]
+      >Raadpleeg het whitepaper over [Adobe Experience Manager als een Cloud Service Continuous Delivery Model voor meer informatie over AEM push-updates.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **Nieuwe functie-updates**
 
    * Uitgegeven via een voorspelbaar maandschema.
-
->[!NOTE]
->Zie [Implementatiearchitectuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) voor meer informatie .
 
 ## Cloud Manager {#cloud-manager}
 
