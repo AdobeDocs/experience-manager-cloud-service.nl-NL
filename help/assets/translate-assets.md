@@ -1,11 +1,11 @@
 ---
-title: Digitale middelen maken en beheren in meerdere talen en vertaalworkflows uitvoeren
+title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2461'
 ht-degree: 19%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 19%
 
 # Meertalige activa {#multilingual-assets}
 
-Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager-elementen (AEM) kunt u vertaalworkflows automatiseren voor middelen (inclusief binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
+Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager (AEM) Assets kunt u vertaalworkflows automatiseren voor middelen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
 Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met AEM en creeert projecten voor het vertalen van activa in veelvoudige talen. AEM ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en geïmporteerd in AEM. Wanneer uw vertaalprovider is geïntegreerd met AEM, worden middelen automatisch verzonden tussen AEM en de vertaalprovider.
+Menselijke vertaling: De vertaalde elementen worden geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalbureau is geïntegreerd met AEM, worden middelen automatisch verzonden tussen AEM en de vertaalprovider.
 
 Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
@@ -51,9 +51,9 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager (AEM)-middelen worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
+In Adobe Experience Manager (AEM) Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld, `/content/dam/it` is de Italiaanse taalwortel voor het Italiaans taalexemplaar. De exemplaren van de taal moeten een [correct-gevormde taalwortel](#create-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld, `/content/dam/it` is de Italiaanse taalwortel voor het Italiaans taalexemplaar. De exemplaren van de taal moeten een [correct-gevormde taalwortel](#create-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
@@ -88,7 +88,7 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 ### Taalwortels weergeven {#view-language-roots}
 
-De interface die is geoptimaliseerd voor aanrakingen biedt een paneel Referenties met een lijst met taalwortels die zijn gemaakt in AEM Assets.
+De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.
@@ -168,7 +168,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ### Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaan de nieuw vertaalde middelen op een tijdelijke locatie op en werken de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde middelen op een tijdelijke locatie op en werkt de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
 1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in AEM Assets.
 1. Selecteer in de interface Elementen een element dat u al hebt vertaald en klik op het **[!UICONTROL Edit]** pictogram of tik op het pictogram op de werkbalk om het element te openen in de bewerkingsmodus.
@@ -206,7 +206,7 @@ U voert deze workflow uit om een extra groep elementen te vertalen en deze op te
 
 >[!NOTE]
 >
->Als u een vertaalworkflow start voor complexe elementen, zoals PDF-bestanden en Adobe InDesign-bestanden, worden de subelementen of vertoningen (indien aanwezig) van die bestanden niet verzonden voor vertaling.
+>Als u een vertaalworkflow start voor complexe elementen, zoals PDF-bestanden en Adobe InDesign-bestanden, worden de submiddelen of vertoningen (indien aanwezig) van die elementen niet verzonden voor vertaling.
 
 ### Workflow maken en vertalen {#create-and-translate-workflow}
 
@@ -230,7 +230,7 @@ Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoof
 
 ## Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
-Met Adobe Experience Manager (AEM) kunt u vertaalservices in de cloud gebruiken van de vertaalprovider van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
+Met Adobe Experience Manager (AEM) kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
 U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zodat u deze kunt gebruiken tijdens vertaalworkflows.
 
