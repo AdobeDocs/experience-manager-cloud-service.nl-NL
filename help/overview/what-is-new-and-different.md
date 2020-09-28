@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 91%
+source-wordcount: '1856'
+ht-degree: 92%
 
 ---
 
@@ -66,7 +66,7 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 ![Automatisch schalen voor variërende gebruikspatronen](assets/introduction-04.png "Automatisch schalen voor variërende gebruikspatronen")
 
 
-## Updates {#upgrades}
+## Updates AEM {#upgrades}
 
 >[!NOTE]
 >Zie de [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)voor meer informatie.
@@ -83,9 +83,6 @@ AEM versie-updates zijn van twee typen:
    * Meestal onderhoud, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
 
       Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
-
-      >[!NOTE]
-      >Raadpleeg het whitepaper over [Adobe Experience Manager als een Cloud Service Continuous Delivery Model voor meer informatie over AEM push-updates.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **Nieuwe functie-updates**
 
