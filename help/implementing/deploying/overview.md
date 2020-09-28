@@ -2,9 +2,9 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3202'
 ht-degree: 1%
 
 ---
@@ -16,39 +16,19 @@ ht-degree: 1%
 
 De grondbeginselen van codeontwikkeling zijn in AEM als een Cloud Service vergelijkbaar met de oplossingen AEM Op locatie en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens als een Cloud Service-omgeving wordt doorgegeven aan externe AEM. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het opstellen van code aan AEM als milieu&#39;s van de Cloud Service.
 
-De update van de AEM versie is altijd een aparte implementatiegebeurtenis en duwt geen aangepaste code. Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop van zal worden opgesteld. AEM versies die daarna worden bijgewerkt, worden automatisch toegepast. Dit gebeurt vaak in vergelijking met Managed Services vandaag. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
+De update van de [AEM versie](/help/implementing/deploying/aem-version-updates.md) is altijd een aparte implementatiegebeurtenis en duwt niet zozeer op [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop van zal worden opgesteld. AEM versies worden bijgewerkt die daarna plaatsvinden. Deze worden regelmatig en automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
 
-De volgende video verstrekt een overzicht op hoog niveau over hoe te om code op te stellen om als Cloud Service te AEM:
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen moeten aanpassen zodat ze zowel met AEM werken als met de updates van de versie van de Cloud Service als met de updates van de klant.
 
 >[!NOTE]
 >Het wordt aanbevolen dat klanten met bestaande codesystemen de in de [AEM documentatie](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)beschreven herstructurering van de opslagplaats doorlopen.
 
-
-## AEM versies bijwerken {#version-updates}
-
-Het is belangrijk om te begrijpen dat AEM regelmatig, mogelijk zo vaak als eenmaal per dag, zal worden bijgewerkt en zich op insectenmoeilijke situaties en prestatiesverhogingen zal concentreren. De update wordt op transparante wijze uitgevoerd en er wordt geen downtime veroorzaakt. De update is bedoeld om achterwaarts compatibel te zijn. Dit betekent dat u geen aangepaste code hoeft te wijzigen. In feite, zijn AEM updates onafhankelijke gebeurtenissen van de plaatsingen van de klantencode. De AEM-update wordt geïmplementeerd vóór de laatste geslaagde code-push, die impliceert dat eventuele wijzigingen die zijn doorgevoerd sinds de laatste push naar de productie, niet worden geïmplementeerd.
-
->[!NOTE]
->
->Als de douanecode aan het opvoeren werd geduwd en dan door u werd verworpen, zal de volgende AEM update die veranderingen verwijderen om op de git markering van de laatste succesvolle klantenversie aan productie te wijzen.
-
-Op een regelmatige frequentie, zal een eigenschapversie plaatsvinden, die zich op eigenschaptoevoegingen en verhogingen concentreert die wezenlijk de gebruikerservaring in vergelijking met de dagelijkse versies zullen beïnvloeden. Een eigenschapversie wordt teweeggebracht niet door de plaatsing van een grote veranderingsreeks, maar eerder door het omdraaien van een versiesknevel, activerende code die zich in de loop van dagen of weken door de dagelijkse updates heeft verzameld.
-
-Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM als update van de Cloud Service ontbreken, zal de versie niet voor die milieu te werk gaan en Adobe zal onderzoeken waarom de update dit onverwachte gedrag veroorzaakte.
-
-### Composite Node Store {#composite-node-store}
-
-Zoals hierboven vermeld, zullen updates in de meeste gevallen nul onderbreking, onder meer voor de auteur, die een cluster van knopen is. Rolling updates zijn mogelijk vanwege de functie &quot;Samengesteld knooppunt opslaan&quot; in Eak. Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In een het rollen plaatsing, bevat de nieuwe Groene AEM versie zijn eigen `/libs` (op TarMK gebaseerde onveranderlijke bewaarplaats), verschillend van de oudere Blauwe AEM versie, hoewel allebei verwijzen naar een gedeelde Op DocumentMK gebaseerde veranderbare bewaarplaats die gebieden zoals `/content`, `/conf`, `/etc` en anderen bevat. Omdat blauw en Groen hun eigen versies van hebben, kunnen zij allebei actief tijdens de het rollen update zijn, allebei die verkeer nemen tot het blauw volledig door groen wordt vervangen. `/libs`
-
 ## Klantenreleases {#customer-releases}
 
 ### Codering op basis van de juiste AEM versie {#coding-against-the-right-aem-version}
 
-Voor vorige AEM oplossingen, veranderde de huidigste AEM versie niet vaak (ruwweg jaarlijks met driemaandelijkse de dienstpakken) en de klanten zouden de productieinstanties aan de recentste snelstartversie op hun eigen tijd bijwerken, verwijzend naar API Jar. Nochtans, AEM als Cloud Service worden de toepassingen automatisch bijgewerkt aan de recentste versie van AEM vaker, zodat zou de douanecode voor interne versies tegen die nieuwere AEM interfaces moeten worden gebouwd.
+Voor vorige AEM oplossingen, veranderde de huidigste AEM versie niet vaak (ruwweg jaarlijks met driemaandelijkse de dienstpakken) en de klanten zouden de productieinstanties aan de recentste snelstartversie op hun eigen tijd bijwerken, verwijzend naar API Jar. AEM als toepassingen van de Cloud Service worden automatisch bijgewerkt naar de recentste versie van AEM vaker, zodat de douanecode voor interne versies tegen de recentste AEM versie zou moeten worden gebouwd.
 
 Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikkeling op basis van een specifieke snelstart ondersteund en wordt verwacht dat deze in de meeste gevallen het juiste middel is om foutopsporing uit te voeren.
 
@@ -56,6 +36,13 @@ Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikke
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van de Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
 Om aangepaste code voor een interne release te kunnen ontwikkelen, moet de relevante versie van de [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/overview.md)voor meer informatie over het gebruik van de AEM als Cloud Service Dispatcher Tools.
+
+De volgende video verstrekt een overzicht op hoog niveau over hoe te om code op te stellen om als Cloud Service te AEM:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+>[!NOTE]
+>Het wordt aanbevolen dat klanten met bestaande codesystemen de in de [AEM documentatie](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)beschreven herstructurering van de opslagplaats doorlopen.
 
 ## Inhoudspakketten implementeren via Cloud Manager en Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -283,7 +270,7 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 ## Runmodi {#runmodes}
 
-In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceert) en het milieu (dev, stadium, prod).
+In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceer) en het milieu (dev, stadium, prod).
 
 AEM als Cloud Service daarentegen is meer mening over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
