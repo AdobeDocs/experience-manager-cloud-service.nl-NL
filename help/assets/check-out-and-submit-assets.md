@@ -1,11 +1,11 @@
 ---
-title: Bestanden in elementen inchecken en uitchecken
+title: Bestanden in- en uitchecken in [!DNL Assets]
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Bestanden in elementen inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
 
-Met Adobe Experience Manager (AEM) Middelen kunt u elementen uitchecken en deze opnieuw inchecken nadat u alle wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij AEM Assets. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
+Met Adobe Experience Manager (AEM) Assets kunt u elementen uitchecken en deze opnieuw inchecken nadat u alle wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij AEM Assets. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
 
 Om activa te kunnen uitchecken/inchecken, hebt u schrijftoegang op hen nodig.
 
@@ -57,7 +57,7 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   Het gewijzigde element wordt ingecheckt bij AEM Assets en is beschikbaar voor andere gebruikers voor bewerking.
+   Het gewijzigde element is ingecheckt in AEM Assets en is beschikbaar voor andere gebruikers voor bewerking.
 
 ## Geforceerd inchecken {#forced-check-in}
 
