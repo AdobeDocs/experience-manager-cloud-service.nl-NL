@@ -1,11 +1,11 @@
 ---
-title: Elementmicroservices configureren en gebruiken voor de verwerking van bedrijfsmiddelen.
+title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
