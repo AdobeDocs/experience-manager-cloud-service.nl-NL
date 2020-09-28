@@ -1,11 +1,11 @@
 ---
-title: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund
+title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '802'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. Adobe Experience Manager Assets ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
+Adobe Experience Manager als Cloud Service biedt ondersteuning voor basismogelijkheden voor contentbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. Adobe Experience Manager Assets ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
 Daarnaast biedt Experience Manager Assets uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
 
@@ -21,7 +21,7 @@ De hoogtepunten voor de omzetting van Activa die de microservices van activa geb
 
 * Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension en Adobe Acrobat of PDF.
 * Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
-* [Camera Raw-bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
 * Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
@@ -91,9 +91,9 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 
 De volgende lijst met 3D-indelingen wordt ondersteund.
 
-Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Levering Dynamic Media |
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -124,9 +124,9 @@ Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/a
 | MRW | ✓ | ✓ | ✓ |
 | NEF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
+| DORF | ✓ | ✓ | ✓ |
+| MFF | ✓ | ✓ | ✓ |
+| CR | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
@@ -142,14 +142,14 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
+| GeDOC | - | - | - | ✓ | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PPT | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
 | UIT | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
+| F | ✓ | ✓ | ✓ | - | - |
 | ODP | ✓ | ✓ | ✓ | - | - |
 | ODS | ✓ | ✓ | ✓ | - | - |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -191,7 +191,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
 | R3D | ✓ | - | ✓ |
-| SWF | ✓ | - | ✓ |
+| Ondersteund | ✓ | - | ✓ |
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
@@ -218,7 +218,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-Middelen als Cloud Service bieden ondersteuning voor het ophalen van XMP-metagegevens voor de audio-indelingen AIF, ASF, M4A, MP3, WAV en WMA.
+Elementen als Cloud Service bieden ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
 >[!MORELIKETHIS]
 >
