@@ -1,11 +1,11 @@
 ---
-title: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services.
+title: Afbeeldingen labelen met slimme services
 description: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van Adobe Sensei-services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2354'
 ht-degree: 6%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # De service Slimme tags toepassen en uw afbeeldingen labelen {#train-service-tag-assets}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -89,7 +89,7 @@ De afbeeldingen in uw trainingsset moeten aan de volgende richtlijnen voldoen:
    * alleen de labels die betrekking hebben op kleuren van overhemden.
    * alleen de labels voor jassen voor vrouwen en mannen.
 * Niet maken,
-   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht.
+   * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht .
    * meerdere tagmodellen met dezelfde paar automodellen.
 
 **Afbeeldingen die worden gebruikt om te trainen**: U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. De optie Koppel een afbeelding echter niet aan meer dan één tag in een labelmodel. Daarom is het mogelijk om dezelfde afbeelding te voorzien van verschillende tags die bij verschillende labelmodellen horen.
