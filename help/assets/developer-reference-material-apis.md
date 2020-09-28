@@ -1,11 +1,11 @@
 ---
-title: Ontwikkelaarsreferenties voor digitaal middelenbeheer [!DNL Adobe Experience Manager] als Cloud Service.
+title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: Met de API's van [!DNL Assets] en inhoud van de ontwikkelaarsverwijzing kunt u elementen beheren, waaronder binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1231'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met ext
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Klanten die een upgrade uitvoeren van eerdere versies van [!DNL Experience Manager] kunnen met behulp van asset-microservices hun middelen verwerken. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en te gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
+Klanten die een upgrade uitvoeren van eerdere versies van [!DNL Experience Manager] kunnen met behulp van asset-microservices hun middelen verwerken. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en gebruiken. Een aantal workflowstappen die in de vorige versie in de [!UICONTROL DAM Update Asset] workflow werden gebruikt, worden niet ondersteund.
 
 [!DNL Experience Manager] als Cloud Service de volgende workflowstappen ondersteunen:
 
