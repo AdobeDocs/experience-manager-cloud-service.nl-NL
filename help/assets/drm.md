@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management in [!DNL Adobe Experience Manager Assets] als Cloud Service.
-description: Leer hoe u in [!DNL Experience Manager] als cloudservice de status en informatie voor gelicentieerde middelen beheert.
+title: Digital Rights Management in [!DNL Assets]
+description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen [!DNL Experience Manager] als Cloud Service beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1276'
 ht-degree: 7%
 
 ---
@@ -77,7 +77,7 @@ De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. A
 
 1. Selecteer een element in de [!DNL Assets] gebruikersinterface.
 
-1. Klik op **[!UICONTROL Publish]** de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de **[!UICONTROL Publish]** optie.
+1. Klik op **[!UICONTROL Publish]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de **[!UICONTROL Publish]** optie.
 
 1. Kies een optie in het **[!UICONTROL Publish]** menu en sluit het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
@@ -121,7 +121,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 >
 >De locatie `/etc/dam/drm/licences` die wordt gebruikt voor het opslaan van licenties in eerdere versies van [!DNL Experience Manager] is afgekeurd.
 >
->Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases poort, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/*/settings/dam/drm/licenses`op te slaan.
+>Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases afgeeft, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/*/settings/dam/drm/licenses`op te slaan.
 
 ### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 
