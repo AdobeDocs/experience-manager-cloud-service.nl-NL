@@ -1,12 +1,12 @@
 ---
-title: Digitale middelen en afbeeldingen zoeken in AEM
+title: Digitale middelen zoeken
 description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4481'
 ht-degree: 6%
 
 ---
