@@ -1,12 +1,12 @@
 ---
-title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
+title: Metagegevens van digitale elementen beheren
 description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 4%
 
 ---
@@ -110,7 +110,7 @@ Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch v
 
 Andere metagegevens die kunnen worden ingesloten vanuit bestanden zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]enzovoort.
 
-## Metagegevens van uw digitale middelen beheren {#manage-assets-metadata}
+## Metagegevens van uw digitale elementen beheren {#manage-assets-metadata}
 
 Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in elementen bulksgewijs kunt doorgeven. Met de [!UICONTROL Properties] pagina kunt u eigenschappen van metagegevens wijzigen in een algemene waarde of tags toevoegen of wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
 
