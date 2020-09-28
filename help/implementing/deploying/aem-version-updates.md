@@ -2,9 +2,9 @@
 title: Versie-updates AEM
 description: 'Versie-updates AEM '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 5%
 
 ---
@@ -21,15 +21,12 @@ AEM als Cloud Service gebruikt nu Continuous Integration en Continuous Delivery 
 
 AEM versie-updates zijn van twee typen:
 
-* **Push-updates**
+* **AEM Push-updates**
 
    * Kunnen dagelijks worden uitgebracht.
    * Meestal onderhoud, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
 
-   Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
-
->[!NOTE]
->Raadpleeg het whitepaper over [Adobe Experience Manager als een Cloud Service Continuous Delivery Model voor meer informatie over AEM push-updates](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
 
 * **Nieuwe functie-updates**
 
