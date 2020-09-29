@@ -2,7 +2,7 @@
 title: Versie-updates AEM
 description: 'Versie-updates AEM '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 5%
@@ -24,6 +24,7 @@ AEM versie-updates zijn van twee typen:
 * **AEM Push-updates**
 
    * Kunnen dagelijks worden uitgebracht.
+
    * Meestal onderhoud, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
 
       Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
