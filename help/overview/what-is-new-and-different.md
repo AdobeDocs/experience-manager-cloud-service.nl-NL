@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 92%
+source-wordcount: '1875'
+ht-degree: 90%
 
 ---
 
@@ -73,8 +73,11 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 
 AEM als Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn.
 
-Dit betekent dat alle upgradebewerkingen volledig geautomatiseerd zijn, en de gebruikers dus geen onderbreking van de service ervaren.
-Adobe zorgt er proactief voor dat alle operationele instanties van de service worden bijgewerkt naar de meest recente versie van de AEM codebasis:
+Dit betekent dat de instanties van de Productie en van het Stadium aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
+
+>[!NOTE]
+> Als de update naar de productieomgeving mislukt, wordt de werkgebiedomgeving automatisch teruggedraaid. Dit wordt automatisch gedaan om ervoor te zorgen dat zowel het werkgebied als de productieomgeving na het voltooien van een update dezelfde AEM versie hebben.
+
 AEM versie-updates zijn van twee typen:
 
 * **Push-updates**
