@@ -2,9 +2,9 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 1%
 
 De grondbeginselen van codeontwikkeling zijn in AEM als een Cloud Service vergelijkbaar met de oplossingen AEM Op locatie en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens als een Cloud Service-omgeving wordt doorgegeven aan externe AEM. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het opstellen van code aan AEM als milieu&#39;s van de Cloud Service.
 
-De update van de [AEM versie](/help/implementing/deploying/aem-version-updates.md) is altijd een aparte implementatiegebeurtenis en duwt niet zozeer op [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop van zal worden opgesteld. AEM versies worden bijgewerkt die daarna plaatsvinden. Deze worden regelmatig en automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
-
+De update van de [AEM versie](/help/implementing/deploying/aem-version-updates.md) is altijd een aparte implementatiegebeurtenis en duwt niet zozeer op [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop zal worden opgesteld. AEM versies worden bijgewerkt die daarna plaatsvinden. Deze worden regelmatig en automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen moeten aanpassen zodat ze zowel met AEM werken als met de updates van de versie van de Cloud Service als met de updates van de klant.
 
@@ -236,19 +235,19 @@ Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen pl
 
 ## Indexen {#indexes}
 
-De nieuwe of gewijzigde indexen zullen een extra indexerende of re-indexerende stap veroorzaken alvorens de nieuwe (Groene) versie verkeer kan nemen. De details over indexbeheer in Skyline kunnen in [dit artikel](/help/operations/indexing.md)worden gevonden. U kunt de status van de indexeertaak controleren op de bouwstijlpagina van Cloud Manager en ontvangt een melding wanneer de nieuwe versie klaar is om verkeer te nemen.
+De nieuwe of gewijzigde indexen zullen een extra indexerende of re-indexerende stap veroorzaken alvorens de nieuwe (Groene) versie verkeer kan nemen. Meer informatie over indexbeheer in AEM als Cloud Service vindt u in [dit artikel](/help/operations/indexing.md). U kunt de status van de indexeertaak controleren op de bouwstijlpagina van Cloud Manager en ontvangt een melding wanneer de nieuwe versie klaar is om verkeer te nemen.
 
 >[!NOTE]
 >
 >De tijd nodig voor een het rollen plaatsing zal afhankelijk van de grootte van de index variëren, aangezien de Groene versie geen verkeer kan goedkeuren tot de nieuwe index is geproduceerd.
 
-Op dit ogenblik, werkt de Veldlijn niet met indexbeheerhulpmiddelen zoals ACS de Commons verzekeren het hulpmiddel van de Index van het Eik.
+Op dit moment werkt AEM als Cloud Service niet met hulpmiddelen voor indexbeheer, zoals ACS-opdrachten, voor het gereedschap eikenindex.
 
 ## Replicatie {#replication}
 
 Het publicatiemechanisme is achterwaarts compatibel met de API&#39;s van [AEM Replication Java](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Om te kunnen ontwikkelen en testen met replicatie met de cloud gereed AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish-instelling. Als het UI-ingangspunt op AEM Author is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` de configuratie.
+Voor het ontwikkelen en testen van replicatie met de cloud gereed AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish-instelling. Als het UI-ingangspunt op AEM Author is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` de configuratie.
 
 ## Achterwaarts Compatibele Code voor het Draaien Plaatsingen {#backwards-compatible-code-for-rolling-deployments}
 
