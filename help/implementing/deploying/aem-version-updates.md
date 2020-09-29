@@ -2,9 +2,9 @@
 title: Versie-updates AEM
 description: 'Versie-updates AEM '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,8 @@ AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalider
 
 [Producttests en functionele tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) van de Klant die productupgrades en klantencode verhinderen de productie te breken, worden ook gevalideerd tijdens een AEM versie-update.
 
->[OPMERKING]
+>[!NOTE]
+>
 >Als de douanecode aan het opvoeren werd geduwd en dan door u werd verworpen, zal de volgende AEM update die veranderingen verwijderen om op de git markering van de laatste succesvolle klantenversie aan productie te wijzen.
 
 ## Composite Node Store {#composite-node-store}
