@@ -2,9 +2,9 @@
 title: Omgevingsdetails samenstellen
 description: Omgevingsdetails samenstellen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,10 @@ Hiervoor voegt u in het bestand pom.xml een `<plugin>` item toe dat er als volgt
 ```
 
 >[!NOTE]
->Ondersteunde leverancierswaarden zijn `oracle` en `sun`.
->
->Ondersteunde versiewaarden zijn `1.8`, `1.11`en `11`.
+>Ondersteunde leverancierswaarden zijn `oracle` en `sun`en de ondersteunde versiewaarden zijn `1.8`, `1.11`en `11`.
+
+>[!NOTE]
+>De bouwstijl van het project van de Manager van de Wolk gebruikt nog Java 8 om Geweven aan te halen, daarom het controleren van of het handhaven van de versie van Java die in de toolchain stop in [wordt gevormd door stop-ins zoals de Plug](https://maven.apache.org/enforcer/maven-enforcer-plugin/) van Apache Maven Enforcer werkt niet en dergelijke stop-ins moeten niet worden gebruikt.
 
 ## Omgevingsvariabelen {#environment-variables}
 
