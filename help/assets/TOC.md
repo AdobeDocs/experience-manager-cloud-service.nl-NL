@@ -4,24 +4,24 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 90%
+source-wordcount: '406'
+ht-degree: 76%
 
 ---
 
 
-# Hulplijn voor middelen {#assets}
+# [!DNL Assets] Hulplijn {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] als Cloud Service](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Belangrijke wijzigingen in AEM Assets as a Cloud Service](assets-cloud-changes.md)
-+ [Architectuur](architecture.md)
++ [Opvallende wijzigingen [!DNL Assets] in de vorm van een Cloud Service](assets-cloud-changes.md)
++ [[!DNL Assets] architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
 + [Toegankelijkheid in [!DNL Assets]](accessibility.md)
-+ Digitale assets beheren met AEM {#manage}
++ Digitale middelen beheren {#manage}
    + [Assets delen](share-assets.md)
    + [Activiteiten en DAM-taken bewaken](assets-activity-history.md)
    + [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 90%
    + [Algemene taken voor assetbeheer](manage-digital-assets.md)
    + [Slimme tags](smart-tags.md)
    + [Assets indelen](organize-assets.md)
-   + [Adobe Stock-assets gebruiken in AEM](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Activa in AEM](aem-assets-adobe-stock.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Overzicht van metadata](manage-metadata.md)
-   + [Integratie met Adobe Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Integreren met [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Metadata toevoegen of bewerken](meta-edit.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Assets Insights gebruiken en configureren](assets-insights.md)
    + [Metadataprofielen](metadata-profiles.md)
    + [Metadataschema](metadata-schemas.md)
    + [Videoassets beheren](manage-video-assets.md)
-   + [Assets van AEM downloaden](download-assets-from-aem.md)
+   + [Elementen downloaden](download-assets-from-aem.md)
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor assets](drm.md)
    + [Watermerkelementen](watermark-assets.md)
-+ Assets configureren, beheren en uitbreiden {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
-   + [Werken met afbeeldingsprofielen en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [De functie Smart Tags configureren ](smart-tags-configuration.md)
-   + [Meertalige assets en de vertaling van assets](translate-assets.md)
+   + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Slimme tags configureren](smart-tags-configuration.md)
+   + [Meertalige middelen en vertaling](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](content-fragments/assets-api-content-fragments.md)
+   + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](content-fragments/assets-api-content-fragments.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 90%
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
 + Assets delen en distribueren {#brand-portal}
-   + [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Assets publiceren naar Brand Portal](publish-to-brand-portal.md)
+   + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
