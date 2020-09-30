@@ -2,9 +2,9 @@
 title: Problemen met Dynamic Media oplossen
 description: Problemen met Dynamic Media oplossen.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 1%
 
 # Problemen met Dynamic Media oplossen {#troubleshooting-dynamic-media-scene-mode}
 
-In het volgende document wordt het oplossen van problemen voor dynamische media beschreven.
+Het volgende onderwerp beschrijft het oplossen van problemen voor Dynamische Media.
+
+## Nieuwe dynamische mediaconfiguratie {#new-dm-config}
+
+Zie [Problemen met een nieuwe dynamische mediaconfiguratie oplossen.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -20,7 +24,7 @@ Hier volgen enkele algemene tips en trucs voor alle elementen.
 
 ### Eigenschappen voor de synchronisatie van bedrijfsmiddelen {#asset-synchronization-status-properties}
 
-De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om de succesvolle synchronisatie van de activa van AEM aan Dynamische Media te bevestigen:
+De volgende elementeigenschappen kunnen in CRXDE Lite worden gecontroleerd om de geslaagde synchronisatie van het element van AEM naar Dynamic Media te bevestigen:
 
 | **Eigenschap** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
@@ -31,15 +35,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM-servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG op het `com.adobe.cq.dam.ips` pakket verhogen via de Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
-
-### Verplaatsen, kopiëren, verwijderen {#move-copy-delete}
-
-Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren of Verwijderen uitvoert:
-
-* Voor afbeeldingen en video&#39;s moet u controleren of er een `<object_node>/jcr:content/metadata/dam:scene7ID` waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
-* Bevestig voor voorinstellingen voor afbeeldingen en viewers dat er een `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
-* Als de bovenstaande metagegevenswaarde ontbreekt, moet u elementen opnieuw uploaden voordat u bewerkingen verplaatst, kopieert of verwijdert.
+Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG op het `com.adobe.cq.dam.ips` pakket verhogen via de Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
 ### Versiebeheer {#version-control}
 
@@ -77,23 +73,13 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td>
   </tr>
   <tr>
-   <td>De kiezer van het element in de seteditor is vastgelopen tijdens ononderbroken laden</td>
-   <td><p>Bekend probleem dat in 6.4 moet worden opgelost</p> </td>
-   <td><p>Sluit de kiezer en open deze opnieuw.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>De knop Selecteren</strong> is niet actief nadat u een element hebt geselecteerd als onderdeel van het bewerken van een set</td>
-   <td><p> </p> <p>Bekend probleem dat in 6.4 moet worden opgelost</p> <p> </p> </td>
-   <td><p>Klik eerst op een andere map in de Asset Selector en ga terug om het element te selecteren.</p> </td>
-  </tr>
-  <tr>
    <td>De carrouselhotspot beweegt zich rond na het schakelen tussen dia's</td>
    <td><p>Controleer of alle dia's even groot zijn.</p> </td>
    <td><p>Gebruik voor de carrousel alleen afbeeldingen met dezelfde grootte.</p> </td>
   </tr>
   <tr>
    <td>Afbeelding geeft geen voorvertoning weer met de Dynamic Media-viewer</td>
-   <td><p>Controleren of het element <code>dam:scene7File</code> in de metagegevenseigenschappen (CRXDE Lite) staat</p> </td>
+   <td><p>Controleer of het element <code>dam:scene7File</code> in de metagegevenseigenschappen aanwezig is (CRXDE Lite)</p> </td>
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td>
   </tr>
   <tr>
@@ -151,7 +137,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td>
    <td>
     <ol>
-     <li>Controleer of de Configuratie van dynamische media onder de Diensten van de Wolk behoorlijk opstelling is.</li>
+     <li>Controleer of de Configuratie van de Dynamische Media onder Cloud Services is behoorlijk opstelling.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -160,7 +146,6 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>U kunt als volgt bepalen of videocodering nog wordt uitgevoerd of dat er een foutstatus is ingevoerd:</p>
     <ul>
      <li>Controleer de videostatus <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Controleer de video vanaf de workflowconsole <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Tabbladen Instanties, Archiveren en Mislukt.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -204,7 +189,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr>
   <tr>
    <td>Vooraf ingestelde illustraties van de viewer retourneren 404 vanaf de voorvertoning in elementdetails of kopiëren, URL- en insluitcode</td>
-   <td><p>Voer in CRXDE Lite de volgende handelingen uit:</p>
+   <td><p>Ga als volgt te werk bij CRXDE Lite:</p>
     <ol>
      <li>Navigeer naar de <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> map in de Dynamic Media sync-map (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>).</li>
      <li>Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
@@ -220,19 +205,16 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ol> </td>
    <td><p>Als de voorbeeldbestanden of voorinstellingsillustraties van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:</p>
     <ol>
-     <li>Navigeer naar CRXDE Lite.
-      <ul>
-       <li>Verwijderen <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Ga naar het CRX-pakketbeheer: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Ga naar <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>Selecteer in volgorde de volgende handelingen:
       <ol>
-       <li>Zoeken naar viewerpakket in lijst (het begint met <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Klik op <strong>Opnieuw installeren</strong>.</li>
+       <li>Synchronisatiemappen verwijderen.</li>
+       <li>Selecteer de map Voorinstelling (onder <code>/conf</code>).
+       <li>Trigger DM Setup Async Job.</li>
       </ol> </li>
-     <li>Onder de Diensten van de Wolk, navigeer aan de Dynamische pagina van de Configuratie van Media, dan open de doos van de configuratiedialoog voor uw Dynamische Media - S7 configuratie.
-      <ul>
-       <li>Breng geen veranderingen aan, klik <strong>sparen</strong>. Hierdoor wordt de logica opnieuw geactiveerd om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en illustraties te maken en te synchroniseren.<br />  </li>
-      </ul> </li>
+     <li>Wacht op melding van succesvolle synchronisatie in uw AEM Inbox.
+     </li>
     </ol> </td>
   </tr>
  </tbody>
