@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
 workflow-type: tm+mt
-source-wordcount: '1994'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +158,9 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
-## Beperkingen {#limitations}
+## Limitations and best practices {#tip-and-limitations}
+
+* Om inzichten over activagebruik te krijgen, vorm de functionaliteit van het Inzicht van [Activa](/help/assets/assets-insights.md) op de [!DNL Sites] instantie.
 
 ### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 
@@ -166,7 +168,7 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
 * Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
 * Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Dynamic Media] Elementen, inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
-* Metadataschema&#39;s worden niet opgehaald.
+* [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk wordt bijgewerkt, worden alle eigenschappen weergegeven.
 * Alle [!DNL Sites] auteurs hebben leesmachtigingen voor de opgehaalde kopieën, zelfs als auteurs geen toegang hebben tot de externe DAM-implementatie.
 * Geen API-ondersteuning om de integratie aan te passen.
 * De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren.
@@ -185,6 +187,7 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 * Voor ophaalbewerkingen geldt een time-out na 5 seconden. Auteurs kunnen problemen ervaren bij het ophalen van assets, bijvoorbeeld als er netwerkproblemen optreden. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
 * De enige methode om het element opnieuw op te halen is het op een pagina te slepen. Er is geen API-ondersteuning of andere methoden om middelen opnieuw op te halen om deze bij te werken.
+* Als middelen uit de DAM worden verwijderd, blijven deze op [!DNL Sites] pagina&#39;s in gebruik.
 
 ## Problemen oplossen {#troubleshoot}
 
