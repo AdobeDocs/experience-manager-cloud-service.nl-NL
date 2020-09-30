@@ -3,10 +3,10 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1816'
+ht-degree: 1%
 
 ---
 
@@ -172,7 +172,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 * De sleepfunctionaliteit met het toetsenbord werkt correct in de Metadata Schema Editor in de bladermodus van schermlezers.
 * Een gebruiker kan de focus verplaatsen met het toetsenbord naar het veld Gebruiker toevoegen of Groep onder Gesloten gebruikersgroep op het tabblad Machtigingen van het tabblad Eigenschappen van map.
 
-## Digitale middelen zoeken {#search}
+## Digitale middelen zoeken {#search-assets}
 
 Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor de snelheid van de inhoud maken deel uit van de kernfunctionaliteit. [!DNL Assets] Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` of `Tab` schermlezers gebruiken om snel de zoekoptie te vinden. De schermlezer beperkt de naam van de optie op dezelfde manier als [!UICONTROL Search Button] wanneer de ![zoekoptie](assets/do-not-localize/search_icon.png)van de zoekoptie geactiveerd is. Gebruikers kunnen op deze knop drukken `Return` om het vak Zoeken te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar ook over de suggesties die automatisch worden ingevuld door [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken `Return`en toegang krijgen `Tab` tot de verschillende opties om een zoekopdracht te starten.
 
