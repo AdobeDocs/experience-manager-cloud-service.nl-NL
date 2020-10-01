@@ -2,10 +2,10 @@
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
 description: Ontwikkelen AEM Handel voor AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
+source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 9%
+source-wordcount: '962'
+ht-degree: 8%
 
 ---
 
@@ -80,6 +80,34 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
    Deze variabele moet ook voor de AEM worden ingesteld als een Cloud Service-omgeving.
 
 6. De AEM starten als Cloud Service-SDK
+
+7. De lokale GraphQL-proxyserver starten
+
+   Om het eindpunt van Magento GraphQL plaatselijk voor toe:voegen-op CIF en de componenten CIF ter beschikking te stellen gebruik het volgende bevel. Het eindpunt GraphQL zal dan beschikbaar zijn bij `http://localhost:3002/graphql`.
+Voorbeeld Mac OSX:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+   ```
+
+   Voorbeeld van Windows:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+   ```
+   Het argument `--proxyPartial` moet een lege tekenreeks ontvangen.
+
+   U kunt de lokale volmacht testen GraphQL door een de vraaghulpmiddel te richten GraphQL aan `http://localhost:3002/graphql` en een paar vragen te testen.
+
+8. Aanmelden bij AEM SDK en CIF configureren voor gebruik van de lokale GraphQL-proxyserver
+
+   Navigeer naar de CIF-configuratie van de Cloud Service (Opties > Cloud Services > CIF-configuratie). Open de eigenschappen mening van config die door uw project wordt gebruikt.
+
+   Voor het `GraphQL Proxy Path` bezit gebruik het lokale eindpunt van de volmachtsserver `http://localhost:3002/graphql`. Sla de configuratie op.
+
+>[!NOTE]
+>
+>Duw niet de configuratie van stap 8 in de projectrepo. Dit config wordt slechts vereist voor een lokale ontwikkelingsopstelling. AEM als een Cloud Service milieu&#39;s reeds opstelling met de volmacht GraphQL tijdens het onboarding.
 
 Verifieer de opstelling via de console OSGI:`http://localhost:4502/system/console/osgi-installer`. De lijst moet de CIF-add-on gerelateerde bundels, het inhoudspakket en de configuraties OSGI bevatten, zoals gedefinieerd in het bestand met het functiemodel.
 
