@@ -2,7 +2,7 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/exp
 
 AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
+>Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
 
 ### Configuratie {#email-configuration}
 
