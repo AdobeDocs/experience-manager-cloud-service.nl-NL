@@ -2,7 +2,7 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 90c3fd9a4293821568700148eb8d186b929988a1
+source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -185,47 +185,6 @@ Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt als
 
 Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie na het eerste verzoek nodig hebben. Sandbox-programmaomgevingen worden niet ondersteund.
 
-### E-mail verzenden {#sending-email}
-
-AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
-
-**Toegang aanvragen**
-
-Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
-
-1. De volledig gekwalificeerde domeinnaam voor de mailserver (bijvoorbeeld `smtp.sendgrid.net`)
-1. De poort die moet worden gebruikt. Het zou haven 465 moeten zijn als gesteund door de postserver, anders haven 587 Merk op dat haven 587 slechts kan worden gebruikt als de postserver TLS op die haven vereist en afdwingt
-1. De programma-id en de omgeving-id voor de omgevingen die ze willen verlaten
-1. Of SMTP-toegang nodig is bij auteur, publiceren of beide.
-
-**E-mails verzenden**
-
-De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is vermeld, en niet rechtstreeks naar ontvangers.
-
-AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
-
-> [!NOTE]
->
-> Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
-
-**Configuratie**
-
-E-mails in AEM moeten worden verzonden met de OSGi-service [van de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
-
-Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen in de `com.day.cq.mailer.DefaultMailService OSGI` service worden aangebracht:
-
-Indien haven 465 is aangevraagd:
-
-* instellen `smtp.port` op `465`
-* instellen `smtp.ssl` op `true`
-* instellen `smtp.starttls` op `false`
-
-Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet ondersteunt):
-
-* instellen `smtp.port` op `587`
-* instellen `smtp.ssl` op `false`
-* instellen `smtp.starttls` op `true`
-
 ### Functiegebruik {#feature-usage}
 
 De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
@@ -253,3 +212,44 @@ Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HT
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
 Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip), die het roepende IP adres zal terugkeren.
+
+## E-mail verzenden {#sending-email}
+
+AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
+
+### Toegang aanvragen {#requesting-access}
+
+Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
+
+1. De volledig gekwalificeerde domeinnaam voor de mailserver (bijvoorbeeld `smtp.sendgrid.net`)
+1. De poort die moet worden gebruikt. Het zou haven 465 moeten zijn als gesteund door de postserver, anders haven 587 Merk op dat haven 587 slechts kan worden gebruikt als de postserver TLS op die haven vereist en afdwingt
+1. De programma-id en de omgeving-id voor de omgevingen die ze willen verlaten
+1. Of SMTP-toegang nodig is bij auteur, publiceren of beide.
+
+### E-mails verzenden {#sending-emails}
+
+De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is vermeld, en niet rechtstreeks naar ontvangers.
+
+AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
+
+> [!NOTE]
+>
+> Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
+
+### Configuratie {#email-configuration}
+
+E-mails in AEM moeten worden verzonden met de OSGi-service [van de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
+
+Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen in de `com.day.cq.mailer.DefaultMailService OSGI` service worden aangebracht:
+
+Indien haven 465 is aangevraagd:
+
+* instellen `smtp.port` op `465`
+* instellen `smtp.ssl` op `true`
+* instellen `smtp.starttls` op `false`
+
+Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet ondersteunt):
+
+* instellen `smtp.port` op `587`
+* instellen `smtp.ssl` op `false`
+* instellen `smtp.starttls` op `true`
