@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
+source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 84%
+source-wordcount: '1688'
+ht-degree: 79%
 
 ---
 
@@ -20,15 +20,15 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
 
-* Als u een *Sandbox-omgeving* gebruikt, moet u deze upgraden naar de versie van 10 juni 2020 of later. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
+* Als u een *Sandbox-omgeving* gebruikt, dient u ervoor te zorgen dat de omgeving actueel is en wordt bijgewerkt naar de nieuwste versie. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
-* Om de Content Transfer-tool te gebruiken moet u beheerder-gebruiker op uw broninstantie zijn en ook lid zijn van de AEM-beheerdersgroep in de Cloud Service-instantie waarnaar u content overdraagt. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
 * In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces.
 
-* De aanbevolen bovengrens voor de grootte van de repository die de Content Transfer-tool gelijktijdig kan ondersteunen, is 20 GB.
+* Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
 
 ## Beschikbaarheid {#availability}
 
