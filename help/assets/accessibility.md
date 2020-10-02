@@ -1,11 +1,11 @@
 ---
-title: Toegankelijkheid in [!DNL Experience Manager Assets].
+title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1834'
 ht-degree: 1%
 
 ---
@@ -43,11 +43,12 @@ Zie de pagina [](https://www.adobe.com/accessibility/compliance.html) Accessibil
 
 ## Hulptechnologieën {#at-support}
 
-Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang te krijgen tot webinhoud. Deze gereedschappen worden hulptechnologieën genoemd. [!DNL Adobe Experience Manager Assets] werken met de volgende ondersteunende hulpmiddelen om gebruikers de kernfuncties te laten gebruiken:
+Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang te krijgen tot webinhoud. Deze gereedschappen worden hulptechnologieën genoemd. [!DNL Adobe Experience Manager Assets] werken met de volgende soorten ondersteunende hulpmiddelen om gebruikers ondersteuning te bieden bij het gebruik van de kernfuncties van de software:
 
 * Schermlezers.
 * Spraakherkenningssoftware.
 * Toetsenbordgebruik - navigatie en sneltoetsen.
+* Hulpapparatuur, inclusief besturingselementen voor switches, vernieuwbare braillebeeldschermen en andere invoerapparaten voor de computer.
 * Gereedschappen voor het vergroten van de gebruikersinterface.
 
 ## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn {#accessible-assets-use-cases}
@@ -174,7 +175,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 
 ## Digitale middelen zoeken {#search-assets}
 
-Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor de snelheid van de inhoud maken deel uit van de kernfunctionaliteit. [!DNL Assets] Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` of `Tab` schermlezers gebruiken om snel de zoekoptie te vinden. De schermlezer beperkt de naam van de optie op dezelfde manier als [!UICONTROL Search Button] wanneer de ![zoekoptie](assets/do-not-localize/search_icon.png)van de zoekoptie geactiveerd is. Gebruikers kunnen op deze knop drukken `Return` om het vak Zoeken te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar ook over de suggesties die automatisch worden ingevuld door [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken `Return`en toegang krijgen `Tab` tot de verschillende opties om een zoekopdracht te starten.
+Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksscenario&#39;s voor de snelheid van de inhoud maken deel uit van de kernfunctionaliteit [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` of `Tab` schermlezers gebruiken om snel de zoekoptie te vinden. De schermlezer beperkt de naam van de optie op dezelfde manier als [!UICONTROL Search Button] wanneer de ![zoekoptie](assets/do-not-localize/search_icon.png)van de zoekoptie geactiveerd is. Gebruikers kunnen op deze knop drukken `Return` om het vak Zoeken te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar ook over de suggesties die automatisch worden ingevuld door [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken `Return`en toegang krijgen `Tab` tot de verschillende opties om een zoekopdracht te starten.
 
 De zoekfunctionaliteit wordt verder toegankelijk gemaakt door de volgende functionaliteit:
 
