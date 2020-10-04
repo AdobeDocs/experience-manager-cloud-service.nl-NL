@@ -3,9 +3,9 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Toegankelijkheidsfuncties [!DNL Adobe Experience Manager] als Cloud Service helpen gebruikers met een handicap.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1833'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 * Als u de `Esc` toets gebruikt om de snelactiepictogrammen uit de miniatuurweergave te verwijderen, wordt de toetsenbordfocus niet van het laatste item met focus verwijderd.
 * Als er een element is geselecteerd en u drukt op Alt + 4-sneltoets, wordt de lijst Verwijzingen geopend. Met behulp van `Tab` toets kunnen gebruikers door de items met de referentie-eigenschap none-zero navigeren.
 * Opmerkingen over een element zijn beschikbaar in de tijdlijn van het element. Het is toegankelijk via het toetsenbord.
-* De montages van de mening in Experience Manager zijn toegankelijk door toetsenbord. De gebruiker kan door de beschikbare kaartgrootten navigeren gebruikend pijlsleutels, en selecteren en door te klikken om door te navigeren en andere elementen in de bestaande mening van de Montages van de Mening te plaatsen.
+* De montages van de mening in Experience Manager zijn toegankelijk door toetsenbord. De gebruiker kan door de beschikbare kaartgrootten navigeren gebruikend pijlsleutels en selecteren en door te klikken om door te navigeren en andere elementen in de bestaande mening van de Montages van de Mening te plaatsen.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 
 ## Digitale middelen zoeken {#search-assets}
 
-Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor de snelheid van de inhoud maken deel uit van de kernfunctionaliteit [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` of `Tab` schermlezers gebruiken om snel de zoekoptie te vinden. De schermlezer beperkt de naam van de optie op dezelfde manier als [!UICONTROL Search Button] wanneer de ![zoekoptie](assets/do-not-localize/search_icon.png)van de zoekoptie geactiveerd is. Gebruikers kunnen op deze knop drukken `Return` om het vak Zoeken te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar ook over de suggesties die automatisch worden ingevuld door [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken `Return`en toegang krijgen `Tab` tot de verschillende opties om een zoekopdracht te starten.
+Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor de snelheid van de inhoud maken deel uit van de kernfunctionaliteit [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` of `Tab` schermlezers gebruiken om snel de zoekoptie te vinden. De schermlezer beperkt de naam van de optie op dezelfde manier als [!UICONTROL Search Button] wanneer de ![zoekoptie](assets/do-not-localize/search_icon.png)van de zoekoptie geactiveerd is. Gebruikers kunnen op deze knop drukken `Return` om het vak Zoeken te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties van [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken `Return`en toegang krijgen `Tab` tot de verschillende opties om een zoekopdracht te starten.
 
 De zoekfunctionaliteit wordt verder toegankelijk gemaakt door de volgende functionaliteit:
 
@@ -187,7 +187,7 @@ De zoekfunctionaliteit wordt verder toegankelijk gemaakt door de volgende functi
 
 Bij het filteren van zoekresultaten:
 
-* De pagina met zoekresultaten heeft een informatieve titel waarmee u gebruikers van schermlezers beter kunt begrijpen.
+* De pagina met zoekresultaten heeft een informatieve titel voor een beter begrip van schermlezers.
 * Een schermlezer kondigt de opties in het zoekfilter aan als uitbreidbare accordeons.
 * Voorvertoningen met knoppen met gemengde statussen worden door schermlezers aangekondigd.
 
@@ -203,8 +203,8 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 * In het dialoogvenster voor het delen van koppelingen kunnen de schermlezers tijdens het navigeren in de bladermodus:
 
    * Commentaar de tabelinformatie niet meer zodra het dialoogvenster is geladen.
-   * Kan naar alle vermelde automatische suggesties navigeren.
-   * Beschrijf de weergegeven automatische suggesties voor de velden E-mailadres en Zoeken toevoegen.
+   * Kan naar alle vermelde suggesties navigeren.
+   * Beschrijf de weergegeven suggesties voor de velden E-mailadres en Zoeken toevoegen.
 
 ## Toegankelijkheid in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
