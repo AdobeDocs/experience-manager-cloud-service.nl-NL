@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 7%
@@ -96,7 +96,8 @@ De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart *
 
 
 >[!NOTE]
-Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
+>
+>Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
 
 ## Toegang beheren {#managing-access}
 
