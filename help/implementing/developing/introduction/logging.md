@@ -2,9 +2,9 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om 
 AEM het registreren en het logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git worden opgeslagen, en als deel van het AEM project via de Manager van de Wolk worden opgesteld. Het aanmelden AEM als Cloud Service kan in twee logische reeksen worden opgedeeld:
 
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
-* Apache HTTPD Web Server/Dispatcher-logboekregistratie, die het registreren van de webserver en Dispatcher op de publicatielijst uitvoert.
+* Apache HTTPD Web Server/Dispatcher registreren, die het registreren van de Webserver en de Verzender op de Publish rij uitvoert.
 
 ## AEM {#aem-loggin}
 
@@ -29,7 +29,7 @@ Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeke
 
 >[!NOTE]
 >
->De HTTP- verzoeken die van het geheime voorgeheugen van Dispatcher van de Publish rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
+>De HTTP- verzoeken die van het Publish geheime voorgeheugen van de Verzender van de rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
 ## Java-registratie AEM {#aem-java-logging}
 
@@ -309,13 +309,13 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 Het logboek van de Toegang van HTTP is niet configureerbaar in AEM als Cloud Service.
 
-## Apache Web Server en Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
+## Logboekregistratie voor Apache Web Server en Dispatcher {#apache-web-server-and-dispatcher-logging}
 
 AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apache en verzender laag op Publish:
 
 * Apache HTTPD Web Server Access-logboek
 * Apache HTTPD Web Server Error log
-* Dispatcher-logboek
+* Verzendlogboek
 
 Deze logbestanden zijn alleen beschikbaar voor de publicatielijst.
 
@@ -323,7 +323,7 @@ Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server van het Web van de rij/Dispatcher bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
+Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server/de Verzender van het Web van de rij bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
 
 Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -392,7 +392,7 @@ Dit logboek is niet configureerbaar in AEM als Cloud Service.
 
 ## Apache HTTPD Web Server Error Log {#apache-httpd-web-server-error-log}
 
-Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server van het Web van de rij/Dispatcher.
+Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server/de Verzender van het Web van de rij.
 
 Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Dispatcher Log {#dispatcher-log}
+## Verzendlogboek {#dispatcher-log}
 
 **Voorbeeld**
 
@@ -487,7 +487,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Dispatcher-antwoordstatuscode</td>
+<td>Dispatcher response status code</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -509,13 +509,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Het Dispatcher-foutenlogboek configureren {#configuring-the-dispatcher-error-log}
+### Het foutenlogboek van de Verzender configureren {#configuring-the-dispatcher-error-log}
 
 De het logboekniveaus van de verzender worden bepaald door veranderlijke DISP_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
 Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1, met de standaardwaarde Waarschuwing.
 
-Hoewel het registreren van Dispatcher verscheidene andere niveaus van het registreren granularity steunt, beveelt de AEM als Cloud Service het gebruiken van de hieronder beschreven niveaus aan.
+Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registreren granularity steunt, beveelt de AEM als Cloud Service het gebruiken van de hieronder beschreven niveaus aan.
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het `global.var` bestand, zoals hieronder wordt beschreven:
 
@@ -550,7 +550,7 @@ AEM logboeken bevinden zich in de map `crx-quickstart/logs`waarin de volgende lo
 * Logbestand HTTP-aanvraag AEM: `request.log`
 * Logbestand HTTP-toegang AEM: `access.log`
 
-Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Raadpleeg de documentatie [bij](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher voor informatie over het starten van de Dispatcher.
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de documentatie [van de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Verzender voor informatie over hoe te om de Verzender te beginnen.
 
 De logbestanden ophalen:
 
@@ -561,7 +561,7 @@ De logbestanden ophalen:
 1. Inspect the logs: ze zijn toegankelijk in de map XYZ, waar de volgende logbestanden kunnen worden weergegeven:
    * Apache HTTPD Logboek van de de servertoegang van het Web - `httpd_access.log`
    * Logboeken van fouten van de Apache HTTPD-webserver - `httpd_error.log`
-   * Dispatcher-logboeken - `dispatcher.log`
+   * Logbestanden van Dispatcher - `dispatcher.log`
 
 Logbestanden worden ook rechtstreeks afgedrukt op de einduitvoer. Meestal, zouden deze logboeken DEBUG moeten zijn, die kan worden verwezenlijkt door in het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld:
 
@@ -580,7 +580,7 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
@@ -588,7 +588,7 @@ De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden w
 
 In het supportverzoek moeten klanten aangeven:
 
-* De Splunk-host
+* Splunk HEC eindpuntadres
 * De segmentindex
 * De segmentpoort
 * De Splunk HEC-token. Zie [deze pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) voor meer informatie.
@@ -603,21 +603,21 @@ Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
 
 Programma 123, Production Env
 
-* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
 * Splunk-index: acme_123prod (de klant kan kiezen welke noemende overeenkomst het wenst)
 * Splunk-poort: 443
 * Splunk HEC-token: ABC123
 
 Programma 123, Stage Env
 
-* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
 * Splunk-index: acme_123stage
 * Splunk-poort: 443
 * Splunk HEC-token: ABC123
 
 Programma 123, Dev Envs
 
-* Splunk-host: `splunk-hec-ext.acme.com`
+* Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
 * Splunk-index: acme_123dev
 * Splunk-poort: 443
 * Splunk HEC-token: ABC123
