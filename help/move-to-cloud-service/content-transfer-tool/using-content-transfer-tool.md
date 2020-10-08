@@ -2,7 +2,7 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsextractie wilt uitvoeren. Klik op **Extract** om de extractie te starten. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven.
 
    >[!IMPORTANT]
+   >
    >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Opnameproces in Content Transfer {#ingestion-process}
 
@@ -151,17 +153,16 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Zodra de opname is voltooid, wordt de status in het veld **PUBLISH INGESTION** bijgewerkt naar **FINISHED**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Opname aanvullen {#top-up-ingestion-process}
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
+>
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
 Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
@@ -169,8 +170,10 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
 
    >[!IMPORTANT]
+   >
    >Schakel de optie Bestaande inhoud **wissen op een Cloud-instantie uit voordat u de inhoud inneemt** , om te voorkomen dat de bestaande inhoud uit de vorige insluitingsactiviteit wordt verwijderd.
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
