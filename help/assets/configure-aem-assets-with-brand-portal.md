@@ -3,7 +3,7 @@ title: AEM Assets configureren als Cloud Service met Brand Portal
 description: AEM Assets configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 21%
@@ -30,7 +30,6 @@ AEM Assets als Cloud Service wordt gevormd met het Portaal van het Merk via de C
 >[!NOTE]
 >
 >Een AEM Assets als instantie van de Cloud Service wordt slechts gevormd met één merkportaalhuurder.
-
 
 ## Vereisten {#prerequisites}
 
@@ -64,16 +63,10 @@ De IMS-configuratie omvat twee stappen:
 Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe Developer Console.
 
 1. Meld u aan bij AEM Assets.
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. Klik op de pagina Adobe IMS Configurations **[!UICONTROL Create]**. Het wordt doorgestuurd naar de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina. By default, the **Certificate** tab opens.
-
 1. Selecteer **[!UICONTROL Adobe Brand Portal]** in de **[!UICONTROL Cloud Solution]** vervolgkeuzelijst.
-
 1. Selecteer het **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** op voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
-
 1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens **[!UICONTROL OK]** om de openbare sleutel te genereren.
 
    ![Create Certificate](assets/ims-config2.png)
@@ -218,8 +211,6 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet deze dan verwijderen en een nieuwe, geldige configuratie maken.
 
-
-
 ### Cloudservice configureren {#configure-the-cloud-service}
 
 Voer de volgende stappen uit om de merkportalcloudservice te configureren:
@@ -281,19 +272,15 @@ Voer de volgende stappen uit om de configuratie te valideren:
    >
    >Schakel de distributieagent niet uit, want dit kan de distributie van de assets (die actief zijn in de wachtrij) doen mislukken.
 
-
 U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## Distributielogboeken {#distribution-logs}
 
@@ -302,7 +289,6 @@ U kunt de logboeken van de distributieagent voor de activa het publiceren werksc
 We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
 
 1. Volg de stappen (van 1 tot 4) zoals aangetoond in de sectie van de Configuratie [van de](#test-configuration) Test en navigeer aan de pagina van de distributiegagent.
-
 1. Klik hierop **[!UICONTROL Logs]** om de logbestanden met de verwerking en fouten weer te geven.
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ De distributieagent heeft de volgende logboeken geproduceerd:
 Bij het publiceren van de asset worden de volgende aanvraag- en antwoordlogboeken gegenereerd:
 
 **Aanvraag van distributieagent**:
+
 * DSTRQ2 (aanvraag 2): de aanvraag voor het publiceren van de asset wordt geactiveerd.
 * DSTRK3 (verzoek 3): Het systeem activeert een andere aanvraag om de AEM Assets-map (waarin het element bestaat) te publiceren en repliceert de map in Brand Portal.
 
 **Antwoord van distributieagent**:
+
 * queue-bpdistributionagent0 (DSTRQ2): de asset wordt gepubliceerd naar Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): Het systeem dupliceert de AEM Assets-map (die het element bevat) in Brand Portal.
 
@@ -327,8 +315,6 @@ In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend 
 >[!NOTE]
 >
 >Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in AEM Assets.
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
