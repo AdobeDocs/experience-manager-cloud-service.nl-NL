@@ -2,7 +2,7 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 3%
@@ -40,4 +40,5 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
    Zie **[Git Resource: Modernisering](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** van opslagplaats voor informatie over het gebruik van dit gereedschap.
 
    >[!NOTE]
+   >
    >De Repository Modernizer wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
