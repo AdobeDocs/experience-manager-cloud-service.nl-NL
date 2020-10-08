@@ -2,7 +2,7 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 5%
@@ -363,7 +363,6 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 >[!NOTE]
 >
 >Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Sjabloonbeschikbaarheid](/help/implementing/developing/components/templates.md#template-availability) voor meer informatie.
-—>
 
 #### Asynchrone handelingen {#asynchronous-actions}
 
