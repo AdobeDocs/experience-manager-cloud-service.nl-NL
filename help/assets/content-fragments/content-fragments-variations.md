@@ -182,12 +182,13 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-Engels is beschikbaar buiten de box.
-Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
-* [Frans (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Duits (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiaans (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spaans (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>Engels is beschikbaar buiten de box.
+>Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
+>* [Frans (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Duits (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiaans (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spaans (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -229,7 +230,8 @@ Annotaties:
 * Deze worden aangegeven door de markering in de tekst, zowel in de modus Volledig scherm als in de normale modus van de editor. Alle details van een annotatie kunnen vervolgens worden weergegeven, bewerkt en/of verwijderd door op de gemarkeerde tekst te klikken, waarna het dialoogvenster opnieuw wordt geopend.
 
    >[!NOTE]
-   Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
+   >
+   >Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
 
 * Wanneer u de volledige tekst verwijdert waarop de annotatie is toegepast, wordt de annotatie ook verwijderd.
 
@@ -246,11 +248,13 @@ U kunt [elementen](/help/assets/manage-digital-assets.md) (afbeeldingen) rechtst
 Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U kunt opmaak toepassen wanneer naar het [fragment wordt verwezen of wanneer het fragment op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md)wordt gebruikt.
 
 >[!CAUTION]
-Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
-Opmaak van het element (bijvoorbeeld de grootte) moet echter wel plaatsvinden in de [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+>
+>Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
+>Opmaak van het element (bijvoorbeeld de grootte) moet echter wel plaatsvinden in de [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
-Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) toe te voegen aan het fragment en/of de pagina.
+>
+>Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) toe te voegen aan het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
 2. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
@@ -266,9 +270,10 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
 4. Gebruik **Selecteren** om de asset op de huidige locatie toe te voegen aan het alineasysteem van het contentfragment.
 
    >[!CAUTION]
-   Als u na het toevoegen van een asset de indeling wijzigt in:
-   * **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
-   * **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
+   >
+   >Als u na het toevoegen van een asset de indeling wijzigt in:
+   >* **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
+   >* **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
 
 
 ## Variaties beheren {#managing-variations}
@@ -286,7 +291,8 @@ Een nieuwe variatie maken:
 1. Selecteer **Toevoegen**. De **fragmentmaster** wordt gekopieerd naar de nieuwe variatie, die nu kan worden [bewerkt](#editing-a-variation).
 
    >[!NOTE]
-   Wanneer u een nieuwe variant maakt, wordt deze altijd gekopieerd naar het **stramien** , niet naar de variant die momenteel is geopend.
+   >
+   >Wanneer u een nieuwe variant maakt, wordt deze altijd gekopieerd naar het **stramien** , niet naar de variant die momenteel is geopend.
 
 ### Een variatie bewerken {#editing-a-variation}
 
@@ -310,7 +316,8 @@ Een bestaande variatie een andere naam geven:
 1. Bevestig de handeling **Naam wijzigen** .
 
 >[!NOTE]
-Dit is alleen van invloed op de **titel** van de variatie.
+>
+>Dit is alleen van invloed op de **titel** van de variatie.
 
 ### Een variatie verwijderen {#deleting-a-variation}
 
@@ -323,7 +330,8 @@ Een bestaande wijziging verwijderen:
 1. Bevestig de actie **Verwijderen** in het dialoogvenster.
 
 >[!NOTE]
-U kunt **stramien** niet verwijderen.
+>
+>U kunt **stramien** niet verwijderen.
 
 ### Synchroniseren met stramien {#synchronizing-with-master}
 
@@ -332,10 +340,11 @@ U kunt **stramien** niet verwijderen.
 Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met stramien. Op deze manier kunt u automatisch wijzigingen kopiëren die in het stramien zijn aangebracht naar de gewenste variatie.
 
 >[!CAUTION]
-De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
-Alleen het huidige element van de variatie wordt gesynchroniseerd.
-Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
-Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
+>
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
+>Alleen het huidige element van de variatie wordt gesynchroniseerd.
+>Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
+>Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **stramien** is bewerkt.
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:

@@ -93,12 +93,13 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
    ![veldeigenschappen](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
-   * **RTF**
-   * **Markering**
-   * **Onbewerkte tekst**
-   Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
-   Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
+   >
+   >Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
+   >* **RTF**
+   >* **Markering**
+   >* **Onbewerkte tekst**
+   >Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
+   >Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 1. **Een veld verwijderen**
 
@@ -113,7 +114,8 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
+>
+>Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
 Een inhoudsfragmentmodel verwijderen:
 
@@ -123,7 +125,8 @@ Een inhoudsfragmentmodel verwijderen:
 1. Selecteer het model, gevolgd door **Verwijderen** op de werkbalk.
 
    >[!NOTE]
-   Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
+   >
+   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -137,4 +140,5 @@ Een fragmentmodel voor inhoud publiceren:
 1. Selecteer het model, gevolgd door **Publiceren** op de werkbalk.
 
    >[!NOTE]
-   Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+   >
+   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.

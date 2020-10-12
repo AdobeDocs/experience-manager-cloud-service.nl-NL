@@ -48,12 +48,11 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >De reden hiervoor is dat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw exemplaar worden toegepast.
 >
 >* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
+>
+>* Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
 >
 >
-Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
+>Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
 
 ### Eigenschappen {#properties}
 

@@ -39,12 +39,11 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 >Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 >
 >* Als de optie `xt_only` is ingeschakeld in de Adobe Target-tenant (clientcode) die op de AEM-zijde wordt gebruikt om verbinding te maken met Adobe Target, kunt u **alleen** XT-activiteiten maken in AEM.
-   >
-   >
-* Als de optie `xt_only` **niet** is ingeschakeld op de Adobe Target-tenant (clientcode), kunt u **zowel** XT- als A/B-activiteiten in AEM maken.
+>
+>* Als de optie `xt_only` **niet** is ingeschakeld op de Adobe Target-tenant (clientcode), kunt u **zowel** XT- als A/B-activiteiten in AEM maken.
 >
 >
-**Aanvullende opmerking:** De optie `xt_only` is een instelling die wordt toegepast op een bepaalde doeltenant (clientcode) en kan alleen rechtstreeks worden gewijzigd in Adobe Target. U kunt deze optie niet in- of uitschakelen in AEM.
+>**Aanvullende opmerking:** De optie `xt_only` is een instelling die wordt toegepast op een bepaalde doeltenant (clientcode) en kan alleen rechtstreeks worden gewijzigd in Adobe Target. U kunt deze optie niet in- of uitschakelen in AEM.
 
 >[!CAUTION]
 >
