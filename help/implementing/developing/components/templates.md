@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 0%
 
 ---
@@ -115,8 +115,8 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >In de clientbibliotheek van de editor wordt ervan uitgegaan dat de `cq.shared` naamruimte aanwezig is op de inhoudspagina&#39;s. Als deze ontbreekt, `Uncaught TypeError: Cannot read property 'shared' of undefined` treedt de JavaScript-fout op.
 >
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared`dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared`. Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de `cq.shared` naamruimte ook opnemen.
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>Zie [Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md) gebruiken voor meer informatie.
 
 >[!CAUTION]
 >
