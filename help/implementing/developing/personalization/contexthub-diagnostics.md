@@ -2,7 +2,7 @@
 title: ContextHub Diagnostics
 description: ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader ContextHub kunt zien
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De sectie van Modules maakt een lijst van alle modules ContextHub UI die zijn ge
 
 ## Clientlibs {#clientlibs}
 
-De sectie Clientlibs maakt een lijst van alle omslagen van de cliëntbibliotheek die ContextHub heeft geladen. De clientbibliotheken worden als volgt gecategoriseerd:
+De sectie Clientlibs maakt een lijst van alle omslagen [van de](/help/implementing/developing/introduction/clientlibs.md) cliëntbibliotheek die ContextHub heeft geladen. De clientbibliotheken worden als volgt gecategoriseerd:
 
 * **kernel.js:** De bibliotheken van de cliënt die het kader ContextHub, de segmentmotor, en opslagtypes uitvoeren.
 * **ui.js:** De bibliotheken van de cliënt die ContextHub UI en UI moduletypes uitvoeren.
