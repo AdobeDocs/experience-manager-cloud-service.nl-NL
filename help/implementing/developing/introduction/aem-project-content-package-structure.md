@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 13%
@@ -63,7 +63,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + Het `ui.apps` pakket bevat alle code die moet worden opgesteld en slechts aan `/apps`. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
    + [Componentdefinities en HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) -scripts
       + `/apps/my-app/components`
-   + JavaScript en CSS (via clientbibliotheken)
+   + JavaScript en CSS (via [clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [Bedekkingen](/help/implementing/developing/introduction/overlays.md) van `/libs`
       + `/apps/cq`, `/apps/dam/`enz.
