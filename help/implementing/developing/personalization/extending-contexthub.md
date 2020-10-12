@@ -2,7 +2,7 @@
 title: ContextHub uitbreiden
 description: Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet aan uw oplossingsvereisten voldoen
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet 
 
 ContextHub-winkels worden gemaakt van geregistreerde winkelkandidaten. Als u een aangepast archief wilt maken, moet u een winkelkandidaat maken en registreren.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Het javascript-bestand dat de code bevat waarmee de opslagkandidaat wordt gemaakt en geregistreerd, moet in een clientbibliotheekmap worden opgenomen. De categorie van de map moet overeenkomen met het volgende patroon:
+Het javascript-bestand dat de code bevat waarmee de opslagkandidaat wordt gemaakt en geregistreerd, moet in een [clientbibliotheekmap](/help/implementing/developing/introduction/clientlibs.md)worden opgenomen. De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme fun
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Het javascript-bestand dat de code bevat waarmee de renderer wordt gemaakt en geregistreerd, moet in een clientbibliotheekmap worden opgenomen. De categorie van de map moet overeenkomen met het volgende patroon:
+Het javascript-bestand dat de code bevat waarmee de renderer wordt gemaakt en geregistreerd, moet in een [clientbibliotheekmap](/help/implementing/developing/introduction/clientlibs.md)worden opgenomen. De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```javascript
 contexthub.module.[moduleType]
