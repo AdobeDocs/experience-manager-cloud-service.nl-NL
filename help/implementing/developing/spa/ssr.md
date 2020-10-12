@@ -2,7 +2,7 @@
 title: SPA en rendering op de server
 description: Het gebruiken van server zijhet teruggeven (SSR) in uw SPA kan de aanvankelijke lading van de pagina versnellen en dan verdere het teruggeven tot de cliënt overgaan.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
     </ul> </td>
    <td>
     <ul>
-     <li>Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM-ontwikkelaar beschikbaar worden gesteld via de <code>allowProxy</code> eigenschap<br /> </li>
+     <li>Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM-ontwikkelaar beschikbaar worden gesteld via de <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> eigenschap<br /> </li>
      <li>Bronnen moeten worden gesynchroniseerd tussen AEM en Adobe I/O Runtime<br /> </li>
      <li>Om creatie van het KUUROORD toe te laten, kan een volmachtsserver voor Adobe I/O Runtime noodzakelijk zijn</li>
     </ul> </td>
