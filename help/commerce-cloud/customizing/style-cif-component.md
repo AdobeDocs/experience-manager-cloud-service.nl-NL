@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ We klonen het [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en 
 
 ## Clientbibliotheken en de module ui.frontend {#introduction-to-client-libraries}
 
-De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema of de stijlen van de storefront worden in AEM beheerd door een [clientbibliotheek](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) of door clientlibs voor korte tijd. Clientbibliotheken bieden een mechanisme voor het indelen van CSS en Javascript in de code van een project en leveren vervolgens op de pagina.
+De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema of de stijlen van de storefront worden in AEM beheerd door een [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) of door clientlibs voor korte tijd. Clientbibliotheken bieden een mechanisme voor het indelen van CSS en Javascript in de code van een project en leveren vervolgens op de pagina.
 
 Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core-componenten door de CSS die door deze clientbibliotheken wordt beheerd, toe te voegen en te overschrijven. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is van essentieel belang.
 
@@ -77,7 +77,7 @@ De `ui.frontend` module is ook een Geweven module en geïntegreerd met het grote
 
 ![ui.frontend naar ui.apps-architectuur](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Gecompileerde CSS en Javascript worden gekopieerd van de`ui.frontend`module in de`ui.apps`module als bibliotheek van de Cliënt tijdens een Maven bouwt*
+*Gecompileerde CSS en Javascript worden gekopieerd van de `ui.frontend` module in de `ui.apps` module als bibliotheek van de Cliënt tijdens een Maven bouwt*
 
 ## Teastijl bijwerken {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Controleer vervolgens de opname van de clientbibliotheken op de pagina.
    </html>
    ```
 
-   Clientbibliotheken die aan de pagina worden geleverd, worden vooraf gekoppeld `/etc.clientlibs` en via een [proxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) aangeboden, zodat alles wat gevoelig is in `/apps` of `/libs`niet wordt belicht.
+   Clientbibliotheken die aan de pagina worden geleverd, worden vooraf gekoppeld `/etc.clientlibs` en via een [proxy](/help/implementing/developing/introduction/clientlibs.md) aangeboden, zodat alles wat gevoelig is in `/apps` of `/libs`niet wordt belicht.
 
    Opmerking `venia/clientlibs/clientlib-site.min.css` en `venia/clientlibs/clientlib-site.min.js`. Dit zijn de gecompileerde CSS en Javascript dossiers die uit de `ui.frontend` module worden afgeleid.
 
@@ -482,6 +482,6 @@ Gebruik het systeem [](https://docs.adobe.com/content/help/en/experience-manager
 * [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
 * [Een lokale AEM ontwikkelomgeving instellen](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Client-Side bibliotheken](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [Client-Side bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
 * [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Ontwikkelen met het Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
