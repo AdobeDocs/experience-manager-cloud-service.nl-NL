@@ -2,7 +2,7 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 translation-type: tm+mt
-source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor de component flexibeler wordt.
 
-Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen of het componentendialoogvenster aan te passen om dergelijke stijlfunctionaliteit toe te laten. Het leidt tot herbruikbaardere componenten die snel en gemakkelijk aan de behoeften van inhoudsauteurs zonder enige AEM achterste ontwikkeling kunnen worden aangepast.
+Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen of het componentendialoogvenster aan te passen om dergelijke stijlfunctionaliteit toe te laten. Het leidt tot herbruikbaardere componenten die snel en gemakkelijk aan de behoeften van inhoudsauteurs zonder enige AEM achterwaartse ontwikkeling kunnen worden aangepast.
 
 ## Hoofdletters gebruiken {#use-case}
 
@@ -41,11 +41,11 @@ Het gebruik van het Stijlsysteem heeft doorgaans de volgende vorm.
 
 1. De HTML-ontwikkelaar implementeert de bijbehorende CSS-code (en eventueel JS-code) voor elk van de visuele variaties, zodat deze er zo uitzien als gedefinieerd.
 
-1. De AEM-ontwikkelaar plaatst de meegeleverde CSS (en optionele JS) in een clientbibliotheek en implementeert deze. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. De AEM ontwikkelaar plaatst de meegeleverde CSS (en optionele JS) in een [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) en implementeert deze.
 
-1. De AEM-ontwikkelaar of sjabloonauteur configureert de paginasjablonen en bewerkt het beleid van elke opgemaakte component, voegt de gedefinieerde CSS-klassen toe, geeft gebruikersvriendelijke namen aan elke stijl en geeft aan welke stijlen kunnen worden gecombineerd.
+1. De AEM ontwikkelaar of sjabloonauteur configureert de paginasjablonen en bewerkt het beleid van elke opgemaakte component, voegt de gedefinieerde CSS-klassen toe, geeft gebruikersvriendelijke namen aan elke stijl en geeft aan welke stijlen kunnen worden gecombineerd.
 
-1. De auteur van de AEM-pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
+1. De auteur van de AEM pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
 
 Merk op dat slechts de laatste drie stappen daadwerkelijk in AEM worden uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en Javascript zonder AEM kan worden uitgevoerd.
 
@@ -69,7 +69,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als inhoudsauteur {#as-a-content-author}
 
-1. Nadat u het WKND-project hebt geïnstalleerd, navigeert u naar de hoofdpagina voor de Engelse taal van WKND op de pagina `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u deze.
+1. Nadat u het WKND-project hebt geïnstalleerd, navigeert u naar de master homepage van de Engelse taal van WKND op de pagina `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u deze.
 1. Selecteer een **component Titel** verderop in de pagina
 
    ![Stijlsysteem voor de auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
@@ -84,7 +84,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Bewerk de sjabloon van de pagina via `http://<host>:<port>/sites.html/content/wknd/language-masters/en`Pagina-informatie -> Sjabloon **bewerken tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op**.
+1. Bewerk tijdens het bewerken van de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, de sjabloon van de pagina via **Pagina-informatie -> Sjabloon** bewerken.
 
    ![Sjabloon bewerken](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -100,13 +100,12 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
    * **Stijlen kunnen worden gecombineerd:** Hiermee kunt u meerdere stijlen in die groep tegelijk selecteren.
    * **Stijlnaam:** De beschrijving van de stijl die aan de inhoudsauteur wanneer het vormen van de stijl van de component zal tonen.
    * **CSS-klassen:** De werkelijke naam van de CSS-klasse die aan de stijl is gekoppeld.
+
    Gebruik de sleephandgrepen om de volgorde van de groepen en de stijlen in de groepen te bepalen. Met de pictogrammen Toevoegen of Verwijderen kunt u groepen of stijlen in de groepen toevoegen of verwijderen.
 
 >[!CAUTION]
 >
->De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten als Bibliotheken van de Cliënt worden opgesteld om te werken.
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten als Bibliotheken [van de](/help/implementing/developing/introduction/clientlibs.md) Cliënt worden opgesteld om te werken.
 
 ## Instellen {#setup}
 
@@ -116,7 +115,7 @@ De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor u
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
-Een component werkt alleen met het Stijlsysteem van AEM en toont het stijltabblad in het ontwerpdialoogvenster als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen in de component heeft opgenomen:
+Een component werkt alleen met AEM Stijlsysteem en geeft het stijltabblad weer in het ontwerpdialoogvenster als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen in de component heeft opgenomen:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -157,6 +156,7 @@ Deze eigenschap wordt ingesteld op het `cq:Component` knooppunt. Bijvoorbeeld:
 >1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
 >1. Ten slotte wordt de fallbackwaarde `cq:htmlTag`/ `cq:tagName` /beschouwd als een fallback-waarde.
+
 >
 
 
