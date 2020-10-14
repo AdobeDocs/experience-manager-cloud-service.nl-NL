@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak dynamische afbeeldingsprofielen voor media die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten en pas het profiel vervolgens toe op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2653'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 >[!IMPORTANT]
 >
->Afbeeldingsprofielen zijn niet van toepassing op PDF-, GIF- of INDD-bestanden (Adobe InDesign).
+>Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
 ## Opties voor uitsnijden {#crop-options}
 
