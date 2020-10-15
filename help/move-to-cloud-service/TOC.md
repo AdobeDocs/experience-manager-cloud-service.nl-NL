@@ -1,13 +1,13 @@
 ---
 sub-product: Overstappen naar AEM as a Cloud Service
 user-guide-title: Overstappen naar AEM as a Cloud Service
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: Hulplijn verplaatsen
+user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 92%
 
 ---
 
