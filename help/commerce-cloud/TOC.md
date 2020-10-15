@@ -1,13 +1,13 @@
 ---
 sub-product: AEM Handel als Cloud Service
 user-guide-title: AEM Handel als Cloud Service
-breadcrumb-title: Commerce Guide
-user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
+breadcrumb-title: Handleiding
+user-guide-description: Begrijp hoe te om de Handel van de Experience Manager als Cloud Service te gebruiken en te beheren.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 8%
+source-wordcount: '71'
+ht-degree: 7%
 
 ---
 
