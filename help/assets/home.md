@@ -2,10 +2,10 @@
 title: Middelen als hulplijn voor Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 85%
+source-wordcount: '352'
+ht-degree: 82%
 
 ---
 
@@ -40,7 +40,7 @@ Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a Cloud Serv
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
-* [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [Recente documentatie-updates](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
