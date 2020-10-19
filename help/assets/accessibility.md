@@ -3,9 +3,9 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Toegankelijkheidsfuncties [!DNL Adobe Experience Manager] als Cloud Service helpen gebruikers met een handicap.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1885'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geacti
 
 ### Sneltoetsen in elementen {#keyboard-shortcuts}
 
-De volgende acties in Elementen werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] consoles, zijn ook van toepassing op elementen. Zie [Sneltoetsen voor consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Zie hoe u de sneltoetsen [kunt](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)in- of uitschakelen.
+De volgende acties in Elementen werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] consoles, zijn ook van toepassing op elementen. Zie [sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Zie hoe u de sneltoetsen [kunt](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)in- of uitschakelen.
 
 | Gebruikersinterface of scenario | Sneltoets | Actie |
 |---|---|---|
@@ -192,7 +192,7 @@ Bij het filteren van zoekresultaten:
 
 ## Assets delen {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
