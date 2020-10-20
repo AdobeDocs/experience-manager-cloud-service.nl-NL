@@ -2,7 +2,7 @@
 title: Multi-Store instellen
 description: Multi-Store instellen
 translation-type: tm+mt
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Multi-Store instellen {#multi-store}
 
-De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
+De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Magento-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
 In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Magento Store Views met Adobe Experience Manager Sites.
 
@@ -32,7 +32,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * Ga in AEM naar Extra -> Algemeen -> Configuratiebrowser
+   * Ga in AEM naar Extra -> Algemeen -> [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een nieuwe configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
