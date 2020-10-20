@@ -2,7 +2,7 @@
 title: Modellen van contentfragmenten
 description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 21%
@@ -22,12 +22,12 @@ Met Content Fragment Models wordt de structuur van de inhoud voor [inhoudsfragme
 
 Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 
-* Het gebruik van modellen van inhoudsfragmenten inschakelen in configuratiebeheer
+* Het gebruik van modellen van inhoudsfragmenten inschakelen in de configuratiebrowser
 * De configuratie toepassen op de map Middelen
 
-### Modellen van inhoudsfragmenten inschakelen in Configuratiebeheer {#enable-content-fragment-models-in-configuration-manager}
+### Modellen van inhoudsfragmenten inschakelen in de configuratiebrowser {#enable-content-fragment-models-in-configuration-browser}
 
-Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragment-model) creëren **moet** u hen eerst toelaten gebruikend de Manager van de Configuratie:
+Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragment-model) creëren **moet** u hen eerst toelaten gebruikend Browser van de [Configuratie:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 2. Selecteer de locatie die geschikt is voor uw website.
@@ -35,6 +35,7 @@ Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragm
 
    1. Geef een **titel** op.
    2. Selecteer Modellen van **inhoudsfragmenten** om het gebruik ervan in te schakelen.
+
    ![configuratie](assets/cfm-models-01.png)
 
 4. Selecteer **Maken** om de definitie op te slaan.
@@ -78,6 +79,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    * links: velden al gedefinieerd
    * rechts: **datatypen** voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
+
    >[!NOTE]
    >
    >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (*****).
@@ -87,23 +89,25 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 1. **Een veld toevoegen**
 
    * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
+
    ![gegevenstype naar veld](assets/cfm-models-04.png)
 
    * Nadat een veld aan het model is toegevoegd, worden in het rechterdeelvenster de **eigenschappen** weergegeven die voor dat specifieke gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist. Bijvoorbeeld:
+
    ![veldeigenschappen](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
-   >* **RTF**
-   >* **Markering**
-   >* **Onbewerkte tekst**
-   >Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
-   >Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
+   Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
+   * **RTF**
+   * **Markering**
+   * **Onbewerkte tekst**
+
+   Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
+   Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 1. **Een veld verwijderen**
 
-   Selecteer het vereiste veld en klik op het pictogram met de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -114,8 +118,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
+Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
 Een inhoudsfragmentmodel verwijderen:
 
@@ -125,8 +128,7 @@ Een inhoudsfragmentmodel verwijderen:
 1. Selecteer het model, gevolgd door **Verwijderen** op de werkbalk.
 
    >[!NOTE]
-   >
-   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
+   Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -140,5 +142,4 @@ Een fragmentmodel voor inhoud publiceren:
 1. Selecteer het model, gevolgd door **Publiceren** op de werkbalk.
 
    >[!NOTE]
-   >
-   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+   Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
