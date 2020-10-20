@@ -2,7 +2,7 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
+source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikke
 >[!NOTE]
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van de Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
-Om aangepaste code voor een interne release te kunnen ontwikkelen, moet de relevante versie van de [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/overview.md)voor meer informatie over het gebruik van de AEM als Cloud Service Dispatcher Tools.
+Om aangepaste code voor een interne release te kunnen ontwikkelen, moet de relevante versie van de [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) worden gedownload en geïnstalleerd. Zie [deze pagina](/help/implementing/dispatcher/disp-overview.md)voor meer informatie over het gebruik van de AEM als Cloud Service Dispatcher Tools.
 
 De volgende video verstrekt een overzicht op hoog niveau over hoe te om code op te stellen om als Cloud Service te AEM:
 
@@ -269,7 +269,7 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 ## Runmodi {#runmodes}
 
-In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceer) en het milieu (dev, stadium, prod).
+In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De wijze van de looppas die typisch worden bepaald omvat de *dienst* (auteur en publiceert) en het milieu (dev, stadium, prod).
 
 AEM als Cloud Service daarentegen is meer mening over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
