@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -156,7 +156,7 @@ Er wordt een lijst met alle toegestane vermeldingen gemaakt. Als configuraties e
 Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 * Programmaticaal of met CRXDE Lite
-* De configuratiebrowser gebruiken
+* Het gebruiken van Browser van de [Configuratie](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## CRXDE Lite gebruiken {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 ### De configuratiebrowser gebruiken {#using-the-configuration-browser}
 
-1. Ga naar **Globale Navigatie** -> **Hulpmiddelen** > Browser **van de** Configuratie.
+1. Ga naar **Globale Navigatie** -> **Hulpmiddelen** > Browser [**van de** Configuratie.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    De bestaande mappen worden links weergegeven, inclusief de `global` map.
 
@@ -203,7 +203,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 >[!NOTE]
 >
->In Browser van de Configuratie, kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u wenst om malplaatjes binnen deze omslag tot stand te brengen, nochtans wordt dit niet geadviseerd beste praktijken.
+>In Browser van de [Configuratie,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerd niet beste praktijken.
 
 ### ACLs en Groepen {#acls-and-groups}
 
