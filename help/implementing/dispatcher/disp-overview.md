@@ -2,10 +2,10 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
+source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
 workflow-type: tm+mt
-source-wordcount: '3824'
-ht-degree: 9%
+source-wordcount: '4073'
+ht-degree: 8%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 9%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de documentatie bij [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM Dispatcher voor meer informatie over Dispatcher.
+In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen, en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de documentatie bij [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM Dispatcher voor meer informatie over Dispatcher.
 
 >[!NOTE]
 >
->Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het opsporen van fouten in Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
+>Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
 
 >[!WARNING]
 >
->Windows-gebruikers: de huidige versie van AEM als Cloud Service lokale Dispatcher Tools (v2.0.20) is incompatibel met Windows. Neem contact op met de [Adobe Support](https://daycare.day.com/home.html) voor updates over Windows-compatibiliteit.
+>Windows-gebruikers: de huidige versie van AEM als lokale Dispatcher Tools van de Cloud Service (v2.0.20) is onverenigbaar met Vensters. Neem contact op met de [Adobe Support](https://daycare.day.com/home.html) voor updates over Windows-compatibiliteit.
 
-## Dispatcher Tools {#dispatcher-sdk}
+## Verzendgereedschappen {#dispatcher-sdk}
 
-De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en bieden:
+De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en verstrekken:
 
-* Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een bepaald project voor dispatcher.
-* Klanten kunnen kiezen voor lokale validatie van een verzendersconfiguratie.
+* Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een toegewezen project voor dispatcher.
+* Tooling voor klanten om te bevestigen dat de verzender configuratie slechts AEM als Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
 * Een Docker-afbeelding waarmee de verzender lokaal wordt opgehaald.
 
 ## De gereedschappen downloaden en extraheren {#extracting-the-sdk}
 
 De Dispatcher Tools kan worden gedownload van een ZIP-bestand op de [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal. Let op: toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als Cloud Service. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools, kan worden gebruikt voor implementatie in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
-**Voor MacOS en Linux** downloadt u het shellscript naar een map op uw computer, maakt u het uitvoerbaar en voert u het uit. De bestanden met Dispatcher Tools worden zelf uitgepakt onder de map waarin u deze hebt opgeslagen (waar `version` is de versie van de verzendprogramma&#39;s).
+**Voor MacOS en Linux** downloadt u het shellscript naar een map op uw computer, maakt u het uitvoerbaar en voert u het uit. De Dispatcher Tools-bestanden worden zelf uitgepakt onder de map waarin u de toepassing hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -114,7 +114,7 @@ Dit bestand wordt vanuit uw `.vhost` bestanden opgenomen. U kunt op deze locatie
 
 * `conf.d/variables/global.vars`
 
-Dit bestand wordt vanuit het `dispatcher_vhost.conf` bestand opgenomen. U kunt de verzender wijzigen en het logniveau in dit bestand herschrijven.
+Dit bestand wordt vanuit het `dispatcher_vhost.conf` bestand opgenomen. U kunt de verzender wijzigen en het logniveau in dit bestand wijzigen.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -194,13 +194,13 @@ Standaardhostglobing geschikt voor een standaardproject. Wijzig de instellingen 
 
 In de onderstaande secties wordt beschreven hoe u de configuratie lokaal kunt valideren zodat deze de bijbehorende kwaliteitspoort in Cloud Manager kan doorgeven bij het implementeren van een interne release.
 
-## Lokale validatie van Dispatcher-configuratie {#local-validation-of-dispatcher-configuration}
+## Lokale validatie van ondersteunde richtlijnen in Dispatcher-configuratie {#local-validation-of-dispatcher-configuration}
 
 Het validatieprogramma is beschikbaar in de SDK `bin/validator` als binair bestand voor Mac OS, Linux of Windows, zodat klanten dezelfde validatie kunnen uitvoeren als Cloud Manager bij het maken en implementeren van een release.
 
 Deze wordt aangeroepen als: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Het gereedschap valideert de configuratie van Apache en dispatcher. Alle bestanden worden gescand met een patroon `conf.d/enabled_vhosts/*.vhost` en er wordt gecontroleerd of alleen op de lijst met gewenste personen gestane instructies worden gebruikt. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
+Het hulpprogramma controleert of in de configuratie van de dispatcher de juiste instructies worden gebruikt die door AEM als Cloud-service worden ondersteund door alle bestanden met een patroon te scannen `conf.d/enabled_vhosts/*.vhost`. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
 
 ```
 $ validator whitelist
@@ -239,9 +239,9 @@ In de onderstaande tabel staan de ondersteunde apache-modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies voor een bepaalde Dispatcher-versie vinden door de opdracht lijst van gewenste personen van de validator uit te voeren in de SDK, zoals hierboven beschreven.
+Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies vinden die beschikbaar is voor een bepaalde versie van Dispatcher door de opdracht lijst van gewenste personen van de validator uit te voeren in de SDK, zoals hierboven beschreven.
 
-De lijst van gewenste personen bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is op de lijst met gewenste personen gestaan, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als geen lijst van gewenste personen op de bevellijn wordt gegeven (die de manier is het zou moeten worden aangehaald), gebruikt het hulpmiddel een standaard lijst van gewenste personen die de Manager van de Wolk voor bevestiging alvorens aan milieu&#39;s van de Wolk zal gebruiken te opstellen.
+De lijst van gewenste personen bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is toegevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als geen lijst van gewenste personen op de bevellijn wordt gegeven (die de manier is het zou moeten worden aangehaald), gebruikt het hulpmiddel een standaard lijst van gewenste personen die de Manager van de Wolk voor bevestiging alvorens aan milieu&#39;s van de Wolk zal gebruiken te opstellen.
 
 Bovendien worden alle bestanden gescand met een patroon `conf.dispatcher.d/enabled_farms/*.farm` en wordt gecontroleerd of:
 
@@ -259,13 +259,11 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn op de lijst met gewenste personen gestaan. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
-
-Wanneer geen bevestigingsmislukkingen worden gemeld, is uw configuratie klaar voor plaatsing.
+Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn toegevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
 
 Hieronder vindt u technieken voor het oplossen van problemen waarmee algemene validatiefouten kunnen worden opgespoord die door het programma worden uitgevoerd:
 
-**kan geen`conf.dispatcher.d`submap vinden in het archief**
+**kan geen `conf.dispatcher.d` submap vinden in het archief**
 
 Uw archief moet mappen `conf.d` en `conf.dispatcher.d` bevatten. Let op: gebruik het voorvoegsel `etc/httpd` **niet** in uw archief.
 
@@ -347,13 +345,41 @@ Er is geen standaardversie van de variabelebestanden.
 
 Dit bericht geeft aan dat uw configuratie de verouderde versie 1-indeling heeft, die een completeApache-configuratie bevat en bestanden met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund voor achterwaartse compatibiliteit, moet u overschakelen op de nieuwe layout.
 
-## Uw Apache- en Dispatcher-configuratie lokaal testen {#testing-apache-and-dispatcher-configuration-locally}
+## Lokale validatie van de syntaxis van de verzendersconfiguratie zodat apache httpd kan starten {#local-validation}
 
-Het is ook mogelijk om uw Apache- en Dispatcher-configuratie lokaal te testen. Hiervoor moet Docker lokaal zijn geïnstalleerd en moet uw configuratie voldoen aan de bovenstaande validatie.
+Als is vastgesteld dat de configuratie van de verzendmodule alleen ondersteunde instructies bevat, moet u controleren of de syntaxis correct is, zodat apache kan worden gestart. Om dit te testen, moet de docker plaatselijk worden geïnstalleerd. Let op: het is niet nodig dat AEM actief is.
 
-Door de parameter &quot;`-d`&quot; te gebruiken, voert de validator een map uit met alle configuratiebestanden die de verzender nodig heeft.
+Gebruik het `validate.sh` script zoals hieronder wordt getoond:
 
-Vervolgens kan het `docker_run.sh` script naar die map verwijzen, waarbij de container met uw configuratie wordt gestart.
+```
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+```
+
+Het script doet het volgende:
+
+1. De validator wordt uitgevoerd vanuit de vorige sectie om ervoor te zorgen dat alleen de ondersteunde instructies worden opgenomen. Als de configuratie ongeldig is, zal het manuscript ontbreken.
+2. De code voert de instructie uit `httpd -t command` om te testen of de syntaxis correct is, zodat apache httpd kan starten. Indien succesvol, zou de configuratie klaar voor plaatsing moeten zijn
+
+## De configuratie van Apache en Dispatcher lokaal testen {#testing-apache-and-dispatcher-configuration-locally}
+
+Het is ook mogelijk om uw Apache- en Dispatcher-configuratie lokaal te testen. Hiervoor moet de docker lokaal zijn geïnstalleerd en moet uw configuratie voldoen aan de bovenstaande validatie.
+
+Voer het validatorhulpmiddel uit, door de &quot;`-d`&quot;parameter te gebruiken die een omslag met alle configuratiedossiers uitzet nodig door de verzender. Vervolgens kan het `docker_run.sh` script naar die map verwijzen. Door het havenaantal (in het voorbeeld hieronder, 8080) te verstrekken om het verzender eindpunt bloot te stellen, begint het de container met uw configuratie.
 
 ```
 $ validator full -d out src/dispatcher
@@ -372,7 +398,35 @@ Hierdoor start de dispatcher in een container met de achterkant naar een AEM ins
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
-De logbestandniveaus worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s.&quot;. Raadpleeg de documentatie bij [Logging](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) voor meer informatie.
+De volgende strategie kan worden gebruikt om de logboekoutput voor de verzender module te verhogen en de resultaten van de `RewriteRule` evaluatie in zowel lokale als wolkenmilieu&#39;s te zien.
+
+De logboekniveaus voor deze modules worden bepaald door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL`. Deze kunnen in het bestand worden ingesteld `conf.d/variables/global.vars`. Het relevante deel is als volgt:
+
+```
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+```
+
+Wanneer het in werking stellen van verzender plaatselijk, worden de logboeken gedrukt direct aan de eindoutput. Meestal, wilt u deze logboeken in DEBUG zijn, die kan worden gedaan door het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+
+Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice die beschikbaar is in Cloud Manager.
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
 
@@ -393,7 +447,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-In de Dispatcher-configuratie is dezelfde omgevingsvariabele beschikbaar. Als meer logica wordt vereist, bepaal de variabelen zoals aangetoond in het bovenstaande voorbeeld en gebruik dan hen in de de configuratiesectie van Dispatcher:
+In de configuratie van de Verzender, is de zelfde milieuvariabele beschikbaar. Als meer logica wordt vereist, bepaal de variabelen zoals aangetoond in het bovenstaande voorbeeld en gebruik dan hen in de de configuratiesectie van de Verzender:
 
 ```
 /virtualhosts {
@@ -410,9 +464,9 @@ $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 De standaardrunmode wanneer het overgaan niet in een waarde voor DISP_RUN_MODE is &quot;dev&quot;.
 Voor een volledige lijst van beschikbare opties en variabelen, stel het manuscript `docker_run.sh` zonder argumenten in werking.
 
-## De Dispatcher-configuratie bekijken die door uw Docker-container wordt gebruikt {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## De Dispatcher-configuratie bekijken die door de Docker-container wordt gebruikt {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Met milieu-specifieke configuraties, kan het moeilijk zijn om te bepalen hoe de daadwerkelijke configuratie van Dispatcher eruit ziet. Nadat u de docker container met `docker_run.sh` deze heeft gestart, kan deze als volgt worden gedumpt:
+Met milieu-specifieke configuraties, kan het moeilijk zijn om te bepalen hoe de daadwerkelijke configuratie van de Verzender kijkt als. Nadat u de docker container met `docker_run.sh` deze heeft gestart, kan deze als volgt worden gedumpt:
 
 * Bepaal de gebruikte dockercontainer-id:
 
@@ -435,15 +489,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Belangrijkste verschillen tussen AMS Dispatcher en AEM als Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-Zoals hierboven op de referentiepagina is beschreven, lijken de configuratie van Apache en Dispatcher in AEM als Cloud Service sterk op die van AMS. De belangrijkste verschillen zijn:
+Zoals hierboven op de referentiepagina is beschreven, lijkt de Apache- en Dispatcher-configuratie in AEM als Cloud Service sterk op die van AMS. De belangrijkste verschillen zijn:
 
 * In AEM als Cloud Service mogen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
-* In AEM als Cloud Service, slechts kunnen sommige stukken van de configuratie van Dispatcher in omvat dossiers worden gezet en hun het noemen is belangrijk. Zo moeten filterregels die u op verschillende hosts opnieuw wilt gebruiken, in een bestand met de naam `filters/filters.any`worden geplaatst. Zie de referentiepagina voor meer informatie.
-* In AEM als Cloud Service is er extra bevestiging om filterregels te verbieden die worden geschreven gebruikend `/glob` om veiligheidskwesties te verhinderen. Aangezien `deny *` wordt gebruikt in plaats `allow *` (en niet kan worden gebruikt), zullen klanten er baat bij hebben om de Dispatcher lokaal uit te voeren en fouten te maken. In de logboeken wordt precies nagegaan welke paden door de Dispatcher-filters worden geblokkeerd, zodat deze kunnen worden toegevoegd.
+* In AEM als Cloud Service, slechts kunnen sommige stukken van de configuratie van de Verzender in omvat dossiers worden gezet en hun het noemen is belangrijk. Zo moeten filterregels die u op verschillende hosts opnieuw wilt gebruiken, in een bestand met de naam `filters/filters.any`worden geplaatst. Zie de referentiepagina voor meer informatie.
+* In AEM als Cloud Service is er extra bevestiging om filterregels te verbieden die worden geschreven gebruikend `/glob` om veiligheidskwesties te verhinderen. Omdat `deny *` eerder dan `allow *` (dat niet kan worden gebruikt) zal worden gebruikt, zullen de klanten van het runnen van de Verzender plaatselijk profiteren en het doen van proef en fout, die de logboeken bekijken om precies te weten welke wegen de filters van de Verzender blokkeren opdat die kunnen worden toegevoegd.
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM als Cloud Service
 
-De configuratiestructuur van de verzender heeft verschillen tussen Managed Services en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher-configuratieversie 2 naar AEM als Cloud Service.
+De configuratiestructuur van de verzender heeft verschillen tussen Managed Services en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher Configuration versie 2 naar AEM als Cloud Service.
 
 ## Een AMS converteren naar een AEM als configuratie voor een serviceverzender in de cloud
 
@@ -501,7 +555,7 @@ forget to adapt the `Include` statements referring to that file in the virtual h
 If the folder however contains multiple, virtual host specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
-### lijsten van gewenste personen verwijderen
+### Lijsten van gewenste personen verwijderen
 
 Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
 some file in that subfolder.
@@ -522,7 +576,7 @@ $ validator httpd .
 
 Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
-Als u Apache-instructies ziet die niet zijn op de lijst met gewenste personen gestaan, verwijdert u deze.
+Als u Apache-instructies ziet die niet zijn toegevoegd op lijst van gewenste personen, verwijdert u deze.
 
 ### Alle niet-publicatiefarms verwijderen
 
