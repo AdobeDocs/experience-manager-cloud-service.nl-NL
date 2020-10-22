@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2267'
 ht-degree: 6%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 6%
 Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die worden uitgevoerd door Cloud Manager en die zijn gemaakt op basis van de beste werkwijzen van AEM Engineering.
 
 >[!NOTE]
->
->De hier opgegeven codevoorbeelden dienen slechts ter illustratie.
+>De hier opgegeven codevoorbeelden dienen slechts ter illustratie. Zie [Concepten](https://docs.sonarqube.org/7.4/user-guide/concepts/) om over concepten SonarQube en kwaliteitsregels te leren.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -220,7 +219,7 @@ public class DontDoThis implements Page {
 
 ResourceResolver-objecten die zijn verkregen van de ResourceResolverFactory gebruiken systeembronnen. Hoewel er maatregelen op zijn plaats zijn om deze middelen terug te winnen wanneer een ResourceResolver niet meer in gebruik is, is het efficiënter om om het even welke geopende voorwerpen uitdrukkelijk te sluiten ResourceResolver door de close () methode te roepen.
 
-Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis in plaats van uitdrukkelijk te gebruiken close().
+Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis te gebruiken in plaats van uitdrukkelijk het aanhalen van close().
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
