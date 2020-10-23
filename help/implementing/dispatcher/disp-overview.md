@@ -2,9 +2,9 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4082'
 ht-degree: 8%
 
 ---
@@ -34,18 +34,19 @@ De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en 
 
 ## De gereedschappen downloaden en extraheren {#extracting-the-sdk}
 
-De Dispatcher Tools kan worden gedownload van een ZIP-bestand op de [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal. Let op: toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als Cloud Service. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools, kan worden gebruikt voor implementatie in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+De Dispatcher Tools, een onderdeel van de [AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op de [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools, kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdPak de SDK uit, die de Dispatcher Tools voor zowel MacOS/Linux als Windows bundelt.
 
-**Voor MacOS en Linux** downloadt u het shellscript naar een map op uw computer, maakt u het uitvoerbaar en voert u het uit. De Dispatcher Tools-bestanden worden zelf uitgepakt onder de map waarin u de toepassing hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
+**Voor MacOS/Linux** moet u het artefact van het verzendprogramma uitvoerbaar maken en uitvoeren. De Dispatcher Tools-bestanden worden zelf uitgepakt onder de map waarin u de toepassing hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Download voor Windows** het zip-archief en extraheer het.
+**Voor Windows** pakt u het ZIP-archief van Dispatcher Tooling uit.
 
 ## Bestandsstructuur {#file-structure}
 
@@ -379,7 +380,7 @@ Het script doet het volgende:
 
 Het is ook mogelijk om uw Apache- en Dispatcher-configuratie lokaal te testen. Hiervoor moet de docker lokaal zijn geïnstalleerd en moet uw configuratie voldoen aan de bovenstaande validatie.
 
-Voer het validatorhulpmiddel uit, door de &quot;`-d`&quot;parameter te gebruiken die een omslag met alle configuratiedossiers uitzet nodig door de verzender. Vervolgens kan het `docker_run.sh` script naar die map verwijzen. Door het havenaantal (in het voorbeeld hieronder, 8080) te verstrekken om het verzender eindpunt bloot te stellen, begint het de container met uw configuratie.
+Voer het validatorgereedschap uit (houd er rekening mee dat dit een andere is dan de eerder `validator.sh` vermelde parameter) door de `-d` parameter te gebruiken die een map uitvoert met alle configuratiebestanden van de verzender. Voer vervolgens het `docker_run.sh` script uit en geef die map door als een argument. Door het poortnummer op te geven (hier: 8080) om het verzender eindpunt bloot te stellen, is een container van de Dok begonnen, die de verzender met uw configuratie in werking stelt.
 
 ```
 $ validator full -d out src/dispatcher
