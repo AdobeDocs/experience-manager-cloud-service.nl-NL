@@ -3,7 +3,7 @@ title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2461'
 ht-degree: 19%
@@ -59,14 +59,14 @@ De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. 
 
 ```shell
 /content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
