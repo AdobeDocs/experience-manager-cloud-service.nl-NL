@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ AEM configuraties dienen om instellingen in AEM te beheren en dienen als werkrui
 Een configuratie kan vanuit twee verschillende gezichtspunten worden overwogen.
 
 * [Een beheerder](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
-* [Een ontwikkelaar](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat het Verspreiden van Context-Aware Configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
+* [Een ontwikkelaar](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
 
-Eenvoudig gezet, vanuit het standpunt van een beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM voortduurt en omhoog deze configuraties binnen de bewaarplaats kijkt.
+Samenvattend: vanuit het standpunt van een beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM deze configuraties binnen de bewaarplaats gebruikt en beheert.
 
 Configuraties hebben, ongeacht uw perspectief, twee hoofddoelen in AEM:
 
-* Configuraties bieden groepen gebruikers bepaalde mogelijkheden.
+* Configuraties bieden bepaalde functies voor bepaalde groepen gebruikers.
 * Configuraties definiëren de toegangsrechten voor deze functies.
 
 ## Configuraties als beheerder {#configurations-administrator}
@@ -38,6 +38,8 @@ Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
+
+### Voorbeeld {#administrator-example}
 
 Een beheerder kan bijvoorbeeld twee configuraties voor bewerkbare sjablonen maken.
 
@@ -74,7 +76,7 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
    ![Configuratie maken](assets/configuration-create.png)
 
    * De **titel** moet beschrijvend zijn.
-   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+   * De **naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamgevingsconventies [AEM.](naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
@@ -122,7 +124,7 @@ Hoewel de [beheerder en de gebruikers configuraties als werkplekken](#configurat
 
 De inhoud verwijst naar zijn bijbehorende configuratie via een `cq:conf` bezit. AEM voert een raadpleging uit die op de inhoud wordt gebaseerd en het is contextafhankelijke `cq:conf` bezit om de aangewezen configuratie te vinden.
 
-### Een eenvoudig voorbeeld {#example}
+### Voorbeeld {#developer-example}
 
 Voor dit voorbeeld, veronderstellen wij u één of andere toepassingscode hebt die in montages DAM geinteresseerd is.
 
@@ -193,7 +195,7 @@ Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback
 
 ### Configuraties gebruiken {#using-configurations}
 
-Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsbron of een middelboom zoals in het vorige voorbeeld werd [beschreven.](#example)
+Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsbron of een middelboom zoals in het vorige voorbeeld werd [beschreven.](#developer-example)
 
 Raadpleeg de documentatie bij Sling voor meer informatie over Context-Aware Configurations, voorbeelden en het gebruik ervan. [](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
