@@ -2,7 +2,7 @@
 title: Developing and Page Diff
 description: Begrijp hoe de functie Pagina Diff werkt en hoe deze een ontwikkelaar kan beïnvloeden
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheidingsteken kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md)voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md)voor meer informatie over deze gebruikersfunctie.
 
 ## Bewerkingsdetails {#operation-details}
 
@@ -30,7 +30,7 @@ Wanneer de inhoud wordt vergeleken, wordt de hele structuur tot aan de te vergel
 
 Er wordt automatisch een opschoningstaak uitgevoerd om deze tijdelijke inhoud op te schonen.
 
-## Machtigingen {#permissions}
+## Beperkingen {#limitations}
 
 Het diff komt cliënt-kant via DOM vergelijking voor, die het diff proces eenvoudig maken, nochtans zijn er een aantal beperkingen die door de ontwikkelaar moeten worden overwogen.
 
