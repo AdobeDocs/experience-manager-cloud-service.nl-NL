@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 7%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -63,6 +63,16 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
    >[!NOTE]
    >Als, u nog niet opstelling uw niet productiepijplijn hebt, toont het *scherm van het Overzicht* de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
+
+
+### De omgevingen bekijken {#viewing-environment}
+
+Met de **Environmental** Card op de overzichtspagina kunt u maximaal drie omgevingen weergeven.
+
+De gebruiker kan de knop Alles **** tonen selecteren om naar de overzichtspagina **Omgeving** te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
+
+![](assets/environment-view1.png)
+
 
 ## Omgeving bijwerken {#updating-dev-environment}
 
