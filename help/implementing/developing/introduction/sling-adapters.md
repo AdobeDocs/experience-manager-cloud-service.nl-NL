@@ -2,9 +2,9 @@
 title: Sling Adapters
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 0%
 
 ---
@@ -358,4 +358,4 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Overig {#other}
 
-Daarnaast biedt Sling / JCR / OCM ook een ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` voor aangepaste OCM-objecten ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)).
+Daarnaast biedt Sling / JCR / OCM ook een [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) voor aangepaste OCM-objecten ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)).
