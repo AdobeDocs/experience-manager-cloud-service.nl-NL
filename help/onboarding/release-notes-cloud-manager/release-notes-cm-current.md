@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 1%
@@ -31,7 +31,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 1 oktob
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
 * De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de knop Alles **** tonen selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
-Zie [Weergaveomgevingen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
+Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
 
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
