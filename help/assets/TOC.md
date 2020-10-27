@@ -3,8 +3,9 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
+solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
+source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 78%
