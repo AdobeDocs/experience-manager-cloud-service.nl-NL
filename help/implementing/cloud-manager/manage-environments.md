@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 6%
 
 ---
@@ -68,9 +68,17 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
 
 Met de **Environmental** Card op de overzichtspagina kunt u maximaal drie omgevingen weergeven.
 
-De gebruiker kan de knop Alles **** tonen selecteren om naar de overzichtspagina **Omgeving** te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
+1. Selecteer de knop Alles **** tonen om naar de overzichtspagina **Omgeving** te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. Op de pagina **Omgevingen** wordt de lijst met alle bestaande omgevingen weergegeven.
+
+   ![](assets/environment-view-2.png)
+
+1. Selecteer een van de omgevingen in de lijst om de omgevingsdetails weer te geven.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Omgeving bijwerken {#updating-dev-environment}
