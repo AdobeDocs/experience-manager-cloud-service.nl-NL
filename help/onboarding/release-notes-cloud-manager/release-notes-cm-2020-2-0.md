@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release 2020.2.0
-description: Opmerkingen bij de release 2020.2.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
