@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    >[!NOTE]
    >De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.  De gebruiker kan niet alleen een werkgebied of alleen een productieomgeving maken.
 
-## Een omgeving toevoegen {#adding-environments}
-
+## Omgeving toevoegen {#adding-environments}
 
 1. Klik op **Omgeving** toevoegen om een omgeving toe te voegen. Deze knop is toegankelijk via het scherm **Omgevingen** .
    ![](assets/environments-tab.png)
@@ -65,7 +64,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    >Als, u nog niet opstelling uw niet productiepijplijn hebt, toont het *scherm van het Overzicht* de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
 
 
-### Omgevingen weergeven {#viewing-environment}
+## Weergaveomgeving {#viewing-environment}
 
 Met de **Environmental** Card op de overzichtspagina kunt u maximaal drie omgevingen weergeven.
 
