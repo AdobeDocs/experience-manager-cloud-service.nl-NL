@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 translation-type: tm+mt
-source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2285'
 ht-degree: 6%
 
 ---
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **Sleutel**: CQRules:AMSCORE-554
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
@@ -569,7 +569,7 @@ Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/document
 
 **Sleutel**: AMSCORE-553
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
@@ -680,7 +680,7 @@ Gelijkaardig aan de *Pakketten zouden geen Dubbele OSGi Configuraties* moeten be
 
 **Sleutel**: ClassicUIAuthoringMode
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
@@ -692,7 +692,7 @@ De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaa
 
 **Sleutel**: ComponentWithOnlyClassicUIDialog
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
@@ -710,7 +710,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt do
 
 **Sleutel**: ImmutableMutableMixedPackage
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
@@ -724,7 +724,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 
 **Sleutel**: ReverseReplication
 
-**Type**: Code Smell
+**Type**: Compatibiliteit van code met Cloud Service/Smal
 
 **Ernst**: Klein
 
