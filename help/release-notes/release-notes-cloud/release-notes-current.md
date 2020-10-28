@@ -1,129 +1,117 @@
 ---
-title: Opmerkingen bij de release voor 2020.9.0 [!DNL Adobe Experience Manager] van een Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.9.0.'
+title: Release-aantekeningen voor de release 2020.10.0 [!DNL Adobe Experience Manager] van een Cloud Service.
+description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
+source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '848'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
+# Opmerkingen bij de release [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.9.0 beschreven.
+In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.10.0 beschreven.
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 is 24 september 2020.
+De releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 is 28 oktober 2020.
+De volgende release (20.11.0) vindt plaats op 26 november.
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sitess}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* De Single Page Application (SPA) Editor JavaScript SDK [is nu open source.](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **Projectarchetype 24**: De geadviseerde stichting om een nieuw AEM project te beginnen werd beter, nu met inbegrip van de nieuwe Laag van Gegevens van de Cliënt van Adobe, optie om plaats in AMP en nieuwe uitbreidingspunten te leveren om project CSS/JS toe te voegen.
+
+* **ContextHub-mappen**: Capaciteit om publieksomslagen tot stand te brengen om publiekssegmenten gemakkelijk te organiseren, te vinden en te selecteren voor de aanbieding ContextHub richtend mogelijkheden.
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Watermerken van afbeeldingsbestanden wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Deze kan worden geconfigureerd als een verwerkingsprofiel en gebruikt een PNG-bestand als watermerk. Zie [watermerk uw elementen](/help/assets/watermark-assets.md).
+* **[!DNL Adobe Sensei]Slimme tags** voor gemotoriseerde video: Door gebruik te maken van AI-modellen voor het analyseren van video-inhoud voor object- en actiespecifieke tags, kunnen DAM-gebruikers minder tijd besteden aan het toevoegen van tags en meer tijd besteden aan het gebruik van de rijke informatie die wordt weergegeven om klanten de juiste ervaring te bieden. Zie [Slimme tags toepassen op video-elementen](/help/assets/smart-tags-video-assets.md).
 
-* Verbeteringen in [!DNL Dynamic Media]
+* **Verbeteringen** merkportal: De volgende nieuwe functies en meer zijn beschikbaar in [!DNL Brand Portal]. Zie Opmerkingen bij de [[!DNL Brand Portal] release voor meer informatie](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * Selectieve publicatie - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd, [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze elementen hoeven te publiceren [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en [!DNL Dynamic Media] publicatie wordt ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [Selectieve publicatie](/help/assets/dynamic-media/selective-publishing.md).
-   * Beheerders kunnen nu het wachtwoord voor [!DNL Dynamic Media] Cloud Servicen opnieuw instellen dat bij provisioning wordt ontvangen. U kunt de instellingen opnieuw instellen in de [!DNL Experience Manager] gebruikersinterface zonder dat u de [!DNL Dynamic Media Classic] bureaubladtoepassing hoeft te gebruiken.
+   * [Verbeterde downloadervaring](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) voor vereenvoudigde, snelle downloads. De extra downloadconfiguraties kunnen door beheerders worden gevormd om een ervaring aan te bieden die de behoeften van de gebruikers en de ondernemingen aanpast.
+   * Een-klik navigatie aan Dossiers, [Inzamelingen](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), en Gedeelde Verbindingen is nu mogelijk van om het even welke pagina.
+   * Gebruikers kunnen nu specifieke uitvoeringen [selecteren en downloaden](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) . De nieuwe optie voor het downloaden van vertoningen is beschikbaar in het deelvenster Uitvoeringen op de pagina met elementdetails.
+   * Een onderbreking van 15 minuten voor gastgebruikerszittingen verzekert een betere ervaring aan alle gezamenlijke gebruikers.
 
-* Zie [wat nieuw is in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)voor informatie over de volgende verbeteringen.
+* **[!DNL Adobe Asset Link]versie 2.1**: Een nieuwe versie van de uitbreiding van de Verbinding [van Activa van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Adobe voor [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign] is beschikbaar. Het voegt compatibiliteit met de meest recente [!DNL Adobe Creative Cloud] toepassingen toe met versie 2021, die in oktober 2020 is uitgebracht.
 
-   * Uitgebreide PDF-voorvertoning met integratie van Adobe Document Cloud View SDK.
-   * Downloadfunctionaliteit met één klik.
-   * Nieuwe beheerconfiguraties voor de downloadervaring.
+* **[!DNL Assets]WebP-bestandsondersteuning**: [!DNL Assets] als Cloud Service nu de WebP-afbeeldingsindeling ondersteunt. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring.
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
 
-TBD: list of Assets aaCS bugs that are fixed.
+Content to come
 -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Core Components v1.3.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie.
+* Uitgebrachte CIF Venia Reference Site - 2020.10.2 die de snelste versie van de CIF Core Components v1.4.0 omvat. Raadpleeg de [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie.
 
-* Voorvertoningsmogelijkheden met product/categorie voor product- en categoriesjablonen zijn nu beschikbaar. Zo kunnen zakelijke gebruikers/marketers in AEM de product-/categoriesjablonen met echte gegevens bekijken.
-
-* De pagina van eigenschappen die aan producten en categorieën wordt toegevoegd om bedrijfsgebruikers toe te staan om details te bekijken verbonden aan product SKU/categorie identiteitskaart
-
-* De sorteerfunctie die aan de productconsole is toegevoegd, zorgt ervoor dat producten/categorieën op naam of prijskenmerken kunnen worden gesorteerd.
-
-* Productzoekfunctionaliteit toegevoegd aan productconsole.
+* Uitgebrachte CIF Core Components v1.4.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
-* Commerce Cloud configuraties respecteerden overerving niet. Dit is gecorrigeerd om ervoor te zorgen dat de configuratie waarden erft.
+* GraphQL-aanvragen in de productconsole en de pakjes zijn gedaan via HTTP-POST. Dit is bevestigd om ervoor te zorgen dat de cliënt van Apollo GraphQL het plaatsen in de cliëntOSGi van GraphQL configuratie respecteert om verzoeken van GET te steunen indien gevormd.
 
-## Cloud Manager {#cloud-manager}
+* De configuratiegebruikersinterface van de CIF-cloud gaf de knoppen &quot;Opslaan en sluiten&quot; weer voor configuraties in /lib en /apps/. Maar dit zijn alleen-lezen; de gebruikersinterface is daarom alleen geschikt voor het weergeven van de knop Sluiten.
 
-### Releasedatum {#release-date-cm}
+### Cloud Manager {#cloud-manager}
 
-De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.9.0 is 3 september 2020.
+* De pagina Omgevingen is opnieuw ontworpen.
 
-### Wat is er nieuw?{#what-is-new-cloud-manager}
+* In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
 
-* De controle van de inhoud is opnieuw geëtiketteerd als ErvingsControle.
-* Het bouwstijlproces is gescheiden in drie afzonderlijke Maven bevelen.
-* Als de Git Repository niet wordt gekloond, zal het tot drie keer worden herhaald.
+* De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
 
-### Bug Fixes {#bug-fixes-cm}
+* Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
-* Op het tabblad Inhoudscontrole wordt de basis-URL onjuist weergegeven met behulp van het auteurdomein in plaats van het publicatiedomein.
+* De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de knop Alles **** tonen selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer Release v1.1.0.
+### Bug Fixes {#bug-fixes-cloud-manager}
 
-### Nieuwe functies {#what-is-new-cra}
+* De koppeling van Cloud Manager naar de Developer Console was onjuist actief voordat omgevingen volledig werden gemaakt.
 
-* De [Cloud Readiness Analyzer (CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) heeft een beginstatusconsole die een expliciete knop Rapport **** genereren weergeeft waarop de gebruiker kan klikken om de CRA uit te voeren.
+* De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager gaf de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer.
 
-* De CRA UI toont vooruitgang terwijl het loopt. Er worden items weergegeven die worden geanalyseerd en bevindingen tijdens de uitvoering worden gevonden.
+* De knoppen Annuleren en Opslaan op de pagina Bewerken zonder productiepijplijn zijn niet altijd zichtbaar.
 
-* Het CRA-rapport geeft een samenvatting en het aantal bevindingen in tabelvorm, ingedeeld naar het type bevinding en het belangrijkste niveau. Wanneer u op het nummer van die bevinding klikt, wordt automatisch naar de locatie van die bevinding in het rapport geschoven.
+* Bepaalde fouten in het proces van de codekwaliteit kunnen ertoe leiden dat het logbestand niet correct wordt gegenereerd.
 
-### Bug Fixes {#cra-bug-fixes}
+* Bij het maken van een nieuw programma retourneert de voorgestelde naam soms een duplicaat van een bestaande programmanaam.
 
-* In bepaalde gevallen werd het CRA-rapport niet bijgewerkt nadat het werd afgedwongen om te vernieuwen. Dit is opgelost in deze versie.
+* Sommige logboeken van grote pijpleidingsstappen konden niet constant door het gebruikersinterface worden gedownload.
+
+* De validatie van omgevingsnamen had een off-by-one fout.
+
+* Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
+
+
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
+
+### Workflows {#workflows}
+
+* Ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum.
 
 ## De tool Content Transfer {#content-transfer-tool}
 
-Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het Hulpmiddel van de Overdracht van de Inhoud v1.1.10.
+Ga als volgt te werk om te leren wat nieuw is en de updates voor [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Nieuwe functies {#what-is-new-ctt}
 
-* De CTT ( [Content Transfer Tool)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) ondersteunt Azure Blob Store Data Store.
+* De gebruikerservaring voor logbestanden is verbeterd. Tijdstempels toegevoegd aan extractie- en insluitingslogboeken. Bericht toegevoegd om aan te geven of de logbestanden leeg zijn.
 
-* De CTT-gebruikersinterface heeft een functie voor automatisch opnieuw laden waarmee de overzichtspagina elke 30 seconden opnieuw wordt geladen.
+### Bug Fixes {#ctt-bug-fixes}
 
-* Knop die aan CTT gebruikersinterface wordt toegevoegd om *Toegangstoken* gemakkelijk terug te winnen.
-
-* Er is een beschrijvend validatiebericht toegevoegd voor de naam *van de* URL *en de* migratieset.
-
-## Tools voor herstructurering van code {#code-refactoring}
-
-Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen van het Refactoring van de Code is.
-
-### Nieuwe functies {#what-is-new-refactoring}
-
-[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) is een hulpprogramma dat is ontwikkeld om bestaande projectpakketten te herstructureren door inhoud en code te scheiden in afzonderlijke pakketten, zodat deze compatibel zijn met de projectstructuur die voor Adobe Experience Manager als Cloud Service is gedefinieerd.
-
-* De insteekmodule AIO-CLI ondersteunt Repository Modernizer en stelt gebruikers in staat het gereedschap uit te voeren met de insteekmodule.
-
-   Zie [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie.
-
-* Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM als Cloud Service wordt bepaald.
-
-   Zie [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
-
+* Met het gereedschap Inhoud overbrengen slaat u inhoudsbestanden over als de migratieset paden bevat met gedeeltelijk vergelijkbare bestandsnamen. Dit is opgelost.
