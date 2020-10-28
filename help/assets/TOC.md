@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 78%
+source-wordcount: '429'
+ht-degree: 75%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 78%
    + [Assets toevoegen en uploaden](add-assets.md)
    + [Assets doorzoeken](search-assets.md)
    + [Algemene taken voor assetbeheer](manage-digital-assets.md)
-   + [Slimme tags](smart-tags.md)
+   + [Slimme tags voor afbeeldingen](smart-tags.md)
+   + [Slimme tag toewijzen aan video-elementen](smart-tags-video-assets.md)
    + [Assets indelen](organize-assets.md)
    + [ [!DNL Adobe Stock] Activa in AEM](aem-assets-adobe-stock.md)
    + [Verzamelingen beheren](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 78%
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Slimme tags configureren](smart-tags-configuration.md)
+   + [Slimme tags toepassen op afbeeldingen configureren](smart-tags-configuration.md)
    + [Meertalige middelen en vertaling](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [HTTP-API voor assets](mac-api-assets.md)
