@@ -1,17 +1,17 @@
 ---
-title: Afbeeldingen labelen met slimme services
-description: Tags toewijzen aan afbeeldingen met kunstmatig intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van Adobe Sensei-services.
+title: Afbeeldingen automatisch labelen met door AI gegenereerde tags
+description: Tags toewijzen aan afbeeldingen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende [!DNL Adobe Sensei] bedrijfstags toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2363'
 ht-degree: 6%
 
 ---
 
 
-# De service Slimme tags toepassen en uw afbeeldingen labelen {#train-service-tag-assets}
+# Train Smart Content Service en tagt uw afbeeldingen automatisch {#train-service-tag-assets}
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags.
 
@@ -19,7 +19,7 @@ Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ Voer de volgende taken uit als u slimme tags wilt gebruiken:
 
 Slimme tags zijn alleen van toepassing op [!DNL Adobe Experience Manager Assets] klanten. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->De nieuwe [!DNL Experience Manager Assets] plaatsingen worden geïntegreerd met [!DNL Adobe Developer Console] door gebrek. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Op de bestaande implementaties kunnen beheerders de integratie [van slimme tags handmatig](/help/assets/smart-tags-configuration.md#aio-integration)configureren.
+>De nieuwe [!DNL Experience Manager Assets] plaatsingen worden geïntegreerd met [!DNL Adobe Developer Console] door gebrek. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Bij de oudere implementaties kunnen beheerders de integratie [van slimme tags handmatig](/help/assets/smart-tags-configuration.md#aio-integration)configureren.
 
 U kunt [!DNL Adobe Experience Manager] met de Slimme Markeringen integreren gebruikend [!DNL Adobe Developer Console]. Gebruik deze configuratie om de dienst van Slimme Markeringen van binnen toegang te hebben [!DNL Experience Manager]. Zie Experience Manager voor slimme markering van activa [voor taken](smart-tags-configuration.md) vormen om de Slimme Markeringen te vormen. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,28 +154,36 @@ Nadat u de service Slimme tags hebt opgeleid, kunt u de codeerworkflow activeren
 1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of uw elementen correct zijn gecodeerd. Zie Slimme tags [beheren voor meer informatie](#manage-smart-tags-and-searches).
 
 >[!NOTE]
->
+
 >In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met nieuw opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows met periodieke labels worden ongewijzigde elementen gecodeerd wanneer de tijdruimte langer is dan zes maanden.
 
 ### Geüploade elementen labelen {#tag-uploaded-assets}
 
 Experience Manager kan de elementen die gebruikers uploaden naar DAM automatisch labelen. Hiertoe configureren beheerders een workflow om een beschikbare stap aan slimme-tagelementen toe te voegen. Zie [hoe u slimme tags kunt inschakelen voor geüploade elementen](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Slimme tags en zoekopdrachten naar afbeeldingen beheren {#manage-smart-tags-and-searches}
+## Slimme tags beheren en zoeken naar middelen {#manage-smart-tags-and-searches}
 
-U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw merkafbeeldingen zijn toegewezen, zodat alleen de meest relevante tags worden weergegeven.
+U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw merkelementen zijn toegewezen, zodat alleen de meest relevante tags worden weergegeven.
 
-Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags naar afbeeldingen verder verfijnen door ervoor te zorgen dat de afbeelding in de zoekresultaten wordt weergegeven voor de meest relevante tags. In feite wordt hiermee de kans dat niet-verwante afbeeldingen in zoekresultaten worden weergegeven, verkleind.
+Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags ook verfijnen door ervoor te zorgen dat uw elementen in de zoekresultaten voor de meest relevante tags worden weergegeven. In feite helpt dit de kans te verkleinen dat niet-verwante elementen in zoekresultaten worden weergegeven.
 
-U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor een afbeelding te vergroten. Door een tag voor een afbeelding te promoten, neemt de kans toe dat de afbeelding in de zoekresultaten wordt weergegeven wanneer een zoekopdracht op basis van de desbetreffende tag wordt uitgevoerd.
+U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan met betrekking tot een element te vergroten. Door een tag voor een element te promoten, vergroot u de kans dat het element in de zoekresultaten wordt weergegeven wanneer een zoekopdracht wordt uitgevoerd op basis van de desbetreffende tag.
 
-1. Zoek in het vak Onderzoek naar elementen op basis van een tag.
-1. Inspect de zoekresultaten om een afbeelding te identificeren die je niet relevant vindt voor je zoekopdracht.
-1. Select the image, and then click the **[!UICONTROL Manage Tags]** icon from the toolbar.
-1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt u op het verwijderpictogram op de werkbalk. U kunt ook op het `X` symbool naast het label klikken.
-1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt u op het promotiepictogram op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Navigeer naar de pagina met eigenschappen voor de afbeelding. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
+De slimme tags van uw elementen reduceren:
+
+1. Zoek in het veld Onderzoek naar elementen op basis van een tag.
+
+1. Inspect de zoekresultaten om de elementen te identificeren die je niet relevant vindt voor je zoekopdracht.
+
+1. Selecteer het element en selecteer vervolgens het pictogram ![Tags](assets/do-not-localize/manage-tags-icon.png) beheren op de werkbalk.
+
+1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u het element niet wilt doorzoeken op basis van een specifiek label, selecteert u het label en selecteert u het pictogram ![](assets/do-not-localize/delete-icon.png) Verwijderen op de werkbalk. U kunt ook `X` symbool naast het label selecteren.
+
+1. Als u een hogere rang aan een tag wilt toewijzen, selecteert u de tag en selecteert u het pictogram ![](assets/do-not-localize/promote-icon.png) Verhogen op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
+
+1. Selecteer **[!UICONTROL Save]** en selecteer vervolgens **[!UICONTROL OK]** om het [!UICONTROL Success] dialoogvenster te sluiten.
+
+1. Navigeer naar de [!UICONTROL Properties] pagina voor het element. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
 ### AEM zoekresultaten begrijpen met slimme tags {#understandsearch}
 
@@ -210,4 +218,5 @@ Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebrui
 >
 >* [Experience Manager voor slimme tags configureren](smart-tags-configuration.md)
 >* [Begrijp hoe slimme tags u helpen elementen te beheren](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Slimme tags toepassen op video-elementen](smart-tags-video-assets.md)
 
