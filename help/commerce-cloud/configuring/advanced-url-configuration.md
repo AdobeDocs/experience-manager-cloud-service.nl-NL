@@ -1,10 +1,18 @@
 ---
 title: Geavanceerde URL-configuraties
-description: Geavanceerde URL-configuraties
+description: Leer hoe u de URL's voor product- en categoriepagina's aanpast. Hiermee kunnen implementaties URL's optimaliseren voor zoekprogramma's en detectie bevorderen.
+sub-product: Handel
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '789'
 ht-degree: 2%
 
 ---
@@ -55,7 +63,7 @@ Naast het `UrlProvider`, is het ook mogelijk om [Verschuivende Toewijzingen](htt
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM server van HTTP van Dispatcher met `mod_rewrite` module te gebruiken. Het [AEM Archetype](https://github.com/adobe/aem-project-archetype) van het Project verstrekt een verwijzing AEM Dispatcher config die reeds basisherschrijft regels [](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte omvat.
+URL herschrijft kan ook worden bereikt door AEM server van HTTP van de Verzender met `mod_rewrite` module te gebruiken. Het [AEM Archetype](https://github.com/adobe/aem-project-archetype) van het Project verstrekt een verwijzing AEM de config van de Verzender die reeds basisherschrijft regels [](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte omvat.
 
 ## Voorbeeld
 
@@ -63,7 +71,7 @@ Het project van het [Venia Reference store](https://github.com/adobe/aem-cif-gui
 
 >[!NOTE]
 >
->Deze configuratie moet met het externe domein worden aangepast dat door het project wordt gebruikt. Sling Mappings werkt gebaseerd op hostname en domein. Daarom is deze configuratie onbruikbaar gemaakt door gebrek en moet vóór plaatsing worden toegelaten. Om dit te doen anders noemt de Verschuivende `hostname.adobeaemcloud.com` omslag van de Toewijzing in `ui.content/src/main/content/jcr_root/etc/map.publish/https` volgens de gebruikte domeinnaam en laat dit config toe door `resource.resolver.map.location="/etc/map.publish"` aan `JcrResourceResolver` config van het project toe te voegen.
+>Deze configuratie moet met het externe domein worden aangepast dat door het project wordt gebruikt. Sling Mappings werkt gebaseerd op hostname en domein. Daarom is deze configuratie onbruikbaar gemaakt door gebrek en moet vóór plaatsing worden toegelaten. Om dit te doen hernoem de het Verdelen omslag van de Toewijzing in `hostname.adobeaemcloud.com` volgens de gebruikte domeinnaam en laat dit config door `ui.content/src/main/content/jcr_root/etc/map.publish/https` aan `resource.resolver.map.location="/etc/map.publish"` `JcrResourceResolver` toe te voegen config van het project.
 
 ## Aanvullende bronnen
 
