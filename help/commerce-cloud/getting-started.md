@@ -1,10 +1,16 @@
 ---
 title: Aan de slag met AEM Commerce als Cloud Service
-description: Aan de slag met AEM Commerce als Cloud Service
+description: Leer hoe te om een handel-toegelaten AEM project aan een lopende AEM als de dienstmilieu van de Wolk op te stellen. Gebruik functies van Adobe Cloud Manager en een CI/CD-pijplijn om de Venia-naslaggids te maken naar een actieve omgeving.
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '600'
 ht-degree: 3%
 
 ---
