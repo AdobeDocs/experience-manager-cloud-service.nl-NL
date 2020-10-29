@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,14 @@ De console van het [publiek](audiences.md) wordt gebruikt om segmenten voor Cont
 
 Als u toegang wilt krijgen tot uw segmenten, selecteert u **Navigatie > Aanpassing aanpassen > Soorten publiek**.
 
-![Het publiek beheren](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![Het publiek beheren](../assets/contexthub-segmentation-audiences.png)
 
 ## Segmenteditor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 Met de **segmenteditor** kunt u een segment gemakkelijk wijzigen. Als u een segment wilt bewerken, selecteert u een segment in de lijst met segmenten en klikt u op de knop **Bewerken** .
 
-![Segment-editor](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![Segment-editor](../assets/contexthub-segment-editor.png)
 
 Met de componentenbrowser kunt u **EN** en **OF** containers toevoegen om de segmentlogica te bepalen, dan extra componenten toevoegen om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria (zie het [Creëren van een Nieuw Segment](#creating-a-new-segment)) te bepalen om het nauwkeurige scenario voor het selecteren van het segment te bepalen.
 
@@ -87,13 +87,15 @@ De volgende verwijzingen zijn beschikbaar uit-van-de-doos om rechtstreeks met ee
 
 Het nieuwe segment definiëren:
 
-1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de knop Maken en selecteert u ContextHub-segment **maken**.
+1. Na de [toegang tot van de segmenten](#accessing-segments), [navigeer aan de omslag](#organizing-segments) waar u het segment zou willen tot stand brengen, of het in de wortel verlaten.
 
-   ![Segment toevoegen](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+1. Tik of klik op de knop **Maken** en selecteer ContextHub-segment **maken**.
+
+   ![Segment toevoegen](../assets/contexthub-create-segment.png)
 
 1. In het **Nieuwe Segment** ContextHub, ga een titel voor het segment evenals een verhogingswaarde in indien vereist en tik dan of klik **creeert**.
 
-   ![Nieuw segment](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![Nieuw segment](../assets/contexthub-new-segment.png)
 
    Elk segment heeft een verhogingsparameter die als weegfactor wordt gebruikt. Een hoger getal geeft aan dat het segment bij voorkeur wordt geselecteerd boven een segment met een lager getal in gevallen waarin meerdere segmenten geldig zijn.
 
@@ -104,7 +106,7 @@ Het nieuwe segment definiëren:
 1. Sleep een vergelijking of een verwijzing naar de segmentredacteur het in het gebrek EN container zal verschijnen.
 1. Dubbelklik op of tik op de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters te bewerken. In dit voorbeeld testen we mensen in Bazel.
 
-   ![Testen op mensen in Bazel](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![Testen op mensen in Bazel](../assets/contexthub-comparing-property-value.png)
 
    Stel indien mogelijk altijd een **gegevenstype** in om ervoor te zorgen dat uw vergelijkingen goed worden geëvalueerd. Zie [Vergelijkingen](#comparisons) voor meer informatie.
 
@@ -130,7 +132,7 @@ In het volgende voorbeeld worden bezoekers geselecteerd die worden beschouwd in 
 
 U begint door een OF containercomponent binnen het gebrek EN container te plaatsen. Binnen de container OR kunt u de bezit of verwijzingscomponenten toevoegen.
 
-![Segment met operator OR](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![Segment met operator OR](../assets/contexthub-or-operator.png)
 
 U kunt meerdere AND- en OR-operatoren naar wens nesten.
 
@@ -186,6 +188,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Voeg **de component van de Verwijzing** van het Manuscript in de gewenste plaats van het segment toe.
 1. Open het dialoogvenster Bewerken van de **component Scriptreferentie** . Als het script [correct is geconfigureerd](#defining-a-script-to-reference), moet het beschikbaar zijn in de vervolgkeuzelijst **Scriptnaam** .
 
+## Segmenten ordenen {#organizing-segments}
+
+Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte lijst. In dergelijke gevallen kan het handig zijn om mappen te maken voor het beheer van uw segmenten.
+
+### Een nieuwe map maken {#create-folder}
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de knop **Maken** en selecteert u **Map**.
+
+   ![Map toevoegen](../assets/contexthub-create-segment.png)
+
+1. Geef een **titel** en een **naam** voor de map op.
+   * De **titel** moet beschrijvend zijn.
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamgevingsconventies [AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Deze kan zo nodig worden aangepast.
+
+   ![Map maken](../assets/contexthub-create-folder.png)
+
+1. Tik of klik op **Maken**.
+
+   ![Map bevestigen](../assets/contexthub-confirm-folder.png)
+
+1. De map wordt weergegeven in de lijst met segmenten.
+   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map wordt weergegeven.
+   * Tik of klik op de kolomkoppen om de sortering aan te passen.
+      ![De nieuwe map](../assets/contexthub-folder.png)
+
+### Bestaande mappen wijzigen {#modify-folders}
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+
+   ![Map selecteren](../assets/contexthub-select-folder.png)
+
+1. Tik of klik op Naam **wijzigen** op de werkbalk om de naam van de map te wijzigen.
+
+1. Geef een nieuwe **maptitel** op en tik of klik op **Opslaan**.
+
+   ![Naam map wijzigen](../assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Bij het wijzigen van de mapnaam kan alleen de titel worden gewijzigd. De naam kan niet worden gewijzigd.
+
+### Een map verwijderen
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+
+   ![Map selecteren](../assets/contexthub-select-folder.png)
+
+1. Tik of klik op **Verwijderen** op de werkbalk om de map te verwijderen.
+
+1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
+
+   ![Verwijderen bevestigen](../assets/contexthub-confirm-segment-delete.png)
+
+   * Tik of klik op **Verwijderen** om te bevestigen.
+   * Tik of klik op **Annuleren** om af te breken.
+
+1. Als een van de geselecteerde mappen submappen of segmenten bevat, moet de verwijdering ervan worden bevestigd.
+
+   ![Verwijderen van kinderen bevestigen](../assets/contexthub-confirm-segment-child-delete.png)
+
+   * Tik of klik op **Verwijderen** forceren om te bevestigen.
+   * Tik of klik op **Annuleren** om af te breken.
+
+>[!NOTE]
+>
+> Het is niet mogelijk een segment van de ene map naar de andere te verplaatsen.
+
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
 Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van **[ContextHub](contexthub.md)worden getest.**
@@ -197,11 +268,11 @@ Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van *
 
 Bijvoorbeeld, is onze eenvoudige segmentdefinitie om gebruikers in Bazel te identificeren gebaseerd op de plaats van de gebruiker. Als u een specifieke persoon laadt die overeenkomt met die criteria, wordt getoond of het segment is opgelost:
 
-![Segment dat wordt omgezet](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![Segment dat wordt omgezet](../assets/contexthub-segment-resolve.png)
 
 Of indien deze niet is opgelost:
 
-![Segment dat niet wordt opgelost](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![Segment dat niet wordt opgelost](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
