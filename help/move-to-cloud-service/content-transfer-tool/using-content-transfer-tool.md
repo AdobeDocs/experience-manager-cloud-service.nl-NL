@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
+* Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
+
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces.
+* Na de voltooiing van de fase van de *Extractie* van het proces van de inhoudoverdracht en alvorens de Fase *van de* Opname te beginnen om inhoud in uw AEM in te voeren als de instanties van het *Stadium* of van de *Productie* van de Cloud Service, zult u een steunkaartje moeten registreren om Adobe van uw voornemen te melden om *Ingestie* ** in werking te stellen zodat Adobe ervoor kan zorgen dat geen onderbrekingen tijdens het proces onder de Ingestie voorkomt. U zult het steunkaartje 1 week vóór uw geplande datum van de *Ingestie* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
+   * Logboek een steunkaartje met de volgende details:
+   1. De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de fase van de *Ingestie* te beginnen.
+   2. Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
+   3. Programma-id
 
-* Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
+* In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
+
 
 ## Beschikbaarheid {#availability}
 
