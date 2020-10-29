@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 1 oktob
 
 * In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
 
-* De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
+* De buildcontainer van Cloud Manager ondersteunt nu het compileren van projecten met behulp van Java 8 of Java 11. Ondersteuning voor Java 11 wordt geleverd door het Maven-toolketensysteem.
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
