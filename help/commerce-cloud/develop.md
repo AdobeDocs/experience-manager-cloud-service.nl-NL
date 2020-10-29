@@ -1,11 +1,17 @@
 ---
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
-description: Ontwikkelen AEM Handel voor AEM als Cloud Service
+description: Leer hoe te om een handel-toegelaten AEM project te produceren gebruikend het AEM projectarchetype. Leer hoe te om het project aan een lokale ontwikkelomgeving te bouwen en op te stellen gebruikend de AEM als Cloud Service SDK.
+topics: Commerce, Development
+feature: Commerce Integration Framework
+version: cloud-service
+doc-type: tutorial
+kt: 5826
+thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 8%
+source-wordcount: '987'
+ht-degree: 7%
 
 ---
 
