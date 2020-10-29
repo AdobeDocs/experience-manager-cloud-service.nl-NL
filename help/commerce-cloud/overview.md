@@ -1,10 +1,11 @@
 ---
 title: Inleiding tot AEM Handel als Cloud Service
-description: Nieuwe functies in AEM Handel als Cloud Service.
+description: De Handel van de Experience Manager als Cloud Service bestaat uit het Kader van de Integratie van de Handel (CIF), dat Adobe aanbevolen patroon is om de handelsdiensten en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
+thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1357'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ De AEM CIF Core-componenten zijn aan de serverzijde en client-side gerenderde co
 
 De basiscomponenten worden verstrekt, gemeenschappelijk over handelsimplementaties zoals het Detail van het Product, de Lijst van het Product, Navigatie, Onderzoek, enz. Ze kunnen ongewijzigd worden gebruikt of worden uitgebreid.
 
-De [AEM CIF de Componenten](https://github.com/adobe/aem-core-cif-components) van de Kern van de [AEM Sites werken als de Componenten](https://github.com/adobe/aem-core-wcm-components) van de Kern maar zijn gewijd aan handel specifieke gebruik-gevallen.
+De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) werken net als de [AEM Sites Core-componenten](https://github.com/adobe/aem-core-wcm-components) , maar zijn toegewijd aan specifieke gevallen van gebruik.
 
 De belangrijkste voordelen van deze componenten zijn:
 
@@ -54,13 +55,13 @@ De belangrijkste voordelen van deze componenten zijn:
 * Ze kunnen ongewijzigd of met zeer minimale wijzigingen worden gebruikt.
 * Deze API&#39;s bieden de beste werkwijzen voor het maken van verbinding met Magento via GraphQL API&#39;s of REST API&#39;s
 
-Componenten zoals Product Teaser en Product Carousel worden geleverd om AEM Author in staat te stellen ervaringspagina&#39;s in AEM te maken, waarbij marketinginhoud en commerciële inhoud worden gecombineerd. Deze componenten kunnen gemakkelijk worden gesleept en op een inhoudspagina worden gelaten vallen die in AEM wordt gecreeerd en met specifieke producten of categorieën verbonden gebruikend de Hulpmiddelen van de Authoring CIF zoals het Product of de Plukker van de Categorie in Cloud Service wordt gecreeerd.
+Componenten zoals Product Teaser en Product Carousel worden geleverd om AEM-auteurs in staat te stellen ervaringspagina&#39;s in AEM te maken, waarbij marketing- en commerciële inhoud wordt gecombineerd. Deze componenten kunnen gemakkelijk worden gesleept en op een inhoudspagina worden gelaten vallen die in AEM wordt gecreeerd en met specifieke producten of categorieën verbonden gebruikend de Hulpmiddelen van de Authoring CIF zoals het Product of de Plukker van de Categorie in Cloud Service wordt gecreeerd.
 
 Alle componenten zijn open-sourced op [GitHub](https://github.com/adobe/aem-core-cif-components). Dit toont volledige transparantie over veranderingen die in de toekomst worden aangebracht en staat u toe om de recentste versie zeer gemakkelijk te krijgen. U kunt ook aantrekverzoeken voor verbeteringen en foutoplossingen opgeven die kunnen worden opgenomen.
 
 ### AEM Venia Storefront {#aem-venia-storefront}
 
-De [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) is een moderne, productiegerichte referentie-winkel die een elementaire B2C-handelsreis laat zien. Het kan worden gebruikt om handelsprojecten te versnellen en projecten te versnellen gebruikend AEM, CIF, en Magento. Het toont beste praktijken voor het integreren van AEM en Magento en toont hoe te om de [AEM componenten](https://github.com/adobe/aem-core-cif-components) van de Kern van CIF en de Componenten [van de](https://github.com/adobe/aem-core-wcm-components) AEM Siteste gebruiken en de eindpunten van GraphQL van de Handel van Adobe te steunen. Het voorziet ook pre-sales van een verwijzingsplaats om de integratie tussen AEM en Magento aan te tonen.
+De [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) is een moderne, productiegerichte referentie-winkel die een elementaire B2C-handelsreis laat zien. Het kan worden gebruikt om handelsprojecten te versnellen en projecten te versnellen gebruikend AEM, CIF, en Magento. Het toont beste praktijken voor het integreren van AEM en Magento en toont hoe te om de [AEM componenten](https://github.com/adobe/aem-core-cif-components) van de Kern van CIF en de Componenten [van de](https://github.com/adobe/aem-core-wcm-components) AEM Sites Core te gebruiken en steunt de eindpunten van GraphQL van de Handel van Adobe. Het voorziet ook pre-sales van een verwijzingsplaats om de integratie tussen AEM en Magento aan te tonen.
 
 De AEM Venia Storefront is een toepassing van gemengde pagina&#39;s waarin AEM het glas en de Magento bezit op een volkomen ongeëvenaarde manier de handelsnedes steunt. Zowel rendering aan de serverzijde als renderen aan de clientzijde worden in de storefront gebruikt. Rendering aan de serverzijde wordt gebruikt om statische inhoud te leveren en renderen aan de clientzijde wordt gebruikt om dynamische inhoud te leveren.
 
@@ -80,7 +81,7 @@ Het project van AEM Venia Storefront is een open bron en voor meer informatie, z
 
 ### Projectarchetype AEM {#aem-project-archtype}
 
-Het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) van het Project kan worden gebruikt om tot een minimaal, op best-praktijken-gebaseerd project van de Adobe Experience Manager als uitgangspunt voor uw eigen AEM projecten te leiden. Optioneel kunnen [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) worden opgenomen in een nieuw gegenereerd project.
+Het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) van het Project kan worden gebruikt om tot een minimaal, op best-praktijken-gebaseerd project van Adobe Experience Manager als uitgangspunt voor uw eigen AEM projecten te leiden. Optioneel kunnen [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) worden opgenomen in een nieuw gegenereerd project.
 
 ### CIF-uitbreidingslaag {#cif-extension}
 
