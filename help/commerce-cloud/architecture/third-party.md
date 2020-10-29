@@ -1,10 +1,11 @@
 ---
 title: Integratie van AEM en handel van derden met behulp van het kader voor integratie van de handel
-description: Integratie van AEM en handel van derden met behulp van het kader voor integratie van de handel
+description: Ondernemingen kunnen aanvullende handelsoplossingen van derden nodig hebben om hun winkel te kunnen bedienen. Het Kader van de Integratie van de Handel (CIF) kan in dergelijke integratiescenario's worden gebruikt om een derde handelsoplossing met Adobe Experience Manager te verbinden gebruikend I/O Runtime.
+thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
