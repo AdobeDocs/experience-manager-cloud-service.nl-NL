@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor de release 2020.10.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
+source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experi
 ## Releasedatum {#release-date}
 
 De releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 is 28 oktober 2020.
-De volgende release (20.11.0) vindt plaats op 26 november.
+De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sitess}
 
