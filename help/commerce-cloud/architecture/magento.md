@@ -1,10 +1,11 @@
 ---
 title: AEM- en Magento-integratie met behulp van Commerce Integration Framework
-description: AEM- en Magento-integratie met behulp van Commerce Integration Framework
+description: AEM en Magento zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # AEM- en Magento-integratie met behulp van Commerce Integration Framework {#aem-magento-framework}
 
-AEM en Magento zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. Het staat AEM Author ook toe om de Kegels van het Product en van de Categorie en de Console van het Product te gebruiken om door product en categoriegegevens te doorbladeren die op bestelling van Magento worden gehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
+AEM en Magento zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 
 ## Overzicht van architectuur {#overview}
 
