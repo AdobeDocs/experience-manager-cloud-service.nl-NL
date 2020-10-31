@@ -3,17 +3,17 @@ title: Metadataprofielen
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 24%
+source-wordcount: '1167'
+ht-degree: 23%
 
 ---
 
 
 # Metadataprofielen {#metadata-profiles}
 
-Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens uploadt naar de map, neemt de standaardmetagegevens over die u hebt geconfigureerd in het metagegevensprofiel.
+Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens naar de map uploadt, neemt de standaardmetagegevens over die u in het metagegevensprofiel hebt geconfigureerd.
 
 ## Een metagegevensprofiel toevoegen {#adding-a-metadata-profile}
 
@@ -89,7 +89,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Tik in de linkertrack **[!UICONTROL Assets]** vervolgens naar de map waarop u een metagegevensprofiel wilt toepassen.
 1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik op **Eigenschappen** of klik op Eigenschappen.
-1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]** en selecteer het profiel in het vervolgkeuzemenu en tik op **[Opslaan]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 ### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
