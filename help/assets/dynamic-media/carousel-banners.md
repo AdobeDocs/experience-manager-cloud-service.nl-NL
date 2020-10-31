@@ -2,9 +2,9 @@
 title: Carousel-banners
 description: Leer hoe u met carrouselbanners werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4521'
 ht-degree: 4%
 
 ---
@@ -258,8 +258,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-pr
 >Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
->
->Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -296,8 +295,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-pr
       * Als u een AEM Sites-klant bent, tikt u op het pictogram Sitekiezer (map) om naar een URL te navigeren.
 
          >[!NOTE]
-         >
-         >De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
+         De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
 
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
 
@@ -313,10 +311,8 @@ Zie Fragmenten [ervaren](/help/sites-cloud/authoring/fundamentals/experience-fra
       * Geef de breedte en hoogte van het ervaringsfragment op zoals dit wordt weergegeven op de banner.
 
          >[!NOTE]
-         >
-         >Houd er rekening mee dat de gereedschappen voor het delen van sociale media in Carousel Banner niet worden ondersteund wanneer u de viewer insluit in een Experience Fragment.
-         >U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
-
+         Houd er rekening mee dat de gereedschappen voor het delen van sociale media in Carousel Banner niet worden ondersteund wanneer u de viewer insluit in een Experience Fragment.
+         U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
@@ -331,8 +327,7 @@ Zie Fragmenten [ervaren](/help/sites-cloud/authoring/fundamentals/experience-fra
 ## Carrouselsets bewerken {#editing-carousel-sets}
 
 >[!NOTE]
->
->Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep kan toevoegen.
+Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep kan toevoegen.
 
 U kunt diverse bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
@@ -364,8 +359,7 @@ U kunt diverse bewerkingstaken uitvoeren op Carousel Sets, zoals:
    * Als u een hele Carousel-set wilt verwijderen, navigeert u naar de Carousel-set, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
 
    >[!NOTE]
-   >
-   >Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+   Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
 ## (Optioneel) Voorvertoning van carrouselbanners bekijken {#optional-previewing-carousel-banners}
 
@@ -386,7 +380,7 @@ U kunt een voorvertoning van carrouselbanners weergeven in de Carousel Editor (v
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tik op **[Voorvertoning]**.
+1. Tik op **[!UICONTROL Preview]**.
 1. Tik op de hotspots of afbeeldingen met hyperlinks op de afbeelding om de bijbehorende handelingen te testen.
 
 **Een voorvertoning van carrouselbanners weergeven in de lijst Viewers**
@@ -401,9 +395,8 @@ U kunt een voorvertoning van carrouselbanners weergeven in de Carousel Editor (v
 U moet de carrousel publiceren om deze te kunnen gebruiken. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. De carrousel wordt ook gepubliceerd naar de Dynamic Media-cloud, die is geïntegreerd met een CDN voor schaalbare en krachtige levering.
 
 >[!NOTE]
->
->Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
->Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
+Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
+Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
 
 Zie Dynamische media-elementen [publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor informatie over het publiceren van carrouselbanners.
 
@@ -412,8 +405,7 @@ Zie Dynamische media-elementen [publiceren](/help/assets/dynamic-media/publishin
 Nadat u bannerafbeeldingen hebt geüpload om een carrousel te maken, hotspots en/of afbeeldingen met hyperlinks naar de banner hebt toegevoegd en de carrouselset hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande websitepagina.
 
 >[!NOTE]
->
->Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Als u echter een zelfstandige AEM bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website, zoals beschreven in deze sectie.
 
