@@ -2,9 +2,9 @@
 title: Dynamic Media-videoprofielen
 description: Dynamische media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3505'
+source-wordcount: '3502'
 ht-degree: 14%
 
 ---
@@ -424,6 +424,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### Eigenschappen om een videoprofiel uit mappen te verwijderen {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tik of klik op het AEM en navigeer naar **[!UICONTROL Assets]** en naar de map waaruit u een videoprofiel wilt verwijderen.
-1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik op **[Eigenschappen]** of klik op Eigenschappen.
+1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Video Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
