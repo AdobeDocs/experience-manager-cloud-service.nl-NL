@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '801'
 ht-degree: 5%
 
 ---
@@ -60,7 +60,6 @@ De volgende legenda beschrijft het steunniveau.
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
@@ -124,9 +123,9 @@ Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-medi
 | MRW | ✓ | ✓ | ✓ |
 | NEF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
-| DORF | ✓ | ✓ | ✓ |
-| MFF | ✓ | ✓ | ✓ |
-| CR | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
@@ -142,14 +141,14 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GeDOC | - | - | - | ✓ | ✓ |
+| DOC | - | - | - | ✓ | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PPT | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
 | UIT | ✓ | ✓ | ✓ | - | - |
-| F | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
 | ODP | ✓ | ✓ | ✓ | - | - |
 | ODS | ✓ | ✓ | ✓ | - | - |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -191,7 +190,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
 | R3D | ✓ | - | ✓ |
-| Ondersteund | ✓ | - | ✓ |
+| SWF | ✓ | - | ✓ |
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
