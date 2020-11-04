@@ -2,9 +2,9 @@
 title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2264'
 ht-degree: 18%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 18%
 
 # Facetten doorzoeken {#search-facets}
 
-Een bedrijfsbrede plaatsing van de Activa van de Adobe Experience Manager (AEM) heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van AEM gebruikt.
+Een bedrijfsbrede implementatie van Adobe Experience Manager (AEM) Assets heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van AEM gebruikt.
 
 Gebruik zoekfacetten in het deelvenster Filters om de zoekervaring gedetailleerder te maken en de zoekfunctionaliteit efficiënter en veelzijdiger te maken. De facetten van het onderzoek voegen veelvoudige afmetingen (predikaten) toe die u toelaten om complexere onderzoeken uit te voeren. Het deelvenster Filters bevat een aantal standaardfacetten. U kunt ook aangepaste zoekfacetten toevoegen.
 
@@ -27,7 +27,7 @@ De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het
 Voor zoekopdrachten in volledige tekst voegt u de voorspelling toe aan het formulier. `Fulltext` Gebruik de voorspelling van de eigenschap om te zoeken naar elementen die overeenkomen met één eigenschap die u opgeeft. Gebruik de voorspelling Opties om te zoeken in elementen die overeenkomen met een of meer waarden voor een bepaalde eigenschap. Voeg de Datumbereik-voorspelling toe aan zoekelementen die binnen een opgegeven datumbereik zijn gemaakt.
 
 1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Formulieren zoeken de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Edit** ![amassets_edit](assets/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Edit** ![amassets_edit](assets/aemassets_edit.png).
 
    ![Zoek en selecteer de middelen die Admin Search Rail](assets/assets_admin_searchrail.png)
 
@@ -102,7 +102,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 1. Voer een van de volgende handelingen uit:
 
    * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-   * Tik ![](assets/do-not-localize/aem_assets_add_icon.png) naast het veld Opties om de weergavetekst en de waarde op te geven voor de opties die u wilt opgeven in het deelvenster Filters. Tik op een andere optie ![](assets/do-not-localize/aem_assets_add_icon.png) en herhaal deze stap om deze optie toe te voegen.
+   * Tik op het pictogram ![](assets/do-not-localize/aem_assets_add_icon.png) Middelen toevoegen naast het veld Opties om de weergavetekst en de waarde op te geven voor de opties die u wilt opgeven in het deelvenster Filters. Als u nog een optie wilt toevoegen, tikt u op het pictogram ![](assets/do-not-localize/aem_assets_add_icon.png) Middelen toevoegen of klikt u erop. Herhaal de stap.
 
 1. Zorg ervoor dat **[!UICONTROL Single Select]** is uitgeschakeld, zodat de gebruiker meerdere opties voor bestandstypen tegelijk kan selecteren (bijvoorbeeld Afbeeldingen, Documenten, Multimedia en Archieven). Als u **[!UICONTROL Single Select]** selecteert, kan de gebruiker slechts één optie tegelijk selecteren voor bestandstypen.
 
@@ -115,10 +115,10 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 
 ## Een voorspelling van een eigenschap met meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
 
-Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarbij u afbeeldingen van meerdere producten in AEM Assets hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
+Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere waarden. Neem bijvoorbeeld een scenario waarin u afbeeldingen van meerdere producten in AEM Assets hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Formulieren zoeken **[!UICONTROL Assets Admin Search Rail]** de optie **Aemassets_edit** ![tikken](assets/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms **[!UICONTROL Assets Admin Search Rail]** de optie **Middelen_bewerken** ![tikken](assets/aemassets_edit.png).
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.
 1. Zorg ervoor dat **[!UICONTROL Delimiter Support]** is geselecteerd. Geef in het veld **[!UICONTROL Input Delimiters]** scheidingstekens op om afzonderlijke waarden van elkaar te scheiden. Standaard wordt een komma opgegeven als scheidingsteken. U kunt een ander scheidingsteken opgeven.
@@ -128,10 +128,10 @@ Met de `Multi Value Property` voorspelling kunt u elementen zoeken naar meerdere
 
 ## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
-Met de `Tags` voorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM Assets elementen naar een of meer tags die overeenkomen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
+Met de `Tags` voorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM Assets naar elementen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Formulieren zoeken de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Edit** ![amassets_edit](assets/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Edit** ![amassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
@@ -208,7 +208,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
   </tr>
   <tr>
    <td><p>Bereik</p> </td>
-   <td><p>Zoeken voorspelt hoe elementen binnen een opgegeven bereik moeten worden gezocht. In het paneel van het Onderzoek, kunt u minimum en maximumwaarden voor de waaier specificeren.</p> </td>
+   <td><p>Zoeken voorspelt dat er wordt gezocht in elementen die binnen een opgegeven bereik vallen. In het paneel van het Onderzoek, kunt u minimum en maximumwaarden voor de waaier specificeren.</p> </td>
    <td>
     <ul>
      <li>Label</li>
@@ -308,7 +308,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 Standaard wordt een vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het vergrendelingspictogram verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.
+Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
