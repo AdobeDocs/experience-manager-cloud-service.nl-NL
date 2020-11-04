@@ -2,9 +2,9 @@
 title: Interactieve video's
 description: Leer hoe u met interactieve video en shoppable video werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '5963'
+source-wordcount: '5969'
 ht-degree: 5%
 
 ---
@@ -88,7 +88,7 @@ Zie Elementen [](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)pu
 1. **Een interactieve video toevoegen aan uw website of uw website in AEM** Als u AEM Sites of AEM eCommerce gebruikt, of beide, kunt u de interactieve video rechtstreeks toevoegen aan een webpagina in AEM door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie Een interactieve video [integreren met uw website](#integrating-an-interactive-video-with-your-website).
 Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie Een interactieve video [integreren met een bestaande QuickView](#integrating-an-interactive-video-with-an-existing-quickview).
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [Dynamische media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
 
@@ -222,7 +222,7 @@ U kunt deze taak overslaan en naar de volgende taak gaan als u een van de standa
 
 Wanneer op een miniatuur wordt geklikt in de ontwerpomgeving, wordt een voorbeeld van het dialoogvenster Snelle weergave weergegeven.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 U kunt desgewenst uw eigen aangepaste voorinstelling voor een interactieve videoviewer maken. U kunt onder andere de opmaak bepalen van de videospeler, de interactieve miniaturen en de weergave van het miniatuurraster die aan het einde van de video wordt weergegeven.
 
