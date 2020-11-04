@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '817'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ De volgende legenda beschrijft het steunniveau.
 
 ## Adobe-indelingen {#adobe-formats}
 
-| Bestandsindeling | Miniaturen genereren | Volledige tekstextractie | Metagegevensextractie | Breedte/Hoogte |
+| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | KLLAGE | - | - | ✓ | - |
@@ -61,6 +61,9 @@ De volgende legenda beschrijft het steunniveau.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* WebP-ondersteuning is momenteel bedoeld voor compressie met verlies en ondersteunt 0-100 waarden om de afbeeldingskwaliteit te wijzigen.
 
 ## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -137,7 +140,7 @@ Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-medi
 
 De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
-| Bestandsindeling | Miniaturen genereren | Volledige tekstextractie | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
