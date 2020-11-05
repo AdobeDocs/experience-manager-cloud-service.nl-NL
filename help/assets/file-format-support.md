@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die door Experience Manager Assets als Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
+source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '801'
 ht-degree: 5%
 
 ---
@@ -61,9 +61,6 @@ De volgende legenda beschrijft het steunniveau.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-| WebP | ✓ | ✓ | - | - |
-
-* WebP-ondersteuning is momenteel bedoeld voor compressie met verlies en ondersteunt 0-100 waarden om de afbeeldingskwaliteit te wijzigen.
 
 ## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
