@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ Meld u aan bij uw Domeinregister en maak een CNAME-record om de aangepaste domei
 | CNAME | Aangepast domeinnaampunt voor doel |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### APEX-record {#apex-record}
+
+Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals example.com. Een apex domein wordt gevormd met een `A` , `ALIAS` , of `ANAME` verslag door uw DNS leverancier. De Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
+
+Voeg alle volgende A verslagen aan DNS van uw Domein montages via uw domeinleverancier toe:
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## DNS-recordstatus controleren {#check-status-dns-record}
+
+U kunt bepalen of uw domeinnaam correct aan uw AEM als website van de Cloud Service door het pictogram van de Status voor het DNS verslag van de lijst op de Milieu&#39;s van de pagina van de Montages van het Domein te klikken oplost. Cloud Manager voert een DNS-zoekopdracht voor uw domeinnaam uit en geeft een van de volgende statusberichten weer:
+
+>[!NOTE]
+>Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor volgende pogingen moet u actief het pictogram **Oplossen opnieuw** naast de status selecteren. AFBEELDING INVOEGEN
+
+* **DNS status niet ontdekte** DNS status zal niet worden ontdekt tot uw naam van het douanedomein met succes is geverifieerd en opgesteld. Deze status wordt ook waargenomen wanneer uw naam van het Domein van de Douane in het proces van schrapping is.
+
+* **DNS lost onjuist** op dit wijst erop dat of DNS archiefconfiguratie niet heeft opgelost/over nog gericht of onjuist is. Een vertegenwoordiger van de Adobe wordt automatisch op de hoogte gesteld.
+
+   >[!NOTE]
+   >U moet of een vormen `CNAME` of `A-record` door de overeenkomstige instructies te volgen. Ga naar het Vormen DNS de VERBINDING van het TUSSENVOEGSEL van Montages om meer over het onderwerp te leren. Wanneer u klaar bent, moet u het pictogram &#39;Opnieuw oplossen&#39; naast de status selecteren.
+
+* **DNS-resolutie wordt momenteel** opgelost. Deze status wordt meestal weergegeven nadat u het pictogram &quot;Opnieuw oplossen&quot; naast de status hebt geselecteerd.
+
+* **DNS lost Correct** Uw DNS montages op behoorlijk wordt gevormd. Uw site is bestemd voor bezoekers.
