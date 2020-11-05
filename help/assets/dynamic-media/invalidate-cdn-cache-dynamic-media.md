@@ -2,9 +2,9 @@
 title: De CDN-cache ongeldig maken via Dynamic Media
 description: Door de inhoud van uw CDN (Content Delivery Network) die in de cache is opgeslagen te valideren, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn alleen van toepassing op Dynamic Media op AEM als Cloud Service. Deze eigenschap vereist ook dat u uit-van-de-doos CDN gebruikt die met AEM Dynamische Media wordt gebundeld; andere aangepaste CDN&#39;s worden niet ondersteund. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Deze eigenschap vereist dat u uit-van-de-doos CDN gebruikt die met AEM Dynamische Media wordt gebundeld; andere aangepaste CDN&#39;s worden niet ondersteund. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Zie ook [Caching overzicht in Dynamische Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**De CDN-cache ongeldig maken met behulp van dynamische media**
+**De CDN-cache ongeldig maken via Dynamic Media**
 
 *Deel 1 van 2: Een CDN-validatiesjabloon maken*
 
