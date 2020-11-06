@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5216'
+source-wordcount: '5215'
 ht-degree: 8%
 
 ---
@@ -254,14 +254,14 @@ Dit doet het volgende:
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de *sRGB* -kleurruimte.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de *WebCoated* -kleurruimte.
 
-#### Elementverwerking configureren {#configuring-asset-processing}
+#### MIME-typen bewerken voor ondersteunde indelingen {#configuring-asset-processing}
 
-U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en de geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
+U kunt definiëren welke elementtypen door Dynamic Media worden verwerkt en geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
 
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
 * Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated Postscript-bestand (.EPS).
-* Opmerking: U kunt videoprofielen en afbeeldingsprofielen gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
+* [U kunt videoprofielen](/help/assets/dynamic-media/video-profiles.md) en [afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md) gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
 
 Zie Elementen [uploaden](/help/assets/add-assets.md).
 
@@ -277,7 +277,7 @@ Elementverwerking configureren:
 1. Selecteer een mime-type onder de map mimeTypes.
 1. Aan de rechterkant van de pagina CRXDE Lite, in het onderste gedeelte:
 
-   * Dubbelklik op het **[!UICONTROL enabled]** veld. Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd met Dynamic Media voor verwerking. Als u wilt uitsluiten dat dit elementtype mime wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false]**.
+   * Dubbelklik op het **[!UICONTROL enabled]** veld. Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd met Dynamic Media voor verwerking. Als u wilt uitsluiten dat dit elementtype wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false]**.
 
    * Dubbelklik **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/file-format-support.md) voor een lijst met toegestane waarden voor de verwerkingsparameters die u voor een bepaald MIME-type kunt gebruiken.
 
@@ -287,11 +287,11 @@ Elementverwerking configureren:
 
 1. Tik in de linkerbovenhoek van de pagina **[!UICONTROL CRXDE Lite]** om terug te keren naar AEM.
 
-#### Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen {#adding-custom-mime-types-for-unsupported-formats}
+#### MIME-typen toevoegen voor niet-ondersteunde indelingen {#adding-custom-mime-types-for-unsupported-formats}
 
 U kunt aangepaste MIME-typen voor niet-ondersteunde indelingen toevoegen in AEM Assets. Om ervoor te zorgen dat een nieuw knooppunt dat u in CRXDE Lite toevoegt, niet door AEM wordt verwijderd, moet u ervoor zorgen dat u het MIME-type verplaatst vóór `image_` en de ingeschakelde waarde ervan is ingesteld op **[!UICONTROL false]**.
 
-Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen:
+MIME-typen toevoegen voor niet-ondersteunde indelingen:
 
 1. Tik vanaf AEM **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -453,7 +453,7 @@ Een voorinstelling voor een batch-set maken voor het automatisch genereren van e
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
-1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup > Application Setup]>[!UICONTROL Batch Set Presets]>[!UICONTROL Batch Set Preset]**.
+1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup > Application Setup]> [!UICONTROL Batch Set Presets] >[!UICONTROL Batch Set Preset]**.
 
    Let op: **[!UICONTROL View Form]** zoals ingesteld in de rechterbovenhoek van de pagina Details, is de standaardweergave.
 
