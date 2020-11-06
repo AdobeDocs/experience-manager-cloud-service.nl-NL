@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Met Experience Manager kunnen de volgende verwerkingsniveaus worden toegepast.
 
 | Optie | Beschrijving | Gebruikte gevallen |
 |---|---|---|
-| [Standaardconfiguratie](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt de mogelijkheid voor het genereren van zeer eenvoudige vertoningen. | <ul> <li>Standaardminiaturen die door de [!DNL Assets] gebruikersinterface worden gebruikt (48, 140 en 319 px) </li> <li> Grote voorvertoning (webuitvoering, 1280 px) </li><li> Metagegevens en tekstextractie.</li></ul> |
+| [Standaardconfiguratie](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt de mogelijkheid voor het genereren van zeer eenvoudige vertoningen. | <ul> <li>Standaardminiaturen die door de [!DNL Assets] gebruikersinterface worden gebruikt (48, 140 en 319 pixels) </li> <li> Grote voorvertoning (webuitvoering, 1280 pixels) </li><li> Metagegevens en tekstextractie.</li></ul> |
 | [Aangepaste configuratie](#standard-config) | Gevormd door beheerders via gebruikersinterface. Biedt meer opties voor het genereren van vertoningen door de standaardoptie uit te breiden. De optie voor het uit-van-de-doos uitbreiden voor verschillende indelingen en uitvoeringen. | <ul><li>FPO-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
 | [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om de Dienst van de Compute van [Activa te roepen](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
 
@@ -78,9 +78,9 @@ Voer de volgende stappen uit om een standaardverwerkingsprofiel te maken:
 1. Als u andere vertoningen wilt genereren, klikt u op de volgende informatie **[!UICONTROL Add New]** en geeft u deze op:
 
    * Bestandsnaam van elke vertoning.
-   * Bestandsindeling (PNG, JPEG of GIF) van elke uitvoering.
+   * Bestandsindeling (PNG, JPEG, GIF of WebP) voor elke uitvoering.
    * Breedte en hoogte in pixels van elke uitvoering. Als de waarden niet worden opgegeven, wordt de volledige pixelgrootte van de oorspronkelijke afbeelding gebruikt.
-   * Kwaliteit in procenten van elke JPEG-uitvoering.
+   * Kwaliteit in procenten van elke JPEG- en WebP-uitvoering.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
    ![verwerkingsprofielen, toevoegen](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ Dankzij de integratie van Asset Compute Service kan Experience Manager deze para
 
 ![aangepast verwerkingsprofiel](assets/custom-processing-profile.png)
 
-*Afbeelding: Het gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing.[!UICONTROL Service Parameters]In dit voorbeeld worden de afbeeldingen bijgewerkt met`Jumanji`tekst in het`Arial-BoldMT`lettertype wanneer campagnegamaterialen worden geüpload.*
+*Afbeelding: Het gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing. [!UICONTROL Service Parameters] In dit voorbeeld worden de afbeeldingen bijgewerkt met `Jumanji` tekst in het `Arial-BoldMT` lettertype wanneer campagnegamaterialen worden geüpload.*
 
 ## Verwerkingsprofielen gebruiken om elementen te verwerken {#use-profiles}
 
