@@ -2,9 +2,9 @@
 title: Slimme beeldverwerking
 description: Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '2049'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,23 @@ Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie van Dynamic Media
 
 ## Hoe werkt intelligente beeldverwerking? {#how-does-smart-imaging-work}
 
-Voor Smart Imaging wordt Adobe Sensei gebruikt om afbeeldingen automatisch om te zetten in de meest optimale indeling, grootte en kwaliteit, op basis van de browsermogelijkheden:
+Wanneer een afbeelding door een consument wordt opgevraagd, controleren we de gebruikerskenmerken en zetten we de afbeelding om in de juiste afbeeldingsindeling op basis van de gebruikte browser. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
-* Automatisch converteren naar WebP voor browsers zoals Chrome, Firefox, Microsoft Edge, Android en Opera.
-* Automatisch omzetten in JPEG2000 voor browsers zoals Safari.
-* Automatisch omzetten in JPEG voor browsers zoals Internet Explorer 9+.
+* Automatisch converteren naar WebP voor de volgende browsers:
+   * Chroom
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Alleen Safari 14 met iOS 14.0 en hoger en macOS BigSur en hoger
+   * Android
+   * Opera
+* Ondersteuning voor oudere browsers:
+
+   | Browser | Versie browser/besturingssysteem | Format |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 of eerder | JPEG2000 |
+   | Rand | 18 of lager | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
 Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
@@ -84,7 +96,13 @@ Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldi
 
 ## Moet ik URL&#39;s, voorinstellingen voor afbeeldingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Nee. Slimme afbeeldingen werken naadloos met bestaande URL&#39;s voor afbeeldingen en voorinstellingen voor afbeeldingen. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
+Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinstellingen voor afbeeldingen als u Smart Imaging configureert op uw bestaande aangepaste domein. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
+
+Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt met dit aangepaste domein.
+
+Zie ook [Ben ik verkiesbaar om Slimme Beelden te gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -171,6 +189,34 @@ Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de 
 Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie nodig is om de prestaties te verbeteren. In sommige gevallen waarin er geen verwachte prestatieverhoging is of de indeling geen JPEG of PNG is, wordt de afbeelding niet geconverteerd.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## Hoe ken ik de prestatiewinst? Is er een manier om de voordelen van Smart Imaging te noteren? {#performance-gain}
+
+**Informatie over de koppen voor slimme afbeeldingen**
+
+De headerwaarden voor Smart Imaging werken alleen wanneer aanvragen die geen cache zijn, vanaf nu worden uitgevoerd. Dit wordt gedaan om het huidige geheime voorgeheugen compatibel te houden en de behoefte van berekening te vermijden wanneer de beelden door middel van het geheime voorgeheugen worden gediend.
+
+Als u Smart Imaging Headers wilt gebruiken, moet u de`cache=off`bepaling in uw verzoeken toevoegen. Zie de[cache](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html) in de API voor dynamisch mediabeeldbeheer voor servers en rendering.
+
+Voorbeeld van gebruik `cache=off` (alleen ter illustratie):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+Nadat u een dergelijk verzoek gebruikt, kunt u in de sectie van de Kopballen van de Reactie, `-x-adobe-smart-imaging` kopbal zien. Zie de volgende schermafbeelding met `-x-adobe-smart-imaging` markering.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+Deze headerwaarde geeft het volgende aan:
+
+* Smart Imaging werkt voor het bedrijf.
+* Positieve waarde (>=0) geeft aan dat de conversie is gelukt. In dit geval wordt een nieuwe afbeelding (webP hier) geretourneerd.
+* Negatieve waarde (&lt;0) geeft aan dat de conversie is mislukt. In dit geval wordt de oorspronkelijke opgevraagde afbeelding geretourneerd (standaard JPEG, indien niet opgegeven).
+* De waarde geeft het verschil in bytes aan tussen de gevraagde afbeelding en de nieuwe afbeelding. In dit geval zijn de opgeslagen bytes 75048, wat ongeveer 75 kB is voor één afbeelding. 
+   * De negatieve waarde geeft aan dat de gevraagde afbeelding kleiner is dan de nieuwe afbeelding. We tonen wel het verschil in negatieve grootte, maar de weergegeven afbeelding is alleen de oorspronkelijke gevraagde afbeelding
+
+**Wanneer gebruikt u de Smart Imaging Headers?**
+
+De Smart Imaging Response Headers zijn ingeschakeld voor foutopsporingsdoeleinden of terwijl de voordelen van alleen Smart Imaging worden gemarkeerd. Het gebruik`cache=off`in normale scenario&#39;s kan belastingstijden beduidend beïnvloeden.
 
 ## Kan Smart Imaging voor een aanvraag worden uitgeschakeld? {#turning-off-smart-imaging}
 
