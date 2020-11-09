@@ -1,11 +1,11 @@
 ---
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: 'Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service. '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ De schaling van instanties per tenant van de service kan automatisch of handmati
 ## Omgevingen {#environments}
 
 >[!NOTE]
->
 >Zie [Implementeren - Runmodi](/help/implementing/deploying/overview.md#runmodes) voor meer informatie
 
-AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties waarbij elke instantie een volledige AEM-omgeving vertegenwoordigt. Er zijn vier typen omgevingen beschikbaar met AEM as a Cloud Service:
+AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties waarbij elke instantie een volledige AEM-omgeving vertegenwoordigt.
+
+Er zijn drie soorten milieu&#39;s beschikbaar met AEM als Cloud Service:
 
 * **Productieomgeving**: is de host voor de applicaties van alle zakelijke gebruikers.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties wa
 
 * **Ontwikkelomgeving**: hier kunnen ontwikkelaars AEM-applicaties implementeren onder dezelfde runtimevoorwaarden als de fase- en productieomgeving.
 
-* **Demonstratieomgeving**: kan worden gebruikt voor evaluatie, demonstratie, prototypering en opleiding.
-
-De ontwikkelings- en demonstratieomgeving worden vaak *niet-productieomgevingen* genoemd.
+   Raadpleeg [Omgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) beheren voor meer informatie.
 
 ## Programma&#39;s {#programs}
 
