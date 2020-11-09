@@ -3,9 +3,9 @@ title: Watermerk van de elementen
 description: Voeg een watermerk toe aan uw digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Voer de volgende stappen uit om te configureren [!DNL Experience Manager] naar w
 
 1. Een PNG-bestand wordt toegepast als een watermerk. Upload dit bestand in uw DAM-opslagplaats.
 
-1. Open de [!DNL Cloud Manager] Git-opslagplaats die aan uw omgeving is gekoppeld. Leg een bestand met de naam `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in de [!DNL Cloud Manager] Git-opslagplaats vast met de volgende inhoud. Voor meer details, zie [hoe te configuratie OSGi [!DNL Experience Manager] als Cloud Service](/help/implementing/deploying/configuring-osgi.md)doen.
+1. Open de [!DNL Cloud Manager] Git-opslagplaats die aan uw omgeving is gekoppeld. Leg een bestand uit dat `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` in de opslagplaats is genoemd met de volgende inhoud. Voor instructies, zie [hoe te om configuratie OSGi [!DNL Experience Manager] als Cloud Service](/help/implementing/deploying/configuring-osgi.md)te doen.
 
    ```json
    {
