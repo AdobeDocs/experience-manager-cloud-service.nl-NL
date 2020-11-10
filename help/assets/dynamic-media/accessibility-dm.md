@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamische media ondersteunt toetsenbordbesturing en ondersteunende technologieën, zoals JAWS en NVDA-schermlezers, in de hele ontwerpgebruikersinterface.
 
+
+
 ## Ondersteuning voor toetsenbordtoegankelijkheid in dynamische media
 
 Toetsen die door afzonderlijke elementen van de gebruikersinterface worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in Dynamic Media heeft betrekking op het volgende:
@@ -25,8 +27,8 @@ Toetsen die door afzonderlijke elementen van de gebruikersinterface worden onder
 Door de invoerfocus naar het volgende gebruikersinterface-element in de tabvolgorde te `Tab` verplaatsen, het gebruiken `Shift+Tab` brengt inputnadruk terug naar het vorige gebruikersinterface element.
 Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden.
 * De mogelijkheid om de `Spacebar` toets en de `Enter` toets te gebruiken om standaardelementen van de gebruikersinterface te activeren, zoals knoppen, vervolgkeuzelijst, enzovoort.
-* De mogelijkheid om bepaalde aangepaste toetsaanslagen te gebruiken voor interactie met complexe UI-elementen, zoals pijltoetsen in de Hot Spot Editor.
 * Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het gebruikersinterface-element dat invoerfocus heeft, krijgt mogelijk een visuele focusindicatie als een rand die rondom het interface-element wordt weergegeven.
+* De mogelijkheid om bepaalde aangepaste toetsaanslagen te gebruiken voor interactie met complexe UI-elementen, zoals pijltoetsen in de Hot Spot Editor. In de redacteur van het Uitsnijden van het Beeld/van het Slim Gewas, hebt u de capaciteit om pijlsleutels te gebruiken om de kadergrootte uit te snijden, of het beeld, of allebei anders te plaatsen.
 
 Omdat Dynamic Media een insteekmodule voor AEM Assets is, is het meeste toetsenbordbesturingsgedrag hetzelfde als in AEM Assets. De `Cancel` knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in AEM Assets en reageert op de `Spacebar` toets als in AEM Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts). Uitzonderingen hierop zijn de hotspot-editor en de editors voor Uitsnijden en Slim uitsnijden van afbeeldingen.
 
