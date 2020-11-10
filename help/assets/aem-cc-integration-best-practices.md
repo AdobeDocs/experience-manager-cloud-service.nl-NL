@@ -4,9 +4,9 @@ description: De beste praktijken integreren een plaatsing van de Experience Mana
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,6 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 
 ## De behoefte van de samenwerking van creatieven, verkopers, en gebruikers DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | Vereisten | Hoofdletters gebruiken | Betrokken oppervlakken |
 |---|---|---|
 | Ervaring voor creatieve producten op desktop vereenvoudigen | Toegang tot bedrijfsmiddelen van een DAM (AEM Assets) stroomlijnen voor creatieve professionals, of meer in het algemeen gebruikers op desktopcomputers die werken in toepassingen voor het maken van native bedrijfsmiddelen. Ze hebben een eenvoudige en eenvoudige manier nodig om wijzigingen in AEM te detecteren, te gebruiken (openen), te bewerken en op te slaan, en om nieuwe bestanden te uploaden. | Win- of Mac-bureaublad; Creative Cloud-apps |
@@ -38,7 +37,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Waardevoorstel voor de betreffende personen | Adobe-aanbieding | Betrokken oppervlakken |
 |---|---|---|
 | Creatieve gebruikers ontdekken elementen van AEM, openen en gebruiken deze, bewerken en uploaden wijzigingen in AEM en uploaden nieuwe bestanden naar AEM zonder Creative Cloud-apps te verlaten. | [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator en InDesign |
-| Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in AEM en het uploaden van nieuwe bestanden naar AEM vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [Bureaubladapp AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Desktop-app AEM op Windows- en Mac-bureaublad |
+| Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in AEM en het uploaden van nieuwe bestanden naar AEM vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Desktop-app AEM op Windows- en Mac-bureaublad |
 | Marketers en zakelijke gebruikers detecteren, voorvertonen, licentiëren en opslaan, en beheren de Adobe Stock-middelen vanuit AEM. Gelicentieerde en opgeslagen middelen bieden geselecteerde Adobe Stock-metagegevens voor beter beheer. | [Integratie van Experience Manager en Adobe Stock](aem-assets-adobe-stock.md) | AEM webinterface |
 
 Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en sourcing van assets op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternatieve oplossingen zoals [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html), oplossingen die kunnen worden gebouwd op basis van componenten van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](share-assets.md), met behulp van de [AEM Assets-interface](/help/assets/manage-digital-assets.md) moeten worden gecontroleerd op basis van een specifieke vereiste.
