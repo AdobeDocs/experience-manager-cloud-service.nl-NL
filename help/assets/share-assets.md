@@ -3,9 +3,9 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt binnen Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Desktop-app** AEM: De app werkt op Windows en Mac. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die AEM gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Desktop-app** AEM: De app werkt op Windows en Mac. Zie Overzicht [van de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)bureaubladtoepassing. Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang hebben tot de gedeelde elementen, raadpleegt u de elementen [](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)Bladeren, Zoeken en Voorvertonen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die AEM gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie Elementen [uploaden met de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe-elementkoppeling**: De creatieve professionals kunnen rechtstreeks vanuit Adobe InDesign, Adobe Illustrator en Adobe Photoshop zoeken en middelen gebruiken.
 
@@ -167,7 +167,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden bureaubladacties genoemd en om deze in te schakelen, raadpleegt u bureaubladacties [inschakelen in AEM webinterface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Vanuit de gebruikersinterface Middelen in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden bureaubladacties genoemd en om deze in te schakelen, raadpleegt u bureaubladacties [inschakelen in AEM webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Desktophandelingen als sneltoets gebruiken bij het werken met de bureaubladtoepassing](assets/enable_desktop_actions.png)
 
