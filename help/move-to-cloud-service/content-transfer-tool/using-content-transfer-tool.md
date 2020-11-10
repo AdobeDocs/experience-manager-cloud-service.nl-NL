@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
 
+* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Het *proces van de Extractie* kopieert het volledige `/home` in de migratiereeks en het proces van de *Opname* kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien.
+
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
 * Na de voltooiing van de fase van de *Extractie* van het proces van de inhoudoverdracht en alvorens de Fase *van de* Opname te beginnen om inhoud in uw AEM in te voeren als de instanties van het *Stadium* of van de *Productie* van de Cloud Service, zult u een steunkaartje moeten registreren om Adobe van uw voornemen te melden om *Ingestie* ** in werking te stellen zodat Adobe ervoor kan zorgen dat geen onderbrekingen tijdens het proces onder de Ingestie voorkomt. U zult het steunkaartje 1 week vóór uw geplande datum van de *Ingestie* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
@@ -49,6 +51,7 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
