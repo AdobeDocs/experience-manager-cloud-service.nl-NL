@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Elementen beheren in [!DNL Assets].'
 description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 2%
 
 ---
@@ -78,7 +78,7 @@ U kunt ook `Location: Adobe Stock` [!DNL Adobe Stock] in de zoekbalk typen om el
 
 ![Zoekfilters in Experience Manager en gemarkeerde Adobe Stock-elementen in zoekresultaten](assets/aem-search-filters2.jpg)
 
-*Afbeelding: Zoekfilters in[!DNL Experience Manager]en gemarkeerde[!DNL Adobe Stock]elementen in zoekresultaten.*
+*Afbeelding: Zoekfilters in [!DNL Experience Manager] en gemarkeerde [!DNL Adobe Stock] elementen in zoekresultaten.*
 
 ### De vereiste elementen opslaan en weergeven {#saveassets}
 
@@ -96,7 +96,7 @@ Gebruikers kunnen [!DNL Adobe Stock] middelen in licentie geven met behulp van h
 
 ![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in Experience Manager Assets](assets/aem-stock_licenseandsave.jpg)
 
-*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van[!DNL Adobe Stock]middelen in[!DNL Experience Manager Assets].*
+*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van [!DNL Adobe Stock] middelen in [!DNL Experience Manager Assets].*
 
 ### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
@@ -118,7 +118,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 >[!MORELIKETHIS]
 >
->* [Videozelfstudie over het gebruik van Adobe Stock-elementen met Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Videozelfstudie over het gebruik van Adobe Stock-elementen met Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock Enterprise Plan Help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
