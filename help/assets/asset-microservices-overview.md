@@ -3,9 +3,9 @@ title: Elementen verwerken met behulp van asset microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,6 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkfl
 >* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
 >* [Ondersteunde bestandsindelingen](file-format-support.md)
 >* [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Bureaubladapp AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Apache Oak-documentatie over directe binaire toegang](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
