@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Met Experience Manager kunnen de volgende verwerkingsniveaus worden toegepast.
 |---|---|---|
 | [Standaardconfiguratie](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt de mogelijkheid voor het genereren van zeer eenvoudige vertoningen. | <ul> <li>Standaardminiaturen die door de [!DNL Assets] gebruikersinterface worden gebruikt (48, 140 en 319 pixels) </li> <li> Grote voorvertoning (webuitvoering, 1280 pixels) </li><li> Metagegevens en tekstextractie.</li></ul> |
 | [Aangepaste configuratie](#standard-config) | Gevormd door beheerders via gebruikersinterface. Biedt meer opties voor het genereren van vertoningen door de standaardoptie uit te breiden. De optie voor het uit-van-de-doos uitbreiden voor verschillende indelingen en uitvoeringen. | <ul><li>FPO-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
-| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om de Dienst van de Compute van [Activa te roepen](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
+| [Aangepast profiel](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om de Dienst [van de](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)Asset compute te roepen. Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie de [toegestane gebruiksgevallen](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Aangepast profiel en gebruik hoofdletters en kleine letters {#custom-config}
 
-De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen, zoals standaardverwerking, verwerking van Adobe-specifieke indelingen zoals Photoshop-bestanden en implementatie van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als deze verwerkingsopties niet aan de bedrijfsbehoeften voldoen, raadt Adobe aan de standaardmogelijkheden te ontwikkelen en [!DNL Asset Compute Service] te gebruiken. Voor een overzicht, zie [begrip rekbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
+De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen, zoals standaardverwerking, verwerking van Adobe-specifieke indelingen zoals Photoshop-bestanden en implementatie van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als deze verwerkingsopties niet aan de bedrijfsbehoeften voldoen, raadt Adobe aan de standaardmogelijkheden te ontwikkelen en [!DNL Asset Compute Service] te gebruiken. Voor een overzicht, zie [begrip rekbaarheid en wanneer om het](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ De toepassing [!DNL Asset Compute Service] ondersteunt diverse gebruiksgevallen,
 
 Het kan beeld, video, document, en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst en meta-gegevens, en archieven omzetten.
 
-Ontwikkelaars kunnen het programma gebruiken [!DNL Asset Compute Service] om aangepaste toepassingen [te](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) maken die op de ondersteunde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
+Ontwikkelaars kunnen het programma gebruiken [!DNL Asset Compute Service] om aangepaste toepassingen [te](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) maken die op de ondersteunde gebruiksgevallen zijn afgestemd. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
 * Gebruik [!DNL Adobe Photoshop]de [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) en sla het resultaat op als uitvoering.
 * De systemen van de derde vraag om gegevens, bijvoorbeeld, een PIM systeem bij te werken.
@@ -128,8 +128,8 @@ Ga als volgt te werk om een aangepast profiel te maken:
 1. Geef de volgende informatie op.
 
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
-   * [Eindpunt-URL van een Firefly-aangepaste app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
-   * Voeg de Parameters van de Dienst toe om extra informatie of parameters [tot de douanetoepassing](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)over te gaan.
+   * [Eindpunt-URL van een Firefly-aangepaste app](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
+   * Voeg de Parameters van de Dienst toe om extra informatie of parameters [tot de douanetoepassing](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)over te gaan.
    * MIME-typen zijn opgenomen en uitgesloten om de verwerking te beperken tot een paar specifieke bestandsindelingen.
 
    Klik op **[!UICONTROL Save]**.
@@ -144,7 +144,7 @@ De aangepaste toepassingen zijn toepassingen zonder hoofd voor [probleemloze](ht
 
 Als u het gebruik van een aangepast profiel wilt illustreren, kunt u het beste een kwestie-case gebruiken om aangepaste tekst toe te passen op campagneafbeeldingen. U kunt een verwerkingsprofiel maken dat de Photoshop API gebruikt om de afbeeldingen te bewerken.
 
-Dankzij de integratie van Asset Compute Service kan Experience Manager deze parameters aan de aangepaste toepassing doorgeven met behulp van het [!UICONTROL Service Parameters] veld. De aangepaste toepassing roept vervolgens de Photoshop API aan en geeft deze waarden door aan de API. U kunt bijvoorbeeld lettertypenaam, tekstkleur, tekstdikte en tekstgrootte doorgeven om aangepaste tekst toe te voegen aan campagneafbeeldingen.
+De integratie van de Dienst van de asset compute staat Experience Manager toe om deze parameters tot de douanetoepassing over te gaan gebruikend het [!UICONTROL Service Parameters] gebied. De aangepaste toepassing roept vervolgens de Photoshop API aan en geeft deze waarden door aan de API. U kunt bijvoorbeeld lettertypenaam, tekstkleur, tekstdikte en tekstgrootte doorgeven om aangepaste tekst toe te voegen aan campagneafbeeldingen.
 
 ![aangepast verwerkingsprofiel](assets/custom-processing-profile.png)
 
@@ -224,9 +224,9 @@ Zie [workflowstappen in de naverwerkingsworkflow](developer-reference-material-a
 
 >[!MORELIKETHIS]
 >
->* [Inleiding tot Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
->* [Begrijp uitbreidbaarheid en wanneer om het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
->* [Aangepaste toepassingen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)maken.
+>* [Inleiding tot Asset compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
+>* [Begrijp uitbreidbaarheid en wanneer om het](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)te gebruiken.
+>* [Aangepaste toepassingen](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)maken.
 >* [Ondersteunde MIME-typen voor verschillende gebruiksgevallen](/help/assets/file-format-support.md).
 
 
