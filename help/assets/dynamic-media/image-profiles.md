@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak dynamische afbeeldingsprofielen voor media die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten en pas het profiel vervolgens toe op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2669'
 ht-degree: 8%
 
 ---
@@ -195,7 +195,7 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 Zie ook Het slimme uitsnijdstaal of het slimme staal [bewerken van meerdere afbeeldingen](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Het slimme uitsnijdstaal of het slimme staal van één afbeelding** bewerken:
+**Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken**
 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 
@@ -209,6 +209,7 @@ Zie ook Het slimme uitsnijdstaal of het slimme staal [bewerken van meerdere afbe
    * Sleep in de afbeelding een hoekgreep om de grootte van het zichtbare gebied van het uitsnijden of staal aan te passen.
    * Sleep het vak of het staal in de afbeelding naar een nieuwe locatie. U kunt alleen afbeeldingsstalen bewerken; kleurstalen zijn statisch.
    * Tik boven de afbeelding **[!UICONTROL Revert]** om alle bewerkingen ongedaan te maken en het oorspronkelijke uitsnijd of staal te herstellen.
+   * Gebruik de pijltoetsen op het toetsenbord om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens **[!UICONTROL Close]** om terug te keren naar de map met middelen.
 
@@ -220,7 +221,7 @@ Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorg
 
 Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieuw te genereren.
 
-**Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen** bewerken:
+**De slimme uitsnijding of het slimme staal van meerdere afbeeldingen bewerken**
 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]**, en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 1. Tik in de map op het pictogram **[!UICONTROL More Actions]** (...) en tik vervolgens op **[!UICONTROL Smart Crop]**.
