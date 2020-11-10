@@ -3,9 +3,9 @@ title: Elementen downloaden
 description: Met Elementen downloaden kunt u [!DNL Adobe Experience Manager Assets] de downloadfunctionaliteit in- of uitschakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -26,16 +26,16 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 * [Gebruikersinterface Experience Manager](#download-in-aem)
 * Gebruikersinterface voor het delen van elementen
 * [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Desktop-app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Elementen downloaden via AEM interface {#download-in-aem}
 
-De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. De grote bestanden worden asynchroon gedownload en gebruikers worden via meldingen via Experience Managers in het Postvak IN op de hoogte gebracht van het invullen. Zie [Experience Manager inbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)begrijpen.
+De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. De grote bestanden worden asynchroon gedownload en gebruikers worden via meldingen via Experience Managers in het Postvak IN op de hoogte gebracht van het invullen. Zie [Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)begrijpen.
 
 ![Melding downloaden](assets/download-notification.png)
 
-*Afbeelding: Melding downloaden via[!DNL Experience Manager]Postvak IN.*
+*Afbeelding: Melding downloaden via [!DNL Experience Manager] Postvak IN.*
 
 Asynchrone downloads worden in een van de volgende gevallen geactiveerd:
 
@@ -86,7 +86,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experience Manager] publicatie-instantie door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie geef de `dispatcher.any` configuratie uit en voeg een nieuwe regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe.
+1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie geef de `dispatcher.any` configuratie uit en voeg een nieuwe regel aan de [filtersectie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)toe.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
