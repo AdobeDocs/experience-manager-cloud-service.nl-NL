@@ -2,10 +2,10 @@
 title: Opvallende wijzigingen in Adobe Experience Manager Assets als Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager Assets in AEM Cloud Service in vergelijking met Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 8%
+source-wordcount: '619'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,7 @@ De belangrijkste verschillen ten opzichte van Experience Manager 6.5 zijn op de 
 >* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
 >* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
 >* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Inname en uploaden van bedrijfsmiddelen {#asset-ingestion}
