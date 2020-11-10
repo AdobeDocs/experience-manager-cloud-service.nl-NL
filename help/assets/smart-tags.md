@@ -3,9 +3,9 @@ title: Afbeeldingen automatisch labelen met door AI gegenereerde tags
 description: Tags toewijzen aan afbeeldingen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende [!DNL Adobe Sensei] bedrijfstags toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2362'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Verbeterde slimme tags zijn gebaseerd op leermodellen van merkafbeeldingen en hu
 
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
 * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
-* Tags worden ondersteund in de landinstellingen waarin AEM wordt ondersteund. Zie Opmerkingen bij de release [Slimme tags voor een lijst met talen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* Tags worden ondersteund in de talen die Experience Manager ondersteunt. Zie Opmerkingen bij de release [Smart Content Service voor een lijst met talen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de opdracht Middelen zoeken (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 
