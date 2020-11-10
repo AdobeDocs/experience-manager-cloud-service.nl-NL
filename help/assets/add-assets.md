@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan [!DNL Adobe Experience Manager].
 description: Voeg uw digitale elementen toe [!DNL Adobe Experience Manager] aan een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet
 Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een geneste maphiërarchie op schijf bevinden, kunt u de volgende methoden gebruiken:
 
 * Gebruik een aangepast uploadscript of een aangepast gereedschap dat gebruik maakt van API&#39;s voor het uploaden van [elementen](developer-reference-material-apis.md#asset-upload-technical). Een dergelijk aangepast gereedschap kan indien nodig extra elementen verwerken (bijvoorbeeld metagegevens vertalen of de naam van bestanden wijzigen).
-* Gebruik de bureaubladtoepassing [van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager om geneste maphiërarchieën te uploaden.
+* Gebruik de bureaubladtoepassing [van de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) Experience Manager om geneste maphiërarchieën te uploaden.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Als u een groter aantal bestanden wilt uploaden, vooral als deze zich in een gen
 Naast de gebruikersinterface van de webbrowser ondersteunt Experience Manager andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot middelen van [!DNL Experience Manager] Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document [!DNL Experience Manager] rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden vanuit deze bureaubladtoepassingen.
-* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op het bureaublad, onafhankelijk van het bestandstype of de native toepassing waarin deze worden verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
+* [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op het bureaublad, onafhankelijk van het bestandstype of de native toepassing waarin deze worden verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Aanvullende verwerking {#additional-processing}
 
@@ -171,7 +171,7 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technische referentie voor het uploaden van bedrijfsmiddelen](developer-reference-material-apis.md#asset-upload-technical)
