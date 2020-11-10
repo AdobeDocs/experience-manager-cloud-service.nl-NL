@@ -2,9 +2,9 @@
 title: Carousel-banners
 description: Leer hoe u met carrouselbanners werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4521'
+source-wordcount: '4536'
 ht-degree: 4%
 
 ---
@@ -273,7 +273,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
    * Voor hotspots: Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven.
    * Voor afbeeldingen met hyperlinks: Klik in de afbeelding en sleep van linksboven naar rechtsonder om het gebied met de afbeeldingskaart te maken. U kunt de grootte van de afbeelding met hyperlinks aanpassen door de hoeken te slepen.
 
-   Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Voeg desgewenst extra hotspots of afbeeldingen met hyperlinks toe.
+   Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Of gebruik de pijltoetsen op het toetsenbord om de positie van een geselecteerde hotspot te bepalen. Voeg desgewenst extra hotspots of afbeeldingen met hyperlinks toe.
 
    Tik op het tabblad **[!UICONTROL Actions]** om een hotspot of afbeelding met hyperlinks te verwijderen. Selecteer onder de kop **[!UICONTROL Maps & Hotspots]** in het vervolgkeuzemenu **[!UICONTROL Selected Type]** de naam van de hotspot of de afbeelding met hyperlinks die u wilt verwijderen. Tik op het pictogram **[!UICONTROL Trash]** naast het menu en tik vervolgens op **[!UICONTROL Delete]**.
 
