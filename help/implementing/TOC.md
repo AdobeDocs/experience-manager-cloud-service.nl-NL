@@ -4,10 +4,10 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 61%
+source-wordcount: '425'
+ht-degree: 59%
 
 ---
 
@@ -48,6 +48,11 @@ ht-degree: 61%
    + [Page Diff-optie](/help/implementing/developing/introduction/page-diff.md)
    + [Editor-beperkingen](/help/implementing/developing/introduction/editor-limitations.md)
    + [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md)
++ Gereedschappen voor ontwikkelaars {#developer-tools}
+   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+   + [Inhoudspakket gemaakt met insteekmodule](/help/implementing/developing/tools/maven-plugin.md)
+   + [AEM](/help/implementing/developing/tools/repo-tool.md)
+   + [CRXDE Lite gebruiken](/help/implementing/developing/tools/crxde.md)
 + Componenten en sjablonen {#components-templates}
    + [Overzicht van componenten](developing/components/overview.md)
    + [Sjablonen](developing/components/templates.md)
