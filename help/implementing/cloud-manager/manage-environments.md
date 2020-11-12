@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -87,13 +87,13 @@ Updates van werkgebied- en productieomgevingen worden automatisch door Adobe beh
 
 Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Wanneer een omgeving niet de meest recente openbaar beschikbare AEM-release uitvoert, wordt in de status op Environment Card op het Homescherm de **UPDATE-BESCHIKBAAR** weergegeven.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 De optie **Bijwerken** is beschikbaar via de **Omgevingskaart** .
 Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Update**, zoals aangetoond in hieronder figuur:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Het selecteren van deze optie zal een Manager van de Plaatsing toestaan om de pijpleiding verbonden aan dit milieu aan de recentste versie bij te werken en dan de pijpleiding uit te voeren.
 
@@ -109,7 +109,7 @@ De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieuc
 
 De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart **Omgevingen** . De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Verwijderen**, zoals in onderstaande afbeelding wordt getoond:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Selecteer Toegang **** beheren in het vervolgkeuzemenu in de **milieucaart** . U
 
 Zie Toegang [beheren tot instantie](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Auteur voor meer informatie.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Developer Console openen {#accessing-developer-console}
@@ -134,7 +134,7 @@ Alleen gebruikers met de rol Developer hebben toegang tot de **Developer Console
 Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) voor meer informatie.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u een omgeving selecteert, klikt u op **...** en selecteer **Developer Console**.
 
