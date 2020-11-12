@@ -1,18 +1,18 @@
 ---
-title: Release-aantekeningen voor de release 2020.10.0 [!DNL Adobe Experience Manager] van een Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
+title: Opmerkingen bij de huidige release [!DNL Adobe Experience Manager] voor een Cloud Service.
+description: Opmerkingen bij de huidige release [!DNL Adobe Experience Manager] voor een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 0%
+source-wordcount: '785'
+ht-degree: 1%
 
 ---
 
 
 # Opmerkingen bij de release [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.10.0 beschreven.
+In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service weergegeven.
 
 ## Releasedatum {#release-date}
 
@@ -60,37 +60,25 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 * De configuratiegebruikersinterface van de CIF-cloud gaf de knoppen &quot;Opslaan en sluiten&quot; weer voor configuraties in /lib en /apps/. Maar dit zijn alleen-lezen; de gebruikersinterface is daarom alleen geschikt voor het weergeven van de knop Sluiten.
 
+
 ## Cloud Manager {#cloud-manager}
 
-* De pagina Omgevingen is opnieuw ontworpen.
+### Releasedatum {#release-date-cm}
 
-* In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.11.0 is 12 november 2020.
 
-* De buildcontainer van Cloud Manager ondersteunt nu het compileren van projecten met behulp van Java 8 of Java 11. Ondersteuning voor Java 11 wordt geleverd door het Maven-toolketensysteem.
+### Wat is er nieuw?{#what-is-new}
 
-* Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
+* Een nieuwe menuoptie **Lokale aanmelding** is nu beschikbaar voor gebruikers via de opties in het menu Omgeving op de pagina&#39;s Environment Card en Environmental Summary.
 
-* De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de knop Alles **** tonen selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
-Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
+* Het tabblad **Leren** in Cloud Manager is vernieuwd en bevat nieuwe afbeeldingen in de gebruikersinterface.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* De koppeling van Cloud Manager naar de Developer Console was onjuist actief voordat omgevingen volledig werden gemaakt.
-
-* De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager gaf de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer.
-
-* De knoppen Annuleren en Opslaan op de pagina Bewerken zonder productiepijplijn zijn niet altijd zichtbaar.
-
-* Bepaalde fouten in het proces van de codekwaliteit kunnen ertoe leiden dat het logbestand niet correct wordt gegenereerd.
-
-* Bij het maken van een nieuw programma retourneert de voorgestelde naam soms een duplicaat van een bestaande programmanaam.
-
-* Sommige logboeken van grote pijpleidingsstappen konden niet constant door het gebruikersinterface worden gedownload.
-
-* De validatie van omgevingsnamen had een off-by-one fout.
-
-* Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
-
+* Voor het laden van afhankelijkheden die zijn uitgevoerd voordat de build werd uitgevoerd, moest een Maven-plug-in worden gedownload.
+* Met de koppeling in de voettekst van Cloud Manager om een taal te selecteren, gaat u nu naar de juiste locatie.
+* Soms wordt tijdens het scannen van code het SonarQube-proces niet gestart. Dit wordt nu automatisch gedetecteerd en er wordt geprobeerd opnieuw te starten.
+* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
