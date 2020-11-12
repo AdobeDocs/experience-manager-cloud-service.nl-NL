@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '880'
 ht-degree: 6%
 
 ---
@@ -137,4 +137,14 @@ Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe
 ![](assets/environ-dev-console.png)
 
 Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u een omgeving selecteert, klikt u op **...** en selecteer **Developer Console**.
+
+## Lokaal aanmelden {#login-locally}
+
+Selecteer **Lokale aanmelding** in het vervolgkeuzemenu van de **milieueffectkaart** om u lokaal aan te melden bij Adobe Experience Manager
+
+![](assets/environ-login-locally.png)
+
+Bovendien kunt u zich lokaal aanmelden via de overzichtspagina **voor omgevingen** .
+
+![](assets/environ-login-locally-2.png)
 
