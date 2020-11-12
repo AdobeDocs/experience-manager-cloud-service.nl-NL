@@ -2,9 +2,9 @@
 title: Release-aantekeningen voor de release 2020.10.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: f0ac4b511fefa0bcde8d59c416da638941cd52ad
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.10.0 beschreven.
 
 ## Cloud Manager {#cloud-manager}
+
+### Releasedatum {#release-date-cm}
+
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 20 oktober 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * De pagina Omgevingen is opnieuw ontworpen.
 
@@ -44,4 +50,3 @@ Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#v
 * De validatie van omgevingsnamen had een off-by-one fout.
 
 * Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
-
