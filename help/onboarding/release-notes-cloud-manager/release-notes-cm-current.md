@@ -1,53 +1,34 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.11.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.11.0
 translation-type: tm+mt
-source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
+source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.10.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.11.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.10.0.
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.11.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 1 oktober 2020.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.11.0 is 12 november 2020.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Wat is er nieuw?{#what-is-new}
 
-* De pagina Omgevingen is opnieuw ontworpen.
+* Een nieuwe menuoptie **Login plaatselijk** is nu beschikbaar aan gebruikers van de milieu menuopties op de kaart van het Milieu en de pagina&#39;s van het Overzicht van Milieu.
 
-* In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
-
-* De buildcontainer van Cloud Manager ondersteunt nu het compileren van projecten met behulp van Java 8 of Java 11. Ondersteuning voor Java 11 wordt geleverd door het Maven-toolketensysteem.
-
-* Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
-
-* De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de knop Alles **** tonen selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
-Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
-
+* Het tabblad **Leren** in Cloud Manager is vernieuwd en bevat nieuwe afbeeldingen in de gebruikersinterface
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* De koppeling van Cloud Manager naar de Developer Console was onjuist actief voordat omgevingen volledig werden gemaakt.
-
-* De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager gaf de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer.
-
-* De knoppen Annuleren en Opslaan op de pagina Bewerken zonder productiepijplijn zijn niet altijd zichtbaar.
-
-* Bepaalde fouten in het proces van de codekwaliteit kunnen ertoe leiden dat het logbestand niet correct wordt gegenereerd.
-
-* Bij het maken van een nieuw programma retourneert de voorgestelde naam soms een duplicaat van een bestaande programmanaam.
-
-* Sommige logboeken van grote pijpleidingsstappen konden niet constant door het gebruikersinterface worden gedownload.
-
-* De validatie van omgevingsnamen had een off-by-one fout.
-
-* Op de pagina Milieu&#39;s worden soms publicatie- en verzendingssegmenten weergegeven wanneer er geen aanwezig was.
+* Voor het laden van afhankelijkheden die zijn uitgevoerd voordat de build werd uitgevoerd, moest een Maven-plug-in worden gedownload.
+* Met de koppeling in de voettekst van Cloud Manager om een taal te selecteren, gaat u nu naar de juiste locatie.
+* Soms wordt tijdens het scannen van code het SonarQube-proces niet gestart. Dit wordt nu automatisch gedetecteerd en er wordt geprobeerd opnieuw te starten.
+* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
