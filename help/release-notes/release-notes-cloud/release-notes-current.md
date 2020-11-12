@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor de release 2020.10.0 [!DNL Adobe Experience Manager] van een Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 11df1136cbfca9237ead417cacca4049e2f35b4d
+source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 {#release-notes}
+# Opmerkingen bij de release [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release [!DNL Experience Manager] als Cloud Service 2020.10.0 beschreven.
 
