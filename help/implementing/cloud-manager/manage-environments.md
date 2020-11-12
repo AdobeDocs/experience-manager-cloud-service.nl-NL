@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -140,7 +140,7 @@ Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** k
 
 ## Lokaal aanmelden {#login-locally}
 
-Selecteer **Lokale aanmelding** in het vervolgkeuzemenu van de **milieueffectkaart** om u lokaal aan te melden bij Adobe Experience Manager
+Selecteer **Lokale aanmelding** in het vervolgkeuzemenu in de **milieucaart** om u lokaal aan te melden bij Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
