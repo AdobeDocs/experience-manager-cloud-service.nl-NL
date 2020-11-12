@@ -2,7 +2,7 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Na de voltooiing van de fase van de *Extractie* van het proces van de inhoudoverdracht en alvorens de Fase *van de* Opname te beginnen om inhoud in uw AEM in te voeren als de instanties van het *Stadium* of van de *Productie* van de Cloud Service, zult u een steunkaartje moeten registreren om Adobe van uw voornemen te melden om *Ingestie* ** in werking te stellen zodat Adobe ervoor kan zorgen dat geen onderbrekingen tijdens het proces onder de Ingestie voorkomt. U zult het steunkaartje 1 week vóór uw geplande datum van de *Ingestie* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
    * Logboek een steunkaartje met de volgende details:
-   1. De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de fase van de *Ingestie* te beginnen.
-   2. Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
-   3. Programma-id
+      * De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de fase van de *Ingestie* te beginnen.
+      * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
+      * Programma-id.
 
 * In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
 
