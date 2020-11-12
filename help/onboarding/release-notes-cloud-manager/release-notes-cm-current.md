@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.11.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.11.0
 translation-type: tm+mt
-source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '186'
 ht-degree: 2%
 
 ---
@@ -23,6 +23,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.11.0 is 12 nove
 ### Wat is er nieuw?{#what-is-new}
 
 * Een nieuwe menuoptie **Lokale aanmelding** is nu beschikbaar voor gebruikers via de opties in het menu Omgeving op de pagina&#39;s Environment Card en Environmental Summary.
+Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md##login-locally) beheren voor meer informatie.
 
 * Het tabblad **Leren** in Cloud Manager is vernieuwd en bevat nieuwe afbeeldingen in de gebruikersinterface.
 
