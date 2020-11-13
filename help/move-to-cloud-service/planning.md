@@ -2,10 +2,10 @@
 title: Planningsfase
 description: Planningsfase
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ De eerste stap in de planningsfase is nagaan in welke mate u bereid bent om van 
 
 U dient uw huidige AEM-broncode uitvoerig te controleren op alle belangrijke wijzigingen en verouderde functies om te bepalen hoeveel werk nodig is voor het overgangstraject.
 
-U kunt de evaluatiestap versnellen door de Cloud Readiness Analyzer (CRA) uit te voeren op uw huidige AEM. Voor meer details verwijs naar [CRA Overzicht](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html).
+U kunt de beoordelingsstap versnellen door de Analysator van Beste praktijken op uw huidige AEM in werking te stellen. Raadpleeg de Analysator van [best practices voor meer informatie](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Als u al toegang hebt tot Cloud Manager en een Cloud Service-omgeving, wordt aangeraden dat u de huidige code uitvoert in een Cloud Manager-codekwaliteitspipeline om na te gaan welke codewijzigingen vereist zijn voor compatibiliteit met Cloud Service.
