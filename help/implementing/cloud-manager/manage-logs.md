@@ -2,7 +2,7 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -28,7 +28,7 @@ Of op de pagina **Omgevingen** :
 ![](assets/download-logs2.png)
 
 
-## Logbestanden via API {#logs-thorugh-api}
+## Logbestanden via API {#logs-through-api}
 
 Naast het downloaden van logboeken door UI, zullen de logboeken door API en de Interface van de Lijn van het Bevel beschikbaar zijn.
 
