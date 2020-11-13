@@ -2,7 +2,7 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart.  Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Deze bestanden kunnen worden gedownload via de gebruikersinterface van de pagina **Overzicht** .
+Deze bestanden kunnen worden gedownload via de gebruikersinterface, op de pagina **Overzicht** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Of op de pagina **Omgevingen** :
 
@@ -25,7 +25,7 @@ Of op de pagina **Omgevingen** :
 >[!NOTE]
 >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Logbestanden via API {#logs-thorugh-api}
