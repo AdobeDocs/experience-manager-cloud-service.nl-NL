@@ -3,7 +3,7 @@ title: Afbeeldingen automatisch labelen met door AI gegenereerde tags
 description: Tags toewijzen aan afbeeldingen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende [!DNL Adobe Sensei] bedrijfstags toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2362'
 ht-degree: 6%
@@ -154,7 +154,7 @@ Nadat u de service Slimme tags hebt opgeleid, kunt u de codeerworkflow activeren
 1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of uw elementen correct zijn gecodeerd. Zie Slimme tags [beheren voor meer informatie](#manage-smart-tags-and-searches).
 
 >[!NOTE]
-
+>
 >In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met nieuw opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows met periodieke labels worden ongewijzigde elementen gecodeerd wanneer de tijdruimte langer is dan zes maanden.
 
 ### Geüploade elementen labelen {#tag-uploaded-assets}
