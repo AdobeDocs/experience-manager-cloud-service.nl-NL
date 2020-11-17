@@ -2,9 +2,9 @@
 title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1481'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,19 @@ Op deze pagina wordt ook beschreven hoe de cachegeheugen van de verzender ongeld
 * U kunt voor alle HTML/Text-inhoud overschrijven door de `EXPIRATION_TIME` variabele te definiëren in het `global.vars` gebruik van de AEM als Dispatcher-hulpprogramma&#39;s voor Cloud Service SDK.
 * kan op een fijner korrelig niveau door de volgende richtlijnen worden met voeten getreden apache mod_headers:
 
+   ```
+   <LocationMatch "\.(html)$">
+        Header set Cache-Control "max-age=200"
+        Header set Age 0
+   </LocationMatch>
+   ```
+
+Wees voorzichtig bij het instellen van algemene cachebesturingskoppen of koppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé wilt houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, AEM als Cloud Service zal de geheim voorgeheugenkopbal verwijderen als het ontdekt dat het is toegepast op wat het ontdekt om door verzender oncacheable te zijn, zoals die in de documentatie van de verzender wordt beschreven. Als u wilt dat AEM altijd caching toepast, kunt u de optie &quot;always&quot; als volgt toevoegen:
+
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200"
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 ```
 
@@ -38,15 +48,16 @@ U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volg
 { /glob "*" /type "allow" }
 ```
 
-* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan &quot;privé&quot;. Met de volgende code wordt bijvoorbeeld voorkomen dat HTML-inhoud in een map met de naam &quot;myfolder&quot; in de cache wordt opgeslagen:
+* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan *privé*. Voorbeeld: het volgende voorkomt dat HTML-inhoud in een map met de naam **myfolder** in de cache wordt opgeslagen:
 
-```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* Merk op dat andere methodes, met inbegrip van het [verzender-ttl AEM ACSCommons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), met succes geen waarden zullen met voeten treden.
+   >[!NOTE]
+   >De andere methodes, met inbegrip van het [verzender-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), zullen met succes geen waarden met voeten treden.
 
 ### Client-Side bibliotheken (js,css) {#client-side-libraries}
 
@@ -58,11 +69,14 @@ U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` de volg
 * standaard niet in cache geplaatst
 * kan op fijner korrelig niveau worden ingesteld door de volgende `mod_headers` richtlijnen van apache:
 
-```
-<LocationMatch "^.*.jpeg$">
-    Header set Cache-Control "max-age=222"
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
+
+Zie de bespreking in de html/tekstsectie hierboven voor het uitoefenen van voorzichtigheid om niet te wijd in het voorgeheugen onder te brengen en ook hoe te om AEM te dwingen altijd caching met de &quot;altijd&quot;optie toe te passen.
 
 U moet ervoor zorgen dat een bestand onder src/conf.dispatcher.d/cache de volgende regel heeft (in de standaardconfiguratie):
 
@@ -73,7 +87,8 @@ U moet ervoor zorgen dat een bestand onder src/conf.dispatcher.d/cache de volgen
 
 Zorg ervoor dat elementen die bedoeld zijn om privé te blijven in plaats van in cache te worden opgeslagen, geen deel uitmaken van de LocationMatch-instructiefilters.
 
-* Merk op dat andere methodes, met inbegrip van het [verzender-ttl AEM ACSCommons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), met succes geen waarden zullen met voeten treden.
+>[!NOTE]
+>De andere methodes, met inbegrip van het [verzender-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), zullen met succes geen waarden met voeten treden.
 
 ### Andere inhoudstypen in nodenarchief {#other-content}
 
