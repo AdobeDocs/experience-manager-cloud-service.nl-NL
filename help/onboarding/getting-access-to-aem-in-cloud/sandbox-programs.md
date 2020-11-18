@@ -2,9 +2,9 @@
 title: Sandbox-programma's - Cloud Service
 description: Sandbox-programma's - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ De omgevingen die in een sandbox worden gemaakt, zijn niet geconfigureerd voor a
 
 Sandbox-programma&#39;s omvatten sites en middelen en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het AEM archetype van het Project wordt gebaseerd.
 
-Verwijs naar het [Begrip van Programma&#39;s en de Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) van Programma om meer over de Types van Programma te leren.
+Verwijs naar het [Begrip van Programma&#39;s en de Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) van Programma om meer over de Types van Programma te leren.
 
 ### Attributen van Sandbox-programma&#39;s {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ Sandbox-programma&#39;s hebben de volgende kenmerken:
 
 Met een wizard voor het maken van programma&#39;s kunt u een Sandbox-programma maken.
 
-Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar het [Creëren van een Programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) Sandbox voor meer details.
+Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar het [Creëren van een Programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) Sandbox voor meer details.
 
 ### Sandbox-omgevingen maken {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ Sandbox-programma&#39;s worden automatisch in een ontwikkelomgeving geleverd op 
 
 De productie-Stadium milieureeks kan manueel aan het Programma van Sandbox worden toegevoegd, wanneer de gebruiker aan opstelling een productiepijplijn klaar is.
 
-Raadpleeg [Omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) toevoegen voor meer informatie over het handmatig maken van een omgeving.
+Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md) toevoegen voor meer informatie over het handmatig maken van een omgeving.
 
 ### Sandbox-omgevingen verwijderen {#deleting-sandbox-environments}
 
 Gebruiker met de vereiste machtigingen kan een ontwikkelings- of productie-/werkgebiedomgeving of -sets verwijderen.
 
-Als u een omgeving wilt verwijderen, raadpleegt u [Verwijderen van omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) voor meer informatie.
+Als u een omgeving wilt verwijderen, raadpleegt u [Verwijderen van omgevingen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) voor meer informatie.
 
 
 ## Sluiende en ontsmette zandbakomgevingen {#hibernating-introduction}
@@ -93,7 +93,7 @@ U kunt uw Sandbox-programma handmatig op twee verschillende manieren via de Deve
 Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te hiberneren:
 
 1. Navigeer naar de **Developer Console**.
-Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
+Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
    >[!IMPORTANT]
    >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
 
@@ -119,7 +119,7 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 ### De-hibernatie {#de-hibernation-introduction}
 
 1. Navigeer naar de **Developer Console**.
-Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
+Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
 
    >[!IMPORTANT]
    >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet deïnstalleren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
@@ -157,8 +157,6 @@ Raadpleeg [Developer Console](https://docs.adobe.com/content/help/en/experience-
 
 Elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service, moet toegang hebben tot de **ontwikkelaarsconsole**, zodat hij of zij de omgeving kan dehiberneren.
 
-Raadpleeg Gebruikers en rollen [](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) toevoegen in Cloud Manager voor informatie over het instellen van gebruikersmachtigingen.
-
 #### Een gedownloade omgeving openen {#accessing-hibernated-environment}
 
 Wanneer de gebruiker om het even welke browser verzoeken tegen of de auteur of publicatielaag van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu beschrijft, zoals aangetoond in het hieronder cijfer beschrijft:
@@ -178,11 +176,11 @@ Weinig belangrijke overwegingen met betrekking tot gehiberneerde en gedeshiberne
 
 ## Updates AEM voor sandboxomgevingen {#aem-updates-sandbox}
 
-Raadpleeg [AEM versie-updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) voor meer informatie.
+Raadpleeg [AEM versie-updates](/help/implementing/deploying/overview.md#version-updates) voor meer informatie.
 
 Een gebruiker kan handmatig AEM updates toepassen op de omgevingen in een Sandbox-programma.
 
-Raadpleeg [Bijgewerkt omgeving](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
+Raadpleeg [Bijgewerkt omgeving](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
 
 >[!NOTE]
 >* Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
