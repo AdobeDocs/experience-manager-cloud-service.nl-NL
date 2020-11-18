@@ -2,7 +2,7 @@
 title: Sandbox-programma's - Cloud Service
 description: Sandbox-programma's - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,13 +51,13 @@ Sandbox-programma&#39;s worden automatisch in een ontwikkelomgeving geleverd op 
 
 De productie-Stadium milieureeks kan manueel aan het Programma van Sandbox worden toegevoegd, wanneer de gebruiker aan opstelling een productiepijplijn klaar is.
 
-Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md) toevoegen voor meer informatie over het handmatig maken van een omgeving.
+Raadpleeg [Omgeving](/help/implementing/cloud-manager/manage-environments.md) toevoegen voor meer informatie over het handmatig maken van een omgeving.
 
 ### Sandbox-omgevingen verwijderen {#deleting-sandbox-environments}
 
 Gebruiker met de vereiste machtigingen kan een ontwikkelings- of productie-/werkgebiedomgeving of -sets verwijderen.
 
-Als u een omgeving wilt verwijderen, raadpleegt u [Verwijderen van omgevingen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) voor meer informatie.
+Als u een omgeving wilt verwijderen, raadpleegt u [Omgeving](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) verwijderen voor meer informatie.
 
 
 ## Sluiende en ontsmette zandbakomgevingen {#hibernating-introduction}
@@ -176,7 +176,7 @@ Weinig belangrijke overwegingen met betrekking tot gehiberneerde en gedeshiberne
 
 ## Updates AEM voor sandboxomgevingen {#aem-updates-sandbox}
 
-Raadpleeg [AEM versie-updates](/help/implementing/deploying/overview.md#version-updates) voor meer informatie.
+Raadpleeg [AEM versie-updates](/help/implementing/deploying/aem-version-updates.md) voor meer informatie.
 
 Een gebruiker kan handmatig AEM updates toepassen op de omgevingen in een Sandbox-programma.
 
