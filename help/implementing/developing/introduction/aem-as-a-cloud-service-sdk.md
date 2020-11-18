@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: Een overzicht van de AEM als Cloud Service Software Development Kit
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,17 @@ Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werd
 
 * **6.5 Verouderde Java API Jar** - een extra reeks interfaces die sinds AEM 6.5 zijn verwijderd
 * **6.5 Vervangen Javadoc Jar** - de JavaDocs voor de extra reeks verbonden documenten
+
+## Samenstellen voor de SDK {#building-for-the-sdk}
+
+De AEM als Cloud Service SDK wordt gebruikt om douanecode te bouwen en op te stellen. Raadpleeg de documentatie bij [Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)AEM voor meer informatie. Op een hoog niveau worden de volgende stappen uitgevoerd:
+
+* **Compileer code**. Zoals verwacht, wordt de broncode gecompileerd die de resulterende inhoudspakketten produceert
+* **Artefacten** maken. Tijdens dit proces worden artefacten gemaakt
+* **Analysebundels**. Bundels worden geanalyseerd met de Maven analyzer plug-in, die zoekt naar problemen in het Maven-project, zoals ontbrekende afhankelijkheden
+* **Artefacten** implementeren. Artefacten worden opgesteld aan de lokale server.
+
+Dezelfde stappen worden uitgevoerd door Cloud Manager bij de implementatie naar Cloud-omgevingen. Door het lokaal uitvoeren van builds kunnen lokale ontwikkelings- en testprocessen worden uitgevoerd, zodat ontwikkelaars code- of structuurproblemen efficiënt kunnen detecteren voordat ze de broncontrole vastleggen en de implementatie van Cloud Manager activeren. Dit kan langer duren.
 
 ## Toegang tot de AEM als Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
