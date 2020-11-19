@@ -2,9 +2,9 @@
 title: OSGi configureren voor AEM as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
+source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2737'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers b
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
-De veranderingen van de configuratie worden bepaald in de codepakketten (`ui.apps`) van het Project AEM als configuratiedossiers (`.cfg.json`) onder runtime specifieke config omslagen:
+De veranderingen van de configuratie worden bepaald in de de codepakketten van het AEM Project (`ui.apps`) als configuratiedossiers (`.cfg.json`) onder runtime specifieke config omslagen:
 
 `/apps/example/config.<runmode>`
 
@@ -38,11 +38,11 @@ volgend op de configuratie-indeling cfg.json OSGi.
 
 >[!NOTE]
 >
->Eerdere versies van AEM ondersteunden OSGi configuratiedossiers gebruikend verschillende dossierformaten zoals .cfg., .config en als het sling van XML:OsgiConfig middeldefinities. Deze formaten worden vervangen door het cfg.json OSGi configuratieformaat.
+>Eerdere versies van AEM ondersteunde OSGi-configuratiebestanden die verschillende bestandsindelingen gebruiken, zoals .cfg., .config en als XML sling:OsgiConfig-brondefinities. Deze formaten worden vervangen door het cfg.json OSGi configuratieformaat.
 
 ## Resolutie van de uitvoermodus {#runmode-resolution}
 
-De specifieke configuraties OSGi kunnen aan specifieke instanties worden gericht AEM door runmodes te gebruiken. Om runmode te gebruiken, creeer config omslagen onder `/apps/example` (waar het voorbeeld uw projectnaam is), in het formaat:
+De specifieke configuraties OSGi kunnen aan specifieke AEM instanties worden gericht door runmodes te gebruiken. Om runmode te gebruiken, creeer config omslagen onder `/apps/example` (waar het voorbeeld uw projectnaam is), in het formaat:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
@@ -116,7 +116,7 @@ Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waar
 
 ### Wanneer te gebruiken de niet geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en om het even welke AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service. Vermijd het gebruik van niet-geheime omgevingspecifieke configuraties voor AEM als Cloud Service Stage of Production omgevingen.
+Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en om het even welke AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service. Gebruik geen niet-geheime omgevingspecifieke configuraties voor AEM als werkgebied of productieomgeving voor Cloud Servicen.
 
 * Gebruik alleen niet-geheime omgevings-specifieke configuraties voor configuratiewaarden die verschillen tussen ontwikkelomgevingen, inclusief lokale ontwikkelingsinstanties.
 * In plaats daarvan, gebruik de standaard gealigneerde waarden in de configuraties OSGi voor Stadium en Productie niet-geheime waarden.  In verband hiermee wordt het niet aanbevolen om omgevingspecifieke configuraties te gebruiken om het aanbrengen van configuratiewijzigingen tijdens runtime in werkgebied- en productieomgevingen te vergemakkelijken. deze wijzigingen moeten worden ingevoerd via het beheer van de broncode .
@@ -166,11 +166,11 @@ To add a new configuration to the repository you need to know the following:
 
 ## OSGi-configuraties maken
 
-Er zijn twee manieren om nieuwe configuraties tot stand te brengen OSGi, zoals hieronder beschreven. De eerste benadering wordt typisch gebruikt voor het vormen van douaneOSGi componenten die bekende eigenschappen OSGi en waarden door de ontwikkelaar hebben, en laatstgenoemde voor AEM-Geleverde componenten OSGi.
+Er zijn twee manieren om nieuwe configuraties tot stand te brengen OSGi, zoals hieronder beschreven. De eerste benadering wordt typisch gebruikt voor het vormen van componenten van douaneOSGi die bekende eigenschappen OSGi en waarden door de ontwikkelaar, en laatstgenoemde voor AEM-verstrekte componenten OSGi hebben.
 
 ### OSGi-configuraties schrijven
 
-JSON-geformatteerde OSGi-configuratiebestanden kunnen rechtstreeks met de hand worden geschreven in het AEM-project. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
+De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM project worden geschreven. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
 
 1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben
 1. Maak een nieuw `<PID>.cfg.json` bestand in deze configuratiemap. PID is de Blijvende Identiteit van de component OSGi is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
@@ -180,11 +180,11 @@ Merk op dat OSGi de namen van de configuratiefabrieksdossiers, de noemende overe
 1. Wijzigingen opslaan in het nieuwe `.cfg.json` bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
 
-### OSGi-configuraties genereren met de AEM SDK Quickstart
+### OSGi-configuraties genereren met de AEM SDK QuickStart
 
-Met de AEM SDK QuickStart Jar&#39;s AEM Web Console kunt u OSGi-componenten configureren en OSGi-configuraties exporteren als JSON. Dit is nuttig om AEM-Geleverde componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM- project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de Console van het Web AEM `.cfg.json` dossiers in de bewaarplaats schrijft, zodat me bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
+De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt componenten OSGi, en de configuraties van export OSGi als JSON. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de AEMConsole van het Web schrijft `.cfg.json` dossiers in de bewaarplaats, zodat bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM Web-console als beheerder
+1. Meld u als beheerder aan bij de AEM webconsole van QuickStart Jar van de AEM SDK
 1. Navigeer naar OSGi > Configuratie
 1. Zoek de OSGi-component die u wilt configureren en tik op de titel die u wilt bewerken
    ![OSGi-configuratie](./assets/configuring-osgi/configuration.png)
@@ -225,7 +225,7 @@ De configuratie OSGi zou placeholder voor de variabele moeten toewijzen die best
 use $[env:ENV_VAR_NAME]
 ```
 
-Klanten dienen deze techniek alleen te gebruiken voor OSGI-configuratie-eigenschappen die gerelateerd zijn aan hun aangepaste code. mag niet worden gebruikt om de door Adobe gedefinieerde OSGI-configuratie te overschrijven.
+Klanten dienen deze techniek alleen te gebruiken voor OSGI-configuratie-eigenschappen die gerelateerd zijn aan hun aangepaste code. het zou niet moeten worden gebruikt om Adobe-bepaalde configuratie te overschrijven OSGI.
 
 ### Geheime configuratiewaarden {#secret-configuration-values}
 
@@ -269,7 +269,7 @@ Variabelen kunnen in de lokale omgeving worden gedefinieerd, zodat ze tijdens ru
 export ENV_VAR_NAME=my_value
 ```
 
-Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en om het uit te voeren alvorens AEM te beginnen. Gereedschappen zoals [https://direnv.net/](https://direnv.net/) helpen u bij het vereenvoudigen van deze aanpak. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
+Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en het uitvoeren alvorens AEM te beginnen. Gereedschappen zoals [https://direnv.net/](https://direnv.net/) helpen u bij het vereenvoudigen van deze aanpak. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
 
 De waarden voor geheimen worden gelezen uit bestanden. Daarom moet voor elke plaatsaanduiding die een geheim gebruikt, een tekstbestand met de geheime waarde worden gemaakt.
 
@@ -277,7 +277,7 @@ Als bijvoorbeeld `$[secret:server_password]` wordt gebruikt, moet een tekstbesta
 
 ### Auteur versus configuratie publiceren {#author-vs-publish-configuration}
 
-Als voor een OSGI-eigenschap andere waarden zijn vereist voor auteur en publiceren:
+Als voor een OSGI-eigenschap andere waarden zijn vereist voor auteur in plaats van publicatie:
 
 * Er moeten aparte `config.author` en `config.publish` OSGi-mappen worden gebruikt, zoals wordt beschreven in de sectie [Resolutie van](#runmode-resolution)uitvoermodus.
 * er moeten onafhankelijke variabelenamen worden gebruikt . Het wordt aanbevolen een voorvoegsel te gebruiken, bijvoorbeeld `author_<variablename>` en `publish_<variablename>` wanneer de namen van variabelen gelijk zijn
@@ -436,6 +436,11 @@ config.dev
 
 ## Cloud Manager API-indeling voor het instellen van eigenschappen {#cloud-manager-api-format-for-setting-properties}
 
+Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) over hoe API moet worden gevormd.
+>[!NOTE]
+>
+>Zorg ervoor dat de gebruikte API voor Cloud Manager de rol &quot;Deployment Manager - Cloud Service&quot; heeft toegewezen. Andere rollen kunnen niet alle onderstaande opdrachten uitvoeren.
+
 ### Waarden instellen via API {#setting-values-via-api}
 
 Het roepen van API zal de nieuwe variabelen en de waarden aan een milieu van de Wolk opstellen, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten.
@@ -513,13 +518,13 @@ Er kunnen maximaal 200 variabelen per omgeving worden gedeclareerd.
 
 ## Overwegingen bij de implementatie voor geheime en omgevingsspecifieke configuratiewaarden {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Omdat de geheime en milieu specifieke configuratiewaarden buiten Git leven, en daarom geen deel van formele AEM als mechanismen van de plaatsing van de Cloud Service uitmaken, zou de klant moeten leiden, besturen en in AEM als proces van de Cloud Service integreren plaatsing.
+Omdat de geheime en milieu specifieke configuratiewaarden buiten Git leven, en daarom geen deel van de formele AEM als mechanismen van de plaatsing van de Cloud Service uitmaken, zou de klant moeten leiden, besturen en in de AEM als proces van de Cloud Service plaatsing integreren.
 
 Zoals hierboven vermeld, zal het roepen van API de nieuwe variabelen en de waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode opstellen. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
 
 Klanten bellen de API doorgaans om omgevingsvariabelen in te stellen voordat ze code implementeren die op hen is gebaseerd in Cloud Manager. In sommige situaties, zou men een bestaande variabele kunnen willen wijzigen nadat de code reeds is opgesteld.
 
-Merk op dat API niet kan slagen wanneer een pijpleiding in gebruik is, of een update AEM of klantenplaatsing, afhankelijk van welk deel van het eind aan eind pijpleiding op dat ogenblik wordt uitgevoerd. Het antwoord op de fout geeft aan dat het verzoek niet is geslaagd, hoewel de specifieke reden niet wordt vermeld.
+Merk op dat API niet kan slagen wanneer een pijpleiding in gebruik is, of een AEM update of klantenplaatsing, afhankelijk van welk deel van het eind aan eind pijpleiding op dat ogenblik wordt uitgevoerd. Het antwoord op de fout geeft aan dat het verzoek niet is geslaagd, hoewel de specifieke reden niet wordt vermeld.
 
 Er kunnen scenario&#39;s zijn waar een geplande plaatsing van de klantencode op bestaande variabelen baseert om nieuwe waarden te hebben, die niet met de huidige code aangewezen zouden zijn. Als dit reden tot zorg is, wordt aanbevolen op additieve wijze variabele wijzigingen aan te brengen. Hiertoe maakt u nieuwe variabelenamen in plaats van alleen de waarde van oude variabelen te wijzigen zodat oude code nooit naar de nieuwe waarde verwijst. Wanneer de nieuwe versie van de klant stabiel lijkt, kunt u de oudere waarden verwijderen.
 
