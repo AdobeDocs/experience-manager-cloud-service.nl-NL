@@ -2,7 +2,7 @@
 title: Carousel-banners
 description: Leer hoe u met carrouselbanners werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
 workflow-type: tm+mt
 source-wordcount: '4536'
 ht-degree: 4%
@@ -254,8 +254,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-pr
 >[!NOTE]
 >
 >Wanneer u hotspots toevoegt aan een afbeelding in een [interactieve afbeelding](/help/assets/dynamic-media/interactive-images.md) of een carrouselbanner, worden de hotspot-gegevens opgeslagen in dezelfde metagegevenslocatie, relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
-
->Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
+Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
 Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
