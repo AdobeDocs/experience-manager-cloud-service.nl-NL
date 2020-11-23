@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige release [!DNL Adobe Experience Manager] voor een Cloud Service.
 description: Opmerkingen bij de huidige release [!DNL Adobe Experience Manager] voor een Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 * **[!DNL Adobe Asset Link]versie 2.1**: Een nieuwe versie van de uitbreiding van de Verbinding [van Activa van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Adobe voor [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign] is beschikbaar. Het voegt compatibiliteit met de meest recente [!DNL Adobe Creative Cloud] toepassingen toe met versie 2021, die in oktober 2020 is uitgebracht.
 
-* **[!DNL Assets]WebP-bestandsondersteuning**: [!DNL Assets] als Cloud Service nu de WebP-afbeeldingsindeling ondersteunt. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie [Een standaardverwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)maken.
+* **[!DNL Assets]WebP-bestandsondersteuning**: [!DNL Assets] als Cloud Service ondersteunt nu het maken van uitvoeringen in de WebP-afbeeldingsindeling. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie [Een standaardverwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)maken.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
