@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die [!DNL Experience Manager Assets] door een Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
+source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '778'
 ht-degree: 6%
 
 ---
@@ -61,6 +61,10 @@ De volgende legenda beschrijft het steunniveau.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| SVG | ✓ | - | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
 
 ## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -191,7 +195,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | QT | ✓ | - | ✓ |
 | R3D | ✓ | - | ✓ |
 | SWF | ✓ | - | ✓ |
-| WEBM | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
 ## Video-indelingen in [!DNL Dynamic Media] voor transcodering {#video-dynamic-media-transcoding}
