@@ -2,15 +2,22 @@
 title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 95%
+source-wordcount: '578'
+ht-degree: 88%
 
 ---
 
 
 # Overstappen naar AEM as a Cloud Service {#aem-moving-to-aem-guide}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="Info over Cloud AccelerManager"
+>abstract="Cloud Acceleration Manager is uw eigen persoonlijke gids gedurende het gehele proces waarbij u als Cloud Service naar AEM gaat."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Belangrijke wijzigingen in AEM Sites as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="Uw CI/CD-pijplijn configureren"
 
 ## Voordelen van de overstap naar AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
@@ -39,7 +46,7 @@ Meer informatie over de verschillende fasen van de overgang naar de Cloud Servic
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
+| [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
