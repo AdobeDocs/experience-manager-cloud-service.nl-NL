@@ -2,15 +2,21 @@
 title: Planningsfase
 description: Planningsfase
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 91%
 
 ---
 
 
 # Planning {#planning-phase}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="Overgang plannen"
+>abstract="Voordat u het overgangstraject naar Cloud Service start, moet u AEM as a Cloud Service leren kennen en op de hoogte zijn van de belangrijke recente veranderingen, zodat u weet welke functies zijn vervangen of verouderd."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analysator van best practices"
 
 Voordat u het overgangstraject naar Cloud Service start, moet u AEM as a Cloud Service leren kennen en op de hoogte zijn van de belangrijke recente veranderingen, zodat u weet welke functies zijn vervangen of verouderd.
 
