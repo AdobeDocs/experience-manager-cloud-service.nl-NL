@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Cloud-omgevingen {#cloud-environments}
 
-AEM als Cloud Service logboeken voor wolkendiensten kunnen worden betreden of door door de interface van de Manager van de Wolk te downloaden of door logboeken bij de bevellijn te hangen gebruikend de Adobe I/O bevellijninterface. Raadpleeg de logdocumentatie bij [Cloud Manager voor meer informatie](/help/implementing/cloud-manager/manage-logs.md).
+AEM als Cloud Service logboeken voor cloudservices kunnen worden geopend door het downloaden via de interface van Cloud Manager of door logbestanden op de opdrachtregel via de opdrachtregelinterface van Adobe I/O te volgen. Raadpleeg de logdocumentatie bij [Cloud Manager voor meer informatie](/help/implementing/cloud-manager/manage-logs.md).
 
 ### Lokale SDK {#local-sdk}
 
@@ -580,7 +580,7 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
