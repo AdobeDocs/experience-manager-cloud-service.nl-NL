@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.8.0.'
+description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.8.0.'
 translation-type: tm+mt
 source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Mogelijkheid om pagina&#39;s en subpagina&#39;s (paginastructuren) te [herstellen naar een eerdere versie](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Mogelijkheid om Launches [te](/help/sites-cloud/authoring/launches/overview.md) maken in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
+* Mogelijkheid om [initialen](/help/sites-cloud/authoring/launches/overview.md) te maken in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
