@@ -1,22 +1,22 @@
 ---
-title: Het gebruiken van de Verschuivende Fusie van het Middel in Adobe Experience Manager als Cloud Service
+title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager als Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Het gebruiken van de Verschuivende Fusie van het Middel in AEM als Cloud Service {#using-the-sling-resource-merger-in-aem}
+# De Sling Resource Merger in AEM as a Cloud Service gebruiken {#using-the-sling-resource-merger-in-aem}
 
 ## Doel {#purpose}
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)**van bronnen die gebruikmaken van de[zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
+* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van bronnen die gebruikmaken van de [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
 
 * **Overschrijft** de componentdialoogvensters voor de interface met aanraakbediening (`cq:dialog`) met behulp van de hiërarchie van het middeltype (via de eigenschap `sling:resourceSuperType`).
 
@@ -30,7 +30,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 
 >[!CAUTION]
 >
->De Sling Resource Merger en verwante methoden kunnen alleen worden gebruikt met de interface met aanraakbediening (de enige interface die beschikbaar is voor AEM als Cloud Service).
+>De Sling Resource Merger en verwante methodes kunnen slechts met aanraking-toegelaten UI worden gebruikt (die enige UI voor AEM als Cloud Service beschikbaar is).
 
 ### Doelen voor AEM {#goals-for-aem}
 
@@ -48,11 +48,12 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >De reden hiervoor is dat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw exemplaar worden toegepast.
 >
 >* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
+   >
+   >
+* Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
 >
->* Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
 >
->
->Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM als Cloud Service het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
+Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`, aangezien de beste praktijk in AEM als Cloud Service is aanpassingen te definiëren onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
 
 ### Eigenschappen {#properties}
 
@@ -198,6 +199,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
       * type: `String[]`
       * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen of genegeerd
+
       Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
 
