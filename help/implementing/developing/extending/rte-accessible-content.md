@@ -1,23 +1,23 @@
 ---
 title: Vorm RTE om toegankelijke Web-pagina's en plaatsen tot stand te brengen.
-description: Leer Rich Text Editor te vormen om toegankelijke sites te maken in [!DNL Adobe Experience Manager].
+description: Leer om Rich Text Editor te vormen om toegankelijke plaatsen binnen [!DNL Adobe Experience Manager]tot stand te brengen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '508'
+ht-degree: 1%
 
 ---
 
 
 # RTE configureren om toegankelijke sites te maken {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden gebruikt bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
+[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden geopend bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
 
 Voor inzicht in typische configuraties van RTE, zie [vormen RTE](rich-text-editor.md) en [vormen stop-ins RTE voor specifieke functionaliteit](configure-rich-text-editor-plug-ins.md).
 
-Gebruik de de insteekmodules van RTE configuratie om de op toegankelijkheid betrekking hebbende eigenschappen te vormen en aan te passen. U kunt bijvoorbeeld semantische elementen op blokniveau toevoegen `paraformat` om het aantal kopniveaus uit te breiden dat boven de basisniveaus wordt ondersteund `H1`, `H2` en die standaard worden `H3` verschaft. Het bewerken van tekst met opmaak is mogelijk met behulp van vele componenten uit de ontwerpgebruikersinterface. De algemeen gebruikte componenten zijn tekst, beeld, download, etc.
+Gebruik de configuratie van stop-ins van RTE om de op toegankelijkheid betrekking hebbende eigenschappen te vormen en aan te passen. U kunt bijvoorbeeld semantische elementen op blokniveau toevoegen `paraformat` om het aantal kopniveaus uit te breiden dat boven de basisniveaus wordt ondersteund `H1`, `H2` en die standaard worden `H3` verschaft. Het bewerken van tekst met opmaak is mogelijk met behulp van vele componenten uit de ontwerpgebruikersinterface. De algemeen gebruikte componenten zijn tekst, beeld, download, etc.
 
 De functionaliteit van RTE kan in vele componenten ter beschikking worden gesteld. De primaire component is de `Text` component.
 
@@ -36,7 +36,7 @@ Voor instructies om RTE te vormen, zie de Rich Text Editor [pagina](rich-text-ed
 
 Als u een aantal of alle functies voor een plug-in wilt activeren, configureert u de plug-in in de desbetreffende `rtePlugins` subvertakking in CRXDE Lite.
 
-![CRXDE Lite die een voorbeeldrtePlugin toont](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite die een voorbeeld van rtePlugin toont](assets/example-rteplugin-crxde-lite.png)
 
 ### Voorbeeld om alineaopmaak op te geven die beschikbaar is in het veld RTE-selectie {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
