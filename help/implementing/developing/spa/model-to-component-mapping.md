@@ -1,6 +1,6 @@
 ---
-title: Dynamisch model aan Component Mapping voor SPAs
-description: Dit artikel beschrijft hoe het dynamische model aan componentenafbeelding in Javascript SPA SDK voor AEM voorkomt.
+title: Dynamisch model naar componenttoewijzing voor SPA
+description: In dit artikel wordt beschreven hoe het dynamische model naar componenttoewijzing wordt uitgevoerd in de Javascript SPA SDK voor AEM.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Dynamisch model aan Component Mapping voor SPAs {#dynamic-model-to-component-mapping-for-spas}
+# Dynamisch model naar componenttoewijzing voor SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Dit document beschrijft hoe het dynamische model aan componentenafbeelding in Javascript SPA SDK voor AEM voorkomt.
+In dit document wordt beschreven hoe het dynamische model naar componenttoewijzing wordt uitgevoerd in de Javascript SPA SDK voor AEM.
 
 ## ComponentMapping-module {#componentmapping-module}
 
@@ -20,13 +20,13 @@ De `ComponentMapping` module wordt verstrekt als pakket NPM aan het front-end pr
 
 Elke punten in het model bevatten een `:type` gebied dat een AEM middeltype blootstelt. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
 
-Gelieve te verwijzen naar het document van de Blauwdruk [van het](blueprint.md) KUUROORD voor meer informatie over modelontleding en de front-end componententoegang tot het model.
+Raadpleeg het document [SPA blauwdruk](blueprint.md) voor meer informatie over modelparsering en de toegang van de front-end component tot het model.
 
 Zie ook het npm-pakket: [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
-Toepassingen van één pagina die gebruikmaken van de Javascript SPA SDK voor AEM zijn modelgestuurd:
+Toepassingen met één pagina die gebruikmaken van de Javascript SPA SDK voor AEM, worden modelgestuurd:
 
 1. De front-end componenten registreren zich aan de Opslag van de Toewijzing van de [Component](#componentmapping-module).
 1. Dan herhaalt de [Container](blueprint.md#container), zodra voorzien van een model door de [ModelLeverancier](blueprint.md#the-model-provider), over zijn modelinhoud (`:items`).
