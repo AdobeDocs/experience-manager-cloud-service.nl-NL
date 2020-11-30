@@ -1,23 +1,23 @@
 ---
-title: Metagegevens van elementen in bulk importeren en exporteren
+title: Importeer/exporteer metadata van assets bulksgewijs
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
 
-# Metagegevens van elementen in bulk importeren en exporteren {#import-and-export-asset-metadata-in-bulk}
+# Importeer/exporteer metadata van assets bulksgewijs {#import-and-export-asset-metadata-in-bulk}
 
-Met AEM-middelen kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
+Met AEM Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
 ## Metagegevens importeren {#import-metadata}
 
-De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan vanwege de terugzetactiviteit van XMP-gegevens bronintensief zijn als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege XMP schrijfactiviteit als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | Veldscheidingsteken | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
-   | Workflows starten | Standaard false. Als de standaardinstellingen voor Launcher zijn ingesteld op `true` en standaard zijn ingesteld voor de DAM Metadata WriteBack Workflow (die metagegevens naar de binaire XMP-gegevens schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
+   | Workflows starten | Standaard false. Als de standaardinstellingen voor Launcher zijn ingesteld op `true` en standaard zijn ingesteld voor de DAM Metadata WriteBack Workflow (die metagegevens naar de binaire XMP schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Tap/click **[!UICONTROL Import]** from the toolbar. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
@@ -46,7 +46,7 @@ Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegeven
 
 ## Metagegevens exporteren {#export-metadata}
 
-U kunt metada voor veelvoudige activa in een formaat CSV uitvoeren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt AEM de eigenschappen van het knooppunt Asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert de eigenschappen van de metagegevens in een CSV-bestand.
+U kunt metada voor veelvoudige activa in een formaat CSV uitvoeren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt AEM de eigenschappen van het elementknooppunt `jcr:content/metadata` en de onderliggende knooppunten en exporteert u de eigenschappen van de metagegevens in een CSV-bestand.
 
 Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs exporteren:
 
