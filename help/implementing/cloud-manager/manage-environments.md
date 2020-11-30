@@ -54,7 +54,7 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Bij het maken van een omgeving worden een of meer *integraties* gemaakt in Adobe I/O. Deze zijn zichtbaar voor klanten die toegang hebben tot de I/O-console van Adobe en mogen niet worden verwijderd. Dit wordt in de beschrijving in de I/O-console van Adobe gedisclastreerd.
+   >Bij het maken van een omgeving worden een of meer *integraties* gemaakt in Adobe I/O. Deze zijn zichtbaar voor gebruikers van de klant die toegang hebben tot de Adobe I/O-console en mogen niet worden verwijderd. Dit wordt in de beschrijving in de Adobe I/O-console afgewezen.
 
    ![](assets/add-environment-image1.png)
 
