@@ -36,6 +36,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **Sites**:
       1. Select **Create** from the toolbar to open the selection box.
       1. Selecteer vervolgens Starten **maken** om de wizard te openen.
+
    >[!NOTE]
    >
    >In de **Sites**-console kunt u ook de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) gebruiken om een pagina te selecteren voordat u **Maken** selecteert.
@@ -45,6 +46,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 1. In de **Uitgezochte Bron** stap moet u Pagina **&#39;s** toevoegen. U kunt meerdere pagina&#39;s selecteren en het pad voor elke pagina opgeven:
    * Navigeer naar de gewenste locatie.
    * Selecteer de bronpagina(&#39;s) en bevestig (vinkje).
+
    Herhaal deze bewerking zo nodig.
 
    ![Startebron selecteren](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -60,6 +62,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **Inclusief subpagina**&#39;s:
 
       * Geef op of u de opstart wilt maken met of zonder de onderliggende pagina&#39;s.  Deze subpagina&#39;s worden standaard opgenomen.
+
    Ga verder met **Volgende**.
 
    ![Startebron selecteren](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -71,14 +74,15 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **Gebruik een nieuwe sjabloon om de pagina** te vervangen: Zie Starten [maken met nieuwe sjabloon](#create-launch-with-new-template) voor meer informatie.
    * **Live-gegevens** van bronpagina overnemen: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie wordt dit bereikt door van de opstart een live kopie te maken. Deze optie is standaard geselecteerd. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **Startdatum**: de datum en het tijdstip waarop de lanceerkopie moet worden geactiveerd (afhankelijk van de markering **Productie gereed** ; zie [Launches - de Orde van Gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+
    ![Starteigenschappen](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
    Als u de console terugkeert (met **Gedaan**) kunt u uw lancering zien (en toegang hebben) van of:
 
-   * De [**Launches **-console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * De [**Verwijzingen **in de console van** Plaatsen **](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * De [**Launches** -console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * De [**Verwijzingen** in de console van **Plaatsen**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
