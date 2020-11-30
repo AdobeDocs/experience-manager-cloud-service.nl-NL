@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -22,9 +22,9 @@ De datum van de Versie voor Experience Manager als Cloud Service 2020.2.0 is 13 
 
 Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.2.0.
 
-### What&#39;s New {#what-is-new}
+### Wat is er nieuw?{#what-is-new}
 
-* De archetype-versie van de Adobe Experience Manager is bijgewerkt naar versie 22.
+* De Adobe Experience Manager archetype-versie is bijgewerkt naar versie 22.
 * De werkgebied- en productieomgevingen in de programma&#39;s Sandbox/Demo kunnen nu worden bijgewerkt via de interface van Cloud Manager.
 * URL&#39;s die worden gebruikt in Experience Cloud-berichten, zijn geoptimaliseerd om een extra omleiding te voorkomen.
 * Uitvoeringsstappen van de pijpleiding die nu uitdrukkelijk genoemd.
