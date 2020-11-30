@@ -1,6 +1,6 @@
 ---
-title: SPA-blauwdruk
-description: Dit document beschrijft het algemene, kader-onafhankelijke contract dat om het even welk kader van het KUUROORD zou moeten vervullen om editable componenten van het KUUROORD binnen AEM uit te voeren.
+title: SPA
+description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 0%
 ---
 
 
-# SPA-blauwdruk {#spa-blueprint}
+# SPA {#spa-blueprint}
 
-Om de auteur toe te laten om de AEM Redacteur van het KUUROORD te gebruiken om de inhoud van een KUUROORD uit te geven, zijn er vereisten die het KUUROORD moet vervullen.
+Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van een SPA uit te geven, zijn er vereisten die de SPA moet vervullen.
 
 ## Inleiding {#introduction}
 
-Dit document beschrijft het algemene contract dat om het even welk kader van het KUUROORD (d.w.z. het soort AEM steunlaag) zou moeten vervullen om editable componenten van het KUUROORD binnen AEM uit te voeren.
+In dit document wordt het algemene contract beschreven waaraan elk SPA kader moet voldoen (d.w.z. het soort AEM steunlaag) om bewerkbare SPA binnen AEM te implementeren.
 
 Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door een Enige Kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische waarde van de gegevens vertegenwoordigt die voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en de `ComponentMapping`.
 
@@ -28,13 +28,13 @@ Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de g
 
 >[!CAUTION]
 >
->Hoewel de mogelijkheden van het KUUROORD van AEM kader-onafhankelijk zijn, momenteel slechts worden het React en Hoekkader gesteund.
+>Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Hoekframeworks ondersteund.
 
 ## PageModelManager {#pagemodelmanager}
 
-De `PageModelManager` bibliotheek wordt verstrekt als pakket NPM dat door een project van het KUUROORD moet worden gebruikt. Het begeleidt SPA en dient als manager van het gegevensmodel.
+De `PageModelManager` bibliotheek wordt verstrekt als pakket NPM dat door een SPA project moet worden gebruikt. Het begeleidt de SPA en dient als gegevensmodelmanager.
 
-Namens het KUUROORD, onttrekt het de herwinning en het beheer van de structuur JSON die de daadwerkelijke inhoudsstructuur vertegenwoordigt. Het is ook verantwoordelijk voor het synchroniseren met het KUUROORD om het te laten weten wanneer het zijn componenten moet opnieuw teruggeven.
+Namens de SPA onttrekt het de herwinning en het beheer van de structuur JSON die de daadwerkelijke inhoudsstructuur vertegenwoordigt. Het is ook verantwoordelijk voor de synchronisatie met de SPA om te laten weten wanneer het zijn componenten opnieuw moet renderen.
 
 Zie het NPM-pakket [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
@@ -44,13 +44,13 @@ Wanneer het initialiseren van de `PageModelManager`app, laadt de bibliotheek eer
 
 ### ComponentMapping {#componentmapping}
 
-De `ComponentMapping` module wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor het KUUROORD om front-end componenten aan AEM middeltypes in kaart te brengen. Hierdoor wordt een dynamische resolutie van componenten ingeschakeld bij het parseren van het JSON-model van de toepassing.
+De `ComponentMapping` module wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor de SPA om front-end componenten aan AEM middeltypes in kaart te brengen. Hierdoor wordt een dynamische resolutie van componenten ingeschakeld bij het parseren van het JSON-model van de toepassing.
 
 Elke punten in het model bevatten een `:type` gebied dat een AEM middeltype blootstelt. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Voor details over hoe het dynamische model aan componentenafbeelding in het KUUROORD Javascript SDK voor AEM voorkomt zie het artikel [Dynamisch Model aan de Afbeelding van de Component voor SPAs](model-to-component-mapping.md).
+Zie het artikel [Dynamic Model to Component Mapping voor SPA](model-to-component-mapping.md)voor meer informatie over de manier waarop het dynamische model wordt toegewezen aan componenttoewijzing in de SPA van JavaScript voor AEM.
 
 ### Framework-specifieke laag {#framework-specific-layer}
 
@@ -62,9 +62,9 @@ In de rest van dit document worden de vereisten van deze specifieke laag van het
 
 ### Paginamodel {#page-model}
 
-De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om de componenten van het KUUROORD in kaart te brengen en te concretiseren. De ontwikkelaars van het KUUROORD creëren componenten SPA die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
+De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om SPA componenten in kaart te brengen en te concretiseren. De SPA ontwikkelaars creëren SPA componenten die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
 
-De componenten van het KUUROORD moeten synchroon met het paginamodel zijn en met om het even welke veranderingen in zijn inhoud dienovereenkomstig worden bijgewerkt. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
+De SPA componenten moeten in overeenstemming zijn met het paginamodel en worden bijgewerkt met eventuele wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
 
 ### Meta-velden {#meta-fields}
 
@@ -160,7 +160,7 @@ Zie ook de npm-bron [@adobe/aem-response-editable-components](https://www.npmjs.
 
 #### Plaatsaanduiding van het responsieve raster {#placeholder-of-the-responsive-grid}
 
-De component van het KUUROORD wordt in kaart gebracht aan een grafische container zoals het Responsieve Net en moet virtuele kindplaceholder toevoegen wanneer de inhoud wordt authored. Wanneer de inhoud van het KUUROORD door de Redacteur van de Pagina wordt ontworpen, wordt die inhoud ingebed in de redacteur gebruikend iframe en het `data-cq-editor` attribuut wordt toegevoegd aan de documentknoop van die inhoud. Wanneer het `data-cq-editor` kenmerk aanwezig is, moet de container een HTMLElement bevatten om het gebied te vertegenwoordigen waarmee de auteur communiceert bij het invoegen van een nieuwe component in de pagina.
+De SPA component wordt toegewezen aan een grafische container zoals het Responsieve raster en moet een virtuele tijdelijke aanduiding voor onderliggende items toevoegen wanneer de inhoud wordt gemaakt. Wanneer de inhoud van de SPA wordt geschreven door de Pagina-editor, wordt die inhoud ingesloten in de editor met behulp van een iframe en wordt het `data-cq-editor` kenmerk toegevoegd aan het documentknooppunt van die inhoud. Wanneer het `data-cq-editor` kenmerk aanwezig is, moet de container een HTMLElement bevatten om het gebied te vertegenwoordigen waarmee de auteur communiceert bij het invoegen van een nieuwe component in de pagina.
 
 Bijvoorbeeld:
 
@@ -269,17 +269,17 @@ De onderliggende [`PageModelManager`](#pagemodelmanager) bibliotheek en zijn [`M
 
 De twee entiteiten hebben betrekking op het begrip van het verpletteren maar het [`ModelRouter`](routing.md) is slechts verantwoordelijk voor het laden van [`PageModelManager`](#pagemodelmanager) met een gegevensmodel dat synchroon met de huidige toepassingsstaat wordt gestructureerd.
 
-Zie het artikelSPA Model dat voor meer informatie verplettert [](routing.md) .
+Zie het artikel [SPA Model Verpletterend](routing.md) voor meer informatie.
 
 ## SPA in actie {#spa-in-action}
 
-Zie hoe een eenvoudige KUUROORD werkt en met een KUUROORD zelf experimenteert door op de volgende documenten verder te gaan:
+Bekijk hoe een eenvoudige SPA werkt en experimenteer met een SPA zelf door door te gaan met de volgende documenten:
 
-* [Begonnen het worden met SPAs in AEM Gebruikend Reageren](getting-started-react.md).
-* [Begonnen het worden met SPAs in AEM het gebruiken van Hoek](getting-started-angular.md).
+* [Aan de slag met SPA in AEM Werken met Reageren](getting-started-react.md).
+* [Aan de slag met SPA in AEM met gebruik van Hoek](getting-started-angular.md).
 
 ## Meer informatie {#further-reading}
 
-Voor meer informatie over SPAs in AEM, zie de volgende documenten:
+Raadpleeg de volgende documenten voor meer informatie over SPA in AEM:
 
-* [Het Overzicht](editor-overview.md) van de Redacteur van het KUUROORD voor een overzicht van SPAs in AEM en het communicatie model
+* [SPA het Overzicht](editor-overview.md) van de Redacteur voor een overzicht van SPA in AEM en het communicatie model
