@@ -39,6 +39,7 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 >
 >* [Een geneste start](#promoting-a-nested-launch) bevorderen wanneer de structuur meerdere keren is gestart.
 >* [Launches - De Orde van Gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) voor meer informatie over automatische bevordering en publicatie.
+
 >
 
 
@@ -62,6 +63,7 @@ U kunt lanceringen van of de console van **Plaatsen** of de console van **Lancer
       * **Gewijzigde pagina&#39;s promoten**
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
+
       Als u bijvoorbeeld alleen gewijzigde pagina&#39;s wilt promoten:
 
       ![Promotie starten](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -88,7 +90,7 @@ Wanneer u een startpagina bewerkt, is de actie **Starten** bevorderen ook beschi
 
 ## Een geneste start bevorderen {#promoting-a-nested-launch}
 
-Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de bronnen, inclusief de hoofdbron (productie).
+Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar elk van de bronnen, inclusief de hoofdbron (productie).
 
 ![Een geneste start](/help/sites-cloud/authoring/assets/launches-promoting-nested.png)
 
@@ -103,6 +105,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
       * **Gewijzigde pagina&#39;s promoten**
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
+
    ![Starten van instellingen bevorderen](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Selecteer **Volgende**.
