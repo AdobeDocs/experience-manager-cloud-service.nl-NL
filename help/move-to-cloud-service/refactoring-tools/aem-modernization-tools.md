@@ -1,35 +1,35 @@
 ---
-title: AEM-moderniseringsgereedschappen
-description: 'AEM-moderniseringsgereedschappen '
+title: AEM-moderniseringstools
+description: 'AEM-moderniseringstools '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# AEM-moderniseringsgereedschappen {#aem-moderization-tools}
+# AEM-moderniseringstools {#aem-moderization-tools}
 
-Met de AEM Moderniseringssuite van tools kunnen ontwikkelingsteams van AEM tools krijgen om bestaande AEM-functies om te zetten in de huidige ondersteunde mogelijkheden.
+De AEM-moderiseringssuite biedt tools waarmee AEM-ontwikkelingsteams verouderde AEM-functies kunnen converteren naar de functies die momenteel worden ondersteund.
 
 
 ## Inleiding {#introduction}
 
-Met de moderniseringsinstrumenten van AEM kunt u eenvoudig converteren naar:
+Met de AEM-moderniseringstools kunt u eenvoudig de volgende taken uitvoeren:
 
-* Statische sjablonen naar bewerkbare sjablonen
-* Configuraties ontwerpen naar beleid
-* Elementaire componenten naar kerncomponenten
-* Klassieke interface naar interface met aanraakbediening
+* Statische sjablonen converteren naar bewerkbare sjablonen
+* Ontwerpconfiguraties omzetten naar beleid
+* Elementaire componenten omzetten naar kerncomponenten
+* De klassieke interface converteren naar een interface met aanraakbediening
 
 >[!NOTE]
->De Moderniseringshulpmiddelen van AEM zijn een communautaire inspanning en worden niet gesteund of door Adobe gewaarborgd.
+>De AEM-moderniseringstools worden gemaakt door leden van onze community. De tools worden niet ondersteund of gewaarborgd door Adobe.
 
-Verwijs naar het **[Introduceren van de ModerniseringsHulpmiddelen](https://opensource.adobe.com/aem-modernize-tools/)**van AEM om meer over planning, configuratie, en ontwikkeling voor de Reeks van de Modernisering van AEM van hulpmiddelen te leren.
+Zie **[Inleiding tot AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)** om meer te leren over planning, configuratie en ontwikkeling voor de AEM-moderniseringstools.
 
-## Installatie- en implementatiehulpprogramma voor AEM-modernisering {#installing-implementing}
+## De suite met AEM-moderniseringstools installeren en implementeren {#installing-implementing}
 
-Zie **[Git Resource: AEM Moderniseert Tools Suite](https://github.com/adobe/aem-modernize-tools)**voor meer informatie over installatie en implementatie.
+Zie **[Git Resource: AEM Modernize Tools-suite](https://github.com/adobe/aem-modernize-tools)** voor meer informatie over de installatie en implementatie.
 
