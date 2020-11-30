@@ -301,7 +301,7 @@ Met het eenvoudige hoofdlettergebruik wordt het `ui.content` veranderbare inhoud
 
 ### Complexe implementatiepakketafhankelijkheden {#complex-deploxment-package-dependencies}
 
-De complexe plaatsingen breiden zich op het eenvoudige geval uit, en plaatsen gebiedsdelen tussen de overeenkomstige veranderlijke inhoud en onveranderlijke codepakketten. Zoals vereist, kunnen de gebiedsdelen ook tussen onveranderlijke codepakketten worden gevestigd.
+De complexe plaatsingen breiden zich op het eenvoudige geval uit, en plaatsen gebiedsdelen tussen de overeenkomstige veranderlijke inhoud en de onveranderlijke codepakketten. Zoals vereist, kunnen de gebiedsdelen ook tussen onveranderlijke codepakketten worden gevestigd.
 
 + `all` heeft geen afhankelijkheden
    + `common.ui.apps.common` heeft geen afhankelijkheden
