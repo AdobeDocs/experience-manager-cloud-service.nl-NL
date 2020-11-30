@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Elementen voorvertonen{#previewing-assets}
 
-Met Voorvertonen kunt u zien hoe een geüpload digitaal element eruit ziet wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor Voorvertoning.
+Met Voorvertonen kunt u zien hoe een geüpload digitaal element eruit ziet wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor de voorvertoning.
 
 Een viewer is een verzameling van verschillende instellingen of &#39;voorinstellingen&#39;, zoals de weergavegrootte van de viewer, het zoomgedrag, kleurenschema&#39;s, randen, lettertypen enzovoort, die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven.
 
