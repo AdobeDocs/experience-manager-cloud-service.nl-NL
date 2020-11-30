@@ -76,7 +76,7 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
    ![Configuratie maken](assets/configuration-create.png)
 
    * De **titel** moet beschrijvend zijn.
-   * De **naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamgevingsconventies [AEM.](naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
