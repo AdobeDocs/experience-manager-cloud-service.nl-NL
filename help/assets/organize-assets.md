@@ -1,6 +1,6 @@
 ---
 title: Digitale elementen ordenen
-description: Organiseer uw digitale middelen gebruikend diverse methodes die in de Middelen van de Adobe Experience Manager worden verstrekt.
+description: Organiseer uw digitale middelen met behulp van verschillende methoden die in Adobe Experience Manager Assets worden geboden.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
 
-AEM Assets ondersteunen meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+AEM Assets ondersteunt meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Mappen maken {#create-folders}
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur* -afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. AEM Assets vereisen niet dat u elementen in mappen ordent om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur* -afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
 
 >[!NOTE]
 >
->Het delen van een map Middelen (in de marketingcloud) van het type `sling:OrderedFolder`, wordt niet ondersteund. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
+>Het delen van een map Middelen (in Marketing Cloud) van het type `sling:OrderedFolder`, wordt niet ondersteund. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken.
 1. In the menu, click **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
