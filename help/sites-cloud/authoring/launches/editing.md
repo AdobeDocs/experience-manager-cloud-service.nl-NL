@@ -28,7 +28,7 @@ Als uw lancering op een levende kopie gebaseerd is, zult u: <!--If your launch i
 
 Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 
-U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een standaard live kopie kunt bewerken. bijvoorbeeld:
+U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een live standaardkopie kunt bewerken. bijvoorbeeld:
 
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
 * **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
@@ -40,7 +40,7 @@ Zie Inhoud van Live kopie wijzigen voor meer informatie. <!--See [Changing Live 
 Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
 1. Navigeer in de **Sites** -console naar de bronpagina van de opstart en selecteer deze [](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open het deelvenster **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**en selecteer **Starten**.
+1. Open het deelvenster **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en selecteer **Starten**.
 1. Selecteer uw specifieke lancering dan **Vergelijken aan Bron**:
 
    ![Starten vergelijken met bron](/help/sites-cloud/authoring/assets/launches-compare.png)
