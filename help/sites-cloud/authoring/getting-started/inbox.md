@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Uw inbox {#your-inbox}
 
-U kunt meldingen ontvangen van verschillende onderdelen van AEM, zoals workflows en projecten. U ontvangt bijvoorbeeld meldingen over:
+U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en projecten. U ontvangt bijvoorbeeld meldingen over:
 
 * Taken:
    * Deze kunnen ook op diverse punten binnen AEM UI, bijvoorbeeld, onder **Projecten** worden gecreeerd.
@@ -45,7 +45,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 ## De Postvak IN openen {#opening-the-inbox}
 
-Het AEM-meldingsvak openen:
+U opent als volgt het AEM-vak:
 
 1. Klik/tik op de indicator in de werkbalk.
 
@@ -92,6 +92,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Groeperen op**
    * **Planning** of **Geen**
    * **Kaartgrootte**
+
    ![Instellingen voor de postkalenderweergave in het vak](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Lijstweergave**
@@ -100,6 +101,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    * **Sorteren op**
    * **Sorteervolgorde**
+
    ![Weergave-instellingen in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    U kunt uw agenda ook delegeren aan andere gebruikers, u kunt verzoeken om delegatie van andere gebruikers en uw delegaties beheren.
@@ -128,6 +130,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Terug naar** een vorige stap
    * De lading voor een werkstroom weergeven
    * Een project maken van het item
+
    >[!NOTE]
    >
    >Zie voor meer informatie:
@@ -140,6 +143,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * Er wordt een dialoog geopend die geschikt is voor de actie
    * Er wordt een wizard Handelingen gestart
    * Er wordt een documentatiepagina geopend
+
    Bijvoorbeeld, zal de **Afgevaardigde** een dialoog openen:
 
    ![Inbox-taak delegeren](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ In het Postvak IN kunt u taken maken:
       * **Taakprioriteit**
       * **Begindatum**
       * **Vervaldatum**
+
    ![Inbox add task](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Geavanceerd**
 
       * **Naam**:Deze wordt gebruikt om de URL te vormen en als deze leeg is, wordt deze gebaseerd op de **Titel**.
+
    ![Geavanceerde opties voor Inbox Add task](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Selecteer **Verzenden**.
@@ -209,11 +215,11 @@ Voor bepaalde taken kunt u een [Project](/help/sites-cloud/authoring/projects/ov
 
 1. Selecteer **Maken** om de handeling te bevestigen.
 
-## Items in het Postvak IN filteren {#filtering-items-in-the-aem-inbox}
+## Items in AEM Postvak IN filteren {#filtering-items-in-the-aem-inbox}
 
 U kunt de vermelde items filteren:
 
-1. Open het **AEM-vak**.
+1. Open het **AEM Postvak IN**.
 
 1. Open de filterkiezer:
 
