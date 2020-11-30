@@ -1,6 +1,6 @@
 ---
-title: AEM-probleem bij ontwerpen oplossen
-description: Sommige problemen die u kunt tegenkomen bij het gebruik van AEM
+title: Problemen met AEM bij ontwerpen oplossen
+description: Sommige problemen die u bij het gebruik van AEM tegenkomt
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 13%
 ---
 
 
-# AEM-probleem bij ontwerpen oplossen {#troubleshooting-aem-when-authoring}
+# Problemen met AEM bij ontwerpen oplossen {#troubleshooting-aem-when-authoring}
 
-In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
+De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
