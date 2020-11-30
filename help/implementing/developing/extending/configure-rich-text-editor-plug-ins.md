@@ -6,7 +6,7 @@ mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4279'
 ht-degree: 0%
 
 ---
@@ -308,7 +308,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -393,8 +393,7 @@ Alinea-indelingen kunnen worden geselecteerd door:
    Herhaal de stappen voor elke vereiste indeling.
 
 >[!CAUTION]
->
->Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>`en `<h3>`) verwijderd. Maak `<p>` opmaak opnieuw omdat dit de standaardindeling is.
+Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>`en `<h3>`) verwijderd. Maak `<p>` opmaak opnieuw omdat dit de standaardindeling is.
 
 ## Speciale tekens configureren {#spchar}
 
@@ -403,8 +402,7 @@ Wanneer in een standaardinstallatie de [!DNL Experience Manager] plug-in is inge
 U kunt RTE vormen om uw selectie van karakters beschikbaar te maken; of door verschillende karakters, of een volledige opeenvolging te bepalen.
 
 >[!CAUTION]
->
->Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst opnieuw in de selectie.
+Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst opnieuw in de selectie.
 
 ### Eén teken definiëren {#definesinglechar}
 
@@ -479,12 +477,10 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook worden toegepast op een tabel of op een paar tabelcellen. Dergelijke stijlen zijn beschikbaar voor auteurs in het selectievak Stijl in het dialoogvenster Eigenschappen van cel of Tabeleigenschappen. De stijlen zijn beschikbaar wanneer het uitgeven van een lijst binnen een component van de Tekst (of een derivaat) en niet in de standaardcomponent van de Lijst.
 
 >[!NOTE]
->
->U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
+U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
 
 >[!NOTE]
->
->Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
+Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table`. Maak de knooppunten als de knooppunten niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de `features` eigenschap op het `table` knooppunt:
@@ -494,9 +490,8 @@ Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook
    * **Waarde** `*`
 
    >[!NOTE]
-   >
-   >Als u niet alle tabelfuncties wilt inschakelen, kunt u de `features` eigenschap als volgt maken:
-   >* **Type** `String[]`
+   Als u niet alle tabelfuncties wilt inschakelen, kunt u de `features` eigenschap als volgt maken:
+   * **Type** `String[]`
 
    * **Waarde**&#x200B;één of beide van het volgende, naargelang van de behoefte:
       * `table` het bewerken van tabeleigenschappen toestaan; inclusief de stijlen.
@@ -559,11 +554,10 @@ Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de C
 
 ## Woordenboeken toevoegen voor de spellingcontrole {#adddict}
 
-Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
+Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` vertakking wordt gecontroleerd als Engels, de `/de/` vertakking als Duits.
 
 >[!NOTE]
->
->Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
+Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
 
 Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 
@@ -571,8 +565,7 @@ Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 * Brits Engels (en_gb)
 
 >[!NOTE]
->
->De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
+De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
 Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
@@ -580,17 +573,15 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 1. Selecteer de gewenste taal en download het ZIP-bestand met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
 
    >[!CAUTION]
-   >
-   >Alleen woordenboeken in de `MySpell` indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
+   Alleen woordenboeken in de `MySpell` indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
 
 1. Zoek de .aff- en .dic-bestanden. Bestandsnaam in kleine letters behouden. Bijvoorbeeld `de_de.aff` en `de_de.dic`.
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
->
->De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
->Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
->Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
+Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
+Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
@@ -625,8 +616,7 @@ De tabgrootte definiëren:
 Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspringing definiëren:
 
 >[!NOTE]
->
->Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst). het heeft geen invloed op de inspringing van feitelijke lijsten.
+Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst). het heeft geen invloed op de inspringing van feitelijke lijsten.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists`. Maak deze knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak op het `lists` knooppunt de `identSize` parameter:
@@ -658,11 +648,10 @@ Wanneer u koppelingen toevoegt in, kunt u de CSS-stijlen definiëren die moeten 
    * **Type** `nt:unstructured`
 
    >[!NOTE]
-   >
-   >Het `../items/text` knooppunt heeft de eigenschap:
-   >* **Naam** `xtype`
-   >* **Type** `String`
-   >* **Waarde** `richtext`
+   Het `../items/text` knooppunt heeft de eigenschap:
+   * **Naam** `xtype`
+   * **Type** `String`
+   * **Waarde** `richtext`
 
    De locatie van het `../items/text` knooppunt kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
