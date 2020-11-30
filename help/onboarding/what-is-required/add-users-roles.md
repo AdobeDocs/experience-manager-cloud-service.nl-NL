@@ -24,13 +24,13 @@ Veel functies in [!UICONTROL Cloud Manager] vereisen specifieke machtigingen om 
 
 >[!CAUTION]
 >
->U moet beschikken over een Adobe-id en de productcontext van Adobe Managed Services om deze te kunnen gebruiken. [!UICONTROL Cloud Manager]
+>U moet beschikken over een Adobe ID en de Adobe Managed Services-productcontext om deze te kunnen gebruiken. [!UICONTROL Cloud Manager]
 
 ## Roldefinities {#role-definitions}
 
 >[!NOTE]
 >
->De ontwikkelaarspersona in Admin Console is niet gerelateerd aan de rol van de Ontwikkelaar in [!UICONTROL Cloud Manager].
+>De ontwikkelaar persona in Admin Console heeft geen verband met de rol van de Ontwikkelaar in [!UICONTROL Cloud Manager].
 
 De volgende tabel geeft een overzicht van de rollen:
 
@@ -40,4 +40,4 @@ De volgende tabel geeft een overzicht van de rollen:
 | Program Manager | Gebruikt [!UICONTROL Cloud Manager] om teamopstelling uit te voeren, status te herzien en KPIs te bekijken. Kan belangrijke fouten met drie niveaus goedkeuren. |
 | Deployment Manager | Beheert implementatiebewerkingen. Gebruikt [!UICONTROL Cloud Manager] om werkgebied/productieplaatsingen uit te voeren. Kan CI/CD pijpleidingen uitgeven. Kan belangrijke fouten met drie niveaus goedkeuren. Kan toegang krijgen tot de Git-opslagplaats. |
 | Developer | Ontwikkelt en test aangepaste toepassingscode. Wordt voornamelijk gebruikt [!UICONTROL Cloud Manager] om de status weer te geven. Kan toegang krijgen tot de Git-opslagplaats voor code commit. |
-| Inhoudsauteur | Over het algemeen heeft dit geen invloed op [!UICONTROL Cloud Manager]de interactie. Kan de Schakelaar van het Programma gebruiken [!UICONTROL Cloud Manager] (die van [!UICONTROL Experience Cloud]) is genavigeerd om tot AEM toegang te hebben. |
+| Inhoudsauteur | Over het algemeen heeft dit geen invloed op [!UICONTROL Cloud Manager]de interactie. Kan de Schakelaar van het Programma (die van [!UICONTROL Cloud Manager] [!UICONTROL Experience Cloud]) aan toegangs AEM gebruiken. |
