@@ -19,7 +19,7 @@ Zie Voorinstellingen voor viewers [beheren als u een beheerder bent en viewervoo
 Zie ook Voorinstellingen voor [viewers](managing-viewer-presets.md#publishing-viewer-presets)publiceren.
 
 Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
-Om het even welke problemen met kijkersvoorinstellingen, zie het Oplossen van [Problemen Dynamische Media - Scene7](troubleshoot-dm.md#viewers).
+Voor problemen met viewervoorinstellingen raadpleegt u [Problemen met dynamische media oplossen - Scene7](troubleshoot-dm.md#viewers).
 
 ## Een voorinstelling voor een dynamische mediasviewer toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
