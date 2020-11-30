@@ -44,10 +44,11 @@ Met Launches kunt u:
    * De kopie is uw lancering.
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
+
    ![Volgorde van de lanceringen](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * De startconfiguratie bewerken:
-   * Voeg pagina&#39;s en/of vertakkingen toe aan/van de lancering of verwijder deze.
+   * Pagina&#39;s en/of vertakkingen toevoegen aan of verwijderen uit het opstarten.
    * Bewerk starteigenschappen, zoals markeringen voor **Titel**, **Startdatum**, **Geschikt voor productie**.
 * U kunt de inhoud handmatig of automatisch publiceren:
    * Handmatig:
@@ -62,11 +63,13 @@ Met Launches kunt u:
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
+
    ![Parallel uitgevoerde acties](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Een geneste opstart](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) maken - een opstart binnen een opstart:
    * De bron is een bestaande opstart.
    * U kunt een geneste lancering [aan om het even welk doel](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) bevorderen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
+
    ![Een geneste start](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
