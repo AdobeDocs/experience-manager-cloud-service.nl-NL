@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Experience Manager as a Cloud Service openen {#navigation}
 
-Zodra uw systeembeheerder u toegang tot Cloud Manager verleent, ontvangt u een e-mail die u naar de aanmeldingspagina van Cloud Manager stuurt die ook toegankelijk is via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
+Zodra uw systeembeheerder u toegang tot Cloud Manager verleent, zult u een e-mail ontvangen die u aan de login van de Manager van de Wolk neemt pagina die ook door [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)toegankelijk is.
 
 Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt weergegeven.
 
@@ -20,33 +20,33 @@ Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager,
 
 ## SysAdmin-taken {#sysadmin-tasks}
 
-Een gebruiker met de rol SysAdmin heeft nu rechtstreeks toegang tot de beheerconsole om rollen en machtigingen te beheren en toegang te krijgen tot AEM-instanties.
+Een gebruiker in de rol SysAdmin kan tot de Admin Console nu direct toegang hebben om rollen en toestemmingen en toegang tot AEM instanties te beheren.
 
 ### Rollen beheren {#manage-roles}
 
-Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de plaats in Console **** Admin van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk worden geleid.
+Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de plaats in **Admin Console** van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk worden geleid.
 
 Raadpleeg [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) voor meer informatie over het toevoegen van gebruikers aan een profiel.
 
 >[!NOTE]
->Voor sommige organisaties die vóór januari 2020 toegang hebben gekregen tot AEM als Cloud Service, worden deze doorgestuurd naar de Adobe Admin Console en moet het Product and Environment Product Profile worden geselecteerd.
+>Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en moet het productprofiel van het product en het milieu worden geselecteerd.
 
 1. Navigeer naar de openingspagina van Cloud Manager en klik op **Toegang** beheren.
 
    ![](assets/sys-admin5.png)
 
-1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar **Admin Console** waar u de gebruikersrollen of machtigingen kunt beheren in Cloud Manager.
+1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar de **Admin Console** van waar u de gebruikersrollen of machtigingen kunt beheren naar Cloud Manager.
 
    ![](assets/sys-admin1.png)
 
 ### Toegang tot instantie Auteur beheren {#manage-access-aem}
 
-Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de Console **** Admin van waar u aan de auteursinstantie direct kunt navigeren en toegang beheren.
+Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de **Admin Console** van waar u aan de auteursinstantie direct kunt navigeren en toegang beheren.
 
 >[!NOTE]
->Voor sommige organisaties die vóór januari 2020 toegang hebben gekregen tot AEM als Cloud Service, worden deze doorgestuurd naar de Adobe Admin Console en moet het Product and Environment Product Profile worden geselecteerd.
+>Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en moet het productprofiel van het product en het milieu worden geselecteerd.
 
-Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
+Zie [Een instantie openen in AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
 
 1. Navigeer naar de **milieucaart** van de pagina Overzicht **van het** Programma en klik op Toegang **** beheren.
 
@@ -58,21 +58,21 @@ Raadpleeg [Toegang tot een instantie in AEM als cloudservice](https://docs.adobe
 
    ![](assets/sys-admin4.png)
 
-1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar de **beheerconsole** vanwaar u toegang hebt tot de auteurinstantie van de omgeving.
+1. Nadat u op Toegang **** beheren hebt geklikt, gaat u naar de **Admin Console** van waar u toegang hebt tot de instantie van de auteur van de omgeving.
 
    ![](assets/sys-admin-2.png)
 
 ## Voor bestaande AMS-klanten {#existing-aem}
 
-Als u een bestaande AMS-klant (Adobe Managed Services) bent en u toegang hebt tot Cloud Service, ziet u uw bestaande programma(&#39;s) en de knop Program **** toevoegen rechtsboven op de bestemmingspagina.
+Als u een bestaande AMS-klant (Adobe Managed Services) bent en u toegang hebt tot Cloud Service, ziet u uw bestaande programma(&#39;s) en de knop Programma **** toevoegen rechtsboven op de bestemmingspagina.
 
-Neem contact op met uw vertegenwoordiger van Adobe als u de knop Programma **** toevoegen niet ziet en vragen hebt over toegang tot de Cloud-service.
+Neem contact op met uw Adobe als u de knop Programma **** toevoegen niet ziet en vragen hebt over toegang tot Cloud Service.
 
-Zie Een nieuw programma [toevoegen in de Cloud-service met bestaande programma&#39;s](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) voor meer informatie.
+Zie Een nieuw programma [toevoegen in Cloud Service met bestaande programma](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) &#39;s voor meer informatie.
 
-## Voor nieuwe klanten van de cloudservice {#new-cloud-services}
+## Voor nieuwe klanten van de Cloud Service {#new-cloud-services}
 
-Als u een nieuwe klant van de Dienst van de Wolk bent, dan zult u de **Add knoop van het Programma** op de hoogste juiste hoek van een lege het landen pagina zien. U wilt een nieuw programma toevoegen aan uw cloudservice.
+Als u een nieuwe klant van de Cloud Service bent, dan zult u de **Add knoop van het Programma** op de hoogste juiste hoek van een lege het landen pagina zien. U zult een nieuw programma aan uw Cloud Service willen toevoegen.
 
-Zie Een nieuw programma [toevoegen in de Cloud-service zonder bestaande programma](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) voor meer informatie.
+Zie Een nieuw programma [toevoegen in de Cloud Service zonder bestaande programma](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) voor meer informatie.
 
