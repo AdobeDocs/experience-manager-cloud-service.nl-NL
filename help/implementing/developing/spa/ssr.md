@@ -1,6 +1,6 @@
 ---
 title: SPA en rendering op de server
-description: Het gebruiken van server zijhet teruggeven (SSR) in uw SPA kan de aanvankelijke lading van de pagina versnellen en dan verdere het teruggeven tot de cliënt overgaan.
+description: Als u SSR (Server Side Rendering) gebruikt in uw SPA, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # SPA en rendering op de server{#spa-and-server-side-rendering}
 
-De enige paginatoepassingen (SPAs) kunnen de gebruiker een rijke, dynamische ervaring aanbieden die op vertrouwde manieren reageert en gedraagt, vaak enkel als een inheemse toepassing. [Dit wordt bereikt door op de client te vertrouwen om de inhoud op voorgrond te laden en vervolgens de verwerking van gebruikersinteractie](introduction.md#how-does-a-spa-work) zwaar op te heffen, zodat de benodigde hoeveelheid communicatie tussen de client en de server tot een minimum wordt beperkt, waardoor de app reactiever wordt.
+Toepassingen op één pagina (SPA) kunnen de gebruiker een rijke, dynamische ervaring bieden die op vertrouwde manieren reageert en zich gedraagt, vaak net als een native toepassing. [Dit wordt bereikt door op de client te vertrouwen om de inhoud op voorgrond te laden en vervolgens de verwerking van gebruikersinteractie](introduction.md#how-does-a-spa-work) zwaar op te heffen, zodat de benodigde hoeveelheid communicatie tussen de client en de server tot een minimum wordt beperkt, waardoor de app reactiever wordt.
 
-Nochtans kan dit tot langere aanvankelijke ladingstijden leiden, vooral als SPA groot en rijk in zijn inhoud is. Om de laadtijden te optimaliseren, kan een deel van de inhoud op de server worden gerenderd. Met SSR (serverside rendering) kunt u de eerste belasting van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
+Dit kan echter leiden tot langere laadtijden, vooral als de SPA groot en rijk is aan inhoud. Om de laadtijden te optimaliseren, kan een deel van de inhoud op de server worden gerenderd. Met SSR (serverside rendering) kunt u de eerste belasting van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 
 ## Wanneer gebruikt u SSR {#when-to-use-ssr}
 
-SSR is niet vereist voor alle projecten. Hoewel AEM volledig JS SSR voor SPA steunt, adviseert Adobe niet het systematisch voor elk project uit te voeren.
+SSR is niet vereist voor alle projecten. Hoewel AEM JS SSR voor SPA volledig steunt, beveelt Adobe niet aan deze systematisch voor elk project uit te voeren.
 
 Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra complexiteit, inspanning en kosten het toevoegen van SSR realistisch vertegenwoordigt voor het project, inclusief het langetermijnonderhoud. Een SSR-architectuur mag alleen worden gekozen wanneer de toegevoegde waarde duidelijk hoger is dan de geraamde kosten.
 
@@ -38,7 +38,7 @@ Ga voor meer informatie over Adobe I/O Runtime naar
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - voor een overzicht van de dienst
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - voor gedetailleerde documentatie op het platform
 
-De volgende secties specificeren hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw KUUROORD in twee verschillende modellen uit te voeren:
+In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw SPA in twee verschillende modellen te implementeren:
 
 * [AEM-gestuurde communicatiestroom](#aem-driven-communication-flow)
 * [Adobe I/O Runtime-gestuurde communicatiestroom](#adobe-i-o-runtime-driven-communication-flow)
@@ -74,7 +74,7 @@ De volgende velden zijn beschikbaar voor de configuratie:
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
-Wanneer het gebruiken van SSR, omvat het werkschema [van de](introduction.md#interaction-with-the-spa-editor) componenteninteractie van SPAs in AEM een fase waarin de aanvankelijke inhoud van app op Adobe I/O Runtime wordt geproduceerd.
+Wanneer u SSR gebruikt, bevat de workflow [voor](introduction.md#interaction-with-the-spa-editor) componentinteractie van SPA in AEM een fase waarin de initiële inhoud van de app op Adobe I/O Runtime wordt gegenereerd.
 
 1. De browser vraagt om de SSR-inhoud van AEM.
 1. AEM plaatst het model op Adobe I/O Runtime.
@@ -85,7 +85,7 @@ Wanneer het gebruiken van SSR, omvat het werkschema [van de](introduction.md#int
 
 ## Adobe I/O Runtime-gestuurde communicatiestroom {#adobe-i-o-runtime-driven-communication-flow}
 
-De vorige sectie beschrijft de standaard en geadviseerde implementatie van server zijteruggeven met betrekking tot SPAs in AEM, waar AEM het bootstrapping en het dienen van inhoud uitvoert.
+In de vorige sectie worden de standaard en aanbevolen implementatie van rendering aan serverzijde beschreven met betrekking tot SPA in AEM, waarbij AEM de overvulling en weergave van inhoud uitvoert.
 
 Alternatief, kan SSR worden uitgevoerd zodat Adobe I/O Runtime voor bootstrapping verantwoordelijk is, effectief omkeerend de communicatie stroom.
 
@@ -107,20 +107,20 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
     </ul> </td>
    <td>
     <ul>
-     <li>Mogelijk onbekend aan ontwikkelaar van SPA<br /> </li>
+     <li>Mogelijk niet bekend bij SPA ontwikkelaar<br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>via Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>Vertrouwelijker aan ontwikkelaars van het KUUROORD<br /> </li>
+     <li>Meer bekend bij SPA ontwikkelaars<br /> </li>
     </ul> </td>
    <td>
     <ul>
      <li>Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM-ontwikkelaar beschikbaar worden gesteld via de <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> eigenschap<br /> </li>
      <li>Bronnen moeten worden gesynchroniseerd tussen AEM en Adobe I/O Runtime<br /> </li>
-     <li>Om creatie van het KUUROORD toe te laten, kan een volmachtsserver voor Adobe I/O Runtime noodzakelijk zijn</li>
+     <li>Om het ontwerpen van de SPA mogelijk te maken, is mogelijk een proxyserver voor Adobe I/O Runtime nodig</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -128,25 +128,25 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
 
 ## Planning voor SSR {#planning-for-ssr}
 
-Over het algemeen hoeft slechts een deel van een toepassing aan serverzijde te worden gerenderd. Het algemene voorbeeld is de inhoud die boven de voud wordt weergegeven wanneer de pagina voor het eerst wordt geladen en op de server wordt weergegeven. Dit bespaart tijd door aan de cliënt, reeds teruggegeven inhoud te leveren. Aangezien de gebruiker met het KUUROORD in wisselwerking staat, wordt de extra inhoud teruggegeven door de cliënt.
+Over het algemeen hoeft slechts een deel van een toepassing aan serverzijde te worden gerenderd. Het algemene voorbeeld is de inhoud die boven de voud wordt weergegeven wanneer de pagina voor het eerst wordt geladen en op de server wordt weergegeven. Dit bespaart tijd door aan de cliënt, reeds teruggegeven inhoud te leveren. Terwijl de gebruiker met de SPA communiceert, wordt de extra inhoud door de client gerenderd.
 
-Aangezien u overweegt het uitvoeren van server zijhet teruggeven voor uw SPA, moet u controleren voor welke delen van app het noodzakelijk zal zijn.
+Wanneer u rendering aan de serverzijde voor uw SPA implementeert, moet u controleren welke onderdelen van de app nodig zijn.
 
-## Het ontwikkelen van een SPA die SSR gebruikt {#developing-an-spa-using-ssr}
+## Een SPA ontwikkelen met behulp van SSR {#developing-an-spa-using-ssr}
 
-De componenten van het KUUROORD zouden door de cliënt (in browser) of serverkant kunnen worden teruggegeven. Bij rendering op de server zijn browsereigenschappen zoals venstergrootte en -locatie niet aanwezig. Daarom zouden de componenten van het KUUROORD isomorf moeten zijn, die geen veronderstelling maken over waar zij zullen worden teruggegeven.
+SPA componenten kunnen door de client (in de browser) of de server worden gerenderd. Bij rendering op de server zijn browsereigenschappen zoals venstergrootte en -locatie niet aanwezig. Daarom moeten SPA componenten isomorf zijn, waarbij er geen aanname is over waar ze worden gerenderd.
 
 Als u SSR wilt gebruiken, moet u uw code zowel in AEM als op Adobe I/O Runtime implementeren, die verantwoordelijk is voor de rendering aan de serverzijde. De meeste code zijn hetzelfde, maar serverspecifieke taken verschillen.
 
-## SSR voor SPA’s in AEM {#ssr-for-spas-in-aem}
+## SSR voor SPA in AEM {#ssr-for-spas-in-aem}
 
-SSR voor SPAs in AEM vereist Adobe I/O Runtime, die voor de teruggave van de de serverkant van de toepassingsinhoud wordt geroepen. Binnen de HTML van de app wordt een resource op Adobe I/O Runtime aangeroepen om de inhoud te renderen.
+SSR voor SPA in AEM vereist Adobe I/O Runtime, dat wordt opgeroepen voor het renderen van de zijde van de toepassingsinhoudsserver. Binnen de HTML van de app wordt een resource op Adobe I/O Runtime aangeroepen om de inhoud te renderen.
 
-Enkel aangezien AEM de Hoekse en Reacte kaders van het KUUROORD uit-van-de doos steunt, wordt het teruggeven van de serverzijde ook gesteund voor Hoekige en Reacte apps. Zie de NPM documentatie voor beide kaders voor verdere details.
+Net zoals AEM de hoekige en Reactie SPA frameworks buiten de box ondersteunt, wordt rendering aan de serverzijde ook ondersteund voor hoekige en Reactie-apps. Zie de NPM documentatie voor beide kaders voor verdere details.
 
 ## Renderer voor externe inhoud {#remote-content-renderer}
 
-De [Verre Configuratie](#remote-content-renderer-configuration) van Renderer van de Inhoud die wordt vereist om SSR met uw KUUROORD in AEM tikken in een meer algemene het teruggeven dienst te gebruiken die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
+De Configuratie [van Renderer van de](#remote-content-renderer-configuration) Verre Inhoud die wordt vereist om SSR met uw SPA in AEM tikken in een meer algemene het teruggeven dienst te gebruiken die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
