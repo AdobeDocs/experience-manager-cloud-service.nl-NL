@@ -35,7 +35,7 @@ Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische m
 
 1. Sleep een **[!UICONTROL Dynamic Media]** component en zet deze neer op de gewenste locatie op de pagina.
 
-1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
+1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het **[!UICONTROL Configuration (wrench)]** pictogram.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
