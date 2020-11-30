@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media instellen
+title: Dynamische media instellen
 description: Als u dynamische media wilt instellen, moet u dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren
 translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren, die automatisch worden geschaald voor gebruik op internet, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het globale, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u elementen beheren door op aanvraag rijke visuele merchandising- en marketingmiddelen te leveren, die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 -->
 
-Als u Dynamic Media beheert, zijn de volgende onderwerpen van belang:
+Als u Dynamische Media beheert, zijn de volgende onderwerpen van belang:
 
 * [Dynamic Media configureren](config-dm.md)
 * [Voorinstellingen afbeelding beheren](managing-image-presets.md)
@@ -40,4 +40,4 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u AEM in werking hebt gesteld, heeft om het even welk middel u uploadt automatisch toegelaten Dynamic Media (tenzij het uitdrukkelijk door uw systeembeheerder werd onbruikbaar gemaakt). Als u op een bevorderd geval van AEM en nieuw aan Dynamic Media bent, kunt u uw activa moeten opnieuw verwerken om hen Dynamic Media-toegelaten te maken.
+>* Nadat u aan de slag hebt AEM, heeft om het even welk middel u uploadt Dynamische Media automatisch toegelaten (tenzij het uitdrukkelijk door uw systeembeheerder werd onbruikbaar gemaakt). Als u op een bevorderd geval van AEM en nieuw aan Dynamische Media bent, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamische Media-toegelaten.
