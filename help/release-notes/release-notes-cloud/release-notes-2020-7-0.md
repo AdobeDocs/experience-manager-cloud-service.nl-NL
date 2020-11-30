@@ -1,11 +1,11 @@
 ---
 title: Opmerkingen bij de release voor 2020.7.0 [!DNL Adobe Experience Manager] van een Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van Cloud Servicen voor 2020.7.0.'
+description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.7.0.'
 translation-type: tm+mt
 source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 1%
+source-wordcount: '1048'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 ## Adobe Experience Manager Sites als Cloud Service {#cloud-services-sites}
 
-### What&#39;s New {#what-is-new-sites}
+### Wat is er nieuw?{#what-is-new-sites}
 
 [!DNL Experience Manager] als connectors voor Cloud Servicen voor [!DNL Adobe Target] en [!DNL Adobe Analytics] worden op de volgende manieren verbeterd:
 
@@ -52,7 +52,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### What&#39;s New {#what-is-new-commerce}
+### Wat is er nieuw?{#what-is-new-commerce}
 
 AEM Commerce is nu beschikbaar op Cloud Service.
 
@@ -60,7 +60,7 @@ Raadpleeg [Aan de slag met AEM Handel als Cloud Service](https://docs.adobe.com/
 
 ## Kernonderdelen {#core-components}
 
-### What&#39;s New {#what-is-new-core-components}
+### Wat is er nieuw?{#what-is-new-core-components}
 
 Release 2.11.0 van de [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
@@ -79,7 +79,7 @@ Raadpleeg [AMP Support for the Core Components](https://docs.adobe.com/content/h
 
 De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.7.0 is 9 juli 2020.
 
-### What&#39;s New {#what-is-new-cloud-manager}
+### Wat is er nieuw?{#what-is-new-cloud-manager}
 
 * De pagina met omgevingen is opnieuw ontworpen.
 
@@ -120,7 +120,7 @@ Raadpleeg Ondersteuning [van Java 11](/help/onboarding/getting-access-to-aem-in-
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
-### What&#39;s New {#what-is-new-foundations}
+### Wat is er nieuw?{#what-is-new-foundations}
 
 * [Logs kan aan Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs)worden doorgestuurd, waardoor organisaties hun Splunk-investering kunnen benutten.
 
