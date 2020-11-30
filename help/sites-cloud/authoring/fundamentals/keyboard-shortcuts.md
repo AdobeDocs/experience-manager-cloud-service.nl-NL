@@ -1,6 +1,6 @@
 ---
 title: Sneltoetsen voor paginabewerking
-description: Er zijn verschillende sneltoetsen beschikbaar in AEM, waaronder enkele voor paginabewerking
+description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # Sneltoetsen voor paginabewerking {#keyboard-shortcuts-when-editing-pages}
 
-Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [wijzigingstoetsen](#os-specific-modifier-keys) die vereist zijn voor AEM-sneltoetsen variëren afhankelijk van het besturingssysteem.
+>Welke [wijzigingstoetsen](#os-specific-modifier-keys) vereist zijn voor AEM sneltoetsen, is afhankelijk van het besturingssysteem.
 
 ## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
 
