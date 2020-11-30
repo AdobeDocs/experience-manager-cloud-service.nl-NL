@@ -1,6 +1,6 @@
 ---
-title: AEM - Veelgestelde vragen over de integratie van de Magento met behulp van het kader voor de integratie van de handel
-description: AEM - Veelgestelde vragen over de integratie van de Magento met behulp van het kader voor de integratie van de handel
+title: AEM - Veelgestelde vragen over de integratie van Magento met behulp van het Commerce Integration Framework
+description: AEM - Veelgestelde vragen over de integratie van Magento met behulp van het Commerce Integration Framework
 translation-type: tm+mt
 source-git-commit: cafe8825fe34f158c74b94b95b7252394de26e4d
 workflow-type: tm+mt
@@ -10,22 +10,22 @@ ht-degree: 0%
 ---
 
 
-# AEM - Veelgestelde vragen over de integratie van de Magento met behulp van het kader voor de integratie van de handel
+# AEM - Veelgestelde vragen over de integratie van Magento met behulp van het Commerce Integration Framework
 
 
 ## 1. Wordt GraphQL alleen gebruikt voor Magento of is dit beschikbaar voor het opvragen van inhoud die is geschreven op AEM JCR?
 
 Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle handel verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Magento en met om het even welke handelingsmotor via I/O Runtime uit te wisselen.
 
-## 2. Hoe wordt Adobe I/O in werking gesteld? Spreekt AEM rechtstreeks met Magento?
+## 2. Hoe komt Adobe I/O in de praktijk? Spreekt AEM rechtstreeks met Magento?
 
 AEM kan rechtstreeks verbinding maken met Magento zonder I/O-runtimelaag. Als er behoefte is om een niet-Magento handel achterkant (derdeoplossing) met AEM te integreren, kan I/O Runtime platform worden gebruikt om de mappingslaag te ontvangen om Magento GraphQL APIs met om het even welke derde oplossingen APIs te verbinden. Raadpleeg deze [referentie-implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference)voor meer informatie hierover. Voor oplossingen niet-Magento, zou AEM worden gevormd om aan het I/O Runtime eindpunt te richten.
 
 Het I/O Runtime platform kan ook worden gebruikt om handelsdiensten uit te breiden of aan te passen. Voor dit gebruik-gevallen zou u het I/O Runtime eindpunt roepen dat dan een aangepaste implementatie van de respectieve dienst zal ontvangen. Gebruiksscenario&#39;s voor integratie en extensie kunnen worden gecombineerd.
 
-## 3. Kunnen de activa van het Product (beelden) van AEM via Magento worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
+## 3. Kunnen de activa van het Product (beelden) van AEM via Magento worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen middelen van Dynamische Media worden verbruikt?
 
-Er is op dit moment geen AEM Assets - Magento-integratie. Als tussenoplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de element-URL&#39;s handmatig opslaan in Magento. Dynamic Media maken nu deel uit van AEM Assets en zullen op dezelfde manier werken.
+Er is momenteel geen AEM Assets - Magento-integratie. Als tussenoplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de elementen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en werkt op dezelfde manier.
 
 ## 4. Maakt het uit waar Magento wordt ingezet? (Op prem of in de cloud)
 
@@ -35,13 +35,13 @@ Het maakt niet uit waar Magento wordt ingezet. De integratie en het nieuwe AEM V
 
 Cataloguspagina&#39;s en productpagina&#39;s worden dynamisch gemaakt en in het cachegeheugen opgeslagen in AEM op basis van algemene catalogussjablonen en productpaginasjablonen. Er worden geen product- of catalogusgegevens geïmporteerd en opgeslagen in AEM.
 
-## 6. Plaats u ook prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
+## 6. Verzendt u ook de prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
 Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s direct opgehaald aan de clientzijde met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, zal er een behoefte aan geheim voorgeheugenbevestiging zijn.
 
 ## 7. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM-Magento?
 
-We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Voor meer informatie over op TTL gebaseerde geheim voorgeheugenongeldigverklaring, gelieve te verwijzen naar [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Raadpleeg [AEM Dispatcher voor meer informatie over op TTL gebaseerde cachevalidatie](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 8. Waarom gebruik je We.Retail niet?
 
@@ -79,9 +79,9 @@ De klanten die de handelsdiensten willen uitbreiden kunnen de zelfde integratie 
 
 Er zijn geen JCR-catalogus of productpagina&#39;s meer. Zie vraag 12.
 
-## 17. Zal SPA voorwerk met AEM redacteur van het KUUROORD opslaan?
+## 17. Zal SPA voorwerk opslaan met AEM SPA editor?
 
-AEM kan als auteursgereedschap voor om het even welk soort winkelfront worden gebruikt. Momenteel wordt hybride rendering gebruikt voor de nieuwe winkel. In de toekomst, zal AEM voor creatie met SPA en PWA worden gebruikt.
+AEM kan als auteursgereedschap voor om het even welk soort winkelfront worden gebruikt. Momenteel wordt hybride rendering gebruikt voor de nieuwe winkel. In de toekomst worden AEM gebruikt voor het ontwerpen met SPA en PWA.
 
 ## 18. Hoe speelt PIM in dit kader?
 
