@@ -1,6 +1,6 @@
 ---
 title: Basisbewerkingen
-description: Geniet van comfortabel navigeren door AEM en het basisgebruik ervan
+description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
 workflow-type: tm+mt
@@ -12,17 +12,17 @@ ht-degree: 4%
 
 # Basisbewerkingen {#basic-handling}
 
-Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij het gebruik van de AEM-auteuromgeving. Het gebruikt de console van **Plaatsen** als basis.
+Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij het gebruik van de AEM-auteursomgeving. Het gebruikt de console van **Plaatsen** als basis.
 
 >[!NOTE]
 >
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
->* Sneltoetsen zijn beschikbaar in AEM. Met name bij het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) en het [bewerken van pagina](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)&#39;s.
+>* Sneltoetsen zijn beschikbaar in alle AEM. Met name bij het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) en het [bewerken van pagina](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)&#39;s.
 
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-De gebruikersinterface van AEM is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Omdat de AEM UI aanraking-toegelaten is, kunt u aanraakgebaren op uw aanraakapparaten zoals uw mobiele telefoon of tablet gebruiken. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op flexibele wijze uw inhoud kunt ontwerpen.
+AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Omdat de AEM-interface aanraakbediening is, kunt u de aanraakbewegingen gebruiken op uw aanraakapparaten, zoals uw mobiele telefoon of tablet. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op flexibele wijze uw inhoud kunt ontwerpen.
 
 ## Eerste stappen {#first-steps}
 
@@ -30,7 +30,7 @@ Vlak nadat u zich hebt aangemeld, gaat u naar het [navigatievenster](#navigation
 
 ![Navigatievenster](/help/sites-cloud/authoring/assets/navigation.png)
 
-Voor een goed begrip van het basisgebruik van AEM, is dit document gebaseerd op de console van **Plaatsen** . Klik of tik op **Sites** om aan de slag te gaan.
+Om een goed inzicht in het basisgebruik van AEM te krijgen, is dit document gebaseerd op de console van **Plaatsen** . Klik of tik op **Sites** om aan de slag te gaan.
 
 ## Productnavigatie {#product-navigation}
 
@@ -44,7 +44,7 @@ Het overzicht zal de volgende keer opnieuw beginnen u tot een console toegang he
 
 ## Algemene navigatie {#global-navigation}
 
-U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt geactiveerd als een vervolgkeuzelijst op het volledige scherm wanneer u op de koppeling Adobe Experience Manager linksboven in het scherm klikt of tikt.
+U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
 
 U kunt het algemene navigatievenster sluiten door op **Sluiten** te klikken of erop te tikken om terug te keren naar uw vorige locatie.
 
@@ -52,8 +52,8 @@ U kunt het algemene navigatievenster sluiten door op **Sluiten** te klikken of e
 
 Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkermarge van het scherm worden vertegenwoordigd:
 
-* **[Navigatie](#navigation-panel)**- Wordt vertegenwoordigd door een kompas en het standaarddeelvenster wanneer u zich aanmeldt bij AEM
-* **[Gereedschappen](#tools-panel)**- Vertegenwoordigd door een hamer
+* **[Navigatie](#navigation-panel)** - Wordt vertegenwoordigd door een kompas en het standaarddeelvenster wanneer u zich aanmeldt bij AEM
+* **[Gereedschappen](#tools-panel)** - Vertegenwoordigd door een hamer
 
 De opties in deze deelvensters worden hieronder beschreven.
 
@@ -72,7 +72,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [Projecten zijn virtuele dashboards](/help/sites-cloud/authoring/projects/overview.md) die kunnen worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
 | Sites | Met de Sites-consoles kunt u sites [](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) maken, weergeven en beheren die op uw AEM-instantie worden uitgevoerd. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaringsfragmenten | Een [ervaringsfragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een zelfstandige ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard. |
-| Assets | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM-instantie wordt uitgevoerd.<!--add some kind of assets link--> |
+| Assets | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd.<!--add some kind of assets link--> |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het [ontwerpen van gerichte inhoud en het presenteren van persoonlijke ervaringen.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Deelvenster Gereedschappen {#tools-panel}
@@ -143,7 +143,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Weergaven](#viewing-and-selecting-resources)
 
-   Het weergavepictogram bevindt zich helemaal rechts van de AEM-werkbalk. De huidige weergave wordt ook gewijzigd. In de standaardweergave wordt bijvoorbeeld de **kolomweergave** weergegeven:
+   Het weergavepictogram bevindt zich helemaal rechts van de AEM werkbalk. De huidige weergave wordt ook gewijzigd. In de standaardweergave wordt bijvoorbeeld de **kolomweergave** weergegeven:
 
    ![Knop Weergaven](/help/sites-cloud/authoring/assets/views-button.png)
 
@@ -175,7 +175,7 @@ Er zijn verschillende beschikbare Help-bronnen:
 
 * **Navigatie**
 
-   De eerste keer dat u door het systeem navigeert, wordt met [een reeks dia&#39;s AEM-navigatie](#product-navigation)geïntroduceerd.
+   De eerste keer dat u door het systeem navigeert, wordt AEM navigatie [door](#product-navigation)een reeks dia&#39;s geïntroduceerd.
 
    ![Zelfstudie](/help/sites-cloud/authoring/assets/tutorial.png)
 
@@ -187,7 +187,7 @@ Er zijn verschillende beschikbare Help-bronnen:
 
    Navigeer dit overzicht zoals u het overzicht [van de](#product-navigation) productnavigatie wanneer eerst het openen van om het even welke console.
 
-   In het menu [**Pagina-informatie **kunt u** Help **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)selecteren om dit op elk gewenst moment opnieuw weer te geven.
+   In het menu [**Pagina-informatie** kunt u **Help**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) selecteren om dit op elk gewenst moment opnieuw weer te geven.
 
 * **Tools Console**
 
@@ -195,6 +195,7 @@ Er zijn verschillende beschikbare Help-bronnen:
 
    * **Documentatie** - De documentatie van het Beheer van de Ervaring van het Web bekijken
    * **Bronnen** voor ontwikkelaars - Bronnen en downloads voor ontwikkelaars
+
    >[!NOTE]
    >
    >U kunt tot een overzicht van kortere wegsleutels toegang hebben beschikbaar op elk ogenblik gebruikend hotkey `?` (vraagteken) wanneer in een console.
@@ -245,7 +246,7 @@ U kunt uw bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met
 
 >[!NOTE]
 >
->In AEM Assets worden standaard de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Als beheerder kunt u overlays gebruiken om AEM-elementen te configureren voor het weergeven van originele uitvoeringen als miniaturen.
+>Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
 
 ### Bronnen selecteren {#selecting-resources}
 
@@ -309,6 +310,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * Als deze optie is geselecteerd, wordt een vinkje op de miniatuur geplaatst en wordt de naam van de bron ook gemarkeerd.
    * De details van de geselecteerde bron worden weergegeven in de laatste kolom.
    * De werkbalk Handeling wordt beschikbaar.
+
    Wanneer een pagina in kolomweergave is geselecteerd, wordt de geselecteerde pagina samen met de volgende details weergegeven in de definitieve kolom:
 
    * Paginatitel
