@@ -28,11 +28,11 @@ De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze 
 * `OPTIONAL`: Optionele functionaliteit in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
 * `REQUIRED`: Een vereiste stap die wordt toegevoegd aan de workflow.
 * `UNNECESSARY`: Functionaliteit is niet nodig in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
-* `NUI_OOTB`: Functionaliteit die wordt geboden door [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `NUI_OOTB`: Functionaliteit van de [Asset compute](/help/assets/asset-microservices-configure-and-use.md).
 * `DMS7_OOTB`: Functionaliteit die door standaardconnectors wordt verstrekt. [!DNL Dynamic Media]
-* `NUI_MIGRATED`: Gemigreerd naar een [verwerkingsprofiel voor de Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `NUI_MIGRATED`: Gemigreerd naar een [verwerkingsprofiel voor de Dienst](/help/assets/asset-microservices-configure-and-use.md)van de Asset compute.
 * `UNSUPPORTED`: Momenteel niet ondersteund in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
 
 ## De tool Asset Workflow Migration installeren {#installing-tool}
 
-Zie **[Git Resource: AEM Assets as a Cloud Service - Workflowmigratie](https://github.com/adobe/aem-cloud-migration)**voor meer informatie over het installeren en samenstellen van code van de bron.
+Zie **[Git Resource: AEM Assets as a Cloud Service - Workflowmigratie](https://github.com/adobe/aem-cloud-migration)** voor meer informatie over het installeren en samenstellen van code van de bron.
