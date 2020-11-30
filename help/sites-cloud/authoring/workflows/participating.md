@@ -39,6 +39,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
    * Het aantal werkstromen dat op de pagina van toepassing is. U kunt:
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Klik/tik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
+
    ![Pagina met meerdere workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
@@ -72,7 +73,7 @@ U kunt een deelnemersstap uitvoeren vanuit:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open het **[AEM-vak](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Voltooid** op de werkbalk.
 1. Het dialoogvenster **Werkitem** voltooien wordt geopend. Selecteer de **Volgende Stap** van de drop-down selecteur en voeg een **Commentaar** toe indien nodig.
@@ -112,7 +113,7 @@ Als een stap aan u is toegewezen, maar om het even welke reden u geen actie kunt
 De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werkpunt werd toegewezen:
 
 * Als het het werkpunt aan een groep werd toegewezen, zijn de groepsleden beschikbaar.
-* Als het het werkpunt aan een groep werd toegewezen en dan aan een gebruiker werd afgevaardigd, zijn de groepsleden en de groep beschikbaar.
+* Als het het werkpunt aan een groep werd toegewezen en dan aan een gebruiker werd gedelegeerd, zijn de groepsleden en de groep beschikbaar.
 * Als het het werkpunt aan één enkele gebruiker werd toegewezen, kan het het werkpunt niet worden afgevaardigd.
 
 Op deze actie kunt u aangeven:
@@ -131,7 +132,7 @@ U kunt een deelnemersstap delegeren vanuit:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open het **[AEM-vak](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Delegeren** op de werkbalk.
 1. Het dialoogvenster wordt geopend. Geef de **gebruiker** op in de keuzelijst (dit kan ook een groep zijn) en voeg zo nodig een **opmerking** toe.
@@ -181,7 +182,7 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open het **[AEM-vak](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Stap terug** om het dialoogvenster te openen.
 1. Geef de **vorige stap** op en voeg zo nodig een **opmerking** toe.
@@ -242,7 +243,7 @@ U kunt de details van het werkitem openen vanuit:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open het **[AEM-vak](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Openen** om de informatielusjes te openen.
 1. Selecteer zo nodig de gewenste actie, geef details op en bevestig deze met **OK** (of **Annuleren**).
@@ -263,7 +264,7 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
-1. Open het **[AEM-vak](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Payload** weergeven op de werkbalk om het dialoogvenster te openen.
    * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Met de component **Brondefinitie** kunt u nieuwe items toevoegen.
