@@ -101,7 +101,7 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
    ![Een tegel openen](/help/sites-cloud/authoring/assets/projects-open-tile.png)
 
-1. In AEM worden de items in die tegel weergegeven. U kunt de selectiemodus activeren om de items te wijzigen of te verwijderen.
+1. AEM geeft de items in die tegel weer. U kunt de selectiemodus activeren om de items te wijzigen of te verwijderen.
 
    ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
@@ -136,8 +136,7 @@ Een project inactief (of actief) maken:
 1. In de console van **Projecten** , open uw project en vind dan de de informatietegel **van het** Project.
 
    >[!NOTE]
-   >
-   >Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie Tegels [toevoegen](#adding-items-to-a-tile).
+   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie Tegels [toevoegen](#adding-items-to-a-tile).
 
 1. Tik/klik op **Bewerken**.
 1. Wijzig de kiezer van **Actief** in **Inactief** (of andersom).
