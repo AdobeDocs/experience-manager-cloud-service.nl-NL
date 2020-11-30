@@ -41,7 +41,7 @@ Workflows kunnen worden gestart vanaf:
 
 >[!NOTE]
 >
->AEM-beheerders kunnen workflows starten met verschillende andere methoden.
+>AEM beheerders kunnen workflows starten met verschillende andere methoden.
 
 <!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
