@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.5.0
+title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.5.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.5.0
 translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
@@ -33,7 +33,7 @@ Volg deze sectie om te leren over wat nieuw en de updates voor AEM Sites in AEM 
 
 Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cloud Manager in AEM als Cloud Service Release 2020.5.0.
 
-### What&#39;s New {#what-is-new}
+### Wat is er nieuw?{#what-is-new}
 
 * Er zijn zes aanvullende regels voor codekwaliteit toegevoegd om klanten te helpen potentiële problemen te identificeren wanneer ze een migratie naar Cloud Service plannen.
 * Er is een nieuwe metrische *Cloud Service-compatibiliteit* toegevoegd om het aantal compatibiliteitsproblemen samen te vatten.
