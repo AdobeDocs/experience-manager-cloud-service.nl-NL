@@ -1,6 +1,6 @@
 ---
-title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager als voorbereiding op de cloudservice
-description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als Cloud Service-project moet worden geïmplementeerd. '
+title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager als gereedheid voor Cloud Service
+description: 'Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Servicen voor de verschillende gegevensbeschermings- en gegevensprivacyregels; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
@@ -20,21 +20,21 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Meer informatie over het antwoord van Adobe op privacy-problemen en wat dit voor u als Adobe-klant betekent, vindt u in het Privacy Center [van](https://www.adobe.com/privacy.html)Adobe.
+>Voor meer informatie over Adobe aan privacykwesties, en wat dit voor u als Adobe betekent, zie de klant van de Privacy van de [Adobe](https://www.adobe.com/privacy.html).
 
-Adobe biedt documentatie en procedures (met API&#39;s, indien beschikbaar), waarmee de privacybeheerder van de klant of de AEM-beheerder gegevensbeschermings- en privacyverzoeken kan verwerken en waarmee onze klanten aan deze regels kunnen voldoen. De gedocumenteerde procedures zullen klanten toestaan om de regelgevende verzoeken manueel of door in APIs uit te voeren, waar beschikbaar, van een extern portaal of een dienst uit te voeren.
+Adobe verschaft documentatie en procedures (met API&#39;s, indien beschikbaar), zodat de privacybeheerder van de klant of AEM beheerder verzoeken om gegevensbescherming en privacy van gegevens kan verwerken en onze klanten kunnen helpen zich aan deze regels te houden. De gedocumenteerde procedures zullen klanten toestaan om de regelgevende verzoeken manueel of door in APIs uit te voeren, waar beschikbaar, van een extern portaal of een dienst uit te voeren.
 
 >[!CAUTION]
 >
->De hier beschreven details zijn beperkt tot Adobe Experience Manager als Cloud Service.
+>De hier gedocumenteerde details zijn beperkt tot Adobe Experience Manager als Cloud Service.
 >
->Voor gegevens van een andere Adobe On-demand-service, samen met eventuele privacyverzoeken, moeten acties op die service worden ondernomen.
+>Voor gegevens van een andere Adobe On-demand-dienst, samen met eventuele privacyverzoeken, moeten maatregelen worden genomen met betrekking tot die dienst.
 >
->Zie het Privacy Center [van](https://www.adobe.com/privacy.html)Adobe voor meer informatie.
+>Zie [Adobe Privacy Center](https://www.adobe.com/privacy.html)voor meer informatie.
 
 ## Inleiding {#introduction}
 
-Exemplaren van Adobe Experience Manager als Cloud Service en de toepassingen die erop worden uitgevoerd, zijn eigendom van en worden beheerd door onze klanten.
+Exemplaren van Adobe Experience Manager als Cloud Service, en de toepassingen die op hen lopen, zijn eigendom van en werken door onze klanten.
 
 Bijgevolg vallen gegevensbeschermingsvoorschriften, zoals GDPR, CCPA en andere, grotendeels onder de verantwoordelijkheid van de klanten.
 
@@ -54,31 +54,31 @@ De belangrijkste bepalingen van deze verordeningen zijn:
 
 4. Uitschakelen van verkoop van gegevens.
 
-Voor Adobe Experience Manager als cloudservice:
+Voor Adobe Experience Manager als Cloud Service:
 
 * De instanties en toepassingen die erop worden uitgevoerd, zijn eigendom van en worden beheerd door de klant.
 
    * Dit betekent in feite dat de klant de regelgevende taken beheert, waaronder Business Entities en Service Provider, Data Controller en Data Processor.
 
-   * De Adobe Experience Platform Privacy Service maakt geen deel uit van de workflow voor AEM, zoals in het onderstaande diagram wordt geïllustreerd.
+   * De Adobe Experience Platform Privacy Service zal geen deel uitmaken van de workflow voor AEM, zoals in het onderstaande diagram wordt geïllustreerd.
 
-* AEM omvat documentatie en procedures voor de privacybeheerder van de klant en/of de beheerder van AEM om de verzoeken van de privacyverordening uit te voeren; handmatig of via API&#39;s, indien beschikbaar.
+* AEM bevat documentatie en procedures voor de privacybeheerder en/of AEM beheerder van de klant om de verzoeken om privacyregelgeving uit te voeren; handmatig of via API&#39;s, indien beschikbaar.
 
 * Er is geen nieuwe service of interface toegevoegd.
 
    * In plaats daarvan worden procedures en APIs gedocumenteerd voor gebruik door klant UIs/portals die verzoeken van de privacyverordening behandelen.
 
-* AEM zal geen uit-van-de-doos hulpmiddelen omvatten om het privacyverzoekwerkschema te steunen.
+* AEM bevat geen out-of-the-box tools ter ondersteuning van de workflow voor privacyverzoeken.
 
-   * Adobe verstrekt documentatie en procedures voor de de privacybeheerder van de klant en/of beheerder AEM, toelatend hen om verzoeken met betrekking tot de privacyverordeningen manueel uit te voeren.
+   * Adobe zal documentatie en procedures voor de de privacybeheerder en/of AEM van de klant verstrekken, toelatend hen om verzoeken met betrekking tot de privacyverordeningen manueel uit te voeren.
 
-Adobe biedt procedures voor het verwerken van privacyverzoeken met betrekking tot Access, Delete en Opt-Out voor Adobe Experience Manager als Cloud Service. In sommige gevallen zijn er API&#39;s beschikbaar die kunnen worden aangeroepen via een door de klant ontwikkeld portaal of scripts om te helpen met automatisering.
+Adobe voorziet in procedures voor de afhandeling van privacyverzoeken met betrekking tot Access, Delete en Opt-Out voor Adobe Experience Manager als Cloud Service. In sommige gevallen zijn er API&#39;s beschikbaar die kunnen worden aangeroepen via een door de klant ontwikkeld portaal of scripts om te helpen met automatisering.
 
 In het volgende diagram ziet u hoe een workflow voor privacyverzoeken eruit kan zien (geïllustreerd met Adobe Experience Manager 6.5):
 
 ![Gegevensbescherming en privacy](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager als Cloud Service en Regelgeving {#aem-as-a-cloud-service-and-regulatory-readiness}
+## Adobe Experience Manager als Cloud Service en regelgevende gereedheid {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Zie de volgende secties voor documentatie over regelgeving voor productgebieden van AEM als Cloud Service.
 
@@ -92,7 +92,7 @@ See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/hel
 
 ## Adobe Experience Manager als Cloud Service-integratie met Adobe Target en Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Deze Adobe Experience Manager als integratie met de Cloud Service is mogelijk met services die geschikt zijn voor gegevensbescherming en privacy (bijvoorbeeld GDPR). Er worden geen persoonlijke gegevens van Adobe Target of Adobe Analytics opgeslagen in AEM met betrekking tot de integratie.
+Deze Adobe Experience Manager als integratie van Cloud Servicen is geschikt voor gegevensbeveiliging en privacy (bijvoorbeeld GDPR). Er worden geen persoonsgegevens van Adobe Target of Adobe Analytics in AEM opgeslagen met betrekking tot de integratie.
 Zie voor meer informatie:
 
 * [Adobe Target - Overzicht van privacy](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
