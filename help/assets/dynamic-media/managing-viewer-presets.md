@@ -113,7 +113,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
     <ul>
      <li>Een hoogte-breedteverhouding van 2:1.</li>
      <li>Gelabeld met de trefwoorden <code>equirectangular</code>, of <code>spherical</code> en <code>panorama</code>, <code>spherical </code>en <code>panoramic</code>. Zie <a href="/help/sites-cloud/authoring/features/tags.md">Tags</a>gebruiken.</li>
-    </ul> <p>Zowel de hoogte-breedteverhouding als de trefwoordcriteria zijn van toepassing op panoramische elementen voor de pagina met elementdetails en de WCM-component "Panoramische media".</p></td>
+    </ul> <p>Zowel zijn de aspectverhouding als de sleutelwoordcriteria van toepassing op panoramische activa voor de de detailpagina van activa en de component van "Panoramische Media" WCM.</p></td>
   </tr>
     <tr>
    <td><strong>Video over slim uitsnijden</strong><br /> </td>
@@ -419,7 +419,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling](#special-consi
 
       Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-      De CSS-opmaakeigenschappen voor elk type voorinstelling voor viewers worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [naslaggids](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)voor viewers. Als u bijvoorbeeld een viewervoorinstelling van het type maakt, raadpleegt u `Mixed_Media`Gemengde Media Viewer [](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) aanpassen voor een lijst en beschrijving van elke eigenschap.
+      De eigenschappen voor CSS-stijlen voor elk type voorinstelling voor viewers worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [naslaggids](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)voor viewers. Als u bijvoorbeeld een viewervoorinstelling van het type maakt, raadpleegt u `Mixed_Media`Gemengde Media Viewer [](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) aanpassen voor een lijst en beschrijving van elke eigenschap.
 
    * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
@@ -469,7 +469,7 @@ Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt,
   </tr>
   <tr>
    <td>Segment</td>
-   <td><p><code>Segment </code>Dit is de standaardweergavemodus voor de voorinstellingen voor de uit-van-box Interactieve video-viewer <code>Shoppable_Video_light</code> en <code>Shoppable_Video_dark</code> en alle interactieve voorinstellingen voor video-viewers die u zelf maakt.</p> <p>Als er in deze modus minder miniaturen zijn toegewezen aan een videosegment dan het aantal zichtbare vlekken in het weergavevenster, worden miniaturen van de volgende of vorige subsegmenten <i>niet </i>opgehaald om lege vlekken in het deelvenster te vullen. Met andere woorden, het behoudt de weergave van stalen die aan het specifieke videosegment zijn toegewezen.</p> </td>
+   <td><p><code>Segment </code>is de standaardweergavemodus voor de voorinstellingen voor de uit-van-box Interactieve video-viewer <code>Shoppable_Video_light</code> en <code>Shoppable_Video_dark</code> en alle interactieve voorinstellingen voor video-viewers die u zelf maakt.</p> <p>Als er in deze modus minder miniaturen zijn toegewezen aan een videosegment dan het aantal zichtbare vlekken in het weergavevenster, worden miniaturen van de volgende of vorige subsegmenten <i>niet </i>opgehaald om lege vlekken in het deelvenster te vullen. Met andere woorden, het behoudt de weergave van stalen die aan het specifieke videosegment zijn toegewezen.</p> </td>
   </tr>
   <tr>
    <td>Doorlopend</td>
@@ -567,7 +567,7 @@ Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellinge
    * Tik **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina Voorinstelling viewer.
    * Tik **[!UICONTROL Cancel]** om eventuele wijzigingen die u hebt aangebracht, te voorkomen en terug te keren naar de voorinstellingspagina van de viewer.
 
-## Aangepaste voorinstellingen van viewers verwijderen {#deleting-custom-viewer-presets}
+## Aangepaste voorinstellingen viewer verwijderen {#deleting-custom-viewer-presets}
 
 U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en toegevoegd aan dynamische media.
 
