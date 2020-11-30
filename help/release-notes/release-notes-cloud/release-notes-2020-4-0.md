@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager als de Nota's van de Versie van de Cloud Service voor 2020.4.0
+title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.4.0
 translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
