@@ -1,6 +1,6 @@
 ---
 title: Integreren met Git
-description: Integreren met Git - Cloud Servicen
+description: Integreren met Git - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -65,5 +65,5 @@ Synchroniseer releasetags van een cloudbeheeropslagplaats naar een door de klant
 ## Aanvullende bronnen {#additional-resources}
 
 * [GitHub-bronnen](https://try.github.io)
-* [Zelfstudies voor Atlassian Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
