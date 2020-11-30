@@ -1,6 +1,6 @@
 ---
 title: Zoekformulieren configureren
-description: Het vormen Vormen van het Onderzoek Vormen voor Adobe Experience Manager als Cloud Service.
+description: Zoeken in Forms voor Adobe Experience Manager configureren als Cloud Service.
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -28,9 +28,9 @@ Samen helpen u uw inhoud snel en gemakkelijk te vinden van:
 >
 >U kunt de onderliggende service [Inhoud zoeken en indexeren](/help/operations/indexing.md) configureren.
 
-Met **Zoeken in formulieren** kunt u deze deelvensters naar wens aanpassen en uitbreiden.
+Met **Zoeken in Forms** kunt u deze deelvensters naar wens aanpassen en uitbreiden.
 
-De **zoekformulieren** bieden een keuzelijst met [voorspellingen](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
+De **zoekfunctie van Forms** biedt een keuzelijst met [voorspelling](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
 
 * **Opties**
 
@@ -38,9 +38,9 @@ De **zoekformulieren** bieden een keuzelijst met [voorspellingen](#predicates-an
 
       * **Zoeken in formulieren**
 
-## Standaardformulieren {#default-forms}
+## Standaard Forms {#default-forms}
 
-Wanneer u voor het eerst toegang krijgt tot de console **Zoeken in formulieren** , ziet u dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u uw aangepaste configuratie [](#deleting-a-configuration-to-reinstate-the-default)schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
+Wanneer u voor het eerst toegang krijgt tot de Forms **-console** Zoeken, ziet u dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u uw aangepaste configuratie [](#deleting-a-configuration-to-reinstate-the-default)schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
 
 ![overzicht van zoekformulieren configureren](assets/csf-overview.png)
 
@@ -62,7 +62,7 @@ De standaardconfiguraties (alfabetisch weergegeven) zijn:
 
 * **Pagina-editor (zoeken naar producten):**
 
-* **De Redacteur van de pagina (onderzoek Scene7)**:
+* **Pagina-editor (zoeken in Scene7)**:
 
 * **Pagina-editor (videozoekopdracht)**:
 
@@ -95,8 +95,8 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <th>Instellingen</th>
   </tr>
   <tr>
-   <td>Analytics</td>
-   <td>Mogelijkheden zoeken/filteren in de Sites-browser bij het weergeven van gegevens met analysemogelijkheden. Analytics-zoekfilters worden geladen tot ze overeenkomen met de toegewezen kolommen voor aangepaste analyse.</td>
+   <td>Analyse</td>
+   <td>Mogelijkheden zoeken/filteren in de Sites-browser bij het weergeven van gegevens met analysemogelijkheden. De zoekfilters van Analytics laden tot aan de in kaart gebrachte aangepaste analytische kolommen.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -149,7 +149,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Onderdelen</td>
-   <td>Hiermee kan een auteur zoeken of filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td>
+   <td>Hiermee kan een auteur zoeken/filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td>
    <td>
     <ul>
      <li>Plaatsaanduiding</li>
@@ -556,11 +556,11 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * The&amp;ast; op de veldlabels op het tabblad **Instellingen** betekent dat de velden verplicht zijn en dat er een foutbericht wordt weergegeven als deze leeg zijn gelaten.
 
-## Uw zoekformulieren configureren {#configuring-your-search-forms}
+## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
 ### Een aangepaste configuratie maken/openen {#creating-opening-a-customized-configuration}
 
-1. Navigeer naar **Gereedschappen**, **Algemeen**, Formulieren **** zoeken.
+1. Navigeer naar **Gereedschappen**, **Algemeen**, Forms **** doorzoeken.
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik het pictogram **Bewerken** om de configuratie voor het bijwerken te openen.
@@ -668,9 +668,9 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    >1. Breng wijzigingen aan in `/apps.`
 
 
-1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****. Selecteer vervolgens **Bewerken**.
+1. Open de Forms **-console** Zoeken en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****. Selecteer vervolgens **Bewerken**.
 
-1. Afhankelijk van de configuratie voegt een **Opties** of het Bezit **van** Opties aan de configuratie toe.
+1. Afhankelijk van de configuratie voeg een **Opties** of het Bezit **van** Opties aan de configuratie toe.
 1. Werk de velden bij, met name:
 
    * **Eigenschapnaam**
@@ -710,7 +710,7 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
   </tr>
   <tr>
    <td>Verwijderen</td>
-   <td>De machtigingen voor het <code>/apps</code> knooppunt lezen, schrijven, verwijderen</td>
+   <td>Rechten voor het <code>/apps</code> knooppunt lezen, schrijven, verwijderen</td>
   </tr>
   <tr>
    <td>Voorvertoning</td>
