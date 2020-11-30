@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Replicatie {#replication}
 
-Adobe Experience Manager als Cloud Service gebruikt het [Verkopen vermogen van de Distributie](https://sling.apache.org/documentation/bundles/content-distribution.html) van de Inhoud om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe I/O wordt uitgevoerd die buiten AEM runtime is.
+Adobe Experience Manager als Cloud Service gebruikt de [Verschuivende capaciteit van de Distributie](https://sling.apache.org/documentation/bundles/content-distribution.html) van de Inhoud om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe I/O wordt uitgevoerd die buiten AEM runtime is.
 
 >[!NOTE]
 >
