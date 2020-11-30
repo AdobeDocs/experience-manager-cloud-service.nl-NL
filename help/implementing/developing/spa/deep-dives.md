@@ -1,6 +1,6 @@
 ---
-title: Diepe kieuwen van SPA
-description: De AEM redacteur SDK van het KUUROORD werd voorzien in een reeks AEM Gems zittingen. Ontvangen door de ingenieurs van Adobe, kan deze reeks als grote gids dienen om een dieper inzicht in de AEM Redacteur SDK van het KUUROORD op een laag niveau te bereiken, die door de ingenieurs van Adobe wordt ontvangen.
+title: SPA diep duiken
+description: De AEM SPA Editor SDK is opgenomen in een reeks AEM Gems-sessies. Deze reeks wordt gehost door Adobe-engineers en kan dienen als een ideale gids voor een beter begrip van de AEM SPA Editor SDK op een laag niveau, gehost door Adobe-engineers.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -10,12 +10,12 @@ ht-degree: 0%
 ---
 
 
-# Diepe kieuwen van SPA {#spa-deep-dives}
+# SPA diep duiken {#spa-deep-dives}
 
-De AEM redacteur SDK van het KUUROORD werd voorzien in een reeks AEM Gems zittingen. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een reeks technische diepteduiken van experts van Adobe. Ontvangen door de ingenieurs van Adobe, kan deze reeks als grote gids dienen om een dieper inzicht in de AEM Redacteur SDK van het KUUROORD op een laag niveau te bereiken.
+De AEM SPA Editor SDK is opgenomen in een reeks AEM Gems-sessies. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een reeks technische diepteduiken van experts van Adobe. Deze reeks wordt gehost door Adobe-engineers en kan dienen als een ideale gids voor een beter begrip van de AEM SPA Editor SDK op een laag niveau.
 
 ## Gem-sessies {#gem-sessions}
 
-* **[AEM Redacteur](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)van het KUUROORD[](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)** - een overzicht van beginner van de Redacteur van het KUUROORD. Als u net begonnen bent met SPAs in AEM, begin hier.
-* **[Diepe Dive van SDK van de Redacteur van het KUUROORD - Deel 1 - Reageer](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)** - een diepe duik in de ontwikkeling van Toepassingen van de Enige Pagina die kunnen worden authored gebruikend de Redacteur van de AEM van de Pagina. Behandelt overwegingen en aanbevelingen over de structuur van projecten, overzicht van alle lagen die de architectuur van een project, de rol van AEM en de componenten van het KUUROORD, structuur en zeer belangrijke gebieden JSON van het modelvoorwerp, en meer vormen!
-* **[De Diepe Dive van SDK van het KUUROORD - Deel 2 - Hoek](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)** - een diepe duik in de ontwikkeling van Toepassingen van de Enige Pagina die kunnen worden authored gebruikend de Redacteur van de AEM van de Pagina. Behandelt overwegingen en aanbevelingen over de structuur van projecten, overzicht van alle lagen die de architectuur van een project, de rol van AEM en de componenten van het KUUROORD, structuur en zeer belangrijke gebieden JSON van het modelvoorwerp, en meer vormen!
+* **[AEM SPA Editor](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html) [](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)** - Een beginnersoverzicht van de SPA Editor. Als we net begonnen zijn met SPA in AEM, begin hier.
+* **[SPA Editor SDK diep duiken - Deel 1 - Reageren](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)** - Een diepe duik in de ontwikkeling van toepassingen voor één pagina die kunnen worden gemaakt met de AEM paginaeditor. Behandelt overwegingen en aanbevelingen over de structuur van projecten, overzicht van alle lagen die de architectuur van een project, de rol van AEM en SPA componenten, structuur en zeer belangrijke gebieden JSON van het modelvoorwerp, en meer vormen!
+* **[SPA Editor SDK Diep duiken - Deel 2 - Hoekig](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)** - Een diepe duik in de ontwikkeling van toepassingen voor één pagina die kunnen worden gemaakt met de AEM paginaeditor. Behandelt overwegingen en aanbevelingen over de structuur van projecten, overzicht van alle lagen die de architectuur van een project, de rol van AEM en SPA componenten, structuur en zeer belangrijke gebieden JSON van het modelvoorwerp, en meer vormen!
