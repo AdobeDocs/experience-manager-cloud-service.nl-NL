@@ -61,7 +61,7 @@ Adobe Illustrator-bestandsindeling is een variant van PDF. De belangrijkste vers
 * Adobe Illustrator-documenten bestaan uit één pagina met meerdere lagen. Elke laag wordt geëxtraheerd als een PNG-subelement onder het Illustrator-hoofdelement.
 * PDF-documenten bestaan uit een of meer pagina&#39;s. Elke pagina wordt uitgepakt als een PDF-subelement van één pagina onder het PDF-hoofddocument met meerdere pagina&#39;s.
 
-De subelementen worden door de `Create Sub Asset process` component binnen de algemene `DAM Update Asset` workflow gemaakt. Tik op deze procescomponent **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]** om deze binnen de workflow weer te geven.
+De subelementen worden door de `Create Sub Asset process` component binnen de algemene `DAM Update Asset` workflow gemaakt. Tik op **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]** om deze procescomponent in de workflow te zien.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -138,7 +138,7 @@ Voor InDesign-bestanden worden subelementen alleen geëxtraheerd als de Adobe In
 
 <!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
-De het procescomponent van het Proces van Media van de Extractie in het `DAM Update Asset` werkschema stelt verscheidene pre-gevormde Breid Manuscripten uit om InDesign dossiers te verwerken.
+De het procescomponent van het Proces van de Extractie van Media in het `DAM Update Asset` werkschema stelt verscheidene pre-gevormde Breid Manuscripten uit om InDesign dossiers te verwerken.
 
 ![De ExtendScript-paden in de argumenten van Media Extraction-proces](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
@@ -307,7 +307,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </div>
     <ul>
      <li><strong>Type </strong>- Selecteer <strong>Adaptief</strong> (standaard), <strong>Web</strong>of <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li>
-     <li><strong>Dithering</strong> - Selecteer <strong>Diffuus</strong> of <strong>Uit</strong>.</li>
+     <li><strong>Dithering</strong> - Selecteer <strong>Onscherp</strong> of <strong>Uit</strong>.</li>
      <li><strong>Aantal kleuren </strong>- Voer een getal in tussen 2 en 256.</li>
      <li><strong>Kleurenlijst</strong> - voer een lijst in met door komma's gescheiden waarden. Voer voor wit, grijs en zwart bijvoorbeeld 000000,888888,ffffffff in.</li>
     </ul>
