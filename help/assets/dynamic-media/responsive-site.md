@@ -12,9 +12,9 @@ ht-degree: 12%
 
 # Geoptimaliseerde afbeeldingen leveren voor een responsieve site {#delivering-optimized-images-for-a-responsive-site}
 
-Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsieve functies in uw webontwikkelaar. U kopieert de responsieve (**[!UICONTROL RESS]**) code naar het klembord, zodat u deze kunt delen met de webontwikkelaar.
+Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsieve serving met uw webontwikkelaar. U kopieert de responsieve (**[!UICONTROL RESS]**) code naar het klembord, zodat u deze kunt delen met de webontwikkelaar.
 
-Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website zich echter op AEM bevindt, wordt de afbeelding door een externe afbeeldingsserver gerenderd en aan de webpagina geleverd.
+Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website echter op AEM staat, rendert een externe afbeeldingsserver de afbeelding en levert deze aan de webpagina.
 
 Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
 
