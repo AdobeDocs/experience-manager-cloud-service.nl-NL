@@ -36,7 +36,7 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 
 ![Verwerkingsprofiel maken voor videotranscodering in Experience Manager](assets/video-processing-profile-for-mp4.png)
 
-*Afbeelding: A Processing Profile for video transcoding in[!DNL Experience Manager].*
+*Afbeelding: A Processing Profile for video transcoding in [!DNL Experience Manager].*
 
 Als u alleen de breedte of alleen de hoogte opgeeft en het andere veld leeg laat, behouden de uitvoeringen de hoogte-breedteverhouding. Momenteel is alleen de h264-codec beschikbaar voor transcodering.
 
