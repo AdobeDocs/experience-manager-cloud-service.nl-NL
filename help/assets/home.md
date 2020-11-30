@@ -25,7 +25,7 @@ Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a Cloud Serv
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Volledige documentatie van Experience Manager as a Cloud Service. |
+| [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Volledige documentatie van Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Inleidend overzicht en verklarende woordenlijst van Experience Manager as a Cloud Service. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Releaseopmerkingen, nieuwe functies, verouderde en verwijderde functies en bekende problemen. |
 | [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
