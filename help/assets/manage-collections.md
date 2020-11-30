@@ -1,6 +1,6 @@
 ---
 title: Verzamelingen digitale middelen beheren
-description: Begrijp het concept van inzameling in de Activa van de Adobe Experience Manager. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
+description: Begrijp het concept van inzameling in de Activa van Adobe Experience Manager. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -30,7 +30,7 @@ De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zi
 
 De **[!UICONTROL Collections]** console openen:
 
-Tik of klik op het Experience Manager-logo om het te openen. **[!UICONTROL Collections]** From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Tik of klik op het logo van de Experience Manager om het logo te openen. **[!UICONTROL Collections]** From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Een verzameling maken {#create-a-collection}
 
@@ -54,7 +54,7 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 
    >[!NOTE]
    >
-   >Met Experience Manager Assets kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >Met Experience Manager-elementen kunt u revisietaken voor een verzameling maken, net als bij het maken van revisietaken voor een map met elementen.
 
    Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#add-assets-to-a-collection)voor meer informatie.
 
@@ -140,7 +140,7 @@ De functie Zoeken in verzamelingen ondersteunt zowel [Zoeken naar verzamelingen]
 
 ### Verzamelingen zoeken {#search-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt de AEM Assets naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt AEM Assets naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
 
 Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
@@ -148,7 +148,7 @@ Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijk
 
 Tik of klik op een verzameling in de verzamelingsconsole om deze te openen.
 
-In een verzameling is het zoeken naar AEM-middelen beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
+Binnen een verzameling AEM het zoeken naar middelen beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
 
 ## Verzamelingsinstellingen bewerken {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elemente
 
 ## Eigenschappen van metagegevens van meerdere verzamelingen bewerken {#editing-metadata-properties-of-multiple-collections}
 
-Met Adobe Enterprise Manager (AEM) Assets kunt u de metagegevens van vele verzamelingen bulksgewijs bewerken. Gebruik de [!UICONTROL Properties] pagina om wijzigingen in metagegevens uit te voeren voor meerdere verzamelingen. Wijzig bijvoorbeeld de eigenschappen van metagegevens in een gemeenschappelijke waarde of voeg tags toe of wijzig deze.
+Met Enterprise Manager-middelen (AEM Adobe) kunt u de metagegevens van vele verzamelingen bulksgewijs bewerken. Gebruik de [!UICONTROL Properties] pagina om wijzigingen in metagegevens uit te voeren voor meerdere verzamelingen. Wijzig bijvoorbeeld de eigenschappen van metagegevens in een gemeenschappelijke waarde of voeg tags toe of wijzig deze.
 
 Gebruik de Schema-editor om de [!UICONTROL Properties] pagina met metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
 
