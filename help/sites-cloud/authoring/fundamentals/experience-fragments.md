@@ -1,6 +1,6 @@
 ---
 title: Ervaringsfragmenten
-description: Met Adobe Experience Manager kunt u uw ervaringen herbruikbaar en flexibel maken.
+description: Gebruik Adobe Experience Manager als Cloud Service Experience Fragments om uw ervaringen herbruikbaar en flexibel te maken.
 translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # Ervaringsfragmenten {#experience-fragments}
 
-In Adobe Experience Manager als Cloud Service, een Experience Fragment:
+In Adobe Experience Manager als Cloud Service, een Fragment van de Ervaring:
 * is een groep van een of meer componenten
 * omvat zowel inhoud als lay-out
 * kan worden verwezen binnen pagina&#39;s
@@ -53,7 +53,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 * Wanneer u ervaringen wilt hergebruiken.
    * Ervaringen die opnieuw worden gebruikt met dezelfde of vergelijkbare inhoud.
 * Wanneer u AEM gebruikt als platform voor het leveren van inhoud voor derden.
-   * Elke oplossing die AEM als platform voor de levering van inhoud wil gebruiken.
+   * Om het even welke oplossing die AEM als platform van de inhoudslevering wil gebruiken.
    * Inhoud insluiten in aanraakpunten van derden.
 * Als u ervaring hebt met verschillende variaties of uitvoeringen.
    * Kanaal- of contextspecifieke variaties.
@@ -229,6 +229,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
    * **Naam** - indien leeg gelaten, wordt deze afgeleid van de titel
    * **Beschrijving**
    * **Variatietags**
+
    Bijvoorbeeld:
 
    ![Variatie-eigenschappen](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -247,6 +248,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 
    * Sleep het vereiste fragment uit de middelenbrowser en zet het neer op de component.
    * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
+
    >[!NOTE]
    >
    >Bewerken werkt op de werkbalk van de component als een sneltoets waarmee het fragment in de fragmenteditor wordt geopend.
@@ -333,7 +335,7 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
       * **Aantal pagina&#39;s dat dit fragment** gebruikt - alleen informatie
    * **Cloud Services**
       * **Cloud Configuration**
-      * **Cloud Service Configurations**
+      * **Configuraties van Cloud Servicen**
       * **Facebook-pagina-id**
       * **Pinterest board**
    * **Verwijzingen**
@@ -353,4 +355,4 @@ Met de `.plain.` kiezer in de URL hebt u vanuit de browser toegang tot de onbewe
 
 Experience Fragments worden standaard geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
 
-Voor exporteren naar Adobe Target kan JSON ook worden gebruikt. Zie Doelintegratie met de Fragmenten van de Ervaring voor volledige informatie. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Voor export naar Adobe Target kan JSON ook worden gebruikt. Zie Doelintegratie met de Fragmenten van de Ervaring voor volledige informatie. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
