@@ -13,7 +13,7 @@ ht-degree: 20%
 
 # Elementen in mappen en verzamelingen controleren {#review-folder-assets-and-collections}
 
-Met AEM-middelen (Adobe Experience Manager) kunt u workflows voor ad-hocrevisies instellen voor elementen in een map of een verzameling. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
+Met Adobe Experience Manager-middelen (AEM) kunt u workflows voor ad-hocrevisies instellen voor elementen die zich in een map of in een verzameling bevinden. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
 Nadat u de middelen hebt gedeeld, kunnen revisoren deze goedkeuren of afwijzen. Meldingen worden in verschillende fasen van de workflow verzonden om beoogde ontvangers op de hoogte te stellen van de voltooiing van verschillende taken. Als u bijvoorbeeld een map of verzameling deelt, ontvangt de controleur een melding dat een map of verzameling is gedeeld voor revisie.
 
