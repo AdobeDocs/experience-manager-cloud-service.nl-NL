@@ -97,7 +97,7 @@ Zie ook [Asset Picker](/help/assets/search-assets.md#assetselector) voor meer in
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar AEM naar elementen bladert door naar een andere map in het **[!UICONTROL Path]** veld te navigeren.
+   U kunt de locatie waar AEM naar elementen bladert wijzigen door naar een andere map in het **[!UICONTROL Path]** veld te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
