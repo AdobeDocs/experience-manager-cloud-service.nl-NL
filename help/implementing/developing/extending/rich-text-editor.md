@@ -1,11 +1,11 @@
 ---
-title: Vorm de Rich Text Editor aan auteursinhoud in [!DNL Adobe Experience Manager] als Cloud Service.
-description: Vorm Rich Text Editor aan auteursinhoud in [!DNL Adobe Experience Manager] als Cloud Service.
+title: Vorm de Rich Text Editor aan auteursinhoud [!DNL Adobe Experience Manager] als Cloud Service.
+description: Vorm Rich Text Editor aan auteursinhoud [!DNL Adobe Experience Manager] als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,7 @@ De [wijze van het uitgeven van RTE en de interface](#editingmodes) die u voor uw
 >* **Naam**: `configPath`
 >* **Type**: `String`
 >* **Waarde**: pad van het knooppunt met de feitelijke configuratie
+
 >
 >
 Noem niet de de configuratieknoop van RTE zoals `config`. Anders, worden de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
@@ -160,6 +161,7 @@ De de tekstcomponent [van Componenten van de](https://docs.adobe.com/content/hel
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
