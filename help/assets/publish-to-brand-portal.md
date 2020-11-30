@@ -109,6 +109,7 @@ U kunt mappen met assets direct publiceren of verwijderen of op een latere datum
          Klik op **Next.**
 
       1. Bevestig uw selectie in **[!UICONTROL Scope]** en klik op **[!UICONTROL Publish to Brand Portal]**.
+
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde map te bekijken.
 
 1. **Mappen later publiceren**
