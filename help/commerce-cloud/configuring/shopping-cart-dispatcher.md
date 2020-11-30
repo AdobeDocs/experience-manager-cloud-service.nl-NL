@@ -19,5 +19,5 @@ ht-degree: 0%
 Meer informatie over dit onderwerp vindt u in de volgende bronnen:
 
 - [Winkelwagentje](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [Dispatcher AEM met Magento Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [AEM Dispatcher met Magento Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker Hub](https://hub.docker.com/)
