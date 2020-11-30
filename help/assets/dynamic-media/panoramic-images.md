@@ -23,6 +23,7 @@ Zie ook Voorinstellingen [voor viewers](/help/assets/dynamic-media/managing-view
 Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeelding die u wilt gebruiken met de Panorama-viewer, moet het element een van de volgende opties of beide hebben:
 
 * Een hoogte-breedteverhouding van 2.
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Gelabeld met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags](/help/sites-cloud/authoring/features/tags.md)gebruiken.
