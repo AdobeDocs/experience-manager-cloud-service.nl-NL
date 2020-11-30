@@ -1,6 +1,6 @@
 ---
 title: Contentfragmenten
-description: Met Adobe Experience Managers als Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+description: Met Adobe Experience Manager als Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
@@ -16,11 +16,11 @@ Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service worden [ge
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
-Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM-inhoud via Content Services te leveren aan andere kanalen dan AEM-pagina&#39;s.
+Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM inhoud via Content Services te leveren aan andere kanalen dan AEM pagina&#39;s.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** hebben verschillende functies in AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **De Fragmenten** van de ervaring zijn volledig opgemaakt inhoud en zo fragmenten van een Web-pagina.
@@ -40,7 +40,7 @@ Met de inhoudsfragmenten kunt u:
 * **Creative Pro**
    * Het bijhouden van creatieve elementen via verzamelingen die zijn gekoppeld aan inhoudsfragmenten.
 * **Schrijvers kopiëren**
-   * Schrijf in de fragmenteditor voor AEM-inhoud.
+   * Schrijf in de fragmenteditor voor AEM inhoud.
    * Kan inhoudvariaties maken.
    * Kan relevante inhoud aan het inhoudsfragment koppelen.
    * Kan versioning/workflow gebruiken.
