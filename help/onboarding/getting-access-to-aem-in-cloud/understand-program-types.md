@@ -16,7 +16,7 @@ In Cloud Manager hebt u de entiteit Tenant helemaal bovenaan, die meerdere progr
 
 In het volgende diagram ziet u de hiërarchie van entiteiten in Cloud Manager.
 
-![image](assets/program-types1.png)
+![afbeelding](assets/program-types1.png)
 
 ## Programmatypen {#program-types}
 
