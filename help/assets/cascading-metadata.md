@@ -26,7 +26,7 @@ Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt de
 * Opties wijzigen die voor een bepaald veld worden weergegeven op basis van de waarde die in een ander veld is opgegeven.
 * Stel de standaardwaarde voor metagegevens in een bepaald veld in op basis van de waarde die in een ander veld is opgegeven.
 
-## Metagegevens met trapsgewijze opmaak configureren in AEM {#configure-cascading-metadata-in-aem}
+## Metagegevens met trapsgewijze opmaak in AEM configureren {#configure-cascading-metadata-in-aem}
 
 Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis van het geselecteerde type element. Enkele voorbeelden
 
@@ -50,11 +50,12 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
+1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON dossier verstrekken.
 
    * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** de optie, tikt u erop of klikt u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
-   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. AEM haalt de sleutel-waarde paren in real time op wanneer het formulier aan de gebruiker wordt gepresenteerd.
+   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. AEM haalt de sleutel-waardeparen in echt - tijd wanneer het formulier aan de gebruiker wordt voorgesteld.
+
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
    ![add_choice](assets/add_choice.png)
