@@ -1,6 +1,6 @@
 ---
 title: Maven-projectversiebeheer
-description: Maven Project Version Handling - Cloud Services
+description: Maven Project Version Handlingt - Cloud Services
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 workflow-type: tm+mt
