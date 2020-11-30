@@ -61,12 +61,13 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Zoekdirectory
    * Tags
    * Zoekcriteria, bijvoorbeeld Gewijzigde datums, Publicatiestatus, LiveCopy-status
+
    >[!NOTE]
    >
    >De zoekcriteria kunnen variëren:
    >
    >* Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
-   >* Uw exemplaar als de Vormen van het Onderzoek kan worden aangepast (aangewezen aan de plaats binnen AEM).
+   >* Uw exemplaar als Zoeken in Forms kan worden aangepast (afhankelijk van de locatie in AEM).
 
 
 <!--
