@@ -3,7 +3,7 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die [!DNL Experience Manager Assets] door een Cloud Service worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
+source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 6%
@@ -159,7 +159,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | EPUB | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
+| TTF | - | ✓ | - | ✓ | ✓ |
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
@@ -193,7 +193,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | MTS | ✓ | - | ✓ |
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
-| R3D | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
 | SWF | ✓ | - | ✓ |
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
