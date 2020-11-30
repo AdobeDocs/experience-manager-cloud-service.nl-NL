@@ -24,7 +24,7 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel als 
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina voor Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
+| [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
