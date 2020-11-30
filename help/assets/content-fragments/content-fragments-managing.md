@@ -172,7 +172,7 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw veranderingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw wijzigingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
    >
    >Houd hier rekening mee wanneer u **Opslaan** gebruikt en vervolgens snel de fragmenteditor ingaat om verdere wijzigingen aan te brengen en op te slaan.
@@ -223,9 +223,9 @@ Naast de standaardopties biedt de [tijdlijn](/help/assets/manage-digital-assets.
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
 
-   * **[Terugkeren naar deze versie](#reverting-to-a-version)**(selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Terugkeren naar deze versie](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
-   * **[Vergelijken met huidige](#comparing-fragment-versions)**versie (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Vergelijken met huidige](#comparing-fragment-versions)** versie (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
    * Voeg een **Label** en/of **Commentaar** toe (selecteer een bestaand fragment, dan een specifieke versie)
 
@@ -236,11 +236,10 @@ Naast de standaardopties biedt de [tijdlijn](/help/assets/manage-digital-assets.
    * **Verwijderen**
 
 >[!NOTE]
->
->Opmerkingen zijn:
->* Standaardfunctionaliteit voor alle elementen
->* Gemaakt in tijdlijn
->* Verwant aan het fragmentelement
+Opmerkingen zijn:
+* Standaardfunctionaliteit voor alle elementen
+* Gemaakt in tijdlijn
+* Verwant aan het fragmentelement
 
 Annotaties (voor inhoudsfragmenten) zijn:
 * Opgegeven in de fragmenteditor
@@ -275,8 +274,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 * **Done** will return you to the console
 
 >[!NOTE]
->
->U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
+U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
 
@@ -293,9 +291,8 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat het [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat het [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
@@ -303,8 +300,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 * Wanneer u een pagina [publiceert die het fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
->
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ Een fragment verwijderen:
 2. Selecteer het fragment.
 
    >[!NOTE]
-   >
-   >De handeling **Verwijderen** is niet beschikbaar als een snelle handeling.
+   De handeling **Verwijderen** is niet beschikbaar als een snelle handeling.
 
 3. Selecteer **Verwijderen** op de werkbalk.
 4. Bevestig de actie **Verwijderen** .
 
    >[!CAUTION]
-   >
-   >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
