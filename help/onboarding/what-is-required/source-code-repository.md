@@ -1,6 +1,6 @@
 ---
-title: Broncodeopslagplaats - Cloud Servicen
-description: Broncodeopslagplaats - Cloud Servicen
+title: Broncodeopslagplaats - Cloud Services
+description: Broncodeopslagplaats - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Broncodeopslagplaats {#source-code-repository}
 
-Cloud Manager-programma wordt automatisch ingericht met de eigen git-opslagruimte van het programma.
+Cloud Manager-programma wordt automatisch ingericht met de eigen git-opslagruimte.
 
 Gebruikers kunnen alleen toegang krijgen tot de gegevensopslagruimte van Cloud Manager als ze een Git-client gebruiken met een opdrachtregelprogramma, een zelfstandige visuele Git-client of de IDE van de gebruiker, zoals Eclipse, IntelliJ, NetBeans.
 
