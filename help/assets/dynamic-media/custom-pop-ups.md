@@ -14,7 +14,7 @@ ht-degree: 1%
 
 De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de kijker u gebruikt, laat deze functionaliteit gebruikers op hotspot, of een duimnagelbeeld, of op een beeldkaart klikken om informatie of verwante inhoud te zien.
 
-Snelle weergaven worden door de volgende viewers ondersteund in Dynamic Media:
+Snelle weergaven worden ondersteund door de volgende viewers in dynamische media:
 
 * Interactieve afbeeldingen (klikbare hotspots)
 * Interactieve video (aanklikbare miniatuurafbeeldingen tijdens het afspelen van video)
@@ -104,7 +104,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
 1. U moet nu de `quickViewActivate` manager vormen.
 
-   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst evenals een vraag van de steekproeffunctie `loadQuickView` .
+   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening evenals een vraag van de steekproeffunctie wordt geplaatst `loadQuickView` .
 
    **Variabele toewijzingsvariabelen** voor gebruik in uw webpagina aan de SKU-waarde en algemene variabelen in de Snelle weergave:
 
