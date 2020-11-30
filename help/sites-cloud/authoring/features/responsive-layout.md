@@ -1,6 +1,6 @@
 ---
 title: Responsieve lay-out
-description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
+description: AEM kunt u een responsieve lay-out voor uw pagina's maken
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 7%
 
 # Responsieve lay-out {#responsive-layout}
 
-Met AEM kunt u een responsieve lay-out voor uw pagina&#39;s gebruiken met behulp van de **component Layout Container** .
+AEM kunt u een responsieve indeling voor uw pagina&#39;s gebruiken met de **component Layout Container** .
 
-Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de modus [**Lay-out **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), waarmee u uw responsieve lay-out afhankelijk van het apparaat kunt maken en bewerken.
+Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de modus [**Lay-out**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), waarmee u uw responsieve lay-out afhankelijk van het apparaat kunt maken en bewerken.
 
 De container layout:
 
@@ -25,17 +25,17 @@ De container layout:
 
 De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparaten met behulp van de emulator.
 
-AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
+AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
-* [**Containercomponent **](#adding-a-layout-container-and-its-content-edit-mode)layout
+* [**Containercomponent**](#adding-a-layout-container-and-its-content-edit-mode) layout
 
    Deze component is beschikbaar in de [componentenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en verstrekt een net-paragraaf systeem om u toe te staan om componenten binnen een ontvankelijk net toe te voegen en te plaatsen. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
-* [**Lay-outmodus **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**Lay-outmodus**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    Zodra de lay-outcontainer op de pagina wordt geplaatst, kunt u de wijze van de **Lay-out** gebruiken om inhoud binnen het ontvankelijke net te plaatsen.
 
-* [**Emulator **](#selecting-a-device-to-emulate)Hiermee kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat/venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
+* [**Emulator**](#selecting-a-device-to-emulate) Hiermee kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat/venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
 Met deze responsieve rastermechanismen kunt u:
 
@@ -49,7 +49,7 @@ Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagra
 
 >[!TIP]
 >
->Adobe verstrekt [documentatie](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) GitHub van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net AEM buiten AEM te gebruiken, bijvoorbeeld wanneer het creëren van statische HTML mock-ups voor een toekomstige plaats AEM.
+>Adobe verstrekt [documentatie](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) GitHub van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het AEM net buiten AEM te gebruiken, bijvoorbeeld wanneer het creëren van statische mock-ups van HTML voor een toekomstige AEM plaats.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagra
 
 Wanneer u uw website-inhoud maakt, moet u ervoor zorgen dat uw inhoud correct wordt weergegeven voor het apparaat dat wordt gebruikt om de inhoud weer te geven.
 
-Met AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het apparaat:
+AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het apparaat:
 
 * Met de emulator kunt u deze lay-outs emuleren op een reeks apparaten. Naast het apparaattype kan de richting, geselecteerd met de optie **Apparaat** roteren, invloed hebben op het geselecteerde onderbrekingspunt wanneer de breedte verandert.
 * Onderbrekingspunten zijn de punten die de layoutdefinities scheiden.
