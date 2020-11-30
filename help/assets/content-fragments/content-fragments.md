@@ -1,6 +1,6 @@
 ---
 title: Werken met contentfragmenten
-description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
+description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 2%
 
 # Werken met contentfragmenten{#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Inhoudsfragmenten paginaonafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-cloud/authoring/fundamentals/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+Met Adobe Experience Manager (AEM) als Cloud Service kunt u met inhoudsfragmenten paginaonafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-cloud/authoring/fundamentals/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
 * Ze zijn gebaseerd op een [inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), waarin een structuur voor het resulterende fragment vooraf wordt gedefinieerd.
 
-Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM-kerncomponenten. Deze leveringsvorm:
+Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM kerncomponenten. Deze leveringsvorm:
 
 * biedt u de mogelijkheid om de component te gebruiken om te beheren welke elementen van een fragment moeten worden geleverd
 * staat bulklevering toe, door veelvoudige inhoudfragment kerncomponenten op de pagina toe te voegen die voor levering API wordt gebruikt
@@ -49,15 +49,15 @@ Met inhoudelementen kunt u:
 * Kanaalneutrale redactionele inhoud maken en beheren.
 * Stel inhoudsgroepen samen voor een reeks kanalen.
 * Ontwerpinhoudvariaties voor specifieke kanalen.
-* Voeg afbeeldingen aan de tekst toe door elementen (gemengde-mediafragmenten) in te voegen.
+* Voeg afbeeldingen aan uw tekst toe door elementen (gemengde-mediafragmenten) in te voegen.
 
 Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillende kanalen ervaringen op te doen.
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
-AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in/vanuit AEM te veralgemenen, maar niet alleen op webpagina&#39;s.
+AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
-Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
+Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt. Deze kanalen kunnen zijn:
 
 * Toepassingen voor één pagina
 * Systeemeigen mobiele toepassingen
@@ -65,13 +65,13 @@ Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, me
 
 De levering wordt uitgevoerd in JSON-indeling met behulp van de JSON Exporter.
 
-Met AEM-inhoudsfragmenten kunt u gestructureerde inhoud beschrijven en beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten; waaronder tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
+AEM Inhoudsfragmenten kunnen worden gebruikt om gestructureerde inhoud te beschrijven en te beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten; waaronder tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
 
-Samen met de JSON-exportmogelijkheden van AEM-kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM-inhoud te leveren aan andere kanalen dan AEM-pagina&#39;s.
+Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM inhoud aan andere kanalen dan AEM pagina&#39;s te leveren.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** hebben verschillende functies in AEM:
 >* **Inhoudsfragmenten** zijn redactionele inhoud die kan worden gebruikt voor toegang tot gestructureerde gegevens, waaronder teksten, getallen en datums. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
 
@@ -79,7 +79,7 @@ Samen met de JSON-exportmogelijkheden van AEM-kerncomponenten kan deze gestructu
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)voor meer informatie.
+>Voor meer informatie zie ook het [Begrijpen van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
 
    >[!NOTE]
    >
-   >Visuele elementen die in het inhoudsfragment zelf worden ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
+   >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
 
 * **Gekoppelde inhoud**
 
@@ -176,7 +176,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    >[!NOTE]
    >
-   >Elementen kunnen ook worden toegevoegd als [aanvullende (tussenliggende) inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) wanneer een fragment op een pagina wordt gebruikt. het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
+   >Elementen kunnen ook worden toegevoegd als [aanvullende (tussenliggende) inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) wanneer een fragment op een pagina wordt gebruikt. het gebruiken van of Bijbehorende Inhoud of activa van browser van Middelen.
 
 * **Gekoppelde inhoud**
 
