@@ -1,16 +1,16 @@
 ---
 title: Wat is nieuw?
-description: 'Wat is nieuw in Adobe Experience Manager (AEM) als Cloud Service. '
+description: 'Wat is er nieuw in Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
 
-# What is New? {#what-is-new}
+# Wat is nieuw? {#what-is-new}
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->
 
@@ -25,8 +25,8 @@ Voor een overzicht van Adobe Experience Manager als Cloud Service, zie:
 
 Voor een overzicht van Activa, zie [Inleiding aan Activa als Cloud Service](/help/assets/overview.md)
 
-Als u vertrouwd bent met vorige versies van AEM, zie het volgende voor een overzicht van de opmerkelijke veranderingen in AEM als Cloud Service:
+Als u met vorige versies van AEM vertrouwd bent, zie het volgende voor een overzicht van de opmerkelijke veranderingen in AEM als Cloud Service:
 
-* [Opvallende wijzigingen in AEM als Cloud Service (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
-* [Opvallende wijzigingen in AEM Sites als Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-* [Opvallende wijzigingen in AEM Assets als Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
+* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
