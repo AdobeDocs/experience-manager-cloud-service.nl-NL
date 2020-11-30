@@ -53,7 +53,7 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
    >Als u meer wilt weten over toegang tot en beheer van uw Git-opslagplaats via Self-Service Git-accountbeheer vanuit de interface van Cloud Manager, raadpleegt u [Toegang tot Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Zodra het ontwikkelmilieu wordt gecreeerd, kan de gebruiker tot verbinding **toegang hebben AEM** , zoals aangetoond in het hieronder cijfer:
+1. Zodra het ontwikkelmilieu wordt gecreeerd, kan de gebruiker **tot AEM** verbinding toegang hebben, zoals aangetoond in het hieronder cijfer:
 
    ![](assets/create-program-5.png)
 
@@ -86,7 +86,7 @@ Selecteer Programma **** verwijderen op de pagina **Program Overview** om uw San
 
 ## Een regulier programma maken {#create-regular-program}
 
-Een *regulier* programma is bedoeld voor een gebruiker die bekend is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
+Een *Regular* -programma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
 
 Voer de volgende stappen uit om een regulier programma te maken:
 
