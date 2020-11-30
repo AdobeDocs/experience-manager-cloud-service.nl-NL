@@ -26,7 +26,8 @@ Metagegevens bewerken:
    * Selecteer het element in de interface Elementen en klik op het **[!UICONTROL View Properties]** pictogram of tik op het pictogram op de werkbalk.
    * Selecteer de **[!UICONTROL View Properties]** handeling Snel bij de elementminiatuur.
    * Klik/tik op de werkbalk vanaf de elementpagina. **[!UICONTROL View Properties]**
-   Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens zijn automatisch geëxtraheerd wanneer deze werden geüpload (opgenomen) naar AEM Assets.
+
+   Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens worden automatisch geëxtraheerd bij het uploaden (invoegen) naar AEM Assets.
 
 1. Bewerk desgewenst de metadata op de verschillende tabbladen en klik of tik wanneer u klaar bent op **[!UICONTROL Save]** op de werkbalk om de wijzigingen op te slaan. Klik of tik op **[!UICONTROL Close]** om terug te keren naar de webinterface voor assets.
 
@@ -34,7 +35,7 @@ Metagegevens bewerken:
    >
    >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om die eigenschap voor metagegevens toe te voegen.
 
-Wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP-gegevens. Dit gebeurt via de terugschrijfworkflow voor AEM-metagegevens. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`), worden overschreven en nieuwe eigenschappen (inclusief aangepaste eigenschappen zoals `cq:tags`) worden samen met het schema toegevoegd.
+Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. Dit gebeurt via AEM workflow voor het terugschrijven van metagegevens. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`), worden overschreven en nieuwe eigenschappen (inclusief aangepaste eigenschappen zoals `cq:tags`) worden samen met het schema toegevoegd.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -42,9 +43,9 @@ Wijzigingen in de metagegevens van een element worden teruggeschreven naar het o
 
 Zie Formulieren [met metagegevensschema&#39;s](metadata-schemas.md#edit-metadata-schema-forms)bewerken voor meer informatie over het bewerken van het metagegevensschema.
 
-## Een aangepaste naamruimte registreren in AEM {#registering-a-custom-namespace-within-aem}
+## Een aangepaste naamruimte registreren binnen AEM {#registering-a-custom-namespace-within-aem}
 
-U kunt uw eigen naamruimten toevoegen in AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
+U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
 1. Ga naar de pagina van het knooptype beleid *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Klik of tik **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
