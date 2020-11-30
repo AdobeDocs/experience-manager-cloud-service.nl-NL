@@ -1,6 +1,6 @@
 ---
-sub-product: Overzicht van AEM als Cloud Service
-user-guide-title: Overzicht van AEM als Cloud Service
+sub-product: Overzicht van AEM as a Cloud Service
+user-guide-title: Overzicht van AEM as a Cloud Service
 breadcrumb-title: Overzicht
 user-guide-description: Start hier voor een overzicht Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort.
 translation-type: tm+mt
