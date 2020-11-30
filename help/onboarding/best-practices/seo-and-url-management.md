@@ -242,7 +242,7 @@ Hier volgt een voorbeeld van hoe dit probleem optreedt:
 
 1. De dispatcher plaatst het antwoord in de cache op `/my-page.html` en retourneert het antwoord naar de gebruiker.
 1. Een contentauteur voert een wijziging uit op deze pagina en activeert deze.
-1. De flushagent van de dispatcher verzendt een aanvraag tot invalidatie voor `/content/my-brand/my-page`**.**Aangezien de dispatcher geen pagina heeft die in de cache is opgeslagen op dit pad, blijft de oude content in de cache opgeslagen en is deze inactief.
+1. De flushagent van de dispatcher verzendt een aanvraag tot invalidatie voor `/content/my-brand/my-page`**.** Aangezien de dispatcher geen pagina heeft die in de cache is opgeslagen op dit pad, blijft de oude content in de cache opgeslagen en is deze inactief.
 
 Er zijn manieren om aangepaste flushregels voor dispatching te configureren die de kortere URL aan de langere URL toewijzen voor de cache-invalidatie.
 
@@ -364,8 +364,8 @@ Om een sitemap programmatisch te genereren, registreert u een Sling-servlet die 
 >
 >U kunt een Sling-servlet registreren om te luisteren naar de selector `sitemap` met de extensie `xml`. Hierdoor verwerkt de servlet de aanvraag telkens wanneer een URL wordt aangevraagd die eindigt op:
 >    `/<path-to>/page.sitemap.xml`
->Vervolgens kunt u de aangevraagde bron ophalen uit de aanvraag en een sitemap genereren vanaf dat punt in de contentstructuur met behulp van de JCR API&#39;s.
->Het voordeel van een dergelijke aanpak is wanneer meerdere sites vanuit dezelfde instantie worden aangeboden. Een aanvraag voor `/content/siteA.sitemap.xml` zou een sitemap voor `siteA` genereren terwijl een aanvraag voor `/content/siteB.sitemap.xml` een sitemap voor `siteB` zou genereren zonder dat extra code moet worden geschreven.
+Vervolgens kunt u de aangevraagde bron ophalen uit de aanvraag en een sitemap genereren vanaf dat punt in de contentstructuur met behulp van de JCR API&#39;s.
+Het voordeel van een dergelijke aanpak is wanneer meerdere sites vanuit dezelfde instantie worden aangeboden. Een aanvraag voor `/content/siteA.sitemap.xml` zou een sitemap voor `siteA` genereren terwijl een aanvraag voor `/content/siteB.sitemap.xml` een sitemap voor `siteB` zou genereren zonder dat extra code moet worden geschreven.
 
 ### 301-omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 
