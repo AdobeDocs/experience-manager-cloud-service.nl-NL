@@ -44,7 +44,7 @@ Ga als volgt te werk om AEM Handel met Magento te verbinden:
 
 1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
-   Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Adobe Cloud Manager over het downloaden, instellen en gebruiken van de [Adobe I/O-CLI](https://github.com/adobe/aio-cli) met de CLI-plug-in [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Raadpleeg de [Adobe Cloud Manager-documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de CLI-plug-in [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Verifieer CLI met de AEM als programma van de Cloud Service
 
