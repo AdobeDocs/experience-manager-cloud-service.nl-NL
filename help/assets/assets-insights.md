@@ -1,6 +1,6 @@
 ---
 title: 'Asset Insights '
-description: Leer hoe u met de functie Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe.
+description: Leer hoe u met Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 # Asset Insights {#asset-insights}
 
-Asset Insights houdt gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
+Met Asset Insights worden gebruikersclassificaties en gebruiksstatistieken bijgehouden van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
 
 Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Als u het gebruik van bedrijfsgegevens voor elementen wilt laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens van Adobe Analytics. Zie [Elementinzichten](#configure-asset-insights)configureren voor meer informatie.
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van Adobe Analytics te halen. Zie [Elementinzichten](#configure-asset-insights)configureren voor meer informatie.
 
 >[!NOTE]
 >
@@ -43,11 +43,12 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
    * **[!UICONTROL Web & Mobile]**: Het aantal keren dat het middel deel uitmaakte van websites en apps.
    * **[!UICONTROL Social]**: Het aantal keren dat het middel is gebruikt in oplossingen, zoals Adobe Social en Adobe Campaign.
    * **[!UICONTROL Email]**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Omdat de functie Asset Insights de gegevens van Oplossingen gewoonlijk periodiek ophaalt van Adobe Analytics, wordt de meeste recente gegevens mogelijk niet weergegeven in de sectie Oplossingen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa loopt om de gegevens van de Analyse terug te winnen.
+   >Omdat de functie Asset Insights doorgaans de gegevens van Solutions van Adobe Analytics ophaalt, wordt in de sectie Oplossingen de meeste recente gegevens mogelijk niet weergegeven. De tijdsperiode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de haalbewerking die Asset Insights uitvoert om analysegegevens op te halen.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
@@ -71,7 +72,7 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 
 ## Achtergrondtaak plannen {#scheduling-background-job}
 
-Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen op uit Adobe Analytics-rapportreeksen. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
+Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen van Adobe Analytics-rapportensuites. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
 
 1. Tap the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** serviceconfiguratie.
@@ -82,7 +83,7 @@ Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen op uit A
 
 ## Elementinzichten configureren {#configure-asset-insights}
 
-Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM-elementen die door websites van derden worden gebruikt met Adobe Analytics. Als u Asset Insights wilt inschakelen om deze gegevens op te halen en inzichten te genereren, moet u eerst de functie configureren voor integratie met Adobe Analytics.
+Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM middelen die door websites van derden van Adobe Analytics worden gebruikt. Om Asset Insights in in staat te stellen deze gegevens op te halen en inzichten te genereren, dient u eerst de functie te configureren voor integratie met Adobe Analytics.
 
 >[!NOTE]
 >
@@ -95,16 +96,16 @@ Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM-ele
 1. Klik op de **[!UICONTROL Insights Configuration]** kaart.
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
 
-   ![Adobe Analytics voor Assets Insights configureren in AEM](assets/insights_config2.png)
+   ![Adobe Analytics for Assets Insights configureren in AEM](assets/insights_config2.png)
 
-   *Afbeelding: Adobe Analytics voor Assets Insights configureren in AEM*
+   *Afbeelding: Adobe Analytics for Assets Insights configureren in AEM*
 
-1. Klik of tik op **[!UICONTROL Authenticate]**. Nadat AEM uw gegevens heeft geverifieerd, kiest u in de **[!UICONTROL Report Suite]** lijst een Adobe Analytics-rapportsuite waaruit u gegevens wilt ophalen met behulp van Asset Insights. Klik op **[!UICONTROL Add]**.
-1. Tik op uw rapportsuite nadat AEM de rapportsuite heeft ingesteld **[!UICONTROL Done]**.
+1. Klik of tik op **[!UICONTROL Authenticate]**. Nadat AEM uw geloofsbrieven voor authentiek verklaart, van de **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt om gegevens te halen. Klik op **[!UICONTROL Add]**.
+1. Tik op de rapportsuite nadat AEM de rapportsuite hebt ingesteld **[!UICONTROL Done]**.
 
 ### Paginanummering {#page-tracker}
 
-Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Als u Assets Insights wilt inschakelen om AEM-elementen die worden gebruikt op websites van derden bij te houden, neemt u de paginacontrackercode op in de websitecode. Gebruik het hulpprogramma Paginanummering in AEM Assets om de code van de paginacontracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Neem de paginacontrackercode in de websitecode op om Elementen inzicht te geven in AEM elementen die worden gebruikt op websites van derden. Gebruik het hulpprogramma Paginanummering in AEM Assets om de code van de paginatracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
