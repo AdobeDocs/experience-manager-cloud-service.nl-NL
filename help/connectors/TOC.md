@@ -1,6 +1,6 @@
 ---
-sub-product: Connectors voor AEM als Cloud Service
-user-guide-title: Connectors voor AEM als Cloud Service
+sub-product: Connectors voor AEM as a Cloud Service
+user-guide-title: Connectors voor AEM as a Cloud Service
 breadcrumb-title: Hulplijn voor aansluitingen
 user-guide-description: Leer hoe u connectors integreert in Experience Manager as a Cloud Service.
 translation-type: tm+mt
