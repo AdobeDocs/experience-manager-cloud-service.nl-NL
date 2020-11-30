@@ -1,6 +1,6 @@
 ---
-sub-product: Kernbegrippen van AEM als Cloud Service
-user-guide-title: Kernbegrippen van AEM als Cloud Service
+sub-product: Kernbegrippen van AEM as a Cloud Service
+user-guide-title: Kernbegrippen van AEM as a Cloud Service
 breadcrumb-title: Core Concepts Guide
 user-guide-description: Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service.
 translation-type: tm+mt
