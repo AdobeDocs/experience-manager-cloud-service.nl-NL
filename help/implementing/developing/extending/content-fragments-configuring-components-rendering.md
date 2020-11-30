@@ -1,6 +1,6 @@
 ---
-title: Inhoudsfragmenten die componenten voor rendering configureren
-description: Inhoudsfragmenten die componenten voor rendering configureren
+title: Contentfragmenten die componenten voor rendering configureren
+description: Contentfragmenten die componenten voor rendering configureren
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
+# Contentfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
 Er zijn verschillende [geavanceerde services](#definition-of-advanced-services-that-need-configuration) voor het renderen van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
@@ -25,14 +25,16 @@ U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
->* **Als u de hieronder beschreven[geavanceerde services](#definition-of-advanced-services-that-need-configuration)**niet nodig hebt, kunt u deze configuratie negeren.
+>* **Als u de hieronder beschreven [geavanceerde services](#definition-of-advanced-services-that-need-configuration)** niet nodig hebt, kunt u deze configuratie negeren.
+   >
+   >
+* **Wanneer u of de uit-van-de-doos component(en)** uitbreidt gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
+   >
+   >
+* **U kunt een geheel nieuwe component schrijven die alleen de API voor inhoudsfragmenten gebruikt, zonder geavanceerde services**. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
 >
->* **Wanneer u of de uit-van-de-doos component(en)** uitbreidt gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
 >
->* **U kunt een geheel nieuwe component schrijven die alleen de API voor inhoudsfragmenten gebruikt, zonder geavanceerde services**. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
->
->
->Daarom wordt aanbevolen de Core Components te gebruiken.
+Daarom wordt aanbevolen de Core Components te gebruiken.
 
 ## Definitie van de Geavanceerde Diensten die Configuratie vereisen {#definition-of-advanced-services-that-need-configuration}
 
@@ -136,7 +138,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
 
 ## Voorbeeld {#example}
 
-Zie het volgende voorbeeld (bij een AEM-instantie buiten de box):
+Zie bijvoorbeeld het volgende (op een uit-van-de-doos AEM instantie):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
