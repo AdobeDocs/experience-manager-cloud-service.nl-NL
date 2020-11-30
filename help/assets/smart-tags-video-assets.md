@@ -18,7 +18,7 @@ De videobestandsindelingen (en de bijbehorende codecs) die worden ondersteund vo
 
 ## Slimme tags toepassen op video&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
-Wanneer u video-elementen [](add-assets.md#upload-assets) uploadt naar [!DNL Adobe Experience Manager] de Cloud Service, worden de video&#39;s ![verwerkt](assets/do-not-localize/assetprocessing.png). Als de verwerking is voltooid, raadpleegt u het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] elementpagina. Slimme tags worden automatisch toegevoegd aan de video onder [!UICONTROL Smart Tags]. Asset Compute Service maakt gebruik van Adobe Sensei om deze slimme tags te maken.
+Wanneer u video-elementen [](add-assets.md#upload-assets) uploadt naar [!DNL Adobe Experience Manager] de Cloud Service, worden de video&#39;s ![verwerkt](assets/do-not-localize/assetprocessing.png). Als de verwerking is voltooid, raadpleegt u het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] elementpagina. Slimme tags worden automatisch toegevoegd aan de video onder [!UICONTROL Smart Tags]. De Dienst van de asset compute gebruikt Adobe Sensei om deze slimme markeringen tot stand te brengen.
 
 ![Slimme tags worden toegevoegd aan video&#39;s en weergegeven op het tabblad Standaard van de Eigenschappen van elementen](assets/smart-tags-added-to-videos.png)
 
