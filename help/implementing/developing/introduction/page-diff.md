@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md)voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheidingsteken kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md)voor meer informatie over deze gebruikersfunctie.
 
 ## Bewerkingsdetails {#operation-details}
 
