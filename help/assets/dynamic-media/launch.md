@@ -46,7 +46,7 @@ De integratie maakt gebruik van twee afzonderlijke en onafhankelijke typen van D
 
 ### Over reeksspatiëring in Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die zijn uitgevoerd, handelingen voor het afspelen van video enzovoort.
+Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden, handelingen voor het afspelen van video enzovoort.
 
 In de Lancering van Adobe werken de concepten *Gegevens Elementen* en *Regels* samen om het volgen van Adobe Analytics toe te laten.
 
@@ -223,7 +223,7 @@ De activiteit van de eindgebruiker resulteert in de volgende twee volgende volge
 * De eerste vraag komt voor omdat de **[!UICONTROL TrackPan]** Regel wordt teweeggebracht wanneer de gebruiker in *viewer1* pant. Die vraag verzendt 50% als waarde van het Element van **[!UICONTROL ZoomScale]** Gegevens omdat het Element van Gegevens zal weten dat de Regel door *viewer1* wordt teweeggebracht en de overeenkomstige schaalwaarde haalt;
 * De tweede vraag komt voor omdat de **[!UICONTROL TrackKey]** Regel wordt teweeggebracht wanneer de gebruiker op een sleutel op het toetsenbord duwde. Die vraag verzendt 25% als waarde van het Element van **[!UICONTROL ZoomScale]** Gegevens omdat de Regel niet door de kijker werd teweeggebracht. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
 
-Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer op de Web-pagina aanwezig is.
+Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
 
 In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek aan de clientzijde bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
@@ -408,7 +408,7 @@ U zult de integratie in de volgende producten van Adobe vormen:
 
 Bovendien, als deze integratieoplossing met AEM Sites wordt gebruikt, moet de volgende configuratie ook worden gedaan:
 
-* Adobe I/O-console - integratie is gemaakt voor het starten van Adobe.
+* Adobe I/O Console - integratie wordt gecreeerd voor de Lancering van Adobe.
 * AEM auteurknooppunt - IMS-configuratie en Adobe-configuratie van de opstartcloud.
 
 Als deel van de configuratie, zeker bent u toegang tot een bedrijf in Adobe Experience Cloud hebt dat Adobe Analytics en de Lancering van Adobe reeds heeft toegelaten.
@@ -472,7 +472,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
 1. Over het algemeen wordt het opstellen van een rapport in Adobe Analytics gestuurd door specifieke projectbehoeften. Als dusdanig, is de gedetailleerde rapportopstelling voorbij het werkingsgebied voor deze integratie.
 
-   Het is echter genoeg om te weten dat de rapporten van het Verkeer van de Douane automatisch beschikbaar worden in Adobe Analytics nadat u de variabelen van het Verkeer van de Douane in de variabelen **[van de](#setting-up-adobe-analytics-variables)**Opstelling Adobe Analytics.
+   Het is echter genoeg om te weten dat de rapporten van het Verkeer van de Douane automatisch beschikbaar worden in Adobe Analytics nadat u de variabelen van het Verkeer van de Douane in de variabelen **[van de](#setting-up-adobe-analytics-variables)** Opstelling Adobe Analytics.
 
    Het rapport voor de variabele **[!UICONTROL Viewer asset (prop 30)]** is bijvoorbeeld beschikbaar in het menu Rapporten onder **[!UICONTROL Custom Traffic > Custom Traffic 21-30 > Viewer asset (prop 30)]**.
 
@@ -671,7 +671,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
    Het volgende Info-bericht wordt weergegeven:
 
-   *Om een geldig toegangstoken terug te winnen moet de openbare sleutel van het nieuwe certificaat aan de technische rekening op Adobe I/O worden toegevoegd!*.
+   *Als u een geldig toegangstoken wilt ophalen, moet de openbare sleutel van het nieuwe certificaat worden toegevoegd aan de technische account op Adobe I/O!*.
 
    Klik **[!UICONTROL OK]** om het dialoogvenster Info te sluiten.
 
@@ -685,7 +685,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Navigeer op een nieuw browsertabblad naar de I/O-console [van](https://console.adobe.io/integrations)Adobe.
+1. Navigeer op een nieuw browsertabblad naar de [Adobe I/O-console](https://console.adobe.io/integrations).
 
 1. Klik in de **[!UICONTROL Adobe I/O Console Integrations]** pagina, in de rechterbovenhoek, op **[!UICONTROL New integration]**.
 1. Controleer in het dialoogvenster **[!UICONTROL Create a new integration]** of het keuzerondje **[!UICONTROL Access an API]** is geselecteerd en klik vervolgens op **[!UICONTROL Continue]**.
@@ -731,7 +731,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS Technical Account Configuration - Certificate page_
 
-1. De **[!UICONTROL Account]** pagina heeft vijf gebieden die u zullen vereisen om te vullen gebruikend informatie van de de detailpagina van de Integratie van de vorige stap.
+1. De **[!UICONTROL Account]** pagina heeft vijf gebieden die u zullen vereisen om uit te vullen gebruikend informatie van de de detailpagina van de Integratie van de vorige stap.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
    _Adobe IMS Technical Account Configuration - Account page_
@@ -796,7 +796,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
    * **[!UICONTROL Company]** - Selecteer in de **[!UICONTROL Company]** vervolgkeuzelijst uw Experience Cloud-bedrijf. De lijst wordt automatisch gevuld.
 
-   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschap de Adobe Launch-eigenschap die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
+   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschap de Adobe-opstarteigenschap die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
    Nadat u alle velden hebt ingevuld, ziet uw **[!UICONTROL General]** pagina er ongeveer als volgt uit:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
