@@ -14,7 +14,7 @@ ht-degree: 21%
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit alleen URL&#39;s in als u _geen_ AEM als uw WCM gebruikt. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u _geen_ AEM als WCM gebruikt. Als u AEM gebruikt als uw WCM, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
