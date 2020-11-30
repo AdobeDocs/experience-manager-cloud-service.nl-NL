@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Handleiding Snel aan de slag met de authoring van pagina&#39;s {#quick-guide-to-authoring-pages}
 
-Dit document is bedoeld als snelle handleiding op hoog niveau voor het ontwerpen van belangrijke pagina&#39;s in AEM. Dit document:
+Dit document is bedoeld als een snelle startgids op hoog niveau voor de belangrijkste paginaontwerphandelingen in AEM. Dit document:
 
 * Is niet bedoeld als volledige dekking.
 * Verzekert verbindingen met de gedetailleerde documentatie.
@@ -59,7 +59,7 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 
 Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of zoeken:
 
-1. Open de **Sites** -console (met de optie **Sites** in de [globale navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de koppeling Adobe Experience Manager (linksboven) selecteert.
+1. Open de **Sites** -console (met de optie **Sites** in de [globale navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
 
 1. Navigeer omlaag door op de desbetreffende pagina te tikken of te klikken. Hoe de paginabronnen worden vertegenwoordigd, is afhankelijk van de weergave die u gebruikt: [Kaart, Lijst of Kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -105,6 +105,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
       * Op een mobiel apparaat: Tik en houd de kaart vast
       * Op een desktopapparaat: de [snelle actie](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) gebruiken die door het tikpictogram wordt voorgesteld:
    * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
+
    ![Voorbeeldkaart](/help/sites-cloud/authoring/assets/card.png)
 
 ### Snelle handelingen (alleen kaartweergave/bureaublad) {#quick-actions-card-view-desktop-only}
@@ -137,6 +138,7 @@ Uw pagina bewerken:
       * Het zijpaneel openen
       * Het tabblad Componenten selecteren (de [Componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
       * De vereiste component naar de pagina slepen.
+
       Het zijpaneel kan worden geopend (en gesloten) met:
 
       ![Keuzerondje voor zijpaneel](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -174,6 +176,7 @@ Uw pagina bewerken:
 
       * Selecteer **Voorvertoning** op de werkbalk.
    * Ga terug naar de bewerkingsmodus (of selecteer een andere modus) met de vervolgkeuzelijst **Bewerken** .
+
    >[!NOTE]
    >
    >Als u wilt navigeren met koppelingen in de inhoud, moet u de modus [Voorvertoning](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)gebruiken.
@@ -189,6 +192,7 @@ Er zijn twee (hoofd)methoden voor het [bewerken van pagina-eigenschappen](/help/
 
       * [Snelle acties (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
+
       ![Eigenschappen, knop](/help/sites-cloud/authoring/assets/properties.png)
 
    1. De pagina-eigenschappen worden weergegeven. U kunt naar wens updates uitvoeren en vervolgens Opslaan gebruiken om deze bij te houden
@@ -212,6 +216,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-cloud/authoring/fundame
 
       * [Snelle acties (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action) (geeft ook toegang tot [Later](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)publiceren).
+
       ![Knop Snel publiceren](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -237,6 +242,7 @@ Deze acties kunnen allemaal worden geactiveerd door:
 
    * [Snelle handelingen (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de vereiste bron.
    * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
+
    Afhankelijk van uw handeling:
 
    * Kopiëren:
@@ -282,7 +288,7 @@ Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
 
 Een [versie](/help/sites-cloud/authoring/features/page-versions.md) van de pagina maken:
 
-1. Als u de tijdlijntrack wilt openen, selecteert u de **[tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**met het werkbalkpictogram (voor of na het[selecteren van de pagina](#selecting-your-page-for-further-action)):
+1. Als u de tijdlijntrack wilt openen, selecteert u de **[tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** met het werkbalkpictogram (voor of na het [selecteren van de pagina](#selecting-your-page-for-further-action)):
 
    ![Weergave tijdlijn, optie](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -296,7 +302,7 @@ Een [versie](/help/sites-cloud/authoring/features/page-versions.md) van de pagin
 
 Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken van versies van uw pagina:
 
-1. Selecteer **[Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**met het werkbalkpictogram (voor of na het[selecteren van de pagina](#selecting-your-page-for-further-action)):
+1. Selecteer **[Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** met het werkbalkpictogram (voor of na het [selecteren van de pagina](#selecting-your-page-for-further-action)):
 
    ![Weergave tijdlijn, optie](/help/sites-cloud/authoring/assets/timeline.png)
 
