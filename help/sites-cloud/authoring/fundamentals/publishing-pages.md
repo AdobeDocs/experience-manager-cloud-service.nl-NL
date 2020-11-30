@@ -68,7 +68,7 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
+   * Als de pagina verwijzingen heeft die moeten publiceren, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
       * Geef aan welke elementen/tags/etc. Als u samen met de pagina wilt publiceren, gebruikt u **Publiceren** om het proces te voltooien.
       * Gebruik **Annuleren** om de handeling af te breken.
 
@@ -111,7 +111,7 @@ Een pagina publiceren met Snel publiceren:
 
 >[!NOTE]
 >
->Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
+>Snel publiceren is een oppervlakkige publicatie, d.w.z. alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
 
 #### Publicatie beheren {#manage-publication}
 
@@ -225,7 +225,7 @@ Net zoals u de optie Publicatie beheren [gebruikt om te publiceren](#manage-publ
 
    ![Publiceren ongedaan maken](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
-   Net zoals later met publiceren een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt later met deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
+   Net zoals bij het publiceren later een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt door het later deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
 
    Als u een publicatie/publicatie later wilt annuleren, gaat u naar de workflowconsole om de bijbehorende workflow te beëindigen. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
