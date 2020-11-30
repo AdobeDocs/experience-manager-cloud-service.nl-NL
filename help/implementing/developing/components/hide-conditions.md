@@ -50,7 +50,7 @@ Houd rekening met het volgende wanneer u de expressie hide definieert:
 
 ## Voorbeeld {#example}
 
-Voorbeelden van huidenomstandigheden zijn te vinden in AEM en in het bijzonder in de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) . Neem bijvoorbeeld de kerncomponent [van de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) lijst zoals deze is geïmplementeerd in de zelfstudie [van WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Voorbeelden van huidenomstandigheden zijn te vinden in AEM en in het bijzonder in de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) . Neem bijvoorbeeld de kerncomponent [van de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) lijst zoals deze is geïmplementeerd in de zelfstudie [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [Met behulp van de sjablooneditor](/help/sites-cloud/authoring/features/templates.md)kan de sjabloonauteur in het ontwerpdialoogvenster definiëren welke opties van de lijstcomponent beschikbaar zijn voor de auteur van de pagina. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s, enzovoort. kan worden in- of uitgeschakeld.
 
