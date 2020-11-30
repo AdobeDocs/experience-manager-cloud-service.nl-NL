@@ -20,7 +20,7 @@ In deze sectie wordt beschreven hoe u met de 360/VR Video-viewer werkt om equire
 
 Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
 
-Zie Dynamische media 360-video&#39;s [gebruiken en Aangepaste videominiatuur met AEM-elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Zie Dynamische media 360-video&#39;s [gebruiken en Aangepaste videominiatuur met AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 Zie ook Voorinstellingen [voor viewers](/help/assets/dynamic-media/managing-viewer-presets.md)beheren.
 
@@ -61,6 +61,7 @@ Zie [Video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)3
       * width=auto; height=1080; bitsnelheid=5000 kbps
       * width=auto; height=1440; bitsnelheid=6600 kbps
    * Verwerk 360 video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
+
    Houd er rekening mee dat deze aanpak ook grotere eisen stelt aan het netwerk en de CPU van de eindgebruiker.
 
 1. [Upload uw video naar de map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
@@ -95,7 +96,7 @@ Zie ook Voorinstellingen [van viewer](/help/assets/dynamic-media/managing-viewer
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Een voorvertoning van 360 video&#39;s weergeven**
@@ -114,6 +115,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 
    * Sleep de muisaanwijzer over de video om de kijkhoek van de statische scène te wijzigen.
    * Tik op de **[!UICONTROL Play]** knop van de video om te beginnen met afspelen; terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
+
    ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
 
    * Tik in de lijst Viewers op **[!UICONTROL Video360VR]**.
@@ -130,5 +132,5 @@ U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-vi
 
 Zie Dynamische media-elementen [](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van 360-video.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode voor koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM-sites.
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
 See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
