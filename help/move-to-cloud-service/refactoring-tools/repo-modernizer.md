@@ -31,7 +31,7 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
 
 ## De Repository Modernizer gebruiken {#using-repo-modernizer}
 
-* Via Adobe I/O CLI: Aanbevolen wordt de functie Opslagfunctie Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM als plug-in voor het refactoring van Cloud Service voor de Adobe I/O CLI) te gebruiken.
+* Via Adobe I/O CLI: Het wordt aanbevolen de Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM als insteekmodule voor het refactoring van Cloud Servicen voor de Adobe I/O CLI) te gebruiken.
 
    Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor het installeren en gebruiken van de plug-in.
 
