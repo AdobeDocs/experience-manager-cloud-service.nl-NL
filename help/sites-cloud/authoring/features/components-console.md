@@ -43,6 +43,7 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
    * Bekijk het Type **van** Middel en het Type **van Super van het** Middel (als bepaald) voor de component.
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
+
    >[!NOTE]
    >
    >Omdat `/apps` de Componentenconsole niet bewerkbaar is bij uitvoering, is deze alleen-lezen.
