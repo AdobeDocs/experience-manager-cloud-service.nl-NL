@@ -13,18 +13,19 @@ ht-degree: 12%
 
 # Metadataschema&#39;s {#metadata-schemas}
 
-In de Elementen van de Manager van de Ervaring van Adobe (AEM), bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
+In Adobe Experience Manager (AEM) Assets, bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
 
-U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen.
+U kunt de redacteur van Forms van het Schema van Meta-gegevens gebruiken om bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen.
 
 1. Als u de eigenschappenpagina voor een element wilt weergeven, klikt of tikt u op het **[!UICONTROL View Properties]** pictogram in Snelle handelingen op het element in de kaartweergave. U kunt ook het element selecteren in de gebruikersinterface en vervolgens op het **[!UICONTROL Properties]** pictogram op de werkbalk klikken of erop tikken.
 1. Bewerk verschillende eigenschappen van metagegevens onder de verschillende tabbladen. U kunt het elementtype echter niet wijzigen op de eigenschappenpagina.
-Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie Metagegevensschema [bewerken Forms](#edit-metadata-schema-forms) voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
 1. Als u een lijst met formulieren/sjablonen wilt weergeven, klikt u op het AEM-logo en gaat u naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-AEM verstrekt de volgende malplaatjes uit de doos:
+AEM bevat de volgende sjablonen uit het vak:
 
    * **standaard**: Het basisschema voor metagegevens voor elementen.
+
    De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
 i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
 Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
@@ -37,7 +38,7 @@ a. **pdf**: Schema voor activa met subtype `pdf`.
    iii. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
 
    * **verzameling**: Schemaformulier voor verzamelingen.
-   * **contentfragment:** Schemaformulier voor inhoudsfragmenten.
+   * **contentfragment:** Schema form for Content Fragments.
 
 
 >[!NOTE]
@@ -204,11 +205,11 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 
 >[!NOTE]
 >
->U kunt de metagegevensschema-formulieren uit het vak niet verwijderen in AEM Assets.
+>In AEM Assets kunt u het schema voor metagegevens in het vak niet verwijderen.
 
 ## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
 
-AEM Assets biedt standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
+AEM Assets bevat standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#adding-new-forms-for-mime-types}
 
@@ -225,7 +226,7 @@ In dit geval maakt u een nieuw knooppunt in `/etc/dam/metadataeditor/mimetypemap
 | `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | Tekenreeks | `image/jpeg` |
 | `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het `exposedmimetype` kenmerk | Tekenreeks | `image/png` |
 
-AEM-elementen wijzen de volgende MIME-typen en schema-formulieren toe:
+AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
 
 | Schema-formulier | MIME-typen |
 |---|---|
@@ -247,7 +248,7 @@ De functie Metagegevensschema is alleen beschikbaar voor beheerders. Beheerders 
 
 ## Mapspecifieke metagegevens toepassen {#applying-folder-specific-metadata}
 
-Met AEM-elementen kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
+Met AEM Assets kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
 
 U kunt bijvoorbeeld een variant van het standaardmetagegevensschema definiëren en deze toepassen op een map. Wanneer u het gewijzigde schema toepast, wordt het oorspronkelijke standaardmetagegevensschema genegeerd dat op elementen in de map is toegepast.
 
@@ -277,7 +278,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 >[!NOTE]
 >
->Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de kaartweergave geeft AEM geen waarschuwingsbericht weer over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden.
+>Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de weergave Kaarten geeft AEM het waarschuwingsbericht over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden niet weer.
 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Sla het standaardmetagegevensformulier op als een aangepast formulier. Sla het bestand bijvoorbeeld op als `my_default`.
@@ -286,7 +287,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. Er wordt een bericht voor de ontbrekende metagegevens van het verplichte veld weergegeven in de kaartweergave van het element.
 1. (Optioneel) Toegang `https://[server]:[port]/system/console/components/`. Vorm en laat `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component toe die door gebrek wordt onbruikbaar gemaakt. Stel een frequentie in waarmee AEM controleert of metagegevens over de elementen geldig zijn.
 
-   Deze configuratie voegt een eigenschap toe `hasValidMetadata` aan `jcr:content` elementen. Met deze eigenschap kan AEM resultaten in een zoekopdracht filteren.
+   Deze configuratie voegt een eigenschap toe `hasValidMetadata` aan `jcr:content` elementen. Met deze eigenschap kunnen AEM resultaten in een zoekopdracht filteren.
 
    >[!NOTE]
    >
