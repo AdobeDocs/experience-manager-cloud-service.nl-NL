@@ -2,9 +2,9 @@
 title: Zoekformulieren configureren
 description: Zoeken in Forms voor Adobe Experience Manager configureren als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2043'
 ht-degree: 2%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Zoekformulieren configureren {#configuring-search-forms}
 
-Adobe Experience Manager als Cloud Service wordt geleverd met een krachtig [zoekmechanisme](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager als Cloud Service wordt geleverd met een krachtig [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanisme.
 
-In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde elementen, zoals **Gewijzigde datum**, **Publicatiestatus** of **LiveCycle Status** , om u te helpen snel naar de bronnen te gaan die u nodig hebt.
+In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde factoren, zoals **Gewijzigde datum**, **Status publiceren** of **Status van het Levecopy** om u te helpen snel tot de middelen doordringen u wenst.
 
 ![zoeken en filteren](assets/csf-usage.png)
 
@@ -26,64 +26,51 @@ Samen helpen u uw inhoud snel en gemakkelijk te vinden van:
 
 >[!NOTE]
 >
->U kunt de onderliggende service [Inhoud zoeken en indexeren](/help/operations/indexing.md) configureren.
+>U kunt de onderliggende [Inhoudszoekfunctie en Indexering](/help/operations/indexing.md)-service configureren.
 
-Met **Zoeken in Forms** kunt u deze deelvensters naar wens aanpassen en uitbreiden.
+Met **Zoeken in Forms** kunt u deze deelvensters aanpassen en uitbreiden, afhankelijk van uw specifieke behoeften.
 
-De **zoekfunctie van Forms** biedt een keuzelijst met [voorspelling](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
+De **Zoeken in Forms** biedt een selectie van [voorspellingen](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
 
 * **Opties**
-
    * **Algemeen**
-
       * **Zoeken in formulieren**
 
 ## Standaard Forms {#default-forms}
 
-Wanneer u voor het eerst toegang krijgt tot de Forms **-console** Zoeken, ziet u dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u uw aangepaste configuratie [](#deleting-a-configuration-to-reinstate-the-default)schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
+Wanneer u voor het eerst toegang krijgt tot de **Search Forms**-console, kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u [uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default) schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
 
 ![overzicht van zoekformulieren configureren](assets/csf-overview.png)
 
 De standaardconfiguraties (alfabetisch weergegeven) zijn:
 
-* **Middelen Admin Search Rail:**
-
-* **Pagina-editor (zoeken naar documenten):**
-
-* **Pagina-editor (zoeken naar fragmenten uit ervaring):**
-
-* **Pagina-editor (zoeken naar afbeeldingen):**
-
-* **Pagina-editor (Manuscript-zoekopdracht):**
-
-* **Pagina-editor (zoeken naar pagina):**
-
-* **Pagina-editor (zoeken naar alinea&#39;s):**
-
-* **Pagina-editor (zoeken naar producten):**
-
-* **Pagina-editor (zoeken in Scene7)**:
-
-* **Pagina-editor (videozoekopdracht)**:
-
-* **Zoekspoor voor projectbeheerder:**
-
-* **Zoekspoor voor vertaling van project:**
-
-* **Sites Admin Search Rail**:
-
-* **Fragmenten Zoekspoor** beheerder:
-
-* **Zoeken op rails** voor voorraadbeheerder:
+* **Middelen Admin Search Rail**
+* **Pagina-editor (zoeken naar documenten)**
+* **Pagina-editor (zoek fragmenten met ervaring)**
+* **Pagina-editor (zoeken naar afbeeldingen)**
+* **Pagina-editor (Manuscript-zoekopdracht)**
+* **Pagina-editor (zoeken naar pagina)**
+* **Pagina-editor (zoeken in alinea&#39;s)**
+* **Pagina-editor (productzoekopdracht)**
+* **Pagina-editor (zoeken in Scene7)**
+* **Pagina-editor (videozoekopdracht)**
+* **Zoekspoor voor projectbeheerder**
+* **Zoekspoor voor projectvertaling**
+* **Sites Admin Search Rail**
+* **Zoekspoor voor fragmenten Admin**
+* **Zoeken op rails voor voorraadbeheerders**
+* **Modellen van inhoudsfragmenten doorzoeken**
+* **Zoekspoor voor projectbeheerder**
+* **Zoekspoor voor projectvertaling**
 
 >[!NOTE]
 >
->Zie [Elementen - Zoekfactoren voor meer informatie over aan middelen gerelateerde zoekformulieren](/help/assets/search-facets.md)
+>Zie [Middelen - Zoekfactoren](/help/assets/search-facets.md) voor meer informatie over aan middelen gerelateerde zoekformulieren
 
 
-## Voorspellen en instellingen {#predicates-and-their-settings}
+## Voorspellen en hun instellingen {#predicates-and-their-settings}
 
-### Voorspellen {#predicates}
+### Voorspeld {#predicates}
 
 De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 
@@ -270,7 +257,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Opties</td>
-   <td><p>De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt.</p> <p>Zie Een voorspelling <a href="#addinganoptionspredicate">van opties</a> toevoegen voor meer informatie.</p> </td>
+   <td><p>De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt.</p> <p>Zie <a href="#addinganoptionspredicate">Een voorspelling van opties toevoegen</a> voor meer informatie.</p> </td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -521,9 +508,9 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * **Eigenschapnaam**
 
-   De eigenschap waarop moet worden gezocht. Er wordt een relatief pad gebruikt en de jokertekens `*/*/*` geven de diepte van de eigenschap ten opzichte van het `jcr:content` knooppunt op (elk sterretje vertegenwoordigt één knooppuntniveau).
+   De eigenschap waarop moet worden gezocht. Het gebruikt een relatieve weg en de vervangingskaarten `*/*/*` specificeren de diepte van het bezit met betrekking tot `jcr:content` knoop (elke asterisk vertegenwoordigt één knooppuntniveau).
 
-   Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken die het `x` bezit op het `jcr:content` knoopgebruik heeft `*/jcr:content/x`
+   Als u slechts op een eerste niveaukindknoop van de bron wilt zoeken die `x` bezit op `jcr:content` knoopgebruik `*/jcr:content/x` heeft
 
 * **Diepte van eigenschap**
 
@@ -531,41 +518,44 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * **Waarde van eigenschap**
 
-   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld, `cq:Page` of
+   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld `cq:Page` of
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereik tekst**
 
-   Het label van het bereikveld in de **Datumbereik** voorspellen.
+   Het label van het bereikveld in het **Datumbereik** voorspellen.
 
 * **Optiepad**
 
-   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Nadat u het pictogram **+** hebt geselecteerd, wordt de selectie toegevoegd aan de lijst met geldige opties (en vervolgens het **-** pictogram dat moet worden verwijderd).
+   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Nadat u het pictogram **+** hebt geselecteerd, wordt de selectie toegevoegd aan de lijst met geldige opties (en vervolgens het pictogram **-** om indien nodig te verwijderen).
 
    De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Pad** van knooppunt Opties komt in feite overeen met het pad 
+* **Het knooppunt Options**
+pathIn feite is hetzelfde als het 
 **Het Weg** van opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
 
-* **Enkel selecteren** Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
+* **Enkel**
+selecterenAls ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
 
-* **Naam(s) van eigenschap(pen) publiceren en live kopiëren** De labels voor de selectievakjes Publiceren en Live kopie voor de specifieke voorspelling van sites.
+* **Naam(s) van eigenschap(pen) publiceren en live kopiëren**
+De labels voor de selectievakjes Publiceren en Live kopie voor de specifieke voorspelling van sites.
 
 * The&amp;ast; op de veldlabels op het tabblad **Instellingen** betekent dat de velden verplicht zijn en dat er een foutbericht wordt weergegeven als deze leeg zijn gelaten.
 
-## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
+## Uw zoekopdracht in Forms {#configuring-your-search-forms} configureren
 
 ### Een aangepaste configuratie maken/openen {#creating-opening-a-customized-configuration}
 
-1. Navigeer naar **Gereedschappen**, **Algemeen**, Forms **** doorzoeken.
+1. Navigeer naar **Tools**, **General**, **Search Forms**.
 
 1. Selecteer de configuratie die u wilt aanpassen.
-1. Gebruik het pictogram **Bewerken** om de configuratie voor het bijwerken te openen.
-1. Als u een nieuwe aanpassing wilt maken, wilt u waarschijnlijk nieuwe voorspelvelden [toevoegen en de instellingen](#add-edit-a-predicate-field-and-define-field-settings) naar wens definiëren. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en de montages [](#add-edit-a-predicate-field-and-define-field-settings)bijwerken.
-1. Selecteer **Gereed** om de configuratie op te slaan. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
+1. Gebruik het **pictogram Edit** om de configuratie voor het bijwerken te openen.
+1. Als een nieuwe aanpassing u waarschijnlijk [nieuwe voorspelbare gebieden zult willen toevoegen en montages ](#add-edit-a-predicate-field-and-define-field-settings) zonodig bepalen. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [de montages ](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
+1. Selecteer **Done** om de configuratie op te slaan. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
 
    >[!NOTE]
    >
@@ -579,8 +569,8 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
-1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
-1. Als u een nieuw veld wilt toevoegen, opent u het tabblad Voorspelfunctie **** selecteren en sleept u het vereiste voorloopgebied naar de gewenste locatie. Het **Datumbereik voorspelt** bijvoorbeeld:
+1. [Open de aangepaste ](#creating-opening-a-customized-configuration) configuratie voor bijwerken.
+1. Als u een nieuw gebied wilt toevoegen, open **Uitgezochte Predicate** tabel en sleep het vereiste voorspel aan de vereiste plaats. Bijvoorbeeld het **Datumbereik voorspellen**:
 
    ![voorspelling toevoegen](assets/csf-add-predicate.png)
 
@@ -592,12 +582,12 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    * U wilt een bestaande voorspelling bijwerken:
 
-      Selecteer het voorloopveld (rechts) en open het tabblad **Instellingen** .
-   De instellingen voor de **Datumbereikvoorspelling** zijn bijvoorbeeld:
+      Selecteer het voorloopgebied (op het recht), dan open **Montages** tabel.
+   Bijvoorbeeld, de montages voor **Datumbereik Predicate**:
 
    ![voorspellen wijzigen](assets/csf-modify-predicate.png)
 
-1. Breng de gewenste wijzigingen aan en bevestig deze met **Gereed**. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
+1. Breng de gewenste wijzigingen aan en bevestig deze met **Done**. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
 
 ### Een voorvertoning weergeven van de zoekconfiguratie {#previewing-the-search-configuration}
 
@@ -609,18 +599,18 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    ![voorbeeldformulier](assets/csf-preview-form.png)
 
-1. **Sluit** de voorvertoning om de configuratie te retourneren en te voltooien.
+1. **** Sluit de voorvertoning om de configuratie te retourneren en te voltooien.
 
-### Een voorspelbaar veld verwijderen {#deleting-a-predicate-field}
+### Een voorspelbaar veld {#deleting-a-predicate-field} verwijderen
 
-1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
-1. Selecteer het voorloopveld (rechts), open het tabblad **Instellingen** en selecteer vervolgens het pictogram **Verwijderen** (linksonder).
+1. [Open de aangepaste ](#creating-opening-a-customized-configuration) configuratie voor bijwerken.
+1. Selecteer het voorloopveld (rechts), open het tabblad **Instellingen** en selecteer vervolgens het pictogram **Delete** (linksonder).
 
    ![verwijderpictogram](assets/csf-delete-icon.png)
 
 1. In een dialoogvenster wordt bevestiging van de verwijderactie gevraagd.
 
-1. Bevestig dit en om het even welke andere veranderingen met **Gedaan**.
+1. Bevestig dit en alle andere wijzigingen met **Done**.
 
 ### Een configuratie verwijderen (om de standaardinstelling te herstellen) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -632,7 +622,7 @@ Zodra u een configuratie hebt aangepast zal dit de gebreken met voeten treden. U
 
 Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
-1. Selecteer de vereiste configuratie (bijvoorbeeld **Pagina-editor (zoeken in alinea&#39;s)**) en kies vervolgens het pictogram **Verwijderen** op de werkbalk:
+1. Selecteer de vereiste configuratie (bijvoorbeeld **Pagina-editor (zoeken naar alinea&#39;s)**) en vervolgens het pictogram **Delete** op de werkbalk:
 
    ![default herstellen](assets/csf-restore-default.png)
 
@@ -657,20 +647,20 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    >[!NOTE]
    >
-   >U ***mag*** niets in het `/libs` pad wijzigen.
+   >U ***must*** verandert niets in `/libs` weg.
    >
-   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >1. Maak het vereiste item opnieuw, zoals het in, `/libs`onder `/apps`. In dit geval:
+   >1. Herstel het vereiste item, zoals dit voorkomt in `/libs`, onder `/apps`. In dit geval:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Breng wijzigingen aan in `/apps.`
+   >1. Wijzigingen aanbrengen binnen `/apps.`
 
 
-1. Open de Forms **-console** Zoeken en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****. Selecteer vervolgens **Bewerken**.
+1. Open de **Search Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld **Sites Admin Search Rail**. Selecteer vervolgens **Bewerken**.
 
-1. Afhankelijk van de configuratie voeg een **Opties** of het Bezit **van** Opties aan de configuratie toe.
+1. Afhankelijk van de configuratie voegt **Options** of **Options Property** aan de configuratie toe.
 1. Werk de velden bij, met name:
 
    * **Eigenschapnaam**
@@ -686,8 +676,8 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![Voorspelden van optie](assets/csf-options-predicate-02.png)
 
-1. Selecteer **Gereed** om uw configuratie op te slaan.
-1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open de track **Zoeken - Filters** . De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
+1. Selecteer **Done** om uw configuratie op te slaan.
+1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open **Search - Filters** rail. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
 
    ![gebruikte opties](assets/csf-options-usage.png)
 
@@ -706,15 +696,15 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
  <tbody>
   <tr>
    <td>Bewerken </td>
-   <td>Lezen, schrijven toestemmingen op de <code>/apps </code>knoop.</td>
+   <td>Lees, schrijf toestemmingen op <code>/apps </code>knoop.</td>
   </tr>
   <tr>
    <td>Verwijderen</td>
-   <td>Rechten voor het <code>/apps</code> knooppunt lezen, schrijven, verwijderen</td>
+   <td>Rechten op de <code>/apps</code>-node lezen, schrijven, verwijderen</td>
   </tr>
   <tr>
    <td>Voorvertoning</td>
-   <td>Machtigingen voor lezen, schrijven en verwijderen op het <code>/var/dam/content</code> knooppunt.<br /> Lezen, schrijven toestemmingen op de <code>/apps</code> knoop.</td>
+   <td>De lees, schrijft, schrapt toestemmingen op de <code>/var/dam/content</code> knoop.<br /> Lezen, schrijven toestemmingen op de  <code>/apps</code> knoop.</td>
   </tr>
  </tbody>
 </table>
