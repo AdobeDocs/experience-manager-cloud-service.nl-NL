@@ -1,8 +1,8 @@
 ---
-title: Opmerkingen bij de release voor 2020.8.0 [!DNL Adobe Experience Manager] van een Cloud Service.
+title: Release-aantekeningen voor 2020.8.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
+source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
@@ -15,24 +15,24 @@ ht-degree: 1%
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Nieuw in [!DNL Sites] {#what-is-new-sites}
 
-* Mogelijkheid om pagina&#39;s en subpagina&#39;s (paginastructuren) te [herstellen naar een eerdere versie](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* Mogelijkheid om pagina&#39;s en subpagina&#39;s (paginastructuren) te herstellen naar een eerdere versie[.](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)
 
-* Mogelijkheid om [initialen](/help/sites-cloud/authoring/launches/overview.md) te maken in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
+* Mogelijkheid om [Launches te maken](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Nieuw in [!DNL Assets] {#what-is-new-assets}
 
-* Videotranscodering wordt nu ondersteund met middelenmicroservices. Met een nieuwe sectie in de [!UICONTROL Processing Profiles] configuratie kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Zie Video-elementen [beheren voor meer informatie](/help/assets/manage-video-assets.md#transcode-video). Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
+* Videotranscodering wordt nu ondersteund met middelenmicroservices. Met een nieuwe sectie in de configuratie [!UICONTROL Processing Profiles] kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Zie [Video-elementen beheren](/help/assets/manage-video-assets.md#transcode-video) voor meer informatie. Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
 
-* Voor nieuwe [!DNL Experience Manager Assets] plaatsingen, wordt de slimme etiketteringsfunctionaliteit nu gevormd door gebrek. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties [configureren beheerders de integratie](/help/assets/smart-tags-configuration.md#aio-integration) van slimme tags zoals voorheen.
+* Bij nieuwe [!DNL Experience Manager Assets]-implementaties is de functionaliteit voor slimme tags nu standaard geconfigureerd. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties configureren beheerders [integratie van slimme tags](/help/assets/smart-tags-configuration.md#aio-integration) zoals voorheen.
 
-* Een nieuwe ervaring [bij het downloaden van](/help/assets/download-assets-from-aem.md) middelen is mogelijk.
+* Een nieuwe [ervaring bij het downloaden van middelen](/help/assets/download-assets-from-aem.md) maakt het mogelijk
 
    * Asynchrone download voor grote downloads zodat de gebruikers niet hoeven te wachten.
    * Een nieuwe modulaire API voor uitbreidbaarheid voor ontwikkelaars.
@@ -41,27 +41,27 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [Aangepaste metagegevens met verwerkingsprofiel](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Een eenvoudigere downloadervaring voor gebruikers van het Brand Portal die beheerders kunnen configureren. Zie Overzicht [van](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)downloadervaring.
+* Een eenvoudigere downloadervaring voor gebruikers van het Brand Portal die beheerders kunnen configureren. Zie [Overzicht van downloadervaring](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie Overzicht [van de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documentviewer.
+* Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [Overzicht documentviewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* U kunt het CDN-cachegeheugen (Content Delivery Network) nu direct [!DNL Dynamic Media] in AEM invalideren als een Cloud Service (in tegenstelling tot [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie De CDN-cache [ongeldig maken met behulp van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM als Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [De CDN-cache ongeldig maken door middel van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-* Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, browse en zoekervaring in [!DNL Assets].
+* Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, bladeren en zoekervaring in [!DNL Assets].
 
-   * Als u na het selecteren van de [!UICONTROL Add Rendition] optie op de Esc-toets drukt, keert de focus terug naar de werkbalk. <!-- via CQ-4293594-->
+   * Als u op de toets Escape drukt nadat u de optie [!UICONTROL Add Rendition] hebt geselecteerd, keert de focus terug naar de werkbalk. <!-- via CQ-4293594-->
    * De toetsenbordfocus werkt zoals u had verwacht bij het gebruik van het invoervak E-mail. <!-- via CQ-4286215 -->
    * De accordeonelementen in de sectie met zoekfilters worden geïnterpreteerd als standaard uitbreidbare accordeons. <!-- via CQ-4273103 -->
    * Wanneer u een tag toepast op een element, worden labels in het dialoogvenster weergegeven als boomelementen. ARIA-kenmerken worden op de juiste wijze toegepast op de boomelementen om ze nu toegankelijk te maken. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Het verbetert verenigbaarheid met [!DNL Experience Manager] 6.5.5 de dienstpak en heeft een bijgewerkte lijst van de verenigbaarheid van cliëntOS. [!DNL Windows] 7 en [!DNL macOS] versies lager dan 10.14 worden niet ondersteund.
+* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Het verbetert de compatibiliteit met [!DNL Experience Manager] 6.5.5-servicepack en heeft een bijgewerkte lijst met OS-compatibiliteit voor clients. [!DNL Windows] 7 en  [!DNL macOS] versies lager dan 10.14 worden niet ondersteund.
 
-### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed}
+### Buizen gecorrigeerd in [!DNL Assets] {#bugs-fixed}
 
 * De optie Relate en unrelationship reageert niet wanneer voor het eerst geklikt. (CQ-4299022)
 * Als u tijdens het downloaden van een element de optie selecteert om het via e-mail te ontvangen, wordt het e-mailbericht niet verzonden. (CQ-4299146)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
 
 ### Wat is er nieuw?{#what-is-new-commerce}
 
@@ -73,11 +73,11 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 2020.
+De datum van de Versie voor [!UICONTROL Cloud Manager] Versie 2020.8.0 is Augustus 06, 2020.
 
 ### Wat is er nieuw?{#what-is-new-cloud-manager}
 
-* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde lusje genoemd **Inhoud Controle**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
+* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde lusje genoemd **Content Audit**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
 
 
    >[!NOTE]
@@ -91,7 +91,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * Mogelijkheid om ervaringscontroles uit te voeren op pagina&#39;s, aangedreven door Google Lighthouse. Als onderdeel van de Cloud Manager-pijplijn kunnen maximaal 25 pagina&#39;s worden gecontroleerd en gevalideerd op basis van ervaringen met KPI&#39;s en scores worden weergegeven in de gebruikersinterface van Cloud Manager.
 
-### Bug Fixes {#bug-fixes-cm}
+### Opgeloste problemen {#bug-fixes-cm}
 
 * Enkele onnodige en ongewenste SonarQube-plug-ins werden uitgevoerd als onderdeel van het scannen van codekwaliteit.
 
@@ -99,7 +99,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
 
 * In sommige gevallen werden voltooide executies van pijpleidingen niet met succes geregistreerd als voltooid, waardoor nieuwe executies van de pijpleiding werden voorkomen.
 
-* De executies van pijpleidingen zouden af en toe *vastzitten* als gevolg van interne communicatieproblemen.
+* Uitvoeringen van pijpleidingen zouden soms *geplakt* worden als gevolg van interne communicatieproblemen.
 
 * Bij de provisioning van een nieuwe organisatie kregen sommige gebruikers met andere beheerrollen dan systeembeheerders ten onrechte toegang tot Cloud Manager.
 
@@ -127,7 +127,7 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 * Content Transfer Tool biedt nu ondersteuning voor Shared S3 DataStore.
 
-### Bug Fixes {#ctt-bug-fixes}
+### Opgeloste problemen {#ctt-bug-fixes}
 
 * Er zijn extra onderbrekingen toegevoegd voor het gereedschap om de handelingen te voltooien.
 
@@ -143,4 +143,4 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * AEM Dispatcher Converter uitgebreid om conversies van On-premise- en Adobe Managed Services Dispatcher-configuraties in AEM te ondersteunen als met Cloud Service compatibele Dispatcher-configuraties. Zie [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer informatie.
 
-* AEM Dispatcher Converter herschreven in ` node.js ` en geïntegreerd met de AIO-CLI-plug-in.
+* AEM Dispatcher Converter herschreven in ` node.js ` en geïntegreerd met AIO-CLI-plug-in.
