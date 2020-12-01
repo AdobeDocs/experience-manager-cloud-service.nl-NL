@@ -5,10 +5,10 @@ user-guide-title: Authoring van content in AEM as a Cloud Service
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 95%
+source-wordcount: '236'
+ht-degree: 90%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 95%
    + Lanceringen {#launches}
       + [Werken met lanceringen](authoring/launches/overview.md)
       + [Lanceringen maken](authoring/launches/creating.md)
+      + [Pagina&#39;s in starten beheren](authoring/launches/managing-pages.md)
       + [Lanceringen bewerken](authoring/launches/editing.md)
+      + [Starten voorvertonen met tijdverdraaiing](authoring/launches/preview.md)
       + [Lanceringen promoten](authoring/launches/promoting.md)
    + Workflows {#workflows}
       + [Werken met workflows](authoring/workflows/overview.md)
@@ -75,7 +77,8 @@ ht-degree: 95%
       + [Aanbiedingen maken en beheren](authoring/personalization/offers.md)
       + [Inzicht in segmentering](authoring/personalization/segmentation.md)
       + [Het vormen Segmentatie met ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-+ Beheer {#administering}
+      + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
++ Beheren {#administering}
    + [Workflows beheren](administering/workflows-administering.md)
 + Integreren met AEM as a Cloud Service {#integrations}
    + [Integreren met Adobe Analytics](integrating/integrating-adobe-analytics.md)
