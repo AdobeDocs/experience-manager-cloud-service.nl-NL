@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 74%
+source-wordcount: '471'
+ht-degree: 69%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 74%
    + [Facetten doorzoeken](search-facets.md)
    + [HTTP-API voor assets](mac-api-assets.md)
    + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](content-fragments/assets-api-content-fragments.md)
+   + [AEM GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
+   + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 74%
    + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
+   + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
    + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
+   + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](content-fragments/content-fragments-configuration-browser.md)
    + [Modellen van contentfragmenten](content-fragments/content-fragments-models.md)
    + [Variaties - Authoring van content voor fragmenten](content-fragments/content-fragments-variations.md)
    + [Aan contentfragmenten gekoppelde content](content-fragments/content-fragments-assoc-content.md)
    + [Metagegevens - Fragmenteigenschappen](content-fragments/content-fragments-metadata.md)
    + [Contentfragmenten - Overwegingen verwijderen](content-fragments/content-fragments-delete.md)
    + [Markering](content-fragments/content-fragments-markdown.md)
+   + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
 +  Dynamic Media {#dynamicmedia}
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media instellen](dynamic-media/administering-dynamic-media.md)
