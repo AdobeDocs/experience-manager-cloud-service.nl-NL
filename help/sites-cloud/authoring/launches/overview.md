@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '819'
 ht-degree: 6%
 
 ---
@@ -28,10 +28,12 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-In deze sectie wordt beschreven hoe u startpagina&#39;s kunt maken, bewerken en promoten (en zo nodig [verwijderen](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) vanuit de Sites-console of [de Launches-console](#the-launches-console):
+In deze sectie wordt beschreven hoe u startpagina&#39;s kunt maken, bewerken en promoten (en zo nodig [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) vanuit de Sites-console of [de Launches-console](#the-launches-console):
 
 * [Lanceringen maken](/help/sites-cloud/authoring/launches/creating.md)
 * [Lanceringen bewerken](/help/sites-cloud/authoring/launches/editing.md)
+* [Pagina&#39;s beheren in starten](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Tijdverdraaiing gebruiken om een voorvertoning van uw inhoud weer te geven op basis van Starten](/help/sites-cloud/authoring/launches/preview.md)
 * [Lanceringen promoten](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Starten - de volgorde van gebeurtenissen {#launches-the-order-of-events}
@@ -52,13 +54,13 @@ Met Launches kunt u:
    * Bewerk starteigenschappen, zoals markeringen voor **Titel**, **Startdatum**, **Geschikt voor productie**.
 * U kunt de inhoud handmatig of automatisch publiceren:
    * Handmatig:
-      * Bevestig uw lanceringsinhoud terug naar het **Doel** (bronpagina&#39;s) wanneer het klaar is om te worden gepubliceerd.
+      * Bevestig uw lanceringsinhoud terug naar **Doel** (bronpagina&#39;s) wanneer het klaar is om te worden gepubliceerd.
       * Publiceer de inhoud van de bronpagina&#39;s (na het promoten van de achterpagina&#39;s).
       * Alle pagina&#39;s of alleen gewijzigde pagina&#39;s promoten.
    * Automatisch - dit omvat het volgende:
-      * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
-      * De markering **Production Ready** : dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
-      * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
+      * Het **Launch**(**Live**) **date** veld: dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
+      * De markering **Production Ready**: dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
+      * Als de markering **Production Ready** is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Launch**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
          Als er geen datum is ingesteld, heeft de markering geen effect.
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
@@ -66,9 +68,9 @@ Met Launches kunt u:
 
    ![Parallel uitgevoerde acties](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [Een geneste opstart](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) maken - een opstart binnen een opstart:
+* [Een geneste opstart](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch)  maken - een opstart binnen een opstart:
    * De bron is een bestaande opstart.
-   * U kunt een geneste lancering [aan om het even welk doel](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) bevorderen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
+   * U kunt een geneste opstart [promoten](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) naar elk doel; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
 
    ![Een geneste start](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -78,7 +80,7 @@ Met Launches kunt u:
 
 >[!NOTE]
 >
->Het creëren en het uitgeven van lanceringen vereist toegangsrechten aan `/content/launches` - zoals met de standaardgroep `content-authors`.
+>Voor het maken en bewerken van startpagina&#39;s zijn toegangsrechten vereist voor `/content/launches` - zoals bij de standaardgroep `content-authors`.
 >
 >Neem contact op met de systeembeheerder als u problemen ondervindt.
 
@@ -86,15 +88,15 @@ Met Launches kunt u:
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u toe om acties op die vermelde te voeren. De console is toegankelijk via:
 
-* De **gereedschapsconsole** : **Gereedschappen**, **Sites**, **Starten**.
+* De console **Tools**: **Gereedschappen**, **Sites**, **Launches**.
 
-* of rechtstreeks met `https://<host>:<port>/libs/launches/content/launches.html`
+* Of rechtstreeks met `https://<host>:<port>/libs/launches/content/launches.html`
 
-## Starten in verwijzingen (siteconsole) {#launches-in-references-sites-console}
+## Start in References (Sites Console) {#launches-in-references-sites-console}
 
-1. Navigeer in de **Sites** -console naar de bron van de opstart(en).
-1. Open de **References** -rail en selecteer de bronpagina.
-1. Selecteer **Starten**. De bestaande opstart(en) worden weergegeven:
+1. Navigeer in de **Sites**-console naar de bron van de opstart(en).
+1. Open **References** rail en selecteer de bronpagina.
+1. Selecteer **Launches**, de bestaande lancering(en) zullen worden vermeld:
 
    ![Referenties van lanceringen in plaatsenconsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
