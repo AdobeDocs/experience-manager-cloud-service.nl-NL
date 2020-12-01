@@ -2,38 +2,42 @@
 title: Gekoppelde inhoud
 description: Gekoppelde inhoud biedt de verbinding, zodat elementen (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 13%
+source-wordcount: '227'
+ht-degree: 4%
 
 ---
 
 
 # Gekoppelde inhoud{#associated-content}
 
-Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door een reeks elementen [beschikbaar te stellen die u kunt gebruiken wanneer u het inhoudsfragment op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)gebruikt, en tegelijk de tijd te verkorten die nodig is om naar het juiste element te zoeken.
+Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door [een reeks elementen te bieden die u kunt openen bij het gebruik van het inhoudsfragment op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
 
-## Gekoppelde inhoud toevoegen {#adding-associated-content}
+## Gekoppelde inhoud {#adding-associated-content} toevoegen
 
 >[!NOTE]
 >
 >Er zijn verschillende methoden om [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
-Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](/help/assets/manage-collections.md). Daarna kunt u:
+Om de vereniging te maken moet u eerst [uw media activa aan een inzameling ](/help/assets/manage-collections.md) toevoegen. Daarna kunt u:
 
 1. Open uw fragment en selecteer **Gekoppelde content** in het zijpaneel.
 
    ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-2. Selecteer **Inhoud koppelen** of **Verzameling koppelen** (afhankelijk van of verzamelingen al zijn gekoppeld of niet).
-3. Selecteer de gewenste verzameling.
+1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
+
+   * **Inhoud**  koppelen: dit is de eerste gekoppelde verzameling
+   * **De bijbehorende inzamelingen**  van de Inzameling worden reeds gevormd
+
+1. Selecteer de gewenste verzameling.
 
    U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
 
    ![Verzameling selecteren](assets/cfm-assoc-content-02.png)
 
-4. Bevestig (met het vinkje). De verzameling wordt weergegeven als gekoppeld.
+1. Bevestig (met **Select**). De verzameling wordt weergegeven als gekoppeld.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
@@ -41,7 +45,7 @@ Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan ee
 
 Nadat u een verzameling hebt gekoppeld, kunt u:
 
-* **Verwijder** de koppeling.
-* **Voeg elementen** toe aan de verzameling.
+* **De koppeling** verwijderen.
+* **Voeg** Elementen aan de inzameling toe.
 * Selecteer een element voor verdere actie.
 * Bewerk het element.
