@@ -2,10 +2,10 @@
 title: Lanceringen bewerken
 description: 'Nadat u een opstartafbeelding voor de pagina (of set pagina''s) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(''s). '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 19%
+source-wordcount: '521'
+ht-degree: 18%
 
 ---
 
@@ -16,10 +16,14 @@ ht-degree: 19%
 
 Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(&#39;s).
 
-1. Heb toegang tot de [Lancering van Verwijzingen (de console van Plaatsen)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties te tonen.
-1. Selecteer **Ga naar de pagina** om de pagina voor bewerking te openen.
+1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
+1. Selecteer **Ga naar de pagina** om de pagina te openen voor bewerking.
 
-### Pagina&#39;s starten bewerken die zijn onderworpen aan een live kopie {#editing-launch-pages-subject-to-a-live-copy}
+Als u de pagina bewerkt, ziet u een indicatie in de bovenste werkbalk, samen met de opties **Verlaten** en **Navigeren**:
+
+![Starten vanuit paginaeditor verlaten en navigeren](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+### Starten van pagina&#39;s bewerken die zijn onderworpen aan een actieve kopie {#editing-launch-pages-subject-to-a-live-copy}
 
 Als uw lancering op een levende kopie gebaseerd is, zult u: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
 
@@ -39,25 +43,25 @@ Zie Inhoud van Live kopie wijzigen voor meer informatie. <!--See [Changing Live 
 
 Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
-1. Navigeer in de **Sites** -console naar de bronpagina van de opstart en selecteer deze [](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open het deelvenster **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en selecteer **Starten**.
-1. Selecteer uw specifieke lancering dan **Vergelijken aan Bron**:
+1. In **Sites** console, [navigeer aan de bronpagina&#39;s van uw lancering en selecteer één](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Open het venster **[Referenties](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en selecteer **Launches**.
+1. Selecteer uw specifieke lancering toen **Vergelijk met Bron**:
 
    ![Starten vergelijken met bron](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md)voor meer informatie over het gebruik van deze functie.
+   Zie [Paginadiff](/help/sites-cloud/authoring/features/page-diff.md) voor volledige informatie over het gebruik van deze functie.
 
 ## De gebruikte bronpagina&#39;s wijzigen {#changing-the-source-pages-used}
 
 U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het bereik van bronpagina&#39;s voor een opstart:
 
 1. Open en selecteer de opstart vanuit:
-   * De [Launches-console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * Met de [Launches-console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Selecteer **Bewerken**.
    * [Referenties (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
-      * Selecteer Starten **bewerken**.
+      * Selecteer **Starten bewerken**.
       * De bronpagina&#39;s worden weergegeven.
 1. Breng de gewenste wijzigingen aan en bevestig vervolgens met **Opslaan**.
 
@@ -70,15 +74,15 @@ U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het b
 U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
 1. Open en selecteer de opstart vanuit:
-   * de [Launches-console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * de [Startconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Selecteer **Eigenschappen**.
    * [Referenties (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
-      * Select **Edit Properties**.
+      * Selecteer **Eigenschappen bewerken**.
       * De details worden weergegeven.
 1. Breng de gewenste wijzigingen aan en bevestig vervolgens met **Opslaan**.
    * Zie [Lanceringen - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) voor informatie over het doel en de interactie van de velden **Startdatum** en **Geschikt voor productie**.
 
-## De opstartstatus van een pagina vaststellen {#discovering-the-launch-status-of-a-page}
+## De opstartstatus van een pagina {#discovering-the-launch-status-of-a-page} opzoeken
 
 De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in Referenties (Sites Console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
