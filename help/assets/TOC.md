@@ -5,24 +5,24 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 75%
 
 ---
 
 
-# [!DNL Assets] Hulplijn {#assets}
+# [!DNL Assets] Hulplijn  {#assets}
 
 + [[!DNL Assets] als Cloud Service](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Opvallende wijzigingen [!DNL Assets] in de vorm van een Cloud Service](assets-cloud-changes.md)
++ [Opvallende wijzigingen  [!DNL Assets] in de vorm van een Cloud Service](assets-cloud-changes.md)
 + [[!DNL Assets] architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
 + [Toegankelijkheid in [!DNL Assets]](accessibility.md)
-+ Digitale middelen beheren {#manage}
++ Digitale elementen beheren {#manage}
    + [Assets delen](share-assets.md)
    + [Activiteiten en DAM-taken bewaken](assets-activity-history.md)
    + [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
@@ -82,12 +82,15 @@ ht-degree: 75%
    + [Dynamic Media-assets beheren](dynamic-media/managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Aanbevolen procedures voor bestandsbeheer](dynamic-media/best-practices-for-file-management.md)
-   + [Voorinstellingen voor Dynamic Media-viewer beheren](dynamic-media/managing-viewer-presets.md)
-   + [Voorinstellingen voor Dynamic Media-viewer toepassen](dynamic-media/viewer-presets.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding toepassen](dynamic-media/image-presets.md)
    + [Afbeeldingsprofielen](dynamic-media/image-profiles.md)
    + [Videoprofielen](dynamic-media/video-profiles.md)
+   + [Voorinstellingen voor Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
+   + [Voorinstellingen voor Dynamic Media-afbeelding toepassen](dynamic-media/image-presets.md)
+   + [Voorinstellingen voor Dynamic Media-viewer beheren](dynamic-media/managing-viewer-presets.md)
+   + [Voorinstellingen voor Dynamic Media-viewer toepassen](dynamic-media/viewer-presets.md)
+   + [Voorinstellingen batchset](dynamic-media/batch-set-presets-dm.md)
+   + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [De CDN-cache ongeldig maken door middel van Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Dynamic Media-assets leveren](dynamic-media/delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 75%
    + [Regelsets gebruiken om URL&#39;s te transformeren](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media-assets publiceren](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Werken met Selectief publiceren in dynamische media](dynamic-media/selective-publishing.md)
-   + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [De CDN-cache ongeldig maken door middel van Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Werken met kiezers](dynamic-media/working-with-selectors.md)
    + [Veelgestelde vragen over de gebruiksduur van de DHTML-viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Kennisgeving over de gebruiksduur van Flash-viewers](dynamic-media/flash-viewers-eol.md)
