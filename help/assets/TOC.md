@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
+source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 75%
+source-wordcount: '436'
+ht-degree: 74%
 
 ---
 
@@ -79,6 +79,7 @@ ht-degree: 75%
    + [Werken met Dynamic Media](dynamic-media/dynamic-media.md)
    + [Dynamic Media configureren](dynamic-media/config-dm.md)
    + [Problemen met Dynamic Media oplossen](dynamic-media/troubleshoot-dm.md)
+   + [Toegankelijkheid in dynamische media](dynamic-media/accessibility-dm.md)
    + [Dynamic Media-assets beheren](dynamic-media/managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Aanbevolen procedures voor bestandsbeheer](dynamic-media/best-practices-for-file-management.md)
