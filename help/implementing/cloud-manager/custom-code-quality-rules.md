@@ -10,7 +10,7 @@ ht-degree: 6%
 ---
 
 
-# Custom Code Quality Rules {#custom-code-quality-rules}
+# Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
 
 Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die worden uitgevoerd door Cloud Manager en die zijn gemaakt op basis van de beste werkwijzen van AEM Engineering.
@@ -103,7 +103,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP-aanvragen moeten altijd socket- en verbindingstime-outs hebben {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP-aanvragen moeten altijd socket hebben en time-outs verbinden {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 **Sleutel**: CQRules:ConnectionTimeoutMechanism
 
@@ -181,7 +181,7 @@ public void orDoThis() {
 }
 ```
 
-### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet door klanten worden geïmplementeerd of uitgebreid {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet worden geïmplementeerd of uitgebreid door klanten {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 **Sleutel**: CQBP-84, afhankelijkheden van CQBP-84
 
@@ -195,7 +195,7 @@ De AEM-API bevat Java-interfaces en -klassen die alleen door aangepaste code mog
 
 Wanneer nieuwe methoden aan deze interfaces worden toegevoegd, beïnvloeden deze aanvullende methoden geen bestaande code die deze interfaces gebruikt en daardoor wordt de toevoeging van nieuwe methoden aan deze interfaces beschouwd als compatibel met eerdere versies. Als echter door aangepaste code één van deze interfaces ***wordt geïmplementeerd***, heeft deze aangepaste code een risico voor compatibiliteit met eerdere versies voor de klant geïntroduceerd.
 
-Interfaces (en klassen) die alleen bedoeld zijn om door AEM te worden geïmplementeerd, zijn voorzien van een annotatie met *org.osgi.annotation.versioning.ProviderType* (of, in sommige gevallen, een vergelijkbare oudere annotatie *aQute.bnd.annotation.ProviderType*). Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd (of een klasse wordt uitgebreid) door douanecode.
+Interfaces (en klassen) die alleen bedoeld zijn om door AEM te worden geïmplementeerd, worden geannoteerd met *org.osgi.annotation.versioning.ProviderType* (of, in sommige gevallen, een vergelijkbare oudere annotatie *aQute.bnd.annotation.ProviderType*). Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd (of een klasse wordt uitgebreid) door douanecode.
 
 #### Niet-compatibele code {#non-compliant-code-3}
 
@@ -252,7 +252,7 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Gebruik geen Serlet-serverpaden naar elkaar om servlets te registreren {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Gebruik geen servletpaden naar links om servlets te registreren {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 **Sleutel**: CQRules:CQBP-75
 
@@ -262,7 +262,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Sinds**: Versie 2018.4.0
 
-Zoals beschreven in de [verkoopdocumentatie](http://sling.apache.org/documentation/the-sling-engine/servlets.html), worden bindingen servlets door wegen ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
+Zoals beschreven in [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindingen serlets door wegen wordt ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
 
 #### Niet-compatibele code {#non-compliant-code-5}
 
@@ -349,7 +349,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Meld u niet aan bij INFO wanneer u GET- of HEAD-verzoeken afhandelt {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Meld u niet aan bij INFO bij het verwerken van GET- of HEAD-verzoeken {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Sleutel**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -415,7 +415,7 @@ public void doThis() {
 }
 ```
 
-### Aanmelden van vangstblokken moet zich op het WARN- of FOUTniveau bevinden {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### Login vangstblokken zou op het WARN of FOUTniveau {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level} moeten zijn
 
 **Sleutel**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
@@ -425,7 +425,7 @@ public void doThis() {
 
 **Sinds**: Versie 2018.4.0
 
-Zoals de naam al aangeeft, moeten Java-uitzonderingen altijd in *uitzonderlijke* omstandigheden worden gebruikt. Dientengevolge, wanneer een uitzondering wordt gevangen, is het belangrijk om ervoor te zorgen dat de logboekberichten op het aangewezen niveau - of WARN of FOUT worden geregistreerd. Dit zorgt ervoor dat die berichten correct in de logboeken verschijnen.
+Zoals de naam suggereert, zouden de uitzonderingen van Java altijd in *uitzonderlijke* omstandigheden moeten worden gebruikt. Dientengevolge, wanneer een uitzondering wordt gevangen, is het belangrijk om ervoor te zorgen dat de logboekberichten op het aangewezen niveau - of WARN of FOUT worden geregistreerd. Dit zorgt ervoor dat die berichten correct in de logboeken verschijnen.
 
 #### Niet-compatibele code {#non-compliant-code-10}
 
@@ -451,7 +451,7 @@ public void doThis() {
 }
 ```
 
-### Stapelsporen niet naar de console afdrukken {#do-not-print-stack-traces-to-the-console}
+### Stapelsporen niet afdrukken naar de console {#do-not-print-stack-traces-to-the-console}
 
 **Sleutel**: CQRules:CQBP-44—ExceptionPrintStackTrace
 
@@ -461,7 +461,7 @@ public void doThis() {
 
 **Sinds**: Versie 2018.4.0
 
-Zoals vermeld, is de context kritiek wanneer het begrip van logboekberichten. Wanneer u Exception.printStackTrace() gebruikt, wordt **alleen** de stacktracering uitgevoerd naar de standaardfoutenstream, waardoor alle context verloren gaat. Bovendien kunnen in een multithread-toepassing, zoals AEM, meerdere uitzonderingen parallel met deze methode worden afgedrukt, de stacksporen ervan overlappen, wat tot grote verwarring leidt. De uitzonderingen zouden door het registrerenkader slechts moeten worden geregistreerd.
+Zoals vermeld, is de context kritiek wanneer het begrip van logboekberichten. Wanneer u Exception.printStackTrace() gebruikt, wordt **only** de stacktracering uitgevoerd naar de standaardfoutenstream, waardoor alle context verloren gaat. Bovendien kunnen in een multithread-toepassing, zoals AEM, meerdere uitzonderingen parallel met deze methode worden afgedrukt, de stacksporen ervan overlappen, wat tot grote verwarring leidt. De uitzonderingen zouden door het registrerenkader slechts moeten worden geregistreerd.
 
 #### Niet-compatibele code {#non-compliant-code-11}
 
@@ -487,7 +487,7 @@ public void doThis() {
 }
 ```
 
-### Niet uitvoeren naar standaardinvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
+### Uitvoer niet uitvoeren naar standaarduitvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
 
 **Sleutel**: CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -523,7 +523,7 @@ public void doThis() {
 }
 ```
 
-### Hardcoded /apps en /libs paden vermijden {#avoid-hardcoded-apps-and-libs-paths}
+### Hardcoded /apps en /libs-paden voorkomen {#avoid-hardcoded-apps-and-libs-paths}
 
 **Sleutel**: CQRules:CQBP-71
 
@@ -551,7 +551,7 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Verkoopplanner mag niet worden gebruikt {#sonarqube-sling-scheduler}
+### Verschuivende planner mag niet worden gebruikt {#sonarqube-sling-scheduler}
 
 **Sleutel**: CQRules:AMSCORE-554
 
@@ -563,9 +563,9 @@ public void doThis(Resource resource) {
 
 De Planner van de Verkoop moet niet voor taken worden gebruikt die een gewaarborgde uitvoering vereisen. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
 
-Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) voor meer informatie over de manier waarop saldertaken worden verwerkt in een geclusterde omgeving.
+Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) voor meer informatie over de manier waarop saldertaken worden uitgevoerd in een geclusterde omgeving.
 
-### Verouderde API&#39;s AEM niet mogen worden gebruikt {#sonarqube-aem-deprecated}
+### AEM verouderde API&#39;s mogen niet worden gebruikt {#sonarqube-aem-deprecated}
 
 **Sleutel**: AMSCORE-553
 
@@ -577,18 +577,18 @@ Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/document
 
 Het AEM API-oppervlak wordt voortdurend herzien om te bepalen voor welke API&#39;s het gebruik wordt ontmoedigd en dus als afgekeurd wordt beschouwd.
 
-In veel gevallen worden deze API&#39;s vervangen door de standaard Java *@Deprecated* -annotatie en, als zodanig, zoals bepaald door `squid:CallToDeprecatedMethod`.
+In veel gevallen worden deze API&#39;s vervangen door de standaard Java *@Deprecated*-annotatie en, als zodanig, zoals bepaald door `squid:CallToDeprecatedMethod`.
 
 Er zijn echter gevallen waarin een API afgekeurd is in de context van AEM, maar in andere contexten niet mag worden afgekeurd. Deze regel identificeert deze tweede klasse.
 
-## Regels voor OakPAL-inhoud {#oakpal-rules}
+## Inhoudsregels voor OakPAL {#oakpal-rules}
 
 U vindt hieronder de OakPAL-controles die zijn uitgevoerd door Cloud Manager.
 
 >[!NOTE]
 >OakPAL is een kader dat door een AEM Partner (en winnaar van 2019 AEM Rockstar North America) wordt ontwikkeld die inhoudspakketten valideert met behulp van een standalone Oak-opslagplaats.
 
-### Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen {#oakpal-customer-package}
+### Klantpakketten moeten geen knooppunten maken of wijzigen onder /libs {#oakpal-customer-package}
 
 **Sleutel**: BannedPaths
 
@@ -598,7 +598,7 @@ U vindt hieronder de OakPAL-controles die zijn uitgevoerd door Cloud Manager.
 
 **Sinds**: Versie 2019.6.0
 
-Het is een al lang bestaande beste praktijk geweest dat de /libs inhoudsboom in de AEM inhoudsbewaarplaats als read-only door klanten zou moeten worden beschouwd. Als knooppunten en eigenschappen onder */libs* worden gewijzigd, ontstaat een aanzienlijk risico voor belangrijke en kleine updates. Wijzigingen in */libs* mogen alleen via officiële kanalen door Adobe worden aangebracht.
+Het is een al lang bestaande beste praktijk geweest dat de /libs inhoudsboom in de AEM inhoudsbewaarplaats als read-only door klanten zou moeten worden beschouwd. Als u knooppunten en eigenschappen wijzigt onder */libs*, ontstaat een aanzienlijk risico voor belangrijke en kleine updates. Wijzigingen in */libs* mogen alleen via officiële kanalen door Adobe worden aangebracht.
 
 ### Pakketten mogen geen dubbele OSGi-configuraties bevatten {#oakpal-package-osgi}
 
@@ -612,7 +612,7 @@ Het is een al lang bestaande beste praktijk geweest dat de /libs inhoudsboom in 
 
 Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Dit leidt tot een dubbelzinnigheid over welke configuratie zal opereerbaar zijn. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties zal identificeren waar de zelfde component veelvoudige tijden op de zelfde runmode (of combinatie runmodes) wordt gevormd.
 
-#### Niet-conforme code {#non-compliant-code-osgi}
+#### Niet-compatibele code {#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -631,7 +631,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Mappen configureren en installeren mag alleen OSGi-knooppunten bevatten {#oakpal-config-install}
+### Mappen configureren en installeren mag alleen OSGi-knooppunten {#oakpal-config-install} bevatten
 
 **Sleutel**: ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -641,11 +641,11 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 
 **Sinds**: Versie 2019.6.0
 
-Om veiligheidsredenen, zijn de wegen die */config/ en /install/* bevatten slechts leesbaar door administratieve gebruikers in AEM en zouden slechts voor configuratie OSGi en bundels moeten worden gebruikt OSGi. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
+Om veiligheidsredenen, zijn de wegen die */config/ en /install/* bevatten slechts leesbaar door administratieve gebruikers in AEM en zouden slechts voor OSGi- configuratie en OSGi- bundels moeten worden gebruikt. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
 
-Een veelvoorkomend probleem is het gebruik van knooppunten die `config` in componentdialoogvensters worden genoemd of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur maak gebruik van het `configPath` bezit op de `cq:inplaceEditing` knoop om de nieuwe plaats te specificeren.
+Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur maak gebruik van het `configPath` bezit op `cq:inplaceEditing` knoop om de nieuwe plaats te specificeren.
 
-#### Niet-conforme code {#non-compliant-code-config-install}
+#### Niet-compatibele code {#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -664,7 +664,7 @@ Een veelvoorkomend probleem is het gebruik van knooppunten die `config` in compo
       + rtePlugins [nt:unstructured]
 ```
 
-### Pakketten mogen elkaar niet overlappen {#oakpal-no-overlap}
+### Pakketten mogen {#oakpal-no-overlap} niet overlappen
 
 **Sleutel**: PackageOverlaps
 
@@ -674,9 +674,9 @@ Een veelvoorkomend probleem is het gebruik van knooppunten die `config` in compo
 
 **Sinds**: Versie 2019.6.0
 
-Gelijkaardig aan de *Pakketten zouden geen Dubbele OSGi Configuraties* moeten bevatten dit is een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
+Gelijkaardig aan *de Pakketten zouden Duplicate OSGi Configurations* niet moeten bevatten is dit een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
 
-### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
+### Standaardontwerpmodus mag geen klassieke UI {#oakpal-default-authoring} zijn
 
 **Sleutel**: ClassicUIAuthoringMode
 
@@ -688,7 +688,7 @@ Gelijkaardig aan de *Pakketten zouden geen Dubbele OSGi Configuraties* moeten be
 
 De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaalt de standaard auteurswijze binnen AEM. Aangezien Klassieke UI sinds AEM 6.4 is afgekeurd, zal een kwestie nu worden opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
 
-### Componenten met dialoogvensters moeten aanraakinterface-dialoogvensters hebben {#oakpal-components-dialogs}
+### Componenten met dialoogvensters moeten dialoogvensters met aanraakinterface hebben {#oakpal-components-dialogs}
 
 **Sleutel**: ComponentWithOnlyClassicUIDialog
 
@@ -700,13 +700,13 @@ De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaa
 
 AEM Componenten die een Klassieke UI dialoog hebben zouden altijd een overeenkomstige dialoog van de Aanraking UI moeten hebben zowel om een optimale auteurservaring te verstrekken als met het de plaatsingsmodel van de Cloud Service compatibel te zijn, waar Klassieke UI niet wordt gesteund. Deze regel verifieert de volgende scenario&#39;s:
 
-* Een component met een klassieke UI-dialoogvenster (dat wil zeggen een onderliggende dialoognode) moet een overeenkomend dialoogvenster Touch UI hebben (dat wil zeggen een `cq:dialog` onderliggende node).
+* Een component met een Klassieke dialoog UI (namelijk een dialoog kindknoop) moet een overeenkomstige dialoog van de Aanraking UI (namelijk een `cq:dialog` kindknoop) hebben.
 * Een component met een Klassieke UI-ontwerpdialoogvenster (d.w.z. een design_dialog-knooppunt) moet een overeenkomend dialoogvenster voor het aanraakinterface-ontwerp hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
-De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Raadpleeg [de AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) voor meer informatie.
+De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Raadpleeg [De AEM Moderniseringsgereedschappen](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) voor meer informatie.
 
-### Pakketten mogen geen MIP-bestand en onveranderbare inhoud mengen {#oakpal-packages-immutable}
+### Pakketten mogen geen Mutable en Onveranderbare Inhoud {#oakpal-packages-immutable} mengen
 
 **Sleutel**: ImmutableMutableMixedPackage
 
@@ -716,11 +716,11 @@ De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt do
 
 **Sinds**: Versie 2020.5.0
 
-Om compatibel te zijn met het implementatiemodel van de Cloud Service, moeten afzonderlijke inhoudspakketten ofwel inhoud bevatten voor de onveranderlijke gebieden van de opslagplaats (dat wil zeggen, niet `/apps and /libs, although /libs` moeten worden gewijzigd door de code van de klant en zullen ze een afzonderlijke schending veroorzaken), ofwel het veranderbare gebied (dat wil zeggen, alles anders), maar niet beide. Een pakket met beide componenten is bijvoorbeeld niet compatibel met de Cloud Service en zorgt ervoor dat een probleem wordt gerapporteerd. `/apps/myco/components/text and /etc/clientlibs/myco`
+Om compatibel te zijn met het implementatiemodel van de Cloud Service, moeten afzonderlijke inhoudspakketten ofwel inhoud bevatten voor de onveranderlijke gebieden van de opslagplaats (dat wil zeggen dat `/apps and /libs, although /libs` niet door klantcode moet worden gewijzigd en een afzonderlijke schending veroorzaakt) of het veranderbare gebied (dat wil zeggen, alles anders), maar niet beide. Een pakket met zowel `/apps/myco/components/text and /etc/clientlibs/myco` is bijvoorbeeld niet compatibel met Cloud Service en zorgt ervoor dat een probleem wordt gerapporteerd.
 
-Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+Raadpleeg [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie.
 
-### Reverse Replication Agents mogen niet worden gebruikt {#oakpal-reverse-replication}
+### Reverse Replication Agents should not be used {#oakpal-reverse-replication}
 
 **Sleutel**: ReverseReplication
 
@@ -730,7 +730,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 
 **Sinds**: Versie 2020.5.0
 
-Ondersteuning voor omgekeerde replicatie is niet beschikbaar in implementaties van Cloud Servicen, zoals beschreven in [Opmerkingen bij de release: Verwijderen van replicatieagents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+Ondersteuning voor omgekeerde replicatie is niet beschikbaar in Cloud Service-implementaties, zoals beschreven in [Opmerkingen bij de release: Verwijderen van Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
