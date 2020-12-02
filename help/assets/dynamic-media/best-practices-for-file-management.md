@@ -16,7 +16,7 @@ Een belangrijk concept met betrekking tot het gebruik van dynamische profielen v
 
 Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de verzameling van digitale elementen en ervoor zorgen dat de juiste bestanden worden verwerkt door het juiste profiel.
 
-Zie [Informatie over Dynamisch mediabeeldprofiel en Videoprofielen](about-image-video-profiles.md).
+Zie [Informatie over dynamisch mediabeeldprofiel en videoprofielen](about-image-video-profiles.md).
 
 Hier volgt een overzicht van tips voor het organiseren van digitale elementbestanden.
 
@@ -28,15 +28,15 @@ Hier volgt een overzicht van tips voor het organiseren van digitale elementbesta
 * In de meeste gevallen groeit de collectie van digitale middelen altijd. Daarom is het belangrijk - vroeger op-om meta-gegevensgebruik, omslagstructuur, en dossier het noemen onder al uw geupload activa te formaliseren. Door deze standaardisering zorgt u ervoor dat u verwerkingsprofielen nauwkeuriger en consistenter kunt toepassen op mappen wanneer uw pool met digitale elementen toeneemt.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Zo kunt u bijvoorbeeld de volgende mapstructuren gebruiken die u kunnen helpen bij het verfijnen van de profielen die u wilt toewijzen:
 
-   * **Ontwikkelingsmappen** - bevat digitale elementen waaraan u momenteel werkt.
-   * **Clientmappen** - bevat digitale elementen op basis van clients of projectnamen.
-   * **Primaire bronmappen** - bevat originele, brondigitale elementen.
-   * **Uitvoermappen** - bevat uitvoeringen en kopieën van de originele, brondigitale elementen.
-   * **Bestandsgroottemappen** - bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
-   * **Mappen** organiseren - bevat digitale elementen die klaar zijn om live op uw website te publiceren.
-   * **Mime-tekstmappen** - bevat digitale elementen die specifiek zijn voor mime-typen, zoals afbeeldingen, documenten en multimedia.
-   * **Mappen** archiveren - bevat gepensioneerde digitale elementen.
-   * **Datummappen** - bevat digitale elementen op basis van een aanmaakdatum of een datum die als laatste is gewijzigd.
+   * **Ontwikkelingsmappen** : bevat digitale elementen waaraan u momenteel werkt.
+   * **Clientmappen** : bevat digitale elementen op basis van clients of projectnamen.
+   * **Primaire bronmappen** : bevat oorspronkelijke, digitale bronbestanden.
+   * **Uitvoermappen** : bevat uitvoeringen en kopieën van de originele, brondigitale elementen.
+   * **Bestandsgroottemappen**  - bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
+   * **Mappen**  stapelen: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
+   * **Mime-tekstmappen** : bevat digitale elementen die specifiek zijn voor mime-typen, zoals afbeeldingen, documenten en multimedia.
+   * **Archiefmappen** : bevat niet-gebruikte digitale elementen.
+   * **Datumgebaseerde mappen** : bevat digitale elementen op basis van een aanmaakdatum of een datum die als laatste is gewijzigd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat toegewezen profielen niet worden afgebroken.
 * Als een element al is gepubliceerd, gebruikt u AEM om het element naar een andere map te verplaatsen en vanaf de nieuwe locatie opnieuw te publiceren, is de oorspronkelijke locatie van het gepubliceerde element nog steeds beschikbaar, samen met het opnieuw gepubliceerde element. Het oorspronkelijke gepubliceerde middel is echter &quot;verloren&quot; aan AEM en kan niet ongepubliceerd worden. Daarom is het aan te raden eerst de publicatie van elementen ongedaan te maken voordat u deze naar een andere map verplaatst.
