@@ -22,6 +22,6 @@ In het volgende diagram ziet u de hiërarchie van entiteiten in Cloud Manager.
 
 Een gebruiker kan een **Sandbox** of een **Regular** programma tot stand brengen.
 
-Een *zandbak* wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, POC&#39;s, of documentatie te dienen. Het is niet de bedoeling om het verkeer van personen te vervoeren en er zullen beperkingen zijn die een regulier programma niet zal hebben. Het zal Plaatsen en Activa omvatten en zal met een tak van het Git worden geleverd die steekproefcode, een Dev milieu, en een niet productiepijplijn omvat.
+Een *Sandbox* wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, POC&#39;s, of documentatie te dienen. Het is niet de bedoeling om het verkeer van personen te vervoeren en er zullen beperkingen zijn die een regulier programma niet zal hebben. Het zal Plaatsen en Activa omvatten en zal met een tak van het Git worden geleverd die steekproefcode, een Dev milieu, en een niet productiepijplijn omvat.
 
-Er wordt een *regulier programma* gemaakt om live verkeer op het juiste tijdstip in de toekomst mogelijk te maken.
+Een *Regelmatig programma* wordt gecreeerd om levend verkeer op het aangewezen tijdstip in de toekomst toe te laten.
