@@ -43,7 +43,7 @@ ht-degree: 75%
       + [De wizard gebruiken](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Uw project instellen](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Inzicht in de omgeving van de build](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Opmerkingen bij de release van Cloud Manager {#release-notes-cloud-manager}
+   + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Opmerkingen bij de release 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Opmerkingen bij de release 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
