@@ -21,13 +21,13 @@ Gelijktijdige inname van veel elementen of complexe elementen is een resource-in
 
 Bedrijven hebben ondersteuning nodig voor een groot aantal verschillende bestandsindelingen en inhoudsresoluties voor meervoudige apparaten, transgeografische situaties en meertalige gebruiksgevallen. Voor de verwerking en opslag van bedrijfsmiddelen zijn middelen en mogelijkheden nodig die een traditionele oplossing kunnen overbelasten. Soms leveren technische beperkingen van de verwerking van activa niet de gewenste resultaten op en op andere tijdstippen vormen de opslagkosten een belemmering voor winstmarges.
 
-Om te beginnen, begrijp de [voordelen van een cloud-inheemse aanbieding](#solution-benefits). Bekijk de opmerkelijke [wijzigingen in AEM als een Cloud Service](/help/release-notes/aem-cloud-changes.md) die ook van invloed zijn op de Experience Manager Assets en volg de opmerkelijke [wijzigingen in de Elementen](/help/assets/assets-cloud-changes.md).
+Om te beginnen, begrijp de [voordelen van een wolk-inheemse aanbieding](#solution-benefits). Bekijk de noteerbare [wijzigingen in AEM als een Cloud Service](/help/release-notes/aem-cloud-changes.md) die ook invloed hebben op de Experience Manager Assets, zoals die worden gevolgd door de opvallende [wijzigingen in Elementen](/help/assets/assets-cloud-changes.md).
 
-Lees meer over de [details van de nieuwe middelenmogelijkheden](#whats-new-assets) en de [bekende problemen](/help/release-notes/known-issues.md). Bekijk een lijst met [vervangen of verwijderde functies](/help/release-notes/deprecated-removed-features.md) om te weten wat er in deze release wordt verwijderd en bekijk deze [lijst met toekomstige mogelijkheden](/help/release-notes/known-issues.md#upcoming-assets-capabilities) om te weten wat er binnenkort beschikbaar is. Tot slot, begrijp de AEM termijnen met behulp van deze [verklarende woordenlijst](/help/overview/terminology.md).
+Lees verder om de [details van de nieuwe middelenmogelijkheden](#whats-new-assets) en de [bekende problemen](/help/release-notes/known-issues.md) te kennen. Zie een lijst van [afgekeurde of verwijderde functionaliteit](/help/release-notes/deprecated-removed-features.md) om te weten wat in deze versie wordt verwijderd en dit [lijst van aanstaande mogelijkheden ](/help/release-notes/known-issues.md#upcoming-assets-capabilities) te zien om te weten wat binnenkort komt. Tot slot begrijp de AEM termen met behulp van deze [glossary](/help/overview/terminology.md).
 
 ## Oplossingsvoordelen {#solution-benefits}
 
-Hieronder volgen de belangrijkste voordelen van Activa als Cloud Service. Zie het [overzicht van Experience Manager als Cloud Service](/help/overview/introduction.md)voor meer informatie.
+Hieronder volgen de belangrijkste voordelen van Activa als Cloud Service. Zie [overzicht van Experience Manager als een Cloud Service](/help/overview/introduction.md) voor meer informatie.
 
 * **Moderne Cloud Service voor verwerking** van bedrijfsmiddelen: De nieuwe assetmicroservices zijn een cloudgebaseerde, schaalbare, betrouwbare en probleemloze service voor de verwerking van bedrijfsmiddelen.
 * **Zeer schaalbaar**: Elastische schaalbaarheid voor alle typen implementaties. Praktisch onbeperkte middelen die op bestelling, zoals en wanneer nodig beschikbaar zijn. Bespart de kosten van overontwerp in vergelijking met een traditioneel systeem.
