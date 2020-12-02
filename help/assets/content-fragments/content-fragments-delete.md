@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Contentfragmenten - Overwegingen verwijderen{#content-fragments-delete-considerations}
 
-## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
+## Machtigingen - {#permissions-delete-or-not-delete} verwijderen of niet verwijderen
 
 De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met vele industrieën die moeten beperken en controleren hoe deze voorrechten worden verdeeld.
 
@@ -20,25 +20,25 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 1. **Het inhoudsfragment als één entiteit.**
 
-   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **en een volledig fragment** moet verwijderen.
-   * **Machtigingen**: De machtiging Verwijderen kan worden toegewezen via gebruikers- en/of groepsbeheer. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **en een volledig fragment** moet verwijderen.
+   * **Machtigingen**: De machtiging Verwijderen kan worden toegewezen via gebruikers- en/of groepsbeheer.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat; bijvoorbeeld variaties, subknooppunten.**
 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
-   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **zonder dat het is toegestaan een volledig fragment** te verwijderen.
-   * **Machtigingen**: Zie [Machtigingen vereist voor alleen](#permissions-required-for-editor-functionality-only)bewerkingsfunctionaliteit.
+   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **zonder dat het is toegestaan een volledig fragment** te verwijderen.
+   * **Machtigingen**: Zie  [Machtigingen vereist voor alleen](#permissions-required-for-editor-functionality-only) bewerkingsfunctionaliteit.
 
 >[!NOTE]
 >
->When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Wanneer een gebruiker geen toestemmingen van de Schrapping heeft, werkt de redacteur van het Fragment van de Inhoud op *read-only* wijze. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
 >Zie ook hoe te de Verrichtingen van het Beheer van de Gebruiker in AEM controleren. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
+## Machtigingen alleen vereist voor bewerkingsfunctionaliteit {#permissions-required-for-editor-functionality-only}
 
 Voor gebruikers die een contentfragment moeten bewerken of bijwerken, **zonder hun toe te staan om een volledig fragment te verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de contentfragmenteditor vereist dat tijdelijke subelementen kunnen worden verwijderd.
 
@@ -56,9 +56,9 @@ Bijvoorbeeld een map die alle inhoudsfragmenten bevat, zoals:
 
 >[!CAUTION]
 >
->Het instellen van de machtigingen voor `/content/dam` is ook mogelijk, aangezien alle inhoudsfragmenten hier worden opgeslagen.
+>Het is ook mogelijk de machtigingen voor `/content/dam` in te stellen, aangezien alle inhoudsfragmenten hier worden opgeslagen.
 >
->Deze handeling past echter dezelfde verwijdermachtigingen ook toe op *alle* andere elementtypen.
+>Met deze handeling worden echter dezelfde verwijdermachtigingen ook toegepast op andere elementtypen *all*.
 
 U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruiker en/of groep de volgende machtigingen heeft:
 
@@ -72,11 +72,11 @@ U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruike
 
 * Voor het `jcr:content`knooppunt van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` en  `jcr:removeChildNodes`
 
-* Voor alle knooppunten onder `jcr:content` alle inhoudsfragmenten:
+* Voor alle knooppunten onder `jcr:content` van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` en  `jcr:removeChildNodes`,  `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
