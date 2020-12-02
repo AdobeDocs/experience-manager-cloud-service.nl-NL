@@ -1,11 +1,11 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] als Cloud Service.
+description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '772'
 ht-degree: 6%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # [!DNL Assets] ondersteunde bestandsindelingen  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
+[!DNL Adobe Experience Manager] als a  [!DNL Cloud Service] ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
 Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
 
@@ -159,7 +159,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | EPUB | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
-| TTF | - | ✓ | - | ✓ | ✓ |
+| RTF | - | ✓ | - | ✓ | ✓ |
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
@@ -221,7 +221,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-[!DNL Assets] als Cloud Service biedt XMP ondersteuning voor het ophalen van metagegevens voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+[!DNL Assets] als  [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
 >[!MORELIKETHIS]
 >
