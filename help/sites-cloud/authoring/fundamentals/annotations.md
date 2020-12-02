@@ -18,7 +18,7 @@ Een annotatie plaatst een gekleurde schets of notitie op de pagina. Met de annot
 
 >[!NOTE]
 >
->Vergeet niet dat [opmerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ook beschikbaar zijn voor het geven van feedback op een pagina.
+>Vergeet niet dat [commentaren](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
 
 ## Annotaties {#annotations}
 
@@ -32,7 +32,7 @@ Een speciale [modus](/help/sites-cloud/authoring/fundamentals/environment-tools.
 >
 >Afhankelijk van uw vereisten kunt u ook een workflow ontwikkelen om meldingen te verzenden wanneer annotaties worden toegevoegd, bijgewerkt of verwijderd.
 
-### Een component annoteren {#annotating-a-component}
+### Een component {#annotating-a-component} annoteren
 
 In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 
@@ -109,5 +109,5 @@ Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechts
 
 Naast componenten kunt u verschillende bronnen van annotatie voorzien:
 
-* Annoteren van activa [Annoteren van activa](/help/assets/manage-digital-assets.md#annotating)
+* Elementen [Annoteren van elementen](/help/assets/manage-digital-assets.md#annotating)
 * Video-elementen annoteren [Video-elementen annoteren](/help/assets/manage-video-assets.md#annotate-video-assets)
