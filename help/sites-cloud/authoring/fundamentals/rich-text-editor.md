@@ -1,6 +1,6 @@
 ---
-title: Gebruik de rijke Redacteur van de Tekst [!DNL Adobe Experience Manager] in auteursinhoud.
-description: Gebruik [!DNL Experience Manager] de Rich Text Editor om inhoud te ontwerpen.
+title: Gebruik de Rich Text Editor in [!DNL Adobe Experience Manager] om inhoud te schrijven.
+description: Gebruik  [!DNL Experience Manager] Rich Text Editor om inhoud te schrijven.
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 0%
 ---
 
 
-# De Rich Text Editor gebruiken om inhoud te schrijven {#use-rich-text-editor-to-author-content}
+# Gebruik de Rich Text Editor om inhoud {#use-rich-text-editor-to-author-content} te schrijven
 
-De Rich Text Editor (RTE) is een basisbouwsteen om tekstuele inhoud aan toe te voegen [!DNL Adobe Experience Manager]. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. De ontwikkelaars van de Experience Manager kunnen RTE aanpassen en de beheerders vormen RTE voor gebruik door auteurs.
+De rijke Redacteur van de Tekst (RTE) is een basisbouwsteen om tekstuele inhoud aan [!DNL Adobe Experience Manager] toe te voegen. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. De ontwikkelaars van de Experience Manager kunnen RTE aanpassen en de beheerders vormen RTE voor gebruik door auteurs.
 
 ## Lokaal bewerken {#in-place-editing}
 
-Een op tekst gebaseerde component selecteren met één klik om de [componentwerkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)weer te geven.
+Een op tekst gebaseerde component selecteren met één klik om de [componentwerkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) weer te geven.
 
 ![De componentwerkbalk](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
@@ -36,9 +36,9 @@ De werkbalk bevat doorgaans de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Voor op tekst gebaseerde componenten, klik de volledig-schermwijze ![RTE volledig het schermknoop](/help/sites-cloud/authoring/assets/editing-full-screen.png) van de [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) om de rijke tekstredacteur te openen en de rest van de pagina inhoud te verbergen.
+Voor op tekst gebaseerde componenten, klik de volledig-schermwijze ![RTE volledige het schermknoop](/help/sites-cloud/authoring/assets/editing-full-screen.png) van [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) om de rijke tekstredacteur te openen en de rest van de pagina inhoud te verbergen.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties is [afhankelijk van de configuratie](/help/implementing/developing/extending/rich-text-editor.md).
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties [is afhankelijk van de configuratie](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE in de modus Volledig scherm](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
@@ -53,7 +53,7 @@ Klik op minimaliseren om de modus Volledig scherm te sluiten.
 
 >[!TIP]
 >
->Het kopiëren van geneste lijsten van [!DNL Microsoft Word] naar RTE kan inconsistente resultaten geven. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
+>Het kopiëren van genestelde lijsten van [!DNL Microsoft Word] in RTE kan inconsistente resultaten geven. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
 
 >[!MORELIKETHIS]
 >
