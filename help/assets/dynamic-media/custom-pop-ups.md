@@ -59,7 +59,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     </tr>
     <tr>
     <td>Interactieve afbeelding</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Een interactieve afbeelding met uw website</a>integreren.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Een interactieve afbeelding met uw website</a> integreren.<br /> </td>
     </tr>
     <tr>
     <td>Interactieve video<br /> </td>
@@ -76,7 +76,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
    Hiervoor gebruikt de viewer een handler met de naam `QuickViewActive`.
 
-   **Voorbeeld** Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina voor een interactieve afbeelding gebruikte:
+   ****
+Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina voor een interactieve afbeelding:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -97,16 +98,17 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
    })
    ```
 
-   Ga als volgt te werk voor meer informatie over `setHandlers()` methoden:
+   Meer informatie over de methode `setHandlers()` vindt u in het volgende voorbeeld:
 
-   * Interactieve afbeeldingsviewer: [zeegrepen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Interactieve videoviewer: [zeegrepen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Interactieve afbeeldingsviewer: [sethandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Interactieve videoviewer: [sethandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. U moet nu de `quickViewActivate` manager vormen.
 
-   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening evenals een vraag van de steekproeffunctie wordt geplaatst `loadQuickView` .
+   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening evenals een steekproef `loadQuickView` functievraag wordt geplaatst.
 
-   **Variabele toewijzingsvariabelen** voor gebruik in uw webpagina aan de SKU-waarde en algemene variabelen in de Snelle weergave:
+   **Variabele**
+mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -121,15 +123,16 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Functieaanroep** De handler vereist ook een functieaanroep van de QuickView. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
+   **De functie**
+callThe manager vereist ook een functievraag voor QuickView om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
 
    `loadQuickView(sku)`
 
    De aanroep van de voorbeeldfunctie gaat ervan uit dat de functie `loadQuickView()` bestaat en toegankelijk is.
 
-   Ga als volgt te werk voor meer informatie over `quickViewActivate` methoden:
+   Meer informatie over de methode `quickViewActivate` vindt u in het volgende voorbeeld:
 
-   * Interactieve afbeeldingsviewer - [Gebeurteniscallbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Interactieve beeldviewer - [Gebeurteniscallbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * Interactieve videoviewer - [Gebeurteniscallbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
    * Interactieve gegevensondersteuning in de interactieve videoviewer - [Interactieve gegevensondersteuning](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
@@ -138,8 +141,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
    * Verwijder de commentaarmarkering van de sectie setHandlers van de insluitcode.
    * Wijs om het even welke extra variabelen in de Snelle mening toe.
 
-      * Werk de `loadQuickView(sku,*var1*,*var2*)` vraag bij als u extra variabelen toevoegt.
-   * Maak een eenvoudige `loadQuickView` ()-functie op de pagina, buiten de viewer.
+      * Werk `loadQuickView(sku,*var1*,*var2*)` vraag bij als u extra variabelen toevoegt.
+   * Maak een eenvoudige functie `loadQuickView` () op pagina, buiten de viewer.
 
       In het volgende voorbeeld wordt de waarde van sku naar de browserconsole geschreven:
 
@@ -155,8 +158,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
 
 
-1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een voorbeeld gebruikt `DIV` voor een pop-up.
-1. Maak de pop-up op de volgende manier `DIV` op. Voeg desgewenst uw eigen aanvullende opmaak toe.
+1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een pop-up gebruikt.
+1. Maak het pop-upvenster op de volgende manier `DIV` op. Voeg desgewenst uw eigen aanvullende opmaak toe.
 
    ```xml
    <style type="text/css">
@@ -192,20 +195,20 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
    </script>
    ```
 
-1. Upload een HTML-testpagina naar uw webserver en open deze. De viewer geeft de pop-up weer `DIV` wanneer een gebruiker een Snelle weergave aanroept.
+1. Upload een HTML-testpagina naar uw webserver en open deze. De viewer geeft de pop-up `DIV` weer wanneer een gebruiker een Snelle weergave aanroept.
 1. **Het weergeven van de aangepaste pop-up in de modus Volledig scherm**
 
    Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
-   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Hiervoor kunt u een tweede handlermethode gebruiken `initComplete`.
+   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Hiervoor kunt u een tweede handlermethode gebruiken, `initComplete`.
 
-   De `initComplete` handler wordt aangeroepen nadat de viewer is geïnitialiseerd.
+   De handler `initComplete` wordt aangeroepen nadat de viewer is geïnitialiseerd.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   Ga als volgt te werk voor meer informatie over `init()` methoden:
+   Meer informatie over de methode `init()` vindt u in het volgende voorbeeld:
 
    * Interactieve afbeeldingsviewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Interactieve videoviewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -252,7 +255,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
    `*viewerInstance.*init()`
 
-   **Voorbeeld** In dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
+   ****
+VoorbeeldIn dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
 
    `s7interactiveimageviewer.init()`
 
