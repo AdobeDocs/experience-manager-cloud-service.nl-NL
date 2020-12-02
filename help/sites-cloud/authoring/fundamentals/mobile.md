@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Een pagina ontwerpen voor mobiele apparaten {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager-pagina&#39;s zijn gebaseerd op een responsieve indeling. [De responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md) past uw inhoud automatisch aan aan het doelapparaat, zodat het niet nodig is om inhoud voor specifieke apparaten te ontwerpen.
+Adobe Experience Manager-pagina&#39;s zijn gebaseerd op een responsieve indeling. [De responsieve ](/help/sites-cloud/authoring/features/responsive-layout.md) lay-out past uw inhoud automatisch aan aan het doelapparaat, waardoor het niet nodig is om inhoud voor specifieke apparaten te ontwerpen.
 
 Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
 
@@ -32,14 +32,14 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Open vanuit globale navigatie de **Sites** -console.
+1. Open vanuit globale navigatie de **Sites**-console.
 1. Bewerk een inhoudspagina.
-1. Ga naar de gewenste emulator door op het pictogram **Emulator** boven aan de pagina te klikken.
+1. Schakel over naar de gewenste emulator door op het pictogram **Emulator** boven aan de pagina te klikken.
 
    ![Emulatorpictogram](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. Sleep componenten van de componentbrowser of de middelenbrowser naar de pagina.
-1. [Wijzig de responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md) van de pagina en de componenten ervan op basis van het geselecteerde apparaat.
+1. [Wijzig de responsieve ](/help/sites-cloud/authoring/features/responsive-layout.md) lay-out van de pagina en de componenten ervan op basis van het geselecteerde apparaat.
 
 De pagina ziet er ongeveer als volgt uit:
 
