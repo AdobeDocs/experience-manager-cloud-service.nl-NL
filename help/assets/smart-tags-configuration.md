@@ -25,7 +25,7 @@ De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangescha
 
 >[!IMPORTANT]
 >
->De nieuwe [!DNL Experience Manager Assets] plaatsingen worden geïntegreerd met [!DNL Adobe Developer Console] door gebrek. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, volgen de beheerders deze stappen om het te vormen.
+>De nieuwe [!DNL Experience Manager Assets]-implementaties zijn standaard geïntegreerd met [!DNL Adobe Developer Console]. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, volgen de beheerders deze stappen om het te vormen.
 
 ## Integreren met Adobe Developer Console {#aio-integration}
 
