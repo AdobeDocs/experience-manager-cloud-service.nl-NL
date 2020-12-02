@@ -2,9 +2,9 @@
 title: Slimme tag toewijzen aan video-elementen
 description: Slimme tags toepassen op video-elementen automatiseert de asset tagging door contextafhankelijke en beschrijvende tags toe te passen met behulp van Adobe Sensei-services.
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Slimme tag toewijzen aan uw video-elementen {#video-smart-tags}
 
-De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als Cloud Service ondersteunt geautomatiseerde codering van video-elementen met behulp van artificiële intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. Intelligente tags voor video&#39;s die door Adobe Sensei worden aangedreven, maken echter gebruik van kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. Adobe genereert twee sets met tags voor een video. Eén set komt overeen met objecten, scènes en kenmerken in die video. de andere reeks heeft betrekking op handelingen zoals drinken , lopen en joggen .
+De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als a  [!DNL Cloud Service] ondersteunt geautomatiseerde codering van video-elementen met behulp van kunstmatige intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. Intelligente tags voor video&#39;s die door Adobe Sensei worden aangedreven, maken echter gebruik van kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. Adobe genereert twee sets met tags voor een video. Eén set komt overeen met objecten, scènes en kenmerken in die video. de andere reeks heeft betrekking op handelingen zoals drinken , lopen en joggen .
 
-De videobestandsindelingen (en de bijbehorende codecs) die worden ondersteund voor slimme tags zijn MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) en WMV (WC MV2). Bovendien kunnen video&#39;s tot 300 MB worden gelabeld met deze functie. De automatische codering van video-elementen vindt plaats als standaardverwerking van elementen (samen met het maken van miniaturen en het uitnemen van metagegevens) nadat een video is geüpload of wanneer een herverwerking wordt gestart. De slimme tags worden weergegeven in aflopende volgorde van hun [betrouwbaarheidsscore](#confidence-score-video-tag) in element [!UICONTROL Properties]. Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als Cloud Service. U kunt de optie [om geen slimme tags aan video toe te voegen](#opt-out-video-smart-tagging) echter wel toepassen op een map.
+De videobestandsindelingen (en de bijbehorende codecs) die worden ondersteund voor slimme tags zijn MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) en WMV (WC MV2). Bovendien kunnen video&#39;s tot 300 MB worden gelabeld met deze functie. De automatische codering van video-elementen vindt plaats als standaardverwerking van elementen (samen met het maken van miniaturen en het uitnemen van metagegevens) nadat een video is geüpload of wanneer een herverwerking wordt gestart. De slimme tags worden weergegeven in aflopende volgorde van hun [betrouwbaarheidsscore](#confidence-score-video-tag) in element [!UICONTROL Properties]. Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]. U kunt de optie [om geen slimme tags aan video toe te voegen](#opt-out-video-smart-tagging) echter wel toepassen op een map.
 
 ## Slimme tagvideo&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
-Wanneer u [video-elementen](add-assets.md#upload-assets) als Cloud Service uploadt naar [!DNL Adobe Experience Manager], worden de video&#39;s ![verwerkt](assets/do-not-localize/assetprocessing.png). Als de verwerking is voltooid, raadpleegt u het tabblad [!UICONTROL Basic] van de pagina Middelen [!UICONTROL Properties]. Slimme tags worden automatisch onder [!UICONTROL Smart Tags] aan de video toegevoegd. De Dienst van de asset compute gebruikt Adobe Sensei om deze slimme markeringen tot stand te brengen.
+Wanneer u [video-elementen ](add-assets.md#upload-assets) als [!DNL Cloud Service] uploadt naar [!DNL Adobe Experience Manager], worden de video&#39;s ![verwerkt](assets/do-not-localize/assetprocessing.png). Als de verwerking is voltooid, raadpleegt u het tabblad [!UICONTROL Basic] van de pagina Middelen [!UICONTROL Properties]. Slimme tags worden automatisch onder [!UICONTROL Smart Tags] aan de video toegevoegd. De Dienst van de asset compute gebruikt Adobe Sensei om deze slimme markeringen tot stand te brengen.
 
 ![Slimme tags worden toegevoegd aan video&#39;s en weergegeven op het tabblad Standaard van de Eigenschappen van elementen](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ U kunt het genereren van automatische slimme-videolabels uitschakelen voor eleme
 
 De standaarddrempel voor actie en objecten markeringen in [!DNL Adobe Experience Manager] is 0.7 (zou waarde tussen 0 en 1 moeten zijn). Als bepaalde video-elementen niet zijn gecodeerd met een specifieke tag, geeft dit aan dat het algoritme minder dan 70% zeker is van de voorspelde tags. De standaarddrempel is mogelijk niet altijd optimaal voor alle gebruikers. U kunt, daarom, de waarde van de betrouwbaarheidsscore in configuratie veranderen OSGI.
 
-Om de configuratie van de betrouwbaarheidsscore OSGI aan het project toe te voegen dat aan [!DNL Adobe Experience Manager] als Cloud Service door de Manager van de Wolk wordt opgesteld:
+Om de vertrouwensscoreConfiguratie OSGI aan het project toe te voegen dat aan [!DNL Adobe Experience Manager] als [!DNL Cloud Service] door [!DNL Cloud Manager] wordt opgesteld:
 
 * In het [!DNL Adobe Experience Manager] project (`ui.config` sinds Archetype 24, of eerder `ui.apps`) omvat de `config.author` configuratie OSGi, een config dossier genoemd `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` met de volgende inhoud:
 
