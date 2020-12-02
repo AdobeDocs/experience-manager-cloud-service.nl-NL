@@ -3,9 +3,9 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink deelt binnen Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Elementen delen en distribueren die worden beheerd in Experience Manager {#share-assets-from-aem}
 
-Met AEM (Adobe Experience Manager) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van Experience Manager Assets als een Cloud Service te delen:
+Met AEM (Adobe Experience Manager) kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van Experience Manager Assets te delen als een [!DNL Cloud Service]:
 
 * Delen als een koppeling.
 * Download elementen en deel ze afzonderlijk.
@@ -187,6 +187,5 @@ Zie [hoe te om AEM aan gebruik met de Verbinding van Activa van Adobe te vormen 
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
