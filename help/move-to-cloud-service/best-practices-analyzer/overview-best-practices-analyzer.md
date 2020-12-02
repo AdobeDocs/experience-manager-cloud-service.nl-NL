@@ -16,7 +16,7 @@ Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige AEM imple
 
 Deze tool produceert een rapport waarin aspecten voor mogelijke herstructurering worden geïdentificeerd. Dit is de eerste stap in het overgangstraject naar AEM as a Cloud Service.
 
-## Rapport met best practices-analyse {#bpa-report}
+## Rapport voor analyse van beste praktijken {#bpa-report}
 
 Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken. Het rapport bestaat uit bevindingen binnen bepaalde categorieën met kwesties die moeten worden aangepakt voordat een geslaagde implementatie van AEM as a Cloud Service kan plaatsvinden.
 
@@ -33,4 +33,4 @@ Aanvullende informatie over de categorieën en mogelijke implicaties en oplossin
 >[!NOTE]
 >Het Rapport van de Analysator van Beste praktijken versnelt het proces om de tijd en de kosten te schatten die worden vereist om naar AEM als Cloud Service over te gaan door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
 
-U kunt het rapport van de Analysator van Beste praktijken van uw AEM instantie ook downloaden. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+U kunt het rapport van de Analysator van Beste praktijken van uw AEM instantie ook downloaden. Zie [Het weergeven van het Rapport van de Analysator van Beste praktijken](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) voor meer details.
