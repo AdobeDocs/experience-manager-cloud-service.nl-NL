@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Een aangepaste domeinnaam bijwerken en vervangen  {#view-update-replace-cdn}
+# Een aangepaste domeinnaam {#view-update-replace-cdn} bijwerken en vervangen
 
 Met het menu Beeld en Bijwerken kunt u de details van een of meer aangepaste domeinnamen bekijken.
 U kunt ook het SSL-certificaat wijzigen dat wordt gebruikt voor de naam van het aangepaste domein.
@@ -18,14 +18,14 @@ U kunt ook het SSL-certificaat wijzigen dat wordt gebruikt voor de naam van het 
 >[!NOTE]
 >Het SSL-certificaat moet geldig zijn en de aangepaste domeinnaam bevatten.
 
-## SSL-certificaat van aangepaste domeinnaam bijwerken {#update-ssl-certificate-cdn}
+## SSL-certificaat van aangepaste domeinnaam {#update-ssl-certificate-cdn} bijwerken
 
 De updateactie kan van twee verschillende plaatsen in UI worden gedaan:
 
 1. Navigeer naar de pagina Domeininstellingen vanuit het scherm Omgevingen.
 1. U kunt ook vanuit het scherm Omgevingen naar de specifieke pagina Omgevingsdetails navigeren en naar de tabel Domeinnamen gaan.
 Identificeer de rij waar de naam van het douanedomein u wenst om te bekijken/bij te werken vermeld is
-1. Selecteer de **...** menu helemaal rechts in de rij
+1. **selecteren..** menu vanaf het uiterste rechtereinde van de rij
 1. Selecteer de optie Weergave en Bijwerken
 1. Breng desgewenst wijzigingen aan in het SSL-certificaat en bevestig uw verzending
 
