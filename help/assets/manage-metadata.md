@@ -4,9 +4,9 @@ description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Exper
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1905'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
 
 ## Aangepaste metagegevens met verwerkingsprofiel {#metadata-compute-service}
 
-Middelen als Cloud Service kunnen aangepaste metagegevens voor een element genereren met gebruik van services die in de cloud zijn gemaakt. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#use-profiles) gebruiken.
+Middelen als een [!DNL Cloud Service] kunnen aangepaste metagegevens voor een element genereren met gebruik van services die in de cloud zijn gemaakt. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#use-profiles) gebruiken.
 
 ![Metagegevensuitvoering in verwerkingsprofiel](assets/processing-profile-metadata.png)
 
