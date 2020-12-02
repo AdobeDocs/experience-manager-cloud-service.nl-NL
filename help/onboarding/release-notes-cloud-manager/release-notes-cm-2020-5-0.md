@@ -21,15 +21,15 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.5.0 is 7 mei 20
 ## Wat is er nieuw?{#whats-new-cloud-manager}
 
 * Er zijn zes aanvullende regels voor codekwaliteit toegevoegd om klanten te helpen potentiële problemen te identificeren wanneer ze een migratie naar Cloud Service plannen.
-* Er is een nieuwe metrische *Cloud Service-compatibiliteit* toegevoegd om het aantal compatibiliteitsproblemen samen te vatten.
+* Er is een nieuwe metrische *Compatibiliteit met Cloud Servicen* toegevoegd om het aantal compatibiliteitsgerelateerde problemen samen te vatten.
 * De omgevingen die niet konden worden gemaakt, worden nu ongeveer 24 uur na het maken automatisch verwijderd, tenzij ze al zijn verwijderd.
 * De prestaties van de pagina van de Activiteit en de Uitvoeren van de Pijpleiding API zijn verbeterd.
 * Het logbestand met codekwaliteit bevat nu volledige stacksporen voor uitzonderingen.
 
-### Bug Fixes  {#bug-fixes}
+### Opgeloste problemen {#bug-fixes}
 
 * Er is een misleidende kaart weergegeven op de overzichtspagina terwijl de productiepijpleiding actief was.
-* De *regel van de codekwaliteit van DontImplementOrExtendProviderTypesPomCheck* kan soms een Uitzondering van de Wijzer van de Null veroorzaken.
+* De code *DontImplementOrExtendProviderTypesPomCheck* kwaliteitsregel kan soms een Null-aanwijzeruitzondering veroorzaken.
 * Bepaalde documentatiekoppelingen van de overzichtspagina werken niet correct.
 * Het dialoogvenster Omgeving maken is niet correct weergegeven in Safari.
 * Bepaalde kaarten op de overzichtspagina gaven de entiteitsnamen niet correct weer.
