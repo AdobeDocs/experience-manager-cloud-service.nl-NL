@@ -22,16 +22,16 @@ Met dit hulpprogramma kunnen AEM-ontwikkelaars bestaande AEM-workflows voor de v
 
 ## Ondersteunde workflows {#migration-support-for-workflows}
 
-De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze [lijst met specifieke workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). De workflows worden ingedeeld in de volgende categorieën op basis van de geleverde ondersteuning. Adobe ondersteunt de migratie van de workflows die in `SUPPORTED`, `REQUIRED`of `OPTIONAL` categorieën worden vermeld. De workflowstappen die in de andere categorieën worden vermeld, worden niet ondersteund.
+De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze [lijst met specifieke workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). De workflows worden ingedeeld in de volgende categorieën op basis van de geleverde ondersteuning. Adobe ondersteunt migratie van de workflows die worden vermeld in `SUPPORTED`, `REQUIRED` of `OPTIONAL` categorieën. De workflowstappen die in de andere categorieën worden vermeld, worden niet ondersteund.
 
-* `SUPPORTED`: Ondersteunde functionaliteit in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
-* `OPTIONAL`: Optionele functionaliteit in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
+* `SUPPORTED`: Ondersteunde functionaliteit  [!DNL Experience Manager Assets] als Cloud Service.
+* `OPTIONAL`: Optionele functionaliteit  [!DNL Experience Manager Assets] als Cloud Service.
 * `REQUIRED`: Een vereiste stap die wordt toegevoegd aan de workflow.
-* `UNNECESSARY`: Functionaliteit is niet nodig in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
-* `NUI_OOTB`: Functionaliteit van de [Asset compute](/help/assets/asset-microservices-configure-and-use.md).
-* `DMS7_OOTB`: Functionaliteit die door standaardconnectors wordt verstrekt. [!DNL Dynamic Media]
-* `NUI_MIGRATED`: Gemigreerd naar een [verwerkingsprofiel voor de Dienst](/help/assets/asset-microservices-configure-and-use.md)van de Asset compute.
-* `UNSUPPORTED`: Momenteel niet ondersteund in [!DNL Experience Manager Assets] de vorm van een Cloud Service.
+* `UNNECESSARY`: Functionaliteit is niet nodig  [!DNL Experience Manager Assets] als Cloud Service.
+* `NUI_OOTB`: Functionaliteit van de  [Asset compute](/help/assets/asset-microservices-configure-and-use.md).
+* `DMS7_OOTB`: Functionaliteit die door standaard  [!DNL Dynamic Media] connectors wordt verstrekt.
+* `NUI_MIGRATED`: Gemigreerd naar een  [verwerkingsprofiel voor de Dienst](/help/assets/asset-microservices-configure-and-use.md) van de Asset compute.
+* `UNSUPPORTED`: Momenteel niet ondersteund in  [!DNL Experience Manager Assets] de vorm van een Cloud Service.
 
 ## De tool Asset Workflow Migration installeren {#installing-tool}
 
