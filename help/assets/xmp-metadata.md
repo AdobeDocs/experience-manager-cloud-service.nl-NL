@@ -15,7 +15,7 @@ ht-degree: 20%
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die door AEM Assets wordt gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](#xmp-core-concepts) en door Adobe [en andere bedrijven](#advantages-of-xmp) gesteund, zodat de gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](#xmp-core-concepts) en [gesteund door Adobe](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben om op te bouwen.
 
 ## XMP overzicht en ecosysteem {#xmp-ecosystem}
 
@@ -48,13 +48,14 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 >
 >XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64`.
 
-### XMP kernbegrippen {#xmp-core-concepts}
+### XMP kernconcepten {#xmp-core-concepts}
 
 **Naamruimten en schema&#39;s**
 
-Een XMP schema is een reeks eigenschapnamen in een gemeenschappelijke XML-naamruimte die het gegevenstype en beschrijvende informatie bevat. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
+Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die
+het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-De eigenschap **Creator** in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
+De eigenschap **Creator** in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld betekenen dat de persoon die het element heeft gemaakt of dat de toepassing die het element heeft gemaakt, kan betekenen (bijvoorbeeld Adobe Photoshop).
 
 **Eigenschappen en waarden XMP**
 
@@ -67,7 +68,7 @@ XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsub
 
 **Taalalternatieven**
 
-XMP biedt u de mogelijkheid om een `xml:lang` eigenschap toe te voegen aan teksteigenschappen om de taal van de tekst op te geven.
+XMP biedt u de mogelijkheid om een eigenschap `xml:lang` toe te voegen aan teksteigenschappen om de taal van de tekst op te geven.
 
 ## Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
@@ -77,11 +78,11 @@ Wanneer u de metagegevens voor een element wijzigt vanuit AEM Assets of wanneer 
 
 De XMP schrijffunctie geeft de wijzigingen in metagegevens door aan alle of aan specifieke uitvoeringen van het element.
 
-Neem bijvoorbeeld een scenario waarin u de [!UICONTROL Title] eigenschap van het element `Classic Leather` met de naam wijzigt `Nylon`.
+Overweeg een scenario waarbij u de [!UICONTROL Title] eigenschap van het element `Classic Leather` aan `Nylon` wijzigt.
 
 ![metadata](assets/metadata.png)
 
-In dit geval slaat de AEM Assets de wijzigingen in de **[!UICONTROL Title]** eigenschap op in de `dc:title` parameter voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
+In dit geval slaat de AEM Assets de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -89,7 +90,7 @@ AEM Assets verspreidt echter niet automatisch metagegevenswijzigingen in de uitv
 
 Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De wijzigingen worden echter niet opgeslagen onder het metagegevensknooppunt in de elementenhiërarchie. In plaats daarvan worden de wijzigingen in de binaire bestanden voor de uitvoeringen ingesloten.
 
-### Terugschrijven XMP inschakelen {#enable-xmp-writeback}
+### XMP terugschrijven {#enable-xmp-writeback} inschakelen
 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
@@ -98,19 +99,19 @@ Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activ
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie.
-1. Selecteer de **[!UICONTROL Propagate XMP]** optie en sla de wijzigingen op.
+1. Selecteer de optie **[!UICONTROL Propagate XMP]** en sla de wijzigingen op.
 
 ### XMP terugschrijven inschakelen voor specifieke uitvoeringen {#enable-xmp-writeback-for-specific-renditions}
 
-Als u wilt dat de XMP-functie voor terugschrijven wijzigingen in metagegevens doorgeeft aan geselecteerde uitvoeringen, geeft u deze uitvoeringen op in de [!UICONTROL XMP Writeback Process] werkstroomstap van de DAM-workflow voor terugschrijven van metagegevens. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
+Als u wilt dat de XMP terugschrijffunctie wijzigingen in metagegevens doorgeeft aan geselecteerde uitvoeringen, geeft u deze uitvoeringen op in de werkstroomstap [!UICONTROL XMP Writeback Process] van de DAM-workflow voor terugschrijven van metagegevens. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
 
 Voer de volgende stappen uit voor de XMP-schrijffunctie om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
 1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. Open het **[!UICONTROL DAM Metadata Writeback]** workflowmodel op de pagina Modellen.
+1. Open op de pagina Modellen het workflowmodel **[!UICONTROL DAM Metadata Writeback]**.
 1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
 1. Tik of klik in het dialoogvenster **[!UICONTROL Step Properties]** op het tabblad **[!UICONTROL Process]**.
-1. Voeg in het **[!UICONTROL Arguments]** vak toe `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`en tik/klik op **[!UICONTROL OK]**.
+1. Voeg in het tekstvak **[!UICONTROL Arguments]** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` toe en tik op **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
