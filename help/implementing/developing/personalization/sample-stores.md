@@ -22,7 +22,7 @@ ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw
 >
 >De kandidaten van de steekproefopslag worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen en als zodanig niet direct zouden moeten worden gebruikt.
 
-## aem.segmentation Voorbeeld Store Candidate {#aem-segmentation-sample-store-candidate}
+## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
 
 Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch segmenten van ContextHub SegmentManager terug.
 
@@ -30,9 +30,9 @@ Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch seg
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
-### Basisimplementatie {#base-implementation-segmentation}
+### Basis-implementatie {#base-implementation-segmentation}
 
-De opslagkandidaat aem.segmentation breidt zich uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+De opslagkandidaat aem.segmentation breidt [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore) uit.
 
 ### Configuratie {#configuration-segmentation}
 
@@ -50,15 +50,15 @@ Wanneer u een `aem.segmentation` opslag creeert, te hoeven u niet om een gedetai
 
 ## contexthub.geolocation Sample Store Candidate {#contexthub-geolocation-sample-store-candidate}
 
-De `contexthub.geolocation` voorbeeldwinkelkandidaat gebruikt Google Maps om informatie over de locatie van de client op te halen en op te slaan.
+De voorbeeldwinkelkandidaat `contexthub.geolocation` gebruikt Google Maps om informatie over de locatie van de client op te halen en op te slaan.
 
 ### Bronlocatie {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
-### Basisimplementatie {#base-implementation-geolocation}
+### Basis-implementatie {#base-implementation-geolocation}
 
-De `contexthub.geolocation` winkelkandidaat breidt zich uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+De `contexthub.geolocation` opslagkandidaat breidt [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore) uit.
 
 ### Configuratie {#configuration-geolocation}
 
@@ -116,9 +116,9 @@ Hiermee slaat u informatie op over de huidige clientomgeving, zoals het apparaat
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
-### Basisimplementatie {#base-implementation-surferinfo}
+### Basis-implementatie {#base-implementation-surferinfo}
 
-De `contexthub.surferinfo` winkelkandidaat breidt zich uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+De `contexthub.surferinfo` opslagkandidaat breidt [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore) uit.
 
 ### Configuratie {#configuration-surferinfo}
 
@@ -175,21 +175,21 @@ De opslag die deze opslagkandidaat gebruikt heeft een gegevensboom die aan het v
 }
 ```
 
-## graniet.emulators Sample Store Candidate {#granite-emulators-sample-store-candidate}
+## granite.emulators Voorbeeld van opslagkandidaat {#granite-emulators-sample-store-candidate}
 
-De `granite.emulators` voorbeeldopslagkandidaat slaat informatie over cliëntapparaten op.
+In de voorbeeldopslagkandidaat `granite.emulators` wordt informatie over clientapparaten opgeslagen.
 
 ### Bronlocatie {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
-### Basisimplementatie {#base-implementation-emulators}
+### Basis-implementatie {#base-implementation-emulators}
 
-De `granite.emulators` winkelkandidaat breidt zich uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+De `granite.emulators` opslagkandidaat breidt [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore) uit.
 
 ### Configuratie {#configuration-emulators}
 
-De standaardconfiguratie bevat een benoemde array `defaultEmulators` die informatie over verschillende apparaten bevat. Wanneer u een opslag creeert, verstrek verschillende apparatenprofielen in het bezit van de Configuratie van het Detail zoals vereist, gebruikend het formaat dat in het volgende voorbeeld wordt geïllustreerd:
+De standaardconfiguratie omvat een serie genoemd `defaultEmulators` die informatie over verschillende apparaten bevat. Wanneer u een opslag creeert, verstrek verschillende apparatenprofielen in het bezit van de Configuratie van het Detail zoals vereist, gebruikend het formaat dat in het volgende voorbeeld wordt geïllustreerd:
 
 ```javascript
 {
@@ -308,7 +308,7 @@ De structuur met opslaggegevens is vergelijkbaar met het volgende voorbeeld:
 }
 ```
 
-## granite.profile Voorbeeld van winkel Kandidaat {#granite-profile-sample-store-candidate}
+## granite.profile Sample Store Candidate {#granite-profile-sample-store-candidate}
 
 Hiermee worden gegevens over de huidige gebruiker opgeslagen.
 
@@ -316,9 +316,9 @@ Hiermee worden gegevens over de huidige gebruiker opgeslagen.
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
-### Basisimplementatie {#base-implementation-profile}
+### Basis-implementatie {#base-implementation-profile}
 
-De `granite.profile` winkelkandidaat breidt zich uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+De `granite.profile` opslagkandidaat breidt [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore) uit.
 
 ### Configuratie {#configuration-profile}
 
