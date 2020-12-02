@@ -20,13 +20,13 @@ Een auteur kan de volgende functionele beperkingen tegenkomen wanneer hij de edi
 
 ### Koppelingen niet actief {#links-not-active}
 
-Wanneer u een pagina [](/help/sites-cloud/authoring/fundamentals/editing-content.md)bewerkt, zijn koppelingen niet actief.
+Wanneer [een pagina bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md), zijn koppelingen niet actief.
 
-* [Schakel over naar de modus **Voorvertoning**](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) om te navigeren met de koppelingen in de inhoud.
+* [Schakel over naar  **** ](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) Voorvertoning om te navigeren met de koppelingen in de inhoud.
 
 ### Structuurpagina&#39;s {#structure-pages}
 
-Pagina&#39;s kunnen geen naam krijgen `structure`. Pagina&#39;s waaraan een naam is gegeven, kunnen niet worden bewerkt in de pagina-editor. `structure`
+De pagina&#39;s kunnen niet `structure` worden genoemd. Pagina&#39;s met de naam `structure` kunnen niet worden bewerkt in de pagina-editor.
 
 ## CSS-beperkingen {#css-limitations}
 
@@ -38,7 +38,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 * Als dit gebeurt, zorg ervoor dat de afmetingen van absoluut gepositioneerd element correct zijn omdat de redacteur tot een bekleding met de nauwkeurige zelfde afmetingen zal leiden.
 
-### vh Eenheden {#vh-units}
+### vh-eenheden {#vh-units}
 
 `vh` De eenheden worden niet ondersteund omdat de hoogte van het iframe automatisch moet worden aangepast door AEM.
 
@@ -46,7 +46,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens het schuiven omdat deze zijn ingesloten in een iframe.
 
-* Als u de optie Pagina **weergeven als gepubliceerd** selecteert in de acties op de kopbalk, wordt de pagina correct weergegeven.
+* Als u **Pagina weergeven als gepubliceerd** selecteert in de acties op de kopbalk, wordt de pagina correct weergegeven.
 
 ### 100% hoogte {#height}
 
