@@ -1,6 +1,6 @@
 ---
 title: Rapporten over gebruik en delen
-description: Rapporten over uw elementen [!DNL Adobe Experience Manager Assets] in die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
+description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
@@ -11,13 +11,13 @@ ht-degree: 8%
 ---
 
 
-# Asset Reports {#asset-reports}
+# Elementrapporten {#asset-reports}
 
-Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets] implementatie beoordelen. Met [!DNL Assets]kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
+Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets]-implementatie beoordelen. Met [!DNL Assets] kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
 Gebruik de informatie in de rapporten om zeer belangrijke succesmetriek af te leiden om de goedkeuring van [!DNL Assets] binnen uw onderneming en door klanten te meten.
 
-In het [!DNL Assets] rapportagekader worden [!DNL Sling] taken gebruikt om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
+Het [!DNL Assets] rapporteringskader gebruikt [!DNL Sling] banen om rapportverzoeken op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
@@ -39,12 +39,12 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
 [!DNL Adobe Experience Manager] beheerders kunnen deze rapporten gemakkelijk produceren en aanpassen voor uw implementatie. Een beheerder kan deze stappen volgen om een rapport te produceren:
 
-1. Klik in de [!DNL Experience Manager] interface op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Klik in [!DNL Experience Manager] interface op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 
    ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/navigation.png)
 
-1. Klik op de [!UICONTROL Asset Reports] pagina op **[!UICONTROL Create]** de werkbalk.
-1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
+1. Klik op [!UICONTROL Asset Reports] op de werkbalk.**[!UICONTROL Create]**
+1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
 
    ![Rapporttype selecteren](assets/choose_report.png)
 
@@ -54,11 +54,11 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
    >[!NOTE]
    >
-   >Standaard worden de Content Fragments en de link shares opgenomen in het Asset- [!UICONTROL Download] rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
+   >Standaard worden de Content Fragments en de link shares opgenomen in het Asset [!UICONTROL Download]-rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
 
    >[!NOTE]
    >
-   >Het [!UICONTROL Download] rapport bevat alleen de gegevens van de elementen die worden gedownload nadat u deze afzonderlijk hebt geselecteerd of die u met Snelle actie hebt gedownload. De gegevens van de elementen in een gedownloade map worden echter niet in de map opgenomen.
+   >Het [!UICONTROL Download] rapport geeft slechts details van die activa die na het selecteren individueel worden gedownload of gebruikend Snelle Actie worden gedownload. De gegevens van de elementen in een gedownloade map worden echter niet in de map opgenomen.
 
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
 
@@ -72,7 +72,7 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
    >
    >Als u ervoor kiest om het rapport later te plannen, zorg ervoor dat u de datum en de tijd in de gebieden van de Datum en van de Tijd specificeert. Als u geen waarde specificeert, behandelt de rapportmotor het als een rapport dat onmiddellijk moet worden geproduceerd.
 
-   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. Het **[!UICONTROL Disk Usage]** rapport bevat bijvoorbeeld opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
+   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. Het **[!UICONTROL Disk Usage]**-rapport bevat bijvoorbeeld opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
 
    >[!NOTE]
    >
@@ -80,19 +80,19 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
    ![Detailpagina van rapport Schijfgebruik](assets/disk_usage_configuration.png)
 
-   Wanneer u het **[!UICONTROL Files]** rapport maakt, kunt u submappen opnemen of uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
+   Wanneer u het **[!UICONTROL Files]** rapport creeert, kunt u subfolders omvatten/uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
 
    ![Pagina met details van rapport Bestanden](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> De kolommen kunnen niet worden aangepast.
+   Het **[!UICONTROL Link Share]** rapport toont URLs aan activa die met externe gebruikers van binnen [!DNL Assets] worden gedeeld. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> De kolommen kunnen niet worden aangepast.
 
-   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
+   Het **[!UICONTROL Link Share]**-rapport bevat geen opties voor submappen en uitvoeringen omdat het alleen de gedeelde URL&#39;s publiceert die onder `/var/dam/share` worden weergegeven.
 
    ![De pagina van details van het rapport van het Aandeel van de Verbinding](assets/link_share.png)
 
 1. Klik op **[!UICONTROL Next]** op de werkbalk.
 
-1. Op de **[!UICONTROL Configure Columns]** pagina zijn enkele kolommen standaard geselecteerd om in het rapport te worden weergegeven. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
+1. Op de pagina **[!UICONTROL Configure Columns]** worden sommige kolommen geselecteerd om standaard in het rapport te verschijnen. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
 
    ![Rapportkolommen selecteren of deselecteren](assets/configure_columns.png)
 
@@ -101,7 +101,7 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
    ![Rapportkolommen selecteren of deselecteren](assets/custom_columns.png)
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
-1. Voor de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. Op de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op **[!UICONTROL View]** op de werkbalk klikken.
 
    ![Een gegenereerd rapport](assets/report_page.png)
 
@@ -121,10 +121,10 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 
 Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
-1. Klik in het [!DNL Manager interface]venster op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. Klik op de [!UICONTROL Asset Reports] pagina op **[!UICONTROL Create]** de werkbalk.
+1. Klik in [!DNL Manager interface] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Klik op [!UICONTROL Asset Reports] op de werkbalk.**[!UICONTROL Create]**
 
-1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
+1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad en datumbereik.
 
 1. Als u een aangepaste kolom wilt weergeven, geeft u de naam op van de kolom onder **[!UICONTROL Custom Columns]**.
@@ -135,15 +135,15 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
-   Als u meer aangepaste kolommen wilt toevoegen, klikt u op stap 5 **[!UICONTROL Add]** en 6 en herhaalt u deze.
+   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaalt u stap 5 en 6.
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
-## De zuiveringsservice configureren {#configure-purging-service}
+## Zuiveringsservice {#configure-purging-service} configureren
 
 Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegmaken van het Rapport DAM van de Webconsole om bestaande rapporten te zuiveren die op hun hoeveelheid en leeftijd worden gebaseerd.
 
-1. Open de webconsole (configuratiemanager) vanuit `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open de webconsole (configuratiemanager) vanaf `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL DAM Report Purge Service]** configuratie.
-1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het `scheduler.expression.name` veld. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
+1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het veld `scheduler.expression.name`. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
 1. Sla de wijzigingen op.
