@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Overzicht van het opnemen en verwerken van bedrijfsmiddelen met microservices voor bedrijfsmiddelen {#asset-microservices-overview}
+# Overzicht van het opnemen en verwerken van bedrijfsmiddelen met asset microservices {#asset-microservices-overview}
 
 Adobe Experience Manager als Cloud Service biedt een &#39;cloud-native&#39; methode om toepassingen en mogelijkheden voor Experience Managers te benutten. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen. Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. De belangrijkste voordelen van cloudnative assetmicroservices zijn:
 
@@ -21,7 +21,7 @@ Adobe Experience Manager als Cloud Service biedt een &#39;cloud-native&#39; meth
 * Verbeterde veerkracht van de verwerking van bedrijfsmiddelen. Mogelijke problemen bij het verwerken van atypische bestanden, zoals beschadigde bestanden of extreem grote bestanden, hebben geen gevolgen meer voor de prestaties van de implementatie.
 * Vereenvoudigde configuratie van middelenverwerking voor beheerders.
 * De instellingen voor middelenverwerking worden beheerd en onderhouden door Adobe om de best bekende configuratie te bieden voor de verwerking van uitvoeringen, metagegevens en tekstextractie voor verschillende bestandstypen
-* Native Adobe-bestandsverwerkingsservices worden waar van toepassing gebruikt, zodat een hoogwaardige uitvoer mogelijk is en een [efficiënte verwerking van eigen indelingen](file-format-support.md)voor Adobe mogelijk is.
+* Native Adobe-bestandsverwerkingsservices worden waar van toepassing gebruikt, waardoor een hoogwaardige uitvoer mogelijk wordt en [een efficiënte verwerking van door eigendomsrechten beschermde indelingen](file-format-support.md) mogelijk wordt.
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
 Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen.
@@ -35,7 +35,7 @@ Een architectuurdiagram op hoog niveau geeft de belangrijkste elementen weer van
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Inname en verwerking van bedrijfsmiddelen met](assets/asset-microservices-overview.png "microservices voor bedrijfsmiddelenInname en verwerking van bedrijfsmiddelen met microservices voor bedrijfsmiddelen")
+![Inname en verwerking van bedrijfsmiddelen met ](assets/asset-microservices-overview.png "microservices voor bedrijfsmiddelenInname en verwerking van bedrijfsmiddelen met microservices voor bedrijfsmiddelen")
 
 De belangrijkste stappen van de opname en verwerking met behulp van asset microservices zijn:
 
@@ -62,9 +62,9 @@ U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met AEM
 * [Uploadbibliotheek met open bron](https://github.com/adobe/aem-upload)
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
 
-Zie [Elementen](add-assets.md)uploaden voor meer informatie.
+Zie [Elementen uploaden](add-assets.md) voor meer informatie.
 
-## Aangepaste elementen nabewerken toevoegen {#add-custom-asset-post-processing}
+## Aangepast element nabewerken {#add-custom-asset-post-processing} toevoegen
 
 Terwijl de meeste klanten al hun behoeften van de activaverwerking van de configureerbare activa microservices zouden moeten krijgen, zouden sommige extra activa kunnen vereisen verwerkend. Dit geldt met name wanneer activa moeten worden verwerkt op basis van informatie die via integratie van andere systemen afkomstig is. In dergelijke gevallen kunnen aangepaste nabewerkingsworkflows worden gebruikt.
 
