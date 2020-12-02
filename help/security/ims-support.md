@@ -85,7 +85,7 @@ Met deze tool kan de systeembeheerder gebruikersgroepen in de directory van de k
 
 Voor het instellen van User Sync moet de organisatie een set referenties maken op dezelfde manier als voor het gebruik van de [User Management-API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
-![User Sync Tool](/help/security/assets/ims5.png)
+![Gereedschap Gebruikerssynchronisatie](/help/security/assets/ims5.png)
 
 De User Sync Tool wordt [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/latest) gedistribueerd via de Adobe Github-repository.
 
