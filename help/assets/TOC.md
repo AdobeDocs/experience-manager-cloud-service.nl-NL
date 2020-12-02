@@ -5,9 +5,9 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '467'
 ht-degree: 69%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 69%
 
 # [!DNL Assets] Hulplijn  {#assets}
 
-+ [[!DNL Assets] als Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Opvallende wijzigingen  [!DNL Assets] in de vorm van een Cloud Service](assets-cloud-changes.md)
++ [Opvallende wijzigingen  [!DNL Assets] in [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
