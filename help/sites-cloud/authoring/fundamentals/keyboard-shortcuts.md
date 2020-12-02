@@ -12,33 +12,33 @@ ht-degree: 2%
 
 # Sneltoetsen voor paginabewerking {#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere bij het [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Welke [wijzigingstoetsen](#os-specific-modifier-keys) vereist zijn voor AEM sneltoetsen, is afhankelijk van het besturingssysteem.
+>De [wijzigingstoetsen](#os-specific-modifier-keys) die vereist zijn voor AEM sneltoetsen variëren afhankelijk van het besturingssysteem.
 
-## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
+## Sneltoetsen {#editing-keyboard-shortcuts} bewerken
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
 | Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Schakelen tussen **Voorvertoning** en de momenteel geselecteerde [modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (bijvoorbeeld **Bewerken**, **Layout**, enz.)* |
-| **Bewerken** , modus | `Ctrl-z` | [Laatste wijziging ongedaan maken](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
+| **** Editmode | `Ctrl-z` | [Laatste wijziging ongedaan maken](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Laatste wijziging opnieuw](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Meerdere alinea&#39;s selecteren |
 |  | `Ctrl-c` | Geselecteerde alinea(&#39;s) kopiëren |
 |  | `Ctrl-x` | Geselecteerde alinea(&#39;s) knippen (alinea&#39;s knippen verdwijnt pas in de gebruikersinterface als deze worden geplakt) |
 |  | `Ctrl-v` | Eerder geknipte of gekopieerde alinea&#39;s plakken |
 |  | `Ctrl-Backspace` | Geselecteerde alinea(&#39;s) verwijderen |
-| **Bewerken** , modus - Rich Text Editor | `Ctrl-b` | Vet |
+| **** Editmode - Rich Text Editor | `Ctrl-b` | Vet |
 |  | `Ctrl-I` | Cursief |
 |  | `Ctrl-u` | Onderstrepen |
 
 >[!NOTE]
 >
->Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, is de `Ctrl-Shift-m` sneltoets niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
+>Wanneer de gebruiker in de voorvertoningsmodus met de pagina begint te communiceren, is de sneltoets `Ctrl-Shift-m` niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
 
-Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer ze de [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)gebruiken.
+Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer u de [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) gebruikt.
 
 >[!NOTE]
 >
