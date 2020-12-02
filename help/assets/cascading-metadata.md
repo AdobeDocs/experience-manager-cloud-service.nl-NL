@@ -26,7 +26,7 @@ Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt de
 * Opties wijzigen die voor een bepaald veld worden weergegeven op basis van de waarde die in een ander veld is opgegeven.
 * Stel de standaardwaarde voor metagegevens in een bepaald veld in op basis van de waarde die in een ander veld is opgegeven.
 
-## Metagegevens met trapsgewijze opmaak in AEM configureren {#configure-cascading-metadata-in-aem}
+## Cascading metadata configureren in AEM {#configure-cascading-metadata-in-aem}
 
 Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis van het geselecteerde type element. Enkele voorbeelden
 
@@ -40,21 +40,21 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![select_form](assets/select_form.png)
 
-1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het **[!UICONTROL Settings]** tabblad op.
+1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op.
 
-   Als u een nieuw tabblad wilt maken, tikt u of klikt u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
+   Als u een nieuw tabblad wilt maken, tikt u op `+` om een tab toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
    ![add_tab](assets/add_tab.png)
 
-1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het **[!UICONTROL Settings]** tabblad op. Voeg een optionele beschrijving toe.
+1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op. Voeg een optionele beschrijving toe.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** de optie, tikt u erop of klikt u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
+   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]**, tikt u op **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
-   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. AEM haalt de sleutel-waardeparen in echt - tijd wanneer het formulier aan de gebruiker wordt voorgesteld.
+   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Add Through JSON Path]** en geeft u het pad van het JSON-bestand op. AEM haalt de sleutel-waardeparen in echt - tijd wanneer het formulier aan de gebruiker wordt voorgesteld.
 
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
@@ -74,7 +74,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het **[!UICONTROL Rules]** tabblad.
+1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het tabblad **[!UICONTROL Rules]**.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
@@ -102,7 +102,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    >U kunt de voorwaarde **[!UICONTROL Requirement]** en de voorwaarde **[!UICONTROL Visibility]** onafhankelijk van elkaar toepassen.
 
 1. Op dezelfde manier creeer een gebiedsdeel tussen de waarde Video op het gebied van het Type van Activa en andere gebieden, zoals Codec en Duur.
-1. Herhaal de stappen om documentelementen (PDF en Word) in het [!UICONTROL Asset Type] veld en velden zoals [!UICONTROL Page Count] en [!UICONTROL Author], afhankelijk te maken.
+1. Herhaal de stappen om documentelementen (PDF en Word) afhankelijk te maken in het veld [!UICONTROL Asset Type] en velden zoals [!UICONTROL Page Count] en [!UICONTROL Author].
 1. Klik op **[!UICONTROL Save]**. Pas het metagegevensschema toe op een map.
 
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
