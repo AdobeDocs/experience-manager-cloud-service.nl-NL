@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Overzicht van componenten {#components-overview}
 
-Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de componenten die worden [gebruikt voor het ontwerpen](/help/sites-cloud/authoring/fundamentals/components.md)van pagina&#39;s.
+Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de [die worden gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/components.md).
 
 ## Wat zijn componenten? {#what-are-components}
 
@@ -27,7 +27,7 @@ Componenten in AEM zijn:
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten.
-* worden ontwikkeld met [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+* Wordt ontwikkeld met behulp van [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -43,25 +43,25 @@ Elke AEM component:
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
 * Kan afzonderlijk functioneren, wat ofwel binnen AEM ofwel een portaal betekent.
 
-## AEM kerncomponenten {#aem-core-components}
+## AEM Core Components {#aem-core-components}
 
-[De AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
+[De AEM ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de Kern zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
 
-De Core Components worden voorzien van AEM als Cloud Service en het [WKND leerprogramma](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De componenten van de Kern worden voorzien van AEM als Cloud Service en [WKND leerprogramma](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de Console [van](/help/sites-cloud/authoring/features/components-console.md)Componenten.
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [de Console van Componenten](/help/sites-cloud/authoring/features/components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. Selecteer in **[!UICONTROL CRXDE Lite]** de werkbalk vervolgens **[!UICONTROL Tools]** de optie **[!UICONTROL Query]** waarmee het **[!UICONTROL Query]** tabblad wordt geopend.
+1. Selecteer **[!UICONTROL CRXDE Lite]** in &lt;a0/> op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.**[!UICONTROL Tools]**
 
-1. Selecteer op het **[!UICONTROL Query]** tabblad `XPath` als **[!UICONTROL Type]**.
+1. Selecteer **[!UICONTROL Query]** op het tabblad &lt;a0/> als **[!UICONTROL Type]**.`XPath`
 
-1. Voer in het **[!UICONTROL Query]** invoerveld de volgende tekenreeks in:
+1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
-1. Klik **[!UICONTROL Execute]** en de componenten worden vermeld.
+1. Klik op **[!UICONTROL Execute]** en de componenten worden weergegeven.
 
