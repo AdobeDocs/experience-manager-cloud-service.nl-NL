@@ -3,9 +3,9 @@ title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 
 ## Transcoderen met behulp van verwerkingsprofiel {#transcode-video}
 
-[!DNL Experience Manager] als Cloud Service kunt u standaardtranscodering van MP4-videobestanden uitvoeren met behulp van Procesprofielen. Met deze functionaliteit kunt u niet alleen een MP4-videobestand uploaden, maar ook een voorvertoning weergeven en schalen.
+[!DNL Experience Manager] als een  [!DNL Cloud Service] methode gebruikt, kunt u standaardtranscodering van MP4-videobestanden uitvoeren met behulp van Procesprofielen. Met deze functionaliteit kunt u niet alleen een MP4-videobestand uploaden, maar ook een voorvertoning weergeven en schalen.
 
 ![Verwerkingsprofiel maken voor videotranscodering in Experience Manager](assets/video-processing-profile-for-mp4.png)
 
