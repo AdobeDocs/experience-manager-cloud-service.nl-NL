@@ -38,7 +38,7 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 
 Tijdens het ontwerpen kunt u de werkbalk **Emulator** gebruiken om een voorvertoning van uw pagina&#39;s weer te geven voor verschillende schermgrootten.
 
-## Voordat u ontwikkelt {#before-you-develop}
+## Voordat u {#before-you-develop} ontwikkelt
 
 Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aantal ontwerpbeslissingen nemen. U moet bijvoorbeeld over de volgende informatie beschikken:
 
@@ -50,25 +50,25 @@ Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aanta
 
 De typische AEM toepassingsstructuur ondersteunt alle responsieve ontwerpimplementaties:
 
-* Paginacomponenten staan hieronder `/apps/<application_name>/components`
-* Sjablonen bevinden zich hieronder `/apps/<application_name>/templates`
+* Paginacomponenten bevinden zich onder `/apps/<application_name>/components`
+* Sjablonen bevinden zich onder `/apps/<application_name>/templates`
 
-## Mediaquery&#39;s gebruiken {#using-media-queries}
+## Mediaquery&#39;s {#using-media-queries} gebruiken
 
 Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. AEM ontwikkelingshulpmiddelen en eigenschappen laten u toe om media vragen in uw toepassingen effectief en efficiënt uit te voeren.
 
-De W3C-groep bevat de aanbeveling [Mediaquery](https://www.w3.org/TR/css3-mediaqueries/) &#39;s waarin deze CSS3-functie en de syntaxis worden beschreven.
+De W3C-groep biedt de aanbeveling [Mediaquery&#39;s](https://www.w3.org/TR/css3-mediaqueries/) waarmee deze CSS3-functie en de syntaxis worden beschreven.
 
-### Het CSS-bestand maken {#creating-the-css-file}
+### Het CSS-bestand {#creating-the-css-file} maken
 
 Definieer in uw CSS-bestand mediaquery&#39;s op basis van de eigenschappen van de apparaten waarvoor u een mediaquery maakt. De volgende implementatiestrategie is effectief voor het beheren van stijlen voor elke mediaquery:
 
-* Gebruik een map [in de](clientlibs.md) clientbibliotheek om de CSS te definiëren die wordt samengesteld wanneer de pagina wordt weergegeven.
+* Gebruik een [map Clientbibliotheek](clientlibs.md) om de CSS te definiëren die wordt samengevoegd wanneer de pagina wordt weergegeven.
 * Definieer elke mediaquery en de bijbehorende stijlen in afzonderlijke CSS-bestanden. Het is handig bestandsnamen te gebruiken die de apparaatfuncties van de mediaquery vertegenwoordigen.
 * Definieer stijlen die op alle apparaten in een afzonderlijk CSS-bestand van toepassing zijn.
 * In het css.txt- dossier van de omslag van de Bibliotheek van de Cliënt, orde de lijst CSS dossiers zoals vereist in het geassembleerde CSS dossier.
 
-De [WKND-zelfstudie](develop-wknd-tutorial.md) gebruikt deze strategie om stijlen in het siteontwerp te definiëren. Het CSS-bestand dat door WKND wordt gebruikt, bevindt zich op `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`de locatie.
+De [WKND-zelfstudie](develop-wknd-tutorial.md) gebruikt deze strategie om stijlen in het siteontwerp te definiëren. Het CSS-bestand dat door WKND wordt gebruikt, bevindt zich op `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
