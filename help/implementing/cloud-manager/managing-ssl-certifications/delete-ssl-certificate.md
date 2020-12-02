@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
+# Een SSL-certificaat {#deleting-an-ssl-certificate} verwijderen
 
 >[!IMPORTANT]
 >Certificaten verwijderen uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. De beste manier is om alle vereiste SSL-bestanden lokaal op te slaan voordat u ze verwijdert in de gebruikersinterface van Cloud Manager.
@@ -22,6 +22,6 @@ Voer de onderstaande stappen uit om een SSL-certificaat te verwijderen:
 
 1. Navigeer naar het scherm SSL-certificaten van de pagina Environment
 1. Identificeer de rij waar de SSL certificaatnaam u wenst te schrappen is vermeld
-1. Selecteer de **...** menu helemaal rechts in de rij
-1. Selecteren **Verwijderen**
+1. **selecteren..** menu vanaf het uiterste rechtereinde van de rij
+1. Selecteer **Verwijderen**
 1. Je verzending bevestigen
