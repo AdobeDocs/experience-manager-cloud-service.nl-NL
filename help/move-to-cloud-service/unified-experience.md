@@ -18,15 +18,15 @@ Wij hebben hulpmiddelen ontwikkeld om sommige code te automatiseren refactoring 
 
 De Unified Experience plug-in biedt de volgende voordelen:
 
-* Hiermee verenigt u gereedschappen die werken aan broncode in één `node.js` toepassing die als `aio-cli ` plug-in wordt weergegeven, zodat de gebruiker een consistente gebruikerservaring krijgt.
+* Hiermee verenigt u gereedschappen die werken aan broncode in één `node.js`-toepassing die wordt weergegeven als `aio-cli `-plug-in om de gebruiker een consistente gebruikerservaring te bieden.
 
 * Biedt de mogelijkheid om alle gereedschappen uit te voeren via één opdracht en biedt tegelijkertijd de flexibiliteit om desgewenst specifieke gereedschappen uit te voeren.
 
 * Verstrekt rekbaarheid om toevoeging van nieuwe hulpmiddelen te vereenvoudigen, terwijl het houden van de ervaring verenigbaar.
 
-## Inzicht krijgen in de insteekmodule {#understanding-plugin}
+## Inzicht in de insteekmodule {#understanding-plugin}
 
-De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee hoofdonderdelen:
+De `aio-cli-plugin-aem-cloud-service-migration` plug-in bestaat uit twee hoofdonderdelen:
 
 * **Gebruikersinterface**
 
