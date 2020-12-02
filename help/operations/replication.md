@@ -12,23 +12,23 @@ ht-degree: 2%
 
 # Replicatie {#replication}
 
-Adobe Experience Manager als Cloud Service gebruikt de [Verschuivende capaciteit van de Distributie](https://sling.apache.org/documentation/bundles/content-distribution.html) van de Inhoud om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe I/O wordt uitgevoerd die buiten AEM runtime is.
+Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) mogelijkheid om de inhoud te verplaatsen naar een pijplijnservice die op Adobe I/O wordt uitgevoerd en buiten de AEM runtime valt.
 
 >[!NOTE]
 >
->Lees [Distributie](/help/core-concepts/architecture.md#content-distribution) voor meer informatie.
+>Lees [Distribution](/help/core-concepts/architecture.md#content-distribution) voor meer informatie.
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
 
-### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
+### Snel publiceren/publiceren - Gepland {#publish-unpublish} publiceren
 
 Deze standaard AEM functies voor de auteurs veranderen niet met AEM Cloud Service.
 
-### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
+### Aan en uit Tijd - de Configuratie van de trekker {#on-and-off-times-trigger-configuration}
 
-De extra mogelijkheden van **Aan Tijd** en **Uit Tijd** zijn beschikbaar bij het [Basislusje van de Eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)van de Pagina.
+De extra mogelijkheden van **On Tijd** en **Uit Tijd** zijn beschikbaar bij [Basislusje van Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Om de automatische replicatie voor dit te realiseren moet u **AutoReplicatie** in de configuratie [](/help/implementing/deploying/configuring-osgi.md) OSGi **bij de Configuratie** van de Trekker toelaten:
+Om de automatische replicatie voor dit te realiseren moet u **Auto Replicate** in [OSGi configuratie](/help/implementing/deploying/configuring-osgi.md) **On Off Configuratie** toelaten:
 
 ![Configuratie van OSGi bij activering](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -36,23 +36,23 @@ Om de automatische replicatie voor dit te realiseren moet u **AutoReplicatie** i
 
 Een boomactivering uitvoeren:
 
-1. Navigeer in het menu AEM naar **Gereedschappen > Implementatie > Distributie**
-2. De kaart **forwardPublisher selecteren**
-3. Eenmaal in de UI van de forwardPublisher-webconsole **selecteert u Distribueren**
+1. Navigeer in het menu AEM Start naar **Extra > Implementatie > Distributie**
+2. Selecteer de kaart **forwardPublisher**
+3. Eenmaal in de UI van de forwardPublisher-webconsole, **selecteer Distribute**
 
    ![](assets/distribute.png "DistributeDistribute")
-4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het gewenste pad en selecteer **Verzenden.**
+4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
 
 ## Problemen oplossen {#troubleshooting}
 
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de Auteur AEM:
 
-1. Navigeer in het menu AEM naar **Gereedschappen > Implementatie > Distributie**
-2. De kaart **forwardPublisher selecteren**
+1. Navigeer in het menu AEM Start naar **Extra > Implementatie > Distributie**
+2. Selecteer de kaart **forwardPublisher**
    ![](assets/status.png "StatusStatus")
 3. Controleer de wachtrijstatus die groen moet zijn
 4. U kunt de verbinding met de replicatieservice testen
-5. Selecteer het tabblad **Logs** waarin de geschiedenis van publicaties met inhoud wordt weergegeven
+5. Selecteer het tabblad **Logs** waarmee de geschiedenis van inhoudspublicaties wordt weergegeven
 
 ![](assets/logs.png "LogsLogs")
 
