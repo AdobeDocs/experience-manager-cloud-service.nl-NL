@@ -11,7 +11,7 @@ ht-degree: 33%
 ---
 
 
-# Logbestanden van elementbewerking weergeven in activiteitsstroom {#activity-stream-in-timeline}
+# Elementbewerking weergeven in activiteitenstroom {#activity-stream-in-timeline}
 
 Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in Adobe Experience Manager (AEM) Assets, werkt de functie Activiteitsstroom de tijdlijn bij om de activiteit weer te geven.
 
@@ -32,7 +32,7 @@ De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden op
 >
 >Tijdelijke workflows worden niet weergegeven in de tijdlijn, omdat er voor deze workflows geen historiegegevens worden opgeslagen.
 
-Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Timeline]**
+Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u **[!UICONTROL Timeline]** in de lijst GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
