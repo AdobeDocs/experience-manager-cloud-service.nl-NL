@@ -16,7 +16,7 @@ De cloud-native oplossing biedt de gebruiker de vereiste machtigingen en de moge
 
 Een tovenaar van de programmaverwezenlijking zal de gebruiker vragen om details, afhankelijk van het doel van de gebruiker in het creëren van het programma binnen de grenzen van wat aan de specifieke klant of de organisatie beschikbaar is voor te leggen.
 
-In het geval van eerste toegang tot de Manager van de Wolk of als geen programma&#39;s in de huurder bestaan, zal de gebruiker uw eerste scherm van het Programma **zien** creëren. Als de gebruiker *Esc* selecteert of uit de dialoogdoos klikt, toont het volgende scherm:
+In het geval van eerste toegang tot de Manager van de Wolk of als geen programma&#39;s in de huurder bestaan, zal de gebruiker **uw eerste scherm van het Programma** zien creëren. Als de gebruiker *Esc* selecteert of uit de dialoogdoos klikt, het volgende scherm toont:
 
 ![](assets/create-program1.png)
 
@@ -28,15 +28,15 @@ Afhankelijk van het doel van de gebruiker bij het creëren van het programma bin
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Als een programma reeds bestaat, dan zult u **Programma toevoegen** op het hoogste recht van de het landen pagina zien, zoals aangetoond in het hieronder cijfer.
 
 ![](assets/create-program-add.png)
 
-## Sandboxprogramma&#39;s maken {#create-sandbox-program}
+## Sandboxprogramma {#create-sandbox-program} maken
 
 Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
-1. Selecteer in de wizard Programma maken een **sandbox** instellen. Gebruiker verzendt de naam van het programma voordat u **Maken** selecteert.
+1. Selecteer **Een sandbox** instellen in de wizard Programma maken. Gebruiker verzendt programmanaam alvorens **Create** te selecteren.
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Nadat het programma is ingesteld en het project is gemaakt, heeft de gebruiker toegang tot de koppeling **Git** beheren, zoals in de onderstaande afbeelding wordt getoond:
+1. Nadat de opstelling van het programma en de stap van de projectverwezenlijking voltooit, kan de gebruiker tot **Git beheren** verbinding, zoals aangetoond in het hieronder cijfer toegang hebben:
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Als u meer wilt weten over toegang tot en beheer van uw Git-opslagplaats via Self-Service Git-accountbeheer vanuit de interface van Cloud Manager, raadpleegt u [Toegang tot Git](/help/implementing/cloud-manager/accessing-git.md).
+   >Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/accessing-git.md) voor meer informatie over toegang tot en beheer van uw Git Repository via Self-Service Git Account Management vanuit de interface van Cloud Manager.
 
 
-1. Zodra het ontwikkelmilieu wordt gecreeerd, kan de gebruiker **tot AEM** verbinding toegang hebben, zoals aangetoond in het hieronder cijfer:
+1. Zodra het ontwikkelmilieu wordt gecreeerd, kan de gebruiker AEM **Toegang** verbinding, zoals aangetoond in het hieronder cijfer:
 
    ![](assets/create-program-5.png)
 
@@ -66,9 +66,9 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
    ![](assets/create-program-a1.png)
 
-## Een Sandbox-programma verwijderen {#delete-sandbox-program}
+## Een sandboxprogramma verwijderen {#delete-sandbox-program}
 
-Een gebruiker van het Sandbox-programma in de rol van *bedrijfseigenaar* of *implementatiebeheerder* in Cloud Manager kan zijn productie- en werkgebiedomgeving verwijderen die is ingesteld via de interface van Cloud Manager.
+Een gebruiker van het Sandbox- Programma in *Bedrijfseigenaar* of *De rol van Manager van de Plaatsing* in de Manager van de Wolk kan hun Productie en milieu schrappen van het Stadium die via de UI van de Manager van de Wolk wordt geplaatst.
 
 >[!NOTE]
 >Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
@@ -79,18 +79,18 @@ De verwijderoptie is beschikbaar op de bestemmingspagina, zoals hieronder wordt 
 
 Of
 
-Selecteer Programma **** verwijderen op de pagina **Program Overview** om uw Sandbox-programma te verwijderen.
+Selecteer **Programma** van de **pagina van het Overzicht van het Programma** om uw Programma van Sandbox te schrappen.
 
 ![](assets/delete-sandbox2.png)
 
 
 ## Een regulier programma maken {#create-regular-program}
 
-Een *Regular* -programma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
+Een *Regular* programma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
 
 Voer de volgende stappen uit om een regulier programma te maken:
 
-1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een regelmatig programma tot stand te brengen. De gebruiker kan de standaardprogrammanaam accepteren of deze bewerken voordat hij of zij **Doorgaan** selecteert.
+1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een regelmatig programma tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **Doorgaan** te selecteren.
 
    ![](assets/create-prod1.png)
 
@@ -108,7 +108,7 @@ Voer de volgende stappen uit om een regulier programma te maken:
 
    ![](assets/set-up-prod3.png)
 
-1. Zodra u de programmacode op de bestemmingspagina ziet, beweegt u de muisaanwijzer over het pictogram Cloud Manager om naar de pagina **Overzicht** van Cloud Manager te gaan.
+1. Zodra u uw programmacode op de bestemmingspagina ziet, houd de aanwijzer boven het pictogram Cloud Manager om naar de pagina Cloud Manager **Overzicht** te navigeren.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om een regulier programma te maken:
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Een normaal programma heeft geen **Auto-setup** eigenschap.
 
 
 
