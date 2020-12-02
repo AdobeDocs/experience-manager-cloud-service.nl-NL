@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
+# Dynamische media-elementen leveren{#delivering-dynamic-media-assets}
 
 Hoe u dynamische media-elementen kunt leveren (zowel video als afbeeldingen), hangt af van de manier waarop uw website is geïmplementeerd.
 
@@ -21,11 +21,11 @@ Met Dynamische media hebt u verschillende opties:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
-   * Als uw site reageert, kunt u geoptimaliseerde afbeeldingen [leveren.](/help/assets/dynamic-media/responsive-site.md)
+   * Als uw site reageert, kunt u [geoptimaliseerde afbeeldingen leveren.](/help/assets/dynamic-media/responsive-site.md)
 
 >[!NOTE]
 >
->Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+>Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -39,7 +39,7 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 * [De CDN-cache ongeldig maken door middel van Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Regels gebruiken om URL&#39;s te transformeren](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## HTTP/2-levering van Dynamic Media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2-levering van dynamische media-elementen {#http-delivery-of-dynamic-media-assets}
 
 AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
 
