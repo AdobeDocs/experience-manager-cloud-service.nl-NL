@@ -17,7 +17,7 @@ De manier waarop u uw dynamische media-elementen - zowel video als afbeeldingen 
 Met Dynamische media hebt u verschillende opties:
 
 * Als uw website op AEM wordt gehost, wilt u de dynamische media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website niet op AEM staat, raadpleegt u Dynamische media-elementen [](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) leveren in de gebruikersinterface met aanraakbediening.
+* Als uw website niet op AEM staat, raadpleegt u [Dynamische media-elementen leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) in de gebruikersinterface met aanraakbediening.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
