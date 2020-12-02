@@ -24,6 +24,6 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.9.0 is 3 septem
 * Het bouwstijlproces is gescheiden in drie afzonderlijke Maven bevelen.
 * Als de Git Repository niet wordt gekloond, zal het tot drie keer worden herhaald.
 
-### Bug Fixes {#bug-fixes-cm}
+### Opgeloste problemen {#bug-fixes-cm}
 
 * Op het tabblad Inhoudscontrole wordt de basis-URL onjuist weergegeven met behulp van het auteurdomein in plaats van het publicatiedomein.
