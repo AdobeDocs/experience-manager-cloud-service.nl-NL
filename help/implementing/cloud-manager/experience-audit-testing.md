@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Experience Audit Testing {#experience-audit-testing}
+# Ervaring controleren {#experience-audit-testing}
 
 Experience Audit is een functie die beschikbaar is in de Sites Production-pijpleidingen van Cloud Manager, aangedreven door Google Lighthouse, een opensource tool van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
 
@@ -22,7 +22,7 @@ Het valideert het plaatsingsproces en de hulp zorgt ervoor dat de ingevoerde ver
 
 Experience Audit in Cloud Manager zorgt ervoor dat de digitale ervaring van eindgebruikers op de site op de hoogste standaarden kan worden gehandhaafd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
 
-## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
+## De resultaten van de Experience Audit {#understanding-experience-audit-results}
 
 De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde op paginaniveau testresultaten via de de uitvoeringspagina van de Pijpleiding van de Productie.
 
@@ -47,7 +47,7 @@ De waarde van de metrische waarde van de Verandering kan één van het volgende 
 
 * **Negatieve waarde** : de pagina(&#39;s) zijn tijdens de geselecteerde test opnieuw geperst sinds de laatste productiepijpleiding
 
-* **Geen wijziging** - de pagina(&#39;s) hebben dezelfde score behaald sinds de laatste productiepijpleiding
+* **Geen wijziging**  - de pagina(&#39;s) hebben hetzelfde gescand sinds de laatste productiepijpleiding
 
 * **N.v.t** . - er was geen vorige score beschikbaar om te vergelijken
 
