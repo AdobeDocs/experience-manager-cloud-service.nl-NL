@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Winkelwagentje en Dispatcher Setup
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) wordt geleverd met een [winkelwagentje](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) dat een winkelwagentje en een afhandelingsformulier maakt. Het winkelwagentje vereist een [AEM Dispatcher met GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) die opstelling verplettert. De volgende video detailleert een lokale configuratie en opstelling gebruikend een beeld van de Dokker.
+[AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) onderdelen wordt geleverd met een  [winkelwagon ](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) die een winkelwagentje en een afhandelingsformulier maakt. Het winkelwagentje vereist een [AEM Dispatcher met GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) die opstelling verpletteren. De volgende video detailleert een lokale configuratie en opstelling gebruikend een beeld van de Dokker.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
