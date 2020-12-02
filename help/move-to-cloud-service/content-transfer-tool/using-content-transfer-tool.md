@@ -22,19 +22,19 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
 
-* Als u een *Sandbox-omgeving* gebruikt, dient u ervoor te zorgen dat de omgeving actueel is en wordt bijgewerkt naar de nieuwste versie. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
+* Als u een *Sandbox Milieu* gebruikt, zorg ervoor dat uw milieu huidig is en aan de recentste versie wordt bevorderd. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
 * Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
 * Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
 
-* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Het *proces van de Extractie* kopieert het volledige `/home` in de migratiereeks en het proces van de *Opname* kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien.
+* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* Na de voltooiing van de fase van de *Extractie* van het proces van de inhoudoverdracht en alvorens de Fase *van de* Opname te beginnen om inhoud in uw AEM in te voeren als de instanties van het *Stadium* of van de *Productie* van de Cloud Service, zult u een steunkaartje moeten registreren om Adobe van uw voornemen te melden om *Ingestie* ** in werking te stellen zodat Adobe ervoor kan zorgen dat geen onderbrekingen tijdens het proces onder de Ingestie voorkomt. U zult het steunkaartje 1 week vóór uw geplande datum van de *Ingestie* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
+* Nadat u de *Extractie*-fase van het proces voor inhoudsoverdracht hebt voltooid en voordat u de *Ingestiefase* start om inhoud in uw AEM in te voeren als een Cloud Service *Stage* of *Production*-instanties, moet u een ondersteuningsticket registreren om de Adobe te informeren over uw voornemen om *Ingestikt uit te voeren* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens het *Ingestieproces*. U zult het steunkaartje 1 week vóór uw geplande *Ingestiedatum* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
    * Logboek een steunkaartje met de volgende details:
-      * De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de fase van de *Ingestie* te beginnen.
+      * De nauwkeurige datum en de geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de *Ingestiefase* te beginnen.
       * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
       * Programma-id.
 
@@ -43,7 +43,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 ## Beschikbaarheid {#availability}
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Zie Opmerkingen bij de [release voor meer informatie over de meest recente versie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Raadpleeg [Opmerkingen bij de release](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html) voor meer informatie over de nieuwste versie.
 
 >[!NOTE]
 >Download de Content Transfer-tool van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
@@ -84,7 +84,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken terugwinnen door de **Open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de AEM beheerdersgroep in de instantie van de doelCloud Service behoort.
+      >U kunt het toegangstoken terugwinnen door **open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de AEM beheerdersgroep in de instantie van de doelCloud Service behoort.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
@@ -120,7 +120,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -128,7 +128,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
    >U kunt de stagingcontainer tijdens de extractiefase overschrijven indien u dat wilt.
 
 
-1. In het veld **EXTRACTION** wordt nu de status **RUNNING** weergegeven om aan te geven dat de extractie wordt uitgevoerd.
+1. In het veld **EXTRACTION** wordt nu de status **RUNNING** weergegeven om aan te geven dat de extractie bezig is.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
@@ -161,11 +161,11 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Click on **Ingest** to start the ingestion phase. Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Zodra de opname is voltooid, wordt de status in het veld **PUBLISH INGESTION** bijgewerkt naar **FINISHED**.
+1. Zodra de opname volledig is, werkt de status in **PUBLISH INGESTION** gebied aan **FINISHED** bij.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
    >[!IMPORTANT]
    >
-   >Schakel de optie Bestaande inhoud **wissen op een Cloud-instantie uit voordat u de inhoud inneemt** , om te voorkomen dat de bestaande inhoud uit de vorige insluitingsactiviteit wordt verwijderd.
+   >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit.
    >
    >![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
