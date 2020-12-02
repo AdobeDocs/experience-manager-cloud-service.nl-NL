@@ -10,20 +10,20 @@ ht-degree: 4%
 ---
 
 
-# Functionele tests {#functional-testing}
+# Functioneel testen {#functional-testing}
 
 Functionele tests worden gecategoriseerd in twee typen:
 
 * Functioneel testen van producten
 * Aangepaste functionele tests
 
-## Functioneel testen van producten {#product-functional-testing}
+## Functioneel testen van product {#product-functional-testing}
 
 De Functionele Tests van het product zijn een reeks stabiele HTTP integratietests (ITs) rond kernfunctionaliteit in AEM (bijvoorbeeld, creatie en replicatie) die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het deze kernfunctionaliteit breekt.
 
 Functionele tests van het product worden automatisch uitgevoerd wanneer een klant nieuwe code naar Cloud Manager implementeert en kunnen niet worden overgeslagen.
 
-Zie Functionele [producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) voor steekproeftests.
+Zie [Productfunctionele tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) voor steekproeftests.
 
 ## Aangepaste functionele tests {#custom-functional-testing}
 
@@ -35,7 +35,7 @@ Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de te
 >Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Toegang tot en beheer van logbestanden](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
 
-### Functionele tests schrijven {#writing-functional-tests}
+### Het schrijven van functionele tests {#writing-functional-tests}
 
 Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden geïmplementeerd op AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
 
@@ -74,9 +74,9 @@ Bovendien moet de JAR de Cloud-Manager-TestType manifestkopbal hebben die aan in
 
 In dit JAR-bestand moeten de klassenamen van de eigenlijke tests die uitgevoerd moeten worden, eindigen in de IT.
 
-Een klasse met de naam `com.myco.tests.aem.ExampleIT` zou bijvoorbeeld worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.ExampleTest` niet.
+Een klasse met de naam `com.myco.tests.aem.ExampleIT` wordt bijvoorbeeld uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.ExampleTest` niet.
 
-De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Raadpleeg [Git Link](https://github.com/adobe/aem-testing-clients) voor meer informatie.
+De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Raadpleeg [Koppeling magnetisch](https://github.com/adobe/aem-testing-clients) voor meer informatie.
 
 ### Uitvoering lokale test {#local-test-execution}
 
