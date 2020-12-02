@@ -16,7 +16,7 @@ Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inho
 
 Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen of het componentendialoogvenster aan te passen om dergelijke stijlfunctionaliteit toe te laten. Het leidt tot herbruikbaardere componenten die snel en gemakkelijk aan de behoeften van inhoudsauteurs zonder enige AEM achterwaartse ontwikkeling kunnen worden aangepast.
 
-## Hoofdletters gebruiken {#use-case}
+## Hoofdlettergebruik {#use-case}
 
 De auteurs van het malplaatje vergen niet alleen de capaciteit om te vormen hoe de componenten voor de inhoudsauteurs functioneren, maar ook om een aantal alternatieve visuele variaties van een component te vormen.
 
@@ -41,7 +41,7 @@ Het gebruik van het Stijlsysteem heeft doorgaans de volgende vorm.
 
 1. De HTML-ontwikkelaar implementeert de bijbehorende CSS-code (en eventueel JS-code) voor elk van de visuele variaties, zodat deze er zo uitzien als gedefinieerd.
 
-1. De AEM ontwikkelaar plaatst de meegeleverde CSS (en optionele JS) in een [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) en implementeert deze.
+1. De AEM ontwikkelaar plaatst de meegeleverde CSS (en optionele JS) in een [Clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) en implementeert deze.
 
 1. De AEM ontwikkelaar of sjabloonauteur configureert de paginasjablonen en bewerkt het beleid van elke opgemaakte component, voegt de gedefinieerde CSS-klassen toe, geeft gebruikersvriendelijke namen aan elke stijl en geeft aan welke stijlen kunnen worden gecombineerd.
 
@@ -55,22 +55,22 @@ Het volgende diagram illustreert de architectuur van het Systeem van de Stijl.
 
 ![aem-stijl-systeem](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## Use {#use}
+## {#use} gebruiken
 
-Om de eigenschap aan te tonen, zullen wij [implementatie WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)van de [titelcomponent](https://www.adobe.com/go/aem_cmp_title_v2) van de kerncomponent als voorbeeld gebruiken.
+Om de eigenschap aan te tonen, zullen wij [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) implementatie van de component [title ](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.
 
-De volgende secties [Als Inhoudsauteur](#as-a-content-author) en [als Ontwerper](#as-a-template-author) van het Malplaatje beschrijven hoe te om de functionaliteit van het Systeem van de Stijl te testen gebruikend het Systeem van de Stijl van WKND.
+De volgende secties [Als Inhoudsauteur](#as-a-content-author) en [Als Sjabloonauteur](#as-a-template-author) beschrijven hoe te om de functionaliteit van het Stijlsysteem te testen gebruikend het Systeem van de Stijl van WKND.
 
 Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebruiken:
 
-1. Installeer de CSS als cliëntbibliotheken zoals die in het sectie [Overzicht](#overview)worden besproken.
+1. Installeer de CSS als cliëntbibliotheken zoals die in de sectie [Overzicht](#overview) worden besproken.
 1. Configureer de CSS-klassen die u beschikbaar wilt maken voor de auteurs van de inhoud, zoals beschreven in de sectie [Als sjabloonauteur](#as-a-template-author).
 1. Inhoudsauteurs kunnen vervolgens de stijlen gebruiken zoals beschreven in de sectie [Als inhoudsauteur](#as-a-content-author).
 
 ### Als inhoudsauteur {#as-a-content-author}
 
-1. Nadat u het WKND-project hebt geïnstalleerd, navigeert u naar de master homepage van de Engelse taal van WKND op de pagina `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u deze.
-1. Selecteer een **component Titel** verderop in de pagina
+1. Nadat u het WKND-project hebt geïnstalleerd, navigeert u naar de master introductiepagina van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u de pagina.
+1. Selecteer een **Title**-component verder naar beneden op de pagina
 
    ![Stijlsysteem voor de auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
@@ -80,15 +80,15 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
    >[!NOTE]
    >
-   >In dit voorbeeld sluiten de stijlen **Kleuren** (**Zwart**, **Wit** en **Grijs**) elkaar uit, terwijl de opties voor **Stijl**************(Underline,Align Right,Mini Spacing) kunnen worden gecombineerd. Dit kan [in de sjabloon worden geconfigureerd als sjabloonauteur](#as-a-template-author).
+   >In dit voorbeeld sluiten de **Kleuren** stijlen (**Zwart**, **Wit** en **Grijs**) elkaar uit, terwijl de **Stijl** opties (**Onderstrepen**, &lt;a1 2/>Rechts uitlijnen **en** Mini-afstand **) kunnen worden gecombineerd.** Dit kan [in de sjabloon worden geconfigureerd als sjabloonauteur](#as-a-template-author).
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Bewerk tijdens het bewerken van de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, de sjabloon van de pagina via **Pagina-informatie -> Sjabloon** bewerken.
+1. Bewerk tijdens het bewerken van de master introductiepagina van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
 
    ![Sjabloon bewerken](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. Bewerk het beleid van de component **Titel** door op de knop **Beleid** van de component te tikken of te klikken.
+1. Bewerk het beleid van de component **Title** door te tikken op de knop **Policy** van de component of erop te klikken.
 
    ![Beleid bewerken](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
@@ -96,22 +96,22 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
    ![Eigenschappen bewerken](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Groepsnaam:** Stijlen kunnen worden gegroepeerd in het stijlmenu dat de auteur van de inhoud ziet wanneer het vormen van de stijl van de component.
+   * **Groepsnaam:** Stijlen kunnen worden gegroepeerd in het stijlmenu dat de auteur van de inhoud ziet bij het configureren van de stijl van de component.
    * **Stijlen kunnen worden gecombineerd:** Hiermee kunt u meerdere stijlen in die groep tegelijk selecteren.
-   * **Stijlnaam:** De beschrijving van de stijl die aan de inhoudsauteur wanneer het vormen van de stijl van de component zal tonen.
-   * **CSS-klassen:** De werkelijke naam van de CSS-klasse die aan de stijl is gekoppeld.
+   * **Stijlnaam:** de beschrijving van de stijl die bij het configureren van de stijl van de component wordt weergegeven aan de auteur van de inhoud.
+   * **CSS-klassen:** de werkelijke naam van de CSS-klasse die aan de stijl is gekoppeld.
 
    Gebruik de sleephandgrepen om de volgorde van de groepen en de stijlen in de groepen te bepalen. Met de pictogrammen Toevoegen of Verwijderen kunt u groepen of stijlen in de groepen toevoegen of verwijderen.
 
 >[!CAUTION]
 >
->De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten als Bibliotheken [van de](/help/implementing/developing/introduction/clientlibs.md) Cliënt worden opgesteld om te werken.
+>De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten als [Bibliotheken van de Cliënt ](/help/implementing/developing/introduction/clientlibs.md) worden opgesteld om te werken.
 
-## Instellen {#setup}
+## {#setup} instellen
 
 Versie 2 en later van de Componenten van de kern wordt volledig toegelaten om uit het Systeem van de Stijl voordeel te halen en geen extra configuratie te vereisen.
 
-De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor uw eigen aangepaste componenten of om het tabblad Optionele stijlen in het dialoogvenster Bewerken [in te schakelen.](#enable-styles-tab-edit)
+De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor uw eigen aangepaste componenten of om het tabblad Optionele stijlen in het dialoogvenster Bewerken in te schakelen.](#enable-styles-tab-edit)[
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
@@ -121,11 +121,11 @@ Een component werkt alleen met AEM Stijlsysteem en geeft het stijltabblad weer i
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van de [Verschuivende Fusie](/help/implementing/developing/introduction/sling-resource-merger.md)van Middel.
+>Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Met de gevormde component, zullen de stijlen die door de paginaauteurs worden gevormd automatisch door AEM op het decoratie element worden opgenomen dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
 
-### Het tabblad Stijlen inschakelen in het dialoogvenster Bewerken {#enable-styles-tab-edit}
+### Tabblad Stijlen inschakelen in dialoogvenster Bewerken {#enable-styles-tab-edit}
 
 Er is ook een optioneel tabblad Stijlen beschikbaar in het dialoogvenster Bewerken. In tegenstelling tot het tabblad Ontwerpdialoogvenster is het tabblad in het dialoogvenster Bewerken niet essentieel voor het functioneren van het Stijlsysteem, maar is het een optionele alternatieve interface voor de auteur van inhoud om stijlen in te stellen.
 
@@ -135,7 +135,7 @@ Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van de [Verschuivende Fusie](/help/implementing/developing/introduction/sling-resource-merger.md)van Middel.
+>Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
@@ -143,9 +143,9 @@ Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad
 
 ### Stijlen met elementnamen {#styles-with-element-names}
 
-Een ontwikkelaar kan ook een lijst met toegestane elementnamen voor stijlen op de component configureren met de eigenschap `cq:styleElements` string array. Vervolgens kan de sjabloonauteur op het tabblad Stijlen van het beleid in het ontwerpdialoogvenster ook een elementnaam kiezen die voor elke stijl moet worden ingesteld. Hiermee wordt de elementnaam van het omvattende element ingesteld.
+Een ontwikkelaar kan ook een lijst met toegestane elementnamen voor stijlen op de component configureren met de reeksarray-eigenschap `cq:styleElements`. Vervolgens kan de sjabloonauteur op het tabblad Stijlen van het beleid in het ontwerpdialoogvenster ook een elementnaam kiezen die voor elke stijl moet worden ingesteld. Hiermee wordt de elementnaam van het omvattende element ingesteld.
 
-Deze eigenschap wordt ingesteld op het `cq:Component` knooppunt. Bijvoorbeeld:
+Deze eigenschap wordt ingesteld op het knooppunt `cq:Component`. Bijvoorbeeld:
 
 * `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
@@ -155,7 +155,7 @@ Deze eigenschap wordt ingesteld op het `cq:Component` knooppunt. Bijvoorbeeld:
 >
 >1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
->1. Ten slotte wordt de fallbackwaarde `cq:htmlTag`/ `cq:tagName` /beschouwd als een fallback-waarde.
+>1. Ten slotte wordt de `cq:htmlTag`/ `cq:tagName` van de component beschouwd als een terugvalwaarde.
 
 >
 
@@ -163,4 +163,4 @@ Deze eigenschap wordt ingesteld op het `cq:Component` knooppunt. Bijvoorbeeld:
 
 Deze mogelijkheid om stijlnamen te definiëren is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 
-Zo kan een container voor lay-out bijvoorbeeld semantiek als `<main>`, `<aside>`, `<nav>`enz. krijgen.
+Zo kan een container voor lay-out bijvoorbeeld semantiek als `<main>`, `<aside>`, `<nav>` enzovoort krijgen.
