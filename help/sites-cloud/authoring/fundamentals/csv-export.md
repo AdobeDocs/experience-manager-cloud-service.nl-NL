@@ -12,9 +12,9 @@ ht-degree: 29%
 
 # Exporteren naar CSV {#export-to-csv}
 
-**Met CSV-rapport** maken kunt u gegevens over uw pagina&#39;s exporteren naar een CSV-bestand op uw lokale systeem.
+**Met CSV-** rapporten kunt u gegevens over uw pagina&#39;s exporteren naar een CSV-bestand op uw lokale systeem.
 
-* Het gedownloade bestand wordt aangeroepen `export.csv`
+* Het gedownloade bestand wordt `export.csv`
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -43,13 +43,13 @@ Met de wizard **CSV-export maken** kunt u het volgende selecteren:
    * Aanvullende niveaus voor kinderen
    * Niveaus
 
-Het resulterende `export.csv` bestand kan worden geopend in Excel of een andere compatibele toepassing.
+Het resulterende `export.csv` dossier kan in Excel of een andere compatibele toepassing worden geopend.
 
 Een CSV-export maken:
 
 1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
    * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave)
-   * Dit is een optie in het keuzemenu **Maken** :
+   * Dit is een optie in het vervolgkeuzemenu **Maken**:
 
       ![CSV maken, optie](/help/sites-cloud/authoring/assets/csv-create.png)
 
