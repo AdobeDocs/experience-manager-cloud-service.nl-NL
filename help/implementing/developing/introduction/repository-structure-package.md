@@ -18,23 +18,23 @@ Als uw codepakket wordt geïmplementeerd op een locatie die **niet door het code
 
 ![Structuurpakket opslagplaats](./assets/repository-structure-packages.png)
 
-Het opslagstructuurpakket definieert de verwachte, algemene status `/apps` die door de pakketvalidator wordt gebruikt om te bepalen welke gebieden &quot;veilig zijn tegen potentiële conflicten&quot;, aangezien ze de standaardachtergrond zijn.
+Het opslagstructuurpakket definieert de verwachte, algemene status van `/apps` die door de pakketvalidator wordt gebruikt om te bepalen welke gebieden &quot;veilig zijn tegen potentiële conflicten&quot;, aangezien ze de standaardachtergrond zijn.
 
 De meest gangbare paden die in het opslagstructuurpakket moeten worden opgenomen zijn:
 
 + `/apps` Dit is een systeemknooppunt
-+ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, en `/apps/sling/...` die gemeenschappelijke overlays voor `/libs`.
++ `/apps/cq/...`,  `/apps/dam/...`,  `/apps/wcm/...`en  `/apps/sling/...` die algemene overlays voor  `/libs`.
 + `/apps/settings` Dit is het gedeelde context-bewuste pad van de configuratiegrootte
 
-Deze subverpakking bevat **geen** inhoud en bestaat uitsluitend uit een `pom.xml` definitie van de filterwortels.
+Dit subpakket **bevat geen**-inhoud en bestaat uitsluitend uit een `pom.xml` dat de filterwortels definieert.
 
 ## Het Repository Structure Package maken
 
-Om een pakket van de gegevensopslagstructuur voor u Maven project tot stand te brengen, creeer een nieuw leeg subproject Maven, met het volgende, bijwerkt de projectmeta-gegevens om met uw ouder Maven project in overeenstemming te zijn. `pom.xml`
+Als u een pakket opslagplaats wilt maken voor uw Maven-project, maakt u een nieuw leeg Maven-subproject met de volgende `pom.xml`, waarbij u de metagegevens van het project bijwerkt conform uw bovenliggende Maven-project.
 
-Werk de code bij `<filters>` om alle pad naar de JCR-opslagplaats te gebruiken die aan de basis ligt van uw codepakketten waarin u implementeert.
+Werk `<filters>` bij om alle weg van de opslagplaats JCR te omvatten uw codepakketten opstellen in.
 
-Zorg ervoor om dit nieuwe Maven subproject aan de `<modules>` lijst van ouderprojecten toe te voegen.
+Zorg ervoor om dit nieuwe Maven subproject aan de ouderprojecten `<modules>` lijst toe te voegen.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,9 +117,9 @@ Zorg ervoor om dit nieuwe Maven subproject aan de `<modules>` lijst van ouderpro
 
 ## Verwijzen naar het Repository Structure Package
 
-Als u het structuurpakket van de repository wilt gebruiken, kunt u ernaar verwijzen via alle codepakketten (de subpakketten die worden geïmplementeerd naar `/apps`) GeMaven projecten via het FileVault-inhoudspakket Maven plug-ins `<repositoryStructurePackage>` configuratie.
+Als u het structuurpakket van de opslagplaats wilt gebruiken, kunt u dit raadplegen via alle codepakketten (de subpakketten die worden geïmplementeerd op `/apps`) Geweven projecten via het bestandsVault-inhoudspakket Maven plug-ins `<repositoryStructurePackage>`-configuratie.
 
-Voeg in de `ui.apps/pom.xml`en eventuele andere codepakketten een verwijzing `pom.xml`toe naar de configuratie van het opslagruimtestructuurpakket (#repository-structure-package) van het project aan het FileVault-pakket Maven-plug-in.
+In `ui.apps/pom.xml` en elk ander codepakket `pom.xml`s voegt u een verwijzing naar de configuratie van het opslagplaatsstructuurpakket (#repository-structure-package) van het project toe aan het FileVault-pakket Maven-plug-in.
 
 ```xml
 ...
@@ -163,12 +163,12 @@ Bijvoorbeeld:
 + Codepakket A wordt geïmplementeerd in `/apps/a`
 + Codepakket B wordt geïmplementeerd in `/apps/a/b`
 
-Als een pakket-vlakke gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan codepakket B eerst in opstellen, `/apps/a`gevolgd door codepakket B, dat in opstelt `/apps/a`, resulterend in een verwijdering van eerder geïnstalleerd `/apps/a/b`.
+Als er geen afhankelijkheid op pakketniveau wordt vastgesteld van codepakket B op codepakket A, kan codepakket B eerst worden geïmplementeerd in `/apps/a`, gevolgd door codepakket B, dat wordt geïmplementeerd in `/apps/a`, waardoor de eerder geïnstalleerde `/apps/a/b` wordt verwijderd.
 
 In dit geval:
 
-+ Codepakket A moet een definitie geven `<repositoryStructurePackage>` voor het pakket met de opslagplaats van het project (waarvoor een filter moet worden gebruikt `/apps`).
-+ Het pakket van de code B zou een `<repositoryStructurePackage>` op codepakket A moeten bepalen, omdat het codepakket B in ruimte die door codepakket A wordt gedeeld opstelt.
++ Codepakket A moet een `<repositoryStructurePackage>` definiëren op het opslagplaatsstructuurpakket van het project (dat een filter moet hebben voor `/apps`).
++ Codepakket B moet een `<repositoryStructurePackage>` definiëren op codepakket A, omdat codepakket B wordt geïmplementeerd in een ruimte die wordt gedeeld door codepakket A.
 
 ## Fouten en fouten opsporen
 
@@ -179,7 +179,7 @@ Als de opslagplaatsstructuurpakketten niet correct zijn ingesteld, wordt bij Mav
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Dit geeft aan dat het pakket voor afbrekende code geen code heeft `<repositoryStructurePackage>` die voorkomt `/apps/some/path` in de filterlijst.
+Dit wijst op het het breken codepakket geen `<repositoryStructurePackage>` heeft die `/apps/some/path` in zijn filterlijst opsomt.
 
 ## Aanvullende bronnen
 
