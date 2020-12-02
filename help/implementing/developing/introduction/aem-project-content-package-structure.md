@@ -14,7 +14,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->U kunt uzelf vertrouwd maken met het standaardgebruik [van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM Project Archetype en de [FileVault Content Maven-plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) , aangezien dit artikel voortbouwt op deze lessen en concepten.
+>Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html), aangezien dit artikel voortbouwt op deze lessen en concepten.
 
 Dit artikel beschrijft de veranderingen die aan Adobe Experience Manager Maven projecten worden vereist om als Cloud Service compatibel te worden AEM door ervoor te zorgen dat zij de splitsing van veranderbare en onveranderlijke inhoud eerbiedigen, gebiedsdelen worden gevestigd om niet-strijdige, deterministische plaatsingen tot stand te brengen en dat zij in een plaatsingsable structuur worden verpakt.
 
@@ -26,27 +26,27 @@ De pakketstructuur die in dit document wordt beschreven, is compatibel met **zow
 
 >[!TIP]
 >
->De configuraties die in dit document worden beschreven, worden geleverd door [AEM Project Maven Archetype 24 of hoger](https://github.com/adobe/aem-project-archetype/releases).
+>De configuraties die in dit document worden geschetst, worden geleverd door [AEM Project Maven Archetype 24 of later](https://github.com/adobe/aem-project-archetype/releases).
 
 ## Mutable versus Immuable Areas of the Repository {#mutable-vs-immutable}
 
 `/apps` en `/libs`**worden beschouwd als onveranderbare gebieden van AEM omdat deze niet kunnen worden gewijzigd (maken, bijwerken, verwijderen) nadat AEM is gestart (dat wil zeggen tijdens runtime).** Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
 
-Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
+Alle overige gegevens in de opslagplaats, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, enz. zijn alle **mutable** gebieden, wat betekent zij kunnen bij runtime worden veranderd.
 
 >[!WARNING]
 >
 >Zoals in vorige versies van AEM, `/libs` zou niet moeten worden gewijzigd. Alleen AEM productcode kan worden geïmplementeerd op `/libs`.
 
-### eiken indexen {#oak-indexes}
+### Oak-indexen {#oak-indexes}
 
 De indexen van de eiken (`/oak:index`) worden specifiek beheerd door de AEM als proces van de Cloud Service plaatsing. De reden hiervoor is dat de Cloud Manager moet wachten totdat een nieuwe index wordt geïmplementeerd en volledig opnieuw wordt geïndexeerd voordat naar de nieuwe codeafbeelding wordt overgeschakeld.
 
-Daarom, hoewel de indexen van de eiken in runtime veranderbaar zijn, moeten zij als code worden opgesteld zodat zij kunnen worden geïnstalleerd alvorens om het even welke veranderlijke pakketten worden geïnstalleerd. Daarom maken `/oak:index` configuraties deel uit van het codepakket en geen deel uit van het inhoudspakket [zoals hieronder](#recommended-package-structure)beschreven.
+Daarom, hoewel de indexen van de eiken in runtime veranderbaar zijn, moeten zij als code worden opgesteld zodat zij kunnen worden geïnstalleerd alvorens om het even welke veranderlijke pakketten worden geïnstalleerd. Daarom maken `/oak:index` configuraties deel uit van het Pakket van de Code en geen deel van het Pakket van de Inhoud [zoals hieronder beschreven ](#recommended-package-structure).
 
 >[!TIP]
 >
->Meer informatie over indexering in AEM als Cloud Service vindt u in [Inhoud van document zoeken en indexeren](/help/operations/indexing.md).
+>Zie het document [Zoeken naar en indexeren van inhoud](/help/operations/indexing.md) voor meer informatie over indexering in AEM als Cloud Service.
 
 ## Aanbevolen pakketstructuur {#recommended-package-structure}
 
@@ -60,19 +60,19 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
 + Het Jar-bestand van de bundel OSGi wordt gegenereerd en rechtstreeks ingesloten in het hele project.
 
-+ Het `ui.apps` pakket bevat alle code die moet worden opgesteld en slechts aan `/apps`. Gemeenschappelijke elementen van het `ui.apps` pakket zijn onder meer:
-   + [Componentdefinities en HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) -scripts
++ Het `ui.apps`-pakket bevat alle code die moet worden geïmplementeerd en wordt alleen geïmplementeerd op `/apps`. Veelvoorkomende elementen van het `ui.apps`-pakket zijn onder meer:
+   + [Componentdefinities en ](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) HTML-scripts
       + `/apps/my-app/components`
-   + JavaScript en CSS (via [clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md))
+   + JavaScript en CSS (via [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [Bedekkingen](/help/implementing/developing/introduction/overlays.md) van `/libs`
-      + `/apps/cq`, `/apps/dam/`enz.
+   + [](/help/implementing/developing/introduction/overlays.md) Bedekkingen van  `/libs`
+      + `/apps/cq`,  `/apps/dam/`enz.
    + Contextbewuste configuraties voor alternatieven
       + `/apps/settings`
    + ACLs (toestemmingen)
-      + Willekeurig pad `rep:policy` onder `/apps`
+      + Elke `rep:policy` voor een pad onder `/apps`
 
-+ Het `ui.config` pakket, bevat alle [configuraties](/help/implementing/deploying/configuring-osgi.md)OSGi:
++ Het `ui.config`-pakket bevat alle [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md):
    + De omslag van de organisatie die loopwijze specifieke definities OSGi config bevat
       + `/apps/my-app/osgiconfig`
    + Gemeenschappelijke OSGi configuratiemap die standaardOSGi configuraties bevat die op al doel AEM als doelstellingen van de Cloud Service plaatsing van toepassing zijn
@@ -80,7 +80,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
    + De wijze-specifieke OSGi configuratiemappen van de looppas die standaardOSGi configuraties bevat die op alle AEM als doelstellingen van de Cloud Service plaatsing van toepassing zijn
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi-configuratiescripts
-      + [Repo Init](#repo-init) is de aanbevolen manier om (muteerbare) inhoud te implementeren die logisch deel uitmaakt van de AEM toepassing. De configuraties van OSGi van het Punt van de Repo zouden in de aangewezen `config.<runmode>` omslag moeten worden geplaatst zoals hierboven geschetst, en zouden moeten worden gebruikt om te bepalen:
+      + [Repo ](#repo-init) Initis de geadviseerde manier om (mutable) inhoud op te stellen die logisch gezien deel van de AEM toepassing uitmaakt. De configuraties van OSGi van het Punt van de Repo zouden in de aangewezen `config.<runmode>` omslag moeten worden geplaatst zoals hierboven geschetst, en worden gebruikt om te bepalen:
          + Structuren voor basislijninhoud
          + Gebruikers
          + Servicegebruikers
@@ -89,11 +89,11 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
 ### Inhoudspakketten
 
-+ Het `ui.content` pakket bevat alle inhoud en configuratie. Het inhoudspakket bevat alle knoopdefinities die niet in de `ui.apps` pakketten of `ui.config` pakketten staan, of met andere woorden niets in `/apps` of `/oak:index`. Gemeenschappelijke elementen van het `ui.content` pakket zijn onder meer:
++ Het `ui.content`-pakket bevat alle inhoud en configuratie. Het inhoudspakket bevat alle knoopdefinities die niet in de pakketten `ui.apps` of `ui.config` of in andere woorden, niets in `/apps` of `/oak:index` staan. Veelvoorkomende elementen van het `ui.content`-pakket zijn onder meer:
    + Contextbewuste configuraties
       + `/conf`
    + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren van de Basislijn uitbreidt die in Repo worden bepaald.)
-      + `/content`, `/content/dam`enz.
+      + `/content`,  `/content/dam`enz.
    + Regelgevende taggende taxonomieën
       + `/content/cq:tags`
    + Verouderde knooppunten, enz. (idealiter migreren deze naar locaties die niet- of etc. zijn)
@@ -101,16 +101,16 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
 ### Containerpakketten
 
-+ Het `all` pakket is een containerpakket dat ALLEEN inzetbare artefacten, het SGI-bundel Jar-bestand `ui.apps`en `ui.config` `ui.content` pakketten als insluitingen bevat. The `all` package must not have **any content or code** of its own, but rather delegate all deployment to the repository to its sub-packages or OSGi bundle Jar files.
++ Het `all`-pakket is een containerpakket dat ALLEEN implementeerbare artefacten, het OSGI-bundel Jar-bestand, `ui.apps`-, `ui.config`- en `ui.content`-pakketten als insluitingen bevat. Het `all`-pakket mag geen **inhoud of code** van zichzelf hebben, maar moet alle implementatie naar de opslagplaats delegeren aan zijn subpakketten of OSGi-bundelJar-bestanden.
 
-   Pakketten worden nu opgenomen met de insluitconfiguratie [van de Maven](#embeddeds)FileVault-plug-in voor Maven-bestanden in plaats van met de `<subPackages>` configuratie.
+   Pakketten worden nu opgenomen met de ingesloten configuratie](#embeddeds) van de Maven [FileVault-pakket Maven-plug-in in plaats van de `<subPackages>`-configuratie.
 
-   Voor complexe plaatsingen van de Experience Manager, kan het wenselijk zijn om veelvoudige `ui.apps`, `ui.config` en `ui.content` projecten/pakketten tot stand te brengen die specifieke plaatsen of huurders in AEM vertegenwoordigen. Als dit wordt gedaan, zorg ervoor de scheiding tussen veranderlijke en onveranderlijke inhoud wordt geëerbiedigd, en de vereiste inhoudspakketten en de bundel OSGi Jar dossiers worden ingebed als subpakketten in het pakket van de `all` containerinhoud.
+   Voor complexe implementaties van Experience Managers kan het wenselijk zijn meerdere `ui.apps`-, `ui.config`- en `ui.content`-projecten/pakketten te maken die specifieke sites of huurders in AEM vertegenwoordigen. Als dit wordt gedaan, zorg ervoor de scheiding tussen veranderlijke en onveranderlijke inhoud wordt geëerbiedigd, en de vereiste inhoudspakketten en de bundel OSGi Jar dossiers worden ingebed als subpakketten in `all` containerinhoudspakket.
 
    Bijvoorbeeld, zou een complexe het pakketstructuur van de plaatsingsinhoud als dit kunnen kijken:
 
    + `all` met het inhoudspakket worden de volgende pakketten ingesloten om een unieke implementatie-artefact te maken
-      + `common.ui.apps` implementeert code die vereist is voor **zowel** site A als site B
+      + `common.ui.apps` code implementeert die vereist is door  **** zowel site A als site B
       + `site-a.core` OSGi-bundel Jar vereist voor site A
       + `site-a.ui.apps` implementeert code die door site A wordt vereist
       + `site-a.ui.config` stelt configuraties OSGi op die door Plaats A worden vereist
@@ -138,15 +138,15 @@ Bijvoorbeeld, zou een AEM project dat 2 verkoper AEM toepassingen omvat als kunn
 
 Pakketten moeten worden gemarkeerd met het opgegeven pakkettype.
 
-+ Containerpakketten moeten hun `packageType` waarde instellen op `container`.
-+ Codepakketten (onveranderlijk) moeten hun `packageType` aan `application`.
-+ Inhoudspakketten (veranderbare pakketten) moeten hun `packageType` op `content`.
++ Containerpakketten moeten hun `packageType` instellen op `container`.
++ Codepakketten (onveranderlijk) moeten hun `packageType` aan `application` plaatsen.
++ Inhoudspakketten (veranderbare pakketten) moeten hun `packageType` op `content` plaatsen.
 
-Zie [Apache Jackrabbit FileVault - Package Maven Plugin-documentatie](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) en het [FileVault Maven-configuratiefragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder voor meer informatie.
+Zie [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) en het [FileVault Maven configuratiesfragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder voor meer informatie.
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-package-types) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-package-types) hieronder voor een volledig fragment.
 
 ## Pakketten markeren voor implementatie door Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
@@ -154,15 +154,15 @@ Standaard worden alle pakketten die door de Maven-build worden gemaakt door Adob
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#pom-xml-snippets) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#pom-xml-snippets) hieronder voor een volledig fragment.
 
-## Reparatie-item{#repo-init}
+## Repo-inkt{#repo-init}
 
 Repo Init verstrekt instructies, of manuscripten, die structuren JCR, die zich van gemeenschappelijke knoopstructuren zoals omslagbomen, aan gebruikers, de dienstgebruiker, groepen en ACL definitie bepalen.
 
 De belangrijkste voordelen van Repo Init zijn zij impliciete toestemmingen hebben om alle acties uit te voeren die door hun manuscripten worden bepaald, en worden aangehaald vroeg in de plaatsingslevenscyclus die alle vereiste structuren JCR verzekeren tegen de tijdcode wordt uitgevoerd.
 
-Terwijl de manuscripten van het Begin van de Repo in het `ui.config` project zelf als manuscripten leven, kunnen en moeten zij worden gebruikt om de volgende veranderbare structuren te bepalen:
+Terwijl de manuscripten van het Begin van de Repo in het `ui.config` project als manuscripten leven, kunnen en moeten zij worden gebruikt om de volgende veranderbare structuren te bepalen:
 
 + Structuren voor basislijninhoud
 + Servicegebruikers
@@ -170,39 +170,39 @@ Terwijl de manuscripten van het Begin van de Repo in het `ui.config` project zel
 + Groepen
 + ACLs
 
-De manuscripten van de Inzet van de Repo worden opgeslagen als `scripts` ingangen van `RepositoryInitializer` OSGi fabrieksconfiguraties, en kunnen daarom impliciet door looppas worden gericht wijze, die voor verschillen tussen de manuscripten van de Inzet van de Auteur AEM en van de Diensten van de Publicatie AEM, of zelfs tussen milieu&#39;s (Dev, Stadium en Prod) toestaat.
+De manuscripten van de Inzet van de Repo worden opgeslagen als `scripts` ingangen van `RepositoryInitializer` OSGi fabrieksconfiguraties, en kunnen daarom impliciet door looppas worden gericht, die voor verschillen tussen de manuscripten van de Inzet van de Auteur AEM en van de Publicatie van de Diensten van de Publicatie AEM, of zelfs tussen milieu&#39;s (Dev, Stadium en Prod) toestaan.
 
-Repo Init OSGi vormt best geschreven in het [`.config` OSGi configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) aangezien zij multi-lines steunen, die een uitzondering op de beste praktijken is om te gebruiken [`.cfg.json` om configuraties](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)te bepalen OSGi.
+Repo Init OSGi configureert is het best geschreven in [`.config` OSGi configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) aangezien zij multi-lines steunen, die een uitzondering op de beste praktijken is om [`.cfg.json` te gebruiken om configuraties te bepalen OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
 Merk op dat wanneer het bepalen van Gebruikers, en Groepen, slechts groepen als deel van de toepassing worden beschouwd, en integraal aan zijn functie zou hier moeten worden bepaald. De gebruikers en de Groepen van de organisatie zouden nog bij runtime in AEM moeten worden bepaald; Bijvoorbeeld, als een douanewerkschema werk aan een genoemde Groep toewijst, zou die Groep binnen via RepoInit in de AEM toepassing moeten worden bepaald, echter als de Groepering slechts organisatorisch is, zoals &quot;Team van Wendy&quot;en &quot;Team van Sean&quot;, zijn deze het best bepaald, en beheerd bij runtime in AEM.
 
 >[!TIP]
 >
->Scripts voor herhalingsindelingen *moeten* in het inlineveld worden gedefinieerd en de `scripts` `references` configuratie werkt niet.
+>Scripts voor herhalingsinvoer *must* moeten worden gedefinieerd in het veld inline `scripts` en de configuratie `references` werkt niet.
 
-De volledige woordenlijst voor scripts van Repo Init is beschikbaar in de documentatie [van](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling Repo Init.
+De volledige woordenlijst voor scripts van Repo Init is beschikbaar in de [documentatie van het Start van Apache Sling Repo Init](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
 >[!TIP]
 >
->Zie de sectie [Repo Init Snippets](#snippet-repo-init) hieronder voor een volledig fragment.
+>Zie de sectie [Fragmenten voor herhaling van invoer](#snippet-repo-init) hieronder voor een volledig fragment.
 
 ## Structuurpakket opslagplaats {#repository-structure-package}
 
-Codepakketten vereisen dat de configuratie van de FileVault Maven-plug-in wordt geconfigureerd om te verwijzen naar een `<repositoryStructurePackage>` methode die de juistheid van structurele afhankelijkheden afdwingt (om ervoor te zorgen dat een codepakket niet boven een ander codepakket wordt geïnstalleerd). U kunt uw eigen structuurpakket voor de gegevensopslagruimte [maken voor uw project](repository-structure-package.md).
+Codepakketten vereisen dat de configuratie van de FileVault Maven-plug-in wordt geconfigureerd om te verwijzen naar een `<repositoryStructurePackage>` die de juistheid van structurele afhankelijkheden afdwingt (om ervoor te zorgen dat één codepakket niet boven een ander wordt geïnstalleerd). U kunt [uw eigen opslagstructuurpakket maken voor uw project](repository-structure-package.md).
 
 Dit is **alleen vereist** voor codepakketten. (Dit zijn pakketten die zijn gemarkeerd met `<packageType>application</packageType>`.)
 
-Zie Een structuurpakket voor opslagplaatsen [ontwikkelen voor meer informatie over het maken van een pakket](repository-structure-package.md)met opslagplaatsen voor uw toepassing.
+Zie [Een structuurpakket voor opslagplaats ontwikkelen](repository-structure-package.md) voor meer informatie over het maken van een pakket voor opslagplaats voor uw toepassing.
 
-Voor inhoudspakketten (`<packageType>content</packageType>`) is dit &#39;opslagplaatsstructuurpakket&#39; **niet** vereist.
+Voor inhoudspakketten (`<packageType>content</packageType>`) **do not** is dit pakket met opslagplaatsstructuurvereisten vereist.
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-repository-structure-package) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-repository-structure-package) hieronder voor een volledig fragment.
 
-## Subpakketten insluiten in het Containerpakket{#embeddeds}
+## Subpakketten insluiten in het containerpakket{#embeddeds}
 
-Inhoud- of codepakketten worden in een speciale map &quot;side-car&quot; geplaatst en kunnen worden geïnstalleerd op AEM auteur, AEM publicatie of beide met behulp van de `<embeddeds>` configuratie van de FileVault Maven-plug-in. Merk op dat de `<subPackages>` configuratie niet zou moeten worden gebruikt.
+Inhoud- of codepakketten worden in een speciale map &quot;side-car&quot; geplaatst en kunnen worden gebruikt voor installatie op AEM auteur, AEM publicatie of beide, met behulp van de `<embeddeds>`-configuratie van de FileVault Maven-plug-in. Merk op dat `<subPackages>` configuratie niet zou moeten worden gebruikt.
 
 Veelvoorkomende gebruiksgevallen zijn:
 
@@ -212,14 +212,14 @@ Veelvoorkomende gebruiksgevallen zijn:
 
 ![Pakketten insluiten](assets/embeddeds.png)
 
-Als u AEM auteur als doel wilt instellen, AEM publiceren of beide, wordt het pakket ingesloten in het `all` containerpakket in een speciale map-locatie, in de volgende indeling:
+Als u AEM auteur als doel wilt instellen, AEM publiceren of beide, wordt het pakket ingesloten in het containerpakket `all` in een speciale map-locatie, in de volgende indeling:
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 Deze mappenstructuur omlaag splitsen:
 
-+ De map op het eerste niveau **moet een map zijn** `/apps`.
-+ De map op het tweede niveau vertegenwoordigt de toepassing waarvan de mapnaam is `-packages` hersteld. Vaak is er slechts één map op het tweede niveau waarin alle subpakketten zijn ingesloten. Elk aantal mappen op het tweede niveau kan echter zo worden gemaakt dat dit de logische structuur van de toepassing het best weerspiegelt:
++ De map op het eerste niveau **moet** `/apps` zijn.
++ De map op het tweede niveau vertegenwoordigt de toepassing waarvan `-packages` is hersteld naar de mapnaam. Vaak is er slechts één map op het tweede niveau waarin alle subpakketten zijn ingesloten. Elk aantal mappen op het tweede niveau kan echter zo worden gemaakt dat dit de logische structuur van de toepassing het best weerspiegelt:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
@@ -229,75 +229,75 @@ Deze mappenstructuur omlaag splitsen:
    >Op basis van conventies krijgen ingesloten mappen in subpakketten een naam met het achtervoegsel `-packages`. Dit zorgt ervoor dat de code- en contentpakketten van de implementatie **niet** worden geïmplementeerd op de doelmappen van een subpakket `/apps/<app-name>/...`, hetgeen resulteert in destructief en cyclisch installatiegedrag.
 
 + De map op het derde niveau moet ofwel
-   `application`, `content` of `container`
-   + De `application` map bevat codepakketten
-   + De `content` map bevat inhoudspakketten
-   + De `container` map bevat eventuele [extra toepassingspakketten](#extra-application-packages) die mogelijk door de AEM worden opgenomen.
+   `application`,  `content` of  `container`
+   + De map `application` bevat codepakketten
+   + De map `content` bevat inhoudspakketten
+   + In de map `container` staan [extra toepassingspakketten](#extra-application-packages) die mogelijk door de AEM toepassing worden opgenomen.
 Deze mapnaam komt overeen met de [pakkettypen](#package-types) van de pakketten die erin staan.
 + De map op het vierde niveau bevat de subpakketten en moet een van de volgende zijn:
    + `install` om te installeren op **zowel** de AEM-auteur als de AEM-publicatie
    + `install.author` om **alleen** te installeren op de AEM-auteur
-   + `install.publish` om **alleen** te installeren op AEM publishOpmerking: alleen `install.author` en `install.publish` worden ondersteunde doelen gebruikt. Andere uitvoermodi **worden niet** ondersteund.
+   + `install.publish` om  **** alleen op AEM te installeren Opmerking: alleen  `install.author` en  `install.publish` ondersteunde doelen. Andere uitvoermodi **worden niet** ondersteund.
 
 Een implementatie die AEM auteur bevat en specifieke pakketten publiceert, kan er bijvoorbeeld als volgt uitzien:
 
 + `all` Containerpakket sluit de volgende pakketten in om een enkelvoudig implementatieartefact te maken
-   + `ui.apps` ingebed in `/apps/my-app-packages/application/install` stelt code aan zowel AEM auteur als AEM publiceren op
-   + `ui.apps.author` ingebed in `/apps/my-app-packages/application/install.author` stelt code aan slechts AEM auteur op
-   + `ui.content` ingebed in `/apps/my-app-packages/content/install` stelt inhoud en configuratie aan zowel AEM auteur als AEM publiceren op
-   + `ui.content.publish` ingesloten in `/apps/my-app-packages/content/install.publish` implementeert inhoud en configuratie alleen om te AEM publiceren
+   + `ui.apps` ingebed in  `/apps/my-app-packages/application/install` stelt code aan zowel auteur als AEM publiceren op
+   + `ui.apps.author` ingebed in  `/apps/my-app-packages/application/install.author` stelt code aan slechts AEM auteur op
+   + `ui.content` ingebed in  `/apps/my-app-packages/content/install` stelt inhoud en configuratie aan zowel AEM auteur als AEM publiceren op
+   + `ui.content.publish` ingesloten in  `/apps/my-app-packages/content/install.publish` implementeert inhoud en configuratie alleen AEM publiceren
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-embeddeds) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-embeddeds) hieronder voor een volledig fragment.
 
 ### Filterdefinitie van containerpakket {#container-package-filter-definition}
 
-Wegens het inbedden van de code en inhoudsubpakketten in het containerpakket, moeten de ingebedde doelwegen aan het containerproject worden toegevoegd `filter.xml` om ervoor te zorgen de ingebedde pakketten in het containerpakket inbegrepen zijn wanneer gebouwd.
+Wegens het inbedden van de code en inhoudsubpakketten in het containerpakket, moeten de ingebedde doelwegen aan `filter.xml` van het containerproject worden toegevoegd om ervoor te zorgen de ingebedde pakketten in het containerpakket worden omvat wanneer gebouwd.
 
 Voeg eenvoudig de `<filter root="/apps/<my-app>-packages"/>` ingangen voor om het even welke tweede niveauomslagen toe die subpakketten bevatten om op te stellen.
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-container-package-filters) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-container-package-filters) hieronder voor een volledig fragment.
 
 ## Pakketten van derden insluiten {#embedding-3rd-party-packages}
 
-Alle pakketten moeten beschikbaar zijn via de gegevensopslagruimte van [Adobe of via een openbare gegevensopslagplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) voor artefacten van derden.
+Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten[ of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)
 
 Als de pakketten van derden zich in de **openbare Maven-artefactopslagplaats van Adobe** bevinden, is geen verdere configuratie nodig wanneer Adobe Cloud Manager de artefacten oplost.
 
 Als de pakketten van derden zich in een **openbare Maven-artefactopslagplaats van derden** bevinden, moet deze opslagplaats worden geregistreerd in de `pom.xml` van het project en worden ingesloten volgens de [hierboven beschreven](#embeddeds) methode.
 
-Toepassingen/connectors van derden moeten worden ingesloten met het bijbehorende `all` pakket als een container in het containerpakket (`all`) van uw project.
+Toepassingen/connectors van derden moeten worden ingesloten met het `all`-pakket als een container in het containerpakket van uw project (`all`).
 
-Het toevoegen van Geweven gebiedsdelen volgt standaard Geweven praktijken, en het inbedden van derdeartefacten (code en inhoudspakketten) worden [geschetst hierboven](#embedding-3rd-party-packages).
+Als u Geweven afhankelijkheden toevoegt, volgt u de standaard Geweven werkwijzen en wordt het insluiten van artefacten van derden (code en inhoudspakketten) [hierboven geschetst](#embedding-3rd-party-packages).
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-3rd-party-maven-repositories) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-3rd-party-maven-repositories) hieronder voor een volledig fragment.
 
-## Afhankelijkheden tussen pakketten `ui.apps` van `ui.content` pakketten {#package-dependencies}
+## Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten {#package-dependencies} verpakken
 
 Om een correcte installatie van de pakketten te waarborgen, wordt aanbevolen om afhankelijkheden tussen pakketten tot stand te brengen.
 
-De algemene regel is pakketten met veranderbare inhoud (`ui.content`) die afhankelijk moeten zijn van de onveranderlijke code (`ui.apps`) die het teruggeven en het gebruik van de veranderlijke inhoud steunt.
+De algemene regel is pakketten die veranderbare inhoud (`ui.content`) bevatten zouden van de onveranderlijke code (`ui.apps`) moeten afhangen die het teruggeven en het gebruik van de veranderlijke inhoud steunt.
 
-Een opmerkelijke uitzondering op deze algemene regel is als het onveranderlijke codepakket (`ui.apps` of een ander), __slechts__ bundels OSGi bevat. Zo ja, dan zou geen AEM pakket een afhankelijkheid van het moeten verklaren. Dit is omdat de onveranderlijke codepakketten __slechts__ die OSGi- bundels bevatten niet bij AEM Manager van het Pakket worden geregistreerd, en daarom om het even welk AEM pakket afhankelijk van het een ontevreden gebiedsdeel zal hebben en zal niet installeren.
+Een opmerkelijke uitzondering op deze algemene regel is als het onveranderlijke codepakket (`ui.apps` of om het even welk ander), __only__ OSGi bundels bevat. Zo ja, dan zou geen AEM pakket een afhankelijkheid van het moeten verklaren. Dit is omdat de onveranderlijke codepakketten __only__ die bundels OSGi bevatten niet met AEM Manager van het Pakket worden geregistreerd, en daarom zal om het even welk AEM pakket afhankelijk van het een ontevreden gebiedsdeel hebben en niet om te installeren.
 
 >[!TIP]
 >
->Zie de [sectie XML-fragmenten](#xml-package-dependencies) voor POM hieronder voor een volledig fragment.
+>Zie de sectie [POM XML-fragmenten](#xml-package-dependencies) hieronder voor een volledig fragment.
 
 De gemeenschappelijke patronen voor tevreden pakketgebiedsdelen zijn:
 
-### Eenvoudige implementatiepakketafhankelijkheden {#simple-deployment-package-dependencies}
+### Eenvoudige implementatiepakketafhankelijke {#simple-deployment-package-dependencies}
 
-Met het eenvoudige hoofdlettergebruik wordt het `ui.content` veranderbare inhoudspakket zo ingesteld dat het afhankelijk is van het `ui.apps` onveranderlijke codepakket.
+Met de eenvoudige optie wordt het veranderbare inhoudspakket `ui.content` ingesteld, zodat dit afhankelijk is van het onveranderlijke codepakket `ui.apps`.
 
 + `all` heeft geen afhankelijkheden
    + `ui.apps` heeft geen afhankelijkheden
-   + `ui.content` afhankelijk van `ui.apps`
+   + `ui.content` afhankelijk van  `ui.apps`
 
 ### Complexe implementatiepakketafhankelijkheden {#complex-deploxment-package-dependencies}
 
@@ -305,18 +305,18 @@ De complexe plaatsingen breiden zich op het eenvoudige geval uit, en plaatsen ge
 
 + `all` heeft geen afhankelijkheden
    + `common.ui.apps.common` heeft geen afhankelijkheden
-   + `site-a.ui.apps` afhankelijk van `common.ui.apps`
-   + `site-a.ui.content` afhankelijk van `site-a.ui.apps`
-   + `site-b.ui.apps` afhankelijk van `common.ui.apps`
-   + `site-b.ui.content` afhankelijk van `site-b.ui.apps`
+   + `site-a.ui.apps` afhankelijk van  `common.ui.apps`
+   + `site-a.ui.content` afhankelijk van  `site-a.ui.apps`
+   + `site-b.ui.apps` afhankelijk van  `common.ui.apps`
+   + `site-b.ui.content` afhankelijk van  `site-b.ui.apps`
 
 ## Lokale ontwikkeling en implementatie {#local-development-and-deployment}
 
-De in dit artikel geschetste projectstructuren en -organisatie zijn **volledig verenigbaar** met de plaatselijke ontwikkeling AEM instanties.
+De projectstructuren en -organisatie die in dit artikel worden beschreven, zijn **volledig compatibel** lokale AEM.
 
 ## XML-fragmenten voor POM {#pom-xml-snippets}
 
-Het volgende is Gemaakt `pom.xml` configuratiefragmenten die aan Geweven projecten kunnen worden toegevoegd om aan de bovengenoemde aanbevelingen te richten.
+Het volgende is Gemaakt `pom.xml` configuratievluiven die aan Geweven projecten kunnen worden toegevoegd om aan de bovengenoemde aanbevelingen te richten.
 
 ### Pakkettypen {#xml-package-types}
 
@@ -324,13 +324,13 @@ Code- en contentpakketten die als subpakketten worden geïmplementeerd, moeten h
 
 #### Containerpakkettypen {#container-package-types}
 
-Het containerproject `all/pom.xml` verklaart **geen** a `<packageType>`.
+Het project `all/pom.xml` van de container **declareert geen** a `<packageType>`.
 
-#### Code (Immuable) pakkettypen {#immutable-package-types}
+#### Code (Immuable) pakkettypes {#immutable-package-types}
 
-Codepakketten moeten hun `packageType` instellen op `application`.
+Codepakketten moeten hun `packageType` op `application` plaatsen.
 
-In de `ui.apps/pom.xml`, verklaart de richtlijnen van de `<packageType>application</packageType>` bouwstijlconfiguratie van de `filevault-package-maven-plugin` plugin zijn pakkettype.
+In `ui.apps/pom.xml`, `<packageType>application</packageType>` bouwt configuratierichtlijnen van `filevault-package-maven-plugin` plugin verklaring verklaart zijn pakkettype.
 
 ```xml
 ...
@@ -355,9 +355,9 @@ In de `ui.apps/pom.xml`, verklaart de richtlijnen van de `<packageType>applicati
 
 #### Inhoud (Mutable) Pakkettypen {#mutable-package-types}
 
-Inhoudspakketten moeten hun `packageType` waarde instellen op `content`.
+Inhoudspakketten moeten hun `packageType` instellen op `content`.
 
-In de `ui.content/pom.xml`, verklaart de richtlijn van de `<packageType>content</packageType>` bouwstijlconfiguratie van de `filevault-package-maven-plugin` plugin verklaring zijn pakkettype.
+In `ui.content/pom.xml`, verklaart `<packageType>content</packageType>` de richtlijn van de bouwstijlconfiguratie van `filevault-package-maven-plugin` plugin verklaring zijn pakkettype.
 
 ```xml
 ...
@@ -382,7 +382,7 @@ In de `ui.content/pom.xml`, verklaart de richtlijn van de `<packageType>content<
 
 ### Pakketten markeren voor implementatie van Adobe Cloud Manager {#cloud-manager-target}
 
-In elk project dat een pakket genereert, **behalve** voor het containerproject (`all`), voegt u `<cloudManagerTarget>none</cloudManagerTarget>` aan de `<properties>`-configuratie van de declaratie van de invoegtoepassing `filevault-package-maven-plugin` toe om ervoor te zorgen dat deze **niet** door Adobe Cloud Manager worden geïmplementeerd. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
+In elk project dat een pakket genereert, **behalve** voor het containerproject (`all`), voegt u `<cloudManagerTarget>none</cloudManagerTarget>` aan de `<properties>`-configuratie van de declaratie van de invoegtoepassing `filevault-package-maven-plugin` toe om ervoor te zorgen dat deze **niet** door Adobe Cloud Manager worden geïmplementeerd. Het containerpakket (`all`) moet het enkelvoudige pakket zijn dat wordt geïmplementeerd via Cloud Manager, dat op zijn beurt alle vereiste code en inhoudspakketten insluit.
 
 ```xml
 ...
@@ -402,11 +402,11 @@ In elk project dat een pakket genereert, **behalve** voor het containerproject (
     ...
 ```
 
-### Reparatie-item{#snippet-repo-init}
+### Repo-inkt{#snippet-repo-init}
 
-Scripts voor Repo Init die de scripts voor Repo Init bevatten, worden gedefinieerd in de `RepositoryInitializer` OSGi-fabrieksconfiguratie via de `scripts` eigenschap. Merk op dat aangezien deze manuscripten binnen configuraties OSGi worden bepaald, zij gemakkelijk kunnen zijn scoped door wijze gebruikend de gebruikelijke `../config.<runmode>` omslagsemantiek.
+De manuscripten van de Inzet van de Repo die de manuscripten bevatten van de Inzet van de Repo worden bepaald in `RepositoryInitializer` OSGi fabrieksconfiguratie via het `scripts` bezit. Merk op dat aangezien deze manuscripten binnen configuraties OSGi worden bepaald, zij gemakkelijk kunnen worden scoped door wijze in werking stellen gebruikend de gebruikelijke `../config.<runmode>` omslagsemantiek.
 
-Aangezien scripts doorgaans een declaratie met meerdere regels zijn, is het gemakkelijker om ze in het `.config` bestand te definiëren dan in de op JSON gebaseerde `.cfg.json` indeling.
+Aangezien scripts doorgaans een declaratie van meerdere regels zijn, is het eenvoudiger om ze in het `.config`-bestand te definiëren dan de op JSON gebaseerde `.cfg.json`-indeling.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -422,11 +422,11 @@ scripts=["
 "]
 ```
 
-Het `scripts` bezit OSGi bevat richtlijnen zoals die door de [Repo Init taal](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)van Apache Sling worden bepaald.
+De eigenschap `scripts` OSGi bevat instructies zoals gedefinieerd door de Repo Init language](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language) van [Apache Sling&#39;s.
 
 ### Structuurpakket opslagplaats {#xml-repository-structure-package}
 
-Voeg in de `ui.apps/pom.xml` en een andere `pom.xml` code die een codepakket (`<packageType>application</packageType>`) declareert, de volgende configuratie van het opslagplaatsstructuurpakket toe aan de FileVault Maven-plug-in. U kunt uw eigen structuurpakket voor de gegevensopslagruimte [maken voor uw project](repository-structure-package.md).
+Voeg in `ui.apps/pom.xml` en elke andere `pom.xml` die een codepakket (`<packageType>application</packageType>`) declareert, de volgende configuratie van het opslagstructuurpakket toe aan de FileVault Maven-plug-in. U kunt [uw eigen opslagstructuurpakket maken voor uw project](repository-structure-package.md).
 
 ```xml
 ...
@@ -452,7 +452,7 @@ Voeg in de `ui.apps/pom.xml` en een andere `pom.xml` code die een codepakket (`<
 
 ### Subpakketten insluiten in het Containerpakket {#xml-embeddeds}
 
-Voeg in de `all/pom.xml`sectie de volgende `<embeddeds>` instructies toe aan de `filevault-package-maven-plugin` insteekmoduledeclaratie. Herinner me, **gebruik niet** de `<subPackages>` configuratie, aangezien dit subpakketten in `/etc/packages` plaats van `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`zal omvatten.
+Voeg in de `all/pom.xml` de volgende `<embeddeds>` aanwijzingen toe aan de `filevault-package-maven-plugin` plug-indeclaratie. **gebruik niet** de `<subPackages>` configuratie, aangezien dit de subpakketten in `/etc/packages` eerder dan `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?` zal omvatten.
 
 ```xml
 ...
@@ -544,7 +544,7 @@ Als de veelvoudige `/apps/*-packages` in ingebedde doelstellingen worden gebruik
 >
 >Als u meer Maven-opslagruimten toevoegt, kunnen de gefabriceerde buildtijden langer duren omdat extra Maven-opslagruimten op afhankelijkheden worden gecontroleerd.
 
-Voeg in het reactorproject `pom.xml`de noodzakelijke richtlijnen van derden inzake openbare opslagplaats Maven toe. De volledige `<repository>` configuratie moet beschikbaar zijn bij de externe opslagprovider.
+Voeg in de `pom.xml` van het reactorproject de noodzakelijke richtlijnen toe van de derde partij van de openbare Maven bewaarplaats. De volledige `<repository>` configuratie zou bij de leverancier van de derdebewaarplaats beschikbaar moeten zijn.
 
 ```xml
 <repositories>
@@ -565,9 +565,9 @@ Voeg in het reactorproject `pom.xml`de noodzakelijke richtlijnen van derden inza
 </repositories>
 ```
 
-### Afhankelijkheden tussen pakketten `ui.apps` van `ui.content` pakketten {#xml-package-dependencies}
+### Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten {#xml-package-dependencies} verpakken
 
-Voeg in de `ui.content/pom.xml`sectie de volgende `<dependencies>` instructies toe aan de `filevault-package-maven-plugin` insteekmoduledeclaratie.
+Voeg in de `ui.content/pom.xml` de volgende `<dependencies>` aanwijzingen toe aan de `filevault-package-maven-plugin` plug-indeclaratie.
 
 ```xml
 ...
@@ -591,9 +591,9 @@ Voeg in de `ui.content/pom.xml`sectie de volgende `<dependencies>` instructies t
 ...
 ```
 
-### De doelmap van het containerproject opschonen {#xml-clean-container-package}
+### De doelmap van het containerproject {#xml-clean-container-package} reinigen
 
-Voeg in het `all/pom.xml` dialoogvenster de `maven-clean-plugin` plug-in toe waarmee de doelmap wordt gewist voordat een Maven-versie wordt gemaakt.
+Voeg in `all/pom.xml` de `maven-clean-plugin` plug-in toe waarmee de doelmap wordt gewist voordat een Maven-versie wordt gemaakt.
 
 ```xml
 <plugins>
