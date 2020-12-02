@@ -3,9 +3,9 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2154'
 ht-degree: 38%
 
 ---
@@ -30,9 +30,9 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
 * Voor [!DNL Adobe Experience Manager] implementatietypen wordt aan een van de ondersteunde criteria voldaan. Zie [Verbonden elementen in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) voor meer informatie over hoe deze functionaliteit werkt in [!DNL Experience Manager] 6.5.
 
-   |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
+   |  | [!DNL Sites] als  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]als Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
+   | **[!DNL Experience Manager Assets]als[!DNL Cloud Service]** | Ondersteund | Ondersteund | Ondersteund |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] over AMS** | Ondersteund | Ondersteund | Ondersteund |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
 
