@@ -35,13 +35,13 @@ AEM Dispatcher Converter biedt de mogelijkheid om bestaande configuraties van Di
 
 ## AEM Dispatcher Converter gebruiken {#using-dispatcher-converter}
 
-* Via Adobe I/O CLI: Het wordt aanbevolen de AEM Dispatcher Converter via `aio-cli-plugin-aem-cloud-service-migration` (AEM als een Cloud Service code refactoring plugin voor de Adobe I/O CLI) te gebruiken.
+* Via Adobe I/O CLI: Het wordt aanbevolen de AEM Dispatcher Converter via `aio-cli-plugin-aem-cloud-service-migration` te gebruiken (AEM als een Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-   Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor het installeren en gebruiken van de plug-in.
+   Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor meer informatie over het installeren en gebruiken van de plug-in.
 
 * Als zelfstandig hulpprogramma: Het gereedschap AEM Dispatcher Converter kan ook worden uitgevoerd als een zelfstandig hulpprogramma.
 
-   Refer to **[Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** to learn about the usage and troubleshooting for this tool.
+   Zie **[Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** voor meer informatie over het gebruik en het oplossen van problemen voor dit hulpmiddel.
 
 >[!IMPORTANT]
 >AEM Dispatcher Converter wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
