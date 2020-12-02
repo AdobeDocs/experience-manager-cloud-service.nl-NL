@@ -14,13 +14,13 @@ ht-degree: 0%
 
 De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
 
-## Relatieve eenheden voor afbeelding met hyperlinks {#relative-units-for-image-map}
+## Relatieve eenheden voor afbeeldingskaart {#relative-units-for-image-map}
 
 In de Afbeeldingseditor blijven afbeeldingskaartgebieden behouden als absolute en relatieve eenheden. Relatieve eenheden zijn handig wanneer deze worden opgegeven als gegevenskenmerken voor het dynamisch wijzigen van de grootte van een afbeeldingskaart (ten opzichte van de afbeeldingsgrootte) aan de clientzijde in een responsieve afbeeldingscomponent.
 
-### imageMap, eigenschap {#imagemap-property}
+### imageMap-eigenschap {#imagemap-property}
 
-De coördinaten van de afbeelding met hyperlinks blijven als een `imageMap` eigenschap bij de JCR. Deze heeft de volgende indeling.
+De coördinaten van de afbeeldingskaart blijven bij de JCR aanwezig als een `imageMap`-eigenschap van de Afbeeldingseditor. Deze heeft de volgende indeling.
 
 In de eigenschap worden kaartgebieden als volgt opgeslagen:
 
@@ -41,17 +41,17 @@ SVG (Scalable Vector Graphics) wordt ondersteund door de Afbeeldingseditor.
 
 * Het slepen en neerzetten van een SVG-element van DAM en het uploaden van een SVG-bestandsupload vanuit een lokaal bestandssysteem worden beide ondersteund.
 
-## Plug-ins inschakelen op basis van MIME-type {#enabling-plugins-by-mime-type}
+## Insteekmodules inschakelen op MIME-type {#enabling-plugins-by-mime-type}
 
 In bepaalde situaties moeten ontwerpacties voor bepaalde MIME-typen worden beperkt, omdat er geen ondersteuning is voor verwerking op de server. Het bewerken van SVG-afbeeldingen is bijvoorbeeld niet toegestaan.
 
-Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door het MIME-type door een `supportedMimeTypes` eigenschap in te stellen op het configuratieknooppunt van de afzonderlijke plug-in.
+Plugins in de Redacteur van het Beeld kunnen selectief door MIME type worden toegelaten door een `supportedMimeTypes` bezit op de de configuratieknoop van de individuele stop te plaatsen.
 
 ### Voorbeeld {#example}
 
 Stel bijvoorbeeld dat de mogelijkheid om uit te snijden alleen is toegestaan voor GIF-, JPEG-, PNG-, WEBP- en TIFF-afbeeldingen.
 
-De `supportedMimeTypes` eigenschap moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de insteekmodule op het `cq:editConfig` knooppunt van de afbeeldingscomponent.
+De eigenschap `supportedMimeTypes` moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de plug-in op het knooppunt `cq:editConfig` van de afbeeldingscomponent.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
