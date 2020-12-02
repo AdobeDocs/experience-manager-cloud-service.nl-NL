@@ -14,11 +14,11 @@ ht-degree: 12%
 
 De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
-* **Workflow** voor projectgoedkeuring - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, deze controleren en vervolgens goedkeuren.
-* **Starten** aanvragen - Een workflow waarvoor u een opstart wilt aanvragen.
-* **Openingspagina** aanvragen - Deze workflow vraagt om een bestemmingspagina.
-* **E-mail** aanvragen - Workflow voor het aanvragen van een e-mail.
-* **DAM maakt en vertaalt kopie en DAM maakt taalkopie** - maakt vertaalde binaire bestanden, metagegevens en tags voor elementen en mappen.
+* **Workflow**  voor projectgoedkeuring - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, deze controleren en vervolgens goedkeuren.
+* **Starten**  aanvragen - Een workflow waarin wordt gevraagd om opstart.
+* **Openingspagina**  aanvragen - Deze workflow vraagt om een bestemmingspagina.
+* **E-mail**  aanvragen - Workflow voor het aanvragen van een e-mail.
+* **Met DAM kunt u kopieën maken en vertalen en DAM Taalkopie**  maken. Hiermee maakt u vertaalde binaire bestanden, metagegevens en tags voor elementen en mappen.
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
 
@@ -35,14 +35,14 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
->&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de tegel van het **Werkschema** in Projecten. Zie Taalkopieën maken voor elementen.
+>&amp;ast; Deze werkstromen zijn niet begonnen van **Workflow** tegel in Projecten. Zie Taalkopieën maken voor elementen.
 <!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
 -->
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
-U start een workflow rechtstreeks in Projecten (behalve voor DAM Create Language Copy of DAM Create and Translate Language Copy). De informatie over om het even welke opmerkelijke taken in een project wordt vermeld in de **tegel van Taken** . Meldingen voor taken die moeten worden voltooid, verschijnen naast het gebruikerspictogram.
+U start een workflow rechtstreeks in Projecten (behalve voor DAM Create Language Copy of DAM Create and Translate Language Copy). De informatie over om het even welke opmerkelijke taken in een project zijn vermeld in **de tegel van Taken**. Meldingen voor taken die moeten worden voltooid, verschijnen naast het gebruikerspictogram.
 
 Raadpleeg de volgende secties voor meer informatie over het werken met workflows in AEM:
 
@@ -61,7 +61,7 @@ Met deze workflow kunt u een gebruiker om een manuscript vragen en het vervolgen
 
    ![Kopieerwerkstroom aanvragen](/help/sites-cloud/authoring/assets/projects-request-copy.png)
 
-1. Klik op **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken** .
+1. Klik **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken**.
 
    ![Verzoek om kopie toegevoegd](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
 
@@ -69,16 +69,16 @@ Met deze workflow kunt u een gebruiker om een manuscript vragen en het vervolgen
 
 In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een gebruiker toe, herziet, en keurt dan de inhoud goed.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. In uw Eenvoudig project, selecteer **`+`** teken in **Workflows** tegel en selecteer **Workflow van de Goedkeuring van het Project**.
 1. Ga een titel in en selecteer aan wie om het van de lijst van het Team toe te wijzen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
    ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Klik op **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken** .
+1. Klik **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken**.
 
    ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
-## Verzoek indienen om workflow te starten {#request-launch-workflow}
+## Verzoek om werkstroom starten {#request-launch-workflow}
 
 Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
@@ -87,8 +87,8 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
    ![Verzoek starten](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Klik op **Maken**. De workflow wordt gestart. De workflow wordt weergegeven in de lijst **Workflows** (klik op Ovaal **..** op de **werkstroomtegel** voor toegang tot deze lijst).
+1. Klik **Maken**. De workflow wordt gestart. De workflow wordt weergegeven in de lijst **Workflows** (klik op ellipsen **..** op de **Workflows**-tegel voor toegang tot deze lijst).
 
-## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
+## Workflow voor het kopiëren van talen maken (en vertalen) voor elementen {#create-and-translate-language-copy-workflow-for-assets}
 
 De workflows **Taalkopie maken** en **Taalkopie maken en vertalen** worden uitgebreid besproken bij het maken van taalkopieën voor assets.
