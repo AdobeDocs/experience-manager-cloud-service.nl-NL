@@ -18,13 +18,13 @@ De taken worden ook gebruikt in projecten om het niveau van volledigheid van hui
 
 ## Voortgang van project bijhouden {#tracking-project-progress}
 
-U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een project te bekijken dat door de tegel van **Taken** wordt vertegenwoordigd. De voortgang van het project kan worden bepaald door:
+U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een project te bekijken dat door de **tegel** wordt vertegenwoordigd. De voortgang van het project kan worden bepaald door:
 
 * **Taaktegel:** Een algemene vooruitgang van het project wordt getoond in Taaktegel op de pagina met projectdetails.
 
 * **Taaklijst:** Wanneer u op de Taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
 
-Zowel taken voor de lijstwerkstroom als taken die u rechtstreeks in de tegel **Taken** maakt.
+Zowel de taken van het lijstwerkschema als taken u direct in **Taken** tegel creeert.
 
 ### Taaktegel {#task-tile}
 
@@ -58,25 +58,25 @@ In Taakdetails kunt u opmerkingen bewerken of toevoegen. Bovendien zijn alle opm
 
 ![Opmerkingen over taken](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
-### Taken toevoegen {#adding-tasks}
+### Taken {#adding-tasks} toevoegen
 
 U kunt nieuwe taken aan projecten toevoegen. Deze taken verschijnen dan in de tegel van Taken en zijn beschikbaar in Berichten inbox om acties uit te voeren op.
 
 Een taak toevoegen:
 
 1. Tik of klik in het project in de tegel **Taken** op het +-pictogram. Het venster **Taak toevoegen** wordt geopend.
-1. Voer informatie in over de taak. De titel van de taak en de groep waaraan deze is toegewezen, zijn verplicht. Aanvullende informatie zoals het inhoudspad, de beschrijving, de taakprioriteit en de vervaldatum zijn optioneel. Daarnaast kunt u het tabblad **Geavanceerd** selecteren en de naam van de taak invoeren. Hiermee geeft u de URL een naam.
+1. Voer informatie in over de taak. De titel van de taak en de groep waaraan deze is toegewezen, zijn verplicht. Aanvullende informatie zoals het inhoudspad, de beschrijving, de taakprioriteit en de vervaldatum zijn optioneel. Daarnaast kunt u het tabblad **Geavanceerd** selecteren om de naam van de taak in te voeren. Dit wordt gebruikt om de URL een naam te geven.
 
    ![Een taak toevoegen](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tik/klik op **Maken**.
+1. Tik/klik **Maken**.
 
-## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
+## Werken met taken in het Postvak IN {#working-with-tasks-in-the-inbox}
 
 Een andere manier om tot taken toegang te hebben is van Inbox. Vanuit het Postvak IN kunt u de inhoud openen om de vereiste wijzigingen te implementeren. Als u klaar bent, stelt u de taakstatus in op Voltooid. De taken verschijnen ook in uw inbox wanneer zij aan een gebruikersgroep worden toegewezen die u tot behoort. In dat geval kan elk lid van de groep het werk uitvoeren en de taak voltooien.
 
 ![Taken in het Postvak IN](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Als u een taak wilt voltooien, selecteert u de taak en klikt u op **Voltooien**. Voeg informatie aan de taak toe en klik dan **Gedaan**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie.
+Als u een taak wilt voltooien, selecteert u de taak en klikt u op **Voltooien**. Voeg informatie aan de taak toe en klik dan **Done**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie.
 
 ![Taakmeldingen](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
