@@ -24,14 +24,14 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor AEM Sites in A
 
 ### Wat is er nieuw?{#whats-new-2020.6.0}
 
-Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
+Release 2.9.0 van de [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
-* Integratie tussen de Gegevenslaag [van de Cliënt van](https://github.com/adobe/adobe-client-data-layer) Adobe en de Componenten van de Kern
+* Integratie tussen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) en de Core Components
 * Configureerbare HTML-id-kenmerken voor alle componenten
 * Een nieuwe component ProgressBar
 * Veel opgeloste problemen
 
-### Bug Fixes {#sites-bug-fixes}
+### Opgeloste problemen {#sites-bug-fixes}
 
 * Componenten in de lay-outcontainer zijn niet zichtbaar wanneer de container Layout is gekopieerd en opnieuw op een pagina wordt geplakt.
 
@@ -41,15 +41,15 @@ Release 2.9.0 van de [kerncomponenten](https://docs.adobe.com/content/help/en/ex
 
 ### Toegankelijkheid {#accessibility}
 
-* De commentaarrol en de commentaarstatus zijn nu mogelijk voor de items in het menu Pagina **** maken terwijl u in de bladermodus navigeert met de pijl-omlaag.
+* De commentaarrol en de staat zijn nu mogelijk voor de punten van de Metetijd in **Create Pagina** dialoog terwijl het navigeren in de het doorbladeren wijze gebruikend benedenpijl.
 
 * Er is een koppeling in de navigatie toegevoegd waarmee gebruikers de hoofdinhoud kunnen overslaan.
 
 * Verbeteringen voor schermlezers.
 
-## Nieuwe functies in stichtingen in AEM als Cloud Service {#foundations}
+## Nieuw in Stichting in AEM als Cloud Service {#foundations}
 
-AEM project bouwt tijden zal verbeteren door alle verwijzingen in pom.xml van het AEM project aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM de bouwtijden van het project zullen verbeteren door alle verwijzingen in pom.xml van het AEM project aan de verre bewaarplaats `https://downloads.experiencecloud.adobe.com/content/maven/public` te verwijderen.
 
 De AEM als Cloud Service SDK API Jar, die eerder op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats voor artefacten van Maven.
 
@@ -59,29 +59,29 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 ### Wat is er nieuw?{#what-is-new-cloud-manager}
 
-* Een gebruiker met de rol *Zakelijke eigenaar* in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de programmakaart) of van binnen het programma.
+* Een gebruiker met de rol *Zakelijke eigenaar* in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de Programmakaart) of van binnen het programma.
 
-   Raadpleeg [Sandbox-programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) verwijderen voor meer informatie.
+   Raadpleeg [Een Sandbox-programma verwijderen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
 
-* Een gebruiker van het Sandbox- programma in de rol van *bedrijfseigenaar* of *plaatsingsmanager* in de Manager van de Wolk kan nu hun Productie en milieu van het Stadium schrappen die via de UI van de Manager van de Wolk wordt geplaatst. De verwijderingsoptie is nu zowel beschikbaar op de kaart Milieu op de pagina Overzicht **van** Programma&#39;s als op de pagina **Milieu** . Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+* Een gebruiker van het Sandbox- Programma in *Bedrijfseigenaar* of *De rol van Manager van de Plaatsing* in de Manager van de Wolk kan nu hun Productie en milieu van het Stadium schrappen die via de UI van de Manager van de Wolk wordt geplaatst. De schrappingsoptie is nu beschikbaar bij zowel de kaart van het Milieu op **het Overzicht van Programma&#39;s** pagina als **Milieu** pagina. Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
-   Raadpleeg [Sandbox-programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) verwijderen voor meer informatie.
+   Raadpleeg [Een Sandbox-programma verwijderen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
-* Op de pagina **Programmaoverzicht** staan codetekens waarmee u de gebruiker informeert en informeert over de standaardnavigatie in Cloud Manager om deze te starten.
+* De markeringen van de coach op **Programma Overzicht** pagina om de gebruiker over basisnavigatie binnen de Manager van de Wolk te informeren en te instrueren om hen te krijgen begonnen.
 
-* Er is nu een pagina **LEREN** beschikbaar in Cloud Manager, die toegankelijk is via de bovenste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die zijn toegewezen in Cloud Manager.
+* De pagina **LEARN** is nu beschikbaar in Cloud Manager, toegankelijk via de bovenste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die zijn toegewezen in Cloud Manager.
 
-* Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** -badge die wordt weergegeven op de programmacode op de landingspagina en naast de programmanaam op de pagina **Program Overview** .
+* Sandboxprogramma&#39;s worden nu geïdentificeerd door middel van een **Sandbox**-badge die wordt weergegeven op de programmakaart op de landingspagina en naast de programmanaam op de pagina **Program Overview**.
 
-* Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd. Een knop Toegang **** beheren is nu beschikbaar op de bestemmingspagina naast de knop Programma **** toevoegen.
+* Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd. De knop **Toegang beheren** is nu beschikbaar op de bestemmingspagina naast de knop **Programma toevoegen**.
 
-   Raadpleeg [SysAdmin-taken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie.
+   Verwijs naar [Taken SysAdmin](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 
-   Zie Toegang [beheren tot instantie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) Auteur voor meer informatie.
+   Raadpleeg [Toegang tot instantie Auteur beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer informatie.
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
@@ -89,19 +89,19 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * De stap Build controleert nu of de build ten minste één inhoudspakket heeft geproduceerd.
 
-### Bug Fixes {#bug-fixes-cm}
+### Opgeloste problemen {#bug-fixes-cm}
 
-* In bepaalde situaties zijn de pictogrammen in het dialoogvenster **Programma** maken onjuist uitgelijnd.
+* In bepaalde situaties zijn de pictogrammen in het dialoogvenster **Programma maken** onjuist uitgelijnd.
 
-* De AEM release-id wordt niet consistent weergegeven op de pagina Overzicht **van** programma&#39;s.
+* De AEM release-id is niet consistent weergegeven op de pagina **Programs Overview**.
 
-* Wanneer het vormen van de productiepijpleiding, was de **Geplande optie van de Plaatsing** niet zichtbaar voor sommige klanten.
+* Bij het configureren van de productiepijplijn was de optie **Geplande implementatie** niet zichtbaar voor sommige klanten.
 
 ### Bekende problemen {#known-issues-cm}
 
 * De omgevingen in een Sandbox-programma worden gehiberd wanneer gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Deze status wordt niet waargenomen in Cloud Manager. De status kan echter worden waargenomen via de Developer Console. Dit probleem wordt in een komende release opgelost.
 
-* De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager geeft de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer. Om dit aan te pakken, één keer in de Console van de Ontwikkelaar, voeg het patroon `#release-cm-p1234-e5678` aan het eind van url toe, waar *1234* identiteitskaart van het Programma en *5678* milieu identiteitskaart is Dit probleem wordt in een komende release opgelost.
+* De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager geeft de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer. Om dit aan te pakken, eens bij de Console van de Ontwikkelaar, voeg het patroon `#release-cm-p1234-e5678` aan het eind van url toe, waar *1234* de identiteitskaart van het Programma en *5678* milieu identiteitskaart is Dit probleem wordt in een komende release opgelost.
 
 ## Nieuwe functies in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
@@ -110,17 +110,17 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 Met verbeterde slimme tags kunnen organisaties slimme-tagmodellen trainen om images te herkennen op basis van klantspecifieke bedrijfstags, naast algemene slimme tags.
 
 Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. De ervaring is nu intuïtiever.
-Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [hoe u slimme tags aan elementen](/help/assets/smart-tags.md) kunt toevoegen en slimme tags kunt [configureren](/help/assets/smart-tags-configuration.md).
+Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [Slimme tags toevoegen aan elementen](/help/assets/smart-tags.md) en [Slimme tags configureren](/help/assets/smart-tags-configuration.md).
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met toevoeging van [!DNL Dynamic Media], kunt u 3D ervaringen vormen en leveren gebruikend agnostische URLs of kijkers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met de toevoeging van [!DNL Dynamic Media] kunt u 3D-ervaringen configureren en leveren met behulp van agnostische URL&#39;s of viewers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden via [!DNL Dynamic Media] (AR/VR) te leveren. Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe Asset Link-ondersteuning voor Adobe XD**
 
-Met de nieuwste release [!DNL Experience Manager Assets] wordt een nieuwe [!DNL Adobe Asset Link] plug-in ondersteund die wordt uitgebracht met [!DNL Adobe XD] versie 29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen en kunnen ze deze gebruiken vanuit [!DNL Experience Manager] hun ontwerpen, zonder dat ze de [!DNL Adobe XD] toepassing hoeven te verlaten. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Met de nieuwste release ondersteunt [!DNL Experience Manager Assets] een nieuwe [!DNL Adobe Asset Link]-plug-in die wordt losgelaten met [!DNL Adobe XD] v29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen van [!DNL Experience Manager] in hun ontwerpen en kunnen ze deze gebruiken zonder dat ze [!DNL Adobe XD]-toepassing hoeven te verlaten. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
-Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] een groot aantal Creative Cloud-bureaubladtoepassingen, zoals [!DNL Adobe Asset Link] , [!DNL Adobe XD], [!DNL Photoshop]en [!DNL Illustrator][!DNL InDesign].
+Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] via [!DNL Adobe Asset Link] in een aantal Creative Cloud-bureaubladtoepassingen, zoals [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] en [!DNL InDesign].
 
 **Verbeteringen voor toegankelijkheid**
 
@@ -128,35 +128,35 @@ Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middele
 
 De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegankelijk met een toetsenbord en hebben een beter contrast. Hieronder vindt u een gedetailleerde lijst met verbeteringen:
 
-* De [!UICONTROL Options], [!UICONTROL Scope]en [!UICONTROL Workflows] voortgangsbalken op de [!UICONTROL Manage Publication] pagina worden niet door de schermlezer gelezen als voortgangsbalk. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
+* De voortgangsbalken [!UICONTROL Options], [!UICONTROL Scope] en [!UICONTROL Workflows] op de pagina [!UICONTROL Manage Publication] worden niet door de schermlezer gelezen als voortgangsbalk. In plaats daarvan zien schermlezers deze statusindicatoren als een tablijst. (CQ-4273/015)
 
-* Wanneer gebruikers tags aan [!UICONTROL Properties] pagina&#39;s van een element toevoegen, bladeren ze door een boomstructuur met codes. De structuur van de structuur is niet toegankelijk omdat gebruikers van schermlezers tijdens het navigeren niets horen. (CQ-4272964)
+* Wanneer gebruikers tags toevoegen op de pagina [!UICONTROL Properties] van een element, navigeren ze door een boomstructuur met codes. De structuur van de structuur is niet toegankelijk omdat gebruikers van schermlezers tijdens het navigeren niets horen. (CQ-4272964)
 
 * In het dialoogvenster voor het delen van koppelingen navigeert de schermlezer in de bladermodus,
 
    * Hiermee worden de tabelgegevens meteen vermeld wanneer het dialoogvenster wordt geladen.
    * Kan niet naar alle vermelde automatische suggesties navigeren.
-   * De weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak worden niet van commentaar voorzien. (CQ-4294232)
+   * De weergegeven automatische suggesties voor het invoervak [!UICONTROL Add Email Address/Search] worden niet van commentaar voorzien. (CQ-4294232)
 
-* De [!UICONTROL Metadata Schema Editor] pagina en de bijbehorende elementen zijn nu toegankelijk met een toetsenbord en zijn schermlezervriendelijk. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
+* De pagina [!UICONTROL Metadata Schema Editor] en de bijbehorende elementen zijn nu toegankelijk met een toetsenbord en zijn schermlezervriendelijk. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
 
 * In de gebruikersinterface Middelen zijn de weergave-instellingen niet toegankelijk via het toetsenbord. (CQ-4289038)
 
 * De lichtsterkteverhouding voor geelgekleurde classificatiepictogrammen is minder dan 3:1. Het is niet nuttig voor gebruikers met een beperkt gezichtsvermogen en zonder kleurperceptie. De classificatiesterren worden weergegeven op het tabblad in de asset- of kaartweergave
 
-* De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenbeoordelingspictogrammen in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] [!UICONTROL Properties] tabblad in een element en in de kaartweergave wordt bijvoorbeeld gewijzigd voor het juiste contrast. (CQ-4295/106)
+* De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. Zo wordt de kleur van sterrenclassificatiepictogrammen in de sectie [!UICONTROL Rating] van het tabblad [!UICONTROL Advanced] in de [!UICONTROL Properties] van een element en in de kaartweergave gewijzigd voor het juiste contrast. (CQ-4295/106)
 
 * De schermlezers kunnen nu de items in het pop-upmenu met keuzelijsten met invoervak (in verschillende velden op verschillende pagina&#39;s) lezen als een lijst met opties. (CQ-4294/017)
 
-* Als u een workflow op een element wilt toepassen, [!UICONTROL Timeline] kunt u de chevron-pijl in het element openen met een toetsenbord. (CQ-4289268)
+* Als u een workflow wilt toepassen op een element, kunt u de chevron-pijl in [!UICONTROL Timeline] openen met een toetsenbord. (CQ-4289268)
 
-* Gebruikers kunnen geselecteerde tags in het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element verwijderen met behulp van `x` symbolen. De schermlezers geven nu het doel en het aantal geselecteerde labels aan (CQ-4273033).
+* Gebruikers kunnen in het veld [!UICONTROL Tags] op het tabblad [!UICONTROL Basic] van de pagina [!UICONTROL Properties] van een element geselecteerde tags verwijderen met behulp van het `x`-symbool. De schermlezers geven nu het doel en het aantal geselecteerde labels aan (CQ-4273033).
 
-* De formuliervelden alleen-lezen kunnen worden gebruikt met een toetsenbord. De uitgeschakelde velden op het [!UICONTROL Basic] tabblad op de [!UICONTROL Properties] pagina van een element. (CQ-4273031)
+* De formuliervelden alleen-lezen kunnen worden gebruikt met een toetsenbord. De uitgeschakelde velden op het tabblad [!UICONTROL Basic] op de pagina [!UICONTROL Properties] van een element. (CQ-4273031)
 
 * Open nu met een toetsenbord de opties voor het filteren van elementen in de linkerzijbalk. (CQ-4273/018)
 
-* De schermlezer kondigt het doel aan van verschillende keuzelijstelementen, zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het [!UICONTROL Basic] tabblad van de [!UICONTROL Properties] pagina van een element. (CQ-4273/016)
+* De schermlezer kondigt het doel aan van verschillende combostelementen zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het tabblad [!UICONTROL Basic] van de pagina [!UICONTROL Properties] van een element. (CQ-4273/016)
 
 * De volumeregelaars voor video&#39;s zijn toegankelijk via een toetsenbord. (CQ-4272696)
 
@@ -180,9 +180,9 @@ De release biedt de volgende andere verbeteringen:
 * Sorteren op &#39;Gemaakt&#39; (Datum) wanneer elementen worden weergegeven in de lijstweergave in de interface Middelen en in de zoekresultaten. Zie [zoekmiddelen](/help/assets/search-assets.md#sort).
 * Ondersteuning voor het converteren van EPS-bestanden naar afbeeldingen met behulp van de asset microservices.
 
-### Bug Fixes {#assets-bug-fixes}
+### Opgeloste problemen {#assets-bug-fixes}
 
-Naast de bovengenoemde nieuwe eigenschappen, verstrekt de huidige versie de volgende insectenmoeilijke situaties die op klant worden gebaseerd terugkoppelt voor [!DNL Assets].
+Naast de bovenstaande nieuwe functies biedt de huidige release de volgende foutoplossingen op basis van feedback van klanten voor [!DNL Assets].
 
 * Voor MP3-muziekbestanden werkt de afspeelknop die op de miniatuur in de DAM-voorvertoning wordt weergegeven, niet. (CQ-4294731)
 * Als u de aanwijzer op de kaartweergave plaatst, schuift het scherm als gevolg van (automatische) focus op de snelle acties die beschikbaar zijn op de kaart. (GRANITE-26895)
