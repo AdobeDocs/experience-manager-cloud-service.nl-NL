@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# Een SSL-certificaat bijwerken en vervangen weergeven  {#view-update-replace-ssl-certificate}
+# Bijwerken en vervangen van een SSL-certificaat bekijken {#view-update-replace-ssl-certificate}
 
-## Een SSL-certificaat weergeven en bijwerken {#view-update}
+## Een SSL-certificaat {#view-update} weergeven en bijwerken
 
 1. Met het menu Beeld en bijwerken kunt u gewoon de SSL-certificaatdetails weergeven.
 1. U kunt ook de naam wijzigen die is gebruikt om naar een certificaat te verwijzen vanuit dit scherm. Opmerking: alleen gebruikers met de juiste machtigingen kunnen updates uitvoeren.
 1. Een bestaand certificaat verloopt bijna. De gebruiker heeft het certificaat met de certificaatverkoper vernieuwd en wenst bestaande te vervangen die op het punt staat te verlopen. Opmerking: alleen gebruikers met de juiste machtigingen kunnen updates uitvoeren.
 
-## Een SSL-certificaat vervangen {#replace-ssl-certificate}
+## SSL-certificaten vervangen {#replace-ssl-certificate}
 
 >[!NOTE]
 >Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat in Cloud Manager bij te werken of te vervangen.
