@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
@@ -178,10 +178,6 @@ Voer de volgende stappen uit om het gereedschap te configureren:
    * [!UICONTROL Stop]: Beëindig een actieve configuratie.
    * [!UICONTROL Job Status]: Bekijk de status van de configuratie wanneer deze wordt gebruikt in een actieve importtaak of wordt gebruikt voor een voltooide taak.
    * [!UICONTROL View Assets]: Geef de doelmap weer als deze bestaat.
-
->[!NOTE]
->
->Bulkupload als onderdeel van de migratie van inhoud van andere systemen bij het instellen en implementeren naar [!DNL Experience Manager] vereist zorgvuldige planning, overweging en keuze van gereedschappen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor hulp bij benaderingen van contentmigratie.
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
