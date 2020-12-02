@@ -18,7 +18,7 @@ Er zijn drie brede testcategorieën die worden ondersteund door Cloud Manager fo
 
    Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. De code-Kwaliteit pijpleiding wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
 
-   De kwaliteitsregels [voor](/help/implementing/cloud-manager/custom-code-quality-rules.md) aangepaste code die door Cloud Manager worden uitgevoerd, worden gemaakt op basis van de beste werkwijzen van AEM Engineering.
+   De [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) die door Cloud Manager worden uitgevoerd, worden gemaakt op basis van de beste werkwijzen van AEM Engineering.
 
 1. [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
 
