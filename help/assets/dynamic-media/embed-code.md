@@ -14,42 +14,42 @@ ht-degree: 21%
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit URLs slechts in als u _geen_ AEM als WCM gebruikt. Als u AEM gebruikt als uw WCM, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM gebruikt als uw WCM, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
-See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+Zie [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
 
-See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsive-site.md)
 
 >[!NOTE]
 >
 >De insluitcode kan pas worden gekopieerd nadat u het geselecteerde element hebt gepubliceerd. Daarnaast moet u ook de voorinstelling van de viewer of de voorinstelling van de afbeelding publiceren.
 >
->Zie Elementen [](publishing-dynamicmedia-assets.md)publiceren.
+>Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 >
->Zie Voorinstellingen [voor](managing-viewer-presets.md#publishing-viewer-presets)viewers publiceren.
+>Zie [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Zie [Voorinstellingen](managing-image-presets.md#publishing-image-presets)afbeelding publiceren.
+>Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
 **Dynamische mediavideo of afbeeldingsviewer insluiten op een webpagina**
 
-1. Navigeer naar de *gepubliceerde* video of het afbeeldingselement waarvan u de insluitcode wilt kopiëren.
+1. Navigeer naar de *gepubliceerde* video of afbeeldingselement waarvan u de insluitcode wilt kopiëren.
 
    Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie Elementen [publiceren.](publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren.](publishing-dynamicmedia-assets.md)
 
-   Zie Voorinstellingen [voor](managing-viewer-presets.md#publishing-viewer-presets)viewers publiceren.
+   Zie [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Zie [Voorinstellingen](managing-image-presets.md#publishing-image-presets)afbeelding publiceren.
+   Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-1. Selecteer het vervolgkeuzemenu in het linkerspoor en tik op **[!UICONTROL Viewers]**.
+1. Selecteer in de linkertrack het vervolgkeuzemenu en tik op **[!UICONTROL Viewers]**.
 1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
 1. Tik op **[!UICONTROL Embed]**.
-1. Kopieer in het **[!UICONTROL Embed Code]** dialoogvenster de gehele code naar het klembord en tik op **[!UICONTROL Close]**.
+1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
-## Het gebruiken van HTTP/2 om uw Dynamische activa van Media te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## Het gebruiken van HTTP/2 om uw Dynamische activa van Media {#using-http-to-deliver-your-dynamic-media-assets} te leveren
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details bij het worden begonnen met het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
