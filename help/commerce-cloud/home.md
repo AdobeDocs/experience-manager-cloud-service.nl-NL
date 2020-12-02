@@ -10,11 +10,11 @@ ht-degree: 82%
 ---
 
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+# Handel AEM als Cloud Service {#commerce-guide}
 
 Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel als Cloud Service.
 
-## Belangrijkste handelsartikelen {#key-articles}
+## Belangrijke handelsartikelen {#key-articles}
 
 * [Invoering van AEM Handel als Cloud Service](overview.md)
 * [Architectuur van AEM Handel als Cloud Service](architecture/magento.md)
