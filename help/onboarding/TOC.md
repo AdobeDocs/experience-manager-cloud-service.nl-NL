@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: f97744f5fb5dec7e13f8600102b7f5aafe7dc343
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 75%
+source-wordcount: '255'
+ht-degree: 72%
 
 ---
 
@@ -61,6 +61,8 @@ ht-degree: 75%
 + Toegankelijkheid {#accessibility}
    + [AEM as a Cloud Service en Web Accessibility Guidelines](accessibility/web-accessibility.md)
    + [Snelgids voor WCAG 2.1](accessibility/quick-guide-wcag.md)
++ [Migratiemethode] {#migration-methodology}
+   + [Migratie naar Adobe Experience Manager als Cloud Service](migration-methodology/getting-started.md)
 + Best practices voor {#best-practices}
    + [SEO- en URL-beheer](best-practices/seo-and-url-management.md)
 + [Overzicht van de toolconsoles](tools-consoles.md)
