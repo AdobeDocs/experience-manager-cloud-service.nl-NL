@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Git integreren met Adobe Cloud Manager {#git-integration}
 
-Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt om code te implementeren via de CI/CD-leidingen van Cloud Manager. Klanten kunnen de git-opslagruimte van Cloud Manager uit de doos gebruiken. Klanten hebben ook de mogelijkheid om een git-opslagplaats op locatie of door de **klant beheerd** te integreren met Cloud Manager.
+Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt om code te implementeren via de CI/CD-leidingen van Cloud Manager. Klanten kunnen de git-opslagruimte van Cloud Manager uit de doos gebruiken. Klanten hebben ook de mogelijkheid om een on-premise of **door de klant beheerde** git-opslagplaats te integreren met Cloud Manager.
 
 ## Overzicht van GIT-integratie {#git-integration-overview}
 
@@ -26,7 +26,7 @@ In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekkin
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [aanvullende bronnen hieronder](#additional-resources) voor meer informatie over git.
+De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [aanvullende bronnen onder](#additional-resources) voor meer informatie over git.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Volg de onderstaande video om de basisvertakkingsstrategieën te leren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
-## Ontwikkeling van de functiescherm {#feature-development}
+## Ontwikkeling van filialen met functies {#feature-development}
 
 Gebruik een eigenschapvertakking om codeveranderingen in een klant-beheerde git bewaarplaats te isoleren en met de git bewaarplaats van de Manager van de Wolk te synchroniseren om een niet productiepijplijn voor codekwaliteit en bevestigingstests te gebruiken.
 
