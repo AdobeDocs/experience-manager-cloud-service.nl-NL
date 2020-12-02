@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1874'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets], zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
 
-Er is een aantal uploadmethoden beschikbaar. Naast de meest gebruikte browser uploadt, bestaan er andere methodes om activa aan de opslagplaats van de Experience Manager toe te voegen, met inbegrip van Desktopcliënten, zoals de Desktop app van de Verbinding van de Activa van de Adobe of van de Experience Manager, upload en opname manuscripten die de klanten, en geautomatiseerde opgenomen integratie toevoegen als Experience Manager uitbreidingen.
+Er is een aantal uploadmethoden beschikbaar. Naast de meest gebruikte browser upload bestaan er andere methoden om elementen aan de [!DNL Experience Manager]-opslagplaats toe te voegen, zoals bureaubladclients, zoals Adobe Asset Link of [!DNL Experience Manager] desktop app, upload- en innamescripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager]-extensies worden toegevoegd.
 
-We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen naar artikelen verschaffen waarin technische aspecten van het uploaden en opnemen van middelen worden beschreven met behulp van Experience Manager-API&#39;s en SDK&#39;s.
+We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen verschaffen naar artikelen die technische aspecten van het uploaden en opnemen van middelen beschrijven met behulp van [!DNL Experience Manager] API&#39;s en SDK&#39;s.
 
-Hoewel u elk binair bestand in Experience Manager kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
+Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
 
 Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [Middelen verwerken bij uploaden](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager als [!DNL Cloud Service] gebruikt een nieuwe manier om elementen te uploaden - directe binaire upload. De functie wordt standaard ondersteund door de mogelijkheden en clients van de buitenverpakking, zoals de gebruikersinterface van de Experience Manager, de Adobe Asset Link, de bureaubladtoepassing van de Experience Manager en dus transparant voor de eindgebruikers.
+>[!DNL Experience Manager] als  [!DNL Cloud Service] hefboom een nieuwe manier om activa te uploaden - directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals [!DNL Experience Manager]-gebruikersinterface, [!DNL Adobe Asset Link]-, [!DNL Experience Manager]-bureaubladtoepassing en dus transparant voor de eindgebruikers.
 >
 >Upload code die door klanten technische teams wordt aangepast of uitgebreid moet de nieuwe upload APIs en protocollen gebruiken.
 
@@ -35,7 +35,7 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 | [Gebruikersinterface middelenconsole](#upload-assets) | Soms uploaden, indrukken en slepen, zoeken naar uploaden. Gebruik deze optie niet om een groot aantal elementen te uploaden. | Alle gebruikers |
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheid asset-opname, maar voor migratie. | Beheerder, Marketer |
-| [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
 | [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
@@ -144,7 +144,7 @@ De grote leverancier van bedrijfsmiddelen kan duizenden bedrijfsmiddelen effici�
 Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Zie ook [use cases and methods](#upload-methods-comparison)
 
 * [API&#39;s voor middelenupload](developer-reference-material-apis.md#asset-upload-technical): Gebruik een aangepast uploadscript of een aangepast gereedschap waarmee API&#39;s kunnen worden gebruikt om aanvullende verwerking van elementen toe te voegen (bijvoorbeeld metagegevens vertalen of bestanden hernoemen), indien nodig.
-* [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) Experience Manager: Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
+* [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
 * [Gereedschap](#asset-bulk-ingestor) voor bulkinvoer: Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij de implementatie  [!DNL Experience Manager].
 
 ### Gereedschap {#asset-bulk-ingestor} voor het bulkmiddel
@@ -181,14 +181,14 @@ Voer de volgende stappen uit om het gereedschap te configureren:
 
 >[!NOTE]
 >
->Bulkupload als onderdeel van de migratie van inhoud van andere systemen wanneer het opzetten en het opstellen aan Experience Manager vereist zorgvuldige planning, overweging, en keus van hulpmiddelen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor hulp bij benaderingen van contentmigratie.
+>Bulkupload als onderdeel van de migratie van inhoud van andere systemen bij het instellen en implementeren naar [!DNL Experience Manager] vereist zorgvuldige planning, overweging en keuze van gereedschappen. Zie de [implementatiegids](/help/implementing/deploying/overview.md) voor hulp bij benaderingen van contentmigratie.
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
-Naast de gebruikersinterface van de webbrowser ondersteunt Experience Manager andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
+Naast de gebruikersinterface van de webbrowser biedt [!DNL Experience Manager] ondersteuning voor andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
-* [Adobe Asset ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) Link biedt toegang tot middelen van  [!DNL Experience Manager] Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface Adobe Asset Link vanuit deze bureaubladtoepassingen uploaden naar [!DNL Experience Manager].
-* [Experience Manager desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) past het werken met middelen op het bureaublad toe, onafhankelijk van het bestandstype of de oorspronkelijke toepassing die ze verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot middelen van  [!DNL Experience Manager] Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface Adobe Asset Link vanuit deze bureaubladtoepassingen uploaden naar [!DNL Experience Manager].
+* [[!DNL Experience Manager] desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) past het werken met middelen op desktop toe, onafhankelijk van het bestandstype of de oorspronkelijke toepassing die ze verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Elementen verwerken bij het uploaden {#process-when-uploaded}
 
@@ -218,8 +218,8 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Over Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Link-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [Info [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technische referentie voor het uploaden van bedrijfsmiddelen](developer-reference-material-apis.md#asset-upload-technical)
 
