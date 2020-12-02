@@ -1,11 +1,11 @@
 ---
 title: Digital Rights Management in [!DNL Assets]
-description: Leer hoe u de verloopstatussen van elementen en informatie voor gelicentieerde middelen in  [!DNL Experience Manager] als Cloud Service beheert.
+description: Leer hoe u de verloopstatus van elementen en informatie voor gelicentieerde elementen beheert in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1274'
 ht-degree: 7%
 
 ---
