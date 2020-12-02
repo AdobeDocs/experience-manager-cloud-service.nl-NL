@@ -12,19 +12,19 @@ ht-degree: 1%
 
 # OSGi configureren voor AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
+[](https://www.osgi.org/) OSGiis een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
-OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare en samenwerkende componenten worden gebouwd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Zie de [OSGi-specificatie](https://www.osgi.org/Specifications/HomePage)voor meer informatie.
+OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare en samenwerkende componenten worden gebouwd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Voor meer informatie, zie [OSGi specificatie](https://www.osgi.org/Specifications/HomePage).
 
 U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers beheren die deel van een AEM codeproject uitmaken.
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
-De veranderingen van de configuratie worden bepaald in de de codepakketten van het AEM Project (`ui.apps`) als configuratiedossiers (`.cfg.json`) onder runtime specifieke config omslagen:
+De veranderingen van de configuratie worden bepaald in de codepakketten van het AEM Project (`ui.apps`) als configuratiedossiers (`.cfg.json`) onder runtime specifieke config omslagen:
 
 `/apps/example/config.<runmode>`
 
-De indeling van OSGi-configuratiebestanden is gebaseerd op JSON met behulp van de `.cfg.json` indeling die is gedefinieerd in het Apache Sling-project.
+De indeling van OSGi-configuratiebestanden is gebaseerd op JSON met de indeling `.cfg.json` die is gedefinieerd door het Apache Sling-project.
 
 OSGi-configuraties richten OSGi-componenten via hun Persistent Identiteit (PID), die standaard de Java-klassenaam van de OSGi-component krijgt. Bijvoorbeeld, om configuratie OSGi voor een dienst te verstrekken OSGi die door wordt uitgevoerd:
 
@@ -40,7 +40,7 @@ volgend op de configuratie-indeling cfg.json OSGi.
 >
 >Eerdere versies van AEM ondersteunde OSGi-configuratiebestanden die verschillende bestandsindelingen gebruiken, zoals .cfg., .config en als XML sling:OsgiConfig-brondefinities. Deze formaten worden vervangen door het cfg.json OSGi configuratieformaat.
 
-## Resolutie van de uitvoermodus {#runmode-resolution}
+## Resolutie van runmode {#runmode-resolution}
 
 De specifieke configuraties OSGi kunnen aan specifieke AEM instanties worden gericht door runmodes te gebruiken. Om runmode te gebruiken, creeer config omslagen onder `/apps/example` (waar het voorbeeld uw projectnaam is), in het formaat:
 
@@ -52,7 +52,7 @@ Als AEM bijvoorbeeld de auteur en dev van de runmodi gebruikt, worden configurat
 
 Als meerdere configuraties voor dezelfde PID van toepassing zijn, wordt de configuratie met het hoogste aantal overeenkomende uitvoeringsmodi toegepast.
 
-De granulariteit van deze regel staat op een PID-niveau. Dit betekent dat u bepaalde eigenschappen voor dezelfde PID niet kunt definiëren in `/apps/example/config.author/` `/apps/example/config.author.dev/` en meer specifieke eigenschappen voor dezelfde PID.  De configuratie met het hoogste aantal passende looppaswijzen zal voor volledige PID efficiënt zijn.
+De granulariteit van deze regel staat op een PID-niveau. Dit betekent dat u bepaalde eigenschappen voor dezelfde PID niet kunt definiëren in `/apps/example/config.author/` en meer specifieke eigenschappen in `/apps/example/config.author.dev/` voor dezelfde PID.  De configuratie met het hoogste aantal passende looppaswijzen zal voor volledige PID efficiënt zijn.
 
 Wanneer het ontwikkelen plaatselijk, kan een loopmode startparameter worden overgegaan om te dicteren welke loopmode configuratie OSGI zal worden gebruikt.
 
@@ -76,7 +76,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met AEM als Cloud Service kunn
    } 
    ```
 
-1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele `dev` runmode in AEM als Cloud Service is). Bijvoorbeeld:
+1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele  `dev` runmode in AEM als Cloud Service is). Bijvoorbeeld:
 
    ```json
    {
@@ -104,7 +104,7 @@ De milieu-specifieke configuraties breiden de traditionele, statisch-bepaalde co
 
 De volgende richtlijnen richten wanneer om niet geheime en geheime milieu-specifieke configuraties te gebruiken:
 
-### Wanneer moet inline configuratiewaarden worden gebruikt? {#when-to-use-inline-configuration-values}
+### Wanneer moet inline configuratiewaarden {#when-to-use-inline-configuration-values} worden gebruikt
 
 Inline-configuratiewaarden worden als de standaardbenadering beschouwd en moeten waar mogelijk worden gebruikt. Inline configuraties bieden de voordelen van:
 
@@ -114,14 +114,14 @@ Inline-configuratiewaarden worden als de standaardbenadering beschouwd en moeten
 
 Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waarden, om het even welk slechts geheim of milieu-specifieke configuraties selecteren indien vereist voor het gebruiksgeval.
 
-### Wanneer te gebruiken de niet geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values}
+### Wanneer om niet-geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values} te gebruiken
 
-Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en om het even welke AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service. Gebruik geen niet-geheime omgevingspecifieke configuraties voor AEM als werkgebied of productieomgeving voor Cloud Servicen.
+Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden per ontwikkelomgeving verschillen. Dit omvat lokale ontwikkelingsinstanties en om het even welke AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service. Gebruik geen niet-geheime omgevingspecifieke configuraties voor AEM als werkgebied of productieomgeving voor Cloud Servicen.
 
 * Gebruik alleen niet-geheime omgevings-specifieke configuraties voor configuratiewaarden die verschillen tussen ontwikkelomgevingen, inclusief lokale ontwikkelingsinstanties.
 * In plaats daarvan, gebruik de standaard gealigneerde waarden in de configuraties OSGi voor Stadium en Productie niet-geheime waarden.  In verband hiermee wordt het niet aanbevolen om omgevingspecifieke configuraties te gebruiken om het aanbrengen van configuratiewijzigingen tijdens runtime in werkgebied- en productieomgevingen te vergemakkelijken. deze wijzigingen moeten worden ingevoerd via het beheer van de broncode .
 
-### Wanneer om geheime milieu-specifieke configuratiewaarden te gebruiken {#when-to-use-secret-environment-specific-configuration-values}
+### Wanneer om geheime milieu-specifieke configuratiewaarden {#when-to-use-secret-environment-specific-configuration-values} te gebruiken
 
 AEM als Cloud Service vereist het gebruik van milieu-specifieke configuraties (`$[secret:SECRET_VAR_NAME]`) voor om het even welke geheime OSGi configuratiewaarden, zoals wachtwoorden, privé API sleutels, of een andere waarden die niet in Git om veiligheidsredenen kunnen worden opgeslagen.
 
@@ -172,17 +172,17 @@ Er zijn twee manieren om nieuwe configuraties tot stand te brengen OSGi, zoals h
 
 De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM project worden geschreven. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
 
-1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben
-1. Maak een nieuw `<PID>.cfg.json` bestand in deze configuratiemap. PID is de Blijvende Identiteit van de component OSGi is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
+1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben
+1. In deze config omslag, creeer een nieuw `<PID>.cfg.json` dossier. PID is de Blijvende Identiteit van de component OSGi is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Merk op dat OSGi de namen van de configuratiefabrieksdossiers, de noemende overeenkomst gebruiken `<PID>-<factory-name>.cfg.json`
-1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, die het [JSON OSGi- configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)volgen.
-1. Wijzigingen opslaan in het nieuwe `.cfg.json` bestand
+Merk op dat OSGi de namen van de de configuratiefabrieksdossiers, de  `<PID>-<factory-name>.cfg.json` noemende overeenkomst gebruiken
+1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na [JSON OSGi configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Sla uw wijzigingen op in het nieuwe `.cfg.json`-bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
 
 ### OSGi-configuraties genereren met de AEM SDK QuickStart
 
-De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt componenten OSGi, en de configuraties van export OSGi als JSON. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de AEMConsole van het Web schrijft `.cfg.json` dossiers in de bewaarplaats, zodat bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
+De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt componenten OSGi, en de configuraties van export OSGi als JSON. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de AEMConsole van het Web `.cfg.json` dossiers in de bewaarplaats schrijft, zodat bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
 1. Meld u als beheerder aan bij de AEM webconsole van QuickStart Jar van de AEM SDK
 1. Navigeer naar OSGi > Configuratie
@@ -196,10 +196,10 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 1. Tikken,
 1. De configuratie OSGi in formaat JSON zal in de Serialized sectie van de Eigenschappen van de Configuratie tonen
    ![OSGi-installateursconfiguratieserver](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben.
-1. Maak een nieuw `<PID>.cfg.json` bestand in deze configuratiemap. De PID is dezelfde waarde uit stap 5.
+1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi zou moeten effect hebben.
+1. In deze config omslag, creeer een nieuw `<PID>.cfg.json` dossier. De PID is dezelfde waarde uit stap 5.
 1. Plak de Generialiseerde Eigenschappen van de Configuratie van Stap 10 in het `.cfg.json` dossier.
-1. Sla uw wijzigingen op in het nieuwe `.cfg.json` bestand.
+1. Sla uw wijzigingen op in het nieuwe `.cfg.json`-bestand.
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe.
 
 
@@ -269,18 +269,18 @@ Variabelen kunnen in de lokale omgeving worden gedefinieerd, zodat ze tijdens ru
 export ENV_VAR_NAME=my_value
 ```
 
-Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en het uitvoeren alvorens AEM te beginnen. Gereedschappen zoals [https://direnv.net/](https://direnv.net/) helpen u bij het vereenvoudigen van deze aanpak. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
+Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en het uitvoeren alvorens AEM te beginnen. Met gereedschappen zoals [https://direnv.net/](https://direnv.net/) kunt u deze aanpak vereenvoudigen. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
 
 De waarden voor geheimen worden gelezen uit bestanden. Daarom moet voor elke plaatsaanduiding die een geheim gebruikt, een tekstbestand met de geheime waarde worden gemaakt.
 
 Als bijvoorbeeld `$[secret:server_password]` wordt gebruikt, moet een tekstbestand met de naam **server_password** worden gemaakt. Al deze geheime dossiers moeten in de zelfde folder worden opgeslagen en het kaderbezit `org.apache.felix.configadmin.plugin.interpolation.secretsdir` moet met die lokale folder worden gevormd.
 
-### Auteur versus configuratie publiceren {#author-vs-publish-configuration}
+### Auteur versus publicatieconfiguratie {#author-vs-publish-configuration}
 
 Als voor een OSGI-eigenschap andere waarden zijn vereist voor auteur in plaats van publicatie:
 
-* Er moeten aparte `config.author` en `config.publish` OSGi-mappen worden gebruikt, zoals wordt beschreven in de sectie [Resolutie van](#runmode-resolution)uitvoermodus.
-* er moeten onafhankelijke variabelenamen worden gebruikt . Het wordt aanbevolen een voorvoegsel te gebruiken, bijvoorbeeld `author_<variablename>` en `publish_<variablename>` wanneer de namen van variabelen gelijk zijn
+* Er moeten afzonderlijke `config.author`- en `config.publish` OSGi-mappen worden gebruikt, zoals beschreven in de sectie [Runmode Resolution](#runmode-resolution).
+* er moeten onafhankelijke variabelenamen worden gebruikt . Het wordt aanbevolen een voorvoegsel te gebruiken, zoals `author_<variablename>` en `publish_<variablename>`, waarbij de namen van variabelen gelijk zijn
 
 ### Configuratievoorbeelden {#configuration-examples}
 
@@ -288,7 +288,7 @@ In de onderstaande voorbeelden wordt ervan uitgegaan dat er naast het werkgebied
 
 **Voorbeeld 1**
 
-De bedoeling is dat de waarde van de eigenschap OSGI voor het werkgebied en de prod gelijk `my_var1` moet zijn, maar voor elk van de 3 dev-omgevingen verschilt.
+De bedoeling is dat de waarde van de eigenschap OSGI `my_var1` hetzelfde is voor het werkgebied en de prod, maar verschilt voor elk van de 3 dev-omgevingen.
 
 <table>
 <tr>
@@ -305,7 +305,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -315,7 +319,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -323,7 +331,7 @@ config.dev
 
 **Voorbeeld 2**
 
-De bedoeling is dat de waarde van de eigenschap OSGI `my_var1` verschilt voor het werkgebied, de prod en voor elk van de drie dev-omgevingen. De API voor Cloud Manager moet dus worden aangeroepen om de waarde voor elke dev- `my_var1` gebeurtenis in te stellen.
+De bedoeling is dat de waarde van de eigenschap OSGI `my_var1` verschilt voor het werkgebied, de prod en voor elk van de 3 dev-omgevingen. De API voor Cloud Manager moet dus worden aangeroepen om de waarde in te stellen voor `my_var1` voor elk dev-element.
 
 <table>
 <tr>
@@ -340,7 +348,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -350,7 +362,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val2",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -360,7 +376,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -368,7 +388,7 @@ config.dev
 
 **Voorbeeld 3**
 
-De bedoeling is dat de waarde van het bezit OSGi voor stadium, productie, en enkel één van de ontwikkelomgevingen gelijk `my_var1` moet zijn, maar voor het om voor de andere twee dev milieu&#39;s te verschillen. In dit geval moet de API voor Cloud Manager worden aangeroepen om de waarde van `my_var1` voor elke ontwikkelomgeving in te stellen, inclusief voor de ontwikkelomgeving die dezelfde waarde moet hebben als werkgebied en productie. Het zal niet de waarde erven die in de omslag **config** wordt geplaatst.
+De bedoeling is dat de waarde van de eigenschap OSGi `my_var1` gelijk is voor werkgebied, productie en slechts één van de ontwikkelomgevingen, maar dat deze verschilt voor de andere twee ontwikkelomgevingen. In dit geval moet de API voor cloudbeheer worden aangeroepen om de waarde van `my_var1` in te stellen voor elke ontwikkelomgeving, inclusief voor de ontwikkelomgeving die dezelfde waarde moet hebben als het werkgebied en de productie. Het zal niet de waarde erven die in de omslag **config** wordt geplaatst.
 
 <table>
 <tr>
@@ -385,7 +405,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -395,13 +419,17 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
 </table>
 
-Een andere manier om dit te verwezenlijken zou moeten een standaardwaarde voor het vervangingsteken in config.dev omslag plaatsen dusdanig dat het de zelfde waarde zoals in de **config** omslag is.
+Een andere manier om dit te verwezenlijken zou een standaardwaarde voor het vervangingsteken in de config.dev omslag moeten plaatsen dusdanig dat het de zelfde waarde zoals in **config** omslag is.
 
 <table>
 <tr>
@@ -418,7 +446,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -428,7 +460,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "$[env:my_var1;default=val1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
