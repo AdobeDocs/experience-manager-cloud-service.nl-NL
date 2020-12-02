@@ -20,27 +20,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe aan privacykwesties, en wat dit voor u als Adobe betekent, zie de klant van de Privacy van de [Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over wat Adobe aan privacykwesties, en dit betekent voor u als Adobe klant, zie [Adobe Privacy Center](https://www.adobe.com/privacy.html) betekent.
 
 Adobe Experience Manager als Cloud Service Sites is klaar om klanten te helpen hun verplichtingen inzake privacy en bescherming na te komen. Deze pagina begeleidt klanten door de procedures om dergelijke verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie het [Adobe Privacy Center](https://www.adobe.com/privacy.html)voor meer informatie.
+Zie [Adobe Privacy Center](https://www.adobe.com/privacy.html) voor meer informatie.
 
 >[!NOTE]
 >
->Zie [Adobe Experience Manager als een Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) voor meer informatie.
+>Zie [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) voor meer informatie.
 
 ## AEM-auteurlaag {#aem-author-tier}
 
-Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de documentatie [van de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de [AEM Foundation-documentatie](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## AEM-publicatielaag {#aem-publish-tier}
 
-Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden behandeld in de documentatie [van de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden behandeld in de [AEM Foundation-documentatie](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
-## Opt-in/Opt-out {#opt-in-opt-out}
+## Opt-In/Opt-Out {#opt-in-opt-out}
 
 <!--
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
@@ -53,9 +53,9 @@ Naar Weigeren:
 1. Ga naar:
    [Adobe Privacy Center - Uitschakelen](https://www.adobe.com/privacy/opt-out.html)
 
-1. Schuif neer aan de **Diensten** - de gegevens **van het de dienstgebruik van** Experience Cloud.
+1. Schuif omlaag naar **Services** - **Experience Cloud-gegevens van servicegebruik**.
 
-1. Selecteer de koppeling waarnaar wordt verwezen. momenteel **hier** genoemd.
+1. Selecteer de koppeling waarnaar wordt verwezen. momenteel genoemd **hier**.
 
 1. U krijgt de volgende details te zien, samen met de opties om te weigeren of in te schakelen:
 
@@ -63,26 +63,26 @@ Naar Weigeren:
 
       Als u de uitschakelcookie verwijdert of als u van computer of webbrowser verandert, moet u de functie opnieuw uitschakelen.
 
-      Uitschakelen - Sluit mij uit van aggregatie en analyse van bezoekerssessies (installeer de uitschakelcookie) - Klik hier. `amcglobal.sc.omtrdc.net`
+      Uitschakelen - Sluit mij uit van aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net`-uitschakelcookie) - Klik hier.
 
-      Inschakelen - Neem mij op in aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` uitschakelcookie niet) - Klik hier.
+      Inschakelen - Neem mij op in aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net`-uitschakelcookie niet) - Klik hier.
    Voer de bovenstaande stappen uit om de werkelijke koppelingen te openen.
 
    >[!NOTE]
    >
-   > Er is een nadere beschrijving in de **2. Privacy.** van de Algemene Gebruiksvoorwaarden van de [Adobe](https://www.adobe.com/legal/terms.html).
+   > De **2 bevat een nadere beschrijving. Privacy.** van de Algemene Gebruiksvoorwaarden van de  [Adobe](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie [Adobe Analytics en Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics.
+Zie [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics.
 
-## Personalisatie Stichting door Doel {#personalization-foundation-by-target}
+## Personalisatiestichting door Doel {#personalization-foundation-by-target}
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie de [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)voor meer informatie over het beheer van verzoeken van betrokkenen in verband met Adobe Target.
+Zie [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target.
 
 ## ContextHub {#contexthub}
 
@@ -94,7 +94,7 @@ AEM verstrekt een facultatieve gegevenslaag met ContextHub. Dit houdt bezoekerss
 
 Deze bezoekergegevens worden standaard niet in AEM opgeslagen. AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
 
-### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
+### Implementatie van Opt-in/Opt-out {#implementing-opt-in-opt-out}
 
 De eigenaar van de site moet een opt-out-component implementeren in overeenstemming met de volgende richtlijnen.
 
