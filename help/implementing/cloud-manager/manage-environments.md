@@ -18,8 +18,7 @@ In de volgende sectie worden de typen omgeving beschreven die een gebruiker kan 
 
 Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen de grenzen van wat aan de specifieke huurder beschikbaar is) tot stand brengen.
 
-* **Productie- en Stage-omgeving**:
-De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.
+* **Productie- en Stage-omgeving**: De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.
 
 * **Ontwikkeling**: Een ontwikkelomgeving kan worden gecreëerd voor ontwikkelings- en testdoeleinden en zal alleen worden geassocieerd met niet-productiepijpleidingen.
 
@@ -37,38 +36,38 @@ De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor 
    >[!NOTE]
    >De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.  De gebruiker kan niet alleen een werkgebied of alleen een productieomgeving maken.
 
-## Omgeving toevoegen {#adding-environments}
+## Omgeving {#adding-environments} toevoegen
 
-1. Klik op **Omgeving** toevoegen om een omgeving toe te voegen. Deze knop is toegankelijk via het scherm **Omgevingen** .
+1. Klik op **Omgeving toevoegen** om een omgeving toe te voegen. Deze knop is toegankelijk vanuit het scherm **Omgevingen**.
    ![](assets/environments-tab.png)
 
-   De optie **Omgeving** toevoegen is ook beschikbaar op de **milieukeuren** wanneer het programma geen omgevingen bevat.
+   De optie **Omgeving toevoegen** is ook beschikbaar op de **Omgevingen**-kaart wanneer het programma geen omgevingen bevat.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >De optie Omgeving **** toevoegen wordt uitgeschakeld bij gebrek aan machtigingen of bij een eventuele overeenkomst.
+   >De optie **Omgeving toevoegen** wordt uitgeschakeld op basis van een gebrek aan machtigingen of wat u kunt contracteren.
 
 1. Het dialoogvenster **Omgeving toevoegen** wordt weergegeven. De gebruiker moet details verzenden zoals het **Omgevingstype**, de **Naam van de omgeving** en de **Beschrijving van de omgeving** (afhankelijk van de doelstelling van de gebruiker bij het creëren van de omgeving binnen de grenzen van wat beschikbaar is voor de specifieke tenant).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Bij het maken van een omgeving worden een of meer *integraties* gemaakt in Adobe I/O. Deze zijn zichtbaar voor gebruikers van de klant die toegang hebben tot de Adobe I/O-console en mogen niet worden verwijderd. Dit wordt in de beschrijving in de Adobe I/O-console afgewezen.
+   >Bij het maken van een omgeving worden een of meer *integrations* gemaakt in Adobe I/O. Deze zijn zichtbaar voor gebruikers van de klant die toegang hebben tot de Adobe I/O-console en mogen niet worden verwijderd. Dit wordt in de beschrijving in de Adobe I/O-console afgewezen.
 
    ![](assets/add-environment-image1.png)
 
-1. Klik op **Opslaan** om een omgeving met de ingevulde criteria toe te voegen.  Nu toont het *scherm van het Overzicht* de kaart van waar u opstelling uw pijpleiding kunt.
+1. Klik **Opslaan** om een omgeving met de gevulde criteria toe te voegen.  Nu toont het *Overzicht* scherm de kaart van waar u opstelling uw pijpleiding kunt.
 
    >[!NOTE]
-   >Als, u nog niet opstelling uw niet productiepijplijn hebt, toont het *scherm van het Overzicht* de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
+   >Als, u nog niet opstelling uw niet productiepijplijn hebt, *Overzicht* toont het scherm de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
 
 
-## Weergaveomgeving {#viewing-environment}
+## Omgeving {#viewing-environment} weergeven
 
-Met de **Environmental** Card op de overzichtspagina kunt u maximaal drie omgevingen weergeven.
+De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie milieu&#39;s.
 
-1. Selecteer de knop Alles **** tonen om naar de overzichtspagina **Omgeving** te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
+1. Selecteer de **knop Alles tonen** om naar de overzichtspagina **Environment** te navigeren om een tabel met een volledige lijst met omgevingen weer te geven.
 
    ![](assets/environment-view-1.png)
 
@@ -81,17 +80,17 @@ Met de **Environmental** Card op de overzichtspagina kunt u maximaal drie omgevi
    ![](assets/environment-view-3.png)
 
 
-## Omgeving bijwerken {#updating-dev-environment}
+## Omgeving {#updating-dev-environment} bijwerken
 
 Updates van werkgebied- en productieomgevingen worden automatisch door Adobe beheerd.
 
-Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Wanneer een omgeving niet de meest recente openbaar beschikbare AEM-release uitvoert, wordt in de status op Environment Card op het Homescherm de **UPDATE-BESCHIKBAAR** weergegeven.
+Updates voor ontwikkelomgevingen worden beheerd door gebruikers van het programma. Als een omgeving niet de meest recente openbaar beschikbare AEM-versie uitvoert, wordt **UPDATE AVAILABLE** weergegeven als de status op de milieuvriendenkaart op het startscherm.
 
 ![](assets/environ-update.png)
 
 
-De optie **Bijwerken** is beschikbaar via de **Omgevingskaart** .
-Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Update**, zoals aangetoond in hieronder figuur:
+De optie **Update** is beschikbaar bij **Omgevingen** Kaart.
+Deze optie is ook beschikbaar als u op **Details** van **Milieu** kaart klikt. De **pagina Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **..** en selecteer **Bijwerken**, zoals in de onderstaande afbeelding wordt getoond:
 
 ![](assets/environ-update2.png)
 
@@ -99,15 +98,15 @@ Het selecteren van deze optie zal een Manager van de Plaatsing toestaan om de pi
 
 Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de pijpleiding uit te voeren.
 
-## Omgeving verwijderen {#deleting-environment}
+## Omgeving {#deleting-environment} verwijderen
 
 De gebruiker met de vereiste toestemmingen zal een milieu van de Ontwikkeling kunnen schrappen.
 
-De optie **Verwijderen** is beschikbaar in het vervolgkeuzemenu van de **milieucaart** . Klik op **...** voor een ontwikkelomgeving die u wilt verwijderen.
+De optie **Delete** is beschikbaar in het vervolgkeuzemenu in de **Environment**-kaart. Klik op **..** voor een ontwikkelomgeving die u wilt verwijderen.
 
 ![](assets/environ-delete.png)
 
-De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart **Omgevingen** . De pagina **Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **...** en selecteer **Verwijderen**, zoals in onderstaande afbeelding wordt getoond:
+De verwijderingsoptie is ook beschikbaar als u op **Details** van de **Favorieten** kaart klikt. De **pagina Omgevingen** wordt geopend en wanneer u de ontwikkelomgeving hebt geselecteerd, klikt u op **..** en selecteer **Delete**, zoals weergegeven in de onderstaande afbeelding:
 
 ![](assets/environ-delete2.png)
 
@@ -118,33 +117,33 @@ De optie Verwijderen is ook beschikbaar als u op **Details** klikt op de kaart *
 
 ## Toegang beheren {#managing-access}
 
-Selecteer Toegang **** beheren in het vervolgkeuzemenu in de **milieucaart** . U kunt rechtstreeks naar de instantie van de auteur navigeren en de toegang voor uw omgeving beheren.
+Selecteer **Toegang beheren** in het vervolgkeuzemenu in de **Kaart** Omgevingen. U kunt rechtstreeks naar de instantie van de auteur navigeren en de toegang voor uw omgeving beheren.
 
-Zie Toegang [beheren tot instantie](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) Auteur voor meer informatie.
+Raadpleeg [Toegang tot instantie Auteur beheren](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) voor meer informatie.
 
 ![](assets/environ-access.png)
 
 
-## Developer Console openen {#accessing-developer-console}
+## Toegang tot ontwikkelaarsconsole {#accessing-developer-console}
 
-Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment** Card. Hiermee wordt een nieuw tabblad in uw browser geopend met de aanmeldingspagina naar de **Developer Console**.
+Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment**-kaart. Hiermee wordt een nieuw tabblad in uw browser geopend met de aanmeldingspagina naar **Developer Console**.
 
-Alleen gebruikers met de rol Developer hebben toegang tot de **Developer Console**. De uitzondering voor Sandbox-programma&#39;s, waar gebruikers met toegang tot het Sandbox-programma van Cloud Manager toegang hebben tot de **Developer Console**.
+Alleen een gebruiker met de rol Developer heeft toegang tot **Developer Console**. De uitzondering die voor de Programma&#39;s van de Sandbox is, waar om het even welke gebruiker met toegang tot het Programma van de Sandbox van de Manager van de Wolk toegang tot **de Console van de Ontwikkelaar** zal hebben.
 
-Raadpleeg de [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) voor meer informatie.
+Raadpleeg [Sluimerende en Shibernating Sandbox-omgevingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) voor meer informatie.
 
 
 ![](assets/environ-devconsole.png)
 
-Deze optie is ook beschikbaar als u op **Details** van de kaart van **Milieu** klikt. De pagina **Omgevingen** wordt geopend en wanneer u een omgeving selecteert, klikt u op **...** en selecteer **Developer Console**.
+Deze optie is ook beschikbaar als u op **Details** van **Milieu** kaart klikt. De pagina **Omgevingen** wordt geopend en wanneer u een omgeving selecteert, klikt u op **..** en selecteer **Developer Console**.
 
 ## Lokaal aanmelden {#login-locally}
 
-Selecteer **Lokale aanmelding** in het vervolgkeuzemenu in de **milieucaart** om u lokaal aan te melden bij Adobe Experience Manager.
+Selecteer **Lokale aanmelding** in het vervolgkeuzemenu in de **Kaart voor omgevingen** om u lokaal aan te melden bij Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-Bovendien kunt u zich lokaal aanmelden via de overzichtspagina **voor omgevingen** .
+Daarnaast kunt u zich lokaal aanmelden via de overzichtspagina **Environment**.
 
 ![](assets/environ-login-locally-2.png)
 
