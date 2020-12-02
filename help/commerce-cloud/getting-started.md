@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
@@ -67,6 +67,22 @@ Ga als volgt te werk om AEM Handel met Magento te verbinden:
 >U kunt ook de [Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) gebruiken om de Cloud Manager-variabelen ook te configureren.
 
 Met dit, bent u klaar om AEM Handel als Cloud Service te gebruiken en uw project via de Manager van de Wolk te opstellen.
+
+## Niet-actieve catalogusfuncties inschakelen (optioneel) {#staging}
+
+>[!NOTE]
+>
+>Deze functie is alleen beschikbaar bij Magento Enterprise Edition of Magento Cloud.
+
+1. Meld u aan bij Magento en maak een integratietoken. Zie [Op token gebaseerde verificatie](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) voor meer informatie. Zorg ervoor dat het integratietoken *only* toegang tot `Content -> Staging` middelen heeft. Kopieer de waarde `Access Token`.
+
+1. Stel de geheime variabele `COMMERCE_AUTH_HEADER` in Cloud Manager in:
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   Zie [AEM Commerce verbinden met Magento](#magento) voor het configureren van de Adobe I/O CLI voor Cloud Manager.
 
 ## Integratie van andere bedrijven {#integrations}
 
