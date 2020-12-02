@@ -10,11 +10,11 @@ ht-degree: 1%
 ---
 
 
-# Known issues {#known-issues}
+# Bekende problemen {#known-issues}
 
 In dit artikel worden de bekende problemen van Adobe Experience Manager weergegeven als een Cloud Service-aanbieding. De lijst wordt herzien en bijgewerkt met elke ononderbroken versie van Experience Manager.
 
-[Neem contact op met de ondersteuning](https://helpx.adobe.com/support/experience-manager.html) voor meer informatie over de bekende problemen.
+[Neem contact op met de ](https://helpx.adobe.com/support/experience-manager.html) ondersteuning voor meer informatie over de bekende problemen.
 
 <!-- 
 ## Platform {#platform}
@@ -30,7 +30,7 @@ Enkele bekende problemen zijn:
 
 * **Metagegevensschema**: Widget voor assetclassificatie die wordt gebruikt om een JSP-compilatiefout te veroorzaken. Deze is verwijderd uit het metagegevensschema. <!-- CQ-4282865, CQ-4284633 -->
 
-### Mogelijkheden voor komende middelen {#upcoming-assets-capabilities}
+### Mogelijkheden {#upcoming-assets-capabilities} voor komende elementen
 
 Enkele mogelijkheden van Adobe Experience Manager Assets die afhankelijk zijn van funderingsmogelijkheden, die nog niet beschikbaar zijn in de Experience Manager als implementatiearchitectuur voor Cloud Servicen, worden naar verwachting later ingeschakeld:
 
