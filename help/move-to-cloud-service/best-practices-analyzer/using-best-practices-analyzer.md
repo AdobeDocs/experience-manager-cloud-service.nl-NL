@@ -16,19 +16,19 @@ ht-degree: 47%
 
 Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de Analysator van Beste praktijken (BPA) te begrijpen:
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
+* Het BPA-rapport wordt samengesteld met de uitvoer van de Adobe Experience Manager (AEM) [Patroondetector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA mag alleen worden uitgevoerd door de **admin**-gebruiker of een gebruiker in de **beheerders**-groep.
 
 * BPA wordt ondersteund op AEM instanties met versie 6.1 en hoger.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale vereisten voor de installatie van BPA op AEM 6.1.
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA kan op om het even welk milieu lopen, maar het wordt verkiest om het op een *milieu te hebben Stage*.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
+   >Om een effect op bedrijfskritieke instanties te vermijden, wordt aanbevolen BPA uit te voeren in een *Auteur*-omgeving die zo dicht mogelijk bij de *Production*-omgeving ligt op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
 
 * Het genereren van de inhoud van het BPA-rapport kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot enkele uren. De benodigde tijd is in hoge mate afhankelijk van de grootte en aard van de AEM-repository-content, de AEM-versie en andere factoren.
 
@@ -39,19 +39,19 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager).
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Download de Analysator van Beste praktijken van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
 
-## Het Rapport van de Analysator van Beste praktijken bekijken {#viewing-report}
+## Het rapport Analyzer van Beste praktijken {#viewing-report} bekijken
 
 ### Adobe Experience Manager 6.3.0 en hoger {#aem-later-versions}
 
 Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste praktijken te bekijken:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Analysator voor aanbevolen werkwijzen**.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klik op Rapport **** genereren om de Analysator voor aanbevolen werkwijzen uit te voeren.
+1. Klik op **Generate Rapport** om de Analysator van Beste praktijken uit te voeren.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -68,12 +68,12 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. U kunt het rapport downloaden in een CSV-indeling (comma-separated values, door komma&#39;s gescheiden waarden) door op **CSV** te klikken, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door **te klikken verfrist Rapport**.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -92,7 +92,7 @@ De tool werkt niet voor Adobe Experience Manager 6.1 en kan alleen via de HTTP-i
 >[!NOTE]
 >In alle versies kan de opgenomen Pattern Detector-functie onafhankelijk worden uitgevoerd.
 
-## Het rapport met de analyse van best practices interpreteren {#cra-report}
+## Het rapport van de Analysator van Beste praktijken {#cra-report} interpreteren
 
 Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
 
@@ -109,7 +109,7 @@ Het rapport is als volgt ingedeeld:
 Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
 
 >[!NOTE]
->Zie Categorieën [patroondetector voor meer informatie over elke zoekcategorie](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Raadpleeg [Categorieën van patroondetectors](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) voor meer informatie over elke zoekcategorie.
 
 Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 
@@ -121,9 +121,9 @@ Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 | CRITICAL | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt om functie- of prestatieverlies te voorkomen. |
 
 
-## Het CSV-rapport van de Analysator van best practices interpreteren {#cra-csv-report}
+## CSV-rapport {#cra-csv-report} van de analyse van best practices interpreteren
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
+Wanneer u **CSV** optie van uw AEM instantie klikt, wordt het formaat CSV van het rapport van de Analysator van Beste praktijken gebouwd van het inhoudsgeheime voorgeheugen en teruggekeerd aan uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
 
 Als het cachegeheugen is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
 
@@ -147,7 +147,7 @@ De waarde &quot;\N&quot; in een kolom voor een individuele bevinding geeft aan d
 
 BPA verstrekt een interface van HTTP die als alternatief aan zijn gebruikersinterface binnen AEM kan worden gebruikt. Deze interface ondersteunt zowel HEAD- als GET-opdrachten. Het kan worden gebruikt om het BPA- rapport te produceren en het in één van drie formaten terug te keren: JSON, CSV en door tabs gescheiden waarden (TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+De volgende URL&#39;s zijn beschikbaar voor HTTP-toegang, waarbij `<host>` de hostnaam en poort is, indien nodig, van de server waarop de BPA is geïnstalleerd:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` voor de JSON-indeling
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` voor de CSV-indeling
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` voor de TSV-indeling
@@ -173,10 +173,10 @@ De volgende HTTP-headers worden door deze interface gebruikt:
 
 De volgende handige HTTP-queryparameters zijn beschikbaar wanneer HTTP-headers niet gemakkelijk kunnen worden gebruikt:
 
-* `max-age` (nummer, optioneel): Geeft de levensduur van de cachevervaging in seconden aan. Dit getal moet 0 of hoger zijn. De standaard versheidslevensduur is 86400 seconden. Zonder deze parameter of de overeenkomstige kopbal zal een vers geheime voorgeheugen worden gebruikt om verzoeken gedurende 24 uren te dienen, waarbij het geheime voorgeheugen moet worden opnieuw geproduceerd. Het gebruiken `max-age=0` zal het geheime voorgeheugen dwingen om worden ontruimd en zal een regeneratie van het rapport in werking stellen, gebruikend het vorige niet-nul freshness leven voor het onlangs geproduceerde geheime voorgeheugen.
-* `respond-async` (Booleaans, optioneel): Geeft op dat de reactie asynchroon moet worden opgegeven. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Als de cache vernieuwd is, heeft deze parameter geen effect. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (Booleaans, optioneel): Geeft aan dat de server de cache kan vernieuwen als reactie op een aanvraag als de huidige cache leeg, leeg of bijna leeg is. Als `may-refresh-cache=true`, of als het niet wordt gespecificeerd, dan kan de server een achtergrondtaak in werking stellen die de Detector van het Patroon aanhaalt en het geheime voorgeheugen vernieuwt. Als `may-refresh-cache=false` dan zal de server geen verfrissingstaak in werking stellen die anders zou gedaan zijn als het geheime voorgeheugen leeg of verouderd is, in welk geval het rapport leeg zal zijn. Deze parameter heeft geen invloed op vernieuwingstaken die al in uitvoering zijn.
-* `return-minimal` (Booleaans, optioneel): Geeft aan dat de reactie van de server alleen de status moet bevatten die de voortgangsindicatie en cachestatus in de JSON-indeling bevat. Als `return-minimal=true`, dan zal het reactievermogen tot het statusvoorwerp worden beperkt. Als `return-minimal=false`, of als het niet wordt gespecificeerd, zal een volledige reactie worden verstrekt.
+* `max-age` (nummer, optioneel): Geeft de levensduur van de cachevervaging in seconden aan. Dit getal moet 0 of hoger zijn. De standaard versheidslevensduur is 86400 seconden. Zonder deze parameter of de overeenkomstige kopbal zal een vers geheime voorgeheugen worden gebruikt om verzoeken gedurende 24 uren te dienen, waarbij het geheime voorgeheugen moet worden opnieuw geproduceerd. Het gebruiken van `max-age=0` zal het geheime voorgeheugen dwingen om worden ontruimd en zal een regeneratie van het rapport in werking stellen, gebruikend het vorige niet-nul freshness leven voor het onlangs geproduceerde geheime voorgeheugen.
+* `respond-async` (Booleaans, optioneel): Geeft op dat de reactie asynchroon moet worden opgegeven. Als `respond-async=true` wordt gebruikt als de cache leeg is, retourneert de server een reactie van `202 Accepted` zonder te wachten tot de cache is vernieuwd en het rapport is gegenereerd. Als de cache vernieuwd is, heeft deze parameter geen effect. De standaardwaarde is `false`. Zonder deze parameter of de overeenkomstige kopbal zal de server synchroon antwoorden, die een significante hoeveelheid tijd kan vereisen en een aanpassing van de maximumreactietijd voor de cliënt van HTTP vereisen.
+* `may-refresh-cache` (Booleaans, optioneel): Geeft aan dat de server de cache kan vernieuwen als reactie op een aanvraag als de huidige cache leeg, leeg of bijna leeg is. Als `may-refresh-cache=true`, of als het niet wordt gespecificeerd, dan kan de server een achtergrondtaak in werking stellen die de Detector van het Patroon aanhaalt en het geheime voorgeheugen verfrist. Als `may-refresh-cache=false` dan zal de server geen vernieuwingstaak in werking stellen die anders zou zijn gedaan als het geheime voorgeheugen leeg of leeg is, in welk geval het rapport leeg zal zijn. Deze parameter heeft geen invloed op vernieuwingstaken die al in uitvoering zijn.
+* `return-minimal` (Booleaans, optioneel): Geeft aan dat de reactie van de server alleen de status moet bevatten die de voortgangsindicatie en cachestatus in de JSON-indeling bevat. Als `return-minimal=true`, dan zal de reactiekarakter tot het statusvoorwerp worden beperkt. Als `return-minimal=false`, of als het niet wordt gespecificeerd, dan zal een volledige reactie worden verstrekt.
 * `log-findings` (Booleaans, optioneel): Specificeert dat de server de inhoud van het geheime voorgeheugen zou moeten registreren wanneer het eerst wordt gebouwd of verfrist. Elke bevinding in de cache wordt geregistreerd als een JSON-tekenreeks. Dit registreren zal slechts voorkomen als `log-findings=true` en het verzoek een nieuw geheime voorgeheugen produceert.
 
 Wanneer zowel de HTTP-header en de overeenkomstige queryparameter aanwezig zijn, heeft de queryparameter prioriteit.
@@ -191,8 +191,8 @@ Zodra een aanvraag is ingediend, hoeft de client niet actief te zijn voor het pr
 De volgende responswaarden zijn mogelijk:
 
 * `200 OK`: Geeft aan dat de reactie bevindingen van de Patroondetector bevat die zijn gegenereerd binnen de versheidslevensduur van de cache.
-* `202 Accepted`: Wordt gebruikt om aan te geven dat de cache leeg is. Wanneer `respond-async=true` en `may-refresh-cache=true` deze reactie erop wijst dat verfrist taak lopend is. Wanneer `may-refresh-cache=false` deze reactie eenvoudig erop wijst dat het geheime voorgeheugen stabiel is.
-* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`: Wordt gebruikt om aan te geven dat de cache leeg is. Wanneer `respond-async=true` en `may-refresh-cache=true` deze reactie erop wijst dat een verfrist taak lopend is. Wanneer `may-refresh-cache=false` deze reactie eenvoudig erop wijst dat het geheime voorgeheugen stabiel is.
+* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in het formaat van de Details van het Probleem (zie [RFC 7807](https://tools.ietf.org/html/rfc7807)) verstrekt meer details.
 * `401 Unauthorized`: Geeft aan dat de aanvraag niet is geautoriseerd.
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in de indeling voor probleemdetails biedt meer informatie.
 * `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere respons en deze aanvraag niet tijdig kan uitvoeren. Dit gebeurt alleen bij synchrone aanvragen. Een bericht in de indeling voor probleemdetails biedt meer informatie.
@@ -210,7 +210,7 @@ De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beh
 
 ### Installeren op AEM 6.1 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Dit account is beschikbaar op AEM 6.2 en hoger. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA gebruikt een rekening van de systeemdienstgebruiker genoemd `repository-reader-service` om de Detector van het Patroon uit te voeren. Dit account is beschikbaar op AEM 6.2 en hoger. In AEM 6.1 moet deze account *worden gemaakt voordat de BPA-installatie van* wordt uitgevoerd door de volgende stappen uit te voeren:
 
 1. Volg de instructies bij het [Nieuwe servicegebruiker maken](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) om een gebruiker te maken. Stel de UserID in op `repository-reader-service` en laat het tussenpad leeg en klik op het groene vinkje.
 
