@@ -28,14 +28,14 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.7.0 is 9 juli 2
 
 * De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
 
-   Raadpleeg [Pipetvariabelen](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) voor meer informatie.
+   Raadpleeg [Variabelen pijpleiding](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) voor meer informatie.
 
 * Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
 
 * De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
-Raadpleeg Ondersteuning [van Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) gebruiken voor meer informatie.
+Raadpleeg [Java 11-ondersteuning gebruiken](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) voor meer informatie.
 
-### Bug Fixes {#bug-fixes-cm}
+### Opgeloste problemen {#bug-fixes-cm}
 
 * De koppeling van Cloud Manager naar de Developer Console was onjuist actief voordat omgevingen volledig werden gemaakt.
 
@@ -55,4 +55,4 @@ Raadpleeg Ondersteuning [van Java 11](/help/onboarding/getting-access-to-aem-in-
 
 ### Bekende problemen {#known-issues}
 
-* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, is de *minimale* versie van de Jacoco-plug-in nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.
+* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, is de *minimum*-versie van de Jacoco-plug-in nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.
