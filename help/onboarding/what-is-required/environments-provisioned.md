@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Ingevoerde omgevingen {#environments-provisioning}
+# Voorziene omgevingen {#environments-provisioning}
 
 ## Inrichting {#provisioning}
 
