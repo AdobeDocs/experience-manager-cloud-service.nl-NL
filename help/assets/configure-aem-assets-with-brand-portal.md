@@ -1,23 +1,23 @@
 ---
-title: AEM Assets configureren als Cloud Service met Brand Portal
+title: AEM Assets configureren als een [!DNL Cloud Service] met Brand Portal
 description: AEM Assets configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1510'
 ht-degree: 21%
 
 ---
 
 
-# AEM Assets configureren als Cloud Service met Brand Portal {#configure-aem-assets-with-brand-portal}
+# AEM Assets configureren als een [!DNL Cloud Service] met Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets publiceren als een Cloud Service-exemplaar naar Brand Portal en deze verspreiden onder de gebruikers van het Brand Portal.
+Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets publiceren als een [!DNL Cloud Service]-exemplaar naar Brand Portal en deze verspreiden onder de gebruikers van het Brand Portal.
 
 **Configuratieworkflow**
 
-AEM Assets als Cloud Service wordt gevormd met het Portaal van het Merk via de Console van de Ontwikkelaar van Adobe, die een Adobe Identity Management Services (IMS) rekeningsteken voor vergunning van de huurder van het Portaal van het Merk koopt. Voor dit programma zijn configuraties vereist in zowel AEM Assets als Adobe Developer Console.
+AEM Assets als [!DNL Cloud Service] wordt gevormd met het Portaal van het Merk via de Console van de Ontwikkelaar van de Adobe, die een Adobe Identity Management Services (IMS) rekeningsteken voor vergunning van de Poorthuurder van het Merk aanschaft. Voor dit programma zijn configuraties vereist in zowel AEM Assets als Adobe Developer Console.
 
 1. In AEM Assets maakt u een IMS-account en genereert u een openbare sleutel (certificaat).
 1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw Poorthuurder van het Merk (organisatie).
@@ -29,13 +29,13 @@ AEM Assets als Cloud Service wordt gevormd met het Portaal van het Merk via de C
 
 >[!NOTE]
 >
->Een AEM Assets als instantie van de Cloud Service wordt slechts gevormd met één merkportaalhuurder.
+>Een AEM Assets als een [!DNL Cloud Service] instantie moet slechts met één merkportaalhuurder worden gevormd.
 
 ## Vereisten {#prerequisites}
 
 U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
-* Een AEM Assets uitvoeren als een Cloud Service-instantie
+* Een in werking gestelde AEM Assets als [!DNL Cloud Service] instantie
 * Een URL voor Poortgebruiker voor merken
 * Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
 
@@ -51,7 +51,7 @@ Voer de volgende stappen in de opgegeven reeks uit om AEM Assets met Brand Porta
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
-De configuratie IMS verklaart uw AEM Assets als instantie van de Cloud Service met de Poorthuurder van het Merk voor authentiek.
+De configuratie IMS verklaart uw AEM Assets als instantie [!DNL Cloud Service] met de Poorthuurder van het Merk voor authentiek.
 
 De IMS-configuratie omvat twee stappen:
 
@@ -231,7 +231,7 @@ Voer de volgende stappen uit om de merkportalcloudservice te configureren:
 
 1. Klik op **[!UICONTROL Save & Close]**. De cloudconfiguratie wordt gemaakt.
 
-   Uw AEM Assets als instantie van de Cloud Service wordt nu gevormd met de Poorthuurder van het Merk.
+   Uw AEM Assets als [!DNL Cloud Service] instantie wordt nu gevormd met de Poorthuurder van het Merk.
 
 ### Configuratie testen {#test-configuration}
 
@@ -262,7 +262,7 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
    ![](assets/test-bpconfig3.png)
 
-1. Als u de verbinding tussen AEM Assets als Cloud Service en Brand Portal wilt controleren, klikt u op het pictogram **[!UICONTROL Test Connection]**.
+1. Als u de verbinding tussen AEM Assets als [!DNL Cloud Service] en Brand Portal wilt controleren, klikt u op het pictogram **[!UICONTROL Test Connection]**.
 
    ![](assets/test-bpconfig4.png)
 
