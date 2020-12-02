@@ -42,15 +42,15 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [Afhandeling en levering van bedrijfsmiddelen](#asset-handling)
 
-## /apps en /libs zijn onveranderlijk bij runtime {#apps-libs-immutable}
+## /apps and /libs are imutable at runtime {#apps-libs-immutable}
 
 Alle inhoud en submappen in `/apps` en `/libs` zijn alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen zal er niet doen. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor een aantal AEM:
 
-* Er `/libs` zijn helemaal geen wijzigingen toegestaan.
+* Wijzigingen in `/libs` zijn helemaal niet toegestaan.
    * Dit is geen nieuwe regel, nochtans werd dit niet afgedwongen in vorige on-premise versies van AEM.
-* Bedekkingen voor gebieden `/libs` die mogen worden bedekt, zijn nog steeds toegestaan binnen `/apps`.
+* Bedekkingen voor gebieden in `/libs` die mogen worden bedekt, zijn nog steeds toegestaan binnen `/apps`.
    * Dergelijke overlays moeten afkomstig zijn van Git via de CI/CD-leiding.
-* De statische het ontwerpinformatie van het Malplaatje die in wordt opgeslagen `/apps` kan niet via UI worden uitgegeven.
+* De statische informatie van het malplaatjeontwerp die in `/apps` wordt opgeslagen kan niet via UI worden uitgegeven.
    * Het wordt aanbevolen bewerkbare sjablonen te gebruiken.
    * Als de Statische Malplaatjes nog worden vereist, moet de configuratieinformatie uit Git via de pijpleiding CI/CD komen.
 * MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git via de pijpleiding worden geïnstalleerd CI/CD.
@@ -91,7 +91,7 @@ Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service.
 
 ## Verwijderen van replicatieagents {#replication-agents}
 
-In AEM Cloud Service wordt inhoud gepubliceerd met behulp van [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
+In AEM Cloud Service, wordt de inhoud gepubliceerd gebruikend [het Verdelen van de Inhoud Distributie](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten
@@ -101,7 +101,7 @@ In AEM Cloud Service wordt inhoud gepubliceerd met behulp van [Sling Content Dis
 
 De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
-## Levering op de website publiceren {#publish-side-delivery}
+## Levering op de publicatievijde {#publish-side-delivery}
 
 De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in AEM Cloud Service.
 
@@ -112,7 +112,7 @@ Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leverag
 Het uploaden, de verwerking en het downloaden van bedrijfsmiddelen zijn in Elementen geoptimaliseerd als een Cloud Service die efficiënter het toelaten van betere schrapping en snellere uploads en downloads. Dit kan echter invloed hebben op sommige bestaande aangepaste code.
 
 * De standaardworkflow **DAM Asset Update** in eerdere versies van AEM is niet meer beschikbaar.
-* De componenten van de website die een binair **zonder transformatie** leveren zouden directe download moeten gebruiken.
+* De componenten van de website die binair **zonder transformatie** leveren zouden directe download moeten gebruiken.
    * De Sling GET servlet is veranderd om dit door gebrek te doen.
-* De componenten van de website die een binair **met transformatie** (bijvoorbeeld, resize via servlet) leveren kunnen blijven werken aangezien zij hebben.
-* Elementen die via Package Manager worden binnengebracht, moeten handmatig opnieuw worden verwerkt met behulp van de handeling **Element** opnieuw verwerken in de interface Elementen.
+* De componenten van de website die binair **met transformatie** (bijvoorbeeld, resize via servlet) leveren kunnen blijven werken aangezien zij hebben.
+* Elementen die via Package Manager worden binnengebracht, moeten handmatig opnieuw worden verwerkt met de handeling **Asset** opnieuw verwerken in de interface Elementen.
