@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
-In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager Cloud Service, zodat u vervolgens inhoud [op die pagina&#39;s kunt](/help/sites-cloud/authoring/fundamentals/editing-content.md) maken.
+In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager Cloud Service, zodat u op die pagina&#39;s [inhoud kunt maken](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 
 >[!TIP]
 >
->Er zijn een aantal [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) die u vanuit de websiteconsole kunt gebruiken om uw pagina&#39;s efficiënter te ordenen.
+>Er zijn een aantal [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) die u kunt gebruiken van de websiteconsole die het efficiënter maken van uw pagina&#39;s maakt.
 
 ## Uw website ordenen {#organizing-your-website}
 
@@ -39,7 +39,7 @@ U kunt ook [mappen](#creating-a-new-folder) gebruiken om uw inhoud te ordenen.
 
 De structuur van een website kan worden beschouwd als een structuur die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titels worden getoond wanneer de paginainhoud wordt bekeken.
 
-In het volgende voorbeeld ziet u een voorbeeld van de [WKND-zelfstudie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) , waar een artikel over skateparks ( `la-skateparks`) wordt geopend:
+In het volgende voorbeeld ziet u een voorbeeld van de [WKND-zelfstudie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-site, waar een artikel over skateparks ( `la-skateparks`) wordt geopend:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -60,13 +60,13 @@ In het volgende voorbeeld ziet u een voorbeeld van de [WKND-zelfstudie](https://
    /...
 ```
 
-Deze structuur kan worden weergegeven vanuit de **Sites** -console, waar u door de pagina&#39;s van uw website [kunt](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) navigeren en acties op de pagina&#39;s kunt uitvoeren. U kunt ook nieuwe sites en [nieuwe pagina&#39;s](#creating-a-new-page)maken.
+Deze structuur kan worden bekeken vanaf de **Sites**-console, waar u [door de pagina&#39;s van uw website kunt navigeren](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en acties op de pagina&#39;s kunt uitvoeren. U kunt ook nieuwe sites en [nieuwe pagina&#39;s](#creating-a-new-page) maken.
 
 Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in de kopbalk:
 
 ![Door broodkruimels te navigeren](/help/sites-cloud/authoring/assets/organizing-breadcrumbs.png)
 
-### Naamgevingsconventies voor pagina&#39;s {#page-naming-conventions}
+### Paginanamen van conventies {#page-naming-conventions}
 
 Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
@@ -78,32 +78,32 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 * **[Naam](#name)**:
 
    * Hiermee wordt de URI gegenereerd.
-   * Gebruikersinvoer voor dit veld is optioneel. Indien niet opgegeven, wordt de naam afgeleid van de titel. Zie de volgende sectie Beperkingen van de Naam van de [Pagina en Beste praktijken](#page-name-restrictions-and-best-practices) voor details.
+   * Gebruikersinvoer voor dit veld is optioneel. Indien niet opgegeven, wordt de naam afgeleid van de titel. Zie de volgende sectie [Beperkingen van de Naam van de Pagina en Beste praktijken](#page-name-restrictions-and-best-practices) voor details.
 
 #### Beperkingen en aanbevolen procedures voor paginanamen {#page-name-restrictions-and-best-practices}
 
 De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar zijn aan elkaar gerelateerd:
 
-* Wanneer u een pagina maakt, is alleen het veld **Titel** vereist. Als er bij het maken van de pagina geen **naam** is opgegeven, genereert AEM een naam uit de eerste 64 tekens van de titel (met inachtneming van de onderstaande validatie). Alleen de eerste 64 tekens worden gebruikt ter ondersteuning van de beste praktijken voor namen van korte pagina&#39;s.
+* Bij het maken van een pagina is alleen het veld **Titel** vereist. Als er bij het maken van de pagina geen **Naam** is opgegeven, genereert AEM een naam uit de eerste 64 tekens van de titel (met inachtneming van de onderstaande validatie). Alleen de eerste 64 tekens worden gebruikt ter ondersteuning van de beste praktijken voor namen van korte pagina&#39;s.
 * Als een paginanaam handmatig door de auteur wordt opgegeven, geldt de limiet van 64 tekens niet, maar kunnen andere technische beperkingen op de lengte van de paginanaam wel van toepassing zijn.
 
 >[!TIP]
 >
->Wanneer u een paginanaam definieert, is het verstandig de paginanaam zo kort maar expressief en zo gedenkwaardig mogelijk te houden, zodat de lezer deze goed begrijpt. Zie de [W3C-stijlhandleiding](https://www.w3.org/Provider/Style/TITLE.html) voor het `title` element voor meer informatie.
+>Wanneer u een paginanaam definieert, is het verstandig de paginanaam zo kort maar expressief en zo gedenkwaardig mogelijk te houden, zodat de lezer deze goed begrijpt. Zie de [W3C-stijlhandleiding](https://www.w3.org/Provider/Style/TITLE.html) voor het `title`-element voor meer informatie.
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en het JCR.
+Bij het maken van een nieuwe pagina valideert AEM [de paginanaam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en het JCR zijn opgelegd.
 
 De minimaal toegestane tekens zijn:
 
-* `a` doorheen `z`
-* `A` doorheen `Z`
-* `0` doorheen `9`
+* `a` doorheen  `z`
+* `A` doorheen  `Z`
+* `0` doorheen  `9`
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle tekens die zijn toegestaan, staan in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
+Alle details van alle toegestane tekens vindt u in [de naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Alle tekens die zijn toegestaan, staan in [de naamgevingsconventies](/help/imple
 
 Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd.](/help/implementing/developing/introduction/naming-conventions.md)
 
-Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
+Een veld **Titel** dat ongeldige tekens bevat, wordt geaccepteerd, maar de afgeleide naam vervangt de ongeldige tekens. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -122,7 +122,7 @@ Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige te
 
 #### Naam {#name}
 
-Wanneer u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
+Wanneer u een pagina **Naam** wanneer het creëren van een nieuwe pagina levert, zal AEM [de naam volgens conventies ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd bevestigen. U kunt geen ongeldige karakters op **Naam** gebied voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![Voorbeeld van het invoeren van een ongeldige paginanaam](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -143,15 +143,18 @@ De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbee
 
 AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
 
-* **Titel** De titel die op de resulterende webpagina wordt weergegeven.
+* ****
+TitelDe titel die op de resulterende webpagina wordt weergegeven.
 
-* **Naam** die wordt gebruikt bij de naamgeving van de pagina.
+* ****
+NaamGebruikt bij het benoemen van de pagina.
 
-* **Template** A lijst van malplaatjes beschikbaar voor gebruik wanneer het produceren van de nieuwe pagina.
+* ****
+TemplateA lijst van malplaatjes beschikbaar voor gebruik wanneer het produceren van de nieuwe pagina.
 
 >[!TIP]
 >
->Als dit op uw exemplaar is geconfigureerd, kunnen [sjabloonauteurs sjablonen maken met de Sjablooneditor](/help/sites-cloud/authoring/features/templates.md).
+>Indien gevormd op uw instantie, [sjabloonauteurs kunnen malplaatjes met de Redacteur van het Malplaatje ](/help/sites-cloud/authoring/features/templates.md) tot stand brengen.
 
 ### Onderdelen {#components}
 
@@ -163,19 +166,19 @@ Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke 
 * Carousel
 * En nog veel meer
 
-Nadat u een pagina hebt gemaakt en geopend, kunt u inhoud [toevoegen met de componenten](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)die beschikbaar zijn in de [deelbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Nadat u een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), die beschikbaar zijn in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 >[!TIP]
 >
->De [componentenconsole](/help/sites-cloud/authoring/features/components-console.md) geeft een overzicht van de componenten op uw instantie.
+>De [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md) geeft een overzicht van de componenten op uw instantie.
 
-## Pagina&#39;s beheren {#managing-pages}
+## Pagina&#39;s {#managing-pages} beheren
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
 Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Open de Sites-console (bijvoorbeeld `https://<host>:<port>/sites.html/content`.
+1. Open de Sites-console (bijvoorbeeld `https://<host>:<port>/sites.html/content`).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
 1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
 
@@ -183,17 +186,17 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 1. Vanaf de eerste fase van de wizard kunt u:
 
-   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik op **Volgende** of tik op Volgende om door te gaan.
+   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik op **Volgende** om door te gaan.
 
-   * **Annuleer** om het proces af te breken.
+   * **Annuleren** om het proces af te breken.
 
    ![Een sjabloon voor een nieuwe pagina selecteren](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
 
-   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) in te voeren die u aan de nieuwe pagina wilt toewijzen. Klik vervolgens op **Maken** of tik op Maken om de pagina daadwerkelijk te maken.
+   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) in te voeren die u aan de nieuwe pagina wilt toewijzen en klik vervolgens op **Maken** om de pagina daadwerkelijk te maken.
 
-   * Gebruik **Vorige** om terug te keren naar de sjabloonselectie.
+   * Gebruik **Back** om naar sjabloonselectie terug te keren.
 
    Hoofdvelden zijn:
 
@@ -203,24 +206,24 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die worden opgelegd door AEM en JCR.
-      * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+      * Als u bij het maken van een nieuwe pagina **Naam** opgeeft, AEM [de naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR zijn opgelegd.
+      * U **kunt geen ongeldige karakters** op **Naam** gebied voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!TIP]
    >
-   >Zie conventies voor [paginanamen](#page-naming-conventions).
+   >Zie [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions).
 
-   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **titel**.
+   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel**.
 
    ![Paginatitel opgeven](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Gebruik **Maken** om het proces te voltooien en uw nieuwe pagina te maken. In het bevestigingsvenster wordt gevraagd of u de pagina direct wilt **openen** of wilt terugkeren naar de console (**Gereed**):
+1. Gebruik **Maken** om het proces te voltooien en uw nieuwe pagina te maken. In het bevestigingsdialoogvenster wordt u gevraagd of u de pagina direct wilt **openen** of wilt terugkeren naar de console (**Done**):
 
    ![Maken van pagina voltooid](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
    >[!NOTE]
    >
-   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als er bijvoorbeeld `beach` al een nieuwe pagina bestaat, wordt deze `beach1`.
+   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bijvoorbeeld al bestaat, wordt een nieuwe pagina `beach1`.
 
 1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
 
@@ -228,40 +231,40 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 >[!CAUTION]
 >
->Als een pagina eenmaal is gemaakt, kan de sjabloon ervan niet worden gewijzigd, tenzij u een [startpagina met een nieuwe sjabloon](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template)maakt, maar de bestaande inhoud verdwijnt.
+>Als een pagina eenmaal is gemaakt, kan de sjabloon ervan niet worden gewijzigd - tenzij u [een opstart maakt met een nieuwe sjabloon](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), maar hierdoor wordt bestaande inhoud verloren.
 
 ### Een pagina openen voor bewerken {#opening-a-page-for-editing}
 
 Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) hebt genavigeerd, kunt u deze openen om te bewerken:
 
-1. Open de **Sites** -console.
+1. Open de console **Sites**.
 1. Navigeer totdat u de pagina vindt die u wilt bewerken.
 1. Selecteer de pagina door een van de volgende twee handelingen uit te voeren:
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+   * [Selectiemodus ](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
 
-   Selecteer vervolgens het pictogram **Bewerken** :
+   Selecteer vervolgens het pictogram **Bewerken**:
 
    ![Bewerken, knop](/help/sites-cloud/authoring/assets/edit.png)
 
-1. De pagina wordt geopend en u kunt de pagina [naar wens](/help/sites-cloud/authoring/fundamentals/editing-content.md) bewerken.
+1. De pagina wordt geopend en u kunt de pagina [desgewenst bewerken.](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 >[!NOTE]
 >
 >U kunt vanuit de pagina-editor alleen naar andere pagina&#39;s navigeren in de modus Voorbeeld, omdat koppelingen niet actief zijn in de modus Bewerken.
 
-### Pagina&#39;s kopiëren en plakken {#copying-and-pasting-a-page}
+### Een pagina {#copying-and-pasting-a-page} kopiëren en plakken
 
 U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëren:
 
-1. Navigeer in de **Sites** -console naar de pagina die u wilt kopiëren.
+1. Navigeer in **Sites** console, tot u de pagina vindt die u wilt kopiëren.
 1. Selecteer de pagina met behulp van:
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+   * [Selectiemodus ](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
 
-   En dan het paginapictogram **Kopiëren** :
+   En dan het **Copy** paginapictogram:
 
    ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -270,20 +273,20 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
    >Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. Het pictogram **Plakken** is rechtstreeks naar rechts beschikbaar met een vervolgkeuzepijl:
+1. Het pictogram **Plakken** is beschikbaar met een vervolgkeuzepijl rechtstreeks naar rechts:
 
    ![Plakken](/help/sites-cloud/authoring/assets/paste.png)
 
    U kunt:
 
    1. Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
-   1. Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+   1. Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende elementen** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
 
    >[!NOTE]
    >
-   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als er bijvoorbeeld `beach` al een nieuwe pagina met deze naam bestaat, `beach` wordt deze gewijzigd `beach1`.
+   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bijvoorbeeld al een nieuwe pagina met de naam `beach` bestaat, wordt `beach1`.
 
-### Een pagina verplaatsen of de naam ervan wijzigen {#moving-or-renaming-a-page}
+### Een pagina {#moving-or-renaming-a-page} verplaatsen of de naam ervan wijzigen
 
 De procedure om een pagina te verplaatsen of anders te noemen is in wezen het zelfde en door de zelfde tovenaar behandeld. Met deze wizard kunt u:
 
@@ -297,18 +300,18 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 1. Selecteer de pagina met behulp van:
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
+   * [Selectiemodus ](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
 
-   Selecteer vervolgens het paginapictogram **Verplaatsen** :
+   Selecteer vervolgens het paginapictogram **Move**:
 
    ![Knop Verplaatsen](/help/sites-cloud/authoring/assets/move.png)
 
    Hiermee wordt de wizard Verplaatsen van de pagina geopend.
 
-1. In het werkgebied **Naam wijzigen** van de wizard kunt u:
+1. In het werkgebied **Naam wijzigen** van de wizard kunt u een van de volgende handelingen uitvoeren:
 
-   * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik op **Volgende** of tik op Volgende om door te gaan.
-   * **Annuleer** om het proces af te breken.
+   * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik op **Volgende** om door te gaan.
+   * **Annuleren** om het proces af te breken.
 
    ![Pagina verplaatsen en hernoemen](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
@@ -316,15 +319,15 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als er bijvoorbeeld `beach` al een nieuwe pagina met deze naam bestaat, `beach` wordt deze gewijzigd `beach1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bijvoorbeeld al een nieuwe pagina met de naam `beach` bestaat, wordt `beach1`.
 
-1. Van het **Uitgezochte stadium van de Bestemming** van de tovenaar kunt u of:
+1. Van **Uitgezochte Doel** stadium van de tovenaar kunt u of:
 
-   * Met de [kolomweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) navigeert u naar de nieuwe locatie voor de pagina:
+   * Gebruik de [kolomweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) om naar de nieuwe locatie voor de pagina te navigeren:
 
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
-      * Klik op **Volgende** om door te gaan.
-   * Gebruik **Vorige** om terug te keren naar de specificatie van de paginanaam.
+      * Klik **Volgende** om door te gaan.
+   * Gebruik **Back** om terug te keren naar de specificatie van de paginanaam.
 
    >[!NOTE]
    >
@@ -334,9 +337,9 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `winter` bijvoorbeeld al bestaat `winter` wordt `winter1`.
 
-1. Als de pagina is gekoppeld aan of waarnaar wordt verwezen, of is gepubliceerd, worden de details weergegeven in de stap **Aanpassen/Opnieuw** publiceren.
+1. Als de pagina is gekoppeld aan of waarnaar wordt verwezen, of is gepubliceerd, worden de details weergegeven in de stap **Aanpassen/Opnieuw publiceren**.
 
    U kunt aangeven welke aanpassingen moeten worden aangebracht en/of opnieuw moeten worden gepubliceerd.
 
@@ -346,7 +349,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    ![Pagina verplaatsen opnieuw publiceren](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Als u **Verplaatsen** selecteert, wordt het proces voltooid en wordt de pagina waar nodig verplaatst of hernoemd.
+1. Als u **Move** selecteert, wordt het proces voltooid en wordt de pagina naar wens verplaatst of hernoemd.
 
 >[!NOTE]
 >
@@ -354,15 +357,15 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanpassen/Opnieuw** publiceren overgeslagen.
+>Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanpassen/Opnieuw publiceren** overgeslagen.
 
 >[!NOTE]
 >
->Als u de naam van een pagina wijzigt, gelden de naamgevingsconventies [voor de](#page-naming-conventions) pagina ook voor het opgeven van de nieuwe paginanaam.
+>Voor het wijzigen van de naam van een pagina gelden ook [Paginanamen van conventies](#page-naming-conventions) bij het opgeven van de nieuwe paginanaam.
 
 >[!NOTE]
 >
->Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Sjabloonbeschikbaarheid](/help/implementing/developing/components/templates.md#template-availability) voor meer informatie.
+>Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Beschikbaarheid sjabloon](/help/implementing/developing/components/templates.md#template-availability) voor meer informatie.
 
 #### Asynchrone handelingen {#asynchronous-actions}
 
@@ -370,25 +373,25 @@ Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmidde
 
 Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
 
-* Wanneer het klikken van **Beweging** in de laatste stap hierboven, controleert AEM de gevormde grens.
+* Wanneer het klikken **Beweging** in de laatste stap hierboven, controleert AEM de gevormde grens.
 * Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
 * Als het aantal pagina&#39;s waarop de actie betrekking heeft, boven de limiet ligt, wordt een asynchrone bewerking uitgevoerd.
    * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
-      * **De uitvoering van de asynchrone taak wordt nu** direct gestart.
-      * **Later** kan de gebruiker bepalen wanneer de asynchrone taak wordt gestart.
+      * **De** uitvoering van de asynchrone taak wordt nu direct gestart.
+      * **Met** lateraal kan de gebruiker bepalen wanneer de asynchrone taak wordt gestart.
 
          ![Asynchrone verplaatsing van pagina](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) bij **Globale Navigatie** -> **Hulpmiddelen** -> **Verrichtingen** -> **Banen**
+De status van asynchrone taken kan worden gecontroleerd in [**Async Jobs Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) op **Global Navigation** -> **Tools** -> **Operations** -> **Jobs**
 
 >[!NOTE]
 >
->Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, te zien gelieve het [Asynchrone document van Banen](/help/operations/asynchronous-jobs.md) in de de gebruikersgids van Verrichtingen.
+>Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, te zien gelieve [Asynchrone Jobs](/help/operations/asynchronous-jobs.md) document in de de gebruikersgids van Verrichtingen.
 
-### Een pagina verwijderen {#deleting-a-page}
+### Een pagina {#deleting-a-page} verwijderen
 
 1. Navigeer totdat u de pagina ziet die u wilt verwijderen.
-1. Selecteer de gewenste pagina in de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) en gebruik vervolgens **Verwijderen** op de werkbalk:
+1. Gebruik [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) om de vereiste pagina te selecteren en gebruik vervolgens **Delete** op de werkbalk:
 
    ![Knop Verwijderen](/help/sites-cloud/authoring/assets/delete.png)
 
@@ -403,29 +406,30 @@ De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Stat
    * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden bij het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
       * [Versies kunnen later worden hersteld.](/help/sites-cloud/authoring/features/page-versions.md)
       * Pagina&#39;s die zonder vorige versies zijn verwijderd, kunnen niet worden hersteld.
-   * **Annuleren** om de handeling af te breken
-   * **Verwijder** om de handeling te bevestigen:
+   * **De handeling** annuleren om af te breken
+   * **Verwijderen** ter bevestiging van de handeling:
 
       * Als de pagina geen verwijzingen heeft, wordt de pagina verwijderd.
-      * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Één of meerdere pagina&#39;s van verwijzingen worden voorzien.** U kunt Verwijderen **forceren** of **Annuleren** selecteren.
+      * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Één of meerdere pagina&#39;s van verwijzingen worden voorzien.** U kunt  **Forceren** verwijderen selecteren of  **Annuleren**.
 
 >[!NOTE]
 >
 >Als een pagina al is gepubliceerd, wordt deze automatisch niet gepubliceerd voordat deze wordt verwijderd.
 
-### Een pagina vergrendelen {#locking-a-page}
+### Een pagina {#locking-a-page} vergrendelen
 
-U kunt een pagina [](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) vergrendelen/ontgrendelen vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
+U kunt een pagina [vergrendelen/ontgrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
 
-![Knop](/help/sites-cloud/authoring/assets/lock.png)![Ontgrendelen](/help/sites-cloud/authoring/assets/unlock.png)
+![Knop ](/help/sites-cloud/authoring/assets/lock.png)
+![VergrendelenOntgrendelen](/help/sites-cloud/authoring/assets/unlock.png)
 
 ### Nieuwe map maken {#creating-a-new-folder}
 
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
-1. Open the **Sites** console and navigate to the required location.
-1. Selecteer **Maken** in de werkbalk om de lijst met opties te openen
-1. Selecteer **Map** om het dialoogvenster te openen. Hier kunt u de **naam** en de **titel** invoeren:
+1. Open de **Sites**-console en navigeer naar de gewenste locatie.
+1. Selecteer **Maken** in de werkbalk om de optielijst te openen
+1. Selecteer **Map** om het dialoogvenster te openen. Hier kunt u **Naam** en **Titel** ingaan:
 
    ![Map maken](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
 
@@ -433,11 +437,11 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 >[!NOTE]
 >
->Mappen zijn ook onderworpen aan de conventies voor [paginanamen](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
+>Mappen zijn ook onderworpen aan [Paginanamen Conventions](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
 
 >[!CAUTION]
 >
->* Mappen kunnen alleen rechtstreeks onder **Sites** of onder andere mappen worden gemaakt. Ze kunnen niet onder een pagina worden gemaakt.
+>* Mappen kunnen alleen worden gemaakt onder **Sites** of onder andere mappen. Ze kunnen niet onder een pagina worden gemaakt.
 >* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
 >* Mappen zijn niet beschikbaar voor selectie in een live kopie.
 
