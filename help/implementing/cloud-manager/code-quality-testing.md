@@ -10,18 +10,18 @@ ht-degree: 1%
 ---
 
 
-# Testen van de codekwaliteit {#code-quality-testing}
+# Testen van de kwaliteit van de code {#code-quality-testing}
 
 Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
 
-Verwijs naar het [Vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) om meer over verschillende types van pijpleidingen te leren.
+Raadpleeg [Uw CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) configureren voor meer informatie over verschillende soorten pijpleidingen.
 
-## Understanding Code Quality Rules {#understanding-code-quality-rules}
+## Code Quality Rules {#understanding-code-quality-rules}
 
-Bij het testen van de kwaliteit van de code, wordt de broncode gescand om ervoor te zorgen dat het aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Enkele AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als Regels [van de Kwaliteit van de](/help/implementing/cloud-manager/custom-code-quality-rules.md)Code van de Douane.
+Bij het testen van de kwaliteit van de code, wordt de broncode gescand om ervoor te zorgen dat het aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Enkele AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [Regels van de Kwaliteit van de Code van de Douane](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->U kunt de volledige lijst met regels [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)downloaden.
+>U kunt de volledige lijst met regels [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx) downloaden.
 
 **Drielagige plaat**
 
@@ -33,35 +33,35 @@ Deze stap voor het testen van de codekwaliteit bevat een structuur met drie nive
 
 * **Info**: Dit zijn kwesties die door de poort worden geïdentificeerd en die uitsluitend ter informatie worden verstrekt en geen invloed hebben op de uitvoering van de pijpleiding
 
-De resultaten van deze stap worden geleverd als *classificaties*.
+De resultaten van deze stap worden geleverd als *Waarderingen*.
 
 De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor elk van de categorieën Kritiek, Belangrijk en Informatie:
 
 | Naam | Definitie | Categorie | Drempel voor fout |
 |--- |--- |--- |--- |
-| Beveiligingsbeoordeling | A = 0 Kwetsbaarheid <br/>B = ten minste 1 Kleine Kwetsbaarheid<br/> C = ten minste 1 Ernstige Kwetsbaarheid <br/>D = ten minste 1 Kritieke Kwetsbaarheid <br/>E = ten minste 1 Kwetsbaarheid | Kritiek | &lt; B |
+| Beveiligingsbeoordeling | A = 0 Kwetsbaarheid <br/>B = ten minste 1 Kleinere kwetsbaarheid<br/> C = ten minste 1 Ernstige kwetsbaarheid <br/>D = ten minste 1 Kritieke kwetsbaarheid <br/>E = ten minste 1 Blokkeerkwetsbaarheid | Kritiek | &lt; B |
 | Betrouwbaarheidsbeoordeling | A = 0 Bug <br/>B = ten minste 1 kleine bug <br/>C = ten minste 1 groot probleem <br/>D = ten minste 1 kritisch probleem E = ten minste 1 blokkeerprobleem | Belangrijk | &lt; C |
-| Onderhoudsverklaring | Uitstaande herstelkosten voor codegeuren zijn: <br/><ul><li>&lt;=5% van de tijd die al in de toepassing is ingegaan, is de rating A </li><li>tussen 6 en 10% is de rating een B </li><li>tussen 11 en 20% is de rating een C </li><li>tussen 21 en 50% is de rating een D</li><li>iets meer dan 50% is een E</li></ul> | Belangrijk | &lt; A |
-| Dekking | Een combinatie van de dekking van de meetlijn en de toestand volgens deze formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>waarbij: CT = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;true&#39; tijdens het uitvoeren van eenheidstests <br/>CF = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;false&#39; tijdens het uitvoeren van eenheidstests <br/>LC = gedekte lijnen = lines_to_cover - uncoverlines <br/><br/> B = totaal aantal voorwaarden <br/>EL = totaal aantal uitvoerbare lijnen (lines_to_cover) | Belangrijk | &lt; 50% |
+| Onderhoudsverklaring | Uitstaande herstelkosten voor codegeuren zijn: <br/><ul><li>&lt;> </li><li>tussen 6 en 10% is de rating een B </li><li>tussen 11 en 20% is de rating een C </li><li>tussen 21 en 50% is de rating een D</li><li>iets meer dan 50% is een E</li></ul> | Belangrijk | &lt; A |
+| Dekking | Een combinatie van de dekking van de meetlijn en de toestand volgens deze formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>waarbij: CT = voorwaarden die ten minste eenmaal zijn geëvalueerd op &#39;true&#39; bij het uitvoeren van eenheidstests <br/>CF = voorwaarden die ten minste eenmaal zijn geëvalueerd op &#39;false&#39; bij het uitvoeren van eenheidstests <br/>LC = gedekte lijnen = lines_to_cover - uncoverlines <br/><br/> B = totaal aantal voorwaarden <br/>EL = totaal aantal uitvoerbare lijnen (lines_to_cover) | Belangrijk | &lt; 50=&quot;&quot;> |
 | Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests. | Info | > 1 |
 | Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
-| Gedupliceerde lijnen | Aantal lijnen betrokken bij gedupliceerde blokken. <br/>Een codeblok dat als gedupliceerd moet worden beschouwd: <br/><ul><li>**Niet-Java-projecten:**</li><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste op: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li><li>**Java-projecten:**</li><li> Er moeten minstens tien opeenvolgende en gedupliceerde verklaringen zijn, ongeacht het aantal tokens en lijnen.</li></ul> <br/>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd bij het detecteren van duplicaten. | Info | > 1% |
+| Gedupliceerde lijnen | Aantal lijnen betrokken bij gedupliceerde blokken. <br/>Een codeblok dat als gedupliceerd moet worden beschouwd:  <br/><ul><li>**Niet-Java-projecten:**</li><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste op: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li><li>**Java-projecten:**</li><li> Er moeten minstens tien opeenvolgende en gedupliceerde verklaringen zijn, ongeacht het aantal tokens en lijnen.</li></ul> <br/>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd bij het detecteren van duplicaten. | Info | > 1% |
 | Compatibiliteit met Cloud Service | Aantal geïdentificeerde kwesties van de Verenigbaarheid van de Cloud Service. | Info | > 0 |
 
 >[!NOTE]
 >
->Zie [Metrische definities](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
+>Raadpleeg [Metrische definities](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor gedetailleerdere definities.
 
 
 >[!NOTE]
 >
->Voor meer informatie over de regels voor de kwaliteit van aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], raadpleegt u [Aangepaste regels](/help/implementing/cloud-manager/custom-code-quality-rules.md)voor codekwaliteit.
+>Als u meer wilt weten over de regels voor de kwaliteit van aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], raadpleegt u [Aangepaste regels voor de kwaliteit van code](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-## Werken met valse positieven {#dealing-with-false-positives}
+## Omgaan met valse positieven {#dealing-with-false-positives}
 
-Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt als *vals positief* bedoeld.
+Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt bedoeld als *vals positief*.
 
-In deze gevallen kan de broncode worden geannoteerd met de standaard-Java- `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Een veelvoorkomend probleem is bijvoorbeeld dat de SonarQube-regel voor het detecteren van gecodeerde wachtwoorden agressief kan zijn ten aanzien van de manier waarop een gecodeerd wachtwoord wordt geïdentificeerd.
+In deze gevallen kan de broncode worden geannoteerd met de standaard-Java `@SuppressWarnings`-annotatie die de regel-id opgeeft als het annotatiekenmerk. Een veelvoorkomend probleem is bijvoorbeeld dat de SonarQube-regel voor het detecteren van gecodeerde wachtwoorden agressief kan zijn ten aanzien van de manier waarop een gecodeerd wachtwoord wordt geïdentificeerd.
 
 Om naar een specifiek voorbeeld te kijken, zou deze code vrij gemeenschappelijk in een AEM project zijn dat code heeft om met één of andere externe dienst te verbinden:
 
@@ -89,7 +89,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 >[!NOTE]
 >
->Het is weliswaar aan te raden de `@SuppressWarnings` annotatie zo specifiek mogelijk te maken, d.w.z. alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, aan te brengen, maar het is wel mogelijk om een annotatie op klasseniveau te maken.
+>Hoewel het aan te raden is om de `@SuppressWarnings`-annotatie zo specifiek mogelijk te maken, dat wil zeggen alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, van annotatie te voorzien op klasseniveau.
 
 >[!NOTE]
->Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Verwijs naar het Overzicht van de [Veiligheid voor AEM als Cloud Service](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
+>Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Verwijs naar [Overzicht van de Veiligheid voor AEM als Cloud Service](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
