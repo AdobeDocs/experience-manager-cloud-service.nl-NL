@@ -37,8 +37,8 @@ Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omv
 De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om het gedrag van hun versieringsmarkering te controleren:
 
 * **`cq:noDecoration {boolean}`:** Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
-* **`cq:htmlTag`node:** Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
-   * **`cq:tagName {String}`:** Dit kan worden gebruikt om een aangepaste HTML-tag op te geven die moet worden gebruikt voor het verpakken van de componenten in plaats van het standaard DIV-element.
+* **`cq:htmlTag`node:** Dit knooppunt kan worden toegevoegd onder een component en kan de volgende eigenschappen hebben:
+   * **`cq:tagName {String}`:** Dit kan worden gebruikt om een markering van douaneHTML te specificeren die voor het verpakken van de componenten in plaats van het standaardDIV element moet worden gebruikt.
    * **`class {String}`:** Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
    * Andere eigenschapnamen worden toegevoegd als HTML-kenmerken met dezelfde tekenreekswaarde als opgegeven.
 
@@ -56,15 +56,15 @@ Het gedrag van de omslag kan ook volledig worden geregeld.
 
 Het is mogelijk het gedrag van de omvattende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Zie de [HTML-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)voor meer informatie over het ontwikkelen in HTML.
+Zie de [HTML-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) voor meer informatie over het ontwikkelen in HTML.
 
-### Beslissingsboom {#decision-tree}
+### Beslissingsstructuur {#decision-tree}
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
 ![Beslissingsboom](assets/decoration-tag-decision-tree.png)
 
-### Gevallen gebruiken {#use-cases}
+### Gevallen {#use-cases} gebruiken
 
 In de volgende drie gebruiksgevallen ziet u voorbeelden van de manier waarop de labels van de omloop worden verwerkt. Ook ziet u hoe eenvoudig het is om het gewenste gedrag van de labels van de omloop te bepalen.
 
@@ -90,7 +90,7 @@ Alle volgende voorbeelden nemen de volgende inhoudsstructuur, en componenten aan
 
 #### Hoofdlettergebruik 1: Component opnemen voor hergebruik van code {#use-case-include-a-component-for-code-reuse}
 
-Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik. In dat geval is het niet de bedoeling dat de opgenomen component bewerkbaar is met een eigen werkbalk en een eigen dialoogvenster, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
+Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik. In dat geval, wordt de inbegrepen component niet editable met zijn eigen toolbar en dialoog, zodat is geen omslag nodig, en `cq:htmlTag` van de component zal worden genegeerd. Dit kan als standaardgedrag worden beschouwd.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -102,11 +102,11 @@ Resulterende uitvoer op `/content/test.html`:
 
 Een voorbeeld zou een component zijn die een component van het kernbeeld omvat om een beeld te tonen, typisch in dat geval door een synthetisch middel te gebruiken, dat in het omvatten van een virtuele kindcomponent bestaat door tot gegeven-slim-middel een voorwerp van de Kaart over te gaan dat alle eigenschappen vertegenwoordigt die de component zou hebben.
 
-#### Hoofdlettergebruik 2: Een bewerkbare component opnemen {#use-case-include-an-editable-component}
+#### Hoofdlettergebruik 2: Inclusief bewerkbare component {#use-case-include-an-editable-component}
 
-Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval heeft elk inbegrepen kind impliciet een omslag voor de redacteur nodig om te werken (tenzij uitdrukkelijk gehandicapt met het `cq:noDecoration` bezit).
+Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval, heeft elk inbegrepen kind impliciet een omslag voor de redacteur om te werken (tenzij uitdrukkelijk gehandicapt met het `cq:noDecoration` bezit) nodig.
 
-Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag te activeren, is er de `decoration=true` optie.
+Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag teweeg te brengen, is er de `decoration=true` optie.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
