@@ -10,11 +10,11 @@ ht-degree: 82%
 ---
 
 
-# Geen informatie {#release-information}
+# Informatie opheffen {#release-information}
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2020.10.0 |
+| Versie | 2020 10,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
