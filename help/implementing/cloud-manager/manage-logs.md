@@ -14,11 +14,11 @@ ht-degree: 17%
 
 Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart.  Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Deze bestanden kunnen worden gedownload via de gebruikersinterface, op de pagina **Overzicht** :
+Deze bestanden kunnen via de gebruikersinterface worden gedownload, op de pagina **Overview**:
 
 ![](assets/download-logs1.png)
 
-Of op de pagina **Omgevingen** :
+Of de pagina **Environments**:
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ Of op de pagina **Omgevingen** :
 ![](assets/download-logs2.png)
 
 
-## Logbestanden via API {#logs-through-api}
+## Hiermee wordt de API {#logs-through-api} doorlopen
 
 Naast het downloaden van logboeken door UI, zullen de logboeken door API en de Interface van de Lijn van het Bevel beschikbaar zijn.
 
