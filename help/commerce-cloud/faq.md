@@ -19,7 +19,7 @@ Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle
 
 ## 2. Hoe komt Adobe I/O in de praktijk? Spreekt AEM rechtstreeks met Magento?
 
-AEM kan rechtstreeks verbinding maken met Magento zonder I/O-runtimelaag. Als er behoefte is om een niet-Magento handel achterkant (derdeoplossing) met AEM te integreren, kan I/O Runtime platform worden gebruikt om de mappingslaag te ontvangen om Magento GraphQL APIs met om het even welke derde oplossingen APIs te verbinden. Raadpleeg deze [referentie-implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference)voor meer informatie hierover. Voor oplossingen niet-Magento, zou AEM worden gevormd om aan het I/O Runtime eindpunt te richten.
+AEM kan rechtstreeks verbinding maken met Magento zonder I/O-runtimelaag. Als er behoefte is om een niet-Magento handel achterkant (derdeoplossing) met AEM te integreren, kan I/O Runtime platform worden gebruikt om de mappingslaag te ontvangen om Magento GraphQL APIs met om het even welke derde oplossingen APIs te verbinden. Raadpleeg voor meer informatie hierover deze [referentie-implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference). Voor oplossingen niet-Magento, zou AEM worden gevormd om aan het I/O Runtime eindpunt te richten.
 
 Het I/O Runtime platform kan ook worden gebruikt om handelsdiensten uit te breiden of aan te passen. Voor dit gebruik-gevallen zou u het I/O Runtime eindpunt roepen dat dan een aangepaste implementatie van de respectieve dienst zal ontvangen. Gebruiksscenario&#39;s voor integratie en extensie kunnen worden gecombineerd.
 
@@ -41,7 +41,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## 7. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM-Magento?
 
-We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Raadpleeg [AEM Dispatcher voor meer informatie over op TTL gebaseerde cachevalidatie](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Raadpleeg [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html) voor meer informatie over op TTL gebaseerde cachedetectie
 
 ## 8. Waarom gebruik je We.Retail niet?
 
@@ -65,7 +65,7 @@ Productgegevens worden meestal al vertaald in PIM of in Magento. De integratie A
 
 ## 13. Hoe werkt CIF met andere handelsplatforms?
 
-De integratie met derdeoplossingen zoals andere handelsoplossingen (niet-Magento) wordt gedaan via I/O Runtime platform.  We hebben een [referentie-implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) opgesteld om aan te tonen hoe dit gebeurt. Dit laat het hergebruik van de [AEM Schakelaar](https://github.com/adobe/commerce-cif-connector) van de Wolk CIF en de [AEM Componenten](https://github.com/adobe/aem-core-cif-components) van de Kern toe CIF door Magento GraphQL API bovenop om het even welk derde handelsplatform bloot te stellen. Om maximale flexibiliteit en schaalbaarheid te bieden, wordt deze integratielaag geïmplementeerd op het serverloze [Adobe I/O Runtime-platform](https://www.adobe.io/apis/experienceplatform/runtime.html).
+De integratie met derdeoplossingen zoals andere handelsoplossingen (niet-Magento) wordt gedaan via I/O Runtime platform.  Wij hebben een [referentie implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) gebouwd om te tonen hoe dit wordt gedaan. Dit laat het hergebruik van [AEM CIF Cloud Connector](https://github.com/adobe/commerce-cif-connector) en [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) toe door Magento GraphQL API bovenop om het even welk derde handelsplatform bloot te stellen. Om maximale flexibiliteit en schaalbaarheid te bieden, wordt deze integratielaag geïmplementeerd op het serverless [Adobe I/O Runtime-platform](https://www.adobe.io/apis/experienceplatform/runtime.html).
 
 ## 14. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in Magento?
 
@@ -93,7 +93,7 @@ Bij het gebruik van AEM op AMS- en Magento-cloudimplementatie is het verplicht o
 
 ## 20. Hoe kan ik om een I/O Runtime proefvergunning verzoeken?
 
-U kunt een proeflicentie aanvragen om I/O Runtime [hier](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md)te gebruiken.
+U kunt om een proefvergunning verzoeken om I/O Runtime [hier](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md) te gebruiken.
 
 
 
