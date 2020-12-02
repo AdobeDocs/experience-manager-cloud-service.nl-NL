@@ -30,19 +30,19 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
-   The Product selector is in the **[!UICONTROL Action Type]** area.
+   De productkiezer bevindt zich in het gebied **[!UICONTROL Action Type]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Tik op het **[!UICONTROL Product Selector]** pictogram (vergrootglas) en navigeer naar een product in de catalogus.
+1. Tik op het pictogram **[!UICONTROL Product Selector]** (vergrootglas) en navigeer naar een product in de catalogus.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   U kunt ook filteren op trefwoorden of tags door te tikken **[!UICONTROL Filter]** en trefwoorden in te voeren of door tags of beide te selecteren.
+   U kunt ook filteren op trefwoorden of tags door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt de locatie waar AEM naar productgegevens zoekt wijzigen door te tikken **[!UICONTROL Browse]** en naar een andere map te navigeren.
+   U kunt wijzigen waar AEM naar productgegevens zoekt door te tikken op **[!UICONTROL Browse]** en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -58,7 +58,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. In de **[!UICONTROL Preview]** modus kunt u op de hotspot of de afbeelding met hyperlinks tikken en zien hoe de Snelle weergave eruitziet.
+1. In de modus **[!UICONTROL Preview]** kunt u op de hotspot of de afbeelding met hyperlinks tikken en zien hoe de Snelle weergave eruitziet.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -80,24 +80,24 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de **[!UICONTROL Preview]** modus op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven AEM sitepagina.
+1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de AEM sitepagina die u hebt opgegeven.
 
 ## Elementen selecteren in dynamische media {#selecting-assets}
 
-Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** op het **[!UICONTROL Content]** tabblad tikt. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een nieuwe dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Draaien, is de activa selecteur beschikbaar wanneer u een nieuwe Reeks van het Beeld, GemengdeReeks, of Reeks van de Draai creeert.
+Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** tikt op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een nieuwe dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Draaien, is de activa selecteur beschikbaar wanneer u een nieuwe Reeks van het Beeld, GemengdeReeks, of Reeks van de Draai creeert.
 
 Zie ook [Asset Picker](/help/assets/search-assets.md#assetselector) voor meer informatie.
 
-1. Navigeer naar de Carousel-set en maak een nieuwe dia. Of navigeer naar de interactieve video en selecteer elementen op het **[!UICONTROL Content]** tabblad. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
+1. Navigeer naar de Carousel-set en maak een nieuwe dia. Of navigeer naar de Interactieve Video, ga **[!UICONTROL Content]** tabel en selecteer activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
 1. Tik op het pictogram **[!UICONTROL Asset Selector]** (map met vergrootglas) en ga naar een asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   U kunt ook filteren op trefwoorden of tags door te tikken **[!UICONTROL Filter]** en trefwoorden in te voeren, criteria toe te voegen of door beide in te voeren.
+   U kunt ook filteren op trefwoorden of tags door **[!UICONTROL Filter]** te tikken en trefwoorden in te voeren of criteria toe te voegen, of door beide in te voeren.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt de locatie waar AEM naar elementen bladert wijzigen door naar een andere map in het **[!UICONTROL Path]** veld te navigeren.
+   U kunt wijzigen waar AEM naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
@@ -109,4 +109,5 @@ Zie ook [Asset Picker](/help/assets/search-assets.md#assetselector) voor meer in
 
 1. Tik op het vinkje om het element te selecteren. Het element wordt weergegeven.
 
-   ![chlimage_1-536](assets/chlimage_1-536.png)—>
+   ![chlimage_1-536](assets/chlimage_1-536.png)
+—>
