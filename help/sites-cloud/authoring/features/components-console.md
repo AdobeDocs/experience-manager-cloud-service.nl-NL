@@ -41,12 +41,12 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
    * De algemene eigenschappen van de component weergeven.
       * Geef weer hoe het pictogram of de afkorting is gedefinieerd voor de component. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
-   * Bekijk het Type **van** Middel en het Type **van Super van het** Middel (als bepaald) voor de component.
+   * Bekijk **Resourcetype** en **Resourcesupertype** (indien gedefinieerd) voor de component.
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
 
    >[!NOTE]
    >
-   >Omdat `/apps` de Componentenconsole niet bewerkbaar is bij uitvoering, is deze alleen-lezen.
+   >Omdat `/apps` niet bewerkbaar is bij uitvoering, is de Componentenconsole alleen-lezen.
 
 * **Beleid**
 
@@ -62,6 +62,6 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Documentatie**
 
-   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op het **Documentatie** lusje verschijnen. Als er geen documentatie beschikbaar is, zal het lusje van de **Documentatie** niet worden getoond. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op **Documentatie** tabel verschijnen. Als er geen documentatie beschikbaar is, zal **Documentatie** tabel niet worden getoond. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
    ![Componentdocumentatie](/help/sites-cloud/authoring/assets/components-console-documentation.png)
