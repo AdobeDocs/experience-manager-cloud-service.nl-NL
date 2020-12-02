@@ -31,7 +31,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 * De stap voor het scannen van code heeft nu een downloadbaar logboek.
 * Het spreadsheet dat kwesties bevat die tijdens code het aftasten nu worden ontdekt heeft een kolom met een verbinding aan documentatie voor de specifieke regel.
 
-### Bug Fixes  {#bug-fixes}
+### Opgeloste problemen {#bug-fixes}
 
 * Beveiligingsbeleid van de browser zou soms verhinderen dat bepaalde knoppen in het scherm voor de uitvoering van de pijplijn goed werken.
 * De koppelingen Overzicht, Omgevingen en Activiteit zijn soms beschikbaar op de landingspagina van Cloud Manager.
