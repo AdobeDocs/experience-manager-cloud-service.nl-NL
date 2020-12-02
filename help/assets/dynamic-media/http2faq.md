@@ -43,28 +43,28 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik Adobe-Gebundelde CDN (het netwerk van de inhoudslevering) als deel van uw Dynamische Klassieke vergunning van Media.
 * Gebruik een specifiek domein (dat wil zeggen `images.company.com` of `mycompany.scene7.com`), geen algemeen Dynamisch Klassiek domein van Media (dat wil zeggen, `s7d1.scene7.com`, `s7d2.scene7.com`, of `s7d13.scene7.com`).
 
-   Als u uw domeinen wilt zoeken, [meldt u zich aan bij uw exemplaar van Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) voor elk bedrijfsaccount.
+   [Meld u voor elk bedrijfsaccount aan bij Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Scene7-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 ## Wat is het proces om HTTP/2 voor mijn Dynamische Rekening van Media Classic toe te laten? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-U moet de Admin Console [gebruiken om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen en verzoek om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
+U moet [de Admin Console gebruiken om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen en verzoek om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * Primaire contactpersoon, e-mail en telefoonnummer.
-   * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat is `images.company.com` of `mycompany.scene7.com`.
+   * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`.
 
-   Als u uw domeinen wilt zoeken, [meldt u zich aan bij uw exemplaar van Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) voor elk bedrijfsaccount.
+   [Meld u voor elk bedrijfsaccount aan bij Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
 
    * Controleer of u beveiligde HTTPS gebruikt voor aanvragen voor rich media.
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
-   * Controleer of u een specifiek domein gebruikt. Dat is `images.company.com` of `mycompany.scene7.com`, geen algemeen Scene7-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Scene7-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Als u uw domeinen wilt zoeken, [meldt u zich aan bij uw exemplaar van Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) voor elk bedrijfsaccount.
+   [Meld u voor elk bedrijfsaccount aan bij Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Scene7-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
@@ -90,4 +90,4 @@ De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opges
 
 ## Hoe kunt u controleren of een URL of website met HTTP/2 wordt geactiveerd? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-U moet een externsie downloaden om met uw browser van het Web te gebruiken. Voor Firefox en Chrome is er een extensie genaamd **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Wanneer HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+U moet een externsie downloaden om met uw browser van het Web te gebruiken. Voor Firefox en Chrome is er een extensie met de naam **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Wanneer HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
