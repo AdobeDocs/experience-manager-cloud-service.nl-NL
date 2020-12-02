@@ -32,4 +32,4 @@ Standaard verloopt het inhoudstype HTML/tekst na 300 seconden (5 minuten) op de 
 
 De secties hieronder verstrekken meer detail over inhoudslevering, met inbegrip van configuratie CDN en caching.
 
-Informatie over replicatie van de auteursdienst aan de publicatieservice is [hier](/help/operations/replication.md)beschikbaar.
+Informatie over replicatie van de auteurservice naar de publicatieservice is [hier](/help/operations/replication.md) beschikbaar.
