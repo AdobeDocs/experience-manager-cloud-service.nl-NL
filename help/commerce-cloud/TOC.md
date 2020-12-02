@@ -27,7 +27,7 @@ ht-degree: 7%
    + [Multi-Store instellen](configuring/multi-store-setup.md)
    + [URL&#39;s configureren voor SEO](configuring/advanced-url-configuration.md)
    + [Cacheopties](configuring/caching.md)
-+ Aanpassen {#customize}
++ {#customize} aanpassen
    + [CIF-componenten opmaken](customizing/style-cif-component.md)
    + [CIF-componenten aanpassen](customizing/customize-cif-components.md)
 + [Veelgestelde vragen](faq.md)
