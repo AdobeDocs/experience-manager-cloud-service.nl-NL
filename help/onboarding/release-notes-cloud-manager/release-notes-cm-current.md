@@ -22,12 +22,12 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.11.0 is 12 nove
 
 ### Wat is er nieuw?{#what-is-new}
 
-* Een nieuwe menuoptie **Lokale aanmelding** is nu beschikbaar voor gebruikers via de opties in het menu Omgeving op de pagina&#39;s Environment Card en Environmental Summary.
-Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md##login-locally) beheren voor meer informatie.
+* Een nieuwe menuoptie **Local Login** is nu beschikbaar aan gebruikers van de milieu menuopties op de kaart van het Milieu en de Summiere pagina&#39;s van Milieu.
+Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md##login-locally) voor meer informatie.
 
 * Het tabblad **Leren** in Cloud Manager is vernieuwd en bevat nieuwe afbeeldingen in de gebruikersinterface.
 
-### Bug Fixes {#bug-fixes-cloud-manager}
+### Opgeloste problemen {#bug-fixes-cloud-manager}
 
 * Voor het laden van afhankelijkheden die zijn uitgevoerd voordat de build werd uitgevoerd, moest een Maven-plug-in worden gedownload.
 * Met de koppeling in de voettekst van Cloud Manager om een taal te selecteren, gaat u nu naar de juiste locatie.
