@@ -10,7 +10,7 @@ ht-degree: 70%
 ---
 
 
-# Middelen als hulplijn voor Cloud Service {#aem-assets-guide}
+# Elementen als hulplijn voor Cloud Service {#aem-assets-guide}
 
 Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a Cloud Service.
 
