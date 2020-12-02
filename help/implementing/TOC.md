@@ -4,9 +4,9 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
+source-git-commit: 4687054b049263c109591884a0368dfa76346298
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '552'
 ht-degree: 52%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 52%
    + [Maven-projectversiebeheer](cloud-manager/project-version-handling.md)
    + [Toegang tot Git](cloud-manager/accessing-git.md)
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
+   + [Werken met Meerdere opslagplaatsen voor Git-bronnen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + Ontwikkelen voor AEM as a Cloud Service {#developing}
    + [AEM-projectstructuur](developing/introduction/aem-project-content-package-structure.md)
    + [AEM-projectrepositorystructuurpakket](developing/introduction/repository-structure-package.md)
