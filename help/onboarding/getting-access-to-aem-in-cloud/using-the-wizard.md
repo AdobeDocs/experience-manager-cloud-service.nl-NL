@@ -10,9 +10,9 @@ ht-degree: 41%
 ---
 
 
-# De wizard gebruiken {#using-wizard-to-create-an-aem-application-project}
+# De wizard {#using-wizard-to-create-an-aem-application-project} gebruiken
 
-Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op het [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Om nieuwe klanten aan de slag te helpen, kan Cloud Manager nu een minimaal AEM project maken als startpunt. Dit proces is gebaseerd op [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud Manager met de wizard:
@@ -25,11 +25,11 @@ Voer de onderstaande stappen uit om een AEM toepassingsproject te maken in Cloud
 
    ![](assets/create-wizard2.png)
 
-1. De tegel **Project in uitvoering** wordt weergegeven in het scherm *Program Overview* .
+1. De **Projectcreatie in uitvoering** tegelvertoningen op het *Programmaoverzicht* scherm.
 
    ![](assets/create-wizard3.png)
 
 1. Nadat het programma is gemaakt, wordt de tegel **Omgeving toevoegen** weergegeven op de pagina *Programmaoverzicht*.
    ![](assets/create-wizard4.png)
 
-   Raadpleeg [Uw omgevingen](/help/implementing/cloud-manager/manage-environments.md) beheren voor meer informatie over het toevoegen of beheren van omgevingen.
+   Raadpleeg [Uw omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over het toevoegen of beheren van omgevingen.
