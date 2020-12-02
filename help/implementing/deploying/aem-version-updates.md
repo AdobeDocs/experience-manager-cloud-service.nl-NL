@@ -35,15 +35,15 @@ AEM versie-updates zijn van twee typen:
 
 AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalideringspijplijn met meerdere stappen die ervoor zorgen dat de service voor alle systemen in productie niet wordt onderbroken. Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM als update van de Cloud Service ontbreken, zal de versie niet te werk gaan en Adobe zal onderzoeken waarom de update dit onverwachte gedrag veroorzaakte.
 
-[Producttests en functionele tests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) van de Klant die productupgrades en klantencode verhinderen de productie te breken, worden ook gevalideerd tijdens een AEM versie-update.
+[Producttests en functionele ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) tests van de Klant die productupgrades en codes van de Klant verhinderen de productie te breken, worden ook gevalideerd tijdens een AEM versie-update.
 
 >[!NOTE]
 >
 >Als de douanecode aan het opvoeren werd geduwd en dan door u werd verworpen, zal de volgende AEM update die veranderingen verwijderen om op de git markering van de laatste succesvolle klantenversie aan productie te wijzen.
 
-## Composite Node Store {#composite-node-store}
+## Composietknooppuntarchief {#composite-node-store}
 
-Zoals hierboven vermeld, zullen updates in de meeste gevallen nul onderbreking, onder meer voor de auteur, die een cluster van knopen is. Rolling updates zijn mogelijk vanwege de functie voor *samengestelde knooppuntopslag* in Eak.
+Zoals hierboven vermeld, zullen updates in de meeste gevallen nul onderbreking, onder meer voor de auteur, die een cluster van knopen is. Rolling updates zijn mogelijk vanwege de functie *Samengesteld knooppunt store* in Oak.
 
-Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In een het rollen plaatsing, bevat de nieuwe Groene AEM versie zijn eigen `/libs` (de op TarMK gebaseerde onveranderlijke bewaarplaats), verschillend van de oudere Blauwe AEM versie, hoewel allebei verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare bewaarplaats die gebieden zoals `/content` , `/conf` , `/etc` en anderen bevat. Omdat blauw en Groen hun eigen versies van hebben, kunnen zij allebei actief tijdens de het rollen update zijn, allebei die verkeer nemen tot het blauw volledig door groen wordt vervangen. `/libs`
+Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. Bij een voortschrijdende implementatie bevat de nieuwe versie van Green AEM zijn eigen `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), onderscheiden van de oudere versie van Blue AEM, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde gemuteerde opslagplaats die gebieden zoals `/content`, `/conf`, `/etc` en andere bevat. Omdat zowel Blauw als Groen hun eigen versies van `/libs` hebben, kunnen zij allebei actief tijdens het rollen update zijn, allebei die verkeer opnemen tot het blauw volledig door groen wordt vervangen.
 
