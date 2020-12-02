@@ -18,11 +18,11 @@ U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhank
 
 De eigenschappen worden verdeeld over verscheidene lusjes.
 
-### Basis {#basic}
+### Standaard {#basic}
 
 * **Titel**
 
-   * De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de lijst op het tabblad **Websites** en de weergave van de **Sites** -kaart/lijst.
+   * De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
    * Dit is een verplicht veld.
 
 * **Tags**
@@ -34,7 +34,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
-   * Zie Tags [gebruiken voor meer informatie over tags](/help/sites-cloud/authoring/features/tags.md).
+   * Zie [Codes gebruiken](/help/sites-cloud/authoring/features/tags.md) voor meer informatie over tags.
 
 * **Verbergen in navigatie**
 
@@ -46,11 +46,11 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Paginatitel**
 
-   * Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als deze leeg is, wordt de **titel** gebruikt.
+   * Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
 
 * **Navigatietitel**
 
-   * U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als de waarde leeg is, wordt de **titel** gebruikt.
+   * U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
 
 * **Ondertitel**
 
@@ -66,22 +66,22 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
       >[!NOTE]
       >
-      > Zie [Aan en uit Tijden - de Configuratie](/help/operations/replication.md#on-and-off-times-trigger-configuration) van de Trekker voor details van hoe te om de verwante automatische replicatie te vormen.
+      > Zie [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
 
-      * Als deze pagina al is [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , blijft deze slapend (verborgen) totdat de pagina op het opgegeven tijdstip wordt weergegeven.
+      * Als deze pagina al [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) is, blijft deze slapend (verborgen) totdat deze op het opgegeven tijdstip wordt weergegeven.
       * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
       * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, zal de pagina niet automatisch gepubliceerd worden, zodat zal 404 worden gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
-   * Laat deze velden (**Aan tijd** en **Uit tijd**) leeg voor pagina&#39;s die u direct wilt publiceren en houd de publicatieomgeving beschikbaar totdat ze zijn gedeactiveerd (het normale scenario).
+   * Laat deze velden (**On Time** en **Off Time**) leeg voor pagina&#39;s die u direct wilt publiceren en die beschikbaar zijn in de publicatieomgeving totdat ze zijn gedeactiveerd (het normale scenario).
 
 * **Uit-tijd**
 
-   * Parallel aan **On Time** definieert dit de tijd waarop de gepubliceerde pagina wordt verborgen in de publicatieomgeving.
-   * Laat deze velden (**Aan tijd** en **Uit tijd**) leeg voor pagina&#39;s die u direct wilt publiceren en houd de publicatieomgeving beschikbaar totdat ze zijn gedeactiveerd (het normale scenario).
+   * Parallel aan **On Time** bepaalt dit de tijd waarop de gepubliceerde pagina op het publicatiemilieu zal worden verborgen.
+   * Laat deze velden (**On Time** en **Off Time**) leeg voor pagina&#39;s die u direct wilt publiceren en die beschikbaar zijn in de publicatieomgeving totdat ze zijn gedeactiveerd (het normale scenario).
 
 * **Vanity URL**
 
    * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of expressieve URL kunt hebben.
-   * Als de URL vanity bijvoorbeeld is ingesteld op `welcome` de pagina die wordt aangegeven door het pad `/v1.0/startpage` voor de website `http://example.com`, `http://example.com/welcome` is dit de URL van de vanity van `http://example.com/content/v1.0/startpage`
+   * Als de URL vanity bijvoorbeeld is ingesteld op `welcome` op de pagina die wordt aangegeven door het pad `/v1.0/startpage` voor de website `http://example.com`, is `http://example.com/welcome` de vanity URL van `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -121,7 +121,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    >
    >Alias plaatst het `sling:alias` bezit om een alias naam voor het middel te bepalen (dit beïnvloedt slechts het middel, niet de weg).
    >
-   >Bijvoorbeeld: als u een alias van `latin-lang` voor de knoop `/content/we-retail/spanish` bepaalt, dan kan deze pagina via worden betreden `/content/we-retail/latin-language`
+   >Bijvoorbeeld: als u een alias van `latin-lang` voor de knoop `/content/we-retail/spanish` bepaalt, dan kan deze pagina via `/content/we-retail/latin-language` worden betreden
    >
    >Zie Gelokaliseerde paginanamen onder SEO en URL Management Best Practices voor meer informatie.
 
@@ -129,7 +129,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Overgenomen van &lt;path>**
+* **Overgenomen van  &lt;path>**
 
    * Geeft aan of de pagina wordt overgeërfd. en waar van.
 
@@ -139,14 +139,14 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Toegestane sjablonen**
 
-   * [Definieer de lijst met sjablonen die beschikbaar](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) zijn in deze subvertakking.
+   * [Definieer de lijst met sjablonen die binnen deze subvertakking ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) beschikbaar zullen zijn.
 
-* **Inschakelen** (verificatievereiste)
+* **Inschakelen**  (verificatievereiste)
 
    * Schakel het gebruik van verificatie in (of uit) om toegang te krijgen tot de pagina.
    >[!NOTE]
    >
-   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)** .
+   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)**.
 
 * **Aanmeldingspagina**
 
@@ -180,7 +180,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Delen via sociale media**
 
-   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor de kerncomponent [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)Delen.
+   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor [De kerncomponent delen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
 
    * **Delen door gebruikers voor Facebook inschakelen**
    * **Gebruikersdeling inschakelen voor Pinterest**
@@ -207,7 +207,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Doelconfiguratie**
 
-   * Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-cloud/authoring/personalization/targeted-content.md)op te geven.
+   * Selecteer een [Merk om een werkingsgebied voor het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md) te specificeren.
    >[!NOTE]
    >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
 
@@ -245,42 +245,42 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 ### Sitestructuur {#site-structure}
 
-* Koppelingen maken naar pagina&#39;s die voor de hele site functionaliteit bieden, zoals **Aanmeldingspagina**, **Offline pagina**.
+* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmelden van pagina**, **Offlinepagina**, onder andere.
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 
-* Vanuit de **Sites** -console:
-   * [Een nieuwe pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) maken (een subset van de eigenschappen)
-   * Klikken of tikken op **eigenschappen**
+* Vanuit de **Sites**-console:
+   * [Een nieuwe pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)  maken (een subset van de eigenschappen)
+   * **Eigenschappen** klikken of tikken
       * Voor één pagina
       * Voor meerdere pagina&#39;s (alleen een subset van de eigenschappen is beschikbaar voor massabewerking)
 * Vanuit de pagina-editor:
    * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
-### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
+### Uit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
-Klik of tikken op **Eigenschappen** om de pagina-eigenschappen te definiëren:
+Klik op **Eigenschappen** of tikken om de pagina-eigenschappen te definiëren:
 
-1. Navigeer met de **Sites** -console naar de locatie van de pagina waarvan u de eigenschappen wilt weergeven en bewerken.
-1. Selecteer de optie **Eigenschappen** voor de vereiste pagina met een van de volgende opties:
+1. Navigeer met de console **Sites** naar de locatie van de pagina waarvoor u eigenschappen wilt weergeven en bewerken.
+1. Selecteer de optie **Eigenschappen** voor de vereiste pagina met behulp van:
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * De pagina-eigenschappen worden weergegeven met de juiste tabbladen.
 1. Bekijk of bewerk de eigenschappen naar wens.
-1. Gebruik vervolgens **Opslaan** om uw updates op te slaan, gevolgd door **Sluiten** om terug te keren naar de console.
+1. Gebruik vervolgens **Opslaan** om uw updates op te slaan, gevolgd door **Close** om terug te keren naar de console.
 
 ### Bij het bewerken van een pagina {#when-editing-a-page}
 
-Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigenschappen definiëren:
+Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** gebruiken om de pagina-eigenschappen te definiëren:
 
 1. Open de pagina waarvan u de eigenschappen wilt bewerken.
 1. Selecteer het pictogram **Pagina-informatie** om het selectiemenu te openen:
 1. Selecteer **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
    * **Annuleren**
    * **Opslaan en sluiten**
-1. Sla de wijzigingen op met de knop **Opslaan en sluiten** .
+1. Met de knop **Opslaan en sluiten** kunt u de wijzigingen opslaan.
 
-### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
+### Uit de siteconsole - Meerdere pagina&#39;s {#from-the-sites-console-multiple-pages}
 
 Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
@@ -298,7 +298,7 @@ Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgen
 
 U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
 
-* Bij het bladeren door de **Sites** -console
+* Tijdens het bladeren door de **Sites** console
 * Nadat u **Zoeken** hebt gebruikt om een set pagina&#39;s te zoeken
 
 Nadat u de pagina&#39;s hebt geselecteerd en op de optie **Eigenschappen** hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
@@ -324,15 +324,15 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
       * Als u de paginaselectie tot één pagina reduceert, zijn alle eigenschappen zichtbaar.
    * Algemene eigenschappen met een gemeenschappelijke waarde
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alle* waarden gemeenschappelijk zijn. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld Tags), worden waarden alleen weergegeven als *all* algemeen zijn. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
       * Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
 * **Bewerken**
 
    * U kunt de waarden in de beschikbare velden bijwerken.
-      * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed** selecteert.
+      * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Done** selecteert.
       * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
-   * Velden die veel voorkomen, maar die verschillende waarden hebben op de verschillende pagina&#39;s, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`. Bij het bewerken van dergelijke velden moet de nodige aandacht worden besteed om gegevensverlies te voorkomen.
+   * Velden die algemeen zijn, maar verschillende waarden hebben op de verschillende pagina&#39;s, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`. Bij het bewerken van dergelijke velden moet de nodige aandacht worden besteed om gegevensverlies te voorkomen.
 
 >[!NOTE]
 >
