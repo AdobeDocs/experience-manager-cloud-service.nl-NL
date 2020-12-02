@@ -18,7 +18,7 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 
 ## Laat je inspireren. Blijf op de hoogte.
 
-[Meld u aan](https://www.adobe.com/subscription/dynamic-media-newsletter.html) om de nieuwsbrief voor dynamische media maandelijks in uw postvak te ontvangen.
+[Meld u ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) aan om de nieuwsbrief voor dynamische media maandelijks in uw Postvak IN te vullen.
 
 ## Hebt u een probleem met de Dynamic Media Newsletter gemist?
 
@@ -50,7 +50,7 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 
    >[!IMPORTANT]
    >
-   >We willen ervoor zorgen dat we de nieuwsbrief Dynamic Media alleen sturen naar degenen die deze willen ontvangen. Als u de nieuwsbrief na deze uitgave wilt blijven ontvangen, moet u zich [hier](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)voor aanmelden.
+   >We willen ervoor zorgen dat we de nieuwsbrief Dynamic Media alleen sturen naar degenen die deze willen ontvangen. Als u de nieuwsbrief na deze uitgave wilt blijven ontvangen, moet u zich [hier](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0) aanmelden.
 
 * **[Februari 2020, uitgave 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
