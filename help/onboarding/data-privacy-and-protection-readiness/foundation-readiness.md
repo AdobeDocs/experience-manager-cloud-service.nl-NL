@@ -20,17 +20,17 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe aan privacykwesties, en wat dit voor u als Adobe betekent, zie de klant van de Privacy van de [Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over wat Adobe aan privacykwesties, en dit betekent voor u als Adobe klant, zie [Adobe Privacy Center](https://www.adobe.com/privacy.html) betekent.
 
-## Ondersteuning voor gegevensprivacy en -bescherming van AEM Stichting {#aem-foundation-data-privacy-and-protection-support}
+## AEM ondersteuning voor gegevensprivacy en -bescherming van stichtingen {#aem-foundation-data-privacy-and-protection-support}
 
 Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt opgeslagen gehouden in het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, om de toegang te richten en verzoeken te schrappen.
 
-## Een gebruikersprofiel openen {#accessing-a-user-profile}
+## Een gebruikersprofiel {#accessing-a-user-profile} openen
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de console van het Beleid van de Gebruiker, door aan **[!UICONTROL Tools - Security - Users]** of rechtstreeks te doorbladeren aan `https://<serveraddress>:<serverport>/security/users.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Tools - Security - Users]** te bladeren of rechtstreeks naar `https://<serveraddress>:<serverport>/security/users.html` te bladeren
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,11 +40,11 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
    ![zoeken naar account](assets/dpp-foundation-01.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder het **[!UICONTROL Details]** lusje.
+1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tabel.
 
    ![gebruikersprofiel](assets/dpp-foundation-02.png)
 
-### HTTP API {#http-api}
+### HTTP-API {#http-api}
 
 Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
@@ -75,9 +75,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Een gebruiker uitschakelen en de bijbehorende profielen verwijderen {#disabling-a-user-and-deleting-the-associated-profiles}
+## Een gebruiker uitschakelen en de bijbehorende profielen {#disabling-a-user-and-deleting-the-associated-profiles} verwijderen
 
-### Gebruiker uitschakelen {#disable-user}
+### Gebruiker {#disable-user} uitschakelen
 
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
 2. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs om aan te geven dat het is geselecteerd.
@@ -92,13 +92,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![account uitgeschakeld](assets/dpp-foundation-04.png)
 
-### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
+### Gebruikersprofielgegevens {#delete-user-profile-information} verwijderen
 
 >[!NOTE]
 >
 >Voor AEM als Cloud Service is er geen handprocedure beschikbaar van UI voor de schrapping van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
 
-### HTTP API {#http-api-1}
+### HTTP-API {#http-api-1}
 
 In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en hoe u de profielen die beschikbaar zijn op de standaardlocatie, kunt verwijderen.
 
