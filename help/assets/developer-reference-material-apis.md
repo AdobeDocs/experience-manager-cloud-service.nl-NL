@@ -3,9 +3,9 @@ title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1203'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!DNL Assets] API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
 
-Het artikel bevat referentiemateriaal en bronnen voor ontwikkelaars van [!DNL Assets] als Cloud Service. Het omvat nieuwe uploadmethode, API verwijzing, en informatie over de steun die in postverwerkingswerkschema&#39;s wordt verstrekt.
+Het artikel bevat referentiemateriaal en bronnen voor ontwikkelaars van [!DNL Assets] als een [!DNL Cloud Service]. Het omvat nieuwe uploadmethode, API verwijzing, en informatie over de steun die in postverwerkingswerkschema&#39;s wordt verstrekt.
 
 ## Elementen uploaden {#asset-upload-technical}
 
-[!DNL Experience Manager] als Cloud Service een nieuwe methode biedt om elementen te uploaden naar de repository. Gebruikers kunnen de elementen rechtstreeks uploaden naar de cloudopslag met HTTP API. De stappen voor het uploaden van een binair bestand zijn:
+[!DNL Experience Manager] als  [!DNL Cloud Service] biedt een nieuwe methode om elementen te uploaden naar de repository. Gebruikers kunnen de elementen rechtstreeks uploaden naar de cloudopslag met HTTP API. De stappen voor het uploaden van een binair bestand zijn:
 
 1. [Verzend een HTTP-aanvraag](#initiate-upload). Het informeert [!DNL Experience Manage]r plaatsing van uw intent om een nieuw binair getal te uploaden.
 1. [POST de inhoud van de ](#upload-binary) binaire illustratie aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
@@ -118,7 +118,7 @@ Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Manager] als Cloud Service. De API&#39;s van [!DNL Adobe Experience Manager] 6.5 zijn afgekeurd. De methoden voor het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
+De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Manager] als [!DNL Cloud Service]. De API&#39;s van [!DNL Adobe Experience Manager] 6.5 zijn afgekeurd. De methoden voor het uploaden of bijwerken van elementen of uitvoeringen (elke binaire upload) zijn afgekeurd in de volgende API&#39;s:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, zoals  `AssetManager.createAsset(..)`
@@ -138,7 +138,7 @@ Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met ext
 
 Klanten die een upgrade uitvoeren van eerdere versies van [!DNL Experience Manager], kunnen de asset-microservices gebruiken om elementen te verwerken. De &#39;cloud-native asset microservices&#39; zijn veel eenvoudiger te configureren en gebruiken. Enkele workflowstappen die in de [!UICONTROL DAM Update Asset]-workflow in de vorige versie werden gebruikt, worden niet ondersteund.
 
-[!DNL Experience Manager] als Cloud Service de volgende workflowstappen ondersteunen:
+[!DNL Experience Manager] als  [!DNL Cloud Service] ondersteuning voor de volgende workflowstappen:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -193,5 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [De Experience Cloud als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [De Experience Cloud als  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
