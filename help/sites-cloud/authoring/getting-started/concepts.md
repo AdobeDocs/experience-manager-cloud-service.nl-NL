@@ -30,7 +30,7 @@ In de auteursomgeving wordt de functionaliteit van AEM beschikbaar gesteld door 
 
 ## Auteursomgeving {#author-environment}
 
-De auteur werkt in wat als het **auteursmilieu** wordt bekend. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
+De auteur werkt in wat als **auteursomgeving** wordt bekend. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
 
 >[!NOTE]
 >
@@ -53,12 +53,12 @@ Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
 >
 >AEM wordt ook vanuit de auteursomgeving beheerd.
 
-## Publicatie-omgeving {#publish-environment}
+## Omgeving {#publish-environment} publiceren
 
 Als de inhoud van uw site gereed is, wordt deze gepubliceerd naar de **publicatieomgeving**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
 
-Zie Pagina&#39;s [publiceren in het document voor meer informatie over het publiceren en ongedaan maken van het publiceren van pagina&#39;s.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+Zie het document [Pagina&#39;s publiceren.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
-## Dispatcher {#dispatcher}
+## Verzending {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, implementeert de **[verzender](/help/implementing/dispatcher/overview.md)** taakverdeling en caching.
+Om de prestaties voor bezoekers van uw website te optimaliseren, implementeert de **[dispatcher](/help/implementing/dispatcher/overview.md)** taakverdeling en caching.
