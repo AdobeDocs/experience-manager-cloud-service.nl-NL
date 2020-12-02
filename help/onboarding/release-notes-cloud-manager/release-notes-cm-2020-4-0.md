@@ -23,13 +23,13 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.4.0 is 9 april 
 * De uitgever URLs zijn nu beschikbaar bij de pagina van het Milieu in de UI van de Manager van de Wolk.
 * Wijzigingen in navigatie om gebruikers toe te staan een programma te bewerken, te schakelen of toe te voegen vanuit de overzichtspagina van Cloud Manager.
 * Wijzigingen die gebruikers toestaan om programma te bewerken vanaf de landingspagina van de programmakaart op de landingspagina van Cloud Manager.
-* De nieuwe pijpleiding van de **Pijpleiding** die tegen het milieu wordt getoond het met wordt geassocieerd.
+* Nieuwe pijpleidingsstatus **Pijpleiding die** tegen het milieu wordt getoond het met wordt geassocieerd.
 * Verbeteringen om de pagina van de pijpleidingsuitvoering begrijpelijk te maken. Dit omvat vertoning van de naam van de Pijpleiding (niet productiepijplijn slechts) en type, en een badge om erop te wijzen of is de pijpleidingsstatus Bezig/Geannuleerd/Ontbroken.
 * Knopinfo om de gebruikerservaring en de begrijpelijkheid te verbeteren rond de vraag waarom de knop Programma/omgeving toevoegen is uitgeschakeld.
 * Mislukte omgevingen kunnen nu worden verwijderd via de gebruikersinterface en de API.
 * Het proces dat wordt gebruikt om de wachtwoorden van de it te produceren is veerkrachtiger gemaakt aan kwesties in de onderliggende de dienstlaag.
 
-### Bug Fixes {#bug-fixes-cloud-manager}
+### Opgeloste problemen {#bug-fixes-cloud-manager}
 
 * De verbindingen aan het werkgebiedmilieu op de de detailpagina van de pijpleidingsuitvoering navigeerden niet constant aan de correcte plaats.
 * Individuele stappen in het proces voor het maken van een omgeving worden eerder dan nodig uitgesteld, waardoor het proces mislukt.
