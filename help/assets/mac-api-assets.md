@@ -3,9 +3,9 @@ title: HTTP-API voor assets
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar vi
 
 >[!NOTE]
 >
->Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), worden voor AEM als implementatie van een Cloud Service genegeerd. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload-technical) in plaats daarvan.
+>Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), zijn AEM vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload-technical) in plaats daarvan.
 
 ## Contentfragmenten {#content-fragments}
 
