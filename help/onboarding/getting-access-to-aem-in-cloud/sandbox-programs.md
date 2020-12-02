@@ -16,34 +16,34 @@ ht-degree: 0%
 
 Een programma Sandbox is één van de twee soorten programma&#39;s beschikbaar in AEM Cloud Service, het andere is een Regular programma.
 
-Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan de [AEM als verbintenissen](https://www.adobe.com/legal/service-commitments.html)van de Cloud Service.
+Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, of van het Bewijs van Concept (POC) te dienen. Zij zijn niet bedoeld om levend verkeer te vervoeren. Zij zijn niet onderworpen aan [AEM als Cloud Service Verbintenissen](https://www.adobe.com/legal/service-commitments.html).
 
 De omgevingen die in een sandbox worden gemaakt, zijn niet geconfigureerd voor automatisch schalen. Daarom zijn ze niet geschikt voor prestatie- of belastingtests.
 
 Sandbox-programma&#39;s omvatten sites en middelen en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het AEM archetype van het Project wordt gebaseerd.
 
-Verwijs naar het [Begrip van Programma&#39;s en de Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) van Programma om meer over de Types van Programma te leren.
+Verwijs naar [Begrijpend Programma en Types van Programma](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) om meer over de Types van Programma te leren.
 
 ### Attributen van Sandbox-programma&#39;s {#attributes-sandbox}
 
 Sandbox-programma&#39;s hebben de volgende kenmerken:
 
-1. **Programma maken:** Het maken van het Sandbox-programma omvat automatisch:
+1. **Programma maken:** het maken van het Sandbox-programma omvat automatisch:
    * opstelling van project met steekproefcode en inhoud
    * totstandbrenging van een ontwikkelomgeving
    * de aanleg van een niet-productiepijpleiding die naar ontwikkelomgeving (master tak die aan ontwikkelomgeving opstelt)
 
 1. **Oplossingen:** Sandbox-programma&#39;s omvatten AEM Sites en Middelen.
 
-1. **Updates AEM:** AEM updates kunnen handmatig worden toegepast op omgevingen in een Sandbox-programma en worden niet automatisch doorgestuurd.
+1. **AEM Updates:** AEM updates kunnen handmatig worden toegepast op omgevingen in een Sandbox-programma en worden niet automatisch doorgeduwd.
 
-1. **Sluimerstand:** De milieu&#39;s in een Sandbox programma worden automatisch gehiberd als geen activiteit voor een bepaalde periode wordt ontdekt. Gesamberde omgevingen kunnen handmatig worden gedehiberteerd.
+1. **Sluimerstand:** omgevingen in een Sandbox-programma worden automatisch genummerd als er gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Gesamberde omgevingen kunnen handmatig worden gedehiberteerd.
 
-### Sandboxprogramma&#39;s maken {#creating-sandbox-program}
+### Sandboxprogramma {#creating-sandbox-program} maken
 
 Met een wizard voor het maken van programma&#39;s kunt u een Sandbox-programma maken.
 
-Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar het [Creëren van een Programma](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) Sandbox voor meer details.
+Leer hoe te om een Programma van de Sandbox tot stand te brengen, verwijs naar [Creërend een Programma van Sandbox](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) voor meer details.
 
 ### Sandbox-omgevingen maken {#creating-sandbox-environments}
 
@@ -51,34 +51,34 @@ Sandbox-programma&#39;s worden automatisch in een ontwikkelomgeving geleverd op 
 
 De productie-Stadium milieureeks kan manueel aan het Programma van Sandbox worden toegevoegd, wanneer de gebruiker aan opstelling een productiepijplijn klaar is.
 
-Raadpleeg [Omgeving](/help/implementing/cloud-manager/manage-environments.md) toevoegen voor meer informatie over het handmatig maken van een omgeving.
+Meer informatie over het handmatig maken van een omgeving vindt u in [Omgeving toevoegen](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie.
 
-### Sandbox-omgevingen verwijderen {#deleting-sandbox-environments}
+### Sandbox-omgevingen {#deleting-sandbox-environments} verwijderen
 
 Gebruiker met de vereiste machtigingen kan een ontwikkelings- of productie-/werkgebiedomgeving of -sets verwijderen.
 
-Als u een omgeving wilt verwijderen, raadpleegt u [Omgeving](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) verwijderen voor meer informatie.
+Als u een omgeving wilt verwijderen, raadpleegt u [Omgeving verwijderen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) voor meer informatie.
 
 
 ## Sluiende en ontsmette zandbakomgevingen {#hibernating-introduction}
 
-De milieu&#39;s van het Programma van de zandbak gaan een *hibernatiemodus* in als geen activiteit voor een bepaalde periode wordt ontdekt.
+Sandbox Program-omgevingen voeren een *hibernatiemodus* in als gedurende een bepaalde periode geen activiteit wordt gedetecteerd.
 
 >[!NOTE]
 >De sluimerstand is uniek voor Sandbox-programmaomgevingen. Reguliere programmeeromgevingen houden geen hiberatie in.
 
 ### Sluimerstand {#hibernation-introduction}
 
-Sluimerstand kan automatisch of handmatig plaatsvinden. Het kan tot een paar minuten duren voor de milieu&#39;s van het Programma Sandbox om een *hibernatiemodus* in te gaan. De gegevens blijven behouden tijdens de hibernatie.
+Sluimerstand kan automatisch of handmatig plaatsvinden. Het kan tot een paar minuten voor de milieu&#39;s van het Programma van Sandbox duren om *hibernatiemodus* in te gaan. De gegevens blijven behouden tijdens de hibernatie.
 
 Sluimerstand wordt gecategoriseerd als:
 
-* **De automatische** milieu&#39;s van het Programma van Sandbox worden automatisch gehiberneerd na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoeken ontvangen.
+* **De milieu&#39;s van het Programma**  AutomaticSandbox worden automatisch hibernated na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoeken ontvangen.
 
 * **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet nodig is omdat de slaapstand automatisch zal plaatsvinden na een bepaalde periode (acht uur) van inactiviteit.
 
 >[!CAUTION]
->In de meest recente versie kunt u een koppeling rechtstreeks vanuit Cloud Manager naar de Developer Console niet gebruiken om een Sandbox-programmaomgeving te onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
+>In de meest recente versie kunt u een koppeling rechtstreeks vanuit Cloud Manager naar de Developer Console niet gebruiken om een Sandbox-programmaomgeving te onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
 
 #### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
@@ -92,45 +92,45 @@ U kunt uw Sandbox-programma handmatig op twee verschillende manieren via de Deve
 
 Voer de onderstaande stappen uit om uw Sandbox-programmaomgevingen handmatig te hiberneren:
 
-1. Navigeer naar de **Developer Console**.
-Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
+1. Navigeer naar **Developer Console**.
+Raadpleeg [Toegang tot ontwikkelaarsconsole](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over toegang tot de **Developer Console** via de **Environment**-kaart.
    >[!IMPORTANT]
-   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
+   >Als u rechtstreeks vanuit Cloud Manager een koppeling maakt naar de **Developer Console**, kunt u een Sandbox-programmaomgeving niet herbergen. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
 
-1. Klik op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
+1. Klik **Hibernate**, zoals aangetoond in het hieronder cijfer:
 
    ![](assets/hibernate-1.png)
 
    Of
 
-   Klik op de koppeling **Omgevingen** linksboven om de lijst met omgevingen weer te geven en klik vervolgens op **Slaapstand**, zoals in de onderstaande afbeelding wordt getoond:
+   Klik op de koppeling **Omgevingen** linksboven om de lijst met omgevingen weer te geven en klik vervolgens op **Hibernate**, zoals in de onderstaande afbeelding wordt getoond:
 
    ![](assets/hibernate-1b.png)
 
-1. Klik op **Slaapstand** om de stap te bevestigen.
+1. Klik **Hibernate** om de stap te bevestigen.
 
    ![](assets/hibernate-2.png)
 
-1. Wanneer de slaapstand is gelukt, wordt het volledige bericht voor uw omgeving weergegeven in het scherm **Developer Console** .
+1. Wanneer de winterslaap succesvol is, zult u het hibernatieproces volledige bericht voor uw milieu in het **scherm van de Console van de Ontwikkelaar** zien.
 
    ![](assets/hibernate-4.png)
 
 
 ### De-hibernatie {#de-hibernation-introduction}
 
-1. Navigeer naar de **Developer Console**.
-Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) (Toegang tot ontwikkelaarsconsole) voor meer informatie over toegang tot de **ontwikkelaarsconsole** vanaf de **milieukeuren** .
+1. Navigeer naar **Developer Console**.
+Raadpleeg [Toegang tot ontwikkelaarsconsole](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over toegang tot de **Developer Console** via de **Environment**-kaart.
 
    >[!IMPORTANT]
-   >Als u rechtstreeks vanuit Cloud Manager een koppeling naar de **ontwikkelaarsconsole** maakt, kunt u een Sandbox-programmaomgeving niet deïnstalleren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *programma-id* en 5678 is uw *milieu-id*.
+   >Als u rechtstreeks vanuit Cloud Manager een koppeling maakt naar de **Developer Console**, kunt u een Sandbox-programmaomgeving niet dehiberneren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
 
    >[!NOTE]
-   >U kunt ook naar de **ontwikkelaarsconsole** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gehiberneerde omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
+   >U kunt ook naar de **Developer Console** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gedownloade omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
 
    >[!IMPORTANT]
-   >De toegang tot de ontwikkelaarsconsole wordt gedefinieerd door de **Cloud Manager - Developer Role** in the **Admin Console**. Een gebruiker met een ontwikkelaarrol machtiging kan een Sandbox-programmaomgeving dehiberneren.
+   >Toegang tot de ontwikkelaarsconsole wordt gedefinieerd door de **Cloud Manager - Developer Role** in de **Admin Console**. Een gebruiker met een ontwikkelaarrol machtiging kan een Sandbox-programmaomgeving dehiberneren.
 
-1. Klik op De- **hibernate**, zoals in onderstaande afbeelding wordt getoond:
+1. Klik op **De-hibernate**, zoals getoond in de hieronder figuur:
 
    ![](assets/de-hibernation-img1.png)
 
@@ -141,7 +141,7 @@ Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environmen
    ![](assets/de-hibernate-1b.png)
 
 
-1. Klik op **De Hibernate** om de stap te bevestigen.
+1. Klik **De Sluimerstand** om de stap te bevestigen.
 
    ![](assets/de-hibernation-img2.png)
 
@@ -153,11 +153,11 @@ Raadpleeg [Developer Console](/help/implementing/cloud-manager/manage-environmen
 
    ![](assets/de-hibernation-img4.png)
 
-#### Machtigingen voor de-hibernate {#permissions-de-hibernate}
+#### Machtigingen om de-hibernate {#permissions-de-hibernate} te verwijderen
 
-Elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service, moet toegang hebben tot de **ontwikkelaarsconsole**, zodat hij of zij de omgeving kan dehiberneren.
+Elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service, moet toegang hebben tot de **Developer Console**, zodat hij of zij de omgeving kan dehiberneren.
 
-#### Een gedownloade omgeving openen {#accessing-hibernated-environment}
+#### Toegang tot een gegeneerde omgeving {#accessing-hibernated-environment}
 
 Wanneer de gebruiker om het even welke browser verzoeken tegen of de auteur of publicatielaag van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu beschrijft, zoals aangetoond in het hieronder cijfer beschrijft:
 
@@ -180,11 +180,11 @@ Raadpleeg [AEM versie-updates](/help/implementing/deploying/aem-version-updates.
 
 Een gebruiker kan handmatig AEM updates toepassen op de omgevingen in een Sandbox-programma.
 
-Raadpleeg [Bijgewerkt omgeving](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
+Raadpleeg [Omgeving bijwerken](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
 
 >[!NOTE]
 >* Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
->* Een handmatige update van *Productie* - of *Stage* -omgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.
+>* Een handmatige update van *Production* of *Stage*-omgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.
 
 
 
