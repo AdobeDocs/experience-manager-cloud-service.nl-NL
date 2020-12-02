@@ -1,6 +1,6 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen die [!DNL Experience Manager Assets] door een Cloud Service worden ondersteund.
+description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,18 +11,18 @@ ht-degree: 6%
 ---
 
 
-# [!DNL Assets] ondersteunde bestandsindelingen {#supported-file-formats}
+# [!DNL Assets] ondersteunde bestandsindelingen  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] als Cloud Service ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Daarnaast [!DNL Experience Manager Assets] biedt uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met behulp van [asset microservices](asset-microservices-configure-and-use.md).
+Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
 
 De hoogtepunten voor de omzetting van Activa die de microservices van activa gebruiken omvatten:
 
-* Zeer belangrijke [Adobe dossierformaten](#adobe-formats) die door de toepassingen en de diensten van Adobe worden geproduceerd, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] PDF.
-* Belangrijke bestandsindelingen voor [beeldbewerking](#image-formats).
-* [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
+* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] en [!DNL Adobe Acrobat] of PDF.
+* Sleutel [bestandsindelingen voor beeldbewerking](#image-formats).
+* [Camera Raw bestandsindelingen ](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Algemene [documentindelingen](#document-formats), inclusief Microsoft Office en de indeling Document openen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
 De volgende legenda beschrijft het steunniveau.
@@ -49,7 +49,7 @@ De volgende legenda beschrijft het steunniveau.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Voor [!DNL Adobe InDesign] bestanden (INDD) wordt de grootte van de uitvoering bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
+\* Voor [!DNL Adobe InDesign] bestanden (INDD) wordt de grootte van de vertoning bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
 
 ## Afbeeldingsindelingen {#image-formats}
 
@@ -75,7 +75,7 @@ De volgende legenda beschrijft het steunniveau.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | - | - | - | - |
-| PSD ‡ | ✓ | - | - | - | - |
+| PSD   ‡ | ✓ | - | - | - | - |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 
@@ -96,7 +96,7 @@ De volgende lijst met 3D-indelingen wordt ondersteund.
 
 Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -105,7 +105,7 @@ Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-medi
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] formaten {#camera-raw-formats}
+## [!DNL Camera RAW] formaten  {#camera-raw-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -165,7 +165,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Documentindelingen in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Format | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
+| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
