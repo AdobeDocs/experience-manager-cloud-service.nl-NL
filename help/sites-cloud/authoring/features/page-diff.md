@@ -20,22 +20,22 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!CAUTION]
 >
->De gebruiker moet over de machtiging **Wijzigen/Maken/Verwijderen** op het knooppunt beschikken `/content/versionhistory` om de functie te kunnen gebruiken.
+>De gebruiker moet **Modify/Create/Delete** toestemming op de knoop `/content/versionhistory` hebben om de eigenschap te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details over deze functie.
 
-## Use {#use}
+## {#use} gebruiken
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige status
-* Actieve kopieën - Live kopie met vervaging <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
-* [Starten](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
-* Taalkopieën - Een pagina voor en na (her)vertaling <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Versies](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
+* Actieve kopieën - Live kopie met blauwdruk <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Starten](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
+* Taalkopieën - Een pagina voor en na (re-)vertaling <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
-### Presentatie van de verschillen {#presentation-of-differences}
+### Presentatie van verschillen {#presentation-of-differences}
 
 Ongeacht de inhoud die wordt vergeleken, blijft de presentatie van het diff gelijk.
 
@@ -68,7 +68,7 @@ De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 >
 >Bij het vergelijken van taalkopieën wordt het markeren gedeactiveerd, omdat in een vertaling alles verandert en het markeren geen nut zou hebben.
 
-### Volledig scherm en afsluiten {#fullscreen-and-exiting}
+### Volledig scherm en {#fullscreen-and-exiting} afsluiten
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
 
@@ -97,7 +97,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Als er wijzigingen worden aangebracht in een afbeelding, zoals het wijzigen van de kenmerken alt, title of src, wordt deze in blauw gemarkeerd als gewijzigd. In sommige gevallen heeft de afbeelding echter een Base64-representatie van het kenmerk src en zelfs als beide afbeeldingen er hetzelfde uitzien, worden ze door het diff als verschillend gemarkeerd vanwege de verschillende src-kenmerken.
 * Het diff kan beeldomwenteling niet ontdekken.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen ondervindt met een diff, controleert u de [tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of de pagina is verplaatst.
+   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
 
 >[!NOTE]
 >
@@ -105,4 +105,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Zie de documentatie over [de](/help/implementing/developing/introduction/page-diff.md) ontwikkelaar van deze functie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden.
+>Raadpleeg de [documentatie voor ontwikkelaars](/help/implementing/developing/introduction/page-diff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.
