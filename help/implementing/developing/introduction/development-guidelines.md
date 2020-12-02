@@ -24,11 +24,11 @@ Tijdens de update van AEM als Cloud Service, zullen er instanties zijn met oude 
 
 Als de primaire code in de cluster moet worden geïdentificeerd, kan de API voor detectie van Apache Sling worden gebruikt om deze te detecteren.
 
-## Staat in geheugen {#state-in-memory}
+## Status in geheugen {#state-in-memory}
 
 De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan. Anders kan deze status verloren gaan als een instantie wordt gestopt.
 
-## Status van het bestandssysteem {#state-on-the-filesystem}
+## Status op het bestandssysteem {#state-on-the-filesystem}
 
 Het bestandssysteem van de instantie mag niet in AEM als Cloud Service worden gebruikt. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatief effect op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
@@ -38,11 +38,11 @@ Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou d
 
 Net als bij alles wat asynchroon gebeurt, zoals bij observatiegebeurtenissen, kan niet worden gegarandeerd dat het lokaal wordt uitgevoerd en moet het daarom met zorg worden gebruikt. Dit geldt zowel voor JCR-gebeurtenissen als voor Sling-brongebeurtenissen. Op het moment dat een wijziging plaatsvindt, kan de instantie worden verwijderd en worden vervangen door een andere instantie. Andere instanties in de topologie die op dat ogenblik actief zijn zullen op die gebeurtenis kunnen reageren. In dit geval zal dit echter geen lokale gebeurtenis zijn en is er misschien zelfs geen actieve leider in het geval van een doorlopende verkiezing van de leider op het moment dat het evenement wordt uitgegeven.
 
-## Achtergrondtaken en langdurige taken {#background-tasks-and-long-running-jobs}
+## Achtergrondtaken en Lange actieve taken {#background-tasks-and-long-running-jobs}
 
 Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn en het meest invoer herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuw vereiste voor dit soort code is, is het in AEM als Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
 
-Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en die moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke banen, is het best om de het [Verkopen planner van Banen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) als dit opnieuw minstens één uitvoering te gebruiken.
+Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en die moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke banen, is het best om [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw minstens eens uitvoering te gebruiken.
 
 De Sling Commons Planner zou niet voor het plannen moeten worden gebruikt aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het zal worden gepland.
 
@@ -52,41 +52,41 @@ Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observa
 
 Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, AEM instanties die op AEM als Cloud Service worden uitgevoerd, zullen een algemene time-outs afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
 
-Adobe raadt het gebruik van de meegeleverde [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) aan voor het maken van HTTP-verbindingen.
+Adobe raadt het gebruik aan van de meegeleverde [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van HTTP-verbindingen.
 
 Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid zelf nodig kan zijn, zijn:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) en/of [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (geleverd door AEM)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (niet aanbevolen omdat het verouderd is en vervangen wordt door versie 4.x)
-* [OK Http](https://square.github.io/okhttp/) (niet opgegeven door AEM)
+* [java.net.](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) URLand/or  [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Provided by AEM)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)  (niet aanbevolen omdat deze verouderd is en vervangen wordt door versie 4.x)
+* [OK Http](https://square.github.io/okhttp/)  (niet opgegeven door AEM)
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
 
 AEM als Cloud Service ondersteunt alleen de Touch UI voor klantcode van derden. Klassieke UI is niet beschikbaar voor aanpassing.
 
-## Native binaire getallen vermijden {#avoid-native-binaries}
+## Native binaire tekens {#avoid-native-binaries} vermijden
 
-Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen. Zo kan het bijvoorbeeld geen bestanden uitpakken `jar` of `tar` uitpakken.
+Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen. Het is bijvoorbeeld niet mogelijk om `jar`- of `tar`-bestanden uit te pakken.
 
 ## Geen streamingbinaire getallen via AEM als Cloud Service {#no-streaming-binaries}
 
 De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kern AEM diensten zal dienen.
 
-Bijvoorbeeld, gebruik niet `asset.getOriginal().getStream()`, die het downloaden van een binair getal op de van de dienst van de AEM tot stand brengt.
+Gebruik bijvoorbeeld `asset.getOriginal().getStream()` niet, waardoor het downloaden van een binair getal op de vaste schijf van de AEM service wordt geactiveerd.
 
-## Geen reverse Replication-agents {#no-reverse-replication-agents}
+## Geen reverse Replication Agents {#no-reverse-replication-agents}
 
 De omgekeerde replicatie van Publiceren aan Auteur wordt niet gesteund in AEM als Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van Publish instanties en potentieel de cluster van de Auteur wordt gedeeld.
 
-## De voorwaartse Medewerkers van de Replicatie zouden kunnen moeten worden gesteund {#forward-replication-agents}
+## De voorwaartse Agenten van de Replicatie zouden {#forward-replication-agents} kunnen moeten worden geporteerd
 
 Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aangepaste replicatiemiddelen worden niet ondersteund.
 
-## Controle en foutopsporing {#monitoring-and-debugging}
+## Bewaking en foutopsporing {#monitoring-and-debugging}
 
-### Logboeken {#logs}
+### Logbestanden {#logs}
 
-Voor lokale ontwikkeling worden logbestandvermeldingen naar lokale bestanden in de `/crx-quickstart/logs` map geschreven.
+Voor lokale ontwikkeling worden logbestandvermeldingen geschreven naar lokale bestanden in de map `/crx-quickstart/logs`.
 
 In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden vast te zetten. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -96,7 +96,7 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 
 >[!NOTE]
 >
->Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie het [Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
+>Om de hieronder vermelde configuratieveranderingen uit te voeren, moet u hen op een lokale ontwikkelomgeving tot stand brengen en dan hen duwen aan een AEM als instantie van de Cloud Service. Voor meer informatie over hoe te om dit te doen, zie [Het opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 **Het FOUTOPSPORINGSlogniveau activeren**
 
@@ -118,7 +118,7 @@ De logniveaus zijn als volgt:
 | 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
-### Thread Dumps {#thread-dumps}
+### Dumppen {#thread-dumps}
 
 Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, gelieve te contacteren AEM steun als de draaddumps voor het zuiveren van een kwestie nodig zijn, specificerend het nauwkeurige tijdvenster.
 
@@ -128,11 +128,11 @@ Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op di
 
 Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de AEMConsole van het Web (`/system/console`).
 
-Let op: bij lokale ontwikkeling (met gebruik van de snelstartprocedure voor de cloud) `/apps` en `/libs` kan rechtstreeks naar deze map worden geschreven. Dit is anders dan in cloudomgevingen waar deze mappen op hoofdniveau onveranderbaar zijn.
+Let op: bij lokale ontwikkeling (met behulp van de snelstartmodus voor de cloud) kunnen `/apps` en `/libs` rechtstreeks worden geschreven, wat anders is dan in cloudomgevingen waar deze mappen op het hoogste niveau onveranderbaar zijn.
 
-### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+### AEM als hulpmiddelen voor de ontwikkeling van Cloud Servicen {#aem-as-a-cloud-service-development-tools}
 
-Klanten hebben toegang tot CRXDE-site in de ontwikkelomgeving, maar niet tot het stadium of de productie. Er kan niet naar de onveranderlijke opslagplaats (`/libs`, `/apps`) worden geschreven bij uitvoering, zodat dit tot fouten leidt.
+Klanten hebben toegang tot CRXDE-site in de ontwikkelomgeving, maar niet tot het stadium of de productie. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
 
 Een reeks hulpmiddelen om AEM als ontwikkelaarmilieu&#39;s van de Cloud Service te zuiveren zijn beschikbaar in de Console van de Ontwikkelaar voor ontwikkelings, stadium, en productiemilieu&#39;s. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
@@ -160,7 +160,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Raadpleeg de documentatie bij [Cloud Manager voor meer informatie over het instellen van gebruikersmachtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor gewone programma&#39;s wordt de toegang tot de Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Zie [Documentatie van Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) voor meer informatie over het instellen van gebruikersmachtigingen.
 
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
@@ -171,7 +171,7 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 
 Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
 
-## IP-adres van speciale egress {#dedicated-egress-ip-address}
+## IP-adres van speciale uitgang {#dedicated-egress-ip-address}
 
 Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
 
@@ -211,13 +211,13 @@ Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HT
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip), die het roepende IP adres zal terugkeren.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip) te roepen, die het roepende IP adres zal terugkeren.
 
-## E-mail verzenden {#sending-email}
+## E-mail {#sending-email} verzenden
 
 AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
 
-### Toegang aanvragen {#requesting-access}
+### Toegang {#requesting-access} aanvragen
 
 Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
 
@@ -228,7 +228,7 @@ Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u e
 
 ### E-mails verzenden {#sending-emails}
 
-De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is vermeld, en niet rechtstreeks naar ontvangers.
+De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
 
 AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
 
@@ -238,18 +238,18 @@ AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver po
 
 ### Configuratie {#email-configuration}
 
-E-mails in AEM moeten worden verzonden met de OSGi-service [van de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)Day CQ Mail Service.
+E-mails in AEM moeten worden verzonden met de OSGi-service ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) van de [Day CQ-mailservice.
 
-Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen in de `com.day.cq.mailer.DefaultMailService OSGI` service worden aangebracht:
+Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen worden aangebracht in de `com.day.cq.mailer.DefaultMailService OSGI`-service:
 
 Indien haven 465 is aangevraagd:
 
-* instellen `smtp.port` op `465`
-* instellen `smtp.ssl` op `true`
-* instellen `smtp.starttls` op `false`
+* `smtp.port` instellen op `465`
+* `smtp.ssl` instellen op `true`
+* `smtp.starttls` instellen op `false`
 
 Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet ondersteunt):
 
-* instellen `smtp.port` op `587`
-* instellen `smtp.ssl` op `false`
-* instellen `smtp.starttls` op `true`
+* `smtp.port` instellen op `587`
+* `smtp.ssl` instellen op `false`
+* `smtp.starttls` instellen op `true`
