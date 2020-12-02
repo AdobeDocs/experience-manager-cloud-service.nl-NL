@@ -10,11 +10,11 @@ ht-degree: 0%
 ---
 
 
-# Een aangepaste domeinnaam ophalen {#getting-cdn}
+# Een aangepaste domeinnaam {#getting-cdn} ophalen
 
 U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of organisatie die domeinnamen beheert en verkoopt. Domeinnaamregistrars beheren domeinnamen op DNS-servers (Domain Name System).
 
 >[!NOTE]
 >Cloud Manager is geen registrar voor domeinnamen en biedt geen DNS-services.
 
-DNS is wat ons toestaat om douane, merkdomeinen in bijlage aan websites te hebben door machine-leesbare computeradressen, zoals `184.33.123.64` aan gedenkwaardige adressen zoals `www.wknd.com`. te vertalen.
+DNS is wat ons toestaat om douane, merkdomeinen in bijlage aan websites te hebben door machine-leesbare computeradressen, zoals `184.33.123.64` aan memorabele adressen zoals `www.wknd.com` te vertalen.
