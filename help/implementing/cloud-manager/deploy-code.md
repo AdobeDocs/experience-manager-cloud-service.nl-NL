@@ -21,9 +21,9 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
    ![](assets/deploy-code1.png)
 
 
-1. Het **scherm van de Uitvoering** van de Pijpleiding toont.
+1. De **Uitvoering van de pijpleiding** het schermvertoningen.
 
-   Klik op **Genereren** om het proces te starten.
+   Klik **Bouwstijl** om het proces te beginnen.
 
    ![](assets/deploy-code2.png)
 
@@ -43,7 +43,7 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
    * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
-   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteit testen](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
+   * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteitstests](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
 
@@ -51,13 +51,13 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
    Voor het **testen van de fase** worden de volgende stappen uitgevoerd:
 
    * Functioneel testen van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen.
-Raadpleeg Functionele tests voor [producten](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer informatie.
+Raadpleeg [Productfunctie testen](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer informatie.
 
    * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
       Raadpleeg [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer informatie.
 
    * Experience Audit: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
-Raadpleeg de [resultaten](/help/implementing/cloud-manager/experience-audit-testing.md) van Experience Audit voor meer informatie.
+Raadpleeg [Inzicht in de resultaten van Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
 
       ![](assets/testing-tab.png)
 
@@ -94,7 +94,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
 
    1. Er wordt een back-up gemaakt van de huidige configuraties en deze worden naar een tijdelijke locatie gekopieerd
    1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Raadpleeg Uw Dispatcher Configurations beheren voor meer informatie. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
-   1. Het artefact wordt geëxtraheerd naar de `httpd` map.  Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie.  Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
+   1. Het artefact wordt geëxtraheerd naar de map `httpd`.  Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie.  Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout gemeld aan Cloud Manager.
    1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het cachegeheugen van de verzender.
 
@@ -108,7 +108,7 @@ Wanneer de Manager van de Wolk aan niet productietopologieën opstelt, is het do
    >
    >U kunt de veranderingen van het taakverdelingsmechanisme in ontwikkeling en werkgebiedplaatsingen overslaan, namelijk losmaken en stappen in zowel niet productiepijpleidingen, voor ontwikkelaarmilieu&#39;s, als de productiepijplijn, voor werkgebiedmilieu&#39;s vastmaken.
 
-### Implementatie naar productiefase {#deployment-production-phase}
+### Implementatie in productiefase {#deployment-production-phase}
 
 Het proces voor het opstellen aan productietopologieën verschilt lichtjes om effect aan AEM bezoekers van de Plaats te minimaliseren.
 
