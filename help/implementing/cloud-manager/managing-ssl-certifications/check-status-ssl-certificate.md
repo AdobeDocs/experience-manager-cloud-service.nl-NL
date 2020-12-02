@@ -10,14 +10,17 @@ ht-degree: 0%
 ---
 
 
-# Status van een SSL-certificaat controleren {#checking-status-an-ssl-certificate}
+# Status controleren van een SSL-certificaat {#checking-status-an-ssl-certificate}
 
 De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd vanaf de pagina met SSL-certificaten of de pagina met omgevingsdetails.
 
 U kunt de status van een SSL-certificaat identificeren aan de hand van de volgende kleurenschema&#39;s:
 
-* **Groen** Geeft aan dat uw certificaat ten minste 60 dagen geldig is in de toekomst.
+* ****
+GreenGeeft aan dat uw certificaat in de toekomst ten minste 60 dagen geldig is.
 
-* **Orange** Geeft aan dat uw certificaat over minder dan 60 dagen verloopt. Het is tijd om ervoor te zorgen dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen via de interface van Cloud Manager om mogelijke toegang tot of uitval van sites te voorkomen. Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor het binnenkort verlopen van een certificaat.
+* ****
+OrangeGeeft aan dat uw certificaat over minder dan 60 dagen verloopt. Het is tijd om ervoor te zorgen dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen via de interface van Cloud Manager om mogelijke toegang tot of uitval van sites te voorkomen. Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor het binnenkort verlopen van een certificaat.
 
-* **Het rood** geeft aan dat uw SSL-certificaat ondanks meerdere meldingen is verlopen.
+* ****
+RedGeeft aan dat uw SSL-certificaat ondanks meerdere meldingen is verlopen.
