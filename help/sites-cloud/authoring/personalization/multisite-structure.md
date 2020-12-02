@@ -14,7 +14,7 @@ ht-degree: 8%
 
 Het volgende diagram toont hoe multisite steun voor gerichte inhoud gestructureerd is.
 
-Gebieden staan onder **/inhoud/campagnes/&lt;merk>** en elk merk heeft standaard een master gebied, dat automatisch wordt gemaakt. Elk gebied bevat zijn eigen reeks activiteiten, ervaringen en aanbiedingen.
+Gebieden staan onder **/content/campagnes/&lt;brand>** en elk merk heeft standaard een master gebied, dat automatisch wordt gemaakt. Elk gebied bevat zijn eigen reeks activiteiten, ervaringen en aanbiedingen.
 
 ![Multisite structuur](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
