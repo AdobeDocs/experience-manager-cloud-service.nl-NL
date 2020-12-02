@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Multi-Store instellen {#multi-store}
+# Installatie van meerdere winkels {#multi-store}
 
 De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Magento-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
@@ -34,7 +34,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
 ## Configuratie {#configuration}
 
-1. Meerdere winkels en winkelweergaven configureren volgens het patroon dat wordt beschreven in [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Meerdere winkels configureren en weergaven opslaan volgens het patroon dat wordt beschreven in [Magento Websites, Winkels en weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
 2. Zorg ervoor dat de verbinding tussen AEM &amp; Magento werkt.
 
@@ -49,10 +49,10 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar AEM Sites-console
-   * Navigeer naar het gebied of de hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
+   * Navigeer naar het gebied of de hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl
    * Pagina-eigenschappen selecteren en pagina-eigenschappen openen
    * Selecteer het tabblad Geavanceerd
-   * Selecteer in de `Configuration` sectie de configuratie die u stapsgewijs hebt gemaakt
+   * Selecteer in de sectie `Configuration` de configuratie die u stapsgewijs hebt gemaakt
 
 ## Aanvullende bronnen
 
