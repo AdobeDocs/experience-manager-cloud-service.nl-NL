@@ -46,7 +46,7 @@ De eerste stap in de planningsfase is nagaan in welke mate u bereid bent om van 
 
 U dient uw huidige AEM-broncode uitvoerig te controleren op alle belangrijke wijzigingen en verouderde functies om te bepalen hoeveel werk nodig is voor het overgangstraject.
 
-U kunt de beoordelingsstap versnellen door de Analysator van Beste praktijken op uw huidige AEM in werking te stellen. Raadpleeg de Analysator van [best practices voor meer informatie](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+U kunt de beoordelingsstap versnellen door de Analysator van Beste praktijken op uw huidige AEM in werking te stellen. Voor meer details verwijs naar [Analysator van Beste praktijken](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Als u al toegang hebt tot Cloud Manager en een Cloud Service-omgeving, wordt aangeraden dat u de huidige code uitvoert in een Cloud Manager-codekwaliteitspipeline om na te gaan welke codewijzigingen vereist zijn voor compatibiliteit met Cloud Service.
