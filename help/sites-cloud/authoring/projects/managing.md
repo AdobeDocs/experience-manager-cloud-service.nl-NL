@@ -14,13 +14,13 @@ ht-degree: 11%
 
 Met projecten kunt u uw project ordenen door bronnen in één entiteit te groeperen.
 
-In de console van **Projecten** , hebt u toegang tot en voert actie op uw projecten:
+In de **Projecten** console, hebt u toegang tot en voert actie op uw projecten:
 
 ![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console-detail.png)
 
 In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud van de tegel weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
 
-## Een project maken {#creating-a-project}
+## Een project {#creating-a-project} maken
 
 Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een project creeert:
 
@@ -36,11 +36,11 @@ De procedure om een project tot stand te brengen is voor alle projecten hetzelfd
 
    ![Een project maken](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definieer de **titel** en de **beschrijving** en voeg desgewenst een **miniatuurafbeelding** toe. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die wordt gebruikt in de URL.
+1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding toe, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die wordt gebruikt in de URL.
 
    ![Projectdetails toevoegen](/help/sites-cloud/authoring/assets/projects-title.png)
 
-1. Tik/klik op **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
+1. Tik/klik **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
 ### Middelen koppelen aan uw project {#associating-resources-with-your-project}
 
@@ -48,30 +48,30 @@ Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wi
 
 Bronnen aan uw project koppelen:
 
-1. Open uw project van de console van **Projecten** .
-1. Tik/klik op **Naast elkaar** toevoegen en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
+1. Open uw project van de **console Projecten**.
+1. Tik/klik **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt verbinden. U kunt meerdere typen tegels selecteren.
 
    ![Een tegel toevoegen aan een project](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
-   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in de tegels van het [Project.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in [de tegels van het Project.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
 
-1. Tik/klik op **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
+1. Tik/klik **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
-### Een project- of bronnenkoppeling verwijderen {#deleting-a-project-or-resource-link}
+### Een project- of bronnenkoppeling {#deleting-a-project-or-resource-link} verwijderen
 
 De zelfde methode wordt gebruikt om een project van de console of een verbonden middel van uw project te schrappen:
 
 1. Navigeer naar de juiste locatie:
 
-   * Om een project te schrappen gaat naar het hoogste niveau van de console van **Projecten** .
-   * Om een middelverbinding binnen een project te schrappen, open uw project in de console van **Projecten** .
+   * Om een project te schrappen ga naar het hoogste niveau van **Projecten** console.
+   * Om een middelverbinding binnen een project te schrappen, open uw project in **Projecten** console.
 
-1. Ga selectiewijze door te klikken **Uitgezocht** en uw project of middelverbinding te selecteren.
-1. Tik/klik op **Verwijderen**.
+1. Ga selectiemodus door **Select** te klikken en uw project of middelverbinding te selecteren.
+1. Tik/klik **Verwijderen**.
 
-1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Tik/klik op **Deselecteren** om de selectiemodus te sluiten.
+1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Tik/klik **Deselecteer** om de selectiemodus af te sluiten.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Items toevoegen aan een tegel:
 
    ![Item toevoegen aan een tegel](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
-1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectielen worden [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles)beschreven. In dit voorbeeld is een andere workflow toegevoegd.
+1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectelementen worden [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschreven. In dit voorbeeld is een andere workflow toegevoegd.
 
    ![Een ander item dat aan een tegel is toegevoegd](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
@@ -105,21 +105,21 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
    ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
-## Projectstatistieken weergeven {#viewing-project-statistics}
+## Projectstatistieken {#viewing-project-statistics} weergeven
 
-Om projectstatistieken, in de console van **Projecten** te bekijken, klik **tonen de Mening** van Statistieken. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **tonen opnieuw de Mening** van Statistieken om naar de console van **Projecten** te gaan.
+Om projectstatistieken, in **Projecten** console te bekijken, klik **toon de Mening van Statistieken**. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **Statistische weergave tonen** opnieuw om naar de **Projecten** console te gaan.
 
 ![Projectstatistieken](/help/sites-cloud/authoring/assets/projects-stats.png)
 
-### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
+### Een projecttijdlijn bekijken {#viewing-a-project-timeline}
 
-De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Als u de projecttijdlijn wilt weergeven, klikt of tikt u op de **tijdlijn**, gaat u naar de selectiemodus en selecteert u het project. Elementen worden weergegeven in het linkervenster. Klik/tik **Chronologie** om aan de console van **Projecten** terug te keren.
+De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Als u de projecttijdlijn wilt weergeven, klikt of tikt u op **Tijdlijn**, gaat u naar de selectiemodus en selecteert u het project. Elementen worden weergegeven in het linkervenster. Klik/tik **Chronologie** om aan **Projecten** console terug te keren.
 
 ![Tijdlijn project](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Actieve/Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en inactieve projecten, in de console van **Projecten** van een knevel te voorzien, klik de Actieve **Projecten** van de knevel. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
+Om tussen uw actieve en inactieve projecten, in **Projecten** console van een knevel te voorzien, klik **Actieve Projecten** in-/uitschakelen. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
 
 ![Knop Actieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -127,20 +127,20 @@ Als het pictogram een x naast heeft, toont het de inactieve projecten.
 
 ![Knop Inactieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## Projecten inactief of actief maken {#making-projects-inactive-or-active}
+## Projecten inactief of actief {#making-projects-inactive-or-active} maken
 
 U kunt een project willen inactief maken als u het hebt voltooid maar u wilt nog de informatie over het project houden.
 
 Een project inactief (of actief) maken:
 
-1. In de console van **Projecten** , open uw project en vind dan de de informatietegel **van het** Project.
+1. In **Projecten** console, open uw project en vind dan de **Tile van de Informatie van het Project**.
 
    >[!NOTE]
-   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie Tegels [toevoegen](#adding-items-to-a-tile).
+   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
 
-1. Tik/klik op **Bewerken**.
-1. Wijzig de kiezer van **Actief** in **Inactief** (of andersom).
+1. Tik/klik **Bewerken**.
+1. Wijzig de kiezer van **Active** in **Inactief** (of vice versa).
 
    ![Een project activeren](/help/sites-cloud/authoring/assets/projects-activate.png)
 
-1. Tik/klik op **Gereed** om uw wijzigingen op te slaan.
+1. Tik/klik **Done** om uw wijzigingen op te slaan.
