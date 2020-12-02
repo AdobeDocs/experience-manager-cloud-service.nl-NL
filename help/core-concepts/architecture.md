@@ -71,7 +71,7 @@ Er zijn drie soorten milieu&#39;s beschikbaar met AEM als Cloud Service:
 
 * **Ontwikkelomgeving**: hier kunnen ontwikkelaars AEM-applicaties implementeren onder dezelfde runtimevoorwaarden als de fase- en productieomgeving.
 
-   Raadpleeg [Omgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) beheren voor meer informatie.
+   Raadpleeg [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie.
 
 ## Programma&#39;s {#programs}
 
