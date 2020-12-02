@@ -2,9 +2,9 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 8%
 
 ---
@@ -381,6 +381,8 @@ Het script doet het volgende:
 
 1. De validator wordt uitgevoerd vanuit de vorige sectie om ervoor te zorgen dat alleen de ondersteunde instructies worden opgenomen. Als de configuratie ongeldig is, zal het manuscript ontbreken.
 2. De code voert `httpd -t command` uit om te testen of de syntaxis correct is zodat apache httpd kan starten. Indien succesvol, zou de configuratie klaar voor plaatsing moeten zijn
+
+Tijdens de implementatie van Cloud Manager wordt de `httpd -t syntax`-controle ook uitgevoerd en worden eventuele fouten opgenomen in het logbestand voor Cloud Manager `Build Images step failure`.
 
 ## Uw Apache- en Dispatcher-configuratie lokaal testen {#testing-apache-and-dispatcher-configuration-locally}
 
