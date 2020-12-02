@@ -10,13 +10,13 @@ ht-degree: 15%
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Panoramische afbeeldingen{#panoramic-images}
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook Voorinstellingen [voor viewers](/help/assets/dynamic-media/managing-viewer-presets.md)beheren.
+Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panoramisch beeld2](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -26,11 +26,11 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gelabeld met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags](/help/sites-cloud/authoring/features/tags.md)gebruiken.
+* Gelabeld met de trefwoorden `equirectangular` of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Zie [Elementen](/help/assets/manage-digital-assets.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
+Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -75,10 +75,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
+## Voorvertoning van panorama-afbeeldingen {#previewing-panoramic-images}
 
-Zie [Voorvertoning van elementen](/help/assets/dynamic-media/previewing-assets.md)weergeven.
+Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
 
-## Panorama-afbeeldingen publiceren {#publishing-panoramic-images}
+## Panorama-afbeeldingen {#publishing-panoramic-images} publiceren
 
-Zie Elementen [](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)publiceren.
+Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
