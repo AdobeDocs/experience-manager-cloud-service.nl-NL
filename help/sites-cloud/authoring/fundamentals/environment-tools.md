@@ -10,11 +10,11 @@ ht-degree: 12%
 ---
 
 
-# Ontwerpomgeving en -gereedschappen {#authoring-the-environment-and-tools}
+# Ontwerpomgeving en gereedschappen {#authoring-the-environment-and-tools}
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
-## Uw site beheren {#managing-your-site}
+## Uw site {#managing-your-site} beheren
 
 Met de **Sites**-console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde resource), navigatiepaden en, indien geselecteerd, secundaire sporen (bijvoorbeeld tijdlijn en verwijzingen).
 
@@ -34,18 +34,18 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 >
 >De eerste keer dat u een pagina opent om te bewerken, wordt in een reeks dia&#39;s een overzicht van de functies weergegeven.
 >
->U kunt de tour desgewenst overslaan en deze op elk gewenst moment herhalen door deze te selecteren in het menu **Pagina-informatie** .
+>U kunt desgewenst de tour overslaan en deze op elk gewenst moment herhalen door deze te selecteren in het menu **Pagina-informatie**.
 
 ## Toegang tot Help {#accessing-help}
 
-Wanneer u een pagina bewerkt, kunt u de **Help** openen via:
+Bij het bewerken van een pagina is **Help** toegankelijk vanuit:
 
 * De kiezer [**Pagina-informatie**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) die de inleidende dia&#39;s weergeeft (zoals de eerste keer dat u de editor opent)
-* De [configuratiedialoog](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) voor specifieke componenten (gebruikend? pictogram in de dialoogtoolbar), die contextgevoelige hulp toont
+* Het [configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) dialoog voor specifieke componenten (gebruikend ? pictogram in de dialoogtoolbar), die contextgevoelige hulp toont
 
-Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
+Aanvullende [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Browser voor componenten {#components-browser}
+## Componentbrowser {#components-browser}
 
 Componenten zijn de bouwstenen van AEM inhoud. U plaatst veelvoudige componenten op een pagina en vormt hun opties om uw inhoudspagina met AEM te bouwen.
 
@@ -55,7 +55,7 @@ De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowse
 
 ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Wanneer u het zijpaneel opent, schuift het van de linkerkant open (selecteer indien nodig het tabblad **Componenten** ). Wanneer u deze optie opent, kunt u door alle componenten bladeren die beschikbaar zijn voor de pagina.
+Wanneer u het zijpaneel opent, schuift het van de linkerkant open (selecteer **Componenten** tabel indien nodig). Wanneer u deze optie opent, kunt u door alle componenten bladeren die beschikbaar zijn voor de pagina.
 
 De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparatentype u gebruikt:
 
@@ -83,30 +83,30 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
 
-   Van de hoogste toolbar in browser van **Componenten** kunt u:
+   Van de hoogste toolbar in **Components** browser kunt u:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
 
-   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor het **inhoudsfragment**:
+   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor het **Inhoudsfragment**:
 
    ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Zie de [componentconsole](/help/sites-cloud/authoring/features/components-console.md)voor nog meer informatie over de beschikbare componenten.
+   Voor nog meer informatie over de componenten beschikbaar aan u ziet [Component Console](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
 >Een mobiel apparaat wordt gedetecteerd wanneer de breedte minder dan 1024 px is. Dit kan ook het geval zijn voor een klein bureaubladvenster.
 
-## Browser voor middelen {#assets-browser}
+## Elementenbrowser {#assets-browser}
 
-In de middelenbrowser worden alle [elementen](/help/assets/home.md) weergegeven die rechtstreeks op de huidige pagina kunnen worden gebruikt.
+In de middelenbrowser worden alle [assets](/help/assets/home.md) weergegeven die beschikbaar zijn voor rechtstreeks gebruik op de huidige pagina.
 
 De assetbrowser is een tabblad in het zijpaneel, samen met de [componentenbrowser](#components-browser) en de [contentstructuur](#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
 ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Wanneer u het zijpaneel opent, schuift het van de linkerkant open. Selecteer indien nodig het tabblad **Middelen** .
+Wanneer u het zijpaneel opent, schuift het van de linkerkant open. Selecteer indien nodig het tabblad **Middelen**.
 
 ![Knop voor middelenbrowser](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -118,12 +118,12 @@ Als u een element aan de pagina wilt toevoegen, selecteert u het element en slee
 
 * Een bestaand onderdeel van het desbetreffende type.
    * U kunt bijvoorbeeld een element van het type afbeelding naar een afbeeldingscomponent slepen.
-* Een [plaatsaanduiding](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in het alineasysteem om een nieuwe component van het juiste type te maken.
+* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in het paragraafsysteem om een nieuwe component van het aangewezen type tot stand te brengen.
    * U kunt bijvoorbeeld een element van het type afbeelding naar het alineasysteem slepen om een component Image te maken.
 
 >[!NOTE]
 >
->Dit is beschikbaar voor specifieke elementen en componenttypen. Zie Een component [invoegen met de middelenbrowser](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) voor meer informatie.
+>Dit is beschikbaar voor specifieke elementen en componenttypen. Zie [Een component invoegen met de middelenbrowser](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) voor meer informatie.
 
 Vanuit de bovenste werkbalk van de middelenbrowser kunt u de elementen filteren op:
 
@@ -155,19 +155,19 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 >
 >Een mobiel apparaat wordt ontdekt wanneer de breedte minder dan 1024px is; dat wil zeggen ook in een klein bureaubladvenster.
 
-Als u snel een wijziging in een element wilt aanbrengen, kunt u de [middeleneditor](/help/assets/manage-digital-assets.md) rechtstreeks vanuit de elementenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken.
+Als u snel een wijziging in een element moet aanbrengen, kunt u de [asseteditor](/help/assets/manage-digital-assets.md) rechtstreeks vanuit de elementenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken.
 
 ![De knop Element bewerken](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
 ## Inhoudsstructuur {#content-tree}
 
-De **inhoudsstructuur** geeft een overzicht van alle componenten op de pagina in een hiërarchie, zodat u in een oogopslag kunt zien hoe de pagina is samengesteld.
+De **Inhoudsstructuur** geeft een overzicht van alle componenten op de pagina in een hiërarchie, zodat u in een oogopslag kunt zien hoe de pagina is samengesteld.
 
 De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met componenten en elementen). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
 ![Knop Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer indien nodig het tabblad **Inhoudsstructuur** . Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
+Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer indien nodig het tabblad **Inhoudsstructuur**. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
 
 ![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -199,11 +199,11 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
 ## Fragmenten - gekoppelde inhoudsbrowser {#fragments-associated-content-browser}
 
-Als uw pagina Content Fragments bevat, hebt u ook toegang tot de [browser voor Gekoppelde inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content).
+Als uw pagina Content Fragments bevat, hebt u ook toegang tot de browser [voor Gekoppelde inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content).
 
 ## Verwijzingen {#references}
 
-**Verwijzingen** tonen verbindingen met de geselecteerde pagina:
+**In** verwijzingen worden verbindingen met de geselecteerde pagina weergegeven:
 
 * Blauwdrukken
 * Lanceringen
@@ -216,28 +216,28 @@ Open de vereiste console, navigeer dan aan het vereiste middel en open **Verwijz
 
 ![Verwijzingen, optie](/help/sites-cloud/authoring/assets/references.png)
 
-[Selecteer uw vereiste middel](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) om een lijst van verwijzingstypes relevant voor die bron te tonen:
+[Selecteer uw vereiste ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) bron om een lijst van verwijzingstypes relevant voor die bron te tonen:
 
 ![Details van verwijzingen](/help/sites-cloud/authoring/assets/references-detail.png)
 
 Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties zijn aanvullende acties beschikbaar wanneer u een specifieke verwijzing selecteert, zoals:
 
-* **Binnenkomende koppelingen**, bieden een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot **Bewerken** van een van deze pagina&#39;s wanneer u een specifieke koppeling selecteert
-* Instanties van geleende en geleende inhoud die de component **Verwijzing** gebruiken, kunt u van hieruit naar de verwijzende/referenced pagina navigeren
+* **Binnenkomende koppelingen**, biedt een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot  **** Editone van deze pagina&#39;s wanneer u een specifieke koppeling selecteert
+* Instanties van geleende en geleende inhoud die de **Referentie** component gebruiken, van hier kunt u aan de verwijzende/referenced pagina navigeren
 * [Opstarten](/help/sites-cloud/authoring/launches/overview.md), biedt toegang tot gerelateerde opstarties
 * Met Actieve kopieën worden de paden van alle live kopieën weergegeven die zijn gebaseerd op de geselecteerde bron. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
 * Blauwdruk bevat details en diverse handelingen <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Taalkopieën bevatten details en diverse handelingen <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* Taalkopieën bevatten details en verschillende handelingen <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
 ## Gebeurtenissen - tijdlijn {#events-timeline}
 
-Voor geschikte bronnen (bijvoorbeeld pagina&#39;s van de **Sites** -console of middelen van de **Assets** -console) kan de [tijdlijn worden gebruikt om de recente activiteit op geselecteerde items](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)weer te geven.
+Voor geschikte bronnen (bijvoorbeeld pagina&#39;s van de **Sites**-console of middelen van de **Assets**-console) kan de [tijdlijn worden gebruikt om de recente activiteit op geselecteerde items weer te geven](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Open de vereiste console, navigeer dan aan het vereiste middel en open **Chronologie**, gebruikend:
 
 ![Tijdlijn, optie](/help/sites-cloud/authoring/assets/timeline.png)
 
-[Selecteer uw vereiste bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)en **kies Alle** of **Activiteiten** tonen om recente acties op de geselecteerde bronnen weer te geven:
+[Selecteer uw vereiste bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) en  **toon** Alle  **** activiteiten tonen om recente acties op de geselecteerde bronnen weer te geven:
 
 ![Tijdlijndetails](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
@@ -257,21 +257,21 @@ Met het pictogram Pagina-informatie (equalizer) opent u een menu dat ook informa
 * [Weergeven als gepubliceerd](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Weergeven in beheerder](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
-* [Starten](/help/sites-cloud/authoring/launches/promoting.md) bevorderen (alleen als de pagina een introductie is)
+* [Starten](/help/sites-cloud/authoring/launches/promoting.md)  bevorderen (alleen als de pagina een introductie is)
 
-Bovendien kan **Pagina-informatie** waar nodig toegang bieden tot analyses en aanbevelingen.
+Daarnaast kan **Pagina-informatie**, indien van toepassing, toegang bieden tot analyses en aanbevelingen.
 
 ## Paginamodi {#page-modes}
 
 Er zijn verschillende modi voor het bewerken van een pagina die verschillende handelingen mogelijk maken:
 
-* [Bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md) - de modus die moet worden gebruikt voor het bewerken van de pagina-inhoud.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - hiermee kunt u afhankelijk van het apparaat een responsieve lay-out maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
-* [Doelstelling](/help/sites-cloud/authoring/personalization/targeted-content.md) - vergroot de relevantie van inhoud door de inhoud op alle kanalen te richten en te meten.
-* [Tijdlijn verdraaien](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - hiermee kunt u de status van een pagina op een bepaald tijdstip bekijken.
-* [Live Copy-status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : geeft een snel overzicht van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen.
+* [Bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md) : de modus die moet worden gebruikt voor het bewerken van de pagina-inhoud.
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) : hiermee kunt u afhankelijk van het apparaat een responsieve lay-out maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
+* [Doelstelling](/help/sites-cloud/authoring/personalization/targeted-content.md)  - vergroot de relevantie van inhoud door de inhoud op alle kanalen te richten en te meten.
+* [Met Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  kunt u de status van een pagina op een bepaald tijdstip weergeven.
+* [De status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  van het Levende Exemplaar - staat een snel overzicht van de levende exemplaarstatus toe en welke componenten worden/worden niet geërft.
 * [Voorvertoning](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving. of om te navigeren met koppelingen in de inhoud.
-* [Annotatie](/help/sites-cloud/authoring/fundamentals/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
+* [Annotatie](/help/sites-cloud/authoring/fundamentals/annotations.md) : wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
 U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pictogram verandert in de modus die u momenteel gebruikt:
 
@@ -290,15 +290,15 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 
 ## Padselectie {#path-selection}
 
-Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Als u een pad gemakkelijk wilt selecteren, kunt u in [padvelden](#path-fields) automatisch aanvullen en in de [padbrowser](#path-browser) kunt u een beter gekozen pad kiezen.
+Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. [padvelden](#path-fields) bieden automatisch aanvullen en met de [padbrowser](#path-browser) kunt u een pad eenvoudig selecteren.
 
 ### Padvelden {#path-fields}
 
-Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Zie [Componenten voor pagina&#39;s ontwerpen](/help/sites-cloud/authoring/fundamentals/components.md)voor meer informatie over het gebruik en bewerken van componenten.
+Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Zie [Componenten voor pagina-ontwerpomgeving](/help/sites-cloud/authoring/fundamentals/components.md) voor meer informatie over het gebruik en het bewerken van componenten.
 
 Padvelden beschikken nu over de functionaliteit voor automatisch aanvullen en vooruitkijken, zodat u een resource gemakkelijker kunt vinden.
 
-Als u op de knop Dialoogvenster **Selectie** openen in het padveld klikt, wordt het dialoogvenster [Padbrowser](#path-browser) geopend voor gedetailleerdere selectieopties.
+Als u op de knop **Dialoogvenster Selectie openen** in het padveld klikt, wordt het dialoogvenster [Padbrowser](#path-browser) geopend voor gedetailleerdere selectieopties.
 
 ![Dialoogvenster Selectie openen](/help/sites-cloud/authoring/assets/open-selection-dialog-button.png)
 
@@ -308,14 +308,14 @@ U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden t
 
 ### Padbrowser {#path-browser}
 
-De wegbrowser is georganiseerd als de [kolommening](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) van de plaatsenconsole, die voor meer gedetailleerde selectie van middelen toestaat.
+De padbrowser is geordend als de [kolomweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) van de siteconsole, zodat u uitgebreidere bronnen kunt selecteren.
 
 ![Padbrowser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Zodra een bron is geselecteerd, wordt de knop **Selecteren** rechtsboven in het dialoogvenster actief. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
+* Zodra een middel wordt geselecteerd, wordt **Select** knoop bij het hoger-recht van de dialoog actief. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
 * Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de **X** naast het getal om de selectie op te heffen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
-* U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de **X** in het zoekveld om de zoekopdracht te wissen.
+* U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik **X** in het onderzoeksgebied om het onderzoek te ontruimen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
    ![Filters, optie](/help/sites-cloud/authoring/assets/filters-option.png)
