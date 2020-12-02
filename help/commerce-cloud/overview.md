@@ -11,13 +11,13 @@ ht-degree: 0%
 ---
 
 
-# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
+# Introductie AEM Handel als Cloud Service {#commerce-intro}
 
 De Handel van de Experience Manager als Cloud Service bestaat uit het Kader van de Integratie van de Handel (CIF), dat Adobe aanbevolen patroon is om de handelsdiensten en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden. Hierdoor kunnen Adobe-klanten buitengewone en gepersonaliseerde omnichannel-shopping-ervaring bieden op basis van geavanceerde technologie.
 
 Het kader van de Integratie van de Handel is een add-on module voor Experience Manager als Cloud Service en verstrekt een reeks auteursinstrumenten, componenten, en een verwijzingsopslag om de ontwikkeling van integratie tussen Experience Manager als Cloud Service en handelsoplossingen te versnellen.
 
-## CIF-uitkeringen {#cif-benefits}
+## CIF Voordelen {#cif-benefits}
 
 De belangrijkste voordelen zijn:
 
@@ -41,13 +41,13 @@ De belangrijkste voordelen zijn:
 
 CIF toe:voegen-On verleent toegang tot handel auteursgereedschap zoals de Console van het Product, Product &amp; de Bestellers van de Categorie of productonderzoek voor auteurs om hen toe te staan om rijke ervaringen met marketing en handelsinhoud tot stand te brengen. Invoegtoepassing beheert ook de achterste verbinding aan Magento (of alternatief handelsysteem) via GraphQL. Zodra toe:voegen-op wordt voorzien wordt het opgesteld op AEM als milieu&#39;s van de Cloud Service automatisch.
 
-### AEM CIF Core-componenten {#aem-cif-core}
+### AEM CIF Core Components {#aem-cif-core}
 
 De AEM CIF Core-componenten zijn aan de serverzijde en client-side gerenderde componenten met ondersteuning voor Magento GraphQL. Ze worden gebruikt om statische, cacheable en SEO-vriendelijke handelsopslagproducten te maken op basis van AEM technologieën.
 
 De basiscomponenten worden verstrekt, gemeenschappelijk over handelsimplementaties zoals het Detail van het Product, de Lijst van het Product, Navigatie, Onderzoek, enz. Ze kunnen ongewijzigd worden gebruikt of worden uitgebreid.
 
-De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) werken net als de [AEM Sites Core-componenten](https://github.com/adobe/aem-core-wcm-components) , maar zijn toegewijd aan specifieke gevallen van gebruik.
+De [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) werken als de [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) maar zijn gewijd aan handel specifieke gebruiks-gevallen.
 
 De belangrijkste voordelen van deze componenten zijn:
 
@@ -61,7 +61,7 @@ Alle componenten zijn open-sourced op [GitHub](https://github.com/adobe/aem-core
 
 ### AEM Venia Storefront {#aem-venia-storefront}
 
-De [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) is een moderne, productiegerichte referentie-winkel die een elementaire B2C-handelsreis laat zien. Het kan worden gebruikt om handelsprojecten te versnellen en projecten te versnellen gebruikend AEM, CIF, en Magento. Het toont beste praktijken voor het integreren van AEM en Magento en toont hoe te om de [AEM componenten](https://github.com/adobe/aem-core-cif-components) van de Kern van CIF en de Componenten [van de](https://github.com/adobe/aem-core-wcm-components) AEM Sites Core te gebruiken en steunt de eindpunten van GraphQL van de Handel van Adobe. Het voorziet ook pre-sales van een verwijzingsplaats om de integratie tussen AEM en Magento aan te tonen.
+De [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) is een moderne, productieklaar die een eenvoudige B2C-handelsreis toont. Het kan worden gebruikt om handelsprojecten te versnellen en projecten te versnellen gebruikend AEM, CIF, en Magento. Het toont beste praktijken voor het integreren van AEM en Magento en toont hoe te om [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) en [AEM Sites Core Componenten ](https://github.com/adobe/aem-core-wcm-components) te gebruiken en Adobe Commerce GraphQL eindpunten te steunen. Het voorziet ook pre-sales van een verwijzingsplaats om de integratie tussen AEM en Magento aan te tonen.
 
 De AEM Venia Storefront is een toepassing van gemengde pagina&#39;s waarin AEM het glas en de Magento bezit op een volkomen ongeëvenaarde manier de handelsnedes steunt. Zowel rendering aan de serverzijde als renderen aan de clientzijde worden in de storefront gebruikt. Rendering aan de serverzijde wordt gebruikt om statische inhoud te leveren en renderen aan de clientzijde wordt gebruikt om dynamische inhoud te leveren.
 
@@ -69,7 +69,7 @@ De pagina&#39;s van het product en van de catalogus zijn vrij statisch en worden
 Deze pagina&#39;s worden dynamisch gemaakt, op de server weergegeven, in het cachegeheugen opgeslagen op de AEM dispatcher en vervolgens aan de browser geleverd.
 Voor meer dynamische kenmerken, zoals voorraad of prijs, worden daarentegen componenten aan de clientzijde gebruikt. Client-side componenten of de componenten van het Web halen gegevens direct van Magento via GraphQL APIs en de inhoud wordt dan teruggegeven op browser.
 
-#### Afhandeling {#checkout}
+#### Uitchecken {#checkout}
 
 Deze verwijzingswinkel gebruikt de client-side component van de Kart die het het winkelwagentje en de controlevorm teruggeeft om een volledig ervaringsintegratiepatroon aan te tonen waar u commerciële ervaringen met Magento kunt leveren die op een volledig onopvallende manier lopen en AEM het glas bezit. Aanbevolen wordt gebruik te maken van de geleverde, geabstraheerde betalingsmethoden. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe noch de wolken van de Magento PCI gevoelige gegevens houden of overgaan.
 
@@ -77,21 +77,21 @@ Deze verwijzingswinkel gebruikt de client-side component van de Kart die het het
 
 Het beheer van de rekening wordt behandeld door Magento en de verwijzingsopslag gebruikt cliënt-kant React-gebaseerde componenten om AEM toe te laten om de ervaring voor de volgende functionaliteit terug te geven: Account maken, aanmelden en wachtwoord vergeten.
 
-Het project van AEM Venia Storefront is een open bron en voor meer informatie, zie [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia).
+Het AEM project van Venia Storefront is open bron en voor meer details, verwijs naar [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia).
 
-### Projectarchetype AEM {#aem-project-archtype}
+### Projectarchetype {#aem-project-archtype} AEM
 
-Het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) van het Project kan worden gebruikt om tot een minimaal, op best-praktijken-gebaseerd project van Adobe Experience Manager als uitgangspunt voor uw eigen AEM projecten te leiden. Optioneel kunnen [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) worden opgenomen in een nieuw gegenereerd project.
+Met het [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) kunt u een minimaal Adobe Experience Manager-project op basis van best practices maken als startpunt voor uw eigen AEM. Naar keuze [AEM kunnen de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) in een onlangs geproduceerd project worden omvat.
 
-### CIF-uitbreidingslaag {#cif-extension}
+### CIF Extension Layer {#cif-extension}
 
 De CIF uitbreidingslaag is een middenlaag om complexe bedrijfslogica te ontvangen. Het runt het Adobe I/O Runtime-platform dat op het serverloze platform Adobe is. Het staat u toe om de dienstvraag van begin tot eind uit te breiden door zaken en proceslogica op een microserviceniveau te injecteren. De bedrijfslogica zou bijvoorbeeld plaats en kanaal moeten gebruiken om een inventarisstrategie te bepalen. De logica van het proces zou bijvoorbeeld zijn om gepersonaliseerde informatie terug te winnen.
 
 ### CIF-integratielaag {#cif-integration-layer}
 
-De de integratielaag van CIF wordt gebruikt om integratie met andere handelsoplossingen te standaardiseren. Het stelt het platform van Adobe I/O Runtime in werking dat Adobe op het serverloze platform is en toelaat op een microserviceniveau door derde in kaart te brengen APIs tegen Adobe Handel APIs. Om u te helpen aan de bouw van derdeintegratie met AEM beginnen, hebben wij een [verwijzingsimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) gecreeerd om aan te tonen hoe een niet-Magento handelsafstand via de Handel APIs van de Adobe (Magento GraphQL APIs) kan worden geïntegreerd.
+De de integratielaag van CIF wordt gebruikt om integratie met andere handelsoplossingen te standaardiseren. Het stelt het platform van Adobe I/O Runtime in werking dat Adobe op het serverloze platform is en toelaat op een microserviceniveau door derde in kaart te brengen APIs tegen Adobe Handel APIs. Om u te helpen aan de bouw van derde integraties met AEM beginnen, hebben wij [verwijzingsimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) gecreeerd om aan te tonen hoe een niet-Magento handelsafstand via de Handel APIs van de Adobe (Magento GraphQL APIs) kan worden geïntegreerd.
 
-## Integratiepatronen AEM handel {#aem-commerce-integration}
+## AEM de Patronen van de Integratie van de Handel {#aem-commerce-integration}
 
 Enkele algemeen uitgevoerde AEM de integratiepatronen van de Handel worden hieronder getoond.
 
