@@ -16,7 +16,7 @@ Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren o
 
 ## Overzicht {#overview}
 
-De JSON-export is gebaseerd op [verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)en op het [verkoopmodel van de exporteur](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (dat zelf op [Jackson-annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)berust).
+De JSON-export is gebaseerd op [Sling Models](https://sling.apache.org/documentation/bundles/models.html) en op het [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)-framework (dat zelf afhankelijk is van [Jackson-annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
 Dit betekent dat de component een Sling Model moet hebben als het JSON moet uitvoeren. Daarom zult u deze twee stappen moeten volgen om de uitvoer van JSON op om het even welke component toe te laten.
 
@@ -29,7 +29,7 @@ Eerst moet een Sling Model voor de component worden bepaald.
 
 >[!NOTE]
 >
->Zie het artikel [Developing Sling Model Exporters in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)voor een voorbeeld van het gebruik van Sling Modellen.
+>Zie het artikel [Sling Model Exporters ontwikkelen in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) voor een voorbeeld van het gebruik van Sling Modellen.
 
 De implementatieklasse Sling Model moet met het volgende worden geannoteerd:
 
@@ -39,9 +39,9 @@ De implementatieklasse Sling Model moet met het volgende worden geannoteerd:
 @JsonSerialize(as = MyComponent.class)
 ```
 
-Zo weet u zeker dat de component zelfstandig kan worden geëxporteerd met de `.model` kiezer en de `.json` extensie.
+Dit zorgt ervoor dat uw component zelfstandig kan worden geëxporteerd met de kiezer `.model` en de extensie `.json`.
 
-Daarnaast wordt hiermee aangegeven dat de klasse Sling Model kan worden aangepast in de `ComponentExporter` interface.
+Daarnaast wordt hiermee aangegeven dat de klasse Sling Model kan worden aangepast in de interface `ComponentExporter`.
 
 >[!NOTE]
 >
@@ -49,37 +49,37 @@ Daarnaast wordt hiermee aangegeven dat de klasse Sling Model kan worden aangepas
 
 >[!NOTE]
 >
->De `ExporterConstants` klassen en `ComponentExporter` klassen komen uit de `com.adobe.cq.export.json` bundel.
+>De `ExporterConstants` en `ComponentExporter` klassen komen uit de `com.adobe.cq.export.json` bundel.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 
-Hoewel het geen standaard gebruikscase is, is het mogelijk om veelvoudige selecteurs naast de `model` selecteur te vormen.
+Hoewel het geen standaard gebruiksgeval is, is het mogelijk om veelvoudige selecteurs naast `model` selecteur te vormen.
 
 ```
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-In dat geval moet de `model` kiezer echter de eerste kiezer zijn en moet de extensie `.json`.
+In een dergelijk geval moet de `model`-kiezer echter de eerste kiezer zijn en moet de extensie `.json` zijn.
 
-## De interface van het verkoopmodel notities aanbrengen {#annotate-the-sling-model-interface}
+## Annoteer de Sling Model Interface {#annotate-the-sling-model-interface}
 
-Om door het kader van de Exporteur van JSON in aanmerking te worden genomen, zou de modelinterface de `ComponentExporter` interface (of `ContainerExporter`, in het geval van een containercomponent) moeten uitvoeren.
+Om door het kader van de Exporteur van JSON in aanmerking te worden genomen, zou de Model interface `ComponentExporter` interface (of `ContainerExporter`, in het geval van een containercomponent) moeten uitvoeren.
 
-De overeenkomstige interface van het Schilmodel (`MyComponent`) zou dan geannoteerd gebruikend [Jackson annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) worden om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
+De overeenkomstige interface van het Verzamelmodel (`MyComponent`) zou dan worden geannoteerd gebruikend [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
 
-De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methodes zouden moeten in series worden vervaardigd. Standaard worden alle methoden die de gebruikelijke naamgevingsconventie voor getters respecteren, geserialiseerd en worden hun JSON-eigenschapnamen op natuurlijke wijze afgeleid van de namen van getter. Dit kan worden voorkomen of genegeerd door de naam van de JSON-eigenschap te wijzigen `@JsonIgnore` of `@JsonProperty` .
+De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methodes zouden moeten in series worden vervaardigd. Standaard worden alle methoden die de gebruikelijke naamgevingsconventie voor getters respecteren, geserialiseerd en worden hun JSON-eigenschapnamen op natuurlijke wijze afgeleid van de namen van getter. Dit kan worden voorkomen of met `@JsonIgnore` of `@JsonProperty` worden met voeten getreden om het bezit anders te noemen JSON.
 
 ## Voorbeeld {#example}
 
-[De kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) ondersteunen JSON-export en kunnen als referentie worden gebruikt.
+[De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de Kern steunen de uitvoer JSON en kunnen als verwijzing worden gebruikt.
 
 Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-component en de bijbehorende geannoteerde interface.
 
-## Related Documentation {#related-documentation}
+## Verwante documentatie {#related-documentation}
 
 Zie voor meer informatie:
 
 * [Inhoudsfragmenten in de gebruikershandleiding voor middelen](/help/assets/content-fragments/content-fragments.md)
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en de component [Inhoudsfragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de kern en de component van het Fragment van de  [Inhoud](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
