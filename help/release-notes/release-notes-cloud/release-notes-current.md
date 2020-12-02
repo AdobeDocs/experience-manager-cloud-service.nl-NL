@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Nieuw in [!DNL Assets] en [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Opname van bulkmiddelen**: Klanten een schaalbare, in de cloud geïntegreerde innameservice bieden die  [!DNL Experience Manager] als een Cloud Service-architectuur wordt gebruikt, inclusief services voor het microgebruik van bedrijfsmiddelen. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [bulkimportgereedschap](/help/assets/add-assets.md#bulk-ingestion-tool).
+* **Opname van bulkmiddelen**: Klanten een schaalbare, in de cloud geïntegreerde innameservice bieden die  [!DNL Experience Manager] als een Cloud Service-architectuur wordt gebruikt, inclusief services voor het microgebruik van bedrijfsmiddelen. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [tool voor het bulksgewijs invoegen van middelen](/help/assets/add-assets.md#asset-bulk-ingestor).
 Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Gebruik voor kleinere taken bij insluiten de [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) of [upload met de gebruikersinterface van Elementen](/help/assets/add-assets.md#upload-assets).
 
    ![Configuratie van bulkimporteur](/help/assets/assets/bulk-import-config-low-res.png)
