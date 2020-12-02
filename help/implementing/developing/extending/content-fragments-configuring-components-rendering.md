@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Contentfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verschillende [geavanceerde services](#definition-of-advanced-services-that-need-configuration) voor het renderen van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verschillende [geavanceerde services](#definition-of-advanced-services-that-need-configuration) met betrekking tot het renderen van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door de Dienst [te vormen OSGi - de Configuratie](#osgi-service-content-fragment-component-configuration)van de Component van het Fragment van de Inhoud.
+Dit wordt gedaan door [OSGi Dienst - de Configuratie van de Component van het Fragment van de Inhoud te vormen](#osgi-service-content-fragment-component-configuration).
 
 Deze informatie is vereist wanneer:
 
@@ -25,7 +25,7 @@ U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
->* **Als u de hieronder beschreven [geavanceerde services](#definition-of-advanced-services-that-need-configuration)** niet nodig hebt, kunt u deze configuratie negeren.
+>* **Als u de hieronder beschreven  [geavanceerde](#definition-of-advanced-services-that-need-configuration)** services niet nodig hebt, kunt u deze configuratie negeren.
    >
    >
 * **Wanneer u of de uit-van-de-doos component(en)** uitbreidt gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
@@ -36,14 +36,14 @@ U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 >
 Daarom wordt aanbevolen de Core Components te gebruiken.
 
-## Definitie van de Geavanceerde Diensten die Configuratie vereisen {#definition-of-advanced-services-that-need-configuration}
+## Definitie van de Geavanceerde Diensten die Configuratie {#definition-of-advanced-services-that-need-configuration} vereisen
 
 De diensten die de registratie van een component vereisen zijn:
 
 * De afhankelijkheden correct bepalen tijdens de publicatie (zorg er dus voor dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
-* Het beheer/de afhandeling van *tussen inhoud.*
-* Beheer/verwerking van *gemengde media-elementen.*
+* The management/handling of *in-between content.*
+* Het beheer/afhandeling van *gemengde media-elementen.*
 * Dispatcher flush for referenced fragments (if a page containing a fragment is re-published).
 * Op alinea&#39;s gebaseerde rendering gebruiken.
 
@@ -51,13 +51,13 @@ Als u één of meerdere van deze eigenschappen nodig hebt, dan (typisch) is het 
 
 ## OSGi Service - Configuratie van de Component van het Fragment van de Inhoud {#osgi-service-content-fragment-component-configuration}
 
-De configuratie moet aan de Configuratie **van de Component van het Fragment van de Component van de** Inhoud worden gebonden OSGi:
+De configuratie moet aan de dienst worden gebonden OSGi **de Configuratie van de Component van het Fragment van de Inhoud**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Zie [Configuratie](/help/implementing/deploying/overview.md#osgi-configuration) OSGi voor verdere details.
+>Zie [OSGi Configuration](/help/implementing/deploying/overview.md#osgi-configuration) voor meer informatie.
 
 Bijvoorbeeld:
 
@@ -69,7 +69,7 @@ De configuratie OSGi is:
  <thead>
   <tr>
    <td>Label</td>
-   <td>OSGi-configuratie<br /> </td>
+   <td>OSGi Configuration<br /> </td>
    <td>Beschrijving</td>
   </tr>
  </thead>
@@ -97,7 +97,7 @@ De configuratie OSGi is:
  </tbody>
 </table>
 
-Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen beschreven die door de component voor elke alinea (d.w.z. `jcr:paragraph` voor elke componentinstantie) moeten worden gedefinieerd, zodat de services deze op de juiste wijze kunnen detecteren en verwerken.
+Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen weergegeven die door de component voor elke alinea (d.w.z. `jcr:paragraph` voor elke componentinstantie) zodat de services deze correct kunnen detecteren en verwerken.
 
 <table>
  <thead>
@@ -109,7 +109,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als <em>één element wordt gerenderd</em>.</p> <p>Waarden:</p>
+   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als er in <em>rendermodus met één element</em> één element staat.</p> <p>Waarden:</p>
     <ul>
      <li><code>all</code> : om alle alinea's te renderen</li>
      <li><code>range</code> : om het bereik van alinea's te bepalen dat wordt verschaft door <code>paragraphRange</code></li>
@@ -117,7 +117,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd in de rendermodus <em>van</em>één element.</p> <p>Format:</p>
+   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd als er in <em>rendermodus met één element</em> wordt weergegeven.</p> <p>Format:</p>
     <ul>
      <li><code>1</code> of <code>1-3</code> of <code>1-3;6;7-8</code> of <code>*-3;5-*</code>
      <ul>
@@ -131,7 +131,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) worden geteld als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
+   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) als alinea's (<code>true</code>) worden geteld of niet (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>
