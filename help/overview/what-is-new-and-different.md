@@ -69,7 +69,7 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 ## Updates AEM {#aem-updates}
 
 >[!NOTE]
->Zie de [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)voor meer informatie.
+>Zie [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md) voor meer informatie.
 
 AEM als Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de instanties van de Productie en van het Stadium aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
 
@@ -113,11 +113,11 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren. Raadpleeg voor meer informatie de opties [Programma&#39;s en Programmatypen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) .
+* Nieuwe programma&#39;s maken en beheren. Raadpleeg [Programma&#39;s en programmatypen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) voor meer informatie.
 
-* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Raadpleeg [Omgevingen](/help/implementing/cloud-manager/manage-environments.md) beheren voor meer informatie.
+* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie.
 
-* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Verwijs naar het [Vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) voor meer details.
+* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Raadpleeg [Uw CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) configureren voor meer informatie.
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
