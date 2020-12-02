@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Inleiding {#introduction}
 
-Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de gebruikersinterface kunt identificeren met een unieke merknaam. Uw AEMaaCS wordt voorzien van een standaarddomeinnaam, beëindigend binnen `*.adobearmcloud.com`. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
+Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de gebruikersinterface kunt identificeren met een unieke merknaam. Uw AEMaaCS wordt voorzien van een standaarddomeinnaam, die in `*.adobearmcloud.com` beëindigt. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
 >[!NOTE]
 >Aangepaste domeinnamen worden alleen ondersteund in Cloud Manager voor siteprogramma&#39;s (publicatieservice). Elke CM-omgeving kan maximaal 50 aangepaste domeinen per omgeving hosten.
