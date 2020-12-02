@@ -10,17 +10,17 @@ ht-degree: 4%
 ---
 
 
-# Configuring Your Account Environment {#configuring-your-account-environment}
+# Uw accountomgeving {#configuring-your-account-environment} configureren
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
 Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de optie van de [Gebruiker](#user-settings) in de kopbal toegang te hebben.
+Begin door tot [User](#user-settings) optie in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
-In het dialoogvenster **Gebruikersinstellingen** hebt u toegang tot:
+In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
 
 * Imiteren als
    * Met Impersonate als functionaliteit, kan een gebruiker namens een andere gebruiker werken. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -47,7 +47,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters** (standaard)
+   * **Meerdere vensters**  (standaard)
 
       * Pagina&#39;s worden in een nieuw venster geopend.
    * **Eén venster**
@@ -94,4 +94,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bestandsconfiguratie**
 
-   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder de integratie [van](/help/assets/aem-assets-adobe-stock.md)Adobe Stock heeft ingeschakeld.
+   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md) heeft ingeschakeld.
