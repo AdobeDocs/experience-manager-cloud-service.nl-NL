@@ -1,5 +1,5 @@
 ---
-title: Aanbevolen procedures voor integratie met [!DNL Adobe Creative Cloud]
+title: Aanbevolen werkwijzen om te integreren met [!DNL Adobe Creative Cloud]
 description: De beste praktijken integreren een plaatsing van de Experience Manager met Adobe Creative Cloud om werkschema's van de activaoverdracht te stroomlijnen en maximumefficiency te bereiken.
 contentOwner: AG
 mini-toc-levels: 1
@@ -12,7 +12,7 @@ ht-degree: 18%
 ---
 
 
-# Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
+# Aanbevolen werkwijzen voor AEM- en Creative Cloud-integratie {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager (AEM) Assets is een DAM-oplossing (Digital Asset Management) die met Adobe Creative Cloud kan worden geïntegreerd om DAM-gebruikers te helpen met creatieve teams samen te werken en de samenwerking bij het maken van inhoud te stroomlijnen.
 
@@ -32,7 +32,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Middelen van Adobe Stock van hoge kwaliteit en gebruiksklaar maken | Marketers helpen het proces voor het maken van inhoud te versnellen door hulp te bieden bij het aanschaffen en detecteren van bedrijfsmiddelen. Creatieve professionals gebruiken de goedgekeurde middelen direct vanuit hun creatieve gereedschappen. | AEM Assets; Adobe Stock Marketplace metagegevensvelden |
 | Elementen distribueren en delen door organisaties | De interne afdelingen/de lokale takken en de externe partners, de distributeurs, en de agentschappen gebruiken de goedgekeurde activa die door de ouderorganisatie worden gedeeld. De organisatie wil de gemaakte middelen veilig en naadloos delen voor breder hergebruik. | Merkportal, Commentaar voor delen van bedrijfsmiddelen |
 
-## Adobe-aanbod ter ondersteuning van de behoefte aan samenwerking {#adobe-offerings-to-support-the-collaboration-need}
+## Adobe-aanbod ter ondersteuning van de samenwerkingsbehoefte {#adobe-offerings-to-support-the-collaboration-need}
 
 | Waardevoorstel voor de betreffende personen | Adobe-aanbieding | Betrokken oppervlakken |
 |---|---|---|
@@ -53,11 +53,11 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 | Detecteren - door AEM mappen bladeren | Ja | Webinterface AEM en bureaubladacties | Als u op het gedeelde netwerk bladert, schakelt u de miniaturen uit om te voorkomen dat binaire bestanden met elementen worden gedownload. |
 | Detecteren - toegang AEM verzamelingen | Ja | Webinterface AEM en bureaubladacties |  |
 | Detecteren - middelen zoeken van AEM | Ja | Webinterface AEM en bureaubladacties |  |
-| Gebruiken - element openen | Ja | Ja, voor elke app | [Openen vanuit webinterface](/help/assets/manage-digital-assets.md#previewing-assets) of vanuit Finder |
+| Gebruiken - element openen | Ja | Ja, voor elke app | [Openen vanuit ](/help/assets/manage-digital-assets.md#previewing-assets) webinterface of vanuit Finder |
 | Gebruiken - element van AEM in een document plaatsen | Ja - insluiten | Ja - koppelen of insluiten | AEM bureaubladtoepassing biedt toegang tot elementen als bestanden op het lokale bestandssysteem. Deze koppelingen in de native apps worden weergegeven door lokale paden. |
-| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Als u de optie in AAL](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) uitschakelt, wordt de bron standaard opgeslagen op de Creative Cloud Storage-account van de gebruiker (gesynchroniseerd door de Creative Cloud-app). |
+| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Bij uitchecken in ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) AAL wordt het middel standaard opgeslagen op de Creative Cloud Storage-account van de gebruiker (gesynchroniseerd door de Creative Cloud-app). |
 | Bewerken - Bezig met werk buiten AEM | Ja - Asset beschikbaar in de Creative Cloud-opslagaccount van de gebruiker gesynchroniseerd met desktop. | Ja |  |
-| Bewerken - wijzigingen uploaden | Ja - [Inchecken](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
+| Bewerken - wijzigingen uploaden | Ja - [Inchecken van handeling](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
 | Uploaden - één bestand | Ja - het actieve document wordt geüpload | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets); Aangepaste scripts of gereedschappen |
 | Diverse - gebruiker en aanmelding | Creative Cloud-gebruiker die zich heeft aangemeld bij Creative Cloud-bureaublad wordt herkend (SSO) | AEM gebruiker/aanmelding | Gebruikers van beide oplossingen tellen mee voor de AEM gebruikersquota. |
@@ -70,15 +70,15 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor een configureerbare SaaS-invoegtoepassing op AEM Assets voor het publiceren van middelen.
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalfor a configureerbare, SaaS-invoegtoepassing voor AEM Assets voor het publiceren van middelen.
 
-* De oplossingen van de douane worden gecreeerd gebaseerd op de codebasis van de Commons [van het Aandeel van](https://adobe-marketing-cloud.github.io/asset-share-commons/) Activa.
-* AEM [koppeling delen](/help/assets/share-assets.md) om elementen ad hoc te delen via koppelingen.
-* [AEM Assets-webinterface](/help/assets/manage-digital-assets.md) met gebieden voor externe partijen die zijn beveiligd door AEM Access Control-instelling en met noodzakelijke aanpassingen in de IT-/netwerkconfiguratie, zodat deze externe gebruikers toegang hebben tot AEM.
+* De oplossingen van de douane worden gecreeerd gebaseerd op [Commons van het Aandeel van activa](https://adobe-marketing-cloud.github.io/asset-share-commons/) codebasis.
+* AEM [link share](/help/assets/share-assets.md) om elementen ad hoc te delen met behulp van koppelingen.
+* [AEM Assets-](/help/assets/manage-digital-assets.md) webinterface met gebieden voor externe partijen die zijn beveiligd door AEM Access Control-instelling en met noodzakelijke aanpassingen in de IT-/netwerkconfiguratie, zodat deze externe gebruikers toegang hebben tot AEM.
 
-## Belangrijkste concepten en gebruiksgevallen {#key-concepts-and-use-cases}
+## Belangrijke concepten en gebruiksgevallen {#key-concepts-and-use-cases}
 
-### Verklarende woordenlijst {#glossary-of-common-terms}
+### Verklarende woordenlijst met algemene termen {#glossary-of-common-terms}
 
 * **Werk in uitvoering of creatief werk in uitvoering (WIP):** Een fase in de levenscyclus van assets waarbij een asset meerdere wijzigingen ondergaat en doorgaans nog niet klaar is om te worden gedeeld met grotere teams.
 * **Creatieve assets:** Assets die klaar zijn om te worden gedeeld met een groter team, of die zijn geselecteerd/goedgekeurd door het creatieve team om te delen met marketing- of LOB-teams.
@@ -114,7 +114,7 @@ Dit is een korte samenvatting van beste praktijken voor AEM &amp; de Integratie 
 
 ### Toegang tot Adobe Stock-middelen van AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
-[Dankzij de integratie](/help/assets/aem-assets-adobe-stock.md) van AEM en Adobe Stock kunnen AEM gebruikers zoeken, voorvertonen, licenties aanschaffen en opslaan, van Adobe Stock naar AEM. Bij gelicentieerde en opgeslagen Adobe Stock-elementen zijn de metagegevens van de Stock geselecteerd. Deze kunnen worden gebruikt om met extra filters naar deze elementen te zoeken.
+[AEM en Adobe Stock-](/help/assets/aem-assets-adobe-stock.md) integratie bieden AEM gebruikers de mogelijkheid om middelen van Adobe Stock naar AEM te zoeken, voor te vertonen, te licentiëren en op te slaan. Bij gelicentieerde en opgeslagen Adobe Stock-elementen zijn de metagegevens van de Stock geselecteerd. Deze kunnen worden gebruikt om met extra filters naar deze elementen te zoeken.
 
 Een paar belangrijke punten over deze integratie:
 
@@ -125,7 +125,7 @@ Een paar belangrijke punten over deze integratie:
 Creatieve gebruikers die werken in Creative Cloud-apps met de extensie Adobe Asset Link kunnen niet alleen toegang krijgen tot middelen met een licentie van Adobe Stock naar AEM, maar kunnen ook het deelvenster Creative Cloud-bibliotheken gebruiken om Adobe Stock-middelen te zoeken, voor te vertonen en in licentie te geven.
 Activa van Adobe Stock die in licentie zijn gegeven en in AEM zijn opgeslagen, worden beschikbaar voor de bredere teams die toegang hebben tot de implementatie van AEM Assets, terwijl creatieve licenties voor activa van Adobe Stock via het deelvenster Bibliotheken van Creative Cloud ze standaard alleen beschikbaar maken op hun Creative Cloud-account.
 
-## Elementen opslaan in een DAM {#about-storing-assets-in-a-dam}
+## Informatie over het opslaan van elementen in een DAM {#about-storing-assets-in-a-dam}
 
 Om een efficiënte werkstroom tussen creatieve en marketing/lijn-van-zaken (LOB) teams te ontwerpen en de beste steunmogelijkheden te kiezen, is het belangrijk om te begrijpen wanneer en waarom de activa in DAM worden opgeslagen.
 
@@ -139,7 +139,7 @@ De opslag van activa is ook onderworpen aan technische overwegingen en middelgeb
 
 Vaak is het niet wenselijk om alle elementen en updates op te slaan. Bijvoorbeeld, als de updates aan specifieke activa van slechte kwaliteit zijn en bovenmatige middelen verbruiken, kunnen de activa niet in DAM worden opgeslagen.
 
-#### Wanneer elementen zijn opgeslagen in DAM {#when-assets-are-stored-in-dam}
+#### Wanneer elementen worden opgeslagen in DAM {#when-assets-are-stored-in-dam}
 
 Creatieve teams (en organisaties) zijn gewoonlijk niet geïnteresseerd in het opslaan van middelen in elke fase van de levenscyclus van de middelen. In de volgende gevallen worden bijvoorbeeld geen elementen opgeslagen:
 
@@ -183,11 +183,11 @@ Externe agentschappen en freelancers zonder directe toegang tot het DAM-exemplaa
 Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgekeurde middelen:
 
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
-* Gebruik [AEM Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor veilige distributie van middelen aan externe partners
-* Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* Gebruik [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
+* Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Commons voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Het Toegangsbeheer van het gebruik opstelling in AEM en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP toegestaan lijst) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Zij kunnen AEM Web UI gebruiken om activa te krijgen en nieuwe inhoud te uploaden in uw DAM.
 
-#### Aan de slag met middelen van AEM {#work-in-progress-on-assets-from-aem}
+#### Werk bezig met middelen van AEM {#work-in-progress-on-assets-from-aem}
 
 Zoals in dit document wordt besproken, is het raadzaam belangrijke updates van elementen uit te voeren, ook wel &#39;werk in uitvoering&#39; genoemd, zonder dat alle bewerkingen die in het lokale bestand zijn opgeslagen, als wijzigingen worden geüpload naar AEM. Dit versnelt het werk van een Desktopgebruiker, beperkt gebruikte netwerkbandbreedte, en houdt de activa chronologie schoon en concentreert zich op gecontroleerde, belangrijke updates.
 
@@ -215,11 +215,11 @@ Deze beschrijving verwijst naar het operationeel uploaden van bestanden (bijvoor
 
 U kunt de volgende uploadmogelijkheden gebruiken:
 
-* Als u grote/hiërarchische mappen bulksgewijs wilt uploaden, gebruikt u AEM bureaubladtoepassing die functionaliteit voor het uploaden van [mappen](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) biedt. U kunt ook hiërarchische mapstructuren uploaden. Elementen worden op de achtergrond geüpload en zijn daarom niet gekoppeld aan een webbrowsersessie
+* Als u grote/hiërarchische mappen bulksgewijs wilt uploaden, gebruikt u AEM bureaubladtoepassing die [functionaliteit voor het uploaden van mappen](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) biedt. U kunt ook hiërarchische mapstructuren uploaden. Elementen worden op de achtergrond geüpload en zijn daarom niet gekoppeld aan een webbrowsersessie
 * Als u enkele bestanden uit één map wilt uploaden, sleept u de bestanden rechtstreeks naar de webinterface of gebruikt u de optie Maken in de AEM Assets-webinterface.
 * Afhankelijk van uw bedrijfsvereisten kunt u ook aangepaste uploader gebruiken.
 
-#### Digitale middelen rechtstreeks vanaf het bureaublad beheren {#managing-digital-assets-directly-from-desktop}
+#### Digitale middelen rechtstreeks vanaf desktop {#managing-digital-assets-directly-from-desktop} beheren
 
 Als u Delen van netwerkbestanden gebruikt om digitale elementen te beheren, kan het gebruik van de netwerkshare die is toegewezen door AEM bureaubladtoepassing, worden beschouwd als een handige vervanging. Wanneer de overgang van netwerkdossieraandelen, AEM Webinterface een rijke reeks mogelijkheden van het Beheer van Digitale Middelen verstrekt die veel verder gaan dan wat op een netwerkaandeel (onderzoek, inzamelingen, meta-gegevens, samenwerking, voorproeven, etc.) mogelijk is, en AEM Desktopapp verstrekt een handige verbinding om de server-kantDAM bewaarplaats met het werk op Desktop aan te sluiten.
 
