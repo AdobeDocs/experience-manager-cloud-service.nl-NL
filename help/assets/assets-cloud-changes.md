@@ -1,18 +1,18 @@
 ---
-title: Opvallende wijzigingen in Adobe Experience Manager Assets als Cloud Service
-description: Opvallende wijzigingen in Adobe Experience Manager Assets in AEM Cloud Service in vergelijking met Adobe Experience Manager 6.5.
+title: Opvallende wijzigingen in Adobe Experience Manager Assets als a [!DNL Cloud Service]
+description: Opvallende wijzigingen in Adobe Experience Manager Assets in AEM [!DNL Cloud Service] ten opzichte van Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 7%
+source-wordcount: '594'
+ht-degree: 2%
 
 ---
 
 
-# Noteerbare wijzigingen in Experience Manager Assets als een Cloud Service {#notable-changes}
+# Noteerbare wijzigingen in Experience Manager Assets als een [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager als Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM projecten te beheren. Nochtans, zijn er vele verschillen tussen de Activa van de Experience Manager op-gebouw of in Adobe Beheerde Dienst in vergelijking met Experience Manager als Cloud Service. In dit document worden de belangrijke verschillen voor middelenmogelijkheden belicht.
+Adobe Experience Manager als een [!DNL Cloud Service] biedt veel nieuwe functies en mogelijkheden om uw AEM projecten te beheren. Er zijn echter veel verschillen tussen Experience Manager Assets on-premise of in Adobe Managed Service in vergelijking met Experience Manager als [!DNL Cloud Service]. In dit document worden de belangrijke verschillen voor middelenmogelijkheden belicht.
 
 De belangrijkste verschillen ten opzichte van Experience Manager 6.5 zijn op de volgende gebieden:
 
@@ -22,14 +22,14 @@ De belangrijkste verschillen ten opzichte van Experience Manager 6.5 zijn op de 
 
 >[!NOTE]
 >
->In dit document worden de belangrijkste wijzigingen in AEM Assets gemarkeerd. Voor veranderingen algemeen aan AEM als Cloud Service, en andere modules, zie:
+>In dit document worden de belangrijkste wijzigingen in AEM Assets gemarkeerd. Voor veranderingen algemeen in Experience Manager als [!DNL Cloud Service], en andere modules, zie:
 >
->* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
->* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
->* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
->* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Inleiding tot Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* An [Overview of AEM as a [!DNL Cloud Service] - What is New and What is Different](/help/overview/what-is-new-and-different.md)
+>* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a [!DNL Cloud Service]
+>* [Opvallende wijzigingen in AEM als a [!DNL Cloud Service]  (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
+>* [Opvallende wijzigingen in AEM Sites als een [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager als  [!DNL Cloud Service] zelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Inname en upload van bedrijfsmiddelen {#asset-ingestion}
@@ -56,4 +56,4 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 
 ## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
-De klassieke gebruikersinterface is niet meer beschikbaar in de Experience Manager als Cloud Service. De standaardinterface is de interface met aanraakbediening.
+De klassieke interface is niet meer beschikbaar in de Experience Manager als [!DNL Cloud Service]. De standaardinterface is de interface met aanraakbediening.
