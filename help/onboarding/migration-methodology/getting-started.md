@@ -1,10 +1,10 @@
 ---
-title: One-pager voor migratie naar Experience Manager als Cloud Service
-description: One-pager voor migratie naar Experience Manager als Cloud Service
+title: Migratie naar Experience Manager als Cloud Service
+description: Migratie naar Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 02e6581ec5a922d71c53e99212a1f8aecc405f6f
+source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2070'
 ht-degree: 8%
 
 ---
@@ -167,7 +167,7 @@ Met Cloud Manager kunnen organisaties zelf Experience Manager beheren in de clou
 1. [Distribueren naar Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) Manager
 2. Clientcode uitvoeren via [Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [Distribueren naar ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Alleen migratie:**] alleen inhoudsoverdracht met pakketten of  [Content Transfer Tool] (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration(CTT)
+4. [**Alleen migratie**] Inhoud overbrengen met behulp van pakketten of  [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) (CTT)
 5. Aanbevolen testcycli uitvoeren (rook, QA en meer)
 6. Promoten naar de productiepijplijn van Cloud Manager
 7. Validatie van de rooktest
