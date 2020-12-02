@@ -19,7 +19,7 @@ AEM het registreren en het logboekniveaus worden beheerd in configuratiedossiers
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
 * Apache HTTPD Web Server/Dispatcher registreren, die het registreren van de Webserver en de Verzender op de Publish rij uitvoert.
 
-## AEM {#aem-loggin}
+## Logboekregistratie AEM {#aem-loggin}
 
 Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeken:
 
@@ -31,7 +31,7 @@ Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeke
 >
 >De HTTP- verzoeken die van het Publish geheime voorgeheugen van de Verzender van de rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
-## Java-registratie AEM {#aem-java-logging}
+## Java-logboekregistratie AEM {#aem-java-logging}
 
 AEM als Cloud Service biedt toegang tot Java-loginstructies. Ontwikkelaars van toepassingen voor AEM moeten de algemene Java-logboekbest practices volgen en relevante instructies over de uitvoering van aangepaste code registreren op de volgende logniveaus:
 
@@ -186,7 +186,7 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 }
 ```
 
-## Logboekregistratie HTTP-aanvraag AEM {#aem-http-request-logging}
+## Logboekregistratie van HTTP-aanvragen AEM {#aem-http-request-logging}
 
 AEM als het verzoekregistreren van HTTP van een Cloud Service verstrekt inzicht in de HTTP- verzoeken die aan AEM en hun reacties van HTTP in tijdorde worden gemaakt. Dit logboek is nuttig om de Verzoeken van HTTP te begrijpen die aan AEM worden gemaakt en de orde zij worden verwerkt en aan geantwoord.
 
@@ -236,11 +236,11 @@ De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- v
 </tbody>
 </table>
 
-### Logboek configureren {#configuring-the-log}
+### Logboek {#configuring-the-log} configureren
 
 Het AEM HTTP- verzoeklogboek is niet configureerbaar in AEM als Cloud Service.
 
-## HTTP-toegangsregistratie AEM {#aem-http-access-logging}
+## Logboekregistratie van HTTP-toegang AEM {#aem-http-access-logging}
 
 AEM als het de toegangslogboek van HTTP van de Cloud Service toont HTTP- verzoeken in tijdorde. Elke logingang vertegenwoordigt het Verzoek van HTTP dat tot AEM toegang heeft.
 
@@ -305,7 +305,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tbody>
 </table>
 
-### Het HTTP Access-logboek configureren {#configuring-the-http-access-log}
+### Het vormen van het Logboek van de Toegang van HTTP {#configuring-the-http-access-log}
 
 Het logboek van de Toegang van HTTP is niet configureerbaar in AEM als Cloud Service.
 
@@ -325,7 +325,7 @@ Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud
 
 Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server/de Verzender van het Web van de rij bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
 
-Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie ](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Uitvoer voorbeeldlog**
 
@@ -386,7 +386,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tbody>
 </table>
 
-### Het Apache HTTPD Web Server Access Log configureren {#configuring-the-apache-httpd-webs-server-access-log}
+### Het Apache HTTPD Web Server Access Log {#configuring-the-apache-httpd-webs-server-access-log} configureren
 
 Dit logboek is niet configureerbaar in AEM als Cloud Service.
 
@@ -394,7 +394,7 @@ Dit logboek is niet configureerbaar in AEM als Cloud Service.
 
 Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server/de Verzender van het Web van de rij.
 
-Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+Zie de informatie over de indeling van het foutenlogboek in de [officiële documentatie ](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Uitvoer voorbeeldlog**
 
@@ -431,13 +431,13 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### Het Apache HTTPD Web Server Error Log configureren {#configuring-the-apache-httpd-web-server-error-log}
+### Het configureren van het Apache HTTPD Web Server Error Log {#configuring-the-apache-httpd-web-server-error-log}
 
 De mod_rewrite logboekniveaus worden bepaald door veranderlijke REWRITE_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
 Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1 - Trace8, met de standaardwaarde voor Waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan Trace2 op te heffen.
 
-Zie de mod_rewrite moduledocumentatie [](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie.
+Zie de [mod_rewrite moduledocumentatie](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie.
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het bestand global.var, zoals hieronder wordt beschreven:
 
@@ -492,7 +492,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>Duur</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Landbouwbedrijf</td>
@@ -509,15 +509,15 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Het foutenlogboek van de Verzender configureren {#configuring-the-dispatcher-error-log}
+### Het vormen van het Logboek van de Fout van de Verzender {#configuring-the-dispatcher-error-log}
 
-De het logboekniveaus van de verzender worden bepaald door veranderlijke DISP_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
+De verzenderslogniveaus worden gedefinieerd door de variabele DISP_LOG_LEVEL in het bestand `conf.d/variables/global.var`.
 
 Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1, met de standaardwaarde Waarschuwing.
 
 Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registreren granularity steunt, beveelt de AEM als Cloud Service het gebruiken van de hieronder beschreven niveaus aan.
 
-Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het `global.var` bestand, zoals hieronder wordt beschreven:
+Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het `global.var`-bestand, zoals hieronder wordt beschreven:
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -534,34 +534,34 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Hoe te om Logs toegang te hebben {#how-to-access-logs}
+## Hoe te om Logs {#how-to-access-logs} tot toegang te hebben
 
-### Cloud-omgevingen {#cloud-environments}
+### Cloudomgevingen {#cloud-environments}
 
-AEM als Cloud Service logboeken voor cloudservices kunnen worden geopend door het downloaden via de interface van Cloud Manager of door logbestanden op de opdrachtregel via de opdrachtregelinterface van Adobe I/O te volgen. Raadpleeg de logdocumentatie bij [Cloud Manager voor meer informatie](/help/implementing/cloud-manager/manage-logs.md).
+AEM als Cloud Service logboeken voor cloudservices kunnen worden geopend door het downloaden via de interface van Cloud Manager of door logbestanden op de opdrachtregel via de opdrachtregelinterface van Adobe I/O te volgen. Raadpleeg de logboekdocumentatie [Cloud Manager](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
 ### Lokale SDK {#local-sdk}
 
 AEM als Cloud Service SDK verstrekt logboekdossiers om lokale ontwikkeling te steunen.
 
-AEM logboeken bevinden zich in de map `crx-quickstart/logs`waarin de volgende logbestanden kunnen worden weergegeven:
+AEM logboeken bevinden zich in de map `crx-quickstart/logs`, waar de volgende logboeken kunnen worden weergegeven:
 
 * Java-logbestand AEM: `error.log`
 * Logbestand HTTP-aanvraag AEM: `request.log`
 * Logbestand HTTP-toegang AEM: `access.log`
 
-Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de documentatie [van de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Verzender voor informatie over hoe te om de Verzender te beginnen.
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor informatie over hoe te om de Dispatcher te beginnen.
 
 De logbestanden ophalen:
 
-1. Typ op de opdrachtregel `docker ps` om de containers weer te geven
-1. Als u zich wilt aanmelden bij de container, typt u &quot;`docker exec -it <container> /bin/sh`&quot;, waarbij `<container>` de verzendingscontainer-id van de vorige stap is.
+1. Typ `docker ps` op de opdrachtregel om de containers weer te geven
+1. Als u zich wilt aanmelden bij de container, typt u &quot;`docker exec -it <container> /bin/sh`&quot;, waarbij `<container>` de verzendingscontainer-id van de vorige stap is
 1. Ga naar de cachroot onder `/mnt/var/www/html`
-1. De logbestanden bevinden zich onder `/etc/httpd/logs`
+1. De logbestanden zijn onder `/etc/httpd/logs`
 1. Inspect the logs: ze zijn toegankelijk in de map XYZ, waar de volgende logbestanden kunnen worden weergegeven:
-   * Apache HTTPD Logboek van de de servertoegang van het Web - `httpd_access.log`
-   * Logboeken van fouten van de Apache HTTPD-webserver - `httpd_error.log`
-   * Logbestanden van Dispatcher - `dispatcher.log`
+   * Apache HTTPD Web server access log - `httpd_access.log`
+   * Logboekfouten van Apache HTTPD-webserver - `httpd_error.log`
+   * Logbestanden van verzending - `dispatcher.log`
 
 Logbestanden worden ook rechtstreeks afgedrukt op de einduitvoer. Meestal, zouden deze logboeken DEBUG moeten zijn, die kan worden verwezenlijkt door in het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld:
 
@@ -584,7 +584,7 @@ Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteun
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
-### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
+### Splunk Forwarding {#enabling-splunk-forwarding} inschakelen
 
 In het supportverzoek moeten klanten aangeven:
 
@@ -622,7 +622,7 @@ Programma 123, Dev Envs
 * Splunk-poort: 443
 * Splunk HEC-token: ABC123
 
-Het kan voldoende zijn om voor elke omgeving dezelfde segmentindex te gebruiken. In dat geval kan het `aem_env_type` veld worden gebruikt om onderscheid te maken op basis van de waarden dev, stage en prod. Als er meerdere ontwikkelomgevingen zijn, kan het `aem_env_id` veld ook worden gebruikt. Sommige organisaties kunnen een afzonderlijke index voor de logboeken van het productiemilieu kiezen als de bijbehorende index toegang tot een verminderde reeks gebruikers van de Splunk beperkt.
+Het kan voldoende zijn dat dezelfde segmentindex voor elke omgeving wordt gebruikt. In dat geval kan ofwel het veld `aem_env_type` worden gebruikt om onderscheid te maken op basis van de waarden dev, stage en prod. Als er meerdere ontwikkelomgevingen zijn, kan het veld `aem_env_id` ook worden gebruikt. Sommige organisaties kunnen een afzonderlijke index voor de logboeken van het productiemilieu kiezen als de bijbehorende index toegang tot een verminderde reeks gebruikers van de Splunk beperkt.
 
 Hier volgt een voorbeeld van een logbestandvermelding:
 
