@@ -2,9 +2,9 @@
 title: Spin Sets
 description: Leer hoe u met centrifuges werkt in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1765'
 ht-degree: 11%
 
 ---
@@ -76,7 +76,7 @@ Als dat nodig is, kunt u [centrifuges bewerken](#editing-spin-sets). Bovendien k
 
 ## Elementen uploaden voor centrifuges {#uploading-assets-for-spin-sets}
 
-U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
+U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
 
 U kunt afbeeldingen voor de centrifuges uploaden zoals u [elk ander element in AEM Assets](/help/assets/manage-digital-assets.md) uploadt.
 
