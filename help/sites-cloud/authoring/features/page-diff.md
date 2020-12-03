@@ -2,9 +2,9 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen 
 
 Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijken met de gemarkeerde verschillen.
 
->[!CAUTION]
+>[!NOTE]
 >
 >De gebruiker moet **Modify/Create/Delete** toestemming op de knoop `/content/versionhistory` hebben om de eigenschap te gebruiken.
 >
@@ -54,10 +54,6 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
-* Blauw - component gewijzigd
-* Blauw - component verplaatst
-
-De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 
 **HTML-wijzigingen**
 
@@ -93,9 +89,7 @@ U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op d
 In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert zoals u had verwacht.
 
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
-* Voor versies maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
-* Als er wijzigingen worden aangebracht in een afbeelding, zoals het wijzigen van de kenmerken alt, title of src, wordt deze in blauw gemarkeerd als gewijzigd. In sommige gevallen heeft de afbeelding echter een Base64-representatie van het kenmerk src en zelfs als beide afbeeldingen er hetzelfde uitzien, worden ze door het diff als verschillend gemarkeerd vanwege de verschillende src-kenmerken.
-* Het diff kan beeldomwenteling niet ontdekken.
+* Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
    * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
 
