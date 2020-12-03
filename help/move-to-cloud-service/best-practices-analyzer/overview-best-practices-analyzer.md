@@ -2,15 +2,20 @@
 title: Overzicht aan Analysator van Beste praktijken
 description: Overzicht aan Analysator van Beste praktijken
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Overzicht {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Overzicht van best practices-analyse"
+>abstract="Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige AEM implementatie door op gebieden te wijzen die niet AEM beste praktijken volgen. Het biedt ook richtsnoeren voor de volgende stappen om AEM beste praktijken aan te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM als Cloud Service over te gaan."
 
 Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige AEM implementatie door op gebieden te wijzen die niet AEM beste praktijken volgen. Het biedt ook richtsnoeren voor de volgende stappen om AEM beste praktijken aan te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM als Cloud Service over te gaan.
 
