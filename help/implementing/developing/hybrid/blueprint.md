@@ -2,7 +2,7 @@
 title: SPA
 description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -64,7 +64,7 @@ In de rest van dit document worden de vereisten van deze specifieke laag van het
 
 De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om SPA componenten in kaart te brengen en te concretiseren. De SPA ontwikkelaars creëren SPA componenten die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
 
-De SPA componenten moeten in overeenstemming zijn met het paginamodel en worden bijgewerkt met eventuele wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
+De SPA componenten moeten synchroon zijn met het paginamodel en worden bijgewerkt met wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
 
 ### Metavelden {#meta-fields}
 
