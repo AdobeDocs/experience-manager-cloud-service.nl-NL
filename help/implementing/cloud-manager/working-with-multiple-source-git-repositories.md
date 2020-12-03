@@ -2,9 +2,9 @@
 title: Werken met Meerdere opslagplaatsen voor Git-bronnen
 description: Werken met Meerdere bronopslagruimten voor Git - Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Voer de onderstaande stappen uit om een nieuwe (derde) bron of opslagplaats toe 
 1. Voeg een verwijzing naar de nieuwe map toe aan de pom Maven van de hoofdmap in de gegevensopslagruimte van Cloud Manager.
 
 
-## Aanhangsel A: Voorbeeld van GitHub-actie {#sample-github-action}
+## Voorbeeld van GitHub-actie {#sample-github-action}
 
 Dit is een voorbeeld van een GitHub-actie die wordt geactiveerd door een push naar de hoofdvertakking en die vervolgens wordt doorgedrukt in een submap van de Git Repository van Cloud Manager. De GitHub-acties moeten worden voorzien van twee geheimen, `MAIN_USER` en `MAIN_PASSWORD`, om verbinding te kunnen maken met en druk op de Git-opslagplaats van Cloud Manager.
 
@@ -117,7 +117,7 @@ Zoals hierboven getoond, is het gebruiken van een actie GitHub zeer flexibel. El
 >[!NOTE]
 >Het bovenstaande script gebruikt `git add` om de repository bij te werken, waarbij ervan wordt uitgegaan dat verwijderingen worden opgenomen - afhankelijk van de standaardconfiguratie van Git, moet deze worden vervangen door `git add --all`.
 
-## Aanhangsel B: Voorbeeld van Jenkins-taak {#sample-jenkins-job}
+## Voorbeeld van Jenkins-taak {#sample-jenkins-job}
 
 Dit is een voorbeeldscript dat kan worden gebruikt in een Jenkins-taak of vergelijkbaar. Het wordt geactiveerd door een wijziging in een Git Repository. De baan Jenkins controleert uit de recentste staat van dat project of tak en dan brengt dit manuscript in werking.
 
