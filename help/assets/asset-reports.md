@@ -3,10 +3,10 @@ title: Rapporten over gebruik en delen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 8%
+source-wordcount: '883'
+ht-degree: 5%
 
 ---
 
@@ -48,17 +48,19 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
    ![Rapporttype selecteren](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >Voordat u een rapport **[!UICONTROL Asset Downloaded]** kunt genereren, moet u controleren of de service voor het downloaden van assets is ingeschakeld. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie **[!UICONTROL Day CQ DAM Event Recorder]** en selecteer de optie **[!UICONTROL Asset Downloaded (DOWNLOADED)]** in Gebeurtenistypen als deze nog niet is geselecteerd.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >Standaard worden de Content Fragments en de link shares opgenomen in het Asset [!UICONTROL Download]-rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
+>[!NOTE]
+>
+>Standaard worden de Content Fragments en de link shares opgenomen in het Asset [!UICONTROL Download]-rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
 
-   >[!NOTE]
-   >
-   >Het [!UICONTROL Download] rapport geeft slechts details van die activa die na het selecteren individueel worden gedownload of gebruikend Snelle Actie worden gedownload. De gegevens van de elementen in een gedownloade map worden echter niet in de map opgenomen.
+>[!NOTE]
+>
+>Het [!UICONTROL Download] rapport geeft slechts details van die activa die na het selecteren individueel worden gedownload of gebruikend Snelle Actie worden gedownload. De gegevens van de elementen in een gedownloade map worden echter niet in de map opgenomen.
 
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
 
@@ -139,11 +141,18 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
-## Zuiveringsservice {#configure-purging-service} configureren
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegmaken van het Rapport DAM van de Webconsole om bestaande rapporten te zuiveren die op hun hoeveelheid en leeftijd worden gebaseerd.
+## Configure purging service {#configure-purging-service}
 
-1. Open de webconsole (configuratiemanager) vanaf `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de **[!UICONTROL DAM Report Purge Service]** configuratie.
-1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het veld `scheduler.expression.name`. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
-1. Sla de wijzigingen op.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## Informatie, tips en beperkingen voor probleemoplossing {#best-practices-and-limitations}
+
+* Als het Rapport van het Gebruik van de Schijf niet produceert en u [!DNL Dynamic Media] gebruikt, zorg ervoor dat alle activa correct te werk gaan. U lost de problemen op door de elementen opnieuw te verwerken en vervolgens het rapport opnieuw te genereren.
