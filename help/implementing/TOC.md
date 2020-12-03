@@ -4,10 +4,10 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: 4687054b049263c109591884a0368dfa76346298
+source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 52%
+source-wordcount: '554'
+ht-degree: 51%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 52%
       + [Aangepaste regels voor codekwaliteit](cloud-manager/custom-code-quality-rules.md)
       + [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
    + [Logbestanden openen en beheren](cloud-manager/manage-logs.md)
    + [Inzicht in meldingen](cloud-manager/notifications.md)
 + Uw code beheren {#managing-code}
