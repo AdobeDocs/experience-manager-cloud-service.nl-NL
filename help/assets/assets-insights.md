@@ -3,9 +3,9 @@ title: 'Asset Insights '
 description: Leer hoe u met Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '761'
 ht-degree: 2%
 
 ---
@@ -70,44 +70,47 @@ U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!
 1. Tik/klik op het pictogram Lay-out op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
-## De achtergrondtaak {#scheduling-background-job} plannen
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen van Adobe Analytics-rapportensuites. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
+## Schedule background job {#scheduling-background-job}
 
-1. Tik op het AEM en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Open de serviceconfiguratie **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
+Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Specificeer de gewenste plannerfrequentie en de begintijd voor de baan in de uitdrukking van de bezitsplanner. Sla de wijzigingen op.
+1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
+-->
 
 ## Elementinzichten configureren {#configure-asset-insights}
 
-Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM middelen die door websites van derden van Adobe Analytics worden gebruikt. Om Asset Insights in in staat te stellen deze gegevens op te halen en inzichten te genereren, dient u eerst de functie te configureren voor integratie met Adobe Analytics.
+[!DNL Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om de Inzichten van Activa toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren.
 
 >[!NOTE]
 >
 >Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
-1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. Klik op de **[!UICONTROL Insights Configuration]**-kaart.
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
 
-   ![Adobe Analytics for Assets Insights configureren in AEM](assets/insights_config2.png)
+   ![Adobe Analytics for Assets Insights configureren in  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *Afbeelding: Adobe Analytics for Assets Insights configureren in AEM*
+   *Afbeelding: Adobe Analytics for Assets Insights configureren in[!DNL Experience Manager]*
 
-1. Klik of tik op **[!UICONTROL Authenticate]**. Nadat AEM uw geloofsbrieven voor authentiek verklaart, van de **[!UICONTROL Report Suite]** lijst, kies een het rapportsuite van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
-1. Tik op **[!UICONTROL Done]** nadat AEM de rapportsuite hebt ingesteld.
+1. Klik of tik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
+1. Tik op **[!UICONTROL Done]** nadat [!DNL Experience Manager] uw rapportsuite heeft ingesteld.
 
 ### Paginanummering {#page-tracker}
 
-Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Neem de paginacontrackercode in de websitecode op om Elementen inzicht te geven in AEM elementen die worden gebruikt op websites van derden. Gebruik het hulpprogramma Paginanummering in AEM Assets om de code van de paginatracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Als u Assets Insights wilt inschakelen om de [!DNL Experience Manager]-elementen bij te houden die worden gebruikt in websites van derden, neemt u de paginacontrackercode op in de websitecode. Gebruik het hulpprogramma Paginanummering in Elementen om de code van de paginacontracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -121,7 +124,7 @@ Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Pagina
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
 
 1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
-1. Download the sample AEM Assets package from below and install the package from CRXDE package manager.
+1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
 
@@ -137,6 +140,6 @@ Using the demo package, you can enable Adobe Asset Insights to capture data from
 
    >[!NOTE]
    >
-   >The external web page can be in AEM itself.
+   >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
