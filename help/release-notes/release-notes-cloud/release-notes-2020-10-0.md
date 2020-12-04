@@ -2,13 +2,12 @@
 title: Release-aantekeningen voor 2020.10.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
-
 
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 {#release-notes}
@@ -32,8 +31,6 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
-### Nieuw in [!DNL Assets] {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei]Slimme tags** voor gemotoriseerde video: Door gebruik te maken van AI-modellen voor het analyseren van video-inhoud voor object- en actiespecifieke tags, kunnen DAM-gebruikers minder tijd besteden aan het toevoegen van tags en meer tijd besteden aan het gebruik van de rijke informatie die wordt weergegeven om klanten de juiste ervaring te bieden. Zie [Slimme-tagvideo-elementen](/help/assets/smart-tags-video-assets.md).
 
 * **Verbeteringen** merkportal: De volgende nieuwe functies en meer zijn beschikbaar in  [!DNL Brand Portal]. Zie [[!DNL Brand Portal] Opmerkingen bij de release](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html) voor meer informatie.
@@ -45,13 +42,7 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 * **[!DNL Adobe Asset Link]versie 2.1**: Een nieuwe versie van  [Adobe Asset ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Linkextension voor  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] is beschikbaar. Het voegt verenigbaarheid met de recentste [!DNL Adobe Creative Cloud] toepassingen met versie 2021 toe, die in Oktober 2020 wordt vrijgegeven.
 
-* **[!DNL Assets]WebP-bestandsondersteuning**:  [!DNL Assets] als Cloud Service nu de WebP-afbeeldingsindeling ondersteunt. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebP-bestandsondersteuning**:  [!DNL Assets] als Cloud Service nu de WebP-afbeeldingsindeling ondersteunt. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie hoe te om WebP in [creeer verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile) te gebruiken.
 
 ## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 20 okto
 * In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
 
 * De buildcontainer van Cloud Manager ondersteunt nu het compileren van projecten met behulp van Java 8 of Java 11. Ondersteuning voor Java 11 wordt geleverd door het Maven-toolketensysteem.
-
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
@@ -122,4 +112,3 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor [Content Trans
 ### Opgeloste problemen {#ctt-bug-fixes}
 
 * Met het gereedschap Inhoud overbrengen slaat u inhoudsbestanden over als de migratieset paden bevat met gedeeltelijk vergelijkbare bestandsnamen. Dit is opgelost.
-
