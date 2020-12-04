@@ -3,9 +3,9 @@ title: Elementen downloaden
 description: Download elementen van [!DNL Adobe Experience Manager Assets] en schakel de downloadfunctionaliteit in of uit.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Elementen downloaden met AEM interface {#download-in-aem}
+## Elementen downloaden via [!DNL Experience Manager]-interface {#download-in-aem}
 
 De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. De grote bestanden worden asynchroon gedownload en gebruikers worden via meldingen via Experience Managers in het Postvak IN op de hoogte gebracht van het invullen. Zie [Inbox van Experience Manager begrijpen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
