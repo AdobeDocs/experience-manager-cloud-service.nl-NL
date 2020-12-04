@@ -3,17 +3,17 @@ title: Architectuur van [!DNL Assets]
 description: Architectuur van Adobe Experience Manager Assets als a [!DNL Cloud Service]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 8%
+source-wordcount: '86'
+ht-degree: 9%
 
 ---
 
 
 # Architectuur van activa als [!DNL Cloud Service] oplossing {#assets-architecture}
 
-AEM Assets als [!DNL Cloud Service] is gebaseerd op Adobe Experience Manager en vergelijkt goed met de nieuwste Experience Manager 6.5. Het [!DNL Cloud Service]-aanbod heeft een aangepaste architectuur en functionaliteit die een service in de cloud bieden. Door wijzigingen in de onderliggende architectuur kunnen niet alle Experience Manager 6.5-functies deel uitmaken van [!DNL Cloud Service].
+[!DNL Experience Manager Assets] als een  [!DNL Cloud Service] onderneming is gebaseerd op  [!DNL Adobe Experience Manager] en goed vergelijkt met de nieuwste aanbieding  [!DNL Experience Manager] 6.5. Het  [!DNL Cloud Service] aanbod heeft een aangepaste architectuur en functionaliteit die een service in de cloud kunnen worden. Door wijzigingen in de onderliggende architectuur kunnen niet alle Experience Manager 6.5-functies deel uitmaken van [!DNL Cloud Service].
 
 Zie dit [overzicht van elementmicroservices](asset-microservices-overview.md#asset-microservices-architecture) voor een overzicht van de architectuur van de assetmicroservices.
 
