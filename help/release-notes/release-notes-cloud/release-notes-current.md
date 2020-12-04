@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 * **[Start Hiërarchiebeheer](/help/sites-cloud/authoring/launches/managing-pages.md)  en  [Toekomstige tijdverdraaiing](/help/sites-cloud/authoring/launches/preview.md)**: De nieuwe interface voor het toevoegen/verwijderen van pagina&#39;s binnen een lancering, en het doorbladeren van plaats met Timewarp toont toekomstige staat van Lanceringen.
 
-* **Sorteer de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout**: Nieuwe optie voor het sorteren van Live Copy-pagina&#39;s die beschikbaar zijn voor rollout met de  [!UICONTROL Name],  [!UICONTROL Last modified date]en  [!UICONTROL Last rollout date] eigenschappen. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die is geïntroduceerd.
+* **[Extended Content Fragment Models &amp; Editor](/help/assets/content-fragments/content-fragments-models.md)**: Nieuwe opties voor invoervalidatie voor verschillende gegevenstypen, verbeterd gegevenstype voor opsommingsgegevens met nieuwe formuliervisualisaties en de modelnaam van het inhoudsfragment wordt weergegeven en kan worden doorzocht in de interface Elementen.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **Sorteer de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout**: Nieuwe optie voor het sorteren van Live Copy-pagina&#39;s die beschikbaar zijn voor rollout met de  [!UICONTROL Name],  [!UICONTROL Last modified date]en  [!UICONTROL Last rollout date] eigenschappen. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die is geïntroduceerd.
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
