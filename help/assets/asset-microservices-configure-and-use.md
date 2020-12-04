@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2457'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 Voor situaties waarin aanvullende verwerking van activa vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra naverwerkingsworkflows aan de configuratie worden toegevoegd. Zo kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-De nabewerkingsworkflows, indien geconfigureerd, worden automatisch uitgevoerd door AEM nadat de verwerking van de microservices is voltooid. Het is niet nodig om werkstroomlanceerinrichtingen handmatig toe te voegen om ze te activeren. De voorbeelden zijn:
+Nabewerkingsworkflows worden, indien geconfigureerd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van de microservices is voltooid. Het is niet nodig om werkstroomlanceerinrichtingen handmatig toe te voegen om ze te activeren. De voorbeelden zijn:
 
 * Aangepaste workflowstappen om elementen te verwerken.
 * Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
@@ -195,7 +195,7 @@ Het toevoegen van een workflowconfiguratie na verwerking aan Experience Manager 
 
 ### Workflowmodellen voor naverwerking maken {#create-post-processing-workflow-models}
 
-Workflowmodellen na verwerking zijn reguliere AEM workflowmodellen. Maak verschillende modellen als u verschillende verwerkingen nodig hebt voor verschillende opslaglocaties of elementtypen.
+Workflowmodellen na verwerking zijn standaardworkflowmodellen [!DNL Experience Manager]. Maak verschillende modellen als u verschillende verwerkingen nodig hebt voor verschillende opslaglocaties of elementtypen.
 
 Verwerkingsstappen moeten op basis van behoeften worden toegevoegd. U kunt alle ondersteunde stappen gebruiken die beschikbaar zijn, maar ook alle aangepaste workflowstappen.
 
@@ -213,7 +213,7 @@ De service Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow
 >[!NOTE]
 >
 >De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan Experience Manager](/help/implementing/deploying/overview.md) voor informatie over hoe te om een configuratie op te stellen OSGi.
->OSGi Webconsole, in tegenstelling tot in on-premise en beheerde de dienstenplaatsingen van AEM, is niet direct beschikbaar in de plaatsingen van de wolkendienst.
+>OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van [!DNL Experience Manager], niet rechtstreeks beschikbaar in de cloudservice-implementaties.
 
 Zie [workflowstappen in naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor ontwikkelaars voor meer informatie over de standaardworkflowstap die kan worden gebruikt in de naverwerkingsworkflow.
 
