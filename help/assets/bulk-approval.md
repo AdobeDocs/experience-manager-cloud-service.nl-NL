@@ -3,9 +3,9 @@ title: Elementen in mappen en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '745'
 ht-degree: 20%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 20%
 
 # Elementen in mappen en verzamelingen {#review-folder-assets-and-collections} controleren
 
-Met Adobe Experience Manager-middelen (AEM) kunt u workflows voor ad-hocrevisies instellen voor elementen die zich in een map of in een verzameling bevinden. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
+Met Adobe Experience Manager Assets kunt u workflows voor ad-hocrevisie instellen voor elementen in een map of een verzameling. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
 Nadat u de middelen hebt gedeeld, kunnen revisoren deze goedkeuren of afwijzen. Meldingen worden in verschillende fasen van de workflow verzonden om beoogde ontvangers op de hoogte te stellen van de voltooiing van verschillende taken. Als u bijvoorbeeld een map of verzameling deelt, ontvangt de controleur een melding dat een map of verzameling is gedeeld voor revisie.
 
@@ -47,7 +47,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![review_name](assets/review_name.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt of tikt u op het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
+1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt of tikt u op het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 
    ![melding](assets/notification.png)
 
@@ -91,7 +91,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de middelenconsole. Tik op het pictogram **[!UICONTROL Notifications]** of klik op het pictogram om elementen goed te keuren en selecteer vervolgens de revisietaak in de lijst.
+1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de middelenconsole. Tik op het pictogram **[!UICONTROL Notifications]** of klik op het pictogram om elementen goed te keuren en selecteer vervolgens de revisietaak in de lijst.
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en tik of klik vervolgens op **[!UICONTROL Review]**.
 1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Approve/Reject]** of klik op het pictogram &lt;a0/> om elementen goed te keuren of af te wijzen.
 
