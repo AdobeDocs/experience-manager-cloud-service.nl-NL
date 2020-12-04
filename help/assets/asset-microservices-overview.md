@@ -3,9 +3,9 @@ title: Elementen verwerken met behulp van asset microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ Dit is de basisstroom van activa het opnemen en verwerken. Indien geconfigureerd
 
 De opname en de verwerkingsstroom zijn de belangrijkste concepten van de de dienstenarchitectuur van activa microservices voor Experience Manager.
 
-* **Directe binaire toegang**: Elementen worden naar de Cloud Binary Store getransporteerd (en geüpload) als ze eenmaal zijn geconfigureerd voor Experience Manager-omgevingen, en vervolgens AEM, asset microservices, en ten slotte krijgen klanten directe toegang tot deze services om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
-* **Externe verwerking**: De verwerking van middelen vindt plaats buiten AEM omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van essentiële functies voor het beheer van digitale middelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
+* **Directe binaire toegang**: Elementen worden naar de Cloud Binary Store getransporteerd (en geüpload) als ze eenmaal zijn geconfigureerd voor omgevingen met Experience Managers, en vervolgens  [!DNL Experience Manager]de asset microservices, en ten slotte krijgen klanten directe toegang tot deze services om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
+* **Externe verwerking**: De verwerking van middelen vindt plaats buiten de  [!DNL Experience Manager] omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van belangrijke functies voor het beheer van digitale bedrijfsmiddelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
 
 ## Middelen uploaden met directe binaire toegang {#asset-upload-with-direct-binary-access}
 
-De cliënten van de Experience Manager, die een deel van product aanbieden, allen steunen uploadt met directe binaire toegang door gebrek. Dit zijn onder andere uploaden via de webinterface, Adobe Asset Link en AEM bureaubladtoepassing.
+De cliënten van de Experience Manager, die een deel van product aanbieden, allen steunen uploadt met directe binaire toegang door gebrek. Dit zijn onder andere uploaden via webinterface, Adobe Asset Link en [!DNL Experience Manager] desktop app.
 
-U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met AEM HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
+U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met HTTP-API&#39;s van [!DNL Experience Manager]. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
 
 * [Uploadbibliotheek met open bron](https://github.com/adobe/aem-upload)
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Zie [Elementen uploaden](add-assets.md) voor meer informatie.
 
 Terwijl de meeste klanten al hun behoeften van de activaverwerking van de configureerbare activa microservices zouden moeten krijgen, zouden sommige extra activa kunnen vereisen verwerkend. Dit geldt met name wanneer activa moeten worden verwerkt op basis van informatie die via integratie van andere systemen afkomstig is. In dergelijke gevallen kunnen aangepaste nabewerkingsworkflows worden gebruikt.
 
-Nabewerkingsworkflows zijn gewone AEM workflowmodellen die zijn gemaakt en beheerd in AEM Workfloweditor. Klanten kunnen de workflows configureren om aanvullende verwerkingsstappen uit te voeren op een middel, waaronder het gebruik van beschikbare workflowstappen buiten de box en aangepaste workflows.
+Nabewerkingsworkflows zijn gewone [!DNL Experience Manager] workflowmodellen die zijn gemaakt en beheerd in [!DNL Experience Manager] Workflow-editor. Klanten kunnen de workflows configureren om aanvullende verwerkingsstappen uit te voeren op een middel, waaronder het gebruik van beschikbare workflowstappen buiten de box en aangepaste workflows.
 
 Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkflows automatisch worden geactiveerd nadat de verwerking van de middelen is voltooid.
 
