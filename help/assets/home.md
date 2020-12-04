@@ -2,9 +2,9 @@
 title: Elementen als een [!DNL Cloud Service] hulplijn
 description: Adobe Experience Manager Assets as a [!DNL Cloud Service] self-help resources and documentation links
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 36%
 
 ---
@@ -36,7 +36,7 @@ Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a [!DNL Clou
 | [Handboek voor implementatie](/help/implementing/home.md) | Experience Manager aanpassen, ontwikkelen en implementeren als een [!DNL Cloud Service]. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a [!DNL Cloud Service]. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer over de achterste-eindverrichtingen van Experience Manager als [!DNL Cloud Service], zoals het indexeren en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als [!DNL Cloud Service]. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op [!DNL Experience Manager] als [!DNL Cloud Service]. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
@@ -48,4 +48,4 @@ Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a [!DNL Clou
 * [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager als  [!DNL Cloud Service] zelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [AEM-communityforum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] Forum van de Gemeenschap](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
