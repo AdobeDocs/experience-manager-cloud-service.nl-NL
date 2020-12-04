@@ -3,7 +3,7 @@ title: Voorinstellingen batchset
 description: Leer hoe u de afbeeldingsset automatiseert en het maken van een centrifugeset maakt met behulp van voorinstellingen voor batchsets in Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3269'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Gebruik **[!UICONTROL Batch Set Presets]** om het maken en organiseren van meerd
 1. Maak een voorinstelling voor een batchset. Zie [Een voorinstelling voor een batchset maken voor een afbeeldingsset of een spin-set](#creating-bsp).
 1. Maak een nieuwe elementmap of gebruik een bestaande elementmap en zorg ervoor dat deze wordt gesynchroniseerd met [!DNL Dynamic Media]. Zie [Mappen maken](/help/assets/manage-digital-assets.md#creating-folders).
 1. Pas de voorinstelling voor de batchset toe op de map met elementen. Zie [Batchsetvoorinstellingen toepassen op mappen](#apply-bsp).
-1. Afbeeldingen uploaden naar de elementmap. Zie [Elementen uploaden voor afbeeldingssets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Elementen uploaden voor centrifuges](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) of [Digitale elementen toevoegen aan Adobe Experience Manager](#add-assets-to-experience-manager)..
+1. Afbeeldingen uploaden naar de elementmap. Zie [Elementen uploaden voor afbeeldingssets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Elementen uploaden voor centrifuges](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) of [Digitale elementen toevoegen aan Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Maak een afbeeldingsset of centrifugeset. Zie [Afbeeldingssets](/help/assets/dynamic-media/image-sets.md) of [Spin Sets](/help/assets/dynamic-media/spin-sets.md).
 1. Publiceer de afbeeldingsset of de centrifugeset. Zie [Dynamische media-elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
