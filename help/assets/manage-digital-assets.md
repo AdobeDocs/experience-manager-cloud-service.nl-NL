@@ -4,9 +4,9 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4263'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ In dit artikel wordt beschreven hoe u elementen in Adobe Experience Manager Asse
 
 ## Mappen {#creating-folders} maken
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Experience Manager Assets] vereist niet dat u elementen in mappen ordent om beter te werken.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in AEM.
+1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager].
 
    Op YouTube moeten labels publiceren en een koppeling naar YouTube hebben (als er een geschikte koppeling is gevonden).
 
@@ -139,7 +139,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Als u een element op dezelfde locatie kopieert, AEM automatisch een variatie van de naam. Als u bijvoorbeeld een element met de naam `Square` kopieert, genereert AEM automatisch de titel voor de kopie als `Square1`.
+   >Als u een element op dezelfde locatie kopieert, wordt automatisch een variatie in de naam gegenereerd. [!DNL Experience Manager] Als u bijvoorbeeld een element met de naam `Square` kopieert, genereert [!DNL Experience Manager] automatisch de titel voor de kopie als `Square1`.
 
 1. Klik op het middelenpictogram **[!UICONTROL Paste]** op de werkbalk. Elementen worden naar deze locatie gekopieerd.
 
@@ -203,7 +203,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Standaard geeft AEM Assets de oorspronkelijke uitvoering van het element niet weer in de voorvertoningsmodus. Beheerders kunnen met overlays AEM Assets configureren voor het weergeven van originele uitvoeringen in de voorvertoningsmodus.
+   >[!DNL Experience Manager Assets] geeft standaard niet de oorspronkelijke uitvoering van het element weer in de voorvertoningsmodus. Als beheerder kunt u overlays gebruiken om [!DNL Assets] te configureren voor het weergeven van originele uitvoeringen in de voorvertoningsmodus.
 
 1. Selecteer een vertoning om de vertoning weer te geven of te verwijderen.
 
@@ -223,7 +223,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Opties zoals het pictogram Uitvoering uploaden worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
-   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, geeft AEM Assets de vertoning weer met de exacte of dichtstbijzijnde afmetingen.
+   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning in Elementen weergegeven met de exacte of dichtstbijzijnde afmetingen.
 
    Als u weergaveafmetingen van een afbeelding op het niveau van de assetdetails wilt configureren, overlapt u het knooppunt `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) en configureert u de waarde van de breedte-eigenschap. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap `preferOriginal` de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
@@ -270,7 +270,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 ## Elementen {#download-assets} downloaden
 
-Zie [Elementen downloaden van AEM](/help/assets/download-assets-from-aem.md).
+Zie [Elementen downloaden van [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Elementen {#publish-assets} publiceren
 
@@ -323,7 +323,7 @@ Zie [Elementen downloaden van AEM](/help/assets/download-assets-from-aem.md).
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
-Een gesloten gebruikersgroep (CUG) wordt gebruikt om toegang tot specifieke middelomslagen te beperken die van AEM worden gepubliceerd. Als u een CUG maakt voor een map, is de toegang tot de map (inclusief mapelementen en submappen) beperkt tot alleen toegewezen leden of groepen. Om tot de omslag toegang te hebben, moeten zij login gebruikend hun veiligheidsgeloofsbrieven.
+Een gesloten gebruikersgroep (CUG) wordt gebruikt om toegang tot specifieke middelomslagen te beperken die van [!DNL Experience Manager] worden gepubliceerd. Als u een CUG maakt voor een map, is de toegang tot de map (inclusief mapelementen en submappen) beperkt tot alleen toegewezen leden of groepen. Om tot de omslag toegang te hebben, moeten zij login gebruikend hun veiligheidsgeloofsbrieven.
 
 CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U kunt ook een aanmeldingspagina voor de map configureren.
 
@@ -332,22 +332,22 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
    ![add_user](assets/add_user.png)
 
-1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]**. Selecteer vervolgens het pad naar een aanmeldingspagina in AEM en sla de wijzigingen op.
+1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]**. Selecteer vervolgens het pad naar een aanmeldingspagina in [!DNL Experience Manager] en sla de wijzigingen op.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Als u het pad naar een aanmeldingspagina niet opgeeft, wordt AEM de standaardaanmeldingspagina weergegeven in de publicatie-instantie.
+   >Als u het pad naar een aanmeldingspagina niet opgeeft, wordt de standaardaanmeldingspagina weergegeven in de publicatie-instantie.[!DNL Experience Manager]
 
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
-1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat AEM u heeft geverifieerd.
+1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat [!DNL Experience Manager] u heeft geverifieerd.
 
 ## Assets doorzoeken {#search-assets}
 
 Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
-Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [onderzoeksactiva in AEM](/help/assets/search-assets.md).
+Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [onderzoeksactiva in [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Snelle handelingen {#quick-actions}
 
@@ -358,7 +358,7 @@ De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. V
 
 ## Afbeeldingen bewerken {#editing-images}
 
-Met de bewerkingsgereedschappen in de AEM Assets-interface kunt u kleine bewerktaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
+Met de bewerkingsgereedschappen in de [!DNL Experience Manager Assets]-interface kunt u kleine bewerkingstaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
 
 >[!NOTE]
 >
@@ -430,7 +430,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
-Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video-indelingen die door AEM Assets worden ondersteund, zijn afhankelijk van de browser.
+Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video-indelingen die door Middelen worden ondersteund, zijn afhankelijk van de browser.
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
    >U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
 1. Tik/klik op **[!UICONTROL Close]** om de annotatiemodus te verlaten.
-1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en klik op het pictogram **[!UICONTROL Notifications]** om het bericht weer te geven.
+1. Meld u aan bij Middelen met de gegevens van Aaron MacDonald en klik op het pictogram **[!UICONTROL Notifications]** om het bericht weer te geven.
 
    >[!NOTE]
    >
@@ -545,11 +545,11 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
@@ -559,9 +559,9 @@ Met Versioning maakt u een momentopname van digitale elementen op een bepaald ti
 
 Hieronder vindt u scenario&#39;s waarin u versies maakt:
 
-* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar AEM Assets. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
+* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar Elementen. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
 * U bewerkt de metagegevens van een element.
-* U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
+* Met de [!DNL Experience Manager]-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
