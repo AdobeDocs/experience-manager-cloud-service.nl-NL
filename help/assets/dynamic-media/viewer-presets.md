@@ -2,9 +2,9 @@
 title: Voorinstellingen van de dynamische mediasviewer toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '211'
 ht-degree: 23%
 
 ---
@@ -19,7 +19,7 @@ Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren
 Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
 Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
-Eventuele problemen met viewervoorinstellingen, zie [Problemen met dynamische media oplossen - Scene7](troubleshoot-dm.md#viewers).
+Eventuele problemen met viewervoorinstellingen, zie [Problemen met dynamische media oplossen](troubleshoot-dm.md#viewers).
 
 ## Een voorinstelling voor een dynamische mediasviewer toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
