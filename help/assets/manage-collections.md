@@ -4,9 +4,9 @@ description: Begrijp het concept van inzameling in de Activa van Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2243'
 ht-degree: 18%
 
 ---
@@ -140,7 +140,7 @@ De functie Zoeken in verzamelingen ondersteunt zowel [Zoeken naar verzamelingen]
 
 ### Verzamelingen zoeken {#search-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt AEM Assets naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met sleutelwoorden in het vakje van het Onderzoek zoekt, [!DNL Experience Manager Assets] zoekt naar inzamelingsnamen, meta-gegevens, en de markeringen die aan de inzamelingen worden toegevoegd.
 
 Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
@@ -148,7 +148,7 @@ Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijk
 
 Tik of klik op een verzameling in de verzamelingsconsole om deze te openen.
 
-Binnen een verzameling AEM het zoeken naar middelen beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
+Binnen een verzameling is de [!DNL Experience Manager]-zoekopdracht beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
 
 ## Verzamelingsinstellingen bewerken {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elemente
 
 ## Eigenschappen van metagegevens van meerdere verzamelingen bewerken {#editing-metadata-properties-of-multiple-collections}
 
-Met Enterprise Manager-middelen (AEM Adobe) kunt u de metagegevens van vele verzamelingen bulksgewijs bewerken. Met de pagina [!UICONTROL Properties] kunt u wijzigingen in metagegevens uitvoeren op meerdere verzamelingen. Wijzig bijvoorbeeld de eigenschappen van metagegevens in een algemene waarde of voeg tags toe of wijzig deze.
+Met de Adobe Enterprise Manager-middelen kunt u de metagegevens van vele verzamelingen bulksgewijs bewerken. Met de pagina [!UICONTROL Properties] kunt u wijzigingen in metagegevens uitvoeren op meerdere verzamelingen. Wijzig bijvoorbeeld de eigenschappen van metagegevens in een algemene waarde of voeg tags toe of wijzig deze.
 
 Als u de pagina met metagegevens [!UICONTROL Properties] wilt aanpassen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens, gebruikt u de Schema-editor.
 
