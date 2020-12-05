@@ -2,7 +2,7 @@
 title: Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch
 description: Met de extensie Dynamic Media Viewers voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
 source-wordcount: '6263'
 ht-degree: 16%
@@ -646,7 +646,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
 ## Adobe Experience Manager configureren voor integratie {#configuring-adobe-experience-manager-for-the-integration}
 
-<!-- Prerequisites lost below should be verified by Sasha -->
+<!-- Prerequisites list below should be verified by Sasha -->
 
 Vereisten:
 
@@ -661,7 +661,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 ### AEM IMS {#configuring-aem-ims} configureren
 
-1. Klik in AEM auteur op het pictogram Extra (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
+1. Klik in AEM auteur op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
