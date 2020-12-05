@@ -2,10 +2,10 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 12%
+source-wordcount: '506'
+ht-degree: 9%
 
 ---
 
@@ -41,7 +41,7 @@ Deze sectie maakt een lijst van eigenschappen en mogelijkheden die uit AEM met E
 | Gebied | Functie | Vervanging |
 | ------------ | ------------------ | ----------- |
 | UI | Terwijl sommige Klassieke dialogen UI voorlopig voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, het Leegmaken van de Versie en sommige configuraties van de Cloud Service blijven, is de toegang tot Klassieke UI in het algemeen verwijderd in de AEM productinterface. | Standaardinterface |
-|  Dynamic Media  | Eerdere integraties met [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/scene7.html) en [Dynamic Media Hybrid mode](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html) zijn niet beschikbaar in AEM als Cloud Service. | Gebruik [Dynamische media](/help/assets/dynamic-media/dynamic-media.md) die bij Experience Manager as a Cloud Service worden geleverd. |
+|  Dynamic Media  | Eerdere integraties met [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) zijn niet beschikbaar in AEM als Cloud Service. | Gebruik [Dynamische media](/help/assets/dynamic-media/dynamic-media.md) die bij Experience Manager as a Cloud Service worden geleverd. |
 | Sites | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in AEM 6.4 en zijn nu verwijderd uit AEM. |
 | Sites | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de AEM niet toegankelijk zijn tijdens runtime. |
 | Activa | [AEM Assets delen met Marketing Cloud Assets Core Service en Creative Cloud ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) services is niet beschikbaar. | Gebruik [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) voor integratie met Creative Cloud. |
