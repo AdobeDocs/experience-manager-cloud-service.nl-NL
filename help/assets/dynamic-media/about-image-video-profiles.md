@@ -2,9 +2,9 @@
 title: Dynamische profielen van Media-afbeeldingen en videoprofielen
 description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op dynamische media-videoelementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op dynamische media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1249'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
 >[!NOTE]
 >
->Als u een bulkmigratie van activa van Dynamic Media Classic aan AEM uitvoert, moet u de de replicatieagent van de Migratie op de Dynamische server van Media toelaten. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
+>Als u een bulkmigratie van activa van Dynamic Media Classic aan Experience Manager uitvoert, moet u de de replicatieagent van de Migratie op de Dynamische server van Media toelaten. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
 >
 >De migratiepublicatieagent moet zijn uitgeschakeld op de Dynamic Media-server, zodat de workflow voor opnieuw verwerken naar behoren werkt.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamische media-elementen in een map** opnieuw verwerken:
-1. Navigeer AEM vanaf de elementenpagina naar een map met dynamische media-elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de **Scene7 wilt toepassen: Asset** opnieuw verwerken,
+1. Navigeer in Adobe Experience Manager vanaf de pagina Middelen naar een map met dynamische media-elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de **Scene7 wilt toepassen: Asset** opnieuw verwerken,
 
    Mappen waaraan al een afbeeldingsprofiel of videoprofiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam in de Kaartweergave weer te geven.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
 
-   Klik op **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang van de AEM te controleren. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Om het werkschema te controleren of zijn vooruitgang te controleren, van de Experience Manager belangrijkste consolepagina, klik **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
-(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partijen wordt bepaald door de gemiddelde omvang van de activa en de typen activa waarvoor het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één herverwerkingstaak hebt. De verwerkingsbanner blijft daarom langer op AEM middelen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot honderden, maar nooit meer dan 1000. Als het gemiddelde bestand groot-honderden megabytes-Adobe is, kunt u het beste de batch tot 10 verkleinen.
+(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partijen wordt bepaald door de gemiddelde omvang van de activa en de typen activa waarvoor het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één herverwerkingstaak hebt. De verwerkingsbanner blijft daarom langer op de Experience Manager-elementen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot honderden, maar nooit meer dan 1000. Als het gemiddelde bestand groot-honderden megabytes-Adobe is, kunt u het beste de batch tot 10 verkleinen.
 
 **De batchgrootte van de workflow voor opnieuw verwerken optioneel aanpassen**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
