@@ -2,9 +2,9 @@
 title: Voorinstellingen voor viewers beheren
 description: Voorinstellingen voor viewers maken en beheren
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4149'
 ht-degree: 18%
 
 ---
@@ -51,7 +51,7 @@ U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, p
 
 Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of de interface reageert mogelijk op een ander scherm op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve webpagina&#39;s.
 
-Zie [Responsieve afbeeldingsbibliotheek](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in de *Scene7 Image Serving API Help* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
+Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in de Help van *Dynamic Media Image Serving and Rendering API Help* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
 
 >[!NOTE]
 >
