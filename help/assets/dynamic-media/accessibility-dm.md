@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamische media ondersteunt toetsenbordbesturing en ondersteunende technologie√
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in dynamische media
 
-Omdat Dynamic Media een insteekmodule voor AEM Assets is, is het meeste toetsenbordbesturingsgedrag hetzelfde als in AEM Assets. De `Cancel`-knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in AEM Assets en reageert op de `Spacebar`-toets als in AEM Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Omdat Dynamic Media een plug-in is voor Experience Manager Assets, is het meeste gedrag van het toetsenbordbeheer hetzelfde als in Experience Manager Assets. De `Cancel`-knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets en reageert op de `Spacebar`-toets als in Experience Manager Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die door afzonderlijke elementen van de gebruikersinterface in dynamische media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in Dynamic Media heeft betrekking op het volgende:
 
