@@ -2,9 +2,9 @@
 title: Dynamische media instellen
 description: Als u dynamische media wilt instellen, moet u dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '175'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u aan de slag hebt AEM, heeft om het even welk middel u uploadt Dynamische Media automatisch toegelaten (tenzij het uitdrukkelijk door uw systeembeheerder werd onbruikbaar gemaakt). Als u op een bevorderd geval van AEM en nieuw aan Dynamische Media bent, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamische Media-toegelaten.
+>* Nadat u de Experience Manager in gebruik hebt genomen, wordt voor elk element dat u uploadt automatisch Dynamische media ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een bevorderd geval van Experience Manager en nieuw aan Dynamische Media bevindt, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamische Media-Toegelaten.
