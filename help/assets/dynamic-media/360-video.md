@@ -2,9 +2,9 @@
 title: 360/VR-video
 description: Leer hoe u werkt met 360 en VR-video (Virtual Reality) in dynamische media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
 ## Elementen uploaden voor gebruik met de 360 Video-viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-360 video-elementen die naar AEM worden geüpload, krijgen het label **Multimedia** op een elementpagina, vergelijkbaar met het normale video-element.
+360 video-elementen die naar de Experience Manager worden geüpload, krijgen het label **Multimedia** op een elementenpagina, vergelijkbaar met normaal video-element.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selectto previewEen geüploade 360 video-element in de kaartweergave. Het element is gelabeld als Multimedia.*
@@ -98,7 +98,7 @@ Zie ook [Viewer-voorinstellingen bewerken](/help/assets/dynamic-media/managing-v
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van Experience Managers Sites.
 Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Een voorvertoning van 360 video&#39;s weergeven**
@@ -134,5 +134,5 @@ U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-vi
 
 Zie [Dynamische media-elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360-video.
 Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van Experience Managers Sites.
 Zie ook [Dynamische media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
