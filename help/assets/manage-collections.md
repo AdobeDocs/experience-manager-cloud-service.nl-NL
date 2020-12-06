@@ -4,9 +4,9 @@ description: Begrijp het concept van inzameling in de Activa van Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2240'
 ht-degree: 18%
 
 ---
@@ -73,7 +73,7 @@ U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt 
 Een slimme verzameling gebruikt zoekcriteria om elementen dynamisch te vullen. U kunt een slimme verzameling alleen maken met behulp van bestanden en niet met behulp van mappen of bestanden en mappen.
 
 1. Ga naar de asset-interface en tik of klik op het pictogram **[!UICONTROL Search]**.
-1. Typ het trefwoord in het vak Universeel zoeken en druk op Enter. Tik/klik op het pictogram GlobalNav om het deelvenster Filters weer te geven en een zoekfilter toe te passen vanuit het deelvenster Zoeken.
+1. Voer het trefwoord in het vak Universeel zoeken in en selecteer `Enter`. Tik/klik op het pictogram GlobalNav om het deelvenster Filters weer te geven en een zoekfilter toe te passen vanuit het deelvenster Zoeken.
 1. Selecteer **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**.
 1. Tik of klik op **[!UICONTROL Save Smart Collection]**.
 1. Geef een naam op voor de verzameling. Selecteer **[!UICONTROL Public]** om de groep van Gebruikers DAM met de rol van de Kijker aan de slimme inzameling toe te voegen.
@@ -103,7 +103,7 @@ U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of ma
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches) te wijzigen.
 
 1. Tik in de gebruikersinterface Middelen op het pictogram **[!UICONTROL Search]** op de werkbalk.
-1. Druk op Enter terwijl de cursor in het vak Onderzoek staat.
+1. Met de curseur in het vakje van het Onderzoek, selecteer `Enter` sleutel.
 1. Tik/klik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 1. Selecteer **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**.
@@ -238,7 +238,7 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
 
-1. Met de curseur op het gebied van Onderzoek, duw op de Enter sleutel.
+1. Met de curseur op het gebied van Onderzoek, selecteer `Enter` sleutel.
 1. Klik of tik op het GlobalNav-pictogram om het deelvenster Filters weer te geven.
 1. Tik of klik in de lijst **[!UICONTROL Saved Searches]** op **[!UICONTROL Delete]** naast de slimme verzameling die u wilt verwijderen.
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
@@ -249,7 +249,7 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 
 1. Selecteer in de console Verzamelingen een verzameling waarop u een workflow wilt uitvoeren.
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in de lijst.
-1. Klik of tik vanaf de tijdlijn op het pictogram Caret onderaan en tik op **[!UICONTROL Start Workflow]**.
+1. Selecteer of tik in de tijdlijn op het pictogram Caret onderaan en tik op **[!UICONTROL Start Workflow]**.
 1. Selecteer in de sectie **[!UICONTROL Start Workflow]** een workflowmodel in de lijst. Selecteer bijvoorbeeld het model **[!UICONTROL DAM Update Asset]**.
 1. Voer een titel in voor de workflow en tik/klik op **[!UICONTROL Start]**.
 1. Tik/klik op **[!UICONTROL Proceed]** in het dialoogvenster. De workflow wordt uitgevoerd op alle elementen in de verzameling.
