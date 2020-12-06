@@ -2,7 +2,7 @@
 title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2264'
 ht-degree: 18%
@@ -33,9 +33,9 @@ Voor full-text onderzoeken, voeg `Fulltext` voorspellen aan de vorm toe. Gebruik
 
 1. Sleep op de pagina Zoeken in Forms bewerken een voorspelling van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]**.
 
-   ![Druk op een voorvertoning en verplaats deze om de zoekfilters aan te passen](assets/drag_predicate.png)
+   ![Een voorspelling selecteren en verplaatsen om de zoekfilters aan te passen](assets/drag_predicate.png)
 
-   *Afbeelding: Druk op en verplaats een voorspelling om de zoekfilters aan te passen.*
+   *Afbeelding: Selecteer en verplaats een voorspelling om de zoekfilters aan te passen.*
 
 1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
 
