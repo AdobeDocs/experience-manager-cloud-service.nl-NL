@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Assets]
 description: Leer hoe u de verloopstatus van elementen en informatie voor gelicentieerde elementen beheert in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1272'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 
 1. Klik in de [!DNL Assets]-console op **[!UICONTROL Search]** in de werkbalk om het vak Onderzoek weer te geven.
 
-1. Met de curseur in het vakje van het Onderzoek, druk de Enter sleutel om de pagina van onderzoeksresultaten te tonen.
+1. Met de curseur in het vakje van Onderzoek, selecteer `Enter` sleutel om de pagina van onderzoeksresultaten te tonen.
 
 1. Klik op het pictogram GlobalNav om het deelvenster Zoeken weer te geven.
 
@@ -95,7 +95,7 @@ De [!DNL Assets] console kan diverse staten voor activa tonen. Afhankelijk van d
 
 1. Als u wilt zoeken naar elementen op basis van hun status, klikt u op **[!UICONTROL Search]** om de balk Zoeken weer te geven.
 
-1. Druk op Enter en klik op [!DNL Experience Manager] om het deelvenster Zoeken weer te geven.
+1. Selecteer `Return` en klik [!DNL Experience Manager] om het onderzoekspaneel te tonen.
 1. Klik in het zoekvenster op **[!UICONTROL Publish Status]** en selecteer **[!UICONTROL Published]** om te zoeken naar gepubliceerde elementen in [!DNL Assets].
 
 1. Klik **[!UICONTROL Approval Status]** en klik de aangewezen optie om naar goedgekeurde of verworpen activa te zoeken.
