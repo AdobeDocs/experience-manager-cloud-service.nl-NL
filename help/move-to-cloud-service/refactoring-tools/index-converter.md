@@ -2,9 +2,9 @@
 title: Indexconversie
 description: Indexconversie
 translation-type: tm+mt
-source-git-commit: 21bd9392d913369a5e8e0ebd9badbbe30fd4bba3
+source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,18 @@ Met de Indexconverter kunnen AEM ontwikkelaars bestaande aangepaste ak-indexdefi
 >[!NOTE]
 >Indexconverter transformeert alleen *lucene* type Custom Oak Index Definition die aanwezig zijn onder `/apps` of `/oak:index`. Het zet *lucene* type geen indexen om die voor `nt:base` worden gecreeerd.
 
+U kunt op twee manieren aangepaste definities voor eik-indexen maken:
+
+* `under /apps` (via elk aangepast inhoudspakket)
+* direct onder pad `/oak:index`
+
+>[!NOTE]
+>Verwijs naar [Zorgt voor eik-index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) om te leren hoe u eik-definities definieert en maakt
+
 ## Indexconverter {#using-index-converter} gebruiken
 
-Zie **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** om te leren hoe u de plug-in installeert en gebruikt.
+>[!NOTE]
+>Het wordt aangeraden het gereedschap Index-converter te gebruiken via [AIO CLI-plug-in voor bronmigratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration), maar het kan ook zelfstandig worden uitgevoerd.
+
+Zie **[Git Resource: aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)** om te leren hoe u de plug-in installeert en gebruikt.
 
