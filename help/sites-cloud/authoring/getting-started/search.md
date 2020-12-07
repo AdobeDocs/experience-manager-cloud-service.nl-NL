@@ -2,7 +2,7 @@
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 6%
@@ -18,7 +18,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
-![Knop Zoeken](/help/sites-cloud/authoring/assets/search-button.png)
+![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Met de zoekrail kunt u:
 
