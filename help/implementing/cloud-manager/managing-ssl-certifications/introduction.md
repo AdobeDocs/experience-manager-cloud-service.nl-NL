@@ -2,9 +2,9 @@
 title: Inleiding - SSL-certificaten beheren
 description: Inleiding - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installe
 
 Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
 
-* Een SSL-certificaat kan door meerdere omgevingen worden gebruikt: eenmaal toevoegen en meerdere keren gebruiken.
+* Een SSL-certificaat kan door meerdere omgevingen worden gebruikt, dat wil zeggen één keer toevoegen en meerdere keren gebruiken.
 * Elke Cloud Manager-omgeving kan meerdere certificaten gebruiken.
 * Een persoonlijke sleutel kan meerdere SSL-certificaten uitgeven.
 * Elk certificaat bevat gewoonlijk meerdere domeinen.
@@ -30,6 +30,8 @@ Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
 
 Met behulp van de pagina met SSL-certificaten voor de gebruikersinterface van Cloud Manager kan een gebruiker met machtigingen verschillende taken uitvoeren om SSL-certificaten voor een programma te beheren:
 
-* Een SSL-certificaat toevoegen.
-* Een SSL-certificaat weergeven, bijwerken of vervangen. Met deze acties kunt u details weergeven of een certificaat vervangen dat bijna verlopen is.
-* Een SSL-certificaat verwijderen.
+* Een SSL-certificaat toevoegen
+* Een SSL-certificaat weergeven, bijwerken of vervangen
+   >[!NOTE]
+   >Met deze acties kunt u details weergeven of een certificaat vervangen dat bijna verlopen is.
+* Een SSL-certificaat verwijderen
