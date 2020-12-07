@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: b6911f0b8674550713bd4ec1e34be5d0a14cc427
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
 >[!NOTE]
->Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Ga hoe te om een SSL certificaat te krijgen om meer te leren.INSERT LINK
+>AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd.
+
+Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Zie Een SSL-certificaat ophalen voor meer informatie.
 
 ## Certificaatformaat {#certificate-format}
 
-SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die zich binnen de PEM-indeling bevinden, zijn .pem, .crt, .cer en .cert.
+SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder andere `.pem,`.`crt`,  `.cer`en  `.cert`.
 
 Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converteren naar PEM:
 
@@ -37,21 +39,22 @@ Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converte
 
 >[!NOTE]
 >* Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat te installeren in Cloud Manager.
->* Cloud Manager staat op elk gewenst moment maximaal vijf SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in het gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd.
+>* Cloud Manager staat op elk gewenst moment maximaal 10 SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in uw gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd.
 
+
+Voer de onderstaande stappen uit om een certificaat toe te voegen:
 
 1. Meld u aan bij Cloud Manager.
 1. Navigeer van de overzichtspagina naar het scherm Omgevingen.
-1. Navigeer naar het scherm SSL-certificaten vanuit het navigatiemenu links. Op dit scherm wordt een tabel met details van bestaande SSL-certificaten weergegeven.AFBEELDING INSERT
+1. Navigeer naar het scherm SSL-certificaten vanuit het navigatiemenu links. Op dit scherm wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
 1. Selecteer **Certificaat toevoegen** knoop om een tovenaar te lanceren.
-1. Voer een naam voor het certificaat in. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
-1. Plak de inhoud van het certificaat, de persoonlijke sleutel en de keten in de desbetreffende velden. Gebruik het plakpictogram rechts van het invoervak.
-1. Selecteer **Opslaan**.
+   1. Geef een naam op voor uw certificaat. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
+   1. Plak de inhoud van het certificaat, de persoonlijke sleutel en de keten in de desbetreffende velden. Gebruik het plakpictogram rechts van het invoervak.
 
-   >[!NOTE]
-   >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Verwijs naar de Fouten van de VERBINDING van het TUSSENVOEGSEL van het Certificaat om meer over het richten van gemeenschappelijke fouten te leren.
+      >[!NOTE]
+      >De drie velden zijn niet optioneel en moeten worden opgenomen.
+1. Nadat u het certificaat hebt verzonden, wordt het weergegeven als een nieuwe rij in de tabel.
 
-   Nadat u het certificaat hebt verzonden, wordt het weergegeven als een nieuwe rij in de tabel.
 
 ## Certificaatfouten {#certificate-errors}
 
