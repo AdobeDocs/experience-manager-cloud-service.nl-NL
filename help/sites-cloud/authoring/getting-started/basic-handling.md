@@ -2,7 +2,7 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 4%
@@ -95,7 +95,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Zoeken](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Knop Zoeken](/help/sites-cloud/authoring/assets/search-button.png)
+   ![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
 
    U kunt de [kortere wegsleutel ](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (voorwaartse schuine streep) ook gebruiken om onderzoek van om het even welke console aan te halen.
 
@@ -224,7 +224,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 >[!NOTE]
 >
->De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
+>De afzonderlijke beschikbare pictogrammen worden gedocumenteerd ten opzichte van de juiste console/functie/scenario.
 
 ## Snelle handelingen {#quick-actions}
 
