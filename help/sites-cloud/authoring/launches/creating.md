@@ -2,10 +2,10 @@
 title: Lanceringen maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 14%
+source-wordcount: '998'
+ht-degree: 12%
 
 ---
 
@@ -120,13 +120,15 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 Het maken van een geneste opstart vanuit de **Launches**-console is in principe hetzelfde als het maken van een andere opstarthandeling, met uitzondering dat u naar de opstartaftakking `/content/launches` moet navigeren:
 
 1. Selecteer **Maken** in de **Launches**-console.
-1. Selecteer **Pagina&#39;s toevoegen** en ga naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig dit met **Selecteren**:
+1. Selecteer **Pagina&#39;s toevoegen**, dan navigeer aan de lanceringstak door `/content/launches` in **Filters** spoorstaaf te specificeren. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![Een geneste start maken](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Ga verder met **Volgende** en vul **Eigenschappen** in zoals bij elke andere lancering.
+1. Ga verder met **Next**.
 
-   ![Bron selecteren voor geneste start](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Voltooi **Eigenschappen** zoals met een andere lancering.
+
+1. Volledig met **Maken**.
 
 #### Een geneste start maken - Siteconsole {#creating-a-nested-launch-sites-console}
 
