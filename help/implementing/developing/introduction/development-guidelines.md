@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ De logniveaus zijn als volgt:
 
 Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, gelieve te contacteren AEM steun als de draaddumps voor het zuiveren van een kwestie nodig zijn, specificerend het nauwkeurige tijdvenster.
 
-## CRX/DE Lite en de Console van het Systeem {#crxde-lite-and-system-console}
+## CRX/DE Lite en de Console van de Ontwikkelaar {#crxde-lite-and-developer-console}
 
 ### Lokale ontwikkeling {#local-development}
 
@@ -132,7 +132,7 @@ Let op: bij lokale ontwikkeling (met behulp van de snelstartmodus voor de cloud)
 
 ### AEM als hulpmiddelen voor de ontwikkeling van Cloud Servicen {#aem-as-a-cloud-service-development-tools}
 
-Klanten hebben toegang tot CRXDE-site in de ontwikkelomgeving, maar niet tot het stadium of de productie. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
+Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
 
 Een reeks hulpmiddelen om AEM als ontwikkelaarmilieu&#39;s van de Cloud Service te zuiveren zijn beschikbaar in de Console van de Ontwikkelaar voor ontwikkelings, stadium, en productiemilieu&#39;s. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
@@ -169,25 +169,25 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 
 ### Prestatiebewaking {#performance-monitoring}
 
-Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
+Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen de cijfers van toepassingen niet worden nageleefd.
 
-## IP-adres van speciale uitgang {#dedicated-egress-ip-address}
+## Speciaal IP-adres egress {#dedicated-egress-ip-address}
 
-Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
+Op verzoek zal AEM als Cloud Service een statisch, toegewijd IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code van Java wordt geprogrammeerd.
 
 ### Voordelen {#benefits}
 
-Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM als Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van de AEM van de klant Cloud Service zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+Dit specifieke IP adres kan veiligheid wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integraties buiten AEM als Cloud Service verbeteren die een toegestane lijst van IP adressen aanbiedt. Door het specifieke IP adres aan de toelaatbare lijst toe te voegen, zorgt het ervoor dat slechts het verkeer van de AEM Cloud Service van de klant zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van andere toegelaten IPs.
 
-Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt als Cloud Service door een reeks IPs stroomt die met andere klanten wordt gedeeld.
+Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM komt aangezien een Cloud Service door een reeks IPs stroomt die met andere klanten wordt gedeeld.
 
 ### Configuratie {#configuration}
 
-Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie na het eerste verzoek nodig hebben. Sandbox-programmaomgevingen worden niet ondersteund.
+Om een specifiek IP-adres in te schakelen, dient u een verzoek in bij de klantenondersteuning, die de IP-adresgegevens zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie nodig hebben na het eerste verzoek. Sandbox-programmaomgevingen worden niet ondersteund.
 
 ### Functiegebruik {#feature-usage}
 
-De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
+De functie is compatibel met Java-code of -bibliotheken die leiden tot uitgaand verkeer, mits deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gebruikte bibliotheken omvatten.
 
 Hieronder ziet u een codevoorbeeld:
 
@@ -205,51 +205,51 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in hun organisatie van de Adobe en voor alle milieu&#39;s in elk van hun programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
+Hetzelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in de organisatie Adobe en voor alle omgevingen in elk van hun programma&#39;s. Het is van toepassing op zowel auteur- als publicatieservices.
 
-Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
+Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd.
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip) te roepen, die het roepende IP adres zal terugkeren.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaand, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip) uit te roepen, die het roepende IP adres zal terugkeren.
 
 ## E-mail {#sending-email} verzenden
 
-AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
+AEM als Cloud Service vereist dat uitgaande mail wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
 
-### Toegang {#requesting-access} aanvragen
+### Toegang aanvragen {#requesting-access}
 
-Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
+Standaard is uitgaande e-mail uitgeschakeld. Als u dit wilt activeren, dient u een ondersteuningsticket in met:
 
 1. De volledig gekwalificeerde domeinnaam voor de mailserver (bijvoorbeeld `smtp.sendgrid.net`)
-1. De poort die moet worden gebruikt. Het zou haven 465 moeten zijn als gesteund door de postserver, anders haven 587 Merk op dat haven 587 slechts kan worden gebruikt als de postserver TLS op die haven vereist en afdwingt
-1. De programma-id en de omgeving-id voor de omgevingen die ze willen verlaten
-1. Of SMTP-toegang nodig is bij auteur, publiceren of beide.
+1. De poort die moet worden gebruikt. Het zou haven 465 moeten zijn indien gesteund door de postserver, anders haven 587 Merk op dat haven 587 slechts kan worden gebruikt als de postserver vereist en TLS op die haven afdwingt
+1. De programma-id en de milieu-id voor de omgevingen die ze willen uitzenden
+1. Hiermee wordt aangegeven of SMTP-toegang vereist is voor auteur, publicatie of beide.
 
 ### E-mails verzenden {#sending-emails}
 
-De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
+De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die is aangegeven in de ondersteuningsaanvraag en niet rechtstreeks naar ontvangers.
 
-AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
+AEM CS vereist dat e-mail wordt verzonden door poort 465. Als poort 465 niet wordt ondersteund door een mailserver, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
 
 >[!NOTE]
 >
->Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
+>Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt behandeld.
 
 ### Configuratie {#email-configuration}
 
-E-mails in AEM moeten worden verzonden met de OSGi-service ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) van de [Day CQ-mailservice.
+E-mails in AEM moeten worden verzonden met de OSGi-service ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) van [Day CQ Mail Service.
 
-Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen worden aangebracht in de `com.day.cq.mailer.DefaultMailService OSGI`-service:
+Zie [AEM 6.5-documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM CS moeten de volgende aanpassingen worden aangebracht in de service `com.day.cq.mailer.DefaultMailService OSGI`:
 
-Indien haven 465 is aangevraagd:
+Indien om poort 465 is verzocht:
 
-* `smtp.port` instellen op `465`
-* `smtp.ssl` instellen op `true`
-* `smtp.starttls` instellen op `false`
+* instellen op `smtp.port` op `465`
+* instellen op `smtp.ssl` op `true`
+* instellen op `smtp.starttls` op `false`
 
-Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet ondersteunt):
+Als poort 587 is aangevraagd (alleen toegestaan als de mailserver geen ondersteuning biedt voor poort 465):
 
-* `smtp.port` instellen op `587`
-* `smtp.ssl` instellen op `false`
-* `smtp.starttls` instellen op `true`
+* instellen op `smtp.port` op `587`
+* instellen op `smtp.ssl` op `false`
+* instellen op `smtp.starttls` op `true`
