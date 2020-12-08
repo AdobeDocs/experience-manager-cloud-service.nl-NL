@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '878'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ In deze sectie wordt beschreven hoe u startpagina&#39;s kunt maken, bewerken en 
 * [Lanceringen maken](/help/sites-cloud/authoring/launches/creating.md)
 * [Lanceringen bewerken](/help/sites-cloud/authoring/launches/editing.md)
 * [Pagina&#39;s beheren in starten](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Tijdverdraaiing gebruiken om een voorvertoning van uw inhoud weer te geven op basis van Starten](/help/sites-cloud/authoring/launches/preview.md)
+* [Tijdverdraaiing gebruiken om een voorvertoning van uw inhoud weer te geven op basis van startpunten](/help/sites-cloud/authoring/launches/preview.md)
 * [Lanceringen promoten](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Starten - de volgorde van gebeurtenissen {#launches-the-order-of-events}
@@ -84,22 +84,31 @@ Met Launches kunt u:
 >
 >Neem contact op met de systeembeheerder als u problemen ondervindt.
 
-### De opstartconsole {#the-launches-console}
-
-De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u toe om acties op die vermelde te voeren. De console is toegankelijk via:
-
-* De console **Tools**: **Gereedschappen**, **Sites**, **Launches**.
-
-* Of rechtstreeks met `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Start in References (Sites Console) {#launches-in-references-sites-console}
 
 1. Navigeer in de **Sites**-console naar de bron van de opstart(en).
 1. Open **References** rail en selecteer de bronpagina.
-1. Selecteer **Launches**, de bestaande lancering(en) zullen worden vermeld:
+1. Selecteer **Launches**, de bestaande lancering(en) zullen worden vermeld, samen met toegang tot **Console** van Lanceringen:
 
    ![Referenties van lanceringen in plaatsenconsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tik/klik op de gewenste opstart. De lijst met mogelijke acties wordt weergegeven:
 
    ![Handelingen om lanceringen in plaatsenconsole over te nemen](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## De opstartconsole {#the-launches-console}
+
+De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u toe om acties op die vermelde te voeren. De console is toegankelijk via:
+
+* De console **Tools**: **Gereedschappen**, **Sites**, **Launches**.
+
+* **Start** Consoleat onder aan  **** Starten van de  **** Referencesrail bij navigeren naar broninhoud in de Sites-console.
+
+   ![Start Console in References of launds in Sites-console](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* De **Launches**-knop rechtsboven wanneer u in de Sites-console navigeert naar de opstartinhoud:
+
+   ![Optie Starten in Sites-console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* of rechtstreeks; bijvoorbeeld met:
+   `https://<host>:<port>/libs/launches/content/launches.html`
