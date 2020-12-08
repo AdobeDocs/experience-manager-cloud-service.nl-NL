@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: 'U moet opstartiepagina''s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,14 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 U kunt lanceringen van of **Sites** console of **Launches** console bevorderen:
 
 1. Open:
-   * De **Sites**-console:
+   * De console **Sites** bij het navigeren door bronpagina&#39;s:
       1. Open [refereert spoorstaaf](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) en selecteer de vereiste bronpagina gebruikend [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) (of selecteer en open de verwijzingsspoorstaaf, is de orde niet belangrijk). Alle verwijzingen worden weergegeven.
       1. Selecteer **Launches** (bijv. Launches (1)) om een lijst met de specifieke opstarters weer te geven.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
       1. Selecteer **Starten bevorderen** om de wizard te openen.
+   * De **Sites**-console bij navigatie door opstartiepagina&#39;s:
+      1. Selecteer de vereiste startpagina in de selectiemodus [a1/>.](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+      1. De actie **Promote** zal in de toolbar beschikbaar zijn.
    * De **Launches**-console:
       1. Selecteer de start (tik op de miniatuur of klik erop).
       1. Selecteer **Promote**.
