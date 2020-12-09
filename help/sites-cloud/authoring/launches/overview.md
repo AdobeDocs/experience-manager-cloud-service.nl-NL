@@ -2,10 +2,10 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 6%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -20,6 +20,11 @@ De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld
 
 * Wijzigingen in de bronpagina&#39;s die optreden als gevolg van normale onderhoudstaken. Deze wijzigingen worden automatisch gedupliceerd op de startpagina&#39;s.
 * Bewerkingen die rechtstreeks worden uitgevoerd op de startpagina&#39;s ter voorbereiding op het volgende kwartaal.
+
+U kunt ook:
+
+* Navigeren door inhoud in de startvertakking; pagina&#39;s toevoegen of verwijderen, al naar gelang wat nodig is.
+* Geef een voorvertoning weer van hoe gepubliceerde inhoud er in de toekomst uitziet naar een specifieke datum/tijd.
 
 Wanneer het volgende kwartaal verschijnt, promoot u de startpagina&#39;s zodat u de bronpagina&#39;s kunt publiceren (met de bijgewerkte inhoud). U kunt alle pagina&#39;s of alleen de pagina&#39;s die u hebt gewijzigd, opwaarderen.
 
