@@ -1,21 +1,21 @@
 ---
-title: Dynamische media-elementen publiceren
-description: Dynamische media-elementen publiceren
+title: Dynamic Media-middelen publiceren
+description: Leer hoe u Dynamic Media-middelen publiceert.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
 
 
-# Dynamische media-elementen publiceren {#publishing-dynamic-media-assets}
+# Dynamic Media-middelen {#publishing-dynamic-media-assets} publiceren
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamische media configureren.](config-dm.md) Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in dynamische media.](/help/assets/dynamic-media/selective-publishing.md)
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media configureren.](config-dm.md) Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
@@ -27,7 +27,7 @@ Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorge
 
 Zie ook [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
 
-Zie ook [De Dynamic Media Video-viewer of de Image Viewer insluiten op een webpagina.](embed-code.md)
+Zie ook [De Dynamic Media Video-viewer of de afbeeldingsviewer insluiten op een webpagina.](embed-code.md)
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ Zie ook [De Dynamic Media Video-viewer of de Image Viewer insluiten op een webpa
 
 Zie [Elementen publiceren.](/help/assets/manage-digital-assets.md)
 
-## HTTP/2-levering van dynamische media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 
-AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
+AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
 Zie [HTTP/2 levering van inhoud vaak gestelde vragen](/help/assets/dynamic-media/http2faq.md) om meer te leren.
 <!--this md file used to reside under sites-administering-->
