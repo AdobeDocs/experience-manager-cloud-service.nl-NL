@@ -2,7 +2,7 @@
 title: Indexconversie
 description: Indexconversie
 translation-type: tm+mt
-source-git-commit: 1117f03b2eff37f8b25726c3dc60d5a3fe98a5d1
+source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -37,11 +37,11 @@ Als [Zorgen dat de eik-index](https://adobe-consulting-services.github.io/acs-ae
 
 * Via Adobe I/O CLI: Het wordt aanbevolen de indexconverter via `aio-cli-plugin-aem-cloud-service-migration` te gebruiken (AEM als een Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor meer informatie over het installeren en gebruiken van de plug-in.
+   Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor meer informatie over het installeren en gebruiken van de plug-in.
 
 * Als zelfstandig hulpprogramma: De omzetter van de Index kan ook als standalone nut worden uitgevoerd.
 
-Zie **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** leren hoe te om dit hulpmiddel te gebruiken.
+   Zie **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** leren hoe te om dit hulpmiddel te gebruiken.
 
 
 
