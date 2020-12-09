@@ -1,10 +1,10 @@
 ---
 title: Voorinstellingen voor viewers beheren
-description: Voorinstellingen voor viewers maken en beheren
+description: Viewer-voorinstellingen maken en beheren in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4149'
+source-wordcount: '4152'
 ht-degree: 18%
 
 ---
@@ -49,9 +49,9 @@ U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, p
 
 ### Viewer-ondersteuning voor responsieve webpagina&#39;s {#viewer-support-for-responsive-designed-web-pages}
 
-Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of de interface reageert mogelijk op een ander scherm op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve webpagina&#39;s.
+Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of de interface reageert mogelijk op een ander scherm op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve ontworpen webpagina&#39;s.
 
-Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in de Help van *Dynamic Media Image Serving and Rendering API Help* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
+Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in de *Help van de Dynamic Media-API voor beeldbewerking en rendering* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.corp
 
 ### Systeemcompatibiliteit met viewervoorinstellingen {#viewer-preset-system-compatibility}
 
-Alle voorinstellingen van de out-of-the-box Viewer die bij Dynamische media worden geleverd, zijn volledig compatibel met de volgende systemen:
+Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden geleverd, zijn volledig compatibel met de volgende systemen:
 
 * Desktops
 * Apple iPhone
@@ -148,7 +148,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
 
 ### Lijst met voorinstellingen van de out-of-the-box Viewer {#list-of-out-of-the-box-viewer-presets}
 
-In de volgende tabel worden alle vooraf gedefinieerde, kant-en-klare voorinstellingen voor viewers weergegeven die bij Dynamische media worden geleverd.
+In de volgende tabel worden alle vooraf gedefinieerde, kant-en-klare Viewer-voorinstellingen weergegeven die bij Dynamic Media worden geleverd.
 
 Zie ook [Live demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -158,7 +158,7 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referenti
 
 >[!NOTE]
 >
->Alle voorinstellingen voor viewers die niet in de box staan, zijn al geactiveerd (ingeschakeld), maar moeten wel worden gepubliceerd.
+>Alle voorinstellingen voor viewers die buiten de box vallen, zijn al geactiveerd (ingeschakeld), maar u moet ze wel publiceren.
 >Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 >
 >Alle nieuwe viewervoorinstellingen die u maakt en toevoegt, moeten zowel worden geactiveerd *als *gepubliceerd.
@@ -389,7 +389,7 @@ AEM toont een groot aantal viewervoorinstellingen wanneer een element van **[!UI
 
 Door viewervoorinstellingen te maken, kunt u verschillende instellingen toepassen op weergave en interactie met elementen. U hoeft echter geen nieuwe voorinstellingen voor viewers te maken. Desgewenst kunt u de standaardvoorinstellingen voor viewers gebruiken die al bij AEM Assets worden geleverd.
 
-Als u een nieuwe viewervoorinstelling maakt nadat u deze hebt opgeslagen, wordt de status van de viewer automatisch geactiveerd (ingesteld op **[!UICONTROL On]**) op de pagina Voorinstellingen viewer. Deze status betekent dat deze zichtbaar is in de component Dynamische media en de component Interactieve media en wanneer u een voorvertoning van een afbeelding of video weergeeft.
+Als u een nieuwe viewervoorinstelling maakt nadat u deze hebt opgeslagen, wordt de status van de viewer automatisch geactiveerd (ingesteld op **[!UICONTROL On]**) op de pagina Voorinstellingen viewer. Deze status betekent dat de component zichtbaar is in de Dynamic Media-component en de component Interactieve media en wanneer u een voorvertoning van een afbeelding of video weergeeft.
 
 Sommige voorinstellingen voor viewers hebben exclusieve instellingen die het gebruik en het algemene gedrag van de viewer kunnen beïnvloeden. Afhankelijk van de viewervoorinstelling die u maakt, is het verstandig rekening te houden met deze speciale overwegingen.
 
@@ -530,7 +530,7 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
 ## Voorinstellingen voor viewer publiceren {#publishing-viewer-presets}
 
-Als u de status van een viewervoorinstelling activeert (of inschakelt), betekent dit dat deze zichtbaar is in de component Dynamische media, de component Interactieve media en wanneer u een element weergeeft.
+Als u de status van een viewervoorinstelling activeert (of inschakelt), is deze zichtbaar in de Dynamic Media-component, de interactieve mediacomponent en wanneer u een element weergeeft.
 
 Als u echter* *een asset wilt leveren met een viewervoorinstelling, moet de viewervoorinstelling ook worden gepubliceerd. Alle viewervoorinstellingen moeten geactiveerd *en *gepubliceerd zijn om een URL of insluitcode voor een asset te verkrijgen. U moet alle standaard viewervoorinstellingen die bij dynamische media worden geleverd, activeren en publiceren. Aangepaste viewervoorinstellingen die u maakt en toevoegt, worden automatisch geactiveerd, maar moeten ook worden gepubliceerd.
 
@@ -569,7 +569,7 @@ Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellinge
 
 ## Voorinstellingen aangepaste viewer {#deleting-custom-viewer-presets} verwijderen
 
-U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en toegevoegd aan dynamische media.
+U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
 
 **Aangepaste voorinstellingen voor viewers verwijderen**
 
@@ -597,4 +597,4 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen. Zie ook [De video-viewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
 
-Als u AEM gebruikt als uw WCM, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. Zie [Dynamische media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Als u AEM gebruikt als uw WCM, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
