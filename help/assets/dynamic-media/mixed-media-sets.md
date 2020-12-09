@@ -1,8 +1,8 @@
 ---
 title: Mixed Media Sets
-description: Leer hoe u met gemengde mediasets werkt in Dynamic Media
+description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 27%
@@ -64,7 +64,7 @@ Indien nodig kunt u [Gemengde Mediasets](#editing-mixed-media-sets) bewerken. Da
 
 >[!NOTE]
 >
->Zie [Problemen met dynamische media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md) als u problemen ondervindt bij het maken van sets.
+>Zie [Problemen met Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md) oplossen als er problemen optreden bij het maken van sets.
 
 ## Elementen {#uploading-assets} uploaden
 
