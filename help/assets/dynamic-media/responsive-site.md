@@ -1,10 +1,10 @@
 ---
 title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
-description: De functie voor responsieve code gebruiken om geoptimaliseerde afbeeldingen te leveren
+description: Leer hoe u de functie voor responsieve code gebruikt om geoptimaliseerde afbeeldingen van Dynamic Media te leveren.
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '312'
 ht-degree: 12%
 
 ---
@@ -43,8 +43,8 @@ Zie ook [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplic
 1. Selecteer en kopieer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardbreekpunten in de insluitcode zodat deze overeenkomen met die van de responsieve website rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
 
-## Het gebruiken van HTTP/2 om uw Dynamische activa van Media {#using-http-to-delivery-your-dynamic-media-assets} te leveren
+## HTTP/2 gebruiken om uw Dynamic Media-middelen {#using-http-to-delivery-your-dynamic-media-assets} te leveren
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijd biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige details bij het worden begonnen met het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2faq.md) voor volledige informatie over het gaan gebruiken van HTTP/2 met uw Dynamic Media-account.
