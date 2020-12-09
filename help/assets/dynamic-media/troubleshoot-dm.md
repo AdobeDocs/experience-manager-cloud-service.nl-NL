@@ -1,10 +1,10 @@
 ---
 title: Problemen met Dynamic Media oplossen
-description: Problemen met Dynamic Media oplossen.
+description: Tips voor het oplossen van problemen bij het gebruik van Dynamic Media.
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Problemen met Dynamic Media oplossen {#troubleshooting-dynamic-media-scene-mode}
 
-Het volgende onderwerp beschrijft het oplossen van problemen voor Dynamische Media.
+In het volgende onderwerp wordt het oplossen van problemen voor Dynamic Media beschreven.
 
-## Nieuwe dynamische mediaconfiguratie {#new-dm-config}
+## Nieuwe Dynamic Media-configuratie {#new-dm-config}
 
-Zie [Problemen met een nieuwe dynamische mediaconfiguratie oplossen.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Zie [Problemen met een nieuwe Dynamic Media-configuratie oplossen.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -24,13 +24,13 @@ Hier volgen enkele algemene tips en trucs voor alle elementen.
 
 ### Eigenschappen voor de synchronisatie van bedrijfsmiddelen {#asset-synchronization-status-properties}
 
-De volgende elementeigenschappen kunnen in CRXDE Lite worden gecontroleerd om de geslaagde synchronisatie van het element van AEM naar Dynamic Media te bevestigen:
+De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat het middel is gesynchroniseerd van AEM naar Dynamic Media:
 
 | **Eigenschap** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Algemene indicator dat de knoop met Dynamische Media wordt verbonden. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **Tekst van** fout PublishComplete | Status van het uploaden van middelen naar Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet worden gevuld om URLs aan ver middel van Dynamische Media te produceren. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet worden gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** opvolger  **is mislukt:`<error text>`** | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
@@ -39,11 +39,11 @@ Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `
 
 ### Versiebeheer {#version-control}
 
-Bij het vervangen van een bestaand dynamisch media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen/maken:
+Bij het vervangen van een bestaand Dynamic Media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen/maken:
 
 * Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. `image.jpg` is bijvoorbeeld het oorspronkelijke element en `image1.jpg` is het net geüploade element.
 
-* Het maken van een versie wordt niet ondersteund in Dynamische media. De nieuwe versie vervangt het bestaande element in levering.
+* Het maken van een versie wordt niet ondersteund in Dynamic Media. De nieuwe versie vervangt het bestaande element in levering.
 
 ## Afbeeldingen en sets {#images-and-sets}
 
@@ -78,7 +78,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>Gebruik voor de carrousel alleen afbeeldingen met dezelfde grootte.</p> </td>
   </tr>
   <tr>
-   <td>Afbeelding geeft geen voorvertoning weer met de Dynamic Media-viewer</td>
+   <td>De afbeelding wordt niet voorvertoond met de Dynamic Media-viewer</td>
    <td><p>Controleer of het element <code>dam:scene7File</code> bevat in de metagegevenseigenschappen (CRXDE Lite)</p> </td>
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td>
   </tr>
@@ -124,7 +124,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
      <li>Wijs een videoprofiel toe aan de map.</li>
      <li>Bewerk het videoprofiel om meerdere coderingsvoorinstellingen op te nemen.</li>
      <li>Wacht tot de video is verwerkt.</li>
-     <li>Als u de video opnieuw laadt, moet u ervoor zorgen dat de workflow Dynamische media coderen video niet wordt uitgevoerd.<br/> </li>
+     <li>Als u de video opnieuw laadt, moet u ervoor zorgen dat de Dynamic Media Encode Video-workflow niet wordt uitgevoerd.<br/> </li>
      <li>Upload de video opnieuw.</li>
     </ol> </td>
   </tr>
@@ -132,12 +132,12 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>Video is niet gecodeerd</td>
    <td>
     <ul>
-     <li>Controleer of Dynamic Media Cloud Service is geconfigureerd.</li>
+     <li>Controleer of Dynamic Media-cloudservice is geconfigureerd.</li>
      <li>Controleer of een videoprofiel is gekoppeld aan de uploadmap.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Controleer of de Configuratie van de Dynamische Media onder Cloud Services is behoorlijk opstelling.</li>
+     <li>Controleer of de Dynamic Media-configuratie onder Cloud Services correct is ingesteld.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -179,7 +179,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   <tr>
    <td>Voorinstellingen van viewer worden niet gepubliceerd</td>
    <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Als u correct werkt, ziet u het volgende:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de instellingen voor de dynamische mediolcloud zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
    <td>
     <ol>
      <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -191,10 +191,10 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>Vooraf ingestelde illustraties van de viewer retourneren 404 vanaf de voorvertoning in elementdetails of kopiëren, URL- en insluitcode</td>
    <td><p>Ga als volgt te werk bij CRXDE Lite:</p>
     <ol>
-     <li>Navigeer naar de map <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> in de Dynamic Media sync-map (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Navigeer naar de map <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> in de Dynamic Media-synchronisatiemap (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
      <li>Controleer of <code>dam:scene7*</code>-eigenschappen aanwezig zijn. Als het element is gesynchroniseerd en gepubliceerd, ziet u dat de <code>dam:scene7FileStatus</code>-set is ingesteld op <strong>PublishComplete</strong>.</li>
-     <li>Poging om de illustratie rechtstreeks via Dynamic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen
+     <li>Poging om de illustratie rechtstreeks vanuit Dynamic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
