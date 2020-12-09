@@ -1,11 +1,11 @@
 ---
 title: Toegankelijkheid in [!DNL Dynamic Media]
-description: Meer informatie over toegankelijkheid in Dynamic Media en Dynamic Media Viewers
+description: Meer informatie over toegankelijkheid in Dynamic Media en Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 ---
 
 
-# Toegankelijkheid in dynamische media {#working-with-three-d-assets-dm}
+# Toegankelijkheid in Dynamic Media {#working-with-three-d-assets-dm}
 
-Dynamische media ondersteunt toetsenbordbesturing en ondersteunende technologieën, zoals JAWS en NVDA-schermlezers, in de hele ontwerpgebruikersinterface.
+Dynamic Media ondersteunt toetsenbordbesturing en ondersteunende hulpmiddelen, zoals JAWS en NVDA-schermlezers, in de hele gebruikersinterface.
 
-## Ondersteuning voor toetsenbordtoegankelijkheid in dynamische media
+## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media
 
-Omdat Dynamic Media een plug-in is voor Experience Manager Assets, is het meeste gedrag van het toetsenbordbeheer hetzelfde als in Experience Manager Assets. De `Cancel`-knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets en reageert op de `Spacebar`-toets als in Experience Manager Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Aangezien Dynamic Media een insteekmodule is voor het Experience Managers van middelen, is het meeste toetsenbordbesturingsgedrag precies hetzelfde als in Experience Managers. De `Cancel`-knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets en reageert op de `Spacebar`-toets als in Experience Manager Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Toetsen die door afzonderlijke elementen van de gebruikersinterface in dynamische media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in Dynamic Media heeft betrekking op het volgende:
+Toetsen die door afzonderlijke gebruikersinterface-elementen in Dynamic Media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Toetsenbordbesturing in Dynamic Media gaat over het volgende:
 
 * Mogelijkheid om met de toetsen `Tab` en `Shift+Tab` te navigeren tussen interactieve elementen op de pagina.
 Wanneer u `Tab` gebruikt, wordt de invoerfocus naar het volgende interface-element in de tabvolgorde verplaatst. wanneer u `Shift+Tab` gebruikt, krijgt het vorige gebruikersinterface-element weer focus.
@@ -44,20 +44,20 @@ Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken]
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Technische ondersteuning in Dynamic Media {#assistive-technology=support-for-dm}
+## Support voor hulpprogramma&#39;s in Dynamic Media {#assistive-technology=support-for-dm}
 
-Dynamische media-gebruikersinterface-elementen werken met ondersteunende hulpmiddelen, zoals schermlezers. De code herkent bijvoorbeeld markeringen op een pagina wanneer u door landmarkeringen navigeert met de sneltoets `D` of gebieden met de sneltoets `R`. De koptekst wordt ook van commentaar voorzien wanneer u navigeert met de sneltoets `H`.
+Dynamic Media-gebruikersinterface-elementen werken met ondersteunende hulpmiddelen, zoals schermlezers. De code herkent bijvoorbeeld markeringen op een pagina wanneer u door landmarkeringen navigeert met de sneltoets `D` of gebieden met de sneltoets `R`. De koptekst wordt ook van commentaar voorzien wanneer u navigeert met de sneltoets `H`.
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media-viewers {#keyboard-accessibility-for-dm-viewers}
 
-Alle dynamische media-viewercomponenten die niet in de verpakking staan, ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
+Alle Dynamic Media-viewercomponenten die niet in de verpakking staan, ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [Toegankelijkheid en navigatie van toetsenborden](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de handleiding van de Naslaggids voor dynamische media-viewers.
+Zie [Toetsenbordtoegankelijkheid en -navigatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamic Media Viewers Reference Guide.
 
-## Support voor ondersteunende technologie in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
+## Support voor hulpprogramma&#39;s in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
 
-Alle Dynamic Media Viewer-componenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
-Zie **Steun van de technologie** het onderwerp van de Hulp in om het even welk het aanpassen van kijkersonderwerp in de Dynamische Gids van de Verwijzing van de Kijkers van Media. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.
+Alle Dynamic Media-viewercomponenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
+Zie het **Technische ondersteuning** Help-onderwerp in een aangepast vieweronderwerp in de handleiding voor Dynamic Media-viewers. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.
 
 >[!MORELIKETHIS]
 >
