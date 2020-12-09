@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-assets leveren
-description: Met Dynamische media beschikt u over verschillende opties om uw dynamische media-elementen - zowel video als afbeeldingen - naar uw website te verzenden.
+description: Met Dynamic Media hebt u verschillende opties om uw Dynamic Media-middelen - zowel video als afbeeldingen - naar uw website te verzenden.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 13%
@@ -12,12 +12,12 @@ ht-degree: 13%
 
 # Dynamic Media-assets leveren{#delivering-dynamic-media-assets}
 
-De manier waarop u uw dynamische media-elementen - zowel video als afbeeldingen - kunt leveren, is afhankelijk van de manier waarop uw website is geïmplementeerd.
+Hoe u uw Dynamic Media-middelen kunt leveren - zowel video als afbeeldingen - hangt af van de manier waarop uw website is geïmplementeerd.
 
-Met Dynamische media hebt u verschillende opties:
+Met Dynamic Media hebt u verschillende opties:
 
 * Als uw website op AEM wordt gehost, wilt u de dynamische media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website niet op AEM staat, raadpleegt u [Dynamische media-elementen leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) in de gebruikersinterface met aanraakbediening.
+* Als uw website niet op AEM staat, raadpleegt u [Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) leveren in de gebruikersinterface met aanraakbediening.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
