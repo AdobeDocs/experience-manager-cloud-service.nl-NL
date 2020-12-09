@@ -2,9 +2,9 @@
 title: Lanceringen maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1045'
 ht-degree: 12%
 
 ---
@@ -19,6 +19,18 @@ Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagi
 * Standaard worden de startpagina&#39;s automatisch bijgewerkt met Live Copy wanneer de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de startpagina&#39;s moeten worden gepromoveerd en geactiveerd. De **startdatum** werkt echter alleen in combinatie met de markering **Geschikt voor productie** (zie [Een startconfiguratie bewerken](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Opdat de acties automatisch zouden optreden, moeten beide worden ingesteld.
+
+>[!NOTE]
+>
+>Wanneer u een lancering creeert, zijn de pagina&#39;s hoger in de hiërarchie geen exemplaren van de bronpagina&#39;s. Het zijn placeholders, die met het malplaatje worden gecreeerd:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Deze pagina&#39;s kunnen niet worden bewerkt. Het bericht wordt weergegeven:
+>
+>* **Deze pagina maakt geen deel uit van de opstart. Naar productiepagina**
+
 
 ## Starten {#creating-a-launch} maken
 
