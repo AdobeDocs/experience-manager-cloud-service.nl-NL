@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: 'U moet opstartiepagina''s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '817'
 ht-degree: 1%
 
 ---
@@ -64,6 +64,7 @@ U kunt lanceringen van of **Sites** console of **Launches** console bevorderen:
    * **Scope**
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**
+      * **Goedgekeurde pagina** &#39;s promoten, afhankelijk van de goedkeuringsworkflow voor het starten
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
 
@@ -75,7 +76,7 @@ U kunt lanceringen van of **Sites** console of **Launches** console bevorderen:
       >
       >Dit behandelt één enkele lancering, als u genestelde lanceringen hebt zie [Bevorderend een Genestelde Lancering](#promoting-a-nested-launch).
 1. Selecteer **Volgende** om door te gaan.
-1. U kunt de pagina&#39;s bekijken die u wilt promoten. Deze zijn afhankelijk van het gekozen paginabereik:
+1. U kunt de pagina&#39;s bekijken die u wilt promoten. deze zijn afhankelijk van het gekozen paginabereik:
 
    ![Aanbieding bekijken](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar elk van de b
    * **Bereik**  - Hier kunt u kiezen of u de volledige lancering wilt promoten, of alleen pagina&#39;s die eigenlijk zijn bewerkt. In het laatste geval kunt u opgeven of u subpagina&#39;s wilt opnemen of uitsluiten. De standaardconfiguratie is dat alleen paginawijzigingen voor de huidige pagina worden bevorderd:
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**
+      * **Goedgekeurde pagina** &#39;s promoten, afhankelijk van de goedkeuringsworkflow voor het starten
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
 
