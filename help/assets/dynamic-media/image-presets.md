@@ -1,8 +1,8 @@
 ---
 title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
-description: Leer hoe u voorinstellingen voor afbeeldingen kunt toepassen in Dynamic Media
+description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 12%
@@ -24,7 +24,7 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen kunt ge
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
-**Dynamische voorinstellingen voor mediaafbeeldingen toepassen**
+**Voorinstellingen Dynamic Media-afbeelding toepassen**
 
 1. Open het element en tik in de linkertrack op de vervolgkeuzelijst en tik vervolgens op **[!UICONTROL Renditions]**.
 
