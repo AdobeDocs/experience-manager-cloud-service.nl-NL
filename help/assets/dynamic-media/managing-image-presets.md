@@ -1,8 +1,8 @@
 ---
 title: Voorinstellingen afbeelding beheren
-description: Voorinstellingen voor afbeeldingen begrijpen en leren hoe u voorinstellingen voor afbeeldingen kunt maken, wijzigen en beheren
+description: Leer voorinstellingen voor afbeeldingen maken, wijzigen en beheren.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3477'
 ht-degree: 9%
@@ -67,7 +67,7 @@ De subelementen worden gemaakt door de `Create Sub Asset process`-component binn
 
 U kunt de subelementen of de pagina&#39;s weergeven wanneer u het element opent, tikken op het menu Inhoud en **[!UICONTROL Subassets]** of **[!UICONTROL Pages]** selecteren. De subactiva zijn reële activa. Dat wil zeggen dat PDF-pagina&#39;s worden geëxtraheerd door de workflowcomponent `Create Sub Asset`. Ze worden vervolgens opgeslagen als `page1.pdf`, `page2.pdf` enzovoort onder het hoofdelement. Nadat ze zijn opgeslagen, verwerkt de `DAM Update Asset` workflow ze.
 
-Met Dynamische media kunt u dynamische uitvoeringen voor AI-, EPS- of PDF-bestanden voorvertonen en genereren. Hiervoor zijn de volgende verwerkingsstappen vereist:
+Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of PDF-bestanden voor te vertonen en te genereren, voert u de volgende verwerkingsstappen uit:
 
 1. In `DAM Update Asset` werkschema, `Rasterize PDF/AI Image Preview Rendition` de procescomponent rasterizes de eerste pagina van origineel element-gebruikend gevormde resolutie-in een `cqdam.preview.png` vertoning.
 
@@ -144,7 +144,7 @@ De het procescomponent van het Proces van de Extractie van Media in de `DAM Upda
 
 De ExtendScript-paden in de argumenten van Media Extraction Process-component in de DAM Update Asset-workflow.
 
-De volgende scripts worden gebruikt door Dynamic Media-integratie:
+De volgende scripts worden door Dynamic Media-integratie gebruikt:
 
 <table>
  <tbody>
@@ -410,7 +410,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Niet-kernservices voor dynamische media: SVG, Afbeelding renderen en Web-to-Print</li>
+     <li>Niet-kernservices van Dynamic Media: SVG, Afbeelding renderen en Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -418,7 +418,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ### Opties voor voorinstellingen afbeelding definiëren met afbeeldingswijzigingstoetsen {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook opties voor het wijzigen van afbeeldingen definiëren voor het definiëren van voorinstellingen voor afbeeldingen. Rendering van afbeeldingen is afhankelijk van de API voor dynamische mediageleiding en wordt gedetailleerd gedefinieerd in de [HTTP-protocolreferentie](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook opties voor het wijzigen van afbeeldingen definiëren voor het definiëren van voorinstellingen voor afbeeldingen. Rendering van afbeeldingen is afhankelijk van de Dynamic Media Image Rendering API en wordt gedetailleerd gedefinieerd in de [HTTP Protocol Reference](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
@@ -482,4 +482,4 @@ Voorinstellingen voor afbeeldingen worden automatisch voor u gepubliceerd.
 ### Voorinstellingen {#deleting-image-presets} verwijderen
 
 1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Extra of navigeer naar **[!UICONTROL Assets > Image Presets]**.
-1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamische media bevestigen dat u deze wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
+1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
