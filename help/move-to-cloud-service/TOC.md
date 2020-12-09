@@ -4,10 +4,10 @@ user-guide-title: Overstappen naar AEM as a Cloud Service
 breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: 4ded4f7da78c42f28cf8e472f88d18918f8cf1d0
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 83%
+source-wordcount: '83'
+ht-degree: 81%
 
 ---
 
@@ -31,4 +31,5 @@ ht-degree: 83%
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
+   + [Indexconversie](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [AEM-moderniseringstools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
