@@ -1,8 +1,8 @@
 ---
-title: Voorinstellingen van de dynamische mediasviewer toepassen
-description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
+title: Voorinstellingen voor Dynamic Media-viewers toepassen
+description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 23%
@@ -10,7 +10,7 @@ ht-degree: 23%
 ---
 
 
-# Voorinstellingen voor dynamische mediasviewer toepassen {#applying-viewer-presets}
+# Voorinstellingen voor Dynamic Media-viewers {#applying-viewer-presets} toepassen
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
@@ -19,9 +19,9 @@ Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren
 Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
 Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
-Eventuele problemen met viewervoorinstellingen, zie [Problemen met dynamische media oplossen](troubleshoot-dm.md#viewers).
+Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media](troubleshoot-dm.md#viewers) oplossen.
 
-## Een voorinstelling voor een dynamische mediasviewer toepassen op een element {#applying-a-viewer-preset-to-an-asset}
+## Een Dynamic Media-viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
 1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers]**.
 
