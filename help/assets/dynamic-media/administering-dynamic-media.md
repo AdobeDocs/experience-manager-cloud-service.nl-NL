@@ -1,8 +1,8 @@
 ---
-title: Dynamische media instellen
-description: Als u dynamische media wilt instellen, moet u dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren
+title: Dynamic Media instellen
+description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
@@ -10,9 +10,9 @@ ht-degree: 3%
 ---
 
 
-# Dynamische media instellen {#setting-up-dynamic-media}
+# Dynamic Media {#setting-up-dynamic-media} instellen
 
-[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 -->
 
-Als u Dynamische Media beheert, zijn de volgende onderwerpen van belang:
+Als u Dynamic Media beheert, zijn de volgende onderwerpen van belang:
 
 * [Dynamic Media configureren](config-dm.md)
 * [Voorinstellingen afbeelding beheren](managing-image-presets.md)
@@ -40,4 +40,4 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u de Experience Manager in gebruik hebt genomen, wordt voor elk element dat u uploadt automatisch Dynamische media ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een bevorderd geval van Experience Manager en nieuw aan Dynamische Media bevindt, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamische Media-Toegelaten.
+>* Nadat u de Experience Manager hebt uitgevoerd, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een geüpgrade exemplaar van Experience Manager en nieuw aan Dynamic Media bent, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamic Media-Toegelaten.
