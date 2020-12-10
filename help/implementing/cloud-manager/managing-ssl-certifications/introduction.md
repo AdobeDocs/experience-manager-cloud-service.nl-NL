@@ -2,9 +2,9 @@
 title: Inleiding - SSL-certificaten beheren
 description: Inleiding - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 0%
 
 Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installeren via de interface van Cloud Manager. Cloud Manager gebruikt een Platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die doorgaans worden verkregen van certificeringsinstanties van derden, bijvoorbeeld &quot;Laten we versleutelen&quot;.
 
->[!IMPORTANT]
->Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten afkomstig zijn van certificeringsinstanties van derden. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
+## Belangrijke overwegingen {#important-considerations}
 
->[!NOTE]
->AEM als Cloud Service ondersteunt alleen beveiligde https-sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Daarom zullen dergelijke klanten profiteren door één certificaat met meerdere domeinen te krijgen.
+
+* Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten afkomstig zijn van certificeringsinstanties van derden. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
+
+* AEM als Cloud Service ondersteunt alleen beveiligde `https`-sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Daarom zullen dergelijke klanten profiteren door één certificaat met meerdere domeinen te krijgen.
 
 Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
 
@@ -30,8 +31,8 @@ Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
 
 Met behulp van de pagina met SSL-certificaten voor de gebruikersinterface van Cloud Manager kan een gebruiker met machtigingen verschillende taken uitvoeren om SSL-certificaten voor een programma te beheren:
 
-* Een SSL-certificaat toevoegen
-* Een SSL-certificaat weergeven, bijwerken of vervangen
+* [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [Een SSL-certificaat weergeven, bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >Met deze acties kunt u details weergeven of een certificaat vervangen dat bijna verlopen is.
-* Een SSL-certificaat verwijderen
+* [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
