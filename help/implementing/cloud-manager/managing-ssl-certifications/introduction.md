@@ -2,9 +2,9 @@
 title: Inleiding - SSL-certificaten beheren
 description: Inleiding - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installeren via de interface van Cloud Manager. Cloud Manager gebruikt een Platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die doorgaans worden verkregen van certificeringsinstanties van derden, bijvoorbeeld &quot;Laten we versleutelen&quot;.
 
 >[!IMPORTANT]
->Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten afkomstig zijn van certificeringsinstanties van derden. Zie Een SSL-certificaat ophalen voor meer informatie. KOPPELING INVOEGEN
+>Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten afkomstig zijn van certificeringsinstanties van derden. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
 
 >[!NOTE]
 >AEM als Cloud Service ondersteunt alleen beveiligde https-sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Daarom zullen dergelijke klanten profiteren door één certificaat met meerdere domeinen te krijgen.
