@@ -2,9 +2,9 @@
 title: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
 description: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM een cloudservice is toegankelijk voor internet en de beveiliging wordt afgeh
 IP de Lijsten van gewenste personen kunnen eenmaal worden toegevoegd en worden toegepast/unapplied veelvoudige tijden als eenheid of entiteit aan een Auteur en/of de dienst van de Uitgever in een milieu.
 
 >[!NOTE]
->Namen van lijsten met toegestane IP-lijsten worden ondersteund in Cloud Manager voor auteur en/of publicatieservice in een omgeving.
+>Namen van IP-Lijsten van gewenste personen worden ondersteund in Cloud Manager voor auteur en/of publicatieservice in een omgeving.
 
 Met behulp van de pagina met IP-Lijsten van gewenste personen voor de gebruikersinterface van Cloud Manager of de pagina Environment Details kan een gebruiker met machtigingen verschillende taken uitvoeren om IP-Lijsten van gewenste personen voor uw omgevingen te beheren, zoals:
 
