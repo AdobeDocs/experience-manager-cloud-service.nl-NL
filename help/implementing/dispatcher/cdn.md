@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '462'
+ht-degree: 7%
 
 ---
 
@@ -18,21 +18,16 @@ De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de mees
 
 ## Beheerde CDN AEM {#aem-managed-cdn}
 
-Volg deze om inhoudslevering voor te bereiden door Adobe uit-van-de-doos CDN te gebruiken:
+Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk te gebruiken om op inhoudslevering voor te bereiden door uit-van-de-doos CDN van Adobe te gebruiken:
 
-1. Geef het ondertekende SSL-certificaat en de geheime sleutel op voor Adobe door een koppeling te delen naar een beveiligd formulier met deze gegevens. Coördineer deze taak met de klantenondersteuning. Adobe ondersteunt maximaal 10 SSL-certificaten voor een programma.
-   **Opmerking:** Domeinvalidatiecertificaten (DV-certificaten) worden niet ondersteund door Aem als Cloud Service. Bovendien moet het een X.509 TLS-certificaat van een vertrouwde certificeringsinstantie (CA) zijn met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
-1. Klantenondersteuning informeren:
-   * welke aangepaste domeinen moeten worden gekoppeld aan een bepaalde omgeving, zoals gedefinieerd door de programma-id en de omgeving-id. Er worden maximaal 100 domeinen ondersteund voor een bepaalde omgeving en domeinen kunnen geen jokertekens bevatten. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
-   * als om het even welke IP toevoegend op lijst van gewenste personen nodig is om verkeer tot een bepaalde milieu te beperken.
-1. Coördineer met klantensteun over timing van de noodzakelijke veranderingen in de DNS verslagen. De instructies zijn verschillend op basis van of een apex-record nodig is:
-   * als een apex-record niet nodig is, moeten klanten de CNAME DNS-record zo instellen dat deze zijn FQDN verwijst naar `cdn.adobeaemcloud.com`.
-   * als een apex-record nodig is, maakt u een A-record die verwijst naar de volgende IP&#39;s: 151.101.3.10, 15.101.67.10, 15.10.131.10, 15.10.195.10. Klanten hebben een apex-record nodig als de gewenste FQDN overeenkomt met de DNS-zone. Dit kan worden getest door het Unix gravingsbevel te gebruiken om te zien of past de waarde SOA van de output het domein aan. De opdracht `dig anything.dev.adobeaemcloud.com` retourneert bijvoorbeeld een SOA (Start van autoriteit, d.w.z. de zone) van `dev.adobeaemcloud.com` zodat dit geen APEX-record is, terwijl `dig dev.adobeaemcloud.com` een SOA van `dev.adobeaemcloud.com` retourneert, zodat het een apex-record is.
-1. U wordt op de hoogte gesteld wanneer de SSL-certificaten verlopen, zodat u de nieuwe SSL-certificaten opnieuw kunt verzenden.
+1. [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Beperking van het verkeer**
 
-Door gebrek, voor een Adobe Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatiedienst voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) zou u met klantensteun moeten werken om deze beperkingen te vormen.
+Door gebrek, voor een Adobe Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatieservice voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) kunt u dit op een zelfbedienings manier via de UI van de Manager van de Wolk doen.
+
+Raadpleeg [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) voor meer informatie.
 
 ## Klant CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
 
