@@ -2,7 +2,7 @@
 title: 'Een SSL-certificaat bijwerken en vervangen - SSL beheren '
 description: Een SSL-certificaat bijwerken en vervangen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Wanneer gebruikt u deze opties in de interface van Cloud Manager:
 
 ## Een SSL-certificaat bijwerken dat {#update-ssl-certificate} vervalt
 
-Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u een verlopen certificaat wilt bijwerken, moet u de onderstaande stappen volgen. Zo blijft uw domein naar wens werken. Wanneer u een nieuw certificaat toevoegt, moet u de aangepaste domeinnaam met het nieuwe certificaat bijwerken voordat de domeinen naar wens werken. Raadpleeg [Een aangepaste domeinnaam bekijken en bijwerken en vervangen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)voor meer informatie
+Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u een verlopen certificaat wilt bijwerken, moet u de onderstaande stappen volgen. Zo blijft uw domein naar wens werken. Wanneer u een nieuw certificaat toevoegt, moet u de aangepaste domeinnaam met het nieuwe certificaat bijwerken voordat de domeinen naar wens werken. Raadpleeg [Een aangepaste domeinnaam bekijken en bijwerken en vervangen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) voor meer informatie.
 
 Voer de onderstaande stappen uit om een SSL-certificaat bij te werken:
 
