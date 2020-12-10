@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.12.0 is 10 dece
 
 * Zelfservicebeheer van [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Self-service management van [IP Allow-Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Zelfservicebeheer van [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * De bijgewerkte **Environment** detailpagina staat nu gebruikers toe om de namen van het Domein van de Douane en IP toe:staan-Lijsten op hun milieu&#39;s te beheren.
 
