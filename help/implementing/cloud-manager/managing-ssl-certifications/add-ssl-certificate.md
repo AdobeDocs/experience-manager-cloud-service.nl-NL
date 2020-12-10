@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd i
 
 Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converteren naar PEM:
 
-1. PFX converteren naar PEM
+* PFX converteren naar PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. P7B converteren naar PEM
+* P7B converteren naar PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. DER converteren naar PEM
+* DER converteren naar PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Belangrijke overwegingen {#important-considerations}
 
@@ -50,9 +50,11 @@ Voer de onderstaande stappen uit om een certificaat toe te voegen:
 1. Klik op **SSL Certificaten** van het linkernavigatiemenu. Op dit scherm wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Selecteer de **knop Certificaat toevoegen** om het dialoogvenster **SSL-certificaat toevoegen** te openen.
+
+1. Klik op **SSL-certificaat toevoegen** om het dialoogvenster **SSL-certificaat toevoegen** te openen.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Geef een naam voor het certificaat op in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
    1. Plak de **Certificaatketen**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectievelijke velden. Gebruik het plakpictogram rechts van het invoervak.
 De drie velden zijn niet optioneel en moeten worden opgenomen.
@@ -84,6 +86,4 @@ Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het 
 
 ### Geldigheidsdatums certificaat {#certificate-validity-dates}
 
-Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is in de toekomst
-
-Controleer de geldigheid van de certificaatketen.
+Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is in de toekomst. Controleer de geldigheid van de certificaatketen.
