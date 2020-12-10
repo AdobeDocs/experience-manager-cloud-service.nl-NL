@@ -2,7 +2,7 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
+source-git-commit: 1e7855661220f69038edf35d4c45b7d45b5c6bce
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -53,11 +53,12 @@ Voer de onderstaande stappen uit om een certificaat toe te voegen:
 
 1. Klik op **SSL-certificaat toevoegen** om het dialoogvenster **SSL-certificaat toevoegen** te openen.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-
-   1. Geef een naam voor het certificaat op in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
-   1. Plak de **Certificaatketen**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectievelijke velden. Gebruik het plakpictogram rechts van het invoervak.
+   * Geef een naam voor het certificaat op in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
+   * Plak de **Certificaatketen**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectievelijke velden. Gebruik het plakpictogram rechts van het invoervak.
 De drie velden zijn niet optioneel en moeten worden opgenomen.
+
+      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
 
       >[!NOTE]
       >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Verwijs naar [de Fouten van het Certificaat](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
