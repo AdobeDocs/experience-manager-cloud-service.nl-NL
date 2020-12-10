@@ -2,7 +2,7 @@
 title: DNS-recordstatus controleren
 description: DNS-recordstatus controleren
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 U kunt bepalen of uw domeinnaam correct aan uw AEM als website van de Cloud Service door het pictogram van de Status voor het DNS verslag van de lijst op de Milieu&#39;s van de pagina van de Montages van het Domein te klikken oplost.
 
->[!NOTE]
->Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor verdere pogingen, moet u actief **oplossen opnieuw** pictogram naast de status selecteren.
+Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor verdere pogingen, moet u actief **oplossen opnieuw** pictogram naast de status selecteren.
 
 Cloud Manager voert een DNS-zoekopdracht voor uw domeinnaam uit en geeft een van de volgende statusberichten weer:
 
