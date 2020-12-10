@@ -4,10 +4,10 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
+source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 49%
+source-wordcount: '681'
+ht-degree: 42%
 
 ---
 
@@ -28,6 +28,32 @@ ht-degree: 49%
       + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
    + [Logbestanden openen en beheren](cloud-manager/manage-logs.md)
    + [Inzicht in meldingen](cloud-manager/notifications.md)
+   + SSL-certificaten beheren {#manage-ssl-certificates}
+      + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Een SSL-certificaat weergeven en bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Status van een SSL-certificaat controleren](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + Aangepaste domeinnamen {#custom-domain-names}
+      + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Een aangepaste domeinnaam ophalen](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [SSL-certificaat van aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP staat-Lijsten {#ip-allow-lists} toe
+      + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Een IP-lijst voor toestaan en toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Het bekijken van en het Bijwerken van IP toestaan-Lijst](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [IP niet toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Het schrappen van IP staat-Lijst toe](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Het controleren van IP staat toe:staan-Lijst Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
 + Uw code beheren {#managing-code}
    + [Maven-projectversiebeheer](cloud-manager/project-version-handling.md)
    + [Toegang tot Git](cloud-manager/accessing-git.md)
