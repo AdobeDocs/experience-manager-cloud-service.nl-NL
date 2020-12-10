@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 translation-type: tm+mt
-source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
+source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -52,22 +52,39 @@ Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewij
 
 1. Klik op **Create**.
 1. Voor CDN-implementatie is een geldig SSL-certificaat en een geslaagde TXT-verificatie vereist. Dit wordt aangegeven door status **Geverifieerd en Gedistribueerd**.
-1. Navigeer naar Status aangepaste domeinnaam controleren voor meer informatie over verschillende statussen en over het adres ervan.
+Navigeer naar [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie over verschillende statussen en hoe u deze kunt adresseren.
 
    >[!NOTE]
    >DNS het bewijs kan tot een paar uren aan erkenning, wegens DNS propagatievertragingen vergen. Cloud Manager controleert het eigendom en werkt de status bij die in de tabel met domeininstellingen kan worden weergegeven. Raadpleeg Status domeinnaam controleren voor meer informatie.
 
 ## Een aangepaste domeinnaam uit de pagina Omgevingen toevoegen {#adding-cdn-environments}
 
-1. Navigeer naar de pagina Omgevingsdetails voor de omgeving die u wilt gebruiken.
-1. Gebruik de invoervelden boven aan de tabel Domeinnamen om de aangepaste domeinnaam SSL-certificaat in te dienen. Selecteer vervolgens Toevoegen.
-1. Hiermee wordt de wizard Aangepaste domeinnaam toevoegen gestart, waarbij de naam van de omgeving vooraf is ingevuld.
-1. Voer de aangepaste domeinnaam in. Opmerking: Neem `http://`, `https://`, of geen ruimten op wanneer het ingaan in uw domein. Selecteer Doorgaan.
-1. Dit zal u aan de Verificatie van de Naam van het Domein voor uw scherm van het Milieu nemen. Raadpleeg [Domeinverificatie](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) voor meer informatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen.
-1. Selecteer **Doorgaan**.
-1. Voor CDN-implementatie is een geldig SSL-certificaat en een geslaagde TXT-verificatie vereist. Dit wordt aangegeven door status **Geverifieerd en Gedistribueerd**.
+1. Navigeer naar de pagina Environment Detail voor de omgeving van belang.
 
-Op dit punt is uw aangepaste domeinnaam klaar om te worden getest en is een `CNAME` om ernaar te wijzen. Verwijs naar de Status van de Naam van het Domein om meer over diverse statussen en te leren hoe te om te richten.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+
+1. Gebruik de invoervelden boven aan de tabel Domeinnamen om de aangepaste domeinnaam te verzenden en selecteer het SSL-certificaat in de vervolgkeuzelijst. Klik op **+ toevoegen**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. Controleer de velden in het dialoogvenster **Domeinnaam toevoegen** en klik op **Doorgaan**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >Neem `http://`, `https://`, of geen ruimten op wanneer het ingaan in uw domein.
+
+1. De Verificatie van de Naam van het domein voor uw het schermvertoningen van het Milieu.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   Raadpleeg [Domeinverificatie](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) voor meer informatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen.
+
+1. Klik op **Create**.
+
+1. Voor de implementatie van Aangepaste domeinnamen is een geldig SSL-certificaat en een geslaagde TXT-verificatie vereist. Dit wordt aangegeven door status **Geverifieerd en Gedistribueerd**.
+
+Op dit punt is uw aangepaste domeinnaam klaar om te worden getest en is een `CNAME` om ernaar te wijzen. Raadpleeg [Status domeinnaam](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie over verschillende statussen en hoe u deze kunt adresseren.
 
 >[!NOTE]
 >DNS het bewijs kan tot een paar uren aan erkenning, wegens DNS propagatievertragingen vergen. Cloud Manager controleert het eigendom en werkt de status bij die in de tabel met domeininstellingen kan worden weergegeven. Raadpleeg Status domeinnaam controleren voor meer informatie.
