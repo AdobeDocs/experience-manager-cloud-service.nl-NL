@@ -2,9 +2,9 @@
 title: SSL-certificaten verwijderen - SSL-certificaten beheren
 description: SSL-certificaten verwijderen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: 84c8204d257de4ecdee3728176f6d4ef545346f5
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >Certificaten verwijderen uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. De beste manier is om alle vereiste SSL-bestanden lokaal op te slaan voordat u ze verwijdert in de gebruikersinterface van Cloud Manager.
 
 >[!NOTE]
->Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat te verwijderen in Cloud Manager. Met Cloud Manager kunt u geen SSL-certificaat verwijderen waaraan een of meer domeinen zijn gekoppeld.  Alle bijbehorende domeinen moeten worden geschrapt alvorens het SSL certificaat te schrappen. Verwijs naar de VERBINDING VAN HET INSERT VAN de Naam van het Domein van de Douane van de Schrapping om meer over dit onderwerp te leren.
+>Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat te verwijderen in Cloud Manager. Met Cloud Manager kunt u geen SSL-certificaat verwijderen waaraan een of meer domeinen zijn gekoppeld.  Alle bijbehorende domeinen moeten worden geschrapt alvorens het SSL certificaat te schrappen. Raadpleeg [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) voor meer informatie.
 
 Voer de onderstaande stappen uit om een SSL-certificaat te verwijderen:
 
