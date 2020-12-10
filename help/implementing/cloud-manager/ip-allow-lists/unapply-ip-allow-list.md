@@ -2,9 +2,9 @@
 title: 'IP-Lijst van gewenste personen niet toepassen '
 description: IP-Lijst van gewenste personen niet toepassen
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle
 
 Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen niet toe te passen:
 
-1. Navigeer aan de specifieke pagina van Details van het Milieu van het scherm van Milieu en navigeer aan de IP lijst van de Lijst van gewenste personen.
+1. Navigeer naar de specifieke pagina van de Details van het Milieu van **het scherm** en navigeer aan de IP lijst van de Lijst van gewenste personen.
 1. Identificeer de rij waar de IP regel van de Lijst van gewenste personen u wenst om ongedaan te maken vermeld is.
 1. **selecteren..** menu van het uiterst juiste eind van de rij.
-1. Selecteer de optie Niet toepassen en bevestig uw verzending.
+1. Selecteer de optie **Niet toepassen** en bevestig uw verzending.
