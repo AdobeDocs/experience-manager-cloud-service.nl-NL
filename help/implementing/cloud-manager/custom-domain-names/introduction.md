@@ -2,9 +2,9 @@
 title: Inleiding - Aangepaste domeinnamen
 description: Inleiding - Aangepaste domeinnamen
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de
 
 Met behulp van de pagina Domeininstellingen UI van Cloud Manager of de pagina Omgevingsdetails kan een gebruiker met machtigingen verschillende taken uitvoeren om aangepaste domeinnamen voor uw omgevingen te beheren, zoals:
 
-* Een aangepaste domeinnaam toevoegen.
-* Een aangepaste domeinnaam weergeven of bijwerken waarmee een gebruiker details kan bekijken of een certificaat kan vervangen dat bijna verlopen is.
-* Aangepaste domeinnaam verwijderen.
+* [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [Een aangepaste domeinnaam weergeven of bijwerken ](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) waarmee een gebruiker details kan bekijken of een certificaat kan vervangen dat bijna verlopen is
+* [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
