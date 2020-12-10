@@ -3,17 +3,65 @@ title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1395'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Assets] API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
 
-Het artikel bevat referentiemateriaal en bronnen voor ontwikkelaars van [!DNL Assets] als een [!DNL Cloud Service]. Het omvat nieuwe uploadmethode, API verwijzing, en informatie over de steun die in postverwerkingswerkschema&#39;s wordt verstrekt.
+Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkelaars van [!DNL Assets] als een [!DNL Cloud Service]. Het omvat nieuwe module voor het uploaden van middelen, API-referentie en informatie over de ondersteuning die wordt geboden in workflows na verwerking.
+
+## [!DNL Experience Manager Assets] API&#39;s en bewerkingen  {#use-cases-and-apis}
+
+[!DNL Assets] as  [!DNL Cloud Service] biedt verschillende API&#39;s die programmatisch kunnen communiceren met digitale elementen. Elke API ondersteunt specifieke gebruiksgevallen, zoals vermeld in de onderstaande tabel. De [!DNL Assets]-gebruikersinterface, [!DNL Experience Manager]-bureaubladtoepassing en [!DNL Adobe Asset Link] ondersteunen alle of sommige bewerkingen.
+
+>[!CAUTION]
+>
+>Sommige API&#39;s blijven bestaan, maar worden niet actief ondersteund (aangeduid met een ×) en mogen niet worden gebruikt.
+
+| Ondersteuningsniveau | Beschrijving |
+| ------------- | --------------------------- |
+| ✓ | Ondersteund |
+| × | Niet ondersteund. Niet gebruiken. |
+| - | Niet beschikbaar |
+
+| Hoofdletters gebruiken | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API&#39;s | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Voorvertoning)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Origineel binair** |  |  |  |  |  |  |
+| Origineel maken | ✓ | × | - | × | × | - |
+| Origineel lezen | - | × | ✓ | ✓ | ✓ | - |
+| Origineel bijwerken | ✓ | × | ✓ | × | × | - |
+| Origineel verwijderen | - | ✓ | - | ✓ | ✓ | - |
+| Origineel kopiëren | - | ✓ | - | ✓ | ✓ | - |
+| Origineel verplaatsen | - | ✓ | - | ✓ | ✓ | - |
+| **Metagegevens** |  |  |  |  |  |  |
+| Metagegevens maken | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metagegevens lezen | - | ✓ | - | ✓ | ✓ | - |
+| Metagegevens bijwerken | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metagegevens verwijderen | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metagegevens kopiëren | - | ✓ | - | ✓ | ✓ | - |
+| Metagegevens verplaatsen | - | ✓ | - | ✓ | ✓ | - |
+| **Inhoudsfragmenten (CF)** |  |  |  |  |  |  |
+| CF maken | - | ✓ | - | ✓ | - | - |
+| CF lezen | - | ✓ | - | ✓ | - | ✓ |
+| CF bijwerken | - | ✓ | - | ✓ | - | - |
+| CF verwijderen | - | ✓ | - | ✓ | - | - |
+| CF kopiëren | - | ✓ | - | ✓ | - | - |
+| CF verplaatsen | - | ✓ | - | ✓ | - | - |
+| **Versies** |  |  |  |  |  |  |
+| Versie maken | ✓ | ✓ | - | - | - | - |
+| Leesversie | - | ✓ | - | - | - | - |
+| Versie verwijderen | - | ✓ | - | - | - | - |
+| **Mappen** |  |  |  |  |  |  |
+| Map maken | ✓ | ✓ | - | ✓ | - | - |
+| Map lezen | - | ✓ | - | ✓ | - | - |
+| Map verwijderen | ✓ | ✓ | - | ✓ | - | - |
+| Map kopiëren | ✓ | ✓ | - | ✓ | - | - |
+| Map verplaatsen | ✓ | ✓ | - | ✓ | - | - |
 
 ## Elementen uploaden {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 * Binaire cloudopslag werkt met een Content Delivery Network (CDN) of Edge-netwerk. Een CDN selecteert een uploadeindpunt dat dichter voor een cliënt is. Wanneer de gegevens een kortere afstand aan een nabijgelegen eindpunt reizen, verbeteren de uploadprestaties en de gebruikerservaring, vooral voor geografisch verdeelde teams.
 
 >[!NOTE]
->
->Zie de cliëntcode om deze benadering in open-bron [aem-upload bibliotheek](https://github.com/adobe/aem-upload) uit te voeren.
+Zie de cliëntcode om deze benadering in open-bron [aem-upload bibliotheek](https://github.com/adobe/aem-upload) uit te voeren.
 
 ### Uploaden {#initiate-upload} starten
 
