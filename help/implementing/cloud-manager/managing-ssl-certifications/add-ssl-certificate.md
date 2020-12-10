@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd.
+>AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel.
 
 Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
 
@@ -59,11 +59,12 @@ Voer de onderstaande stappen uit om een certificaat toe te voegen:
    1. Plak de **Certificaatketen**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectievelijke velden. Gebruik het plakpictogram rechts van het invoervak.
 De drie velden zijn niet optioneel en moeten worden opgenomen.
 
+      >[!NOTE]
+      >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Verwijs naar [de Fouten van het Certificaat](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
+
 1. Klik **Opslaan** om uw certificaat te verzenden. U ziet het als een nieuwe rij in de tabel.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Verwijs naar [de Fouten van het Certificaat](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
 
 ## Certificaatfouten {#certificate-errors}
 
