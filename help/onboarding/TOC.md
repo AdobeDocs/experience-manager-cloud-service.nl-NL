@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 51%
+source-wordcount: '368'
+ht-degree: 50%
 
 ---
 
@@ -63,12 +63,12 @@ ht-degree: 51%
       + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Het beheren van IP staat-Lijsten {#ip-allow-lists} toe
       + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Een IP-lijst voor toestaan en toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Het bekijken van en het Bijwerken van IP toestaan-Lijst](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [IP toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [IP niet toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Het schrappen van IP staat-Lijst toe](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Het controleren van IP staat toe:staan-Lijst Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Een IP-Lijst van gewenste personen weergeven en bijwerken](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP-Lijst van gewenste personen toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Een IP-Lijst van gewenste personen niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [De status van een IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Opmerkingen bij de release 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
