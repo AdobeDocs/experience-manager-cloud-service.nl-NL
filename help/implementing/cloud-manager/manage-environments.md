@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 6%
+source-wordcount: '1254'
+ht-degree: 5%
 
 ---
 
@@ -146,4 +146,45 @@ Selecteer **Lokale aanmelding** in het vervolgkeuzemenu in de **Kaart voor omgev
 Daarnaast kunt u zich lokaal aanmelden via de overzichtspagina **Environment**.
 
 ![](assets/environ-login-locally-2.png)
+
+## Aangepaste domeinnamen beheren {#manage-cdn}
+
+Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen.
+
+De volgende acties kunnen worden uitgevoerd op de service Publiceren voor uw omgeving, zoals hieronder wordt beschreven:
+
+1. **Een aangepaste domeinnaam** toevoegen: Zie Een aangepaste domeinnaam  [toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **Aangepaste domeinnaam** weergeven en bijwerken: Zie Aangepaste domeinnamen en SSL-certificaten  [weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **Aangepaste domeinnaam** verwijderen: Zie Aangepaste domeinnamen en SSL-certificaten  [verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## Het beheren van IP staat-Lijsten {#manage-ip-allow-lists} toe
+
+Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen. U kunt de volgende handelingen uitvoeren op de service Publiceren en/of Auteur voor uw omgeving.
+
+### Een IP Allow-List {#apply-ip-allow-list} toepassen
+
+Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst met een Auteur of de Publish dienst in een milieu worden geassocieerd. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toepassen.
+
+>[!NOTE]
+>De IP Lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu-dienst toe te passen. Voor meer informatie over IP Allow-Lists in de Manager van de Wolk navigeer aan [Inleiding aan IP Allow-Lists in Kon Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+Voer de onderstaande stappen uit:
+
+1. Navigeer aan de specifieke pagina van Details van het Milieu van het scherm van Milieu en navigeer aan de IP lijst van de Lijst van gewenste personen.
+1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de Lijst van gewenste personen om de IP Lijst van gewenste personen en de Auteur of de Publish dienst te selecteren u wenst om het op toe te passen.
+1. Selecteer vervolgens Toepassen en bevestig uw verzending.
+
+### Het toepassen van IP toestaan-Lijst {#unapply-ip-allow-list}
+
+Het ongedaan maken van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst van de dienst van de Auteur/of van de Uitgever in een milieu worden losgemaakt.  Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen ongedaan maken.
+
+Voer de onderstaande stappen uit:
+
+1. Navigeer aan de specifieke pagina van Details van het Milieu van het scherm van Milieu en navigeer aan de IP lijst van de Lijst van gewenste personen.
+1. Identificeer de rij waar de IP regel van de Lijst van gewenste personen u wenst om ongedaan te maken vermeld is.
+1. **selecteren..** menu van het uiterst juiste eind van de rij.
+1. Selecteer de optie Niet toepassen en bevestig uw verzending.
+
 
