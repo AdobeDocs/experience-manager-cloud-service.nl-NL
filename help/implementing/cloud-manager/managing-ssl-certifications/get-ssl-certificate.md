@@ -2,9 +2,9 @@
 title: Een SSL-certificaat ophalen - SSL-certificaten beheren
 description: Een SSL-certificaat ophalen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,5 @@ Wanneer een entiteit een certificaat aanvraagt bij een certificeringsinstantie, 
 
 >[!NOTE]
 >AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-(domeinvalidatie) of zelfondertekende certificaten worden niet geaccepteerd. OV- en EV-certificaten bieden gebruikers extra door CA gevalideerde informatie die ze kunnen gebruiken om te bepalen of de eigenaar van een website, de afzender van een e-mail of de digitale handtekening van uitvoerbare code of PDF-documenten betrouwbaar is. DV-certificaten zijn algemeen en goedkoop. Ze staan echter geen eigendomsverificatie toe.
+>Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel.
 
