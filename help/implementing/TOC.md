@@ -4,9 +4,9 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 42%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 42%
       + [Een SSL-certificaat weergeven en bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Status van een SSL-certificaat controleren](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + Aangepaste domeinnamen {#custom-domain-names}
+   + Aangepaste domeinnamen beheren {#custom-domain-names}
       + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Een aangepaste domeinnaam ophalen](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -46,7 +46,7 @@ ht-degree: 42%
       + [Aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [SSL-certificaat van aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + IP staat-Lijsten {#ip-allow-lists} toe
+   + Het beheren van IP staat-Lijsten {#ip-allow-lists} toe
       + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Een IP-lijst voor toestaan en toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Het bekijken van en het Bijwerken van IP toestaan-Lijst](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
