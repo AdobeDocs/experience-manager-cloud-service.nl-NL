@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 52%
+source-wordcount: '362'
+ht-degree: 51%
 
 ---
 
@@ -70,7 +70,8 @@ ht-degree: 52%
       + [Het schrappen van IP staat-Lijst toe](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Het controleren van IP staat toe:staan-Lijst Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Huidige opmerkingen bij de release (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Huidige opmerkingen bij de release (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Opmerkingen bij de release 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
       + [Opmerkingen bij de release 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Opmerkingen bij de release 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
       + [Opmerkingen bij de release 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
