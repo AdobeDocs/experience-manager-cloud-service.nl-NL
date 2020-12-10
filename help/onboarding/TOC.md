@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 5e81e6ed9c44956384ff248bb28cebc861cf0b76
+source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 72%
+source-wordcount: '357'
+ht-degree: 52%
 
 ---
 
@@ -43,6 +43,32 @@ ht-degree: 72%
       + [De wizard gebruiken](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Uw project instellen](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Inzicht in de omgeving van de build](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + SSL-certificaten beheren {#manage-ssl-certificates}
+      + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Een SSL-certificaat weergeven en bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Status van een SSL-certificaat controleren](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + Aangepaste domeinnamen {#custom-domain-names}
+      + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Een aangepaste domeinnaam ophalen](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [SSL-certificaat van aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP staat-Lijsten {#ip-allow-lists} toe
+      + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Een IP-lijst voor toestaan en toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Het bekijken van en het Bijwerken van IP toestaan-Lijst](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [IP niet toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Het schrappen van IP staat-Lijst toe](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Het controleren van IP staat toe:staan-Lijst Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Opmerkingen bij de release 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
