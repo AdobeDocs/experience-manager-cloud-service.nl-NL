@@ -2,9 +2,9 @@
 title: Status van IP-Lijst van gewenste personen controleren
 description: Status van IP-Lijst van gewenste personen controleren
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Hier volgen de definities van status die in een IP-Lijst van gewenste personen w
 
 * **Mislukt**: Een of meer toegepaste of verwijderde processen in een update zijn mislukt. Elke Toepassen en Toepassen ongedaan maken wordt samen met Voltooid of Mislukt weergegeven.
    * De status is mislukt, zelfs als een toepassing wordt toegepast of ongedaan wordt gemaakt in de update.
-   * De status blijft Mislukt totdat alle fouten zijn gewist. De gebruiker moet het pictogram Opnieuw proberen naast de status selecteren om de fout te wissen.
+   * De status blijft Mislukt totdat alle fouten zijn gewist. De gebruiker moet het pictogram Opnieuw proberen naast de status selecteren om de fout te ontruimen.
    * De gebruiker zal geen IP Lijst van gewenste personen kunnen bijwerken of schrappen terwijl de status Ontbroken is.
 
 * **Verwijderen**: Aanvraag verwijderen is bezig. Dit betekent dat alle services niet van toepassing zijn. Elke Unapply wordt vermeld samen met Niet begonnen/Bezig/Voltooid of Mislukt.
