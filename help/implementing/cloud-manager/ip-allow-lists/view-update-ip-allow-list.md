@@ -2,7 +2,7 @@
 title: Het bekijken en het Bijwerken - IP Lijsten van gewenste personen in Manager Kon
 description: Het bekijken en het Bijwerken - IP Lijsten van gewenste personen in Manager Kon
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Een gebruiker in de rol Bedrijfs van de Eigenaar of van de Manager van de Plaats
 
 Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen bij te werken:
 
-1. Navigeer aan de IP pagina van de Lijst van gewenste personen van het scherm van Milieu.
+1. Navigeer naar de pagina **IP Lijsten van gewenste personen** van het **scherm van Milieu**.
 1. Identificeer de rij waar de IP regel van de Lijst van gewenste personen u wenst om te bekijken/bij te werken vermeld is.
 1. **selecteren..** menu van het uiterst juiste eind van de rij.
-1. Selecteer de optie Weergave en bijwerken.
+1. Selecteer de optie **Weergave en bijwerken**.
 1. Breng wijzigingen aan in de naam of de IP&#39;s en bevestig uw verzending.
 
 ## Belangrijke overwegingen terwijl het Toevoegen, het Bijwerken of het Verwijderen van IP Lijsten van gewenste personen {#considerations}
@@ -41,4 +41,4 @@ Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen bij te we
 * Het verwijderen van een IP waaier van de IP Lijst van gewenste personen zal automatisch het van alle overeenkomstige milieu-diensten ongedaan maken.
 * De updates kunnen niet aan een IP Lijst van gewenste personen worden gemaakt terwijl een vroegere update lopend is en niet heeft voltooid.
 * De updates kunnen niet aan een IP Lijst van gewenste personen worden gemaakt als om het even welke fouten van een vroegere update bestaan. Eventuele fouten moeten worden gewist door de update opnieuw uit te voeren.
-Verwijs naar het Controleren IP de Status van de Lijst van gewenste personen om meer te leren.
+Raadpleeg [Status van IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) voor meer informatie.
