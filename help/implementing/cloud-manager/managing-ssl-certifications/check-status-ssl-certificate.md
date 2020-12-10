@@ -2,9 +2,9 @@
 title: Status controleren van een SSL-certificaat - SSL-certificaten beheren
 description: Status controleren van een SSL-certificaat - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Status controleren van een SSL-certificaat {#checking-status-an-ssl-certificate}
 
-De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd vanaf de pagina met SSL-certificaten of de pagina met omgevingsdetails.
+De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd vanaf de pagina met het SSL-certificaat.
 
 U kunt de status van een SSL-certificaat identificeren aan de hand van de volgende kleurenschema&#39;s:
 
