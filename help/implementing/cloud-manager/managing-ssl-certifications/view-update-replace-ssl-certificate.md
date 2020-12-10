@@ -2,7 +2,7 @@
 title: 'Een SSL-certificaat bijwerken en vervangen - SSL beheren '
 description: Een SSL-certificaat bijwerken en vervangen - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: 54171b90f99a14fd43c4dc01308264b9a954b927
+source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -19,14 +19,12 @@ Wanneer gebruikt u deze opties in de interface van Cloud Manager:
 * Een bestaand certificaat verloopt bijna. De gebruiker heeft het certificaat met de certificaatverkoper vernieuwd en wenst bestaande te vervangen die op het punt staat te verlopen. Opmerking: alleen gebruikers met de juiste machtigingen kunnen updates uitvoeren.
 * Met het menu **Beeld en bijwerken** kunt u gewoon de SSL-certificaatdetails weergeven.
 * U kunt ook de naam wijzigen die is gebruikt om naar een certificaat te verwijzen vanuit dit scherm.
-   >[!NOTE]
-   >Alleen gebruikers met de juiste machtigingen kunnen updates uitvoeren.
+* Alleen gebruikers met de juiste machtigingen kunnen updates uitvoeren.
 
 
 ## Een SSL-certificaat bijwerken dat {#update-ssl-certificate} vervalt
 
->[!NOTE]
->Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u een verlopen certificaat wilt bijwerken, moet u de onderstaande stappen volgen. Zo blijft uw domein naar wens werken. Wanneer u een nieuw certificaat toevoegt, moet u de aangepaste domeinnaam met het nieuwe certificaat bijwerken voordat de domeinen naar wens werken. Raadpleeg [Een aangepaste domeinnaam bekijken en bijwerken en vervangen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)voor meer informatie
+Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u een verlopen certificaat wilt bijwerken, moet u de onderstaande stappen volgen. Zo blijft uw domein naar wens werken. Wanneer u een nieuw certificaat toevoegt, moet u de aangepaste domeinnaam met het nieuwe certificaat bijwerken voordat de domeinen naar wens werken. Raadpleeg [Een aangepaste domeinnaam bekijken en bijwerken en vervangen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)voor meer informatie
 
 Voer de onderstaande stappen uit om een SSL-certificaat bij te werken:
 
