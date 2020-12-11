@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,24 @@ U kunt bepalen of uw domeinnaam met succes is geverifieerd door op het statuspic
 Cloud Manager controleert het eigendom van domeinen via de TXT-waarde en geeft een van de volgende statusberichten weer:
 
 * **Domeinverificatie**
-FailedTXT-waarde ontbreekt of wordt met fouten gedetecteerd. Volg de instructies en probeer het opnieuw. Wanneer u klaar bent, moet u het pictogram &quot;Opnieuw controleren&quot; naast de status selecteren.
+FailedTXT-waarde ontbreekt of wordt met fouten gedetecteerd. Volg de instructies en probeer het opnieuw. Wanneer u klaar bent, moet u de optie 
+*Controleer* opnieuw het pictogram naast de status.
 
 * **Domeinverificatie In**
-ProgressVerification wordt uitgevoerd. Deze status wordt meestal weergegeven nadat u het pictogram &quot;Opnieuw controleren&quot; naast de status hebt geselecteerd.
+ProgressVerification wordt uitgevoerd. Deze status wordt meestal weergegeven nadat u de optie 
+*Controleer* opnieuw het pictogram naast de status.
 
 * **Verified, Deployment**
 FailedTXT verification was successfully. De CDN-implementatie is echter mislukt. Een vertegenwoordiger van de Adobe wordt automatisch op de hoogte gesteld.
 
 * **Domein geverifieerd en**
-geïmplementeerdDeze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt. Opmerking: Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen. Ga naar het Vormen DNS Montages leren hoe te om dit te doen.
+geïmplementeerdDeze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
+   >[!NOTE]
+   >Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen. Verwijs naar [Vormende DNS Montages](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) om meer te leren.
 
 * ****
 DeletingDeletion of Custom Domain name is in process.
 
 * **Verwijderen**
-FailedDeletion of Custom Domain name failed. U moet het opnieuw proberen. Ga naar Aangepaste domeinnaam verwijderen voor meer informatie over het onderwerp.
+FailedDeletion of Custom Domain name failed. U moet het opnieuw proberen. Raadpleeg [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) voor meer informatie.
 
