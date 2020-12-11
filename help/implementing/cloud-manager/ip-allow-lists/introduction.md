@@ -2,9 +2,9 @@
 title: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
 description: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ IP de Lijsten van gewenste personen kunnen eenmaal worden toegevoegd en worden t
 
 Met behulp van de pagina met IP-Lijsten van gewenste personen voor de gebruikersinterface van Cloud Manager of de pagina Environment Details kan een gebruiker met machtigingen verschillende taken uitvoeren om IP-Lijsten van gewenste personen voor uw omgevingen te beheren, zoals:
 
-* IP-Lijst van gewenste personen toevoegen
+* [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > U kunt één keer toevoegen en de regel opnieuw gebruiken of toepassen over milieu-diensten in het programma.
-* Het bekijken van of het Bijwerken van een IP Lijst van gewenste personen
-* Een IP-Lijst van gewenste personen toepassen of niet toepassen
-* Een IP-Lijst van gewenste personen verwijderen
+* [Het bekijken van of het Bijwerken van een IP Lijst van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [Een IP-Lijst van gewenste personen toepassen of het toepassen ervan opheffen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
