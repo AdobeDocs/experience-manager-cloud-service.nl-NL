@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 49%
+source-wordcount: '371'
+ht-degree: 50%
 
 ---
 
@@ -69,7 +69,6 @@ ht-degree: 49%
       + [Een IP-Lijst van gewenste personen niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [De status van een IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Opmerkingen bij de release 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
