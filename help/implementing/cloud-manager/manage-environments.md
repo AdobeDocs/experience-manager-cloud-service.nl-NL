@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -149,21 +149,28 @@ Daarnaast kunt u zich lokaal aanmelden via de overzichtspagina **Environment**.
 
 ## Aangepaste domeinnamen beheren {#manage-cdn}
 
-Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen.
+Navigeer naar de detailpagina **Omgevingen** van de overzichtspagina van Milieu&#39;s.
 
 De volgende acties kunnen worden uitgevoerd op de service Publiceren voor uw omgeving, zoals hieronder wordt beschreven:
 
-1. **Een aangepaste domeinnaam** toevoegen: Zie Een aangepaste domeinnaam  [toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Een aangepaste domeinnaam**
+toevoegenVerwijs naar een aangepaste domeinnaam  [toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Aangepaste domeinnaam** weergeven en bijwerken: Zie Aangepaste domeinnamen en SSL-certificaten  [weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Aangepaste domeinnaam en SSL-**
+certificaten weergeven en bijwerken
+   * [Aangepaste domeinnamen weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [SSL-certificaten weergeven en bijwerken](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Aangepaste domeinnaam** verwijderen: Zie Aangepaste domeinnamen en SSL-certificaten  [verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Aangepaste domeinnaam verwijderen en verwijzing**
+naar SSL
+   * [Aangepaste domeinnamen verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL-certificaten](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Het beheren van IP staat-Lijsten {#manage-ip-allow-lists} toe
+## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
 Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen. U kunt de volgende handelingen uitvoeren op de service Publiceren en/of Auteur voor uw omgeving.
 
-### Een IP Allow-List {#apply-ip-allow-list} toepassen
+### Een IP-Lijst van gewenste personen {#apply-ip-allow-list} toepassen
 
 Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst met een Auteur of de Publish dienst in een milieu worden geassocieerd. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toepassen.
 
