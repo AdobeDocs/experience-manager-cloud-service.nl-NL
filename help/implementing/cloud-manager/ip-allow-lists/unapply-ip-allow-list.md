@@ -2,15 +2,15 @@
 title: 'IP-Lijst van gewenste personen niet toepassen '
 description: IP-Lijst van gewenste personen niet toepassen
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# IP-Lijst van gewenste personen {#apply-allow-list} niet toepassen
+# Een IP-Lijst van gewenste personen {#apply-allow-list} niet toepassen
 
 Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst van de dienst van de Auteur/of van de Uitgever in een milieu worden losgemaakt.
 
