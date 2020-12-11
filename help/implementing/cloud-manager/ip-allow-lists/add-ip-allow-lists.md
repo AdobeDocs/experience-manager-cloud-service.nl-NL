@@ -2,7 +2,7 @@
 title: 'IP-Lijst van gewenste personen toevoegen '
 description: IP-Lijst van gewenste personen toevoegen
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Inleiding {#introduction}
+# Een IP-Lijst van gewenste personen {#add-ip-allow-list} toevoegen
 
 Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toevoegen.
-
-## IP-Lijst van gewenste personen {#add-ip-allow-list} toevoegen
 
 Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen toe te voegen:
 
