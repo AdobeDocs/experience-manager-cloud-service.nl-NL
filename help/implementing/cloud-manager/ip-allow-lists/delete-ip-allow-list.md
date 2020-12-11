@@ -2,22 +2,22 @@
 title: 'IP-Lijst van gewenste personen verwijderen '
 description: IP-Lijst van gewenste personen verwijderen
 translation-type: tm+mt
-source-git-commit: b9b2591ce25040b108484984851308bc80eee958
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
 
-# IP-Lijst van gewenste personen {#delete-allow-list} verwijderen
+# Het schrappen van een IP Lijst van gewenste personen {#delete-allow-list}
 
 Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen te verwijderen:
 
-1. Navigeer naar de pagina Domeininstellingen vanuit het scherm Omgevingen.
+1. Navigeer naar de pagina **Domeininstellingen** vanuit het scherm **Omgevingen**.
 1. Identificeer de rij waar de naam van het douanedomein u wenst te schrappen is vermeld.
 1. **selecteren..** menu van het uiterst juiste eind van de rij.
-1. Selecteer de optie Verwijderen.
+1. Selecteer de optie **Delete**.
 1. Bevestig je verzending.
 
 >[!NOTE]
