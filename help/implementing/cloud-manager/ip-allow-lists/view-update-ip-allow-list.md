@@ -2,15 +2,15 @@
 title: Het bekijken en het Bijwerken - IP Lijsten van gewenste personen in Manager Kon
 description: Het bekijken en het Bijwerken - IP Lijsten van gewenste personen in Manager Kon
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# IP-Lijsten van gewenste personen {#view-update} weergeven en bijwerken
+# Het bekijken van en het Bijwerken van een IP Lijst van gewenste personen {#view-update}
 
 U kunt IP Lijsten van gewenste personen onder de volgende scenario&#39;s bekijken en bijwerken:
 
