@@ -2,7 +2,7 @@
 title: Status van IP-Lijst van gewenste personen controleren
 description: Status van IP-Lijst van gewenste personen controleren
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Hier volgen de definities van status die in een IP-Lijst van gewenste personen w
 
 * **Verwijderen**: Aanvraag verwijderen is bezig. Dit betekent dat alle services niet van toepassing zijn. Elke Unapply wordt vermeld samen met Niet begonnen/Bezig/Voltooid of Mislukt.
 Zodra de verrichting van de Schrapping wordt voltooid, zal de IP Lijst van gewenste personen:
-   * Niet meer weergegeven in de tabel IP-Lijst van gewenste personen * Niet meer toegepast op een service in het programma in Cloud Manager
+   * Niet meer in de IP lijst van de Lijst van gewenste personen verschijnen.
+   * Niet meer toepassen op services in het programma in Cloud Manager.
 
 * **Verwijderen is mislukt**: Een of meer verwijderingsprocessen in een verwijderbewerking zijn mislukt. Elke Unapply zal samen met Volledige of Ontbroken worden vermeld.
 
