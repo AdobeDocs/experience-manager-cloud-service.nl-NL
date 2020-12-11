@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '130'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.12.0 is 10 dece
 
 * Zelfservicebeheer van [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* De bijgewerkte **Environment** detailpagina staat nu gebruikers toe om de namen van het Domein van de Douane en IP toe:staan-Lijsten op hun milieu&#39;s te beheren.
+* De bijgewerkte **Environment** detailpagina staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
 
 
 ### Opgeloste problemen {#bug-fixes}
