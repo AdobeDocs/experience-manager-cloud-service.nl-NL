@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 5%
+source-wordcount: '1248'
+ht-degree: 4%
 
 ---
 
@@ -153,18 +153,11 @@ Navigeer naar de detailpagina **Omgevingen** van de overzichtspagina van Milieu&
 
 De volgende acties kunnen worden uitgevoerd op de service Publiceren voor uw omgeving, zoals hieronder wordt beschreven:
 
-1. **Een aangepaste domeinnaam**
-toevoegenVerwijs naar een aangepaste domeinnaam  [toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Aangepaste domeinnaam en SSL-**
-certificaten weergeven en bijwerken
-   * [Aangepaste domeinnamen weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [SSL-certificaten weergeven en bijwerken](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [Een aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **Aangepaste domeinnaam verwijderen en verwijzing**
-naar SSL
-   * [Aangepaste domeinnamen verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [SSL-certificaten](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
@@ -175,23 +168,23 @@ Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen.
 Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst met een Auteur of de Publish dienst in een milieu worden geassocieerd. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toepassen.
 
 >[!NOTE]
->De IP Lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu-dienst toe te passen. Voor meer informatie over IP Allow-Lists in de Manager van de Wolk navigeer aan [Inleiding aan IP Allow-Lists in Kon Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>De IP Lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu-dienst toe te passen. Om meer over IP te leren sta-Lijsten in de Manager van de Wolk navigeren aan [Inleiding aan IP Lijsten van gewenste personen in Kon Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Voer de onderstaande stappen uit:
+Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen toe te passen:
 
-1. Navigeer aan de specifieke pagina van Details van het Milieu van het scherm van Milieu en navigeer aan de IP lijst van de Lijst van gewenste personen.
+1. Navigeer naar de specifieke omgeving van de detailpagina **Environment** en navigeer naar de tabel **IP Lijsten van gewenste personen**.
 1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de Lijst van gewenste personen om de IP Lijst van gewenste personen en de Auteur of de Publish dienst te selecteren u wenst om het op toe te passen.
-1. Selecteer vervolgens Toepassen en bevestig uw verzending.
+1. Klik op **Apply** en bevestig uw voorlegging.
 
-### Het toepassen van IP toestaan-Lijst {#unapply-ip-allow-list}
+### Het toepassen van een IP Lijst van gewenste personen {#unapply-ip-allow-list} ongedaan maken
 
-Het ongedaan maken van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst van de dienst van de Auteur/of van de Uitgever in een milieu worden losgemaakt.  Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen ongedaan maken.
+Het ongedaan maken van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van de Lijst van gewenste personen van een Auteur of de dienst van de Uitgever in een milieu worden losgemaakt. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen ongedaan maken.
 
-Voer de onderstaande stappen uit:
+Voer de onderstaande stappen uit om het toepassen van een IP-Lijst van gewenste personen ongedaan te maken:
 
-1. Navigeer aan de specifieke pagina van Details van het Milieu van het scherm van Milieu en navigeer aan de IP lijst van de Lijst van gewenste personen.
+1. Navigeer naar de specifieke **pagina met details** van het scherm van Milieu&#39;s en navigeer naar de **IP Lijsten van gewenste personen** lijst.
 1. Identificeer de rij waar de IP regel van de Lijst van gewenste personen u wenst om ongedaan te maken vermeld is.
 1. **selecteren..** menu van het uiterst juiste eind van de rij.
-1. Selecteer de optie Niet toepassen en bevestig uw verzending.
+1. Selecteer de optie **Niet toepassen** en bevestig uw verzending.
 
 
