@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 
 * Voordat u een aangepaste domeinnaam kunt toevoegen, moet u een geldig SSL-certificaat met de aangepaste domeinnaam op uw programma installeren. Raadpleeg [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
 
-* Er kan slechts één domeinnaam tegelijk worden toegevoegd. Gebruikers kunnen echter jokertekens toevoegen, bijvoorbeeld `*.wknd.com` als een domeinnaam, en dat zou betekenen dat meerdere subdomeinen met één TXT-record kunnen worden gehost.
+* Er kan slechts één domeinnaam tegelijk worden toegevoegd. Domeinen kunnen echter geen jokertekens bevatten. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
 
 * Elke Cloud Manager-omgeving kan maximaal 100 aangepaste domeinen per omgeving hosten.
 
