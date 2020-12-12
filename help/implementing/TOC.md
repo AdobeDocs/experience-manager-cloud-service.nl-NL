@@ -4,9 +4,9 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '694'
 ht-degree: 42%
 
 ---
@@ -44,8 +44,8 @@ ht-degree: 42%
       + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Een aangepaste domeinnaam weergeven, bijwerken en vervangen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [SSL-certificaat van aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Het SSL-certificaat van een aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + IP-Lijsten van gewenste personen beheren {#ip-allow-lists}
       + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
