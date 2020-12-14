@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten zonder kop Handleiding voor snel starten maken
 description: Met Inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken die zonder kop door AEM kan worden geleverd.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -53,5 +53,6 @@ Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [Deze eleme
 
 Nu u een inhoudsfragment hebt gemaakt, kunt u verdergaan naar het laatste gedeelte van de gids Aan de slag en [API-verzoeken maken om inhoudsfragmenten te openen en te leveren.](create-api-request.md)
 
->!![TIP]
-Voor volledige details over het beheren van Inhoudsfragmenten, zie [Documentatie van Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Voor volledige details over het beheren van Inhoudsfragmenten, zie [Documentatie van Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
