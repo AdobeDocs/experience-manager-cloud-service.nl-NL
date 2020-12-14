@@ -2,7 +2,7 @@
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
 description: Als eerste stap om met hoofdloze in AEM als Cloud Service begonnen te worden, moet u een configuratie tot stand brengen.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -42,12 +42,14 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
 Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worden genest.
 
->!![NOTE]
-De opties van de configuratie naast **de Modellen van het Fragment van de Inhoud** en **GrahQL Persistent Vragen** kunnen afhankelijk van uw implementatievereisten noodzakelijk zijn.
+>[!NOTE]
+>
+>De opties van de configuratie naast **de Modellen van het Fragment van de Inhoud** en **GrahQL Persistent Vragen** kunnen afhankelijk van uw implementatievereisten noodzakelijk zijn.
 
 ## Volgende stappen {#next-steps}
 
 Met deze configuratie kunt u nu naar het tweede deel van de gids Aan de slag gaan en [Modellen van inhoudsfragmenten maken.](create-content-model.md)
 
->!![TIP]
-Voor volledige details over Browser van de Configuratie, [zie de Browser van de Configuratie documentatie.](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>Voor volledige details over Browser van de Configuratie, [zie de Browser van de Configuratie documentatie.](/help/implementing/developing/introduction/configurations.md)
