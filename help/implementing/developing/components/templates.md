@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -555,7 +555,7 @@ De evaluatie werkt als volgt:
 
 * Als `T` een niet-lege `allowedPaths` eigenschap heeft, maar geen van de waarden komt overeen met het pad van `P`, wordt `T` afgewezen.
 
-* Als beide bovenstaande eigenschappen leeg of niet bestaan, wordt `T` geweigerd, tenzij het tot dezelfde toepassing behoort als `P`. `T` behoort tot dezelfde toepassing als  `P` alleen als de naam van het tweede niveau van het pad van dezelfde  `T` is als de naam van het tweede niveau van het pad van  `P`. De sjabloon `/apps/geometrixx/templates/foo` behoort bijvoorbeeld tot dezelfde toepassing als de pagina `/content/geometrixx`.
+* Als beide bovenstaande eigenschappen leeg of niet bestaan, wordt `T` geweigerd, tenzij het tot dezelfde toepassing behoort als `P`. `T` behoort tot dezelfde toepassing als  `P` alleen als de naam van het tweede niveau van het pad van dezelfde  `T` is als de naam van het tweede niveau van het pad van  `P`. De sjabloon `/apps/wknd/templates/foo` behoort bijvoorbeeld tot dezelfde toepassing als de pagina `/content/wknd`.
 
 * Als `T` een niet-lege `allowedParents` eigenschap heeft, maar geen van de waarden komt overeen met het pad van `P`, wordt `T` afgewezen.
 
