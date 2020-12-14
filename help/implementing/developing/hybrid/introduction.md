@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
 ### Een SPA {#loading-a-spa-application} laden
 
-1. Als nog niet geladen, laadt u de toepassing We.Retail Journal op de publicatieserver of met de optie **View as Published** in het menu **Page Information** in de pagina-editor.
+1. Laad, indien nog niet geladen, de WKND-SPA Project-app op de publicatieserver of met de optie **Weergeven als gepubliceerd** in het menu **Pagina-informatie** in de pagina-editor.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
 1. Het model kan pagina&#39;s ook groeperen zodat ze synchroon worden geladen, waardoor het aantal pagina&#39;s dat opnieuw moet worden geladen, afneemt.
 
-   In het voorbeeld van We.Retail Journal worden de pagina&#39;s `home`, `page-1`, `page-2` en `page-3` synchroon geladen, aangezien bezoekers doorgaans alle pagina&#39;s bezoeken.
+   In het voorbeeld van WKND SPA Project worden de pagina&#39;s `home`, `page-1`, `page-2` en `page-3` synchroon geladen, aangezien bezoekers doorgaans alle pagina&#39;s bezoeken.
 
    Dit gedrag is niet verplicht en is volledig definieerbaar.
 
