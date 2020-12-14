@@ -3,9 +3,9 @@ title: AEM Assets versus AEM MediaLibrary
 description: Veelgestelde vragen over AEM Assets en. AEM Mediabibliotheek, inclusief verschillen tussen de twee.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Als u andere metagegevens dan titel, beschrijving en tags wilt bewerken, is een 
 
 ## Ik wil de categorie voorspellen gebruiken op mijn website. Heb ik AEM Assets nodig? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Ja, de categorie voorspelt, samen met alle andere componenten die in het Centrum van de Pers van de Geometrixx worden gebruikt deel van AEM Assets uitmaken en een vergunning van AEM Assets vereisen.
+Ja, de categorie voorspelt, samen met alle andere componenten maakt deel uit van AEM Assets en vereist een AEM Assets-licentie.
 
 ## Ik wil afbeeldingen automatisch vergroten of verkleinen tijdens het importeren. Heb ik AEM Assets nodig? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
