@@ -2,7 +2,7 @@
 title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
 description: Met Content Fragment Models wordt de structuur gedefinieerd van de inhoud die u maakt en gebruikt AEM mogelijkheden zonder kop.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -63,5 +63,6 @@ U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfra
 
 Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te maken, kunt u verdergaan naar het derde deel van de gids Aan de slag en [mappen maken waarin u de fragmenten zelf opslaat.](create-assets-folder.md)
 
->!![TIP]
-Raadpleeg de [documentatie bij Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) voor volledige informatie over Content Fragment Models
+>[!TIP]
+>
+>Raadpleeg de [documentatie bij Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) voor volledige informatie over Content Fragment Models
