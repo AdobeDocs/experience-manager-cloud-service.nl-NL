@@ -2,7 +2,7 @@
 title: Snelstartgids voor mappen zonder middelenkoppen maken
 description: Met Inhoudsfragmentmodellen wordt de structuur van inhoudsfragmenten gedefinieerd. Inhoudsfragmenten worden vervolgens in mappen met elementen opgeslagen.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ Als u een gelokaliseerde sitestructuur gebruikt, kunt u [een hoofdmap voor de ta
 
 Nu u een map voor de inhoudsfragmenten hebt gemaakt, kunt u verdergaan naar het vierde deel van de gids Aan de slag en [inhoudsfragmenten maken.](create-content-fragment.md)
 
->!![TIP]
-Voor volledige details over het beheren van Inhoudsfragmenten, zie [Documentatie van Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Voor volledige details over het beheren van Inhoudsfragmenten, zie [Documentatie van Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
