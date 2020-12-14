@@ -2,7 +2,7 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Met de REST-API voor middelen kunt u inhoudsfragmenten beheren en met de GraphQL-API kunt u inhoud zonder kop verzenden.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
 
 1. Ervan uitgaande dat het model dat we hebben gemaakt `person` is aangeroepen met velden `firstName`, `lastName` en `position`, kunnen we een eenvoudige query maken om de inhoud van ons inhoudsfragment op te halen.
 
-   ```
+   ```text
    query {
      persons {
        items {
