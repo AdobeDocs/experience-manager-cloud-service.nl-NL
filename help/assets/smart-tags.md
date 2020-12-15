@@ -3,9 +3,9 @@ title: Afbeeldingen automatisch labelen met door AI gegenereerde tags
 description: Tags toewijzen aan afbeeldingen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2362'
+source-wordcount: '2361'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ Op de achtergrond gebruiken de Slimme Markeringen een kunstmatig intelligentieka
 
 Voer de volgende taken uit als u slimme tags wilt gebruiken:
 
-* [Integreer Experience Manager met de Console](#integrate-aem-with-aio) van de Ontwikkelaar van Adobe.
+* [ [!DNL Adobe Experience Manager] Integreren met Adobe Developer Console](#integrate-aem-with-aio).
 * [Leer labelmodellen en richtlijnen](#understand-tag-models-guidelines).
 * [Trein het model](#train-model).
 * [Tags toewijzen aan uw digitale elementen](#tag-assets).
@@ -105,6 +105,9 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 1. Klik op **[!UICONTROL Create]**. Geef **[!UICONTROL Title]**, **[!UICONTROL Description]** op.
 1. Blader en selecteer de tags van de bestaande tags in `cq:tags` waarvoor u het model wilt trainen. Klik op **[!UICONTROL Next]**.
 1. Klik in het dialoogvenster **[!UICONTROL Select Assets]** op **[!UICONTROL Add Assets]** bij elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]**.
+
+   ![Trainingsstatus weergeven](assets/smart-tags-training-status.png)
+
 1. Als u een voorvertoning van de miniaturen van de geselecteerde afbeeldingen wilt weergeven, klikt u op de accordeon vóór een tag. U kunt de selectie wijzigen door op **[!UICONTROL Add Assets]** te klikken. Als u tevreden bent met de selectie, klikt u op **[!UICONTROL Submit]**. In de gebruikersinterface wordt onder aan de pagina een melding weergegeven dat de training wordt gestart.
 1. Controleer de status van de training in de kolom **[!UICONTROL Status]** voor elk tagmodel. Mogelijke statussen zijn [!UICONTROL Pending], [!UICONTROL Trained] en [!UICONTROL Failed].
 
@@ -116,13 +119,13 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 
 Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de trainingsset met elementen, raadpleegt u het workflowrapport voor training in de rapportconsole.
 
-1. Ga in [!DNL Experience Manager] interface, naar **[!UICONTROL Tools > Assets > Reports]**.
+1. Ga in [!DNL Experience Manager] interface naar **[!UICONTROL Tools] > **[!UICONTROL Assets] > **[!UICONTROL Reports]**.
 1. Klik op **[!UICONTROL Asset Reports]** op de pagina.**[!UICONTROL Create]**
 1. Selecteer het **[!UICONTROL Smart Tags Training]** rapport, en klik dan **[!UICONTROL Next]** van de toolbar.
 1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Klik vervolgens op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op **[!UICONTROL View]** op de werkbalk om het rapport weer te geven.
 1. Bekijk de details van het rapport. Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in de kolom **[!UICONTROL Training Status]** geeft aan dat de service Slimme tags is getraind voor de tag. Een gele kleur geeft aan dat de service niet volledig is getraind voor een bepaalde tag. Voeg in dit geval meer afbeeldingen met de desbetreffende tag toe en voer de trainingsworkflow uit om de service volledig op de tag te trainen. Als dit rapport uw tags niet bevat, voert u de trainingsworkflow voor deze tags opnieuw uit.Tags
-1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een Microsoft Excel-spreadsheet.
+1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een spreadsheet [!DNL Microsoft Excel].
 
 ## Elementen {#tag-assets} labelen
 
