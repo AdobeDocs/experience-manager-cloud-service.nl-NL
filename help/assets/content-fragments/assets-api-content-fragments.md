@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
 description: Meer informatie over Adobe Experience Manager als ondersteuning voor Cloud Service Content Fragments in Assets HTTP API.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cyc
 
 >[!NOTE]
 >Toegang over:
+>
 >* `/api/assets` **U** hoeft de  `.model` kiezer niet te gebruiken.
 >* `/content/path/to/page` **Het** gebruik van de  `.model` kiezer is vereist.
 
@@ -306,32 +307,27 @@ Gebruik gebeurt via:
 
 Er zijn enkele beperkingen:
 
-* **Variaties kunnen niet worden geschreven en bijgewerkt.** Als deze variaties aan een lading worden toegevoegd (bijvoorbeeld voor updates) zullen zij worden genegeerd. De variatie zal echter worden aangeboden via levering ( `GET`).
-
 * **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## Statuscodes en foutberichten {#status-codes-and-error-messages}
 
 De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
-* **200** (OK)
-
-   Geretourneerd wanneer:
+* **200** (OK) Wordt geretourneerd wanneer:
 
    * een inhoudsfragment aanvragen via `GET`
-
    * een inhoudsfragment bijwerken via `PUT`
 
-* **201**  (gemaakt)
-
-   Geretourneerd wanneer:
+* **201** (Gemaakt) geretourneerd wanneer:
 
    * een inhoudsfragment maken via `POST`
 
-* **404** (Niet gevonden)
-
-   Geretourneerd wanneer:
+* **404** (Niet gevonden) Wordt geretourneerd als:
 
    * het gewenste inhoudsfragment bestaat niet
 
@@ -341,8 +337,8 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
    >
    >Deze fout wordt geretourneerd:
    >
-   >    * wanneer een fout is opgetreden die niet met een specifieke code kan worden geïdentificeerd
-   >    * wanneer de opgegeven lading niet geldig was
+   >* wanneer een fout is opgetreden die niet met een specifieke code kan worden geïdentificeerd
+   >* wanneer de opgegeven lading niet geldig was
 
 
    In het volgende voorbeeld worden algemene scenario&#39;s weergegeven wanneer deze foutstatus wordt geretourneerd, samen met het gegenereerde foutbericht (monospace):
@@ -384,6 +380,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 ## API-referentie {#api-reference}
 
 Zie hier voor gedetailleerde API-referenties:
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
