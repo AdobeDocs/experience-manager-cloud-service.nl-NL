@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3464'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ Deze (facultatieve) logica kan op verschillende manieren worden uitgevoerd en wo
 * Java gebruiken - [De HTML Java use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava tot stand te brengen. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
 * JavaScript gebruiken - [De HTML JavaScript gebruik-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) laat een HTML- dossier toe om helpercode toegang te hebben die in JavaScript wordt geschreven. Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 * Het gebruik van Client-Side Libraries - Moderne websites vertrouwen sterk op client-side verwerking door complexe JavaScript- en CSS-code. Zie het document [Client-Side Bibliotheken gebruiken op AEM als een Cloud Service](/help/implementing/developing/introduction/clientlibs.md) voor meer informatie.
-
-### Uw eigen componenten ontwikkelen {#developing-your-own-components}
-
-Wilt u hier inhoud ontwikkelen?
 
 ## Componentstructuur {#structure}
 
@@ -409,6 +405,14 @@ Met de volgende configuratie wordt de pagina vernieuwd nadat de component is ver
 ### Veldvalidatie {#field-validation}
 
 Veldvalidatie in de graniet-gebruikersinterface en de graniet-UI-widgets wordt uitgevoerd met de API `foundation-validation`. Raadpleeg de [`foundation-valdiation` documentatie van graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) voor meer informatie.
+
+### Beschikbaarheid van dialoogvenster {#dialog-ready} detecteren
+
+Als u een aangepast JavaScript hebt dat alleen moet worden uitgevoerd wanneer het dialoogvenster beschikbaar en gereed is, moet u luisteren naar de gebeurtenis `dialog-ready`.
+
+Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of opnieuw wordt geladen) en klaar voor gebruik is. Dit houdt in dat telkens wanneer er een wijziging (maken/bijwerken) plaatsvindt in de DOM van het dialoogvenster.
+
+`dialog-ready` U kunt dit gebruiken om aangepaste JavaScript-code te koppelen die aanpassingen uitvoert op de velden in een dialoogvenster of vergelijkbare taken.
 
 ## Gedrag voorvertoning {#preview-behavior}
 
