@@ -4,9 +4,9 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4214'
 ht-degree: 11%
 
 ---
@@ -103,19 +103,25 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
    >
    >Als u tags wilt maken, moet u schrijfmachtigingen hebben op het pad `/content/cq:tags/default` in de CRX-opslagruimte.
 
-1. Als u gebruiksstatistieken voor het element wilt weergeven, klikt of tikt u op het tabblad **[!UICONTROL Insights]**.
-
-   De statistieken van het gebruik omvatten het volgende:
-
-   * Aantal keer dat het element is weergegeven of gedownload
-   * Kanalen/apparaten waardoor het middel werd gebruikt
-   * Creatieve oplossingen waarbij het middel onlangs is gebruikt
-
-   Zie [Asset Insights](assets-insights.md) voor meer informatie.
-
 1. Tik of klik op **[!UICONTROL Save & Close]**.
 
 1. Navigeer naar de gebruikersinterface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving en tags, worden weergegeven op de elementenkaart in de Kaart-weergave en onder de desbetreffende kolommen in de lijstweergave.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
+
+    * Number of times the asset was viewed or downloaded
+    * Channels/devices through which the asset was used
+    * Creative solutions where the asset was recently used
+
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
+
+-->
 
 ## Elementen {#copying-assets} kopiëren
 
@@ -545,7 +551,7 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
