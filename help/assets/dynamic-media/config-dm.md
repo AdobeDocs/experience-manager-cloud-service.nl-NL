@@ -2,19 +2,19 @@
 title: Dynamic Media-Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3552'
 ht-degree: 8%
 
 ---
 
 
-# Informatie over het configureren van Dynamic Media-Cloud Service {#configuring-dynamic-media-scene-mode}
+# Informatie over het configureren van Dynamic Media-Cloud Service {#configuring-dynamic-media}
 
 Als u Adobe Experience Manager-configuratie gebruikt voor verschillende omgevingen, zoals een omgeving voor ontwikkeling, een omgeving voor staging en een omgeving voor live productie, moet u Dynamic Media-Cloud Services configureren voor elk van deze omgevingen.
 
-## Architectuurdiagram van Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
+## Architectuurdiagram van Dynamic Media {#architecture-diagram-of-dynamic-media}
 
 In het volgende architectuurdiagram wordt beschreven hoe Dynamic Media werkt.
 
@@ -184,9 +184,9 @@ Als u de configuratie en opstelling van Dynamic Media verder wilt aanpassen, of 
 
 ### (Optioneel) Dynamic Media-instellingen {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings} instellen en configureren
 
-Met de Dynamic Media Classic (Scene7)-gebruikersinterface kunt u uw Dynamic Media-instellingen wijzigen.
+Met de Dynamic Media Classic-gebruikersinterface kunt u uw Dynamic Media-instellingen wijzigen.
 
-Voor sommige van de bovenstaande taken moet u zich hier aanmelden bij Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Voor sommige van de bovenstaande taken moet u zich hier aanmelden bij Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 De taken van de opstelling en van de configuratie omvatten het volgende:
 
