@@ -2,9 +2,9 @@
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
 description: Leer de beste praktijken u in Dynamic Media kunt gebruiken om de kwaliteit van uw beeldactiva te optimaliseren.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1461'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd voor meer informatie over hoe verscherpen en onscherp maskeren in AEM werken door naar de volgende nuttige bronnen te verwijzen:
 
-Whitepaper over aanbevolen procedures [Het verscherpen van afbeeldingen in Adobe Scene7 Publishing System en op Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) is ook van toepassing op AEM.
+Op deze manier wordt witboek [Verscherpen van afbeeldingen in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) ook toegepast op AEM.
 
 Kijk op Adobe-tv [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,7 +65,7 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
       AEM Help-onderwerp over het verscherpen van een afbeelding.
 
-      Tips en trucs [Afbeeldingen verscherpen in Adobe Scene7 Publishing System en op Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
    * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
@@ -117,7 +117,7 @@ Als de verscherpingsresultaten nog steeds niet bevredigend zijn, vergroot u de s
 
 Tijdens het experimenteren kunt u ook de volgende algemene suggesties gebruiken om uw workflow te optimaliseren:
 
-* Probeer verschillende parameters in real-time uit en test ze rechtstreeks op een URL of met gebruik van de functie voor het aanpassen van afbeeldingen van het Scene7 Publishing System, die real-time voorvertoningen biedt voor aanpassingsbewerkingen.
+* Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
 * U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$`. De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
 * AEM biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerd gebruik waarbij dit een optie kan zijn om de renderingresultaten verder af te stemmen en te optimaliseren, kan [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) u helpen met aangepaste inzichten en beste praktijken.
 
