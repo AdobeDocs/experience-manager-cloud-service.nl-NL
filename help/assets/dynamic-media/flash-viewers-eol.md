@@ -1,19 +1,17 @@
 ---
 title: Kennisgeving over de gebruiksduur van Flash-viewers
-description: Vanaf 31 januari 2017 zal Adobe Scene7 officieel ondersteuning aan het einde van de levensduur van het Flash-viewerplatform bieden.
+description: Vanaf 31 januari 2017 is de ondersteuning voor het Flash viewerplatform officieel levenseinde.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 11%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# Kennisgeving over de gebruiksduur van Flash-viewers{#flash-viewers-end-of-life-notice}
+# Einde levensduur Flash-viewers {#flash-viewers-end-of-life-notice}
 
-*Met ingang van 31 januari 2017 heeft de Adobe Dynamic Media Classic (Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.*
+Vanaf 31 januari 2017 is de ondersteuning voor het Flash viewerplatform officieel levenseinde.
 
-*Raadpleeg de volgende website met veelgestelde vragen voor meer informatie over deze belangrijke wijziging:*
-
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+Zie de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) voor de meest recente ondersteunde viewers.
