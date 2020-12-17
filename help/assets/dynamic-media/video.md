@@ -2,9 +2,9 @@
 title: Video
 description: Leer hoe u met video werkt in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '9698'
+source-wordcount: '9160'
 ht-degree: 9%
 
 ---
@@ -127,7 +127,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -349,7 +349,7 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 | Snelheid (Kbps) | Verbindingstype |
 |--- |--- |
 | 256 | Inbelverbinding. |
-| 800 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
+| 600 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
 | 2000 | Standaardbreedbandverbinding voor desktops. Voor deze verbinding, richt een gegevenstarief in de waaier 800-2000 Kbps, met de meeste doelstellingen gemiddeld 1200-1500 Kbps. |
 | 5000 | Typische breedbandverbinding. Codering in dit bovenste bereik wordt niet aanbevolen, omdat de video bij deze snelheid niet beschikbaar is voor de meeste consumenten. |
 
@@ -983,72 +983,69 @@ Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik op **
 
 1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
-### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die van een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om videorapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de SDK van de Dynamic Media HTML5 Viewer, voert u de volgende stappen uit om ervoor te zorgen dat de videoviewer traceergebeurtenissen naar Dynamic Media Video Reports verzendt.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Gebruik de Dynamic Media Viewers Reference en de Dynamic Media HTML5 Viewers SDK om uw eigen videoviewers te maken.
+Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-Zie [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
-
-<!-- 
-
-SDK ONLY AVAILABLE INTERNALLY NOW
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
--->
+**To view Video Reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK:**
 
-**U kunt als volgt videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de SDK van de Dynamic Media HTML5 Viewer:**
-
-1. Navigeer naar een gepubliceerd video-element.
-1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de assetpagina de optie **[!UICONTROL Viewers]**.
-1. Selecteer een voorinstelling voor een videoviewer en kopieer de insluitcode.
-1. Zoek in de insluitcode de regel met het volgende:
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers]**.
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Met de parameter `config2` kunnen HTML5 Viewers worden bijgehouden. Het is ook een bedrijf-specifieke vooraf ingesteld die de configuratieinformatie voor Video die, en voor klant-specifieke configuraties van Adobe Analytics bevat meldt.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   De correcte waarde voor de config2-parameter vindt u in zowel de functie **[!UICONTROL Embed Code]** als in de functie voor het kopiëren van de **[!UICONTROL URL]**. In de URL van de opdracht voor het kopiëren van de **[!UICONTROL URL]**, zoekt u naar de parameter `&config2=<value>`. De waarde is bijna altijd `companypreset`, maar in sommige gevallen ook `companypreset-1`, `companypreset-2`, enz.
+   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[!UICONTROL URL]** function. In the URL from the copy **[!UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. Voeg in uw aangepaste videoviewercode AppMeasurementBridge .jsp als volgt toe aan de viewerpagina:
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * Bepaal eerst of u de parameter `&preset` nodig hebt.
-Als de `config2` parameter `companypreset` is, *not *need `&preset=parameter`.
-Wanneer `config2` iets anders is, stelt u de parameter preset op dezelfde manier in als de parameter `config2`. Als `config2=companypreset-2` bijvoorbeeld, `&param2=companypreset-2` aan AppMeturmentBridge.jsp URL toevoegt.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * Voeg vervolgens het script AppMeasurementBridge.jsp toe:
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Maak als volgt de component TrackingManager:
+1. Create the TrackingManager component by doing the following:
 
-   * Na het aanroepen van `s7sdk.Utils.init();` maakt u een instantie TrackingManager om gebeurtenissen bij te houden door het volgende toe te voegen:
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Verbind componenten met TrackingManager door het volgende te doen:
-Verbind in de `s7sdk.Event.SDK_READY` gebeurtenismanager, de component u aan TrackingManager wilt volgen.
-Als de component bijvoorbeeld `videoPlayer` is, voegt u
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-om de component aan trackingManager vast te maken. Als u meerdere viewers op een pagina wilt bijhouden, gebruikt u meerdere beheercomponenten voor tekstspatiëring.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * Maak het object AppMeasurementBridge door het volgende toe te voegen:
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Voeg de functie voor bijhouden toe door het volgende toe te voegen:
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   Het object appMeturementBridge heeft een ingebouwde trackfunctie. U kunt echter uw eigen systeem beschikbaar stellen voor de ondersteuning van meerdere trackingsystemen of andere functies.
 
-   Zie *De TrackingManager-component* gebruiken in de *Scene7 HTML5 Viewer SDK User Guide* beschikbaar voor downloaden via [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) voor meer informatie.
+   The appMeasurementBridge object has a built-in track function. OBSOLETE However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+ -->
 
 ## Bijschriften toevoegen aan video {#adding-captions-to-video}
 
@@ -1114,7 +1111,7 @@ U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstuk
 >[!NOTE]
 De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
-Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie verwijst u in de handleiding Adobe Scene7 Viewer SDK for HTML5 naar de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. De SDK van de Adobe Scene7 Viewer is beschikbaar als download via [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 U maakt een hoofdstuklijst voor uw video op ongeveer dezelfde manier als u bijschriften maakt. U maakt dus een WebVTT-bestand. Merk op, echter, dat dit dossier van om het even welk WebVTT titeldossier moet gescheiden zijn dat u ook kunt gebruiken; u kunt geen titels en hoofdstukken in één dossier combineren WebVTT.
 
