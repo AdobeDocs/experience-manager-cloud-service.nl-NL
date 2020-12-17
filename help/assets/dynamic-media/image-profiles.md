@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-afbeeldingsprofielen
-description: Maak dynamische afbeeldingsprofielen voor media die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten en pas het profiel vervolgens toe op een map met afbeeldingselementen.
+description: Maak Dynamic Media-afbeeldingsprofielen met instellingen voor onscherp masker, slim uitsnijden of slim staal of beide en pas het profiel toe op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 8%
@@ -22,7 +22,7 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Met andere woorden, voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel geldt dat als de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel gelijk is, dezelfde hoogte-breedteverhouding wordt verzonden naar dynamische media. Daarom raadt Adobe u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat de verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt, worden beïnvloed.
+De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slim uitsnijden in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Daarom raadt Adobe u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat de verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt, worden beïnvloed.
 
 Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden op mapniveau kunt toepassen, raadt Adobe u aan het te gebruiken in mappen *alleen* waar dat nodig is.
 
@@ -93,17 +93,17 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
  </tbody>
 </table>
 
-Verscherpen wordt beschreven in [Afbeeldingen verscherpen.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+Verscherpen wordt beschreven in [Afbeeldingen verscherpen.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
 
-## Dynamische afbeeldingsprofielen voor media maken {#creating-image-profiles}
+## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}
 
 Zie [Elementverwerking configureren](config-dm.md#configuring-asset-processing) om geavanceerde verwerkingsparameters voor andere elementtypen te definiëren.
 
-Zie [Informatie over dynamische mediaafbeeldingsprofielen en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md).
+Zie [Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md).
 
 Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
-**Dynamische afbeeldingsprofielen voor media maken**
+**Dynamic Media-afbeeldingsprofielen maken**
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Tik **[!UICONTROL Create]** om een nieuw afbeeldingsprofiel toe te voegen.
@@ -117,7 +117,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 1. Tik op **[!UICONTROL Save]**. Het nieuwe profiel wordt weergegeven in de lijst met beschikbare profielen.
 
-## Dynamische afbeeldingsprofielen van media bewerken of verwijderen {#editing-or-deleting-image-profiles}
+## Dynamic Media-afbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]** om deze te bewerken. Selecteer **[!UICONTROL Delete Image Processing Profile]** om het te verwijderen.
@@ -126,7 +126,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Een dynamisch afbeeldingsprofiel voor media toepassen op mappen {#applying-an-image-profile-to-folders}
+## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één afbeeldingsprofiel kunt toewijzen aan een map. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -140,7 +140,7 @@ U kunt afbeeldingsprofielen toepassen op specifieke mappen of op alle elementen.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand afbeeldingsprofiel heeft dat u later hebt gewijzigd. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Dynamische afbeeldingsprofielen van media toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
+### Dynamic Media-afbeeldingsprofielen toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
 
 U kunt een Profiel van het Beeld op een omslag van binnen het **[!UICONTROL Tools]** menu toepassen of als u in de omslag, van **[!UICONTROL Properties]** bent. In deze sectie wordt beschreven hoe u op beide manieren afbeeldingsprofielen kunt toepassen op mappen.
 
@@ -148,7 +148,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Dynamische afbeeldingsprofielen van media toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt toepassen op een of meerdere mappen.
@@ -157,7 +157,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Tik op **[!UICONTROL Apply Processing Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik/klik op **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamische afbeeldingsprofielen van media toepassen op mappen vanuit Eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen toepassen op mappen met eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
@@ -165,13 +165,13 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Globaal een dynamisch afbeeldingsprofiel voor media toepassen {#applying-an-image-profile-globally}
+### Een Dynamic Media-afbeeldingsprofiel globaal toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map.
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Een dynamisch afbeeldingsprofiel voor media algemeen** toepassen:
+**Een Dynamic Media-afbeeldingsprofiel wereldwijd** toepassen:
 
 1. Voer een van de volgende handelingen uit:
 
@@ -270,7 +270,7 @@ Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submapp
 
 U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu verwijderen of als u in de omslag, uit **[!UICONTROL Properties]** bent. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
 
-### Dynamische afbeeldingsprofielen van media uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u uit een of meerdere mappen wilt verwijderen.
@@ -278,7 +278,7 @@ U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu 
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamische afbeeldingsprofielen van media uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
 1. Tik op het AEM en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
