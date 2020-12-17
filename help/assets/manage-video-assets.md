@@ -3,10 +3,10 @@ title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 7%
+source-wordcount: '605'
+ht-degree: 6%
 
 ---
 
@@ -28,17 +28,17 @@ Leer hoe u de video-elementen beheert en bewerkt in [!DNL Adobe Experience Manag
 
 ## Video-elementen publiceren {#publish-video-assets}
 
-Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [Dynamische media-elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie.
+Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie.
 
 ## Transcoderen met behulp van verwerkingsprofiel {#transcode-video}
 
 [!DNL Experience Manager] als een  [!DNL Cloud Service] methode gebruikt, kunt u standaardtranscodering van MP4-videobestanden uitvoeren met behulp van Procesprofielen. Met deze functionaliteit kunt u niet alleen een MP4-videobestand uploaden, maar ook een voorvertoning weergeven en schalen.
 
-![Verwerkingsprofiel maken voor videotranscodering in Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Verwerkingsprofiel maken voor videotranscodering in  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Afbeelding: A Processing Profile for video transcoding in  [!DNL Experience Manager].*
 
-Als u alleen de breedte of alleen de hoogte opgeeft en het andere veld leeg laat, behouden de uitvoeringen de hoogte-breedteverhouding. Momenteel is alleen de h264-codec beschikbaar voor transcodering.
+Als u alleen de breedte of alleen de hoogte opgeeft en het andere veld leeg laat, behouden de uitvoeringen de hoogte-breedteverhouding. H.264-videocodec is beschikbaar voor transcodering.
 
 Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel toe aan een map. Zie [verwerkingsprofielen gebruiken om elementen te verwerken](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,11 +52,21 @@ Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel t
 
 ## Beste werkwijzen en beperkingen {#tips-limitations}
 
-* Zonder Dynamic Media-licentie kunt u alleen MP4-bestanden verwerken met behulp van verwerkingsprofielen.
-* Voor elementaire transcodering met
+* Zonder [!DNL Dynamic Media]-licentie kunt u alleen MP4-bestanden verwerken met behulp van verwerkingsprofielen.
+* Wanneer u MP4-bestanden transcodeert met behulp van procesprofielen, gelden de volgende richtlijnen en beperkingen:
+
+   * Apple ProRes-bestanden kunnen alleen transcoderen naar een maximale resolutie van 1080p.
+   * Als het bronbestand een bitsnelheid > 200 Mbps heeft, kunt u alleen transcoderen naar een maximale resolutie van 1080p.
+   * Als de bronframesnelheid >= 60 fps is, kunt u de maximale bronbestandsgrootte gebruiken:
+
+      * 400 MB voor 4.000 transcodering.
+      * 800 MB voor 1080p-transcodering.
+      * 8 GB voor 720p-transcodering.
+   * De maximale bestandsgrootte die u kunt transcoderen naar een resolutie van 4 k is 2,55 GB MP4-bestand met een resolutie van 4 k, een bitsnelheid van 12 Mbps en 23 fps.
+
 
 >[!MORELIKETHIS]
 >
->* [Dynamische mediavideodocumentatie](/help/assets/dynamic-media/video.md).
+>* [Dynamic Media-videodocumentatie](/help/assets/dynamic-media/video.md).
 >* [Meer informatie over gebruik, typen en configuratie van verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
 
