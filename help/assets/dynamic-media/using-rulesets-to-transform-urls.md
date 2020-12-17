@@ -2,9 +2,9 @@
 title: Regels gebruiken om URL's te transformeren
 description: U kunt regelsets in Dynamic Media gebruiken om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '726'
 ht-degree: 3%
 
 ---
@@ -17,11 +17,11 @@ U kunt regelsets in Dynamic Media gebruiken om URL&#39;s te transformeren. Regel
 * Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen van `.jpg` aan een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
 
-   Zie [Hoe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) ondersteunt.
 
 * Metagegevens toevoegen aan de URL voor SEO-doeleinden (Search Engine Optimization).
 
-   Zie [Hoe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) ondersteunt.
 
 * De positie van de inhoud instellen om een download te activeren.
 * Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Zet `rgb{XX,YY,ZZ}` bijvoorbeeld om in RTF-ready `\redXX\greenYY\blueZZ`
@@ -45,9 +45,11 @@ Zie ook [Regelsets voor probleemoplossing](https://helpx.adobe.com/experience-ma
 Zorg er ook voor dat u eerst de regel test die is ingesteld in een testomgeving die geen invloed heeft op uw live productieomgeving.
 Productieomgevingen en staging-omgevingen vereisen doorgaans verschillende logins.
 
-* **NA het opvoeren van** milieu login pagina:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Staging** van aanmeldingspagina voor omgeving bij EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC-** pagina voor aanmelding bij omgeving:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Zie de [Adobe Dynamic Media Klassieke bureaubladtoepassing voor aanmelding](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in een regelset](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
