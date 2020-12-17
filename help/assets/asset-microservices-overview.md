@@ -3,9 +3,9 @@ title: Elementen verwerken met behulp van asset microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager als [!DNL Cloud Service] biedt een &#39;cloud-native&#3
 * Native Adobe-bestandsverwerkingsservices worden waar van toepassing gebruikt, waardoor een hoogwaardige uitvoer mogelijk wordt en [een efficiënte verwerking van door eigendomsrechten beschermde indelingen](file-format-support.md) mogelijk wordt.
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
-Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen.
+Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze standaard basisfunctionaliteit bieden voor algemene bestandstypen.
 
 ## Architectuur op hoog niveau {#asset-microservices-architecture}
 
