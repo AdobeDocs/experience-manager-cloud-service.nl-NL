@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten - Configuratiebrowser
 description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '263'
+ht-degree: 19%
 
 ---
 
@@ -42,19 +42,25 @@ Als u [bepaalde functionaliteit voor inhoudsfragmenten wilt gebruiken](#creating
 >
 >Zie ook [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) voor meer informatie.
 
+>[!CAUTION]
+>
+>Subconfiguraties (een configuratie die in een configuratie is genest) worden niet ondersteund voor gebruik met Content Fragments.
+
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
-2. Selecteer de locatie die geschikt is voor uw website.
-3. Gebruik **Maken** om het dialoogvenster te openen, waarin u:
+
+1. Gebruik **Maken** om het dialoogvenster te openen, waarin u:
 
    1. Geef een **Titel** op.
-   2. Selecteer
+   1. Selecteer
       * **Modellen van contentfragmenten**
       * **GrafiekQL blijvende vragen**
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
 
 
-4. Selecteer **Maken** om de definitie op te slaan.
+1. Selecteer **Maken** om de definitie op te slaan.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Pas de Configuratie op uw Omslag van Activa {#apply-the-configuration-to-your-assets-folder} toe
 
