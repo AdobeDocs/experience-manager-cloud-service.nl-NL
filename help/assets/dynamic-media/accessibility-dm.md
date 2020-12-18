@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -52,12 +52,12 @@ Dynamic Media-gebruikersinterface-elementen werken met ondersteunende hulpmiddel
 
 Alle Dynamic Media-viewercomponenten die niet in de verpakking staan, ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [Toetsenbordtoegankelijkheid en -navigatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamic Media Viewers Reference Guide.
+Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamic Media Viewers Reference Guide.
 
 ## Support voor hulpprogramma&#39;s in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
 
 Alle Dynamic Media-viewercomponenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
-Zie het **Technische ondersteuning** Help-onderwerp in een aangepast vieweronderwerp in de handleiding voor Dynamic Media-viewers. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.
+Zie het **Technische ondersteuning** Help-onderwerp in een aangepast vieweronderwerp in de handleiding voor Dynamic Media-viewers. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.
 
 >[!MORELIKETHIS]
 >
