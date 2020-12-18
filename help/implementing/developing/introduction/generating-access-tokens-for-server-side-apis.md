@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De server-aan-server stroom impliceert de volgende stappen:
 
 ### Het produceren van de Token van de Drager JWT {#generating-the-jwt-bearer-token}
 
-De gebruikers die de adminrol voor een organisatie hebben zullen het integratietabblad in de ontwikkelaarsconsole voor een bepaalde milieu, evenals twee knopen zien. Als u op **Get Service Credentials** klikt, worden de persoonlijke sleutel, het certificaat en de configuratie gegenereerd.
+De gebruikers die de adminrol voor een organisatie hebben zullen het integratietabblad in de ontwikkelaarsconsole voor een bepaalde milieu, evenals twee knopen zien. Als u op de knop **Servicekredieten ophalen** klikt, worden de persoonlijke sleutel, het certificaat en de configuratie voor auteur- en publicatieniveaus van de omgeving gegenereerd, ongeacht de podselectie.
 
 ![JWT Generation](assets/JWTtoken3.png)
 
