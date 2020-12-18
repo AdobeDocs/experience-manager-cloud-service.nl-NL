@@ -2,9 +2,9 @@
 title: Video
 description: Leer hoe u met video werkt in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '9160'
+source-wordcount: '9158'
 ht-degree: 9%
 
 ---
@@ -146,7 +146,7 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web, naar desktops en mobiele apparaten, waaronder de iPhone, iPad, Android, Blackberry en Windows-telefoon.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor Dynamic Media-viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. U vindt Blackberry-apparaten die deze video-indeling ondersteunen op de volgende locatie: [Ondersteunde video-indelingen op Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -436,15 +436,15 @@ U kunt de publicatie van video&#39;s ook [ongedaan maken om deze te verwijderen 
 
 ### Google Cloud-instellingen configureren {#configuring-google-cloud-settings}
 
-Als u op YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account; als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u referenties nodig hebt om video-elementen naar YouTube te publiceren. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u direct door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
+Als u op YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account; als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u gebruikersgegevens nodig hebt om video-elementen te publiceren naar YouTube. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u direct door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
 
 Het account dat wordt gebruikt met Google Cloud en het Google-account dat wordt gebruikt voor YouTube, hoeft niet hetzelfde te zijn.
 
-Houd er rekening mee dat Google regelmatig wijzigingen aanbrengt in de gebruikersinterface. Daarom kunnen de stappen voor het publiceren van video&#39;s naar YouTube enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud geldt ook voor YouTube wanneer u probeert te controleren of er video&#39;s naar zijn geüpload.
+Houd er rekening mee dat Google regelmatig wijzigingen aanbrengt in de gebruikersinterface. Daarom kunnen de stappen voor het publiceren van video&#39;s naar YouTube enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud is ook van toepassing op YouTube wanneer u probeert te controleren of er video&#39;s naar zijn geüpload.
 
 >[!NOTE]
 >
->De volgende stappen waren correct op het moment van schrijven. Google werkt zijn websites echter regelmatig en zonder kennisgeving bij. Daarom kunnen deze stappen iets anders zijn.
+>De volgende stappen waren nauwkeurig op het moment van schrijven. Google werkt hun websites echter regelmatig zonder kennisgeving bij. Daarom kunnen deze stappen iets anders zijn.
 
 Google Cloud-instellingen configureren:
 
@@ -456,33 +456,33 @@ Google Cloud-instellingen configureren:
 1. Ga naar [https://cloud.google.com/](https://cloud.google.com/).
 1. Klik in de rechterbovenhoek op de Google Cloud-pagina op **[!UICONTROL Console]**.
 
-   Indien nodig moet u **[!UICONTROL Sign in]** gebruiken om de **[!UICONTROL Console]** optie te zien.
+   Indien nodig moet u **[!UICONTROL Sign in]** met uw aanmeldingsgegevens voor uw Google-account mogelijk **[!UICONTROL Console]** bekijken om de optie &lt;a1/> te kunnen zien.
 
 1. Klik op de dashboardpagina rechts van **[!UICONTROL Google Cloud Platform]** op de vervolgkeuzelijst Project om het dialoogvenster Een project selecteren te openen.
 1. Tik in het dialoogvenster Een project selecteren op **[!UICONTROL New Project]**.
 
    ![6_5_gogleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. In het Nieuwe de dialoogvakje van het Project, op het gebied van de Naam van het Project, typ de naam van uw nieuw project.
+1. Typ in het veld Projectnaam in het dialoogvenster Nieuw project de naam van het nieuwe project.
 
-   Merk op dat uw identiteitskaart van het Project op uw projectnaam wordt gebaseerd. Kies daarom de projectnaam zorgvuldig; het kan na het creëren niet worden veranderd. Bovendien moet u dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt AEM. misschien wilt u het wegschrijven.
+   De project-id is gebaseerd op uw projectnaam. Kies daarom zorgvuldig de projectnaam; het kan niet worden gewijzigd nadat het is gemaakt. U moet dezelfde project-id opnieuw invoeren wanneer u YouTube later AEM instellen; wilt schrijven.
 
 1. Klik op **[!UICONTROL Create]**.
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op het dashboard van uw project op de Aan de slag-kaart op **[!UICONTROL Explore and enable APIs]**.
-   * Tik op het dashboard van uw project op de API&#39;s-kaart op **[!UICONTROL Go to APIs overview]**.
+   * Tik op **[!UICONTROL Explore and enable APIs]** op het dashboard van uw project op de kaart Aan de slag.
+   * Tik op **[!UICONTROL Go to APIs overview]** op het dashboard van uw project op de API&#39;s-kaart.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Tik boven aan de pagina met API&#39;s en services op **[!UICONTROL Enable APIs and Services]**.
-1. Tik op de pagina API-bibliotheek links onder **[!UICONTROL Category]** op **[!UICONTROL YouTube]**. Tik rechts van de pagina op **[!UICONTROL YouTube Data API]**.
-1. Tik op de v3-pagina voor de YouTube Data API op **[!UICONTROL Enable]**.
+1. Tik boven aan de pagina API&#39;s en services op **[!UICONTROL Enable APIs and Services]**.
+1. Tik op **[!UICONTROL YouTube]** op de pagina API-bibliotheek aan de linkerkant onder **[!UICONTROL Category]**. Tik rechts op de pagina op **[!UICONTROL YouTube Data API]**.
+1. Tik op **[!UICONTROL Enable]** op de v3-pagina van de YouTube Data-API.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. Mogelijk hebt u referenties nodig om de API te gebruiken. Klik zo nodig op **[!UICONTROL Create Credentials]**.
+1. Mogelijk hebt u gebruikersgegevens nodig om de API te gebruiken. Klik zo nodig op **[!UICONTROL Create Credentials]**.
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -498,17 +498,17 @@ Google Cloud-instellingen configureren:
 
 1. Tik op **[!UICONTROL What credentials do I need?]**
 1. Voer op de pagina **[!UICONTROL Add credentials to your project]** in stap 2 onder de kop **[!UICONTROL Create an OAuth 2.0 client ID]** in het veld Naam desgewenst een unieke naam in. U kunt ook de standaardnaam gebruiken die door Google is opgegeven.
-1. Voer onder de kop **[!UICONTROL Authorized Javascript origins]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. Voer onder de kop **[!UICONTROL Authorized Javascript origins]** in het tekstveld het volgende pad in, waarbij u uw eigen domein en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>`
 
    Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321`
 
-   **Opmerking**: De bovenstaande padvoorbeelden zijn alleen bedoeld ter illustratie.
+   **Opmerking**: De bovenstaande padvoorbeelden dienen alleen ter illustratie.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
-1. Voer onder de kop **[!UICONTROL Authorized redirect URIs]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. Voer onder de kop **[!UICONTROL Authorized redirect URIs]** in het tekstveld het volgende pad in, waarbij u uw eigen domein en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
@@ -521,9 +521,9 @@ Google Cloud-instellingen configureren:
 
    ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
-1. Voer onder de kop **[!UICONTROL Product name shown to users]** in het tekstveld in wat u wilt weergeven op het instemmingsscherm.
+1. Voer onder de kop **[!UICONTROL Product name shown to users]** in het tekstveld in wat u wilt weergeven op het toestemmingsscherm.
 
-   Het toestemmingsscherm wordt getoond aan de AEM beheerder wanneer zij voor YouTube voor authentiek verklaren; AEM neemt contact op met YouTube voor toestemming.
+   Het toestemmingsscherm wordt weergegeven aan de AEM beheerder wanneer deze zich verifieert op YouTube. AEM neemt contact op met YouTube voor toestemming.
 
 1. Klik op **[!UICONTROL Continue]**.
 1. Tik op de pagina Referenties aan uw project toevoegen in stap 4 onder de kop **[!UICONTROL Download credentials]** op **[!UICONTROL Download]**.
@@ -532,11 +532,11 @@ Google Cloud-instellingen configureren:
 
 1. Sla het `client_id.json`-bestand op.
 
-   U hebt dit gedownloade json-bestand nodig wanneer u YouTube later in Adobe Experience Manager instelt.
+   U hebt dit gedownloade JSON-bestand nodig wanneer u YouTube later in Adobe Experience Manager instelt.
 
 1. Klik op **[!UICONTROL Done]**.
 
-   Log uit op je Google account. U maakt nu een YouTube-kanaal.
+   Meld u af van uw Google-account. U maakt nu een YouTube-kanaal.
 
 ### Een YouTube-kanaal {#creating-a-youtube-channel} maken
 
