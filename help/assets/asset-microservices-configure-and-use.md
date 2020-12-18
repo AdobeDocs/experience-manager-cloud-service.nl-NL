@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2478'
 ht-degree: 0%
 
 ---
@@ -221,6 +221,7 @@ Zie [workflowstappen in naverwerkingsworkflow](developer-reference-material-apis
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] aanpassen om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 * Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
+* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 10 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
 >[!MORELIKETHIS]
 >
