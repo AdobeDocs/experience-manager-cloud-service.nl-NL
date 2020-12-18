@@ -2,7 +2,7 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 Als u een uploadbewerking annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. [!DNL Assets] Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 1. Het dialoogvenster voor uploadvoortgang in [!DNL Assets] geeft het aantal bestanden weer dat is geüpload en de bestanden die niet zijn geüpload.
-Daarnaast wordt in de gebruikersinterface [!DNL Assets] het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
+Daarnaast wordt in de gebruikersinterface [!DNL Assets] het element weergegeven dat u het laatst hebt geüpload of de map die u het eerst hebt gemaakt.
 
 >[!NOTE]
 >
@@ -151,6 +151,8 @@ Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende 
 
 Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken.
 
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+
 Voer de volgende stappen uit om het gereedschap te configureren:
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Selecteer de optie **[!UICONTROL Create]**.
@@ -199,12 +201,12 @@ De volgende tabbladen zijn beschikbaar:
 
 Daarnaast zijn de volgende tabbladen beschikbaar als [!DNL Dynamic Media] is ingeschakeld voor uw implementatie:
 
-* [Met dynamische ](dynamic-media/image-profiles.md) profielen voor mediaafbeeldingen kunt u specifieke uitsnijd- (**[!UICONTROL Smart Cropping]** en pixeluitsnijdconfiguratie) en verscherpingsconfiguratie toepassen op de geüploade elementen.
-* [Met dynamische ](dynamic-media/video-profiles.md) videoprofielen voor media kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
+* [Met Dynamic Media-afbeeldingsprofielen kunt ](dynamic-media/image-profiles.md) u specifieke uitsnijdconfiguratie (**[!UICONTROL Smart Cropping]** en pixeluitsnijding) en verscherpingsconfiguratie toepassen op de geüploade elementen.
+* [Met Dynamic Media Video-](dynamic-media/video-profiles.md) profielen kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
 
 >[!NOTE]
 >
->Dynamische uitsnijdingen van media en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
+>Uitsnijden en andere bewerkingen van Dynamic Media op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in **[!UICONTROL Processing Profile]** kolom.
 
