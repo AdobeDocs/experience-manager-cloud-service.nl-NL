@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '796'
 ht-degree: 6%
 
 ---
@@ -94,9 +94,9 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 
 De volgende lijst met 3D-indelingen wordt ondersteund.
 
-Zie ook [Werken met 3D-elementen in dynamische media.](/help/assets/dynamic-media/assets-3d.md)
+Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -159,7 +159,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | EPUB | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
+| TTF | - | ✓ | - | ✓ | ✓ |
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
@@ -222,6 +222,10 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 ## Audio-indelingen {#audio-formats}
 
 [!DNL Assets] als  [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+
+## Tips en beperkingen {#limitations-and-tips}
+
+* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 10 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
 >[!MORELIKETHIS]
 >
