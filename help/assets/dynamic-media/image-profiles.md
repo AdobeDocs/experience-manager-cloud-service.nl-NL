@@ -2,7 +2,7 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Maak Dynamic Media-afbeeldingsprofielen met instellingen voor onscherp masker, slim uitsnijden of slim staal of beide en pas het profiel toe op een map met afbeeldingselementen.
 translation-type: tm+mt
-source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 8%
