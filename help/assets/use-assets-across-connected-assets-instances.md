@@ -3,10 +3,10 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
+source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 38%
+source-wordcount: '2601'
+ht-degree: 26%
 
 ---
 
@@ -45,16 +45,17 @@ Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszo
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
 
-Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De auteur [!DNL Sites] haalt deze externe elementen op.
+Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. Het verre werkingsgebied wordt gebruikt voor de plaatsing DAM. De auteur [!DNL Sites] haalt deze externe elementen op.
 
 | Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------|--------|-----------|-----|----------|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Stel [!DNL Experience Manager] in en configureer integratie met de externe [!DNL Assets]-implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | `Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) | `ksaner` | Eindgebruiker zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken naar elementen in externe DAM en bladeren door deze bestanden met [!UICONTROL Content Finder] en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau  [!DNL Sites]</li></ul> | `ksaner` | Eindgebruiker zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken naar elementen in externe DAM en bladeren door deze bestanden met [!UICONTROL Content Finder] en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand  [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
 | DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand  [!DNL Experience Manager] | Auteurrol bij de externe [!DNL Experience Manager]-implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
-| DAM-distributeur (technische gebruiker) | Extern | [!DNL Sites] `Authors` | `ksaner` op afstand  [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door de lokale server [!DNL Experience Manager] (niet de auteur-rol [!DNL Sites]) om de externe middelen op te halen, namens de auteur [!DNL Sites]. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
+| DAM-distributeur (technische gebruiker) | Extern | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` op afstand  [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door de lokale server [!DNL Experience Manager] (niet de auteur-rol [!DNL Sites]) om de externe middelen op te halen, namens de auteur [!DNL Sites]. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
+| [!DNL Sites] technisch gebruiker | Lokaal | `connectedassets-sites-techaccts` | - | Staat [!DNL Assets] plaatsing toe om verwijzingen naar activa in [!DNL Sites] Web-pagina&#39;s te zoeken. |
 
 ## Een verbinding configureren tussen [!DNL Sites]- en [!DNL Assets]-implementaties {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -62,29 +63,28 @@ Een [!DNL Experience Manager] beheerder kan deze integratie tot stand brengen. Z
 
 Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connectiviteit te configureren:
 
-1. Open een bestaande [!DNL Sites] plaatsing of creeer een plaatsing gebruikend het volgende bevel:
+1. Toegang tot een bestaande [!DNL Sites]-implementatie. Deze [!DNL Sites]-implementatie wordt gebruikt voor het ontwerpen van webpagina&#39;s, bijvoorbeeld op `https://[sites_servername]:port`. Aangezien de pagina creatie op [!DNL Sites] plaatsing gebeurt, laten wij [!DNL Sites] plaatsing als lokaal vanuit het het auteursperspectief van de pagina roepen.
 
-   1. Voer in de map van het JAR-bestand de volgende opdracht uit op een terminal om elke [!DNL Experience Manager]-server te maken.
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+1. Toegang tot een bestaande [!DNL Assets]-implementatie. Deze [!DNL Assets]-implementatie wordt gebruikt voor het beheer van digitale elementen, bijvoorbeeld op `https://[assets_servername]:port`.
 
-   1. Na een paar minuten wordt de [!DNL Experience Manager]-server gestart. Beschouw deze [!DNL Sites]-implementatie als de lokale computer voor het ontwerpen van webpagina&#39;s, bijvoorbeeld op `https://[local_sites]:4502`.
+1. Zorg ervoor dat de gebruikers en rollen met het juiste bereik aanwezig zijn op de [!DNL Sites]-implementatie en op de [!DNL Assets]-implementatie op AMS. Creeer een technische gebruiker op [!DNL Assets] plaatsing en voeg aan de gebruikersgroep toe die in [betrokken gebruikers en groepen](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved) wordt vermeld.
 
-1. Zorg ervoor dat de gebruikers en rollen met lokaal werkingsgebied op [!DNL Sites] plaatsing en op [!DNL Assets] plaatsing op AMS bestaan. Creeer een technische gebruiker op [!DNL Assets] plaatsing en voeg aan de gebruikersgroep toe die in [betrokken gebruikers en groepen](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved) wordt vermeld.
+1. Open de lokale [!DNL Sites]-implementatie op `https://[sites_servername]:port`. Klik **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]**. Geef de volgende waarden op:
 
-1. Open de lokale [!DNL Sites]-implementatie op `https://[local_sites]:4502`. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** en geef de volgende waarden op:
-
-   1. [!DNL Assets] locatie is  `https://[assets_servername_ams]:[port]`.
+   1. A **[!UICONTROL Title]** van de configuratie.
+   1. **[!UICONTROL Remote DAM URL]** is de URL van de  [!DNL Assets] locatie in de notatie  `https://[assets_servername]:[port]`.
    1. Referenties van een DAM-distributeur (technische gebruiker).
-   1. Voer in het veld **[!UICONTROL Mount Point]** het lokale [!DNL Experience Manager]-pad in waar [!DNL Experience Manager] de elementen ophaalt. Bijvoorbeeld de map `remoteassets`.
+   1. Voer in het veld **[!UICONTROL Mount Point]** het lokale [!DNL Experience Manager]-pad in waar [!DNL Experience Manager] de elementen ophaalt. Bijvoorbeeld de map `connectedassets`. De middelen die van DAM worden gehaald worden opgeslagen in deze omslag op [!DNL Sites] plaatsing.
+   1. **[!UICONTROL Local Sites URL]** is de locatie van de  [!DNL Sites] implementatie. [!DNL Assets] de plaatsing gebruikt deze waarde om verwijzingen naar de digitale activa te handhaven die door deze  [!DNL Sites] plaatsing worden gehaald.
+   1. Referenties van technische gebruiker [!DNL Sites].
+   1. De waarde van **[!UICONTROL Original Binary transfer optimization Threshold]** gebied specificeert als de originele activa (met inbegrip van de vertoningen) synchroon of niet worden overgebracht. Elementen met een kleinere bestandsgrootte kunnen gemakkelijk worden opgehaald terwijl elementen met een relatief grotere bestandsgrootte het best asynchroon kunnen worden gesynchroniseerd. De waarde hangt van uw netwerkmogelijkheden af.
+   1. Selecteer **[!UICONTROL Datastore Shared with Connected Assets]** als u een datastore gebruikt om uw activa op te slaan en de Datastore de gemeenschappelijke opslag tussen beide plaatsingen is. In dit geval is de drempellimiet niet van belang omdat de werkelijke binaire activa op de datastore beschikbaar zijn en niet worden overgedragen.
 
-   1. Pas de waarden van **[!UICONTROL Original Binary transfer optimization Threshold]** aan, afhankelijk van uw netwerk. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
-   1. Selecteer **[!UICONTROL Datastore Shared with Connected Assets]** als u een datastore gebruikt om uw activa op te slaan en de Datastore de gemeenschappelijke opslag tussen beide plaatsingen is. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
+   ![Een typische configuratie voor de functionaliteit van Connected Assets](assets/connected-assets-typical-config.png)
 
-   ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
+   *Afbeelding: Een standaardconfiguratie voor de functionaliteit van Connected Assets.*
 
-   *Afbeelding: Een typische configuratie voor gekoppelde assets.*
-
-1. Als de assets al zijn verwerkt en de weergaven zijn opgehaald, schakelt u de startprogramma&#39;s voor de workflow uit. Pas de startconfiguraties op de lokale ([!DNL Sites]) plaatsing aan om `connectedassets` omslag uit te sluiten, waarin de verre activa worden opgehaald.
+1. De bestaande digitale middelen op [!DNL Assets]-implementatie worden al verwerkt en de uitvoeringen worden gegenereerd. Deze worden opgehaald met deze functie, zodat het niet nodig is de uitvoeringen opnieuw te genereren. Schakel de workflowdraagprogramma&#39;s uit om te voorkomen dat uitvoeringen opnieuw worden gegenereerd. Pas de startconfiguraties van de implementatie ([!DNL Sites]) aan om de map `connectedassets` uit te sluiten (de elementen worden opgehaald in deze map).
 
    1. Klik bij [!DNL Sites]-implementatie op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
@@ -104,13 +104,9 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
    >
    >Alle uitvoeringen die beschikbaar zijn op de externe implementatie worden opgehaald, wanneer auteurs middelen ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. De [!UICONTROL DAM Update Asset]-workflow wordt geactiveerd en er worden meer uitvoeringen gemaakt. Deze uitvoeringen zijn alleen beschikbaar bij de lokale [!DNL Sites]-implementatie en niet bij de externe DAM-implementatie.
 
-1. Voeg de [!DNL Sites]-implementatie toe als een van de **[!UICONTROL Allowed Origins]** op de externe [!DNL Assets'] CORS-configuratie.
+1. Voeg de [!DNL Sites]-implementatie toe als een toegestane oorsprong in de CORS-configuratie bij de [!DNL Assets]-implementatie. Zie [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) begrijpen voor meer informatie.
 
-   1. Meld u aan met de beheerdersreferenties. Zoeken naar `Cross-Origin`. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-   1. Als u een CORS-configuratie voor [!DNL Sites]-implementatie wilt maken, klikt u op Optie ![Middelen toevoegen naast **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.](assets/do-not-localize/aem_assets_add_icon.png)
-
-   1. Voer in het veld **[!UICONTROL Allowed Origins]** de URL in van de lokale [!DNL Sites], dat wil zeggen `https://[local_sites]:[port]`. Sla de configuratie op.
+<!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
 ## Externe assets gebruiken {#use-remote-assets}
 
@@ -140,17 +136,17 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
    *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM.*
 
-1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/operations/asynchronous-jobs.md).
+1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens het ontwerpen of zelfs na het ontwerpen, kunnen de auteurs gedetailleerde informatie over het halen van taken en fouten in [asynchrone banen](/help/operations/asynchronous-jobs.md) gebruikersinterface zien.
 
    ![Melding van het asynchroon op de achtergrond ophalen van assets.](assets/assets_async_transfer_fails.png)
 
    *Afbeelding: Melding van het asynchroon op de achtergrond ophalen van assets.*
 
-1. Bij het publiceren van een pagina wordt [!DNL Experience Manager] weergegeven met een volledige lijst met elementen die op de pagina worden gebruikt. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/operations/asynchronous-jobs.md).
+1. Bij het publiceren van een pagina wordt [!DNL Experience Manager] weergegeven met een volledige lijst met elementen die op de pagina worden gebruikt. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Zie [asynchrone taken](/help/operations/asynchronous-jobs.md) gebruikersinterface om de status van elk opgehaald element te controleren.
 
    >[!NOTE]
    >
-   >Zelfs als een of meer externe assets niet worden opgehaald, wordt de pagina gepubliceerd. De component die gebruikmaakt van de externe asset, wordt leeg (zonder content) gepubliceerd. In het meldingsgebied [!DNL Experience Manager] wordt een melding weergegeven voor fouten die op de pagina met asynchrone taken worden weergegeven.
+   >Zelfs als een of meer externe assets niet worden opgehaald, wordt de pagina gepubliceerd. De component die gebruikmaakt van de externe asset, wordt leeg (zonder content) gepubliceerd. In het meldingsgebied [!DNL Experience Manager] wordt een melding weergegeven voor fouten die worden weergegeven op de pagina voor asynchrone taken.
 
 >[!CAUTION]
 >
@@ -158,15 +154,22 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
-<!-- TBD: Uncomment after verification for Dec release.
+### Gebruik van een element op webpagina&#39;s controleren {#asset-usage-references}
 
-### Check use of an asset across other pages {#asset-usage-references}
+[!DNL Experience Manager] Hiermee kunnen DAM-gebruikers alle verwijzingen naar een element controleren. Het helpt het gebruik van een middel in verre [!DNL Sites] en in samenstellingsactiva begrijpen en beheren. Veel auteurs van webpagina&#39;s bij [!DNL Experience Manager Sites]-implementatie kunnen een middel op een externe [!DNL Assets] in verschillende webpagina&#39;s gebruiken. Om het beheer van bedrijfsmiddelen te vereenvoudigen en niet tot verbroken verwijzingen te leiden, is het belangrijk dat de DAM-gebruikers het gebruik van middelen op lokale en externe webpagina&#39;s controleren. Op het tabblad [!UICONTROL References] in de pagina [!UICONTROL Properties] van een element worden de lokale en externe referenties van het element weergegeven.
 
-[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te geven en te beheren:
 
-Users can view incoming references of the assets and move or delete the asset.
+1. Selecteer een element in [!DNL Assets] Console en klik **[!UICONTROL Properties]** van de toolbar.
+1. Klik op het tabblad **[!UICONTROL References]**. Zie **[!UICONTROL Local References]** voor gebruik van het element op de [!DNL Assets]-implementatie. Zie **[!UICONTROL Remote References] voor gebruik van het middel op [!DNL Sites] plaatsing waar het middel werd gehaald gebruikend de Verbonden functionaliteit van Activa.
 
--->
+   ![externe verwijzingen in eigenschappen van elementen](assets/connected-assets-remote-reference.png)
+
+1. De verwijzingen voor [!DNL Sites] pagina&#39;s tonen totaal aantal verwijzingen voor elke lokale [!DNL Sites]. Het kan enige tijd duren om alle verwijzingen te vinden en het totale aantal verwijzingen te tonen.
+1. De lijst met verwijzingen is interactief en DAM-gebruikers kunnen op een verwijzing klikken om de verwijzingspagina te openen. Als de verre verwijzingen niet om één of andere reden kunnen worden gehaald, wordt een bericht getoond op de hoogte brengend van de mislukking.
+1. Gebruikers kunnen het element verplaatsen of verwijderen. Wanneer u een element verplaatst of verwijdert, wordt het totale aantal referenties van alle geselecteerde elementen/mappen weergegeven in een waarschuwingsvenster. Wanneer u een element verwijdert waarvan de referenties nog niet worden weergegeven, wordt een waarschuwingsvenster weergegeven.
+
+   ![waarschuwing forceren verwijderen](assets/delete-referenced-asset.png)
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
@@ -198,13 +201,18 @@ Users can view incoming references of the assets and move or delete the asset.
 * Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
 * De enige methode om het element opnieuw op te halen is het op een pagina te slepen. Er is geen API-ondersteuning of andere methoden om middelen opnieuw op te halen om deze bij te werken.
 * Als de activa van DAM worden ontmanteld, blijven die op [!DNL Sites] pagina&#39;s in gebruik.
+* De externe referentie-items van een element worden asynchroon opgehaald. De verwijzingen en het totale aantal zijn niet echt - tijd en er kan één of ander verschil zijn als een auteur van Plaatsen het middel gebruikt terwijl een DAM gebruiker de verwijzing bekijkt. DAM-gebruikers kunnen de pagina vernieuwen en het totaalaantal over een paar minuten opnieuw proberen.
 
 ## Problemen oplossen {#troubleshoot}
 
-Ga als volgt te werk om problemen op te lossen voor het algemene foutscenario:
+Ga als volgt te werk om algemene fouten op te lossen:
 
 * Als u niet naar verre activa van [!UICONTROL Content Finder] kunt zoeken, dan zorg ervoor dat de vereiste rollen en de toestemmingen op zijn plaats zijn.
 * Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/operations/asynchronous-jobs.md) op fouten bij het ophalen van assets.
 * Als u geen toegang hebt tot de externe DAM-implementatie vanaf de lokale [!DNL Sites]-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies die naar andere sites verwijzen, worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. [!DNL Google Chrome] in Incognito-modus kan cookies van derden bijvoorbeeld blokkeren. Als u cookies wilt toestaan in de browser [!DNL Chrome], klikt u op het pictogram &#39;oog&#39; op de adresbalk, navigeert u naar Site werkt niet > Geblokkeerd, selecteert u de externe DAM-URL en staat u aanmeldingstoken toe. U kunt ook de Help-informatie over [het inschakelen van cookies van derden](https://support.google.com/chrome/answer/95647) raadplegen.
 
    ![Cookie-fout in Chrome in incognitomodus](assets/chrome-cookies-incognito-dialog.png)
+
+* Als de verre verwijzingen niet worden teruggewonnen en in een foutenmelding resulteren, controleer als de plaatsing van Plaatsen beschikbaar is en controleer voor de kwesties van de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
+
+![mislukken van opnieuw geprobeerd externe referenties voor middelen](assets/reference-report-failure.png)
