@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ In het dialoogvenster [!UICONTROL Upload Assets] kunt u lange namen opgeven voor
 
 ## Elementen voor uploaden in bulk {#bulk-upload}
 
-De grote leverancier van bedrijfsmiddelen kan duizenden bedrijfsmiddelen efficiënt verwerken. Een grootschalige inname is echter niet alleen een grote bestandsstortplaats of blinde migratie. Om een zinvol project te zijn dat uw bedrijfsdoel dient, leidt het plannen en beheren van de activa tot een veel efficiëntere opname. Alle ingesties zijn niet het zelfde en generalisaties kunnen niet worden gemaakt zonder rekening te houden in de genadekte bewaarplaats samenstelling en bedrijfsbehoeften. Hieronder vindt u overkoepelende suggesties voor het plannen en uitvoeren van bulkopname:
+De grote leverancier van bedrijfsmiddelen kan een zeer groot aantal bedrijfsmiddelen efficiënt verwerken. Een grootschalige inname is echter niet alleen een grote bestandsstortplaats of een tijdelijke migratie. Voor een grootschalig project om een zinvol project te zijn dat uw bedrijfsdoel dient en efficiënt is, plant de migratie en leidt de middelenorganisatie. Alle ingesties zijn verschillend zo in plaats van generaliserend, factor in de genuanceerde bewaarplaats samenstelling en bedrijfsbehoeften. Hieronder volgen enkele overkoepelende suggesties voor het plannen en uitvoeren van bulkopname:
 
 * Cursieve elementen: Verwijder elementen die niet nodig zijn in de DAM. Overweeg ongebruikte, verouderde of dubbele elementen te verwijderen. Dit vermindert de gegevens die worden overgedragen en de elementen die worden opgenomen, waardoor er sneller ingestie ontstaat.
 * Elementen ordenen: U kunt de inhoud in een logische volgorde ordenen, bijvoorbeeld op bestandsgrootte, bestandsindeling, hoofdlettergebruik of prioriteit. Over het algemeen is voor grote complexe bestanden meer verwerking nodig. U kunt ook overwegen grote bestanden afzonderlijk in te voegen met de filteroptie voor bestandsgrootte (hieronder beschreven).
@@ -149,7 +149,7 @@ Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende 
 
 ### Gereedschap {#asset-bulk-ingestor} voor het bulkmiddel
 
-Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken.
+Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken. Bekijk een videodemo van de configuratie en opname.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
