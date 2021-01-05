@@ -114,7 +114,7 @@ Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [Sli
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
-Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met de toevoeging van [!DNL Dynamic Media] kunt u 3D-ervaringen configureren en leveren met behulp van agnostische URL&#39;s of viewers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden via [!DNL Dynamic Media] (AR/VR) te leveren. Zie [Werken met 3D-elementen in dynamische media](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met de toevoeging van [!DNL Dynamic Media] kunt u 3D-ervaringen configureren en leveren met behulp van agnostische URL&#39;s of viewers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden via [!DNL Dynamic Media] (AR/VR) te leveren. Zie [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe Asset Link-ondersteuning voor Adobe XD**
 
