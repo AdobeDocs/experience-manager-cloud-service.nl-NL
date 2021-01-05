@@ -219,7 +219,7 @@ public class DontDoThis implements Page {
 
 ResourceResolver-objecten die zijn verkregen van de ResourceResolverFactory gebruiken systeembronnen. Hoewel er maatregelen op zijn plaats zijn om deze middelen terug te winnen wanneer een ResourceResolver niet meer in gebruik is, is het efficiënter om om het even welke geopende voorwerpen uitdrukkelijk te sluiten ResourceResolver door de close () methode te roepen.
 
-Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis te gebruiken in plaats van uitdrukkelijk het aanhalen van close().
+Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis in plaats van uitdrukkelijk te gebruiken close().
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
