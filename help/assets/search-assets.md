@@ -26,7 +26,7 @@ ht-degree: 4%
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
 | [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpectedresults) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
+| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamic Media-middelen](#dynamicmedia)</li></ul> |  |  |
 | [Elementkiezer](#assetselector) |  |  |
 | [](#tips) Beperkingen en  [tips](#limitations) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
@@ -143,9 +143,9 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` in de bar van het Onderzoek toe. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
-### Dynamische media-elementen {#dmassets}
+### Dynamic Media-elementen {#dmassets}
 
-U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media > Sets]** te selecteren in het **[!UICONTROL Filters]**-deelvenster. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
+U kunt filteren voor Dynamic Media-afbeeldingen door **[!UICONTROL Dynamic Media > Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
 ### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
 
@@ -209,7 +209,7 @@ De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van he
 
 Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` op het gebied van Onderzoek toe. U kunt ook **[!UICONTROL Filters]** gebruiken om alle gelicentieerde of niet gelicentieerde activa te vinden of een specifiek middel te zoeken gebruikend het dossieraantal van Adobe Stock. Zie [Adobe Stock-afbeeldingen beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Dynamische media-elementen zoeken {#dynamicmedia}
+### Zoeken in Dynamic Media-middelen {#dynamicmedia}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
