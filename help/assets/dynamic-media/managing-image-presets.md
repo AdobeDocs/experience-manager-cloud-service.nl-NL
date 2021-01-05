@@ -374,9 +374,9 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li>Selecteer <strong> Onscherp masker</strong> om een verscherpingsfiltereffect op het definitieve gedownsampte beeld te verfijnen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li>
     </ul> <p>In <strong>Onscherp masker</strong> hebt u de volgende opties:</p>
     <ul>
-     <li><strong>Hoeveelheid</strong>  - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
-     <li><strong>Straal</strong>  - Hiermee bepaalt u het aantal pixels rond de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een echt getal in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt; Met een hoge waarde wordt een bredere reeks pixels verscherpt. De juiste waarde is afhankelijk van de grootte van de afbeelding.</li>
-     <li><strong>Drempel</strong>  - Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze worden beschouwd als randpixels en worden verscherpt. Experimenteer met gehele getallen tussen 2 en 20 om ruis te voorkomen. </li>
+     <li><strong>Hoeveelheid</strong>  - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
+     <li><strong>Straal</strong>  - Hiermee bepaalt u het aantal pixels rond de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een getal in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding.</li>
+     <li><strong>Drempel</strong>  - Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met gehele getallen tussen 2 en 20 om ruis te voorkomen. </li>
      <li><strong>Toepassen op</strong>  - Hiermee bepaalt u of de verscherping wordt toegepast op elke kleur of helderheid.</li>
     </ul>
     <div>
@@ -385,32 +385,32 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </div> </td>
   </tr>
   <tr>
-   <td><strong>Modus Nieuwe pixels berekenen</strong></td>
-   <td>Selecteer een <strong>optie voor het berekenen van nieuwe pixels in de modus</strong>. Met deze opties wordt de afbeelding verscherpt wanneer deze wordt gedownsampled:
+   <td><strong>Modus voor nieuwe pixels</strong></td>
+   <td>Selecteer een optie <strong>Nieuwe pixels berekenen in modus</strong>. Met deze opties verscherpt u de afbeelding wanneer deze wordt gedownsampled:
     <ul>
-     <li><strong>Lineair</strong>  - De snelste methode voor het berekenen van nieuwe beeldpixels. Sommige aliasingartefacten zijn merkbaar.</li>
-     <li><strong>Bi-Cubic</strong> : hiermee verhoogt u het CPU-gebruik, maar levert u scherpere afbeeldingen op met minder merkbare aliasingartefacten.</li>
-     <li><strong>Sharp2</strong>  - kan enigszins scherpere resultaten produceren dan bi-Cubic, maar tegen een nog hogere kosten van cpu.</li>
+     <li><strong>Bi-Lineair</strong> : de snelste methode voor het berekenen van nieuwe pixels. Sommige aliasingartefacten zijn waarneembaar.</li>
+     <li><strong>Bi-Cubic</strong> : verhoogt het CPU-gebruik, maar geeft scherpere afbeeldingen met minder merkbare aliasing artefacten.</li>
+     <li><strong>Sharp2</strong>  - kan enigszins scherpere resultaten dan bi-Cubic, maar bij een nog hogere cpu kosten veroorzaken.</li>
      <li><strong>Bi-Sharp</strong>  - Hiermee selecteert u Photoshop standaardresampler voor het verkleinen van de afbeeldingsgrootte. Dit wordt  <strong>bicubische </strong> scherper in Adobe Photoshop genoemd.</li>
      <li><strong>Elke </strong> kleur en  <strong>helderheid</strong> : elke methode kan zijn gebaseerd op kleur of helderheid. Standaard is <strong>Elke kleur</strong> geselecteerd.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Afdrukresolutie</strong></td>
-   <td>Selecteer een resolutie voor het afdrukken van deze afbeelding. De standaardinstelling is 72 pixels.</td>
+   <td>Selecteer een resolutie voor het afdrukken van deze afbeelding. 72 pixels is de standaardinstelling.</td>
   </tr>
   <tr>
    <td><strong>Afbeelding wijzigen</strong></td>
-   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talloze geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Image Modifiers</strong>. Deze parameters worden gedefinieerd in de opdrachtverwijzing <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">Image Server Protocol</a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p>
+   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talrijke geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Afbeeldingsmodifiers</strong>. Deze parameters worden bepaald in <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">de bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p>
     <ul>
-     <li>Basisopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
-     <li>Lokalisatieopdrachten: <code>locale=</code> en <code>req=xlate</code></li>
+     <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
+     <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li>
      <li><code>req=set</code> is niet beschikbaar voor algemeen gebruik.</li>
      <li><code>req=mbrset</code></li>
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Non-core Dynamic Media services: SVG, Afbeeldingen renderen en Web-to-Print</li>
+     <li>Niet-kernservices van Dynamic Media: SVG, Afbeelding renderen en Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -418,13 +418,13 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ### Opties voor voorinstellingen afbeelding definiëren met afbeeldingswijzigingstoetsen {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook opties voor afbeeldingsopties definiëren waarmee u meer opties kunt kiezen bij het definiëren van voorinstellingen voor afbeeldingen. Renderen van afbeeldingen is afhankelijk van de Dynamic Media Image Rendering API en wordt gedetailleerd gedefinieerd in de [HTTP Protocol Reference](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook opties voor het wijzigen van afbeeldingen definiëren voor het definiëren van voorinstellingen voor afbeeldingen. Rendering van afbeeldingen is afhankelijk van de Dynamic Media Image Rendering API en wordt gedetailleerd gedefinieerd in de [HTTP Protocol Reference](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
 >[!NOTE]
 >
->Sommige afbeeldingsopties [kunnen niet worden gebruikt in AEM](#advanced-tab-options).
+>Sommige afbeeldingsmodifiers [kunnen niet worden gebruikt in AEM](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Hiermee keert u elke kleurcomponent om voor een negatief afbeeldingseffect.
 
@@ -450,7 +450,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - Hiermee wordt de helderheid verlaagd of vermeerderd.
+* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - Hiermee wordt de helderheid verminderd of vermeerderd.
 
    ```xml
    &op_brightness=58
@@ -458,7 +458,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [dekkend](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Hiermee past u de dekking van de afbeelding aan. Hiermee kunt u de dekking van de voorgrond verlagen.
+* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Hiermee past u de dekking van de afbeelding aan. Hiermee kunt u de dekking van de voorgrond verlagen.
 
    ```xml
    opac=29
@@ -466,20 +466,20 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
+### Voorinstellingen {#modifying-image-presets} voor afbeeldingen bewerken
 
 1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Assets > Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Selecteer een voorinstelling en klik op **[!UICONTROL Edit]**. Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
-1. Breng de wijzigingen aan en klik op **[!UICONTROL Save]** om uw wijzigingen op te slaan of **[!UICONTROL Cancel]** om uw wijzigingen te annuleren.
+1. Breng wijzigingen aan en klik op **[!UICONTROL Save]** om uw wijzigingen op te slaan of op **[!UICONTROL Cancel]** om uw wijzigingen te annuleren.
 
-### Voorinstellingen voor afbeeldingen publiceren {#publishing-image-presets}
+### Voorinstellingen {#publishing-image-presets} voor afbeelding publiceren
 
 Voorinstellingen voor afbeeldingen worden automatisch voor u gepubliceerd.
 
 ### Voorinstellingen {#deleting-image-presets} verwijderen
 
-1. Tik in AEM op het AEM om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Gereedschappen of klik op dit pictogram om naar **[!UICONTROL Assets > Image Presets]** te gaan.
-1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat u deze wilt verwijderen. Tik op **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
+1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Extra of navigeer naar **[!UICONTROL Assets > Image Presets]**.
+1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
