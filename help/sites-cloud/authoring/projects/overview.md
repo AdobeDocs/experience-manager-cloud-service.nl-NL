@@ -66,7 +66,7 @@ In de **Elementen** tegel, kunt u alle activa verzamelen die u voor een bepaald 
 
 ![Elementen](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamische media beschikt.
+U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamic Media beschikt.
 
 ![Afbeeldingsset](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
