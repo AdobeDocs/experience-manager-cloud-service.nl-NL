@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets as a [!DNL Cloud Service] biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun Digital Asset Management- en Dynamic Media-bewerkingen met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
+Adobe Experience Manager Assets as a [!DNL Cloud Service] biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
 
 Gelijktijdige inname van veel elementen of complexe elementen is een resource-intensieve taak voor een AEM Author-instantie. De primaire instantie verbruikt aanzienlijke CPU-, geheugen- en I/O-bronnen wanneer middelen worden toegevoegd, verwerkt of zelfs gemigreerd. Dergelijke prestatieproblemen zijn van invloed op het ontwerpen en bladeren door eindgebruikers.
 
