@@ -91,7 +91,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
+   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 >[!NOTE]
 >
