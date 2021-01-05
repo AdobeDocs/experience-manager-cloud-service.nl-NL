@@ -580,7 +580,7 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
