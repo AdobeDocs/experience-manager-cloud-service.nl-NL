@@ -45,7 +45,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [Overzicht documentviewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM als Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [De CDN-cache ongeldig maken door middel van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM als Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [De CDN-cache ongeldig maken met behulp van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, bladeren en zoekervaring in [!DNL Assets].
 
