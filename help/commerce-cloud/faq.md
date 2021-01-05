@@ -23,9 +23,9 @@ AEM kan rechtstreeks verbinding maken met Magento zonder I/O-runtimelaag. Als er
 
 Het I/O Runtime platform kan ook worden gebruikt om handelsdiensten uit te breiden of aan te passen. Voor dit gebruik-gevallen zou u het I/O Runtime eindpunt roepen dat dan een aangepaste implementatie van de respectieve dienst zal ontvangen. Gebruiksscenario&#39;s voor integratie en extensie kunnen worden gecombineerd.
 
-## 3. Kunnen de activa van het Product (beelden) van AEM via Magento worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen middelen van Dynamische Media worden verbruikt?
+## 3. Kunnen de activa van het Product (beelden) van AEM via Magento worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is momenteel geen AEM Assets - Magento-integratie. Als tussenoplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de elementen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en werkt op dezelfde manier.
+Er is momenteel geen AEM Assets - Magento-integratie. Als tussenoplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de elementen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
 
 ## 4. Maakt het uit waar Magento wordt ingezet? (Op prem of in de cloud)
 
