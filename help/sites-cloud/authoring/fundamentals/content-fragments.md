@@ -46,7 +46,7 @@ Met de inhoudsfragmenten kunt u:
    * Kan versioning/workflow gebruiken.
    * Kan inhoudsfragment delen.
    * Kan vertalingen centraal beheren.
-* **Producenten en reismanagers**
+* **Producenten en journalisten**
    * Maak een keuze uit vooraf gedefinieerde fragmenten en variaties bij het ontwerpen in AEM.
    * Kan erop vertrouwen dat het fragment en de bijbehorende inhoud altijd up-to-date zijn terwijl kopieerschrijvers en -creatieven hun updates in centraal beheerde fragmenten en elementen maken.
    * Kan voor relevantie vertrouwen op gekoppelde media-inhoud die wordt verwerkt.
