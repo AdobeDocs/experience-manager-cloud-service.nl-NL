@@ -1,6 +1,6 @@
 ---
-title: Dynamische profielen van Media-afbeeldingen en videoprofielen
-description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op dynamische media-videoelementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op dynamische media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
+title: Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen
+description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op Dynamic Media-video-elementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op Dynamic Media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
 translation-type: tm+mt
 source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
@@ -10,20 +10,20 @@ ht-degree: 2%
 ---
 
 
-# Informatie over dynamische profielen van mediagelandbeelden en videoprofielen{#about-dm-image-video-profiles}
+# Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen{#about-dm-image-video-profiles}
 
-Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op dynamische media-videoelementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op dynamische media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
+Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op Dynamic Media-video-elementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op Dynamic Media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
 
-In Dynamische media kunt u twee typen profielen maken, die in detail worden besproken op de volgende koppelingen:
+In Dynamic Media kunt u twee typen profielen maken, die in detail worden besproken op de volgende koppelingen:
 
-* [Dynamische afbeeldingsprofielen van media](/help/assets/dynamic-media/image-profiles.md)
-* [Dynamische mediavideoprofielen](/help/assets/dynamic-media/video-profiles.md)
+* [Dynamic Media-afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media-videoprofielen](/help/assets/dynamic-media/video-profiles.md)
 
 Zie ook [Metagegevensprofielen](/help/assets/metadata-profiles.md).
 
-U moet beheerdersrechten hebben om dynamische profielen voor mediageluurafbeeldingen of dynamische profielen voor mediagelocaties te maken, bewerken en verwijderen.
+U moet beheerdersrechten hebben om Dynamic Media Image Profiles of Dynamic Media Video Profiles te maken, te bewerken en te verwijderen.
 
-Nadat u een afbeeldingsprofiel of videoprofiel hebt gemaakt, wijst u dit profiel toe aan een of meer mappen die u gebruikt als bestemming voor nieuw geüploade dynamische media-elementen.
+Nadat u een afbeeldingsprofiel of videoprofiel hebt gemaakt, wijst u dit profiel toe aan een of meer mappen die u gebruikt als bestemming voor nieuw geüploade Dynamic Media-elementen.
 
 Zie ook [Aanbevolen procedures voor het ordenen van uw digitale elementen voor het gebruik van afbeeldingsprofielen of videoprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -33,23 +33,23 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale elementen voor h
 >
 >Hetzelfde geldt ook wanneer u elementen verplaatst tussen twee mappen waaraan hetzelfde profiel is toegewezen.
 
-## Dynamische media-elementen opnieuw verwerken in een map {#reprocessing-assets}
+## Dynamic Media-elementen in een map {#reprocessing-assets} opnieuw verwerken
 
-U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch Profiel van het Beeld van Media of een Dynamisch Profiel van Media Video heeft dat u later veranderde.
+U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd.
 
-Stel dat u een dynamisch mediaafbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu hoeft u de elementen niet meer opnieuw naar de map te selecteren en te uploaden, maar gewoon de *Scene7 uit te voeren: Elementen opnieuw verwerken* workflow.
+Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu hoeft u de elementen niet meer opnieuw naar de map te selecteren en te uploaden, maar gewoon de *Scene7 uit te voeren: Elementen opnieuw verwerken* workflow.
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen afbeeldingsprofiel of videoprofiel hebt bewerkt of als u al een afbeeldingsprofiel of videoprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met elementen op elk gewenst moment nog steeds uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Elementen opnieuw verwerken_ in een map, elementen worden gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op AEM. Als de partij erg groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Elementen opnieuw verwerken_ in een map, middelen worden gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op AEM. Als de partij erg groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
 
 Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjusting-load).
 
 >[!NOTE]
 >
->Als u een bulkmigratie van activa van Dynamic Media Classic aan Experience Manager uitvoert, moet u de de replicatieagent van de Migratie op de Dynamische server van Media toelaten. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
+>Als u een massale migratie van middelen van Dynamic Media Classic aan Experience Manager uitvoert, moet u de de replicatieagent van de Migratie op de server van Dynamic Media toelaten. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
 >
->De migratiepublicatieagent moet zijn uitgeschakeld op de Dynamic Media-server, zodat de workflow voor opnieuw verwerken naar behoren werkt.
+>De Migratie-publicatieagent moet zijn uitgeschakeld op de Dynamic Media-server, zodat de workflow voor opnieuw verwerken naar behoren functioneert.
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -57,8 +57,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Dynamische media-elementen in een map** opnieuw verwerken:
-1. Navigeer in Adobe Experience Manager vanaf de pagina Middelen naar een map met dynamische media-elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de **Scene7 wilt toepassen: Asset** opnieuw verwerken,
+**Dynamic Media-elementen in een map** opnieuw verwerken:
+1. Navigeer in Adobe Experience Manager vanaf de elementenpagina naar een map met Dynamic Media-elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de Scene7 **wilt toepassen: Asset** opnieuw verwerken,
 
    Mappen waaraan al een afbeeldingsprofiel of videoprofiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam in de Kaartweergave weer te geven.
 
@@ -105,7 +105,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Selecteer **[!UICONTROL Handler Advance]** als uw manager aan de volgende stap zal verdergaan.
    * Voer in het veld **[!UICONTROL Timeout]** de time-out van het externe proces (seconden) in.
    * Voer in het veld **[!UICONTROL Period]** een pollinginterval (seconden) in om te testen of het externe proces is voltooid.
-   * Voer in **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
+   * Voer in **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor batchverwerking van een Dynamic Media-server.
    * Selecteer **[!UICONTROL Advance on timeout]** als u wilt vooruitgaan wanneer de onderbreking wordt bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
    ![Eigenschappen, dialoogvenster](/help/assets/dynamic-media/assets/reprocess-assets3.png)
