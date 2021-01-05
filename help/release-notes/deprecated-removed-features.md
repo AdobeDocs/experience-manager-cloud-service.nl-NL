@@ -32,7 +32,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 | Assets | `DAM Asset Update` werkwijze voor het verwerken van opgenomen afbeeldingen. | Bij het opnemen van bedrijfsmiddelen worden nu [assetmicroservices](/help/assets/asset-microservices-overview.md) gebruikt. |
 | Activa | Elementen rechtstreeks uploaden naar AEM. Zie [API&#39;s voor het uploaden van afgekeurde elementen](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Gebruik [Directe binaire upload](/help/assets/add-assets.md). Voor technische details, zie [directe upload APIs](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | Activa | [Bepaalde workflowstepsin-](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)   `DAM Asset Update` workflowworkflows worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s zoals ImageMagick. | [De ](/help/assets/asset-microservices-overview.md) microservices van bedrijfsmiddelen bieden een vervanging voor veel workflows. Voor aangepaste verwerking gebruikt u [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| Activa | MPEG-transcodering van video&#39;s. | Gebruik [Asset microservices](/help/assets/asset-microservices-overview.md) voor het genereren van miniaturen in MPEG. Gebruik [Dynamische media](/help/assets/manage-video-assets.md) voor MPEG-transcodering. |
+| Activa | MPEG-transcodering van video&#39;s. | Gebruik [Asset microservices](/help/assets/asset-microservices-overview.md) voor het genereren van miniaturen in MPEG. Gebruik [Dynamic Media](/help/assets/manage-video-assets.md) voor MPEG-transcodering. |
 
 ## Verwijderde functies {#removed-features}
 
