@@ -82,7 +82,7 @@ Een AEM-programma is de container die het volgende bevat:
 |  Programma-element |  Getal |
 |--- |--- |
 | Code-repository (Git) |  1 |
-| Basisinstallatiekopie (Sites of Assets) |  1 |
+| Basisinstallatiekopie (Sites of Assets) |  3 |
 | Fase- en productieomgevingset (1:1) | 0 of 1 |
 | Niet-productieomgevingen (ontwikkeling of demonstratie) | 0 tot en met N |
 | Pijplijn voor elke omgeving | 0 of 1 |
