@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen procedures voor het ordenen van uw digitale elementen voor het gebruik van dynamische mediabeeldprofielen of videoprofielen
-description: Tips en tips en tips voor het benoemen, organiseren en beheren van dynamische mediabestanden voor afbeeldingen en video-elementen.
+title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van Dynamic Media Image Profiles of Video Profiles
+description: Tips en tips en tips voor het benoemen, organiseren en beheren van Dynamic Media-bestanden met afbeeldings- en videobestanden.
 translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van afbeeldingsprofielen of videoprofielen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Een belangrijk concept met betrekking tot het gebruik van dynamische profielen van het Beeld van Media of Videoprofielen is dat zij aan omslagen worden toegewezen. Binnen een profiel bevinden zich instellingen voor een afbeelding of video. Met deze instellingen wordt de inhoud van een map samen met een van de submappen verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door het profiel worden verwerkt.
+Een belangrijk concept voor het gebruik van Dynamic Media-afbeeldingsprofielen of videoprofielen is dat deze aan mappen worden toegewezen. Binnen een profiel bevinden zich instellingen voor een afbeelding of video. Met deze instellingen wordt de inhoud van een map samen met een van de submappen verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door het profiel worden verwerkt.
 
 Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de verzameling van digitale elementen en ervoor zorgen dat de juiste bestanden worden verwerkt door het juiste profiel.
 
-Zie [Informatie over dynamisch mediabeeldprofiel en videoprofielen](about-image-video-profiles.md).
+Zie [Informatie over Dynamic Media-afbeeldingsprofiel en videoprofielen](about-image-video-profiles.md).
 
 Hier volgt een overzicht van tips voor het organiseren van digitale elementbestanden.
 
