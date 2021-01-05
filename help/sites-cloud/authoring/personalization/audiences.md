@@ -70,7 +70,7 @@ Een Adobe Target-publiek maken:
    ![Doelgroep maken](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
 1. Selecteer in het dialoogvenster **Adobe Target Configuration** de doelconfiguratie en tik op **OK** of klik op &lt;a2/>OK.
-1. Tik of klik in het gebied Rule#1 op het kenmerktype en voer in de velden die beschikbaar zijn kenmerkgegevens in. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
+1. Tik of klik in het gebied Rule#1 op het kenmerktype en voer in de velden die beschikbaar zijn kenmerkgegevens in. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en hun opties](#attributes-and-their-options) voor informatie over alle kenmerken.
 1. Klik op **Regel toevoegen** om nog een regel toe te voegen. Voer zoveel regels in als nodig is. De regels worden gecombineerd met de booleaanse operator AND, wat betekent dat de doelgroep aan alle vereisten van elke regel moet voldoen om voor een activiteit in aanmerking te komen.
 1. Tik of klik op **Volgende**.
 1. Voer een naam voor het publiek in en tik of klik op **Opslaan**.
