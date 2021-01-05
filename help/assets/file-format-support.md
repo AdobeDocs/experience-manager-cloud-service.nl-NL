@@ -159,7 +159,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | EPUB | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
-| TTF | - | ✓ | - | ✓ | ✓ |
+| RTF | - | ✓ | - | ✓ | ✓ |
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
