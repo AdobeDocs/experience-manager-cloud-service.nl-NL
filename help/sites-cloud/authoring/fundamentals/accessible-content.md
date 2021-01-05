@@ -798,7 +798,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WC
 
 Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud van een webpagina snel identificeren zonder de pagina volledig te lezen. Dit is vooral handig wanneer meerdere webpagina&#39;s worden geopend op de tabbladen van de browser, omdat de paginatitel op het tabblad wordt weergegeven en deze daarom snel kan worden gevonden.
 
-#### Hoe te om te ontmoeten - Getitelde pagina (2.4.2) {#how-to-meet-page-titled}
+#### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
 
 Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel een adequate beschrijving geeft van de inhoud en het doel van de pagina, met name van eventuele unieke aspecten, zodat bezoekers snel kunnen zien of de inhoud al dan niet relevant is voor hun behoeften.
 
