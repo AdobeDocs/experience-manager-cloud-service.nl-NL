@@ -1,6 +1,6 @@
 ---
 title: Panoramische afbeeldingen
-description: Leer hoe u met panoramische afbeeldingen werkt in Dynamic Media.
+description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 workflow-type: tm+mt
