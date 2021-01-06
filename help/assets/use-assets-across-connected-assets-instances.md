@@ -3,9 +3,9 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2601'
+source-wordcount: '2617'
 ht-degree: 26%
 
 ---
@@ -105,6 +105,10 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
    >Alle uitvoeringen die beschikbaar zijn op de externe implementatie worden opgehaald, wanneer auteurs middelen ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. De [!UICONTROL DAM Update Asset]-workflow wordt geactiveerd en er worden meer uitvoeringen gemaakt. Deze uitvoeringen zijn alleen beschikbaar bij de lokale [!DNL Sites]-implementatie en niet bij de externe DAM-implementatie.
 
 1. Voeg de [!DNL Sites]-implementatie toe als een toegestane oorsprong in de CORS-configuratie bij de [!DNL Assets]-implementatie. Zie [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) begrijpen voor meer informatie.
+
+U kunt de connectiviteit tussen geconfigureerde [!DNL Sites]-implementaties en [!DNL Assets]-implementatie controleren.
+
+![Verbindingstest van geconfigureerde Connected Assets  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
