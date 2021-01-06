@@ -53,7 +53,6 @@ Voer de volgende taken uit om met Doel te integreren:
 >
 >* 3.x is geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
 
 
@@ -86,7 +85,6 @@ Voor de integratie van AEM als Cloud Service met Adobe Target is kennis vereist 
 >* 2.000 ervaringen
 >* 50 metriek
 >* 50 rapporteringssegmenten
-
 >
 
 

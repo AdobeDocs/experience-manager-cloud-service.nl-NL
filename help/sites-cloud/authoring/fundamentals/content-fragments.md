@@ -24,10 +24,8 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 >
 >* **Inhoudsfragmentaties** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **Ervaring met** fragmentaties is volledig opgemaakt, waardoor fragmenten van een webpagina worden opgemaakt.
-
 >
->
-De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
+>De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 
 >[!CAUTION]
 >
@@ -114,7 +112,7 @@ U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **B
 >
 >Zoals altijd heeft het bewerken van de fragmentbron invloed op alle pagina&#39;s die naar dat inhoudsfragment verwijzen.
 
-### Tussenliggende inhoud {#adding-in-between-content} toevoegen
+### Tussenliggende inhoudtoevoegen {#adding-in-between-content}
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een tijdelijke aanduiding **Componenten hier slepen** tussen elke HTML-alinea (en boven/onder) van het fragment.
 
@@ -146,12 +144,11 @@ Voor tussenliggende inhoud kunt u:
 >
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.
 >
->  
-Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
+>  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
 
 
-### Gekoppelde inhoud {#using-associated-content} gebruiken
+### Gekoppelde inhoudgebruiken {#using-associated-content}
 
 Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale bron van inhoud voor [tussen inhoud](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
@@ -182,7 +179,7 @@ Voor een afbeelding kunt u bijvoorbeeld
 
 Andere wijzigingen, zoals verplaatsen, kopiëren en verwijderen, moeten worden aangebracht in de fragmenteditor.
 
-### {#publishing} publiceren
+### publiceren{#publishing}
 
 Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s kunnen worden gebruikt:
 

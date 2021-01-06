@@ -149,7 +149,7 @@ U kunt dan &quot;haken&quot;in auteursJS door uw cliëntbibliotheken aan een uit
 
 AEM beschikt over verschillende gereedschappen voor foutopsporing en het testen van clientbibliotheekmappen.
 
-### Clientbibliotheken {#discover-client-libraries} detecteren
+### Clientbibliothekendetecteren {#discover-client-libraries}
 
 De component `/libs/cq/granite/components/dumplibs/dumplibs` genereert een pagina met informatie over alle clientbibliotheekmappen op het systeem. De `/libs/granite/ui/content/dumplibs` knoop heeft de component als middeltype. Als u de pagina wilt openen, gebruikt u de volgende URL (waarbij u de host en poort naar wens wijzigt):
 
@@ -220,7 +220,7 @@ Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren d
 * **type:** String[]
 * **Waarde:** de waarde van de eigenschap category van het  `cq:ClientLibraryFolder` knooppunt dat moet worden ingesloten.
 
-#### Insluiten gebruiken om verzoeken {#using-embedding-to-minimize-requests} te minimaliseren
+#### Insluiten gebruiken om verzoekente minimaliseren {#using-embedding-to-minimize-requests}
 
 In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatieexemplaar wordt gegenereerd voor een standaardpagina, een relatief groot aantal `<script>`-elementen bevat.
 
@@ -273,7 +273,7 @@ Wanneer u het bestand `publicmain.css` opent, wordt de volgende code weergegeven
 1. Bekijk de paginabron wanneer de pagina wordt geladen.
 1. Klik op de koppeling die wordt opgegeven als de href voor het koppelingselement om het bestand te openen en de broncode weer te geven.
 
-### Voorprocessors {#using-preprocessors} gebruiken
+### Voorprocessorsgebruiken {#using-preprocessors}
 
 AEM biedt instelbare preprocessoren en meegeleverde pakketten met ondersteuning voor [YUI-compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript en [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) voor JavaScript waarbij YUI is ingesteld als AEM standaardpreprocessor.
 
@@ -320,7 +320,7 @@ cssProcessor: ["default:none", "min:yui"]
 jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
 ```
 
-##### Typescript aan preprocess en dan GCC om {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate} te kleven en te verduisteren
+##### Typescript aan preprocess en dan GCC omte kleven en te verduisteren {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
 
 ```javascript
 jsProcessor: [

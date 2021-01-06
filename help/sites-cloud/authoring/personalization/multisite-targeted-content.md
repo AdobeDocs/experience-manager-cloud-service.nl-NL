@@ -52,7 +52,6 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 >
 >* Als u rollouts of live kopieën gebruikt, is een MSM-licentie vereist.
 >* Wanneer u synchronisatie naar Adobe Target gebruikt, is een Adobe Target-licentie vereist.
-
 >
 
 
@@ -226,7 +225,7 @@ Een site koppelen aan een gebied:
 
    ![Referentie gebied](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
-## Live kopie losmaken of overerving van doelinhoud {#detaching-live-copy-or-suspending-inheritance-of-targeted-content} opschorten
+## Live kopie losmaken of overerving van doelinhoudopschorten {#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
 
 Mogelijk wilt u de overerving van de doelinhoud opschorten of loskoppelen. Het onderbreken of losmaken van de live kopie gebeurt per activiteit. Bijvoorbeeld, kunt u ervaringen in uw activiteit willen wijzigen, maar als die activiteit nog aan geërfte exemplaar verbonden is, kunt u niet de ervaring of om het even welke eigenschappen van de activiteit wijzigen.
 
@@ -240,7 +239,6 @@ Een activiteit die overerft van een andere site wordt groen gemarkeerd naast de 
 >
 >* U kunt actieve kopieën in een activiteit alleen opschorten of loskoppelen.
 >* U hoeft live kopieën niet op te schorten of los te koppelen om een overgeërfde activiteit uit te breiden. U kunt **nieuwe** lokale ervaringen en aanbiedingen voor die activiteit altijd tot stand brengen. Als u een bestaande activiteit wilt wijzigen, dan moet u overerving opschorten.
-
 >
 
 
@@ -262,7 +260,7 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 
    ![Opgeschorte livekopie](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
-### Overerving {#breaking-inheritance} breken
+### Overervingbreken {#breaking-inheritance}
 
 Overerving van doelinhoud in een activiteit onderbreken:
 
@@ -273,7 +271,7 @@ Overerving van doelinhoud in een activiteit onderbreken:
 
    ![Lokale activiteit](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
-## Overerving van doelinhoud {#restoring-inheritance-of-targeted-content} herstellen
+## Overerving van doelinhoudherstellen {#restoring-inheritance-of-targeted-content}
 
 Als u de overerving van de doelinhoud van een activiteit hebt opgeschort, kunt u deze op elk gewenst moment herstellen. Als u de live kopie echter hebt losgekoppeld, kunt u de overerving niet herstellen.
 
@@ -287,7 +285,7 @@ Om erfenis van gerichte inhoud in een activiteit te herstellen:
 
 1. Tik of klik op **Hervatten** om te bevestigen dat u overerving van live kopiëren wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
 
-## Gebieden {#deleting-areas} verwijderen
+## Gebiedenverwijderen {#deleting-areas}
 
 Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. AEM waarschuwt u alvorens u een gebied kunt schrappen. Als u een gebied verwijdert waaraan een site is gekoppeld, wordt de toewijzing voor dit merk automatisch opnieuw toegewezen aan het master gebied.
 

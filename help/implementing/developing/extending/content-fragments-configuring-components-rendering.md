@@ -26,17 +26,14 @@ U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 >[!CAUTION]
 >
 >* **Als u de hieronder beschreven  [geavanceerde](#definition-of-advanced-services-that-need-configuration)** services niet nodig hebt, kunt u deze configuratie negeren.
-   >
-   >
-* **Wanneer u of de uit-van-de-doos component(en)** uitbreidt gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
-   >
-   >
-* **U kunt een geheel nieuwe component schrijven die alleen de API voor inhoudsfragmenten gebruikt, zonder geavanceerde services**. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
 >
+>* **Wanneer u of de uit-van-de-doos component(en)** uitbreidt gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
 >
-Daarom wordt aanbevolen de Core Components te gebruiken.
+>* **U kunt een geheel nieuwe component schrijven die alleen de API voor inhoudsfragmenten gebruikt, zonder geavanceerde services**. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
+>
+>Daarom wordt aanbevolen de Core Components te gebruiken.
 
-## Definitie van de Geavanceerde Diensten die Configuratie {#definition-of-advanced-services-that-need-configuration} vereisen
+## Definitie van de Geavanceerde Diensten die Configuratievereisen {#definition-of-advanced-services-that-need-configuration}
 
 De diensten die de registratie van een component vereisen zijn:
 

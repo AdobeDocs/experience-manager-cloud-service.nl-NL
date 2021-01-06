@@ -20,7 +20,7 @@ In de **Projecten** console, hebt u toegang tot en voert actie op uw projecten:
 
 In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud van de tegel weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
 
-## Een project {#creating-a-project} maken
+## Een projectmaken {#creating-a-project}
 
 Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een project creeert:
 
@@ -59,7 +59,7 @@ Bronnen aan uw project koppelen:
 
 1. Tik/klik **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
-### Een project- of bronnenkoppeling {#deleting-a-project-or-resource-link} verwijderen
+### Een project- of bronnenkoppelingverwijderen {#deleting-a-project-or-resource-link}
 
 De zelfde methode wordt gebruikt om een project van de console of een verbonden middel van uw project te schrappen:
 
@@ -105,7 +105,7 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
    ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
-## Projectstatistieken {#viewing-project-statistics} weergeven
+## Projectstatistiekenweergeven {#viewing-project-statistics}
 
 Om projectstatistieken, in **Projecten** console te bekijken, klik **toon de Mening van Statistieken**. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **Statistische weergave tonen** opnieuw om naar de **Projecten** console te gaan.
 
@@ -127,7 +127,7 @@ Als het pictogram een x naast heeft, toont het de inactieve projecten.
 
 ![Knop Inactieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## Projecten inactief of actief {#making-projects-inactive-or-active} maken
+## Projecten inactief of actiefmaken {#making-projects-inactive-or-active}
 
 U kunt een project willen inactief maken als u het hebt voltooid maar u wilt nog de informatie over het project houden.
 
@@ -136,7 +136,8 @@ Een project inactief (of actief) maken:
 1. In **Projecten** console, open uw project en vind dan de **Tile van de Informatie van het Project**.
 
    >[!NOTE]
-   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
+   >
+   >Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
 
 1. Tik/klik **Bewerken**.
 1. Wijzig de kiezer van **Active** in **Inactief** (of vice versa).

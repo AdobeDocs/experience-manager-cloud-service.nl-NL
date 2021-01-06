@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Plug-ins {#configure-the-rich-text-editor-plug-ins} van de Rich Text Editor configureren
+# Plug-insvan de Rich Text Editor configureren {#configure-the-rich-text-editor-plug-ins}
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt het eigenschapbezit vormen om, één of meerdere eigenschappen van RTE toe te laten of onbruikbaar te maken. Dit artikel beschrijft hoe te om de stop-ins specifiek te vormen RTE.
 
@@ -22,7 +22,7 @@ Voor details over de andere configuraties RTE, zie [vormen Rich Text Editor](/he
 >
 >Als u met CRXDE Lite werkt, wordt aangeraden de wijzigingen regelmatig op te slaan met de optie [!UICONTROL Save All].
 
-## Een insteekmodule activeren en de eigenschap features {#activateplugin} configureren
+## Een insteekmodule activeren en de eigenschap featuresconfigureren {#activateplugin}
 
 Voer de volgende stappen uit om een plug-in te activeren. Sommige stappen zijn alleen nodig wanneer u een insteekmodule voor het eerst configureert, omdat de bijbehorende knooppunten niet bestaan.
 
@@ -74,7 +74,7 @@ Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op het
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Met dit gedrag kan de auteur de tekst controleren die moet worden vervangen. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
-## De plakmodi {#pastemodes} configureren
+## De plakmodiconfigureren {#pastemodes}
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
@@ -100,7 +100,7 @@ Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 1. Navigeer naar het knooppunt `rtePlugins/edit`. Zie [Een insteekmodule activeren](#activateplugin) als het knooppunt niet bestaat.
 1. Maak de eigenschap `features` op het knooppunt `edit` en voeg een of meer functies toe. Sla alle wijzigingen op.
 
-### Het gedrag van het pictogram Plakken (Ctrl+V) en de sneltoets {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut} configureren
+### Het gedrag van het pictogram Plakken (Ctrl+V) en de sneltoetsconfigureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 U kunt het gedrag van het pictogram **[!UICONTROL Paste (Ctrl+V)]** vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
 
@@ -208,7 +208,7 @@ Voor latere herconfiguraties, bijvoorbeeld om meer stijlen toe te voegen, volg s
 >
 >Stijlen kunnen ook worden gedefinieerd voor [tabellen of tabelcellen](configure-rich-text-editor-plug-ins.md#tablestyles). Deze configuraties vereisen afzonderlijke procedures.
 
-### De vervolgkeuzelijst Stijl {#styleselectorlist} inschakelen
+### De vervolgkeuzelijst Stijlinschakelen {#styleselectorlist}
 
 Hiervoor schakelt u de insteekmodule Stijlen in.
 
@@ -321,7 +321,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 
    ![Stijlblad om Japanse tekstomloopfunctie beschikbaar te maken voor auteurs](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## De alineaopmaak {#paraformats} configureren
+## De alineaopmaakconfigureren {#paraformats}
 
 Om het even welke tekst authored in RTE wordt geplaatst binnen een blokmarkering, het gebrek is `<p>`. Als u de insteekmodule `paraformat` inschakelt, geeft u via een vervolgkeuzelijst aanvullende blokcodes op die aan alinea&#39;s kunnen worden toegewezen. Alineaopmaak bepaalt het alineatype door de juiste bloktag toe te wijzen. De auteur kan deze selecteren en toewijzen met de kiezer Indeling. De voorbeeldbloklabels omvatten onder andere de standaardalinea &lt;p> en koppen &lt;h1>, &lt;h2> enzovoort.
 
@@ -340,7 +340,7 @@ Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er gee
 
 Voor latere herconfiguraties, zeg om meer formaten toe te voegen, volg slechts het relevante deel van de instructies.
 
-### De keuzelijst Indeling {#formatselectorlist} inschakelen
+### De keuzelijst Indelinginschakelen {#formatselectorlist}
 
 Voer de volgende stappen uit om de `paraformat`-plug-in in te schakelen:
 
@@ -393,16 +393,18 @@ Alinea-indelingen kunnen worden geselecteerd door:
    Herhaal de stappen voor elke vereiste indeling.
 
 >[!CAUTION]
-Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>` en `<h3>`) verwijderd. Maak de `<p>`-indeling opnieuw omdat dit de standaardindeling is.
+>
+>Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>` en `<h3>`) verwijderd. Maak de `<p>`-indeling opnieuw omdat dit de standaardindeling is.
 
-## Speciale tekens {#spchar} configureren
+## Speciale tekensconfigureren {#spchar}
 
 Wanneer in een standaard [!DNL Experience Manager]-installatie de `misctools`-plug-in is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
 U kunt RTE vormen om uw selectie van karakters beschikbaar te maken; of door verschillende karakters, of een volledige opeenvolging te bepalen.
 
 >[!CAUTION]
-Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst opnieuw in de selectie.
+>
+>Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst opnieuw in de selectie.
 
 ### Eén teken definiëren {#definesinglechar}
 
@@ -477,10 +479,12 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook worden toegepast op een tabel of op een paar tabelcellen. Dergelijke stijlen zijn beschikbaar voor auteurs in het selectievak Stijl in het dialoogvenster Eigenschappen van cel of Tabeleigenschappen. De stijlen zijn beschikbaar wanneer het uitgeven van een lijst binnen een component van de Tekst (of een derivaat) en niet in de standaardcomponent van de Lijst.
 
 >[!NOTE]
-U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
+>
+>U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
 
 >[!NOTE]
-Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
+>
+>Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table`. Maak de knooppunten als de knooppunten niet bestaan. Zie [Een plug-in activeren](#activateplugin) voor meer informatie.
 1. Maak de eigenschap `features` op het knooppunt `table`:
@@ -490,8 +494,9 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
    * **Waarde** `*`
 
    >[!NOTE]
-   Als u niet alle lijsteigenschappen wilt toelaten kunt u `features` bezit tot stand brengen als:
-   * **Type** `String[]`
+   >
+   >Als u niet alle lijsteigenschappen wilt toelaten kunt u `features` bezit tot stand brengen als:
+   >* **Type** `String[]`
 
    * **Waarde** één of beide van het volgende, naargelang van de behoefte:
       * `table` het bewerken van tabeleigenschappen toestaan; inclusief de stijlen.
@@ -557,7 +562,8 @@ Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de C
 Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
 
 >[!NOTE]
-Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
+>
+>Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
 
 Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 
@@ -565,7 +571,8 @@ Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 * Brits Engels (en_gb)
 
 >[!NOTE]
-De standaardwoordenboeken bevinden zich op `/libs/cq/spellchecker/dictionaries`, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
+>
+>De standaardwoordenboeken bevinden zich op `/libs/cq/spellchecker/dictionaries`, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
 Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
@@ -573,15 +580,17 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 1. Selecteer de gewenste taal en download het ZIP-bestand met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
 
    >[!CAUTION]
-   Alleen woordenboeken in de `MySpell`-indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
+   >
+   >Alleen woordenboeken in de `MySpell`-indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
 
 1. Zoek de .aff- en .dic-bestanden. Bestandsnaam in kleine letters behouden. Bijvoorbeeld `de_de.aff` en `de_de.dic`.
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
-Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+>
+>De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
+>Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
+>Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
 ## De historiegrootte configureren voor het ongedaan maken en opnieuw uitvoeren van handelingen {#undohistory}
 
@@ -596,7 +605,7 @@ Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitv
 
 1. Sla de wijzigingen op.
 
-## De tabgrootte {#tabsize} configureren
+## De tabgrootteconfigureren {#tabsize}
 
 Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd aantal spaties ingevoegd. Dit zijn standaard drie vaste spaties en één spatie.
 
@@ -611,12 +620,13 @@ De tabgrootte definiëren:
 
 1. Sla de wijzigingen op.
 
-## Inspringingsmarge {#indentmargin} instellen
+## Inspringingsmargeinstellen {#indentmargin}
 
 Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspringing definiëren:
 
 >[!NOTE]
-Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst). het heeft geen invloed op de inspringing van feitelijke lijsten.
+>
+>Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst). het heeft geen invloed op de inspringing van feitelijke lijsten.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists`. Maak deze knooppunten als deze niet bestaan. Zie [Een plug-in activeren](#activateplugin) voor meer informatie.
 1. Maak op het knooppunt `lists` de parameter `identSize`:
@@ -625,7 +635,7 @@ Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst).
    * **Type**:  `Long`
    * **Waarde**: aantal pixels dat is vereist voor de inspringingsmarge.
 
-## De hoogte van bewerkbare ruimte {#editablespace} configureren
+## De hoogte van bewerkbare ruimteconfigureren {#editablespace}
 
 U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster van de component wordt weergegeven. De configuratie is slechts van toepassing wanneer het gebruiken van RTE in een dialoog. De hoogte van het dialoogvenster wordt niet gewijzigd door de configuratie.
 
@@ -648,10 +658,11 @@ Wanneer u koppelingen toevoegt in [!DNL Experience Manager], kunt u de CSS-stijl
    * **Type** `nt:unstructured`
 
    >[!NOTE]
-   Het knooppunt `../items/text` heeft de eigenschap:
-   * **Naam** `xtype`
-   * **Type** `String`
-   * **Waarde** `richtext`
+   >
+   >Het knooppunt `../items/text` heeft de eigenschap:
+   >* **Naam** `xtype`
+   >* **Type** `String`
+   >* **Waarde** `richtext`
 
    De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 

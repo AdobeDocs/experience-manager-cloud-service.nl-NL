@@ -31,9 +31,8 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >[!NOTE]
    >
    >* Statische vertoningen worden weergegeven in de bovenste helft van het epaan. Dynamische uitvoeringen worden weergegeven in de onderste helft. Alleen bij dynamische uitvoeringen kunt u de URL gebruiken om de afbeelding weer te geven. De knop **[!UICONTROL URL]** wordt alleen weergegeven als u een dynamische vertoning selecteert. De knop **[!UICONTROL RESS]** wordt alleen weergegeven als u een responsieve voorinstelling voor de afbeelding selecteert.
-      >
-      >
-   * Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >
+   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)

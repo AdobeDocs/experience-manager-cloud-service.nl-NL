@@ -14,7 +14,7 @@ ht-degree: 12%
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
-## Uw site {#managing-your-site} beheren
+## Uw sitebeheren {#managing-your-site}
 
 Met de **Sites**-console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde resource), navigatiepaden en, indien geselecteerd, secundaire sporen (bijvoorbeeld tijdlijn en verwijzingen).
 
@@ -283,7 +283,6 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
 >* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
-
 >
 
 

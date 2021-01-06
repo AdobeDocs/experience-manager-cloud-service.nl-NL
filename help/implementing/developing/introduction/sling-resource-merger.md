@@ -48,12 +48,10 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >Dit komt doordat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw instantie worden toegepast.
 >
 >* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType`.
 >
+>* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType`.
 >
-Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM als Cloud Service aanpassingen onder `/apps` moeten bepalen; Dit komt omdat u niets onder `/libs` moet veranderen.
+>Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM als Cloud Service aanpassingen onder `/apps` moeten bepalen; Dit komt omdat u niets onder `/libs` moet veranderen.
 
 ### Eigenschappen {#properties}
 
@@ -81,7 +79,7 @@ De resourcefusie biedt de volgende eigenschappen:
 
 Deze eigenschappen beïnvloeden hoe de overeenkomstige/originele middelen/eigenschappen (van `/libs`) door de bekleding/de opheffing (vaak in `/apps`) worden gebruikt.
 
-### De structuur {#creating-the-structure} maken
+### De structuurmaken {#creating-the-structure}
 
 Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knooppunt opnieuw maken, met de equivalente structuur, onder het doel (gewoonlijk `/apps`). Bijvoorbeeld:
 
@@ -124,7 +122,7 @@ In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 >
 >Bij gebruik van de samenvoeging van het Verspreide Middel (d.w.z. wanneer het behandelen van de norm, aanraking-toegelaten UI) wordt het niet geadviseerd om de volledige structuur van `/libs` te kopiëren aangezien het in teveel informatie zou resulteren die in `/apps` wordt gehouden. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
 
-### Gevallen {#use-cases} gebruiken
+### Gevallengebruiken {#use-cases}
 
 Deze, samen met standaardfunctionaliteit, laten u toe:
 

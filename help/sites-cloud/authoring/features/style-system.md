@@ -55,7 +55,7 @@ Het volgende diagram illustreert de architectuur van het Systeem van de Stijl.
 
 ![aem-stijl-systeem](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## {#use} gebruiken
+## gebruiken{#use}
 
 Om de eigenschap aan te tonen, zullen wij [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) implementatie van de component [title ](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.
 
@@ -107,7 +107,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 >
 >De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten als [Bibliotheken van de Cliënt ](/help/implementing/developing/introduction/clientlibs.md) worden opgesteld om te werken.
 
-## {#setup} instellen
+## instellen{#setup}
 
 Versie 2 en later van de Componenten van de kern wordt volledig toegelaten om uit het Systeem van de Stijl voordeel te halen en geen extra configuratie te vereisen.
 
@@ -121,6 +121,7 @@ Een component werkt alleen met AEM Stijlsysteem en geeft het stijltabblad weer i
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
+>
 >Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Met de gevormde component, zullen de stijlen die door de paginaauteurs worden gevormd automatisch door AEM op het decoratie element worden opgenomen dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
@@ -135,6 +136,7 @@ Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
+>
 >Dit gebruikt [overlays](/help/implementing/developing/introduction/overlays.md), door middel van [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -156,7 +158,6 @@ Deze eigenschap wordt ingesteld op het knooppunt `cq:Component`. Bijvoorbeeld:
 >1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
 >1. Ten slotte wordt de `cq:htmlTag`/ `cq:tagName` van de component beschouwd als een terugvalwaarde.
-
 >
 
 
