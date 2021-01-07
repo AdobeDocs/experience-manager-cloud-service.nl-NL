@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 4%
@@ -168,7 +168,7 @@ Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen.
 Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst met een Auteur of de Publish dienst in een milieu worden geassocieerd. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toepassen.
 
 >[!NOTE]
->De IP Lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu-dienst toe te passen. Om meer over IP Lijsten van gewenste personen in de Manager van de Wolk te leren navigeer aan [Inleiding aan IP Lijsten van gewenste personen in Kon Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>De IP Lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu-dienst toe te passen. Voor meer informatie over IP-Lijsten van gewenste personen in Cloud Manager navigeert u naar [Inleiding tot IP-Lijsten van gewenste personen in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen toe te passen:
 
