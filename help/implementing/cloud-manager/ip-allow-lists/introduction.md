@@ -1,8 +1,8 @@
 ---
-title: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
-description: Inleiding - IP Lijsten van gewenste personen in de Manager van het Kon
+title: Inleiding - IP-Lijsten van gewenste personen in Cloud Manager
+description: Inleiding - IP-Lijsten van gewenste personen in Cloud Manager
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
