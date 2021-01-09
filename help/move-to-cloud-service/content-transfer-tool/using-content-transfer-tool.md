@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * Als u een *Sandbox Milieu* gebruikt, zorg ervoor dat uw milieu huidig is en aan de recentste versie wordt bevorderd. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
 * Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+
+* Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u zult het nieuwe toegangstoken moeten terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
 
 * Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
 
@@ -162,6 +164,9 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+
+   >[!IMPORTANT]
+   >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud kan worden ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
