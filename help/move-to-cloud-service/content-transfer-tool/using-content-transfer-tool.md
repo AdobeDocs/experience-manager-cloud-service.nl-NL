@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunne
 ### Gedrag van gebruikersinterface {#ui-behavior}
 
 Als gebruiker ziet u de volgende wijzigingen in het gedrag van de Content Transfer-gebruikersinterface:
-
-* De gebruiker maakt een migratieset voor een auteur-URL (Ontwikkeling/Stage/Productie) en voert de extractie en opname uit.
-
-* De gebruiker maakt vervolgens een nieuwe migratieset voor dezelfde auteur-URL en voert de extractie en opname uit voor de nieuwe migratieset. De gebruikersinterface toont dat de opnamestatus van de eerste migratieset verandert in **FAILED** en dat er geen logboeken beschikbaar zijn.
-
-* Dit betekent niet dat de opname voor de eerste migratieset is mislukt. Dit gedrag laat alleen zien dat, wanneer een nieuwe opnametaak wordt gestart, de vorige opnametaak wordt verwijderd. De status van de wijzigingen in de eerste migratieset moet daarom worden genegeerd.
 
 * De pictogrammen in de gebruikersinterface van de Content Transfer-tool kunnen afwijken van de schermafbeeldingen die in deze handleiding worden getoond. Mogelijk worden ze zelfs helemaal niet weergegeven, afhankelijk van de versie van de AEM-broninstantie.
 
