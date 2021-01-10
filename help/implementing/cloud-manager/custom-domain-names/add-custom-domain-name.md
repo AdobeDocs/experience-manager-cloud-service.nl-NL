@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 ## Belangrijke overwegingen {#important-considerations}
 
 * Voordat u een aangepaste domeinnaam kunt toevoegen, moet u een geldig SSL-certificaat met de aangepaste domeinnaam op uw programma installeren. Raadpleeg [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
+
+* De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding verbonden aan die milieu&#39;s is.
 
 * Er kan slechts één domeinnaam tegelijk worden toegevoegd. Domeinen kunnen echter geen jokertekens bevatten. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
 
