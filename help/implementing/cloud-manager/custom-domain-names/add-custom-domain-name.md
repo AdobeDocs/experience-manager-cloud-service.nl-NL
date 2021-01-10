@@ -2,7 +2,7 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Voer de onderstaande stappen uit om een aangepaste domeinnaam toe te voegen van 
 1. Selecteer **Domein SSL Certificaat** van drop-down en selecteer **Doorgaan**.
 
 1. **Het** dialoogvenster Domeinnaam toevoegen wordt weergegeven. Dit zal u aan de Verificatie van de Naam van het Domein voor uw scherm van het Milieu nemen. Raadpleeg [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) voor meer informatie.
-Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen.
+
+   Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen:
 
 1. Klik op **Create**.
 1. Voor CDN-implementatie is een geldig SSL-certificaat en een geslaagde TXT-verificatie vereist. Dit wordt aangegeven door status **Geverifieerd en Gedistribueerd**.
