@@ -3,7 +3,7 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 0%
@@ -68,9 +68,9 @@ Met de standaardconfiguratie, slechts wordt het meest basisverwerkingsprofiel ge
 
 Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. Zie [!DNL Adobe Asset Link] [documentatie](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) om te begrijpen als u het voor uw verwerkingsprofiel moet aanzetten. Zie [Volledige documentatie van Adobe Asset Link voor meer informatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-### Standaardprofiel {#create-standard-profile} maken
+### Een standaardprofiel maken {#create-standard-profile}
 
-Voer de volgende stappen uit om een standaardverwerkingsprofiel te maken:
+Ga als volgt te werk om een standaard verwerkingsprofiel te maken:
 
 1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Klik op **[!UICONTROL Create]**.
 1. Geef een naam op waarmee u het profiel op unieke wijze kunt identificeren wanneer u het toepast op een map.
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 Het kan beeld, video, document, en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst en meta-gegevens, en archieven omzetten.
 
-Ontwikkelaars kunnen [!DNL Asset Compute Service] aan [gebruiken om douanetoepassingen te creëren](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) die aan de gesteunde gebruiksgevallen behandelen. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
+Ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken om [aangepaste toepassingen te maken](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) voor de ondersteunde gebruiksgevallen. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
 * Gebruik [!DNL Adobe Photoshop] [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) en sla het resultaat op als uitvoering.
 * De systemen van de derde vraag om gegevens, bijvoorbeeld, een PIM systeem bij te werken.
@@ -123,7 +123,7 @@ Ontwikkelaars kunnen [!DNL Asset Compute Service] aan [gebruiken om douanetoepas
 
 Ga als volgt te werk om een aangepast profiel te maken:
 
-1. Beheerders hebben toegang tot **[!UICONTROL Tools > Assets > Processing Profiles]**. Klik op **[!UICONTROL Create]**.
+1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Klik op **[!UICONTROL Create]**.
 1. Klik op het tabblad **[!UICONTROL Custom]**. Klik op **[!UICONTROL Add New]**. Geef de gewenste bestandsnaam van de vertoning op.
 1. Geef de volgende informatie op.
 
@@ -145,6 +145,8 @@ De aangepaste toepassingen hebben geen kop [Project Firefly](https://github.com/
 Als u het gebruik van een aangepast profiel wilt illustreren, kunt u het beste een kwestie-case gebruiken om aangepaste tekst toe te passen op campagneafbeeldingen. U kunt een verwerkingsprofiel maken dat de Photoshop API gebruikt om de afbeeldingen te bewerken.
 
 Dankzij de asset compute Service-integratie kan Experience Manager deze parameters doorgeven aan de aangepaste toepassing met behulp van het veld [!UICONTROL Service Parameters]. De aangepaste toepassing roept vervolgens de Photoshop API aan en geeft deze waarden door aan de API. U kunt bijvoorbeeld lettertypenaam, tekstkleur, tekstdikte en tekstgrootte doorgeven om aangepaste tekst toe te voegen aan campagneafbeeldingen.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![aangepast verwerkingsprofiel](assets/custom-processing-profile.png)
 
