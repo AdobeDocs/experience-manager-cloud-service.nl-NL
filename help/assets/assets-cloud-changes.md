@@ -1,18 +1,18 @@
 ---
-title: Opvallende wijzigingen in Adobe Experience Manager Assets als a [!DNL Cloud Service]
-description: Opvallende wijzigingen in Adobe Experience Manager Assets in Experience Manager [!DNL Cloud Service] ten opzichte van Adobe Experience Manager 6.5.
+title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
+description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
 
 
-# Noteerbare wijzigingen in Experience Manager Assets als een [!DNL Cloud Service] {#notable-changes}
+# Opvallende wijzigingen in [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager als een [!DNL Cloud Service] biedt veel nieuwe functies en mogelijkheden om uw Experience Managers te beheren. Er zijn veel verschillen tussen Experience Manager-middelen op locatie of gehost als Adobe Beheerde service in vergelijking met [!DNL Experience Manager] als [!DNL Cloud Service]. In dit artikel worden de belangrijke verschillen voor [!DNL Assets] mogelijkheden belicht.
+[!DNL Adobe Experience Manager] als  [!DNL Cloud Service] brengt u vele nieuwe functies en mogelijkheden om uw projecten van de Experience Manager te beheren. Er zijn veel verschillen tussen [!DNL Experience Manager Assets] on-premise of gehost als Adobe Managed Service in vergelijking met [!DNL Experience Manager] als [!DNL Cloud Service]. In dit artikel worden de belangrijke verschillen voor [!DNL Assets] mogelijkheden belicht.
 
 De belangrijkste verschillen ten opzichte van [Experience Manager] 6.5 zijn op de volgende gebieden:
 
@@ -22,16 +22,17 @@ De belangrijkste verschillen ten opzichte van [Experience Manager] 6.5 zijn op d
 
 ## Inname en verwerking van bedrijfsmiddelen {#asset-ingestion}
 
-Het uploaden van middelen is geoptimaliseerd voor efficiëntie door het beter schalen van het opnemen van bedrijfsmiddelen, sneller uploaden, snellere verwerking met behulp van microservices en bulkopname mogelijk te maken. Productmogelijkheden (webgebruikersinterfaces, desktopclients) zijn bijgewerkt. Dit kan echter gevolgen hebben voor een aantal bestaande aanpassingen.
+Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schaling van inname, snellere uploads, snellere verwerking met behulp van microservices en bulkopname mogelijk te maken. Productmogelijkheden (webgebruikersinterfaces, desktopclients) worden bijgewerkt. Dit kan ook van invloed zijn op sommige bestaande aanpassingen.
 
-* Experience Manager gebruikt het directe binaire toegangsbeginsel voor upload en download en activa microservices voor activaverwerking. Zie [overzicht van het opnemen van elementen](/help/assets/asset-microservices-overview.md).
+* [!DNL Experience Manager] gebruikt het directe binaire toegangsbeginsel om activa te uploaden en te downloaden en activa microservices te gebruiken om activa te verwerken. Zie [overzicht van microservices](/help/assets/asset-microservices-overview.md).
    * Asset upload [met directe binaire toegang](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-   * Voor technische details, zie van [direct binair uploadprotocol en APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
+   * Voor technische details, zie [direct binair upload protocol en APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Zie [API&#39;s en elementbewerkingen](/help/assets/developer-reference-material-apis.md#use-cases-and-apis) voor een vergelijking van de beschikbare API-methoden voor standaard CRUD-bewerkingen.
 * De standaardworkflow **[!UICONTROL DAM Asset Update]** in eerdere versies van [!DNL Experience Manager] is niet meer beschikbaar. In plaats daarvan, verstrekken de activa microservices een scalable, gemakkelijk beschikbare dienst die het grootste deel van de standaardactiva verwerkt (vertoningen, meta-gegevensextractie, en tekst extractie voor indexering) behandelt.
    * Zie [Elementmicroservices configureren en gebruiken](/help/assets/asset-microservices-configure-and-use.md)
    * Voor aangepaste workflowstappen in de verwerking kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
-* De activa die via de Manager van het Pakket binnen komen vereisen handherverwerking gebruikend de **[!UICONTROL Reprocess Asset]** actie in de interface van Activa.
+* Elementen die worden geüpload met gebruik van Package Manager vereisen handmatige opwerking met behulp van de handeling **[!UICONTROL Reprocess Asset]** in de interface [!DNL Assets].
+* Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
 
 Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met eerdere versies in knooppunten in de opslagplaats van middelen (dezelfde naamgevingsconventies).
 
