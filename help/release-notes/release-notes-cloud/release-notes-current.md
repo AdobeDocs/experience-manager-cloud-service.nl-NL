@@ -2,10 +2,10 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL E
 ## Releasedatum {#release-date}
 
 De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.12.0 is 17 december 2020.
-De volgende release (2021.1.0) vindt plaats op 28 januari 2020.
+De volgende release (2021.1.0) vindt plaats op 28 januari 2021.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
@@ -74,3 +74,20 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.12.0 is 10 dece
 ### Opgeloste problemen {#crt-bug-fixes}
 
 * Verscheidene insectenmoeilijke situaties die op de AEM Convertor van de Verzender en de Modernizer van de Bewaarplaats worden gedaan hulpmiddelen. Raadpleeg [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## Tools voor de overgang naar Cloud Service {#code-transition-tools}
+
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v1.1.20 is 8 januari 2021.
+
+### Nieuw in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Gebruikers kunnen nu leren of hun toegangstoken is verlopen door de muisaanwijzer op het statuspictogram in de gebruikersinterface van het hulpmiddel voor inhoudsoverdracht (CTT) te plaatsen. Zij zullen ook in de Vastgestelde UI van de Details van de Migratie worden meegedeeld dat zij niet met hun instantie van de Cloud Service kunnen verbinden.
+
+### Opgeloste problemen {#ctt-bug-fixes}
+
+* De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit is opgelost.
+* De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Dit probleem is opgelost en er is een bericht toegevoegd om de gebruiker te laten weten waarom de logbestanden ontbreken.
+* De gebruikersinterfacestatus van Content Transfer Tool liet een fout zien wanneer de gebruiker een opname heeft gestopt. Dit is gecorrigeerd om *STOPPED* in plaats daarvan te tonen.
+
