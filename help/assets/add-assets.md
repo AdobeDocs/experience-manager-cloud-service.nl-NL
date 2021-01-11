@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheid asset-opname, maar voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -44,17 +44,13 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -83,7 +79,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 Als u een uploadbewerking annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. [!DNL Assets] Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 1. Het dialoogvenster voor uploadvoortgang in [!DNL Assets] geeft het aantal bestanden weer dat is geüpload en de bestanden die niet zijn geüpload.
-Daarnaast wordt in de gebruikersinterface [!DNL Assets] het element weergegeven dat u het laatst hebt geüpload of de map die u het eerst hebt gemaakt.
+Daarnaast wordt in de gebruikersinterface [!DNL Assets] het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
 >[!NOTE]
 >
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ Naast de gebruikersinterface van de webbrowser biedt [!DNL Experience Manager] o
 
 ## Elementen verwerken bij het uploaden {#process-when-uploaded}
 
-Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen toepassen op de uploadmappen. De profielen zijn beschikbaar op de **[!UICONTROL Properties]** pagina van een omslag in [!DNL Assets].
+Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen toepassen op de uploadmappen. De profielen zijn beschikbaar op de **[!UICONTROL Properties]** pagina van een omslag in [!DNL Assets]. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
 
-![assets-folder-eigenschappen](assets/assets-folder-properties.png)
+![Eigenschappen van een elementmap met opties voor het toevoegen van een verwerkingsprofiel](assets/assets-folder-properties.png)
 
 De volgende tabbladen zijn beschikbaar:
 
-* [Met ](metadata-profiles.md) metagegevensprofielen kunt u standaardeigenschappen voor metagegevens toepassen op elementen die naar die map zijn geüpload
+* [Met ](metadata-profiles.md) metagegevensprofielen kunt u standaardeigenschappen voor metagegevens toepassen op elementen die naar die map zijn geüpload.
 * [Met ](asset-microservices-configure-and-use.md) verwerkingsprofielen kunt u meer uitvoeringen genereren dan standaard mogelijk is.
 
 Daarnaast zijn de volgende tabbladen beschikbaar als [!DNL Dynamic Media] is ingeschakeld voor uw implementatie:
 
-* [Met Dynamic Media-afbeeldingsprofielen kunt ](dynamic-media/image-profiles.md) u specifieke uitsnijdconfiguratie (**[!UICONTROL Smart Cropping]** en pixeluitsnijding) en verscherpingsconfiguratie toepassen op de geüploade elementen.
-* [Met Dynamic Media Video-](dynamic-media/video-profiles.md) profielen kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
+* [[!DNL Dynamic Media] Met ](dynamic-media/image-profiles.md) afbeeldingsprofielen kunt u specifieke uitsnijd- **[!UICONTROL Smart Cropping]** en verscherpingsconfiguratie toepassen op de geüploade elementen.
+* [[!DNL Dynamic Media] Met videoprofielen kunt ](dynamic-media/video-profiles.md) u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
 
 >[!NOTE]
 >
->Uitsnijden en andere bewerkingen van Dynamic Media op elementen zijn niet-destructief, dat wil zeggen dat ze het geüploade origineel niet wijzigen, maar in plaats daarvan parameters bieden voor uitsnijden of mediatransformatie die moet worden uitgevoerd wanneer de elementen worden geleverd
+>[!DNL Dynamic Media] uitsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat de bewerkingen het geüploade origineel niet wijzigen. In plaats daarvan biedt het parameters voor uitsnijden of transformeren bij het leveren van de elementen.
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in **[!UICONTROL Processing Profile]** kolom.
 
