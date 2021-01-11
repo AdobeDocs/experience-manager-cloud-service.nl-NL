@@ -3,7 +3,7 @@ title: Beheer [!DNL Adobe Stock] middelen in [!DNL Assets].
 description: Zoek, haal, vergunning, en beheer [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock] toe te st
 
 >[!NOTE]
 >
->Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren. Als u het deelvenster vanaf de startpagina van de Experience Manager wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
+>Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren. Als u het deelvenster vanaf de startpagina van de Experience Manager wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
 
 ## [!DNL Adobe Stock]-middelen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 
