@@ -3,7 +3,7 @@ title: AEM Assets configureren als een [!DNL Cloud Service] met Brand Portal
 description: AEM Assets configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 21%
@@ -71,7 +71,7 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe 
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Klik op het pictogram **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op.
+1. Klik op het pictogram **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (CRT) op uw computer op.
 
    De openbare sleutel zal later worden gebruikt om API voor uw Poorthuurder van het Merk te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
 
