@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -315,6 +315,39 @@ Het bewerkingsgedrag van een component wordt gevormd door een `cq:editConfig` kn
    * `cq:listeners` (knooppunttype  `cq:EditListenersConfig`): definieert wat er gebeurt voordat of nadat een handeling op de component plaatsvindt
 
 Er zijn vele bestaande configuraties in AEM. U kunt gemakkelijk naar specifieke eigenschappen of kindknopen zoeken gebruikend het hulpmiddel van de Vraag in **CRXDE Lite**.
+
+### Tijdelijke aanduidingen voor onderdelen {#component-placeholders}
+
+Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders zou het van de interface van de redacteur visueel kunnen verdwijnen, die het technisch aanwezig maar onzichtbaar maken op de pagina en in de redacteur. In een dergelijk geval zullen de auteurs de lege component niet kunnen selecteren en ermee werken.
+
+Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM `edit` of `preview` is).
+De gebruikelijke HTML-opmaak voor een tijdelijke aanduiding is:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Het standaard HTML-script dat de bovenstaande tijdelijke aanduiding HTML rendert, is:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+In het vorige voorbeeld is `isEmpty` een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
+
+Om herhaling te voorkomen, raadt Adobe aan dat implementatoren van componenten een HTML-sjabloon gebruiken voor deze plaatsaanduidingen, [zoals het sjabloon dat wordt verschaft door de Core Components.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de volgende lijn van HTML:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+In het vorige voorbeeld is `model.text` de variabele die alleen waar is wanneer de inhoud inhoud bevat en zichtbaar is.
+
+Een voorbeeldgebruik van dit malplaatje kan in de Componenten van de Kern, [zoals in de Component van de Titel worden gezien.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configureren met cq:EditConfig Onderliggende knooppunten {#configuring-with-cq-editconfig-child-nodes}
 
