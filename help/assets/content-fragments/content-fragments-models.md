@@ -2,9 +2,9 @@
 title: Modellen van contentfragmenten
 description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
 translation-type: tm+mt
-source-git-commit: 287e2cec425c2fd7e80618d247dc658ae1280066
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 8%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 8%
 
 # Modellen van contentfragmenten {#content-fragment-models}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->De AEM GraphQL API, voor het leveren van inhoudsfragmenten, zal begin 2021 worden vrijgegeven.
->
->De verwante documentatie is reeds beschikbaar voor voorproefdoeleinden.
+>Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 Met Inhoudsfragmentmodellen wordt de inhoudsstructuur gedefinieerd voor uw [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
