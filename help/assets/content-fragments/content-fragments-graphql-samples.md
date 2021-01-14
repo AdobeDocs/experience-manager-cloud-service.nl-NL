@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 2%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->De AEM GraphQL API, voor het leveren van inhoudsfragmenten, zal begin 2021 worden vrijgegeven.
+>De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
 >
->De verwante documentatie is reeds beschikbaar voor voorproefdoeleinden.
+>Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
 
