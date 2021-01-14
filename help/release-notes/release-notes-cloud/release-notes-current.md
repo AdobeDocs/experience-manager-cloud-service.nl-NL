@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '690'
 ht-degree: 1%
 
 ---
@@ -45,21 +45,15 @@ De volgende release (2021.1.0) vindt plaats op 28 januari 2021.
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.12.0 is 10 december 2020.
-
-### Nieuw in [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Zelfservicebeheer van [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Zelfservicebeheer van [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* De bijgewerkte **Environment** detailpagina staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.1.0 is 14 januari 2021.
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}
 
-* Sommige gevallen van fouten tijdens het scannen van code zonder dat de resultaten worden verholpen.
+* De instantie van de Productie van activa kan de merkportstatus op **Milieu** detailpagina als *In behandeling* tonen zonder de gebruiker toe te staan om het even welke actie te ondernemen.
 
-* De kaart van het milieu gaf niet constant **Add** knoop.
+* Bij het activeren van een dehibernate vanuit Cloud Manager werd soms een foutbericht weergegeven, zelfs wanneer de dehibernatie met succes werd gestart.
+
+* Zeldzame gevallen van fouten die zijn aangetroffen bij het creëren of verwijderen van een omgeving, zijn opgelost.
 
 ## Tools voor herstructurering van code {#code-refactoring-tools}
 
