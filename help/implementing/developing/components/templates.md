@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Paginasjablonen {#page-templates}
 
-Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de componenten die kunnen worden gebruikt (ontwerpeigenschappen). Dit heeft servervoordelen:
+Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de componenten die kunnen worden gebruikt (ontwerpeigenschappen). Dit heeft verschillende voordelen:
 
 * Met paginasjablonen kunnen gespecialiseerde auteurs [sjablonen maken en bewerken](/help/sites-cloud/authoring/features/templates.md).
    * Dergelijke gespecialiseerde auteurs worden **sjabloonauteurs** genoemd
@@ -61,7 +61,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author) voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert.
 
-   Zie [Structuur](#structure) in dit document voor technische details van de structuur.
+   Zie [Structuur](#structure) in dit document voor technische details over de structuur.
 
    **Beleid**
 
@@ -99,7 +99,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) voor meer informatie over hoe een sjabloonauteur een sjabloon inschakelt.
 
-   Voor technische details op het toelaten van een malplaatje, zie [Het toelaten van en het Toestaan van een Malplaatje voor ons](#enabling-and-allowing-a-template-for-use)e in dit document
+   Voor technische details bij het toelaten van een malplaatje, zie [Het toelaten van en het Toestaan van een Malplaatje voor Gebruik](#enabling-and-allowing-a-template-for-use)e in dit document
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
@@ -110,6 +110,16 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Resulterende inhoudspagina&#39;s](#resultant-content-pages) in dit document voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen.
 
+>[!TIP]
+>
+>Voer nooit informatie in die u wilt internationaliseren in een sjabloon. Voor internalisatiedoeleinden worden de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+
+>[!NOTE]
+>
+>Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
+>
+>Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
+
 >[!NOTE]
 >
 >In de clientbibliotheek van de editor wordt ervan uitgegaan dat de naamruimte `cq.shared` aanwezig is op inhoudspagina&#39;s. Als deze ontbreekt, resulteert de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -118,9 +128,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Zie [Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md) gebruiken voor meer informatie.
 
->[!CAUTION]
->
->Voer nooit informatie in die u wilt internationaliseren in een sjabloon.
+
 
 ## Sjabloonmappen {#template-folders}
 
