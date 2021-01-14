@@ -1,36 +1,29 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.12.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.1.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.1.0
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.12.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.1.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.12.0.
+Op deze pagina worden de opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service 2021.1.0 weergegeven
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.12.0 is 10 december 2020.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.1.0 is 14 januari 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-### Wat is er nieuw?{#what-is-new}
-
-* Zelfservicebeheer van [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Zelfservicebeheer van [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* De bijgewerkte **Environment** detailpagina staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
-
-
 ### Opgeloste problemen {#bug-fixes}
 
-* Sommige gevallen van fouten tijdens het scannen van code zonder dat de resultaten worden verholpen.
+* De instantie van de Productie van activa kan de merkportstatus op **Milieu** detailpagina als *In behandeling* tonen zonder de gebruiker toe te staan om het even welke actie te ondernemen.
 
-* De kaart van het milieu gaf niet constant **Add** knoop.
+* Bij het activeren van een dehibernate vanuit Cloud Manager werd soms een foutbericht weergegeven, zelfs wanneer de dehibernatie met succes werd gestart.
+
+* Zeldzame gevallen van fouten die zijn aangetroffen bij het creëren of verwijderen van een omgeving, zijn opgelost.
