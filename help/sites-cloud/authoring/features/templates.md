@@ -2,9 +2,9 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
+source-wordcount: '4600'
 ht-degree: 11%
 
 ---
@@ -88,7 +88,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >De **Toegestane sjablonen** zijn vaak vooraf gedefinieerd wanneer uw website voor het eerst wordt ingesteld.
 
->[!CAUTION]
+>[!TIP]
 >
 >Voer nooit informatie in die u wilt internationaliseren in een sjabloon. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
    >[!NOTE]
    >
    >Wanneer een nieuw malplaatje wordt gecreeerd is het duidelijk als **Laag** in de console, wijst dit erop dat het nog niet beschikbaar is om door paginaauteurs te gebruiken.
+
+>[!NOTE]
+>
+>Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
+>
+>Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
 
 ### Sjablooneigenschappen definiëren - Sjabloonauteur {#defining-template-properties-template-author}
 
