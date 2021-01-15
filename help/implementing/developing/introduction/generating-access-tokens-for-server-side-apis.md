@@ -2,7 +2,7 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Developer Flow {#developer-flow}
 
-Ontwikkelaars willen waarschijnlijk testen met een ontwikkelingsexemplaar van hun niet-AEM toepassing (die op hun laptop wordt uitgevoerd of wordt gehost) die aanvragen indient bij een AEM als ontwikkelomgeving. Nochtans, aangezien de ontwikkelaars niet noodzakelijk beheerdersroltoegang tot de AEM als Cloud Service hebben ontwikkelt milieu, kunnen wij niet veronderstellen zij de drager kunnen produceren JWT die in de regelmatige server-aan-server stroom wordt beschreven. Aldus, verstrekken wij een mechanisme voor een ontwikkelaar om een toegangstoken direct te produceren die in verzoeken aan AEM als Cloud Service milieu&#39;s kan worden gebruikt die zij hebben toegang tot. Zie [documentatie van de Richtlijnen van de Ontwikkelaar](/help/implementing/developing/introduction/development-guidelines.md) voor informatie over de vereiste toestemmingen om de AEM als console van de Cloud Service ontwikkelaar te gebruiken.
+Ontwikkelaars willen waarschijnlijk testen met een ontwikkelingsexemplaar van hun niet-AEM toepassing (die op hun laptop wordt uitgevoerd of wordt gehost) die aanvragen indient bij een AEM als ontwikkelomgeving. Nochtans, aangezien de ontwikkelaars niet noodzakelijk beheerdersroltoegang tot de AEM als Cloud Service hebben ontwikkelt milieu, kunnen wij niet veronderstellen zij de drager kunnen produceren JWT die in de regelmatige server-aan-server stroom wordt beschreven. Aldus, verstrekken wij een mechanisme voor een ontwikkelaar om een toegangstoken direct te produceren die in verzoeken aan AEM als Cloud Service milieu&#39;s kan worden gebruikt die zij hebben toegang tot.
+
+Zie [documentatie van de Richtlijnen van de Ontwikkelaar](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) voor informatie over de vereiste toestemmingen om de AEM als console van de Cloud Service ontwikkelaar te gebruiken.
 
 >[!NOTE]
 >
