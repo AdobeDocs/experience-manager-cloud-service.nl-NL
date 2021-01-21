@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
@@ -84,4 +84,3 @@ De releasedatum voor Content Transfer Tool v1.1.20 is 8 januari 2021.
 * De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit is opgelost.
 * De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Dit probleem is opgelost en er is een bericht toegevoegd om de gebruiker te laten weten waarom de logbestanden ontbreken.
 * De gebruikersinterfacestatus van Content Transfer Tool liet een fout zien wanneer de gebruiker een opname heeft gestopt. Dit is gecorrigeerd om *STOPPED* in plaats daarvan te tonen.
-
