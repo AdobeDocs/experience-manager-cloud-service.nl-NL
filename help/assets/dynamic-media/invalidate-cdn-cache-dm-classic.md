@@ -2,10 +2,10 @@
 title: De CDN-cache ongeldig maken via Dynamic Media Classic
 description: Door de CDN-inhoud (Content Delivery Network) in de cache te ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 26%
+source-wordcount: '624'
+ht-degree: 25%
 
 ---
 
@@ -22,15 +22,9 @@ Zie ook [Overzicht van cache in Dynamic Media Classic](https://helpx.adobe.com/e
 
 **Om uw CDN geheime voorgeheugen door Dynamic Media Classic ongeldig te maken:**
 
-1. Voer een van de volgende handelingen uit:
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-   * Meld u aan bij uw Dynamic Media Classic-account in uw webbrowser:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
-
-   * Open de Klassieke Dynamic Media-toepassing en meld u vervolgens aan bij uw account.
+   Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
 1. Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
 1. Zoek op de pagina Algemene instellingen toepassing onder de kop Servers het tekstvak **[!UICONTROL CDN Invalidation Template]**.
