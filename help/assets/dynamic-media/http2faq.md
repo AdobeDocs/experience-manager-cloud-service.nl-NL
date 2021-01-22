@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik de Adobe-gebundelde CDN (content delivery network) als onderdeel van uw Dynamic Media Classic-licentie.
 * Gebruik een specifiek domein (dat wil zeggen `images.company.com` of `mycompany.scene7.com`), geen algemeen Dynamic Media-domein (dat wil zeggen `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
-   [Meld u voor elk bedrijfsaccount aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
@@ -56,7 +56,7 @@ U moet [de Admin Console gebruiken om een steungeval ](https://helpx.adobe.com/e
    * Primaire contactpersoon, e-mail en telefoonnummer.
    * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`.
 
-   [Meld u voor elk bedrijfsaccount aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
 
@@ -64,7 +64,7 @@ U moet [de Admin Console gebruiken om een steungeval ](https://helpx.adobe.com/e
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
    * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   [Meld u voor elk bedrijfsaccount aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) om uw domeinen te zoeken.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
    Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
