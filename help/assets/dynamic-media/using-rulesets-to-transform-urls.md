@@ -2,9 +2,9 @@
 title: Regels gebruiken om URL's te transformeren
 description: U kunt regelsets in Dynamic Media gebruiken om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '727'
 ht-degree: 3%
 
 ---
@@ -55,11 +55,9 @@ Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in ee
 
 **XML-regelsets implementeren:**
 
-1. Meld u aan bij uw Dynamic Media Classic-account:
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
 1. Upload het bestand met de regelset als volgt:
 
