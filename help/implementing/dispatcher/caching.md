@@ -2,9 +2,9 @@
 title: Caching in AEM as a Cloud Service
 description: 'In cache plaatsen in AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ Op deze pagina wordt ook beschreven hoe de cachegeheugen van de verzender ongeld
 
 ### HTML/Tekst {#html-text}
 
-* door gebrek, caching door browser voor vijf minuten, die op de geheim voorgeheugen-controle kopbal wordt gebaseerd door de apache laag. De CDN neemt deze waarde ook in acht.
+* standaard wordt de header door de browser gedurende vijf minuten in cache geplaatst op basis van de `cache-control`-header die door de apache-laag wordt uitgestraald. De CDN neemt deze waarde ook in acht.
+* de standaardinstelling voor het in cache plaatsen van HTML/tekst kan worden uitgeschakeld door de variabele `DISABLE_DEFAULT_CACHING` in `global.vars` te definiëren:
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van de leeftijdskopbal (met een waarde die op kalenderdag wordt gebaseerd) vereist omdat door gebrek de leeftijdskopbal aan 0 wordt geplaatst. Dat gezegd hebbende, **let op voorzichtigheid wanneer het uitzetten van standaard caching.**
+
 * kan voor alle inhoud van HTML/van de Tekst worden met voeten getreden door `EXPIRATION_TIME` variabele in `global.vars` te bepalen gebruikend de AEM als de hulpmiddelen van de Verzender van SDK van de Cloud Service.
 * kan op een fijner korrelig niveau door de volgende richtlijnen worden met voeten getreden apache mod_headers:
 
