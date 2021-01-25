@@ -2,10 +2,10 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 6%
+source-wordcount: '750'
+ht-degree: 3%
 
 ---
 
@@ -42,3 +42,39 @@ Voer de volgende stappen uit om dit in te stellen:
 1. Een sleutelpaar genereren of een openbare sleutel uploaden (rsa is geen goed)
 1. Genereer een toegangstoken (of teken JWT of dragertoken).
 1. Sla al deze gegevens (client-id, clientgeheim, technische-accountid, e-mail voor technische account, organisatie-id, toegangstoken) op een veilige plaats op.
+
+## Gebruikersinterface {#user-interface}
+
+Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van de Portaal van de Distributie van de Software downloaden. Raadpleeg Opmerkingen bij de release voor meer informatie over de meest recente versie.
+
+1. Selecteer de Adobe Experience Manager selecteren en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud overbrengen**.
+1. Klik op **Gebruikerstoewijzingsconfiguratie maken**.
+
+   >[!NOTE]
+   >Als u deze stap overslaat, worden gebruikers en groepstoewijzing overgeslagen tijdens de extractiefase.
+
+   Vul de velden in de configuratie van de API voor gebruikersbeheer als volgt in:
+
+   * **Org-id**: Voer de IMS-organisatie-id in voor de organisatie waarin de gebruikers worden gemigreerd.
+
+      >[!NOTE]
+      >Als u de organisatie-id wilt ophalen, meldt u zich aan bij de [Admin Console](https://adminconsole.adobe.com/) en kiest u uw organisatie (in de rechterbovenhoek) als u tot meer dan één organisatie behoort. De organisatie-id bevindt zich in de URL van die pagina, in de notatie zoals `xx@AdobeOrg`, waarbij xx de IMS Org-id is.  Afwisselend, kunt u Org identiteitskaart in [Adobe de pagina van de Console van de Ontwikkelaar ](https://console.adobe.io) vinden waar u het Symbolische van de Toegang produceert.
+
+   * **Client-id**: Ga identiteitskaart van de Cliënt in die u van de stap van de Opstelling bewaarde
+
+   * **Toegangstoken**: Ga het Token van de Toegang in dat u van de stap van de Opstelling bewaarde
+
+      >[!NOTE]
+      >Het toegangstoken verloopt elke 24 uur en er moet een nieuwe worden gemaakt. Als u een nieuw token wilt maken, gaat u terug naar [Adobe Developer Console](https://console.adobe.io) en kiest u uw project. Klik vervolgens op de API voor gebruikersbeheer en plak dezelfde persoonlijke sleutel in het vak.
+
+1. Klik op Opslaan nadat u de bovenstaande gegevens hebt ingevoerd.
+
+1. Maak een migratieset door te klikken op Migratieset maken en de velden te vullen en vervolgens te klikken op Opslaan. Raadpleeg Het gereedschap Inhoud overbrengen uitvoeren voor meer informatie.
+
+   >[!NOTE]
+   >De schakeloptie voor het opnemen van toewijzingsgebruikers van IMS-gebruikers en -groepen is standaard ingeschakeld. Met deze instelling, wanneer Extractie wordt uitgevoerd op deze migratieset, wordt het gereedschap Toewijzing gebruiker uitgevoerd als onderdeel van de extractiefase. Dit is de aanbevolen manier om de extractiefase van het gereedschap Inhoud overbrengen uit te voeren. Als deze schakeloptie is uitgeschakeld en/of er geen configuratie voor gebruikerstoewijzing is gemaakt, worden gebruikers- en groepstoewijzing overgeslagen tijdens de extractiefase.
+
+1. Als u de extractiefase wilt uitvoeren, raadpleegt u [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+
+
+
