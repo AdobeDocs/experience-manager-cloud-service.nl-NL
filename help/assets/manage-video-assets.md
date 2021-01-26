@@ -3,9 +3,9 @@ title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '608'
 ht-degree: 6%
 
 ---
@@ -53,11 +53,11 @@ Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel t
 ## Beste werkwijzen en beperkingen {#tips-limitations}
 
 * Zonder [!DNL Dynamic Media]-licentie kunt u alleen MP4-bestanden verwerken met behulp van verwerkingsprofielen.
-* Wanneer u MP4-bestanden transcodeert met behulp van procesprofielen, gelden de volgende richtlijnen en beperkingen:
+* Bij het transcoderen van MP4-bestanden met verwerkingsprofielen gelden de volgende richtlijnen en beperkingen:
 
    * Apple ProRes-bestanden kunnen alleen transcoderen naar een maximale resolutie van 1080p.
    * Als het bronbestand een bitsnelheid > 200 Mbps heeft, kunt u alleen transcoderen naar een maximale resolutie van 1080p.
-   * Als de bronframesnelheid >= 60 fps is, kunt u de maximale bronbestandsgrootte gebruiken:
+   * Als de bronframesnelheid >=60 fps is, is de maximale grootte van het bronbestand dat u kunt gebruiken:
 
       * 400 MB voor 4.000 transcodering.
       * 800 MB voor 1080p-transcodering.
