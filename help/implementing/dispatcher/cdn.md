@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 7%
+source-wordcount: '567'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,24 @@ Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van
 Er is een kleine prestatiesklap toe te schrijven aan de extra hop, hoewel de hop klant CDN aan een beheerde Adobe CDN waarschijnlijk efficiënt zal zijn.
 
 Merk op dat deze klantCDN configuratie voor publiceert rij, maar niet vóór de auteursrij wordt gesteund.
+
+## Geolocatiekoppen {#geo-headers}
+
+De Adobe beheerde CDN zal kopballen aan elk verzoek met toevoegen:
+
+* landcode: `x-aem-client-country`
+* continentale code: `x-aem-client-continent`
+
+De waarden voor de landcodes zijn de Alpha-2-codes die [hier](https://en.wikipedia.org/wiki/ISO_3166-1) worden beschreven.
+
+De waarden voor de continentale codes zijn:
+
+* AF Afrika
+* AN Antarctica
+* AS Azië
+* EU-Europa
+* NA Noord-Amerika
+* OC Oceanië
+* SA Zuid-Amerika
+
+Deze informatie kan nuttig zijn in gevallen zoals omleiding naar een andere URL op basis van de oorsprong (land) van het verzoek. In dit specifieke geval mag de omleiding echter niet in de cache worden opgeslagen, aangezien deze varieert. Indien nodig, kunt u `Cache-Control: private` gebruiken om caching te verhinderen. Zie ook [Caching](/help/implementing/dispatcher/caching.md#html-text).
