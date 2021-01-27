@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
+source-git-commit: 8125d78d4751f22bcc5dd22acbdfd21ce62fc53d
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2242'
 ht-degree: 1%
 
 ---
@@ -246,10 +246,10 @@ Indien haven 465 is aangevraagd:
 
 * `smtp.port` instellen op `465`
 * `smtp.ssl` instellen op `true`
+* `smtp.starttls` instellen op `false`
 
 Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet ondersteunt):
 
 * `smtp.port` instellen op `587`
 * `smtp.ssl` instellen op `false`
-
-De eigenschap `smtp.starttls` wordt automatisch door AEM als Cloud Service bij uitvoering op een geschikte waarde ingesteld. Dit is `false` voor poort 465 en `true` voor poort 587. Dit is ongeacht de `smtp.starttls` waarden die in uw configuratie worden geplaatst OSGI.
+* `smtp.starttls` instellen op `true`
