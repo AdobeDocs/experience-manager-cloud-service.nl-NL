@@ -2,7 +2,7 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -195,15 +195,15 @@ In de onderstaande secties wordt beschreven hoe u de configuratie lokaal kunt va
 
 Het validatieprogramma is beschikbaar in de SDK op `bin/validator` als een binaire versie van Mac OS, Linux of Windows, zodat klanten dezelfde validatie kunnen uitvoeren als Cloud Manager bij het maken en implementeren van een release.
 
-Deze wordt aangeroepen als: `validator full [-d folder] [-w whitelist] zip-file | src folder`
+Deze wordt aangeroepen als: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 Met dit hulpprogramma wordt gecontroleerd of in de configuratie van de dispatcher de juiste instructies worden gebruikt die door AEM als cloudservice worden ondersteund, door alle bestanden te scannen met patroon `conf.d/enabled_vhosts/*.vhost`. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ Wanneer de looppas tegen uw beven artefact of uw `dispatcher/src` subdirectory, 
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
