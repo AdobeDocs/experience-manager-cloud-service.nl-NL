@@ -2,10 +2,10 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 3%
+source-wordcount: '754'
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,11 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    >[!NOTE]
    >Als u deze stap overslaat, worden gebruikers en groepstoewijzing overgeslagen tijdens de extractiefase.
 
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Vul de velden in de configuratie van de API voor gebruikersbeheer als volgt in:
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **Org-id**: Voer de IMS-organisatie-id in voor de organisatie waarin de gebruikers worden gemigreerd.
 
@@ -67,12 +71,17 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
       >[!NOTE]
       >Het toegangstoken verloopt elke 24 uur en er moet een nieuwe worden gemaakt. Als u een nieuw token wilt maken, gaat u terug naar [Adobe Developer Console](https://console.adobe.io) en kiest u uw project. Klik vervolgens op de API voor gebruikersbeheer en plak dezelfde persoonlijke sleutel in het vak.
 
-1. Klik op Opslaan nadat u de bovenstaande gegevens hebt ingevoerd.
+1. Nadat u de bovenstaande gegevens hebt ingevoerd, klikt u op **Opslaan**.
 
-1. Maak een migratieset door te klikken op Migratieset maken en de velden te vullen en vervolgens te klikken op Opslaan. Raadpleeg Het gereedschap Inhoud overbrengen uitvoeren voor meer informatie.
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Maak een migratieset door op **Migratieset maken** te klikken en de velden te vullen en vervolgens op **Opslaan** te klikken. Raadpleeg Het gereedschap Inhoud overbrengen uitvoeren voor meer informatie.
 
    >[!NOTE]
    >De schakeloptie voor het opnemen van toewijzingsgebruikers van IMS-gebruikers en -groepen is standaard ingeschakeld. Met deze instelling, wanneer Extractie wordt uitgevoerd op deze migratieset, wordt het gereedschap Toewijzing gebruiker uitgevoerd als onderdeel van de extractiefase. Dit is de aanbevolen manier om de extractiefase van het gereedschap Inhoud overbrengen uit te voeren. Als deze schakeloptie is uitgeschakeld en/of er geen configuratie voor gebruikerstoewijzing is gemaakt, worden gebruikers- en groepstoewijzing overgeslagen tijdens de extractiefase.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Als u de extractiefase wilt uitvoeren, raadpleegt u [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
