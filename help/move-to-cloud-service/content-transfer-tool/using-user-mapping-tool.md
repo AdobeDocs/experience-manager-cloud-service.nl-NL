@@ -2,9 +2,9 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 4%
 
 ---
@@ -35,17 +35,17 @@ Het gereedschap Toewijzing gebruiker gebruikt een API waarmee IMS-gebruikers via
 Voer de volgende stappen uit om dit in te stellen:
 
 1. Navigeer naar [Adobe Developer Console](https://console.adobe.io) met uw Adobe ID.
-1. Een nieuw project maken of een bestaand project openen
-1. Een API toevoegen
-1. Gebruikerbeheer-API kiezen
-1. Een JWT-referentie maken
-1. Een sleutelpaar genereren of een openbare sleutel uploaden (rsa is geen goed)
+1. Maak een nieuw project of open een bestaand project.
+1. Voeg een API toe.
+1. Kies Gebruikerbeheer-API.
+1. Maak een JWT-referentie.
+1. Genereer een sleutelpaar of upload een openbare sleutel (rsa is geen goed).
 1. Genereer een toegangstoken (of teken JWT of dragertoken).
-1. Sla al deze gegevens (client-id, clientgeheim, technische-accountid, e-mail voor technische account, organisatie-id, toegangstoken) op een veilige plaats op.
+1. Sla al deze informatie op, zoals **Client ID**, **Client Secret**, **Technical Account ID**, **Technical Account Email**, **Organisatie-id** en **Toegangstoken**.
 
 ## Gebruikersinterface {#user-interface}
 
-Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van de Portaal van de Distributie van de Software downloaden. Raadpleeg Opmerkingen bij de release voor meer informatie over de meest recente versie.
+Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van de Portaal van de Distributie van de Software downloaden. Voor meer informatie over de recentste versie, verwijs naar [Huidige Nota&#39;s van de Versie](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecteer de Adobe Experience Manager selecteren en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud overbrengen**.
 1. Klik op **Gebruikerstoewijzingsconfiguratie maken**.
