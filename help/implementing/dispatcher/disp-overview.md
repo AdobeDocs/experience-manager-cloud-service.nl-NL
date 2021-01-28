@@ -2,10 +2,10 @@
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
-ht-degree: 9%
+source-wordcount: '4119'
+ht-degree: 8%
 
 ---
 
@@ -375,7 +375,8 @@ Phase 2 finished
 Het script doet het volgende:
 
 1. De validator wordt uitgevoerd vanuit de vorige sectie om ervoor te zorgen dat alleen de ondersteunde instructies worden opgenomen. Als de configuratie ongeldig is, zal het manuscript ontbreken.
-2. De code voert `httpd -t command` uit om te testen of de syntaxis correct is zodat apache httpd kan starten. Indien succesvol, zou de configuratie klaar voor plaatsing moeten zijn
+2. De code voert `httpd -t command` uit om te testen of de syntaxis correct is zodat apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
+3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van de verzender, die om zoals die in [de sectie van de Bestandsstructuur ](#file-structure) worden bedoeld onveranderlijk zijn, niet is gewijzigd. Dit is een nieuwe controle, geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
 
 Tijdens de implementatie van Cloud Manager wordt de `httpd -t syntax`-controle ook uitgevoerd en worden eventuele fouten opgenomen in het logbestand voor Cloud Manager `Build Images step failure`.
 
