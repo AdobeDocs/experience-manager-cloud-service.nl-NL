@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service.
 description: 'Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
-source-git-commit: c6e9f7073b13211386f30142ea34f1e256905450
+source-git-commit: c0dfcf46dc0cc69008e48061b79a35314e09d994
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2020 11,0 |
+| Versie | 2021,01,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
