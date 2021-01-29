@@ -2,10 +2,10 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 4%
+source-wordcount: '783'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Als onderdeel van de overgang naar Adobe Experience Manager (AEM) als Cloud Service, moet u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM als Cloud Service. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
 
-Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.  Hiervoor moet de Adobe Admin Console worden gebruikt voor het beheer van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) dat Single Sign-On biedt voor alle Adobe-cloudtoepassingen. Raadpleeg Identity Management voor meer informatie. Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de auteur van de Cloud Service te voorkomen.
+Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.  Dit vereist gebruik van [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) dat Single Sign-On biedt voor alle Adobe-cloudtoepassingen. Raadpleeg [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management) voor meer informatie. Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de auteur van de Cloud Service te voorkomen.
 
 ## Belangrijke overwegingen {#important-considerations}
 
@@ -45,7 +45,7 @@ Voer de onderstaande stappen uit om dit in te stellen:
 
 ## Gebruikersinterface {#user-interface}
 
-Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van de Portaal van de Distributie van de Software downloaden. Voor meer informatie over de recentste versie, verwijs naar [Huidige Nota&#39;s van de Versie](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van [Portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) downloaden. Voor meer informatie over de recentste versie, verwijs naar [Huidige Nota&#39;s van de Versie](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecteer de Adobe Experience Manager selecteren en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud overbrengen**.
 1. Klik op **Gebruikerstoewijzingsconfiguratie maken**.
