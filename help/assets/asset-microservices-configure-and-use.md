@@ -3,9 +3,9 @@ title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
@@ -180,18 +180,18 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 ## Nabewerkingsworkflows {#post-processing-workflows}
 
-Voor situaties waarin aanvullende verwerking van activa vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra naverwerkingsworkflows aan de configuratie worden toegevoegd. Zo kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
+In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Zo kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-Nabewerkingsworkflows worden, indien geconfigureerd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van de microservices is voltooid. Het is niet nodig om werkstroomlanceerinrichtingen handmatig toe te voegen om ze te activeren. De voorbeelden zijn:
+Nabewerkingsworkflows worden, indien geconfigureerd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van de microservices is voltooid. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
 
 * Aangepaste workflowstappen om elementen te verwerken.
 * Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
 * Aanvullende verwerking door externe services.
 
-Het toevoegen van een workflowconfiguratie na verwerking aan Experience Manager bestaat uit de volgende stappen:
+Ga als volgt te werk om een workflowconfiguratie voor naverwerking toe te voegen aan [!DNL Experience Manager]:
 
-* Maak een of meer workflowmodellen. De documenten noemen het als *postprocessing werkschemamodellen*, maar dat zijn regelmatige modellen van het werkschema van de Experience Manager.
-* Voeg specifieke workflowstappen toe aan deze modellen. De stappen worden uitgevoerd op de activa die op een configuratie van het werkschemamodel worden gebaseerd.
+* Maak een of meer workflowmodellen. Deze aangepaste modellen worden in deze documentatie *workflowmodellen na verwerking* genoemd. Dit zijn gewone [!DNL Experience Manager] workflowmodellen.
+* Voeg de vereiste workflowstappen toe aan deze modellen. Controleer de stappen in de standaardworkflow en voeg alle vereiste standaardstappen toe aan de aangepaste workflow. De stappen worden uitgevoerd op de activa die op een configuratie van het werkschemamodel worden gebaseerd. Als u bijvoorbeeld automatisch slimme tags wilt toepassen bij het uploaden van elementen, voegt u de stap toe aan het aangepaste workflowmodel voor nabewerking.
 * Voeg [!UICONTROL DAM Update Asset Workflow Completed Process] stap aan het einde toe. Als u deze stap toevoegt, weet de Experience Manager wanneer de verwerking eindigt en kan het element worden gemarkeerd als verwerkt. Met andere woorden: *Nieuw* wordt op het element weergegeven.
 * Creeer een configuratie voor de Dienst van de Runner van het Werkschema van de Douane die toestaat om uitvoering van een model van het post-verwerkingswerkschema of door een weg (omslagplaats) of door een regelmatige uitdrukking te vormen.
 
@@ -207,7 +207,7 @@ Zorg ervoor dat de laatste stap van elke naverwerkingwerkstroom `DAM Update Asse
 
 Om de workflowmodellen na verwerking te configureren die moeten worden uitgevoerd voor elementen die in het systeem zijn geüpload of bijgewerkt nadat de verwerking van de asset microservices is voltooid, moet de Custom Workflow Runner-service worden geconfigureerd.
 
-De service Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service en biedt twee opties voor configuratie:
+De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service en biedt twee configuratieopties:
 
 * Nabewerkingsworkflows per pad (`postProcWorkflowsByPath`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Paden en modellen moeten worden gescheiden door een dubbele punt. Eenvoudige opslagpaden worden ondersteund en moeten worden toegewezen aan een workflowmodel in het pad `/var`. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
