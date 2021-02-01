@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u zult het nieuwe toegangstoken moeten terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
 
-* Momenteel is de standaardgrootte van MongoDB voor een AEM als instantie van de Auteur van de Cloud Service 32 GB. Het wordt geadviseerd dat voor de grootte van de segmentopslag groter dan 20GB, u een kaartje van de Steun zou moeten voorleggen om de grootte te verhogen MongoDB.
-
-* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen.
+* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Het gereedschap Toewijzing gebruiker gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
