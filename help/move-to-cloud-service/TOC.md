@@ -4,10 +4,10 @@ user-guide-title: Overstappen naar AEM as a Cloud Service
 breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 translation-type: tm+mt
-source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
+source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 81%
+source-wordcount: '87'
+ht-degree: 78%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 81%
       + [Analysator van best practices gebruiken](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + De tool Content Transfer {#content-transfer-tool}
       + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Gebruikerstoewijzing gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [De tool Content Transfer gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Tools voor herstructurering van code {#refactoring-tools}
    + [Unieke ervaring](/help/move-to-cloud-service/unified-experience.md)
