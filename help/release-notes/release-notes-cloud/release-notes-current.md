@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -73,14 +73,10 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.1.0 is 14 janua
 
 ### Releasedatum {#release-date-ctt}
 
-De releasedatum voor Content Transfer Tool v1.1.20 is 8 januari 2021.
+De releasedatum voor Content Transfer Tool v1.2.20 is 1 februari 2021.
 
 ### Nieuw in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Gebruikers kunnen nu leren of hun toegangstoken is verlopen door de muisaanwijzer op het statuspictogram in de gebruikersinterface van het hulpmiddel voor inhoudsoverdracht (CTT) te plaatsen. Zij zullen ook in de Vastgestelde UI van de Details van de Migratie worden meegedeeld dat zij niet met hun instantie van de Cloud Service kunnen verbinden.
-
-### Opgeloste problemen {#ctt-bug-fixes}
-
-* De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit is opgelost.
-* De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Dit probleem is opgelost en er is een bericht toegevoegd om de gebruiker te laten weten waarom de logbestanden ontbreken.
-* De gebruikersinterfacestatus van Content Transfer Tool liet een fout zien wanneer de gebruiker een opname heeft gestopt. Dit is gecorrigeerd om *STOPPED* in plaats daarvan te tonen.
+* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud. Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
+* Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
+* Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
