@@ -2,10 +2,10 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 5%
+source-wordcount: '782'
+ht-degree: 7%
 
 ---
 
@@ -47,7 +47,7 @@ Voer de onderstaande stappen uit om dit in te stellen:
 
 Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van [Portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) downloaden. Voor meer informatie over de recentste versie, verwijs naar [Huidige Nota&#39;s van de Versie](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecteer de Adobe Experience Manager selecteren en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud overbrengen**.
+1. Selecteer de Adobe Experience Manager en navigeer naar Tools -> **Operations** -> **Content Transfer**.
 1. Klik op **Gebruikerstoewijzingsconfiguratie maken**.
 
    >[!NOTE]
