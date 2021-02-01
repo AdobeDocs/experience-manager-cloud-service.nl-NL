@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ De overdracht van content bestaat uit twee fasen:
 
    Raadpleeg [Extractieproces in Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) voor meer informatie.
 
-2. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
+>[!NOTE]
+>
+> Het wordt aanbevolen het gereedschap Toewijzing gebruiker uit te voeren als onderdeel van de extractiefase. Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) voor meer informatie.
+
+1. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
 
    Raadpleeg [Opnameproces in Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) voor meer informatie.
 
