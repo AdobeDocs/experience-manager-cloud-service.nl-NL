@@ -2,9 +2,9 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,6 @@ Ga als volgt te werk om de doelconfiguratie te bewerken:
 1. Selecteer een bestaande configuratie en klik **Eigenschappen**.
 2. Bewerk de eigenschappen.
 3. Selecteer **Opnieuw verbinden met Adobe Target**.
-   ![Opnieuw ](assets/edit_config_page1.png "verbindenOpnieuw verbinden")
 4. Selecteer **Opslaan en sluiten**.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
