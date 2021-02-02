@@ -2,7 +2,7 @@
 title: Voorinstellingen voor viewers beheren
 description: Viewer-voorinstellingen maken en beheren in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4137'
 ht-degree: 18%
@@ -51,7 +51,7 @@ U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, p
 
 Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of de interface reageert mogelijk op een ander scherm op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve ontworpen webpagina&#39;s.
 
-Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in de *Help van de Dynamic Media-API voor beeldbewerking en rendering* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
+Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in de *Help van de Dynamic Media-API voor beeldbewerking en rendering* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
 **Een viewervoorinstelling toepassen op een element**
 
-1. Open het element en selecteer **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer &lt;a0/>.
+1. Open het element en selecteer **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer .
 
    >[!NOTE]
    >
