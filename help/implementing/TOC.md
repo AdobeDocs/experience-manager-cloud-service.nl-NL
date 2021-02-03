@@ -4,9 +4,9 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '710'
 ht-degree: 41%
 
 ---
@@ -140,6 +140,7 @@ ht-degree: 41%
       + Leverings-API {#delivery-api}
          + [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [Content Fragments GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
          + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Gereedschappen voor ontwikkelaars {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
