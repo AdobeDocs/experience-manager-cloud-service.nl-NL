@@ -2,9 +2,9 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Met de REST-API voor middelen kunt u inhoudsfragmenten beheren en met de GraphQL-API kunt u inhoud zonder kop verzenden.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ De rest van deze gids zal zich op toegang GraphQL en de levering van het Fragmen
 
 De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten ontwerpen om inhoud te leveren. Deze vragen zullen over het algemeen slechts eens per eindpunt per model moeten worden overwogen. Met het oog op deze gids om aan de slag te gaan, zullen wij slechts één gids moeten creëren.
 
-1. Meld u aan bij AEM als Cloud Service en selecteer **Tools -> Assets -> GraphQL** in het hoofdmenu
-   * U kunt de pagina ook rechtstreeks openen op `https://<host>:<port>/content/graphiql.html`.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Logboek in AEM als Cloud Service en toegang tot de interface GraphiQL:
+   * Bijvoorbeeld: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen hoofdelijk als JSON te leveren.
    * In het linkerdeelvenster kunt u een query maken.
@@ -39,8 +45,9 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
 1. Ervan uitgaande dat het model dat we hebben gemaakt `person` is aangeroepen met velden `firstName`, `lastName` en `position`, kunnen we een eenvoudige query maken om de inhoud van ons inhoudsfragment op te halen.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
