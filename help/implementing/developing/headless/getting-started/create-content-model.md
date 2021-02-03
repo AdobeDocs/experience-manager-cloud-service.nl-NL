@@ -2,9 +2,9 @@
 title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
 description: Met Content Fragment Models wordt de structuur gedefinieerd van de inhoud die u maakt en gebruikt AEM mogelijkheden zonder kop.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 
    ![De map Modellen](../assets/models-folder.png)
 1. Tik of klik op **Maken**.
-1. Geef een **modeltitel** en **Beschrijving** op.
+1. Geef een **modeltitel**, **Codes** en **Beschrijving** op. U kunt ook **Model inschakelen** selecteren/deselecteren om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](../assets/models-create.png)
 1. Tik in het bevestigingsvenster op **Open** om uw model te configureren.
@@ -45,7 +45,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Tik of klik op **Opslaan** als u klaar bent met het samenstellen van uw model. Het nieuwe model wordt opgeslagen in de modus **Concept**.
 
    ![Model in conceptmodus](../assets/models-draft.png)
-1. U moet het model inschakelen om het te kunnen gebruiken. Selecteer het model dat u net hebt gemaakt en tik of klik op **Inschakelen**.
+1. Het model moet zijn ingeschakeld om het te kunnen gebruiken (als dit nog niet is ingeschakeld). Selecteer het model dat u net hebt gemaakt en tik of klik op **Inschakelen**.
 
    ![Het model inschakelen](../assets/models-enable.png)
 1. Bevestig het toelaten van het model door **Enable** in de bevestigingsdialoog te tikken of te klikken.
