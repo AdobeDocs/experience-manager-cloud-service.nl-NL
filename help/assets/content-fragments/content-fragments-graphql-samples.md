@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1708'
 ht-degree: 2%
 
 ---
@@ -12,11 +12,14 @@ ht-degree: 2%
 
 # Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+>Deze pagina moet samen met:
 >
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
+>* [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+>* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL API voor gebruik met Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
 
@@ -26,7 +29,7 @@ Zie voor hulp bij dit:
 
 * En sommige [voorbeelden GraphQL query](#graphql-sample-queries), gebaseerd op de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
-## GraphQL voor AEM - sommige extensies {#graphql-some-extensions}
+## GraphQL voor AEM - Overzicht van extensies {#graphql-extensions}
 
 De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaardspecificatie GraphQL. Voor vragen GraphQL met AEM zijn er een paar uitbreidingen:
 
@@ -34,148 +37,59 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
    * de modelnaam gebruiken; Bijvoorbeeld stad
 
 * Als u een lijst met resultaten verwacht:
-   * voegt &quot;Lijst&quot; aan de modelnaam toe; bijvoorbeeld `cityList`
+   * `List` toevoegen aan de modelnaam; bijvoorbeeld `cityList`
+   * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
 
 * Als u logische OR wilt gebruiken:
-   * gebruik &quot;_logOp: OF&quot;
+   * use ` _logOp: OR`
+   * Zie [Voorbeeldquery - Alle personen met een naam van &quot;Taken&quot; of &quot;Smith&quot;](#sample-all-persons-jobs-smith)
 
 * Logische AND bestaat ook, maar is (vaak) impliciet
 
 * U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
+   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](#sample-full-details-company-ceos-employees)
 
 * Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
 
    * Voor inhoud:
 
       * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
-
+         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : om metagegevens voor uw fragment weer te geven
-
+         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen met de naam GB](#sample-metadata-awards-gb)
+      * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
+         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel van een model](#sample-wknd-content-fragment-model-from-model)
       * `_path` : het pad naar uw contentfragment binnen de repository
-
-      * `_references` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
-
-      * `_variations` : om specifieke variaties in het inhoudsfragment weer te geven
+         * Zie [Voorbeeldquery - Een enkel specifiek stadsfragment](#sample-single-specific-city-fragment)
+      * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
+         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
+         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
    * En bewerkingen:
 
-      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
-
+      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:   `AT_LEAST_ONCE`
-
+         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
+         * Zie [Voorbeeldquery - Alle steden met SAN in de naam, ongeacht case](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * GraphQL-vaktypen worden ondersteund:
 
-   * use `...on`
-
-
-## Een structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL {#content-fragment-structure-graphql}
-
-Voor een eenvoudig voorbeeld hebben we het volgende nodig:
-
-* Een, of meer, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - vormen de basis voor de GraphQL-schema&#39;s
-
-* [Voorbeeld van ](#sample-content-fragments) fragmentatie van inhoud op basis van de bovenstaande modellen
-
-### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
-
-Voor de steekproefvragen, zullen wij de volgende Modellen van de Inhoud, en hun onderlinge relaties (verwijzingen ->) gebruiken:
-
-* [Bedrijf](#model-company)
-->  [Persoon](#model-person)
-    ->  [Prijs](#model-award)
-
-* [Plaats](#model-city)
-
-#### Bedrijf {#model-company}
-
-De basisvelden voor het bedrijf zijn:
-
-| Veldnaam | Gegevenstype | Referentie |
-|--- |--- |--- |
-| Bedrijfsnaam | Tekst met één regel |  |
-| CEO | Fragmentverwijzing (enkele) | [Person](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
-
-#### Person {#model-person}
-
-De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
-
-| Veldnaam | Gegevenstype | Referentie |
-|--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Voornaam | Tekst met één regel |  |
-| Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
-
-#### Uitreiking {#model-award}
-
-De velden waarin een onderscheiding wordt gedefinieerd, zijn:
-
-| Veldnaam | Gegevenstype | Referentie |
-|--- |--- |--- |
-| Sneltoets/id | Tekst met één regel |  |
-| Titel | Tekst met één regel |  |
-
-#### Plaats {#model-city}
-
-De velden voor het definiëren van een stad zijn:
-
-| Veldnaam | Gegevenstype | Referentie |
-|--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Land | Tekst met één regel |  |
-| Bevolking | Getal |  |
-| Categorieën | Tags |  |
-
-### Voorbeeld van inhoudsfragmenten {#sample-content-fragments}
-
-De volgende fragmenten worden gebruikt voor het juiste model.
-
-#### Bedrijf {#fragment-company}
-
-| Bedrijfsnaam | CEO | Werknemers |
-|--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Slade tussenruimte |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
-
-#### Persoon {#fragment-person}
-
-| Naam | Voornaam | Awards |
-|--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Tussenruimte |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Uitsnijden |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Taken |  Steve |   |
-
-#### Uitreiking {#fragment-award}
-
-| Sneltoets/id | Titel |
-|--- |--- |
-| GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
-
-#### Plaats {#fragment-city}
-
-| Naam | Land | Bevolking | Categorieën |
-|--- |--- |--- |--- |
-| Bazel | Zwitserland | 172258 | stad:emea |
-| Berlin | Duitsland | 3669491 | city:capital<br>city:emea |
-| Boekarest | Roemenië | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  VS |  883306 |  stad:strand<br>stad:na |
-| San Jose |  VS |  102635 |  plaats:na |
-| Stuttgart |  Duitsland |  634830 |  stad:emea |
-|  Zurich |  Zwitserland |  415367 |  city:capital<br>city:emea |
+   * gebruiken `... on`
+      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
-Zie de steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
+Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ Zie de steekproefvragen voor illustraties van creeer vragen, samen met steekproe
 >
 >Bijvoorbeeld: `http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>De steekproefvragen zijn gebaseerd op de [Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL](#content-fragment-structure-graphql)
+
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
-Dit zal alle types voor alle beschikbare schema&#39;s terugkeren.
+Hiermee worden alle `types` voor alle beschikbare schema&#39;s geretourneerd.
 
 **Voorbeeldquery**
 
@@ -269,134 +187,6 @@ Dit zal alle types voor alle beschikbare schema&#39;s terugkeren.
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf {#sample-full-details-company-ceos-employees}
-
-Gebruikend de structuur van de genestelde fragmenten, keert deze vraag de volledige details van CEO van een bedrijf en al zijn werknemers terug.
-
-**Voorbeeldquery**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**Voorbeeldresultaten**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### Voorbeeldquery - één stedenfragment {#sample-single-city-fragment}
+### Voorbeeldquery - één specifiek stedenfragment {#sample-single-specific-city-fragment}
 
 Dit is een query voor het retourneren van de details van één fragmentitem op een specifieke locatie in de opslagplaats.
 
@@ -613,6 +403,134 @@ Als u een nieuwe variatie, genoemd &quot;Centrum van Berlijn&quot;(`berlin_centr
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf {#sample-full-details-company-ceos-employees}
+
+Gebruikend de structuur van de genestelde fragmenten, keert deze vraag de volledige details van CEO van een bedrijf en al zijn werknemers terug.
+
+**Voorbeeldquery**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Voorbeeldresultaten**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## Voorbeeldquery&#39;s met het WKND-project {#sample-queries-using-wknd-project}
 
-Deze steekproefvragen zijn gebaseerd op het project WKND.
+Deze steekproefvragen zijn gebaseerd op het project WKND. Dit heeft:
+
+* Modellen voor inhoudsfragmenten zijn beschikbaar onder:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ Deze query vraagt om:
 
 Deze voorbeeldquery vraagt om:
 
-* voor één inhoudsfragment van een bepaald model
-* voor alle indelingen van inhoud:
-   * HTML
-   * Markering
-   * Onbewerkte tekst
-   * JSON
+* voor één inhoudsfragment van het type `article` op een specifiek pad
+   * alle indelingen van inhoud:
+      * HTML
+      * Markering
+      * Onbewerkte tekst
+      * JSON
 
 **Voorbeeldquery**
 
@@ -1303,7 +1227,40 @@ Deze voorbeeldquery vraagt om:
 }
 ```
 
+### Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model {#sample-wknd-content-fragment-model-from-model}
+
+Deze voorbeeldquery vraagt om:
+
+* voor één inhoudsfragment
+   * details van het onderliggende inhoudsfragmentmodel
+
+**Voorbeeldquery**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### Voorbeeldquery voor een geneste inhoudsfragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
+
+Deze query vraagt om:
+
+* voor één inhoudsfragment van het type `article` op een specifiek pad
+   * binnen dat, de weg en de auteur van het referenced (genestelde) fragment
+
+>[!NOTE]
+>
+>Het veld `referencearticle` heeft het gegevenstype `fragment-reference`.
 
 **Voorbeeldquery**
 
@@ -1324,6 +1281,15 @@ Deze voorbeeldquery vraagt om:
 
 ### Voorbeeldquery voor een geneste inhoudsfragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
+Deze query vraagt om:
+
+* voor meerdere inhoudsfragmenten van het type `bookmark`
+   * met fragmentverwijzingen naar andere fragmenten van de specifieke modeltypen `article` en `adventure`
+
+>[!NOTE]
+>
+>Het veld `fragments` heeft het gegevenstype `fragment-reference`, met de modellen `Article`, `Adventure` geselecteerd.
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ Deze voorbeeldquery vraagt om:
 }
 ```
 
-### Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing{#sample-wknd-fragment-specific-model-content-reference}
+### Voorbeeldquery voor een inhoudsfragment van een specifiek model met inhoudsverwijzingen{#sample-wknd-fragment-specific-model-content-reference}
+
+Deze query heeft twee voordelen:
+
+1. Alle inhoudsverwijzingen retourneren.
+1. Om de specifieke inhoudsverwijzingen van type `attachments` terug te keren.
+
+Deze vragen worden ondervraagd:
+
+* voor meerdere inhoudsfragmenten van het type `bookmark`
+   * met Content Reference to other fragments
+
+#### Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen {#sample-wknd-multiple-fragments-prefetched-references}
+
+De volgende vraag keert alle inhoudsverwijzingen door `_references` te gebruiken terug:
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Voorbeeldquery voor meerdere inhoudsfragmenten met bijlagen {#sample-wknd-multiple-fragments-attachments}
+
+De volgende query retourneert alle `attachments` - een specifiek veld (subgroep) van het type `content-reference`:
+
+>[!NOTE]
+>
+>Het veld `attachments` heeft het gegevenstype `content-reference`, met verschillende formulieren geselecteerd.
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ Deze voorbeeldquery vraagt om:
 }
 ```
 
-### Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Voorbeeldquery voor één variatie van inhoudsfragment van een bepaald model {#sample-wknd-single-fragment-given-model}
-
-**Voorbeeldquery**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling {#sample-wknd-multiple-fragments-given-locale}
-
-**Voorbeeldquery**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Voorbeeldquery voor één inhoudsfragment met RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
+
+Deze query vraagt om:
+
+* voor één inhoudsfragment van het type `bookmark` op een specifiek pad
+   * binnen dat, de gealigneerde verwijzingen van RTE
+
+>[!NOTE]
+>
+>De RTE gealigneerde verwijzingen worden gehydrateerd in `_references`.
 
 **Voorbeeldquery**
 
@@ -1486,7 +1442,37 @@ Deze voorbeeldquery vraagt om:
 }
 ```
 
+### Voorbeeldquery voor één variatie van inhoudsfragment van een bepaald model {#sample-wknd-single-fragment-given-model}
+
+Deze query vraagt om:
+
+* voor één inhoudsfragment van het type `article` op een specifiek pad
+   * binnen dat kader de gegevens betreffende de wijziging: `variation1`
+
+**Voorbeeldquery**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Voorbeeldquery voor een benoemde variatie van meerdere inhoudsfragmenten van een bepaald model {#sample-wknd-variation-multiple-fragment-given-model}
+
+Deze query vraagt om:
+
+* voor inhoudsfragmenten van het type `article` met een specifieke variatie: `variation1`
 
 **Voorbeeldquery**
 
@@ -1506,3 +1492,131 @@ Deze voorbeeldquery vraagt om:
   }
 }
 ```
+
+### Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling {#sample-wknd-multiple-fragments-given-locale}
+
+Deze query vraagt om:
+
+* voor inhoudsfragmenten van het type `article` binnen de landinstelling `fr`
+
+**Voorbeeldquery**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## De structuur van het Fragment van de Inhoud van de Steekproef (die met GraphQL wordt gebruikt) {#content-fragment-structure-graphql}
+
+De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
+
+* Een, of meer, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - vormen de basis voor de GraphQL-schema&#39;s
+
+* [Voorbeeld van ](#sample-content-fragments) fragmentatie van inhoud op basis van de bovenstaande modellen
+
+### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
+
+Voor de steekproefvragen, zullen wij de volgende Modellen van de Inhoud, en hun onderlinge relaties (verwijzingen ->) gebruiken:
+
+* [Bedrijf](#model-company)
+->  [Persoon](#model-person)
+    ->  [Prijs](#model-award)
+
+* [Plaats](#model-city)
+
+#### Bedrijf {#model-company}
+
+De basisvelden voor het bedrijf zijn:
+
+| Veldnaam | Gegevenstype | Referentie |
+|--- |--- |--- |
+| Bedrijfsnaam | Tekst met één regel |  |
+| CEO | Fragmentverwijzing (enkele) | [Person](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
+
+#### Person {#model-person}
+
+De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
+
+| Veldnaam | Gegevenstype | Referentie |
+|--- |--- |--- |
+| Naam | Tekst met één regel |  |
+| Voornaam | Tekst met één regel |  |
+| Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
+
+#### Uitreiking {#model-award}
+
+De velden waarin een onderscheiding wordt gedefinieerd, zijn:
+
+| Veldnaam | Gegevenstype | Referentie |
+|--- |--- |--- |
+| Sneltoets/id | Tekst met één regel |  |
+| Titel | Tekst met één regel |  |
+
+#### Plaats {#model-city}
+
+De velden voor het definiëren van een stad zijn:
+
+| Veldnaam | Gegevenstype | Referentie |
+|--- |--- |--- |
+| Naam | Tekst met één regel |  |
+| Land | Tekst met één regel |  |
+| Bevolking | Getal |  |
+| Categorieën | Tags |  |
+
+### Voorbeeld van inhoudsfragmenten {#sample-content-fragments}
+
+De volgende fragmenten worden gebruikt voor het juiste model.
+
+#### Bedrijf {#fragment-company}
+
+| Bedrijfsnaam | CEO | Werknemers |
+|--- |--- |--- |
+| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Slade tussenruimte |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+
+#### Persoon {#fragment-person}
+
+| Naam | Voornaam | Awards |
+|--- |--- |--- |
+| Lincoln |  Abe |  |
+| Smith | Adam |   |
+| Slade |  Tussenruimte |  Gameblitz<br>Gamestar |
+| Marsh |  Duke |   |   |
+|  Smith |  Joe |   |
+| Uitsnijden |  Lara | Gamestar |
+| Caulfield |  Max |  Gameblitz |
+|  Taken |  Steve |   |
+
+#### Uitreiking {#fragment-award}
+
+| Sneltoets/id | Titel |
+|--- |--- |
+| GB | Gameblitz |
+|  GS | Gamestar |
+|  OSC | Oscar |
+
+#### Plaats {#fragment-city}
+
+| Naam | Land | Bevolking | Categorieën |
+|--- |--- |--- |--- |
+| Bazel | Zwitserland | 172258 | stad:emea |
+| Berlin | Duitsland | 3669491 | city:capital<br>city:emea |
+| Boekarest | Roemenië | 1821000 |  city:capital<br>city:emea |
+| San Francisco |  VS |  883306 |  stad:strand<br>stad:na |
+| San Jose |  VS |  102635 |  plaats:na |
+| Stuttgart |  Duitsland |  634830 |  stad:emea |
+|  Zurich |  Zwitserland |  415367 |  city:capital<br>city:emea |
