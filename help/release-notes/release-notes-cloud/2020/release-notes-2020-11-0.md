@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor 2020.11.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de Cloud Service voor 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -91,7 +91,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.11.0 is 12 nove
 ### Nieuw in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Een nieuwe menuoptie **Lokale aanmelding** is nu beschikbaar voor gebruikers via de opties in het menu Omgeving op de **Kaart met omgevingen** en de overzichtspagina&#39;s **Omgevingen**.
-Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md##login-locally) voor meer informatie.
+Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#login-locally) voor meer informatie.
 
 * Het tabblad **Leren** in Cloud Manager is vernieuwd en bevat nieuwe afbeeldingen in de gebruikersinterface.
 
