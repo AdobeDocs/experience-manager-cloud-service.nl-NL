@@ -1,8 +1,8 @@
 ---
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
-seo-title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
+description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+source-git-commit: d1e789527bed9e846dfc265c757889fcd96feaf5
 workflow-type: tm+mt
 source-wordcount: '3124'
 ht-degree: 100%
@@ -47,7 +47,6 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
    * Wanneer u selectors op een pagina gebruikt, hebben selectors die semantische waarde bieden, de voorkeur.
    * Als mensen uw URL niet kunnen lezen, kan een zoekmachine dat ook niet.
    * Bijvoorbeeld:
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 heeft de voorkeur boven 
 `mybrand.com/products/product-detail.1234.html`
@@ -365,8 +364,8 @@ Om een sitemap programmatisch te genereren, registreert u een Sling-servlet die 
 >
 >U kunt een Sling-servlet registreren om te luisteren naar de selector `sitemap` met de extensie `xml`. Hierdoor verwerkt de servlet de aanvraag telkens wanneer een URL wordt aangevraagd die eindigt op:
 >    `/<path-to>/page.sitemap.xml`
->Vervolgens kunt u de aangevraagde bron ophalen uit de aanvraag en een sitemap genereren vanaf dat punt in de contentstructuur met behulp van de JCR API&#39;s.
->Het voordeel van een dergelijke aanpak is wanneer meerdere sites vanuit dezelfde instantie worden aangeboden. Een aanvraag voor `/content/siteA.sitemap.xml` zou een sitemap voor `siteA` genereren terwijl een aanvraag voor `/content/siteB.sitemap.xml` een sitemap voor `siteB` zou genereren zonder dat extra code moet worden geschreven.
+Vervolgens kunt u de aangevraagde bron ophalen uit de aanvraag en een sitemap genereren vanaf dat punt in de contentstructuur met behulp van de JCR API&#39;s.
+Het voordeel van een dergelijke aanpak is wanneer meerdere sites vanuit dezelfde instantie worden aangeboden. Een aanvraag voor `/content/siteA.sitemap.xml` zou een sitemap voor `siteA` genereren terwijl een aanvraag voor `/content/siteB.sitemap.xml` een sitemap voor `siteB` zou genereren zonder dat extra code moet worden geschreven.
 
 ### 301-omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 
