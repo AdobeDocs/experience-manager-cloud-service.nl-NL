@@ -4,7 +4,7 @@ description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als
 translation-type: tm+mt
 source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
