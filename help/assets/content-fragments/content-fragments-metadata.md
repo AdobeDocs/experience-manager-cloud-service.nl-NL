@@ -2,7 +2,7 @@
 title: Metagegevens - Fragmenteigenschappen
 description: U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken.
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 9%
@@ -20,7 +20,7 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
 2. Ofwel:
 
    * Selecteer [**Eigenschappen weergeven** om de dialoogvensters](/help/assets/manage-digital-assets.md#editing-properties) te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
-   * Open het [inhoudsfragment voor Bewerken](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en selecteer vervolgens **Metagegevens** in het zijpaneel.
+   * Open het inhoudsfragment voor bewerking en selecteer vervolgens **Metagegevens** in het zijpaneel.
 
    ![metadata](assets/cfm-metadata-01.png)
 
