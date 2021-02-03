@@ -2,21 +2,15 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 3%
 
 ---
 
 
 # Werken met contentfragmenten{#working-with-content-fragments}
-
->[!CAUTION]
->
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
->
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Inhoudsfragmenten pagina-onafhankelijke inhoud ontwerpen, maken, beheren en [publiceren. ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
 
@@ -30,12 +24,9 @@ Inhoudsfragmenten bevatten gestructureerde inhoud:
    * Complex
       * Een combinatie van een groot aantal velden met verschillende gegevenstypen, zoals tekst, getal, boolean, gegevens en tijd.
       * Kan worden gebruikt voor het voorbereiden van meer gestructureerde inhoud voor het ontwerpen van pagina&#39;s of voor levering aan uw toepassing.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * Genest
+      * Met de beschikbare gegevenstypen waarnaar wordt verwezen, kunt u de inhoud nesten.
+      * De neiging om voor levering aan uw toepassing te worden gebruikt.
 
 Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM kerncomponenten. Deze leveringsvorm:
 
@@ -78,10 +69,7 @@ Met inhoudelementen kunt u:
 * Stel inhoudsgroepen samen voor een reeks kanalen.
 * Ontwerpinhoudvariaties voor specifieke kanalen.
 * Voeg afbeeldingen aan uw tekst toe door elementen (gemengde-mediafragmenten) in te voegen.
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* Maak geneste inhoud om de complexiteit van uw gegevens te weerspiegelen.
 
 Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillende kanalen ervaringen op te doen.
 
@@ -121,11 +109,9 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >
 >AEM ondersteunt ook het vertalen van fragmentinhoud.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Elementen vertalen](/help/assets/translate-assets.md) voor meer informatie.
 
 ## Inhoudstype {#content-type}
 
@@ -306,6 +292,12 @@ Een fragment met de elementen en variaties kan worden gebruikt om coherente inho
 
 ### WKND-monster {#wknd-sample}
 
-De [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) steekproeven worden verstrekt om u te helpen over AEM als Cloud Service leren. Het omvat voorbeeldfragmenten, deze kunnen worden gezien bij:
+De [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) steekproeven worden verstrekt om u te helpen over AEM als Cloud Service leren.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+Het WKND-project omvat:
+
+* Modellen voor inhoudsfragmenten zijn beschikbaar onder:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
