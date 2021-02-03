@@ -1,29 +1,54 @@
 ---
-title: Afbeeldingen automatisch labelen met door AI gegenereerde tags
-description: Tags toewijzen aan afbeeldingen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van [!DNL Adobe Sensei] services.
+title: Elementen automatisch labelen met door AI gegenereerde tags
+description: Elementen labelen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van [!DNL Adobe Sensei] service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 6%
+source-wordcount: '2487'
+ht-degree: 5%
 
 ---
 
 
-# Train Smart Content Service en tagt uw afbeeldingen automatisch {#train-service-tag-assets}
+# Slimme tags toevoegen aan uw elementen voor snellere zoekopdrachten {#smart-tag-assets-for-faster-search}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-Op de achtergrond gebruiken de Slimme Markeringen een kunstmatig intelligentiekader van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie op te leiden. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
+Op de achtergrond gebruiken de slimme tags het kunstmatig intelligente raamwerk van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Voer de volgende taken uit als u slimme tags wilt gebruiken:
+## Ondersteunde elementtypen {#smart-tags-supported-file-formats}
+
+Slimme tags worden alleen toegepast op ondersteunde bestandstypen die uitvoeringen in de JPG- en PNG-indeling genereren. De functionaliteit wordt ondersteund voor de volgende typen elementen:
+
+| Afbeeldingen (MIME-typen) | Op tekst gebaseerde elementen (bestandsindelingen) | Video-elementen (bestandsindelingen en codecs) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI (indeo4) |
+| image/gif | JSON | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] Hiermee voegt u de slimme tags standaard toe aan de op tekst gebaseerde elementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
 
 * [ [!DNL Adobe Experience Manager] Integreren met Adobe Developer Console](#integrate-aem-with-aio).
 * [Leer labelmodellen en richtlijnen](#understand-tag-models-guidelines).
@@ -31,7 +56,9 @@ Voer de volgende taken uit als u slimme tags wilt gebruiken:
 * [Tags toewijzen aan uw digitale elementen](#tag-assets).
 * [De tags en zoekopdrachten](#manage-smart-tags-and-searches) beheren.
 
-Slimme tags zijn alleen van toepassing voor [!DNL Adobe Experience Manager Assets]-klanten. De slimme tags kunnen worden aangeschaft als een invoegtoepassing voor [!DNL Experience Manager].
+>[!TIP]
+>
+>Slimme tags zijn alleen van toepassing voor [!DNL Adobe Experience Manager Assets]-klanten. De slimme tags kunnen worden aangeschaft als een invoegtoepassing voor [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ De afbeeldingen in uw trainingsset moeten aan de volgende richtlijnen voldoen:
    * een tagmodel dat automodellen bevat die in 2019 en 2020 zijn uitgebracht .
    * meerdere tagmodellen met dezelfde paar automodellen.
 
-**Afbeeldingen die worden gebruikt om te trainen**: U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. De optie Koppel een afbeelding echter niet aan meer dan één tag in een labelmodel. Daarom is het mogelijk om dezelfde afbeelding te voorzien van verschillende tags die bij verschillende labelmodellen horen.
+**Afbeeldingen die worden gebruikt om te trainen**: U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. Koppel een afbeelding echter niet aan meerdere tags in een labelmodel. U kunt dezelfde afbeelding labelen met verschillende tags die bij verschillende labelmodellen horen.
 
 U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
 
@@ -164,6 +191,8 @@ Nadat u de service Slimme tags hebt opgeleid, kunt u de codeerworkflow activeren
 
 Experience Manager kan de elementen die gebruikers uploaden naar DAM automatisch labelen. Hiertoe configureren beheerders een workflow om een beschikbare stap aan slimme-tagelementen toe te voegen. Zie [slimme tags inschakelen voor geüploade elementen](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
+<!-- TBD: Text-based assets are automatically smart tagged. -->
+
 ## Slimme tags beheren en zoeken naar middelen {#manage-smart-tags-and-searches}
 
 U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw merkelementen zijn toegewezen, zodat alleen de meest relevante tags worden weergegeven.
@@ -190,7 +219,7 @@ De slimme tags van uw elementen reduceren:
 
 ### AEM zoekresultaten begrijpen met slimme tags {#understandsearch}
 
-Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met `woman` of `running` met behulp van slimme tags, wordt echter wel weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR`-component toe om een zoekterm in de toegepaste slimme tags te zoeken. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met `woman` of `running` met behulp van slimme tags, wordt echter wel weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * elementen met de trefwoorden `woman` en `running` in de metagegevens.
 
@@ -209,6 +238,8 @@ Verbeterde slimme tags zijn gebaseerd op leermodellen van merkafbeeldingen en hu
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
 * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
 * Tags worden ondersteund in de talen die Experience Manager ondersteunt. Zie [Opmerkingen bij de release Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages) voor een lijst met talen.
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de opdracht Middelen zoeken (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 
