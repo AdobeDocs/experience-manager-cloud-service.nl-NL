@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 69%
+source-wordcount: '476'
+ht-degree: 68%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 69%
    + [HTTP-API voor assets](mac-api-assets.md)
    + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
+   + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
