@@ -3,9 +3,9 @@ title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van assets en de snelheid van content te verbeteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '891'
 ht-degree: 96%
 
 ---
@@ -25,7 +25,7 @@ De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangescha
 
 >[!IMPORTANT]
 >
->De nieuwe [!DNL Experience Manager Assets]-implementaties zijn standaard geïntegreerd met [!DNL Adobe Developer Console]. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, volgen de beheerders deze stappen om het te vormen.
+>De nieuwe [!DNL Experience Manager Assets]-implementaties zijn standaard geïntegreerd met [!DNL Adobe Developer Console]. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, volgen de beheerders deze stappen om de integratie te vormen.
 
 ## Integreren met Adobe Developer Console {#aio-integration}
 
