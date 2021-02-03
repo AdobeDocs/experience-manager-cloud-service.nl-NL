@@ -2,21 +2,15 @@
 title: Inhoudsfragmenten - Configuratiebrowser
 description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 18%
+source-wordcount: '241'
+ht-degree: 21%
 
 ---
 
 
 # Inhoudsfragmenten - Configuratiebrowser{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
->
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 ## Functionaliteit van inhoudsfragment inschakelen voor uw instantie {#enable-content-fragment-functionality-instance}
 
