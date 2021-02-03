@@ -2,21 +2,15 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 10%
+source-wordcount: '1593'
+ht-degree: 9%
 
 ---
 
 
 # Contentfragmenten beheren{#managing-content-fragments}
-
->[!CAUTION]
->
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
->
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden beheerd vanuit de **Assets**-console.
 
@@ -39,8 +33,8 @@ Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden b
 De methode voor het maken van een inhoudsfragment is:
 
 1. Ga naar de map **Assets** waar u het fragment wilt maken.
-2. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
-3. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
+1. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
+1. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
    * [Model](/help/assets/content-fragments/content-fragments-models.md)  - gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het  **** Adventuremodel
 
@@ -50,7 +44,7 @@ De methode voor het maken van een inhoudsfragment is:
 
    ![fragmentbasis](assets/cfm-managing-01.png)
 
-4. Geef in de stap **Eigenschappen** het volgende op:
+1. Geef in de stap **Eigenschappen** het volgende op:
 
    * **Basis**
 
@@ -72,9 +66,12 @@ De methode voor het maken van een inhoudsfragment is:
          Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
 
 
-5. Selecteer **Maken** om de actie te voltooien en **open** vervolgens het fragment voor het bewerken of keer terug naar de console met **Gereed**.
+1. Selecteer **Maken** om de actie te voltooien en **open** vervolgens het fragment voor het bewerken of keer terug naar de console met **Gereed**.
 
-## Handelingen voor een inhoudsfragment {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >In de modus **List** van de console kunt u de **View Settings** bijwerken om de kolom **Content Fragment Model** in te schakelen.
+
+## Handelingen voor een inhoudsfragment in de middelenconsole {#actions-for-a-content-fragment-assets-console}
 
 In de **Assets** console is een reeks acties beschikbaar voor uw inhoudsfragmenten, of:
 
@@ -125,7 +122,7 @@ Uw fragment openen voor bewerken:
 >U hebt de juiste machtigingen nodig om een inhoudsfragment te bewerken. Neem contact op met de systeembeheerder als er problemen optreden.
 
 1. Met de console **Middelen** kunt u naar de locatie van het inhoudsfragment navigeren.
-2. Open het fragment voor bewerking door:
+1. Open het fragment voor bewerking door:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
    * Selecteer het fragment en **Bewerk** op de werkbalk.
@@ -140,23 +137,49 @@ Uw fragment openen voor bewerken:
    >2. Het zijpaneel kan worden verborgen/getoond gebruikend **Kneep van de Kant** pictogram.
 
 
-3. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
-
-   * Variaties: [De inhoud bewerken](#editing-the-content-of-your-fragment) en [De variaties beheren](#creating-and-managing-variations-within-your-fragment)
-
-   * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [Gekoppelde inhoud](#associating-content-with-your-fragment)
-   * [Metagegevens](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [Voorvertoning](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![modi](assets/cfm-managing-04.png)
-
-4. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan** of **Annuleren** naar wens.
+1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan** of **Annuleren** naar wens.
 
    >[!NOTE]
    >
    >Zowel met **Opslaan** als **Annuleren** sluit u de editor af. Zie [Opslaan, annuleren en versies](#save-cancel-and-versions) voor gedetailleerde informatie over hoe beide opties werken voor contentfragmenten.
+
+## Modi en handelingen in de Inhoudsfragmenteditor {#modes-actions-content-fragment-editor}
+
+Er zijn verschillende modi en acties beschikbaar in de Inhoudsfragmenteditor.
+
+### Modi in de Inhoudsfragmenteditor {#modes-in-the-content-fragment-editor}
+
+Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
+
+* Variaties: [De inhoud bewerken](#editing-the-content-of-your-fragment) en [De variaties beheren](#creating-and-managing-variations-within-your-fragment)
+
+* [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Gekoppelde inhoud](#associating-content-with-your-fragment)
+* [Metagegevens](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Voorvertoning](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![modi](assets/cfm-managing-04.png)
+
+### Werkbalkhandelingen in de Inhoudsfragmenteditor {#toolbar-actions-in-the-content-fragment-editor}
+
+Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
+
+![modi](assets/cfm-managing-top-toolbar.png)
+
+* Onder de fragmentnaam ziet u de naam van het [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) dat wordt gebruikt voor het maken van het huidige fragment:
+
+   * De naam is ook een verbinding die de modelredacteur zal openen.
+
+* Zie de status van het fragment; bijvoorbeeld informatie over het tijdstip waarop deze is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
+
+   * Nieuw: grijs
+   * Concept: blauw
+   * Gepubliceerd: groen
+   * Gewijzigd: oranje
+   * gedeactiveerd: rood
+
+* **[Het fragment](#publishing-and-referencing-a-fragment)** publiceren.
 
 ## Opslaan, annuleren en versies {#save-cancel-and-versions}
 
@@ -304,7 +327,8 @@ Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
-* Na de aanmaak; in de **Assets** console.
+* Na de aanmaak; het gebruiken van [acties beschikbaar in de console van Activa](#actions-for-a-content-fragment-assets-console).
+* Vanuit de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor).
 * Wanneer u [een pagina publiceert die het fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing) gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
