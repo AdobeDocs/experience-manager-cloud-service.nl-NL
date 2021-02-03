@@ -1,22 +1,16 @@
 ---
-title: Inhoudslevering met behulp van inhoudsfragmenten met de Adobe Experience Manager als Cloud Service GraphQL API
+title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 1%
+source-wordcount: '3192'
+ht-degree: 0%
 
 ---
 
 
 # AEM GraphQL API voor gebruik met Content Fragments {#graphql-api-for-use-with-content-fragments}
-
->[!CAUTION]
->
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
->
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 De Adobe Experience Manager als Cloud Service (AEM) GraphQL API die wordt gebruikt met Content Fragments is sterk gebaseerd op de standaard, open-source GraphQL API.
 
@@ -28,7 +22,23 @@ Door de GraphQL API in AEM te gebruiken, kunt u inhoudsfragmenten efficiënt aan
 
 ## De GraphQL API {#graphql-api}
 
-*&quot;GraphQL is een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld voordat het in 2015 openbaar werd uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van om het even welke grootte..&quot;* Zie [GraphQL Foundation](https://foundation.graphql.org/).
+GraphQL is:
+
+* &quot;*..een querytaal voor API&#39;s en een runtime voor het uitvoeren van deze query&#39;s met uw bestaande gegevens. GraphQL verstrekt een volledige en begrijpelijke beschrijving van de gegevens in uw API, geeft cliënten de macht om precies te vragen wat zij en niets meer nodig hebben, maakt het gemakkelijker om APIs in tijd te evolueren, en laat krachtige ontwikkelaarshulpmiddelen toe.*&quot;.
+
+   Zie [GraphQL.org](https://graphql.org)
+
+* &quot;*..een open specificatie voor een flexibele API-laag. GrafiekQL op uw bestaande achtergronden plaatsen om producten sneller dan ooit te bouwen....*&quot;.
+
+   Zie [GraphQL](https://www.graphql.com) verkennen.
+
+* *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld voordat deze in 2015 openbaar werd uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van om het even welke grootte..&quot;*
+
+   Zie [GraphQL Foundation](https://foundation.graphql.org/).
+
+<!--
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+-->
 
 Zie de volgende secties (onder andere bronnen) voor meer informatie over de GraphQL API:
 
@@ -52,9 +62,149 @@ GraphQL voor AEM implementatie is gebaseerd op de standaard Java Library GraphQL
 
 * [GraphQL Java bij GitHub](https://github.com/graphql-java)
 
+### GraphQL-terminologie {#graphql-terminology}
+
+GraphQL gebruikt het volgende:
+
+* **[Zoekopdrachten](https://graphql.org/learn/queries/)**
+
+* **[Schema&#39;s en typen](https://graphql.org/learn/schema/)**:
+
+   * Schema&#39;s worden gegenereerd door AEM op basis van de modellen van inhoudsfragmenten.
+   * Gebruikend uw schema&#39;s, stelt GraphQL de types en verrichtingen voor toegelaten GraphQL voor AEM implementatie voor.
+
+* **[Velden](https://graphql.org/learn/queries/#fields)**
+
+* **[GraphQL-eindpunt](#graphql-aem-endpoint)**
+   * De weg in AEM die aan vragen GraphQL antwoordt, en toegang tot de schema&#39;s GraphQL verleent.
+
+   * Zie [Het toelaten van uw Eindpunt GraphQL](#enabling-graphql-endpoint) voor verdere details.
+
+Zie [ (GraphQL.org) Inleiding aan GraphQL](https://graphql.org/learn/) voor uitvoerige details, met inbegrip van [Beste praktijken](https://graphql.org/learn/best-practices/).
+
+### GraphQL-querytypen {#graphql-query-types}
+
+Met GraphQL kunt u vragen uitvoeren om of terug te keren:
+
+* A **single entry**
+
+* A **[lijst van vermeldingen](https://graphql.org/learn/schema/#lists-and-non-null)**
+
+U kunt ook het volgende uitvoeren:
+
+* [Blijvende query&#39;s die in cache zijn geplaatst](#persisted-queries-caching)
+
+## GraphQL voor AEM Endpoint {#graphql-aem-endpoint}
+
+Het eindpunt is de weg die wordt gebruikt om tot GraphQL voor AEM toegang te hebben. Met dit pad kunt u (of uw app) het volgende doen:
+
+* toegang tot het GraphQL-schema;
+* verzend uw vragen GraphQL,
+* ontvangt de reacties (op uw vragen GraphQL).
+
+Het bewaarplaatspad van GraphQL voor AEM eindpunt is:
+
+`/content/cq:graphql/global/endpoint`
+
+Uw app kan het volgende pad gebruiken in de aanvraag-URL:
+
+`/content/_cq_graphql/global/endpoint.json`
+
+Om het eindpunt voor GraphQL voor AEM toe te laten moet u:
+
+>[!CAUTION]
+>
+>Deze stappen kunnen in de nabije toekomst veranderen.
+
+* [GrafiekQL-eindpunt inschakelen](#enabling-graphql-endpoint)
+* [Aanvullende configuraties uitvoeren](#additional-configurations-graphql-endpoint)
+
+### Het toelaten van uw Eindpunt GraphQL {#enabling-graphql-endpoint}
+
+>[!NOTE]
+>
+>Zie [Ondersteunende pakketten](#supporting-packages) voor details van de pakketten die Adobe verstrekt helpen deze stappen vereenvoudigen.
+
+Om vragen GraphQL in AEM toe te laten, creeer een eindpunt bij `/content/cq:graphql/global/endpoint`:
+
+* De knooppunten `cq:graphql` en `global` moeten van het type `sling:Folder` zijn.
+* Knooppunt `endpoint` moet van het type `nt:unstructured` zijn en een `sling:resourceType` van `graphql/sites/components/endpoint` bevatten.
+
+>[!CAUTION]
+>
+>Er is momenteel een bekende kwestie met het eindpunt:
+>
+>* De vermelding `cq:graphql` wordt gezien in de **Sites** console; op het hoogste niveau.
+   >  Dit mag niet worden gebruikt.
+
+
+>[!CAUTION]
+>
+>Het eindpunt is toegankelijk voor iedereen. Dit kan - vooral bij publiceer instanties - een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
+>
+>U kunt opstelling ACLs, aangewezen aan uw gebruiksgeval, op het eindpunt.
+
+>[!NOTE]
+>
+>Uw eindpunt zal niet uit-van-de-doos werken. U zult [Aanvullende Configuraties voor Eindpunt GraphQL](#additional-configurations-graphql-endpoint) afzonderlijk moeten verstrekken.
+
+>[!NOTE]
+>Bovendien kunt u vragen testen en zuiveren GraphQL gebruikend [GrahiQL winde](#graphiql-interface).
+
+### Aanvullende configuraties voor GraphQL-eindpunt {#additional-configurations-graphql-endpoint}
+
+>[!NOTE]
+>
+>Zie [Ondersteunende pakketten](#supporting-packages) voor details van de pakketten die Adobe verstrekt helpen deze stappen vereenvoudigen.
+
+Aanvullende configuraties zijn vereist:
+
+* Dispatcher:
+   * Vereiste URL&#39;s toestaan
+   * Verplicht
+* Vanity URL:
+   * Een vereenvoudigde URL toewijzen voor het eindpunt
+   * Optioneel
+* OSGi-configuratie:
+   * GraphQL Servlet-configuratie:
+      * Handvatten verzoeken aan het eindpunt
+      * De configuratienaam is `org.apache.sling.graphql.core.GraphQLServlet`. Het moet als OSGi fabrieksconfiguratie worden verstrekt
+      * `sling.servlet.extensions` moet worden ingesteld op  `[json]`
+      * `sling.servlet.methods` moet worden ingesteld op  `[GET,POST]`
+      * `sling.servlet.resourceTypes` moet worden ingesteld op  `[graphql/sites/components/endpoint]`
+      * Verplicht
+   * Schema Servlet Configuration:
+      * Maakt het GraphQL-schema
+      * De configuratienaam is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. Het moet als OSGi fabrieksconfiguratie worden verstrekt
+      * `sling.servlet.extensions` moet worden ingesteld op  `[GQLschema]`
+      * `sling.servlet.methods` moet worden ingesteld op  `[GET]`
+      * `sling.servlet.resourceTypes` moet worden ingesteld op  `[graphql/sites/components/endpoint]`
+      * Verplicht
+   * CSRF-configuratie:
+      * Beveiligingsbescherming voor het eindpunt
+      * De configuratienaam is `com.adobe.granite.csrf.impl.CSRFFilter`
+      * `/content/cq:graphql/global/endpoint` toevoegen aan de bestaande lijst met uitgesloten paden (`filter.excluded.paths`)
+      * Verplicht
+
+### Ondersteunende pakketten {#supporting-packages}
+
+Om de opstelling van een eindpunt te vereenvoudigen GraphQL, verstrekt Adobe het [GraphQL pakket van de Steekproef ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip).
+
+Dit archief bevat zowel [de vereiste extra configuratie](#additional-configurations-graphql-endpoint) als [het eindpunt GraphQL](#enabling-graphql-endpoint). Als geïnstalleerd op een gewone AEM instantie, zal het een volledig werkend eindpunt GraphQL op `/content/cq:graphql/global/endpoint` blootstellen.
+
+Dit pakket is bedoeld om een blauwdruk voor uw eigen projecten te zijn GraphQL. Zie het pakket **README** voor meer informatie over het gebruik van het pakket.
+
+Als u verkiest om de vereiste configuratie manueel tot stand te brengen, verstrekt Adobe ook een specifieke [GraphQL het Pakket van de Inhoud van het Eindpunt](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). Dit inhoudspakket bevat het eindpunt GraphQL slechts, zonder enige configuratie.
+
 ## GraphiQL Interface {#graphiql-interface}
 
-AEM Graph API omvat een implementatie van de standaard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. Hierdoor kunt u query&#39;s rechtstreeks invoeren en testen.
+<!--
+AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
+-->
+
+Een implementatie van de standaard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is beschikbaar voor gebruik met AEM GraphQL. Dit kan [geïnstalleerd met AEM](#installing-graphiql-interface) zijn.
+
+Met deze interface kunt u query&#39;s rechtstreeks invoeren en testen.
 
 Bijvoorbeeld:
 
@@ -63,6 +213,12 @@ Bijvoorbeeld:
 Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch voorstellen, samen met een geschiedenis en online documentatie:
 
 ![GraphiQL ](assets/cfm-graphiql-interface.png "InterfaceGraphiQL Interface")
+
+### Installatie van de AEM GraphiQL-interface {#installing-graphiql-interface}
+
+De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)-pakket.
+
+Zie het pakket **README** voor volledige informatie; volledige informatie over de manier waarop het op een AEM kan worden geïnstalleerd - in een verscheidenheid aan scenario&#39;s.
 
 ## Gevallen gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
 
@@ -76,13 +232,23 @@ De gebruiksgevallen kunnen van het type van AEM als Cloud Service milieu afhange
       * GraphQL in AEM als Cloud Service is momenteel een alleen-lezen API.
       * De REST-API kan worden gebruikt voor CR(u)D-bewerkingen.
 
+## Machtigingen {#permission}
+
+De machtigingen zijn vereist voor toegang tot middelen.
+
 ## Schema genereren {#schema-generation}
 
 GraphQL is een sterk getypte API, wat betekent dat de gegevens duidelijk gestructureerd en georganiseerd moeten zijn door type.
 
 De specificatie GraphQL verstrekt een reeks richtlijnen op hoe te om tot een robuuste API voor het ondervragen van gegevens over een bepaalde instantie te leiden. Om dit te doen, moet een cliënt [Schema](#schema-generation) halen, die alle types noodzakelijk voor een vraag bevat.
 
-Voor Inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op [Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) en hun gegevenstypen.
+Voor Inhoudsfragmenten zijn de GrafiekQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) en hun gegevenstypen.
+
+>[!CAUTION]
+>
+>Alle schema&#39;s GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **Enabled** zijn geweest) zijn leesbaar door het eindpunt GraphQL.
+>
+>Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
 Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` heeft gemaakt, AEM het object `article` van het type `ArticleModel` genereren. De velden in dit type komen overeen met de velden en gegevenstypen die in het model zijn gedefinieerd.
 
@@ -95,7 +261,7 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` 
 
    Dit toont aan dat het geproduceerde type `ArticleModel` verscheidene [gebieden](#fields) bevat.
 
-   * Drie van hen zijn gecontroleerd door de gebruiker: `author`, `main` en `linked_article`.
+   * Drie van hen zijn gecontroleerd door de gebruiker: `author`, `main` en `referencearticle`.
 
    * De andere velden zijn automatisch toegevoegd door AEM en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. in dit voorbeeld, `_path`, `_metadata`, `_variations`. Deze [helpergebieden](#helper-fields) zijn duidelijk met een voorafgaande `_` om tussen wat door de gebruiker is bepaald en wat auto-geproduceerd te onderscheiden.
 
@@ -121,7 +287,7 @@ Als u bijvoorbeeld:
 >
 >Dit is belangrijk om op te merken voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
 
-Het schema wordt gediend door het zelfde eindpunt zoals de vragen GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding `GQLschema` wordt geroepen. Als u bijvoorbeeld een eenvoudig `GET`-verzoek uitvoert op `/content/graphql/endpoint.GQLschema`, wordt het schema uitgevoerd met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
+Het schema wordt gediend door het zelfde eindpunt zoals de vragen GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding `GQLschema` wordt geroepen. Als u bijvoorbeeld een eenvoudig `GET`-verzoek uitvoert op `/content/cq:graphql/global/endpoint.GQLschema`, wordt het schema uitgevoerd met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
 
 ## Fields {#fields}
 
@@ -168,7 +334,7 @@ In de volgende code worden de paden weergegeven van alle inhoudsfragmenten die z
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -180,15 +346,17 @@ Als u één inhoudsfragment van een bepaald type wilt ophalen, moet u ook eerst 
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
-Zie [Voorbeeldquery - Een enkel City-fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment).
+Zie [Voorbeeldquery - Eén specifiek stedenfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
 
 #### Metagegevens {#metadata}
 
@@ -217,12 +385,14 @@ Ga als volgt te werk om te zoeken naar metagegevens:
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _path
-    _metadata {
-      stringMetadata {
-        name
-        value
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      _metadata {
+        stringMetadata {
+          name
+          value
+        }
       }
     }
   }
@@ -246,8 +416,10 @@ Het veld `_variations` is geïmplementeerd om het opvragen van de variaties in e
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _variations
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _variations
+    }
   }
 }
 ```
@@ -262,14 +434,14 @@ Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/conten
 
 GraphQL laat variabelen toe om in de vraag worden geplaatst. Voor meer informatie kunt u de [documentatie GraphQL voor GraphiQL](https://graphql.org/learn/queries/#variables) zien.
 
-Als u bijvoorbeeld alle inhoudsfragmenten van het type `Article` wilt ophalen die een specifieke variatie hebben, kunt u de variabele `variation` in GraphiQL opgeven:
+Als u bijvoorbeeld alle inhoudsfragmenten van het type `Article` wilt ophalen die een specifieke variatie hebben, kunt u de variabele `variation` in GraphiQL opgeven.
 
 ![GraphQL ](assets/cfm-graphqlapi-03.png "VariablesGraphQL Variables")
 
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -292,10 +464,11 @@ Zo kunt u bijvoorbeeld het veld `adventurePrice` opnemen in een query voor alle 
 ![GraphQL-](assets/cfm-graphqlapi-04.png "RichtlijnenGraphQL-richtlijnen")
 
 ```xml
-query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+### query
+query GetAdventureByType($includePrice: Boolean!) {
+  adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
@@ -306,6 +479,47 @@ query getAdventureByType($includePrice: Boolean!) {
     "includePrice": true
 }
 ```
+
+## Filteren {#filtering}
+
+U kunt het filtreren in uw vragen gebruiken GraphQL om specifieke gegevens terug te keren.
+
+Bij het filteren wordt een syntaxis gebruikt die is gebaseerd op logische operatoren en expressies.
+
+De volgende (basis)query filtert bijvoorbeeld alle personen met de naam `Jobs` of `Smith`:
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+Zie voor meer voorbeelden:
+
+* details van [GraphQL voor AEM extensies](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+
+* [Voorbeeldquery&#39;s met deze voorbeeldinhoud en -structuur](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+   * En de [Voorbeeldinhoud en -structuur](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) voorbereid voor gebruik in voorbeeldquery&#39;s
+
+* [Voorbeeldquery&#39;s op basis van het WKND-project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## Blijvende query&#39;s (cache) {#persisted-queries-caching}
 
@@ -511,7 +725,7 @@ Om een website van derden in staat te stellen JSON-uitvoer te gebruiken, moet ee
 
    * legering: [uw domein] of alloworiginregexp: [uw domeinregex]
    * Ondersteunde methoden: [POST]
-   * toegestane paden: [&quot;/apps/graphql-enablement/content/endpoint.gql(/persisted)?&quot;]
+   * toegestane paden: [&quot;/content/graphql/global/endpoint.json&quot;]
 
 * De toegang tot van GraphQL stelde vragen eindpunt voort:
 
@@ -524,41 +738,19 @@ Om een website van derden in staat te stellen JSON-uitvoer te gebruiken, moet ee
 >Het blijft de verantwoordelijkheid van de klant om:
 >
 >* alleen toegang verlenen tot vertrouwde domeinen
->* geen jokerteken [*] syntaxis gebruiken; die de eindpunten GraphQL aan de volledige wereld zal blootstellen.
+>* ervoor zorgen geen gevoelige informatie wordt blootgesteld
+>* geen jokerteken [*] syntaxis gebruiken; dit zal allebei voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken en zal het aan de volledige wereld ook blootstellen.
 
 
+>[!CAUTION]
+>
+>Alle GraphQL [schema&#39;s](#schema-generation) (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **Ingeschakeld** zijn) zijn leesbaar door het eindpunt GraphQL.
+>
+>Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
-## Filteren {#filtering}
+## Verificatie {#authentication}
 
-U kunt het filtreren in uw vragen gebruiken GraphQL om specifieke gegevens terug te keren.
-
-Bij het filteren wordt een syntaxis gebruikt die is gebaseerd op logische operatoren en expressies.
-
-Zie voor voorbeelden:
-
-* details van [GraphQL voor AEM extensies](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-some-extensions)
-
-* [Voorbeeldinhoud en -](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) structuur voorbereid voor gebruik in voorbeeldquery&#39;s
-
-* [Voorbeeldquery&#39;s met deze voorbeeldinhoud en -structuur](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
-
-* [Voorbeeldquery&#39;s op basis van het WKND-project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
-
-## Machtigingen {#permission}
-
-De machtigingen zijn vereist voor toegang tot middelen.
-
-<!-- to be addressed later -->
-
-<!-- 
-## Authentication {#authentication}
--->
-
-<!-- to be addressed later -->
-
-<!-- 
-## Caching {#caching}
--->
+Zie [Authentificatie voor Verre AEM Vraag GraphQL op Inhoudsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
 
 <!-- to be addressed later -->
 
@@ -571,54 +763,6 @@ De machtigingen zijn vereist voor toegang tot middelen.
 <!--
 ## Paging {#paging}
 -->
-
-## Eindpunten {#end-points}
-
-Het eindpunt is de weg die wordt gebruikt om tot GraphQL voor AEM toegang te hebben. Met dit pad kunt u (of uw app) het volgende doen:
-
-* toegang tot het GraphQL-schema;
-* verzend uw vragen GraphQL,
-* ontvangt de reacties (op uw vragen GraphQL).
-
-Om toegang tot servers te hebben GraphQL in AEM moet u een eindpunt vormen. Dit omvat ook twee configuraties OSGi.
-
-1. Het het Verdelen schema servlet die op verzoeken antwoordt om het GrafiekQL- schema terug te winnen:
-
-   ![AEM Sites GraphQL Schema Servlet](assets/cfm-endpoint-01.png)
-
-   * **Kiezers** (`sling.servlet.selectors`) moeten leeg blijven.
-
-   * **De Types**  van middel (`sling.servlet.resourceTypes`) bepalen het middeltype dat servlet GraphQL zou moeten luisteren aan.
-Bijvoorbeeld:
-      `graphql-enablement/components/endpoint`.
-
-   * **Methoden** (&#39;sling.servlet.methods^)
-
-      De HTTP-methode waarnaar de servlet moet luisteren; gewoonlijk `GET`.
-
-   * **Extensies** (`sling.servlet.extensions`)
-
-      Geef de extensie op waarop de Schema Servlet moet reageren. In dit geval is het `GQLschema`, compatibel met de specificaties GraphQL.
-
-2. servlet die aan grafische verzoeken beantwoordt:
-
-   ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
-
-   * **Kiezers** (`sling.servlet.selectors`) moeten leeg blijven.
-
-   * **Het Type**  van middel (`sling.servlet.resourceTypes`) het middeltype de servlet GraphQL zou moeten antwoorden aan.
-Bijvoorbeeld, `graphql-enablement/components/endpoint`.
-
-   * **Methoden** (`sling.servlet.methods`) De HTTP-methoden waarop het GraphQL-servlet moet reageren, meestal  `GET` en  `POST`.
-
-   * **Extensies** (`sling.servlet.extensions`) De extensie die luistert naar GraphQL-verzoeken, meestal  `gql`.
-
-3. U moet nu een eindpunt tot stand brengen - een knoop van het verbinden:resourceType die in deze configuraties wordt bepaald.
-Bijvoorbeeld, om een eindpunt tot stand te brengen voor het terugwinnen van het Schema GraphQL creeer een nieuw knooppunt onder `/apps/<my-site>/graphql`:
-
-   * Naam: `endpoint`
-   * Primair type: `nt:unstructured`
-   * sling:resourceType: `graphql-enablement/components/endpoint`
 
 ## Veelgestelde vragen {#faqs}
 
