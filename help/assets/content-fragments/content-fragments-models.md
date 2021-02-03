@@ -2,21 +2,15 @@
 title: Modellen van contentfragmenten
 description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 8%
+source-wordcount: '2156'
+ht-degree: 4%
 
 ---
 
 
 # Modellen van contentfragmenten {#content-fragment-models}
-
->[!CAUTION]
->
->De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
->
->Neem contact op met [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) om de API voor uw AEM in te schakelen als een programma voor Cloud Servicen.
 
 Met Inhoudsfragmentmodellen wordt de inhoudsstructuur gedefinieerd voor uw [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
@@ -25,6 +19,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Maak](#creating-a-content-fragment-model) en  [configureer](#defining-your-content-fragment-model) uw modellen van inhoudsfragmenten
 1. [Schakel ](#enabling-disabling-a-content-fragment-model) Modellen van inhoudsfragmenten in voor gebruik bij het maken van inhoudsfragmenten
+1. [Sta uw Modellen van het Fragment van de Inhoud op de vereiste ](#allowing-content-fragment-models-assets-folder) omslagen van Activa toe door  **Beleid** te vormen.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
    >
    >Als het [gebruik van inhoudsfragmentmodellen niet is ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md), is de optie **Maken** niet beschikbaar.
 
-1. Geef de **modeltitel** op. U kunt **Codes**, en **Beschrijving** indien nodig ook toevoegen.
+1. Geef de **modeltitel** op. U kunt ook **Codes**, een **Beschrijving** toevoegen en **Model** inschakelen om het model ](#enabling-disabling-a-content-fragment-model) indien nodig in te schakelen.[
 
    ![titel en beschrijving](assets/cfm-models-02.png)
 
@@ -64,70 +59,35 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
    >
    >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (*****).
 
+   ![eigenschappen](assets/cfm-models-03.png)
+
 1. **Een veld toevoegen**
 
-   * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld.
+   * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
+
+      ![gegevenstype naar veld](assets/cfm-models-04.png)
 
    * Nadat een veld aan het model is toegevoegd, wordt in het rechterdeelvenster **Eigenschappen** weergegeven die voor dat specifieke gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist.
-Vele eigenschappen zijn duidelijk, voor extra details zie [Eigenschappen](#properties).
+
+      * Vele eigenschappen zijn duidelijk, voor extra details zie [Eigenschappen](#properties).
+      * Als u een **Veld Label** typt, wordt de **Eigenschapnaam** automatisch aangevuld; als deze naam leeg is, kan de tag achteraf handmatig worden bijgewerkt.
+
+      Bijvoorbeeld:
+
+      ![veldeigenschappen](assets/cfm-models-05.png)
+
 
 1. **Een veld verwijderen**
 
    Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
 
-1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist.
-
-1. Selecteer **Opslaan** om de definitie te behouden.
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
    ![remove](assets/cfm-models-06.png)
 
-1. Add all required fields, and define the related properties, as required. For example:
+1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist. Bijvoorbeeld:
 
    ![save](assets/cfm-models-07.png)
 
-1. Select **Save** to persist the definition.
--->
+1. Selecteer **Opslaan** om de definitie te behouden.
 
 ## Gegevenstypen {#data-types}
 
@@ -149,19 +109,16 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Content Reference**
    * verwijzingen naar andere inhoud, ongeacht het type; kan worden gebruikt om [geneste inhoud te maken](#using-references-to-form-nested-content)
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **Fragmentverwijzing**
+   * Verwijzingen naar andere inhoudsfragmenten; kan worden gebruikt om [geneste inhoud te maken](#using-references-to-form-nested-content)
+   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+      * Een nieuw inhoudsfragment maken op basis van het juiste model
+* **JSON-object**
+   * Hiermee kan de auteur van het inhoudsfragment JSON-syntaxis invoeren in de overeenkomende elementen van een fragment.
+      * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
+      * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
+      * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 
 ## Eigenschappen {#properties}
 
@@ -187,15 +144,26 @@ bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vere
 
    Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* **UniqueContent (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die van het huidige model zijn gemaakt.**
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
+
+   Een veld **Enkele regel tekst** met de naam `Country` in het inhoudsfragmentmodel kan bijvoorbeeld niet de waarde `Japan` in twee afhankelijke inhoudsfragmenten hebben. Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+
+   >[!NOTE]
+   Er wordt gezorgd voor uniformiteit per taalwortel.
+
+   >[!NOTE]
+   Variaties kunnen dezelfde *unieke*-waarde hebben als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+
+* ****
+TranslatableChecking the &quot;Translatable&quot; checkbox on a field in CF model editor
+
+   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd in de vertaalconfig, context `/content/dam/<tenant>`, als deze nog niet aanwezig is.
+   * Voor GraphQL: Stel een `<translatable>`-eigenschap in het veld Inhoudsfragment in op `yes` om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
+
+* Zie **[Fragmentverwijzing (geneste fragmenten)](#fragment-reference-nested-fragments)** voor meer informatie over dat specifieke gegevenstype en zijn eigenschappen.
 
 ## Validatie {#validation}
 
@@ -205,72 +173,65 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
    * Vergelijk met een vooraf gedefinieerde regex.
 * **Getal**
    * Controleren op specifieke waarden.
+* **Content Reference**
+   * Testen op specifieke typen inhoud.
+   * Er kan alleen worden verwezen naar elementen van een opgegeven bestandsgrootte of kleiner.
+   * Er kan alleen worden verwezen naar afbeeldingen binnen een vooraf gedefinieerd bereik van breedte en/of hoogte (in pixels).
+* **Fragmentverwijzing**
+   * Testen op een specifiek inhoudsfragmentmodel.
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Referenties gebruiken om geneste inhoud {#using-references-to-form-nested-content} te vormen
 
-Content Fragments can form nested content, using either of the following data types:
+Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
 * **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+   * Verstrekt een eenvoudige verwijzing naar andere inhoud; van elk type.
+   * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[Fragmentverwijzing](#fragment-reference-nested-fragments)**  (geneste fragmenten)
+   * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
+   * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
+
+      >[!NOTE]
+      Deze methode is van bijzonder belang in combinatie met [Aflevering van inhoud zonder kop met gebruik van Content Fragments met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+   * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+AEM heeft een terugkerende bescherming voor:
+* Content References
+Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 
-### Content Reference {#content-reference}
+* Fragmentverwijzingen in GraphQL
+Als u een diepe vraag creeert die veelvoudige Content Fragments terugkeert die door elkaar van verwijzingen worden voorzien, zal het ongeldig bij eerste voorkomen terugkeren.
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### Inhoudsverwijzing {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+Met de Content Reference kunt u inhoud van een andere bron renderen. bijvoorbeeld een afbeeldings- of inhoudsfragment.
 
-<!-- Check screenshot - might need update
+Naast de standaardeigenschappen kunt u opgeven:
 
+* Het **basispad** voor inhoud waarnaar wordt verwezen.
+* De inhoudstypen waarnaar kan worden verwezen.
+* Beperkingen voor bestandsgrootten.
+* Afbeeldingsbeperkingen.
+   <!-- Check screenshot - might need update -->
    ![Content Reference](assets/cfm-content-reference.png)
--->
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang wanneer u inhoud ophaalt die u wilt gebruiken in uw app, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
-For example:
+Bijvoorbeeld:
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* een model dat de gegevens voor een werknemer definieert; deze omvatten :
+   * Een verwijzing naar het model dat de werkgever (onderneming) definieert
 
 ```xml
 type EmployeeModel {
@@ -287,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Dit is van bijzonder belang in combinatie met [Aflevering van inhoud zonder kop met gebruik van Content Fragments met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
-In addition to standard properties you can define:
+Naast de standaardeigenschappen kunt u definiëren:
 
-* **Render As**:
+* **Renderen als**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **multifield** : de auteur van het fragment kan meerdere, afzonderlijke, verwijzingen maken
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **fragmentreference** : hiermee kan de fragmentauteur één verwijzing naar een fragment selecteren
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **U kunt**
+meerdere modellen van het model selecteren. Bij het ontwerpen van het inhoudsfragment moeten fragmenten waarnaar wordt verwezen, met deze modellen zijn gemaakt.
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **Root**
+PathThis specifies a root path for any fragments referenced.
 
-* **Allow Fragment Creation**
+* **Fragment maken toestaan**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   Hierdoor kan de auteur van het fragment een nieuw fragment maken op basis van het juiste model.
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentreference samengesteld** : hiermee kan de auteur van het fragment een samenstelling maken door meerdere fragmenten te selecteren
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![Fragmentverwijzing](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+Er is ook een terugkerende bescherming voor de Verwijzingen van het Fragment in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
 
 ## Een inhoudsfragmentmodel {#enabling-disabling-a-content-fragment-model} in- of uitschakelen
 
@@ -366,6 +317,40 @@ Als u een model wilt uitschakelen dat is gemarkeerd als **Ingeschakeld**, gebrui
 * De corresponderende snelle actie (mouse-over het vereiste model).
 
 ![Een geactiveerd model uitschakelen](assets/cfm-status-disable.png)
+
+## Modellen voor inhoudsfragmenten toestaan in de middelenmap {#allowing-content-fragment-models-assets-folder}
+
+Om inhoudsbeheer uit te voeren, kunt u **Beleid** op de omslag van Activa vormen om te controleren welke Modellen van het Fragment van de Inhoud voor de verwezenlijking van het Fragment in die omslag worden toegestaan.
+
+>[!NOTE]
+Het mechanisme lijkt op [het toestaan van paginasjablonen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
+
+Om **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud te vormen**:
+
+1. Navigeer en open **Eigenschappen** voor de vereiste omslag van Activa.
+
+1. Open het tabblad **Beleid**, waar u kunt configureren:
+
+   * **Overgenomen van`<folder>`**
+
+      Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan worden aangepast (en de overerving wordt verbroken) als submappen andere modellen dan de bovenliggende map moeten toestaan.
+
+   * **Modellen van inhoudsfragmenten op pad toestaan**
+
+      U kunt meerdere modellen toestaan.
+
+   * **Modellen voor inhoudsfragmenten zijn toegestaan op tag**
+
+      U kunt meerdere modellen toestaan.
+   ![Beleid inhoudsfragmentmodel](assets/cfm-model-policy-assets-folder.png)
+
+1. **Wijzigingen** opslaan.
+
+De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
+* Het **Beleid** voor **Allow Content Fragment Models**.
+* Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
+* Als de overervingsketen geen resultaat oplevert, bekijkt u de **Cloud Services**-configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
+* Als geen van de bovenstaande resultaten worden weergegeven, zijn er geen modellen toegestaan voor die map.
 
 ## Een inhoudsfragmentmodel {#deleting-a-content-fragment-model} verwijderen
 
