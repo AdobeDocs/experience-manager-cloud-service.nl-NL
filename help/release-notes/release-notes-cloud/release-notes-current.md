@@ -2,10 +2,10 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
+source-git-commit: 7ce352515b375d553cd00802204274c3c6774bb4
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 1%
+source-wordcount: '863'
+ht-degree: 0%
 
 ---
 
@@ -23,23 +23,38 @@ De volgende release (2021.1.0) vindt plaats op 28 januari 2021.
 
 * **[HTTP-API voor](/help/assets/content-fragments/assets-api-content-fragments.md)** inhoudsfragment: Voeg de mogelijkheid toe om variaties van inhoudsfragmenten toe te voegen/bij te werken en te verwijderen met de HTTP-API.
 
+* **[GraphQL API voor levering](/help/assets/content-fragments/graphql-api-content-fragments.md)** van inhoudsfragmenten: Mogelijkheid om inhoudsfragmenten op te vragen met de syntaxis GraphQL en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
+
+* **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
+
+* Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
+
+* Ondersteuning voor het nesten van modellen van inhoudsfragmenten om het maken van geneste structuren voor inhoudsfragmenten mogelijk te maken via specifieke gegevenstypen van Content Fragment Reference of verwijzingen van inhoudsfragmenten inline in tekstvelden met meerdere regels.
+
+* Aanvullende validatieregels beschikbaar in de gegevenstypen van het inhoudsfragmentmodel, waaronder &quot;uniek&quot;, &quot;vereist&quot; en &quot;vertaalbaar&quot;.
+
+* Mogelijkheid om Content Fragment-modellen van tags te voorzien en het maken van Content Fragment toe te staan in een map met beleid per tag of pad.
+
+* Verbeteringen op gebied van bruikbaarheid in de Content Fragment-editor, inclusief publicatieactie en weergave van het model waarop een fragment is gebaseerd.
+
+* Mogelijkheid om JSON-uitvoer direct voor te vertonen in de Content Fragment Editor.
+
+
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
-* Integratie met [!DNL Adobe InDesign Server] is nu beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]. Het biedt automatisering om [!DNL Adobe InDesign] dossiers te verwerken gebruikend [!DNL Adobe InDesign Server] scripting en laat gebruikers [!DNL Assets] malplaatjegebruikersinterface gebruiken om brochures of advertenties tot stand te brengen. Alleen [!DNL InDesign Server] wordt gehost door [!DNL Adobe Managed Services] wordt ondersteund voor [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
+* [!DNL Experience Manager] als een  [!DNL Cloud Service] uitbreiding van de functie Slimme tags ter ondersteuning van de identificatie van trefwoorden en entiteiten in op tekst gebaseerde elementen. De tekst wordt geïdentificeerd, geïndexeerd, en ter beschikking gesteld als meta-gegevens om de onderzoekservaring zonder de behoefte aan om het even welke configuratie te verbeteren. Zie [Slimme tags](/help/assets/smart-tags.md).
 
-* [!DNL Experience Manager] wordt verbeterd om elementverwijzingen bij te houden en weer te geven wanneer een element wordt gebruikt in een externe  [!DNL Experience Manager Sites] implementatie met de functionaliteit Verbonden elementen. Een nieuw [!UICONTROL References] lusje in activa [!UICONTROL Properties] pagina maakt nu een lijst van lokale en verre verwijzingen van de activa. Met de verwijzingen kunnen DAM-gebruikers elementgebruik bijhouden op [!DNL Sites] pagina&#39;s en in samengestelde elementen in [!DNL Assets]. Zie [Aangesloten elementen configureren en gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
-
-* [!DNL Dynamic Media] De mogelijkheden zijn nu toegankelijk via  [!DNL Sites] op afbeeldingen gebaseerde Core Components. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie [Core Components 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
-
-* [!DNL Experience Manager] met de bureaubladtoepassing kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de bureaubladinterface te slepen. Zie [Elementen toevoegen met de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* MXF-bestandsindeling wordt nu ondersteund. Zie [ondersteunde bestandsindelingen](/help/assets/file-format-support.md#video-formats).
 
 ## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Venia Reference Site - 2020.12.01 met de nieuwste versie van CIF Core Components v1.6.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer informatie.
+* Product Experience Management: Het nieuwe lusje van eigenschappen van de &quot;Handel&quot;voor Activa en de Fragmenten van de Ervaring. Op dit tabblad kunt u producten/categorieën koppelen aan Elementen en Fragmenten ervaren. Op het tabblad vindt u ook real-time gegevens voor gekoppelde producten/categorieën en een koppeling om details weer te geven in de productconsole.
 
-* Uitgebrachte CIF Core Components v1.6.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer informatie.
+* Uitgebrachte CIF Venia Reference Site - 2021.02.02 met de nieuwste versie van CIF Core Components v1.7.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) voor meer informatie.
+
+* Uitgebrachte CIF Core Components v1.7.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) voor meer informatie.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -68,6 +83,23 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.1.0 is 14 janua
 ### Opgeloste problemen {#crt-bug-fixes}
 
 * Verscheidene insectenmoeilijke situaties die op de AEM Convertor van de Verzender en de Modernizer van de Bewaarplaats worden gedaan hulpmiddelen. Raadpleeg [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## AEM als Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+
+### Nieuwe functies {#what-is-new-foundation}
+
+* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en AEM als milieu&#39;s van de Cloud Service te maken. Lees meer door [de documentatie](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door de [zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) te raadplegen.
+
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+De AEM als Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren.
+
+Voor deze afgifte zijn twee nieuwe analysatoren toegevoegd:
+
+* herpuntanalyse
+* bundle-nativecode
+
+Raadpleeg de documentatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) voor meer informatie.
 
 ## Tools voor de overgang naar Cloud Service {#code-transition-tools}
 
