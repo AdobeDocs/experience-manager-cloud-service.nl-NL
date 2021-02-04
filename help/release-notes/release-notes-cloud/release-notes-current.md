@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
+source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,9 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 * **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
 
-* [De ](/help/implementing/developing/hybrid/remote-page.md) component RemotePage biedt ondersteuning voor het weergeven en bewerken van externe SPA binnen AEM.
+* **[De RemotePage-component](/help/implementing/developing/hybrid/remote-page.md)**: Extra ondersteuning voor het weergeven en bewerken van externe SPA in AEM.
+
+* **[Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Mogelijkheid toegevoegd om een zelfstandige toepassing van één pagina naar een AEM instantie te uploaden, bewerkbare gedeelten van inhoud toe te voegen en het schrijven van inhoud in te schakelen.
 
 * Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
 
