@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Inleiding {#introduction}
 
->[!IMPORTANT]
->
->Deze functie is nog niet beschikbaar. Zie de [Release-aantekeningen](/help/release-notes/release-notes-cloud/release-notes-current.md) voor een actuele lijst met functies.
-
 Sommige architecturen baseren zich op het maken van vraag aan AEM als Cloud Service van een toepassing die op een server buiten AEM infrastructuur wordt ontvangen. Bijvoorbeeld, een mobiele toepassing die een server roept, die dan API verzoeken om als Cloud Service te AEM.
 
 De server-aan-server stroom wordt hieronder beschreven, samen met een vereenvoudigde stroom voor ontwikkeling. De AEM als Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) wordt gebruikt om tokens te produceren nodig voor het authentificatieproces.
+
+>[!NOTE]
+>
+>Naast deze documentatie, kunt u het leerprogramma over [Symbolische authentificatie voor AEM als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) ook raadplegen.
 
 ## De server-naar-server stroom {#the-server-to-server-flow}
 
