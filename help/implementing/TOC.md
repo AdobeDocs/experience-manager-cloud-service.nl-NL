@@ -4,10 +4,10 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 41%
+source-wordcount: '724'
+ht-degree: 40%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 41%
    + [Technische stichtingen AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
       + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](developing/introduction/develop-wknd-tutorial.md)
       + [Structuur van de AEM-interface](developing/introduction/ui-structure.md)
@@ -102,7 +103,6 @@ ht-degree: 41%
       + [Java API-richtlijnen](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Ontwikkeling van hybride AEM {#hybrid}
       + [Hybride en SPA met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [JSON-export inschakelen voor een component](developing/components/enabling-json-exporter.md)
       + [SPA Inleiding en Analyse](developing/hybrid/introduction.md)
       + [SPA WKND-zelfstudie](developing/hybrid/wknd-tutorial.md)
       + [Aan de slag met Reageren](developing/hybrid/getting-started-react.md)
@@ -114,8 +114,11 @@ ht-degree: 41%
       + [SPA](developing/hybrid/page-component.md)
       + [Dynamisch model naar componenttoewijzing](developing/hybrid/model-to-component-mapping.md)
       + [Modelroutering](developing/hybrid/routing.md)
-      + [Integratie starten](developing/hybrid/launch-integration.md)
+      + [De RemotePage-component](developing/hybrid/remote-page.md)
+      + [Een externe SPA bewerken in AEM](developing/hybrid/editing-external-spa.md)
       + [Rendering serverzijde](developing/hybrid/ssr.md)
+      + [JSON-export inschakelen voor een component](developing/components/enabling-json-exporter.md)
+      + [Integratie starten](developing/hybrid/launch-integration.md)
       + [Referentiedocumenten SPA](developing/hybrid/reference-materials.md)
    + Beleidsbeheer zonder hoofd {#headless}
       + [Koploos en AEM](developing/headless/introduction.md)
