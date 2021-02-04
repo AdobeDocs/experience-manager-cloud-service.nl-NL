@@ -2,9 +2,9 @@
 title: Headless Development voor AEM Sites als Cloud Service
 description: Het gebruiken van krachtige eigenschappen zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API, AEM als Cloud Service staat u toe om uw ervaringen centraal te beheren en hen te dienen over kanalen.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,14 @@ De implementatie zonder hoofd wordt steeds belangrijker om ervaringen aan uw pub
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels en hybride oplossingen, en wordt de nadruk gelegd op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en hun levering over het kanaal. Het is een modern en dynamisch ontwikkelingspatroon voor het implementeren van webervaringen.
 
 ![AEM implementatiemodellen](assets/aem-implementation-models.png)
+
+## Koppen en koploos vergelijken {#headful-headless}
+
+Dit document richt zich op het volledige implementatiemodel zonder kop van AEM. Nochtans moet de macht tegenover de zonder kop geen binaire keus in AEM zijn. U kunt de functies zonder koppen gebruiken om uw inhoud te beheren en aan verschillende eindpunten te leveren, terwijl u de auteurs van de inhoud ook in staat stelt toepassingen op één pagina te bewerken. Alles in AEM.
+
+>[!TIP]
+>
+>Zie het document [Headful en Headless in AEM](/help/implementing/developing/headful-headless.md) voor meer informatie.
 
 ## AEM als Cloud Service en zonder kop {#aem-headless}
 
