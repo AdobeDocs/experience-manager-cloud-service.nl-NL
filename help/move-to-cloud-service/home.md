@@ -2,10 +2,10 @@
 title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
+source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 88%
+source-wordcount: '565'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 88%
 >title="Info over Cloud AccelerManager"
 >abstract="Cloud Acceleration Manager is uw eigen persoonlijke gids gedurende het gehele proces waarbij u als Cloud Service naar AEM gaat."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Belangrijke wijzigingen in AEM Sites as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="Uw CI/CD-pijplijn configureren"
 
 ## Voordelen van de overstap naar AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
