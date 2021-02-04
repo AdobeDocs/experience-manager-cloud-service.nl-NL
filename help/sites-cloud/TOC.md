@@ -5,10 +5,10 @@ user-guide-title: Authoring van content in AEM as a Cloud Service
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 90%
+source-wordcount: '241'
+ht-degree: 88%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 90%
       + [Onderdelenconsole](authoring/features/components-console.md)
       + [Responsieve lay-out](authoring/features/responsive-layout.md)
       + [Tags gebruiken](authoring/features/tags.md)
+      + [Progressieve webtoepassingsfuncties inschakelen](authoring/features/enable-pwa.md)
    + Projecten {#projects}
       + [Werken met projecten](authoring/projects/overview.md)
       + [Projecten beheren](authoring/projects/managing.md)
