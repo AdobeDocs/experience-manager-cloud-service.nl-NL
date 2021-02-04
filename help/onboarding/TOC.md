@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: af15539007e264fc473d35529f0f8c41276ec01d
+source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 51%
+source-wordcount: '662'
+ht-degree: 29%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 51%
    + [Op rollen gebaseerde machtigingen](what-is-required/role-based-permissions.md)
    + [Broncodeopslagplaats](what-is-required/source-code-repository.md)
 + Fases van de overgang {#phases}
-   + [Planning](/help/move-to-cloud-service/planning.md)
-   + [Uitvoering](/help/move-to-cloud-service/execution.md)
-   + [Stappen na Go-Live](/help/move-to-cloud-service/post-go-live.md)
+   + [Planning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [Uitvoering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [Stappen na Go-Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Toegang krijgen tot AEM in de cloud {#getting-access}
    + [Experience Manager as a Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service-programma&#39;s {#cloud-service-programs}
@@ -32,47 +32,47 @@ ht-degree: 51%
       + [Een programma maken](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [Sandbox-programma&#39;s](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
-      + [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
-      + [CI/CD-pipeline configureren](/help/implementing/cloud-manager/configure-pipeline.md)
-      + [Uw code implementeren](/help/implementing/cloud-manager/deploy-code.md)
+      + [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+      + [CI/CD-pipeline configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+      + [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
    + Inzicht in de testresultaten {#test-results}
-      + [Overzicht](/help/implementing/cloud-manager/overview-test-results.md)
-      + [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
-      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
-   + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
-   + [Inzicht in meldingen](/help/implementing/cloud-manager/notifications.md)
+      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html)
+      + [Testen van de codekwaliteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html)
+      + [Aangepaste regels voor codekwaliteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
+      + [Functionele tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html)
+      + [Experience Audit Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/experience-audit-testing.html)
+   + [Logbestanden openen en beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)
+   + [Inzicht in meldingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/notifications.html)
    + Een AEM-applicatieproject maken {#create-application-project}
       + [De wizard gebruiken](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Uw project instellen](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Inzicht in de omgeving van de build](getting-access-to-aem-in-cloud/build-environment-details.md)
    + SSL-certificaten beheren {#manage-ssl-certificates}
-      + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
-      + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Een SSL-certificaat weergeven en bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [Status van een SSL-certificaat controleren](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-      + [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+      + [Inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html)
+      + [Een SSL-certificaat ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
+      + [Een SSL-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
+      + [Een SSL-certificaat weergeven en bijwerken of vervangen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html)
+      + [Status van een SSL-certificaat controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html)
+      + [Een SSL-certificaat verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html)
    + Aangepaste domeinnamen beheren {#custom-domain-names}
-      + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [Een aangepaste domeinnaam ophalen](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
-      + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-      + [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [Aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [SSL-certificaat van aangepaste domeinnaam bijwerken](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html)
+      + [Een aangepaste domeinnaam ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
+      + [Een aangepaste domeinnaam toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
+      + [Een TXT-record toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
+      + [Status aangepaste domeinnaam controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
+      + [DNS-instellingen configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
+      + [DNS-recordstatus controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
+      + [Aangepaste domeinnaam weergeven en bijwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
+      + [SSL-certificaat van aangepaste domeinnaam bijwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
+      + [Aangepaste domeinnaam verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
    + IP-Lijsten van gewenste personen beheren {#ip-allow-lists}
-      + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Het bekijken van en het Bijwerken van een IP Lijst van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Een IP-Lijst van gewenste personen toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Een IP-Lijst van gewenste personen niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [De status van een IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html)
+      + [Een IP-Lijst van gewenste personen toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
+      + [Het bekijken van en het Bijwerken van een IP Lijst van gewenste personen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
+      + [Een IP-Lijst van gewenste personen toepassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
+      + [Een IP-Lijst van gewenste personen niet toepassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
+      + [Een IP-Lijst van gewenste personen verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [De status van een IP-Lijst van gewenste personen controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2021.1.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Opmerkingen bij de release 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
