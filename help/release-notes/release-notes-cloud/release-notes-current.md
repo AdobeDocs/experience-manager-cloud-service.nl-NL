@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
+### Beheer van inhoud zonder hoofd {#headless}
+
 * **[GraphQL API voor levering](/help/assets/content-fragments/graphql-api-content-fragments.md)** van inhoudsfragmenten: Mogelijkheid om inhoudsfragmenten op te vragen met de syntaxis GraphQL en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
 
 * **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
+
+* [De ](/help/implementing/developing/hybrid/remote-page.md) component RemotePage biedt ondersteuning voor het weergeven en bewerken van externe SPA binnen AEM.
 
 * Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
 
@@ -37,6 +41,9 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 * Mogelijkheid om JSON-uitvoer direct voor te vertonen in de Content Fragment Editor.
 
+### Progressieve webtoepassingen (PWA) {#pwa}
+
+* [Een Progressieve versie van de Web App (PWA) van het Web van een ](/help/sites-cloud/authoring/features/enable-pwa.md)  sitecan wordt nu toegelaten op het projectniveau via eenvoudige configuratie.
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
