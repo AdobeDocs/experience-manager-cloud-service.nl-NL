@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '604'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,10 @@ Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk t
 Door gebrek, voor een Adobe Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatieservice voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) kunt u dit op een zelfbedienings manier via de UI van de Manager van de Wolk doen.
 
 Raadpleeg [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) voor meer informatie.
+
+>[!CAUTION]
+>
+>Slechts zullen de verzoeken van toegestane IPs door beheerde CDN van AEM worden gediend. Als u uw eigen CDN aan AEM beheerde CDN richt dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
 
 ## Klant CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
 
