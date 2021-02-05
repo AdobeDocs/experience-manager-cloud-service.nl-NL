@@ -3,9 +3,9 @@ title: Elementen automatisch labelen met door AI gegenereerde tags
 description: Elementen labelen met behulp van kunstmatige intelligente services die contextafhankelijke en beschrijvende bedrijfstags toepassen met behulp van [!DNL Adobe Sensei] service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2737'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ U kunt de volgende typen elementen labelen:
 
 * **Afbeeldingen**: Afbeeldingen in veel indelingen worden gelabeld met behulp van de services voor slimme inhoud van Adobe Sensei. U [maakt een trainingsmodel](#train-model) en [pas slimme tags](#tag-assets) toe op afbeeldingen.
 * **Video-elementen**: Videocodering is standaard ingeschakeld  [!DNL Adobe Experience Manager] als een  [!DNL Cloud Service]. [Video&#39;s worden automatisch ](/help/assets/smart-tags-video-assets.md) gecodeerd wanneer u nieuwe video&#39;s uploadt of bestaande video&#39;s opnieuw verwerkt.
-* **Elementen** op basis van tekst:  [!DNL Experience Manager Assets] worden de ondersteunde op tekst gebaseerde elementen automatisch van tags voorzien wanneer deze worden geüpload.
+* **Elementen** op basis van tekst:  [!DNL Experience Manager Assets] worden de ondersteunde op tekst gebaseerde elementen automatisch van tags voorzien wanneer deze worden geüpload. Meer informatie over [slimme labeling van op tekst gebaseerde elementen](#smart-tag-text-based-assets).
 
 ## Ondersteunde elementtypen {#smart-tags-supported-file-formats}
 
