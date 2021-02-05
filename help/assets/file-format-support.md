@@ -3,10 +3,10 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 6%
+source-wordcount: '807'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
 
-De hoogtepunten voor de omzetting van Activa die de microservices van activa gebruiken omvatten:
+De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
 * Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] en [!DNL Adobe Acrobat] of PDF.
 * Sleutel [bestandsindelingen voor beeldbewerking](#image-formats).
@@ -25,7 +25,7 @@ De hoogtepunten voor de omzetting van Activa die de microservices van activa geb
 * Algemene [documentindelingen](#document-formats), inclusief Microsoft Office en de indeling Document openen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
-De volgende legenda beschrijft het steunniveau.
+De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
 | Ondersteuningsniveau | Beschrijving |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 >[!MORELIKETHIS]
 >
 >* [Verwerking van bedrijfsmiddelen met behulp van asset-microservices](asset-microservices-overview.md)
+>* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
