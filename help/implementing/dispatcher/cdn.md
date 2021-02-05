@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -18,14 +18,14 @@ De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de mees
 
 ## Beheerde CDN AEM {#aem-managed-cdn}
 
-Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk te gebruiken om op inhoudslevering voor te bereiden door uit-van-de-doos CDN van Adobe te gebruiken:
+Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk te gebruiken om voor de levering van inhoud voor te bereiden door AEM uit-van-de-doos CDN te gebruiken:
 
 1. [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Beperking van het verkeer**
 
-Door gebrek, voor een Adobe Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatieservice voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) kunt u dit op een zelfbedienings manier via de UI van de Manager van de Wolk doen.
+Door gebrek, voor een AEM beheerde opstelling CDN, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. Als u verkeer aan de publicatieservice voor een bepaald milieu wilt beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) kunt u dit op een zelfbedienings manier via de UI van de Manager van de Wolk doen.
 
 Raadpleeg [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) voor meer informatie.
 
@@ -35,7 +35,7 @@ Raadpleeg [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-ma
 
 ## Klant CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
 
-Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan Adobe beheerde CDN, op voorwaarde dat wordt voldaan aan het volgende:
+Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan AEM beheerde CDN, op voorwaarde dat het volgende wordt voldaan:
 
 * De klant moet een bestaande CDN hebben die bezwaarlijk zou zijn om te vervangen.
 * De klant moet het beheren.
@@ -46,19 +46,19 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 Configuratieinstructies:
 
 1. Stel de `X-Forwarded-Host`-header in met de domeinnaam.
-1. Plaats de kopbal van de Gastheer domein, dat de ingang van Adobe CDN is. De waarde moet van Adobe komen.
+1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. De waarde moet van Adobe komen.
 1. Verzend de kopbal SNI naar de oorsprong. Net als de Hostkop moet de sni-header het oorspronkelijke domein zijn.
 1. Stel de `X-Edge-Key` in, die nodig is om het verkeer correct naar de AEM servers te leiden. De waarde moet van Adobe komen.
 
 Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
 
-Er is een kleine prestatiesklap toe te schrijven aan de extra hop, hoewel de hop klant CDN aan een beheerde Adobe CDN waarschijnlijk efficiënt zal zijn.
+Er is potentieel een kleine prestatieshit toe te schrijven aan de extra hop, hoewel de hop van klant CDN aan AEM beheerde CDN waarschijnlijk efficiënt zal zijn.
 
 Merk op dat deze klantCDN configuratie voor publiceert rij, maar niet vóór de auteursrij wordt gesteund.
 
 ## Geolocatiekoppen {#geo-headers}
 
-De Adobe beheerde CDN zal kopballen aan elk verzoek met toevoegen:
+AEM beheerde CDN zal kopballen aan elk verzoek met toevoegen:
 
 * landcode: `x-aem-client-country`
 * continentale code: `x-aem-client-continent`
