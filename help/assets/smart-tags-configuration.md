@@ -3,10 +3,10 @@ title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van assets en de snelheid van content te verbeteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 96%
+source-wordcount: '894'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangescha
 
 >[!IMPORTANT]
 >
->De nieuwe [!DNL Experience Manager Assets]-implementaties zijn standaard geïntegreerd met [!DNL Adobe Developer Console]. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de bestaande plaatsingen, volgen de beheerders deze stappen om de integratie te vormen.
+>[!DNL Experience Manager Assets] implementaties die na de release van  [augustus 2020 zijn gemaakt, ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) zijn  [!DNL Adobe Developer Console] standaard geïntegreerd. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Bij de oudere implementaties kunnen beheerders de volgende stappen volgen om de integratie te configureren.
 
 ## Integreren met Adobe Developer Console {#aio-integration}
 
@@ -109,7 +109,7 @@ Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderst
 
 1. Open [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande service in het project. Upload en configureer het nieuwe certificaat. Zie de instructies in [Adobe Developer Console-integratie maken](#create-aio-integration) voor meer informatie over de configuratie.
 
-## Slimme tags toepassen op nieuw geüploade assets (optioneel) {#enable-smart-tagging-for-uploaded-assets}
+## Automatisch labelen inschakelen wanneer elementen worden geüpload (optioneel) {#enable-smart-tagging-for-uploaded-assets}
 
 1. Ga in [!DNL Experience Manager] naar **[!UICONTROL Tools > Workflow > Models]**.
 1. Selecteer op de pagina **[!UICONTROL Workflow Models]** het **[!UICONTROL DAM Update Asset]**-workflowmodel.
