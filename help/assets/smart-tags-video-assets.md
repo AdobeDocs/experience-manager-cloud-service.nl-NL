@@ -2,9 +2,9 @@
 title: Slimme tag toewijzen aan video-elementen
 description: Experience Manager voegt automatisch contextafhankelijke en beschrijvende slimme tags toe aan video's met [!DNL Adobe Sensei].
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] ondersteunt automatische labeling van video-elementen met behulp van kunstmatige intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. De functie voor slimme tags met behulp van [!DNL Adobe Sensei] gebruikt echter kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. Adobe genereert twee sets met tags voor een video. Eén set komt overeen met objecten, scènes en kenmerken in die video. de andere reeks heeft betrekking op handelingen zoals drinken , lopen en joggen .
 
-Het automatisch labelen van video-elementen vindt plaats als standaardverwerking van elementen (samen met het maken van miniaturen en het uitnemen van metagegevens) nadat een video is geüpload of wanneer een herverwerking wordt gestart. De slimme tags worden weergegeven in aflopende volgorde van hun [betrouwbaarheidsscore](#confidence-score-video-tag) in element [!UICONTROL Properties]. Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]. U kunt de optie [om geen slimme tags aan video toe te voegen](#opt-out-video-smart-tagging) echter wel toepassen op een map.
+Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]. U kunt de optie [om geen slimme tags aan video toe te voegen](#opt-out-video-smart-tagging) echter wel toepassen op een map. Video&#39;s worden automatisch van tags voorzien wanneer u nieuwe video&#39;s uploadt of bestaande video&#39;s opnieuw verwerkt. [!DNL Experience Manager] Hiermee maakt u ook de miniaturen en extraheert u de metagegevens van de videobestanden. De slimme tags worden weergegeven in aflopende volgorde van hun [betrouwbaarheidsscore](#confidence-score-video-tag) in element [!UICONTROL Properties].
 
 ## Slimme tagvideo&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
