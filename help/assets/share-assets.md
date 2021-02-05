@@ -3,9 +3,9 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink kunt delen binnen  [!DNL Experience Manager Assets] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat Day CQ Mail Service is geconfigureerd. Anders treedt een fout op.
+>* Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat [uitgaande e-mail is ingeschakeld](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
 
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt delen als koppeling.
