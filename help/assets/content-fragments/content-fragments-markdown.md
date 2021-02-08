@@ -2,9 +2,9 @@
 title: Markering
 description: Wanneer u ontwerpt, gebruikt de inhoudsfragmenteditor markeringssyntaxis, zodat u gemakkelijk inhoud kunt schrijven.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 4%
 
 ---
@@ -188,7 +188,7 @@ Backslash-escapes zijn beschikbaar voor de volgende tekens:
 
     `\ backslash`
 
-    ` backtick
+    `` ` backtick``
 
     `* asterisk`
 
