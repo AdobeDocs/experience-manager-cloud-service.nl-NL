@@ -3,9 +3,9 @@ title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2440'
 ht-degree: 19%
 
 ---
@@ -182,11 +182,14 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    >
    >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
 
-   Klik op **[!UICONTROL Reject Translation]** of tik op &lt;a0/> om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
+   Klik op **[!UICONTROL Reject Translation]** of tik op  om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
 1. Navigeer naar de middelenconsole en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
-Zie [5 Stappen om metagegevens efficiënt te vertalen](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/) voor tips over het efficiënt vertalen van metagegevens voor elementen.
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## Vertaalprojecten maken {#creating-translation-projects}
 
