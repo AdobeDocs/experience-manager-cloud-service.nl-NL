@@ -2,10 +2,10 @@
 title: Werken met getargete content in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 5%
+source-wordcount: '2915'
+ht-degree: 4%
 
 ---
 
@@ -52,6 +52,7 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 >
 >* Als u rollouts of live kopieën gebruikt, is een MSM-licentie vereist.
 >* Wanneer u synchronisatie naar Adobe Target gebruikt, is een Adobe Target-licentie vereist.
+
 >
 
 
@@ -188,9 +189,9 @@ Een gebied maken als een livecopy:
 
 1. Selecteer de juiste configuratie in het vervolgkeuzemenu **Rollout Configs**.
 
-   Zie Geïnstalleerde Configuratie van de Uitvoer voor beschrijvingen van elke optie. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Zie [Geïnstalleerde Configuraties van de Uitvoer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) voor beschrijvingen van elke optie.
 
-   Zie Actieve kopieën maken en synchroniseren voor meer informatie over live kopieën. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Zie [Actieve kopieën maken en synchroniseren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) voor meer informatie over actieve kopieën.
 
    >[!NOTE]
    >
@@ -221,11 +222,11 @@ Een site koppelen aan een gebied:
 
    ![Sites koppelen](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Selecteer het gebied in de vervolgkeuzelijst **Referentiegebied** en tik op **Opslaan** of klik op &lt;a2/>Opslaan.
+1. Selecteer het gebied in de vervolgkeuzelijst **Referentiegebied** en tik op **Opslaan** of klik op Opslaan.
 
    ![Referentie gebied](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
-## Live kopie losmaken of overerving van doelinhoudopschorten {#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
+## Live kopie losmaken of overerving van doelinhoud {#detaching-live-copy-or-suspending-inheritance-of-targeted-content} opschorten
 
 Mogelijk wilt u de overerving van de doelinhoud opschorten of loskoppelen. Het onderbreken of losmaken van de live kopie gebeurt per activiteit. Bijvoorbeeld, kunt u ervaringen in uw activiteit willen wijzigen, maar als die activiteit nog aan geërfte exemplaar verbonden is, kunt u niet de ervaring of om het even welke eigenschappen van de activiteit wijzigen.
 
@@ -239,6 +240,7 @@ Een activiteit die overerft van een andere site wordt groen gemarkeerd naast de 
 >
 >* U kunt actieve kopieën in een activiteit alleen opschorten of loskoppelen.
 >* U hoeft live kopieën niet op te schorten of los te koppelen om een overgeërfde activiteit uit te breiden. U kunt **nieuwe** lokale ervaringen en aanbiedingen voor die activiteit altijd tot stand brengen. Als u een bestaande activiteit wilt wijzigen, dan moet u overerving opschorten.
+
 >
 
 
@@ -260,7 +262,7 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 
    ![Opgeschorte livekopie](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
-### Overervingbreken {#breaking-inheritance}
+### Overerving {#breaking-inheritance} breken
 
 Overerving van doelinhoud in een activiteit onderbreken:
 
@@ -271,7 +273,7 @@ Overerving van doelinhoud in een activiteit onderbreken:
 
    ![Lokale activiteit](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
-## Overerving van doelinhoudherstellen {#restoring-inheritance-of-targeted-content}
+## Overerving van doelinhoud {#restoring-inheritance-of-targeted-content} herstellen
 
 Als u de overerving van de doelinhoud van een activiteit hebt opgeschort, kunt u deze op elk gewenst moment herstellen. Als u de live kopie echter hebt losgekoppeld, kunt u de overerving niet herstellen.
 
@@ -285,7 +287,7 @@ Om erfenis van gerichte inhoud in een activiteit te herstellen:
 
 1. Tik of klik op **Hervatten** om te bevestigen dat u overerving van live kopiëren wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
 
-## Gebiedenverwijderen {#deleting-areas}
+## Gebieden {#deleting-areas} verwijderen
 
 Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. AEM waarschuwt u alvorens u een gebied kunt schrappen. Als u een gebied verwijdert waaraan een site is gekoppeld, wordt de toewijzing voor dit merk automatisch opnieuw toegewezen aan het master gebied.
 
