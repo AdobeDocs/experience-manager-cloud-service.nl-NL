@@ -2,9 +2,9 @@
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
+source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3167'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,9 @@ Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch v
 
 De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)-pakket.
 
-Zie het pakket **README** voor volledige informatie; volledige informatie over de manier waarop het op een AEM kan worden geïnstalleerd - in een verscheidenheid aan scenario&#39;s.
+<!--
+See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## Gevallen gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
 
