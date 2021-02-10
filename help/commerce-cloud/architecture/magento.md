@@ -3,9 +3,9 @@ title: AEM- en Magento-integratie met behulp van Commerce Integration Framework
 description: AEM en Magento zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,14 @@ ht-degree: 0%
 # AEM en Magento integratie die het Kader van de Integratie van de Handel {#aem-magento-framework} gebruiken
 
 AEM en Magento zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
+
+>[!NOTE]
+>
+>GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) als Cloud Service:
+>
+>* AEM de Handel verbruikt gegevens van een handelsplatform via GraphQL.
+>* [AEM Inhoudsfragmenten werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen](/help/assets/content-fragments/graphql-api-content-fragments.md).
+
 
 ## Overzicht architectuur {#overview}
 
