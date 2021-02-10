@@ -1,38 +1,38 @@
 ---
-title: Toegankelijkheid in [!DNL Dynamic Media]
+title: Toegankelijkheid in Dynamic Media
 description: Meer informatie over toegankelijkheid in Dynamic Media en Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
 
 
-# Toegankelijkheid in Dynamic Media {#working-with-three-d-assets-dm}
+# Toegankelijkheid in Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media ondersteunt toetsenbordbesturing en ondersteunende hulpmiddelen, zoals JAWS en NVDA-schermlezers, in de hele gebruikersinterface.
 
-## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media
+## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media {#keyboard-support-in-dm}
 
-Aangezien Dynamic Media een insteekmodule is voor het Experience Managers van middelen, is het meeste toetsenbordbesturingsgedrag precies hetzelfde als in Experience Managers. De `Cancel`-knop in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets en reageert op de `Spacebar`-toets als in Experience Manager Assets. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Aangezien Dynamic Media een insteekmodule is voor het Experience Managers van , is het meeste toetsenbordbesturingsgedrag hetzelfde als bij Experience Managers. De knop `Cancel` in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets. Het reageert ook op de `Spacebar` toets zoals in de Elementen van de Experience Manager. Zie [sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Toetsen die door afzonderlijke gebruikersinterface-elementen in Dynamic Media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Toetsenbordbesturing in Dynamic Media gaat over het volgende:
+Toetsen die door de interface-elementen Individuele gebruikers in Dynamic Media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Toetsenbordbesturing in Dynamic Media gaat over het volgende:
 
 * Mogelijkheid om met de toetsen `Tab` en `Shift+Tab` te navigeren tussen interactieve elementen op de pagina.
 Wanneer u `Tab` gebruikt, wordt de invoerfocus naar het volgende interface-element in de tabvolgorde verplaatst. wanneer u `Shift+Tab` gebruikt, krijgt het vorige gebruikersinterface-element weer focus.
 Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` drukken om de focus naar het veld te verplaatsen.
 * Mogelijkheid om de `Spacebar` en `Enter` sleutel te gebruiken om standaardelementen van de gebruikersinterface, zoals knopen, drop-down lijst, etc. te activeren.
-* Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het gebruikersinterface-element dat invoerfocus heeft, krijgt mogelijk een visuele focusindicatie als een rand die rondom het interface-element wordt weergegeven.
+* Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het element van de gebruikersinterface dat inputnadruk heeft ontving een visuele nadrukaanwijzing als grens die rond het gebruikersinterface element wordt teruggegeven.
 * In de Hotspot-editor kunt u bepaalde aangepaste toetsaanslagen gebruiken, zoals pijltoetsen, om te communiceren met complexe gebruikersinterface-elementen om hotspots te verplaatsen.
-* In de Interactieve Video redacteur, kunt u `Spacebar` gebruiken om een beeld te selecteren en het toe te voegen aan een segment. Bovendien kunt u de `Backspace` toets gebruiken om het geselecteerde punt van **[!UICONTROL Content]** tabel te schrappen. Als u `Tab` ingedrukt houdt, kunt u ook naar wens navigeren tussen interactieve elementen op de pagina.
-* In de redacteur van het Gewas van het Beeld/van het Slim Gewas, hebt u de capaciteit om het volgende te doen:
-   * Gebruik de pijltoetsen om de framegrootte bij te snijden of de positie van de afbeelding of beide te wijzigen.
-   * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het frame opnieuw plaatsen met de pijltoetsen op het toetsenbord.
+* In de Interactieve Video redacteur, kunt u `Spacebar` gebruiken om een beeld te selecteren en het toe te voegen aan een segment. Bovendien kunt u de `Backspace` sleutel gebruiken om het geselecteerde punt van **[!UICONTROL Content]** tabel te schrappen. Als u `Tab` ingedrukt houdt, kunt u ook naar wens navigeren tussen interactieve elementen op de pagina.
+* In de redacteur van het Gewas van het Beeld/van het Slim Gewas, kunt u het volgende doen:
+   * Gebruik de pijltoetsen om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
+   * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
    * De volgende vier `Tab` einden zijn de vier hoeken van het kader. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
 Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
@@ -52,7 +52,7 @@ Dynamic Media-gebruikersinterface-elementen werken met ondersteunende hulpmiddel
 
 Alle Dynamic Media-viewercomponenten die niet in de verpakking staan, ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamic Media Viewers Reference Guide.
+Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de handleiding Referentie voor Dynamic Media-viewers.
 
 ## Support voor hulpprogramma&#39;s in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
 
