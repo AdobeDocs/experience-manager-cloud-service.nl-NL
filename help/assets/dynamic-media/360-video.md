@@ -2,9 +2,9 @@
 title: 360/VR-video
 description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In deze sectie wordt beschreven hoe u met de 360/VR Video-viewer werkt om equire
 
 Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
 
-Zie [Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken met AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Zie [Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken met AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
