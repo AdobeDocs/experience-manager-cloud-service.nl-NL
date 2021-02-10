@@ -2,9 +2,9 @@
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
 description: Leer de beste praktijken u in Dynamic Media kunt gebruiken om de kwaliteit van uw beeldactiva te optimaliseren.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1460'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd voor meer informatie over hoe verscherpen en onscherp maskeren in AEM werken door naar de volgende nuttige bronnen te verwijzen:
 
-Op deze manier wordt witboek [Verscherpen van afbeeldingen in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) ook toegepast op AEM.
+* Op deze manier wordt witboek [Verscherpen van afbeeldingen in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) ook toegepast op AEM.
 
-Kijk op Adobe-tv [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+* Kijk [Afbeeldingen verscherpen gebruiken met AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Met AEM kunt u afbeeldingen verscherpen bij inname, bij levering of beide. In de meeste gevallen moet u de afbeeldingen echter verscherpen met slechts één methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
