@@ -2,9 +2,9 @@
 title: Voorinstellingen afbeelding beheren
 description: Leer voorinstellingen voor afbeeldingen maken, wijzigen en beheren.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3516'
 ht-degree: 9%
 
 ---
@@ -381,7 +381,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul>
     <div>
       Verscherpen wordt beschreven in
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Afbeeldingen verscherpen</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Afbeeldingen verscherpen gebruiken met AEM Dynamic Media</a>-video, in het online Help-onderwerp <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Een afbeelding verscherpen</a> en in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Aanbevolen werkwijzen voor het verscherpen van afbeeldingen in een PDF die kan worden gedownload met Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
