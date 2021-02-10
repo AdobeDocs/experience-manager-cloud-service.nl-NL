@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,11 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 * Mogelijkheid om JSON-uitvoer direct voor te vertonen in de Content Fragment Editor.
 
-### Progressieve webtoepassingen (PWA) {#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [Een Progressieve versie van de Web App (PWA) van het Web van een ](/help/sites-cloud/authoring/features/enable-pwa.md)  sitecan wordt nu toegelaten op het projectniveau via eenvoudige configuratie.
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
