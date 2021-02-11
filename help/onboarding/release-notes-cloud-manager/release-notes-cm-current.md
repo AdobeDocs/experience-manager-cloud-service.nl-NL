@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -34,7 +34,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
 
-* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden die met Sonar zijn voorafgegaan, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
+* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden van de klant die vooraf zijn voorzien van sonar, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
 
