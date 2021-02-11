@@ -1,11 +1,12 @@
 ---
 title: Dynamic Media-elementen toevoegen aan pagina's
 description: Dynamic Media-componenten als Cloud Service toevoegen aan een pagina in Adobe Experience Manager.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 6%
+source-wordcount: '2946'
+ht-degree: 5%
 
 ---
 
@@ -14,15 +15,15 @@ ht-degree: 6%
 
 Als u de functionaliteit voor dynamische media wilt toevoegen aan assets die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360-media** rechtstreeks op de pagina toevoegen. U opent de modus Lay-out en schakelt de Dynamic Media-componenten in. Vervolgens voegt u deze componenten aan de pagina toe en voegt u elementen aan de component toe. De componenten voor dynamische media zijn slim: ze weten of u een afbeelding of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
 
-U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Experience Manager als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [embed](/help/assets/dynamic-media/embed-code.md) uw activa. Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](/help/assets/dynamic-media/responsive-site.md).
+U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Experience Manager als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [embed](/help/assets/dynamic-media/embed-code.md) uw activa. Zie [geoptimaliseerde afbeeldingen leveren aan een responsieve site](/help/assets/dynamic-media/responsive-site.md) voor een responsieve website van derden.
 
 >[!NOTE]
 >
->U moet elementen publiceren voordat u ze in Experience Manager aan pagina&#39;s toevoegt. Zie [Dynamic Media-middelen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Zorg ervoor dat u elementen publiceert voordat u ze in Experience Manager aan pagina&#39;s toevoegt. Zie [Dynamic Media-middelen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Een Dynamic Media-component toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
 
-Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De Dynamic Media-componenten worden in de volgende secties beschreven.
+Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina.
 
 **Een Dynamic Media-component aan een pagina toevoegen**
 
@@ -35,7 +36,7 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
 1. Sleep een **[!UICONTROL Dynamic Media]** component en zet het neer op de gewenste plaats op de pagina.
 
-1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration (wrench)]**.
+1. Plaats de aanwijzer rechtstreeks op de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration (wrench)]**.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -47,14 +48,14 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
    De Dynamic Media Video 360 Media-component.
 
-1. Als u klaar bent, tikt u in de rechterbovenhoek van het dialoogvenster op het vinkje om de wijzigingen op te slaan.
+1. Tik op het vinkje om de wijzigingen op te slaan in de rechterbovenhoek van het dialoogvenster als u klaar bent.
 
 ### Dynamic Media-componenten {#enabling-dynamic-media-components} inschakelen
 
-Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
+Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u de componenten moet inschakelen die u wilt gebruiken.
 
 1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
-1. Tik links op de werkbalk naast de pagina op het pictogram Pagina-informatie en tik vervolgens op **[!UICONTROL Edit Template]** in de vervolgkeuzelijst.
+1. Tik links van de werkbalk naast de pagina op het pictogram Pagina-informatie en tik vervolgens op **[!UICONTROL Edit Template]** in de vervolgkeuzelijst.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
@@ -68,13 +69,14 @@ Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te 
    ![Toegestane componenten](/help/assets/assets-dm/allowed-components.png)
 
 1. Schuif totdat u **[!UICONTROL Dynamic Media]** ziet.
-1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** om de lijst uit te vouwen, selecteer de Dynamic Media-componenten die u wilt inschakelen.
+1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** en selecteer vervolgens de Dynamic Media-componenten die u wilt inschakelen.
 
    ![Lijst met Dynamic Media-componenten](/help/assets/assets-dm/dm-components-select.png)
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Layout Container]** op het pictogram Gereed (vinkje).
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Layout Container]** op het pictogram Done (vinkje).
 
-1. Tik in de vervolgkeuzelijst rechts op de werkbalk boven aan de pagina op **[!UICONTROL Initial Content]** en voeg vervolgens [zoals gewoonlijk een Dynamic Media-component toe aan een pagina](#adding-a-dynamic-media-component-to-a-page).
+1. Tik in de vervolgkeuzelijst rechts van de werkbalk naast de pagina op **[!UICONTROL Initial Content]**.
+1. [Voeg zoals gewoonlijk een Dynamic Media-component toe aan een ](#adding-a-dynamic-media-component-to-a-page) pagina.
 
 ## Dynamic Media-componenten lokaliseren {#localizing-dynamic-media-components}
 
@@ -88,7 +90,7 @@ U kunt Dynamic Media-componenten op twee manieren lokaliseren:
 
    >[!NOTE]
    >
-   >Niet alle talen in het menu **[!UICONTROL Language]** hebben tokens toegewezen.
+   >Niet alle talen die beschikbaar zijn in het menu **[!UICONTROL Language]** hebben tokens die momenteel zijn toegewezen.
 
 ## Beschikbare Dynamic Media-componenten {#dynamic-media-components}
 
@@ -103,7 +105,7 @@ De volgende Dynamic Media-componenten zijn beschikbaar:
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten via de sjablooneditor beschikbaar worden gemaakt voordat ze kunnen worden gebruikt. Nadat zij in de malplaatjeredacteur ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
+>Deze componenten zijn niet standaard beschikbaar en moeten beschikbaar worden gemaakt in de sjablooneditor voordat u ze kunt gebruiken. Nadat zij in de malplaatjeredacteur ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -120,13 +122,13 @@ De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding
 
 >
 >
-Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke Dynamic Media-component op die pagina niet wordt ondersteund.
+Het toewijzen van een andere viewervoorinstelling aan elke Dynamic Media-component op die pagina wordt niet ondersteund.
 >
 >U kunt echter dezelfde viewervoorinstelling gebruiken voor alle Dynamic Media-componenten die op de pagina elementen van hetzelfde type gebruiken.
 
 Wanneer u de Dynamic Media-component toevoegt en **[!UICONTROL Dynamic Media Settings]** leeg is of wanneer u een element niet correct kunt toevoegen, controleert u het volgende:
 
-* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat Dynamic Media is ingeschakeld, hebben geen TIFF-bestand met piramide.
+* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die worden geïmporteerd voordat Dynamic Media is ingeschakeld, hebben geen TIFF-bestand met piramide.
 
 #### Wanneer u werkt met afbeeldingen {#when-working-with-images}
 
@@ -142,21 +144,21 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 >
 >Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u een vaste grootte wilt instellen, stelt u dit in de component op het tabblad **[!UICONTROL Advanced]** met **[!UICONTROL Width]** en **[!UICONTROL Height]** in.
 
-* **[!UICONTROL Viewer preset]**—Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en andersom.
+* **[!UICONTROL Viewer preset]**—Selecteer een bestaande viewervoorinstelling in de vervolgkeuzelijst. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie Viewer-voorinstellingen beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
-   Dit is de enige beschikbare optie als u beeldreeksen, spin reeksen, of gemengde media reeksen bekijkt. De weergegeven viewervoorinstellingen zijn ook slim. Alleen relevante viewervoorinstellingen worden weergegeven.
+   Dit is de enige optie die beschikbaar is als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt. De weergegeven viewervoorinstellingen zijn ook slimme voorinstellingen voor relevante viewers.
 
 * **[!UICONTROL Viewer modifiers]**—Viewermodifiers hebben de vorm van name=value pair met een &amp; delimiter en laten u kijkers veranderen zoals die in de Gids van de Verwijzing van Kijkers worden geschetst. Een voorbeeld van een viewermodifier is `posterimage=img.jpg&caption=text.vtt,1`, die een andere afbeelding instelt voor de videominiatuur en een ondertitelingsbestand aan de video koppelt.
 
-* **[!UICONTROL Image preset]**—Selecteer een bestaande voorinstelling voor de afbeelding in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Voorinstellingen afbeelding beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en andersom.
+* **[!UICONTROL Image preset]**—Selecteer een bestaande voorinstelling voor een afbeelding in de vervolgkeuzelijst. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie Voorinstellingen afbeelding beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-* **[!UICONTROL Image Modifiers]**—U kunt afbeeldingseffecten toepassen door extra opdrachten voor afbeeldingen te geven. Deze worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
+* **[!UICONTROL Image Modifiers]**—U kunt afbeeldingseffecten toepassen door meer opdrachten voor afbeeldingen in te voeren. Deze opdrachten worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-* **[!UICONTROL Breakpoints]**—Als u dit middel op een ontvankelijke plaats gebruikt, moet u de beeldbreekpunten toevoegen. Afbeeldingsonderbrekingspunten moeten door komma&#39;s (,) worden gescheiden. Deze optie werkt wanneer er geen hoogte of breedte is gedefinieerd in een voorinstelling voor afbeeldingen.
+* **[!UICONTROL Breakpoints]**—Als u dit middel op een ontvankelijke plaats gebruikt, moet u de beeldbreekpunten toevoegen. Afbeeldingsonderbrekingspunten moeten worden gescheiden door komma&#39;s (,). Deze optie werkt wanneer er geen hoogte of breedte is gedefinieerd in een voorinstelling voor afbeeldingen.
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
@@ -189,16 +191,16 @@ U kunt de volgende Dynamic Media-instellingen bewerken door in de component op *
 >
 >De Dynamic Media-videocomponent is standaard adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component met **[!UICONTROL Width]** en **[!UICONTROL Height]** in **[!UICONTROL Advanced]** tabel.
 
-* **[!UICONTROL Viewer preset]**—Selecteer een bestaande voorinstelling voor een videoviewer in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren.
+* **[!UICONTROL Viewer preset]**—Selecteer een bestaande voorinstelling voor een videoviewer in de vervolgkeuzelijst. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie Viewer-voorinstellingen beheren.
 
-* **[!UICONTROL Viewer modifiers]**—Viewermodifiers hebben de vorm van name=value pair met een &amp; delimiter en laten u kijkers veranderen zoals die in de Gids van de Verwijzing van de Kijkers van de Adobe worden geschetst. Een voorbeeld van een viewermodifier is `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Viewer modifiers]**—Viewer-modifiers hebben de vorm van een  `name=value` paar met een  `&` scheidingsteken. Hiermee kunt u viewers wijzigen zoals wordt beschreven in de naslaggids voor Adobe-viewers. Een voorbeeld van een viewermodifier is `posterimage=img.jpg&caption=text.vtt,1`
 
-   Met viewermodifiers kunt u bijvoorbeeld het volgende doen:
+   Met vieweropties kunt u bijvoorbeeld het volgende doen:
 
    * Een bijschriftbestand koppelen aan een video: [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Een navigatiebestand koppelen aan een video: [navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
+      U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
 * **[!UICONTROL Title]**—Wijzig de titel van de video.
 
@@ -222,13 +224,13 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
 >
 >Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u een vaste grootte wilt instellen, stelt u dit in de component op het tabblad **[!UICONTROL Advanced]** met **[!UICONTROL Width]** en **[!UICONTROL Height]** in.
 
-* **[!UICONTROL Image Modifiers]**—U kunt afbeeldingseffecten toepassen door extra opdrachten voor afbeeldingen te geven. Deze worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
+* **[!UICONTROL Image Modifiers]**—U kunt afbeeldingseffecten toepassen door meer opdrachten voor afbeeldingen in te voeren. Deze opdrachten worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
    U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
-* **[!UICONTROL Enable Aspect Ration match]**—Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het best overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
+* **[!UICONTROL Enable Aspect Ration match]**—Selecteer deze optie als u wilt dat Dynamic Media een slimme-uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
 
 * **[!UICONTROL Title]**—Wijzig de titel van de slimme-uitsnijdafbeelding.
 
@@ -259,7 +261,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 
 >
 >
-Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke interactieve mediacomponent op die pagina niet wordt ondersteund.
+Het toewijzen van een andere viewervoorinstelling aan elke interactieve mediacomponent op die pagina wordt niet ondersteund.
 >
 >U kunt echter dezelfde viewervoorinstelling gebruiken voor alle interactieve mediacomponenten die op de pagina elementen van hetzelfde type gebruiken.
 
@@ -267,7 +269,7 @@ Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan e
 
 U kunt de volgende **[!UICONTROL General]** montages uitgeven door **[!UICONTROL Edit]** in de component te tikken.
 
-* **[!UICONTROL Viewer preset]**—Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie Viewer-voorinstellingen beheren.
+* **[!UICONTROL Viewer preset]**—Selecteer een bestaande viewervoorinstelling in de vervolgkeuzelijst. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie Viewer-voorinstellingen beheren.
 
 * **[!UICONTROL Title]**—Wijzig de titel van de video.
 
@@ -301,7 +303,7 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 
 >
 >
-Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke component **[!UICONTROL Panoramic Media]** op die pagina niet wordt ondersteund.
+Het toewijzen van een andere viewervoorinstelling aan elke **[!UICONTROL Panoramic Media]**-component op die pagina wordt niet ondersteund.
 >
 >U kunt echter dezelfde viewervoorinstelling gebruiken voor alle Panoramische Media-componenten die elementen van hetzelfde type gebruiken, op de pagina.
 
@@ -309,13 +311,13 @@ Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan e
 
 U kunt de volgende instelling bewerken door te tikken op **[!UICONTROL Configure]** in de component.
 
-* **[!UICONTROL Viewer Preset]**—Selecteer een bestaande viewer in het keuzemenu met voorinstellingen voor viewer.
+* **[!UICONTROL Viewer Preset]**—Selecteer een bestaande viewer in de vervolgkeuzelijst met voorinstellingen voor viewer.
 
-Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. U moet viewervoorinstellingen publiceren voordat u deze kunt gebruiken. Zie [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. Publiceer viewervoorinstellingen voordat u deze gebruikt. Zie [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ### Component: Video 360 Media {#video-media-component}
 
-Met de component **[!UICONTROL Video 360 Media]** kunt u rechthoekige video op uw webpagina renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap of medische procedure.
+Met de component **[!UICONTROL Video 360 Media]** kunt u rechthoekige video op uw webpagina renderen. Dit zorgt voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap of medische procedure.
 
 Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; Bij het afspelen op mobiele apparaten worden doorgaans de ingebouwde gyroscopische besturingselementen gebruikt.
 
@@ -325,9 +327,9 @@ De viewer bevat native ondersteuning voor de levering van 360 video-elementen. S
 
 U kunt de volgende instelling bewerken door te tikken op **[!UICONTROL Configure]** in de component.
 
-* **[!UICONTROL Viewer Preset]**—Selecteer een bestaande viewer in het keuzemenu met voorinstellingen voor viewer. Gebruik Video360VR voor eindgebruikers die een virtuele realiteitsbril gebruiken. Bevat basisbesturingselementen voor het afspelen van video en functies voor sociale media. Gebruik Video360_social, die basisbesturingselementen voor het afspelen van video bevat. Video renderen wordt uitgevoerd in de stereomodus. Handmatige zichtpuntcontrole is uitgeschakeld, maar gyroscopische controle is ingeschakeld. Er zijn geen functies voor sociale media.
+* **[!UICONTROL Viewer Preset]**—Selecteer een bestaande viewer in de vervolgkeuzelijst met voorinstellingen voor viewer. Gebruik Video360VR voor eindgebruikers die een virtuele realiteitsbril gebruiken. Bevat basisbesturingselementen voor het afspelen van video en functies voor sociale media. Gebruik Video360_social, die basisbesturingselementen voor het afspelen van video bevat. Video renderen wordt uitgevoerd in de stereomodus. Handmatige zichtpuntcontrole is uitgeschakeld, maar gyroscopische controle is ingeschakeld. Er zijn geen functies voor sociale media.
 
-Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. U moet viewervoorinstellingen publiceren voordat u deze kunt gebruiken. Zie [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. Publiceer viewervoorinstellingen voordat u deze gebruikt. Zie [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ### HTTP/2 gebruiken om Dynamic Media-elementen {#using-http-to-delivery-dynamic-media-assets} te leveren
 
