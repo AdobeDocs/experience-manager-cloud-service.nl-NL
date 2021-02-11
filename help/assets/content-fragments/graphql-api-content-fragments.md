@@ -2,9 +2,9 @@
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
+source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
 workflow-type: tm+mt
-source-wordcount: '3220'
+source-wordcount: '3228'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,9 @@ Om vragen GraphQL in AEM toe te laten, creeer een eindpunt bij `/content/cq:grap
 
 >[!CAUTION]
 >
->Er is momenteel een bekende kwestie met het eindpunt:
+>In bepaalde versies is er momenteel een bekende kwestie met het eindpunt:
 >
->* De vermelding `cq:graphql` wordt gezien in de **Sites** console; op het hoogste niveau.
+>* Afhankelijk van de gebruikte release wordt de vermelding `cq:graphql` weergegeven in de console **Sites**; op het hoogste niveau.
    >  Dit mag niet worden gebruikt.
 
 
