@@ -2,9 +2,9 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ Functionele tests worden gecategoriseerd in twee typen:
 
 * Functioneel testen van producten
 * Aangepaste functionele tests
+* Aangepaste UI-tests
 
 ## Functioneel testen van product {#product-functional-testing}
 
@@ -33,6 +34,12 @@ Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de te
 
 >[!NOTE]
 >Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Toegang tot en beheer van logbestanden](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
+
+## Aangepaste UI-tests {#custom-ui-testing}
+
+Er kunnen aangepaste UI-tests worden geschreven, zodat klanten snel testautomatiseringssuites kunnen maken voor het valideren van web- en mobiele toepassingen die op AEM zijn gebaseerd.
+
+Meer over hoe te om de tests van douaneUI te schrijven, verwijs naar [Bouw UI Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Het schrijven van functionele tests {#writing-functional-tests}
