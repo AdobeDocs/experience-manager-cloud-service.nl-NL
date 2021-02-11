@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,37 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.1.0 is 14 januari 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 februari 2021.
+
+### Nieuwe functies {#what-is-new-cloud-manager}
+
+* De productiepijplijn van de Manager van de Wolk zal nu het testen UI van de Douane mogelijkheden omvatten.
+
+* Klanten van middelen kunnen nu kiezen wanneer en waar ze hun Brand Portal-instantie op een zelfbedieningsmanier implementeren via de interface van Cloud Manager. Voor een regelmatig (niet-sandbox) programma met middelenoplossing kan het Brand Portal nu worden ingericht op de productieomgeving. De levering kan slechts eenmaal op het milieu van de Productie worden gedaan.
+
+* Het AEM Project Archetype dat in Project en Sandbox creatie wordt gebruikt is bijgewerkt aan versie 25.
+
+* De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente Cloud Service SDK-releases.
+
+* SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in conflict met de controles van de Onderbreking van de thread.
+
+* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
+
+* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden die met Sonar zijn voorafgegaan, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
+
+* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}
 
-* De instantie van de Productie van activa kan de merkportstatus op **Milieu** detailpagina als *In behandeling* tonen zonder de gebruiker toe te staan om het even welke actie te ondernemen.
+* Het vergelijken van SSL-certificaat met een domeinnaam is niet langer hoofdlettergevoelig.
 
-* Bij het activeren van een dehibernate vanuit Cloud Manager werd soms een foutbericht weergegeven, zelfs wanneer de dehibernatie met succes werd gestart.
+* De gebruikersinterface van Cloud Manager stelt de gebruiker nu op de hoogte als de persoonlijke certificaatsleutels niet voldoen aan de limiet van 2048 bits met een geschikt foutbericht.
 
-* Zeldzame gevallen van fouten die zijn aangetroffen bij het creëren of verwijderen van een omgeving, zijn opgelost.
+* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein wordt gebruikt die momenteel wordt opgesteld.
+
+* In sommige gevallen kan een intern probleem ertoe leiden dat het verwijderen van het milieu vastloopt.
+
+* Sommige pijpleidingsmislukkingen werden verkeerd gemeld als pijpleidingsfouten.
 
 ## AEM als Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
