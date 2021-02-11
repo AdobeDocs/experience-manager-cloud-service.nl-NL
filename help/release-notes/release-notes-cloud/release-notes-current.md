@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
+source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Raadpleeg de documentatie [hier](https://experienceleague.adobe.com/docs/experie
 
 ### Releasedatum {#release-date-ctt}
 
-De Releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
+De releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 
