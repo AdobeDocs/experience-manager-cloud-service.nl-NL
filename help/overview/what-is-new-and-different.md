@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -262,7 +262,7 @@ Zie het overzicht van [Wijzigingen in Sites](/help/sites-cloud/sites-cloud-chang
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service biedt een in cloud-native SaaS-oplossing voor bedrijven, niet alleen om hun Digital Asset Management- en Dynamic Media-bewerkingen snel en doeltreffend uit te voeren, maar ook om intelligente mogelijkheden van de volgende generatie te gebruiken zoals AI/ML, vanuit een systeem dat altijd actueel en beschikbaar is en altijd bezig is met leren.
+Adobe Experience Manager Assets als Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
 
 Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, en hoogkwalitatieve opname en zoekfunctie van assets.
 
