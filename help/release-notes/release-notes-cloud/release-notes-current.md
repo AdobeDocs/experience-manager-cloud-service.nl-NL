@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -120,9 +120,17 @@ Voor deze afgifte zijn twee nieuwe analysatoren toegevoegd:
 
 Raadpleeg de documentatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) voor meer informatie.
 
-## Tools voor de overgang naar Cloud Service {#code-transition-tools}
+## De tool Content Transfer {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt}
+
+De Releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
+
+### Opgeloste problemen {#bug-fixes-ctt}
+
+* Bij het toewijzen van meerdere gebruikers werden IMS-id&#39;s van sommige gebruikers onjuist toegewezen. Dit is opgelost.
+
+### Releasedatum {#release-date-ctt-feb}
 
 De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
@@ -131,3 +139,24 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 * Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud. Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
+
+## Analysator van best practices {#best-practices-analyzer}
+
+### Releasedatum {#release-date-bpa}
+
+De releasedatum voor de analyse van best practices v2.1.0 is 11 februari 2021.
+
+### Nieuw in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+
+* Mogelijkheid om het gebruik van de implementatie van AEM Forms en AEM Forms te detecteren en gebieden aan te geven die van belang zijn voor de migratie naar AEM Forms als Cloud Service.
+* Mogelijkheid om het gebruik en het aantal aangepaste componenten en sjablonen te detecteren en te rapporteren.
+* Capaciteit om het type van knoopopslag en gebruikte gegevensopslag te ontdekken.
+* Mogelijkheid om het gebruik van Dynamic Media te detecteren.
+* Mogelijkheid om de gebruikte Java-versie te detecteren.
+
+
+
+
+
+
+
