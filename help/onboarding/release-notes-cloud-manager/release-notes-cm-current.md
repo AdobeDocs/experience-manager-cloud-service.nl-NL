@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -30,11 +30,11 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 
 * De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente Cloud Service SDK-releases.
 
-* SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in strijd met de controles voor onderbrekingen van de thread.
+* SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in conflict met de controles van de Onderbreking van de thread.
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
 
-* Eigenschappen ingesteld in klant `pom.xml`-bestanden voorafgegaan door sonar en worden nu dynamisch verwijderd om fouten met het maken en scannen van kwaliteit te voorkomen.
+* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden die met Sonar zijn voorafgegaan, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
 
@@ -45,7 +45,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 
 * De gebruikersinterface van Cloud Manager stelt de gebruiker nu op de hoogte als de persoonlijke certificaatsleutels niet voldoen aan de limiet van 2048 bits met een geschikt foutbericht.
 
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
+* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein wordt gebruikt die momenteel wordt opgesteld.
 
 * In sommige gevallen kan een intern probleem ertoe leiden dat het verwijderen van het milieu vastloopt.
 
