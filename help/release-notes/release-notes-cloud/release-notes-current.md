@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -146,7 +146,7 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
 De releasedatum voor de analyse van best practices v2.1.0 is 11 februari 2021.
 
-### Nieuw in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+### Nieuw in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Mogelijkheid om het gebruik van de implementatie van AEM Forms en AEM Forms te detecteren en gebieden aan te geven die van belang zijn voor de migratie naar AEM Forms als Cloud Service.
 * Mogelijkheid om het gebruik en het aantal aangepaste componenten en sjablonen te detecteren en te rapporteren.
