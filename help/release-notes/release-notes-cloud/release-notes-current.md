@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 * Eigenschappen die zijn ingesteld in `pom.xml`-bestanden van de klant die vooraf zijn voorzien van sonar, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
+
+* Er zijn aanvullende regels voor de kwaliteit van code toegevoegd om compatibiliteitsproblemen met Cloud Servicen te verhelpen.
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}
 
