@@ -4,9 +4,9 @@ description: De beste praktijken integreren een plaatsing van de Experience Mana
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -70,7 +70,7 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
-* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalfor a configureerbare, SaaS-invoegtoepassing voor AEM Assets voor het publiceren van middelen.
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalfor a configureerbare add-on to Assets to publish assets.
 
 * De oplossingen van de douane worden gecreeerd gebaseerd op [Commons van het Aandeel van activa](https://adobe-marketing-cloud.github.io/asset-share-commons/) codebasis.
 * AEM [link share](/help/assets/share-assets.md) om elementen ad hoc te delen met behulp van koppelingen.
