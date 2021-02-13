@@ -3,9 +3,9 @@ title: AEM Assets versus AEM MediaLibrary
 description: Veelgestelde vragen over AEM Assets en. AEM Mediabibliotheek, inclusief verschillen tussen de twee.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -27,10 +27,10 @@ De AEM Mediabibliotheek is een aangewezen onderdeel van de AEM WCM-inhoudsopslag
 
 De unieke functies die alleen beschikbaar zijn voor klanten van AEM Assets zijn:
 
-1. de mogelijkheid om andere metagegevens dan titel, tags en beschrijving te extraheren en te bewerken.
-1. Klik op de tweede knop naast de sitebeheerder in het welkomstscherm op AEM Assets Admin.
+1. De mogelijkheid om andere metagegevens dan titel, tags en beschrijving te extraheren en te bewerken.
+1. De AEM Assets Admin, beschikbaar bij het welkomstscherm door de tweede optie naast `siteadmin` te klikken.
 1. Alle workflowstappen met betrekking tot Digital Asset Management, namelijk AEM Assets Ingestie, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, extractie van AEM Assets-metagegevens.
-1. bibliotheken , waaronder &quot; dam &quot; im package space .
+1. Bibliotheken inclusief &quot;dam&quot; in de verpakkingsruimte.
 
 Voor het gebruik van deze functies is een geldige AEM Assets-licentie vereist.
 
