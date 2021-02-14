@@ -3,7 +3,7 @@ title: Vergelijk [!DNL Assets] en de aanbiedingen van de Bibliotheek van Media
 description: Vergelijk [!DNL Experience Manager Assets] en de eigenschappen van de Bibliotheek van Media en ken de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3a7af5fa5889c74eb74e12dead1df0494c2c6386
+source-git-commit: 93735a59dac1a0d674c0292ce268a8662f3b0b91
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -106,4 +106,5 @@ In dit geval hoeft u [!DNL Assets] niet te kopen, zelfs het gebruik van de media
 
 >[!MORELIKETHIS]
 >
->*[Experience Manager als productbeschrijving van Cloud Service](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Experience Manager als productbeschrijving van de Cloud Service](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+
