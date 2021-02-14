@@ -1,26 +1,26 @@
 ---
 title: HTTP-API voor assets
-description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
+description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
 
-# HTTP-API voor assets {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP-API  {#assets-http-api}
 
 ## Overzicht {#overview}
 
-Met de HTTP-API voor middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven op `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [steun voor Inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
+Met de HTTP-API [!DNL Assets] kunt u CRUD-bewerkingen (read-read-update-delete) maken op digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en op gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven op `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [steun voor Inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Toegang krijgen tot de API:
 
 1. Open het API-servicedocument op `https://[hostname]:[port]/api.json`.
-1. Volg de koppelingen van de middelenservice die naar `https://[hostname]:[server]/api/assets.json` leiden.
+1. Volg de [!DNL Assets] de dienstverbinding die aan `https://[hostname]:[server]/api/assets.json` leidt.
 
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
@@ -32,15 +32,13 @@ Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar vi
 
 ## Contentfragmenten {#content-fragments}
 
-Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn met `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
+A [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn met `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de verwerking van inhoudsfragmenten.
 
-Zie [Ondersteuning van inhoudsfragmenten in de HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) van de Experience Manager Assets voor meer informatie.
+Zie [Ondersteuning van inhoudsfragmenten in de  [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) voor meer informatie.
 
 ## Gegevensmodel {#data-model}
 
-De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar (voor standaardelementen).
-
-Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor meer informatie.
+De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor meer informatie.
 
 ### Mappen {#folders}
 
@@ -81,19 +79,19 @@ In [!DNL Experience Manager] heeft een map de volgende componenten:
 
 ## Beschikbare functies {#available-features}
 
-De HTTP-API voor middelen bevat de volgende functies:
+De [!DNL Assets] HTTP-API bevat de volgende functies:
 
-* Haal een mappenlijst op.
-* Maak een map.
-* Een element maken (afgekeurd).
-* Binair element bijwerken (afgekeurd).
-* Metagegevens van elementen bijwerken.
-* Een elementuitvoering maken.
-* Een elementuitvoering bijwerken.
-* Maak een middelenopmerking.
-* Kopieer een map of element.
-* Een map of element verplaatsen.
-* Een map, element of uitvoering verwijderen.
+* [Haal een mappenlijst](#retrieve-a-folder-listing) op.
+* [Maak een map](#create-a-folder).
+* [Een element maken (afgekeurd)](#create-an-asset)
+* [Binair element bijwerken (afgekeurd)](#update-asset-binary).
+* [Metagegevens](#update-asset-metadata) van elementen bijwerken.
+* [Een elementuitvoering](#create-an-asset-rendition) maken.
+* [Een elementuitvoering](#update-an-asset-rendition) bijwerken.
+* [Maak een middelenopmerking](#create-an-asset-comment).
+* [Kopieer een map of element](#copy-a-folder-or-asset).
+* [Een map of element](#move-a-folder-or-asset) verplaatsen.
+* [Een map, element of uitvoering](#delete-a-folder-asset-or-rendition) verwijderen.
 
 >[!NOTE]
 >
@@ -144,11 +142,11 @@ Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppu
 
 ## Elementen {#create-an-asset} maken
 
-Zie [Middelen uploaden](developer-reference-material-apis.md) voor informatie over hoe u middelen maakt met behulp van API&#39;s. Middelen maken met de HTTP API is afgekeurd.
+Zie [asset upload](developer-reference-material-apis.md) voor informatie over het maken van een element. U kunt geen middel tot stand brengen gebruikend HTTP API.
 
 ## Elementbinair {#update-asset-binary} bijwerken
 
-Zie [asset upload](developer-reference-material-apis.md) voor informatie over het bijwerken van middelenbinaire bestanden met behulp van API&#39;s. Het bijwerken van een element binair met behulp van de HTTP API is afgekeurd.
+Zie [Elementupload](developer-reference-material-apis.md) voor informatie over het bijwerken van elementbinaire bestanden. U kunt een element binair niet bijwerken gebruikend HTTP API.
 
 ## Metagegevens van een element {#update-asset-metadata} bijwerken
 
@@ -262,3 +260,8 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 * 200 - OK - als de map is verwijderd.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
+
+>[!MORELIKETHIS]
+>
+>* [Referentiedocumenten voor ontwikkelaars voor [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+
