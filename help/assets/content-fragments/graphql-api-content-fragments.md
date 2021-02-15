@@ -2,9 +2,9 @@
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 0%
 
 ---
@@ -725,23 +725,90 @@ Hier zijn de stappen die worden vereist om een bepaalde vraag voort te zetten:
 
 ## Het vragen van het eindpunt GraphQL van een Externe Website {#query-graphql-endpoint-from-external-website}
 
+Om tot het eindpunt GraphQL van een externe website toegang te hebben moet u vormen:
+
+* [CORS-filter](#cors-filter)
+* [Refererfilter](#referrer-filter)
+
+### CORS-filter {#cors-filter}
+
 >[!NOTE]
 >
 >Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [Begrijpen het Middelen van het Middel van de Verkeer van Herkomst (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-Om een website van derden in staat te stellen JSON-uitvoer te gebruiken, moet een CORS-beleid worden geconfigureerd in de Git-opslagplaats van de klant. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt toe te voegen. In deze configuratie moet een vertrouwde websitenaam (of regex) worden opgegeven waarvoor toegang moet worden verleend.
+Om tot het eindpunt toegang te hebben GraphQL, moet een beleid CORS in de bewaarplaats van de Kit van de klant worden gevormd. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
 
-* Toegang tot het eindpunt GraphQL:
+In deze configuratie moet een vertrouwde website-oorsprong `alloworigin` of `alloworiginregexp` worden opgegeven waarvoor toegang moet worden verleend.
 
-   * legering: [uw domein] of alloworiginregexp: [uw domeinregex]
-   * Ondersteunde methoden: [POST]
-   * toegestane paden: [&quot;/content/graphql/global/endpoint.json&quot;]
+Bijvoorbeeld, om toegang tot het eindpunt te verlenen GraphQL en voortgeduurde vragen eindpunt voor `https://my.domain` kunt u gebruiken:
 
-* De toegang tot van GraphQL stelde vragen eindpunt voort:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * legering: [uw domein] of alloworiginregexp: [uw domeinregex]
-   * Ondersteunde methoden: [GET]
-   * toegestane paden: [&quot;/graphql/execute.json/.*&quot;]
+Als u een ijkweg voor het eindpunt hebt gevormd, kunt u het in `allowedpaths` ook gebruiken.
+
+### Refererfilter {#referrer-filter}
+
+Naast de configuratie CORS, moet een filter van de Referateur worden gevormd om toegang van derdeshosts toe te staan.
+
+Dit wordt gedaan door een aangewezen OSGi de configuratiedossier van de Filter toe te voegen dat:
+
+* geeft een hostnaam voor een vertrouwde website aan; hetzij `allow.hosts` of `allow.hosts.regexp`,
+* verleent toegang voor deze gastheernaam.
+
+Als u bijvoorbeeld toegang wilt verlenen voor verzoeken met de Referrer `my.domain`, kunt u:
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
