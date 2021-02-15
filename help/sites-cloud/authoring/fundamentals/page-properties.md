@@ -2,10 +2,10 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 6%
+source-wordcount: '1894'
+ht-degree: 5%
 
 ---
 
@@ -20,49 +20,43 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 ### Standaard {#basic}
 
-* **Titel**
+* **Titel en tags**
 
-   * De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
-   * Dit is een verplicht veld.
+   * **Titel**  - De titel van de pagina wordt op verschillende plaatsen getoond. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
+      * Dit is een verplicht veld.
+   * **Tags**  - Hier kunt u codes aan de pagina toevoegen of eruit verwijderen door de lijst in het selectievak bij te werken.
+      * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
+      * U kunt een volledig nieuwe tag invoeren door de naam in een leeg selectievak te typen.
+         * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
+         * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
+      * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
+      * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
+      * Zie [Codes gebruiken](/help/sites-cloud/authoring/features/tags.md) voor meer informatie over tags.
+   * **Verbergen in navigatie**  - Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
 
-* **Tags**
+* **Branding**
 
-   * Hier kunt u codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken.
-   * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
-   * U kunt een volledig nieuwe tag invoeren door de naam in een leeg selectievak te typen.
-      * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
-      * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
-   * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
-   * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
-   * Zie [Codes gebruiken](/help/sites-cloud/authoring/features/tags.md) voor meer informatie over tags.
+   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de paginacomponent vanaf versie 2.14.0 of hoger van de [kerncomponenten vereist.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-* **Verbergen in navigatie**
-
-   * Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
+   * **Overschrijven**  - Schakel deze optie in om de witruimte op deze pagina te definiëren.
+      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij de waarden **Override** zijn ingesteld.
+   * **Waarde**  overschrijven - De tekst van de gloedmarkering die aan de paginatitel moet worden toegevoegd.
+      * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
 
 * **HTML-id**
 
-   * HTML-id die op de component moet worden toegepast.
+   * **ID**  - HTML-id die moet worden toegepast op de component.
 
-* **Paginatitel**
+* **Meer titels en beschrijving**
 
-   * Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
+   * **Paginatitel**  - Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
+   * **Navigatitel**  - U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
+   * **Ondertitel**  - Een ondertitel voor gebruik op de pagina.
+   * **Beschrijving**  - Uw beschrijving van de pagina, het doel of andere details die u wilt toevoegen.
 
-* **Navigatietitel**
+* **Aan/Uit-tijd**
 
-   * U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
-
-* **Ondertitel**
-
-   * Een ondertitel voor gebruik op de pagina.
-
-* **Beschrijving**
-
-   * Uw beschrijving van de pagina, het doel of andere details die u wilt toevoegen.
-
-* **Op tijd**
-
-   * De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar (weergegeven) wordt gemaakt in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
+   * **Op tijd**  - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar wordt gemaakt (weergegeven) in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
       >[!NOTE]
       >
@@ -71,12 +65,10 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * Als deze pagina al [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) is, blijft deze slapend (verborgen) totdat deze op het opgegeven tijdstip wordt weergegeven.
       * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
       * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, zal de pagina niet automatisch gepubliceerd worden, zodat zal 404 worden gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
+   * **Off Time**  - Net als en vaak gebruikt in combinatie met  **On Time**, bepaalt dit de tijd waarop de gepubliceerde pagina wordt verborgen in de publicatieomgeving.
+
    * Laat deze velden (**On Time** en **Off Time**) leeg voor pagina&#39;s die u direct wilt publiceren en die beschikbaar zijn in de publicatieomgeving totdat ze zijn gedeactiveerd (het normale scenario).
 
-* **Uit-tijd**
-
-   * Parallel aan **On Time** bepaalt dit de tijd waarop de gepubliceerde pagina op het publicatiemilieu zal worden verborgen.
-   * Laat deze velden (**On Time** en **Off Time**) leeg voor pagina&#39;s die u direct wilt publiceren en die beschikbaar zijn in de publicatieomgeving totdat ze zijn gedeactiveerd (het normale scenario).
 
 * **Vanity URL**
 
@@ -92,31 +84,24 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    >* Deze mag niet op een bestaande pagina worden ingesteld.
 
 
-* **Redirect Vanity URL**
+   * **Voeg toe**  - Tik of klik om een gebied te tonen om een vanity URL voor de pagina te bepalen.
+      * Tik of klik nogmaals om meerdere items toe te voegen.
+      * Tik of klik op het pictogram **Verwijderen** om de vanity URL te verwijderen.
+   * **Redirect Vanity URL**  - Geeft aan of de pagina de vanity URL moet gebruiken.
 
-   * Hiermee geeft u aan of u wilt dat de pagina de vanity-URL gebruikt.
+
+
 
 ### Geavanceerd {#advanced}
 
-* **Taal**
+* **Instellingen**
 
-   * De paginataal.
+   * **Taal**  - De paginataal
+   * **Hoofdmap**  van taal - Moet worden gecontroleerd als de pagina de basis is van een taalkopie
+   * **Omleiden**  - Geeft de pagina aan waarnaar deze pagina automatisch moet worden omgeleid
+   * **Ontwerp**  - Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site
+   * **Alias**  - Geeft een alias op die voor deze pagina moet worden gebruikt
 
-* **Taalbasis**
-
-   * Moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is.
-
-* **Omleiden**
-
-   * Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
-
-* **Ontwerp**
-
-   * Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
-
-* **Alias**
-
-   * Geef een alias op die voor deze pagina moet worden gebruikt.
    >[!NOTE]
    >
    >Alias plaatst het `sling:alias` bezit om een alias naam voor het middel te bepalen (dit beïnvloedt slechts het middel, niet de weg).
@@ -129,52 +114,36 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Overgenomen van  &lt;path>**
+* **Configuratie**
 
-   * Geeft aan of de pagina wordt overgeërfd. en waar van.
+   * **Cloudconfiguratie** : het pad naar de configuratie
 
-* **Cloud Configuration**
+* **Sjablooninstellingen**
 
-   * Het pad naar de configuratie.
+   * **Toegestane Malplaatjes**  -  [bepaalt de lijst van malplaatjes die binnen deze subtak ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) beschikbaar zullen zijn
 
-* **Toegestane sjablonen**
+* **Verificatievereiste**
 
-   * [Definieer de lijst met sjablonen die binnen deze subvertakking ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) beschikbaar zullen zijn.
+   * **Inschakelen**  - Het gebruik van verificatie inschakelen voor toegang tot de pagina
 
-* **Inschakelen**  (verificatievereiste)
+      >[!NOTE]
+      >
+      >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)**.
 
-   * Schakel het gebruik van verificatie in (of uit) om toegang te krijgen tot de pagina.
-   >[!NOTE]
-   >
-   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](#permissions)**.
+   * **Aanmeldingspagina**  - De pagina die moet worden gebruikt voor aanmelding
 
-* **Aanmeldingspagina**
+* **Exporteren**
 
-   * De pagina die voor login moet worden gebruikt.
-
-* **Configuratie exporteren**
-
-   * Geef een exportconfiguratie op.
+   * **Configuratie**  exporteren - Geeft een exportconfiguratie op
 
 ### Miniatuur {#thumbnail}
 
-Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
+De paginaminiatuur configureren
 
-* **Voorvertoning genereren**
-
-   * Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken.
-
-* **Afbeelding uploaden**
-
-   * Upload een afbeelding die u als miniatuur wilt gebruiken.
-
-* **Afbeelding selecteren**
-
-   * Selecteer een bestaand element dat u als miniatuur wilt gebruiken.
-
-* **Vorige versie**
-
-   * Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
+* **Voorvertoning**  genereren - Een voorbeeld van de pagina genereren om als miniatuur te gebruiken
+* **Afbeelding**  uploaden - Een afbeelding uploaden om als miniatuur te gebruiken
+* **Afbeelding**  selecteren - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
+* **Vorige versie**  - Deze optie wordt beschikbaar nadat u de miniatuur hebt gewijzigd. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
 ### Sociale media {#social-media}
 
@@ -189,9 +158,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 ### Cloud Services {#cloud-services}
 
-* **Configuraties van Cloud Servicen**
-
-   * Eigenschappen definiëren voor cloudservices.
+* **Configuraties**  van Cloud Servicen - Eigenschappen voor cloudservices definiëren
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **ContextHub-configuraties**
 
-   * Selecteer de Configuratie ContextHub en de Weg van Segmenten.
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **ContextHub Path**  - bepaal de configuratie  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Segmentpad**  - Het pad  [Segmenten definiëren](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Doelconfiguratie**
 
-   * Selecteer een [Merk om een werkingsgebied voor het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md) te specificeren.
+   * **Merk**  - bepaalt een  [Merk om een werkingsgebied voor het richten](/help/sites-cloud/authoring/personalization/targeted-content.md) te specificeren.
    >[!NOTE]
-   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
+   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Administrators`groep.
 
 ### Machtigingen {#permissions}
 
@@ -227,25 +192,33 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 ### Blauwdruk {#blueprint}
 
-* **Blauwdruk**
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 
-   * Definieer eigenschappen voor een pagina Vervagen binnen beheer met meerdere sites.
+* **Huidige actieve kopieën**  - Hiermee geeft u pagina&#39;s weer die op deze blauwdrukpagina zijn gebaseerd (dat wil zeggen, Live kopieën van deze pagina zijn)
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-
-   * Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
-
+* **De Vormen**  van de rollout - controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar zullen worden verspreid
 
 ### Live kopie {#live-copy}
 
-* **Livecopy**
+* **Synchroniseren**  - Actieve kopie synchroniseren met vervagen, lokale wijzigingen behouden
+* **Herstellen**  - Actieve kopie opnieuw instellen op de status Vervagen, lokale wijzigingen verwijderen
+* **Onderbreken**  - Live kopie onderbreken bij verdere rollout-wijzigingen
+* **Loskoppelen**  - Live kopie loskoppelen van vervaging
 
-   * Definieer eigenschappen voor een Live Copy-pagina in beheer met meerdere sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+* **Bron**
 
-### Sitestructuur {#site-structure}
+   * Hiermee geeft u het pad van de blauwdruk voor deze actieve kopie weer
 
-* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmelden van pagina**, **Offlinepagina**, onder andere.
+* **Status**
+
+   * Hiermee geeft u de huidige status van Live kopie van de pagina weer
+
+* **Configuratie**
+
+   * **Overerving**  van Actieve kopie - Als deze optie is ingeschakeld, is de configuratie van Live Copy effectief voor alle onderliggende elementen
+   * **Als dit selectievakje is ingeschakeld, worden de rollout-configuratie overgenomen van het bovenliggende element** .
+   * **Kies Rollout Config**  - bepaalt de omstandigheden waaronder de wijzigingen van de Vervaging en slechts beschikbaar zullen worden verspreid wanneer de  **Inherit Uitvoer van** Parentis niet wordt geselecteerd
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 
