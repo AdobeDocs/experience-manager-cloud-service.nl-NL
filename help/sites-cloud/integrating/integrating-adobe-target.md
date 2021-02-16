@@ -2,9 +2,9 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM als Cloud Service is het volgende vereist:
 
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM als Cloud Service (vereiste configuratie IMS) tot stand te brengen.
-* adobe target toevoegen en configureren als een extensie in [Adobe starten](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Adobe Target toevoegen en configureren als een extensie in [Adobe starten](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
 
@@ -33,9 +33,33 @@ Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel 
 4. Vul de gegevens in (zie hieronder) en selecteer **Connect**.
    ![](assets/open_screen1.png "Connect")
 
-### IMS-configuratie
+### IMS-configuratie {#ims-configuration}
 
 Een configuratie IMS voor zowel Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM als Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Raadpleeg [deze video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) en [deze pagina](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) voor meer informatie over het maken van de IMS-configuratie Doel.
+
+### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
+
+Houd rekening met het volgende wanneer u de velden Adobe Target Tenant ID en Adobe Target Client Code configureert:
+
+1. Voor de meeste klanten, zijn identiteitskaart van de Aannemer en de Code van de Cliënt het zelfde. Dit betekent dat beide velden dezelfde informatie bevatten en identiek zijn. Zorg ervoor dat u de id van de huurder in beide velden invoert.
+2. Voor oudere doeleinden kunt u ook verschillende waarden invoeren in de velden Tenant ID en Client Code.
+
+Houd er in beide gevallen rekening mee dat:
+
+* Door gebrek, zal de Code van de Cliënt (als eerst toegevoegd) ook automatisch in het gebied van identiteitskaart van de Aannemer worden gekopieerd.
+* U kunt de standaard huurder-id wijzigen.
+* Dienovereenkomstig, zal de achterste vraag aan Doel op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel worden gebaseerd op de Code van de Cliënt.
+
+Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM als Cloud Service. In beide gevallen moet u ervoor zorgen dat de velden **both** de juiste gegevens bevatten, afhankelijk van uw vereisten.
+
+>[!NOTE]
+>
+> Als u een reeds bestaande Configuratie van het Doel wilt uitgeven:
+>
+> 1. Voer de huurder-id opnieuw in.
+> 2. Maak opnieuw verbinding met Doel.
+> 3. Sla de configuratie op.
+
 
 ### De doelconfiguratie bewerken {#edit-target-configuration}
 
