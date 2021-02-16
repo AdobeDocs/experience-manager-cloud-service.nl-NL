@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,21 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
    * Zie [API&#39;s en elementbewerkingen](/help/assets/developer-reference-material-apis.md#use-cases-and-apis) voor een vergelijking van de beschikbare API-methoden voor standaard CRUD-bewerkingen.
 * De standaardworkflow **[!UICONTROL DAM Asset Update]** in eerdere versies van [!DNL Experience Manager] is niet meer beschikbaar. In plaats daarvan, verstrekken de activa microservices een scalable, gemakkelijk beschikbare dienst die het grootste deel van de standaardactiva verwerkt (vertoningen, meta-gegevensextractie, en tekst extractie voor indexering) behandelt.
    * Zie [Elementmicroservices configureren en gebruiken](/help/assets/asset-microservices-configure-and-use.md)
-   * Voor aangepaste workflowstappen in de verwerking kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
+   * Als u aangepaste workflowstappen in de verwerking wilt gebruiken, kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
+* Metagegevensterugname wordt niet ondersteund.
 * Elementen die worden geüpload met gebruik van Package Manager vereisen handmatige opwerking met behulp van de handeling **[!UICONTROL Reprocess Asset]** in de interface [!DNL Assets].
-* Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
+* Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. [Automatische MIME-](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) typedetectie is niet beschikbaar. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan.
+* [[!DNL Assets] De ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) ervaring met introductiepagina is niet beschikbaar.
+* Dubbele detectie van elementen werkt anders dan in Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).[
+* Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan hoe deze werken in vorige [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor Experience Manager als een Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met eerdere versies in knooppunten in de opslagplaats van middelen (dezelfde naamgevingsconventies).
+Standaarduitvoeringen die met elementmicroservices worden gegenereerd, worden op een compatibele manier opgeslagen in knooppunten in de opslagplaats van elementen die dezelfde naamgevingsconventies gebruiken.
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
 Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Middelenmicroservices helpen u te voorkomen dat er van derden rendertools en -methoden nodig zijn (zoals ImageMagick) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt een [brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist. U kunt niet de complexe configuraties van ImageMagick voor de [!UICONTROL Processing Profiles] configuratie gebruiken. Gebruik [!DNL Dynamic Media] voor geavanceerde MPEG-transcodering van video&#39;s en gebruik verwerkingsprofielen voor [standaardtranscodering van MP4-video&#39;s](/help/assets/manage-video-assets.md#transcode-video).
 
-Asset microservices is een cloudservice die automatisch wordt ingericht en via de Experience Manager wordt verbonden in programma&#39;s en omgevingen van klanten die worden beheerd in Cloud Manager. Om Experience Manager uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd, om hun code te testen en te bevestigen gebruikend, tonend, downloadend activa.
+Asset microservices is een cloudservice die automatisch wordt ingericht en via de Experience Manager wordt verzonden in programma&#39;s en omgevingen van klanten die worden beheerd in Cloud Manager. Om Experience Manager uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd, om hun code te testen en te bevestigen gebruikend, tonend, downloadend activa.
 
 Als u de code en het proces van begin tot einde wilt valideren, inclusief het opnemen en verwerken van bedrijfsmiddelen, implementeert u de codewijzigingen in een cloud-dev-omgeving met de [pijplijn](/help/implementing/cloud-manager/configure-pipeline.md) en test u met de volledige uitvoering van de verwerking van asset-microservices.
 
