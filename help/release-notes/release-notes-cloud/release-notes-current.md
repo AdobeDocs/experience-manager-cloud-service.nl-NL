@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,6 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 
 ### Nieuwe functies {#what-is-new-cloud-manager}
 
-* De productiepijplijn van de Manager van de Wolk zal nu het testen UI van de Douane mogelijkheden omvatten.
 
 * Klanten van middelen kunnen nu kiezen wanneer en waar ze hun Brand Portal-instantie op een zelfbedieningsmanier implementeren via de interface van Cloud Manager. Voor een regelmatig (niet-sandbox) programma met middelenoplossing kan het Brand Portal nu worden ingericht op de productieomgeving. De levering kan slechts eenmaal op het milieu van de Productie worden gedaan.
 
