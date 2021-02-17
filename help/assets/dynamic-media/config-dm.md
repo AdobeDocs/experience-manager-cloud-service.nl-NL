@@ -2,9 +2,9 @@
 title: Dynamic Media-Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3567'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Een nieuwe Dynamic Media-configuratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
+## Dynamic Media-configuratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -349,7 +349,7 @@ Om Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> vlot te laten werk
 
 * De vooraf gedefinieerde taakparameters bijwerken voor het verwerken van verschillende bestandsindelingen.
 * Het bijwerken van de vooraf gedefinieerde Granite-workflow (video-elementen) vormt een wachtrij voor arbeidersthreads.
-* Bij het bijwerken van de vooraf gedefinieerde Granite transient-workflow (afbeeldingen en niet-video-elementen) kunt u de workflowthreads voor workers in de wachtrij gebruiken.
+* Het bijwerken van de vooraf gedefinieerde tijdelijke Granite-workflow (afbeeldingen en niet-video-elementen) vormt een wachtrij voor arbeidersthreads.
 * De maximale uploadverbindingen naar de Dynamic Media Classic-server bijwerken.
 
 #### De vooraf gedefinieerde taakparameters bijwerken voor de verwerking van verschillende bestandsindelingen
