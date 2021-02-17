@@ -2,9 +2,9 @@
 title: Carousel-banners
 description: Leer hoe u met Carousel Banners in Dynamic Media werkt.
 translation-type: tm+mt
-source-git-commit: f5627a6e885a556700fbf56c4c63f0f4d6a89da0
+source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
 workflow-type: tm+mt
-source-wordcount: '4491'
+source-wordcount: '4490'
 ht-degree: 3%
 
 ---
@@ -224,7 +224,7 @@ Zie [Elementen uploaden](/help/assets/manage-digital-assets.md) om afbeeldingsba
    >    * Animatie. Elke dia-overgang is standaard vervagen. U kunt dat wijzigen in een dia-overgang.
    >    * Stijl van de knoppen. Gebruikers kunnen door de banners roteren door op elke punt of elk getal te tikken. U kunt wijzigen waar de knoppen van de ingestelde indicator worden weergegeven (en of ze numeriek of gestippeld zijn) en hoe groot ze zijn.
    >    * Wijzig de markeerstijl van een afbeeldingskaart of het pictogram dat voor hotspots wordt gebruikt.
-   >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarop u de voorinstelling wilt baseren. Als u geen stijl kiest en de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u besluit dat u een andere voorinstelling wilt gebruiken.
+   >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarop u de voorinstelling wilt baseren. Als u geen stijl kiest en de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u een andere voorinstelling kiest.
 
 
    U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
