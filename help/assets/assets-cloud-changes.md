@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
+source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -31,33 +31,35 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
 * De standaardworkflow **[!UICONTROL DAM Asset Update]** in eerdere versies van [!DNL Experience Manager] is niet meer beschikbaar. In plaats daarvan, verstrekken de activa microservices een scalable, gemakkelijk beschikbare dienst die het grootste deel van de standaardactiva verwerkt (vertoningen, meta-gegevensextractie, en tekst extractie voor indexering) behandelt.
    * Zie [Elementmicroservices configureren en gebruiken](/help/assets/asset-microservices-configure-and-use.md)
    * Als u aangepaste workflowstappen in de verwerking wilt gebruiken, kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
-* Metagegevensterugname wordt niet ondersteund.
-* Elementen die worden geüpload met gebruik van Package Manager vereisen handmatige opwerking met behulp van de handeling **[!UICONTROL Reprocess Asset]** in de interface [!DNL Assets].
-* Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. [Automatische MIME-](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) typedetectie is niet beschikbaar. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan.
-* [[!DNL Assets] De ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) ervaring met introductiepagina is niet beschikbaar.
-* Dubbele detectie van elementen werkt anders dan in Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).[
-* Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan hoe deze werken in vorige [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor Experience Manager als een Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
+* Metagegevensterugname wordt niet ondersteund. Zie [terugschrijven van metagegevens in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
+* Voor elementen die worden geüpload met gebruik van Package Manager moet u de **[!UICONTROL Reprocess Asset]**-handeling in de gebruikersinterface [!DNL Assets] handmatig opnieuw verwerken.
+* [!DNL Assets] detecteert niet automatisch het MIME-type van geüploade elementen. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
+* [!DNL Assets] De ervaring met introductiepagina is niet beschikbaar. Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
+* Dubbele detectie van elementen werkt anders dan in [6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). [!DNL Experience Manager] 
+* Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan in eerdere [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Standaarduitvoeringen die met elementmicroservices worden gegenereerd, worden op een compatibele manier opgeslagen in knooppunten in de opslagplaats van elementen die dezelfde naamgevingsconventies gebruiken.
+Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met oudere versies in de knooppunten van de opslagplaats van bedrijfsmiddelen en die dezelfde naamgevingsconventies gebruiken.
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
 Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Middelenmicroservices helpen u te voorkomen dat er van derden rendertools en -methoden nodig zijn (zoals ImageMagick) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt een [brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist. U kunt niet de complexe configuraties van ImageMagick voor de [!UICONTROL Processing Profiles] configuratie gebruiken. Gebruik [!DNL Dynamic Media] voor geavanceerde MPEG-transcodering van video&#39;s en gebruik verwerkingsprofielen voor [standaardtranscodering van MP4-video&#39;s](/help/assets/manage-video-assets.md#transcode-video).
 
-Asset microservices is een cloudservice die automatisch wordt ingericht en via de Experience Manager wordt verzonden in programma&#39;s en omgevingen van klanten die worden beheerd in Cloud Manager. Om Experience Manager uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd, om hun code te testen en te bevestigen gebruikend, tonend, downloadend activa.
+Asset microservices is een service in de cloud die automatisch wordt ingericht en via [!DNL Experience Manager] wordt verzonden in programma&#39;s en omgevingen van klanten die worden beheerd in Cloud Manager. Om [!DNL Experience Manager] uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd, om hun code te testen en te bevestigen gebruikend, tonend, downloadend activa.
 
 Als u de code en het proces van begin tot einde wilt valideren, inclusief het opnemen en verwerken van bedrijfsmiddelen, implementeert u de codewijzigingen in een cloud-dev-omgeving met de [pijplijn](/help/implementing/cloud-manager/configure-pipeline.md) en test u met de volledige uitvoering van de verwerking van asset-microservices.
 
 ## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
-De klassieke interface is niet meer beschikbaar in de Experience Manager als [!DNL Cloud Service]. De standaardinterface is de interface met aanraakbediening.
+De klassieke interface is niet meer beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. Alleen de interface met aanraakbediening is beschikbaar.
 
 >[!MORELIKETHIS]
 >
->* [Inleiding  [!DNL Adobe Experience Manager] tot [!DNL Cloud Service]](/help/overview/introduction.md)
->* An [overview of [!DNL Experience Manager] as a [!DNL Cloud Service] - What is New and What is Different](/help/overview/what-is-new-and-different.md)
->* De [architectuur](/help/core-concepts/architecture.md) van [!DNL Experience Manager] als [!DNL Cloud Service]
->* [Opvallende wijzigingen  [!DNL Experience Manager] in [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
->* [Opvallende wijzigingen  [!DNL Experience Manager Sites] in [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>De volgende bronnen zijn beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]:
+>
+>* [Een inleiding](/help/overview/introduction.md)
+>* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
+>* [De architectuur](/help/core-concepts/architecture.md)
+>* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
+>* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
