@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 68%
+source-wordcount: '474'
+ht-degree: 67%
 
 ---
 
@@ -123,6 +123,6 @@ ht-degree: 68%
    + [Dynamic Media-assets publiceren](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Werken met Selectieve publicatie in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Werken met kiezers](dynamic-media/working-with-selectors.md)
-   + [Veelgestelde vragen over de gebruiksduur van de DHTML-viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Kennisgeving over de gebruiksduur van Flash-viewers](dynamic-media/flash-viewers-eol.md)
    + [Veelgestelde vragen over HTTP2-levering van content](dynamic-media/http2faq.md)
+   + [Flash Viewers end of Life](dynamic-media/flash-viewers-eol.md)
+   + [Einde levensduur DHTML-viewers](dynamic-media/dhtml-viewer-endoflifefaqs.md)
