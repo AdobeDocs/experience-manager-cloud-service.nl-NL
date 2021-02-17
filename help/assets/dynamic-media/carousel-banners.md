@@ -2,9 +2,9 @@
 title: Carousel-banners
 description: Leer hoe u met Carousel Banners in Dynamic Media werkt.
 translation-type: tm+mt
-source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
+source-git-commit: 3391045d867cdfc21ab9784e20c6893d38bc78f0
 workflow-type: tm+mt
-source-wordcount: '4490'
+source-wordcount: '4476'
 ht-degree: 3%
 
 ---
@@ -86,16 +86,16 @@ Zo kunt u snel aan de slag:
    * [Voeg een carrouselbanner toe aan uw ](#adding-a-carousel-banner-to-your-website-page)websitepaginaU kunt de URL van de carrouselbanner of de ingesloten code die u naar de websitepagina hebt gekopieerd, toevoegen.
 
       * [Integreer de carrouselbanner met een bestaande Snelle weergave](#integrating-the-carousel-banner-with-an-existing-quickview). Als u een systeem voor webcontentbeheer van derden gebruikt, moet u de nieuwe carrouselbanner integreren met de bestaande Quick view-implementatie op uw website.
-   * [Voeg een carrouselbanner toe aan uw website in Experience ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) ManagerAls u een klant van de Plaatsen van de Experience Manager bent kunt u de carrousel toevoegen die direct aan de pagina in Experience Manager wordt geplaatst, gebruikend de Interactieve component van Media.
+   * [Voeg in Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) een carrouselbanner toe aan uw website. Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de carrousel toevoegen die direct aan de pagina gebruikend de Interactieve component van Media wordt geplaatst.
 
 
 Zie [Carrouselsets bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [ van de ](/help/assets/manage-digital-assets.md#editing-properties)Carousel-set weergeven en bewerken.
 
 ## Hotspot en de Variabelen van de Kaart van het Beeld {#identifying-hotspot-and-image-map-variables} identificeren
 
-Begin door dynamische variabelen te identificeren die door de bestaande Snelle meningsimplementatie worden gebruikt. Zo kunt u hotspots of gegevens van afbeeldingen met hyperlinks correct invoeren tijdens het maken van carrouselsets in Experience Manager Assets.
+Begin door dynamische variabelen te identificeren die door de bestaande Snelle meningsimplementatie worden gebruikt. Met deze methode kunt u hotspots of afbeeldingskaartgegevens correct invoeren tijdens het maken van de carrousel-set in Experience Manager Assets.
 
-Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding, wijst u een SKU en optionele extra variabelen toe aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks aan te passen aan de inhoud van de Snelle weergave.
+Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding, wijst u een SKU (Stock Keeping Unit) toe. U kunt ook optionele extra variabelen toewijzen aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks aan te passen aan de inhoud van de Snelle weergave.
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -135,7 +135,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval is het enige variabele deel in de URL van de Snelle weergave de product-SKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de Snelle weergave naast de SKU echter verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU ook verschillende elementen. Enkele van deze elementen zijn onder andere categorie-id, kleurcode, code voor de grootte, enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
 Bekijk de volgende voorbeelden van URL&#39;s in de Snelle weergave en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
@@ -215,7 +215,7 @@ Zie [Elementen uploaden](/help/assets/manage-digital-assets.md) om afbeeldingsba
    Als u een dia wilt verwijderen, tikt u op de dia of klikt u op **[!UICONTROL Delete Slide]** in de werkbalk. Als u een dia wilt verplaatsen, tikt u op het pictogram voor herschikking en houdt u de muisknop ingedrukt en verplaatst u de gewenste locatie.
 
 1. Nadat u de afbeeldingen in dia&#39;s hebt toegevoegd, kunt u een hotspot, afbeelding met hyperlinks of beide toevoegen aan uw afbeelding. Zie [hotspots of afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen door te tikken op de tabbladen Gedrag en Weergave of door aan te passen hoe de carrouselbanner eruitziet of hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
+1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen. Tik of klik op de tabbladen Gedrag en Weergave en pas de vormgeving van de carrouselbanner aan of geef aan hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-pr
 
 >[!NOTE]
 >
->Wanneer u hotspots toevoegt aan een afbeelding in een [Interactieve afbeelding](/help/assets/dynamic-media/interactive-images.md) of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie, relatief ten opzichte van de locatie van de afbeelding. Dit geldt ongeacht of het een interactieve afbeelding of een carrouselbanner is. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
+>Wanneer u hotspots toevoegt aan een afbeeldingsbanner, worden de gegevens van de hotspot opgeslagen in dezelfde metagegevenslocatie, relatief ten opzichte van de locatie van de afbeelding. Dit geldt ongeacht of het een interactieve afbeelding of een carrouselbanner is. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
 Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Onthoud deze tip als u een interactieve afbeelding of carrouselbanner wilt maken die dezelfde afbeelding gebruikt. Overweeg om interactieve afbeeldingen en carrouselbanners te maken met aparte kopieën van dezelfde afbeelding.
 
 >[!NOTE]
@@ -285,7 +285,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
       * Als u geen klant van de Plaatsen van de Experience Manager <!-- or Ecommerce --> bent:
 
          * Definieer variabelen. Zie [Hotspot-variabelen identificeren](#identifying-hotspot-and-image-map-variables).
-         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het Snelle meningsmalplaatje zodat het systeem weet om aangewezen hotspot met de Snelle mening van SKU te associëren.
+         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde SKU vult automatisch het variabele gedeelte van het malplaatje van de Snelle mening. Het systeem weet nu om geëtst hotspot met een bepaalde Snelle mening van SKU te associëren.
          * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als de Snelle weergave andere variabelen bevat die u moet gebruiken om een product verder te identificeren. Geef in het tekstveld een extra variabele op. category=Mens is bijvoorbeeld een toegevoegde variabele.
 
          * Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md) voor meer informatie.
@@ -304,7 +304,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Tik op **[!UICONTROL Experience Fragment]**.
 
-      * Als u een AEM Sites-klant bent, tikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik of klik op het gewenste fragment van de ervaring om terug te keren naar de pagina Hotspot-beheer en tik vervolgens op Selecteren in de rechterbovenhoek van de pagina.
+      * Als u een AEM Sites-klant bent, tikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik op het ervaringsfragment dat u wilt gebruiken om terug te keren naar de pagina Hotspot-beheer en tik vervolgens op Selecteren in de rechterbovenhoek van de pagina.
 Zie [Fragmenten ervaren](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals dit op de banner wordt weergegeven.
@@ -348,7 +348,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
 1. Voer een van de volgende handelingen uit om de Carousel-set te bewerken:
 
-   * Als u een dia wilt toevoegen, tikt u op het pictogram **[!UICONTROL Add Slide]** en navigeert u naar het element dat u aan die dia wilt toevoegen. Tik vervolgens op het vinkje.
+   * Tik op het pictogram **[!UICONTROL Add Slide]** om een dia toe te voegen. Navigeer naar het element dat u aan die dia wilt toevoegen en tik of klik op het vinkje.
    * Als u de volgorde van dia&#39;s wilt wijzigen, sleept u een dia naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u een hotspot of afbeelding met hyperlinks wilt toevoegen, klikt u op de pictogrammen voor hotspots of afbeeldingen met hyperlinks en ziet u [hotspots en afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
    * Tik op het tabblad **[!UICONTROL Appearance]** of **[!UICONTROL Behavior]** en stel de gewenste opties in om de weergave of het gedrag van de carrouselset te bewerken.
@@ -362,7 +362,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
 ## (Optioneel) Voorvertoning van carrouselbanners {#optional-previewing-carousel-banners}
 
-Met Voorvertonen kunt u zien hoe uw carrouselbanner eruit ziet voor klanten en kunt u de hotspots voor carrouselbanners en afbeeldingen met hyperlinks testen om te controleren of deze zich gedragen zoals u had verwacht.
+Met Voorvertoning kunt u zien hoe de carrouselbanner er voor klanten uitziet. Met Voorvertoning kunt u ook de hotspots en afbeeldingen van de carrouselbanner testen om te controleren of deze zich naar behoren gedragen.
 
 Wanneer u tevreden bent met de carrouselbanner, kunt u deze publiceren.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
@@ -391,11 +391,11 @@ U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode
 
 ## Carrouselbanners {#publishing-carousel-banners} publiceren
 
-Publiceer de carrousel om deze te gebruiken. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. Het publiceert ook de carrousel naar de Dynamic Media-cloud, die is geïntegreerd met een CDN voor schaalbare en krachtige levering.
+Als u de carrousel wilt gebruiken, moet u deze publiceren. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. Het publiceert ook de carrousel naar de Dynamic Media-cloud, die is geïntegreerd met een CDN voor schaalbare en krachtige levering.
 
 >[!NOTE]
 Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
-Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
+Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, publiceert u ook de interactieve afbeelding zodat deze wijzigingen worden weerspiegeld in de carrouselbanner.
 
 Zie [Dynamic Media Assets publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor informatie over het publiceren van carrouselbanners.
 
@@ -406,7 +406,7 @@ Nadat u bannerafbeeldingen hebt geüpload om een carrousel, toegevoegde hotspots
 >[!NOTE]
 Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Nochtans, als u een stand-alone klant van de Middelen van de Experience Manager bent kunt u de carrouselbanner aan uw website manueel toevoegen landend pagina zoals die in dit onderwerp wordt beschreven.
+Als u echter een zelfstandige Experience Manager Assets-klant bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website.
 
 1. Kopieer de insluitcode van de gepubliceerde carrouselset.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
@@ -432,7 +432,7 @@ De bestaande implementatie van de Snelle weergave vertegenwoordigt normaal gespr
 
 Deze aanroepen vertegenwoordigen geen onafhankelijke openbare API-aanroepen die door de webpaginalogica kunnen worden aangeroepen vanuit een willekeurige stap. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 
-Wanneer een gebruiker op een hotspot of afbeelding met hyperlinks in de carrouselbanner klikt en tegelijkertijd de carrouselbanner stap 1 en gedeeltelijk stap 2 vervangt, wordt deze gebruikersinteractie door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle eerder toegevoegde hotspot- of afbeeldingskaartgegevens bevat.
+Tegelijkertijd dat de carrouselbanner stap 1 en gedeeltelijk stap 2 vervangt wanneer een gebruiker op een hotspot of afbeelding met hyperlinks klikt, wordt deze interactie door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle eerder toegevoegde hotspot- of afbeeldingskaartgegevens bevat.
 
 In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 
