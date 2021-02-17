@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
+source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
 * Metagegevensterugname wordt niet ondersteund. Zie [terugschrijven van metagegevens in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
 * Voor elementen die worden geüpload met gebruik van Package Manager moet u de **[!UICONTROL Reprocess Asset]**-handeling in de gebruikersinterface [!DNL Assets] handmatig opnieuw verwerken.
 * [!DNL Assets] detecteert niet automatisch het MIME-type van geüploade elementen. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
+* [!DNL Experience Manager] aangezien een  [!DNL Cloud Service] subelement niet wordt gegenereerd voor samengestelde elementen. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
 * [!DNL Assets] De ervaring met introductiepagina is niet beschikbaar. Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * Dubbele detectie van elementen werkt anders dan in [6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). [!DNL Experience Manager] 
 * Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan in eerdere [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
