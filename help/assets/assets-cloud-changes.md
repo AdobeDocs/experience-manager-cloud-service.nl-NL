@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
 * [!DNL Assets] De ervaring met introductiepagina is niet beschikbaar. Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * Dubbele detectie van elementen werkt anders dan in [6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). [!DNL Experience Manager] 
 * Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan in eerdere [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
+* Wanneer een ZIP-archief wordt geüpload, haalt [!DNL Experience Manager] als een [!DNL Cloud Service] niet de elementen uit het archief. Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
 Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met oudere versies in de knooppunten van de opslagplaats van bedrijfsmiddelen en die dezelfde naamgevingsconventies gebruiken.
 
