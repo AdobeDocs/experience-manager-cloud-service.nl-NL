@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -133,9 +133,10 @@ De releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
 
 De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
-### Nieuw in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt}
 
-* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud. Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
+* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud.
+Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
 
@@ -145,7 +146,7 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
 De releasedatum voor de analyse van best practices v2.1.0 is 11 februari 2021.
 
-### Nieuw in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
 
 * Mogelijkheid om het gebruik van de implementatie van AEM Forms en AEM Forms te detecteren en gebieden aan te geven die van belang zijn voor de migratie naar AEM Forms als Cloud Service.
 * Mogelijkheid om het gebruik en het aantal aangepaste componenten en sjablonen te detecteren en te rapporteren.
