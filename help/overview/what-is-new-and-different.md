@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
+source-git-commit: 938f2b45a99e8884c166656694424d2123121369
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 88%
+source-wordcount: '1885'
+ht-degree: 86%
 
 ---
 
@@ -121,13 +121,7 @@ Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangr
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
-Cloud Manager kan omgevingen maken in drie geografische regio&#39;s (meer regio&#39;s zullen volgen):
-
-* VS (Oost)
-
-* EMEA (Nederland)
-
-* APAC (Australië)
+Cloud Manager creëert omgevingen in datacenters in veel geografische regio&#39;s, wat zorgt voor wereldwijde dekking. CDN Punten van Aanwezigheid (PoP) verzekert laag-latentie inhoudslevering voor klanten die over de hele wereld worden gevestigd.
 
 >[!NOTE]
 >Raadpleeg [Toegang tot Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) om als Cloud Service aan de slag te gaan met Cloud Manager in AEM.
@@ -262,7 +256,7 @@ Zie het overzicht van [Wijzigingen in Sites](/help/sites-cloud/sites-cloud-chang
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets als Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
+Adobe Experience Manager Assets als Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
 Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, en hoogkwalitatieve opname en zoekfunctie van assets.
 
