@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/do
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.0 is 11 februari 2021.
+De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 
 ### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
 
@@ -153,6 +153,19 @@ De releasedatum voor de analyse van best practices v2.1.0 is 11 februari 2021.
 * Capaciteit om het type van knoopopslag en gebruikte gegevensopslag te ontdekken.
 * Mogelijkheid om het gebruik van Dynamic Media te detecteren.
 * Mogelijkheid om de gebruikte Java-versie te detecteren.
+
+## Tools voor herstructurering van code {#code-refactoring-tools}
+
+### Nieuw in de Hulpmiddelen {#what-is-new-crt} van de Refactoring van de Code
+
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat verschillende foutoplossingen voor de Repository Modernizer.
+Raadpleeg [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) voor meer informatie over deze plug-in.
+
+### Opgeloste problemen {#bug-fixes-crt}
+
+* Verschillende opgeloste problemen zijn opgelost in de Repository Modernizer.
+Verwijs naar [Middel GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
+
 
 
 
