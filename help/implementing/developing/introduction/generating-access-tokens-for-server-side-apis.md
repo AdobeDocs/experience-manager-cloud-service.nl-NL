@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 De zelfde uitwisseling kan in om het even welke taal worden uitgevoerd die een ondertekend Token JWT met het correcte formaat kan produceren en IMS Symbolische Uitwisseling APIs roepen.
 
-Het toegangstoken zal bepalen wanneer het verloopt, wat typisch 12 uren is. Er is steekproefcode in de git bewaarplaats om een toegangstoken te beheren en het te verfrissen alvorens het verloopt.
+Het toegangstoken zal bepalen wanneer het verloopt, wat typisch 24 uren is. Er is steekproefcode in de git bewaarplaats om een toegangstoken te beheren en het te verfrissen alvorens het verloopt.
 
 ### De AEM-API {#calling-the-aem-api} aanroepen
 
@@ -120,7 +120,7 @@ Zie [documentatie van de Richtlijnen van de Ontwikkelaar](/help/implementing/dev
 
 >[!NOTE]
 >
->Het token voor lokale ontwikkelingstoegang is 24 uur geldig waarna deze met dezelfde methode opnieuw moet worden gegenereerd.
+>Het token voor lokale ontwikkelingstoegang is maximaal 24 uur geldig waarna het opnieuw moet worden gegenereerd met dezelfde methode.
 
 De ontwikkelaars kunnen dit teken gebruiken om vraag van hun niet-AEM testtoepassing aan een AEM als milieu van de Cloud Service te maken. De ontwikkelaar gebruikt dit token doorgaans samen met de niet-AEM toepassing op zijn eigen laptop. Bovendien is de AEM als Cloud doorgaans een omgeving die geen productie heeft.
 
