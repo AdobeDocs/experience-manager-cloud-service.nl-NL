@@ -2,9 +2,9 @@
 title: KPI's uitlijnen
 description: KPI's uitlijnen
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # Om juiste KPIs te kiezen, begin met uw bedrijfsdoelstellingen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="KPI&#39;s uitlijnen"
+>abstract="In een digitale wereld kun je bijna alles meten. Het kiezen van juiste KPIs voor uw implementatie van Adobe Experience Manager zal uw team helpen zich op wat het belangrijkst richten."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI&#39;s evalueren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Het juiste team kiezen"
 
 In een digitale wereld kun je bijna alles meten. Het kiezen van drie KPIs voor uw implementatie van Adobe Experience Manager zal uw team helpen zich op wat het belangrijkst richten.
 
