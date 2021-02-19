@@ -2,15 +2,22 @@
 title: Rechts personen, juiste rollen
 description: Rechts personen, juiste rollen
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
 
 
 # **Om te beginnen de juiste mensen in de juiste rollen krijgen**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Kies het juiste team"
+>abstract="De juiste mensen in de juiste banen zetten om uw Adobe Experience Manager-implementatie tot een succes te maken."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI&#39;s evalueren"
 
 Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende aspecten van de digitale ervaring hebben. Zonder governance is het stadium van eindeloze discussie, strijd en verwarring.
 
