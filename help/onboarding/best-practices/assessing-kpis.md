@@ -2,15 +2,22 @@
 title: KPI's openen
 description: KPI's openen
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # Meent u de dingen die het belangrijkst zijn?
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="KPI&#39;s evalueren"
+>abstract="Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Het juiste team kiezen"
 
 Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen.
 
