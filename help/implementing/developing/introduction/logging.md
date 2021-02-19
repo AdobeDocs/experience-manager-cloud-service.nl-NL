@@ -2,9 +2,9 @@
 title: Logboekregistratie
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2314'
 ht-degree: 2%
 
 ---
@@ -580,7 +580,7 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het Splunk-product te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
@@ -598,6 +598,12 @@ De bovenstaande eigenschappen moeten voor elke relevante combinatie van programm
 >[!NOTE]
 >
 >Splunk forward for sandbox program environment is not supported.
+
+Zorg ervoor dat het eerste verzoek alle ontwikkelomgeving bevat die moet worden ingeschakeld, in aanvulling op de fase-/prodomgevingen.
+
+Als om het even welke nieuwe dev milieu&#39;s na het aanvankelijke verzoek worden gecreeerd om Splunk te hebben door:sturen, maar het niet toegelaten hebben, zou een extra verzoek moeten worden gemaakt.
+
+Merk ook op dat als de ontwikkelmilieu&#39;s zijn gevraagd, het mogelijk is dat andere ontwikkelmilieu&#39;s niet in het verzoek of zelfs zandbakmilieu&#39;s toegelaten Splunk door:sturen zullen hebben en een index van het Splunk zullen delen. Klanten kunnen het veld `aem_env_id` gebruiken om een onderscheid te maken tussen deze omgevingen.
 
 Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
 
