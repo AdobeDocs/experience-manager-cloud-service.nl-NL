@@ -2,7 +2,7 @@
 title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-middelen kunt leveren.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Met Dynamic Media hebt u verschillende opties:
 
 >[!NOTE]
 >
->Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [Slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -43,4 +43,4 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
-Zie [HTTP/2 Levering van Inhoud Veelgestelde Vragen](/help/assets/dynamic-media/http2faq.md) om meer te leren.
+Zie [HTTP/2 Levering van inhoud Veelgestelde vragen](/help/assets/dynamic-media/http2faq.md) voor meer informatie.
