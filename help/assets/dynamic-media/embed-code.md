@@ -2,7 +2,7 @@
 title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
 description: Leer hoe u Dynamic Media-video of afbeeldingselementen op een webpagina insluit.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 21%
@@ -42,7 +42,7 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsiv
 
    Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-1. Selecteer in de linkertrack het vervolgkeuzemenu en tik op **[!UICONTROL Viewers]**.
+1. Selecteer de vervolgkeuzelijst in de linkertrack en tik **[!UICONTROL Viewers]**.
 1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
 1. Tik op **[!UICONTROL Embed]**.
 1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close]**.
