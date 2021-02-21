@@ -2,9 +2,9 @@
 title: Dynamic Media-assets leveren
 description: Met Dynamic Media hebt u verschillende opties om uw Dynamic Media-middelen - zowel video als afbeeldingen - naar uw website te verzenden.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '105'
 ht-degree: 13%
 
 ---
