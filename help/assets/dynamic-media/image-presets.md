@@ -2,10 +2,10 @@
 title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
 description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 12%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +16,11 @@ Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen v
 
 Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aangeduid met de knop **[!UICONTROL RESS]** nadat u deze hebt geselecteerd).
 
-In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen kunt gebruiken. [Beheerders kunnen voorinstellingen](managing-image-presets.md) voor afbeeldingen maken en configureren.
+[Beheerders kunnen voorinstellingen](managing-image-presets.md) voor afbeeldingen maken en configureren.
 
 >[!NOTE]
 >
->Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [Slimme beeldverwerking](imaging-faq.md) voor meer informatie.
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
@@ -31,8 +31,9 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >[!NOTE]
    >
    >* Statische vertoningen worden weergegeven in de bovenste helft van het epaan. Dynamische uitvoeringen worden weergegeven in de onderste helft. Alleen bij dynamische uitvoeringen kunt u de URL gebruiken om de afbeelding weer te geven. De knop **[!UICONTROL URL]** wordt alleen weergegeven als u een dynamische vertoning selecteert. De knop **[!UICONTROL RESS]** wordt alleen weergegeven als u een responsieve voorinstelling voor de afbeelding selecteert.
-   >
-   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -44,7 +45,7 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
 
    >[!NOTE]
    >
-   >Als de asset *en* de afbeeldingsvoorinstelling nog niet zijn gepubliceerd, is de knop **[!UICONTROL URL]** (of de knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]**, indien van toepassing) niet beschikbaar.
+   >Als het element *en* de voorinstelling voor de afbeelding nog niet is gepubliceerd, is de knop **[!UICONTROL URL]** (of de URL- en RESS-knoppen, indien van toepassing) niet beschikbaar.
    >
    >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media S7-server.
 
