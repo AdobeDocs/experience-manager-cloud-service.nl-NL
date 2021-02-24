@@ -1,41 +1,41 @@
 ---
-title: Elementen als een [!DNL Cloud Service] hulplijn
-description: Adobe Experience Manager Assets as a [!DNL Cloud Service] self-help resources and documentation links
+title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
+description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 36%
+source-wordcount: '259'
+ht-degree: 24%
 
 ---
 
 
-# Elementen als een [!DNL Cloud Service]-hulplijn {#aem-assets-guide}
+# [!DNL Assets] als  [!DNL Cloud Service] hulplijn  {#aem-assets-guide}
 
-Hieronder vindt u zelfhulpbronnen voor Experience Manager Assets as a [!DNL Cloud Service].
+Hier volgen de bronnen voor zelfhulp voor [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 
-## Belangrijkste Assets-artikelen {#key-articles}
+## Belangrijke [!DNL Assets] artikelen {#key-articles}
 
 * [Overzicht en nieuw](overview.md)
 * [Opvallende wijzigingen](/help/assets/assets-cloud-changes.md)
-* [Architectuur van activa als een [!DNL Cloud Service]](architecture.md)
+* [Architectuur  [!DNL Assets] van [!DNL Cloud Service]](architecture.md)
 * [Overzicht van microservices voor assets](/help/assets/asset-microservices-overview.md)
 
-## Experience Manager-handleidingen {#aem-guides}
+## [!DNL Experience Manager] hulplijnen  {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
-| [Experience Manager als  [!DNL Cloud Service] startpunt](/help/landing/home.md) | Volledige documentatie van Experience Manager als [!DNL Cloud Service]. |
-| [Overzicht](/help/overview/home.md) | Inleidend overzicht en verklarende woordenlijst van Experience Manager as a Cloud Service. |
+| [[!DNL Experience Manager] as a [!DNL Cloud Service] Home](/help/landing/home.md) | Volledige documentatie van [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Overzicht](/help/overview/home.md) | Inleiding, overzicht, en verklarende woordenlijst, van [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Releaseopmerkingen, nieuwe functies, verouderde en verwijderde functies en bekende problemen. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze gids verstrekt een inleiding aan de kernconcepten van Experience Manager als [!DNL Cloud Service], met inbegrip van de architectuur van de nieuwe dienst. |
-| [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a [!DNL Cloud Service]. |
-| [Onboarding](/help/onboarding/home.md) | Ga aan de slag met Experience Manager als [!DNL Cloud Service] — krijg toegang en bescherm belangrijke gegevens. |
-| [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe te met, en beheer, de Plaatsen van de Experience Manager als [!DNL Cloud Service] te ontwerpen. |
-| [Naar Experience Manager gaan als een [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Begrijp de overgang naar Experience Manager als [!DNL Cloud Service]. |
-| [Handboek voor implementatie](/help/implementing/home.md) | Experience Manager aanpassen, ontwikkelen en implementeren als een [!DNL Cloud Service]. |
-| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a [!DNL Cloud Service]. |
-| [Handboek voor bewerkingen](/help/operations/home.md) | Leer over de achterste-eindverrichtingen van Experience Manager als [!DNL Cloud Service], zoals het indexeren en onderhoudstaken. |
+| [Kernbegrippen](/help/core-concepts/home.md) | Deze gids verstrekt een inleiding aan de kernconcepten van [!DNL Experience Manager] als [!DNL Cloud Service], met inbegrip van de architectuur van de nieuwe dienst. |
+| [Handboek voor beveiliging](/help/security/home.md) | Leer over belangrijke veiligheidsonderwerpen betreffende [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Onboarding](/help/onboarding/home.md) | Ga aan de slag met [!DNL Experience Manager] als [!DNL Cloud Service] — krijg toegang en bescherm belangrijke gegevens. |
+| [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe te met, en beheer, [!DNL Experience Manager Sites] als [!DNL Cloud Service] te ontwerpen. |
+| [Naar  [!DNL Experience Manager] een [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Begrijp de overgangsreis aan [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Handboek voor implementatie](/help/implementing/home.md) | Pas [!DNL Experience Manager] aan, ontwikkelt en implementeert als [!DNL Cloud Service]. |
+| [Handboek voor connectors](/help/connectors/home.md) | Leer hoe te om Connectors in [!DNL Experience Manager] als [!DNL Cloud Service] te integreren. |
+| [Handboek voor bewerkingen](/help/operations/home.md) | Leer over de achterste-eindverrichtingen van [!DNL Experience Manager] als [!DNL Cloud Service], zoals het indexeren en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op [!DNL Experience Manager] als [!DNL Cloud Service]. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
