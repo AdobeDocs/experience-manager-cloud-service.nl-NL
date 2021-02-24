@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
          * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen met de naam GB](#sample-metadata-awards-gb)
       * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
          * Zie [Voorbeeldquery voor een inhoudsfragmentmodel van een model](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : het pad naar uw contentfragment binnen de repository
+      * `_path` : het pad naar het inhoudsfragment in de repository
          * Zie [Voorbeeldquery - Een enkel specifiek stadsfragment](#sample-single-specific-city-fragment)
       * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
          * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
@@ -329,7 +329,7 @@ query {
 
 ### Voorbeeldquery - één specifiek stedenfragment {#sample-single-specific-city-fragment}
 
-Dit is een query voor het retourneren van de details van één fragmentitem op een specifieke locatie in de opslagplaats.
+Dit is een query om de details van één fragmentitem te retourneren op een specifieke locatie in de opslagplaats.
 
 **Voorbeeldquery**
 
