@@ -2,7 +2,7 @@
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 0%
@@ -275,7 +275,7 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` 
 
    * Drie van hen zijn gecontroleerd door de gebruiker: `author`, `main` en `referencearticle`.
 
-   * De andere velden zijn automatisch toegevoegd door AEM en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. in dit voorbeeld, `_path`, `_metadata`, `_variations`. Deze [helpergebieden](#helper-fields) zijn duidelijk met een voorafgaande `_` om tussen wat door de gebruiker is bepaald en wat auto-geproduceerd te onderscheiden.
+   * De andere velden zijn automatisch toegevoegd door AEM en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. in dit voorbeeld, `_path`, `_metadata`, `_variations`. Deze [helpergebieden](#helper-fields) zijn duidelijk met voorafgaande `_` om tussen wat door de gebruiker is bepaald en wat auto-geproduceerd te onderscheiden.
 
 1. Nadat een gebruiker tot een Fragment van de Inhoud leidt dat op het model van het Artikel wordt gebaseerd, kan het dan door GraphQL worden ondervraagd. Zie [Samplequery&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (gebaseerd op een [voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)) voor voorbeelden.
 
@@ -321,7 +321,7 @@ GraphQL voor AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstype
 
 | Inhoudsfragmentmodel - Gegevenstype | Type GraphQL | Beschrijving |
 |--- |--- |--- |
-| Tekst met één regel | Tekenreeks, [String] |  Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enz. |
+| Tekst met één regel | Tekenreeks, [String] |  Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
 | Tekst met meerdere regels | Tekenreeks |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
 | Getal |  Float, [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
 | Boolean |  Boolean |  Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
