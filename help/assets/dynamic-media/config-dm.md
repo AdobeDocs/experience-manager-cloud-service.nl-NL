@@ -2,9 +2,9 @@
 title: Dynamic Media-Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3527'
+source-wordcount: '3593'
 ht-degree: 4%
 
 ---
@@ -18,13 +18,26 @@ Als u Adobe Experience Manager voor verschillende omgevingen gebruikt, zoals ont
 
 In het volgende architectuurdiagram wordt beschreven hoe Dynamic Media werkt.
 
-Met de nieuwe architectuur is AEM verantwoordelijk voor primaire bronactiva en syncs met Dynamic Media voor activa verwerking en het publiceren:
+Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire bronactiva en syncs met Dynamic Media voor activa verwerking en het publiceren:
 
 1. Wanneer het primaire bronelement naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment verwerkt Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding.
 1. Nadat de uitvoeringen zijn gegenereerd, kunnen AEM veilig de externe Dynamic Media-uitvoeringen openen en bekijken (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
 1. Nadat de inhoud gereed is om te publiceren en goed te keuren, activeert deze de Dynamic Media-service om inhoud naar bezorgingsservers en cacheinhoud op de CDN te duwen.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>Voor de volgende lijst met functies moet u de CDN uit de doos gebruiken die is gebundeld met Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functies.
+>
+>* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+>* [Cache-validatie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-beveiliging](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2-levering van inhoud](/help/assets/dynamic-media/http2faq.md)
+>* [Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch](/help/assets/dynamic-media/launch.md)
+>* URL omleiden op CDN-niveau
+>* Akamai ChinaCDN (voor optimale levering in China)
+
 
 <!-- OBSOLETE CONTENT
 
