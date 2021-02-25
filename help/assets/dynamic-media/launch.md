@@ -1,20 +1,20 @@
 ---
-title: Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch
-description: Met de Dynamic Media Viewers-extensie voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
+title: Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch
+description: Met de Dynamic Media Viewers-extensie voor Adobe Experience Platform Launch kunnen klanten van Dynamic Media, Adobe Analytics en Experience Platform Launch samen met de release van Dynamic Media Viewers 5.13 gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie van het Experience Platform Launch.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '6242'
-ht-degree: 15%
+source-wordcount: '6336'
+ht-degree: 14%
 
 ---
 
 
-# Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-## Wat is de integratie van Dynamic Media Viewers met Adobe Analytics en Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+## Wat is de integratie van Dynamic Media Viewers met Adobe Analytics en Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-Met de nieuwe *Dynamic Media Viewers*-extensie voor het starten van de Adobe, samen met de recente release van Dynamic Media Viewers 5.13, kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van de Adobe.
+Met de nieuwe *Dynamic Media Viewers*-extensie voor Experience Platform Launch, samen met de recente release van Dynamic Media Viewers 5.13, kunnen klanten van Dynamic Media, Adobe Analytics en Experience Platform Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun Experience Platform Launch configuratie.
 
 Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie voor Starten die afkomstig is van Adobe of een derde.
 
@@ -24,19 +24,19 @@ Zie [Adobe extensions](https://experienceleague.adobe.com/docs/launch/using/exte
 
 ### Beperkingen van de integratie {#limitations-of-the-integration}
 
-* Adobe De integratie van de Lancering voor de kijkers van Dynamic Media werkt niet in de AEM auteursknoop. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
-* Adobe De-opstartintegratie voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
-* De integratie van de Lancering van Adobe kan niet gelijktijdig met de integratie van de Analytics van erfeniskijkers worden gebruikt (als parameter `config2=`).
+* Integratie van Experience Platforms Launch voor Dynamic Media-viewers werkt niet in het AEM auteurknooppunt. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
+* Integratie van Experience Platforms Launch voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
+* Integratie van Experience Platforms Launch kan niet gelijktijdig worden gebruikt met integratie van verouderde viewers Analytics (via de parameter `config2=`).
 * Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de kern, zoals wordt beschreven in [Overzicht bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 * Configuratie opslagduur voor gegevenselementen wordt niet ondersteund voor gegevenselementen met de extensie *Dynamic Media Viewers*. Opslagduur moet worden ingesteld op **[!UICONTROL None]**.
 
 ### Gebruik scenario&#39;s voor de integratie {#use-cases-for-the-integration}
 
-Het belangrijkste gebruiksgeval voor de integratie met Adobe Launch zijn klanten die zowel AEM Assets als AEM Sites gebruiken. In dergelijke scenario&#39;s, kunt u een standaardintegratie tussen uw AEM auteursknoop en de Lancering van de Adobe instellen, dan uw instantie van Plaatsen met het bezit van de Lancering van de Adobe associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
+Het belangrijkste gebruiksgeval voor integratie met Experience Platform Launch zijn klanten die zowel AEM Assets als AEM Sites gebruiken. In dergelijke scenario&#39;s, kunt u een standaardintegratie tussen uw AEM auteursknoop en Experience Platform Launch plaatsen, dan uw instantie van Plaatsen met het bezit van het Experience Platform Launch associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
 
 Zie [Informatie over het bijhouden van Dynamic Media-viewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
 
-Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Dynamic Media Classic gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor het maken van de Adobe-bibliotheek op vanuit Adobe Launch en voegt u deze handmatig toe aan de code van de webpagina.
+Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Dynamic Media Classic gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de productie-URL van de Experience Platform Launch-bibliotheek op vanuit het Experience Platform Launch en voegt u deze handmatig toe aan de webpaginacode.
 
 Zie [Informatie over het bijhouden van Dynamic Media-viewers met behulp van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
 
@@ -48,31 +48,31 @@ De integratie maakt gebruik van twee aparte en onafhankelijke typen tracering vo
 
 Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden, handelingen voor het afspelen van video enzovoort.
 
-In de Lancering van Adobe werken de concepten *Data Elements* en *Rules* samen om Adobe Analytics-tracking in te schakelen.
+In Experience Platform Launch werken de concepten *Data Elements* en *Rules* samen om Adobe Analytics-tracking in te schakelen.
 
-#### Gegevenselementen in Adobe starten {#about-data-elements-in-adobe-launch}
+#### Informatie over gegevenselementen in Experience Platform Launch {#about-data-elements-in-adobe-launch}
 
-Een gegevenselement in Adobe Launch is een benoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of Dynamic Media Viewers-gegevens.
+Een gegevenselement in Experience Platform Launch is een benoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of Dynamic Media Viewers-gegevens.
 
-De opties die beschikbaar zijn voor een definitie van een gegevenselement, zijn afhankelijk van de lijst met extensies die zijn geïnstalleerd in de Adobe-opstarteigenschap. De &quot;Core&quot;uitbreiding is vooraf geïnstalleerd en beschikbaar uit de doos in om het even welke configuratie. Met deze extensie &quot;Core&quot; kunt u een gegevenselement definiëren dat afkomstig is van cookie, JavaScript-code, queryreeks en vele andere bronnen.
+Welke opties beschikbaar zijn voor een definitie van een gegevenselement, is afhankelijk van de lijst met extensies die zijn geïnstalleerd in de eigenschap Experience Platform Launch. De &quot;Core&quot;uitbreiding is vooraf geïnstalleerd en beschikbaar uit de doos in om het even welke configuratie. Met deze extensie &quot;Core&quot; kunt u een gegevenselement definiëren dat afkomstig is van cookie, JavaScript-code, queryreeks en vele andere bronnen.
 
 Voor het bijhouden van Adobe Analytics moeten verschillende extra extensies worden geïnstalleerd, zoals beschreven in [Installatie en installatie van extensies](#installing-and-setup-of-extensions). Met de extensie Dynamic Media Viewers kunt u een gegevenselement definiëren dat een argument is van de gebeurtenis Dynamic Viewer. Het is bijvoorbeeld mogelijk te verwijzen naar het viewertype, of de naam van het element die tijdens het laden door de viewer wordt gemeld, het zoomniveau dat wordt gemeld wanneer de eindgebruiker zoomt en nog veel meer.
 
 De extensie Dynamic Media Viewer houdt de waarden van de Data Elements automatisch up-to-date.
 
-Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van de Adobe Lancering UI worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. In het bijzonder wordt naar gegevenselementen die zijn gedefinieerd voor het bijhouden van Dynamic Media Viewers verwezen door de extensie Set Variables Action of Adobe Analytics in Rule (zie hieronder).
+Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van Experience Platform Launch UI worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. In het bijzonder wordt naar gegevenselementen die zijn gedefinieerd voor het bijhouden van Dynamic Media Viewers verwezen door de extensie Set Variables Action of Adobe Analytics in Rule (zie hieronder).
 
 Zie [Gegevenselementen](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) in de Gids van de Gebruiker van het Experience Platform Launch om meer te leren.
 
-#### Informatie over regels in Adobe Launch {#about-rules-in-adobe-launch}
+#### Info over Regels in Experience Platform Launch {#about-rules-in-adobe-launch}
 
-Een regel in het Lanceren van Adobe is een agnostische configuratie die drie gebieden bepaalt die omhoog een regel maken: *Gebeurtenissen*, *Voorwaarden* en *Acties*:
+Een regel in Experience Platform Launch is een agnostische configuratie die drie gebieden bepaalt die omhoog een regel maken: *Gebeurtenissen*, *Voorwaarden* en *Acties*:
 
-* *Gebeurtenissen*  (als) vertellen het Begin van Adobe wanneer om een Regel teweeg te brengen.
-* *Voorwaarden*  (als) vertellen Adobe Launch welke extra beperkingen zijn toegestaan of niet zijn toegestaan wanneer een regel wordt geactiveerd.
-* *Handelingen*  (dan) vertellen Adobe Launch wat te doen wanneer een Regel wordt teweeggebracht.
+* *Gebeurtenissen*  (indien) vertellen het Experience Platform Launch wanneer een regel moet worden geactiveerd.
+* *Voorwaarden*  (als) vertellen het Experience Platform Launch welke aanvullende beperkingen zijn toegestaan of niet zijn toegestaan wanneer een regel wordt geactiveerd.
+* *De acties*  (toen) vertellen Experience Platform Launch wat te doen wanneer een Regel wordt teweeggebracht.
 
-Welke opties beschikbaar zijn in de sectie Gebeurtenissen, Voorwaarden en Handelingen, is afhankelijk van de extensies die zijn geïnstalleerd in de Adobe-opstarteigenschap. De *Core* uitbreiding is vooraf geïnstalleerd en is beschikbaar uit-van-de-doos in om het even welke configuratie. De extensie biedt verschillende opties voor gebeurtenissen, zoals standaardacties op browserniveau, zoals focuswijziging, toetsdrukken, formulierverzendingen enzovoort. Het bevat ook opties voor Voorwaarden, zoals cookiewaarde, browsertype en meer. Voor Acties is alleen de optie Aangepaste code beschikbaar.
+Welke opties beschikbaar zijn in de sectie Gebeurtenissen, Voorwaarden en Handelingen, is afhankelijk van de extensies die zijn geïnstalleerd in Eigenschap Experience Platform Launch. De *Core* uitbreiding is vooraf geïnstalleerd en is beschikbaar uit-van-de-doos in om het even welke configuratie. De extensie biedt verschillende opties voor gebeurtenissen, zoals standaardacties op browserniveau, zoals focuswijziging, toetsdrukken, formulierverzendingen enzovoort. Het bevat ook opties voor Voorwaarden, zoals cookiewaarde, browsertype en meer. Voor Acties is alleen de optie Aangepaste code beschikbaar.
 
 Voor het bijhouden van Adobe Analytics moeten verschillende extra extensies worden geïnstalleerd, zoals beschreven in [Installatie en installatie van extensies](#installing-and-setup-of-extensions). Specifiek:
 
@@ -92,7 +92,7 @@ Zie [Regels](https://experienceleague.adobe.com/docs/launch/using/reference/mana
 
 #### Voorbeeldconfiguratie {#sample-configuration}
 
-In de volgende voorbeeldconfiguratie in Adobe Launch ziet u hoe u een elementnaam kunt bijhouden tijdens het laden van de viewer.
+In de volgende voorbeeldconfiguratie in het Experience Platform Launch ziet u hoe u een elementnaam kunt bijhouden tijdens het laden van de viewer.
 
 1. Definieer op het tabblad **[!UICONTROL Data Elements]** een gegevenselement `AssetName` dat verwijst naar de parameter `asset` van de gebeurtenis `LOAD` van de extensie Dynamic Media Viewers.
 
@@ -118,7 +118,7 @@ In de volgende voorbeeldconfiguratie in Adobe Launch ziet u hoe u een elementnaa
 
 ### Informatie over Adobe Analytics for Audio en Video {#about-adobe-analytics-for-audio-and-video}
 
-Wanneer een Experience Cloud-account is geabonneerd om Adobe Analytics for Audio en Video te gebruiken, is het voldoende om het bijhouden van video&#39;s in te schakelen in de extensie-instellingen *Dynamic Media Viewers*. Videomeetgegevens zijn beschikbaar in Adobe Analytics. Het bijhouden van video&#39;s is afhankelijk van de aanwezigheid van Adobe Media Analytics voor audio- en videoextensie.
+Wanneer een Experience Cloud-account is geabonneerd om Adobe Analytics for Audio en Video te gebruiken, is het voldoende om het bijhouden van video&#39;s in te schakelen in de extensie-instellingen *Dynamic Media Viewers*. Videomeetgegevens zijn beschikbaar in Adobe Analytics. De videotracering is afhankelijk van de aanwezigheid van Adobe Media Analytics voor de extensie Audio en Video.
 
 Zie [Installatie en installatie van extensies](#installing-and-setup-of-extensions).
 
@@ -126,11 +126,11 @@ Momenteel is de ondersteuning voor het bijhouden van video&#39;s beperkt tot all
 
 ## De Dynamic Media Viewers-extensie {#using-the-dynamic-media-viewers-extension} gebruiken
 
-Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om de kijkers van Dynamic Media met de nieuwe Adobe te volgen Lancering integratie in AEM Sites en door ingebedcode te gebruiken.
+Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om de kijkers van Dynamic Media met de nieuwe Experience Platform Launch integratie in AEM Sites te volgen en door ingebedcode te gebruiken.
 
 ### Dynamic Media-viewers bijhouden in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
-Als u Dynamic Media-viewers in AEM Sites wilt bijhouden, moeten alle stappen worden uitgevoerd die worden vermeld onder de sectie [Alle integratieonderdelen configureren](#configuring-all-the-integration-pieces). Specifiek, moet u de configuratie IMS en de Configuratie van de Cloud van de Adobe creëren.
+Als u Dynamic Media-viewers in AEM Sites wilt bijhouden, moeten alle stappen worden uitgevoerd die worden vermeld onder de sectie [Alle integratieonderdelen configureren](#configuring-all-the-integration-pieces). Specifiek, moet u de configuratie IMS en de Configuratie van de Wolk van het Experience Platform Launch tot stand brengen.
 
 Na de juiste configuratie worden gegevens automatisch bijgehouden in Dynamic Media-viewers die u aan een sitepagina toevoegt met een WCM-component die door Dynamic Media wordt ondersteund, naar Adobe Analytics, Adobe Analytics for Video of beide.
 
@@ -138,44 +138,44 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s met behulp van Adobe-sit
 
 ### Dynamic Media-viewers bijhouden met de insluitcode {#tracking-dynamic-media-viewers-using-embed-code}
 
-Klanten die geen AEM Sites gebruiken of Dynamic Media-viewers insluiten in webpagina&#39;s buiten AEM Sites, of beide, kunnen nog steeds gebruikmaken van de integratie Adobe starten.
+Klanten die geen AEM Sites gebruiken of Dynamic Media-viewers insluiten in webpagina&#39;s buiten AEM Sites of beide, kunnen de integratie met het Experience Platform Launch nog steeds gebruiken.
 
-U moet de configuratiestappen van de secties [Adobe Analytics configureren](#configuring-adobe-analytics-for-the-integration) en [Adobe Launch configureren](#configuring-adobe-launch-for-the-integration) voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
+U moet de configuratiestappen van [het Vormen Adobe Analytics](#configuring-adobe-analytics-for-the-integration) en [het Vormen Experience Platform Launch](#configuring-adobe-launch-for-the-integration) secties voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
 
-Na de juiste configuratie kunt u ondersteuning voor het starten van Adobe toevoegen aan een webpagina met een Dynamic Media-viewer.
+Na de juiste configuratie kunt u ondersteuning voor Experience Platforms Launch toevoegen aan een webpagina met een Dynamic Media-viewer.
 
-Zie [Code insluiten van starten toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) voor meer informatie over het gebruik van insluitcode van bibliotheek Adobe starten.
+Zie [De code van de Insluiting van de Lancering toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) om meer over te leren hoe te om de bibliotheek van het Experience Platform Launch te gebruiken bed code in.
 
 Zie [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md) voor meer informatie over het gebruik van de insluitcodefunctie van AEM Dynamic Media.
 
 **Dynamic Media-viewers volgen met behulp van insluitcode**
 
 1. Zorg dat een webpagina gereed is voor het insluiten van een Dynamic Media-viewer.
-1. Verkrijg de insluitcode voor de bibliotheek van de Lancering van de Adobe door zich eerst aan te melden bij Adobe Launch (zie [Het Vormen de Lancering van Adobe](#configuring-adobe-launch-for-the-integration)).
+1. Haal de insluitcode voor de bibliotheek van het Experience Platform Launch door zich eerst aan Experience Platform Launch aan te melden (zie [Vormend Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
 1. Klik **[!UICONTROL Property]**, dan klik **[!UICONTROL Environments]** tabel.
 1. Ophalen van het milieuniveau dat relevant is voor de omgeving van de webpagina. Klik vervolgens in de kolom **[!UICONTROL Install]** op het pictogram van het vak.
-1. **[!UICONTROL In the Web Install Instructions]** kopieert u de volledige insluitcode van de Adobe Launch-bibliotheek, samen met de omringende  `<script/>` tags.
+1. **[!UICONTROL In the Web Install Instructions]** , kopieert u de volledige insluitcode van de Experience Platform Launch-bibliotheek samen met de omringende  `<script/>` tags.
 
 ## Referentiegids voor de extensie Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### Informatie over de configuratie {#about-the-dynamic-media-viewers-configuration} van Dynamic Media Viewers
 
-De extensie Dynamic Media Viewer wordt automatisch geïntegreerd met de Adobe Launch-bibliotheek als aan alle onderstaande voorwaarden wordt voldaan:
+De extensie Dynamic Media Viewer wordt automatisch geïntegreerd met de bibliotheek met Experience Platforms Launch als aan alle onderstaande voorwaarden wordt voldaan:
 
-* Adobe Het globale object van de bibliotheek starten ( `_satellite`) is aanwezig op de pagina.
+* Globaal object ( `_satellite`) in de bibliotheek van een Experience Platform Launch staat op de pagina.
 * De Dynamic Media Viewers extension functie `_dmviewers_v001()` wordt gedefinieerd op `_satellite`.
 
 * `config2=` Er is geen viewerparameter opgegeven, wat betekent dat de viewer geen gebruik maakt van verouderde analytische integratie.
 
-Bovendien is er een optie om de integratie van de Adobe Starten in de kijker uitdrukkelijk onbruikbaar te maken door `launch=0` parameter in de configuratie van de kijker te specificeren. De standaardwaarde van deze parameter is `1`.
+Bovendien is er een optie om expliciet de integratie van Experience Platforms Launch in de viewer uit te schakelen door de parameter `launch=0` in de configuratie van de viewer op te geven. De standaardwaarde van deze parameter is `1`.
 
 ### De Dynamic Media Viewers-extensie {#configuring-the-dynamic-media-viewers-extension} configureren
 
 De enige configuratieoptie voor de extensie Dynamic Media Viewers is **[!UICONTROL Enable Adobe Media Analytics for Audio and Video]**.
 
-Wanneer u deze optie inschakelt (inschakelen of inschakelen) en als Adobe Media Analytics for Audio en Video is geïnstalleerd en correct is geconfigureerd, worden meetgegevens voor het afspelen van video naar de Adobe Analytics verzonden voor audio- en videooplossing. Als u deze optie uitschakelt, wordt het bijhouden van video uitgeschakeld.
+Wanneer u deze optie inschakelt (inschakelen of inschakelen) en als Adobe Media Analytics for Audio en Video is geïnstalleerd en correct is geconfigureerd, worden meetgegevens voor het afspelen van video naar de Adobe Analytics for Audio en Video-oplossing verzonden. Als u deze optie uitschakelt, wordt het bijhouden van video uitgeschakeld.
 
-Als u deze optie *inschakelt zonder dat er Adobe Media Analytics for Audio and Video is geïnstalleerd, heeft deze optie geen effect.*
+Als u deze optie *inschakelt zonder dat er Adobe Media Analytics voor audio en video is geïnstalleerd, heeft deze optie geen effect.*
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
@@ -198,7 +198,7 @@ Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt w
 
 Elke viewer voor dynamische media heeft een unieke id op de webpagina. Het data-element houdt de waarde zelf bij en de viewer die de waarde heeft ingevuld. Dit betekent dat als er meerdere viewers op dezelfde pagina zijn en er een data-element **[!UICONTROL AssetName]** is dat naar de gebeurtenis **[!UICONTROL LOAD]** en het bijbehorende &quot;asset&quot;-argument verwijst, het data-element **[!UICONTROL AssetName]** een verzameling assetnamen bijhoudt die zijn gekoppeld aan elke viewer die op de pagina is geladen.
 
-De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement wordt gevraagd in een Regel die door een de kijkergebeurtenis van Dynamic Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En, als het Element van Gegevens in een Regel wordt gevraagd die door een Gebeurtenis van één of andere andere uitbreiding van de Lancering van Adobe werd teweeggebracht, dan is de waarde van het Element van Gegevens de waarde van de kijker die laatste was om dit Element van Gegevens bij te werken.
+De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement wordt gevraagd in een Regel die door een de kijkergebeurtenis van Dynamic Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En als het gegevenselement wordt aangevraagd in een regel die werd geactiveerd door een gebeurtenis van een andere extensie van het Experience Platform Launch, is de waarde van het gegevenselement de waarde van de viewer die als laatste dit gegevenselement bijwerkte.
 
 **Bekijk de volgende voorbeeldset-up**:
 
@@ -212,7 +212,7 @@ De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelij
 
 * **[!UICONTROL TrackKey]** Regel met het volgende:
 
-   * Gebruikt de belangrijkste persgebeurtenis van de uitbreiding van de Adobe van de Kern als trekker.
+   * Gebruikt de belangrijkste persgebeurtenis van de uitbreiding van het Experience Platform Launch van de Kern als trekker.
    * Verzendt de waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens naar Adobe Analytics.
 
 Nu, veronderstel de eindgebruiker de Web-pagina met de twee kijkers laadt. In *viewer1*, zoom zij aan schaal 50% in; Vervolgens zoomen ze in *viewer2* in op een schaal van 25%. In *viewer1*, pannen zij beeld rond, en drukken tenslotte een sleutel op het toetsenbord.
@@ -222,9 +222,9 @@ De activiteit van de eindgebruiker resulteert in de volgende twee volgende volge
 * De eerste vraag komt voor omdat **[!UICONTROL TrackPan]** de Regel wordt teweeggebracht wanneer de gebruiker in *viewer1* pant. Die vraag verzendt 50% als waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens omdat het Element van Gegevens zal weten dat de Regel door *viewer1* wordt teweeggebracht en de overeenkomstige schaalwaarde haalt;
 * De tweede vraag komt voor omdat **[!UICONTROL TrackKey]** de Regel wordt teweeggebracht wanneer de gebruiker op een sleutel op het toetsenbord duwde. Die vraag verzendt 25% als waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens omdat de Regel niet door de kijker werd teweeggebracht. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
 
-Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de bibliotheekcode van de Adobe Launch-bibliotheek, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een uitbreiding van de niet-Dynamic Media Kijker en verwijzingen zoals het Element van Gegevens wordt teweeggebracht, het Element van Gegevens de laatst bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
+Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de bibliotheekcode van het Experience Platform Launch, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een uitbreiding van de niet-Dynamic Media Kijker en verwijzingen zoals het Element van Gegevens wordt teweeggebracht, het Element van Gegevens de laatst bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
 
-De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, worden in geen geval opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek aan de clientzijde bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
+De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, worden in geen geval opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de client-side bibliotheek met Experience Platforms Launch bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
 Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
 
@@ -398,19 +398,19 @@ De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de 
 
 Als u dit nog niet hebt gedaan, raadt Adobe u aan alle documentatie voorafgaand aan deze sectie grondig te herzien zodat u de volledige integratie begrijpt.
 
-In deze sectie worden de configuratiestappen beschreven die nodig zijn om Dynamic Media-viewers te integreren met Adobe Analytics en Adobe Analytics for Audio en Video. Hoewel het gebruik van de extensie Dynamic Media Viewers voor andere doeleinden in Adobe Launch mogelijk is, worden dergelijke scenario&#39;s niet in deze documentatie behandeld.
+In deze sectie worden de configuratiestappen beschreven die nodig zijn om Dynamic Media-viewers te integreren met Adobe Analytics en Adobe Analytics for Audio en Video. Hoewel het gebruik van de extensie Dynamic Media Viewers voor andere doeleinden in Experience Platform Launch mogelijk is, worden dergelijke scenario&#39;s niet in deze documentatie behandeld.
 
 U zult de integratie in de volgende producten van Adobe vormen:
 
 * Adobe Analytics - u configureert de volgende variabelen en rapporten.
-* Adobe starten - U definieert een eigenschap, een of meer regels en een of meer gegevenselementen om het bijhouden van de viewer in te schakelen.
+* Experience Platform Launch - u zult een Bezit, één of meerdere Regels, en één of meerdere Elementen van Gegevens bepalen om kijker het volgen toe te laten.
 
 Bovendien, als deze integratieoplossing met AEM Sites wordt gebruikt, moet de volgende configuratie ook worden gedaan:
 
-* Adobe I/O Console - integratie wordt gecreeerd voor de Lancering van Adobe.
-* AEM auteurknooppunt - IMS-configuratie en Adobe-configuratie van de opstartcloud.
+* Adobe I/O Console - integratie wordt gecreeerd voor Experience Platform Launch.
+* AEM auteurknooppunt - configuratie IMS en wolkenconfiguratie Experience Platform Launch.
 
-Als deel van de configuratie, zeker bent u toegang tot een bedrijf in Adobe Experience Cloud hebt dat Adobe Analytics en de Lancering van Adobe reeds heeft toegelaten.
+Als deel van de configuratie, zeker bent u toegang tot een bedrijf in Adobe Experience Cloud hebt dat Adobe Analytics en Experience Platform Launch reeds heeft toegelaten.
 
 ## Adobe Analytics configureren voor integratie {#configuring-adobe-analytics-for-the-integration}
 
@@ -479,30 +479,30 @@ Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## Het vormen de Lancering van Adobe voor de integratie {#configuring-adobe-launch-for-the-integration}
+## Experience Platform Launch voor integratie configureren {#configuring-adobe-launch-for-the-integration}
 
-Nadat u de Lancering van Adobe vormt, zal het volgende opstelling voor de integratie zijn:
+Nadat u Experience Platform Launch vormt, zal het volgende opstelling voor de integratie zijn:
 
 * Het creëren van een nieuw Bezit om al uw configuraties samen te houden.
 * De installatie en installatie van extensies. De client-side code van alle extensies die in de eigenschap zijn geïnstalleerd, wordt samen gecompileerd in een bibliotheek. Deze bibliotheek wordt later door de webpagina gebruikt.
 * Configuratie van gegevenselementen en regels. Deze configuratie bepaalt welke gegevens van de kijkers van Dynamic Media moeten vangen, wanneer om de volgende logica teweeg te brengen, en waar om de gegevens van de kijker in Adobe Analytics te verzenden.
 * Publiceren van de bibliotheek.
 
-**Om de Lancering van Adobe voor de integratie** te vormen:
+**Om Experience Platform Launch voor de integratie** te vormen:
 
-1. Begin door Adobe te openen van de Experience Cloud [homepage](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Klik in de menubalk op het pictogram Oplossingen (drie bij drie punten) rechtsboven op de pagina en klik vervolgens op **[!UICONTROL Launch]**.
+1. Begin door tot Experience Platform Launch van de Experience Cloud [homepage](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/) toegang te hebben. Klik in de menubalk op het pictogram Oplossingen (drie bij drie punten) rechtsboven op de pagina en klik vervolgens op **[!UICONTROL Launch]**.
 
-   U kunt ook [Adobe direct starten openen](https://launch.adobe.com/).
+   U kunt ook [Experience Platform Launch rechtstreeks](https://launch.adobe.com/) openen.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Een eigenschap maken in Adobe Launch {#creating-a-property-in-adobe-launch}
+### Een eigenschap maken in Experience Platform Launch {#creating-a-property-in-adobe-launch}
 
-Een eigenschap in Adobe Launch is een benoemde configuratie die al uw instellingen bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
+Een bezit in Experience Platform Launch is een genoemde configuratie die al uw montages bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
 Zie ook [Een opstarteigenschap maken](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
-1. Klik in Adobe Launch op **[!UICONTROL New Property]**.
+1. Klik in Experience Platform Launch op **[!UICONTROL New Property]**.
 1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld, `DynamicMediaViewersProp.`
 1. Voer in het veld **[!UICONTROL Domains]** het domein van uw website in.
 1. Schakel in de vervolgkeuzelijst **[!UICONTROL Advanced Options]** de optie **[!UICONTROL Configure for extension development (cannot be modified later)]** in als de uitbreiding die u wilt gebruiken (in dit geval *Dynamische mediaviewers*) nog niet wordt vrijgegeven.
@@ -515,7 +515,7 @@ Zie ook [Een opstarteigenschap maken](https://experienceleague.adobe.com/docs/la
 
 ### Installatie en installatie van extensies {#installing-and-setup-of-extensions}
 
-Alle beschikbare extensies in Adobe Launch worden weergegeven onder **[!UICONTROL Extensions > Catalog]**.
+Alle beschikbare extensies in het Experience Platform Launch worden vermeld onder **[!UICONTROL Extensions > Catalog]**.
 
 Klik op **[!UICONTROL Install]** om een extensie te installeren. Voer zo nodig een eenmalige extensieconfiguratie uit en klik op **[!UICONTROL Save]**.
 
@@ -547,9 +547,9 @@ Klik op **[!UICONTROL Save]**.
 
 Zie [Adobe Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
-* (Optioneel. Alleen vereist als videotracering nodig is) *Adobe Media-analyse voor audio en video*-extensie
+* (Optioneel. Alleen vereist als videotracering nodig is) *Adobe Media Analytics voor audio en Video*-extensie
 
-Vul het veld Trackingserver in. De trackingserver voor de extensie *Adobe Media Analytics voor Audio en Video* is anders dan de trackingserver die voor Adobe Analytics wordt gebruikt. Hierna volgt de sjabloon `<trackingNamespace>.hb.omtrdc.net`, waarbij `<trackingNamespace>` de informatie uit de inrichtingse-mail is.
+Vul het veld Trackingserver in. De volgende server voor *Adobe Media Analytics voor Audio en Video* uitbreiding is verschillend van de volgende server die voor Adobe Analytics wordt gebruikt. Hierna volgt de sjabloon `<trackingNamespace>.hb.omtrdc.net`, waarbij `<trackingNamespace>` de informatie uit de inrichtingse-mail is.
 
 Alle andere velden zijn optioneel.
 
@@ -559,9 +559,9 @@ Zie [Adobe Media Analytics for Audio and Video Extension](https://experienceleag
 
 Schakel **[!UICONTROL enable Adobe Analytics for Video]** in om het bijhouden van videorecorders in te schakelen.
 
-Merk op dat—op het ogenblik van dit schrijven—de *uitbreiding van de Kijkers van Dynamic Media* slechts beschikbaar is als het Bezit van de Lancering van de Adobe voor ontwikkeling wordt gecreeerd.
+Merk op dat—op het tijdstip van dit schrijven—de *uitbreiding van de Kijkers van Dynamic Media* slechts beschikbaar is als het Bezit van het Experience Platform Launch voor ontwikkeling wordt gecreeerd.
 
-Zie [Een eigenschap maken in Adobe Launch](#creating-a-property-in-adobe-launch).
+Zie [Een eigenschap maken in Experience Platform Launch](#creating-a-property-in-adobe-launch).
 
 Nadat de extensies zijn geïnstalleerd en ingesteld, worden ten minste de volgende vijf extensies (vier extensies als u geen video bijhoudt) weergegeven in het gedeelte Extensies > Geïnstalleerd.
 
@@ -569,21 +569,21 @@ Nadat de extensies zijn geïnstalleerd en ingesteld, worden ten minste de volgen
 
 ### Gegevenselementen en regels instellen {#setting-up-data-elements-and-rules}
 
-Maak bij Adobe Launch gegevenselementen en -regels die nodig zijn voor het bijhouden van Dynamic Media-viewers.
+Maak in Experience Platform Launch gegevenselementen en -regels die nodig zijn voor het bijhouden van Dynamic Media-viewers.
 
-Zie [Hoe gegevens en gebeurtenis het volgen in de integratie ](#how-data-and-event-tracking-works-in-the-integration) voor een overzicht van het volgen met de Lancering van Adobe werkt.
+Zie [Hoe gegevens en gebeurtenis het volgen in de integratie ](#how-data-and-event-tracking-works-in-the-integration) voor een overzicht van het volgen met Experience Platform Launch werkt.
 
-Zie [Sampleconfiguratie](#sample-configuration) voor een voorbeeldconfiguratie in Adobe Launch die aantoont hoe te om een activanaam bij de lading van de kijker te volgen.
+Zie [Voorbeeldconfiguratie](#sample-configuration) voor een voorbeeldconfiguratie in Experience Platform Launch die aantoont hoe te om een elementnaam bij de lading van de kijker te volgen.
 
 Zie [De extensie Dynamic Media Viewers configureren](#configuring-the-dynamic-media-viewers-extension) voor uitgebreide informatie over de mogelijkheden van de extensie.
 
 ### Bibliotheek {#publishing-a-library} publiceren
 
-Als u wijzigingen wilt aanbrengen in de configuratie voor het starten van de Adobe (inclusief de instelling Eigenschap, Extensies, Regels en Gegevenselementen), moet u dergelijke wijzigingen *publiceren*. Het publiceren in de Lancering van Adobe wordt uitgevoerd van het Publiceren lusje onder de configuratie van het Bezit.
+Om veranderingen in de configuratie van het Experience Platform Launch (met inbegrip van Bezit, Uitbreidingen, Regels, en de opstelling van Elementen van Gegevens) aan te brengen, moet u *publiceren* dergelijke veranderingen. Het publiceren in Experience Platform Launch wordt uitgevoerd van het Publiceren lusje onder de configuratie van het Bezit.
 
-De Lancering van Adobe kan veelvoudige milieu&#39;s van de Ontwikkeling, één het Opvoeren milieu, en één milieu van de Productie hebben. Door gebrek richt de Configuratie van de Wolk van de Lancering van de Adobe in AEM de AEM auteurknoop aan het milieu van het Stadium van de Lancering van Adobe, en AEM publicatieknooppunt aan het milieu van de Productie van de Lancering van Adobe. Deze regeling betekent dat met de standaard AEM montages, het noodzakelijk is om de bibliotheek van de Lancering van de Adobe aan het Staging milieu te publiceren zodat gebruik van het in AEM auteur, en dan het in het milieu van de Productie te publiceren zodat het in AEM publicatie kan worden gebruikt.
+Experience Platform Launch kan meerdere ontwikkelomgevingen, één testomgeving en één productieomgeving hebben. Door gebrek wijst de Configuratie van de Wolk van het Experience Platform Launch in AEM de AEM auteurknoop aan het milieu van het Stadium van Experience Platform Launch, en AEM publicatieknooppunt aan het milieu van de Productie van Experience Platform Launch. Deze regeling betekent dat met de standaard AEM montages, het noodzakelijk is om de bibliotheek van het Experience Platform Launch aan het Staging milieu te publiceren zodat gebruik van het in AEM auteur, en dan het in het milieu van de Productie te publiceren zodat het in AEM te publiceren kan worden gebruikt.
 
-Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) voor meer informatie over Adobe Launch-omgevingen.
+Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) voor meer informatie over Experience Platforms Launch milieu&#39;s.
 
 Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoerd:
 
@@ -592,7 +592,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
 #### Een nieuwe bibliotheek toevoegen en maken {#adding-and-building-a-new-library}
 
-1. De eerste keer dat u het tabblad Publiceren opent in Adobe Launch, is de bibliotheeklijst leeg.
+1. De eerste keer dat u het tabblad Publiceren in het Experience Platform Launch opent, is de bibliotheeklijst leeg.
 
    Klik in de linkerkolom op **[!UICONTROL Add New Library]**.
 
@@ -614,7 +614,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    >[!NOTE]
    >
-   >De volgende keer dat u wijzigingen aanbrengt in uw Adobe Launch-configuratie, gaat u naar het tabblad **[!UICONTROL Publishing]** onder de **[!UICONTROL Property]**-configuratie en klikt u op de eerder gemaakte bibliotheek.
+   >De volgende keer dat u wijzigingen aanbrengt in uw configuratie van het Experience Platform Launch, gaat naar het **[!UICONTROL Publishing]** lusje onder de **[!UICONTROL Property]** configuratie, dan uw eerder gecreeerd bibliotheek klikken.
    >
    >
    >Klik in het publicatiescherm van de bibliotheek op **[!UICONTROL Add All Changed Resources]** en klik vervolgens op **[!UICONTROL Save & Build for Development]**.
@@ -641,7 +641,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Zie [Publiceren](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) voor meer informatie over het publicatieproces bij het starten van de Adobe.
+   Zie [Publiceren](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) voor meer informatie over het publicatieproces in Experience Platform Launch.
 
 ## Adobe Experience Manager configureren voor integratie {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -656,21 +656,21 @@ Vereisten:
 De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 * Configuratie van AEM IMS.
-* Configuratie van Adobe Launch Cloud.
+* Configuratie van Experience Platform Launch Cloud.
 
 ### AEM IMS {#configuring-aem-ims} configureren
 
-1. Klik in AEM auteur op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
+1. Klik in AEM auteur op het pictogram Extra (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. Voor de pagina van de Configuratie van Adobe IMC, bij de upper-left hoek, klik **[!UICONTROL Create]**.
-1. Klik op de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** op **[!UICONTROL Adobe Launch]**.
+1. Klik op de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** op **[!UICONTROL Experience Platform Launch]**.
 1. Schakel **[!UICONTROL Create new certificate]** in en voer in het tekstveld een betekenisvolle waarde voor het certificaat in. Bijvoorbeeld *AdobeLaunchIMSCert*. Klik op **[!UICONTROL Create certificate]**.
 
    Het volgende Info-bericht wordt weergegeven:
 
-   *Als u een geldig toegangstoken wilt ophalen, moet de openbare sleutel van het nieuwe certificaat worden toegevoegd aan de technische account op Adobe I/O!*.
+   *Om een geldig toegangstoken terug te winnen moet de openbare sleutel van het nieuwe certificaat aan de technische rekening op Adobe I/O worden toegevoegd!*.
 
    Klik op **[!UICONTROL OK]** om het dialoogvenster Info te sluiten.
 
@@ -684,7 +684,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Navigeer op een nieuw browsertabblad naar de [Adobe I/O-console](https://console.adobe.io/integrations).
+1. Navigeer in een nieuw browsertabblad naar de [Adobe I/O-console](https://console.adobe.io/integrations).
 
 1. Klik op **[!UICONTROL Adobe I/O Console Integrations]** in de rechterbovenhoek op **[!UICONTROL New integration]**.
 1. Controleer in het dialoogvenster **[!UICONTROL Create a new integration]** of het keuzerondje **[!UICONTROL Access an API]** is geselecteerd en klik vervolgens op **[!UICONTROL Continue]**.
@@ -725,7 +725,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 1. Ga terug naar de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** die u eerder geopend hebt gelaten. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Next]** om de pagina **[!UICONTROL Account]** in het venster **[!UICONTROL Adobe IMS Technical Account Configuration]** te openen.
 
-   (Als u de pagina per ongeluk eerder hebt gesloten, gaat u terug naar de AEM-auteur en klikt u op **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** de optie **[!UICONTROL Adobe Launch]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Certificate]** de naam van het eerder gemaakte certificaat.
+   (Als u de pagina per ongeluk eerder hebt gesloten, gaat u terug naar de AEM-auteur en klikt u op **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** de optie **[!UICONTROL Experience Platform Launch]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Certificate]** de naam van het eerder gemaakte certificaat.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS Technical Account Configuration - Certificate page_
@@ -775,20 +775,20 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Adobe Launch Cloud configureren voor integratie {#configuring-adobe-launch-cloud-for-the-integration}
+## Experience Platform Launch Cloud configureren voor integratie {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Klik in AEM auteur in de linkerbovenhoek op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Cloud Services > Adobe Launch Configurations]**.
+1. Klik in AEM auteur in de linkerbovenhoek op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Cloud Services > Experience Platform Launch Configurations]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. Selecteer op de pagina **[!UICONTROL Adobe Launch Configurations]** in het linkerdeelvenster een AEM Site waarvoor u de configuratie voor het starten van de Adobe wilt toepassen.
+1. Selecteer op de pagina **[!UICONTROL Experience Platform Launch Configurations]** in het linkerdeelvenster een AEM Site waarvoor u de configuratie van het Experience Platform Launch wilt toepassen.
 
    Alleen ter illustratie wordt de **[!UICONTROL We.Retail]**-site geselecteerd in de onderstaande schermafbeelding.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. Klik in de linkerbovenhoek van de pagina op **[!UICONTROL Create]**.
-1. Vul op de pagina **[!UICONTROL General]** (1/3 pagina&#39;s) van het venster **[!UICONTROL Create Adobe Launch Configuration]** de volgende velden in:
+1. Vul op de pagina **[!UICONTROL General]** (1/3 pagina&#39;s) van het venster **[!UICONTROL Create Experience Platform Launch Configuration]** de volgende velden in:
 
    * **[!UICONTROL Title]** - Voer een beschrijvende configuratitel in. Bijvoorbeeld, `We.Retail Launch cloud configuration`.
 
@@ -796,17 +796,17 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Company]** - Selecteer uw Experience Cloud bedrijf in de  **[!UICONTROL Company]** vervolgkeuzelijst. De lijst wordt automatisch gevuld.
 
-   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschap de Adobe-opstarteigenschap die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
+   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschappen de eigenschap Experience Platform Launch die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
    Nadat u alle velden hebt ingevuld, ziet uw **[!UICONTROL General]**-pagina er ongeveer als volgt uit:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Klik in de linkerbovenhoek op **[!UICONTROL Next]**.
-1. Vul op de pagina **[!UICONTROL Staging]** (2/3 pagina&#39;s) van het venster **[!UICONTROL Create Adobe Launch Configuration]** het volgende veld in:
+1. Vul op de pagina **[!UICONTROL Staging]** (2/3 pagina&#39;s) van het venster **[!UICONTROL Create Experience Platform Launch Configuration]** het volgende veld in:
 
-   Controleer in het veld **[!UICONTROL Library URI]** de locatie van de staging versie van uw Adobe Launch-bibliotheek. Dit veld wordt automatisch ingevuld door AEM.
+   Controleer in het veld **[!UICONTROL Library URI]** de locatie van de testversie van de Experience Platform Launch-bibliotheek. Dit veld wordt automatisch ingevuld door AEM.
 
-   Voor illustratiedoeleinden slechts, zal deze stap de bibliotheken van de Lancering van Adobe gebruiken die aan Adobe CDN worden opgesteld.
+   Voor illustratiedoeleinden slechts, zal deze stap de bibliotheken van het Experience Platform Launch gebruiken die aan Adobe CDN worden opgesteld.
 
    >[!NOTE]
    >
@@ -820,19 +820,19 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Klik in de rechterbovenhoek op **[!UICONTROL Next]**.
-1. Herstel, indien nodig, de automatisch gevulde productie-URI op de pagina **[!UICONTROL Production]** (3/3 pagina&#39;s) van het venster **[!UICONTROL Create Adobe Launch Configuration]** op ongeveer dezelfde manier als op de vorige pagina **[!UICONTROL Staging]**.
+1. Herstel, indien nodig, de automatisch gevulde productie-URI op de pagina **[!UICONTROL Production]** (3/3 pagina&#39;s) van het venster **[!UICONTROL Create Experience Platform Launch Configuration]** op ongeveer dezelfde manier als op de vorige pagina **[!UICONTROL Staging]**.
 1. Klik in de rechterbovenhoek op **[!UICONTROL Create]**.
 
-   Uw nieuwe Adobe Launch Cloud Configuration wordt nu gemaakt en weergegeven naast uw website.
+   Uw nieuwe Experience Platform Launch Cloud Configuration wordt nu gemaakt en wordt weergegeven naast uw website.
 
-1. Selecteer de nieuwe Adobe Cloud Configuration (Cloud-configuratie starten) (er verschijnt een vinkje links van de configuratietoets wanneer deze is geselecteerd). Klik op **[!UICONTROL Publish]** op de werkbalk.
+1. Selecteer uw nieuwe Configuratie van de Wolk van het Experience Platform Launch (een vinkje verschijnt links van de configuratietitel wanneer het wordt geselecteerd). Klik op **[!UICONTROL Publish]** op de werkbalk.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-AEM auteur biedt momenteel geen ondersteuning voor de integratie van Dynamic Media Viewers met Adobe Launch.
+AEM auteur biedt momenteel geen ondersteuning voor de integratie van Dynamic Media Viewers met Experience Platform Launch.
 
-Deze eigenschap wordt echter ondersteund in het publicatieknooppunt AEM. Met de standaardinstellingen van Adobe Launch Cloud Configuration AEM publish wordt de productieomgeving van Adobe Launch gebruikt. Daarom is het noodzakelijk om Adobe Launch library updates van Development naar de Productomgeving te duwen telkens tijdens de test.
+Deze eigenschap wordt echter ondersteund in het publicatieknooppunt AEM. Met de standaardinstellingen van Experience Platform Launch Cloud Configuration AEM publish wordt de productieomgeving van het Experience Platform Launch gebruikt. Daarom is het noodzakelijk om Experience Platforms Launch bibliotheekupdates vanaf Development tot aan de Productomgeving steeds tijdens de test door te voeren.
 
-Het is mogelijk om deze beperking te omzeilen door de ontwikkelings- of staging-URL van de Adobe Launch-bibliotheek op te geven in de configuratie van de Adobe Launch Cloud voor AEM publicatie hierboven. Hierdoor gebruikt het AEM publicatieknooppunt de ontwikkelings- of staging-versie van de Adobe Launch-bibliotheek.
+Het is mogelijk om deze beperking te omzeilen door de ontwikkelings- of staging-URL van de bibliotheek met Experience Platforms Launch op te geven in de Cloudineconfiguratie van Experience Platform Launch voor AEM publicatie hierboven. Hierdoor gebruikt het AEM publicatieknooppunt de versie van het Experience Platform Launch Development of Staging.
 
-Zie [Experience Platform Launch en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) integreren voor meer informatie over het instellen van de configuratie van de Adobe Launch Cloud.
+Zie [Experience Platform Launch en Experience Manager integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) voor meer informatie over de opstelling van de Configuratie van de Wolk van de Experience Platform Launch.
