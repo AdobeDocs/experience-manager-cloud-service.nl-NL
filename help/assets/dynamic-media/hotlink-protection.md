@@ -2,7 +2,7 @@
 title: Hotlinkbeveiliging in Dynamic Media activeren
 description: Informatie over het activeren van hotlinkbeveiliging in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 6%
@@ -18,6 +18,4 @@ Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een
 
 >[!NOTE]
 >
->Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
-
-Om hot link-beveiliging te activeren, moet een beheerder een ondersteuningsticket maken om de configuratiewijziging in uw Dynamic Media-account aan te vragen. Er zijn geen extra kosten voor het activeren van hotlink-beveiliging.
+>Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie. Om hot link-beveiliging te activeren, moet een beheerder een ondersteuningsticket maken om de configuratiewijziging in uw Dynamic Media-account aan te vragen. Er zijn geen extra kosten voor het activeren van hotlink-beveiliging.
