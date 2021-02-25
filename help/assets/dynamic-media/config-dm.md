@@ -2,9 +2,9 @@
 title: Dynamic Media-Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3583'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,6 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 >* [Cache-validatie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink-beveiliging](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2-levering van inhoud](/help/assets/dynamic-media/http2faq.md)
->* [Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* URL omleiden op CDN-niveau
 >* Akamai ChinaCDN (voor optimale levering in China)
 
@@ -123,7 +122,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver.
    * Tik **[!UICONTROL Add]** voor het clientadresfilter.
-   * Als u het adres wilt inschakelen (inschakelen), schakelt u het selectievakje in en typt u het IP-adres van de instantie AEM-auteur (niet de instantie Dispatcher IP).
+   * Als u het adres wilt inschakelen (inschakelen), schakelt u het selectievakje in en typt u het IP-adres van de instantie AEM-auteur (niet Dispatcher IP).
    * Klik op **[!UICONTROL Save]**.
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt Dynamic Media gebruiken.
@@ -151,7 +150,7 @@ Zie ook [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 1. Controleer op de pagina **[!UICONTROL DMSETUP]** de configuratiedetails die de fout beschrijven. Let met name op foutberichten of foutcodes. Neem contact op met de klantenservice van Adobe voor deze informatie.
 
-   ![Dynamic Media Setup-pagina](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Dynamic Media-instellingspagina](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Het wachtwoord wijzigen in Dynamic Media {#change-dm-password}
 
