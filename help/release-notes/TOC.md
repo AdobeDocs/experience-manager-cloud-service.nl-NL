@@ -4,10 +4,10 @@ user-guide-title: Opmerkingen bij de release voor AEM als Cloud Service
 breadcrumb-title: Release-opmerkingen
 user-guide-description: Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen.
 translation-type: tm+mt
-source-git-commit: 137d8f6c432e4d5dea744c96e01782e81bd4cfee
+source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 33%
+source-wordcount: '107'
+ht-degree: 32%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 33%
 + [Geen informatie](/help/release-notes/home.md)
 + Releaseopmerkingen {#release-notes}
    + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + 2021 {#2021}
+      + [Opmerkingen bij de release 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
       + [Opmerkingen bij de release 2020.12.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [Opmerkingen bij de release 2020.11.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
