@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
+source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL E
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.1.0 is 3 februari 2021.
-De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
+De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.2.0 is 25 februari 2021.
+De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
@@ -51,19 +51,24 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] als een  [!DNL Cloud Service] uitbreiding van de functie Slimme tags ter ondersteuning van de identificatie van trefwoorden en entiteiten in op tekst gebaseerde elementen. De tekst wordt geïdentificeerd, geïndexeerd, en ter beschikking gesteld als meta-gegevens om de onderzoekservaring zonder de behoefte aan om het even welke configuratie te verbeteren. Zie [Slimme tags](/help/assets/smart-tags.md).
+## Nieuw in [!DNL Assets] {#what-is-new-assets}
 
-* MXF-bestandsindeling wordt nu ondersteund. Zie [ondersteunde bestandsindelingen](/help/assets/file-format-support.md#video-formats).
+* Elementen kunnen worden opgehaald met [!DNL Experience Manager Assets Brand Portal]. Het helpt om activa van de uitzendingsgebruikers voor nieuwe marketing campagnes, foto&#39;s, en projecten te betrekken.
 
-## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-### Nieuwe functies {#what-is-new-commerce}
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* Product Experience Management: Het nieuwe lusje van eigenschappen van de &quot;Handel&quot;voor Activa en de Fragmenten van de Ervaring. Op dit tabblad kunt u producten/categorieën koppelen aan Elementen en Fragmenten ervaren. Op het tabblad vindt u ook real-time gegevens voor gekoppelde producten/categorieën en een koppeling om details weer te geven in de productconsole.
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* Uitgebrachte CIF Venia Reference Site - 2021.02.02 met de nieuwste versie van CIF Core Components v1.7.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) voor meer informatie.
+Ability to select a root path. select if a minimum number of tags is required. 
 
-* Uitgebrachte CIF Core Components v1.7.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) voor meer informatie.
+Add a Boolean or radio widget type to metadata schema setup. -->
+
+## Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
+
+* Wanneer een nieuwe versie van een bestaand element wordt gemaakt nadat het naamconflict is opgelost, worden de metagegevens van het oorspronkelijke element overschreven. (CQ-4313594)
+* Wanneer een element met lange annotatietekst wordt afgedrukt, wordt de annotatietekst bijgesneden, zelfs als er ruimte beschikbaar is. (CQ-4314101)
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,23 +106,6 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 * In sommige gevallen kan een intern probleem ertoe leiden dat het verwijderen van het milieu vastloopt.
 
 * Sommige pijpleidingsmislukkingen werden verkeerd gemeld als pijpleidingsfouten.
-
-## AEM als Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
-
-### Nieuwe functies {#what-is-new-foundation}
-
-* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en AEM als milieu&#39;s van de Cloud Service te maken. Lees meer door [de documentatie](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door de [zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) te raadplegen.
-
-### SDK Build Analyzers {#sdk-build-analyzers}
-
-De AEM als Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren.
-
-Voor deze afgifte zijn twee nieuwe analysatoren toegevoegd:
-
-* herpuntanalyse
-* bundle-nativecode
-
-Raadpleeg de documentatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) voor meer informatie.
 
 ## De tool Content Transfer {#content-transfer-tool}
 
