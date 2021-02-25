@@ -4,9 +4,9 @@ description: Meer informatie over verschillende methoden voor middelenbeheer en 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
+source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
 workflow-type: tm+mt
-source-wordcount: '4214'
+source-wordcount: '4192'
 ht-degree: 11%
 
 ---
@@ -511,7 +511,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 ### Annotaties {#printing-annotations} afdrukken
 
-Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
@@ -541,21 +541,17 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
    U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties/status wilt weergeven in de afgedrukte PDF. Kies **[!UICONTROL Next Page]** als u de annotaties/status wilt weergeven op een pagina die gescheiden is van de afgedrukte asset.
 
-   >[!NOTE]
-   >
-   >Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
-
-1. Tik of klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
+1. Klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
@@ -569,7 +565,7 @@ Hieronder vindt u scenario&#39;s waarin u versies maakt:
 * U bewerkt de metagegevens van een element.
 * Met de [!DNL Experience Manager]-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 Met de versiefunctionaliteit kunt u het volgende doen:
 
