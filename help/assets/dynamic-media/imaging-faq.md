@@ -2,10 +2,10 @@
 title: Slimme beeldverwerking
 description: Slimme beeldverwerking past de unieke weergavekenmerken van elke gebruiker toe, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 1%
+source-wordcount: '1805'
+ht-degree: 0%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 1%
 ## Wat is &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
 
 Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+
+>[!NOTE]
+>
+>Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
 De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volledig geïntegreerd zijn met de best-in-klasse van Adobe de premiedienst CDN (het Netwerk van de Levering van de Inhoud). Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het kijkt bij de laagste latentie, of het laagste tarief van het pakketverlies, of allebei, eerder dan eenvoudig gebruikend de standaardroute op Internet.
 
