@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ Maak de aangewezen server-aan-server API vraag van de niet-AEM toepassing aan ee
 
 ## Intrekking servicekredieten {#service-credentials-revocation}
 
-Stuur een aanvraag naar de klantenondersteuning als de token voor de JWT-toonder moet worden ingetrokken.
+Als de geloofsbrieven moeten worden ingetrokken, moet u een verzoek aan klantensteun indienen gebruikend deze stappen:
+
+1. Schakel de technische accountgebruiker voor de Adobe Admin Console uit in de gebruikersinterface:
+   * Druk in Cloud Manager op **..** naast uw omgeving. Hiermee wordt de pagina met productprofielen geopend
+   * Klik nu op het profiel **AEM Users** om een lijst met gebruikers weer te geven
+   * Klik op het tabblad **API-referenties**, zoek vervolgens de juiste gebruiker van de technische account en verwijder deze
+2. Contact opnemen met de klantenondersteuning en vragen of de servicegegevens voor die specifieke omgeving worden verwijderd
+3. Tot slot kunt u de geloofsbrieven opnieuw produceren, zoals die in deze documentatie wordt beschreven. Zorg er ook voor dat de nieuwe gebruiker van de technische account die wordt gemaakt, over de juiste machtigingen beschikt.
