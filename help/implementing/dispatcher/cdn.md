@@ -2,9 +2,9 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 5%
 
 ---
@@ -75,4 +75,4 @@ De waarden voor de continentale codes zijn:
 * OC Oceanië
 * SA Zuid-Amerika
 
-Deze informatie kan nuttig zijn in gevallen zoals omleiding naar een andere URL op basis van de oorsprong (land) van het verzoek. In dit specifieke geval mag de omleiding echter niet in de cache worden opgeslagen, aangezien deze varieert. Indien nodig, kunt u `Cache-Control: private` gebruiken om caching te verhinderen. Zie ook [Caching](/help/implementing/dispatcher/caching.md#html-text).
+Deze informatie kan nuttig zijn in gevallen zoals omleiding naar een andere URL op basis van de oorsprong (land) van het verzoek. Gebruik de header Variëren voor het in cache plaatsen van reacties die afhankelijk zijn van geo-informatie. Omleiding naar een specifieke landingspagina moet bijvoorbeeld altijd `Vary: x-aem-client-country` bevatten. Indien nodig, kunt u `Cache-Control: private` gebruiken om caching te verhinderen. Zie ook [Caching](/help/implementing/dispatcher/caching.md#html-text).
