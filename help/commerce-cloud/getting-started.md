@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
+source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '657'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Het instappen voor AEM Handel als Cloud Service is een proces in twee stappen:
 1. Krijg AEMHandel als toegelaten Cloud Service en CIF toe:voegen-on provisioned
 2. Sluit AEM Handel als Cloud Service met uw Magento milieu aan
 
-De eerste stap wordt gedaan door Adobe. U zult informatie zoals de organisatie IMS, het eindpunt URL GraphQL eindpunt van uw milieu van Magento, enz. moeten verstrekken. als onderdeel van het inrichtingsproces. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
+De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
 Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u een nieuw programma maken. Voor meer details, verwijs naar [Opstelling uw Programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
