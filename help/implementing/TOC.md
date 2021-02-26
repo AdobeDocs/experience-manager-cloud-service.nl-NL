@@ -4,9 +4,9 @@ user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 translation-type: tm+mt
-source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
+source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '872'
 ht-degree: 33%
 
 ---
@@ -54,11 +54,12 @@ ht-degree: 33%
       + [IP niet toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [De status van een IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Uw code beheren {#managing-code}
    + [Maven-projectversiebeheer](cloud-manager/project-version-handling.md)
    + [Toegang tot Git](cloud-manager/accessing-git.md)
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-   + [Werken met Meerdere opslagplaatsen voor Git-bronnen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [Werken met Meerdere bronopslaglocaties voor Git](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + Ontwikkelen voor AEM as a Cloud Service {#developing}
    + [AEM-projectstructuur](developing/introduction/aem-project-content-package-structure.md)
    + [AEM-projectrepositorystructuurpakket](developing/introduction/repository-structure-package.md)
@@ -107,7 +108,7 @@ ht-degree: 33%
       + [SPA Inleiding en Analyse](developing/hybrid/introduction.md)
       + [SPA WKND-zelfstudie](developing/hybrid/wknd-tutorial.md)
       + [Aan de slag met Reageren](developing/hybrid/getting-started-react.md)
-      + [Aan de slag met hoekig](developing/hybrid/getting-started-angular.md)
+      + [Aan de slag met Angular](developing/hybrid/getting-started-angular.md)
       + [SPA diep duiken](developing/hybrid/deep-dives.md)
       + [SPA ontwikkelen voor AEM](developing/hybrid/developing.md)
       + [Overzicht SPA Editor](developing/hybrid/editor-overview.md)
