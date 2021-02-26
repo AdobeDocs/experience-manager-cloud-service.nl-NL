@@ -2,10 +2,10 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 8%
+source-wordcount: '832'
+ht-degree: 9%
 
 ---
 
@@ -65,11 +65,10 @@ De console van het Web, die in vorige versies van AEM wordt gebruikt om montages
 
 ## Wijzigingen in publicatieruimte zijn niet toegestaan {#changes-to-publish-repo}
 
-Directe wijzigingen in de publicatiereserver zijn niet toegestaan op AEM Cloud Service. In eerdere versies van on-premise AEM of AEM op AMS konden codewijzigingen rechtstreeks in de publicatieruimte worden aangebracht, bijvoorbeeld om gebruikers te maken, gebruikersprofiel bij te werken en knooppunten te maken. Dit is niet meer mogelijk en kan op de volgende manieren worden beperkt:
+Naast wijzigingen in de map `/home` op de publicatielaag zijn directe wijzigingen in de publicatiereserver niet toegestaan op AEM Cloud Service. In eerdere versies van on-premise AEM of AEM op AMS kunnen wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats. Sommige beperkingen kunnen op de volgende manieren worden beperkt:
 
 * Voor op inhoud en inhoud gebaseerde configuratie: Breng de wijzigingen aan in de auteurinstantie en publiceer deze.
 * Voor code en configuratie: de wijzigingen in de GIT-opslagplaats aan te brengen en de CI/CD-pijpleiding uit te voeren.
-* Voor gebruikersgerelateerde gegevens zoals formulierverzendingen of profielgegevens: gebruik de Verenigde Dienst van het Profiel van de Platform van Experience Cloud of andere derde partij zitting bewust opslag.
 
 ## Aangepaste runmodi zijn niet toegestaan {#custom-runmodes}
 
