@@ -2,7 +2,7 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 6%
@@ -91,7 +91,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 ### Statuskennisgeving {#status-notification}
 
-Als een pagina deel van [werkschema](/help/sites-cloud/authoring/workflows/overview.md) of veelvoudige werkschema&#39;s uitmaakt, wordt deze informatie getoond in een berichtbar bij de bovenkant van het scherm wanneer het uitgeven van de pagina.
+Als een pagina deel van een [werkschema](/help/sites-cloud/authoring/workflows/overview.md) of veelvoudige werkschema&#39;s uitmaakt, wordt deze informatie getoond in een berichtbar bij de bovenkant van het scherm wanneer het uitgeven van de pagina.
 
 ![Workflowmelding](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
@@ -367,7 +367,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
 Overerving is het mechanisme waarbij inhoud automatisch van de ene component naar de andere kan worden verplaatst. Overerfde componenten kunnen het product van diverse scenario&#39;s zijn, die omvatten:
 
-* Beheer van meerdere sites <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Beheer van meerdere sites](/help/sites-cloud/administering/msm/overview.md)
 * [Starten](/help/sites-cloud/authoring/launches/overview.md)  (op basis van live kopie).
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de component kan deze beschikbaar zijn op de werkbalk van de component als de component zich op een pagina bevindt die deel uitmaakt van een live kopie of opstart (op basis van een live kopie).
@@ -476,7 +476,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 ## Een pagina {#unlocking-a-page} ontgrendelen
 
-Het ontgrendelen van een pagina lijkt sterk op het vergrendelen van de pagina[. ](#locking-a-page) Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
+Het ontgrendelen van een pagina lijkt sterk op het vergrendelen van de pagina](#locking-a-page). [ Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
 
 In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de Sites-console wordt vervangen door een pictogram **Ontgrendelen**.
 
