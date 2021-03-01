@@ -2,10 +2,10 @@
 title: Werken met getargete content in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 4%
+source-wordcount: '2900'
+ht-degree: 5%
 
 ---
 
@@ -16,10 +16,7 @@ Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw
 
 >[!NOTE]
 >
->Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Als u deze functie wilt gebruiken, dient u bekend te zijn met Multi Site Manager en de Adobe Target-integratie met AEM.
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Als u deze functie wilt gebruiken, moet u bekend zijn met [Multi Site Manager](/help/sites-cloud/administering/msm/overview.md) en de [Adobe Target-integratie](/help/sites-cloud/integrating/integrating-adobe-target.md) met AEM.
 
 In dit document wordt het volgende beschreven:
 
@@ -110,7 +107,7 @@ Nadat u het tabblad hebt vernieuwd, verandert de Canadese site in de nieuwe afbe
 
 ![Versies wijzigen](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-De markator wil deze wijzigingen in de Europese regio doorvoeren en de live kopie uitrollen door te tikken op **Uitrolpagina** of erop te klikken. Na het vernieuwen van de tab heeft de site van Groot-Brittannië het nieuwe beeld dat het Europese gebied erft van het master gebied (na de uitrol). <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+De markator wil deze wijzigingen in de Europese regio doorvoeren en [rolt de live kopie](/help/sites-cloud/administering/msm/creating-live-copies.md) door te tikken of te klikken op **Uitrolpagina**. Na het verfrissen van de tab heeft de site van Groot-Brittannië het nieuwe beeld dat het Europa-gebied erft van het master gebied (na de uitrol).
 
 ![Live kopie uitvoeren](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -132,7 +129,7 @@ Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt 
 
 >[!NOTE]
 >
->De standaarduitrol activeert volgende uitrollingen van de doelinhoud wanneer een pagina een actieve kopie is die aan een gebied wordt gekoppeld dat zelf een actieve kopie is van het gebied dat aan de paginablauwdruk is gekoppeld.
+>De standaarduitrol activeert volgende uitrollouts van de doelinhoud wanneer een pagina een actieve kopie is die aan een gebied wordt gekoppeld dat zelf een actieve kopie is van het gebied dat aan de paginablauwdruk is gekoppeld.
 
 In het volgende diagram zijn er bijvoorbeeld vier sites waar twee het master gebied delen (en alle activiteiten die deel uitmaken van dat gebied), één site die een gebied heeft dat een live kopie van een gebied is, zodat het de activiteiten deelt bij de uitrol, en één kant die volledig gescheiden is (en dus een gebied voor zijn activiteiten vereist).
 
@@ -189,9 +186,9 @@ Een gebied maken als een livecopy:
 
 1. Selecteer de juiste configuratie in het vervolgkeuzemenu **Rollout Configs**.
 
-   Zie [Geïnstalleerde Configuraties van de Uitvoer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) voor beschrijvingen van elke optie.
+   Zie [Geïnstalleerde Configuraties van de Uitvoer](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations) voor beschrijvingen van elke optie.
 
-   Zie [Actieve kopieën maken en synchroniseren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) voor meer informatie over actieve kopieën.
+   Zie [Actieve kopieën maken en synchroniseren](/help/sites-cloud/administering/msm/creating-live-copies.md) voor meer informatie over actieve kopieën.
 
    >[!NOTE]
    >
