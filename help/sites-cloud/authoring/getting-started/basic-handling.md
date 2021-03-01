@@ -2,7 +2,7 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 4%
@@ -73,7 +73,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Sites | Met de Sites-consoles kunt u [sites maken, weergeven en beheren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) die op uw AEM-instantie worden uitgevoerd. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaringsfragmenten | Een [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die hergebruikt kan worden tussen kanalen en variaties, waardoor het probleem van het herhaaldelijk kopiëren en plakken ervaringen of delen van ervaringen wordt bespaard. |
 | Assets | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd.<!--add some kind of assets link--> |
-| Personalisatie | Deze console biedt een raamwerk van gereedschappen waarmee u doelgerichte inhoud kunt ontwerpen en gepersonaliseerde ervaringen kunt presenteren.[](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personalisatie | Deze console biedt een raamwerk van gereedschappen waarmee u doelgerichte inhoud kunt ontwerpen en gepersonaliseerde ervaringen kunt presenteren.](/help/sites-cloud/authoring/personalization/overview.md)[ |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 
@@ -450,8 +450,8 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking**.
 **Met** verwijzingen worden verbindingen met de geselecteerde bron weergegeven. In de **Sites**-console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) voor pagina&#39;s ziet u bijvoorbeeld:
 
 * [Lanceringen](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live kopieën<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Taalkopieën<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live kopieën](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Taalkopieën](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Content references:
 
    * Koppelingen van andere pagina&#39;s naar de geselecteerde pagina
