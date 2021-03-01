@@ -2,10 +2,10 @@
 title: Interactieve video's
 description: Leer hoe u in Dynamic Media werkt met interactieve video's en schokkende video's.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '5970'
-ht-degree: 5%
+source-wordcount: '6015'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 U kunt eenvoudig interactieve video&#39;s maken. U kunt deze video&#39;s ook wel shoppable video&#39;s noemen en de conversie rechtstreeks vanuit de video sturen. De betrokkenheid van de klant bij de video vindt plaats in een deelvenster naast de videospeler, waar gerelateerde service-, informatie- of productminiaturen worden weergegeven op basis van wat in de video wordt getoond. Klanten kunnen op de miniatuur tikken en rechtstreeks aan de service worden gekoppeld, het item toevoegen aan een winkelwagentje voor directe aankoop of worden gekoppeld aan een webpagina voor meer informatie.
 
-Wanneer de video eindigt, wordt een visueel overzicht van al dienstenaanbod getoond om een vraag aan actie te drijven. Klanten hebben nog een kans om op het gewenste item te tikken. Handelbare en specifieke ervaringen zoals deze verhogen de betrokkenheid en conversie van klanten.
+Wanneer de video eindigt, wordt een visueel overzicht van al dienstenaanbod getoond om een vraag aan actie te drijven. Klanten hebben nog een kans om op het gewenste item te tikken. Handelbare en specifieke ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies.
 
 Zie ook [Interactieve afbeeldingen](/help/assets/dynamic-media/interactive-images.md).
 
@@ -25,7 +25,7 @@ Als u een interactieve, shoppable video in actie wilt zien, klikt u op [Livedemo
 
 * Terwijl producten tijdens het afspelen in de video worden gebruikt, wordt het identieke product rechts weergegeven als een miniatuurafbeelding.
 
-* Klik op de miniatuur om de video te pauzeren en de snelweergave van het product te openen. Klik bijvoorbeeld op de miniatuurafbeelding van de KitchenAid in de video om een centrifugeweergave van 360 graden van de mixer te bekijken of zoom in om details van de mixer te zien.
+* Tik op de miniatuur om de video te pauzeren en de Snelle weergave van het product te openen. Tik bijvoorbeeld op de miniatuurafbeelding van de KitchenAid in de video om een centrifugeerweergave van 360 graden van de mixer te bekijken of zoom in om details van de mixer te zien.
 
 Zie ook [Interactieve video gebruiken met Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
@@ -43,16 +43,16 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->Als u een interactieve video maakt om een webpagina te starten wanneer een gebruiker op een miniatuurafbeelding klikt, blokkeren sommige apparaten het openen van de pop-upwebpagina. In dergelijke gevallen moet u de instelling van de pop-upblokkering op het apparaat wijzigen. Tik bijvoorbeeld op een Apple iPhone 6 op **[!UICONTROL Settings > Safari > Block Pop-ups]** en schuif het besturingselement naar **[!UICONTROL Off]**. Wanneer u nu een interactieve video afspeelt en op een miniatuur klikt, wordt u gevraagd of u de pop-up wilt openen. Als u akkoord gaat, wordt de webpagina geopend.
+>Als u een interactieve video maakt om een webpagina te starten wanneer een gebruiker op een miniatuurafbeelding tikt, blokkeren sommige apparaten het openen van de pop-upwebpagina. Wijzig in dergelijke gevallen de instelling van de pop-upblokkering op het apparaat. Tik bijvoorbeeld op een Apple iPhone 6 op **[!UICONTROL Settings > Safari > Block Pop-ups]** en schuif het besturingselement naar **[!UICONTROL Off]**. Wanneer u nu een interactieve video afspeelt en op een miniatuur klikt, wordt u gevraagd of u de pop-up wilt openen. Als u akkoord gaat, wordt de webpagina geopend.
 
 ### Bekijk hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
 
 Bekijk een analyse van 7 minuten en 30 seconden over [hoe interactieve video&#39;s worden gemaakt](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
-(Hoewel de videoanalyse met Assets on Demand is gemaakt, zijn de principes en de stappen ook van toepassing op interactieve video in AEM Assets.)
+(Hoewel de videoanalyse met Activa op bestelling wordt gemerkt, zijn de principes en de stappen nog van toepassing op Interactive Video in Adobe Experience Manager Assets.)
 
 ### Adobe Klantsucces Webinar {#adobe-customer-success-webinar}
 
-Met de webinar [Interactieve video, het delen van koppelingen en het delen van YouTube in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) leert u hoe u interactieve video en andere functies kunt gebruiken om conversie-gebeurtenissen te koppelen aan uw video-marketinginhoud.
+Met de webinar [Interactieve video, het delen van koppelingen en het delen van YouTube in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) leert u hoe u interactieve video en andere functies kunt gebruiken om conversiegedreven gebeurtenissen te koppelen aan uw video marketing inhoud.
 
 ## Snel starten: Interactieve video&#39;s {#quick-start-interactive-videos}
 
@@ -62,59 +62,58 @@ Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het be
 
 Met behulp van de **voorbeelden** kunt u de stappen illustreren voor het integreren van interactieve video&#39;s op uw eigen website.
 
-Wanneer u de zelfstudie in de laatste voorbeeldsectie hebt voltooid, [ziet dit eruit als de uiteindelijke demo-webpagina met de volledig geïntegreerde interactieve video er als volgt uit:](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
+Wanneer u de zelfstudie in de laatste voorbeeldsectie hebt voltooid, wordt [de laatste demo-webpagina met de volledig geïntegreerde interactieve video op deze manier weergegeven](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
 
 
 
 Interactieve videostappen:
 
-1. **(Optioneel) Quickview-variabelen**  identificeren - Begin door dynamische variabelen te identificeren die door uw bestaande QuickView-implementatie worden gebruikt. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige productQuickView wanneer u uw interactieve video creeert. Zie [(Optioneel) Variabelen in QuickView identificeren](#optional-identifying-quickview-variables).
-   **Deze stap is alleen vereist als aan alle volgende voorwaarden wordt voldaan**: ・ U wilt interactiviteit aan uw video toevoegen door aan snelle meningen in werking te stellen.
-・ Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM te halen van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop.
+1. **(Optioneel) Variabelen**  in de Snelle weergave identificeren - Begin door dynamische variabelen te identificeren die worden gebruikt door uw bestaande implementatie in de Snelle weergave. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige product Snelle mening wanneer u uw interactieve video creeert. Zie [(Optioneel) Variabelen in de Snelle weergave identificeren](#optional-identifying-quickview-variables).
+   **Deze stap is alleen vereist als aan alle volgende voorwaarden wordt voldaan**: ・ U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen in werking te stellen.
+・ Uw implementatie van Experience Manager maakt *niet* gebruik van een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM WebSphere® Commerce, Elastic Path, hybris of Intershop, naar de Experience Manager te halen.
 
 1. **(Optioneel) Een voorinstelling**  voor een interactieve videoviewer maken: pas de weergave en het gedrag aan van de verschillende componenten waaruit de speler bestaat, zoals de videoscrubber en de interactieve miniaturen.
 Het is niet nodig een eigen voorinstelling voor een interactieve videoviewer te maken als u de voorinstellingen `Shoppable_Video_Light` of `Shoppable_Video_Dark` voor de externe interactieve videoviewer wilt gebruiken.
-Zie [Een nieuwe viewervoorinstelling maken](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (dit is optioneel) en [Speciale overwegingen voor het maken van een interactieve viewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+Zie [Een nieuwe voorinstelling voor de viewer maken](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (optioneel) en [Speciale overwegingen voor het maken van een interactieve voorinstelling voor de viewer](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
 1. **Een video en de bijbehorende afbeeldingselementen**  uploaden: hiermee kunt u een video en de bijbehorende afbeeldingen uploaden die u interactief wilt maken.
 Zie [Een video en de bijbehorende miniatuurelementen uploaden](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Interactiviteit toevoegen aan uw video**  - Voeg een of meer tijdsegmenten toe aan de video. Koppel vervolgens afbeeldingsminiaturen aan die tijdsegmenten. Wijs elke afbeeldingsminiatuur toe aan een handeling zoals een hyperlink, een Snelle weergave of een Ervingspatroon.
-(Let op: de op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.)
-Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk kopieert en toepast op de openingspagina van uw website.Zie [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
+1. **Interactiviteit toevoegen aan uw video**  - Voeg een of meer tijdsegmenten toe aan de video. Koppel vervolgens afbeeldingsminiaturen aan die tijdsegmenten. Wijs elke afbeeldingsminiatuur toe aan een handeling zoals een hyperlink, een Snelle weergave of een Experience-fragment.
+(De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.)
+Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk kopieert en toepast op de bestemmingspagina van uw website. Zie [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Als u een interactieve video toevoegt aan uw website of aan uw website in**
-AEMI, kunt u de interactieve video rechtstreeks toevoegen aan een webpagina in AEM door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Een interactieve video toevoegen aan uw website of uw website in Experience Manager**  - Als u de Plaatsen van de Experience Manager, of Experience Manager eCommerce, of allebei gebruikt, kunt u de interactieve video aan een Web-pagina in Experience Manager direct toevoegen. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
-Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande QuickView](#integrating-an-interactive-video-with-an-existing-quickview).
+Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande Snelle weergave](#integrating-an-interactive-video-with-an-existing-quickview).
    [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
+## (Optioneel) Variabelen in de Snelle weergave {#optional-identifying-quickview-variables} identificeren
 
 >[!NOTE]
 Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
-* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen in werking te stellen.
-* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen te teweegbrengen.
+* Uw implementatie van Experience Manager maakt *niet* gebruik van een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM WebSphere® Commerce, Elastic Path, hybris of Intershop, naar de Experience Manager te halen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
-Als uw implementatie van AEM eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
-Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u productduimnagels aan hun overeenkomstige productSnelle mening tijdens het interactieve videoaanmaakproces kunt in kaart brengen.
+Begin door dynamische variabelen te identificeren die door uw bestaande Snelle meningsimplementatie worden gebruikt zodat u productduimnagels aan hun overeenkomstige product kunt in kaart brengen Snelle mening tijdens het interactieve videoaanmaakproces.
 
-Wanneer u tijdsegmenten aan een video toevoegt, wijst u SKU en om het even welke extra variabelen aan elke duimnagel toe u aan een segment toevoegt. Dergelijke variabelen worden later gebruikt om het juiste product van de Snelle mening te tonen.
+Wanneer u tijdsegmenten aan een video toevoegt, wijst u SKU (Stock Keeping Unit) en om het even welke extra variabelen aan elke duimnagel toe u aan een segment toevoegt. Dergelijke variabelen worden later gebruikt om het juiste Snelle meningsproduct te tonen.
 
-Het is belangrijk om behoorlijk te identificeren welke variabelen worden vereist om een productQuickView uniek teweeg te brengen.
+Het is belangrijk om correct te identificeren welke variabelen worden vereist om een product Snelle mening uniek teweeg te brengen.
 
-Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn voor uw bestaande Quickview-implementatie. Zij zullen waarschijnlijk de minimumreeks gegevens kennen die nodig is om Snelle mening in het systeem te identificeren. In de meeste gevallen is het echter ook mogelijk om eenvoudig het bestaande gedrag van de front-end code te analyseren.
+Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn voor uw bestaande implementatie van Snelle weergave. Ze weten waarschijnlijk de minimale gegevensset die de Snelle weergave in het systeem identificeert. Het is echter mogelijk om gewoon het bestaande gedrag van de front-end code te analyseren.
 
-De meeste implementaties van de Snelle mening gebruiken het volgende paradigma:
+Bij de meeste implementaties in de Snelle weergave wordt het volgende paradigma gebruikt:
 
-* De gebruiker activeert een gebruikersinterface-element op de website. Klik bijvoorbeeld op een knop Snelle weergave.
-* De website verzendt een Ajax-aanvraag naar de achterkant om de Quickview-gegevens of -inhoud te laden, indien nodig.
-* De Quickview-gegevens worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
+* De gebruiker activeert een gebruikersinterface-element op de website. Als u bijvoorbeeld op een knop in de Snelle weergave klikt.
+* De website verzendt een Ajax-aanvraag naar de achterkant om de gegevens of inhoud van de Snelle weergave te laden, indien nodig.
+* De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
-Daarom is het verstandig verschillende gebieden van uw bestaande website te bezoeken waar QuickView is geïmplementeerd, de QuickView te activeren en de Ajax-URL vast te leggen die door de webpagina is verzonden voor het laden van de gegevens of inhoud van de QuickView.
+De aanpak bestaat er daarom uit verschillende delen van uw bestaande website te bezoeken waar Snelle weergave wordt geïmplementeerd. Vervolgens activeert u de Snelle weergave en legt u de URL van Ajax vast die door de webpagina is verzonden om de gegevens of inhoud van de Snelle weergave te laden.
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
@@ -124,42 +123,42 @@ Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuivere
 
 * Activeer in Internet Explorer het foutopsporingsprogramma door op **F12** te drukken.
 
-Wanneer netwerkcontrole in browser wordt aangezet, teweeg de Snelle mening op de pagina.
+Wanneer netwerkcontrole is ingeschakeld in de browser, activeert u de Snelle weergave op de pagina.
 
-Zoek nu de URL van Quickview Ajax in het netwerklogboek en kopieer de geregistreerde URL voor toekomstige analyse. In de meeste gevallen wanneer u de Quickview teweegbrengt zijn er talrijke verzoeken die naar de server worden verzonden. De URL van Quickview Ajax is doorgaans een van de eerste in de lijst. Het heeft of een complex gedeelte van het vraagkoord of weg, en zijn reactieMIME type of `text/html`, `text/xml`, of `text/javascript` is.
+Zoek nu de URL van de Snelle weergave Ajax in het netwerklogboek en kopieer de opgenomen URL voor toekomstige analyse. Wanneer u de Snelle weergave activeert, zijn er gewoonlijk veel verzoeken die naar de server worden verzonden. De URL van de Snelle weergave Ajax is doorgaans een van de eerste in de lijst. Het heeft of een complex gedeelte van het vraagkoord of weg, en zijn reactieMIME type of `text/html`, `text/xml`, of `text/javascript` is.
 
-Tijdens dit proces is het belangrijk om verschillende delen van uw website te bezoeken, met verschillende productcategorieën en typen. De reden hiervoor is dat URL&#39;s in de Snelle weergave onderdelen kunnen bevatten die algemeen gelden voor een bepaalde categorie websites, maar deze alleen wijzigen als u een ander gedeelte van de website bezoekt.
+Tijdens dit proces is het belangrijk om verschillende delen van uw website te bezoeken, met verschillende productcategorieën en typen. De reden hiervoor is dat in de Snelle weergave-URL&#39;s onderdelen voorkomen die veel voorkomen in een bepaalde categorie websites, maar deze URL alleen wijzigen als u een ander gedeelte van de website bezoekt.
 
-In het eenvoudigste geval, is het enige veranderlijke deel in Quickview URL productSKU. In dit geval is de product-SKU-waarde het enige gegevensstuk dat nodig is om miniaturen toe te voegen aan een tijdsegment in de interactieve video in AEM.
+In het eenvoudigste geval is het enige variabele deel in de URL van de Snelle weergave de product-SKU. In dit geval is de product-SKU-waarde het enige gegevensstuk dat nodig is om miniaturen toe te voegen aan een tijdsegment in de interactieve video in Experience Manager.
 
-In complexe gevallen heeft de URL van de Snelle weergave echter andere variërende elementen naast de SKU van het product, zoals categorie-id, kleurcode enzovoort. In dergelijke gevallen wordt elk dergelijk element een afzonderlijke variabele in de definitie van miniatuurgegevens in AEM.
+In complexe gevallen heeft de URL van de Snelle weergave echter andere variërende elementen naast de SKU van het product, zoals categorie-id en kleurcode. In dergelijke gevallen wordt elk element van deze aard een aparte variabele in de definitie van miniatuurgegevens in de Experience Manager.
 
-Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende miniatuurvariabelen:
+Bekijk de volgende voorbeelden van URL&#39;s in de Snelle weergave en de resulterende miniatuurvariabelen:
 
 <table>
   <tbody>
   <tr>
     <td><p>Enige SKU, die in het vraagkoord wordt gevonden.</p> </td>
-    <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p>
+    <td><p>De opgenomen URL's in de Snelle weergave bevatten het volgende:</p>
     <ul>
       <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>Het enige variabele deel in URL is de waarde van <code>productId=</code> de parameter van het vraagkoord, en het is duidelijk een waarde SKU. Daarom hebben onze miniaturen alleen SKU-velden nodig die zijn gevuld met waarden als <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>Het enige variabele deel in URL is de waarde van <code>productId=</code> de parameter van het vraagkoord, en het is duidelijk een waarde SKU. Daarom hebben de duimnagels slechts gebieden SKU met waarden zoals <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong> nodig.</p> </td>
   </tr>
   <tr>
     <td><p>Eén SKU, gevonden in het URL-pad.</p> </td>
-    <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p>
+    <td><p>De opgenomen URL's in de Snelle weergave bevatten het volgende:</p>
     <ul>
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>Het variabele gedeelte bevindt zich in het laatste gedeelte van het pad en wordt de SKU-waarde van AEM miniaturen: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>Het variabele gedeelte bevindt zich in het laatste gedeelte van het pad en wordt de SKU-waarde van miniaturen van Experience Managers: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU en categorie-id in de queryreeks.</p> </td>
-    <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p>
+    <td><p>De opgenomen URL's in de Snelle weergave bevatten het volgende:</p>
     <ul>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
@@ -176,11 +175,11 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende mi
 
 **Voorbeeld**
 
-Wanneer de bovenstaande benadering wordt toegepast op onze website Example, hebben we een webpagina met een aantal productminiaturen, elk met een knop &quot;MEER INFORMATIE&quot;:
+Wanneer de bovenstaande benadering wordt toegepast op de website van het Voorbeeld, hebt u een Web-pagina met verscheidene productduimnagels, elk met een &quot;ZIE MEER&quot;knoop:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
-Nadat u alle Quickviews van het product beschikbaar op de pagina activeert, krijgt u de volgende lijst van verzoeken die van de Snelle mening aan het achterste eind worden gemaakt:
+Nadat u alle product Snelle meningen activeert beschikbaar op de pagina, krijgt u de volgende lijst van Snelle meningsverzoeken die aan het achterste eind worden gemaakt:
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -203,7 +202,7 @@ Nadat u alle Quickviews van het product beschikbaar op de pagina activeert, krij
 * datafeed/glassware-233916550.json
 * datafeed/glassware-233916597.json
 
-Wanneer u deze serveraanroepen bekijkt, ziet u dat productspecifieke informatie alleen aanwezig is in het aanvraagpad. U merkt ook dat het vraagkoord helemaal niet wordt gebruikt, en er zijn twee verschillende types van gegevensstukken in kwestie:
+Wanneer u de serveraanroepen bekijkt, is productspecifieke informatie alleen aanwezig in het aanvraagpad. U merkt ook dat het vraagkoord helemaal niet wordt gebruikt, en er zijn twee verschillende types van gegevensstukken in kwestie:
 
 * Het eerste type is kaarsen, kussens, meubelen en glaswerk. Je kunt deze &#39;productcategorie&#39; noemen.
 * Het tweede type is productcode, zoals 233916597. Je kan aannemen dat het &quot;product SKU&quot; is.
@@ -220,13 +219,13 @@ U kunt nu een video en de bijbehorende miniatuurelementen uploaden.
 
 U kunt deze taak overslaan en verdergaan naar de volgende taak als u van plan bent om één van beide standaard, uit-van-de-doos Interactieve Video vooraf ingestelde types `Shoppable_Video_dark` of `Shoppable_Video_light` te gebruiken.
 
-Wanneer op een miniatuur wordt geklikt in de ontwerpomgeving, wordt een voorbeeld van het dialoogvenster Snelle weergave weergegeven.
+Wanneer in de ontwerpomgeving op een miniatuur wordt getikt, wordt een voorbeeld van het dialoogvenster Snelle weergave weergegeven.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 U kunt desgewenst uw eigen aangepaste voorinstelling voor een interactieve videoviewer maken. U kunt onder andere de opmaak bepalen van de videospeler, de interactieve miniaturen en de weergave van het miniatuurraster die aan het einde van de video wordt weergegeven.
 
-Een voorinstelling voor een interactieve videoviewer geeft de video en alle tijdlijnsegmenten die u hebt toegevoegd correct weer. Er wordt ook een voorbeeld van standaard QuickView gebruikt wanneer u op een productminiatuur klikt in de modus Voorbeeld, zodat u de interactiviteit kunt testen voordat u publiceert.
+Een voorinstelling voor een interactieve videoviewer geeft de video en alle tijdlijnsegmenten die u hebt toegevoegd correct weer. Er wordt ook een voorbeeld van de standaard Snelle weergave gebruikt wanneer u op een productminiatuur in de modus Voorbeeld klikt, zodat u de interactiviteit kunt testen voordat u de miniatuur publiceert.
 
 Nadat u de viewervoorinstelling hebt opgeslagen, wordt de status ervan automatisch ingesteld op **On** (Ingeschakeld) op de pagina Viewervoorinstellingen. Deze status betekent dat deze zichtbaar is in de component Dynamische media en wanneer u een voorvertoning van een video weergeeft. Zorg ervoor dat u de nieuwe viewervoorinstelling ook handmatig publiceert.
 
@@ -251,21 +250,21 @@ Zie [Elementen uploaden met FTP-taakplanning](/help/assets/manage-digital-assets
 
 U voegt tijdlijnsegmenten aan een video toe met de lokale visuele editor op de pagina Interactieve video maken.
 
-Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe binnen elk segment. Voor elke miniatuur die u toevoegt, past u er een actie op toe. U kunt bijvoorbeeld een Snelle weergave toepassen op de miniatuur, u kunt er een hyperlink aan toewijzen of u kunt een Experience-fragment toevoegen.
+Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe binnen elk segment. Voor elke miniatuur die u toevoegt, past u er een actie op toe. U kunt bijvoorbeeld een Snelle weergave toepassen op de miniatuur, u kunt er een hyperlink aan toewijzen of u kunt een Experience Fragment toevoegen.
 
 Zie [Fragmenten ervaren](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve video niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+Gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. In plaats daarvan kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 >[!NOTE]
-De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
+De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
-Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in Voorvertoning. Van daaruit kunt u een voorinstelling voor een interactieve videoviewer selecteren en de video afspelen om bij benadering te zien hoe deze aan klanten wordt weergegeven.
+Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in Voorvertoning. Van daaruit kunt u een voorinstelling voor een interactieve videoviewer selecteren en de video afspelen om bij benadering te zien hoe deze er voor klanten uitziet.
 
-Om interactiviteit aan uw video toe te voegen:
+**Interactiviteit toevoegen aan uw video**:
 
 1. Navigeer in de weergave Elementen naar de video die u hebt geüpload en maak een interactieve video.
 1. Voer een van de volgende handelingen uit:
@@ -274,19 +273,19 @@ Om interactiviteit aan uw video toe te voegen:
 
    * Tik op **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL > Edit]**.
 
-   * Tik op de afbeelding om deze te openen in de detailweergave. Tik op **[!UICONTROL Edit]** op de werkbalk.
+   * Tik op de afbeelding om deze te openen op de pagina Detailweergave. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
 1. Voer op de pagina Interactieve video maken een van de volgende handelingen uit:
 
    * Tik op de knop **[!UICONTROL Play]** om de video af te spelen. Tik op **[!UICONTROL Add Segment]** op de werkbalk wanneer een bepaald product, een bepaalde service of een bepaald detail dat u wilt markeren, in beeld komt. Herhaal deze bewerking totdat u het einde van de video hebt bereikt.
 
-      Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen en deze miniaturen vervolgens koppelen aan de productpagina&#39;s van de Snelle weergave die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
+      Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen. Vervolgens kunt u deze miniaturen koppelen aan productpagina&#39;s in de Snelle weergave die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
 
    * Tik op de knop **[!UICONTROL Play]** om de video af te spelen. Tik op **[!UICONTROL Pause]** wanneer een bepaald product, een bepaalde service of een bepaald detail dat u wilt markeren in beeld komt. Tik op **[!UICONTROL Add Segment]**.
 
       Ga door met het afspelen en pauzeren van de video op punten langs de tijdlijn waar u een segment wilt toevoegen totdat u het einde van de video hebt bereikt.
 
-1. (Optioneel) Sleep de balk op de **[!UICONTROL Timeline Scale Slider]** naar links om in te zoomen of naar rechts om uit te zoomen. Zo bepaalt u hoeveel details u ziet van de segmenten die u hebt toegevoegd.
+1. (Optioneel) Sleep de balk op de **[!UICONTROL Timeline Scale Slider]** naar links om in te zoomen of naar rechts om uit te zoomen. Met deze actie kunt u bepalen hoeveel details u ziet van de segmenten die u hebt toegevoegd.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -351,9 +350,9 @@ Om interactiviteit aan uw video toe te voegen:
 
       Gebruik de volgende sneltoetsen voor navigatie om uw videosegmenten snel te controleren en af te stemmen:
 
-      * Tik op de blauwe ovaal aan de voorzijde om de video direct naar het begin van dat segment te zoeken.
-      * Tik op de navolgende blauwe ovaal om de video direct naar het einde van dat segment te zoeken.
-      * Tik op het gehele segment om het afspelen van de video te hervatten naar het begin van dat segment
+      * Tik op het blauwe ovaal vóór het begin van dat segment om de video direct naar het begin te zoeken.
+      * Tik op het navolgende blauwe ovaal om de video direct naar het einde van dat segment te zoeken.
+      * Tik op het hele segment om het afspelen van video terug te zetten naar het begin van dat segment.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -399,22 +398,22 @@ Om interactiviteit aan uw video toe te voegen:
     <tbody> 
       <tr> 
       <td>De geselecteerde miniatuurafbeelding aan een Snelle weergave koppelen</td> 
-      <td><p>Tik onder Type handeling op <strong>QuickView</strong>.</p> <p>Als u een klant van AEM Sites en van de Handel bent:</p> 
+      <td><p>Tik onder Type handeling op <strong>Snelle weergave</strong>.</p> <p>Als u een klant van de Plaatsen van de Experience Manager en van de Handel bent:</p> 
        <ul> 
-       <li>U ziet dat het tekstveld SKU-waarde vooraf is ingevuld met de SKU (Stock Keeping Unit) van het geselecteerde product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. Dit wordt automatisch gevuld wanneer het beeld met een product in AEMHandel wordt geassocieerd.</li> 
-       <li>Als de vooraf ingevulde SKU onjuist is, tikt u op het pictogram Productkiezer (vergrootglas) of klikt u op dit pictogram om de pagina Selecteer product te openen. Tik op het product dat u wilt gebruiken of klik op het vinkje in de rechterbovenhoek van de pagina om terug te keren naar de Interactieve video-editor.</li> 
-       </ul> <p> Als u <em>not</em> een klant van AEM Sites of van de Handel bent</p> 
+       <li>Het tekstveld SKU-waarde wordt vooraf ingevuld met de SKU (Stock Keeping Unit) van het geselecteerde product. SKU is een uniek herkenningsteken voor elk verschillend product of de dienst die u aanbiedt. Dit veld wordt automatisch ingevuld wanneer de afbeelding is gekoppeld aan een product in Experience Manager Commerce.</li> 
+       <li>Als de vooraf ingevulde SKU onjuist is, tikt u op het pictogram Productkiezer (vergrootglas) of klikt u op dit pictogram om de pagina Selecteer product te openen. Tik op het product dat u wilt gebruiken en tik vervolgens op het vinkje in de rechterbovenhoek van de pagina. U gaat terug naar de Interactieve Video-editor.</li> 
+       </ul> <p> Als u <em>not</em> een Plaats van de Experience Manager of een klant van de Handel bent</p> 
        <ul> 
-       <li>Zie <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">Hotspot-variabelen identificeren</a>. U moet deze variabelen definiëren. </li> 
-       <li>Standaard gebruikt dit SKU-veld de bestandsnaam van het afbeeldingselement zonder de extensie. Als u een standaardnaamgevingsconventie volgt voor uw bestanden die op SKU zijn gebaseerd, hoeft u hiervoor gewoonlijk geen aanvullende bewerkingen uit te voeren. </li> 
-       <li>Anders, geef de standaardwaarde uit en ga de correcte waarde SKU in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om het in kaart gebrachte beeld met de Snelle mening van SKU te associëren.</li> 
-       </ul> <p>(Optioneel) Als de Snelle weergave andere variabelen bevat die u nodig hebt om een product nader te identificeren, tikt u op <strong>Algemene variabele toevoegen</strong>. Geef in het tekstveld een extra variabele op. <code>category=Womens</code> is bijvoorbeeld een toegevoegde variabele.</p> <p> </p> </td> 
+       <li>Zie <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">Hotspot-variabelen identificeren</a>. Deze variabelen moeten worden gedefinieerd.</li> 
+       <li>Standaard gebruikt dit SKU-veld de bestandsnaam van het afbeeldingselement zonder de extensie. Als u een standaardnaamgevingsconventie volgt voor uw bestanden die op SKU zijn gebaseerd, hoeft dit veld gewoonlijk geen aanvullende bewerkingen uit te voeren. </li> 
+       <li>Anders, geef de standaardwaarde uit en ga de correcte waarde SKU in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het Snelle meningsmalplaatje zodat het systeem weet om het in kaart gebrachte beeld met de Snelle mening van SKU te associëren.</li> 
+       </ul> <p>(Optioneel) Tik op <strong>Algemene variabele toevoegen</strong> als er zich in de Snelle weergave andere variabelen bevinden die u moet gebruiken om een product nader te identificeren. Geef in het tekstveld een extra variabele op. <code>category=Womens</code> is bijvoorbeeld een toegevoegde variabele.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>De geselecteerde miniatuurafbeelding aan een hyperlink koppelen</td> 
       <td><p>Tik onder Type handeling op <strong>Hyperlink</strong> en voer een van de volgende handelingen uit:</p> 
        <ul> 
-       <li>Als u een AEM Sites-klant bent, tikt u op het pictogram Sitekiezer (map) om naar een webpagina te navigeren. De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL's bevat, met name koppelingen naar AEM Sites-pagina's.</li> 
+       <li>Als u een klant van de Plaatsen van de Experience Manager bent, tik het pictogram van de Selecteur van de Plaats (omslag) om aan een webpagina te navigeren. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina's van de Plaatsen van de Experience Manager heeft.</li> 
        <li>Als u een zelfstandige Dynamic Media-klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.</li> 
        </ul> <p>Zorg ervoor dat u opgeeft of u de koppeling wilt openen op een nieuw browsertabblad of op het huidige tabblad.</p> </td> 
       </tr> 
@@ -422,11 +421,11 @@ Om interactiviteit aan uw video toe te voegen:
       <td>De geselecteerde miniatuurafbeelding aan een ervaringsfragment koppelen</td> 
       <td><p>Tik onder Type handeling op <strong>Fragment ervaren</strong> en voer de volgende handelingen uit:<p> 
        <ul> 
-       <li>Als u een AEM Sites-klant bent, tikt of klikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik op het gewenste fragment voor beleving of klik op het gewenste fragment. Tik vervolgens op <strong>Selecteer </strong>in de rechterbovenhoek van de pagina om terug te keren naar het deelvenster Handelingen op de vorige pagina.<br /> Zie Fragmenten  <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">ervaren</a>.</li> 
+       <li>Als u een klant van de Plaatsen van de Experience Manager bent, tik het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Tik of klik op het gewenste fragment van de Ervaring en tik op <strong>Als u wilt terugkeren naar het deelvenster Handelingen op de vorige pagina, selecteert u </strong>rechtsboven op de pagina.<br /> Zie Fragmenten  <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">ervaren</a>.</li> 
       </ul> 
        <ul> 
        <li>Geef de breedte en hoogte van het ervaringsfragment op zoals dit in de video wordt weergegeven.</li>
-       </ul><strong>Opmerking</strong>: Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve video niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.</p></tr>&lt;&gt; 
+       </ul><strong>Opmerking</strong>: De gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. In plaats daarvan kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.</p></tr>&lt;&gt; 
       <tr> 
       <td>Een handeling bewerken die al is toegewezen aan een miniatuurafbeelding</td> 
       <td>Tik binnen een tijdlijnsegment op een miniatuurafbeelding met een kettingkoppeling rechts van het tekstlabel. De kettingkoppeling geeft aan dat er een handeling aan is toegewezen. Tik op het tabblad <strong>Handelingen</strong> om uw wijzigingen aan te brengen.</td> 
@@ -460,36 +459,36 @@ Om interactiviteit aan uw video toe te voegen:
       Tik **[!UICONTROL Merge Segment]** op de werkbalk.
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
-   Twee geselecteerde vijf tweede segmenten samenvoegen tot één tien tweede segment.
+   Twee geselecteerde segmenten van vijf seconden samenvoegen tot één segment van tien seconden.
 
    * **[!UICONTROL Split Segment]** - U kunt één segment opsplitsen in twee segmenten met gelijke tijdnotatie. Als er al productminiaturen aan het segment zijn toegewezen, worden de miniaturen gecombineerd in het linkersegment.
 
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
-   Een geselecteerd tien-secondensegment splitsen in twee segmenten van vijf seconden elk.
+   Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
 
-1. In de rechterbovenhoek van de pagina **[!UICONTROL Create Interactive Video]** wordt de naam weergegeven van de momenteel geselecteerde viewer-voorinstelling die bij de video wordt gebruikt. Tik op de naam om een andere voorinstelling voor de viewer te selecteren.
+1. In de rechterbovenhoek van de pagina **[!UICONTROL Create Interactive Video]** wordt de naam weergegeven van de momenteel geselecteerde viewer-voorinstelling die bij de video wordt gebruikt. Tik op de naam om een andere viewervoorinstelling te selecteren.
 
    Met de voorinstelling `Shoppable_Video_light` kunt u bijvoorbeeld de video afspelen met een wit weergavegebied naast de video. In het weergavegebied worden de aanklikbare miniatuurafbeeldingen tijdens het afspelen weergegeven. Met de voorinstelling `Shoppable_Video_dark` kunt u de video afspelen met een zwart weergavegebied naast de video.
 
-   Als u uw eigen voorinstelling voor de interactieve videoviewer hebt gemaakt, wordt deze ook weergegeven in de lijst met voorinstellingen waaruit u kunt kiezen.
+   Als u uw eigen voorinstelling voor de interactieve videoviewer hebt gemaakt, wordt deze weergegeven in de lijst met voorinstellingen waaruit u kunt kiezen.
 
    Tik **[!UICONTROL Save]** als u klaar bent.
 
    >[!NOTE]
-   Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. Het `.vtt`-bestand wordt opgeslagen in de map `_VTT` die zich in de hoofdmap van **[!UICONTROL Assets]** bevindt. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
+   Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. Het `.vtt`-bestand wordt opgeslagen in de map `_VTT` in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
 
-1. Publiceer de interactieve video. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk naar uw website gaat kopiëren en plakken.
+1. Publiceer de interactieve video. Met Publiceren maakt u de insluitcode of URL die u uiteindelijk kopieert en plakt naar uw website.
 
-   Als u interactiviteit met Snelle meningen toevoegde, gebruik slechts de ingebedcode; Als u interactiviteit hebt toegevoegd aan hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+   Als u interactiviteit hebt toegevoegd met Snelle weergaven, gebruikt u alleen de insluitcode. Als u interactiviteit hebt toegevoegd aan hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s met Experience Managers Sites.
 
    Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Als u een schokkende video met Quickviews wilt publiceren, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
+   Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
    Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website.](#integrating-an-interactive-video-with-your-website)
 
@@ -501,21 +500,21 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 Nadat u een video hebt geüpload, tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
-Als u een AEM Sites-klant bent, kunt u de interactieve video toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de interactieve video toevoegen door de Interactieve component van Media aan uw pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Als u een zelfstandige AEM Assets-klant bent, kunt u de interactieve video handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
+Als u een zelfstandige klant van de Middelen van de Experience Manager bent, kunt u de interactieve video aan uw website manueel toevoegen zoals die in deze sectie wordt beschreven.
 
 1. Kopieer de insluitcode of URL van de gepubliceerde interactieve video.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Als u interactiviteit met Snelle meningen toevoegde, gebruik slechts de ingebedcode; Als u interactiviteit hebt toegevoegd aan hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+Als u interactiviteit hebt toegevoegd met Snelle weergaven, gebruikt u alleen de insluitcode. Als u interactiviteit hebt toegevoegd aan hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s met Experience Managers Sites.
 
 1. Geef in de webpaginacode van het doel aan waar de statische video zich bevindt.
-1. Verwijder de statische video en vervang de code door de insluitcode of URL die u net als AEM Assets hebt gekopieerd.
-De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch past in het gebied dat eerder door de statische video werd ingenomen.
+1. Verwijder de statische video en vervang de code door de insluitcode of URL die u uit de Elementen van de Experience Manager hebt gekopieerd.
+De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch past in het gebied dat eerder werd ingenomen door de statische video.
 
 >[!NOTE]
 Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
-Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. ze zijn nog niet geïntegreerd met uw bestaande QuickView. In dat geval moet u nu de interactieve video integreren met bestaande QuickView op uw website.
+Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. deze zijn nog niet geïntegreerd met uw bestaande Snelle weergaven. In dat geval moet u de interactieve video integreren met bestaande Snelle weergaven op uw website.
 
 **Voorbeeld**
 
@@ -523,7 +522,7 @@ De demo-website als voorbeeld gebruiken:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
-U ziet dat het standaardvideo-insluitcode is:
+De insluitcode voor video is standaard:
 
 ```xml
 <style type="text/css">
@@ -550,40 +549,40 @@ U ziet dat het standaardvideo-insluitcode is:
 </script>
 ```
 
-Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het vervangen van deze code door de interactieve video-insluitcode uit AEM. U kunt het resultaat op de volgende URL zien. Hoewel er een interactieve video op de pagina wordt weergegeven, is deze nog niet geïntegreerd met de bestaande QuickView:
+Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het vervangen van deze code door de interactieve video-insluitcode uit de Experience Manager. U kunt het resultaat op de volgende URL zien. Hoewel er een interactieve video op de pagina wordt weergegeven, is deze nog niet geïntegreerd met de bestaande Snelle weergaven:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
+## Een interactieve video integreren met een bestaande Snelle weergave {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Deze taak is alleen van toepassing als u een zelfstandige AEM Assets-klant bent.
+Deze taak is slechts van toepassing als u een stand-alone klant van de Activa van de Experience Manager bent.
 
-De laatste stap in dit proces is uw interactieve video te integreren met een bestaande implementatie van de Snelle mening die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quickview-implementatie is uniek. Daarom is een specifieke aanpak nodig, die hoogstwaarschijnlijk de hulp van een front-end IT-persoon omvat.
+De laatste stap in dit proces is het integreren van uw interactieve video met een bestaande Quick view-implementatie die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke implementatie van de Snelle weergave is uniek. Daarom is een specifieke aanpak nodig waarbij een front-end IT-persoon wordt bijgestaan.
 
-De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een reeks onderling samenhangende acties die op de webpagina in de volgende volgorde plaatsvinden:
+De bestaande implementatie van de Snelle weergave vertegenwoordigt normaal gesproken een reeks onderling samenhangende acties die op de webpagina in de volgende volgorde plaatsvinden:
 
 1. Een gebruiker activeert een element in de gebruikersinterface van uw website.
-1. De front-end code verkrijgt een Quickview URL die op het gebruikersinterface element wordt gebaseerd dat in stap 1 werd teweeggebracht.
+1. De front-end code verkrijgt een Snelle mening URL die op het gebruikersinterface element wordt gebaseerd dat in stap 1 werd teweeggebracht.
 1. De front-end code verzendt een AJAX verzoek gebruikend URL die in stap 2 wordt verkregen.
-1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
-1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
-1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
+1. De achtergrondlogica retourneert de corresponderende gegevens of inhoud van de Snelle weergave terug naar de front-end code.
+1. De front-end code laadt de Snelle meningsgegevens of inhoud.
+1. Naar keuze, zet de voorste-eindcode de geladen Snelle meningsgegevens in een vertegenwoordiging van HTML om.
 1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm weer voor de eindgebruiker.
 
-Deze vraag kan onafhankelijke openbare API vraag niet vertegenwoordigen die door de Webpaginalogica van een willekeurige stap kan worden geroepen. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
+Deze aanroepen vertegenwoordigen geen onafhankelijke openbare API-aanroepen die door de webpaginalogica kunnen worden aangeroepen vanuit een willekeurige stap. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 
-Wanneer een gebruiker op een miniatuur in de interactieve video klikt en tegelijkertijd de interactieve video stap 1 en gedeeltelijk stap 2 vervangt, wordt deze gebruikersinteractie door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle miniatuurgegevens bevat die eerder aan AEM zijn toegevoegd.
+Wanneer een gebruiker op een miniatuur in de interactieve video tikt en tegelijkertijd de stap 1 en 2 van de interactieve video vervangt, wordt deze gebruikersinteractie door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle miniatuurgegevens bevat die eerder aan de Experience Manager zijn toegevoegd.
 
 In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 
 * Luistert naar een gebeurtenis die wordt uitgezonden door de interactieve video.
 * Hiermee maakt u een URL van de Snelle weergave op basis van de miniatuurgegevens.
-* Triggert het proces om de Snelle mening van het achtereind te laden en het terug te geven op het scherm voor vertoning.
+* Triggert het proces waarbij de Snelle weergave vanaf de achtergrond wordt geladen en op het scherm wordt weergegeven.
 
-Bovendien ondersteunt de Interactieve Video-viewer de modus Volledig scherm. De eindgebruiker activeert QuickView door op een miniatuur te klikken zonder het volledige scherm te verlaten. Om deze functionaliteit te bereiken, wijzigt u de front-end code zodat het modale dialoogvenster van de Snelle weergave aan de container van de kijker wordt vastgemaakt. Voeg geen BODY van het document of een ander Webpagina-element toe dat niet beschikbaar is wanneer de kijker op volledig-schermwijze is. De code die deze taak uitvoert, moet naar een andere viewer-callback luisteren die wordt verzonden nadat de viewer op de pagina is geladen.
+Bovendien ondersteunt de Interactieve Video-viewer de modus Volledig scherm. De eindgebruiker activeert Snelle weergaven door op een miniatuur te klikken zonder het volledige scherm te verlaten. Om deze functionaliteit te bereiken, wijzigt u de front-end code zodat het modale dialoogvenster Snelle weergave aan de container van de kijker is gekoppeld. Voeg geen BODY van het document of een ander Webpagina-element toe dat niet beschikbaar is wanneer de kijker op volledig-schermwijze is. De code die deze taak uitvoert, luistert naar een andere viewer-callback die wordt verzonden nadat de viewer op de pagina is geladen.
 
-De insluitcode die door AEM wordt geretourneerd, heeft al een gebruiksklare gebeurtenishandler. Er wordt opmerkingen toegevoegd zoals in het volgende gemarkeerde codefragment wordt getoond:
+De insluitcode die door Experience Manager wordt geretourneerd, heeft al een gebruiksklare gebeurtenishandler. Er wordt opmerkingen toegevoegd zoals in het volgende gemarkeerde codefragment wordt getoond:
 
 ```xml
 <style type="text/css">
@@ -632,9 +631,9 @@ De insluitcode die door AEM wordt geretourneerd, heeft al een gebruiksklare gebe
 
 Het is dus alleen nodig de commentaarmarkering van het gemarkeerde codefragment hierboven ongedaan te maken en de dummy-handlers te vervangen door code die specifiek is voor de specifieke webpagina.
 
-Er zijn twee standaardcallback managers aanwezig in de standaard insluitcode: `quickViewActivate` en `initComplete`. De handler `quickViewActivate` wordt geactiveerd wanneer op een miniatuur wordt geklikt in de viewer. Gebruik deze optie om de viewer te integreren met de activeringslogica van de Snelle weergave. De handler `initComplete` wordt slechts één keer geactiveerd wanneer de viewer op de pagina wordt geladen. Deze handler wordt gebruikt om de locatie van het dialoogvenster QuickView in het DOM van de webpagina aan te passen.
+Er zijn twee standaardcallback managers aanwezig in de standaard insluitcode: `quickViewActivate` en `initComplete`. De handler `quickViewActivate` wordt geactiveerd wanneer op een miniatuur wordt geklikt in de viewer. Gebruik deze optie om de viewer te integreren met de activeringslogica van de Snelle weergave. De handler `initComplete` wordt slechts één keer geactiveerd wanneer de viewer op de pagina wordt geladen. Deze handler wordt gebruikt om de locatie van het dialoogvenster Snelle weergave in het DOM van de webpagina aan te passen.
 
-Het proces om QuickView URL te construeren is tegengesteld aan het proces om duimnagelvariabelen te identificeren die vroeger in dit onderwerp worden behandeld. Met behulp van onze eerder geïdentificeerde URL-voorbeelden van QuickView kunt u zien hoe de URL van de Snelle weergave in elk geval wordt samengesteld:
+Het proces om de Snelle mening URL te construeren is tegengesteld aan het proces om duimnagelvariabelen te identificeren die vroeger in dit onderwerp worden behandeld. Aan de hand van de eerder geïdentificeerde URL-voorbeelden van de Snelle weergave kunt u in elk geval zien hoe de URL van de Snelle weergave wordt samengesteld:
 
 <table>
   <tbody>
@@ -665,9 +664,9 @@ Het proces om QuickView URL te construeren is tegengesteld aan het proces om dui
   </tbody>
 </table>
 
-De laatste stap om de Quickview URL teweeg te brengen en het paneel van de Snelle mening te activeren vereist hoogstwaarschijnlijk de hulp van een front-end persoon van IT van uw afdeling van IT. Zij hebben de kennis om het best te weten hoe te om de implementatie van de Snelle mening van de juiste stap nauwkeurig teweeg te brengen, die een klaar-aan-gebruiksKickview URL hebben.
+De laatste stap om de URL van de Snelle weergave te activeren en het deelvenster Snelle weergave te activeren, vereist hoogstwaarschijnlijk de hulp van een front-end IT-persoon van uw IT-afdeling. Ze hebben de kennis om te weten hoe u de implementatie van de Snelle weergave nauwkeurig vanuit de juiste stap kunt activeren en beschikken over een gebruiksklare URL voor de Snelle weergave.
 
-U kunt zien hoe deze stappen worden toegepast op de demo-website om een interactieve video volledig te integreren met de Quickview-code. Eerder in dit onderwerp, werd de structuur van Snelle mening URL geïdentificeerd als het volgende:
+U kunt zien hoe deze stappen worden toegepast op de demo-website om een interactieve video volledig te integreren met de code van de Snelle weergave. Eerder in dit onderwerp werd de structuur van de URL van de Snelle weergave als volgt geïdentificeerd:
 
 ```xml
 /datafeed/$CategoryId$-$SKU$.json
@@ -681,13 +680,13 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-De demowebsite activeert het dialoogvenster Snelle weergave met een eenvoudige functieaanroep `loadQuickView()`. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. De laatste stap die nodig is om de interactieve video te integreren, is dus het toevoegen van de volgende coderegel aan de handler `quickViewActivate`:
+De demowebsite activeert het dialoogvenster Snelle weergave met een eenvoudige functieaanroep `loadQuickView()`. Deze functie heeft slechts één argument, namelijk de URL van de gegevens in de Snelle weergave. De laatste stap om de interactieve video te integreren is dus het toevoegen van de volgende coderegel aan de `quickViewActivate` manager:
 
 ```xml
 loadQuickView(quickViewUrl);
 ```
 
-Tot slot moet u ervoor zorgen dat het dialoogvenster QuickView is gekoppeld aan het containerelement van de viewer. De standaard insluitcode bevat voorbeeldstappen om deze functionaliteit te bereiken. Als u een verwijzing naar het containerelement van de viewer wilt verkrijgen, kunt u de volgende coderegels gebruiken:
+Tot slot moet het dialoogvenster Snelle weergave zijn gekoppeld aan het containerelement van de viewer. De standaard insluitcode bevat voorbeeldstappen om deze functionaliteit te bereiken. Als u een verwijzing naar het containerelement van de viewer wilt verkrijgen, kunt u de volgende coderegels gebruiken:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -696,9 +695,9 @@ var inner_container = document.getElementById(sdkContainerId);
 
 Hierbij is `inner_container` een verwijzing naar een `DIV`-element dat door de viewer wordt beheerd. U wilt dat het dialoogvenster een onderliggend item is van dat `DIV`.
 
-De stappen om het element van het modale dialoogvenster daadwerkelijk te vinden en aan de bovenstaande container te koppelen, zijn hoofdletterspecifiek. Opnieuw, kunt u de hulp van uw front-end ontwikkelaar zoeken die met uw implementatie vertrouwd is Quickview die nodig is.
+De stappen om het element van het modale dialoogvenster daadwerkelijk te vinden en aan de bovenstaande container te koppelen, zijn specifiek voor hoofdletters en kleine letters. Ook hier kunt u de hulp inroepen van uw front-end ontwikkelaar die bekend is met uw Quick view-implementatie die nodig is.
 
-In het geval van de voorbeeldwebsite wordt het modale dialoogvenster van de Snelle weergave geïmplementeerd als een `DIV`, waarbij de modale id van de Snelle weergave rechtstreeks aan het document wordt gekoppeld `BODY`. De code waarmee dat dialoogvenster naar de container van de viewer wordt verplaatst, is daarom even eenvoudig als de volgende code:
+Voor de voorbeeldwebsite wordt het modale dialoogvenster van de Snelle weergave geïmplementeerd als een `DIV`, waarbij de snelweergave-modale id rechtstreeks aan het document is gekoppeld `BODY`. De code waarmee dat dialoogvenster naar de container van de viewer wordt verplaatst, is daarom even eenvoudig als de volgende code:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -753,7 +752,7 @@ De laatste demo-website met de volledig geïntegreerde interactieve video ziet e
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+## Snelle weergaven gebruiken om aangepaste pop-upvensters te maken {#using-quickviews-to-create-custom-pop-ups}
 
-Zie [Quickviews gebruiken om aangepaste pop-ups te maken](/help/assets/dynamic-media/custom-pop-ups.md).
+Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
