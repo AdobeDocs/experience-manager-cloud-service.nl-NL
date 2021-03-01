@@ -4,9 +4,9 @@ description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige 
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 >
 Voordat u deze functie gebruikt, wordt u aangeraden dit met uw ontwikkelingsteam te bespreken om de beste manier te definiëren om deze voor uw project te gebruiken.
 
+>[!NOTE]
+>
+>De functies die in dit document worden beschreven, zullen naar verwachting beschikbaar worden gesteld bij de [release van maart 2021 van AEM als Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+
 ## Inleiding {#introduction}
 
 [Met progressieve webapps (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) kunnen websites op een overweldigende manier op een app lijken, omdat ze lokaal op de computer van een gebruiker kunnen worden opgeslagen en offline toegankelijk zijn. Een gebruiker kan onderweg door een site bladeren, zelfs als hij een internetverbinding verliest. PWA maken naadloze ervaringen mogelijk, zelfs als het netwerk verloren of instabiel is.
@@ -36,7 +40,7 @@ Voordat u deze functie gebruikt, wordt u aangeraden dit met uw ontwikkelingsteam
 In plaats van dat de site opnieuw moet worden gecodeerd, kan een auteur van de inhoud PWA-eigenschappen configureren als een extra tabblad in de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) van een site.
 
 * Wanneer deze configuratie wordt opgeslagen of gepubliceerd, wordt een gebeurtenishandler geactiveerd die de [manifestbestanden](https://developer.mozilla.org/en-US/docs/Web/Manifest) en [serviceworker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) schrijft die PWA-functies op de site inschakelen.
-* De manifest en de dienstarbeider worden opgeslagen in [context bewuste configuratie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) van toepassing op de plaats. Er worden ook segmenttoewijzingen bijgehouden om ervoor te zorgen dat de serviceworker wordt aangeboden vanuit de hoofdmap van de toepassing, zodat inhoud die buiten de app valt, kan worden vernieuwd en offline mogelijkheden worden toegestaan.
+* Er worden ook segmenttoewijzingen bijgehouden om ervoor te zorgen dat de serviceworker wordt aangeboden vanuit de hoofdmap van de toepassing, zodat inhoud die buiten de app valt, kan worden vernieuwd en offline mogelijkheden worden toegestaan.
 
 Met PWA beschikt de gebruiker over een lokale kopie van de site, zodat hij zelfs zonder internetverbinding een app-achtige ervaring heeft.
 
@@ -48,22 +52,28 @@ Met PWA beschikt de gebruiker over een lokale kopie van de site, zodat hij zelfs
 
 Als u PWA-functies voor uw site wilt gebruiken, hebt u twee vereisten voor uw projectomgeving:
 
-1. [Pas de ](#adjust-components) componenten aan om deze functie in te schakelen
+1. [Core-](#adjust-components) componenten gebruiken om deze functie te gebruiken
 1. [Pas de ](#adjust-dispatcher) verzendregels aan om de vereiste bestanden beschikbaar te maken
 
 Dit zijn technische stappen die de auteur met het ontwikkelingsteam zal moeten coördineren. Deze stappen zijn slechts eenmaal per site vereist.
 
-### Uw componenten {#adjust-components} aanpassen
+### Core Components {#adjust-components} gebruiken
 
-Uw componenten moeten [manifestdossiers](https://developer.mozilla.org/en-US/docs/Web/Manifest) en [de dienstarbeider,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) omvatten die de eigenschappen van PWA steunen.
+Core Components versie 2.15.0 en hoger biedt volledige ondersteuning voor de PWA-functies van AEM sites. Aangezien AEMaaCS altijd de nieuwste versie van de Core Components bevat, kunt u de functies van PWA offline benutten. Uw AEMaaCS-project voldoet automatisch aan deze vereiste.
 
-Hiervoor moet de ontwikkelaar de volgende koppeling toevoegen aan het `customheaderlibs.html`-bestand van uw paginacomponent.
+>[!NOTE]
+>
+>Adobe adviseert niet gebruikend de eigenschappen van de PWA op douanecomponenten of componenten te gebruiken niet [uitgebreid van de ertscomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+<!--
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+
+ To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
 ```
 
-De ontwikkelaar moet ook de volgende koppeling toevoegen aan het `customfooterlibs.html`-bestand van uw paginacomponent.
+The developer will also need to add the following link to the `customfooterlibs.html` file of your page component.
 
 ```xml
 <script>
@@ -77,10 +87,7 @@ De ontwikkelaar moet ook de volgende koppeling toevoegen aan het `customfooterli
         }
 </script>
 ```
-
->[!NOTE]
->
->In toekomstige versies van [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden deze functies automatisch opgenomen. Als u echter aangepaste componenten gebruikt in plaats van de Core Components, zijn deze aanpassingen altijd vereist.
+-->
 
 ### Uw Dispatcher {#adjust-dispatcher} aanpassen
 
@@ -93,9 +100,11 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
->[!NOTE]
->
->Toekomstige versies van [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#developing) zullen deze configuratie omvatten.
+Afhankelijk van uw project kunt u verschillende soorten uitbreidingen aan de herschrijfregels willen omvatten. De extensie `webmanifest` kan handig zijn om in de herschrijfvoorwaarden op te nemen wanneer u een regel invoert die verzoeken aan `/content/<projectName>` verbergt en omleidt.
+
+```text
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
+```
 
 ## PWA inschakelen voor uw site {#enabling-pwa-for-your-site}
 
@@ -133,8 +142,8 @@ Uw site is nu geconfigureerd en u kunt deze [installeren als een lokale app.](#u
 Nu u [uw plaats hebt gevormd om PWA te steunen, ](#enabling-pwa-for-your-site) kunt u het voor zich ervaren.
 
 1. Open de site in een [ondersteunde browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
-1. Er verschijnt een pictogram `+` op de adresbalk van de browser om aan te geven dat de site kan worden geïnstalleerd als een lokale app.
-   * Afhankelijk van de browser wordt mogelijk ook een melding (zoals een banner of een dialoogvenster) weergegeven waarin wordt aangegeven dat het mogelijk is om de toepassing als een lokale app te installeren.
+1. Er verschijnt een nieuw pictogram op de adresbalk van de browser om aan te geven dat de site kan worden geïnstalleerd als een lokale app.
+   * Afhankelijk van de browser kan het pictogram variëren en kan de browser ook een melding (zoals een banner of een dialoogvenster) weergeven die aangeeft dat het mogelijk is om de toepassing als een lokale app te installeren.
 1. Installeer de toepassing.
 1. De app wordt geïnstalleerd op het beginscherm van uw apparaat.
 1. Open de app, blader een beetje, en zie dat de pagina&#39;s offline beschikbaar zijn.
@@ -195,9 +204,32 @@ Deze instellingen stellen delen van deze site offline beschikbaar en lokaal besc
 >
 >Uw ontwikkelingsteam heeft waarschijnlijk waardevolle input betreffende hoe uw off-line configuratie zou moeten opstelling.
 
-## Beperkingen {#limitations}
+## Beperkingen en Recommendations {#limitations-recommendations}
 
 Niet alle PWA-functies zijn beschikbaar voor AEM Sites. Dit zijn een paar opmerkelijke beperkingen.
 
 * Een gebruiker moet minstens één keer door de pagina bladeren voordat deze offline in de cache wordt geplaatst.
 * Pagina&#39;s worden niet automatisch gesynchroniseerd of bijgewerkt als de gebruiker de app niet gebruikt.
+
+Adobe doet ook de volgende aanbevelingen wanneer u PWA uitvoert.
+
+### Minimaliseer het aantal middelen aan pre-geheime voorgeheugen. {#minimize-precache}
+
+Adobe raadt u aan het aantal pagina&#39;s te beperken tot voorcaching.
+
+* Bibliotheken insluiten om het aantal items te verminderen dat moet worden beheerd bij het in cache plaatsen.
+* Beperk het aantal afbeeldingsvariaties tot het aantal vooraf in de cache plaatsen.
+
+### Schakel PWA in nadat de projectscripts en -opmaakmodellen zijn gestabiliseerd. {#pwa-stabilized}
+
+Clientbibliotheken worden geleverd met toevoeging van een cacheselectiekader, waarbij het volgende patroon `lc-<checksumHash>-lc` wordt gevolgd. Elke keer dat een van de bestanden (en afhankelijkheden) waaruit een bibliotheekwijziging bestaat, wordt deze kiezer gewijzigd. Als u een cliënt-bibliotheek vermeld die door de dienst-arbeider moet worden pre-caching en u naar een nieuwe versie wilt verwijzen, wint u manueel de ingang terug en werkt bij. Dientengevolge, adviseren wij u om uw plaats te vormen om een PWA te zijn nadat de projectmanuscripten en stylesheets worden gestabiliseerd.
+
+### Beperk het aantal afbeeldingsvariaties tot een minimum. {#minimize-variations}
+
+De afbeeldingscomponent van de AEM Core Components bepaalt een van de voorste uiteinden van de beste uitvoering die moet worden opgehaald. Dit mechanisme bevat ook een tijdstempel die overeenkomt met de laatste gewijzigde tijd van die bron. Dit mechanisme compliceert de configuratie van PWA pre-geheime voorgeheugen.
+
+Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker alle wegvariaties vermelden die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. Het wordt ten zeerste aanbevolen het aantal van deze variaties te beperken tot maximaal drie - klein, middelgroot, groot. U kunt dat doen door de inhoud-beleid dialoog van [de Component van het Beeld.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+
+Als niet zorgvuldig wordt gevormd, kunnen het geheugen en het netwerkgebruik de prestaties van uw PWA ernstig beïnvloeden. Ook als u bijvoorbeeld 50 afbeeldingen wilt vooraf instellen en 3 breedten per afbeelding wilt hebben, moet de gebruiker die de site beheert een lijst met maximaal 150 items bijhouden in de sectie PWA pre-cache van de pagina-eigenschappen.
+
+Adobe raadt u ook aan uw site te configureren als een PWA nadat het gebruik van afbeeldingen in het project is gestabiliseerd.
