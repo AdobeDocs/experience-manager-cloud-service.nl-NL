@@ -2,9 +2,9 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2152'
 ht-degree: 12%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
-## Uw sitebeheren {#managing-your-site}
+## Uw site {#managing-your-site} beheren
 
 Met de **Sites**-console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde resource), navigatiepaden en, indien geselecteerd, secundaire sporen (bijvoorbeeld tijdlijn en verwijzingen).
 
@@ -191,7 +191,7 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
    ![Knop Inhoudsstructuur bewerken](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Op een pagina die deel uitmaakt van een livecopy, waar componenten van een andere pagina worden overgeërfd, zijn minder opties beschikbaar, waaronder de overervingsopties. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Een pagina die deel uitmaakt van een [livecopy](/help/sites-cloud/administering/msm/overview.md), waar componenten van een andere pagina worden overgeërfd.
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 * **Binnenkomende koppelingen**, biedt een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot  **** Editone van deze pagina&#39;s wanneer u een specifieke koppeling selecteert
 * Instanties van geleende en geleende inhoud die de **Referentie** component gebruiken, van hier kunt u aan de verwijzende/referenced pagina navigeren
 * [Opstarten](/help/sites-cloud/authoring/launches/overview.md), biedt toegang tot gerelateerde opstarties
-* Met Actieve kopieën worden de paden van alle live kopieën weergegeven die zijn gebaseerd op de geselecteerde bron. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blauwdruk bevat details en diverse handelingen <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Taalkopieën bevatten details en verschillende handelingen <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [Met Live ](/help/sites-cloud/administering/msm/overview.md) kopieën worden de paden van alle live kopieën weergegeven die zijn gebaseerd op de geselecteerde bron.
+* [Blauwdruk](/help/sites-cloud/administering/msm/best-practices.md), details en diverse handelingen
+* [Taalkopieën](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), details en diverse handelingen
 
 ## Gebeurtenissen - tijdlijn {#events-timeline}
 
@@ -248,7 +248,7 @@ Met het pictogram Pagina-informatie (equalizer) opent u een menu dat ook informa
 ![Pagina-informatie, optie](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Eigenschappen openen](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Uitrolpagina <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Uitrolpagina](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Pagina vergrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Pagina publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
 >* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
+
 >
 
 
