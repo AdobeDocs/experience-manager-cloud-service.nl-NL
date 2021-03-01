@@ -2,7 +2,7 @@
 title: Lanceringen bewerken
 description: 'Nadat u een opstartafbeelding voor de pagina (of set pagina''s) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(''s). '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 18%
@@ -23,9 +23,9 @@ Als u de pagina bewerkt, ziet u een indicatie in de bovenste werkbalk, samen met
 
 ![Starten vanuit paginaeditor verlaten en navigeren](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
-### Starten van pagina&#39;s bewerken die zijn onderworpen aan een actieve kopie {#editing-launch-pages-subject-to-a-live-copy}
+### Starten van pagina&#39;s bewerken waarop een actieve kopie {#editing-launch-pages-subject-to-a-live-copy} van toepassing is
 
-Als uw lancering op een levende kopie gebaseerd is, zult u: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+Als uw lancering op [Levende Kopie](/help/sites-cloud/administering/msm/overview.md) gebaseerd is, zult u:
 
 * Zie slotsymbolen (kleine hanglocks) wanneer u een component (inhoud en/of eigenschappen) uitgeeft.
 * Zie het tabblad **Live kopie** in **Pagina-eigenschappen**
@@ -37,7 +37,7 @@ U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een live standaard
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
 * **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
 
-Zie Inhoud van Live kopie wijzigen voor meer informatie. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+Zie [Inhoud van actieve kopie wijzigen](/help/sites-cloud/administering/msm/creating-live-copies.md) voor meer informatie.
 
 ## Een startpagina vergelijken met de bijbehorende bronpagina {#comparing-a-launch-page-to-its-source-page}
 
