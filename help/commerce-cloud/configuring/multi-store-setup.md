@@ -6,13 +6,13 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Installatie van meerdere winkels {#multi-store}
 
-De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Magento-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
+De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
 In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Magento Store Views met Adobe Experience Manager Sites.
 
@@ -59,4 +59,4 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 * [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core-componenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Beheer van meerdere sites gebruiken](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](/help/sites-cloud/administering/msm/overview.md)
