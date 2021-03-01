@@ -2,7 +2,7 @@
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 12%
@@ -35,10 +35,7 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
->&amp;ast; Deze werkstromen zijn niet begonnen van **Workflow** tegel in Projecten. Zie Taalkopieën maken voor elementen.
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast; Deze werkstromen zijn niet begonnen van **Workflow** tegel in Projecten. Zie [Taalkopieën maken voor elementen.](/help/sites-cloud/administering/translation/managing-projects.md)
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -48,7 +45,7 @@ Raadpleeg de volgende secties voor meer informatie over het werken met workflows
 
 * [Deelnemen aan workflows](/help/sites-cloud/authoring/workflows/participating.md)
 * [Workflows toepassen op pagina&#39;s](/help/sites-cloud/authoring/workflows/applying.md)
-* Workflows configureren <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
+* [Workflows configureren](/help/sites-cloud/administering/workflows-administering.md)
 
 Deze sectie beschrijft de werkschema&#39;s beschikbaar voor Projecten.
 
