@@ -2,7 +2,7 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 5%
@@ -130,10 +130,7 @@ Wanneer u een pagina **Naam** wanneer het creëren van een nieuwe pagina levert,
 >
 >Gebruik geen code van twee letters, zoals gedefinieerd door ISO-639-1, als paginanaam, tenzij dit een hoofdtaalcode is.
 >
->Zie Inhoud voorbereiden voor vertaling voor meer informatie.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Zie [Inhoud voorbereiden voor vertaling](/help/sites-cloud/administering/translation/preparation.md) voor meer informatie.
 
 ### Sjablonen {#templates}
 
@@ -371,7 +368,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
 
-Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
+Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker het ontwerpen in de gebruikersinterface kan voortzetten zonder dat dit wordt belemmerd door de actie Verplaatsen of Naam wijzigen van de pagina.
 
 * Wanneer het klikken **Beweging** in de laatste stap hierboven, controleert AEM de gevormde grens.
 * Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
