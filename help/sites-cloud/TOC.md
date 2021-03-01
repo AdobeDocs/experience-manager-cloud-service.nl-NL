@@ -5,10 +5,10 @@ user-guide-title: Authoring van content in AEM as a Cloud Service
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 translation-type: tm+mt
-source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
+source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 88%
+source-wordcount: '307'
+ht-degree: 69%
 
 ---
 
@@ -81,6 +81,25 @@ ht-degree: 88%
       + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Beheren {#administering}
    + [Workflows beheren](administering/workflows-administering.md)
+   + Inhoud {#reusing-content} opnieuw gebruiken
+      + [MSM en vertaling](administering/msm-and-translation.md)
+      + Beheer van meerdere sites {#msm}
+         + [Overzicht van MSM en Live Copy](administering/msm/overview.md)
+         + [Synchronisatie van actieve kopie configureren](administering/msm/live-copy-sync-config.md)
+         + [Actieve kopieën maken en synchroniseren](administering/msm/creating-live-copies.md)
+         + [Console voor live kopiëren](administering/msm/live-copy-overview.md)
+         + [Conflicten bij rollout](administering/msm/rollout-conflicts.md)
+         + [Aanbevolen MSM-procedures](administering/msm/best-practices.md)
+         + [Problemen oplossen en veelgestelde vragen](administering/msm/troubleshooting.md)
+      + Vertaling {#translation}
+         + [Inhoud vertalen voor meertalige sites](administering/translation/overview.md)
+         + [Inhoud voorbereiden voor vertaling](administering/translation/preparation.md)
+         + [Vertaalprojecten beheren](administering/translation/managing-projects.md)
+         + [Wizard Taalkopie](administering/translation/wizard.md)
+         + [Te vertalen inhoud identificeren](administering/translation/rules.md)
+         + [Het framework voor vertaalintegratie configureren](administering/translation/integration-framework.md)
+         + [Verbinding maken met Microsoft Translator](administering/translation/connect-ms-translator.md)
+         + [Aanbevolen werkwijzen voor vertaling](administering/translation/best-practices.md)
 + Integreren met AEM as a Cloud Service {#integrations}
    + [Integreren met Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integreren met Adobe Target](integrating/integrating-adobe-target.md)
