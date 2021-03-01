@@ -2,7 +2,7 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -29,9 +29,9 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 De zijdelingse scheiding kan het volgende vergelijken:
 
 * [Versies](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
-* Actieve kopieën - Live kopie met blauwdruk <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Actieve kopieën](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live kopie met vervaging
 * [Starten](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
-* Taalkopieën - Een pagina voor en na (re-)vertaling <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Taalkopieën](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)  - Een pagina voor en na (her)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
@@ -91,7 +91,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
 
 >[!NOTE]
 >
