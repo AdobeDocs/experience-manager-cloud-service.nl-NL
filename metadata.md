@@ -1,8 +1,9 @@
 ---
 product: adobe experience manager
+description: Dit zijn de metagegevens die vereist zijn voor AEMaaCS-documentatiepagina's
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.nl-NL
 index: y
-type: Documentation
+type: Documentatie
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: Aan de slag
@@ -10,9 +11,9 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '120'
 ht-degree: 8%
 
 ---
@@ -51,4 +52,4 @@ Artikel
 
 * `title`
 * `description`
-* `contentOwner` (alleen voor kernactiva onder `/help/assets`)
+* `contentOwner` (alleen voor kernactiva onder  `/help/assets`)
