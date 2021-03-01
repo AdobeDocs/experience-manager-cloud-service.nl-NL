@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1909'
 ht-degree: 5%
 
 ---
@@ -192,11 +192,10 @@ De paginaminiatuur configureren
 
 ### Blauwdruk {#blueprint}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. Blauwdrukken dienen als basis voor live kopieën maken deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Huidige actieve kopieën**  - Hiermee geeft u pagina&#39;s weer die op deze blauwdrukpagina zijn gebaseerd (dat wil zeggen, Live kopieën van deze pagina zijn)
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **De Vormen**  van de rollout - controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar zullen worden verspreid
 
 ### Live kopie {#live-copy}
