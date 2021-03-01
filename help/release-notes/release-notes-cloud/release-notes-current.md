@@ -2,17 +2,24 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
+source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als een Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] als Cloud Service weergegeven.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
+
+>[!NOTE]
+>Vanuit deze locatie kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+
+>[!NOTE]
+>
+>Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
 
 ## Releasedatum {#release-date}
 
