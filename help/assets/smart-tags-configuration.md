@@ -3,17 +3,17 @@ title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van assets en de snelheid van content te verbeteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 95%
+source-wordcount: '885'
+ht-degree: 83%
 
 ---
 
 
-# Experience Manager configureren voor slimme tags voor assets {#configure-aem-for-smart-tagging}
+# [!DNL Experience Manager] configureren voor slimme labeling van elementen {#configure-aem-for-smart-tagging}
 
-Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags. Adobe biedt slimme tags die gebruikmaken van AI en machine-learning algoritmen om afbeeldingen te &#39;trainen&#39;. De Smart Tags-functie gebruikt een AI-framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om de algoritmen voor beeldherkenning te &#39;trainen&#39; op basis van uw tagstructuur en bedrijfstaxonomie.
+Wanneer assets zijn getagd op basis van een specifieke taxonomie, kunt u ze eenvoudig herkennen en ophalen door te zoeken op basis van tags. Adobe biedt slimme tags die gebruikmaken van algoritmen voor kunstmatige intelligentie en machinaal leren om afbeeldingen op te leiden. De Smart Tags-functie gebruikt een AI-framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om de algoritmen voor beeldherkenning te &#39;trainen&#39; op basis van uw tagstructuur en bedrijfstaxonomie.
 
 De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangeschaft [!DNL Experience Manager]. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar Adobe Developer Console. De beheerder opent de koppeling om de Smart Tags-functie met behulp van Adobe Developer Console te integreren met [!DNL Experience Manager].
 
@@ -25,7 +25,7 @@ De Smart Tags-functie voor slimme tags kan als invoegtoepassing worden aangescha
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] implementaties die na de release van  [augustus 2020 zijn gemaakt, ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) zijn  [!DNL Adobe Developer Console] standaard geïntegreerd. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Bij de oudere implementaties kunnen beheerders de volgende stappen volgen om de integratie te configureren.
+>Als uw [!DNL Experience Manager Assets]-implementaties zijn gemaakt na [August 2020 release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), is [!DNL Adobe Developer Console] standaard geïntegreerd. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Voor de oudere plaatsingen, kunnen de beheerders de integratie manueel vormen gebruikend de volgende instructies.
 
 ## Integreren met Adobe Developer Console {#aio-integration}
 
@@ -56,7 +56,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
 1. Klik op **[!UICONTROL Download Public Key]**.
 
-   ![Openbare sleutel maken voor de Smart Tags-functie van Experience Manager](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Slimme tags maken openbare sleutel](assets/aem_smarttags-config1.png)
 
 ### Een integratie maken {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Om de Smart Tags-functie te gebruiken moet u een integratie in Adobe Developer C
 
 1. Open [https://console.adobe.io](https://console.adobe.io/) in uw browser. Selecteer het gewenste account en verifieer dat de bijbehorende organisatierol is ingesteld op systeembeheerder.
 1. Maak een project een geef het de gewenste naam. Klik op **[!UICONTROL Add API]**.
-1. Ga naar de pagina **[!UICONTROL Add an API]** en selecteer achtereenvolgens **[!UICONTROL Experience Cloud]** en **[!UICONTROL Smart Content]**. Klik op **[!UICONTROL Next]**.
+1. Selecteer op de pagina **[!UICONTROL Add an API]** **[!UICONTROL Experience Cloud]** en selecteer **[!UICONTROL Smart Content]**. Klik op **[!UICONTROL Next]**.
 1. Selecteer **[!UICONTROL Upload your public key]**. Geef het certificaatbestand op dat u hebt gedownload van [!DNL Experience Manager]. Er wordt een [!UICONTROL Public key(s) uploaded successfully]-bericht weergegeven. Klik op **[!UICONTROL Next]**.
-1. De pagina [!UICONTROL Create a new Service Account (JWT) credential] toont de openbare sleutel voor het serviceaccount dat u zojuist hebt geconfigureerd. Klik op **[!UICONTROL Next]**.
-1. Ga naar de pagina **[!UICONTROL Select product profiles]** en selecteer **[!UICONTROL Smart Content Services]**. Klik op **[!UICONTROL Save configured API]**. De pagina die verschijnt biedt meer informatie over de configuratie. Houd deze pagina open om de waarden te kopiëren en toe te voegen in Experience Manager voor de verdere configuratie van Smart Tags in [!DNL Experience Manager].
+1. [!UICONTROL Create a new Service Account (JWT) credential] De pagina toont de openbare sleutel voor de de dienstrekening. Klik op **[!UICONTROL Next]**.
+1. Ga naar de pagina **[!UICONTROL Select product profiles]** en selecteer **[!UICONTROL Smart Content Services]**. Klik op **[!UICONTROL Save configured API]**. De pagina die verschijnt biedt meer informatie over de configuratie. Laat deze pagina open om deze waarden in [!DNL Experience Manager] te kopiëren en toe te voegen wanneer het verder vormen van Slimme Markeringen in [!DNL Experience Manager].
 
    ![Op het tabblad Overview kunt u de informatie bekijken die is opgegeven voor de integratie.](assets/integration_details.png)
 
@@ -94,16 +94,16 @@ Nadat u de configuratie hebt voltooid, volgt u deze stappen om de configuratie t
 
 ### Opnieuw configureren als een certificaat verloopt {#certrenew}
 
-Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderstaande stappen uit om een nieuw certificaat toe te voegen. U kunt een verlopen certificaat niet verlengen.
+Wanneer het certificaat verloopt, wordt het niet meer vertrouwd. Voer de volgende stappen uit om een certificaat toe te voegen. U kunt een verlopen certificaat niet verlengen.
 
 1. Meld u als beheerder aan bij uw [!DNL Experience Manager]-implementatie. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
-1. Zoek en klik op **[!UICONTROL dam-update-service]**-gebruiker. Klik op het tabblad **[!UICONTROL Keystore]**.
+1. Zoek en klik op **[!UICONTROL dam-update-service]**-gebruiker. Klik op het tabblad **[!UICONTROL Keystore]**. 
 1. Verwijder het bestaande **[!UICONTROL similaritysearch]**-sleutelarchief met het verlopen certificaat. Klik op **[!UICONTROL Save & Close]**.
 
-   ![Bestaande vermelding voor zoeken op basis van overeenkomst in sleutelarchief verwijderen om een nieuw beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Bestaande zoekfunctie voor gelijkenis verwijderen in Keystore om een nieuw beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Afbeelding: Verwijder de bestaande `similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
+   *Afbeelding: Verwijder het bestaande  `similaritysearch` item in het sleutelarchief om een beveiligingscertificaat toe te voegen.*
 
 1. Ga in de [!DNL Experience Manager]-gebruikersinterface naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open de beschikbare Smart Tags-configuratie. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate]**.
 
@@ -126,7 +126,7 @@ Wanneer een certificaat verloopt, wordt het niet meer vertrouwd. Voer de onderst
 
 1. Ga naar het tabblad **[!UICONTROL Arguments]** en schakel de optie **[!UICONTROL Ignore Errors]** in als u wilt dat de workflow fouten negeert bij het voorspellen van tags. Als u assets tijdens het uploaden wilt voorzien van een tag (ongeacht of slimme tags zijn ingeschakeld voor mappen), moet u de optie **[!UICONTROL Ignore Smart Tag Flag]** inschakelen.
 
-1. Klik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op. Klik op **[!UICONTROL Sync]**.
+1. Klik op **[!UICONTROL OK]**. De processtap wordt gesloten. Sla de workflow op. Klik op **[!UICONTROL Sync]**.
 
 >[!MORELIKETHIS]
 >
