@@ -2,10 +2,10 @@
 title: URL's koppelen aan uw webapplicatie
 description: URL's koppelen aan uw webtoepassing in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 10%
+source-wordcount: '1201'
+ht-degree: 9%
 
 ---
 
@@ -62,7 +62,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    * Tik **[!UICONTROL Renditions]** als u een afbeelding hebt geselecteerd in de vervolgkeuzelijst.
 
-      Tik onder de kop **[!UICONTROL Dynamic]** op de naam van een voorinstelling om de vertoning ervan in het rechterframe weer te geven. Mogelijk moet u door de lijst met uitvoeringen bladeren om de dynamische kop te zien.
+      Tik onder de kop **[!UICONTROL Dynamic]** op de naam van een voorinstelling om de vertoning ervan in het rechterframe weer te geven. Schuif zo nodig in de lijst Uitvoeringen om de dynamische kop weer te geven.
 
       Tik op **[!UICONTROL URL]** onder aan de linkerspoorstaaf.
 
@@ -76,13 +76,13 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Selecteer en kopieer de tekst naar uw webbrowser om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
+1. Als u een voorvertoning van het element wilt weergeven of aan uw pagina met webinhoud wilt toevoegen, selecteert u de tekst en kopieert u deze naar uw webbrowser.
 
    Tik op **[!UICONTROL X]** of **[!UICONTROL Close]** om het URL-venster te sluiten.
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
+Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere elementen dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
 
 * 3D-bestanden
 * Geanimeerde GIF
@@ -120,7 +120,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 
-1. Kopieer op de pagina **[!UICONTROL Dynamic Media Cloud Settings]** onder **[!UICONTROL Video Service URL]** het volledige URL-pad omlaag. U hebt het gekopieerde URL-pad later nodig in de stappen.
+1. Kopieer op de pagina **[!UICONTROL Dynamic Media Cloud Settings]** onder **[!UICONTROL Video Service URL]** het volledige URL-pad omlaag. U hebt het gekopieerde pad naar de URL later nodig in de stappen.
 
    Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
 
@@ -141,7 +141,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    (Bovenstaand pad dient slechts ter illustratie; het is niet het daadwerkelijke pad dat u kopieert.)
 
-1. Plaats de gekopieerde gegevens in de volgende volgorde om een volledig URL-pad te vormen:
+1. Als u een volledig URL-pad wilt maken, rangschikt u de gekopieerde gegevens in de volgende volgorde:
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,7 +149,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   Dit is de volledige video-URL voor een gepubliceerde video-uitvoering.
+   Dit pad is de volledige video-URL voor een gepubliceerde video-uitvoering.
 
 ## Een video-URL ophalen voor adaptieve streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
@@ -164,7 +164,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    (Bovenstaand pad dient slechts ter illustratie; het is niet het daadwerkelijke pad dat u kopieert.)
 
-   * Kopieer onder **[!UICONTROL Registration ID]** de naam van de klant die u in het laatste gedeelte van de id vindt. U zult de gekopieerde klantnaam later in deze stappen nodig hebben.
+   * Kopieer onder **[!UICONTROL Registration ID]** de naam van de klant die u in het laatste gedeelte van de id vindt. U hebt de gekopieerde klantennaam later in deze stappen nodig.
 
       Als de registratie-id bijvoorbeeld `87654321|demoCo` was, zou de naam die u kopieert `demoCo` zijn.
 
@@ -188,7 +188,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
     </tbody>
    </table>
 
-1. Kopieer het volledige pad naar video-elementen in AEM, zoals verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
+1. Kopieer het volledige pad naar video-elementen in AEM, zoals verwerkt door Dynamic Media. U hebt dit gekopieerde pad voor video-elementen later in deze stappen nodig.
 
    Bijvoorbeeld:
 
