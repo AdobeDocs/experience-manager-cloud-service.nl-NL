@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
+source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -28,27 +28,9 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
-### Beheer van inhoud zonder hoofd {#headless}
-
-* **[GraphQL API voor levering](/help/assets/content-fragments/graphql-api-content-fragments.md)** van inhoudsfragmenten: Mogelijkheid om inhoudsfragmenten op te vragen met de syntaxis GraphQL en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
-
-* **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
-
 * **[De RemotePage-component](/help/implementing/developing/hybrid/remote-page.md)**: Extra ondersteuning voor het weergeven en bewerken van externe SPA in AEM.
 
 * **[Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Mogelijkheid toegevoegd om een zelfstandige toepassing van één pagina naar een AEM instantie te uploaden, bewerkbare gedeelten van inhoud toe te voegen en het schrijven van inhoud in te schakelen.
-
-* Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
-
-* Ondersteuning voor het nesten van modellen van inhoudsfragmenten om het maken van geneste structuren voor inhoudsfragmenten mogelijk te maken via specifieke gegevenstypen van Content Fragment Reference of verwijzingen van inhoudsfragmenten inline in tekstvelden met meerdere regels.
-
-* Aanvullende validatieregels beschikbaar in de gegevenstypen van het inhoudsfragmentmodel, waaronder &quot;uniek&quot;, &quot;vereist&quot; en &quot;vertaalbaar&quot;.
-
-* Mogelijkheid om Content Fragment-modellen van tags te voorzien en het maken van Content Fragment toe te staan in een map met beleid per tag of pad.
-
-* Verbeteringen op gebied van bruikbaarheid in de Content Fragment-editor, inclusief publicatieactie en weergave van het model waarop een fragment is gebaseerd.
-
-* Mogelijkheid om JSON-uitvoer direct voor te vertonen in de Content Fragment Editor.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -76,6 +58,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * Wanneer een element met lange annotatietekst wordt afgedrukt, wordt de annotatietekst bijgesneden, zelfs als er ruimte beschikbaar is. (CQ-4314101)
 * Wanneer meerdere elementen zijn geselecteerd om de eigenschappen bij te werken, treedt soms een fout op of worden de eigenschappen van een niet-geselecteerd element bijgewerkt. (CQ-4316532)
 * Wanneer u [!UICONTROL Assets Admin Search Rail] probeert te openen, blijft de pagina leeg en wanneer u op [!UICONTROL Edit] > [!UICONTROL Settings] klikt, wordt een fout gegenereerd. (CQ-4315/079)
+
+## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
+
+### Nieuwe functies {#what-is-new-commerce}
+
+* Product Experience Management: Verrijk de pagina&#39;s van de productcatalogus individueel met de Fragmenten van de Ervaring.
+
+* Uitgebreide eigenschappen van de productconsole om verbonden Middelen en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
+
+* Uitgebrachte CIF Venia Reference Site - 2021.02.24 met de nieuwste versie van CIF Core Components v1.8.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer informatie.
+
+* Uitgebrachte CIF Core Components v1.8.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer informatie.
 
 ## Cloud Manager {#cloud-manager}
 
