@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 67%
+source-wordcount: '487'
+ht-degree: 65%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 67%
 + Assets delen en distribueren {#brand-portal}
    + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Elementen publiceren  [!DNL Brand Portal] van [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
