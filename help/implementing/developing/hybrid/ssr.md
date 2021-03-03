@@ -2,9 +2,9 @@
 title: SPA en rendering op de server
 description: Als u SSR (Server Side Rendering) gebruikt in uw SPA, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Als u SSR wilt gebruiken, moet u uw code zowel in AEM als op Adobe I/O Runtime i
 
 SSR voor SPA in AEM vereist Adobe I/O Runtime, dat wordt opgeroepen voor het renderen van de zijde van de toepassingsinhoudsserver. Binnen de HTML van de app wordt een resource op Adobe I/O Runtime aangeroepen om de inhoud te renderen.
 
-Net zoals AEM de hoekige en Reactie SPA frameworks buiten de box ondersteunt, wordt rendering aan de serverzijde ook ondersteund voor hoekige en Reactie-apps. Zie de NPM documentatie voor beide kaders voor verdere details.
+Net zoals AEM de Angular- en Reactie-SPA-frameworks buiten de box ondersteunt, wordt rendering aan de serverzijde ook ondersteund voor Angular- en React-apps. Zie de NPM documentatie voor beide kaders voor verdere details.
 
 ## Renderer voor externe inhoud {#remote-content-renderer}
 
