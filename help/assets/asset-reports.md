@@ -3,10 +3,10 @@ title: Rapporten over gebruik en delen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
+source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 5%
+source-wordcount: '888'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Het [!DNL Assets] rapporteringskader gebruikt [!DNL Sling] banen om rapportverzo
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
-Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- through an email (optional) and --> een inbox bericht. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
+Wanneer een rapport wordt geproduceerd, wordt u via <!-- through an email (optional) and --> een inbox bericht op de hoogte gebracht. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
 
 ## Rapporten genereren {#generate-reports}
 
@@ -56,7 +56,7 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
 >[!NOTE]
 >
->Standaard worden de Content Fragments en de link shares opgenomen in het Asset [!UICONTROL Download]-rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
+>Standaard worden de Content Fragments en de shares van de koppeling opgenomen in het asset [!UICONTROL Download]-rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
 
 >[!NOTE]
 >
@@ -66,9 +66,7 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
    ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)
 
-   Kies het datumbereik voor uw rapport.
-
-   U kunt ervoor kiezen het rapport nu of op een toekomstige datum en tijd te genereren.
+   Kies het datumbereik voor uw rapport. U kunt ervoor kiezen het rapport nu of op een toekomstige datum en tijd te genereren.
 
    >[!NOTE]
    >
@@ -109,7 +107,7 @@ Wanneer een rapport wordt geproduceerd, wordt u op de hoogte gebracht door <!-- 
 
    Klik **[!UICONTROL Download]** van de toolbar om het rapport in formaat te downloaden CSV.
 
-## Aangepaste kolommen toevoegen {#add-custom-columns}
+## Aangepaste kolommen toevoegen aan rapporten {#add-custom-columns}
 
 U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor uw douanevereisten te tonen:
 
@@ -126,10 +124,11 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 1. Klik in [!DNL Manager interface] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. Klik op [!UICONTROL Asset Reports] op de werkbalk.**[!UICONTROL Create]**
 
-1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
-1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad en datumbereik.
+1. Kies op de pagina **[!UICONTROL Create Report]** een rapport dat u wilt maken. Klik op **[!UICONTROL Next]**.
 
-1. Als u een aangepaste kolom wilt weergeven, geeft u de naam op van de kolom onder **[!UICONTROL Custom Columns]**.
+1. Configureer de rapportdetails, zoals titel, beschrijving, miniatuur, mappad en datumbereik. Klik op **[!UICONTROL Next]**.
+
+1. Selecteer de toepasselijke informatie in de lijst van **[!UICONTROL Default Columns]**. Als u een aangepaste kolom wilt weergeven, geeft u de naam van de kolom op onder **[!UICONTROL Custom Columns]**.
 
    ![Geef een naam op voor de aangepaste rapportkolom](assets/custom_columns-1.png)
 
@@ -137,9 +136,9 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
-   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaalt u stap 5 en 6.
+   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaalt u de bovenstaande stappen.
 
-1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht deelt mee dat de rapportgeneratie in werking wordt gesteld.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -153,6 +152,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Informatie, tips en beperkingen voor probleemoplossing {#best-practices-and-limitations}
+## Informatie en tips voor probleemoplossing {#tips-troubleshoot}
 
-* Als het Rapport van het Gebruik van de Schijf niet produceert en u [!DNL Dynamic Media] gebruikt, zorg ervoor dat alle activa correct te werk gaan. U lost de problemen op door de elementen opnieuw te verwerken en vervolgens het rapport opnieuw te genereren.
+* Als [!UICONTROL Disk Usage Report] niet produceert en als u [!DNL Dynamic Media] gebruikt, zorg ervoor dat alle activa correct te werk gaan. U lost de problemen op door de elementen opnieuw te verwerken en het rapport opnieuw te genereren.
