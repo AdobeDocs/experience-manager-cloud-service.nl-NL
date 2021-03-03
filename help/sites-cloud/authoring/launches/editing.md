@@ -2,10 +2,10 @@
 title: Lanceringen bewerken
 description: 'Nadat u een opstartafbeelding voor de pagina (of set pagina''s) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(''s). '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 18%
+source-wordcount: '555'
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,13 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud b
 Als u de pagina bewerkt, ziet u een indicatie in de bovenste werkbalk, samen met de opties **Verlaten** en **Navigeren**:
 
 ![Starten vanuit paginaeditor verlaten en navigeren](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>U mag een pagina niet verplaatsen binnen een startperiode. Als u deze handeling uitvoert, wordt een waarschuwingsbericht weergegeven:
+>
+>* Waarschuwing: Deze pagina is de bron van een opstart. Het verplaatsen van de pagina is niet toegestaan.
+
 
 ### Starten van pagina&#39;s bewerken waarop een actieve kopie {#editing-launch-pages-subject-to-a-live-copy} van toepassing is
 
