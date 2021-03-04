@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
+source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -203,7 +203,7 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
    >
    >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit.
 
-   Daarnaast verwijst u naar [Belangrijke overwegingen voor het gebruik van Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om te leren hoe u het zorgticket voor de klant kunt toevoegen.
+   Raadpleeg bovendien [Belangrijke overwegingen voor het gebruik van het Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) voor meer informatie over het toevoegen aan het zorgticket van de klant.
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
