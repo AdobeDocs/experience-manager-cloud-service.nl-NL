@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 63%
+source-wordcount: '1969'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
 
 * Java moet op het AEM worden gevormd milieu, zodat het `java` bevel door de gebruiker kan worden uitgevoerd die AEM begint.
+
+* Het wordt aanbevolen oudere versies van het gereedschap Inhoud overbrengen te verwijderen bij de installatie van versie 1.3.0, omdat het programma een belangrijke architecturale wijziging heeft ondergaan. Met 1.3.0 moet u ook nieuwe migratiesets maken en de extractie en inname van de nieuwe migratiesets opnieuw uitvoeren.
 
 * U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
 
@@ -101,7 +103,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (sommige  `/etc` paden mogen worden geselecteerd in CTT)
 
 
 1. Klik op **Save** nadat u alle velden hebt gevuld in het scherm met de gegevens over de **contentmigratieset**.
