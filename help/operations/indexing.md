@@ -2,7 +2,7 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
+source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 2%
@@ -38,14 +38,6 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 1. Beperkingen: momenteel, wordt het indexbeheer op AEM als Cloud Service slechts gesteund voor indexen van type lucene.
 
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
-
 ## Het gebruik {#how-to-use}
 
 De volgende drie gebruiksgevallen kunnen in indexen worden gedefinieerd:
@@ -64,15 +56,13 @@ U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexde
 
 die dan onder `ui.apps/src/main/content/jcr_root` moeten gaan. Subhoofdmappen worden op dit moment niet ondersteund.
 
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
-
 Het pakket uit het bovenstaande voorbeeld is opgebouwd als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
 ### Indexdefinities {#deploying-index-definitions} implementeren
 
 >[!NOTE]
 >
->Er is een bekend probleem met de Versie **1.1.0** van de Plug-in `<packageType>application</packageType>`Pakket met hemrabbit FileVult, waarmee u `oak:index` niet kunt toevoegen aan modules van &lt;a3/>. Om dit te omzeilen, gelieve versie **1.0.4** te gebruiken.
+>Er is een bekend probleem met de Versie **1.1.0** van de Plug-in `<packageType>application</packageType>`Pakket met hemrabbit FileVult, waarmee u `oak:index` niet kunt toevoegen aan modules van . Om dit te omzeilen, gelieve versie **1.0.4** te gebruiken.
 
 Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
 
