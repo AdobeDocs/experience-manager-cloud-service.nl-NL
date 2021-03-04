@@ -2,9 +2,9 @@
 title: Verbinding maken met Microsoft Translator
 description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de verpakking om uw vertaalworkflow te automatiseren.
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 # Verbinding maken met Microsoft Translator {#connecting-to-microsoft-translator}
 
-Maak een configuratie voor de [Microsoft Translator](https://hub.microsofttranslator.com)-cloudservice om uw Microsoft Translation-account te gebruiken voor het vertalen van AEM pagina-inhoud, community-inhoud of middelen.
+Maak een configuratie voor de [Microsoft Translator](https://hub.microsofttranslator.com)-cloudservice om uw Microsoft Translation-account te gebruiken voor het vertalen van AEM pagina-inhoud of -elementen.
+
+>[!NOTE]
+>
+>AEM biedt een proefaccount van Microsoft Translation waarmee maximaal 2 000 000 gratis vertaalde tekens per maand kunnen worden gebruikt. Als u een accountabonnement wilt verkrijgen dat geschikt is voor productiesystemen, raadpleegt u [De configuratie van de proefversie van Microsoft Translator-licentie upgraden](#upgrading-the-microsoft-translator-trial-license-configuration).
 
 | Eigenschap | Beschrijving |
 |---|---|
