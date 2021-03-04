@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. De onderstaande console wordt weergegeven wanneer u de eerste migratieset maakt. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
 
-1. Vul de velden in het scherm met de gegevens voor de **contentmigratieset** in, zoals hieronder beschreven.
+   Daarnaast klikt u op **Gebruikerstoewijzingsconfiguratie maken** om het [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) te openen.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Vul de velden in **Inhoudsmigratieset** scherm, zoals hieronder beschreven.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Selecteer **Toewijzing opnemen van IMS-gebruikers en -groepen**, zoals in de bovenstaande afbeelding is gemarkeerd. Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 
 
    1. **Name**: Voer de naam van de migratieset in.
@@ -119,7 +126,6 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    * Een *geel pictogram* geeft aan dat u de bestaande migratieset niet hebt gemaakt en dat de specifieke migratieset door een andere gebruiker in dezelfde instantie wordt gemaakt.
 
 1. Selecteer een migratieset op de overzichtspagina en klik op **Properties** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de containernaam of de service-URL te wijzigen.
-
 
 
 ### Extractieproces in Content Transfer {#extraction-process}
@@ -174,6 +180,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Zodra de opname volledig is, werkt de status in **PUBLISH INGESTION** gebied aan **FINISHED** bij.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
 1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
 
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit.
-   >
-   >![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   Daarnaast verwijst u naar [Belangrijke overwegingen voor het gebruik van Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om te leren hoe u het zorgticket voor de klant kunt toevoegen.
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
