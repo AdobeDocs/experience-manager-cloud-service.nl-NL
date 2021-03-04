@@ -2,9 +2,9 @@
 title: Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch
 description: Met de extensie Dynamic Media Viewers voor Platform launch en Dynamic Media Viewers 5.13 kunnen klanten van Adobe Analytics en Platform launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Viewers in hun configuratie voor Platform launches.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6293'
+source-wordcount: '6267'
 ht-degree: 9%
 
 ---
@@ -34,11 +34,11 @@ Zie [Adobe extensions](https://experienceleague.adobe.com/docs/launch/using/exte
 
 Het belangrijkste gebruiksgeval voor de integratie met Experience Platform Launch is klanten die zowel de Activa van de Experience Manager als de Plaatsen van de Experience Manager gebruiken. In dergelijke scenario&#39;s, kunt u opstelling een standaardintegratie tussen uw de auteurknoop en Experience Platform Launch van de Experience Manager, dan uw instantie van Plaatsen met het bezit van het Experience Platform Launch associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
 
-Zie [Informatie over het bijhouden van Dynamic Media-viewers in Experience Manager Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Zie [Dynamic Media-viewers bijhouden in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts de Activa van de Experience Manager, of Klassiek van Dynamic Media gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de productie-URL van de Experience Platform Launch-bibliotheek op vanuit het Experience Platform Launch en voegt u deze handmatig toe aan de webpaginacode.
 
-Zie [Informatie over het bijhouden van Dynamic Media-viewers met behulp van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Zie [Dynamic Media-viewers bijhouden met gebruik van ingesloten code](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Hoe gegevens en gebeurtenis volgen werkt in de integratie {#how-data-and-event-tracking-works-in-the-integration}
 
