@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -172,13 +172,14 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. Voor demonstratiedoeleinden is de optie voor het **opnemen van content naar de Auteur-instantie** uitgeschakeld. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
 
    >[!IMPORTANT]
    >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om meer te leren.
 
 1. Zodra de opname volledig is, werkt de status in **PUBLISH INGESTION** gebied aan **FINISHED** bij.
 
@@ -199,10 +200,8 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit.
 
-   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om meer te leren.
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
