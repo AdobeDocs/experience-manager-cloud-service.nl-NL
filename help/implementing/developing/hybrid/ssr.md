@@ -2,7 +2,7 @@
 title: SPA en rendering op de server
 description: Als u SSR (Server Side Rendering) gebruikt in uw SPA, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Dit kan echter leiden tot langere laadtijden, vooral als de SPA groot en rijk is
 
 ## Wanneer moet u SSR {#when-to-use-ssr} gebruiken?
 
-SSR is niet vereist voor alle projecten. Hoewel AEM JS SSR voor SPA volledig steunt, beveelt Adobe niet aan deze systematisch voor elk project uit te voeren.
+SSR is niet vereist voor alle projecten. Hoewel AEM volledig JS SSR voor SPA steunt, adviseert Adobe niet het systematisch voor elk project uit te voeren.
 
 Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra complexiteit, inspanning en kosten het toevoegen van SSR realistisch vertegenwoordigt voor het project, inclusief het langetermijnonderhoud. Een SSR-architectuur mag alleen worden gekozen wanneer de toegevoegde waarde duidelijk hoger is dan de geraamde kosten.
 
