@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
    Daarnaast klikt u op **Gebruikerstoewijzingsconfiguratie maken** om het [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) te openen.
 
-1. Vul de velden in **Inhoudsmigratieset** scherm, zoals hieronder beschreven.
+1. Vul de velden in **Migratieset maken** scherm, zoals hieronder wordt beschreven.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Selecteer **Toewijzing opnemen van IMS-gebruikers en -groepen**, zoals in de bovenstaande afbeelding is gemarkeerd. Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
-
 
    1. **Name**: Voer de naam van de migratieset in.
       >[!NOTE]
@@ -102,6 +98,8 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen.
+
+      1. **Toewijzing van IMS-gebruikers en -groepen** opnemen: Selecteer de optie. Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 
       1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
@@ -178,7 +176,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    >[!IMPORTANT]
    >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Zodra de opname volledig is, werkt de status in **PUBLISH INGESTION** gebied aan **FINISHED** bij.
