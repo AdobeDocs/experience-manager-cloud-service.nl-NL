@@ -2,7 +2,7 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -112,7 +112,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
          >* `/etc` (sommige  `/etc` paden mogen worden geselecteerd in CTT)
 
 
-1. Klik op **Save** nadat u alle velden hebt gevuld in het scherm met de gegevens over de **contentmigratieset**.
+1. Klik **Opslaan** nadat u alle velden hebt gevuld in het **Migratieset maken**-detailscherm.
 
 1. U kunt de migratieset bekijken op de overzichtspagina *Overview*.
 
