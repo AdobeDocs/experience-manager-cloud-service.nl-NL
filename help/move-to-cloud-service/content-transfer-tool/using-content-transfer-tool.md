@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 59%
+source-wordcount: '2057'
+ht-degree: 58%
 
 ---
 
@@ -99,7 +99,8 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen.
 
-      1. **Toewijzing van IMS-gebruikers en -groepen** opnemen: Selecteer de optie. Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
+      1. **Toewijzing van IMS-gebruikers en -groepen** opnemen: Selecteer de optie om toewijzingen van gebruikers en groepen IMS op te nemen.
+Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 
       1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
