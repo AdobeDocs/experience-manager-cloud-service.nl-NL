@@ -2,7 +2,7 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
+source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -200,7 +200,7 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit. Bovendien, klik op **de Zorg van de Klant** om een kaartje, een aangetoond in het voorafgaande cijfer te registreren.
+   >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit. Bovendien, klik op **de Zorg van de Klant** om een kaartje, zoals aangetoond in het voorafgaande cijfer te registreren.
 
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
