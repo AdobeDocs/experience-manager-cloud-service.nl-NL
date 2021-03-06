@@ -3,9 +3,9 @@ title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink kunt delen binnen  [!DNL Experience Manager Assets] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
+source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -169,9 +169,9 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktophandelingen inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de [!DNL Assets]-gebruikersinterface in een browser kunt u de middelenlocaties verkennen of de middelen uitchecken en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden Desktopacties genoemd en om het toe te laten, zie [Desktopacties in AEM Webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
+Vanuit de [!DNL Assets]-gebruikersinterface in een browser kunt u de middelenlocaties verkennen of de middelen uitchecken en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [Desktopacties in  [!DNL Assets] Webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
 
-![Desktophandelingen als sneltoets gebruiken bij het werken met de bureaubladtoepassing](assets/enable_desktop_actions.png)
+![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
 
 ### Te gebruiken configuraties [!DNL Adobe Asset Link] {#configure-asset-link}
 
@@ -183,6 +183,8 @@ Zie [hoe te om  [!DNL Assets] te vormen om het met [!DNL Adobe Asset Link]](http
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
 * Als gebruikers de gedeelde elementen niet kunnen downloaden, moet u bij de AEM controleren wat de [downloadlimieten](#maxdatasize) zijn.
+* Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als voor de video een statische video-uitvoering beschikbaar is op de locatie `/jcr:content/renditions` in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media]-uitvoering.
+* Wanneer u een video-element downloadt via gedeelde koppelingen, worden de [!DNL Dynamic Media]-vertoningen niet opgenomen in het gedownloade archief.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
