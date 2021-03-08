@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
+source-wordcount: '3825'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ Maak vertaalprojecten zodat u de workflow voor het vertalen van de master bronne
 U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, AEM leidt tot extra projecten.
 
 U kunt ook [handmatig vertaalprojecten maken](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Als u een project wilt maken, moet uw account lid zijn van de groep `project-administrators`.
 
 ### Eerste vertalingen en Bijwerken van vertalingen {#initial-and-updating}
 
@@ -208,6 +212,10 @@ Gebruik de opdrachten en de elliptische knoppen boven en onder aan de tegels (re
 ### Een vertaalproject maken met de projectconsole {#creating-a-translation-project-using-the-projects-console}
 
 U kunt een vertaalproject manueel tot stand brengen als u verkiest de projectenconsole in plaats van de plaatsenconsole te gebruiken.
+
+>[!NOTE]
+>
+>Als u een project wilt maken, moet uw account lid zijn van de groep `project-administrators`.
 
 Wanneer u handmatig een vertaalproject maakt, moet u naast de [basiseigenschappen](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) ook waarden opgeven voor de volgende translatie-gerelateerde eigenschappen:
 
