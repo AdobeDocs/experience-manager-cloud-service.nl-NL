@@ -4,9 +4,9 @@ description: Begrijp het concept van inzameling in de Activa van Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '2240'
+source-wordcount: '2244'
 ht-degree: 18%
 
 ---
@@ -80,7 +80,7 @@ Een slimme verzameling gebruikt zoekcriteria om elementen dynamisch te vullen. U
 
    >[!NOTE]
    >
-   >Als u **[!UICONTROL Public]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de rol van de Eigenaar nadat u het creeert. Als u de optie **[!UICONTROL Public]** uitschakelt, wordt de DAM-gebruikersgroep niet meer gekoppeld aan de slimme verzameling.
+   >Als u **[!UICONTROL Public]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de rol van de Eigenaar nadat u het creeert. Als u de optie **[!UICONTROL Public]** annuleert, is de DAM-gebruikersgroep niet langer gekoppeld aan de slimme verzameling.
 
 1. Tik of klik op **[!UICONTROL Save]** om de slimme verzameling te maken en sluit vervolgens het berichtvenster om het proces te voltooien. De nieuwe slimme verzameling wordt ook toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**.
 Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Tik of klik vervolgens op de knop **[!UICONTROL Edit Smart Selection]**.
@@ -165,7 +165,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
    >[!NOTE]
    >
-   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten [ te verwijderen.](#saved-searches)
+   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#saved-searches) te verwijderen.[
 
 ## Een verzameling {#download-a-collection} downloaden
 
@@ -195,11 +195,11 @@ Als u de pagina met metagegevens [!UICONTROL Properties] wilt aanpassen, inclusi
    >
    >De metagegevens die u voor de geselecteerde verzamelingen toevoegt, overschrijven de vorige metagegevens voor deze verzamelingen, met uitzondering van codes. Alle tags die u in het veld **[!UICONTROL Tags]** toevoegt, worden toegevoegd aan de bestaande lijst met tags in de metagegevens.
 
-1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, schakelt u de overige verzamelingen in de lijst met verzamelingen uit. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
+1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, annuleert u de selectie van de resterende verzamelingen in de lijst met verzamelingen. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
    >[!NOTE]
    >
-   >* Op de pagina met eigenschappen van verzamelingen kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. De metagegevens voor verzamelingen die u verwijdert, worden niet bijgewerkt.
+   >* Op de pagina met eigenschappen van verzamelingen kunt u verzamelingen verwijderen uit de lijst met verzamelingen door de selectie te annuleren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. De metagegevens voor verzamelingen die u verwijdert, worden niet bijgewerkt.
    >* Selecteer boven aan de lijst het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
 
 
