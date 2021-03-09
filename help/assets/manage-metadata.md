@@ -4,9 +4,9 @@ description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Exper
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1841'
 ht-degree: 3%
 
 ---
@@ -127,11 +127,11 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
    >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de pagina [!UICONTROL Properties] worden alleen metagegevensvelden weergegeven die op de pagina&#39;s [!UICONTROL Properties] van alle afzonderlijke elementen gemeenschappelijk zijn.
 
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
-1. Schakel de overige elementen in de lijst uit als u de metagegevenseditor voor een bepaald element wilt weergeven. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
+1. Als u de metagegevenseditor voor een bepaald element wilt weergeven, annuleert u de selectie van de overige elementen in de lijst. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
 
    >[!NOTE]
    >
-   >* Op de pagina [!UICONTROL Properties] kunt u elementen uit de lijst met elementen verwijderen door deze uit te schakelen. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
+   >* Op de pagina [!UICONTROL Properties] kunt u elementen uit de elementenlijst verwijderen door de selectie te annuleren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
    >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
