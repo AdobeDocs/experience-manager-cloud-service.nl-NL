@@ -3,7 +3,7 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] gebruikers met een handicap helpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 1%
@@ -66,7 +66,7 @@ De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden rege
 
 ## Ondersteuning voor het gebruik van het toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder de gebruikersinterface-elementen te hoeven activeren en deze met het toetsenbord te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
 
 <!-- TBD items:
 
@@ -96,7 +96,7 @@ De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De 
 | Element of map is geselecteerd | `e` | Het geselecteerde element bewerken. |
 | Element of map is geselecteerd | `m` | Verplaats het geselecteerde element. |
 | Element of map is geselecteerd | `Ctrl + c` | Kopieer het geselecteerde element. |
-| Element of map is geselecteerd | `Esc` | Schakel de selectie uit. |
+| Element of map is geselecteerd | `Esc` | De selectie annuleren. |
 | Dialoogvenster wordt geopend en heeft de focus | `Esc` | Dialoogvenster Sluiten. |
 | In een map in DAM | `Ctrl + v` | Plak het gekopieerde element. |
 | [!DNL Assets] Console | `Ctrl + A` | Selecteer alle elementen. |
