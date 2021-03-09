@@ -2,9 +2,9 @@
 title: Een programma maken - Cloud Service
 description: Een programma maken - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
+source-git-commit: d85c0e9035ee09cf86aeea1cae20d545823eaca0
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,6 @@ Afhankelijk van het doel van de gebruiker bij het creëren van het programma bin
 
 ![](assets/create-sandbox.png)
 
->[!NOTE]
->Als een programma reeds bestaat, dan zult u **Programma toevoegen** op het hoogste recht van de het landen pagina zien, zoals aangetoond in het hieronder cijfer.
-
-![](assets/create-program-add.png)
 
 ## Sandboxprogramma {#create-sandbox-program} maken
 
