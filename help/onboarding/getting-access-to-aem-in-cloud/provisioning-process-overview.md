@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: Inrichtingsproces - Overzicht
+description: Inrichtingsproces - Overzicht
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 7%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
+
 # AEM als Cloud Service: Toegang en toegang aan boord
 
 Deze pagina maakt een lijst van de zelfhulp middelen over leveringsproces voor Experience Manager als Cloud Service.
@@ -46,7 +50,7 @@ Voor meer informatie gaat u naar [Onboarding om als Cloud Service op Experience 
 
 ### 2. Aan boord van organisaties naar Adobe Admin Console:
 
- >   ![procesoverzicht2.jpg](./assets/processOverview2.jpg)
+>   ![procesoverzicht2.jpg](./assets/processOverview2.jpg)
 * Systeembeheerder:
    * Levering AEM programma&#39;s en omgevingen.
    * Navigeer naar de Admin Console voor beheertaken.
@@ -70,5 +74,5 @@ Map
 
 ## Help en bronnen
 
-[Eerste aanmelding - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[Toegang tot AEM configureren als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Eerste aanmelding - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [Toegang tot AEM configureren als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
