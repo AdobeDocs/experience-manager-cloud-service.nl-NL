@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: Rollen en verantwoordelijkheden
+description: Rollen en verantwoordelijkheden
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 5%
 
 ---
 
-# Adobe Experience Manager als Cloud Service: Rollen en verantwoordelijkheden
+
+# Adobe Experience Manager als Cloud Service: Rollen en verantwoordelijkheden {#roles-responsibilities}
 
 <br></br>
 Adobe levert een reeks diensten rond de levering, ontwikkeling, staging en productie van Experience Manager als Cloud Service. Voor de ontwikkeling en plaatsing van de oplossing om zo efficiënt mogelijk te werk te gaan, is het belangrijk dat de klant en de klant hun rollen begrijpen en vervullen, zoals hieronder beschreven.
@@ -49,5 +52,8 @@ Adobe levert een reeks diensten rond de levering, ontwikkeling, staging en produ
 | Productie | Updates voor AEM als Cloud Service-toepassing |  |  | Eigenaar |  |
 | Productie | Back-up van productie en noodherstel |  |  | Eigenaar |  |
 
-<br></br>
-In het bovenstaande wordt ervan uitgegaan dat Premier Support is opgenomen. De tabel kan in overleg tussen de klant en de klant worden gewijzigd. We raden u aan samen te werken met uw Adobe Sales- en aanpassingsteams als u meer informatie wilt over het bovenstaande. De klanten die geen aanpassing zelf willen behandelen zouden de diensten van het team van de Diensten van de Beroeps van Adobe of een partner van de Experience Manager moeten verkrijgen. Om hoge kwaliteitsniveaus te handhaven, vereist Adobe dat de partners die in Experience Manager als projecten van de Cloud Service worden betrokken bemand met minstens één persoon die de Geavanceerde certificatie van de Ontwikkelaar voor de software van de Experience Manager heeft verkregen.
+>[!NOTE]
+>
+> In het bovenstaande wordt ervan uitgegaan dat Premier Support is opgenomen. De tabel kan in overleg tussen de klant en de klant worden gewijzigd. We raden u aan samen te werken met uw Adobe Sales- en aanpassingsteams als u meer informatie wilt over het bovenstaande.
+> De klanten die geen aanpassing zelf willen behandelen zouden de diensten van het team van de Diensten van de Beroeps van Adobe of een partner van de Experience Manager moeten verkrijgen.
+>Om hoge kwaliteitsniveaus te handhaven, vereist Adobe dat de partners die in Experience Manager als projecten van de Cloud Service worden betrokken bemand met minstens één persoon die de Geavanceerde certificatie van de Ontwikkelaar voor de software van de Experience Manager heeft verkregen.
