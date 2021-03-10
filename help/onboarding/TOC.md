@@ -4,9 +4,9 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
+source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 28%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 28%
    + [Uitvoering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
    + [Stappen na Go-Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Toegang krijgen tot AEM in de cloud {#getting-access}
-   + [AEM als Cloud Service: Overzicht van het inrichtingsproces](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+   + [Overzicht van het inrichtingsproces](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Experience Manager as a Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service-programma&#39;s {#cloud-service-programs}
       + [Toegang tot programma&#39;s](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -88,7 +88,8 @@ ht-degree: 28%
       + [Opmerkingen bij de release 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [Opmerkingen bij de release 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Opmerkingen bij de release 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + [Rollen en verantwoordelijkheden begrijpen](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+   + Rollen en verantwoordelijkheden {#getting-access-to-aem-in-cloud} begrijpen
+      + [Rollen en verantwoordelijkheden begrijpen](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
    + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
