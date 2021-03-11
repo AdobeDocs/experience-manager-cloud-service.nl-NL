@@ -2,7 +2,7 @@
 title: Werken met Dynamic Media
 description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 [Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
-Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
+Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
 <!-- >[!NOTE]
 >
@@ -74,7 +74,7 @@ Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic 
 
 ### PTIFF-uitvoeringen {#ptiff-renditions}
 
-Tot de dynamische media-elementen behoren `pyramid.tiffs`.
+Tot de voor Dynamic Media ingeschakelde elementen behoren `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
