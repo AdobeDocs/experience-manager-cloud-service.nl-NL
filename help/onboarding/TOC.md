@@ -4,10 +4,10 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 translation-type: tm+mt
-source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
+source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 28%
+source-wordcount: '691'
+ht-degree: 25%
 
 ---
 
@@ -15,19 +15,26 @@ ht-degree: 28%
 # Onboarding {#onboarding}
 
 + [Onboarding van AEM as a Cloud Service](/help/onboarding/home.md)
-+ Wat is vereist {#what-is-required}
++ Aan de slag met AEM als Cloud Service {#what-is-required}
    + [Toegangsrechten verleend](what-is-required/access-rights-granted.md)
    + [Gebruikers en rollen toevoegen](what-is-required/add-users-roles.md)
    + [Op rollen gebaseerde machtigingen](what-is-required/role-based-permissions.md)
    + [Broncodeopslagplaats](what-is-required/source-code-repository.md)
 + Toegang krijgen tot AEM in de cloud {#getting-access}
-   + [Overzicht van het inrichtingsproces](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-   + [Experience Manager as a Cloud Service openen](getting-access-to-aem-in-cloud/navigation.md)
+   + [Toegang tot Cloud Manager voor AEM als Cloud Service krijgen](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Manager openen {#cloud-service-programs}
       + [Homepage van Cloud Manager](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + [Een programma maken](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [Sandbox-programma&#39;s](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + Productieprogramma&#39;s {#production-programs}
+         + [Inleiding](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [Een productieprogramma maken](getting-access-to-aem-in-cloud/creating-production-program.md)
+         + [Een productieprogramma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + Sandbox-programma&#39;s {#sandbox-programs}
+         + [Inleiding](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [Sandboxprogramma&#39;s maken](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+         + [Een Sandbox-programma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+         + [Een Sandbox-programma verwijderen](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+         + [Sluiende en ontsmette zandbakomgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
       + [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [CI/CD-pipeline configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -71,7 +78,8 @@ ht-degree: 28%
       + [Een IP-Lijst van gewenste personen verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [De status van een IP-Lijst van gewenste personen controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Huidige opmerkingen bij de release (2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Huidige opmerkingen bij de release (2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Opmerkingen bij de release 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [Opmerkingen bij de release 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [Opmerkingen bij de release 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [Opmerkingen bij de release 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
