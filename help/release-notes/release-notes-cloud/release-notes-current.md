@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,10 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart
 
 ### Wat is er nieuw?{#what-is-new-march}
 
-* Klanten met milieu&#39;s met reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten en de namen van het douanedomein zullen een bericht over hun eerder bestaande configuraties zien en zullen kunnen zelf-dienen via UI.
+* Klanten met milieu&#39;s met reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten en de namen van het douanedomein zullen een bericht over hun eerder bestaande configuraties zien en zullen kunnen zelf-dienen via UI. Gebruikers kunnen nu:
+   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa (of vice versa) toe.
+   * Sites (of Middelen) verwijderen uit een bestaand programma met zowel Sites als Middelen.
+   * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
 * Gebruikers met de vereiste machtigingen kunnen het programma nu bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen.
 
