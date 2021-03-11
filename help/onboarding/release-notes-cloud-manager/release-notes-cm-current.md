@@ -1,51 +1,59 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.2.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.2.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.3.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.2.0.
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.3.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 februari 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Wat is er nieuw?{#what-is-new}
 
-* Klanten van middelen kunnen nu kiezen wanneer en waar ze hun Brand Portal-instantie op een zelfbedieningsmanier implementeren via de interface van Cloud Manager. Voor een regelmatig (niet-sandbox) programma met middelenoplossing kan het Brand Portal nu worden ingericht op de productieomgeving. De levering kan slechts eenmaal op het milieu van de Productie worden gedaan.
+* De klanten met milieu&#39;s met reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten en de namen van het douanedomein zullen het volgende bericht zien, en zullen kunnen zelf-dienen via UI.
 
-* Het AEM Project Archetype dat in Project en Sandbox creatie wordt gebruikt is bijgewerkt aan versie 25.
+* Gebruikers met de vereiste machtigingen kunnen het programma nu bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen.
 
-* De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente Cloud Service SDK-releases.
+* AEM het etiket van de Update van de Duw&quot;zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
 
-* SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in conflict met de controles van de Onderbreking van de thread.
+* Als een omgeving is gehiberneerd maar er ook een AEM update beschikbaar is, heeft de status &quot;Hibernated&quot; voorrang op &quot;Update available&quot;.
 
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
+* Gebruikers kunnen nu hun rol(en) in de cloud Manager zien door de optie &#39;Rol(en) in de cloud-manager weergeven&#39; te selecteren nadat ze naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell zijn genavigeerd.
 
-* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden van de klant die vooraf zijn voorzien van sonar, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
+* Voor meer duidelijkheid is het etiket &quot;Goedkeuringsaanvraag&quot; gelabeld aan &quot;Goedkeuring van de productie&quot;.
 
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
+* Het &quot;Versielabel&quot;etiket is opnieuw gelabeld aan &quot;Git Markering&quot;in het scherm van de de pijpleiding van de Productie uitvoeren.
 
-* Er zijn aanvullende regels voor de kwaliteit van code toegevoegd om compatibiliteitsproblemen met Cloud Servicen te verhelpen.
+* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn geëtiketteerd om op hun ware gedrag te wijzen - onmiddellijk annuleren en Onmiddellijk goedkeuren.
+
+* De lijsten van de klasse en van de methodevervanging zijn bijgewerkt gebaseerd op versie `2021.3.4997.20210303T022849Z-210225` van de AEM Cloud Service SDK.
+
+* De productiepijplijn van de Manager van de Wolk zal nu het testen UI van de Douane mogelijkheden omvatten.
 
 ### Opgeloste problemen {#bug-fixes}
 
-* Het vergelijken van SSL-certificaat met een domeinnaam is niet langer hoofdlettergevoelig.
+* Pakketversie is in sommige gevallen overgeslagen tijdens AEM upgrade.
 
-* De gebruikersinterface van Cloud Manager stelt de gebruiker nu op de hoogte als de persoonlijke certificaatsleutels niet voldoen aan de limiet van 2048 bits met een geschikt foutbericht.
+* Bepaalde kwaliteitsproblemen zijn niet goed ontdekt wanneer pakketten in andere pakketten waren ingesloten.
 
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein wordt gebruikt die momenteel wordt opgesteld.
+* In duistere situaties, zou de standaardprogrammanaam die bij het openen van de Add dialoog van het Programma wordt geproduceerd een duplicaat van een bestaande programmanaam kunnen zijn.
 
-* In sommige gevallen kan een intern probleem ertoe leiden dat het verwijderen van het milieu vastloopt.
+* Wanneer de gebruiker bij gelegenheid vanaf de pagina voor de uitvoering van de pijpleiding navigeert onmiddellijk nadat een pijpleiding is gestart, wordt een foutbericht weergegeven met de mededeling dat de handeling is mislukt, hoewel de uitvoering daadwerkelijk wordt gestart.
 
-* Sommige pijpleidingsmislukkingen werden verkeerd gemeld als pijpleidingsfouten.
+* De bouwstijlstap werd onnodig opnieuw begonnen toen de klant bouwt in ongeldige pakketten resulteerde.
+
+* Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
+
+* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
