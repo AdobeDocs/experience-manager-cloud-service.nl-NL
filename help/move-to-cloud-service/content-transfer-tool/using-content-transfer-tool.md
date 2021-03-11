@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
+source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 57%
+source-wordcount: '2274'
+ht-degree: 51%
 
 ---
 
@@ -26,9 +26,13 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Als u een *Sandbox Milieu* gebruikt, zorg ervoor dat uw milieu huidig is en aan de recentste versie wordt bevorderd. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
-* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM beheerdersgroep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM **beheerders** groep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+
+* Als de instelling **Bestaande inhoud op een Cloud-instantie vegen voor inname** is ingeschakeld, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**. De gebruiker zal aan **beheerders** groep opnieuw moeten worden toegevoegd om het toegangstoken voor CTT terug te winnen.
 
 * Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u zult het nieuwe toegangstoken moeten terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
+
+* Met het gereedschap Inhoud overbrengen kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. Zo maakt CTT geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud terwijl inhoud wordt opgenomen in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT en de instantie van de bronauteur worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook CTT op de bron te installeren publiceer instantie om inhoud naar de doel te verplaatsen publiceer instantie.
 
 * De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Het gereedschap Toewijzing gebruiker gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -175,7 +179,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
 
    >[!IMPORTANT]
-   >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld.
+   >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
