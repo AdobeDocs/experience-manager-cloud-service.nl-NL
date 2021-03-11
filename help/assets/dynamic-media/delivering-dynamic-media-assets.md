@@ -2,7 +2,7 @@
 title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-middelen kunt leveren.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Hoe u uw Dynamic Media-middelen kunt leveren - zowel video als afbeeldingen - ha
 
 Met Dynamic Media hebt u verschillende opties:
 
-* Als uw website op AEM wordt gehost, wilt u de dynamische media-elementen rechtstreeks aan uw pagina toevoegen.
+* Als uw website op AEM wordt gehost, wilt u de Dynamic Media-elementen rechtstreeks aan uw pagina toevoegen.
 * Als uw website niet op AEM staat, kunt u kiezen uit:
 
    * Uw video of afbeelding insluiten op uw website.
