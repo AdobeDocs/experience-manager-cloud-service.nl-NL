@@ -2,7 +2,7 @@
 title: 'Sluiende en ontsmette zandbakomgevingen '
 description: 'Sluiende en ontsmette zandbakomgevingen '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 Sandbox Program-omgevingen voeren een *hibernatiemodus* in als gedurende een bepaalde periode geen activiteit wordt gedetecteerd.
 
 >[!NOTE]
->De sluimerstand is uniek voor Sandbox-programmaomgevingen. Reguliere programmeeromgevingen houden geen hiberatie in.
+>De sluimerstand is uniek voor Sandbox-programmaomgevingen. In productieprogrammaomgevingen vindt geen hiberatie plaats.
 
 ## Sluimerstand {#hibernation-introduction}
 
