@@ -2,10 +2,10 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,7 @@ Functionele tests worden gecategoriseerd in twee typen:
 
 * Functioneel testen van producten
 * Aangepaste functionele tests
+* Aangepaste UI-tests
 
 ## Functioneel testen van product {#product-functional-testing}
 
@@ -34,6 +35,34 @@ Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de te
 >[!NOTE]
 >Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Raadpleeg [Toegang tot en beheer van logbestanden](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
+## Aangepaste UI-tests {#custom-ui-testing}
+
+AEM biedt zijn klanten een geïntegreerde suite met Cloud Manager-kwaliteitspoorten om ervoor te zorgen dat hun toepassingen probleemloos worden bijgewerkt. Met name kunnen klanten met behulp van IT-testpoorten al hun eigen tests maken en automatiseren die gebruikmaken van AEM API&#39;s.
+
+De het testen UI van de Douane eigenschap is een facultatieve eigenschap die onze klanten toelaat om tests UI voor hun toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). U kunt meer over leren hoe te om UI te bouwen en tests UI van hier te schrijven. Bovendien kan een project van de Tests UI gemakkelijk worden geproduceerd door het AEM Project Archetype te gebruiken.
+
+De klanten kunnen (via GIT) douanetests en testreeks voor UI tot stand brengen. De UI-test wordt uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met hun specifieke stap en feedbackinformatie. Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten, zullen fouten om toelaten worden ontdekt en worden gemeld binnen de klantencontext.
+
+De tests van de UI van de Klant lopen automatisch op de pijpleiding van de Productie onder de &quot;Testen van de UI van de Douane&quot;stap.
+
+In tegenstelling tot Aangepaste functionele tests die HTTP-tests zijn die in Java zijn geschreven, kunnen de UI-tests een dockerafbeelding zijn met tests die in elke taal zijn geschreven, mits deze tests de conventies volgen die bij [UI-tests maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests) zijn gedefinieerd.
+
+>[!NOTE]
+>Het wordt aanbevolen de structuur en de taal *(js en audio)* te volgen die gemakkelijk in [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) als uitgangspunt worden verstrekt.
+
+### Klanten kiezen {#customer-opt-in}
+
+Om hun tests UI te laten bouwen en worden uitgevoerd, moeten de klanten &quot;opt-in&quot;door een dossier aan hun codebewaarplaats toe te voegen, onder de bepaalde sub-module voor tests UI (naast het pom.xml- dossier van UI test submodule) en ervoor te zorgen dat dit dossier bij de wortel van het gebouwde `tar.gz` dossier is.
+
+*Bestandsnaam*: `testing.properties`
+
+*Inhoud*:  `one line: ui-tests.version=1`
+
+Als dit niet in het gebouwde `tar.gz` dossier is, zullen de tests UI bouwen en de uitvoeringen worden overgeslagen
+
+>[!NOTE]
+>Productiepijpleidingen die vóór 10 februari 2021 zijn aangelegd, moeten worden bijgewerkt om de in dit punt beschreven interfacetests te kunnen gebruiken. Dit betekent hoofdzakelijk de Gebruiker de pijpleiding van de Productie moet uitgeven en **sparen** van UI klikken zelfs als geen veranderingen werden aangebracht.
+>Verwijs naar [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) om meer over pijpleidingsconfiguratie te leren.
 
 ### Het schrijven van functionele tests {#writing-functional-tests}
 
