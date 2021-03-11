@@ -2,7 +2,7 @@
 title: Dynamic Media-Cloud Service configureren
 description: Informatie over het configureren van Dynamic Media in Adobe Experience Manager als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 4%
@@ -122,7 +122,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver.
    * Tik **[!UICONTROL Add]** voor het clientadresfilter.
-   * Als u het adres wilt inschakelen (inschakelen), schakelt u het selectievakje in en typt u het IP-adres van de instantie AEM-auteur (niet Dispatcher IP).
+   * Als u het adres wilt inschakelen (inschakelen), schakelt u het selectievakje in en typt u het IP-adres van de instantie AEM-auteur (niet de instantie Dispatcher IP).
    * Klik op **[!UICONTROL Save]**.
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt Dynamic Media gebruiken.
@@ -239,7 +239,7 @@ Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op **[!UIC
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
-Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/dynamic-media/managing-image-presets.md).
+Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/dynamic-media/managing-image-presets.md).
 
 De standaardkleureigenschappen configureren voor het inschakelen van kleurcorrectie bij het aanvragen van afbeeldingen:
 
