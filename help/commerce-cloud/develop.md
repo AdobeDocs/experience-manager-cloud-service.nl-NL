@@ -2,15 +2,15 @@
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
 description: Leer hoe te om een handel-toegelaten AEM project te produceren gebruikend het AEM projectarchetype. Leer hoe te om het project aan een lokale ontwikkelomgeving te bouwen en op te stellen gebruikend de AEM als Cloud Service SDK.
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
+source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '969'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ De ontwikkeling van AEM Commerce-projecten op basis van het Kader voor de integr
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Een lokale ontwikkelomgeving wordt aanbevolen voor CIF-projecten. De CIF toe:voegen-On die voor AEM als milieu van de Cloud Service wordt verstrekt is ook beschikbaar voor lokale ontwikkeling. Het kan van [het portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload.
+Een lokale ontwikkelomgeving wordt aanbevolen voor CIF-projecten. De CIF-invoegtoepassing die als Cloud Service voor AEM is voorzien, is ook beschikbaar voor lokale ontwikkeling. Het kan van [het portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload.
 
 De CIF Add-On wordt verstrekt als Sling Feature archief. Het ZIP-bestand dat beschikbaar is op de portal Softwaredistributie bevat twee Sling Feature-archiefbestanden: een voor AEM auteur en een voor AEM publicatie-instanties.
 
@@ -137,6 +137,12 @@ De componenten van de Kern van CIF kunnen in om het even welk project worden geb
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
     <type>zip</type>
     <version>x.y.z</version>
 </dependency>
