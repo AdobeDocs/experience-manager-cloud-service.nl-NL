@@ -1,16 +1,16 @@
 ---
-title: Navigatie
-description: Navigatie - Cloud Service
+title: Toegang tot Cloud Manager voor AEM als Cloud Service krijgen
+description: Toegang tot Cloud Manager voor AEM als Cloud Service krijgen
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
 
-# Experience Manager as a Cloud Service openen {#navigation}
+# Toegang krijgen tot Cloud Manager voor AEM als Cloud Service {#navigation}
 
 Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u een e-mail ontvangen die u aan de login van de Manager van de Wolk neemt pagina die ook via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/) toegankelijk is.
 
@@ -20,7 +20,7 @@ Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager,
 
 ## SysAdmin-taken {#sysadmin-tasks}
 
-Een gebruiker in de rol SysAdmin kan tot de Admin Console nu direct toegang hebben om rollen en toestemmingen en toegang tot AEM instanties te beheren.
+Een gebruiker in de rol SysAdmin kan **Toegang beheren** selecteren om tot de Admin Console direct toegang te hebben om rollen en toestemmingen en toegang tot AEM instanties te beheren.
 
 ### Rollen beheren {#manage-roles}
 
@@ -29,7 +29,7 @@ Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot de plaats in **Ad
 Raadpleeg [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) voor meer informatie over het toevoegen van gebruikers aan een profiel.
 
 >[!NOTE]
->Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en moet het productprofiel van het product en het milieu worden geselecteerd.
+>Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en zal het productprofiel van het product en het milieu moeten worden geselecteerd.
 
 1. Navigeer naar de openingspagina van Cloud Manager en klik op **Toegang beheren**.
 
@@ -44,7 +44,7 @@ Raadpleeg [Toegang tot Cloud Manager](https://docs.adobe.com/content/help/en/exp
 Als gebruiker in de rol SysAdmin, hebt u one-click toegang tot **Admin Console** van waar u aan de auteursinstantie direct kunt navigeren en toegang beheren.
 
 >[!NOTE]
->Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en moet het productprofiel van het product en het milieu worden geselecteerd.
+>Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en zal het productprofiel van het product en het milieu moeten worden geselecteerd.
 
 Raadpleeg [Instantie benaderen als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) voor meer informatie.
 
