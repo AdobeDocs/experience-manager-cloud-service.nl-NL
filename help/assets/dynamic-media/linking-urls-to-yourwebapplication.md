@@ -2,7 +2,7 @@
 title: URL's koppelen aan uw webapplicatie
 description: URL's koppelen aan uw webtoepassing in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 9%
@@ -20,7 +20,7 @@ Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s
 
 >[!NOTE]
 >
->URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de dynamische mediaserver. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
+>URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
 Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](embed-code.md).
 
