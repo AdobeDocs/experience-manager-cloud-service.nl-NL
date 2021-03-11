@@ -2,9 +2,9 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -50,15 +50,20 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
       ![](assets/stage-deployment.png)
    Voor het **testen van de fase** worden de volgende stappen uitgevoerd:
 
-   * Functioneel testen van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen.
+   * **Functioneel testen** van product: De pijpleiding van de Manager van de wolk zal de uitvoering van tests steunen die tegen het werkgebiedmilieu lopen.
 Raadpleeg [Productfunctie testen](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer informatie.
 
-   * Aangepaste functionele tests: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
+   * **Aangepaste functionele tests**: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.\
       Raadpleeg [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer informatie.
 
+   * **Aangepaste UI-tests**: Deze stap is een facultatieve eigenschap die onze klanten toelaat om tests UI voor hun toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd).
+Raadpleeg Aangepaste UI-tests voor meer informatie.
 
-   * Experience Audit: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
+
+   * **Experience Audit**: Deze stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen. De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en geëvalueerd. De resultaten zijn informatief en stellen de gebruiker in staat de scores en de wijziging tussen de huidige en vorige scores te bekijken. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
 Raadpleeg [Inzicht in de resultaten van Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
+
+      ![](assets/stage-testing.png)
 
 
 
