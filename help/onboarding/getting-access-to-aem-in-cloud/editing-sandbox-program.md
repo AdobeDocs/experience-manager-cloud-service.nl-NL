@@ -2,9 +2,9 @@
 title: 'Een Sandbox-programma bewerken '
 description: 'Een Sandbox-programma bewerken '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ Gebruikers met de vereiste machtigingen kunnen nu een productieprogramma bewerke
 
 Voer de onderstaande stappen uit om een Sandbox-programma te bewerken:
 
-1. Navigeer naar de pagina **Program** bewerken.
+1. Navigeer naar de pagina **Program** bewerken van de pagina *Overview* van Cloud Manager.
 
 1. Op de pagina **Programma bewerken** worden twee tabbladen (Algemeen en Oplossingen) weergegeven voor zowel productie- als sandboxprogramma&#39;s.
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >Terwijl zowel de Plaatsen als de Activa zullen worden getoond, kan één van hen worden onbruikbaar gemaakt gebaseerd op wat is gekocht en ongebruikt. Als de organisatie geen ongebruikte machtigingen voor een bepaalde oplossing heeft, wordt deze oplossing wel weergegeven, maar uitgeschakeld.
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
 
