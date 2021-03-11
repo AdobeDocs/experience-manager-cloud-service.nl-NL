@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 4%
@@ -53,7 +53,7 @@ Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Bij het maken van een omgeving worden een of meer *integrations* gemaakt in Adobe I/O. Deze zijn zichtbaar voor gebruikers van de klant die toegang hebben tot de Adobe I/O-console en mogen niet worden verwijderd. Dit wordt in de beschrijving in de Adobe I/O-console afgewezen.
+   >Bij het creëren van een milieu, worden één of meerdere *integrations* gecreeerd in Adobe I/O. Deze zijn zichtbaar aan klantengebruikers die toegang tot de Console van de Adobe I/O hebben en niet moeten worden geschrapt. Dit wordt in de beschrijving in de console van de Adobe I/O ontkend.
 
    ![](assets/add-environment-image1.png)
 
@@ -113,7 +113,7 @@ De verwijderingsoptie is ook beschikbaar als u op **Details** van de **Favoriete
 
 >[!NOTE]
 >
->Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een regulier programma dat is ingesteld voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
+>Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een productieprogramma dat is opgezet voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
 
 ## Toegang beheren {#managing-access}
 
