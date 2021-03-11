@@ -2,9 +2,9 @@
 title: Toegang tot Cloud Manager voor AEM als Cloud Service krijgen
 description: Toegang tot Cloud Manager voor AEM als Cloud Service krijgen
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ Als u een bestaande AMS-klant (Adobe Managed Services) bent en u toegang hebt to
 
 Als u de **Add Program** knoop niet ziet en vragen over toegang tot Cloud Service hebt, gelieve uw vertegenwoordiger van de Adobe te contacteren.
 
-Raadpleeg [Een nieuw programma toevoegen in Cloud Service met bestaande programma&#39;s](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) voor meer informatie.
-
 ## Voor nieuwe klanten van de Cloud Service {#new-cloud-services}
 
 Als u een nieuwe klant van de Cloud Service bent, dan zult u **Add Programma** knoop op de hoogste juiste hoek van een lege het landen pagina zien. U zult een nieuw programma aan uw Cloud Service willen toevoegen.
 
-Raadpleeg [Een nieuw programma toevoegen in de Cloud Service zonder bestaande programma&#39;s](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) voor meer informatie.
-
+Ga voor meer informatie over het toevoegen van een programma in Cloud Manager naar:
+* [Een productieprogramma maken](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [Sandboxprogramma&#39;s maken](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
