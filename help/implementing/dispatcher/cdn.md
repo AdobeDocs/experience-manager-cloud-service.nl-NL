@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -51,6 +51,10 @@ Configuratieinstructies:
 1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN X-Edge-*) bijsnijdt, wat nodig is om het verkeer naar de AEM servers correct te leiden. De waarde moet van Adobe komen. Gelieve te informeren Adobe als u directe toegang tot de ingang van Adobe CDN (moet worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is) wilt.
 
 Voorafgaand aan het goedkeuren van levend verkeer, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
+
+>[!NOTE]
+>
+>De klanten die hun eigen CDN beheren zouden de integriteit van de kopballen moeten verzekeren die door naar AEM CDN worden verzonden. Het wordt bijvoorbeeld aanbevolen dat klanten alle `X-Forwarded-*` headers wissen en deze op bekende en gecontroleerde waarden instellen. `X-Forwarded-For` moet bijvoorbeeld het IP-adres van de client bevatten, terwijl `X-Forwarded-Host` de host van de site moet bevatten.
 
 Er is potentieel een kleine prestatieshit toe te schrijven aan de extra hop, hoewel de hop van klant CDN aan AEM beheerde CDN waarschijnlijk efficiënt zal zijn.
 
