@@ -3,10 +3,10 @@ title: AEM Assets configureren als een [!DNL Cloud Service] met Brand Portal
 description: AEM Assets configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 20%
+source-wordcount: '2110'
+ht-degree: 15%
 
 ---
 
@@ -15,9 +15,162 @@ ht-degree: 20%
 
 Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets publiceren als een [!DNL Cloud Service]-exemplaar naar Brand Portal en deze verspreiden onder de gebruikers van het Brand Portal.
 
-**Configuratieworkflow**
+## Brand-portal activeren met Cloud Manager {#activate-brand-portal}
 
-AEM Assets als [!DNL Cloud Service] wordt gevormd met het Portaal van het Merk via de Console van de Ontwikkelaar van de Adobe, die een Adobe Identity Management Services (IMS) rekeningsteken voor vergunning van de Poorthuurder van het Merk aanschaft. Voor dit programma zijn configuraties vereist in zowel AEM Assets als Adobe Developer Console.
+De gebruiker van de Manager van de Wolk activeert Brand Portal voor een AEM Assets als [!DNL Cloud Service] instantie. De activeringsworkflow maakt de vereiste configuraties (machtigingstoken, IMS-configuratie en merkenportalwolkenservice) op de achtergrond en geeft de status weer van de Pantagonist van het Brand Portal in Cloud Manager.
+
+**Vereisten**
+
+U hebt het volgende nodig om Brand Portal op uw AEM Assets te activeren als een [!DNL Cloud Service]-exemplaar:
+
+* Een in werking gestelde AEM Assets als [!DNL Cloud Service] instantie.
+* Een gebruiker die toegang heeft tot Cloud Manager en die is toegewezen aan profielen van het product van Cloud Manager. Zie [Cloud Manager openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager) voor meer informatie.
+
+>[!NOTE]
+>
+>Een AEM Assets als [!DNL Cloud Service] instantie is gerechtigd om slechts één Poorthuurder van het Merk aan te sluiten. U kunt meerdere omgevingen (ontwikkeling, productie en werkgebied) voor uw AEM Assets maken als een [!DNL Cloud Service]-exemplaar, waarbij Brand Portal slechts op één omgeving wordt geactiveerd.
+
+**Stappen om Brand Portal te activeren**
+
+U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt als een [!DNL Cloud Service]-exemplaar of afzonderlijk. Laten we ervan uitgaan dat de omgevingen al zijn gecreëerd en dat u nu Brand Portal moet activeren.
+
+1. Meld u aan bij Adobe Cloud Manager en navigeer naar **[!UICONTROL Environments]**.
+
+   Op de pagina **[!UICONTROL Environments]** wordt de lijst met alle bestaande omgevingen weergegeven.
+
+1. Selecteer de omgevingen (een voor een) in de lijst om de omgevingsdetails weer te geven.
+
+   Merkportal heeft recht op een van de beschikbare omgevingen en wordt weergegeven onder **[!UICONTROL Environment Information]**.
+
+   Als u de omgeving hebt gevonden die is gekoppeld aan Brand Portal, klikt u op de knop **[!UICONTROL Activate Brand Portal]** om de activeringsworkflow te starten.
+
+   ![Merkportal activeren](assets/create-environment4.png)
+
+1. Het kan een paar minuten duren om de Poorthuurder van het Merk te activeren aangezien de activeringswerkschema tot de vereiste configuraties bij het achtereind leidt. Zodra de Poorthuurder van het Merk wordt geactiveerd, verandert de status in Geactiveerd.
+
+   ![Status weergeven](assets/create-environment5.png)
+
+**Zie ook**:
+* [Gebruikers en rollen toevoegen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+
+* [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+
+
+**Meld u aan bij uw Brand Portal-gebruiker**:
+
+Na activering van uw Brand Portal-huurder in Cloud Manager kunt u zich aanmelden bij Brand Portal vanuit Admin Console of door rechtstreeks de URL van de huurder te gebruiken.
+
+De standaard-URL van uw Poorthuurder voor merken is: `https://<tenant-id>.brand-portal.adobe.com/`.
+
+Voer de volgende stappen uit als u niet zeker bent van de URL van het Brand Portal:
+
+1. Meld u aan bij [Admin Console](http://adminconsole.adobe.com/) en navigeer naar **[!UICONTROL Products]**.
+1. Selecteer **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** in het linkerspoor.
+1. Klik op **[!UICONTROL Go to Brand Portal]** om Brand Portal rechtstreeks in de browser te openen.
+
+   Of kopieer de URL van de medewerker van het Brand Portal en plak deze in uw browser om de interface Brand Portal te openen.
+
+   ![Access Brand Portal](assets/access-bp-on-cloud.png)
+
+
+**Verbinding testen**
+
+Voer de volgende stappen uit om de verbinding tussen uw AEM Assets als [!DNL Cloud Service] instantie en Poorthuurder van het Merk uit te bevestigen:
+
+1. Meld u aan bij AEM Assets.
+
+1. Navigeer in het deelvenster **Gereedschappen** naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+
+   ![](assets/test-bpconfig1.png)
+
+   Een merkportal-distributieagent (**[!UICONTROL bpdistributionagent0]**) wordt gemaakt onder **[!UICONTROL Publish to Brand Portal]**.
+
+   ![](assets/test-bpconfig2.png)
+
+
+1. Klik **[!UICONTROL Publish to Brand Portal]** om de verdelingsagent te openen.
+
+   U kunt de distributielijnen onder **[!UICONTROL Status]** tabel zien.
+
+   Een distributieagent bevat twee wachtrijen:
+   * **verwerkingswachtrij**: voor de distributie van assets naar Brand Portal.
+
+   * **foutenwachtrij**: voor de assets waarvoor de distributie is mislukt.
+   >[!NOTE]
+   >
+   >Het wordt aanbevolen om de fouten te controleren en de **foutenwachtrij** regelmatig te wissen.
+
+   ![](assets/test-bpconfig3.png)
+
+1. Als u de verbinding tussen AEM Assets als [!DNL Cloud Service] en Brand Portal wilt controleren, klikt u op het pictogram **[!UICONTROL Test Connection]**.
+
+   ![](assets/test-bpconfig4.png)
+
+   Er verschijnt een bericht dat uw *testpakket is geleverd*.
+
+   >[!NOTE]
+   >
+   >Schakel de distributieagent niet uit, want dit kan de distributie van de assets (die actief zijn in de wachtrij) doen mislukken.
+
+Als u de verbinding tussen uw AEM Assets als een [!DNL Cloud Service]-exemplaar en Poorthuurder wilt controleren, publiceert u een element van AEM Assets naar Brand Portal. Als de verbinding is gelukt, is het gepubliceerde element zichtbaar in de interface Brand Portal.
+
+
+U kunt nu het volgende doen:
+
+* [Assets publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md)
+* [Mappen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Verzamelingen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Middelen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Asset Sourcing in Brand Portal
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+Zie [Handelsversie](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) voor meer informatie.
+
+**Distributielogboeken**
+
+U kunt de logboeken van de distributieagent voor de activa het publiceren werkschema controleren.
+
+We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
+
+1. Volg de stappen (van 1 tot 4) zoals aangetoond in [de sectie van de Configuratie van de Test](#test-configuration) en navigeer aan de pagina van de distributieagent.
+1. Klik **[!UICONTROL Logs]** om de verwerking en foutenlogboeken te bekijken.
+
+   ![](assets/test-bpconfig5.png)
+
+De distributieagent heeft de volgende logboeken geproduceerd:
+
+* INFO: Dit is een systeem-geproduceerd logboek dat op succesvolle configuratie van de verdelingsagent teweegbrengt.
+* DSTRQ1 (aanvraag 1): geactiveerd tijdens testverbinding.
+
+Bij het publiceren van de asset worden de volgende aanvraag- en antwoordlogboeken gegenereerd:
+
+**Aanvraag van distributieagent**:
+
+* DSTRQ2 (aanvraag 2): de aanvraag voor het publiceren van de asset wordt geactiveerd.
+* DSTRK3 (verzoek 3): Het systeem activeert een andere aanvraag om de AEM Assets-map (waarin het element bestaat) te publiceren en repliceert de map in Brand Portal.
+
+**Antwoord van distributieagent**:
+
+* queue-bpdistributionagent0 (DSTRQ2): de asset wordt gepubliceerd naar Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): Het systeem dupliceert de AEM Assets-map (die het element bevat) in Brand Portal.
+
+In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend antwoord geactiveerd. Het systeem kan de bovenliggende map (Pad toevoegen) niet vinden in Brand Portal omdat het element voor het eerst is gepubliceerd. Daarom heeft het een extra verzoek geactiveerd om een bovenliggende map met dezelfde naam te maken in Brand Portal waar het element is gepubliceerd.
+
+>[!NOTE]
+>
+>Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in AEM Assets.
+
+Samen met de automatiseringsworkflow om Brand Portal op AEM Assets te activeren als een [!DNL Cloud Service], bestaat er een andere methode om AEM Assets handmatig te configureren als een [!DNL Cloud Service] met Brand Portal met behulp van Adobe Developer Console. Dit wordt niet meer aanbevolen.
+
+>[!NOTE]
+>
+>U moet contact opnemen met de Adobe-ondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
+
+## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
+
+In de volgende sectie wordt beschreven hoe u AEM Assets handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met gebruik van Adobe Developer Console.
+
+Eerder, werd AEM Assets als [!DNL Cloud Service] manueel gevormd met het Portaal van het Merk via de Console van de Ontwikkelaar van de Adobe, die een Adobe Identity Management Services (IMS) rekeningsteken voor vergunning van de huurder van het Portaal van het Merk koopt. Voor dit programma zijn configuraties vereist in zowel AEM Assets als Adobe Developer Console.
 
 1. In AEM Assets maakt u een IMS-account en genereert u een openbare sleutel (certificaat).
 1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw Poorthuurder van het Merk (organisatie).
@@ -31,7 +184,7 @@ AEM Assets als [!DNL Cloud Service] wordt gevormd met het Portaal van het Merk v
 >
 >Een AEM Assets als een [!DNL Cloud Service] instantie moet slechts met één merkportaalhuurder worden gevormd.
 
-## Vereisten {#prerequisites}
+**Vereisten**
 
 U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
@@ -47,7 +200,6 @@ Voer de volgende stappen in de opgegeven reeks uit om AEM Assets met Brand Porta
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
 1. [IMS-account configureren](#create-ims-account-configuration)
 1. [Cloudservice configureren](#configure-the-cloud-service)
-1. [Configuratie testen](#test-configuration)
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
@@ -233,89 +385,94 @@ Voer de volgende stappen uit om de merkportalcloudservice te configureren:
 
    Uw AEM Assets als [!DNL Cloud Service] instantie wordt nu gevormd met de Poorthuurder van het Merk.
 
-### Configuratie testen {#test-configuration}
+U kunt de configuratie nu testen door de distributieagent te controleren en elementen naar Brand Portal te publiceren.
 
-Voer de volgende stappen uit om de configuratie te valideren:
+<!--
+### Test configuration {#test-configuration}
 
-1. Meld u aan bij AEM Assets.
+Perform the following steps to validate the configuration:
 
-1. Navigeer in het deelvenster **Gereedschappen** naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. Log in to AEM Assets.
 
-   ![](assets/test-bpconfig1.png)
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   Een merkportal-distributieagent (**[!UICONTROL bpdistributionagent0]**) wordt gemaakt onder **[!UICONTROL Publish to Brand Portal]**.
+    ![](assets/test-bpconfig1.png)
+
+   A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
    ![](assets/test-bpconfig2.png)
 
 
-1. Klik **[!UICONTROL Publish to Brand Portal]** om de verdelingsagent te openen.
+1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
-   U kunt de distributielijnen onder **[!UICONTROL Status]** tabel zien.
+   You can see the distribution queues under the **[!UICONTROL Status]** tab. 
+   
+   A distribution agent contains two queues: 
+   * **processing-queue**: for the distribution of assets to Brand Portal. 
 
-   Een distributieagent bevat twee wachtrijen:
-   * **verwerkingswachtrij**: voor de distributie van assets naar Brand Portal.
-
-   * **foutenwachtrij**: voor de assets waarvoor de distributie is mislukt.
+   * **error-queue**: for the assets where distribution has failed. 
+   
    >[!NOTE]
    >
-   >Het wordt aanbevolen om de fouten te controleren en de **foutenwachtrij** regelmatig te wissen.
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
    ![](assets/test-bpconfig3.png)
 
-1. Als u de verbinding tussen AEM Assets als [!DNL Cloud Service] en Brand Portal wilt controleren, klikt u op het pictogram **[!UICONTROL Test Connection]**.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 
-   Er verschijnt een bericht dat uw *testpakket is geleverd*.
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
    >
-   >Schakel de distributieagent niet uit, want dit kan de distributie van de assets (die actief zijn in de wachtrij) doen mislukken.
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
-U kunt nu het volgende doen:
+You can now:
 
-* [Assets publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md)
-* [Mappen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Verzamelingen publiceren van AEM Assets naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Middelen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Asset Sourcing in Brand Portal
-* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
+* [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Zie [Handelsversie](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) voor meer informatie.
+See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
-## Distributielogboeken {#distribution-logs}
+## Distribution logs {#distribution-logs}
 
-U kunt de logboeken van de distributieagent voor de activa het publiceren werkschema controleren.
+You can monitor the distribution agent logs for the asset publishing workflow. 
 
-We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
+For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. Volg de stappen (van 1 tot 4) zoals aangetoond in [de sectie van de Configuratie van de Test](#test-configuration) en navigeer aan de pagina van de distributieagent.
-1. Klik **[!UICONTROL Logs]** om de verwerking en foutenlogboeken te bekijken.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
 
-De distributieagent heeft de volgende logboeken geproduceerd:
+The distribution agent has generated the following logs:
 
-* INFO: Dit is een systeem-geproduceerd logboek dat op succesvolle configuratie van de verdelingsagent teweegbrengt.
-* DSTRQ1 (aanvraag 1): geactiveerd tijdens testverbinding.
+* INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
+* DSTRQ1 (Request 1): Triggers on test connection.
 
-Bij het publiceren van de asset worden de volgende aanvraag- en antwoordlogboeken gegenereerd:
+On publishing the asset, the following request and response logs are generated:
 
-**Aanvraag van distributieagent**:
+**Distribution agent request**:
 
-* DSTRQ2 (aanvraag 2): de aanvraag voor het publiceren van de asset wordt geactiveerd.
-* DSTRK3 (verzoek 3): Het systeem activeert een andere aanvraag om de AEM Assets-map (waarin het element bestaat) te publiceren en repliceert de map in Brand Portal.
+* DSTRQ2 (Request 2): The asset publishing request is triggered.
+* DSTRQ3 (Request 3): The system triggers another request to publish the AEM Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
-**Antwoord van distributieagent**:
+**Distribution agent response**:
 
-* queue-bpdistributionagent0 (DSTRQ2): de asset wordt gepubliceerd naar Brand Portal.
-* queue-bpdistributionagent0 (DSTRQ3): Het systeem dupliceert de AEM Assets-map (die het element bevat) in Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
-In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend antwoord geactiveerd. Het systeem kan de bovenliggende map (Pad toevoegen) niet vinden in Brand Portal omdat het element voor het eerst is gepubliceerd. Daarom heeft het een extra verzoek geactiveerd om een bovenliggende map met dezelfde naam te maken in Brand Portal waar het element is gepubliceerd.
+In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
->Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in AEM Assets.
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
+-->
 
 <!--
 
