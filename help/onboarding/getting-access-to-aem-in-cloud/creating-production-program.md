@@ -2,9 +2,9 @@
 title: 'Een productieprogramma maken '
 description: 'Een productieprogramma maken '
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 Een *Production* programma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
 
 Voer de volgende stappen uit om een productieprogramma te maken:
+
+1. Start de openingspagina van Cloud Manager en klik op **Programma toevoegen** in de rechterbovenhoek van het scherm.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Raadpleeg [Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
 
 1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een Programma van de Productie tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **Doorgaan** te selecteren.
 
