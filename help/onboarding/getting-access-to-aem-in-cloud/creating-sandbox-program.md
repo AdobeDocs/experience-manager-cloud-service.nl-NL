@@ -2,9 +2,9 @@
 title: 'Sandboxprogramma''s maken '
 description: 'Sandboxprogramma''s maken '
 translation-type: tm+mt
-source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,13 @@ ht-degree: 0%
 # Sandboxprogramma {#create-sandbox-program} maken
 
 Voer de onderstaande stappen uit om een sandboxprogramma te maken:
+
+1. Start de openingspagina van Cloud Manager en klik op **Programma toevoegen** in de rechterbovenhoek van het scherm.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Raadpleeg [Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
 
 1. Selecteer **Een sandbox** instellen in de wizard Programma maken. Gebruiker verzendt programmanaam alvorens **Create** te selecteren.
 
