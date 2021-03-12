@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
@@ -210,13 +210,20 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 
 ### Nieuw in de Hulpmiddelen {#what-is-new-crt} van de Refactoring van de Code
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat verschillende foutoplossingen voor de Repository Modernizer.
-Raadpleeg [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) voor meer informatie over deze plug-in.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De nieuwste versie van deze plug-in bevat verschillende nieuwe functies en oplossingen voor problemen in de Repository Modernizer en de Dispatcher Converter.    Raadpleeg [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) voor meer informatie over deze plug-in.
 
-### Opgeloste problemen {#bug-fixes-crt}
+* Nieuwe en verbeterde functies voor Repository Modernizer. Verwijs naar [Middel GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor de nieuwste versie.
+   * Normaliseer OSGi vormt (behalve vormen RepoInit) aan het aangewezen.cfg.json formaat.
+   * Wijzig de naam van de OSGi config-mappen in de opgegeven indeling.
+   * Genereer het project ui.apps.structure.
+   * Maak de analysemodule.
 
-* Verschillende opgeloste problemen zijn opgelost in de Repository Modernizer.
-Verwijs naar [Middel GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
+* Nieuwe en verbeterde functies voor Dispatcher Converter. Verwijs naar [Middel GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * Het maken van afzonderlijke bestanden voor verschillende insluitingen in plaats van voor het uitlijnen van de inhoud.
+   * Mogelijkheid om zowel het mappad van hosts als het pad naar de hostbestanden af te handelen.
+   * De generatie van landbouwbedrijfdossiers met grote klantenconfiguraties in waaier van 600 en meer.
+
+
 
 
 
