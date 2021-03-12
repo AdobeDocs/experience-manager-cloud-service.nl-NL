@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2307'
 ht-degree: 51%
 
 ---
@@ -209,6 +209,8 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
 
+Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen, hetzij door de gemelde problemen te verhelpen, hetzij door contact op te nemen met de ondersteuning van Adobe.
+
 Op de pagina *Overview* kunt u de logboeken voor een bestaande migratieset bekijken.
 Voer de onderstaande stappen uit:
 
@@ -268,6 +270,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 Raadpleeg [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) voor meer informatie.
 
 De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunnen vervolgens worden gecontroleerd op paden met ontbrekende binaire elementen en op de juiste manier gecorrigeerd, zoals herstellen via een back-up, paden verwijderen, opnieuw indexeren, enzovoort.
+
 
 ### Gedrag van gebruikersinterface {#ui-behavior}
 
