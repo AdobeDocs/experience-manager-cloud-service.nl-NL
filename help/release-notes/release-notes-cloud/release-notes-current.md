@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
+source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.3.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.3.0.
 
 ## Releasedatum {#release-date-cm-march}
 
