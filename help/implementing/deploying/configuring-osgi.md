@@ -2,7 +2,7 @@
 title: OSGi configureren voor AEM as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 translation-type: tm+mt
-source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 1%
@@ -164,11 +164,11 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## OSGi-configuraties maken
+## OSGi-configuraties maken {#creating-sogi-configurations}
 
 Er zijn twee manieren om nieuwe configuraties tot stand te brengen OSGi, zoals hieronder beschreven. De eerste benadering wordt typisch gebruikt voor het vormen van componenten van douaneOSGi die bekende eigenschappen OSGi en waarden door de ontwikkelaar, en laatstgenoemde voor AEM-verstrekte componenten OSGi hebben.
 
-### OSGi-configuraties schrijven
+### OSGi-configuraties {#writing-osgi-configurations} schrijven
 
 De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM project worden geschreven. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
 
@@ -180,7 +180,7 @@ Merk op dat OSGi de namen van de de configuratiefabrieksdossiers, de  `<PID>-<fa
 1. Sla uw wijzigingen op in het nieuwe `.cfg.json`-bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
 
-### OSGi-configuraties genereren met de AEM SDK QuickStart
+### OSGi-configuraties genereren met de AEM SDK QuickStart {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}
 
 De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt componenten OSGi, en de configuraties van export OSGi als JSON. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt. Merk op dat het gebruiken van de Configuratie UI van de AEMConsole van het Web `.cfg.json` dossiers in de bewaarplaats schrijft, zodat bewust van dit om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
@@ -203,7 +203,7 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe.
 
 
-## Indelingen van eigenschappen van OSGi-configuratie
+## OSGi Indelingen van het Bezit van de Configuratie {#osgi-configuration-property-formats}
 
 ### Inline-waarden {#inline-values}
 
@@ -546,7 +546,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Zie [deze pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over het configureren van waarden met de plug-in Cloud Manager voor Adobe I/O CLI.
+>Zie [deze pagina](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over hoe u waarden kunt configureren met de plug-in Cloud Manager voor Adobe I/O CLI.
 
 ### Aantal variabelen {#number-of-variables}
 
