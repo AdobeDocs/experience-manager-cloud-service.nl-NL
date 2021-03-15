@@ -2,9 +2,9 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
+source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3229'
 ht-degree: 1%
 
 ---
@@ -62,6 +62,8 @@ Alle inhoud en code die in de onveranderlijke gegevensopslagplaats voortkomen, m
 Aangezien de toepassingsveranderingen toe te schrijven aan het blauw-Groene plaatsingspatroon door een schakelaar worden toegelaten, kunnen zij niet van veranderingen in de veranderbare bewaarplaats met uitzondering van de dienstgebruikers, hun ACLs, nodetypes en de veranderingen van de indexdefinitie afhangen.
 
 Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM documentatie beschreven herstructureringsoefening in de opslagplaats wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
+
+Voor deze codepakketten gelden enkele aanvullende beperkingen, bijvoorbeeld [installatiekoppelingen](http://jackrabbit.apache.org/filevault/installhooks.html) worden niet ondersteund.
 
 ## OSGI-configuratie {#osgi-configuration}
 
