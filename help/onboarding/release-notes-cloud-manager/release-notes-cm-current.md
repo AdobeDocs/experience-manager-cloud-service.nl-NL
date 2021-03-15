@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,8 +26,8 @@ De volgende release is gepland voor 8 april 2021.
 * Klanten met omgevingen met reeds bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zullen een bericht zien over hun eerdere bestaande configuraties en zullen zichzelf kunnen bedienen via de gebruikersinterface.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
-   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa (of vice versa) toe.
-   * Sites (of Middelen) verwijderen uit een bestaand programma met zowel Sites als Middelen.
+   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
+   * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
 * **AEM Push** Updatelabel zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
