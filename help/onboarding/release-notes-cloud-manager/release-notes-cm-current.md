@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -30,21 +30,21 @@ De volgende release is gepland voor 8 april 2021.
    * Sites (of Middelen) verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
-* AEM het etiket van de Update van de Duw&quot;zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
+* **AEM Push** Updatelabel zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
 
-* Als een omgeving is gehiberneerd maar er ook een AEM update beschikbaar is, heeft de status &quot;Hibernated&quot; voorrang op &quot;Update available&quot;.
+* Als een milieu gehiberneerd maar er ook een AEM beschikbare update is, zal **Gesambernated** status belangrijkheid over **beschikbare Update** nemen.
 
 * Gebruikers kunnen nu hun rol(en) in de cloud Manager zien door de optie &#39;Rol(en) in de cloud-manager weergeven&#39; te selecteren nadat ze naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell zijn genavigeerd.
 
-* Voor meer duidelijkheid is het etiket &quot;Goedkeuringsaanvraag&quot; gelabeld aan &quot;Goedkeuring van de productie&quot;.
+* Het label **Goedkeuringsaanvraag** is voor meer duidelijkheid opnieuw gelabeld aan **Productiegoedkeuring**.
 
-* Het &quot;Versielabel&quot;etiket is opnieuw gelabeld aan &quot;Git Markering&quot;in het scherm van de de pijpleiding van de Productie uitvoeren.
+* Het **Version**-label is opnieuw gelabeld aan **Git Tag** in het uitvoeringsscherm van de productiepijplijn.
 
-* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn geëtiketteerd om op hun ware gedrag te wijzen - onmiddellijk annuleren en Onmiddellijk goedkeuren.
+* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **Onmiddellijk annuleren** en **Direct goedkeuren**.
 
 * De lijsten van de klasse en van de methodevervanging zijn bijgewerkt gebaseerd op versie `2021.3.4997.20210303T022849Z-210225` van de AEM Cloud Service SDK.
 
-* De productiepijplijn van de Manager van de Wolk zal nu het testen UI van de Douane mogelijkheden omvatten.
+* De productiepijplijn van de Manager van de wolk zal [Aangepaste UI het Testen](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capaciteit nu omvatten.
 
 ### Opgeloste problemen {#bug-fixes}
 
