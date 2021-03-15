@@ -2,9 +2,9 @@
 title: Status van IP-Lijst van gewenste personen controleren
 description: Status van IP-Lijst van gewenste personen controleren
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,15 @@ Zodra de verrichting van de Schrapping wordt voltooid, zal de IP Lijst van gewen
    * De status Verwijderen is mislukt, zelfs als de toepassing ongedaan wordt gemaakt.
    * De status blijft Verwijderen mislukt totdat alle fouten zijn gewist. Gebruiker moet Verwijderen selecteren in **..** menu uiterst rechts van de rij in de lijst om het even welke mislukking te ontruimen.
    * De gebruiker zal niet toestaan om IP Lijst van gewenste personen bij te werken terwijl de status Ontbroken is.
+
+## Bestaande configuraties CDN voor IP Lijsten van gewenste personen {#pre-existing-cdn}
+
+Klanten met milieu&#39;s die reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten of de Namen van het Domein van de Douane omvatten zullen het volgende bericht in **IP Lijst van gewenste personen** en **Environment** detailspagina zien.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Om de reeds bestaande configuraties te zien en te beheren moeten zij via UI worden toegevoegd, zoals aangetoond in hieronder figuur.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
