@@ -3,10 +3,10 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
+source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
 workflow-type: tm+mt
-source-wordcount: '2617'
-ht-degree: 26%
+source-wordcount: '2620'
+ht-degree: 27%
 
 ---
 
@@ -28,7 +28,7 @@ Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lok
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Voor [!DNL Adobe Experience Manager] implementatietypen wordt aan een van de ondersteunde criteria voldaan. Zie [Verbonden elementen in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) voor meer informatie over hoe deze functionaliteit werkt in [!DNL Experience Manager] 6.5.
+* Voor [!DNL Adobe Experience Manager] implementatietypen wordt aan een van de ondersteunde criteria voldaan. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] 6.5 werkt, zie [Verbonden Activa in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] als  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -45,7 +45,7 @@ Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszo
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
 
-Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. Het verre werkingsgebied wordt gebruikt voor de plaatsing DAM. De auteur [!DNL Sites] haalt deze externe elementen op.
+Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De auteur [!DNL Sites] haalt deze externe elementen op.
 
 | Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
 |------|--------|-----------|-----|----------|
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
 
 1. Zorg ervoor dat de gebruikers en rollen met het juiste bereik aanwezig zijn op de [!DNL Sites]-implementatie en op de [!DNL Assets]-implementatie op AMS. Creeer een technische gebruiker op [!DNL Assets] plaatsing en voeg aan de gebruikersgroep toe die in [betrokken gebruikers en groepen](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved) wordt vermeld.
 
-1. Open de lokale [!DNL Sites]-implementatie op `https://[sites_servername]:port`. Klik **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]**. Geef de volgende waarden op:
+1. Open de lokale [!DNL Sites]-implementatie op `https://[sites_servername]:port`. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** en geef de volgende waarden op:
 
    1. A **[!UICONTROL Title]** van de configuratie.
    1. **[!UICONTROL Remote DAM URL]** is de URL van de  [!DNL Assets] locatie in de notatie  `https://[assets_servername]:[port]`.
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
 
    *Afbeelding: Een standaardconfiguratie voor de functionaliteit van Connected Assets.*
 
-1. De bestaande digitale middelen op [!DNL Assets]-implementatie worden al verwerkt en de uitvoeringen worden gegenereerd. Deze worden opgehaald met deze functie, zodat het niet nodig is de uitvoeringen opnieuw te genereren. Schakel de workflowdraagprogramma&#39;s uit om te voorkomen dat uitvoeringen opnieuw worden gegenereerd. Pas de startconfiguraties van de implementatie ([!DNL Sites]) aan om de map `connectedassets` uit te sluiten (de elementen worden opgehaald in deze map).
+1. De bestaande digitale middelen op [!DNL Assets]-implementatie worden al verwerkt en de uitvoeringen worden gegenereerd. Deze vertoningen worden opgehaald gebruikend deze functionaliteit zodat is er geen behoefte om de vertoningen opnieuw te produceren. Schakel de workflowdraagprogramma&#39;s uit om te voorkomen dat uitvoeringen opnieuw worden gegenereerd. Pas de startconfiguraties van de implementatie ([!DNL Sites]) aan om de map `connectedassets` uit te sluiten (de elementen worden opgehaald in deze map).
 
    1. Klik bij [!DNL Sites]-implementatie op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
    1. Wijzig in de wizard [!UICONTROL Properties] de velden **[!UICONTROL Path]** als de volgende toewijzingen om de reguliere expressies bij te werken om het koppelingspunt **[!UICONTROL connectedassets]** uit te sluiten.
 
    | Voor | Na |
-   | ------------------------------------------------------- | -------------------------------------------------------------------------- |
+   | ------ | ------------ |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
@@ -125,7 +125,7 @@ Alleen die tags met externe elementen worden opgehaald die een exact overeenkome
 Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervaring beter te begrijpen. Gebruik documenten of afbeeldingen van uw keuze op de externe DAM-implementatie.
 
 1. Navigeer naar de [!DNL Assets]-interface op de externe implementatie door **[!UICONTROL Assets]** > **[!UICONTROL Files]** vanuit [!DNL Experience Manager]-werkruimte te openen. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
-1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de &lt;a0/>-implementatie. **[!UICONTROL Impersonate as]** Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
+1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
 1. Open een websitepagina van het type Web.Retail op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
 
    Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
