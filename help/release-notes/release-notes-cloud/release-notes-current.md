@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 0%
@@ -87,8 +87,8 @@ De volgende release is gepland voor 8 april 2021.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
 
-   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa (of vice versa) toe.
-   * Sites (of Middelen) verwijderen uit een bestaand programma met zowel Sites als Middelen.
+   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
+   * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
 * **AEM Push** Updatelabel wordt nu weergegeven voor zowel  *Pipeline* Execution als  ** Activiteitsschermen.
