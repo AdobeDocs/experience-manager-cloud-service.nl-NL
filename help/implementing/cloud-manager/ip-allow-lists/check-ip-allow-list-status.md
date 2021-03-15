@@ -2,7 +2,7 @@
 title: Status van IP-Lijst van gewenste personen controleren
 description: Status van IP-Lijst van gewenste personen controleren
 translation-type: tm+mt
-source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Zodra de verrichting van de Schrapping wordt voltooid, zal de IP Lijst van gewen
 
 ## Bestaande configuraties CDN voor IP Lijsten van gewenste personen {#pre-existing-cdn}
 
-Klanten met milieu&#39;s die reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten of de Namen van het Domein van de Douane omvatten zullen het volgende bericht in **IP Lijst van gewenste personen** en **Environment** detailspagina zien. Het bericht dat op UI wordt getoond zal verdwijnen zodra de klant alle reeds bestaande omgevingsconfiguraties via UI volledig heeft gemigreerd en het kan 1-2 werkdagen voor het bericht vergen om te verdwijnen.
+Klanten met omgevingen die reeds bestaande CDN-configuraties voor IP-Lijsten van gewenste personen, SSL-certificaten of aangepaste domeinnamen bevatten, zien het volgende bericht in de detailpagina **IP Lijst van gewenste personen** en **Environment**. Het bericht dat op UI wordt getoond zal verdwijnen zodra de klant alle reeds bestaande omgevingsconfiguraties via UI volledig heeft gemigreerd en het kan 1-2 werkdagen voor het bericht vergen om te verdwijnen.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
