@@ -3,9 +3,9 @@ title: XMP-metadata
 description: Meer informatie over de metagegevensstandaard van de XMP (Extensible Metadata Platform) voor metagegevensbeheer. Deze wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '981'
 ht-degree: 16%
 
 ---
@@ -72,21 +72,19 @@ XMP biedt u de mogelijkheid om een eigenschap `xml:lang` toe te voegen aan tekst
 
 ## Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
-Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens voor een element wijzigt vanuit [!DNL Assets] of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het knooppunt met middelen in de opslagplaats. De XMP functie voor terugschrijven geeft de metagegevenswijzigingen door in alle of in specifieke uitvoeringen van het element.
+Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens voor een element wijzigt vanuit [!DNL Assets] of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het knooppunt met middelen in de opslagplaats. [!DNL Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De updates worden opgeslagen in het metagegevensknooppunt in de elementenhiërarchie. Met deze functie worden ook de updates in de binaire bestanden van de uitvoeringen ingesloten. De functie schrijft alleen die metagegevenseigenschappen terug die een naamruimte `jcr` gebruiken.
 
-Overweeg een scenario waarbij u de [!UICONTROL Title] eigenschap van het element `Classic Leather` aan `Nylon` wijzigt.
+Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element `Classic Leather` wijzigt in `Nylon`.
 
 ![metadata](assets/metadata.png)
 
 In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![metadata_stored](assets/metadata_stored.png)
+![metagegevens die zijn opgeslagen in het knooppunt asset in de gegevensopslagruimte](assets/metadata_stored.png)
 
-[!DNL Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element.
-
-Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De wijzigingen worden echter niet opgeslagen onder het metagegevensknooppunt in de elementenhiërarchie. In plaats daarvan worden de wijzigingen in de binaire bestanden van de uitvoeringen ingesloten.
-
-De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. Zie hoe te [toelaten meta-gegevensschrijver](#enable-xmp-writeback).
+>[!NOTE]
+>
+>De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. Zie hoe te [toelaten meta-gegevensschrijver](#enable-xmp-writeback).
 
 ### Terugschrijven XMP {#enable-xmp-writeback} inschakelen
 
@@ -95,11 +93,11 @@ De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. 
 1. Als beheerder, toegang **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 1. Selecteer [!UICONTROL Launcher] waarvoor **[!UICONTROL DAM MetaData Writeback]** kolomvertoningen **[!UICONTROL Workflow]**. Klik op **[!UICONTROL Properties]** op de werkbalk.
 
-   ![Selecteer DAM-lanceerprogramma voor metagegevens om de eigenschappen ervan te wijzigen en deze te activeren](assets/launcher-properties-metadata-writeback1.png)
+   ![Open de DAM-wizard voor het schrijven van metagegevens om de eigenschappen ervan te wijzigen en te activeren](assets/launcher-properties-metadata-writeback1.png)
 
-1. Selecteer **[!UICONTROL Activate]** op de [!UICONTROL Launcher Properties] pagina. Klik op **[!UICONTROL Save & Close]**.
+1. Selecteer **[!UICONTROL Activate]** op de **[!UICONTROL Launcher Properties]** pagina. Klik op **[!UICONTROL Save & Close]**.
 
-Als u deze workflow eenmalig op een element wilt toepassen, past u de workflow [!UICONTROL DAM Metadata Writeback] vanuit de linkerrail toe. Als u de workflow wilt toepassen op de geüploade elementen, voegt u de workflow toe aan een naverwerkingsprofiel.
+Als u deze workflow slechts eenmaal op een element wilt toepassen, past u de workflow [!UICONTROL DAM Metadata Writeback] vanuit de linkerrail toe. Als u de workflow op alle geüploade elementen wilt toepassen, voegt u de workflow toe aan een naverwerkingsprofiel.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
