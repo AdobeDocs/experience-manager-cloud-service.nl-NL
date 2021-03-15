@@ -3,10 +3,10 @@ title: AEM Assets configureren als een [!DNL Cloud Service] met Brand Portal
 description: AEM Assets configureren met Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 15%
+source-wordcount: '2269'
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgeke
 
 ## Brand-portal activeren met Cloud Manager {#activate-brand-portal}
 
-De gebruiker van de Manager van de Wolk activeert Brand Portal voor een AEM Assets als [!DNL Cloud Service] instantie. De activeringsworkflow maakt de vereiste configuraties (machtigingstoken, IMS-configuratie en merkenportalwolkenservice) op de achtergrond en geeft de status weer van de Pantagonist van het Brand Portal in Cloud Manager.
+De gebruiker van de Manager van de Wolk activeert Brand Portal voor een AEM Assets als [!DNL Cloud Service] instantie. De activeringsworkflow maakt de vereiste configuraties (machtigingstoken, IMS-configuratie en merkenportalwolkenservice) op de achtergrond en geeft de status weer van de Pantagonist van het Brand Portal in Cloud Manager. Door het activeren van het Brand Portal kunnen AEM Assets-gebruikers elementen publiceren naar het Brand Portal en deze verspreiden onder de gebruikers van het Brand Portal.
 
 **Vereisten**
 
@@ -28,7 +28,7 @@ U hebt het volgende nodig om Brand Portal op uw AEM Assets te activeren als een 
 
 >[!NOTE]
 >
->Een AEM Assets als [!DNL Cloud Service] instantie is gerechtigd om slechts één Poorthuurder van het Merk aan te sluiten. U kunt meerdere omgevingen (ontwikkeling, productie en werkgebied) voor uw AEM Assets maken als een [!DNL Cloud Service]-exemplaar, waarbij Brand Portal slechts op één omgeving wordt geactiveerd.
+>Een AEM Assets als [!DNL Cloud Service] instantie is gerechtigd om met slechts één Poorthuurder van het Merk te verbinden. U kunt meerdere omgevingen (ontwikkeling, productie en werkgebied) voor uw AEM Assets hebben als een [!DNL Cloud Service]-exemplaar, waarbij Brand Portal op één omgeving is geactiveerd.
 
 **Stappen om Brand Portal te activeren**
 
@@ -46,9 +46,18 @@ U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt a
 
    ![Merkportal activeren](assets/create-environment4.png)
 
-1. Het kan een paar minuten duren om de Poorthuurder van het Merk te activeren aangezien de activeringswerkschema tot de vereiste configuraties bij het achtereind leidt. Zodra de Poorthuurder van het Merk wordt geactiveerd, verandert de status in Geactiveerd.
+1. Het duurt weinig minuten om de Poorthuurder van het Merk te activeren aangezien het activeringswerkschema tot de vereiste configuraties bij het achtereind leidt. Zodra de Poorthuurder van het Merk wordt geactiveerd, verandert de status in Geactiveerd.
 
    ![Status weergeven](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>Merkportal moet op dezelfde IMS org als de AEM Assets worden geactiveerd als een [!DNL Cloud Service]-instantie.
+>
+>Als u een bestaande Brand Portal-wolkenconfiguratie ([handmatig geconfigureerd met Adobe Developer Console](#manual-configuration)) hebt voor een IMS org (org1-bestaand) en uw AEM Assets als een [!DNL Cloud Service]-instantie is geconfigureerd voor een andere IMS org (org2-nieuw), wordt door het activeren van Brand Portal van de Cloud Manager de Brand Portal IMS org teruggezet op `org2-new`. Hoewel de handmatig geconfigureerde cloudconfiguratie op `org1-existing` zichtbaar is in de AEM Assets-auteur, maar niet meer wordt gebruikt na activering van Brand Portal in Cloud Manager.
+>
+>Als de bestaande Brand Portal-cloudconfiguratie en AEM Assets als een [!DNL Cloud Service]-instantie dezelfde IMS org (org1) gebruiken, hoeft u het Brand Portal alleen te activeren via Cloud Manager.
 
 **Zie ook**:
 * [Gebruikers en rollen toevoegen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Na activering van uw Brand Portal-huurder in Cloud Manager kunt u zich aanmelden
 
 De standaard-URL van uw Poorthuurder voor merken is: `https://<tenant-id>.brand-portal.adobe.com/`.
 
+Daar is de Tenant-id de IMS org.
+
 Voer de volgende stappen uit als u niet zeker bent van de URL van het Brand Portal:
 
 1. Meld u aan bij [Admin Console](http://adminconsole.adobe.com/) en navigeer naar **[!UICONTROL Products]**.
 1. Selecteer **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** in het linkerspoor.
 1. Klik op **[!UICONTROL Go to Brand Portal]** om Brand Portal rechtstreeks in de browser te openen.
 
-   Of kopieer de URL van de medewerker van het Brand Portal en plak deze in uw browser om de interface Brand Portal te openen.
+   Of kopieer de Poorthuurder URL van het Merk Portaal van de **[!UICONTROL Go to Brand Portal]** verbinding en kleef het in uw browser om de interface van het Portaal van het Merk te openen.
 
    ![Access Brand Portal](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Zie [Handelsversie](https://docs.adobe.com/content/help/en/experience-manager-br
 
 U kunt de logboeken van de distributieagent voor de activa het publiceren werkschema controleren.
 
-We hebben bijvoorbeeld een middel van AEM Assets naar Brand Portal gepubliceerd om de configuratie te valideren.
+Laten we nu een middel van AEM Assets naar Brand Portal publiceren en de logboeken bekijken.
 
-1. Volg de stappen (van 1 tot 4) zoals aangetoond in [de sectie van de Configuratie van de Test](#test-configuration) en navigeer aan de pagina van de distributieagent.
+1. Voer de stappen uit (van 1 tot en met 4) zoals aangegeven in de sectie **Verbinding testen** en navigeer naar de pagina voor de distributieagent.
 1. Klik **[!UICONTROL Logs]** om de verwerking en foutenlogboeken te bekijken.
 
    ![](assets/test-bpconfig5.png)
 
 De distributieagent heeft de volgende logboeken geproduceerd:
 
-* INFO: Dit is een systeem-geproduceerd logboek dat op succesvolle configuratie van de verdelingsagent teweegbrengt.
+* INFO: Het is een systeem-geproduceerd logboek dat op succesvolle configuratie van de verdelingsagent teweegbrengt.
 * DSTRQ1 (aanvraag 1): geactiveerd tijdens testverbinding.
 
 Bij het publiceren van de asset worden de volgende aanvraag- en antwoordlogboeken gegenereerd:
@@ -164,7 +175,7 @@ Samen met de automatiseringsworkflow om Brand Portal op AEM Assets te activeren 
 
 >[!NOTE]
 >
->U moet contact opnemen met de Adobe-ondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
+>Neem contact op met de Adobe-ondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
 
 ## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
 
@@ -225,7 +236,7 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe 
 
 1. Klik op het pictogram **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (CRT) op uw computer op.
 
-   De openbare sleutel zal later worden gebruikt om API voor uw Poorthuurder van het Merk te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
+   De openbare sleutel wordt later gebruikt om API voor uw Poorthuurder van het Merk te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
 
    ![Download Certificate](assets/ims-config3.png)
 
