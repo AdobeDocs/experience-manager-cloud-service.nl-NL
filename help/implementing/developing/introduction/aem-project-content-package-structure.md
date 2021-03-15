@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2850'
 ht-degree: 13%
 
 ---
@@ -87,6 +87,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Groepen
          + ACLs (toestemmingen)
 
+
 ### Inhoudspakketten
 
 + Het `ui.content`-pakket bevat alle inhoud en configuratie. Het inhoudspakket bevat alle knoopdefinities die niet in de pakketten `ui.apps` of `ui.config` of in andere woorden, niets in `/apps` of `/oak:index` staan. Veelvoorkomende elementen van het `ui.content`-pakket zijn onder meer:
@@ -138,9 +139,10 @@ Bijvoorbeeld, zou een AEM project dat 2 verkoper AEM toepassingen omvat als kunn
 
 Pakketten moeten worden gemarkeerd met het opgegeven pakkettype.
 
-+ Containerpakketten moeten hun `packageType` instellen op `container`.
++ Containerpakketten moeten hun `packageType` instellen op `container`. Containerpakketten mogen geen OSGi-bundels, OSGi-configuraties direct bevatten en mogen geen [installatiekoppels](http://jackrabbit.apache.org/filevault/installhooks.html) gebruiken.
 + Codepakketten (onveranderlijk) moeten hun `packageType` aan `application` plaatsen.
 + Inhoudspakketten (veranderbare pakketten) moeten hun `packageType` op `content` plaatsen.
+
 
 Zie [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) en het [FileVault Maven configuratiesfragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder voor meer informatie.
 
@@ -263,7 +265,7 @@ Voeg eenvoudig de `<filter root="/apps/<my-app>-packages"/>` ingangen voor om he
 
 ## Pakketten van derden insluiten {#embedding-3rd-party-packages}
 
-Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten[ of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)
+Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.[
 
 Als de pakketten van derden zich in de **openbare Maven-artefactopslagplaats van Adobe** bevinden, is geen verdere configuratie nodig wanneer Adobe Cloud Manager de artefacten oplost.
 
@@ -293,7 +295,7 @@ De gemeenschappelijke patronen voor tevreden pakketgebiedsdelen zijn:
 
 ### Eenvoudige implementatiepakketafhankelijke {#simple-deployment-package-dependencies}
 
-Met de eenvoudige optie wordt het veranderbare inhoudspakket `ui.content` ingesteld, zodat dit afhankelijk is van het onveranderlijke codepakket `ui.apps`.
+Met de eenvoudige optie wordt het veranderbare inhoudspakket `ui.content` ingesteld op basis van het onveranderlijke codepakket `ui.apps`.
 
 + `all` heeft geen afhankelijkheden
    + `ui.apps` heeft geen afhankelijkheden
