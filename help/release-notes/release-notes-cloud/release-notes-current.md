@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -83,12 +83,13 @@ De volgende release is gepland voor 8 april 2021.
 
 ### Wat is er nieuw?{#what-is-new-march}
 
-* Klanten met omgevingen met reeds bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zullen een bericht zien over hun eerdere bestaande configuraties en zullen zichzelf kunnen bedienen via de gebruikersinterface. Gebruikers kunnen nu:
+* Klanten met omgevingen met reeds bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zullen een bericht zien over hun eerdere bestaande configuraties en zullen zichzelf kunnen bedienen via de gebruikersinterface.
+
+* Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
+
    * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa (of vice versa) toe.
    * Sites (of Middelen) verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
-
-* Gebruikers met de vereiste machtigingen kunnen het programma nu bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen.
 
 * **AEM Push** Updatelabel wordt nu weergegeven voor zowel  *Pipeline* Execution als  ** Activiteitsschermen.
 
