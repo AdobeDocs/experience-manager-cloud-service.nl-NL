@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,12 @@ DeletingDeletion of Custom Domain name is in process.
 * **Verwijderen**
 FailedDeletion of Custom Domain name failed. U moet het opnieuw proberen. Raadpleeg [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) voor meer informatie.
 
+
+## Bestaande configuraties CDN voor IP Lijsten van gewenste personen {#pre-existing-cdn}
+
+Klanten met milieu&#39;s die reeds bestaande CDN configuraties voor IP Lijsten van gewenste personen (SSL certificaten of de Namen van het Domein van de Douane) omvatten zullen het volgende bericht in **IP Lijst van gewenste personen** en **Milieu** detailspagina zien.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+Om de reeds bestaande configuraties te kunnen zien en beheren moeten zij via UI worden toegevoegd.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
