@@ -2,9 +2,9 @@
 title: Status controleren van een SSL-certificaat - SSL-certificaten beheren
 description: Status controleren van een SSL-certificaat - SSL-certificaten beheren
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -24,3 +24,14 @@ OrangeGeeft aan dat uw certificaat over minder dan 60 dagen verloopt. Het is tij
 
 * ****
 RedGeeft aan dat uw SSL-certificaat ondanks meerdere meldingen is verlopen.
+
+## Bestaande configuraties CDN voor IP Lijsten van gewenste personen {#pre-existing-cdn}
+
+Klanten met milieu&#39;s die reeds bestaande configuraties CDN voor IP Lijsten van gewenste personen, SSL certificaten of de Namen van het Domein van de Douane omvatten zullen het volgende bericht in **IP Lijst van gewenste personen** en **Environment** detailspagina zien.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Om de reeds bestaande configuraties te zien en te beheren moeten zij via UI worden toegevoegd, zoals aangetoond in hieronder figuur.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
