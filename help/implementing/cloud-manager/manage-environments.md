@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -158,6 +158,10 @@ De volgende acties kunnen worden uitgevoerd op de service Publiceren voor uw omg
 1. [Een aangepaste domeinnaam weergeven en bijwerken](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
 1. [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+1. [Status controleren van aangepaste domeinnaam ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of een  [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+1. [De Status van een IP Lijsten van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
