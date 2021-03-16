@@ -2,10 +2,10 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 translation-type: tm+mt
-source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
+source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 7%
+source-wordcount: '1104'
+ht-degree: 5%
 
 ---
 
@@ -20,17 +20,35 @@ Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde
 
 ## Belangrijke overwegingen {#important-considerations}
 
-Er zijn enkele uitzonderlijke gevallen die in overweging moeten worden genomen. De volgende specifieke gevallen worden geregistreerd en de betrokken gebruiker of groep wordt niet toegewezen:
+### Uitzonderlijke gevallen {#exceptional-cases}
 
-1. Als een gebruiker geen e-mailadres heeft op het `profile/email` gebied van hun *jcr* knoop.
+De volgende specifieke gevallen worden geregistreerd:
 
-1. Als een bepaalde e-mail niet wordt gevonden op het Adobe Identity Management System (IMS)-systeem voor de gebruikte organisatie-id (of als de IMS-id om een andere reden niet kan worden opgehaald).
+1. Als een gebruiker geen e-mailadres heeft op het `profile/email` gebied van hun *jcr* knoop zal de gebruiker of de groep in kwestie worden gemigreerd maar niet in kaart gebracht.
+
+1. Als een bepaalde e-mail niet wordt gevonden op het Adobe Identity Management System (IMS) voor de gebruikte organisatie-id (of als de IMS-id om een andere reden niet kan worden opgehaald), wordt de gebruiker of groep in kwestie gemigreerd, maar niet toegewezen.
 
 1. Als de gebruiker momenteel is uitgeschakeld, wordt deze op dezelfde manier behandeld als wanneer de gebruiker niet is uitgeschakeld. Het wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
 
+1. Als een gebruiker op de instantie van de doel AEM Cloud Service met de zelfde gebruikersnaam (rep:principalName) zoals één van de gebruikers op de bron AEM instantie bestaat zal de gebruiker of de groep in kwestie niet worden gemigreerd.
+
+### Aanvullende overwegingen {#additional-considerations}
+
+* Als de instelling **Bestaande inhoud vegen op een Cloud-instantie voordat inname** wordt ingesteld, worden reeds overgedragen gebruikers op de Cloud Service-instantie samen met de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt om inhoud in te voeren. Dit stelt ook alle montages met inbegrip van toestemmingen op de instantie van de doelCloud Service terug en is waar voor een admin gebruiker die aan **beheerders** groep wordt toegevoegd. De admin gebruiker zal aan **beheerders** groep opnieuw moeten worden toegevoegd om het toegangstoken voor CTT terug te winnen.
+
+* Het wordt geadviseerd om het even welke bestaande gebruiker uit de AEM van de doelCloud Service te verwijderen alvorens CTT met Toewijzing van de Gebruiker in werking te stellen. Hiermee wordt elk conflict voorkomen tussen het migreren van gebruikers van de AEM naar de AEM instantie van het doel. Conflicten treden op tijdens inname als dezelfde gebruiker bestaat op de bron AEM instantie en de AEM instantie.
+
+* Wanneer de inhoud toevoegt wordt uitgevoerd, als de inhoud niet wordt overgebracht omdat het sinds de vorige overdracht niet is veranderd, zullen de gebruikers en de groepen verbonden aan die inhoud ook niet worden overgebracht, zelfs als de gebruikers en de groepen ondertussen zijn veranderd. Dit komt doordat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
+
+* De inname zal in de volgende scenario&#39;s ontbreken:
+
+1. Als de AEM Cloud Service van het doel een gebruiker met een verschillende gebruikersnaam maar zelfde e-mailadres heeft zoals één van de gebruikers op de bron AEM instantie.
+
+1. Als er twee gebruikers op de AEM zijn met verschillende gebruikersnamen maar hetzelfde e-mailadres. AEM als Cloud Service staat twee gebruikers niet toe om hetzelfde e-mailadres te hebben.
+
 ## Het gebruiken van het Hulpmiddel van de Toewijzing van de Gebruiker {#using-user-mapping-tool}
 
-Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van de Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
+Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 
 Voer de onderstaande stappen uit om dit in te stellen:
 
@@ -84,6 +102,4 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Als u de extractiefase wilt uitvoeren, raadpleegt u [Het gereedschap Inhoud overbrengen uitvoeren](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
-
 
