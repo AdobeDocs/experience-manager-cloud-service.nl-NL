@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
+source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
 1. Configureer uw implementatieopties.
 
-   ![](assets/setup-2.png)
+   ![](assets/setup-pipeline.png)
 
    U kunt de trekker bepalen om de pijpleiding te beginnen:
 
@@ -74,8 +74,8 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
 
    * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
-   * **Onmiddellijk**  afbreken - Als deze optie is geselecteerd, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-   * **Ga onmiddellijk**  verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+   * **Onmiddellijk**  annuleren - Als u deze optie selecteert, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+   * **Direct**  goedkeuren - Als geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
 1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als **ErvingsAudit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
