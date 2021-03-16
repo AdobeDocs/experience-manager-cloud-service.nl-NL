@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 64106e167270271c84b9f68a2babdf09f79aae86
+source-git-commit: 7736f2d4d283ebab5e2f9254dd1a093f7b90056c
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1753'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 
 ### Bekende problemen {#known-issues-foundation}
 
-**Sommige lokale builds zouden wegens een kwestie met de Lokale Insteekmodule van de Analysator van de Bouwstijl kunnen ontbreken**
+**Sommige builds zouden wegens een kwestie met de Lokale Insteekmodule van de Analysator van de Bouwstijl kunnen ontbreken**
 
 In bepaalde gevallen kan een project bouwen tijdens de uitvoering van `aemanalyser-maven-plugin` met het volgende foutenbericht ontbreken:
 
