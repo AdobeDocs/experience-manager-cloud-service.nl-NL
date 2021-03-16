@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: dbf64ec2b4b7e5c549ef5942b1c7bd0ca75eb66f
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ FailedDeletion of Custom Domain name failed. U moet het opnieuw proberen. Raadpl
 
 Klanten met omgevingen die reeds bestaande CDN-configuraties voor IP-Lijsten van gewenste personen, SSL-certificaten of aangepaste domeinnamen bevatten, zien het volgende bericht in de detailpagina **IP Lijst van gewenste personen** en **Environment**. Het bericht dat op UI wordt getoond zal verdwijnen zodra de klant alle reeds bestaande omgevingsconfiguraties via UI volledig heeft gemigreerd en het kan 1-2 werkdagen voor het bericht vergen om te verdwijnen.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->Om de reeds bestaande configuraties te zien en te beheren moeten zij via UI worden toegevoegd, zoals aangetoond in hieronder figuur.
+>Om de reeds bestaande configuraties te kunnen zien en beheren moeten zij via UI worden toegevoegd. Raadpleeg [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
