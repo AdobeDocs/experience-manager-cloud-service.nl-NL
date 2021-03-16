@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
+source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -227,12 +227,29 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
    * Mogelijkheid om zowel het mappad van hosts als het pad naar de hostbestanden af te handelen.
    * De generatie van landbouwbedrijfdossiers met grote klantenconfiguraties in waaier van 600 en meer.
 
+## [!DNL Adobe Experience Manager] als Cloud Service Foundation  {#aem-as-a-cloud-service-foundation}
 
+### Bekende problemen {#known-issues-foundation}
 
+**Probleembeschrijving**
 
+In bepaalde gevallen kan een lokaal project bouwen tijdens de uitvoering van `aemanalyser-maven-plugin` met het volgende foutenbericht ontbreken:
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**Workaround**
 
+Als u dit probleem wilt verhelpen, selecteert u de meest recente versie van `aemanalyser-maven-plugin` in het bovenliggende `pom.xml`-bestand:
 
-
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 
