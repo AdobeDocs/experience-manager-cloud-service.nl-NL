@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
 ## Nieuw in [!DNL Assets] {#what-is-new-assets}
+
+* [!DNL Experience Manager Assets] als een  [!DNL Cloud Service] gerechtigd is om een vooraf geconfigureerde  [!DNL Brand Portal] instantie te hebben. De [!DNL Cloud Manager] gebruiker kan [!DNL Brand Portal] op [!DNL Experience Manager Assets] als [!DNL Cloud Service] activeren. Zie [Brand Portal activeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
 * Bedrijven kunnen nu elementen aanschaffen met [!DNL Brand Portal]. De functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aantrekken van bedrijfsmiddelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
