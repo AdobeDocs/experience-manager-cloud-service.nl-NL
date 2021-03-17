@@ -3,10 +3,10 @@ title: XMP-metadata
 description: Meer informatie over de metagegevensstandaard van de XMP (Extensible Metadata Platform) voor metagegevensbeheer. Deze wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 16%
+source-wordcount: '957'
+ht-degree: 17%
 
 ---
 
@@ -72,7 +72,10 @@ XMP biedt u de mogelijkheid om een eigenschap `xml:lang` toe te voegen aan tekst
 
 ## Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
-Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens voor een element wijzigt vanuit [!DNL Assets] of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het knooppunt met middelen in de opslagplaats. [!DNL Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De updates worden opgeslagen in het metagegevensknooppunt in de elementenhiërarchie. Met deze functie worden ook de updates in de binaire bestanden van de uitvoeringen ingesloten. De functie schrijft alleen die metagegevenseigenschappen terug die een naamruimte `jcr` gebruiken.
+Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd.
+Wanneer u de metagegevens van een element wijzigt vanuit Middelen of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
+
+Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De eigenschap schrijft slechts die meta-gegevenseigenschappen terug die `jcr` namespace gebruiken, namelijk wordt een bezit genoemd `dc:title` teruggeschreven maar een bezit genoemd `mytitle` is niet.
 
 Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element `Classic Leather` wijzigt in `Nylon`.
 
