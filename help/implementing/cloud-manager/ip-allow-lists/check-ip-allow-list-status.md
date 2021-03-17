@@ -2,7 +2,7 @@
 title: Status van IP-Lijst van gewenste personen controleren
 description: Status van IP-Lijst van gewenste personen controleren
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -49,8 +49,7 @@ Klanten met omgevingen die reeds bestaande CDN-configuraties voor IP-Lijsten van
 >[!NOTE]
 >Om de reeds bestaande configuraties te kunnen zien en beheren moeten zij via UI worden toegevoegd. Raadpleeg [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) voor meer informatie.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
 
