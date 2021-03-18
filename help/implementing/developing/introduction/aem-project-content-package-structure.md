@@ -2,10 +2,10 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html), aangezien dit artikel voortbouwt op deze lessen en concepten.
+>Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), aangezien dit artikel voortbouwt op deze lessen en concepten.
 
 Dit artikel beschrijft de veranderingen die aan Adobe Experience Manager Maven projecten worden vereist om als Cloud Service compatibel te worden AEM door ervoor te zorgen dat zij de splitsing van veranderbare en onveranderlijke inhoud eerbiedigen, gebiedsdelen worden gevestigd om niet-strijdige, deterministische plaatsingen tot stand te brengen en dat zij in een plaatsingsable structuur worden verpakt.
 
@@ -619,5 +619,5 @@ Voeg in `all/pom.xml` de `maven-clean-plugin` plug-in toe waarmee de doelmap wor
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [Pakketten beheren met Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Pakketten beheren met Maven](/help/implementing/developing/tools/maven-plugin.md)
 + [Maven-plug-in voor het pakket met bestandsVault-inhoud](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
