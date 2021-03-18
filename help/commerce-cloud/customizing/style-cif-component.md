@@ -7,13 +7,13 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2566'
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    **ClientLib-cif**  - Dit is ook een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van  [AEM](https://github.com/adobe/aem-core-cif-components) van de Kern van CIF inbedt. De categorie is `venia.cif`.
 
-   **clientlib-grid** : dit omvat de CSS die nodig is om AEM functie Responsief raster in te schakelen. Door het AEM raster te gebruiken, schakelt u [Lay-outmodus](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) in de AEM-editor in en stelt u de auteur van de inhoud in staat om de grootte van componenten te wijzigen. De categorie is `venia.grid` en is ingebed in `venia.base` bibliotheek.
+   **clientlib-grid** : dit omvat de CSS die nodig is om AEM functie Responsief raster in te schakelen. Door het AEM raster te gebruiken, schakelt u [Lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md) in de AEM-editor in en stelt u de auteur van de inhoud in staat om de grootte van componenten te wijzigen. De categorie is `venia.grid` en is ingebed in `venia.base` bibliotheek.
 
 1. Inspect de bestanden `customheaderlibs.html` en `customfooterlibs.html` onder `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -256,7 +256,7 @@ Controleer vervolgens de opname van de clientbibliotheken op de pagina.
 
 ## Opname van clientbibliotheek met paginasjablonen {#client-library-inclusion-pagetemplates}
 
-Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientzijde. Controleer vervolgens hoe het gegenereerde project de `clientlib-site`-bibliotheken bevat via [Paginasjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html).
+Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientzijde. Controleer vervolgens hoe het gegenereerde project de `clientlib-site`-bibliotheken bevat via [Paginasjablonen](/help/implementing/developing/components/templates.md).
 
 1. Navigeer naar de **startpagina** van de site in de AEM Editor: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -474,7 +474,7 @@ U hebt zojuist uw eerste AEM CIF Core-component vormgegeven en u hebt een webpac
 
 ## Uitdaging {#bonus-challenge}
 
-Met het Stijlsysteem [AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) kunt u twee stijlen maken die door de auteur van de inhoud in- en uitgeschakeld kunnen worden. [Het ontwikkelen met het Stijlsysteem ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
+Met het Stijlsysteem [AEM](/help/sites-cloud/authoring/features/style-system.md) kunt u twee stijlen maken die door de auteur van de inhoud in- en uitgeschakeld kunnen worden. [Het ontwikkelen met het Stijlsysteem ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
 
 ![Bonus Challenge - Stijl Systeem](../assets/style-cif-component/bonus-challenge.png)
 
