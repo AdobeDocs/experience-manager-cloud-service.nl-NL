@@ -2,10 +2,10 @@
 title: Een AEM-connector implementeren
 description: Een AEM-connector implementeren
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 8%
+source-wordcount: '968'
+ht-degree: 7%
 
 ---
 
@@ -62,7 +62,7 @@ De schakelaars zouden aan deze verpakkingsrichtlijnen moeten houden, die in [dit
 
 Bovendien zou slechts Adobe code in `/libs`, met klanten en partners moeten schrijven die in `/apps` schrijven.
 
-Bestaande connectors moeten mogelijk ook worden vernieuwd om elke configuratie te verplaatsen die ooit `/etc` in andere mappen op het hoogste niveau is geplaatst, zoals `/conf`. Dit wordt beschreven in de [AEM documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+Bestaande connectors moeten mogelijk ook worden vernieuwd om elke configuratie te verplaatsen die ooit `/etc` in andere mappen op het hoogste niveau is geplaatst, zoals `/conf`. Deze herstructurering werd uitgevoerd als onderdeel van AEM 6.5 en wordt beschreven in de [AEM 6.5 documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
 Het is raadzaam het grootste deel van de verbindingscode onder `/apps/connectors/<vendor>` te plaatsen om een schone opslagplaats te bevorderen voor klanten die verscheidene schakelaars hebben.
 
