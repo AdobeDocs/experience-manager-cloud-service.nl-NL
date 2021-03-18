@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de  [Coral UI-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) bibliotheek verwijst dat in de componentbrowser wordt weergegeven
+1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de  [Coral UI-](https://opensource.adobe.com/coral-spectrum/examples/#icon) bibliotheek verwijst dat in de componentbrowser wordt weergegeven
    * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
    * De afkorting moet worden beperkt tot twee tekens.
@@ -230,15 +230,13 @@ De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden 
 
 De interface van koralen en de interface van Granite bepalen het uiterlijk van AEM.
 
-* [Koraal ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) UIverstrekt een verenigbare UI over alle wolkenoplossingen.
+* [Koraal ](https://opensource.adobe.com/coral-spectrum/documentation/) UIverstrekt een verenigbare UI over alle wolkenoplossingen.
 * [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) UIttert de prijsverhoging van de Koraal UI die in het Verkopen componenten voor de bouw van consoles UI en dialogen wordt verpakt.
 
 De graniet-interface biedt een groot aantal basiswidgets die nodig zijn om uw dialoogvenster in de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en uw eigen widget maken.
 
 Zie de volgende bronnen voor meer informatie:
 
-* [Handleiding voor koraal](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Structuur van de AEM-interface](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Dialoogvenstervelden {#customizing-dialog-fields} aanpassen
@@ -389,7 +387,7 @@ Om logica in uw gebied te injecteren, zou u moeten:
 * Laat uw veld gemarkeerd zijn met een bepaalde CSS-klasse (de haak).
 * Definieer in uw clientbibliotheek een JS-listener die is gekoppeld aan die CSS-klassenaam (dit zorgt ervoor dat uw aangepaste logica alleen binnen het bereik van uw veld valt en niet van invloed is op andere velden van hetzelfde type).
 
-Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. [Zie de ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) documentatie van de Koral UI om te identificeren aan welke gebeurtenis u wilt reageren.
+Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. [Zie de ](https://opensource.adobe.com/coral-spectrum/documentation/) documentatie van de Koral UI om te identificeren aan welke gebeurtenis u wilt reageren.
 
 De `cq:listeners` knoop (knooptype `cq:EditListenersConfig`) bepaalt wat vóór of na een actie op de component gebeurt. In de volgende tabel worden de mogelijke eigenschappen gedefinieerd.
 
@@ -449,7 +447,7 @@ Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of 
 
 ## Gedrag voorvertoning {#preview-behavior}
 
-Het [WCM Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
+Het [WCM Modus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
