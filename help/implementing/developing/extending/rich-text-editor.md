@@ -3,15 +3,15 @@ title: Vorm de Rijke Redacteur van de Tekst aan auteursinhoud in [!DNL Adobe Exp
 description: Vorm Rich Text Editor aan auteursinhoud in [!DNL Adobe Experience Manager] als Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1969'
 ht-degree: 0%
 
 ---
 
 
-# De Rich Text Editorconfigureren {#configure-the-rich-text-editor}
+# De Rich Text Editor {#configure-the-rich-text-editor} configureren
 
 De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Zie hoe de auteurs [RTE voor creatie](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) Webinhoud gebruiken.
 
@@ -131,8 +131,10 @@ De [wijze van het uitgeven van RTE en interface](#editingmodes) die u voor uw au
 >* **Naam**:  `configPath`
 >* **Type**:  `String`
 >* **Waarde**: pad van het knooppunt met de feitelijke configuratie
+
 >
->Noem niet de de configuratieknoop van RTE als `config`. Anders, zijn de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
+>
+Noem niet de de configuratieknoop van RTE als `config`. Anders, zijn de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
 Configureer de volgende eigenschappen die van toepassing zijn in de bewerkingsmodus van dialoogvenster:
 
@@ -144,7 +146,7 @@ Configureer de volgende eigenschappen die van toepassing zijn in de bewerkingsmo
 
 Wanneer RTE in de aanraking-toegelaten dialoog wordt gebruikt, plaats het bezit `useFixedInlineToolbar` aan `true` om kwesties te vermijden.
 
-## RTE-functies inschakelen door insteekmoduleste activeren {#enable-rte-functionalities-by-activating-plug-ins}
+## RTE-functies inschakelen door insteekmodules {#enable-rte-functionalities-by-activating-plug-ins} te activeren
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt de eigenschap features configureren om de verschillende functies van elke insteekmodule in of uit te schakelen.
 
@@ -159,10 +161,12 @@ Met de tekstcomponent [Core Components](https://docs.adobe.com/content/help/en/e
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
->
->Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
 
-## RTE-werkbalkconfigureren {#dialogfullscreen}
+>
+>
+Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
+
+## RTE-werkbalk {#dialogfullscreen} configureren
 
 [!DNL Experience Manager] Hiermee kunt u de interface voor de Rich Text Editor op een andere manier configureren voor de verschillende bewerkingsmodi. De standaardinstellingen worden hieronder gegeven. U kunt deze standaardinstellingen op basis van uw vereisten overschrijven. U kunt alleen de werkbalkfuncties aanpassen die u aan de auteurs wilt geven. U hoeft niet alle werkbalkconfiguraties op te geven.
 
@@ -283,5 +287,4 @@ Hieronder ziet u een voorbeeldfragment waarmee u de opdracht `Bold` toewijst aan
 >* [RTE-plug-ins configureren](configure-rich-text-editor-plug-ins.md)
 >* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [RTE voor toegankelijke sites configureren](rte-accessible-content.md)
->* [Zelfstudie als voorbeeld voor het maken van een samengestelde component met meerdere velden](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
 
