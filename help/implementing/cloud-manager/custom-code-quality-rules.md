@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 4%
 
 ---
@@ -747,7 +747,7 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 
 **Sinds**: Versie 2021.2.0
 
-AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in [Het gebruiken van Preprocessoren](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd middelen worden bevat om effectief van verwijzingen te zijn op de publicatieinstanties.
+AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in [Het gebruiken van Preprocessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd middelen worden bevat om effectief van verwijzingen te zijn op de publicatieinstanties.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ Met de overgang naar Asset Micro-services voor de verwerking van bedrijfsmiddele
 
 **Sinds**: Versie 2021.2.0
 
-Terwijl het gebruik van statische malplaatjes historisch zeer algemeen in AEM projecten is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u op [Paginasjablonen - Bewerkbaar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). De migratie van statische aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [AEM Moderniseringshulpmiddelen](https://opensource.adobe.com/aem-modernize-tools/).
+Terwijl het gebruik van statische malplaatjes historisch zeer algemeen in AEM projecten is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u op [Paginasjablonen.](/help/implementing/developing/components/templates.md) De migratie van statische aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend de  [AEM Moderniseringshulpmiddelen](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### OakPAL - Het gebruik van verouderde stichtingscomponenten wordt ontmoedigd {#oakpal-usage-legacy}
 
