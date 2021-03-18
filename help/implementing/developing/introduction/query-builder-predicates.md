@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 translation-type: tm+mt
-source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2219'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subacti
 
 ### memberOf {#memberof}
 
-Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
 Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
 
@@ -292,7 +292,7 @@ Het ondersteunt geen facetextractie.
 
 ### relativedaterange {#relativedaterange}
 
-Deze voorspelling stemt `JCR DATE`-eigenschappen af op een datum-/tijdinterval waarbij tijdverschuivingen worden gebruikt ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` specificeren gebruikend of een millisecondenwaarde of de syntaxis `1s 2m 3h 4d 5w 6M 7y` van Bugzilla (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar). Voorvoegsel met `-` om een negatieve verschuiving vóór de huidige tijd aan te geven. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere `0` standaard ingesteld als de huidige tijd.
+Deze voorspelling stemt `JCR DATE`-eigenschappen af op een datum-/tijdinterval waarbij tijdverschuivingen worden gebruikt ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` specificeren gebruikend of een millisecondenwaarde of de syntaxis `1s 2m 3h 4d 5w 6M 7y` van Bugzilla (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar). Voorvoegsel met `-` om op een negatieve compensatie vóór de huidige tijd te wijzen. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere `0` standaard ingesteld als de huidige tijd.
 
 Bijvoorbeeld:
 
