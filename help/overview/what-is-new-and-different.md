@@ -2,7 +2,7 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 86%
@@ -37,7 +37,7 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Raadpleeg de documentatieset voor [AEM 6.5](https://helpx.adobe.com/nl/support/experience-manager/6-5.html) voor meer informatie over de versies On-Premise en Managed Service.
+>Raadpleeg de documentatieset voor [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html) voor meer informatie over de versies On-Premise en Managed Service.
 
 ## Architectuur {#architecture}
 
