@@ -2,9 +2,9 @@
 title: Het framework voor vertaalintegratie configureren
 description: Leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertalen te integreren.
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ De volgende vertaalverkopers verstrekken een implementatie van AEM API voor vert
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar tot stand brengen. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de schakelaar van de Vertaler van Microsoft, zie [Integrating met de Vertaler van Microsoft](connect-ms-translator.md).
 
