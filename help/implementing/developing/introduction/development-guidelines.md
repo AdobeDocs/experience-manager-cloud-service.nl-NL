@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op di
 
 Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de AEMConsole van het Web (`/system/console`).
 
-Let op: bij lokale ontwikkeling (met behulp van de snelstartmodus voor de cloud) kunnen `/apps` en `/libs` rechtstreeks worden geschreven, wat anders is dan in cloudomgevingen waar deze mappen op het hoogste niveau onveranderbaar zijn.
+Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechtstreeks worden geschreven, wat anders is dan in cloudomgevingen waar deze mappen op hoofdniveau onveranderlijk zijn.
 
 ### AEM als hulpmiddelen voor de ontwikkeling van Cloud Servicen {#aem-as-a-cloud-service-development-tools}
 
