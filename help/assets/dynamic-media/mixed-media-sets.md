@@ -1,10 +1,12 @@
 ---
 title: Mixed Media Sets
 description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
+feature: Gemengde mediasets
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1394'
 ht-degree: 24%
 
 ---
