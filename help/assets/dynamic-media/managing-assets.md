@@ -1,10 +1,12 @@
 ---
 title: Informatie over het beheren van Dynamic Media-elementen
 description: Leer hoe u met Dynamic Media-middelen werkt.
+feature: Beheer van bedrijfsmiddelen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '123'
 ht-degree: 13%
 
 ---
