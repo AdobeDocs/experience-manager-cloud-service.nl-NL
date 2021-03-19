@@ -1,10 +1,12 @@
 ---
 title: Interactieve video's
 description: Leer hoe u in Dynamic Media werkt met interactieve video's en schokkende video's.
+feature: Interactieve video's
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '6015'
+source-wordcount: '6019'
 ht-degree: 3%
 
 ---
