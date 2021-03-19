@@ -3,10 +3,10 @@ title: Werken met kiezers
 description: In deze video ziet u methoden waarmee u elementen kunt selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
 topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 16%
+source-wordcount: '714'
+ht-degree: 12%
 
 ---
 
@@ -19,15 +19,15 @@ In dit onderwerp wordt beschreven hoe u de kiezers Product, Site en Asset kunt g
 
 U opent de kiezers door carrouselsets te maken, hotspots en afbeeldingen met hyperlinks toe te voegen en interactieve video&#39;s en afbeeldingen te maken.
 
-In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een Quickview-pagina. gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt; Gebruik de kiezer voor middelen wanneer u een nieuwe dia maakt.
+In deze carrouselbanner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een pagina in de Snelle weergave. Gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt. Gebruik de kiezer voor middelen wanneer u een dia maakt.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een AEM Sites-klant bent. Voor de productkiezer is ook AEM Commerce vereist.
+Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een Adobe Experience Manager Sites-klant bent. De productkiezer vereist ook de Handel van de Experience Manager.
 
 ## Producten selecteren in Dynamic Media {#selecting-products}
 
-Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbeelding met hyperlinks wilt gebruiken om een snelle weergave van een specifiek product in uw productcatalogus te maken.
+Gebruik de productkiezer om een product te kiezen als u een hotspot of afbeelding met hyperlinks wilt gebruiken voor een snelle weergave van een specifiek product in uw productcatalogus.
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
@@ -39,15 +39,15 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   U kunt ook filteren op trefwoorden of tags door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
+   U kunt filteren op trefwoorden of tags door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt wijzigen waar AEM naar productgegevens zoekt door te tikken op **[!UICONTROL Browse]** en naar een andere map te navigeren.
+   U kunt wijzigen waar de Experience Manager naar productgegevens bladert door op **[!UICONTROL Browse]** te tikken en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tik **[!UICONTROL Sort]** door om te wijzigen of AEM op Nieuwst naar Oudst of op Nieuwst sorteert.
+   Tik **[!UICONTROL Sort by]** om te wijzigen of de Experience Manager op Nieuwste naar Oudste of op Nieuwste sorteert.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -65,7 +65,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
 ## Sites selecteren in Dynamic Media {#selecting-sites}
 
-Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die binnen AEM sites wordt beheerd.
+Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen sites van Experience Managers.
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
@@ -73,7 +73,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en ga naar een pagina in uw AEM-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
+1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en navigeer naar een pagina in uw Experience Manager-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -81,24 +81,24 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de AEM sitepagina die u hebt opgegeven.
+1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven Experience Manager-sitepagina.
 
 ## Elementen selecteren in Dynamic Media {#selecting-assets}
 
-Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** tikt op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een nieuwe dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Draaien, is de activa selecteur beschikbaar wanneer u een nieuwe Reeks van het Beeld, GemengdeReeks, of Reeks van de Draai creeert.
+Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** tikt op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
 
 Zie ook [Asset Picker](/help/assets/search-assets.md#assetselector) voor meer informatie.
 
-1. Navigeer naar de Carousel-set en maak een nieuwe dia. Of navigeer naar de Interactieve Video, ga **[!UICONTROL Content]** tabel en selecteer activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
+1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de Interactieve Video, ga **[!UICONTROL Content]** tabel, dan uitgezochte activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
 1. Tik op het pictogram **[!UICONTROL Asset Selector]** (map met vergrootglas) en ga naar een asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   U kunt ook filteren op trefwoorden of tags door **[!UICONTROL Filter]** te tikken en trefwoorden in te voeren of criteria toe te voegen, of door beide in te voeren.
+   Filter op trefwoord of tag door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren, of criteria toe te voegen, of beide.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar AEM naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
+   U kunt wijzigen waar de Experience Manager naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
