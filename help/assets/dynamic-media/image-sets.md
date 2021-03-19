@@ -1,10 +1,12 @@
 ---
 title: Image Sets
 description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
+feature: Afbeeldingssets
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1984'
 ht-degree: 9%
 
 ---
@@ -16,7 +18,7 @@ Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruiker
 
 Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. Als de Afbeeldingsset is gepubliceerd, staat bovendien de publicatiedatum die wordt aangegeven door het pictogram **[!UICONTROL World]** op de banner. De laatste wijzigingsdatum die wordt aangegeven door het pictogram **[!UICONTROL Pencil]**, wordt ook weergegeven.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 In de afbeeldingsset kunt u ook stalen maken door een afbeeldingsset te maken en miniaturen toe te voegen.
 
