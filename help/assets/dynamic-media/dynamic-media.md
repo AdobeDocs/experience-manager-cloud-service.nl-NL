@@ -1,10 +1,11 @@
 ---
 title: Werken met Dynamic Media
 description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
+topic: '"Beheerder, Business Practitioner"'
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '399'
 ht-degree: 6%
 
 ---
