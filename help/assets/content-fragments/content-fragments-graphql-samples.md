@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
       * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
-         * Zie [Voorbeeldquery - Alle avonturen waarvan `_path` begint met een specifiek voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
+         * Zie [Voorbeeldquery - Alle avonturen waarbij `_path` begint met een specifiek voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:   `AT_LEAST_ONCE`
          * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
@@ -664,7 +664,7 @@ query {
 
 ### Voorbeeldquery - Alle avonturen waarvan `_path` begint met een specifiek voorvoegsel {#sample-wknd-all-adventures-cycling-path-filter}
 
-Alle `adventures` waarvan `_path` met een specifiek voorvoegsel (`/content/dam/wknd/en/adventures/cycling`) begint.
+Alle `adventures` waarbij `_path` met een specifiek voorvoegsel (`/content/dam/wknd/en/adventures/cycling`) begint.
 
 **Voorbeeldquery**
 
