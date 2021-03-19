@@ -1,11 +1,13 @@
 ---
 title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van Dynamic Media Image Profiles of Video Profiles
-description: Tips en tips en tips voor het benoemen, organiseren en beheren van Dynamic Media-bestanden met afbeeldings- en videobestanden.
+description: '"Tips en tips en trucs voor het benoemen, ordenen en beheren van Dynamic Media-afbeeldingsbestanden en videobestanden."'
 contentOwner: Rick Brough
+feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: a64a7274f0037789be1a5e2f7427aba551f14ed7
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
