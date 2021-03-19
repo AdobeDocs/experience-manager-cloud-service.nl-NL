@@ -1,10 +1,12 @@
 ---
 title: Voorinstellingen voor viewers beheren
-description: Viewer-voorinstellingen maken en beheren in Dynamic Media.
+description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media.
+feature: Viewer-voorinstellingen,Viewers
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4136'
 ht-degree: 12%
 
 ---
