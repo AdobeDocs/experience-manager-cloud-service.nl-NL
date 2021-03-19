@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1787'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,15 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 febru
 
 ## De tool Content Transfer {#content-transfer-tool}
 
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v1.3.4 is 19 maart 2021.
+
+### Opgeloste problemen {#bug-fixes-ctt}
+
+* CTT heeft inhoud overgeslagen uit mappen met dezelfde naam, maar met een afbreekstreepje in de naam. Dit is opgelost.
+
+
 ### Releasedatum {#release-date-ctt-march}
 
 De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
@@ -177,15 +186,15 @@ De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
 * Tijdens het migreren van inhoud van een specifiek pad, trekt CTT zich aan niet-gerelateerde bronnen. Dit is opgelost
 
 
-### Releasedatum {#release-date-ctt}
+### Releasedatum {#release-date-ctt-feb}
 
 De releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
 
-### Opgeloste problemen {#bug-fixes-ctt}
+### Opgeloste problemen {#bug-fixes-ctt-feb}
 
 * Bij het toewijzen van meerdere gebruikers werden IMS-id&#39;s van sommige gebruikers onjuist toegewezen. Dit is opgelost.
 
-### Releasedatum {#release-date-ctt-feb}
+### Releasedatum {#release-date-ctt-feb01}
 
 De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
