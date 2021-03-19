@@ -4,10 +4,11 @@ description: Meer informatie over toegankelijkheid in Dynamic Media en Dynamic M
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
