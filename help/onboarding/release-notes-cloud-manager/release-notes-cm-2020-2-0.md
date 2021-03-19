@@ -1,11 +1,12 @@
 ---
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
+feature: Geen informatie
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +25,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.2.0 is 13 febru
 
 * De Adobe Experience Manager archetype-versie is bijgewerkt naar versie 22.
 * De werkgebied- en productieomgevingen in de programma&#39;s Sandbox/Demo kunnen nu worden bijgewerkt via de interface van Cloud Manager.
-* URL&#39;s die worden gebruikt in Experience Cloud-berichten, zijn geoptimaliseerd om een extra omleiding te voorkomen.
+* URL&#39;s die in Experience Cloud-berichten worden gebruikt, zijn geoptimaliseerd om een extra omleiding te voorkomen.
 * Uitvoeringsstappen van de pijpleiding die nu uitdrukkelijk genoemd.
 * De stap voor het scannen van code heeft nu een downloadbaar logboek.
 * Het spreadsheet dat kwesties bevat die tijdens code het aftasten nu worden ontdekt heeft een kolom met een verbinding aan documentatie voor de specifieke regel.
