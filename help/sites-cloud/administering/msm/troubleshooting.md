@@ -1,10 +1,12 @@
 ---
 title: Problemen met MSM en veelgestelde vragen oplossen
 description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwesties problemen op te lossen en antwoorden te krijgen de gemeenschappelijkste MSM-verwante vragen.
+feature: Beheer van meerdere sites
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
