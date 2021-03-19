@@ -2,10 +2,12 @@
 title: Digitale elementen ordenen
 description: Organiseer uw digitale middelen met behulp van verschillende methoden die in Adobe Experience Manager Assets worden geboden.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+topic: '"Beheerder, Business Practitioner"'
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
