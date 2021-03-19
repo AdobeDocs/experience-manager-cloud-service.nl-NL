@@ -2,10 +2,11 @@
 title: Dynamic Media instellen
 description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
 contentOwner: Rick Brough
+topic: Beheerder
 translation-type: tm+mt
-source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '180'
 ht-degree: 3%
 
 ---
