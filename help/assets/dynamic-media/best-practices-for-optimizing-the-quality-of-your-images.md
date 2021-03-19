@@ -2,10 +2,12 @@
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
 description: Leer de beste praktijken u in Dynamic Media kunt gebruiken om de kwaliteit van uw beeldactiva te optimaliseren.
 contentOwner: Rick Brough
+feature: Beheer van bedrijfsmiddelen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1442'
 ht-degree: 5%
 
 ---
