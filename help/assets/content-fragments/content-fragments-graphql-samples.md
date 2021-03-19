@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1742'
 ht-degree: 2%
 
 ---
@@ -67,12 +67,14 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
    * En bewerkingen:
 
-      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
+         * Zie [Voorbeeldquery - Alle avonturen waarvan `_path` begint met een specifiek voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:   `AT_LEAST_ONCE`
          * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
          * Zie [Voorbeeldquery - Alle steden met SAN in de naam, ongeacht case](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Voorbeeldquery - Alle avonturen waarvan `_path` begint met een specifiek voorvoegsel {#sample-wknd-all-adventures-cycling-path-filter}
+
+Alle `adventures` waarvan `_path` met een specifiek voorvoegsel (`/content/dam/wknd/en/adventures/cycling`) begint.
+
+**Voorbeeldquery**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**Voorbeeldresultaten**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
