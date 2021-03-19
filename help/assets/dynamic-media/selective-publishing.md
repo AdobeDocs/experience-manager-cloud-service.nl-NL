@@ -1,14 +1,15 @@
 ---
 title: Werken met Selectieve publicatie in Dynamic Media
-description: Informatie over het werken met Selectieve publicatie in Dynamic Media.
+description: Leer hoe u in Dynamic Media kunt werken met Selective Publish.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 04f40452ca89bc5298341b4338bc1d7762b908c2
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2527'
 ht-degree: 1%
 
 ---
@@ -48,7 +49,7 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
 1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets > Files.]**
 1. Voer een van de volgende handelingen uit:
    * Bewerk de eigenschappen van een bestaande map - Navigeer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** naar een map waarvan u de eigenschappen wilt bewerken. Selecteer de map en tik vervolgens op de werkbalk op **[!UICONTROL Properties.]**
-   * Bewerk de eigenschappen van een nieuwe map - tik **[!UICONTROL Create > Folder.]** in het dialoogvenster **[!UICONTROL Create Folder]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** in de rechterbovenhoek van de pagina op &lt;a4/> Voer in &lt;a4/> een titel (vereist) voor de map in en tik vervolgens op **[!UICONTROL Create.]** Selecteer de map, tik vervolgens op de werkbalk op **[!UICONTROL Properties.]****[!UICONTROL Card View]**
+   * Bewerk de eigenschappen van een nieuwe map - tik **[!UICONTROL Create > Folder.]** in het dialoogvenster **[!UICONTROL Create Folder]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** in de rechterbovenhoek van de pagina op **[!UICONTROL Card View]** Voer in  een titel (vereist) voor de map in en tik vervolgens op **[!UICONTROL Create.]** Selecteer de map, tik vervolgens op de werkbalk op **[!UICONTROL Properties.]**
 
 1. Selecteer een van de volgende opties in de vervolgkeuzelijst **[!UICONTROL Sync mode]**:
 
