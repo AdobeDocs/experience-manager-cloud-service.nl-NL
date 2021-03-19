@@ -1,10 +1,12 @@
 ---
 title: Slimme beeldverwerking
-description: Slimme beeldverwerking past de unieke weergavekenmerken van elke gebruiker toe, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
+description: '"Leer hoe smart imaging de unieke kijkkenmerken van elke gebruiker toepast om automatisch de juiste beelden te bedienen die voor hun ervaring zijn geoptimaliseerd, wat resulteert in betere prestaties en betrokkenheid."'
+feature: Middelenbeheer, uitvoeringen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -153,7 +155,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
    1. Geef aan of het via HTTP/2 moet werken.
 
 1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken worden voorgelegd.
-1. Wanneer Adobe klaar is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
+1. Wanneer Adobe bereid is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
 1. **Optioneel**: U kunt optioneel de functie voor het maken van slimme afbeeldingen in Staging testen voordat Adobe de nieuwe functie in productie neemt.
 1. U wordt op de hoogte gesteld na voltooiing door de klantenservice.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
