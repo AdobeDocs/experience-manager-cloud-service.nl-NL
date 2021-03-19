@@ -1,10 +1,12 @@
 ---
 title: Voorinstellingen afbeelding beheren
-description: Leer voorinstellingen voor afbeeldingen maken, wijzigen en beheren.
+description: '"Meer informatie over voorinstellingen voor afbeeldingen en over het maken, wijzigen en beheren van voorinstellingen voor afbeeldingen."'
+feature: Voorinstellingen afbeelding, viewers, uitvoeringen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3509'
+source-wordcount: '3515'
 ht-degree: 8%
 
 ---
