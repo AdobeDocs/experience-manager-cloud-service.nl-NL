@@ -1,11 +1,13 @@
 ---
 title: Panoramische afbeeldingen
 description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
+feature: Panoramische afbeeldingen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 15%
+source-wordcount: '151'
+ht-degree: 16%
 
 ---
 
