@@ -1,10 +1,11 @@
 ---
 title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4119'
+source-wordcount: '4120'
 ht-degree: 8%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 8%
 
 ## Configuratie en testen van Apache en Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen, en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over Dispatcher.
+In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over Dispatcher.
 
 >[!NOTE]
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
@@ -237,7 +238,7 @@ In de onderstaande tabel staan de ondersteunde apache-modules:
 
 Klanten kunnen geen arbitraire modules toevoegen, maar in de toekomst kunnen wel extra modules in het product worden opgenomen. Klanten kunnen de lijst met instructies vinden die beschikbaar is voor een bepaalde versie van Dispatcher door de opdracht lijst van gewenste personen van de validator uit te voeren in de SDK, zoals hierboven beschreven.
 
-De lijst van gewenste personen bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is toegevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als geen lijst van gewenste personen op de bevellijn wordt gegeven (die de manier is het zou moeten worden aangehaald), gebruikt het hulpmiddel een standaard lijst van gewenste personen die de Manager van de Wolk voor bevestiging alvorens aan milieu&#39;s van de Wolk zal gebruiken te opstellen.
+De lijst van gewenste personen bevat een lijst met Apache-instructies die zijn toegestaan in een klantconfiguratie. Als een instructie niet is gevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Als geen lijst van gewenste personen op de bevellijn wordt gegeven (die de manier is het zou moeten worden aangehaald), gebruikt het hulpmiddel een standaard lijst van gewenste personen die de Manager van de Wolk voor bevestiging alvorens aan milieu&#39;s van de Wolk zal gebruiken te opstellen.
 
 Bovendien worden alle bestanden met patroon `conf.dispatcher.d/enabled_farms/*.farm` gescand en wordt gecontroleerd of:
 
@@ -255,7 +256,7 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn toegevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
+Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn gevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
 
 Hieronder vindt u technieken voor het oplossen van problemen waarmee algemene validatiefouten kunnen worden opgespoord die door het programma worden uitgevoerd:
 
@@ -584,7 +585,7 @@ $ validator httpd .
 
 Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
-Als u Apache-instructies ziet die niet zijn toegevoegd op lijst van gewenste personen, verwijdert u deze.
+Als u Apache-instructies ziet die niet zijn gevoegd op lijst van gewenste personen, verwijdert u deze.
 
 ### Alle niet-publicatiefarms verwijderen
 
