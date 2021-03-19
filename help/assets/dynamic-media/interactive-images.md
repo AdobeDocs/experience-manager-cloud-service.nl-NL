@@ -1,10 +1,12 @@
 ---
 title: Interactieve afbeeldingen
 description: Leer hoe u met interactieve afbeeldingen werkt in Dynamic Media.
+feature: Interactieve afbeeldingen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4210'
+source-wordcount: '4214'
 ht-degree: 1%
 
 ---
