@@ -1,10 +1,11 @@
 ---
 title: URL's koppelen aan uw webapplicatie
-description: URL's koppelen aan uw webtoepassing in Dynamic Media.
+description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1204'
 ht-degree: 9%
 
 ---
