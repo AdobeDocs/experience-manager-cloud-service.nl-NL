@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
+feature: Middelenbeheer, videoprofielen, uitvoeringen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3509'
 ht-degree: 13%
 
 ---
@@ -410,7 +412,7 @@ U kunt het `error.log` dossier ook bekijken om de vooruitgang van een het codere
 
 ## Een videoprofiel verwijderen uit mappen {#removing-a-video-profile-from-folders}
 
-Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een videoprofiel verwijderen uit een map in het menu **[!UICONTROL Tools]** of uit **[!UICONTROL Folder Settings]** als u zich in de map bevindt. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren uit mappen kunt verwijderen.
 
