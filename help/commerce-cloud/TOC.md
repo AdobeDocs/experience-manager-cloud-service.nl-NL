@@ -3,8 +3,9 @@ sub-product: AEM Handel als Cloud Service
 user-guide-title: AEM Handel als Cloud Service
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om de Handel van de Experience Manager als Cloud Service te gebruiken en te beheren.
+feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 7%
