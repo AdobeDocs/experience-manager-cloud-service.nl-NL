@@ -1,10 +1,12 @@
 ---
 title: Elementen voorvertonen
 description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt bekijken.
+feature: Beheer van bedrijfsmiddelen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1206'
 ht-degree: 2%
 
 ---
