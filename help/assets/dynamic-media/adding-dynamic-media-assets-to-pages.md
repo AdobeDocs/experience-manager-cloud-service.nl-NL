@@ -1,11 +1,13 @@
 ---
 title: Dynamic Media-elementen toevoegen aan pagina's
-description: Dynamic Media-componenten als Cloud Service toevoegen aan een pagina in Adobe Experience Manager.
+description: Leer hoe u Dynamic Media-componenten als Cloud Service aan een pagina in Adobe Experience Manager kunt toevoegen.
 contentOwner: Rick Brough
+feature: Beheer van bedrijfsmiddelen
+topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2946'
+source-wordcount: '2951'
 ht-degree: 5%
 
 ---
