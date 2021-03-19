@@ -1,10 +1,12 @@
 ---
 title: Het framework voor vertaalintegratie configureren
 description: Leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertalen te integreren.
+feature: Taalkopie
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
