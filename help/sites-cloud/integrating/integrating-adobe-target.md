@@ -2,9 +2,9 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM als Cloud Service (vereiste configuratie IMS) tot stand te brengen.
 * Adobe Target toevoegen en configureren als een extensie in [Adobe starten](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor het exporteren van Experience Fragments naar Target hebt u alleen de Adobe Target Configuration en IMS nodig.
+Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor de uitvoer van de Fragmenten van de Ervaring naar Doel, hebt u slechts de Configuratie van Adobe Target en IMS nodig.
 
 >[!NOTE]
 >
@@ -46,11 +46,11 @@ Houd rekening met het volgende wanneer u de velden Adobe Target Tenant ID en Ado
 
 Houd er in beide gevallen rekening mee dat:
 
-* Door gebrek, zal de Code van de Cliënt (als eerst toegevoegd) ook automatisch in het gebied van identiteitskaart van de Aannemer worden gekopieerd.
+* Door gebrek, wordt de Code van de Cliënt (als eerst toegevoegd) ook automatisch gekopieerd in het gebied van identiteitskaart van de Aannemer.
 * U kunt de standaard huurder-id wijzigen.
 * Dienovereenkomstig, zal de achterste vraag aan Doel op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel worden gebaseerd op de Code van de Cliënt.
 
-Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM als Cloud Service. In beide gevallen moet u ervoor zorgen dat de velden **both** de juiste gegevens bevatten, afhankelijk van uw vereisten.
+Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM als Cloud Service. Hoe dan ook, zorg ervoor dat **beide** gebieden de correcte informatie afhankelijk van uw vereisten bevatten.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Ga naar: **Sites** → **Selecteer een sitepagina** → **Eigenschappen** → **
 
 ## Adobe Target op AEM sites integreren met behulp van Adobe starten {#integrate-target-launch}
 
-AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan het Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina(&#39;s) gebruiken. Doelbibliotheken worden alleen gerenderd met Launch.
+AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina&#39;s gebruiken. Doelbibliotheken worden alleen gerenderd met Launch.
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ Als algemeen overzicht, zijn de integratiestappen:
 
 ### Een opstarteigenschap maken {#create-property}
 
-Een eigenschap is een container die wordt gevuld met extensies, regels en gegevenselementen.
+Een eigenschap is een container die is gevuld met extensies, regels en gegevenselementen.
 
 1. Selecteer de **Nieuwe eigenschap** knoop.
 2. Geef een naam op voor de eigenschap.
-3. Terwijl het domein de IP/host invoert waarop u de startbibliotheek wilt laden.
+3. Als domein voert u de IP/host in waarop u de opstartafspeelbibliotheek wilt laden.
 4. Selecteer **Save** knoop.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
@@ -124,7 +124,7 @@ Een eigenschap is een container die wordt gevuld met extensies, regels en gegeve
 
 ### Een paginalijn maken {#page-rule}
 
-In **Rule** bepalen en ordenen wij een opeenvolging van acties, die op plaats zullen worden uitgevoerd, om het richten te bereiken.
+In **Rule** bepalen en ordenen wij een opeenvolging van acties, die op plaats worden uitgevoerd, om het richten te bereiken.
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
    ![](assets/rules1.png "ActionsActions")
@@ -139,8 +139,8 @@ Raadpleeg deze [pagina](https://docs.adobe.com/content/help/en/experience-manage
 
 | **Wijzigen** | **Klassieke UI-configuratie** | **Touch UI-configuratie** | **Gevolgen** |
 |---|---|---|---|
-| Plaats van de Configuratie van het Doel. | /etc/cloudservices/testandtarget/ | /conf/huurder/settings/cloudservices/target | Eerder waren de veelvoudige configuraties aanwezig onder /etc/cloudservices/testandtarget maar nu zal één enkele configuratie onder een huurder aanwezig zijn. |
+| Plaats van de Configuratie van het Doel. | /etc/cloudservices/testandtarget/ | /conf/huurder/settings/cloudservices/target | Eerder waren de veelvoudige configuraties aanwezig onder /etc/cloudservices/testandtarget maar nu is één enkele configuratie aanwezig onder een huurder. |
 
 >[!NOTE]
 >
->Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om nieuwe configuraties te bewerken of te maken). Oudere configuraties maken deel uit van inhoudspakketten die door de klant met VSTS zijn geüpload.
+>Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om nieuwe configuraties te bewerken of te maken). Oudere configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.
