@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 translation-type: tm+mt
-source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
+source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1738'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## Wijzigingen in AEM als Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM als Cloud Service, beweegt Adobe zich weg van een AEM instantie centric model aan een de dienst gebaseerde mening met n-x AEM Containers, die door pijpleidingen CI/CD in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als dit niet wordt gespecificeerd en getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM als Cloud Service, beweegt Adobe zich van een AEM instantie-centric model aan een op dienst-gebaseerde mening met n-x AEM Containers, die door pijpleidingen CI/CD in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
@@ -40,7 +40,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 ## Het gebruik {#how-to-use}
 
-De volgende drie gebruiksgevallen kunnen in indexen worden gedefinieerd:
+Het definiëren van indexen kan uit deze drie gebruiksgevallen bestaan:
 
 1. Een nieuwe klantindexdefinitie toevoegen
 1. Een bestaande indexdefinitie bijwerken. Dit betekent in feite dat een nieuwe versie van een bestaande indexdefinitie moet worden toegevoegd
@@ -110,7 +110,7 @@ Tijdens de ontwikkeling, of wanneer het gebruiken op gebouwinstallaties, kunnen 
 
 Met blauwgroene implementaties is er geen downtime. Voor indexbeheer is het echter vereist dat indexen alleen door bepaalde versies van de toepassing worden gebruikt. Als u bijvoorbeeld een index toevoegt in versie 2 van de toepassing, wilt u deze nog niet gebruiken in versie 1 van de toepassing. Het omgekeerde is het geval wanneer een index wordt verwijderd: een in versie 2 verwijderde index is nog steeds nodig in versie 1. Als u een indexdefinitie wijzigt, willen we dat de oude versie van de index alleen wordt gebruikt voor versie 1 en dat de nieuwe versie van de index alleen wordt gebruikt voor versie 2.
 
-In de volgende tabel worden vijf indexdefinities weergegeven: index `cqPageLucene` wordt in beide versies gebruikt terwijl index `damAssetLucene-custom-1` alleen in versie 2 wordt gebruikt.
+In de volgende tabel staan vijf indexdefinities: index `cqPageLucene` wordt in beide versies gebruikt terwijl index `damAssetLucene-custom-1` alleen in versie 2 wordt gebruikt.
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ In de volgende tabel worden vijf indexdefinities weergegeven: index `cqPageLucen
 | /oak:index/acme.product-custom-2 | Nee | Nee | Ja |
 | /oak:index/cqPageLucene | Ja | Ja | Ja |
 
-Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Als u wilt voorkomen dat aangepaste indexnamen botsen met indexnamen van het product zelf, moeten aangepaste indexen en wijzigingen in indexen uit het vak eindigen met `-custom-<number>`.
+Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Om te voorkomen dat aangepaste indexnamen botsen met indexnamen van het product zelf, moeten aangepaste indexen en wijzigingen in indexen van het vak eindigen met `-custom-<number>`.
 
 ### Wijzigingen in indexen {#changes-to-out-of-the-box-indexes}
 
@@ -137,17 +137,13 @@ Zodra Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quot;c
 | /oak:index/cqPageLucene | Ja | Ja | Nee |
 | /oak:index/cqPageLucene-2 | Ja | Nee | Ja |
 
-### Beperkingen {#limitations}
+### Huidige beperkingen {#current-limitations}
 
 Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene`.
 
-### Een index {#removing-an-index} verwijderen
-
-Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een index zonder gegevens aan index), met een nieuwe naam bepalen. U kunt bijvoorbeeld `/oak:index/acme.product-custom-3` een naam geven. Hiermee wordt de index `/oak:index/acme.product-custom-2` vervangen. Nadat `/oak:index/acme.product-custom-2` door het systeem is verwijderd, kan de lege index `/oak:index/acme.product-custom-3` ook worden verwijderd.
-
 ### Een index {#adding-an-index} toevoegen
 
-Als u een index met de naam &quot;/oak:index/acme.product-custom-1&quot; wilt toevoegen die in een nieuwe versie van de toepassing en hoger moet worden gebruikt, moet de index als volgt worden geconfigureerd:
+Als u een index met de naam `/oak:index/acme.product-custom-1` wilt toevoegen die in een nieuwe versie van de toepassing en later moet worden gebruikt, moet de index als volgt worden geconfigureerd:
 
 `acme.product-1-custom-1`
 
@@ -157,7 +153,7 @@ Zoals hierboven, verzekert dit dat de index slechts door de nieuwe versie van de
 
 ### Een index wijzigen {#changing-an-index}
 
-Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Stel dat de bestaande index &quot;/oak:index/acme.product-custom-1&quot; is gewijzigd. De oude index wordt opgeslagen onder `/oak:index/acme.product-custom-1`, en de nieuwe index wordt opgeslagen onder `/oak:index/acme.product-custom-2`.
+Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Stel dat de bestaande index `/oak:index/acme.product-custom-1` is gewijzigd. De oude index wordt opgeslagen onder `/oak:index/acme.product-custom-1`, en de nieuwe index wordt opgeslagen onder `/oak:index/acme.product-custom-2`.
 
 De oude versie van de toepassing gebruikt de volgende configuratie:
 
@@ -167,6 +163,43 @@ De nieuwe versie van de toepassing gebruikt de volgende (veranderde) configurati
 
 `/oak:index/acme.product-custom-2`
 
-### Index-Availability/Fault-Tolerantie {#index-availability}
+>[!NOTE]
+>
+>Indexdefinities van AEM als Cloud Service komen mogelijk niet volledig overeen met de indexdefinities van een lokale ontwikkelingsinstantie. De ontwikkelingsinstantie heeft geen configuratie Tika, terwijl AEM aangezien de instanties van de Cloud Service één hebben. Als u een index met een configuratie van de Tika aanpast, gelieve de configuratie van de Tika te behouden.
 
-Het wordt aanbevolen dubbele indexen te maken voor functies die van groot belang zijn (rekening houdend met de bovenstaande naamgevingsconventie voor indexen). In het geval van indexbeschadiging of een dergelijke onvoorziene gebeurtenis is er dus een fallback-index beschikbaar om te reageren op query&#39;s.
+### Een wijziging {#undoing-a-change} ongedaan maken
+
+Soms moet een wijziging in een indexdefinitie worden teruggedraaid. De reden hiervoor zou kunnen zijn dat er een wijziging is gemaakt of dat er niet langer een wijziging nodig is. De indexdefinitie `damAssetAssetLucene-8-custom-3` is bijvoorbeeld per ongeluk gemaakt en is al geïmplementeerd. Hierdoor kunt u terugkeren naar de vorige indexdefinitie `damAssetAssetLucene-8-custom-2`. Om dat te doen, moet u een nieuwe index toevoegen genoemd `damAssetAssetLucene-8-custom-4` die de definitie van de vorige index, `damAssetAssetLucene-8-custom-2` bevat.
+
+### Een index {#removing-an-index} verwijderen
+
+Het volgende is alleen van toepassing op aangepaste indexen. Productindexen kunnen niet worden verwijderd omdat ze door AEM worden gebruikt.
+
+Als een index in een recentere versie van de toepassing moet worden verwijderd, kunt u een lege index (een lege index bepalen die nooit wordt gebruikt, en geen gegevens bevat), met een nieuwe naam. In dit voorbeeld kunt u het `/oak:index/acme.product-custom-3` een naam geven. Hiermee wordt de index `/oak:index/acme.product-custom-2` vervangen. Nadat `/oak:index/acme.product-custom-2` door het systeem is verwijderd, kan de lege index `/oak:index/acme.product-custom-3` ook worden verwijderd. Een voorbeeld van een dergelijke lege index is:
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+    </acme.product-custom-3>
+```
+
+Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaardindex `damAssetAssetLucene-8`, moet u een index `damAssetAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetAssetLucene-8` bevat.
+
+### Indexbeschikbaarheid en fouttolerantie {#index-availability-and-fault-tolerance}
+
+Het wordt aanbevolen dubbele indexen te maken voor functies die belangrijk zijn (rekening houdend met de bovenstaande naamgevingsconventie voor indexen), zodat er in het geval van indexbeschadiging of een dergelijke onvoorziene gebeurtenis een fallback-index beschikbaar is om te reageren op query&#39;s.
