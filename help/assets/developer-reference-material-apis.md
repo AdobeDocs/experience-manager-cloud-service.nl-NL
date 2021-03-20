@@ -3,7 +3,7 @@ title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
+source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -145,7 +145,7 @@ Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de 
 | `versionComment` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
 | `replace` | Boolean | Optioneel | Als `True` en een element met de opgegeven naam bestaat, verwijdert [!DNL Experience Manager] het element en maakt u het opnieuw. |
 
->!![NOTE]
+>[!NOTE]
 Als het element bestaat en `createVersion` noch `replace` is opgegeven, werkt [!DNL Experience Manager] de huidige versie van het element bij met het nieuwe binaire getal.
 
 Net als bij het initiëringsproces kunnen de volledige aanvraaggegevens informatie voor meer dan één bestand bevatten.
