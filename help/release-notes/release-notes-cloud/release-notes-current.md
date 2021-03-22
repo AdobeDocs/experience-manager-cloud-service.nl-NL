@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
+source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -202,6 +202,14 @@ Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/do
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
 
 ## Analysator van best practices {#best-practices-analyzer}
+
+### Releasedatum {#release-date-bpa-march}
+
+De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
+
+### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa-march}
+
+* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in UI evenals uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
 
 ### Releasedatum {#release-date-bpa}
 
