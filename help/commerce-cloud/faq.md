@@ -2,9 +2,9 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 translation-type: tm+mt
-source-git-commit: 903a78d98082b937128073d5edce23dc70b01a1d
+source-git-commit: ad831b2cc3657666678662eeff0eaf371ce4da49
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ CIF toe:voegen-op gebruikt met AEM Cloud Service laat gegevens toe om van de han
 
 ## 7. Welke catalogusgrootte AEM CIF-ondersteuning?
 
-Als productgegevens en cataloguspagina&#39;s dynamisch worden gemaakt en in het cachegeheugen worden opgeslagen, geldt er geen limiet voor het formaat van de correctie. Grootte catalogus is echter slechts één aspect dat u in overweging moet nemen. Cacheratio, gelijktijdige gegevensaanvragen en het maken van pagina&#39;s kunnen van invloed zijn op de schaalbaarheid en prestaties.
+Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe schaalbaar zijn de API&#39;s van uw handelsoplossingen?
 
 ## 8. Hoe speelt PIM in dit kader?
 
