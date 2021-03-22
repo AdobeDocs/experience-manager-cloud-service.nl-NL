@@ -2,10 +2,10 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 46%
+source-wordcount: '2512'
+ht-degree: 43%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="De Analysator van Beste praktijken gebruiken"
 >abstract="Bekijk de documentatie voor het gebruik van de Analysator voor best practices (voorheen Cloud Readiness Analyzer) en het gegenereerde rapport. Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Belangrijke overwegingen voor het Gebruiken van Analyzer van Beste praktijken {#imp-considerations}
 
@@ -79,7 +79,7 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. U kunt het rapport downloaden in een CSV-indeling (comma-separated values, door komma&#39;s gescheiden waarden) door op **CSV** te klikken, zoals in de onderstaande afbeelding wordt getoond.
+1. U kunt het rapport downloaden in een CSV-indeling (comma-separated values, door te klikken op **Exporteren naar CSV**, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -92,6 +92,25 @@ U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opni
 Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+
+#### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
+
+Volg onderstaande stappen om bevindingen met betrekking tot [ACS-komma](https://adobe-consulting-services.github.io/acs-aem-commons/) te filteren:
+
+1. Klik op het linkerspoorpictogram aan de linkerkant van de pagina. Dit zal **ACS Commons Filter** tonen. Klik op **ACS Commons Filter** om het interactieve checkbox zoals aangetoond in het hieronder beeld te tonen.
+
+   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+
+   >[!NOTE]
+Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
+
+1. Schakel het selectievakje uit om alle bevindingen met betrekking tot ACS-opdrachten uit te filteren. U zou **Gefilterde het Vinden Aantal** op het rapport zoals aangetoond in het hieronder beeld moeten zien. Het filter wordt ook toegepast op het rapport wanneer het in een komma-gescheiden-waarde (CSV) formaat wordt uitgevoerd.
+
+   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+
+   >[!NOTE]
+De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Raadpleeg [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de compatibiliteit met AEM als Cloud Service te bepalen.
 
 
 ### Adobe Experience Manager 6.2 en 6.1 {#aem-specific-versions}
