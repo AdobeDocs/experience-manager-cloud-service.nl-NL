@@ -2,9 +2,9 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 24%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 24%
 
 # [!DNL Assets] als  [!DNL Cloud Service] hulplijn  {#aem-assets-guide}
 
-Hier volgen de bronnen voor zelfhulp voor [!DNL Experience Manager Assets] als [!DNL Cloud Service].
+De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 
 ## Belangrijke [!DNL Assets] artikelen {#key-articles}
 
