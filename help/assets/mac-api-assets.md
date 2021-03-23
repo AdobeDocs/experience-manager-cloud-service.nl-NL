@@ -3,9 +3,9 @@ title: HTTP-API voor assets
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,9 @@ Toegang krijgen tot de API:
 
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
-Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar via de [!DNL Assets] Webinterface en door HTTP API. De API retourneert een foutbericht van 404 als [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
-
 >[!NOTE]
 >
->Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen), zijn AEM vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload-technical) in plaats daarvan.
+>Alle API-aanroepen met betrekking tot het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen) zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload-technical) in plaats daarvan.
 
 ## Contentfragmenten {#content-fragments}
 
@@ -38,11 +36,11 @@ Zie [Ondersteuning van inhoudsfragmenten in de  [!DNL Experience Manager Assets]
 
 ## Gegevensmodel {#data-model}
 
-De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor meer informatie.
+De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien worden meer gedetailleerde elementen beschikbaar gesteld voor aangepaste gegevensmodellen die gestructureerde inhoud in Content Fragments beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor meer informatie.
 
 ### Mappen {#folders}
 
-Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn containers voor andere mappen of berichten. Mappen hebben de volgende componenten:
+Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. De map kan alleen elementen, alleen mappen of mappen en elementen bevatten. Mappen hebben de volgende componenten:
 
 **Entiteiten**: De entiteiten van een map zijn onderliggende elementen, mappen en elementen.
 
@@ -66,7 +64,8 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 In [!DNL Experience Manager] bevat een element de volgende elementen:
 
 * De eigenschappen en metagegevens van het element.
-* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
+* Oorspronkelijk geüpload binair bestand van het element.
+* Meerdere uitvoeringen, zoals geconfigureerd. Dit kunnen afbeeldingen van verschillende grootten, video&#39;s van verschillende coderingen of uitgenomen pagina&#39;s uit PDF- of [!DNL Adobe InDesign]-bestanden zijn.
 * Optionele opmerkingen.
 
 Zie [Ondersteuning van inhoudsfragmenten in HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) voor informatie over elementen in inhoudsfragmenten.
@@ -95,7 +94,7 @@ De [!DNL Assets] HTTP-API bevat de volgende functies:
 
 >[!NOTE]
 >
->Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notatie weggelaten. In feite correleert de notatie wel met [Resty](https://github.com/micha/resty). Dit is een scriptwrapper voor `cURL`.
+>Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notaties weggelaten. De notatie correleert met [Resty](https://github.com/micha/resty) die een manuscriptomslag voor cURL is.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -122,9 +121,14 @@ Haalt een Siren-weergave op van een bestaande map en van de onderliggende entite
 
 ## Een map {#create-a-folder} maken
 
-Hiermee maakt u een nieuwe `sling`: `OrderedFolder` op het opgegeven pad. Als een `*` in plaats van een knoopnaam wordt verstrekt, gebruikt servlet de parameternaam als knooppuntnaam. Gegevens die worden geaccepteerd als aanvraaggegevens zijn ofwel een Sirene-representatie van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`. Dit is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
+Hiermee maakt u een `sling`: `OrderedFolder` op het opgegeven pad. Als `*` in plaats van een knooppuntnaam wordt verstrekt, gebruikt servlet de parameternaam als knooppuntnaam. In het verzoek worden de volgende twee handelingen geaccepteerd:
 
-Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een aanroep retourneert een antwoordcode `409` als de map al bestaat.
+* Een Sirene-weergave van de nieuwe map
+* Een reeks naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`. Dit is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken.
+
+Ook kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
+
+Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een vraag keert een antwoordcode `409` terug als de omslag bestaat.
 
 **Parameters**:  `name` is de mapnaam.
 
@@ -136,7 +140,7 @@ Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppu
 **Antwoordcodes**: De responscodes zijn:
 
 * 201 - GEMAAKT - over succesvol maken.
-* 409 - CONFLICT - als de map al bestaat.
+* 409 - CONFLICT - als de map bestaat.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
@@ -163,7 +167,7 @@ Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap bij
 
 ## Een elementuitvoering maken {#create-an-asset-rendition}
 
-Maak een nieuwe elementuitvoering voor een element. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
+Een uitvoering voor een element maken. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
 **Parameters**: De parameters zijn  `name` voor naam van de vertoning en  `file` als dossierverwijzing.
 
@@ -181,7 +185,7 @@ Maak een nieuwe elementuitvoering voor een element. Als de naam van de parameter
 
 ## Elementuitvoering {#update-an-asset-rendition} bijwerken
 
-Updates vervangen een elementuitvoering door de nieuwe binaire gegevens.
+Updates vervangen respectievelijk een elementuitvoering door de nieuwe binaire gegevens.
 
 **Verzoek**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
@@ -193,8 +197,6 @@ Updates vervangen een elementuitvoering door de nieuwe binaire gegevens.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
 ## Opmerking toevoegen aan een element {#create-an-asset-comment}
-
-Hiermee maakt u een nieuwe middelenopmerking.
 
 **Parameters**: De parameters zijn  `message` voor de berichttekst van de opmerking en  `annotationData` voor de annotatiegegevens in JSON-indeling.
 
@@ -260,6 +262,12 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 * 200 - OK - als de map is verwijderd.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
+
+## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
+
+* Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar via de [!DNL Assets] Webinterface en door HTTP API. De API retourneert een foutbericht van 404 als [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
+
+* Gebruik `/adobe` niet als URL- of JCR-pad. Registreer geen servlets onder deze structuur of maak geen inhoud in JCR.
 
 >[!MORELIKETHIS]
 >
