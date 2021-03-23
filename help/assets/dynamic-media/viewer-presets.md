@@ -2,9 +2,9 @@
 title: Voorinstellingen voor Dynamic Media-viewers toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
-topic: Zakelijke praktiserer
+topic: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 23%
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
-Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren en verwijderen, raadpleegt u [Viewer-voorinstellingen beheren](managing-viewer-presets.md).
+Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren en verwijderen, zie [Viewer-voorinstellingen beheren](managing-viewer-presets.md).
 
 Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
