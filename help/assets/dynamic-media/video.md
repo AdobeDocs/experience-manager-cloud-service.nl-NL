@@ -4,7 +4,7 @@ description: Leer hoe u met video werkt in Dynamic Media.
 feature: Videoprofielen
 topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9135'
 ht-degree: 5%
@@ -551,9 +551,9 @@ Als u video&#39;s naar YouTube wilt publiceren, hebt u een of meer kanalen nodig
 Een YouTube-kanaal maken:
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
-1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielfoto (deze kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
-1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a new channel]**.
-1. Voor de pagina van Kanalen, klik **[!UICONTROL Create a new channel]**.
+1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielfoto (deze kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en tik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
+1. Tik op de pagina Overzicht onder de kop Extra functies op **[!UICONTROL See all my channels or create a new channel]**.
+1. Tik op **[!UICONTROL Create a new channel]** op de pagina Kanalen.
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create]**.
 
    Onthoud de naam die u hier invoert, omdat u deze opnieuw moet invoeren wanneer u YouTube instelt in Experience Manager.
@@ -758,7 +758,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >[!NOTE]
 Om inhoud van YouTube te publiceren, gebruikt de Experience Manager **[!UICONTROL Publish to YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
 Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
-Voor gedetailleerdere voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 **Video&#39;s publiceren naar uw YouTube-kanaal**:
 
