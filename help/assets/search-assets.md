@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4694'
+source-wordcount: '4708'
 ht-degree: 4%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 4%
 
 [!DNL Experience Manager Assets] steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
-| Assets doorzoeken | Configuratie en beheer | Werken met zoekresultaten |
+| Middelen zoeken | Zoekfuncties configureren en beheren | Werken met zoekresultaten |
 |---|---|---|
 | [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
-| [Gebruiksinterface voor zoeken begrijpen](#searchui) |  | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
+| [Gebruiksinterface voor zoeken begrijpen](#searchui) | [Tekst extraheren](#extracttextupload) | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
 | [Zoeken in suggesties](#searchsuggestions) | [Verplichte metagegevens](#mandatorymetadata) | [Downloaden](#download) |
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
-| [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
-| [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpectedresults) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamic Media-middelen](#dynamicmedia)</li></ul> |  |  |
+| [Zoeken in rang en opvoeren](#searchrank) | [Aangepaste voorspelling](#custompredicates) | [Slimme verzamelingen](#collections) |
+| [Geavanceerd zoeken: filteren en zoekbereik](#scope) |  | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpectedresults) |
+| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-bureaubladtoepassing](#desktop-app)</li><li>[Adobe Stock-afbeeldingen](#adobe-stock)</li><li>[Dynamic Media-middelen](#search-dynamic-media-assets)</li></ul> |  |  |
 | [Elementkiezer](#assetselector) |  |  |
 | [](#tips) Beperkingen en  [tips](#limitations) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock-afbeeldingen {#adobestock}
+### Adobe Stock-afbeeldingen {#adobe-stock}
 
 Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` in de bar van het Onderzoek toe. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
@@ -147,9 +147,9 @@ Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock asset
 
 U kunt filteren voor Dynamic Media-afbeeldingen door **[!UICONTROL Dynamic Media > Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
-### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
+### GQL-zoekopdracht met specifieke waarden in metagegevensvelden {#gql-search}
 
-U kunt voor elementen die op nauwkeurige waarden van specifieke meta-gegevensgebieden, zoals, titel, beschrijving, en auteur worden gebaseerd. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (bijvoorbeeld auteur, titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
+U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, zoals titel, beschrijving en maker. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (Maker, Titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
 
 | Metagegevensveld | Facetwaarde en gebruik |
 |---|---|
@@ -175,7 +175,10 @@ U kunt voor elementen die op nauwkeurige waarden van specifieke meta-gegevensgeb
 | Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
 | Person | persoon:John |
 
-De eigenschappen pad, limiet, grootte en volgorde kunnen niet met een andere eigenschap worden ORed.
+De eigenschappen `path`, `limit`, `size`, en `orderby` kunnen niet met een andere bezit worden ORed.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezitsredacteur in kleine letters, met verwijderde ruimten.
 
@@ -197,19 +200,19 @@ Adobe Experience Manager (AEM) verbindt DAM-opslagplaats met verschillende ander
 
 Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in AEM Assets, zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve gebruikers kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de Creative Cloud-apps: Photoshop, Illustrator en InDesign. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [Elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met behulp van Adobe Asset Link.
 
-### Middelen zoeken in AEM bureaubladtoepassing {#desktopapp}
+### Middelen zoeken in bureaublad-app {#desktop-app} van Experience Manager
 
 Creatieve professionals gebruiken de desktop-app om de AEM Assets gemakkelijk doorzoekbaar te maken en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in AEM met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, * en ? jokertekens en operator AND. Zie [Elementen doorbladeren, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Middelen zoeken op Brand Portal {#brandportal}
+### Middelen zoeken op Brand Portal {#brand-portal}
 
 De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van het Merk om de goedgekeurde digitale activa met hun uitgebreide interne teams, partners, en resellers efficiënt en veilig te delen. Zie [zoekmiddelen op Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Adobe Stock-afbeeldingen doorzoeken {#adobestock-1}
+### Adobe Stock-afbeeldingen doorzoeken {#adobe-stock2}
 
 Vanuit de AEM gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` op het gebied van Onderzoek toe. U kunt ook **[!UICONTROL Filters]** gebruiken om alle gelicentieerde of niet gelicentieerde activa te vinden of een specifiek middel te zoeken gebruikend het dossieraantal van Adobe Stock. Zie [Adobe Stock-afbeeldingen beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Zoeken in Dynamic Media-middelen {#dynamicmedia}
+### Zoeken in Dynamic Media-middelen {#search-dynamic-media-assets}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
@@ -255,6 +258,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 * [!DNL Experience Manager] Mogelijk blijft de zoekterm zichtbaar nadat u eigenschappen van een element hebt geselecteerd in de gezochte resultaten en vervolgens de zoekopdracht hebt geannuleerd.  <!-- (CQ-4273540) -->
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
 * Als u `Return` selecteert zonder in de bar van het Onderzoek te typen, [!DNL Experience Manager] keert een lijst van slechts dossiers en niet omslagen terug. Als u specifiek naar omslagen zonder een sleutelwoord zoekt, [!DNL Experience Manager] keert geen resultaten terug.
+* U kunt zoeken in volledige tekst op mappen. Geef een zoekterm op die de zoekopdracht moet gebruiken.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
