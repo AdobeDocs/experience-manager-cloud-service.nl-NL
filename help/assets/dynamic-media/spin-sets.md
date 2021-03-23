@@ -4,9 +4,9 @@ description: Leer hoe u met centrifuges werkt in Dynamic Media.
 feature: Sets draaien
 topic: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1767'
 ht-degree: 11%
 
 ---
@@ -24,7 +24,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 
 >[!NOTE]
 >
->Zie [Elementen beheren met de aanraakinterface](/help/assets/manage-digital-assets.md) voor informatie over de gebruikersinterface van Elementen en pas deze toe op een nieuwe map waar de elementen van de afbeeldingsset worden geüpload.
+>Zie [Elementen beheren met de aanraakinterface](/help/assets/manage-digital-assets.md) voor informatie over de gebruikersinterface van Elementen en pas deze toe op een nieuwe map waar de elementen van de afbeeldingsset zijn geüpload.
 
 ## Snel starten: Draaisets {#quick-start-spin-sets}
 
@@ -40,7 +40,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
 1. [Upload uw afbeeldingen voor meerdere weergaven.](#uploading-assets-for-spin-sets)
 
-   U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
+   U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
 1. [Spin-sets maken.](#creating-spin-sets)
 
@@ -52,7 +52,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Beheerders kunnen viewervoorinstellingen voor spinsets maken of wijzigen. Als u uw spinset wilt weergeven met een viewervoorinstelling, selecteert u de spinset en selecteert u **Viewers** in het vervolgkeuzemenu voor het linkerspoor.
 
-   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** om voorinstellingen voor viewers te maken of te bewerken.
+   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
 
    Zie [Voorinstellingen voor viewers toevoegen en bewerken.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -68,29 +68,29 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
 1. [Koppel URL&#39;s aan uw webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of  [sluit de video- of afbeeldingsviewer](/help/assets/dynamic-media/embed-code.md) in.
 
-   AEM Assets maakt URL-aanroepen voor centrifuges en activeert deze nadat u de centrifuges hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
+   Adobe Experience Manager Assets maakt URL-aanroepen voor centrifuges en activeert deze nadat u de centrifuges hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
    Selecteer eerst de spinset en selecteer vervolgens **[!UICONTROL Viewers]** in het vervolgkeuzemenu voor het linkerspoor.
 
    Zie [Een spinset koppelen aan een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/dynamic-media/embed-code.md).
 
-Als dat nodig is, kunt u [centrifuges bewerken](#editing-spin-sets). Bovendien kunt u [Vastgestelde eigenschappen van de Spin](/help/assets/manage-digital-assets.md#editing-properties) bekijken en wijzigen.
+Indien nodig kunt u [Spin-sets bewerken](#editing-spin-sets). Bovendien kunt u [Vastgestelde eigenschappen van de Spin](/help/assets/manage-digital-assets.md#editing-properties) bekijken en wijzigen.
 
 ## Elementen uploaden voor centrifuges {#uploading-assets-for-spin-sets}
 
-U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
+U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-U kunt afbeeldingen voor de centrifuges uploaden zoals u [elk ander element in AEM Assets](/help/assets/manage-digital-assets.md) uploadt.
+U kunt afbeeldingen voor de centrifuges uploaden zoals u [andere elementen in Experience Manager Assets](/help/assets/manage-digital-assets.md) uploadt.
 
 ### Richtlijnen voor het vastleggen van afbeeldingen voor uw centrifugeset {#guidelines-for-shooting-spin-set-images}
 
-Hieronder vindt u een aantal aanbevolen procedures voor het uitvoeren van gecentreerde afbeeldingen. Over het algemeen geldt dat hoe meer afbeeldingen u in een centrifugeset hebt, hoe beter het effect van het draaien van de afbeelding is. Als u echter veel afbeeldingen in de set opneemt, neemt de laadtijd van de afbeeldingen toe. AEM raadt deze richtlijnen aan voor het maken van foto&#39;s voor gebruik in centrifuges:
+Hieronder vindt u een aantal aanbevolen procedures voor het uitvoeren van gecentreerde afbeeldingen. Over het algemeen geldt dat hoe meer afbeeldingen u in een centrifugeset hebt, hoe beter het effect van het draaien van de afbeelding is. Als u echter veel afbeeldingen in de set opneemt, neemt de laadtijd van de afbeeldingen toe. Experience Manager raadt de volgende richtlijnen aan voor het maken van foto&#39;s voor gebruik in centrifuges:
 
 * Gebruik minimaal 8-12 afbeeldingen in een eendimensionale centrifuge en 16-24 afbeeldingen in een tweedimensionale centrifugeset. U hebt minimaal 8 afbeeldingen nodig om 360 graden te kunnen draaien. Eendimensionale centrifuges komen vaker voor omdat het maken van tweedimensionale centrifuges arbeidsintensief is.
 * Gebruik een indeling zonder verlies. TIFF en PNG worden aanbevolen.
 * Masker alle afbeeldingen zodat het item op een zuiver witte of andere achtergrond met veel contrast wordt weergegeven. Voeg desgewenst schaduwen toe.
 * Zorg ervoor dat de productdetails goed verlicht en in nadruk zijn.
-* Neem spin beelden voor modekleding met een mannequin of een model. Vaak wordt de mannequin volledig gemaskeerd (met behulp van een glazen mannequin) of wordt in de afbeelding een gestileerde mannequin/dressform weergegeven. U kunt een op-model spin-reeks tot stand brengen door het aantal hoeken te bepalen. Markeer elke hoek met band op de vloer om het model te begeleiden en in de richting van elke opname te kijken.
+* Neem spin beelden voor modekleding met een mannequin of een model. Vaak wordt de mannequin gemaskeerd (met behulp van een glazen mannequin) of wordt in de afbeelding een gestileerde mannequin/dressform weergegeven. U kunt een op-model spin-reeks tot stand brengen door het aantal hoeken te bepalen. Markeer elke hoek met band op de vloer om het model te begeleiden en in de richting van elke opname te kijken.
 
 ## Spin-sets maken {#creating-spin-sets}
 
@@ -104,7 +104,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 >[!NOTE]
 >
->De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo bestelt dat de centrifuge een vloeiende weergave van 360 graden biedt.
+>De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo instelt dat de centrifuge een vloeiende weergave van 360 graden geeft.
 
 **Draaisets maken**
 
@@ -118,7 +118,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
    >[!NOTE]
    >
-   >Wanneer u de centrifugeset maakt, kunt u de miniatuur van de centrifugeset wijzigen of AEM de miniatuur automatisch selecteren op basis van de elementen in de centrifugeset. Als u een miniatuur wilt selecteren, klikt u op **[!UICONTROL Change thumbnail]** en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Selecteer **[!UICONTROL Switch to Automatic thumbnail]** als u een miniatuur hebt geselecteerd en vervolgens wilt bepalen dat AEM een miniatuur moet genereren op basis van de centrifugeset.
+   >Wanneer u de centrifugeset maakt, kunt u de miniatuur van de centrifugeset wijzigen of Experience Manager toestaan de miniatuur automatisch te selecteren op basis van de elementen in de centrifugeset. Als u een miniatuur wilt selecteren, klikt u op **[!UICONTROL Change thumbnail]** en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Selecteer **[!UICONTROL Switch to Automatic thumbnail]** als u een miniatuur hebt geselecteerd en vervolgens wilt dat Experience Manager een miniatuur genereert van de centrifugeset.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -133,7 +133,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. Nadat u elementen hebt toegevoegd, kunt u deze handmatig opnieuw ordenen of sorteren.
+1. Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. Nadat u elementen hebt toegevoegd, kunt u deze handmatig opnieuw rangschikken of sorteren.
 
    Sleep indien nodig het pictogram Opnieuw ordenen van een element naar de rechterkant van de bestandsnaam van het element om de volgorde van de afbeeldingen in de lijst met sets te wijzigen.
 
@@ -159,7 +159,7 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 
 **Draaisets weergeven**
 
-1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Klik op de naam van de set om de volledige set weer te geven.
+1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Tik op de naam van de set om de volledige set weer te geven.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -169,13 +169,13 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 
 1. Vanuit de zoekopdracht kunt u **[!UICONTROL Filters]** selecteren, **[!UICONTROL Dynamic Media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
-   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend `Starts with` onderzoekscriteria die van AEM onderzoek verschillend zijn dat op het gebruiken van `Contains` onderzoekscriteria gebaseerd is. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
+   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend `Starts with` onderzoekscriteria die van het onderzoek van de Experience Manager verschillend is die op het gebruiken van `Contains` onderzoekscriteria gebaseerd is. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
 ## Spinsets bewerken {#editing-spin-sets}
 
-U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges:
+U kunt verschillende bewerkingstaken uitvoeren op centrifuges, zoals:
 
 * Voeg afbeeldingen toe aan de centrifugeset.
 * Wijzig de volgorde van de afbeeldingen in de centrifugeset.
@@ -197,7 +197,7 @@ U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges
    * Als u de volgorde van afbeeldingen wilt wijzigen, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor herschikken om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, klikt u op de kolomkop.
    * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en tik op **[!UICONTROL Select]** in de rechterbovenhoek.
-Als u de afbeelding verwijdert die AEM gebruikt voor de miniatuur door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
+Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
    * Als u een element wilt verwijderen, selecteert u het en klikt of tikt u op **[!UICONTROL Delete Asset]**.
    * Tik op het pictogram Voorinstelling of klik op het pictogram Voorinstelling om een voorinstelling toe te passen.
    * Als u een volledige centrifugeset wilt verwijderen, navigeert u naar de centrifugeset, selecteert u deze en selecteert u **[!UICONTROL Delete]**
