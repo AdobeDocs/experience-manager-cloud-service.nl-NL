@@ -3,9 +3,9 @@ title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1383'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 
 >[!CAUTION]
 >
->Sommige API&#39;s blijven bestaan, maar worden niet actief ondersteund (aangeduid met een ×) en mogen niet worden gebruikt.
+>Sommige API&#39;s blijven bestaan, maar worden niet actief ondersteund (aangeduid met een ×). Gebruik deze API&#39;s zoveel mogelijk niet.
 
 | Ondersteuningsniveau | Beschrijving |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 
 ## Elementen uploaden {#asset-upload-technical}
 
-[!DNL Experience Manager] als  [!DNL Cloud Service] biedt een nieuwe methode om elementen te uploaden naar de repository. Gebruikers kunnen de elementen rechtstreeks uploaden naar de cloudopslag met HTTP API. De stappen voor het uploaden van een binair bestand zijn:
+In [!DNL Experience Manager] als [!DNL Cloud Service], kunt u de activa aan de cloudopslag direct uploaden gebruikend HTTP API. De stappen voor het uploaden van een binair bestand zijn:
 
 1. [Verzend een HTTP-aanvraag](#initiate-upload). Het informeert [!DNL Experience Manage]r plaatsing van uw intent om een nieuw binair getal te uploaden.
 1. [POST de inhoud van de ](#upload-binary) binaire illustratie aan één of meerdere URIs die door het openingsverzoek wordt verstrekt.
@@ -116,8 +116,8 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 * `mimeType` (tekenreeks): Het mime type van het overeenkomstige binaire getal, zoals die in het in werking gestelde verzoek wordt verstrekt. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `uploadToken` (tekenreeks): Een upload token voor het overeenkomstige binaire getal. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `uploadURIs` (array): Een lijst met tekenreeksen waarvan de waarden volledige URI&#39;s zijn waarnaar de inhoud van het binaire bestand moet worden geüpload (zie binair [ ](#upload-binary)uploaden).
-* `minPartSize` (nummer): De minimale lengte, in bytes, van gegevens die aan om het even welke uploadURIs kunnen worden verstrekt, als er meer dan één URI is.
-* `maxPartSize` (nummer): De maximumlengte, in bytes, van gegevens die aan om het even welke uploadURIs kunnen worden verstrekt, als er meer dan één URI is.
+* `minPartSize` (nummer): De minimale lengte, in bytes, van gegevens die aan om het even welk van het  `uploadURIs`, als er meer dan één URI kan worden verstrekt.
+* `maxPartSize` (nummer): De maximumlengte, in bytes, van gegevens die aan om het even welk van het kunnen worden verstrekt,  `uploadURIs`als er meer dan één URI is.
 
 ### Binair {#upload-binary} uploaden
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [De Experience Cloud als  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
