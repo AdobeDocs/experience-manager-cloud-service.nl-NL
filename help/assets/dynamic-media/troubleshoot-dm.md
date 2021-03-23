@@ -3,9 +3,9 @@ title: Problemen met Dynamic Media oplossen
 description: Tips voor het oplossen van problemen bij het gebruik van Dynamic Media.
 topic: '"Beheerder, Business Practitioner"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -25,24 +25,24 @@ Hier volgen enkele algemene tips en trucs voor alle elementen.
 
 ### Eigenschappen voor de synchronisatie van bedrijfsmiddelen {#asset-synchronization-status-properties}
 
-De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat het middel is gesynchroniseerd van AEM naar Dynamic Media:
+De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat de middelen van Adobe Experience Manager naar Dynamic Media zijn gesynchroniseerd:
 
 | **Eigenschap** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **Tekst van** fout PublishComplete | Status van het uploaden van middelen naar Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet worden gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet zijn gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** opvolger  **is mislukt:`<error text>`** | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG verhogen in het `com.adobe.cq.dam.ips`-pakket via de Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
+Synchronisatiefouten en -problemen worden `error.log` aangemeld (servermap `/crx-quickstart/logs/` van de Experience Manager). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG verhogen in het `com.adobe.cq.dam.ips`-pakket via de Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
 ### Versiebeheer {#version-control}
 
 Bij het vervangen van een bestaand Dynamic Media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen/maken:
 
-* Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. `image.jpg` is bijvoorbeeld het oorspronkelijke element en `image1.jpg` is het net geüploade element.
+* Als u beide instellingen behoudt, wordt een element gemaakt met een unieke naam voor de URL van het gepubliceerde element. `image.jpg` is bijvoorbeeld het oorspronkelijke element en `image1.jpg` is het net geüploade element.
 
 * Het maken van een versie wordt niet ondersteund in Dynamic Media. De nieuwe versie vervangt het bestaande element in levering.
 
@@ -63,14 +63,14 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     <ol>
      <li><p>Ga naar CRX/DE:</p>
       <ul>
-       <li>Controleer of de voorinstelling in het JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> is gedefinieerd. Deze locatie is van toepassing als u een upgrade hebt uitgevoerd van AEM 6.x naar 6.4 en de migratie hebt uitgeschakeld. Anders is de locatie <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Controleer of de voorinstelling in het JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> is gedefinieerd. Deze locatie is van toepassing als u een upgrade hebt uitgevoerd van Experience Manager 6.x naar 6.4 en de migratie hebt uitgeschakeld. Anders is de locatie <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Controleer of het element in de JCR <code>dam:scene7FileStatus</code><strong> </strong>onder Metagegevens wordt weergegeven als <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
    <td><p>Pagina vernieuwen/naar een andere pagina navigeren en terugkeren (JSP voor side rail moet opnieuw worden gecompileerd)</p> <p>Als dat niet werkt:</p>
     <ul>
      <li>Middelen publiceren.</li>
-     <li>Elementen opnieuw uploaden en publiceren.</li>
+     <li>Elementen opnieuw laden en publiceren.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -125,15 +125,15 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
      <li>Wijs een videoprofiel toe aan de map.</li>
      <li>Bewerk het videoprofiel om meerdere coderingsvoorinstellingen op te nemen.</li>
      <li>Wacht tot de video is verwerkt.</li>
-     <li>Als u de video opnieuw laadt, moet u ervoor zorgen dat de Dynamic Media Encode Video-workflow niet wordt uitgevoerd.<br/> </li>
-     <li>Upload de video opnieuw.</li>
+     <li>Voordat u de video opnieuw laadt, moet u ervoor zorgen dat de Dynamic Media Encode Video-workflow niet wordt uitgevoerd.<br/> </li>
+     <li>Laad de video opnieuw.</li>
     </ol> </td>
   </tr>
   <tr>
    <td>Video is niet gecodeerd</td>
    <td>
     <ul>
-     <li>Controleer of Dynamic Media-cloudservice is geconfigureerd.</li>
+     <li>Controleer of Dynamic Media Cloud Service is geconfigureerd.</li>
      <li>Controleer of een videoprofiel is gekoppeld aan de uploadmap.</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr>
   <tr>
    <td>Voorinstellingen van viewer worden niet gepubliceerd</td>
-   <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Als u correct werkt, ziet u het volgende:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Wanneer correct werkend, ziet u:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
    <td>
     <ol>
@@ -204,17 +204,17 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
        <li>Voorbeeld: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Als de voorbeeldbestanden of voorinstellingsillustraties van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:</p>
+   <td><p>Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:</p>
     <ol>
      <li>Ga naar <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
      <li>Selecteer in volgorde de volgende handelingen:
       <ol>
        <li>Synchronisatiemappen verwijderen.</li>
-       <li>Selecteer de map Voorinstelling (onder <code>/conf</code>).
+       <li>Map met voorinstellingen verwijderen (onder <code>/conf</code>).
        <li>Trigger DM Setup Async Job.</li>
       </ol> </li>
-     <li>Wacht op melding van succesvolle synchronisatie in uw AEM Inbox.
+     <li>Wacht op melding van succesvolle synchronisatie in uw Experience Manager Inbox.
      </li>
     </ol> </td>
   </tr>
