@@ -2,7 +2,7 @@
 title: 'Een productieprogramma bewerken '
 description: 'Een productieprogramma bewerken '
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -23,8 +23,7 @@ Gebruikers met de vereiste machtigingen kunnen nu een productieprogramma bewerke
 
 Voer de volgende stappen uit om een productieprogramma te bewerken:
 
-1. 
-   1. Navigeer naar de pagina **Program** bewerken van de pagina *Overzicht* van Cloud Manager
+1. Navigeer naar de pagina **Program** bewerken van de pagina *Overzicht* van Cloud Manager
 
 1. De **Edit Program** pagina zal twee lusjes (Algemeen en Oplossingen) voor zowel Productie als Sandbox programma&#39;s tonen.
 
