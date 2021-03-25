@@ -3,10 +3,10 @@ title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 8%
+source-wordcount: '4113'
+ht-degree: 6%
 
 ---
 
@@ -24,9 +24,9 @@ In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatc
 
 De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en verstrekken:
 
-* Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een toegewezen project voor dispatcher.
-* Tooling voor klanten om te bevestigen dat de verzender configuratie slechts AEM als Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
-* Een Docker-afbeelding waarmee de verzender lokaal wordt opgehaald.
+* Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een toegewezen project voor Dispatcher.
+* Tooling voor klanten om te bevestigen dat de configuratie van de Verzender slechts AEM als Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
+* Een Docker-afbeelding waarmee de Dispatcher lokaal wordt weergegeven.
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
@@ -34,7 +34,7 @@ De Dispatcher Tools, onderdeel van [AEM als Cloud Service SDK](/help/implementin
 
 Pak de SDK uit, die de Dispatcher Tools voor zowel MacOS/Linux als Windows bundelt.
 
-**Voor MacOS/Linux** moet u het artefact van het verzendprogramma uitvoerbaar maken en uitvoeren. De Dispatcher Tools-bestanden worden automatisch uitgepakt onder de map waarin u de Dispatcher Tools hebt opgeslagen (waarbij `version` de versie van de Dispatcher Tools is).
+**Voor MacOS/Linux** moet u het artefact van het gereedschap Dispatcher uitvoeren en uitvoeren. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waarbij `version` de versie van de Dispatcher Tools is).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -47,7 +47,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Bestandsstructuur {#file-structure}
 
-De structuur van de submap van de verzender van het project wordt hieronder beschreven en moet naar de toegewezen map van de projectverzender worden gekopieerd:
+De structuur van de submap Dispatcher van het project wordt hieronder beschreven en moet naar de map Dispatcher van het gemaakte project worden gekopieerd:
 
 ```bash
 ./
@@ -104,7 +104,7 @@ Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. Het heeft een reeks he
 
 >[!NOTE]
 >
->Op dit moment moet één herschrijfbestand worden gebruikt in plaats van sitespecifieke bestanden. De bestandsgrootte moet kleiner zijn dan 1 MB.
+>Momenteel moet één herschrijfbestand worden gebruikt in plaats van bestanden die specifiek zijn voor de site. In de regel moet de som van de inhoud van de aanpasbare bestanden kleiner zijn dan 1 MB.
 
 * `conf.d/variables/custom.vars`
 
@@ -112,11 +112,11 @@ Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. U kunt op deze locatie
 
 * `conf.d/variables/global.vars`
 
-Dit bestand wordt opgenomen vanuit het `dispatcher_vhost.conf`-bestand. U kunt de verzender wijzigen en het logniveau in dit bestand wijzigen.
+Dit bestand wordt opgenomen vanuit het `dispatcher_vhost.conf`-bestand. U kunt de Dispatcher wijzigen en het logniveau in dit bestand herschrijven.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de dispatchermodule toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in de map `available_farms` en ingeschakeld met een symbolische koppeling in de map `enabled_farms`. Van de `.farm` dossiers, zullen andere dossiers zoals filters, geheim voorgeheugenregels en anderen worden omvat.
+U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in de map `available_farms` en ingeschakeld met een symbolische koppeling in de map `enabled_farms`. Van de `.farm` dossiers, zullen andere dossiers zoals filters, geheim voorgeheugenregels en anderen worden omvat.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -134,13 +134,13 @@ Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Het heeft een reeks reg
 
 Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Het heeft een lijst van gastheernamen of de wegen van URI die door glob aanpassing moeten worden aangepast. Dit bepaalt welke achtergrond om een verzoek te dienen.
 
-De bovenstaande bestanden verwijzen naar de onderstaande onveranderlijke configuratiebestanden. Wijzigingen in de onveranderbare bestanden worden niet verwerkt door verzenders in Cloud-omgevingen.
+De bovenstaande bestanden verwijzen naar de onderstaande onveranderlijke configuratiebestanden. Wijzigingen in de onveranderbare bestanden worden niet verwerkt door Dispatchers in Cloud-omgevingen.
 
 **Immuable Configuration Files**
 
 Deze bestanden maken deel uit van het basiskader en zorgen ervoor dat standaarden en beste praktijken worden nageleefd. De bestanden worden als onveranderlijk beschouwd, omdat het wijzigen of verwijderen ervan lokaal geen invloed heeft op uw implementatie, omdat deze bestanden niet worden overgedragen naar uw Cloud-instantie.
 
-Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder vermelde onveranderlijke bestanden, gevolgd door aanvullende instructies of overschrijvingen. Wanneer de configuratie van de verzender aan een wolkenmilieu wordt opgesteld, zal de recentste versie van de onveranderlijke dossiers worden gebruikt, ongeacht welke versie in lokale ontwikkeling werd gebruikt.
+Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder vermelde onveranderlijke bestanden, gevolgd door aanvullende instructies of overschrijvingen. Wanneer de configuratie van de Verzender aan een wolkenmilieu wordt opgesteld, zal de recentste versie van de onveranderlijke dossiers worden gebruikt, ongeacht welke versie in lokale ontwikkeling werd gebruikt.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -156,7 +156,7 @@ Standaard herschrijft regels geschikt voor een standaardproject. Als u aanpassin
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Bevat een bedrijf van de steekproefdispatcher. Voor uw eigen landbouwbedrijf, creeer een exemplaar van dit dossier, pas het aan, ga naar `conf.d/enabled_farms` en creeer een symbolische verbinding aan uw aangepaste exemplaar.
+Bevat een bedrijf van de steekproefDispatcher. Voor uw eigen landbouwbedrijf, creeer een exemplaar van dit dossier, pas het aan, ga naar `conf.d/enabled_farms` en creeer een symbolische verbinding aan uw aangepaste exemplaar.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
@@ -172,7 +172,7 @@ De standaard verzoekkopballen om aan het achterste deel door:sturen, geschikt vo
 
 * `conf.dispatcher.d/dispatcher.any`
 
-Deel van basisframework dat wordt gebruikt om te illustreren hoe de kwekerijen van de dispatcher worden opgenomen.
+Deel van basisframework dat wordt gebruikt om te illustreren hoe uw Dispatcher-boerderijen worden opgenomen.
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
@@ -188,7 +188,7 @@ Standaardhostglobing geschikt voor een standaardproject. Als u aanpassing nodig 
 
 >[!NOTE]
 >
->De AEM als Cloud Service wordt gemaakt archetype zal de zelfde structuur van het dossier van de berichtconfiguratie produceren.
+>De AEM als Cloud Service wordt gegeven archetype zal de zelfde structuur van het de configuratiedossier van de Dispatcher produceren.
 
 In de onderstaande secties wordt beschreven hoe u de configuratie lokaal kunt valideren zodat deze de bijbehorende kwaliteitspoort in Cloud Manager kan doorgeven bij het implementeren van een interne release.
 
@@ -198,7 +198,7 @@ Het validatieprogramma is beschikbaar in de SDK op `bin/validator` als een binai
 
 Deze wordt aangeroepen als: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-Met dit hulpprogramma wordt gecontroleerd of in de configuratie van de dispatcher de juiste instructies worden gebruikt die door AEM als cloudservice worden ondersteund, door alle bestanden te scannen met patroon `conf.d/enabled_vhosts/*.vhost`. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
+Het hulpmiddel bevestigt dat de configuratie van de Dispatcher de aangewezen richtlijnen gebruikt die door AEM als dienst van de Wolk worden gesteund door alle dossiers met patroon `conf.d/enabled_vhosts/*.vhost` af te tasten. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
 
 ```
 $ validator allowlist
@@ -346,11 +346,11 @@ Er is geen standaardversie van de variabelebestanden.
 
 Dit bericht wijst erop dat uw configuratie verouderde versie 1 lay-out heeft, die een volledige bevat
 Apache-configuratie en bestanden met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund voor achteruit
-moet u schakelen naar de nieuwe indeling.
+moet u overschakelen naar de nieuwe indeling.
 
-## Lokale validatie van de syntaxis van de verzendersconfiguratie zodat apache httpd {#local-validation} kan starten
+## Lokale validatie van de syntaxis van de Dispatcher-configuratie zodat apache httpd {#local-validation} kan starten
 
-Als is vastgesteld dat de configuratie van de verzendmodule alleen ondersteunde instructies bevat, moet u controleren of de syntaxis correct is, zodat apache kan worden gestart. Om dit te testen, moet de docker plaatselijk worden geïnstalleerd. Let op: het is niet nodig dat AEM actief is.
+Zodra is vastgesteld dat de configuratie van de module Dispatcher alleen ondersteunde instructies bevat, moet u controleren of de syntaxis correct is, zodat apache kan worden gestart. Om dit te testen, moet de docker plaatselijk worden geïnstalleerd. Let op: het is niet nodig dat AEM actief is.
 
 Gebruik het `validate.sh` manuscript zoals hieronder getoond:
 
@@ -375,9 +375,9 @@ Phase 2 finished
 
 Het script doet het volgende:
 
-1. De validator wordt uitgevoerd vanuit de vorige sectie om ervoor te zorgen dat alleen de ondersteunde instructies worden opgenomen. Als de configuratie ongeldig is, zal het manuscript ontbreken.
+1. De validator wordt uitgevoerd vanuit de vorige sectie om ervoor te zorgen dat alleen de ondersteunde instructies worden opgenomen. Als de configuratie ongeldig is, ontbreekt het manuscript.
 2. De code voert `httpd -t command` uit om te testen of de syntaxis correct is zodat apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
-3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van de verzender, die om zoals die in [de sectie van de Bestandsstructuur ](#file-structure) worden bedoeld onveranderlijk zijn, niet is gewijzigd. Dit is een nieuwe controle, geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
+3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van de Dispatcher, die bedoeld zijn om onveranderlijk te zijn zoals die in [de sectie van de Bestandsstructuur](#file-structure) worden beschreven, niet is gewijzigd. Dit is een nieuwe controle, geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
 
 Tijdens de implementatie van Cloud Manager wordt de `httpd -t syntax`-controle ook uitgevoerd en worden eventuele fouten opgenomen in het logbestand voor Cloud Manager `Build Images step failure`.
 
@@ -385,7 +385,7 @@ Tijdens de implementatie van Cloud Manager wordt de `httpd -t syntax`-controle o
 
 Het is ook mogelijk om uw Apache- en Dispatcher-configuratie lokaal te testen. Hiervoor moet de docker lokaal zijn geïnstalleerd en moet uw configuratie voldoen aan de bovenstaande validatie.
 
-Voer het validatiehulpmiddel uit (merk op dat het van `validator.sh` eerder genoemd) verschillend is, door de `-d` parameter te gebruiken die een omslag met alle de configuratiedossiers van de verzender uitvoert. Voer vervolgens het script `docker_run.sh` uit en geef die map door als een argument. Door het poortnummer op te geven (hier: 8080) om het verzender eindpunt bloot te stellen, is een container van de Dok begonnen, die de verzender met uw configuratie in werking stelt.
+Voer het validatorhulpmiddel uit (merk op dat het van `validator.sh` eerder genoemd) verschillend is, door de `-d` parameter te gebruiken die een omslag met alle de configuratiedossiers van de Ontvanger uitvoert. Voer vervolgens het script `docker_run.sh` uit en geef die map door als een argument. Door het poortnummer op te geven (hier: 8080) om het eindpunt van de Verzender bloot te stellen, is een container van de Dokker begonnen, die de Dispatcher met uw configuratie in werking stelt.
 
 ```
 $ validator full -d out src/dispatcher
@@ -400,11 +400,11 @@ Starting httpd server
 ...
 ```
 
-Hierdoor start de dispatcher in een container met de achterkant naar een AEM instantie die op uw lokale Mac OS-computer op poort 4503 wordt uitgevoerd.
+Hierdoor wordt de Dispatcher in een container gestart, waarbij de achtergrond verwijst naar een AEM instantie die op uw lokale Mac OS-computer op poort 4503 wordt uitgevoerd.
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
-De volgende strategie kan worden gebruikt om de logboekoutput voor de verzender module te verhogen en de resultaten van de `RewriteRule` evaluatie in zowel lokale als wolkenmilieu&#39;s te zien.
+De volgende strategie kan worden gebruikt om de logboekoutput voor de module van de Verzender te verhogen en de resultaten van de `RewriteRule` evaluatie in zowel lokale als wolkenmilieu&#39;s te zien.
 
 Logniveaus voor deze modules worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL`. Ze kunnen worden ingesteld in het bestand `conf.d/variables/global.vars`. Het relevante deel is als volgt:
 
@@ -430,13 +430,13 @@ Logniveaus voor deze modules worden gedefinieerd door de variabelen `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Wanneer het in werking stellen van verzender plaatselijk, worden de logboeken gedrukt direct aan de eindoutput. Meestal, wilt u deze logboeken in DEBUG zijn, die kan worden gedaan door het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Wanneer het runnen van Verzender plaatselijk, worden de logboeken gedrukt direct aan de eindoutput. Meestal, wilt u deze logboeken in DEBUG zijn, die kan worden gedaan door het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
 Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice die beschikbaar is in Cloud Manager.
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
 
-Op dit moment wordt dezelfde configuratie van de verzender toegepast op alle AEM als een Cloud Service-omgeving. De runtime heeft een omgevingsvariabele `ENVIRONMENT_TYPE` die de huidige uitvoermodus (dev, stage of prod) en een definitie bevat. De definitie kan `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` of `ENVIRONMENT_PROD` zijn. In de Apache-configuratie kan de variabele rechtstreeks in een expressie worden gebruikt. U kunt ook de definitie gebruiken om logica op te bouwen:
+Momenteel wordt dezelfde Dispatcher-configuratie toegepast op alle AEM als een Cloud Service-omgeving. De runtime heeft een omgevingsvariabele `ENVIRONMENT_TYPE` die de huidige uitvoermodus (dev, stage of prod) en een definitie bevat. De definitie kan `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` of `ENVIRONMENT_PROD` zijn. In de Apache-configuratie kan de variabele rechtstreeks in een expressie worden gebruikt. U kunt ook de definitie gebruiken om logica op te bouwen:
 
 ```
 # Simple usage of the environment variable
@@ -503,12 +503,12 @@ Zoals hierboven op de referentiepagina is beschreven, lijkt de Apache- en Dispat
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM als Cloud Service
 
-De configuratiestructuur van de verzender heeft verschillen tussen Managed Services en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher Configuration versie 2 naar AEM als Cloud Service.
+De Dispatcher-configuratiestructuur heeft verschillen tussen Managed Services en AEM als Cloud Service. Hieronder wordt een stapsgewijze handleiding gepresenteerd voor het migreren van AMS Dispatcher Configuration versie 2 naar AEM als Cloud Service.
 
-## Een AMS converteren naar een AEM als configuratie voor een serviceverzender in de cloud
+## Een AMS converteren naar een AEM als configuratie voor een cloudservice-verzender
 
 In de volgende sectie vindt u stapsgewijze instructies voor het omzetten van een AMS-configuratie. Het veronderstelt
-dat u een archief hebt met een structuur die vergelijkbaar is met de structuur die wordt beschreven in [Configuratie van de vouwmanager-dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+dat u een archief hebt met een structuur die lijkt op de structuur die wordt beschreven in [Configuratie van de Verzender van de Manager van de Wolk](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Het archief extraheren en een eventueel voorvoegsel verwijderen
 
@@ -527,7 +527,7 @@ kan ook worden verwijderd.
 
 ### Verwijder of becommentarieer virtuele hostsecties die niet verwijzen naar poort 80
 
-Als u nog secties in uw virtuele hostbestanden hebt die uitsluitend verwijzen naar andere poorten dan poort 80, b.v.
+Als u nog secties in uw virtuele gastheerdossiers hebt die uitsluitend naar andere havens dan haven 80 verwijzen, bijvoorbeeld:
 
 ```
 <VirtualHost *:443>
@@ -577,7 +577,7 @@ Secties verwijderen die verwijzen naar de variabelen `DISP_ID`, `PUBLISH_FORCE_S
 
 ### Uw status controleren door de validatietool uit te voeren
 
-Voer de dispatchervalidator in uw map uit met de subopdracht `httpd`:
+Voer de Dispatcher-validator in uw map uit met de subopdracht `httpd`:
 
 ```
 $ validator httpd .
@@ -605,7 +605,7 @@ Voer de map `conf.dispatcher.d/cache` in.
 Verwijder alle bestanden met het voorvoegsel `ams_`.
 
 Als `conf.dispatcher.d/cache` nu leeg is, kopieert u het bestand `conf.dispatcher.d/cache/rules.any`
-vanuit de standaardconfiguratie van de verzender naar deze map. De standaardverzender
+vanuit de standaardconfiguratie voor Dispatcher naar deze map. De standaardverzender
 Deze configuratie vindt u in de map `src` van deze SDK. Vergeet niet de
 `$include` instructies die verwijzen naar de `ams_*_cache.any`-regelbestanden in de landbouwbedrijfsbestanden
 ook.
@@ -614,13 +614,13 @@ Als `conf.dispatcher.d/cache` nu een enkel bestand bevat met achtervoegsel `_cac
 moet de naam van het bestand worden gewijzigd in `rules.any` en vergeet niet om de `$include`-instructies aan te passen
 die ook verwijzen naar dat dossier in de landbouwbedrijfdossiers.
 
-Als de map echter meerdere, boerderspecifieke bestanden met dat patroon bevat, de inhoud ervan
+Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, hun inhoud
 moet naar de `$include` verklaring worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Verwijder elk bestand met het achtervoegsel `_invalidate_allowed.any`.
 
 Het bestand `conf.dispatcher.d/cache/default_invalidate_any` kopiëren uit de standaardmap
-AEM in de configuratie van de Cloud-dispatcher naar die locatie.
+AEM in de configuratie van Cloud Dispatcher naar die locatie.
 
 In elk landbouwbedrijfdossier, verwijder om het even welke inhoud in `cache/allowedClients` sectie en vervang het
 met:
@@ -639,13 +639,13 @@ Als `conf.dispatcher.d/clientheaders` nu één bestand met achtervoegsel `_clien
 moet de naam van het bestand worden gewijzigd in `clientheaders.any` en vergeet niet om de `$include`-instructies aan te passen
 die ook verwijzen naar dat dossier in de landbouwbedrijfdossiers.
 
-Als de map echter meerdere, boerderspecifieke bestanden met dat patroon bevat, de inhoud ervan
+Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, hun inhoud
 moet naar de `$include` verklaring worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand `conf.dispatcher/clientheaders/default_clientheaders.any` kopiëren uit de standaardmap
-AEM als configuratie van de Cloud Service verzender aan die plaats.
+AEM als configuratie van de Verzender van de Cloud Service aan die plaats.
 
-In elk farmbestand vervangt u elke include-instructie voor clientheaders die er als volgt uitziet:
+In elk landbouwbedrijfdossier, vervang om het even welke cliënt omvat verklaring die als volgt kijkt:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -668,13 +668,13 @@ Als `conf.dispatcher.d/filters` nu één bestand bevat, moet de naam worden gewi
 `filters.any` en vergeet niet om de `$include`-instructies die daarop betrekking hebben, aan te passen
 ook in de landbouwbedrijfdossiers.
 
-Als de map echter meerdere, boerderspecifieke bestanden met dat patroon bevat, de inhoud ervan
+Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, hun inhoud
 moet naar de `$include` verklaring worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand `conf.dispatcher/filters/default_filters.any` kopiëren uit de standaardmap
-AEM als configuratie van de Cloud Service verzender aan die plaats.
+AEM als configuratie van de Verzender van de Cloud Service aan die plaats.
 
-In elk farmbestand vervangt u elke include-instructie voor filters die er als volgt uitziet:
+In elk landbouwbedrijfdossier, vervang om het even welke filter omvat verklaringen die als volgt kijken:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
@@ -693,7 +693,7 @@ Voer de map `conf.dispatcher.d/renders` in.
 Verwijder alle bestanden in die map.
 
 Het bestand `conf.dispatcher.d/renders/default_renders.any` kopiëren uit de standaardmap
-AEM als configuratie van de Cloud Service verzender aan die plaats.
+AEM als configuratie van de Verzender van de Cloud Service aan die plaats.
 
 In elk landbouwbedrijfdossier, verwijder om het even welke inhoud in `renders` sectie en vervang het
 met:
@@ -712,13 +712,13 @@ Als `conf.dispatcher.d/virtualhosts` nu één bestand bevat, moet de naam worden
 `virtualhosts.any` en vergeet niet om de `$include`-instructies die daarop betrekking hebben, aan te passen
 ook in de landbouwbedrijfdossiers.
 
-Als de map echter meerdere, boerderspecifieke bestanden met dat patroon bevat, de inhoud ervan
+Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, hun inhoud
 moet naar de `$include` verklaring worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand `conf.dispatcher/virtualhosts/default_virtualhosts.any` kopiëren uit de standaardmap
-AEM als configuratie van de Cloud Service verzender aan die plaats.
+AEM als configuratie van de Verzender van de Cloud Service aan die plaats.
 
-In elk farmbestand vervangt u elke include-instructie voor filters die er als volgt uitziet:
+In elk landbouwbedrijfdossier, vervang om het even welke filter omvat verklaringen die als volgt kijken:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
@@ -732,7 +732,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### Uw status controleren door de validatietool uit te voeren
 
-Voer de AEM als Cloud Service dispatcher validator in uw folder, met `dispatcher` subcommand in werking:
+Voer de AEM als validator van de Verzender van de Cloud Service in uw folder, met `dispatcher` subcommand in werking:
 
 ```
 $ validator dispatcher .
@@ -758,9 +758,10 @@ validator full -d out .
 
 Dit bevestigt de volledige configuratie en produceert plaatsingsinformatie in `out`
 
-### Stap 2: Start de dispatcher in een docker-image met die implementatiegegevens
+### Stap 2: De Dispatcher starten in een dockerafbeelding met die implementatiegegevens
 
-Als uw AEM-publicatieserver op uw MacOS-computer wordt uitgevoerd en u luistert naar poort 4503, kunt u de Dispatcher als volgt voor die server starten:
+Wanneer uw AEM publicatieserver op uw MacOS-computer wordt uitgevoerd, luistert u naar poort 4503,
+u kunt de Dispatcher als volgt voor die server starten:
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -768,7 +769,7 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 Hierdoor wordt de container gestart en is Apache beschikbaar op de lokale poort 8080.
 
-### De nieuwe configuratie van de verzender gebruiken
+### De nieuwe Dispatcher-configuratie gebruiken
 
 Gefeliciteerd! Als de validator geen problemen meer rapporteert en als de
 dockercontainer wordt gestart zonder fouten of waarschuwingen, u bent
