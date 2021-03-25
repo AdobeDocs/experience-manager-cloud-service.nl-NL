@@ -3,9 +3,9 @@ title: Het vormen OSGi voor Adobe Experience Manager als Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 feature: Implementeren
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Inline-configuratiewaarden worden als de standaardbenadering beschouwd en moeten
 * Waarden zijn impliciet gekoppeld aan code-implementaties
 * Zij vereisen geen extra overwegingen van plaatsing of coördinatie
 
-Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waarden, om het even welk slechts geheim of milieu-specifieke configuraties indien nodig voor het gebruiksgeval selecteren.
+Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waarden, en selecteer slechts geheime of milieu-specifieke configuraties indien nodig voor het gebruiksgeval.
 
 ### Wanneer om niet-geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values} te gebruiken
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 Klanten dienen deze techniek alleen te gebruiken voor OSGI-configuratie-eigenschappen die gerelateerd zijn aan hun aangepaste code. het moet niet worden gebruikt om Adobe-bepaalde configuratie te overschrijven OSGI.
+
+>[!NOTE]
+>
+>Plaatsaanduidingen kunnen niet worden gebruikt in [instructies opnieuw aanwijzen](/help/implementing/deploying/overview.md#repoinit).
 
 ### Geheime configuratiewaarden {#secret-configuration-values}
 
