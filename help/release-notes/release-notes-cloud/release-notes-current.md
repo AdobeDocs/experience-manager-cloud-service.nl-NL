@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
+source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -23,51 +23,62 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.2.0 is 25 februari 2021.
-De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
+De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.3.0 is 25 maart 2021.
+De volgende release (2021.4.0) vindt plaats op 29 april 2021.
 
 ## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
 
-* **[De RemotePage-component](/help/implementing/developing/hybrid/remote-page.md)**: Extra ondersteuning voor het weergeven en bewerken van externe SPA in AEM.
-
-* **[Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Mogelijkheid toegevoegd om een zelfstandige toepassing van één pagina naar een AEM instantie te uploaden, bewerkbare gedeelten van inhoud toe te voegen en het schrijven van inhoud in te schakelen.
-
-<!--
-### Progressive Web Apps (PWAs) {#pwa}
-
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
--->
+* [Een Progressieve versie van de Web App (PWA) van het Web van een ](/help/sites-cloud/authoring/features/enable-pwa.md) sitecan wordt nu toegelaten op het projectniveau via eenvoudige configuratie.
+* Extensies inhoudsfragmentmodel - nu mogelijk om gegevenstypen met meerdere regels te definiëren als lijsten met meerdere velden.
+* Verbeteringen in de Content Fragment Editor UX: geneste onderliggende fragmenten die nu worden weergegeven in de broodkruimel en verbeterde weergave van acties voor publiceren, opslaan en opslaan en afsluiten
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
-## Nieuw in [!DNL Assets] {#what-is-new-assets}
+### Nieuw in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager Assets] als een  [!DNL Cloud Service] gerechtigd is om een vooraf geconfigureerde  [!DNL Brand Portal] instantie te hebben. De [!DNL Cloud Manager] gebruiker kan [!DNL Brand Portal] op [!DNL Experience Manager Assets] als [!DNL Cloud Service] activeren. Zie [Brand Portal activeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* Bedrijven kunnen nu elementen aanschaffen met [!DNL Brand Portal]. De functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aantrekken van bedrijfsmiddelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* In het gebruiksrapport [!DNL Brand Portal] worden nu alleen de actieve gebruikers weergegeven. De inactieve gebruikers worden nu niet weergegeven. Actieve gebruikers zijn de gebruikers van wie de account is toegewezen aan een productprofiel in [!DNL Admin Console]. Zie [[!DNL Brand Portal] rapporten](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* In [!DNL Brand Portal] wordt een nieuwe downloadinstelling geïntroduceerd, waarmee u voor elk element een aparte map kunt maken wanneer u mappen, verzamelingen en dergelijke downloadt. Zie [downloadinstellingen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+Ability to select a root path. select if a minimum number of tags is required. 
 
-## Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
+Add a Boolean or radio widget type to metadata schema setup. -->
 
-* Wanneer een nieuwe versie van een bestaand element wordt gemaakt nadat het naamconflict is opgelost, worden de metagegevens van het oorspronkelijke element overschreven. (CQ-4313594)
-* Wanneer een element met lange annotatietekst wordt afgedrukt, wordt de annotatietekst bijgesneden, zelfs als er ruimte beschikbaar is. (CQ-4314101)
-* Wanneer meerdere elementen zijn geselecteerd om de eigenschappen bij te werken, treedt soms een fout op of worden de eigenschappen van een niet-geselecteerd element bijgewerkt. (CQ-4316532)
-* Wanneer u [!UICONTROL Assets Admin Search Rail] probeert te openen, blijft de pagina leeg en wanneer u op [!UICONTROL Edit] > [!UICONTROL Settings] klikt, wordt een fout gegenereerd. (CQ-4315/079)
+* [!DNL Experience Manager] breidt de Connected Assets-functionaliteit uit om het gebruik van  [!DNL Dynamic Media] afbeeldingen in de ondersteunde kerncomponenten te ondersteunen. Zie [Aangesloten elementen gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
+* Beheerders van Experience Managers kunnen het opnemen van grote hoeveelheden elementen op een bepaalde datum of tijd plannen. Ook, kunnen de beheerders terugkomende ingesties plannen die op datum en tijd worden gebaseerd. Zie [bulkopname van elementen](/help/assets/add-assets.md#asset-bulk-ingestor).
+
+### Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
+
+* De copyrightpagina wordt niet weergegeven wanneer u meerdere middelen met rechtenbeheer probeert te downloaden. (CQ-4314403)
+* Wanneer u ervoor kiest een INDD-bestand te bewerken, verandert de resolutie onverwacht. (CQ-4317376)
+* Alleen de laatste pagina van de InDesign-sjabloon staat in de PDF-vertoning. (CQ-4317305)
+* De tagkiezer kan lang worden geopend wanneer de kiezer deel uitmaakt van een complex metagegevensschema. (CQ-4316426)
+* Wanneer u elementen uploadt met dezelfde bestandsnaam als een bestaand bestand, wordt het dialoogvenster voor naamconflict niet weergegeven om de gebruiker te vragen een versie te maken. (CQ-4315424)
+* Eigenschappen van metagegevens van mappen kunnen worden ingesteld en opgeslagen via het pop-upmenu op de pagina Eigenschappen van een map. De selectie wordt opgeslagen in de gegevensopslagruimte en wordt niet weergegeven wanneer de eigenschappen van de metagegevens van de map opnieuw worden geopend. (CQ-4314429)
+* Elementen met bestandsnamen die spaties of speciale tekens bevatten, worden via de browser geüpload. (CQ-4318381)
+
+## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
+
+AEM Forms heeft veel organisaties geholpen om in de loop der jaren geweldige ervaring op het gebied van instapweigering en inschrijving te bieden. Deze ervaringen hebben organisaties geholpen bij het omzetten van leads naar verkoop, het verwerken van vastgelegde klantgegevens, het leveren van responsieve ervaringen op basis van het profiel van het publiek en nog veel meer. AEM Forms is nu beschikbaar als cloudservice.
+
+Met [AEM Forms kunt u als Cloud Service ](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) digitale formulieren maken, formulieren verbinden met bestaande gegevensbronnen, formulieren integreren met Adobe Sign om e-handtekeningen toe te voegen aan formulieren, Document of Record genereren (DoR) om verzonden formulieren als PDF-bestanden te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud. Lees [dit blogbericht](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) voor meer informatie over de mogelijkheden en functies van AEM Forms als Cloud Service.
+
+U kunt een demo afspelen bij uw Adobe-medewerker of u aanmelden voor de service.
 
 ## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Product Experience Management: Verrijk de pagina&#39;s van de productcatalogus individueel met de Fragmenten van de Ervaring.
+* Ondersteuning voor Magento 2.4.2
 
-* Uitgebreide eigenschappen van de productconsole om verbonden Middelen en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
+* Productdetailcomponent kan nu worden gebruikt en geconfigureerd op elke inhoudspagina
 
-* Uitgebrachte CIF Venia Reference Site - 2021.02.24 met de nieuwste versie van CIF Core Components v1.8.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer informatie.
+* Uitgebrachte CIF Venia Reference Site - 2021.03.25 met de nieuwste versie van CIF Core Components v1.9.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) voor meer informatie.
 
-* Uitgebrachte CIF Core Components v1.8.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer informatie.
+* Uitgebrachte CIF Core Components v1.9.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) voor meer informatie.
+
 
 ## Cloud Manager {#cloud-manager}
 
@@ -77,7 +88,6 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM be
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart 2021.
 De volgende release is gepland voor 8 april 2021.
-
 
 ### Wat is er nieuw?{#what-is-new-march}
 
@@ -121,42 +131,6 @@ De volgende release is gepland voor 8 april 2021.
 
 * Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
 
-
-### Releasedatum {#release-date-cm}
-
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.2.0 is 11 februari 2021.
-
-### Nieuwe functies {#what-is-new-cloud-manager}
-
-
-* Klanten van middelen kunnen nu kiezen wanneer en waar ze hun Brand Portal-instantie op een zelfbedieningsmanier implementeren via de interface van Cloud Manager. Voor een regelmatig (niet-sandbox) programma met middelenoplossing kan het Brand Portal nu worden ingericht op de productieomgeving. De levering kan slechts eenmaal op het milieu van de Productie worden gedaan.
-
-* Het AEM Project Archetype dat in Project en Sandbox creatie wordt gebruikt is bijgewerkt aan versie 25.
-
-* De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente Cloud Service SDK-releases.
-
-* SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in conflict met de controles van de Onderbreking van de thread.
-
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
-
-* Eigenschappen die zijn ingesteld in `pom.xml`-bestanden van de klant die vooraf zijn voorzien van sonar, worden nu dynamisch verwijderd om fouten met het scannen van build en kwaliteit te voorkomen.
-
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
-
-* Er zijn aanvullende regels voor de kwaliteit van code toegevoegd om compatibiliteitsproblemen met Cloud Servicen te verhelpen.
-
-### Opgeloste problemen {#bug-fixes-cloud-manager}
-
-* Het vergelijken van SSL-certificaat met een domeinnaam is niet langer hoofdlettergevoelig.
-
-* De gebruikersinterface van Cloud Manager stelt de gebruiker nu op de hoogte als de persoonlijke certificaatsleutels niet voldoen aan de limiet van 2048 bits met een geschikt foutbericht.
-
-* De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein wordt gebruikt die momenteel wordt opgesteld.
-
-* In sommige gevallen kan een intern probleem ertoe leiden dat het verwijderen van het milieu vastloopt.
-
-* Sommige pijpleidingsmislukkingen werden verkeerd gemeld als pijpleidingsfouten.
-
 ## De tool Content Transfer {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt}
@@ -166,7 +140,6 @@ De releasedatum voor Content Transfer Tool v1.3.4 is 19 maart 2021.
 ### Opgeloste problemen {#bug-fixes-ctt}
 
 * CTT heeft inhoud overgeslagen uit mappen met dezelfde naam, maar met een afbreekstreepje in de naam. Dit is opgelost.
-
 
 ### Releasedatum {#release-date-ctt-march}
 
@@ -181,53 +154,19 @@ De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
 
 * Tijdens het migreren van inhoud van een specifiek pad, trekt CTT zich aan niet-gerelateerde bronnen. Dit is opgelost
 
-
-### Releasedatum {#release-date-ctt-feb}
-
-De releasedatum voor Content Transfer Tool v1.2.4 is 10 februari 2021.
-
-### Opgeloste problemen {#bug-fixes-ctt-feb}
-
-* Bij het toewijzen van meerdere gebruikers werden IMS-id&#39;s van sommige gebruikers onjuist toegewezen. Dit is opgelost.
-
-### Releasedatum {#release-date-ctt-feb01}
-
-De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
-
-### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt}
-
-* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud.
-Raadpleeg [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
-* Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
-* Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
-
 ## Analysator van best practices {#best-practices-analyzer}
-
-### Releasedatum {#release-date-bpa-march}
-
-De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
-
-### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa-march}
-
-* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in UI evenals uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
+De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
 
 ### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
 
-* Mogelijkheid om het gebruik van de implementatie van AEM Forms en AEM Forms te detecteren en gebieden aan te geven die van belang zijn voor de migratie naar AEM Forms als Cloud Service.
-* Mogelijkheid om het gebruik en het aantal aangepaste componenten en sjablonen te detecteren en te rapporteren.
-* Capaciteit om het type van knoopopslag en gebruikte gegevensopslag te ontdekken.
-* Mogelijkheid om het gebruik van Dynamic Media te detecteren.
-* Mogelijkheid om de gebruikte Java-versie te detecteren.
+* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in UI evenals uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
 
 ## Tools voor herstructurering van code {#code-refactoring-tools}
 
 ### Nieuw in de Hulpmiddelen {#what-is-new-crt} van de Refactoring van de Code
-
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De nieuwste versie van deze plug-in bevat verschillende nieuwe functies en oplossingen voor problemen in de Repository Modernizer en de Dispatcher Converter.    Raadpleeg [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) voor meer informatie over deze plug-in.
 
 * Nieuwe en verbeterde functies voor Repository Modernizer. Verwijs naar [Middel GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor de nieuwste versie.
    * Normaliseer OSGi vormt (behalve vormen RepoInit) aan het aangewezen.cfg.json formaat.
@@ -239,30 +178,3 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
    * Het maken van afzonderlijke bestanden voor verschillende insluitingen in plaats van voor het uitlijnen van de inhoud.
    * Mogelijkheid om zowel het mappad van hosts als het pad naar de hostbestanden af te handelen.
    * De generatie van landbouwbedrijfdossiers met grote klantenconfiguraties in waaier van 600 en meer.
-
-## [!DNL Adobe Experience Manager] als Cloud Service Foundation  {#aem-as-a-cloud-service-foundation}
-
-### Bekende problemen {#known-issues-foundation}
-
-**Sommige builds zouden wegens een kwestie met de Insteekmodule van de Analysator van de Bouwstijl kunnen ontbreken**
-
-In bepaalde gevallen kan een project bouwen tijdens de uitvoering van `aemanalyser-maven-plugin` met het volgende foutenbericht ontbreken:
-
-```
-[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
- 
-Was expecting one of:
- 
-     
- 
-[ERROR] Analyser detected errors on feature
-```
-
-**Workaround**
-
-Als u dit probleem wilt verhelpen, selecteert u de meest recente versie van `aemanalyser-maven-plugin` in het bovenliggende `pom.xml`-bestand:
-
-```xml
-<aemanalyser.version>0.9.2</aemanalyser.version>
-```
-
