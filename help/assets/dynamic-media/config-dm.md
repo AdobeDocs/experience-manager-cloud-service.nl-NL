@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager configureert als Cloud Service.
 topic: Beheerder
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3752'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 
 1. Wanneer het primaire bronelement als Cloud Service naar Adobe Experience Manager wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment verwerkt Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding.
 1. Nadat de vertoningen worden geproduceerd, kan de Experience Manager als Cloud Service tot de verre vertoningen van Dynamic Media veilig toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de Experience Manager als instantie van de Cloud Service).
-1. Nadat de inhoud gereed is om te publiceren en goed te keuren, activeert deze de Dynamic Media-service om inhoud naar bezorgingsservers en cacheinhoud op de CDN te duwen.
+1. Nadat de inhoud klaar is om te publiceren en goed te keuren, brengt het de dienst van Dynamic Media teweeg om inhoud aan leveringsservers en geheim voorgeheugeninhoud bij CDN (het Netwerk van de Levering van de Inhoud) te duwen.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -382,7 +382,9 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Zie [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats) om deze parameters bij te werken.
+
+Zie ook [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats).
 
 #### De Granite Transient Workflow Queue {#updating-the-granite-transient-workflow-queue} bijwerken
 
