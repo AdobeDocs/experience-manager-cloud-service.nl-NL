@@ -2,9 +2,9 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1396'
 ht-degree: 2%
 
 ---
@@ -29,65 +29,6 @@ Zie voor hulp bij dit:
 
 * En sommige [voorbeelden GraphQL query](#graphql-sample-queries), gebaseerd op de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
-## GraphQL voor AEM - Overzicht van extensies {#graphql-extensions}
-
-De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaardspecificatie GraphQL. Voor vragen GraphQL met AEM zijn er een paar uitbreidingen:
-
-* Als u één resultaat nodig hebt:
-   * de modelnaam gebruiken; Bijvoorbeeld stad
-
-* Als u een lijst met resultaten verwacht:
-   * `List` toevoegen aan de modelnaam; bijvoorbeeld `cityList`
-   * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
-
-* Als u logische OR wilt gebruiken:
-   * use ` _logOp: OR`
-   * Zie [Voorbeeldquery - Alle personen met een naam van &quot;Taken&quot; of &quot;Smith&quot;](#sample-all-persons-jobs-smith)
-
-* Logische AND bestaat ook, maar is (vaak) impliciet
-
-* U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
-   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](#sample-full-details-company-ceos-employees)
-
-* Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
-
-   * Voor inhoud:
-
-      * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
-         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : om metagegevens voor uw fragment weer te geven
-         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen met de naam GB](#sample-metadata-awards-gb)
-      * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
-         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel van een model](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : het pad naar het inhoudsfragment in de repository
-         * Zie [Voorbeeldquery - Een enkel specifiek stadsfragment](#sample-single-specific-city-fragment)
-      * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
-         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
-         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
-   * En bewerkingen:
-
-      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
-         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
-         * Zie [Voorbeeldquery - Alle avonturen waarbij `_path` begint met een specifiek voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:   `AT_LEAST_ONCE`
-         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : om de zaak te negeren bij het vragen
-         * Zie [Voorbeeldquery - Alle steden met SAN in de naam, ongeacht case](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* GraphQL-vaktypen worden ondersteund:
-
-   * gebruiken `... on`
-      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
