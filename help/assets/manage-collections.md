@@ -4,7 +4,7 @@ description: Begrijp het concept van inzameling in de Activa van Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 18%
@@ -185,7 +185,7 @@ Als u de pagina met metagegevens [!UICONTROL Properties] wilt aanpassen, inclusi
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om [bulkupdate de meta-gegevens na het zoeken](/help/assets/search-assets.md#metadataupdates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om [bulkupdate de meta-gegevens na het zoeken](/help/assets/search-assets.md#metadata-updates).
 
 1. Selecteer in de verzamelingsconsole de verzamelingen die u wilt bewerken.
 1. Tik op de werkbalk of klik op **[!UICONTROL Properties]** om de pagina [!UICONTROL Properties] voor de geselecteerde verzamelingen te openen.
