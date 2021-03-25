@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -118,7 +118,7 @@ U kunt een element uploaden met hetzelfde pad (dezelfde naam en dezelfde locatie
 >
 >Als Asset Insights is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics], maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
 
-Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Tik op **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
+Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
