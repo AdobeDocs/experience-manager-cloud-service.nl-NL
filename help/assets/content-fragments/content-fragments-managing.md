@@ -2,10 +2,10 @@
 title: Contentfragmenten beheren
 description: Inhoudsfragmenten worden opgeslagen als elementen, zodat ze voornamelijk worden beheerd vanaf de middelenconsole.
 translation-type: tm+mt
-source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 9%
+source-wordcount: '1616'
+ht-degree: 7%
 
 ---
 
@@ -127,21 +127,15 @@ Uw fragment openen voor bewerken:
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
    * Selecteer het fragment en **Bewerk** op de werkbalk.
 
-   De fragmenteditor wordt geopend:
+1. De fragmenteditor wordt geopend. Breng de gewenste wijzigingen aan:
 
    ![fragmenteditor](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
-   >2. Het zijpaneel kan worden verborgen/getoond gebruikend **Kneep van de Kant** pictogram.
-
-
-1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan** of **Annuleren** naar wens.
+1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan en sluiten** of **Annuleren** naar wens.
 
    >[!NOTE]
    >
-   >Zowel met **Opslaan** als **Annuleren** sluit u de editor af. Zie [Opslaan, annuleren en versies](#save-cancel-and-versions) voor gedetailleerde informatie over hoe beide opties werken voor contentfragmenten.
+   >Zowel **Opslaan en sluiten** als **Annuleren** sluiten de editor af. Zie [Opslaan, Annuleren en Versies](#save-cancel-and-versions) voor volledige informatie over hoe beide opties werken voor inhoudsfragmenten.
 
 ## Modi en handelingen in de Inhoudsfragmenteditor {#modes-actions-content-fragment-editor}
 
@@ -167,19 +161,25 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
 ![modi](assets/cfm-managing-top-toolbar.png)
 
+* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Close** het bericht.
+
+* Het zijpaneel kan worden verborgen/getoond gebruikend **Kneep van de Kant** pictogram.
+
 * Onder de fragmentnaam ziet u de naam van het [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) dat wordt gebruikt voor het maken van het huidige fragment:
 
    * De naam is ook een verbinding die de modelredacteur zal openen.
 
 * Zie de status van het fragment; bijvoorbeeld informatie over het tijdstip waarop deze is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
 
-   * Nieuw: grijs
-   * Concept: blauw
-   * Gepubliceerd: groen
-   * Gewijzigd: oranje
-   * gedeactiveerd: rood
+   * **Nieuw**: grijs
+   * **Concept**: blauw
+   * **Gepubliceerd**: groen
+   * **Gewijzigd**: oranje
+   * **gedeactiveerd**: rood
 
-* **[Het fragment](#publishing-and-referencing-a-fragment)** publiceren.
+* De drie puntjes (**..**) biedt toegang tot extra handelingen:
+   * **[Snel publiceren](#publishing-and-referencing-a-fragment)**
+   * **[Publicatie beheren](#publishing-and-referencing-a-fragment)**
 
 ## Opslaan, annuleren en versies {#save-cancel-and-versions}
 
@@ -203,7 +203,7 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw veranderingen, **sparen** werkt ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw veranderingen, **sparen** werkt ook om het even welke verwijzingen bij en zorgt ervoor dat de Dispatcher zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
    >
    >Houd hier rekening mee wanneer u **Opslaan** gebruikt en vervolgens snel de fragmenteditor invoert om verdere wijzigingen aan te brengen en op te slaan.
