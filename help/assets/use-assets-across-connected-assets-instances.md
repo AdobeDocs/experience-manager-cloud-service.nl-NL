@@ -3,10 +3,10 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 27%
+source-wordcount: '2784'
+ht-degree: 25%
 
 ---
 
@@ -40,7 +40,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en gebruiken de doorzochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download`-component en afbeeldingen aan de `Image`-component. Auteurs voegen ook de externe elementen toe in een aangepaste [!DNL Experience Manager]-component die de standaardcomponenten `Download` of `Image` uitbreidt. De ondersteunde indelingen zijn:
 
-* **Afbeeldingsindelingen**: De indelingen die de  [component Image ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) ondersteunt. [!DNL Dynamic Media] afbeeldingen worden niet ondersteund.
+* **Afbeeldingsindelingen**: De indelingen die de  [component Image ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) ondersteunt.
 * **Documentindelingen**: Zie de  [ondersteunde documentindelingen](file-format-support.md#document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
@@ -111,6 +111,23 @@ U kunt de connectiviteit tussen geconfigureerde [!DNL Sites]-implementaties en [
 ![Verbindingstest van geconfigureerde Connected Assets  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## Een verbinding configureren tussen [!DNL Sites]- en [!DNL Dynamic Media]-implementaties {#sites-dynamic-media-connected-assets}
+
+U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring van het gebruik van externe middelen en externe [!DNL Dynamic Media]-implementaties hetzelfde. Hierdoor kunt u de [!DNL Dynamic Media]-functionaliteit benutten via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
+
+Voer de volgende stappen uit om deze verbinding te configureren.
+
+1. Configuratie van verbonden elementen maken zoals hierboven beschreven. Schakel het selectievakje **[!UICONTROL Fetch original rendition for [!DNL Dynamic Media] Connected Assets]** in het dialoogvenster in.
+
+1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+
+   * Gebruik dezelfde bedrijfsnaam in alle configuraties.
+   * Selecteer **[!UICONTROL Disabled by default]** op het lokale [!DNL Sites] in [!UICONTROL Dynamic Media sync mode]. Voor de implementatie van Sites hebt u alleen alleen-lezen toegang tot de [!DNL Dynamic Media]-account nodig.
+   * Selecteer **[!UICONTROL Selective Publish]** in de lokale [!DNL Sites] optie. **[!UICONTROL Publish Assets]** Selecteer **[!UICONTROL Sync All Content]** niet.
+   * Bij externe [!DNL Assets]-implementatie selecteert u **[!UICONTROL Enabled by default]** in [!UICONTROL Dynamic Media sync mode].
+
+1. Schakel [[!DNL Dynamic Media] ondersteuning in Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) in. Met deze functie kan de standaardcomponent Image [!DNL Dynamic Media]-afbeeldingen weergeven wanneer [!DNL Dynamic Media]-afbeeldingen door auteurs worden gebruikt op webpagina&#39;s op lokale [!DNL Sites]-implementatie.
 
 ## Externe assets gebruiken {#use-remote-assets}
 
@@ -184,7 +201,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
 * Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
-* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Dynamic Media] Elementen, inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
+* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. Inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
 * [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk wordt bijgewerkt, worden alle eigenschappen weergegeven.
 * Alle [!DNL Sites] auteurs hebben leestemmingen op de opgehaalde exemplaren, zelfs als de auteurs tot de verre plaatsing DAM niet kunnen toegang hebben.
 * Geen API-ondersteuning om de integratie aan te passen.
