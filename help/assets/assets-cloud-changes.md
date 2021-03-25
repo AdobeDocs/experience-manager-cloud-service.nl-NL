@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
+source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -31,16 +31,8 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
 * De standaardworkflow **[!UICONTROL DAM Asset Update]** in eerdere versies van [!DNL Experience Manager] is niet meer beschikbaar. In plaats daarvan, verstrekken de activa microservices een scalable, gemakkelijk beschikbare dienst die het grootste deel van de standaardactiva verwerkt (vertoningen, meta-gegevensextractie, en tekst extractie voor indexering) behandelt.
    * Zie [Elementmicroservices configureren en gebruiken](/help/assets/asset-microservices-configure-and-use.md)
    * Als u aangepaste workflowstappen in de verwerking wilt gebruiken, kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
-* Metagegevensterugname wordt niet ondersteund. Zie [terugschrijven van metagegevens in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
-* Voor elementen die worden geüpload met gebruik van Package Manager moet u de **[!UICONTROL Reprocess Asset]**-handeling in de gebruikersinterface [!DNL Assets] handmatig opnieuw verwerken.
-* [!DNL Assets] detecteert niet automatisch het MIME-type van geüploade elementen. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
-* [!DNL Experience Manager] aangezien een  [!DNL Cloud Service] subelement niet wordt gegenereerd voor samengestelde elementen. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
-* [!DNL Assets] De ervaring met introductiepagina is niet beschikbaar. Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
-* Dubbele detectie van elementen werkt anders dan in [6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). [!DNL Experience Manager] 
-* Alleen voor plaatsing (FPO) worden uitvoeringen anders gegenereerd dan in eerdere [!DNL Experience Manager] versies. Zie [FPO-uitvoering voor [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
-* Wanneer een ZIP-archief wordt geüpload, haalt [!DNL Experience Manager] als een [!DNL Cloud Service] niet de elementen uit het archief. Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
-Standaarduitvoeringen die met asset microservices worden gegenereerd, worden op een manier opgeslagen die compatibel is met oudere versies in de knooppunten van de opslagplaats van bedrijfsmiddelen en die dezelfde naamgevingsconventies gebruiken.
+De standaardvertoningen die met asset microservices worden gegenereerd, worden achterwaarts compatibel opgeslagen in de knooppunten van de opslagplaats van middelen met dezelfde naamgevingsconventies.
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
@@ -50,9 +42,22 @@ Asset microservices is een service in de cloud die automatisch wordt ingericht e
 
 Als u de code en het proces van begin tot einde wilt valideren, inclusief het opnemen en verwerken van bedrijfsmiddelen, implementeert u de codewijzigingen in een cloud-dev-omgeving met de [pijplijn](/help/implementing/cloud-manager/configure-pipeline.md) en test u met de volledige uitvoering van de verwerking van asset-microservices.
 
-## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
-De klassieke interface is niet meer beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. Alleen de interface met aanraakbediening is beschikbaar.
+## pariteit van de eigenschap met [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
+
+[!DNL Experience Manager] als  [!DNL Cloud Service] introduceert u veel nieuwe functies en betere manieren om bestaande functies te laten werken. Wanneer u echter van [!DNL Experience Manager] 6.5 naar [!DNL Experience Manager] als [!DNL Cloud Service] gaat, ziet u wellicht dat sommige functies anders werken, niet beschikbaar zijn of gedeeltelijk beschikbaar zijn. Hieronder volgt een lijst met dergelijke functies:
+
+| Functionaliteit of gebruikscase | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Opmerkingen |
+|-----|-----|-----|
+| [Elementdetectie dupliceren](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Werkt anders. | Zie [hoe het in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) werkte. |
+| [Alleen voor FPO-uitvoeringen (Placement Only)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Werkt anders |  |
+| Metagegevens terugschrijven | Niet ondersteund. | Zie [metagegevensschrijver in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Verwerking van geüploade elementen met gebruik van Package Manager | Moet handmatig worden ingegrepen. | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]**. |
+| MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| Genereren van subactiva voor samengestelde activa | Niet ondersteund. | Er is niet voldaan aan de eisen voor afhankelijk gebruik. De annotatie van PDF-bestanden met meerdere pagina&#39;s wordt bijvoorbeeld beïnvloed. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Klassieke interface | Niet ondersteund. | Alleen interface met aanraakbediening is beschikbaar. |
 
 >[!MORELIKETHIS]
 >
