@@ -3,9 +3,9 @@ title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4169'
 ht-degree: 6%
 
 ---
@@ -198,7 +198,21 @@ Het validatieprogramma is beschikbaar in de SDK op `bin/validator` als een binai
 
 Deze wordt aangeroepen als: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-Het hulpmiddel bevestigt dat de configuratie van de Dispatcher de aangewezen richtlijnen gebruikt die door AEM als dienst van de Wolk worden gesteund door alle dossiers met patroon `conf.d/enabled_vhosts/*.vhost` af te tasten. De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
+Het hulpmiddel bevestigt dat de configuratie van de Dispatcher de aangewezen richtlijnen gebruikt die door AEM als dienst van de Wolk worden gesteund door alle dossiers met patroon `conf.d/enabled_vhosts/*.vhost` af te tasten.
+
+In Windows is de validator van de verzender hoofdlettergevoelig. Als dusdanig, kan het er niet in slagen om de configuratie te bevestigen als u niet de kapitalisatie van de weg respecteert waar uw configuratie, bijvoorbeeld verblijft:
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Vermijd deze fout door de weg van de Ontdekkingsreiziger van Vensters en dan op de bevelherinnering te kopiëren en te kleven gebruikend een `cd` bevel in die weg.
+
+De instructies die zijn toegestaan in Apache-configuratiebestanden, kunnen worden weergegeven door de opdracht lijst van gewenste personen van de validator uit te voeren:
 
 ```
 $ validator allowlist
