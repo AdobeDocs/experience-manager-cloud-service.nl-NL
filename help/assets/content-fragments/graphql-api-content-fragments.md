@@ -2,9 +2,9 @@
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
+source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '3233'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Door de GraphQL API in AEM te gebruiken, kunt u inhoudsfragmenten efficiënt aan
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) als Cloud Service:
 >
->* [AEM de Handel verbruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM de Handel verbruikt gegevens van een platform van de Handel via GraphQL](/help/commerce-cloud/architecture/magento.md).
 >* AEM Inhoudsfragmenten werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
 
 
@@ -167,30 +167,10 @@ Aanvullende configuraties zijn vereist:
 * Vanity URL:
    * Een vereenvoudigde URL toewijzen voor het eindpunt
    * Optioneel
-* OSGi-configuratie:
-   * GraphQL Servlet-configuratie:
-      * Handvatten verzoeken aan het eindpunt
-      * De configuratienaam is `org.apache.sling.graphql.core.GraphQLServlet`. Het moet als OSGi fabrieksconfiguratie worden verstrekt
-      * `sling.servlet.extensions` moet worden ingesteld op  `[json]`
-      * `sling.servlet.methods` moet worden ingesteld op  `[GET,POST]`
-      * `sling.servlet.resourceTypes` moet worden ingesteld op  `[graphql/sites/components/endpoint]`
-      * Verplicht
-   * Schema Servlet Configuration:
-      * Maakt het GraphQL-schema
-      * De configuratienaam is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. Het moet als OSGi fabrieksconfiguratie worden verstrekt
-      * `sling.servlet.extensions` moet worden ingesteld op  `[GQLschema]`
-      * `sling.servlet.methods` moet worden ingesteld op  `[GET]`
-      * `sling.servlet.resourceTypes` moet worden ingesteld op  `[graphql/sites/components/endpoint]`
-      * Verplicht
-   * CSRF-configuratie:
-      * Beveiligingsbescherming voor het eindpunt
-      * De configuratienaam is `com.adobe.granite.csrf.impl.CSRFFilter`
-      * `/content/cq:graphql/global/endpoint` toevoegen aan de bestaande lijst met uitgesloten paden (`filter.excluded.paths`)
-      * Verplicht
 
 ### Ondersteunende pakketten {#supporting-packages}
 
-Om de opstelling van een eindpunt te vereenvoudigen GraphQL, verstrekt Adobe het [GraphQL pakket van de Steekproef ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip).
+Om de opstelling van een eindpunt te vereenvoudigen GraphQL, verstrekt Adobe [GraphQL het Pakket van de Steekproef van het Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip).
 
 Dit archief bevat zowel [de vereiste extra configuratie](#additional-configurations-graphql-endpoint) als [het eindpunt GraphQL](#enabling-graphql-endpoint). Als geïnstalleerd op een gewone AEM instantie, zal het een volledig werkend eindpunt GraphQL op `/content/cq:graphql/global/endpoint` blootstellen.
 
@@ -218,7 +198,7 @@ Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch v
 
 ### Installatie van de AEM GraphiQL-interface {#installing-graphiql-interface}
 
-De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)-pakket.
+De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)-pakket.
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -273,6 +253,14 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` 
 
 In GraphQL voor AEM, is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 De dienst van GrafiekQL van Plaatsen luistert (in de achtergrond) naar om het even welke die wijzigingen aan een Model van het Fragment van de Inhoud worden aangebracht. Wanneer updates worden ontdekt, slechts wordt dat deel van het schema opnieuw geproduceerd. Deze optimalisatie bespaart tijd en zorgt voor stabiliteit.
 
 Als u bijvoorbeeld:
@@ -292,6 +280,16 @@ Als u bijvoorbeeld:
 >Dit is belangrijk om op te merken voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
 
 Het schema wordt gediend door het zelfde eindpunt zoals de vragen GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding `GQLschema` wordt geroepen. Als u bijvoorbeeld een eenvoudig `GET`-verzoek uitvoert op `/content/cq:graphql/global/endpoint.GQLschema`, wordt het schema uitgevoerd met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
+
+### Schema genereren - Niet-gepubliceerde modellen {#schema-generation-unpublished-models}
+
+Wanneer Inhoudsfragmenten zijn genest, kan een bovenliggend inhoudsfragmentmodel worden gepubliceerd, maar een model waarnaar wordt verwezen, niet.
+
+>[!NOTE]
+>
+>De AEM UI verhindert dit gebeurt, maar als het publiceren programmatically, of met inhoudspakketten wordt gemaakt, kan het voorkomen.
+
+Wanneer dit gebeurt, AEM een *incomplete* Schema voor het model van het Fragment van de ouderinhoud produceert. Dit betekent dat de fragmentverwijzing, die afhankelijk is van het niet-gepubliceerde model, uit het schema wordt verwijderd.
 
 ## Fields {#fields}
 
@@ -517,13 +515,73 @@ query {
 
 Zie voor meer voorbeelden:
 
-* details van [GraphQL voor AEM extensies](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* details van [GraphQL voor AEM extensies](#graphql-extensions)
 
 * [Voorbeeldquery&#39;s met deze voorbeeldinhoud en -structuur](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * En de [Voorbeeldinhoud en -structuur](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) voorbereid voor gebruik in voorbeeldquery&#39;s
 
 * [Voorbeeldquery&#39;s op basis van het WKND-project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## GraphQL voor AEM - Overzicht van extensies {#graphql-extensions}
+
+De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaardspecificatie GraphQL. Voor vragen GraphQL met AEM zijn er een paar uitbreidingen:
+
+* Als u één resultaat nodig hebt:
+   * de modelnaam gebruiken; Bijvoorbeeld stad
+
+* Als u een lijst met resultaten verwacht:
+   * `List` toevoegen aan de modelnaam; bijvoorbeeld `cityList`
+   * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
+
+* Als u logische OR wilt gebruiken:
+   * use ` _logOp: OR`
+   * Zie [Voorbeeldquery - Alle personen met een naam van &quot;Taken&quot; of &quot;Smith&quot;](#sample-all-persons-jobs-smith)
+
+* Logische AND bestaat ook, maar is (vaak) impliciet
+
+* U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
+   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](#sample-full-details-company-ceos-employees)
+
+* Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
+
+   * Voor inhoud:
+
+      * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
+         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata` : om metagegevens voor uw fragment weer te geven
+         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen met de naam GB](#sample-metadata-awards-gb)
+      * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
+         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel van een model](#sample-wknd-content-fragment-model-from-model)
+      * `_path` : het pad naar het inhoudsfragment in de repository
+         * Zie [Voorbeeldquery - Een enkel specifiek stadsfragment](#sample-single-specific-city-fragment)
+      * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
+         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
+         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
+   * En bewerkingen:
+
+      * `_operator` : specifieke exploitanten toepassen;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
+         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
+         * Zie [Voorbeeldquery - Alle avonturen waarbij `_path` begint met een specifiek voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
+      * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:   `AT_LEAST_ONCE`
+         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase` : om de zaak te negeren bij het vragen
+         * Zie [Voorbeeldquery - Alle steden met SAN in de naam, ongeacht case](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
+
+
+
+* GraphQL-vaktypen worden ondersteund:
+
+   * gebruiken `... on`
+      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
