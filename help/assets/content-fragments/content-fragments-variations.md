@@ -2,9 +2,9 @@
 title: Variaties - Authoring van content voor fragmenten
 description: Met behulp van variaties kunt u inhoud voor het fragment ontwerpen en vervolgens variaties van die inhoud maken op basis van het doel (indien nodig).
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2236'
 ht-degree: 11%
 
 ---
@@ -41,7 +41,10 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 
 Wanneer u het inhoudsfragment opent voor bewerking, wordt het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat verschillende velden van diverse gegevenstypen die zijn gedefinieerd in het inhoudsmodel.
 
-U kunt:
+Bijvoorbeeld:
+
+![full screen ](assets/cfm-variations-02.png)
+editorU kunt:
 
 * direct wijzigingen aanbrengen op het tabblad **Variaties**
 
@@ -53,9 +56,7 @@ U kunt:
    * zie meer het uitgeven opties (voor [Rich Text](#rich-text) formaat)
    * toegang tot een waaier van [acties](#actions)
 
-Bijvoorbeeld:
-
-![volledige schermeditor](assets/cfm-variations-02.png)
+* Voor **Fragmentverwijzing**-velden kan de optie **[Inhoudsfragment bewerken](#fragment-references-edit-content-fragment)** beschikbaar zijn, afhankelijk van de modeldefinitie.
 
 ### Volledige schermeditor {#full-screen-editor}
 
@@ -164,8 +165,11 @@ Als het Content Fragment-model fragmentverwijzingen bevat, hebben de auteurs van
 
 #### Inhoudsfragment {#fragment-references-edit-content-fragment} bewerken
 
-De optie **Inhoudsfragment bewerken** wordt geopend
-een nieuw browsertabblad, waarop het inhoudsfragment is geopend in de inhoudsfragmenteditor.
+Met de optie **Inhoudsfragment bewerken** wordt dat fragment geopend in een nieuw editortabblad (binnen hetzelfde browsertabblad).
+
+Als u nogmaals het oorspronkelijke tabblad selecteert (bijvoorbeeld **Little Pony Inc.**), wordt dit secundaire tabblad gesloten (in dit geval **Adam Smith**).
+
+![Fragmentverwijzingen](assets/cfm-variations-editreference.png)
 
 #### Nieuw inhoudsfragment {#fragment-references-new-content-fragment}
 
@@ -240,6 +244,8 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
    * Alle zinnen die moeten worden verwijderd, worden rood gemarkeerd met doorhaling.
    * Klik op een gemarkeerde zin om deze in de samengevatte inhoud te houden.
    * Klik op een niet-gemarkeerde zin om deze te verwijderen.
+   * De samenvattingsstatistieken worden weergegeven: **Werkelijk** en **Doel**-
+   * U kunt de wijzigingen **Voorvertoning**.
 
    ![samenvattingsvergelijking](assets/cfm-variations-06.png)
 
@@ -329,7 +335,7 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
 
 U kunt ook een ander inhoudsfragment aan het fragment toevoegen om het maken van inhoudsfragmenten te vereenvoudigen.
 
-Ze worden als referentie toegevoegd op de huidige locatie in het fragment.
+Deze worden als referentie toegevoegd op de huidige locatie in het fragment.
 
 >[!NOTE]
 Deze optie is beschikbaar wanneer uw **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
