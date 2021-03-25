@@ -4,7 +4,7 @@ description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Exper
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1841'
 ht-degree: 3%
@@ -116,7 +116,7 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om [bulkupdate de meta-gegevens na het zoeken](/help/assets/search-assets.md#metadataupdates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om [bulkupdate de meta-gegevens na het zoeken](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigeer naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
