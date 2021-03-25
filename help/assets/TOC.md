@@ -6,7 +6,7 @@ user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service 
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 65%
@@ -72,9 +72,9 @@ ht-degree: 65%
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
    + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](content-fragments/content-fragments-configuration-browser.md)
    + [Modellen van contentfragmenten](content-fragments/content-fragments-models.md)
+   + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
    + [Variaties - Authoring van content voor fragmenten](content-fragments/content-fragments-variations.md)
    + [Aan contentfragmenten gekoppelde content](content-fragments/content-fragments-assoc-content.md)
    + [Metagegevens - Fragmenteigenschappen](content-fragments/content-fragments-metadata.md)
