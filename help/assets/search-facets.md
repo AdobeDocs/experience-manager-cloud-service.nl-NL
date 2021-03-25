@@ -2,9 +2,9 @@
 title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '2264'
+source-wordcount: '2263'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,7 @@ De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het
 
 Voor full-text onderzoeken, voeg `Fulltext` voorspellen aan de vorm toe. Gebruik de voorspelling van de eigenschap om te zoeken naar elementen die overeenkomen met één eigenschap die u opgeeft. Gebruik de voorspelling Opties om te zoeken in elementen die overeenkomen met een of meer waarden voor een bepaalde eigenschap. Voeg de Datumbereik-voorspelling toe aan zoekelementen die binnen een opgegeven datumbereik zijn gemaakt.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina Zoeken in Forms en tik vervolgens op **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Zoek en selecteer de middelen die Admin Search Rail](assets/assets_admin_searchrail.png)
