@@ -2,9 +2,9 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1956'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -174,8 +174,20 @@ Voer de volgende stappen uit om het gereedschap te configureren:
    * [!UICONTROL Dry Run]: Roep een testrun van de bulkopname aan.
    * [!UICONTROL Run]: Voer de geselecteerde configuratie uit.
    * [!UICONTROL Stop]: Beëindig een actieve configuratie.
+   * [!UICONTROL Schedule]: Stel een eenmalige of terugkerende planning in om elementen in te voeren.
    * [!UICONTROL Job Status]: Bekijk de status van de configuratie wanneer deze wordt gebruikt in een actieve importtaak of wordt gebruikt voor een voltooide taak.
+   * [!UICONTROL Job History]: Eerdere exemplaren van de taak.
    * [!UICONTROL View Assets]: Geef de doelmap weer als deze bestaat.
+
+   ![Werkbalkopties voor ingangconfiguraties](assets/bulk-ingest-toolbar-options.png)
+
+Voer de volgende stappen uit om een eenmalige of herhaalde bulkimport te plannen:
+
+1. Maak een configuratie voor bulkimport.
+1. Selecteer de configuratie en selecteer **[!UICONTROL Schedule]** van de toolbar.
+1. Stel een eenmalige opname in of voer een uur-, dag- of wekelijks schema in. Klik op **[!UICONTROL Submit]**.
+
+   ![Taak bulkingestor plannen](assets/bulk-ingest-schedule1.png)
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
