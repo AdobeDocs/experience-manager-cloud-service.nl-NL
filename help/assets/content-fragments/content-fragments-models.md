@@ -2,9 +2,9 @@
 title: Modellen van contentfragmenten
 description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
 translation-type: tm+mt
-source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2177'
 ht-degree: 4%
 
 ---
@@ -122,7 +122,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 ## Eigenschappen {#properties}
 
-Veel eigenschappen zijn niet-verklarend, voor bepaalde eigenschappen zijn de extra details hieronder:
+Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zijn hieronder meer details te vinden:
 
 * **Render**
 AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.
@@ -208,7 +208,7 @@ AEM heeft een terugkerende bescherming voor:
 Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 
 * Fragmentverwijzingen in GraphQL
-Als u een diepe vraag creeert die veelvoudige Content Fragments terugkeert die door elkaar van verwijzingen worden voorzien, zal het ongeldig bij eerste voorkomen terugkeren.
+Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
 
 ### Inhoudsverwijzing {#content-reference}
@@ -307,7 +307,7 @@ Een model kan ook worden uitgeschakeld, zodat:
 
 * Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten.
 * Echter:
-   * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgezocht (om te voorkomen dat JSON API wordt beïnvloed).
+   * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
    * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt worden gevraagd en van GraphQL zijn teruggekeerd.
 * Het model kan niet meer van verwijzingen worden voorzien, maar de bestaande verwijzingen worden gehouden onaangeroerd, en kunnen nog worden gevraagd en van het eindpunt GraphQL zijn teruggekeerd.
 
@@ -393,3 +393,27 @@ Publicatie van een inhoudsfragmentmodel ongedaan maken:
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, dat door **wordt gevolgd Unpublish** van de toolbar.
 De gepubliceerde status wordt aangegeven in de console.
+
+## Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
+
+U kunt de **Eigenschappen** van een model van het Fragment van de Inhoud uitgeven:
+
+* **Basis**
+   * **Modeltitel**
+   * **Tags**
+   * **Beschrijving**
+   * **Afbeelding uploaden**
+
+<!--
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
+-->
