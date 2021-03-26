@@ -2,10 +2,10 @@
 title: Toegangsrechten verleend - wat is vereist
 description: Toegangsrechten verleend - wat is vereist
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 10%
+source-wordcount: '543'
+ht-degree: 11%
 
 ---
 
@@ -41,8 +41,6 @@ Zodra Adobe een organisatie voor uw bedrijf heeft gecreëerd, zal uw aangewezen 
 
 Als deze rechten zijn toegekend, is uw beheerder nu ingesteld met één aanmelding (met Adobe ID) voor toegang tot de [!UICONTROL Experience Cloud]-services, aanmelding bij uw AEM cloudomgevingen en gebruik [!UICONTROL Cloud Manager].
 
-## Gebruikers en rollen {#users-roles}
-
 Voor veel functies in [!UICONTROL Cloud Manager] zijn specifieke machtigingen vereist.
 
 [!UICONTROL Cloud Manager] definieert momenteel vier rollen voor gebruikers die de beschikbaarheid van specifieke functies bepalen:
@@ -53,7 +51,6 @@ Voor veel functies in [!UICONTROL Cloud Manager] zijn specifieke machtigingen ve
 * Developer
 
 >[!CAUTION]
->
 >Als u [!UICONTROL Cloud Manager] wilt gebruiken, hebt u een Adobe ID en de Adobe Experience Manager nodig als context van het Product van de Cloud Service.
 
 ### Roldefinities {#role-definitions}
