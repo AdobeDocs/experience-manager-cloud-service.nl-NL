@@ -2,7 +2,7 @@
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Genereren van subactiva voor samengestelde activa | Niet ondersteund. | Er is niet voldaan aan de eisen voor afhankelijk gebruik. De annotatie van PDF-bestanden met meerdere pagina&#39;s wordt bijvoorbeeld beïnvloed. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Klassieke interface | Niet ondersteund. | Alleen interface met aanraakbediening is beschikbaar. |
 
 >[!MORELIKETHIS]
