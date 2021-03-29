@@ -2,17 +2,17 @@
 title: AEM-moderniseringstools
 description: 'AEM-moderniseringstools '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
 
 # AEM-moderniseringstools {#aem-moderization-tools}
 
-De AEM-moderiseringssuite biedt tools waarmee AEM-ontwikkelingsteams verouderde AEM-functies kunnen converteren naar de functies die momenteel worden ondersteund.
+De AEM moderniseringshulpmiddelen verstrekt een reeks nut die kunnen worden gebruikt om erfenis AEM eigenschappen in de moderne en gesteunde mogelijkheden van AEM als Cloud Service om te zetten.
 
 
 ## Inleiding {#introduction}
