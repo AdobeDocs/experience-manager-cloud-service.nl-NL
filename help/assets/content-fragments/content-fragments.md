@@ -1,18 +1,18 @@
 ---
 title: Werken met contentfragmenten
-description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
+description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken, ideaal voor levering zonder kop.
 translation-type: tm+mt
-source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2035'
 ht-degree: 3%
 
 ---
 
 
-# Werken met contentfragmenten{#working-with-content-fragments}
+# Werken met contentfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Inhoudsfragmenten pagina-onafhankelijke inhoud ontwerpen, maken, beheren en [publiceren. ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+Met Adobe Experience Manager (AEM) als Cloud Service kunt u met Content Fragments pagina-onafhankelijke inhoud ontwerpen, maken, beheren en [publiceren. Met deze fragmenten kunt u inhoud voorbereiden voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
@@ -220,7 +220,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
       * Het fragment maken en ontwerpen
       * of hoger:
 
-         * Door het fragment **Eigenschappen** vanuit de console weer te geven/te bewerken
+         * Door het fragment **Eigenschappen** vanuit de console weer te geven of te bewerken
          * Door de **Metagegevens** te bewerken in de fragmenteditor
 
    >[!CAUTION]
