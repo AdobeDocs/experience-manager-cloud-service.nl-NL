@@ -1,10 +1,10 @@
 ---
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
-description: Als eerste stap om met hoofdloze in AEM als Cloud Service begonnen te worden, moet u een configuratie tot stand brengen.
+description: Creeer een configuratie als eerste stap om met hoofdloze in AEM als Cloud Service aan de slag te gaan.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
