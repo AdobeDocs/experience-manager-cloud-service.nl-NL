@@ -3,7 +3,7 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Implementeren
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
 ht-degree: 1%
@@ -50,7 +50,7 @@ De volgende video verstrekt een overzicht op hoog niveau over hoe te om code op 
 
 Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model (Sling Feature Model). Zo wordt een AEM beschreven als een Cloud Service-toepassing wanneer deze wordt uitgevoerd in een cloudomgeving. Als u de pakketten in Package Manager bekijkt in Cloud-omgevingen, bevat de naam dus &quot;cp2fm&quot; en zijn alle metagegevens verwijderd uit de getransformeerde pakketten. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Gedetailleerde documentatie over de converter kan [hier worden gevonden](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Inhoudspakketten die zijn geschreven voor AEM als Cloud Service-toepassingen moeten een duidelijke scheiding hebben tussen onveranderbare en meerbare inhoud en Cloud Manager zal dit afdwingen door niet te voldoen aan de build en een bericht uit te voeren zoals:
+Inhoudspakketten die voor AEM als Cloud Service-toepassingen zijn geschreven, moeten een duidelijke scheiding hebben tussen onveranderbare en veranderbare inhoud. Cloud Manager installeert alleen de veranderbare inhoud en voert ook een bericht uit zoals:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
