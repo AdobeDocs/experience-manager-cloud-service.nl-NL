@@ -1,18 +1,18 @@
 ---
 title: Snelstartgids voor mappen zonder middelenkoppen maken
-description: Met Inhoudsfragmentmodellen wordt de structuur van inhoudsfragmenten gedefinieerd. Inhoudsfragmenten worden vervolgens in mappen met elementen opgeslagen.
+description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 
-# Creating an Assets Folder Headless Quick Start Guide{#creating-an-assets-folder}
+# Snelstartgids {#creating-an-assets-folder} voor het maken van een middelenmap zonder kop
 
-Met Inhoudsfragmentmodellen wordt de structuur van inhoudsfragmenten gedefinieerd. Inhoudsfragmenten worden vervolgens in mappen met elementen opgeslagen.
+Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop. Inhoudsfragmenten worden vervolgens in mappen met elementen opgeslagen.
 
 ##  Wat is een middelenmap? {#what-is-an-assets-folder}
 
