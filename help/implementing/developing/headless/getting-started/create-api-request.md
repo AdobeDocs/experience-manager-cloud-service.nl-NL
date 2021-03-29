@@ -1,10 +1,10 @@
 ---
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
-description: Met de REST-API voor middelen kunt u inhoudsfragmenten beheren en met de GraphQL-API kunt u inhoud zonder kop verzenden.
+description: Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor de levering van inhoud zonder kop.
 translation-type: tm+mt
-source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Koploze gids {#accessing-delivering-content-fragments} openen en leveren van inhoudsfragmenten
 
-Met de REST-API voor middelen kunt u inhoudsfragmenten beheren en met de GraphQL-API kunt u inhoud zonder kop verzenden.
+Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor de levering van inhoud zonder kop.
 
 ## Wat zijn GraphQL- en Assets REST-API&#39;s? {#what-are-the-apis}
 
