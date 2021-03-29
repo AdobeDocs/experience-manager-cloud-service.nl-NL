@@ -1,16 +1,18 @@
 ---
 title: Structuuromvang van inhoudsfragment
-description: In de Inhoudsfragmenteditor kunt u de boomstructuur weergeven.
+description: Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 
 # Structuuromvang van inhoudsfragment {#content-fragment-structure-tree}
+
+Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
 
 In de Inhoudsfragmenteditor kunt u het pictogram van de boomstructuur selecteren:
 
