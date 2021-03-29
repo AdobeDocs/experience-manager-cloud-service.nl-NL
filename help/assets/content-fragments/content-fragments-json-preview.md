@@ -1,18 +1,18 @@
 ---
 title: Voorvertoning - JSON-representatie
-description: Een voorvertoning weergeven van de JSON-weergave van het fragment.
+description: Leer hoe u een JSON-weergave van uw inhoudsfragmenten eenvoudig kunt voorvertonen bij het implementeren van uw AEM oplossing zonder kop.
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 2%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
 
 # Voorvertoning - JSON-representatie {#preview-json-representation}
 
-Wanneer u de modellen voor inhoudsfragmenten ontwikkelt, kunt u voorbeeld-JSON-uitvoer voor een inhoudsfragment weergeven, zoals gebaseerd op een model. Bijvoorbeeld om een idee te krijgen van hoe de definitieve output eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
+Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als deel van uw AEM hoofdloze implementatie, zou u steekproefJSON output voor een inhoudsfragment kunnen willen bekijken, zoals die op een model wordt gebaseerd. Bijvoorbeeld om een idee te krijgen van hoe de definitieve output eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
 
 Met het pictogram **Voorvertoning**:
 
