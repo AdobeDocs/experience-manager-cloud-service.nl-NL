@@ -1,10 +1,10 @@
 ---
 title: Headless Development voor AEM Sites als Cloud Service
-description: Het gebruiken van krachtige eigenschappen zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API, AEM als Cloud Service staat u toe om uw ervaringen centraal te beheren en hen te dienen over kanalen.
+description: Leer hoe AEM als krachtige headless mogelijkheden van een Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
 translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Headless Development voor AEM Sites als een Cloud Service {#headless-development}
 
-Het gebruiken van krachtige eigenschappen zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API, AEM als Cloud Service staat u toe om uw ervaringen centraal te beheren en hen te dienen over kanalen.
+Leer hoe AEM als krachtige headless mogelijkheden van een Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
 
 ## Overzicht {#overview}
 
