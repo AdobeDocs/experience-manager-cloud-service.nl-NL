@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -19,10 +19,14 @@ Deze pagina bevat zelfhulpbronnen over on-boarding bij Experience Manager as a C
 In dit gedeelte worden de belangrijkste artikelen besproken over de volgende onderwerpen:
 
 * Aan de slag met AEM als Cloud Service
-* Inzicht in gebruikersrollen waarmee de beschikbaarheid van specifieke functies wordt bepaald
-* Git-opslagplaats voor Cloud Manager instellen
+
+* Rollen voor gebruikers begrijpen die de beschikbaarheid van specifieke functies bepalen
+
+* Cloud Manager&#39;s git-opslagplaats instellen
+
 * Experience Manager as a Cloud Service openen
-* Grondslagen voor regelgeving inzake gegevensbescherming en -privacy
+
+* Gronden voor regelgeving inzake gegevensbescherming en privacy
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
