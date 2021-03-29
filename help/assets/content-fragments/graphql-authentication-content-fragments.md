@@ -1,10 +1,10 @@
 ---
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
-description: Leer over de authentificatie die voor Verre AEM vragen GraphQL wordt vereist.
+description: Begrijp de authentificatie die voor Verre AEM vragen GraphQL wordt vereist om uw inhoud zonder kop te beveiligen.
 translation-type: tm+mt
-source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Een primair gebruiksgeval voor [Adobe Experience Manager als Cloud Service (AEM) GraphQL API voor de Levering van het Fragment van de Inhoud ](/help/assets/content-fragments/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren.  Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang.
+Een primair gebruiksgeval voor [Adobe Experience Manager als Cloud Service (AEM) GraphQL API voor de Levering van het Fragment van de Inhoud ](/help/assets/content-fragments/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
 
 >[!NOTE]
 >
