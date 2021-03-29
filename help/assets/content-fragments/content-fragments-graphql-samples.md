@@ -1,16 +1,18 @@
 ---
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
-description: Het leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef.
+description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
 
 
 # Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
+
+Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 
 >[!NOTE]
 >
