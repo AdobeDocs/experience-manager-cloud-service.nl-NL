@@ -1,10 +1,10 @@
 ---
 title: Modellen van contentfragmenten
-description: Inhoudsfragmentmodellen worden gebruikt om inhoudsfragmenten met gestructureerde inhoud te maken.
+description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2199'
 ht-degree: 4%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Modellen van contentfragmenten {#content-fragment-models}
 
-Met Inhoudsfragmentmodellen wordt de inhoudsstructuur gedefinieerd voor uw [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
+Content Fragment Models in AEM definiëren de structuur van inhoud voor uw [inhoudsfragmenten,](/help/assets/content-fragments/content-fragments.md) dient als basis voor uw inhoud zonder kop.
 
 U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 
