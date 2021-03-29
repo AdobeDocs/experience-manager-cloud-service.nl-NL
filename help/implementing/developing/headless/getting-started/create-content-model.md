@@ -1,10 +1,10 @@
 ---
 title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
-description: Met Content Fragment Models wordt de structuur gedefinieerd van de inhoud die u maakt en gebruikt AEM mogelijkheden zonder kop.
+description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 translation-type: tm+mt
-source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Creërend de Modellen van het fragmenten van het InhoudFragment de Draadloze Snelle Gids van het Begin {#creating-content-fragment-models}
 
-Met Content Fragment Models wordt de structuur gedefinieerd van de inhoud die u maakt en gebruikt AEM mogelijkheden zonder kop.
+Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
@@ -24,7 +24,7 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
 
-1. Meld u aan bij AEM als Cloud Service en selecteer **Gereedschappen -> Middelen -> Modellen van inhoudsfragment** in het hoofdmenu.
+1. Meld u aan bij AEM als Cloud Service en selecteer **Gereedschappen -> Middelen -> Modellen van inhoudsfragmenten** in het hoofdmenu.
 1. Tik of klik op de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](../assets/models-folder.png)
