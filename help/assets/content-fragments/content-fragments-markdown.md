@@ -1,8 +1,8 @@
 ---
 title: Markering
-description: Wanneer u ontwerpt, gebruikt de inhoudsfragmenteditor markeringssyntaxis, zodat u gemakkelijk inhoud kunt schrijven.
+description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
 translation-type: tm+mt
-source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 4%
@@ -10,9 +10,9 @@ ht-degree: 4%
 ---
 
 
-# Markering{#markdown}
+# Markering {#markdown}
 
-Wanneer u [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud kunt schrijven:
+Wanneer u [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud zonder kop kunt schrijven:
 
 ![markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
