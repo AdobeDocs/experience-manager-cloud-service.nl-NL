@@ -2,7 +2,7 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 47%
@@ -34,7 +34,7 @@ Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van
 
 **[Systeembeheertaken](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. De volgende documentatiepagina&#39;s bevatten informatie over elementaire organisatorische taken, dat wil zeggen [Gebruikers toevoegen en gebruikers toewijzen aan rollen en machtigingen voor Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. De volgende documentatiepagina&#39;s bevatten informatie die elementaire organisatorische taken beschrijft, dat wil zeggen [gebruikers toevoegen en gebruikers toewijzen aan rollen en machtigingen voor Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md).
 
 **[Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
