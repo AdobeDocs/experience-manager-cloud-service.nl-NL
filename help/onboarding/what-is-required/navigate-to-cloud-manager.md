@@ -2,9 +2,9 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,8 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 >[!NOTE]
 >U moet als een gebruiker worden toegevoegd en door uw systeembeheerder worden toegewezen aan een rol van Cloud Manager (Productprofiel in Admin Console).
 
-1. Selecteer **Aan de slag** in uw welkomstbericht of navigeer naar [Cloudinbeheer](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+1. Klik in uw welkomstbericht op **Aan de slag**, zoals in de onderstaande afbeelding wordt getoond, of navigeer naar [Cloudinbeheer](https://experience.adobe.com) en meld u aan met uw Adobe ID.\
+   ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. Selecteer **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -34,7 +35,7 @@ Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
 >[!NOTE]
 >Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] en de staat van de toepassing worden toegewezen, zult u verschillende schermen zien terwijl het gebruiken van [!UICONTROL Cloud Manager] UI.
 
-U ziet een van de drie hieronder beschreven opties:
+Een van de drie opties wordt hieronder beschreven:
 
 * **Als er geen programma&#39;s bestaan in Cloud Manager**
 
