@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: Implementeren
 role: Architect, ontwikkelaar
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '674'
 ht-degree: 22%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 22%
    + [Gebruikersrollen en -machtigingen](what-is-required/user-roles-permissions.md)
    + [Systeembeheertaken](what-is-required/add-users-assign-cm-roles.md)
    + [Navigeren naar Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [Toegang krijgen tot een AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Gebruikerstoegang verlenen aan een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager-programma&#39;s {#getting-access}
    + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Productieprogramma&#39;s {#production-programs}
