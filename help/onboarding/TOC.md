@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Implementeren
 role: Architect, ontwikkelaar
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 24%
+source-wordcount: '672'
+ht-degree: 22%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 24%
 
 + [Onboarding van AEM as a Cloud Service](/help/onboarding/home.md)
 + Aan de slag met AEM als Cloud Service {#what-is-required}
-   + [Toegangsrechten verleend](what-is-required/access-rights-granted.md)
-   + [Op rollen gebaseerde machtigingen](what-is-required/role-based-permissions.md)
-   + [Broncodeopslagplaats](what-is-required/source-code-repository.md)
-+ Toegang krijgen tot AEM in de cloud {#getting-access}
-   + [Toegang tot Cloud Manager voor AEM als Cloud Service krijgen](getting-access-to-aem-in-cloud/navigation.md)
-   + Cloud Manager openen {#cloud-service-programs}
-      + [Openingspagina van Cloud Manager](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + Productieprogramma&#39;s {#production-programs}
-         + [Inleiding](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [Een productieprogramma maken](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [Een productieprogramma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + Sandbox-programma&#39;s {#sandbox-programs}
-         + [Inleiding](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Sandboxprogramma&#39;s maken](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [Een Sandbox-programma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [Een Sandbox-programma verwijderen](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [Sluiende en ontsmette zandbakomgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [Adobe ID ophalen](what-is-required/get-your-adobe-id.md)
+   + [Gebruikers toevoegen en toewijzen aan rollen in Cloud Manager](what-is-required/add-users-assign-cm-roles.md)
+   + [Navigeren naar Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+   + [Een AEM-instantie openen](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ Cloud Manager-programma&#39;s {#getting-access}
+   + [Inzicht in programma&#39;s en programmatypen](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + Productieprogramma&#39;s {#production-programs}
+      + [Inleiding](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Een productieprogramma maken](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Een productieprogramma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + Sandbox-programma&#39;s {#sandbox-programs}
+      + [Inleiding](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Sandboxprogramma&#39;s maken](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Een Sandbox-programma bewerken](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Een Sandbox-programma verwijderen](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Sluiende en ontsmette zandbakomgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
       + [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [CI/CD-pipeline configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
