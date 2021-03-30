@@ -2,7 +2,7 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Een van de drie opties wordt hieronder beschreven:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om de tovenaar te lanceren.
+Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om [tovenaar](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md) te lanceren.
 
 Ga voor meer informatie over het toevoegen van een programma in Cloud Manager naar:
 
