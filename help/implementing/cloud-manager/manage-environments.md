@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
@@ -119,7 +119,7 @@ De verwijderingsoptie is ook beschikbaar als u op **Details** van de **Favoriete
 
 Selecteer **Toegang beheren** in het vervolgkeuzemenu in de **Kaart** Omgevingen. U kunt rechtstreeks naar de instantie van de auteur navigeren en de toegang voor uw omgeving beheren.
 
-Raadpleeg [Toegang tot instantie Auteur beheren](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) voor meer informatie.
+Raadpleeg [Toegang tot instantie Auteur beheren](/help/onboarding/what-is-required/accessing-aem-instance.md) voor meer informatie.
 
 ![](assets/environ-access.png)
 
