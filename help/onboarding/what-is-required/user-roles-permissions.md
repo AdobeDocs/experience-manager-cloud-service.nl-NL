@@ -2,10 +2,10 @@
 title: Gebruikersrollen en -machtigingen
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 9%
+source-wordcount: '604'
+ht-degree: 7%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe zal een **Organisatie** herkenningsteken voor uw bedrijf in het Systeem va
 
 Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist.
 
+Veel functies in Cloud Manager vereisen specifieke machtigingen om te werken en beperken de handelingen die u uitvoert binnen de gebruikersinterface op basis van de toegewezen rollen en machtigingen. In sommige gevallen, als u niet de toestemming hebt om een actie te voeren, is de interfacecontrole aanwezig, maar gehandicapt.
+
+Als er een actie is wilt u, maar niet, controleert [toestemmingen verbonden aan roldefinities](#permissions). Afhankelijk van uw doel, kunt u de Beheerder van het Systeem contacteren en om de rol verzoeken u wenst.
+
 Cloud Manager definieert momenteel vier rollen voor gebruikers die de beschikbaarheid van specifieke functies bepalen:
 
 * Business Owner
@@ -28,6 +32,8 @@ Cloud Manager definieert momenteel vier rollen voor gebruikers die de beschikbaa
 >[!NOTE]
 >De ontwikkelaar persona in Admin Console is niet gerelateerd aan de rol van de Ontwikkelaar in [!UICONTROL Cloud Manager].
 
+## Roldefinities {#role-definitions}
+
 De volgende tabel geeft een overzicht van de rollen:
 
 | [!UICONTROL Cloud Manager] Rollen | Beschrijving |
@@ -37,6 +43,12 @@ De volgende tabel geeft een overzicht van de rollen:
 | Implementatiebeheer | Beheert implementatiebewerkingen. Gebruikt [!UICONTROL Cloud Manager] om werkgebied/productie plaatsingen uit te voeren. Kan CI/CD pijpleidingen uitgeven. Kan belangrijke fouten met drie niveaus goedkeuren. Kan toegang krijgen tot de Git-opslagplaats. |
 | Ontwikkelaar | Ontwikkelt en test aangepaste toepassingscode. Gebruikt hoofdzakelijk [!UICONTROL Cloud Manager] om status te bekijken. Kan toegang krijgen tot de Git-opslagplaats voor code commit. |
 | Inhoudsauteur | Doorgaans heeft dit geen invloed op [!UICONTROL Cloud Manager]. Kan [!UICONTROL Cloud Manager] de Schakelaar van het Programma gebruiken (die van [!UICONTROL Experience Cloud]) is genavigeerd om tot AEM toegang te hebben. |
+
+### Uw rollen bekijken {#view-roles}
+
+Als u uw rol in Cloud Manager wilt weergeven, meldt u zich aan bij de interface van Cloud Manager, selecteert u het profielpictogram in de rechterbovenhoek en selecteert u **Gebruikersrollen**, zoals in de onderstaande afbeelding wordt getoond.
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Het profiel van het integratieproduct {#integration-product-profile}
 
