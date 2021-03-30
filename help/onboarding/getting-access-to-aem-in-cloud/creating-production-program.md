@@ -2,7 +2,7 @@
 title: 'Een productieprogramma maken '
 description: 'Een productieprogramma maken '
 translation-type: tm+mt
-source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Voer de volgende stappen uit om een productieprogramma te maken:
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >Raadpleeg [Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
+   >Raadpleeg [Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
 
 1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een Programma van de Productie tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **Doorgaan** te selecteren.
 
