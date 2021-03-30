@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: 06764b9e908a96f9cee26d7312bfc7c100da85a4
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 51%
+source-wordcount: '649'
+ht-degree: 50%
 
 ---
 
@@ -24,24 +24,24 @@ Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
 1. De systeembeheerder van het Systeem van uw organisatie zal een Welkome E-mail ontvangen die hen toestaat om [beheerderstaken ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) te doen met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen toegang tot de Manager van de Wolk geven.
 
-1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen op hun beurt een Welkome E-mail ontvangen die hen op de hoogte brengt dat zij toegang tot de Manager van de Wolk hebben. Gebruikers kunnen hun reis nu beginnen met Cloud Manager.
+1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen op hun beurt een Welkome E-mail ontvangen die hen op de hoogte brengt dat zij toegang tot de Manager van de Wolk hebben. Gebruikers kunnen nu hun [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) gebruiken om zich aan te melden en hun reis met Cloud Manager vanaf hier te beginnen.
 
 1. Gebruikers kunnen bovendien [toegang krijgen tot een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden.
 
-**Teams, rollen en machtigingen**
+**[Teams, rollen en machtigingen](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van Cloud Manager. Deze sectie helpt u begrijpen wat [de Rollen van de Manager van de Wolk](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) zijn en [toestemmingen](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) verbonden aan de rollen alvorens te worden begonnen.
 
-**Systeembeheertaken**
+**[Systeembeheertaken](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. De volgende documentatiepagina&#39;s bevatten informatie over elementaire organisatorische taken, dat wil zeggen [Gebruikers toevoegen en gebruikers toewijzen aan rollen en machtigingen voor Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
 
 
-**Navigeren naar Cloud Manager**
+**[Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 Ga naar Cloud Manager om aan de slag te gaan met AEM. Nu u als gebruiker bent toegevoegd en aan een Rol van de Manager van de Wolk wordt toegewezen, bent u bereid om diverse taken te doen zoals [het creëren van een programma](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [het toevoegen van een milieu](/help/implementing/cloud-manager/manage-environments.md), [het toegang tot van Git](/help/implementing/cloud-manager/accessing-git.md), [het vormen van een pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md), en [het opstellen van code](/help/implementing/cloud-manager/deploy-code.md).
 
-**Toegang krijgen tot een AEM**
+**[Toegang krijgen tot een AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
