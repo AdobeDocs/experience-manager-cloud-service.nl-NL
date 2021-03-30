@@ -2,7 +2,7 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 51%
@@ -30,7 +30,7 @@ Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
 **Teams, rollen en machtigingen**
 
-Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van Cloud Manager. Deze sectie helpt u begrijpen wat *Rollen van de Manager van de Wolk* zijn en de toestemmingen verbonden aan de rollen alvorens begonnen te worden.
+Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van Cloud Manager. Deze sectie helpt u begrijpen wat [de Rollen van de Manager van de Wolk](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) zijn en [toestemmingen](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) verbonden aan de rollen alvorens te worden begonnen.
 
 **Systeembeheertaken**
 
@@ -39,7 +39,7 @@ Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot mach
 
 **Navigeren naar Cloud Manager**
 
-Ga naar Cloud Manager om aan de slag te gaan met AEM. Nu u als gebruiker bent toegevoegd en aan een Rol van de Manager van de Wolk wordt toegewezen, bent u bereid om diverse taken te doen zoals het creëren van een programma, het toevoegen van een milieu, het beheren van Git, het vormen van een pijpleiding, en het opstellen van code.
+Ga naar Cloud Manager om aan de slag te gaan met AEM. Nu u als gebruiker bent toegevoegd en aan een Rol van de Manager van de Wolk wordt toegewezen, bent u bereid om diverse taken te doen zoals [het creëren van een programma](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [het toevoegen van een milieu](/help/implementing/cloud-manager/manage-environments.md), [het toegang tot van Git](/help/implementing/cloud-manager/accessing-git.md), [het vormen van een pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md), en [het opstellen van code](/help/implementing/cloud-manager/deploy-code.md).
 
 **Toegang krijgen tot een AEM**
 
