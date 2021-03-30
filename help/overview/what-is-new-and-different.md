@@ -2,7 +2,7 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
+source-git-commit: d2786f51edcb84e3d206c400e4faaecb46a54981
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 86%
@@ -124,7 +124,7 @@ Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangr
 Cloud Manager creëert omgevingen in datacenters in veel geografische regio&#39;s, wat zorgt voor wereldwijde dekking. De Punten van Aanwezigheid CDN (PoPs) verzekeren laag-latentie inhoudslevering voor klanten die over de hele wereld worden gevestigd.
 
 >[!NOTE]
->Raadpleeg [Toegang tot Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) om als Cloud Service aan de slag te gaan met Cloud Manager in AEM.
+>Raadpleeg [Toegang tot Experience Manager als Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) om als Cloud Service aan de slag te gaan met Cloud Manager in AEM.
 
 ## Onboarding {#onboarding}
 
