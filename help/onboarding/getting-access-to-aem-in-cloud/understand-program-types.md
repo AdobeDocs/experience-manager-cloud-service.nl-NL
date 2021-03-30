@@ -2,10 +2,10 @@
 title: Programma- en programmatypen
 description: Programma- en programmatypen begrijpen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 6e8cf08ec3f85437a8472a45895f3818e473e98c
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 3%
+source-wordcount: '329'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,23 @@ In Cloud Manager hebt u de entiteit Tenant helemaal bovenaan, die meerdere progr
 In het volgende diagram ziet u de hiërarchie van entiteiten in Cloud Manager.
 
 ![afbeelding](assets/program-types1.png)
+
+## Broncodeopslagplaats {#source-code-repository}
+
+Cloud Manager-programma wordt automatisch ingericht met de eigen git-opslagruimte.
+
+Gebruikers kunnen alleen toegang krijgen tot de gegevensopslagruimte van Cloud Manager als ze een Git-client gebruiken met een opdrachtregelprogramma, een zelfstandige visuele Git-client of de IDE van de gebruiker, zoals Eclipse, IntelliJ, NetBeans.
+
+Zodra een Git-client is ingesteld, kunt u de git-opslagplaats beheren vanuit de interface van Cloud Manager. Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/accessing-git.md) voor meer informatie over het beheren van Git met de interface van Cloud Manager.
+
+Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, moet u een lokale kopie van de toepassingscode maken door deze uit te checken van de opslagplaats van Cloud Manager naar een locatie op de lokale computer waar ze hun opslagplaats willen maken.
+
+```java
+$ git clone {URL}
+```
+
+>[!NOTE]
+>Een gebruiker kan een kopie van de code uitchecken en wijzigingen aanbrengen in de lokale gegevensopslagruimte. Als de gebruiker klaar is, kan hij of zij de wijzigingen in de code doorvoeren naar de externe opslagplaats voor code in Cloud Manager.
 
 ## Programmatypen {#program-types}
 
