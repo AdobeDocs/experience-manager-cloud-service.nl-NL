@@ -1,18 +1,18 @@
 ---
-title: 'Toegang tot AEM instanties '
-description: Volg deze pagina om te leren hoe u toegang krijgt tot een AEM
+title: 'Gebruikerstoegang verlenen aan een AEM instantie '
+description: Volg deze pagina om te leren hoe een Beheerder van het Systeem gebruikerstoegang tot een AEM Instantie verleent
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
 
-# Toegang tot een AEM instantie {#accessing-aem-instance}
+# Gebruikerstoegang verlenen aan een AEM instantie {#accessing-aem-instance}
 
-Voer de onderstaande stappen uit om vanuit Cloud Manager toegang te krijgen tot een AEM.
+Als Beheerder van het Systeem, volg de stappen hieronder om gebruiker toegang tot een AEM instantie te verlenen:
 
 1. Navigeer naar Cloud Manager en klik op de knop **Toegang beheren** via de **Environment**-kaart, zoals hieronder wordt weergegeven.
 
