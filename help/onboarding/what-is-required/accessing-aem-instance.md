@@ -2,9 +2,9 @@
 title: 'Toegang tot AEM instanties '
 description: Volg deze pagina om te leren hoe u toegang krijgt tot een AEM
 translation-type: tm+mt
-source-git-commit: 7ab5c624ccb2b321462c9759946becd79d03689c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Toegang tot een AEM instantie {#accessing-aem-instance}
 
-Voer de onderstaande stappen uit om toegang vanuit Cloud Manager te beheren:
+Voer de onderstaande stappen uit om vanuit Cloud Manager toegang te krijgen tot een AEM.
 
 1. Navigeer naar Cloud Manager en klik op de knop **Toegang beheren** via de **Environment**-kaart, zoals hieronder wordt weergegeven.
 
