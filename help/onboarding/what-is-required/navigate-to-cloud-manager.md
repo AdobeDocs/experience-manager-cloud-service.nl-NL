@@ -2,15 +2,17 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 7%
 
 ---
 
 
 # Naar Cloudbeheer navigeren {#cloud-manager}
+
+Cloud Manager is een belangrijk onderdeel van AEM als Cloud Service. Het stelt organisaties in staat zelf Experience Manager te beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid. Gebruikend het gebruikersinterface, kunt u de pijpleiding vormen en schoppen CI/CD.
 
 Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u een e-mail ontvangen die u aan de login van de Manager van de Wolk neemt pagina die ook via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/) toegankelijk is.
 
