@@ -2,7 +2,7 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
+source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 7%
@@ -19,15 +19,19 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 >[!NOTE]
 >U moet als een gebruiker worden toegevoegd en door uw systeembeheerder worden toegewezen aan een rol van Cloud Manager (Productprofiel in Admin Console).
 
-1. Klik in uw welkomstbericht op **Aan de slag**, zoals in de onderstaande afbeelding wordt getoond, of navigeer naar [Cloudinbeheer](https://experience.adobe.com) en meld u aan met uw Adobe ID.\
+1. Klik in uw welkomstbericht op **Aan de slag**, zoals in de onderstaande afbeelding wordt getoond.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-1. Selecteer **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   Of
 
-1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk.
+   1. Ga van [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/) naar aanmeldingspagina voor Cloud Manager
+
+   1. Selecteer **Experience Manager**.
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+   1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk.
 Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Openingspagina van wolkenbeheer {#cloud-manager-landing}
