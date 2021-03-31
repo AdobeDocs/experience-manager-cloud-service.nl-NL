@@ -2,7 +2,7 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 38%
@@ -28,11 +28,11 @@ In deze sectie worden de belangrijkste artikelen besproken die op uw reis zijn g
 
 Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
-1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om [de taken van de Beheerder van het Systeem te doen ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen [toegang tot de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) verlenen.
+1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om [Taken van de Beheerder van het Systeem ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) te doen met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen toegang tot de Manager van de Wolk verlenen.
 
 1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen beurtelings een welkome e-mail ontvangen waardoor zij met succes [kunnen navigeren aan de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Gebruikers kunnen hun Adobe ID nu gebruiken om zich aan te melden en hun reis met Cloud Manager te beginnen.
 
-1. Een systeembeheerder kan [gebruikers toegang tot een AEM instantie ](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden verlenen.
+1. Een systeembeheerder kan [Gebruikers toegang verlenen tot een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden.
 
 **[Je Adobe ID ophalen](/help/onboarding/what-is-required/get-your-adobe-id.md)**
 
