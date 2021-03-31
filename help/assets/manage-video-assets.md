@@ -2,10 +2,12 @@
 title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
+feature: Middelenbeheer, Publiceren, Samenwerking, Video
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '615'
 ht-degree: 6%
 
 ---
