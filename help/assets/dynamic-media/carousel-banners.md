@@ -3,10 +3,11 @@ title: Carousel-banners
 description: Leer hoe u met Carousel Banners in Dynamic Media werkt.
 feature: Carousel-banners
 topic: Zakelijke praktiserer
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '4480'
+source-wordcount: '4482'
 ht-degree: 3%
 
 ---
