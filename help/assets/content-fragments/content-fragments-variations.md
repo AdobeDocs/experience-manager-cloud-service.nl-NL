@@ -1,10 +1,12 @@
 ---
 title: Variaties - Authoring van content voor fragmenten
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
+feature: Contentfragmenten
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2259'
 ht-degree: 11%
 
 ---
