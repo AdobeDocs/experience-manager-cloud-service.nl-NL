@@ -2,15 +2,21 @@
 title: 'Systeembeheertaken '
 description: Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en deze als systeembeheerder kunt toewijzen aan de rollen van Cloud Manager
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # Systeembeheertaken {#add-users-assign}
+
+Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. Deze gebruiker is de eerste persoon die toegang heeft om taken uit te voeren in Admin Console en Cloud Manager.
+Een systeembeheerder voert de volgende organisatorische taken uit:
+
+* Gebruikers toevoegen
+* Gebruikers toewijzen aan rollen en machtigingen in Cloud Manager
 
 ## Gebruikers {#add-users} toevoegen
 
