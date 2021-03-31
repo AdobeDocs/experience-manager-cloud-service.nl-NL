@@ -2,10 +2,12 @@
 title: Snelle weergaven gebruiken om aangepaste pop-ups te maken
 description: '"Leer over hoe de standaard Snelle mening in ecommerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-upvensters."'
 topic: '"Developer,Administrator,Business Practitioner"'
+feature: Interactieve afbeeldingen, interactieve video's, carrouselbanners
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
