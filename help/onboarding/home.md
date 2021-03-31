@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
+source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 38%
+source-wordcount: '923'
+ht-degree: 39%
 
 ---
 
@@ -16,7 +16,7 @@ Gefeliciteerd met je reis met AEM als Cloud Service! Of u nu een nieuwe toepassi
 
 Deze handleiding helpt u en uw team snel aan de slag te gaan met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de systeembeheerder dit via Admin Console kan doen worden beschreven. De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
 
-De volgende afbeelding illustreert uw instapreis en begint met de welkomstmail die u van uw systeembeheerder hebt ontvangen. Deze afbeelding eindigt bij gebruikers die Cloud Manager als Cloud Service gebruiken voor AEM.
+De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmail die u van uw systeembeheerder hebt ontvangen en die eindigt bij gebruikers die Cloud Manager als Cloud Service openen voor AEM.
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
