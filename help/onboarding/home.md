@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 47%
+source-wordcount: '770'
+ht-degree: 46%
 
 ---
 
@@ -37,18 +37,20 @@ Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van
 
 **[Systeembeheertaken](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. De volgende documentatie bevat informatie die fundamentele organisatorische taken beschrijft, zoals:
+Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. Deze gebruiker is de eerste persoon die toegang heeft om taken uit te voeren in Admin Console en Cloud Manager.
+De volgende documentatiepagina&#39;s bevatten informatie over elementaire organisatorische taken:
 
 * Gebruikers toevoegen
 * Gebruikers toewijzen aan rollen en machtigingen in Cloud Manager
 
 **[Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Ga naar Cloud Manager om aan de slag te gaan met AEM. Nu u als gebruiker bent toegevoegd en aan een Rol van de Manager van de Wolk wordt toegewezen, bent u bereid om diverse taken zoals [het creëren van een programma ](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [het toevoegen van een milieu](/help/implementing/cloud-manager/manage-environments.md), [het toegang tot van Git](/help/implementing/cloud-manager/accessing-git.md), [het vormen van een pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md), en [het opstellen van code](/help/implementing/cloud-manager/deploy-code.md) te doen.
+Nu u als gebruiker bent toegevoegd en aan een rol van Cloud Manager bent toegewezen, kunt u Cloud Manager openen om aan de slag te gaan met AEM. Gebruikers zijn gereed om verschillende taken uit te voeren, zoals [een programma maken](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [een omgeving toevoegen](/help/implementing/cloud-manager/manage-environments.md), [toegang krijgen tot Git](/help/implementing/cloud-manager/accessing-git.md), [een pijpleiding configureren](/help/implementing/cloud-manager/configure-pipeline.md) en [code implementeren](/help/implementing/cloud-manager/deploy-code.md).
+Cloud Manager is een belangrijk onderdeel van AEM als Cloud Service. Het stelt organisaties in staat zelf Experience Manager te beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid. Gebruikend het gebruikersinterface, kunt u de pijpleiding vormen en schoppen CI/CD.
 
 **[Gebruikerstoegang verlenen aan een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Volg deze sectie om te leren hoe een Beheerder van het Systeem gebruikers toegang tot een AEM instantie kan verlenen of een gebruiker die een milieu creeerde andere gebruikers toegang tot een AEM instantie kan verlenen.
+Volg deze sectie om te leren hoe een Beheerder van het Systeem of een gebruiker die een milieu creeerde andere gebruikers toegang tot een AEM instantie kan verlenen.
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
