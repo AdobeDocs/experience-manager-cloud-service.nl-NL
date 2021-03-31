@@ -1,11 +1,13 @@
 ---
 title: Voorvertoning - JSON-representatie
 description: Leer hoe u een JSON-weergave van uw inhoudsfragmenten eenvoudig kunt voorvertonen bij het implementeren van uw AEM oplossing zonder kop.
+feature: Contentfragmenten
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '117'
+ht-degree: 3%
 
 ---
 
