@@ -2,9 +2,9 @@
 title: 'Gebruikerstoegang verlenen aan een AEM instantie '
 description: Volg deze pagina om te leren hoe een Beheerder van het Systeem gebruikerstoegang tot een AEM Instantie verleent
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Als Beheerder van het Systeem, volg de stappen hieronder om gebruiker toegang to
 1. Navigeer naar Cloud Manager en klik op de knop **Toegang beheren** via de **Environment**-kaart, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
-   >U moet een Beheerder van het Systeem of de gebruiker zijn die het milieu creeerde om een gebruiker in de Admin Console kunnen toevoegen. Alleen rollen van bedrijfseigenaar of implementatiebeheerder hebben machtigingen om een omgeving te maken. Raadpleeg [Gebruikers toevoegen en Rollen van wolkenbeheer toewijzen](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) voor meer informatie over rollen en bijbehorende machtigingen.
+   >U moet een Beheerder van het Systeem of de gebruiker zijn die het milieu creeerde om een gebruiker in de Admin Console kunnen toevoegen. Alleen rollen van bedrijfseigenaar of implementatiebeheerder hebben machtigingen om een omgeving te maken. Verwijs naar [Rollen van de Gebruiker en Toestemmingen](/help/onboarding/what-is-required/user-roles-permissions.md) om meer over rollen en bijbehorende toestemmingen te leren. Raadpleeg bovendien [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over omgevingen.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
