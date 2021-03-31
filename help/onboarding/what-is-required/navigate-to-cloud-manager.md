@@ -2,7 +2,7 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk.
 Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Openingspagina van wolkenbeheer {#cloud-manager-landing}
