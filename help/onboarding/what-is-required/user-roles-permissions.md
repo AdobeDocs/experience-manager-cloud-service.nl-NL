@@ -2,7 +2,7 @@
 title: Gebruikersrollen en -machtigingen
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # Gebruikersrollen en -machtigingen {#user-roles-permissions}
 
-Adobe zal een **Organisatie** herkenningsteken voor uw bedrijf in het Systeem van Adobe Identity Management (IMS) tot stand brengen, waar al uw gebruikers en hun toestemmingen kunnen worden beheerd. Elke gebruiker, die lid van deze organisatie moet zijn, en toegang tot om het even welke [!UICONTROL Experience Cloud] dienst zal worden verleend, zal zijn eigen **Adobe ID** moeten hebben.
+Adobe zal een **Organisatie** herkenningsteken voor uw bedrijf in het Systeem van Adobe Identity Management (IMS) tot stand brengen, waar al uw gebruikers en hun toestemmingen kunnen worden beheerd. Elke gebruiker, die lid van deze organisatie moet zijn, en toegang tot om het even welke [!UICONTROL Experience Cloud] dienst zal worden verleend, zal zijn eigen **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)** moeten hebben.
 
 ## Gebruikersrollen {#user-roles}
 
