@@ -2,9 +2,9 @@
 title: Gebruikersrollen en -machtigingen
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '445'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,9 @@ ht-degree: 8%
 
 ## Gebruikersrollen {#user-roles}
 
-Voor veel functies in Cloud Manager zijn specifieke machtigingen vereist.
-
 Veel functies in Cloud Manager vereisen specifieke machtigingen om te werken en beperken de handelingen die u uitvoert binnen de gebruikersinterface op basis van de toegewezen rollen en machtigingen. In sommige gevallen, als u niet de toestemming hebt om een actie te voeren, is de interfacecontrole aanwezig, maar gehandicapt.
 
-Als er een actie is wilt u, maar niet, controleert [toestemmingen verbonden aan roldefinities](#permissions). Afhankelijk van uw doel, kunt u de Beheerder van het Systeem contacteren en om de rol verzoeken u wenst.
+Als er een actie is wilt u, maar niet, de sectie hieronder controleren, [Gebruikersrollen en Toestemmingen](#permissions). Afhankelijk van uw doel, kunt u de Beheerder van het Systeem contacteren en om de rol verzoeken u wenst.
 
 Cloud Manager definieert momenteel vier rollen voor gebruikers die de beschikbaarheid van specifieke functies bepalen:
 
@@ -34,6 +32,9 @@ Cloud Manager definieert momenteel vier rollen voor gebruikers die de beschikbaa
 
 Als u uw rol in Cloud Manager wilt weergeven, meldt u zich aan bij de interface van Cloud Manager, selecteert u het profielpictogram in de rechterbovenhoek en selecteert u **Gebruikersrollen**, zoals in de onderstaande afbeelding wordt getoond.
 
+>[!NOTE]
+>Zie [Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) voor meer informatie over aanmelden naar Cloud Manager.
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Het profiel van het integratieproduct {#integration-product-profile}
@@ -41,7 +42,7 @@ Als u uw rol in Cloud Manager wilt weergeven, meldt u zich aan bij de interface 
 Naast het bovenstaande maakt Cloud Manager automatisch een productprofiel met de naam &quot;Integrations - Cloud Service&quot;. Dit productprofiel wordt gebruikt voor de integratie tussen Adobe Experience Manager en andere Adobe-producten. Dit productprofiel **moet** niet worden geschrapt. Als u dit profiel per ongeluk verwijdert, moet het handmatig opnieuw worden gemaakt. De weergavenaam voor dit profiel **must** is `CM_CS_DEFAULT`.
 
 
-## Machtigingen voor roldefinities {#permissions}
+## Gebruikersrollen en -machtigingen {#permissions}
 
 [!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code naar **Git Repository** te duwen. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om programma&#39;s toe te voegen en uit te geven, milieu&#39;s toe te voegen, en plaatsingen goed te keuren.
 
