@@ -3,10 +3,12 @@ title: Metagegevens van digitale elementen beheren
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Middelenbeheer, metagegevens
+role: Business Practice,Architect,Administrator
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1848'
 ht-degree: 3%
 
 ---
