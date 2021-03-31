@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 98d840cf618052dd0fab5e1e6bfce6cb1bee441b
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 41%
+source-wordcount: '904'
+ht-degree: 39%
 
 ---
 
@@ -14,9 +14,11 @@ ht-degree: 41%
 
 Gefeliciteerd met je reis met AEM als Cloud Service! Of u nu een nieuwe toepassing implementeert of een bestaande toepassing migreert, deze handleiding dient als uitgangspunt om ervoor te zorgen dat uw toepassing optimaal is en klaar voor succes op de Cloud Service.
 
-Deze handleiding bevat een checklist waarmee u en uw team snel aan de slag kunnen met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de systeembeheerder dit via Admin Console kan doen worden beschreven. De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
+Deze handleiding bevat een checklist waarmee u en uw team snel aan de slag kunnen met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de Beheerder van het Systeem dit via Admin Console kan doen worden beschreven [hier](/help/onboarding/what-is-required/add-users-assign-cm-roles.md). De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
 
-![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
+De volgende afbeelding illustreert uw instapreis en begint met de welkomstmail die u van uw systeembeheerder hebt ontvangen. Deze afbeelding eindigt bij gebruikers die Cloud Manager als Cloud Service gebruiken voor AEM.
+
+![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
 ## Belangrijke artikelen over on-boarding {#key-articles}
 
