@@ -2,11 +2,13 @@
 title: Activiteitsstroom in tijdlijn
 description: In dit artikel wordt beschreven hoe u activiteitenlogboeken voor elementen op de tijdlijn kunt weergeven.
 contentOwner: AG
+feature: Elementenrapporten,beheer van bedrijfsmiddelen
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 21%
+source-wordcount: '212'
+ht-degree: 20%
 
 ---
 
