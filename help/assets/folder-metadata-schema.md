@@ -2,10 +2,12 @@
 title: Metagegevensschema van map
 description: Leer hoe u een metagegevensschema voor elementmappen maakt in [!DNL Experience Manager Assets]
 contentOwner: AG
+feature: Metagegevens
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '975'
 ht-degree: 5%
 
 ---
@@ -157,7 +159,7 @@ U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een
 
 1. Tik in de gebruikersinterface [!DNL Experience Manager Assets] op **[!UICONTROL Create]** op de werkbalk.
 1. Geef een titel en naam voor de map op.
-1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Create]** of klik op &lt;a0/>.
+1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Create]** of klik op .
 
    ![select_schema](assets/select_schema.png)
 
