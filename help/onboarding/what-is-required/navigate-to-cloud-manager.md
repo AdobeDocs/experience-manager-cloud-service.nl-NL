@@ -2,7 +2,7 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 
    Of
 
-   1. Ga van [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/) naar aanmeldingspagina voor Cloud Manager
+   1. Navigeer vanuit [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/) naar de aanmeldingspagina van Cloud Manager.
 
    1. Selecteer **Experience Manager**.
       ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
