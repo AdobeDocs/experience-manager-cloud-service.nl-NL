@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '905'
 ht-degree: 39%
 
 ---
@@ -28,7 +28,7 @@ In deze sectie worden de belangrijkste artikelen besproken die op uw reis zijn g
 
 Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
-1. Adobe zal levering voor uw organisatie voltooien waarna de Beheerder van het Systeem van uw organisatie een Welkome E-mail zal ontvangen die hen toestaat om [Beheerderstaken ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) te doen met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen [toegang tot de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) geven.
+1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een Welkome E-mail ontvangen die hen toestaat om [de taken van de Beheerder van het Systeem te doen ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen [toegang tot de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) geven.
 
 1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen op hun beurt een Welkome E-mail ontvangen die hen op de hoogte brengt dat zij [toegang tot de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) hebben. Gebruikers kunnen nu hun [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) gebruiken om zich aan te melden en hun reis met Cloud Manager vanaf hier te beginnen.
 
