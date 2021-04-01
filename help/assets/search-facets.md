@@ -1,10 +1,12 @@
 ---
 title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
+feature: Zoeken,metagegevens
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2268'
 ht-degree: 18%
 
 ---
