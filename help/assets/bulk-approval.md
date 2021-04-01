@@ -2,10 +2,12 @@
 title: Elementen in mappen en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
+feature: Verzamelingen,Samenwerking
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '749'
 ht-degree: 20%
 
 ---
@@ -93,7 +95,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
 1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de middelenconsole. Tik op het pictogram **[!UICONTROL Notifications]** of klik op het pictogram om elementen goed te keuren en selecteer vervolgens de revisietaak in de lijst.
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en tik of klik vervolgens op **[!UICONTROL Review]**.
-1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Approve/Reject]** of klik op het pictogram &lt;a0/> om elementen goed te keuren of af te wijzen.
+1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Approve/Reject]** of klik op het pictogram  om elementen goed te keuren of af te wijzen.
 
    ![review_task_collection](assets/review_task_collection.png)
 
