@@ -2,9 +2,9 @@
 title: 'Systeembeheertaken '
 description: Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en deze als systeembeheerder kunt toewijzen aan de rollen van Cloud Manager
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ Een systeembeheerder voert de volgende organisatorische taken uit:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Verwijs naar de voorafgaande secties, [Rollen en Toestemmingen van de Gebruiker ](#user-roles) en [Toestemmingen verbonden aan de Definities van de Rol](#permissions) om ervoor te zorgen dat de juiste gebruikers de juiste Rol(en) in **Admin Console** worden toegewezen.
+   >Verwijs naar [Gebruikersrollen en Toestemmingen](#user-roles) en [Toestemmingen verbonden aan de Definities van de Rol](#permissions) om ervoor te zorgen dat de juiste gebruikers de juiste Rol(en) in **Admin Console** worden toegewezen.
 
    Nu hebt u gebruikers aan Adobe Experience Manager toegevoegd als context van het Product van de Cloud Service en bent opstelling met de juiste Rollen of Profielen van het Product.
 
-   Bijvoorbeeld, als u in de rol van a bent:
-
-   * ***Bedrijfs Eigenaar***, hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, de pijpleiding toe te voegen/uit te geven en om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of codekwaliteit op te stellen.
-
-   * ***De Manager*** van de plaatsing, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of code-kwaliteit op te stellen.
-
-   * ***De ontwikkelaar***, hebt u de toestemming om Persoonlijk Token van de Toegang te produceren om tot Git toegang te hebben.
-
-      >[!NOTE]
-      > Een gebruiker kan aan veelvoudige rollen worden toegewezen. Bijvoorbeeld het toewijzen van de rollen Bedrijfs van de Eigenaar en van de Manager van de Plaatsing aan een gebruiker geeft hen de combinatie of de som deze toestemmingen.
