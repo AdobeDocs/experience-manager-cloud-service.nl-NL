@@ -2,10 +2,12 @@
 title: HTTP-API voor assets
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
+feature: Elementen HTTP-API,API's
+role: Ontwikkelaar,Architect,Beheerder
 translation-type: tm+mt
-source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
