@@ -2,10 +2,12 @@
 title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
+feature: API's,middelen HTTP API
+role: Ontwikkelaar,Architect,Beheerder
 translation-type: tm+mt
-source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
