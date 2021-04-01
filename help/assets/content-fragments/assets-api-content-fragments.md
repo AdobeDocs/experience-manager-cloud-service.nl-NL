@@ -1,10 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
 description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1958'
 ht-degree: 2%
 
 ---
