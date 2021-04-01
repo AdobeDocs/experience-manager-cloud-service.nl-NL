@@ -2,10 +2,11 @@
 title: URL's koppelen aan uw webapplicatie
 description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
 topic: Zakelijke praktiserer
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 9%
 
 ---
@@ -159,7 +160,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 1. Ga als volgt te werk op de pagina **[!UICONTROL Dynamic Media Cloud Services Settings]**:
 
-   * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde URL-pad later in deze stappen nodig. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
+   * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde pad naar de URL later nodig in deze stappen. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
