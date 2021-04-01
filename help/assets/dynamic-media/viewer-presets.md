@@ -3,11 +3,12 @@ title: Voorinstellingen voor Dynamic Media-viewers toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
 topic: Beheerder, Business Practiter
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 23%
+source-wordcount: '218'
+ht-degree: 22%
 
 ---
 
