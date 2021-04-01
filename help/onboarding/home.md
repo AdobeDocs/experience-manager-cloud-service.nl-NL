@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
 U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen.
 
-**[Gebruikersrollen en -machtigingen](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Rollen in Wolkenbeheer](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van Cloud Manager. Deze sectie helpt u begrijpen wat *Rollen van de Manager van de Wolk* en toestemmingen verbonden aan de rollen zijn alvorens te worden begonnen.
 
