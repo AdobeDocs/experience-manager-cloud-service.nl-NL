@@ -2,10 +2,11 @@
 title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager configureert als Cloud Service.
 topic: Beheerder
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3755'
 ht-degree: 3%
 
 ---
