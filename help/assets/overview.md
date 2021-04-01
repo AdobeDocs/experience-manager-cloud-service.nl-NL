@@ -2,10 +2,12 @@
 title: Inleiding tot elementen als a [!DNL Cloud Service]
 description: Nieuw in Elementen als a [!DNL Cloud Service].
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Business Practitioner,Leader,Architect
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
