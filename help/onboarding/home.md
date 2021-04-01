@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 6ce8b5c53de45d6466c5a835eea27a5acfff0a40
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 39%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 39%
 
 Gefeliciteerd met je reis met AEM als Cloud Service! Of u nu een nieuwe toepassing implementeert of een bestaande toepassing migreert, deze handleiding dient als uitgangspunt om ervoor te zorgen dat uw toepassing optimaal is en klaar voor succes op de Cloud Service.
 
-Deze handleiding helpt u en uw team snel aan de slag te gaan met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de systeembeheerder dit via Admin Console kan doen worden beschreven. De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
+Deze handleiding helpt u en uw team snel aan de slag te gaan met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers aan de Manager van de Wolk toe te voegen aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de systeembeheerder dit via Admin Console kan doen worden beschreven. De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
 
 De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmail die u van uw systeembeheerder hebt ontvangen en die eindigt bij gebruikers die Cloud Manager als Cloud Service openen voor AEM.
 
@@ -28,9 +28,9 @@ In deze sectie worden de belangrijkste artikelen besproken die op uw reis zijn g
 
 Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
-1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om [Taken van de Beheerder van het Systeem ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) te doen met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen en daardoor hen aangewezen toegang tot de Manager van de Wolk verlenen.
+1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om [Taken van de Beheerder van het Systeem te doen ](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen, en daardoor hen aangewezen toegang tot de Manager van de Wolk te verlenen.
 
-1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen beurtelings een welkome e-mail ontvangen waardoor zij met succes [kunnen navigeren aan de Manager van de Wolk](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Gebruikers kunnen hun Adobe ID nu gebruiken om zich aan te melden en hun reis met Cloud Manager te beginnen.
+1. De gebruikers die door uw Beheerder van het Systeem worden toegevoegd zullen beurtelings een welkome e-mail ontvangen daardoor die hen toestaan om aan de Manager van de Wolk ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) met succes te navigeren. [ Gebruikers kunnen hun Adobe ID nu gebruiken om zich aan te melden en hun reis met Cloud Manager te beginnen.
 
 1. Een systeembeheerder kan [Gebruikers toegang verlenen tot een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden.
 
