@@ -2,10 +2,12 @@
 title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen, vertaling
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2446'
 ht-degree: 19%
 
 ---
@@ -182,7 +184,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    >
    >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
 
-   Klik op **[!UICONTROL Reject Translation]** of tik op  om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
+   Klik/tik **[!UICONTROL Reject Translation]** om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
 1. Navigeer naar de middelenconsole en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
