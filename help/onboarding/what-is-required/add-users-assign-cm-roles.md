@@ -2,9 +2,9 @@
 title: 'Systeembeheertaken '
 description: Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en deze als systeembeheerder kunt toewijzen aan de rollen van Cloud Manager
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Een systeembeheerder voert de volgende organisatorische taken uit:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Verwijs naar [Gebruikersrollen en Toestemmingen](#user-roles) en [Toestemmingen verbonden aan de Definities van de Rol](#permissions) om ervoor te zorgen dat de juiste gebruikers de juiste Rol(en) in **Admin Console** worden toegewezen.
+   >Raadpleeg [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) voor meer informatie over rollen en machtigingen die worden aangeboden in Cloud Manager.
 
    Nu hebt u gebruikers aan Adobe Experience Manager toegevoegd als context van het Product van de Cloud Service en bent opstelling met de juiste Rollen of Profielen van het Product.
 
