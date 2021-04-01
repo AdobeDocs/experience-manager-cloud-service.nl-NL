@@ -2,10 +2,12 @@
 title: Elementen, mappen en verzamelingen delen als een koppeling
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink kunt delen binnen  [!DNL Experience Manager Assets] .
 contentOwner: AG
+feature: Middelenbeheer, Samenwerking, Asset Distribution
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
