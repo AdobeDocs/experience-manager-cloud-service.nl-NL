@@ -1,10 +1,10 @@
 ---
-title: Gebruikersrollen en -machtigingen
+title: Rollen in Wolkenbeheer
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 6%
 
 ---
