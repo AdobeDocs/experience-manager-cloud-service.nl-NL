@@ -4,10 +4,11 @@ description: Leer hoe u afbeeldingssets kunt automatiseren en het maken van cent
 contentOwner: Rick Brough
 feature: Voorinstellingen afbeelding, voorinstellingen viewer
 topic: Zakelijke praktiserer
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3193'
 ht-degree: 0%
 
 ---
