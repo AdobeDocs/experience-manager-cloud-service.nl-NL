@@ -2,10 +2,12 @@
 title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] gebruikers met een handicap helpen.
 contentOwner: AG
+feature: Toegankelijkheid, beheer van bedrijfsmiddelen
+role: Business Practice,Architect,Leader
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1900'
 ht-degree: 1%
 
 ---
