@@ -2,15 +2,15 @@
 title: Gebruikersrollen en -machtigingen
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 8%
+source-wordcount: '564'
+ht-degree: 6%
 
 ---
 
 
-# Gebruikersrollen en -machtigingen {#user-roles-permissions}
+# Rollen van wolkenbeheer {#user-roles-permissions}
 
 ## Gebruikersrollen {#user-roles}
 
@@ -44,13 +44,25 @@ Naast het bovenstaande maakt Cloud Manager automatisch een productprofiel met de
 
 ## Gebruikersrollen en -machtigingen {#permissions}
 
-[!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code naar **Git Repository** te duwen. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om programma&#39;s toe te voegen en uit te geven, milieu&#39;s toe te voegen, en plaatsingen goed te keuren.
+[!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code door te sturen naar de Git-opslagplaats. Alternatief, heeft een bedrijfseigenaar verschillende toestemmingen die hen toestaan om programma&#39;s toe te voegen en uit te geven, milieu&#39;s toe te voegen, en plaatsingen goed te keuren.
 
-Elk van de rollen heeft specifieke toestemmingen verbonden aan elke rol. De volgende tabel geeft een overzicht van de rollen, geeft een overzicht van de beschikbare functies en van de rollen die de functie kunnen uitvoeren.
+Elk van de rollen heeft specifieke toestemmingen verbonden aan het. Bijvoorbeeld, als u in de rol van a bent:
+
+* ***Bedrijfs Eigenaar***, hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, de pijpleiding toe te voegen/uit te geven en om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of codekwaliteit op te stellen.
+
+* ***De Manager*** van de plaatsing, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of code-kwaliteit op te stellen.
+
+* ***De ontwikkelaar***, hebt u de toestemming om Persoonlijk Token van de Toegang te produceren om tot Git toegang te hebben.
+
+   >[!NOTE]
+   > Een gebruiker kan aan veelvoudige rollen worden toegewezen. Bijvoorbeeld het toewijzen van de rollen Bedrijfs van de Eigenaar en van de Manager van de Plaatsing aan een gebruiker geeft hen de combinatie of de som deze toestemmingen.
+
+
+De volgende tabel geeft een overzicht van de rollen en de bijbehorende machtigingen in Cloud Manager.
 
 | Machtiging | Beschrijving | Zakelijke eigenaar | Implementatiebeheer | Programmabeheerder | Ontwikkelaar |
 |--- |--- |--- |--- |--- |--- |
-| Programma toevoegen | Voeg een nieuw programma toe. | x |  |  |  |
+| Programma toevoegen<br>Programma bewerken | Voeg een nieuw programma toe.<br>Een programma bewerken - Oplossingen of invoegtoepassingen toevoegen of verwijderen | x |  |  |  |
 | Omgeving maken | Maak Prod+Stage, Dev, omgevingen. | x | x |  |  |
 | Omgeving bijwerken | Prod+werkgebied, Dev, omgevingen bijwerken. | x | x |  |  |
 | Omgeving verwijderen | Verwijder Niet-prod, Dev, omgevingen. | x | x |  |  |
@@ -62,3 +74,4 @@ Elk van de rollen heeft specifieke toestemmingen verbonden aan elke rol. De volg
 | Pipet verwijderen | Hiermee wordt het verwijderen van een pijpleiding toegestaan. |  | x |  |  |
 | Uitvoering annuleren | Huidige uitvoering annuleren. |  | x |  |  |
 | Token voor persoonlijke toegang genereren | Toegangspoort. |  | x |  | x |
+
