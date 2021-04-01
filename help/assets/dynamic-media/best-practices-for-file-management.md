@@ -4,10 +4,11 @@ description: '"Tips en tips en trucs voor het benoemen, ordenen en beheren van D
 contentOwner: Rick Brough
 feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
 topic: Zakelijke praktiserer
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
