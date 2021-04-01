@@ -2,10 +2,12 @@
 title: Trapsgewijze metadata
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
+feature: Metagegevens
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 11%
 
 ---
