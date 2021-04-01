@@ -2,9 +2,9 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Een van de drie opties wordt hieronder beschreven:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om [tovenaar](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md) te lanceren.
+Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om [Add tovenaar van het Programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access) te lanceren.
 
 Ga voor meer informatie over het toevoegen van een programma in Cloud Manager naar:
 
