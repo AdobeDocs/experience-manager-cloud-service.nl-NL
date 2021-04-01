@@ -3,10 +3,12 @@ title: Verzamelingen digitale middelen beheren
 description: Begrijp het concept van inzameling in de Activa van Adobe Experience Manager. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Verzamelingen, beheer van bedrijfsmiddelen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2249'
 ht-degree: 18%
 
 ---
