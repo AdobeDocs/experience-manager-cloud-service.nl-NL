@@ -2,9 +2,9 @@
 title: 'Gebruikerstoegang verlenen aan een AEM instantie '
 description: Volg deze pagina om te leren hoe een Beheerder van het Systeem gebruikerstoegang tot een AEM Instantie verleent
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Als Beheerder van het Systeem, volg de stappen hieronder om gebruikerstoegang to
 1. Navigeer naar Cloud Manager en klik op de knop **Toegang beheren** via de **Environment**-kaart, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
-   >U moet een Beheerder van het Systeem of de gebruiker zijn die het milieu creeerde om een gebruiker in de Admin Console kunnen toevoegen. Alleen rollen van bedrijfseigenaar of implementatiebeheerder hebben machtigingen om een omgeving te maken. Verwijs naar [Rollen van de Gebruiker en Toestemmingen](/help/onboarding/what-is-required/user-roles-permissions.md) om meer over rollen en bijbehorende toestemmingen te leren. Raadpleeg bovendien [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over omgevingen.
+   >U moet een Beheerder van het Systeem of de gebruiker zijn die het milieu creeerde om een gebruiker in de Admin Console kunnen toevoegen. Alleen rollen van bedrijfseigenaar of implementatiebeheerder hebben machtigingen om een omgeving te maken. Raadpleeg [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) voor meer informatie over rollen en bijbehorende machtigingen. Raadpleeg bovendien [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over omgevingen.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Of
 
-   **U kunt** Toegang beheren ook via de  **** beheerknop als u op  **** Details in het  **** milieugebied klikt.
+   Selecteer **Beheren** —> **Toegang beheren** op de pagina **Omgevingen**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
