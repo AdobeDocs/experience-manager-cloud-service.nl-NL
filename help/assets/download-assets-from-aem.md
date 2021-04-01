@@ -2,10 +2,12 @@
 title: Elementen downloaden
 description: Download elementen van [!DNL Adobe Experience Manager Assets] en schakel de downloadfunctionaliteit in of uit.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
