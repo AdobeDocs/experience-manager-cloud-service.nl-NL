@@ -2,7 +2,7 @@
 title: Rollen in Wolkenbeheer
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 6%
@@ -65,7 +65,7 @@ De volgende tabel geeft een overzicht van de rollen en de bijbehorende machtigin
 | Programma toevoegen<br>Programma bewerken | Voeg een nieuw programma toe.<br>Een programma bewerken - Oplossingen of invoegtoepassingen toevoegen of verwijderen | x |  |  |  |
 | Omgeving maken | Maak Prod+Stage, Dev, omgevingen. | x | x |  |  |
 | Omgeving bijwerken | Prod+werkgebied, Dev, omgevingen bijwerken. | x | x |  |  |
-| Omgeving verwijderen | Verwijder Niet-prod, Dev, omgevingen. | x | x |  |  |
+| Dev-omgeving verwijderen | Dev-omgevingen verwijderen. | x | x |  |  |
 | Instellingen pijpleiding | Setup of Edit Pipeline. |  | x |  |  |
 | Uitvoering pijpleiding | Start de pijplijn. | x | x |  |  |
 | Uitvoering pijpleiding | Belangrijke 3-Tier-fouten afwijzen/goedkeuren. | x | x | x |  |
