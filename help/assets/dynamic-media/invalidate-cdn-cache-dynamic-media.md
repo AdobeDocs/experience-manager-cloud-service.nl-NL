@@ -3,10 +3,11 @@ title: De CDN-cache ongeldig maken via Dynamic Media
 description: '"Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt."'
 feature: Beheer van bedrijfsmiddelen
 topic: Zakelijke praktiserer
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
