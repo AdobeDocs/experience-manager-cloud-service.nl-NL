@@ -3,10 +3,11 @@ title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
 feature: Middelenbeheer, videoprofielen, uitvoeringen
 topic: Zakelijke praktiserer
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3491'
 ht-degree: 9%
 
 ---
