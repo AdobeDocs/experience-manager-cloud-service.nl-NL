@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Middelenbeheer, Samenwerking, Asset Distribution
 role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] als een [!DNL Cloud Service] te delen:
 
 * Delen als een koppeling.
-* Download elementen en deel ze afzonderlijk.
-* Delen via AEM bureaubladtoepassing.
-* Delen via Adobe Asset Link.
-* (Binnenkomende functionaliteit) Delen met behulp van Brand Portal.
+* [Elementen downloaden ](/help/assets/download-assets-from-aem.md) en afzonderlijk delen.
+* Delen met [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Delen met [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+* Delen met [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Elementen delen als een koppeling {#sharelink}
 
