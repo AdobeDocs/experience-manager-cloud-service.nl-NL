@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Middelenbeheer, Verbonden middelen, Asset Distribution
 role: Beheerder, Business Practitioner, Architect
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2794'
+source-wordcount: '2786'
 ht-degree: 25%
 
 ---
@@ -120,9 +120,9 @@ U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dy
 
 Voer de volgende stappen uit om deze verbinding te configureren.
 
-1. Configuratie van verbonden elementen maken zoals hierboven beschreven. Schakel het selectievakje **[!UICONTROL Fetch original rendition for [!DNL Dynamic Media] Connected Assets]** in het dialoogvenster in.
+1. Configuratie van verbonden elementen maken zoals hierboven beschreven. Selecteer **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** bij het configureren van de functionaliteit.
 
-1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Gebruik dezelfde bedrijfsnaam in alle configuraties.
    * Selecteer **[!UICONTROL Disabled by default]** op het lokale [!DNL Sites] in [!UICONTROL Dynamic Media sync mode]. Voor de implementatie van Sites hebt u alleen alleen-lezen toegang tot de [!DNL Dynamic Media]-account nodig.
