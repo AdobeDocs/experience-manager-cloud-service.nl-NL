@@ -4,9 +4,9 @@ description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: Business Practice,Leader,Architect,Beheerder
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 >
 >De volgende bronnen zijn beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]:
 >
+>* [Lijst met vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
 >* [Een inleiding](/help/overview/introduction.md)
 >* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
 >* [De architectuur](/help/core-concepts/architecture.md)
