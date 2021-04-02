@@ -5,15 +5,15 @@ contentOwner: AG
 feature: API's,middelen HTTP API
 role: Ontwikkelaar,Architect,Beheerder
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] Gebruiksgevallen, API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
 
 Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkelaars van [!DNL Assets] als een [!DNL Cloud Service]. Het omvat nieuwe module voor het uploaden van middelen, API-referentie en informatie over de ondersteuning die wordt geboden in workflows na verwerking.
 
