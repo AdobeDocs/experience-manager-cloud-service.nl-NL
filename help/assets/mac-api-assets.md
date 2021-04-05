@@ -4,14 +4,14 @@ description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren 
 contentOwner: AG
 feature: Elementen HTTP-API,API's
 role: Ontwikkelaar,Architect,Beheerder
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] HTTP-API  {#assets-http-api}
 
@@ -268,6 +268,8 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
 * Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar via de [!DNL Assets] Webinterface en door HTTP API. De API retourneert een foutbericht van 404 als [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
+
+* De HTTP-API van middelen retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.
 
 * Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel wanneer ze worden bijgewerkt met behulp van API&#39;s. Het voorvoegsel `jcr` van `jcr:title`, `jcr:description` en `jcr:language` worden vervangen door voorvoegsel `dc`. Daarom bevatten `dc:title` en `dc:description` in de geretourneerde JSON de waarden van respectievelijk `jcr:title` en `jcr:description`.
 
