@@ -1,14 +1,14 @@
 ---
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 1%
 
 ---
-
 
 # Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
@@ -296,7 +296,7 @@ Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment i
 Technisch gezien worden alle bewerkingen uitgevoerd op *live*-inhoud, net als bij alle andere AEM bewerkingen. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker op **Save** klikt, wordt niets specifiek gedaan, aangezien al het uitgeven op *live* inhoud werd uitgevoerd, daarom worden alle veranderingen reeds voortgeduurd. Als u op **Opslaan** klikt, wordt ook een achtergrondverwerking geactiveerd (zoals het maken van volledige zoekinformatie voor tekst en/of het verwerken van media-elementen).
 
 Er zijn enkele veiligheidsmaatregelen voor randgevallen. bijvoorbeeld als de gebruiker de editor probeert te verlaten zonder de bewerkingssessie op te slaan of te annuleren. Er is ook een periodieke automatische opslag beschikbaar om gegevensverlies te voorkomen.
-Twee gebruikers kunnen hetzelfde inhoudsfragment gelijktijdig bewerken en overschrijven daarom elkaars wijzigingen. Om dit te voorkomen, moet het inhoudsfragment worden vergrendeld door de handeling *Checkout* van de DAM-administratie op het fragment toe te passen.
+Twee gebruikers kunnen hetzelfde inhoudsfragment tegelijk bewerken en kunnen daarom elkaars wijzigingen overschrijven. Om dit te voorkomen, moet het inhoudsfragment worden vergrendeld door de handeling *Checkout* van de DAM-administratie op het fragment toe te passen.
 
 ## Voorbeelden {#examples}
 
@@ -333,7 +333,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Voorbeeld: Het interval voor automatisch opslaan opgeven {#example-specifying-the-auto-save-interval}
 
-Het [interval voor automatisch opslaan](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (gemeten in seconden) kan worden gedefinieerd met behulp van configuratiebeheer (ConfMgr):
+Het [interval voor automatisch opslaan](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemeten in seconden) kan worden gedefinieerd met behulp van configuratiebeheer (ConfMgr):
 
 * Knooppunt: `<conf-root>/settings/dam/cfm/jcr:content`
 * Naam eigenschap: `autoSaveInterval`
