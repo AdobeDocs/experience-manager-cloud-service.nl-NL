@@ -3,20 +3,30 @@ title: Contentfragmenten beheren
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 feature: Contentfragmenten
 role: Zakelijke praktiserer
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1748'
 ht-degree: 7%
 
 ---
-
 
 # Contentfragmenten beheren {#managing-content-fragments}
 
 Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 
-Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden beheerd vanuit de **Assets**-console.
+Nadat u de [Content Fragment Models](#creating-a-content-model) hebt gedefinieerd, kunt u deze gebruiken om uw Content Fragments](#creating-a-content-fragment) te maken.[
+
+De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt verschillende [modi](#modes-in-the-content-fragment-editor) om u in staat te stellen:
+
+* [De ](#editing-the-content-of-your-fragment) inhoud bewerken en Variaties  [beheren](#creating-and-managing-variations-within-your-fragment)
+* [Uw fragment notities aanbrengen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Inhoud koppelen aan uw fragment](#associating-content-with-your-fragment)
+* [De metagegevens configureren](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [De boomstructuur weergeven](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Voorvertoning van de JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden b
 >* bij het ontwerpen van pagina&#39;s; zie [Pagina-authoring met inhoudfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* voor [Koploze inhoudslevering met behulp van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
+
+>[!NOTE]
+>
+>Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden beheerd vanuit de **Assets**-console.
 
 ## Inhoudsfragmenten {#creating-content-fragments} maken
 
@@ -135,11 +149,15 @@ Uw fragment openen voor bewerken:
 
    ![fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan en sluiten** of **Annuleren** naar wens.
+1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan**, **Opslaan en sluiten** of **Sluiten** naar wens.
 
    >[!NOTE]
    >
-   >Zowel **Opslaan en sluiten** als **Annuleren** sluiten de editor af. Zie [Opslaan, Annuleren en Versies](#save-cancel-and-versions) voor volledige informatie over hoe beide opties werken voor inhoudsfragmenten.
+   >**Opslaan en** sluiten is beschikbaar via  **** Opslaan.
+
+   >[!NOTE]
+   >
+   >Zowel **Opslaan en sluiten** als **Sluiten** sluiten de editor af. Zie [Opslaan, Sluiten en Versies](#save-close-and-versions) voor volledige informatie over hoe de verschillende opties werken voor inhoudsfragmenten.
 
 ## Modi en handelingen in de Inhoudsfragmenteditor {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
    * **Gewijzigd**: oranje
    * **gedeactiveerd**: rood
 
+* **Met** Opslaan hebt u toegang tot de optie  **Opslaan en** sluiten.
+
 * De drie puntjes (**..**) biedt toegang tot extra handelingen:
+   * **Paginaverwijzingen bijwerken**
+      * Hiermee werkt u alle paginaverwijzingen bij.
    * **[Snel publiceren](#publishing-and-referencing-a-fragment)**
    * **[Publicatie beheren](#publishing-and-referencing-a-fragment)**
 
-## Opslaan, annuleren en versies {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Opslaan, sluiten en versies {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Versies kunnen ook [worden gemaakt, vergeleken en teruggezet vanaf de tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-De editor heeft twee opties:
+De editor heeft verschillende opties:
 
-* **Opslaan**
+* **Opslaan en**   **opslaan en sluiten**
 
-   Hiermee slaat u de laatste wijzigingen op en sluit u de editor af.
+   * **Met** Opslaan slaat u de laatste wijzigingen op en blijft u in de editor.
+   * **Met Opslaan en** sluiten slaat u de laatste wijzigingen op en sluit u de editor af.
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ De editor heeft twee opties:
 
    >[!NOTE]
    >
-   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens **sparen** te selecteren.
+   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw veranderingen, **sparen** werkt ook om het even welke verwijzingen bij en zorgt ervoor dat de Dispatcher zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
-   >
-   >Houd hier rekening mee wanneer u **Opslaan** gebruikt en vervolgens snel de fragmenteditor invoert om verdere wijzigingen aan te brengen en op te slaan.
+   >Houd hier rekening mee wanneer u **Opslaan &amp; sluiten** gebruikt en vervolgens snel de fragmenteditor opnieuw invoert om verdere wijzigingen aan te brengen en op te slaan.
 
-* **Annuleren**
+* **Sluiten**
 
-   Sluit de editor af zonder de laatste wijzigingen op te slaan.
+   Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen gemaakt sinds de laatste **Opslaan**).
 
-Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u uw wijzigingen **Annuleren**:
+Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u uw wijzigingen annuleert (met **Close** zonder opslaan):
 
 1. Wanneer een inhoudsfragment wordt geopend voor het bewerken AEM controleert u op het bestaan van het op cookies gebaseerde token dat aangeeft of een *bewerksessie* bestaat:
 
@@ -232,7 +257,7 @@ Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gema
    >Standaardwaarde, zie:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Als de gebruiker de bewerking **Annuleren** selecteert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+3. Als de gebruiker de bewerking annuleert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
 4. Als de gebruiker de bewerkingen **Opslaan** selecteert, blijven de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
 ## De inhoud van het fragment {#editing-the-content-of-your-fragment} bewerken
