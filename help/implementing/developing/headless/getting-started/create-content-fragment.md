@@ -1,14 +1,14 @@
 ---
 title: Inhoudsfragmenten zonder kop Handleiding voor snel starten maken
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
-
 
 # Handleiding voor snel starten van inhoudsfragmenten zonder kop {#creating-content-fragments} maken
 
@@ -43,7 +43,7 @@ Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud te ve
 1. Geef de details van het inhoudsfragment op in de Inhoudsfragmenteditor.
 
    ![Inhoudsfragmenteditor](../assets/content-fragment-edit.png)
-1. Tik of klik op **Opslaan en sluiten**.
+1. Tik of klik op **Opslaan** of **Opslaan en sluiten**.
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.
 
