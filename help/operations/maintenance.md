@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,8 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>/apps/settings/granite/operations/onderhoud/granite_day</td>
-    <td>Zie codevoorbeeld 1 tabel</td>
+    <td>Zie locatie 1 hieronder</td>
+    <td>Zie voorbeeld 1 hieronder</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (deze waarde mag niet worden gewijzigd)</li>
@@ -67,7 +67,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Wekelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>Zie locatie 2 hieronder</td>
     <td>Zie voorbeeld 2 hieronder</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Maandelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>Zie locatie 3 hieronder</td>
     <td>Zie codevoorbeeld 3 hieronder</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     </ul> </td> 
   </tr>
 </table>
+
+Locaties:
+
+1. /apps/settings/granite/operations/onderhoud/granite_day
+2. /apps/settings/granite/operations/onderhoud/granite_week
+3. /apps/settings/granite/operations/onderhoud/granite_month
+
+Codevoorbeelden:
 
 Codevoorbeeld 1
 
