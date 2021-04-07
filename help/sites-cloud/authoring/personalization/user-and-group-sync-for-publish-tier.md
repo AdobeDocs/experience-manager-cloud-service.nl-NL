@@ -1,20 +1,20 @@
 ---
 title: 'Registratie, aanmelding en gebruikersprofiel '
-description: Meer informatie over registratie, aanmelding en gebruikersprofiel op de publicatiereeks
+description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM als Cloud Service
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
-
 
 # Registratie, aanmelding en gebruikersprofiel {#registration-login-and-userprofile}
 
 ## Inleiding {#introduction}
 
-Webtoepassingen bieden veelal functies voor accountbeheer waarmee eindgebruikers zich op een website kunnen registreren, waardoor hun gebruikersprofielgegevens behouden blijven, zodat zij zich in de toekomst kunnen aanmelden en een consistente ervaring kunnen opdoen. In dit artikel wordt beschreven:
+Webtoepassingen bieden veelal functies voor accountbeheer waarmee eindgebruikers zich op een website kunnen registreren, waardoor hun gegevens over gebruikersgegevens behouden blijven. Hierdoor kunnen eindgebruikers zich in de toekomst aanmelden en genieten van een consistente ervaring. In dit artikel worden de volgende concepten voor AEM als Cloud Service beschreven:
 
 * Registratie
 * Aanmelden
