@@ -3,15 +3,15 @@ title: Video
 description: Leer hoe u met video werkt in Dynamic Media.
 feature: Videoprofielen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '9137'
+source-wordcount: '9135'
 ht-degree: 5%
 
 ---
-
 
 # Video{#video}
 
@@ -130,7 +130,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -405,7 +405,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
 | Gecodeerd | 640 x 360 | 3 | 3 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
@@ -759,7 +759,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >[!NOTE]
 Om inhoud van YouTube te publiceren, gebruikt de Experience Manager **[!UICONTROL Publish to YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
 Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
-Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+Voor gedetailleerdere voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 **Video&#39;s publiceren naar uw YouTube-kanaal**:
 
@@ -1091,7 +1091,7 @@ Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/doc
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*.
 
-   Zie [Elementen publiceren.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. Voer een van de volgende handelingen uit:
 
@@ -1295,7 +1295,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
-   See [Adding a video thumbnail.](#adding-a-video-thumbnail)
+   See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 -->
 
