@@ -3,15 +3,15 @@ title: Spin Sets
 description: Leer hoe u met centrifuges werkt in Dynamic Media.
 feature: Sets draaien
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1767'
 ht-degree: 11%
 
 ---
-
 
 # Spin Sets{#spin-sets}
 
@@ -39,11 +39,11 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
    >
    >De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen.
 
-1. [Upload uw afbeeldingen voor meerdere weergaven.](#uploading-assets-for-spin-sets)
+1. [Upload uw afbeeldingen voor meerdere weergaven](#uploading-assets-for-spin-sets).
 
    U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-1. [Spin-sets maken.](#creating-spin-sets)
+1. [Spin-sets](#creating-spin-sets) maken.
 
    Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Create > Spin Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
@@ -55,15 +55,15 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
 
-   Zie [Voorinstellingen voor viewers toevoegen en bewerken.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    U kunt sets die zijn gemaakt met voorinstellingen voor batchsets op drie verschillende manieren weergeven en openen. (Sets die zijn gemaakt met voorinstellingen voor batchsets, worden *niet* weergegeven in de gebruikersinterface.)
 
-1. [Voorvertoning van centrifuges.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Voorvertoning van centrifuges](/help/assets/dynamic-media/previewing-assets.md).
 
    Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
-1. [Spin-sets publiceren.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Spin-sets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
    Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Daarnaast moet u [de viewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md) publiceren.
 
@@ -138,7 +138,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
    Sleep indien nodig het pictogram Opnieuw ordenen van een element naar de rechterkant van de bestandsnaam van het element om de volgorde van de afbeeldingen in de lijst met sets te wijzigen.
 
-   ![De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie te slepen.](assets/6_5_spinset-reorderassets.png)
+   ![Frame 11 opnieuw rangschikken in de centrifugeset door deze naar een nieuwe locatie te slepen](assets/6_5_spinset-reorderassets.png)
 
    De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie te slepen.
 
