@@ -1,14 +1,14 @@
 ---
 title: 'Een Sandbox-programma bewerken '
-description: 'Een Sandbox-programma bewerken '
+description: Een Sandbox-programma bewerken
+exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # Een sandboxprogramma bewerken {#create-sandbox-program}
 
@@ -25,8 +25,8 @@ Voer de onderstaande stappen uit om een Sandbox-programma te bewerken:
 
 1. Navigeer naar de pagina **Program** bewerken van de pagina *Overview* van Cloud Manager.
 
-1. Op de pagina **Programma bewerken** worden twee tabbladen (Algemeen en Oplossingen) weergegeven voor zowel productie- als sandboxprogramma&#39;s.
-   ![](assets/edit-program.png)
+1. Op de pagina **Programma bewerken** worden drie opties weergegeven (**Sites**, **Handel** en **Middelen**) voor zowel productie- als sandboxprogramma&#39;s.
+   ![](assets/edit-prg.png)
 
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
