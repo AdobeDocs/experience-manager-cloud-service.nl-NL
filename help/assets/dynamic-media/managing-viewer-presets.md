@@ -3,15 +3,15 @@ title: Voorinstellingen voor viewers beheren
 description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4136'
 ht-degree: 12%
 
 ---
-
 
 # Viewer-voorinstellingen beheren{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.adob
 >[!NOTE]
 >
 >Publiceer alle viewers buiten de box voordat u ze voor het eerst gebruikt.
->Zie [Voorinstellingen van viewer publiceren.](#publishing-viewer-presets)
+>Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 
 ### Systeemcompatibiliteit met viewervoorinstellingen {#viewer-preset-system-compatibility}
 
