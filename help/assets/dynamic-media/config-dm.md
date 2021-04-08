@@ -2,15 +2,15 @@
 title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager configureert als Cloud Service.
 topic: Beheerder
-role: Beheerder, Business Practiter
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3755'
+source-wordcount: '3752'
 ht-degree: 3%
 
 ---
-
 
 # Informatie over het configureren van Dynamic Media-Cloud Service {#configuring-dynamic-media}
 
@@ -80,7 +80,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt of getypt door op het oogpictogram voor het wachtwoord te tikken om het wachtwoord weer te geven. Tik nogmaals op het pictogram om het wachtwoord te verbergen.
 
-1. Typ in het veld **[!UICONTROL Repeat Password]** het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done.]**
+1. Typ in het veld **[!UICONTROL Repeat Password]** het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done]**.
 
    Het nieuwe wachtwoord wordt opgeslagen wanneer u op **[!UICONTROL Save]** in de rechterbovenhoek van de pagina **[!UICONTROL Create Dynamic Media Configuration]** tikt.
 
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Pad naar hoofdmap van bedrijf | Het pad naar de hoofdmap van uw bedrijf. |
    | Middelen publiceren | U kunt uit de volgende drie opties kiezen:<br>**[!UICONTROL Immediately]**: Wanneer elementen worden geüpload, neemt het systeem de elementen op en wordt direct de URL/Embed weergegeven. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>**[!UICONTROL Upon Activation]**: U moet het element eerst expliciet publiceren voordat er een koppeling URL/Embed is opgegeven.<br>**[!UICONTROL Selective Publish]**: Elementen worden automatisch gepubliceerd voor een beveiligde voorvertoning. Zij kunnen ook uitdrukkelijk aan Experience Manager als Cloud Service worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst is deze optie bedoeld om elementen als Cloud Service naar Experience Manager te publiceren en elementen naar Dynamic Media te publiceren, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen in de Experience Manager publiceren als een Cloud Service voor een voorvertoning. dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein. |
    | Beveiligde voorvertoningsserver | Hier kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Met andere woorden, nadat uitvoeringen zijn gegenereerd, kan Experience Manager als Cloud Service veilig toegang krijgen tot de externe Dynamic Media-uitvoeringen en deze voorvertonen (er worden geen binaire bestanden teruggestuurd naar de Experience Manager als een instantie Cloud Service).<br>Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe dat u dit het plaatsen zoals gespecificeerd verlaat. |
-   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met Dynamic Media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee Dynamic Media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.<br>Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en tikt u vervolgens op de werkbalk op  **[!UICONTROL Properties]**. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Tik **[!UICONTROL Save]** als u klaar bent. *Onthoud: Deze drie opties zijn niet beschikbaar als u **Alle inhoud eerder**synchroniseren hebt geselecteerd.* Zie ook  [Werken met Selectief publiceren op mapniveau in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Inherited]**: Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.<br>**[!UICONTROL Enable for subfolders]**: Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**: Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media. |
+   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met Dynamic Media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee Dynamic Media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.<br>Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en tikt u vervolgens op de werkbalk op  **[!UICONTROL Properties]**. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Tik **[!UICONTROL Save]** als u klaar bent. *Onthoud: Deze drie opties zijn niet beschikbaar als u **Alle inhoud eerder**synchroniseren hebt geselecteerd.* Zie ook  [Werken met Selectief publiceren op mapniveau in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**: Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.<br>**[!UICONTROL Enable for subfolders]**: Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**: Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media. |
 
    >[!NOTE]
    >
@@ -169,18 +169,18 @@ Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt
 Het gewijzigde wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van de pagina **[!UICONTROL Edit Dynamic Media Configuration]** tikt.
 
 1. Tik in Experience Manager als Cloud Service op de Experience Manager als het logo van de Cloud Service om toegang te krijgen tot de algemene navigatieconsole.
-1. Tik links van de console op het pictogram Extra en tik op **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
-1. Tik op **[!UICONTROL global]** op de pagina Dynamic Media Configuration Browser in het linkerdeelvenster. Tik niet op het mappictogram of selecteer dit links van **[!UICONTROL global]**. Tik vervolgens op **[!UICONTROL Edit.]**
-1. Tik op de pagina **[!UICONTROL Edit Dynamic Media Configuration]**, direct onder het veld **[!UICONTROL Password]**, op **[!UICONTROL Change Password.]**
+1. Tik links van de console op het pictogram Extra en tik op **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. Tik op **[!UICONTROL global]** op de pagina Dynamic Media Configuration Browser in het linkerdeelvenster. Tik niet op het mappictogram of selecteer dit links van **[!UICONTROL global]**. Tik vervolgens op **[!UICONTROL Edit]**.
+1. Tik op de pagina **[!UICONTROL Edit Dynamic Media Configuration]**, direct onder het veld **[!UICONTROL Password]**, op **[!UICONTROL Change Password]**.
 1. Voer in het dialoogvenster **[!UICONTROL Change Password]** de volgende handelingen uit:
 
    * Voer in het veld **[!UICONTROL New Password]** een nieuw wachtwoord in.
 
       Het veld **[!UICONTROL Current Password]** is opzettelijk voorgevuld en verborgen voor interactie.
 
-   * Typ in het veld **[!UICONTROL Repeat Password]** het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done.]**
+   * Typ in het veld **[!UICONTROL Repeat Password]** het nieuwe wachtwoord opnieuw en tik vervolgens op **[!UICONTROL Done]**.
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Edit Dynamic Media Configuration]** op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK.]**
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Edit Dynamic Media Configuration]** op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK]**.
 
 ## (Optioneel) Geavanceerde instellingen configureren in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -229,7 +229,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op **[!UICONTROL Setup > Application Setup > General Settings.]** in de klassieke algemene navigatiebalk van Dynamic Media
+Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op **[!UICONTROL Setup > Application Setup > General Settings]** in de klassieke algemene navigatiebalk van Dynamic Media.
 
 **[!UICONTROL Servers]** - Dynamic Media levert automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij expliciet de instructie wordt gegeven dit te doen door Experience Manager als ondersteuning voor Cloud Servicen.
 **[!UICONTROL Overwrite Images]** - Dynamic Media staat niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die zijn geüpload naar een andere map dan het origineel of op elementen met een andere bestandsextensie dan het origineel.
@@ -255,7 +255,7 @@ U kunt de volgende eigenschappen voor kleurcorrectie instellen:
    | CMYK-standaardkleurruimte | Naam van het standaard CMYK-kleurprofiel. |
    | Standaardkleurruimte grijswaarden | Naam van het standaardkleurprofiel Grijs. |
    | Standaardkleurruimte RGB | Naam van het standaard RGB-kleurprofiel. |
-   | Render-intentie kleurconversie | Geeft de render-intentie aan. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe raadt **[!UICONTROL relative]** als standaardwaarde aan. |
+   | Render-intentie kleurconversie | Geeft de render-intentie aan. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe raadt **[!UICONTROL relative]** als standaardwaarde aan. |
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -298,7 +298,7 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 
 1. Voer een van de volgende handelingen uit:
    * Herhaal stap 3-4 om meer MIME-typen te bewerken.
-   * Klik in de menubalk van de pagina CRXDE Lite op **[!UICONTROL Save All.]**
+   * Klik op **[!UICONTROL Save All]** op de menubalk van de pagina CRXDE Lite.
 
 1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL CRXDE Lite]** om terug te keren naar de Experience Manager als een Cloud Service.
 
@@ -308,7 +308,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 **MIME-typen toevoegen voor niet-ondersteunde indelingen**
 
-1. Tik **[!UICONTROL Tools > Operations > Web Console.]** vanuit Experience Manager als Cloud Service
+1. Tik **[!UICONTROL Tools > Operations > Web Console]** vanuit Experience Manager als Cloud Service.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -450,7 +450,7 @@ De Scene7-uploadverbinding bijwerken:
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
@@ -554,4 +554,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
