@@ -1,14 +1,14 @@
 ---
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 4%
 
 ---
-
 
 # Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ Het is een al lang bestaande beste praktijk geweest dat de /libs inhoudsboom in 
 Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Dit leidt tot een dubbelzinnigheid over welke configuratie zal opereerbaar zijn. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties zal identificeren waar de zelfde component veelvoudige tijden op de zelfde runmode (of combinatie runmodes) wordt gevormd.
 
 >[!NOTE]
->Deze regel zal kwesties veroorzaken waar de zelfde configuratie, bij de zelfde weg, in veelvoudige pakketten wordt bepaald, met inbegrip van gevallen waar het zelfde pakket in de algemene lijst van gebouwde pakketten wordt gedupliceerd. Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` produceert waarin `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` insluit, worden alle configuraties binnen `com.myco:com.myco.ui.apps` gerapporteerd als duplicaten. Dit is over het algemeen een geval van het niet volgen van [de Richtlijnen van de Structuur van het Pakket van de Inhoud](/help/implementing/developing/aem-project-content-package-structure.md); in dit specifieke voorbeeld ontbreekt in het pakket `com.myco:com.myco.ui.apps` de eigenschap `<cloudManagerTarget>none</cloudManagerTarget>`.
+>Deze regel zal kwesties veroorzaken waar de zelfde configuratie, bij de zelfde weg, in veelvoudige pakketten wordt bepaald, met inbegrip van gevallen waar het zelfde pakket in de algemene lijst van gebouwde pakketten wordt gedupliceerd. Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` produceert waarin `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` insluit, worden alle configuraties binnen `com.myco:com.myco.ui.apps` gerapporteerd als duplicaten. Dit is over het algemeen een geval van het niet volgen van [de Richtlijnen van de Structuur van het Pakket van de Inhoud](/help/implementing/developing/introduction/aem-project-content-package-structure.md); in dit specifieke voorbeeld ontbreekt in het pakket `com.myco:com.myco.ui.apps` de eigenschap `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Niet-compatibele code {#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEM Cloud Service verbiedt definities van de aangepaste zoekindex (knooppunten v
 **Sinds**: Versie 2021.2.0
 
 AEM Cloud Service verbiedt aangepaste zoekindexdefinities (knooppunten van het type `oak:QueryIndexDefinition`) die een eigenschap met de naam reindex bevatten. Indexering met behulp van deze eigenschap moet worden bijgewerkt voordat wordt overgeschakeld naar AEM Cloud Service. Zie [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) voor meer informatie.
-
-
-
-
-
-
