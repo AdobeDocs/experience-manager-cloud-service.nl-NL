@@ -1,64 +1,53 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.4.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.4.0
 feature: Geen informatie
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
 
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.4.0 {#release-notes}
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.3.0 {#release-notes}
-
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.3.0.
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.4.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart 2021.
-De volgende release is gepland voor 8 april 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 2021.
+De volgende release is gepland voor 6 mei 2021.
 
-## Cloud Manager {#cloud-manager}
+### Wat is er nieuw?{#what-is-new-april}
 
-### Wat is er nieuw?{#what-is-new}
+* UI werkt aan de Add en Edit de werkschema&#39;s van het Programma om het intuïtiever te maken.
 
-* Klanten met omgevingen met reeds bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zullen een bericht zien over hun eerdere bestaande configuraties en zullen zichzelf kunnen bedienen via de gebruikersinterface.
+* Een gebruiker met vereiste toestemmingen kan het commerciële eindpunt via UI nu voorleggen.
 
-* Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
-   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
-   * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
-   * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
+* De variabelen van het milieu kunnen nu aan de specifieke dienst, of auteur of publiceren worden onderworpen. Vereist AEM versie `2021.03.5104.20210328T185548Z` of hoger.
 
-* **AEM Push** Updatelabel zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
+* De **Manage knoop van Git** wordt getoond op de kaart van Pijpleidingen zelfs wanneer geen pijpleidingen zijn gevormd.
 
-* Als een milieu gehiberneerd maar er ook een AEM beschikbare update is, zal **Gesambernated** status belangrijkheid over **beschikbare Update** nemen.
+* De versie van het AEM projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 27.
 
-* Gebruikers kunnen nu hun rol(en) in de cloud Manager zien door de optie &#39;Rol(en) in de cloud-manager weergeven&#39; te selecteren nadat ze naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell zijn genavigeerd.
+* Projecten in de Adobe I/O Developer Console die door Cloud Manager zijn gemaakt, kunnen niet langer per ongeluk worden bewerkt of verwijderd.
 
-* Het label **Goedkeuringsaanvraag** is voor meer duidelijkheid opnieuw gelabeld aan **Productiegoedkeuring**.
+* Wanneer een gebruiker een nieuwe omgeving toevoegt, wordt hem meegedeeld dat een nieuwe omgeving niet naar een andere regio kan worden verplaatst.
 
-* Het **Version**-label is opnieuw gelabeld aan **Git Tag** in het uitvoeringsscherm van de productiepijplijn.
+* De variabelen van het milieu kunnen nu aan de specifieke dienst, of auteur of publiceren worden onderworpen. Vereist AEM versie 2021.03.5104.20210328T185548Z of hoger.
 
-* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **Onmiddellijk annuleren** en **Direct goedkeuren**.
+* Het foutbericht bij het starten van een pijpleiding wanneer een omgeving werd verwijderd, is verduidelijkt.
 
-* De lijsten van de klasse en van de methodevervanging zijn bijgewerkt gebaseerd op versie `2021.3.4997.20210303T022849Z-210225` van de AEM Cloud Service SDK.
+* OSGi-bundels die door Eclipse-projecten worden geleverd, zijn nu uitgesloten van regel `CQBP-84--dependencies`.
 
-* De productiepijplijn van de Manager van de wolk zal [Aangepaste UI het Testen](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capaciteit nu omvatten.
+### Opgeloste problemen {#bug-fixes-cm-april}
 
-### Opgeloste problemen {#bug-fixes}
+* Wanneer het uitgeven van de de controlepagina van de Ervaring van een pijpleiding, zal een inputweg die met een schuine streep `( / )` begint niet meer resulteren in het plakken van de stap in wachtende status.
 
-* Pakketversie is in sommige gevallen overgeslagen tijdens AEM upgrade.
+* Wanneer een nieuwe productiepijplijn wordt gecreeerd, als geen de opheffing van de inhoudscontrole door de gebruiker wordt toegevoegd, werd de standaardhomepage niet gecontroleerd.
 
-* Bepaalde kwaliteitsproblemen zijn niet goed ontdekt wanneer pakketten in andere pakketten waren ingesloten.
+* De kwesties voor `CloudServiceIncompatibleWorkflowProcess` hadden de onjuiste strengheid in het downloadbare dossier van de uitgave CSV.
 
-* In duistere situaties, zou de standaardprogrammanaam die bij het openen van de Add dialoog van het Programma wordt geproduceerd een duplicaat van een bestaande programmanaam kunnen zijn.
-
-* Wanneer de gebruiker bij gelegenheid vanaf de pagina voor de uitvoering van de pijpleiding navigeert onmiddellijk nadat een pijpleiding is gestart, wordt een foutbericht weergegeven met de mededeling dat de handeling is mislukt, hoewel de uitvoering daadwerkelijk wordt gestart.
-
-* De bouwstijlstap werd onnodig opnieuw begonnen toen de klant bouwt in ongeldige pakketten resulteerde.
-
-* Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
-
-* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
+* De `Runmode` controle produceerde valse positieven op niet omslagknopen.
