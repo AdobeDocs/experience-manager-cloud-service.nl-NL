@@ -3,15 +3,15 @@ title: Dynamic Media-afbeeldingsprofielen
 description: '"Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen."'
 feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2622'
 ht-degree: 7%
 
 ---
-
 
 # Dynamic Media-afbeeldingsprofielen {#image-profiles}
 
@@ -96,7 +96,7 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
  </tbody>
 </table>
 
-Verscherpen wordt beschreven in [Afbeeldingen verscherpen.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
       * Als de afbeelding alleen een slim uitsnijden of een slim staal bevat, sleept u de hoekgreep van het uitsnijdvak. Pas de grootte van het zichtbare gebied van de uitsnijding aan.
       * Als de afbeelding zowel een slim uitsnijden als een slim staal bevat, sleept u de hoekgreep van het uitsnijdvak naar de afbeelding. Pas de grootte van het zichtbare gebied van de uitsnijding aan. Of tik op het slimme staal onder de afbeelding (kleurstalen zijn statisch) en sleep vervolgens de hoekgreep van het uitsnijdvak. Pas de grootte van het zichtbare gebied van het staal aan.
 
-      ![Het formaat van het slimme uitsnijden van een afbeelding wijzigen.](assets/edit_smart_crops-resize.png)
+      ![Het formaat van het slimme uitsnijden van een afbeelding](assets/edit_smart_crops-resize.png) wijzigen.
 
    * Het vak voor slimme uitsnijding verplaatsen. Voer een van de volgende handelingen uit:
 
@@ -269,7 +269,7 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 ## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
-Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu verwijderen of als u in de omslag, uit **[!UICONTROL Properties]** bent.
 
