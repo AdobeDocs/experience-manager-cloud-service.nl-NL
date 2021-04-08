@@ -3,9 +3,9 @@ title: 'Een productieprogramma bewerken '
 description: Een productieprogramma bewerken
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ Gebruikers met de vereiste machtigingen kunnen nu een productieprogramma bewerke
 
 Voer de volgende stappen uit om een productieprogramma te bewerken:
 
-1. Navigeer naar de pagina **Program** bewerken van de pagina *Overzicht* van Cloud Manager
+1. Klik op **Programma bewerken**-optie van de pagina *Overzicht* van Cloud Manager
 
-1. De **Edit Program** pagina zal drie opties (**Sites** en **Middelen**) voor zowel Productie als Sandbox programma&#39;s tonen. Bovendien, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
+   ![](assets/edit-program-overview.png)
+
+1. De **Edit Program** pagina toont twee lusjes **Algemeen** en **Oplossingen &amp; toe:voegen-ons**.
+
+   Navigeer naar het tabblad **Algemeen** om de programmabeschrijving te bewerken.
+
+   ![](assets/edit-program-general.png)
+
+   Op het tabblad **Oplossingen en invoegtoepassingen** worden twee opties weergegeven, zoals **Sites** en **Middelen** voor zowel productie- als Sandbox-programma&#39;s. Bovendien, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
 
    ![](assets/edit-prg.png)
 
