@@ -3,15 +3,15 @@ title: Carousel-banners
 description: Leer hoe u met Carousel Banners in Dynamic Media werkt.
 feature: Carousel-banners
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4482'
+source-wordcount: '4480'
 ht-degree: 3%
 
 ---
-
 
 # Carousel-banners{#carousel-banners}
 
@@ -74,11 +74,11 @@ Zo kunt u snel aan de slag:
 
    Tik op **[!UICONTROL Create]** en selecteer vervolgens **[!UICONTROL Carousel Sets]** om een carrouselset te maken in Assets. Voeg assets toe aan dia&#39;s en tik op **[!UICONTROL Save]**. U kunt de weergave en het gedrag van de carrousel ook rechtstreeks in de editor bewerken.
 
-1. [Voeg hotspots of afbeeldingen met hyperlinks toe aan een afbeeldingsbanner.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Voeg hotspots of afbeeldingen met hyperlinks toe aan een afbeeldingsbanner](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Voeg een of meer hotspots of afbeeldingen met hyperlinks toe aan een afbeeldingsbanner. Koppel vervolgens elk element aan een handeling zoals een koppeling, een Snelle weergave of een ervaringsfragment. Nadat u hotspots of afbeeldingen met hyperlinks hebt toegevoegd, kunt u deze taak voltooien door de carrouselset te publiceren. Met Publiceren maakt u de insluitcode die u kunt gebruiken om de bestemmingspagina van uw website te kopiëren en toe te passen.
 
-   Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-previewing-carousel-banners) - Optioneel. U kunt desgewenst een voorstelling van de carrouselset weergeven en de interactiviteit ervan testen.
+   Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners) - Optioneel. U kunt desgewenst een voorstelling van de carrouselset weergeven en de interactiviteit ervan testen.
 
 1. [Carrouselbanners](#publishing-carousel-banners) publiceren.
 
@@ -92,7 +92,7 @@ Zo kunt u snel aan de slag:
    * [Voeg in Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) een carrouselbanner toe aan uw website. Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de carrousel toevoegen die direct aan de pagina gebruikend de Interactieve component van Media wordt geplaatst.
 
 
-Zie [Carrouselsets bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [ van de ](/help/assets/manage-digital-assets.md#editing-properties)Carousel-set weergeven en bewerken.
+Zie [Carrouselsets bewerken](#editing-carousel-sets) als u carrouselsets moet bewerken. Daarnaast kunt u [Carousel-seteigenschappen](/help/assets/manage-digital-assets.md#editing-properties) weergeven en bewerken.
 
 ## Hotspot en de Variabelen van de Kaart van het Beeld {#identifying-hotspot-and-image-map-variables} identificeren
 
@@ -252,7 +252,7 @@ Terwijl u hotspots of afbeeldingen met hyperlinks toevoegt aan een afbeelding, v
 
 Wanneer u klaar bent met het maken van uw carrouselbanner, kunt u Voorvertoning optioneel gebruiken om een voorstelling te zien van hoe uw carrouselbanner aan klanten wordt weergegeven.
 
-Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-previewing-carousel-banners)
+Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ Met Voorvertoning kunt u zien hoe de carrouselbanner er voor klanten uitziet. Me
 Wanneer u tevreden bent met de carrouselbanner, kunt u deze publiceren.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
-Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode) of de lijst **[!UICONTROL Viewers]**.
 
@@ -407,7 +407,7 @@ Zie [Dynamic Media Assets publiceren](/help/assets/dynamic-media/publishing-dyna
 Nadat u bannerafbeeldingen hebt geüpload om een carrousel, toegevoegde hotspots of afbeeldingen met hyperlinks of beide te maken, naar de banner. De carrouselset is gepubliceerd. U kunt deze nu toevoegen aan uw bestaande websitepagina.
 
 >[!NOTE]
-Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Als u echter een zelfstandige Experience Manager Assets-klant bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website.
 
