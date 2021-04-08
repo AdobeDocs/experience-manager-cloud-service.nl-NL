@@ -3,9 +3,9 @@ title: 'Een productieprogramma maken '
 description: Een productieprogramma maken
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ Voer de volgende stappen uit om een productieprogramma te maken:
 
    ![](assets/create-prod1.png)
 
-1. De gebruiker zal oplossingen selecteren die in het programma in het scherm moeten worden opgenomen dat na het bovenstaande scherm zal worden voorgesteld.
+1. De gebruiker zal oplossingen selecteren die in het programma in het scherm moeten worden opgenomen dat na het bovenstaande scherm zal worden voorgesteld. Als u de gewenste oplossing of oplossingen hebt geselecteerd, klikt u op **Maken**.
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. Als u de oplossingen hebt geselecteerd, klikt u op **Maken**.
+   Bovendien kunt u de **Commerce** toe:voegen-op optie onder **Plaatsen**, zoals aangetoond in het hieronder cijfer selecteren, en op &lt;a4 klikken/>Create **.**
 
+   ![](assets/setup-prod-commerce.png)
 
 1. Zodra u uw programmacode op de bestemmingspagina ziet, houd de aanwijzer boven het pictogram Cloud Manager om naar de pagina Cloud Manager **Overzicht** te navigeren.
 
