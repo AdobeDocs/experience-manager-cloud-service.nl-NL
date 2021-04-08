@@ -3,15 +3,15 @@ title: Image Sets
 description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Afbeeldingssets
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1984'
 ht-degree: 9%
 
 ---
-
 
 # Image Sets {#image-sets}
 
@@ -19,7 +19,7 @@ Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruiker
 
 Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. Als de Afbeeldingsset is gepubliceerd, staat bovendien de publicatiedatum die wordt aangegeven door het pictogram **[!UICONTROL World]** op de banner. De laatste wijzigingsdatum die wordt aangegeven door het pictogram **[!UICONTROL Pencil]**, wordt ook weergegeven.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 In de afbeeldingsset kunt u ook stalen maken door een afbeeldingsset te maken en miniaturen toe te voegen.
 
@@ -43,11 +43,11 @@ Zo kunt u snel aan de slag:
    >
    >De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen.
 
-1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven.](#uploading-assets-in-image-sets)
+1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven](#uploading-assets-in-image-sets).
 
    Upload de afbeeldingen voor uw afbeeldingssets. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. Experience Manager-elementen ondersteunen een groot aantal bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies in de indeling TIFF, PNG en EPS te gebruiken.
 
-1. [Afbeeldingssets maken.](#creating-image-sets)
+1. [Afbeeldingssets](#creating-image-sets) maken.
 
    In de Reeksen van het Beeld, klikken de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
@@ -55,7 +55,7 @@ Zo kunt u snel aan de slag:
 
    Zie [Afbeeldingsset-elementen voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
 
-   Zie [Werken met kiezers.](/help/assets/dynamic-media/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Voeg [Voorinstellingen voor de afbeeldingsset Viewer toe](/help/assets/dynamic-media/managing-viewer-presets.md), indien nodig.
 
@@ -64,11 +64,11 @@ Zo kunt u snel aan de slag:
    Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
 
 1. (Optioneel) [Afbeeldingssets weergeven](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) die zijn gemaakt met behulp van voorinstellingen voor batchsets.
-1. [Voorvertoning van afbeeldingssets.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Voorvertoning van afbeeldingssets](/help/assets/dynamic-media/previewing-assets.md).
 
    Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Tik op de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van de linkerspoordrop-down lijst.
 
-1. [Afbeeldingssets publiceren.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Afbeeldingssets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
    Als u een Afbeeldingsset publiceert, wordt de URL- en insluitreeks geactiveerd. Daarnaast moet u [een aangepaste viewer-voorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md) publiceren die u hebt gemaakt. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
 
@@ -80,7 +80,7 @@ Zo kunt u snel aan de slag:
 
    Zie [Een afbeeldingset koppelen aan een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/dynamic-media/embed-code.md).
 
-Zie [Afbeeldingssets bewerken als u Afbeeldingssets wilt bewerken.](#editing-image-sets) Bovendien kunt u de eigenschappen [ van de ](/help/assets/manage-digital-assets.md#editing-properties)Afbeeldingsset weergeven en bewerken.
+Zie [Afbeeldingssets bewerken](#editing-image-sets) als u Afbeeldingssets wilt bewerken. Bovendien kunt u [Eigenschappen van de Reeks van het Beeld bekijken en uitgeven](/help/assets/manage-digital-assets.md#editing-properties).
 
 Als u problemen hebt met het maken van sets, raadpleegt u Afbeeldingen en sets in [Problemen met Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets) oplossen.
 
@@ -147,7 +147,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
-   Zie [Werken met kiezers.](/help/assets/dynamic-media/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
