@@ -3,15 +3,15 @@ title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
 feature: Middelenbeheer, videoprofielen, uitvoeringen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3491'
+source-wordcount: '3489'
 ht-degree: 9%
 
 ---
-
 
 # Dynamic Media-videoprofielen{#video-profiles}
 
@@ -37,7 +37,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 >
 >Metagegevens zijn handig wanneer u naar elementen zoekt. De miniaturen zijn statische videobeelden die tijdens het coderen worden gegenereerd. Ze zijn vereist door het systeem Experience Manager en worden gebruikt in de gebruikersinterface om u te helpen video&#39;s visueel te identificeren in de weergave Kaarten, de weergave Zoekresultaten en de weergave Lijst met middelen. De gegenereerde miniaturen worden weergegeven wanneer u op het pictogram Uitvoeringen (een palet van de spuitbus) van een gecodeerde video tikt.
 
-Wanneer u klaar bent met het maken van het videoprofiel, past u het toe op een of meerdere mappen. Zie [Een videoprofiel toepassen op mappen.](#applying-a-video-profile-to-folders)
+Wanneer u klaar bent met het maken van het videoprofiel, past u het toe op een of meerdere mappen. Zie [Een videoprofiel toepassen op mappen](#applying-a-video-profile-to-folders).
 
 Zie [Elementverwerking configureren](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing) om geavanceerde verwerkingsparameters voor andere elementtypen te definiëren.
 
@@ -429,4 +429,3 @@ U kunt een videoprofiel verwijderen uit een map in het menu **[!UICONTROL Tools]
 1. Tik of klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een videoprofiel wilt verwijderen.
 1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Video Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
-
