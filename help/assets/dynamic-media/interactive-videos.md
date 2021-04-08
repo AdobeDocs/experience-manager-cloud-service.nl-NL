@@ -3,15 +3,15 @@ title: Interactieve video's
 description: Leer hoe u in Dynamic Media werkt met interactieve video's en schokkende video's.
 feature: Interactieve video's
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '6019'
 ht-degree: 3%
 
 ---
-
 
 # Interactieve video&#39;s{#interactive-videos}
 
@@ -87,7 +87,7 @@ Zie [Een video en de bijbehorende miniatuurelementen uploaden](#uploading-a-vide
 Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk kopieert en toepast op de bestemmingspagina van uw website. Zie [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Een interactieve video toevoegen aan uw website of uw website in Experience Manager**  - Als u de Plaatsen van de Experience Manager, of Experience Manager eCommerce, of allebei gebruikt, kunt u de interactieve video aan een Web-pagina in Experience Manager direct toevoegen. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Een interactieve video toevoegen aan uw website of uw website in Experience Manager**  - Als u de Plaatsen van de Experience Manager, of Experience Manager eCommerce, of allebei gebruikt, kunt u de interactieve video aan een Web-pagina in Experience Manager direct toevoegen. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
 Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande Snelle weergave](#integrating-an-interactive-video-with-an-existing-quickview).
    [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -469,7 +469,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
 
@@ -493,7 +493,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    >[!NOTE]
    Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
-   Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website.](#integrating-an-interactive-video-with-your-website)
+   Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
 
 ## Interactieve video-elementen publiceren {#publishing-interactive-video-assets}
 
@@ -503,7 +503,7 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 Nadat u een video hebt geüpload, tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
-Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de interactieve video toevoegen door de Interactieve component van Media aan uw pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de interactieve video toevoegen door de Interactieve component van Media aan uw pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Als u een zelfstandige klant van de Middelen van de Experience Manager bent, kunt u de interactieve video aan uw website manueel toevoegen zoals die in deze sectie wordt beschreven.
 
