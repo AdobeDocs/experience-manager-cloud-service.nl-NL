@@ -3,7 +3,7 @@ title: 'Een productieprogramma maken '
 description: Een productieprogramma maken
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -23,18 +23,17 @@ Voer de volgende stappen uit om een productieprogramma te maken:
    >[!NOTE]
    >Raadpleeg [Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
 
-1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een Programma van de Productie tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **Doorgaan** te selecteren.
+1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een Programma van de Productie tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **Create** te selecteren.
 
    ![](assets/create-prod1.png)
 
 1. De gebruiker zal oplossingen selecteren die in het programma in het scherm moeten worden opgenomen dat na het bovenstaande scherm zal worden voorgesteld.
 
 
-   ![](assets/set-up-prod2.png)
+   ![](assets/set-up-prod-2.png)
 
 1. Als u de oplossingen hebt geselecteerd, klikt u op **Maken**.
 
-   ![](assets/set-up-prod3.png)
 
 1. Zodra u uw programmacode op de bestemmingspagina ziet, houd de aanwijzer boven het pictogram Cloud Manager om naar de pagina Cloud Manager **Overzicht** te navigeren.
 
@@ -45,5 +44,4 @@ Voer de volgende stappen uit om een productieprogramma te maken:
 
 
    >[!NOTE]
-   >
    >Een productieprogramma heeft geen **Auto-setup** eigenschap.
