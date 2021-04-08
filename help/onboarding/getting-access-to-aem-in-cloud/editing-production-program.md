@@ -3,9 +3,9 @@ title: 'Een productieprogramma bewerken '
 description: Een productieprogramma bewerken
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,20 @@ Voer de volgende stappen uit om een productieprogramma te bewerken:
 
 1. Navigeer naar de pagina **Program** bewerken van de pagina *Overzicht* van Cloud Manager
 
-1. De **Edit Program** pagina zal drie opties (**Sites**, **Commerce**, en **Assets**) voor zowel Productie als Sandbox programma&#39;s tonen.
+1. De **Edit Program** pagina zal drie opties (**Sites** en **Middelen**) voor zowel Productie als Sandbox programma&#39;s tonen. Bovendien, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >Er moet ten minste één oplossing voor een programma worden geselecteerd. Gebruikers mogen dus niet alle oplossingen deselecteren tijdens de workflow van het programma Bewerken.
+
+1. Klik op **Opslaan** om het bewerkingsprogrammaproces te voltooien.
 
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
 
 Enkele overwegingen moeten worden herzien tijdens het bewerken van een programma:
 
-* Er moet ten minste één oplossing zijn geselecteerd voor een programma dat de selectie van alle oplossingen tijdens de workflow van het programma Bewerken mogelijk maakt.
+* Er moet ten minste één oplossing zijn geselecteerd voor een programma dat inhoudt dat gebruikers tijdens de workflow van het programma Bewerken niet alle oplossingen mogen deselecteren.
 
 * Als u op de knop **Opslaan** klikt en de geselecteerde oplossingen zijn gewijzigd, worden de updates van de oplossing voor omgevingen van kracht na de volgende implementatie.
