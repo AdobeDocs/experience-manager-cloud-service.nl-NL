@@ -3,9 +3,9 @@ title: 'Een productieprogramma bewerken '
 description: Een productieprogramma bewerken
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ Voer de volgende stappen uit om een productieprogramma te bewerken:
 
 Enkele overwegingen moeten worden herzien tijdens het bewerken van een programma:
 
-* Er moet ten minste één oplossing zijn geselecteerd voor een programma dat inhoudt dat gebruikers tijdens de workflow van het programma Bewerken niet alle oplossingen mogen deselecteren.
+* Er moet ten minste één oplossing zijn geselecteerd voor een programma dat inhoudt dat de gebruiker tijdens de workflow van het programma Bewerken niet alle oplossingen mag deselecteren.
 
 * Als u op de knop **Opslaan** klikt en de geselecteerde oplossingen zijn gewijzigd, worden de updates van de oplossing voor omgevingen van kracht na de volgende implementatie.
