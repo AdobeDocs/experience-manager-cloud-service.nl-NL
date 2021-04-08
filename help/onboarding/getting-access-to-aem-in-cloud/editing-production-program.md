@@ -1,14 +1,14 @@
 ---
 title: 'Een productieprogramma bewerken '
-description: 'Een productieprogramma bewerken '
+description: Een productieprogramma bewerken
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Een productieprogramma {#create-production-program} bewerken
 
@@ -25,12 +25,10 @@ Voer de volgende stappen uit om een productieprogramma te bewerken:
 
 1. Navigeer naar de pagina **Program** bewerken van de pagina *Overzicht* van Cloud Manager
 
-1. De **Edit Program** pagina zal twee lusjes (Algemeen en Oplossingen) voor zowel Productie als Sandbox programma&#39;s tonen.
+1. De **Edit Program** pagina zal drie opties (**Sites**, **Commerce**, en **Assets**) voor zowel Productie als Sandbox programma&#39;s tonen.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >Terwijl zowel de Plaatsen als de Activa zullen worden getoond, kan één van hen worden onbruikbaar gemaakt gebaseerd op wat is gekocht en ongebruikt. Als de organisatie geen ongebruikte machtigingen voor een bepaalde oplossing heeft, wordt deze oplossing wel weergegeven, maar uitgeschakeld.
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
 
