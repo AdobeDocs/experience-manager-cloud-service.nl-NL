@@ -3,15 +3,15 @@ title: Voorinstellingen afbeelding beheren
 description: '"Meer informatie over voorinstellingen voor afbeeldingen en over het maken, wijzigen en beheren van voorinstellingen voor afbeeldingen."'
 feature: Voorinstellingen afbeelding, viewers, uitvoeringen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3517'
+source-wordcount: '3515'
 ht-degree: 8%
 
 ---
-
 
 # Voorinstellingen voor afbeeldingen beheren{#managing-image-presets}
 
@@ -49,7 +49,7 @@ U beheert de voorinstellingen voor afbeeldingen in Experience Manager door te ti
 >
 >U hoeft de voorinstellingen voor afbeeldingen niet *te publiceren omdat voorinstellingen voor afbeeldingen automatisch worden gepubliceerd.*
 >
->Zie [Voorinstellingen voor afbeeldingen publiceren.](#publishing-image-presets)
+>Zie [Voorinstellingen voor afbeeldingen publiceren](#publishing-image-presets).
 
 >[!NOTE]
 >
