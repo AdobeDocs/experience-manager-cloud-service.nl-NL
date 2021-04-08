@@ -7,15 +7,15 @@ topic-tags: introduction
 content-type: reference
 feature: 3D-middelen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2200'
 ht-degree: 2%
 
 ---
-
 
 # Werken met 3D-elementen in Dynamic Media {#working-with-three-d-assets-dm}
 
@@ -29,7 +29,7 @@ Er is geen aanvullende installatie vereist voor het gebruik van 3D-middelen in D
 
 ![Schoen in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
+<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
 ## 3D-indelingen ondersteund in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
@@ -50,7 +50,7 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
 Voordat u in Dynamic Media met 3D-elementen gaat werken, moet u controleren of de beheerder van de Experience Manager Dynamic Media-Cloud Services al heeft ingeschakeld en geconfigureerd.
 
-Zie [Dynamic Media-Cloud Services configureren.](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
+Zie [Dynamic Media-Cloud Services configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
 1. **3D-elementen uploaden**
 
@@ -97,17 +97,17 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 >
 >U kunt de voorinstelling voor de maatviewer openen in de Viewer Preset Editor om te navigeren door een 3D-element zonder dat u eerst 3D-bestanden hoeft te uploaden. De voorinstelling van de DIMM-viewer heeft een ingebouwd 3D-element waarmee u kunt communiceren.
 >
->Zie [Voorinstellingen voor viewers beheren.](/help/assets/dynamic-media/managing-viewer-presets.md)
+>Zie [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ## Een 3D-element weergeven en interactief gebruiken op de pagina {#viewing-three-d-assets-from-asset-details-page} met elementdetails
 
-Zie ook [Elementen voorvertonen met behulp van de softwareinterface.](/help/assets/dynamic-media/previewing-assets.md)
+Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/assets/dynamic-media/previewing-assets.md).
 
 **Een 3D-element weergeven en interactief werken via de pagina met elementdetails**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
 
-   Zie [Uw 3D-elementen uploaden voor gebruik in Dynamic Media.](/help/assets/add-assets.md#upload-assets)
+   Zie [Uw 3D-elementen uploaden voor gebruik in Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
 1. Tik **[!UICONTROL Assets > Files]** vanaf Experience Manager op de pagina **[!UICONTROL Navigation]**.
 1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL Card View]**.
@@ -138,9 +138,9 @@ Wanneer een webpagina in de modus **[!UICONTROL Edit]** staat, is interactie met
 
 >[!IMPORTANT]
 >
->U kunt deze taak pas uitvoeren nadat u een 3D-mediacomponent aan een webpagina hebt toegevoegd en een 3D-element aan de component hebt toegewezen. Zie [De 3D-mediacomponent toevoegen aan een webpagina](#adding-the-three-d-media-component-to-a-web-page) en [Een 3D-element toewijzen aan een 3D-mediacomponent.](#assigning-a-three-d-asset-to-the-component)
+>U kunt deze taak pas uitvoeren nadat u een 3D-mediacomponent aan een webpagina hebt toegevoegd en een 3D-element aan de component hebt toegewezen. Zie [De 3D-mediacomponent toevoegen aan een webpagina](#adding-the-three-d-media-component-to-a-web-page) en [Een 3D-element toewijzen aan een 3D-mediacomponent](#assigning-a-three-d-asset-to-the-component).
 
-Zie ook [Elementen voorvertonen met behulp van de softwareinterface.](/help/assets/dynamic-media/previewing-assets.md)
+Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/assets/dynamic-media/previewing-assets.md).
 
 **Een 3D-element in een 3D-mediacomponent weergeven en ermee werken**
 
@@ -199,7 +199,7 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u kunt gebruiken in
 
 Als u Experience Manager gebruikt als het webcontentbeheersysteem, kunt u 3D-elementen aan uw webpagina&#39;s toevoegen met behulp van de 3D Media-component.
 
-Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 1. Open Experience Manager Sites en selecteer de webpagina waaraan u de Dynamic Media 3D Media-component wilt toevoegen.
 1. Tik op het pictogram **[!UICONTROL Edit]** (potlood) om de pagina in de pagina-editor te openen. Zorg ervoor dat de modus **[!UICONTROL Edit]** rechtsboven op de pagina is geselecteerd.
@@ -235,7 +235,7 @@ Zie [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-ass
 
 Nadat u een 3D-mediacomponent aan een webpagina hebt toegevoegd, kunt u er een 3D-element aan toewijzen.
 
-Zie [De 3D-mediacomponent toevoegen aan een webpagina.](#adding-the-three-d-media-component-to-a-web-page)
+Zie [De 3D-mediacomponent toevoegen aan een webpagina](#adding-the-three-d-media-component-to-a-web-page).
 
 1. Klik in de pagina-editor Sites Experience Manager op het pictogram **[!UICONTROL Assets]** om **[!UICONTROL Assets]** in het zijpaneel te openen.
 1. Selecteer **[!UICONTROL 3D]** in de vervolgkeuzelijst om alleen 3D-elementbestandstypen weer te geven.
@@ -252,15 +252,15 @@ Zie [De 3D-mediacomponent toevoegen aan een webpagina.](#adding-the-three-d-medi
 
 Dynamic Media accepteert verschillende 3D-bestandsindelingen die worden ondersteund als *statische inhoud* in Dynamic Media. Statische inhoud houdt in dat u 3D-elementen kunt uploaden en publiceren, maar dat er geen ondersteuning is voor *dynamic*-beeldbewerking of het vernieuwen van afbeeldingen die aan het 3D-element zijn gekoppeld. De reden hiervoor is dat Dynamic Media Imaging Server 3D-indelingen niet herkent. Nadat u een 3D-element hebt gepubliceerd in Dynamic Media, hebt u dus een directe URL die u kunt kopiëren. De URL voor het 3D-element volgt de gebruikelijke URL-structuur van Dynamic Media. In tegenstelling tot traditionele afbeeldingselementen in Dynamic Media kunt u echter geen parameters in de URL van het element bewerken.
 
-Zie ook [Een URL verkrijgen voor een statisch element.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
+Zie ook [Een URL verkrijgen voor een statisch element](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
 In **[!UICONTROL Card View]** verschijnt een klein globpictogram direct onder de naam van een element en links van zijn datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 Als u Experience Manager als uw WCM gebruikt, gebruikt u deze publicatiemethode om de Dynamic Media 3D-elementen rechtstreeks op uw webpagina toe te voegen.
 
-Zie ook [Dynamic Media-elementen publiceren.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+Zie ook [Dynamic Media-elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-Zie ook [Pagina&#39;s publiceren.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+Zie ook [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
 **Statische Dynamic Media 3D-elementen publiceren**
 
@@ -289,8 +289,8 @@ Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-eleme
 
 * **[!UICONTROL URL]** - Gebruik deze optie  **[!UICONTROL URL]** als u een systeem voor webcontentbeheer van derden gebruikt en u Dynamic Media 3D-middelen wilt koppelen aan uw webpagina&#39;s met de DIMM-viewer.
 
-   Zie [URL&#39;s koppelen aan uw webtoepassing.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
+   Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Embed]** - Gebruik deze optie  **[!UICONTROL Embed]** als u een Dynamic Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
 
-   Zie [De Dynamic Media-video, afbeeldingsviewer of dimensionale viewer insluiten op een webpagina.](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
+   Zie [De Dynamic Media-video, afbeeldingsviewer of dimensionale viewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
