@@ -3,15 +3,15 @@ title: Slimme beeldverwerking
 description: '"Leer hoe smart imaging de unieke kijkkenmerken van elke gebruiker toepast om automatisch de juiste beelden te bedienen die voor hun ervaring zijn geoptimaliseerd, wat resulteert in betere prestaties en betrokkenheid."'
 feature: Middelenbeheer, uitvoeringen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1873'
 ht-degree: 0%
 
 ---
-
 
 # Smart Imaging {#smart-imaging}
 
@@ -21,9 +21,9 @@ Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met be
 
 >[!NOTE]
 >
->Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
+>Deze functie vereist dat u de CDN (Content Delivery Network) gebruikt die buiten de box valt en die is meegeleverd bij Adobe Experience Manager Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
-De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volledig geïntegreerd zijn met de best-in-klasse van Adobe de premiedienst CDN (het Netwerk van de Levering van de Inhoud). Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het kijkt bij de laagste latentie, of het laagste tarief van het pakketverlies, of allebei, eerder dan eenvoudig gebruikend de standaardroute op Internet.
+De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volledig geïntegreerd zijn met de best-in-klasse van Adobe de premiedienst CDN (het Netwerk van de Levering van de Inhoud). Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
 De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisatie van Smart Imaging aan:
 
@@ -43,12 +43,13 @@ Afbeeldingen vormen het grootste deel van de laadtijd van een pagina. Daarom kan
 
 Verbeteringen in de nieuwste versie van Smart Imaging:
 
+* Verbeterde Google SEO-classificatie voor webpagina&#39;s die gebruikmaken van de nieuwste Smart Imaging.
 * Hiermee wordt geoptimaliseerde inhoud direct (bij uitvoering) weergegeven.
-* Gebruikt Adobe Sensei-technologie voor conversie op basis van de kwaliteit (qlt) die is opgegeven in de afbeeldingsaanvraag.
-* Smart Imaging kan worden uitgeschakeld met de URL-parameter &quot;bfc&quot;.
+* Gebruikt Adobe Sensei-technologie voor conversie op basis van de kwaliteit (`qlt`) die is opgegeven in de afbeeldingsaanvraag.
+* U kunt Smart Imaging uitschakelen met de URL-parameter `bfc`.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
-* Klanten die aangepaste kopteksten in hun regels gebruiken. Zo profiteert &#39;Timing Allow Origin&#39;, &#39;X-Robot&#39; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan afbeeldingsreacties|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) van de nieuwste functie voor Smart Imaging. In tegenstelling tot de vorige versie van Smart Imaging worden deze kopteksten niet geblokkeerd.
+* Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan afbeeldingsreacties|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -58,25 +59,26 @@ Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt
 >
 >Smart Imaging is niet beschikbaar voor Dynamic Media - Hybride klanten.
 
-
 ## Hoe werkt intelligente beeldverwerking? {#how-does-smart-imaging-work}
 
-Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken. Vervolgens wordt de afbeelding omgezet in de juiste afbeeldingsindeling op basis van de gebruikte browser. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
+Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken en wordt deze op basis van de gebruikte browser omgezet in de juiste afbeeldingsindeling. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * Automatisch converteren naar WebP voor de volgende browsers:
    * Chroom
    * Firefox
-   * Microsoft Edge
-   * Safari 14.0 +
-      * Alleen Safari 14 met iOS 14.0 en hoger en macOS BigSur en hoger
-   * Android
+   * Microsoft® Edge
+   * Safari (in iOS, macOS, iPadOS), biedt ondersteuning voor de browser en OS-versie WebP
+   * Android™
    * Opera
 * Ondersteuning voor oudere browsers:
 
    | Browser | Versie browser/besturingssysteem | Format |
    | --- | --- | --- |
-   | Safari | iOS 14.0 of eerder | JPEG2000 |
-   | Rand | 18 of lager | JPEGXR |
+   | Safari | Eerder dan iOS/iPad 14.0 of macOS BigSur | JPEG2000 |
+   | Rand | Eerder dan 18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
@@ -85,6 +87,7 @@ Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging
 ## Welke afbeeldingsindelingen worden ondersteund? {#what-image-formats-are-supported}
 
 De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
+
 * JPEG
 * PNG
 
@@ -97,13 +100,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## Hoe werkt Smart Imaging met bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot;. Met uitzondering van Kwaliteit (qlt) en Indeling (fmt) worden alle afbeeldingsinstellingen gebruikt als de gewenste bestandsindeling JPEG of PNG is. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
+Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot;. Alle afbeeldingsinstellingen worden in acht genomen, behalve de kwaliteit (`qlt`) en de indeling (`fmt`) als de gewenste bestandsindeling JPEG of PNG is. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Moet ik URL&#39;s, afbeeldingsvoorinstellingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinstellingen voor afbeeldingen als u Smart Imaging configureert op uw bestaande aangepaste domein. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Al deze functionaliteit wordt automatisch behandeld.
+Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinstellingen voor afbeeldingen als u Smart Imaging configureert op uw bestaande aangepaste domein. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Deze wordt allemaal automatisch afgehandeld.
 
 Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt om dit aangepaste domein te weerspiegelen.
 
@@ -124,7 +127,7 @@ Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Med
 * Gebruik Adobe-Gebundelde CDN (het Netwerk van de Levering van de Inhoud) als deel van uw vergunning.
 * Gebruik een specifiek domein (bijvoorbeeld `images.company.com` of `mycompany.scene7.com`), niet een algemeen domein (bijvoorbeeld `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
-Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
 Tik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen domein gebruikt, kunt u verzoeken over te gaan naar uw eigen douanedomein. Maak dit overgangsverzoek wanneer u een technisch steunkaartje voorlegt.
 
@@ -140,7 +143,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
    1. Primaire contactpersoon, e-mail, telefoon.
    1. Alle domeinen die voor slimme beeldverwerking (namelijk `images.company.com` of `mycompany.scene7.com`) moeten worden toegelaten.
 
-      Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
 
@@ -148,7 +151,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
    1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` gebruikt.
 
-      Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
 
@@ -156,7 +159,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
    1. Geef aan of het via HTTP/2 moet werken.
 
 1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken worden voorgelegd.
-1. Wanneer Adobe bereid is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
+1. Wanneer Adobe klaar is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
 1. **Optioneel**: U kunt optioneel de functie voor het maken van slimme afbeeldingen in Staging testen voordat Adobe de nieuwe functie in productie neemt.
 1. U wordt op de hoogte gesteld na voltooiing door de klantenservice.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
@@ -166,12 +169,13 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-De verzoeken worden verwerkt in de orde waarin zij door Technische Steun, volgens de Wachtlijst worden ontvangen.
+De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, volgens de Wachtlijst worden ontvangen.
 
 >[!NOTE]
-Soms duurt het erg lang omdat Slim beeldbeheer mogelijk wordt gemaakt door het Adobe wissen van de cache. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
+>
+>Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
@@ -179,19 +183,20 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Wanneer uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic (Scene7)/Dynamic Media-afbeeldings-URL in de browser.
+1. Wanneer uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
 1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
 
-   * In Windows navigeert u naar de instellingen in het venster voor het gereedschap Ontwikkelaar en schakelt u **[!UICONTROL Disable cache (while devtools is open)]** in.
-   * Mac: selecteer **[!UICONTROL disable cache]** onder het tabblad **[!UICONTROL Network]** in het venster Ontwikkelaar.
+   * In Windows® navigeert u naar de instellingen in het venster voor het gereedschap Ontwikkelaar en schakelt u het selectievakje **[!UICONTROL Disable cache (while devtools is open)]** in.
+   * Selecteer **[!UICONTROL disable cache]** onder het tabblad **[!UICONTROL Network]** in MacOS.
 
 1. Waarnemen dat het inhoudstype wordt omgezet in de juiste indeling. In de volgende schermafbeelding ziet u een PNG-afbeelding die dynamisch wordt omgezet in WebP op Chrome.
 1. Herhaal deze test voor verschillende browsers en gebruikersomstandigheden.
 
 >[!NOTE]
-Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie nodig is om de prestaties te verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling geen JPEG- of PNG-indeling is.
+>
+>Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling geen JPEG- of PNG-indeling is.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
