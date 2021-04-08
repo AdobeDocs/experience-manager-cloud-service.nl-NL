@@ -3,15 +3,15 @@ title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
 description: Leer hoe u de functie voor responsieve code gebruikt om geoptimaliseerde afbeeldingen van Dynamic Media te leveren.
 feature: Beheer van bedrijfsmiddelen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '316'
 ht-degree: 12%
 
 ---
-
 
 # Geoptimaliseerde afbeeldingen leveren voor een responsieve site {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsiev
 
 Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website echter op AEM staat, rendert een externe afbeeldingsserver de afbeelding en levert deze aan de webpagina.
 
-Zie ook [De video-viewer insluiten op een webpagina.](embed-code.md)
+Zie ook [De video-viewer insluiten op een webpagina](embed-code.md).
 
-Zie ook [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
+Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
 
 **Geoptimaliseerde afbeeldingen leveren voor een responsieve site**:
 
