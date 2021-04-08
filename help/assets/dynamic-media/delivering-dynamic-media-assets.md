@@ -3,15 +3,15 @@ title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-middelen kunt leveren.
 feature: Beheer van bedrijfsmiddelen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 1%
 
 ---
-
 
 # Dynamic Media-middelen leveren{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Met Dynamic Media hebt u verschillende opties:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
-   * Als uw site reageert, kunt u [geoptimaliseerde afbeeldingen leveren.](/help/assets/dynamic-media/responsive-site.md)
+   * Als uw site responsief is, kunt u geoptimaliseerde afbeeldingen ](/help/assets/dynamic-media/responsive-site.md) leveren.[
 
 >[!NOTE]
 >
