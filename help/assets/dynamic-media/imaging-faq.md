@@ -6,7 +6,7 @@ topic: Zakelijke praktiserer
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dyn
 
 U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt niet automatisch ingeschakeld.
 
-1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    1. Primaire contactpersoon, e-mail, telefoon.
@@ -159,7 +159,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
    1. Geef aan of het via HTTP/2 moet werken.
 
 1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken worden voorgelegd.
-1. Wanneer Adobe bereid is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
+1. Wanneer Adobe klaar is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
 1. **Optioneel**: U kunt optioneel de functie voor het maken van slimme afbeeldingen in Staging testen voordat Adobe de nieuwe functie in productie neemt.
 1. U wordt op de hoogte gesteld na voltooiing door de klantenservice.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
