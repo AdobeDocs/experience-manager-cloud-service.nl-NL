@@ -4,15 +4,15 @@ description: '"Tips en tips en trucs voor het benoemen, ordenen en beheren van D
 contentOwner: Rick Brough
 feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
 topic: Zakelijke praktiserer
-role: Beheerder, Business Practiter
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van afbeeldingsprofielen of videoprofielen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ Hier volgt een overzicht van tips voor het organiseren van digitale elementbesta
 
 * Organiseer uw bestanden op basis van de metagegevens die u eraan toevoegt in plaats van op basis van de mappen waarin ze zich bevinden. U kunt dit bereiken door metagegevensprofielen toe te voegen.
 
-   * Zie [Metagegevensprofielen.](/help/assets/metadata-profiles.md)
+   * Zie [Metagegevensprofielen](/help/assets/metadata-profiles.md).
    * Zie [Metagegevens voor Digital Asset Management](/help/assets/manage-metadata.md).
 
 * Meestal groeit de collectie digitale middelen altijd. Daarom is het belangrijk - vroeger op-om meta-gegevensgebruik, omslagstructuur, en dossier het noemen onder al uw geupload activa te formaliseren. Door deze standaardisering zorgt u ervoor dat u verwerkingsprofielen nauwkeuriger en consistenter kunt toepassen op mappen wanneer uw pool met digitale elementen toeneemt.
@@ -44,4 +44,3 @@ Hier volgt een overzicht van tips voor het organiseren van digitale elementbesta
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat toegewezen profielen niet worden afgebroken.
 * Stel dat er al een element is gepubliceerd, dan gebruikt u Adobe Experience Manager om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van de gepubliceerde middelen is nog steeds beschikbaar, samen met het nieuwe gepubliceerde middel. Het oorspronkelijke gepubliceerde middel is echter &quot;verloren&quot; voor de Experience Manager en kan niet ongepubliceerd worden. Daarom is het aan te raden eerst de publicatie van elementen ongedaan te maken voordat u deze naar een andere map verplaatst.
-
