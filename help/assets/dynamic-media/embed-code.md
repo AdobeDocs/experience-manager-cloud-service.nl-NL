@@ -3,25 +3,25 @@ title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
 description: Leer hoe u Dynamic Media-video of afbeeldingselementen op een webpagina insluit.
 feature: Beheer van bedrijfsmiddelen
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '367'
 ht-degree: 21%
 
 ---
-
 
 # De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM gebruikt als uw WCM, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM als WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
-Zie [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
+Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
-Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsive-site.md)
+Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsiv
 
    Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [Elementen publiceren.](publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    Zie [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
