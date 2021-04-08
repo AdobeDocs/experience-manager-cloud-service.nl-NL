@@ -3,15 +3,15 @@ title: Mixed Media Sets
 description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
 feature: Gemengde mediasets
 topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1394'
 ht-degree: 24%
 
 ---
-
 
 # Mixed Media Sets{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/dynamic-media/image-sets.md) en [spinsets](/help/assets/dynamic-media/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u er rekening mee houden dat u kunt zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
 
-1. [Gemengde mediasets maken.](#creating-mixed-media-sets)
+1. [Gemengde mediasets](#creating-mixed-media-sets) maken.
 
    Als u een gemengde mediaset wilt maken, tikt u op de pagina Assets op **[!UICONTROL Create > Mixed Media Set]** en geeft u de set een naam, kiest u de assets en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
-   Zie [Werken met kiezers.](/help/assets/dynamic-media/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Stel [Voorinstellingen voor gemengde media-viewer](/help/assets/dynamic-media/managing-viewer-presets.md) naar wens in.
 
@@ -45,13 +45,13 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
 
-   Zie [Voorinstellingen voor viewers toevoegen en bewerken.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Voorvertoning gemengde mediasets.](#previewing-mixed-media-sets)
+1. [Voorvertoning gemengde mediasets](#previewing-mixed-media-sets).
 
    Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Als u de gemengde mediaset in de geselecteerde viewer wilt bekijken, klikt u op de miniatuurpictogrammen. U kunt verschillende Viewers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
-1. [Gemengde mediasets publiceren.](#publishing-mixed-media-sets)
+1. [Gemengde mediasets](#publishing-mixed-media-sets) publiceren.
 
    Wanneer u een gemengde mediaset publiceert, worden de URL en de insluitreeks geactiveerd. Daarnaast moet u [de viewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets) publiceren.
 
@@ -174,4 +174,3 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 >[!NOTE]
 >
 >Als de gemengde mediaset de eerste keer dat u deze publiceert niet volledig in de leveringsservice terechtkomt, publiceert u de gemengde mediaset een tweede keer.
-
