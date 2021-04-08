@@ -3,7 +3,7 @@ title: 'Een Sandbox-programma bewerken '
 description: Een Sandbox-programma bewerken
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
+source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Voer de onderstaande stappen uit om een Sandbox-programma te bewerken:
    >[!NOTE]
    >Er moet ten minste één oplossing voor een programma worden geselecteerd. Gebruikers mogen dus niet alle oplossingen deselecteren tijdens de workflow van het programma Bewerken.
 
-1. Klik op **Opslaan** om de werkstroom van het bewerkingsprogramma te voltooien.
+1. Klik op **Opslaan** om de workflow voor het bewerkingsprogramma te voltooien.
 
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
