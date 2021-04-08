@@ -2,15 +2,15 @@
 title: Problemen met Dynamic Media oplossen
 description: Tips voor het oplossen van problemen bij het gebruik van Dynamic Media.
 topic: '"Beheerder, Business Practitioner"'
-role: Beheerder, Business Practiter
+role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
-
 
 # Problemen met Dynamic Media oplossen {#troubleshooting-dynamic-media-scene-mode}
 
@@ -18,7 +18,7 @@ In het volgende onderwerp wordt het oplossen van problemen voor Dynamic Media be
 
 ## Nieuwe Dynamic Media-configuratie {#new-dm-config}
 
-Zie [Problemen met een nieuwe Dynamic Media-configuratie oplossen.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Zie [Problemen met een nieuwe Dynamic Media-configuratie oplossen](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -221,4 +221,3 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr>
  </tbody>
 </table>
-
