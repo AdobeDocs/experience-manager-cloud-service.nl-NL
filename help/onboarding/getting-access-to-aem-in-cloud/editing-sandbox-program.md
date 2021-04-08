@@ -3,7 +3,7 @@ title: 'Een Sandbox-programma bewerken '
 description: Een Sandbox-programma bewerken
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Voer de onderstaande stappen uit om een Sandbox-programma te bewerken:
 
    ![](assets/edit-program-general.png)
 
-   Op het tabblad **Oplossingen en invoegtoepassingen** worden twee opties weergegeven, zoals **Sites** en **Middelen** voor zowel productie- als Sandbox-programma&#39;s. Bovendien, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
+   Op het tabblad **Oplossingen en invoegtoepassingen** worden twee opties weergegeven, zoals **Sites** en **Middelen** voor zowel productie- als Sandbox-programma&#39;s. Ook, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
 
    ![](assets/edit-prg.png)
 
