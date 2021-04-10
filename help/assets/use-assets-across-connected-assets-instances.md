@@ -3,15 +3,15 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 feature: Middelenbeheer, Verbonden middelen, Asset Distribution
-role: Beheerder, Business Practitioner, Architect
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2806'
 ht-degree: 25%
 
 ---
-
 
 # Aangesloten middelen gebruiken om DAM-elementen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -108,9 +108,12 @@ Voer de volgende stappen uit om Connected Assets en lokale [!DNL Sites]-connecti
 
 1. Voeg de [!DNL Sites]-implementatie toe als een toegestane oorsprong in de CORS-configuratie bij de [!DNL Assets]-implementatie. Zie [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) begrijpen voor meer informatie.
 
-U kunt de connectiviteit tussen geconfigureerde [!DNL Sites]-implementaties en [!DNL Assets]-implementatie controleren.
+1. Configureer [dezelfde ondersteuning voor sitecookie](/help/security/same-site-cookie-support.md).
 
-![Verbindingstest van geconfigureerde Connected Assets  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+U kunt de connectiviteit tussen de gevormde [!DNL Sites] plaatsingen en [!DNL Assets] plaatsing controleren.
+
+![Verbindingstest van Verbonden activa gevormde  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Cijfer: Verbindingstest van gevormde Verbonden Activa  [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ Voer de volgende stappen uit om deze verbinding te configureren.
    * Selecteer **[!UICONTROL Selective Publish]** in de lokale [!DNL Sites] optie. **[!UICONTROL Publish Assets]** Selecteer **[!UICONTROL Sync All Content]** niet.
    * Bij externe [!DNL Assets]-implementatie selecteert u **[!UICONTROL Enabled by default]** in [!UICONTROL Dynamic Media sync mode].
 
-1. Schakel [[!DNL Dynamic Media] ondersteuning in Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) in. Met deze functie kan de standaardcomponent Image [!DNL Dynamic Media]-afbeeldingen weergeven wanneer [!DNL Dynamic Media]-afbeeldingen door auteurs worden gebruikt op webpagina&#39;s op lokale [!DNL Sites]-implementatie.
+1. Schakel [[!DNL Dynamic Media] ondersteuning in Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) in. Met deze functie schakelt u de standaard [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) in om [!DNL Dynamic Media]-afbeeldingen weer te geven wanneer [!DNL Dynamic Media]-afbeeldingen door auteurs worden gebruikt op webpagina&#39;s bij lokale [!DNL Sites]-implementatie.
 
 ## Externe assets gebruiken {#use-remote-assets}
 
@@ -231,11 +234,13 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 Ga als volgt te werk om algemene fouten op te lossen:
 
 * Als u niet naar verre activa van [!UICONTROL Content Finder] kunt zoeken, dan zorg ervoor dat de vereiste rollen en de toestemmingen op zijn plaats zijn.
-* Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/operations/asynchronous-jobs.md) op fouten bij het ophalen van assets.
-* Als u geen toegang hebt tot de externe DAM-implementatie vanaf de lokale [!DNL Sites]-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies die naar andere sites verwijzen, worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. [!DNL Google Chrome] in Incognito-modus kan cookies van derden bijvoorbeeld blokkeren. Als u cookies wilt toestaan in de browser [!DNL Chrome], klikt u op het pictogram &#39;oog&#39; op de adresbalk, navigeert u naar Site werkt niet > Geblokkeerd, selecteert u de externe DAM-URL en staat u aanmeldingstoken toe. U kunt ook de Help-informatie over [het inschakelen van cookies van derden](https://support.google.com/chrome/answer/95647) raadplegen.
 
-   ![Cookie-fout in Chrome in incognitomodus](assets/chrome-cookies-incognito-dialog.png)
+* Een middel dat van verre DAM wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/operations/asynchronous-jobs.md) op fouten bij het ophalen van assets.
 
-* Als de verre verwijzingen niet worden teruggewonnen en in een foutenmelding resulteren, controleer als de plaatsing van Plaatsen beschikbaar is en controleer voor de kwesties van de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
+* Als u geen toegang kunt krijgen tot de externe DAM-implementatie vanaf de lokale [!DNL Sites]-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan en dat [ondersteuning voor dezelfde sitecookie](/help/security/same-site-cookie-support.md) is geconfigureerd. Als cookies die naar andere sites verwijzen, worden geblokkeerd, wordt de implementatie van [!DNL Experience Manager] mogelijk niet geverifieerd. [!DNL Google Chrome] in Incognito-modus kan cookies van derden bijvoorbeeld blokkeren. Als u cookies wilt toestaan in de browser [!DNL Chrome], klikt u op het pictogram &#39;oog&#39; in de adresbalk, navigeert u naar **Site niet werken** > **Geblokkeerd**, selecteert u de externe DAM-URL en staat u aanmeldtoken-cookie toe. Afwisselend, zie [hoe te om derdekoekjes toe te laten](https://support.google.com/chrome/answer/95647).
+
+   ![Cookie-fout in Chrome-browser in Incognito-modus](assets/chrome-cookies-incognito-dialog.png)
+
+* Als externe referenties niet worden opgehaald en een foutbericht opleveren, controleert u of de [!DNL Sites]-implementatie beschikbaar is en controleert u op problemen met de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
 
 ![mislukken van opnieuw geprobeerd externe referenties voor middelen](assets/reference-report-failure.png)
