@@ -7,10 +7,10 @@ feature: Middelenbeheer, Publiceren, Samenwerking, Middelenverwerking
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
 workflow-type: tm+mt
-source-wordcount: '4198'
-ht-degree: 11%
+source-wordcount: '4215'
+ht-degree: 10%
 
 ---
 
@@ -280,54 +280,29 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 Zie [Elementen downloaden van [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Elementen {#publish-assets} publiceren
+## Elementen publiceren of verwijderen {#publish-assets}
 
-<!--
->[!NOTE]
->
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
+1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Navigeer naar de locatie van de elementen/map die u wilt publiceren.
+1. Selecteer het middel of de omslag om te publiceren of unpublish en uitgezocht **[!UICONTROL Manage Publication]** ![publicatieoptie te beheren](assets/do-not-localize/globe-publication.png) optie van de toolbar. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** in de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-1. Selecteer de snelle actie **[!UICONTROL Publish]** op de kaart met assets of selecteer de asset en tik of klik op het pictogram **[!UICONTROL Quick Publish]** op de werkbalk.
-1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet-gepubliceerd of gewijzigd zijn sinds ze voor het laatst zijn gepubliceerd/niet gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
+1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Handeling Unpublish](assets/unpublish_action.png)
+   *Afbeelding: Publiceer- en publicatieopties en de planningsoptie.*
 
-   >[!NOTE]
-   >
-   >Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
+1. Selecteer **[!UICONTROL Now]** om direct op het element te handelen of **[!UICONTROL Later]** te selecteren om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
 
-1. Tik/klik **[!UICONTROL Publish]** om de activering voor de elementen te bevestigen.
+1. Als een element bij het publiceren naar andere elementen verwijst, worden de bijbehorende verwijzingen in de wizard weergegeven. Alleen die verwijzingen worden weergegeven die niet zijn gepubliceerd of zijn gewijzigd sinds de laatste publicatie. Kies de referenties die u wilt publiceren.
 
->[!CAUTION]
->
->Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
+1. Wanneer u de publicatie ongedaan maakt, kiest u de referenties die u ongedaan wilt maken wanneer een element naar andere elementen verwijst. Klik op **[!UICONTROL Unpublish]**. Klik in het bevestigingsdialoogvenster op **[!UICONTROL Cancel]** om de handeling te stoppen of klik op **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd moeten worden.
 
-## Elementen {#unpublishing-assets} verwijderen
+De volgende beperkingen en tips voor het publiceren of verwijderen van middelen of mappen zijn beschikbaar:
 
-1. Navigeer naar de locatie van de map met middelen die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
-
-1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken, en tik/klik op het pictogram **[!UICONTROL Manage Publication]** op de werkbalk.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Selecteer de handeling **[!UICONTROL Unpublish]** in de lijst.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Als u de publicatie van het element later ongedaan wilt maken, selecteert u **[!UICONTROL Unpublish Later]** en selecteert u vervolgens een datum voor het ongedaan maken van de publicatie van het element.
-1. Plan een datum waarop het element niet beschikbaar is in de publicatieomgeving.
-1. Als het element verwijst naar andere elementen, kiest u de verwijzingen die u ongedaan wilt maken. Tik of klik op **[!UICONTROL Unpublish]**.
-1. Tik/klik in het bevestigingsvenster op:
-
-   * **[!UICONTROL Cancel]** om de handeling te stoppen
-   * **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
-
-   >[!NOTE]
-   >
-   >Wanneer u de publicatie van een complex element ongedaan maakt, maakt u alleen het element bekend. Maak de publicatie van de referenties niet ongedaan omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
+* De optie voor [!UICONTROL Manage Publication] is alleen beschikbaar voor gebruikersaccounts die replicatiemachtigingen hebben.
+* Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat er mogelijk naar wordt verwezen door andere gepubliceerde elementen.
+* Lege mappen worden niet gepubliceerd.
+* Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
@@ -553,7 +528,7 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
