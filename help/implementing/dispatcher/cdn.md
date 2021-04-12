@@ -4,7 +4,7 @@ description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 16a0f4de0d7a32032abd4742cc06a086038d032b
+source-git-commit: b063fee5e088d6dfe5bd6be2b842e6bae48ee4a9
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 7%
@@ -46,8 +46,8 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 Configuratieinstructies:
 
-1. Stel de `X-Forwarded-Host`-header in met de domeinnaam. Bijvoorbeeld:`X-Forwarded-Host:example.com`.
-1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. Bijvoorbeeld:`Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Stel de `X-Forwarded-Host`-header in met de domeinnaam. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
+1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Verzend de kopbal SNI naar de oorsprong. Zoals de kopbal van de Gastheer, moet de kopbal SNI het oorsprongdomein zijn.
 1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN `X-Edge-*` strips). De waarde moet van Adobe komen.
    * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en de `X-Forwarded-*` kopballen tot de AEM toepassing overgaan. `X-Forwarded-Host` wordt bijvoorbeeld door AEM gebruikt om de Hostkop te bepalen en `X-Forwarded-For` wordt gebruikt om de client-IP te bepalen. Het wordt dus de verantwoordelijkheid van de vertrouwde aanroeper (d.w.z. de door de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` koppen te verzekeren (zie de nota hieronder).
