@@ -4,7 +4,7 @@ description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: b063fee5e088d6dfe5bd6be2b842e6bae48ee4a9
+source-git-commit: 3d0f58754aaff3a0c505f60a9c24b4712c2e4c30
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 7%
@@ -51,7 +51,7 @@ Configuratieinstructies:
 1. Verzend de kopbal SNI naar de oorsprong. Zoals de kopbal van de Gastheer, moet de kopbal SNI het oorsprongdomein zijn.
 1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN `X-Edge-*` strips). De waarde moet van Adobe komen.
    * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en de `X-Forwarded-*` kopballen tot de AEM toepassing overgaan. `X-Forwarded-Host` wordt bijvoorbeeld door AEM gebruikt om de Hostkop te bepalen en `X-Forwarded-For` wordt gebruikt om de client-IP te bepalen. Het wordt dus de verantwoordelijkheid van de vertrouwde aanroeper (d.w.z. de door de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` koppen te verzekeren (zie de nota hieronder).
-   * Naar keuze, kan de toegang tot de ingangen van Adobe CDN worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
+   * Naar keuze, kan de toegang tot de ingang van Adobe CDN worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
 
 Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
 
