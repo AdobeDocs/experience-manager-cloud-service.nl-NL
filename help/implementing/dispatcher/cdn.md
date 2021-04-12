@@ -2,14 +2,14 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '758'
 ht-degree: 7%
 
 ---
-
 
 # CDN in AEM as a Cloud Service {#cdn}
 
@@ -46,10 +46,12 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 Configuratieinstructies:
 
-1. Stel de `X-Forwarded-Host`-header in met de domeinnaam.
-1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. De waarde moet van Adobe komen.
+1. Stel de `X-Forwarded-Host`-header in met de domeinnaam. Bijvoorbeeld: `X-Forwarded-Host: example.com`.
+1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. Bijvoorbeeld: `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Verzend de kopbal SNI naar de oorsprong. Zoals de kopbal van de Gastheer, moet de kopbal SNI het oorsprongdomein zijn.
-1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN X-Edge-*) bijsnijdt, wat nodig is om het verkeer naar de AEM servers correct te leiden. De waarde moet van Adobe komen. Gelieve te informeren Adobe als u directe toegang tot de ingang van Adobe CDN (moet worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is) wilt.
+1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN `X-Edge-*` strips).De waarde moet uit Adobe komen.
+   * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en de `X-Forwarded-*` kopballen tot de AEM toepassing overgaan. `X-Forwarded-Host` wordt bijvoorbeeld door AEM gebruikt om de Hostkop te bepalen en `X-Forwarded-For` wordt gebruikt om de client-IP te bepalen. Het wordt dus de verantwoordelijkheid van de vertrouwde aanroeper (d.w.z. de door de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` koppen te verzekeren (zie de nota hieronder).
+   * Naar keuze, kan de toegang tot de ingangen van Adobe CDN worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
 
 Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
 
