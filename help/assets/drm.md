@@ -3,15 +3,15 @@ title: Digital Rights Management in [!DNL Assets]
 description: Leer hoe u de verloopstatus van elementen en informatie voor gelicentieerde elementen beheert in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Middelenbeheer,DRM
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1274'
 ht-degree: 7%
 
 ---
-
 
 # Digital Rights Management voor elementen {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ U kunt de vervalstatus van een element op de volgende plaatsen bekijken:
 
 In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlopen subelementen.
 
-1. Klik in de [!DNL Assets]-console op **[!UICONTROL Search]** in de werkbalk om het vak Onderzoek weer te geven.
+1. Klik in de [!DNL Assets]-console op **[!UICONTROL Search]** in de werkbalk om het zoekvak [!DNL Experience Manager] weer te geven.
 
 1. Met de curseur in het vakje van Onderzoek, selecteer `Enter` sleutel om de pagina van onderzoeksresultaten te tonen.
 
