@@ -2,13 +2,13 @@
 title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
-feature: Middelenbeheer, Verbonden middelen, Asset Distribution
+feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2816'
 ht-degree: 25%
 
 ---
@@ -30,7 +30,7 @@ Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lok
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Voor [!DNL Adobe Experience Manager] implementatietypen wordt aan een van de ondersteunde criteria voldaan. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] 6.5 werkt, zie [Verbonden Activa in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* Voor [!DNL Adobe Experience Manager] implementatietypen wordt aan een van de ondersteunde criteria voldaan. [!DNL Experience Manager] als Cloud Service  [!DNL Assets] werkt met  [!DNL Experience Manager] 6.5. Zie  [!DNL Experience Manager] Verbonden elementen in [6.5 voor meer informatie over hoe deze functionaliteit werkt in  [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] als  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -42,7 +42,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en gebruiken de doorzochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download`-component en afbeeldingen aan de `Image`-component. Auteurs voegen ook de externe elementen toe in een aangepaste [!DNL Experience Manager]-component die de standaardcomponenten `Download` of `Image` uitbreidt. De ondersteunde indelingen zijn:
 
-* **Afbeeldingsindelingen**: De indelingen die de  [component Image ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) ondersteunt.
+* **Afbeeldingsindelingen**: De indelingen die de  [component Image ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) ondersteunt.
 * **Documentindelingen**: Zie de  [ondersteunde documentindelingen](file-format-support.md#document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
@@ -189,7 +189,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 1. Selecteer een element in [!DNL Assets] Console en klik **[!UICONTROL Properties]** van de toolbar.
 1. Klik op het tabblad **[!UICONTROL References]**. Zie **[!UICONTROL Local References]** voor gebruik van het element op de [!DNL Assets]-implementatie. Zie **[!UICONTROL Remote References] voor gebruik van het middel op [!DNL Sites] plaatsing waar het middel werd gehaald gebruikend de Verbonden functionaliteit van Activa.
 
-   ![externe verwijzingen in eigenschappen van elementen](assets/connected-assets-remote-reference.png)
+   ![Externe verwijzingen op de pagina Eigenschappen van element](assets/connected-assets-remote-reference.png)
 
 1. De verwijzingen voor [!DNL Sites] pagina&#39;s tonen totaal aantal verwijzingen voor elke lokale [!DNL Sites]. Het kan enige tijd duren om alle verwijzingen te vinden en het totale aantal verwijzingen te tonen.
 1. De lijst met verwijzingen is interactief en DAM-gebruikers kunnen op een verwijzing klikken om de verwijzingspagina te openen. Als de verre verwijzingen niet om één of andere reden kunnen worden gehaald, wordt een bericht getoond op de hoogte brengend van de mislukking.
@@ -243,4 +243,4 @@ Ga als volgt te werk om algemene fouten op te lossen:
 
 * Als externe referenties niet worden opgehaald en een foutbericht opleveren, controleert u of de [!DNL Sites]-implementatie beschikbaar is en controleert u op problemen met de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
 
-![mislukken van opnieuw geprobeerd externe referenties voor middelen](assets/reference-report-failure.png)
+   ![fout bij ophalen externe elementverwijzingen](assets/reference-report-failure.png)
