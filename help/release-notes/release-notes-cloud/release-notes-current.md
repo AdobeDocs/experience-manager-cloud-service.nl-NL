@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
@@ -195,11 +195,13 @@ De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
+De releasedatum voor de analyse van best practices v2.1.12 is 12 april 2021.
 
-### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
+### Opgeloste problemen {#bug-fixes-bpa-april}
 
-* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in UI evenals uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
+* Er zijn dubbele rijen aangetroffen in het BPA-rapport. Dit is opgelost.
+* BPA UI op AEM versie 6.4.2 werpt een fout JS die de Generate knoop van het Rapport onbruikbaar maakte. Dit is opgelost
+
 
 ## Tools voor herstructurering van code {#code-refactoring-tools}
 
