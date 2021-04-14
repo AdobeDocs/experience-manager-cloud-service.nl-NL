@@ -2,7 +2,7 @@
 title: Enterprise Team Development Setup - Cloud Services
 description: Volg deze pagina om meer over de Opstelling van de Ontwikkeling van het Team van de Onderneming te leren
 translation-type: tm+mt
-source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
+source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -68,7 +68,7 @@ De installatie in de git-opslagplaats van Cloud Manager heeft twee vertakkingen:
 * A *stabiele releasetak*, met de productiecode van alle teams
 * A *ontwikkelingsvertakking* die de ontwikkelingscode van alle teams bevat
 
-Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duwtje op de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de git bewaarplaats van de Managers van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
+Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duwtje op de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de gokbewaarplaats van de Manager van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
 
 ![](assets/team-setup2.png)
 
