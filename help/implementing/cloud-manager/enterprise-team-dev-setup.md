@@ -2,9 +2,9 @@
 title: Enterprise Team Development Setup - Cloud Services
 description: Volg deze pagina om meer over de Opstelling van de Ontwikkeling van het Team van de Onderneming te leren
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager ondersteunt flexibele instellingen voor meerdere teams die kunnen 
 
 Elke onderneming heeft verschillende vereisten met inbegrip van verschillende teamopstelling, processen, en ontwikkelingswerkschema&#39;s. De hieronder beschreven opstelling wordt gebruikt door Adobe voor verscheidene projecten die ervaring bovenop AEM als Cloud Service leveren.
 
-De Adobe Creative Cloud-toepassingen, zoals Adobe Photoshop of Adobe Illustrator, bevatten bijvoorbeeld inhoudsbronnen, zoals zelfstudies, voorbeelden en hulplijnen die beschikbaar zijn voor eindgebruikers. Deze inhoud wordt door de cliënttoepassingen verbruikt die AEM als Cloud Service op een *headless* manier gebruiken, door API vraag aan de AEM Cloud te maken publiceren rij om de gestructureerde inhoud als stromen JSON terug te winnen, en door AEM Cloud Service CDN te gebruiken om zowel gestructureerde als ongestructureerde inhoud met optimale prestaties te dienen.
+De Adobe Creative Cloud-toepassingen, zoals Adobe Photoshop of Adobe Illustrator, bevatten bijvoorbeeld inhoudsbronnen, zoals zelfstudies, voorbeelden en hulplijnen die beschikbaar zijn voor eindgebruikers. Deze inhoud wordt door de clienttoepassingen verbruikt met AEM als Cloud Service op een *headless*-manier, door API-aanroepen uit te voeren naar de AEM Cloud-publicatielaag om de gestructureerde inhoud op te halen als JSON-streams en door het [Content Delivery Network (CDN) in AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery) te gebruiken voor gestructureerde en niet-gestructureerde inhoud met optimale prestaties.
 
 De teams die aan dit project bijdragen volgen het hieronder beschreven proces.
 
@@ -68,13 +68,13 @@ De installatie in de git-opslagplaats van Cloud Manager heeft twee vertakkingen:
 * A *stabiele releasetak*, met de productiecode van alle teams
 * A *ontwikkelingsvertakking* die de ontwikkelingscode van alle teams bevat
 
-Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duwtje op de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de gokbewaarplaats van de Manager van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
+Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duw naar de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de gokbewaarplaats van de Manager van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
 
 ![](assets/team-setup2.png)
 
 Penselen naar de ontwikkelingsvertakking worden anders verwerkt. Terwijl een duw aan een ontwikkelaarstak in de git bewaarplaats van een team een git actie eveneens teweegbrengt en de code automatisch in de ontwikkelingstak in de git bewaarplaats van de Manager van de Wolk wordt geduwd, wordt de niet productiepijpleiding niet automatisch teweeggebracht door de code duw. Dit wordt geactiveerd door een aanroep van de API van Cloud Manager.
 Het runnen van de productiepijpleiding omvat het controleren van de code van alle teams via de verstrekte kwaliteitsspoortaten. Zodra de code aan stadium wordt opgesteld, worden de tests en de controles uitgevoerd om ervoor te zorgen alles zoals verwacht werkt. Wanneer alle poorten zijn doorgegeven, worden de wijzigingen zonder onderbreking of downtime omgezet in productie.
-Voor lokale ontwikkeling, wordt SDK voor Cloud Service gebruikt. Met de SDK kunnen een lokale auteur, publicateur en verzender worden ingesteld. Dit maakt offline ontwikkeling en snelle doorlooptijden mogelijk. Soms wordt alleen de auteur gebruikt voor ontwikkeling, maar als u de dispatcher snel instelt en publiceert, kunt u alles lokaal testen voordat u naar de opslagplaats voor kompas gaat. De leden van elk team controleren gewoonlijk de code van de gedeelde git voor evenals hun eigen projectcode. Andere projecten hoeven niet te worden gecontroleerd omdat de projecten onafhankelijk zijn.
+Voor lokale ontwikkeling, wordt [SDK voor AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) gebruikt. Met de SDK kunnen een lokale auteur, publicateur en verzender worden ingesteld. Dit maakt offline ontwikkeling en snelle doorlooptijden mogelijk. Soms wordt alleen de auteur gebruikt voor ontwikkeling, maar als u de dispatcher snel instelt en publiceert, kunt u alles lokaal testen voordat u naar de opslagplaats voor kompas gaat. De leden van elk team controleren gewoonlijk de code van de gedeelde git voor evenals hun eigen projectcode. Andere projecten hoeven niet te worden gecontroleerd omdat de projecten onafhankelijk zijn.
 
 ![](assets/team-setup3.png)
 
