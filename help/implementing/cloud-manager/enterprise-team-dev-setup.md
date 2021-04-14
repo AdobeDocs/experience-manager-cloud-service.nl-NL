@@ -2,9 +2,9 @@
 title: Enterprise Team Development Setup - Cloud Services
 description: Volg deze pagina om meer over de Opstelling van de Ontwikkeling van het Team van de Onderneming te leren
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 ### Overwegingen voor een Opstelling van het Multi Team {#considerations}
 
-Met de bovenstaande blauwdruk voor een configuratie met meerdere teams kan het bestand over een groter aantal teams worden geschaald. Met de git-opslagplaats van Cloud Manager en de productiepijplijn wordt altijd de volledige productiecode door alle kwaliteitskates geleid, die het als één plaatsingseenheid behandelt. Op deze manier wordt het productiesysteem *altijd op* zonder onderbreking of onderbreking gehouden.
-Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams zal de coördinatie-inspanning veel complexer en sneller onbeheersbaar worden.
-Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek om terugschroeven van prijzen of zelfs een volledig herstel van een steun vereisen. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
+>[!NOTE]
+>Voor elke opstelling van meerdere teams is het van cruciaal belang om een bestuursmodel en een reeks normen te definiëren die alle teams moeten volgen. In de bovenstaande blauwdruk voor een setup met meerdere teams kunt u schalen in een groter aantal teams en kunt u deze blauwdruk als uitgangspunt gebruiken.
 
-Voor elke opstelling van meerdere teams is het van cruciaal belang om een bestuursmodel en een reeks normen te definiëren die alle teams moeten volgen. U kunt de blauwdruk als uitgangspunt gebruiken.
+Met de git-opslagplaats van Cloud Manager en de productiepijplijn wordt altijd de volledige productiecode door alle kwaliteitskates geleid, die het als één plaatsingseenheid behandelt. Op deze manier wordt het productiesysteem *altijd op* zonder onderbreking of onderbreking gehouden.
+Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams zal de coördinatie-inspanning veel complexer en sneller onbeheersbaar worden.
+
+Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek om terugschroeven van prijzen of zelfs een volledig herstel van een steun vereisen. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
