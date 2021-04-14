@@ -7,27 +7,25 @@ version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
+exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 translation-type: tm+mt
-source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
+source-git-commit: e34592d24c8f6c17e6959db1d5c513feaf6381c8
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '766'
 ht-degree: 2%
 
 ---
 
-
 # Aan de slag met AEM Handel als Cloud Service {#start}
 
 Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De invoegtoepassing CIF is een extra module boven op [AEM Sites als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## Onboarding {#onboarding}
 
 Het instappen voor AEM Handel als Cloud Service is een proces in twee stappen:
 
 1. Krijg AEMHandel als toegelaten Cloud Service en CIF toe:voegen-on provisioned
-2. Sluit AEM Handel als Cloud Service met uw Magento milieu aan
+2. Verbind AEM Handel als Cloud Service met uw handelsoplossing
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
@@ -35,18 +33,38 @@ Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bes
 
 De tweede stap is zelfbediening voor elke AEM als omgeving van een Cloud Service. Er zijn sommige extra configuraties u na de aanvankelijke levering van toe:voegen-op CIF zult moeten doen.
 
-## Verbinding maken AEM Handel met Magento {#magento}
+## AEM verbinden met een handelsoplossing {#magento}
 
-Om CIF toe:voegen-op &amp; [AEM de milieu van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components) met u Magento te verbinden moet u het eindpunt URL van Magento GraphQL via een de omgevingsvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
-Een verschillend eindpunt URL van Magento GraphQL eindpunt kan voor elke AEM als milieu van de Cloud Service worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met Magento opvoeren systemen en AEM productiemilieu met een Magento productiesysteem verbinden. Dat eindpunt van Magento GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund.
+Om toe:voegen-op CIF &amp; [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing te verbinden, moet u het eindpunt GraphQL URL via een de milieuvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
+Een verschillend eindpuntURL GraphQL kan voor elke AEM als milieu van de Cloud Service worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat eindpunt GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
 
-Ga als volgt te werk om AEM Handel met Magento te verbinden:
+Er zijn twee opties om het eindpunt te vormen:
+
+### 1) Via de interface van Cloud Manager (standaard)
+
+Dit kan worden gedaan via een dialoogvenster op de pagina Milieu-details. Wanneer het bekijken van deze pagina voor een handel-Toegelaten programma, zal een knoop worden getoond als het eindpunt momenteel niet wordt gevormd:
+
+![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cmui.png)
+
+Als u op deze knop klikt, wordt een dialoogvenster geopend:
+
+![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+
+Nadat het eindpunt (en, naar keuze, het teken) wordt geplaatst, zal het eindpunt op de detailpagina worden getoond. Als u op het pictogram Bewerken klikt, wordt hetzelfde dialoogvenster geopend waarin het eindpunt indien nodig kan worden gewijzigd.
+
+![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
+
+### 2) Via Adobe I/O CLI
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
+Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappen:
 
 1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
    Raadpleeg de [Adobe Cloud Manager-documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) voor informatie over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Verifieer CLI met de AEM als programma van de Cloud Service
+2. Verifieer Adobe I/O CLI met de AEM als programma van de Cloud Service
 
 3. De variabele `COMMERCE_ENDPOINT` instellen in Cloud Manager
 
@@ -56,19 +74,15 @@ Ga als volgt te werk om AEM Handel met Magento te verbinden:
 
    Zie [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie.
 
-   De Magento GraphQL eindpunt URL moet aan de dienst richten GraphQl en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://demo.magentosite.cloud/graphql`.
+   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://demo.magentosite.cloud/graphql`.
 
 >[!TIP]
 >
 >U kunt alle variabelen van de Manager van de Wolk een lijst maken gebruikend het volgende bevel om te controleren tweemaal: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!NOTE]
->
->U kunt ook de [Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) gebruiken om de Cloud Manager-variabelen ook te configureren.
-
 Met dit, bent u klaar om AEM Handel als Cloud Service te gebruiken en uw project via de Manager van de Wolk te opstellen.
 
-## Niet-actieve catalogusfuncties inschakelen (optioneel) {#staging}
+## Functies inschakelen die verificatie vereisen (optioneel) {#staging}
 
 >[!NOTE]
 >
