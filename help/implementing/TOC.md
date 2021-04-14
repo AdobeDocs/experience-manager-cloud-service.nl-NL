@@ -5,12 +5,12 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature-set: Experience Manager
 feature: Gereedschappen voor ontwikkelaars
-role: Ontwikkelaar, architect
+role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
+source-git-commit: cef4c40a0a4af7b3cc7cbe696ceb1a197bbef56a
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 33%
+source-wordcount: '888'
+ht-degree: 32%
 
 ---
 
@@ -63,6 +63,7 @@ ht-degree: 33%
    + [Toegang tot Git](cloud-manager/accessing-git.md)
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Werken met Meerdere bronopslaglocaties voor Git](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [De Opstelling van de Ontwikkeling van het Team van de onderneming voor AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Ontwikkelen voor AEM as a Cloud Service {#developing}
    + [AEM-projectstructuur](developing/introduction/aem-project-content-package-structure.md)
    + [AEM-projectrepositorystructuurpakket](developing/introduction/repository-structure-package.md)
