@@ -2,9 +2,9 @@
 title: Enterprise Team Development Setup - Cloud Services
 description: Volg deze pagina om meer over de Opstelling van de Ontwikkeling van het Team van de Onderneming te leren
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -63,12 +63,12 @@ Elk team gebruikt een vereenvoudigde git werkstroom met twee + N takken, die het
 
 De ontwikkeling wordt gedaan in een eigenschaptak, wanneer de eigenschaprijping het in de ontwikkelingstak wordt samengevoegd. Voltooide en gevalideerde functies worden gekozen uit de ontwikkelingstak en samengevoegd in de stabiele vertakking. Alle wijzigingen worden doorgevoerd via Pull Requests (PR). Elke PR wordt automatisch gevalideerd door kwaliteitspoorten. Sonar wordt gebruikt voor kwaliteitscontrole van de code en er wordt een reeks testreeksen uitgevoerd om ervoor te zorgen dat de nieuwe code geen regressie introduceert.
 
-De installatie in de git-opslagplaats voor cloudbeheer heeft twee vertakkingen:
+De installatie in de git-opslagplaats van Cloud Manager heeft twee vertakkingen:
 
 * A *stabiele releasetak*, met de productiecode van alle teams
 * A *ontwikkelingsvertakking* die de ontwikkelingscode van alle teams bevat
 
-Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak: De stabiele vertakking van een project wordt automatisch naar de stabiele vertakking in de git-opslagplaats van Cloud Managers verschoven. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
+Elke druk aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak veroorzaakt een [github actie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duwtje op de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de git bewaarplaats van de Managers van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
 
 ![](assets/team-setup2.png)
 
