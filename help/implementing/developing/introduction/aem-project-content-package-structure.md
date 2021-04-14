@@ -1,14 +1,14 @@
 ---
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2873'
+ht-degree: 12%
 
 ---
-
 
 # AEM-projectstructuur
 
@@ -86,6 +86,10 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
          + Servicegebruikers
          + Groepen
          + ACLs (toestemmingen)
+
+>[!NOTE]
+>
+>Dezelfde code moet in alle omgevingen worden geïmplementeerd. Dit is nodig om ervoor te zorgen dat ook in productie een niveau van betrouwbaarheidsvalideringen in de werkgebiedomgeving wordt uitgevoerd. Zie [Conservatieve codering voor terugdraaiversies](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks) voor meer informatie.
 
 
 ### Inhoudspakketten
