@@ -2,15 +2,15 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op uw site opnieuw te gebruiken.
 feature: Beheer van meerdere sites
-role: Beheerder
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 0%
 
 ---
-
 
 # Actieve kopieën maken en synchroniseren {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 
 #### Een blauwdruk uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Selecteer in de console **Sites** de pagina in de blauwdruk en open het deelvenster **[Referenties](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (vanuit de werkbalk).
+1. Selecteer in de **Sites**-console de pagina in de live kopie en open het venster **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (vanuit de werkbalk).
 1. Selecteer de optie **Vervagen** in de lijst om de blauwdrukken weer te geven die aan deze pagina zijn gekoppeld.
 1. Selecteer de gewenste blauwdruk in de lijst.
 1. Klik of tik **Uitvoer**.
