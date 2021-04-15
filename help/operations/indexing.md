@@ -1,14 +1,14 @@
 ---
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 2%
 
 ---
-
 
 # Inhoud zoeken en indexeren {#indexing}
 
@@ -169,7 +169,7 @@ De nieuwe versie van de toepassing gebruikt de volgende (veranderde) configurati
 
 ### Een wijziging {#undoing-a-change} ongedaan maken
 
-Soms moet een wijziging in een indexdefinitie worden teruggedraaid. De reden hiervoor zou kunnen zijn dat er een wijziging is gemaakt of dat er niet langer een wijziging nodig is. De indexdefinitie `damAssetAssetLucene-8-custom-3` is bijvoorbeeld per ongeluk gemaakt en is al geïmplementeerd. Hierdoor kunt u terugkeren naar de vorige indexdefinitie `damAssetAssetLucene-8-custom-2`. Om dat te doen, moet u een nieuwe index toevoegen genoemd `damAssetAssetLucene-8-custom-4` die de definitie van de vorige index, `damAssetAssetLucene-8-custom-2` bevat.
+Soms moet een wijziging in een indexdefinitie worden teruggedraaid. De reden hiervoor zou kunnen zijn dat er een wijziging is gemaakt of dat er niet langer een wijziging nodig is. De indexdefinitie `damAssetLucene-8-custom-3` is bijvoorbeeld per ongeluk gemaakt en is al geïmplementeerd. Hierdoor kunt u terugkeren naar de vorige indexdefinitie `damAssetLucene-8-custom-2`. Om dat te doen, moet u een nieuwe index toevoegen genoemd `damAssetLucene-8-custom-4` die de definitie van de vorige index, `damAssetLucene-8-custom-2` bevat.
 
 ### Een index {#removing-an-index} verwijderen
 
@@ -198,7 +198,7 @@ Als een index in een recentere versie van de toepassing moet worden verwijderd, 
     </acme.product-custom-3>
 ```
 
-Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaardindex `damAssetAssetLucene-8`, moet u een index `damAssetAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetAssetLucene-8` bevat.
+Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaardindex `damAssetLucene-8`, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
 
 ### Indexbeschikbaarheid en fouttolerantie {#index-availability-and-fault-tolerance}
 
