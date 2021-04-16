@@ -10,14 +10,14 @@ audience: developer
 feature: Kader voor integratie in de handel
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 0%
 
 ---
-
 
 # Stijl AEM CIF Core Components {#style-aem-cif-core-components}
 
@@ -66,7 +66,7 @@ Wij zullen het [Project van Venia ](https://github.com/adobe/aem-cif-guides-veni
 
    ![Storefront geconfigureerd met Venia-thema](../assets/style-cif-component/venia-store-configured.png)
 
-## Client Libraries en ui.frontend module {#introduction-to-client-libraries}
+## Client Libraries and ui.frontend Module {#introduction-to-client-libraries}
 
 De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema/de stijlen van de storefront worden in AEM beheerd door een [Clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) of clientlibs voor kort. Clientbibliotheken bieden een mechanisme voor het indelen van CSS en Javascript in de code van een project en leveren vervolgens op de pagina.
 
@@ -136,7 +136,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    ![Gecompileerde site-CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   Het bestand is de gecompileerde en geminiatuurde versie van alle bestanden in het project.
+   Het dossier is de gecompileerde en geminificeerde versie van alle dossiers van de Klasse in het project.
 
    >[!NOTE]
    >
@@ -254,7 +254,7 @@ Controleer vervolgens de opname van de clientbibliotheken op de pagina.
 
    Opmerking `venia/clientlibs/clientlib-site.min.css` en `venia/clientlibs/clientlib-site.min.js`. Dit zijn de gecompileerde CSS en Javascript dossiers die uit `ui.frontend` module worden afgeleid.
 
-## Opname van clientbibliotheek met paginasjablonen {#client-library-inclusion-pagetemplates}
+## Opname clientbibliotheek met paginasjablonen {#client-library-inclusion-pagetemplates}
 
 Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientzijde. Controleer vervolgens hoe het gegenereerde project de `clientlib-site`-bibliotheken bevat via [Paginasjablonen](/help/implementing/developing/components/templates.md).
 
@@ -287,7 +287,7 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
    Het voordeel van het gebruiken van Malplaatjes en het beleid van de Pagina om de opneming van cliëntbibliotheken te beheren is dat u het beleid per malplaatje kunt veranderen. U beheert bijvoorbeeld twee verschillende merken binnen dezelfde AEM. Elk merk zal zijn eigen unieke stijl of *theme* maar de basisbibliotheken en de code zullen het zelfde zijn. Een ander voorbeeld: als u een grotere clientbibliotheek had die u alleen op bepaalde pagina&#39;s wilde weergeven, kon u een uniek paginabeleid maken, alleen voor die sjabloon.
 
-## Ontwikkelen van lokale webpack {#local-webpack-development}
+## Ontwikkeling van lokale webpack {#local-webpack-development}
 
 In de vorige oefening, werd een update gemaakt aan een dossiers van de Klasse in `ui.frontend` module en dan na het uitvoeren van een Maven bouwt de veranderingen aan AEM worden opgesteld. Vervolgens bekijken we hoe we een webpack-dev-server kunnen gebruiken om de front-end stijlen snel te ontwikkelen.
 
@@ -331,7 +331,7 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-c
 
    >[!CAUTION]
    >
-   > Als er een fout met betrekking tot Voldoende antwoorden optreedt, stopt u de server en voert u de opdracht `npm rebuild node-sass` uit en herhaalt u de bovenstaande stappen. Dit kan voorkomen als een verschillende versie van `npm` en `node` dan in het project `aem-cif-guides-venia/pom.xml` wordt gespecificeerd.
+   > Als er een fout met betrekking tot Volgen optreedt, stopt u de server en voert u de opdracht `npm rebuild node-sass` uit en herhaalt u de bovenstaande stappen. Dit kan voorkomen als een verschillende versie van `npm` en `node` dan in het project `aem-cif-guides-venia/pom.xml` wordt gespecificeerd.
 
 1. Navigeer naar [http://localhost:8080/](http://localhost:8080/) in een nieuw lusje met zelfde browser zoals het het programma geopende geval van AEM. U moet de startpagina van Venia zien via de webpack-dev-server:
 
