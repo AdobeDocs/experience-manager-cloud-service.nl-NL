@@ -1,18 +1,18 @@
 ---
 title: Caching en prestaties
 description: Leer over de verschillende beschikbare configuraties om GrafiekQL en inhoudcaching toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
+exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 2%
 
 ---
 
-
 # Caching &amp; Prestaties {#caching}
 
-## Component &amp; GraphQL response caching {#graphql}
+## Component &amp; GraphQL Response Caching {#graphql}
 
 De AEM CIF Core Components hebben reeds ingebouwde steun voor caching GraphQL reacties voor individuele componenten. Deze eigenschap kan worden gebruikt om het aantal graafQL achterste vraag door een grote factor te verminderen. Een efficiënte caching kan vooral voor het herhalen van vragen zoals het terugwinnen van de categorieboom voor een navigatiecomponent of het halen van alle beschikbare samenvoegingen/facetwaarden worden bereikt die op de productonderzoek en categoriepagina&#39;s worden getoond.
 
