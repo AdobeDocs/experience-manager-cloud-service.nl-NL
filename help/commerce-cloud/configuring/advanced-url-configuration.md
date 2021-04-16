@@ -6,17 +6,17 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
-
 
 # Geavanceerde URL-configuraties {#url}
 
@@ -43,7 +43,7 @@ Hierdoor worden de URL&#39;s van de productpagina&#39;s geconfigureerd met de vo
 * **Locatie** van product-id: definieert de locatie van de id die wordt gebruikt om de productgegevens op te halen. De standaardwaarde is `SELECTOR`, de andere mogelijke waarde is `SUFFIX`. Met het vorige voorbeeld-URL betekent dit dat de id `chaz-kangeroo-hoodie` wordt gebruikt om de productgegevens op te halen.
 * **Type** product-id: definieert het type id dat moet worden gebruikt bij het ophalen van de productgegevens. De standaardwaarde is `URL_KEY`, de andere mogelijke waarde is `SKU`. Met het vorige voorbeeld-URL betekent dit dat de productgegevens worden opgehaald met een Magento GraphQL-filter, zoals `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### URL-sjabloon voor productlijstpagina {#product-list}
+### URL-sjabloon voor productlijst {#product-list}
 
 Hiermee configureert u de URL&#39;s van de pagina&#39;s met categorieën of productlijsten met de volgende eigenschappen:
 
