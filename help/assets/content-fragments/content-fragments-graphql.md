@@ -2,15 +2,15 @@
 title: Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL
 description: Leer hoe te om AEM Inhoudsfragmenten met GraphQL voor hoofdloze inhoudslevering te gebruiken.
 feature: Contentfragmenten
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
-
 
 # Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -24,7 +24,7 @@ Met Adobe Experience Manager (AEM) als Cloud Service, kunt u de Fragments van de
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) als Cloud Service:
 >
->* [AEM de Handel verbruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM de Handel verbruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM Inhoudsfragmenten werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
