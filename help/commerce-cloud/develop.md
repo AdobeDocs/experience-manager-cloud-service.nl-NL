@@ -7,14 +7,14 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 translation-type: tm+mt
-source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1011'
 ht-degree: 7%
 
 ---
-
 
 # Ontwikkelen AEM Handel voor AEM als Cloud Service {#develop}
 
@@ -53,7 +53,7 @@ De CIF-invoegtoepassing kan als een zip-bestand worden gedownload van het [porta
 >
 >Zorg ervoor u altijd de recentste versie van CIF toe:voegen-aan gebruikt.
 
-### Lokale instellingen
+### Lokale instelling
 
 Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Service SDK gebruikt:
 
@@ -83,11 +83,11 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien, omvat toe:voegen-op CIF een lokale omgekeerde volmacht om het eindpunt van Magento GraphQL plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag GraphQL doen.
+   Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien omvat de toe:voegen-on CIF een lokale omgekeerde volmacht om het eindpunt van GraphQL van de Handel plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag GraphQL doen.
 
    Deze variabele moet ook voor de AEM worden ingesteld als een Cloud Service-omgeving. Voor meer informatie over variabelen, zie [Het vormen OSGi voor AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optioneel) Als u functies voor gefaseerde catalogi wilt inschakelen, moet u een integratietoken maken voor uw Magento-instantie. Volg de stappen bij [Getting Started](./getting-started.md#staging) om het token te maken.
+1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Magento-instantie. Volg de stappen bij [Getting Started](./getting-started.md#staging) om het token te maken.
 
    Plaats een geheim OSGi met de naam `COMMERCE_AUTH_HEADER` aan de volgende waarde:
 
@@ -98,6 +98,10 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
    Voor meer informatie over geheimen, zie [Het vormen OSGi voor AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. De AEM starten als Cloud Service-SDK
+
+>[!NOTE]
+>
+>Zorg ervoor u AEM als Cloud Service SDK in het zelfde eindvenster begint de omgevingsvariabele in stap 5 werd geplaatst. Als u het in een afzonderlijk eindvenster of door het .jar dossier begint te tweemaal klikken zorg ervoor dat de omgevingsvariabele zichtbaar is.
 
 Verifieer de opstelling via de console OSGI: `http://localhost:4502/system/console/osgi-installer`. De lijst moet de CIF-add-on gerelateerde bundels, het inhoudspakket en de configuraties OSGI bevatten, zoals gedefinieerd in het bestand met het functiemodel.
 
@@ -131,7 +135,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-De componenten van de Kern van CIF kunnen in om het even welk project worden gebruikt door of het verstrekte `all` pakket of individueel gebruikend het CIF inhoudspakket en verwante SGI bunldes te omvatten. Om de Componenten van de Kern van CIF aan een project manueel toe te voegen gebruiken de volgende gebiedsdelen:
+De componenten van de Kern van CIF kunnen in om het even welk project worden gebruikt door of het verstrekte `all` pakket of individueel te omvatten gebruikend het CIF inhoudspakket en verwante bundels OSGI. Om de Componenten van de Kern van CIF aan een project manueel toe te voegen gebruiken de volgende gebiedsdelen:
 
 ```java
 <dependency>
@@ -165,7 +169,7 @@ De componenten van de Kern van CIF kunnen in om het even welk project worden geb
 
 ### AEM Venia Reference Store gebruiken
 
-Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden met best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
+Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
 
 Om aan de slag te gaan met de Venia Reference Store klonen we gewoon de Git-opslagplaats en begint u het project aan te passen aan uw behoeften.
 
