@@ -1,24 +1,24 @@
 ---
-title: AEM Handel als Cloud Service
-description: AEM Handel als Cloud Service zelf-hulpmiddelen en documentatiekoppelingen
+title: AEM Inhoud en Handel
+description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '356'
 ht-degree: 82%
 
 ---
 
+# Inhoud en handel AEM {#commerce-guide}
 
-# Handel AEM als Cloud Service {#commerce-guide}
+Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en Handel.
 
-Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel als Cloud Service.
+## Belangrijke artikelen voor inhoud en handel {#key-articles}
 
-## Belangrijke handelsartikelen {#key-articles}
-
-* [Invoering van AEM Handel als Cloud Service](overview.md)
-* [Architectuur van AEM Handel als Cloud Service](architecture/magento.md)
-* [Aan de slag](getting-started.md)
+* [Invoering van AEM inhoud en handel](introduction.md)
+* [Aan de slag met AEM Inhoud en Handel](/help/commerce-cloud/getting-started.md)
+* [Ontwikkeling van AEM inhoud en handel](/help/commerce-cloud/develop.md)
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
