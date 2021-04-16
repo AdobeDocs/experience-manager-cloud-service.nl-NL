@@ -1,5 +1,5 @@
 ---
-title: Multi-Store instellen
+title: Multi-Store-installatie voor handel
 description: Leer hoe u meerdere winkelweergaven van Magento tot AEM kunt toewijzen. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
 sub-product: Handel
 version: cloud-service
@@ -9,16 +9,16 @@ audience: administrator
 feature: Kader voor integratie in de handel
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-
-# Installatie van meerdere winkels {#multi-store}
+# Commerce Multi-Store Setup {#multi-store}
 
 De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
@@ -45,6 +45,10 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
    * Een nieuwe configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
    Deze nieuwe configuratie zal als kindconfiguratie van de basis worden gecreeerd. U kunt nu naar Extra -> Algemeen -> Browser van de Configuratie gaan en de configuratiemontages creëren.
+
+   >[!TIP]
+   >
+   > Commerciële catalogi kunnen worden geadresseerd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Magento 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
