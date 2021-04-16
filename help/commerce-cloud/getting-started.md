@@ -9,10 +9,10 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 translation-type: tm+mt
-source-git-commit: e34592d24c8f6c17e6959db1d5c513feaf6381c8
+source-git-commit: 08e258d4e9cd67de3da2aa57c058036bd104472d
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 1%
 
 ---
 
@@ -33,28 +33,36 @@ Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bes
 
 De tweede stap is zelfbediening voor elke AEM als omgeving van een Cloud Service. Er zijn sommige extra configuraties u na de aanvankelijke levering van toe:voegen-op CIF zult moeten doen.
 
-## AEM verbinden met een handelsoplossing {#magento}
+## Het verbinden van AEM met een Oplossing van de Handel {#magento}
 
 Om toe:voegen-op CIF &amp; [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing te verbinden, moet u het eindpunt GraphQL URL via een de milieuvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
+
+Deze omgevingsvariabele wordt op twee plaatsen gebruikt:
+
+- GraphQL roept van AEM aan handels achterste deel, via één of andere gemeenschappelijke cliënt GraphQl, die door de AEM componenten van de Kern van CIF en componenten van het klantenproject wordt gebruikt.
+- Opstelling een proxyURL GraphQL op elke AEM milieu de variabele beschikbaar bij `/api/graphql` wordt geplaatst. Dit wordt gebruikt door de AEM handels auteurshulpmiddelen (toe:voegen-aan CIF) en cliënt-zijcomponenten CIF.
+
 Een verschillend eindpuntURL GraphQL kan voor elke AEM als milieu van de Cloud Service worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat eindpunt GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
+
+De CIF-invoegtoepassing is optioneel en alleen voor Adobe Commerce Enterprise/Cloud en ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Dit vereist om een toestemmingstoken te vormen. Het gevormde toestemmingstoken is slechts beschikbaar en gebruikt op AEM auteursinstanties om veiligheidsredenen. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
 
 Er zijn twee opties om het eindpunt te vormen:
 
-### 1) Via de interface van Cloud Manager (standaard)
+### Via Cloud Manager-gebruikersinterface (standaard) {#cm-ui}
 
 Dit kan worden gedaan via een dialoogvenster op de pagina Milieu-details. Wanneer het bekijken van deze pagina voor een handel-Toegelaten programma, zal een knoop worden getoond als het eindpunt momenteel niet wordt gevormd:
 
-![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cmui.png)
+![CM-omgevingsinformatie](/help/commerce-cloud/assets/commerce-cmui.png)
 
 Als u op deze knop klikt, wordt een dialoogvenster geopend:
 
-![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![Eindpunt van CM-handel](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Nadat het eindpunt (en, naar keuze, het teken) wordt geplaatst, zal het eindpunt op de detailpagina worden getoond. Als u op het pictogram Bewerken klikt, wordt hetzelfde dialoogvenster geopend waarin het eindpunt indien nodig kan worden gewijzigd.
+Nadat het eindpunt (naar keuze een authentificatietoken voor gefaseerde catalogussteun) wordt geplaatst, zal het eindpunt op de detailpagina worden getoond. Als u op het pictogram Bewerken klikt, wordt hetzelfde dialoogvenster geopend waarin het eindpunt indien nodig kan worden gewijzigd.
 
-![Eco-vriendelijke badge - definitieve implementatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
+![CM-omgevingsinformatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Via Adobe I/O CLI
+### Via Adobe I/O CLI {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -76,28 +84,58 @@ Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappe
 
    De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://demo.magentosite.cloud/graphql`.
 
+4. Catalogusfuncties met status inschakelen die verificatie vereisen (optioneel)
+
+   >[!NOTE]
+   >
+   >Deze functie is alleen beschikbaar bij Adobe Commerce Enterprise of Cloud Edition. Zie [Op token gebaseerde verificatie](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) voor meer informatie.
+
+   Stel de geheime variabele `COMMERCE_AUTH_HEADER` in Cloud Manager in:
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
+   ```
+
 >[!TIP]
 >
 >U kunt alle variabelen van de Manager van de Wolk een lijst maken gebruikend het volgende bevel om te controleren tweemaal: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 Met dit, bent u klaar om AEM Handel als Cloud Service te gebruiken en uw project via de Manager van de Wolk te opstellen.
 
-## Functies inschakelen die verificatie vereisen (optioneel) {#staging}
+## Opslaan en catalogi configureren {#catalog}
 
->[!NOTE]
->
->Deze functie is alleen beschikbaar bij Magento Enterprise Edition of Magento Cloud.
+De toe:voegen-op CIF en [CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels (of opslagmeningen, enz.) worden verbonden.Door gebrek, wordt toe:voegen-op CIF opgesteld met een gebrek config die met de standaardopslag en de catalogus van de Handel van Adobe verbindt (Magento).
 
-1. Meld u aan bij Magento en maak een integratietoken. Zie [Op token gebaseerde verificatie](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) voor meer informatie. Zorg ervoor dat het integratietoken *only* toegang tot `Content -> Staging` middelen heeft. Kopieer de waarde `Access Token`.
+Deze configuratie kan voor het project via CIF Cloud Service config worden aangepast die deze stappen volgt:
 
-1. Stel de geheime variabele `COMMERCE_AUTH_HEADER` in Cloud Manager in:
+1. Ga in AEM naar Extra -> Cloud Services -> CIF-configuratie
 
-   ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
-   ```
+2. Selecteer de handelsconfiguratie u wilt veranderen
 
-   Zie [AEM Commerce verbinden met Magento](#magento) voor het configureren van de Adobe I/O CLI voor Cloud Manager.
+3. De configuratie-eigenschappen openen via de actiebalk
 
-## Integratie van andere bedrijven {#integrations}
+![Configuratie CIF-Cloud Services](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
-Voor de integratie van de derdehandel, is een [API mappinglayer](architecture/third-party.md) nodig om AEM Handel als Cloud Service en de Componenten van de Kern van CIF met uw handelsysteem te verbinden. Deze API-toewijzingslaag wordt doorgaans geïmplementeerd op Adobe I/O Runtime. Neem contact op met uw verkoper voor de beschikbare integratie en toegang tot Adobe I/O Runtime.
+De volgende eigenschappen kunnen worden geconfigureerd:
+
+- Cliënt GraphQL - selecteer de gevormde cliënt GraphQL voor handel achterste mededeling. Dit zou typisch bij gebrek moeten blijven.
+- Winkelweergave - de weergave-id (Magento) van de winkel. Als dit leeg is, wordt de standaardwinkelweergave gebruikt.
+- GraphQL de Weg van de Volmacht - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt GraphQL.
+   >[!NOTE]
+   >
+   > In de meeste instellingen mag de standaardwaarde `/api/graphql` niet worden gewijzigd. Alleen geavanceerde instellingen die de geleverde GraphQL-proxy niet gebruiken, moeten deze instelling wijzigen.
+- De Steun van UID van de Catalogus van de inschakelen - laat steun voor UID in plaats van identiteitskaart in de handel achterste vraag GraphQL toe.
+   >[!NOTE]
+   >
+   > Steun voor UIDs werd geïntroduceerd in de Handel van de Adobe (Magento) 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+- Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
+
+De configuratie hierboven wordt getoond is voor verwijzing. De projecten moeten hun eigen configuraties bieden.
+
+Zie de zelfstudie [Commerce Multi-Store Setup](configuring/multi-store-setup.md) voor meer complexe instellingen die gebruikmaken van meerdere AEM sitestructuren die zijn gecombineerd met verschillende handelscatalogi.
+
+## Aanvullende bronnen {#additional-resources}
+
+- [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
+- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [Multi-Store-installatie voor handel](configuring/multi-store-setup.md)
