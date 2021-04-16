@@ -7,13 +7,14 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -84,13 +85,13 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
    >[!NOTE]
    >
-   > Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend *wimpel* pictogram).
+   > Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend _wimpel_ pictogram).
 
 4. Er wordt nu een product weergegeven door de Product Teaser. De naam van het product en de prijs van het product zijn standaardkenmerken die worden weergegeven.
 
    ![Productteam - standaardstijl](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Een aangepast kenmerk toevoegen in Magento {#add-custom-attribute}
+## Aangepast kenmerk toevoegen in Magento {#add-custom-attribute}
 
 De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento. Voeg vervolgens een nieuw kenmerk voor **Eco Friendly** toe als onderdeel van het kenmerk product dat is ingesteld met de gebruikersinterface van Magento.
 
@@ -108,7 +109,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento.
 1. Vul het formulier **Nieuw kenmerk** in met de volgende waarden (standaardinstellingen voor andere waarden behouden)
 
    | Veldset | Veldlabel | Waarde |
-   |-----------|-------------|---------|
+   | ----------------------------- | ------------------ | ---------------- |
    | Eigenschappen van kenmerk | Kenmerklabel | **Eco Friendly** |
    | Eigenschappen van kenmerk | Invoertype catalogus | **Ja/Nee** |
    | Geavanceerde kenmerkeigenschappen | Kenmerkcode | **ecovriendelijk** |
@@ -136,7 +137,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento.
    >
    > Meer informatie over [Cachebeheer kunt u vinden in de gebruikershandleiding van Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Gebruik een IDE GraphQL om attribuut {#use-graphql-ide} te verifiëren
+## Gebruik een IDE GraphQL om Attribuut {#use-graphql-ide} te verifiëren
 
 Alvorens in AEM code te springen is het nuttig om [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) te onderzoeken gebruikend IDE GraphQL. De integratie van Magento met AEM wordt hoofdzakelijk gedaan via een reeks vragen GraphQL. Het begrip van en het wijzigen van de vragen GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
 
@@ -163,17 +164,17 @@ Daarna, gebruik IDE GraphQL om te verifiëren dat het `eco_friendly` attribuut a
 
    ```json
    {
-   "data": {
+     "data": {
        "products": {
-           "items": [
-               {
-               "name": "Valeria Two-Layer Tank",
-               "sku": "VT11",
-               "eco_friendly": 1
-               }
-           ]
+         "items": [
+           {
+             "name": "Valeria Two-Layer Tank",
+             "sku": "VT11",
+             "eco_friendly": 1
            }
+         ]
        }
+     }
    }
    ```
 
@@ -357,11 +358,13 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
    ```html
    <!--/* productteaser.html */-->
-   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
-       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-       data-sly-use.actionsTpl="actions.html"
-       data-sly-test.isConfigured="${properties.selection}"
-       data-sly-test.hasProduct="${product.url}">
+   <sly
+     data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.actionsTpl="actions.html"
+     data-sly-test.isConfigured="${properties.selection}"
+     data-sly-test.hasProduct="${product.url}"
+   ></sly>
    ```
 
    U ziet dat het Sling-model voor `MyProductTeaser` wordt gebruikt en toegewezen aan de variabele `product`.
@@ -370,15 +373,21 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
    ```html
    ...
-   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
-       <div data-sly-test="${product.showBadge}" class="item__badge">
-           <span>${properties.text || 'New'}</span>
-       </div>
-       <!--/* Insert call to Eco Friendly here */-->
-       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
-           <span>Eco Friendly</span>
-       </div>
-   ...
+   <div
+     data-sly-test="${isConfigured && hasProduct}"
+     class="item__root"
+     data-cmp-is="productteaser"
+     data-virtual="${product.virtualProduct}"
+   >
+     <div data-sly-test="${product.showBadge}" class="item__badge">
+       <span>${properties.text || 'New'}</span>
+     </div>
+     <!--/* Insert call to Eco Friendly here */-->
+     <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+       <span>Eco Friendly</span>
+     </div>
+     ...
+   </div>
    ```
 
    Wanneer het roepen van een het Verschuiven Model methode in HTML wordt `get` en `is` gedeelte van de methode gelaten vallen en de eerste brief wordt verlaagd. Zo `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly`. Gebaseerd op de booleaanse waarde die van `.isEcoFriendly()` is teruggekeerd bepaalt als `<span>Eco Friendly</span>` wordt getoond.
@@ -423,7 +432,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
    >
    > U kunt ook enkele stacksporen zien als het product dat in het meetapparaat wordt gebruikt het `eco_friendly`-kenmerk niet heeft als onderdeel van de kenmerkset ervan.
 
-## Stijlen toevoegen voor milieuvriendelijk badge {#add-styles}
+## Stijlen toevoegen voor de milieuvriendelijke badge {#add-styles}
 
 Op dit punt werkt de logica voor wanneer om **Eco Friendly** badge te tonen, nochtans kon de gewone tekst sommige stijlen gebruiken. Voeg vervolgens een pictogram en stijlen toe aan de module `ui.frontend` om de implementatie te voltooien.
 
@@ -453,7 +462,7 @@ Op dit punt werkt de logica voor wanneer om **Eco Friendly** badge te tonen, noc
            width: 45px;
            height: 45px;
            text-indent: -9999px;
-           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           background: no-repeat center center url('../resources/images/eco_friendly.svg');
            }
        }
    ...
@@ -487,8 +496,8 @@ Controleer de functionaliteit van de **New** badge die reeds in de Teaser van he
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
-* [Aanpassen AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [Kerncomponenten aanpassen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-* [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
+- [Aanpassen AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [Kerncomponenten aanpassen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
+- [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
