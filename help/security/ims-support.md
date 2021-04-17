@@ -1,14 +1,14 @@
 ---
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Hieronder vindt u de belangrijkste OSGI-configuraties die moeten worden aangepas
 
 ### Producten en gebruikerstoegang beheren in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wanneer de productbeheerder zich aanmeldt bij Admin Console, worden meerdere instanties van de AEM Managed Services-productcontext weergegeven, zoals hieronder wordt getoond:
+Wanneer de Beheerder van het Product aan Admin Console het programma opent, zullen zij veelvoudige instanties van de AEM als Context van het Product van de Cloud Service zien, zoals hieronder getoond. Selecteer bijvoorbeeld een van de producten op de pagina **Overzicht**:
 
 ![Instantieaanmelding](/help/security/assets/ims6.png)
 
-In dit voorbeeld heeft de organisatie **AEM-MS-Onboard** 32 instanties die verschillende topologieën en omgevingen voor bijvoorbeeld fase of productie omspannen.
+Er wordt een lijst met bestaande instanties weergegeven:
 
 ![Instantieaanmelding2](/help/security/assets/ims7.png)
 
-Onder elke Context Product-instantie zijn er bijbehorende productprofielen. Deze productprofielen worden gebruikt voor het toewijzen van toegang aan gebruikers en groepen met de vereiste bevoegdheden.
+Onder elke instantie van de Context van het Product, zullen er instanties zijn die de diensten van de Auteur of van de Publicatie over Productie, Stadium, of milieu&#39;s van de Ontwikkeling overspannen. Elke instantie wordt gekoppeld aan de rollen Productprofielen of Cloud Manager. Deze productprofielen worden gebruikt om toegang toe te wijzen aan Gebruikers en Groepen met de vereiste voorrechten.
 
 Het profiel **Administrator_xxx** wordt gebruikt om beheerdersrechten toe te kennen in de bijbehorende AEM-instantie, terwijl het profiel **User_xxx** wordt gebruikt om standaardgebruikers toe te voegen.
 
@@ -241,4 +241,3 @@ Om toegang te krijgen tot AEM-instanties moet de gebruiker worden toegevoegd aan
 Elke auteurinstantie heeft een AEM-beheerdersprofiel en een AEM-gebruikersprofiel en elke publicatie-instantie heeft een AEM-gebruikersprofiel. U kunt desgewenst andere profielen toevoegen.
 
 Als u toegang tot het beheerniveau van de AEM-instantie wilt krijgen, voegt u de gebruiker toe aan het AEM-beheerdersprofiel voor dat specifieke product.
-
