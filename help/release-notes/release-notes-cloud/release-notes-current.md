@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: baa9f84e8a32bbfdfa6717225fb706ea81b94e06
+source-git-commit: affe1f0be3f3448e15787cdd831474e0a9d5de6b
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
@@ -169,21 +169,6 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart
 * Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
 
 ## De tool Content Transfer {#content-transfer-tool}
-
-### Releasedatum {#release-date-ctt-april}
-
-De releasedatum voor Content Transfer Tool v1.3.8 is 15 april 2021.
-
-### Opgeloste problemen {#bug-fixes-ctt-april}
-
-* CTT heeft geen tekstredities voor elementen gemaakt. Wanneer elementen naar Cloud Service worden gemigreerd, zijn tekstredities nodig om op tekstinhoud te kunnen zoeken. Dit probleem is opgelost.
-
-* CTT met wipe=true resulteerde in onjuiste telindex op de instantie van de doelCloud Service. Dit is opgelost.
-
-* De auto-verfrist eigenschap in CTT UI veroorzaakte veelvoudige insecten. Deze kwesties zijn opgelost.
-
-* De tekstkoppen in de CTT-gebruikersinterface overlappen elkaar. Dit is opgelost.
-
 
 ### Releasedatum {#release-date-ctt}
 
