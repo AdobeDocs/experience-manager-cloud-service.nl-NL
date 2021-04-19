@@ -7,9 +7,9 @@ feature: Middelenbeheer, Publiceren, Samenwerking, Middelenverwerking
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4361'
+source-wordcount: '4358'
 ht-degree: 10%
 
 ---
@@ -47,8 +47,6 @@ Zie [digitale elementen toevoegen aan Experience Manager](add-assets.md).
 
 Als een DAM-gebruiker een of meer middelen uploadt die al in de opslagplaats aanwezig zijn, detecteert [!DNL Experience Manager] de duplicatie en wordt de gebruiker hiervan op de hoogte gebracht. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen. Om de eigenschap toe te laten, vorm [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Zie [hoe te om configuraties OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html) te doen. De duplicatiedetectie is gebaseerd op de unieke `dam:sha1`-waarde die is opgeslagen op `jcr:content/metadata/dam:sha1`. Dit betekent dat dubbele elementen worden gedetecteerd, zelfs als de bestandsnamen verschillend zijn.
 
-![Detecteren van dubbele OSGi-configuratie](assets/duplicate-detection.png)
-
 U kunt het configuratiebestand `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` toevoegen in aangepaste code en het bestand kan het volgende bevatten:
 
 ```json
@@ -58,7 +56,7 @@ U kunt het configuratiebestand `/apps/example/config.author/com.adobe.cq.assetco
 }
 ```
 
-Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
+Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
 
 ![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
 
@@ -524,7 +522,7 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/manage-digital-assets.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
