@@ -1,9 +1,9 @@
 ---
 title: Opvallende wijzigingen van de add-on van het kader voor de integratie van de handel (CIF)
 description: Opvallende veranderingen van het Kader voor de Integratie van de Handel (CIF) in vergelijking met de oude CIF-versies.
-exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Adobe Experience Manager als Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM projecten te beheren. Om meer over deze mogelijkheden te leren, te volgen gelieve de verbinding voor [veranderingen in Experience Manager als Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-Dit document benadrukt de belangrijke verschillen tussen de add-on en oude CIF versies van het Kader voor de Integratie van de Handel (CIF), hoofdzakelijk gekend als Classic (Quickstart) een open bron CIF.
+In dit document worden de belangrijke verschillen tussen de add-on en oude CIF-versies van het kader voor de integratie van de handel (Commerce Integration Framework, CIF) belicht, die voornamelijk CIF Classic (Quickstart) en CIF Open-source worden genoemd.
 
 ## Installatie en updates
 
