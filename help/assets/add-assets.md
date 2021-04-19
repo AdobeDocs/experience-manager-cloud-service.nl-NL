@@ -2,15 +2,15 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 feature: Middelenbeheer, uploaden
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1998'
 ht-degree: 0%
 
 ---
-
 
 # Digitale elementen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam w
 ## Elementen uploaden of invoegen met behulp van API&#39;s {#upload-using-apis}
 
 Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [activaupload](developer-reference-material-apis.md#asset-upload-technical) sectie van de ontwikkelaarsverwijzing.
+
+## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
+
+* Adobe raadt aan om in [!DNL Experience Manager Assets] in elke map maximaal 1000 bestanden toe te voegen. Hoewel u meer middelen aan een omslag kunt toevoegen, is het mogelijk dat u prestatieskwesties zoals langzamere navigatie aan dergelijke omslagen ziet.
 
 >[!MORELIKETHIS]
 >
