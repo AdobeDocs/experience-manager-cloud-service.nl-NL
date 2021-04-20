@@ -1,8 +1,8 @@
 ---
 title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
 description: Leer hoe u Dynamic Media-video of afbeeldingselementen op een webpagina insluit.
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

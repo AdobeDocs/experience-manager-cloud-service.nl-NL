@@ -1,8 +1,8 @@
 ---
 title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
 description: Leer hoe u de functie voor responsieve code gebruikt om geoptimaliseerde afbeeldingen van Dynamic Media te leveren.
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt

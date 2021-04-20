@@ -1,8 +1,8 @@
 ---
 title: Carousel-banners
 description: Leer hoe u met Carousel Banners in Dynamic Media werkt.
-feature: Carousel-banners
-topic: Zakelijke praktiserer
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

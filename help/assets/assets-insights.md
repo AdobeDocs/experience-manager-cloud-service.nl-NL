@@ -2,7 +2,7 @@
 title: 'Asset Insights '
 description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

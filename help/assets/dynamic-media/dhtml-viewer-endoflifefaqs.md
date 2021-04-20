@@ -1,8 +1,8 @@
 ---
 title: DHTML Viewer End-of-Life
 description: Met ingang van 31 januari 2014 is het Platform van de DHTML-viewer officieel levenseinde.
-topic: Zakelijke praktiserer
-role: Beheerder, Business Practiter
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
-feature: Beheer van bedrijfsmiddelen
-role: Zakelijke praktiserer, leider
+feature: Asset Management
+role: Business Practitioner,Leader
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

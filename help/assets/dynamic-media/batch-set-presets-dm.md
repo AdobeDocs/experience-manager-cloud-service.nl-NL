@@ -2,8 +2,8 @@
 title: Voorinstellingen batchset
 description: Leer hoe u afbeeldingssets kunt automatiseren en het maken van centrifuges kunt uitvoeren met behulp van voorinstellingen voor batchsets in Dynamic Media.
 contentOwner: Rick Brough
-feature: Voorinstellingen afbeelding, voorinstellingen viewer
-topic: Zakelijke praktiserer
+feature: Image Presets,Viewer Presets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt

@@ -4,8 +4,8 @@ user-guide-title: Beveiliging voor AEM as a Cloud Service
 breadcrumb-title: Beveiligingsgids
 user-guide-description: Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service.
 feature-set: Experience Manager Sites
-feature: Configureren
-role: Beheerder
+feature: Configuring
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

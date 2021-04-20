@@ -1,8 +1,8 @@
 ---
 title: Interactieve afbeeldingen
 description: Leer hoe u met interactieve afbeeldingen werkt in Dynamic Media.
-feature: Interactieve afbeeldingen
-topic: Zakelijke praktiserer
+feature: Interactive Images
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt

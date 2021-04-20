@@ -3,7 +3,7 @@ title: Aanbevolen werkwijzen om te integreren met [!DNL Adobe Creative Cloud]
 description: De beste praktijken integreren een plaatsing van de Experience Manager met Adobe Creative Cloud om werkschema's van de activaoverdracht te stroomlijnen en maximumefficiency te bereiken.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Samenwerking,Adobe Asset Link,Desktop App
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt

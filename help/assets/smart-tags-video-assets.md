@@ -1,8 +1,8 @@
 ---
 title: Slimme tag toewijzen aan video-elementen
 description: Experience Manager voegt automatisch contextafhankelijke en beschrijvende slimme tags toe aan video's met [!DNL Adobe Sensei].
-feature: Slimme tags,tags toepassen
-role: Beheerder, Business Practiter
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

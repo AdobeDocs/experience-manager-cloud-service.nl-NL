@@ -1,8 +1,8 @@
 ---
 title: Inhoud opnieuw gebruiken - Beheer van meerdere sites en Live kopiëren
 description: Maak kennis met de introductie van het hergebruik van inhoud met AEM krachtige functies Live Copy en Multi Site Manager.
-feature: Beheer van meerdere sites
-role: Beheerder
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

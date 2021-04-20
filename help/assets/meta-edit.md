@@ -2,8 +2,8 @@
 title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen vindt u in [!DNL Experience Manager Assets] een aantal manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
-feature: Metagegevens
-role: Business Practice,Administrator
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

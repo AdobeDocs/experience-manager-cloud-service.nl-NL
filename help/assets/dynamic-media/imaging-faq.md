@@ -1,8 +1,8 @@
 ---
 title: Slimme beeldverwerking
 description: '"Leer hoe smart imaging de unieke kijkkenmerken van elke gebruiker toepast om automatisch de juiste beelden te bedienen die voor hun ervaring zijn geoptimaliseerd, wat resulteert in betere prestaties en betrokkenheid."'
-feature: Middelenbeheer, uitvoeringen
-topic: Zakelijke praktiserer
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

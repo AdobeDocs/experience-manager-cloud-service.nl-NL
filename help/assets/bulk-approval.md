@@ -2,8 +2,8 @@
 title: Elementen in mappen en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Verzamelingen,Samenwerking
-role: Zakelijke praktiserer
+feature: Collections,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-middelen kunt leveren.
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

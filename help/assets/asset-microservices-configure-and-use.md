@@ -2,8 +2,8 @@
 title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
-feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
-role: Architect,beheerder
+feature: Asset Compute Microservices,Workflow,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

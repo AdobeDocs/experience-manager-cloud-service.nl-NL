@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-afbeeldingsprofielen
 description: '"Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen."'
-feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
-topic: Zakelijke praktiserer
+feature: Asset Management,Image Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt

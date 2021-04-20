@@ -1,7 +1,7 @@
 ---
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
-feature: Inhoudsfragmenten,GrafiekQL API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

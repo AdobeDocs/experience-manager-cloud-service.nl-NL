@@ -1,8 +1,8 @@
 ---
 title: Contentfragmenten - Overwegingen verwijderen
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
-feature: Contentfragmenten
-role: Zakelijke praktiserer
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

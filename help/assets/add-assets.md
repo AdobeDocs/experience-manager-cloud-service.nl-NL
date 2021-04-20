@@ -1,7 +1,7 @@
 ---
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
-feature: Middelenbeheer, uploaden
+feature: Asset Management,Upload
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt

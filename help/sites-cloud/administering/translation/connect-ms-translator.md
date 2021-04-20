@@ -1,8 +1,8 @@
 ---
 title: Verbinding maken met Microsoft Translator
 description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de verpakking om uw vertaalworkflow te automatiseren.
-feature: Taalkopie
-role: Beheerder
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

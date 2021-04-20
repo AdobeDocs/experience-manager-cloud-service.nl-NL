@@ -1,9 +1,9 @@
 ---
 title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
 description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
-feature: Voorinstellingen afbeelding, viewers, uitvoeringen
-topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

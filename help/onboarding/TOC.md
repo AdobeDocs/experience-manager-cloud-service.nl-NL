@@ -4,7 +4,7 @@ user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature-set: Experience Manager Sites
-feature: Implementeren
+feature: Deploying
 role: Architect, Developer
 translation-type: tm+mt
 source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6

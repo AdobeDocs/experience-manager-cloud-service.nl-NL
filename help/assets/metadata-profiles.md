@@ -2,8 +2,8 @@
 title: Metadataprofielen
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
-feature: Metagegevens
-role: Business Practice,Administrator
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

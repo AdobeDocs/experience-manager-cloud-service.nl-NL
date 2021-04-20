@@ -1,9 +1,9 @@
 ---
 title: Hotlinkbeveiliging in Dynamic Media activeren
 description: Leer hoe u hotlinkbeveiliging activeert in Dynamic Media.
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

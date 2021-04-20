@@ -3,7 +3,7 @@ title: Digitale middelen beheren
 description: Meer informatie over verschillende methoden voor middelenbeheer en -bewerking.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Middelenbeheer, Publiceren, Samenwerking, Middelenverwerking
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt

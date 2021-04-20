@@ -1,8 +1,8 @@
 ---
 title: Inhoud vertalen voor meertalige sites
 description: Bekijk een overzicht van het vertalen van inhoud voor meertalige sites.
-feature: Taalkopie
-role: Beheerder
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

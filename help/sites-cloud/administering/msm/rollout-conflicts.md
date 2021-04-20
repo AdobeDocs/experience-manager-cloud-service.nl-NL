@@ -1,8 +1,8 @@
 ---
 title: Conflicten bij rollout
 description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beheren en oplossen.
-feature: Beheer van meerdere sites
-role: Beheerder
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -4,8 +4,8 @@ user-guide-title: Overstappen naar AEM as a Cloud Service
 breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 feature-set: Experience Manager Sites
-feature: Implementeren
-role: Architect, ontwikkelaar
+feature: Deploying
+role: Architect, Developer
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

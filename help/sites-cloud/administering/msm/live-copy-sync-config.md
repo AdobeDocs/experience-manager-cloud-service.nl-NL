@@ -1,8 +1,8 @@
 ---
 title: Synchronisatie van actieve kopie configureren
 description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt configureren en aanpassen aan de behoeften van uw project.
-feature: Beheer van meerdere sites
-role: Beheerder
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt

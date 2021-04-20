@@ -1,8 +1,8 @@
 ---
 title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
-topic: '"Beheerder, Business Practitioner"'
-role: Beheerder, Business Practiter
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

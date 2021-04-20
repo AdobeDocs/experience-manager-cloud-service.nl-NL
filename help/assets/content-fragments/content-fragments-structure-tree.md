@@ -1,8 +1,8 @@
 ---
 title: Structuuromvang van inhoudsfragment
 description: Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
-feature: Contentfragmenten
-role: Zakelijke praktiserer
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

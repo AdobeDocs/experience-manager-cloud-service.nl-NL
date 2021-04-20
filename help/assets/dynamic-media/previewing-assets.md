@@ -1,9 +1,9 @@
 ---
 title: Elementen voorvertonen
 description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt bekijken.
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
-role: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor het leveren van inhoud zonder kop.
-feature: Inhoudsfragmenten,GrafiekQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
 source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357

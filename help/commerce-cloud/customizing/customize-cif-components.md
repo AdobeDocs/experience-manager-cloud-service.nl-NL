@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91

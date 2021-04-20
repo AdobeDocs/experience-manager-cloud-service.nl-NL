@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media Newsletter
 description: 'De Dynamic Media-nieuwsbrief van Experience League is een maandelijkse nieuwsbrief. Het is ontworpen om u te helpen snel aan de slag te gaan met Dynamic Media en Dynamic Media Classic, zodat u meteen aan de slag kunt. De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop nieuwsbrief. Er zijn bijvoorbeeld Hoe kan ik-video''s en overzichten van oplossingen. Lees meer over enkele belangrijke functies en mogelijkheden, zoals voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, videoprofielen en meer. '
-feature: Beheer van bedrijfsmiddelen
-topic: '"Beheerder, Business Practitioner"'
-role: Zakelijke praktiserer
+feature: Asset Management
+topic: "Administrator,Business Practitioner"
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

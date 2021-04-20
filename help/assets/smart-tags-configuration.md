@@ -2,8 +2,8 @@
 title: Verbeterde slimme tags
 description: U kunt contextafhankelijke en beschrijvende bedrijfstags toepassen met de AI- en ML-service van Adobe Sensei om de detectie van assets en de snelheid van content te verbeteren.
 contentOwner: AG
-feature: Slimme tags, labelen
-role: Beheerder
+feature: Smart Tags, Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

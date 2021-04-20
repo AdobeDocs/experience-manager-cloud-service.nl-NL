@@ -1,8 +1,8 @@
 ---
 title: Beheer en vertaling van meerdere sites
 description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige websites in AEM kunt beheren.
-feature: Beheer
-role: Beheerder
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

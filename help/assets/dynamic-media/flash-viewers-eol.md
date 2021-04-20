@@ -1,8 +1,8 @@
 ---
 title: Kennisgeving over de gebruiksduur van Flash-viewers
 description: Met ingang van 31 januari 2017 is de ondersteuning voor het Platform van de Flash-viewer officieel beëindigd.
-topic: Zakelijke praktiserer
-role: Beheerder, Business Practiter
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

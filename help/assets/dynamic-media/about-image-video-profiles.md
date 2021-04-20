@@ -1,8 +1,8 @@
 ---
 title: Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen
 description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op Dynamic Media-video-elementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op Dynamic Media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
-feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
-role: Beheerder, Business Practiter
+feature: Asset Management,Image Profiles,Video Profiles
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Rapporten over gebruik en delen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
-feature: Elementenrapporten,beheer van bedrijfsmiddelen
-role: Beheerder, Business Practiter
+feature: Asset Reports,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

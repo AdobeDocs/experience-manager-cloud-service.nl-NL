@@ -2,7 +2,7 @@
 title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
-feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt

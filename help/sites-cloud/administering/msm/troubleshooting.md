@@ -1,8 +1,8 @@
 ---
 title: Problemen met MSM en veelgestelde vragen oplossen
 description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwesties problemen op te lossen en antwoorden te krijgen de gemeenschappelijkste MSM-verwante vragen.
-feature: Beheer van meerdere sites
-role: Beheerder
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

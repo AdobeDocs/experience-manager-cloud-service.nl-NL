@@ -2,8 +2,8 @@
 title: Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van Dynamic Media Image Profiles of Video Profiles
 description: '"Tips en tips en trucs voor het benoemen, ordenen en beheren van Dynamic Media-afbeeldingsbestanden en videobestanden."'
 contentOwner: Rick Brough
-feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
-topic: Zakelijke praktiserer
+feature: Asset Management,Image Profiles,Video Profiles
+topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt

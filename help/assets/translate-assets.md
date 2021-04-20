@@ -2,8 +2,8 @@
 title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen, vertaling
-role: Beheerder, Business Practiter
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

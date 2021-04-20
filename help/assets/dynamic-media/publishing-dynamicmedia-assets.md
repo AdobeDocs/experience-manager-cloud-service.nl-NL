@@ -2,8 +2,8 @@
 title: Dynamic Media-middelen publiceren
 description: Leer hoe u Dynamic Media-middelen publiceert.
 contentOwner: Rick Brough
-feature: Beheer van bedrijfsmiddelen
-topic: Zakelijke praktiserer
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt

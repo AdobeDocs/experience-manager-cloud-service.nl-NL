@@ -1,8 +1,8 @@
 ---
 title: Voorinstellingen afbeelding beheren
 description: '"Meer informatie over voorinstellingen voor afbeeldingen en over het maken, wijzigen en beheren van voorinstellingen voor afbeeldingen."'
-feature: Voorinstellingen afbeelding, viewers, uitvoeringen
-topic: Zakelijke praktiserer
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

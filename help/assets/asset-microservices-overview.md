@@ -2,8 +2,8 @@
 title: Elementen verwerken met behulp van asset microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
-feature: asset compute microservices, workflow, releasegegevens, verwerking van bedrijfsmiddelen
-role: Architect,beheerder
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

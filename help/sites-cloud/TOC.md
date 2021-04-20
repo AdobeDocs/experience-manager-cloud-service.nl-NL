@@ -6,7 +6,7 @@ breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 feature-set: Experience Manager Sites
 feature: Authoring
-role: Zakelijke praktiserer
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

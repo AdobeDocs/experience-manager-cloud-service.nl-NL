@@ -1,7 +1,7 @@
 ---
 title: Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL
 description: Leer hoe te om AEM Inhoudsfragmenten met GraphQL voor hoofdloze inhoudslevering te gebruiken.
-feature: Contentfragmenten
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

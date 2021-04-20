@@ -1,8 +1,8 @@
 ---
 title: Interactieve video's
 description: Leer hoe u in Dynamic Media werkt met interactieve video's en schokkende video's.
-feature: Interactieve video's
-topic: Zakelijke praktiserer
+feature: Interactive Videos
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt

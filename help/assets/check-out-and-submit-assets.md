@@ -2,8 +2,8 @@
 title: Bestanden in [!DNL Assets] inchecken en uitchecken
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
-role: Zakelijke praktiserer
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
