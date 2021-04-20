@@ -3,7 +3,7 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
+source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 0%
@@ -147,4 +147,4 @@ Codevoorbeeld 3
 
 | Configuratie van venster Onderhoud | Wie eigenaar is van de configuratie | Configuratietype | Locatie | Voorbeeld | Parameters |
 |---|---|---|---|---|---|
-| Dagelijks | Klant | JCR-knooppuntdefinitie | Zie locatie 2 hieronder | Zie voorbeeld 2 hieronder | **windowSchedule=daily**  (deze waarde moet niet worden gewijzigd).  <br> **windowStartTime=HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend. <br> **windowEndTime= HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid. |
+| Dagelijks | Klant | JCR-knooppuntdefinitie | Zie locatie 2 hieronder | Zie voorbeeld 2 hieronder | **windowSchedule= daily**  (deze waarde moet niet worden gewijzigd).  <br> **windowStartTime= HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend. <br> **windowEndTime= HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid. |
