@@ -3,7 +3,7 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 0%
@@ -57,11 +57,10 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Zie locatie 1 hieronder</td>
     <td>Zie voorbeeld 1 hieronder</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (deze waarde mag niet worden gewijzigd)</li>
-    <li><strong>windowStartTime</strong> = HH:MM die als klok van 24 uur gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</li>
-    <li><strong>windowEndTime</strong> = HH:MM die als klok van 24 uur gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily (deze waarde moet niet worden gewijzigd) 
+    <strong>windowStartTime</strong> = HH:MM gebruikt als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.
+    <strong>windowEndTime</strong> = HH:MM die als klok van 24 uur gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.
+    </td> 
   </tr>
   <tr>
     <td>Wekelijks</td>
