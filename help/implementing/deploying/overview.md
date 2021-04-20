@@ -2,14 +2,14 @@
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Implementeren
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
-
 
 # Implementeren naar AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Mappen (toevoegen, wijzigen, verwijderen)
    * Bewerkbare sjablonen (toevoegen, wijzigen, verwijderen)
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
-   * Scripts (pakketten kunnen installatiehaken activeren in verschillende stadia van het installatieproces van een pakket
+   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) over installatiekoppen, die gebruikers toestaan om hen uit te voeren omvatten).
 
 U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5 documentatie.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
