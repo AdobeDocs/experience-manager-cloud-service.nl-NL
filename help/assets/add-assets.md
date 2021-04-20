@@ -5,32 +5,26 @@ feature: Middelenbeheer, uploaden
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# Digitale elementen toevoegen aan Adobe Experience Manager {#add-assets-to-experience-manager}
+# Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+[!DNL Adobe Experience Manager Assets] accepteert veel typen digitale elementen van vele bronnen. Het slaat de binaire getallen en gemaakte uitvoeringen op, kan activa verwerken gebruikend een verscheidenheid van werkschema en de diensten [!DNL Adobe Sensei], staat voor distributie door vele kanalen over vele oppervlakten toe.
 
 [!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets], zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
 
-Er is een aantal uploadmethoden beschikbaar. Naast de meest gebruikte browser upload bestaan er andere methoden om elementen aan de [!DNL Experience Manager]-opslagplaats toe te voegen, zoals bureaubladclients, zoals Adobe Asset Link of [!DNL Experience Manager] desktop app, upload- en innamescripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager]-extensies worden toegevoegd.
-
-We zullen ons hier concentreren op uploadmethoden voor eindgebruikers en koppelingen verschaffen naar artikelen die technische aspecten van het uploaden en opnemen van middelen beschrijven met behulp van [!DNL Experience Manager] API&#39;s en SDK&#39;s.
+Naast de meest gebruikte browser upload bestaan er andere methoden om elementen aan de [!DNL Experience Manager]-opslagplaats toe te voegen, zoals bureaubladclients, zoals Adobe Asset Link of [!DNL Experience Manager] desktop app, upload- en innamescripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager]-extensies worden toegevoegd.
 
 Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
 
 Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [Middelen verwerken bij uploaden](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] als  [!DNL Cloud Service] hefboom een nieuwe manier om activa te uploaden - directe binaire upload. Deze wordt standaard ondersteund door de productmogelijkheden en clients buiten de verpakking, zoals [!DNL Experience Manager]-gebruikersinterface, [!DNL Adobe Asset Link]-, [!DNL Experience Manager]-bureaubladtoepassing en dus transparant voor de eindgebruikers.
->
->Upload code die door klanten technische teams wordt aangepast of uitgebreid moet de nieuwe upload APIs en protocollen gebruiken.
-
-Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
+[!DNL Assets] biedt de volgende uploadmethoden. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
 
 | Upload, methode | Wanneer gebruiken? | Primaire persoon |
 |---------------------|----------------|-----------------|
@@ -38,7 +32,7 @@ Elementen als een [!DNL Cloud Service] bieden de volgende uploadmethoden. Adobe 
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -112,19 +106,13 @@ U kunt een element uploaden met hetzelfde pad (dezelfde naam en dezelfde locatie
 
 * Bestaand element vervangen: Als u een bestaand element vervangt, worden de metagegevens voor het element en eventuele eerdere wijzigingen (bijvoorbeeld annotaties, uitsnijden, enzovoort) die u in het bestaande element hebt aangebracht, verwijderd.
 * Een andere versie maken: Er wordt een nieuwe versie van het bestaande middel gemaakt in de repository. U kunt de twee versies weergeven in de [!UICONTROL Timeline] en desgewenst terugkeren naar de vorige bestaande versie.
-* Beide behouden: Als u ervoor kiest beide elementen te behouden, wordt de naam van het nieuwe element gewijzigd in het nummer `1` dat aan de naam wordt toegevoegd.
-
->[!NOTE]
->
->Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
->
->Als Asset Insights is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics], maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
+* Beide behouden: Als u ervoor kiest beide elementen te behouden, wordt de naam van het nieuwe element gewijzigd.
 
 Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
-[!DNL Experience Manager Assets] Hiermee voorkomt u dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets] Sommige uploadmethoden verhinderen niet dat u elementen uploadt met verboden tekens in de bestandsnamen, maar vervangen de tekens door `-`.
+[!DNL Experience Manager Assets] Hiermee voorkomt u dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.[!DNL Assets]
 
 In het dialoogvenster [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke conventies voor bestandsnaamgeving voor uw organisatie kunt gebruiken. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
 
@@ -226,7 +214,18 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
+* Directe binaire upload is een nieuwe methode om activa te uploaden. Deze wordt standaard ondersteund door de productmogelijkheden en clients, zoals [!DNL Experience Manager]-gebruikersinterface, [!DNL Adobe Asset Link] en [!DNL Experience Manager]-bureaubladtoepassing. Om het even welke douanecode die door klanten technische teams wordt aangepast of uitgebreid moet nieuwe uploaden APIs en protocollen gebruiken.
+
 * Adobe raadt aan om in [!DNL Experience Manager Assets] in elke map maximaal 1000 bestanden toe te voegen. Hoewel u meer middelen aan een omslag kunt toevoegen, is het mogelijk dat u prestatieskwesties zoals langzamere navigatie aan dergelijke omslagen ziet.
+
+* Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [Asset Insights](/help/assets/assets-insights.md) is ingeschakeld om afbeeldingen te volgen of met [!DNL Adobe Analytics] te klikken, maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
+
+* Sommige uploadmethoden verhinderen niet dat u elementen uploadt met [verboden tekens](#filename-handling) in de bestandsnamen. De tekens worden vervangen door het symbool `-`.
+
+* Het uploaden van elementen via de browser ondersteunt alleen platte bestandslijsten en geen geneste maphiërarchieën. Als u alle elementen in een geneste map wilt uploaden, kunt u [desktop app](#upload-assets-desktop-clients) gebruiken.
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
