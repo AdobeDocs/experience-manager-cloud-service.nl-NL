@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
+source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -144,3 +144,7 @@ Codevoorbeeld 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+| Configuratie van venster Onderhoud | Wie eigenaar is van de configuratie | Configuratietype | Locatie | Voorbeeld | Parameters |
+|---|---|---|---|---|---|
+| Dagelijks | Klant | JCR-knooppuntdefinitie | Zie locatie 2 hieronder | Zie voorbeeld 2 hieronder | **windowSchedule=daily**  (deze waarde moet niet worden gewijzigd).  <br> **windowStartTime=HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend. <br> **windowEndTime= HH:** gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid. |
