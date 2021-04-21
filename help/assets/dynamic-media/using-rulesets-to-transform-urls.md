@@ -1,16 +1,15 @@
 ---
 title: Regels gebruiken om URL's te transformeren
 description: Leer hoe u regelsets in Dynamic Media kunt gebruiken om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript™) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 3%
 
 ---
-
 
 # Regelsets gebruiken om URL&#39;s {#using-rulesets-to-transform-urls} om te zetten
 
@@ -81,4 +80,3 @@ Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in ee
    De regelingestelde voorwaarden worden toegepast op de aanvragen voor live Dynamic Media Image Servers.
 
    Als u het regelsetbestand wijzigt, worden de wijzigingen direct toegepast wanneer u het bijgewerkte regelsetbestand opnieuw uploadt en publiceert.
-
