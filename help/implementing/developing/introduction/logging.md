@@ -1,16 +1,16 @@
 ---
-title: Logboekregistratie
-description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
+title: Aanmelden voor AEM als Cloud Service
+description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevens te verzoeken die AEM als Cloud Service registreren.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2332'
 ht-degree: 2%
 
 ---
 
-
-# Logboekregistratie {#logging}
+# Aanmelden voor AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is het registreren een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de AEM als milieu&#39;s van de Ontwikkelaar van een Cloud Service te zuiveren en te begrijpen.
 
@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Cloudomgevingen {#cloud-environments}
 
-AEM als Cloud Service logboeken voor cloudservices kunnen worden geopend door het downloaden via de interface van Cloud Manager of door logbestanden op de opdrachtregel via de opdrachtregelinterface van Adobe I/O te volgen. Raadpleeg de logboekdocumentatie [Cloud Manager](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
+AEM als Cloud Service kunnen logboeken voor de clouddiensten of door het downloaden door de interface van de Manager van de Wolk of door logboeken bij de bevellijn bij het gebruiken van de Adobe I/O bevel lijninterface worden betreden. Raadpleeg de logboekdocumentatie [Cloud Manager](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
 ### Lokale SDK {#local-sdk}
 
