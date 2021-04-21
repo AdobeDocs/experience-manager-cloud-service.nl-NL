@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
-feature: Asset Management,Video Profiles,Renditions
-topic: Business Practitioner
+feature: Middelenbeheer, videoprofielen, uitvoeringen
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3487'
 ht-degree: 9%
 
 ---
