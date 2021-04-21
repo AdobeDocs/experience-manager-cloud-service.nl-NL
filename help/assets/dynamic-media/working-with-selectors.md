@@ -1,16 +1,15 @@
 ---
 title: Werken met kiezers
 description: In deze video ziet u methoden waarmee u elementen kunt selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '712'
 ht-degree: 12%
 
 ---
-
 
 # Werken met kiezers in Dynamic Media {#working-with-selectors}
 
