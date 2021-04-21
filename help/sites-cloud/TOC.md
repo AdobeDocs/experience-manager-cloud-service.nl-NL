@@ -4,13 +4,12 @@ sub-product: Authoring van content in AEM as a Cloud Service
 user-guide-title: Authoring van content in AEM as a Cloud Service
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
-feature-set: Experience Manager Sites
 feature: Authoring
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '308'
 ht-degree: 69%
 
 ---
