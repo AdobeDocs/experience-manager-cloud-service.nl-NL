@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch
 description: Meer informatie over de extensie Dynamic Media Viewers voor Platform launch en Dynamic Media Viewers 5.13. Het laat klanten van Adobe Analytics en Platform launch gebeurtenissen en gegevens gebruiken specifiek voor de Kijkers in hun configuratie van de Platform launch.
-feature: Asset Reports
-topic: "Data Engineer,Administrator,Business Practitioner"
+feature: Elementrapporten
 role: Administrator,Business Practitioner
+exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6280'
+source-wordcount: '6272'
 ht-degree: 9%
 
 ---
-
 
 # Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
