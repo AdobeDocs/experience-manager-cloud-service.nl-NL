@@ -1,17 +1,16 @@
 ---
 title: Informatie over het beheren van Dynamic Media-elementen
 description: Leer hoe u met Dynamic Media-middelen werkt.
-feature: Asset Management
-topic: Business Practitioner
+feature: Beheer van bedrijfsmiddelen
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 12%
+source-wordcount: '121'
+ht-degree: 13%
 
 ---
-
 
 # Informatie over het beheren van Dynamic Media-elementen {#managing-assets}
 
@@ -27,4 +26,3 @@ In de volgende onderwerpen wordt beschreven wat u kunt doen om Dynamic Media-mid
 * [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
 * [Dynamic Media-middelen publiceren](publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](working-with-selectors.md)
-
