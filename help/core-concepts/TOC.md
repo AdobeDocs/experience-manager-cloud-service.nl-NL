@@ -3,14 +3,13 @@ sub-product: Kernbegrippen van AEM as a Cloud Service
 user-guide-title: Kernbegrippen van AEM as a Cloud Service
 breadcrumb-title: Core Concepts Guide
 user-guide-description: Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service.
-feature-set: Experience Manager
-feature: Release Information
+feature: Geen informatie
 role: Architect
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 90%
+source-wordcount: '65'
+ht-degree: 92%
 
 ---
 
