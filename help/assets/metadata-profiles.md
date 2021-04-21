@@ -2,16 +2,16 @@
 title: Metadataprofielen
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
-feature: Metadata
+feature: Metagegevens
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 20%
 
 ---
-
 
 # Metadataprofielen {#metadata-profiles}
 
@@ -63,13 +63,11 @@ Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
 
 ## Een metagegevensprofiel toepassen op mappen {#applying-a-metadata-profile-to-folders}
 
-Wanneer u een metagegevensprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één metagegevensprofiel kunt toewijzen aan een map. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
+Wanneer u een metagegevensprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. De overerving stopt wanneer een ander profiel wordt toegepast op een submap. U kunt slechts één metagegevensprofiel aan een map toewijzen. Overweeg daarom zorgvuldig de mapstructuur waarin u elementen uploadt, opslaat, gebruikt en archiveert.
 
-Als u een ander metagegevensprofiel aan een map hebt toegewezen, overschrijft het nieuwe profiel het vorige profiel. De vorige bestaande mapelementen blijven ongewijzigd. Het nieuwe profiel wordt toegepast op de elementen die later aan de map worden toegevoegd.
+Als u een ander metagegevensprofiel aan een map hebt toegewezen, overschrijft het nieuwe profiel het vorige profiel. De vorige bestaande mapelementen blijven ongewijzigd. Het nieuwe profiel wordt toegepast op de elementen die na de wijziging aan de map worden toegevoegd. U kunt metagegevensprofielen toepassen op specifieke mappen of op alle elementen.
 
 Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangeduid met de naam van het profiel dat in de kaartnaam wordt weergegeven.
-
-U kunt metagegevensprofielen toepassen op specifieke mappen of op alle elementen.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -107,7 +105,7 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevenspr
 
 ## Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een metadataprofiel uit een map verwijderen vanuit het menu **Gereedschappen**, of vanuit de **Eigenschappen** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u metadataprofielen op beide manieren uit mappen kunt verwijderen.
 
