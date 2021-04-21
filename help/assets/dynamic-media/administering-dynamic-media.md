@@ -2,16 +2,15 @@
 title: Dynamic Media instellen
 description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
 contentOwner: Rick Brough
-topic: Administrator
 role: Administrator,Business Practitioner
+exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '179'
 ht-degree: 3%
 
 ---
-
 
 # Dynamic Media {#setting-up-dynamic-media} instellen
 
@@ -44,3 +43,4 @@ Zie ook de volgende onderwerpen:
 >**Als u een upgrade uitvoert:**
 >
 >* Nadat u de Experience Manager hebt uitgevoerd, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een bevorderd geval van Experience Manager en nieuw aan Dynamic Media bent, moet u waarschijnlijk uw activa opnieuw verwerken om hen te maken Dynamic Media-Toegelaten. Zie [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
