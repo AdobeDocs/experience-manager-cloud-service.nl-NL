@@ -1,17 +1,16 @@
 ---
 title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
 description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: Voorinstellingen afbeelding, viewers, uitvoeringen
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 5%
+source-wordcount: '300'
+ht-degree: 6%
 
 ---
-
 
 # Voorinstellingen voor Dynamic Media-afbeelding toepassen {#applying-image-presets}
 
@@ -51,4 +50,3 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >Als het element *en* de voorinstelling voor de afbeelding nog niet is gepubliceerd, is de knop **[!UICONTROL URL]** (of de URL- en RESS-knoppen, indien van toepassing) niet beschikbaar.
    >
    >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media S7-server.
-
