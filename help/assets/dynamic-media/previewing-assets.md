@@ -1,17 +1,16 @@
 ---
 title: Elementen voorvertonen
 description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt bekijken.
-feature: Asset Management
-topic: Business Practitioner
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
+exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
-
 
 # Elementen voorvertonen{#previewing-assets}
 
