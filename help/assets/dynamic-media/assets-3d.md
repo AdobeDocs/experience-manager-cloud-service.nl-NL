@@ -9,9 +9,9 @@ feature: 3D-middelen
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
 workflow-type: tm+mt
-source-wordcount: '2198'
+source-wordcount: '2180'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 
 Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/assets/dynamic-media/previewing-assets.md).
 
-**Een 3D-element weergeven en interactief werken via de pagina met elementdetails**
+**U kunt als volgt een 3D-element weergeven en ermee werken op de pagina met elementdetails:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
 
@@ -114,20 +114,14 @@ Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/asset
 1. Tik op de kaart van het 3D-element om het element op de pagina Details te openen.
 1. Voer op de pagina Details voor het 3D-element een van de volgende handelingen uit:
 
-   * **Draai uw camera**  - Draai uw weergave rond de 3D-scène en de objecten.
-      * _Muis_: Klik met de linkermuisknop en sleep.
-      * _Aanraakscherm_: Druk met één vinger en sleep.
-   * **Pannen met uw camera** : pannen met uw weergave naar links, rechts, omhoog of omlaag.
-      * _Muis_: Klik met de rechtermuisknop en sleep.
-      * _Aanraakscherm_: Druk met twee vingers en sleep.
-   * **Zoom de camera**  in en uit. Zoom de camera in en uit de gebieden van de 3D-scène.
-      * _Muis_: Schuifwiel.
-      * _Aanraakscherm_: Kneep met twee vingers.
-   * **Start de camera**  opnieuw op - centreer de camera opnieuw op een punt op een object in de 3D-scène.
-      * _Muis_: Dubbelklik.
-      * _Aanraakscherm_: Dubbeltik.
-   * **Herstellen**  - Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven.
-   * **Modus**  Volledig scherm - Tik op het pictogram Volledig scherm om de modus Volledig scherm te activeren, in de rechterbenedenhoek van de pagina.
+   | Weergave | Beschrijving | Muishandeling | Handeling op aanraakscherm |
+   | --- | --- | --- | --- |
+   | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
+   | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
+   | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **Herstellen** | Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
+   | **Modus Volledig scherm** | Tik op het pictogram Volledig scherm in de rechterbenedenhoek van de pagina om de modus Volledig scherm te activeren. |  |  |
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Close]** om terug te keren naar de pagina Middelen.
 
@@ -141,7 +135,7 @@ Wanneer een webpagina in de modus **[!UICONTROL Edit]** staat, is interactie met
 
 Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/assets/dynamic-media/previewing-assets.md).
 
-**Een 3D-element in een 3D-mediacomponent weergeven en ermee werken**
+**Een 3D-element in een 3D-mediacomponent weergeven en hiermee werken:**
 
 1. Voer een van de volgende handelingen uit terwijl de modus **[!UICONTROL Edit]** voor een webpagina is geactiveerd:
 
@@ -153,20 +147,14 @@ componentA volledig interactief 3D-element wordt weergegeven, zoals in de  **[!U
 
 1. Voer in de modus **[!UICONTROL Preview]** een van de volgende handelingen uit:
 
-   * **Draai uw camera**  - Draai uw weergave rond de 3D-scène en de objecten.
-      * _Muis_: Klik met de linkermuisknop en sleep.
-      * _Aanraakscherm_: Druk met één vinger en sleep.
-   * **Pannen met uw camera** : pannen met uw weergave naar links, rechts, omhoog of omlaag.
-      * _Muis_: Klik met de rechtermuisknop en sleep.
-      * _Aanraakscherm_: Druk met twee vingers en sleep.
-   * **Zoom de camera**  in en uit. Zoom de camera in en uit de gebieden van de 3D-scène.
-      * _Muis_: Schuifwiel.
-      * _Aanraakscherm_: Kneep met twee vingers.
-   * **Start de camera**  opnieuw op - centreer de camera opnieuw op een punt op een object in de 3D-scène.
-      * _Muis_: Dubbelklik.
-      * _Aanraakscherm_: Dubbeltik.
-   * **Herstellen**  - Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven.
-   * **Modus**  Volledig scherm - Tik op het pictogram Volledig scherm om de modus Volledig scherm te activeren, in de rechterbenedenhoek van de pagina.
+   | Weergave | Beschrijving | Muishandeling | Handeling op aanraakscherm |
+   | --- | --- | --- | --- |
+   | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
+   | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
+   | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **Herstellen** | Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
+   | **Modus Volledig scherm** | Tik op het pictogram Volledig scherm in de rechterbenedenhoek van de pagina om de modus Volledig scherm te activeren. |  |  |
 
 ## Informatie over het werken met de 3D-mediacomponent {#working-with-three-d-media-component}
 
@@ -176,7 +164,6 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u kunt gebruiken in
 * [De 3D-mediacomponent toevoegen aan een webpagina](#adding-the-three-d-media-component-to-a-web-page)
    * [Optioneel - De 3D-mediacomponent configureren](#configuring-the-three-d-component)
 * [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-asset-to-the-component)
-
 
 ## De 3D-mediacomponent toevoegen aan de paginasjabloon {#adding-three-d-media-component-to-page-template}
 
@@ -261,7 +248,7 @@ Zie ook [Dynamic Media-elementen publiceren](/help/assets/dynamic-media/publishi
 
 Zie ook [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Statische Dynamic Media 3D-elementen publiceren**
+**Statische Dynamic Media 3D-elementen publiceren:**
 
 1. Open een 3D-element (GLB-, OBJ- of STL-bestandsindeling) om dit weer te geven op de pagina Details.
 1. Tik op **[!UICONTROL Quick Publish]** op de werkbalk.
