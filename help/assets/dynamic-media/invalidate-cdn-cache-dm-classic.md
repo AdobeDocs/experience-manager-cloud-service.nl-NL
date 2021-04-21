@@ -1,17 +1,16 @@
 ---
 title: De CDN-cache ongeldig maken via Dynamic Media Classic
 description: '"Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt."'
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: Asset Management, Dynamic Media Classic
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '649'
 ht-degree: 13%
 
 ---
-
 
 # De CDN-cache ongeldig maken door middel van Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
@@ -62,4 +61,3 @@ Zie ook [Overzicht van cache in Dynamic Media Classic](https://helpx.adobe.com/e
    >Wanneer u elementen selecteert en vervolgens op **[!UICONTROL File > Invalidate CDN]** tikt, gebruikt Dynamic Media een CDN-sjabloon voor ongeldig maken om automatisch URL&#39;s te maken die ongeldig worden gemaakt vanaf de CDN. Als het tekstvak **[!UICONTROL CDN Invalidate Template]** leeg is, wordt er een lege URL-lijst weergegeven. Caching bij CDN is niet gebaseerd op assets; het is gebaseerd op URL. Daarom moet u de volledige URL&#39;s die op uw website staan, kennen. Nadat u deze URL&#39;s hebt bepaald, kunt u ze eerder in de stappen toevoegen aan het tekstvak **[!UICONTROL Invalidate CDN Template]**. Vervolgens kunt u deze assets selecteren en de URL&#39;s in één stap ongeldig maken.
    >
    >Een andere optie is het toevoegen van volledige URL&#39;s aan de lijst **[!UICONTROL Invalidate CDN]**. Als u deze benadering volgt, is het niet nodig om activa in de Klassiek van Dynamic Media te selecteren alvorens naar **[!UICONTROL File > Invalidate CDN]** optie te gaan.
-
