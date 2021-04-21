@@ -1,14 +1,13 @@
 ---
 title: Voorinstellingen voor viewers beheren
 description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media.
-feature: Viewer Presets,Viewers
-topic: Business Practitioner
+feature: Viewer-voorinstellingen,Viewers
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4136'
+source-wordcount: '4134'
 ht-degree: 12%
 
 ---
