@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media-afbeeldingsprofielen
 description: '"Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen."'
-feature: Asset Management,Image Profiles,Renditions
-topic: Business Practitioner
+feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2620'
 ht-degree: 7%
 
 ---
@@ -269,7 +268,7 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 ## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
-Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu verwijderen of als u in de omslag, uit **[!UICONTROL Properties]** bent.
 
