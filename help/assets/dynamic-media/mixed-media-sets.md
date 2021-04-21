@@ -1,14 +1,13 @@
 ---
 title: Mixed Media Sets
 description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
-feature: Mixed Media Sets
-topic: Business Practitioner
+feature: Gemengde mediasets
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1392'
 ht-degree: 24%
 
 ---
