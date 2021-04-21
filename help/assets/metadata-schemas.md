@@ -1,199 +1,155 @@
 ---
-title: Metagegevensschema's
+title: Metagegevensschema's definiëren de indeling van de pagina met eigenschappen van metagegevens
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
-feature: Metadata
+feature: Metagegevens
 role: Business Practitioner,Administrator
+exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
 workflow-type: tm+mt
-source-wordcount: '2436'
-ht-degree: 11%
+source-wordcount: '2424'
+ht-degree: 6%
 
 ---
 
+# Metagegevensschema&#39;s {#metadata-schemas}
 
-# Metadataschema&#39;s {#metadata-schemas}
+Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit, enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar om workflows met metagegevens en processen te behouden. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. [!DNL Adobe Experience Manager] biedt eenvoudige en flexibele methoden voor het maken, onderhouden en toepassen van metagegevensschema&#39;s.
 
-In Adobe Experience Manager (AEM) Assets, bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
+In [!DNL Adobe Experience Manager Assets] bevatten schema&#39;s specifieke velden waarin specifieke informatie moet worden ingevuld. Het bevat ook lay-outinformatie om meta-gegevensgebieden op een gebruikersvriendelijke manier te tonen. Metagegevenseigenschappen zijn onder andere titel, beschrijving, MIME-typen, tags en meer. U kunt de [!UICONTROL Metadata Schema Forms] redacteur gebruiken om de bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen.
 
-U kunt de redacteur van Forms van het Schema van Meta-gegevens gebruiken om bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen.
+Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Als u de eigenschappenpagina voor een element wilt weergeven, klikt of tikt u op het pictogram **[!UICONTROL View Properties]** in Snelle handelingen op het element Elementen in de kaartweergave. U kunt ook het element selecteren in de gebruikersinterface en vervolgens op het pictogram **[!UICONTROL Properties]** op de werkbalk klikken of hierop tikken.
-1. Bewerk verschillende eigenschappen van metagegevens onder de verschillende tabbladen. U kunt het elementtype echter niet wijzigen op de eigenschappenpagina.
-Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschema Forms](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image`, wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+1. Klik op de optie **[!UICONTROL View Properties]** van de snelle handelingen op het elementblok in de kaartweergave. U kunt ook een element selecteren en vervolgens op **[!UICONTROL Properties]** ![weergave-eigenschappen](assets/do-not-localize/info-circle-icon.png) op de werkbalk klikken.
 
-1. Als u een lijst met formulieren/sjablonen wilt weergeven, klikt u op het AEM-logo en gaat u naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-AEM bevat de volgende sjablonen uit het vak:
+1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element [!UICONTROL Type] echter niet wijzigen op het tabblad [!UICONTROL Basic] van de eigenschappenpagina.
 
-   * **standaard**: Het basisschema voor metagegevens voor elementen.
+   ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
 
-   De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
-i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &quot;image&quot;, bijvoorbeeld `image/jpeg`, `image/png` enzovoort.
-Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-a. **jpeg**: Schema voor activa met subtype `jpeg`.
-b. **tiff**: Schema voor de activa met subtype `tiff`.
+   *Afbeelding: Het tabblad Standaard voor elementen  [!UICONTROL Properties].*
 
-   ii. **toepassing**: Schema-formulier voor elementen van het type MIME  `application`,  `application/pdf`bijvoorbeeld  `application/zip`enzovoort.
-a. **pdf**: Schema voor activa met subtype `pdf`.
+   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschema Forms](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image`, wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
-   iii. **video**: Schema-formulier voor elementen met het MIME-type  `video`, zoals  `video/avi`,  `video/mp4`enzovoort.
+## Metagegevensschema-formulieren {#default-metadata-schema-forms}
 
-   * **verzameling**: Schemaformulier voor verzamelingen.
-   * **contentfragment:** Schemaformulier voor inhoudsfragmenten.
+Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [!DNL Experience Manager]-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
+[!DNL Experience Manager] Hier vindt u de volgende sjablonen voor metagegevensschema-formulieren.
+
+| Sjablonen |  | Beschrijving |
+|---|---|---|
+| [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
+|  | De volgende onderliggende formulieren nemen de eigenschappen over van het formulier [!UICONTROL default]: |  |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema voor Dynamic Media-video&#39;s. |
+|  | <ul><li>[!UICONTROL image]</li></ul> | Schema voor afbeeldingen van het MIME-type zoals `image/jpeg` en `image/png`. <br> Het  [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype  [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de elementen met subtype TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type zoals `application/pdf` en `application/zip`. <br>[!UICONTROL pdf]: Schemaformulier voor elementen met subtype PDF. |
+|  | <ul><li>[!UICONTROL video]</li></ul> | Schemaformulier voor video-elementen met het MIME-type zoals `video/avi` en `video/mp4`. |
+| [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
+| [!UICONTROL contentfragment] |  | Schemaformulier voor contentfragmenten. |
+| [!UICONTROL forms] |  | Dit schema formulier heeft betrekking op [!DNL Adobe Experience Manager Forms]. |
+| [!UICONTROL ugc_contentfragment] |  | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in de Experience Manager zijn geïntegreerd. |
 
 >[!NOTE]
 >
->Als u de onderliggende formulieren van een schema wilt weergeven, klikt of tikt u op de naam van het schema.
+>Klik op de naam van het schema om de onderliggende formulieren van een schema weer te geven.
 
 ## Een metagegevensschema toevoegen {#add-a-metadata-schema-form}
+
+Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
 1. Als u een aangepaste sjabloon aan de lijst wilt toevoegen, klikt u op **[!UICONTROL Create]** op de werkbalk.
 
    >[!NOTE]
    >
-   >Onbewerkte sjablonen hebben een vergrendelingspictogram. Als u een van de sjablonen aanpast, verdwijnt het vergrendelingspictogram voordat de sjabloon verdwijnt.
+   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een malplaatje aanpast, is het niet gesloten ![slot gesloten](assets/do-not-localize/lock_closed_icon.svg).
 
-1. Voer in het dialoogvenster de titel van het schema-formulier in en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
+1. Geef in het dialoogvenster de titel van het schema op en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
 ## Formulieren met metagegevensschema {#edit-metadata-schema-forms} bewerken
 
-U kunt een nieuw of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat het volgende:
+U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat tabbladen en formulieritems binnen tabbladen. U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt tabs of formulieritems toevoegen aan het metagegevensschemaformulier. De tabbladen en formulieritems die van het bovenliggende element zijn afgeleid, bevinden zich in de vergrendelde status. U kunt deze niet wijzigen op het niveau van het kind.
 
-* Tabs
-* Formulieritems in tabbladen.
+1. Selecteer op de pagina [!UICONTROL Metadata Schema Forms] een formulier en klik op **[!UICONTROL Edit]** in de werkbalk.
 
-U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte.
+1. Pas op de pagina **[!UICONTROL Metadata Schema Form Editor]** het metagegevensformulier aan. Sleep de benodigde componenten van het tabblad **[!UICONTROL Build Form]** naar een van de tabbladen.
 
-U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemaformulier. De tabbladen en formulieritems die van het bovenliggende element zijn afgeleid, bevinden zich in de vergrendelde status. U kunt deze niet wijzigen op het niveau van het kind.
+   ![Editor metagegevensschema om de pagina Eigenschappen van elementen aan te passen](assets/metadata-schema-editor.png)
 
-1. Schakel op de pagina Schemaformulieren het selectievakje vóór een formulier in en klik vervolgens op het **pictogram Bewerken** op de werkbalk.
-1. Pas op de pagina **[!UICONTROL Metadata Schema Editor]** de eigenschappenpagina van de asset aan door een of meer componenten uit de lijst met componenttypen op het tabblad **[!UICONTROL Build Form]** naar het tabblad **[!UICONTROL Basic]** te slepen.
-1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het tabblad **Instellingen**.
+   *Afbeelding: Een  [!UICONTROL Metadata Schema Form Editor] pagina met beschikbare tabbladen.*
 
-### Componenten op het tabblad Formulier samenstellen {#components-within-the-build-form-tab}
+1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**.
+
+### Componenten op het tabblad [!UICONTROL Build Form] {#components-within-the-build-form-tab}
 
 Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schemaformulier gebruikt. Het tabblad **[!UICONTROL Settings]** bevat de kenmerken van elk item dat u selecteert op het tabblad **[!UICONTROL Build Form]**. De volgende tabel bevat een lijst met formulieritems die beschikbaar zijn op het tabblad **[!UICONTROL Build Form]**:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Componentnaam</strong></td>
-   <td><strong>Beschrijving</strong></td>
-  </tr>
-  <tr>
-   <td>Sectiekop</td>
-   <td>Voeg een sectiekopje toe voor een lijst met gangbare componenten.</td>
-  </tr>
-  <tr>
-   <td>Tekst met één regel</td>
-   <td>Voeg een eigenschap voor één regel tekst toe. De eigenschap wordt opgeslagen als een tekenreeks.</td>
-  </tr>
-  <tr>
-   <td>Meerdere waardetekst</td>
-   <td>Voeg een teksteigenschap voor meerdere waarden toe. Deze wordt opgeslagen als een tekenreeks-array.</td>
-  </tr>
-  <tr>
-   <td>Getal</td>
-   <td>Voeg een getalcomponent toe.</td>
-  </tr>
-  <tr>
-   <td>Date</td>
-   <td>Voeg een datumcomponent toe.</td>
-  </tr>
-  <tr>
-   <td>Vervolgkeuzelijst</td>
-   <td>Voeg een vervolgkeuzelijst toe.</td>
-  </tr>
-  <tr>
-   <td>Standaardlabels</td>
-   <td>Voeg een tag toe. </td>
-  </tr>
-  <tr>
-   <td>Slimme tags</td>
-   <td>Voeg toe aan de mogelijkheden van de verhogingenonderzoek door meta-gegevensmarkeringen automatisch toe te voegen.<br /> </td>
-  </tr>
-  <tr>
-   <td>Verborgen veld</td>
-   <td>Voeg een verborgen veld toe. Deze wordt als een POST-parameter verzonden wanneer het element wordt opgeslagen.</td>
-  </tr>
-  <tr>
-   <td>Door</td>
-   <td>Voeg deze component toe om een lijst weer te geven met elementen waarnaar door het element wordt verwezen.</td>
-  </tr>
-  <tr>
-   <td>Verwijzing naar element</td>
-   <td>Toevoegen om een lijst weer te geven met elementen die naar het element verwijzen.</td>
-  </tr>
-  <tr>
-   <td>Productverwijzingen</td>
-   <td>Toevoegen om de lijst weer te geven met producten die aan het element zijn gekoppeld.</td>
-  </tr>
-  <tr>
-   <td>Waardering van activa</td>
-   <td>Toevoegen aan weergaveopties voor het beoordelen van het element.</td>
-  </tr>
-  <tr>
-   <td>Contextuele metagegevens</td>
-   <td>Toevoegen om de weergave van andere tabbladen met metagegevens in de eigenschappenpagina met elementen te besturen.</td>
-  </tr>
- </tbody>
-</table>
+| Componentnaam | Beschrijving |
+| -------------------------------- | ----------------------------------------------------------------------------------- |
+| [!UICONTROL Section Header] | Voeg een sectiekopje toe voor een lijst met gangbare componenten. |
+| [!UICONTROL Single Line Text] | Voeg een eigenschap voor één regel tekst toe. De eigenschap wordt opgeslagen als een tekenreeks. |
+| [!UICONTROL Multi Value Text] | Voeg een teksteigenschap voor meerdere waarden toe. Deze wordt opgeslagen als een tekenreeks-array. |
+| [!UICONTROL Number] | Voeg een getalcomponent toe. |
+| [!UICONTROL Date] | Voeg een datumcomponent toe. |
+| [!UICONTROL Dropdown] | Voeg een vervolgkeuzelijst toe. |
+| [!UICONTROL Standard Tags] | Voeg een tag toe. |
+| [!UICONTROL Smart Tags] | U kunt zoekmogelijkheden uitbreiden door automatisch metagegevenstags toe te voegen. |
+| [!UICONTROL Hidden Field] | Voeg een verborgen veld toe. Deze wordt als een POST-parameter verzonden wanneer het element wordt opgeslagen. |
+| [!UICONTROL Asset Referenced By] | Voeg deze component toe om een lijst weer te geven met elementen waarnaar door het element wordt verwezen. |
+| [!UICONTROL Asset Referencing] | Toevoegen om een lijst weer te geven met elementen die naar het element verwijzen. |
+| [!UICONTROL Products References] | Toevoegen om de lijst weer te geven met producten die aan het element zijn gekoppeld. |
+| [!UICONTROL Asset Rating] | Toevoegen aan weergaveopties voor het beoordelen van het element. |
+| [!UICONTROL Contextual Metadata] | Toevoegen om de weergave van andere tabbladen met metagegevens in de eigenschappenpagina met elementen te besturen. |
 
 #### De metagegevenscomponent {#edit-the-metadata-component} bewerken
 
-Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component en bewerkt u alle of een subset van de volgende eigenschappen op het tabblad **[!UICONTROL Settings]**.
+Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component om de volgende eigenschappen (of een subset ervan) op het tabblad **[!UICONTROL Settings]** geheel of gedeeltelijk te bewerken.
 
 **Veldlabel**: De naam van de eigenschap metadata die wordt weergegeven op de eigenschappenpagina voor het element.
 
-**Toewijzen aan eigenschap**: This property specifies the relative path/name to the asset node where it is saved in the CRX repository. Het begint met `./` omdat het erop wijst dat de weg onder de knoop van het element is.
+**Toewijzen aan eigenschap**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. Het begint met `./` om erop te wijzen dat de weg onder de knoop van het element is.
 
 Hier volgen de geldige waarden voor deze eigenschap:
 
-* . `/jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
+* `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
-* . `/jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van de asset. Als u deze eigenschappen configureert op weergave-eigenschappen, raden wij aan deze te markeren als Bewerken uitschakelen, omdat deze beveiligd zijn. Anders treedt de fout &quot;Wijzigen van asset(s)&quot; op wanneer u de eigenschappen van de asset opslaat.
+* `./jcr:created`: Hiermee slaat u de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, raadt Adobe u aan deze als Uitschakelen bewerken te markeren. Anders treedt de fout &quot;Wijzigen van asset(s)&quot; op wanneer u de eigenschappen van de asset opslaat.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
-**Tijdelijke aanduiding**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
-
-**Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
-
-**Bewerken** uitschakelen: Gebruik deze eigenschap om een eigenschap metadata niet bewerkbaar te maken op de pagina Eigenschappen.
-
-**Leeg veld alleen**-lezen tonen: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
-
-**Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende keuzelijst weer te geven
-
-**Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven
-
-**Omschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
-
-**Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.
-
-**Verwijderen**: Klik om een component uit het schemaformulier te verwijderen.
+* **Tijdelijke aanduiding**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
+* **Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
+* **Bewerken** uitschakelen: Met deze eigenschap kunt u bewerkingen van een eigenschap op de eigenschappenpagina niet toestaan.
+* **Leeg veld alleen**-lezen tonen: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
+* **Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende lijst met keuzen weer te geven.
+* **Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven.
+* **Omschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
+* **Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.
+* **Verwijderen**: Klik  [!UICONTROL Delete] om een component uit het schemaformulier te verwijderen.
 
 >[!NOTE]
 >
->De component Verborgen veld bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
+>De component [!UICONTROL Hidden Field] bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
 
 Als u de optie **[!UICONTROL Required]** selecteert, kunt u zoeken naar assets waarvoor verplichte metadata ontbreken. Vouw in het deelvenster **[!UICONTROL Filters]** het predicaat **[!UICONTROL Metadata Validation]** uit en selecteer de optie **[!UICONTROL Invalid]**. In de zoekresultaten worden assets weergegeven waarvoor verplichte metadata ontbreken die u via het schemaformulier hebt geconfigureerd.
 
 Als u de component Contextuele metagegevens toevoegt aan een tabblad van een schemaformulier, wordt de component weergegeven als een lijst op de eigenschappenpagina van elementen waarop het specifieke schema wordt toegepast. De lijst bevat alle andere tabbladen, behalve het tabblad waarop u de component Contextuele metagegevens hebt toegepast. Momenteel biedt deze functie basisfunctionaliteit voor het beheren van de weergave van metagegevens op basis van de context.
 
-Als u een tabblad in de eigenschappenpagina wilt opnemen, naast het tabblad waarop de component Contextuele metagegevens is toegepast, selecteert u het tabblad in de lijst. Het tabblad wordt toegevoegd aan de pagina met eigenschappen.
+Als u een tabblad in de eigenschappenpagina wilt weergeven naast het tabblad waarop de component Contextuele metagegevens is toegepast, selecteert u het tabblad in de lijst. Het tabblad wordt toegevoegd aan de pagina met eigenschappen.
 
 ### Eigenschappen opgeven in JSON-bestand {#specify-properties-in-json-file}
 
 In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings]** op te geven, kunt u de opties in een JSON-bestand definiëren door overeenkomstige sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON Path]**.
 
-#### Een tabblad toevoegen en verwijderen in het schemaformulier {#add-delete-a-tab-in-the-schema-form}
+#### Een tabblad toevoegen aan of verwijderen uit het schemaformulier {#add-delete-a-tab-in-the-schema-form}
 
-Met de schema-editor kunt u een tabblad toevoegen of verwijderen. Het standaardschemaformulier bevat standaard de tabbladen **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** en **[!UICONTROL IPTC Extension]**.
+Met de schema-editor kunt u een tabblad toevoegen of verwijderen. De standaardschemavorm omvat **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]**, en **[!UICONTROL IPTC Extension]** lusjes.
 
-Klik `+` om een nieuw lusje op een schemavorm toe te voegen. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen op het tabblad **[!UICONTROL Settings]**. Klik `X` om een tabel te verwijderen.
+![Standaardtabbladen in het metagegevensschema](assets/metadata-schema-form-tabs.png)
+
+Klik `+` om een lusje op een schemavorm toe te voegen. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen op het tabblad **[!UICONTROL Settings]**. Klik `X` om een tabel te verwijderen.
+
+![Een tabblad toevoegen of verwijderen met de Editor voor een metagegevensschema](assets/metadata-schema-form-new-tab.png)
 
 ## Formulieren met metagegevensschema {#deleting-metadata-schema-forms} verwijderen
 
@@ -207,28 +163,30 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 
 >[!NOTE]
 >
->In AEM Assets kunt u het schema voor metagegevens in het vak niet verwijderen.
+>* Nadat u aangepaste wijzigingen in een standaardformulier hebt verwijderd, wordt de vergrendeling ![lock closed](assets/do-not-localize/lock_closed_icon.svg) opnieuw weergegeven vóór het formulier. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
+>* U kunt de standaardformulieren voor het metagegevensschema niet verwijderen in [!DNL Assets].
+
 
 ## Schemaformulieren voor MIME-typen {#schema-forms-for-mime-types}
 
-AEM Assets bevat standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
+[!DNL Experience Manager] bevat standaardformulieren voor diverse MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#adding-new-forms-for-mime-types}
 
-Maak een nieuw formulier onder het juiste formuliertype. Als u bijvoorbeeld een nieuwe sjabloon voor het subtype **image/png** wilt toevoegen, maakt u het formulier onder de &quot;image&quot;-formulieren. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel &quot;png.**&quot;**
+Maak een formulier onder het juiste formuliertype. Als u bijvoorbeeld een sjabloon wilt toevoegen voor het subtype `image/png`, maakt u het formulier onder de &quot;afbeeldingsformulieren&quot;. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
 
-#### Het gebruiken van een bestaand schemamalplaatje voor diverse types MIME {#using-an-existing-schema-template-for-various-mime-types}
+#### Een bestaande schemasjabloon gebruiken voor verschillende MIME-typen {#use-an-existing-schema-template-for-various-mime-types}
 
 U kunt een bestaande sjabloon voor een ander MIME-type gebruiken. Gebruik bijvoorbeeld het formulier `image/jpeg` voor elementen van het MIME-type `image/png`.
 
-In dit geval maakt u een nieuw knooppunt op `/etc/dam/metadataeditor/mimetypemappings` in de CRX-opslagplaats. Geef een naam voor het knooppunt op en definieer de volgende eigenschappen:
+In dit geval maakt u een knooppunt op `/etc/dam/metadataeditor/mimetypemappings` in de CRX-opslagplaats. Geef een naam voor het knooppunt op en definieer de volgende eigenschappen:
 
-| **Naam** | **Beschrijving** | **Type** | **Waarde** |
-|---|---|---|---|
-| `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | Tekenreeks | `image/jpeg` |
-| `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het kenmerk `exposedmimetype` | Tekenreeks | `image/png` |
+| Naam | Beschrijving | Type | Waarde |
+|------|-------------|------|-------|
+| `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | `String` | `image/jpeg` |
+| `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het kenmerk `exposedmimetype` | `String` | `image/png` |
 
-AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
+[!DNL Assets] Hiermee worden de volgende MIME-typen en schema-formulieren toegewezen:
 
 | Schema-formulier | MIME-typen |
 |---|---|
@@ -244,28 +202,24 @@ AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## Toegang verlenen tot metagegevensschema&#39;s {#granting-access-to-metadata-schemas}
+## Toegang verlenen tot metagegevensschema&#39;s {#grant-access-to-metadata-schemas}
 
-De functie Metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter wel toegang verlenen aan niet-beheerders door bepaalde machtigingen te wijzigen. De niet beheerder zou toestemmingen op `/conf` moeten creëren wijzigen en schrappen omslag.
+De functie Metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter toegang verlenen aan niet-beheerders door bepaalde machtigingen te wijzigen. Verstrek de niet beheerdergebruikers tot toestemmingen op `/conf` leiden, wijzigen en schrappen.
 
 ## Mapspecifieke metagegevens toepassen {#applying-folder-specific-metadata}
 
-Met AEM Assets kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
+[!DNL Assets] Hiermee kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
 
 U kunt bijvoorbeeld een variant van het standaardmetagegevensschema definiëren en deze toepassen op een map. Wanneer u het gewijzigde schema toepast, wordt het oorspronkelijke standaardmetagegevensschema genegeerd dat op elementen in de map is toegepast.
 
-Alleen elementen die zijn geüpload naar de map waarop dit schema is toegepast, voldoen aan de gewijzigde metagegevens die zijn gedefinieerd in het metagegevensschema voor de variant.
+Alleen elementen die zijn geüpload naar de map waarop dit schema is toegepast, komen overeen met de gewijzigde metagegevens die zijn gedefinieerd in het schema voor alternatieve metagegevens. [!DNL Assets] in andere mappen waarin het oorspronkelijke schema wordt toegepast, blijven de metagegevens die in het oorspronkelijke schema zijn gedefinieerd, behouden.
 
-Elementen in andere mappen waarop het oorspronkelijke schema is toegepast, voldoen nog steeds aan de metagegevens die in het oorspronkelijke schema zijn gedefinieerd.
+Metagegevensovererving door elementen is gebaseerd op het schema dat wordt toegepast op de map op het hoogste niveau in de hiërarchie. Hetzelfde schema wordt toegepast op of overgeërfd door de submappen. Als een ander schema op submapniveau wordt toegepast, stopt de overerving.
 
-Metagegevensovererving door elementen is gebaseerd op het schema dat wordt toegepast op de map op het eerste niveau in de hiërarchie. Met andere woorden, als een map geen submappen bevat, nemen de elementen in de map de metagegevens over van het schema dat op de map is toegepast.
+1. Navigeer in [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
+1. Schakel het selectievakje in vóór een formulier, bijvoorbeeld het standaardmetagegevensformulier, en klik op **[!UICONTROL Copy]** en sla het op als een aangepast formulier. Geef een aangepaste naam voor het formulier op, bijvoorbeeld `my_default`. U kunt ook een aangepast formulier maken.
 
-Als de map een submap heeft, nemen de elementen in de submap de metagegevens over van het schema dat op submapniveau wordt toegepast als een ander schema op submapniveau wordt toegepast. Als echter geen schema of hetzelfde schema wordt toegepast op submapniveau, overerven de submapelementen de metagegevens van het schema dat is toegepast op het niveau van de bovenliggende map.
-
-1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
-1. Schakel het selectievakje in vóór een formulier, bijvoorbeeld het standaardmetagegevensformulier, en klik op het pictogram Kopiëren of tik op het pictogram en sla het op als een aangepast formulier. Geef een aangepaste naam voor het formulier op, bijvoorbeeld `my_default`. U kunt ook een aangepast formulier maken.
-
-1. Selecteer op de pagina **[!UICONTROL Metadata Schema Forms]** het formulier `my_default` en klik op het pictogram **[!UICONTROL Edit]**.
+1. Selecteer op de pagina **[!UICONTROL Metadata Schema Forms]** het formulier `my_default` en klik vervolgens op **[!UICONTROL Edit]**.
 1. Voeg op de pagina **[!UICONTROL Metadata Schema Editor]** een tekstveld toe aan het schema. Voeg bijvoorbeeld een veld met het label **[!UICONTROL Category]** toe.
 1. Klik op **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]**.
 1. Klik/tik **[!UICONTROL Apply to Folder(s)]** van de toolbar om de douanemetagegevens op een omslag toe te passen.
