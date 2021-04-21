@@ -3,14 +3,13 @@ sub-product: Bewerkingen en onderhoud van AEM as a Cloud Service
 user-guide-title: Bewerkingen en onderhoud van AEM as a Cloud Service
 breadcrumb-title: Handelshandleiding
 user-guide-description: Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken.
-feature-set: Experience Manager Sites
-feature: Configuring
+feature: Configureren
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 93%
+source-wordcount: '63'
+ht-degree: 95%
 
 ---
 
