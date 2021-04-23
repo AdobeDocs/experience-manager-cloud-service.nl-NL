@@ -6,10 +6,10 @@ user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-im
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 32%
+source-wordcount: '969'
+ht-degree: 30%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 32%
    + [Technische stichtingen AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + Headless Developer Journey {#headless-journey}
+      + [Doorschijnend begrijpen in AEM](developing/headless-journey/overview.md)
+      + [Meer informatie over CMS Headless Development](developing/headless-journey/learn-about.md)
+      + [Aan de slag met AEM Headless als Cloud Service](developing/headless-journey/getting-started.md)
+      + [Pad naar uw eerste ervaring met AEM zonder kop](developing/headless-journey/path-to-first-experience.md)
+      + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](developing/headless-journey/model-your-content.md)
+      + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](developing/headless-journey/access-your-content.md)
+      + [Uw inhoud bijwerken via API&#39;s voor AEM middelen](developing/headless-journey/update-your-content.md)
+      + [Hoe kan ik het allemaal samenbrengen?](developing/headless-journey/put-it-all-together.md)
+      + [Live gaan met uw toepassing zonder kop](developing/headless-journey/go-live.md)
+      + [Na starten](developing/headless-journey/post-launch.md)
+      + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](developing/headless-journey/create-spa.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
       + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](developing/introduction/develop-wknd-tutorial.md)
