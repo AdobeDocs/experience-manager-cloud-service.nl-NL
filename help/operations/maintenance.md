@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
 | Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de `/apps/settings/granite/operations/maintenance/granite_weekly` omslag te creëren  `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (naam het  `granite_WorkflowPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de omslag  `/apps/settings/granite/operations/maintenance/granite_weekly` of  `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven (naam het  `granite_ProjectPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten uitgeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster.
+Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten uitgeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster. Zie ook de locaties en codevoorbeelden na de tabel.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     </tbody>
 </table>
 
-Locaties:
+**Locaties**:
 
-1. /apps/settings/granite/operations/onderhoud/granite_day
-2. /apps/settings/granite/operations/onderhoud/granite_week
-3. /apps/settings/granite/operations/onderhoud/granite_month
+* Dagelijks - /apps/settings/granite/operations/onderhoud/granite_day
+* Wekelijks - /apps/settings/granite/operations/onderhoud/graniet_week
+* Maandelijks - /apps/settings/granite/operations/onderhoud/granite_maandelijks
 
-Codevoorbeelden:
+**Codevoorbeelden**:
 
-Codevoorbeeld 1
+Codemonster 1 (dagelijks)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ Codevoorbeeld 1
  />
 ```
 
-Codevoorbeeld 2
+Codemonster 2 (wekelijks)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ Codevoorbeeld 2
    windowStartTime="14:30"/>
 ```
 
-Codevoorbeeld 3
+Codesteekproef 3 (maandelijks)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
