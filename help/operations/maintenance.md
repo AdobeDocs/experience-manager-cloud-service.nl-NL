@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
 Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten uitgeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster.
 
 <table>
+ <tbody>
   <tr>
     <th>Configuratie van venster Onderhoud</th>
     <th>Wie eigenaar is van de configuratie</th>
@@ -54,12 +55,11 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>Zie locatie 1 hieronder</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Zie voorbeeld 1 hieronder</td>
-  <td>
-  <strong>windowSchedule= daily</strong>  (deze waarde moet niet worden gewijzigd) 
-  <strong>windowStartTime= HH:</strong> MMusing as 24 hour. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.
-  <strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.
+  <td><p><code>windowSchedule= daily</code></p> (deze waarde mag niet worden gewijzigd)
+  <p><code>windowStartTime= HH:MM</code> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+  <p><code>windowEndTime= HH:MM</code> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <strong>windowFirstLastStartDay= 0/1</strong> 0 aan programma op de eerste week van de maand of 1 aan programma op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Locaties:
