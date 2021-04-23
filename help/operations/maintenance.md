@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
+source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
 | Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de `/apps/settings/granite/operations/maintenance/granite_weekly` omslag te creëren  `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (naam het  `granite_WorkflowPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de omslag  `/apps/settings/granite/operations/maintenance/granite_weekly` of  `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven (naam het  `granite_ProjectPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten uitgeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster. Zie ook de locaties en codevoorbeelden na de tabel.
+Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten worden uitgegeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster. Zie ook de locaties en codevoorbeelden na de tabel.
 
 <table>
  <tbody>
