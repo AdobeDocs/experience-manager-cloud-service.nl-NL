@@ -2,11 +2,11 @@
 title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 25%
@@ -15,7 +15,7 @@ ht-degree: 25%
 
 # Aangesloten middelen gebruiken om DAM-elementen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch verdeeld bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen acquisities zijn die leiden tot heterogene infrastructuren die de moedermaatschappij samen wil gebruiken.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen acquisities zijn die leiden tot heterogene infrastructuren die de moedermaatschappij samen wil gebruiken.
 
 Gebruikers kunnen webpagina&#39;s maken in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is het DAM-systeem (Digital Asset Management) dat de vereiste middelen voor websites levert. [!DNL Experience Manager] ondersteunt nu het bovenstaande gebruiksgeval door integratie  [!DNL Sites] en  [!DNL Assets].
 
@@ -53,7 +53,7 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Stel [!DNL Experience Manager] in en configureer integratie met de externe [!DNL Assets]-implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau  [!DNL Sites]</li></ul> | `ksaner` | Eindgebruiker zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken naar elementen in externe DAM en bladeren door deze bestanden met [!UICONTROL Content Finder] en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau  [!DNL Sites]</li></ul> | `ksaner` | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. Auteurs kunnen bestanden in externe DAM zoeken en doorbladeren met [!UICONTROL Content Finder] en de vereiste afbeeldingen in lokale webpagina&#39;s gebruiken. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand  [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
 | DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand  [!DNL Experience Manager] | Auteurrol bij de externe [!DNL Experience Manager]-implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
 | DAM-distributeur (technische gebruiker) | Extern | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` op afstand  [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door de lokale server [!DNL Experience Manager] (niet de auteur-rol [!DNL Sites]) om de externe middelen op te halen, namens de auteur [!DNL Sites]. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
@@ -119,7 +119,7 @@ U kunt de connectiviteit tussen de gevormde [!DNL Sites] plaatsingen en [!DNL As
 
 ## Een verbinding configureren tussen [!DNL Sites]- en [!DNL Dynamic Media]-implementaties {#sites-dynamic-media-connected-assets}
 
-U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring van het gebruik van externe middelen en externe [!DNL Dynamic Media]-implementaties hetzelfde. Hierdoor kunt u de [!DNL Dynamic Media]-functionaliteit benutten via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
+U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring om externe middelen en externe [!DNL Dynamic Media]-implementaties te gebruiken ongewijzigd. Hierdoor kunt u de [!DNL Dynamic Media]-functionaliteit benutten via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
 
 Voer de volgende stappen uit om deze verbinding te configureren.
 
@@ -148,7 +148,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 1. Navigeer naar de [!DNL Assets]-interface op de externe implementatie door **[!UICONTROL Assets]** > **[!UICONTROL Files]** vanuit [!DNL Experience Manager]-werkruimte te openen. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
 1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
-1. Open een websitepagina van het type Web.Retail op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
+1. Open een `We.Retail`-websitepagina op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
 
    Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
 
@@ -182,7 +182,7 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 
 ### Gebruik van een element op webpagina&#39;s controleren {#asset-usage-references}
 
-[!DNL Experience Manager] Hiermee kunnen DAM-gebruikers alle verwijzingen naar een element controleren. Het helpt het gebruik van een middel in verre [!DNL Sites] en in samenstellingsactiva begrijpen en beheren. Veel auteurs van webpagina&#39;s bij [!DNL Experience Manager Sites]-implementatie kunnen een middel op een externe [!DNL Assets] in verschillende webpagina&#39;s gebruiken. Om het beheer van bedrijfsmiddelen te vereenvoudigen en niet tot verbroken verwijzingen te leiden, is het belangrijk dat de DAM-gebruikers het gebruik van middelen op lokale en externe webpagina&#39;s controleren. Op het tabblad [!UICONTROL References] in de pagina [!UICONTROL Properties] van een element worden de lokale en externe referenties van het element weergegeven.
+[!DNL Experience Manager] Hiermee kunnen DAM-gebruikers alle verwijzingen naar een element controleren. Het helpt het gebruik van een middel in verre [!DNL Sites] en in samenstellingsactiva begrijpen en beheren. Veel auteurs van webpagina&#39;s die [!DNL Experience Manager Sites] implementeren, kunnen een middel gebruiken op een externe DAM in verschillende webpagina&#39;s. Om het beheer van bedrijfsmiddelen te vereenvoudigen en niet tot verbroken verwijzingen te leiden, is het belangrijk dat de DAM-gebruikers het gebruik van middelen op lokale en externe webpagina&#39;s controleren. Op het tabblad [!UICONTROL References] in de pagina [!UICONTROL Properties] van een element worden de lokale en externe referenties van het element weergegeven.
 
 Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te geven en te beheren:
 
@@ -227,7 +227,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 * Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
 * De enige methode om het element opnieuw op te halen is het op een pagina te slepen. Er is geen API-ondersteuning of andere methoden om middelen opnieuw op te halen om deze bij te werken.
 * Als de activa van DAM worden ontmanteld, blijven die op [!DNL Sites] pagina&#39;s in gebruik.
-* De externe referentie-items van een element worden asynchroon opgehaald. De verwijzingen en het totale aantal zijn niet echt - tijd en er kan één of ander verschil zijn als een auteur van Plaatsen het middel gebruikt terwijl een DAM gebruiker de verwijzing bekijkt. DAM-gebruikers kunnen de pagina vernieuwen en het totaalaantal over een paar minuten opnieuw proberen.
+* De externe referentie-items van een element worden asynchroon opgehaald. De verwijzingen en het totale aantal zijn niet in echt - tijd en er kan één of ander verschil zijn als een [!DNL Sites] auteur het element gebruikt terwijl een DAM gebruiker de verwijzing bekijkt. DAM-gebruikers kunnen de pagina vernieuwen en het totaalaantal over een paar minuten opnieuw proberen.
 
 ## Problemen oplossen {#troubleshoot}
 
