@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
+source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,10 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>Zie locatie 1 hieronder</td>
-    <td>Zie voorbeeld 1 hieronder</td>
-  <td><p><strong>windowSchedule= day</strong></p> (deze waarde mag niet worden gewijzigd)
+    <td>1</td>
+    <td>1</td>
+  <td>
+  <p><strong>windowSchedule= daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
   <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
   <p><strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
   </td> 
@@ -69,11 +70,11 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Zie locatie 2 hieronder</td>
     <td>Zie voorbeeld 2 hieronder</td>
     <td>
-    <strong>windowSchedule= wekelijks</strong>  (deze waarde moet niet worden gewijzigd) 
-    <strong>windowStartTime= HH:</strong> Muse als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.
-    <strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.
-    <strong>windowScheduleWeekdays= Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.
-    </td> 
+    <p><strong>windowSchedule= wekelijks</strong>  (deze waarde mag niet worden gewijzigd)</p>
+    <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+    <p><strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+    <p><strong>windowScheduleWeekdays= Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
+    </td>
   </tr>
   <tr>
     <td>Maandelijks</td>
@@ -82,11 +83,11 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Zie locatie 3 hieronder</td>
     <td>Zie codevoorbeeld 3 hieronder</td>
     <td>
-    <strong>windowSchedule= daily</strong>  (deze waarde moet niet worden gewijzigd) 
-    <strong>windowStartTime= HH:</strong> MMusing as 24 hour. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.
-    <strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud niet meer worden uitgevoerd als deze nog niet zijn voltooid.
-    <strong>windowScheduleWeekdays = Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.
-    <strong>windowFirstLastStartDay= 0/1</strong> 0 aan programma op de eerste week van de maand of 1 aan programma op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.
+    <p><strong>windowSchedule= daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
+    <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
+    <p><strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud niet meer worden uitgevoerd als deze nog niet zijn voltooid.</p>
+    <p><strong>windowScheduleWeekdays = Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 aan programma op de eerste week van de maand of 1 aan programma op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.</p>
     </td> 
     </tr>
     </tbody>
