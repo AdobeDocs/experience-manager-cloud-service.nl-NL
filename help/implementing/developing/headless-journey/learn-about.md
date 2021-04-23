@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ De complexiteit van de afhankelijkheden in de stapel wordt snel zichtbaar, aange
 
 ## Limieten voor volledige stapellevering {#limits}
 
-De full-stack aanpak creëert inherent een silo waar alle landen in één systeem ervaren. Wijzigingen of toevoegingen op één niveau van de silo vereisen wijzigingen op andere lagen, waardoor de wijzigingen veel tijd in beslag nemen en kostbaar zijn.
+De full-stack aanpak creëert inherent een silo waar alle landen in één systeem ervaren. Voor wijzigingen of toevoegingen in de silo moeten andere onderdelen worden gewijzigd, waardoor de wijzigingen veel tijd in beslag nemen en kostbaar zijn.
 
 Dit geldt met name voor de presentatielaag, die in traditionele systemen vaak nauw verbonden is met het CMS. Een nieuw kanaal is doorgaans een update van de presentatielaag die van invloed is op alle andere kanalen.
 
@@ -80,7 +80,7 @@ De levering zonder kop is mogelijk door een reeks robuuste en flexibele API&#39;
 
 Met Headless kunt u bijvoorbeeld inhoud loskoppelen van de presentatie. Of in een generischere betekenis, ontkoppelt het vooreind van het achtereind van uw de dienststapel. In een headless opstelling, wordt de presentatielaag (het hoofd) losgemaakt van het inhoudsbeheer (staart). De twee werken slechts door API vraag in wisselwerking.
 
-Deze ontkoppeling betekent dat elke verbruikende service (front-end) zijn ervaring kan opbouwen op basis van dezelfde inhoud die via de API&#39;s wordt geleverd, zodat de inhoud hergebruikt en consistent blijft. De verbruikende diensten kunnen hun eigen presentatielagen dan uitvoeren, toestaand de laag van het inhoudsbeheer (het achtereind) om horizontaal gemakkelijk te schrapen.
+Deze ontkoppeling betekent dat elke verbruikende service (front-end) zijn ervaring kan opbouwen op basis van dezelfde inhoud die via de API&#39;s wordt geleverd, zodat de inhoud hergebruikt en consistent blijft. De verbruikende diensten kunnen hun eigen presentatielagen dan uitvoeren, toestaand de stapel van het inhoudsbeheer (het achtereind) om horizontaal te schrapen.
 
 ## Technologische onderbouwing {#technology}
 
