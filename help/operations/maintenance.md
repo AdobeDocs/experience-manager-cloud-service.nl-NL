@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -47,16 +47,12 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <th>Configuratie van venster Onderhoud</th>
     <th>Wie eigenaar is van de configuratie</th>
     <th>Configuratietype</th>
-    <th>Locatie</th>
-    <th>Voorbeeld</th>
     <th>Parameters</th>
   </tr>
   <tr>
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>1</td>
-    <td>1</td>
   <td>
   <p><strong>windowSchedule= daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
   <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
@@ -67,8 +63,6 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Wekelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>Zie locatie 2 hieronder</td>
-    <td>Zie voorbeeld 2 hieronder</td>
     <td>
     <p><strong>windowSchedule= wekelijks</strong>  (deze waarde mag niet worden gewijzigd)</p>
     <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
@@ -80,8 +74,6 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Maandelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td>Zie locatie 3 hieronder</td>
-    <td>Zie codevoorbeeld 3 hieronder</td>
     <td>
     <p><strong>windowSchedule= daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
     <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
