@@ -3,9 +3,9 @@ title: Onderhoudstaken in AEM als Cloud Service
 description: Onderhoudstaken in AEM als Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -55,11 +55,11 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Dagelijks</td>
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>Zie locatie 1 hieronder</td>
     <td>Zie voorbeeld 1 hieronder</td>
-  <td><p><code>windowSchedule= daily</code></p> (deze waarde mag niet worden gewijzigd)
-  <p><code>windowStartTime= HH:MM</code> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
-  <p><code>windowEndTime= HH:MM</code> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+  <td><p><strong>windowSchedule= day</strong></p> (deze waarde mag niet worden gewijzigd)
+  <p><strong>windowStartTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+  <p><strong>windowEndTime= HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
   </td> 
   </tr>
   <tr>
