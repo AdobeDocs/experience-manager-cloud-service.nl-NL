@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In deze optionele vervolg van de [AEM Headless Developer Journey,](#overview.md) leert u hoe AEM koploze levering kunt combineren met traditionele full-stack CMS-functies en hoe u bewerkbare SPA kunt maken met AEM Editor-framework. Bovendien kunt u externe SPA integreren, waardoor bewerkingsmogelijkheden naar wens mogelijk worden.
+In deze optionele vervolg van de [AEM Headless Developer Journey,](overview.md) leert u hoe AEM koploze levering kunt combineren met traditionele full-stack CMS-functies en hoe u bewerkbare SPA kunt maken met AEM Editor-framework. Bovendien kunt u externe SPA integreren, waardoor bewerkingsmogelijkheden naar wens mogelijk worden.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
