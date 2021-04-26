@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey](#overview.md) leert u hoe u de inhoudsstructuur kunt modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
+In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u de inhoudsstructuur kunt modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
