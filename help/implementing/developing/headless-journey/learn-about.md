@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van de [AEM Headless Developer Journey,](#overview.md) leert u over technologie zonder kop en waarom u deze zou gebruiken.
+In dit deel van de [AEM Headless Developer Journey,](overview.md) leert u over technologie zonder kop en waarom u deze zou gebruiken.
 
 ## Doel {#objective}
 
