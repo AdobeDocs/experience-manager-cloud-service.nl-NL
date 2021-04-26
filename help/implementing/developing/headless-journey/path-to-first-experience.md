@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey,](#overview.md) zult u de stappen begrijpen om uw eerste headless ervaring in AEM met planningsoverwegingen te implementeren en zult u ook best practices leren om uw pad zo vloeiend mogelijk te maken.
+In dit deel van [AEM Headless Developer Journey,](overview.md) zult u de stappen begrijpen om uw eerste headless ervaring in AEM met planningsoverwegingen te implementeren en zult u ook best practices leren om uw pad zo vloeiend mogelijk te maken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
