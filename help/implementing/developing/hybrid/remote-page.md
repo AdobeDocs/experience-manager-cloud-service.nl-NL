@@ -1,10 +1,11 @@
 ---
 title: De RemotePage-component
 description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
+exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
+source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,15 @@ Zie het artikel [Een externe SPA bewerken in AEM](editing-external-spa.md) voor 
 * CORS in ontwikkeling inschakelen
 * Externe URL configureren in Pagina-eigenschappen
 * De SPA renderen in AEM
+* De webtoepassing moet een bundler-elementmanifest gebruiken als een van de volgende en een `asset-manifest.json`-bestand in de hoofdmap van het domein weergeven met een lijst in een `entrypoints property` van alle CSS- en JS-bestanden die moeten worden geladen:
+   * https://github.com/shellscape/webpack-manifest-plugin
+   * https://github.com/webdeveric/webpack-assets-manifest
+   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+      ![entrypoints, voorbeeld van eigenschap](assets/asset-manifest-entrypoints.png)
+* De toepassing moet in een `<div id="root"></div>` onder het `body` element kunnen initialiseren. Als een andere prijsverhoging voor app wordt verwacht om te concretiseren, dan moet dit dienovereenkomstig in de manuscripten van HTML van de volmachtscomponent worden aangepast die `sling:resourceSuperType="spa-project-core/components/remotepage` heeft.
 
 ## Beperkingen {#limitations}
 
-* De huidige implementatie van de component RemotePage ondersteunt alleen externe React-toepassingen.
 * Interne CSS die is gedefinieerd in het HTML-hoofdbestand van de toepassing en inline CSS op het DOM-hoofdknooppunt zijn niet beschikbaar bij externe rendering in AEM.
 
 ## Technische details {#technical-details}
