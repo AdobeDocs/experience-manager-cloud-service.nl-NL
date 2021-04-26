@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey,](#overview.md) leert hoe te om uw AEM Project met inbegrip van Inhoudsfragmenten, uw vraag GraphQL, uw vraag REST API, en uw toepassing te nemen, en het voor te bereiden voor het leven.
+In dit deel van [AEM Headless Developer Journey,](overview.md) leert hoe te om uw AEM Project met inbegrip van Inhoudsfragmenten, uw vraag GraphQL, uw vraag REST API, en uw toepassing te nemen, en het voor te bereiden voor het leven.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
