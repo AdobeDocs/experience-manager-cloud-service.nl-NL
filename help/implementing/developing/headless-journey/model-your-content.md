@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -244,6 +244,7 @@ Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te b
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Een korte videozelfstudie die een overzicht biedt van het gebruik van AEM functies zonder kop, zoals gegevensmodellering en GraphQL
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)  - de introductiepagina voor inhoudsfragmenten
    * [De Fragmenten van de inhoud in Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md)  van de Configuratie - laten de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe
    * [Modellen](/help/assets/content-fragments/content-fragments-models.md)  voor inhoudsfragmenten maken en bewerken van modellen voor inhoudsfragmenten
