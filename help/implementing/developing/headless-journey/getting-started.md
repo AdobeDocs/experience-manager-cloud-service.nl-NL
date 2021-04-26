@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey,](#overview.md) leert u wat nodig is om uw eigen project met AEM Headless te starten.
+In dit deel van [AEM Headless Developer Journey,](overview.md) leert u wat nodig is om uw eigen project met AEM Headless te starten.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
