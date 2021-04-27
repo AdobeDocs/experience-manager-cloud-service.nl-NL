@@ -1,18 +1,24 @@
 ---
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
+exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 51%
+source-wordcount: '2685'
+ht-degree: 47%
 
 ---
-
 
 # De tool Content Transfer gebruiken {#using-content-transfer-tool}
 
 ## Belangrijke overwegingen voor het gebruik van de Content Transfer-tool {#pre-reqs}
+
+>id=&quot;aemcloud_ctt_prereqs&quot;
+>title=&quot;Belangrijke overwegingen voor het gebruik van Content Transfer Tool&quot;
+>abstract=&quot;herzie belangrijke overwegingen om het hulpmiddel van de Overdracht van de Inhoud met inbegrip van Java en AEM versies, gesteunde types Datastore, gebruikersgroepoverwegingen en meer te gebruiken.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;Best Practices and Guidelines&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Download Content Transfer Tool&quot;
 
 Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
 
@@ -49,12 +55,26 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 ## Beschikbaarheid {#availability}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="Downloaden"
+>abstract="Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie."
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
+
 Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Raadpleeg [Opmerkingen bij de release](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html) voor meer informatie over de nieuwste versie.
 
 >[!NOTE]
 >Download de Content Transfer-tool van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_demo"
+>title="Gereedschap Inhoud overbrengen uitvoeren"
+>abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM als Cloud Service (Auteur/Publiceren)."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
@@ -133,6 +153,13 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
 ### Extractieproces in Content Transfer {#extraction-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction"
+>title="Inhoud extraheren"
+>abstract="Extractie heeft betrekking op het extraheren van inhoud van de bron AEM instantie naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Inktproces"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extractie naar boven"
+
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
@@ -174,6 +201,13 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 
 ### Opnameproces in Content Transfer {#ingestion-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion"
+>title="Inktatie van inhoud"
+>abstract="De inname verwijst naar het opnemen van inhoud van *migratieset* in de instantie van de doelCloud Service. De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extractieproces"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Opname aanvullen"
+
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
@@ -208,6 +242,13 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
 
 ### Logboeken voor een migratieset weergeven {#viewing-logs-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_logs"
+>title="Logbestanden weergeven"
+>abstract="Na voltooiing van Extractie van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Fouten moeten onmiddellijk worden verholpen, hetzij door de gemelde problemen te verhelpen, hetzij door contact op te nemen met de ondersteuning van Adobe."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Problemen oplossen"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contact opnemen met Adobe-ondersteuning"
 
 Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen, hetzij door de gemelde problemen te verhelpen, hetzij door contact op te nemen met de ondersteuning van Adobe.
 
@@ -277,5 +318,3 @@ De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunne
 Als gebruiker ziet u de volgende wijzigingen in het gedrag van de Content Transfer-gebruikersinterface:
 
 * De pictogrammen in de gebruikersinterface van de Content Transfer-tool kunnen afwijken van de schermafbeeldingen die in deze handleiding worden getoond. Mogelijk worden ze zelfs helemaal niet weergegeven, afhankelijk van de versie van de AEM-broninstantie.
-
-
