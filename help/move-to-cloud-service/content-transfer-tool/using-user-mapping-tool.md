@@ -1,18 +1,26 @@
 ---
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 5%
+source-wordcount: '1185'
+ht-degree: 4%
 
 ---
-
 
 # Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker {#user-mapping-tool}
 
 ## Overzicht {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Gereedschap Toewijzing gebruiker"
+>abstract="Met het gereedschap Inhoud overbrengen kunt u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM als Cloud Service. Bestaande gebruikers en groepen moeten aan hun IMS-id&#39;s worden toegewezen om dubbele gebruikers en groepen op de Cloud Service-auteur te voorkomen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Belangrijke overwegingen voor het gebruik van het gereedschap Toewijzing gebruiker"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Gebruikerstoewijzing gebruiken"
+
 
 Als onderdeel van de overgang naar Adobe Experience Manager (AEM) als Cloud Service, moet u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM als Cloud Service. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
 
@@ -102,4 +110,3 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Als u de extractiefase wilt uitvoeren, raadpleegt u [Het gereedschap Inhoud overbrengen uitvoeren](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
