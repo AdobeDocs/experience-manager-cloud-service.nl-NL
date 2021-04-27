@@ -1,12 +1,12 @@
 ---
 title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
-feature: Deploying
+feature: Implementeren
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3334'
 ht-degree: 1%
 
 ---
@@ -163,6 +163,12 @@ Meer informatie over het opnieuw aanwijzen vindt u in de [documentatie over de v
 above appears to be internal, to confirm with Brian -->
 
 ### Pakketbeheer &quot;one offs&quot; voor Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Pakketbeheer - Meerdere inhoudspakketten migreren"
+>abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket als &#39;één uit&#39; moet worden geïnstalleerd, waaronder het importeren van specifieke inhoud van productie naar staging om een productieprobleem op te lossen, het overbrengen van een klein inhoudspakket van een on-premise omgeving naar AEM Cloud-omgevingen en meer."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="De tool Content Transfer"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s, kan de Manager van het Pakket in AEM als milieu&#39;s van de Cloud Service worden gebruikt.
 
