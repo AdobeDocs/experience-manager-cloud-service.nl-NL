@@ -1,16 +1,16 @@
 ---
 title: Slimme tag toewijzen aan video-elementen
 description: Experience Manager voegt automatisch contextafhankelijke en beschrijvende slimme tags toe aan video's met [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
+feature: Slimme tags,tags toepassen
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
-
 
 # Slimme tag toewijzen aan uw video-elementen {#video-smart-tags}
 
@@ -64,7 +64,7 @@ Als u de video-elementen wilt zoeken op basis van automatisch gegenereerde slimm
 
 De zoekresultaten geven de video-elementen weer op basis van de tag die u hebt opgegeven.
 
-Uw zoekresultaten zijn een combinatie van video-elementen met gezochte trefwoorden in de metagegevens en de video-elementen die zijn gelabeld met de gezochte trefwoorden. De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden echter eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. Zie [Zoekresultaten met slimme tags](smart-tags.md#understandsearch) voor meer informatie. [!DNL Experience Manager] 
+Uw zoekresultaten zijn een combinatie van video-elementen met gezochte trefwoorden in de metagegevens en de video-elementen die zijn gelabeld met de gezochte trefwoorden. De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden echter eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. Zie [Zoekresultaten met slimme tags](smart-tags.md#understand-search) voor meer informatie. [!DNL Experience Manager] 
 
 ## Slimme videolabels {#moderate-video-smart-tags} modereren
 
