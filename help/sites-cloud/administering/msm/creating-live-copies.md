@@ -1,13 +1,13 @@
 ---
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op uw site opnieuw te gebruiken.
-feature: Multi Site Manager
+feature: Beheer van meerdere sites
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,15 @@ Nadat u de blauwdrukconfiguratie creeert, vormt u de volgende eigenschappen:
 
 Wanneer uw blauwdrukconfiguratie wordt gebruikt, kunt u het met een rollout configuratie associëren die bepaalt hoe de Levende Kopieën van de bron/de blauwdruk worden gesynchroniseerd. Zie [De te gebruiken configuraties van de Output specificeren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Een blauwdrukconfiguratie maken {#creating-a-blueprint-configuration}
+### Bewegingsconfiguraties maken en bewerken {#creating-editing-blueprint-configurations}
+
+Vervagingsconfiguraties worden beschouwd als onveranderlijke gegevens en kunnen daarom niet worden bewerkt tijdens runtime. Om deze reden, moeten om het even welke configuratieveranderingen via Git worden opgesteld gebruikend de pijpleiding CI/CD.
+
+Meer informatie vindt u in het artikel [Notable Changes to Adobe Experience Manager (AEM) als Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+
+De volgende stappen zijn alleen voor test- en ontwikkelingsdoeleinden beschikbaar voor een beheerder van een lokale ontwikkelingsinstantie. Deze opties zijn niet beschikbaar in een AEMaaCS-cloudinstantie.
+
+#### Lokaal {#creating-a-blueprint-configuration} een blauwdrukconfiguratie maken
 
 Een blauwdrukconfiguratie maken:
 
@@ -61,7 +69,7 @@ Een blauwdrukconfiguratie maken:
 
 1. **** CreateCreate zal tot de blauwdrukconfiguratie leiden die op uw specificatie wordt gebaseerd.
 
-### Een configuratie van een blauwdruk bewerken of verwijderen {#editing-or-deleting-a-blueprint-configuration}
+### Een configuratie van een blauwdruk lokaal bewerken of verwijderen{#editing-or-deleting-a-blueprint-configuration}
 
 U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 
