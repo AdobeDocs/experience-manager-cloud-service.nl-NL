@@ -3,16 +3,21 @@ title: AEM Inhoud en Handel
 description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 82%
+source-wordcount: '377'
+ht-degree: 78%
 
 ---
 
 # Inhoud en handel AEM {#commerce-guide}
 
 Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en Handel.
+
+>[!NOTE]
+>
+>Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF, zie [AEM 6.5 Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+
 
 ## Belangrijke artikelen voor inhoud en handel {#key-articles}
 
