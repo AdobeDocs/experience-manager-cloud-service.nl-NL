@@ -1,16 +1,16 @@
 ---
 title: Aanbevolen MSM-procedures
 description: Leer de beste praktijken die door de Adobe engineering en de adviserende teams worden samengesteld helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
-feature: Multi Site Manager
+feature: Beheer van meerdere sites
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken MSM {#msm-best-practices}
 
@@ -37,6 +37,10 @@ De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.
 
 Wanneer u een nieuwe site maakt met Live Copy, is het handig om blauwdrukconfiguraties te maken om ervoor te zorgen dat de volledige MSM-functieset beschikbaar is.
+
+>[!NOTE]
+>
+> CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
 
 ## Componenten en containersynchronisatie {#components-and-container-synchronization}
 
