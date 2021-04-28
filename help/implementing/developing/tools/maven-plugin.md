@@ -1,14 +1,14 @@
 ---
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
+exl-id: d631d6df-7507-4752-862b-9094af9759a0
 translation-type: tm+mt
-source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
+source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1855'
 ht-degree: 5%
 
 ---
-
 
 # Insteekmodule voor Adobe-inhoudspakket {#adobe-content-package-maven-plugin}
 
@@ -30,7 +30,7 @@ In dit document wordt beschreven hoe u deze taken beheert met de Maven. Nochtans
 
 ## Pakketten en de AEM projectstructuur {#aem-project-structure}
 
-AEM 6.5 houdt zich aan de meest recente beste praktijken voor pakketbeheer en projectstructuur, zoals geïmplementeerd door het meest recente AEM Project Archetype voor zowel de implementaties op locatie als in AMS.
+AEM als Cloud Service houdt zich aan de recentste beste praktijken voor pakketbeheer en projectstructuur zoals uitgevoerd door het recentste Project Archetype van AEM.
 
 >[!TIP]
 >
