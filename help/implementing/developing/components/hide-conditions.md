@@ -1,14 +1,14 @@
 ---
 title: Voorwaarden verbergen gebruiken
 description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet.
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
 
 ---
-
 
 # Voorwaarden {#using-hide-conditions} verbergen gebruiken
 
@@ -72,7 +72,7 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
    ![Evaluatie van de toestand van de huid](assets/hide-conditions-evaluation.png)
 
-1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cdDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
+1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cqDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
 
 1. De optie **Onderliggende pagina&#39;s** wordt niet meer weergegeven voor de auteur van de pagina wanneer de component List wordt gebruikt.
 
