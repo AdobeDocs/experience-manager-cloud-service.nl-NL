@@ -1,14 +1,14 @@
 ---
 title: SPA en rendering op de server
 description: Als u SSR (Server Side Rendering) gebruikt in uw SPA, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
-
 
 # SPA en rendering op de server{#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Adobe raadt een aparte Adobe I/O Runtime-instantie aan voor elke AEM omgeving (auteur, publicatie, werkgebied, enz.).
+>Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) voor meer informatie.
+>
+>Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 
 ## Configuratie externe renderer {#remote-content-renderer-configuration}
 
