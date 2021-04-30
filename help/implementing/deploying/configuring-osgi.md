@@ -1,15 +1,15 @@
 ---
 title: Het vormen OSGi voor Adobe Experience Manager als Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
-feature: Deploying
+feature: Implementeren
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen OSGi voor Adobe Experience Manager als Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
@@ -219,6 +219,10 @@ De namen van variabelen moeten de volgende regels volgen:
 
 Waarden voor de variabelen mogen niet meer dan 2048 tekens bevatten.
 
+>[!NOTE]
+>
+>Variabelenamen die met `INTERNAL_` worden voorafgegaan, zijn gereserveerd door Adobe. Alle door de klant ingestelde variabelen die met dit voorvoegsel beginnen, worden genegeerd.
+
 ### Standaardwaarden {#default-values}
 
 Het volgende is op zowel milieu-specifieke als geheime configuratiewaarden van toepassing.
@@ -252,7 +256,10 @@ Als bijvoorbeeld `$[secret:server_password]` wordt gebruikt, moet een tekstbesta
 Als voor een OSGI-eigenschap andere waarden zijn vereist voor auteur in plaats van publicatie:
 
 * Er moeten afzonderlijke mappen `config.author` en `config.publish` OSGi worden gebruikt, zoals beschreven in de sectie [Resolutie van runmode](#runmode-resolution).
-* Er moeten onafhankelijke variabelenamen worden gebruikt. Het wordt aanbevolen een voorvoegsel te gebruiken, zoals `author_<variablename>` en `publish_<variablename>`, waarbij de namen van variabelen gelijk zijn
+* Er zijn twee opties om de onafhankelijke variabelennamen te maken die moeten worden gebruikt:
+   * de eerste optie, die wordt aanbevolen: in alle OSGI-mappen (zoals `config.author` en `config.publish`) die zijn gedeclareerd om verschillende waarden te definiëren, dezelfde variabelenaam gebruiken. Bijvoorbeeld
+      `$[env:ENV_VAR_NAME;default=<value>]`, waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Bij het instellen van de omgevingsvariabele via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) of via een client, maakt u onderscheid tussen de lagen aan de hand van de parameter &quot;service&quot;, zoals beschreven in deze [API-referentiedocumentatie](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). De parameter &quot;service&quot; bindt de waarde van de variabele aan de juiste OSGI-laag.
+   * de tweede optie, die verschillende variabelen moet verklaren gebruikend een prefix zoals `author_<samevariablename>` en `publish_<samevariablename>`
 
 ### Configuratievoorbeelden {#configuration-examples}
 
