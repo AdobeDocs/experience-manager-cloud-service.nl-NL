@@ -4,14 +4,14 @@ description: In dit deel van de AEM Headless Developer Journey leert u hoe u een
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te met Uw Hoofdloze Toepassing {#go-live} leven
 
@@ -63,6 +63,8 @@ Het meest gebruikelijke implementatiepatroon met toepassingen zonder kop is dat 
 3. Caching en schaalbaarheid configureren
 
 ## Distribueren naar productie {#deploy-to-production}
+
+Zodra u al uw code en inhoud plaatselijk hebt getest, bent u nu bereid om een productielocatie met AEM te beginnen.
 
 ### Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 
