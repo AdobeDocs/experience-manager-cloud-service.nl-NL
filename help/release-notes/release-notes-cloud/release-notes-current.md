@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: affe1f0be3f3448e15787cdd831474e0a9d5de6b
+source-git-commit: 9743b5a80a8554e375561093e8554455b3a6b8f5
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 0%
@@ -80,7 +80,7 @@ U kunt een demo afspelen bij uw Adobe-medewerker of u aanmelden voor de service.
 * Uitgebrachte CIF Core Components v1.9.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) voor meer informatie.
 
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#c-manager}
 
 In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.4.0 en 2021.3.0.
 
