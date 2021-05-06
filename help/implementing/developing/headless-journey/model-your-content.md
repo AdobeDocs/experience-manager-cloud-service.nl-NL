@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -212,6 +212,20 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
    * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
    * Een nieuw inhoudsfragment maken op basis van het juiste model
 
+### Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
+
+De eerste Modellen van het Fragment van de Inhoud worden toegelaten voor uw plaats, wordt dit gedaan in Browser van de Configuratie:
+
+![Configuratie definiëren](assets/cfm-configuration.png)
+
+Dan kunnen de Modellen van de Fragmenten van de Inhoud worden gemodelleerd:
+
+![Inhoudsfragmentmodel](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>Zie Werken met inhoudsfragmenten.
+
 ## Het gebruiken van het Model aan de Inhoud van de Auteur met Inhoudsfragmenten {#use-content-to-author-content}
 
 Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model biedt de structuur, het fragment bevat de inhoud.
@@ -231,6 +245,16 @@ Nadat u het fragment hebt gemaakt, kunt u het openen in de Inhoudsfragmenteditor
 * Bewerk de metagegevens.
 * De boomstructuur tonen.
 * Geef een voorvertoning van de JSON-representatie weer.
+
+### Inhoudsfragmenten {#creating-content-fragments} maken
+
+Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
+
+![Inhoudsfragmenteditor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Zie Werken met inhoudsfragmenten.
 
 ## Aan de slag met enkele voorbeelden {#getting-started-examples}
 
