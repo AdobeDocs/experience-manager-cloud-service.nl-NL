@@ -1,15 +1,16 @@
 ---
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor het leveren van inhoud zonder kop.
-feature: Content Fragments,GraphQL API
+feature: Inhoudsfragmenten,GrafiekQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3901'
 ht-degree: 0%
 
 ---
+
 
 # AEM GraphQL API voor gebruik met Content Fragments {#graphql-api-for-use-with-content-fragments}
 
@@ -43,7 +44,7 @@ GraphQL is:
 
    Zie [GraphQL](https://www.graphql.com) verkennen.
 
-* *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld voordat deze in 2015 openbaar werd uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van om het even welke grootte..&quot;*
+* *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van om het even welke grootte..&quot;*
 
    Zie [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -101,11 +102,12 @@ Met GraphQL kunt u vragen uitvoeren om of terug te keren:
 
 * A **[lijst van vermeldingen](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
-You can also perform:
+U kunt ook het volgende uitvoeren:
 
-* [Persisted Queries, that are cached](#persisted-queries-caching)
--->
+* [Blijvende query&#39;s die in cache zijn geplaatst](#persisted-queries-caching)
+
+>[!NOTE]
+>U kunt vragen testen en zuiveren GraphQL gebruikend [GrahiQL winde](#graphiql-interface).
 
 ## GraphQL voor AEM Endpoint {#graphql-aem-endpoint}
 
@@ -115,77 +117,83 @@ Het eindpunt is de weg die wordt gebruikt om tot GraphQL voor AEM toegang te heb
 * verzend uw vragen GraphQL,
 * ontvangt de reacties (op uw vragen GraphQL).
 
-Het bewaarplaatspad van GraphQL voor AEM eindpunt is:
+Er zijn twee soorten eindpunten in AEM:
+
+* Algemeen
+   * Beschikbaar voor gebruik door alle sites.
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle huurders gebruiken.
+   * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder huurders zouden moeten worden gedeeld, dan zouden deze onder de globale huurder moeten worden gecreeerd.
+* Aannemer:
+   * Komt overeen met een huurdersconfiguratie, zoals die in [Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
+   * Specifiek voor een opgegeven site/project.
+   * Een huurder specifiek eindpunt zal de Modellen van het Fragment van de Inhoud van die specifieke huurder samen met die van de globale huurder gebruiken.
+
+>[!CAUTION]
+>
+>Met de Inhoudsfragmenteditor kan een inhoudsfragment van een gebruiker verwijzen naar een inhoudsfragment van een andere gebruiker (via politie).
+>
+>In een dergelijk geval zal niet alle inhoud kunnen terugwinnen gebruikend een huurdersspecifiek eindpunt.
+>
+>De inhoudauteur zou dit scenario moeten controleren; Het kan bijvoorbeeld handig zijn om gedeelde modellen van inhoudsfragmenten onder de globale huurder te plaatsen.
+
+De bewaarplaatspad van GraphQL voor AEM globale eindpunt is:
 
 `/content/cq:graphql/global/endpoint`
 
-Uw app kan het volgende pad gebruiken in de aanvraag-URL:
+Voor welke toepassing uw toepassing het volgende pad in de aanvraag-URL kan gebruiken:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-Om het eindpunt voor GraphQL voor AEM toe te laten moet u:
-
->[!CAUTION]
->
->Deze stappen kunnen in de nabije toekomst veranderen.
+Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
 * [GrafiekQL-eindpunt inschakelen](#enabling-graphql-endpoint)
-* [Aanvullende configuraties uitvoeren](#additional-configurations-graphql-endpoint)
+* [Uw GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
 
 ### Het toelaten van uw Eindpunt GraphQL {#enabling-graphql-endpoint}
 
->[!NOTE]
->
->Zie [Ondersteunende pakketten](#supporting-packages) voor details van de pakketten die Adobe verstrekt helpen deze stappen vereenvoudigen.
-
-Om vragen GraphQL in AEM toe te laten, creeer een eindpunt bij `/content/cq:graphql/global/endpoint`:
-
-* De knooppunten `cq:graphql` en `global` moeten van het type `sling:Folder` zijn.
-* Knooppunt `endpoint` moet van het type `nt:unstructured` zijn en een `sling:resourceType` van `graphql/sites/components/endpoint` bevatten.
+Om een Eindpunt te toelaten GraphQL moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Het eindpunt is toegankelijk voor iedereen. Dit kan - vooral bij publiceer instanties - een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
+>Als het [gebruik van inhoudsfragmentmodellen niet is ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md), is de optie **Maken** niet beschikbaar.
+
+Om het overeenkomstige eindpunt toe te laten:
+
+1. Navigeer naar **Tools**, **Sites** en selecteer **GraphQL**.
+1. Selecteer **Maken**.
+1. Het **Create new GraphQL Endpoint** dialoogvenster zal worden geopend. Hier kunt u opgeven:
+   * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
+   * **Gebruik GraphQL-schema opgegeven door**: Gebruik de vervolgkeuzelijst om de gewenste site of het vereiste project te selecteren.
+
+   >[!NOTE]
+   >
+   >De volgende waarschuwing wordt weergegeven in het dialoogvenster:
+   >
+   >* *De eindpunten van GraphQL kunnen gegevensveiligheid en prestatieskwesties introduceren als niet zorgvuldig beheerd. Gelieve te verzekeren om aangewezen toestemmingen te plaatsen na het creëren van een eindpunt.*
+
+
+1. Bevestig met **Create**.
+1. Het **Volgende stappen** dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het onlangs gecreeerde eindpunt geschikte toestemmingen heeft.
+
+   >[!CAUTION]
+   >
+   >Het eindpunt is toegankelijk voor iedereen. Dit kan - vooral bij publiceer instanties - een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
+   >
+   >U kunt opstelling ACLs, aangewezen aan uw gebruiksgeval, op het eindpunt.
+
+### Het publiceren van uw Eindpunt GraphQL {#publishing-graphql-endpoint}
+
+Selecteer het nieuwe eindpunt en **Publiceer** om het volledig beschikbaar te maken in alle milieu&#39;s.
+
+>[!CAUTION]
 >
->U kunt opstelling ACLs, aangewezen aan uw gebruiksgeval, op het eindpunt.
-
->[!NOTE]
+>Het eindpunt is toegankelijk voor iedereen.
 >
->Uw eindpunt zal niet uit-van-de-doos werken. U zult [Aanvullende Configuraties voor Eindpunt GraphQL](#additional-configurations-graphql-endpoint) afzonderlijk moeten verstrekken.
-
->[!NOTE]
->Bovendien kunt u vragen testen en zuiveren GraphQL gebruikend [GrahiQL winde](#graphiql-interface).
-
-### Aanvullende configuraties voor GraphQL-eindpunt {#additional-configurations-graphql-endpoint}
-
->[!NOTE]
+>Bij het publiceren van instanties kan dit een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
 >
->Zie [Ondersteunende pakketten](#supporting-packages) voor details van de pakketten die Adobe verstrekt helpen deze stappen vereenvoudigen.
-
-Aanvullende configuraties zijn vereist:
-
-* Dispatcher:
-   * Vereiste URL&#39;s toestaan
-   * Verplicht
-* Vanity URL:
-   * Een vereenvoudigde URL toewijzen voor het eindpunt
-   * Optioneel
-
-### Ondersteunende pakketten {#supporting-packages}
-
-Om de opstelling van een eindpunt te vereenvoudigen GraphQL, verstrekt Adobe [GraphQL het Pakket van de Steekproef van het Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip).
-
-Dit archief bevat zowel [de vereiste extra configuratie](#additional-configurations-graphql-endpoint) als [het eindpunt GraphQL](#enabling-graphql-endpoint). Als geïnstalleerd op een gewone AEM instantie, zal het een volledig werkend eindpunt GraphQL op `/content/cq:graphql/global/endpoint` blootstellen.
-
-Dit pakket is bedoeld om een blauwdruk voor uw eigen projecten te zijn GraphQL. Zie het pakket **README** voor meer informatie over het gebruik van het pakket.
-
-Als u verkiest om de vereiste configuratie manueel tot stand te brengen, verstrekt Adobe ook een specifieke [GraphQL het Pakket van de Inhoud van het Eindpunt](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). Dit inhoudspakket bevat het eindpunt GraphQL slechts, zonder enige configuratie.
+>U moet opstelling ACLs aangewezen aan uw gebruiksgeval op het eindpunt.
 
 ## GraphiQL Interface {#graphiql-interface}
-
-<!--
-AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
--->
 
 Een implementatie van de standaard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is beschikbaar voor gebruik met AEM GraphQL. Dit kan [geïnstalleerd met AEM](#installing-graphiql-interface) zijn.
 
@@ -202,10 +210,6 @@ Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch v
 ### Installatie van de AEM GraphiQL-interface {#installing-graphiql-interface}
 
 De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)-pakket.
-
-<!--
-See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
--->
 
 ## Gevallen gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
 
@@ -255,14 +259,6 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` 
 1. Nadat een gebruiker tot een Fragment van de Inhoud leidt dat op het model van het Artikel wordt gebaseerd, kan het dan door GraphQL worden ondervraagd. Zie [Samplequery&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (gebaseerd op een [voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)) voor voorbeelden.
 
 In GraphQL voor AEM, is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
-
-<!--
->[!NOTE]
->
->AEM does not use the concept of namespacing for Content Fragment Models. 
->
->If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
--->
 
 De dienst van GrafiekQL van Plaatsen luistert (in de achtergrond) naar om het even welke die wijzigingen aan een Model van het Fragment van de Inhoud worden aangebracht. Wanneer updates worden ontdekt, slechts wordt dat deel van het schema opnieuw geproduceerd. Deze optimalisatie bespaart tijd en zorgt voor stabiliteit.
 
@@ -318,7 +314,7 @@ GraphQL voor AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstype
 | Tekst met meerdere regels | Tekenreeks |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
 | Getal |  Float, [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
 | Boolean |  Boolean |  Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
-| Datum en tijd | Kalender |  Wordt gebruikt om datum en tijd weer te geven in een ISO 8086-indeling |
+| Datum en tijd | Kalender |  Wordt gebruikt om datum en tijd weer te geven in de ISO 8086-indeling. Afhankelijk van het geselecteerde type, zijn er drie aroma&#39;s beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Opsomming |  Tekenreeks |  Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
 |  Tags |  [Tekenreeks] |  Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
 | Content Reference |  Tekenreeks |  Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
@@ -437,7 +433,7 @@ Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/conten
 
 ## GrafiekQL-variabelen {#graphql-variables}
 
-GraphQL laat variabelen toe om in de vraag worden geplaatst. Voor meer informatie kunt u de [documentatie GraphQL voor GraphiQL](https://graphql.org/learn/queries/#variables) zien.
+GraphQL laat variabelen toe om in de vraag worden geplaatst. Voor meer informatie kunt u de [documentatie GraphQL voor Variabelen](https://graphql.org/learn/queries/#variables) zien.
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type `Article` wilt ophalen die een specifieke variatie hebben, kunt u de variabele `variation` in GraphiQL opgeven.
 
@@ -580,27 +576,50 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
 
 
-
 * GraphQL-vaktypen worden ondersteund:
 
    * gebruiken `... on`
       * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
 
-<!--
-## Persisted Queries (Caching) {#persisted-queries-caching}
+## Blijvende query&#39;s (cache) {#persisted-queries-caching}
 
-After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
+Na het voorbereiden van een vraag met een verzoek van de POST, kan het met een verzoek van de GET worden uitgevoerd dat door de geheime voorgeheugens van HTTP of een CDN kan worden in het voorgeheugen ondergebracht.
 
-This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
+Dit wordt vereist aangezien de vragen van de POST gewoonlijk niet in het voorgeheugen ondergebracht zijn, en als het gebruiken van GET met de vraag als parameter er een significant risico is dat de parameter voor de diensten en tussenpersonen van HTTP te groot wordt.
 
-Here are the steps required to persist a given query:
+De aangehouden vragen moeten altijd het eindpunt met betrekking tot [aangewezen (huurder) configuratie](#graphql-aem-endpoint) gebruiken; zodat ze beide of beide kunnen gebruiken:
+
+* De globale configuratie en het eindpunt
+De query heeft toegang tot alle modellen van inhoudsfragmenten.
+* Specifieke huurconfiguratie(s) en eindpunt(en)
+Creërend een persisted vraag voor een specifieke huurdersconfiguratie vereist een overeenkomstig huurdersspecifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
+Bijvoorbeeld, om een voortgezette vraag specifiek voor de huurder te creëren WKND, moet een overeenkomstige WKND-Specifieke huurdersconfiguratie, en een WKND-Specifiek eindpunt vooraf worden gecreeerd.
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>Zie [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer informatie.
+>
+>**GraphQL Persistence Queries** moet worden toegelaten, voor de aangewezen huurdersconfiguratie.
 
-1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
+Bijvoorbeeld, als er een bepaalde vraag genoemd `my-query` is, die een model `my-model` van de huurdersconfiguratie `my-conf` gebruikt:
 
-   For example, create a persisted query:
+* U kunt een vraag tot stand brengen gebruikend `my-conf` specifiek eindpunt, en dan zal de vraag als volgt worden bewaard:
+   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* U kunt de zelfde vraag tot stand brengen gebruikend `global` eindpunt, maar dan zal de vraag als volgt worden bewaard:
+   `/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>Dit zijn twee verschillende query&#39;s die zijn opgeslagen onder verschillende paden.
+>
+>Ze gebruiken gewoon hetzelfde model, maar via verschillende eindpunten.
+
+
+Hier zijn de stappen die worden vereist om een bepaalde vraag voort te zetten:
+
+1. Bereid de vraag door PUTing het aan het nieuwe eindpunt URL `/graphql/persist.json/<config>/<persisted-label>` voor.
+
+   Maak bijvoorbeeld een doorlopende query:
 
    ```xml
    $ curl -X PUT \
@@ -621,32 +640,32 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. At this point, check the response.
+1. Controleer nu het antwoord.
 
-   For example, check for success:
+   Controleer bijvoorbeeld of het programma is gelukt:
 
-     ```xml
-     {
-       "action": "create",
-       "configurationName": "wknd",
-       "name": "plain-article-query",
-       "shortPath": "/wknd/plain-article-query",
-       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-     }
-     ```
+   ```xml
+   {
+     "action": "create",
+     "configurationName": "wknd",
+     "name": "plain-article-query",
+     "shortPath": "/wknd/plain-article-query",
+     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+   }
+   ```
 
-1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
+1. U kunt de voortgezette vraag dan opnieuw spelen door URL `/graphql/execute.json/<shortPath>` te KRIJGEN.
 
-   For example, use the persisted query:
+   Gebruik bijvoorbeeld de voortgezette query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Update a persisted query by POSTing to an already existing query path.
+1. Werk een voortgezette vraag door POSTing aan een reeds bestaand vraagweg bij.
 
-   For example, use the persisted query:
+   Gebruik bijvoorbeeld de voortgezette query:
 
    ```xml
    $ curl -X POST \
@@ -670,9 +689,9 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. Create a wrapped plain query.
+1. Een onbewerkte query maken.
 
-   For example:
+   Bijvoorbeeld:
 
    ```xml
    $ curl -X PUT \
@@ -683,9 +702,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Create a wrapped plain query with cache control.
+1. Creeer een verpakte onbewerkte vraag met geheim voorgeheugencontrole.
 
-   For example:
+   Bijvoorbeeld:
 
    ```xml
    $ curl -X PUT \
@@ -696,9 +715,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Create a persisted query with parameters:
+1. Maak een doorlopende query met parameters:
 
-   For example:
+   Bijvoorbeeld:
 
    ```xml
    $ curl -X PUT \
@@ -722,62 +741,62 @@ Here are the steps required to persist a given query:
      }'
    ```
 
-1. Executing a query with parameters.
+1. Een query uitvoeren met parameters.
 
-   For example:
+   Bijvoorbeeld:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
+   
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. To execute the query on publish, the related persist tree need to replicated
+1. Als u de query wilt uitvoeren bij publiceren, moet de verwante boomstructuur worden gerepliceerd
 
-   * Using a POST for replication:
+   * Een POST voor replicatie gebruiken:
 
-     ```xml
-     $curl -X POST   http://localhost:4502/bin/replicate.json \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-       -F cmd=activate
-     ```
+      ```xml
+      $curl -X POST   http://localhost:4502/bin/replicate.json \
+        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+        -F cmd=activate
+      ```
 
-   * Using a package:
-     1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-     1. Build the package.
-     1. Replicate the package.
+   * Een pakket gebruiken:
+      1. Maak een nieuwe pakketdefinitie.
+      1. Neem de configuratie op (bijvoorbeeld `/conf/wknd/settings/graphql/persistentQueries`).
+      1. Maak het pakket.
+      1. Herhaal het pakket.
+   * Het replicatie-/distributiehulpmiddel gebruiken.
+      1. Ga naar het gereedschap Distributie.
+      1. Selecteer boomactivering voor de configuratie (bijvoorbeeld `/conf/wknd/settings/graphql/persistentQueries`).
+   * Een workflow gebruiken (via workflowstartconfiguratie):
+      1. Definieer een workflowstartregel voor het uitvoeren van een workflowmodel dat de configuratie van verschillende gebeurtenissen zou repliceren (bijvoorbeeld, maken, wijzigen, enz.).
 
-   * Using replication/distribution tool.
-     1. Go to the Distribution tool.
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-   * Using a workflow (via workflow launcher configuration):
-     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
-
-   >[!NOTE]
-   >
-   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
-   >
-   >If that is not the case it will not be able to execute.
+1. Zodra de vraagconfiguratie is op publiceren, zijn de zelfde principes van toepassing, enkel gebruikend het publiceereindpunt.
 
    >[!NOTE]
    >
-   >Any semicolons (";") in the URLs need to be encoded.
+   >Voor anonieme toegang veronderstelt het systeem dat ACL &quot;iedereen&quot;toestaat om toegang tot de vraagconfiguratie te hebben.
    >
-   >For example, as in the request to Execute a persisted query:
+   >Als dat niet het geval is, zal het niet kunnen uitvoeren.
+
+   >[!NOTE]
    >
-   >```xml
+   >Eventuele puntkomma&#39;s (&quot;;&quot;) in de URL&#39;s moeten worden gecodeerd.
+   >
+   >Bijvoorbeeld, zoals in het verzoek om een voortgezette vraag uit te voeren:
+   >
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
--->
 
 ## Het vragen van het eindpunt GraphQL van een Externe Website {#query-graphql-endpoint-from-external-website}
 
@@ -796,13 +815,8 @@ Om tot het eindpunt toegang te hebben GraphQL, moet een beleid CORS in de bewaar
 
 In deze configuratie moet een vertrouwde website-oorsprong `alloworigin` of `alloworiginregexp` worden opgegeven waarvoor toegang moet worden verleend.
 
-<!--
-For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
--->
+Bijvoorbeeld, om toegang tot het eindpunt te verlenen GraphQL en voortgeduurde vragen eindpunt voor `https://my.domain` kunt u gebruiken:
 
-Bijvoorbeeld, om toegang tot het eindpunt GraphQL voor `https://my.domain` te verlenen kunt u gebruiken:
-
-<!--
 ```xml
 {
   "supportscredentials":true,
@@ -832,39 +846,6 @@ Bijvoorbeeld, om toegang tot het eindpunt GraphQL voor `https://my.domain` te ve
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
-  ]
-}
-```
--->
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
