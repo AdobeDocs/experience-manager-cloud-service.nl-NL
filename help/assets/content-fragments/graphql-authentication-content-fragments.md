@@ -1,15 +1,15 @@
 ---
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
 description: Begrijp de authentificatie die voor Verre AEM vragen GraphQL wordt vereist om uw inhoud zonder kop te beveiligen.
-feature: Content Fragments,GraphQL API
+feature: Inhoudsfragmenten,GrafiekQL API
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -19,7 +19,7 @@ Een primair gebruiksgeval voor [Adobe Experience Manager als Cloud Service (AEM)
 >
 >Voor het testen en de ontwikkeling kunt u tot de AEM API ook direct toegang hebben GraphQL gebruikend [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
 
-Voor authentificatie moet de derdedienst [Toegangstoken ](#access-token) gebruiken, die dan [in het Vraag GraphQL](#use-access-token-in-graphql-request) kan worden gebruikt.
+Voor authentificatie moet de derdedienst [een Token van de Toegang terugwinnen](#retrieving-access-token), die dan [in het Vraag GraphQL](#use-access-token-in-graphql-request) kan worden gebruikt.
 
 ## Een toegangstoken {#retrieving-access-token} ophalen
 
