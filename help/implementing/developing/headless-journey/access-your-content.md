@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
@@ -146,24 +146,6 @@ De **Fragmentverwijzing**:
 ### JSON-voorvertoning {#json-preview}
 
 Om u te helpen bij het ontwerpen en ontwikkelen van modellen van inhoudsfragmenten, kunt u een voorbeeld van JSON-uitvoer weergeven in de Content Fragment Editor.
-
-### Modellen voor inhoudsfragmenten en inhoudsfragmenten maken {#creating-content-fragment-models-and-content-fragments}
-
-De eerste Modellen van het Fragment van de Inhoud worden toegelaten voor uw plaats, wordt dit gedaan in Browser van de Configuratie:
-
-![Configuratie definiëren](assets/cfm-configuration.png)
-
-Dan kunnen de Modellen van de Fragmenten van de Inhoud worden gemodelleerd:
-
-![Inhoudsfragmentmodel](assets/cfm-model.png)
-
-Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
-
-![Inhoudsfragmenteditor](assets/cfm-editor.png)
-
->[!NOTE]
->
->Zie Werken met inhoudsfragmenten.
 
 ## GraphQL-schema genereren op basis van inhoudsfragmenten {#graphql-schema-generation-content-fragments}
 
