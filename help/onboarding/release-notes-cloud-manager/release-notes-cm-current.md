@@ -1,53 +1,55 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.4.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.4.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
+feature: Geen informatie
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.4.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.4.0.
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.5.0 {#release-notes}
+
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.5.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 2021.
-De volgende release is gepland voor 6 mei 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
+De volgende release is gepland voor 3 juni 2021.
 
-### Wat is er nieuw?{#what-is-new-april}
+### Wat is er nieuw?{#what-is-new}
 
-* UI werkt aan de Add en Edit de werkschema&#39;s van het Programma om het intuïtiever te maken.
+* De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, d.w.z. in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
 
-* Een gebruiker met vereiste toestemmingen kan het commerciële eindpunt via UI nu voorleggen.
+* Het eindpunt van de repository in de Public API bevat nu de Git URL.
 
-* De variabelen van het milieu kunnen nu aan de specifieke dienst, of auteur of publiceren worden onderworpen. Vereist AEM versie `2021.03.5104.20210328T185548Z` of hoger.
+* Het implementatielogboek dat door een gebruiker van Cloud Manager wordt gedownload, is begrijpelijker en bevat nu details over fouten en successcenario&#39;s.
 
-* De **Manage knoop van Git** wordt getoond op de kaart van Pijpleidingen zelfs wanneer geen pijpleidingen zijn gevormd.
+* Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar Adobe-it, zijn nu opgelost.
 
-* De versie van het AEM projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 27.
+* Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
 
-* Projecten in de Adobe I/O Developer Console die door Cloud Manager zijn gemaakt, kunnen niet langer per ongeluk worden bewerkt of verwijderd.
+* De ervaring met het bewerkingsprogramma is vernieuwd.
 
-* Wanneer een gebruiker een nieuwe omgeving toevoegt, wordt hem meegedeeld dat een nieuwe omgeving niet naar een andere regio kan worden verplaatst.
+* De lijst van de Namen van het Domein in de pagina van Details van het Milieu zal tot 250 namen van Domein via paginering tonen.
 
-* De variabelen van het milieu kunnen nu aan de specifieke dienst, of auteur of publiceren worden onderworpen. Vereist AEM versie 2021.03.5104.20210328T185548Z of hoger.
+* Het lusje van Oplossingen in Add Programma en geef de werkschema&#39;s van het Programma uit zal de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
 
-* Het foutbericht bij het starten van een pijpleiding wanneer een omgeving werd verwijderd, is verduidelijkt.
+* Het foutenbericht in het bouwstijlstaplogboek toen de bouwstijl geen opgestelde inhoudspakketten produceerde was onduidelijk.
 
-* OSGi-bundels die door Eclipse-projecten worden geleverd, zijn nu uitgesloten van regel `CQBP-84--dependencies`.
+### Opgeloste problemen {#bug-fixes}
 
-### Opgeloste problemen {#bug-fixes-cm-april}
+* Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
 
-* Wanneer het uitgeven van de de controlepagina van de Ervaring van een pijpleiding, zal een inputweg die met een schuine streep `( / )` begint niet meer resulteren in het plakken van de stap in wachtende status.
+* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **DELETED**.
 
-* Wanneer een nieuwe productiepijplijn wordt gecreeerd, als geen de opheffing van de inhoudscontrole door de gebruiker wordt toegevoegd, werd de standaardhomepage niet gecontroleerd.
+* Sommige kwaliteitskwesties van het type Code Smell hadden een onjuiste invloed op de beoordeling Betrouwbaarheid.
 
-* De kwesties voor `CloudServiceIncompatibleWorkflowProcess` hadden de onjuiste strengheid in het downloadbare dossier van de uitgave CSV.
+* Omdat jokertekendomeinen niet worden ondersteund, staat de gebruikersinterface de gebruiker niet toe een jokertekendomein in te dienen.
 
-* De `Runmode` controle produceerde valse positieven op niet omslagknopen.
+* Wanneer een pijpleidingsuitvoering tussen middernacht en 1am UTC werd begonnen, werd de artefactversie die door de Manager van de Wolk werd geproduceerd niet gewaarborgd om groter te zijn dan een versie die de vorige dag werd gecreeerd.
+
+* Tijdens de opstelling van het programma Sandbox, zodra het project met steekproefcode met succes is gecreeerd, zal Manage Git als verbinding van de heldenkaart in de pagina van het Overzicht verschijnen.
