@@ -1,14 +1,14 @@
 ---
 title: Release-aantekeningen voor 2021.2.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2021.2.0.'
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 translation-type: tm+mt
-source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
 
 ---
-
 
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
@@ -166,4 +166,3 @@ Raadpleeg [Unified Experience](https://experienceleague.adobe.com/docs/experienc
 
 * Verschillende opgeloste problemen zijn opgelost in de Repository Modernizer.
 Verwijs naar [Middel GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
-
