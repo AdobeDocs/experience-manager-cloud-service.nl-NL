@@ -1,18 +1,18 @@
 ---
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
+exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
-
 # Replicatie {#replication}
 
-Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) mogelijkheid om de inhoud te verplaatsen naar een pijplijnservice die op Adobe I/O wordt uitgevoerd en buiten de AEM runtime valt.
+Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) mogelijkheid om de inhoud te verplaatsen naar een pijplijnservice die wordt uitgevoerd op een Adobe I/O die zich buiten de AEM runtime bevindt.
 
 >[!NOTE]
 >
@@ -42,6 +42,76 @@ Een boomactivering uitvoeren:
 
    ![](assets/distribute.png "DistributeDistribute")
 4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
+
+### Workflow {#publish-content-tree-workflow} publiceren in inhoudsstructuur
+
+U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen - Werkschema - Modellen** te kiezen en het **Publish Inhoudsboom** uit-van-de-doos werkschemamodel te kopiëren, zoals hieronder getoond:
+
+![](/help/operations/assets/publishcontenttreeworkflow.png)
+
+Wijzig het originele model niet of activeer het niet. In plaats daarvan, zorg ervoor om het model eerst te kopiëren en dan die exemplaar te wijzigen of aan te halen.
+
+Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [Interacting with Workflows Programatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+
+Alternatief, kunt u dit ook bereiken door een Model van het Werkschema te creëren dat de `Publish Content Tree` processtap gebruikt:
+
+1. Van de AEM als homepage van de Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**
+1. Druk in de pagina Workflowmodellen op **Create** in de rechterbovenhoek van het scherm
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. Selecteer het nieuwe model in de lijst en druk op **Bewerken**
+1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
+
+   ![Processtap](/help/operations/assets/processstep.png)
+
+1. Klik de stap van het Proces in de stroom en selecteer **vorm** door het moersleutelpictogram te drukken
+1. Klik op de tab **Proces** en selecteer `Publish Content Tree` in de vervolgkeuzelijst
+
+   ![Treeactivation](/help/operations/assets/newstep.png)
+
+1. Stel aanvullende parameters in het veld **Argumenten** in. Meerdere door komma&#39;s gescheiden argumenten kunnen met elkaar worden verbonden. Bijvoorbeeld:
+
+   `enableVersion=true,agentId=publish`
+
+
+   >[!NOTE]
+   >
+   >Zie de sectie **Parameters** hieronder voor de lijst met parameters.
+
+1. Druk op **Done** om het workflowmodel op te slaan.
+
+**Parameters**
+
+* `replicateAsParticipant` (booleaanse waarde, standaardwaarde):  `false`). Indien gevormd als `true`, gebruikt de replicatie `userid` van het hoofd dat de deelnemersstap uitvoerde.
+* `enableVersion` (booleaanse waarde, standaardwaarde):  `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
+* `agentId` (tekenreekswaarde, standaardwaarde betekent dat alle ingeschakelde agents worden gebruikt).
+* `filters` (tekenreekswaarde, standaard betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
+   * `onlyActivated` - alleen paden die niet zijn gemarkeerd als geactiveerd, worden geactiveerd.
+   * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
+   * Het bovenstaande kan ORed zijn met een pijp &quot;|&quot;. Bijvoorbeeld, `onlyActivated|onlyModified`.
+
+**Logboekregistratie**
+
+Wanneer de stap van de workflow voor activering van de structuur begint, worden de configuratieparameters op het INFO-logniveau vastgelegd. Wanneer de wegen worden geactiveerd, wordt een verklaring INFO ook geregistreerd.
+
+Een definitieve verklaring van INFO zal dan worden geregistreerd nadat de werkschemastap alle wegen heeft herhaald.
+
+Bovendien kunt u het logniveau van de loggers onder `com.day.cq.wcm.workflow.process.impl` aan DEBUG/TRACE verhogen om nog meer logboekinformatie te krijgen.
+
+In het geval van fouten, eindigt de werkschemastap met `WorkflowException`, die de onderliggende Uitzondering verpakt.
+
+Hieronder vindt u voorbeelden van logboeken die worden gegenereerd tijdens een voorbeeldworkflow voor de publicatiestructuur van inhoud:
+
+```
+21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
+```
+
+```
+21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
+```
+
+**Ondersteuning hervatten**
+
+De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledige inhoud die moet worden gepubliceerd. Als om het even welke reden de werkschema door het systeem wordt tegengehouden, zal het het brok opnieuw beginnen en verwerken dat nog niet werd verwerkt. In een loginstructie wordt aangegeven dat de inhoud is hervat vanaf een specifiek pad.
 
 ## Problemen oplossen {#troubleshooting}
 
