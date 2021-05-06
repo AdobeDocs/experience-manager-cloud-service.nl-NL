@@ -1,16 +1,16 @@
 ---
 title: Inhoudsfragmenten - Configuratiebrowser
 description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM krachtige koploze leveringseigenschappen te gebruiken.
-feature: Content Fragments
+feature: Contentfragmenten
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 19%
+source-wordcount: '287'
+ht-degree: 18%
 
 ---
-
 
 # Inhoudsfragmenten - Configuratiebrowser{#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ Alvorens Inhoudsfragmenten te gebruiken moet u **Browser van de Configuratie** g
 
 >[!CAUTION]
 >
->Als u **Content Fragment Models** niet inschakelt, is de optie **Create** niet beschikbaar voor het maken van nieuwe modellen.
+>Als u **Inhoudsfragmentmodellen** niet inschakelt:
+>
+>* De optie **Maken** is niet beschikbaar voor het maken van nieuwe modellen.
+>* u zult niet de huurder kunnen [selecteren om het verwante eindpunt ](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) tot stand te brengen.
+
 
 Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
 
