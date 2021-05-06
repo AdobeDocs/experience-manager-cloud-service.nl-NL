@@ -1,14 +1,14 @@
 ---
 title: Uw inhoud modelleren
-description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Data Modeling with Content Fragment Models and Content Fragments.
+description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -38,10 +38,10 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 
 * **Publiek**: Begin
 * **Doel**: Leer hoe u uw inhoudsstructuur kunt modelleren en realiseer die structuur met AEM Content Fragment Models and Content Fragments:
-   * Introduceer concepten en terminologie met betrekking tot [gegevensmodellering](#data-modeling).
-   * Leer [waarom gegevensmodellering nodig is voor levering van inhoud zonder kop](#data-modeling-for-aem-headless).
-   * Leer [hoe u deze structuur kunt realiseren met AEM Content Fragment Models](#create-structure-content-fragment-models) (en inhoud schrijven met [Inhoudsfragmenten](#use-content-to-author-content)).
-   * Leer [hoe u uw inhoud kunt modelleren](#getting-started-examples); beginselen met basismonsters.
+   * Introduceer concepten en terminologie met betrekking tot gegevens/inhoud modellering.
+   * Ontdek waarom contentmodellering nodig is voor levering van inhoud zonder koptekst.
+   * Leer hoe u deze structuur kunt realiseren met AEM Content Fragment Models (en inhoud met Content Fragments schrijven).
+   * Leer hoe u uw inhoud modelleert; beginselen met basismonsters.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 >
 >Wij zullen slechts de aspecten in overweging nemen die van belang zijn wanneer het modelleren van gegevens voor gebruik met AEM Headless.
 
-## Gegevensmodellering {#data-modeling}
+## Inhoud modelleren {#content-modeling}
 
 *Het is een grote, slechte wereld daarbuiten*.
 
 Misschien niet, maar het is zeker een grote ***gecompliceerde*** wereld daarbuiten en gegevensmodellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
+
+>[!NOTE]
+>
+>Aangezien AEM met inhoud behandelt, verwijzen wij naar de Modellering van Gegevens als Inhoud Modeling.
 
 Bijvoorbeeld:
 
@@ -91,7 +95,7 @@ De informatie die we over hen willen opslaan is **Attributes** (eigenschappen), 
 
 Dan zijn er verschillende **relaties** tussen de entiteiten. Een school heeft bijvoorbeeld meestal maar één hoofdleraar en veel leraren (en meestal is de hoofdleraar ook een leraar).
 
-Het proces om deze informatie, samen met het verband tussen hen te analyseren en te bepalen, wordt genoemd **Gegevensmodellering**.
+Het proces om deze informatie, samen met het verband tussen hen te analyseren en te bepalen, wordt genoemd **Inhoud Modeling**.
 
 ### Basisbeginselen {#basics}
 
@@ -128,9 +132,9 @@ Alles is een evenwichtsactie, maar het creëren van een structuur die te complex
 
 * Het heeft een ernstig effect op de prestaties als de query toegang moet krijgen tot meerdere geneste (waarnaar wordt verwezen) inhoudsfragmenten om de vereiste inhoud op te halen.
 
-## Gegevensmodellering voor AEM headless {#data-modeling-for-aem-headless}
+## Content Modeling for AEM Headless {#content-modeling-for-aem-headless}
 
-Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt wanneer ontwikkelde relatiedatabanken, zodat wat het voor AEM Zwaartepunt betekent?
+Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt wanneer ontwikkelde relatiedatabanken, zodat wat de Modellering van de Inhoud voor AEM Zwaartepunt betekent?
 
 ### Waarom? {#why}
 
@@ -142,7 +146,7 @@ Dit betekent dat uw toepassing van tevoren de vorm van de reactie en daarom hoe 
 
 AEM gebruikt Content Fragments om de structuren te bieden die nodig zijn voor de levering van inhoud zonder kop aan uw toepassingen.
 
-De structuur van het gegevensmodel is:
+De structuur van het inhoudsmodel is:
 
 * door de definitie van het inhoudsfragmentmodel wordt gerealiseerd,
 * gebruikt als basis voor de Inhoudsfragmenten die worden gebruikt voor het genereren van inhoud.
@@ -173,7 +177,7 @@ Binnen een model:
 1. **Met** gegevenstypen kunt u de afzonderlijke kenmerken definiëren.
 Definieer bijvoorbeeld het veld met de naam van een docent als **Text** en de bijbehorende servicejaren als **Number**.
 1. Met de gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
-1. Met het gegevenstype **Fragmentverwijzing** kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is essentieel voor uw gegevensmodellering.
+1. Met het gegevenstype **Fragmentverwijzing** kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
 ![Inhoud modelleren met inhoudsfragmenten](assets/headless-modeling-01.png "Inhoud modelleren met inhoudsfragmenten")
@@ -250,4 +254,4 @@ Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te b
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)  beheren - Inhoudsfragmenten maken en ontwerpen; deze pagina leidt u tot andere gedetailleerde secties
 * [AEM GraphQL-schema](/help/implementing/developing/headless-journey/access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van AEM functies zonder kop, zoals gegevensmodellering en GraphQL
+* [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van AEM functies zonder kop, waaronder het modelleren van inhoud en GraphQL
