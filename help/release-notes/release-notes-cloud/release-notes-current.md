@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
+source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -140,14 +140,53 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Het veld Hoofdcategorie is niet weergegeven op het tabblad Handel in de pagina-eigenschappen van categoriepagina&#39;s
 
+
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.4.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.5.0 en 2021.4.0.
+
+### Releasedatum {#release-date-cm-may}
+
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
+De volgende release is gepland voor 3 juni 2021.
+
+### Wat is er nieuw?{#what-is-new-may}
+
+* De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, d.w.z. in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
+
+* Het eindpunt van de repository in de Public API bevat nu de Git URL.
+
+* Het implementatielogboek dat door een gebruiker van Cloud Manager wordt gedownload, is begrijpelijker en bevat nu details over fouten en successcenario&#39;s.
+
+* Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar Adobe-it, zijn nu opgelost.
+
+* Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
+
+* De ervaring met het bewerkingsprogramma is vernieuwd.
+
+* De lijst van de Namen van het Domein in de pagina van Details van het Milieu zal tot 250 namen van Domein via paginering tonen.
+
+* Het lusje van Oplossingen in Add Programma en geef de werkschema&#39;s van het Programma uit zal de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
+
+* Het foutenbericht in het bouwstijlstaplogboek toen de bouwstijl geen opgestelde inhoudspakketten produceerde was onduidelijk.
+
+### Opgeloste problemen {#bug-fixes-cm-may}
+
+* Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
+
+* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **DELETED**.
+
+* Sommige kwaliteitskwesties van het type Code Smell hadden een onjuiste invloed op de beoordeling Betrouwbaarheid.
+
+* Omdat jokertekendomeinen niet worden ondersteund, staat de gebruikersinterface de gebruiker niet toe een jokertekendomein in te dienen.
+
+* Wanneer een pijpleidingsuitvoering tussen middernacht en 1am UTC werd begonnen, werd de artefactversie die door de Manager van de Wolk werd geproduceerd niet gewaarborgd om groter te zijn dan een versie die de vorige dag werd gecreeerd.
+
+* Tijdens de opstelling van het programma Sandbox, zodra het project met steekproefcode met succes is gecreeerd, zal Manage Git als verbinding van de heldenkaart in de pagina van het Overzicht verschijnen.
 
 ### Releasedatum {#release-date-cm-april}
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 2021.
-De volgende release is gepland voor 6 mei 2021.
 
 ### Wat is er nieuw?{#what-is-new-april}
 
