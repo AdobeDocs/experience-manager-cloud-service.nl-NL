@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Re
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
 feature: Geen informatie
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
 
-* De ervaring met het bewerkingsprogramma is vernieuwd.
+* De *ervaring van het bewerkingsprogramma* is vernieuwd.
 
 * De lijst van de Namen van het Domein in de pagina van Details van het Milieu zal tot 250 namen van Domein via paginering tonen.
 
-* Het lusje van Oplossingen in Add Programma en geef de werkschema&#39;s van het Programma uit zal de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
+* De **Oplossingen &amp; toe:voegen-ons** tabel in **Add Programma** en **Edit Programma** werkschema&#39;s zullen de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
 
 * Het foutenbericht in het bouwstijlstaplogboek toen de bouwstijl geen opgestelde inhoudspakketten produceerde was onduidelijk.
 
