@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '2181'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey,](overview.md) kunt u leren hoe u query&#39;s GraphQL kunt gebruiken om toegang te krijgen tot de inhoud van uw Content Fragments.
+In dit deel van [AEM Headless Developer Journey,](overview.md) kunt u leren hoe u GraphQL-query&#39;s kunt gebruiken om toegang te krijgen tot de inhoud van uw Content Fragments en deze te verzenden naar uw app (headless delivery).
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -135,9 +135,7 @@ Deze modellen van inhoudsfragmenten:
 
 De **Fragmentverwijzing**:
 
-* Is van bijzonder belang in samenhang met GraphQL.
-
-* Dit is een specifiek gegevenstype dat kan worden gebruikt bij het definiëren van een inhoudsfragmentmodel.
+* Is een specifiek gegevenstype beschikbaar wanneer het bepalen van een Model van het Fragment van de Inhoud.
 
 * Verwijst naar een ander fragment, afhankelijk van een specifiek inhoudsfragmentmodel.
 
@@ -148,6 +146,24 @@ De **Fragmentverwijzing**:
 ### JSON-voorvertoning {#json-preview}
 
 Om u te helpen bij het ontwerpen en ontwikkelen van modellen van inhoudsfragmenten, kunt u een voorbeeld van JSON-uitvoer weergeven in de Content Fragment Editor.
+
+### Modellen voor inhoudsfragmenten en inhoudsfragmenten maken {#creating-content-fragment-models-and-content-fragments}
+
+De eerste Modellen van het Fragment van de Inhoud worden toegelaten voor uw plaats, wordt dit gedaan in Browser van de Configuratie:
+
+![Configuratie definiëren](assets/cfm-configuration.png)
+
+Dan kunnen de Modellen van de Fragmenten van de Inhoud worden gemodelleerd:
+
+![Inhoudsfragmentmodel](assets/cfm-model.png)
+
+Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
+
+![Inhoudsfragmenteditor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Zie Werken met inhoudsfragmenten.
 
 ## GraphQL-schema genereren op basis van inhoudsfragmenten {#graphql-schema-generation-content-fragments}
 
@@ -239,9 +255,98 @@ Het biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch s
 
 ![GraphiQL ](assets/graphiql-interface.png "InterfaceGraphiQL Interface")
 
-## De AEM GraphQL-API {#using-aem-graphiql} gebruiken
+## Eigenlijk de AEM GraphQL API {#actually-using-aem-graphiql} gebruiken
 
-Voor de details van het gebruiken van AEM GraphQL API, samen met het vormen van de noodzakelijke elementen, kunt u verwijzing:
+Om werkelijk AEM GraphQL API in een vraag te gebruiken, kunnen wij de twee zeer basisstructuren van het Model van het Fragment van de Inhoud gebruiken:
+
+* Bedrijf
+   * Naam
+   * CEO (Persoon)
+   * Werknemers (personen)
+* Person
+   * Naam
+   * Voornaam
+
+Zoals u kunt zien, verwijzen de gebieden CEO en Werknemers, naar de fragmenten van de Persoon.
+
+De fragmentmodellen worden gebruikt:
+
+* wanneer u de inhoud maakt in de Content Fragment Editor
+* om de schema&#39;s te produceren GraphQL die u zult vragen
+
+De vragen kunnen in de interface GraphiQL, bijvoorbeeld bij zijn ingegaan:
+
+* `http://localhost:4502/content/graphiql.html `
+
+Een duidelijke vraag moet de naam van alle ingangen in het schema van het Bedrijf terugkeren. Hier kunt u een lijst met alle bedrijfsnamen aanvragen:
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+Een iets complexere vraag is om alle personen te selecteren die geen naam van &quot;Banen&quot;hebben. Hiermee worden alle personen gefilterd voor personen die niet de naam Taken hebben. Dit wordt bereikt met de operator EQUALS_NOT (er zijn nog veel meer):
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+U kunt ook complexere query&#39;s maken. Bijvoorbeeld, vraag voor alle bedrijven die minstens één werknemer met de naam van &quot;Smith&quot;hebben. Deze vraag illustreert het filtreren voor om het even welke persoon van naam &quot;Smith&quot;, die informatie van over de genestelde fragmenten terugkeert:
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+Voor de volledige details van het gebruiken van AEM GraphQL API, samen met het vormen van de noodzakelijke elementen, kunt u verwijzing:
 
 * Leren gebruiken van GraphQL met AEM
 * De structuur van het voorbeeldinhoudsfragment
