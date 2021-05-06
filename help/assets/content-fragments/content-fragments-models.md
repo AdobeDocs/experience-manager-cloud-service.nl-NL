@@ -1,16 +1,16 @@
 ---
 title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
-feature: Content Fragments
+feature: Contentfragmenten
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2309'
 ht-degree: 4%
 
 ---
-
 
 # Modellen van contentfragmenten {#content-fragment-models}
 
@@ -61,7 +61,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
    >
    >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (*****).
 
-   ![eigenschappen](assets/cfm-models-03.png)
+![eigenschappen](assets/cfm-models-03.png)
 
 1. **Een veld toevoegen**
 
@@ -111,6 +111,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Content Reference**
    * verwijzingen naar andere inhoud, ongeacht het type; kan worden gebruikt om [geneste inhoud te maken](#using-references-to-form-nested-content)
+   * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
 * **Fragmentverwijzing**
    * Verwijzingen naar andere inhoudsfragmenten; kan worden gebruikt om [geneste inhoud te maken](#using-references-to-form-nested-content)
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
@@ -121,6 +122,13 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
       * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
+* **Tijdelijke aanduiding voor tab**
+   * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
+Dit zal als verdeler in de modelredacteur worden getoond, scheidend secties van de lijst van de types van inhoudsgegevens. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
+In de fragmenteditor wordt elke instantie weergegeven als een tab.
+
+      >[!NOTE]
+      Dit gegevenstype wordt puur gebruikt voor het formatteren, wordt het genegeerd door het schema AEM GraphQL.
 
 ## Eigenschappen {#properties}
 
@@ -165,6 +173,8 @@ TranslatableChecking the &quot;Translatable&quot; checkbox on a field in CF mode
    * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd in de vertaalconfig, context `/content/dam/<tenant>`, als deze nog niet aanwezig is.
    * Voor GraphQL: Stel een `<translatable>`-eigenschap in het veld Inhoudsfragment in op `yes` om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
 
+* Zie **[Content Reference](#content-reference)** voor meer informatie over dat specifieke gegevenstype en de eigenschappen ervan.
+
 * Zie **[Fragmentverwijzing (geneste fragmenten)](#fragment-reference-nested-fragments)** voor meer informatie over dat specifieke gegevenstype en zijn eigenschappen.
 
 ## Validatie {#validation}
@@ -181,12 +191,6 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
    * Er kan alleen worden verwezen naar afbeeldingen binnen een vooraf gedefinieerd bereik van breedte en/of hoogte (in pixels).
 * **Fragmentverwijzing**
    * Testen op een specifiek inhoudsfragmentmodel.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Referenties gebruiken om geneste inhoud {#using-references-to-form-nested-content} te vormen
 
@@ -219,12 +223,14 @@ Met de Content Reference kunt u inhoud van een andere bron renderen. bijvoorbeel
 
 Naast de standaardeigenschappen kunt u opgeven:
 
-* Het **basispad** voor inhoud waarnaar wordt verwezen.
-* De inhoudstypen waarnaar kan worden verwezen.
-* Beperkingen voor bestandsgrootten.
-* Afbeeldingsbeperkingen.
-   <!-- Check screenshot - might need update -->
-   ![Content Reference](assets/cfm-content-reference.png)
+* Het **basispad** voor inhoud waarnaar wordt verwezen
+* De inhoudstypen waarnaar kan worden verwezen
+* Beperkingen voor bestandsgrootten
+* Als naar een afbeelding wordt verwezen:
+   * Miniatuur tonen
+   * Hoogte- en breedtebeperkingen voor afbeeldingen
+
+![Content Reference](assets/cfm-content-reference.png)
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ PathThis specifies a root path for any fragments referenced.
 
    * **fragmentreference samengesteld** : hiermee kan de auteur van het fragment een samenstelling maken door meerdere fragmenten te selecteren
 
-   <!-- Check screenshot - might need update -->
    ![Fragmentverwijzing](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ U kunt de **Eigenschappen** van een model van het Fragment van de Inhoud uitgeve
    * **Tags**
    * **Beschrijving**
    * **Afbeelding uploaden**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
