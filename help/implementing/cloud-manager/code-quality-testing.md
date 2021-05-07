@@ -1,16 +1,21 @@
 ---
 title: Codekwaliteitstests - Cloud Services
 description: Codekwaliteitstests - Cloud Services
+exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 translation-type: tm+mt
-source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
 
-
 # Testen van de kwaliteit van de code {#code-quality-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Testen van de codekwaliteit"
+>abstract="Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen."
 
 Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
 
