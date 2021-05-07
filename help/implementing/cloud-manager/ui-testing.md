@@ -1,16 +1,21 @@
 ---
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 translation-type: tm+mt
-source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
-
 # UI Testen {#ui-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_uitesting"
+>title="UI-tests"
+>abstract="De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). De Docker-afbeelding kan met standaardgereedschappen worden gemaakt, maar tijdens de uitvoering ervan moet deze afbeelding bepaalde conventies respecteren. Bij het uitvoeren van de Docker-afbeelding wordt automatisch een Selenium-server ingericht. Met de onderstaande runtimeconventies heeft uw testcode toegang tot zowel de Selenium-server als de AEM die worden getest."
 
 De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). De Docker-afbeelding kan met standaardgereedschappen worden gemaakt, maar tijdens de uitvoering ervan moet deze afbeelding bepaalde conventies respecteren. Bij het uitvoeren van de Docker-afbeelding wordt automatisch een Selenium-server ingericht. Met de onderstaande runtimeconventies heeft uw testcode toegang tot zowel de Selenium-server als de AEM die worden getest.
 
