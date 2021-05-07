@@ -1,16 +1,21 @@
 ---
 title: Experience Audit Testing - Cloud Services
 description: Experience Audit Testing - Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
-
 # Ervaring controleren {#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="Experience Audit Testing"
+>abstract="Experience Audit is een functie die beschikbaar is in de Sites Production-pijpleidingen van Cloud Manager, aangedreven door Google Lighthouse, een opensource tool van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager."
 
 Experience Audit is een functie die beschikbaar is in de Sites Production-pijpleidingen van Cloud Manager, aangedreven door Google Lighthouse, een opensource tool van Google. Deze functie is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
 
@@ -61,4 +66,3 @@ Door in een van de tests te boren, kunt u een gedetailleerdere score op paginani
 Als u op de details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd, en kunt u aangeven welke problemen u kunt oplossen als er mogelijkheden voor verbetering zijn gevonden. De details van de tests en de bijbehorende richtsnoeren worden verstrekt door Google Lighthouse.
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
