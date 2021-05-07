@@ -1,16 +1,21 @@
 ---
 title: De tool AEM Dispatcher Converter
 description: De tool AEM Dispatcher Converter
+exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 translation-type: tm+mt
-source-git-commit: 50d26dbec8281afec07ca56595b4b2a7b915eca9
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 53%
+source-wordcount: '341'
+ht-degree: 51%
 
 ---
 
-
 # AEM Dispatcher Converter {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispconverter"
+>title="AEM Dispatcher Converter"
+>abstract="Adobe Experience Manager Dispatcher Converter zet bestaande AEM Dispatcher-configuraties om in AEM als configuraties van Cloud Service Dispatcher."
 
 Adobe Experience Manager Dispatcher Converter zet bestaande AEM Dispatcher-configuraties om in AEM als configuraties van Cloud Service Dispatcher.
 
@@ -45,4 +50,3 @@ AEM Dispatcher Converter biedt de mogelijkheid om bestaande configuraties van Di
 
 >[!IMPORTANT]
 >AEM Dispatcher Converter wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
-
