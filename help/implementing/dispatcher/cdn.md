@@ -4,16 +4,23 @@ description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 3d0f58754aaff3a0c505f60a9c24b4712c2e4c30
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 7%
+source-wordcount: '808'
+ht-degree: 9%
 
 ---
 
 # CDN in AEM as a Cloud Service {#cdn}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_cdn"
+>title="CDN in AEM als Cloud Service"
+>abstract="AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
+
 AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
+
 
 De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de meeste klant voldoen. Voor publiceer rij, kunnen de klanten naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
 
