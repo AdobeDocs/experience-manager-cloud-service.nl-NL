@@ -1,14 +1,14 @@
 ---
 title: Repository Modernizer
 description: Repository Modernizer
+exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 3%
 
 ---
-
 
 # Modernizer opslagplaats {#repo-modernizer}
 
@@ -22,7 +22,7 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
 
 * `ui.apps` pakket implementeert naar  `/apps` en bevat alle code
 
-* `ui.content` pakketimplementaties naar runtime-schrijfbare gebieden (bijvoorbeeld  `/content`,  `/conf`,  `/home`of iets anders  `/apps`) en bevat alle inhoud en configuratie.
+* `ui.content` pakketten worden geïmplementeerd in runtime-schrijfbare gebieden (bijvoorbeeld  `/content`,  `/conf`,  `/home`of iets anders  `/apps`) en bevat alle inhoud en configuratie.
 
 * `all` pakket is een containerpakket dat de subpakketten  `ui.apps` en  `ui.content`bevat.
 
@@ -31,7 +31,9 @@ De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstruc
 
 ## De Repository Modernizer {#using-repo-modernizer} gebruiken
 
-* Via Adobe I/O CLI: Het wordt aanbevolen de Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` te gebruiken (AEM als een Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+
+* Via Adobe I/O CLI: Het wordt aanbevolen de Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` te gebruiken (AEM als insteekmodule voor het refactoring van de Cloud Service voor de Adobe I/O CLI).
 
    Zie **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor meer informatie over het installeren en gebruiken van de plug-in.
 
