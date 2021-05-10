@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 0%
 
 ---
@@ -239,6 +239,14 @@ Het biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch s
 
 ## Eigenlijk de AEM GraphQL API {#actually-using-aem-graphiql} gebruiken
 
+Voordat u begint met query&#39;s op uw inhoud, moet u:
+
+* Uw eindpunt inschakelen
+   * Gereedschappen gebruiken -> Sites -> GrafiekQL
+
+* GraphiQL installeren (indien vereist)
+   * Geïnstalleerd als een toegewezen pakket
+
 Om werkelijk AEM GraphQL API in een vraag te gebruiken, kunnen wij de twee zeer basisstructuren van het Model van het Fragment van de Inhoud gebruiken:
 
 * Bedrijf
@@ -346,6 +354,8 @@ Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebr
    * [GraphQL Java-bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Leren gebruiken van GraphQL met AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [GrafiekQL-eindpunt inschakelen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [De interface AEM GraphiQL installeren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [De structuur van het voorbeeldinhoudsfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [Voorbeeldquery - één specifiek stedenfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
