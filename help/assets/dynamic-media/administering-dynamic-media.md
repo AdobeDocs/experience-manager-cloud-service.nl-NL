@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '181'
 ht-degree: 3%
 
 ---
 
 # Dynamic Media {#setting-up-dynamic-media} instellen
 
-[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -42,5 +42,5 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u de Experience Manager hebt uitgevoerd, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een bevorderd geval van Experience Manager en nieuw aan Dynamic Media bent, moet u waarschijnlijk uw activa opnieuw verwerken om hen te maken Dynamic Media-Toegelaten. Zie [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Als u Adobe Experience Manager hebt gestart, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een bevorderd geval van Experience Manager en nieuw aan Dynamic Media bent, moet u waarschijnlijk uw activa opnieuw verwerken om hen te maken Dynamic Media-Toegelaten. Zie [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
