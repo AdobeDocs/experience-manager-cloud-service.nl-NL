@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -214,17 +214,21 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ### Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-De eerste Modellen van het Fragment van de Inhoud worden toegelaten voor uw plaats, wordt dit gedaan in Browser van de Configuratie:
+Bij het allereerste begin moet u de Modellen van het Fragment van de Inhoud voor uw plaats toelaten, wordt dit gedaan in Browser van de Configuratie; onder Extra -> Algemeen -> Configuratiebrowser. U kunt of selecteren om de globale ingang te vormen, of een nieuwe configuratie tot stand te brengen. Bijvoorbeeld:
 
 ![Configuratie definiëren](assets/cfm-configuration.png)
 
-Dan kunnen de Modellen van de Fragmenten van de Inhoud worden gemodelleerd:
+>[!NOTE]
+>
+>Zie Extra Middelen - de Fragmenten van de Inhoud in Browser van de Configuratie
+
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten. Bijvoorbeeld:
 
 ![Inhoudsfragmentmodel](assets/cfm-model.png)
 
 >[!NOTE]
 >
->Zie Werken met inhoudsfragmenten.
+>Zie Aanvullende bronnen - Modellen van inhoudsfragmenten.
 
 ## Het gebruiken van het Model aan de Inhoud van de Auteur met Inhoudsfragmenten {#use-content-to-author-content}
 
@@ -232,7 +236,9 @@ Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model b
 
 ### Het juiste model selecteren {#select-model}
 
-De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit is gebaseerd op een specifiek Content Fragment Model, dat u selecteert als de eerste stap van het ontwerpproces.
+De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit gebeurt met Maken -> Inhoudsfragment in de vereiste map onder Middelen -> Bestanden. De wizard begeleidt u door de stappen.
+
+Een inhoudsfragment is gebaseerd op een specifiek inhoudsfragmentmodel dat u selecteert als de eerste stap van het ontwerpproces.
 
 ### Structurele inhoud maken en bewerken {#create-edit-structured-content}
 
@@ -254,7 +260,7 @@ Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend vo
 
 >[!NOTE]
 >
->Zie Werken met inhoudsfragmenten.
+>Zie Aanvullende bronnen - Werken met inhoudsfragmenten.
 
 ## Aan de slag met enkele voorbeelden {#getting-started-examples}
 
