@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,8 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
 ### Nieuw in [!DNL Forms] {#what-is-new-forms}
+
+Met [AEM Forms kunt u als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) digitale formulieren maken, formulieren verbinden met bestaande gegevensbronnen, formulieren integreren met Adobe Sign om e-handtekeningen toe te voegen aan formulieren, Document of Record genereren (DoR) om verzonden formulieren als PDF-bestanden te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud. Lees [dit blogbericht](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) voor meer informatie over de mogelijkheden en functies van AEM Forms als Cloud Service.
 
 * **Gebruik de methode voor identiteitsverificatie van overheidsidentiteiten in met Adobe Sign ingeschakelde Adaptieve Forms**
 
