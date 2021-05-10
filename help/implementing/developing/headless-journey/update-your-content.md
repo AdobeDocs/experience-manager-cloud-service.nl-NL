@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 2%
+source-wordcount: '1668'
+ht-degree: 1%
 
 ---
 
@@ -51,6 +51,8 @@ Waarom is er dus nog een API nodig?
 
 Met de HTTP-API voor middelen kunt u uw inhoud **Lezen**, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** inhoud - handelingen uitvoeren die niet mogelijk zijn met de API GraphQL.
 
+De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager als Cloud Service buiten de box.
+
 ## HTTP-API voor assets {#assets-http-api}
 
 De [Elementen HTTP API](/help/assets/mac-api-assets.md) omvat het volgende:
@@ -62,28 +64,16 @@ De huidige implementatie van de Elementen HTTP API is gebaseerd op de **REST** a
 
 Met de REST-API voor middelen hebben ontwikkelaars van Adobe Experience Manager als Cloud Service rechtstreeks via de HTTP-API toegang tot inhoud (opgeslagen in AEM) via de bewerkingen **CRUD** (Maken, Lezen, Bijwerken, Verwijderen).
 
-Met de API kunt u Adobe Experience Manager als een Cloud Service als een CMS zonder kop (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
-
-Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
-
-Terwijl AEM de Componenten van de Kern een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
-
-Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
+Met deze bewerking kunt u met de API Adobe Experience Manager als een Cloud Service als een CMS zonder kop (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
 
 >[!NOTE]
 >
 >Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen.
 
-Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
-
 De REST-API voor middelen:
 
 * volgt het HATEOAS-beginsel
 * implementeert de SIREN-indeling
-
-## Vereisten {#prerequisites}
-
-De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager als Cloud Service buiten de box.
 
 ## Belangrijke concepten {#key-concepts}
 
@@ -124,53 +114,6 @@ Alle verzoeken zijn atomisch.
 
 Dit betekent dat de verdere (`write`) verzoeken niet in één enkele transactie kunnen worden gecombineerd die als één enkele entiteit zou kunnen slagen of ontbreken.
 
-### AEM (Middelen) REST API versus AEM componenten {#aem-assets-rest-api-versus-aem-components}
-
-<table>
- <thead>
-  <tr>
-   <td>Verhouding</td>
-   <td>Elementen REST API<br/> </td>
-   <td>AEM Component<br/> (componenten die Sling Models gebruiken)</td>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>Ondersteunde gebruikscase(s)</td>
-   <td>Algemeen doel.</td>
-   <td><p>Geoptimaliseerd voor gebruik in een toepassing voor één pagina (SPA) of in een andere (content consuming) context.</p> <p>Kan ook lay-outgegevens bevatten.</p> </td>
-  </tr>
-  <tr>
-   <td>Ondersteunde bewerkingen</td>
-   <td><p>Maken, lezen, bijwerken, verwijderen.</p> <p>Met extra bewerkingen afhankelijk van het type entiteit.</p> </td>
-   <td>Alleen-lezen.</td>
-  </tr>
-  <tr>
-   <td>Toegang</td>
-   <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt het <code>/api/assets </code>eindpunt, toegewezen aan <code>/content/dam</code> (in de bewaarplaats).</p> 
-   <p>Een voorbeeldpad zou er als volgt uitzien: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
-   </td>
-    <td><p>Moet door een AEM component op een AEM pagina worden van verwijzingen voorzien.</p> <p>Gebruikt de <code>.model</code> selecteur om de vertegenwoordiging tot stand te brengen JSON.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
-   </td>
-  </tr>
-  <tr>
-   <td>Beveiliging</td>
-   <td><p>Er zijn meerdere opties mogelijk.</p> <p>OAuth wordt voorgesteld; kan los van standaardopstelling worden gevormd.</p> </td>
-   <td>Gebruikt AEM standaardinstallatie.</td>
-  </tr>
-  <tr>
-   <td>Architecten</td>
-   <td><p>Schrijftoegang richt zich gewoonlijk tot een auteurinstantie.</p> <p>Lees kan ook naar een publicatie-instantie worden gestuurd.</p> </td>
-   <td>Aangezien deze benadering read-only is, zal het typisch voor publiceer instanties worden gebruikt.</td>
-  </tr>
-  <tr>
-   <td>Uitvoer</td>
-   <td>Op JSON gebaseerde SIREN-uitvoer: uitgebreid, maar krachtig. Hiermee kunt u navigeren binnen de inhoud.</td>
-   <td>op JSON gebaseerde eigen output; configureerbaar via Sling Models. Navigeren door de inhoudsstructuur is moeilijk te implementeren (maar niet noodzakelijkerwijs onmogelijk).</td>
-  </tr>
- </tbody>
-</table>
-
 ### Beveiliging {#security}
 
 Als de REST API van Middelen binnen een milieu zonder specifieke authentificatievereisten wordt gebruikt, moet AEM filter CORS correct worden gevormd.
@@ -182,9 +125,6 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >* CORS/AEM toegelicht
 >* Video - Ontwikkelen voor CORS met AEM
 
->
-
-
 
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
 
@@ -194,7 +134,7 @@ Inhoudsfragmenten zijn een specifiek type element. Zie Werken met inhoudfragment
 
 Zie voor meer informatie over functies die beschikbaar zijn via de API:
 
-* De REST-API voor middelen
+* De REST-API voor middelen (aanvullende bronnen)
 * Soorten entiteiten, waarbij de kenmerken die specifiek zijn voor elk ondersteund type (voor zover relevant voor inhoudsfragmenten) worden toegelicht
 
 ### {#paging} pagineren
@@ -275,16 +215,74 @@ Gekoppelde inhoud wordt momenteel niet weergegeven.
 
 ## De REST API {#using-aem-assets-rest-api} voor middelen gebruiken
 
+Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
+
+* Het wordt sterk aanbevolen dat het maken is gebonden aan een auteurinstantie ([en momenteel is er geen manier om een fragment te repliceren om te publiceren met behulp van deze API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* De levering is mogelijk van beide, aangezien AEM gevraagde inhoud in formaat slechts JSON dient.
+
+   * Opslag en levering vanuit een AEM auteur-instantie zouden voldoende moeten zijn voor toepassingen achter de firewall, in de mediabibliotheek.
+
+   * Voor live webweergave wordt een AEM-publicatie-instantie aanbevolen.
+
+>[!CAUTION]
+>
+>De configuratie van de verzender op AEM wolkeninstanties zou toegang tot `/api` kunnen blokkeren.
+
+>[!NOTE]
+>
+>Zie [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+
+### {#read-delivery} lezen/leveren
+
+Gebruik gebeurt via:
+
+`GET /{cfParentPath}/{cfName}.json`
+
+Bijvoorbeeld:
+
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het inhoudsfragment. Referenties worden als referentie-URL&#39;s geleverd.
+
+Er zijn twee typen leesbewerkingen mogelijk:
+
+* Als u een specifiek inhoudsfragment leest per pad, wordt hiermee de JSON-representatie van het inhoudsfragment geretourneerd.
+* Een map met inhoudsfragmenten lezen op pad: Hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
+
+### Maken {#create}
+
+Gebruik gebeurt via:
+
+`POST /{cfParentPath}/{cfName}`
+
+De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht om de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst `Content-Type` worden toegevoegd die is ingesteld op `application/json`.
+
+### {#update} bijwerken
+
+Gebruik is via
+
+`PUT /{cfParentPath}/{cfName}`
+
+De hoofdtekst moet een JSON-representatie bevatten van wat voor het opgegeven inhoudsfragment moet worden bijgewerkt.
+
+Dit kan gewoon de titel of beschrijving zijn van een inhoudsfragment, of één element, of alle elementwaarden en/of metagegevens.
+
+### Verwijderen {#delete}
+
+Gebruik gebeurt via:
+
+`DELETE /{cfParentPath}/{cfName}`
+
 Voor meer informatie over het gebruik van de AEM Assets REST API kunt u verwijzen naar:
 
-* Adobe Experience Manager Assets HTTP API
-* Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets
+* Adobe Experience Manager Assets HTTP API (extra bronnen)
+* Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API (extra bronnen)
 
 ## Volgende {#whats-next}
 
 Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
-* Begrijp de AEM Assets HTTP API.
+* Begrijp de basisbeginselen van de AEM Assets HTTP API.
 * Begrijp hoe de Fragments van de Inhoud in deze API worden gesteund.
 
 <!--
