@@ -4,14 +4,14 @@ description: In dit deel van de AEM Headless Developer Journey, leer over techno
 hide: true
 hidefromtoc: true
 index: false
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
-
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
@@ -50,15 +50,15 @@ De complexiteit van de afhankelijkheden in de stapel wordt snel zichtbaar, aange
 
 ## Limieten voor volledige stapellevering {#limits}
 
-De full-stack aanpak creëert inherent een silo waar alle landen in één systeem ervaren. Voor wijzigingen of toevoegingen in de silo moeten andere onderdelen worden gewijzigd, waardoor de wijzigingen veel tijd in beslag nemen en kostbaar zijn.
+De full-stack aanpak creëert inherent een silo waar alle landen in één systeem ervaren. Wijzigingen of toevoegingen aan één component van de silo vereisen wijzigingen in andere componenten, waardoor de tijd veel tijd kost en de kosten kostbaar zijn.
 
-Dit geldt met name voor de presentatielaag, die in traditionele systemen vaak nauw verbonden is met het CMS. Een nieuw kanaal is doorgaans een update van de presentatielaag die van invloed is op alle andere kanalen.
+Dit geldt met name voor het presentatiesysteem, dat in traditionele instellingen vaak nauw verbonden is met het CMS. Een nieuw kanaal betekent doorgaans een update van het presentatiesysteem, die van invloed kan zijn op alle andere kanalen.
 
 ![De complexiteit neemt toe naarmate kanalen aan een stapel worden toegevoegd](assets/presentation-complexity.png)
 
-De beperkingen van deze natuurlijke silo zijn duidelijk aangezien u zich realiseert hoeveel inspanning en tijd wordt vereist om veranderingen over alle componenten van uw stapel te coördineren.
+De beperkingen van deze natuurlijke silo kunnen duidelijk worden aangezien u meer inspanning besteedt om veranderingen over alle componenten van uw stapel te coördineren.
 
-Gebruikers verwachten betrokkenheid, ongeacht het platform of aanraakpunt, waardoor u flexibel moet zijn in de manier waarop u uw ervaringen kunt aanbieden.  Deze multikanaalbenadering is de standaard van digitale ervaringen en een aanpak met volledige stapels kan soms inflexibel blijken.
+Gebruikers verwachten betrokkenheid, ongeacht het platform of aanraakpunt, waardoor u flexibel moet zijn in de manier waarop u uw ervaringen kunt aanbieden.  Deze multikanaalbenadering is de standaard van digitale ervaringen en een aanpak met volledige stapel kan in bepaalde omstandigheden onflexibel blijken.
 
 ## De kop in de kop {#the-head}
 
@@ -72,15 +72,15 @@ Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft h
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
-Het weglaten van het hoofd vereenvoudigt zeer CMS door aanzienlijke ingewikkeldheid weg te nemen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud echt nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
+Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud echt nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
 ## {#decoupling} ontkoppelen
 
 De levering zonder kop is mogelijk door een reeks robuuste en flexibele API&#39;s (Application Programming Interfaces) beschikbaar te maken waar al uw ervaringen op kunnen tippen. De API dient als een gemeenschappelijke taal tussen de diensten, die hen op het inhoudsniveau door gestandaardiseerde inhoudslevering binden, maar hen de flexibiliteit toestaan om hun eigen oplossingen uit te voeren.
 
-Met Headless kunt u bijvoorbeeld inhoud loskoppelen van de presentatie. Of in een generischere betekenis, ontkoppelt het vooreind van het achtereind van uw de dienststapel. In een headless opstelling, wordt de presentatielaag (het hoofd) losgemaakt van het inhoudsbeheer (staart). De twee werken slechts door API vraag in wisselwerking.
+Met Headless kunt u bijvoorbeeld inhoud loskoppelen van de presentatie. Of in een generischere betekenis, ontkoppelt het vooreind van het achtereind van uw de dienststapel. In een headless opstelling, wordt het presentatiesysteem (het hoofd) losgemaakt van het inhoudsbeheer (staart). De twee werken slechts door API vraag in wisselwerking.
 
-Deze ontkoppeling betekent dat elke verbruikende service (front-end) zijn ervaring kan opbouwen op basis van dezelfde inhoud die via de API&#39;s wordt geleverd, zodat de inhoud hergebruikt en consistent blijft. De verbruikende diensten kunnen hun eigen presentatielagen dan uitvoeren, toestaand de stapel van het inhoudsbeheer (het achtereind) om horizontaal te schrapen.
+Deze ontkoppeling betekent dat elke verbruikende service (front-end) zijn ervaring kan opbouwen op basis van dezelfde inhoud die via de API&#39;s wordt geleverd, zodat de inhoud hergebruikt en consistent blijft. De verbruikende diensten kunnen hun eigen presentatiesystemen dan uitvoeren, toestaand de stapel van het inhoudsbeheer (het achtereind) om horizontaal te schrapen.
 
 ## Technologische onderbouwing {#technology}
 
@@ -88,7 +88,7 @@ Met een headless-aanpak kunt u een technologiestapel maken die zich eenvoudig en
 
 In het verleden waren de API&#39;s voor CMS&#39;s meestal gebaseerd op REST. Representatiestatus-overdracht (REST) biedt bronnen als tekst zonder status. Hierdoor kunnen de bronnen worden gelezen en gewijzigd met een vooraf gedefinieerde set bewerkingen. REST maakte een grote interoperabiliteit tussen diensten op het web mogelijk door te zorgen voor een statenloze weergave van de inhoud.
 
-En er is nog steeds behoefte aan robuuste REST API&#39;s. REST-verzoeken kunnen echter groot en uitgebreid zijn. Als er meerdere consumenten zijn die REST-oproepen voor al uw kanalen uitvoeren, kunnen deze uitgebreide verbindingen en prestaties worden beïnvloed.
+Er is nog steeds behoefte aan robuuste REST API&#39;s. REST-verzoeken kunnen echter groot en uitgebreid zijn. Als er meerdere consumenten zijn die REST-oproepen voor al uw kanalen uitvoeren, kunnen deze uitgebreide verbindingen en prestaties worden beïnvloed.
 
 Bij levering van inhoud zonder kop wordt vaak gebruikgemaakt van GraphQL API&#39;s. GraphQL staat voor een gelijkaardige stateless overdracht toe, maar staat voor meer gerichte vragen toe, die het totale aantal vereiste vragen verminderen, en prestaties verbeteren. Het is gebruikelijk om oplossingen te zien een mengeling van REST en GraphQL gebruiken, hoofdzakelijk het kiezen van het beste hulpmiddel voor de baan in kwestie.
 
@@ -116,9 +116,9 @@ Het is onmogelijk om de toekomst te voorspellen, maar zonder kop geeft u de flex
 
 Terwijl u deze ontwikkelaarstraject doorloopt, leert u hoe AEM levering zonder kop ondersteunt naast de volledige leveringsmogelijkheden voor de stapel.
 
-Als marktleider op het gebied van digitaal ervaringsbeheer realiseert Adobe zich dat de ideale oplossing voor echte uitdagingen waar ontwerpers mee te maken krijgen zelden een binaire keuze is. Daarom AEM niet alleen beide modellen worden ondersteund, maar ook de naadloze hybride combinatie van de twee modellen waarmee u de consument van uw inhoud het beste kunt dienen. Waar ze ook zijn.
+Als marktleider op het gebied van digitaal ervaringsbeheer realiseert Adobe zich dat de ideale oplossing voor echte uitdagingen die ontwerpers ervaren zelden een binaire keuze is. Daarom AEM niet alleen beide modellen worden ondersteund, maar ook de naadloze hybride combinatie van beide, waarbij de voordelen van een volledig en zonder kop stapel worden gecombineerd, zodat u de consumenten van uw inhoud het beste kunt dienen, waar ze zich ook bevinden.
 
-Deze reis concentreert zich op het hoofdloze-enige model van inhoudlevering. Maar als je deze basis van kennis hebt gelegd, kun je verder onderzoeken hoe je de kracht van beide modellen kunt benutten.
+Deze reis concentreert zich op het hoofdloze-enige model van inhoudlevering. Maar als je deze basiskennis hebt, kun je verder verkennen hoe je de kracht van beide modellen kunt benutten.
 
 ## Volgende {#what-is-next}
 
