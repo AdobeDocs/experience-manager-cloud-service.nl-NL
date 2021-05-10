@@ -6,9 +6,9 @@ feature: Voorinstellingen afbeelding, voorinstellingen viewer
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3193'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Om u te helpen het belang begrijpen van het gebruiken van een noemende overeenko
 
 Met de **[!UICONTROL Batch Set Preset]**-pagina in [!DNL Dynamic Media] kunt u voorinstellingen voor batchsets maken, bewerken of verwijderen en kunt u voorinstellingen voor batchsets toepassen op of verwijderen uit elementmappen. U kunt de vervolgkeuzelijsten voor formuliervelden gebruiken om een voorinstelling voor een batchset te definiëren of het veld **[!UICONTROL Raw Code]** gebruiken, waarmee u de syntaxis van reguliere expressies kunt typen.
 
-U kunt zoveel voorinstellingen voor batchsets maken als nodig zijn om alle taken voor het opnemen van elementen die u nodig hebt, te kunnen uitvoeren.
+U kunt veel voorinstellingen voor batchsets maken, zodat u alle taken voor het opnemen van elementen die u nodig hebt, kunt afdekken.
 
-**Info over Asset Naming Convention**
+### Info over Asset Naming Convention
 
 Het gebied **[!UICONTROL Asset Naming Convention]** op de pagina **[!UICONTROL Batch Set Preset]** bevat twee elementen die u kunt gebruiken om de voorinstelling voor de batchset te definiëren: **[!UICONTROL Match]** en **[!UICONTROL Base Name]**. Met deze elementen kunt u een naamgevingsconventie definiëren en het gedeelte van de conventie identificeren dat wordt gebruikt om de set met namen te benoemen. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ De syntaxis voor een reguliere expressie van letterlijke overeenkomsten kan er b
 
 `(\w+)-\w+-\w+`
 
-**Info Volgorde**
+### Info Volgorde
 
 U kunt desgewenst de volgorde definiëren waarin afbeeldingen worden weergegeven nadat de afbeeldingsset of de centrifugeset is gegroepeerd in [!DNL Dynamic Media]. Uw elementen worden standaard alfanumeriek geordend. U kunt echter een door komma&#39;s gescheiden lijst met reguliere expressies gebruiken om de volgorde te definiëren.
 
@@ -67,7 +67,7 @@ Wanneer u klaar bent met het maken van een voorinstelling voor een batch-set, pa
 
 **U kunt als volgt een voorinstelling voor een batch-set maken voor een afbeeldingsset of een centrifugeset:**
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Zie [Een voorinstelling voor een batchset maken voor een afbeeldingsset of een s
 | Afgeleide activa opnemen | Optioneel. Als u wilt dat de IPS van [!DNL Dynamic Media] (het Systeem van de Productie van het Beeld) geproduceerde of &quot;afgeleide&quot;beelden met uw Vastgestelde Spin of Reeks van het Beeld omvat, uitgezocht **[!UICONTROL Yes]** (gebrek). Een afgeleid element is een afbeelding die niet rechtstreeks door een gebruiker is geüpload. In plaats daarvan, werd de activa geproduceerd door IPS toen een master middel werd geupload. Een afbeeldingselement dat IPS bijvoorbeeld genereert op basis van een pagina in een PDF, op het moment dat de PDF werd geüpload in [!DNL Dynamic Media], wordt beschouwd als een afgeleid element. |
 | Doelmap | Optioneel. Als u grote aantallen afbeeldingssets of centrifuges definieert, raadt Adobe u aan deze sets los te houden van de mappen die de elementen zelf bevatten. Als dusdanig, denk na creërend een Reeksen van het Beeld of de omslag van de Reeksen van de Rotatie en richt de toepassing om partij te plaatsen geproduceerde reeksen hier.<br>Geef in dat geval op in welke map in de mapstructuur (`/content/dam`) van Experience Manager Assets de voorinstelling voor de batch-set actief is. Zorg ervoor dat de omslag voor [!DNL Dynamic Media] synchronisatie wordt toegelaten om het als bestemmingsomslag toe te staan. Zie [Selectieve publicatie configureren op mapniveau in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Aan meerdere mappen kan een bepaalde voorinstelling voor een batchset zijn toegewezen, als u de voorinstelling via de map toepast  **[!UICONTROL Properties]**. Zie [Voorinstellingen voor batchsets toepassen vanaf de pagina Eigenschappen van een elementmap](#apply-bsp-to-folders-via-properties).<br>Als u geen map opgeeft, wordt de door de batchset gegenereerde afbeeldingsset of centrifugeset gemaakt in dezelfde map als de elementenmap waarnaar u hebt geüpload. |
 | **[!UICONTROL Set Naming Convention]** |  |
-| Voorvoegsel<br>of<br>Achtervoegsel | Optioneel. Voer een voor- of achtervoegsel of beide in de desbetreffende velden in.<br>Met de velden voor het voorvoegsel en het achtervoegsel kunt u zoveel voorinstellingen voor batchsets maken met een alternatieve naamgevingsconventie voor aangepaste bestanden voor een bepaalde set inhoud. Deze methode is vooral handig in gevallen waarin er een uitzondering is op de standaardnaamgevingsregeling van een bedrijf.<br>Het voor- of achtervoegsel wordt toegevoegd aan het  **[!UICONTROL Base Name]** kader dat u in het  **[!UICONTROL Asset Naming Convention]** gebied definieert. Door een voor- of achtervoegsel toe te voegen, zorgt u ervoor dat de set afbeeldingen of de set met centrifuges uitsluitend en onafhankelijk van andere elementen wordt gemaakt. Het kan ook worden gebruikt om anderen te helpen dossiertypes identificeren. Als u bijvoorbeeld een gebruikte kleurmodus wilt bepalen, kunt u `rgb` of `cmyk` als voor- of achtervoegsel toevoegen.<br>Als u een naamgevingsconventie voor sets opgeeft, is het niet nodig vooraf ingestelde functies voor batchsets te gebruiken, maar aanbevolen wordt om de naamgevingsconventie voor sets te gebruiken. Op deze manier kunt u zoveel elementen van uw naamgevingsconventie definiëren als u wilt groeperen in een set om het maken van batchsets te stroomlijnen. |
+| Voorvoegsel<br>of<br>Achtervoegsel | Optioneel. Voer een voor- of achtervoegsel of beide in de desbetreffende velden in.<br>Met de velden voor het voorvoegsel en het achtervoegsel kunt u een groot aantal voorinstellingen voor batchsets maken met behulp van een alternatieve naamgevingsconventie voor aangepaste bestanden voor een bepaalde set inhoud. Deze methode is vooral handig in gevallen waarin er een uitzondering is op de standaardnaamgevingsregeling van een bedrijf.<br>Het voor- of achtervoegsel wordt toegevoegd aan het  **[!UICONTROL Base Name]** kader dat u in het  **[!UICONTROL Asset Naming Convention]** gebied definieert. Door een voor- of achtervoegsel toe te voegen, zorgt u ervoor dat de set afbeeldingen of de set met centrifuges uitsluitend en onafhankelijk van andere elementen wordt gemaakt. Het kan ook worden gebruikt om anderen te helpen dossiertypes identificeren. Als u bijvoorbeeld een gebruikte kleurmodus wilt bepalen, kunt u `rgb` of `cmyk` als voor- of achtervoegsel toevoegen.<br>Als u een naamgevingsconventie voor sets opgeeft, is het niet nodig vooraf ingestelde functies voor batchsets te gebruiken, maar aanbevolen wordt om de naamgevingsconventie voor sets te gebruiken. Op deze manier kunt u zoveel elementen van uw naamgevingsconventie definiëren als u wilt groeperen in een set om het maken van batchsets te stroomlijnen. |
 | **[!UICONTROL Rule Results - RegX]** |  |
 | Naamgevingsconventie voor middelen - Overeenkomst | Alleen-lezen. Hiermee geeft u de syntaxis van de reguliere expressie weer op basis van de gekozen formulieropties of de ingevoerde onbewerkte code. |
 | Naamgevingsconventie voor middelen - Basisnaam | Alleen-lezen. Hiermee geeft u de syntaxis van de reguliere expressie weer op basis van de basisnaamadopties die u hebt gekozen of de onbewerkte code die u hebt ingevoerd. |
@@ -143,7 +143,7 @@ Elementen in een map opnieuw verwerken als u een van de volgende twee situaties 
 
 ### Voorinstellingen voor batchsets toepassen op elementmappen vanaf de pagina Voorinstelling batch instellen {#apply-bsp-to-folders-via-bsp-page}
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van elke voorinstelling voor batch-sets die u wilt toepassen op mappen.
 1. Tik op **[!UICONTROL Apply Batch Preset to Folders]** op de werkbalk.
 1. Schakel op de pagina **[!UICONTROL Select Folders]** het selectievakje in van elke map waarop de voorinstellingen voor batchsets moeten worden toegepast.
@@ -151,7 +151,7 @@ Elementen in een map opnieuw verwerken als u een van de volgende twee situaties 
 
 ### Voorinstellingen voor batchsets toepassen vanaf de pagina Eigenschappen van een elementmap {#apply-bsp-to-folders-via-properties}
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigeer naar een map waarop u een of meer voorinstellingen voor batchsets wilt toepassen.
 1. Schakel op de pagina, links van de kolom **[!UICONTROL Name]**, het selectievakje van een map in.
 1. Tik op **[!UICONTROL Properties]** op de werkbalk.
@@ -179,7 +179,7 @@ Als u de zojuist bewerkte voorinstelling opnieuw wilt toepassen op de bestaande 
 
 **Een voorinstelling voor een batchset bewerken:**
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. Controleer op de pagina **[!UICONTROL Batch Set Presets]**, links van de kolom **[!UICONTROL Preset Name]**, de batch-set die u wilt wijzigen.
 1. Tik op **[!UICONTROL Edit Batch Set Preset]** op de werkbalk.
 1. Bewerk de voorinstelling naar wens.
@@ -193,7 +193,7 @@ Als u een bestaande voorinstelling kopieert die door elementmappen wordt gebruik
 
 **Een bestaande voorinstelling voor een batchset kopiëren:**
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van de voorinstelling voor de batchset die u wilt kopiëren.
 1. Tik op **[!UICONTROL Copy]** op de werkbalk.
 1. Typ in het dialoogvenster **[!UICONTROL Copy Batch Set Preset]** een nieuwe naam voor de voorinstelling in het tekstvak **[!UICONTROL Title]**.
@@ -215,7 +215,7 @@ Er zijn twee methoden waarmee u voorinstellingen voor batchsets kunt verwijderen
 
 ### Voorinstellingen voor batchsets verwijderen uit mappen met behulp van de pagina Voorinstelling voor batchset {#remove-bsp-from-folders-via-bsp-page}
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van een of meer voorinstellingen voor batchsets die u uit een of meer mappen wilt verwijderen.
 1. Tik op **[!UICONTROL Remove Batch Preset from Folders]** op de werkbalk.
 
@@ -228,7 +228,7 @@ Er zijn twee methoden waarmee u voorinstellingen voor batchsets kunt verwijderen
 
 ### Voorinstellingen voor batchsets verwijderen uit de eigenschappenpagina van een map {#remove-bsp-from-folders-via-properties}
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigeer naar een map waarnaar u een of meer voorinstellingen voor een batch-set wilt verwijderen.
 1. Schakel op de pagina, links van de kolom **[!UICONTROL Name]**, het selectievakje van een map in.
 1. Tik op **[!UICONTROL Properties]** op de werkbalk.
@@ -250,7 +250,7 @@ Zie [Voorinstellingen voor batchsets verwijderen uit mappen *Als u voorinstellin
 
 **Voorinstellingen voor batchsets verwijderen:**
 
-1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van een of meer voorinstellingen voor batchsets die u wilt verwijderen.
 1. Tik op **[!UICONTROL Delete Batch Set Presets]** op de werkbalk.
 
