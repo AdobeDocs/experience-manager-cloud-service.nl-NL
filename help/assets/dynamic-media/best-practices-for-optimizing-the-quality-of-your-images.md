@@ -1,14 +1,14 @@
 ---
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
-description: Leer de beste praktijken u in Dynamic Media kunt gebruiken om de kwaliteit van uw beeldactiva te optimaliseren.
+description: Leer de beste praktijken om de kwaliteit van uw beeldactiva te optimaliseren gebruikend Dynamic Media.
 contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1464'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
-AEM bevat meer dan 100 Dynamic Media-opdrachten voor het leveren van afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
+Adobe Experience Manager bevat meer dan 100 Dynamic Media-opdrachten voor het leveren van afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
 
 ## Aanbevolen werkwijzen voor afbeeldingsindeling (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 ## Aanbevolen procedures voor het verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
-Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd voor meer informatie over hoe verscherpen en onscherp maskeren in AEM werken door naar de volgende nuttige bronnen te verwijzen:
+Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
 
-* Op deze manier wordt witboek [Verscherpen van afbeeldingen in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) ook toegepast op AEM.
+* Best practices white paper [Adobe Dynamic Media Classic Image Quality en Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) is ook van toepassing op Experience Manager.
 
-* Kijk [Afbeeldingen verscherpen gebruiken met AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Kijk [Afbeeldingen verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Met AEM kunt u afbeeldingen verscherpen bij inname, bij levering of beide. Meestal is het echter het beste om afbeeldingen te verscherpen met slechts één methode of een andere methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
+Met Experience Manager kunt u afbeeldingen verscherpen bij inname, bij levering of beide. Meestal is het echter het beste om afbeeldingen te verscherpen met slechts één methode of een andere methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
 U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
@@ -66,11 +66,11 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
       Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
 
-      AEM Help-onderwerp over het verscherpen van een afbeelding.
+      * Best practices white paper [Adobe Dynamic Media Classic Image Quality en Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) is ook van toepassing op Experience Manager.
 
-      Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * Kijk [Afbeeldingen verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
+      * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
 
 
@@ -100,7 +100,7 @@ Gebruik `&qlt=85,0` als aanbevolen methode voor JPG-compressie.
 
 ## Aanbevolen procedures voor JPEG-formaat (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` Dit is een handige parameter als u wilt garanderen dat een afbeelding een bepaalde grootte niet overschrijdt voor levering aan apparaten met een beperkt geheugen.
+De parameter `jpegSize` is nuttig als u wilt garanderen dat een afbeelding een bepaalde grootte niet overschrijdt voor levering aan apparaten met beperkt geheugen.
 
 * Deze parameter wordt ingesteld in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Hiermee wordt de maximaal toegestane grootte voor het leveren van de afbeelding gedefinieerd.
 * `&jpegSize=` communiceert met de JPG-compressieparameter  `&qlt=`. Als de JPG-reactie met de opgegeven JPG-compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` zoals gedefinieerd. Anders wordt `&qlt=` geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte, of totdat het systeem bepaalt dat de afbeelding niet past en een fout retourneert.
@@ -123,4 +123,4 @@ Tijdens het experimenteren zijn de volgende algemene suggesties nuttig om uw wor
 
 * Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
 * U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$`. Deze voorinstellingen worden aangeroepen door de naam van de aangepaste voorinstelling in een URL-pad. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
-* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Om de renderingresultaten af te stemmen en te optimaliseren, kan [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) u helpen met aangepaste inzichten en beste praktijken.
+* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Als u renderingresultaten wilt afstemmen en optimaliseren, kunt u met [Adobe consulting services](https://business.adobe.com/customers/consulting-services/main.html) aangepaste inzichten en aanbevolen procedures gebruiken.
