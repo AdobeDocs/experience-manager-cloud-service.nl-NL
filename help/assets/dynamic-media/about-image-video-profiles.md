@@ -1,16 +1,16 @@
 ---
 title: Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen
 description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op Dynamic Media-video-elementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op Dynamic Media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
-feature: Asset Management,Image Profiles,Video Profiles
+feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 2%
 
 ---
-
 
 # Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map 
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen afbeeldingsprofiel of videoprofiel hebt bewerkt of als u al een afbeeldingsprofiel of videoprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met elementen altijd uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Elementen opnieuw verwerken_ in een map, middelen worden gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op AEM. Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel retourvluchten naar de Dynamic Media-server.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Elementen opnieuw verwerken_ in een map, middelen worden gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt in Adobe Experience Manager. Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel retourvluchten naar de Dynamic Media-server.
 
 Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjusting-load).
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Dynamic Media-elementen in een map** opnieuw verwerken:
-1. Navigeer in Adobe Experience Manager vanaf de elementenpagina naar een map met Dynamic Media-elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de Scene7 **wilt toepassen: Asset** opnieuw verwerken,
+**Dynamic Media-elementen in een map opnieuw verwerken:**
+1. Navigeer in Experience Manager vanaf de middelenpagina naar een map met elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de **Scene7 wilt toepassen: Workflow Asset** opnieuw verwerken.
 
    Mappen waaraan een afbeeldingsprofiel of videoprofiel is toegewezen, krijgen de naam van het profiel direct onder de mapnaam in de Kaartweergave.
 
@@ -83,11 +83,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
 
-   Om het werkschema te controleren of zijn vooruitgang te controleren, van de Experience Manager belangrijkste consolepagina, klik **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Om het werkschema te controleren of zijn vooruitgang te controleren, van de Experience Manager belangrijkste consolepagina, klik **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, opschorten of hernoemen vanuit dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
-(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus langer op Experience Manager-elementen. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot honderden, maar nooit meer dan 1000. Als het gemiddelde bestand groot-honderden megabytes-Adobe is, kunt u het beste de batch tot 10 verkleinen.
+(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus langer op Experience Manager-elementen. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, raadt Adobe u aan de batch tot 10 te verkleinen.
 
 **U kunt de batchgrootte van de workflow** voor opnieuw verwerken desgewenst aanpassen:
 
