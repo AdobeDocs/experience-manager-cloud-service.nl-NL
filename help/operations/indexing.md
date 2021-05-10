@@ -3,9 +3,9 @@ title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexde
 die dan onder `ui.apps/src/main/content/jcr_root` moeten gaan. Subhoofdmappen worden op dit moment niet ondersteund.
 
 Het pakket uit het bovenstaande voorbeeld is opgebouwd als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Voor elk inhoudspakket met indexdefinities moet de volgende eigenschap zijn ingesteld in het eigenschappenbestand van het inhoudspakket, dat zich bevindt op `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
 
 ### Indexdefinities {#deploying-index-definitions} implementeren
 
