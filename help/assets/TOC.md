@@ -5,9 +5,9 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 65%
 
 ---
@@ -50,7 +50,6 @@ ht-degree: 65%
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Slimme tags toepassen op afbeeldingen configureren](smart-tags-configuration.md)
    + [Meertalige middelen en vertaling](translate-assets.md)
    + [Facetten doorzoeken](search-facets.md)
    + [HTTP-API voor assets](mac-api-assets.md)
