@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
@@ -50,24 +50,24 @@ Met Adobe Experience Manager (AEM) als Cloud Service, kunt u tot uw Contentfragm
 >
 >AEM GraphQL API is een aangepaste implementatie op basis van de standaard GraphQL API-specificatie.
 
-<!--
-## GraphQL - An Introduction {#graphql-introduction}
+## GraphQL - Een inleiding {#graphql-introduction}
 
-GraphQL is an open-source specification that provides:
+GraphQL is een open-bronspecificatie die verstrekt:
 
-* a query language that enables you to select specific content from structured objects.
-* a runtime to fulfill these queries with your structured content.
+* een querytaal waarmee u specifieke inhoud van gestructureerde objecten kunt selecteren.
+* een runtime om deze query&#39;s uit te voeren met uw gestructureerde inhoud.
 
-GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
+GraphQL is een *strongly* getypte API. Dit betekent dat *all* inhoud duidelijk gestructureerd en georganiseerd door type moet zijn, zodat GraphQL *begrijpt* wat aan toegang en hoe. De gegevensvelden worden gedefinieerd binnen GraphQL-schema&#39;s, die de structuur van de inhoudsobjecten definiëren.
 
-GraphQL endpoints then provide the paths that respond to the GraphQL queries.
+De eindpunten van GraphQL verstrekken dan de wegen die aan de vragen GraphQL antwoorden.
 
-All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
+Dit alles betekent dat uw app de inhoud die het nodig heeft nauwkeurig, betrouwbaar en efficiënt kan selecteren - precies wat u nodig hebt bij AEM.
 
 >[!NOTE]
 >
->See *GraphQL*.org and *GraphQL*.com.
+>Zie *GraphQL*.org en *GraphQL*.com.
 
+<!--
 ## AEM and GraphQL {#aem-graphql}
 
 GraphQL is used in various locations in AEM; for example:
@@ -83,25 +83,29 @@ GraphQL is used in various locations in AEM; for example:
 >[!NOTE]
 >
 >This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
+-->
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
+De AEM GraphQL API is een aangepaste versie gebaseerd op de standaard GraphQL API specificatie, speciaal gevormd om u toe te staan om (complexe) vragen op uw Contentfragmenten uit te voeren.
 
-Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
+Inhoudsfragmenten worden gebruikt, omdat de inhoud is gestructureerd volgens Modellen van inhoudsfragmenten. Dit voldoet aan een basisvereiste van GraphQL.
 
-* A Content Fragment Model is built up of one, or more, fields. 
-  * Each field is defined according to a Data Type.
-* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
+* Een inhoudsfragmentmodel is samengesteld uit een of meer velden.
+   * Elk veld wordt gedefinieerd op basis van een gegevenstype.
+* De Modellen van het Fragment van de inhoud worden gebruikt om de overeenkomstige AEM Schema&#39;s te produceren GraphQL.
 
-To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
+Om tot GraphQL voor AEM (en de inhoud) eigenlijk toegang te hebben wordt een eindpunt gebruikt om de toegangspad te verstrekken.
 
-The content returned, via the AEM GraphQL API, can then be used by your applications. 
+De inhoud die wordt geretourneerd via de AEM GraphQL API kan vervolgens door uw toepassingen worden gebruikt.
+
+Om u direct te helpen input, en testvragen, is een implementatie van de standaardinterface GraphiQL ook beschikbaar voor gebruik met AEM GraphQL (dit kan met AEM worden geïnstalleerd). Het biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch suggereren, samen met een geschiedenis en online documentatie.
 
 >[!NOTE]
 >
->The AEM GraphQL API implementation is based on the GraphQL Java libraries.
+>De implementatie van AEM GraphQL API is gebaseerd op de Java-bibliotheken GraphQL.
 
+<!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
@@ -113,41 +117,41 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
   * Query content for "content management purposes":
     * GraphQL in AEM as a Cloud Service is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
+-->
 
-## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
+## Inhoudsfragmenten voor gebruik met de AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
+De Fragments van de inhoud kunnen als basis voor GraphQL voor AEM schema&#39;s en vragen als worden gebruikt:
 
-* They enable you to design, create, curate and publish page-independent content.
-* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
-* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
- 
-### Content Fragment Models {#content-fragments-models}
+* Zo kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren die zonder kop kan worden geleverd.
+* Ze zijn gebaseerd op een Content Fragment Model, dat de structuur voor het resulterende fragment vooraf definieert met behulp van een selectie van gegevenstypen.
+* Er kunnen extra structuurlagen worden bereikt met het gegevenstype Fragmentverwijzing, dat beschikbaar is wanneer u een model definieert.
 
-These Content Fragment Models:
+### Modellen van contentfragmenten {#content-fragments-models}
 
-* Are used to generate the Schemas, once **Enabled**.
+Deze modellen van inhoudsfragmenten:
 
-* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
+* Wordt gebruikt om de Schema&#39;s te produceren, eens **Enabled**.
+* Geef de gegevenstypen en velden op die vereist zijn voor GraphQL. Ze zorgen ervoor dat uw toepassing alleen vraagt wat mogelijk is en wat wordt verwacht ontvangt.
+* Het gegevenstype **Fragmentverwijzingen** kan in uw model worden gebruikt om naar een ander Inhoudsfragment te verwijzen, en zo extra niveaus van structuur introduceren.
 
-* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
+### Fragmentverwijzingen {#fragment-references}
 
-### Fragment References {#fragment-references}
+De **Fragmentverwijzing**:
 
-The **Fragment Reference**:
+* Is een specifiek gegevenstype beschikbaar wanneer het bepalen van een Model van het Fragment van de Inhoud.
+* Verwijst naar een ander fragment, afhankelijk van een specifiek inhoudsfragmentmodel.
+* Hiermee kunt u gestructureerde gegevens maken en ophalen.
 
-* Is a specific data type available when defining a Content Fragment Model.
+   * Wanneer gedefinieerd als een **multifeed**, kunnen meerdere subfragmenten door het prime-fragment naar verwezen (opgehaald) worden.
 
-* References another fragment, dependent on a specific Content Fragment Model.
+### JSON-voorvertoning {#json-preview}
 
-* Allows you to create, and then retrieve, structured data.
+Om u te helpen bij het ontwerpen en ontwikkelen van modellen van inhoudsfragmenten, kunt u een voorbeeld van JSON-uitvoer weergeven in de Content Fragment Editor.
 
-  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+![JSON ](assets/cfm-model-json-preview.png "PreviewJSON-voorvertoning")
 
-### JSON Preview {#json-preview}
-
-To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
-
+<!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
 GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
@@ -247,21 +251,23 @@ Voordat u begint met query&#39;s op uw inhoud, moet u:
 
 * Uw eindpunt inschakelen
    * Gereedschappen gebruiken -> Sites -> GrafiekQL
+   * [GrafiekQL-eindpunt inschakelen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQL installeren (indien vereist)
    * Geïnstalleerd als een toegewezen pakket
+   * [De interface AEM GraphiQL installeren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 
 ### Voorbeeldstructuur {#sample-structure}
 
 Om werkelijk AEM GraphQL API in een vraag te gebruiken, kunnen wij de twee zeer basisstructuren van het Model van het Fragment van de Inhoud gebruiken:
 
 * Bedrijf
-   * Naam
-   * CEO (Persoon)
-   * Werknemers (personen)
+   * Naam - tekst
+   * CEO (Persoon) - Fragmentverwijzing
+   * Werknemers (personen) - Fragmentverwijzing(en)
 * Person
-   * Naam
-   * Voornaam
+   * Naam - tekst
+   * Voornaam - tekst
 
 Zoals u kunt zien, verwijzen de gebieden CEO en Werknemers, naar de fragmenten van de Persoon.
 
@@ -275,6 +281,8 @@ De fragmentmodellen worden gebruikt:
 De vragen kunnen in de interface GraphiQL, bijvoorbeeld bij zijn ingegaan:
 
 * `http://localhost:4502/content/graphiql.html `
+
+![GraphiQL ](assets/graphiql-interface.png "InterfaceGraphiQL Interface")
 
 ### Aan de slag met query&#39;s {#getting-Started-with-queries}
 
