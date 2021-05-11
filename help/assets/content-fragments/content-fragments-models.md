@@ -5,7 +5,7 @@ feature: Contentfragmenten
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 4%
@@ -170,7 +170,7 @@ bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vere
 * ****
 TranslatableChecking the &quot;Translatable&quot; checkbox on a field in CF model editor
 
-   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd in de vertaalconfig, context `/content/dam/<tenant>`, als deze nog niet aanwezig is.
+   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd in de vertaalconfig, context `/content/dam/<sites-configuration>`, als deze nog niet aanwezig is.
    * Voor GraphQL: Stel een `<translatable>`-eigenschap in het veld Inhoudsfragment in op `yes` om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
 
 * Zie **[Content Reference](#content-reference)** voor meer informatie over dat specifieke gegevenstype en de eigenschappen ervan.
