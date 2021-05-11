@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1927'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor AEM als Cloud Service 2020.6.0 {#release-notes}
 
@@ -37,7 +37,7 @@ Release 2.9.0 van de [Core Components](https://docs.adobe.com/content/help/en/ex
 
 * Probleem opgelost met vergroten/verkleinen van lay-outcomponent.
 
-* Toegevoegde capaciteit om het verpletteren van Hoekslechts pagina&#39;s en AEM/Hoekpagina&#39;s te beheren.
+* Toegevoegde capaciteit om het verpletteren van Angular slechts pagina&#39;s en AEM/Angular pagina&#39;s te beheren.
 
 ### Toegankelijkheid {#accessibility}
 
@@ -110,7 +110,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 Met verbeterde slimme tags kunnen organisaties slimme-tagmodellen trainen om images te herkennen op basis van klantspecifieke bedrijfstags, naast algemene slimme tags.
 
 Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. De ervaring is nu intuïtiever.
-Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [Slimme tags toevoegen aan elementen](/help/assets/smart-tags.md) en [Slimme tags configureren](/help/assets/smart-tags-configuration.md).
+Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [slimme tags toevoegen aan elementen](/help/assets/smart-tags.md).
 
 **Ondersteuning voor inname, voorvertoning en levering van 3D-inhoud**
 
