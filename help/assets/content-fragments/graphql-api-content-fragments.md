@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebr
 feature: Inhoudsfragmenten,GrafiekQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 0%
 
 ---
@@ -121,20 +121,20 @@ Er zijn twee soorten eindpunten in AEM:
 
 * Algemeen
    * Beschikbaar voor gebruik door alle sites.
-   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle huurders gebruiken.
-   * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder huurders zouden moeten worden gedeeld, dan zouden deze onder de globale huurder moeten worden gecreeerd.
-* Aannemer:
-   * Komt overeen met een huurdersconfiguratie, zoals die in [Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
+   * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder de configuraties van Plaatsen zouden moeten worden gedeeld, dan zouden deze onder de globale configuraties van Plaatsen moeten worden gecreeerd.
+* Siteconfiguraties:
+   * Komt overeen met een configuratie van Plaatsen, zoals die in [Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
    * Specifiek voor een opgegeven site/project.
-   * Een huurder specifiek eindpunt zal de Modellen van het Fragment van de Inhoud van die specifieke huurder samen met die van de globale huurder gebruiken.
+   * Een configuratie-specifiek eindpunt van Plaatsen zal de Modellen van het Fragment van de Inhoud van die specifieke configuratie van Plaatsen samen met die van de globale configuratie van Plaatsen gebruiken.
 
 >[!CAUTION]
 >
->Met de Inhoudsfragmenteditor kan een inhoudsfragment van een gebruiker verwijzen naar een inhoudsfragment van een andere gebruiker (via politie).
+>Met de Inhoudsfragmenteditor kan een inhoudsfragment van een siteconfiguratie verwijzen naar een inhoudsfragment van een andere siteconfiguratie (via beleid).
 >
->In een dergelijk geval zal niet alle inhoud kunnen terugwinnen gebruikend een huurdersspecifiek eindpunt.
+>In een dergelijk geval zal niet alle inhoud kunnen terugwinnen gebruikend een de configuratie van Plaatsen specifiek eindpunt.
 >
->De inhoudauteur zou dit scenario moeten controleren; Het kan bijvoorbeeld handig zijn om gedeelde modellen van inhoudsfragmenten onder de globale huurder te plaatsen.
+>De inhoudauteur zou dit scenario moeten controleren; Het kan bijvoorbeeld handig zijn om gedeelde modellen van inhoudsfragmenten onder de configuratie Algemene sites te plaatsen.
 
 De bewaarplaatspad van GraphQL voor AEM globale eindpunt is:
 
@@ -196,6 +196,10 @@ Selecteer het nieuwe eindpunt en **Publiceer** om het volledig beschikbaar te ma
 ## GraphiQL Interface {#graphiql-interface}
 
 Een implementatie van de standaard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is beschikbaar voor gebruik met AEM GraphQL. Dit kan [geïnstalleerd met AEM](#installing-graphiql-interface) zijn.
+
+>[!NOTE]
+>
+>GraphiQL is gebonden het globale eindpunt (en werkt niet met andere eindpunten voor specifieke configuraties van Plaatsen).
 
 Met deze interface kunt u query&#39;s rechtstreeks invoeren en testen.
 
@@ -587,21 +591,21 @@ Na het voorbereiden van een vraag met een verzoek van de POST, kan het met een v
 
 Dit wordt vereist aangezien de vragen van de POST gewoonlijk niet in het voorgeheugen ondergebracht zijn, en als het gebruiken van GET met de vraag als parameter er een significant risico is dat de parameter voor de diensten en tussenpersonen van HTTP te groot wordt.
 
-De aangehouden vragen moeten altijd het eindpunt met betrekking tot [aangewezen (huurder) configuratie](#graphql-aem-endpoint) gebruiken; zodat ze beide of beide kunnen gebruiken:
+De aangehouden vragen moeten altijd het eindpunt met betrekking tot [aangewezen configuratie van Plaatsen ](#graphql-aem-endpoint) gebruiken; zodat ze beide of beide kunnen gebruiken:
 
 * De globale configuratie en het eindpunt
 De query heeft toegang tot alle modellen van inhoudsfragmenten.
-* Specifieke huurconfiguratie(s) en eindpunt(en)
-Creërend een persisted vraag voor een specifieke huurdersconfiguratie vereist een overeenkomstig huurdersspecifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
-Bijvoorbeeld, om een voortgezette vraag specifiek voor de huurder te creëren WKND, moet een overeenkomstige WKND-Specifieke huurdersconfiguratie, en een WKND-Specifiek eindpunt vooraf worden gecreeerd.
+* Specifieke configuratie(s) en eindpunt(en) van sites
+Creërend een persisted vraag voor een specifieke configuratie van Plaatsen vereist een overeenkomstig plaats-configuratie-specifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
+Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaatsen te creëren WKND, moet een overeenkomstige WKND-Specifieke configuratie van Plaatsen, en een WKND-Specifiek eindpunt vooraf worden gecreeerd.
 
 >[!NOTE]
 >
 >Zie [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer informatie.
 >
->**GraphQL Persistence Queries** moet worden toegelaten, voor de aangewezen huurdersconfiguratie.
+>**GraphQL Persistence Queries** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
 
-Bijvoorbeeld, als er een bepaalde vraag genoemd `my-query` is, die een model `my-model` van de huurdersconfiguratie `my-conf` gebruikt:
+Bijvoorbeeld, als er een bepaalde vraag genoemd `my-query` is, die een model `my-model` van de configuratie van Plaatsen `my-conf` gebruikt:
 
 * U kunt een vraag tot stand brengen gebruikend `my-conf` specifiek eindpunt, en dan zal de vraag als volgt worden bewaard:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
