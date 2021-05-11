@@ -5,9 +5,9 @@ feature: Carousel-banners
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4478'
+source-wordcount: '4469'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Op uw website kan een carrouselbanner er als volgt uitzien:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Hier kunt u door de afbeeldingen navigeren door op de nummers te klikken. Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen die u in de carrouselbanner toevoegt, ondersteunen zowel hotspots als afbeeldingen met hyperlinks. Gebruikers kunnen op een hyperlink tikken of naar een hyperlink gaan of een venster in de Snelle weergave openen.
+Hier kunt u door de afbeeldingen navigeren door op de nummers te klikken. Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen in een carrouselbanner ondersteunen zowel hotspots als afbeeldingen met hyperlinks. Gebruikers kunnen op een hyperlink tikken of naar een hyperlink gaan of een venster in de Snelle weergave openen.
 
 In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of geklikt en heeft hij het venster Snelle weergave geopend voor handschoenen:
 
@@ -34,7 +34,7 @@ In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of 
 
 ## Kijk hoe carrouselbanners worden gemaakt {#watch-how-carousel-banners-are-created}
 
-Bekijk een 10 minuten en 33 seconden analyse op [hoe de carrouselbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u carrouselbanners kunt voorvertonen, bewerken en leveren.
+Bekijk een analyse op [hoe de carrouselbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Duur: 10 minuten en 33 seconden). U leert ook hoe u carrouselbanners kunt voorvertonen, bewerken en leveren.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ Bij de meeste implementaties in de Snelle weergave wordt het volgende paradigma 
 * De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
-Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie Snelle weergave is geïmplementeerd. Vervolgens activeert u de Snelle weergave en legt u de URL van Ajax vast die door de webpagina is verzonden voor het laden van de gegevens of inhoud van de Snelle weergave.
+Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie Snelle weergave is geïmplementeerd. Vervolgens activeert u de Snelle weergave en haalt u de URL van Ajax op die door de webpagina is verzonden om de gegevens of inhoud van de Snelle weergave te laden.
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
-* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 (Vensters) of Command-Option-I (MAC) om het het hulpmiddelpaneel van de Ontwikkelaar te openen. Tik op het tabblad Netwerk.
-* In Firefox kunt u de Firebug-plug-in activeren door op F12 (Windows) of Command-Option-I (Mac) te drukken. Gebruik zijn lusje van het Netwerk, of gebruik het ingebouwde hulpmiddel van de Inspecteur en zijn lusje van het Netwerk.
+* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 (Vensters®) of Command-Option-I (MAC) om het het hulpmiddelpaneel van de Ontwikkelaar te openen. Tik op het tabblad Netwerk.
+* In Firefox kunt u de Firebug-plug-in activeren door op F12 (Windows®) of Command-Option-I (Mac) te drukken. Gebruik zijn lusje van het Netwerk, of gebruik het ingebouwde hulpmiddel van de Inspecteur en zijn lusje van het Netwerk.
 
 Wanneer netwerkcontrole is ingeschakeld in de browser, activeert u de Snelle weergave op de pagina.
 
@@ -191,7 +191,7 @@ Zie [Elementen uploaden](/help/assets/manage-digital-assets.md) om afbeeldingsba
 >
 >Gebruikers zonder beheerdersrechten moeten worden toegevoegd aan de groep **[!UICONTROL dam-users]** om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de groep **[!UICONTROL dam-users]** kan toevoegen.
 
-**Een Carousel-set maken**
+**Een Carousel-set maken:**
 
 1. Navigeer in Elementen naar de map waar u de Carousel-set wilt maken en tik **[!UICONTROL Create > Carousel Set]**.
 1. Tik op de pagina Carousel Banner Editor op **[!UICONTROL Tap to open Asset Selector]** om de afbeelding voor de eerste dia te selecteren.
@@ -217,19 +217,20 @@ Zie [Elementen uploaden](/help/assets/manage-digital-assets.md) om afbeeldingsba
    Als u een dia wilt verwijderen, tikt u op de dia of klikt u op **[!UICONTROL Delete Slide]** in de werkbalk. Als u een dia wilt verplaatsen, tikt u op het pictogram voor herschikking en houdt u de muisknop ingedrukt en verplaatst u de gewenste locatie.
 
 1. Nadat u de afbeeldingen in dia&#39;s hebt toegevoegd, kunt u een hotspot, afbeelding met hyperlinks of beide toevoegen aan uw afbeelding. Zie [hotspots of afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen. Tik of klik op de tabbladen Gedrag en Weergave en pas de vormgeving van de carrouselbanner aan of geef aan hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
+1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen. Tik of klik op de tabbladen **[!UICONTROL Behavior]** en **[!UICONTROL Appearance]** en pas aan hoe de carrouselbanner eruitziet of hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
 
    >[!NOTE]
    >
    >Voor carrouselbanners kunt u het volgende aanpassen:
-   >    * Duur waarin een afbeelding wordt weergegeven. Standaard wordt elke afbeelding 9 seconden weergegeven.
-   >    * Animatie. Elke dia-overgang is standaard vervagen. U kunt dat wijzigen in een dia-overgang.
-   >    * Stijl van de knoppen. Gebruikers kunnen door de banners roteren door op elke punt of elk getal te tikken. U kunt wijzigen waar de knoppen van de ingestelde indicator worden weergegeven (en of ze numeriek of gestippeld zijn) en hoe groot ze zijn.
-   >    * Wijzig de markeerstijl van een afbeeldingskaart of het pictogram dat voor hotspots wordt gebruikt.
-   >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarop u de voorinstelling wilt baseren. Als u geen stijl kiest en de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u een andere voorinstelling kiest.
+   >
+   >* Duur waarin een afbeelding wordt weergegeven. Standaard wordt elke afbeelding 9 seconden weergegeven.
+   >* Animatie. Elke dia-overgang is standaard vervagen. U kunt dat wijzigen in een dia-overgang.
+   >* Stijl van de knoppen. Gebruikers kunnen door de banners roteren door op elke punt of elk getal te tikken. U kunt wijzigen waar de knoppen van de ingestelde indicator worden weergegeven (en of ze numeriek of gestippeld zijn) en hoe groot ze zijn.
+   >* Wijzig de markeerstijl van een afbeeldingskaart of het pictogram dat voor hotspots wordt gebruikt.
+   >* Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarop u de voorinstelling wilt baseren. Als u geen stijl kiest en de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u een andere voorinstelling kiest.
 
 
-   U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
+   U kunt ook een voorvertoning van de vormgeving van de carrouselbanner weergeven. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
 1. Tik **[!UICONTROL Save]** als u klaar bent.
 
@@ -263,7 +264,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner**
+**Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner:**
 
 1. Navigeer vanuit Middelen naar de carrouselset die u interactief wilt maken.
 1. Selecteer de carrouselset en tik **[!UICONTROL Edit]**. De Carousel Viewer Editor wordt geopend.
@@ -316,7 +317,7 @@ Zie [Fragmenten ervaren](/help/sites-cloud/authoring/fundamentals/experience-fra
          U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
+   U kunt ook een voorvertoning van de vormgeving van de carrouselbanner weergeven. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
 1. Tik op **[!UICONTROL Save]**.
 1. Publiceer de carrouselset. Bij het publiceren wordt de insluitcode of URL gemaakt die u op uw websitepagina kunt gebruiken. Als u een klant van de Plaatsen van de Experience Manager bent, voeg de carrousel direct aan uw Web-pagina wordt geplaatst.
@@ -339,7 +340,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 * Verwijder de carrouselset.
 * Voeg hotspots en afbeeldingen met hyperlinks toe of bewerk deze. Zie ook [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
-**Een Carousel-set bewerken**
+**Een Carousel-set bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
@@ -364,7 +365,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
 ## (Optioneel) Voorvertoning van carrouselbanners {#optional-previewing-carousel-banners}
 
-Met Voorvertoning kunt u zien hoe de carrouselbanner er voor klanten uitziet. Met Voorvertoning kunt u ook de hotspots en afbeeldingen van de carrouselbanner testen om te controleren of deze zich naar behoren gedragen.
+Met Voorvertoning kunt u zien hoe de carrouselbanner er uitziet voor klanten. Met Voorvertoning kunt u ook de hotspots en afbeeldingen van de carrouselbanner testen om te controleren of deze zich naar behoren gedragen.
 
 Wanneer u tevreden bent met de carrouselbanner, kunt u deze publiceren.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
 U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode) of de lijst **[!UICONTROL Viewers]**.
 
-**Een voorvertoning weergeven van carrouselbanners**
+**Een voorvertoning weergeven van carrouselbanners:**
 
 1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en tik om deze te openen.
 1. Tik op **[!UICONTROL Edit]**.
@@ -384,7 +385,7 @@ U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode
 1. Tik op **[!UICONTROL Preview]**.
 1. Tik op de hotspots of afbeeldingen met hyperlinks op de afbeelding om de bijbehorende acties te testen.
 
-**Een voorvertoning van carrouselbanners weergeven in de lijst Viewers**
+**Een voorvertoning van carrouselbanners weergeven in de lijst Viewers:**
 
 1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en tik om deze te openen.
 1. Klik in de linkerbovenhoek van de voorvertoningspagina op het pictogram Inhoud.
@@ -452,6 +453,6 @@ Zie [Variabelen van hotspot en afbeeldingen met hyperlinks identificeren](#ident
 
 De laatste stap om de URL van de Snelle weergave te activeren en het deelvenster Snelle weergave te activeren, vereist hoogstwaarschijnlijk de hulp van een front-end IT-persoon van uw IT-afdeling. Ze hebben de kennis om te weten hoe u de implementatie van de Snelle weergave nauwkeurig vanuit de juiste stap kunt activeren en beschikken over een gebruiksklare URL voor de Snelle weergave.
 
-## Snelle weergaven gebruiken om aangepaste pop-upvensters te maken {#using-quickviews-to-create-custom-pop-ups}
+## Met Snelle weergaven aangepaste pop-upvensters® {#using-quickviews-to-create-custom-pop-ups} maken
 
-Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](/help/assets/dynamic-media/custom-pop-ups.md).
+Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](/help/assets/dynamic-media/custom-pop-ups.md).
