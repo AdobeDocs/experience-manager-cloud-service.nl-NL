@@ -6,9 +6,9 @@ feature: Slimme tags,tags toepassen
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2353'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebru
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. De nieuwe [!DNL Experience Manager Assets]-implementaties zijn standaard geïntegreerd met [!DNL Adobe Developer Console]. De functie helpt de functionaliteit voor slimme tags sneller te configureren. Bij oudere implementaties kunnen beheerders handmatig [de integratie van slimme tags configureren](/help/assets/smart-tags-configuration.md#aio-integration).
+Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] implementaties worden  [!DNL Adobe Developer Console] standaard geïntegreerd met .
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 
 ## Elementen {#tag-assets} labelen
 
-Nadat u de service Slimme tags hebt opgeleid, kunt u de codeerworkflow activeren en automatisch labels toepassen op een andere set elementen. U kunt de workflow voor labelen op aanvraag toepassen of u kunt deze plannen om periodiek uit te voeren. De workflow voor labelen is van toepassing op zowel elementen als mappen.
+Nadat u de service Slimme tags hebt opgeleid, worden de geüploade elementen automatisch gecodeerd. [!DNL Experience Manager] past de juiste tags toe in bijna real-time. U kunt de workflow voor labelen op aanvraag toepassen of u kunt deze plannen om periodiek uit te voeren. De workflow voor labelen is van toepassing op zowel elementen als mappen.
 
-### Elementen labelen vanaf de workflowconsole {#tagging-assets-from-the-workflow-console}
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. Ga in [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. Selecteer op de pagina **[!UICONTROL Workflow Models]** de **[!UICONTROL DAM Smart Tags Assets]**-workflow en klik vervolgens op **[!UICONTROL Start Workflow]** op de werkbalk.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Blader in het dialoogvenster **[!UICONTROL Run Workflow]** naar de payload-map met elementen waarop u de tags automatisch wilt toepassen.
-1. Geef een titel voor de workflow en een optionele opmerking op. Klik op **[!UICONTROL Run]**.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *Afbeelding: Navigeer naar de map met middelen en controleer de tags om te controleren of uw elementen correct zijn gecodeerd. Zie [Slimme tags beheren](#manage-smart-tags-and-searches).*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### Elementen labelen vanaf de tijdlijn {#tagging-assets-from-the-timeline}
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. Selecteer in de gebruikersinterface [!DNL Assets] de map met elementen of specifieke elementen waarop u slimme tags wilt toepassen.
-1. Open in de linkerbovenhoek de **[!UICONTROL Timeline]**.
-1. Open handelingen onder aan de linkerzijbalk en klik op **[!UICONTROL Start Workflow]**.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Selecteer de **[!UICONTROL DAM Smart Tag Assets]** workflow en geef een titel op voor de workflow.
-1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of uw elementen correct zijn gecodeerd. Zie [Slimme tags beheren](#manage-smart-tags-and-searches) voor meer informatie.
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met zojuist opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows voor periodieke labeling worden ongewijzigde elementen gecodeerd wanneer het tijdsverschil langer is dan zes maanden.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### Geüploade elementen {#tag-uploaded-assets} labelen
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] kunnen de elementen die gebruikers uploaden naar DAM automatisch labelen. Hiertoe configureren beheerders een workflow om een beschikbare stap toe te voegen die elementen van tags voorziet. Zie [Slimme tags inschakelen voor geüploade elementen](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## Slimme tags beheren en zoeken naar middelen {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebrui
 
 >[!MORELIKETHIS]
 >
->* [Configureren  [!DNL Experience Manager] voor slimme tags](smart-tags-configuration.md)
 >* [Begrijp hoe slimme tags u helpen elementen te beheren](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Slimme tags toepassen op video-elementen](smart-tags-video-assets.md)
+>* [Slimme tags toepassen op de video-elementen](smart-tags-video-assets.md)
 
