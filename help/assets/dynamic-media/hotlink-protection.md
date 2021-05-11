@@ -5,7 +5,7 @@ feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Hotlinkbeveiliging in Dynamic Media activeren {#activating-hotlink-protection-in-dynamic-media}
 
-Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
+Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript™ op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 
 [De ](https://helpx.adobe.com/support.html) Zorgvuldigheid van de Klant van Adobe vormt een verwijzingsfilter op CDN niveau. Zo zorgt u ervoor dat Dynamic Media-inhoud alleen wordt verzonden naar websites op uw lijst met toegestane websites voor het domein.
 
