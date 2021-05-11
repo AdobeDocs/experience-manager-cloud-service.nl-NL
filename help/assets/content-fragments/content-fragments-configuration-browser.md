@@ -5,9 +5,9 @@ feature: Contentfragmenten
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ Alvorens Inhoudsfragmenten te gebruiken moet u **Browser van de Configuratie** g
 >Als u **Inhoudsfragmentmodellen** niet inschakelt:
 >
 >* De optie **Maken** is niet beschikbaar voor het maken van nieuwe modellen.
->* u zult niet de huurder kunnen [selecteren om het verwante eindpunt ](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) tot stand te brengen.
+>* u zult niet de configuratie van Plaatsen kunnen [selecteren om het verwante eind-punt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) tot stand te brengen.
 
 
 Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
