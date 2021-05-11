@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
 
 >[!NOTE]
->Vanuit deze locatie kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+>Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -223,6 +223,22 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 
 * De kwesties voor `CloudServiceIncompatibleWorkflowProcess` hadden de onjuiste strengheid in het downloadbare dossier van de uitgave CSV.
 
 * De `Runmode` controle produceerde valse positieven op niet omslagknopen.
+
+## De tool Content Transfer {#content-transfer-tool}
+
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
+
+### Wat is er nieuw?{#what-is-new-ctt-may}
+
+* Met deze versie van het gereedschap Inhoud overbrengen maakt u tekstuitvoeringen voor elementen die naar de Cloud Service worden gemigreerd. Tekstuitvoeringen zijn vereist voor ondersteuning van het zoeken naar volledige tekst op ingesloten elementen.
+* Het maximumaantal migratiesets van Content Transfer Tool dat een gebruiker kan maken, is verhoogd van 4 naar 10.
+
+### Opgeloste problemen {#bug-fixes-ctt-may}
+
+* De veelvoudige insectenmoeilijke situaties verwant met auto-verfrissen eigenschap in het Hulpmiddel van de Overdracht van de Inhoud UI.
+* Het hulpmiddel van de Overdracht van de inhoud met `wipe=true` resulteerde in onjuiste tellerindex op het doel. Dit is opgelost.
 
 ## Analysator van best practices {#best-practices-analyzer}
 
