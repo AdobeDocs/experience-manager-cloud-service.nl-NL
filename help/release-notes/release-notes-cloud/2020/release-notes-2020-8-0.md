@@ -1,14 +1,14 @@
 ---
 title: Release-aantekeningen voor 2020.8.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.8.0.'
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
 
 ---
-
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.8.0 {#release-notes}
 
@@ -30,7 +30,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Videotranscodering wordt nu ondersteund met middelenmicroservices. Met een nieuwe sectie in de configuratie [!UICONTROL Processing Profiles] kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Zie [Video-elementen beheren](/help/assets/manage-video-assets.md#transcode-video) voor meer informatie. Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
 
-* Bij nieuwe [!DNL Experience Manager Assets]-implementaties is de functionaliteit voor slimme tags nu standaard geconfigureerd. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties configureren beheerders [integratie van slimme tags](/help/assets/smart-tags-configuration.md#aio-integration) zoals voorheen.
+* Bij nieuwe [!DNL Experience Manager Assets]-implementaties is de functionaliteit voor slimme tags nu standaard geconfigureerd. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties configureren beheerders de integratie van slimme tags zoals voorheen.
 
 * Een nieuwe [ervaring bij het downloaden van middelen](/help/assets/download-assets-from-aem.md) maakt het mogelijk
 
