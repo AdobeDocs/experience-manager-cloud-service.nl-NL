@@ -4,16 +4,16 @@ description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op 
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '398'
 ht-degree: 6%
 
 ---
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
@@ -38,7 +38,7 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Video](video.md)
 * [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)
-* [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](custom-pop-ups.md)
+* [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](custom-pop-ups.md)
 
 Zie ook [Dynamic Media](administering-dynamic-media.md) instellen.
 
@@ -81,7 +81,7 @@ Tot de voor Dynamic Media ingeschakelde elementen behoren `pyramid.tiffs`.
 
 ### Wijzigingen in de weergave Elementen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld ziet er als volgt uit:
+Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
