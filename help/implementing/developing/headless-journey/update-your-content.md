@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 1%
+source-wordcount: '1115'
+ht-degree: 2%
 
 ---
 
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 Inhoudsfragmenten worden gebruikt voor levering zonder kop en een inhoudsfragment is een speciaal type element. Zij worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben.
 
-Aangezien er verschillende verschillen zijn met *standard* elementen (zoals afbeeldingen of audio), zijn er enkele aanvullende regels van toepassing op de afhandeling ervan.
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### Weergave {#representation}
+### Representation {#representation}
 
-Inhoudsfragmenten:
+Content fragments:
 
-* Maak geen binaire gegevens beschikbaar.
-* Deze bevinden zich volledig in de JSON-uitvoer (binnen de eigenschap `properties`).
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom moet de *consument* op de hoogte zijn van het model van een fragment (ten minste een minimum) - hoewel de meeste informatie kan worden afgeleid uit de lading; als gegevenstypen, enz. maken deel uit van de definitie.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### Gekoppelde inhoud {#associated-content}
+### Associated Content {#associated-content}
 
-Gekoppelde inhoud wordt momenteel niet weergegeven.
+Associated content is currently not exposed.
+-->
 
 ## De REST API {#using-aem-assets-rest-api} voor middelen gebruiken
 
