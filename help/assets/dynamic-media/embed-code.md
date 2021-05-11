@@ -5,9 +5,9 @@ feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '368'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM als WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
+U sluit URLs slechts in als u _niet_ gebruikend Adobe Experience Manager als WCM bent. Als u Experience Manager als uw WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
@@ -32,7 +32,7 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive
 >
 >Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-**De Dynamic Media Video- of Image-viewer insluiten op een webpagina**
+**De Dynamic Media Video- of Image-viewer insluiten op een webpagina:**
 
 1. Navigeer naar de *gepubliceerde* video of afbeeldingselement waarvan u de insluitcode wilt kopiëren.
 
