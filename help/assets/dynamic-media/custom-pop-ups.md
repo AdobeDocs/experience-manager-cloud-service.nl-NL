@@ -1,18 +1,18 @@
 ---
 title: Snelle weergaven gebruiken om aangepaste pop-ups te maken
-description: '"Leer over hoe de standaard Snelle mening in ecommerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-upvensters."'
+description: '"Leer over hoe de standaard Snelle mening in ecommerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-upversie van Windows®."'
 feature: Interactieve afbeeldingen, interactieve video's, carrouselbanners
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
 
 ---
 
-# Snelle weergaven gebruiken om aangepaste pop-upvensters te maken {#using-quickviews-to-create-custom-pop-ups}
+# Met Snelle weergaven aangepaste pop-upvensters® {#using-quickviews-to-create-custom-pop-ups} maken
 
 De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer die u gebruikt, kunnen klanten op een hotspot, een miniatuurafbeelding of een afbeelding met hyperlinks tikken om informatie of verwante inhoud weer te geven.
 
@@ -24,7 +24,7 @@ Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een Snelle weergave hetzelfde voor alle drie ondersteunde viewers.
 
-**Met Snelle weergaven aangepaste pop-upvensters maken**
+**Met Snelle weergaven kunt u een aangepaste pop-upversie van Windows® maken:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
@@ -102,8 +102,8 @@ Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina 
 
    Meer informatie over de methode `setHandlers()` vindt u in het volgende voorbeeld:
 
-   * Interactieve afbeeldingsviewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Interactieve videoviewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Interactieve afbeeldingsviewer - [verzegelingen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Interactieve videoviewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Configureer nu de handler `quickViewActivate`.
 
