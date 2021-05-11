@@ -1,14 +1,14 @@
 ---
 title: 'Sluiende en ontsmette zandbakomgevingen '
-description: 'Sluiende en ontsmette zandbakomgevingen '
+description: Sluiende en ontsmette zandbakomgevingen
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # Sluiende en ontsmette zandbakomgevingen {#hibernating-introduction}
 
@@ -28,7 +28,7 @@ Sluimerstand wordt gecategoriseerd als:
 * **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet nodig is omdat de slaapstand automatisch zal plaatsvinden na een bepaalde periode (acht uur) van inactiviteit.
 
 >[!CAUTION]
->In de meest recente versie kunt u een koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager niet gebruiken om een Sandbox-programmaomgeving te onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
+>In de meest recente versie kunt u een koppeling rechtstreeks vanuit Cloud Manager naar de Developer Console niet gebruiken om een Sandbox-programmaomgeving te onderbreken. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
 
 ### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
@@ -121,8 +121,12 @@ Weinig belangrijke overwegingen met betrekking tot gehiberneerde en gedeshiberne
 
 * AEM upgrades kunnen worden toegepast op gehiberde omgevingen, die klanten handmatig kunnen activeren via Cloud Manager. Het milieu zal gehiberneerd blijven en de nieuwe introductie zal in het milieu verschijnen zodra het wordt gedehiberneerd.
 
->[!NOTE]
->Cloud Manager geeft op dit moment niet aan of een omgeving is gehiberneerd.
+* Sandboxen worden in het hibernatieknooppunt geplaatst na 8 uur inactiviteit, waarna ze kunnen worden gedehiberneerd.
+
+* Sandboxen worden verwijderd na 6 maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
+
+   >[!NOTE]
+   >Cloud Manager geeft op dit moment niet aan of een omgeving is gehiberneerd.
 
 ## Updates AEM voor sandboxomgevingen {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Raadpleeg [Omgeving bijwerken](/help/implementing/cloud-manager/manage-environme
 >[!NOTE]
 >* Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
 >* Een handmatige update van *Production* of *Stage*-omgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.
-
-
-
-
-
 
