@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
 U zou uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te om het allen samen te brengen - Uw App en Uw Inhoud in AEM Koploze](put-it-all-together.md) waar u leert hoe te om uw AEM Project zonder Zoppen te nemen en het voor te bereiden op het leven.
 
+[Hoe u toepassingen voor één pagina (SPA) maakt met ](create-spa.md) AEM, toont u ook hoe u bewerkbare SPA kunt maken met het SPA Editor-framework van AEM, en hoe u externe SPA kunt integreren, waardoor bewerkingsmogelijkheden naar wens zijn.
+
 ## Aanvullende bronnen {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS-beginsel](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN-indeling](https://github.com/kevinswiber/siren)
 * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
