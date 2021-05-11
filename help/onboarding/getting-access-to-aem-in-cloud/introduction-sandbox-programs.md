@@ -1,14 +1,14 @@
 ---
 title: 'Inleiding tot Sandbox-programma''s '
-description: 'Inleiding tot Sandbox-programma''s '
+description: Inleiding tot Sandbox-programma's
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot Sandbox-programma&#39;s {#sandbox-programs}
 
@@ -38,5 +38,7 @@ Sandbox-programma&#39;s hebben de volgende kenmerken:
 1. **AEM Updates:** AEM updates kunnen handmatig worden toegepast op omgevingen in een Sandbox-programma en worden niet automatisch doorgeduwd.
 Raadpleeg [Updates AEM naar Sandbox-omgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) voor meer informatie.
 
-1. **Sluimerstand:** omgevingen in een Sandbox-programma worden automatisch genummerd als er gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Gesamberde omgevingen kunnen handmatig worden gedehiberteerd.
+1. **Sluimerstand:** omgevingen in een Sandbox-programma worden automatisch genummerd als er gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Sandboxen worden in het hibernatieknooppunt geplaatst na 8 uur inactiviteit, waarna ze kunnen worden gedehiberneerd. Gesamberde omgevingen kunnen handmatig worden gedehiberteerd.
 Raadpleeg [Sluimerende en Shibernating Sandbox-omgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) voor meer informatie.
+
+1. **Verwijderen**: Sandboxen worden verwijderd na 6 maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
