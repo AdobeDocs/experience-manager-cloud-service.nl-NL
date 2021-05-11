@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,8 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 * Wanneer u elementen bladert in de kolomweergave, geeft een visuele indicator de goedgekeurde of geweigerde status van elk element weer.
 
 * Bij het bladeren door elementen in de kolomweergave wordt een visuele indicator weergegeven voor verlopen elementen.
+
+* Een gegevenstype van het tekstgebied wordt ter beschikking gesteld in [!DNL Assets] meta-gegevensredacteur. Met deze optie kunt u gebruikers metagegevens laten invoeren in een tekstveld in een vrije vorm.
 
 ### Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
 
