@@ -5,9 +5,9 @@ feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,8 @@ Hoe u uw Dynamic Media-middelen kunt leveren - zowel video als afbeeldingen - ha
 
 Met Dynamic Media hebt u verschillende opties:
 
-* Als uw website op AEM wordt gehost, wilt u de Dynamic Media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website niet op AEM staat, kunt u kiezen uit:
+* Als uw website op Adobe Experience Manager wordt gehost, wilt u de Dynamic Media-elementen rechtstreeks aan uw pagina toevoegen.
+* Als uw website niet op Experience Manager is, kunt u kiezen uit:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
@@ -43,6 +43,6 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 ## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 
-AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
+Experience Manager ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
 Zie [HTTP/2 Levering van inhoud Veelgestelde vragen](/help/assets/dynamic-media/http2faq.md) voor meer informatie.
