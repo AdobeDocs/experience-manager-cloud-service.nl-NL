@@ -1,14 +1,14 @@
 ---
 title: Een TXT-record toevoegen
 description: Een aangepaste domeinnaam toevoegen
+exl-id: d441de29-af41-4d3e-9155-531af9702841
 translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Een TXT-record toevoegen {#adding-txt}
 
@@ -21,14 +21,14 @@ U kunt de onderstaande stappen volgen voordat u een TXT-record maakt:
 
 Wanneer u domeinverificatie start, geeft Cloud Manager u de naam en de TXT-waarde die u voor de verificatie wilt gebruiken. Voeg een TXT- verslag aan DNS van uw domein server toe gebruikend de gespecificeerde Naam en de Waarde.
 
-1. Login aan uw Gastheer van het Domein en bezoek de DNS archiefsectie.
+1. Login aan uw Gastheer van het Domein en bezoek de DNS verslagensectie.
 1. Voeg `_aemverification.[yourdomainname]` als Naam toe, en voeg de Waarde TXT precies toe aangezien het verschijnt.
 Raadpleeg de voorbeelden in de onderstaande tabel.
 
 | Domein | Naam | TXT-waarde |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
-| `test.example.com` | `_aemverification.test.example.com` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
+| `example.com` | `_aemverification` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
+| `test.example.com` | `_aemverification` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
 
 Wanneer u klaar bent, kunt u het resultaat verifiëren door te lopen: `dig _aemverification.[yourdomainname] -t txt`.
 Het verwachte resultaat moet de TXT-waarde weergeven die is opgegeven in de gebruikersinterface van Cloud Manager.
@@ -37,4 +37,3 @@ Bijvoorbeeld, als uw domein `example.com` is, dan looppas: `dig TXT _aemverifica
 
 >[!NOTE]
 >Er zijn ook verschillende [DNS opzoekgereedschappen](https://www.ultratools.com/tools/dnsLookup), Google DoH kan worden gebruikt om TXT-recorditems op te zoeken en vast te stellen of de TXT-record ontbreekt of onjuist is.
-
