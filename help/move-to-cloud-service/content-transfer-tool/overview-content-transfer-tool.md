@@ -3,10 +3,10 @@ title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 73%
 
 ---
 
@@ -39,10 +39,11 @@ De overdracht van content bestaat uit twee fasen:
 
 Een *migratieset* heeft de volgende kenmerken:
 
-* Tijdens de contentoverdracht kunnen er maximaal vier migratiesets worden gemaakt en onderhouden.
+* U kunt maximaal tien migratiesets tegelijk maken en onderhouden tijdens de activiteit voor inhoudsoverdracht.
 * Elke migratieset moet een unieke naam hebben.
 * Als een migratieset langer dan 30 dagen inactief is geweest, wordt deze automatisch verwijderd.
 * Wanneer u een migratieset maakt, wordt deze gekoppeld aan een specifieke omgeving. U kunt alleen content opnemen in een auteur- of publicatie-instantie van dezelfde omgeving.
+
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
@@ -81,3 +82,5 @@ De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als
    * *Grootte van dataopslagplaats*: De Content Transfer-tool gebruikt 64 GB, ook als de werkelijke dataopslagplaats groter is.
    * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
+
+* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Aangezien maximaal tien migratiesets tegelijk tijdens de activiteit voor de overdracht van inhoud kunnen worden gemaakt en onderhouden, wordt aanbevolen de opslagplaats voor inhoud dienovereenkomstig te splitsen om ervoor te zorgen dat u niet te weinig migratiesets hebt.  tijdens/structuur hun migratie dienovereenkomstig instellen.
