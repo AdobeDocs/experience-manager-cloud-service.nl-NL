@@ -2,10 +2,9 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functionele tests"
->abstract="Functionele tests zijn onderverdeeld in drie typen:Functionele tests van product, Aangepaste functionele tests, Aangepaste UI-tests"
+>abstract="Functionele tests worden ingedeeld in drie typen: Functionele tests voor producten, aangepaste functionele tests en aangepaste UI-tests"
 
 Functionele tests worden ingedeeld in drie typen:
 
