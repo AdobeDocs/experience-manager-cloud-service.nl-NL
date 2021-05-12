@@ -2,16 +2,16 @@
 title: Elementen downloaden
 description: Download elementen van [!DNL Adobe Experience Manager Assets] en schakel de downloadfunctionaliteit in of uit.
 contentOwner: AG
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 1%
+source-wordcount: '901'
+ht-degree: 0%
 
 ---
-
 
 # Elementen downloaden van [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om elementen te downloaden:
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-Met de standaardservlet in [!DNL Experience Manager] kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadverzoeken afgeven om ZIP-bestanden met elementen te maken. De downloadvoorbereiding kan prestatiesimplicaties hebben of kan zelfs de server en het netwerk overbelasten. Om dergelijke potentiële DoS-achtige risico&#39;s te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` OSGi component is gehandicapt voor publicatieinstanties.
+Met de standaardservlet in [!DNL Experience Manager] kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadverzoeken afgeven om ZIP-bestanden met elementen te maken. De downloadvoorbereiding kan prestatiesimplicaties hebben of kan zelfs de server en het netwerk overbelasten. Om dergelijke potentiële DoS-achtige risico&#39;s te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` OSGi component is gehandicapt voor publicatieinstanties. Als u de downloadfunctie niet nodig hebt op auteur-instanties, schakelt u het servlet-programma uit bij de auteur.
 
 Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de vereisten voor het dagelijks downloaden. Een hoge waarde kan van invloed zijn op de prestaties.
 
@@ -86,7 +86,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 ## Subserver {#disable-asset-download-servlet} uitschakelen
 
-De `Asset Download Servlet` kan op [!DNL Experience Manager] Publish instanties worden onbruikbaar gemaakt door de berichtcherconfiguratie bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
+Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het even welke DoS-gelijkaardige risico&#39;s te verhinderen. `Asset Download Servlet` kan op [!DNL Experience Manager] auteur en publiceer instanties worden onbruikbaar gemaakt door de configuratie van de verzender bij te werken om om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
 1. Om activa te blokkeren downloadverzoeken via een verdienersconfiguratie geef de `dispatcher.any` configuratie uit en voeg een nieuwe regel aan [filtersectie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring) toe.
 
