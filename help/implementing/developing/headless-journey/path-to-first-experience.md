@@ -4,14 +4,14 @@ description: In dit deel van de AEM Headless Developer Journey zult u de stappen
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Pad naar uw eerste ervaring met AEM zonder kop {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Zorg dat u weet welke gereedschappen en AEM nodig zijn.
 * Weet de beste praktijken om uw reis zonder kop vlot te maken, efficiënt inhoudsgeneratie te houden, en ervoor te zorgen dat de inhoud snel wordt geleverd.
 
-U zou uw AEM onophoudelijke reis door het document [moeten voortzetten te herzien hoe te om Uw Inhoud als Modellen van de Inhoud te modelleren](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
+Wij willen dat u op deze grondkennis voortbouwt om de kracht en de flexibiliteit van AEM Headless volledig te begrijpen zodat u ervan kunt profiteren voor uw eigen projecten. Hiervoor hebt u opties.
+
+### Kies uw eigen avontuur {#choose-your-path}
+
+Wat uw het leren stijl ook maakt, Adobe wil dat u erin slaagt om met uw AEM Headless project aan de slag te gaan.
+
+* Als u verkiest **hoofdloze concepten en AEM zonder kop technologieën** te blijven leren, zou u uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te om Uw Inhoud als Modellen van de Inhoud te modelleren](model-your-content.md) te vormen waar u leert hoe te om uw inhoudstructuur in AEM te modelleren.
+* Als u verkiest om **te leren door te doen**, kunt u aan [Aan de slag met AEM Hoofdloze hands-on leerprogramma](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
