@@ -2,10 +2,9 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 73%
 
 ---
@@ -83,4 +82,4 @@ De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als
    * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
 
-* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Aangezien maximaal tien migratiesets tegelijk tijdens de activiteit voor de overdracht van inhoud kunnen worden gemaakt en onderhouden, wordt aanbevolen de opslagplaats voor inhoud dienovereenkomstig te splitsen om ervoor te zorgen dat u niet te weinig migratiesets hebt.  tijdens/structuur hun migratie dienovereenkomstig instellen.
+* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Aangezien maximaal tien migratiesets tegelijk tijdens de activiteit van de inhoudsoverdracht kunnen worden gemaakt en onderhouden, wordt aangeraden de opslagplaats voor inhoud dienovereenkomstig te verdelen om ervoor te zorgen dat de migratiesets niet opraken.
