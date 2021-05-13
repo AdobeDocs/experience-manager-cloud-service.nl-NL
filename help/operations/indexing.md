@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,3 @@ Als een index in een recentere versie van de toepassing moet worden verwijderd, 
 ```
 
 Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaardindex `damAssetLucene-8`, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
-
-### Indexbeschikbaarheid en fouttolerantie {#index-availability-and-fault-tolerance}
-
-Het wordt aanbevolen dubbele indexen te maken voor functies die belangrijk zijn (rekening houdend met de bovenstaande naamgevingsconventie voor indexen), zodat er in het geval van indexbeschadiging of een dergelijke onvoorziene gebeurtenis een fallback-index beschikbaar is om te reageren op query&#39;s.
