@@ -2,10 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -49,6 +48,10 @@ Het definiëren van indexen kan uit deze drie gebruiksgevallen bestaan:
 Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Voor meer informatie, zie [het Opstellen aan AEM als documentatie van de Cloud Service](/help/implementing/deploying/overview.md).
 
 ### De nieuwe indexdefinitie {#preparing-the-new-index-definition} voorbereiden
+
+>[!NOTE]
+>
+>Als u een uitpunt van de vakindex aanpast, bijvoorbeeld `damAssetLucene-6`, kopieert u de meest recente uit de definitie van de kaderindex van een *Cloud Service-omgeving* en voegt u uw aanpassingen bovenaan toe, zodat de vereiste configuraties niet per ongeluk worden verwijderd. Het knooppunt `tika` onder `/oak:index/damAssetLucene-6/tika` is bijvoorbeeld een vereist knooppunt en moet ook deel uitmaken van uw aangepaste index en het bestaat niet in de Cloud SDK.
 
 U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexdefinitie bevat, die dit noemingspatroon volgt:
 
