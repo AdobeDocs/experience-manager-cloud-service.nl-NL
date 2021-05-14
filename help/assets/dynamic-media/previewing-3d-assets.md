@@ -1,10 +1,9 @@
 ---
 title: 3D-elementen voorvertonen
 description: Leer hoe u een voorvertoning van 3D-middelen in Dynamic Media kunt bekijken.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
@@ -25,7 +24,7 @@ Interactieve 3D-voorvertoning in Experience Manager ondersteunt de volgende best
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair |  |
-| GLTF | GL-indeling voor verzending | model/gltf+json | Zie **Opmerking** hieronder. |
+| GLTF | GL-indeling voor verzending | model/gltf+json | Zie de **Opmerking** hieronder. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
@@ -46,19 +45,19 @@ Interactieve 3D-voorvertoning in Experience Manager ondersteunt de volgende best
 
 De tijd die nodig is om een 3D-element te openen op de pagina met de elementdetails, is afhankelijk van verschillende factoren, zoals bandbreedte, de complexiteit van de afbeelding en de vertraging van de server.
 
-Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, laptop of mobiel aanraakapparaat, ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
+Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, laptop of mobiel aanraakapparaat - ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
 **Een voorvertoning van 3D-elementen weergeven in Experience Manager:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
 Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-assets) en [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Tik **[!UICONTROL Assets > Files]** vanaf Experience Manager op de pagina **[!UICONTROL Navigation]**.
+1. Tik in Experience Manager op de pagina **[!UICONTROL Navigation]** op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 
    ![Navigatiepagina](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave op **[!UICONTROL Card View]** en ga naar een 3D-asset waarvan u een voorvertoning wilt weergeven.
 
-   ![3D-kaart selecteren](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Selectie van de 3D-kaart](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Tik in de Kaartweergave op de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
 
 1. Tik op de kaart van het 3D-element.
