@@ -4,17 +4,16 @@ description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
 feature: Gemengde mediasets
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 24%
+source-wordcount: '1396'
+ht-degree: 22%
 
 ---
 
 # Mixed Media Sets{#mixed-media-sets}
 
-Met gemengde mediasets kunt u in één presentatie een combinatie van afbeeldingen, afbeeldingssets, centrifuges en video&#39;s aanbieden.
+Met gemengde mediasets kunt u afbeeldingen, afbeeldingssets, centrifuges en video&#39;s in één presentatie laten overvloeien.
 
 Gemengde mediasets worden aangegeven door een banner met het woord **[!UICONTROL MixedMediaSet]**. Als de gemengde mediaset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
@@ -30,7 +29,7 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
 1. [Upload uw elementen](#uploading-assets).
 
-   Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/dynamic-media/image-sets.md) en [spinsets](/help/assets/dynamic-media/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u er rekening mee houden dat u kunt zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
+   Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/dynamic-media/image-sets.md) en [spinsets](/help/assets/dynamic-media/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u er rekening mee houden dat u kunt zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
 1. [Gemengde mediasets](#creating-mixed-media-sets) maken.
 
@@ -70,7 +69,7 @@ Indien nodig kunt u [Gemengde Mediasets](#editing-mixed-media-sets) bewerken. Da
 
 ## Elementen {#uploading-assets} uploaden
 
-Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor gemengde mediaset. Kies daarom afbeeldingen met deze zoomfunctie voor ogen. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
+Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor gemengde mediaset. Kies daarom afbeeldingen met deze zoomfunctie voor ogen. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
 Als u bovendien centrifuges of afbeeldingssets wilt toevoegen aan de gemengde mediaset, maakt u deze ook.
 
@@ -80,7 +79,7 @@ U kunt afbeeldingen, afbeeldingssets, centrifuges en video&#39;s toevoegen aan d
 
 Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. U kunt elementen handmatig opnieuw ordenen of sorteren nadat u ze hebt toegevoegd.
 
-**Een gemengde mediaset maken**
+**Een gemengde mediaset maken:**
 
 1. Ga in Assets naar de plaats waar u een gemengde mediaset wilt maken, klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Mixed Media Set]**. U kunt de set ook maken vanuit een map die uw assets bevat. De editor voor gemengde mediasets wordt weergegeven.
 
@@ -126,7 +125,7 @@ U kunt verschillende bewerkingstaken rechtstreeks in de gebruikersinterface uitv
 * Voorinstellingen voor viewers toepassen.
 * Wijzig de standaardminiatuur.
 
-**Een gemengde mediaset bewerken**
+**Een gemengde mediaset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
@@ -146,7 +145,7 @@ U kunt verschillende bewerkingstaken rechtstreeks in de gebruikersinterface uitv
 
       >[!NOTE]
       >
-      >* Als u een volledige gemengde mediaset wilt verwijderen, navigeert u vanuit elke weergavemodus (zoals **[!UICONTROL Card View]** of **[!UICONTROL Column View]**) naar de gemengde mediaset. Houd de cursor boven het element en tik op het vinkje om het te selecteren. Druk op **[!UICONTROL Backspace]** op het toetsenbord of klik **[!UICONTROL More]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete]**.
+      >* Als u een volledige gemengde mediaset wilt verwijderen, navigeert u vanuit elke weergavemodus (zoals **[!UICONTROL Card View]** of **[!UICONTROL Column View]**) naar de gemengde mediaset. Houd de muisaanwijzer boven het element en tik op het vinkje zodat u het kunt selecteren. Druk op **[!UICONTROL Backspace]** op het toetsenbord of klik **[!UICONTROL More]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete]**.
          >
          >
       * U kunt de elementen in een gemengde mediaset bewerken door naar de set te navigeren. Tik in de linkertrack op **[!UICONTROL Set Members]** en tik vervolgens op het pictogram **[!UICONTROL Pencil]** op een afzonderlijk element om het bewerkingsvenster te openen.
@@ -156,7 +155,7 @@ U kunt verschillende bewerkingstaken rechtstreeks in de gebruikersinterface uitv
 
    >[!NOTE]
    >
-   >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tik (niet selecteren) op de set om deze te openen op de pagina Voorvertoning Experience Manager instellen. Klik in de linkertrack op het inlasteken omlaag om de vervolgkeuzelijst te openen en tik vervolgens op **[!UICONTROL Set Members]**. Houd de muisaanwijzer op een element in de pagina Leden instellen en tik op **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
+   >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tik (niet selecteren) op de set zodat u deze kunt openen op de pagina Voorvertoning Experience Manager instellen. Klik in de linkertrack op het inlasteken omlaag om de vervolgkeuzelijst te openen en tik vervolgens op **[!UICONTROL Set Members]**. Houd de muisaanwijzer op een element in de pagina Leden instellen en tik op **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
       >
       >
    * Als u een volledige gemengde mediaset wilt verwijderen, gaat u vanuit een willekeurige weergavemodus (zoals kaart- of kolomweergave) naar de gemengde mediaset. Tik op **[!UICONTROL Select]** (vinkpictogram). Druk op **[!UICONTROL Backspace]** op het toetsenbord of tik **[!UICONTROL More]** (rij met drie punten) en tik vervolgens op **[!UICONTROL Delete]**.
