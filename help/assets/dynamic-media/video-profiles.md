@@ -4,10 +4,9 @@ description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptie
 feature: Middelenbeheer, videoprofielen, uitvoeringen
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3488'
 ht-degree: 9%
 
 ---
@@ -211,7 +210,7 @@ Tik op het informatiepictogram naast elke optie voor meer beschrijvingen of aanb
 1. Ga als volgt te werk:
    * Typ **[!UICONTROL auto]** in het veld **[!UICONTROL Width]**.
    * Voer in het veld **[!UICONTROL Height]** een waarde in pixels in.
-Tik op het informatiepictogram Hoogte om de pagina **[!UICONTROL Size Calculator]** te openen, zodat u de grootte van de video kunt visualiseren. Gebruik de pagina **[!UICONTROL Size Calculator]** om de videodimensie (blauwe doos) verder te plaatsen hoe u wilt. Tik op **[!UICONTROL X]** in de rechterbovenhoek van het dialoogvenster als u klaar bent.
+Tik op het informatiepictogram Hoogte om de pagina **[!UICONTROL Size Calculator]** te openen, zodat u de grootte van de video kunt visualiseren. Gebruik de pagina **[!UICONTROL Size Calculator]** om de videogrootte (blauwe doos) verder te plaatsen hoe u wilt. Tik op **[!UICONTROL X]** in de rechterbovenhoek van het dialoogvenster als u klaar bent.
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
    * Tik op de tab **[!UICONTROL Advanced]** en controleer of het selectievakje **[!UICONTROL Use Default Values]** is ingeschakeld (aanbevolen).
@@ -244,7 +243,7 @@ U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie [Een vid
 
 U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavanceerde videocoderingsparameters die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in Experience Manager. U kunt een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, aan uw bestaand profiel toevoegen.
 
-**U kunt als volgt parameters** voor videocodering met aangepaste toevoeging gebruiken:
+**Parameters voor aangepaste videocodering gebruiken:**
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigeer op de pagina CRXDE Lite naar het volgende in het deelvenster Verkenner aan de linkerkant:
@@ -271,7 +270,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde om een hoofdframe te genereren na elke 2-10 seconden. Bij 30 frames per seconde is het hoofdframe-interval bijvoorbeeld 60-300.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
+   <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde zodat u een hoofdframe elke 2-10 seconden kunt genereren. Bij 30 frames per seconde is het hoofdframe-interval bijvoorbeeld 60-300.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
    <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS (Live HTTP-streaming) is 60-90.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Zie ook [Aanbevolen werkwijzen voor videocodering](/help/assets/dynamic-media/vi
 
 Zie [Elementverwerking configureren](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing) om geavanceerde verwerkingsparameters voor andere elementtypen te definiëren.
 
-**Een videoprofiel** bewerken:
+**Een videoprofiel bewerken:**
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Controleer op de pagina Videoprofielen de naam van één videoprofiel.
@@ -383,7 +382,7 @@ U kunt [de vooruitgang van een de verwerkingsbaan van het Profiel van de Video ]
 
 #### Een videoprofiel toepassen op mappen vanuit Eigenschappen {#applying-video-profiles-to-folders-from-properties}
 
-1. Tik of klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een videoprofiel wilt toepassen.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een videoprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Video Profiles]**, selecteer het profiel in het vervolgkeuzemenu en klik op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
@@ -396,7 +395,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
 Zie ook [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Een videoprofiel algemeen** toepassen,
+**Een videoprofiel algemeen toepassen:**
 
 * Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. Voeg de eigenschap `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` toe en tik **[!UICONTROL Save All]**.
 
@@ -411,7 +410,7 @@ U kunt het `error.log` dossier ook bekijken om de vooruitgang van een het codere
 
 ## Een videoprofiel verwijderen uit mappen {#removing-a-video-profile-from-folders}
 
-Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een videoprofiel verwijderen uit een map in het menu **[!UICONTROL Tools]** of uit **[!UICONTROL Folder Settings]** als u zich in de map bevindt. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren uit mappen kunt verwijderen.
 
