@@ -4,10 +4,9 @@ description: Meer informatie over de extensie Dynamic Media Viewers voor Platfor
 feature: Elementrapporten
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6272'
+source-wordcount: '6270'
 ht-degree: 9%
 
 ---
@@ -24,7 +23,7 @@ Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw websi
 
 Zie [Adobe extensions](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) in de gebruikershandleiding van het Experience Platform Launch voor meer informatie over extensies.
 
-**Dit onderwerp is bedoeld voor het volgende:De beheerders van de** Plaats, Ontwikkelaars op het platform van Adobe Experience Manager, en mensen in Verrichtingen.
+**Dit onderwerp is voorgenomen voor het volgende:De beheerders van de** Plaats, Ontwikkelaars op het programma van Adobe Experience Manager, en mensen in Verrichtingen.
 
 ### Beperkingen van de integratie {#limitations-of-the-integration}
 
@@ -58,7 +57,7 @@ In Experience Platform Launch werken de concepten *Data Elements* en *Rules* sam
 
 Een gegevenselement in Experience Platform Launch is een benoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of Dynamic Media Viewers-gegevens.
 
-Welke opties beschikbaar zijn voor een definitie van een gegevenselement, is afhankelijk van de lijst met extensies die zijn geïnstalleerd in de eigenschap Experience Platform Launch. De &quot;Core&quot;uitbreiding is vooraf geïnstalleerd en beschikbaar uit de doos in om het even welke configuratie. Met deze extensie &quot;Core&quot; kunt u een gegevenselement definiëren dat afkomstig is van cookie, JavaScript-code, queryreeks en vele andere bronnen.
+Welke opties beschikbaar zijn voor een definitie van een gegevenselement, is afhankelijk van de lijst met extensies die zijn geïnstalleerd in de eigenschap Experience Platform Launch. De &quot;Core&quot;uitbreiding is vooraf geïnstalleerd en beschikbaar uit de doos in om het even welke configuratie. Met deze extensie &quot;Core&quot; kunt u een gegevenselement definiëren dat afkomstig is van cookie, JavaScript™-code, queryreeks en vele andere bronnen.
 
 Voor het bijhouden van Adobe Analytics moeten verschillende andere extensies worden geïnstalleerd, zoals beschreven in [Installatie en installatie van extensies](#installing-and-setup-of-extensions). Met de extensie Dynamic Media Viewers kunt u een gegevenselement definiëren dat een argument is van de gebeurtenis Dynamic Viewer. Het is bijvoorbeeld mogelijk te verwijzen naar het viewertype, of de naam van het element die tijdens het laden door de viewer wordt gemeld, het zoomniveau dat wordt gemeld wanneer de eindgebruiker zoomt en nog veel meer.
 
@@ -66,7 +65,7 @@ Met de extensie Dynamic Media Viewer worden de waarden van de Data Elements auto
 
 Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van Experience Platform Launch UI worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. Met name wordt in de regel naar gegevenselementen die zijn gedefinieerd voor het bijhouden van Dynamic Media Viewers verwezen door de extensie Handeling voor variabelen instellen van Adobe Analytics (zie hieronder).
 
-Zie [Gegevenselementen](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) in de Gids van de Gebruiker van het Experience Platform Launch.
+Zie [Gegevenselementen](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#ui) in de Gids van de Gebruiker van het Experience Platform Launch.
 
 #### Info over Regels in Experience Platform Launch {#about-rules-in-adobe-launch}
 
@@ -92,7 +91,7 @@ In de sectie van Acties, is het vereist dat u een *actie van Variabelen* plaatst
 
 De *actie van de Vastgestelde Variabelen* moet door een *actie worden gevolgd verzenden Beacon*. Met de handeling *Send Beacon* worden gegevens daadwerkelijk verzonden naar de analytics tracking-server. Beide acties, *Reeks Variabelen* en *Send Beacon*, komen uit de uitbreiding van Adobe Analytics.
 
-Zie [Regels](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference) in de Gids van de Gebruiker van het Experience Platform Launch.
+Zie [Regels](https://experienceleague.adobe.com/docs/launch/using/ui/rules.html#ui) in de Gids van de Gebruiker van het Experience Platform Launch.
 
 #### Voorbeeldconfiguratie {#sample-configuration}
 
@@ -152,7 +151,7 @@ Zie [Voeg het Experience Platform Launch toe bedt Code](https://experienceleague
 
 Meer over hoe te om de ingebedde codeeigenschap van Experience Manager Dynamic Media te gebruiken, zie [Inbedend de Video of Kijker van het Beeld op een Web-pagina](/help/assets/dynamic-media/embed-code.md).
 
-**Dynamic Media-viewers volgen met behulp van insluitcode**:
+**Dynamic Media-viewers volgen met behulp van insluitcode:**
 
 1. Zorg dat een webpagina gereed is voor het insluiten van een Dynamic Media-viewer.
 1. Haal de insluitcode voor de bibliotheek van het Experience Platform Launch door zich eerst aan Experience Platform Launch aan te melden (zie [Vormend Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
@@ -204,7 +203,7 @@ Elke viewer voor dynamische media heeft een unieke id op de webpagina. Het gegev
 
 De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement wordt gevraagd in een Regel die door een de kijkergebeurtenis van Dynamic Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En, wordt het Element van Gegevens gevraagd in een Regel die door een Gebeurtenis van één of andere andere uitbreiding van de Platform launch werd teweeggebracht. Op dat punt, komt de waarde van het Element van Gegevens uit de kijker die het laatst dit Element van Gegevens bijwerkte.
 
-**Overweeg de volgende voorbeeldopstelling**:
+**Overweeg de volgende voorbeeldopstelling:**
 
 * Een webpagina met twee Dynamic Media-zoomviewers: *viewer1* en *viewer2*.
 
@@ -230,7 +229,7 @@ Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor he
 
 De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, worden in geen geval opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de client-side bibliotheek met Experience Platforms Launch bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
+Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
 
 ### Informatie over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -426,7 +425,7 @@ Nadat u Adobe Analytics hebt geconfigureerd, wordt het volgende voor integratie 
 
 Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
-**Adobe Analytics configureren voor integratie**:
+**Adobe Analytics configureren voor integratie:**
 
 1. Begin door Adobe Analytics van de Experience Cloud [homepage](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/) toegang te hebben. Klik in de menubalk op het pictogram Oplossingen (drie bij drie punten) rechtsboven op de pagina en klik vervolgens op **[!UICONTROL Analytics]**.
 
@@ -438,11 +437,11 @@ Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs
 
 1. Selecteer in de rechterbovenhoek van de Adobe Analytics-pagina rechts van het veld **[!UICONTROL Search Reports]** de juiste rapportsuite in de vervolgkeuzelijst. Als er meerdere rapportsuites beschikbaar zijn en u niet zeker weet welke suite u moet gebruiken, neemt u contact op met uw Adobe Analytics-beheerder. Deze beheerder kan u helpen bij het selecteren van de rapportsuite die moet worden gebruikt.
 
-   In de onderstaande afbeelding heeft een gebruiker een rapportsuite met de naam *DynamicMediaViewersExtensionDoc* gemaakt en deze geselecteerd in de vervolgkeuzelijst. De naam van de rapportsuite is alleen ter illustratie. De naam van de rapportsuite die u uiteindelijk selecteert, is aan u.
+   In het onderstaande voorbeeld heeft een gebruiker een rapportsuite gemaakt met de naam *DynamicMediaViewersExtensionDoc* en deze geselecteerd in de vervolgkeuzelijst. De naam van de rapportsuite is slechts een voorbeeld. De naam van de rapportsuite die u uiteindelijk selecteert, is aan u.
 
    Als er geen rapportsuite beschikbaar is, moet u of uw Adobe Analytics-beheerder er een maken voordat u verder kunt gaan met de configuratie.
 
-   Zie [Rapporten en Rapporten ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) en [Een rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console) maken.
+   Zie [Rapporten en Rapporten ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) en [Een rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites) maken.
 
    In Adobe Analytics worden rapportsuites beheerd onder **[!UICONTROL Admin > Report Suites]**.
 
@@ -462,8 +461,8 @@ Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs
 
    Als u een nieuwe variabele Aangepast verkeer wilt inschakelen, klikt u op **[!UICONTROL Admin > Report Suites]** op de werkbalk in Adobe Analytics.
 
-1. Selecteer op de pagina **[!UICONTROL Report Suite Manager]** het juiste rapport en klik vervolgens op de werkbalk op **[!UICONTROL Edit Settings > Traffic > Traffic Variables]**.
-1. Kies daar een ongebruikte variabele, geef deze een beschrijvende naam ( **[!UICONTROL Viewer asset (prop 30)]**) en wijzig keuzelijst met invoervak in &quot;Ingeschakeld&quot; in de kolom Ingeschakeld.
+1. Selecteer op de pagina **[!UICONTROL Report Suite Manager]** het juiste rapport en klik vervolgens op de werkbalk op **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Variables]**.
+1. Kies een ongebruikte variabele, geef deze een beschrijvende naam ( **[!UICONTROL Viewer asset (prop 30)]**) en wijzig de keuzelijst met invoervak in &quot;Ingeschakeld&quot; in de kolom Ingeschakeld.
 
    De volgende schermafbeelding is een voorbeeld van een variabele van het Verkeer van de Douane ( **[!UICONTROL prop30]**) voor het volgen van een activanaam die door de kijker wordt gebruikt:
 
@@ -489,10 +488,10 @@ Nadat u Experience Platform Launch vormt, zal het volgende opstelling voor de in
 
 * Het creëren van een nieuw Bezit om al uw configuraties samen te houden.
 * De installatie en installatie van extensies. De client-side code van alle extensies die in de eigenschap zijn geïnstalleerd, wordt samen gecompileerd in een bibliotheek. Deze bibliotheek wordt later door de webpagina gebruikt.
-* Configuratie van gegevenselementen en regels. Deze configuratie bepaalt welke gegevens van de kijkers van Dynamic Media moeten vangen, wanneer om de volgende logica teweeg te brengen, en waar om de gegevens van de kijker in Adobe Analytics te verzenden.
+* Configuratie van gegevenselementen en regels. Deze configuratie bepaalt welke gegevens van de kijkers van Dynamic Media moeten verkrijgen, wanneer om de volgende logica teweeg te brengen, en waar om de gegevens van de kijker in Adobe Analytics te verzenden.
 * Publiceren van de bibliotheek.
 
-**Om Experience Platform Launch voor de integratie** te vormen:
+**Om Experience Platform Launch voor de integratie te vormen:**
 
 1. Begin door tot Experience Platform Launch van de Experience Cloud [homepage](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/) toegang te hebben. Klik in de menubalk op het pictogram Oplossingen (drie bij drie punten) rechtsboven op de pagina en klik vervolgens op **[!UICONTROL Launch]**.
 
@@ -587,7 +586,7 @@ Om in de configuratie van het Experience Platform Launch (met inbegrip van Bezit
 
 platform launch kan veelvoudige milieu&#39;s van de Ontwikkeling, één het Opvoeren milieu, en één milieu van de Productie potentieel hebben. Door gebrek wijst de Configuratie van de Wolk van de Platform launch in Experience Manager de auteursknoop van de Experience Manager aan het milieu van het Stadium van Platform launch. De Experience Manager publiceert knoop wijst aan het milieu van de Productie van Platform launch. Dit betekent dat met de standaardinstellingen voor Experience Managers de Platform launch-bibliotheek moet worden gepubliceerd naar de testomgeving. Zo kunt u het gebruiken in de auteur van de Experience Manager. U kunt het dan publiceren in het milieu van de Productie zodat het in Experience Manager kan worden gebruikt publiceren.
 
-Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) voor meer informatie over Experience Platforms Launch milieu&#39;s.
+Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/publish/environments/environments.html#environment-types) voor meer informatie over Experience Platforms Launch milieu&#39;s.
 
 Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoerd:
 
@@ -645,7 +644,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Zie [Publiceren](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) voor meer informatie over het publicatieproces in Experience Platform Launch.
+   Zie [Publiceren](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish) voor meer informatie over het publicatieproces in Experience Platform Launch.
 
 ## Adobe Experience Manager configureren voor integratie {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -744,9 +743,9 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
    * **[!UICONTROL Title]** - Voer een beschrijvende accounttitel in.
    * **[!UICONTROL Authorization Server]** - Ga terug naar de pagina met integratiegegevens die u eerder hebt geopend. Klik op het tabblad **[!UICONTROL JWT]**. Kopieer de servernaam, zonder het pad, zoals hieronder gemarkeerd.
 
-(De naam van de voorbeeldserver is alleen ter illustratie)   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
+(De naam van de voorbeeldserver is alleen ter uitleg)   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
 Bijvoorbeeld `https://ims-na1.adobelogin.com/`
-(De naam van de voorbeeldserver is alleen ter illustratie)
+(De naam van de voorbeeldserver is alleen ter uitleg)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _Detailpagina voor integratie - tabblad JWT_
@@ -787,7 +786,7 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
 1. Selecteer op de pagina **[!UICONTROL Experience Platform Launch Configurations]** in het linkerdeelvenster een site van de Experience Manager waarop u de configuratie van het Experience Platform Launch wilt toepassen.
 
-   Alleen ter illustratie wordt de **[!UICONTROL We.Retail]**-site geselecteerd in de onderstaande schermafbeelding.
+   Alleen voor uitleg wordt de site **[!UICONTROL We.Retail]** geselecteerd in de onderstaande schermafbeelding.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
@@ -810,7 +809,7 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
    Controleer in het veld **[!UICONTROL Library URI]** de locatie van de testversie van de Experience Platform Launch-bibliotheek. Experience Manager vult dit veld automatisch in.
 
-   Voor illustratiedoeleinden slechts, gebruikt deze stap de bibliotheken van het Experience Platform Launch die aan Adobe CDN worden opgesteld.
+   Voor verklaringsdoeleinden slechts, gebruikt deze stap de bibliotheken van het Experience Platform Launch die aan Adobe CDN worden opgesteld.
 
    >[!NOTE]
    >
