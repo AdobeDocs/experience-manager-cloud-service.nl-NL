@@ -7,17 +7,16 @@ content-type: reference
 docset: aem65
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
 
 # Selectieve publicatie op mapniveau configureren in Dynamic Media {#selective-publish-configure-folder}
 
-U kunt ervoor kiezen om elementen op mapniveau te publiceren naar of te verwijderen uit Adobe Experience Manager of Dynamic Media, met **[!UICONTROL Manage Publication]** of **[!UICONTROL Quick Publish]**. Deze publicatiemethode is handig omdat deze niet alleen afhankelijk is van de **[!UICONTROL Dynamic Media Configuration]** waarvan de instellingen algemeen gelden voor alle mappen in uw Dynamic Media-instantie.
+U kunt ervoor kiezen om elementen te publiceren naar of te verwijderen uit Adobe Experience Manager of Dynamic Media. U kunt dit op mapniveau doen met **[!UICONTROL Manage Publication]** of **[!UICONTROL Quick Publish]**. Deze publicatiemethode is handig omdat deze niet alleen afhankelijk is van de **[!UICONTROL Dynamic Media Configuration]** waarvan de instellingen algemeen gelden voor alle mappen in uw Dynamic Media-instantie.
 
 Met selectief publiceren kunt u bijvoorbeeld werken aan elementen voor producten die nog niet actief zijn. In dat geval kan een marketingteam toegang krijgen tot afbeeldingen met slimme uitsnijdingen en dynamische vertoningen die zijn gesynchroniseerd met Dynamic Media. Ze kunnen promotiematerialen maken, zonder dat ze die middelen naar Dynamic Media hoeven te publiceren voor wereldwijde levering.
 
@@ -40,7 +39,7 @@ Ongeacht of u erop vertrouwt:
 * De waarde **[!UICONTROL Publish Assets]** die is ingesteld in **[!UICONTROL Dynamic Media Configuration]**
 * Of de waarde **[!UICONTROL Dynamic Media Publish mode]** die is ingesteld in de eigenschappen op mapniveau
 
-U kunt nog **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]**, of **[!UICONTROL Selective Publish]** kiezen. U kunt bijvoorbeeld de waarde **[!UICONTROL Publish Assets]** in uw **[!UICONTROL Dynamic Media Configuration]** instellen op **[!UICONTROL Upon Activation]**. En, kunt u **[!UICONTROL Dynamic Media Publish]** wijzewaarde op het omslagniveau aan **[!UICONTROL Selective Publish]**, omgekeerd, etc. plaatsen.
+U kunt nog **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]**, of **[!UICONTROL Selective Publish]** kiezen. U kunt bijvoorbeeld de waarde **[!UICONTROL Publish Assets]** in uw **[!UICONTROL Dynamic Media Configuration]** instellen op **[!UICONTROL On Activation]**. En, kunt u **[!UICONTROL Dynamic Media Publish]** wijzewaarde op het omslagniveau aan **[!UICONTROL Selective Publish]**, omgekeerd, etc. plaatsen.
 
 Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
 
@@ -49,9 +48,9 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
 * [Elementen publiceren naar Dynamic Media of Experience Manager met Snel publiceren](#quick-publish-aem-dm).
 * [Publiceer elementen selectief of maak de publicatie ongedaan door zoekresultaten](#selective-publish-unpublish-search-results).
 
-**Selectieve publicatie op mapniveau in Dynamic Media configureren**
+**Selectieve publicatie op mapniveau in Dynamic Media configureren:**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer een van de volgende handelingen uit:
    * Bewerk de eigenschappen van een bestaande map - Navigeer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** naar een map waarvan u de eigenschappen wilt bewerken. Selecteer de map en tik op **[!UICONTROL Properties]** op de werkbalk.
    * Bewerk de eigenschappen van een nieuwe map - tik **[!UICONTROL Create > Folder]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** in de rechterbovenhoek van de pagina. **[!UICONTROL Card View]** Voer in het dialoogvenster **[!UICONTROL Create Folder]** een titel (vereist) voor de map in en tik vervolgens op **[!UICONTROL Create]**. Selecteer de map en tik op **[!UICONTROL Properties]** op de werkbalk.
@@ -99,9 +98,9 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 >
 >*Door elementen van en naar mappen te* kopiëren, wordt de publicatiestatus van deze elementen gewist. Wanneer u *echter elementen naar en van mappen verplaatst waarvan de mapeigenschap is ingesteld op **[!UICONTROL Selective Publish]**, blijft de publicatiestatus van deze elementen behouden.*
 
-**Elementen selectief publiceren naar Dynamic Media of Experience Manager als Cloud Service met Publicatie beheren**
+**Elementen selectief publiceren naar Dynamic Media of Experience Manager als Cloud Service met Publicatie beheren:**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik op **[!UICONTROL Manage Publication]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
@@ -132,7 +131,7 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
 ### Publicatie van middelen van Dynamic Media of Experience Manager selectief ongedaan maken met Publicatie beheren {#selective-unpublish-manage-publication}
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
    * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Selecteer de map en tik op **[!UICONTROL Manage Publication]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
    * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
@@ -171,7 +170,7 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 **Elementen publiceren naar Dynamic Media of Experience Manager met Snel publiceren:**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik vervolgens rechts op de pagina op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik vervolgens rechts op de pagina op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik op **[!UICONTROL Quick Publish]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Quick Publish]** op de werkbalk. Gebruik **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
@@ -190,7 +189,7 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
    | Publiceren naar Brand Portal | Hiermee publiceert u de geselecteerde elementen direct naar **[!UICONTROL Brand Portal]**.<br>Deze optie is alleen beschikbaar als de Experience Manager Assets-instantie  **[!UICONTROL Brand Portal]** al is geconfigureerd. |
    | Publiceren naar Dynamic Media | Hiermee publiceert u de geselecteerde elementen direct naar Dynamic Media.<br>Een middel moet tot Dynamic Media reeds worden gesynchroniseerd. Indien nodig, zorg ervoor dat **[!UICONTROL Sync mode]** in de eigenschappen van een omslag reeds aan **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]** wordt geplaatst. |
 
-1. Tik **[!UICONTROL OK,]** en tik vervolgens op **[!UICONTROL Close]**.
+1. Tik **[!UICONTROL OK]** en tik vervolgens op **[!UICONTROL Close]**.
 
 ## Elementen selectief publiceren of verwijderen via zoekresultaten {#selective-publish-unpublish-search-results}
 
@@ -198,9 +197,9 @@ In de zoekresultaten kunt u elementen uit verschillende middelenmappen met versc
 
 Zie ook [Elementen zoeken in Experience Manager](/help/assets/search-assets.md).
 
-**Elementen selectief publiceren of verwijderen via zoekresultaten**
+**Elementen selectief publiceren of verwijderen via zoekresultaten:**
 
-1. Tik in Experience Manager linksboven op de pagina op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager linksboven op de pagina op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Tik in de werkbalk rechtsboven op de pagina op het pictogram Zoeken (vergrootglas).
 1. Voer in het tekstveld **[!UICONTROL Type to search]** een trefwoord in en druk op **[!UICONTROL Enter]**.
 1. Tik in de rechterbovenhoek van de pagina op het pictogram **[!UICONTROL List View]**.
@@ -258,9 +257,9 @@ U kunt deze selectievakjes ook gebruiken met de zoekvoorspelling **[!UICONTROL P
 
 U kunt **[!UICONTROL Timeline]** met **[!UICONTROL Card view]**, **[!UICONTROL Column View]**, of **[!UICONTROL List View]** in Experience Manager gebruiken om de publicatiestatus van een element snel te controleren.
 
-**De publicatiestatus van een element controleren**
+**De publicatiestatus van een element controleren:**
 
-1. Tik in Experience Manager linksboven op de pagina op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
+1. Tik in Experience Manager linksboven op de pagina op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Open in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** (onderstaande schermafbeelding geeft de **[!UICONTROL List View]** weer) een map met elementen die u hebt gepubliceerd of die u niet hebt gepubliceerd.
 1. Selecteer een element, zodat dit met een vinkje wordt weergegeven. Zie onderstaande schermafbeelding.
 1. Selecteer **[!UICONTROL Timeline]** in de linkerbovenhoek van de pagina in het keuzemenu. Het gebied **[!UICONTROL Status]** in het linkerpaneel toont de publicatiestatus van het geselecteerde element.
