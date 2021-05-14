@@ -1,14 +1,13 @@
 ---
 title: Omgevingsdetails samenstellen
 description: Omgevingsdetails samenstellen - Cloud Services
-translation-type: tm+mt
-source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
+exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
+source-git-commit: c3b70f513455dfeaac6bc20c05fc9c35dcddf73e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
-
 
 # Inzicht in de omgeving van de build {#understanding-build-environment}
 
@@ -34,7 +33,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven wordt geconfigureerd op systeemniveau met een settings.xml-bestand dat automatisch de openbare Adobe **Artifact**-opslagplaats omvat. (Zie [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie).
+* Maven wordt op systeemniveau geconfigureerd met een settings.xml-bestand dat automatisch de openbare Adobe **Artifact**-opslagplaats bevat met een profiel met de naam `adobe-public`. (Zie [Adobe Public Maven Repository](https://repo.adobe.com/) voor meer informatie).
 
 >[!NOTE]
 >Hoewel Cloud Manager geen specifieke versie van `jacoco-maven-plugin` definieert, moet de gebruikte versie ten minste `0.7.5.201505241946` zijn.
