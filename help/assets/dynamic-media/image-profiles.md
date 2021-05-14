@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media-afbeeldingsprofielen
-description: '"Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden of slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen."'
+description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden, slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen.
 feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 7%
+source-wordcount: '2631'
+ht-degree: 6%
 
 ---
 
@@ -45,14 +44,14 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
      <li>Waarden zijn Boven, Onder, Links en Rechts.</li>
      <li>Linksboven wordt beschouwd als 0,0 en de pixeluitsnijding wordt daar berekend.</li>
      <li>Beginpunt voor uitsnijden: Links is X en Boven is Y</li>
-     <li>Horizontale berekening: horizontale pixelafmetingen van de oorspronkelijke afbeelding min links en vervolgens min rechts.</li>
+     <li>Horizontale berekening: horizontale pixelgrootte van de oorspronkelijke afbeelding min links en vervolgens min rechts.</li>
      <li>Verticale berekening: verticale pixelhoogte min Boven en vervolgens min Onder.</li>
     </ul> <p>Stel dat u een afbeelding van 4000 x 3000 pixels hebt. U gebruikt waarden: Top=250, Bottom=500, Left=300, Right=700.</p> <p>Van gewas linksboven (300.250) die de vulruimte van (4000-300-700, 3000-250-500, of 3000.2250) gebruikt.</p> </td>
   </tr>
   <tr>
    <td>Slim uitsnijden</td>
    <td>Bulk uitsnijdafbeeldingen op basis van hun visuele brandpunt.</td>
-   <td><p>Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Met Slim uitsnijden wordt automatisch het brandpunt in een afbeelding opgespoord en uitgesneden om het gewenste aandachtspunt vast te leggen, ongeacht de schermgrootte.</p> <p>Als u Slim uitsnijden wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties en vervolgens rechts van Uitsnijden met responsieve afbeelding, schakelt u de functie in (uit).</p> <p>De standaardformaten voor breekpunten (Groot, Normaal, Klein) bestrijken het volledige bereik van formaten die de meeste afbeeldingen op mobiele apparaten en tablets, desktops en banners gebruiken. Desgewenst kunt u de standaardnamen van Groot, Normaal, en Klein uitgeven.</p> <p>Als u meer onderbrekingspunten wilt toevoegen, klikt u op <strong>Uitsnijden toevoegen</strong>; Als u een uitsnijding wilt verwijderen, klikt u op het pictogram met de prullenbak.</p> </td>
+   <td><p>Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Slim uitsnijden detecteert automatisch het brandpunt in een afbeelding en snijdt dit bij tot het gewenste aandachtspunt, ongeacht de schermgrootte.</p> <p>Als u Slim uitsnijden wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties en vervolgens rechts van Uitsnijden met responsieve afbeelding, schakelt u de functie in (uit).</p> <p>De standaardformaten voor breekpunten (Groot, Normaal, Klein) bestrijken het volledige bereik van formaten die de meeste afbeeldingen op mobiele apparaten en tablets, desktops en banners gebruiken. Desgewenst kunt u de standaardnamen van Groot, Normaal, en Klein uitgeven.</p> <p>Als u meer onderbrekingspunten wilt toevoegen, klikt u op <strong>Uitsnijden toevoegen</strong>; Als u een uitsnijding wilt verwijderen, klikt u op het pictogram met de prullenbak.</p> </td>
   </tr>
   <tr>
    <td>Kleur en afbeeldingsstaal</td>
@@ -105,9 +104,9 @@ Zie [Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen](/help
 
 Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
-**Dynamic Media-afbeeldingsprofielen maken**
+**Dynamic Media-afbeeldingsprofielen maken:**
 
-1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tik op het Adobe Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Tik op **[!UICONTROL Create]** om een afbeeldingsprofiel toe te voegen.
 1. Voer een profielnaam en waarden in voor onscherp masker, uitsnijden of staal of voor beide.
 
@@ -121,7 +120,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 ## Dynamic Media-afbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
 
-1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]** om deze te bewerken. Selecteer **[!UICONTROL Delete Image Processing Profile]** om het te verwijderen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -152,7 +151,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -161,7 +160,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen met eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
 1. Tik op het tabblad **[!UICONTROL Image Profiles]**. Selecteer het profiel in de vervolgkeuzelijst **[!UICONTROL Profile Name]** en tik vervolgens op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
@@ -173,7 +172,7 @@ Naast het toepassen van een profiel op een omslag, kunt u ook globaal toepassen.
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Een Dynamic Media-afbeeldingsprofiel algemeen** toepassen:
+**Een Dynamic Media-afbeeldingsprofiel wereldwijd toepassen:**
 
 1. Voer een van de volgende handelingen uit:
 
@@ -197,10 +196,9 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken**
+**Het slimme uitsnijd of slimme staal van één afbeelding bewerken:**
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
-
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme staalafbeeldingen is toegepast.
 1. Tik op de map om de inhoud van de map te openen.
 1. Tik op de afbeelding waarvan u het slimme uitsnijdstaal of het slimme staal wilt aanpassen.
 1. Tik op **[!UICONTROL Smart Crop]** op de werkbalk.
@@ -223,9 +221,9 @@ Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorg
 
 U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
 
-**De slimme uitsnijding of het slimme staal van meerdere afbeeldingen bewerken**
+**Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken:**
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme staalafbeeldingen is toegepast.
 1. Tik in de map op het pictogram **[!UICONTROL More Actions]** (...) en tik vervolgens op **[!UICONTROL Smart Crop]**.
 
 1. Voer op de pagina **[!UICONTROL Edit Smart Crops]** een van de volgende handelingen uit:
@@ -268,13 +266,13 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 ## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
-Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu verwijderen of als u in de omslag, uit **[!UICONTROL Properties]** bent.
 
 ### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u uit een of meerdere mappen wilt verwijderen.
 1. Tik op **[!UICONTROL Remove Processing Profile from Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om het profiel te verwijderen en tik op **[!UICONTROL Remove]**.
 
@@ -282,7 +280,7 @@ U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu 
 
 ### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
-1. Tik op het AEM en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
+1. Tik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Image Profiles]**.
 1. Selecteer **[!UICONTROL None]** in de vervolgkeuzelijst **[!UICONTROL Profile Name]** en tik **[!UICONTROL Save & Close]**.
