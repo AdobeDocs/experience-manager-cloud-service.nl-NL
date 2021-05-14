@@ -4,10 +4,9 @@ description: Leer hoe u met centrifuges werkt in Dynamic Media.
 feature: Sets draaien
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1766'
 ht-degree: 11%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 11%
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
 
-Een centrifugeerset simuleert een kijkervaring van 360 graden. Dynamic Media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
+Een centrifugeerset simuleert een kijkervaring van 360°. Dynamic Media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
 
 De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UICONTROL SPINSET]**. Als de Spin-set is gepubliceerd, staat bovendien de publicatiedatum, aangegeven door het pictogram **[!UICONTROL World]**, op de banner samen met de laatste wijzigingsdatum, die wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
@@ -44,7 +43,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
 1. [Spin-sets](#creating-spin-sets) maken.
 
-   Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Create > Spin Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
+   Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Create]** > **[!UICONTROL Spin Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -52,7 +51,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Beheerders kunnen viewervoorinstellingen voor spinsets maken of wijzigen. Als u uw spinset wilt weergeven met een viewervoorinstelling, selecteert u de spinset en selecteert u **Viewers** in het vervolgkeuzemenu voor het linkerspoor.
 
-   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
+   Als u viewervoorinstellingen wilt maken of bewerken, raadpleegt u **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 
    Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ Hieronder vindt u een aantal aanbevolen procedures voor het uitvoeren van gecent
 * Gebruik een indeling zonder verlies. TIFF en PNG worden aanbevolen.
 * Masker alle afbeeldingen zodat het item op een zuiver witte of andere achtergrond met veel contrast wordt weergegeven. Voeg desgewenst schaduwen toe.
 * Zorg ervoor dat de productdetails goed verlicht en in nadruk zijn.
-* Neem spin beelden voor modekleding met een mannequin of een model. Vaak wordt de mannequin gemaskeerd (met behulp van een glazen mannequin) of wordt in de afbeelding een gestileerde mannequin/dressform weergegeven. U kunt een op-model spin-reeks tot stand brengen door het aantal hoeken te bepalen. Markeer elke hoek met band op de vloer om het model te begeleiden en in de richting van elke opname te kijken.
+* Neem spin beelden voor modekleding met een mannequin of een model. Vaak wordt de mannequin gemaskeerd (met behulp van een glazen mannequin) of wordt in de afbeelding een gestileerde mannequin/dressform weergegeven. U kunt een op-model spin-reeks tot stand brengen door het aantal hoeken te bepalen. Markeer elke hoek met band op de vloer zodat u het model kunt begeleiden en in de richting van elke opname kunt kijken.
 
 ## Spin-sets maken {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 >
 >De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo instelt dat de centrifuge een vloeiende weergave van 360 graden geeft.
 
-**Draaisets maken**
+**Om centrifuges te maken:**
 
 1. Ga in Assets naar de plaats waar u een spinset wilt maken, klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Spin Set]**. U kunt de set ook maken vanuit een map die uw assets bevat. De Editor van spinset wordt weergegeven.
 
@@ -157,7 +156,7 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 >
 >U kunt sets ook weergeven in de gebruikersinterface zoals wordt beschreven in [Spin Sets bewerken](#editing-spin-sets).
 
-**Draaisets weergeven**
+**Om de reeksen van Draaien te bekijken:**
 
 1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Tik op de naam van de set om de volledige set weer te geven.
 
@@ -183,7 +182,7 @@ U kunt verschillende bewerkingstaken uitvoeren op centrifuges, zoals:
 * Voorinstellingen voor viewers toepassen.
 * Verwijder de centrifugeset.
 
-**Een centerset bewerken**
+**Een centrifugeset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
