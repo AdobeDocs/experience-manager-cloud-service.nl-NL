@@ -4,17 +4,16 @@ description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt be
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
 # Elementen voorvertonen{#previewing-assets}
 
-Met Voorvertonen kunt u zien hoe een geüpload digitaal element eruit ziet wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor de voorvertoning.
+Met Voorvertonen kunt u zien hoe een geüpload digitaal element wordt weergegeven wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor de voorvertoning.
 
 Een viewer is een verzameling verschillende instellingen of voorinstellingen. De weergavegrootte, het zoomgedrag, kleurenschema&#39;s, randen en lettertypen van de viewer, die bijvoorbeeld bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven.
 
@@ -25,11 +24,11 @@ Naast het gebruik van de specifieke functie Voorvertoning voor video, centrifuge
 
 >[!NOTE]
 >
->Wanneer u op een webpagina (Sites) in Adobe Experience Manager werkt, kunt u geen voorvertoning van elementen weergeven in de modus **Bewerken**. Ga in plaats daarvan naar de modus **Voorvertoning** door te klikken op **Voorvertoning** in de rechterbovenhoek van de pagina.
+>Wanneer u een webpagina (Sites) in Adobe Experience Manager hebt, kunt u geen voorvertoning van elementen weergeven in de modus **[!UICONTROL Edit]**. Ga in plaats daarvan naar de modus Voorbeeld door te klikken op **[!UICONTROL Preview]** in de rechterbovenhoek van de pagina.
 
 Zie [Voorinstellingen van viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md) voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.
 
-**Elementen voorvertonen**
+**Een voorvertoning van elementen weergeven:**
 
 1. Tik op **[!UICONTROL Experience Manager]** op de pagina **[!UICONTROL Navigation]** en **[!UICONTROL Files]** op om elementen te openen.**[!UICONTROL Assets]**
 1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL List View]**.
@@ -58,7 +57,7 @@ Zie [Voorinstellingen van viewers beheren](/help/assets/dynamic-media/managing-v
       <ul>
       <li><p><strong>Draai uw 3D-camera</strong>  - Draai uw weergave rond de 3D-scène en -objecten.</p> Muis: Klik met de linkermuisknop en sleep.</p> Aanraakscherm: Druk op + sleep.</p></li>
       <li><p><strong>Pannen met uw camera</strong> : pannen met uw weergave naar links, rechts, omhoog en omlaag.</p> Muis: Klik met de rechtermuisknop en sleep.</p> Aanraakscherm: Druk met twee vingers + sleep.</p></li>
-      <li><p><strong>Zoom de camera</strong>  in en uit. Zoom de camera in en uit de gebieden in de 3D-scène.</p> Muis: Schuifwiel.</p> Aanraakscherm: Vingerknijpbeweging.</p></li>
+      <li><p><strong>Zoom de camera</strong>  in en uit. Zoom de camera in als u in- en uitzoomen op gebieden in de 3D-scène.</p> Muis: Schuifwiel.</p> Aanraakscherm: Vingerknijpbeweging.</p></li>
       <li><p><strong>Voer de camera</strong>  opnieuw in. Draai de weergave rond de 3D-scène en de objecten.</p> Muis: Dubbelklik.</p> Aanraakscherm: Dubbeltik.</li></ul></td>
       </tr>
       <tr>
