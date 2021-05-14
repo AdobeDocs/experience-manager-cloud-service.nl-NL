@@ -4,17 +4,16 @@ description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Me
 feature: Voorinstellingen afbeelding, viewers, uitvoeringen
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 6%
 
 ---
 
 # Voorinstellingen voor Dynamic Media-afbeelding toepassen {#applying-image-presets}
 
-Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen van verschillende grootten, indelingen of andere afbeeldingseigenschappen leveren. U kunt een voorinstelling kiezen wanneer u afbeeldingen exporteert. Hiermee worden de afbeeldingen ook opnieuw opgemaakt volgens de specificaties die de beheerder heeft opgegeven.
+Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen van verschillende grootten, indelingen of andere afbeeldingseigenschappen leveren. U kunt een voorinstelling kiezen wanneer u afbeeldingen exporteert om deze opnieuw op te maken volgens de specificaties die de beheerder heeft aangegeven.
 
 Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aangeduid met de knop **[!UICONTROL RESS]** nadat u deze hebt geselecteerd).
 
@@ -26,7 +25,7 @@ Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aan
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
-**Voorinstellingen Dynamic Media-afbeelding toepassen**
+**Voorinstellingen Dynamic Media-afbeelding toepassen:**
 
 1. Open het element en tik in de linkertrack op de vervolgkeuzelijst en tik vervolgens op **[!UICONTROL Renditions]**.
 
