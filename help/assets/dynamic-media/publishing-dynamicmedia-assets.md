@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 2%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 2%
 
 U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media configureren](config-dm.md). U kunt ook selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief van elkaar, met **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+U kunt ook direct elementen publiceren die u uploadt, zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media configureren](config-dm.md). U kunt ook selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief van elkaar, met **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
