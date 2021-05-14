@@ -1,13 +1,12 @@
 ---
-title: De CDN-cache ongeldig maken via Dynamic Media
+title: De CDN-cache (Content Delivery Network) ongeldig maken via Dynamic Media
 description: '"Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt."'
 feature: Beheer van bedrijfsmiddelen
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -22,11 +21,11 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 
 Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**De CDN-cache ongeldig maken via Dynamic Media**
+**De CDN-cache ongeldig maken via Dynamic Media:**
 
 *Deel 1 van 2: Een CDN-validatiesjabloon maken*
 
-1. Tik in AEM als Cloud Service op **[!UICONTROL Tools > Assets > CDN Invalidation Template]**.
+1. Tik in Adobe Experience Manager als Cloud Service op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation Template]**.
 
    ![Functie voor CDN-validatie](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-
    | Scenario | Optie |
    | --- | --- |
    | Ik heb in het verleden al een CDN-validatiesjabloon gemaakt met Dynamic Media Classic. | Het tekstveld **[!UICONTROL Create Template]** wordt vooraf gevuld met uw sjabloongegevens. In dat geval kunt u de sjabloon bewerken of doorgaan met de volgende stap. |
-   | Ik moet een sjabloon maken. Wat ga ik binnen? | Voer in het tekstveld **[!UICONTROL Create Template]** een afbeeldings-URL (inclusief voorinstellingen of modifiers voor afbeeldingen) in die verwijst naar `<ID>` in plaats van een specifieke afbeeldings-id zoals in het volgende voorbeeld:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Als de sjabloon alleen `<ID>` bevat, vult Dynamic Media `https://<publishserver_name>/is/image/<company_name>/<ID>` in, waarbij `<publishserver_name>` de naam is van uw publicatieserver die is gedefinieerd in Algemene instellingen in Dynamic Media Classic. `<company_name>` is de naam van de hoofdmap van uw bedrijf die aan deze AEM-instantie is gekoppeld en `<ID>` zijn de geselecteerde elementen via de elementenkiezer die ongeldig moeten worden gemaakt.<br>Eventuele voorinstellingen/wijzigingstoetsen  `<ID>` worden ongewijzigd gekopieerd in de URL-definitie.<br>Alleen afbeeldingen, dat wil zeggen  `/is/image`- kunnen op basis van de sjabloon automatisch worden gevormd.<br>Als u bijvoorbeeld elementen zoals video&#39;s of PDF&#39;s toevoegt met de elementkiezer, worden er automatisch geen URL&#39;s gegenereerd.  `/is/content/` In plaats daarvan moet u deze elementen opgeven in de CDN-validatiesjabloon of u kunt de URL handmatig aan deze elementen toevoegen in *Deel 2 van 2: Opties voor CDN-validatie instellen*.<br>**Voorbeelden:**<br> In dit eerste voorbeeld bevat de validatiesjabloon  `<ID>` samen met de URL van het element  `/is/content`. Bijvoorbeeld, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media vormt de URL op basis van dit pad, waarbij `<ID>` de elementen is die zijn geselecteerd via de elementenkiezer die u ongeldig wilt maken.<br>In dit tweede voorbeeld bevat de validatiesjabloon de volledige URL van het element dat in uw westeigenschappen wordt gebruikt met  `/is/content` (niet afhankelijk van de elementkiezer). Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` waar rugzak de activa ID is.<br>Elementformaten die in Dynamic Media worden ondersteund, komen in aanmerking voor ongeldigmaking. Elementbestandstypen die *niet* worden ondersteund voor CDN-validatie zijn onder andere PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word en Rich Text Format.<br>Wanneer u het malplaatje creeert, maar zeker u zorgvuldig aandacht aan syntaxis en typos besteedt; Dynamic Media voert geen sjabloonvalidatie uit.<br>Geef URL&#39;s op voor slimme afbeeldingsgewassen in deze CDN-validatiesjabloon of in het  **[!UICONTROL Add URL]** tekstveld in  *deel 2: Opties voor CDN-validatie instellen.*<br>**Belangrijk:**Elk item in een CDN-validatiesjabloon moet op een aparte regel staan.<br>*Het volgende sjabloonvoorbeeld is alleen ter illustratie.* |
+   | Ik moet een sjabloon maken. Wat ga ik binnen? | Voer in het tekstveld **[!UICONTROL Create Template]** een afbeeldings-URL (inclusief voorinstellingen of modifiers voor afbeeldingen) in die verwijst naar `<ID>` in plaats van een specifieke afbeeldings-id zoals in het volgende voorbeeld:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Als de sjabloon alleen `<ID>` bevat, vult Dynamic Media `https://<publishserver_name>/is/image/<company_name>/<ID>` in, waarbij `<publishserver_name>` de naam is van uw publicatieserver die is gedefinieerd in Algemene instellingen in Dynamic Media Classic. De `<company_name>` is de naam van de hoofdmap van uw bedrijf die aan deze Experience Manager-instantie is gekoppeld en `<ID>` zijn de geselecteerde elementen via de elementenkiezer die ongeldig moeten worden gemaakt.<br>Alle voorinstellingen/modifiers die volgen,  `<ID>` worden ongewijzigd gekopieerd in de URL-definitie.<br>Alleen afbeeldingen, dat wil zeggen  `/is/image`- kunnen op basis van de sjabloon automatisch worden gevormd.<br>Als u bijvoorbeeld elementen zoals video&#39;s of PDF&#39;s toevoegt met de elementkiezer, worden er automatisch geen URL&#39;s gegenereerd.  `/is/content/` In plaats daarvan moet u deze elementen opgeven in de CDN-validatiesjabloon of u kunt de URL handmatig aan deze elementen toevoegen in *Deel 2 van 2: Opties voor CDN-validatie instellen*.<br>**Voorbeelden:**<br> In dit eerste voorbeeld bevat de validatiesjabloon  `<ID>` samen met de URL van het element  `/is/content`. Bijvoorbeeld, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media vormt de URL op basis van dit pad, waarbij `<ID>` de elementen is die zijn geselecteerd via de elementenkiezer die u ongeldig wilt maken.<br>In dit tweede voorbeeld bevat de validatiesjabloon de volledige URL van het element dat in uw westeigenschappen wordt gebruikt met  `/is/content` (niet afhankelijk van de elementkiezer). Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` waar rugzak de activa ID is.<br>Elementformaten die in Dynamic Media worden ondersteund, komen in aanmerking voor ongeldigmaking. Elementbestandstypen die *niet* worden ondersteund voor CDN-validatie zijn onder andere PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word en Rich Text Format.<br>Wanneer u het malplaatje creeert, maar zeker u zorgvuldig aandacht aan syntaxis en typos besteedt; Dynamic Media voert geen sjabloonvalidatie uit.<br>Geef URL&#39;s op voor slimme afbeeldingsgewassen in deze CDN-validatiesjabloon of in het  **[!UICONTROL Add URL]** tekstveld in  *deel 2: Opties voor CDN-validatie instellen.*<br>**Belangrijk:**Elk item in een CDN-validatiesjabloon moet op een aparte regel staan.<br>*Het volgende sjabloonvoorbeeld is alleen ter toelichting.* |
 
    ![CDN-validatiesjabloon - maken](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-
    *Deel 2 van 2: Opties voor CDN-validatie instellen*
    <br>
 
-1. Tik in AEM als Cloud Service op **[!UICONTROL Tools > Assets > CDN Invalidation]**.
+1. Tik in Experience Manager als Cloud Service op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
 
    ![Functie voor CDN-validatie](/help/assets/assets-dm/cdn-invalidation-path.png)
 
