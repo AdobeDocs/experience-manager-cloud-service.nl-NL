@@ -4,10 +4,9 @@ description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '215'
 ht-degree: 23%
 
 ---
@@ -20,7 +19,8 @@ Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren
 
 Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
-Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
+U hoeft geen viewervoorinstellingen te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
+
 Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media](troubleshoot-dm.md#viewers) oplossen.
 
 ## Een Dynamic Media-viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
@@ -32,7 +32,7 @@ Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media
    * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
    * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
 
-1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
+1. Selecteer een viewer in het linkerdeelvenster, zodat u deze kunt toepassen op het element, zoals in het rechterdeelvenster. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
 ## URL&#39;s met voorinstellingen van viewer {#obtaining-viewer-preset-urls} ophalen
 
