@@ -4,10 +4,9 @@ description: Leer hoe u met interactieve afbeeldingen werkt in Dynamic Media.
 feature: Interactieve afbeeldingen
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4212'
+source-wordcount: '4228'
 ht-degree: 1%
 
 ---
@@ -24,11 +23,11 @@ Zie [Interactieve afbeeldingen in actie](https://marketing.adobe.com/resources/h
 
 ## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
 
-Bekijk een 10 minuten en 33 seconden analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
+Bekijk een analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minuten en 33 seconden). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
 
 ## Snel starten: Interactieve afbeeldingen {#quick-start-interactive-images}
 
-De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve afbeeldingen in AEM Assets.
+De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve afbeeldingen in Adobe Experience Manager Assets.
 
 Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op een [webpaginavoorbeeld waaraan nog geen interactieve afbeeldingen zijn toegevoegd](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
@@ -39,7 +38,7 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
 Stappen voor interactieve afbeeldingen:
 
 1. **(Optioneel) Hotspotvariabelen** identificeren. Als u Adobe Experience Manager Assets en Dynamic Media standalone gebruikt, identificeert u dynamische variabelen die worden gebruikt in uw bestaande Quick view-implementatie. Zo weet u zeker dat u hotspotgegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables).
-Nochtans, als u AEM Sites, of AEM eCommerce, of allebei gebruikt, dan is deze stap niet noodzakelijk.
+Nochtans, als u de Plaatsen van de Experience Manager, of Experience Manager eCommerce, of allebei gebruikt, dan is deze stap niet noodzakelijk.
 
 1. **(Optioneel) Een voorinstelling** voor een interactieve afbeeldingsviewer maken. Pas de grafische afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. Het is niet nodig een eigen voorinstelling voor de interactieve afbeeldingsviewer te maken als u de voorinstelling `Shoppable_Banner` in plaats daarvan wilt gebruiken die buiten de box is ingesteld met de naam Interactive Image Viewer.
 Zie [(Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -63,11 +62,11 @@ Als u WCM (Web Content Manager) van derden gebruikt, integreert u de nieuwe inte
 >Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
 >
 >* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle meningen te teweegbrengen.
->* Uw implementatie van Experience Manager maakt *niet* gebruik van een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing in de Experience Manager te krijgen. Dergelijke oplossingen zijn onder andere IBM WebSphere® Commerce, Elastic Path, hybris of Intershop.
+>* Uw implementatie van Experience Manager maakt *niet* gebruik van een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing in de Experience Manager te krijgen. Dergelijke oplossingen zijn onder andere IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop.
 
 >
 >
-Als uw implementatie van AEM eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande Quick view implementatie worden gebruikt zodat u hotspot gegevens kunt ingaan om het interactieve beeld tot stand te brengen.
 
@@ -86,7 +85,7 @@ Bij de meeste implementaties in de Snelle weergave wordt het volgende paradigma 
 * De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
-Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie Snelle weergave is geïmplementeerd. Vervolgens activeert u de Snelle weergave en legt u de URL van Ajax vast die door de webpagina is verzonden om de gegevens of inhoud van de Snelle weergave te laden.
+Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie Snelle weergave is geïmplementeerd. Vervolgens activeert u de Snelle weergave en haalt u de URL van Ajax op die door de webpagina is verzonden om de gegevens of inhoud van de Snelle weergave te laden.
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
@@ -168,15 +167,15 @@ Op basis van deze informatie heeft de volledige URL van de Snelle weergave het v
 
 Op basis van een dergelijke analyse gebruikt u `categoryId` en `SKU` voor hotspots.
 
-U kunt nu een afbeeldingsbanner uploaden en er hotspots aan toevoegen met de functie voor onoverzichtelijke interactieve afbeeldingen in AEM Assets.
+U kunt nu een afbeeldingsbanner uploaden en er hotspots aan toevoegen met de functie voor onoverzichtelijke interactieve afbeeldingen in Experience Manager Assets.
 
 ## (Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken {#optional-creating-an-interactive-image-viewer-preset}
 
-U kunt ervoor kiezen om de standaardvoorinstelling `Shoppable_Banner` voor de Interactieve afbeeldingsviewer buiten de box te gebruiken die bij AEM Assets wordt geleverd. U kunt ook uw eigen aangepaste viewer-voorinstelling maken voor gebruik met interactieve afbeeldingen.
+U kunt ervoor kiezen om de standaardvoorinstelling `Shoppable_Banner` voor de Interactieve afbeeldingsviewer buiten de box te gebruiken die wordt geleverd bij Experience Manager Assets. U kunt ook uw eigen aangepaste viewer-voorinstelling maken voor gebruik met interactieve afbeeldingen.
 
 Wanneer u een aangepaste voorinstelling voor een interactieve afbeeldingsviewer maakt, kunt u de weergave van hotspots in de afbeeldingsbanner bepalen. Als onderdeel van het maken van de viewervoorinstelling kunt u een hotspot-afbeelding uit een galerie met vooraf gedefinieerde afbeeldingen gebruiken.
 
-Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactiveerd (ingeschakeld) op de pagina met de lijst met voorinstellingen voor viewers in AEM Assets. Deze functionaliteit houdt in dat het zichtbaar is in de Interactieve component van Media en wanneer u activa bekijkt. Als u echter *een interactieve banner met deze viewervoorinstelling wilt leveren,* ook de viewervoorinstelling publiceren *.* Deze regel geldt voor aangepaste of uit-van-box viewer-voorinstellingen.
+Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactiveerd (ingeschakeld) op de pagina met de lijst met voorinstellingen voor viewer in Experience Manager Assets. Deze functionaliteit houdt in dat het zichtbaar is in de Interactieve component van Media en wanneer u activa bekijkt. Als u echter *een interactieve banner met deze viewervoorinstelling wilt leveren,* ook de viewervoorinstelling publiceren *.* Deze regel geldt voor aangepaste of uit-van-box viewer-voorinstellingen.
 
 **Een voorinstelling voor een interactieve afbeeldingsviewer maken**
 
@@ -265,7 +264,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Tik op **[!UICONTROL Quick view]**.
 
-      * Als u een AEM Sites- of eCommerce-klant bent, tikt of klikt u op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Tik op het product dat u wilt gebruiken en tik vervolgens op **Select** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Tik of klik op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen als u een Experience Manager- of eCommerce-klant bent. Tik op het product dat u wilt gebruiken en tik vervolgens op **Select** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
       * Als u *not* een klant van de Experience Manager of van de eCommerce bent
 
          * Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
@@ -282,7 +281,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Tik op **[!UICONTROL Experience Fragment]**.
 
-      * Als u een AEM Sites-klant bent, tikt of klikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik op het ervaringsfragment dat u wilt gebruiken. Tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een klant van de Plaatsen van de Experience Manager bent, tik of klik het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Tik op het ervaringsfragment dat u wilt gebruiken. Tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
 Zie [Fragmenten ervaren](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals u het wilt weergeven op de banner.
@@ -306,11 +305,11 @@ Zie [Fragmenten ervaren](/help/sites-cloud/authoring/fundamentals/experience-fra
 
 ### (Optioneel) Interactieve afbeeldingen voorvertonen {#optional-previewing-interactive-images}
 
-Met Voorvertoning kunt u een voorstelling bekijken van hoe uw interactieve afbeelding eruit ziet voor klanten. Met Voorvertoning kunt u ook de hotspots van de afbeelding testen om te controleren of deze zich naar behoren gedragen.
+Met Voorvertoning kunt u zien hoe uw interactieve afbeelding er uitziet voor klanten. Met Voorvertoning kunt u ook de hotspots van de afbeelding testen om te controleren of deze zich naar behoren gedragen.
 
 Als u tevreden bent met de interactieve afbeelding, kunt u deze publiceren.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
+Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Interactieve afbeeldingen voorvertonen**
@@ -328,9 +327,9 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd en de interactieve afbeelding hebt gepubliceerd, kunt u deze toevoegen aan uw websitepagina.
 
-Als u een AEM Sites-klant bent, kunt u de interactieve afbeelding toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Als u een klant van de Plaatsen van de Experience Manager bent, kunt u het interactieve beeld toevoegen door de Interactieve component van Media op uw pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-Als u een zelfstandige AEM Assets-klant bent, kunt u de interactieve afbeelding handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
+Als u een zelfstandige klant van de Middelen van de Experience Manager bent, kunt u het interactieve beeld aan uw website manueel toevoegen zoals die in deze sectie wordt beschreven.
 
 1. Kopieer de insluitcode van de gepubliceerde interactieve afbeelding.
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
@@ -346,7 +345,7 @@ Als u de [demo-website als voorbeeld](https://marketing.adobe.com/resources/help
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit AEM Assets. U kunt zien dat het resultaat [de schokbare interactieve afbeelding op de pagina weergeeft met drie cirkelvormige hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit Experience Manager Assets. U kunt zien dat het resultaat [de schokbare interactieve afbeelding op de pagina weergeeft met drie cirkelvormige hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 Zoals dit punt, zijn de hotspots op het shoppable interactieve beeld van de demo website slechts voor vertoningsdoeleinden. Ze zijn nog niet geïntegreerd met de bestaande Snelle weergaven.
@@ -362,7 +361,7 @@ U kunt de interactieve afbeelding nu integreren met een bestaande Snelle weergav
 ## Een interactieve afbeelding integreren met een bestaande Snelle weergave {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-Deze taak is alleen van toepassing als u een zelfstandige AEM Assets-klant bent.
+Deze taak is slechts van toepassing als u een stand-alone klant van de Activa van de Experience Manager bent.
 
 De laatste stap in dit proces is het integreren van de interactieve afbeelding met een bestaande Quick view-implementatie op uw website. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quick view-implementatie is uniek en er is een specifieke aanpak nodig. Daarom is het nuttig om de hulp van een front-end IT-persoon in te roepen.
 
@@ -378,7 +377,7 @@ De bestaande implementatie van de Snelle weergave vertegenwoordigt normaal gespr
 
 Deze vraag vertegenwoordigt niet noodzakelijk onafhankelijke openbare API vraag die door de Web-pagina logica van een willekeurige stap wordt geroepen. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 
-Wanneer de verschuifbare interactieve afbeelding stap 1 en gedeeltelijk stap 2 vervangt, tikt een gebruiker op een hotspot in de verschuifbare afbeelding. Deze gebruikersinteractie wordt door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle hotspotgegevens bevat die eerder aan AEM Assets zijn toegevoegd.
+Wanneer de verschuifbare interactieve afbeelding stap 1 en gedeeltelijk stap 2 vervangt, tikt een gebruiker op een hotspot in de verschuifbare afbeelding. Deze gebruikersinteractie wordt door de viewer afgehandeld. De viewer retourneert een gebeurtenis naar de webpagina die alle hotspotgegevens bevat die eerder aan Experience Manager Assets zijn toegevoegd.
 
 In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 
@@ -447,7 +446,7 @@ Aan de hand van de vorige URL-voorbeelden van de Snelle weergave kunt u in de vo
  </tbody>
 </table>
 
-De laatste stap om de URL van de Snelle weergave te activeren en het deelvenster Snelle weergave te activeren, vereist de hulp van een front-end IT-persoon van uw bedrijf. Ze hebben de kennis om te weten hoe u de implementatie van de Snelle weergave nauwkeurig vanuit de juiste stap kunt activeren en beschikken over een gebruiksklare URL voor de Snelle weergave.
+De laatste stap om de URL van de Snelle weergave te activeren en het deelvenster Snelle weergave te activeren, vereist de hulp van een front-end IT-persoon van uw werk. Ze hebben de kennis om te weten hoe u de implementatie van de Snelle weergave nauwkeurig vanuit de juiste stap kunt activeren en beschikken over een gebruiksklare URL voor de Snelle weergave.
 
 U kunt zien hoe deze stappen worden toegepast op de demo-website om een onduidelijk interactieve afbeelding volledig te integreren met de code van de Snelle weergave. Eerder werd de structuur van de URL van de Snelle weergave als volgt geïdentificeerd:
 
@@ -495,4 +494,4 @@ De [definitieve demowebsite met de volledig geïntegreerde interactieve afbeeldi
 
 ## Snelle weergaven gebruiken om aangepaste pop-ups {#using-quickviews-to-create-custom-pop-ups} te maken
 
-Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](/help/assets/dynamic-media/custom-pop-ups.md).
+Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](/help/assets/dynamic-media/custom-pop-ups.md).
