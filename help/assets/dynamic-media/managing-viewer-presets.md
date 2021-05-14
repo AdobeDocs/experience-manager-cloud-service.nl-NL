@@ -4,10 +4,9 @@ description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media
 feature: Viewer-voorinstellingen,Viewers
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4134'
+source-wordcount: '4127'
 ht-degree: 12%
 
 ---
@@ -25,7 +24,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Zie ook de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Zie ook de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [Viewer-voorinstellingen toepassen](#applying-a-viewer-preset-to-an-asset).
 
@@ -67,9 +66,9 @@ Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden ge
 * Desktops
 * Apple iPhone
 * Apple iPad
-* Android Smartphone
-* Android-tablet
-* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
+* Android™-smartphone
+* Android™-tablet
+* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
 ### Rijke mediatypen voor viewervoorinstellingen {#rich-media-types-for-viewer-presets}
 
@@ -79,7 +78,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
  <tbody>
   <tr>
    <td><strong>Carousel-set</strong><br /> </td>
-   <td><p>Hotspots of afbeeldingen met hyperlinks of beide worden toegevoegd aan een reeks van twee of meer afbeeldingen. Een klant kan de afbeeldingen naar links of rechts pannen en vervolgens op een hotspot op een afbeelding klikken voor meer informatie of voor directe aankoop van de categorie, de startpagina of de bestemmingspagina's van een website.</p> </td>
+   <td><p>Hotspots of afbeeldingen met hyperlinks of beide worden toegevoegd aan een reeks van twee of meer afbeeldingen. Een klant kan de afbeeldingen naar links of rechts pannen en vervolgens op een hotspot op een afbeelding klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensionaal</strong><br /> </td>
@@ -99,11 +98,11 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
   </tr>
   <tr>
    <td><strong>Interactieve afbeelding</strong></td>
-   <td>Hotspots worden toegevoegd aan gedeelten van een afbeelding waarop een klant kan klikken voor meer informatie of voor het rechtstreeks aanschaffen van de categorie, startpagina of landingspagina's van een website.</td>
+   <td>Hotspots worden toegevoegd aan gedeelten van een afbeelding waarop een klant kan klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
   </tr>
   <tr>
    <td><strong>Interactieve video</strong></td>
-   <td>Miniaturen worden toegevoegd aan tijdlijnsegmenten in een video waarop een klant vervolgens kan klikken voor meer informatie of voor het rechtstreeks kopen vanaf de categorie, de startpagina of de bestemmingspagina van een website.</td>
+   <td>Miniaturen worden toegevoegd aan tijdlijnsegmenten in een video waarop een klant vervolgens kan klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
   </tr>
   <tr>
    <td><strong>Gemengde media</strong></td>
@@ -156,7 +155,7 @@ Zie ook [Live demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/liv
 
 Voor informatie over ondersteunde webbrowsers en besturingssysteemversies voor Viewers kunt u de Opmerkingen bij de release Viewers bekijken.
 
-Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -313,7 +312,7 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referenti
 
 ### Ondersteunde matrix voor bewegingen voor mobiele viewers {#supported-mobile-viewers-gestures-matrix}
 
-In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die worden ondersteund op iOS-, Android 2.x- en Android 3.x-apparaten.
+In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die worden ondersteund op iOS-, Android™ 2.x- en Android™ 3.x-apparaten.
 
 <table>
  <tbody>
@@ -344,14 +343,14 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
   <tr>
    <td><p><strong>Kneep open</strong></p> </td>
    <td><p>Niet van toepassing</p> </td>
-   <td><p>Inzoomen (alleen iOS en Android, 3x)</p> </td>
-   <td><p>Inzoomen (alleen iOS en Android, 3x)</p> </td>
+   <td><p>Inzoomen (alleen iOS en Android™, 3x)</p> </td>
+   <td><p>Inzoomen (alleen iOS en Android™, 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Kneep dicht</strong></p> </td>
    <td><p>Niet van toepassing</p> </td>
-   <td><p>Uitzoomen (alleen iOS en Android, 3x)</p> </td>
-   <td><p>Uitzoomen (alleen iOS en Android, 3x)</p> </td>
+   <td><p>Uitzoomen (alleen iOS en Android™, 3x)</p> </td>
+   <td><p>Uitzoomen (alleen iOS en Android™, 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Veeggebaar</strong></p> </td>
@@ -372,7 +371,7 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
 
 In Experience Manager ziet u een groot aantal verschillende viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers]**. U kunt het aantal weergegeven viewers verhogen of verlagen.
 
-**Het aantal weergegeven** viewervoorinstellingen verhogen:
+**Het aantal Viewer-voorinstellingen dat wordt weergegeven verhogen:**
 
 1. Navigeer naar CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigeer naar het lijstknooppunt voor viewervoorinstellingen op `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -399,7 +398,7 @@ Zie [Speciale overwegingen voor het maken van een interactieve viewervoorinstell
 
 Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carousel Banner Viewer](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Een viewervoorinstelling** maken:
+**Een viewervoorinstelling maken:**
 
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
@@ -421,13 +420,13 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
 
       Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-      De CSS-opmaakeigenschappen voor elk type voorinstelling van viewer worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [Gemengde Media Viewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
+      De CSS-opmaakeigenschappen voor elk type voorinstelling van viewer worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [Gemengde Media Viewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
 
    * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar Experience Manager Assets. Tik **[!UICONTROL Import CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** om het geüploade CSS-bestand te zoeken en aan de voorinstelling van de viewer te koppelen (schuif, indien nodig, de visuele editor omhoog om deze te zien).
 
       Wanneer u een CSS-bestand importeert, controleert de visuele editor of de CSS de juiste viewermarkeringen gebruikt. Als u bijvoorbeeld een zoomviewer maakt, moeten alle CSS-regels die u importeert, worden gedefinieerd met de viewerklassenaam `.s7mixedmediaviewer` die is gedefinieerd voor een bovenliggend viewerelement.
 
-      U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS-markeertekens worden beschreven in het Help-onderwerp ** Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Zie [Zoomviewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) als u bijvoorbeeld wilt lezen over CSS-markeringen voor de Zoomviewer.) Het is echter mogelijk dat de visuele editor bepaalde CSS-waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
+      U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS-markeertekens worden beschreven in het Help-onderwerp ** Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Zie [Zoomviewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) als u bijvoorbeeld wilt lezen over CSS-markeringen voor de Zoomviewer.) Het is echter mogelijk dat de visuele editor bepaalde CSS-waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
    >[!NOTE]
    >
    >Als u de CSS liever rechtstreeks in onbewerkte vorm bewerkt, tikt u op **[!UICONTROL Show/Hide CSS]** onder het keuzemenu Geselecteerde tekst (schuif zo nodig de visuele editor omhoog om deze te zien).
@@ -459,7 +458,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
 
 ### Speciale overwegingen voor het maken van een voorinstelling voor een interactieve viewer {#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**Informatie over weergavemodi voor afbeeldingsminiaturen in het deelvenster**:
+**Informatie over weergavemodi voor afbeeldingsminiaturen in het deelvenster:**
 
 Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, kunt u kiezen welke instelling voor de weergavemodus u wilt gebruiken. Deze keuze doet zich voor wanneer u `InteractiveSwatches` selecteert in het keuzemenu **[!UICONTROL Selected Component]** onder het tabblad **[!UICONTROL Behavior]**. De weergavemodus die u kiest, bepaalt hoe en wanneer miniaturen worden weergegeven terwijl de video wordt afgespeeld. U kunt een `segment`-weergavemodus (standaard) of een `continuous`-weergavemodus kiezen.
 
@@ -480,7 +479,7 @@ Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt,
  </tbody>
 </table>
 
-**Informatie over het gedrag voor automatisch schuiven in de Interactieve videoviewer**:
+**Over het gedrag voor automatisch schuiven in de Interactieve videoviewer:**
 
 Het gedrag voor automatisch schuiven van miniaturen in de Interactieve videoviewer werkt onafhankelijk van de gekozen weergavemodus.
 
@@ -490,7 +489,7 @@ Als u **[!UICONTROL Auto Scroll]** uitschakelt (het selectievakje wist) in de vi
 
 Wanneer u **[!UICONTROL Auto Scroll]** inschakelt (selecteert) in de viewervoorinstelling, schuiven miniatuurafbeeldingen die aan een videosegment zijn toegewezen tijdens het afspelen van de video naar het begin van een segment. Er zijn echter gevallen waarin bepaalde miniaturen in een segment tweemaal zo lang worden weergegeven als andere miniaturen ervoor of erna. Dit gedrag treedt op omdat het aantal miniaturen in een segment groter is dan het aantal dat zichtbaar is in het deelvenster en dat aantal niet gelijkmatig kan worden verdeeld.
 
-Stel dat u een videosegment van 30 seconden hebt om dit te illustreren. En er zijn in totaal negen miniaturen die gedurende de 30 seconden moeten worden weergegeven. De grootte van de browser is zodanig dat er vier zichtbare miniatuurposities in het weergavevenster aanwezig zijn. Het segment van de 30 tweede videotijd wordt verdeeld in drie subsegmenten. In de volgende tabel wordt de verdeling weergegeven van de miniaturen voor een bepaald tijdsubsegment:
+Stel dat u een videosegment van 30 seconden hebt om dit te illustreren. En er zijn in totaal negen miniaturen die gedurende de 30 seconden moeten worden weergegeven. De grootte van de browser is zodanig dat er vier zichtbare miniatuurposities in het weergavevenster aanwezig zijn. Het videotijdsegment van 30 seconden wordt verdeeld in drie subsegmenten. In de volgende tabel wordt de verdeling weergegeven van de miniaturen voor een bepaald tijdsubsegment:
 
 | **Video-subsegment** | **Tijd van subsegment in seconden** | **Miniaturen die zichtbaar zijn in het deelvenster** |
 |---|---|---|
@@ -509,7 +508,7 @@ Aan de hand van het voorbeeld in de bovenstaande tabel 9 miniaturen / 4 sleuven 
 In het bovenstaande voorbeeld worden 9 miniaturen / 3 videosubsegmenten = 3 miniaturen gebruikt.
 
 * Duur van subsegment = totale videoduur / aantal videosubsegmenten.
-Met behulp van het voorbeeld in de bovenstaande tabel, 30 seconden/3 videosubsegmenten = 10 seconden weergave van elk videosubsegment.
+Gebruikend het voorbeeld in de bovenstaande lijst, 30 seconden/3 videosubsegments = 10 secondevertoning van elk videosubsegment.
 
 #### Speciale overwegingen voor het maken van voorinstellingen voor een Carousel Banner Viewer {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
@@ -523,7 +522,7 @@ Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van
 
 De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn afhankelijk van de vraag welke voorinstellingen actief zijn in de modus Auteur. Een viewervoorinstelling is standaard ingeschakeld nadat u deze hebt gemaakt. Als u de voorinstelling uitschakelt, wordt deze niet weergegeven in de modus Auteur. Als de voorinstelling wordt gepubliceerd, wordt deze altijd gepubliceerd, ongeacht of deze wordt in- of uitgeschakeld. Deactiveer vooraf instelt van de kijker als de lijst te werkbaar wordt of u geen kijker wilt vooraf ingesteld beschikbaar wordt gemaakt om te gebruiken.
 
-**Voorinstellingen** voor viewers activeren of deactiveren:
+**Voorinstellingen voor viewers activeren of deactiveren:**
 
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. Tik op de voorinstellingspagina van de viewer onder de kolomkop **[!UICONTROL State]** op de schakelknop om een voorinstelling voor de viewer te activeren of deactiveren.
@@ -540,7 +539,7 @@ Zie [Voorinstellingen van viewers activeren of deactiveren](#activating-or-deact
 
 Zie ook [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
 
-**Voorinstellingen** voor viewers publiceren:
+**Voorinstellingen voor viewers publiceren:**
 
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. Selecteer een of meer voorinstellingen voor viewers die u wilt publiceren.
@@ -555,7 +554,7 @@ Zie ook [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md
 
 Het bewerken van *vooraf gedefinieerde, voorinstellingen voor een viewer buiten de box* wordt niet ondersteund. Als u een voorinstelling voor een viewer buiten de box bewerkt, wordt u gevraagd deze op te slaan onder een andere naam.
 
-**Voorinstellingen** voor viewers bewerken:
+**Voorinstellingen voor viewers bewerken:**
 
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
 1. Selecteer een voorinstelling door het vakje links van de titel van de voorinstelling voor de viewer in te schakelen.
@@ -573,7 +572,7 @@ Het bewerken van *vooraf gedefinieerde, voorinstellingen voor een viewer buiten 
 
 U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
 
-**Aangepaste voorinstellingen** voor viewers verwijderen:
+**Aangepaste voorinstellingen voor viewers verwijderen:**
 
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. Controleer op de pagina Voorinstellingen viewer een voorinstellingstitel en tik op het pictogram **[!UICONTROL Trash]**.
@@ -583,7 +582,7 @@ U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Med
 
 Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
 
-**Een viewervoorinstelling toepassen op een element**:
+**Een viewervoorinstelling toepassen op een element:**
 
 1. Open het element en selecteer **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer .
 
