@@ -4,11 +4,10 @@ description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Afbeeldingssets
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 9%
+source-wordcount: '1983'
+ht-degree: 8%
 
 ---
 
@@ -44,7 +43,7 @@ Zo kunt u snel aan de slag:
 
 1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven](#uploading-assets-in-image-sets).
 
-   Upload de afbeeldingen voor uw afbeeldingssets. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. Experience Manager-elementen ondersteunen een groot aantal bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies in de indeling TIFF, PNG en EPS te gebruiken.
+   Upload de afbeeldingen voor uw afbeeldingssets. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn. Experience Manager-elementen ondersteunen een groot aantal bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies in de indeling TIFF, PNG en EPS te gebruiken.
 
 1. [Afbeeldingssets](#creating-image-sets) maken.
 
@@ -95,7 +94,7 @@ U kunt afbeeldingen voor Afbeeldingssets uploaden zoals u [andere elementen in E
 
 Voordat u Afbeeldingssets maakt, moet u ervoor zorgen dat de afbeeldingen de juiste grootte en indeling hebben.
 
-Als u een Afbeeldingsset met meerdere weergaven wilt maken, hebt u afbeeldingen nodig die een item vanuit verschillende gezichtspunten weergeven of verschillende aspecten van hetzelfde item weergeven. Het doel is om de belangrijke kenmerken van een item te benadrukken, zodat gebruikers een volledig beeld hebben van hoe het eruit ziet of werkt.
+Als u een Afbeeldingsset met meerdere weergaven wilt maken, hebt u afbeeldingen nodig die een item vanuit verschillende gezichtspunten weergeven of verschillende aspecten van hetzelfde item weergeven. Het doel is om de belangrijke kenmerken van een item te benadrukken zodat de kijkers een volledig beeld hebben van hoe het wordt weergegeven of wat het doet.
 
 Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervoor zorgen dat de afbeeldingen ten minste 2000 pixels groot zijn. Experience Manager-elementen ondersteunen een groot aantal bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies in de indeling TIFF, PNG en EPS te gebruiken.
 
@@ -124,7 +123,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
 
-**Een afbeeldingsset maken**
+**Een afbeeldingsset maken:**
 
 1. Tik in Adobe Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole.
 1. Tik op **[!UICONTROL Navigation > Assets]**. Ga naar de plaats waar u een afbeeldingset wilt maken en tik vervolgens op **[!UICONTROL Create > Image Set]** om de pagina Editor van afbeeldingset te openen.
@@ -207,7 +206,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 * Voorinstellingen voor viewers toepassen.
 * Verwijder de afbeeldingsset.
 
-**Afbeeldingssets bewerken**
+**Afbeeldingssets bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
