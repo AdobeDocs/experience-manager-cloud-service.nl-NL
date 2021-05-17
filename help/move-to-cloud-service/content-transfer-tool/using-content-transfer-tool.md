@@ -2,11 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 46%
+source-wordcount: '2769'
+ht-degree: 45%
 
 ---
 
@@ -54,6 +53,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
 
 * Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het bron AEM systeem, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen blokken niet kunnen worden verwijderd (opschonen). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
+
+* Als u douaneindexen gebruikt, moet u ervoor zorgen om de douaneindexen met `tika` knoop te vormen alvorens het Hulpmiddel van de Overdracht van de Inhoud in werking te stellen. Raadpleeg [De nieuwe indexdefinitie voorbereiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) voor meer informatie.
 
 ## Beschikbaarheid {#availability}
 
