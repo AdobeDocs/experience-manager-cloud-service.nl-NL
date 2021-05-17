@@ -4,14 +4,13 @@ description: Begin hier voor een geleide reis door de krachtige en flexibele hea
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 2%
+source-wordcount: '700'
+ht-degree: 1%
 
 ---
-
 
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
@@ -19,11 +18,11 @@ ht-degree: 2%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
+Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste project zonder titel te gebruiken.
 
 ## Inleiding {#introduction}
 
-De implementatie zonder hoofd wordt steeds belangrijker om ervaringen aan uw publiek te kunnen bieden, waar ze zich ook bevinden en ongeacht het kanaal.
+Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te bieden, waar ze zich ook bevinden en ongeacht het kanaal.
 
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Het is een modern en dynamisch ontwikkelingspatroon voor het implementeren van webervaringen.
 
@@ -52,3 +51,14 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | 8 | [Live gaan met uw toepassing zonder kop](go-live.md) | Leer hoe u de toepassing live kunt implementeren en uw lokale code in Git kunt plaatsen en deze kunt verplaatsen naar Cloud Manager Git voor CI/CD-pijplijn. |
 | 9 | [Na starten](post-launch.md) | Leer hoe u uw headless ervaring kunt behouden. |
 | 10 | [Optioneel - Hoe kunt u toepassingen voor één pagina maken (SPA) met AEM](create-spa.md) | Als u AEM functies zonder kop begrijpt, kunt u experimenteren met een combinatie van een krachtige en koploze levering en leren hoe u bewerkbare SPA kunt maken met AEM SPA Editor-framework. |
+
+## Volgende {#what-is-next}
+
+U bent nu klaar om aan de slag te gaan op uw Adobe Headless reis. We raden u aan door te gaan met het volgende gedeelte van de reis en het artikel [Meer informatie over CMS Headless Development te lezen.](learn-about.md)
+
+### Kies uw eigen avontuur {#choose-your-path}
+
+Nochtans, wil Adobe u slagen aangezien u met uw AEM Headless project, ongeacht uw het leren stijl begint. Overweeg deze twee opties alstublieft.
+
+* Als u liever **meer wilt leren over concepten zonder kop en AEM technologieën zonder kop**, kunt u de AEM doorlopen zoals aanbevolen door het document [How to Model Your Content as AEM Content Models](model-your-content.md) te bekijken, waarin u leert hoe u de inhoudstructuur in AEM modelleert.
+* Als u verkiest om **te leren door te doen**, kunt u aan [Aan de slag met AEM Hoofdloze hands-on leerprogramma](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
