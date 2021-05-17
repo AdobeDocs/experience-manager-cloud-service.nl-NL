@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
+source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
 workflow-type: tm+mt
-source-wordcount: '2769'
-ht-degree: 45%
+source-wordcount: '2762'
+ht-degree: 43%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 45%
 
 Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
 
-* De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
+* De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Als u een lagere AEM gebruikt, moet u de opslagplaats voor inhoud upgraden naar AEM 6.5 om het gereedschap Inhoud overbrengen te kunnen gebruiken.
 
-* Java moet op het AEM worden gevormd milieu, zodat het `java` bevel door de gebruiker kan worden uitgevoerd die AEM begint.
+* Java moet op het AEM milieu worden gevormd, zodat het `java` bevel door de gebruiker kan worden uitgevoerd die AEM begint.
 
 * Het wordt aanbevolen oudere versies van het gereedschap Inhoud overbrengen te verwijderen bij de installatie van versie 1.3.0, omdat het programma een belangrijke architecturale wijziging heeft ondergaan. Met 1.3.0 moet u ook nieuwe migratiesets maken en de extractie en inname van de nieuwe migratiesets opnieuw uitvoeren.
 
@@ -32,13 +32,13 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Als u een *Sandbox Milieu* gebruikt, zorg ervoor dat uw milieu huidig is en aan de recentste versie wordt bevorderd. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
-* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, zult u een admin gebruiker op uw broninstantie moeten zijn en tot de lokale AEM **beheerders** groep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
+* Om het hulpmiddel van de Overdracht van de Inhoud te gebruiken, moet u een admin gebruiker op uw broninstantie zijn en tot de lokale AEM **beheerders** groep in de instantie behoren van de Cloud Service u inhoud overbrengt naar. Zonder deze machtigingen kunnen gebruikers het toegangstoken tot de Content Transfer-tool niet ophalen.
 
-* Als de instelling **Bestaande inhoud op een Cloud-instantie vegen voor inname** is ingeschakeld, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**. De gebruiker zal aan **beheerders** groep opnieuw moeten worden toegevoegd om het toegangstoken voor CTT terug te winnen.
+* Als de instelling **Bestaande inhoud op een Cloud-instantie vegen voor inname** is ingeschakeld, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**. De gebruiker moet aan **beheerders** groep opnieuw worden toegevoegd om het toegangstoken voor CTT terug te winnen.
 
-* Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u zult het nieuwe toegangstoken moeten terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
+* Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u moet het nieuwe toegangstoken terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
 
-* Met het gereedschap Inhoud overbrengen kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. Zo maakt CTT geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud terwijl inhoud wordt opgenomen in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT en de instantie van de bronauteur worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook CTT op de bron te installeren publiceer instantie om inhoud naar de doel te verplaatsen publiceer instantie.
+* Met het CTT-hulpprogramma (Content Transfer Tool) wordt geen inhoudanalyse uitgevoerd voordat inhoud van de broninstantie naar de doelinstantie wordt overgebracht. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie.
 
 * De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Het gereedschap Toewijzing gebruiker gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -50,7 +50,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
       * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
       * Programma-id.
 
-* In de *Opnamefase* voor de auteur wordt de volledige auteurimplementatie omlaag geschaald. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
+* De *Ingestiefase* voor de auteur schalen de volledige auteurplaatsing. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
 
 * Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het bron AEM systeem, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen blokken niet kunnen worden verwijderd (opschonen). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
 
@@ -120,7 +120,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken terugwinnen door **open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de AEM beheerdersgroep in de instantie van de doelCloud Service behoort.
+      >U kunt het toegangstoken terugwinnen door **open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de groep van AEM beheerders in de instantie van de doelCloud Service behoort.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
@@ -145,10 +145,10 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle bestaande migratiesets op dit scherm worden met hun huidige status en statusinformatie weergegeven op de pagina *Overview.* Sommige van deze pictogrammen worden hieronder beschreven.
+   Alle bestaande migratiesets op dit scherm worden weergegeven op de pagina *Overzicht* met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
-   * Een *groene wolk* geeft aan dat u het extractieproces wel kunt voltooien.
+   * Een *groene cloud* geeft aan dat u het extractieproces kunt voltooien.
    * Een *geel pictogram* geeft aan dat u de bestaande migratieset niet hebt gemaakt en dat de specifieke migratieset door een andere gebruiker in dezelfde instantie wordt gemaakt.
 
 1. Selecteer een migratieset op de overzichtspagina en klik op **Properties** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de containernaam of de service-URL te wijzigen.
