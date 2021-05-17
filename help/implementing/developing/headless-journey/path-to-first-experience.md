@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -32,7 +31,7 @@ In het vorige document van de AEM zonder kop, [Aan de slag met AEM zonder kop al
 
 Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eigen AEM hoofdloze project voor te bereiden.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 Dit document helpt u de stappen begrijpen nodig om uw eerste project uit te voeren. Na het lezen moet u:
 
@@ -80,7 +79,7 @@ Ontwikkelaars hebben een AEM ontwikkelomgeving nodig die is ingesteld met de pop
 
 Inhoudsauteurs maken inhoud op basis van de inhoudsmodellen die zijn gedefinieerd in de testomgeving. Met het ontwerpgereedschap voor inhoudsfragmenten zou de auteur een nieuw inhoudsfragment maken of een bestaand inhoudsfragment bewerken. Alvorens het te publiceren, kan de auteur voorproef hoe het in de cliënt door met de ontwikkelaar te werken om het inhoudsmodel op ontwikkeling te duwen of opstelling een ontwikkelaarmilieu enkel voor auteurs aan voorproef hoe het in de cliënt zou kijken.
 
-## {#setup} instellen
+## Instellen {#setup}
 
 Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te vervullen zijn gedetailleerd later in [AEM Headless Developer Journey.](#overview.md)
 
@@ -141,9 +140,9 @@ Wij willen dat u op deze grondkennis voortbouwt om de kracht en de flexibiliteit
 
 ### Kies uw eigen avontuur {#choose-your-path}
 
-Wat uw het leren stijl ook maakt, Adobe wil dat u erin slaagt om met uw AEM Headless project aan de slag te gaan.
+Wat uw het leren stijl ook maakt, Adobe wil u slagen aangezien u met uw project zonder AEM wordt begonnen.
 
-* Als u verkiest **hoofdloze concepten en AEM zonder kop technologieën** te blijven leren, zou u uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te om Uw Inhoud als Modellen van de Inhoud te modelleren](model-your-content.md) te vormen waar u leert hoe te om uw inhoudstructuur in AEM te modelleren.
+* Als u liever **meer wilt leren over concepten zonder kop en AEM technologieën zonder kop**, kunt u de AEM doorlopen door het document [How to Model Your Content Model as AEM Content Models](model-your-content.md) te bekijken, waarin u leert hoe u de inhoudstructuur in AEM modelleert.
 * Als u verkiest om **te leren door te doen**, kunt u aan [Aan de slag met AEM Hoofdloze hands-on leerprogramma](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
