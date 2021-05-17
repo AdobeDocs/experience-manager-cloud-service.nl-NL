@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -114,7 +114,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Cloud Service Configuration**: Voer de doelversie in van de auteur-URL voor AEM as a Cloud Service.
 
       >[!NOTE]
-      >Tijdens de contentoverdracht kunt u maximaal vier migratiesets tegelijk maken en onderhouden.
+      >U kunt maximaal tien migratiesets tegelijk maken en onderhouden tijdens de activiteit voor de overdracht van inhoud.
       >Bovendien moet u voor elke specifieke omgeving een afzonderlijke migratie maken: *stage*, *ontwikkeling* of *productie*.
 
    1. **Access Token**: Voer het toegangstoken in.
