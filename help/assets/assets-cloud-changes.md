@@ -1,16 +1,15 @@
 ---
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] vergeleken met [!DNL Adobe Experience Manager 6.5.
-feature: Release Information
+feature: Geen informatie
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
 
 ---
-
 
 # Opvallende wijzigingen in [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#notable-changes}
 
@@ -53,7 +52,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 |-----|-----|-----|
 | [Elementdetectie dupliceren](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Werkt anders. | Zie [hoe het in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) werkte. |
 | [Alleen voor FPO-uitvoeringen (Placement Only)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Werkt anders |  |
-| Metagegevens terugschrijven | Niet ondersteund. | Zie [metagegevensschrijver in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Metagegevens terugschrijven | Werkt anders | Standaard uitgeschakeld. Schakel indien nodig de bijbehorende starter voor de workflow in. Terugkoppeling wordt afgehandeld door middel van asset microservices. |
 | Verwerking van geüploade elementen met gebruik van Package Manager | Moet handmatig worden ingegrepen. | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]**. |
 | MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Genereren van subactiva voor samengestelde activa | Niet ondersteund. | Er is niet voldaan aan de eisen voor afhankelijk gebruik. De annotatie van PDF-bestanden met meerdere pagina&#39;s wordt bijvoorbeeld beïnvloed. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
@@ -66,10 +65,10 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 >De volgende bronnen zijn beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]:
 >
 >* [Lijst met vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
->* [Een inleiding](/help/overview/introduction.md)
->* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
->* [De architectuur](/help/core-concepts/architecture.md)
->* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
->* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Een inleiding](/help/overview/introduction.md)
+* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
+* [De architectuur](/help/core-concepts/architecture.md)
+* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
+* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
