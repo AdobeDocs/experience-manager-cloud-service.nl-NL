@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,23 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Zorg dat u weet hoe u de toepassing kunt beveiligen en schalen voordat u de toepassing start.
 * Begrijp hoe te om Prestaties te controleren en te zuiveren Kwesties.
 
-U moet uw AEM zonder kop voortzetten door het document [Post Launch](post-launch.md) te bekijken waar u leert hoe u uw headless ervaring kunt behouden.
+## De reis eindigt - of wel? {#journey-ends}
+
+Gefeliciteerd! U hebt de AEM Headless Developer Journey voltooid! U zou nu een inzicht moeten hebben in:
+
+* Het verschil tussen koploze en koprijke levering van inhoud.
+* AEM functies zonder kop.
+* Hoe te om Hoofdloze project te organiseren en te AEM.
+* Hoe te om koploze inhoud in AEM tot stand te brengen.
+* Hoe te om koploze inhoud in AEM terug te winnen en bij te werken.
+* Hoe te om met een AEM Zwaardeloos project te leven.
+* Wat doet u na de go-live?
+
+U hebt uw eerste AEM Headless-project al gestart of u hebt nu alle kennis die u nodig hebt om dit te doen. Geweldig werk!
+
+De koploze winkels in AEM hoeven hier echter niet te stoppen. In [Getting Started part of the trip](getting-started.md#integration-levels) hebben we kort besproken hoe AEM niet alleen koploze bezorging en traditionele full-stack modellen ondersteunt, maar ook hybride modellen die de voordelen van beide combineren.
+
+Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga op het facultatieve, extra deel van de reis, [Hoe te om de Toepassingen van de Enige Pagina (SPA) met AEM te creëren.](create-spa.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
