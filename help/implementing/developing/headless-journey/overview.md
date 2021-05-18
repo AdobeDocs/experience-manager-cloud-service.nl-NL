@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,13 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 * Begrijp AEM functies zonder kop en hoe ze samenwerken om een eindeloze ervaring te bieden.
 * Heb de capaciteit om de eerste stappen uit te voeren die uw eerste AEM hoofdloze project uitvoeren.
 
-## De headless reis {#the-journey}
+## Publiek {#audience}
+
+Deze reis wordt ontworpen voor de ontwikkelaar persoonlijkheid, die de vereisten, de stappen, en de benadering van een AEM Zwaardeloos project vanuit het perspectief van de ontwikkelaar beschrijft. De reis zal extra persona&#39;s bepalen waarmee de ontwikkelaar voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van de ontwikkelaar.
+
+Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+
+## De headless Developer Journey {#the-journey}
 
 U zult vele onderwerpen in deze reis onderzoeken. In de volgende artikelen wordt u op basis van uw kennis van de kop in AEM en een link naar gedetailleerde technische documentatie weergegeven.
 
