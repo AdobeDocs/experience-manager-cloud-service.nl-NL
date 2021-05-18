@@ -4,9 +4,9 @@ description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 
 ## pariteit van de eigenschap met [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] als  [!DNL Cloud Service] introduceert u veel nieuwe functies en betere manieren om bestaande functies te laten werken. Wanneer u echter van [!DNL Experience Manager] 6.5 naar [!DNL Experience Manager] als [!DNL Cloud Service] gaat, ziet u wellicht dat sommige functies anders werken, niet beschikbaar zijn of gedeeltelijk beschikbaar zijn. Hieronder volgt een lijst met dergelijke functies:
+[!DNL Experience Manager] als  [!DNL Cloud Service] introduceert u veel nieuwe functies en betere manieren om bestaande functies te laten werken. Wanneer u echter van [!DNL Experience Manager] 6.5 naar [!DNL Experience Manager] als [!DNL Cloud Service] gaat, ziet u wellicht dat sommige functies anders werken, niet beschikbaar zijn of gedeeltelijk beschikbaar zijn. Hieronder volgt een lijst met dergelijke functies. Zie ook de [vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
 | Functionaliteit of gebruikscase | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Opmerkingen |
 |-----|-----|-----|
