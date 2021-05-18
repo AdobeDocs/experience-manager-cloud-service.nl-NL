@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
 
-In dit deel van [AEM Headless Developer Journey,](overview.md) leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
+In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -40,19 +40,18 @@ Met dit document krijgt u inzicht in de publicatiepijplijn zonder kop en in de p
 
 ## De AEM-SDK {#the-aem-sdk}
 
-Het bevat de volgende artefacten:
+De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Dit is het belangrijkste hulpmiddel dat u nodig hebt om uw toepassing zonder kop te ontwikkelen en te testen voordat u live gaat. Het bevat de volgende artefacten:
 
 * De QuickStart-jar - een uitvoerbaar JAR-bestand dat kan worden gebruikt om een auteur- en een publicatie-instantie in te stellen
 * De hulpmiddelen van de verzending - de module van de Dispatcher en zijn gebiedsdelen voor Vensters en op UNIX gebaseerde systemen
 * Java API Jar - De Java Jar/Maven-afhankelijkheid die alle toegestane Java API&#39;s beschikbaar maakt die kunnen worden gebruikt om zich te ontwikkelen tegen AEM
 * Javadoc jar - de javadocs voor de Java API jar
 
-## Ontwikkelingsgereedschappen {#development-tools}
+## Aanvullende ontwikkelingsgereedschappen {#additional-development-tools}
 
 Naast de AEM SDK hebt u aanvullende gereedschappen nodig die het ontwikkelen en testen van uw code en inhoud lokaal vergemakkelijken:
 
 * Java
-* De AEM SDK
 * Git
 * Apache Maven
 * De Node.js-bibliotheek
@@ -60,15 +59,15 @@ Naast de AEM SDK hebt u aanvullende gereedschappen nodig die het ontwikkelen en 
 
 Omdat AEM een Java-toepassing is, moet u Java en de Java SDK installeren om de ontwikkeling van AEM als Cloud Service te ondersteunen.
 
-De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is het belangrijkste hulpmiddel u nodig om uw toepassing zonder kop te testen alvorens te leven.
-
 Git is wat u zult gebruiken om broncontrole te beheren evenals de veranderingen in de Manager van de Wolk te controleren en dan hen op te stellen aan een productie instantie.
 
 AEM gebruikt Apache Maven om projecten te bouwen die uit AEM Maven Project archetype worden geproduceerd. Alle belangrijke IDEs verstrekt integratiesteun voor Maven.
 
-Node.js is een runtimeomgeving JavaScript die wordt gebruikt om met de front-end activa van het subproject ui.frontend van een AEM project te werken. Node.js wordt gedistribueerd met npm, is de facto het pakketbeheer Node.js, dat wordt gebruikt om JavaScript gebiedsdelen te beheren.
+Node.js is een runtimeomgeving JavaScript die wordt gebruikt om met de front-end activa van het `ui.frontend` subproject van een AEM project te werken. Node.js wordt gedistribueerd met npm, is de facto het pakketbeheer Node.js, dat wordt gebruikt om JavaScript gebiedsdelen te beheren.
 
 ## Componenten van een AEM systeem in één oogopslag {#components-of-an-aem-system-at-a-glance}
+
+Laten we nu eens kijken naar de onderdelen van een AEM omgeving.
 
 Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze componenten worden beschikbaar gesteld in de lokale ontwikkelingstijd zodat u gemakkelijker een voorvertoning van uw code en inhoud kunt bekijken voordat u live gaat.
 
@@ -88,10 +87,6 @@ Let op het verschil tussen de verschillende componenten in de lokale AEM runtime
 
 In een productiesysteem, zullen een verzender en een server http Apache altijd voor een AEM publicatiegeval zitten. Zij verlenen caching en de dienstdiensten voor het AEM systeem, zodat is het uiterst belangrijk om code en inhoudsupdates tegen de verzender eveneens te testen.
 
-Zodra u ervoor hebt gezorgd dat alles is getest en correct werkt, kunt u uw code-updates naar een gecentraliseerde Git-opslagplaats in Cloud Manager verzenden.
-
-Nadat de updates zijn geüpload naar Cloud Manager, kunnen ze worden geïmplementeerd als een Cloud Service met de CI/CD-pijplijn van Cloud Manager.
-
 ## Een lokale voorvertoning van uw code en inhoud weergeven in de lokale ontwikkelomgeving {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
 Als u uw AEM project zonder kop wilt voorbereiden op de start, moet u ervoor zorgen dat alle onderdelen van uw project goed werken.
@@ -106,23 +101,16 @@ De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
 Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
 
-Zie [Production Deployment with an AEM Publish Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites) voor een meer gedetailleerde uitleg van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor voorvertoning van inhoud.
-
-## Distribueren naar productie {#deploy-to-production}
-
-Zodra u al uw code en inhoud plaatselijk hebt getest, bent u bereid om een productielocatie met AEM te beginnen.
-
-U kunt uw code beginnen op te stellen door de Ci/CD-pijplijn van de Manager van de Wolk te gebruiken, die uitgebreid [hier](/help/implementing/deploying/overview.md) wordt behandeld.
+Zie [documentatie voor productie-implementatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites) voor een diepgaander overzicht van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor voorvertoning van inhoud.
 
 ## Uw AEM toepassing zonder koppen voorbereiden voor Go-Live {#prepare-your-aem-headless-application-for-golive}
 
-Nu is het tijd om uw AEM headless toepassing klaar te maken voor lancering, door de hieronder geschetste beste praktijken te volgen.
+Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introductie, door de onderstaande aanbevolen procedures te volgen.
 
 ### Beveilig en schaal uw toepassing zonder hoofd alvorens {#secure-and-scale-before-launch} te lanceren
 
-1. [Op token gebaseerde verificatie](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) configureren
-1. Beveiligde webhaken
-1. Caching en schaalbaarheid configureren
+1. Vorm [Symbolische Gebaseerde Authentificatie](/help/assets/content-fragments/graphql-authentication-content-fragments.md) met uw verzoeken GraphQL
+1. Configureer [Caching](/help/implementing/dispatcher/caching.md).
 
 ### Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 
@@ -133,8 +121,8 @@ Nu is het tijd om uw AEM headless toepassing klaar te maken voor lancering, door
 ### CDN-hoogte-breedteverhouding in cache maximaliseren {#maximize-cdn}
 
 * Gebruik geen directe vragen GraphQL, tenzij u levende inhoud van de oppervlakte verzoekt.
-   * Gebruik in plaats daarvan doorlopende query&#39;s.
-   * Verstrek CDN TTL boven 600 seconden zodat CDN hen kan in het voorgeheugen onderbrengen.
+   * Gebruik waar mogelijk doorlopende query&#39;s.
+   * Verstrek CDN TTL boven 600 seconden zodat CDN hen in het voorgeheugen onderbrengt.
    * AEM kan het effect van een modelwijziging op bestaande query&#39;s berekenen.
 * Splits JSON- dossiers/GraphQL- vragen tussen laag en hoge tarief van de inhoudsverandering om cliëntverkeer aan CDN te verminderen en hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
 * Als u de inhoud van de CDN actief ongeldig wilt maken, gebruikt u Zacht wissen. Hierdoor kan de CDN de inhoud opnieuw downloaden zonder dat een cache-fout optreedt.
@@ -146,6 +134,14 @@ Nu is het tijd om uw AEM headless toepassing klaar te maken voor lancering, door
 * Minimaliseer het aantal domeinen dat wordt gebruikt om JSON te hosten en referenced artefacten.
 * Gebruik `Last-modified-since` om bronnen te vernieuwen.
 * Gebruik `_reference` uitvoer in JSON-bestand om te beginnen met het downloaden van elementen zonder dat u volledige JSON-bestanden hoeft te parseren.
+
+## Distribueren naar productie {#deploy-to-production}
+
+Zodra u ervoor hebt gezorgd dat alles is getest en correct werkt, bent u klaar om uw code-updates naar een [gecentraliseerde Git-opslagplaats in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) te verzenden.
+
+Nadat de updates zijn geüpload naar Cloud Manager, kunnen ze worden geïmplementeerd als een Cloud Service met de CI/CD-pijplijn](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) van Cloud Manager.[
+
+U kunt uw code beginnen op te stellen door de Ci/CD-pijplijn van de Manager van de Wolk te gebruiken, die uitgebreid [hier](/help/implementing/deploying/overview.md) wordt behandeld.
 
 ## Prestatiebewaking {#performance-monitoring}
 
@@ -207,16 +203,10 @@ Gefeliciteerd! U hebt de AEM Headless Developer Journey voltooid! U zou nu een i
 * Hoe te om met een AEM Zwaardeloos project te leven.
 * Wat doet u na de go-live?
 
-U hebt uw eerste AEM Headless-project al gestart of u hebt nu alle kennis die u nodig hebt om dit te doen. Geweldig werk!
-
-De koploze winkels in AEM hoeven hier echter niet te stoppen. In [Getting Started part of the trip](getting-started.md#integration-levels) hebben we kort besproken hoe AEM niet alleen koploze bezorging en traditionele full-stack modellen ondersteunt, maar ook hybride modellen die de voordelen van beide combineren.
-
-Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga op het facultatieve, extra deel van de reis, [Hoe te om de Toepassingen van de Enige Pagina (SPA) met AEM te creëren.](create-spa.md)
-
 ## Aanvullende bronnen {#additional-resources}
 
-* [Een lokale AEM instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [De AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Een overzicht van het Opstellen aan AEM als Cloud Service](/help/implementing/deploying/overview.md)
+* [De AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Een lokale AEM instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Cloud Manager gebruiken om uw code te implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integreer de gegevensopslagruimte van de Intel Health Care Management Suite van Cloud Manager met een externe opslagplaats voor Git en implementeer een project om als Cloud Service te AEM](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [Integreer de gegevensopslagruimte van de Intel Health Care Management Suite van Cloud Manager met een externe opslagplaats voor Git en implementeer een project om als Cloud Service te AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
