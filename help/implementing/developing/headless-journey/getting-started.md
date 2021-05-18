@@ -4,14 +4,13 @@ description: In dit deel van de AEM Headless Developer Journey, leer over AEM He
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Headless als een Cloud Service {#getting-started}
 
@@ -31,7 +30,7 @@ In het vorige document van de AEM headless reis, [Leer over CMS Headless Develop
 
 Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u AEM kunt gebruiken om een headless oplossing uit te voeren.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 Dit document helpt u AEM Headless in de context van uw eigen project begrijpen. Na het lezen moet u:
 
@@ -50,7 +49,7 @@ Het eenvoudigst bestaat AEM uit een auteur-instantie en een [publish-instantie](
 
 Inhoud begint op de instantie van de auteur. Dit is waar u tevreden auteurs hun inhoud creeert. De auteursomgeving biedt diverse hulpmiddelen voor auteurs aan om hun inhoud tot stand te brengen, te organiseren en opnieuw te gebruiken.
 
-### Instantie {#publish} publiceren
+### Exemplaar publiceren {#publish}
 
 Wanneer de inhoud in de auteur is gemaakt, moet deze worden gepubliceerd om beschikbaar te zijn voor andere services. Een publicatie-instantie bevat alle inhoud die is gepubliceerd.
 
@@ -63,7 +62,8 @@ Replicatie is het overbrengen van inhoud van de auteurinstantie naar de publicat
 Op het eenvoudigste niveau moeten de volgende stappen worden gezet om digitale ervaringen in AEM te creëren:
 
 1. De makers van de inhoud zullen uw inhoud zonder kop maken in de ontwerpinstantie.
-1. Wanneer deze inhoud gereed is, wordt deze gerepliceerd naar de publicatie-instantie. API&#39;s kunnen vervolgens worden aangeroepen om deze inhoud op te halen.
+1. Wanneer deze inhoud gereed is, wordt deze gerepliceerd naar de publicatie-instantie.
+1. API&#39;s kunnen vervolgens worden aangeroepen om deze inhoud op te halen.
 
 AEM headless bouwt van deze technische stichting door krachtige hulpmiddelen aan te bieden om inhoud zonder kop te beheren die [in de volgende sectie wordt beschreven.](#aem-headless-basics)
 
@@ -227,7 +227,7 @@ Een handige methode bij het definiëren van modellen van inhoudsfragmenten is he
 
 Omdat de makers van de inhoud voortdurend met de modellen werken terwijl ze nieuwe inhoud maken, kunnen ze de resulterende digitale ervaring visualiseren door de modellen op de UX uit te lijnen. Als u deze uitlijning verder uitlijnt, kunt u pictogrammen toewijzen aan de modellen van inhoudsfragmenten die het UX-element vertegenwoordigen, zodat de auteurs op intuïtieve wijze het juiste model kunnen selecteren op basis van visuele aanwijzingen.
 
-#### Developer {#developer}
+#### Ontwikkelaar {#developer}
 
 Ontwikkelaars zijn verantwoordelijk voor het samenvoegen van de inhoud die wordt gemaakt zonder enig AEM voor de consument van die inhoud. Dit kan vaak een toepassing van één pagina (SPA), een progressieve webapp (PWA), een webshop of een andere service buiten AEM zijn.
 
