@@ -5,10 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 30%
 
 ---
@@ -83,7 +82,6 @@ ht-degree: 30%
       + [Uw inhoud bijwerken via API&#39;s voor AEM middelen](developing/headless-journey/update-your-content.md)
       + [Hoe kan ik het allemaal samenbrengen?](developing/headless-journey/put-it-all-together.md)
       + [Live gaan met uw toepassing zonder kop](developing/headless-journey/go-live.md)
-      + [Na starten](developing/headless-journey/post-launch.md)
       + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](developing/headless-journey/create-spa.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
