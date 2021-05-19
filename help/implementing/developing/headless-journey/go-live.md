@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u een 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM headless reis, [Hoe te om het allen samen te zetten - Uw App en Uw Inhoud in AEM Koploze](put-it-all-together.md) leerde u hoe te om uw eigen AEM headless project voor te bereiden om levend te gaan en u zou nu moeten:
+In het vorige document van de AEM headless reis, [How to Update Your Content via AEM Assets APIs](update-your-content.md) leerde u hoe te om uw bestaande inhoud zonder kop in AEM via API bij te werken en u zou nu moeten:
 
-* Begrijp de vereisten om live te gaan.
+* Begrijp de AEM Assets HTTP API.
 
-Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw AEM Project zonder hoofd levend te brengen.
+Dit artikel bouwt verder op die grondbeginselen zodat u begrijpt hoe u uw eigen AEM headless project kunt voorbereiden om te leven.
 
 ## Doelstelling {#objective}
 
@@ -151,13 +151,13 @@ Om gebruikers de best mogelijke ervaring te geven bij het gebruik van de AEM toe
 * Verifieer AEM statuspagina&#39;s voor huidige de status van de de dienstbeschikbaarheid
 * Toegang tot prestatierapporten
    * Leveringsprestaties
-      * Fastly (CDN) - controleaantal vraag, geheim voorgeheugentarief, foutentarieven, ladingsverkeer
+      * CDN (Fastly) prestaties - controleaantal vraag, geheim voorgeheugentarief, foutentarieven en ladingsverkeer
       * De servers van de oorsprong - aantal vraag, foutentarieven, cpu laadt, loonladingsverkeer
    * Auteursprestaties
       * Aantal gebruikers, aanvragen en laden controleren
 * Toepassings- en ruimtespecifieke prestatierapporten openen
    * Als de server is geactiveerd, controleert u of de algemene meetwaarden groen/oranje/rood zijn en identificeert u vervolgens specifieke toepassingsproblemen
-   * Open dezelfde rapporten die hierboven zijn gefilterd naar app/space (zoals Photoshop-bureaublad, paywall, enz.)
+   * Open dezelfde rapporten die hierboven zijn gefilterd naar app of space (bijvoorbeeld Photoshop-bureaublad, paywall)
    * Logbestand-API&#39;s van Splunk gebruiken om toegang te krijgen tot service- en toepassingsprestaties
    * Neem contact op met de Klantenondersteuning als er andere problemen zijn.
 
@@ -181,15 +181,6 @@ Volg de onderstaande stappen om een bug efficiënt te kunnen aanmelden bij Suppo
 * Een manier documenteren om het probleem te reproduceren
 * Documenteer de inhoud waarmee de uitgave wordt gereproduceerd
 * Logboek een kwestie door het portaal van de Steun van de AEM met de aangewezen prioriteit
-
-## Volgende {#what-is-next}
-
-Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
-
-* Inhoudsreplicatie en basiskennis van AEM inhoud in cache begrijpen.
-* Zorg dat u weet hoe u de vereiste gereedschappen configureert om live te gaan voor uw toepassing zonder kop.
-* Zorg dat u weet hoe u de toepassing kunt beveiligen en schalen voordat u de toepassing start.
-* Begrijp hoe te om Prestaties te controleren en te zuiveren Kwesties.
 
 ## De reis eindigt - of wel? {#journey-ends}
 
