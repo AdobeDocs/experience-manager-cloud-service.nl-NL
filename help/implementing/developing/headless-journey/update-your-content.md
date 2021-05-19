@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -31,7 +30,7 @@ In het vorige document van de AEM headless reis, [How to Access Your Content via
 
 Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u bestaande inhoud zonder kop in AEM kunt bijwerken via de REST API.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
 * **Doel**: Leer hoe u de REST API kunt gebruiken om de inhoud van de inhoudsfragmenten te openen en bij te werken:
@@ -215,7 +214,7 @@ Associated content is currently not exposed.
 
 ## De REST API {#using-aem-assets-rest-api} voor middelen gebruiken
 
-### Ga naar {#access}
+### Toegang {#access}
 
 De REST API van Activa gebruikt het `/api/assets` eindpunt en vereist de weg van de activa om tot het toegang te hebben (zonder belangrijke `/content/dam`).
 
@@ -290,7 +289,7 @@ Gebruik gebeurt via:
 
 De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht om de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst `Content-Type` worden toegevoegd die is ingesteld op `application/json`.
 
-### {#update} bijwerken
+### Bijwerken {#update}
 
 Gebruik is via
 
@@ -322,7 +321,11 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Have experience with sample code and know how the API works in practice.
 -->
 
-U zou uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te om het allen samen te brengen - Uw App en Uw Inhoud in AEM Koploze](put-it-all-together.md) waar u leert hoe te om uw AEM Project zonder Zoppen te nemen en het voor te bereiden op het leven.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+U zou uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te met Uw Zwaarloze Toepassing ](go-live.md) gaan waar u werkelijk uw AEM Zwaardeloos project neemt levend!
 
 [Hoe u toepassingen voor één pagina (SPA) maakt met ](create-spa.md) AEM, toont u ook hoe u bewerkbare SPA kunt maken met het SPA Editor-framework van AEM, en hoe u externe SPA kunt integreren, waardoor bewerkingsmogelijkheden naar wens zijn.
 
