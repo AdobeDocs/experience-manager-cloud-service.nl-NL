@@ -1,18 +1,18 @@
 ---
-title: Hoe u met uw headless toepassing kunt gaan werken
+title: Live gaan met uw headless-toepassing
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
 
-# Hoe te met Uw Hoofdloze Toepassing {#go-live} leven
+# Hoe u met uw toepassing zonder koppen werkt {#go-live}
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze c
 
 * **De** service Auteur biedt interne gebruikers de mogelijkheid inhoud te maken, te beheren en voor te vertonen.
 
-* **De** service Publiceren wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de omgeving waarmee eindgebruikers werken. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren. Het meest gebruikelijke implementatiepatroon met toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM-publicatieservice.
+* **De** service Publiceren wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de omgeving waarmee eindgebruikers werken. Inhoud wordt na bewerking en toepassing op de service Auteur gedistribueerd naar de service Publiceren. Het meest gebruikelijke implementatiepatroon met toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM-publicatieservice.
 
 * **De** Dispatcher is een statische webserver die is aangevuld met de AEM dispatcher-module. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
@@ -99,7 +99,7 @@ De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 1. Lokale AEM Runtime - lokale versies van de AEM auteur en publiceer de diensten die zullen worden gebruikt om code van het AEM project op te stellen
 1. De lokale Dispatcher Runtime - een lokale versie van de Apache htttpd-webserver die de Dispatcher-module bevat
 
-Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
+Zodra de lokale ontwikkelomgeving opstelling is, kunt u inhoud simuleren die aan de React toepassing door een statische server van de Knoop plaatselijk op te stellen dient.
 
 Zie [documentatie voor productie-implementatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites) voor een diepgaander overzicht van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor voorvertoning van inhoud.
 
@@ -107,7 +107,7 @@ Zie [documentatie voor productie-implementatie](https://experienceleague.adobe.c
 
 Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introductie, door de onderstaande aanbevolen procedures te volgen.
 
-### Beveilig en schaal uw toepassing zonder hoofd alvorens {#secure-and-scale-before-launch} te lanceren
+### Beveilig en schaal uw toepassing zonder koppen voordat u {#secure-and-scale-before-launch} start
 
 1. Vorm [Symbolische Gebaseerde Authentificatie](/help/assets/content-fragments/graphql-authentication-content-fragments.md) met uw verzoeken GraphQL
 1. Configureer [Caching](/help/implementing/dispatcher/caching.md).
@@ -147,7 +147,7 @@ U kunt uw code beginnen op te stellen door de Ci/CD-pijplijn van de Manager van 
 
 Om gebruikers de best mogelijke ervaring te geven bij het gebruik van de AEM toepassing zonder kop, is het belangrijk dat u de belangrijkste prestatiewaarden in de gaten houdt, zoals hieronder wordt beschreven:
 
-* Voorvertoning- en productieversies van de app valideren
+* Voorvertoning- en productieversies van de toepassing valideren
 * Verifieer AEM statuspagina&#39;s voor huidige de status van de de dienstbeschikbaarheid
 * Toegang tot prestatierapporten
    * Leveringsprestaties
@@ -156,9 +156,9 @@ Om gebruikers de best mogelijke ervaring te geven bij het gebruik van de AEM toe
    * Auteursprestaties
       * Aantal gebruikers, aanvragen en laden controleren
 * Toepassings- en ruimtespecifieke prestatierapporten openen
-   * Als de server is geactiveerd, controleert u of de algemene meetwaarden groen/oranje/rood zijn en identificeert u vervolgens specifieke toepassingsproblemen
-   * Open dezelfde rapporten die hierboven zijn gefilterd naar app of space (bijvoorbeeld Photoshop-bureaublad, paywall)
-   * Logbestand-API&#39;s van Splunk gebruiken om toegang te krijgen tot service- en toepassingsprestaties
+   * Als de server is geactiveerd, controleert u of de algemene metriek groen/oranje/rood is en identificeert u vervolgens specifieke toepassingsproblemen
+   * Open de hierboven vermelde rapporten, maar filtert deze naar de toepassing of ruimte (bijvoorbeeld Photoshop-bureaublad, paywall)
+   * [Logboek-](/help/implementing/developing/introduction/logging.md#splunk-logs) APIstents van Splunk gebruiken om toegang te krijgen tot service- en toepassingsprestaties
    * Neem contact op met de Klantenondersteuning als er andere problemen zijn.
 
 ## Problemen oplossen {#troubleshooting}
@@ -169,7 +169,7 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 
 * Functionaliteit en prestaties valideren met de voorvertoningsversie van de toepassing
 * Functionaliteit en prestaties valideren met de productieversie van de toepassing
-* Valideren met de JSON-voorvertoning van de Content Fragment Editor
+* Valideren met de [JSON-voorvertoning](/help/assets/content-fragments/content-fragments-json-preview.md) van de Content Fragment Editor
 * Inspect de JSON in de clienttoepassing om te controleren of er problemen zijn met de clienttoepassing of levering
 * Inspect de JSON met GraphQL om te controleren of er problemen zijn met inhoud of AEM in cache.
 
@@ -180,7 +180,7 @@ Volg de onderstaande stappen om een bug efficiënt te kunnen aanmelden bij Suppo
 * Maak, indien nodig, screenshots van het probleem
 * Een manier documenteren om het probleem te reproduceren
 * Documenteer de inhoud waarmee de uitgave wordt gereproduceerd
-* Logboek een kwestie door het portaal van de Steun van de AEM met de aangewezen prioriteit
+* Logboek een kwestie door het portaal van de Steun van de AEM met de toepassingsPrioriteit
 
 ## De reis eindigt - of wel? {#journey-ends}
 
