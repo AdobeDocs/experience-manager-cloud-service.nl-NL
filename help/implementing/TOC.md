@@ -5,10 +5,10 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 30%
+source-wordcount: '981'
+ht-degree: 29%
 
 ---
 
@@ -138,7 +138,9 @@ ht-degree: 30%
       + [Referentiedocumenten SPA](developing/hybrid/reference-materials.md)
    + Beleidsbeheer zonder hoofd {#headless}
       + [Koploos en AEM](developing/headless/introduction.md)
+      + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + Aan de slag - hulplijnen {#getting-started}
+         + [Inleiding](developing/headless/getting-started/introduction.md)
          + [Een configuratie maken](developing/headless/getting-started/create-configuration.md)
          + [Een inhoudsfragmentmodel maken](developing/headless/getting-started/create-content-model.md)
          + [Een middelenmap maken](developing/headless/getting-started/create-assets-folder.md)
