@@ -1,11 +1,11 @@
 ---
 title: Headless Development voor AEM Sites als Cloud Service
 description: Leer hoe AEM als krachtige headless mogelijkheden van een Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 0%
+source-wordcount: '489'
+ht-degree: 1%
 
 ---
 
@@ -47,28 +47,12 @@ AEM als Cloud Service is een flexibel instrument voor het model van de implement
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
    * Directe inhoudlevering is ook mogelijk met de JSON-export van de [Content Fragment Core Component.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Hulplijnen {#getting-started} zonder koptekst Aan de slag
+## Uw eerste stappen met AEM zonder kop {#first-steps}
 
-Met de hulplijnen Aan de slag zonder koptekst kunt u in vijf stappen een eenvoudig pad inslaan voor het maken, beheren en leveren van ervaringen met AEM als Cloud Service. Elke gids bouwt op het vorige voort, zodat wordt het geadviseerd om hen grondig en in orde te onderzoeken.
+Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functies zonder kop. Ze zijn bedoeld voor verschillende gebruiksgevallen, maar bieden allemaal een stevig overzicht van AEM hoofdloze kenmerken.
 
-1. [Een configuratie maken](getting-started/create-configuration.md)
-1. [Een inhoudsfragmentmodel maken](getting-started/create-content-model.md)
-1. [Een middelenmap maken](getting-started/create-assets-folder.md)
-1. [Een inhoudsfragment maken](getting-started/create-content-fragment.md)
-1. [Inhoudsfragmenten openen en leveren](getting-started/create-api-request.md)
-
-## Publiek {#audience}
-
-De taken die worden beschreven in [Headless Getting Started Guides](#getting-started) zijn noodzakelijk voor een eenvoudige end-to-end demonstratie van AEM mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
-
-In een productiesituatie worden de taken echter meerdere malen door verschillende personen uitgevoerd. Bijvoorbeeld:
-
-* **** Beheerders hoeven de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch in te stellen.
-* **De** architecten van de informatie zullen over het algemeen nieuwe modellen toevoegen aangezien de behoeften van de organisatie evolueren.
-* **Inhoudsauteurs** maken voortdurend nieuwe inhoud als Inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
-
-Met de hulplijnen Aan de slag zonder kop wordt aangegeven wie de beschreven taken gewoonlijk uitvoert en hoe vaak.
-
-## Volgende stap {#next-step}
-
-Klaar om meer te leren? Begin vervolgens met het lezen van het eerste deel van de gids Aan de slag voor headless: [Een configuratie maken.](getting-started/create-configuration.md)
+| Resource | Beschrijving | Type | Publiek | Oost. Time |
+|---|---|---|---|---|
+| [Headless Developer Journey](/help/implementing/developing/headless-journey/overview.md) | Voor een uitgebreid overzicht van AEM headless eigenschappen van de theorie van de hoofdloze doorloop die met uw eerste project zonder kop leven, begin hier. | Hulplijn | Ontwikkelaars | 1 uur |
+| [Aan de slag met koppen](/help/implementing/developing/headless/getting-started/introduction.md) | Voor een kort overzicht van de belangrijkste functies voor AEM zonder kop bekijkt u dit korte overzicht. | Snel starten | Ontwikkelaars, beheerders | 20 minuten |
+| [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Als u een hands-on benadering verkiest, duikt dit leerprogramma direct in het creëren van een eenvoudig headless project. | Zelfstudie | Ontwikkelaars | 2 uur |
