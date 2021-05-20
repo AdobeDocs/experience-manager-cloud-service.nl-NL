@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
-translation-type: tm+mt
-source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -17,11 +16,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
+>OUTDATED - Deze conceptinhoud is vervangen door de nieuwe [documentatie voor Headless Developer Journey.](/help/journey-headless/developer/overview.md)
 
 In dit deel van de [AEM Headless Developer Journey,](overview.md) leert u over technologie zonder kop en waarom u deze zou gebruiken.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 Met dit document krijgt u inzicht in de levering van inhoud zonder kop en waarom het moet worden gebruikt. Na het lezen moet u:
 
@@ -74,7 +73,7 @@ De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, 
 
 Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud echt nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
-## {#decoupling} ontkoppelen
+## Ontkoppelen {#decoupling}
 
 De levering zonder kop is mogelijk door een reeks robuuste en flexibele API&#39;s (Application Programming Interfaces) beschikbaar te maken waar al uw ervaringen op kunnen tippen. De API dient als een gemeenschappelijke taal tussen de diensten, die hen op het inhoudsniveau door gestandaardiseerde inhoudslevering binden, maar hen de flexibiliteit toestaan om hun eigen oplossingen uit te voeren.
 
