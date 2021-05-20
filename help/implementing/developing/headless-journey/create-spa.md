@@ -4,20 +4,19 @@ description: In deze optionele vervolg van de AEM Headless Developer Journey lee
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+exl-id: 80b43aae-0027-45c8-b079-e3931d58597f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om de Toepassingen van de Enige Pagina (SPA) met AEM {#create-spa} te creëren
 
 >[!CAUTION]
 >
->WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
+>OUTDATED - Deze conceptinhoud is vervangen door de nieuwe [documentatie voor Headless Developer Journey.](/help/journey-headless/developer/overview.md)
 
 In deze optionele vervolg van de [AEM Headless Developer Journey,](overview.md) leert u hoe AEM koploze levering kunt combineren met traditionele full-stack CMS-functies en hoe u bewerkbare SPA kunt maken met AEM Editor-framework. Bovendien kunt u externe SPA integreren, waardoor bewerkingsmogelijkheden naar wens mogelijk worden.
 
@@ -38,7 +37,7 @@ Waarom leest u deze extra, optionele voortzetting van de reis? U herinnert zich 
 
 Dit artikel bouwt op uw kennis van AEM Headless voort door diepgaand te onderzoeken hoe u uw eigen enig-paginatoepassingen (SPA) kunt tot stand brengen die eigenlijk editable in AEM zijn. Op deze manier kunt u inhoud maken en deze zonder problemen naar een SPA verzenden, maar SPA kunt u deze in AEM bewerken.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 Dit document helpt u begrijpen hoe Toepassingen van één pagina worden ontwikkeld gebruikend het kader van de AEM SPA van de Redacteur. Nadat u dit document hebt gelezen, moet u:
 
