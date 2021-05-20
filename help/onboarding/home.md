@@ -2,11 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 35%
+source-wordcount: '1027'
+ht-degree: 33%
 
 ---
 
@@ -77,7 +76,8 @@ Volg deze sectie om te leren hoe een Beheerder van het Systeem of een gebruiker 
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
 | [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service |
-| [Handboek voor implementatie](/help/implementing/home.md) | Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie. |
+| [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
+| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als Cloud Service. |
