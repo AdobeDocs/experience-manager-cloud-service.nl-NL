@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metagegevens
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '994'
 ht-degree: 16%
 
 ---
@@ -84,9 +84,9 @@ In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL T
 
 ![metagegevens die zijn opgeslagen in het knooppunt asset in de gegevensopslagruimte](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. Zie hoe te [toelaten meta-gegevensschrijver](#enable-xmp-writeback).
+>De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. Zie hoe te [toelaten meta-gegevensschrijver](#enable-xmp-writeback). MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
 ### Terugschrijven XMP {#enable-xmp-writeback} inschakelen
 
