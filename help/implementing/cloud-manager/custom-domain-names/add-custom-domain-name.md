@@ -1,14 +1,13 @@
 ---
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
-translation-type: tm+mt
-source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
+exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
-
 
 # Een aangepaste domeinnaam {#adding-cdn} toevoegen
 
@@ -21,6 +20,8 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 * De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding verbonden aan die milieu&#39;s is.
 
 * Er kan slechts één domeinnaam tegelijk worden toegevoegd. Domeinen kunnen echter geen jokertekens bevatten. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
+
+* AEM als Cloud Service ondersteunt geen jokertekendomeinen.
 
 * Elke Cloud Manager-omgeving kan maximaal 100 aangepaste domeinen per omgeving hosten.
 
