@@ -1,14 +1,13 @@
 ---
 title: Maven-projectversiebeheer
 description: Maven Project Version Handling - Cloud Services
-translation-type: tm+mt
-source-git-commit: 8e470ed1ea30fd2fa59617fdb6755abf9a0d74a2
+exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
+source-git-commit: 4761d93fe4fc186dd92ba897f62b8de967d8b890
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 6%
+source-wordcount: '258'
+ht-degree: 5%
 
 ---
-
 
 # Maven-projectversiebeheer {#maven-project-version-handling}
 
@@ -20,6 +19,9 @@ Voor stage- en productieimplementaties genereert Cloud Manager een unieke, incre
 Deze versie wordt gezien op de pagina van de details van de pijpleidingsuitvoering evenals de activiteitenpagina. Wanneer een bouwstijl in werking wordt gesteld, wordt het Maven project bijgewerkt om deze versie te gebruiken en een markering wordt gecreeerd in de git bewaarplaats met die versie als zijn naam.
 
 Als de oorspronkelijke projectversie aan bepaalde criteria voldoet, voegt de bijgewerkte versie van het Maven-project zowel de oorspronkelijke projectversie als de door Cloud Manager gegenereerde versie samen. De tag gebruikt echter altijd de gegenereerde versie. Opdat deze samenvoeging plaatsvindt, moet de oorspronkelijke projectversie worden gevormd met precies drie versiesegmenten, bijvoorbeeld, 1.0.0 of 1.2.3, maar niet 1.0 of 1, en de originele versie moet niet in - SNAPSHOT eindigen.
+
+>[!NOTE]
+>Deze oorspronkelijke waarde van de projectversie moet statisch worden ingesteld in het `<version>`-element van het `pom.xml`-bestand op hoofdniveau in de vertakking van de it-opslagplaats.
 
 Als de oorspronkelijke versie wel aan deze criteria voldoet, wordt de gegenereerde versie als een nieuw versiesegment toegevoegd aan de oorspronkelijke versie. De gegenereerde versie wordt ook enigszins aangepast, zodat de versie correct wordt gesorteerd en verwerkt. Bijvoorbeeld, uitgaande van een gegenereerde versie van 2019.926.121356.000020490:
 
