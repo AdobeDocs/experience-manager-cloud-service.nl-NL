@@ -1,19 +1,18 @@
 ---
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel.
+>AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel. AEM als Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
 
 Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
 
