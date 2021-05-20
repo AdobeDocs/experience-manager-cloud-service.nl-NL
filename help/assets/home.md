@@ -1,16 +1,15 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner,Leader
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 23%
+source-wordcount: '297'
+ht-degree: 21%
 
 ---
-
 
 # [!DNL Assets] als  [!DNL Cloud Service] hulplijn  {#aem-assets-guide}
 
@@ -20,7 +19,7 @@ De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Asse
 
 * [Overzicht en nieuw](overview.md)
 * [Opvallende wijzigingen](/help/assets/assets-cloud-changes.md)
-* [Architectuur  [!DNL Assets] van [!DNL Cloud Service]](architecture.md)
+* [Architectuur van [!DNL Assets] as a [!DNL Cloud Service]](architecture.md)
 * [Overzicht van microservices voor assets](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] hulplijnen  {#aem-guides}
@@ -34,8 +33,9 @@ De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Asse
 | [Handboek voor beveiliging](/help/security/home.md) | Leer over belangrijke veiligheidsonderwerpen betreffende [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Onboarding](/help/onboarding/home.md) | Ga aan de slag met [!DNL Experience Manager] als [!DNL Cloud Service] — krijg toegang en bescherm belangrijke gegevens. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe te met, en beheer, [!DNL Experience Manager Sites] als [!DNL Cloud Service] te ontwerpen. |
+| [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
+| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Naar  [!DNL Experience Manager] een [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Begrijp de overgangsreis aan [!DNL Experience Manager] als [!DNL Cloud Service]. |
-| [Handboek voor implementatie](/help/implementing/home.md) | Pas [!DNL Experience Manager] aan, ontwikkelt en implementeert als [!DNL Cloud Service]. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe te om Connectors in [!DNL Experience Manager] als [!DNL Cloud Service] te integreren. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer over de achterste-eindverrichtingen van [!DNL Experience Manager] als [!DNL Cloud Service], zoals het indexeren en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op [!DNL Experience Manager] als [!DNL Cloud Service]. |
