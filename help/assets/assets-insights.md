@@ -2,37 +2,36 @@
 title: 'Asset Insights '
 description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: Business Practitioner
+feature: Asset Insights, Asset Reports
+role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '758'
 ht-degree: 2%
 
 ---
 
 # Asset Insights {#asset-insights}
 
-Met Asset Insights worden gebruikersclassificaties en gebruiksstatistieken bijgehouden van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
+Met de functie Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
 
 Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van Adobe Analytics te halen. Zie [Elementinzichten configureren](#configure-asset-insights) voor meer informatie.
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Zie [Elementinzichten configureren](#configure-asset-insights) voor meer informatie. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken.
 
 >[!NOTE]
 >
->Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+>Inzichten worden ondersteund en alleen voor afbeeldingen verstrekt.
 
 ## Statistieken weergeven voor een afbeelding {#viewing-statistics-for-an-image}
 
 U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
-1. Selecteer de afbeelding in de gebruikersinterface Elementen (UI) en tik **[!UICONTROL Properties]** op de werkbalk.
-1. Tik op **[!UICONTROL Insights]** op de pagina Eigenschappen.
+1. Selecteer de afbeelding in de gebruikersinterface Elementen en klik op **[!UICONTROL Properties]** op de werkbalk.
+1. Klik op **[!UICONTROL Insights]** op de pagina Eigenschappen.
 1. Controleer de gebruiksdetails voor het element op het tabblad **[!UICONTROL Insights]**. In de sectie **[!UICONTROL Score]** worden het totale gebruik en de prestatiesbronnen van een element beschreven.
 
    De score van het gebruik beschrijft het aantal tijden activa wordt gebruikt in diverse oplossingen.
@@ -43,14 +42,14 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
    * **[!UICONTROL Asset]**: Het aantal keren dat het actief deel uitmaakte van een collectie of samengesteld middel.
    * **[!UICONTROL Web & Mobile]**: Het aantal keren dat het middel deel uitmaakte van websites en apps.
-   * **[!UICONTROL Social]**: Het aantal keren dat het middel is gebruikt in oplossingen, zoals Adobe Social en Adobe Campaign.
+   * **[!UICONTROL Social]**: Het aantal keren dat het element is gebruikt in andere oplossingen, zoals een  [!DNL Adobe Campaign].
    * **[!UICONTROL Email]**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt.
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Omdat de functie Asset Insights doorgaans de gegevens van Solutions van Adobe Analytics ophaalt, wordt in de sectie Oplossingen de meeste recente gegevens mogelijk niet weergegeven. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa loopt om de gegevens van de Analyse terug te winnen.
+   >Omdat de functie Asset Insights de gegevens van Oplossingen regelmatig ophaalt van [!DNL Adobe Analytics], wordt in de sectie Oplossingen mogelijk niet de meest recente gegevens weergegeven. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa loopt om de gegevens van de Analyse terug te winnen.
 
 1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]**. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
@@ -60,7 +59,7 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
    >
    >In tegenstelling tot de gegevens in de sectie van Oplossingen, toont de sectie van de Statistieken van Prestaties de meest recente gegevens.
 
-1. Tik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Klik **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -69,7 +68,7 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
 
 1. Navigeer in de interface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
-1. Tik/klik op het pictogram Lay-out op de werkbalk en kies **[!UICONTROL Insights View]**.
+1. Klik op de optie Indeling op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -105,8 +104,8 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Afbeelding: Adobe Analytics for Assets Insights configureren in[!DNL Experience Manager]*
 
-1. Klik of tik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
-1. Tik op **[!UICONTROL Done]** nadat [!DNL Experience Manager] uw rapportsuite heeft ingesteld.
+1. Klik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
+1. Nadat [!DNL Experience Manager] uw rapportsuite heeft ingesteld, klikt u op **[!UICONTROL Done]**.
 
 ### Paginanummering {#page-tracker}
 
