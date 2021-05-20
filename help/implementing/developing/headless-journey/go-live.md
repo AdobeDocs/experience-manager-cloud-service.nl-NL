@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->WERK IN VOORTGANG - De opstelling van dit document is aan de gang en mag niet worden opgevat als volledig of definitief en mag niet worden gebruikt voor productiedoeleinden.
+>OUTDATED - Deze conceptinhoud is vervangen door de nieuwe [documentatie voor Headless Developer Journey.](/help/journey-headless/developer/overview.md)
 
 In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 
