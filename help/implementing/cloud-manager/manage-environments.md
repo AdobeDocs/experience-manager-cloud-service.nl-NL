@@ -1,14 +1,13 @@
 ---
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Omgevingen beheren {#manage-environments}
 
@@ -63,7 +62,7 @@ Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen 
    >Als, u nog niet opstelling uw niet productiepijplijn hebt, *Overzicht* toont het scherm de kaart van waar u uw niet productiepijplijn kunt tot stand brengen.
 
 
-## Omgeving {#viewing-environment} weergeven
+## Omgevingsdetails {#viewing-environment}
 
 De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie milieu&#39;s.
 
@@ -112,7 +111,6 @@ De verwijderingsoptie is ook beschikbaar als u op **Details** van de **Favoriete
 
 
 >[!NOTE]
->
 >Deze functie is niet beschikbaar voor de omgeving Productie/Werkgebied die is ingesteld in een productieprogramma dat is opgezet voor productiedoeleinden. De functie is echter beschikbaar voor Productie-/Stage-omgevingen in een Sandbox-programma.
 
 ## Toegang beheren {#managing-access}
@@ -190,5 +188,3 @@ Voer de onderstaande stappen uit om het toepassen van een IP-Lijst van gewenste 
 1. Identificeer de rij waar de IP regel van de Lijst van gewenste personen u wenst om ongedaan te maken vermeld is.
 1. **selecteren..** menu van het uiterst juiste eind van de rij.
 1. Selecteer de optie **Niet toepassen** en bevestig uw verzending.
-
-
