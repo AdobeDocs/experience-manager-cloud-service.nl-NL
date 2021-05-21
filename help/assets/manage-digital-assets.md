@@ -3,13 +3,12 @@ title: Digitale middelen beheren
 description: Meer informatie over verschillende methoden voor middelenbeheer en -bewerking.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: Middelenbeheer, Publiceren, Samenwerking, Middelenverwerking
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4358'
+source-wordcount: '4349'
 ht-degree: 10%
 
 ---
@@ -97,7 +96,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en selecteert u `Enter`. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager].
 
-   Op YouTube moeten labels publiceren en een koppeling naar YouTube hebben (als er een geschikte koppeling is gevonden).
+   YouTube vereist dat tags worden gepubliceerd en een koppeling naar YouTube hebben (als er een geschikte koppeling is gevonden).
 
    >[!NOTE]
    >
@@ -251,9 +250,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
 
-1. Selecteer het element en tik op het pictogram **[!UICONTROL Delete]** op de werkbalk.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Selecteer het element en klik op **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) op de werkbalk.
 
 1. Klik in het bevestigingsdialoogvenster op:
 
@@ -261,7 +258,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
    * **[!UICONTROL Delete]** ter bevestiging van de actie :
 
       * Als het element geen verwijzingen bevat, wordt het element verwijderd.
-      * Als het element verwijzingen bevat, wordt u via een foutbericht meegedeeld dat naar een of meer elementen wordt verwezen.**** U kunt selecteren  **[!UICONTROL Force Delete]** of  **[!UICONTROL Cancel]**.
+      * Als het element verwijzingen bevat, wordt u via een foutbericht meegedeeld dat **[!UICONTROL One or more assets are referenced]**. U kunt **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]** selecteren.
 
    >[!NOTE]
    >
@@ -269,10 +266,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
    >[!NOTE]
    >
-   >Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
-   >
-   >
-   >Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
+   >Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. U kunt het verwijderen van middelen waarnaar wordt verwezen, uitschakelen omdat verbroken koppelingen hierdoor worden veroorzaakt. Schakel de knop Kracht verwijderen uit met behulp van een bedekking.
 
 ## Elementen {#download-assets} downloaden
 
@@ -407,7 +401,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 >
 >De tijdlijn bevat verschillende [opties die specifiek zijn voor inhoudsfragmenten](content-fragments/content-fragments.md).
 
-## {#annotating} annoteren
+## Annotatie {#annotating}
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
