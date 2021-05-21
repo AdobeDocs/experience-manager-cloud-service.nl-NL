@@ -5,11 +5,10 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-translation-type: tm+mt
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +25,6 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
 * [Gebruikersinterface Experience Manager](#download-in-aem)
-* Gebruikersinterface voor het delen van elementen
 * [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -95,6 +93,6 @@ Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het
 >[!MORELIKETHIS]
 >
 >* [Met DRM beveiligde middelen downloaden](drm.md)
->* [Items downloaden met de bureaubladtoepassing Experience Manager op Windows of Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Elementen downloaden met de Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
+* [Items downloaden met de bureaubladtoepassing Experience Manager op Windows of Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+* [Elementen downloaden met de Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
