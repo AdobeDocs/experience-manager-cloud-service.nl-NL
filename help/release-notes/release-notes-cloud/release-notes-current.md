@@ -2,10 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-translation-type: tm+mt
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 0%
 
 ---
@@ -55,19 +54,17 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 ### Nieuw in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze verbetering maakt snellere downloads mogelijk.
+* [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze verbetering maakt snellere downloads mogelijk. Zie [Elementen downloaden](/help/assets/download-assets-from-aem.md).
 
-* Wanneer een element wordt gedownload via de optie voor het delen van koppelingen, kunt u nu kiezen of u de uitvoeringen wilt downloaden of niet. Eerder werden alle elementuitvoeringen gedownload.
-
-* Beheerders kunnen [!DNL Experience Manager] zodanig configureren dat de bron van elementen wordt verwijderd nadat ze een pakket met elementen hebben gemaakt. Zie [bulkopname van elementen](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Wanneer u een element downloadt via een koppelingsoptie, kunt u nu kiezen of u de uitvoeringen wilt downloaden of niet. Eerder werden alle elementuitvoeringen gedownload. Zie [downloadopties](/help/assets/download-assets-from-aem.md).
 
 * Wanneer het uitvoeren van een gezondheidscontrole om activa in bulk in te voeren, verstrekt de Experience Manager nu meer informatieredenen voor mislukkingen. Zie [bulkopname van elementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Bij het importeren van elementen met het gereedschap voor bulkimport hebben beheerders nu de optie om de bronbestanden te verwijderen nadat het importeren is voltooid. Zie [bulkopname van elementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Wanneer het uitgeven van een meta-gegevensschema, staat een nieuw gebied van de selecteur van de wortelweg beheerders toe om de selectie snel en gemakkelijk te maken, daardoor verminderend de configuratietijd.
+* Als u een metagegevensschema bewerkt, kunnen beheerders de selectie snel en eenvoudig maken met een nieuw veld voor de padkiezer. Deze verbetering helpt de configuratietijd voor metagegevens te verminderen.
 
-* Metagegevens van vele elementen kunnen bulksgewijs worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` toe als kolomkop in het CSV-bestand in plaats van het woord `Date`.
+* Metagegevens van vele elementen kunnen bulksgewijs worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` toe als kolomkop in het CSV-bestand in plaats van het woord `Date`. Zie [Metagegevens importeren](/help/assets/metadata-import-export.md).
 
 * Wanneer u elementen bladert in de kolomweergave, geeft een visuele indicator de goedgekeurde of geweigerde status van elk element weer.
 
