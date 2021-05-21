@@ -2,7 +2,7 @@
 title: Inleiding - SSL-certificaten beheren
 description: Inleiding - SSL-certificaten beheren
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -19,7 +19,9 @@ Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installe
 
 * AEM als Cloud Service ondersteunt alleen beveiligde `https`-sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Daarom zullen dergelijke klanten profiteren door één certificaat met meerdere domeinen te krijgen.
 
-* AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel. AEM als Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
+* AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel.
+
+* AEM als Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
 
 Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
 
