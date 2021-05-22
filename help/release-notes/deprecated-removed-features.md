@@ -1,14 +1,13 @@
 ---
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release specifiek voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-translation-type: tm+mt
-source-git-commit: e6ad571b7428f6fb7a11907e752ba670a722057c
+exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
-
 
 # Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
@@ -44,4 +43,4 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | [!DNL Dynamic Media] | Eerdere integraties met [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Gebruik [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) als [!DNL Cloud Service] meegeleverd bij [!DNL Experience Manager]. |
 | [!DNL Sites] | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager]. |
 | [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de [!DNL Experience Manager]-opslagruimte niet toegankelijk zijn tijdens runtime. |
-| [!DNL Assets] | [[!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) services is niet beschikbaar. | Gebruik [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) voor integratie met [!DNL Adobe Creative Cloud]. |
+| [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Gebruik [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) voor integratie met [!DNL Adobe Creative Cloud]. |
