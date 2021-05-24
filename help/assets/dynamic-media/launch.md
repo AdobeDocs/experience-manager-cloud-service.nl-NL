@@ -4,7 +4,7 @@ description: Meer informatie over de extensie Dynamic Media Viewers voor Platfor
 feature: Elementrapporten
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
 workflow-type: tm+mt
 source-wordcount: '6270'
 ht-degree: 9%
@@ -15,7 +15,9 @@ ht-degree: 9%
 
 ## Wat is de integratie van Dynamic Media Viewers met Adobe Analytics en Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 Met de nieuwe *Dynamic Media Viewers*-extensie voor Platform launch en Dynamic Media Viewers 5.13 kunnen klanten van Adobe Analytics en Platform launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Viewers in hun configuratie voor Platform launches.
 
@@ -668,7 +670,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. Voor de pagina van de Configuratie van Adobe IMC, bij de upper-left hoek, klik **[!UICONTROL Create]**.
-1. Klik op de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** op **[!UICONTROL Experience Platform Launch]**.
+1. Klik op de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** op **[!UICONTROL Experience Platform Data Collection]**.
 1. Schakel **[!UICONTROL Create new certificate]** in en voer in het tekstveld een betekenisvolle waarde voor het certificaat in. Bijvoorbeeld *AdobeLaunchIMSCert*. Klik op **[!UICONTROL Create certificate]**.
 
    Het volgende Info-bericht wordt weergegeven:
