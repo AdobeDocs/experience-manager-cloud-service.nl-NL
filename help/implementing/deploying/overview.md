@@ -3,10 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Implementeren
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -101,7 +100,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Mappen (toevoegen, wijzigen, verwijderen)
    * Bewerkbare sjablonen (toevoegen, wijzigen, verwijderen)
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
-   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) over installatiekoppen, die gebruikers toestaan om hen uit te voeren omvatten).
+   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) over installatiekoppelingen. Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
 
 U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5 documentatie.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -114,7 +113,7 @@ Alle meegeleverde pakketten van derden moeten worden gevalideerd als zijnde AEM 
 
 Zoals hierboven vermeld, moeten klanten met bestaande codebacken zich houden aan de herstructureringsexercitie van de repository die nodig is voor de wijzigingen in de 6.5 repository die worden beschreven in de [AEM 6.5 documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
-## {#repoinit} opnieuw aanwijzen
+## Opnieuw plaatsen {#repoinit}
 
 In de volgende gevallen verdient het de voorkeur om de handmatige codering van expliciete content creation `repoinit`-instructies in OSGI-fabrieksconfiguraties te gebruiken:
 
