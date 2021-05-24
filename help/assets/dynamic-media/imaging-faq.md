@@ -4,7 +4,7 @@ description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmer
 feature: Middelenbeheer, uitvoeringen
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2583'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 
 ## Zijn er licentiekosten verbonden aan Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager Dynamic Media (On-prem, AMS en Experience Manager als Cloud Service).
+Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en Experience Manager als Cloud Service).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Med
 
 Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
-Tik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen domein gebruikt, kunt u verzoeken over te gaan naar uw eigen douanedomein. Maak dit overgangsverzoek wanneer u een technisch steunkaartje voorlegt.
+Tik op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen domein gebruikt, kunt u verzoeken over te gaan naar uw eigen douanedomein. Maak dit overgangsverzoek wanneer u een technisch steunkaartje voorlegt.
 
 Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dynamic Media-licentie.
 
@@ -230,7 +230,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, vo
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
