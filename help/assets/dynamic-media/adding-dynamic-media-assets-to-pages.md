@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '2962'
+source-wordcount: '3078'
 ht-degree: 5%
 
 ---
@@ -166,6 +165,17 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 
    U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te tikken.
 
+* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
+
+   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+
+   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
+   * Onder Type voorinstelling wordt **[!UICONTROL Image Preset]** geselecteerd en wordt **[!UICONTROL RESS_IP]** geselecteerd in de vervolgkeuzelijst **[!UICONTROL Image Preset]**.
+
+   ![instelling voor pixelverhouding van apparaat voor voorinstelling afbeelding](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL Title]** - Wijzig de titel van de afbeelding.
 
 * **[!UICONTROL Alt Text]** - Voeg een titel aan de afbeelding toe voor gebruikers die afbeeldingen hebben uitgeschakeld.
@@ -179,7 +189,6 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 * **[!UICONTROL Width]** - Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarde leeg laat, wordt het element adaptief.
 
 * **[!UICONTROL Height]** - Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarde leeg laat, wordt het element adaptief.
-
 
 #### Bij het werken met video {#when-working-with-video}
 
@@ -233,6 +242,18 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
    U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
 * **[!UICONTROL Enable Aspect Ration match]** - Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
+
+* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
+
+   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+
+   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
+
+   * Onder Type voorinstelling is de optie **[!UICONTROL Smart Crop]** geselecteerd.
+
+   ![instelling voor pixelverhouding van apparaat voor slim uitsnijden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Title]** - Wijzig de titel van de slimme-uitsnijdafbeelding.
 
