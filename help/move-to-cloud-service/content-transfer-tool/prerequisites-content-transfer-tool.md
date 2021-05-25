@@ -1,16 +1,18 @@
 ---
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
-source-git-commit: ebe12a71df610a68c43048667136e331c1bd8f86
+source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Voorwaarden voor het gereedschap Inhoud overbrengen {#prerequisites}
 
-In de volgende tabel staan de voorwaarden voor het gebruik van het gereedschap Inhoud overbrengen. Controleer alle onderstaande overwegingen:
+In de volgende tabel staan de voorwaarden voor het gebruik van het gereedschap Inhoud overbrengen.
+
+Controleer alle onderstaande overwegingen:
 
 | Overwegingen | Wat wordt momenteel ondersteund |
 |--- |--- |
@@ -18,3 +20,7 @@ In de volgende tabel staan de voorwaarden voor het gebruik van het gereedschap I
 | Grootte van segmentwinkel | Content Transfer Tool biedt momenteel ondersteuning voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. |
 | Totale grootte van opslagplaats voor inhoud <br>*(opslag van inhoud + gegevensopslag)* | Content Transfer Tool is ontworpen voor het overbrengen van inhoud tot 10 TB. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. |
 | Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen werkt niet voor het migreren van de inhoud in onveranderlijke paden, zoals `“/etc”`. <br>Raadpleeg  [Common Repository ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) Restructurering voor meer informatie over de reorganisatie van opslaglocaties en workflowmodellen. |
+
+## Volgende {#whats-next}
+
+Nadat u de voorwaarden hebt gecontroleerd, kunt u nu leren hoe u het gereedschap Inhoud overbrengen kunt uitvoeren. Raadpleeg [Het gereedschap Inhoud overbrengen gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) voor meer informatie.
