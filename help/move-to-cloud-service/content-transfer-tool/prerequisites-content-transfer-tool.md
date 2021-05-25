@@ -1,9 +1,9 @@
 ---
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
-source-git-commit: ea179642442b7b246df3096fa52d94f9b5e865ac
+source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Controleer alle onderstaande overwegingen:
 
 ## Volgende {#whats-next}
 
-Zodra u de eerste vereisten hebt gecontroleerd en hebt bepaald of u het Hulpmiddel van de Overdracht van de Inhoud in uw migratieproject kunt gebruiken, gelieve te verwijzen naar [Extra beste praktijken en overwegingen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) terwijl het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud.
+Zodra u de eerste vereisten hebt herzien en hebt bepaald of u het Hulpmiddel van de Overdracht van de Inhoud in uw migratieproject kunt gebruiken, verwijs naar [Extra beste praktijken en overwegingen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) terwijl het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud.
