@@ -1,14 +1,13 @@
 ---
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u toestaat om een middelweg in externe en absolute URL programmatically om te zetten.
-translation-type: tm+mt
-source-git-commit: 4c584ceadaa358120d1d4b4cabd7e21ced814b31
+exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # URL&#39;s {#externalizing-urls} extern maken
 
@@ -20,7 +19,7 @@ Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het
 
 ## Standaardgedrag van Externalzer en hoe te om {#default-behavior} met voeten te treden
 
-Buiten de doos, heeft de dienst Externalalizer waarden zoals `author-p12345-e6789.adobeaemcloud.com` en `publish-p12345-e6789.adobeaemcloud.com` reeds geplaatst zodat zonder enige tussenkomst, uw AEM als Cloud Service gebruikt uw douanedomein.
+Buiten het vak heeft de service Externalzer waarden zoals `author-p12345-e6789.adobeaemcloud.com` en `publish-p12345-e6789.adobeaemcloud.com`.
 
 Als u dergelijke waarden wilt overschrijven, gebruikt u de omgevingsvariabelen van Cloud Manager zoals beschreven in het artikel [OSGi configureren voor AEM als een Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en stelt u de vooraf gedefinieerde variabelen `AEM_CDN_DOMAIN_AUTHOR` en `AEM_CDN_DOMAIN_PUBLISH` in.
 
