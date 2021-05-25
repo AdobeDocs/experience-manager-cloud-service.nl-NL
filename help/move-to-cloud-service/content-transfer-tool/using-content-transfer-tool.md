@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 43%
+source-wordcount: '2833'
+ht-degree: 41%
 
 ---
 
@@ -54,6 +54,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het bron AEM systeem, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen blokken niet kunnen worden verwijderd (opschonen). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
 
 * Als u douaneindexen gebruikt, moet u ervoor zorgen om de douaneindexen met `tika` knoop te vormen alvorens het Hulpmiddel van de Overdracht van de Inhoud in werking te stellen. Raadpleeg [De nieuwe indexdefinitie voorbereiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) voor meer informatie.
+
+* Als u aanvullende onderdelen wilt maken, is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 ## Beschikbaarheid {#availability}
 
@@ -189,6 +191,7 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 >[!NOTE]
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
+>Bovendien is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen. Voer de onderstaande stappen uit:
 
