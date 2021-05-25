@@ -2,7 +2,7 @@
 title: Headless Development voor AEM Sites als Cloud Service
 description: Leer hoe AEM als krachtige headless mogelijkheden van een Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 1%
@@ -53,6 +53,6 @@ Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functi
 
 | Resource | Beschrijving | Type | Publiek | Oost. Time |
 |---|---|---|---|---|
-| [Headless Developer Journey](/help/implementing/developing/headless-journey/overview.md) | Voor een uitgebreid overzicht van AEM headless eigenschappen van de theorie van de hoofdloze doorloop die met uw eerste project zonder kop leven, begin hier. | Hulplijn | Ontwikkelaars | 1 uur |
+| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Voor een uitgebreid overzicht van AEM headless eigenschappen van de theorie van de hoofdloze doorloop die met uw eerste project zonder kop leven, begin hier. | Hulplijn | Ontwikkelaars | 1 uur |
 | [Aan de slag met koppen](/help/implementing/developing/headless/getting-started/introduction.md) | Voor een kort overzicht van de belangrijkste functies voor AEM zonder kop bekijkt u dit korte overzicht. | Snel starten | Ontwikkelaars, beheerders | 20 minuten |
 | [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Als u een hands-on benadering verkiest, duikt dit leerprogramma direct in het creëren van een eenvoudig headless project. | Zelfstudie | Ontwikkelaars | 2 uur |
