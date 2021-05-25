@@ -5,19 +5,18 @@ contentOwner: AG
 feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-translation-type: tm+mt
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2816'
-ht-degree: 25%
+source-wordcount: '2850'
+ht-degree: 24%
 
 ---
 
 # Aangesloten middelen gebruiken om DAM-elementen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen acquisities zijn die leiden tot heterogene infrastructuren die de moedermaatschappij samen wil gebruiken.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] versies, die het moederbedrijf samen wil gebruiken.
 
-Gebruikers kunnen webpagina&#39;s maken in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is het DAM-systeem (Digital Asset Management) dat de vereiste middelen voor websites levert. [!DNL Experience Manager] ondersteunt nu het bovenstaande gebruiksgeval door integratie  [!DNL Sites] en  [!DNL Assets].
+De functionaliteit Verbonden elementen ondersteunt het bovenstaande gebruiksgeval door [!DNL Experience Manager Sites] en [!DNL Experience Manager Assets] te integreren. Gebruikers kunnen webpagina&#39;s maken in [!DNL Sites] die de digitale elementen gebruiken van een afzonderlijke [!DNL Assets]-implementatie.
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
@@ -128,7 +127,7 @@ Voer de volgende stappen uit om deze verbinding te configureren.
 1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Gebruik dezelfde bedrijfsnaam in alle configuraties.
-   * Selecteer **[!UICONTROL Disabled by default]** op het lokale [!DNL Sites] in [!UICONTROL Dynamic Media sync mode]. Voor de implementatie van Sites hebt u alleen alleen-lezen toegang tot de [!DNL Dynamic Media]-account nodig.
+   * Selecteer **[!UICONTROL Disabled by default]** op het lokale [!DNL Sites] in [!UICONTROL Dynamic Media sync mode]. Voor de [!DNL Sites]-implementatie is alleen lezen-toegang tot de [!DNL Dynamic Media]-account nodig.
    * Selecteer **[!UICONTROL Selective Publish]** in de lokale [!DNL Sites] optie. **[!UICONTROL Publish Assets]** Selecteer **[!UICONTROL Sync All Content]** niet.
    * Bij externe [!DNL Assets]-implementatie selecteert u **[!UICONTROL Enabled by default]** in [!UICONTROL Dynamic Media sync mode].
 
@@ -206,8 +205,9 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
 * Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
-* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. Inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
-* [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk wordt bijgewerkt, worden alle eigenschappen weergegeven.
+* Bij het gebruik van [!DNL Dynamic Media] op [!DNL Sites]-pagina&#39;s wordt het oorspronkelijke element niet opgehaald en opgeslagen op de lokale implementatie. De `dam:Asset` knoop, de meta-gegevens, en de vertoningen die door [!DNL Assets] plaatsing worden geproduceerd worden allen gehaald op de [!DNL Sites] plaatsing.
+* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Content Fragments] en  [!DNL Experience Fragments] worden niet ondersteund.
+* [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk bij de [!DNL Sites] plaatsing wordt bijgewerkt, dan worden alle meta-gegevenseigenschappen getoond.
 * Alle [!DNL Sites] auteurs hebben leestemmingen op de opgehaalde exemplaren, zelfs als de auteurs tot de verre plaatsing DAM niet kunnen toegang hebben.
 * Geen API-ondersteuning om de integratie aan te passen.
 * De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren.
@@ -217,8 +217,8 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 * [!DNL Assets] implementatie op  [!DNL Adobe Managed Services] wordt ondersteund.
 * [!DNL Sites] kan tegelijkertijd verbinding maken met één  [!DNL Assets] opslagplaats.
-* Een licentie van [!DNL Assets] die als externe opslagruimte werkt.
-* Een of meer licenties van [!DNL Sites] die als lokale ontwerpimplementatie werken.
+* Er is een licentie van [!DNL Assets] vereist om als externe opslagruimte te werken.
+* Een of meer licenties van [!DNL Sites] die als lokale ontwerpimplementatie werken, zijn vereist.
 
 ### Gebruik {#usage}
 
