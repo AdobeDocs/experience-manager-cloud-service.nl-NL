@@ -6,10 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: Toegankelijkheid
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ Dynamic Media ondersteunt toetsenbordbesturing en ondersteunende hulpmiddelen, z
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media {#keyboard-support-in-dm}
 
-Aangezien Dynamic Media een insteekmodule is voor het Experience Managers van , is het meeste toetsenbordbesturingsgedrag hetzelfde als bij Experience Managers. De knop `Cancel` in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in Experience Manager Assets. Het reageert ook op de `Spacebar` toets zoals in de Elementen van de Experience Manager. Zie [sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Aangezien Dynamic Media een insteekmodule is voor [!DNL Experience Manager Assets], is het meeste gedrag voor toetsenbordbesturing hetzelfde als in [!DNL Experience Manager Assets]. De knop `Cancel` in Dynamic Media heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets]. Het reageert ook op de `Spacebar` toets zoals in [!DNL Experience Manager Assets]. Zie [sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die door de interface-elementen Individuele gebruikers in Dynamic Media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Toetsenbordbesturing in Dynamic Media gaat over het volgende:
 
