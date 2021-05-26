@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API's,middelen HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1402'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ In [!DNL Experience Manager] als [!DNL Cloud Service], kunt u de activa aan de c
 ![Overzicht van het directe binaire upload protocol](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Voer deze stappen uit in een externe toepassing en niet binnen [!DNL Experience Manager] JVM.
+Voer de bovenstaande stappen uit in een externe toepassing en niet in de JVM [!DNL Experience Manager].
 
 Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrijfsmiddelen. De verschillen ten opzichte van [!DNL Experience Manager] 6.5 zijn:
 
