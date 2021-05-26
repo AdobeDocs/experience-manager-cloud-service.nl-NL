@@ -2,13 +2,12 @@
 title: HTTP-API voor assets
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
+feature: Elementen HTTP-API,API's
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-translation-type: tm+mt
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 
 >[!NOTE]
 >
->Alle API-aanroepen met betrekking tot het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen) zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload-technical) in plaats daarvan.
+>Alle API-aanroepen met betrekking tot het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen) zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
 
 ## Contentfragmenten {#content-fragments}
 
@@ -275,5 +274,5 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 >[!MORELIKETHIS]
 >
->* [Referentiedocumenten voor ontwikkelaars voor [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Referentiedocumenten voor ontwikkelaar voor [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 
