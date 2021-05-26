@@ -2,14 +2,20 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release specifiek voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 6%
+source-wordcount: '484'
+ht-degree: 5%
 
 ---
 
 # Verouderde en verwijderde functies {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="Vervangen en verwijderde functies in AEM als Cloud Service"
+>abstract="AEM als Cloud Service heeft een implementatiemodel in de cloud. Bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers en op dit tabblad worden die functies weergegeven."
+
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies. Aangezien [!DNL Adobe Experience Manager] als [!DNL Cloud Service] een implementatiemodel in de cloud biedt, zijn ook bepaalde mogelijkheden en functies vervangen door in de cloud geïntegreerde tegenhangers.
 
