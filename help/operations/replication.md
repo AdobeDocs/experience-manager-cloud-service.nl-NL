@@ -2,10 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-translation-type: tm+mt
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 1%
 
 ---
@@ -83,7 +82,7 @@ Alternatief, kunt u dit ook bereiken door een Model van het Werkschema te creër
 
 * `replicateAsParticipant` (booleaanse waarde, standaardwaarde):  `false`). Indien gevormd als `true`, gebruikt de replicatie `userid` van het hoofd dat de deelnemersstap uitvoerde.
 * `enableVersion` (booleaanse waarde, standaardwaarde):  `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
-* `agentId` (tekenreekswaarde, standaardwaarde betekent dat alle ingeschakelde agents worden gebruikt).
+* `agentId` (tekenreekswaarde, standaardwaarde betekent dat alle ingeschakelde agents worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; Stel bijvoorbeeld de waarde in: publish
 * `filters` (tekenreekswaarde, standaard betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
    * `onlyActivated` - alleen paden die niet zijn gemarkeerd als geactiveerd, worden geactiveerd.
    * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
