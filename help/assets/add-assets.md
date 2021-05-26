@@ -4,8 +4,7 @@ description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a
 feature: Middelenbeheer, uploaden
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-translation-type: tm+mt
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 0%
@@ -32,7 +31,7 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -129,7 +128,7 @@ De grote leverancier van bedrijfsmiddelen kan een zeer groot aantal bedrijfsmidd
 
 Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Zie ook [use cases and methods](#upload-methods-comparison)
 
-* [API&#39;s voor middelenupload](developer-reference-material-apis.md#asset-upload-technical): Gebruik een aangepast uploadscript of een aangepast gereedschap waarmee API&#39;s kunnen worden gebruikt om aanvullende verwerking van elementen toe te voegen (bijvoorbeeld metagegevens vertalen of bestanden hernoemen), indien nodig.
+* [API&#39;s voor middelenupload](developer-reference-material-apis.md#asset-upload): Gebruik een aangepast uploadscript of een aangepast gereedschap waarmee API&#39;s kunnen worden gebruikt om aanvullende verwerking van elementen toe te voegen (bijvoorbeeld metagegevens vertalen of bestanden hernoemen), indien nodig.
 * [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
 * [Gereedschap](#asset-bulk-ingestor) voor bulkinvoer: Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij de implementatie  [!DNL Experience Manager].
 
@@ -210,7 +209,7 @@ Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam w
 
 ## Elementen uploaden of invoegen met behulp van API&#39;s {#upload-using-apis}
 
-Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [activaupload](developer-reference-material-apis.md#asset-upload-technical) sectie van de ontwikkelaarsverwijzing.
+Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [activaupload](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
@@ -232,5 +231,5 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 >* [[!DNL Adobe Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Info [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Technische referentie voor het uploaden van bedrijfsmiddelen](developer-reference-material-apis.md#asset-upload-technical)
+>* [Technische referentie voor het uploaden van bedrijfsmiddelen](developer-reference-material-apis.md#asset-upload)
 
