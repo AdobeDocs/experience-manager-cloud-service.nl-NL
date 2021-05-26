@@ -2,16 +2,15 @@
 title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets HTTP API
+feature: API's,middelen HTTP API
 role: Developer,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1401'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] Gebruiksgevallen, API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
 
@@ -65,7 +64,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 | Map kopiëren | ✓ | ✓ | - | ✓ | - | - |
 | Map verplaatsen | ✓ | ✓ | - | ✓ | - | - |
 
-## Elementen uploaden {#asset-upload-technical}
+## Elementen uploaden {#asset-upload}
 
 In [!DNL Experience Manager] als [!DNL Cloud Service], kunt u de activa aan de cloudopslag direct uploaden gebruikend HTTP API. De stappen voor het uploaden van een binair bestand zijn:
 
@@ -74,6 +73,9 @@ In [!DNL Experience Manager] als [!DNL Cloud Service], kunt u de activa aan de c
 1. [Verzend een HTTP-](#complete-upload) aanvraag om de server te laten weten dat de inhoud van het binaire bestand is geüpload.
 
 ![Overzicht van het directe binaire upload protocol](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+Voer deze stappen uit in een externe toepassing en niet binnen [!DNL Experience Manager] JVM.
 
 Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrijfsmiddelen. De verschillen ten opzichte van [!DNL Experience Manager] 6.5 zijn:
 
