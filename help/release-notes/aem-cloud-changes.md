@@ -1,27 +1,33 @@
 ---
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 9%
+source-wordcount: '882'
+ht-degree: 8%
 
 ---
-
 
 # Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
+>[!CONTEXTUALHELP]
+>id="aem_cloud_notable_changes"
+>title="Opvallende wijzigingen in AEM als Cloud Service"
+>abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen te begrijpen tussen AEM op locatie of in Adobe Managed Services in vergelijking met AEM als Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolutie van AEM als Cloud Service"
+
+
 >[!NOTE]
 >Dit document benadrukt de opmerkelijke veranderingen in AEM als geheel. Voor meer informatie en oplossingsspecifieke veranderingen zie:
 >
 >* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies
->* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
->* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies
+* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
+* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 De belangrijkste verschillen zijn te vinden op de volgende gebieden:
