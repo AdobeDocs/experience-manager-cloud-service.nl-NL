@@ -3,10 +3,10 @@ title: Werken met kiezers
 description: In deze video ziet u methoden waarmee u elementen kunt selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 12%
+source-wordcount: '692'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ In deze carrouselbanner gebruikt u bijvoorbeeld de productkiezer als u een hotsp
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een Adobe Experience Manager Sites-klant bent. De productkiezer vereist ook de Handel van de Experience Manager.
+Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een [!DNL Adobe Experience Manager Sites]-klant bent. De productkiezer vereist ook [!DNL Experience Manager Commerce].
 
 ## Producten selecteren in Dynamic Media {#selecting-products}
 
@@ -42,11 +42,11 @@ Gebruik de productkiezer om een product te kiezen als u een hotspot of afbeeldin
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt wijzigen waar de Experience Manager naar productgegevens bladert door op **[!UICONTROL Browse]** te tikken en naar een andere map te navigeren.
+   U kunt wijzigen waar [!DNL Experience Manager] naar productgegevens bladert door op **[!UICONTROL Browse]** te tikken en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tik **[!UICONTROL Sort by]** om te wijzigen of de Experience Manager op Nieuwste naar Oudste of op Nieuwste sorteert.
+   Tik op **[!UICONTROL Sort by]** om te wijzigen of [!DNL Experience Manager] nieuwste sorteert op oudst of oudst op nieuwste.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Gebruik de productkiezer om een product te kiezen als u een hotspot of afbeeldin
 
 ## Sites selecteren in Dynamic Media {#selecting-sites}
 
-Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen sites van Experience Managers.
+Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen [!DNL Experience Manager]-sites.
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
@@ -72,7 +72,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en navigeer naar een pagina in uw Experience Manager-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
+1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en navigeer naar een pagina in uw [!DNL Experience Manager]-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven Experience Manager-sitepagina.
+1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven [!DNL Experience Manager]-sitepagina.
 
 ## Elementen selecteren in Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Zie ook [Asset Picker](/help/assets/search-assets.md#asset-selector) voor meer i
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar de Experience Manager naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
+   U kunt wijzigen waar [!DNL Experience Manager] naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
