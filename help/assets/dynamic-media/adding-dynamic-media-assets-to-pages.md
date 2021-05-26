@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3062'
 ht-degree: 5%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 Als u de functionaliteit voor dynamische media wilt toevoegen aan assets die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360-media** rechtstreeks op de pagina toevoegen. U opent de modus Lay-out en schakelt de Dynamic Media-componenten in. Vervolgens voegt u deze componenten aan de pagina toe en voegt u elementen aan de component toe. De componenten voor dynamische media zijn slim: ze weten of u een afbeelding of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
 
-U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Experience Manager als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [embed](/help/assets/dynamic-media/embed-code.md) uw activa. Zie [geoptimaliseerde afbeeldingen leveren aan een responsieve site](/help/assets/dynamic-media/responsive-site.md) voor een responsieve website van derden.
+U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u [!DNL Adobe Experience Manager] als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [embed](/help/assets/dynamic-media/embed-code.md) uw activa. Zie [geoptimaliseerde afbeeldingen leveren aan een responsieve site](/help/assets/dynamic-media/responsive-site.md) voor een responsieve website van derden.
 
 >[!NOTE]
 >
->Zorg ervoor dat u elementen publiceert voordat u ze in Experience Manager aan pagina&#39;s toevoegt. Zie [Dynamic Media-middelen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Zorg ervoor dat u elementen publiceert voordat u deze aan pagina&#39;s toevoegt in [!DNL Experience Manager]. Zie [Dynamic Media-middelen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Een Dynamic Media-component toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
 **Een Dynamic Media-component aan een pagina toevoegen:**
 
-1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
+1. Open in [!DNL Experience Manager] de pagina waar u de Dynamic Media-component wilt toevoegen.
 1. Tik in het linkervenster op het pictogram **[!UICONTROL Components]** en filter vervolgens voor Dynamic Media.
 
    Als er geen lijst met Dynamic Media-componenten beschikbaar is, moet u waarschijnlijk de Dynamic Media-componenten inschakelen die u wilt gebruiken. Zie [Dynamic Media-componenten inschakelen](#enabling-dynamic-media-components).
@@ -55,7 +55,7 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
 Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u de componenten moet inschakelen die u wilt gebruiken.
 
-1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
+1. Open in [!DNL Experience Manager] de pagina waar u de Dynamic Media-component wilt toevoegen.
 1. Tik links van de werkbalk naast de pagina op het pictogram Pagina-informatie en tik vervolgens op **[!UICONTROL Edit Template]** in de vervolgkeuzelijst.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ De volgende Dynamic Media-componenten zijn beschikbaar:
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten beschikbaar worden gemaakt in de sjablooneditor voordat u ze kunt gebruiken. Nadat zij in de malplaatjeredacteur ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
+>Deze componenten zijn niet standaard beschikbaar en moeten beschikbaar worden gemaakt in de sjablooneditor voordat u ze kunt gebruiken. Nadat zij in de malplaatjeredacteur ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere [!DNL Experience Manager] component.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 
    Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+   Alle [!DNL Experience Manager] Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
 
    De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
    * Onder Type voorinstelling wordt **[!UICONTROL Image Preset]** geselecteerd en wordt **[!UICONTROL RESS_IP]** geselecteerd in de vervolgkeuzelijst **[!UICONTROL Image Preset]**.
@@ -247,7 +247,7 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
 
    Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+   Alle [!DNL Experience Manager] Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
 
    De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
 
