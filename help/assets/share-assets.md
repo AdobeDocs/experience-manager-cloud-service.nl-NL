@@ -1,36 +1,37 @@
 ---
-title: Elementen, mappen en verzamelingen delen als een koppeling
-description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen als hyperlink kunt delen binnen  [!DNL Experience Manager Assets] .
+title: Elementen, mappen en verzamelingen distribueren en delen
+description: Distribueer uw digitale elementen met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: Middelenbeheer, Samenwerking, Asset Distribution
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
-
 
 # Elementen delen en distribueren die worden beheerd in [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] als een [!DNL Cloud Service] te delen:
 
-* Delen als een koppeling.
+* [Delen als een koppeling](#sharelink).
 * [Elementen downloaden ](/help/assets/download-assets-from-aem.md) en afzonderlijk delen.
 * Delen met [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Delen met [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 * Delen met [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## Elementen delen als een koppeling {#sharelink}
+## Elementen delen als koppeling {#sharelink}
 
 Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share`-locatie kunnen de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
+
+![Dialoogvenster Delen van koppeling](assets/link-share-dialog.png)
 
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat [uitgaande e-mail is ingeschakeld](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
+>* Voordat u een koppeling met gebruikers deelt, [schakelt u uitgaande e-mails in](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
 
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt delen als koppeling.
@@ -181,7 +182,7 @@ Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij 
 
 Zie [hoe te om  [!DNL Assets] te vormen om het met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) te gebruiken.
 
-## Aanbevolen procedures en problemen oplossen {#bestpractices}
+## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
 * Als gebruikers de gedeelde elementen niet kunnen downloaden, moet u bij de AEM controleren wat de [downloadlimieten](#maxdatasize) zijn.
