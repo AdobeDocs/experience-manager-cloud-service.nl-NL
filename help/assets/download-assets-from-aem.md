@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -24,8 +24,9 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 
 U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Gebruikersinterface Experience Manager](#download-assets)
-* [Delen van koppeling](#link-share-download)
 * [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -65,15 +66,17 @@ Voer de volgende stappen uit om elementen te downloaden:
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
 
-## Elementen downloaden die worden gedeeld via het delen van koppelingen {#link-share-download}
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich eerst hoeven aan te melden bij [!DNL Assets]. Als u een URL wilt genereren om elementen te delen, gebruikt u de [functionaliteit Delen koppelen](/help/assets/share-assets.md#sharelink).
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-Wanneer gebruikers elementen downloaden van gedeelde koppelingen, gebruikt [!DNL Assets] een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor zeer grote downloads wordt het downloaden afgekapt in bestanden van 100 GB.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-In het Postvak IN wordt de verwerkingsstatus van elk archief weergegeven. Zodra de verwerking is voltooid, kunt u de archieven downloaden van inbox.
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![Postvak IN downloaden](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
