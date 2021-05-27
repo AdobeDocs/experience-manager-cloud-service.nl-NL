@@ -1,14 +1,13 @@
 ---
-title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
-description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
-translation-type: tm+mt
-source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
+title: Release-aantekeningen voor 2020.12.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
+description: Release-aantekeningen voor 2020.12.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
+exl-id: 16875180-1f23-477d-9d4d-e220998c4983
+source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
@@ -19,7 +18,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL E
 De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.12.0 is 17 december 2020.
 De volgende release (2021.1.0) vindt plaats op 28 januari 2021.
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
 * **[HTTP-API voor](/help/assets/content-fragments/assets-api-content-fragments.md)** inhoudsfragment: Voeg de mogelijkheid toe om variaties van inhoudsfragmenten toe te voegen/bij te werken en te verwijderen met de HTTP-API.
 
