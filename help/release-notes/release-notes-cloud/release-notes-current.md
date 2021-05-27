@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
+source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -43,12 +43,6 @@ De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
 * U kunt binnenkort de inhoud op een nieuwe [Voorvertoningslaag](/help/sites-cloud/authoring/fundamentals/previewing-content.md) controleren om de weergave van de uiteindelijke ervaring te simuleren zoals u dat zou doen op de laag Publiceren. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM als een Cloud Service-omgeving zal in de komende weken geleidelijk worden geïmplementeerd.
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
-
-### Nieuw in [!DNL Assets] {#what-is-new-assets}
-
-* U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [Elementen downloaden](/help/assets/download-assets-from-aem.md#link-share-download).
-
-   ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
 
 ### Nieuwe functies beschikbaar in het prereleasekanaal {#what-is-new-assets-prerelease}
 
