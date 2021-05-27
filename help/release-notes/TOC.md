@@ -5,11 +5,10 @@ breadcrumb-title: Release-opmerkingen
 user-guide-description: Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen.
 feature: Geen informatie
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
+source-git-commit: d27f9d394edef827a119212c9024ecfaf46d2ce8
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 30%
+source-wordcount: '122'
+ht-degree: 28%
 
 ---
 
@@ -20,6 +19,7 @@ ht-degree: 30%
 + Releaseopmerkingen {#release-notes}
    + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [Opmerkingen bij de release 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [Opmerkingen bij de release 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [Opmerkingen bij de release 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [Opmerkingen bij de release 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
@@ -39,3 +39,5 @@ ht-degree: 30%
 + [Opvallende wijzigingen in AEM Cloud Service](aem-cloud-changes.md)
 + [Bekende problemen](known-issues.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
++ [Verouderde API&#39;s](deprecated-apis.md)
++ [Prerelease-kanaal](prerelease.md)
