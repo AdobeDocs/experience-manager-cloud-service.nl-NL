@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
 
 # Elementen downloaden van [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden gebundeld in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. Er zijn maximaal 500 totale elementen per exporttaak toegestaan.
+U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden gebundeld in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
 * [Gebruikersinterface Experience Manager](#download-assets)
+* [Delen van koppeling](#link-share-download)
 * [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ Voer de volgende stappen uit om elementen te downloaden:
    | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstelling afbeelding](/help/assets/dynamic-media/image-presets.md). <br>Bovendien kunt u de grootte en maateenheid, de indeling, de kleurruimte, de resolutie en eventuele optionele afbeeldingsaanpassingen selecteren, zoals het omkeren van de afbeelding. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
+
+## Elementen downloaden die worden gedeeld via het delen van koppelingen {#link-share-download}
+
+Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich eerst hoeven aan te melden bij [!DNL Assets]. Als u een URL wilt genereren om elementen te delen, gebruikt u de [functionaliteit Delen koppelen](/help/assets/share-assets.md#sharelink).
+
+Wanneer gebruikers elementen downloaden van gedeelde koppelingen, gebruikt [!DNL Assets] een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor zeer grote downloads wordt het downloaden afgekapt in bestanden van 100 GB.
+
+In het Postvak IN wordt de verwerkingsstatus van elk archief weergegeven. Zodra de verwerking is voltooid, kunt u de archieven downloaden van inbox.
+
+![Postvak IN downloaden](assets/download-inbox.png)
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
