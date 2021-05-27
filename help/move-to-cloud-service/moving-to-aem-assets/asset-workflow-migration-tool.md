@@ -1,14 +1,13 @@
 ---
 title: De tool Asset Workflow Migration
-description: 'De tool Asset Workflow Migration '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: De tool Asset Workflow Migration
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 46%
+source-wordcount: '276'
+ht-degree: 29%
 
 ---
-
 
 # De tool Asset Workflow Migration {#asset-workflow-migration}
 
@@ -33,6 +32,8 @@ De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze 
 * `NUI_MIGRATED`: Gemigreerd naar een  [verwerkingsprofiel voor de Dienst](/help/assets/asset-microservices-configure-and-use.md) van de Asset compute.
 * `UNSUPPORTED`: Momenteel niet ondersteund in  [!DNL Experience Manager Assets] de vorm van een Cloud Service.
 
-## De tool Asset Workflow Migration installeren {#installing-tool}
+## Hulpprogramma {#use-workflow-migrator} voor migratie van bedrijfsmiddelen gebruiken
 
-Zie **[Git Resource: AEM Assets as a Cloud Service - Workflowmigratie](https://github.com/adobe/aem-cloud-migration)** voor meer informatie over het installeren en samenstellen van code van de bron.
+* **[!DNL Adobe I/O]CLI**: Adobe raadt u aan het hulpmiddel Asset Workflow Migration te gebruiken via  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] als een  [!DNL Cloud Service] coderefactoring-insteekmodule voor de  [!DNL Adobe I/O] CLI). Zie [Git-bron voor meer informatie over het installeren en gebruiken van de plug-in: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **Standalone-hulpprogramma**: Het Hulpprogramma voor migratie van bedrijfsmiddelen kan ook worden uitgevoerd als een zelfstandig hulpprogramma. Zie **[Git resource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - workflow migration](https://github.com/adobe/aem-cloud-migration)** voor meer informatie over het installeren en samenstellen van code uit de bron.
