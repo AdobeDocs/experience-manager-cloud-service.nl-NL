@@ -6,10 +6,9 @@ breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 feature: Authoring
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '310'
 ht-degree: 69%
 
 ---
@@ -35,6 +34,7 @@ ht-degree: 69%
       + [Paginacontent bewerken](authoring/fundamentals/editing-content.md)
       + [De Rich Text-editor](authoring/fundamentals/rich-text-editor.md)
       + [Pagina-eigenschappen](authoring/fundamentals/page-properties.md)
+      + [Inhoud voorvertonen](authoring/fundamentals/previewing-content.md)
       + [Pagina&#39;s publiceren](authoring/fundamentals/publishing-pages.md)
       + [Contentfragmenten](authoring/fundamentals/content-fragments.md)
       + [Ervaringsfragmenten](authoring/fundamentals/experience-fragments.md)
