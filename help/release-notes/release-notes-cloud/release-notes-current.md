@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
 * Tijdens het uploaden van zeer grote bestanden loopt [!DNL Experience Manager desktop app] vast. (CQ-4320942)
 * De werkbalkopties verschillen wanneer dezelfde verzameling in een map is geselecteerd en wanneer deze is geselecteerd uit een zoekresultaat. (CQ-4321406)
 
-#### Nieuw in Dynamic Media {#what-is-new-dm}
+#### Nieuw in [!DNL Dynamic Media] {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+* Dankzij de Pixelverhouding van Smart Imaging Device (DPR) en de optimalisatie van de netwerkbandbreedte kunt u beelden van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
    * Azië-Stille Oceaan 19 juli 2021.
 
 
-* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van de volgende generatie in Dynamic Media-levering (fmt URL-modifier).
+* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van volgende generatie in levering [!DNL Dynamic Media] (fmt URL-modifier).
 
    >[!NOTE]
    >
