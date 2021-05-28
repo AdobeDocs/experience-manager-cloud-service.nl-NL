@@ -2,10 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 12%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), aangezien dit artikel voortbouwt op deze lessen en concepten.
+>Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), aangezien dit artikel voortbouwt op deze lessen en concepten.
 
 Dit artikel beschrijft de veranderingen die aan Adobe Experience Manager Maven projecten worden vereist om als Cloud Service compatibel te worden AEM door ervoor te zorgen dat zij de splitsing van veranderbare en onveranderlijke inhoud eerbiedigen, gebiedsdelen worden gevestigd om niet-strijdige, deterministische plaatsingen tot stand te brengen en dat zij in een plaatsingsable structuur worden verpakt.
 
@@ -61,7 +60,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + Het Jar-bestand van de bundel OSGi wordt gegenereerd en rechtstreeks ingesloten in het hele project.
 
 + Het `ui.apps`-pakket bevat alle code die moet worden geïmplementeerd en wordt alleen geïmplementeerd op `/apps`. Veelvoorkomende elementen van het `ui.apps`-pakket zijn onder meer:
-   + [Componentdefinities en ](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) HTML-scripts
+   + [Componentdefinities en ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) HTML-scripts
       + `/apps/my-app/components`
    + JavaScript en CSS (via [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -206,7 +205,7 @@ Voor inhoudspakketten (`<packageType>content</packageType>`) **do not** is dit p
 >
 >Zie de sectie [POM XML-fragmenten](#xml-repository-structure-package) hieronder voor een volledig fragment.
 
-## Subpakketten insluiten in het containerpakket{#embeddeds}
+## Subpakketten insluiten in het Containerpakket{#embeddeds}
 
 Inhoud- of codepakketten worden in een speciale map &quot;side-car&quot; geplaatst en kunnen worden gebruikt voor installatie op AEM auteur, AEM publicatie of beide, met behulp van de `<embeddeds>`-configuratie van de FileVault Maven-plug-in. Merk op dat `<subPackages>` configuratie niet zou moeten worden gebruikt.
 
