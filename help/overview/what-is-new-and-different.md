@@ -1,14 +1,13 @@
 ---
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
-description: 'Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: d2786f51edcb84e3d206c400e4faaecb46a54981
+description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: d1ce126e-960c-4367-b741-af709dd81010
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 86%
+source-wordcount: '1883'
+ht-degree: 85%
 
 ---
-
 
 # Nieuwe en aangepaste functies {#what-is-new-and-what-is-different}
 
@@ -23,7 +22,7 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 * [Architectuur](#architecture)
 * [Upgrades](#upgrades)
 * [Cloud Manager](#cloud-manager)
-* [On-boarding](#onboarding)
+* [Onboarding](#onboarding)
 * [Ontwikkeling](#developing)
 * [Bewerkingen en prestaties](#operations-and-performance)
 * [Identity Management](#identity-management)
@@ -272,4 +271,4 @@ Zie voor meer informatie:
 * [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Inleiding tot AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
