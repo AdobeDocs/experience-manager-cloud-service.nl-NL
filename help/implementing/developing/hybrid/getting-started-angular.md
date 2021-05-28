@@ -1,24 +1,23 @@
 ---
-title: Aan de slag met SPA in AEM Gebruik van Hoek
-description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze is samengesteld en kunt u snel met uw eigen SPA aan de slag gaan met het hoekframework.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+title: Aan de slag met SPA in AEM Angular gebruiken
+description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe het wordt samengesteld, en staat u toe om met uw eigen SPA snel het kader van de Angular in gebruik te nemen.
+exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
 
-
-# Aan de slag met SPA in AEM Gebruikend Hoek {#getting-started-with-spas-in-aem-using-angular}
+# Aan de slag met SPA in AEM Angular {#getting-started-with-spas-in-aem-using-angular} gebruiken
 
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van SPA frameworks.
 
-De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. In dit artikel wordt een vereenvoudigde SPA over het Hoekkader gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld, zodat u snel aan de slag kunt met uw eigen SPA.
+De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel presenteert een vereenvoudigde SPA toepassing over het kader van de Angular, verklaart hoe het wordt samengesteld, die u toestaat om met uw eigen SPA snel in werking te stellen.
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het Hoekkader. Zie [Aan de slag met SPA in AEM - Reageren](getting-started-react.md) voor het corresponderende document voor het React-framework.
+>Dit artikel is gebaseerd op het kader van de Angular. Zie [Aan de slag met SPA in AEM - Reageren](getting-started-react.md) voor het corresponderende document voor het React-framework.
 
 ## Inleiding {#introduction}
 
@@ -40,7 +39,7 @@ Dit document loopt door de structuur van een vereenvoudigde SPA en illustreert h
 
 ## Afhankelijkheden, configuratie en gebouw {#dependencies-configuration-and-building}
 
-Naast de verwachte Hoekafhankelijkheid, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
+Naast de verwachte afhankelijkheid van Angulars, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
 
 ### Afhankelijkheden {#dependencies}
 
@@ -89,7 +88,7 @@ module.exports = {
 };
 ```
 
-### {#building} samenstellen
+### Gebouw {#building}
 
 Bij het ontwikkelen van de app wordt [Webpack](https://webpack.js.org/) benut voor omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van de clientbibliotheek. Daarom zal het bouwstijlbevel op lijken:
 
@@ -99,7 +98,7 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype {#aem-project-archetype} AEM
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
