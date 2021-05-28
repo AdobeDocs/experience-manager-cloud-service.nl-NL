@@ -2,9 +2,9 @@
 title: Headless Development voor AEM Sites als Cloud Service
 description: Leer hoe AEM als krachtige headless mogelijkheden van een Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ AEM als Cloud Service is een flexibel instrument voor het model van de implement
 1. Inhoud-API voor levering
    * De AEM GraphQL API ondersteunt de levering van contentfragmenten.
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
-   * Directe inhoudlevering is ook mogelijk met de JSON-export van de [Content Fragment Core Component.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+   * Directe inhoudlevering is ook mogelijk met de JSON-export van de [Content Fragment Core Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Uw eerste stappen met AEM zonder kop {#first-steps}
 
