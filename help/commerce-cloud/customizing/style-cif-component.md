@@ -7,14 +7,13 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-translation-type: tm+mt
-source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2549'
 ht-degree: 0%
 
 ---
@@ -72,7 +71,7 @@ De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema/d
 
 Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core-componenten door de CSS die door deze clientbibliotheken wordt beheerd, toe te voegen en te overschrijven. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is van essentieel belang.
 
-Het [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) is een speciaal [webpack](https://webpack.js.org/)-project om alle front-end elementen voor een project te beheren. Hierdoor kunnen front-end ontwikkelaars een willekeurig aantal talen en technologieën gebruiken, zoals [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) en nog veel meer.
+Het [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) is een speciaal [webpack](https://webpack.js.org/)-project om alle front-end elementen voor een project te beheren. Hierdoor kunnen front-end ontwikkelaars een willekeurig aantal talen en technologieën gebruiken, zoals [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) en nog veel meer.
 
 De `ui.frontend` module is ook een Maven module en geïntegreerd met het grotere project door het gebruik van een module NPM [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Tijdens een build kopieert de `aem-clientlib-generator` de gecompileerde CSS- en JavaScript-bestanden naar een clientbibliotheek in de module `ui.apps`.
 
@@ -82,7 +81,7 @@ De `ui.frontend` module is ook een Maven module en geïntegreerd met het grotere
 
 ## De laserstijl {#ui-frontend-module} bijwerken
 
-Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [Code IDE van Visual Studio](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [IDE van uw keus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [Code IDE van Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navigeer en breid **ui.frontend** module uit en breid de omslaghiërarchie uit aan: `ui.frontend/src/main/styles/commerce`:
 
@@ -179,7 +178,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    Deze clientbibliotheken worden niet beheerd door de module `ui.frontend`. In plaats daarvan bevatten deze clientbibliotheken CSS- en JavaScript-afhankelijkheden die door Adobe worden verschaft. De definitie voor deze clientbibliotheken vindt u in het `.content.xml`-bestand onder elke map.
 
-   **clientlib-base**  - Dit is een lege clientbibliotheek die eenvoudig de noodzakelijke afhankelijkheden van  [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) insluit. De categorie is `venia.base`.
+   **clientlib-base**  - Dit is een lege clientbibliotheek die eenvoudig de noodzakelijke afhankelijkheden van  [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) insluit. De categorie is `venia.base`.
 
    **ClientLib-cif**  - Dit is ook een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van  [AEM](https://github.com/adobe/aem-core-cif-components) van de Kern van CIF inbedt. De categorie is `venia.cif`.
 
@@ -446,7 +445,7 @@ Terugkeer aan winde en het geproduceerde project.
    ```
 
    >[!NOTE]
-   >Er zijn extra [de Opstelling van winde en Hulpmiddelen](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) die projectdossiers aan een lokale AEM instantie kunnen direct synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
+   >Er zijn extra [de Opstelling van winde en Hulpmiddelen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) die projectdossiers aan een lokale AEM instantie kunnen direct synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
 
 ## Bijgewerkt productteam {#view-updated-product-teaser} weergeven
 
@@ -474,7 +473,7 @@ U hebt zojuist uw eerste AEM CIF Core-component vormgegeven en u hebt een webpac
 
 ## Uitdaging {#bonus-challenge}
 
-Met het Stijlsysteem [AEM](/help/sites-cloud/authoring/features/style-system.md) kunt u twee stijlen maken die door de auteur van de inhoud in- en uitgeschakeld kunnen worden. [Het ontwikkelen met het Stijlsysteem ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
+Met het Stijlsysteem [AEM](/help/sites-cloud/authoring/features/style-system.md) kunt u twee stijlen maken die door de auteur van de inhoud in- en uitgeschakeld kunnen worden. [Het ontwikkelen met het Stijlsysteem ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
 
 ![Bonus Challenge - Stijl Systeem](../assets/style-cif-component/bonus-challenge.png)
 
@@ -482,7 +481,7 @@ Met het Stijlsysteem [AEM](/help/sites-cloud/authoring/features/style-system.md)
 
 * [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
-* [Een lokale AEM ontwikkelomgeving instellen](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Een lokale AEM ontwikkelomgeving instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-Side bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
-* [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [Ontwikkelen met het Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Ontwikkelen met het Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
