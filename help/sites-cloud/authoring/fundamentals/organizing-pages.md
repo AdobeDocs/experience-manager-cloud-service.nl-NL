@@ -1,14 +1,13 @@
 ---
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2552'
 ht-degree: 5%
 
 ---
-
 
 # Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
@@ -39,7 +38,7 @@ U kunt ook [mappen](#creating-a-new-folder) gebruiken om uw inhoud te ordenen.
 
 De structuur van een website kan worden beschouwd als een structuur die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titels worden getoond wanneer de paginainhoud wordt bekeken.
 
-In het volgende voorbeeld ziet u een voorbeeld van de [WKND-zelfstudie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-site, waar een artikel over skateparks ( `la-skateparks`) wordt geopend:
+In het volgende voorbeeld ziet u een voorbeeld van de [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-site, waar een artikel over skateparks ( `la-skateparks`) wordt geopend:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
