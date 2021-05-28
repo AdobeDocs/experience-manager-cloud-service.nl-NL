@@ -2,14 +2,13 @@
 title: Caching in AEM as a Cloud Service
 description: 'In cache plaatsen in AEM als Cloud Service '
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
-
 
 # Inleiding {#intro}
 
@@ -18,7 +17,7 @@ De regels kunnen op de dispatcherconfiguratie worden toegepast om het even welke
 
 Op deze pagina wordt ook beschreven hoe de cachegeheugen van de verzender ongeldig wordt gemaakt en hoe caching werkt op browserniveau met betrekking tot bibliotheken aan de clientzijde.
 
-## {#caching}
+## Caching {#caching}
 
 ### HTML/Tekst {#html-text}
 
@@ -73,7 +72,7 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
 * door gebruik te maken van AEM clientbibliotheekframework worden JavaScript- en CSS-code zodanig gegenereerd dat browsers deze oneindig in cache kunnen plaatsen, aangezien elke wijziging zich voordoet als nieuwe bestanden met een uniek pad.  Met andere woorden, HTML-code die verwijst naar de clientbibliotheken, wordt naar wens geproduceerd, zodat klanten nieuwe inhoud kunnen ervaren terwijl deze wordt gepubliceerd. Het cache-control wordt ingesteld op &#39;onveranderlijk&#39; of op 30 dagen voor oudere browsers die de waarde &#39;onveranderlijk&#39; niet respecteren.
 * Zie de sectie [Clientbibliotheken en versieconsistentie](#content-consistency) voor meer informatie.
 
-### Afbeeldingen en alle inhoud die groot genoeg is en in blokopslag {#images} is opgeslagen
+### Afbeeldingen en inhoud die groot genoeg is en in blokopslag is opgeslagen {#images}
 
 * standaard niet in cache geplaatst
 * kan op een fijner korrelig niveau door de volgende `mod_headers` richtlijnen worden geplaatst:
@@ -105,7 +104,7 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
 * standaard kan niet worden ingesteld met de variabele `EXPIRATION_TIME` die wordt gebruikt voor bestandstypen html/text
 * cache-vervaldatum kan worden ingesteld met dezelfde LocationMatch-strategie die in de html/text-sectie wordt beschreven door de juiste regex op te geven
 
-## Validatie {#disp} in cache-cache van verzending
+## Ongeldige validatie van cache-verzending {#disp}
 
 Over het algemeen is het niet nodig om de cachegeheugen van de verzender ongeldig te maken. In plaats daarvan moet u erop vertrouwen dat de verzender de cache vernieuwt wanneer de inhoud opnieuw wordt gepubliceerd en de CDN de headers voor het verlopen van de cache respecteert.
 
@@ -113,7 +112,7 @@ Over het algemeen is het niet nodig om de cachegeheugen van de verzender ongeldi
 
 Net als bij eerdere versies van AEM wordt de inhoud van de verzendingscache gewist wanneer u pagina&#39;s publiceert of de publicatie ervan ongedaan maakt. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren.
 
-Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende items uit de verzendingscache verwijderd tot een niveau (u kunt dit configureren met het [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende items uit de verzendingscache verwijderd tot een niveau (u kunt dit configureren met het [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Expliciete cachevalidatie van verzender {#explicit-invalidation}
 
@@ -124,8 +123,8 @@ Voorafgaand aan AEM als Cloud Service, waren er twee manieren om het berichtcher
 1. Roep de replicatieagent aan, die de publicatiedispatcher spoelagent specificeert
 2. De `invalidate.cache`-API direct aanroepen (bijvoorbeeld `POST /dispatcher/invalidate.cache`)
 
-De API-benadering van de verzender `invalidate.cache` wordt niet meer ondersteund omdat deze alleen geldt voor een specifiek verzender-knooppunt. AEM als Cloud Service werkt op het serviceniveau, niet op het niveau van de afzonderlijke knooppunten. De instructies voor validatie op de pagina [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) zijn daarom niet langer geldig voor AEM als Cloud Service.
-In plaats daarvan, zou de replicatie flush agent moeten worden gebruikt. Dit kan worden gedaan gebruikend de Replicatie API. De documentatie van replicatie API is beschikbaar [hier](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) en voor een voorbeeld van het spoelen van het geheime voorgeheugen, zie [API voorbeeldpagina](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifiek het `CustomStep` voorbeeld die een replicatieactie van type ACTIVATE aan alle beschikbare agenten uitgeeft. Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
+De API-benadering van de verzender `invalidate.cache` wordt niet meer ondersteund omdat deze alleen geldt voor een specifiek verzender-knooppunt. AEM als Cloud Service werkt op het serviceniveau, niet op het niveau van de afzonderlijke knooppunten. De instructies voor validatie op de pagina [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) zijn daarom niet langer geldig voor AEM als Cloud Service.
+In plaats daarvan, zou de replicatie flush agent moeten worden gebruikt. Dit kan worden gedaan gebruikend de Replicatie API. De documentatie van replicatie API is beschikbaar [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) en voor een voorbeeld van het spoelen van het geheime voorgeheugen, zie [API voorbeeldpagina](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifiek het `CustomStep` voorbeeld die een replicatieactie van type ACTIVATE aan alle beschikbare agenten uitgeeft. Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
 
 Dit wordt geïllustreerd in het onderstaande diagram.
 
