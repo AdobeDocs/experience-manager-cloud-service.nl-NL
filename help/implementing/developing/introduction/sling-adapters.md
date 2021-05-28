@@ -1,14 +1,13 @@
 ---
 title: Sling Adapters
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
-translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
-
 
 # Sling Adapters {#using-sling-adapters}
 
@@ -30,7 +29,7 @@ Er zijn de volgende gebruiksgevallen:
 
 * Het maken van sneltoetsen voor objecten waarvoor interne contextobjecten moeten worden doorgegeven.
 
-   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) van het verzoek, die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting gebaseerd zullen werken, zoals [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
+   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) van het verzoek, die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting gebaseerd zullen werken, zoals [`PageManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
 
 * Snelkoppeling naar services.
 
@@ -49,7 +48,7 @@ Hiervoor zijn verschillende redenen, waaronder:
 
 Het is belangrijk dat u de null-case netjes afhandelt. Voor jsp-renderingen kan het acceptabel zijn dat de jsp mislukt als dat resulteert in een leeg stuk inhoud.
 
-### {#caching}
+### Caching {#caching}
 
 Om prestaties te verbeteren, zijn de implementaties vrij om het voorwerp in het voorgeheugen onder te brengen dat van een `obj.adaptTo()` vraag is teruggekeerd. Als `obj` het zelfde is, is het teruggekeerde voorwerp het zelfde.
 
@@ -64,7 +63,7 @@ Er zijn verschillende manieren waarop `Adaptable.adaptTo()` kan worden geïmplem
 * door het object zelf; het implementeren van de methode zelf en het toewijzen aan bepaalde objecten.
 * Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), die willekeurige voorwerpen in kaart kan brengen.
 
-   De objecten moeten nog steeds de `Adaptable`-interface implementeren en [`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html) uitbreiden (die de `adaptTo`-aanroep aan een centrale adapterbeheerder doorgeeft).
+   De objecten moeten nog steeds de `Adaptable`-interface implementeren en [`SlingAdaptable`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html) uitbreiden (die de `adaptTo`-aanroep aan een centrale adapterbeheerder doorgeeft).
 
    Hierdoor kunnen koppelingen naar het `adaptTo`-mechanisme voor bestaande klassen worden gebruikt, zoals `Resource`.
 
@@ -74,9 +73,9 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
 
 ## Referentie {#reference}
 
-### Verschuiven {#sling}
+### Sling {#sling}
 
-[**Bronnen worden**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) aangepast aan:
+[**Bronnen worden**](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) aangepast aan:
 
 <table>
  <tbody>
@@ -97,16 +96,16 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
    <td>Keert een kaart van de eigenschappen terug, als dit een JCR-knoop-gebaseerd middel (of andere middel ondersteunend waardekaarten) is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Kan ook (eenvoudigere) worden bereikt door <br /> <code><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (behandelt ongeldige geval, enz.) te gebruiken.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Kan ook (eenvoudigere) worden bereikt door <br /> <code><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (behandelt ongeldige geval, enz.) te gebruiken.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>Uitbreiding van <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> waarmee de hiërarchie van bronnen kan worden gebruikt wanneer u eigenschappen zoekt.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
+   <td>Uitbreiding van <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> waarmee de hiërarchie van bronnen kan worden gebruikt wanneer u eigenschappen zoekt.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModisibleValueMap</a></td>
-   <td>Een uitbreiding van <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, die u toestaat om eigenschappen op die knoop te wijzigen.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModisibleValueMap</a></td>
+   <td>Een uitbreiding van <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, die u toestaat om eigenschappen op die knoop te wijzigen.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -133,81 +132,81 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
    <td>Retourneert de waarde(n) als dit een JCR-eigenschap-gebaseerde resource is (en de value-fit).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Als dit een op JCR-knooppunten gebaseerde bron is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Pagina</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Pagina</a></td>
    <td>Als dit een JCR-node-based resource is en het knooppunt een <code>cq:Page</code> (of <code>cq:PseudoPage</code>) is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
    <td>Als dit een <code>cq:Component</code> knoopmiddel is.</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">Ontwerp</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">Ontwerp</a></td>
    <td>Als dit een ontwerpknooppunt is (<code>cq:Page</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">Sjabloonmodel</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">Sjabloonmodel</a></td>
    <td>Als dit een <code>cq:Template</code> knoopmiddel is.</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blauwdruk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blauwdruk</a></td>
    <td>Als dit een <code>cq:Template</code> knoopmiddel is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">Element</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">Element</a></td>
    <td>Als dit een dam:Middelen van de knoop van Activa is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">Vertoning</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">Vertoning</a></td>
    <td>Als dit een dam is:Vertoning van activa (nt:dossier onder de vertoningsomslag van een dam:Assert)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
    <td>Als dit een <code>cq:Tag</code> knoopmiddel is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>Gebaseerd op de zitting JCR als dit een op JCR-Gebaseerde middel is en de gebruiker toestemmingen heeft om tot UserManager toegang te hebben.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Toestemming</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Toestemming</a></td>
    <td>Autorisable is de gemeenschappelijke basisinterface voor Gebruiker en Groep.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Gebruiker</a></td>
-   <td>De gebruiker is een speciale Authorizable die voor authentiek en kan worden verklaard.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Gebruiker</a></td>
+   <td>De gebruiker is een speciale Vergunning die kan worden voor authentiek verklaard en worden nagedacht.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
    <td>Zoekt onder de bron (of gebruik setSearchIn()) als dit een op JCR gebaseerde bron is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
    <td>Workflowstatus voor het opgegeven payload-knooppunt voor de pagina/workflow.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
    <td>Replicatiestatus voor de opgegeven resource of het JCR:content-subknooppunt (eerst ingeschakeld).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
    <td>Retourneert een aangepaste connectorbron voor bepaalde typen als dit een op JCR-knooppunten gebaseerde bron is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
    <td>Als dit een <code>cq:ContentSyncConfig</code> knoopmiddel is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
    <td>Als dit onder een <code>cq:ContentSyncConfig</code> knoopmiddel is.</td>
   </tr>
  </tbody>
 </table>
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolveradapts aan:
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolveradapts aan:
 
 <table>
  <tbody>
@@ -216,54 +215,54 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
    <td>De JCR-sessie van het verzoek, als dit een op JCR gebaseerde resourceoplosser is (standaardwaarde).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>Gebaseerd op de zitting JCR, als dit op JCR-Gebaseerde middeloplosser is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>Gebaseerd op de zitting JCR, als dit op JCR-Gebaseerde middeloplosser is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
    <td>De UserManager biedt toegang tot en middelen om machtigbare objecten, d.w.z. gebruikers en groepen, te onderhouden. De UserManager is gebonden aan een bepaalde Zitting.
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Toestemming</a> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Toestemming</a> </td>
    <td>De huidige gebruiker.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Gebruiker</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Gebruiker</a><br /> </td>
    <td>De huidige gebruiker.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">ExternalAlizer</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">ExternalAlizer</a></td>
    <td>Voor het externaliseren van absolute URLs, zelfs met uit het verzoekvoorwerp.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestadapts aan:
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestadapts aan:
 
 Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane AdapterFactory worden gebruikt.
 
-[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponse past zich aan:
+[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponse past zich aan:
 
 <table>
  <tbody>
@@ -276,16 +275,16 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### WCM {#wcm}
 
-**[Pagina&#39;s ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** worden aangepast aan:
+**[Pagina&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** worden aangepast aan:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td>
    <td>Bron van de pagina.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Gelabelde bron (== dit).</td>
   </tr>
   <tr>
@@ -299,24 +298,24 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
  </tbody>
 </table>
 
-**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** Componenten worden aangepast aan:
+**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** Componenten worden aangepast aan:
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
+| [Resource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
 |---|---|
-| [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | Gelabelde bron (== dit). |
+| [LabeledResource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | Gelabelde bron (== dit). |
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de component. |
 | ... | Alles waaraan de bron van de component kan worden aangepast. |
 
-**[Templateaanpassingen ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** aan:
+**[Templateaanpassingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** aan:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>Bron van de sjabloon.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Gelabelde bron (== dit).</td>
   </tr>
   <tr>
@@ -336,13 +335,13 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retourneert het thuisknooppunt van de gebruiker/groep. |
 |---|---|
-| [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Retourneert de replicatiestatus voor het thuisknooppunt van de gebruiker/groep. |
+| [ReplicationStatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Retourneert de replicatiestatus voor het thuisknooppunt van de gebruiker/groep. |
 
 #### DAM {#dam}
 
 **Elementen** worden aangepast aan:
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
+| [Resource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
 |---|---|
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Node of the asset. |
 | ... | Alles waaraan de middelen van het actief kunnen worden aangepast. |
@@ -351,7 +350,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 **Tags** aanpassen aan:
 
-| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
+| [Resource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
 |---|---|
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de tag. |
 | ... | Alles waaraan de bron van de tag kan worden aangepast. |
