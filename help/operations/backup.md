@@ -1,16 +1,21 @@
 ---
 title: Back-up en herstel in AEM als Cloud Service
-description: 'Back-up en herstel in AEM als Cloud Service '
-translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+description: Back-up en herstel in AEM als Cloud Service
+exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-
 # Back-up en herstel in AEM als Cloud Service
+
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_backuprestore"
+>title="Back-up en herstel"
+>abstract="AEM als Cloud Service kan de volledige toepassing (code en inhoud) van een klant terugzetten op specifieke, vooraf bepaalde tijden in de laatste zeven dagen, die wat op productie was vervangen. Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld."
 
 Mocht inhoud of gegevenscorruptie voorkomen, AEM als Cloud Service de volledige toepassing van een klant (code en inhoud) aan specifieke, vooraf bepaalde tijden in de laatste zeven dagen kan herstellen, die wat op productie was vervangen.
 Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of gebroken of knecht is, is het verkieslijk om het te bevestigen en naar een nieuwe versie vooruit te rollen eerder dan het van steun te herstellen. Back-up wordt uitgevoerd op een manier die geen invloed heeft op de prestaties tijdens de uitvoering van een toepassing.
