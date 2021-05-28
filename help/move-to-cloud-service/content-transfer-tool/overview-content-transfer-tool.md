@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 73%
+source-wordcount: '858'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ Als u in de opnamefase de deltacontent boven op de huidige content wilt toepasse
 
 Bekijk de onderstaande sectie voor meer informatie over richtlijnen en aanbevolen procedures voor het gebruik van de Content Transfer-tool:
 
-* Het is raadzaam om [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles voor de dataopslagplaats](https://helpx.adobe.com/nl/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) op de **bronrepository** uit te voeren om potentiële problemen te identificeren en de repository te verkleinen.
+* Het is raadzaam om [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles voor de dataopslagplaats](https://helpx.adobe.com/nl/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) op de **bronrepository** uit te voeren om potentiële problemen te identificeren en de repository te verkleinen.
 
 * Als de AEM Cloud CDN-configuratie (Content Delivery Network) is geconfigureerd met een lijst met toegestane IP&#39;s, moet u ervoor zorgen dat de IP&#39;s van de bronomgeving worden toegevoegd aan deze lijst, zodat de bronomgeving en de AEM Cloud-omgeving met elkaar kunnen communiceren.
 
