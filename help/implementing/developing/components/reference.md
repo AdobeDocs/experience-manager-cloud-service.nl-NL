@@ -1,14 +1,13 @@
 ---
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
-translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3657'
 ht-degree: 0%
 
 ---
-
 
 # Referentiehandleiding voor componenten {#components-reference-guide}
 
@@ -241,9 +240,13 @@ Zie de volgende bronnen voor meer informatie:
 
 ### Dialoogvenstervelden {#customizing-dialog-fields} aanpassen
 
+<!--
+Content not found
+
 >[!TIP]
 >
->Zie [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) op het aanpassen van dialooggebieden.
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster, moet u een nieuwe granite UI-veldcomponent maken.
 
@@ -447,7 +450,7 @@ Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of 
 
 ## Gedrag voorvertoning {#preview-behavior}
 
-Het [WCM Modus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
+Het [WCM Modus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
