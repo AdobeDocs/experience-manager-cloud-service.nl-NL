@@ -1,20 +1,19 @@
 ---
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2217'
 ht-degree: 1%
 
 ---
-
 
 # Predicate Reference {#query-builder-predicate-reference} van de Bouwer van de vraag
 
 ## Algemeen {#general}
 
-### root {#root}
+### basis {#root}
 
 Dit is de basisgroep voor voorspelling. Het steunt alle eigenschappen van een groep en staat het plaatsen van globale vraagparameters toe.
 
@@ -69,7 +68,7 @@ Dit is conceptueel `fulltext AND ( (path AND type) OR (path AND type) )`. Houd e
 * **`<predicate>`** - voegt geneste voorspellingen toe
 * **`N_<predicate>`** - voegt meerdere geneste voorspellingen tegelijk toe, zoals  `1_property, 2_property, ...`
 
-### orderby {#orderby}
+### ordonneren {#orderby}
 
 Op deze manier kunt u de resultaten sorteren. Als het opdracht geven door veelvoudige eigenschappen wordt vereist, moet dit predikaat veelvoudige tijden worden toegevoegd gebruikend het aantalprefix, zoals `1_orderby=first`, `2_oderby=second`.
 
@@ -79,9 +78,9 @@ Op deze manier kunt u de resultaten sorteren. Als het opdracht geven door veelvo
 * **`sort`** - sorteerrichting,  `desc` voor aflopend of  `asc` voor oplopend (standaard)
 * **`case`** - indien het  `ignore` wordt ingesteld om het sorteren ongevoelig te maken, hetgeen  `a` eerder wordt bedoeld  `B`; als de waarde leeg of weggelaten is, is de sortering hoofdlettergevoelig, wat betekent dat de waarde  `B` eerder komt  `a`
 
-## Voorspeld {#predicates}
+## Voorspellen {#predicates}
 
-### oolproperty {#boolproperty}
+### boolproperty {#boolproperty}
 
 Dit voorspelt overeenkomsten op booleaanse eigenschappen JCR. Accepteert alleen de waarden `true` en `false`. In het geval van `false`, zal het aanpassen als het bezit de waarde `false` heeft of als het helemaal niet bestaat. Dit kan handig zijn om te controleren op Booleaanse markeringen die alleen zijn ingesteld wanneer deze zijn ingeschakeld.
 
@@ -188,7 +187,7 @@ Het steunt facetextractie en verstrekt emmers voor elke unieke taalcode.
 
 * **`language`** - ISO-taalcode, bijvoorbeeld  `de`
 
-### mainasset {#mainasset}
+### hoofdmiddel {#mainasset}
 
 Deze voorspelling controleert of een knooppunt een DAM-hoofdactief is en geen subactief. Dit is eigenlijk elk knooppunt dat zich niet binnen een knooppunt sub assets bevindt. Merk op dat dit niet het `dam:Asset` knooptype controleert. U kunt deze voorspelling gebruiken door `mainasset=true` of `mainasset=false` in te stellen. Er zijn geen eigenschappen meer.
 
@@ -200,9 +199,9 @@ Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subacti
 
 * **`mainasset`** - booleaanse waarde,  `true` voor hoofdactiva,  `false` voor subactiva
 
-### memberOf {#memberof}
+### lidOf {#memberof}
 
-Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
 Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
 
@@ -327,7 +326,7 @@ Het steunt facetextractie voor de predikaten van de bewaarde vraag niet.
 
 * **`savedquery`** - pad naar de opgeslagen query (`String` eigenschap of  `nt:file` knooppunt)
 
-### vergelijkbaar {#similar}
+### gelijkaardig {#similar}
 
 Deze voorspelling is een zoekopdracht op basis van gelijkenis met de `rep:similar()` van JCR XPath.
 
@@ -362,7 +361,7 @@ De tag ondersteunt facetextractie en biedt emmers voor elke unieke tag, waarbij 
 * **`N_value`** - gebruik  `1_value`,  `2_value`... controleren op meerdere tag-id&#39;s (standaard gecombineerd met  `OR` , met  `AND` als  `and=true`)
 * **`property`** - eigenschap (of relatief pad naar eigenschap) om naar te kijken (standaard  `cq:tags`)
 
-### tagsearch {#tagsearch}
+### tagzoeken {#tagsearch}
 
 Op deze manier kunt u zoeken naar inhoud die is gecodeerd met een of meer tags door trefwoorden op te geven. Hiermee zoekt u eerst naar tags met deze trefwoorden in de titels en beperkt u het resultaat vervolgens tot alleen items die met deze trefwoorden zijn getagd.
 
@@ -375,7 +374,7 @@ Het ondersteunt geen facetextractie.
 * **`lang`** - alleen zoeken in een bepaalde gelokaliseerde tagtitel (bijvoorbeeld  `de`)
 * **`all`** - Booleaanse waarde om volledige labeltekst te doorzoeken, d.w.z. alle titels, beschrijving enz. (heeft voorrang op `lang`)
 
-### tekst {#type}
+### type {#type}
 
 Dit voorspel beperkt resultaten tot een specifiek JCR knooptype, zowel primaire knooptypes als mixintypes. Dit zal ook subtypes van dat knooptype vinden. Merk op dat de gegevensopslagplaats onderzoeksindexen de knooppunttypes voor efficiënte uitvoering moeten behandelen.
 
