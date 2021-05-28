@@ -1,14 +1,13 @@
 ---
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als Cloud Service (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken als Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 5%
 
 ---
-
 
 # Toegankelijke content maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
 
@@ -69,15 +68,15 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Hoe kan ik-niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan worden gedaan op het **Alternatieve gebied van de Tekst**; zie bijvoorbeeld de Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan worden gedaan op het **Alternatieve gebied van de Tekst**; zie bijvoorbeeld de Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Sommige buiten-de-doos Componenten van de Kern, zoals **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** verstrekken geen **Alternatieve Tekst** gebied om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er **Label** gebied (**[Toegankelijkheid](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tabel) voor de volledige component is.
+>Sommige buiten-de-doos Componenten van de Kern, zoals **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** verstrekken geen **Alternatieve Tekst** gebied om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er **Label** gebied (**[Toegankelijkheid](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tabel) voor de volledige component is.
 >
 >Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt` te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken).
 >
->Sommige buiten-de-doos Componenten van de Kern, zoals **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** verstrekken geen **Alternatieve Tekst** gebied om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er **Label** gebied (**[Toegankelijkheid](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tabel) voor de volledige component is.
+>Sommige buiten-de-doos Componenten van de Kern, zoals **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** verstrekken geen **Alternatieve Tekst** gebied om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er **Label** gebied (**[Toegankelijkheid](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tabel) voor de volledige component is.
 >
 >Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt`[ te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -232,7 +231,7 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
    * Maak een tweede versie van de video-inhoud voor uitgebreide audiobeschrijvingen. Dit vermindert de moeilijkheden verbonden aan het verstrekken van gedetailleerde audiobeschrijvingen binnen de hiaten tussen bestaande dialoog, door de audio en video op aangewezen punten tijdelijk te pauzeren. Hierdoor kan een veel langere audiobeschrijving worden gegeven voordat de handeling opnieuw wordt gestart. Zoals in het vorige voorbeeld, wordt dit het best verstrekt als facultatieve extra audiospoor om verstoring voor gebruikers te verhinderen die niet de extra beschrijving nodig hebben.
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. Dit moet, waar van toepassing, een vermelding bevatten over wie spreekt, een beschrijving van de instelling, gebeurtenissen of informatie die visueel worden gepresenteerd, en mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
-Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren.
+Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren.
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
@@ -460,7 +459,7 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 * [Werken met succescriteria 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Voldoen aan criteria 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Doorschijnbaar (1.4) {#distinguishable}
+### Doorneembaar (1.4) {#distinguishable}
 
 [Richtsnoer 1.4. Te onderscheiden: Het is voor gebruikers gemakkelijker om inhoud te zien en te horen, inclusief het scheiden van voorgrond en achtergrond.](https://www.w3.org/TR/WCAG/#distinguishable)
 
@@ -588,7 +587,7 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, moet u
 
 #### Doel - Tekst vergroten/verkleinen (1.4.4) {#purpose-resize-text}
 
-De bedoeling van dit criterium van Succes is ervoor te zorgen dat visueel teruggegeven tekst, met inbegrip van op tekst-gebaseerde controles (tekstkarakters die zijn getoond zodat zij [tegenover kunnen worden gezien. Teksttekens die nog steeds in gegevensvorm zijn, zoals ASCII (A1/>), kunnen met succes worden geschaald, zodat deze direct kunnen worden gelezen door mensen met een lichte visuele handicap, zonder dat het gebruik van ondersteunende hulpmiddelen, zoals een schermvergroting, vereist is. ] De gebruikers kunnen van het schrapen van al inhoud op de Web-pagina profiteren, maar de tekst is het meest kritiek.
+De bedoeling van dit criterium van Succes is ervoor te zorgen dat visueel teruggegeven tekst, met inbegrip van op tekst-gebaseerde controles (tekstkarakters die zijn getoond zodat zij [tegenover kunnen worden gezien. Teksttekens die nog steeds in gegevensvorm zijn, zoals ASCII (A1/>), kunnen met succes worden geschaald, zodat ze rechtstreeks kunnen worden gelezen door mensen met een lichte visuele handicap, zonder dat ondersteunende hulpmiddelen zoals een schermvergroting nodig zijn. ] De gebruikers kunnen van het schrapen van al inhoud op de Web-pagina profiteren, maar de tekst is het meest kritiek.
 
 #### Procedure - Formaat tekst wijzigen (1.4.4) {#how-to-meet-resize-text}
 
@@ -634,7 +633,7 @@ Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldi
 
 Hierbij wordt ervoor gezorgd dat gebruikers toegang hebben tot alle functionaliteit met een toetsenbord.
 
-### Toetsenbord (2.1.1) {#keyboard}
+### Toetsenbord (2.1.1)  {#keyboard}
 
 * Succescriterium 2.1.1
 * Niveau A
@@ -763,7 +762,7 @@ Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toege
 * [Werken met succescriterium 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [Voldoen aan criterium 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
 
-### Navigable (2.4) {#navigable}
+### Navigeerbaar (2.4) {#navigable}
 
 [Richtsnoer 2.4 Navigeerbaar: Biedt manieren om gebruikers te helpen navigeren, inhoud te zoeken en te bepalen waar ze zich bevinden.](https://www.w3.org/TR/WCAG/#navigable)
 
@@ -798,7 +797,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WC
 
 Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud van een webpagina snel identificeren zonder de pagina volledig te lezen. Dit is vooral handig wanneer meerdere webpagina&#39;s worden geopend op de tabbladen van de browser, omdat de paginatitel op het tabblad wordt weergegeven en deze daarom snel kan worden gevonden.
 
-#### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
+#### Hoe te om te ontmoeten - Getitelde pagina (2.4.2) {#how-to-meet-page-titled}
 
 Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel een adequate beschrijving geeft van de inhoud en het doel van de pagina, met name van eventuele unieke aspecten, zodat bezoekers snel kunnen zien of de inhoud al dan niet relevant is voor hun behoeften.
 
@@ -1287,7 +1286,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.3.4](https://www.w3.org/WAI/WC
 
 Maximaliseer verenigbaarheid met huidige en toekomstige gebruikersagenten, met inbegrip van ondersteunende technologieën.
 
-### Parseren (4.1.1) {#parsing}
+### Parseren (4.1.1)  {#parsing}
 
 * Succescriterium 4.1.1
 * Niveau A
