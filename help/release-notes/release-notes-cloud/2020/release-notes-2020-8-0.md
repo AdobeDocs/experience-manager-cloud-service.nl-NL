@@ -2,10 +2,9 @@
 title: Release-aantekeningen voor 2020.8.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.8.0.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 1%
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager beschreven als Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
 ### Nieuw in [!DNL Sites] {#what-is-new-sites}
 
@@ -24,7 +23,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 * Mogelijkheid om [Launches te maken](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 ### Nieuw in [!DNL Assets] {#what-is-new-assets}
 
@@ -41,9 +40,9 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [Aangepaste metagegevens met verwerkingsprofiel](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Een eenvoudigere downloadervaring voor gebruikers van het Brand Portal die beheerders kunnen configureren. Zie [Overzicht van downloadervaring](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [Overzicht van downloadervaring](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Voorvertoningen van PDF-documenten met een standaardkwaliteit en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [Overzicht documentviewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* Voorvertoningen van PDF-documenten met een native en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [Overzicht documentviewer](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
 * U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM als Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic]). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [De CDN-cache ongeldig maken met behulp van Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
