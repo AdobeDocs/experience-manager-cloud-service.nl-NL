@@ -1,9 +1,9 @@
 ---
 title: Verouderde API's
 description: Release-aantekeningen specifiek voor afgekeurde en verwijderde API's in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>org.apache.sling.settings</td>
     <td>AEM als Cloud Service ondersteunt geen uitvoermodi of toegang tot het bestandssysteem tijdens runtime. </td>
     <td>05-10-20</td>
-    <td>01-06-21</td>
+    <td>Eind 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
