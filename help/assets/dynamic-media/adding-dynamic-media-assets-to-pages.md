@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '2948'
 ht-degree: 5%
 
 ---
@@ -112,7 +112,7 @@ De volgende Dynamic Media-componenten zijn beschikbaar:
 
 ### Component: Dynamic Media {#dynamic-media-component}
 
-De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer hierop. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
+De Dynamic Media-component is slim. U hebt verschillende opties, of u nu een afbeelding of video toevoegt. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer hierop. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 
    U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te tikken.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
-   * Onder Type voorinstelling wordt **[!UICONTROL Image Preset]** geselecteerd en wordt **[!UICONTROL RESS_IP]** geselecteerd in de vervolgkeuzelijst **[!UICONTROL Image Preset]**.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![instelling voor pixelverhouding van apparaat voor voorinstelling afbeelding](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Title]** - Wijzig de titel van de afbeelding.
 
@@ -243,17 +243,17 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
 
 * **[!UICONTROL Enable Aspect Ration match]** - Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * Onder Type voorinstelling is de optie **[!UICONTROL Smart Crop]** geselecteerd.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![instelling voor pixelverhouding van apparaat voor slim uitsnijden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Title]** - Wijzig de titel van de slimme-uitsnijdafbeelding.
 
@@ -273,7 +273,7 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
 
 De interactieve component van Media is voor die activa die interactiviteit op hen zoals hotspots of beeldkaarten hebben. Als u een interactieve afbeelding, interactieve video of carrouselbanner hebt, gebruikt u de component **[!UICONTROL Interactive Media]**.
 
-De component Interactieve media is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. Bovendien reageert de viewer snel. De grootte van het scherm wordt automatisch aangepast op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
+De component Interactieve media is slim. U hebt verschillende opties, of u nu een afbeelding of video toevoegt. Bovendien reageert de viewer snel. De grootte van het scherm wordt automatisch aangepast op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
 
 >[!NOTE]
 >
