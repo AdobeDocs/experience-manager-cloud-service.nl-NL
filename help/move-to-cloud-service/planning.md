@@ -1,14 +1,13 @@
 ---
 title: Planningsfase
 description: Planningsfase
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 91%
+source-wordcount: '470'
+ht-degree: 88%
 
 ---
-
 
 # Planning {#planning-phase}
 
@@ -26,13 +25,13 @@ AEM as a Cloud Service biedt veel nieuwe functies en mogelijkheden voor het behe
 
 Er zijn echter een aantal verschillen tussen AEM On-Premise of in Adobe Managed Services in vergelijking met AEM as a Cloud Service.
 
-Raadpleeg [Belangrijke wijzigingen in AEM Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) voor meer informatie.
+Raadpleeg [Belangrijke wijzigingen in AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) voor meer informatie.
 
 ## Verouderde functies {#deprecated-features}
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
 
-Raadpleeg de [Verouderde functies](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) voor meer informatie over functies en mogelijkheden die als verouderd zijn gemarkeerd in Experience Manager as a Cloud Service.
+Raadpleeg de [Verouderde functies](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) voor meer informatie over functies en mogelijkheden die als verouderd zijn gemarkeerd in Experience Manager as a Cloud Service.
 
 ## De planningsfase begrijpen {#introduction}
 
@@ -60,4 +59,3 @@ Zodra u hebt ingeschat hoeveel werk nodig is om naar Cloud Service te migreren, 
 Als u nog geen KPI&#39;s (Key Performance Indicators) hebt vastgelegd, wordt het sterk aanbevolen dat u dit alsnog doet voor uw Adobe Experience Manager-implementatie, zodat uw team zich beter kan richten op de belangrijkste aspecten van de overgang.
 
 Raadpleeg [KPI&#39;s ontwikkelen](https://guided.adobe.com/welcome/aem/part6.html) om de juiste KPI&#39;s te kiezen voor uw bedrijfsdoelstellingen.
-
