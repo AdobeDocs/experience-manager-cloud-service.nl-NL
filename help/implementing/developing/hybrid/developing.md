@@ -1,14 +1,13 @@
 ---
 title: SPA ontwikkelen voor AEM
 description: Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een SPA voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPA om in mening te houden wanneer het opstellen van een ontwikkelde SPA op AEM.
-translation-type: tm+mt
-source-git-commit: dc6dc07fe62d3387e2c4bd9459734247dfe9c9b0
+exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
-
 
 # SPA ontwikkelen voor AEM {#developing-spas-for-aem}
 
@@ -29,7 +28,7 @@ Als u deze principes in gedachten houdt bij het ontwikkelen van uw SPA, is deze 
 
 Als u geen AEM ontwerpeigenschappen te hoeven steunen, kunt u een verschillend [SPA ontwerpmodel](#spa-design-models) moeten overwegen.
 
-### Draagbaarheid {#portability}
+### Overdraagbaarheid {#portability}
 
 Zoals bij het ontwikkelen van om het even welke component, zouden uw componenten op een zodanige manier moeten worden ontworpen dat hun draagbaarheid wordt gemaximaliseerd. Patronen die de draagbaarheid of herbruikbaarheid van de onderdelen in de weg staan, moeten worden vermeden om ervoor te zorgen dat de onderdelen compatibel, flexibel en duurzaam zijn.
 
@@ -55,7 +54,7 @@ Om het even welk statisch verpletterend werk tegen het [beginsel van portability
 
 ## Projectarchetype {#aem-project-archetype} AEM
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Ontwerpmodellen SPA {#spa-design-models}
 
@@ -148,7 +147,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
 ## AEM-agnost {#aem-agnostic}
 
-Deze codeblokken illustreren hoe uw React- en Hoekcomponenten niets nodig hebben dat specifiek is voor Adobe of AEM.
+Deze codeblokken illustreren hoe uw React- en Angular-componenten niets nodig hebben dat specifiek is voor Adobe of AEM.
 
 * Alles wat zich in de JavaScript-component bevindt, is AEM-agnostisch.
 * Nochtans specifiek voor AEM is dat de component JS aan een AEM component met de hulp moet worden in kaart gebracht MapTo.
@@ -163,7 +162,7 @@ De `MapTo` helper is de &quot;lijm&quot;die de achterkant en de front-end compon
 Voor meer informatie over het gebruiken van `MapTo` en het bouwen van SPA voor AEM in het algemeen, zie de Aan de slag gids voor uw gekozen kader.
 
 * [Aan de slag met SPA in AEM Reageren gebruiken](getting-started-react.md)
-* [Aan de slag met SPA in AEM Gebruik van Hoek](getting-started-angular.md)
+* [Aan de slag met SPA in AEM Angular gebruiken](getting-started-angular.md)
 
 ## AEM Architectuur en SPA {#aem-architecture-and-spas}
 
@@ -207,7 +206,7 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
 ## Volgende stappen {#next-steps}
 
 * [Aan de slag met SPA in AEM met ](getting-started-react.md) Reactshows hoe een basisSPA wordt gebouwd om met de SPA Redacteur in AEM te werken gebruikend Reageren.
-* [Aan de slag met SPA in AEM met behulp van ](getting-started-angular.md) Angularshows hoe een elementaire SPA is gemaakt om met de SPA Editor te werken in AEM met gebruik van Hoek.
+* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor in AEM Angular te werken.
 * [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
 * [WKND SPA ](wknd-tutorial.md) Projectis een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
 * [Het dynamische Model aan de Toewijzing van de Component voor ](model-to-component-mapping.md) SPAs verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
