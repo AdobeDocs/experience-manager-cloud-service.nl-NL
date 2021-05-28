@@ -2,11 +2,10 @@
 title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Magento en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
-translation-type: tm+mt
-source-git-commit: bc2f54d79a0e6138d551778f00fb19714d3adf74
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -59,7 +58,7 @@ De krachtige hulpmiddelen van CIF in AEM laten inhoudsscheppers toe om rijke en 
 
 ### Tijd-aan-Waarde (TTV)
 
-Versnelt projectontwikkeling met [AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [AEM Venia verwijzingsstorefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Projectarchetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaarloze inhoud &amp; handel).
+Versnelt projectontwikkeling met [AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [AEM Venia verwijzingsstorefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaarloze inhoud &amp; handel).
 
 CIF wordt gebouwd voor ononderbroken innovatie met een altijd bijgewerkte toe:voegen-op, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 
