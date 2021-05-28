@@ -1,14 +1,13 @@
 ---
 title: Technische stichtingen AEM
 description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
-translation-type: tm+mt
-source-git-commit: 750fded1564de2b11f6c104cc70befc4453405b4
+exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
+source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
-
 
 # Technische grondslagen AEM {#aem-technical-foundations}
 
@@ -37,7 +36,7 @@ De onderliggende inhoudopslagplaats en de bedrijfslogische lagen worden gebouwd 
 
 De JCR-standaard (Java Content Repository), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatievrije manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
 
-Het [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-pakket `javax.jcr.*` wordt gebruikt voor directe toegang tot en manipulatie van de inhoud van de opslagplaats.
+Het [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-pakket `javax.jcr.*` wordt gebruikt voor directe toegang tot en manipulatie van de inhoud van de opslagplaats.
 
 AEM is gebaseerd op een JCR.
 
@@ -81,7 +80,7 @@ Door zijn inhoud-centric filosofie, voert Sling een REST-oriented server uit en 
 * Zeer RESTful, niet alleen op het oppervlak; bronnen en representaties zijn op de juiste wijze gemodelleerd binnen de server
 * Hiermee verwijdert u een of meer gegevensmodellen
    * Andere contentbeheerframeworks vereisen mogelijk URL-structuur, zakelijke objecten en het DB-schema voor toegang tot een bron.
-   * Bij gebruik van Verschuiving wordt deze waarde beperkt tot: URL = resource = JCR-structuur
+   * Bij het gebruik van Verschuiven wordt dit beperkt tot: URL = resource = JCR-structuur
 
 ### URL-decompositie {#url-decomposition}
 
@@ -156,7 +155,7 @@ Als u het vorige voorbeeld gebruikt en `sling:resourceType` `hr/jobs` is, wordt:
 
 * GET/HEAD verzoeken en URLs die in `.html` (standaardverzoektypes, standaardformaat beëindigen) beëindigen
    * Het script is `/apps/hr/jobs/jobs.esp`; de laatste sectie van `sling:resourceType` vormt de bestandsnaam.
-* Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
+* POST-aanvragen (alle aanvraagtypen behalve GET/HEAD, de methodenaam moet in hoofdletters staan)
    * POST wordt gebruikt in de scriptnaam.
    * Het script is `/apps/hr/jobs/jobs.POST.esp`.
 * URL&#39;s in andere indelingen, die niet eindigen met `.html`
