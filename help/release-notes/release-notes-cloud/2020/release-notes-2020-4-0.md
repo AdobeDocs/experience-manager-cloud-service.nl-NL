@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.4.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 1%
+source-wordcount: '642'
+ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor Adobe Experience Manager als Cloud Service 2020.4.0 {#release-notes}
 
@@ -18,12 +17,12 @@ Deze pagina schetst de algemene releaseopmerkingen voor [!DNL Experience Manager
 
 De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.4.0 is 9 april 2020.
 
-## Nieuwe functies in elementen {#assets}
+## Nieuwe functies in middelen {#assets}
 
 Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Experience Manager Assets] en [!DNL Dynamic Media] in de huidige release.
 
-* [Brand ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Portalsupports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
-   * [!DNL Brand Portal] configuratie wordt voltooid door  [!DNL Adobe I/O] console. Zie [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) configureren.
+* [Brand ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Portalsupports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] de organisaties van hulp om aan hun marketing behoeften te voldoen door goedgekeurde merk en productactiva aan externe agentschappen, partners, interne teams, en wederverkopers voor download veilig te verdelen.
+   * [!DNL Brand Portal] configuratie wordt voltooid door  [!DNL Adobe I/O] console. Zie [Brand Portal configureren](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund met [!DNL Experience Manager] als Cloud Service.
 
 * [Adobe Asset ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) Linkv2.0 werkt met  [!DNL Experience Manager] als een Cloud Service. [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen creatieve en marketingmedewerkers in het proces voor het maken van inhoud door verbinding te maken  [!DNL Experience Manager Assets] met  [!DNL Creative Cloud] bureaubladapps  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] via  [!DNL Asset Link] het deelvenster in de app.
@@ -49,9 +48,9 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 >[!MORELIKETHIS]
 >
 >* [Over Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Brand-portal configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Brand Portal configureren](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Vorm Experience Manager om met de Verbinding van Activa te werken](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Workflow maken in Experience Manager met behulp van middelen-microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Workflow maken in Experience Manager met behulp van middelen-microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Nieuwe functies in Cloud Manager {#whats-new-cloud-manager}
