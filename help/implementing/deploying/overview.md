@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Implementeren
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,10 @@ De update van [AEM versie](/help/implementing/deploying/aem-version-updates.md) 
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen moeten aanpassen zodat ze zowel met AEM werken als met de updates van de versie van de Cloud Service als met de updates van de klant.
 
+<!--
 >[!NOTE]
->Aanbevolen wordt voor klanten met bestaande codesystemen de herstructureringsexercitie van de repository te doorlopen die wordt beschreven in de [AEM documentatie](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Klantreleases {#customer-releases}
 
@@ -40,8 +42,10 @@ De volgende video verstrekt een overzicht op hoog niveau over hoe te om code op 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->Aanbevolen wordt voor klanten met bestaande codesystemen de herstructureringsexercitie van de repository te doorlopen die wordt beschreven in de [AEM documentatie](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Inhoudspakketten implementeren via Cloud Manager en Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
    * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) over installatiekoppelingen. Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
 
-U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5 documentatie.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5 documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
