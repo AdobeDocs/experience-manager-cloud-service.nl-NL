@@ -2,9 +2,9 @@
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u toestaat om een middelweg in externe en absolute URL programmatically om te zetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In AEM, is **ExternalAlizer** de dienst OSGi die u toestaat om een middelweg pro
 
 Omdat een AEM als instantie van de Cloud Service zijn uiterlijk zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Raadpleeg [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) voor technische details van de service.
+Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Raadpleeg [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) voor technische details van de service.
 
 ## Standaardgedrag van Externalzer en hoe te om {#default-behavior} met voeten te treden
 
@@ -125,4 +125,4 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 >[!TIP]
 >
->U kunt meer voorbeelden in [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) vinden.
+>U kunt meer voorbeelden in [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) vinden.
