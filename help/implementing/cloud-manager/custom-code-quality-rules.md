@@ -2,10 +2,9 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 4%
 
 ---
@@ -650,7 +649,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 
 Om veiligheidsredenen, zijn de wegen die */config/ en /install/* bevatten slechts leesbaar door administratieve gebruikers in AEM en zouden slechts voor OSGi- configuratie en OSGi- bundels moeten worden gebruikt. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
 
-Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur gebruik van het `configPath` bezit op `cq:inplaceEditing` knoop om de nieuwe plaats te specificeren.
+Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur maak gebruik van het `configPath` bezit op `cq:inplaceEditing` knoop om de nieuwe plaats te specificeren.
 
 #### Niet-compatibele code {#non-compliant-code-config-install}
 
@@ -725,7 +724,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt do
 
 Om compatibel te zijn met het implementatiemodel van de Cloud Service, moeten afzonderlijke inhoudspakketten ofwel inhoud bevatten voor de onveranderlijke gebieden van de opslagplaats (dat wil zeggen dat `/apps and /libs, although /libs` niet door klantcode moet worden gewijzigd en een afzonderlijke schending veroorzaakt) of het veranderbare gebied (dat wil zeggen, alles anders), maar niet beide. Een pakket met zowel `/apps/myco/components/text and /etc/clientlibs/myco` is bijvoorbeeld niet compatibel met Cloud Service en zorgt ervoor dat een probleem wordt gerapporteerd.
 
-Raadpleeg [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie.
+Raadpleeg [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie.
 
 ### Reverse Replication Agents should not be used {#oakpal-reverse-replication}
 
@@ -737,7 +736,7 @@ Raadpleeg [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experien
 
 **Sinds**: Versie 2020.5.0
 
-Ondersteuning voor omgekeerde replicatie is niet beschikbaar in Cloud Service-implementaties, zoals beschreven in [Opmerkingen bij de release: Verwijderen van Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+Ondersteuning voor omgekeerde replicatie is niet beschikbaar in Cloud Service-implementaties, zoals beschreven in [Opmerkingen bij de release: Verwijderen van Replication Agents](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
