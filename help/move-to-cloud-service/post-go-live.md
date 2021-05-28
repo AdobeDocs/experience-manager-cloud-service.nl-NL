@@ -1,16 +1,23 @@
 ---
 title: Fase na Go-Live
 description: Fase na Go-Live
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '322'
+ht-degree: 73%
 
 ---
 
-
 # Na Go-Live {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="AEM"
+>abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console &amp; CRXDE Lite van de Ontwikkelaar om met het oplossen van problemenkwesties met AEM te helpen"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM als instrumenten voor de ontwikkeling van Cloud Servicen"
+
 
 In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opgeschoond. Het is ook tijd om de best practices te evalueren voor continue ontwikkeling en voor het beheer van de logbestanden.
 
@@ -44,4 +51,10 @@ Raadpleeg [Logbestanden openen en beheren](https://docs.adobe.com/content/help/e
 
 ### Aanvullende ondersteuning {#additional-support}
 
-Als u vragen hebt over toegang tot Cloud Service, neemt u contact op met uw Adobe-vertegenwoordiger of de Adobe AEM CQ-ondersteuningsportal.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Help en ondersteuning"
+>abstract="Neem contact op met ons AEM ondersteuningsteam om uitleg te krijgen of om eventuele zorgen weg te nemen."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
+
+Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van de Adobe of [Steun voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer details.
