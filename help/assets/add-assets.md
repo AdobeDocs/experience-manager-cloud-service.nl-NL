@@ -4,7 +4,7 @@ description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a
 feature: Middelenbeheer, uploaden
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 0%
@@ -217,7 +217,7 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 
 * Adobe raadt aan niet meer dan 1000 elementen toe te voegen in elke map in [!DNL Experience Manager Assets]. U kunt wel meer elementen aan een map toevoegen, maar er kunnen prestatieproblemen optreden, zoals een tragere navigatie naar dergelijke mappen.
 
-* Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [Asset Insights](/help/assets/assets-insights.md) is ingeschakeld om afbeeldingen te volgen of met [!DNL Adobe Analytics] te klikken, maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
+* Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [Assets Insights](/help/assets/assets-insights.md) is ingeschakeld om afbeeldingen bij te houden of met [!DNL Adobe Analytics] te klikken, maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
 
 * Sommige uploadmethoden verhinderen niet dat u elementen uploadt met [verboden tekens](#filename-handling) in de bestandsnamen. De tekens worden vervangen door het symbool `-`.
 
