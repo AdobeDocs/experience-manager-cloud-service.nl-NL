@@ -1,14 +1,13 @@
 ---
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
-translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 5%
 
 ---
-
 
 # Pagina-eigenschappen bewerken {#editing-page-properties}
 
@@ -18,7 +17,7 @@ U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhank
 
 De eigenschappen worden verdeeld over verscheidene lusjes.
 
-### Standaard {#basic}
+### Basis {#basic}
 
 * **Titel en tags**
 
@@ -149,10 +148,10 @@ De paginaminiatuur configureren
 
 * **Delen via sociale media**
 
-   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor [De kerncomponent delen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor [De kerncomponent delen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
    * **Delen door gebruikers voor Facebook inschakelen**
-   * **Gebruikersdeling inschakelen voor Pinterest**
+   * **Delen door gebruikers voor Pinterest inschakelen**
    * **Voorkeurswijziging XF**
       * De fragmentvariatie definiëren die wordt gebruikt voor het genereren van metagegevens voor de pagina
 
