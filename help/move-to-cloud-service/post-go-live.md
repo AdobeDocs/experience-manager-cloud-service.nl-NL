@@ -2,10 +2,10 @@
 title: Fase na Go-Live
 description: Fase na Go-Live
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 63%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM"
 >abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console &amp; CRXDE Lite van de Ontwikkelaar om met het oplossen van problemenkwesties met AEM te helpen"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM als instrumenten voor de ontwikkeling van Cloud Servicen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM als instrumenten voor de ontwikkeling van Cloud Servicen"
 
 
 In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opgeschoond. Het is ook tijd om de best practices te evalueren voor continue ontwikkeling en voor het beheer van de logbestanden.
@@ -32,7 +32,7 @@ De volgende tools zijn handig om problemen met AEM as a Cloud Service op te loss
 
 Foutopsporing van AEM as a Cloud Service-ontwikkelomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
 
-Raadpleeg [Implementeren voor AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
+Raadpleeg [Implementeren voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ Raadpleeg [Ontwikkelen met CRX/DE Lite](/help/implementing/developing/tools/crxd
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Raadpleeg [Logbestanden openen en beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
+Raadpleeg [Logbestanden openen en beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
 
 ### Aanvullende ondersteuning {#additional-support}
 
