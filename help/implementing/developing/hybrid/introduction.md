@@ -1,14 +1,13 @@
 ---
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
-translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1984'
 ht-degree: 0%
 
 ---
-
 
 # SPA Inleiding en Analyse {#spa-introduction}
 
@@ -32,7 +31,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 >[!TIP]
 >
->Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+>Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -61,7 +60,7 @@ Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA 
 #### Ontwikkelaars {#developers}
 
 * Ontwikkelaars willen een duidelijke scheiding tussen inhoud en presentatie.
-* Schone scheiding maakt het systeem uitbreidbaarder en maakt het mogelijk om onafhankelijk front-end te ontwikkelen.
+* Schone scheiding maakt het systeem uitbreidbaarder en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
@@ -79,12 +78,10 @@ Door de pagina op de client te renderen, reageren de pagina-elementen sneller en
 >
 >Raadpleeg de artikelen voor technische details over SPA werken in AEM:
 >* [Aan de slag met SPA in AEM Reageren gebruiken](getting-started-react.md)
->* [Aan de slag met SPA in AEM Gebruik van Hoek](getting-started-angular.md)
+* [Aan de slag met SPA in AEM Angular gebruiken](getting-started-angular.md)
 
->
->
 Raadpleeg het artikel voor een nadere uitleg van het ontwerp, de architectuur en de technische workflow van de SPA Editor:
->* [SPA Editor - Overzicht](editor-overview.md).
+* [SPA Editor - Overzicht](editor-overview.md).
 
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
@@ -116,10 +113,8 @@ Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de a
 Extra ontwerpgereedschappen, zoals het slepen en neerzetten van aanvullende componenten op de pagina, het opnieuw rangschikken van componenten en het wijzigen van de layout, worden ondersteund, net als in elke andere AEM.
 
 >[!NOTE]
->
->De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
->
->Als u wilt zien hoe dit werkt, gaat u verder naar het volgende gedeelte van dit artikel [SPA Apps en de AEM SPA Editor](#spa-apps-and-the-aem-spa-editor).
+De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
+Als u wilt zien hoe dit werkt, gaat u verder naar het volgende gedeelte van dit artikel [SPA Apps en de AEM SPA Editor](#spa-apps-and-the-aem-spa-editor).
 
 ## Apps en de AEM SPA Redacteur {#spa-apps-and-the-aem-spa-editor} SPA
 
@@ -184,7 +179,7 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 
-   Elke component kiest wat het blootstelt en hoe het (server-kant met HTML of cliënt-kant met React of Hoekig) wordt teruggegeven. Dit artikel richt zich op client-side rendering met React.
+   Elke component kiest wat het blootstelt en hoe het (server-kant met HTML of cliënt-kant met React of Angular) wordt teruggegeven. Dit artikel richt zich op client-side rendering met React.
 
 1. Het model kan pagina&#39;s ook groeperen zodat ze synchroon worden geladen, waardoor het aantal pagina&#39;s dat opnieuw moet worden geladen, afneemt.
 
@@ -227,24 +222,21 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
    Bepaalde specifieke klassenamen worden ook toegevoegd voor het markeren van plaatsaanduidingen en voor het slepen en neerzetten van elementen.
 
    >[!NOTE]
-   >
-   >Dit gedrag verschilt van gerenderde pagina&#39;s aan serverzijde in AEM, waar een `cq`-element is ingevoegd voor elke bewerkbare component.
-   >
-   >Deze benadering in de Redacteur van de SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
+   Dit gedrag verschilt van gerenderde pagina&#39;s aan serverzijde in AEM, waar een `cq`-element is ingevoegd voor elke bewerkbare component.
+   Deze benadering in de Redacteur van de SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
 
 ## Hoofdletters en headless in AEM {#headful-headless}
 
 SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Bovendien kan SPA worden gebruikt binnen AEM terwijl ook AEM wordt gebruikt om inhoud aan extra eindpunten zonder problemen te leveren.
 
 >[!TIP]
->
->Zie het document [Headful en Headless in AEM](/help/implementing/developing/headful-headless.md) voor meer informatie.
+Zie het document [Headful en Headless in AEM](/help/implementing/developing/headful-headless.md) voor meer informatie.
 
 ## Volgende stappen {#next-steps}
 
 Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redacteur betrekking heeft, neem een diepgaande duik in het begrijpen van hoe een SPA wordt gebouwd.
 
 * [Aan de slag met SPA in AEM met ](getting-started-react.md) Reactshows hoe een basisSPA is gemaakt om met de SPA Editor te werken in AEM Reageren
-* [Aan de slag met SPA in AEM met behulp van ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor te werken in AEM met behulp van Hoekig
+* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor in AEM Angular te werken
 * [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
 * [Het ontwikkelen van SPA voor ](developing.md) AEMbeschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.
