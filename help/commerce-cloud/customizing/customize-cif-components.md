@@ -7,18 +7,16 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2536'
 ht-degree: 0%
 
 ---
-
 
 # AEM CIF Core-componenten aanpassen {#customize-cif-components}
 
@@ -192,7 +190,7 @@ Daarna, zullen wij de bedrijfslogica van de Teaser van het Product uitbreiden do
 
 Sling Models worden uitgevoerd als Java en kunnen in **core** module van het geproduceerde project worden gevonden.
 
-Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [Code IDE van Visual Studio](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Gebruik [IDE van uw keus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [Code IDE van Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. In uw winde, navigeer onder **core** module aan: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -334,9 +332,9 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
 
 ## De opmaak van de producttaser {#customize-markup-product-teaser} aanpassen
 
-Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door [HTML manuscript](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. HTML Template Language (HTL) is een lichte sjabloontaal die AEM componenten gebruiken om markeringen dynamisch te renderen op basis van geschreven inhoud, zodat de componenten opnieuw kunnen worden gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
+Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door [HTML manuscript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. HTML Template Language (HTL) is een lichte sjabloontaal die AEM componenten gebruiken om markeringen dynamisch te renderen op basis van geschreven inhoud, zodat de componenten opnieuw kunnen worden gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
 
-In ons geval willen we een banner boven op het gummetje weergeven om aan te geven dat het product &quot;Eco Friendly&quot; is op basis van een aangepast kenmerk. Het ontwerppatroon voor [het aanpassen van de prijsverhoging](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is eigenlijk norm voor alle AEM Componenten, niet alleen voor de AEMComponenten van de Kern van CIF.
+In ons geval willen we een banner boven op het gummetje weergeven om aan te geven dat het product &quot;Eco Friendly&quot; is op basis van een aangepast kenmerk. Het ontwerppatroon voor [het aanpassen van de prijsverhoging](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is eigenlijk norm voor alle AEM Componenten, niet alleen voor de AEMComponenten van de Kern van CIF.
 
 1. In winde, navigeer en breid `ui.apps` module uit en breid de omslaghiërarchie uit aan: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer het `.content.xml` bestand.
 
@@ -352,7 +350,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
        componentGroup="Venia - Commerce"/>
    ```
 
-   Hierboven vindt u de componentdefinitie voor de Product Teaser Component in ons project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Dit is een voorbeeld van het creëren van een [Proxy component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunnen wij `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
+   Hierboven vindt u de componentdefinitie voor de Product Teaser Component in ons project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Dit is een voorbeeld van het creëren van een [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunnen wij `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
 
 1. Open het bestand `productteaser.html`. Dit is een kopie van het `productteaser.html`-bestand van het [CIF-productteam](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -392,7 +390,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
    Wanneer het roepen van een het Verschuiven Model methode in HTML wordt `get` en `is` gedeelte van de methode gelaten vallen en de eerste brief wordt verlaagd. Zo `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly`. Gebaseerd op de booleaanse waarde die van `.isEcoFriendly()` is teruggekeerd bepaalt als `<span>Eco Friendly</span>` wordt getoond.
 
-   Meer informatie over `data-sly-test` en andere [HTML-blokinstructies vindt u hier](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/block-statements.html#test).
+   Meer informatie over `data-sly-test` en andere [HTML-blokinstructies vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html#test).
 
 1. Sparen de veranderingen en stel de updates in om het gebruiken van uw Maven vaardigheden, van een terminal van de bevellijn te AEM:
 
@@ -496,8 +494,8 @@ Controleer de functionaliteit van de **New** badge die reeds in de Teaser van he
 
 ## Aanvullende bronnen {#additional-resources}
 
-- [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
 - [Aanpassen AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Kerncomponenten aanpassen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-- [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
