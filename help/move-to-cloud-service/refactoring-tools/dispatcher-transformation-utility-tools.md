@@ -2,11 +2,10 @@
 title: De tool AEM Dispatcher Converter
 description: De tool AEM Dispatcher Converter
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 51%
+source-wordcount: '337'
+ht-degree: 46%
 
 ---
 
@@ -26,13 +25,13 @@ Dispatcher is de Adobe Experience Manager-tool voor cache- en taakverdelingsbewe
 >[!NOTE]
 >Dispatcher wordt vooral gebruikt om de respons van een **AEM Publish-instantie** in de cache op te slaan, zodat u sneller kunt reageren en uw gepubliceerde, naar buiten gerichte website beter kunt beveiligen.
 
-Raadpleeg het [Dispatcher-overzicht](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over hoe Dispatcher werkt met caching, taakverdelingen en het retourneren van documenten.
+Raadpleeg het [Dispatcher-overzicht](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over hoe Dispatcher werkt met caching, taakverdelingen en het retourneren van documenten.
 
 ### Configuratie en testen van Apache en Dispatcher {#dispatcher-configurations-cloud}
 
 U moet leren hoe u de Apache- en Dispatcher-configuraties van AEM as a Cloud Service structureert, en hoe u deze lokaal kunt valideren en uitvoeren voordat u ze implementeert in een Cloud-omgeving.
 
-Raadpleeg [Dispatcher in de cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor meer informatie.
+Raadpleeg [Dispatcher in de cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor meer informatie.
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
