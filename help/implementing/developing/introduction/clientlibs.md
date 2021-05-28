@@ -1,18 +1,17 @@
 ---
 title: Client-Side bibliotheken gebruiken op AEM als Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
-translation-type: tm+mt
-source-git-commit: d4c031e17c0c83e44b687474502252c89ed37922
+exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2561'
 ht-degree: 0%
 
 ---
 
-
 # Client-Side bibliotheken gebruiken op AEM als een Cloud Service {#using-client-side-libraries}
 
-Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [front-end bouwt proces in het AEM archetype van het Project, ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) wordt het beheren van uw front-end code voor uw AEM project eenvoudig.
+Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [front-end bouwt proces in het AEM archetype van het Project, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) wordt het beheren van uw front-end code voor uw AEM project eenvoudig.
 
 Tot de voordelen van het gebruik van clientlibs in AEM behoren:
 
@@ -25,7 +24,7 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 >[!TIP]
 >
->Voor-eindontwikkelaars die CSS en Javascript voor AEM projecten creëren zouden zich met [AEM het Archetype van het Project en zijn geautomatiseerd front-end bouwstijlproces ook moeten vertrouwd maken.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Voor-eindontwikkelaars die CSS en Javascript voor AEM projecten creëren zouden zich met [AEM het Archetype van het Project en zijn geautomatiseerd front-end bouwstijlproces ook moeten vertrouwd maken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## Wat zijn clientbibliotheken {#what-are-clientlibs}
 
@@ -35,7 +34,7 @@ AEM verzamelt de CSS en Javascript van de site in één bestand, op een centrale
 
 ## Front-end ontwikkeling voor AEM als Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript, CSS, en andere front-end activa zouden in [ui.frontend module van het Archetype van het Project van de AEM moeten worden gehandhaafd.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript, CSS, en andere front-end activa zouden in [ui.frontend module van het Archetype van het Project van de AEM moeten worden gehandhaafd.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand, en deze automatisch insluiten in een `cq:clientLibraryFolder` in de opslagplaats.
 
@@ -90,7 +89,7 @@ Voor de toegang tot clientbibliotheken onder `/apps` wordt een proxyserver gebru
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
    * Als u statische bronnen opslaat in de map `resources`, kan er niet naar worden verwezen in een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
-   * Dit wordt typisch gedaan door het front-end bouwstijlproces van [AEM Project Archetype.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * Dit wordt typisch gedaan door het front-end bouwstijlproces van [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * U kunt bronbestanden desgewenst in submappen ordenen.
 1. Selecteer de map met de clientbibliotheek en klik op **Maken > Bestand maken**.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
@@ -125,7 +124,7 @@ Clientbibliotheken worden geladen via een helpersjabloon die door AEM wordt gebo
 
 Elke helpermalplaatje verwacht een `categories` optie voor het van verwijzingen voorzien van de gewenste cliëntbibliotheken. Deze optie kan ofwel een array van tekenreekswaarden zijn, ofwel een tekenreeks met een lijst met door komma&#39;s gescheiden waarden.
 
-[Raadpleeg de HTML-](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) documentatie voor meer informatie over het laden van clientlibs via HTML.
+[Raadpleeg de HTML-](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) documentatie voor meer informatie over het laden van clientlibs via HTML.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -149,7 +148,7 @@ U kunt dan &quot;haken&quot;in auteursJS door uw cliëntbibliotheken aan een uit
 
 AEM beschikt over verschillende gereedschappen voor foutopsporing en het testen van clientbibliotheekmappen.
 
-### Clientbibliothekendetecteren {#discover-client-libraries}
+### Clientbibliotheken {#discover-client-libraries} detecteren
 
 De component `/libs/cq/granite/components/dumplibs/dumplibs` genereert een pagina met informatie over alle clientbibliotheekmappen op het systeem. De `/libs/granite/ui/content/dumplibs` knoop heeft de component als middeltype. Als u de pagina wilt openen, gebruikt u de volgende URL (waarbij u de host en poort naar wens wijzigt):
 
@@ -184,7 +183,7 @@ Extra instellingen voor de clientbibliotheek kunt u beheren via het deelvenster 
 
 De extra omslageigenschappen omvatten staan controle van gebiedsdelen en bedden toe, maar zijn over het algemeen niet meer nodig en hun gebruik wordt ontmoedigd:
 
-* `dependencies`: Dit is een lijst van andere categorieën van de cliëntbibliotheek waarvan deze bibliotheekomslag afhangt. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te kunnen functioneren, moet ten minste een van de `categories` van `G` een van de `dependencies` van `F` zijn als er twee `cq:ClientLibraryFolder` knooppunten `F` en &lt;a6/> zijn.`G`
+* `dependencies`: Dit is een lijst van andere categorieën van de cliëntbibliotheek waarvan deze bibliotheekomslag afhangt. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te kunnen functioneren, moet ten minste een van de `categories` van `G` een van de `dependencies` van `F` zijn als er twee `cq:ClientLibraryFolder` knooppunten `F` en `G` zijn.
 * `embed`: Wordt gebruikt om code uit andere bibliotheken in te sluiten. Als knooppunt `F` knooppunten `G` en `H` insluit, is de resulterende HTML een samenvoeging van inhoud van knooppunten `G` en `H`.
 
 ### Koppelen aan afhankelijkheden {#linking-to-dependencies}
@@ -220,7 +219,7 @@ Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren d
 * **type:** String[]
 * **Waarde:** de waarde van de eigenschap category van het  `cq:ClientLibraryFolder` knooppunt dat moet worden ingesloten.
 
-#### Insluiten gebruiken om verzoekente minimaliseren {#using-embedding-to-minimize-requests}
+#### Insluiten gebruiken om verzoeken {#using-embedding-to-minimize-requests} te minimaliseren
 
 In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatieexemplaar wordt gegenereerd voor een standaardpagina, een relatief groot aantal `<script>`-elementen bevat.
 
@@ -273,7 +272,7 @@ Wanneer u het bestand `publicmain.css` opent, wordt de volgende code weergegeven
 1. Bekijk de paginabron wanneer de pagina wordt geladen.
 1. Klik op de koppeling die wordt opgegeven als de href voor het koppelingselement om het bestand te openen en de broncode weer te geven.
 
-### Voorprocessorsgebruiken {#using-preprocessors}
+### Voorprocessors {#using-preprocessors} gebruiken
 
 AEM biedt instelbare preprocessoren en meegeleverde pakketten met ondersteuning voor [YUI-compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript en [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) voor JavaScript waarbij YUI is ingesteld als AEM standaardpreprocessor.
 
@@ -320,7 +319,7 @@ cssProcessor: ["default:none", "min:yui"]
 jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
 ```
 
-##### Typescript aan preprocess en dan GCC omte kleven en te verduisteren {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
+##### Typescript aan preprocess en dan GCC om {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate} te kleven en te verduisteren
 
 ```javascript
 jsProcessor: [
