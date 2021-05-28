@@ -1,14 +1,13 @@
 ---
 title: Aan de slag met SPA in AEM Reageren gebruiken
 description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag gaan met het React-framework.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met SPA in AEM Reageren {#getting-started-with-spas-in-aem-using-react} gebruiken
 
@@ -18,7 +17,7 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het React-kader. Zie [Aan de slag met SPA in AEM - Hoek](getting-started-angular.md) voor het corresponderende document voor het hoekframework.
+>Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular zie [Aan de slag met SPA in AEM - Angular](getting-started-angular.md).
 
 ## Inleiding {#introduction}
 
@@ -96,7 +95,7 @@ module.exports = {
 };
 ```
 
-### {#building} samenstellen
+### Gebouw {#building}
 
 Bij het ontwikkelen van de app wordt [Webpack](https://webpack.js.org/) benut voor omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van de clientbibliotheek. Daarom zal het bouwstijlbevel op lijken:
 
@@ -106,7 +105,7 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype {#aem-project-archetype} AEM
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -263,7 +262,7 @@ Componenten in een toepassing van één pagina moeten regelmatig informatie uitw
 
 ## Volgende stappen {#next-steps}
 
-* [Aan de slag met SPA in AEM met behulp van ](getting-started-angular.md) Angularshows hoe een elementaire SPA is gemaakt om met de SPA Editor te werken in AEM met gebruik van Hoek.
+* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor in AEM Angular te werken.
 * [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
 * [WKND SPA ](wknd-tutorial.md) Projectis een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
 * [Het dynamische Model aan de Toewijzing van de Component voor ](model-to-component-mapping.md) SPAs verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
