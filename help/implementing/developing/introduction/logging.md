@@ -2,10 +2,9 @@
 title: Aanmelden voor AEM als Cloud Service
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevens te verzoeken die AEM als Cloud Service registreren.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2330'
 ht-degree: 2%
 
 ---
@@ -550,7 +549,7 @@ AEM logboeken bevinden zich in de map `crx-quickstart/logs`, waar de volgende lo
 * Logbestand HTTP-aanvraag AEM: `request.log`
 * Logbestand HTTP-toegang AEM: `access.log`
 
-Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor informatie over hoe te om de Dispatcher te beginnen.
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor informatie over hoe te om de Dispatcher te beginnen.
 
 De logbestanden ophalen:
 
