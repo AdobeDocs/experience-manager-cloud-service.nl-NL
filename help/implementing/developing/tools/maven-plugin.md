@@ -2,11 +2,10 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-translation-type: tm+mt
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 5%
+source-wordcount: '1847'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +33,7 @@ AEM als Cloud Service houdt zich aan de recentste beste praktijken voor pakketbe
 
 >[!TIP]
 >
->Zie het artikel [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie voor Cloud Servicen en de documentatie [AEM Projectarchetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) voor meer informatie. Beide worden volledig ondersteund voor AEM 6.5.
+>Zie het artikel [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie voor Cloud Servicen en de documentatie [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) voor meer informatie. Beide worden volledig ondersteund voor AEM 6.5.
 
 ## De insteekmodule {#obtaining-the-content-package-maven-plugin} voor het ophalen van het inhoudspakket
 
@@ -77,7 +76,7 @@ Tenzij anders aangegeven, gebruiken de doelstellingen en parameters van de plug-
 mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/packmgr/service.jsp"
 ```
 
-### Proxy&#39;s {#proxies}
+### Proxy {#proxies}
 
 De doelstellingen die volmachten voor AEM gebruiken de eerste geldige volmachtsconfiguratie die in de GeMaven montages wordt gevonden. Als geen volmachtsconfiguratie wordt gevonden, wordt geen volmacht gebruikt. Zie de parameter `useProxy` in de sectie [Algemene parameters](#common-parameters).
 
@@ -148,7 +147,7 @@ Hiermee wordt een pakket verwijderd uit Pakketbeheer.
 
 Alle parameters van het rm-doel worden beschreven in de sectie [Algemene parameters](#common-parameters).
 
-### {#uninstall} verwijderen
+### verwijderen {#uninstall}
 
 Hiermee wordt een pakket verwijderd. Het pakket blijft op de server staan in de toestand Niet-geïnstalleerd.
 
@@ -156,7 +155,7 @@ Hiermee wordt een pakket verwijderd. Het pakket blijft op de server staan in de 
 
 Alle parameters van het doel voor verwijderen worden beschreven in de sectie [Algemene parameters](#common-parameters).
 
-### pakket {#package}
+### package {#package}
 
 Maakt een inhoudspakket. De standaardconfiguratie van het pakketdoel bevat de inhoud van de map waarin gecompileerde bestanden worden opgeslagen. De uitvoering van het pakketdoel vereist dat de compilatiefase is voltooid. Het pakketdoel is gebonden aan de pakketfase van de Maven-levenscyclus.
 
@@ -266,4 +265,4 @@ De nieuwste AEM Project Archetype implementeert de pakketstructuur met best prac
 
 >[!TIP]
 >
->Zie het artikel [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie voor Cloud Servicen en de documentatie [AEM Projectarchetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) voor meer informatie. Beide worden volledig ondersteund voor AEM 6.5.
+>Zie het artikel [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie voor Cloud Servicen en de documentatie [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) voor meer informatie. Beide worden volledig ondersteund voor AEM 6.5.
