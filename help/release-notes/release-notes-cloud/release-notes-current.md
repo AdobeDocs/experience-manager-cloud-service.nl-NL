@@ -2,7 +2,7 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: dc66eca7b789cf3be1aeae3d63935362ab6f918a
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
@@ -100,7 +100,7 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM be
 ### Releasedatum {#release-date-cm-may}
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
-De volgende release is gepland voor 3 juni 2021.
+De volgende release is gepland voor 10 juni 2021.
 
 ### Wat is er nieuw?{#what-is-new-may}
 
