@@ -1,14 +1,13 @@
 ---
 title: Onderdelen
 description: Componenten vormen de fundamentele bouwsteen voor inhoudspagina's in AEM
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
-
 
 # Onderdelen {#components}
 
@@ -40,7 +39,7 @@ De [Componentenconsole](/help/sites-cloud/authoring/features/components-console.
 
 ## Kerncomponenten {#core-components}
 
-De [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) bieden flexibele en functies-rijke ontwerpfunctionaliteit, die essentiële inhoudstypen biedt om pagina&#39;s te maken.
+De [Kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en functies-rijke ontwerpfunctionaliteit, die essentiële inhoudstypen biedt om pagina&#39;s te maken.
 
 Zij bouwen gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
 
