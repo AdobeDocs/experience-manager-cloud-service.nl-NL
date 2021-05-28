@@ -5,10 +5,10 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 32%
+source-wordcount: '900'
+ht-degree: 30%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 32%
    + [Logboekregistratie](developing/introduction/logging.md)
    + [Configuraties en de Configuratiebrowser](developing/introduction/configurations.md)
    + [Technische stichtingen AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
@@ -87,7 +87,7 @@ ht-degree: 32%
       + Componenten en sjablonen {#components-templates}
          + [Overzicht van componenten](developing/components/overview.md)
          + [Sjablonen](developing/components/templates.md)
-         + [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+         + [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [JSON-exportfunctie voor services voor inhoud](developing/components/json-exporter.md)
          + [JSON-export inschakelen voor een component](developing/components/enabling-json-exporter.md)
