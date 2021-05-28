@@ -1,7 +1,7 @@
 ---
 title: Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben
 description: In dit deel van de AEM Headless Ontwikkelaarsreis, leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Voordat u begint met query&#39;s op uw inhoud, moet u:
 
 * Uw eindpunt inschakelen
-   * Gereedschappen gebruiken -> Sites -> GrafiekQL
+   * Gereedschappen gebruiken -> Middelen -> GrafiekQL
    * [GrafiekQL-eindpunt inschakelen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQL installeren (indien vereist)
