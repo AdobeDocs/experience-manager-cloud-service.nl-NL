@@ -3,10 +3,9 @@ title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 6%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 6%
 
 ## Configuratie en testen van Apache en Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over Dispatcher.
+In deze sectie wordt beschreven hoe u de AEM structureert als Apache- en Dispatcher-configuraties voor Cloud Servicen en hoe u deze lokaal kunt valideren en uitvoeren voordat u de software implementeert in een cloud-omgeving. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven. Raadpleeg de [AEM Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over Dispatcher.
 
 >[!NOTE]
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer. De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan op dezelfde manier worden gebruikt.
@@ -527,7 +526,7 @@ De Dispatcher-configuratiestructuur heeft verschillen tussen Managed Services en
 ## Een AMS converteren naar een AEM als configuratie voor een cloudservice-verzender
 
 In de volgende sectie vindt u stapsgewijze instructies voor het omzetten van een AMS-configuratie. Het veronderstelt
-dat u een archief hebt met een structuur die lijkt op de structuur die wordt beschreven in [Configuratie van de Verzender van de Manager van de Wolk](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+dat u een archief hebt met een structuur die lijkt op de structuur die wordt beschreven in [Configuratie van de Verzender van de Manager van de Wolk](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Het archief extraheren en een eventueel voorvoegsel verwijderen
 
