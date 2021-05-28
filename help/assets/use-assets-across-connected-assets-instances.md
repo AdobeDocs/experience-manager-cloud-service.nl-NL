@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2850'
 ht-degree: 24%
@@ -198,7 +198,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
-* Om inzicht in activagebruik te krijgen, vorm [de functionaliteit van het Inzicht van Activa](/help/assets/assets-insights.md) op [!DNL Sites] instantie.
+* Om inzicht in activagebruik te krijgen, vorm [Activa Insight](/help/assets/assets-insights.md) functionaliteit op [!DNL Sites] instantie.
 
 ### Machtigingen en middelenbeheer {#permissions-and-managing-assets}
 
