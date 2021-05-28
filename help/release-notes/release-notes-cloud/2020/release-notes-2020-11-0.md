@@ -1,14 +1,13 @@
 ---
 title: Release-aantekeningen voor 2020.11.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de Cloud Service voor 2020.11.0.'
-translation-type: tm+mt
-source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
+exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
@@ -19,17 +18,17 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL E
 De datum van de Versie voor [!DNL Adobe Experience Manager] als Cloud Service 2020.11.0 is 2 December, 2020.
 De volgende release (20.12.0) vindt plaats op 17 december 2020
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
 ### Nieuw in [!DNL Sites] {#what-is-new-sites}
 
 * **[Start Hiërarchiebeheer](/help/sites-cloud/authoring/launches/managing-pages.md)  en  [Toekomstige tijdverdraaiing](/help/sites-cloud/authoring/launches/preview.md)**: De nieuwe interface voor het toevoegen/verwijderen van pagina&#39;s binnen een lancering, en het doorbladeren van plaats met Timewarp toont toekomstige staat van Lanceringen.
 
-* **[Extended Content Fragment Models &amp; Editor](/help/assets/content-fragments/content-fragments-models.md)**: Nieuwe opties voor invoervalidatie voor verschillende gegevenstypen, verbeterd gegevenstype voor opsommingsgegevens met nieuwe formuliervisualisaties en de modelnaam van het inhoudsfragment wordt weergegeven en kan worden doorzocht in de interface Elementen.
+* **[Extended Content Fragment Models &amp; Editor](/help/assets/content-fragments/content-fragments-models.md)**: Nieuwe opties voor invoervalidatie voor verschillende gegevenstypen, verbeterd gegevenstype voor opsomming met nieuwe formuliervisualisaties en de naam van het model voor inhoudsfragment wordt weergegeven en kan worden doorzocht in de interface Elementen.
 
 * **Sorteer de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout**: Nieuwe optie voor het sorteren van Live Copy-pagina&#39;s die beschikbaar zijn voor rollout met de  [!UICONTROL Name],  [!UICONTROL Last modified date]en  [!UICONTROL Last rollout date] eigenschappen. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die is geïntroduceerd.
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 ### Nieuw in [!DNL Assets] en [!DNL Dynamic Media] {#what-is-new-assets}
 
@@ -106,7 +105,7 @@ Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environme
 
 ### Workflows {#workflows}
 
-* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie [Workflowinstanties zoeken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie [Workflowinstanties zoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ### Synchronisatie van gebruikersgegevens op publicatieniveau {#user-sync}
 
@@ -122,7 +121,7 @@ Nieuwe [&quot;httpd -t&quot;syntaxis](/help/implementing/dispatcher/disp-overvie
 
 ## De tool Content Transfer {#content-transfer-tool}
 
-Volg deze sectie om te leren over wat nieuw is en de updates voor [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
+Volg deze sectie om te leren over wat nieuw is en de updates voor [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Nieuwe functies {#what-is-new-ctt}
 
