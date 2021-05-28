@@ -1,26 +1,26 @@
 ---
-title: 'Asset Insights '
+title: Assets Insights
 description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Asset Insights {#asset-insights}
+# Elementen {#asset-insights}
 
-Met de functie Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
+Met de functie voor beperkte informatie kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
 
 Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Zie [Elementinzichten configureren](#configure-asset-insights) voor meer informatie. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken.
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Voor details, zie [Elementen inzichten](#configure-asset-insights) vormen. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor ac
 
 ## Statistieken weergeven voor een afbeelding {#viewing-statistics-for-an-image}
 
-U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
+U kunt de elementinzichten van de metagegevenspagina weergeven.
 
 1. Selecteer de afbeelding in de gebruikersinterface Elementen en klik op **[!UICONTROL Properties]** op de werkbalk.
 1. Klik op **[!UICONTROL Insights]** op de pagina Eigenschappen.
@@ -49,7 +49,7 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
    >[!NOTE]
    >
-   >Omdat de functie Asset Insights de gegevens van Oplossingen regelmatig ophaalt van [!DNL Adobe Analytics], wordt in de sectie Oplossingen mogelijk niet de meest recente gegevens weergegeven. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa loopt om de gegevens van de Analyse terug te winnen.
+   >Omdat de eigenschap van de Inzichten van Activa typisch de gegevens van Oplossingen van [!DNL Adobe Analytics] periodiek ophaalt, kan de sectie van Oplossingen niet de meest recente gegevens tonen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om de gegevens van de Analyse terug te winnen.
 
 1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]**. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
@@ -75,7 +75,7 @@ U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -85,9 +85,9 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## Elementinzichten configureren {#configure-asset-insights}
+## Elementeninzichten configureren {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om de Inzichten van Activa toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren.
+[!DNL Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om ActivaInzichten toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Afbeelding: Adobe Analytics for Assets Insights configureren in[!DNL Experience Manager]*
 
-1. Klik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
+1. Klik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt om gegevens te halen. Klik op **[!UICONTROL Add]**.
 1. Nadat [!DNL Experience Manager] uw rapportsuite heeft ingesteld, klikt u op **[!UICONTROL Done]**.
 
 ### Paginanummering {#page-tracker}
@@ -120,11 +120,11 @@ Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Pagina
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
