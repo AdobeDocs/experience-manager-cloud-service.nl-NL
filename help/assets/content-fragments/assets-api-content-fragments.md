@@ -2,14 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
 description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
 feature: Content Fragments,Assets HTTP API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 2%
+source-wordcount: '1952'
+ht-degree: 1%
 
 ---
-
 
 # Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
@@ -34,7 +33,7 @@ Met de API kunt u Adobe Experience Manager als een Cloud Service als een CMS zon
 
 Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via de HTTP-API wordt aangeboden, vaak in de JSON-indeling.
 
-Hoewel [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) een zeer uitvoerige, flexibele en aanpasbare API verstrekt die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (Web Content Management) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
+Hoewel [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) een zeer uitvoerige, flexibele en aanpasbare API verstrekt die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (Web Content Management) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
 
 Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
@@ -166,7 +165,7 @@ Zie voor meer informatie over functies die beschikbaar zijn via de API:
 * De [REST-API voor middelen](/help/assets/mac-api-assets.md)
 * [Typen](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types) entiteiten, waarbij de kenmerken die specifiek zijn voor elk ondersteund type (voor zover relevant voor inhoudsfragmenten) worden toegelicht
 
-### {#paging} pagineren
+### Paginering {#paging}
 
 De REST API voor middelen ondersteunt paginering (voor GET-aanvragen) via de URL-parameters:
 
@@ -223,7 +222,7 @@ Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is ee
 
 Aangezien er verschillende verschillen zijn met *standard* elementen (zoals afbeeldingen of audio), zijn er enkele aanvullende regels van toepassing op de afhandeling ervan.
 
-#### Weergave {#representation}
+#### Vertegenwoordiging {#representation}
 
 Inhoudsfragmenten:
 
@@ -242,7 +241,7 @@ Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopsl
 
 Gekoppelde inhoud wordt momenteel niet weergegeven.
 
-## {#using} gebruiken
+## Gebruiken {#using}
 
 Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
@@ -259,7 +258,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!NOTE]
 >
->Zie [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Zie [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### {#read-delivery} lezen/leveren
 
@@ -286,7 +285,7 @@ Gebruik gebeurt via:
 
 De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht om de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst `Content-Type` worden toegevoegd die is ingesteld op `application/json`.
 
-### {#update} bijwerken
+### Bijwerken {#update}
 
 Gebruik is via
 
@@ -377,7 +376,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
 Zie hier voor gedetailleerde API-referenties:
 
-* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 
@@ -389,4 +388,3 @@ Zie voor meer informatie:
 
 * [Elementen HTTP API-documentatie](/help/assets/mac-api-assets.md)
 * [AEM Gem-sessie: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
