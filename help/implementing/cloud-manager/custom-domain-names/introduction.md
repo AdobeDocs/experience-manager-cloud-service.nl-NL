@@ -2,14 +2,21 @@
 title: Inleiding - Aangepaste domeinnamen
 description: Inleiding - Aangepaste domeinnamen
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # Inleiding {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_domains"
+>title="Aangepaste domeinnamen beheren"
+>abstract="Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de gebruikersinterface kunt identificeren met een unieke merknaam. Uw Adobe Experience Manager als Cloud Service wordt voorzien van een standaarddomeinnaam die eindigt op *.adobeaemcloud.com. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="Een aangepaste domeinnaam toevoegen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="Aangepaste domeinnaam weergeven en bijwerken"
 
 Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de gebruikersinterface kunt identificeren met een unieke merknaam. Uw Adobe Experience Manager als Cloud Service wordt voorzien van een standaarddomeinnaam, die in `*.adobeaemcloud.com` beëindigt. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
