@@ -1,14 +1,13 @@
 ---
 title: Authoring van getargete content met targetingmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
-translation-type: tm+mt
-source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5342'
 ht-degree: 5%
 
 ---
-
 
 # Authoring van getargete content met targetingmodus {#authoring-targeted-content-using-targeting-mode}
 
@@ -168,7 +167,7 @@ U kunt aangepaste voorstellen opslaan in een aanbiedingsbibliotheek als u beslui
 
 ### Ervaringen toevoegen en verwijderen met de doelmodus {#adding-and-removing-experiences-using-targeting-mode}
 
-Met de stap Maken van [het het richten proces](#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en ook de naam ervan wijzigen.
+Met de stap Maken van [het het richten proces](#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en deze ook een andere naam geven.
 
 #### Ervaringen toevoegen met de doelmodus {#adding-experiences-using-targeting-mode}
 
@@ -464,7 +463,7 @@ Gebruik de geavanceerde montages om te bepalen wat **after** een gebruiker het d
 | Aantal stappen, Gebruiker vrijgeven en Opnieuw invoeren toestaan | Selecteer de ervaring die de bezoeker ziet als ze de activiteit opnieuw betreden: Zelfde ervaring, Willekeurige ervaring, Onzichtbare ervaring |
 | Aantal verhogende, Gebruiker van de Versie en de Heringang van de Bar | Bepaal wat de gebruiker ziet in plaats van de inhoud van de activiteit: Dezelfde ervaring, zonder reeksspatiëring, standaardinhoud of andere activiteit-inhoud |
 
-Zie [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.
+Zie [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.
 
 ### Instellingen configureren (AEM gericht) {#configuring-settings-aem-targeting}
 
@@ -503,13 +502,13 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    ![Rapportbron](../assets/targeted-reporting-source.png)
 
-1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) over metrische data voor succes.
+1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) over metrische data voor succes.
 
    U kunt de naam van het doel wijzigen door op de drie stippen in de rechterbovenhoek te klikken en **Naam wijzigen** te selecteren.
 
    Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u **Alle velden wissen**.
 
-   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde instellingen** om deze te openen. Zie definitie van hoe succesmetriek in vorige lijst worden geteld en [Adobe Target documentatie](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) zien.
+   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde instellingen** om deze te openen. Zie definitie van hoe succesmetriek in vorige lijst worden geteld en [Adobe Target documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) zien.
 
    >[!NOTE]
    >
