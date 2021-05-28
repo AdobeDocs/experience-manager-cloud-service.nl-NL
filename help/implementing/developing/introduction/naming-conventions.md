@@ -1,14 +1,13 @@
 ---
 title: Naamgevingsconventies
 description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
-
 
 # Naamgeving van conventies{#naming-conventions}
 
@@ -24,7 +23,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### JCR-hulpprogramma {#jcr-utilities}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis de AEM implementatie van de hulpprogramma&#39;s van het JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis de AEM implementatie van de hulpprogramma&#39;s van het JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
    * Controleert of de naam niet leeg is en alleen geldige tekens bevat.
@@ -35,7 +34,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### Paginabeheer {#page-manager}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager biedt methoden voor bewerkingen op paginaniveau op basis van  [JCRUtil](#jcr-utilities).
+[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager biedt methoden voor bewerkingen op paginaniveau op basis van  [JCRUtil](#jcr-utilities).
 
 ### Werking AEM UI {#ui-behavior}
 
