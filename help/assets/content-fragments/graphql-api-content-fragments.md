@@ -3,8 +3,7 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Inhoudsfragmenten,GrafiekQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 0%
@@ -159,7 +158,7 @@ Om een Eindpunt te toelaten GraphQL moet u eerst een aangewezen configuratie heb
 
 Om het overeenkomstige eindpunt toe te laten:
 
-1. Navigeer naar **Tools**, **Sites** en selecteer **GraphQL**.
+1. Navigeer naar **Tools**, **Assets** en selecteer **GraphQL**.
 1. Selecteer **Maken**.
 1. Het **Create new GraphQL Endpoint** dialoogvenster zal worden geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
@@ -929,6 +928,6 @@ De gerezen vragen:
    * **A**: &quot;*De AEM GraphQL API biedt volledige controle op de JSON-uitvoer en is een industriestandaard voor het opvragen van inhoud.
 Als u verder gaat, is AEM van plan te investeren in de AEM GraphQL API.*&quot;
 
-## Zelfstudie - Aan de slag met AEM zonder kop en GraphQL {#tutorial}
+## Zelfstudie - Aan de slag met AEM headless and GraphQL {#tutorial}
 
 Op zoek naar een praktische zelfstudie? Ontdek [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) de zelfstudie van begin tot eind waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met de GraphQL-API&#39;s van AEM en die door een externe toepassing wordt verbruikt.
