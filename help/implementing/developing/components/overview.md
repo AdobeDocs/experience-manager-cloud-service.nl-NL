@@ -1,14 +1,13 @@
 ---
 title: Overzicht van componenten
 description: Componenten zijn modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website weer te geven
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 4%
+source-wordcount: '378'
+ht-degree: 0%
 
 ---
-
 
 # Overzicht van componenten {#components-overview}
 
@@ -27,7 +26,7 @@ Componenten in AEM zijn:
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten.
-* Wordt ontwikkeld met behulp van [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+* Wordt ontwikkeld met behulp van [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -45,7 +44,7 @@ Elke AEM component:
 
 ## AEM Core Components {#aem-core-components}
 
-[De AEM ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de Kern zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
+[De AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Componenten van de Kern zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
 
 De componenten van de Kern worden voorzien van AEM als Cloud Service en [WKND leerprogramma](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
@@ -55,13 +54,12 @@ Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. Selecteer **[!UICONTROL CRXDE Lite]** in &lt;a0/> op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.**[!UICONTROL Tools]**
+1. Selecteer **[!UICONTROL CRXDE Lite]** in **[!UICONTROL Tools]** op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.
 
-1. Selecteer **[!UICONTROL Query]** op het tabblad &lt;a0/> als **[!UICONTROL Type]**.`XPath`
+1. Selecteer **[!UICONTROL Query]** op het tabblad `XPath` als **[!UICONTROL Type]**.
 
 1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
 1. Klik op **[!UICONTROL Execute]** en de componenten worden weergegeven.
-
