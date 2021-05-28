@@ -2,14 +2,13 @@
 title: Vorm de Rijke Redacteur van de Tekst aan auteursinhoud in [!DNL Adobe Experience Manager] als Cloud Service.
 description: Vorm Rich Text Editor aan auteursinhoud in [!DNL Adobe Experience Manager] als Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
-
 
 # De Rich Text Editor {#configure-the-rich-text-editor} configureren
 
@@ -74,7 +73,7 @@ Wanneer dubbelgeklikt wordt op een component, wordt een dialoogvenster geopend v
 
 *Afbeelding: De bewerkingsmodus van het dialoogvenster.*
 
-## Informatie over RTE plug-ins en de bijbehorende functies {#aboutplugins}
+## Informatie over RTE-plug-ins en de bijbehorende functies {#aboutplugins}
 
 De functionaliteit wordt beschikbaar gesteld via een reeks plug-ins, elk met:
 
@@ -155,7 +154,7 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om stop-i
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Met de tekstcomponent [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) kunnen sjablooneditors een groot aantal RTE-plug-ins configureren met de gebruikersinterface als inhoudsbeleid, zodat er geen technische configuratie nodig is. Het inhoudsbeleid kan werken met RTE UI-configuraties zoals in dit document wordt beschreven. Zie [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md) en de [documentatie voor ontwikkelaars van kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) voor meer informatie.
+Met de tekstcomponent [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) kunnen sjablooneditors een groot aantal RTE-plug-ins configureren met de gebruikersinterface als inhoudsbeleid, zodat er geen technische configuratie nodig is. Het inhoudsbeleid kan werken met RTE UI-configuraties zoals in dit document wordt beschreven. Zie [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md) en de [documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) voor meer informatie.
 
 >Ter referentie kunt u de standaardtekstcomponenten (geleverd als onderdeel van een standaardinstallatie) vinden op:
 >
@@ -166,7 +165,7 @@ Met de tekstcomponent [Core Components](https://docs.adobe.com/content/help/en/e
 >
 Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
 
-## RTE-werkbalk {#dialogfullscreen} configureren
+## RTE-werkbalk configureren {#dialogfullscreen}
 
 [!DNL Experience Manager] Hiermee kunt u de interface voor de Rich Text Editor op een andere manier configureren voor de verschillende bewerkingsmodi. De standaardinstellingen worden hieronder gegeven. U kunt deze standaardinstellingen op basis van uw vereisten overschrijven. U kunt alleen de werkbalkfuncties aanpassen die u aan de auteurs wilt geven. U hoeft niet alle werkbalkconfiguraties op te geven.
 
@@ -231,9 +230,9 @@ De beschikbare opties in RTE stromen stroomafwaarts van de configuraties van het
 * Als de gebruikersinterfaceconfiguratie van RTE verwijderde of geen punt toelaat, kan het inhoudsbeleid niet het vormen.
 * Een auteur heeft toegang tot slechts dergelijke functionaliteit die door de gebruikersinterfaceconfiguraties en het inhoudsbeleid ter beschikking wordt gesteld.
 
-Als voorbeeld, kunt u de [documentatie van de Component van de Kern van de Tekst ](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) zien.
+Als voorbeeld, kunt u de [documentatie van de Component van de Kern van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) zien.
 
-## Toewijzing aanpassen tussen werkbalkpictogrammen en opdrachten {#iconstoolbar}
+## Toewijzing aanpassen tussen werkbalkpictogrammen en -opdrachten {#iconstoolbar}
 
 U kunt de afbeelding aanpassen tussen de koraalpictogrammen die worden weergegeven op de RTE-werkbalk en de beschikbare opdrachten. U kunt geen andere pictogrammen gebruiken behalve Koraalpictogrammen.
 
@@ -285,6 +284,6 @@ Hieronder ziet u een voorbeeldfragment waarmee u de opdracht `Bold` toewijst aan
 >[!MORELIKETHIS]
 >
 >* [RTE-plug-ins configureren](configure-rich-text-editor-plug-ins.md)
->* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
->* [RTE voor toegankelijke sites configureren](rte-accessible-content.md)
+* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+* [RTE voor toegankelijke sites configureren](rte-accessible-content.md)
 
