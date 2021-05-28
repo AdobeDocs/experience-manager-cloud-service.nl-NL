@@ -1,14 +1,13 @@
 ---
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Sites Readiness
-description: 'Meer informatie over Adobe Experience Manager als Cloud Service Sites-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd. '
-translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+description: Meer informatie over Adobe Experience Manager als Cloud Service Sites-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd.
+exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager als Cloud Service Sites Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
@@ -76,13 +75,13 @@ Naar Weigeren:
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics.
+Zie [Adobe Analytics and Data Privacy](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics.
 
 ## Personalisatiestichting door Doel {#personalization-foundation-by-target}
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target.
+Zie [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html) voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target.
 
 ## ContextHub {#contexthub}
 
