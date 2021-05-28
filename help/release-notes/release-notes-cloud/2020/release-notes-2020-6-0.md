@@ -2,10 +2,9 @@
 title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1917'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor AEM Sites in A
 
 ### Wat is er nieuw?{#whats-new-2020.6.0}
 
-Release 2.9.0 van de [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
+Release 2.9.0 van de [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
 * Integratie tussen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) en de Core Components
 * Configureerbare HTML-id-kenmerken voor alle componenten
@@ -47,7 +46,7 @@ Release 2.9.0 van de [Core Components](https://docs.adobe.com/content/help/en/ex
 
 * Verbeteringen voor schermlezers.
 
-## Nieuw in Stichting in AEM als Cloud Service {#foundations}
+## Nieuwe functies in stichtingen in AEM als Cloud Service {#foundations}
 
 AEM de bouwtijden van het project zullen verbeteren door alle verwijzingen in pom.xml van het AEM project aan de verre bewaarplaats `https://downloads.experiencecloud.adobe.com/content/maven/public` te verwijderen.
 
@@ -61,11 +60,11 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * Een gebruiker met de rol *Zakelijke eigenaar* in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de Programmakaart) of van binnen het programma.
 
-   Raadpleeg [Een Sandbox-programma verwijderen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
+   Raadpleeg [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
 
 * Een gebruiker van het Sandbox- Programma in *Bedrijfseigenaar* of *De rol van Manager van de Plaatsing* in de Manager van de Wolk kan nu hun Productie en milieu van het Stadium schrappen die via de UI van de Manager van de Wolk wordt geplaatst. De schrappingsoptie is nu beschikbaar bij zowel de kaart van het Milieu op **het Overzicht van Programma&#39;s** pagina als **Milieu** pagina. Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
-   Raadpleeg [Een Sandbox-programma verwijderen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
+   Raadpleeg [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
@@ -77,11 +76,11 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd. De knop **Toegang beheren** is nu beschikbaar op de bestemmingspagina naast de knop **Programma toevoegen**.
 
-   Verwijs naar [Taken SysAdmin](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.
+   Verwijs naar [Taken SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 
-   Raadpleeg [Toegang tot instantie Auteur beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer informatie.
+   Raadpleeg [Toegang tot instantie Auteur beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer informatie.
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
