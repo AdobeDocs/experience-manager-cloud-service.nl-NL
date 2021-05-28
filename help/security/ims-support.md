@@ -2,10 +2,9 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
-source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2007'
 ht-degree: 92%
 
 ---
@@ -210,7 +209,7 @@ Als u toegang wilt tot Cloud Manager of AEM as a Cloud Service-omgevingen, moet 
 Raadpleeg Roldefinities voor meer informatie over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
 
 >[!NOTE]
->Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Voor informatie over elk van de rollen met specifieke machtigingen, vooraf geconfigureerde taken of machtigingen, gekoppeld aan elke rol, raadpleegt u [Op rollen gebaseerde machtigingen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Voor informatie over elk van de rollen met specifieke machtigingen, vooraf geconfigureerde taken of machtigingen, gekoppeld aan elke rol, raadpleegt u [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
 **Stappen voor het toevoegen van een gebruiker**
 
