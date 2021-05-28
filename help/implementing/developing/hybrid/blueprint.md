@@ -1,14 +1,13 @@
 ---
 title: SPA
 description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
-translation-type: tm+mt
-source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
+exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
-
 
 # SPA blauwdruk {#spa-blueprint}
 
@@ -24,11 +23,11 @@ Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de g
 >
 >De volgende vereisten zijn frameonafhankelijk. Als aan deze vereisten wordt voldaan, kan een kader-specifieke laag worden verstrekt die uit modules, componenten, en de diensten wordt samengesteld.
 >
->**Aan deze vereisten wordt reeds voldaan voor de React en Hoekige kaders in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
+>**Aan deze eisen wordt reeds voldaan voor de React and Angular frameworks in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
 
 >[!CAUTION]
 >
->Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Hoekframeworks ondersteund.
+>Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Angular-frameworks ondersteund.
 
 ## PageModelManager {#pagemodelmanager}
 
@@ -78,7 +77,7 @@ Het paginamodel maakt gebruik van de JSON Model Exporter, die zelf is gebaseerd 
 * `:itemsOrder`: Ordered list of the children. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
 * `:path`: Inhoudspad van een item (aanwezig op items die een pagina vertegenwoordigen)
 
-Zie ook [Aan de slag met AEM Content Services.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+Zie ook [Aan de slag met AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### Framework-Specific Module {#framework-specific-module}
 
@@ -91,11 +90,11 @@ Om de interoperabiliteit van de bibliotheken te bevorderen, adviseert Adobe de k
 
 #### Implementaties {#implementations}
 
-#### {#react} reageren
+#### Reageren {#react}
 
 npm-module: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
-#### Hoekig {#angular}
+#### Angular {#angular}
 
 npm-module: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
@@ -276,7 +275,7 @@ Zie het artikel [SPA Model dat ](routing.md) voor meer informatie verplettert.
 Bekijk hoe een eenvoudige SPA werkt en experimenteer met een SPA zelf door door te gaan met de volgende documenten:
 
 * [Aan de slag met SPA in AEM Werken met Reageren](getting-started-react.md).
-* [Aan de slag met SPA in AEM met gebruik van Hoek](getting-started-angular.md).
+* [Aan de slag met SPA in AEM met Angular](getting-started-angular.md).
 
 ## Meer informatie {#further-reading}
 
