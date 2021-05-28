@@ -1,14 +1,13 @@
 ---
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
-
 
 # Ontwikkelingsrichtlijnen voor AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -84,11 +83,11 @@ Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aang
 
 ## Bewaking en foutopsporing {#monitoring-and-debugging}
 
-### Logbestanden {#logs}
+### Logboeken {#logs}
 
 Voor lokale ontwikkeling worden logbestandvermeldingen geschreven naar lokale bestanden in de map `/crx-quickstart/logs`.
 
-In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden vast te zetten. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden vast te zetten. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Logniveau instellen**
 
@@ -160,7 +159,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Zie [Documentatie van Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) voor meer informatie over het instellen van gebruikersmachtigingen.
+Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Zie [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) voor meer informatie over het instellen van gebruikersmachtigingen.
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
 
@@ -227,7 +226,7 @@ Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u e
 
 ### E-mails verzenden {#sending-emails}
 
-De [Day CQ Mail Service OSGI-service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
+De [Day CQ Mail Service OSGI-service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
 
 AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
 
@@ -237,9 +236,9 @@ AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver po
 
 ### Configuratie {#email-configuration}
 
-E-mails in AEM moeten worden verzonden met de OSGi-service ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) van de [Day CQ-mailservice.
+E-mails in AEM moeten worden verzonden met de OSGi-service ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) van de [Day CQ-mailservice.
 
-Zie [AEM 6.5 documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM als Cloud Service, moeten de volgende aanpassingen aan de `com.day.cq.mailer.DefaultMailService OSGI` dienst worden aangebracht:
+Zie [AEM 6.5 documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM als Cloud Service, moeten de volgende aanpassingen aan de `com.day.cq.mailer.DefaultMailService OSGI` dienst worden aangebracht:
 
 Indien haven 465 is aangevraagd:
 
