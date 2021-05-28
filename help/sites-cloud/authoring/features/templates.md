@@ -1,14 +1,13 @@
 ---
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 11%
 
 ---
-
 
 # Paginasjablonen maken {#creating-page-templates}
 
@@ -92,7 +91,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Voer nooit informatie in die u wilt internationaliseren in een sjabloon. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, kunt u de [lokalisatiefuncties van de kerncomponenten gebruiken.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
+>Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, kunt u de [lokalisatiefuncties van de kerncomponenten gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Een sjabloonmap maken - Admin {#creating-a-template-folder-admin}
 
@@ -451,7 +450,7 @@ Onder **Eigenschappen** rubriek kunt u kiezen welke componenten beschikbaar voor
 Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor de lay-outcontainer beschikbaar zijn.
 
 * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-* U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+* U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
 * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
 * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
 * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -533,7 +532,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 >
 >De eerste inhoud is bedoeld voor het voorbereiden van componenten en de paginalay-out die als uitgangspunt dienen voor het maken van de inhoud. Het is niet de bedoeling om de inhoud te zijn die ongewijzigd blijft. Daarom kan de initiële inhoud niet worden vertaald.
 >
->Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u [localisatiefuncties van de kerncomponenten gebruiken](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u [localisatiefuncties van de kerncomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Een sjabloon bewerken - Indeling - Sjabloonauteur {#editing-a-template-layout-template-author}
 
