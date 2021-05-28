@@ -2,17 +2,16 @@
 title: Ontwikkelen AEM Handel voor AEM als Cloud Service
 description: Leer hoe te om een handel-toegelaten AEM project te produceren gebruikend het AEM projectarchetype. Leer hoe te om het project aan een lokale ontwikkelomgeving te bouwen en op te stellen gebruikend de AEM als Cloud Service SDK.
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 7%
+source-wordcount: '1001'
+ht-degree: 4%
 
 ---
 
@@ -20,9 +19,9 @@ ht-degree: 7%
 
 De ontwikkeling van AEM Commerce-projecten op basis van het Kader voor de integratie van de Handel (CIF) voor AEM als Cloud Service volgt dezelfde regels en beste praktijken als andere AEM projecten op AEM als Cloud Service. Controleer eerst deze:
 
-- [AEM-projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM-projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## Lokale ontwikkeling met AEM als Cloud Service SDK {#local}
 
@@ -32,13 +31,13 @@ Een lokale ontwikkelomgeving wordt aanbevolen voor CIF-projecten. De CIF-invoegt
 
 De CIF Add-On wordt verstrekt als Sling Feature archief. Het ZIP-bestand dat beschikbaar is op de portal Softwaredistributie bevat twee Sling Feature-archiefbestanden: een voor AEM auteur en een voor AEM publicatie-instanties.
 
-**Nieuw bij AEM als Cloud Service?** Bekijk  [een gedetailleerdere handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw bij AEM als Cloud Service?** Bekijk  [een gedetailleerdere handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Vereiste software
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [AEM als Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM als Cloud Service SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
 - [Node.js v10+](https://nodejs.org/en/)
@@ -169,7 +168,7 @@ De componenten van de Kern van CIF kunnen in om het even welk project worden geb
 
 ### AEM Venia Reference Store gebruiken
 
-Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
+Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden met best practices en een mogelijk uitgangspunt voor het ontwikkelen van uw eigen functionaliteit.
 
 Om aan de slag te gaan met de Venia Reference Store klonen we gewoon de Git-opslagplaats en begint u het project aan te passen aan uw behoeften.
 
