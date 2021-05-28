@@ -8,17 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-translation-type: tm+mt
-source-git-commit: 08e258d4e9cd67de3da2aa57c058036bd104472d
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1065'
+ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM Handel als Cloud Service {#start}
+# Aan de slag met AEM Commerce als Cloud Service {#start}
 
-Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De invoegtoepassing CIF is een extra module boven op [AEM Sites als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+Om met AEM Handel als Cloud Service te beginnen, moet uw Experience Manager Cloud Service worden voorzien van het Kader van de Integratie van de Handel (CIF) toe:voegen-on. De invoegtoepassing CIF is een extra module boven op [AEM Sites als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html).
 
 ## Onboarding {#onboarding}
 
@@ -29,11 +28,11 @@ Het instappen voor AEM Handel als Cloud Service is een proces in twee stappen:
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
-Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u een nieuw programma maken. Voor meer details, verwijs naar [Opstelling uw Programma](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u een nieuw programma maken. Voor meer details, verwijs naar [Opstelling uw Programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 De tweede stap is zelfbediening voor elke AEM als omgeving van een Cloud Service. Er zijn sommige extra configuraties u na de aanvankelijke levering van toe:voegen-op CIF zult moeten doen.
 
-## Het verbinden van AEM met een Oplossing van de Handel {#magento}
+## AEM verbinden met een Oplossing van de Handel {#magento}
 
 Om toe:voegen-op CIF &amp; [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing te verbinden, moet u het eindpunt GraphQL URL via een de milieuvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
 
@@ -70,7 +69,7 @@ Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappe
 
 1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
-   Raadpleeg de [Adobe Cloud Manager-documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) voor informatie over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Raadpleeg de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) voor informatie over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Verifieer Adobe I/O CLI met de AEM als programma van de Cloud Service
 
