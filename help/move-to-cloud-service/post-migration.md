@@ -1,11 +1,10 @@
 ---
 title: Fase na de migratie
 description: Fase na de migratie
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '222'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +24,7 @@ De volgende tools zijn handig om problemen met AEM as a Cloud Service op te loss
 
 Foutopsporing van AEM as a Cloud Service-ontwikkelomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
 
-Raadpleeg [Implementeren voor AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
+Raadpleeg [Implementeren voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -40,7 +39,7 @@ Raadpleeg [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Raadpleeg [Logbestanden openen en beheren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
+Raadpleeg [Logbestanden openen en beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
 
 ### Aanvullende ondersteuning {#additional-support}
 
