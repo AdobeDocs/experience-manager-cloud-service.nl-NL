@@ -1,14 +1,13 @@
 ---
 title: Release-aantekeningen voor 2020.9.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.9.0.'
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '722'
 ht-degree: 1%
 
 ---
-
 
 # Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
 
@@ -18,13 +17,13 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL E
 
 De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 is 24 september 2020.
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
 
 ### Nieuw in [!DNL Sites] {#what-is-new-sites}
 
 * De JavaScript SDK [van de Editor voor één pagina-toepassing (SPA) is nu open bron.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 ### Nieuw in [!DNL Assets] {#what-is-new-assets}
 
@@ -35,7 +34,7 @@ De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 
    * Selectieve publicatie - Een marketingteam heeft nu toegang tot [!DNL Dynamic Media] slimme-uitsnijdafbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media], zodat ze promotiemateriaal kunnen maken, zonder dat ze deze middelen hoeven te publiceren naar [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en  [!DNL Dynamic Media] publicatie wordt ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [selectief publiceren](/help/assets/dynamic-media/selective-publishing.md).
    * Beheerders kunnen het [!DNL Dynamic Media]-wachtwoord voor Cloud Servicen dat bij provisioning is ontvangen, nu opnieuw instellen. Het opnieuw instellen kan in [!DNL Experience Manager] gebruikersinterface worden gedaan, zonder de behoefte om [!DNL Dynamic Media Classic] Desktopapp te gebruiken.
 
-* Zie [nieuw in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html) voor informatie over de volgende verbeteringen.
+* Zie [nieuw in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html) voor meer informatie over de volgende verbeteringen.
 
    * Uitgebreide PDF-voorvertoning met integratie van Adobe Document Cloud View SDK.
    * Downloadfunctionaliteit met één klik.
@@ -124,4 +123,3 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 * Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM als Cloud Service wordt bepaald.
 
    Zie [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
-
