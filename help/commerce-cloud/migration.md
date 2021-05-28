@@ -1,11 +1,11 @@
 ---
 title: Migratie naar de AEM Commerce Integration Framework (CIF)-invoegtoepassing
 description: Hoe te om aan het AEM Kader van de Integratie van de Handel (CIF) toe:voegen-on van een oude versie te migreren
-translation-type: tm+mt
-source-git-commit: cda25048e171f6aacd5349706ad4192965e703db
+exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 1%
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ De eerder beschikbare CIF-connector kan niet meer worden geïnstalleerd. Code di
 
 ## Projectstructuur
 
-Leer de [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en de kenmerken van AEM als Cloud Service. Pas de projectinstelling aan op de AEM als Cloud Service-indeling.
+Leer de [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en de kenmerken van AEM als Cloud Service. Pas de projectinstelling aan op de AEM als Cloud Service-indeling.
 Vergeleken met AEM 6.5-implementaties zijn er hier twee grote verschillen:
 
 * De GraphQL-client OSGI-bundel **mag niet** meer in het AEM-project worden opgenomen, maar wordt geïmplementeerd via de CIF-invoegtoepassing
