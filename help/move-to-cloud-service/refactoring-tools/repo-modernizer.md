@@ -2,11 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
-translation-type: tm+mt
-source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 3%
+source-wordcount: '299'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +15,7 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager als Cloud Service brengt vele nieuwe eigenschappen en mogelijkheden in uw AEM projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **content** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Raadpleeg [AEM Projectstructuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
+Adobe Experience Manager als Cloud Service brengt vele nieuwe eigenschappen en mogelijkheden in uw AEM projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **content** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Raadpleeg [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
 
 De modernizer van de Bewaarplaats leidt tot een compatibele AEM het projectstructuur van de Cloud Service door de volgende plaatsingsstructuur te creëren:
 
