@@ -6,14 +6,13 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '790'
 ht-degree: 2%
 
 ---
@@ -32,7 +31,7 @@ Om de `UrlProvider` dienst volgens de SEO vereisten te vormen en een project moe
 >
 > Het project [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia), zie hieronder, omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen.
 
-### URL-sjabloon van productpagina {#product}
+### URL-sjabloon productpagina {#product}
 
 Hierdoor worden de URL&#39;s van de productpagina&#39;s geconfigureerd met de volgende eigenschappen:
 
@@ -76,5 +75,5 @@ Het project [Venia Reference store](https://github.com/adobe/aem-cif-guides-veni
 ## Aanvullende bronnen
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Brontoewijzing AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Brontoewijzing AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
