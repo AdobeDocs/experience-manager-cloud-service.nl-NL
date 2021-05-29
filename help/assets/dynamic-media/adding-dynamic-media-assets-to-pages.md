@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
+source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3022'
 ht-degree: 5%
 
 ---
@@ -165,16 +165,16 @@ U kunt de volgende Dynamic Media-instellingen bewerken door op het pictogram **[
 
    U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te tikken.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
+   * Onder Type voorinstelling wordt **[!UICONTROL Image Preset]** geselecteerd en wordt **[!UICONTROL RESS_IP]** geselecteerd in de vervolgkeuzelijst **[!UICONTROL Image Preset]**.
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   ![instelling voor pixelverhouding van apparaat voor voorinstelling afbeelding](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Wijzig de titel van de afbeelding.
 
@@ -243,17 +243,17 @@ U kunt de volgende Dynamic Media-instelling bewerken door in de component op **[
 
 * **[!UICONTROL Enable Aspect Ration match]** - Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   De optie **[!UICONTROL Optimize for higher resolution devices]** wordt alleen weergegeven wanneer het volgende true is:
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   * Onder Type voorinstelling is de optie **[!UICONTROL Smart Crop]** geselecteerd.
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![instelling voor pixelverhouding van apparaat voor slim uitsnijden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
 
-  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
+<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Wijzig de titel van de slimme-uitsnijdafbeelding.
 
