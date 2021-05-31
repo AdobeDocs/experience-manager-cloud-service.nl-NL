@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: dc66eca7b789cf3be1aeae3d63935362ab6f918a
+source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.5.0 is 27 mei 2021.
 De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
+
+## Geen video {#release-video}
+
+Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/333602) voor een samenvatting van de toegevoegde eigenschappen.
 
 ## AEM als Stichting van de Cloud Service {#foundation}
 
