@@ -1,7 +1,7 @@
 ---
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Raadpleeg [Inleiding tot Sandbox-programma&#39;s](/help/onboarding/getting-acces
 Uw cloudomgevingen worden gemaakt, geopend en weergegeven via Cloud Manager. Dit kan een productieomgeving, een werkgebiedomgeving of een ontwikkelomgeving zijn. Verschillende omgevingen ondersteunen verschillende doeleinden en kunnen worden gebruikt met behulp van verschillende CI-/CD-leidingen. De milieu&#39;s bestaan uit diensten zoals:
 
 * [AEM Author Services](#author-services)
-* [AEM-publicatieservices](publish-services)
+* [AEM-publicatieservices](#publish-services)
 * [Verzendservices](#dispatcher-services)
 
    >[!NOTE]
