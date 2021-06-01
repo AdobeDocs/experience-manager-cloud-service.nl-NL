@@ -2,10 +2,10 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 0%
+source-wordcount: '1093'
+ht-degree: 1%
 
 ---
 
@@ -142,7 +142,23 @@ De volgende release is gepland voor 10 juni 2021.
 
 ## De tool Content Transfer {#content-transfer-tool}
 
-### Releasedatum {#release-date-ctt}
+### Releasedatum {#release-date-ctt-latest}
+
+De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
+
+### Wat is er nieuw?{#what-is-new-ctt-latest}
+
+* De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
+
+* Wanneer een gebruiker een migratieset verwijdert uit de CTT UI, waar een extractie is uitgevoerd, wordt de `tmp`-map die aan die migratieset is gekoppeld, verwijderd om ruimte te besparen.
+
+### Opgeloste problemen {#bug-fixes-ctt-latest}
+
+* Bij het verwijderen van een migratieset wordt soms een onnuttig foutbericht weergegeven in de CTT-gebruikersinterface. Dit is opgelost.
+
+* Als gebruikers tijdens het uitvoeren van de gebruikerstoewijzing hetzelfde e-mailadres op het doel en de host hadden, maar verschillende gebruikersnamen hadden, zou de volledige invoer mislukken. Dit is opgelost. In een dergelijk conflicterend scenario, wordt de gebruiker/de groep overgeslagen en als conflict in het logboekdossier geregistreerd.
+
+### Releasedatum {#release-date-ctt-may}
 
 De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
 
