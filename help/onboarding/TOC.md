@@ -5,11 +5,10 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Implementeren
 role: Architect, Developer
-translation-type: tm+mt
-source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
+source-git-commit: 9d9cdcb1b7f08fbfbaa4b0ec19f1b039334329ee
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 22%
+source-wordcount: '703'
+ht-degree: 21%
 
 ---
 
@@ -17,6 +16,14 @@ ht-degree: 22%
 # Onboarding {#onboarding}
 
 + [Onboarding van AEM as a Cloud Service](/help/onboarding/home.md)
++ Meer informatie over concepten {#onboarding-concepts} aan boord
+   + [Systeembeheerder](/help/onboarding/learn-concepts/system-administrator.md)
+   + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+   + [Identity Management-systeem](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+   + [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   + [AEM als team en productprofielen van Cloud Servicen](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+   + [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Aan de slag met AEM als Cloud Service {#what-is-required}
    + [Je Adobe ID ophalen](what-is-required/get-your-adobe-id.md)
    + [Rollen in Wolkenbeheer](what-is-required/user-roles-permissions.md)
