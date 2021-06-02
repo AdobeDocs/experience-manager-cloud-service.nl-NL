@@ -1,9 +1,9 @@
 ---
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Uw systeembeheerder zal verantwoordelijk zijn voor het instellen van uw team van
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 
-Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die logische reeksen bedrijfsinitiatieven ondersteunen, die doorgaans overeenkomen met een aangeschafte Service Level Agreement (SLA). Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt. Bekijk deze video voor meer informatie.
+Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die logische reeksen bedrijfsinitiatieven ondersteunen, die doorgaans overeenkomen met een aangeschafte Service Level Agreement (SLA). Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt. Bekijk deze [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) voor meer informatie over het gebruik van Cloud Manager-programma&#39;s.
 
 Een gebruiker kan een **Sandbox** of een **Production** programma tot stand brengen.
 
