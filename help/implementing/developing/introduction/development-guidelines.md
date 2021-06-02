@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
+source-git-commit: b8e7bc6e68bde3e102bf304af5fb8999fccb1624
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 1%
 
 ---
@@ -252,6 +252,6 @@ Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet
 
 De eigenschap `smtp.starttls` wordt automatisch door AEM als Cloud Service bij uitvoering op een geschikte waarde ingesteld. Als `smtp.tls` is ingesteld op true, wordt `smtp.startls` dus genegeerd. Wanneer `smtp.ssl` op false is ingesteld, wordt `smtp.starttls` op true ingesteld. Dit is ongeacht de `smtp.starttls` waarden die in uw configuratie worden geplaatst OSGI.
 
-## Recommendations en richtlijnen voor [!DNL Assets] {#use-cases-assets}
+## Richtlijnen en aanbevelingen voor middelenontwikkelaars [!DNL Assets] {#use-cases-assets}
 
 Zie [Verwijzingen voor ontwikkelaars voor Elementen](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis) voor informatie over de gevallen, aanbevelingen en referentiematerialen voor ontwikkelaars als Cloud Service.
