@@ -1,9 +1,9 @@
 ---
 title: Adobe ID
 description: Deze pagina bevat inleidende informatie over Adobe ID.
-source-git-commit: d8e4635bba1b8a3e825e70c921a5d0c5aff52990
+source-git-commit: 1918eccf1e734ddcbc46a4efdf6dc730f84be026
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,11 @@ ht-degree: 0%
 
 # Adobe ID {#adobe-id}
 
-Een Adobe ID is eenvoudig de e-mail u aan login en toegang AEM als Cloud Service of om het even welk van uw Adobe oplossingen zult gebruiken. Dit is de e-mailid die uw systeembeheerder gebruikt bij het instellen van uw team. Door je Adobe ID te gebruiken, bewaar je al je Adobe-plannen en -producten die aan één account zijn gekoppeld. Een Adobe ID is essentieel voor een veilige en persoonlijke ervaring met Adobe-toepassingen en -services.
+Een Adobe ID is eenvoudig de e-mail u aan login en toegang AEM als Cloud Service of om het even welk van uw Adobe oplossingen zult gebruiken. Dit is de e-mailid die uw systeembeheerder gebruikt bij het instellen van uw team. Door je Adobe ID te gebruiken, bewaar je al je Adobe-plannen en -producten die aan één account zijn gekoppeld.
 
-Raadpleeg [Uw Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) maken of bijwerken voor meer informatie.
+>[!IMPORTANT]
+>Een Adobe ID is essentieel voor een veilige en persoonlijke ervaring met Adobe-toepassingen en -services en is vereist wanneer u Adobe-producten wilt kopen. Als je Adobe ID gebruikt, bewaar je al je Adobe-plannen en -producten die aan één account zijn gekoppeld. Raadpleeg [Uw Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) maken of bijwerken voor meer informatie.
+
 
 Er zijn drie typen Adobe ID:
 
