@@ -1,56 +1,61 @@
 ---
 title: Pagina-annotaties toevoegen
-description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: Annotatiemodus gebruiken om annotaties en schetsen op pagina's te laten zoals u notities gebruikt om het revisieproces van de inhoud te begeleiden
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 1%
+source-wordcount: '700'
+ht-degree: 0%
 
 ---
 
-
 # Pagina-annotaties toevoegen {#adding-page-annotations}
 
-Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u toe om een aantekening toe te voegen.
+Voor het maken van inhoud voor uw digitale ervaring is vaak overleg en feedback nodig voordat deze wordt gepubliceerd. Voor dit feedbackproces kunt u AEM annotaties toevoegen aan uw inhoud.
 
-Een annotatie plaatst een gekleurde schets of notitie op de pagina. Met de annotatie kunt u (of andere gebruikers) opmerkingen en/of vragen laten voor andere auteurs/revisoren.
+Een annotatie plaatst een eenvoudige schets of notitie (denk in real-world kleverige noot) op de pagina. Met de annotatie kunt u opmerkingen of vragen aan andere auteurs en revisoren overlaten.
 
->[!NOTE]
+>[!TIP]
 >
 >Vergeet niet dat [commentaren](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
 
-## Annotaties {#annotations}
-
 Een speciale [modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
 
->[!CAUTION]
+>[!TIP]
 >
->Als u een bron verwijdert (bijvoorbeeld een component), worden alle annotaties en schetsen verwijderd die aan die bron zijn gekoppeld, ongeacht de positie op de pagina als geheel.
+>Afhankelijk van uw vereisten kunt u ook een [workflow](/help/sites-cloud/authoring/workflows/overview.md) ontwikkelen om meldingen te verzenden wanneer annotaties worden toegevoegd, bijgewerkt of verwijderd.
 
->[!NOTE]
->
->Afhankelijk van uw vereisten kunt u ook een workflow ontwikkelen om meldingen te verzenden wanneer annotaties worden toegevoegd, bijgewerkt of verwijderd.
+## Annotatie-indicator {#annotation-indicator}
 
-### Een component {#annotating-a-component} annoteren
+Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
 
-In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
+![Indicator voor aantekening](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-1. U kunt de modus Annotatie activeren met het pictogram op de werkbalk (rechtsboven) wanneer u een pagina bewerkt:
+## Annotatiemodus {#annotate-mode}
+
+Annotaties zijn alleen zichtbaar in de modus Annotatie.
+
+1. U gaat de modus Annotatie in met het pictogram op de werkbalk (rechtsboven) bij het bewerken van een pagina:
 
    ![Knop Annotatie](/help/sites-cloud/authoring/assets/annotations.png)
 
    U kunt nu bestaande annotaties weergeven.
 
-   >[!NOTE]
-   >
-   >Tik op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk om de modus Annotatie af te sluiten.
+   ![Voorbeelden van annotaties](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+
+1. Klik of tik op de annotatie om het dialoogvenster met annotaties te openen en de details ervan weer te geven.
+
+   ![Details van aantekening](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+
+1. Tik op de x-knop rechts van de bovenste werkbalk om de modus Annotatie af te sluiten en terug te keren naar de eerder gebruikte modus.
+
+## Annotaties {#annotating-a-component} toevoegen en bewerken
+
+In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties maken, bewerken, verplaatsen of verwijderen
+
+1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
 
 1. Klik of tik op het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
-
-   >[!NOTE]
-   >
-   >Tik op of klik op het pictogram Annuleren (x-symbool in een witte cirkel) links van de bovenste werkbalk om het toevoegen van annotaties (en terug te keren naar de weergave) te stoppen.
 
 1. Klik of tik op de vereiste component (componenten die kunnen worden geannoteerd, worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
 
@@ -69,27 +74,18 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
       ![Knop Kleurstaal notitie](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
-   * Verwijder de annotatie.
-
-      ![Knop Notitie verwijderen](/help/sites-cloud/authoring/assets/annotation-delete.png)
-
-1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Een afgekapte weergave (het eerste woord) van de annotatie wordt samen met eventuele schetsen weergegeven:
+1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Er wordt een afgekapte weergave van de annotatie getoond, samen met eventuele schetsen:
 
    ![Schetsen voor notities](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Klik of tik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u de annotatie wijzigen of verwijderen.
-
-      * Schetsen kunnen niet onafhankelijk van de annotatie worden verwijderd.
+   * Klik of tik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of de annotatie [verwijderen.](#deleting-annotations)
    * Verander de positie van de tekstmarkering.
    * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren
+      * Eventuele verwante annotaties en de bijbehorende schetsen worden ook verplaatst of gekopieerd, maar hun positie ten opzichte van de alinea blijft ongewijzigd.
 
-      * Eventuele verwante annotaties en de bijbehorende schetsen worden ook verplaatst of gekopieerd en hun positie ten opzichte van de alinea blijft dezelfde.
-
-
-1. Tik op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk of klik op het pictogram Annotatie om de Annotatiemodus te sluiten en terug te keren naar de eerder gebruikte modus.
 
 >[!NOTE]
 >
@@ -99,11 +95,37 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 >
 >De definitie van een afzonderlijk componenttype bepaalt of het toevoegen van een aantekening (ANNOTATION) mogelijk is (of niet) op instanties van die component.
 
-## Annotatie-indicator {#annotation-indicator}
+## Annotatie en schetsen {#deleting-annotations} verwijderen
 
-Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
+Annotaties en de bijbehorende schetsen kunnen worden verwijderd.
 
-![Indicator voor aantekening](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
+
+1. Klik of tik op de tekstmarkering om de annotatie te openen.
+
+1. Klik of tik op het pictogram Verwijderen.
+
+   ![Annotatie verwijderen](/help/sites-cloud/authoring/assets/annotation-delete.png)
+
+1. De annotatie en alle bijbehorende schetsen worden verwijderd.
+
+>[!NOTE]
+>
+>Als u een component verwijdert, worden alle annotaties en schetsen verwijderd die aan die bron zijn gekoppeld, ongeacht de positie op de pagina als geheel.
+
+## Alleen schetsen {#deleting-sketches} verwijderen
+
+U kunt alleen specifieke schetsen verwijderen in plaats van de gehele annotatie met alle gekoppelde schetsen.
+
+1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
+
+1. Klik of tik op de schets. AEM markeert deze met een donkerder blauw vak.
+
+   ![Schets selecteren om te verwijderen](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
+
+1. Druk op de toets Delete op het toetsenbord.
+
+1. De schets wordt verwijderd, maar de annotatie blijft behouden.
 
 ## Annoteren van andere bronnen {#annotating-other-resources}
 
