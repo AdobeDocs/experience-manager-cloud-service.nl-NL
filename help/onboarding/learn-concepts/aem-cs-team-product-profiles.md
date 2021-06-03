@@ -1,9 +1,9 @@
 ---
 title: AEM als team van Cloud Servicen en productprofielen
 description: Volg deze pagina om over AEM als Team van de Cloud Service en Profielen van het Product te leren.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Productprofielen {#profiles}
 
-Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersmachtigingen. Deze zijn beschikbaar en toegankelijk via de Adobe Admin Console.
+Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersmachtigingen. Deze zijn beschikbaar en toegankelijk via [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Lees meer over [AEM als Cloud Service productprofielen](#aem-product-profiles) en [Productprofielen van de Manager van de Wolk](#cloud-manager-product-profiles) om te begrijpen hoe deze in overleg werken terwijl uw team opstelling is.
 
@@ -46,7 +46,7 @@ Aan elk productprofiel zijn specifieke machtigingen gekoppeld. Bijvoorbeeld, als
 
 * **De ontwikkelaar**, hebt u de toestemming om Persoonlijk Token van de Toegang te produceren om tot Git toegang te hebben.
 
-* **Programmamanager**, hebt u de toestemming om tot Git toegang te hebben.
+* **De Manager** van het programma, u hebt de toestemming om pijpleidingen te plannen, de kwaliteitsspoorten van drie lagen met voeten te treden, en productietoestemming te verstrekken.
 
 Een gebruiker kan aan veelvoudige productprofielen worden toegewezen. Bijvoorbeeld, geeft het toewijzen van zowel de rollen Bedrijfs van de Eigenaar als van de Manager van de Plaatsing aan een gebruiker hen de combinatie of de som deze toestemmingen.
 
@@ -57,4 +57,4 @@ Uw team van Cloud Manager omvat ten minste:
 * Eén ontwikkelaar
 
    >[!NOTE]
-   >Gebruikers die toegang tot AEM als Cloud Service willen krijgen, moeten behoren tot een van de twee productprofielen `AEM Users-xxx` of `AEM Administrators-xxx`. U moet over machtigingen voor de instantie beschikken. Machtigingen om de gekoppelde Cloud Manager te beheren zijn niet voldoende.
+   >Gebruikers moeten behoren tot een van twee productprofielen, zoals `AEM Users` of `AEM Administrators`, om toegang tot AEM als Cloud Service te krijgen. U moet machtigingen aan de instantie hebben. Rechten voor het beheer van de gekoppelde Cloud Manager zijn onvoldoende.
