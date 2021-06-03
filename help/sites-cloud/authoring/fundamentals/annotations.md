@@ -2,7 +2,7 @@
 title: Pagina-annotaties toevoegen
 description: Annotatiemodus gebruiken om annotaties en schetsen op pagina's te laten zoals u notities gebruikt om het revisieproces van de inhoud te begeleiden
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Annotaties zijn alleen zichtbaar in de modus Annotatie.
 
 1. Klik of tik op de annotatie om het dialoogvenster met annotaties te openen en de details ervan weer te geven.
 
-   ![Details van aantekening](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Details van aantekening](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. Tik op de x-knop rechts van de bovenste werkbalk om de modus Annotatie af te sluiten en terug te keren naar de eerder gebruikte modus.
 
