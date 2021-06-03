@@ -2,10 +2,10 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 1%
+source-wordcount: '1349'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,29 @@ Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/
       >
    * Azië-Stille Oceaan 24 juni 2021.
 
+
+## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
+
+### Nieuw in [!DNL Forms] {#what-is-new-forms}
+
+* **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor, zodat ontwerpers meer inzicht kunnen krijgen in verschillende functies van editors.
+* **Foutberichten in de browser** Eigenschappen: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
+
+### Opkomende bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Uitvoeren als cloudservice: Met de uitvoerservice kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone en asynchrone batchmodus. Met uitvoerservice kunt u toepassingen maken waarmee u:
+
+* Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
+* Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
+* Afdruk-PDF&#39;s genereren op basis van XFA-formulier-PDF&#39;s.
+
+U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètaprogramma.
+
+### Buizen gecorrigeerd in [!DNL Forms] {#forms-bugs-fixed}
+
+* Wanneer u in een taakstap toewijzen van AEM Forms Workflows het standaardpictogram van de actieknoppen vervangt door een koraalpictogram, wordt de workflow beëindigd en wordt een uitzondering geregistreerd. De workflow wordt op de verwachte wijze uitgevoerd wanneer standaardpictogrammen worden gebruikt.
+* Als u in de lay-outlaag het aantal kolommen wijzigt, de bewerkingslaag opent en enkele componenten in een deelvenster sleept, verschijnen er vierkante blauwe vakken in het inhoudsgebied van de adaptieve formuliereditor en reageert de editor niet meer.
+* Foutbericht van een optie voor een regeleditor die betrekking heeft op het opgeven van een URL van een adaptief of extern element, is te lang en is niet gebruikersvriendelijk.
 
 ## Cloud Manager {#cloud-manager}
 
