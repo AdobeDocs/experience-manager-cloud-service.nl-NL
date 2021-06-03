@@ -2,9 +2,9 @@
 title: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,8 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 * Tijdens het bijwerken en opslaan van de metagegevenswaarde in een tekstveld met één regel, worden de waarden in het vervolgkeuzemenu verwijderd, zelfs als de bewerkingen zijn uitgeschakeld in het vervolgkeuzemenu. (CQ-4317077)
 
 * U kunt ellips gebruiken als een aantekening om elementen te bekijken. Wanneer een kleine ellips wordt gebruikt, overlapt de ellips met het aantal van de annotatie in de drukversie. (CQ-4316792)
+
+* De optie Snel publiceren wordt niet weergegeven wanneer een element in de zoekresultaten wordt geselecteerd nadat ernaar is gezocht. (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
