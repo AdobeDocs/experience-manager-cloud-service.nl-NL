@@ -2,7 +2,7 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 10e08b100c637db968b405b65d72a896ad411308
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 17%
@@ -29,7 +29,7 @@ De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmai
 
 In deze sectie worden de belangrijkste artikelen besproken die op uw reis zijn gericht wanneer u begint met AEM als Cloud Service:
 
-**Wat moet u verwachten als Onboarding**
+**Wat moet u verwachten als u aan boord gaat**
 
 Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
