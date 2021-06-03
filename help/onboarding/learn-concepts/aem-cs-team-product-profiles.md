@@ -1,9 +1,9 @@
 ---
 title: AEM als team van Cloud Servicen en productprofielen
 description: Volg deze pagina om over AEM als Team van de Cloud Service en Profielen van het Product te leren.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 0%
 
 # AEM als team van Cloud Servicen en productprofielen {#product-profiles}
 
-AEM als Cloud Service is het volledig clouds-inheemse aanbod dat AEM als dienst levert. Het levert AEM op een wolkeninheemse manier, met nieuwe attributen zoals altijd, altijd huidig, altijd veilig, en altijd op schaal. Tezelfdertijd behoudt het het belangrijkste waardevoorstel dat AEM verstrekt als aanpasbaar platform aan klanten en laat teams van ondernemingsrang toe om in hun ontwikkeling en leveringsprocedure te integreren. Om naar [Inleiding aan Adobe Experience Manager als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) te verwijzen om meer over AEM als Cloud Service te leren.
+## Productprofielen {#profiles}
 
-Uw AEM als teamleden van de Cloud Service worden tijdens het instappen toegevoegd aan en toegewezen aan een of meer van de volgende productprofielen via Admin Console.
+Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersmachtigingen. Deze zijn beschikbaar en toegankelijk via de Adobe Admin Console.
 
+Lees meer over [AEM als Cloud Service productprofielen](#aem-product-profiles) en [Productprofielen van de Manager van de Wolk](#cloud-manager-product-profiles) om te begrijpen hoe deze in overleg werken terwijl uw team opstelling is.
 
 ## AEM als productprofielen {#aem-product-profiles} van de Cloud Service
 
-De volgende productprofielen zijn in AEM beschikbaar als team van Cloud Servicen:
+AEM als Cloud Service is het volledig clouds-inheemse aanbod dat AEM als dienst levert. Het levert AEM op een wolkeninheemse manier, met nieuwe attributen zoals altijd, altijd huidig, altijd veilig, en altijd op schaal. Tezelfdertijd behoudt het het belangrijkste waardevoorstel dat AEM verstrekt als aanpasbaar platform aan klanten en laat teams van ondernemingsrang toe om in hun ontwikkeling en leveringsprocedure te integreren. Verwijs naar [Inleiding aan Adobe Experience Manager als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) om meer over AEM als Cloud Service te leren.
+
+Uw AEM als teamleden van de Cloud Service worden tijdens het instappen toegevoegd aan en toegewezen aan een of meer van de volgende productprofielen via Admin Console.
 
 * **AEM beheerder**: Een AEM Beheerder wordt typisch toegewezen aan ontwikkelaars, in het bijzonder ontwikkelaars die toegang tot, bijvoorbeeld, de ontwikkelomgevingen zullen moeten hebben. Het productprofiel AEM Beheerders wordt gebruikt om beheerdersrechten toe te kennen in de bijbehorende AEM.
 
@@ -52,4 +55,4 @@ Uw team van Cloud Manager omvat ten minste:
 * Eén ontwikkelaar
 
    >[!NOTE]
-   >Gebruikers die toegang tot AEM als Cloud Service willen krijgen, moeten behoren tot een van twee productprofielen `AEM Users-xxx` of `AEM Administrators-xxx`. U moet over machtigingen voor de instantie beschikken. Machtigingen om de gekoppelde Cloud Manager te beheren zijn niet voldoende.
+   >Gebruikers die toegang tot AEM als Cloud Service willen krijgen, moeten behoren tot een van de twee productprofielen `AEM Users-xxx` of `AEM Administrators-xxx`. U moet over machtigingen voor de instantie beschikken. Machtigingen om de gekoppelde Cloud Manager te beheren zijn niet voldoende.
