@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3659'
 ht-degree: 0%
 
 ---
@@ -450,7 +450,7 @@ Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of 
 
 ## Gedrag voorvertoning {#preview-behavior}
 
-Het [WCM Modus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
+Het [WCM Modus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
