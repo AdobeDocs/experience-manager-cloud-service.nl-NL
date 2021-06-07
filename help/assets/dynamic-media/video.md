@@ -4,9 +4,9 @@ description: Leer hoe u met video werkt in Dynamic Media.
 feature: Videoprofielen
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9098'
+source-wordcount: '9094'
 ht-degree: 5%
 
 ---
@@ -403,9 +403,9 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 1 |
+| Bron | 1920 x 1080 | 1 | 3 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 1 |
+| Gecodeerd | 640 x 360 | 3 | 3 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -499,7 +499,7 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
 1. Tik op **[!UICONTROL What credentials do I need?]**
 1. Voer op de pagina **[!UICONTROL Add credentials to your project]** in stap 2 onder de kop **[!UICONTROL Create an OAuth 2.0 client ID]** in het veld Naam desgewenst een unieke naam in. U kunt ook de standaardnaam gebruiken die door Google is opgegeven.
-1. Voer onder de kop **[!UICONTROL Authorized JavaScript™ origins]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. Voer onder de kop **[!UICONTROL Authorized JavaScript origins]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>`
 
@@ -545,7 +545,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 >[!CAUTION]
 >
->Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *before* u kanalen toevoegt onder YouTube Settings in Experience Manager (zie [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem) hieronder). Als u de kanaalinstelling niet uitvoert, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
+>Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *before* u kanalen toevoegt onder YouTube Settings in Experience Manager (zie [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem) hieronder). Als u de kanaalinstelling niet kunt uitvoeren, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
 
 **Een YouTube-kanaal maken:**
 
@@ -555,7 +555,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 1. Tik op **[!UICONTROL Create a new channel]** op de pagina Kanalen.
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create]**.
 
-   Herinner de naam die u hier ingaat; u moet het opnieuw ingaan wanneer u YouTube in Experience Manager moet plaatsen.
+   Herinner de naam die u hier ingaat; moet u het opnieuw invoeren wanneer u YouTube in Experience Manager moet instellen.
 
 1. (Optioneel) Voeg desgewenst meer kanalen toe.
 
@@ -607,7 +607,7 @@ Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-   U stelt nu YouTube-kanalen in Experience Manager in.
+   Stel nu YouTube-kanalen in Experience Manager in.
 
 1. Tik op **[!UICONTROL Add Channel]**.
 1. Voer in het veld Kanaalnaam de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
@@ -623,7 +623,7 @@ Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 
 1. Tik op **[!UICONTROL Allow]**.
 
-   U stelt nu labels in voor publiceren.
+   Stel nu labels in voor publicatie.
 
 1. **[!UICONTROL Setting up tags for publishing]** - Tik op de pagina Cloud Services > YouTube op het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
 1. Tik op het vervolgkeuzepictogram (ondersteboven) om de lijst met beschikbare labels in de Experience Manager weer te geven.
@@ -653,7 +653,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
 1. Tik op **[!UICONTROL OK]**.
 
-   U stelt nu YouTube-kanalen in Experience Manager in.
+   Stel nu YouTube-kanalen in Experience Manager in.
 
 1. Tik rechts van **[!UICONTROL Available Channels]** op **+** (plusteken).
 1. Voer in het veld Titel in het dialoogvenster YouTube-kanaalinstellingen de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
@@ -669,7 +669,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 
 1. Tik op **[!UICONTROL Allow]**.
 
-   U stelt nu labels in voor publiceren.
+   Stel nu labels in voor publicatie.
 
 1. **[!UICONTROL Setting up tags for publishing]** - Tik op de pagina Cloud Services > YouTube op het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
 1. Tik op het vervolgkeuzepictogram (ondersteboven) om de lijst met beschikbare labels in de Experience Manager weer te geven.
@@ -1057,7 +1057,7 @@ Ondertiteling maakt ook een betere toegankelijkheid mogelijk door ondertiteling 
 >[!NOTE]
 De videospeler die u gebruikt moet de vertoning van titels steunen.
 
-Dynamic Media kan bijschriftbestanden omzetten in de indeling JSON (JavaScript™ Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud dan verkennen of indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
+Dynamic Media kan bijschriftbestanden omzetten in de indeling JSON (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud dan verkennen of indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
 Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) voor meer informatie over het gebruik van de JSON-functie in een URL.
 
