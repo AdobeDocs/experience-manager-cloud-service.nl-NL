@@ -2,9 +2,9 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1808'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebben; zie:
 
-[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebbe
 
 De volgende drie interfaces kunnen als ingangspunten dienen:
 
-* **Inhoudsfragment**  ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhoudsfragment**  ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
 
@@ -206,7 +206,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
-   * **Content Element**  ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Content Element**  ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -218,7 +218,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
          * Variaties verwijderen (zie [Bijschriften](#caveats))
          * Toegang krijgen tot variatiegegevens (zie `ContentVariation`)
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
-   * **Inhoudsvariatie** ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Inhoudsvariatie** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -248,9 +248,9 @@ Het volgende kan worden aangepast:
 
 * `ContentElement` kan worden aangepast aan:
 
-   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - voor toegang tot de structurele informatie van het element.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - voor toegang tot de structurele informatie van het element.
 
-* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` kan worden aangepast aan:
 
