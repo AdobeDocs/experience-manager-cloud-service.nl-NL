@@ -1,0 +1,51 @@
+---
+title: Een kanaal in schermen publiceren als Cloud Service
+description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen publiceert als een Cloud Service.
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 0%
+
+---
+
+
+# Kanalen in schermen publiceren als een Cloud Service {#publish-channel-screens-cloud}
+
+## Inleiding {#introduction}
+
+U kunt inhoud publiceren vanuit AEM Screens. Met de functie Publicatie beheren kunt u inhoud-updates van auteur leveren en publiceren naar speler. U kunt inhoud publiceren of unpublish voor uw volledige AEM Screens-project of slechts voor één van uw kanalen, plaats, speler, of een toepassing.
+
+>[!IMPORTANT]
+>Wanneer u uw kanaal of kanalen in uw project hebt gemaakt, is het verplicht de kanalen te publiceren om het kanaal of de kanalen in de overzichtslijstweergave in de AEM Screens Services Provider weer te geven.
+
+## Doelstelling {#objective}
+
+Dit document helpt u begrijpen creërend een nieuw project voor uw AEM Screens project in de Leverancier van de Inhoud van het Scherm. Na het lezen moet u:
+
+* Begrijp hoe u een kanaal publiceert.
+* De publicatie van kanalen kunnen beheren, in termen van bereik.
+
+## Stappen voor het publiceren van een kanaal {#publish-channel}
+
+Voer de onderstaande stappen uit om het kanaal te publiceren:
+
+1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> Kanalen —> ChannelFood.
+
+1. Klik op **Publicatie beheren** in de actiebalk.
+
+1. Selecteer de actie als Publiceren en Plannend zoals nu van de Manage tovenaar van de Publicatie en klik op **Volgende**.
+
+1. Nadat u het kanaal hebt geselecteerd via de wizard **Publicatie beheren**, klikt u op **Publiceren** om het kanaal te publiceren.
+
+
+## Volgende {#whats-next}
+
+Nu, dat u uw kanalen in het project hebt gepubliceerd, kunt u:
+
+* Locaties maken en beheren vanuit de Inhoudsprovider voor schermen
+* Spelers maken en beheren vanuit de schermserviceprovider
+
+   U zou uw Schermen als de reis van de Beheerder van het Netwerk van de Cloud Service moeten voortzetten door het document opnieuw te bekijken.
