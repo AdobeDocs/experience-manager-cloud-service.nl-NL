@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappe
 
    Zie [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie.
 
-   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://demo.magentosite.cloud/graphql`.
+   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourmagentosystem>/graphql`.
 
 4. Catalogusfuncties met status inschakelen die verificatie vereisen (optioneel)
 
