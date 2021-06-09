@@ -4,7 +4,7 @@ description: In deze pagina wordt beschreven hoe u kanalen in rasters als Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -33,7 +33,11 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 Voer de onderstaande stappen uit om als Cloud Service een nieuw volgnummer in de rasters te maken:
 
 1. Navigeer naar de Inhoudsprovider voor schermen.
-1. Navigeer naar uw AEM Screens-project, zoals SanJoseCafe.
+
+1. Navigeer naar uw AEM Screens-project, zoals *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. Selecteer **Kanalen** omslag van uw project, zoals SanJoseCafe —> Kanalen.
 1. Klik op **Maken** op de actiebalk.
 1. Selecteer de sjabloon, bijvoorbeeld **Volgnummer** in de wizard **Maken** en klik op **Volgende**.
