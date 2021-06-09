@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 4%
@@ -73,13 +73,13 @@ Voor de lokale ontwikkeling van de toe:voegen-op CIF die de AEM als Cloud Servic
    Voorbeeld Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Voorbeeld van Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien omvat de toe:voegen-on CIF een lokale omgekeerde volmacht om het eindpunt van GraphQL van de Handel plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag GraphQL doen.
