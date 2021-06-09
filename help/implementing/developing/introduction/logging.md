@@ -2,18 +2,18 @@
 title: Aanmelden voor AEM als Cloud Service
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevens te verzoeken die AEM als Cloud Service registreren.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # Aanmelden voor AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is het registreren een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de AEM als milieu&#39;s van de Ontwikkelaar van een Cloud Service te zuiveren en te begrijpen.
+AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is de registrerendienst een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de AEM te zuiveren en te begrijpen als milieu&#39;s van de Cloud Service.
 
-AEM het registreren en het logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git worden opgeslagen, en als deel van het AEM project via de Manager van de Wolk worden opgesteld. Het aanmelden AEM als Cloud Service kan in twee logische reeksen worden opgedeeld:
+AEM logboekmontages en logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git worden opgeslagen, en als deel van het AEM project via de Manager van de Wolk worden opgesteld. Het aanmelden AEM als Cloud Service kan in twee logische reeksen worden opgedeeld:
 
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
 * Apache HTTPD Web Server/Dispatcher registreren, die het registreren van de Webserver en de Verzender op de Publish rij uitvoert.
