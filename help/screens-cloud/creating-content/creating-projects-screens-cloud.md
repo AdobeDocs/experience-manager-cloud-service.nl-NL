@@ -4,9 +4,9 @@ description: Deze pagina beschrijft hoe te om een project in Schermen als Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -26,15 +26,38 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw project in Scher
 
 1. Navigeer naar de Inhoudsprovider voor schermen.
 
-1. Klik op **Schermproject maken** in de rechterbovenhoek van de actiebalk.
+   >[!NOTE]
+   >Raadpleeg [Schermcontentprovider gebruiken](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
+
+1. Klik op **Maken** —> **Entiteit maken** in de rechterbovenhoek van de actiebalk.
+
+   ![](/help/screens-cloud/assets/create-content/create-project1.png)
+
+1. Selecteer **Schermproject** in de wizard **Maken**. Klik op **Volgende**.
+
+   ![](/help/screens-cloud/assets/create-content/create-project2.png)
 
 1. Voer de **Titel** van uw project in **Project voor schermen maken** in het dialoogvenster, bijvoorbeeld *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-project3.png)
 
    >[!NOTE]
    >Het veld **Naam** wordt automatisch ingevuld in het dialoogvenster **Schermproject maken** op basis van de titel die u kiest.
 
-1. Klik op **Opslaan**. U zult uw project van Schermen zien, die als *FirstDigitalExperience* in de Leverancier van de Inhoud van het Scherm wordt genoemd.
+1. Klik op **Create**. U zult uw project van Schermen zien, die als *FirstDigitalExperience* in de Leverancier van de Inhoud van het Scherm wordt genoemd.
 
+   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+
+
+   Of
+
+   1. Klik op **Schermproject maken** in de actiebalk.
+
+      ![](/help/screens-cloud/assets/create-content/create-project7.png)
+
+   1. Voer de **Titel** van uw project in. Klik op **Opslaan**.
+
+      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    Nu u een AEM Screens-project hebt ingesteld, kunt u beginnen met het toevoegen van kanalen en locaties aan uw project.
 
 ### Bestaand project {#deleting-project} verwijderen
@@ -45,6 +68,9 @@ Voer de onderstaande stappen uit om een bestaand project te verwijderen uit de I
 1. Navigeer naar de Inhoudsprovider voor schermen.
 1. Selecteer het project dat u wilt verwijderen.
 1. Klik op **Delete** van de actiebar om het project te schrappen.
+
+   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+
 1. Klik op **Delete** om de schrapping van het project te bevestigen.
 
    >[!NOTE]
