@@ -2,8 +2,7 @@
 title: 'Een productieprogramma bewerken '
 description: Een productieprogramma bewerken
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
-translation-type: tm+mt
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Voer de volgende stappen uit om een productieprogramma te bewerken:
 
    Navigeer naar het tabblad **Algemeen** om de programmabeschrijving te bewerken.
 
-   ![](assets/edit-program-general.png)
+   ![](assets/edit-program-prod1.png)
 
    Op het tabblad **Oplossingen en invoegtoepassingen** worden twee opties weergegeven, zoals **Sites** en **Middelen** voor zowel productie- als Sandbox-programma&#39;s. Ook, kunt u **Commerce** toe:voegen-op optie selecteren, die onder **Plaatsen**, zoals aangetoond in het hieronder cijfer beschikbaar is.
 
@@ -40,7 +39,7 @@ Voer de volgende stappen uit om een productieprogramma te bewerken:
    >[!NOTE]
    >Er moet ten minste één oplossing voor een programma worden geselecteerd. Gebruikers mogen dus niet alle oplossingen deselecteren tijdens de workflow van het programma Bewerken.
 
-1. Klik op **Opslaan** om de workflow voor het bewerkingsprogramma te voltooien.
+1. Klik op **Bijwerken** om de workflow voor het bewerkingsprogramma te voltooien.
 
 
 ## Overwegingen bij het bewerken van een programma {#considerations-editing}
