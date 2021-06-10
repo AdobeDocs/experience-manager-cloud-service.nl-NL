@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -89,9 +89,7 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
 1. **AEM versie**: Uw omgeving moet AEM versie  `2021.5.5343.20210542T070738Z` of hoger zijn. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te bereiken.
 
-1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op verwezenlijking, zal de Dienst van de Voorproef een standaardIP Lijst van gewenste personen op het worden toegepast, geëtiketteerd  `Preview Default [Env ID]`, zoals aangetoond in het hieronder cijfer.
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op verwezenlijking, zal de Dienst van de Voorproef een standaardIP Lijst van gewenste personen hebben op het wordt toegepast, geëtiketteerd  `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Op eerste verwezenlijking, moet u de standaardIP Lijst van gewenste personen van de Dienst van de Voorproef in uw milieu actief ongedaan maken om toegang toe te laten.
