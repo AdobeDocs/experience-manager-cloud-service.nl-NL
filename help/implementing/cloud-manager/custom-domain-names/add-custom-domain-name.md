@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 
 * AEM als Cloud Service ondersteunt geen jokertekendomeinen.
 
-* Elke Cloud Manager-omgeving kan maximaal 100 aangepaste domeinen per omgeving hosten.
+* Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen per omgeving hosten.
 
 * Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
 
@@ -39,7 +39,7 @@ Voer de onderstaande stappen uit om een aangepaste domeinnaam toe te voegen van 
 
 1. Klik op **Add Domain** knoop om **Add de dialoogdoos van de Naam van het Domein** te openen.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Voer de aangepaste domeinnaam in **Domeinnaam** in.
 
@@ -47,6 +47,11 @@ Voer de onderstaande stappen uit om een aangepaste domeinnaam toe te voegen van 
    >Neem `http://`, `https://` of spaties niet op wanneer u in uw domein gaat.
 
 1. Selecteer de **Omgeving** waarvan de publicatieservice wordt gekoppeld aan de domeinnaam.
+
+1. Selecteer de service als **Publiceren** of **Voorvertoning**.
+
+   >[!NOTE]
+   >Aangepaste domeinnamen worden nu ondersteund in Cloud Manager for Sites-programma&#39;s voor zowel Services voor publiceren als voorvertonen. Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen per omgeving hosten. Raadpleeg [Voorvertoningsservice](/help/implementing/cloud-manager/manage-environments.md#preview-service) voor meer informatie over Voorvertoningsservice.
 
 1. Selecteer **Domein SSL Certificaat** van drop-down en selecteer **Doorgaan**.
 
