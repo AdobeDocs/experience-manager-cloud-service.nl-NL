@@ -1,14 +1,13 @@
 ---
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
-translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 17%
+source-wordcount: '264'
+ht-degree: 13%
 
 ---
-
 
 # Logbestanden openen en beheren {#manage-logs}
 
@@ -26,6 +25,21 @@ Of de pagina **Environments**:
 >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
 
 ![](assets/download-logs2.png)
+
+## Logbestanden voor voorvertoningsservice downloaden {#download-preview-service}
+
+Gebruiker kan logboeken downloaden voor de voorbeeldservice
+
+1. Navigeer naar **Environment**-kaart op de pagina **Overzicht** van Cloud Manager.
+
+1. Downloadlogboeken selecteren in ... -menu.
+
+1. Selecteer **Voorvertoning** of **Voorvertoning Dispatcher** in de vervolgkeuzelijst Service, gevolgd door een klik op het downloadpictogram.
+
+   >[!NOTE]
+   >Deze actie kan ook van de de detailpagina van het Milieu worden verwezenlijkt.
+
+   ![](assets/download-preview.png)
 
 
 ## Hiermee wordt de API {#logs-through-api} doorlopen
@@ -72,7 +86,7 @@ Environment Id Service    Name
 
 ### Aanvullende bronnen {#resources}
 
-Raadpleeg de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en Adobe I/O CLI:
+Raadpleeg de volgende aanvullende bronnen voor meer informatie over de API en Adobe I/O CLI van Cloud Manager:
 
 * [Documentatie voor API voor cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
