@@ -2,22 +2,24 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
+source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '275'
 ht-degree: 13%
 
 ---
 
 # Logbestanden openen en beheren {#manage-logs}
 
-Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart.  Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
+Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart. Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Deze bestanden kunnen via de gebruikersinterface worden gedownload, op de pagina **Overview**:
+## Logbestanden {#download-logs} downloaden
+
+Deze bestanden kunnen worden gedownload via de gebruikersinterface, via de **Environment**-kaart op de pagina **Overview**:
 
 ![](assets/download-logs1.png)
 
-Of de pagina **Environments**:
+Of, van de pagina van de Details van het Milieu:
 
 ![](assets/download-logs.png)
 
@@ -28,13 +30,13 @@ Of de pagina **Environments**:
 
 ## Logbestanden voor voorvertoningsservice downloaden {#download-preview-service}
 
-Gebruiker kan logboeken downloaden voor de voorbeeldservice
+Volg de onderstaande stappen om logbestanden voor de Voorvertoningsservice te downloaden
 
 1. Navigeer naar **Environment**-kaart op de pagina **Overzicht** van Cloud Manager.
 
-1. Downloadlogboeken selecteren in ... -menu.
+1. Selecteer **Logbestanden downloaden** in **..**-menu.
 
-1. Selecteer **Voorvertoning** of **Voorvertoning Dispatcher** in de vervolgkeuzelijst Service, gevolgd door een klik op het downloadpictogram.
+1. Selecteer **Voorvertoning** of **Voorvertoning Dispatcher** in het vervolgkeuzemenu **Service**, gevolgd door een klik op het downloadpictogram.
 
    >[!NOTE]
    >Deze actie kan ook van de de detailpagina van het Milieu worden verwezenlijkt.
