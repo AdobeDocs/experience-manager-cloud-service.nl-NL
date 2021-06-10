@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
+source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,16 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
 1. **AEM versie**: Uw omgeving moet AEM versie  `2021.5.5343.20210542T070738Z` of hoger zijn. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te bereiken.
 
-1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op eerste verwezenlijking, moet u de standaardIP Lijst van gewenste personen van de Dienst van de Voorproef in uw milieu actief ongedaan maken om toegang toe te laten.
+1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op verwezenlijking, zal de Dienst van de Voorproef een standaardIP Lijst van gewenste personen op het worden toegepast, geëtiketteerd  `Preview Default [Env ID]`, zoals aangetoond in het hieronder cijfer.
 
-   Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de voorproefdienst en de gewenste toegang verlenen:
+   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
 
-   * Creeer een aangewezen IP Lijst van gewenste personen en pas het op de voorproefdienst toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
+   >[!NOTE]
+   >Op eerste verwezenlijking, moet u de standaardIP Lijst van gewenste personen van de Dienst van de Voorproef in uw milieu actief ongedaan maken om toegang toe te laten.
+
+   Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de Dienst van de Voorproef en de gewenste toegang verlenen:
+
+   * Creeer een aangewezen IP Lijst van gewenste personen en pas het op de Dienst van de Voorproef toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
 
       *OF*,
 
