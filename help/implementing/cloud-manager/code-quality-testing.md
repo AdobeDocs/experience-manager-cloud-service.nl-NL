@@ -2,8 +2,7 @@
 title: Codekwaliteitstests - Cloud Services
 description: Codekwaliteitstests - Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
@@ -26,7 +25,7 @@ Raadpleeg [Uw CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipelin
 Bij het testen van de kwaliteit van de code, wordt de broncode gescand om ervoor te zorgen dat het aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Enkele AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [Regels van de Kwaliteit van de Code van de Douane](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->U kunt de volledige lijst met regels [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx) downloaden.
+>U kunt de volledige lijst met regels [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) downloaden.
 
 **Drielagige plaat**
 
