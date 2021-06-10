@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,9 @@ Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *on
    >[!NOTE]
    >De bovenstaande stappen moeten worden uitgevoerd voordat u de URL van de voorbeeldservice deelt met een van uw teams om ervoor te zorgen dat de juiste leden van uw team toegang hebben tot de URL van de voorvertoning.
 
-   Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram niet meer weergegeven.
+   Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram niet meer weergegeven, zoals hieronder wordt weergegeven.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Omgeving {#updating-dev-environment} bijwerken
 
