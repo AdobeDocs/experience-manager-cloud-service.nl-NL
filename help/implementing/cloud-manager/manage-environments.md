@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -87,7 +87,7 @@ De functie Voorvertoningsservice levert via Cloud Manager een extra Preview (pub
 
 Geef een voorvertoning weer van de uiteindelijke ervaring van een website voordat deze de publicatieomgeving bereikt en openbaar is. Een paar aanwijzers voordat u de Voorvertoningsservice kunt zien en gebruiken:
 
-1. **AEM versie**: Uw omgeving moet AEM versie  `2021.5.5343.20210542T070738Z` of hoger zijn. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te bereiken.
+1. **AEM versie**: Uw omgeving moet AEM versie  `2021.05.5368.20210529T101701Z` of hoger zijn. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te bereiken.
 
 1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op verwezenlijking, zal de Dienst van de Voorproef een standaardIP Lijst van gewenste personen hebben op het wordt toegepast, geëtiketteerd  `Preview Default [Env ID]`.
 
