@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
+source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1626'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
       >[!NOTE]
       >De bovenstaande stappen moeten worden uitgevoerd voordat u de URL van de voorbeeldservice deelt met een van uw teams om ervoor te zorgen dat de juiste leden van uw team toegang hebben tot de URL van de voorvertoning.
 
-      Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram niet meer weergegeven, zoals hieronder wordt weergegeven.
+      Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram (zoals weergegeven in de onderstaande afbeelding) niet meer weergegeven.
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
