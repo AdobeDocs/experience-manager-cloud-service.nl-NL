@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -93,11 +93,11 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
    Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de voorproefdienst en de gewenste toegang verlenen:
 
-   1. Creeer een aangewezen IP Lijst van gewenste personen en pas het op de voorproefdienst toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
+   * Creeer een aangewezen IP Lijst van gewenste personen en pas het op de voorproefdienst toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
 
-      OF,
+      *OF*,
 
-   1. Gebruik de workflow IP-Lijst van gewenste personen bijwerken om de standaard-IP te verwijderen en IP&#39;s toe te voegen. Raadpleeg [Een IP-Lijst van gewenste personen weergeven en bijwerken](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)voor meer informatie.
+   * Gebruik de workflow IP-Lijst van gewenste personen bijwerken om de standaard-IP te verwijderen en IP&#39;s toe te voegen. Raadpleeg [Een IP-Lijst van gewenste personen weergeven en bijwerken](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) voor meer informatie.
 
       >[!NOTE]
       >De bovenstaande stappen moeten worden uitgevoerd voordat u de URL van de voorbeeldservice deelt met een van uw teams om ervoor te zorgen dat de juiste leden van uw team toegang hebben tot de URL van de voorvertoning.
