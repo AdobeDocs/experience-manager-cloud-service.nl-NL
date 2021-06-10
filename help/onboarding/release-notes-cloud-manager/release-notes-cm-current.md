@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
 feature: Geen informatie
-source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -39,6 +39,8 @@ De volgende release is gepland voor 15 juli 2021.
 * De kwaliteitsregels `CQBP-84` en `CQBP-84--dependencies` zijn geconsolideerd in één enkele regel.
 
 * Om verwarring te voorkomen, zijn de segmentrijen van de AEM Publish en Publish Dispatcher op de pagina van de Details van het Milieu geconsolideerd.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Raadpleeg [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer informatie.
 
