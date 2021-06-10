@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -91,22 +91,22 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
 1. **Standaard IP-Lijst van gewenste personen vergrendelen**: Op eerste verwezenlijking, moet u de standaardIP Lijst van gewenste personen van de Dienst van de Voorproef in uw milieu actief ongedaan maken om toegang toe te laten.
 
+   Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de voorproefdienst en de gewenste toegang verlenen:
+
+   1. Creeer een aangewezen IP Lijst van gewenste personen en pas het op de voorproefdienst toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
+
+      OF,
+
+   1. Gebruik de workflow IP-Lijst van gewenste personen bijwerken om de standaard-IP te verwijderen en IP&#39;s toe te voegen. Raadpleeg [Een IP-Lijst van gewenste personen weergeven en bijwerken](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)voor meer informatie.
+
+      >[!NOTE]
+      >De bovenstaande stappen moeten worden uitgevoerd voordat u de URL van de voorbeeldservice deelt met een van uw teams om ervoor te zorgen dat de juiste leden van uw team toegang hebben tot de URL van de voorvertoning.
+
+      Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram niet meer weergegeven, zoals hieronder wordt weergegeven.
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **Inhoud publiceren voor voorvertoning**: U kunt inhoud naar de Voorvertoningsservice publiceren met behulp van de interface Publicatie beheren in AEM. Raadpleeg [Inhoud voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) voor meer informatie.
-
-Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de voorproefdienst en de gewenste toegang verlenen:
-
-1. Creeer een aangewezen IP Lijst van gewenste personen en pas het op de voorproefdienst toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
-
-   OF,
-
-1. Gebruik de workflow IP-Lijst van gewenste personen bijwerken om de standaard-IP te verwijderen en IP&#39;s toe te voegen. Raadpleeg [Een IP-Lijst van gewenste personen weergeven en bijwerken](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)voor meer informatie.
-
-   >[!NOTE]
-   >De bovenstaande stappen moeten worden uitgevoerd voordat u de URL van de voorbeeldservice deelt met een van uw teams om ervoor te zorgen dat de juiste leden van uw team toegang hebben tot de URL van de voorvertoning.
-
-   Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram niet meer weergegeven, zoals hieronder wordt weergegeven.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Omgeving {#updating-dev-environment} bijwerken
 
