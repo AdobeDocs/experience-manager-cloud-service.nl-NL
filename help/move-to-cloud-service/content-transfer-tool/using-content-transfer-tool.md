@@ -2,22 +2,16 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 41%
+source-wordcount: '2785'
+ht-degree: 42%
 
 ---
 
 # De tool Content Transfer gebruiken {#using-content-transfer-tool}
 
 ## Belangrijke overwegingen voor het gebruik van de Content Transfer-tool {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen"
->abstract="Houd rekening met belangrijke overwegingen om het gereedschap Inhoud overbrengen te gebruiken, zoals Java- en AEM-versies, ondersteunde datastore-typen, gebruikersgroepoverwegingen en meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Beste praktijken en richtlijnen"
 
 Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
 
