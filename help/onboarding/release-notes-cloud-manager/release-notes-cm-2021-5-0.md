@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
 feature: Geen informatie
-source-git-commit: 584850f9c6767af18170f398c87728bb4449cb3e
+source-git-commit: 87a43c0a37db732c66073f9582d4ab3574304aed
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Serv
 ## Releasedatum {#release-date}
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
-De volgende release is gepland voor 10 juni 2021.
 
 ### Wat is er nieuw?{#what-is-new}
 
