@@ -5,9 +5,9 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Implementeren
 role: Architect, Developer
-source-git-commit: c430d28d046e312c19a4e96bd4e978fb41f2eed4
+source-git-commit: fca1c30cfd321581eda3ed7e4514fd428e11cfad
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '707'
 ht-degree: 21%
 
 ---
@@ -85,7 +85,8 @@ ht-degree: 21%
       + [Een IP-Lijst van gewenste personen verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [De status van een IP-Lijst van gewenste personen controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Opmerkingen bij de huidige release (2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Opmerkingen bij de huidige release (2021.6.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Opmerkingen bij de release 2021.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [Opmerkingen bij de release 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Opmerkingen bij de release 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [Opmerkingen bij de release 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
