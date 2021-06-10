@@ -2,10 +2,10 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1652'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +96,7 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
    Een gebruiker met de vereiste toestemmingen moet één van het volgende doen *ontgrendelen* toegang tot de Dienst van de Voorproef en de gewenste toegang verlenen:
 
-   * Creeer een aangewezen IP Lijst van gewenste personen en pas het op de Dienst van de Voorproef toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren.
+   * Creeer een aangewezen IP Lijst van gewenste personen en pas het op de Dienst van de Voorproef toe. Volg dit onmiddellijk door `Preview Default [Env ID] IP Allow List` van de Dienst van de Voorproef uit te voeren. Raadpleeg [Een IP-Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) niet toepassen voor meer informatie.
 
       *OF*,
 
