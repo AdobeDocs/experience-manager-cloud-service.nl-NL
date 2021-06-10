@@ -2,10 +2,10 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -214,6 +214,10 @@ Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres 
 ## E-mail {#sending-email} verzenden
 
 AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
+
+>[!NOTE]
+>
+>De dienst van de Post kan met steun worden gevormd OAuth2. Voor meer informatie, zie [Steun OAuth2 voor de Dienst van de Post](/help/security/oauth2-support-for-mail-service.md).
 
 ### Toegang {#requesting-access} aanvragen
 
