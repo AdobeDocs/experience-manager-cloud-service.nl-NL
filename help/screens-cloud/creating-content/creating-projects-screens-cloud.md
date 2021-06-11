@@ -4,9 +4,9 @@ description: Deze pagina beschrijft hoe te om een project in Schermen als Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
+source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -29,35 +29,25 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw project in Scher
    >[!NOTE]
    >Raadpleeg [Schermcontentprovider gebruiken](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
 
-1. Klik op **Maken** —> **Entiteit maken** in de rechterbovenhoek van de actiebalk.
+1. Klik op **Schermproject maken** in de rechterbovenhoek van de actiebalk.
 
-   ![](/help/screens-cloud/assets/create-content/create-project1.png)
-
-1. Selecteer **Schermproject** in de wizard **Maken**. Klik op **Volgende**.
-
-   ![](/help/screens-cloud/assets/create-content/create-project2.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Voer de **Titel** van uw project in **Project voor schermen maken** in het dialoogvenster, bijvoorbeeld *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-project3.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >Het veld **Naam** wordt automatisch ingevuld in het dialoogvenster **Schermproject maken** op basis van de titel die u kiest.
 
-1. Klik op **Create**. U zult uw project van Schermen zien, die als *FirstDigitalExperience* in de Leverancier van de Inhoud van het Scherm wordt genoemd.
+1. Klik op **Opslaan**. U zult uw project van Schermen zien, die als *FirstDigitalExperience* in de Leverancier van de Inhoud van het Scherm wordt genoemd.
 
-   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
+1. U zult uw project in de Leverancier van de Inhoud van het Scherm zien, met twee omslagen noemden, **Locaties** en **Kanalen**.
 
-   Of
+   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
-   1. Klik op **Schermproject maken** in de actiebalk.
-
-      ![](/help/screens-cloud/assets/create-content/create-project7.png)
-
-   1. Voer de **Titel** van uw project in. Klik op **Opslaan**.
-
-      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    Nu u een AEM Screens-project hebt ingesteld, kunt u beginnen met het toevoegen van kanalen en locaties aan uw project.
 
 ### Bestaand project {#deleting-project} verwijderen
