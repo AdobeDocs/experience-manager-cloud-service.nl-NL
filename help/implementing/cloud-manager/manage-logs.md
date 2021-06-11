@@ -2,37 +2,39 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '235'
 ht-degree: 9%
 
 ---
 
 # Logbestanden openen en beheren {#manage-logs}
 
-Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de milieucaart.
+Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de **Environmental**-kaart op de pagina **Overzicht** of de pagina Environment Details.
 
 ## Logbestanden {#download-logs} downloaden
 
-Voer de onderstaande stappen uit om logbestanden te downloaden:
+Voer de onderstaande stappen uit om logbestanden te downloaden.
 
-1. U kunt logboeken door UI, of van **de kaart** van **Overzicht** van de pagina downloaden:
+1. Navigeer naar de **Environment**-kaart van de pagina **Overzicht**.
 
-![](assets/download-logs1.png)
+1. Selecteer **Logbestanden downloaden** in **..**-menu.
 
-Of, van de pagina van de Details van het Milieu:
+   ![](assets/download-logs1.png)
 
-![](assets/download-logs.png)
+   *Of*,
 
->[!NOTE]
->Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
+   Van de pagina van de Details van het Milieu:
 
-1.Selecteer **Logbestanden downloaden** in **..**-menu.
+   ![](assets/download-logs.png)
 
-1. Selecteer in het vervolgkeuzemenu **Service** opties zoals **Voorvertoning** of **Voorvertoning Dispatcher**, gevolgd door te klikken op het downloadpictogram. Deze actie kan ook van de de detailpagina van het Milieu worden verwezenlijkt.
+   >[!NOTE]
+   >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
 
-![](assets/download-preview.png)
+1. Selecteer in het vervolgkeuzemenu **Service** opties zoals **Voorvertoning** of **Voorvertoning Dispatcher**, gevolgd door te klikken op het downloadpictogram.
+
+   ![](assets/download-preview.png)
 
 
 ## Hiermee wordt de API {#logs-through-api} doorlopen
