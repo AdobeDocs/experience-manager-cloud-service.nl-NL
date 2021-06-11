@@ -2,10 +2,9 @@
 title: 'Inleiding tot Sandbox-programma''s '
 description: Inleiding tot Sandbox-programma's
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ Een zandbak wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo
 
 De omgevingen die in een sandbox worden gemaakt, zijn niet geconfigureerd voor automatisch schalen. Daarom zijn deze omgevingen niet geschikt voor het testen van prestaties of belasting.
 
-Sandbox-programma&#39;s omvatten sites en middelen en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het AEM archetype van het Project wordt gebaseerd.
+Sandboxprogramma&#39;s omvatten [!DNL Sites] en [!DNL Assets] en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het AEM archetype van het Project wordt gebaseerd.
 
 Verwijs naar [Begrijpend Programma en Types van Programma](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) om meer over de Types van Programma te leren.
 
@@ -33,7 +32,7 @@ Sandbox-programma&#39;s hebben de volgende kenmerken:
    * totstandbrenging van een ontwikkelomgeving
    * de aanleg van een niet-productiepijpleiding die naar ontwikkelomgeving (master tak die aan ontwikkelomgeving opstelt)
 
-1. **Oplossingen:** Sandbox-programma&#39;s omvatten AEM Sites en Middelen.
+1. **Oplossingen:** Sandbox-programma&#39;s bevatten AEM  [!DNL Sites] en  [!DNL Assets].
 
 1. **AEM Updates:** AEM updates kunnen handmatig worden toegepast op omgevingen in een Sandbox-programma en worden niet automatisch doorgeduwd.
 Raadpleeg [Updates AEM naar Sandbox-omgevingen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) voor meer informatie.
