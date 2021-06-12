@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media werkt met interactieve video's en schok
 feature: Interactieve video's
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '6004'
+source-wordcount: '5974'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Zie ook [Interactieve video gebruiken met Dynamic Media](https://experienceleagu
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
 
 -->
 
@@ -59,11 +59,11 @@ Met de webinar [Interactieve video, het delen van koppelingen en het delen van Y
 
 De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve video&#39;s in Dynamic Media.
 
-Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op deze [startdemo-webpagina die *nog niet* interactiviteit heeft toegevoegd aan deze ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
+Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op deze [startdemo-webpagina die *nog niet* interactiviteit heeft toegevoegd aan deze ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
 Met behulp van de **voorbeelden** kunt u de stappen illustreren voor het integreren van interactieve video&#39;s op uw eigen website.
 
-Wanneer u de zelfstudie in de laatste voorbeeldsectie hebt voltooid, wordt [de laatste demo-webpagina met de volledig geïntegreerde interactieve video op deze manier weergegeven](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
+Wanneer u de zelfstudie in de laatste voorbeeldsectie hebt voltooid, wordt [de laatste demo-webpagina met de volledig geïntegreerde interactieve video op deze manier weergegeven](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html).
 
 
 
@@ -180,7 +180,7 @@ Bekijk de volgende voorbeelden van URL&#39;s in de Snelle weergave en de resulte
 
 Wanneer de bovenstaande benadering wordt toegepast op de website van het Voorbeeld, hebt u een Web-pagina met verscheidene productduimnagels, elk met een &quot;ZIE MEER&quot;knoop:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Nadat u alle product Snelle meningen activeert beschikbaar op de pagina, krijgt u de volgende lijst van Snelle meningsverzoeken die aan het achterste eind worden gemaakt:
 
@@ -523,7 +523,7 @@ Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren
 
 De demo-website als voorbeeld gebruiken:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 De insluitcode voor video is standaard:
 
@@ -554,7 +554,7 @@ De insluitcode voor video is standaard:
 
 Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het vervangen van deze code door de interactieve video-insluitcode uit de Experience Manager. U kunt het resultaat op de volgende URL zien. Hoewel er een interactieve video op de pagina wordt weergegeven, is deze nog niet geïntegreerd met de bestaande Snelle weergaven:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Een interactieve video integreren met een bestaande Snelle weergave {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -753,7 +753,7 @@ De volledige broncode ziet er als volgt uit:
 
 De laatste demo-website met de volledig geïntegreerde interactieve video ziet er als volgt uit:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Met Snelle weergaven aangepaste pop-upvensters® {#using-quickviews-to-create-custom-pop-ups} maken
 
