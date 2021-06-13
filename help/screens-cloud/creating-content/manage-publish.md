@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen public
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ Dit document helpt u begrijpen creërend een nieuw project voor uw AEM Screens p
 
 Voer de onderstaande stappen uit om het kanaal te publiceren:
 
-1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> Kanalen —> ChannelFood.
+1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> **Kanalen** —> **HerhalingskanaalOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Klik op **Publicatie beheren** in de actiebalk.
 
-1. Selecteer de actie als Publiceren en Plannend zoals nu van de Manage tovenaar van de Publicatie en klik op **Volgende**.
+1. Selecteer **Actie** als **Publicatie** en **Planning** als **Now** van **Manage Publication Wizard** en klik op **Next**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Klik **+ omvat Kinderen** van de actiebar en uncheck alle opties om alle modules in uw project te publiceren en klik toevoegen om te publiceren. Door gebrek, zullen alle dozen worden gecontroleerd en u zult manueel uncheck de dozen moeten om alle modules in uw project te publiceren.
 
 1. Nadat u het kanaal hebt geselecteerd via de wizard **Publicatie beheren**, klikt u op **Publiceren** om het kanaal te publiceren.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Volgende {#whats-next}
@@ -48,4 +57,4 @@ Nu, dat u uw kanalen in het project hebt gepubliceerd, kunt u:
 * Locaties maken en beheren vanuit de Inhoudsprovider voor schermen
 * Spelers maken en beheren vanuit de schermserviceprovider
 
-   U zou uw Schermen als de reis van de Beheerder van het Netwerk van de Cloud Service moeten voortzetten door het document opnieuw te bekijken.
+   Als u het document opnieuw bekijkt, moet u de rasters als Cloud Service voortzetten.
