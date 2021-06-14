@@ -4,9 +4,9 @@ description: In deze pagina wordt beschreven hoe u als Cloud Service spelers op 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # Afspeelapparatuur maken en beheren in rasters als een Cloud Service {#creating-players-screens-cloud}
 
-Nadat u de kanalen van uw AEM Screens-project hebt gepubliceerd, moet u spelers maken.
+Nadat u de kanalen van uw AEM Screens-project hebt gepubliceerd, moet u spelers maken van de Screens Services Provider.
+
 Een *Speler* stelt de spelersoftware in werking om een visuele output te veroorzaken. Het kan het weergeven van bijgesneden, geschaalde, vertaalde delen van algemene inhoud of ervaring besturen. De schermconfiguratie is gebonden aan een beeldscherm, maar kan worden vervangen in het geval een technisch defect optreedt.
+
+>[!NOTE]
+>U kunt ook de in deze Guide vermelde stappen implementeren nadat u de schermspeler hebt geïnstalleerd.
 
 ## Doelstelling {#objective}
 
@@ -26,10 +30,12 @@ Met dit document krijgt u meer inzicht in het maken en beheren van spelers voor 
 
 ## Een speler {#creating-players} maken
 
-Voer de onderstaande stappen uit om de weergave te maken van Screens Services Provider:
+Voer de onderstaande stappen uit om de speler te maken van Screens Services Provider:
 
-1. Navigeer aan de Leverancier van de Diensten van het Scherm van uw AEM instantie van de Cloud Service.
-1. Selecteer het tabblad **Weergaven** in de linkernavigatiebalk en klik op Maken in de rechterbovenhoek van het scherm.
+1. Navigeer naar de Serviceverlener voor schermen.
+
+1. Selecteer het tabblad **Weergaven** in het linkernavigatievenster en klik op Maken in de rechterbovenhoek van het scherm.
+
 1. Selecteer **Display**.
 1. Voer de titel in als **ChannelFoodDisplay** in Weergavenaam en klik op Maken.
 1. De weergave met de naam ChannelFoodDisplay wordt nu opgenomen in het weergaveoverzicht.
