@@ -1,14 +1,13 @@
 ---
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # Status domeinnaam {#check-status} controleren
 
@@ -42,7 +41,7 @@ DeletingDeletion of Custom Domain name is in process.
 FailedDeletion of Custom Domain name failed. U moet het opnieuw proberen. Raadpleeg [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) voor meer informatie.
 
 
-## Bestaande configuraties CDN voor IP Lijsten van gewenste personen {#pre-existing-cdn}
+## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
 Klanten met omgevingen die reeds bestaande CDN-configuraties voor IP-Lijsten van gewenste personen, SSL-certificaten of aangepaste domeinnamen bevatten, zien het volgende bericht in de detailpagina **IP Lijst van gewenste personen** en **Environment**. Het bericht dat op UI wordt getoond zal verdwijnen zodra de klant alle reeds bestaande omgevingsconfiguraties via UI volledig heeft gemigreerd en het kan 1-2 werkdagen voor het bericht vergen om te verdwijnen.
 
