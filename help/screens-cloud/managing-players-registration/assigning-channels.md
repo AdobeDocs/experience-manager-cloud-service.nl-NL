@@ -4,10 +4,10 @@ description: Op deze pagina wordt beschreven hoe u een kanaal als Cloud Service 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2514255c20a87a2e469c1678e6aee20a517eb9ab
+source-git-commit: 8108589cb69c31e1b6d838476efc56684a97728e
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 0%
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,7 @@ Zodra de projectopstelling volledig is, moet u het kanaal aan een vertoning toew
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe u een kanaal aan een vertoning kunt toewijzen, zodra uw vertoning klaar is en de inhoud van het kanaal is gevuld. Na het lezen moet u:
-
-* Begrijp hoe te om een kanaal aan een vertoning van de Leverancier van de Diensten van het Scherm toe te wijzen.
+Dit document helpt u begrijpen hoe u een kanaal aan een vertoning kunt toewijzen, zodra uw vertoning klaar is en u inhoud aan uw kanaal hebt toegevoegd en het gepubliceerd. Na het lezen zou u moeten kunnen begrijpen hoe te om een kanaal aan een vertoning van de Leverancier van de Diensten van het Scherm toe te wijzen.
 
 ## Vereisten {#prerequisites}
 
@@ -35,10 +33,24 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
 1. Navigeer naar de Serviceverlener voor schermen en selecteer **Display** in het navigatievenster aan de linkerkant.
 
-1. Selecteer de vertoning, zoals ChannelFoodDisplay van de lijst en klik op Wijs kanaal toe om een kanaal aan de vertoning toe te wijzen.
+1. Klik op **Kanaal toewijzen** aan de weergave.
 
-1. Selecteer het kanaal, zoals ChannelFood in de vervolgkeuzelijst. Stel de prioriteit en activering in en klik op Maken.
+   ![afbeelding](/help/screens-cloud/assets/display/assignchannel-1.png)
+
+1. Vul de volgende velden in het dialoogvenster **Een kanaal toewijzen**.
+
+   1. Selecteer de kanaalnaam in de vervolgkeuzelijst.
+   1. Kies de prioriteit.
+
+      >[!NOTE]
+      >Prioriteit wordt gebruikt om de toewijzingen te bestellen als meerdere toewijzingen voldoen aan de afspeelcriteria. Degene met de hoogste waarde heeft altijd voorrang op lagere waarden. Bijvoorbeeld, als er twee kanalen A en B zijn. A heeft een prioriteit van 1 en B heeft een prioriteit van 2, dan wordt kanaal B getoond, aangezien het een hogere prioriteit dan A heeft.
+   1. Selecteer de begin- en einddatum van **Activering**.
+
+      ![afbeelding](/help/screens-cloud/assets/display/assignchannel-2.png)
+
+1. Klik op **Create**. U zult zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
+
+   ![afbeelding](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-   Nadat u op Maken hebt geklikt, ziet u dat er een kanaal is toegewezen voor die weergave.
 
