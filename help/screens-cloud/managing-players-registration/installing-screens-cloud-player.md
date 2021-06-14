@@ -1,12 +1,12 @@
 ---
-title: Players in Schermen installeren als Cloud Service
-description: In deze pagina wordt beschreven hoe u afspeelapparaten in rasters als Cloud Service kunt installeren.
+title: Players in rasters installeren en configureren als Cloud Service
+description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -48,4 +48,4 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
 ## Volgende {#whats-next}
 
-Nu, dat u uw spelers hebt geïnstalleerd en de vereiste montages gevormd, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document **te herzien Creërend de Speler van de Leverancier van de Diensten van het Scherm**.
+Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, moet u uw schermen voortzetten als een reis naar de Cloud Service door het document [Spelers in schermen registreren als een Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van de Screens Services Provider.
