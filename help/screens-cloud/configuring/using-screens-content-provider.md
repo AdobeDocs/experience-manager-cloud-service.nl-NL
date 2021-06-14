@@ -1,12 +1,12 @@
 ---
 title: Scherminhoudprovider gebruiken
-description: In deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen gebruikt.
+description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -32,5 +32,6 @@ Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken 
 
 ## Volgende {#whats-next}
 
-Nadat u hebt geleerd hoe u naar de Inhoudsprovider voor schermen kunt navigeren, kunt u de volgende stap uitvoeren: Projecten in schermen maken en beheren als Cloud Service.
+Nu, hebt u geleerd hoe te om aan de Leverancier van de Inhoud van het Scherm te navigeren, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien Creërend en het Leiden Projecten in Schermen als Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+
 
