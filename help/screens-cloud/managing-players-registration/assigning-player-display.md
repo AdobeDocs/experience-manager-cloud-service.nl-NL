@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een speler als Cloud Service 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Wanneer de projectinstelling is voltooid, moet u de speler aan een weergave toew
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe u vertoningen in de Dienstverlener van de Diensten van het Scherm creeert en beheert. Nadat u een speler hebt gelezen, kunt u leren hoe u deze aan een weergave kunt toewijzen.
+Dit document helpt u te begrijpen hoe u een speler aan een vertoning in de Dienstverlener van de Borstels toewijst. Dit zijn de laatste verplichte stappen voordat de inhoud op schermen wordt afgespeeld als een Cloud Service-speler.
 
 ## Stappen om een Speler aan een Vertoning {#create-display} toe te wijzen
 
@@ -36,7 +36,7 @@ Voer de onderstaande stappen uit om een speler aan een weergave toe te wijzen:
 
 1. Nadat u op Selecteren hebt geklikt, wordt de toegewezen weergave weergegeven onder **TOEGEWEZEN WEERGAVE**.
 
-   De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu inhoud downloaden en afspelen. Gefeliciteerd!
+   De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu inhoud downloaden en afspelen. **Gefeliciteerd!**
 
    ![afbeelding](/help/screens-cloud/assets/player/output.gif)
 
