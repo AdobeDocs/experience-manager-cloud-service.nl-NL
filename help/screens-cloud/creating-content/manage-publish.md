@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen public
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,4 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
 ## Volgende {#whats-next}
 
-Nu, dat u uw kanalen in het project hebt gepubliceerd, kunt u:
-
-* Locaties maken en beheren vanuit de Inhoudsprovider voor schermen
-* Spelers maken en beheren vanuit de schermserviceprovider
-
-   Als u het document opnieuw bekijkt, moet u de rasters als Cloud Service voortzetten.
+Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien het Installeren van en het Vormen Players in Schermen als Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
