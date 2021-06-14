@@ -4,10 +4,10 @@ description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor scher
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '190'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,11 @@ De volgende sectie beschrijft hoe te om de Leverancier van de Inhoud van het Sch
 >**Vereiste**
 >Voordat u deze sectie gaat lezen, raadpleegt u [Setting up Screens Services Provider](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) to learn how to navigate to this user interface from Screens Services Provider.
 
-Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken om de inhoud af te spelen.
+Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken om de inhoud af te spelen. Gebruik Schermcontentprovider voor het maken en beheren van:
+
+* Projecten
+* Kanalen
+* Locaties
 
 ## Volgende {#whats-next}
 
