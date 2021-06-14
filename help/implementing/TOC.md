@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 30%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 30%
    + [Logboekregistratie](developing/introduction/logging.md)
    + [Configuraties en de Configuratiebrowser](developing/introduction/configurations.md)
    + [Technische stichtingen AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
