@@ -4,10 +4,10 @@ description: Op deze pagina wordt beschreven hoe u beeldschermen als Cloud Servi
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 2%
+source-wordcount: '283'
+ht-degree: 1%
 
 ---
 
@@ -53,3 +53,6 @@ Selecteer de weergave en klik op **Delete** onder aan het deelvenster, zoals in 
 
 ![afbeelding](/help/screens-cloud/assets/display/disp-5.png)
 
+## Volgende {#whats-next}
+
+Nu, dat u hebt geleerd om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [te herzien installeert en Vormt de Speler van de Schermen voor AEM als Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
