@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
    * Gebruik het detailspictogram om de details van elk rapport te bekijken vinden
    * Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld
 
-## Planning en installatie gebruiken {#planning-setup}
+## Planning en de Kaart van de Opstelling {#planning-setup} gebruiken
 
 Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling te onderzoeken.
 
