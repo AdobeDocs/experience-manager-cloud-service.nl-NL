@@ -4,7 +4,7 @@ description: Deze pagina beschrijft het runnen van een pijpleiding voor Schermen
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -59,4 +59,4 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 
 ## Volgende {#whats-next}
 
-Nadat u hebt geleerd hoe u de pijplijn voor uw programma kunt uitvoeren in Cloud Manager, kunt u nu verdergaan naar de volgende stap. De volgende stap is het Vormen en Vestiging uw project van Schermen.
+Als u eenmaal hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, dat wil zeggen [Navigeren naar Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
