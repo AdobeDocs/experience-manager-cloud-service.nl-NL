@@ -4,9 +4,9 @@ description: Op deze pagina worden de eerste stappen beschreven waarmee u aan de
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Klik hier om het nieuwste functiepakket te downloaden.
 
 ## Gebruikers toevoegen aan Adobe Admin Console {#admin-console}
 
-Zodra u van een identiteitskaart van de Organisatie van het Systeem van Adobe Identity Management (IMS) wordt voorzien, kunt u nu op [Adobe Admin Console](https://adminconsole.adobe.com/) worden betreden. Raadpleeg [Adobe Admin Console-gebruikers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) voor meer informatie over het toevoegen van gebruikers aan de Admin Console.
+Zodra u van een identiteitskaart van de Organisatie van het Systeem van de Adobe Identity Management (IMS) is voorzien, kunt u tot [Adobe Admin Console](https://adminconsole.adobe.com/) nu toegang hebben. Raadpleeg [Adobe Admin Console-gebruikers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) voor meer informatie over het toevoegen van gebruikers aan de Admin Console.
 
 >[!NOTE]
 >De gebruikers hebben toegang tot AEM profiel van het Product van de Cloud Service zodat zij aan AEM kunnen login gebruikend Adobe ID of Federated ID.
 
 ## Volgende {#whats-next}
 
-Nu u een IMS-organisatie-id hebt gekregen en als gebruiker aan de Adobe Admin Console bent toegevoegd, kunt u nu een invoegtoepassing voor schermen toevoegen aan een nieuw of bestaand programma voor schermen als Cloud Service in Cloud Manager.
+Nu u een IMS-organisatie-id hebt gekregen en als gebruiker aan de Adobe Admin Console bent toegevoegd, kunt u nu [Invoegtoepassing voor schermen toevoegen aan het nieuwe programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [een bestaand programma](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) voor schermen als Cloud Service in Cloud Manager.
