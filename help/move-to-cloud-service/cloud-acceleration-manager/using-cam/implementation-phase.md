@@ -4,10 +4,10 @@ description: Deze pagina bevat een overzicht van de implementatiefase in Cloud A
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 3%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,14 @@ De uitvoeringsfase omvat:
 * [AEM als Cloud Service-implementatie](#aem-as-a-cloud-service-deployment)
 * [Overdracht van content](#content-transfer)
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+Klik op uw projectkaart om de bestemmingspagina van het project te openen en aan de **sectie van de Implementatie**, zoals aangetoond in het hieronder cijfer te navigeren.
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+>[!NOTE]
+>Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) voor meer informatie.
+
 
 ## Lokale ontwikkelingskaart gebruiken {#local-development}
 
@@ -62,13 +69,13 @@ AEM als kaart van de Plaatsing van de Cloud Service verstrekt alle relevante inh
 
 Volg deze sectie om AEM als activiteitenkaart van de identiteitskaart van de Plaatsing van de Cloud Service te onderzoeken:
 
-1. Klik op de **View** knoop van **AEM als Cloud Service Plaatsing** kaart.
+1. Klik op de **View** knoop van **AEM als Cloud Service Plaatsing** activiteitenkaart.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
 
 
 ## Inhoudsoverdrachtskaart {#content-transfer} gebruiken
@@ -77,17 +84,25 @@ De activiteitenkaart van de Overdracht van de Inhoud verstrekt begeleiding en ov
 
 Volg deze sectie om de activiteitenkaart van de Overdracht van de Inhoud te onderzoeken:
 
-1. Klik op de **View** knoop van **de Lokale kaart van de Ontwikkeling**.
+1. Klik op de **View** knoop van **Content Overdracht** activiteitenkaart.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
 
->[!NOTE]
->Controleer de [voorwaarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) en de [beste praktijken en richtlijnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) alvorens het Hulpmiddel van de Overdracht van de Inhoud te gebruiken.
+   >[!NOTE]
+   >Controleer de [voorwaarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) en de [beste praktijken en richtlijnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) alvorens het Hulpmiddel van de Overdracht van de Inhoud te gebruiken.
 
-Er is een nieuwe calculator voor het gereedschap Inhoud overbrengen beschikbaar waarmee u kunt inschatten hoe lang het kan duren om de activiteit voor inhoudsoverdracht te voltooien. Met de schuifregelaar Grootte inhoudgegevensopslagruimte kunt u de grootte selecteren die van toepassing is op uw project. De overdrachtstijden variëren voor de extractie- en innamefasen. Als u de grootte van de AEM Repository wilt inschatten, kunt u het rapport Schijfgebruik uitvoeren onder `http://HOST:PORT/etc/reports/diskusage.html`.
+### Activiteit van gereedschap voor het doorgeven van inhoud schatten {#calculating}
+
+Er is een nieuwe calculator voor het gereedschap Inhoud overbrengen beschikbaar waarmee u kunt inschatten hoe lang het kan duren om de activiteit voor inhoudsoverdracht te voltooien. Met de schuifregelaar Grootte inhoudgegevensopslagruimte kunt u de grootte selecteren die van toepassing is op uw project. De overdrachtstijden variëren voor de extractie- en innamefasen.
+
+Als u de grootte van de AEM Repository wilt inschatten, kunt u het rapport Schijfgebruik uitvoeren onder `http://HOST:PORT/etc/reports/diskusage.html`.
 
 U kunt ook de grootte van specifieke repository paden schatten met de parameter `path`, bijvoorbeeld `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+
+## Volgende {#whats-next}
+
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase gebruikt, kunt u nu verdergaan met het evalueren van de volgende stap met de GoLive-fase.
