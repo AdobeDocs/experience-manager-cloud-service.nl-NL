@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van het gebruik en het gebruik van 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Ga als volgt te werk om naar CAM (Cloud Acceleration Manager) te navigeren:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Een project maken in Cloud Acceleration Manager {#create-project}
+### Een project maken en beheren in Cloud Acceleration Manager {#create-project}
 
 Met de openingspagina van de CAM (Cloud Acceleration Manager) kunt u meerdere projecten maken en bewerken.
 
