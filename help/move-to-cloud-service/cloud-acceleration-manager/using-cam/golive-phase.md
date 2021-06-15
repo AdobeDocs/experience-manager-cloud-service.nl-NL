@@ -4,12 +4,36 @@ description: Deze pagina bevat een overzicht van de Go-live-fase in Cloud Accele
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: b1bd3e996ec9cd78d09c6ad6c34cecdfdb00a57c
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 2%
 
 ---
 
 
 # Go-live fase in Cloud Acceleration Manager {#golive-phase-cam}
+
+De Go Live-kaart biedt alle relevante inhoud die de aandacht vestigt op voorbereiding, specifieke acties die moeten worden ondernomen en grondig onderzoek om ervoor te zorgen dat AEM als Cloud Service probleemloos en succesvol kan worden gebruikt.
+
+De fase GoLive bevat [Go Live](#go-live).
+
+Klik op uw projectkaart om de bestemmingspagina van het project te openen en aan de **Go Levende** sectie, zoals aangetoond in het hieronder cijfer te navigeren.
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+
+>[!NOTE]
+>Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) voor meer informatie.
+
+
+## De Go Live Activiteitenkaart {#go-live} gebruiken
+
+Volg deze sectie om de Go Live activiteitenkaart te verkennen:
+
+1. Klik op de **View** knoop van **Go Live** kaart.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+
+1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
