@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een invoegtoepassing voor sch
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ In de volgende sectie wordt beschreven hoe u schermen als een invoegtoepassing k
 
 Voer de onderstaande stappen uit om schermen toe te voegen aan een nieuw programma in Cloud Manager:
 
-1. Ga naar Cloud Manager.
+1. Navigeer naar [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >Raadpleeg [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) voor meer informatie over Cloud Manager.
@@ -50,5 +50,5 @@ Voer de onderstaande stappen uit om schermen toe te voegen aan een nieuw program
 
 ## Volgende {#whats-next}
 
-Nadat u hebt geleerd hoe u rasters kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en producten van Cloud Manager ziet, kunt u nu verdergaan met de volgende stap in het proces Onboarding, namelijk [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Als u eenmaal hebt geleerd hoe u rasters kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en producten van Cloud Manager ziet, kunt u nu verdergaan met de volgende stap in het instapproces, namelijk [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
