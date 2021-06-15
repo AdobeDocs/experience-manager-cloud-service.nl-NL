@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van het gebruik en het gebruik van 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '480'
 ht-degree: 1%
 
 ---
@@ -54,14 +54,41 @@ Voer de onderstaande stappen uit om een nieuw project te maken:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   Selecteer het project en houd de muisaanwijzer boven het project om het project te bewerken of te verwijderen, zoals in de onderstaande afbeelding wordt getoond.
+1. Het project wordt nu gemaakt en wordt weergegeven op de bestemmingspagina **Cloud Acceleration Manager**.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. Klik op de projectkaart om het project in te voeren. Hiermee gaat u naar de bestemmingspagina van het project.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## Het project {#manage-project} beheren
+
+U kunt de projectnaam, beschrijving, miniatuurafbeelding bewerken of het project verwijderen.
+
+### Het project {#edit-project} bewerken
+
+Voer de onderstaande stappen uit om uw project te bewerken:
+
+1. Selecteer het project, houd de muisaanwijzer boven het project en klik op het potloodpictogram om het project te bewerken, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. U kunt de projectnaam, de beschrijving uitgeven, en zelfs een nieuw beeld uploaden of bestaande uit **uitgeven project** dialoogdoos.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. Klik op **Bijwerken** om uw wijzigingen vast te leggen.
+
+### Het project {#delete-project} verwijderen
+
+Voer de onderstaande stappen uit om uw project te verwijderen:
+
+1. Selecteer het project, houd de muisaanwijzer boven het project en klik op het emmerpictogram om het project te verwijderen, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Klik op **Delete** om de stap te bevestigen.
 
 ## Volgende {#whats-next}
 
