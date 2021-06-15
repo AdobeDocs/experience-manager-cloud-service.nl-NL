@@ -4,9 +4,9 @@ description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Players in rasters installeren en configureren als een Cloud Service {#installing-players-screens-cloud}
 
-In de onderstaande sectie wordt beschreven hoe u AEM Screens-spelers kunt installeren die zijn geregistreerd bij on-premise AEM-instanties. Bovendien moet u de bestaande speler opnieuw instellen in de fabriek en vervolgens de nieuwe speler registreren tegen AEM Screens als Cloud Service.
+In deze sectie wordt beschreven hoe u AEM Screens-spelers kunt installeren die zijn geregistreerd op externe AEM. Bovendien moet u de bestaande speler opnieuw instellen in de fabriek en de nieuwe speler vervolgens registreren bij AEM Screens als Cloud Service.
 
 ## Doelstelling {#objective}
 
@@ -44,8 +44,8 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Klik op **Bevestig** dat ertoe aanzet wanneer het schakelen naar wolkenwijze de speler zal verwijderen.
+1. Klik op **Bevestig** dat ertoe aanzet wanneer het schakelen naar wolkenwijze de speler zal schrappen-register.
 
 ## Volgende {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, moet u uw schermen voortzetten als een reis naar de Cloud Service door het document [Spelers in schermen registreren als een Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van de Screens Services Provider.
+Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, moet u uw schermen voortzetten als een Cloud Service-reis door het document opnieuw te bekijken, [Players in Screens registreren als een Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.
