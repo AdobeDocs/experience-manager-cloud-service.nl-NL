@@ -4,9 +4,9 @@ description: In deze pagina wordt beschreven hoe u spelers in schermen kunt regi
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Nadat u spelers voor rasters hebt geïnstalleerd en geconfigureerd als Cloud Ser
 
 ## Doelstelling {#objective}
 
-Met dit document krijgt u meer inzicht in het registreren van spelers bij de Screens Services Provider. Na het lezen moet u:
+Met dit document krijgt u meer inzicht in het registreren van spelers bij de Screens Services Provider. Na het lezen moet u in staat zijn om:
 
-* Begrijp hoe u spelers kunt registreren.
-* Uw kanalen in een AEM Screens-project kunnen beheren, in termen van bereik.
+* begrijpen hoe spelers kunnen worden geregistreerd
+* hoe te om het registratieproces van de Leverancier van de Diensten van het Scherm te voltooien
 
 ## Stappen om een schermspeler {#register-players} te registreren
 
@@ -66,3 +66,6 @@ Volg de onderstaande stappen om uw speler te registreren:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player6.png)
 
+## Volgende {#whats-next}
+
+Nu, dat u de speler aan de wijze van de Wolk hebt geïnstalleerd en gevormd, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document te herzien, [Assigning Player aan een Vertoning in Schermen als Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van de Dienstverlener van de Schermen.
