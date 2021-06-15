@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen public
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-U kunt inhoud publiceren vanuit AEM Screens. Met de functie Publicatie beheren kunt u inhoud-updates van auteur leveren en publiceren naar speler. U kunt inhoud publiceren of unpublish voor uw volledige AEM Screens-project of slechts voor één van uw kanalen, plaats, speler, of een toepassing.
+U kunt inhoud publiceren vanuit AEM Screens. Met de functie Publicatie beheren kunt u inhoud-updates van auteur leveren en publiceren naar speler. U kunt inhoud voor uw gehele AEM Screens-project publiceren of de publicatie ervan ongedaan maken, of alleen voor een van uw kanalen, locatie, speler of toepassing.
 
 >[!IMPORTANT]
 >Wanneer u uw kanaal of kanalen in uw project hebt gemaakt, is het verplicht de kanalen te publiceren om het kanaal of de kanalen in de overzichtslijstweergave in de AEM Screens Services Provider weer te geven.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen creërend een nieuw project voor uw AEM Screens project in de Leverancier van de Inhoud van het Scherm. Na het lezen moet u:
+Dit document helpt u begrijpen creërend een nieuw project voor uw AEM Screens project in de Leverancier van de Inhoud van het Scherm. Na het lezen moet u in staat zijn om:
 
-* Begrijp hoe u een kanaal publiceert.
-* De publicatie van kanalen kunnen beheren, in termen van bereik.
+* begrijpen hoe u een kanaal publiceert.
+* publicatie beheren, wat betreft het toepassingsgebied
 
 ## Stappen voor het publiceren van een kanaal {#publish-channel}
 
