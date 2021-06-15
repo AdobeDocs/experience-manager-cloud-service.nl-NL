@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Nadat u een project hebt gemaakt in Cloud Acceleration Manager, kunt u nu de bes
 
 De gereedheidsfase omvat:
 
-* Analyse van best practices
-* Planning en installatie
+* [Analyse van best practices](#best-practices-analysis)
+* [Planning en installatie](#planning-setup)
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Analyse van best practices gebruiken {#best-practices-analysis}
+## Het gebruiken van de Kaart van de Analyse van Beste praktijken {#best-practices-analysis}
 
-Volg de onderstaande stappen om de Analyse van Beste praktijken te gebruiken:
+Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te gebruiken:
 
 1. Klik op de **knoop van het Overzicht** van **Beste Analyse van Praktijken** kaart.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Ga als volgt te werk om de Analysator van Beste praktijken te downloaden en het op een kloon van uw AEM in werking te stellen.
+1. Voer de volgende stappen uit om de BPA (Best Practices Analyzer) te downloaden en uit te voeren op een kloon van uw AEM.
 
    1. Navigeer naar [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal en download de Analysator van best practices als ZIP-bestand.
 
@@ -46,9 +46,9 @@ Volg de onderstaande stappen om de Analyse van Beste praktijken te gebruiken:
 
 1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM.
 
-   * Als u op elke kaart klikt, wordt het bijbehorende tabblad geopend
-   * Alle rapporttabs (inclusief filteren) kunnen worden gemarkeerd voor delen of toekomstige opvragen
-   * Bekijk de details van elk rapport dat via het detailpictogram wordt gevonden
+   * Klik op elke kaart om het bijbehorende tabblad te openen
+   * U kunt een bladwijzer maken van alle rapporttabs (inclusief filteren) voor delen of toekomstig ophalen
+   * Gebruik het detailspictogram om de details van elk rapport te bekijken vinden
    * Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld
 
 ## Planning en installatie gebruiken {#planning-setup}
@@ -66,8 +66,5 @@ Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling
 ## Volgende {#whats-next}
 
 Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap via de Implementatiefase.
-
-
-
 
 
