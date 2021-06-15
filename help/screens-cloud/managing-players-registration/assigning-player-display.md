@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een speler als Cloud Service 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,11 @@ Voer de onderstaande stappen uit om een speler aan een weergave toe te wijzen:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Nadat u op Selecteren hebt geklikt, wordt de toegewezen weergave weergegeven onder **TOEGEWEZEN WEERGAVE**.
+## Inhoud afspelen {#content-playback}
 
-   De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu inhoud downloaden en afspelen. **Gefeliciteerd!**
+Nadat u een weergave aan een speler hebt toegewezen, zoals in de voorgaande sectie, wordt de toegewezen weergave weergegeven onder **TOEGEWEZEN WEERGAVE**.
 
-   ![afbeelding](/help/screens-cloud/assets/player/output.gif)
+De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu inhoud downloaden en afspelen. **Gefeliciteerd!**
+
+![afbeelding](/help/screens-cloud/assets/player/output.gif)
 
