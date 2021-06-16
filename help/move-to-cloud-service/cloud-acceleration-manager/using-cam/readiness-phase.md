@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ De gereedheidsfase omvat:
 * [Analyse van best practices](#best-practices-analysis)
 * [Planning en installatie](#planning-setup)
 
-Klik op uw projectkaart om de bestemmingspagina van het project te openen en aan de **Readiness** sectie, zoals aangetoond in het hieronder cijfer te navigeren.
+Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
-![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. Klik op uw projectkaart om de bestemmingspagina van het project te openen.
 
->[!NOTE]
->Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) voor meer informatie.
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Navigeer naar de sectie **Gereedheid**, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) voor meer informatie.
 
 ## Het gebruiken van de Kaart van de Analyse van Beste praktijken {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM.
+1. Zodra u een nieuw rapport hebt geüpload, zult u het rapport van de Analyse van Beste praktijken zien.
 
-   * Klik op elke kaart om het bijbehorende tabblad te openen
-   * U kunt een bladwijzer maken van alle rapporttabs (inclusief filteren) voor delen of toekomstig ophalen
-   * Gebruik het detailspictogram om de details van elk rapport te bekijken vinden
-   * Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Raadpleeg de onderstaande sectie [Analyse van analyserapport voor beste praktijken](#analysis-report) voor meer informatie.
+
+### Analyserapport van de analyse van beste praktijken {#analysis-report} bekijken
+
+Verken de volgende kaarten beschikbaar op de pagina Rapporten:
+
+>[!NOTE]
+>Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
+
+1. **Rapporteigenschappen**: Deze kaart biedt informatie in rapporteigenschappen, zoals rapportdatum, duur, filters, uploaddatum, enzovoort.
+
+1. **Overzicht** van rapport:
+
+   Deze kaart bevat de bevindingen van het rapport
+
+1. **Evaluatie van best practices**
+
+1. **Complexiteit-evaluatie van migratie**
+
+   >[!NOTE]
+   > Bovendien kunt u:
+   >* klik op elke kaart om het bijbehorende tabblad te openen
+   >* bladwijzer alle rapportlusjes (met inbegrip van het filtreren) voor het delen of toekomstige herwinning
+   >* gebruik het detailspictogram om de details van elk rapport te bekijken vinden
+
 
 ## Planning en de Kaart van de Opstelling {#planning-setup} gebruiken
 
