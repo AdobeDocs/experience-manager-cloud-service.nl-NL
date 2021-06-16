@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '511'
 ht-degree: 3%
 
 ---
@@ -68,6 +68,8 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
 Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de Analyse van Beste praktijken:
 
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Met elke kaart kunt u:
 >* klik op elke kaart om het bijbehorende tabblad te openen
@@ -77,11 +79,26 @@ Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de An
 
 #### Rapporteigenschappen {#report-properties}
 
-Deze kaart biedt informatie in rapporteigenschappen, zoals rapportdatum, duur, filters, uploaddatum, enzovoort.
+Deze kaart bevat informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum en Adobe Experience Manager (AEM)-gegevens.
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Rapportoverzicht {#report-overview}
 
 Deze kaart bevat de bevindingen van het rapport
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Als u op dit rapport klikt, wordt het tabblad **Rapport** geopend, zoals in de onderstaande afbeelding wordt getoond.
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+U kunt het rapport filteren op basis van belang, subtype of aantal.
+
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Raadpleeg [Het rapport Analysator van best practices interpreteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) voor meer informatie over categorieën bevindingen en belangrijke niveaus.
 
 #### Evaluatie van best practices {#best-practices-assessment}
 
