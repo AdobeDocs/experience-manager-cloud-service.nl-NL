@@ -1,16 +1,15 @@
 ---
 title: Markering
 description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
-feature: Content Fragments
+feature: Contentfragmenten
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 4%
 
 ---
-
 
 # Markering {#markdown}
 
@@ -166,7 +165,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een reeks codes wilt aangeven, plaatst u deze tussen aanhalingstekens (`). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&amp;grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 
