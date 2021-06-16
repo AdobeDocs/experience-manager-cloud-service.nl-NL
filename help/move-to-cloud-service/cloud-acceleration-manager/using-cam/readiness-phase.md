@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
 1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Raadpleeg de onderstaande sectie [Analyse van analyserapport voor beste praktijken](#analysis-report) voor meer informatie.
 
+   >[!NOTE]
+   >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
+
 ### Analyserapport van de analyse van beste praktijken {#analysis-report} bekijken
 
-Verken de volgende kaarten beschikbaar op de pagina Rapporten:
+Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de Analyse van Beste praktijken:
 
 >[!NOTE]
->Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
+> Met elke kaart kunt u:
+>* klik op elke kaart om het bijbehorende tabblad te openen
+>* bladwijzer alle rapportlusjes (met inbegrip van het filtreren) voor het delen of toekomstige herwinning
+>* gebruik het detailspictogram om de details van elk rapport te bekijken vinden
 
-1. **Rapporteigenschappen**: Deze kaart biedt informatie in rapporteigenschappen, zoals rapportdatum, duur, filters, uploaddatum, enzovoort.
 
-1. **Overzicht** van rapport:
+#### Rapporteigenschappen {#report-properties}
 
-   Deze kaart bevat de bevindingen van het rapport
+Deze kaart biedt informatie in rapporteigenschappen, zoals rapportdatum, duur, filters, uploaddatum, enzovoort.
 
-1. **Evaluatie van best practices**
+#### Rapportoverzicht {#report-overview}
 
-1. **Complexiteit-evaluatie van migratie**
+Deze kaart bevat de bevindingen van het rapport
 
-   >[!NOTE]
-   > Bovendien kunt u:
-   >* klik op elke kaart om het bijbehorende tabblad te openen
-   >* bladwijzer alle rapportlusjes (met inbegrip van het filtreren) voor het delen of toekomstige herwinning
-   >* gebruik het detailspictogram om de details van elk rapport te bekijken vinden
+#### Evaluatie van best practices {#best-practices-assessment}
+
+Deze kaart biedt een
+
+#### Complexiteit van migratie {#migration-complexity-assessment}
+
+Deze kaart biedt
 
 
 ## Planning en de Kaart van de Opstelling {#planning-setup} gebruiken
