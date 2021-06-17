@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen public
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9db293c4a0e2980015aa894f1912980e66dbfc86
+source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ U kunt inhoud publiceren vanuit AEM Screens. Met de functie Publicatie beheren k
 
 ## Doelstelling {#objective}
 
-Met dit document krijgt u meer inzicht in het maken van een nieuw project voor uw AEM Screens-project in de Scherminhoudprovider en kunt u bewerkte inhoud publiceren naar het servicebureau en de speler. Na het lezen moet u in staat zijn om:
+Dit document helpt u het publiceren van de uitgegeven inhoud aan de leverancier en de speler van de Diensten van het Scherm begrijpen. Na het lezen moet u in staat zijn om:
 
-* begrijpen hoe u een kanaal publiceert.
+* begrijpen hoe u een kanaal publiceert
 * publicatie beheren, wat betreft het toepassingsgebied
 
 ## Stappen voor het publiceren van een kanaal {#publish-channel}
