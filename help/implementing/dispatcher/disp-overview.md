@@ -3,9 +3,9 @@ title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6eb200fe661873374258a5953a07b38b2251da43
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4247'
 ht-degree: 6%
 
 ---
@@ -34,9 +34,9 @@ De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en 
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
-De Dispatcher Tools, onderdeel van [AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kunnen van een ZIP dossier bij [de portal van de Distributie van de Software worden gedownload ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools, kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+De Dispatcher Tools, onderdeel van [AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kunnen van een ZIP dossier bij [de portal van de Distributie van de Software worden gedownload ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
-Pak de SDK uit, die de Dispatcher Tools voor zowel MacOS/Linux als Windows bundelt.
+Pak de SDK uit, die de Dispatcher Tools voor zowel MacOS, Linux als Windows bundelt.
 
 **Voor MacOS/Linux** moet u het artefact van het gereedschap Dispatcher uitvoeren en uitvoeren. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waarbij `version` de versie van de Dispatcher Tools is).
 
@@ -112,7 +112,7 @@ Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. Het heeft een reeks he
 
 * `conf.d/variables/custom.vars`
 
-Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. U kunt op deze locatie definities voor Apache-variabelen plaatsen.
+Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. U kunt op deze locatie definities voor Apache-variabelen toevoegen.
 
 * `conf.d/variables/global.vars`
 
@@ -253,6 +253,7 @@ In de onderstaande tabel staan de ondersteunde apache-modules:
 | `mod_rewrite` | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
 | `mod_security` | [https://modsecurity.org/](https://modsecurity.org/) |
 | `mod_setenvif` | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
+| `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
@@ -365,7 +366,7 @@ Er is geen standaardversie van de variabelebestanden.
 **Verouderde configuratielay-out gedetecteerd, compatibiliteitsmodus ingeschakeld**
 
 Dit bericht wijst erop dat uw configuratie verouderde versie 1 lay-out heeft, die een volledige bevat
-Apache-configuratie en bestanden met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund voor achteruit
+Apache-configuratie en bestanden met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund
 moet u overschakelen naar de nieuwe indeling.
 
 ## Lokale validatie van de syntaxis van de Dispatcher-configuratie zodat apache httpd {#local-validation} kan starten
