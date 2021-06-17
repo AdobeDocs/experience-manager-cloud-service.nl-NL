@@ -1,14 +1,13 @@
 ---
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
+source-wordcount: '2876'
 ht-degree: 4%
 
 ---
-
 
 # Basisbewerkingen {#basic-handling}
 
@@ -72,7 +71,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [De projecten zijn virtuele ](/help/sites-cloud/authoring/projects/overview.md) dashboardsdie kunnen worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
 | Sites | Met de Sites-consoles kunt u [sites maken, weergeven en beheren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) die op uw AEM-instantie worden uitgevoerd. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaringsfragmenten | Een [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die hergebruikt kan worden tussen kanalen en variaties, waardoor het probleem van het herhaaldelijk kopiëren en plakken ervaringen of delen van ervaringen wordt bespaard. |
-| Assets | Met de middelenconsole kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd.<!--add some kind of assets link--> |
+| Assets | Met de middelenconsole kunt u [digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) ook maken en beheren vanuit de middelenconsole. |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen waarmee u doelgerichte inhoud kunt ontwerpen en gepersonaliseerde ervaringen kunt presenteren.](/help/sites-cloud/authoring/personalization/overview.md)[ |
 
 ## Deelvenster Gereedschappen {#tools-panel}
@@ -203,7 +202,7 @@ Er zijn verschillende beschikbare Help-bronnen:
    >Raadpleeg de volgende documentatie voor een overzicht van alle sneltoetsen:
    >
    >* [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Werkbalk Handelingen {#actions-toolbar}
@@ -223,8 +222,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 ![Aanvullende opties](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
+De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
 
 ## Snelle handelingen {#quick-actions}
 
@@ -245,8 +243,7 @@ U kunt uw bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met
 * [Lijstweergave](#list-view)
 
 >[!NOTE]
->
->Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
+Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
 
 ### Bronnen selecteren {#selecting-resources}
 
@@ -376,8 +373,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 * Wijzig de volgorde van de items met de gestippelde verticale balk helemaal rechts van elk item in de lijst.
 
    >[!NOTE]
-   >
-   >Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` als waarde `sling:OrderedFolder` heeft.
+   Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` als waarde `sling:OrderedFolder` heeft.
 
    ![Kolomvolgorde](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -396,8 +392,7 @@ In **Sites** kunt u bijvoorbeeld alleen inhoud (de standaardinstelling), de inho
 Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorstaaf weergegeven. Als er een andere optie is geselecteerd, wordt de naam van de optie weergegeven naast het pictogram van de track.
 
 >[!NOTE]
->
->[Er zijn ](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sneltoetsen beschikbaar waarmee u snel kunt schakelen tussen de weergaveopties voor rails.
+[Er zijn ](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sneltoetsen beschikbaar waarmee u snel kunt schakelen tussen de weergaveopties voor rails.
 
 ### Inhoudsstructuur {#content-tree}
 
@@ -408,10 +403,8 @@ Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijst
 ![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
->
->Raadpleeg de [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) voor meer informatie.
+Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
+Raadpleeg de [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) voor meer informatie.
 
 ### Tijdlijn {#timeline}
 
