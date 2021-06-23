@@ -1,14 +1,13 @@
 ---
 title: Toegang tot de auteurlaag
 description: Toegang tot de auteurlaag
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
+source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '51'
+ht-degree: 78%
 
 ---
-
 
 # Toegang tot de auteurlaag {#accessing-the-author-tier}
 
@@ -18,8 +17,4 @@ De indeling van de URL is momenteel als volgt:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Deze indeling wordt uiteindelijk vervangen door een standaard-URL-indeling voor Adobe Experience Cloud:
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-De huidige URL wordt daarom niet ondersteund bij de configuratie van aangepaste domeinnamen voor de AEM-auteurlaag.
+Aangepaste domeinnamen voor de AEM auteurslaag worden niet ondersteund.
