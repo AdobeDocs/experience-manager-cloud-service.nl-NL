@@ -4,9 +4,9 @@ description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De belangrijkste verschillen ten opzichte van [Experience Manager] 6.5 zijn op d
 * [Asset microservices voor cloudnative verwerking](#asset-microservices).
 * [Verwijderen van klassieke gebruikersinterface](#classic-ui).
 
-## Inname en verwerking van bedrijfsmiddelen {#asset-ingestion}
+## Inname, verwerking en distributie van bedrijfsmiddelen {#asset-ingestion-distribution}
 
 Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schaling van inname, snellere uploads, snellere verwerking met behulp van microservices en bulkopname mogelijk te maken. Productmogelijkheden (webgebruikersinterfaces, desktopclients) worden bijgewerkt. Dit kan ook van invloed zijn op sommige bestaande aanpassingen.
 
@@ -33,6 +33,8 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
    * Zie [Elementmicroservices configureren en gebruiken](/help/assets/asset-microservices-configure-and-use.md)
    * Als u aangepaste workflowstappen in de verwerking wilt gebruiken, kunt u [workflows na verwerking](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) gebruiken.
 
+* De websitecomponenten die een binair bestand leveren zonder transformatie kunnen rechtstreeks downloaden. De Sling GET servlet wordt bijgewerkt zodat ontwikkelaars dit standaard kunnen doen. De websitecomponenten die een binair getal met een transformatie leveren (bijvoorbeeld de grootte ervan wijzigen via een servlet) kunnen ongewijzigd blijven werken.
+
 De standaardvertoningen die met asset microservices worden gegenereerd, worden achterwaarts compatibel opgeslagen in de knooppunten van de opslagplaats van middelen met dezelfde naamgevingsconventies.
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
@@ -43,8 +45,7 @@ Asset microservices is een service in de cloud die automatisch wordt ingericht e
 
 Als u de code en het proces van begin tot einde wilt valideren, inclusief het opnemen en verwerken van bedrijfsmiddelen, implementeert u de codewijzigingen in een cloud-dev-omgeving met de [pijplijn](/help/implementing/cloud-manager/configure-pipeline.md) en test u met de volledige uitvoering van de verwerking van asset-microservices.
 
-
-## pariteit van de eigenschap met [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
+## pariteit met [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
 [!DNL Experience Manager] als  [!DNL Cloud Service] introduceert u veel nieuwe functies en betere manieren om bestaande functies te laten werken. Wanneer u echter van [!DNL Experience Manager] 6.5 naar [!DNL Experience Manager] als [!DNL Cloud Service] gaat, ziet u wellicht dat sommige functies anders werken, niet beschikbaar zijn of gedeeltelijk beschikbaar zijn. Hieronder volgt een lijst met dergelijke functies. Zie ook de [vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
