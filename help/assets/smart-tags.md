@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Slimme tags,tags toepassen
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 5%
@@ -13,9 +13,9 @@ ht-degree: 5%
 ---
 
 
-# Slimme tags toevoegen aan uw elementen om de zoekervaring te verbeteren {#smart-tag-assets-for-faster-search}
+# Slimme tags aan uw elementen toevoegen om de zoekervaring te verbeteren {#smart-tag-assets-for-faster-search}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -61,7 +61,7 @@ U kunt de volgende typen elementen labelen:
 * [Tags toewijzen aan uw digitale elementen](#tag-assets).
 * [De tags en zoekopdrachten](#manage-smart-tags-and-searches) beheren.
 
-## Codemodellen en richtlijnen {#understand-tag-models-guidelines} begrijpen
+## Leer labelmodellen en -richtlijnen {#understand-tag-models-guidelines}
 
 Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer u de labels toepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld in kleur, op ontwerp of op gebruik. Als u de inhoudsweergave van een trainingsmodel in [!DNL Experience Manager] wilt begrijpen, visualiseert u een trainingsmodel als een entiteit op hoofdniveau die bestaat uit een groep handmatig toegevoegde tags en voorbeeldafbeeldingen voor elke tag. Elke tag kan uitsluitend op een afbeelding worden toegepast.
 
@@ -109,7 +109,7 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 
 U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
 
-## Het model voor uw aangepaste tags {#train-model}
+## Het model trainen voor uw douanetags {#train-model}
 
 Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te maken en op te leiden:
 
@@ -128,7 +128,7 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 
 *Afbeelding: Stappen van de trainingsworkflow om het coderingsmodel te trainen.*
 
-### Trainingsstatus weergeven en {#training-status} rapporteren
+### Trainingsstatus en rapport weergeven {#training-status}
 
 Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de trainingsset met elementen, raadpleegt u het workflowrapport voor training in de rapportconsole.
 
