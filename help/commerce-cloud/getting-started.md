@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Nadat het eindpunt (naar keuze een authentificatietoken voor gefaseerde catalogu
 
 ![CM-omgevingsinformatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Via Adobe I/O CLI {#adobe-cli}
+### Via Adobe I/O CLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ De volgende eigenschappen kunnen worden geconfigureerd:
    >
    > Steun voor UIDs werd geïntroduceerd in de Handel van de Adobe (Magento) 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
+   >[!CAUTION]
+   >
+   > Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid`. Als uw project CIF Core Components versie 2.0.0 gebruikt moet u de Steun van UID van de Catalogus toelaten en een geldige categorieUID als &quot;Identifier van de Categorie van de Hoofdmap van de Catalogus gebruiken&quot;.
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten moeten hun eigen configuraties bieden.
 
