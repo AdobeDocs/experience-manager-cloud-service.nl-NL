@@ -3,16 +3,15 @@ sub-product: Inhoud en handel AEM als Cloud Service
 user-guide-title: Inhoud en handel AEM als Cloud Service
 breadcrumb-title: Handleiding voor AEM inhoud en handel
 user-guide-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager als Cloud Service te gebruiken en te beheren.
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 2%
+source-wordcount: '105'
+ht-degree: 1%
 
 ---
 
 
-# Inhoud en handel AEM {#content-and-commerce}
+# AEM Inhoud en Handel {#content-and-commerce}
 
 + [AEM Inhoud en Handel](/help/commerce-cloud/home.md)
 + [Opvallende veranderingen in AEM Inhoud en Handel als Cloud Service](changes.md)
@@ -25,6 +24,7 @@ ht-degree: 2%
    + Beheren {#administering}
       + [Multi-Store instellen](configuring/multi-store-setup.md)
       + [Gebruik van meerdere sjablonen](configuring/multi-template-usage.md)
+      + [Productgegevens verrijken met bijbehorende inhoud](configuring/enrich-product-associated-content.md)
       + [URL&#39;s configureren voor SEO](configuring/advanced-url-configuration.md)
       + [Cacheopties](configuring/caching.md)
    + Ontwikkeling {#developing}
