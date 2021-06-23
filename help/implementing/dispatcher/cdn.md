@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste 
 
 De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de meeste klant voldoen. Voor publiceer rij, kunnen de klanten naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
 
-## Beheerde CDN AEM {#aem-managed-cdn}
+## AEM beheerde CDN  {#aem-managed-cdn}
 
 Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk te gebruiken om voor de levering van inhoud voor te bereiden door AEM uit-van-de-doos CDN te gebruiken:
 
@@ -40,7 +40,7 @@ Raadpleeg [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-ma
 >
 >Slechts zullen de verzoeken van toegestane IPs door beheerde CDN van AEM worden gediend. Als u uw eigen CDN aan AEM beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
 
-## Klant CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
+## CDN van de klant wijst naar AEM Beheerde CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -70,11 +70,15 @@ Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten beve
 >
 >De klanten die hun eigen CDN beheren zouden de integriteit van de kopballen moeten verzekeren die door naar AEM CDN worden verzonden. Het wordt bijvoorbeeld aanbevolen dat klanten alle `X-Forwarded-*` headers wissen en deze op bekende en gecontroleerde waarden instellen. `X-Forwarded-For` moet bijvoorbeeld het IP-adres van de client bevatten, terwijl `X-Forwarded-Host` de host van de site moet bevatten.
 
+>[!NOTE]
+>
+>Sandbox programmamilieu&#39;s steunen geen klant-Geleverde CDN.
+
 Er is potentieel een kleine prestatieshit toe te schrijven aan de extra hop, hoewel de hop van klant CDN aan AEM beheerde CDN waarschijnlijk efficiënt zal zijn.
 
 Houd er rekening mee dat deze CDN-configuratie van de klant wordt ondersteund voor de publicatielijst, maar niet vóór de auteurslaag.
 
-## Geolocatiekoppen {#geo-headers}
+## Geolocatie-headers {#geo-headers}
 
 De AEM beheerde CDN voegt kopballen aan elk verzoek met toe:
 
