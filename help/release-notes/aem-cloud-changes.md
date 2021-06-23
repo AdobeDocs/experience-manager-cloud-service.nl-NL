@@ -2,14 +2,14 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 8%
+source-wordcount: '810'
+ht-degree: 9%
 
 ---
 
-# Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
+# Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
@@ -48,7 +48,7 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [Afhandeling en levering van bedrijfsmiddelen](#asset-handling)
 
-## /apps and /libs are imutable at runtime {#apps-libs-immutable}
+## /apps en /libs zijn onveranderlijk bij runtime {#apps-libs-immutable}
 
 Alle inhoud en submappen in `/apps` en `/libs` zijn alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen zal er niet doen. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor een aantal AEM:
 
@@ -106,7 +106,7 @@ In AEM Cloud Service, wordt de inhoud gepubliceerd gebruikend [het Verdelen van 
 
 De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
-## Levering op de publicatievijde {#publish-side-delivery}
+## Levering op de website publiceren {#publish-side-delivery}
 
 De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in AEM Cloud Service.
 
@@ -114,10 +114,4 @@ Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leverag
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, de verwerking en het downloaden van bedrijfsmiddelen zijn in Elementen geoptimaliseerd als een Cloud Service die efficiënter het toelaten van betere schrapping en snellere uploads en downloads. Dit kan echter invloed hebben op sommige bestaande aangepaste code.
-
-* De standaardworkflow **DAM Asset Update** in eerdere versies van AEM is niet meer beschikbaar.
-* De componenten van de website die binair **zonder transformatie** leveren zouden directe download moeten gebruiken.
-   * De Sling GET servlet is veranderd om dit door gebrek te doen.
-* De componenten van de website die binair **met transformatie** (bijvoorbeeld, resize via servlet) leveren kunnen blijven werken aangezien zij hebben.
-* Elementen die via Package Manager worden binnengebracht, moeten handmatig opnieuw worden verwerkt met de handeling **Asset** opnieuw verwerken in de interface Elementen.
+Het uploaden, verwerken en downloaden van middelen wordt geoptimaliseerd in Experience Manager Assets als Cloud Service. Het is nu efficiënter, biedt meer schaling en snellere uploads en downloads. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Zie [veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
