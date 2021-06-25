@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distributi
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
 
-### Snel publiceren/publiceren - Gepland {#publish-unpublish} publiceren
+### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
 Deze standaard AEM functies voor de auteurs veranderen niet met AEM Cloud Service.
 
-### Aan en uit Tijd - de Configuratie van de trekker {#on-and-off-times-trigger-configuration}
+### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
 
 De extra mogelijkheden van **On Tijd** en **Uit Tijd** zijn beschikbaar bij [Basislusje van Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
@@ -42,7 +42,7 @@ Een boomactivering uitvoeren:
    ![](assets/distribute.png "DistributeDistribute")
 4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
 
-### Workflow {#publish-content-tree-workflow} publiceren in inhoudsstructuur
+### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
 U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen - Werkschema - Modellen** te kiezen en het **Publish Inhoudsboom** uit-van-de-doos werkschemamodel te kopiëren, zoals hieronder getoond:
 
@@ -82,7 +82,7 @@ Alternatief, kunt u dit ook bereiken door een Model van het Werkschema te creër
 
 * `replicateAsParticipant` (booleaanse waarde, standaardwaarde):  `false`). Indien gevormd als `true`, gebruikt de replicatie `userid` van het hoofd dat de deelnemersstap uitvoerde.
 * `enableVersion` (booleaanse waarde, standaardwaarde):  `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
-* `agentId` (tekenreekswaarde, standaardwaarde betekent dat alle ingeschakelde agents worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; Stel bijvoorbeeld de waarde in: publish
+* `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; Stel bijvoorbeeld de waarde in: publiceren. Als de agent wordt ingesteld op `preview`, wordt de voorvertoningsservice gepubliceerd
 * `filters` (tekenreekswaarde, standaard betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
    * `onlyActivated` - alleen paden die niet zijn gemarkeerd als geactiveerd, worden geactiveerd.
    * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
@@ -111,6 +111,66 @@ Hieronder vindt u voorbeelden van logboeken die worden gegenereerd tijdens een v
 **Ondersteuning hervatten**
 
 De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledige inhoud die moet worden gepubliceerd. Als om het even welke reden de werkschema door het systeem wordt tegengehouden, zal het het brok opnieuw beginnen en verwerken dat nog niet werd verwerkt. In een loginstructie wordt aangegeven dat de inhoud is hervat vanaf een specifiek pad.
+
+### Replicatie-API {#replication-api}
+
+U kunt inhoud publiceren gebruikend Replacement API die in AEM als Cloud Service wordt vermeld.
+
+Zie de [API-documentatie](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html) voor meer informatie.
+
+**Basisgebruik van de API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Replicatie met specifieke agents**
+
+Wanneer het repliceren van middelen zoals in het bovenstaande voorbeeld, slechts de agenten die door gebrek actief zijn zullen worden gebruikt. In AEM als Cloud Service, zal dit slechts de agent genoemd &quot;publiceren&quot;zijn, die de auteur met publicatielaag verbindt.
+
+Ter ondersteuning van de voorvertoningsfunctionaliteit is een nieuwe agent met de naam &quot;preview&quot; toegevoegd, die niet standaard actief is. Deze agent wordt gebruikt om de auteur met de voorproefrij te verbinden. Als u slechts via de voorproefagent wilt herhalen, moet u deze voorproefagent via `AgentFilter` uitdrukkelijk selecteren.
+
+Zie het onderstaande voorbeeld over hoe u dit kunt doen:
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
+
+Het algemene `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u de nieuwe `getStatusForAgent()` methode gebruiken, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
 
 ## Problemen oplossen {#troubleshooting}
 
