@@ -2,10 +2,9 @@
 title: 'Sluiende en ontsmette zandbakomgevingen '
 description: Sluiende en ontsmette zandbakomgevingen
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: f06fe7f30d9f5e2eb5dcc6c8d542ace5f5e2f419
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -23,7 +22,7 @@ Sluimerstand kan automatisch of handmatig plaatsvinden. Het kan tot een paar min
 
 Sluimerstand wordt gecategoriseerd als:
 
-* **De milieu&#39;s van het Programma**  AutomaticSandbox worden automatisch hibernated na acht uren van inactiviteit, betekenend dat noch de auteur noch de publicatieservices verzoeken ontvangen.
+* **De milieu&#39;s van het Programma**  AutomaticSandbox worden automatisch gehiberneerd na acht uren van inactiviteit, betekenend dat noch de auteur noch de voorproef of de publicatieservices verzoeken ontvangen.
 
 * **Handmatig**: Als gebruiker kunt u handmatig een Sandbox-programmaomgeving herbergen, hoewel dit niet nodig is omdat de slaapstand automatisch zal plaatsvinden na een bepaalde periode (acht uur) van inactiviteit.
 
@@ -75,7 +74,7 @@ Raadpleeg [Toegang tot ontwikkelaarsconsole](/help/implementing/cloud-manager/ma
    >Als u rechtstreeks vanuit Cloud Manager een koppeling maakt naar de **Developer Console**, kunt u een Sandbox-programmaomgeving niet dehiberneren. De oplossing bevindt zich eenmaal in de Developer Console. Voeg het volgende patroon toe aan het einde van de URL `#release-cm-p1234-e5678 where 1234` 1234 is uw *Programma-id* en 5678 is uw *Omgeving-id*.
 
    >[!NOTE]
-   >U kunt ook naar de **Developer Console** navigeren om de historie te verwijderen door toegang te proberen tot de auteur of de publicatieservice van een reeds gedownloade omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
+   >U kunt ook naar de **Developer Console** navigeren om de historie te verwijderen door toegang te proberen tot de auteur, de voorvertoning of de publicatieservice van een reeds gedownloade omgeving. in dat geval wordt een bestemmingspagina weergegeven met een koppeling naar de Developer Console. Zie de sectie Accessing a Hibernated Environment hieronder.
 
    >[!IMPORTANT]
    >Toegang tot de ontwikkelaarsconsole wordt gedefinieerd door de **Cloud Manager - Developer Role** in de **Admin Console**. Een gebruiker met een ontwikkelaarrol machtiging kan een Sandbox-programmaomgeving dehiberneren.
@@ -103,13 +102,13 @@ Raadpleeg [Toegang tot ontwikkelaarsconsole](/help/implementing/cloud-manager/ma
 
    ![](assets/de-hibernation-img4.png)
 
-### Machtigingen om de-hibernate {#permissions-de-hibernate} te verwijderen
+### Machtigingen voor de-hibernate {#permissions-de-hibernate}
 
 Elke gebruiker met een productprofiel dat hem toegang geeft tot AEM als Cloud Service, moet toegang hebben tot de **Developer Console**, zodat hij of zij de omgeving kan dehiberneren.
 
-## Toegang tot een gegeneerde omgeving {#accessing-hibernated-environment}
+## Een gedownloade omgeving openen {#accessing-hibernated-environment}
 
-Wanneer de gebruiker om het even welke browser verzoeken tegen of de auteur of publicatielaag van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu beschrijft, zoals aangetoond in het hieronder cijfer beschrijft:
+Wanneer de gebruiker een browser aanvraagt tegen de auteur, voorvertoning of publicatielaag van een gehiberneerde omgeving, komt de gebruiker een landingspagina tegen waarin de gehiberneerde status van de omgeving wordt beschreven, zoals in de onderstaande afbeelding wordt getoond:
 
 ![](assets/de-hibernation-img5.png)
 
