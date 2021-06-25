@@ -2,10 +2,10 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 94%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
@@ -99,7 +99,7 @@ Er zijn aanvankelijk twee typen programma&#39;s beschikbaar voor AEM as a Cloud 
 
 * AEM Cloud Assets Service
 
-Beide bieden toegang tot een aantal functies en functionaliteiten. De authoringlaag bevat alle Sites- en Assets-functionaliteit voor alle programma&#39;s, maar de Assets-programma&#39;s hebben standaard geen publicatielaag.
+Beide bieden toegang tot een aantal functies en functionaliteiten. De auteurslaag zal alle Sites en Activa functionaliteit voor alle programma&#39;s bevatten, maar de programma&#39;s van Activa zullen niet een publicatielaag, noch een voorproefrij, door gebrek hebben.
 
 ## Runtimearchitectuur {#runtime-architecture}
 
@@ -120,6 +120,8 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
       * Aanmelding bij de authoringlaag wordt beheerd door de Adobe Identity Management Services (IMS).
 
       * Integratie en de verwerking van Assets maken gebruik van een specifieke Assets Compute Service.
+   * De voorvertoningslaag bestaat uit één voorvertoningsknooppunt. Dit wordt gebruikt voor kwaliteitscontrole van inhoud voordat deze wordt gepubliceerd naar de publicatielijst.
+
    * De publicatielaag bestaat uit twee of meer nodes binnen één publicatiefarm: ze kunnen onafhankelijk van elkaar werken. Elke node bestaat uit een AEM-uitgever en een webserver die is uitgerust met de AEM Dispatcher-module. De schaal wordt automatisch aan het siteverkeer aangepast.
 
       * Eindgebruikers of sitebezoekers bezoeken de website via de AEM Publish Service.
@@ -129,15 +131,15 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
 
    * De architectuur omvat uitsluitend een authoringomgeving.
 
-* Zowel vanuit de authoringlaag als de publicatielaag wordt contant van/naar een content-repository gelezen en bewaard.
+* Zowel de auteurslaag, de voorproefrij, als publiceren rij lezen en blijven inhoud van/aan de Dienst van de Bewaarplaats van de Inhoud.
 
-   * In de publicatielaag wordt de content van de persistentielaag alleen gelezen.
+   * De publicatielaag en de voorvertoningslaag lezen alleen inhoud van de persistentielaag.
 
    * In de authoringlaag wordt content van en naar de persistentielaag gelezen en geschreven.
 
-   * De opslag van blobs wordt gedeeld tussen de publicatie- en de authoringlaag; bestanden worden niet *verplaatst*.
+   * De opslag van lobs wordt gedeeld over publiceren, de voorproef, en de auteursrijen; bestanden worden niet *verplaatst*.
 
-   * Wanneer content vanuit de authoringlaag wordt goedgekeurd, is dit een aanwijzing dat deze kan worden geactiveerd, en daarom wordt de content naar de persistentielaag in de publicatielaag verplaatst. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijplijn ontvangt de nieuwe content, waarbij de afzonderlijke publicatieservicenodes die geabonneerd zijn op de content, naar de pijplijn worden verplaatst.
+   * Wanneer inhoud wordt goedgekeurd van de auteursrij, is dit een aanwijzing dat het kan worden geactiveerd, daarom aan de publicatielaag persistence laag worden geduwd; of naar keuze naar de voorvertoningslaag. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijpleiding ontvangt de nieuwe inhoud, met de individuele publiceerdienst (of voorproefdienst) knopen die aan de inhoud intekenen die aan de pijpleiding wordt geduwd.
 
       >[!NOTE]
       >
@@ -147,15 +149,15 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
 
    * Toegang tot de authoring- en publicatielijsten vindt altijd plaats via een load balancer. Deze wordt altijd bijgewerkt met de actieve nodes in elke laag.
 
-   * Voor de publicatielaag is ook een CDN (Continuous Delivery Network) beschikbaar als eerste ingangspunt.
+   * Voor de publicatielaag en de voorvertoningslaag is ook een CDN-service (Continuous Delivery Network) beschikbaar als eerste ingangspunt.
 
 * Voor demonstratie-instanties van AEM as a Cloud Service wordt de architectuur vereenvoudigd tot één authoringnode. Daarom bevat de installatie niet alle kenmerken van de omgevingen voor standaardontwikkeling, fase of productie. Dit betekent ook dat er enige uitvaltijd kan zijn en dat er geen ondersteuning is voor back-up-/herstelbewerkingen.
 
 ## Implementatiearchitectuur {#deployment-architecture}
 
-Cloud Manager beheert alle updates van de instanties van AEM as a Cloud Service. Het programma is verplicht aangezien het de enige manier is om de klantapplicatie te bouwen, te testen en te implementeren, zowel naar de authoring- als de publicatielaag. Deze updates kunnen worden geactiveerd door Adobe wanneer een nieuwe versie van de AEM Cloud Service gereed is, of door de klant wanneer een nieuwe versie van hun applicatie gereed is.
+Cloud Manager beheert alle updates van de instanties van AEM as a Cloud Service. Aangezien dit de enige manier is om de klanttoepassing te maken, testen en implementeren, is dit verplicht voor zowel de auteur als de voorvertoning en de publicatielagen. Deze updates kunnen worden geactiveerd door Adobe wanneer een nieuwe versie van de AEM Cloud Service gereed is, of door de klant wanneer een nieuwe versie van hun applicatie gereed is.
 
-Technisch gezien wordt dit geïmplementeerd volgens het concept van een implementatiepijplijn, die aan elke omgeving binnen een programma is gekoppeld. Wanneer een Cloud Manager-pijplijn wordt uitgevoerd, maakt deze een nieuwe versie van de klantapplicatie, zowel voor de authoring- als voor de publicatielaag. Dit wordt bereikt door de nieuwste klantpakketten te combineren met de nieuwste Adobe-basisinstallatiekopie. Wanneer de nieuwe installatiekopieën zijn gemaakt en met succes getest, zorgt Cloud Manager voor een volledige automatisering van de cutover naar de nieuwste versie van de installatiekopie door alle servicenodes bij te werken met een doorlopend updatepatroon. Hierdoor is er geen uitvaltijd voor de authoring- of de publicatieservice.
+Technisch gezien wordt dit geïmplementeerd volgens het concept van een implementatiepijplijn, die aan elke omgeving binnen een programma is gekoppeld. Wanneer een pijplijn van de Manager van de Wolk loopt, leidt het tot een nieuwe versie van de klantentoepassing, zowel voor de auteur, de voorproef, als publicatielagen. Dit wordt bereikt door de nieuwste klantpakketten te combineren met de nieuwste Adobe-basisinstallatiekopie. Wanneer de nieuwe installatiekopieën zijn gemaakt en met succes getest, zorgt Cloud Manager voor een volledige automatisering van de cutover naar de nieuwste versie van de installatiekopie door alle servicenodes bij te werken met een doorlopend updatepatroon. Hierdoor is er geen uitvaltijd voor de authoring- of de publicatieservice.
 
 <!--- needs reworking -->
 
