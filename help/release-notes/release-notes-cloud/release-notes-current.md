@@ -2,15 +2,15 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
 
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als een Cloud Service {#release-notes}
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
 
@@ -26,13 +26,13 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.5.0 is 27 mei 2021.
 De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
 
-## Geen video {#release-video}
+## Video vrijgeven {#release-video}
 
 Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/333602) voor een samenvatting van de toegevoegde eigenschappen.
 
 ## AEM als Stichting van de Cloud Service {#foundation}
 
-### Wat in AEM als Stichting van de Cloud Service {#what-is-new-foundation} Nieuw is
+### Wat in AEM als Stichting van de Cloud Service Nieuw is {#what-is-new-foundation}
 
 * [Prereleaskanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat met de productie.
 
@@ -48,7 +48,7 @@ Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/
 
 ## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies beschikbaar in het prereleasekanaal {#what-is-new-assets-prerelease}
+### Nieuwe functies beschikbaar in het prerelease-kanaal {#what-is-new-assets-prerelease}
 
 * Metagegevensschema&#39;s kunnen rechtstreeks op de mapeigenschappen worden toegepast.
 
@@ -60,7 +60,7 @@ Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/
 
    ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### Buizen gecorrigeerd in [!DNL Assets] {#assets-bugs-fixed}
+### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
 * Tijdens het uploaden van zeer grote bestanden loopt [!DNL Experience Manager desktop app] vast. (CQ-4320942)
 * De werkbalkopties verschillen wanneer dezelfde verzameling in een map is geselecteerd en wanneer deze is geselecteerd uit een zoekresultaat. (CQ-4321406)
@@ -69,33 +69,7 @@ Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/
 
 * Dankzij de Pixelverhouding van Smart Imaging Device (DPR) en de optimalisatie van de netwerkbandbreedte kunt u beelden van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor de bovenstaande verbeteringen voor Smart Imaging is:
-   >
-   >* Noord-Amerika 24 mei 2021 in NA,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 25 juni 2021,
-      >
-      >
-   * Azië-Stille Oceaan 19 juli 2021.
-
-
-* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van volgende generatie in levering [!DNL Dynamic Media] (fmt URL-modifier).
-
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor AVIF-ondersteuning is:
-   >
-   >* Noord-Amerika 10 mei 2021,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 24 mei 2021,
-      >
-      >
-   * Azië-Stille Oceaan 24 juni 2021.
-
+* Introductie van ondersteuning voor de volgende generatie AVIF-afbeeldingsindeling in [!DNL Dynamic Media] levering (`fmt` URL-modifier). Zie [API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
@@ -114,7 +88,7 @@ Uitvoeren als cloudservice: Met de uitvoerservice kunt u XDP-sjablonen en XML-ge
 
 U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètaprogramma.
 
-### Buizen gecorrigeerd in [!DNL Forms] {#forms-bugs-fixed}
+### Buizen vastgesteld in [!DNL Forms] {#forms-bugs-fixed}
 
 * Wanneer u in een taakstap toewijzen van AEM Forms Workflows het standaardpictogram van de actieknoppen vervangt door een koraalpictogram, wordt de workflow beëindigd en wordt een uitzondering geregistreerd. De workflow wordt op de verwachte wijze uitgevoerd wanneer standaardpictogrammen worden gebruikt.
 * Als u in de lay-outlaag het aantal kolommen wijzigt, de bewerkingslaag opent en enkele componenten in een deelvenster sleept, verschijnen er vierkante blauwe vakken in het inhoudsgebied van de adaptieve formuliereditor en reageert de editor niet meer.
@@ -129,7 +103,7 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM be
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.6.0 is 10 juni 2021.
 De volgende release is gepland voor 15 juli 2021.
 
-### Wat is er nieuw?{#what-is-new-junecm}
+### Wat is er nieuw? {#what-is-new-junecm}
 
 * De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gesteld wanneer hun programma is ingeschakeld voor de Voorvertoningsservice. Raadpleeg [Toegang tot voorvertoningsservice](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) voor meer informatie.
 
@@ -172,7 +146,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
 
-### Wat is er nieuw?{#what-is-new-may}
+### Wat is er nieuw? {#what-is-new-may}
 
 * De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, d.w.z. in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
 
@@ -212,7 +186,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 20
 
 De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
 
-### Wat is er nieuw?{#what-is-new-ctt-latest}
+### Wat is er nieuw? {#what-is-new-ctt-latest}
 
 * De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
 
@@ -228,7 +202,7 @@ De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
 
 De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
 
-### Wat is er nieuw?{#what-is-new-ctt-may}
+### Wat is er nieuw? {#what-is-new-ctt-may}
 
 * Met deze versie van het gereedschap Inhoud overbrengen maakt u tekstuitvoeringen voor elementen die naar de Cloud Service worden gemigreerd. Tekstuitvoeringen zijn vereist voor ondersteuning van het zoeken naar volledige tekst op ingesloten elementen.
 * Het maximumaantal migratiesets van Content Transfer Tool dat een gebruiker kan maken, is verhoogd van 4 naar 10.
