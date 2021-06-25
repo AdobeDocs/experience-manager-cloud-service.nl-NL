@@ -1,14 +1,13 @@
 ---
 title: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie
-description: 'Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie. '
-translation-type: tm+mt
-source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
+description: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie.
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 97%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
 
@@ -28,6 +27,7 @@ De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a C
 |---|---|
 | Adobe Pipeline | Het mechanisme voor contentpublicatie vanaf auteur tot aan publicatie. |
 | AEM-auteurlaag | Beschrijft de authoringomgeving voor Sites en Assets. |
+| AEM | Beschrijft de voorvertoningsomgeving voor sites. |
 | AEM-publicatielaag | Beschrijft de publicatieomgeving voor Sites. |
 
 
