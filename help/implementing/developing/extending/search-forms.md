@@ -319,7 +319,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <td>
     <ul>
      <li>Naam eigenschap ("path")</li>
-     <li>Waarde van het onroerend goed (`/content/dam')</li>
+     <li>Waarde van het onroerend goed (&grave;/content/dam')</li>
     </ul> 
    </td>
   </tr>
