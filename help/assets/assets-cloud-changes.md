@@ -4,9 +4,9 @@ description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | Genereren van subactiva voor samengestelde activa | Niet ondersteund. | Er is niet voldaan aan de eisen voor afhankelijk gebruik. De annotatie van PDF-bestanden met meerdere pagina&#39;s wordt bijvoorbeeld beïnvloed. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| Waardering van activa | Niet ondersteund. | De widget in de schema-editor voor metagegevens waarin de optie voor de classificatie van elementen is opgenomen, wordt niet ondersteund. |
 | Klassieke interface | Niet ondersteund. | Alleen interface met aanraakbediening is beschikbaar. |
 
 >[!MORELIKETHIS]
