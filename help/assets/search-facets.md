@@ -1,16 +1,15 @@
 ---
 title: Facetten doorzoeken.
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
-feature: Search,Metadata
+feature: Zoeken,metagegevens
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2248'
 ht-degree: 18%
 
 ---
-
 
 # Facetten doorzoeken {#search-facets}
 
@@ -22,7 +21,7 @@ Samengevat kunt u met zoekfacetten op verschillende manieren naar elementen zoek
 
 Als u bijvoorbeeld een afbeelding zoekt, kunt u kiezen of u een bitmap- of een vectorafbeelding wilt. U kunt het zoekbereik verder verkleinen door het MIME-type voor de afbeelding op te geven. Op dezelfde manier kunt u bij het zoeken naar documenten de indeling opgeven, bijvoorbeeld PDF of MS Word.
 
-## Een voorspelling {#adding-a-predicate} toevoegen
+## Een voorspelling toevoegen {#adding-a-predicate}
 
 De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het onderliggende zoekformulier gedefinieerd aan de hand van voorspelden. Als u meer of verschillende facetten wilt weergeven, voegt u voorspelingen toe aan het standaardformulier of gebruikt u een aangepast formulier dat naar keuze facetten bevat.
 
@@ -128,7 +127,7 @@ Met de voorspelling `Multi Value Property` kunt u elementen zoeken naar meerdere
 1. Ga naar het deelvenster Filters in de gebruikersinterface Assets. Het predicaat **[!UICONTROL Multi Value Property]** wordt toegevoegd aan het deelvenster.
 1. Geef meerdere waarden op in het veld Meerdere waarden, gescheiden door de scheidingstekens, en voer de zoekopdracht uit. Met de functie voor voorspellen wordt een exacte tekstovereenkomst opgehaald voor de waarden die u opgeeft.
 
-## Voorspelfunctie {#adding-a-tags-predicate} voor tags toevoegen
+## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
 Met de voorspelling `Tags` kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM Assets naar elementen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
@@ -146,7 +145,7 @@ Met de voorspelling `Tags` kunt u op tags gebaseerde zoekopdrachten naar element
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 1. Selecteer **[!UICONTROL Match all]** om te zoeken naar overeenkomsten die alle markeringen omvatten die u specificeert.
 
-## Andere voorspelling {#adding-other-predicates} toevoegen
+## Andere voorspellingen toevoegen {#adding-other-predicates}
 
 Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspelling van opties toevoegt, kunt u de volgende aanvullende voorspelling toevoegen aan het deelvenster Zoeken:
 
@@ -269,17 +268,6 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
     <ul>
      <li>Label</li>
      <li>Eigenschapnaam</li>
-     <li>Beschrijving</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Classificatie</td>
-   <td>Zoeken voorspelt dat er wordt gezocht naar elementen op basis van hun gemiddelde waardering </td>
-   <td>
-    <ul>
-     <li>Label</li>
-     <li>Eigenschapnaam</li>
-     <li>Optiepad</li>
      <li>Beschrijving</li>
     </ul> </td>
   </tr>
