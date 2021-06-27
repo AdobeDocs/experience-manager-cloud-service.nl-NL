@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Metagegevens
 role: Business Practitioner,Administrator
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-translation-type: tm+mt
-source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2416'
 ht-degree: 6%
 
 ---
@@ -66,7 +65,7 @@ Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
 1. Geef in het dialoogvenster de titel van het schema op en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
-## Formulieren met metagegevensschema {#edit-metadata-schema-forms} bewerken
+## Formulieren met metagegevensschema bewerken {#edit-metadata-schema-forms}
 
 U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat tabbladen en formulieritems binnen tabbladen. U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt tabs of formulieritems toevoegen aan het metagegevensschemaformulier. De tabbladen en formulieritems die van het bovenliggende element zijn afgeleid, bevinden zich in de vergrendelde status. U kunt deze niet wijzigen op het niveau van het kind.
 
@@ -98,10 +97,13 @@ Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schema
 | [!UICONTROL Asset Referenced By] | Voeg deze component toe om een lijst weer te geven met elementen waarnaar door het element wordt verwezen. |
 | [!UICONTROL Asset Referencing] | Toevoegen om een lijst weer te geven met elementen die naar het element verwijzen. |
 | [!UICONTROL Products References] | Toevoegen om de lijst weer te geven met producten die aan het element zijn gekoppeld. |
-| [!UICONTROL Asset Rating] | Toevoegen aan weergaveopties voor het beoordelen van het element. |
 | [!UICONTROL Contextual Metadata] | Toevoegen om de weergave van andere tabbladen met metagegevens in de eigenschappenpagina met elementen te besturen. |
 
-#### De metagegevenscomponent {#edit-the-metadata-component} bewerken
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
+
+#### De metagegevenscomponent bewerken {#edit-the-metadata-component}
 
 Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component om de volgende eigenschappen (of een subset ervan) op het tabblad **[!UICONTROL Settings]** geheel of gedeeltelijk te bewerken.
 
@@ -137,7 +139,7 @@ Als u de component Contextuele metagegevens toevoegt aan een tabblad van een sch
 
 Als u een tabblad in de eigenschappenpagina wilt weergeven naast het tabblad waarop de component Contextuele metagegevens is toegepast, selecteert u het tabblad in de lijst. Het tabblad wordt toegevoegd aan de pagina met eigenschappen.
 
-### Eigenschappen opgeven in JSON-bestand {#specify-properties-in-json-file}
+### Eigenschappen in JSON-bestand opgeven {#specify-properties-in-json-file}
 
 In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings]** op te geven, kunt u de opties in een JSON-bestand definiëren door overeenkomstige sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON Path]**.
 
@@ -151,7 +153,7 @@ Klik `+` om een lusje op een schemavorm toe te voegen. Standaard heeft het nieuw
 
 ![Een tabblad toevoegen of verwijderen met de Editor voor een metagegevensschema](assets/metadata-schema-form-new-tab.png)
 
-## Formulieren met metagegevensschema {#deleting-metadata-schema-forms} verwijderen
+## Formulieren met metagegevens verwijderen {#deleting-metadata-schema-forms}
 
 Met AEM kunt u alleen aangepaste schema-formulieren verwijderen. U kunt hiermee de standaardschema-formulieren/sjablonen niet verwijderen. U kunt echter alle aangepaste wijzigingen in deze formulieren verwijderen.
 
@@ -167,7 +169,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 >* U kunt de standaardformulieren voor het metagegevensschema niet verwijderen in [!DNL Assets].
 
 
-## Schemaformulieren voor MIME-typen {#schema-forms-for-mime-types}
+## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] bevat standaardformulieren voor diverse MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
@@ -202,7 +204,7 @@ In dit geval maakt u een knooppunt op `/etc/dam/metadataeditor/mimetypemappings`
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## Toegang verlenen tot metagegevensschema&#39;s {#grant-access-to-metadata-schemas}
+## Toegang tot metagegevensschema&#39;s verlenen {#grant-access-to-metadata-schemas}
 
 De functie Metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter toegang verlenen aan niet-beheerders door bepaalde machtigingen te wijzigen. Verstrek de niet beheerdergebruikers tot toestemmingen op `/conf` leiden, wijzigen en schrappen.
 
