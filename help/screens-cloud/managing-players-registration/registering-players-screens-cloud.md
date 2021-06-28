@@ -1,18 +1,15 @@
 ---
 title: Afspeellagen in schermen registreren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers in schermen kunt registreren als Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Afspeellagen in schermen registreren als een Cloud Service {#registering-players-screens-cloud}
+# Afspeellagen in schermen registreren als Cloud Service {#registering-players-screens-cloud}
 
 Nadat u spelers voor rasters hebt geïnstalleerd en geconfigureerd als Cloud Service, moet u de spelers registreren.
 
@@ -23,7 +20,7 @@ Met dit document krijgt u meer inzicht in het registreren van spelers bij de Scr
 * begrijpen hoe spelers kunnen worden geregistreerd
 * hoe te om het registratieproces van de Leverancier van de Diensten van het Scherm te voltooien
 
-## Stappen om een schermspeler {#register-players} te registreren
+## Stappen om een schermspeler te registreren {#register-players}
 
 Als u de speler eenmaal als Cloud Service op schermen hebt geïnstalleerd, kunt u de speler registreren bij de Screens Services Provider.
 
@@ -66,6 +63,6 @@ Volg de onderstaande stappen om uw speler te registreren:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player6.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu, dat u de speler aan de wijze van de Wolk hebt geïnstalleerd en gevormd, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document te herzien, [Assigning Player aan een Vertoning in Schermen als Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van de Dienstverlener van de Schermen.
