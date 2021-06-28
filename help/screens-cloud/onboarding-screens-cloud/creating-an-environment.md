@@ -1,10 +1,7 @@
 ---
 title: Een vertakking maken
 description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens als Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -41,7 +38,7 @@ Zodra het project met succes wordt gecreeerd, zult u de vraag-aan-actie kaartupd
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Zodra u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, namelijk [De Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md) uitvoeren.
 
