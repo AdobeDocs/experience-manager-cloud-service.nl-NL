@@ -1,18 +1,15 @@
 ---
 title: Een project in schermen maken als Cloud Service
 description: Deze pagina beschrijft hoe te om een project in Schermen als Cloud Service tot stand te brengen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Een project in rasters maken en beheren als een Cloud Service {#creating-project-screens-cloud}
+# Een project in rasters maken en beheren als Cloud Service {#creating-project-screens-cloud}
 
 De eerste stap bij het uitvoeren van een nieuw project in Schermen als Cloud Service is een nieuw project tot stand te brengen.
 
@@ -27,7 +24,7 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw project in Scher
 1. Navigeer naar de Inhoudsprovider voor schermen.
 
    >[!NOTE]
-   >Raadpleeg [Schermcontentprovider gebruiken](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
+   >Raadpleeg [Schermcontentprovider gebruiken] om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
 
 1. Klik op **Schermproject maken** in de rechterbovenhoek van de actiebalk.
 
@@ -46,7 +43,7 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw project in Scher
 
    Nu u een AEM Screens-project hebt ingesteld, kunt u beginnen met het toevoegen van kanalen en locaties aan uw project.
 
-### Bestaand project {#deleting-project} verwijderen
+### Een bestaand project verwijderen {#deleting-project}
 
 U kunt bestaande rasters verwijderen als een Cloud Service-project.
 Voer de onderstaande stappen uit om een bestaand project te verwijderen uit de Inhoudsprovider voor schermen:
@@ -62,6 +59,6 @@ Voer de onderstaande stappen uit om een bestaand project te verwijderen uit de I
    >[!NOTE]
    >U kunt veelvoudige projecten selecteren en daarom veelvoudige projecten in één enkele stap schrappen.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-project hebt ingesteld, kunt u een nieuw kanaal maken en inhoud aan de kanalen toevoegen. Raadpleeg [Kanalen maken en beheren](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md) voor meer informatie over het maken en beheren van inhoud in kanalen.
+Nu u een AEM Screens-project hebt ingesteld, kunt u een nieuw kanaal maken en inhoud aan de kanalen toevoegen. Raadpleeg [Kanalen maken en beheren] voor meer informatie over het maken en beheren van inhoud in kanalen.
