@@ -1,7 +1,7 @@
 ---
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ Alle blobs die vóór de fout zijn gekopieerd, worden automatisch door AzCopy ov
 Met de release van Content Transfer Tool 1.5.4 hebben we AzCopy-ondersteuning toegevoegd aan de opname van auteurs.
 
 >[!NOTE]
->
 > Aanbevolen wordt om opname door de auteur eerst alleen uit te voeren. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
 
 Om van AzCopy tijdens opname voordeel te halen, vereisen wij dat u op een AEM als versie van de Cloud Service bent die minstens versie 2021.6.5561 is.
