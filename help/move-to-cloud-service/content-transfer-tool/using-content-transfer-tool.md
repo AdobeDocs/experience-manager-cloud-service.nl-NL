@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 39%
 
 ---
 
@@ -158,6 +158,8 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extractie naar boven"
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
+>[!NOTE]
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Om dit te doen zult u een azcopy.config- dossier moeten vormen alvorens extractie in werking te stellen. Raadpleeg [Grote opslagplaatsen voor inhoud verwerken] voor meer informatie.
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
 
@@ -206,8 +208,13 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Opname aanvullen"
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
+>[!NOTE]
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Raadpleeg [Ingesting met AzCopy] voor meer informatie.
 
-1. Selecteer een migratieset op de pagina *Overview* en klik op **Ingest** om de extractie te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+1. Selecteer een migratieset van *Overzicht* pagina en klik **Ingest** om opname te beginnen. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+
+   >[!IMPORTANT]
+   >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
 
    >[!IMPORTANT]
    >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**.
