@@ -1,10 +1,7 @@
 ---
 title: Eerste aanmelding bij schermen als Cloud Service
 description: Op deze pagina worden de eerste stappen beschreven waarmee u aan de slag gaat met Schermen als Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Eerste aanmelding bij schermen als een Cloud Service {#first-time-login-screens-cloud}
+# Eerste aanmelding bij schermen als Cloud Service {#first-time-login-screens-cloud}
 
 
 ## Het instapproces {#onboarding-process}
@@ -31,6 +28,6 @@ Zodra u van een identiteitskaart van de Organisatie van het Systeem van de Adobe
 >[!NOTE]
 >De gebruikers hebben toegang tot AEM profiel van het Product van de Cloud Service zodat zij aan AEM kunnen login gebruikend Adobe ID of Federated ID.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu u een IMS-organisatie-id hebt gekregen en als gebruiker aan de Adobe Admin Console bent toegevoegd, kunt u nu [Invoegtoepassing voor schermen toevoegen aan het nieuwe programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [een bestaand programma](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) voor schermen als Cloud Service in Cloud Manager.
