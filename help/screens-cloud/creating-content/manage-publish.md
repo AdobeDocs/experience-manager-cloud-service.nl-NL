@@ -1,10 +1,7 @@
 ---
 title: Een kanaal in schermen publiceren als Cloud Service
 description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen publiceert als een Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Kanalen in schermen publiceren als een Cloud Service {#publish-channel-screens-cloud}
+# Kanalen in schermen publiceren als Cloud Service {#publish-channel-screens-cloud}
 
 ## Inleiding {#introduction}
 
@@ -50,6 +47,6 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien het Installeren van en het Vormen Players in Schermen als Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
