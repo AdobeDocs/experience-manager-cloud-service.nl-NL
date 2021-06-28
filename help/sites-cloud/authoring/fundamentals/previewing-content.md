@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM Preview Service kunt gebruiken om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
+source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Zie [Uw omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) voor meer informatie over het ophalen van de URL&#39;s voor uw omgevingen.
 
-De inhoud kan ook worden gepubliceerd aan voorproef door een [Publish Inhoudsboom Werkschema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) met de agentId parameter te gebruiken die aan voorproef wordt geplaatst of door [replicatie API](/help/operations/replication.md#replication-api) met een AgentFilter te gebruiken voor voorproef wordt gevormd.
+De inhoud kan ook worden gepubliceerd aan voorproef door een [Publish Inhoudsboom Werkschema](/help/operations/replication.md#publish-content-tree-workflow) met de agentId parameter te gebruiken die aan voorproef wordt geplaatst of door [replicatie API](/help/operations/replication.md#replication-api) met een AgentFilter te gebruiken voor voorproef wordt gevormd.
 
 ## OSGi-instellingen configureren voor de voorbeeldreeks {#configuring-osgi-settings-for-the-preview-tier}
 
