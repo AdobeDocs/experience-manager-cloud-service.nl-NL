@@ -1,10 +1,7 @@
 ---
 title: Weergaven in rasters maken en beheren als Cloud Service
 description: Op deze pagina wordt beschreven hoe u beeldschermen als Cloud Service kunt maken en beheren.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Weergaven in rasters maken en beheren als een Cloud Service {#create-displays-screens-cloud}
+# Weergaven in rasters maken en beheren als Cloud Service {#create-displays-screens-cloud}
 
 Nadat u uw kanaal hebt gepubliceerd, is het nu tijd om weergave te maken in de Raster Services Provider.
 
@@ -45,7 +42,7 @@ Voer de onderstaande stappen uit om de weergave te maken van Screens Services Pr
 
    ![afbeelding](/help/screens-cloud/assets/display/disp-4.png)
 
-### Een weergave {#deleting-display} verwijderen
+### Een weergave verwijderen {#deleting-display}
 
 U kunt een weergave verwijderen van de Raster Services Provider.
 
@@ -53,6 +50,6 @@ Selecteer de weergave en klik op **Delete** onder aan het deelvenster, zoals in 
 
 ![afbeelding](/help/screens-cloud/assets/display/disp-5.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu, dat u hebt geleerd om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [Toewijzend Kanaal aan een Vertoning in Schermen als Cloud Service ](/help/screens-cloud/creating-content/assigning-channels-to-display.md) te herzien.
