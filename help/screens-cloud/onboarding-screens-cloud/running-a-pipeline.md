@@ -1,10 +1,7 @@
 ---
 title: Een pijplijn uitvoeren
 description: Deze pagina beschrijft het runnen van een pijpleiding voor Schermen als project van de Cloud Service in de Manager van de Wolk.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -23,7 +20,7 @@ Deze sectie beschrijft hoe te om de pijpleiding in werking te stellen en uw code
 
 De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw code voor uw programma in de Manager van de Wolk op te stellen.
 
-## Stappen om een pijpleiding voor uw Project van het Scherm in de Manager {#steps-branch-creation} van de Wolk in werking te stellen
+## Stappen om een pijpleiding voor uw Schermproject in de Manager van de Wolk in werking te stellen {#steps-branch-creation}
 
 1. Zodra de milieu opstelling met succes is voltooid, zult u de vraag-aan-actie kaartupdate in de pagina van de Manager van de Wolk **Overzicht** zien.
 
@@ -57,6 +54,6 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Als u eenmaal hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, dat wil zeggen [Navigeren naar Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
