@@ -1,7 +1,7 @@
 ---
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ Volg deze sectie om te leren hoe u opstelling bent om AzCopy als pre-exemplaarst
 
 ### 0. Totale grootte van alle inhoud in de gegevensopslag bepalen {#determine-total-size}
 
-#### Azure Blob Storage Data Store
+#### Azure Blob Storage Data Store {#azure-blob-storage}
 
 Van de pagina van containereigenschappen in het Azure portaal, gebruik **berekent grootte** knoop om de grootte van al inhoud in de container te bepalen. Bijvoorbeeld:
 
 ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data}
 
 U kunt het tabblad Metriek van de container gebruiken om de grootte van alle inhoud in de container te bepalen. Bijvoorbeeld:
 
@@ -67,7 +67,7 @@ Voor de bron AEM instantie, in crx-quickstart/cloud-migration, creeer een nieuw 
 
 De inhoud van dit configuratiebestand is anders, afhankelijk van het feit of uw bron AEM instantie een Azure- of Amazon S3-gegevensopslag gebruikt.
 
-#### Azure Blob Storage Data Store
+#### Azure Blob Storage Data Store {#azure-blob-storage-data}
 
 Het bestand azcopy.config moet de volgende eigenschappen bevatten (gebruik de juiste azCopyPath en azureSas voor uw instantie).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data-store}
 
 Het bestand azcopy.config moet de volgende eigenschappen bevatten (gebruik de juiste waarden voor de instantie).
 
