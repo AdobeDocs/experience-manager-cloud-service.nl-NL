@@ -1,10 +1,7 @@
 ---
 title: Een vertakking maken
 description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens als Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
@@ -43,6 +40,6 @@ In de volgende sectie wordt beschreven hoe u een vertakking voor uw programma ku
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Zodra u hebt geleerd hoe u een vertakking voor uw project in de Manager van de Wolk creeert, bent u nu bereid om zich op de volgende stap in het proces Onboarding te bewegen en dat is, [Creërend en Vestigend het Milieu](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
