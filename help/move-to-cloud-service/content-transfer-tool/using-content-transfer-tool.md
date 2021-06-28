@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
+source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2918'
 ht-degree: 39%
 
 ---
@@ -37,11 +37,11 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* Nadat u de *Extractie*-fase van het proces voor inhoudsoverdracht hebt voltooid en voordat u de *Ingestiefase* start om inhoud in uw AEM in te voeren als een Cloud Service *Stage* of *Production*-instanties, moet u een ondersteuningsticket registreren om de Adobe te informeren over uw voornemen om *Ingestikt uit te voeren* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens het *Ingestieproces*. U zult het steunkaartje 1 week vóór uw geplande *Ingestiedatum* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken.
-   * Logboek een steunkaartje met de volgende details:
-      * De nauwkeurige datum en de geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de *Ingestiefase* te beginnen.
-      * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
-      * Programma-id.
+* Nadat u de *Extractie*-fase van het proces voor inhoudsoverdracht hebt voltooid en voordat u de *Ingestiefase* start om inhoud in uw AEM in te voeren als een Cloud Service *Stage* of *Production*-instanties, moet u een ondersteuningsticket registreren om de Adobe te informeren over uw voornemen om *Ingestikt uit te voeren* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens het *Ingestieproces*. U zult het steunkaartje 1 week vóór uw geplande *Ingestiedatum* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken. U kunt een steunkaartje met de volgende details registreren:
+
+   * De nauwkeurige datum en de geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de *Ingestiefase* te beginnen.
+   * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
+   * Programma-id.
 
 * De *Ingestiefase* voor de auteur schalen de volledige auteurplaatsing. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
 
@@ -159,7 +159,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 >[!NOTE]
->Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Om dit te doen zult u een azcopy.config- dossier moeten vormen alvorens extractie in werking te stellen. Raadpleeg [Grote opslagplaatsen voor inhoud verwerken] voor meer informatie.
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Hiervoor moet u een `azcopy.config`-bestand configureren voordat extractie wordt uitgevoerd. Raadpleeg [Grote opslagplaatsen voor inhoud verwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie.
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
 
