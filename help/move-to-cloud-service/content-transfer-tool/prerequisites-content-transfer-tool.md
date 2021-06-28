@@ -2,9 +2,9 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 269ef355e10acd99e9cfcb9cac9e676b079a7ecb
+source-git-commit: 87fa7079388e7a125ed62577123959524390486c
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Controleer alle onderstaande overwegingen:
 |--- |--- |
 | AEM | Het gereedschap Inhoud overbrengen kan alleen worden uitgevoerd in AEM 6.3 of hoger. Als u Content Transfer Tool wilt gebruiken met AEM 6.2 of oudere versies, is een upgrade van de opslagplaats voor inhoud op locatie naar AEM 6.5 vereist. U hoeft de code hiervoor niet bij te werken naar AEM 6.5. |
 | Grootte van segmentwinkel | Er wordt momenteel ondersteuning geboden voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
-| Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 10 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. Voor Amazon S3- en Azure Data Store-typen voor gegevensopslag kan een optionele pre-copy-stap worden gebruikt om het proces voor de overdracht van inhoud aanzienlijk te versnellen en om de gegevensopslag met een grootte van > 10 TB te ondersteunen. |
+| Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 10 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. <br>Voor Amazon S3- en Azure Data Store-typen voor gegevensopslag kan een optionele pre-copy-stap worden gebruikt om het proces voor de overdracht van inhoud aanzienlijk te versnellen en ondersteunt een gegevensopslag van meer dan 10 TB. |
 | Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen kan niet worden gebruikt om inhoud in onveranderbare paden te migreren. Als u inhoud wilt overbrengen van `/etc`, mogen alleen bepaalde `"/etc"` paden worden geselecteerd, maar alleen ter ondersteuning van [AEM Forms naar AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Raadpleeg [Common Repository Reform](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) voor alle andere gebruiksgevallen voor meer informatie over de herstructurering van de opslagplaats. |
 
 ## Volgende functies {#whats-next}
