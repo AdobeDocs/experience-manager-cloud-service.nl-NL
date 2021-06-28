@@ -1,10 +1,7 @@
 ---
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Naar schermserviceprovider {#setup-screens-services-provider} navigeren
+# Navigeren naar de Serviceverlener voor schermen {#setup-screens-services-provider}
 
 ## Inleiding {#introduction}
 
@@ -42,7 +39,7 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nadat u hebt geleerd hoe u de Schermserviceprovider kunt instellen, kunt u naar [Inhoudsprovider voor schermen](/help/screens-cloud/configuring/using-screens-content-provider.md) voor meer informatie navigeren.
 
