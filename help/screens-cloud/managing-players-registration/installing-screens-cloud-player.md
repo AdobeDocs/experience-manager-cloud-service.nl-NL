@@ -1,10 +1,7 @@
 ---
 title: Players in rasters installeren en configureren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Players in rasters installeren en configureren als een Cloud Service {#installing-players-screens-cloud}
+# Players in rasters installeren en configureren als Cloud Service {#installing-players-screens-cloud}
 
 In deze sectie wordt beschreven hoe u AEM Screens-spelers kunt installeren die zijn geregistreerd op externe AEM. Bovendien moet u de bestaande speler opnieuw instellen in de fabriek en de nieuwe speler vervolgens registreren bij AEM Screens als Cloud Service.
 
@@ -46,6 +43,6 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
 1. Klik op **Bevestig** dat ertoe aanzet wanneer het schakelen naar wolkenwijze de speler zal schrappen-register.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, moet u uw schermen voortzetten als een Cloud Service-reis door het document opnieuw te bekijken, [Players in Screens registreren als een Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.
