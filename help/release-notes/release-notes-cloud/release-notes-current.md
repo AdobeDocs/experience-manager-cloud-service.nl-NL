@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/
 
 * Dankzij de Pixelverhouding van Smart Imaging Device (DPR) en de optimalisatie van de netwerkbandbreedte kunt u beelden van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md).
 
-* Introductie van ondersteuning voor de volgende generatie AVIF-afbeeldingsindeling in [!DNL Dynamic Media] levering (`fmt` URL-modifier). Zie [API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
+* Introductie van ondersteuning voor de volgende generatie AVIF-afbeeldingsindeling in [!DNL Dynamic Media] levering (`fmt` URL-modifier). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
