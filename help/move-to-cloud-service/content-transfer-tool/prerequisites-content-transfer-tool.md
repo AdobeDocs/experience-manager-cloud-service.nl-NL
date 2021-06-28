@@ -1,10 +1,11 @@
 ---
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
+source-git-commit: 269ef355e10acd99e9cfcb9cac9e676b079a7ecb
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -24,10 +25,10 @@ Controleer alle onderstaande overwegingen:
 | Overwegingen | Wat wordt momenteel ondersteund |
 |--- |--- |
 | AEM | Het gereedschap Inhoud overbrengen kan alleen worden uitgevoerd in AEM 6.3 of hoger. Als u Content Transfer Tool wilt gebruiken met AEM 6.2 of oudere versies, is een upgrade van de opslagplaats voor inhoud op locatie naar AEM 6.5 vereist. U hoeft de code hiervoor niet bij te werken naar AEM 6.5. |
-| Grootte van segmentwinkel | Content Transfer Tool biedt momenteel ondersteuning voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. |
-| Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen voor het overbrengen van inhoud tot 10 TB. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. |
-| Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen kan niet worden gebruikt voor het migreren van inhoud in onveranderlijke paden, zoals `“/etc”`. Er zijn bepaalde `"/etc"` wegen toegestaan om worden geselecteerd maar slechts om [AEM Forms aan AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets) te steunen. Raadpleeg [Common Repository Reform](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) voor alle andere gebruiksgevallen voor meer informatie over de herstructurering van de opslagplaats. |
+| Grootte van segmentwinkel | Er wordt momenteel ondersteuning geboden voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
+| Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 10 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. Voor Amazon S3- en Azure Data Store-typen voor gegevensopslag kan een optionele pre-copy-stap worden gebruikt om het proces voor de overdracht van inhoud aanzienlijk te versnellen en om de gegevensopslag met een grootte van > 10 TB te ondersteunen. |
+| Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen kan niet worden gebruikt om inhoud in onveranderbare paden te migreren. Als u inhoud wilt overbrengen van `/etc`, mogen alleen bepaalde `"/etc"` paden worden geselecteerd, maar alleen ter ondersteuning van [AEM Forms naar AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Raadpleeg [Common Repository Reform](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) voor alle andere gebruiksgevallen voor meer informatie over de herstructurering van de opslagplaats. |
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Zodra u de eerste vereisten hebt herzien en hebt bepaald of u het Hulpmiddel van de Overdracht van de Inhoud in uw migratieproject kunt gebruiken, verwijs naar [Extra beste praktijken en overwegingen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) terwijl het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud.
