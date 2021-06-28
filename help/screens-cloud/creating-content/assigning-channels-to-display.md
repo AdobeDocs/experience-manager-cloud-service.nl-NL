@@ -1,10 +1,7 @@
 ---
 title: Kanaal toewijzen aan een weergave in schermen als Cloud Service
 description: Op deze pagina wordt beschreven hoe u een kanaal als Cloud Service kunt toewijzen aan een weergave in schermen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Kanaal toewijzen aan een weergave in schermen als een Cloud Service {#assign-channel-displays-screens-cloud}
+# Kanaal toewijzen aan een weergave in schermen als Cloud Service {#assign-channel-displays-screens-cloud}
 
 Zodra de projectopstelling volledig is, moet u het kanaal aan een vertoning toewijzen om de inhoud te bekijken.
 
@@ -27,7 +24,7 @@ Voordat u de onderstaande stappen uitvoert om een kanaal toe te wijzen aan een w
 * Weergaven maken en beheren
 * Kanalen maken en beheren
 
-## Stappen om een Kanaal aan een Vertoning {#assign-channel-to-display} toe te wijzen
+## Stappen om een Kanaal aan een Vertoning toe te wijzen {#assign-channel-to-display}
 
 Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
@@ -69,6 +66,6 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu, dat u het kanaal aan een vertoning hebt toegewezen, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [te herzien Installing en het Vormen de Speler van de Schermen voor AEM als Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
