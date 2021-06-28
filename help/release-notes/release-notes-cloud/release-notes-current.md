@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
@@ -154,5 +154,25 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 * Commerce Core Components support Adobe Commerce Sensei Recs data collection
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
 * Ondersteuning voor aangepaste HTTP-headers per site/config
+
+## De tool Content Transfer {#content-transfer-tool}
+
+### Releasedatum {#release-date-ctt-latest}
+
+De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
+
+### Wat is er nieuw? {#what-is-new-ctt-latest}
+
+* Ondersteuning voor een optionele [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)-stap toegevoegd aan gebruik met CTT. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
+
+* Guardrail toegevoegd aan CTT om te voorkomen dat gebruikers een opname stoppen en mogelijk gegevens beschadigen zodra deze het kritieke punt tijdens de innamefase heeft bereikt.
+
+* De logboeken van de uitwinning maakten beschrijvender om met het oplossen van problemen te helpen.
+
+* Meer beschrijvende statusberichten voor inname zijn toegevoegd in de gebruikersinterface.
+
+### Opgeloste problemen {#bug-fixes-ctt-latest}
+
+* Terwijl het tegenhouden van een opname op de instantie van de Auteur, overlapt UI een eerder gebeëindigde opname op de instantie van de Publish aan `STOPPED` van `FINISHED`. Dit is opgelost.
 
 
