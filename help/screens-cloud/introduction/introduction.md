@@ -1,24 +1,21 @@
 ---
 title: AEM Screens als Cloud Service
 description: Deze pagina fungeert als inleiding tot AEM Screens als Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Inleiding tot AEM Screens als een Cloud Service {#introduction-screens-cloud}
+# Inleiding tot AEM Screens als Cloud Service {#introduction-screens-cloud}
 
 Met AEM Screens als Cloud Service kunt u aantrekkelijke en dynamische digitale signage-ervaringen creëren die bedoeld zijn om te worden gebruikt in openbare ruimten. Het is de volgende evolutie van het AEM Screens-product en betekent een grote stap voorwaarts in bruikbaarheid en schaalbaarheid.
 
 AEM Screens als Cloud Service is een digitale signaaloplossing waarmee marketers dynamische digitale ervaringen op schaal kunnen creëren en beheren. Daarnaast worden verschillende typen fysieke schermen gebruikt als onderdeel van een uitgebreide strategie voor digitale marketing. Het breidt Adobe-in-kanaal het gebruikelijke en mobiele kanalen uit om ook digitale signaalkanalen te omvatten die overal om ons zijn. AEM Screens als Cloud Service biedt relevantere, contextafhankelijke, productieve en anticipatieve gebruikerservaring dankzij een diepgaand inzicht in het maken van inhoud, het samenstellen van inhoud, geactiveerd gebeurtenisbeheer en het afspelen van media voor alle consumenten en bezoekers in een openbare ruimte.
 
-## Componenten in schermen begrijpen als een Cloud Service {#understanding-components}
+## Componenten in schermen begrijpen als Cloud Service {#understanding-components}
 
 Schermen als Cloud Service bestaan uit twee hoofdcomponenten:
 
