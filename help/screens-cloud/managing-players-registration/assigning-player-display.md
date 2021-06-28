@@ -1,10 +1,7 @@
 ---
 title: Speler aan een Vertoning in Schermen als Cloud Service toewijzen
 description: Op deze pagina wordt beschreven hoe u een speler als Cloud Service kunt toewijzen aan een weergave in rasters.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Speler aan een Vertoning in Schermen toewijzen als Cloud Service {#assign-player-displays-screens-cloud}
+# Speler aan een Vertoning in Schermen als Cloud Service toewijzen {#assign-player-displays-screens-cloud}
 
 Wanneer de projectinstelling is voltooid, moet u de speler aan een weergave toewijzen om de inhoud weer te geven.
 
@@ -20,7 +17,7 @@ Wanneer de projectinstelling is voltooid, moet u de speler aan een weergave toew
 
 Dit document helpt u te begrijpen hoe u een speler aan een vertoning in de Dienstverlener van de Borstels toewijst. Dit zijn de laatste verplichte stappen voordat de inhoud op schermen wordt afgespeeld als een Cloud Service-speler.
 
-## Stappen om een Speler aan een Vertoning {#create-display} toe te wijzen
+## Stappen om een Speler aan een Vertoning toe te wijzen {#create-display}
 
 Wanneer u de speler hebt geregistreerd, is het verplicht een speler aan het vereiste scherm toe te wijzen, zodat de inhoud in de speler wordt afgespeeld.
 
