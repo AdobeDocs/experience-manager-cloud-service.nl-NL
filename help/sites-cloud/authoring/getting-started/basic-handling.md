@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 4%
 
 ---
@@ -56,7 +56,7 @@ Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkerma
 
 De opties in deze deelvensters worden hieronder beschreven.
 
-### Navigatievenster {#navigation-panel}
+### Deelvenster Navigatie {#navigation-panel}
 
 Het navigatievenster:
 
@@ -232,7 +232,7 @@ De snelle acties zijn zichtbaar wanneer u de muis boven een resourcepard (bureau
 
 ![Aanvullende opties](/help/sites-cloud/authoring/assets/quick-actions.png)
 
-## Bronnen {#viewing-and-selecting-resources} weergeven en selecteren
+## Bronnen weergeven en selecteren {#viewing-and-selecting-resources}
 
 Het bekijken, navigeren, en het selecteren zijn elk conceptueel het zelfde over alle meningen, maar hebben kleine variaties in behandeling, afhankelijk van de mening u gebruikt.
 
@@ -265,7 +265,7 @@ U kunt alle punten in om het even welke mening selecteren door de **Uitgezochte 
 
 ![Alles selecteren](/help/sites-cloud/authoring/assets/select-all.png)
 
-#### Alle {#deselecting-all} uitschakelen
+#### Alle selecties opheffen {#deselecting-all}
 
 In alle gevallen waarin u items selecteert, wordt het aantal geselecteerde items rechtsboven op de werkbalk weergegeven.
 
@@ -278,7 +278,7 @@ U kunt alle items deselecteren en de selectiemodus afsluiten door:
 
 In alle weergaven kunt u de selectie van alle items opheffen door op escape op het toetsenbord te tikken als u een bureaubladapparaat gebruikt.
 
-#### Voorbeeld {#selecting-example} selecteren
+#### Voorbeeld selecteren {#selecting-example}
 
 1. Bijvoorbeeld in de kaartweergave:
 
@@ -315,7 +315,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * Sjabloon waarop de pagina is gebaseerd
    * Wijzigingsdetails
    * Paginataal
-   * Publicatiedetails
+   * Publicatie- en voorvertoningsgegevens
 
 
 ### Kaartweergave {#card-view}
@@ -361,6 +361,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * **Naam**  - Paginanaam, die nuttig kan zijn in een meertalige ontwerpomgeving omdat deze deel uitmaakt van de URL van de pagina en niet wordt gewijzigd ongeacht de taal
    * **Gewijzigd**  - Datum van laatste wijziging en laatst gewijzigd door gebruiker
    * **Gepubliceerd**  - Status van publicatie
+   * **Voorvertoning**  - Voorvertoningsstatus
    * **Sjabloon**  - Sjabloon waarop de pagina is gebaseerd
    * **Workflow**  - Werkstroom die momenteel op de pagina wordt toegepast. Er is meer informatie beschikbaar wanneer u de muis boven de tijdlijn houdt of deze opent.
    * **Paginaanalyse**
@@ -381,7 +382,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    ![Orderlijst](/help/sites-cloud/authoring/assets/order-list.png)
 
-## Spoorkiezer {#rail-selector}
+## Spoorwegkiezer {#rail-selector}
 
 De **Spoorkiezer** is beschikbaar linksboven in het venster en geeft opties weer, afhankelijk van de huidige consoles.
 
