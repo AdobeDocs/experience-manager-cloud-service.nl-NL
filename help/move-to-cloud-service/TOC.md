@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 feature: Implementeren
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 73%
+source-wordcount: '97'
+ht-degree: 70%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 73%
    + De tool Content Transfer {#content-transfer-tool}
       + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Afhandeling van grote opslagplaatsen voor inhoud](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [Gebruikerstoewijzing gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [De tool Content Transfer gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Tools voor herstructurering van code {#refactoring-tools}
