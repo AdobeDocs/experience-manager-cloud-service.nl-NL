@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '819'
 ht-degree: 9%
 
 ---
@@ -114,4 +114,4 @@ Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leverag
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van middelen wordt geoptimaliseerd in Experience Manager Assets als Cloud Service. Het is nu efficiënter, biedt meer schaling en snellere uploads en downloads. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Zie [veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Het uploaden, verwerken en downloaden van bedrijfsmiddelen wordt in [!DNL Experience Manager Assets] geoptimaliseerd als een [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst van veranderingen en voor pariteit met [!DNL Experience Manager] 6.5 eigenschappen, zie [veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
