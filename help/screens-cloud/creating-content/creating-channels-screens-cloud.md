@@ -1,10 +1,7 @@
 ---
 title: Kanalen in rasters maken en beheren als Cloud Service
 description: In deze pagina wordt beschreven hoe u kanalen in rasters als Cloud Service maakt en beheert.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Kanalen in rasters maken en beheren als een Cloud Service {#creating-channels-screens-cloud}
+# Kanalen in rasters maken en beheren als Cloud Service {#creating-channels-screens-cloud}
 
 Nadat u een AEM Screens-project hebt gemaakt, moet u kanalen maken.
 ***Kanalen***, geef een opeenvolging van inhoud (beelden en video&#39;s), een website, of een enig-paginatoepassing weer.
@@ -24,7 +21,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 * begrijpen hoe u kanalen maakt voor de Inhoudsprovider voor schermen
 * inhoud in uw kanalen beheren en bewerken
 
-## Stappen om een nieuw Kanaal van de Opeenvolging in Schermen als Cloud Service {#create-new-channel} te creëren
+## Stappen voor het maken van een nieuw sequentiekanaal in rasters als Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**Vereisten**
@@ -54,7 +51,7 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw volgnummer in de
 
    Nadat u het kanaal hebt gemaakt, kunt u nu inhoud aan het kanaal toevoegen. Raadpleeg [Inhoud toevoegen aan een kanaal](#add-content) voor informatie over het toevoegen van elementen (afbeeldingen/video&#39;s) aan uw kanaal.
 
-## Een kanaal {#managing-channels} beheren
+## Een kanaal beheren {#managing-channels}
 
 U kunt een kanaal bewerken, weergeven, eigenschappen en dashboard, kopiëren, voorvertonen en verwijderen.
 
@@ -91,6 +88,6 @@ De volgende sjablonen zijn beschikbaar tijdens het gebruik van de kanaalwizard *
 | Linker- of rechterL-balkgesplitste schermkanaal | Hiermee kunnen auteurs van inhoud verschillende typen elementen weergeven in zones met de juiste grootte. |
 
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Raadpleeg [Kanalen in rasters publiceren als een Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) voordat u uw spelers beheert bij Screens Services Provider.
