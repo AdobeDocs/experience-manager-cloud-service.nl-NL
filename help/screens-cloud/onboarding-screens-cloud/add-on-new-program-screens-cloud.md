@@ -1,10 +1,7 @@
 ---
 title: Scherminvoegtoepassing toevoegen aan een nieuw programma in Cloud Manager
 description: Op deze pagina wordt beschreven hoe u een invoegtoepassing voor schermen als Cloud Service toevoegt aan een nieuw programma in Cloud Manager for Screens.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
@@ -23,7 +20,7 @@ In deze sectie wordt beschreven hoe u schermen kunt toevoegen als een invoegtoep
 
 In de volgende sectie wordt beschreven hoe u schermen als een invoegtoepassing kunt toevoegen aan een nieuw programma in Cloud Manager.
 
-## Stappen om schermen als invoegtoepassing toe te voegen aan een nieuw programma in Cloud Manager {#add-screens-add-on}
+## Stappen voor het toevoegen van schermen als invoegtoepassing aan een nieuw programma in Cloud Manager {#add-screens-add-on}
 
 Voer de onderstaande stappen uit om schermen toe te voegen aan een nieuw programma in Cloud Manager:
 
@@ -48,7 +45,7 @@ Voer de onderstaande stappen uit om schermen toe te voegen aan een nieuw program
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Als u eenmaal hebt geleerd hoe u rasters kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en producten van Cloud Manager ziet, kunt u nu verdergaan met de volgende stap in het instapproces, namelijk [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
