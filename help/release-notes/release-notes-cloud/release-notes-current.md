@@ -1,11 +1,11 @@
 ---
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
-mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
+mini-toc-levels: 1
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 0%
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
 
 >[!NOTE]
+>
 >Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
 
 >[!NOTE]
@@ -24,82 +25,25 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.5.0 is 27 mei 2021.
-De volgende release (2021.6.0) vindt plaats op 24 juni 2021.
+De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.6.0 is 28 juni 2021.
+De volgende release (2021.7.0) vindt plaats op 29 juli 2021.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video [Mei 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/333602) voor een samenvatting van de toegevoegde eigenschappen.
+Bekijk de video [Juni 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/334296) voor een samenvatting van de toegevoegde eigenschappen.
 
-## AEM als Stichting van de Cloud Service {#foundation}
+## XML-documentatie voor AEM als cloudservice {#xml-documentation}
 
-### Wat in AEM als Stichting van de Cloud Service Nieuw is {#what-is-new-foundation}
+### Wat is er nieuw? {#what-is-new-xml-documentation}
 
-* [Prereleaskanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat met de productie.
-
-* [API-afdrukking](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar met de meest recente verouderde API&#39;s die als Cloud Service AEM worden gebruikt.
-
-* [AEM als Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw gemaakte projecten bij naar de nieuwste versie, die een verouderde Java API-controle en andere verbeteringen bevat.
-
-## [!DNL Adobe Experience Manager Sites] als  [!DNL Cloud Service] {#sites}
-
-### Nieuw in [!DNL Sites] {#what-is-new-sites}
-
-* U kunt binnenkort de inhoud op een nieuwe [Voorvertoningslaag](/help/sites-cloud/authoring/fundamentals/previewing-content.md) controleren om de weergave van de uiteindelijke ervaring te simuleren zoals u dat zou doen op de laag Publiceren. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM als een Cloud Service-omgeving zal in de komende weken geleidelijk worden geïmplementeerd.
-
-## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
-
-### Nieuwe functies beschikbaar in het prerelease-kanaal {#what-is-new-assets-prerelease}
-
-* Metagegevensschema&#39;s kunnen rechtstreeks op de mapeigenschappen worden toegepast.
-
-   ![Metagegevensschema toevoegen uit mapeigenschappen](/help/assets/assets/metadata-schema-folder-properties.png)
-
-* Met het gereedschap Asset Bulk Ingestor kunt u metagegevens toevoegen tijdens een grote opname.
-
-* Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. [!DNL Assets] geeft 1000+ weer voor meer dan 1000 elementen in een map.
-
-   ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
-
-### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
-
-* Tijdens het uploaden van zeer grote bestanden loopt [!DNL Experience Manager desktop app] vast. (CQ-4320942)
-* De werkbalkopties verschillen wanneer dezelfde verzameling in een map is geselecteerd en wanneer deze is geselecteerd uit een zoekresultaat. (CQ-4321406)
-
-#### Nieuw in [!DNL Dynamic Media] {#what-is-new-dm}
-
-* Dankzij de Pixelverhouding van Smart Imaging Device (DPR) en de optimalisatie van de netwerkbandbreedte kunt u beelden van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md).
-
-* Introductie van ondersteuning voor de volgende generatie AVIF-afbeeldingsindeling in [!DNL Dynamic Media] levering (`fmt` URL-modifier). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
-
-## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
-
-### Nieuw in [!DNL Forms] {#what-is-new-forms}
-
-* **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor, zodat ontwerpers meer inzicht kunnen krijgen in verschillende functies van editors.
-* **Foutberichten in de browser** Eigenschappen: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
-
-### Opkomende bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
-
-Uitvoeren als cloudservice: Met de uitvoerservice kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone en asynchrone batchmodus. Met uitvoerservice kunt u toepassingen maken waarmee u:
-
-* Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
-* Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
-* Afdruk-PDF&#39;s genereren op basis van XFA-formulier-PDF&#39;s.
-
-U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètaprogramma.
-
-### Buizen vastgesteld in [!DNL Forms] {#forms-bugs-fixed}
-
-* Wanneer u in een taakstap toewijzen van AEM Forms Workflows het standaardpictogram van de actieknoppen vervangt door een koraalpictogram, wordt de workflow beëindigd en wordt een uitzondering geregistreerd. De workflow wordt op de verwachte wijze uitgevoerd wanneer standaardpictogrammen worden gebruikt.
-* Als u in de lay-outlaag het aantal kolommen wijzigt, de bewerkingslaag opent en enkele componenten in een deelvenster sleept, verschijnen er vierkante blauwe vakken in het inhoudsgebied van de adaptieve formuliereditor en reageert de editor niet meer.
-* Foutbericht van een optie voor een regeleditor die betrekking heeft op het opgeven van een URL van een adaptief of extern element, is te lang en is niet gebruikersvriendelijk.
+* De Documentatie van XML voor AEM als Cloud Service is nu GA.
+* Dit zal bestaande AEM klanten van de Cloud Service toestaan om de Documentatie van XML voor het invoeren van, het creëren van, het beheren van en het leveren van technische inhoud over veelvoudige kanalen met inbegrip van AEM plaatsen aan te kopen
 
 ## Cloud Manager {#cloud-manager}
 
 In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.6.0 en 2021.5.0.
 
-## Releasedatum {#release-date-june-cm}
+### Releasedatum {#release-date-june-cm}
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.6.0 is 10 juni 2021.
 De volgende release is gepland voor 15 juli 2021.
@@ -142,85 +86,73 @@ De volgende release is gepland voor 15 juli 2021.
 
 * Sommige programma&#39;s die opeenvolgingen uitgeven zouden in **Overzicht** pagina kunnen resulteren die een misleidend bericht toont om programma opstelling opnieuw uit te voeren.
 
+## [!DNL Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
-### Releasedatum {#release-date-cm-may}
+### Nieuwe functies in [!DNL Assets] {#ga-features-assets}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
+* Met de functionaliteit voor automatisering van inhoud kan [!DNL Experience Manager Assets] de API&#39;s van [!DNL Adobe Creative Cloud] gebruiken om de productie van elementen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor de functionaliteit is geen code vereist en de functie werkt vanuit de DAM.
+* [!DNL Adobe Asset Link] v3.0 voor  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] en  [!DNL Adobe Asset Link] v2.0 voor  [!DNL Adobe XD] wordt vrijgegeven. Het voorziet in:
 
-### Wat is er nieuw? {#what-is-new-may}
+   * Ondersteuning voor [!DNL Assets Essentials].
+   * Mogelijkheid om automatisch verbinding te maken met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
 
-* De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, d.w.z. in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
+<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+-->
 
-* Het eindpunt van de repository in de Public API bevat nu de Git URL.
+### Nieuwe functies beschikbaar in het prerelease-kanaal [!DNL Assets] {#beta-features-assets}
 
-* Het implementatielogboek dat door een gebruiker van Cloud Manager wordt gedownload, is begrijpelijker en bevat nu details over fouten en successcenario&#39;s.
+* De weergave-instellingen worden verbeterd zodat gebruikers een standaardweergave en een standaardsorteerparameter kunnen kiezen.
+* De downloadfunctionaliteit van Linkshare gebruikt asynchrone downloads die de downloadsnelheid verhogen.
+* Gebruikers kunnen de mappen zoeken en filteren op basis van voorspelden van eigenschappen.
+* [!DNL Experience Manager Assets] Hiermee sluit u de PDF-viewer in, ingeschakeld  [!DNL Adobe Document Cloud] om een voorvertoning van de ondersteunde documenten weer te geven. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
 
-* Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar Adobe-it, zijn nu opgelost.
+### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed-assets}
 
-* Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
+* Wanneer u een eigenaar toevoegt aan een submap, voegt [!DNL Assets] ook dezelfde gebruiker toe als een eigenaar van de bovenliggende map. (CQ-4323737)
+* Als een gebruiker bij het toevoegen van elementen aan verzamelingen een filter toepast op de zoekopdracht Verzamelingen, kan de gebruiker de Verzamelingen niet weergeven in de lijstweergave. (CQ-4323181)
+* Wanneer u naar bestanden en mappen zoekt en de gebruiker een filter toepast en [!UICONTROL Files & Folders] selecteert, worden alleen de bestanden weergegeven, maar niet de map. (CQ-4319543)
 
-* De ervaring met het bewerkingsprogramma is vernieuwd.
+## [!DNL Experience Manager Sites] als  [!DNL Cloud Service] {#sites}
 
-* De lijst van de Namen van het Domein in de pagina van Details van het Milieu zal tot 250 namen van Domein via paginering tonen.
+### Nieuwe functies in [!DNL Sites] {#ga-features-sites}
 
-* Het lusje van Oplossingen in Add Programma en geef de werkschema&#39;s van het Programma uit zal de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
+* Publiceren naar voorvertoningsniveau wordt nu weergegeven als paginastatus in de gebruikersinterface voor Sitebeheer
+* Publiceren op Voorvertoning van niveau surfact nu de URL van de voorvertoning aan het einde van de handeling en doorgaan met de URL in pagina-eigenschappen voor latere referentie
 
-* Het foutenbericht in het bouwstijlstaplogboek toen de bouwstijl geen opgestelde inhoudspakketten produceerde was onduidelijk.
+## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
-### Opgeloste problemen {#bug-fixes-cm-may}
+### Nieuw in [!DNL Forms] {#what-is-new-forms}
 
-* Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
+* Toegevoegde mogelijkheid om aangepaste kolommen in AEM Inbox te filteren.
+* Mogelijkheid toegevoegd om de themaeditor en stijllaag van een aangepaste formuliereditor te gebruiken voor het opmaken van de component captcha.
+* Verbeterde snelheid en nauwkeurigheid voor het automatisch detecteren van logische secties in de bron-PDF forms en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
+* Toegevoegde verplaatsingsactie om een PDF- of XDP-bestand van de ene map naar de andere te verplaatsen.
 
-* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **DELETED**.
+### Bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* Sommige kwaliteitskwesties van het type Code Smell hadden een onjuiste invloed op de beoordeling Betrouwbaarheid.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Via communicatie-API&#39;s kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+   * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
+   * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
+   * Afdruk-PDF&#39;s genereren op basis van een XFA-formulier, PDF en Adobe Acrobat-formulier (AcroForm).
 
-* Omdat jokertekendomeinen niet worden ondersteund, staat de gebruikersinterface de gebruiker niet toe een jokertekendomein in te dienen.
+* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat door uw organisatie wordt beheerd.
 
-* Wanneer een pijpleidingsuitvoering tussen middernacht en 1am UTC werd begonnen, werd de artefactversie die door de Manager van de Wolk werd geproduceerd niet gewaarborgd om groter te zijn dan een versie die de vorige dag werd gecreeerd.
+U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het bètaprogramma.
 
-* Tijdens de opstelling van het programma Sandbox, zodra het project met steekproefcode met succes is gecreeerd, zal Manage Git als verbinding van de heldenkaart in de pagina van het Overzicht verschijnen.
+### Buizen vastgesteld in [!DNL Forms] {#forms-bugs-fixed}
 
-## De tool Content Transfer {#content-transfer-tool}
+* Wanneer een veld wordt gevalideerd voordat gegevens worden verzonden naar de service Back-end via het Form Data Model (FDM), slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere einde een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-### Releasedatum {#release-date-ctt-latest}
+## CIF-invoegtoepassing {#cloud-services-cif}
 
-De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
+### Nieuwe functies {#what-is-new-cif}
 
-### Wat is er nieuw? {#what-is-new-ctt-latest}
+* Nieuwe CIF-product- en categoriereferentiedetypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
+* New Commerce Content Fragment Core Component
+* Full-text zoekopdracht ondersteund in AEM achterkant
+* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
+* Ondersteuning voor aangepaste HTTP-headers per site/config
 
-* De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
 
-* Wanneer een gebruiker een migratieset verwijdert uit de CTT UI, waar een extractie is uitgevoerd, wordt de `tmp`-map die aan die migratieset is gekoppeld, verwijderd om ruimte te besparen.
-
-### Opgeloste problemen {#bug-fixes-ctt-latest}
-
-* Bij het verwijderen van een migratieset wordt soms een onnuttig foutbericht weergegeven in de CTT-gebruikersinterface. Dit is opgelost.
-
-* Als gebruikers tijdens het uitvoeren van de gebruikerstoewijzing hetzelfde e-mailadres op het doel en de host hadden, maar verschillende gebruikersnamen hadden, zou de volledige invoer mislukken. Dit is opgelost. In een dergelijk conflicterend scenario, wordt de gebruiker/de groep overgeslagen en als conflict in het logboekdossier geregistreerd.
-
-### Releasedatum {#release-date-ctt-may}
-
-De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
-
-### Wat is er nieuw? {#what-is-new-ctt-may}
-
-* Met deze versie van het gereedschap Inhoud overbrengen maakt u tekstuitvoeringen voor elementen die naar de Cloud Service worden gemigreerd. Tekstuitvoeringen zijn vereist voor ondersteuning van het zoeken naar volledige tekst op ingesloten elementen.
-* Het maximumaantal migratiesets van Content Transfer Tool dat een gebruiker kan maken, is verhoogd van 4 naar 10.
-
-### Opgeloste problemen {#bug-fixes-ctt-may}
-
-* De veelvoudige insectenmoeilijke situaties verwant met auto-verfrissen eigenschap in het Hulpmiddel van de Overdracht van de Inhoud UI.
-* Het hulpmiddel van de Overdracht van de inhoud met `wipe=true` resulteerde in onjuiste tellerindex op het doel. Dit is opgelost.
-
-## Commerce Add-on {#cloud-services-commerce}
-
-### Nieuwe functies {#what-is-new-commerce}
-
-* Pagineringsondersteuning voor gekoppelde inhoud in eigenschappen van productconsole
-
-### Opgeloste problemen {#bug-fixes-commerce}
-
-* Miniaturen van middelen worden niet weergegeven op het tabblad Middelen van de producteigenschappen
-
-* Breadcrumb herstelt voorvertoningsgegevens in productconsole
