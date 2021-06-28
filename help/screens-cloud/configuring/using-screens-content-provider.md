@@ -1,10 +1,7 @@
 ---
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
+source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Scherminhoudsprovider {#using-screens-content-provider} gebruiken
+# Scherminhoudprovider gebruiken {#using-screens-content-provider}
 
 ## Inleiding {#introduction}
 
@@ -22,11 +19,11 @@ ht-degree: 1%
 
 De volgende sectie beschrijft hoe te om de Leverancier van de Inhoud van het Scherm te gebruiken, zodra u de Dienstverlener van de Diensten van het scherm hebt geïnstalleerd.
 
-## Scherminhoudsprovider {#screens-content-provider} gebruiken
+## Scherminhoudprovider gebruiken {#screens-content-provider}
 
 >[!NOTE]
 >**Vereiste**
->Voordat u deze sectie gaat lezen, raadpleegt u [Setting up Screens Services Provider](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) to learn how to navigate to this user interface from Screens Services Provider.
+>Voordat u deze sectie gaat lezen, raadpleegt u de Installatieprovider voor schermen om te leren hoe u via Screens Services Provider naar deze gebruikersinterface kunt navigeren.
 
 Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken om de inhoud af te spelen. Gebruik Schermcontentprovider voor het maken en beheren van:
 
@@ -34,8 +31,8 @@ Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken 
 * Kanalen
 * Locaties
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
-Nu, hebt u geleerd hoe te om aan de Leverancier van de Inhoud van het Scherm te navigeren, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien Creërend en het Leiden Projecten in Schermen als Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+Nu, hebt u geleerd hoe te om aan de Leverancier van de Inhoud van het Scherm te navigeren, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document opnieuw te bekijken, Creërend en het Leiden Projecten in Schermen als Cloud Service.
 
 
