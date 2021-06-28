@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM Preview Service kunt gebruiken om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ U kunt inhoud aan de Dienst van de Voorproef publiceren door Beheerde Publicatie
 
 1. Klik **Volgende**, en dan **Publish** om te bevestigen.
 
-Zie de voorproefinhoud, voeg **voorproef** aan toe publiceren URL van uw productie instantie. De URL moet als volgt worden samengesteld:
+1. In een dialoogvenster worden de URL&#39;s weergegeven voor toegang tot de inhoud in de voorbeeldomgeving.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Als u de inhoud van de voorvertoning wilt zien, kunt u **preview** ook toevoegen aan de publicatie-URL van uw productieexemplaar.
+
+   De URL moet als volgt worden samengesteld:
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Zie [Uw omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) voor meer informatie over het ophalen van de URL&#39;s voor uw omgevingen.
 
