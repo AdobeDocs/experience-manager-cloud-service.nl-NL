@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1930'
 ht-degree: 5%
 
 ---
@@ -218,6 +218,12 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
    * **Als dit selectievakje is ingeschakeld, worden de rollout-configuratie overgenomen van het bovenliggende element** .
    * **Kies Rollout Config**  - bepaalt de omstandigheden waaronder de wijzigingen van de Vervaging en slechts beschikbaar zullen worden verspreid wanneer de  **Inherit Uitvoer van** Parentis niet wordt geselecteerd
 
+### Voorvertoning {#preview}
+
+Wanneer een voorvertoningsomgeving is ingeschakeld, ziet u:
+
+* Voorbeeld-URL - de URL die wordt gebruikt voor toegang tot de inhoud in de voorvertoningsomgeving
+
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 
 * Vanuit de **Sites**-console:
@@ -228,7 +234,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 * Vanuit de pagina-editor:
    * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
-### Uit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
+### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
 Klik op **Eigenschappen** of tikken om de pagina-eigenschappen te definiëren:
 
@@ -251,7 +257,7 @@ Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** gebruiken om de pagin
    * **Opslaan en sluiten**
 1. Met de knop **Opslaan en sluiten** kunt u de wijzigingen opslaan.
 
-### Uit de siteconsole - Meerdere pagina&#39;s {#from-the-sites-console-multiple-pages}
+### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
 Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
