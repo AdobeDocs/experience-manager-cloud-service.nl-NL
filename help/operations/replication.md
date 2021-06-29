@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,9 @@ Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distributi
 
 ### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
-Deze standaard AEM functies voor de auteurs veranderen niet met AEM Cloud Service.
+Hierdoor kunt u de geselecteerde pagina(&#39;s) direct publiceren, zonder de extra opties die mogelijk zijn via de methode Publicatie beheren.
+
+Zie [Publicatie beheren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication) voor meer informatie.
 
 ### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
 
 Het algemene `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u de nieuwe `getStatusForAgent()` methode gebruiken, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
+
+### Publicatie beheren {#manage-publication}
+
+Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
+
+Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de structuur met publicatie-inhoud geactiveerd, zoals in dit artikel wordt beschreven.
+
+Meer informatie over Publicatie beheren vindt u in de [documentatie van Grondbeginselen publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Problemen oplossen {#troubleshooting}
 
