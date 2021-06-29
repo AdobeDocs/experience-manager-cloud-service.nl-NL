@@ -1,7 +1,7 @@
 ---
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
 1. Navigeer van [hier](https://experience.adobe.com/screens) naar de leverancier van de Diensten van het Scherm.
 
-   >[!NOTE]
+   >[!CAUTION]
    >Als u toegang hebt tot meerdere organisaties, moet u ervoor zorgen dat u zich hebt aangemeld bij de juiste organisatie. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang wilt hebben.
 
 1. Selecteer **Kanalen** van de linkernavigatiebar en klik op **open in inhoudsleverancier**.
