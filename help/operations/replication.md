@@ -2,7 +2,7 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -42,17 +42,17 @@ Om de automatische replicatie voor dit te realiseren moet u **Auto Replicate** i
 Een boomactivering uitvoeren:
 
 1. Navigeer in het menu AEM Start naar **Extra > Implementatie > Distributie**
-2. Selecteer de kaart **forwardPublisher**
-3. Eenmaal in de UI van de forwardPublisher-webconsole, **selecteer Distribute**
+2. Selecteer de kaart **publish**
+3. Eenmaal in de gebruikersinterface van de webconsole voor publiceren, **selecteer Distribueren**
 
-   ![](assets/distribute.png "DistributeDistribute")
+   ![](assets/publish-distribute.png "DistributeDistribute")
 4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
 U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen - Werkschema - Modellen** te kiezen en het **Publish Inhoudsboom** uit-van-de-doos werkschemamodel te kopiëren, zoals hieronder getoond:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Wijzig het originele model niet of activeer het niet. In plaats daarvan, zorg ervoor om het model eerst te kopiëren en dan die exemplaar te wijzigen of aan te halen.
 
@@ -191,13 +191,13 @@ Meer informatie over Publicatie beheren vindt u in de [documentatie van Grondbeg
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de Auteur AEM:
 
 1. Navigeer in het menu AEM Start naar **Extra > Implementatie > Distributie**
-2. Selecteer de kaart **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+2. Selecteer de kaart **publish**
+   ![](assets/publish-status.png "StatusStatus")
 3. Controleer de wachtrijstatus die groen moet zijn
 4. U kunt de verbinding met de replicatieservice testen
 5. Selecteer het tabblad **Logs** waarmee de geschiedenis van inhoudspublicaties wordt weergegeven
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM-publicatieservice.
 In dat geval moeten de rijen worden herzien om te bepalen welke punten de annulering van de publicatie hebben veroorzaakt. Door op een rij te klikken die een rode status toont, zou de rij met hangende punten verschijnen, waarvan enige of alle punten kunnen worden ontruimd indien nodig.
