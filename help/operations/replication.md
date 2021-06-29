@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ Om de automatische replicatie voor dit te realiseren moet u **Auto Replicate** i
 ![Configuratie van OSGi bij activering](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Boomactivering {#tree-activation}
+
+>[!NOTE]
+>
+>Deze benadering moet als afgekeurd worden beschouwd, aangezien zij geen status aanhoudt en minder schaalbaar is dan andere benaderingen. Aanbevolen wordt in plaats daarvan publicatiemethoden te gebruiken
 
 Een boomactivering uitvoeren:
 
