@@ -1,9 +1,9 @@
 ---
 title: Weergaven in rasters maken en beheren als Cloud Service
 description: Op deze pagina wordt beschreven hoe u beeldschermen als Cloud Service kunt maken en beheren.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -52,4 +52,4 @@ Selecteer de weergave en klik op **Delete** onder aan het deelvenster, zoals in 
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u hebt geleerd om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [Toewijzend Kanaal aan een Vertoning in Schermen als Cloud Service ](/help/screens-cloud/creating-content/assigning-channels-to-display.md) te herzien.
+Nu, dat u hebt geleerd om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [Toewijzend Kanaal aan een Vertoning in Schermen als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en) te herzien.
