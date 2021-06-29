@@ -1,10 +1,10 @@
 ---
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ De volgende sectie beschrijft hoe te om de Leverancier van de Inhoud van het Sch
 
 >[!NOTE]
 >**Vereiste**
->Voordat u deze sectie gaat lezen, raadpleegt u de Installatieprovider voor schermen om te leren hoe u via Screens Services Provider naar deze gebruikersinterface kunt navigeren.
+>Voordat u deze sectie gaat lezen, raadpleegt u [Setting up Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) to learn how to navigate to this user interface from Screens Services Provider.
 
 Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken om de inhoud af te spelen. Gebruik Schermcontentprovider voor het maken en beheren van:
 
@@ -33,6 +33,6 @@ Nadat u zich hebt aangemeld bij de Scherminhoudprovider, kunt u nu inhoud maken 
 
 ## Volgende functies {#whats-next}
 
-Nu, hebt u geleerd hoe te om aan de Leverancier van de Inhoud van het Scherm te navigeren, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document opnieuw te bekijken, Creërend en het Leiden Projecten in Schermen als Cloud Service.
+Nu, hebt u geleerd hoe te om aan de Leverancier van de Inhoud van het Scherm te navigeren, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien Creërend en het Leiden een Project in Schermen als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
 
 
