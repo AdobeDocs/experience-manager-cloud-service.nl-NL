@@ -2,16 +2,15 @@
 title: Rapporten over gebruik en delen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: Elementenrapporten,beheer van bedrijfsmiddelen
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '823'
 ht-degree: 4%
 
 ---
-
 
 # Rapporten over assets {#asset-reports}
 
@@ -121,7 +120,6 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 -->
 
 * Uploaden
-* Downloaden
 * Verlopen
 * Wijziging
 * Publicatie
@@ -161,7 +159,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Informatie over probleemoplossing {#tips-troubleshoot}
+## Problemen oplossen {#tips-troubleshoot}
 
 * Als [!UICONTROL Disk Usage Report] niet produceert en als u [!DNL Dynamic Media] gebruikt, zorg ervoor dat alle activa correct te werk gaan. U lost de problemen op door de elementen opnieuw te verwerken en het rapport opnieuw te genereren.
 
