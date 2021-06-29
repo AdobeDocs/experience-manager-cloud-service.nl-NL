@@ -1,7 +1,7 @@
 ---
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store {#amazon-data-store}
+#### Amazon S3 Data Store {#amazon-sdata-store}
 
 Het bestand azcopy.config moet de volgende eigenschappen bevatten (gebruik de juiste waarden voor de instantie).
 
@@ -134,7 +134,7 @@ Alle blobs die vóór de fout zijn gekopieerd, worden automatisch door AzCopy ov
 Met de release van Content Transfer Tool 1.5.4 hebben we AzCopy-ondersteuning toegevoegd aan de opname van auteurs.
 
 >[!NOTE]
-> Aanbevolen wordt om opname door de auteur eerst alleen uit te voeren. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
+>Aanbevolen wordt om opname door de auteur eerst alleen uit te voeren. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
 
 Om van AzCopy tijdens opname voordeel te halen, vereisen wij dat u op een AEM als versie van de Cloud Service bent die minstens versie 2021.6.5561 is.
 
