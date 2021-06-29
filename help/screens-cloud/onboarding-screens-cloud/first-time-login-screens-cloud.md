@@ -1,10 +1,10 @@
 ---
 title: Eerste aanmelding bij schermen als Cloud Service
 description: Op deze pagina worden de eerste stappen beschreven waarmee u aan de slag gaat met Schermen als Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Nadat het contract is ondertekend, initieert de Adobe Managed Services (AMS) de 
 
 ## Beschikbaarheid van het Feature Pack {#availability}
 
-Het AMS-Screens-Cloud Feature Pack is beschikbaar via Software Distribution Portal.
+Het AMS-Screens-Cloud Feature Pack is beschikbaar via [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Klik hier om het nieuwste functiepakket te downloaden.
 
 ## Gebruikers toevoegen aan Adobe Admin Console {#admin-console}
