@@ -4,14 +4,14 @@ description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configurer
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Dynamic Media {#setting-up-dynamic-media} instellen
+# Dynamic Media instellen {#setting-up-dynamic-media}
 
 [Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
