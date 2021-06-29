@@ -1,15 +1,15 @@
 ---
 title: Kanalen in rasters maken en beheren als Cloud Service
 description: In deze pagina wordt beschreven hoe u kanalen in rasters als Cloud Service maakt en beheert.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 
-# Kanalen in rasters maken en beheren als Cloud Service {#creating-channels-screens-cloud}
+# Een kanaal in rasters maken en beheren als Cloud Service {#creating-channels-screens-cloud}
 
 Nadat u een AEM Screens-project hebt gemaakt, moet u kanalen maken.
 ***Kanalen***, geef een opeenvolging van inhoud (beelden en video&#39;s), een website, of een enig-paginatoepassing weer.
@@ -90,4 +90,4 @@ De volgende sjablonen zijn beschikbaar tijdens het gebruik van de kanaalwizard *
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Raadpleeg [Kanalen in rasters publiceren als een Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) voordat u uw spelers beheert bij Screens Services Provider.
+Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Raadpleeg [Kanalen in rasters publiceren als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) voordat u uw spelers beheert bij Screens Services Provider.
