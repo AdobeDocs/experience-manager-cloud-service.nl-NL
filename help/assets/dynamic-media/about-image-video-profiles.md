@@ -4,10 +4,10 @@ description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties
 feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 1%
+source-wordcount: '1217'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale elementen voor h
 >
 >Hetzelfde geldt ook wanneer u elementen verplaatst tussen twee mappen waaraan hetzelfde profiel is toegewezen.
 
-## Dynamic Media-elementen in een map {#reprocessing-assets} opnieuw verwerken
+## Dynamic Media-elementen in een map opnieuw verwerken {#reprocessing-assets}
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd.
 
@@ -59,6 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-elementen in een map opnieuw verwerken:**
+
 1. Navigeer in [!DNL Experience Manager] vanaf de elementenpagina naar een elementenmap waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de **Scene7 wilt toepassen: Workflow Asset** opnieuw verwerken.
 
    Mappen waaraan een afbeeldingsprofiel of videoprofiel is toegewezen, krijgen de naam van het profiel direct onder de mapnaam in de Kaartweergave.
@@ -69,35 +70,35 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Als er een of meer submappen met elementen in de geselecteerde hoofdmap staan, worden alle elementen in de maphiërarchie opnieuw verwerkt.
    * U kunt deze workflow het beste niet uitvoeren in een mappenhiërarchie met meer dan 1000 elementen.
 
-1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Timeline]**.
-1. Tik in de linkerbenedenhoek van de pagina, rechts van het veld [!UICONTROL Comment], op het karatpictogram ( **^** ).
+1. Selecteer **[!UICONTROL Timeline]** in de vervolgkeuzelijst in de linkerbovenhoek van de pagina.
+1. Selecteer in de linkerbenedenhoek van de pagina, rechts van het veld [!UICONTROL Comment], het karatpictogram ( **^** ).
 
    ![Workflow 1 voor opnieuw verwerken van middelen](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Klik op **[!UICONTROL Start Workflow]**.
+1. Selecteer **[!UICONTROL Start Workflow]**.
 1. Kies **[!UICONTROL Scene7: Reprocess Assets]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]**.
 1. (Optioneel) Voer in het tekstveld **Voer een titel van de workflow in** een naam voor de workflow in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
    ![Activa opnieuw verwerken 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
+1. Selecteer **[!UICONTROL Start]** en selecteer **[!UICONTROL Confirm]**.
 
-   Als u de workflow wilt controleren of de voortgang wilt controleren, klikt u op [!DNL Experience Manager] op de hoofdconsolepagina. **[!UICONTROL Tools > Workflow]** Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, opschorten of hernoemen vanuit dezelfde pagina Workflowinstanties.
+   Selecteer **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang te controleren op de hoofdconsolepagina van [!DNL Experience Manager]. Selecteer een workflow op de pagina Workflowinstanties. Selecteer **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
 
-### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
+### De batchgrootte van de workflow voor opnieuw verwerken aanpassen (optioneel) {#adjusting-load}
 
 (Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus langer op [!DNL Experience Manager] elementen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, raadt Adobe u aan de batch tot 10 te verkleinen.
 
 **U kunt de batchgrootte van de workflow voor opnieuw verwerken desgewenst aanpassen:**
 
-1. Tik [!DNL Experience Manager] in **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en tik vervolgens op **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models]**.
+1. Selecteer [!DNL Experience Manager] om de globale navigatieconsole te openen en selecteer vervolgens **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models]**.**[!UICONTROL Adobe Experience Manager]**
 1. Voor de pagina van de Modellen van het Werkschema, in de Mening van de Kaart of de Mening van de Lijst, selecteer **[!UICONTROL Scene7: Reprocess Assets]**.
 
    ![Pagina Workflowmodellen met Scene7: Workflow voor opnieuw verwerken van middelen die zijn geselecteerd in Kaartweergave](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. Klik op **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
-1. Op de Scene7: Tik in de rechterbovenhoek op **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
-1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en tik vervolgens op **[!UICONTROL Configure]** in de werkbalk.
+1. Selecteer **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
+1. Op de Scene7: Kies **[!UICONTROL Edit]** om de werkstroom te ontgrendelen bij de pagina voor het opnieuw verwerken van middelen in de rechterbovenhoek.
+1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** op de werkbalk.
 
    ![Scene7-component Batch uploaden](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
@@ -111,9 +112,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Eigenschappen, dialoogvenster](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. Tik in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** op **[!UICONTROL Done]**.
+1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]**.
 
-1. In de rechterbovenhoek van de Scene7: Tik op **[!UICONTROL Sync]** om de modelpagina Elementen opnieuw te verwerken. Wanneer u **[!UICONTROL Synced]** ziet, wordt het model van de werkschemaruntime met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
+1. In de rechterbovenhoek van de Scene7: De pagina van het werkschemamodel van Activa opnieuw verwerken, uitgezocht **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Synced]** ziet, wordt het model van de werkschemaruntime met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
 
    ![Het workflowmodel synchroniseren](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -122,7 +123,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 <!-- MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -133,12 +134,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
