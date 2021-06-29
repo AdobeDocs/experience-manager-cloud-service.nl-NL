@@ -3,10 +3,10 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 0%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -143,6 +143,27 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 
 * Wanneer een veld wordt gevalideerd voordat gegevens worden verzonden naar de service Back-end via het Form Data Model (FDM), slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
 * Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere einde een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+In deze sectie worden de opmerkingen bij de release voor schermen als Cloud Service weergegeven.
+
+### Releasedatum {#release-date-june-screens}
+
+De Releasedatum voor AEM Screens als Cloud Service is 24 juni 2021.
+
+### Wat is er nieuw? {#what-is-new-screens-june}
+
+>[!NOTE]
+>Zie [AEM Screens als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide voor basiskennis die vereist is voor het met succes installeren, configureren en uitvoeren van rasters als een Cloud Service en een koppeling naar gedetailleerde concepten en technische documentatie.
+
+* Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
+
+* Verbeterde zoek- en filteropties voor de inventarisweergaven Apparaat, Weergave en Kanaal.
+
+* Momentopname van apparaatgezondheid bespaart tijd door een kritieke status in één oogopslag te bieden.
+
+* De pagina met objectdetails bevat een overzicht van de meest relevante informatie voor elk object in uw project.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
