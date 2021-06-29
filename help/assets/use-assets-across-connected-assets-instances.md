@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2851'
 ht-degree: 24%
 
 ---
@@ -120,9 +120,9 @@ U kunt de connectiviteit tussen de gevormde [!DNL Sites] plaatsingen en [!DNL As
 
 U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring om externe middelen en externe [!DNL Dynamic Media]-implementaties te gebruiken ongewijzigd. Hierdoor kunt u de [!DNL Dynamic Media]-functionaliteit benutten via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
 
-Voer de volgende stappen uit om deze verbinding te configureren.
+Voer de volgende stappen uit om de verbinding te configureren:
 
-1. Configuratie van verbonden elementen maken zoals hierboven beschreven. Selecteer **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** bij het configureren van de functionaliteit.
+1. Creeer de Connected configuratie van Activa zoals hierboven beschreven, behalve wanneer het vormen van de functionaliteit, uitgezochte **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** optie.
 
 1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -179,7 +179,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
-### Gebruik van een element op webpagina&#39;s controleren {#asset-usage-references}
+### Gebruik van een element op verschillende webpagina&#39;s controleren {#asset-usage-references}
 
 [!DNL Experience Manager] Hiermee kunnen DAM-gebruikers alle verwijzingen naar een element controleren. Het helpt het gebruik van een middel in verre [!DNL Sites] en in samenstellingsactiva begrijpen en beheren. Veel auteurs van webpagina&#39;s die [!DNL Experience Manager Sites] implementeren, kunnen een middel gebruiken op een externe DAM in verschillende webpagina&#39;s. Om het beheer van bedrijfsmiddelen te vereenvoudigen en niet tot verbroken verwijzingen te leiden, is het belangrijk dat de DAM-gebruikers het gebruik van middelen op lokale en externe webpagina&#39;s controleren. Op het tabblad [!UICONTROL References] in de pagina [!UICONTROL Properties] van een element worden de lokale en externe referenties van het element weergegeven.
 
@@ -200,7 +200,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 * Om inzicht in activagebruik te krijgen, vorm [Activa Insight](/help/assets/assets-insights.md) functionaliteit op [!DNL Sites] instantie.
 
-### Machtigingen en middelenbeheer {#permissions-and-managing-assets}
+### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
