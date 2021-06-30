@@ -2,7 +2,7 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
+source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -32,6 +32,14 @@ De extra mogelijkheden van **On Tijd** en **Uit Tijd** zijn beschikbaar bij [Bas
 Om de automatische replicatie voor dit te realiseren moet u **Auto Replicate** in [OSGi configuratie](/help/implementing/deploying/configuring-osgi.md) **On Off Configuratie** toelaten:
 
 ![Configuratie van OSGi bij activering](/help/operations/assets/replication-on-off-trigger.png)
+
+### Publicatie beheren {#manage-publication}
+
+Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
+
+Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de structuur met publicatie-inhoud geactiveerd, zoals in dit artikel wordt beschreven.
+
+Meer informatie over Publicatie beheren vindt u in de [documentatie van Grondbeginselen publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Boomactivering {#tree-activation}
 
@@ -177,14 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
 
 Het algemene `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u de nieuwe `getStatusForAgent()` methode gebruiken, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
-
-### Publicatie beheren {#manage-publication}
-
-Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
-
-Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de structuur met publicatie-inhoud geactiveerd, zoals in dit artikel wordt beschreven.
-
-Meer informatie over Publicatie beheren vindt u in de [documentatie van Grondbeginselen publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Problemen oplossen {#troubleshooting}
 
