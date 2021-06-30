@@ -4,20 +4,19 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 65%
 
 ---
 
 
-# [!DNL Assets] Hulplijn  {#assets}
+# [!DNL Assets] Hulplijn {#assets}
 
-+ [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Opvallende wijzigingen  [!DNL Assets] in [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Notable Wijzigingen in [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
@@ -32,7 +31,7 @@ ht-degree: 65%
    + [Slimme tags voor afbeeldingen](smart-tags.md)
    + [Slimme tag toewijzen aan video-elementen](smart-tags-video-assets.md)
    + [Assets indelen](organize-assets.md)
-   + [ [!DNL Adobe Stock] Activa in AEM](aem-assets-adobe-stock.md)
+   + [Elementen gebruiken [!DNL Adobe Stock] in AEM](aem-assets-adobe-stock.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Overzicht van metadata](manage-metadata.md)
    + [Integreren met [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,6 +45,7 @@ ht-degree: 65%
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor assets](drm.md)
    + [Watermerkelementen](watermark-assets.md)
+   + [Elementen verwerken met behulp van [!DNL Creative Cloud] API&#39;s](cc-api-integration.md)
 +  configureren, beheren en uitbreiden [!DNL Assets]{#admin}
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
@@ -64,7 +64,7 @@ ht-degree: 65%
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
 + Assets delen en distribueren {#brand-portal}
-   + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Elementen publiceren  [!DNL Brand Portal] van [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Contentfragmenten {#content-fragments}
