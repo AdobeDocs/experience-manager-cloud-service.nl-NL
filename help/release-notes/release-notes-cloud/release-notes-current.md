@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1541'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ De volgende release is gepland voor 15 juli 2021.
 
    ![Zoekmappen filteren met behulp van voorvertoningen zoeken](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] Hiermee sluit u de PDF Viewer in om een voorvertoning van de ondersteunde documentindelingen weer te geven. Het wordt aangedreven door [!DNL Adobe Document Cloud]. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] Hiermee sluit u de PDF Viewer in om een voorvertoning van de ondersteunde documentindelingen weer te geven. Het wordt aangedreven door [!DNL Adobe Document Cloud]. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5. De besturingselementen in de voorvertoning zijn zoomen, naar pagina&#39;s navigeren, besturingselementen loskoppelen en op volledig scherm weergeven. De geïntegreerde PDF-viewer ondersteunt de bestandsindelingen AI, DOCX, INDD, PDF en PSD. U kunt opmerkingen maken over het element zelf, maar opmerkingen en annotaties in het PDF-bestand worden niet ondersteund.
 
    ![Voorbeeld van PDF-bestanden weergeven in  [!DNL Experience Manager] PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
