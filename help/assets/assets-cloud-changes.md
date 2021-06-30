@@ -4,7 +4,7 @@ description: Noteerbare wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Waarderingen activa | Niet ondersteund. | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
-| Inhoudsdistributiefilter | Niet ondersteund. | Veel gebruikers gebruiken `ContentDispositionFilter` om beheerders [!DNL Experience Manager] te laten configureren voor HTML-bestanden en om PDF-bestanden inline te openen in plaats van deze te downloaden. In de publicatie-instanties kunt u de indeling beheren met de Dispatcher-configuratie. In de instanties van de Auteur, adviseert Adobe geen wijziging in de kopbal van de Verplaatsing van de Inhoud. Zie [Het filter voor het verplaatsen van inhoud in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| Inhoudsverwijderingsfilter | Niet ondersteund. | Veel gebruikers gebruiken `ContentDispositionFilter` om beheerders [!DNL Experience Manager] te laten configureren voor HTML-bestanden en om PDF-bestanden inline te openen in plaats van deze te downloaden. In de publicatie-instanties kunt u de indeling beheren met de Dispatcher-configuratie. In de instanties van de Auteur, adviseert Adobe geen wijziging in de kopbal van de Verplaatsing van de Inhoud. Zie [Het filter voor het verplaatsen van inhoud in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Rapport downloaden](/help/assets/asset-reports.md) | Niet ondersteund. | Momenteel is het downloadrapport met informatie over het gebruik van middelen niet beschikbaar. Zie [downloadrapport in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Fotosjabloon voor product | Niet ondersteund. | Zie [productfotoopnamesjabloon in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Klassieke interface | Niet ondersteund. | Alleen een gebruikersinterface met aanraakbediening is beschikbaar. |
