@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 * Met de functionaliteit voor automatisering van inhoud kan [!DNL Experience Manager Assets] de API&#39;s van [!DNL Adobe Creative Cloud] gebruiken om de productie van elementen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor deze functionaliteit is geen programmering vereist en werken vanuit de DAM. Zie [Variaties van elementen genereren met behulp van Creative Cloud-integratie](/help/assets/cc-api-integration.md).
 
-* [!DNL Adobe Asset Link] v3.0 voor  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] en  [!DNL Adobe Asset Link] v2.0 voor  [!DNL Adobe XD] wordt vrijgegeven. Het voorziet in:
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]and  [!DNL Adobe InDesign] and  [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for  [!DNL Adobe XD] is beschikbaar. Het voorziet in:
 
    * Ondersteuning voor [!DNL Assets Essentials].
    * Mogelijkheid om automatisch verbinding te maken met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
@@ -114,6 +114,14 @@ De volgende release is gepland voor 15 juli 2021.
 * [!DNL Experience Manager Assets] Hiermee sluit u de PDF Viewer in om een voorvertoning van de ondersteunde documentindelingen weer te geven. Het wordt aangedreven door [!DNL Adobe Document Cloud]. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
 
    ![Voorbeeld van PDF-bestanden weergeven in  [!DNL Experience Manager] PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. [!DNL Assets] geeft 1000+ weer voor meer dan 1000 elementen in een map.
+
+   ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* U kunt een meta-gegevensschema&#39;s op een omslag in zijn [!UICONTROL Properties] direct toepassen.
+
+   ![Metagegevensschema toevoegen uit mapeigenschappen](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed-assets}
 
