@@ -3,10 +3,10 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 1%
+source-wordcount: '1428'
+ht-degree: 0%
 
 ---
 
@@ -97,12 +97,23 @@ De volgende release is gepland voor 15 juli 2021.
    * Ondersteuning voor [!DNL Assets Essentials].
    * Mogelijkheid om automatisch verbinding te maken met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
 
+* Met het gereedschap [Bulkinspuiting voor element](/help/assets/add-assets.md#asset-bulk-ingestor) kunt u metagegevens toevoegen tijdens een bulkopname.
+
 ### Nieuwe functies beschikbaar in het prerelease-kanaal [!DNL Assets] {#beta-features-assets}
 
 * De weergave-instellingen worden verbeterd zodat gebruikers een standaardweergave en een standaardsorteerparameter kunnen kiezen.
+
+   ![Standaardweergave instellen in Weergave-instellingen](/help/assets/assets/view-settings-for-defaults.png)
+
 * De downloadfunctionaliteit van Linkshare gebruikt asynchrone downloads die de downloadsnelheid verhogen.
+
 * Gebruikers kunnen de mappen zoeken en filteren op basis van voorspelden van eigenschappen.
-* [!DNL Experience Manager Assets] Hiermee sluit u de PDF-viewer in, ingeschakeld  [!DNL Adobe Document Cloud] om een voorvertoning van de ondersteunde documenten weer te geven. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
+
+   ![Zoekmappen filteren met behulp van voorvertoningen zoeken](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] Hiermee sluit u de PDF Viewer in om een voorvertoning van de ondersteunde documentindelingen weer te geven. Het wordt aangedreven door [!DNL Adobe Document Cloud]. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
+
+   ![Voorbeeld van PDF-bestanden weergeven in  [!DNL Experience Manager] PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed-assets}
 
