@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Middelenbeheer, Publiceren, Samenwerking, Middelenverwerking
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4349'
+source-wordcount: '4397'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 In dit artikel wordt beschreven hoe u elementen in Adobe Experience Manager Assets kunt beheren en bewerken. Zie [Content Fragments](content-fragments/content-fragments.md) assets voor het beheer van inhoudsfragmenten.
 
-## Mappen {#creating-folders} maken
+## Mappen maken {#creating-folders}
 
 Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Experience Manager Assets] vereist niet dat u elementen in mappen ordent om beter te werken.
 
@@ -122,7 +122,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 -->
 
-## Elementen {#copying-assets} kopiëren
+## Elementen kopiëren {#copying-assets}
 
 Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de omslag gekopieerd, samen met zijn inhoudsstructuur. Een gekopieerd middel of een omslag wordt gedupliceerd bij de doelplaats. Het element op de bronlocatie wordt niet gewijzigd.
 
@@ -242,7 +242,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund.
 
-## Elementen {#delete-assets} verwijderen
+## Elementen verwijderen {#delete-assets}
 
 Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
 
@@ -268,11 +268,11 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
    >
    >Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. U kunt het verwijderen van middelen waarnaar wordt verwezen, uitschakelen omdat verbroken koppelingen hierdoor worden veroorzaakt. Schakel de knop Kracht verwijderen uit met behulp van een bedekking.
 
-## Elementen {#download-assets} downloaden
+## Elementen downloaden {#download-assets}
 
 Zie [Elementen downloaden van [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Elementen publiceren of verwijderen {#publish-assets}
+## Elementen publiceren of publiceren ongedaan maken {#publish-assets}
 
 1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
@@ -324,7 +324,7 @@ Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem
 
 Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [onderzoeksactiva in [!DNL Experience Manager]](/help/assets/search-assets.md).
 
-## Snelle handelingen {#quick-actions}
+## Snelle acties {#quick-actions}
 
 De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. Voer afhankelijk van het apparaat de volgende handelingen uit om de snelactiepictogrammen weer te geven:
 
@@ -460,7 +460,15 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 >
 >U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties/opmerkingen aan de bovenliggende verzameling toevoegen. De optie Annoteren is niet beschikbaar voor onderliggende verzamelingen.
 
-### Opgeslagen annotaties weergeven {#viewing-saved-annotations}
+### Opgeslagen notities weergeven {#viewing-saved-annotations}
+
+U kunt slechts één annotatie tegelijk weergeven.
+
+>[!NOTE]
+>
+>Als u meerdere annotaties selecteert, wordt de laatste annotatie weergegeven in de gebruikersinterface.
+>
+>Multi-select wordt alleen ondersteund voor het afdrukken van het geannoteerde element als PDF.
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
@@ -478,11 +486,15 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    Tik/klik op **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
-### Annotaties {#printing-annotations} afdrukken
+### Annotaties afdrukken {#printing-annotations}
 
 Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
+
+>[!NOTE]
+>
+>U kunt meerdere annotaties selecteren tijdens het afdrukken van het geannoteerde element als PDF.
 
 Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard om de annotaties en de revisiestatus af te drukken. Het pictogram **[!UICONTROL Print]** wordt alleen op de werkbalk weergegeven wanneer aan het element ten minste één aantekening of revisiestatus is toegewezen.
 
@@ -524,7 +536,7 @@ Tik op het pictogram **[!UICONTROL Print]** en volg de instructies in de wizard 
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-## Versiering van bedrijfsmiddelen {#asset-versioning}
+## Asset versioning {#asset-versioning}
 
 Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element.
 
@@ -582,7 +594,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
+### Een workflow op een middel starten {#starting-a-workflow-on-an-asset}
 
 1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik erop om de elementpagina te openen.
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
@@ -618,7 +630,7 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om element
 
 Zie [Verzamelingen beheren](/help/assets/manage-collections.md) voor meer informatie over Verzamelingsbeheer.
 
-## Verlopen elementen verbergen bij weergave van elementen in desktop-app of Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] bureaubladtoepassing biedt toegang tot de DAM-opslagruimte vanaf Windows- of Mac-desktopcomputers. Met Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen.
 
