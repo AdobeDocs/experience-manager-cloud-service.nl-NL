@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1393'
 ht-degree: 1%
 
 ---
@@ -90,14 +90,12 @@ De volgende release is gepland voor 15 juli 2021.
 
 ### Nieuwe functies in [!DNL Assets] {#ga-features-assets}
 
-* Met de functionaliteit voor automatisering van inhoud kan [!DNL Experience Manager Assets] de API&#39;s van [!DNL Adobe Creative Cloud] gebruiken om de productie van elementen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor de functionaliteit is geen code vereist en de functie werkt vanuit de DAM.
+* Met de functionaliteit voor automatisering van inhoud kan [!DNL Experience Manager Assets] de API&#39;s van [!DNL Adobe Creative Cloud] gebruiken om de productie van elementen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor deze functionaliteit is geen programmering vereist en werken vanuit de DAM. Zie [Variaties van elementen genereren met behulp van Creative Cloud-integratie](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] v3.0 voor  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] en  [!DNL Adobe Asset Link] v2.0 voor  [!DNL Adobe XD] wordt vrijgegeven. Het voorziet in:
 
    * Ondersteuning voor [!DNL Assets Essentials].
    * Mogelijkheid om automatisch verbinding te maken met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### Nieuwe functies beschikbaar in het prerelease-kanaal [!DNL Assets] {#beta-features-assets}
 
