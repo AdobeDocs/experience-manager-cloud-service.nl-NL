@@ -3,10 +3,10 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 0%
+source-wordcount: '1574'
+ht-degree: 1%
 
 ---
 
@@ -211,5 +211,21 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 ### Opgeloste problemen {#bug-fixes-ctt-latest}
 
 * Terwijl het tegenhouden van een opname op de instantie van de Auteur, overlapt UI een eerder gebeëindigde opname op de instantie van de Publish aan `STOPPED` van `FINISHED`. Dit is opgelost.
+
+## Analysator van best practices {#best-practices-analyzer}
+
+### Releasedatum {#release-date-bpa}
+
+De releasedatum voor de analyse van best practices v2.1.16 is 30 juni 2021.
+
+### Wat is er nieuw? {#what-is-new-bpa-latest}
+
+* Mogelijkheid om ontbrekende onderliggende knooppunten in mappen onder `/content/dam` te detecteren en te rapporteren.
+
+* Mogelijkheid om de gebruikte versie van Best Practices Analyzer te detecteren en hierover verslag uit te brengen.
+
+### Opgeloste problemen {#bug-fixes-bpa-latest}
+
+* Logboekfout met betrekking tot niet-ondersteunde Repository Structure (URS) hersteld.
 
 
