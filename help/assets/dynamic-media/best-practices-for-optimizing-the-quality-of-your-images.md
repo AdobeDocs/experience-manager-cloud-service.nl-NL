@@ -1,14 +1,13 @@
 ---
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
-description: Leer de beste praktijken om de kwaliteit van uw beeldactiva te optimaliseren gebruikend Dynamic Media.
+description: Leer de beste praktijken die u helpen de kwaliteit van uw beeldactiva te optimaliseren gebruikend Dynamic Media.
 contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1466'
 ht-degree: 5%
 
 ---
@@ -39,13 +38,13 @@ Het dynamisch verkleinen van de afbeeldingsgrootte is een van de meest voorkomen
 
 Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp2`
 
-## Aanbevolen procedures voor het verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
+## Aanbevolen procedures voor verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
 
 * Best practices white paper [Adobe Dynamic Media Classic Image Quality en Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) is ook van toepassing op Experience Manager.
 
-* Kijk [Afbeeldingen verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Kijk [Afbeelding verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Met Experience Manager kunt u afbeeldingen verscherpen bij inname, bij levering of beide. Meestal is het echter het beste om afbeeldingen te verscherpen met slechts één methode of een andere methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
@@ -68,7 +67,7 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
       * Best practices white paper [Adobe Dynamic Media Classic Image Quality en Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) is ook van toepassing op Experience Manager.
 
-      * Kijk [Afbeeldingen verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * Kijk [Afbeelding verscherpen gebruiken met Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
       * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
