@@ -1,34 +1,33 @@
 ---
-title: Snelle weergaven gebruiken om aangepaste pop-ups te maken
-description: '"Leer over hoe de standaard Snelle mening in ecommerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-upversie van Windows®."'
+title: Aangepaste pop-ups maken met Snelle weergave
+description: '"Leer over hoe het gebrek Quickview in e-commerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-upversie van Windows®."'
 feature: Interactieve afbeeldingen, interactieve video's, carrouselbanners
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-translation-type: tm+mt
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
 
-# Met Snelle weergaven aangepaste pop-upvensters® {#using-quickviews-to-create-custom-pop-ups} maken
+# Aangepaste pop-upvensters® maken met Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer die u gebruikt, kunnen klanten op een hotspot, een miniatuurafbeelding of een afbeelding met hyperlinks tikken om informatie of verwante inhoud weer te geven.
+De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer die u gebruikt, kunnen klanten een hotspot, een miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud weer te geven.
 
-Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
+QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
-* Interactieve afbeeldingen (klikbare hotspots)
-* Interactieve video (aanklikbare miniatuurafbeeldingen tijdens het afspelen van video)
-* Carrouselbanners (aanklikbare hotspots of afbeeldingen met hyperlinks)
+* Interactieve afbeeldingen (selecteerbare hotspots)
+* Interactieve video (selecteerbare miniatuurafbeeldingen tijdens het afspelen van video)
+* Carrouselbanners (selecteerbare hotspots of afbeeldingen met hyperlinks)
 
-Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een Snelle weergave hetzelfde voor alle drie ondersteunde viewers.
+Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**Met Snelle weergaven kunt u een aangepaste pop-upversie van Windows® maken:**
+**Aangepaste pop-upvensters® maken met Quickview:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
-   Meestal maakt u een Snelle weergave op het moment dat u een element bewerkt voor gebruik met de viewer die u gebruikt.
+   Normaal gesproken maakt u een Snelle weergave op hetzelfde moment dat u middelen bewerkt voor gebruik met de viewer die u gebruikt.
 
    <table>
     <tbody>
@@ -74,7 +73,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     </tbody>
    </table>
 
-1. De viewer die u gebruikt, moet weten hoe de Snelle weergave moet worden gebruikt.
+1. De viewer die u gebruikt, moet weten hoe u de Snelle weergave kunt gebruiken.
 
    De viewer gebruikt een handler met de naam `QuickViewActive`.
 
@@ -107,10 +106,10 @@ Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina 
 
 1. Configureer nu de handler `quickViewActivate`.
 
-   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De handler bevat de lijst met variabelen en functieaanroepen voor gebruik met de Snelle weergave. De insluitcode biedt toewijzingen voor de SKU-variabele die is ingesteld in de Snelle weergave. Het maakt ook een steekproef `loadQuickView` functievraag.
+   De `quickViewActivate` manager controleert de Snelle mening in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst. Het maakt ook een steekproef `loadQuickView` functievraag.
 
-   **Variabele variabelen**
-mappingMap voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:
+   **Variabele**
+mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -118,15 +117,15 @@ mappingMap voor gebruik in uw Web-pagina aan de waarde SKU en generische variabe
 
    `var sku=inData.sku`
 
-   Wijs ook andere variabelen in de Snelle weergave toe, zoals in het volgende voorbeeld:
+   Wijs ook andere variabelen van de Snelle mening toe, zoals in het volgende:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Functie**
-callDe manager vereist ook een functievraag voor de Snelle mening om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
+   **De functie**
+callThe manager vereist ook een functievraag voor QuickView om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
 
    `loadQuickView(sku)`
 
@@ -141,7 +140,7 @@ callDe manager vereist ook een functievraag voor de Snelle mening om te werken. 
 1. Ga als volgt te werk:
 
    * Verwijder de commentaarmarkering van de sectie setHandlers van de insluitcode.
-   * Wijs eventuele extra variabelen in de Snelle weergave toe.
+   * Wijs om het even welke extra variabelen in de Snelle mening toe.
 
       * Werk `loadQuickView(sku,*var1*,*var2*)` vraag bij als u meer variabelen toevoegt.
    * Maak een eenvoudige functie `loadQuickView` () op pagina, buiten de viewer.
@@ -197,7 +196,7 @@ callDe manager vereist ook een functievraag voor de Snelle mening om te werken. 
    </script>
    ```
 
-1. Upload een HTML-testpagina naar uw webserver en open deze. De viewer geeft het pop-upvenster `DIV` weer wanneer een gebruiker een Snelle weergave aanroept.
+1. Upload een HTML-testpagina naar uw webserver en open deze. De viewer geeft de pop-up `DIV` weer wanneer een gebruiker een Snelle weergave aanroept.
 1. **Het aangepaste pop-upvenster weergeven in de modus Volledig scherm**
 
    Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
