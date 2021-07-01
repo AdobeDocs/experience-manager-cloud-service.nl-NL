@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1521'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
-### Nieuw in [!DNL Forms] {#what-is-new-forms}
+### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
 * Forms-beheerders kunnen aangepaste kolommen filteren in AEM Inbox.
 * Forms-ontwikkelaars kunnen de component captcha opmaken met de themaeditor en stijllaag van de aangepaste formuliereditor.
@@ -152,8 +152,6 @@ De volgende release is gepland voor 15 juli 2021.
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF&#39;s genereren op basis van een XFA-formulier, PDF en Adobe Acrobat-formulier (AcroForm).
-
-* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat door uw organisatie wordt beheerd.
 
 U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het bètaprogramma.
 
