@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ Hier volgt een overzicht van tips voor het organiseren van digitale elementbesta
    * Zie [Metagegevensprofielen](/help/assets/metadata-profiles.md).
    * Zie [Metagegevens voor Digital Asset Management](/help/assets/manage-metadata.md).
 
-* Meestal groeit de collectie digitale middelen altijd. Daarom is het belangrijk - vroeger op-om meta-gegevensgebruik, omslagstructuur, en dossier het noemen onder al uw geupload activa te formaliseren. Door deze standaardisering zorgt u ervoor dat u verwerkingsprofielen nauwkeuriger en consistenter kunt toepassen op mappen wanneer uw pool met digitale elementen toeneemt.
+* Meestal groeit de collectie digitale middelen altijd. Daarom is het belangrijk - vroeger - om meta-gegevensgebruik, omslagstructuur, en dossier het noemen onder al uw geupload activa te formaliseren. Door deze standaardisering zorgt u ervoor dat u verwerkingsprofielen nauwkeuriger en consistenter kunt toepassen op mappen wanneer uw pool met digitale elementen toeneemt.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Zo kunt u bijvoorbeeld de volgende mapstructuren gebruiken die u kunnen helpen bij het verfijnen van de profielen die u wilt toewijzen:
 
    * **Ontwikkelingsmappen** : bevat digitale elementen waaraan u momenteel werkt.
