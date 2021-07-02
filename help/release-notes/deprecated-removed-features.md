@@ -2,10 +2,10 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release specifiek voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 5%
+source-wordcount: '483'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | ------------ | ------------------ | ----------- |
 | [!DNL Assets] | `DAM Asset Update` werkwijze voor het verwerken van opgenomen afbeeldingen. | Bij het opnemen van bedrijfsmiddelen worden nu [assetmicroservices](/help/assets/asset-microservices-overview.md) gebruikt. |
 | [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager]. Zie [API&#39;s voor het uploaden van afgekeurde elementen](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Gebruik [Directe binaire upload](/help/assets/add-assets.md). Voor technische details, zie [directe upload APIs](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bepaalde workflowstepsin-](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)   `DAM Asset Update` workflowworkflows worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s zoals ImageMagick. | [De ](/help/assets/asset-microservices-overview.md) microservices van bedrijfsmiddelen bieden een vervanging voor veel workflows. Voor aangepaste verwerking gebruikt u [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | [Bepaalde workflowstepsin-](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) workflowworkflows worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s  `DAM Asset Update`   [!DNL ImageMagick]. | [De ](/help/assets/asset-microservices-overview.md) microservices van bedrijfsmiddelen bieden een vervanging voor veel workflows. Voor aangepaste verwerking gebruikt u [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Gebruik [Asset microservices](/help/assets/asset-microservices-overview.md) voor het genereren van miniaturen in MPEG. Gebruik [Dynamic Media](/help/assets/manage-video-assets.md) voor MPEG-transcodering. |
 
 ## Verwijderde functies {#removed-features}
