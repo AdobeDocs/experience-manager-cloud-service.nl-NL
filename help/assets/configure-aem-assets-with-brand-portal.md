@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2267'
 ht-degree: 12%
 
 ---
@@ -61,7 +61,7 @@ U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt a
 >Als de bestaande Brand Portal-cloudconfiguratie en AEM Assets als een [!DNL Cloud Service]-instantie dezelfde IMS org (org1) gebruiken, hoeft u Brand Portal alleen te activeren via Cloud Manager.
 
 **Zie ook**:
-* [Gebruikers en rollen toevoegen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [Gebruikers en rollen toevoegen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
@@ -339,7 +339,7 @@ U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruik
 
 -->
 
-### IMS-account {#create-ims-account-configuration} configureren
+### IMS-account configureren {#create-ims-account-configuration}
 
 Controleer of u de volgende stappen hebt uitgevoerd:
 
