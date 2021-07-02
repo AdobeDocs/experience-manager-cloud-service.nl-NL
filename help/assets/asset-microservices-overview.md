@@ -2,18 +2,17 @@
 title: Elementen verwerken met behulp van asset microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+feature: asset compute microservices, workflow, releasegegevens, verwerking van bedrijfsmiddelen
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van het opnemen en verwerken van bedrijfsmiddelen met asset microservices {#asset-microservices-overview}
+# Overzicht van het opnemen en verwerken van bedrijfsmiddelen met microservices voor bedrijfsmiddelen {#asset-microservices-overview}
 
 Adobe Experience Manager als [!DNL Cloud Service] biedt een &#39;cloud-native&#39; methode om toepassingen en mogelijkheden van Experience Managers te benutten. Een van de belangrijkste elementen van deze nieuwe architectuur is het opnemen en verwerken van bedrijfsmiddelen, aangedreven door microservices voor bedrijfsmiddelen. Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. De belangrijkste voordelen van cloudnative assetmicroservices zijn:
 
@@ -26,7 +25,7 @@ Adobe Experience Manager als [!DNL Cloud Service] biedt een &#39;cloud-native&#3
 * Native Adobe-bestandsverwerkingsservices worden waar van toepassing gebruikt, waardoor een hoogwaardige uitvoer mogelijk wordt en [een efficiënte verwerking van door eigendomsrechten beschermde indelingen](file-format-support.md) mogelijk wordt.
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
-Middelenmicroservices helpen u te voorkomen dat er van derden renderingtools en -methoden nodig zijn (zoals ImageMagick- en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze standaard basisfunctionaliteit bieden voor algemene bestandstypen.
+Middelenmicroservices helpen te voorkomen dat er van derden weergavehulpmiddelen en -methoden nodig zijn (zoals [!DNL ImageMagick] en MPEG-transcodering) en vereenvoudigen configuraties, terwijl ze standaard basisfunctionaliteit bieden voor de algemene bestandsindelingen.
 
 ## Architectuur op hoog niveau {#asset-microservices-architecture}
 
@@ -41,19 +40,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 De belangrijkste stappen van de opname en verwerking met behulp van asset microservices zijn:
 
-* Clients, zoals webbrowsers of Adobe Asset Link, verzenden een uploadverzoek naar de Experience Manager en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
-* Wanneer de directe binaire upload voltooit, brengt de cliënt Experience Manager op de hoogte.
-* Experience Manager verzendt een verwerkingsverzoek naar de diensten van asset microservices. De inhoud van het verzoek is afhankelijk van de configuratie van de verwerkingsprofielen in Experience Manager die specificeert, welke vertoningen te produceren.
+* Clients, zoals webbrowsers of Adobe Asset Link, verzenden een uploadverzoek naar [!DNL Experience Manager] en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
+* Wanneer de directe binaire upload is voltooid, brengt de client [!DNL Experience Manager] op de hoogte.
+* [!DNL Experience Manager] verzendt een verwerkingsverzoek naar asset microservices. De inhoud van het verzoek is afhankelijk van de configuratie van de verwerkingsprofielen in [!DNL Experience Manager] die specificeren, welke vertoningen te produceren.
 * De back-end van de microservices van activa ontvangt het verzoek, verzendt het naar één of meerdere microservices die op het verzoek worden gebaseerd. Elke microservice krijgt rechtstreeks vanuit de binaire cloudopslag toegang tot het oorspronkelijke binaire bestand.
 * De resultaten van de verwerking, zoals uitvoeringen, worden opgeslagen in de binaire cloudopslag.
-* De Experience Manager wordt op de hoogte gesteld van het feit dat de verwerking compleet is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in Experience Manager voor het geüploade element.
+* De Experience Manager wordt op de hoogte gesteld van het feit dat de verwerking compleet is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in [!DNL Experience Manager] voor het geüploade element.
 
 Dit is de basisstroom van activa het opnemen en verwerken. Indien geconfigureerd, kan Experience Manager ook een aangepast workflowmodel starten voor naverwerking van het element. Voer bijvoorbeeld aangepaste stappen uit die specifiek zijn voor uw omgeving, zoals het ophalen van informatie van een bedrijfssysteem en het toevoegen van elementen aan eigenschappen.
 
 De opname en de verwerkingsstroom zijn de belangrijkste concepten van de de dienstenarchitectuur van activa microservices voor Experience Manager.
 
 * **Directe binaire toegang**: Elementen worden naar de Cloud Binary Store getransporteerd (en geüpload) als ze eenmaal zijn geconfigureerd voor omgevingen met Experience Managers, en vervolgens  [!DNL Experience Manager]de asset microservices, en ten slotte krijgen klanten directe toegang tot deze services om hun werk uit te voeren. Dit minimaliseert de lading op netwerken en duplicatie van opgeslagen binaire bestanden
-* **Externe verwerking**: De verwerking van middelen vindt plaats buiten de  [!DNL Experience Manager] omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van belangrijke functies voor het beheer van digitale bedrijfsmiddelen en het ondersteunen van interactief werk met het systeem voor eindgebruikers
+* **Externe verwerking**: De verwerking van middelen vindt plaats buiten de  [!DNL Experience Manager] omgeving en bespaart de bronnen (CPU, geheugen) voor het bieden van DAM-functies (Digital Asset Management) en het ondersteunen van interactief werk met het systeem voor eindgebruikers
 
 ## Middelen uploaden met directe binaire toegang {#asset-upload-with-direct-binary-access}
 
@@ -66,7 +65,7 @@ U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met HTT
 
 Zie [Elementen uploaden](add-assets.md) voor meer informatie.
 
-## Aangepast element nabewerken {#add-custom-asset-post-processing} toevoegen
+## Aangepaste elementen nabewerken toevoegen {#add-custom-asset-post-processing}
 
 Terwijl de meeste klanten al hun behoeften van de activaverwerking van de configureerbare activa microservices zouden moeten krijgen, zouden sommige extra activa kunnen vereisen verwerkend. Dit geldt met name wanneer activa moeten worden verwerkt op basis van informatie die via integratie van andere systemen afkomstig is. In dergelijke gevallen kunnen aangepaste nabewerkingsworkflows worden gebruikt.
 
@@ -80,8 +79,8 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkfl
 >[!MORELIKETHIS]
 >
 >* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
->* [Ondersteunde bestandsindelingen](file-format-support.md)
->* [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Apache Oak-documentatie over directe binaire toegang](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+* [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+* [Apache Oak-documentatie over directe binaire toegang](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
