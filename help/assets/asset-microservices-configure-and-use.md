@@ -2,22 +2,21 @@
 title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
+feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
-
 
 # Middelenmicroservices en verwerkingsprofielen gebruiken {#get-started-using-asset-microservices}
 
 Asset microservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudnative toepassingen (ook wel workers genoemd). Adobe beheert de services voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties.
 
-Met Asset microservices kunt u een [breed scala aan bestandstypen verwerken](/help/assets/file-format-support.md) dat meer indelingen buiten de box behandelt dan mogelijk is met eerdere versies van [!DNL Experience Manager]. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden, zoals ImageMagick, waren vereist.
+Met Asset microservices kunt u een [breed scala aan bestandstypen verwerken](/help/assets/file-format-support.md) dat meer indelingen buiten de box behandelt dan mogelijk is met eerdere versies van [!DNL Experience Manager]. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren, maar hiervoor zijn oplossingen van andere bedrijven vereist, zoals [!DNL ImageMagick].
 
 De verwerking van activa hangt van de configuratie in **[!UICONTROL Processing Profiles]** af. De Experience Manager verstrekt een basisstandaardopstelling en laat beheerders specifiekere configuratie van de activaverwerking toevoegen. Beheerders maken, onderhouden en wijzigen de configuraties van naverwerkingsworkflows, inclusief optionele aanpassing. Door de workflows aan te passen kunnen ontwikkelaars de standaardaanbieding uitbreiden.
 
@@ -32,9 +31,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >
 >De hier beschreven elementverwerking vervangt het `DAM Update Asset` workflowmodel dat in de vorige versies van [!DNL Experience Manager] bestaat. De meeste stappen voor het genereren van standaardvertoningen en het genereren van metagegevens worden vervangen door de verwerking van de asset microservices. Eventuele resterende stappen kunnen worden vervangen door de configuratie van de workflow na verwerking.
 
-## Opties voor middelenverwerking {#get-started} begrijpen
+## Opties voor middelenverwerking begrijpen {#get-started}
 
-Met Experience Manager kunnen de volgende verwerkingsniveaus worden toegepast.
+[!DNL Experience Manager] maakt de volgende verwerkingsniveaus mogelijk.
 
 | Optie | Beschrijving | Gebruikte gevallen |
 |---|---|---|
@@ -100,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## Aangepast profiel en gebruik {#custom-config}
+## Aangepast profiel en gebruik hoofdletters en kleine letters {#custom-config}
 
 [!DNL Asset Compute Service] steunt een verscheidenheid van gebruiksgevallen zoals standaardverwerking, verwerkend Adobe-specifieke formaten zoals de dossiers van Photoshop, en het uitvoeren van douane of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als deze verwerkingsopties niet aan de bedrijfsbehoeften voldoen, raadt Adobe aan de standaardmogelijkheden te ontwikkelen en te gebruiken. [!DNL Asset Compute Service] Voor een overzicht, zie [uitbreidbaarheid begrijpen en wanneer om het te gebruiken](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
@@ -154,7 +153,7 @@ Dankzij de asset compute Service-integratie kan Experience Manager deze paramete
 
 *Afbeelding: Het  [!UICONTROL Service Parameters] gebied van het gebruik om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwt in de douanetoepassing. In dit voorbeeld worden de afbeeldingen bijgewerkt met `Jumanji` tekst in `Arial-BoldMT` font.*
 
-## Verwerkingsprofielen gebruiken om elementen {#use-profiles} te verwerken
+## Verwerkingsprofielen gebruiken om elementen te verwerken {#use-profiles}
 
 Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen die Experience Manager kan verwerken voor elementen die zijn geüpload naar of bijgewerkt in deze mappen. Het standaard ingebouwde standaard verwerkingsprofiel wordt altijd uitgevoerd, maar is niet zichtbaar in de gebruikersinterface. Als u een aangepast profiel toevoegt, worden beide profielen gebruikt om de geüploade elementen te verwerken.
 
@@ -205,13 +204,16 @@ Verwerkingsstappen moeten op basis van behoeften worden toegevoegd. U kunt alle 
 
 Zorg ervoor dat de laatste stap van elke naverwerkingwerkstroom `DAM Update Asset Workflow Completed Process` is. De laatste stap helpt ervoor te zorgen dat de Experience Manager weet wanneer de activaverwerking wordt voltooid.
 
-### Uitvoering van workflow na verwerking {#configure-post-processing-workflow-execution} configureren
+### Workflowuitvoering na verwerking configureren {#configure-post-processing-workflow-execution}
 
-Om de workflowmodellen na verwerking te configureren die moeten worden uitgevoerd voor elementen die in het systeem zijn geüpload of bijgewerkt nadat de verwerking van de asset microservices is voltooid, moet de Custom Workflow Runner-service worden geconfigureerd.
+Nadat de assetmicroservices de geüploade elementen hebben verwerkt, kunt u naverwerking definiëren om bepaalde elementen verder te verwerken. Als u naverwerking wilt configureren met behulp van workflowmodellen, kunt u een van de volgende handelingen uitvoeren:
+
+* Configureer de service Custom Workflow Runner.
+* Pas een workflowmodel toe in map [!UICONTROL Properties].
 
 De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service en biedt twee configuratieopties:
 
-* Nabewerkingsworkflows per pad (`postProcWorkflowsByPath`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Paden en modellen moeten worden gescheiden door een dubbele punt. Eenvoudige opslagpaden worden ondersteund en moeten worden toegewezen aan een workflowmodel in het pad `/var`. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Nabewerkingsworkflows per pad (`postProcWorkflowsByPath`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze aan een werkschemamodel in `/var` weg toe. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
@@ -219,9 +221,15 @@ De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.wor
 >De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan Experience Manager](/help/implementing/deploying/overview.md) voor informatie over hoe te om een configuratie op te stellen OSGi.
 >OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van [!DNL Experience Manager], niet rechtstreeks beschikbaar in de cloudservice-implementaties.
 
+Voer de volgende stappen uit om een workflowmodel toe te passen in de map [!UICONTROL Properties]:
+
+1. Maak een workflowmodel.
+1. Selecteer een map, klik op **[!UICONTROL Properties]** op de werkbalk en klik op **[!UICONTROL Assets Processing]** tabblad.
+1. Selecteer onder **[!UICONTROL Auto-start Workflow]** de vereiste workflow, geef een titel van de workflow op en sla de wijzigingen op.
+
 Zie [workflowstappen in naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor ontwikkelaars voor meer informatie over de standaardworkflowstap die kan worden gebruikt in de naverwerkingsworkflow.
 
-## Beste werkwijzen en beperkingen {#best-practices-limitations-tips}
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] aanpassen om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 * Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
