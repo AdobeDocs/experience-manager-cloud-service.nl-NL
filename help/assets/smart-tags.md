@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Slimme tags,tags toepassen
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: 4654706865c6f6511ac2893370db3424b20797cc
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2298'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # Slimme tags aan uw elementen toevoegen om de zoekervaring te verbeteren {#smart-tag-assets-for-faster-search}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -63,7 +63,7 @@ U kunt de volgende typen elementen labelen:
 
 ## Leer labelmodellen en -richtlijnen {#understand-tag-models-guidelines}
 
-Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer u de labels toepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld in kleur, op ontwerp of op gebruik. Als u de inhoudsweergave van een trainingsmodel in [!DNL Experience Manager] wilt begrijpen, visualiseert u een trainingsmodel als een entiteit op hoofdniveau die bestaat uit een groep handmatig toegevoegde tags en voorbeeldafbeeldingen voor elke tag. Elke tag kan uitsluitend op een afbeelding worden toegepast.
+Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer de labels worden toegepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld op basis van ontwerp of gebruik. Als u de inhoudsweergave van een trainingsmodel in [!DNL Experience Manager] wilt begrijpen, visualiseert u een trainingsmodel als een entiteit op hoofdniveau die bestaat uit een groep handmatig toegevoegde tags en voorbeeldafbeeldingen voor elke tag. Elke tag kan uitsluitend op een afbeelding worden toegepast.
 
 Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de elementen in de gekromde set voldoen aan [de trainingsrichtlijnen](#training-guidelines).
 
@@ -100,7 +100,6 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 * Maak een tagmodel dat alleen het volgende bevat:
 
    * De labels die betrekking hebben op automodellen.
-   * De labels hadden betrekking op kleuren van overhemden.
    * De labels hadden betrekking op hoesjes voor vrouwen en mannen.
 
 * Niet maken,
