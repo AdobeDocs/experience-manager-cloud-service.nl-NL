@@ -2,16 +2,16 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 21%
 
 ---
 
-# [!DNL Assets] als  [!DNL Cloud Service] hulplijn  {#aem-assets-guide}
+# [!DNL Assets] als  [!DNL Cloud Service] hulplijn {#aem-assets-guide}
 
 De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 
@@ -22,7 +22,7 @@ De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Asse
 * [Architectuur van [!DNL Assets] as a [!DNL Cloud Service]](architecture.md)
 * [Overzicht van microservices voor assets](/help/assets/asset-microservices-overview.md)
 
-## [!DNL Experience Manager] hulplijnen  {#aem-guides}
+## [!DNL Experience Manager] hulplijnen {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
