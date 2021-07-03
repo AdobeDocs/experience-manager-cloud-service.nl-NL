@@ -2,18 +2,17 @@
 title: Bestanden in [!DNL Assets] inchecken en uitchecken
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Beheer van bedrijfsmiddelen
+role: User
+exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
 
-
-# Bestanden inchecken en uitchecken in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Bestanden in [!DNL Experience Manager] DAM inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u elementen uitchecken voor bewerking en ze weer inchecken nadat u alle wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij [!DNL Assets]. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
 
@@ -21,7 +20,7 @@ Om activa te kunnen uitchecken/inchecken, hebt u schrijftoegang op hen nodig.
 
 Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven die door een auteur zijn aangebracht en waarbij meerdere gebruikers samenwerken aan het bewerken van workflows in verschillende teams.
 
-## Elementen {#checking-out-assets} uitchecken
+## Elementen uitchecken {#checking-out-assets}
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt uitchecken. U kunt ook meerdere elementen selecteren om uit te checken.
 
@@ -42,7 +41,7 @@ Meld u aan als een andere gebruiker om te controleren of andere gebruikers het u
 
 1. Selecteer het bewerkte element in de interface [!DNL Assets] en klik op **[!UICONTROL Checkin]** op de werkbalk. Het gewijzigde element wordt ingecheckt bij [!DNL Assets] en is beschikbaar voor andere gebruikers voor bewerking.
 
-## Geforceerde controle in {#forced-check-in}
+## Geforceerd inchecken {#forced-check-in}
 
 Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheckt.
 
@@ -53,7 +52,7 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
 1. Klik **[!UICONTROL Release Lock]** op de werkbalk. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
 
-## Beste werkwijzen en beperkingen {#tips-limitations}
+## Aanbevolen werkwijzen en beperkingen {#tips-limitations}
 
 * Het is mogelijk een *map* te verwijderen die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
 
