@@ -3,16 +3,16 @@ title: Digitale middelen maken en beheren in meerdere talen
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen, vertaling
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 19%
 
 ---
 
-# Meertalige elementen {#multilingual-assets}
+# Meertalige activa {#multilingual-assets}
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager (AEM) Assets kunt u vertaalworkflows automatiseren voor middelen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
@@ -87,7 +87,7 @@ De basispagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 1. Typ in het veld Naam de landcode in de notatie `<language-code>`.
 1. Klik of tik **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
 
-### Taalwortels {#view-language-roots} weergeven
+### Taalwortels weergeven {#view-language-roots}
 
 De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
 
@@ -95,7 +95,7 @@ De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met e
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.
 1. Klik of tik op **[!UICONTROL Language Copies]** in het venster Referenties. In het deelvenster Taalkopieën worden de taalkopieën van de elementen weergegeven.
 
-### Nieuw vertaalproject maken {#create-a-new-translation-project}
+### Een nieuw vertaalproject maken {#create-a-new-translation-project}
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
@@ -147,7 +147,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 1. Als u de status van de vertaaltaak wilt weergeven, klikt of tikt u op de ellips onder aan de tegel **[!UICONTROL Translation Job]**. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
-### Taalkopieën {#update-language-copies} bijwerken
+### Taalkopieën bijwerken {#update-language-copies}
 
 Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat. Afhankelijk van de keuze van opties wordt een vertaalproject gemaakt of wordt een bestaand vertaalproject bijgewerkt voor de nieuwe elementen. De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties:
 
@@ -212,7 +212,7 @@ U voert deze workflow uit om een extra groep elementen te vertalen en deze op te
 >
 >Als u een vertaalworkflow start voor complexe elementen, zoals PDF-bestanden en Adobe InDesign-bestanden, worden de submiddelen of vertoningen (indien aanwezig) van die elementen niet verzonden voor vertaling.
 
-### Workflow {#create-and-translate-workflow} maken en vertalen
+### Workflow maken en vertalen {#create-and-translate-workflow}
 
 Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal een kopie van de taal genereren. De workflow bevat de volgende opties:
 
@@ -232,13 +232,13 @@ Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoof
 1. Klik of tik op **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt vermeld onder **[!UICONTROL Language Copies]**.
 1. Klik/tik de structuur van de lijst, en klik dan **[!UICONTROL Reveal in Assets]** om aan de omslagstructuur binnen de doeltaal te navigeren.
 
-## Vertaalwolkenservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
+## Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
 Met Adobe Experience Manager (AEM) kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
 U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zodat u deze kunt gebruiken tijdens vertaalworkflows.
 
-### De vertaalservices toepassen {#applying-the-translation-services}
+### Vertaalservices toepassen {#applying-the-translation-services}
 
 Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoeft u geen vertaalservices te configureren wanneer u vertaalworkflows maakt of bijwerkt.
 
