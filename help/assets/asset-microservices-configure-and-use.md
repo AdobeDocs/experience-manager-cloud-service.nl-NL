@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2618'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 ## Nabewerkingsworkflows {#post-processing-workflows}
 
-In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Zo kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
+In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
 Nabewerkingsworkflows worden, indien geconfigureerd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van de microservices is voltooid. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
 
@@ -196,38 +196,41 @@ Ga als volgt te werk om een workflowconfiguratie voor naverwerking toe te voegen
 * Voeg [!UICONTROL DAM Update Asset Workflow Completed Process] stap aan het einde toe. Als u deze stap toevoegt, weet de Experience Manager wanneer de verwerking eindigt en kan het element worden gemarkeerd als verwerkt. Met andere woorden: *Nieuw* wordt op het element weergegeven.
 * Creeer een configuratie voor de Dienst van de Runner van het Werkschema van de Douane die toestaat om uitvoering van een model van het post-verwerkingswerkschema of door een weg (omslagplaats) of door een regelmatige uitdrukking te vormen.
 
+Zie [workflowstappen in naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor ontwikkelaars voor meer informatie over de standaardworkflowstap die kan worden gebruikt in de naverwerkingsworkflow.
+
 ### Workflowmodellen voor naverwerking maken {#create-post-processing-workflow-models}
 
 Workflowmodellen na verwerking zijn standaardworkflowmodellen [!DNL Experience Manager]. Maak verschillende modellen als u verschillende verwerkingen nodig hebt voor verschillende opslaglocaties of elementtypen.
 
-Verwerkingsstappen moeten op basis van behoeften worden toegevoegd. U kunt alle ondersteunde stappen gebruiken die beschikbaar zijn, maar ook alle aangepaste workflowstappen.
+De verwerkingsstappen worden indien nodig toegevoegd. U kunt zowel de ondersteunde stappen als aangepaste workflowstappen gebruiken.
 
 Zorg ervoor dat de laatste stap van elke naverwerkingwerkstroom `DAM Update Asset Workflow Completed Process` is. De laatste stap helpt ervoor te zorgen dat de Experience Manager weet wanneer de activaverwerking wordt voltooid.
 
 ### Workflowuitvoering na verwerking configureren {#configure-post-processing-workflow-execution}
 
-Nadat de assetmicroservices de geüploade elementen hebben verwerkt, kunt u naverwerking definiëren om bepaalde elementen verder te verwerken. Als u naverwerking wilt configureren met behulp van workflowmodellen, kunt u een van de volgende handelingen uitvoeren:
+Nadat de assetmicroservices de verwerking van de geüploade elementen hebben voltooid, kunt u een workflow voor nabewerking definiëren om de elementen verder te verwerken. Als u naverwerking wilt configureren met behulp van workflowmodellen, kunt u een van de volgende handelingen uitvoeren:
 
-* Configureer de service Custom Workflow Runner.
-* Pas een workflowmodel toe in map [!UICONTROL Properties].
+* [Pas een workflowmodel toe in mapeigenschappen](#apply-workflow-model-to-folder).
+* [Configureer de service](#configure-custom-workflow-runner-service) Custom Workflow Runner.
 
-De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service en biedt twee configuratieopties:
+#### Workflowmodel toepassen op een map {#apply-workflow-model-to-folder}
 
-* Nabewerkingsworkflows per pad (`postProcWorkflowsByPath`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze aan een werkschemamodel in `/var` weg toe. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
-
->[!NOTE]
->
->De configuratie van de Runner van het Werkschema van de Douane is een configuratie van de dienst OSGi. Zie [opstellen aan Experience Manager](/help/implementing/deploying/overview.md) voor informatie over hoe te om een configuratie op te stellen OSGi.
->OSGi-webconsole is, in tegenstelling tot on-premise en beheerde services-implementaties van [!DNL Experience Manager], niet rechtstreeks beschikbaar in de cloudservice-implementaties.
-
-Voer de volgende stappen uit om een workflowmodel toe te passen in de map [!UICONTROL Properties]:
+Voor gangbare gebruiksgevallen na verwerking kunt u de methode gebruiken om een workflow toe te passen op een map. Voer de volgende stappen uit om een workflowmodel toe te passen in de map [!UICONTROL Properties]:
 
 1. Maak een workflowmodel.
 1. Selecteer een map, klik op **[!UICONTROL Properties]** op de werkbalk en klik op **[!UICONTROL Assets Processing]** tabblad.
 1. Selecteer onder **[!UICONTROL Auto-start Workflow]** de vereiste workflow, geef een titel van de workflow op en sla de wijzigingen op.
 
-Zie [workflowstappen in naverwerkingsworkflow](developer-reference-material-apis.md#post-processing-workflows-steps) in de naslaggids voor ontwikkelaars voor meer informatie over de standaardworkflowstap die kan worden gebruikt in de naverwerkingsworkflow.
+   ![Een nabewerkingsworkflow toepassen op een map in de eigenschappen ervan](assets/post-processing-profile-workflow-for-folders.png)
+
+#### De service Custom Workflow Runner configureren {#configure-custom-workflow-runner-service}
+
+U kunt de aangepaste workflowrunnerservice configureren voor de geavanceerde configuraties die niet gemakkelijk kunnen worden uitgevoerd door een workflow toe te passen op een map. Bijvoorbeeld een werkstroom die een reguliere expressie gebruikt. De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service. Het verstrekt de volgende twee opties voor configuratie:
+
+* Nabewerkingsworkflows per pad (`postProcWorkflowsByPath`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze aan een werkschemamodel in `/var` weg toe. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+
+Om te weten hoe te om een configuratie op te stellen OSGi, zie [opstellen aan [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
