@@ -3,16 +3,16 @@ title: HTTP-API voor assets
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Elementen HTTP-API,API's
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP-API  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP-API {#assets-http-api}
 
 ## Overzicht {#overview}
 
@@ -106,7 +106,7 @@ De [!DNL Assets] HTTP-API bevat de volgende functies:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Een map ophalen {#retrieve-a-folder-listing}
+## Een mappenlijst ophalen {#retrieve-a-folder-listing}
 
 Haalt een Siren-weergave op van een bestaande map en van de onderliggende entiteiten (submappen of elementen).
 
@@ -120,7 +120,7 @@ Haalt een Siren-weergave op van een bestaande map en van de onderliggende entite
 
 **Reactie**: De klasse van de geretourneerde entiteit is een middel of een map. De eigenschappen van ingesloten entiteiten vormen een subset van de volledige reeks eigenschappen van elke entiteit. Om een volledige vertegenwoordiging van de entiteit te verkrijgen, zouden de cliënten de inhoud van URL moeten terugwinnen die door de verbinding met een `rel` van `self` wordt gericht.
 
-## Een map {#create-a-folder} maken
+## Een map maken {#create-a-folder}
 
 Hiermee maakt u een `sling`: `OrderedFolder` op het opgegeven pad. Als `*` in plaats van een knooppuntnaam wordt verstrekt, gebruikt servlet de parameternaam als knooppuntnaam. In het verzoek worden de volgende twee handelingen geaccepteerd:
 
@@ -145,15 +145,15 @@ Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppu
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-## Elementen {#create-an-asset} maken
+## Een element maken {#create-an-asset}
 
 Zie [asset upload](developer-reference-material-apis.md) voor informatie over het maken van een element. U kunt geen middel tot stand brengen gebruikend HTTP API.
 
-## Elementbinair {#update-asset-binary} bijwerken
+## Elementbinair bijwerken {#update-asset-binary}
 
 Zie [Elementupload](developer-reference-material-apis.md) voor informatie over het bijwerken van elementbinaire bestanden. U kunt een element binair niet bijwerken gebruikend HTTP API.
 
-## Metagegevens van een element {#update-asset-metadata} bijwerken
+## Metagegevens van een element bijwerken {#update-asset-metadata}
 
 Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap bijwerkt in de naamruimte `dc:`, werkt de API dezelfde eigenschap bij in de naamruimte `jcr`. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
@@ -184,7 +184,7 @@ Een uitvoering voor een element maken. Als de naam van de parameter request niet
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-## Elementuitvoering {#update-an-asset-rendition} bijwerken
+## Een elementuitvoering bijwerken {#update-an-asset-rendition}
 
 Updates vervangen respectievelijk een elementuitvoering door de nieuwe binaire gegevens.
 
@@ -197,7 +197,7 @@ Updates vervangen respectievelijk een elementuitvoering door de nieuwe binaire g
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-## Opmerking toevoegen aan een element {#create-an-asset-comment}
+## Een opmerking toevoegen aan een element {#create-an-asset-comment}
 
 **Parameters**: De parameters zijn  `message` voor de berichttekst van de opmerking en  `annotationData` voor de annotatiegegevens in JSON-indeling.
 
@@ -248,7 +248,7 @@ Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bes
 * 412 - PRECONDITION MISLUKT - als een aanvraagkoptekst ontbreekt.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-## Een map, element of uitvoering {#delete-a-folder-asset-or-rendition} verwijderen
+## Een map, element of uitvoering verwijderen {#delete-a-folder-asset-or-rendition}
 
 Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
