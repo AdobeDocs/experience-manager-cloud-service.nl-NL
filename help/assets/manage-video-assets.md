@@ -2,16 +2,15 @@
 title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
-feature: Asset Management,Publishing,Collaboration,Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Middelenbeheer, Publiceren, Samenwerking, Video
+role: User
+exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '613'
 ht-degree: 6%
 
 ---
-
 
 # Videoassets beheren {#manage-video-assets}
 
@@ -32,7 +31,7 @@ Leer hoe u de video-elementen beheert en bewerkt in [!DNL Adobe Experience Manag
 
 Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie.
 
-## Transcoderen met behulp van verwerkingsprofiel {#transcode-video}
+## Transcoderen met verwerkingsprofiel {#transcode-video}
 
 [!DNL Experience Manager] als een  [!DNL Cloud Service] methode gebruikt, kunt u standaardtranscodering van MP4-videobestanden uitvoeren met behulp van Procesprofielen. Met deze functionaliteit kunt u niet alleen een MP4-videobestand uploaden, maar ook een voorvertoning weergeven en schalen.
 
@@ -44,7 +43,7 @@ Als u alleen de breedte of alleen de hoogte opgeeft en het andere veld leeg laat
 
 Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel toe aan een map. Zie [verwerkingsprofielen gebruiken om elementen te verwerken](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
-## Video-elementen {#annotate-video-assets} notities aanbrengen
+## Video-elementen notities aanbrengen {#annotate-video-assets}
 
 1. Selecteer **[!UICONTROL Edit]** op de elementenkaart in de [!DNL Assets]-console om de pagina met elementdetails weer te geven.
 1. Klik op **[!UICONTROL Preview]** om de video af te spelen.
@@ -52,7 +51,7 @@ Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel t
 1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 20 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
 1. Klik op een annotatie om deze in de tijdlijn weer te geven. Als u de annotatie uit de tijdlijn wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
 
-## Beste werkwijzen en beperkingen {#tips-limitations}
+## Aanbevolen werkwijzen en beperkingen {#tips-limitations}
 
 * Zonder [!DNL Dynamic Media]-licentie kunt u alleen MP4-bestanden verwerken met behulp van verwerkingsprofielen.
 * Bij het transcoderen van MP4-bestanden met verwerkingsprofielen gelden de volgende richtlijnen en beperkingen:
