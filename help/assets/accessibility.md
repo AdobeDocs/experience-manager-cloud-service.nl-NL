@@ -3,9 +3,9 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] gebruikers met een handicap helpen.
 contentOwner: AG
 feature: Toegankelijkheid, beheer van bedrijfsmiddelen
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang t
 * Hulpapparatuur, inclusief besturingselementen voor switches, vernieuwbare braillebeeldschermen en andere invoerapparaten voor de computer.
 * Gereedschappen voor het vergroten van de gebruikersinterface.
 
-## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager] voldoen de toegankelijkheidsfuncties aan twee belangrijke vereisten van [!DNL Experience Manager]-gebruikers en hun klanten.
 
@@ -160,7 +160,7 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 * Some enhancements to metadata properties UI?
 -->
 
-## Digitale elementen beheren {#manage-assets}
+## Digitale middelen beheren {#manage-assets}
 
 Veel taken voor middelenbeheer, zoals CRUD-bewerkingen, het downloaden van middelen en het toevoegen van metagegevens, zijn in verschillende mate toegankelijk. [!DNL Assets] Hiermee kunt u de taken uitvoeren met behulp van verschillende ondersteunende hulpmiddelen, zoals een schermlezer en een toetsenbord.
 
@@ -174,7 +174,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 * De sleepfunctionaliteit met het toetsenbord werkt correct in [!UICONTROL Metadata Schema Editor] in de bladermodus van schermlezers.
 * Een gebruiker kan de focus verplaatsen met het toetsenbord naar het veld Gebruiker toevoegen of Groep onder [!UICONTROL Closed User Group] op het tabblad [!UICONTROL Permissions] in de map [!UICONTROL Properties].
 
-## Digitale elementen zoeken {#search-assets}
+## Digitale middelen zoeken {#search-assets}
 
 Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen van de inhoudssnelheid maken deel uit van de kernfunctionaliteit [!DNL Assets]. Om een onderzoek van de bar van het Onderzoek te beginnen, kunnen de gebruikers toetsenbordkortere weg `/` of gebruiken `Tab` samen met het schermlezers om van de onderzoeksoptie snel de plaats te bepalen. De schermlezer noemt de naam van de optie &quot;Knop van het Onderzoek&quot;wanneer de nadruk op de onderzoeksoptie ![onderzoeksoptie](assets/do-not-localize/search_icon.png) is. Gebruikers kunnen `Return` selecteren om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties van [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen, `Return` en `Tab` gebruiken om toegang te krijgen tot de verschillende opties om een zoekopdracht te activeren.
 
