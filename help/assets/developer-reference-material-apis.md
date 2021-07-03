@@ -3,20 +3,20 @@ title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: API's,middelen HTTP API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Gebruiksgevallen, API&#39;s en referentiemateriaal voor ontwikkelaars  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] Gebruiksgevallen, API&#39;s en referentiemateriaal voor ontwikkelaars {#assets-cloud-service-apis}
 
 Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkelaars van [!DNL Assets] als een [!DNL Cloud Service]. Het omvat nieuwe module voor het uploaden van middelen, API-referentie en informatie over de ondersteuning die wordt geboden in workflows na verwerking.
 
-## [!DNL Experience Manager Assets] API&#39;s en bewerkingen  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API&#39;s en bewerkingen {#use-cases-and-apis}
 
 [!DNL Assets] as  [!DNL Cloud Service] biedt verschillende API&#39;s die programmatisch kunnen communiceren met digitale elementen. Elke API ondersteunt specifieke gebruiksgevallen, zoals vermeld in de onderstaande tabel. De [!DNL Assets]-gebruikersinterface, [!DNL Experience Manager]-bureaubladtoepassing en [!DNL Adobe Asset Link] ondersteunen alle of sommige bewerkingen.
 
@@ -85,7 +85,7 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 >[!NOTE]
 Zie de cliëntcode om deze benadering in open-bron [aem-upload bibliotheek](https://github.com/adobe/aem-upload) uit te voeren.
 
-### Uploaden {#initiate-upload} starten
+### Uploaden starten {#initiate-upload}
 
 Verzend een HTTP-POST-aanvraag naar de gewenste map. In deze map worden middelen gemaakt of bijgewerkt. Neem de kiezer `.initiateUpload.json` op om aan te geven dat de aanvraag het uploaden van een binair bestand moet starten. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder`. Het verzoek van de POST is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
@@ -123,7 +123,7 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 * `minPartSize` (nummer): De minimale lengte, in bytes, van gegevens die aan om het even welk van het  `uploadURIs`, als er meer dan één URI kan worden verstrekt.
 * `maxPartSize` (nummer): De maximumlengte, in bytes, van gegevens die aan om het even welk van het kunnen worden verstrekt,  `uploadURIs`als er meer dan één URI is.
 
-### Binair {#upload-binary} uploaden
+### Binair bestand uploaden {#upload-binary}
 
 De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meer dan één URI is opgegeven, splitst de client het binaire getal in delen en vraagt de POST van elk onderdeel naar elke URI, op volgorde. Alle URI&#39;s gebruiken. Zorg ervoor dat de grootte van elk onderdeel binnen de minimum- en maximumgrootte ligt die in de reactie van de aanvrager zijn opgegeven. Met behulp van CDN-randknooppunten kunt u het opvragen van binaire bestanden versnellen.
 
@@ -135,7 +135,7 @@ Een mogelijke methode hiervoor is het berekenen van de onderdeelgrootte op basis
 
 Als het uploaden is voltooid, reageert de server op elk verzoek met een `201` statuscode.
 
-### Uploaden {#complete-upload} voltooien
+### Uploaden voltooien {#complete-upload}
 
 Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de POST van HTTP aan volledige URI voor die door de initiatiegegevens wordt verstrekt. Het inhoudstype van de aanvraaginstantie moet `application/x-www-form-urlencoded` formuliergegevens zijn, die de volgende velden bevatten.
 
@@ -158,14 +158,14 @@ Het uploaden van een binair getal gebeurt pas wanneer de volledige URL voor het 
 
 Als dit gelukt is, reageert de server met de statuscode `200`.
 
-### Opensource-uploadbibliotheek {#open-source-upload-library}
+### Uploadbibliotheek met open bron {#open-source-upload-library}
 
 Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken:
 
 * [Open-source Aem-upload bibliotheek](https://github.com/adobe/aem-upload).
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
 
-### API&#39;s voor het uploaden van afgekeurde elementen {#deprecated-asset-upload-api}
+### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
@@ -179,7 +179,7 @@ De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Man
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
 
 
-## Workflows voor verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
+## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
 In [!DNL Experience Manager], is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [activa microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
