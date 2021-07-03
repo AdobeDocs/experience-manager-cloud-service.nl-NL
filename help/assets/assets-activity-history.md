@@ -2,18 +2,17 @@
 title: Activiteitsstroom in tijdlijn
 description: In dit artikel wordt beschreven hoe u activiteitenlogboeken voor elementen op de tijdlijn kunt weergeven.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Elementenrapporten,beheer van bedrijfsmiddelen
+role: Admin,User
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 20%
+source-wordcount: '209'
+ht-degree: 21%
 
 ---
 
-
-# Elementbewerking weergeven in activiteitenstroom {#activity-stream-in-timeline}
+# Logbestanden van elementbewerking weergeven in activiteitsstroom {#activity-stream-in-timeline}
 
 Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in [!DNL Experience Manager Assets], werkt de functie Activiteitenstroom de tijdlijn bij om de activiteit weer te geven.
 
