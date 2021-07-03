@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1583'
 ht-degree: 1%
 
 ---
@@ -105,7 +105,9 @@ De volgende release is gepland voor 15 juli 2021.
 
    ![Standaardweergave instellen in Weergave-instellingen](/help/assets/assets/view-settings-for-defaults.png)
 
-* De downloadfunctionaliteit van Linkshare gebruikt asynchrone downloads die de downloadsnelheid verhogen.
+* De downloadfunctionaliteit van Linkshare gebruikt asynchrone downloads die de downloadsnelheid verhogen. Zie [Gedeelde elementen downloaden via koppelingen delen](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
 
 * Gebruikers kunnen de mappen zoeken en filteren op basis van voorspelden van eigenschappen.
 
