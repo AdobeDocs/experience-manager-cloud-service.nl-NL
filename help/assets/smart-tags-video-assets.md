@@ -2,23 +2,22 @@
 title: Slimme tag toewijzen aan video-elementen
 description: Experience Manager voegt automatisch contextafhankelijke en beschrijvende slimme tags toe aan video's met [!DNL Adobe Sensei].
 feature: Slimme tags,tags toepassen
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
 
 ---
 
-# Slimme tag toewijzen aan uw video-elementen {#video-smart-tags}
+# Slimme tag toewijzen aan video-elementen {#video-smart-tags}
 
 De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] ondersteunt automatische labeling van video-elementen met behulp van kunstmatige intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. De functie voor slimme tags met behulp van [!DNL Adobe Sensei] gebruikt echter kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. Adobe genereert twee sets met tags voor een video. Eén set komt overeen met objecten, scènes en kenmerken in die video. de andere reeks heeft betrekking op handelingen zoals drinken , lopen en joggen .
 
 Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]. U kunt de optie [om geen slimme tags aan video toe te voegen](#opt-out-video-smart-tagging) echter wel toepassen op een map. Video&#39;s worden automatisch van tags voorzien wanneer u nieuwe video&#39;s uploadt of bestaande video&#39;s opnieuw verwerkt. [!DNL Experience Manager] Hiermee maakt u ook de miniaturen en extraheert u de metagegevens van de videobestanden. De slimme tags worden weergegeven in aflopende volgorde van hun [betrouwbaarheidsscore](#confidence-score-video-tag) in element [!UICONTROL Properties].
 
-## Slimme tagvideo&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
+## Slimme tags toepassen op video&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
 Wanneer u [video-elementen](add-assets.md#upload-assets) als [!DNL Cloud Service] uploadt naar [!DNL Adobe Experience Manager], worden de video&#39;s verwerkt. Als de verwerking is voltooid, raadpleegt u het tabblad [!UICONTROL Basic] van de pagina Middelen [!UICONTROL Properties]. Slimme tags worden automatisch onder [!UICONTROL Smart Tags] aan de video toegevoegd. Asset microservices gebruiken [!DNL Adobe Sensei] om deze slimme tags te maken.
 
@@ -66,7 +65,7 @@ De zoekresultaten geven de video-elementen weer op basis van de tag die u hebt o
 
 Uw zoekresultaten zijn een combinatie van video-elementen met gezochte trefwoorden in de metagegevens en de video-elementen die zijn gelabeld met de gezochte trefwoorden. De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden echter eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. Zie [Zoekresultaten met slimme tags](smart-tags.md#understand-search) voor meer informatie. [!DNL Experience Manager] 
 
-## Slimme videolabels {#moderate-video-smart-tags} modereren
+## Slimme videolabels modereren {#moderate-video-smart-tags}
 
 [!DNL Adobe Experience Manager] Hiermee kunt u de slimme tags op de volgende manieren curven:
 
@@ -84,7 +83,7 @@ Zie [Slimme tags beheren](smart-tags.md#manage-smart-tags-and-searches) voor mee
 >
 >Alle tags die zijn gemodereerd met de stappen in [Slimme tags beheren](smart-tags.md#manage-smart-tags-and-searches) worden niet onthouden bij de opwerking van het element. De originele set labels wordt opnieuw weergegeven.
 
-## Slimme tags voor video {#opt-out-video-smart-tagging} uitschakelen
+## Slimme tags toepassen op video uitschakelen {#opt-out-video-smart-tagging}
 
 Wanneer het automatisch labelen van video&#39;s tegelijkertijd met andere taken voor middelenverwerking wordt uitgevoerd, zoals het maken van miniaturen en het uitnemen van metagegevens, kan dit tijdrovend zijn. Als u de verwerking van elementen wilt versnellen, kunt u de optie Slimme tags toepassen bij het uploaden van video&#39;s op mapniveau uitschakelen.
 
@@ -138,5 +137,5 @@ Om de vertrouwensscoreConfiguratie OSGI aan het project toe te voegen dat aan [!
 >[!MORELIKETHIS]
 >
 >* [Slimme tags beheren en zoeken naar middelen](smart-tags.md#manage-smart-tags-and-searches)
->* [De service Slimme tags toepassen en uw afbeeldingen labelen](smart-tags.md)
+* [De service Slimme tags toepassen en uw afbeeldingen labelen](smart-tags.md)
 
