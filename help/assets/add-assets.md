@@ -2,16 +2,16 @@
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
 feature: Middelenbeheer, uploaden
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 0%
 
 ---
 
-# Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+# Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager Assets] accepteert veel typen digitale elementen van vele bronnen. Het slaat de binaire getallen en gemaakte uitvoeringen op, kan activa verwerken gebruikend een verscheidenheid van werkschema en de diensten [!DNL Adobe Sensei], staat voor distributie door vele kanalen over vele oppervlakten toe.
 
@@ -118,7 +118,7 @@ In het dialoogvenster [!UICONTROL Upload Assets] kunt u lange namen opgeven voor
 * ongeldige tekens voor elementbestandsnaam `* / : [ \\ ] | # % { } ? &`
 * ongeldige tekens voor elementmapnaam `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Elementen voor uploaden in bulk {#bulk-upload}
+## Bulkupload-elementen {#bulk-upload}
 
 De grote leverancier van bedrijfsmiddelen kan een zeer groot aantal bedrijfsmiddelen efficiënt verwerken. Een grootschalige inname is echter niet alleen een grote bestandsstortplaats of een tijdelijke migratie. Voor een grootschalig project om een zinvol project te zijn dat uw bedrijfsdoel dient en efficiënt is, plant de migratie en leidt de middelenorganisatie. Alle ingesties zijn verschillend zo in plaats van generaliserend, factor in de genuanceerde bewaarplaats samenstelling en bedrijfsbehoeften. Hieronder volgen enkele overkoepelende suggesties voor het plannen en uitvoeren van bulkopname:
 
@@ -132,7 +132,7 @@ Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende 
 * [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
 * [Gereedschap](#asset-bulk-ingestor) voor bulkinvoer: Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij de implementatie  [!DNL Experience Manager].
 
-### Hulpmiddel {#asset-bulk-ingestor} voor het bulkmiddel
+### Hulpmiddel voor het bulkmiddel {#asset-bulk-ingestor}
 
 Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken. Bekijk een videodemo van de configuratie en opname.
 
@@ -207,7 +207,7 @@ Daarnaast zijn de volgende tabbladen beschikbaar als [!DNL Dynamic Media] is ing
 
 Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in **[!UICONTROL Processing Profile]** kolom.
 
-## Elementen uploaden of invoegen met behulp van API&#39;s {#upload-using-apis}
+## Elementen uploaden of toevoegen met API&#39;s {#upload-using-apis}
 
 Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [activaupload](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
 
