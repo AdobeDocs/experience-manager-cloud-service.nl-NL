@@ -1,14 +1,13 @@
 ---
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
-translation-type: tm+mt
-source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
+exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1256'
 ht-degree: 10%
 
 ---
-
 
 # Projecten {#projects}
 
@@ -43,7 +42,7 @@ De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 * **Met Actieve** projecties in- en uitschakelen kunt u schakelen tussen alle projecten en alleen de actieve projecten.
 * **Toon de** Kijken van de Statistieken u projectstatistieken betreffende taakvoltooiing zien.
 
-## Projecttegels {#project-tiles}
+## Projectblokken {#project-tiles}
 
 Met Projecten, associeert u verschillende soorten informatie met uw projecten. Deze worden **Tegels** genoemd. Elk van de tegels en het soort informatie dat ze bevatten, wordt in deze sectie beschreven.
 
@@ -157,7 +156,7 @@ Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, c
 AEM schepen met drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
-* Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het omvat ook twee workflows met betrekking tot media-inhoud - Verzoek om kopie (voor het aanvragen en reviseren van tekst) en Fotoopname van product (voor het beheren van productgerelateerde fotografie)
+* Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het vraagt ook om een Copy-workflow om tekst aan te vragen en te bekijken.
 * A [translatieproject](/help/sites-cloud/administering/translation/overview.md) - Een referentiemonster voor het beheer van activiteiten met betrekking tot vertalingen. Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers). Het omvat twee werkschema&#39;s die in het gebruikersinterface van Workflows worden betreden.
 
 Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaar aan u met name rond gebruikersrollen en werkschema&#39;s.
@@ -174,7 +173,7 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 | Rol | Beschrijving | Machtigingen | Groepslidmaatschap |
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
-| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa; rechten voor het uploaden van een opnamelijst, fotoopname en het controleren en goedkeuren van elementen; schrijfmachtigingen voor /etc/commerce; machtiging wijzigen voor een specifiek project | werkstroom-gebruikersgroep |
+| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa; rechten om een opnamelijst te uploaden en elementen te controleren en goed te keuren; schrijfmachtigingen voor /etc/commerce; machtiging wijzigen voor een specifiek project | werkstroom-gebruikersgroep |
 | Eigenaar | Een gebruiker met deze rol kan een project initiëren. Een eigenaar kan een project tot stand brengen, het werk in een project in werking stellen, en ook goedgekeurde activa naar de omslag van de Productie verplaatsen. Hoewel alle andere taken in het project ook door de eigenaar kunnen worden bekeken en worden uitgevoerd. | Schrijfmachtigingen op `/etc/commerce` | `dam-users` groep (om een project te kunnen tot stand brengen) project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen) |
 
 >[!NOTE]
