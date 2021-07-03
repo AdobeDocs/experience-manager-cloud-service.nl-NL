@@ -3,16 +3,15 @@ title: Verzamelingen digitale middelen beheren
 description: Begrijp het concept van inzameling in de Activa van Adobe Experience Manager. Leer hoe u verzamelingen kunt beheren, bewerken en verzamelen met andere gebruikers.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Verzamelingen, beheer van bedrijfsmiddelen
+role: User
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2247'
 ht-degree: 18%
 
 ---
-
 
 # Verzamelingen beheren {#manage-collections}
 
@@ -38,7 +37,7 @@ Tik of klik op het logo van de Experience Manager om het **[!UICONTROL Collectio
 
 U kunt een inzameling of met [statische verwijzingen](#create-a-collection-with-static-references) of gebaseerd op een [onderzoek op criteria-gebaseerde filter](#create-a-smart-collection) tot stand brengen. U kunt ook een verzameling maken van een lichtbak.
 
-### Een verzameling maken met statische verwijzingen {#create-a-collection-with-static-references}
+### Een verzameling met statische verwijzingen maken {#create-a-collection-with-static-references}
 
 U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzameling met verwijzingen naar elementen, mappen, verzamelingen, centrifuges en afbeeldingssets.
 
@@ -160,7 +159,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 1. Wijzig de verzamelingsinstellingen op de pagina **[!UICONTROL Collection Settings]**. Wijzig bijvoorbeeld de verzamelingstitel, beschrijvingen, leden, en machtigingen zoals die in [Verzamelingen toevoegen](#create-a-collection) worden besproken.
 1. Tik of klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
-## Een verzameling {#delete-a-collection} verwijderen
+## Een verzameling verwijderen {#delete-a-collection}
 
 1. Selecteer een of meer verzamelingen in de console Verzamelingen en tik op het pictogram Verwijderen op de werkbalk.
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Delete]** om de verwijderactie te bevestigen.
@@ -169,7 +168,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
    >
    >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#saved-searches) te verwijderen.[
 
-## Een verzameling {#download-a-collection} downloaden
+## Een verzameling downloaden {#download-a-collection}
 
 Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
 
@@ -245,7 +244,7 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 1. Tik of klik in de lijst **[!UICONTROL Saved Searches]** op **[!UICONTROL Delete]** naast de slimme verzameling die u wilt verwijderen.
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
 
-## Een workflow uitvoeren op een verzameling {#run-a-workflow-on-a-collection}
+## Een workflow op een verzameling uitvoeren {#run-a-workflow-on-a-collection}
 
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
