@@ -1,14 +1,13 @@
 ---
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 12%
 
 ---
-
 
 # Werken met projectworkflows {#working-with-project-workflows}
 
@@ -25,7 +24,6 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 |  | **Eenvoudig project** | **Mediaproject** | **Omzettingsproject** |
 |---|:-:|:-:|:-:|
 | Verzoek om kopie |  | x |  |
-| Fotofoto van product |  | x |  |
 | Projectgoedkeuring | x |  |  |
 | Verzoek starten | x |  |  |
 | Openingspagina aanvragen | x |  |  |
@@ -75,7 +73,7 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
 
    ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
-## Verzoek om werkstroom starten {#request-launch-workflow}
+## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
 Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
@@ -86,6 +84,6 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 1. Klik **Maken**. De workflow wordt gestart. De workflow wordt weergegeven in de lijst **Workflows** (klik op ellipsen **..** op de **Workflows**-tegel voor toegang tot deze lijst).
 
-## Workflow voor het kopiëren van talen maken (en vertalen) voor elementen {#create-and-translate-language-copy-workflow-for-assets}
+## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
 
 De workflows **Taalkopie maken** en **Taalkopie maken en vertalen** worden uitgebreid besproken bij het maken van taalkopieën voor assets.
