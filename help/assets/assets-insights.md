@@ -3,16 +3,16 @@ title: Assets Insights
 description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 1%
 
 ---
 
-# Elementen {#asset-insights}
+# Assets Insights {#asset-insights}
 
 Met de functie voor beperkte informatie kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
 
@@ -26,7 +26,7 @@ Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor ac
 >
 >Inzichten worden ondersteund en alleen voor afbeeldingen verstrekt.
 
-## Statistieken weergeven voor een afbeelding {#viewing-statistics-for-an-image}
+## Statistieken voor een afbeelding weergeven {#viewing-statistics-for-an-image}
 
 U kunt de elementinzichten van de metagegevenspagina weergeven.
 
@@ -63,7 +63,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## Samengevoegde statistieken weergeven voor afbeeldingen {#viewing-aggregate-statistics-for-images}
+## Samengevoegde statistieken voor afbeeldingen weergeven {#viewing-aggregate-statistics-for-images}
 
 U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
 
@@ -85,7 +85,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## Elementeninzichten configureren {#configure-asset-insights}
+## Elementengegevens configureren {#configure-asset-insights}
 
 [!DNL Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om ActivaInzichten toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren.
 
