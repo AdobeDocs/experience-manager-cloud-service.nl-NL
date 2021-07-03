@@ -4,9 +4,9 @@ description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Exper
 contentOwner: AG
 mini-toc-levels: 1
 feature: Middelenbeheer, metagegevens
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 3%
@@ -68,7 +68,7 @@ De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsd
 
 De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er worden dus standaarden ingesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken. [!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
 
-## Coderingsstandaarden {#encoding-standards}
+## Coderingsnormen {#encoding-standards}
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
 
