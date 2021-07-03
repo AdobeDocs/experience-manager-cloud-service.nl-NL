@@ -3,9 +3,9 @@ title: Elementen, mappen en verzamelingen distribueren en delen
 description: Distribueer uw digitale elementen met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Middelenbeheer, Samenwerking, Asset Distribution
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -170,7 +170,7 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Desktophandelingen inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
+### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
 Vanuit de [!DNL Assets]-gebruikersinterface in een browser kunt u de middelenlocaties verkennen of de middelen uitchecken en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [Desktopacties in  [!DNL Assets] Webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
 
