@@ -2,24 +2,23 @@
 title: Beheer [!DNL Adobe Stock] middelen in [!DNL Assets].
 description: Zoek, haal, vergunning, en beheer [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
-feature: Search,Adobe Stock
-role: Administrator,Business Practitioner
+feature: Zoeken,Adobe Stock
+role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-translation-type: tm+mt
-source-git-commit: 0da8eb0eac0c58b5212aa264c9042523460e474e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Stock] middelen gebruiken in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+# [!DNL Adobe Stock]-elementen gebruiken in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
 Organisaties kunnen hun [!DNL Adobe Stock]-ondernemingsplan integreren met [!DNL Experience Manager Assets] om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van [!DNL Experience Manager].
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten. [!DNL Experience Manager] gebruikers kunnen snel  [!DNL Adobe Stock] elementen zoeken, voorvertonen en licentiëren die zijn opgeslagen in  [!DNL Experience Manager], zonder de  [!DNL Experience Manager] interface te verlaten.
 
-## [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock} integreren
+## [!DNL Experience Manager] en [!DNL Adobe Stock] integreren {#integrate-aem-and-adobe-stock}
 
 Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock] toe te staan, creeer een configuratie IMS en een [!DNL Adobe Stock] configuratie in [!DNL Experience Manager].
 
@@ -27,7 +26,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock] toe te st
 >
 >Alleen [!DNL Experience Manager]-beheerders en [!DNL Admin Console]-beheerders voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten vereist zijn.
 
-### Een IMS-configuratie {#create-an-ims-configuration} maken
+### Een IMS-configuratie maken {#create-an-ims-configuration}
 
 1. Navigeer in de gebruikersinterface [!DNL Experience Manager] naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. U kunt een bestaand certificaat opnieuw gebruiken of **[!UICONTROL Create new certificate]** selecteren.
@@ -52,7 +51,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock] toe te st
 >
 >Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren. Als u het deelvenster vanaf de startpagina van de Experience Manager wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
 
-## [!DNL Adobe Stock]-middelen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
+## [!DNL Adobe Stock]-elementen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 
 Met behulp van deze mogelijkheid kunnen organisaties hun gebruikers toestaan te werken met [!DNL Adobe Stock] middelen in [!DNL Experience Manager Assets]. Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers zoeken in [!DNL Adobe Stock]-middelen en een licentie voor de vereiste middelen aanschaffen.
 
@@ -64,7 +63,7 @@ Zodra een [!DNL Adobe Stock] element in [!DNL Experience Manager] vergunning wor
 
 **A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
 
-### Elementen {#find-assets} zoeken
+### Elementen zoeken {#find-assets}
 
 Uw [!DNL Experience Manager] gebruikers, kunnen activa in zowel [!DNL Experience Manager] als [!DNL Adobe Stock] zoeken. Wanneer de zoeklocatie niet beperkt is tot [!DNL Adobe Stock], worden de zoekresultaten van [!DNL Experience Manager] en [!DNL Adobe Stock] weergegeven.
 
@@ -100,7 +99,7 @@ Gebruikers kunnen [!DNL Adobe Stock]-middelen in licentie geven door gebruik te 
 
 *Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van  [!DNL Adobe Stock] middelen in  [!DNL Experience Manager Assets].*
 
-### Toegang tot metagegevens en elementeigenschappen {#access-metadata-and-asset-properties}
+### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
 Gebruikers kunnen de metagegevens openen en voorvertonen, inclusief de metagegevenseigenschappen [!DNL Adobe Stock] voor de elementen die zijn opgeslagen in [!DNL Experience Manager], en **[!UICONTROL License References]** toevoegen voor een element. De updates voor de licentieverwijzing worden echter niet gesynchroniseerd tussen [!DNL Experience Manager]- en [!DNL Adobe Stock]-website.
 
