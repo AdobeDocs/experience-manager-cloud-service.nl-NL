@@ -3,9 +3,9 @@ title: Elementen downloaden
 description: Download elementen van [!DNL Adobe Experience Manager Assets] en schakel de downloadfunctionaliteit in of uit.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%
@@ -31,7 +31,7 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Elementen downloaden via [!DNL Experience Manager]-interface {#download-assets}
+## Elementen downloaden met de interface [!DNL Experience Manager] {#download-assets}
 
 De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk. De grote bestanden worden asynchroon gedownload en [!DNL Experience Manager] geeft via meldingen in het Postvak IN aan dat de bestanden zijn ingevuld. Zie [Understanding [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -96,7 +96,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## Subserver {#disable-asset-download-servlet} uitschakelen
+## Asset Download-server uitschakelen {#disable-asset-download-servlet}
 
 Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het even welke DoS-gelijkaardige risico&#39;s te verhinderen. `Asset Download Servlet` kan op [!DNL Experience Manager] auteur en publiceer instanties worden onbruikbaar gemaakt door de configuratie van de verzender bij te werken om om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
