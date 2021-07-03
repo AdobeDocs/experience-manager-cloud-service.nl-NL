@@ -2,11 +2,10 @@
 title: Digital Rights Management in [!DNL Assets]
 description: Leer hoe u de verloopstatus van elementen en informatie voor gelicentieerde elementen beheert in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,DRM
+feature: Middelenbeheer,DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 7%
@@ -15,7 +14,7 @@ ht-degree: 7%
 
 # Digital Rights Management voor elementen {#digital-rights-management-in-assets}
 
-Digitale middelen zijn vaak gekoppeld aan een licentie die de gebruiksvoorwaarden en -duur bepaalt. Omdat [!DNL Adobe Experience Manager Assets] volledig geïntegreerd is met het [!DNL Experience Manager]-platform, kunt u op efficiënte wijze informatie over de vervaldatum van bedrijfsmiddelen en de status van bedrijfsmiddelen beheren. U kunt ook licentiegegevens aan elementen koppelen.
+Digitale middelen zijn vaak gekoppeld aan een licentie die de gebruiksvoorwaarden en -duur bepaalt. Omdat [!DNL Adobe Experience Manager Assets] volledig geïntegreerd is met het [!DNL Experience Manager] platform, kunt u efficiënt informatie over de vervaldatum van activa en activa staten beheren. U kunt ook licentiegegevens aan elementen koppelen.
 
 ## Vervaldatum van element {#asset-expiration}
 
@@ -125,7 +124,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 >
 >Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager]-releases poort, raadt Adobe u aan deze pagina&#39;s op te slaan onder `/apps/settings/dam/drm/licenses` of `/conf/*/settings/dam/drm/licenses`.
 
-### Met DRM beveiligde middelen downloaden {#downloading-drm-assets}
+### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 
 1. Selecteer in de kaartweergave de elementen die u wilt downloaden en klik op **[!UICONTROL Download]**.
 1. Selecteer op de pagina **[!UICONTROL Copyright Management]** de asset die u uit de lijst wilt downloaden.
