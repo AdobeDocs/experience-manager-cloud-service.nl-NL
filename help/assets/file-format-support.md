@@ -2,18 +2,17 @@
 title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Middelenbeheer, uitvoeringen
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 5%
 
 ---
 
-# [!DNL Assets] ondersteunde bestandsindelingen  {#supported-file-formats}
+# [!DNL Assets] ondersteunde bestandsindelingen {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] als a  [!DNL Cloud Service] ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
@@ -107,7 +106,7 @@ Zie ook [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/as
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] formaten  {#camera-raw-formats}
+## [!DNL Camera RAW] formaten {#camera-raw-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -159,7 +158,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | PPT | - | - | - | ✓ | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
-| TTF | - | ✓ | - | ✓ | ✓ |
+| RTF | - | ✓ | - | ✓ | ✓ |
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -233,5 +232,5 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 >[!MORELIKETHIS]
 >
 >* [Verwerking van bedrijfsmiddelen met behulp van asset-microservices](asset-microservices-overview.md)
->* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
