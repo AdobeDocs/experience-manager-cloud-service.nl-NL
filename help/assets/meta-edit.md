@@ -2,16 +2,15 @@
 title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen vindt u in [!DNL Experience Manager Assets] een aantal manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metagegevens
+role: User,Admin
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '412'
 ht-degree: 8%
 
 ---
-
 
 # Metagegevens bewerken of toevoegen {#how-to-edit-or-add-metadata}
 
@@ -19,7 +18,7 @@ Metagegevens zijn aanvullende informatie over het element die kan worden doorzoc
 
 Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat [!DNL Experience Manager Assets] het niet toe om ad-hocnieuwe eigenschappen voor metagegevens toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
 
-## Metagegevens voor een element {#editing-metadata-for-an-asset} bewerken
+## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
 Metagegevens bewerken:
 
@@ -45,7 +44,7 @@ Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven 
 
 Zie [Formulieren met metagegevens bewerken](metadata-schemas.md#edit-metadata-schema-forms) voor meer informatie over het bewerken van het schema voor metagegevens.
 
-## Een aangepaste naamruimte registreren in AEM {#registering-a-custom-namespace-within-aem}
+## Een aangepaste naamruimte registreren binnen AEM {#registering-a-custom-namespace-within-aem}
 
 U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
