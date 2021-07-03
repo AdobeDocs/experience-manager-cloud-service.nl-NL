@@ -2,18 +2,17 @@
 title: Elementen in mappen en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Collections,Collaboration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Verzamelingen,Samenwerking
+role: User
+exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 20%
 
 ---
 
-
-# Elementen in mappen en verzamelingen {#review-folder-assets-and-collections} controleren
+# Elementen in mappen en verzamelingen controleren {#review-folder-assets-and-collections}
 
 Met Adobe Experience Manager Assets kunt u workflows voor ad-hocrevisie instellen voor elementen in een map of een verzameling. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
@@ -21,7 +20,7 @@ Nadat u de middelen hebt gedeeld, kunnen revisoren deze goedkeuren of afwijzen. 
 
 Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), ontvangt u een bericht van de revisievoltooiing.
 
-## Een revisietaak maken voor mappen {#creating-a-review-task-for-folders}
+## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
 1. Tik of klik op het pictogram **[!UICONTROL Create Review Task]** op de werkbalk om de pagina **[!UICONTROL Review Task]** te openen. Als u het pictogram niet ziet op de werkbalk, tikt of klikt u op **[!UICONTROL More]** en vervolgens selecteert u het pictogram.
@@ -69,7 +68,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## Een overzichtstaak maken voor verzamelingen {#creating-a-review-task-for-collections}
+## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
 1. Tik of klik op het pictogram **[!UICONTROL Create Review Task]** op de werkbalk om de pagina **[!UICONTROL Review Task]** te openen. Als u het pictogram niet ziet op de werkbalk, tikt of klikt u op **[!UICONTROL More]** en vervolgens selecteert u het pictogram.
@@ -109,4 +108,3 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    **Lijstweergave**
 
    ![collection_reviewstatus listview](assets/collection_reviewstatuslistview.png)
-
