@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '1004'
+ht-degree: 0%
 
 ---
 
@@ -66,17 +66,19 @@ Voer de volgende stappen uit om elementen te downloaden:
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
-## Download assets shared using link sharing {#link-share-download}
+## Elementen downloaden die via koppelingen delen worden gedeeld {#link-share-download}
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+>[!NOTE]
+>
+>Deze functionaliteit is beschikbaar in het pre-releasekanaal van de Experience Manager.
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich eerst hoeven aan te melden bij [!DNL Assets]. Als u een URL wilt genereren om elementen te delen, gebruikt u de [functionaliteit Delen koppelen](/help/assets/share-assets.md#sharelink).
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+Wanneer gebruikers elementen downloaden van gedeelde koppelingen, gebruikt [!DNL Assets] een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor zeer grote downloads wordt het downloaden afgekapt in bestanden van 100 GB.
 
-![Download inbox](assets/download-inbox.png)
--->
+In het Postvak IN wordt de verwerkingsstatus van elk archief weergegeven. Zodra de verwerking is voltooid, kunt u de archieven downloaden van inbox.
+
+![Postvak IN downloaden](assets/download-inbox.png)
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
