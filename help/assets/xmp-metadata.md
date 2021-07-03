@@ -3,9 +3,9 @@ title: XMP-metadata
 description: Meer informatie over de metagegevensstandaard van de XMP (Extensible Metadata Platform) voor metagegevensbeheer. Deze wordt door AEM gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 feature: Metagegevens
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 16%
@@ -49,7 +49,7 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 >
 >XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64`.
 
-### XMP kernconcepten {#xmp-core-concepts}
+### XMP kernbegrippen {#xmp-core-concepts}
 
 **Naamruimten en schema&#39;s**
 
@@ -88,7 +88,7 @@ In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL T
 >
 >De functie voor terugschrijven is standaard niet ingeschakeld in [!DNL Assets]. Zie hoe te [toelaten meta-gegevensschrijver](#enable-xmp-writeback). MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
-### Terugschrijven XMP {#enable-xmp-writeback} inschakelen
+### Terugschrijven XMP inschakelen {#enable-xmp-writeback}
 
 [!UICONTROL DAM Metadata Writeback] wordt gebruikt om de metagegevens van een element te schrijven. Voer een van de volgende drie methoden uit om terugschrijven in te schakelen:
 
