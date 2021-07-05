@@ -3,9 +3,9 @@ sub-product: Inhoud en handel AEM als Cloud Service
 user-guide-title: Inhoud en handel AEM als Cloud Service
 breadcrumb-title: Handleiding voor AEM inhoud en handel
 user-guide-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager als Cloud Service te gebruiken en te beheren.
-source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
+source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '109'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ ht-degree: 1%
       + [CIF-componenten opmaken](customizing/style-cif-component.md)
       + [CIF-componenten aanpassen](customizing/customize-cif-components.md)
       + [CIF-cataloguskiezers gebruiken](customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migratie](migration.md)
 + [Veelgestelde vragen](faq.md)
