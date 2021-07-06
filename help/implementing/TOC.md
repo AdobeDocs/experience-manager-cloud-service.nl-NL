@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '885'
 ht-degree: 30%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 30%
    + [Logboekregistratie](developing/introduction/logging.md)
    + [Configuraties en de Configuratiebrowser](developing/introduction/configurations.md)
    + [Technische stichtingen AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [API-referentiematerialen](/help/implementing/developing/reference-materials.md)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
    + Volledige ontwikkeling van AEM{#full-stack}
@@ -103,7 +103,6 @@ ht-degree: 30%
          + [Een aangepaste voorspellende evaluator implementeren](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Aangepaste foutpagina&#39;s](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
-      + [Java API-richtlijnen](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Beleidsbeheer zonder hoofd {#headless}
       + [Koploos en AEM](developing/headless/introduction.md)
       + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
