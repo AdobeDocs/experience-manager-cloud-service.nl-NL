@@ -1,9 +1,9 @@
 ---
 title: API-referentiematerialen
 description: AEM heeft uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '665'
 ht-degree: 3%
 
 ---
@@ -58,15 +58,15 @@ Als een API door AEM wordt verstrekt, verkies het over Sling, JCR, en OSGi. Als 
 
 AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 
-| API | Beschrijving |
+| Functie | Beschrijving |
 |---|---|
 | [De kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | De gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken |
 | [JSON-exportfunctie](/help/implementing/developing/components/json-exporter.md) | De inhoud van elke AEM pagina leveren in de indeling van het JSON-gegevensmodel |
 | [JSON-export inschakelen voor een component](/help/implementing/developing/components/enabling-json-exporter.md) | JSON-export van componentinhoud genereren op basis van een modellerframework |
-| [Assets](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
-| [Content Fragments HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
-| [Grafiek InhoudsfragmentQL](/help/assets/content-fragments/graphql-api-content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients inschakelen in CMS-implementaties zonder kop |
-| [Content Fragments Assets HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | De exacte indeling van ondersteunde HTTP-elementaanvragen |
+| [Elementen-API](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
+| [HTTP-API voor inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
+| [Content Fragment GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients inschakelen in CMS-implementaties zonder kop |
+| [Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | De exacte indeling van ondersteunde HTTP-elementaanvragen |
 
 ## SPA-specifieke API&#39;s {#spa-apis}
 
