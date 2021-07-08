@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Kader voor integratie in de handel
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
+source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Het volgende fragment kan in een cq:dialog-configuratie worden gebruikt:
 
 Het veld Categoriekiezer ondersteunt de volgende optionele eigenschappen:
 
-- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - staat toe om het categoriekenmerk te kiezen dat door de plukker moet worden teruggekeerd (gebrek = id). De idAndUrlPath &amp; uidAndUrlPath zijn speciale opties die de categorie id/uid en url_path opslaan, gescheiden door een | personage zoals bijvoorbeeld 1|mannen/toppen.
+- selectionId(id, uid, slug, urlPath, idAndUrlPath _(afgekeurd)_, uidAndUrlPath _(afgekeurd)_) - maakt het mogelijk het categoriekenmerk te kiezen dat door de kiezer moet worden geretourneerd (standaard = id).
 - meerdere (true, false) - de selectie van een of meerdere categorieën inschakelen (standaard = false)
 
 Ook worden standaardeigenschappen van diagramvelden zoals `name`, `fieldLabel` of `fieldDescription` ondersteund.
@@ -79,6 +79,6 @@ Ook worden standaardeigenschappen van diagramvelden zoals `name`, `fieldLabel` o
 >Hetzelfde als de `cifproductfield`-component vereist de `cifcategoryfield`-component ook de `cif.shell.picker`-client. Als u een client aan een dialoogvenster wilt toevoegen, kunt u de eigenschap `extraClientlibs` gebruiken. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de documentatie van de Componenten van de AEMKern.
 >[!CAUTION]
 >
->Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid`. We raden u aan `uid` of `slug` als categorie-id te gebruiken. Wij blijven `id` &amp; `idAndUrlPath` slechts voor projecten steunen die versie 1.x gebruiken van de Componenten van de Kern van CIF.
+>Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid`. We raden u aan `uid` of `urlPath` als categorie-id te gebruiken. Wij blijven `id` &amp; `idAndUrlPath` slechts voor projecten steunen die versie 1.x gebruiken van de Componenten van de Kern van CIF.
 
 Een volledig werkend voorbeeld van `cifcategoryfield` kan in [CIF de Componenten van de Kern worden gevonden](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.
