@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -102,12 +102,23 @@ U kunt het rapport filteren op basis van belang, subtype of aantal.
 
 #### Evaluatie van best practices {#best-practices-assessment}
 
-Deze kaart biedt een
+De optie Beoordeling van Beste praktijken verstrekt een beoordeling van uw huidige AEM instantie en verstrekt raad over volgende stappen om AEM beste praktijken goed te keuren. U kunt de volgende informatie bekijken vanaf dit tabblad:
+
+* Overzicht AEM
+* Aangepaste componenten en sjablonen
+* Aanvullende bevindingen
+* Langzame query&#39;s
+* Onderhoudstaken
 
 #### Complexiteit-evaluatie van migratie {#migration-complexity-assessment}
 
-Deze kaart biedt
+De optie voor de beoordeling van de complexiteit van migratie biedt een beoordeling van de complexiteit om de bestaande AEM te migreren naar AEM als Cloud Service. U kunt de volgende informatie bekijken vanaf dit tabblad:
 
+* Overzicht AEM
+* Beoordeling
+* Overwegingen bij migratie van inhoud
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Planning en de Kaart van de Opstelling gebruiken {#planning-setup}
 
@@ -119,10 +130,8 @@ Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling
 
 1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Volgende functies {#whats-next}
 
 Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap via de Implementatiefase.
-
-
