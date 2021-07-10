@@ -4,9 +4,9 @@ description: Deze pagina benadrukt de belangrijkste voordelen van het gebruik va
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -21,3 +21,7 @@ De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 * Biedt een evaluatie in een gebruiksvriendelijke indeling.
 * Hulplijnen en beheert de transitiereis.
 * Verstrekt beste praktijken, relevante hulp, en toegang tot hulpmiddelen om migratietijd te minimaliseren.
+
+## Volgende functies {#whats-next}
+
+Als u eenmaal hebt geleerd wat Cloud Acceleration Manager is, kunt u nu werken en aan de slag met Cloud Acceleration Manager.
