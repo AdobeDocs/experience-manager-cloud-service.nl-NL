@@ -4,15 +4,15 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
 
 
-# Gereedheidsfase in beheer voor cloudversnelling {#readiness-phase-cam}
+# Gereedheidsfase in Cloud Acceleration Manager {#readiness-phase-cam}
 
 Nadat u een project hebt gemaakt in Cloud Acceleration Manager, kunt u nu de beschikbare gereedschappen uitvoeren in de gereedheidsfase.
 
@@ -34,7 +34,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
    >[!NOTE]
    >Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) voor meer informatie.
 
-## Het gebruiken van de Kaart van de Analyse van Beste praktijken {#best-practices-analysis}
+## De kaart van de Analyse van Beste praktijken gebruiken {#best-practices-analysis}
 
 Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te gebruiken:
 
@@ -64,7 +64,7 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
    >[!NOTE]
    >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
 
-### Analyserapport van de analyse van beste praktijken {#analysis-report} bekijken
+### Rapport Analyse van beste praktijken {#analysis-report}
 
 Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de Analyse van Beste praktijken:
 
@@ -79,17 +79,17 @@ Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de An
 
 #### Rapporteigenschappen {#report-properties}
 
-Deze kaart bevat informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum en Adobe Experience Manager (AEM)-gegevens.
+De **Report Properties**-kaart biedt informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum en Adobe Experience Manager (AEM)-gegevens.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
-#### Rapportoverzicht {#report-overview}
+#### Overzicht van rapporten {#report-overview}
 
-Deze kaart bevat de bevindingen van het rapport
+Dit **Overzicht van het Rapport** kaart verstrekt de rapportbevindingen, zoals aangetoond in het hieronder cijfer.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Als u op dit rapport klikt, wordt het tabblad **Rapport** geopend, zoals in de onderstaande afbeelding wordt getoond.
+Als u op dit rapport klikt, wordt het tabblad **Rapport** geopend.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -104,12 +104,12 @@ U kunt het rapport filteren op basis van belang, subtype of aantal.
 
 Deze kaart biedt een
 
-#### Complexiteit van migratie {#migration-complexity-assessment}
+#### Complexiteit-evaluatie van migratie {#migration-complexity-assessment}
 
 Deze kaart biedt
 
 
-## Planning en de Kaart van de Opstelling {#planning-setup} gebruiken
+## Planning en de Kaart van de Opstelling gebruiken {#planning-setup}
 
 Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling te onderzoeken.
 
@@ -121,7 +121,7 @@ Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap via de Implementatiefase.
 
