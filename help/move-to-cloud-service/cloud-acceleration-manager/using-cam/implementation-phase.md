@@ -4,7 +4,7 @@ description: Deze pagina bevat een overzicht van de implementatiefase in Cloud A
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# Implementatiefase in beheer voor cloudversnelling {#implementation-phase-cam}
+# Implementatiefase in Cloud Acceleration Manager {#implementation-phase-cam}
 
 De uitvoeringsfase omvat:
 
@@ -45,7 +45,7 @@ Volg deze sectie om de activiteitenkaart van de Lokale Ontwikkeling te onderzoek
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
-## Codereflecterende kaart {#code-refactoring} gebruiken
+## Code Refactoring Card gebruiken {#code-refactoring}
 
 De de activiteitenkaart van de Refactoring van de Code verstrekt alle relevante informatie en benadrukt de gebieden van de code refactoring u moet herzien wanneer het bewegen aan AEM als Cloud Service.
 
@@ -63,7 +63,7 @@ Volg deze sectie om de de activiteitenkaart van het Refactoring van de Code te o
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
-## AEM gebruiken als implementatiekaart van de Cloud Service {#aem-as-a-cloud-service-deployment}
+## Het gebruiken van AEM als Kaart van de Plaatsing van de Cloud Service {#aem-as-a-cloud-service-deployment}
 
 AEM als kaart van de Plaatsing van de Cloud Service verstrekt alle relevante inhoud die u zal helpen uw code opstellen om als Cloud Service te AEM.
 
@@ -75,10 +75,10 @@ Volg deze sectie om AEM als activiteitenkaart van de identiteitskaart van de Pla
 
 1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## Inhoudsoverdrachtskaart {#content-transfer} gebruiken
+## Inhoudsoverdrachtkaart gebruiken {#content-transfer}
 
 De activiteitenkaart van de Overdracht van de Inhoud verstrekt begeleiding en overwegingen die zouden moeten worden herzien wanneer het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud om inhoud van uw huidige AEM instantie aan AEM als Cloud Service te bewegen.
 
@@ -90,7 +90,7 @@ Volg deze sectie om de activiteitenkaart van de Overdracht van de Inhoud te onde
 
 1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Controleer de [voorwaarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) en de [beste praktijken en richtlijnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) alvorens het Hulpmiddel van de Overdracht van de Inhoud te gebruiken.
@@ -103,6 +103,6 @@ Als u de grootte van de AEM Repository wilt inschatten, kunt u het rapport Schij
 
 U kunt ook de grootte van specifieke repository paden schatten met de parameter `path`, bijvoorbeeld `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase gebruikt, kunt u nu verdergaan met het evalueren van de volgende stap met de GoLive-fase.
