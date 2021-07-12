@@ -1,16 +1,15 @@
 ---
 title: Wizard Taalkopie
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in AEM.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
-
 
 # Wizard Taalkopie {#language-copy-wizard}
 
