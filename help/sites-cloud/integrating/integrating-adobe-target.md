@@ -2,9 +2,9 @@
 title: Integreren met Adobe Target
 description: 'Integreren met Adobe Target '
 feature: Beheer
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel 
 >
 >Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van het Doel hebben, kan om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken. Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
 
-## Adobe Target-configuratie {#create-configuration} maken
+## Adobe Target-configuratie maken {#create-configuration}
 
 1. Navigeer naar **Tools** → **Cloud Services**.
    ![](assets/cloudservice1.png "NavigationNavigation")
@@ -75,7 +75,7 @@ Ga als volgt te werk om de doelconfiguratie te bewerken:
 
 Ga naar: **Sites** → **Selecteer een sitepagina** → **Eigenschappen** → **Geavanceerd** → **Configuration** → Selecteer de configuratietechnicus.
 
-## Adobe Target op AEM sites integreren met behulp van Adobe starten {#integrate-target-launch}
+## Adobe Target integreren op AEM sites met behulp van Adobe starten {#integrate-target-launch}
 
 AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina&#39;s gebruiken. Doelbibliotheken worden alleen gerenderd met Launch.
 
@@ -132,7 +132,7 @@ In **Rule** bepalen en ordenen wij een opeenvolging van acties, die op plaats wo
 2. In Add Params aan Alle Mboxes voegt het gegevenselement toe dat vroeger wordt gevormd (zie gegevenselement hierboven), aan de parameter die in de mbox vraag zal worden verzonden.
    ![](assets/map_data1.png "MboxActions")
 
-### {#build-publish} maken en publiceren
+### Samenstellen en publiceren {#build-publish}
 
 Raadpleeg deze [pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html) voor meer informatie over het samenstellen en publiceren.
 
