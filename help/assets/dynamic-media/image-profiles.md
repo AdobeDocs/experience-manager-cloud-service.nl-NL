@@ -2,9 +2,9 @@
 title: Dynamic Media-afbeeldingsprofielen
 description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden, slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen.
 feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
-role: Business Practitioner
+role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 6%
@@ -19,7 +19,7 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 >
 >Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
-## Uitsnijdopties {#crop-options}
+## Opties voor uitsnijden {#crop-options}
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
@@ -158,7 +158,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Tik op **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik/klik op **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen met eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen vanuit eigenschappen toepassen op mappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
@@ -166,7 +166,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Een Dynamic Media-afbeeldingsprofiel globaal toepassen {#applying-an-image-profile-globally}
+### Een Dynamic Media-afbeeldingsprofiel wereldwijd toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een omslag, kunt u ook globaal toepassen. Voor inhoud die in Experience Manager Assets in een willekeurige map wordt geüpload, wordt het geselecteerde profiel toegepast.
 
@@ -213,7 +213,7 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Het slimme uitsnijd- of slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Desgewenst kunt u het venster voor slimme uitsnijden in meerdere afbeeldingen *handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.*
 
@@ -278,7 +278,7 @@ U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu 
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen door eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
 1. Tik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
