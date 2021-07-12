@@ -1,9 +1,9 @@
 ---
 title: URL's koppelen aan uw webapplicatie
 description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
-role: Business Practitioner
+role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 9%
@@ -30,9 +30,9 @@ Zie ook [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](respon
 
 Zie ook [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
 
-## Een URL verkrijgen voor een element {#obtaining-a-url-for-an-asset}
+## Een URL ophalen voor een element {#obtaining-a-url-for-an-asset}
 
-U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geplaatst, zodat u deze desgewenst kunt plakken naar de pagina&#39;s van uw website of toepassing.
+U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geland, zodat u deze desgewenst kunt plakken naar pagina&#39;s in uw website of toepassing.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 1. Ga als volgt te werk op de pagina **[!UICONTROL Dynamic Media Cloud Services Settings]**:
 
-   * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde URL-pad later in deze stappen nodig. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
+   * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde pad naar de URL later nodig in deze stappen. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
@@ -206,7 +206,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2 gebruiken om uw Dynamic Media-elementen {#using-http-to-deliver-your-dynamic-media-assets} te leveren
+## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
