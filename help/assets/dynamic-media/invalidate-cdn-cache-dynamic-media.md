@@ -2,16 +2,16 @@
 title: De CDN-cache (Content Delivery Network) ongeldig maken via Dynamic Media
 description: '"Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt."'
 feature: Beheer van bedrijfsmiddelen
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 0%
 
 ---
 
-# De CDN-cache ongeldig maken door middel van Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
+# De CDN-cache ongeldig maken via Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery Network) voor snelle levering aan uw klanten. Wanneer u echter updates van deze elementen uitvoert, wilt u dat deze wijzigingen direct op uw website van kracht worden. Door de CDN-cache te wissen of ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd. U hoeft niet meer te wachten tot de cache verloopt met een TTL-waarde (Time To Live) (de standaardwaarde is tien uur). In plaats daarvan kunt u een aanvraag vanuit de Dynamic Media-gebruikersinterface verzenden om de cache binnen enkele minuten te laten verlopen.
 
