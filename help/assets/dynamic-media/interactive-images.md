@@ -2,9 +2,9 @@
 title: Interactieve afbeeldingen
 description: Leer hoe u met interactieve afbeeldingen werkt in Dynamic Media.
 feature: Interactieve afbeeldingen
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4210'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Hier volgt een verschuifbare banner met een pop-upvenster in de Snelle weergave.
 
 Zie [Interactieve afbeeldingen in actie](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) op de bovenstaande webpagina.
 
-## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
+## Controleren hoe interactieve afbeeldingsbanners worden gemaakt {#watch-how-interactive-image-banners-are-created}
 
 Bekijk een analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minuten en 33 seconden). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
 
@@ -55,7 +55,7 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 Als u Experience ManagerAssets en Dynamic Media op zichzelf gebruikt, kopieert u de insluitcode naar uw website. Vervolgens integreert u deze met uw bestaande Snelle weergave. Zie [Een interactieve afbeelding integreren met uw website](#integrating-an-interactive-image-with-your-website).
 Als u WCM (Web Content Manager) van derden gebruikt, integreert u de nieuwe interactieve video met de bestaande Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve afbeelding integreren met een bestaande Snelle weergave](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Optioneel) Hotspotvariabelen {#optional-identifying-hotspot-variables} identificeren
+## (Optioneel) Hotspotvariabelen identificeren {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
    U kunt nu een afbeeldingsbanner uploaden.
 
-## Een afbeeldingsbanner {#uploading-an-image-banner} uploaden
+## Een afbeeldingsbanner uploaden {#uploading-an-image-banner}
 
 Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
 
@@ -323,7 +323,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
-## Een interactieve afbeelding integreren met uw website {#integrating-an-interactive-image-with-your-website}
+## Een interactieve afbeelding met uw website integreren {#integrating-an-interactive-image-with-your-website}
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd en de interactieve afbeelding hebt gepubliceerd, kunt u deze toevoegen aan uw websitepagina.
 
@@ -492,6 +492,6 @@ Hier volgt de volledige broncode:
 
 De [definitieve demowebsite met de volledig geïntegreerde interactieve afbeelding](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## Snelle weergaven gebruiken om aangepaste pop-ups {#using-quickviews-to-create-custom-pop-ups} te maken
+## Snelle weergaven gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
 Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](/help/assets/dynamic-media/custom-pop-ups.md).
