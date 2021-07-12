@@ -2,16 +2,16 @@
 title: Mixed Media Sets
 description: Leer hoe u met gemengde mediasets werkt in Dynamic Media.
 feature: Gemengde mediasets
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1396'
 ht-degree: 22%
 
 ---
 
-# Mixed Media Sets{#mixed-media-sets}
+# Gemengde mediasets{#mixed-media-sets}
 
 Met gemengde mediasets kunt u afbeeldingen, afbeeldingssets, centrifuges en video&#39;s in één presentatie laten overvloeien.
 
@@ -67,7 +67,7 @@ Indien nodig kunt u [Gemengde Mediasets](#editing-mixed-media-sets) bewerken. Da
 >
 >Zie [Problemen met Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md) oplossen als er problemen optreden bij het maken van sets.
 
-## Elementen {#uploading-assets} uploaden
+## Elementen uploaden {#uploading-assets}
 
 Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor gemengde mediaset. Kies daarom afbeeldingen met deze zoomfunctie voor ogen. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
@@ -165,7 +165,7 @@ U kunt verschillende bewerkingstaken rechtstreeks in de gebruikersinterface uitv
 
 Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md) voor meer informatie over het voorvertonen van gemengde mediasets.
 
-## Gemengde mediasets {#publishing-mixed-media-sets} publiceren
+## Gemengde mediasets publiceren {#publishing-mixed-media-sets}
 
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van gemengde Mediasets.
 
