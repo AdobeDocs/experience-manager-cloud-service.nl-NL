@@ -2,17 +2,16 @@
 title: Aanbevolen MSM-procedures
 description: Leer de beste praktijken die door de Adobe engineering en de adviserende teams worden samengesteld helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
 feature: Beheer van meerdere sites
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-translation-type: tm+mt
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# Beste praktijken MSM {#msm-best-practices}
+# Aanbevolen MSM-procedures {#msm-best-practices}
 
 ## Algemeen {#general}
 
@@ -57,7 +56,7 @@ Om het nesten van componenten te steunen zodat de plaatselijk toegevoegde compon
 >
 >Voeg de eigenschap `cq:isContainer` toe aan de component om deze aan te wijzen als een container.
 
-## Site {#create-site} maken
+## Site maken {#create-site}
 
 U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van actieve kopieën:
 
@@ -90,7 +89,7 @@ Houd bij het maken van taalstramienen rekening met het volgende:
 
 Zie [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md) en [Aanbevolen procedures voor vertaling.](/help/sites-cloud/administering/translation/best-practices.md)
 
-## Wijzigingen en rollouts voor structuur {#structure-changes-and-rollouts}
+## Structuurwijzigingen en rollouts {#structure-changes-and-rollouts}
 
 Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders weerspiegeld in een actieve kopie. Dit is afhankelijk van het wijzigingstype:
 
