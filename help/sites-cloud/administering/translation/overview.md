@@ -1,18 +1,17 @@
 ---
 title: Inhoud vertalen voor meertalige sites
 description: Bekijk een overzicht van het vertalen van inhoud voor meertalige sites.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
-
-# Inhoud vertalen voor meerdere sites {#translating-content-for-multilingual-sites}
+# Inhoud vertalen voor meertalige sites {#translating-content-for-multilingual-sites}
 
 Automatiseer de vertaling van pagina-inhoud en -elementen om meertalige websites te maken en te onderhouden. Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met AEM en creeert projecten voor het vertalen van inhoud in veelvoudige talen. AEM ondersteunt workflows voor het vertalen van mensen en machines.
 
