@@ -1,22 +1,21 @@
 ---
 title: Conflicten bij rollout
 description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beheren en oplossen.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer van meerdere sites
+role: Admin
+exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 1%
 
 ---
 
-
-# Uitrolconflicten {#msm-rollout-conflicts}
+# Conflicten bij rollout {#msm-rollout-conflicts}
 
 Er kunnen conflicten optreden als er nieuwe pagina&#39;s met dezelfde paginanaam worden gemaakt in zowel de vertakking Verfafdruk als een afhankelijke vertakking Live kopie. Dergelijke conflicten moeten bij de uitrol worden afgehandeld en opgelost.
 
-## Conflictverwerking {#conflict-handling}
+## Conflictbehandeling {#conflict-handling}
 
 Wanneer conflicterende pagina&#39;s wel bestaan (in de vertakkingen Bladeren en Actieve kopie), kunt u met MSM definiëren hoe (of zelfs als) deze moeten worden verwerkt.
 
@@ -53,7 +52,7 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
 | Waarde | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Opmerking |  | Handmatig gemaakt in de vertakking Live kopie | bevat de inhoud van de pagina `child-level-1` die handmatig is gemaakt in de vertakking Live kopie |
 
-## Uitrolbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
+## Rolloutbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
@@ -116,7 +115,7 @@ Aangepaste conflicthandlers kunnen:
    * **De** Rankingdefinitie van de dienst bepaalt de orde met betrekking tot andere conflictmanagers (  `service.ranking`).
       * De standaardwaarde is `0`.
 
-### Gedrag wanneer Conflict verwerken wordt gedeactiveerd {#behavior-when-conflict-handling-deactivated}
+### Gedrag wanneer Conflict afhandelen is gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
 Als u handmatig [conflictafhandeling deactiveert, voert ](#rollout-manager-and-conflict-handling) AEM geen actie op conflicterende pagina&#39;s. Niet-conflicterende pagina&#39;s worden naar behoren geïmplementeerd.
 
@@ -143,6 +142,6 @@ In dit geval heeft Live Copy voorrang. De pagina `/b` wordt niet gekopieerd en d
 | Waarde | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Opmerking |  | Geen wijziging | Geen wijziging |
 
-### Servicerendeclaraties {#service-rankings}
+### Servicebeoordelingen {#service-rankings}
 
 De [OSGi](https://www.osgi.org/) de dienstrangschikking kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.
