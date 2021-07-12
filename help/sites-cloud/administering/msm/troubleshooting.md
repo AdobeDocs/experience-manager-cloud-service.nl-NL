@@ -1,27 +1,26 @@
 ---
 title: Problemen met MSM en veelgestelde vragen oplossen
 description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwesties problemen op te lossen en antwoorden te krijgen de gemeenschappelijkste MSM-verwante vragen.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer van meerdere sites
+role: Admin
+exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
+# Problemen met MSM en veelgestelde vragen oplossen {#troubleshooting-msm}
 
-# Problemen met MSM oplossen en veelgestelde vragen {#troubleshooting-msm}
-
-## Problemen in eerste stappen oplossen {#first-steps}
+## Eerste stappen voor probleemoplossing {#first-steps}
 
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
 * Controleer [Veelgestelde vragen MSM](#faq) aangezien uw problemen of vragen daar reeds kunnen worden opgelost.
 * Controleer [MSM best practices article](best-practices.md) aangezien een aantal tips daar wordt aangeboden samen met verduidelijkingen van een aantal misconcepties.
 
-## Geavanceerde informatie over uw blauwdruk en status van Live kopie {#advanced-info} zoeken
+## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
 MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen worden gevraagd. Deze worden gebruikt door UI maar kunnen ook direct worden gevraagd om direct extra gecomputeriseerde MSM statussen voor uw pagina&#39;s te zien:
 
@@ -32,7 +31,7 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 
 Die servlets produceren de berichten van het Logboek van de FOUTOPSPORING door het `com.day.cq.wcm.msm` registreerapparaat dat ook nuttig kan zijn.
 
-## MSM-specifieke informatie controleren in de dataopslag {#checking-repo}
+## MSM-specifieke informatie in de gegevensopslagruimte controleren {#checking-repo}
 
 De vroegere servlets teruggekeerde gegevens verwerkte die informatie op de MSM-specifieke knopen en de mixins wordt gebaseerd. De informatie wordt op de volgende manier in de opslagplaats opgeslagen.
 
