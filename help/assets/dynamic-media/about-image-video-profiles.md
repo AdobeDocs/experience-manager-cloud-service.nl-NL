@@ -2,9 +2,9 @@
 title: Informatie over Dynamic Media-afbeeldingsprofielen en videoprofielen
 description: Een afbeeldingsprofiel of videoprofiel is een recept voor de opties die u kunt toepassen op elementen die u uploadt naar een map. U kunt bijvoorbeeld opgeven welke videocodering moet worden toegepast op Dynamic Media-video-elementen die u uploadt. Of welk afbeeldingsprofiel moet worden toegepast op Dynamic Media-afbeeldingselementen om deze op de juiste wijze te kunnen bijsnijden.
 feature: Middelenbeheer, afbeeldingsprofielen, videoprofielen
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Selecteer **[!UICONTROL Start]** en selecteer **[!UICONTROL Confirm]**.
 
-   Selecteer **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang te controleren op de hoofdconsolepagina van [!DNL Experience Manager]. Selecteer een workflow op de pagina Workflowinstanties. Selecteer **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Selecteer **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang te controleren op de hoofdconsolepagina van [!DNL Experience Manager]. Selecteer een workflow op de pagina Workflowinstanties. Selecteer **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, opschorten of hernoemen vanuit dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen (optioneel) {#adjusting-load}
 
