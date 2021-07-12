@@ -2,16 +2,16 @@
 title: Spin Sets
 description: Leer hoe u met centrifuges werkt in Dynamic Media.
 feature: Sets draaien
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 11%
 
 ---
 
-# Spin Sets{#spin-sets}
+# Sets draaien{#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
 
@@ -25,7 +25,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 >
 >Zie [Elementen beheren met de aanraakinterface](/help/assets/manage-digital-assets.md) voor informatie over de gebruikersinterface van Elementen en pas deze toe op een nieuwe map waar de elementen van de afbeeldingsset zijn geüpload.
 
-## Snel starten: Draaisets {#quick-start-spin-sets}
+## Snel starten: Sets draaien {#quick-start-spin-sets}
 
 Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
@@ -148,7 +148,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 1. Klik op **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Spin-sets {#viewing-spin-sets} weergeven
+## Spin-sets weergeven {#viewing-spin-sets}
 
 U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/dynamic-media/config-dm.md). Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* weergegeven in de gebruikersinterface. U hebt op drie verschillende manieren toegang tot sets die zijn gemaakt met voorinstellingen voor batchsets. (Deze methoden zijn ook beschikbaar als u de centrifuges in de gebruikersinterface hebt gemaakt.)
 
@@ -172,7 +172,7 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
-## Spinsets bewerken {#editing-spin-sets}
+## Bewerken van centrifuges {#editing-spin-sets}
 
 U kunt verschillende bewerkingstaken uitvoeren op centrifuges, zoals:
 
@@ -207,10 +207,10 @@ Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebru
 
 1. Klik **[!UICONTROL Save]** wanneer klaar het uitgeven.
 
-## Voorvertoning van centrifuges {#previewing-spin-sets}
+## Voorvertoning van centrifuges weergeven {#previewing-spin-sets}
 
 Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
 
-## Spin-sets {#publishing-spin-sets} publiceren
+## Spin-sets publiceren {#publishing-spin-sets}
 
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
