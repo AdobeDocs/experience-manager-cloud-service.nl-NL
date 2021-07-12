@@ -2,9 +2,9 @@
 title: Interactieve video's
 description: Leer hoe u in Dynamic Media werkt met interactieve video's en schokkende video's.
 feature: Interactieve video's
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 3%
@@ -46,7 +46,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >Als u een interactieve video maakt om een webpagina te starten wanneer een gebruiker op een miniatuurafbeelding tikt, blokkeren sommige apparaten het openen van de pop-upwebpagina. Wijzig in dergelijke gevallen de instelling van de pop-upblokkering op het apparaat. Tik bijvoorbeeld op een Apple iPhone 6 op **[!UICONTROL Settings > Safari > Block Pop-ups]** en schuif het besturingselement naar **[!UICONTROL Off]**. Wanneer u nu een interactieve video afspeelt en op een miniatuur klikt, wordt u gevraagd of u de pop-up wilt openen. Als u akkoord gaat, wordt de webpagina geopend.
 
-### Bekijk hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
+### Controleren hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
 
 Bekijk een analyse op [hoe de interactieve video&#39;s worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minuten en 30 seconden).
 (Hoewel de videoanalyse met Activa op bestelling wordt gemerkt, zijn de principes en de stappen nog van toepassing op Interactive Video in Adobe Experience Manager Assets.)
@@ -92,7 +92,7 @@ Gebruik de insluitcode of URL om uw interactieve video te integreren met uw erva
 Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande Snelle weergave](#integrating-an-interactive-video-with-an-existing-quickview).
    [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## (Optioneel) Variabelen in de Snelle weergave {#optional-identifying-quickview-variables} identificeren
+## (Optioneel) Variabelen van de Snelle weergave identificeren {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
@@ -469,7 +469,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
 
@@ -755,7 +755,7 @@ De laatste demo-website met de volledig geïntegreerde interactieve video ziet e
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Met Snelle weergaven aangepaste pop-upvensters® {#using-quickviews-to-create-custom-pop-ups} maken
+## Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken {#using-quickviews-to-create-custom-pop-ups}
 
 Zie [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
