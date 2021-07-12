@@ -1,18 +1,17 @@
 ---
 title: Console voor live kopiëren
 description: Leer meer over de basisbeginselen van de overzichtsconsole van Live Copy om snel inzicht te krijgen in de status van uw actieve kopieën om inhoud te synchroniseren.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer van meerdere sites
+role: Admin
+exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
 
-
-# Contoverconsole voor live kopiëren {#live-copy-overview-console}
+# Console voor live kopiëren {#live-copy-overview-console}
 
 Met de console **Live Copy Overview** kunt u:
 
@@ -58,7 +57,7 @@ Het **Live Copy-overzicht** kan worden geopend wanneer u eigenschappen van een b
 
 1. Gebruik **Close** om af te sluiten en terug te keren naar de **Sites**-console.
 
-## Het gebruiken van het Levende Overzicht van het Exemplaar {#using-the-live-copy-overview}
+## Het Live Copy-overzicht gebruiken {#using-the-live-copy-overview}
 
 In het venster **Overzicht van actieve kopie** vindt u een overzicht van de status van de actieve kopieën die betrekking hebben op de geselecteerde pagina.
 
@@ -75,7 +74,7 @@ Het **Live Copy-overzicht** kan ook worden gebruikt om handelingen uit te voeren
 1. Open **Live Copy Overview**.
 1. Selecteer de gewenste blauwdruk of pagina Live kopie en de werkbalk wordt bijgewerkt met de beschikbare acties. De [beschikbare acties](overview.md#terms-used) hangen af van het feit of u een [blauwdruk](#actions-for-a-blueprint-page) of [Live Copy](#actions-for-a-live-copy-page) pagina selecteert.
 
-### Handelingen voor een blauwdrukpagina {#actions-for-a-blueprint-page}
+### Handelingen voor een vervagingspagina {#actions-for-a-blueprint-page}
 
 Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
@@ -84,7 +83,7 @@ Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 * **Bewerken**  - Open de pagina met de blauwdruk voor bewerking.
 * **[Uitvoeren](overview.md#rollout-and-synchronize)**  - Een rollout uitvoeren om wijzigingen van de bron naar Live Copy door te voeren.
 
-### Handelingen voor een pagina {#actions-for-a-live-copy-page} van Actieve kopie
+### Handelingen voor een Live Copy-pagina {#actions-for-a-live-copy-page}
 
 Wanneer u een pagina voor Live kopie selecteert, zijn de volgende acties beschikbaar:
 
@@ -98,14 +97,14 @@ Wanneer u een pagina voor Live kopie selecteert, zijn de volgende acties beschik
 * **[Hervatten](creating-live-copies.md#resuming-inheritance-for-a-page)**  - hervat staat u toe om een geschorste verhouding te herstellen.
 * **[Loskoppelen](overview.md#detaching-a-live-copy)**  - Hiermee verwijdert u permanent de live relatie tussen een actieve kopie en de bijbehorende blauwdrukpagina.
 
-## Relatiestatus {#relationship-status}
+## Relationistatiestatus {#relationship-status}
 
 De **Relationship Status** console heeft twee lusjes die een waaier van functionaliteit verstrekken.
 
 * [Relationistatiestatus](#relationship-status-tab)
 * [Live kopie](#live-copy-tab)
 
-### Relatiestatus {#relationship-status-tab}
+### Relationistatiestatus {#relationship-status-tab}
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en Live kopie.
 
