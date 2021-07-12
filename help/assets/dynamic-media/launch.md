@@ -2,9 +2,9 @@
 title: Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch
 description: Meer informatie over de extensie Dynamic Media Viewers voor Platform launch en Dynamic Media Viewers 5.13. Het laat klanten van Adobe Analytics en Platform launch gebeurtenissen en gegevens gebruiken specifiek voor de Kijkers in hun configuratie van de Platform launch.
 feature: Elementrapporten
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6270'
 ht-degree: 9%
@@ -35,7 +35,7 @@ Zie [Adobe extensions](https://experienceleague.adobe.com/docs/launch/using/exte
 * Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de kern, zoals wordt beschreven in [Overzicht bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 * Configuratie opslagduur voor gegevenselementen wordt niet ondersteund voor gegevenselementen met de extensie *Dynamic Media Viewers*. Opslagduur moet worden ingesteld op **[!UICONTROL None]**.
 
-### Gebruik scenario&#39;s voor de integratie {#use-cases-for-the-integration}
+### Gebruik de integratiegevallen {#use-cases-for-the-integration}
 
 Het belangrijkste gebruiksgeval voor de integratie met Experience Platform Launch is klanten die zowel de Activa van de Experience Manager als de Plaatsen van de Experience Manager gebruiken. In dergelijke scenario&#39;s, kunt u opstelling een standaardintegratie tussen uw de auteurknoop en Experience Platform Launch van de Experience Manager, dan uw instantie van Plaatsen met het bezit van het Experience Platform Launch associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
 
@@ -49,13 +49,13 @@ Zie [Dynamic Media-viewers bijhouden met gebruik van ingesloten code](#tracking-
 
 De integratie maakt gebruik van twee aparte en onafhankelijke typen tracering voor Dynamic Media Viewers: *Adobe Analytics* en *Adobe Analytics for Audio and Video*.
 
-### Informatie over tekstspatiëring met Adobe Analytics {#about-tracking-using-adobe-analytics}
+### Over reeksspatiëring in Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
 Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden en handelingen voor het afspelen van video.
 
 In Experience Platform Launch werken de concepten *Data Elements* en *Rules* samen om Adobe Analytics-tracking in te schakelen.
 
-#### Informatie over gegevenselementen in Experience Platform Launch {#about-data-elements-in-adobe-launch}
+#### Over gegevenselementen in Experience Platform Launch {#about-data-elements-in-adobe-launch}
 
 Een gegevenselement in Experience Platform Launch is een benoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of Dynamic Media Viewers-gegevens.
 
@@ -69,7 +69,7 @@ Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van Ex
 
 Zie [Gegevenselementen](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#ui) in de Gids van de Gebruiker van het Experience Platform Launch.
 
-#### Info over Regels in Experience Platform Launch {#about-rules-in-adobe-launch}
+#### Over Regels in Experience Platform Launch {#about-rules-in-adobe-launch}
 
 Een regel in Experience Platform Launch is een agnostische configuratie die drie gebieden bepaalt die omhoog een regel maken: *Gebeurtenissen*, *Voorwaarden* en *Acties*:
 
@@ -129,19 +129,19 @@ Zie [Installatie en installatie van extensies](#installing-and-setup-of-extensio
 
 Momenteel is de ondersteuning voor het bijhouden van video&#39;s beperkt tot alleen &#39;core playback&#39;, zoals beschreven in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 
-## De Dynamic Media Viewers-extensie {#using-the-dynamic-media-viewers-extension} gebruiken
+## De extensie Dynamic Media Viewers gebruiken {#using-the-dynamic-media-viewers-extension}
 
 Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om de kijkers van Dynamic Media met de nieuwe Experience Platform Launch integratie in de Plaatsen van de Experience Manager te volgen en door ingebedcode te gebruiken.
 
-### Dynamic Media-viewers bijhouden in Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
+### Dynamic Media-viewers bijhouden op websites voor Experience Managers {#tracking-dynamic-media-viewers-in-aem-sites}
 
 Om de kijkers van Dynamic Media in de Plaatsen van de Experience Manager te volgen, moeten alle stappen onder [Vormend alle integratiestukken worden vermeld](#configuring-all-the-integration-pieces) sectie worden uitgevoerd. Specifiek, moet u de configuratie IMS en de Configuratie van de Wolk van het Experience Platform Launch tot stand brengen.
 
-Na de juiste configuratie worden gegevens automatisch bijgehouden in Dynamic Media-viewers die u aan een sitepagina toevoegt met een WCM-component die door Dynamic Media wordt ondersteund, naar Adobe Analytics, Adobe Analytics for Video of beide.
+Na de juiste configuratie worden gegevens automatisch bijgehouden naar Adobe Analytics, Adobe Analytics for Video, of naar beide, wanneer u een Dynamic Media-viewer toevoegt aan een sitepagina met een WCM-component die door Dynamic Media wordt ondersteund.
 
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s met behulp van Adobe-sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-### Dynamic Media-viewers bijhouden met de insluitcode {#tracking-dynamic-media-viewers-using-embed-code}
+### Dynamic Media-viewers bijhouden met gebruik van ingesloten code {#tracking-dynamic-media-viewers-using-embed-code}
 
 Klanten die geen gebruik maken van Experience Manager Sites of Dynamic Media-viewers insluiten in webpagina&#39;s buiten Experience Manager Sites, of beide, kunnen de integratie van het Experience Platform Launch nog steeds gebruiken.
 
@@ -163,7 +163,7 @@ Meer over hoe te om de ingebedde codeeigenschap van Experience Manager Dynamic M
 
 ## Referentiegids voor de extensie Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
 
-### Informatie over de configuratie {#about-the-dynamic-media-viewers-configuration} van Dynamic Media Viewers
+### De configuratie van Dynamic Media Viewers {#about-the-dynamic-media-viewers-configuration}
 
 De extensie Dynamic Media Viewer wordt automatisch geïntegreerd met de bibliotheek met Experience Platforms Launch als aan de volgende voorwaarden wordt voldaan:
 
@@ -174,7 +174,7 @@ De extensie Dynamic Media Viewer wordt automatisch geïntegreerd met de biblioth
 
 Bovendien is er een optie om de integratie van Experience Platforms Launch in de viewer expliciet uit te schakelen door de parameter `launch=0` in de configuratie van de viewer op te geven. De standaardwaarde van deze parameter is `1`.
 
-### De Dynamic Media Viewers-extensie {#configuring-the-dynamic-media-viewers-extension} configureren
+### De extensie Dynamic Media Viewers configureren {#configuring-the-dynamic-media-viewers-extension}
 
 De enige configuratieoptie voor de extensie Dynamic Media Viewers is **[!UICONTROL Enable Adobe Media Analytics for Audio and Video]**.
 
@@ -184,7 +184,7 @@ Als u deze optie *inschakelt zonder dat er Adobe Media Analytics for Audio en Vi
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
-### Informatie over gegevenselementen in de extensie Dynamic Media Viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
+### Over Data Elements in de extensie Dynamic Media Viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
 Het enige data-elementtype dat de uitbreiding Dynamische mediaviewers biedt, is **[!UICONTROL Viewer Event]** in de vervolgkeuzelijst **[!UICONTROL Data Element Type]**.
 
@@ -233,7 +233,7 @@ De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuu
 
 Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
 
-### Informatie over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
+### Over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
 In de redacteur van de Regel, voegt de uitbreiding nieuwe configuratieopties voor de redacteur van Gebeurtenissen toe. Ook biedt de editor een optie om handmatig te verwijzen naar gebeurtenisparameters in de Action Editor als een kortzichtige optie in plaats van vooraf geconfigureerde gegevenselementen te gebruiken.
 
@@ -245,7 +245,7 @@ Als deze optie is geselecteerd, wordt de vervolgkeuzelijst **[!UICONTROL Dynamic
 
 ![image2019-8-2_15-13-1](assets/image2019-8-2_15-13-1.png)
 
-#### Informatie over de bewerkingseditor {#about-the-actions-editor}
+#### De Editor voor handelingen {#about-the-actions-editor}
 
 Met de extensie Dynamic Media Viewers kunt u gebeurtenisparameters van Dynamic Media-viewers gebruiken om de variabelen voor de analyse in te delen in de editor Variabelen instellen van de Adobe Analytics-extensie.
 
@@ -501,7 +501,7 @@ Nadat u Experience Platform Launch vormt, zal het volgende opstelling voor de in
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Een eigenschap maken in Experience Platform Launch {#creating-a-property-in-adobe-launch}
+### Eigenschappen maken in Experience Platform Launch {#creating-a-property-in-adobe-launch}
 
 Een bezit in Experience Platform Launch is een genoemde configuratie die al uw montages bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
@@ -518,7 +518,7 @@ Zie ook [Een opstarteigenschap maken](https://experienceleague.adobe.com/docs/la
 
    Klik op de nieuw gemaakte eigenschap en ga verder met *Installatie en installatie van extensions*.
 
-### Installatie en installatie van extensies {#installing-and-setup-of-extensions}
+### Extensies installeren en instellen {#installing-and-setup-of-extensions}
 
 Alle beschikbare extensies in het Experience Platform Launch worden vermeld onder **[!UICONTROL Extensions > Catalog]**.
 
@@ -582,7 +582,7 @@ Zie [Voorbeeldconfiguratie](#sample-configuration) voor een voorbeeldconfigurati
 
 Zie [De extensie Dynamic Media Viewers configureren](#configuring-the-dynamic-media-viewers-extension) voor uitgebreide informatie over de mogelijkheden van de extensie.
 
-### Bibliotheek {#publishing-a-library} publiceren
+### Een bibliotheek publiceren {#publishing-a-library}
 
 Om in de configuratie van het Experience Platform Launch (met inbegrip van Bezit, Uitbreidingen, Regels, en de opstelling van Elementen van Gegevens) te veranderen, moet u *publiceren* dergelijke veranderingen. Het publiceren in Experience Platform Launch wordt uitgevoerd van het Publiceren lusje onder de configuratie van het Bezit.
 
@@ -624,7 +624,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
    >
    >Klik in het publicatiescherm van de bibliotheek op **[!UICONTROL Add All Changed Resources]** en klik vervolgens op **[!UICONTROL Save & Build for Development]**.
 
-#### Bibliotheek verplaatsen via omgevingsniveaus {#moving-a-library-up-through-environment-levels}
+#### Een bibliotheek verplaatsen via omgevingsniveaus {#moving-a-library-up-through-environment-levels}
 
 1. Nadat er een nieuwe bibliotheek is toegevoegd, bevindt deze zich in de ontwikkelomgeving. Klik in het vervolgkeuzemenu van de bibliotheek op **[!UICONTROL Submit for Approval]** om deze naar het niveau van de testomgeving (dat overeenkomt met de kolom Verzenden) te verplaatsen.
 
@@ -663,7 +663,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 * Configuratie van Experience Manager IMS.
 * Configuratie van Experience Platform Launch Cloud.
 
-### Experience Manager-IMS {#configuring-aem-ims} configureren
+### Experience Manager-IMS configureren {#configuring-aem-ims}
 
 1. Klik in de auteur van de Experience Manager op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
@@ -780,7 +780,7 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Experience Platform Launch Cloud configureren voor integratie {#configuring-adobe-launch-cloud-for-the-integration}
+## Cloud van Experience Platform Launch configureren voor integratie {#configuring-adobe-launch-cloud-for-the-integration}
 
 1. Klik in de linkerbovenhoek van de auteur van Experience Manager op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Cloud Services > Experience Platform Launch Configurations]**.
 
