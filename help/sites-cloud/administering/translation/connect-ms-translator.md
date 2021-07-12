@@ -1,16 +1,15 @@
 ---
 title: Verbinding maken met Microsoft Translator
 description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de verpakking om uw vertaalworkflow te automatiseren.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
-
 
 # Verbinding maken met Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -49,7 +48,7 @@ De volgende procedure leidt tot een configuratie van de Vertaler van Microsoft.
 1. Tik of klik op **Connect** om de verbinding te controleren.
 1. Tik of klik op **Opslaan en sluiten**.
 
-## De Microsoft Translator-configuratie voor proefversies van licenties {#upgrading-the-microsoft-translator-trial-license-configuration} bijwerken
+## De configuratie voor proefversies van Microsoft Translator-licenties upgraden {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 De de configuratiepagina&#39;s van de Vertaling van Microsoft verstrekken een geschikte verbinding aan de website van Microsoft voor het verkrijgen van een rekeningsabonnement dat voor productiesystemen adequaat is.
 
@@ -58,7 +57,7 @@ De de configuratiepagina&#39;s van de Vertaling van Microsoft verstrekken een ge
 1. Tik of klik op **Bewerken**.
 1. Tik in het venster **Configuratie bewerken** of klik op **Abonnement upgraden**. Er wordt een Microsoft-webpagina met meer informatie over de service geopend.
 
-## De Microsoft Translator Engine {#customizing-your-microsoft-translator-engine} aanpassen
+## De Microsoft Translator Engine aanpassen {#customizing-your-microsoft-translator-engine}
 
 De de configuratiepagina&#39;s van de Vertaling van Microsoft verstrekken een gemakkelijke verbinding aan de website van Microsoft voor het aanpassen van uw Vertaalmachine van Microsoft.
 
