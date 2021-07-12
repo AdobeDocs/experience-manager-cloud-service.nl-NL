@@ -1,16 +1,15 @@
 ---
 title: Te vertalen inhoud identificeren
 description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Te vertalen inhoud identificeren {#identifying-content-to-translate}
 
@@ -87,7 +86,7 @@ In het volgende voorbeeld wordt de inhoud van alle `text`-eigenschappen omgezet 
 </node>
 ```
 
-## Regelsyntaxis voor het uitnemen van elementen van pagina&#39;s {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntaxis voor het uitnemen van elementen van pagina&#39;s  {#rule-syntax-for-extracting-assets-from-pages}
 
 Gebruik de volgende regelsyntaxis om elementen op te nemen die zijn ingesloten in of waarnaar wordt verwezen vanuit componenten:
 
@@ -106,7 +105,7 @@ In het volgende voorbeeld worden afbeeldingen uit de afbeeldingscomponent geëxt
 <assetNode resourceType="core/wcm/components/image/v2/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## Regels {#overriding-rules} overschrijven
+## Regels overschrijven {#overriding-rules}
 
 Het `translation_rules.xml`-bestand bestaat uit een `nodelist`-element met verschillende onderliggende `node`-elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text`-eigenschappen wordt vertaald, behalve de `/content/mysite/en`-vertakking van pagina&#39;s:
 
@@ -138,7 +137,7 @@ De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text`-eigensc
 <nodelist>
 ```
 
-## UI voor omzettingsregels {#translation-rules-ui}
+## Interface voor vertaalregels {#translation-rules-ui}
 
 Een console is ook beschikbaar voor het vormen van vertaalregels.
 
@@ -187,7 +186,7 @@ Hier is een voorbeeld van resulterende XML wanneer **Is Diep** in UI wordt ongec
 </filter>
 ```
 
-### {#inherit} overnemen
+### erven {#inherit}
 
 **`inherit`** is van toepassing op eigenschappen. Standaard wordt elke eigenschap overgeërfd, maar als u wilt dat een eigenschap niet door het onderliggende domein wordt overgeërfd, kunt u deze eigenschap als onwaar markeren, zodat deze alleen op dat specifieke knooppunt wordt toegepast.
 
@@ -226,7 +225,7 @@ Als u het `translation_rules.xml` dossier uitgeeft, houd een reserveexemplaar in
 >
 >Nadat u het inhoudspakket hebt gemaakt, moet u het pakket elke keer opnieuw samenstellen wanneer u het bestand bewerkt.
 
-## Voorbeeld van omzettingsregels bestand {#example-translation-rules-file}
+## Voorbeeld omzettingsregels-bestand {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
