@@ -1,22 +1,21 @@
 ---
 title: Gekoppelde inhoud
 description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd, toevoegend extra flexibiliteit aan koploze inhoudslevering.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Contentfragmenten
+role: User
+exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 5%
 
 ---
-
 
 # Gekoppelde inhoud{#associated-content}
 
 AEM functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit voor het leveren van inhoud zonder kop door [een reeks elementen te bieden die toegankelijk zijn wanneer het inhoudsfragment op een pagina wordt gebruikt,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
 
-## Gekoppelde inhoud {#adding-associated-content} toevoegen
+## Gekoppelde inhoud toevoegen {#adding-associated-content}
 
 >[!NOTE]
 >
