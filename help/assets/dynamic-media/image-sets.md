@@ -2,16 +2,16 @@
 title: Image Sets
 description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Afbeeldingssets
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 8%
 
 ---
 
-# Image Sets {#image-sets}
+# Afbeeldingssets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
@@ -108,7 +108,7 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 >* Een zwarte, bruine en groene kleurminiatuur.
 
 
-## Afbeeldingssets {#creating-image-sets} maken
+## Afbeeldingssets maken {#creating-image-sets}
 
 U kunt Afbeeldingssets maken via de gebruikersinterface of via de API.
 
@@ -168,7 +168,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Klik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Afbeeldingssets {#viewing-image-sets} weergeven
+## Afbeeldingssets weergeven {#viewing-image-sets}
 
 U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -196,7 +196,7 @@ Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* 
 >
 >U kunt sets weergeven in de gebruikersinterface zoals wordt beschreven in [Afbeeldingssets bewerken](#editing-image-sets).
 
-## Afbeeldingssets {#editing-image-sets} bewerken
+## Afbeeldingssets bewerken {#editing-image-sets}
 
 U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
@@ -238,6 +238,6 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
 
-## Afbeeldingssets {#publishing-image-sets} publiceren
+## Afbeeldingssets publiceren {#publishing-image-sets}
 
 Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
