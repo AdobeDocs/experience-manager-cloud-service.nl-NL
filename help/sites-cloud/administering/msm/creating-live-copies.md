@@ -2,10 +2,9 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op uw site opnieuw te gebruiken.
 feature: Beheer van meerdere sites
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-translation-type: tm+mt
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 U kunt een Live kopie maken van een pagina of configuratie van een blauwdruk om die inhoud op uw site opnieuw te gebruiken. Overerving en synchronisatie beheren, kunt u bepalen hoe wijzigingen in de inhoud worden doorgegeven.
 
-## Configuraties van blauwdrukken beheren {#managing-blueprint-configurations}
+## Browserconfiguraties beheren {#managing-blueprint-configurations}
 
 Een blauwdrukconfiguratie identificeert een bestaande website die u als bron voor één of meerdere Live Copy-pagina&#39;s wilt gebruiken.
 
@@ -42,7 +41,7 @@ Nadat u de blauwdrukconfiguratie creeert, vormt u de volgende eigenschappen:
 
 Wanneer uw blauwdrukconfiguratie wordt gebruikt, kunt u het met een rollout configuratie associëren die bepaalt hoe de Levende Kopieën van de bron/de blauwdruk worden gesynchroniseerd. Zie [De te gebruiken configuraties van de Output specificeren](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Bewegingsconfiguraties maken en bewerken {#creating-editing-blueprint-configurations}
+### Blauwdrukconfiguraties maken en bewerken {#creating-editing-blueprint-configurations}
 
 Vervagingsconfiguraties worden beschouwd als onveranderlijke gegevens en kunnen daarom niet worden bewerkt tijdens runtime. Om deze reden, moeten om het even welke configuratieveranderingen via Git worden opgesteld gebruikend de pijpleiding CI/CD.
 
@@ -50,7 +49,7 @@ Meer informatie vindt u in het artikel [Notable Changes to Adobe Experience Mana
 
 De volgende stappen zijn alleen voor test- en ontwikkelingsdoeleinden beschikbaar voor een beheerder van een lokale ontwikkelingsinstantie. Deze opties zijn niet beschikbaar in een AEMaaCS-cloudinstantie.
 
-#### Lokaal {#creating-a-blueprint-configuration} een blauwdrukconfiguratie maken
+#### Lokaal een blauwdrukconfiguratie maken {#creating-a-blueprint-configuration}
 
 Een blauwdrukconfiguratie maken:
 
@@ -69,7 +68,7 @@ Een blauwdrukconfiguratie maken:
 
 1. **** CreateCreate zal tot de blauwdrukconfiguratie leiden die op uw specificatie wordt gebaseerd.
 
-### Een configuratie van een blauwdruk lokaal bewerken of verwijderen{#editing-or-deleting-a-blueprint-configuration}
+### Een blauwdrukconfiguratie lokaal bewerken of verwijderen{#editing-or-deleting-a-blueprint-configuration}
 
 U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 
@@ -181,9 +180,9 @@ Een actieve kopie van een site maken op basis van een blauwdrukconfiguratie:
 
 Wanneer u een live kopie maakt in de bestaande live kopie (gemaakt met behulp van een blauwdrukconfiguratie), kunt u alle taalkopieën of hoofdstukken invoegen die niet waren opgenomen toen de live kopie werd gemaakt.
 
-## Uw actieve kopie controleren {#monitoring-your-live-copy}
+## Uw Live kopie controleren {#monitoring-your-live-copy}
 
-### De status van een actieve kopie bekijken {#seeing-the-status-of-a-live-copy}
+### De status van een live kopie bekijken {#seeing-the-status-of-a-live-copy}
 
 De eigenschappen van een pagina van Actieve kopie tonen de volgende informatie over Live kopie:
 
@@ -206,17 +205,17 @@ De eigenschappen weergeven:
 
    Zie de sectie [Het Live Copy-overzicht gebruiken](live-copy-overview.md#using-the-live-copy-overview) in de artikel Live Copy-overzichtsconsole voor meer informatie.
 
-### Live kopieën van een vervagingspagina bekijken {#seeing-the-live-copies-of-a-blueprint-page}
+### De actieve kopieën van een vervagingspagina bekijken {#seeing-the-live-copies-of-a-blueprint-page}
 
 De pagina&#39;s van de blauwdruk (die in een blauwdrukconfiguratie van verwijzingen worden voorzien) verstrekken u een lijst van de Levende pagina&#39;s van het Exemplaar die de huidige (blauwdruk) pagina als bron gebruiken. Gebruik deze lijst om actieve kopieën bij te houden. De lijst wordt weergegeven op het tabblad **Blauwdruk** van de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 ![Tabblad Vervagen van pagina-eigenschappen](../assets/live-copy-blueprint-tab.png)
 
-## Uw actieve kopie synchroniseren {#synchronizing-your-live-copy}
+## Live kopie synchroniseren {#synchronizing-your-live-copy}
 
 U kunt uw Live kopie op verschillende manieren synchroniseren.
 
-### Een blauwdruk {#rolling-out-a-blueprint} uitrollen
+### Een blauwdruk uitrollen {#rolling-out-a-blueprint}
 
 Leer een blauwdrukpagina om wijzigingen in de inhoud door te voeren in Live kopieën. Een **Rollout** actie voert de rollout configuraties uit die [op trekker ](live-copy-sync-config.md#rollout-triggers) gebruiken.
 
@@ -244,7 +243,7 @@ Leer een blauwdrukpagina om wijzigingen in de inhoud door te voeren in Live kopi
 
 Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de pagina [***Async Jobs Status**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### Een blauwdruk uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
+#### Een vervaging uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
 1. Selecteer in de **Sites**-console de pagina in de live kopie en open het venster **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (vanuit de werkbalk).
 1. Selecteer de optie **Vervagen** in de lijst om de blauwdrukken weer te geven die aan deze pagina zijn gekoppeld.
@@ -269,7 +268,7 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 
 Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de pagina [**Status van taken synchroniseren**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### Een blauwdruk uitrollen met het actieve-kopieoverzicht {#roll-out-a-blueprint-from-the-live-copy-overview}
+#### Een vervaging uitrollen met het overzicht van Actieve kopie {#roll-out-a-blueprint-from-the-live-copy-overview}
 
 De [**actie van het Uitrollen** is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](live-copy-overview.md#using-the-live-copy-overview), wanneer een pagina van de Vervaging wordt geselecteerd.
 
@@ -308,7 +307,7 @@ Synchroniseer een actieve kopie om wijzigingen van de bron naar de actieve kopie
 
    Bevestiging wordt aangevraagd. Gebruik **Sync** om door te gaan.
 
-#### Een actieve kopie synchroniseren vanuit het Live Copy-overzicht {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Een actieve kopie synchroniseren vanuit het overzicht Live kopie {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 De actie [Synchroniseren is ook beschikbaar bij het Live Copy-overzicht](live-copy-overview.md#using-the-live-copy-overview) wanneer een Live Copy-pagina is geselecteerd.
 
@@ -321,7 +320,7 @@ De actie [Synchroniseren is ook beschikbaar bij het Live Copy-overzicht](live-co
 
    ![Pagina&#39;s uitrollen met of zonder subpagina&#39;s](../assets/rollout-page-and-subpages.png)
 
-## Inhoud van actieve kopie wijzigen {#changing-live-copy-content}
+## Live kopie van inhoud wijzigen {#changing-live-copy-content}
 
 Als u inhoud van Live kopie wilt wijzigen, kunt u:
 
@@ -350,7 +349,7 @@ Wanneer de pagina Live kopie is gesynchroniseerd met de bronpagina, blijven de t
 >
 >Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie [Beste praktijken MSM](best-practices.md#components-and-container-synchronization) voor meer informatie.
 
-### Overerving voor een pagina {#suspending-inheritance-for-a-page} opschorten
+### Overerving voor een pagina onderbreken {#suspending-inheritance-for-a-page}
 
 Wanneer u een live kopie maakt, wordt de Live kopie opgeslagen op de hoofdpagina van de gekopieerde pagina&#39;s. Alle onderliggende pagina&#39;s van de basispagina nemen de configuraties van Live Copy over. De componenten op de pagina&#39;s van het Levende Exemplaar erven ook de Levende configuratie van het Exemplaar.
 
@@ -360,7 +359,7 @@ U kunt de overerving van Live kopie voor een pagina van Live kopie onderbreken, 
 >
 >U kunt ook [een Live kopie](#detaching-a-live-copy) loskoppelen van de blauwdruk om alle verbindingen te verwijderen. In tegenstelling tot het opschorten van erfenis, is de losse actie permanent en niet-omkeerbaar.
 
-#### Overerving van pagina-eigenschappen opheffen {#suspending-inheritance-from-page-properties}
+#### Overerving van pagina-eigenschappen onderbreken {#suspending-inheritance-from-page-properties}
 
 Overerving op een pagina opschorten:
 
@@ -373,7 +372,7 @@ Overerving op een pagina opschorten:
 
 1. Selecteer **Suspend** op de bevestigingsdialoog.
 
-#### Overerving onderbreken vanuit het Live Copy-overzicht {#suspending-inheritance-from-the-live-copy-overview}
+#### Overerving van het Live Copy-overzicht opschorten {#suspending-inheritance-from-the-live-copy-overview}
 
 De handeling [Stoppen is ook beschikbaar in het Live Copy-overzicht](live-copy-overview.md#using-the-live-copy-overview) wanneer een Live Copy-pagina is geselecteerd.
 
@@ -390,7 +389,7 @@ De handeling [Stoppen is ook beschikbaar in het Live Copy-overzicht](live-copy-o
 
    ![Bevestig schorsing](../assets/confirm-suspend.png)
 
-### Herhalingsovererving voor een pagina {#resuming-inheritance-for-a-page}
+### Overerving voor een pagina hervatten {#resuming-inheritance-for-a-page}
 
 Het onderbreken van de overerving van Live Copy voor een pagina is een tijdelijke handeling. Als de handeling **Hervatten** eenmaal is opgeschort, kunt u de live relatie herstellen.
 
@@ -408,7 +407,7 @@ Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchro
 >
 >Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchroniseerd met de bron. Als dit wordt vereist, kunt u manueel om een synchronisatie verzoeken of op het tijdstip van hervatting of later.
 
-#### Overerving hervatten vanuit pagina-eigenschappen {#resuming-inheritance-from-page-properties}
+#### Overerving van pagina-eigenschappen hervatten {#resuming-inheritance-from-page-properties}
 
 Eenmaal [hanging](#suspending-inheritance-from-page-properties) wordt de handeling **Hervatten** in de werkbalk van de pagina-eigenschappen geplaatst:
 
@@ -424,7 +423,7 @@ De handeling [Hervatten is ook beschikbaar in het Live Copy-overzicht](live-copy
 1. Selecteer **Hervatten** van de toolbar.
 1. Geef aan of u de pagina wilt synchroniseren nadat u de overerving hebt hersteld en bevestig vervolgens de handeling **Hervatten** in het dialoogvenster **Live kopie hervatten**.
 
-### De veranderende Diepte van de Overerving (Ondiep/Diep) {#changing-inheritance-depth-shallow-deep}
+### Overervingsdiepte wijzigen (Ondiep/Ondiep) {#changing-inheritance-depth-shallow-deep}
 
 Op een bestaande Live kopie kunt u de diepte van een pagina wijzigen, zodat u kunt opgeven of onderliggende pagina&#39;s moeten worden opgenomen.
 
@@ -462,7 +461,7 @@ De diepte opgeven of wijzigen:
 
 1. Klik of tik **Save** om uw updates voort te zetten.
 
-### Overerving voor een component {#cancelling-inheritance-for-a-component} annuleren
+### Overerving voor een component annuleren {#cancelling-inheritance-for-a-component}
 
 Annuleer de overerving van Live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
 
@@ -484,7 +483,7 @@ Overerving annuleren om de inhoud van de component te wijzigen of de component t
 
    De werkbalk van de component wordt bijgewerkt en bevat alle (toepasselijke) bewerkingsopdrachten.
 
-### Overerving opnieuw inschakelen voor een component {#re-enabling-inheritance-for-a-component}
+### Overerving voor een component opnieuw inschakelen {#re-enabling-inheritance-for-a-component}
 
 Als u overerving voor een component wilt inschakelen, klikt of tikt u op het pictogram **Overerving opnieuw inschakelen** op de werkbalk van de component.
 
@@ -508,7 +507,7 @@ Gebruik de volgende procedure om de overname van het alineasysteem te annuleren.
 1. Sleep een bestaande component naar een nieuwe locatie op de pagina.
 1. Bevestig in het dialoogvenster **Overerving annuleren** de handeling met **Yes**.
 
-### Eigenschappen van een Live Copy-pagina {#overriding-properties-of-a-live-copy-page} overschrijven
+### Eigenschappen van een Live Copy-pagina overschrijven {#overriding-properties-of-a-live-copy-page}
 
 De pagina-eigenschappen van een Live Copy-pagina worden standaard van de bronpagina overgenomen en kunnen niet worden bewerkt.
 
@@ -533,13 +532,13 @@ U kunt overerving later opnieuw inschakelen voor een eigenschap als dat nodig is
 
 1. Klik of tik in het bevestigingsdialoogvenster **Overerving annuleren** op **Ja**.
 
-### Eigenschappen van een actieve pagina van het Exemplaar terugkeren {#revert-properties-of-a-live-copy-page}
+### Eigenschappen van een Live Copy-pagina herstellen {#revert-properties-of-a-live-copy-page}
 
 Als u overerving voor een eigenschap wilt inschakelen, klikt of tikt u op het pictogram **Overerving herstellen** dat naast de eigenschap wordt weergegeven.
 
 ![De knop Overerving herstellen](../assets/revert-inheritance-button.png)
 
-### Live Copy-pagina {#resetting-a-live-copy-page} opnieuw instellen
+### Live Copy-pagina opnieuw instellen {#resetting-a-live-copy-page}
 
 U kunt een pagina van Actieve kopie opnieuw instellen om:
 
@@ -568,7 +567,7 @@ De handeling [**Herstellen** is ook beschikbaar in het Live Copy-overzicht](live
 
    ![Herstellen van actieve kopie bevestigen](../assets/reset-live-copy.png)
 
-## Een pagina voor live kopiëren vergelijken met een vervagingspagina {#comparing-a-live-copy-page-with-a-blueprint-page}
+## Een Live Copy-pagina vergelijken met een vervagingspagina {#comparing-a-live-copy-page-with-a-blueprint-page}
 
 Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de pagina voor de blauwdruk weergeven in **References** en deze vergelijken met de bijbehorende pagina voor Live kopie:
 
@@ -591,7 +590,7 @@ Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de pagina voor de blauw
 
    Voor volledige informatie over het gebruiken van de vergelijkingseigenschap zie [Pagina Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Live kopie {#detaching-a-live-copy} ontkoppelen
+## Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 
 Met de handeling Loskoppelen wordt de live relatie tussen een actieve kopie en de bron-/blauwdrukpagina permanent verwijderd. Alle MSM-relevante eigenschappen worden verwijderd uit Live Copy en de Live Copy-pagina&#39;s worden een zelfstandige kopie.
 
