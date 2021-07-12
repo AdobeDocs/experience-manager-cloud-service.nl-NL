@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner
+role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
 
 ---
 
-# Selectieve publicatie op mapniveau configureren in Dynamic Media {#selective-publish-configure-folder}
+# Selectieve publicatie configureren op mapniveau in Dynamic Media {#selective-publish-configure-folder}
 
 U kunt ervoor kiezen om elementen te publiceren naar of te verwijderen uit Adobe Experience Manager of Dynamic Media. U kunt dit op mapniveau doen met **[!UICONTROL Manage Publication]** of **[!UICONTROL Quick Publish]**. Deze publicatiemethode is handig omdat deze niet alleen afhankelijk is van de **[!UICONTROL Dynamic Media Configuration]** waarvan de instellingen algemeen gelden voor alle mappen in uw Dynamic Media-instantie.
 
@@ -191,7 +191,7 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 1. Tik **[!UICONTROL OK]** en tik vervolgens op **[!UICONTROL Close]**.
 
-## Elementen selectief publiceren of verwijderen via zoekresultaten {#selective-publish-unpublish-search-results}
+## Elementen selectief publiceren of de publicatie ervan ongedaan maken door middel van zoekresultaten {#selective-publish-unpublish-search-results}
 
 In de zoekresultaten kunt u elementen uit verschillende middelenmappen met verschillende Dynamic Media-publicatie-instellingen weergeven. Als u een of meer elementen hebt geselecteerd in zoekresultaten en de elementen verschillende instellingen voor de Dynamic Media-publicatiemodus hebben, kunt u **[!UICONTROL Manage Publication]** op de werkbalk activeren om te publiceren of te publiceren.
 
@@ -253,7 +253,7 @@ U kunt deze selectievakjes ook gebruiken met de zoekvoorspelling **[!UICONTROL P
    * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** om de handeling te starten.
 1. Tik op **[!UICONTROL OK]**.
 
-## De publicatiestatus van een element {#check-publish-status-of-asset} controleren
+## De publicatiestatus van een element controleren {#check-publish-status-of-asset}
 
 U kunt **[!UICONTROL Timeline]** met **[!UICONTROL Card view]**, **[!UICONTROL Column View]**, of **[!UICONTROL List View]** in Experience Manager gebruiken om de publicatiestatus van een element snel te controleren.
 
@@ -268,7 +268,7 @@ Wanneer u **[!UICONTROL List View]** gebruikt, verschijnt een extra kolom voor *
    * Als een map *not* is geconfigureerd voor synchronisatie met Dynamic Media, wordt de Dynamic Media-kolom niet weergegeven.
       ![Lijstweergave en tijdlijn](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
-## Problemen met Selectieve publicatie {#selective-publish-troubleshoot} oplossen
+## Problemen met selectief publiceren oplossen {#selective-publish-troubleshoot}
 
 Een middel dat niet aan Dynamic Media wordt gesynchroniseerd maar een Dynamic Media publicatieactie teweegbrengt die op het in werking treedt resulteert in het volgende foutenbericht en de oplossing:
 
