@@ -2,9 +2,9 @@
 title: Voorinstellingen voor viewers beheren
 description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
-role: Business Practitioner
+role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4127'
 ht-degree: 12%
@@ -38,7 +38,7 @@ Alle viewers die niet in de verpakking zijn opgenomen, ondersteunen toegankelijk
 
 Zie ook [Toetsenbordtoegankelijkheid en navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
-## Viewer-voorinstellingen {#managing-viewer-presets-1} beheren
+## Viewer-voorinstellingen beheren {#managing-viewer-presets-1}
 
 U kunt in Adobe Experience Manager voorinstellingen voor viewers toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door te tikken op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
@@ -59,7 +59,7 @@ Zie [Responsieve statische afbeeldingsbibliotheek](https://experienceleague.adob
 >Publiceer alle viewers buiten de box voordat u ze voor het eerst gebruikt.
 >Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 
-### Systeemcompatibiliteit met viewervoorinstellingen {#viewer-preset-system-compatibility}
+### Compatibiliteit van het systeem met voorinstellingen voor viewers  {#viewer-preset-system-compatibility}
 
 Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden geleverd, zijn volledig compatibel met de volgende systemen:
 
@@ -147,7 +147,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
  </tbody>
 </table>
 
-### Lijst met voorinstellingen van de out-of-the-box Viewer {#list-of-out-of-the-box-viewer-presets}
+### Lijst met voorinstellingen voor viewers buiten de box {#list-of-out-of-the-box-viewer-presets}
 
 In de volgende tabel worden alle vooraf gedefinieerde, kant-en-klare Viewer-voorinstellingen weergegeven die bij Dynamic Media worden geleverd.
 
@@ -310,7 +310,7 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referenti
  </tbody>
 </table>
 
-### Ondersteunde matrix voor bewegingen voor mobiele viewers {#supported-mobile-viewers-gestures-matrix}
+### Matrix voor ondersteunde mobiele viewers {#supported-mobile-viewers-gestures-matrix}
 
 In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die worden ondersteund op iOS-, Android™ 2.x- en Android™ 3.x-apparaten.
 
@@ -367,7 +367,7 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
  </tbody>
 </table>
 
-## Het aantal Viewer-voorinstellingen dat {#increasing-the-number-of-viewer-presets-that-display} wordt weergegeven verhogen
+## Het aantal Viewer-voorinstellingen dat wordt weergegeven verhogen {#increasing-the-number-of-viewer-presets-that-display}
 
 In Experience Manager ziet u een groot aantal verschillende viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers]**. U kunt het aantal weergegeven viewers verhogen of verlagen.
 
@@ -386,7 +386,7 @@ In Experience Manager ziet u een groot aantal verschillende viewervoorinstelling
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tik op **[!UICONTROL Save All]**.
 
-## Een viewervoorinstelling {#creating-a-new-viewer-preset} maken
+## Een voorinstelling voor viewers maken {#creating-a-new-viewer-preset}
 
 Door viewervoorinstellingen te maken, kunt u verschillende instellingen toepassen op weergave en interactie met elementen. U hoeft echter geen voorinstellingen voor viewers te maken. Desgewenst kunt u de standaardvoorinstellingen voor viewers buiten de box gebruiken die al bij Experience Manager Assets worden geleverd.
 
@@ -518,7 +518,7 @@ Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van
 |---|---|---|
 | **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Tik **[!UICONTROL ImageMapEffect]** op het tabblad **[!UICONTROL Appearance]** in **[!UICONTROL Selected Component]** om de afbeelding van het hotspot-pictogram te wijzigen. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
 
-## Viewer-voorinstellingen {#activating-or-deactivating-viewer-presets} activeren of deactiveren
+## Viewer-voorinstellingen activeren of deactiveren {#activating-or-deactivating-viewer-presets}
 
 De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn afhankelijk van de vraag welke voorinstellingen actief zijn in de modus Auteur. Een viewervoorinstelling is standaard ingeschakeld nadat u deze hebt gemaakt. Als u de voorinstelling uitschakelt, wordt deze niet weergegeven in de modus Auteur. Als de voorinstelling wordt gepubliceerd, wordt deze altijd gepubliceerd, ongeacht of deze wordt in- of uitgeschakeld. Deactiveer vooraf instelt van de kijker als de lijst te werkbaar wordt of u geen kijker wilt vooraf ingesteld beschikbaar wordt gemaakt om te gebruiken.
 
@@ -529,7 +529,7 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
    De viewervoorinstellingen die worden geactiveerd, worden aan de rechterkant weergegeven, in een blauw vak. bij gedeactiveerde viewervoorinstellingen wordt de schakeloptie links weergegeven, in een lichtgrijs vak.
 
-## Voorinstellingen voor viewer publiceren {#publishing-viewer-presets}
+## Voorinstellingen van viewer publiceren {#publishing-viewer-presets}
 
 Als u de status van een viewervoorinstelling activeert (of inschakelt), is deze zichtbaar in de Dynamic Media-component, de interactieve mediacomponent en wanneer u een element weergeeft.
 
@@ -550,7 +550,7 @@ Zie ook [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md
 1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. Klik op **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]** of **[!UICONTROL State]** om op die kolomkop te sorteren. Klik bijvoorbeeld op **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerd alfabetische volgorde te sorteren.
 
-## Viewer-voorinstellingen {#editing-viewer-presets} bewerken
+## Viewer-voorinstellingen bewerken {#editing-viewer-presets}
 
 Het bewerken van *vooraf gedefinieerde, voorinstellingen voor een viewer buiten de box* wordt niet ondersteund. Als u een voorinstelling voor een viewer buiten de box bewerkt, wordt u gevraagd deze op te slaan onder een andere naam.
 
@@ -568,7 +568,7 @@ Het bewerken van *vooraf gedefinieerde, voorinstellingen voor een viewer buiten 
    * Tik op **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina met voorinstellingen voor viewer.
    * Tik op **[!UICONTROL Cancel]** om eventuele wijzigingen die u hebt aangebracht, te voorkomen en terug te keren naar de pagina met voorinstellingen voor viewer.
 
-## Voorinstellingen aangepaste viewer {#deleting-custom-viewer-presets} verwijderen
+## Aangepaste voorinstellingen viewer verwijderen {#deleting-custom-viewer-presets}
 
 U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
 
@@ -578,7 +578,7 @@ U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Med
 1. Controleer op de pagina Voorinstellingen viewer een voorinstellingstitel en tik op het pictogram **[!UICONTROL Trash]**.
 1. Tik op **[!UICONTROL Delete]**.
 
-## Een Viewer-voorinstellingen toepassen op een element {#applying-a-viewer-preset-to-an-asset}
+## Een Viewer-voorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
 Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
 
