@@ -2,16 +2,16 @@
 title: Voorinstellingen afbeelding beheren
 description: '"Meer informatie over voorinstellingen voor afbeeldingen en over het maken, wijzigen en beheren van voorinstellingen voor afbeeldingen."'
 feature: Voorinstellingen afbeelding, viewers, uitvoeringen
-role: Business Practitioner
+role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3522'
 ht-degree: 8%
 
 ---
 
-# Voorinstellingen voor afbeeldingen beheren{#managing-image-presets}
+# Voorinstellingen afbeelding beheren{#managing-image-presets}
 
 Met voorinstellingen voor afbeeldingen kunnen Adobe Experience Manager-elementen dynamisch afbeeldingen van verschillende grootten, in verschillende indelingen of met andere afbeeldingseigenschappen leveren die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
 
@@ -35,7 +35,7 @@ Afbeeldingen die bij dynamische levering kleiner worden gemaakt, kunnen scherper
 
 Beheerders kunnen voorinstellingen voor afbeeldingen maken. Als u een voorinstelling voor een afbeelding wilt maken, begint u helemaal opnieuw of u kunt een bestaande voorinstelling beginnen en opslaan onder een andere naam.
 
-## Voorinstellingen {#managing-image-presets-1} voor afbeeldingen beheren
+## Voorinstellingen afbeelding beheren {#managing-image-presets-1}
 
 U beheert de voorinstellingen van de afbeelding in Experience Manager door te tikken op het logo van de Experience Manager of te klikken op de algemene navigatieconsole, vervolgens te tikken of te klikken op het pictogram Extra en naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** te navigeren.
 
@@ -78,7 +78,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 >
 >In de workflow Asset-updates van DAM worden miniaturen voor EPS-bestanden gegenereerd in de stap **[!UICONTROL EPS thumbnails]**.
 
-#### Eigenschappen van metagegevens van PDF/AI/EPS-element {#pdf-ai-eps-asset-metadata-properties}
+#### Eigenschappen van PDF/AI/EPS-metagegevens {#pdf-ai-eps-asset-metadata-properties}
 
 | **Eigenschap Metadata** | **Beschrijving** |
 |---|---|
@@ -89,7 +89,7 @@ U hebt toegang tot `Rasterize PDF/AI Image Preview Rendition` opties voor proces
 
 Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer **[!UICONTROL DAM Update Asset]** op de pagina Workflowmodellen en tik vervolgens op de werkbalk **[!UICONTROL Edit]**. Tik op de pagina met de workflow voor DAM-elementen bijwerken op de procescomponent `Rasterize PDF/AI Image Preview Rendition` om het dialoogvenster Step Properties te openen.
 
-#### Opties voor PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Opties van PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumenten voor het rasteren van PDF- of AI-workflow](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -108,7 +108,7 @@ Met Maximale breedte en Maximumhoogte kunt u de resolutie beperken waarbij raste
 
 Voor de procescomponent `Rasterize PDF/AI Image Preview Rendition` is een maximum gedefinieerd om te voorkomen dat er te grote afbeeldingen in het geheugen worden gemaakt. Zulke grote afbeeldingen kunnen het geheugen overlopen dat aan de JVM (Java™ Virtual Machine) wordt geleverd. Er moet op worden gelet dat de JVM over voldoende geheugen beschikt om het geconfigureerde aantal parallelle workflows te beheren, waarbij elk van beide de mogelijkheid heeft om een image op de maximaal geconfigureerde grootte te maken.
 
-### Bestandsindeling InDesign (INDD) {#indesign-indd-file-format}
+### InDesign-bestandsindeling (INDD) {#indesign-indd-file-format}
 
 Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoering van deze bestandsindeling kunt genereren, controleert u de volgende informatie voordat u voorinstellingen voor afbeeldingen maakt.
 
@@ -131,7 +131,7 @@ De volgende scripts worden door Dynamic Media-integratie gebruikt:
 | JPEGPagesExport.jsx | Ja | Hiermee genereert u een JPEG-subelement van 300 ppi voor elke pagina. Het JPEG-subelement is een echt element dat is opgeslagen onder het InDesign-element. Deze wordt ook geoptimaliseerd en omgezet in een PTIFF door de `DAM Update Asset`-workflow. |
 | PDFPagesExport.jsx | Nee | Hiermee genereert u een PDF-subelement voor elke pagina. Het PDF-subelement wordt verwerkt zoals eerder beschreven. Omdat de PDF slechts één pagina bevat, worden geen subelementen gegenereerd. |
 
-### Grootte {#configuring-image-thumbnail-size} van afbeeldingsminiaturen configureren
+### Miniatuurgrootte van afbeelding configureren {#configuring-image-thumbnail-size}
 
 U kunt de grootte van miniaturen configureren door deze instellingen te configureren in de **[!UICONTROL DAM Update Asset]**-workflow. De workflow bevat twee stappen waarmee u de miniatuurgrootte van afbeeldingselementen kunt configureren. Eén (**[!UICONTROL Dynamic Media Process Image Assets]**) wordt gebruikt voor dynamische afbeeldingselementen. Het andere (**[!UICONTROL Process Thumbnails]**) wordt gebruikt voor het genereren van statische miniaturen of wanneer alle andere processen geen miniaturen genereren. Ongeacht of *both* dezelfde instellingen moeten hebben.
 
@@ -165,7 +165,7 @@ Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width
 
 1. Tik **[!UICONTROL Save]** om de wijzigingen in de workflow op te slaan.
 
-### Het aantal voorinstellingen voor afbeeldingen dat {#increasing-or-decreasing-the-number-of-image-presets-that-display} wordt weergegeven verhogen of verlagen
+### Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen of verlagen {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoeringen wanneer u een voorvertoning van elementen weergeeft. Experience Manager toont diverse dynamische vertoningen wanneer het bekijken van activa van **[!UICONTROL Detail View > Renditions]**. U kunt de limiet van weergegeven uitvoeringen verhogen of verlagen.
 
@@ -184,7 +184,7 @@ Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoer
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tik op **[!UICONTROL Save All]**.
 
-### Een voorinstelling {#creating-image-presets} voor afbeeldingen maken
+### Een voorinstelling voor afbeeldingen maken {#creating-image-presets}
 
 Als u een voorinstelling voor afbeeldingen maakt, kunt u deze instellingen op alle afbeeldingen toepassen wanneer u een voorvertoning weergeeft of publiceert.
 
@@ -231,7 +231,7 @@ Als u deze leeg laat, krijgt de Experience Manager de melding dat deze voorinste
 >
 >Voorinstellingen voor afbeeldingen en afbeeldingselementen worden automatisch gepubliceerd.
 
-### Opties {#image-preset-options} voor voorinstellingen afbeelding
+### Voorinstellingsopties voor afbeelding {#image-preset-options}
 
 Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties in deze sectie beschreven. Daarnaast raadt Adobe aan om de volgende opties voor best practices te kiezen:
 
@@ -241,7 +241,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 * **[!UICONTROL Sharpening: Resampling Mode]** - Selecteer **[!UICONTROL Bi-Cubic]**.
 
-#### Standaardtabopties {#basic-tab-options}
+#### Opties op het tabblad Standaard {#basic-tab-options}
 
 <table>
  <tbody>
@@ -293,7 +293,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
  </tbody>
 </table>
 
-#### Geavanceerde tabopties {#advanced-tab-options}
+#### Opties op het tabblad Geavanceerd {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -378,7 +378,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
  </tbody>
 </table>
 
-### Opties voor voorinstellingen afbeelding definiëren met afbeeldingswijzigingstoetsen {#defining-image-preset-options-with-image-modifiers}
+### Opties voor voorinstellingen afbeelding definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
 
 Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook opties voor het wijzigen van afbeeldingen definiëren voor het definiëren van voorinstellingen voor afbeeldingen. Image Rendering is afhankelijk van de Dynamic Media Image Rendering API en wordt gedetailleerd gedefinieerd in de [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
@@ -428,7 +428,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Voorinstellingen {#modifying-image-presets} voor afbeeldingen bewerken
+### Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
 1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
@@ -437,11 +437,11 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 1. Selecteer een voorinstelling en klik op **[!UICONTROL Edit]**. Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
 1. Breng wijzigingen aan en klik op **[!UICONTROL Save]** om uw wijzigingen op te slaan of op **[!UICONTROL Cancel]** om uw wijzigingen te annuleren.
 
-### Voorinstellingen {#publishing-image-presets} voor afbeelding publiceren
+### Voorinstellingen voor afbeeldingen publiceren {#publishing-image-presets}
 
 Voorinstellingen voor afbeeldingen worden automatisch voor u gepubliceerd.
 
-### Voorinstellingen {#deleting-image-presets} verwijderen
+### Voorinstellingen voor afbeeldingen verwijderen {#deleting-image-presets}
 
 1. Tik in Experience Manager op het logo van de Experience Manager om de algemene navigatieconsole te openen en tik op het pictogram Extra of navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
