@@ -1,9 +1,9 @@
 ---
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
-source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
+source-git-commit: c19878b41970f4cd34083395ab11cf82c1db667e
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 1%
 # Afhandeling van grote opslagplaatsen voor inhoud {#handling-large-content-repositories}
 
 ## Overzicht {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_precopy"
+>title="Afhandeling van grote opslagplaatsen voor inhoud"
+>abstract="Als u de extractie- en innamefasen van de activiteit voor inhoudsoverdracht aanzienlijk wilt versnellen om inhoud als Cloud Service naar AEM te verplaatsen, kan CTT AzCopy gebruiken als een optionele stap voor het kopiëren. Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3 of Azure Blob Storage naar de blob-opslag van de migratieset. In de innamefase kopieert AzCopy klodders van de blob-opslag van de migratieset naar de AEM als Cloud Service blob-opslag."
+>additional-url="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" text="Aan de slag met AzCopy"
 
 Het kopiëren van een groot aantal lobs met het hulpmiddel van de Overdracht van de Inhoud (CTT) kan veelvoudige dagen vergen.
 Als u de extractie- en innamefasen van de activiteit voor inhoudsoverdracht aanzienlijk wilt versnellen en inhoud als Cloud Service naar AEM wilt verplaatsen, kan CTT [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) gebruiken als een optionele stap voor het kopiëren. Deze pre-exemplaarstap kan worden gebruikt wanneer de bron AEM instantie wordt gevormd om een gegevensopslag van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken Blob.  Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3 of Azure Blob Storage naar de blob-opslag van de migratieset. In de innamefase kopieert AzCopy klodders van de blob-opslag van de migratieset naar de AEM als Cloud Service blob-opslag.
