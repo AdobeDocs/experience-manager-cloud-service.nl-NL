@@ -2,9 +2,9 @@
 title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
 feature: Middelenbeheer, videoprofielen, uitvoeringen
-role: Business Practitioner
+role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3488'
 ht-degree: 9%
@@ -239,7 +239,7 @@ Tik op het informatiepictogram naast elke optie voor meer beschrijvingen of aanb
 
 U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie [Een videoprofiel toepassen op mappen](#applying-a-video-profile-to-folders) of [Een videoprofiel globaal toepassen](#applying-a-video-profile-globally).
 
-## Parameters {#using-custom-added-video-encoding-parameters} voor videocodering met aangepaste toevoeging gebruiken
+## Parameters voor videocodering met aangepaste toevoeging gebruiken {#using-custom-added-video-encoding-parameters}
 
 U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavanceerde videocoderingsparameters die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in Experience Manager. U kunt een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, aan uw bestaand profiel toevoegen.
 
@@ -305,7 +305,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op het pictogram **[!UICONTROL Back Home]** om terug te keren naar de Experience Manager.
 
-### Een videoprofiel {#editing-a-video-encoding-profile} bewerken
+### Een videoprofiel bewerken {#editing-a-video-encoding-profile}
 
 U kunt elk videoprofiel bewerken dat u hebt gemaakt om videovoorinstellingen in dat profiel toe te voegen, te bewerken of te verwijderen.
 
@@ -329,7 +329,7 @@ Tik op het informatiepictogram voor een beschrijving van adaptieve streaming. (S
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-### Een videoprofiel {#copying-a-video-encoding-profile} kopiëren
+### Een videoprofiel kopiëren {#copying-a-video-encoding-profile}
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Controleer op de pagina Videoprofielen de naam van één videoprofiel.
@@ -344,7 +344,7 @@ Tik op het informatiepictogram voor een beschrijving van adaptieve streaming. (S
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-### Een videoprofiel {#deleting-a-video-encoding-profile} verwijderen
+### Een videoprofiel verwijderen {#deleting-a-video-encoding-profile}
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Controleer een of meer namen van videoprofielen op de pagina Videoprofielen.
@@ -389,7 +389,7 @@ U kunt [de vooruitgang van een de verwerkingsbaan van het Profiel van de Video ]
    ![chlimage_1-518](assets/chlimage_1-518.png)
 U kunt de vooruitgang van een de verwerkingsbaan [ ](#monitoring-the-progress-of-an-encoding-job) van het Profiel van de Video controleren.
 
-### Een videoprofiel globaal toepassen {#applying-a-video-profile-globally}
+### Een videoprofiel wereldwijd toepassen {#applying-a-video-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar Experience Manager-elementen in een map.
 
@@ -402,13 +402,13 @@ Zie ook [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/abou
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * U kunt [de vooruitgang van een de verwerkingsbaan van het Profiel van de Video ](#monitoring-the-progress-of-an-encoding-job) controleren.
 
-## De voortgang van een verwerkingstaak van een videoprofiel {#monitoring-the-progress-of-an-encoding-job} controleren
+## De voortgang van een verwerkingstaak van een videoprofiel controleren {#monitoring-the-progress-of-an-encoding-job}
 
 Er wordt een verwerkingsindicator (of voortgangsbalk) weergegeven waarmee u de voortgang van een verwerkingstaak van een videoprofiel visueel kunt controleren.
 
 U kunt het `error.log` dossier ook bekijken om de vooruitgang van een het coderen baan te controleren, om te zien of wordt het coderen gebeëindigd, of om het even welke baanfouten te zien. De `error.log` wordt gevonden in `logs` omslag waar uw geval van Experience Manager geïnstalleerd is.
 
-## Een videoprofiel verwijderen uit mappen {#removing-a-video-profile-from-folders}
+## Een videoprofiel uit mappen verwijderen {#removing-a-video-profile-from-folders}
 
 Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
@@ -422,7 +422,7 @@ U kunt een videoprofiel verwijderen uit een map in het menu **[!UICONTROL Tools]
 
    U kunt bevestigen dat het videoprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Een videoprofiel uit mappen verwijderen met eigenschappen {#removing-video-profiles-from-folders-by-way-of-properties}
+### Eigenschappen om een videoprofiel uit mappen te verwijderen {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tik of klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een videoprofiel wilt verwijderen.
 1. Tik op het vinkje of klik op het vinkje in de map om het te selecteren en tik op **[!UICONTROL Properties]**.
