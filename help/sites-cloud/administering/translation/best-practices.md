@@ -1,18 +1,17 @@
 ---
 title: Aanbevolen werkwijzen voor vertaling
 description: Leer over beste praktijken die door Adobe engineering en adviesteams worden samengesteld om u te helpen met vertaalprojecten aan de slag gaan.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: 51b98c24-5566-4088-9010-bd39841a1633
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
-
-# Aanbevolen procedures voor vertaling {#translation-best-practices}
+# Aanbevolen werkwijzen voor vertaling {#translation-best-practices}
 
 ## Algemeen {#general}
 
