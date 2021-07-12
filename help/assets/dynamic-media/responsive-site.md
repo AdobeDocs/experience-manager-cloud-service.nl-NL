@@ -2,9 +2,9 @@
 title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
 description: Leer hoe u de functie voor responsieve code gebruikt om geoptimaliseerde afbeeldingen van Dynamic Media te leveren.
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 12%
@@ -44,7 +44,7 @@ Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebap
 1. Selecteer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardonderbrekingspunten in de insluitcode zodat deze overeenkomen met de standaardonderbrekingspunten op de responsieve website, rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
 
-## HTTP/2 gebruiken om uw Dynamic Media-middelen {#using-http-to-delivery-your-dynamic-media-assets} te leveren
+## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijd biedt.
 
