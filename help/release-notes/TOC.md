@@ -4,8 +4,8 @@ user-guide-title: Opmerkingen bij de release voor AEM als Cloud Service
 breadcrumb-title: Release-opmerkingen
 user-guide-description: Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen.
 feature: Geen informatie
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 87bb02229279ea2344d55cb029b8a1c1da0c33ae
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 28%
