@@ -1,16 +1,15 @@
 ---
 title: Vertaalprojecten beheren
 description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Taalkopie
+role: Admin
+exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3828'
+source-wordcount: '3827'
 ht-degree: 0%
 
 ---
-
 
 # Vertaalprojecten beheren {#managing-translation-projects}
 
@@ -39,7 +38,7 @@ De hoofdtaal `/content/wknd/fr` wordt bijvoorbeeld gemaakt voor de Franse vertal
 * Er wordt een vertaalproject gemaakt voor de pagina `/content/wknd/en/products` en alle onderliggende pagina&#39;s, die zich richten op de Franse taalkopie. Omdat de taalkopie de pagina `/content/wknd/fr/products` niet bevat, kopieert AEM onmiddellijk de pagina `/content/wknd/en/products` en alle onderliggende pagina&#39;s naar de Franse taalkopie. De kopieën worden ook in het vertaalproject opgenomen.
 * Er wordt een vertaalproject gemaakt voor de pagina `/content/wknd/en` en alle onderliggende pagina&#39;s, die zich richten op de Franse taalkopie. Omdat de taalkopie de pagina bevat die overeenkomt met de `/content/wknd/en`-pagina (de hoofdtaal), AEM de pagina `/content/wknd/en` en alle onderliggende pagina&#39;s kopiëren en deze aan een introductie toevoegen. De kopieën worden ook in het vertaalproject opgenomen.
 
-## Vertaling via de siteconsole {#performing-initial-translations-and-updating-existing-translations}
+## Vertalen vanuit de siteconsole {#performing-initial-translations-and-updating-existing-translations}
 
 De vertaalprojecten kunnen direct van de plaatsenconsole worden gecreeerd of worden bijgewerkt.
 
@@ -69,7 +68,7 @@ Na het vertalen, kunt u [de vertaling ](#reviewing-and-promoting-updated-content
 
 ![Maken en vertalen](../assets/create-and-translate.png)
 
-### Vertaalprojecten maken voor een nieuwe taalkopie {#create-translation-projects-for-a-new-language-copy}
+### Vertaalprojecten maken voor een kopie van nieuwe taal {#create-translation-projects-for-a-new-language-copy}
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan vertaalprojecten toevoegt.
 
@@ -141,7 +140,7 @@ Net zoals bij het maken van een nieuw project, worden bij het toevoegen van pagi
 
 1. Klik of tik **Update**.
 
-### De structuur maken van een taalkopie {#creating-the-structure-of-a-language-copy}
+### De structuur van een taalkopie maken {#creating-the-structure-of-a-language-copy}
 
 Het is mogelijk om alleen de structuur van de taalkopie te maken, zodat u inhoud en structurele wijzigingen in de taal die is master voor (onvertaalde) taalkopieën kunt kopiëren. Dit houdt geen verband met een vertaalbaan of een project. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
 
@@ -165,7 +164,7 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt
 
 1. Klik of tik **Update**.
 
-### Vertaalgeheugen {#updating-translation-memory} bijwerken
+### Vertaalgeheugen bijwerken {#updating-translation-memory}
 
 Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met het TMS (Translation Management System) om het vertaalgeheugen te trainen.
 
@@ -176,7 +175,7 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 
 AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
 
-### Vertaalstatus van een pagina {#check-translation-status} controleren
+### Vertaalstatus van een pagina controleren {#check-translation-status}
 
 Een bezit kan in de lijstmening van de plaatsenconsole worden geselecteerd die toont als een pagina is vertaald, in vertaling is, of nog niet is vertaald.
 
@@ -285,7 +284,7 @@ Wanneer een project wordt gecreeerd gebruikend de verwijzingsspoorlijn van een p
 
 ![Eigenschappen van vertaalproject](../assets/translation-project-properties.png)
 
-### De status van een vertaaltaak {#monitoring-the-status-of-a-translation-job} controleren
+### De status van een vertaaltaak controleren {#monitoring-the-status-of-a-translation-job}
 
 De tegel voor vertaaltaken van een vertaalproject geeft de status van een vertaaltaak en het aantal pagina&#39;s en middelen in de taak.
 
@@ -310,7 +309,7 @@ In de volgende tabel wordt elke status beschreven die een taak of een item in de
 
 Als u de status van elk bestand in de taak wilt zien, klikt of tikt u op de ellips onder aan de tegel.
 
-### Vervaldatum van vertaaltaken instellen {#setting-the-due-date-of-translation-jobs}
+### Vaststelling van de vervaldatum van de vertaaltaken {#setting-the-due-date-of-translation-jobs}
 
 Geef de datum op waarop de leverancier van de vertaling vertaalde bestanden moet retourneren. Het instellen van de vervaldatum werkt alleen correct wanneer de leverancier van de vertaling die u gebruikt deze functie ondersteunt.
 
@@ -324,7 +323,7 @@ Geef de datum op waarop de leverancier van de vertaling vertaalde bestanden moet
 
 1. Klik of tik **Opslaan en sluiten**.
 
-### Een vertaaltaak opsplitsen {#scoping-a-translation-job}
+### Een vertaaltaak splitsen {#scoping-a-translation-job}
 
 Bereik een vertaalbaan om een schatting van de kosten van vertaling van uw vertaaldienstverlener te verkrijgen. Wanneer u een taak instelt, worden bronbestanden verzonden naar de leverancier van de vertaling die de tekst vergelijkt met de groep met opgeslagen vertalingen (vertaalgeheugen). Doorgaans is het bereik het aantal woorden dat moet worden vertaald.
 
@@ -342,7 +341,7 @@ De bereikfuncties werken alleen correct wanneer de leverancier van de vertaling 
 1. Tik op de titel van de vertaaltaak of klik op het menu Opdrachten en tik op **Toepassingsgebied aanvragen** of klik op Toepassingsgebied aanvragen.
 1. Als de taakstatus verandert in **Voltooid bereik**, klikt of tikt u op het menu met opdrachten en klikt of tikt u op **Bereik tonen**.
 
-### Translatietaken starten {#starting-translation-jobs}
+### Vertaal-taken starten {#starting-translation-jobs}
 
 Start een vertaaltaak om de bronpagina&#39;s naar de doeltaal te vertalen. De vertaling wordt uitgevoerd volgens de bezitswaarden van de de samenvattingstegel van de vertaling.
 
@@ -360,7 +359,7 @@ U kunt ook alle vertaaltaken voor een project starten.
 1. Tik in de werkbalk of klik op **Vertaal taak(en) starten**.
 1. Controleer in het dialoogvenster de lijst met taken die worden gestart en bevestig vervolgens met **Start** of abort met **Cancel**.
 
-### Een vertaaltaak {#canceling-a-translation-job} annuleren
+### Een vertaaltaak annuleren {#canceling-a-translation-job}
 
 Een vertaaltaak annuleren om het vertaalproces te stoppen en te voorkomen dat de leverancier van de vertaling verdere vertalingen uitvoert. U kunt een taak annuleren wanneer de taak de status **Toegewezen voor vertaling** of **Bezig met omzetten** heeft.
 
@@ -368,7 +367,7 @@ Een vertaaltaak annuleren om het vertaalproces te stoppen en te voorkomen dat de
 1. Klik of tik op het menu Opdrachten in de tegel van de vertaaltaak en klik of tik op **Annuleren**.
 1. Klik of tik **OK** in het dialoogvenster Handeling dat de annulering van de vertaling bevestigt.
 
-### Workflow {#accept-reject-workflow} accepteren en afwijzen
+### Workflow accepteren en afwijzen {#accept-reject-workflow}
 
 Wanneer de inhoud na vertaling terug komt en **Klaar voor Overzicht** status is, kunt u in de vertaalbaan gaan en inhoud goedkeuren/verwerpen.
 
@@ -376,7 +375,7 @@ Als u **Vertaling afwijzen** selecteert, kunt u een opmerking toevoegen.
 
 Als u inhoud afwijst, wordt deze teruggestuurd naar de vertaalleverancier waar deze de opmerking kan zien.
 
-### Vertaal- en archiveringstaken {#completing-and-archiving-translation-jobs} voltooien
+### Vertaaltaken voltooien en archiveren {#completing-and-archiving-translation-jobs}
 
 Voltooi een vertaalbaan nadat u de vertaalde dossiers van de verkoper hebt herzien.
 
@@ -430,7 +429,7 @@ U kunt als volgt master taalkopieën vergelijken met de taal:
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
    * Zie [Paginadiff](/help/sites-cloud/authoring/features/page-diff.md) voor volledige informatie over het gebruik van deze functie.
 
-## Vertaaltaken {#import-export} importeren en exporteren
+## Vertaaltaken importeren en exporteren {#import-export}
 
 Hoewel AEM een aantal vertaaloplossingen en interfaces biedt, is het ook mogelijk om vertaalbaaninformatie manueel in te voeren en uit te voeren.
 
@@ -442,7 +441,7 @@ U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaa
 1. Klik of tik in het dialoogvenster op **Geëxporteerd bestand downloaden** en gebruik indien nodig het dialoogvenster van de webbrowser om het bestand op te slaan.
 1. Klik of tik op **Close** in het dialoogvenster.
 
-### Een vertaaltaak {#importing-a-translation-job} importeren
+### Een vertaaltaak importeren {#importing-a-translation-job}
 
 U kunt vertaalde inhoud in AEM importeren, bijvoorbeeld wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet via een connector is geïntegreerd met AEM.
 
