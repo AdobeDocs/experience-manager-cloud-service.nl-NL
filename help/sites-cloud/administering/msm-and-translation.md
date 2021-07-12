@@ -1,20 +1,19 @@
 ---
 title: Beheer en vertaling van meerdere sites
 description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige websites in AEM kunt beheren.
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer
+role: Admin
+exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Beheer en vertaling van meerdere sites {#msm-and-translation}
 
-Met de ingebouwde tools voor beheer van meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
+Met de ingebouwde tools voor meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
 
 * Met MSM (Multi Site Manager) en de bijbehorende functies voor Live Copy kunt u dezelfde site-inhoud op meerdere locaties gebruiken, terwijl variaties mogelijk zijn:
    * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm/overview.md)
@@ -56,5 +55,5 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
 >* [Beste praktijken voor MSM](msm/best-practices.md)
->* [Aanbevolen procedures voor vertaling](translation/best-practices.md)
+* [Aanbevolen procedures voor vertaling](translation/best-practices.md)
 
