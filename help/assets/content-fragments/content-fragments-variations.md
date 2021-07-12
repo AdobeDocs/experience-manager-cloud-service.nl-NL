@@ -1,16 +1,15 @@
 ---
 title: Variaties - Authoring van content voor fragmenten
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Contentfragmenten
+role: User
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2257'
 ht-degree: 11%
 
 ---
-
 
 # Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
@@ -39,7 +38,7 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 >
 >Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
-## Uw inhoud ontwerpen {#authoring-your-content}
+## Inhoud ontwerpen {#authoring-your-content}
 
 Wanneer u het inhoudsfragment opent voor bewerking, wordt het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat verschillende velden van diverse gegevenstypen die zijn gedefinieerd in het inhoudsmodel.
 
@@ -89,7 +88,7 @@ De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) wanneer
 
 * [Tekst samenvatten](#summarizing-text)
 
-### Opmaak {#formats}
+### Indelingen {#formats}
 
 De opties voor het bewerken van tekst met meerdere regels zijn afhankelijk van de geselecteerde indeling:
 
@@ -165,7 +164,7 @@ Als het Content Fragment-model fragmentverwijzingen bevat, hebben de auteurs van
 
 ![Fragmentverwijzingen](assets/cfm-variations-12.png)
 
-#### Inhoudsfragment {#fragment-references-edit-content-fragment} bewerken
+#### Inhoudsfragment bewerken {#fragment-references-edit-content-fragment}
 
 Met de optie **Inhoudsfragment bewerken** wordt dat fragment geopend in een nieuw editortabblad (binnen hetzelfde browsertabblad).
 
@@ -187,7 +186,7 @@ U kunt dan een nieuw fragment maken door:
    1. **Hiermee** wordt het oorspronkelijke fragment hersteld en wordt naar het nieuwe fragment verwezen.
    1. **Met** Openwill wordt naar het nieuwe fragment verwezen en wordt het nieuwe fragment geopend voor bewerking op een nieuw browsertabblad.
 
-### Belangrijkste statistieken {#viewing-key-statistics} weergeven
+### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
 Wanneer de volledige-schermeditor open is, zal de actie **Tekststatistieken** allerlei informatie over de tekst tonen.
 
@@ -195,11 +194,11 @@ Bijvoorbeeld:
 
 ![statistieken](assets/cfm-variations-04.png)
 
-### Inhoud {#uploading-content} uploaden
+### Inhoud uploaden {#uploading-content}
 
 Als u het maken van inhoudsfragmenten wilt vereenvoudigen, kunt u tekst uploaden die is voorbereid in een externe editor en deze rechtstreeks aan het fragment toevoegen.
 
-### Tekst {#summarizing-text} samenvatten
+### Tekst samenvatten {#summarizing-text}
 
 Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst te beperken tot een vooraf gedefinieerd aantal woorden, terwijl de hoofdpunten en de algemene betekenis behouden blijven.
 
@@ -251,7 +250,7 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
 
    ![samenvattingsvergelijking](assets/cfm-variations-06.png)
 
-### Een inhoudsfragment {#annotating-a-content-fragment} annoteren
+### Een inhoudsfragment annoteren {#annotating-a-content-fragment}
 
 Een fragment annoteren:
 
@@ -283,7 +282,7 @@ Een fragment annoteren:
 
    ![annoteren](assets/cfm-variations-07c.png)
 
-### Annotaties {#viewing-editing-deleting-annotations} weergeven, bewerken en verwijderen
+### Annotaties weergeven, bewerken, verwijderen {#viewing-editing-deleting-annotations}
 
 Annotaties:
 
@@ -300,7 +299,7 @@ Annotaties:
 
 * Kan worden weergegeven en verwijderd in [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) voor het geselecteerde fragment.
 
-### Elementen invoegen in het fragment {#inserting-assets-into-your-fragment}
+### Elementen invoegen in uw fragment {#inserting-assets-into-your-fragment}
 
 Als u het ontwerpen van inhoudsfragmenten wilt vereenvoudigen, kunt u [Middelen](/help/assets/manage-digital-assets.md) (afbeeldingen) rechtstreeks aan het fragment toevoegen.
 
@@ -369,9 +368,9 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
    * **Markering**: de referentie blijft .
 
 
-## Variaties {#managing-variations} beheren
+## Variaties beheren {#managing-variations}
 
-### Een variatie {#creating-a-variation} maken
+### Een variatie maken {#creating-a-variation}
 
 Met behulp van variaties kunt u de **Master**-inhoud innemen en deze afhankelijk van het doel variëren (indien nodig).
 
@@ -386,7 +385,7 @@ Een nieuwe variatie maken:
    >[!NOTE]
    Wanneer u een nieuwe variant maakt, wordt deze altijd **Master** gekopieerd en niet de variant die momenteel is geopend.
 
-### Een variatie {#editing-a-variation} bewerken
+### Een variatie bewerken {#editing-a-variation}
 
 U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
@@ -395,7 +394,7 @@ U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
 ![bewerken van een variatie](assets/cfm-variations-10.png)
 
-### Naam wijzigen van een variatie {#renaming-a-variation}
+### De naam van een variatie wijzigen {#renaming-a-variation}
 
 Een bestaande variatie een andere naam geven:
 
@@ -410,7 +409,7 @@ Een bestaande variatie een andere naam geven:
 >[!NOTE]
 Dit beïnvloedt slechts de variatie **Titel**.
 
-### Een variatie {#deleting-a-variation} verwijderen
+### Een variatie verwijderen {#deleting-a-variation}
 
 Een bestaande wijziging verwijderen:
 
