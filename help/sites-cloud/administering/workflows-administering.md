@@ -1,16 +1,15 @@
 ---
 title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer
+role: Admin
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Workflowinstanties beheren {#administering-workflow-instances}
 
@@ -25,7 +24,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 * **Mislukt**: De geschiedenis weergeven van workflows die zijn voltooid met fouten
 * **Automatisch toewijzen**: Workflows automatisch toewijzen aan sjablonen configureren
 
-## De status van workflowinstanties controleren {#monitoring-the-status-of-workflow-instances}
+## Controle van de status van workflowinstanties {#monitoring-the-status-of-workflow-instances}
 
 1. Selecteer **Tools** met Navigatie en **Workflow**.
 1. Selecteer **Instanties** om de lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd.
@@ -33,7 +32,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
 
 
-## Workflowinstanties doorzoeken {#search-workflow-instances}
+## Workflowinstanties zoeken {#search-workflow-instances}
 
 1. Selecteer **Tools** met Navigatie en **Workflow**.
 1. Selecteer **Instanties** om de lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd. Selecteer **Filters** in de bovenste track in de linkerhoek. U kunt ook de toetsaanslagen alt+1 gebruiken. Het volgende dialoogvenster wordt weergegeven:
@@ -83,7 +82,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
-## Problemen met werkstroominstanties oplossen {#fixing-workflow-instance-failures}
+## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
 Wanneer een werkschema ontbreekt, verstrekt AEM **Failures** console om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
@@ -168,4 +167,3 @@ U kunt de maximumgrootte van inbox plaatsen door **de Dienst van het Werkschema*
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam |
 |---|---|
 | Max. grootte van invoerquery | granite.workflow.inboxQuerySize |
-
