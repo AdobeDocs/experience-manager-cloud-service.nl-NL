@@ -1,10 +1,9 @@
 ---
 title: Werken met Dynamic Media
 description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 6%
@@ -21,7 +20,7 @@ Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaie
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Wat u kunt doen met Dynamic Media {#what-you-can-do-with-dynamic-media}
+## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
 Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Over het algemeen wordt in [Werken met digitale middelen](/help/assets/manage-digital-assets.md) uitvoerig ingegaan op de manier waarop u met middelen werkt. Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
 
@@ -79,7 +78,7 @@ Tot de voor Dynamic Media ingeschakelde elementen behoren `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Wijzigingen in de weergave Elementen {#asset-views-change}
+### Weergave van element wijzigen {#asset-views-change}
 
 Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
 
