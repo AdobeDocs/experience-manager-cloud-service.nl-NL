@@ -1,16 +1,15 @@
 ---
 title: Synchronisatie van actieve kopie configureren
 description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt configureren en aanpassen aan de behoeften van uw project.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
+feature: Beheer van meerdere sites
+role: Admin
+exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2339'
 ht-degree: 0%
 
 ---
-
 
 # Synchronisatie van actieve kopie configureren {#configuring-live-copy-synchronization}
 
@@ -20,7 +19,7 @@ Adobe Experience Manager biedt een aantal synchronisatieconfiguraties uit de ver
 1. Als de bestaande rollout configuraties niet, beslissen of u uw moet creëren.
 1. Geef de rollout-configuraties op die u wilt gebruiken voor Live kopieën.
 
-## Geïnstalleerde en Aangepaste rollout Configuraties {#installed-and-custom-rollout-configurations}
+## Geïnstalleerde en Aangepaste implementatieconfiguraties {#installed-and-custom-rollout-configurations}
 
 Deze sectie verstrekt informatie over de geïnstalleerde rollout configuraties en de synchronisatieacties die zij gebruiken, en hoe te om douaneconfiguraties tot stand te brengen indien vereist.
 
@@ -28,7 +27,7 @@ Deze sectie verstrekt informatie over de geïnstalleerde rollout configuraties e
 >
 >Het bijwerken van of het veranderen van een uit-van-de-doos rollout configuratie is **niet** geadviseerd. Als er een vereiste voor een douanelevende actie is dan zou het in een aangepaste rollout configuratie moeten worden toegevoegd.
 
-### Uitroltriggers {#rollout-triggers}
+### Rollouttriggers {#rollout-triggers}
 
 Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaakt om voor te komen. Rolloutconfiguraties kunnen een van de volgende triggers gebruiken:
 
@@ -188,7 +187,7 @@ U kunt de rollout configuraties voor een Levende pagina van het Exemplaar ook vo
 
 1. Klik of tik **Opslaan en sluiten**.
 
-### De configuratie van de Output instellen voor een pagina van de Vervaging {#setting-the-rollout-configuration-for-a-blueprint-page}
+### De configuratie van de Output instellen voor een vervagingspagina {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configureer een blauwdrukpagina met de rollout-configuraties die moeten worden gebruikt wanneer de blauwdrukpagina wordt uitgevouwen.
 
