@@ -2,10 +2,9 @@
 title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 feature: Contentfragmenten
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 4%
@@ -39,7 +38,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 
 1. Gebruik **Maken** om het lege model op te slaan. Een bericht zal op het succes van de actie wijzen, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Done** om aan de console terug te keren.
 
-## Het inhoudsfragmentmodel {#defining-your-content-fragment-model} definiëren
+## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
 Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende inhoudsfragmenten met behulp van een selectie van **[Gegevenstypen](#data-types)**. Gebruikend de modelredacteur kunt u instanties van de gegevenstypes toevoegen, dan hen vormen om de vereiste gebieden tot stand te brengen:
 
@@ -192,7 +191,7 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
 * **Fragmentverwijzing**
    * Testen op een specifiek inhoudsfragmentmodel.
 
-## Referenties gebruiken om geneste inhoud {#using-references-to-form-nested-content} te vormen
+## Referenties gebruiken om geneste inhoud te vormen {#using-references-to-form-nested-content}
 
 Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
@@ -217,7 +216,7 @@ Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt
 Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
 
-### Inhoudsverwijzing {#content-reference}
+### Content Reference {#content-reference}
 
 Met de Content Reference kunt u inhoud van een andere bron renderen. bijvoorbeeld een afbeeldings- of inhoudsfragment.
 
@@ -284,11 +283,11 @@ PathThis specifies a root path for any fragments referenced.
 Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 Er is ook een terugkerende bescherming voor de Verwijzingen van het Fragment in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
 
-## Een inhoudsfragmentmodel {#enabling-disabling-a-content-fragment-model} in- of uitschakelen
+## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
 Voor volledige controle over het gebruik van uw modellen van het Fragment van de Inhoud hebben zij een status die u kunt plaatsen.
 
-### Een inhoudsfragmentmodel {#enabling-a-content-fragment-model} inschakelen
+### Een inhoudsfragmentmodel inschakelen {#enabling-a-content-fragment-model}
 
 Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
 
@@ -308,7 +307,7 @@ U gebruikt de optie **Enable** van:
 
 ![Concept of Uitgeschakeld model inschakelen](assets/cfm-status-enable.png)
 
-### Een inhoudsfragmentmodel {#disabling-a-content-fragment-model} uitschakelen
+### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
 
 Een model kan ook worden uitgeschakeld, zodat:
 
@@ -359,7 +358,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 * Als de overervingsketen geen resultaat oplevert, bekijkt u de **Cloud Services**-configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
 * Als geen van de bovenstaande resultaten worden weergegeven, zijn er geen modellen toegestaan voor die map.
 
-## Een inhoudsfragmentmodel {#deleting-a-content-fragment-model} verwijderen
+## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
@@ -374,7 +373,7 @@ Een inhoudsfragmentmodel verwijderen:
    >[!NOTE]
    Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
-## Een inhoudsfragmentmodel {#publishing-a-content-fragment-model} publiceren
+## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
 Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke inhoudsfragmenten worden gepubliceerd.
 
@@ -389,7 +388,7 @@ De gepubliceerde status wordt aangegeven in de console.
    >[!NOTE]
    Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
-## Publicatie van een inhoudsfragmentmodel opheffen {#unpublishing-a-content-fragment-model}
+## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
 Inhoudsfragmentmodellen kunnen ongepubliceerd zijn als naar deze modellen niet wordt verwezen door fragmenten.
 
