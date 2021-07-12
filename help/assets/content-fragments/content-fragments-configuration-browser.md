@@ -2,10 +2,9 @@
 title: Inhoudsfragmenten - Configuratiebrowser
 description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM krachtige koploze leveringseigenschappen te gebruiken.
 feature: Contentfragmenten
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -36,7 +35,7 @@ Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
 * Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiesbrowser
 * De configuratie toepassen op de map Middelen
 
-### Functionaliteit van inhoudsfragment inschakelen in configuratiebrowser {#enable-content-fragment-functionality-in-configuration-browser}
+### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
 Als u [bepaalde functionaliteit voor inhoudsfragmenten wilt gebruiken](#creating-a-content-fragment-model), moet u **must** eerst inschakelen via de **Configuratiebrowser**:
 
@@ -64,7 +63,7 @@ Als u [bepaalde functionaliteit voor inhoudsfragmenten wilt gebruiken](#creating
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Pas de Configuratie op uw Omslag van Activa {#apply-the-configuration-to-your-assets-folder} toe
+### De configuratie toepassen op de middelenmap {#apply-the-configuration-to-your-assets-folder}
 
 Wanneer de configuratie **global** is ingeschakeld voor de functionaliteit van inhoudsfragmenten, wordt deze vervolgens toegepast op elke map Assets.
 
