@@ -1,16 +1,15 @@
 ---
 title: Inhoud voorbereiden voor vertaling
 description: Leer hoe u inhoud voorbereidt voor vertaling.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Taalkopie
+role: Admin
+exl-id: afc577a2-2791-481a-ac77-468011e4302e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud voorbereiden voor vertaling {#preparing-content-for-translation}
 
@@ -59,7 +58,7 @@ Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 
 Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [Een vertaalproject maken](managing-projects.md).) Zie [Inhoud vertalen voor meertalige websites](overview.md) voor een overzicht van het proces voor het vertalen van inhoud in AEM.
 
-## Een taalbasis maken {#creating-a-language-root}
+## Een hoofdmap voor talen maken {#creating-a-language-root}
 
 Maak een taalhoofdmap als de hoofdpagina van een taalkopie die de taal van de inhoud identificeert. Nadat u de taalwortel creeert, kunt u vertaalprojecten tot stand brengen die het taalexemplaar omvatten.
 
@@ -83,7 +82,7 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
 
 1. Klik of tik **Create**. Klik of tik in het bevestigingsdialoogvenster op **Done** om terug te keren naar de Sites-console of **Open** om de taalkopie te openen.
 
-## De status van taalhoofdmappen bekijken {#seeing-the-status-of-language-roots}
+## De status van taalwortels bekijken {#seeing-the-status-of-language-roots}
 
 AEM biedt een **References**-spoor met een lijst met taalwortels die zijn gemaakt.
 
