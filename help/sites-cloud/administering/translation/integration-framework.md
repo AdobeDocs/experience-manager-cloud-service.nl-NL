@@ -1,18 +1,17 @@
 ---
 title: Het framework voor vertaalintegratie configureren
 description: Leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertalen te integreren.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Taalkopie
+role: Admin
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 0%
 
 ---
 
-
-# Het vormen van het Kader van de Integratie van de Vertaling {#configuring-the-translation-integration-framework}
+# Het framework voor vertaalintegratie configureren {#configuring-the-translation-integration-framework}
 
 Het vertaalintegratiekader integreert met vertaaldiensten van derden om de vertaling van AEM inhoud te ordenen. Het gaat om drie basisstappen.
 
@@ -78,7 +77,7 @@ Een nieuwe vertaalconfiguratie maken:
    1. Typ desgewenst een **Naam** die u wilt gebruiken voor het opslagknooppunt dat de configuratie opslaat.
 1. Configureer in het venster **Configuratie bewerken** de eigenschappen op de tabbladen **Sites** en **Assets** en klik of tik op **Opslaan en sluiten**.
 
-### Site Configuration Properties {#sites-configuration-properties}
+### Eigenschappen van siteconfiguratie {#sites-configuration-properties}
 
 Het tabblad **Sites** bepaalt hoe de vertaling van pagina-inhoud wordt uitgevoerd.
 
@@ -91,7 +90,7 @@ Het tabblad **Sites** bepaalt hoe de vertaling van pagina-inhoud wordt uitgevoer
 | Pagina-elementen vertalen | This property define how to translate assets that are added to components from the file system or referenced from assets:<br>- Do not translate: Pagina-elementen worden niet omgezet.<br>- Workflow voor het vertalen van sites gebruiken: De activa worden behandeld volgens de configuratieeigenschappen op  **** Sitestab.<br>- Workflow voor het vertalen van middelen gebruiken: De activa worden behandeld volgens de eigenschappen die op het  **** Assetstab worden gevormd. |
 | Vertaling automatisch uitvoeren | Schakel deze eigenschap in om na het maken van vertaalprojecten automatisch vertaaltaken uit te voeren. U hebt geen mogelijkheid om de vertaaltaak te beoordelen en te vergroten wanneer u deze optie selecteert. |
 
-### Eigenschappen voor middelenconfiguratie {#assets-configuration-properties}
+### Eigenschappen van middelenconfiguratie {#assets-configuration-properties}
 
 De eigenschappen van activa bepalen hoe te om activa te vormen. Zie [Taalkopieën maken voor elementen](/help/assets/translate-assets.md) voor meer informatie over het vertalen van elementen.
 
@@ -105,7 +104,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie [Taalkopieë
 | Tags vertalen | Activeer deze eigenschap om codes te vertalen die aan het element zijn gekoppeld. |
 | Vertaling automatisch uitvoeren | Selecteer deze eigenschap als u na het maken van vertaalprojecten automatisch vertaaltaken wilt uitvoeren. U hebt geen gelegenheid om de vertaalbaan te herzien of te behandelen wanneer u deze optie selecteert. |
 
-## Pagina&#39;s configureren voor vertaling {#configuring-pages-for-translation}
+## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 
 Als u de vertaling van uw bronpagina&#39;s in andere talen wilt configureren, koppelt u de pagina&#39;s aan de volgende cloudconfiguraties:
 
