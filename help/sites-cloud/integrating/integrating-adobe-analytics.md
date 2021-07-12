@@ -2,9 +2,9 @@
 title: Integreren met Adobe Analytics
 description: 'Integreren met Adobe Analytics '
 feature: Beheer
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 >
 >Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening Analytics hebben, kan om toegang tot het Pak van de Stichting van Analytics voor Experience Cloud verzoeken. This Foundation Pack provided volume limited use of Analytics.
 
-## Adobe Analytics-configuratie {#analytics-configuration} maken
+## Adobe Analytics-configuratie maken {#analytics-configuration}
 
 1. Navigeer naar **Tools** → **Cloud Services**.
 2. Selecteer **Adobe Analytics**.
@@ -51,7 +51,7 @@ De configuratiegebieden in het venster van de Configuratie van Adobe Analytics z
 
 Ga naar: **Sites** → **Selecteer een sitepagina** → **Properties** → **Advanced** → **Configuration** → selecteer de configuratietechnicus.
 
-## Adobe Analytics op AEM sites integreren met behulp van Adobe starten {#analytics-launch}
+## Adobe Analytics integreren op AEM sites met behulp van Adobe starten {#analytics-launch}
 
 Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De regels kunnen worden bepaald om afbeelding uit te voeren en een postvraag aan Adobe Analytics te maken:
 
