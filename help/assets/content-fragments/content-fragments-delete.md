@@ -1,22 +1,21 @@
 ---
 title: Contentfragmenten - Overwegingen verwijderen
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Contentfragmenten
+role: User
+exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 10%
 
 ---
-
 
 # Contentfragmenten - Overwegingen verwijderen {#content-fragments-delete-considerations}
 
 Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
 
-## Machtigingen - {#permissions-delete-or-not-delete} verwijderen of niet verwijderen
+## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
 De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met vele industrieën die moeten beperken en controleren hoe deze voorrechten worden verdeeld.
 
@@ -42,7 +41,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 >
 >Zie ook hoe te de Verrichtingen van het Beheer van de Gebruiker in AEM controleren. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Machtigingen alleen vereist voor bewerkingsfunctionaliteit {#permissions-required-for-editor-functionality-only}
+## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
 Voor gebruikers die een contentfragment moeten bewerken of bijwerken, **zonder hun toe te staan om een volledig fragment te verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de contentfragmenteditor vereist dat tijdelijke subelementen kunnen worden verwijderd.
 
