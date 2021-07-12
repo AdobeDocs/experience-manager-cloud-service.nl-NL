@@ -2,9 +2,9 @@
 title: Slimme beeldverwerking
 description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmerken van elke gebruiker toepast om automatisch de juiste afbeeldingen te leveren die geoptimaliseerd zijn voor hun ervaring, wat resulteert in betere prestaties en betrokkenheid.
 feature: Middelenbeheer, uitvoeringen
-role: Business Practitioner
+role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0946383504aec025bda8c4087495deb2526b5fe3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2583'
 ht-degree: 1%
@@ -214,7 +214,7 @@ Het releaseschema voor Smart Imaging DPR en netwerkoptimalisatie is als volgt:
    1. Geef aan of het via HTTP/2 moet werken.
 
 1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken worden voorgelegd.
-1. Wanneer Adobe klaar is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
+1. Wanneer Adobe bereid is om uw verzoek te behandelen, neemt de Zorg van de Klant contact u op om een doeldatum te coördineren en te plaatsen.
 1. **Optioneel**: U kunt Slim beeld in het Staging desgewenst testen alvorens Adobe de nieuwe eigenschap aan productie duwt.
 1. U wordt op de hoogte gesteld na voltooiing door de klantenservice.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
