@@ -1,18 +1,17 @@
 ---
 title: Inhoud opnieuw gebruiken - Beheer van meerdere sites en Live kopiëren
 description: Maak kennis met de introductie van het hergebruik van inhoud met AEM krachtige functies Live Copy en Multi Site Manager.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Beheer van meerdere sites
+role: Admin
+exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
 
-
-# Inhoud opnieuw gebruiken: Beheer van meerdere sites en actieve kopie {#multi-site-manager-and-live-copy}
+# Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy {#multi-site-manager-and-live-copy}
 
 Met MSM (Multi Site Manager) kunt u dezelfde site-inhoud op meerdere locaties gebruiken. MSM gebruikt hiervoor de Live Copy-functionaliteit.
 
@@ -243,7 +242,7 @@ Koppelingen die bijvoorbeeld van de tweede naar de eerste blauwdruk wijzen, word
 
 Een actieve kopie wordt een gestapelde live kopie genoemd wanneer deze wordt gemaakt als het onderliggende element van een ondiepe Live kopie. Het gedraagt zich op de zelfde manier zoals [genestelde Levende Exemplaar ](#nested-live-copies).
 
-### Bronconfiguraties, blauwdrukken en blauwdrukken {#source-blueprints-and-blueprint-configurations}
+### Bron-, blauwdruk- en blauwdrukconfiguraties {#source-blueprints-and-blueprint-configurations}
 
 Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, staat MSM u ook toe om een blauwdrukconfiguratie te bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn:
 
@@ -286,11 +285,11 @@ Een rollout-configuratie bepaalt wanneer en hoe een Live Copy wordt gesynchronis
 
 De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan één Levend Exemplaar de zelfde rollout configuratie kan gebruiken. Verschillende [implementatieconfiguraties](live-copy-sync-config.md#installed-rollout-configurations) zijn opgenomen in een standaardinstallatie.
 
-### Uitrolconflicten {#rollout-conflicts}
+### Conflicten bij rollout {#rollout-conflicts}
 
 Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Zo is het nuttig om zich van bewust te zijn hoe AEM om het even welke [conflicten behandelt die tijdens rollout zouden kunnen voorkomen.](rollout-conflicts.md)
 
-### Overerving en synchronisatie opheffen en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
+### Overerving en synchronisatie opschorten en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Elke pagina en component in een live kopie is via een live relatie gekoppeld aan de bronpagina en -component ervan. De live relatie configureert de synchronisatie van Live Copy-inhoud van de bron.
 
@@ -298,7 +297,7 @@ U kunt de overerving van Live kopie voor een pagina van Live kopie **opschorten*
 
 Tijdens het bewerken van een afzonderlijke pagina kunnen auteurs Overerving **Annuleren** voor een component. Wanneer de overerving wordt geannuleerd, wordt de live relatie onderbroken en vindt de synchronisatie niet plaats voor die component. Het annuleren van overerving en synchronisatie is handig wanneer subsecties van de inhoud moeten worden aangepast.
 
-### Live kopie {#detaching-a-live-copy} ontkoppelen
+### Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 
 U kunt ook [een Live kopie](creating-live-copies.md#detaching-a-live-copy) loskoppelen van de blauwdruk om alle verbindingen te verwijderen.
 
@@ -328,7 +327,7 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
 1. Breng de gewenste wijzigingen aan in de broninhoud. U dient het normale proces voor het beoordelen en goedkeuren van inhoud dat uw organisatie heeft ingesteld, te gebruiken.
 1. [Schuif ](creating-live-copies.md#rolling-out-a-blueprint) de blauwdruk uit of  [synchroniseer de actieve ](creating-live-copies.md#synchronizing-a-live-copy) kopie met de wijzigingen.
 
-## MSM {#customizing-msm} aanpassen
+## MSM aanpassen {#customizing-msm}
 
 MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikkeldheid kan aanpassen die wanneer het delen van inhoud kan bestaan.
 
