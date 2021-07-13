@@ -1,9 +1,9 @@
 ---
 title: Aan de slag met Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van het gebruik en het gebruik van Cloud Acceleration Manager.
-source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
+source-git-commit: 1e13df5c6dfb9c0d28a540ce089cf722978bd8d3
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '508'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Aan de slag met Cloud Acceleration Manager {#get-started-cam}
 
-De Manager van de Versnelling van de wolk (CAM) is een vrije wolkengebaseerde toepassing die een beoordeling van de huidige AEM van een klant verstrekt en helpt hun reis aan AEM als Cloud Service na de geadviseerde de migratiemethodologie van Adobe beheren.
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen Adobe-procedures, tips, documentatie en tools om u te helpen bij elke fase van de reis naar AEM als Cloud Service.
 
 ## Doelstelling {#objective}
 
@@ -22,13 +22,15 @@ Dit document helpt u te begrijpen hoe u aan de slag kunt met de Manager van de V
 
 ## Cloudversnellingsbeheer gebruiken {#using-cam}
 
-Cloud Acceleration Manager (CAM) biedt klanten en partners een one-stop-ervaring voor migraties in de vorm van een migratiewizard die hen tijdens de reis begeleidt door een eerste beoordeling te bieden, waarbij ze naar de juiste gereedschappen, documentatie en beste praktijken worden verwezen om ervoor te zorgen dat Go-live in AEM als Cloud Service een succes wordt.
+Cloud Acceleration Manager (CAM) biedt een &#39;one-stop&#39;-ervaring voor migraties in de vorm van een geleide reis door een eerste beoordeling te bieden en ze aan te wijzen op de juiste tools, documentatie en best practices om ervoor te zorgen dat Go-live op AEM als Cloud Service een succes wordt.
 
 ### Navigeren naar Cloud Acceleration Manager {#navigating}
 
 Ga als volgt te werk om naar CAM (Cloud Acceleration Manager) te navigeren:
 
 1. Meld u aan bij [Adobe Experience Cloud](https://experience.adobe.com).
+
+1. Klik op **Experience Manager** kaart.
 
 1. Klik op **Launch** van **Cloud Acceleration Manager**-kaart om de bestemmingspagina te openen.
 
@@ -45,7 +47,7 @@ Voer de onderstaande stappen uit om een nieuw project te maken:
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >De gebruikers die CAM voor het eerst gebruiken zullen een dialoogdoos zien om een nieuw project tot stand te brengen. De gebruikers die CAM in het verleden hebben gebruikt zullen een standaardproject zien.
+   >De gebruikers die CAM voor het eerst gebruiken zullen een dialoogdoos zien om een nieuw project tot stand te brengen. De gebruikers die CAM in het verleden hebben gebruikt zullen een standaardproject of eerder gecreeerd projecten zien.
 
 1. Voer de **Naam** en **Beschrijving** voor uw project in en klik op **Maken**.
 
@@ -89,4 +91,4 @@ Voer de onderstaande stappen uit om uw project te verwijderen:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap via de gereedheidsfase.
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap in de [Gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
