@@ -2,10 +2,10 @@
 title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 80%
+source-wordcount: '657'
+ht-degree: 59%
 
 ---
 
@@ -19,26 +19,31 @@ ht-degree: 80%
 
 ## Voordelen van de overstap naar AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
-AEM as a Cloud Service biedt een schaalbare, veilige en flexibele technologische basis voor Experience Manager Sites en Assets, waardoor marketeers en IT zich kunnen richten op het aanbieden van indrukwekkende ervaringen op schaal.
+AEM als Cloud Service biedt een schaalbare, veilige en flexibele technologiebasis voor Experience Manager Assets, Forms en screens waarmee marketers en IT zich kunnen richten op het leveren van effectieve ervaringen op schaal.
 
 Met AEM as a Cloud Service kunnen uw teams zich richten op innovatie, en zitten ze niet vast aan alleen maar plannen voor productupgrades. Nieuwe productfuncties worden grondig getest en zonder systeemonderbreking aan uw teams geleverd, zodat zij altijd toegang hebben tot de nieuwste en meest geavanceerde applicaties.
 
 ## Inzicht in het overgangsproces naar Cloud Service {#understanding-move}
 
-De overgang naar Cloud Service bestaat uit drie fasen: planning, uitvoering en de stappen na Go-Live.
+De overgang naar de Cloud Service omvat de volgende fasen:
+
+* Gereedheid
+* Implementatie
+* Live gaan
+* Publiceren en live gaan
 
 Voor een geslaagde en soepele overgang moet u zorgen voor een goede planning en volgt u de best practices die in deze gids worden beschreven.
 
-De onderstaande afbeelding toont de aanbevolen overgang naar Cloud Service.
+In de onderstaande afbeelding ziet u een afbeelding van de aanbevolen overgang naar AEM als Cloud Service.
 
-![afbeelding](/help/move-to-cloud-service/assets/home-img1.png)
+![afbeelding](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-Meer informatie over de verschillende fasen van de overgang naar de Cloud Service:
 
-* **[Planning](/help/move-to-cloud-service/planning.md)**
-* **[Uitvoering](/help/move-to-cloud-service/execution.md)**
-* **[Stappen na Go-Live](/help/move-to-cloud-service/post-go-live.md)**
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen Adobe-procedures, tips, documentatie en tools om u te helpen bij elke fase van de reis naar AEM als Cloud Service.
+
+Raadpleeg Aan de slag met Cloud Acceleration Manager om uw migratiereis te starten.
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
@@ -52,6 +57,7 @@ Meer informatie over de verschillende fasen van de overgang naar de Cloud Servic
 | [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
+| [Gebruikershandleiding voor schermen](/help/screens-cloud/home.md) | Begrijp hoe u Experience Managers Screens als Cloud Service moet gebruiken en toedienen. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
