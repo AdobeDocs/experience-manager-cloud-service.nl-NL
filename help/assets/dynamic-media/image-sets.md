@@ -4,10 +4,10 @@ description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Afbeeldingssets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '1983'
-ht-degree: 8%
+source-wordcount: '1977'
+ht-degree: 5%
 
 ---
 
@@ -49,9 +49,9 @@ Zo kunt u snel aan de slag:
 
    In de Reeksen van het Beeld, klikken de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
-   Tik of klik op **[!UICONTROL Create > Image Sets]** om een Afbeeldingsset in elementen te maken. Voeg vervolgens afbeeldingen toe en klik op **[!UICONTROL Save]**.
+   Als u een Afbeeldingsset in elementen wilt maken, selecteert u **[!UICONTROL Create]** > **[!UICONTROL Image Sets]**. Voeg vervolgens afbeeldingen toe en klik op **[!UICONTROL Save]**.
 
-   Zie [Afbeeldingsset-elementen voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
+   Zie [Afbeeldingsset voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -59,12 +59,12 @@ Zo kunt u snel aan de slag:
 
    Beheerders kunnen voorinstellingen voor de afbeeldingsset Viewer maken of wijzigen. Als u de afbeeldingsset wilt weergeven met een viewer-voorinstelling, selecteert u de afbeeldingsset en selecteert u **[!UICONTROL Viewers]** in de vervolgkeuzelijst met linkerrails.
 
-   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** voor informatie over het maken of bewerken van voorinstellingen voor viewers.
+   Als u viewervoorinstellingen wilt maken of bewerken, raadpleegt u **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 
-1. (Optioneel) [Afbeeldingssets weergeven](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) die zijn gemaakt met behulp van voorinstellingen voor batchsets.
+1. (Optioneel) [Afbeeldingssets weergeven](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) die zijn gemaakt met voorinstellingen voor batchsets.
 1. [Voorvertoning van afbeeldingssets](/help/assets/dynamic-media/previewing-assets.md).
 
-   Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Tik op de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van de linkerspoordrop-down lijst.
+   Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Selecteer de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van de linkerspoordrop-down lijst.
 
 1. [Afbeeldingssets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
@@ -76,7 +76,7 @@ Zo kunt u snel aan de slag:
 
    Selecteer de Afbeeldingsset en selecteer **[!UICONTROL Viewers]** in de vervolgkeuzelijst voor het linkerspoor.
 
-   Zie [Een afbeeldingset koppelen aan een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/dynamic-media/embed-code.md).
+   Zie [Een afbeelding koppelen die is ingesteld op een webpagina](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/dynamic-media/embed-code.md).
 
 Zie [Afbeeldingssets bewerken](#editing-image-sets) als u Afbeeldingssets wilt bewerken. Bovendien kunt u [Eigenschappen van de Reeks van het Beeld bekijken en uitgeven](/help/assets/manage-digital-assets.md#editing-properties).
 
@@ -123,10 +123,10 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
 
-**Een afbeeldingsset maken:**
+**Afbeeldingssets maken:**
 
-1. Tik in Adobe Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole.
-1. Tik op **[!UICONTROL Navigation > Assets]**. Ga naar de plaats waar u een afbeeldingset wilt maken en tik vervolgens op **[!UICONTROL Create > Image Set]** om de pagina Editor van afbeeldingset te openen.
+1. Selecteer in Adobe Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
+1. Tik op **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een afbeeldingsset wilt maken en ga vervolgens naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina Editor afbeeldingsset te openen.
 
    U kunt de set ook maken vanuit een map die uw assets bevat.
 
@@ -138,12 +138,12 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Add Asset]** in de linkerbovenhoek van de pagina Editor afbeeldingsset.
+   * Selecteer **[!UICONTROL Add Asset]** in de linkerbovenhoek van de pagina Editor afbeeldingsset.
 
-   * Tik in het midden van de pagina Editor afbeeldingsset op **[!UICONTROL Tap to open Asset Selector]**.
-   Tik om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde elementen hebben een vinkje. Tik **[!UICONTROL Select]** bij de rechterbovenhoek van de pagina als u klaar bent.
+   * Selecteer **[!UICONTROL Tap to open Asset Selector]** in het midden van de pagina Editor afbeeldingsset.
+   Tik om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde elementen hebben een vinkje. Als u klaar bent, selecteert u **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
 
-   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
+   Met de Kiezer van Activa, kunt u naar activa zoeken door in een sleutelwoord te typen en **[!UICONTROL Return]** te selecteren. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door het pictogram Weergave te selecteren en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -159,12 +159,12 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Asset]**.
+   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en selecteert u **[!UICONTROL Delete Asset]**.
 
-   * Tik op **[!UICONTROL Preset]** en selecteer vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
+   * Als u een voorinstelling wilt toepassen, selecteert u **[!UICONTROL Preset]** in de rechterbovenhoek van de pagina en selecteert u vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen.
    >[!NOTE]
    >
-   >Wanneer u de afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen. Of u kunt Experience Managers de miniatuur automatisch laten selecteren op basis van de elementen in de afbeeldingsset. Tik op **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset om een miniatuur te selecteren. Selecteer vervolgens een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kiest u **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]** als u wilt dat Experience Manager een miniatuur genereert uit de afbeeldingsset.
+   >Wanneer u de afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen. Of u kunt Experience Managers de miniatuur automatisch laten selecteren op basis van de elementen in de afbeeldingsset. Als u een miniatuur wilt selecteren, selecteert u **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset. Selecteer vervolgens een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kiest u **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]** als u wilt dat Experience Manager een miniatuur genereert uit de afbeeldingsset.
 
 1. Klik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
@@ -178,7 +178,7 @@ U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voori
 
 Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* weergegeven in de gebruikersinterface. U kunt deze sets op drie verschillende manieren weergeven. (Deze methoden zijn ook beschikbaar als u de afbeeldingssets in de gebruikersinterface hebt gemaakt.)
 
-* Open de eigenschappen van een element. Eigenschappen geven aan naar welke sets van het geselecteerde element wordt verwezen of een lid van. Tik op de naam van de set om de volledige set weer te geven.
+* Open de eigenschappen van een element. Eigenschappen geven aan naar welke sets van het geselecteerde element wordt verwezen of een lid van. Selecteer de naam van de set om de volledige set weer te geven.
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
@@ -210,27 +210,27 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de muisaanwijzer boven een afbeeldingsset en tik op **[!UICONTROL Edit]** (potloodpictogram).
-   * Tik met de muis over een afbeeldingsset op **[!UICONTROL Select]** (vinkpictogram) en tik op **[!UICONTROL Edit]** in de werkbalk.
-   * Tik op een afbeeldingsset en tik op **[!UICONTROL Edit]** (potloodpictogram) in de werkbalk.
+   * Houd de cursor boven een afbeeldingsset-element en selecteer **[!UICONTROL Edit]** (potloodpictogram).
+   * Als u de cursor boven een afbeeldingsset plaatst, selecteert u **[!UICONTROL Select]** (vinkpictogram) en selecteert u **[!UICONTROL Edit]** in de werkbalk.
+   * Tik op een afbeeldingsset en selecteer **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit om de afbeeldingen in de Afbeeldingsset te bewerken:
 
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, klikt u op de kolomkop.
-   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en tik op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
+   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
 
       >[!NOTE]
       >
       >Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
-   * Als u een element wilt verwijderen, selecteert u het en tikt u op **[!UICONTROL Delete Asset]** of klikt u op .
-   * Tik op **[!UICONTROL Preset]** en selecteer een viewervoorinstelling om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
-   * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer het en tik op **[!UICONTROL Select]**.
-   * Als u een volledige afbeeldingsset wilt verwijderen, navigeert u naar de Afbeeldingsset, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
+   * Als u een element wilt verwijderen, selecteert u het en selecteert u **[!UICONTROL Delete Asset]**.
+   * Als u een voorinstelling wilt toepassen, selecteert u **[!UICONTROL Preset]** in de rechterbovenhoek van de pagina en selecteert u vervolgens een voorinstelling voor de viewer.
+   * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer het en selecteer **[!UICONTROL Select]**.
+   * Als u een volledige afbeeldingsset wilt verwijderen, navigeert u naar de afbeeldingsset, selecteert u deze en selecteert u **[!UICONTROL Delete]**.
 
    >[!NOTE]
    >
-   >U kunt de afbeeldingen in een Afbeeldingsset bewerken. Navigeer naar de set en tik **[!UICONTROL Set Members]** in de linkertrack. Tik op het potloodpictogram op een element om het bewerkingsvenster te openen.
+   >U kunt de afbeeldingen in een Afbeeldingsset bewerken. Navigeer naar de set en selecteer **[!UICONTROL Set Members]** in de linkertrack. Als u het bewerkingsvenster wilt openen, selecteert u het potloodpictogram op een element.
 
 1. Tik **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
