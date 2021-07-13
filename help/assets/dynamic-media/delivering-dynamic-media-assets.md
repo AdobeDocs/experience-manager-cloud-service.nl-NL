@@ -4,10 +4,10 @@ description: Leer hoe u Dynamic Media-middelen kunt leveren.
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -30,11 +30,11 @@ Met Dynamic Media hebt u verschillende opties:
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
-* [Dynamic Media-middelen toevoegen aan webpagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md)
-* [Hotlinkbeveiliging in Dynamic Media activeren](/help/assets/dynamic-media/hotlink-protection.md)
+* [Dynamic Media-elementen toevoegen aan webpagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md)
+* [Hotlink-beveiliging activeren in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Geoptimaliseerde afbeeldingen voor een responsieve site leveren](/help/assets/dynamic-media/responsive-site.md)
+* [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Levering van inhoud](/help/assets/dynamic-media/http2faq.md)
 * [De CDN-cache ongeldig maken via Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
