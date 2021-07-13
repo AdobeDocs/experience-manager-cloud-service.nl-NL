@@ -1,9 +1,9 @@
 ---
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Klik op uw projectkaart om de bestemmingspagina van het project te openen en aan
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Zie Een project maken en beheren in de Cloud Acceleration Manager voor meer informatie.
+>Raadpleeg [Een project maken en beheren in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) voor meer informatie.
 
 
 ## Lokale ontwikkelingskaart gebruiken {#local-development}
@@ -102,4 +102,4 @@ U kunt ook de grootte van specifieke repository paden schatten met de parameter 
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase gebruikt, kunt u nu verdergaan met het evalueren van de volgende stap met de GoLive-fase.
+Als u eenmaal hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase gebruikt, kunt u nu verdergaan met het evalueren van de volgende stap, [De Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en) gebruiken.
