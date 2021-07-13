@@ -1,11 +1,10 @@
 ---
 title: Werken met Dynamic Media
 description: Dynamic Media helpt bij het leveren van rijke visuele merchandising- en marketingmiddelen op aanvraag, die automatisch worden geschaald voor consumptie op internet, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, geoptimaliseerde netwerk
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
