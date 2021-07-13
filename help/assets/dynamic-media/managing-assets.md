@@ -1,27 +1,27 @@
 ---
-title: Informatie over het beheren van Dynamic Media-elementen
+title: Dynamic Media-middelen beheren
 description: Leer hoe u met Dynamic Media-middelen werkt.
 feature: Beheer van bedrijfsmiddelen
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 13%
+source-wordcount: '119'
+ht-degree: 7%
 
 ---
 
-# Informatie over het beheren van Dynamic Media-elementen {#managing-assets}
+# Dynamic Media-middelen beheren {#managing-assets}
 
 Het beheren van Dynamic Media-elementen - afbeeldingen, video en interactieve elementen - nadat deze zijn geüpload, omvat veel taken zoals voorvertonen, downloaden of publiceren.
 
-Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen voor viewers toepassen](viewer-presets.md) en [Voorinstellingen voor afbeeldingen toepassen](image-presets.md).
+Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Viewervoorinstellingen toepassen](viewer-presets.md) en [Afbeeldingsvoorinstellingen toepassen](image-presets.md).
 
-Algemene informatie over het beheer van elementen vindt u in [Elementen beheren met de aanraakinterface](/help/assets/manage-digital-assets.md).
+Algemene informatie over het beheer van elementen vindt u in [Middelen beheren met de aanraakinterface](/help/assets/manage-digital-assets.md).
 
 In de volgende onderwerpen wordt beschreven wat u kunt doen om Dynamic Media-middelen te beheren:
 
 * [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
+* [Dynamic Media-middelen voorvertonen](previewing-assets.md)
 * [Dynamic Media-middelen publiceren](publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](working-with-selectors.md)
