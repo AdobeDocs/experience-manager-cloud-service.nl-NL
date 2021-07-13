@@ -1,10 +1,7 @@
 ---
 title: Aan de slag met Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van het gebruik en het gebruik van Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 1%
@@ -62,11 +59,11 @@ Voer de onderstaande stappen uit om een nieuw project te maken:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
-## Het project {#manage-project} beheren
+## Het project beheren {#manage-project}
 
 U kunt de projectnaam, beschrijving, miniatuurafbeelding bewerken of het project verwijderen.
 
-### Het project {#edit-project} bewerken
+### Het project bewerken {#edit-project}
 
 Voer de onderstaande stappen uit om uw project te bewerken:
 
@@ -80,7 +77,7 @@ Voer de onderstaande stappen uit om uw project te bewerken:
 
 1. Klik op **Bijwerken** om uw wijzigingen vast te leggen.
 
-### Het project {#delete-project} verwijderen
+### Het project verwijderen {#delete-project}
 
 Voer de onderstaande stappen uit om uw project te verwijderen:
 
@@ -90,6 +87,6 @@ Voer de onderstaande stappen uit om uw project te verwijderen:
 
 1. Klik op **Delete** om de stap te bevestigen.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap via de gereedheidsfase.
