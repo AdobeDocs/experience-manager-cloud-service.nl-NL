@@ -2,10 +2,10 @@
 title: Implementatiefase
 description: Implementatiefase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 87%
+source-wordcount: '950'
+ht-degree: 89%
 
 ---
 
@@ -110,17 +110,4 @@ Volg de onderstaande bronnen voor informatie over het gebruik van Cloud Manager 
 
 * [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## Best practices voor Go-Live-voorbereiding {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Go-Live-voorbereiding"
->abstract="Om ervoor te zorgen dat AEM als Cloud Service probleemloos en met succes kan worden gebruikt, moet u plannen voor het bevriezen van code en inhoud, testversies, aanvulling van inhoud, prestatietests, beveiligingstests en meer."
-
-Voor een vloeiende en geslaagde Go-Live van AEM as a Cloud Service voert u de volgende stappen uit:
-
-* &#39;Bevriesperiode&#39; voor code en content inplannen
-* De content een laatste keer aanvullen
-* Testiteraties voltooien
-* Prestatie- en beveiligingstests uitvoeren
-* Snelle overstap
