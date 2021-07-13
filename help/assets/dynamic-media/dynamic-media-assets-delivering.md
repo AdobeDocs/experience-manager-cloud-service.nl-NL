@@ -1,16 +1,15 @@
 ---
-title: Dynamic Media-assets leveren
+title: Dynamic Media-middelen leveren
 description: Met Dynamic Media hebt u verschillende opties om uw Dynamic Media-middelen - zowel video als afbeeldingen - naar uw website te verzenden.
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
 
-# Dynamic Media-assets leveren{#delivering-dynamic-media-assets}
+# Dynamic Media-middelen leveren{#delivering-dynamic-media-assets}
 
 Hoe u uw Dynamic Media-middelen kunt leveren - zowel video als afbeeldingen - hangt af van de manier waarop uw website is geïmplementeerd.
 
@@ -21,5 +20,5 @@ Met Dynamic Media hebt u verschillende opties:
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
-* [Dynamic Media-assets aan pagina&#39;s toevoegen](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
