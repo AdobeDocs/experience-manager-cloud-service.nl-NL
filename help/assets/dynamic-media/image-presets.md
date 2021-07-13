@@ -1,17 +1,17 @@
 ---
-title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
+title: Voorinstellingen Dynamic Media-afbeelding toepassen
 description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
 feature: Voorinstellingen afbeelding, viewers, uitvoeringen
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
-# Voorinstellingen voor Dynamic Media-afbeelding toepassen {#applying-image-presets}
+# Voorinstellingen Dynamic Media-afbeelding toepassen {#applying-image-presets}
 
 Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen van verschillende grootten, indelingen of andere afbeeldingseigenschappen leveren. U kunt een voorinstelling kiezen wanneer u afbeeldingen exporteert om deze opnieuw op te maken volgens de specificaties die de beheerder heeft aangegeven.
 
@@ -27,7 +27,7 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
 
 **Voorinstellingen Dynamic Media-afbeelding toepassen:**
 
-1. Open het element en tik in de linkertrack op de vervolgkeuzelijst en tik vervolgens op **[!UICONTROL Renditions]**.
+1. Open het element en selecteer in de linkertrack de vervolgkeuzelijst en selecteer **[!UICONTROL Renditions]**.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
 1. Voer een van de volgende handelingen uit:
 
    * Selecteer een dynamische vertoning om een voorvertoning van de voorinstelling weer te geven.
-   * Tik op **[!UICONTROL URL]**, **[!UICONTROL Embed]** of **[!UICONTROL RESS]** om het pop-upvenster weer te geven.
+   * Selecteer **[!UICONTROL URL]**, **[!UICONTROL Embed]** of **[!UICONTROL RESS]** om het pop-upvenster weer te geven.
 
    >[!NOTE]
    >
