@@ -1,17 +1,17 @@
 ---
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 3%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Gereedheidsfase in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Nadat u een project hebt gemaakt in Cloud Acceleration Manager, kunt u nu de beschikbare gereedschappen uitvoeren in de gereedheidsfase.
+Nadat u een project hebt gemaakt in Cloud Acceleration Manager, kunt u nu de evaluatie starten van de huidige AEM-implementatie in de gereedheidsfase.
 
 De gereedheidsfase omvat:
 
@@ -39,7 +39,10 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Voer de volgende stappen uit om de BPA (Best Practices Analyzer) te downloaden en uit te voeren op een kloon van uw AEM.
+1. Voer de volgende stappen uit om BPA (Best Practices Analyzer) te downloaden.
+
+   >[!NOTE]
+   >Om een effect op zaken kritieke instanties te vermijden, adviseert men dat u BPA op een milieu van de Auteur in werking stelt dat zo dicht mogelijk aan de milieu van de Productie op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de auteurlaag van de productieomgeving.
 
    1. Navigeer naar [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal en download de Analysator van best practices als ZIP-bestand.
 
@@ -82,7 +85,7 @@ De **Report Properties**-kaart biedt informatie over rapporteigenschappen zoals 
 
 #### Overzicht van rapporten {#report-overview}
 
-Dit **Overzicht van het Rapport** kaart verstrekt de rapportbevindingen, zoals aangetoond in het hieronder cijfer.
+Deze **kaart van het Overzicht van het Rapport** verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich aan AEM als Cloud Service te bewegen, zoals aangetoond in het hieronder cijfer van toepassing zijn.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling te onderzoeken.
 
-1. Klik op **View** knoop van **Planning en Opstelling** kaart die alle relevante inhoud verstrekt die u zal helpen uw AEM migratie plannen en opzetten.
+1. Klik op **View** knoop van **Planning en Opstelling** kaart. Deze kaart biedt alle relevante inhoud die u helpt bij het plannen en instellen van uw AEM migratie.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Een inhoudscarrousel met relevante informatie voor deze fase van de migratiereis vertoningen.
+1. Een inhoudscarrousel geeft alle relevante informatie weer voor deze fase van de migratiereis.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap met de [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap in de [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
