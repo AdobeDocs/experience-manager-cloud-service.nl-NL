@@ -1,9 +1,9 @@
 ---
 title: Voordelen van het gebruik van Cloud Acceleration Manager
 description: Deze pagina benadrukt de belangrijkste voordelen van het gebruik van Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
 ## Volgende functies {#whats-next}
 
-Als u eenmaal hebt geleerd wat Cloud Acceleration Manager is, kunt u nu werken en aan de slag met Cloud Acceleration Manager.
+Zodra u hebt geleerd wat Manager van de Versnelling van de Wolk is, bent u nu klaar om te gebruiken en [Aan de slag met het Manager van de Versnelling van de Wolk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
