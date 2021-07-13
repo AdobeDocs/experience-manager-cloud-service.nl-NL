@@ -3,9 +3,9 @@ title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
-   Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
+   Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
-   Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
+   Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
 
    * Controleer of u beveiligde HTTPS gebruikt voor aanvragen voor rich media.
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
@@ -68,7 +68,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    Als u uw domeinen wilt zoeken, opent u [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
-   Klik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
+   Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
    1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
    1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Zorg van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
