@@ -1,7 +1,7 @@
 ---
 title: Fase na de migratie
 description: Fase na de migratie
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 93%
@@ -18,7 +18,6 @@ De volgende tools zijn handig om problemen met AEM as a Cloud Service op te loss
 * **Developer Console**
 * **CRXDE Lite**
 * **Tool voor beheren van logbestanden**
-
 
 ## Developer Console {#developer-console}
 
