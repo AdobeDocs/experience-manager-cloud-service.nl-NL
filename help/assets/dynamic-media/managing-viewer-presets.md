@@ -1,19 +1,19 @@
 ---
-title: Voorinstellingen voor viewers beheren
+title: Viewervoorinstellingen beheren
 description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 12%
+source-wordcount: '4123'
+ht-degree: 8%
 
 ---
 
-# Viewer-voorinstellingen beheren{#managing-viewer-presets}
+# Viewervoorinstellingen beheren{#managing-viewer-presets}
 
-Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. Beheerders kunnen voorinstellingen voor viewers maken. Er zijn instellingen beschikbaar voor een array met viewerconfiguratieopties. U kunt bijvoorbeeld de weergavegrootte of het zoomgedrag van de viewer wijzigen.
+Een viewervoorinstelling is een verzameling instellingen die bepalen hoe gebruikers rich-media-elementen op hun computerschermen en mobiele apparaten weergeven. Beheerders kunnen voorinstellingen voor viewers maken. Er zijn instellingen beschikbaar voor een array met viewerconfiguratieopties. U kunt bijvoorbeeld de weergavegrootte of het zoomgedrag van de viewer wijzigen.
 
 <!-- OBSOLETE SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
@@ -26,7 +26,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 Zie ook de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
-In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [Viewer-voorinstellingen toepassen](#applying-a-viewer-preset-to-an-asset).
+In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [Voorinstellingen voor viewers toepassen](#applying-a-viewer-preset-to-an-asset).
 
 >[!NOTE]
 >
@@ -38,15 +38,15 @@ Alle viewers die niet in de verpakking zijn opgenomen, ondersteunen toegankelijk
 
 Zie ook [Toetsenbordtoegankelijkheid en navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
-## Viewer-voorinstellingen beheren {#managing-viewer-presets-1}
+## Viewervoorinstellingen beheren {#managing-viewer-presets-1}
 
-U kunt in Adobe Experience Manager voorinstellingen voor viewers toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door te tikken op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+U kunt in Adobe Experience Manager voorinstellingen voor viewers toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]** te navigeren.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
 >[!NOTE]
 >
->Standaard geeft het systeem 15 voorinstellingen voor viewers weer wanneer u Viewers selecteert in de gedetailleerde weergave van elementen. U kunt deze limiet verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](#increasing-the-number-of-viewer-presets-that-display).
+>Standaard geeft het systeem 15 voorinstellingen voor viewers weer wanneer u Viewers selecteert in de gedetailleerde weergave van elementen. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor viewers dat wordt weergegeven, vergroten](#increasing-the-number-of-viewer-presets-that-display).
 
 ### Viewer-ondersteuning voor responsieve webpagina&#39;s {#viewer-support-for-responsive-designed-web-pages}
 
@@ -68,7 +68,7 @@ Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden ge
 * Apple iPad
 * Android™-smartphone
 * Android™-tablet
-* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
+* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)).
 
 ### Rijke mediatypen voor viewervoorinstellingen {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +78,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
  <tbody>
   <tr>
    <td><strong>Carousel-set</strong><br /> </td>
-   <td><p>Hotspots of afbeeldingen met hyperlinks of beide worden toegevoegd aan een reeks van twee of meer afbeeldingen. Een klant kan de afbeeldingen naar links of rechts pannen en vervolgens op een hotspot op een afbeelding klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</p> </td>
+   <td><p>Hotspots of afbeeldingen met hyperlinks of beide worden toegevoegd aan een reeks van twee of meer afbeeldingen. Een klant kan de afbeeldingen naar links of rechts pannen en vervolgens een hotspot op een afbeelding selecteren voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensionaal</strong><br /> </td>
@@ -94,15 +94,15 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
   </tr>
   <tr>
    <td><strong>Afbeeldingsset</strong></td>
-   <td>In de Vastgestelde kijker van het Beeld, kunnen de gebruikers verschillende meningen of kleurenvariaties van een punt zien door een duimnagelbeeld te klikken. Deze viewer beschikt ook over zoomgereedschappen waarmee u afbeeldingen nauwkeurig kunt bekijken.</td>
+   <td>In de Vastgestelde kijker van het Beeld, kunnen de gebruikers verschillende meningen of kleurenvariaties van een punt zien door een duimnagelbeeld te selecteren. Deze viewer beschikt ook over zoomgereedschappen waarmee u afbeeldingen nauwkeurig kunt bekijken.</td>
   </tr>
   <tr>
    <td><strong>Interactieve afbeelding</strong></td>
-   <td>Hotspots worden toegevoegd aan gedeelten van een afbeelding waarop een klant kan klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
+   <td>Hotspots worden toegevoegd aan delen van een afbeelding die een klant vervolgens kan selecteren voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
   </tr>
   <tr>
    <td><strong>Interactieve video</strong></td>
-   <td>Miniaturen worden toegevoegd aan tijdlijnsegmenten in een video waarop een klant vervolgens kan klikken voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
+   <td>Miniaturen worden toegevoegd aan tijdlijnsegmenten in een video die een klant vervolgens kan selecteren voor meer informatie of voor directe aankoop vanaf de landings-, categorie- of homepages van een website.</td>
   </tr>
   <tr>
    <td><strong>Gemengde media</strong></td>
@@ -142,7 +142,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
   </tr>
   <tr>
    <td><strong>In-/uitzoomen</strong></td>
-   <td>Hiermee kunnen gebruikers inzoomen op het gebied door erop te klikken. Gebruikers kunnen op besturingselementen klikken om in te zoomen, uit te zoomen en de standaardgrootte van de afbeelding te herstellen.</td>
+   <td>Hiermee kunnen gebruikers inzoomen op het gebied door het te selecteren. Gebruikers kunnen besturingselementen selecteren om in te zoomen, uit te zoomen en de standaardgrootte van de afbeelding te herstellen.</td>
   </tr>
  </tbody>
 </table>
@@ -160,10 +160,10 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referenti
 >[!NOTE]
 >
 >Alle voorinstellingen voor viewers die buiten de box vallen, worden geactiveerd (ingeschakeld), maar u moet ze publiceren.
->Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
+>Zie [Voorinstellingen van viewers publiceren](#publishing-viewer-presets).
 >
 >Alle nieuwe viewervoorinstellingen die u maakt en toevoegt, moeten zowel worden geactiveerd *als *gepubliceerd.
->Zie [Voorinstellingen van viewers activeren of deactiveren](#activating-or-deactivating-viewer-presets) en [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
+>Zie [Voorinstellingen van viewers activeren of deactiveren](#activating-or-deactivating-viewer-presets) en [Voorinstellingen van viewers publiceren](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -367,11 +367,11 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
  </tbody>
 </table>
 
-## Het aantal Viewer-voorinstellingen dat wordt weergegeven verhogen {#increasing-the-number-of-viewer-presets-that-display}
+## Het aantal weergegeven viewervoorinstellingen vergroten {#increasing-the-number-of-viewer-presets-that-display}
 
-In Experience Manager ziet u een groot aantal verschillende viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers]**. U kunt het aantal weergegeven viewers verhogen of verlagen.
+In Experience Manager ziet u een groot aantal verschillende viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View]** > **[!UICONTROL Viewers]**. U kunt het aantal weergegeven viewers verhogen of verlagen.
 
-**Het aantal Viewer-voorinstellingen dat wordt weergegeven verhogen:**
+**Het aantal weergegeven viewervoorinstellingen verhogen:**
 
 1. Navigeer naar CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigeer naar het lijstknooppunt voor viewervoorinstellingen op `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -384,9 +384,9 @@ In Experience Manager ziet u een groot aantal verschillende viewervoorinstelling
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tik op **[!UICONTROL Save All]**.
+1. Selecteer **[!UICONTROL Save All]**.
 
-## Een voorinstelling voor viewers maken {#creating-a-new-viewer-preset}
+## Voorinstellingen voor viewers maken {#creating-a-new-viewer-preset}
 
 Door viewervoorinstellingen te maken, kunt u verschillende instellingen toepassen op weergave en interactie met elementen. U hoeft echter geen voorinstellingen voor viewers te maken. Desgewenst kunt u de standaardvoorinstellingen voor viewers buiten de box gebruiken die al bij Experience Manager Assets worden geleverd.
 
@@ -398,46 +398,46 @@ Zie [Speciale overwegingen voor het maken van een interactieve viewervoorinstell
 
 Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carousel Banner Viewer](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Een viewervoorinstelling maken:**
+**Viewer-voorinstellingen maken:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In de upper-left hoek van Experience Manager, selecteer het embleem van de Experience Manager, dan in de linkerspoorstaaf, ga naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 
    ![6_5_viewervoorinstellingen](assets/6_5_viewerpresets.png)
 
-1. Tik op de pagina Voorinstellingen viewer op de werkbalk op **[!UICONTROL Create]**.
-1. Voer in het dialoogvenster **[!UICONTROL New Viewer Preset]** in het veld **[!UICONTROL Preset Name]** de naam van de nieuwe voorinstelling in. Kies zorgvuldig een naam. U kunt deze niet meer bewerken nadat u op **[!UICONTROL Create]** hebt getikt.
+1. Selecteer **[!UICONTROL Create]** op de pagina Voorinstellingen viewer op de werkbalk.
+1. Voer in het dialoogvenster **[!UICONTROL New Viewer Preset]** in het veld **[!UICONTROL Preset Name]** de naam van de nieuwe voorinstelling in. Kies een zorgvuldig gekozen naam; deze kan niet worden bewerkt nadat u **[!UICONTROL Create]** hebt geselecteerd.
 
    Wanneer u de voorinstelling later in deze stappen opslaat, wordt de naam weergegeven op de pagina Voorinstellingen viewer onder de kolomkop Titel voorinstelling.
 
-1. Selecteer in het keuzemenu Type rijke media het type voorinstelling voor viewer dat u wilt maken en tik vervolgens in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
+1. Selecteer in het vervolgkeuzemenu Type rijke media het type voorinstelling voor de viewer dat u wilt maken en selecteer **[!UICONTROL Create]** in de rechterbovenhoek van de pagina.
 
    Zie [Rijke mediatypen voor voorinstellingen van viewer](#rich-media-types-for-viewer-presets).
 
-1. Tik op het tabblad **[!UICONTROL Appearance]** op de pagina Editor van viewervoorinstellingen.
+1. Selecteer het tabblad **[!UICONTROL Appearance]** op de pagina Viewer Preset Editor.
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer in het keuzemenu **[!UICONTROL Selected Type]** een component waarvan u het visuele ontwerp wilt aanpassen. U kunt ook op een visueel element in de viewer tikken of erop klikken om het voor de configuratie te selecteren.
+   * Selecteer in het keuzemenu **[!UICONTROL Selected Type]** een component waarvan u het visuele ontwerp wilt aanpassen. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
 
       Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-      De CSS-opmaakeigenschappen voor elk type voorinstelling van viewer worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [Gemengde Media Viewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
+      De CSS-opmaakeigenschappen voor elk type voorinstelling van viewer worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [De viewer voor gemengde media aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
 
-   * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar Experience Manager Assets. Tik **[!UICONTROL Import CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** om het geüploade CSS-bestand te zoeken en aan de voorinstelling van de viewer te koppelen (schuif, indien nodig, de visuele editor omhoog om deze te zien).
+   * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar Experience Manager Assets. Als u het geüploade CSS-bestand wilt zoeken en aan de voorinstelling van de viewer wilt koppelen, selecteert u **[!UICONTROL Import CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** (schuif zo nodig de visuele editor omhoog om dit te zien).
 
       Wanneer u een CSS-bestand importeert, controleert de visuele editor of de CSS de juiste viewermarkeringen gebruikt. Als u bijvoorbeeld een zoomviewer maakt, moeten alle CSS-regels die u importeert, worden gedefinieerd met de viewerklassenaam `.s7mixedmediaviewer` die is gedefinieerd voor een bovenliggend viewerelement.
 
       U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS-markeertekens worden beschreven in het Help-onderwerp ** Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Zie [Zoomviewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) als u bijvoorbeeld wilt lezen over CSS-markeringen voor de Zoomviewer.) Het is echter mogelijk dat de visuele editor bepaalde CSS-waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
    >[!NOTE]
    >
-   >Als u de CSS liever rechtstreeks in onbewerkte vorm bewerkt, tikt u op **[!UICONTROL Show/Hide CSS]** onder het keuzemenu Geselecteerde tekst (schuif zo nodig de visuele editor omhoog om deze te zien).
+   >Als u de CSS liever rechtstreeks in onbewerkte vorm bewerkt, selecteert u **[!UICONTROL Show/Hide CSS]** onder het keuzemenu Geselecteerde tekst (schuif indien nodig de visuele editor omhoog om deze te zien).
    >Net als de visuele editor kunt u direct zien welk effect het heeft op het viewervoorbeeld wanneer u een eigenschap rechtstreeks in de CSS wijzigt. En, wordt dat zelfde bezit automatisch bijgewerkt tezelfdertijd in de visuele redacteur. Als zodanig kunt u de onbewerkte CSS-editor of de visuele editor gebruiken, of beide door elkaar gebruiken.
 
    >[!NOTE]
    >
    >Voor knopillustraties kiest u de 2x-afbeelding en uploadt u kunstwerk met hoge resolutie. Wanneer u werkt met interactieve afbeeldingen en schopbare banners, kunt u ook verschillende hotspotknoppen uit de doos selecteren.
 
-1. (Optioneel) Tik boven aan de pagina Viewervoorinstelling bewerken op **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** om visuele stijlen op een unieke wijze te definiëren voor verschillende apparaat- en schermtypen.
-1. Tik op het tabblad **[!UICONTROL Behavior]** op de pagina Editor van viewervoorinstellingen. U kunt ook op een visueel element in de viewer tikken of erop klikken om het voor de configuratie te selecteren.
+1. (Optioneel) Selecteer **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** boven aan de pagina Voorinstelling viewer bewerken om visuele stijlen op unieke wijze te definiëren voor verschillende apparaat- en schermtypen.
+1. Selecteer het tabblad **[!UICONTROL Behavior]** op de pagina Viewer Preset Editor. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
 1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Selected Type]** een component waarvan u het gedrag wilt wijzigen.
 
    Veel componenten in de visuele editor hebben een gedetailleerde beschrijving. Deze beschrijvingen worden weergegeven in blauwe vakken wanneer u een component uitbreidt om de bijbehorende parameters weer te geven.
@@ -449,14 +449,14 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
    >**Als u een aanraakapparaat gebruikt, zoals een telefoon of tablet...**
    >
    >
-   >Nadat u een waarde in het tekstveld hebt getypt, tikt u ergens anders in de gebruikersinterface om de wijziging te verzenden en sluit u het virtuele toetsenbord. Als u op Enter tikt, vindt er geen actie plaats.
+   >Nadat u een waarde in het tekstgebied typt, selecteer elders in het gebruikersinterface om de verandering voor te leggen en het virtuele toetsenbord te sluiten. Als u **[!UICONTROL Enter]** selecteert, vindt geen actie plaats.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
+1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 1. Publiceer uw nieuwe viewervoorinstelling. U moet de voorinstelling publiceren voordat u deze op uw website kunt gebruiken.
 
    Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 
-### Speciale overwegingen voor het maken van een voorinstelling voor een interactieve viewer {#special-considerations-for-creating-an-interactive-viewer-preset}
+### Speciale overwegingen voor het maken van een interactieve viewervoorinstelling {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Informatie over weergavemodi voor afbeeldingsminiaturen in het deelvenster:**
 
@@ -483,7 +483,7 @@ Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt,
 
 Het gedrag voor automatisch schuiven van miniaturen in de Interactieve videoviewer werkt onafhankelijk van de gekozen weergavemodus.
 
-Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, hebt u via het tabblad Gedrag toegang tot Automatisch schuiven. Tik in het tabblad Gedrag vanuit het vervolgkeuzemenu **[!UICONTROL Selected Components]** op **[!UICONTROL InteractiveSwatches]**. Het selectievakje Automatisch schuiven wordt weergegeven onder het tekstveld IS-opdracht.
+Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, hebt u via het tabblad Gedrag toegang tot Automatisch schuiven. Selecteer **[!UICONTROL InteractiveSwatches]** op het tabblad Gedrag in de vervolgkeuzelijst **[!UICONTROL Selected Components]**. Het selectievakje Automatisch schuiven wordt weergegeven onder het tekstveld IS-opdracht.
 
 Als u **[!UICONTROL Auto Scroll]** uitschakelt (het selectievakje wist) in de viewervoorinstelling, wordt tijdens het afspelen van video door de gebruiker in het deelvenster alleen de eerste miniatuurafbeelding voor de volledige lengte van de video weergegeven. Een gebruiker kan echter desgewenst handmatig door de miniaturen bladeren met de pictogrammen pijl-omhoog en pijl-omlaag.
 
@@ -510,26 +510,26 @@ In het bovenstaande voorbeeld worden 9 miniaturen / 3 videosubsegmenten = 3 mini
 * Duur van subsegment = totale videoduur / aantal videosubsegmenten.
 Gebruikend het voorbeeld in de bovenstaande lijst, 30 seconden/3 videosubsegments = 10 secondevertoning van elk videosubsegment.
 
-#### Speciale overwegingen voor het maken van voorinstellingen voor een Carousel Banner Viewer {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### Speciale overwegingen voor het maken van voorinstellingen voor de Carousel Banner-viewer {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van hotspots als volgt wijzigen:
 
 |  | **Beschrijving** | **Acties** |
 |---|---|---|
-| **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Tik **[!UICONTROL ImageMapEffect]** op het tabblad **[!UICONTROL Appearance]** in **[!UICONTROL Selected Component]** om de afbeelding van het hotspot-pictogram te wijzigen. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
+| **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Als u de afbeelding van het hotspot-pictogram wilt wijzigen, selecteert u **[!UICONTROL ImageMapEffect]** op het tabblad **[!UICONTROL Appearance]** in **[!UICONTROL Selected Component]**. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
 
-## Viewer-voorinstellingen activeren of deactiveren {#activating-or-deactivating-viewer-presets}
+## Voorinstellingen van viewers activeren of deactiveren {#activating-or-deactivating-viewer-presets}
 
 De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn afhankelijk van de vraag welke voorinstellingen actief zijn in de modus Auteur. Een viewervoorinstelling is standaard ingeschakeld nadat u deze hebt gemaakt. Als u de voorinstelling uitschakelt, wordt deze niet weergegeven in de modus Auteur. Als de voorinstelling wordt gepubliceerd, wordt deze altijd gepubliceerd, ongeacht of deze wordt in- of uitgeschakeld. Deactiveer vooraf instelt van de kijker als de lijst te werkbaar wordt of u geen kijker wilt vooraf ingesteld beschikbaar wordt gemaakt om te gebruiken.
 
 **Voorinstellingen voor viewers activeren of deactiveren:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
-1. Tik op de voorinstellingspagina van de viewer onder de kolomkop **[!UICONTROL State]** op de schakelknop om een voorinstelling voor de viewer te activeren of deactiveren.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
+1. Selecteer op de pagina Voorinstelling viewer onder de kolomkop **[!UICONTROL State]** de schakeloptie om een voorinstelling voor viewers te activeren of deactiveren.
 
    De viewervoorinstellingen die worden geactiveerd, worden aan de rechterkant weergegeven, in een blauw vak. bij gedeactiveerde viewervoorinstellingen wordt de schakeloptie links weergegeven, in een lichtgrijs vak.
 
-## Voorinstellingen van viewer publiceren {#publishing-viewer-presets}
+## Voorinstellingen voor viewers publiceren {#publishing-viewer-presets}
 
 Als u de status van een viewervoorinstelling activeert (of inschakelt), is deze zichtbaar in de Dynamic Media-component, de interactieve mediacomponent en wanneer u een element weergeeft.
 
@@ -541,50 +541,50 @@ Zie ook [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md
 
 **Voorinstellingen voor viewers publiceren:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. Selecteer een of meer voorinstellingen voor viewers die u wilt publiceren.
-1. Tik op het pictogram **[!UICONTROL Publish]** op de werkbalk.
+1. Selecteer op de werkbalk het pictogram **[!UICONTROL Publish]**.
 
-## Voorinstellingen van viewer sorteren {#sorting-viewer-presets}
+## Voorinstellingen van viewers sorteren {#sorting-viewer-presets}
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
-1. Klik op **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]** of **[!UICONTROL State]** om op die kolomkop te sorteren. Klik bijvoorbeeld op **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerd alfabetische volgorde te sorteren.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. Selecteer **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]**, of **[!UICONTROL State]** om op die kolomkop te sorteren. Selecteer bijvoorbeeld **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerde alfabetische volgorde te sorteren.
 
-## Viewer-voorinstellingen bewerken {#editing-viewer-presets}
+## Voorinstellingen voor viewers bewerken {#editing-viewer-presets}
 
 Het bewerken van *vooraf gedefinieerde, voorinstellingen voor een viewer buiten de box* wordt niet ondersteund. Als u een voorinstelling voor een viewer buiten de box bewerkt, wordt u gevraagd deze op te slaan onder een andere naam.
 
 **Voorinstellingen voor viewers bewerken:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]** > **[!UICONTROL Viewer Presets]**.
 1. Selecteer een voorinstelling door het vakje links van de titel van de voorinstelling voor de viewer in te schakelen.
-1. Tik op **[!UICONTROL Edit]** op de werkbalk.
+1. Selecteer **[!UICONTROL Edit]** op de werkbalk.
 1. Breng op de pagina **[!UICONTROL Viewer Preset Editor]** de gewenste wijzigingen aan in de voorinstelling van de viewer met de opties op de tabbladen **[!UICONTROL Appearance]** en **[!UICONTROL Behavior]**.
 
-   Tik op het tabblad **[!UICONTROL Appearance]** in de linkerbovenhoek van de pagina Editor van viewervoorinstellingen op **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** om de presentatiemodus van de asset te wijzigen.
+   Selecteer **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** in de linkerbovenhoek van de pagina van de Viewer Preset Editor om de presentatiemodus van het element te wijzigen.**[!UICONTROL Appearance]**
 
 1. Voer in de rechterbovenhoek van de pagina een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina met voorinstellingen voor viewer.
-   * Tik op **[!UICONTROL Cancel]** om eventuele wijzigingen die u hebt aangebracht, te voorkomen en terug te keren naar de pagina met voorinstellingen voor viewer.
+   * Selecteer **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina met voorinstellingen voor viewer.
+   * Selecteer **[!UICONTROL Cancel]** om wijzigingen die u hebt aangebracht te annuleren en terug te keren naar de pagina met voorinstellingen voor viewer.
 
-## Aangepaste voorinstellingen viewer verwijderen {#deleting-custom-viewer-presets}
+## Aangepaste voorinstellingen voor viewers verwijderen {#deleting-custom-viewer-presets}
 
 U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
 
 **Aangepaste voorinstellingen voor viewers verwijderen:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
-1. Controleer op de pagina Voorinstellingen viewer een voorinstellingstitel en tik op het pictogram **[!UICONTROL Trash]**.
-1. Tik op **[!UICONTROL Delete]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. Voor de Kijker stelt pagina vooraf in, controleer een Titel Vooraf ingestelde, en selecteer dan het **[!UICONTROL Trash]** pictogram.
+1. Selecteer **[!UICONTROL Delete]**.
 
-## Een Viewer-voorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
+## Een viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
 Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
 
 **Een viewervoorinstelling toepassen op een element:**
 
-1. Open het element en selecteer **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer .
+1. Open het element en selecteer vervolgens **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina.
 
    >[!NOTE]
    >
@@ -594,7 +594,7 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
    U kunt de URL [kopiëren om](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## Elementen leveren met voorinstellingen voor viewers {#delivering-assets-with-viewer-presets}
+## Elementen leveren met viewervoorinstellingen {#delivering-assets-with-viewer-presets}
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen. Zie ook [De video-viewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
 
