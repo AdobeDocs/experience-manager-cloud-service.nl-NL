@@ -1,17 +1,17 @@
 ---
-title: Hotlinkbeveiliging in Dynamic Media activeren
+title: Hotlink-beveiliging activeren in Dynamic Media
 description: Leer hoe u hotlinkbeveiliging activeert in Dynamic Media.
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
-# Hotlinkbeveiliging in Dynamic Media activeren {#activating-hotlink-protection-in-dynamic-media}
+# Hotlink-beveiliging activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript™ op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 
