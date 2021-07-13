@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
 
-## Certificaatformaat {#certificate-format}
+## Certificaatindeling {#certificate-format}
 
 SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder andere `.pem,`.`crt`,  `.cer`en  `.cert`.
 
@@ -38,9 +38,10 @@ Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converte
 
 * Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat te installeren in Cloud Manager.
 
-* Cloud Manager staat op elk gewenst moment maximaal 10 SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in uw gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd.
+* Cloud Manager staat op elk gewenst moment maximaal 10 SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in uw gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd. Doorgaans kan een certificaat meerdere domeinen (tot 100 SAN&#39;s) bestrijken. U kunt dus overwegen meerdere domeinen in hetzelfde certificaat te groeperen om binnen deze limiet te blijven.
 
-## Certificaat {#adding-a-cert} toevoegen
+
+## Een certificaat toevoegen {#adding-a-cert}
 
 Voer de onderstaande stappen uit om een certificaat toe te voegen:
 
@@ -68,7 +69,7 @@ De drie velden zijn niet optioneel en moeten worden opgenomen.
 
 ## Certificaatfouten {#certificate-errors}
 
-### Certificaatvolgorde {#correct-certificate-order} corrigeren
+### Certificaatvolgorde corrigeren {#correct-certificate-order}
 
 De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn. Met name moeten tussentijdse certificaatbestanden eindigen op het basiscertificaat of het basiscertificaat dat zich het dichtst bij het basiscertificaat bevindt en in aflopende volgorde staan, van het `main/server`-certificaat tot het basiscertificaat.
 
