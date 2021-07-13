@@ -1,12 +1,9 @@
 ---
 title: Voordelen van het gebruik van Cloud Acceleration Manager
 description: Deze pagina benadrukt de belangrijkste voordelen van het gebruik van Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -14,13 +11,25 @@ ht-degree: 0%
 
 # Voordelen van het gebruik van Cloud Acceleration Manager {#benefits-cam}
 
-Cloud Acceleration Manager is een gratis cloudgebaseerde toepassing die een beoordeling biedt van de huidige Adobe Experience Manager (AEM)-implementatie van een klant en helpt bij het beheren van hun reis naar AEM als Cloud Service volgens de door Adobe aanbevolen migratiemethodologie.
+Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een begeleide ervaring met aanbevolen Adobe-methoden en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van en gaan werken met vertrouwen.
 
 De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
-* Biedt een evaluatie in een gebruiksvriendelijke indeling.
-* Hulplijnen en beheert de transitiereis.
-* Verstrekt beste praktijken, relevante hulp, en toegang tot hulpmiddelen om migratietijd te minimaliseren.
+1. Beter en slimmer plannen:
+
+   * Vereenvoudig de beoordeling van uw huidige instantie door een gemakkelijk-aan-gelezen visuele vertegenwoordiging van de resultaten.
+
+   * Evalueer en begrijp de geschatte complexiteit van de overgang naar AEM als Cloud Service met een gedetailleerd aangepast rapport.
+
+1. De beweging stroomlijnen met end-to-end begeleiding:
+
+   * Beheer de migratiereis met ingebouwde intelligentie die contextafhankelijke hulp langs de weg verstrekt.
+
+   * Het overzicht en identificeert de gebieden die niet in AEM als Cloud Service worden gesteund of refactoring vereisen om verenigbaarheid te verzekeren.
+
+1. Optimaliseren van de inspanningen:
+
+   Toegang tot aanbevolen Adobe-procedures en automatiseringsgereedschappen om de migratie te helpen versnellen en toegang te krijgen tot tools om de migratietijd te minimaliseren.
 
 ## Volgende functies {#whats-next}
 
