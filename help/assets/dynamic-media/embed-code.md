@@ -4,7 +4,7 @@ description: Leer hoe u Dynamic Media-video of afbeeldingselementen op een webpa
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 21%
@@ -17,7 +17,7 @@ Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen 
 
 U sluit URLs slechts in als u _niet_ gebruikend Adobe Experience Manager als WCM bent. Als u Experience Manager als uw WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
-Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
+Zie [URLs van de verbinding aan uw Toepassing van het Web](linking-urls-to-yourwebapplication.md).
 
 Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
@@ -43,13 +43,13 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive
 
    Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-1. Selecteer de vervolgkeuzelijst in de linkertrack en tik **[!UICONTROL Viewers]**.
-1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
-1. Tik op **[!UICONTROL Embed]**.
-1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close]**.
+1. Selecteer in de linkertrack de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
+1. Selecteer in het linkerspoor een naam voor de viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
+1. Selecteer **[!UICONTROL Embed]**.
+1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de gehele code naar het klembord en selecteer **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
-## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## Gebruik HTTP/2 om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
