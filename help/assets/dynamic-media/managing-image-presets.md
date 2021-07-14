@@ -4,9 +4,9 @@ description: Meer informatie over voorinstellingen voor afbeeldingen en over het
 feature: Voorinstellingen afbeelding, viewers, uitvoeringen
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3503'
 ht-degree: 7%
 
 ---
@@ -87,7 +87,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 
 U hebt toegang tot `Rasterize PDF/AI Image Preview Rendition` opties voor procescomponenten via de `DAM Update Asset` workflow.
 
-Selecteer in Adobe Experience Manager in de linkerbovenhoek de optie **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer **[!UICONTROL DAM Update Asset]** op de pagina Workflowmodellen en selecteer **[!UICONTROL Edit]** op de werkbalk. Tik op de pagina met de workflow voor DAM-elementen bijwerken op de procescomponent `Rasterize PDF/AI Image Preview Rendition` om het dialoogvenster Step Properties te openen.
+Selecteer Adobe Experience Manager in de linkerbovenhoek, navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer **[!UICONTROL DAM Update Asset]** op de pagina Workflowmodellen en selecteer **[!UICONTROL Edit]** op de werkbalk. Tik op de pagina met de workflow voor DAM-elementen bijwerken op de procescomponent `Rasterize PDF/AI Image Preview Rendition` om het dialoogvenster Step Properties te openen.
 
 #### Opties van PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
