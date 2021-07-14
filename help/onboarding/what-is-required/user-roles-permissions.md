@@ -1,16 +1,15 @@
 ---
 title: Rollen in Wolkenbeheer
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
-translation-type: tm+mt
-source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
+exl-id: d1689134-044a-4d96-97a2-cd09f735a680
+source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 6%
+source-wordcount: '542'
+ht-degree: 7%
 
 ---
 
-
-# Rollen van wolkenbeheer {#user-roles-permissions}
+# Rollen in Wolkenbeheer {#user-roles-permissions}
 
 ## Gebruikersrollen {#user-roles}
 
@@ -37,7 +36,7 @@ Als u uw rollen in Cloud Manager wilt weergeven, meldt u zich aan bij de interfa
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
-### Het profiel van het integratieproduct {#integration-product-profile}
+### Het integratieproductprofiel {#integration-product-profile}
 
 Naast het bovenstaande maakt Cloud Manager automatisch een productprofiel met de naam &quot;Integrations - Cloud Service&quot;. Dit productprofiel wordt gebruikt voor de integratie tussen Adobe Experience Manager en andere Adobe-producten. Dit productprofiel **moet** niet worden geschrapt. Als u dit profiel per ongeluk verwijdert, moet het handmatig opnieuw worden gemaakt. De weergavenaam voor dit profiel **must** is `CM_CS_DEFAULT`.
 
@@ -48,9 +47,9 @@ Naast het bovenstaande maakt Cloud Manager automatisch een productprofiel met de
 
 Elk van de rollen heeft specifieke toestemmingen verbonden aan het. Bijvoorbeeld, als u in de rol van a bent:
 
-* ***Bedrijfs Eigenaar***, hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, de pijpleiding toe te voegen/uit te geven en om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of codekwaliteit op te stellen.
+* ***Bedrijfs Eigenaar***, hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, en om het even welke pijpleiding in werking te stellen.
 
-* ***De Manager*** van de plaatsing, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code aan AEM milieu of code-kwaliteit op te stellen.
+* ***De Manager*** van de plaatsing, hebt u de toestemming om een milieu toe te voegen of bij te werken, en om het even welke pijpleiding in werking te stellen.
 
 * ***De ontwikkelaar***, hebt u de toestemming om Persoonlijk Token van de Toegang te produceren om tot Git toegang te hebben.
 
@@ -74,4 +73,3 @@ De volgende tabel geeft een overzicht van de rollen en de bijbehorende machtigin
 | Pipet verwijderen | Hiermee wordt het verwijderen van een pijpleiding toegestaan. |  | x |  |  |
 | Uitvoering annuleren | Huidige uitvoering annuleren. |  | x |  |  |
 | Token voor persoonlijke toegang genereren | Toegangspoort. |  | x |  | x |
-
