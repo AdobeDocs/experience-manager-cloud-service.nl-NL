@@ -1,12 +1,12 @@
 ---
 title: Problemen met Dynamic Media oplossen
-description: Tips voor het oplossen van problemen bij het gebruik van Dynamic Media.
+description: Tips voor het oplossen van problemen wanneer u Dynamic Media gebruikt.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '992'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Zie [Problemen met een nieuwe Dynamic Media-configuratie oplossen](/help/assets/
 
 Hier volgen enkele algemene tips en trucs voor alle elementen.
 
-### Eigenschappen voor de synchronisatie van bedrijfsmiddelen {#asset-synchronization-status-properties}
+### Eigenschappen van de status van de activasynchronisatie {#asset-synchronization-status-properties}
 
 De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat de middelen van Adobe Experience Manager naar Dynamic Media zijn gesynchroniseerd:
 
@@ -137,7 +137,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td>
    <td>
     <ol>
-     <li>Controleer of de Dynamic Media-configuratie onder Cloud Services correct is ingesteld.</li>
+     <li>Controleer of de Dynamic Media-configuratie onder Cloud Services juist is ingesteld.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   <tr>
    <td>Voorinstellingen van viewer worden niet gepubliceerd</td>
    <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Wanneer correct werkend, ziet u:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, selecteert u een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
    <td>
     <ol>
      <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Selecteer alle viewervoorinstellingen en klik op <strong>Publiceren</strong>.</li>
+     <li>Selecteer alle viewervoorinstellingen en selecteer <strong>Publiceren</strong>.</li>
      <li>Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.</li>
     </ol> </td>
   </tr>
