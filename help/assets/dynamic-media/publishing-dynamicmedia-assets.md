@@ -1,22 +1,22 @@
 ---
-title: Dynamic Media-middelen publiceren
+title: Dynamic Media-elementen publiceren
 description: Leer hoe u Dynamic Media-middelen publiceert.
 contentOwner: Rick Brough
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 2%
 
 ---
 
-# Dynamic Media-middelen publiceren {#publishing-dynamic-media-assets}
+# Dynamic Media-elementen publiceren {#publishing-dynamic-media-assets}
 
-U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te selecteren. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt, zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media configureren](config-dm.md). U kunt ook selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief van elkaar, met **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+U kunt ook direct elementen publiceren die u uploadt, zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media](config-dm.md) configureren. U kunt ook selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief van elkaar, met **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
@@ -26,7 +26,7 @@ In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder 
 
 Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorgen dat het coderen is voltooid. Wanneer video&#39;s worden gecodeerd, geeft het systeem aan dat er een videoverwerkingsworkflow wordt uitgevoerd. Wanneer videocodering is voltooid, kunt u een voorvertoning van de video-uitvoeringen bekijken. Op dat moment kunt u de video&#39;s veilig publiceren zonder publicatiefouten te maken.
 
-Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
+Zie ook [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
 Zie ook [De Dynamic Media Video-viewer of Afbeeldingsviewer insluiten op een webpagina](embed-code.md).
 
