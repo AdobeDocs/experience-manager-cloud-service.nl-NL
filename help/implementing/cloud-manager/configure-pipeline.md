@@ -1,14 +1,13 @@
 ---
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
-
 
 # De CI/CD-pipeline configureren {#configure-ci-cd-pipeline}
 
@@ -33,7 +32,7 @@ In Cloud Manager zijn er twee typen pijplijn:
 > * de testparameters voor de prestaties configureren.
 
 
-## Productiepijpleiding {#setting-up-production-pipeline} instellen
+## Productiepijpleiding instellen {#setting-up-production-pipeline}
 
 De Manager van de Plaatsing is verantwoordelijk voor vestiging de Pijpleiding van de Productie.
 
@@ -109,9 +108,9 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    ![](assets/configure-pipeline5.png)
 
 
-## Uitsluitend pijplijnen {#non-production-pipelines}
+## Uitsluitend pijplijnen zonder productie en codekwaliteit {#non-production-pipelines}
 
-Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die als **Niet-productiepijpleidingen** worden bedoeld. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Ze kunnen optioneel ook worden geïmplementeerd in de omgeving van Adobe Managed Services.
+Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die als **Niet-productiepijpleidingen** worden bedoeld. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Zij kunnen naar keuze ook opstellen aan AEM als milieu van de Cloud Service.
 
 Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
