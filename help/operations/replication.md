@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -200,4 +200,4 @@ Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie i
 ![](assets/publish-logs.png "LogsLogs")
 
 Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM-publicatieservice.
-In dat geval moeten de rijen worden herzien om te bepalen welke punten de annulering van de publicatie hebben veroorzaakt. Door op een rij te klikken die een rode status toont, zou de rij met hangende punten verschijnen, waarvan enige of alle punten kunnen worden ontruimd indien nodig.
+In dat geval wordt in de hoofdbewerkbare wachtrij een rode status weergegeven en moet deze worden herzien om te bepalen welke items de annulering van de publicatie hebben veroorzaakt. Door op die wachtrij te klikken, worden de items in behandeling weergegeven, waaruit één item of alle items indien nodig kunnen worden gewist.
