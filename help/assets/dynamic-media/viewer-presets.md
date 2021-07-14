@@ -1,39 +1,39 @@
 ---
-title: Voorinstellingen voor Dynamic Media-viewers toepassen
+title: Dynamic Media-viewervoorinstellingen toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media.
 feature: Viewer-voorinstellingen,Viewers
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 23%
+source-wordcount: '216'
+ht-degree: 14%
 
 ---
 
-# Voorinstellingen voor Dynamic Media-viewers toepassen {#applying-viewer-presets}
+# Dynamic Media-viewervoorinstellingen toepassen {#applying-viewer-presets}
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
-Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren en verwijderen, zie [Viewer-voorinstellingen beheren](managing-viewer-presets.md).
+Zie [Viewer-voorinstellingen beheren](managing-viewer-presets.md) als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren en verwijderen.
 
 Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
 U hoeft geen viewervoorinstellingen te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
 
-Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media](troubleshoot-dm.md#viewers) oplossen.
+Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media oplossen](troubleshoot-dm.md#viewers).
 
 ## Een Dynamic Media-viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
-1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers]**.
+1. Open het element en in de linkertrack en selecteer **[!UICONTROL Viewers]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
-   * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
+   * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen vergroten](managing-viewer-presets.md).
 
 1. Selecteer een viewer in het linkerdeelvenster, zodat u deze kunt toepassen op het element, zoals in het rechterdeelvenster. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## URL&#39;s met voorinstellingen van viewer ophalen {#obtaining-viewer-preset-urls}
+## URL&#39;s met voorinstellingen van viewer verkrijgen {#obtaining-viewer-preset-urls}
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen.
