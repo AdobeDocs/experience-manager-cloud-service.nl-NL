@@ -1,13 +1,13 @@
 ---
-title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
+title: Geoptimaliseerde afbeeldingen leveren voor een responsieve site
 description: Leer hoe u de functie voor responsieve code gebruikt om geoptimaliseerde afbeeldingen van Dynamic Media te leveren.
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -19,11 +19,11 @@ Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw
 
 Zie ook [De video-viewer insluiten op een webpagina](embed-code.md).
 
-Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
+Zie ook [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
 **Geoptimaliseerde afbeeldingen leveren voor een responsieve site:**
 
-1. Navigeer naar de afbeelding waarvoor u responsieve code wilt opgeven en tik in het keuzemenu op **[!UICONTROL Renditions]**.
+1. Navigeer naar de afbeelding waarvoor u responsieve code wilt opgeven en selecteer **[!UICONTROL Renditions]** in het keuzemenu.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebap
    >
    >Voorinstellingen voor afbeeldingen worden automatisch gepubliceerd.
 
-1. Tik op **[!UICONTROL RESS]**.
+1. Selecteer **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
