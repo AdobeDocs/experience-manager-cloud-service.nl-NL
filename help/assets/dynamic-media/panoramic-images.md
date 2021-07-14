@@ -4,7 +4,7 @@ description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
 feature: Panoramische afbeeldingen
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 16%
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Zie ook [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramisch beeld2](assets/panoramic-image2.png)
 
@@ -27,11 +27,11 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gelabeld met de trefwoorden `equirectangular` of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md).
+* Gelabeld met de trefwoorden `equirectangular` of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Codes gebruiken](/help/sites-cloud/authoring/features/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
+Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets) als u elementen wilt uploaden voor gebruik met de Panoramische Image-viewer.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -41,7 +41,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -60,9 +60,9 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -76,7 +76,7 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
+## Voorvertoning panorama-afbeeldingen {#previewing-panoramic-images}
 
 Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
 
