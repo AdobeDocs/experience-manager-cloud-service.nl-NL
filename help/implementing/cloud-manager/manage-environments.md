@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen 
    >[!NOTE]
    >De productie en het werkgebied zijn beschikbaar als duo en worden gebruikt voor test- en productiedoeleinden.  De gebruiker kan niet alleen een werkgebied of alleen een productieomgeving maken.
 
-## Omgeving {#adding-environments} toevoegen
+## Omgeving toevoegen {#adding-environments}
 
 1. Klik op **Omgeving toevoegen** om een omgeving toe te voegen. Deze knop is toegankelijk vanuit het scherm **Omgevingen**.
    ![](assets/environments-tab.png)
@@ -67,7 +67,7 @@ De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie
 
 1. Selecteer de **knop Alles tonen** om naar de overzichtspagina **Environment** te navigeren om een tabel met een volledige lijst met omgevingen weer te geven.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. Op de pagina **Omgevingen** wordt de lijst met alle bestaande omgevingen weergegeven.
 
@@ -81,7 +81,7 @@ De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie
    ![](assets/environ-preview1.png)
 
 
-### Toegang tot voorvertoningsservice {#access-preview-service}
+### Voorvertoningsservice openen {#access-preview-service}
 
 De functie Voorvertoningsservice levert via Cloud Manager een extra Preview (publicatieservice) aan elke AEM als een Cloud Service-omgeving.
 
@@ -111,7 +111,7 @@ Geef een voorvertoning weer van de uiteindelijke ervaring van een website voorda
 
 1. **Inhoud publiceren voor voorvertoning**: U kunt inhoud naar de Voorvertoningsservice publiceren met behulp van de interface Publicatie beheren in AEM. Raadpleeg [Inhoud voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) voor meer informatie.
 
-## Omgeving {#updating-dev-environment} bijwerken
+## Omgeving bijwerken {#updating-dev-environment}
 
 Updates van werkgebied- en productieomgevingen worden automatisch door Adobe beheerd.
 
@@ -129,7 +129,7 @@ Het selecteren van deze optie zal een Manager van de Plaatsing toestaan om de pi
 
 Als de pijpleiding reeds is bijgewerkt, wordt de gebruiker ertoe aangezet om de pijpleiding uit te voeren.
 
-## Omgeving {#deleting-environment} verwijderen
+## Omgeving verwijderen {#deleting-environment}
 
 De gebruiker met de vereiste toestemmingen zal een milieu van de Ontwikkeling kunnen schrappen.
 
@@ -154,7 +154,7 @@ Raadpleeg [Toegang tot instantie Auteur beheren](/help/onboarding/what-is-requir
 ![](assets/environ-access.png)
 
 
-## Toegang tot ontwikkelaarsconsole {#accessing-developer-console}
+## Developer Console openen {#accessing-developer-console}
 
 Selecteer **Developer Console** in het vervolgkeuzemenu in de **Environment**-kaart. Hiermee wordt een nieuw tabblad in uw browser geopend met de aanmeldingspagina naar **Developer Console**.
 
@@ -205,7 +205,7 @@ Navigeer naar de pagina met milieudetails op de pagina Overzicht van omgevingen.
 >[!NOTE]
 >De functie IP-Lijst van gewenste personen wordt nu ondersteund in Cloud Manager voor auteur-, publicatie- en voorvertoningsservices (beschikbaar in Sites-programma&#39;s).
 
-### Een IP-Lijst van gewenste personen {#apply-ip-allow-list} toepassen
+### Een IP-Lijst van gewenste personen toepassen {#apply-ip-allow-list}
 
 Het toepassen van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van toestaan-Lijst met een Auteur of de Publish dienst in een milieu worden geassocieerd. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen toepassen.
 
@@ -218,7 +218,7 @@ Voer de onderstaande stappen uit om een IP-Lijst van gewenste personen toe te pa
 1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de Lijst van gewenste personen om de IP Lijst van gewenste personen en de Auteur of de Publish dienst te selecteren u wenst om het op toe te passen.
 1. Klik op **Apply** en bevestig uw voorlegging.
 
-### Het toepassen van een IP Lijst van gewenste personen {#unapply-ip-allow-list} ongedaan maken
+### Het toepassen van een IP Lijst van gewenste personen ongedaan maken {#unapply-ip-allow-list}
 
 Het ongedaan maken van een IP Lijst van gewenste personen is het proces waardoor alle IP waaiers inbegrepen in de definitie van de Lijst van gewenste personen van een Auteur of de dienst van de Uitgever in een milieu worden losgemaakt. Een gebruiker in de rol BedrijfsEigenaar of van de Manager van de Plaatsing moet worden het programma geopend om een IP Lijst van gewenste personen kunnen ongedaan maken.
 
