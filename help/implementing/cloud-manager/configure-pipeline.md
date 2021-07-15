@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
+source-git-commit: 8b8e65c68d8a835e19ddf34fe30981da7ad265d8
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
 1. Open de tegel **Niet-productiepijpleidingen** vanuit het startscherm van Cloud Manager.
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. Klik op **Add** knoop, om de Naam van de Pijpleiding, het Type van Pijpleiding, en de Tak van het Git te specificeren.
 
@@ -124,13 +124,15 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Klik **sparen** en de pijpleiding wordt getoond op de kaart op het huisscherm met drie acties, zoals hieronder getoond:
+1. Klik **sparen** en de pijpleiding wordt getoond op de kaart op het huisscherm met vijf acties, zoals hieronder getoond:
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **Bewerken**  - staat het uitgeven van de pijpleidingsmontages toe
+   * **Details**  - verstrekt details van de pijpleidingsuitvoering
    * **Build**  - navigeert aan de uitvoeringspagina, waarvan de pijpleiding kan worden uitgevoerd
-   * **Git**  beheren: hiermee kan de gebruiker de informatie ophalen die nodig is voor toegang tot de Git-opslagplaats van Cloud Manager
+   * **Toegang tot repo-informatie** : hiermee kan de gebruiker de informatie ophalen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager
+   * **Leer meer**  - navigeert aan het begrip van de CI/CD bron van de pijpleidingsdocumentatie.
 
 ## De volgende stappen {#the-next-steps}
 
