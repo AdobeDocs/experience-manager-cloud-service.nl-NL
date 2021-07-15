@@ -2,10 +2,9 @@
 title: 'Een productieprogramma maken '
 description: Een productieprogramma maken
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -13,6 +12,14 @@ ht-degree: 0%
 # Een productieprogramma maken {#create-production-program}
 
 Een *Production* programma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om code te schrijven, te bouwen en te testen met als doel deze te implementeren in Production.
+
+Bekijk de twee onderstaande video&#39;s met zelfstudies voor onderdelen om te leren hoe u een programma kunt maken in Cloud Manager:
+
+>[!VIDEO](https://video.tv.adobe.com/v/334953)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334954)
+
+Of
 
 Voer de volgende stappen uit om een productieprogramma te maken:
 
