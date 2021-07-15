@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Re
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.7.0
 feature: Geen informatie
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,15 @@ De volgende release is gepland voor 12 augustus 2021.
 
 * Uitgaande uitgang IP zal nu het programma worden geopend het dossier van het bouwstijlstaplogboek.
 
-* Fase- en productieomgevingen met oude versies van AEM rapporteren nu de status &quot;Update Available&quot;.
+* Werkgebied- en productieomgevingen met oude versies van AEM rapporteren nu de status **Update Available**.
 
-* De maximale SSL-certificaten die worden ondersteund, zijn verhoogd tot 20 per programma.
+* Het maximum aantal ondersteunde SSL-certificaten is gestegen tot 20 per programma.
 
-* Verhoog het max. aantal domeinen dat kan worden geconfigureerd, is verhoogd tot 500 per omgeving.
+* Het maximumaantal domeinen dat kan worden gevormd is verhoogd tot 500 per milieu.
 
-* De knoppen Git beheren hebben de naam Toegangsit-info gewijzigd en het dialoogvenster is visueel vernieuwd.
+* De knoppen **Git beheren** hebben een nieuwe naam **Toegang tot it-info** en het dialoogvenster is visueel vernieuwd.
+
+* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 28.
 
 ### Opgeloste problemen {#bug-fixes}
 
