@@ -1,7 +1,7 @@
 ---
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ Volg deze sectie om de de activiteitenkaart van het Refactoring van de Code te o
 
 1. De pagina toont de lijst van code refactoring activiteiten die door het strengheidsniveau worden georganiseerd. U kunt meer leren door op de twee gemarkeerde pictogrammen te klikken.
 
-   Op de pagina worden de overwegingen voor het wijzigen van code in drie verschillende tabbladen weergegeven.
+   Op de pagina worden de overwegingen voor het wijzigen van code in drie verschillende tabbladen weergegeven:
 
-   * Overzicht:
+   * Overzicht
    * Dispatcher
    * Testen
 
