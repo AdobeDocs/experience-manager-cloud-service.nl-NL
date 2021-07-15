@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
+source-git-commit: 96f2c99caebd446288720adaf4ac929bbc41950f
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,44 @@ Bekijk de video [Juni 2021 van de Versie Overzicht](https://video.tv.adobe.com/v
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.6.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.7.0 en 2021.6.0.
+
+### Releasedatum {#release-cm-july}
+
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.7.0 is 15 juli 2021.
+De volgende release is gepland voor 12 augustus 2021.
+
+### Wat is er nieuw? {#what-is-new-cm-july}
+
+* Klanten kunnen nu Azul 8 en 11 JDK&#39;s gebruiken voor hun buildprocessen in Cloud Manager en kunnen een van deze JDK&#39;s selecteren voor met toolketens compatibele Maven-plug-ins *of* voor de volledige uitvoering van het Maven-proces.
+
+* Uitgaande uitgang IP zal nu het programma worden geopend het dossier van het bouwstijlstaplogboek.
+
+* Werkgebied- en productieomgevingen met oude versies van AEM rapporteren nu de status **Update Available**.
+
+* Het maximum aantal ondersteunde SSL-certificaten is gestegen tot 20 per programma.
+
+* Het maximumaantal domeinen dat kan worden gevormd is verhoogd tot 500 per milieu.
+
+* De knoppen **Git beheren** hebben een nieuwe naam gekregen in **Git-info benaderen** en het dialoogvenster is visueel vernieuwd.
+
+* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 28.
+
+### Opgeloste problemen {#bug-fixes-cm-july}
+
+* In sommige situaties, was de Voorproef geen beschikbare optie toen het binden van een IP Lijst van gewenste personen aan een milieu.
+
+* Wanneer u handmatig naar de pagina met uitvoeringsdetails voor een niet-bestaande uitvoering navigeerde, werd geen fout weergegeven, alleen een eindeloos laadscherm.
+
+* Het foutbericht dat wordt weergegeven wanneer het maximumaantal SSL-certificaten is bereikt, is niet nuttig.
+
+* In sommige omstandigheden, zou er een discrepantie in de versieversie kunnen zijn die in de pijpleidingskaart op **Overview** pagina wordt getoond.
+
+* De wizard Programma toevoegen heeft onjuist aangegeven dat de naam na het maken niet kan worden gewijzigd.
+
+### Bekende problemen {#known-issues-cm-july}
+
+Klanten die overstappen op de Azul JDK&#39;s moeten zich ervan bewust zijn dat niet alle bestaande toepassingen zonder fout zullen compileren op Azul JDK. Het wordt hoogst geadviseerd om plaatselijk vóór omschakeling te testen.
 
 ### Releasedatum {#release-date-june-cm}
 
