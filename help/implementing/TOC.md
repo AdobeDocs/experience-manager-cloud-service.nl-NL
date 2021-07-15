@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
+source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 29%
 
 ---
@@ -180,6 +180,7 @@ ht-degree: 29%
    + [Implementeren naar AEM as a Cloud Service](deploying/overview.md)
    + [Versie-updates AEM](deploying/aem-version-updates.md)
    + [OSGi configureren voor AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [OSGi-configuratie-API](deploying/osgi-configuration-api.md)
 + Auteurlaag {#author-tier}
    + [Toegang tot de auteurlaag](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Beveiliging van de auteurlaag](/help/implementing/author-tier/securing-the-author-tier.md)
