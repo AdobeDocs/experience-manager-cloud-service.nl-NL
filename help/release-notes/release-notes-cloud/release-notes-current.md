@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Bekijk de video [Juni 2021 van de Versie Overzicht](https://video.tv.adobe.com/v
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.6.0 en 2021.5.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.6.0.
 
 ### Releasedatum {#release-date-june-cm}
 
