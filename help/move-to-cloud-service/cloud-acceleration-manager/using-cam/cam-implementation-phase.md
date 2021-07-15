@@ -1,9 +1,9 @@
 ---
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ Volg deze sectie om de de activiteitenkaart van het Refactoring van de Code te o
 
 1. De pagina toont de lijst van code refactoring activiteiten die door het strengheidsniveau worden georganiseerd. U kunt meer leren door op de twee gemarkeerde pictogrammen te klikken.
 
+   Op de pagina worden de overwegingen voor het wijzigen van code in drie verschillende tabbladen weergegeven.
+
+   * Overzicht:
+   * Dispatcher
+   * Testen
+
+   Het **Overzicht** lusje toont een lijst van code refactoring activiteiten.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   Het tabblad **Dispatcher** biedt informatie over de structuur van de AEM als Apache- en Dispatcher-configuraties voor Cloud Servicen, en over de validatie en uitvoering van de software lokaal voordat deze wordt geïmplementeerd in Cloud-omgevingen. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   Het tabblad **Testen** biedt informatie over het testen van functies, Experience Audit en UI.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >Lees ook de inhoud in de tabbladen op de pagina om meer inzicht te krijgen in enkele andere gebieden die niet worden bestreken door de Analysator voor beste praktijken.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## Het gebruiken van AEM als Kaart van de Plaatsing van de Cloud Service {#aem-as-a-cloud-service-deployment}
