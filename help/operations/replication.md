@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,10 @@ Een boomactivering uitvoeren:
 
    ![](assets/publish-distribute.png "DistributeDistribute")
 4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
+
+Houd u aan de volgende richtlijnen wanneer u deze functie gebruikt voor de beste prestaties:
+* De totale grootte van het inhoudspakket dat voor replicatie wordt gegenereerd, moet kleiner zijn dan 5 MB.
+* Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, met een harde limiet van 500 paden.
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
