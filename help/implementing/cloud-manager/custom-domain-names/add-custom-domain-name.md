@@ -2,20 +2,20 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
+source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
-# Een aangepaste domeinnaam {#adding-cdn} toevoegen
+# Een aangepaste domeinnaam toevoegen {#adding-cdn}
 
 Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepaste domeinnaam in Cloud Manager te kunnen toevoegen.
 
 ## Belangrijke overwegingen {#important-considerations}
 
-* Voordat u een aangepaste domeinnaam kunt toevoegen, moet u een geldig SSL-certificaat met de aangepaste domeinnaam op uw programma installeren. Raadpleeg [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
+* Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam zijn geïnstalleerd op uw programma. Raadpleeg [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
 
 * De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding verbonden aan die milieu&#39;s is.
 
@@ -23,11 +23,11 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 
 * AEM als Cloud Service ondersteunt geen jokertekendomeinen.
 
-* Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen per omgeving hosten.
+* Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
 
 * Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
 
-## Een aangepaste domeinnaam toevoegen vanaf de pagina met domeininstellingen {#adding-cdn-settings}
+## Een aangepaste domeinnaam toevoegen vanaf de pagina Domeininstellingen {#adding-cdn-settings}
 
 Voer de onderstaande stappen uit om een aangepaste domeinnaam toe te voegen van de pagina Domeininstellingen:
 
