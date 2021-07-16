@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Ga als volgt te werk om een standaard verwerkingsprofiel te maken:
 
 1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Klik op **[!UICONTROL Create]**.
 1. Geef een naam op waarmee u het profiel op unieke wijze kunt identificeren wanneer u het toepast op een map.
-1. Schakel **[!UICONTROL Create FPO Rendition]** in op het tabblad **[!UICONTROL Standard]** om FPO-uitvoeringen te genereren. Voer een waarde tussen 1 en 100 in voor **[!UICONTROL Quality]**.
+1. Schakel **[!UICONTROL Create FPO Rendition]** in op het tabblad **[!UICONTROL Image]** om FPO-uitvoeringen te genereren. Voer een waarde tussen 1 en 100 in voor **[!UICONTROL Quality]**.
 1. Als u andere vertoningen wilt genereren, klikt u op **[!UICONTROL Add New]** en geeft u de volgende informatie op:
 
    * Bestandsnaam van elke vertoning.
