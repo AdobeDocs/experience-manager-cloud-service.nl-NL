@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Slimme tags,tags toepassen
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2302'
 ht-degree: 5%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 5%
 
 # Slimme tags aan uw elementen toevoegen om de zoekervaring te verbeteren {#smart-tag-assets-for-faster-search}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] implementaties worden  [!DNL Adobe Developer Console] standaard geïntegreerd met .
+Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past automatisch slimme tags toe op geüploade elementen.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 
 ## Elementen labelen met slimme tags {#tag-assets}
 
-Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] bij het uploaden. Tags zijn standaard ingeschakeld. [!DNL Experience Manager] past de juiste tags toe in bijna real-time.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] bij het uploaden. Tags worden standaard ingeschakeld en werkt. [!DNL Experience Manager] past de juiste tags toe in bijna real-time.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-Voor afbeeldingen en video&#39;s worden de slimme tags afgeleid op basis van een visueel aspect.
+* Voor afbeeldingen en video&#39;s zijn de slimme tags gebaseerd op een visueel aspect.
 
-Voor op tekst gebaseerde elementen is de effectiviteit van slimme tags niet afhankelijk van de hoeveelheid tekst in het element, maar van de relevante trefwoorden of entiteiten in de tekst van het element. Voor op tekst gebaseerde elementen zijn de slimme tags de trefwoorden die in de tekst worden weergegeven, maar de trefwoorden die het element het beste beschrijven. Voor ondersteunde elementen wordt de tekst al geëxtraheerd door [!DNL Experience Manager]. Deze wordt vervolgens geïndexeerd en wordt gebruikt om de elementen te zoeken. Slimme tags die zijn gebaseerd op trefwoorden in de tekst bieden echter een speciale, gestructureerde en prioriteitszoekfactor die wordt gebruikt om de detectie van elementen te verbeteren in vergelijking met de volledige zoekindex.
+* Voor op tekst gebaseerde elementen is de effectiviteit van slimme tags niet afhankelijk van de hoeveelheid tekst in het element, maar van de relevante trefwoorden of entiteiten in de tekst van het element. Voor op tekst gebaseerde elementen zijn de slimme tags de trefwoorden die in de tekst worden weergegeven, maar de trefwoorden die het element het beste beschrijven. Voor ondersteunde elementen wordt de tekst al geëxtraheerd door [!DNL Experience Manager]. Deze wordt vervolgens geïndexeerd en wordt gebruikt om de elementen te zoeken. Slimme tags die zijn gebaseerd op trefwoorden in de tekst bieden echter een speciale, gestructureerde en prioriteitszoekfactor die wordt gebruikt om de detectie van elementen te verbeteren in vergelijking met de volledige zoekindex.
 
 ## Slimme tags beheren en zoeken naar middelen {#manage-smart-tags-and-searches}
 
