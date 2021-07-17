@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Uitvoeringen
 exl-id: null
-source-git-commit: f6e1ee3a9640f0853d4f518e816cfee4bd5cb20f
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Bij het plaatsen van grote activa van Experience Manager in Adobe InDesign docum
 
 Elementen bieden uitvoeringen die alleen voor plaatsing (FPO) worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding. Als een FPO-uitvoering niet beschikbaar is voor een element, gebruikt Adobe InDesign in plaats daarvan het oorspronkelijke element. Dit fallback-mechanisme zorgt ervoor dat de creatieve workflow zonder onderbrekingen doorgaat.
 
-Experience Manager als Cloud Service biedt de mogelijkheid om eigen middelen in de cloud te verwerken om de FPO-uitvoeringen te genereren. Gebruik de microservices voor het genereren van elementen voor het genereren van vertoningen. U kunt het genereren van vertoningen configureren van nieuw geüploade elementen en van de elementen in de Experience Manager.
+Experience Manager als Cloud Service biedt de mogelijkheid om eigen middelen in de cloud te verwerken om de FPO-uitvoeringen te genereren. Gebruik asset microservices voor het genereren van vertoningen. U kunt het genereren van vertoningen configureren van nieuw geüploade elementen en van de elementen in de Experience Manager.
 
 Hier volgen de stappen voor het genereren van FPO-uitvoeringen:
 1. [Maak een verwerkingsprofiel](#create-processing-profile).
