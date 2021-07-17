@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen, tags, distributie van bedrijfsmiddelen
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Het onderzoek staat verfijnd het filtreren op activa toe en eerbiedigt volledig de juiste toestemmingen. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
 
-AEM Assets ondersteunt meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+Experience Manager-elementen bieden ondersteuning voor verschillende manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Mappen maken {#create-folders}
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur*-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur*-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Assets] vereist niet dat u elementen in mappen ordent om beter te werken.
 
 >[!NOTE]
 >
