@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 6d662a7350b851a450b8c20660d7a461d940c1b2
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2645'
 ht-degree: 0%
 
 ---
@@ -160,8 +160,10 @@ Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen di
 Pas verwerkingsprofielen toe op mappen met een van de volgende methoden:
 
 * Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en **[!UICONTROL Apply Profile to Folder(s)]**-handeling gebruiken. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
-* Gebruikers kunnen een map selecteren in de gebruikersinterface Middelen, de handeling **[!UICONTROL Properties]** gebruiken om het scherm met mapeigenschappen te openen, op het tabblad **[!UICONTROL Processing Profiles]** klikken en in de keuzelijst het juiste verwerkingsprofiel voor die map selecteren. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
+* Gebruikers kunnen een map in de gebruikersinterface Middelen selecteren, de handeling **[!UICONTROL Properties]** gebruiken om het scherm met mapeigenschappen te openen, op het tabblad **[!UICONTROL Asset Processing]** klikken en in de lijst [!UICONTROL Processing Profile] het juiste verwerkingsprofiel voor die map selecteren. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
    ![Een verwerkingsprofiel toepassen op een map op het tabblad Eigenschappen van element](assets/folder-properties-processing-profile.png)
+
+* Gebruikers kunnen mappen of specifieke elementen in de gebruikersinterface Middelen selecteren om een verwerkingsprofiel toe te passen en vervolgens ![middelen opnieuw verwerken pictogram](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** kiezen uit de opties die boven beschikbaar zijn.
 
 >[!TIP]
 >
