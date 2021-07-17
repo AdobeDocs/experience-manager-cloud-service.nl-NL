@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metagegevens
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1157'
 ht-degree: 20%
 
 ---
@@ -98,19 +98,19 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevenspr
 
 **Voer een van de volgende handelingen uit als u een metagegevensprofiel globaal wilt toepassen**
 
-* Navigeer naar `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` en pas het aangewezen profiel toe en klik **sparen**.
+* Navigeer naar `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, pas het aangewezen profiel toe en klik **[!UICONTROL Save]**.
 
 * Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. Voeg de eigenschap `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` toe. Klik **Alles opslaan**.
 
 ## Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een metadataprofiel uit een map verwijderen vanuit het menu **Gereedschappen**, of vanuit de **Eigenschappen** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u metadataprofielen op beide manieren uit mappen kunt verwijderen.
 
 ### Metagegevensprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Klik op het AEM en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
 1. Klik op **[!UICONTROL Remove Metadata Profile from Folder(s)]** en selecteer de map of meerdere mappen waaruit u een profiel wilt verwijderen en klik op **[!UICONTROL Done]**.
 
@@ -118,6 +118,6 @@ U kunt een metadataprofiel uit een map verwijderen vanuit het menu **Gereedschap
 
 ### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klik op het AEM en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
+1. Klik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
