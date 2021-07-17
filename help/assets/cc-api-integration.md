@@ -4,9 +4,9 @@ description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
 feature: Uploaden, Asset Processing, Publiceren, Asset compute Microservices, Workflow
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Inhoudsautomatisering-invoegtoepassing integreert [!DNL Adobe Experience Manager Assets as a Cloud Service]- en [!DNL Adobe Creative Cloud]-API&#39;s om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloudgebaseerde  [asset-](/help/assets/asset-microservices-overview.md) microservices om de  [!DNL Adobe Creative Cloud] functies te gebruiken en het maken van middelen en het verwerken van media te automatiseren.
 
-Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom], hoeft u geen elementen te downloaden van [!DNL Experience Manager Assets], deze te bewerken en opnieuw te uploaden. U hoeft alleen een verwerkingsprofiel te maken en te configureren in [!DNL Experience Manager], het profiel toe te passen op een map en de middelen naar de map te uploaden. De geüploade elementen worden opnieuw verwerkt op basis van de verwerkingsprofielen en deze elementen kunnen variëren. De consequente en moeiteloze bulkverwerking bespaart handmatige inspanningen en verhoogt de snelheid van de inhoud, ook zonder de behoefte aan uitstekende creatieve vaardigheden. Ook, kunnen de ontwikkelaars en de partners de activa microservices met directe toegang tot deze APIs uitbreiden en douanelogica omvatten.
+Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom], hoeft u geen elementen te downloaden van [!DNL Experience Manager Assets], deze te bewerken en opnieuw te uploaden. U maakt en configureert een verwerkingsprofiel in [!DNL Experience Manager], past het profiel toe op een map en uploadt de middelen naar de map. De geüploade elementen worden opnieuw verwerkt op basis van de verwerkingsprofielen en deze elementen kunnen variëren. De consequente en moeiteloze bulkverwerking bespaart handmatige inspanningen en verhoogt de snelheid van de inhoud, ook zonder de behoefte aan uitstekende creatieve vaardigheden. Ook, kunnen de ontwikkelaars en de partners de activa microservices met directe toegang tot deze APIs uitbreiden en douanelogica omvatten.
 
 Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkingen op hun middelen te automatiseren:\
 ![Adobe Photoshop- en Adobe Lightroom-bewerkingen automatiseren op bedrijfsmiddelen](assets/content-automation.png)
