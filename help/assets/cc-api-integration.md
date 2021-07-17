@@ -4,7 +4,7 @@ description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
 feature: Uploaden, Asset Processing, Publiceren, Asset compute Microservices, Workflow
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -42,7 +42,8 @@ Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch va
 
 1. Selecteer de tab **[!UICONTROL Creative]**, geef de uitvoermap op en selecteer **[!UICONTROL Add New]** om een creatieve configuratie toe te voegen.
 
-1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer **[!UICONTROL Includes]** en **[!UICONTROL Excludes]** MIME-typelijsten (of invoerelementfilter) en selecteer de gewenste creatieve bewerking.
+1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer **[!UICONTROL Includes]** en **[!UICONTROL Excludes]** MIME-typelijsten (of invoerelementfilter) en selecteer de vereiste creatieve bewerking.<br/>
+
    ![tabblad Creatief in verwerkingsprofiel](assets/creative-processing-profile.png)
 
 1. Sommige bewerkingen vereisen extra parameters (element). Geef indien nodig waarden op voor deze extra parameters.
