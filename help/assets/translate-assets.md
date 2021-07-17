@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen, vertaling
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2443'
+source-wordcount: '2440'
 ht-degree: 19%
 
 ---
 
 # Meertalige activa {#multilingual-assets}
 
-Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager (AEM) Assets kunt u vertaalworkflows automatiseren voor middelen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
+Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u vertaalworkflows automatiseren voor middelen (inclusief binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met AEM en creeert projecten voor het vertalen van activa in veelvoudige talen. AEM ondersteunt workflows voor het vertalen van mensen en machines.
+Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalbureau is geïntegreerd met AEM, worden middelen automatisch verzonden tussen AEM en de vertaalprovider.
+Menselijke vertaling: De vertaalde elementen worden geretourneerd en in Experience Manager geïmporteerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
 
 Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager (AEM) Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
+In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. `/content/dam/it` is bijvoorbeeld de Italiaanse hoofdtaal voor de Italiaanse taalkopie. De exemplaren van de taal moeten [correct-gevormde taalwortel](#create-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
@@ -89,7 +89,7 @@ De basispagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 ### Taalwortels weergeven {#view-language-roots}
 
-De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
+De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die zijn gemaakt in [!DNL Assets].
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.
@@ -169,9 +169,9 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ### Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde middelen op een tijdelijke locatie op en werkt de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Assets] Hiermee slaat u de nieuw vertaalde middelen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
-1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in AEM Assets.
+1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Assets].
 1. Selecteer in de interface Elementen een element dat u al hebt vertaald en klik op het pictogram **[!UICONTROL Edit]** op de werkbalk om het element te openen in de bewerkingsmodus.
 1. Bewerk het element en sla de wijzigingen op.
 1. Voer stap 2-14 van [Add aan bestaand vertaalproject](#add-to-existing-translation-project) procedure uit om het taalexemplaar bij te werken.
@@ -234,7 +234,7 @@ Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoof
 
 ## Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
-Met Adobe Experience Manager (AEM) kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
+Met Adobe Experience Manager kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
 U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zodat u deze kunt gebruiken tijdens vertaalworkflows.
 
@@ -263,7 +263,7 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Om een aangepaste connector toe te passen installeert u eerst de connector vanaf Package Manager. Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 
 1. Installeer de connector via Package Manager.
-1. Klik/tik het AEM embleem, en navigeer aan **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Klik/tik het embleem van de Experience Manager, en navigeer aan **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Zoek de connector die u onder de pagina **[!UICONTROL Third Party Services]** in de **[!UICONTROL Cloud Services]** hebt geïnstalleerd.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
