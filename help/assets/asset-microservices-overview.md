@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute microservices, workflow, releasegegevens, verwerking van bedrijfsmiddelen
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -43,7 +43,7 @@ De belangrijkste stappen van de opname en verwerking met behulp van asset micros
 * Clients, zoals webbrowsers of Adobe Asset Link, verzenden een uploadverzoek naar [!DNL Experience Manager] en beginnen het binaire bestand rechtstreeks te uploaden naar de binaire cloudopslag.
 * Wanneer de directe binaire upload is voltooid, brengt de client [!DNL Experience Manager] op de hoogte.
 * [!DNL Experience Manager] verzendt een verwerkingsverzoek naar asset microservices. De inhoud van het verzoek is afhankelijk van de configuratie van de verwerkingsprofielen in [!DNL Experience Manager] die specificeren, welke vertoningen te produceren.
-* Asset microservices back-end ontvangt de aanvraag en verzendt deze naar een of meer microservices op basis van de aanvraag. Elke microservice krijgt rechtstreeks vanuit de binaire cloudopslag toegang tot het oorspronkelijke binaire bestand.
+* De back-end van de microservices van activa ontvangt het verzoek, verzendt het naar één of meerdere microservices die op het verzoek worden gebaseerd. Elke microservice krijgt rechtstreeks vanuit de binaire cloudopslag toegang tot het oorspronkelijke binaire bestand.
 * De resultaten van de verwerking, zoals uitvoeringen, worden opgeslagen in de binaire cloudopslag.
 * De Experience Manager wordt op de hoogte gesteld van het feit dat de verwerking compleet is en dat er directe aanwijzers naar de gegenereerde binaire bestanden (uitvoeringen) worden gestuurd. De gegenereerde uitvoeringen zijn beschikbaar in [!DNL Experience Manager] voor het geüploade element.
 
