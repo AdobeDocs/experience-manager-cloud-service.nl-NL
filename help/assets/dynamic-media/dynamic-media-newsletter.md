@@ -4,9 +4,9 @@ description: 'De Dynamic Media-nieuwsbrief per Experience League is een maandeli
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -123,15 +123,15 @@ Verken waardevolle bronnen voor kennisopbouw, zoals &#39;Hoe kan ik&#39;-video&#
    * Bronnen en informatie waarmee u uw waardevolle middelen op de juiste manier kunt beheren en op een betrouwbare manier ervaringen kunt bieden die ervoor zorgen dat uw bezoekers niet terugkomen.
    * Meer informatie over een webinar die binnenkort beschikbaar is voor de bescherming van uw digitale middelen.
    * De volgende einden op de informatie-gevulde Adobe Insider Tour.
-   * Uitstekende mogelijkheden zijn beschikbaar als u Dynamic Media binnen Experience Manager Assets (Experience Manager Assets) hebt.
+   * Buitengewone mogelijkheden zijn beschikbaar wanneer u Dynamic Media binnen Experience Manager Assets (AEM Assets) hebt.
    * Video&#39;s van 360 graden en aangepaste videominiaturen toevoegen aan uw website.
-   * Ontmoet Andrew Hathaway, de belangrijkste consultant voor Oplossingen voor Dynamic Media binnen Experience Manager Assets.
+   * Ontmoet Andrew Hathaway, Hoofd Oplossingsconsultant voor Dynamic Media in AEM Assets.
 
 * **[Juni 2019, uitgave 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    In dit verband:
 
-   * Geniet van video&#39;s die de aandacht vestigen op het gemak van upgrades naar Dynamic Media binnen Experience Manager Assets.
+   * Geniet van video&#39;s die de aandacht vestigen op het gemak van upgrades naar Dynamic Media in AEM Assets.
    * Bekijk hoe video&#39;s in Experience League zijn.
    * Meer informatie over de komende Adobe Insider Tour.
    * Lees hoe u uw digitale middelen kunt beschermen tegen piraterij.
