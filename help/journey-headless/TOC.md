@@ -5,9 +5,9 @@ breadcrumb-title: AEM Headless Developer Journey
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
+source-git-commit: 0048cd094b24c7ef1fb326c6a7419b700e87df23
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,3 @@ ht-degree: 0%
    + [Hoe kan ik het allemaal samenbrengen?](developer/put-it-all-together.md)
    + [Live gaan met uw toepassing zonder kop](developer/go-live.md)
    + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](developer/create-spa.md)
-+ AEM Headless Localization Reis {#localization}
-   + [Begrijp de Zwaardeloze Lokalisatie in AEM](localization/overview.md)
-   + [Aan de slag met AEM headless localisatie](localization/getting-started.md)
-   + [Meer informatie over inhoud zonder kop en hoe u kunt lokaliseren in AEM](localization/learn-about.md)
-   + [Vertaalaansluiting configureren](localization/configure-connector.md)
-   + [Vertaalregels configureren](localization/translation-rules.md)
-   + [Inhoud vertalen](localization/translate-content.md)
-   + [Vertaalde inhoud publiceren](localization/publish-content.md)
