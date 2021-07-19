@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '913'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 8%
 >abstract="AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
 
 AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
-
 
 De AEM beheerde CDN zal aan de prestaties en de veiligheidsvereisten van de meeste klant voldoen. Voor publiceer rij, kunnen de klanten naar keuze aan het van hun eigen CDN richten, die zij zullen moeten beheren. Dit wordt per geval toegestaan, op basis van het voldoen aan bepaalde voorwaarden waaronder, maar niet beperkt tot, de klant die een oudere integratie met zijn CDN-leverancier heeft die moeilijk kan worden verlaten.
 
@@ -57,14 +56,17 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 Configuratieinstructies:
 
-1. Stel de `X-Forwarded-Host`-header in met de domeinnaam. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
-1. Plaats de kopbal van de Gastheer met het oorsprongdomein, dat de ingang van AEM CDN is. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Verzend de kopbal SNI naar de oorsprong. Zoals de kopbal van de Gastheer, moet de kopbal SNI het oorsprongdomein zijn.
-1. Stel de `X-Edge-Key` of `X-AEM-Edge-Key` in (als uw CDN `X-Edge-*` strips). De waarde moet van Adobe komen.
-   * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en de `X-Forwarded-*` kopballen tot de AEM toepassing overgaan. `X-Forwarded-Host` wordt bijvoorbeeld door AEM gebruikt om de Hostkop te bepalen en `X-Forwarded-For` wordt gebruikt om de client-IP te bepalen. Het wordt dus de verantwoordelijkheid van de vertrouwde aanroeper (d.w.z. de door de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` koppen te verzekeren (zie de nota hieronder).
-   * Naar keuze, kan de toegang tot de ingang van Adobe CDN worden geblokkeerd wanneer `X-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
+1. Wijs de CDN toe aan de ingang van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. SNI moet ook aan de ingang van Adobe CDN worden geplaatst
+1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Stel de `X-Forwarded-Host`-header in met de domeinnaam, zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
+1. Set `X-AEM-Edge-Key`. De waarde moet van Adobe komen.
+   * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en de `X-Forwarded-*` kopballen tot de AEM toepassing overgaan. Bijvoorbeeld, wordt `X-Forwarded-For` gebruikt om cliëntIP te bepalen. Het wordt dus de verantwoordelijkheid van de vertrouwde aanroeper (d.w.z. de door de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` koppen te verzekeren (zie de nota hieronder).
+   * Naar keuze, kan de toegang tot de ingang van Adobe CDN worden geblokkeerd wanneer `X-AEM-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
 
 Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
+
+Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal worden gedaan gebruikend het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
