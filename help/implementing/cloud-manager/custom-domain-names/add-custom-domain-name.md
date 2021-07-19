@@ -2,7 +2,7 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Een aangepaste domeinnaam toevoegen
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Een gebruiker moet een Business Owner of Deployment Manager zijn om een aangepas
 
 * AEM als Cloud Service ondersteunt geen jokertekendomeinen.
 
-* Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen per omgeving hosten.
+* Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
 
 * Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
 
