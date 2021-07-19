@@ -3,11 +3,11 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
-solution: Experience Manager, Experience Manager Assets, Experience Manager as a Cloud Service
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 65%
+source-wordcount: '479'
+ht-degree: 66%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 65%
    + [Slimme tags voor afbeeldingen](smart-tags.md)
    + [Slimme tag toewijzen aan video-elementen](smart-tags-video-assets.md)
    + [Assets indelen](organize-assets.md)
-   + [Elementen gebruiken [!DNL Adobe Stock] in AEM](aem-assets-adobe-stock.md)
+   + [Gebruik [!DNL Adobe Stock] middelen](aem-assets-adobe-stock.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Overzicht van metadata](manage-metadata.md)
    + [Integreren met [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 65%
    + [Facetten doorzoeken](search-facets.md)
    + [HTTP-API voor assets](mac-api-assets.md)
    + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
-   + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
+   + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
+   + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
