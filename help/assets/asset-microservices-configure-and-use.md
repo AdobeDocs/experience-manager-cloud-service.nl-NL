@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2645'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Ga als volgt te werk om een standaard verwerkingsprofiel te maken:
 
 1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Klik op **[!UICONTROL Create]**.
 1. Geef een naam op waarmee u het profiel op unieke wijze kunt identificeren wanneer u het toepast op een map.
-1. Schakel **[!UICONTROL Create FPO Rendition]** in op het tabblad **[!UICONTROL Standard]** om FPO-uitvoeringen te genereren. Voer een waarde tussen 1 en 100 in voor **[!UICONTROL Quality]**.
+1. Schakel **[!UICONTROL Create FPO Rendition]** in op het tabblad **[!UICONTROL Image]** om FPO-uitvoeringen te genereren. Voer een waarde tussen 1 en 100 in voor **[!UICONTROL Quality]**.
 1. Als u andere vertoningen wilt genereren, klikt u op **[!UICONTROL Add New]** en geeft u de volgende informatie op:
 
    * Bestandsnaam van elke vertoning.
@@ -160,8 +160,10 @@ Maak en pas de extra aangepaste verwerkingsprofielen toe op specifieke mappen di
 Pas verwerkingsprofielen toe op mappen met een van de volgende methoden:
 
 * Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en **[!UICONTROL Apply Profile to Folder(s)]**-handeling gebruiken. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
-* Gebruikers kunnen een map selecteren in de gebruikersinterface Middelen, de handeling **[!UICONTROL Properties]** gebruiken om het scherm met mapeigenschappen te openen, op het tabblad **[!UICONTROL Processing Profiles]** klikken en in de keuzelijst het juiste verwerkingsprofiel voor die map selecteren. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
+* Gebruikers kunnen een map in de gebruikersinterface Middelen selecteren, de handeling **[!UICONTROL Properties]** gebruiken om het scherm met mapeigenschappen te openen, op het tabblad **[!UICONTROL Asset Processing]** klikken en in de lijst [!UICONTROL Processing Profile] het juiste verwerkingsprofiel voor die map selecteren. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
    ![Een verwerkingsprofiel toepassen op een map op het tabblad Eigenschappen van element](assets/folder-properties-processing-profile.png)
+
+* Gebruikers kunnen mappen of specifieke elementen in de gebruikersinterface Middelen selecteren om een verwerkingsprofiel toe te passen en vervolgens ![middelen opnieuw verwerken pictogram](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** kiezen uit de opties die boven beschikbaar zijn.
 
 >[!TIP]
 >
