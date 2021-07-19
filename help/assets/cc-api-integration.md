@@ -4,9 +4,9 @@ description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
 feature: Uploaden, Asset Processing, Publiceren, Asset compute Microservices, Workflow
 role: User,Admin
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,23 @@ ht-degree: 0%
 
 # Variaties van elementen genereren met behulp van [!DNL Adobe Creative Cloud]-integratie {#content-automation}
 
-Inhoudsautomatisering add-on integreert Experience Manager Assets als Cloud Service- en Adobe Creative Cloud API&#39;s om uw elementen op schaal creatief te verwerken. Experience Manager gebruikt op cloud gebaseerde [assetmicroservices](/help/assets/asset-microservices-overview.md) om de Adobe Creative Cloud-functies te benutten en het maken en verwerken van middelen te automatiseren.
+Inhoudsautomatisering-invoegtoepassing integreert [!DNL Adobe Experience Manager Assets as a Cloud Service]- en [!DNL Adobe Creative Cloud]-API&#39;s om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloudgebaseerde  [asset-](/help/assets/asset-microservices-overview.md) microservices om de  [!DNL Adobe Creative Cloud] functies te gebruiken en het maken van middelen en het verwerken van media te automatiseren.
 
-Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom], hoeft u geen bestanden te downloaden van, bewerken en uploaden naar [!DNL Experience Manager Assets]. U hoeft alleen een verwerkingsprofiel te maken en te configureren, het profiel toe te passen op een map en de elementen te uploaden naar de map. De elementen die naar de map zijn geüpload, worden verwerkt om verschillende variaties van dat element te maken. De consistente en moeiteloze bulkverwerking en het uitgeven van activa bespaarde handinspanningen en verhoogt inhoudssnelheid. Bovendien kunnen ontwikkelaars en partners de assetmicroservices uitbreiden met directe toegang tot deze API&#39;s en aangepaste logica opnemen.
+Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom], hoeft u geen elementen te downloaden van [!DNL Experience Manager Assets], deze te bewerken en opnieuw te uploaden. U maakt en configureert een verwerkingsprofiel in [!DNL Experience Manager], past het profiel toe op een map en uploadt de middelen naar de map. De geüploade elementen worden opnieuw verwerkt op basis van de verwerkingsprofielen en deze elementen kunnen variëren. De consequente en moeiteloze bulkverwerking bespaart handmatige inspanningen en verhoogt de snelheid van de inhoud, ook zonder de behoefte aan uitstekende creatieve vaardigheden. Ook, kunnen de ontwikkelaars en de partners de activa microservices met directe toegang tot deze APIs uitbreiden en douanelogica omvatten.
 
-Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkingen op hun middelen te automatiseren:
-
-* **Automatische tint**: Hiermee maakt u gebruik van kunstmatige intelligentie om de inhoud van de afbeelding te analyseren en maakt u op intelligente wijze licht- en kleurcorrecties op basis van de unieke kenmerken van de afbeelding.
+Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkingen op hun middelen te automatiseren:\
+![Adobe Photoshop- en Adobe Lightroom-bewerkingen automatiseren op bedrijfsmiddelen](assets/content-automation.png)
+* **Automatische tint**: Hierbij wordt gebruikgemaakt van kunstmatige intelligentie om de inhoud van de afbeelding te analyseren en op intelligente wijze licht- en kleurcorrecties toe te passen op basis van de unieke kenmerken van de afbeelding.
 * **Automatisch rechtop**: Gebruikt kunstmatige intelligentie om de inhoud van het beeld te analyseren en scheefgetrokken perspectief in beelden te verbeteren. Bijvoorbeeld om niveauhorizonten te maken.
 * **Lightroom-voorinstellingen**: Hiermee past u een door de gebruiker gedefinieerde vormgeving toe op afbeeldingen voor een consistente weergave met behulp van aangepaste voorinstellingen.
 * **Knipsel** afbeelding: Gebruikt kunstmatige intelligentie om selectie rond aliente voorwerpen tot stand te brengen en achtergrond met één enkele bevel te verwijderen.
 * **Afbeeldingsmasker**: Gebruikt kunstmatige intelligentie om masker rond aliente voorwerpen met één enkele bevel tot stand te brengen.
 * **Photoshop-handelingen**: Hiermee wordt een reeks taken (in Photoshop) toegepast op een bestand of een groep bestanden.
-* **Vervanging** slim object: Hiermee past u de weergave op schaal aan door afbeeldingen te wisselen met behoud van alle effecten en aanpassingen die in een PSD-bestand zijn toegepast.
+* **Vervanging** slim object: Hiermee past u de weergave op schaal aan door afbeeldingen om te wisselen met behoud van alle effecten en aanpassingen die in een PSD-bestand zijn toegepast.
 
-## Een verwerkingsprofiel gebruiken om elementen te verwerken {#process-assets}
+
+
+## Een verwerkingsprofiel gebruiken om uw creatieve middelen bulksgewijs te bewerken {#process-assets}
 
 Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch variaties te maken:
 
@@ -38,11 +40,13 @@ Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch va
 
 1. Selecteer **[!UICONTROL Create]** en geef een **[!UICONTROL Name]** op.
 
-1. Selecteer de tab **[!UICONTROL Creative]**, geef de uitvoermap op en selecteer **[!UICONTROL Add New]** om creatieve configuraties toe te voegen.
+1. Selecteer de tab **[!UICONTROL Creative]**, geef de uitvoermap op en selecteer **[!UICONTROL Add New]** om een creatieve configuratie toe te voegen.
 
-1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer Includes and Excludes MIME type lists (of filter invoerelement) en selecteer de vereiste creatieve bewerking.
+1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer **[!UICONTROL Includes]** en **[!UICONTROL Excludes]** MIME-typelijsten (of invoerelementfilter) en selecteer de vereiste creatieve bewerking.<br/>
 
-1. Voor sommige bewerkingen is een aanvullende parameter (element) vereist. Geef indien nodig waarden op voor dergelijke aanvullende parameters.
+   ![tabblad Creatief in verwerkingsprofiel](assets/creative-processing-profile.png)
+
+1. Sommige bewerkingen vereisen extra parameters (element). Geef indien nodig waarden op voor deze extra parameters.
 
 1. Voeg meer creatieve bewerkingen toe als onderdeel van hetzelfde verwerkingsprofiel of sla het profiel op.
 
@@ -61,4 +65,5 @@ Als u de bestaande elementen wilt verwerken, selecteert u de elementen, selectee
 >
 >* [Configureer en gebruik de assetmicroservices via verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
 >* [ [!DNL Experience Manager] Integreren met [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Inname en verwerking van bedrijfsmiddelen met asset microservices: Een overzicht](/help/assets/asset-microservices-overview.md).
 
