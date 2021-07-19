@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als opmerkingen bij de release van Cloud Service voor 2020.4.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.4.0
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Exp
 >* [Over Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal configureren](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Vorm Experience Manager om met de Verbinding van Activa te werken](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Workflow maken in Experience Manager met behulp van asset microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Workflow maken in Experience Manager met behulp van middelen-microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Nieuwe functies in Cloud Manager {#whats-new-cloud-manager}
