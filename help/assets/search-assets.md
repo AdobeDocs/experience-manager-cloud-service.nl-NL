@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Zoeken,metagegevens,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '4867'
+source-wordcount: '4862'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met 
 
 ## Suggesties zoeken terwijl u typt {#searchsuggestions}
 
-Wanneer u een trefwoord begint te typen, AEM u de mogelijke zoektrefwoorden of trefwoorden voor. De suggesties zijn gebaseerd op de middelen in AEM. AEM indexeert alle metagegevensvelden om te helpen met zoeken. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
+Wanneer u een sleutelwoord begint te typen, stelt de Experience Manager de mogelijke onderzoekstrefwoorden of uitdrukkingen voor. De suggesties zijn gebaseerd op de middelen in Experience Manager. Experience Manager indexeert alle metagegevensvelden om te helpen bij het zoeken. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
 
 * Elementlabels. (afbeeldingen tot `jcr:content/metadata/cq:tags`)
 * Titel van element. (afbeeldingen tot `jcr:content/metadata/dc:title`)
@@ -281,7 +281,7 @@ De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#
 * Het zoeken in volledige tekst ondersteunt operatoren zoals `-` en `^`. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld `"Notebook - Beauty"` in plaats van `Notebook - Beauty`.
 * Als de zoekresultaten te veel zijn, beperkt u het [bereik van zoeken](#scope) tot nul-in op de gewenste elementen. Het werkt het beste als u een idee hebt van hoe u beter kunt zoeken naar de gewenste elementen, bijvoorbeeld een specifiek bestandstype, een specifieke locatie, specifieke metagegevens, enzovoort.
 
-* **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. [!DNL Experience Manager] biedt methoden om elementen automatisch te labelen met behulp van kunstmatig intelligente services van Adobe Sensei die uw elementen steeds beter kunnen coderen met gebruik en training. Wanneer u naar elementen zoekt, wordt met de slimme tags rekening gehouden als de functie op uw account is ingeschakeld. Het werkt naast de ingebouwde zoekfunctionaliteit. Zie [zoekgedrag](#searchbehavior). Om de orde te optimaliseren waarin de onderzoeksresultaten worden getoond, kunt u [het onderzoek rangschikken](#searchrank) van een paar uitgezochte activa opvoeren.
+* **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. [!DNL Experience Manager] biedt methoden om elementen automatisch te labelen met behulp van kunstmatig intelligente services van Adobe Sensei die uw elementen steeds beter kunnen coderen met gebruik en training. Wanneer u naar elementen zoekt, worden de slimme tags in de code opgenomen. Het werkt naast de ingebouwde zoekfunctionaliteit. Zie [zoekgedrag](#searchbehavior). Om de orde te optimaliseren waarin de onderzoeksresultaten worden getoond, kunt u [het onderzoek rangschikken](#searchrank) van een paar uitgezochte activa opvoeren.
 
 * **Indexeren**: Alleen geïndexeerde metagegevens en elementen worden geretourneerd in de zoekresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [indexeren](#searchindex).
 
@@ -453,7 +453,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 ## Onverwachte zoekresultaten en problemen {#unexpected-results}
 
 <!--
-**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+**Partially related or unrelated search results**: Experience Manager may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
