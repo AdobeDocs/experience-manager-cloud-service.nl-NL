@@ -5,10 +5,10 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 29%
+source-wordcount: '885'
+ht-degree: 30%
 
 ---
 
@@ -180,15 +180,11 @@ ht-degree: 29%
    + [Implementeren naar AEM as a Cloud Service](deploying/overview.md)
    + [Versie-updates AEM](deploying/aem-version-updates.md)
    + [OSGi configureren voor AEM as a Cloud Service](deploying/configuring-osgi.md)
-   + [OSGi-configuratie-API](deploying/osgi-configuration-api.md)
 + Auteurlaag {#author-tier}
    + [Toegang tot de auteurlaag](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Beveiliging van de auteurlaag](/help/implementing/author-tier/securing-the-author-tier.md)
 + Overzicht van contentlevering {#content-delivery}
    + [Workflow voor contentlevering](dispatcher/overview.md)
    + [Dispatcher in de cloud](dispatcher/disp-overview.md)
-   + [Validatie en foutopsporing met Dispatcher Tools](dispatcher/validation-debug.md)
-   + [De Dispatcher-configuratie migreren van AMS naar AEM als Cloud Service](dispatcher/ams-aem.md)
-   + [Validatie en foutopsporing met Verouderde Dispatcher Tools](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
