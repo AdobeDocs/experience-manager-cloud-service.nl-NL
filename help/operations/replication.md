@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -55,10 +55,6 @@ Een boomactivering uitvoeren:
 
    ![](assets/publish-distribute.png "DistributeDistribute")
 4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
-
-Houd u aan de volgende richtlijnen wanneer u deze functie gebruikt voor de beste prestaties:
-* Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, met een harde limiet van 500 paden.
-* De totale grootte van de gerepliceerde inhoud moet kleiner zijn dan 5 MB. Dit omvat enkel de knopen en de eigenschappen, maar geen binaire getallen, die werkschemapakketten en inhoudspakketten omvatten.
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
@@ -189,11 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
 
 Het algemene `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u de nieuwe `getStatusForAgent()` methode gebruiken, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
-
-
-**Paden en grootten van de API voor replicatie**
-
-Het wordt aanbevolen minder dan 100 paden te repliceren, waarbij 500 de harde limiet is. Boven de harde grens, zal een ReplicationException worden geworpen. Als uw toepassingslogica atomische replicatie niet vereist, kan deze grens worden overwonnen door ReplicationOptions.setUseAtoomcall aan vals te plaatsen, die om het even welk aantal wegen zal goedkeuren, maar intern emmers creëren om onder deze grens te blijven. De hoeveelheid inhoud die per replicatievraag wordt overgebracht moet niet 5 MB overschrijden, die de knopen en de eigenschappen omvat, maar geen binaire getallen (werkschemapakketten en inhoudspakketten worden beschouwd als binaire getallen).
 
 ## Problemen oplossen {#troubleshooting}
 
