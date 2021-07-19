@@ -2,7 +2,7 @@
 title: Inleiding - Aangepaste domeinnamen
 description: Inleiding - Aangepaste domeinnamen
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 Met Cloud Manager kunt u een aangepast domein toevoegen waarmee u uw site via de gebruikersinterface kunt identificeren met een unieke merknaam. Uw Adobe Experience Manager als Cloud Service wordt voorzien van een standaarddomeinnaam, die in `*.adobeaemcloud.com` beëindigt. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
 >[!NOTE]
->Aangepaste domeinnamen worden alleen ondersteund in Cloud Manager voor siteprogramma&#39;s (publicatieservice). Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen per omgeving hosten. AEM als Cloud Service ondersteunt geen jokertekendomeinen.
+>Aangepaste domeinnamen worden alleen ondersteund in Cloud Manager voor siteprogramma&#39;s (publicatieservice). Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten. AEM als Cloud Service ondersteunt geen jokertekendomeinen.
 
 Met behulp van de pagina Domeininstellingen UI van Cloud Manager of de pagina Omgevingsdetails kan een gebruiker met machtigingen verschillende taken uitvoeren om aangepaste domeinnamen voor uw omgevingen te beheren, zoals:
 
