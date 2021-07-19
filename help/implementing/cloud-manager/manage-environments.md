@@ -2,7 +2,7 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -67,7 +67,7 @@ De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie
 
 1. Selecteer de **knop Alles tonen** om naar de overzichtspagina **Environment** te navigeren om een tabel met een volledige lijst met omgevingen weer te geven.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![](assets/environment-view-1.png)
 
 1. Op de pagina **Omgevingen** wordt de lijst met alle bestaande omgevingen weergegeven.
 
