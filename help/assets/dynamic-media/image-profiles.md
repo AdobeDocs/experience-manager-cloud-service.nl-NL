@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2628'
+source-wordcount: '2631'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
+1. Tik op het AEM-logo en ga naar **[!UICONTROL Assets]**. Navigeer vervolgens naar de bovenliggende map van de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Selecteer in de map het vinkje om het te selecteren en selecteer **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Image Profiles]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Profile Name]** het profiel en selecteer **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
