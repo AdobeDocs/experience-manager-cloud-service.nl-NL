@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Doelstelling {#objective}
 
-Dit document helpt u de stappen begrijpen die uw systeembeheerder moet nemen om uw teamleden aan AEM als profielen van het product van de Cloud Service toe te wijzen en waarom het van cruciaal belang is om uw Auteurs AEM toe te laten om op hun reis met AEM te beginnen.
+Dit document helpt u de stappen begrijpen die uw Beheerder van het Systeem moet nemen om uw teamleden aan AEM als profielen van het product van de Cloud Service toe te wijzen en waarom het cruciaal is om uw Auteurs van AEM toe te laten om op hun reis met AEM te beginnen.
 
 Na het lezen van deze sectie moet u:
 
