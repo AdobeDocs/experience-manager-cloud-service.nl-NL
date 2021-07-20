@@ -2,15 +2,15 @@
 title: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
 
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als een Cloud Service {#release-notes}
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
 
@@ -65,6 +65,8 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 * Bij het importeren van elementen met het gereedschap voor bulkimport hebben beheerders nu de optie om de bronbestanden te verwijderen nadat het importeren is voltooid. Zie [bulkopname van elementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Wanneer het uitgeven van een meta-gegevensschema, staat een nieuw gebied van de selecteur van de wortelweg beheerders toe om de selectie snel en gemakkelijk te maken, daardoor verminderend de configuratietijd.
+
+* Bij het bewerken van een metagegevensschema wordt een gegevenstype toegevoegd dat een tekstgebied met vrije vorm biedt in de metagegevenseditor. Gebruikers kunnen dit tekstgebied gebruiken om vrije tekst in te voeren als metagegevens van een element. Zie [Schema-editor voor metagegevens](/help/assets/metadata-schemas.md).
 
 * Metagegevens van vele elementen kunnen bulksgewijs worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` toe als kolomkop in het CSV-bestand in plaats van het woord `Date`.
 
@@ -150,7 +152,7 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM be
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 2021.
 De volgende release is gepland voor 6 mei 2021.
 
-### Wat is er nieuw?{#what-is-new-april}
+### Wat is er nieuw? {#what-is-new-april}
 
 * UI werkt aan de Add en Edit de werkschema&#39;s van het Programma om het intuïtiever te maken.
 
