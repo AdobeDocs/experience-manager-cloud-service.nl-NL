@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | Onboarding Journaal | Dit document |
-| 1 | Leer concepten aan boord, zoals:<br>Systeembeheerder<br>Admin Console<br>Adobe Identity Management System<br>Adobe ID<br>Inleiding tot Cloud Manager<br>AEM als Cloud Service Team en Productprofielen<br>Adobe Support | Meer informatie over instapconcepten. |
+| 1 | Leer Begrippen aan boord, zoals:<br>[Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service Team en Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Ondersteuning voor Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Meer informatie over instapconcepten. |
 | 2 | Aan de slag met on-boarding | Meer informatie over het aanmelden bij Admin Console en het controleren van uw profiel als systeembeheerder |
 | 3 | Teamleden toewijzen aan productprofielen van Cloud Manager | Bekijk de productprofielen van Cloud Manager en leer hoe u teamleden toewijst aan productprofielen van Cloud Manager. |
 | 4 | Cloud Resources instellen via Cloud Manager | Leer hoe uw cloudbronnen zijn gemaakt en wie dit kan doen. Leer ook hoe uw cloudprogramma en -omgevingen zijn gemaakt. |
