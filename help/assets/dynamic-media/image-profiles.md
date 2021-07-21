@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Middelenbeheer, afbeeldingsprofielen, uitvoeringen
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2676'
 ht-degree: 5%
 
 ---
@@ -160,9 +160,15 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Tik op het AEM-logo en ga naar **[!UICONTROL Assets]**. Navigeer vervolgens naar de bovenliggende map van de map waarop u een afbeeldingsprofiel wilt toepassen.
-1. Selecteer in de map het vinkje om het te selecteren en selecteer **[!UICONTROL Properties]**.
-1. Selecteer het tabblad **[!UICONTROL Image Profiles]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Profile Name]** het profiel en selecteer **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]**.
+1. Navigeer naar een *map* (geen element) waarop u een afbeeldingsprofiel wilt toepassen.
+1. Voer afhankelijk van de weergave waarin u zich bevindt een van de volgende handelingen uit:
+   * Houd de aanwijzer in de kaartweergave boven op de map en selecteer het vinkje om het te selecteren.
+   * Schakel in de kolomweergave of de lijstweergave het selectievakje links van de mapnaam in.
+1. Selecteer **[!UICONTROL Properties]** op de werkbalk.
+1. Selecteer het tabblad **[!UICONTROL Dynamic Media Processing]**.
+1. Selecteer onder **[!UICONTROL Image Profile]** in de vervolgkeuzelijst **[!UICONTROL Profile Name]** het profiel dat u wilt toepassen.
+1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek van de pagina. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -266,7 +272,7 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 ## Een afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
 
-Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een Profiel van het Beeld uit een omslag uit **[!UICONTROL Tools]** menu verwijderen of als u in de omslag, uit **[!UICONTROL Properties]** bent.
 
