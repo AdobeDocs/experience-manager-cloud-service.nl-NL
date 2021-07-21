@@ -4,10 +4,10 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 66%
+source-wordcount: '481'
+ht-degree: 60%
 
 ---
 
@@ -43,10 +43,10 @@ ht-degree: 66%
    + [Videoassets beheren](manage-video-assets.md)
    + [Elementen downloaden](download-assets-from-aem.md)
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
-   + [Digital Rights Management voor assets](drm.md)
+   + [Digital Rights Management voor elementen](drm.md)
    + [Watermerkelementen](watermark-assets.md)
    + [Elementen verwerken met behulp van [!DNL Creative Cloud] API&#39;s](cc-api-integration.md)
-+  configureren, beheren en uitbreiden [!DNL Assets]{#admin}
++ [!DNL Assets] {#admin} configureren, beheren en uitbreiden
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -112,8 +112,8 @@ ht-degree: 66%
    + [Interactieve afbeeldingen](dynamic-media/interactive-images.md)
    + [Interactieve video&#39;s](dynamic-media/interactive-videos.md)
    + [360 VR-video](dynamic-media/360-video.md)
-   + [Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch](dynamic-media/launch.md)
-   + [Quickviews gebruiken om aangepaste pop-ups te maken](dynamic-media/custom-pop-ups.md)
+   + [Dynamic Media-viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](dynamic-media/tags.md)
+   + [QuickView gebruiken om aangepaste pop-ups te maken](dynamic-media/custom-pop-ups.md)
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](dynamic-media/responsive-site.md)
    + [Dynamic Media-assets vooraf bekijken](dynamic-media/previewing-assets.md)
    + [Dynamic Media-assets aan pagina&#39;s toevoegen](dynamic-media/adding-dynamic-media-assets-to-pages.md)
