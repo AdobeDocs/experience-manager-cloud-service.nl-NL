@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit - Cloud Services
 description: Aangepaste regels voor codekwaliteit - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
+source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3520'
 ht-degree: 4%
 
 ---
@@ -106,7 +106,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP-aanvragen moeten altijd socket hebben en time-outs verbinden {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP-aanvragen moeten altijd socket- en verbindingstime-outs hebben {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 **Sleutel**: CQRules:ConnectionTimeoutMechanism
 
@@ -196,7 +196,7 @@ public void orDoThis() {
 
 ResourceResolver-objecten die zijn verkregen van de ResourceResolverFactory gebruiken systeembronnen. Hoewel er maatregelen op zijn plaats zijn om deze middelen terug te winnen wanneer een ResourceResolver niet meer in gebruik is, is het efficiënter om om het even welke geopende voorwerpen uitdrukkelijk te sluiten ResourceResolver door de close () methode te roepen.
 
-Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis te gebruiken in plaats van uitdrukkelijk het aanhalen van close().
+Eén relatief gebruikelijke misvatting is dat ResourceResolver-objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dit is niet het geval - ongeacht hoe een ResourceResolver wordt geopend, zou het moeten worden gesloten wanneer niet meer gebruikt. Aangezien ResourceResolver de Closeable interface uitvoert, is het ook mogelijk om de poging-met-middelen syntaxis in plaats van uitdrukkelijk te gebruiken close().
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
@@ -229,7 +229,7 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Gebruik geen servletpaden naar links om servlets te registreren {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Gebruik geen Serlet-serverpaden naar elkaar om servlets te registreren {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 **Sleutel**: CQRules:CQBP-75
 
@@ -326,7 +326,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Meld u niet aan bij INFO bij het verwerken van GET- of HEAD-verzoeken {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Meld u niet aan bij INFO wanneer u GET- of HEAD-verzoeken afhandelt {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Sleutel**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -392,7 +392,7 @@ public void doThis() {
 }
 ```
 
-### Login vangstblokken zou op het WARN of FOUTniveau {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level} moeten zijn
+### Aanmelden van vangstblokken moet zich op het WARN- of FOUTniveau bevinden {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 **Sleutel**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
@@ -428,7 +428,7 @@ public void doThis() {
 }
 ```
 
-### Stapelsporen niet afdrukken naar de console {#do-not-print-stack-traces-to-the-console}
+### Stapelsporen niet naar de console afdrukken {#do-not-print-stack-traces-to-the-console}
 
 **Sleutel**: CQRules:CQBP-44—ExceptionPrintStackTrace
 
@@ -464,7 +464,7 @@ public void doThis() {
 }
 ```
 
-### Uitvoer niet uitvoeren naar standaarduitvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
+### Niet uitvoeren naar standaardinvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
 
 **Sleutel**: CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -500,7 +500,7 @@ public void doThis() {
 }
 ```
 
-### Hardcoded /apps en /libs-paden voorkomen {#avoid-hardcoded-apps-and-libs-paths}
+### Hardcoded /apps en /libs paden vermijden {#avoid-hardcoded-apps-and-libs-paths}
 
 **Sleutel**: CQRules:CQBP-71
 
@@ -528,7 +528,7 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Verschuivende planner mag niet worden gebruikt {#sonarqube-sling-scheduler}
+### Verkoopplanner mag niet worden gebruikt {#sonarqube-sling-scheduler}
 
 **Sleutel**: CQRules:AMSCORE-554
 
@@ -542,7 +542,7 @@ De Planner van de Verkoop moet niet voor taken worden gebruikt die een gewaarbor
 
 Raadpleeg [Apache Sling Event en Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) voor meer informatie over de manier waarop saldertaken worden uitgevoerd in een geclusterde omgeving.
 
-### AEM verouderde API&#39;s mogen niet worden gebruikt {#sonarqube-aem-deprecated}
+### Verouderde API&#39;s AEM niet mogen worden gebruikt {#sonarqube-aem-deprecated}
 
 **Sleutel**: AMSCORE-553
 
@@ -559,14 +559,14 @@ In veel gevallen worden deze API&#39;s vervangen door de standaard Java *@Deprec
 Er zijn echter gevallen waarin een API afgekeurd is in de context van AEM, maar in andere contexten niet mag worden afgekeurd. Deze regel identificeert deze tweede klasse.
 
 
-## Inhoudsregels voor OakPAL {#oakpal-rules}
+## Regels voor OakPAL-inhoud {#oakpal-rules}
 
 U vindt hieronder de OakPAL-controles die zijn uitgevoerd door Cloud Manager.
 
 >[!NOTE]
 >OakPAL is een kader dat door een AEM Partner (en winnaar van 2019 AEM Rockstar North America) wordt ontwikkeld die inhoudspakketten valideert met behulp van een standalone Oak-opslagplaats.
 
-### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet worden geïmplementeerd of uitgebreid door klanten {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet door klanten worden geïmplementeerd of uitgebreid {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 **Sleutel**: CQBP-84
 
@@ -592,7 +592,88 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Aangepaste DAM-indexen van luyleen-eiken-elementen hebben de juiste structuur {#oakpal-damAssetLucene-sanity-check}
+### Aangepaste indexen van luzerneep moeten een tika-configuratie hebben {#oakpal-indextikanode}
+
+**Sleutel**: IndexTikaNode
+
+**Type**: Bug
+
+**Ernst**: Blocker
+
+**Sinds**: 2021,8,0
+
+De veelvouden uit de doos AEM de indexen van de Eak omvatten een tikconfiguratie en de aanpassingen van deze indexen **must** omvatten een tikconfiguratie. Deze regel controleert op aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexen en roept een kwestie op als of `tika`  knooppunt ontbreekt of als er in het knooppunt `tika` een onderliggend knooppunt met de naam `config.xml` ontbreekt.
+
+Raadpleeg [Indexering van documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) voor meer informatie over het aanpassen van indexdefinities.
+
+#### Niet-conforme code {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### Compatibele code {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Aangepaste indexen van luzerak mogen niet synchroon zijn {#oakpal-indexasync}
+
+**Sleutel**: IndexAsyncProperty
+
+**Type**: Bug
+
+**Ernst**: Blocker
+
+**Sinds**: 2021,8,0
+
+eiken indexen van het type lucene  moet altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van lucene-indexen vindt u in de [Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+
+#### Niet-conforme code {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Compatibele code {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Aangepaste DAM Asset Lucene Oak-indexen hebben de juiste structuur  {#oakpal-damAssetLucene-sanity-check}
 
 **Sleutel**: IndexDamAssetLucene
 
@@ -602,43 +683,36 @@ public class DontDoThis implements Page {
 
 **Sinds**: 2021,6,0
 
-Voor het correct zoeken naar elementen in AEM Assets moet de `damAssetLucene` eikenindex een aantal richtlijnen volgen. Deze regel controleert specifiek de volgende patronen voor indexen de waarvan naam `damAssetLucene` bevat:
+Voor het correct zoeken naar elementen in AEM Assets moeten aanpassingen van de `damAssetLucene`-eikenindex een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde eigenschap moet hebben genoemd `tags` die de waarde `visualSimilaritySearch` bevat.
 
-De naam moet de richtlijnen volgen voor het aanpassen van indexdefinities die hier worden beschreven.
-
-* Specifiek moet de naam het patroon `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>` volgen.
-
-* De indexdefinitie moet een eigenschap met de naam tags bevatten die meerdere waarden heeft en die de waarde `visualSimilaritySearch` bevat.
-
-* De indexdefinitie moet een kindknoop hebben genoemd `tika` en die kindknoop moet een kindknoop genoemd config.xml hebben.
-
-#### Niet-compatibele code {#non-compliant-code-damAssetLucene}
+#### Niet-conforme code {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### Compatibele code {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
 
-### Klantpakketten moeten geen knooppunten maken of wijzigen onder /libs {#oakpal-customer-package}
+### Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen {#oakpal-customer-package}
 
 **Sleutel**: BannedPaths
 
@@ -665,7 +739,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 >[!NOTE]
 >Deze regel zal kwesties veroorzaken waar de zelfde configuratie, bij de zelfde weg, in veelvoudige pakketten wordt bepaald, met inbegrip van gevallen waar het zelfde pakket in de algemene lijst van gebouwde pakketten wordt gedupliceerd. Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` produceert waarin `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` insluit, worden alle configuraties binnen `com.myco:com.myco.ui.apps` gerapporteerd als duplicaten. Dit is over het algemeen een geval van het niet volgen van [de Richtlijnen van de Structuur van het Pakket van de Inhoud](/help/implementing/developing/introduction/aem-project-content-package-structure.md); in dit specifieke voorbeeld ontbreekt in het pakket `com.myco:com.myco.ui.apps` de eigenschap `<cloudManagerTarget>none</cloudManagerTarget>`.
 
-#### Niet-compatibele code {#non-compliant-code-osgi}
+#### Niet-conforme code {#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -684,7 +758,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Mappen configureren en installeren mag alleen OSGi-knooppunten {#oakpal-config-install} bevatten
+### Mappen configureren en installeren mag alleen OSGi-knooppunten bevatten {#oakpal-config-install}
 
 **Sleutel**: ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -698,7 +772,7 @@ Om veiligheidsredenen, zijn de wegen die */config/ en /install/* bevatten slecht
 
 Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur maak gebruik van het `configPath` bezit op `cq:inplaceEditing` knoop om de nieuwe plaats te specificeren.
 
-#### Niet-compatibele code {#non-compliant-code-config-install}
+#### Niet-conforme code {#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -717,7 +791,7 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
       + rtePlugins [nt:unstructured]
 ```
 
-### Pakketten mogen {#oakpal-no-overlap} niet overlappen
+### Pakketten mogen elkaar niet overlappen {#oakpal-no-overlap}
 
 **Sleutel**: PackageOverlaps
 
@@ -729,7 +803,7 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
 
 Gelijkaardig aan *de Pakketten zouden Duplicate OSGi Configurations* niet moeten bevatten is dit een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
 
-### Standaardontwerpmodus mag geen klassieke UI {#oakpal-default-authoring} zijn
+### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
 **Sleutel**: ClassicUIAuthoringMode
 
@@ -741,7 +815,7 @@ Gelijkaardig aan *de Pakketten zouden Duplicate OSGi Configurations* niet moeten
 
 De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaalt de standaard auteurswijze binnen AEM. Aangezien Klassieke UI sinds AEM 6.4 is afgekeurd, zal een kwestie nu worden opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
 
-### Componenten met dialoogvensters moeten dialoogvensters met aanraakinterface hebben {#oakpal-components-dialogs}
+### Componenten met dialoogvensters moeten aanraakinterface-dialoogvensters hebben {#oakpal-components-dialogs}
 
 **Sleutel**: ComponentWithOnlyClassicUIDialog
 
@@ -759,7 +833,7 @@ AEM Componenten die een Klassieke UI dialoog hebben zouden altijd een overeenkom
 
 De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Raadpleeg [De AEM Moderniseringsgereedschappen](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) voor meer informatie.
 
-### Pakketten mogen geen Mutable en Onveranderbare Inhoud {#oakpal-packages-immutable} mengen
+### Pakketten mogen geen MIP-bestand en onveranderbare inhoud mengen {#oakpal-packages-immutable}
 
 **Sleutel**: ImmutableMutableMixedPackage
 
@@ -773,7 +847,7 @@ Om compatibel te zijn met het implementatiemodel van de Cloud Service, moeten af
 
 Raadpleeg [AEM Projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie.
 
-### Reverse Replication Agents should not be used {#oakpal-reverse-replication}
+### Reverse Replication Agents mogen niet worden gebruikt {#oakpal-reverse-replication}
 
 **Sleutel**: ReverseReplication
 
@@ -787,7 +861,7 @@ Ondersteuning voor omgekeerde replicatie is niet beschikbaar in Cloud Service-im
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
-### OakPAL - De middelen die in volmacht-Toegelaten de Bibliotheken van de Cliënt worden bevat zouden in een omslag genoemd middelen {#oakpal-resources-proxy} moeten zijn
+### OakPAL - De middelen die in volmacht-Toegelaten de Bibliotheken van de Cliënt worden bevat zouden in een omslag moeten worden genoemd middelen {#oakpal-resources-proxy}
 
 **Sleutel**: ClientlibProxyResource
 
@@ -799,7 +873,7 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 
 AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in [Het gebruiken van Preprocessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd middelen worden bevat om effectief van verwijzingen te zijn op de publicatieinstanties.
 
-#### Niet-compatibele code {#non-compliant-proxy-enabled}
+#### Niet-conforme code {#non-compliant-proxy-enabled}
 
 ```
 + apps
@@ -857,7 +931,7 @@ Terwijl het gebruik van statische malplaatjes historisch zeer algemeen in AEM pr
 
 De oudere stichtingscomponenten (d.w.z. componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene AEM versies ten gunste van de Componenten van de Kern WCM. Het gebruik van de oudere basiscomponenten als de basis voor aangepaste componenten (door bedekking of overerving) wordt afgeraden en moet worden omgezet in de corresponderende kerncomponent. Deze omzetting kan door [AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/) worden vergemakkelijkt.
 
-### OakPAL - alleen ondersteunde namen en volgorde van de uitvoermodus moeten worden gebruikt {#oakpal-supported-runmodes}
+### OakPAL: alleen ondersteunde namen en volgorde van uitvoermodi moeten worden gebruikt {#oakpal-supported-runmodes}
 
 **Sleutel**: SupportedRunmode
 
@@ -869,7 +943,7 @@ De oudere stichtingscomponenten (d.w.z. componenten onder `/libs/foundation`) zi
 
 AEM Cloud Service dwingt een strikt naamgevingsbeleid voor runmode namen en een strikte volgorde voor die runmodes af. De lijst met ondersteunde runmodi vindt u op [Runmodi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) en elke afwijking hiervan wordt als een probleem geïdentificeerd.
 
-### OakPAL - De definitieknoden van de Index van het Onderzoek van de Douane moeten directe kinderen van /oak:index {#oakpal-custom-search} zijn
+### OakPAL - De definitieknoden van de Index van het Onderzoek van de Douane moeten directe kinderen van /oak:index zijn {#oakpal-custom-search}
 
 **Sleutel**: OakIndexLocation
 
@@ -881,7 +955,7 @@ AEM Cloud Service dwingt een strikt naamgevingsbeleid voor runmode namen en een 
 
 AEM Cloud Service vereist dat de definities van de douaneonderzoeksindex (d.w.z. knopen van type oak:QueryIndexDefinition) directe kindknopen van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - De definitieknoden van de Definitie van de Index van het Onderzoek van de Douane moeten een compatVersie van 2 {#oakpal-custom-search-compatVersion} hebben
+### OakPAL - de Definitie Nodes van de Index van het Onderzoek van de Douane moet een compatVersie van 2 hebben {#oakpal-custom-search-compatVersion}
 
 **Sleutel**: IndexCompatVersion
 
@@ -893,7 +967,7 @@ AEM Cloud Service vereist dat de definities van de douaneonderzoeksindex (d.w.z.
 
 AEM Cloud Service vereist dat de definities van de douaneonderzoek indexdefinities (d.w.z. knopen van type oak:QueryIndexDefinition) het compatVersion bezit hebben dat aan 2 wordt geplaatst. Andere waarden worden niet ondersteund door AEM Cloud Service. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - afstammende knooppunten van Custom Search Index Definition-knooppunten moeten van het type &#39;t zijn:ongestructureerd {#oakpal-descendent-nodes}
+### OakPAL - afstammende knooppunten van Custom Search Index Definition-knooppunten moeten van het type niet zijn:ongestructureerd {#oakpal-descendent-nodes}
 
 **Sleutel**: IndexDescendantNodeType
 
@@ -905,7 +979,7 @@ AEM Cloud Service vereist dat de definities van de douaneonderzoek indexdefiniti
 
 Problemen kunnen moeilijk worden opgelost wanneer een definitieknooppunt van een aangepaste zoekindex niet-geordende onderliggende knooppunten bevat. Om deze te vermijden, wordt geadviseerd dat alle afstammende knopen van een `oak:QueryIndexDefinition` knoop van type niet:ongestructureerd zijn.
 
-### OakPAL - de Definitie van de Index van het Onderzoek van de Douane moet een kindknoop genoemd indexRules bevatten die kinderen {#oakpal-custom-search-index} heeft
+### OakPAL - de Definitie van de Index van het Onderzoek van de Douane moet een kindknoop genoemd indexRules bevatten die kinderen heeft {#oakpal-custom-search-index}
 
 **Sleutel**: IndexRulesNode
 
@@ -917,7 +991,7 @@ Problemen kunnen moeilijk worden opgelost wanneer een definitieknooppunt van een
 
 Een behoorlijk bepaalde knoop van de de definitiedefinitie van de douaneonderzoek index moet een kindknoop genoemd indexRules bevatten die, beurtelings minstens één kind moet hebben. Meer informatie vindt u op [Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL - De definitieknoden van de Definitie van de Index van het Onderzoek van de Douane moeten de noemende Overeenkomsten {#oakpal-custom-search-definitions} volgen
+### OakPAL - De definitieknooppunten van de Definitie van de Index van het Onderzoek van de Douane moeten het noemen overeenkomsten volgen {#oakpal-custom-search-definitions}
 
 **Sleutel**: IndexName
 
@@ -929,19 +1003,19 @@ Een behoorlijk bepaalde knoop van de de definitiedefinitie van de douaneonderzoe
 
 AEM Cloud Service vereist dat de definities van de douaneonderzoek indexdefinities (d.w.z., knopen van type `oak:QueryIndexDefinition`) volgens een specifiek patroon moeten worden genoemd dat op [Inhoud het Onderzoek en het Indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) wordt beschreven.
 
-### OakPAL - de Duidelijkheden van de Definitie van de Index van het Onderzoek van de Douane moeten de Type van Index {#oakpal-index-type-lucene} gebruiken
+### OakPAL - de Definitie van de Index van het Onderzoek van de Douane moet de Knooppunten van het Type van Index gebruiken lucene  {#oakpal-index-type-lucene}
 
 **Sleutel**: IndexType
 
-**Type**: Code Smell
+**Type**: Bug
 
-**Ernst**: Klein
+**Ernst**: Blocker
 
-**Sinds**: Versie 2021.2.0
+**Sinds**: Versie 2021.2.0 (type en ernst gewijzigd in 2021.8.0)
 
 AEM Cloud Service vereist dat de definities van de douaneonderzoek indexdefinities (d.w.z. knopen van type oak:QueryIndexDefinition) een typebezit met de waarde hebben die aan **lucene** wordt geplaatst. Indexering met behulp van verouderde indextypen moet worden bijgewerkt voordat er wordt overgeschakeld naar AEM Cloud Service. Zie [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) voor meer informatie.
 
-### OakPAL - De definitieknooppunten van de Index van het Onderzoek van de Douane moeten geen bezit genoemd zaad {#oakpal-property-name-seed} bevatten
+### OakPAL - De definitieknooppunten van de Index van het Onderzoek van de Douane moeten geen bezit genoemd zaad bevatten {#oakpal-property-name-seed}
 
 **Sleutel**: IndexSeedProperty
 
@@ -953,7 +1027,7 @@ AEM Cloud Service vereist dat de definities van de douaneonderzoek indexdefiniti
 
 AEM Cloud Service verbiedt definities van de aangepaste zoekindex (knooppunten van het type `oak:QueryIndexDefinition`) om een eigenschap met de naam zaad te bevatten. Indexering met behulp van deze eigenschap moet worden bijgewerkt voordat wordt overgeschakeld naar AEM Cloud Service. Zie [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) voor meer informatie.
 
-### OakPAL - De definitieknooppunten van de Index van het Onderzoek van de Douane moeten geen bezit genoemd herdex {#oakpal-reindex-property} bevatten
+### OakPAL - Custom Search Index Definition Nodes must not contain a Property named rendex {#oakpal-reindex-property}
 
 **Sleutel**: IndexReindexProperty
 
