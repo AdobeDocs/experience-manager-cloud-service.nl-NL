@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,24 +17,18 @@ Onboarding is het proces waarin een aangewezen Beheerder van het Systeem AEM als
 
 ## Doelstelling {#objective}
 
-Als systeembeheerder, vat dit document de zeer eerste stappen in uw reis Onboarding samen.
+Als systeembeheerder, vat dit document de zeer eerste stappen in uw onboarding reis samen.
 
 Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 
-* Begrijpen wat Admin Console is
 * Hoe te om tot en login aan Admin Console toegang te hebben
 * Controleer uw rechten als systeembeheerder via Admin Console
 
-## Admin Console begrijpen {#login-admin-console}
-
-Na ondertekening van het contract start Adobe Managed Services (AMS) het instappen van de klant.
-
-Zodra uw contract is ondertekend, zal Adobe levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om de taken van de Beheerder van het Systeem te doen zoals het toevoegen van gebruikers en het toewijzen van hen aan rollen.
-
-De Adobe Admin-console is een centrale plaats voor het beheren en beheren van uw Adobe-productlicenties en -gebruikers. Uw systeembeheerder zal zich bij de console van Admin van Adobe aanmelden om gebruikers en meer toe te voegen of te verwijderen. Klik [hier](https://adminconsole.adobe.com/) om tot de console van Admin van de Adobe toegang te hebben.
+>[!NOTE]
+>Voordat je het instapproces start, moet je eerst meer weten over Adobe Admin Console. De Adobe Admin-console is een centrale plaats voor het beheren en beheren van uw Adobe-productlicenties en -gebruikers. Uw systeembeheerder zal zich bij de console van Admin van Adobe aanmelden om gebruikers en meer toe te voegen of te verwijderen. Zie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) voor meer informatie.
 
 
-## Stappen voor het Aanmelden aan Admin Console {#steps-admin-console}
+## Aanmelden bij Admin Console {#steps-admin-console}
 
 Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van de Beheerder van het Systeem van de Admin Console te herzien:
 
