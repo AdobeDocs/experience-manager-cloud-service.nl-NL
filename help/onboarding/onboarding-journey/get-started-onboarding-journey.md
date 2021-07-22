@@ -1,17 +1,17 @@
 ---
-title: Aan de slag met on-boarding Journey
+title: Aan de slag met het instapproces
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met on-boarding Journey {#getting-started}
+# Aan de slag met het instapproces {#getting-started}
 
 Onboarding is het proces waarin een aangewezen Beheerder van het Systeem AEM als Cloud Service voor uw organisatie plaatst. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
@@ -21,7 +21,7 @@ Als systeembeheerder, vat dit document de zeer eerste stappen in uw onboarding r
 
 Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 
-* Hoe te om tot en login aan Admin Console toegang te hebben
+* Toegang tot en aanmelding bij Admin Console
 * Controleer uw rechten als systeembeheerder via Admin Console
 
 >[!NOTE]
@@ -67,5 +67,5 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw reis moeten voortzetten aan boord door het document te herzien die de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk toewijst.
+Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw aan boord plaatsende reis moeten voortzetten door het document te herzien die de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk toewijst.
 
