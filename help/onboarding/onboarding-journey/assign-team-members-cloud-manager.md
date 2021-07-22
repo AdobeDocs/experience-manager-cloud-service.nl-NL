@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -155,12 +155,11 @@ Gefeliciteerd! Uw nieuwe team van Cloud Manager, inclusief de uzelf die is toege
 
 ## Volgende functies {#whats-next}
 
-Als systeembeheerder die aan *Bedrijfs eigenaar* rol wordt toegewezen, moet u tot de Manager van de Wolk toegang hebben en login.
->[!NOTE]
->Raadpleeg [Navigeren naar Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) voor meer informatie over aanmelding en toegang tot Cloud Manager.
+1. Als systeembeheerder die aan *Bedrijfs eigenaar* rol wordt toegewezen moet u toegang hebben tot en login aan de Manager van de Wolk. Raadpleeg [Navigeren naar Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) voor meer informatie over aanmelding en toegang tot Cloud Manager.
 
-Een gebruiker van de Manager van de Wolk in de rol Bedrijfs van Eigenaar kan login en opstelling uw wolkenmiddelen met inbegrip van uw Programma&#39;s en Milieu. Zo kunt u ervoor zorgen dat uw team van experts zo snel mogelijk toegang krijgt tot AEM als Cloud Service.
-Nadat uw bedrijfseigenaar uw cloudbronnen heeft ingesteld, kunnen ontwikkelaars en implementatiemanagers die met succes zijn toegevoegd aan de productprofielen van Cloud Manager toegang krijgen tot Cloud Manager en zichzelf vertrouwd maken met de manier waarop ze kunnen doorgaan met hun leerpad.
+1. Vervolgens kan een gebruiker van Cloud Manager in de rol *Zakelijke eigenaar* zich aanmelden en uw cloudbronnen instellen, inclusief uw cloudprogramma en -omgevingen. Zo kunt u ervoor zorgen dat uw team van experts zo snel mogelijk toegang krijgt tot AEM als Cloud Service.
+
+1. Nadat uw *Bedrijfseigenaar* uw cloudbronnen heeft ingesteld, hebben *Ontwikkelaars* en *Implementatiemanagers* die met succes zijn toegevoegd aan de productprofielen van Cloud Manager toegang tot Cloud Manager en kunnen ze vertrouwd raken met de manier waarop ze kunnen doorgaan op hun leerpad.
 
 ## Aanvullende bronnen {#additional-resources}
 
