@@ -4,10 +4,10 @@ description: Gebruik de functie Structuur van de Content Fragment Editor in AEM 
 feature: Contentfragmenten
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
+source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ In de Inhoudsfragmenteditor kunt u het pictogram van de boomstructuur selecteren
 
 ![Structuuromvang van inhoudsfragment](assets/cfm-structuretree-01.png)
 
-Hiermee wordt een representatie van de structuur van het fragment geopend in het linkerdeelvenster. Hiermee kunt u navigeren door fragmenten waarnaar wordt verwezen en naar fragmenten.
+Hiermee wordt een representatie van de structuur van het fragment geopend in het linkerdeelvenster. Hiermee kunt u navigeren door fragmenten waarnaar wordt verwezen en naar fragmenten. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
 
 >[!NOTE]
 >
