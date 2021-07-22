@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 ## Cloud Service-programma maken {#create-cloud-service-program}
 
+Voer de onderstaande stappen uit om uw cloudserviceprogramma te maken vanuit Cloud Manager:
 
 1. Navigeer naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt weergegeven.
 
@@ -101,11 +102,13 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
    Geweldig werk! Uw programma is nu gemaakt en uw Cloud Manager Git kan door uw ontwikkelaars worden geopend!
 
 
-## Cloud-omgevingen maken {#create-cloud-environments}
+## Creëer uw Cloud-omgevingen {#create-cloud-environments}
+
+Voer de onderstaande stappen uit om uw cloud-omgevingen te maken met Cloud Manager:
 
 1. Nadat u uw cloudprogramma hebt gemaakt, maakt u uw cloudomgevingen door naar de overzichtspagina van Cloud Manager te navigeren en Toevoegen te selecteren op de milieucaart.
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >Een gebruiker van de Manager van de Wolk in de rol Bedrijfs van de Eigenaar of van de Manager van de Plaatsing moet worden het programma geopend om deze stap met succes te voltooien.
 
    Bekijk de korte videozelfstudie voor meer informatie over de omgevingen van Cloud Manager en over hoe u deze aan uw programma kunt toevoegen.
@@ -119,7 +122,9 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 ## Volgende functies {#whats-next}
 
-Uw teamleden moeten nu machtigingen voor de instantie krijgen, omdat machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Nu uw wolkenmiddelen zijn gecreeerd en klaar om door uw team worden betreden, moet de systeembeheerder uw teamleden aan AEM als profielen van het Cloud Service product van Admin Console toewijzen.
+Aan uw teamleden moeten machtigingen voor de instantie worden verleend, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Nu uw wolkenmiddelen zijn gecreeerd en klaar om door uw team worden betreden, moet de Beheerder van het Systeem uw teamleden aan AEM als profielen van het Cloud Service product van Admin Console toewijzen.
+
+U zou uw aan boord komende reis door het document moeten voortzetten dat de Leden van het Team toewijst om als Profielen van het Product van de Cloud Service te AEM.
 
 >[!NOTE]
 >Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen &quot;AEM Gebruikers&quot;of &quot;AEM Beheerders&quot;behoren. Meer weten?
@@ -128,7 +133,7 @@ Uw teamleden moeten nu machtigingen voor de instantie krijgen, omdat machtiginge
 
 Volg de aanvullende bronnen voor meer informatie over:
 
-* Programmypen en toevoegen van een programma
-* Omgevingstypen en een omgeving toevoegen
-* Cloud Manager-kit beheren
-* Toegang tot AEM configureren als Cloud Service van Admin Console
+* [Programmypen en toevoegen van een programma](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [Omgevingstypen en een omgeving toevoegen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [Cloud Manager-kit beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Toegang tot AEM configureren als Cloud Service van Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
