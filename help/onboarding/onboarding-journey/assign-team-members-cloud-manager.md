@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
+source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -67,54 +67,90 @@ Voer de onderstaande stappen uit om de lijst met profielen van Cloud Manager wee
 
 U kunt nu gebruikers toevoegen en deze toewijzen aan het productprofiel van de Business Owner van Cloud Manager.
 
-Om dit te kunnen doen, moet u vanaf de Adobe Admin-console een gebruiker toevoegen aan zowel het product (in dit geval AEM als Cloud Service) als het productprofiel van de Business Owner van Cloud Manager.
+>[!NOTE]
+>Om dit te kunnen doen, moet u vanaf de Adobe Admin-console een gebruiker toevoegen aan zowel het product (in dit geval AEM als Cloud Service) als het [Productprofiel Bedrijfseigenaar van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 De volgende stappen zullen u door dit laten lopen:
 
-1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het bedrijfseigenaarsproductprofiel. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U moet zich (systeembeheerder) aan het het productprofiel van de BedrijfsEigenaar eerst toevoegen.
+1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het bedrijfseigenaarsproductprofiel. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U dient uzelf (Systeembeheerder) eerst toe te voegen aan het productprofiel van de bedrijfseigenaar.
 
-1. Selecteer op de pagina Overzicht Admin Console Adobe Experience Manager als een product van de Cloud Service van producten en de servicekaart, zoals hieronder wordt weergegeven:
+1. Selecteer [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Overzicht** pagina, selecteer **Adobe Experience Manager als een Cloud Service** product van **Producten en services** kaart zoals hieronder getoond.
 
-1. Selecteer het tabblad Gebruikers in de bovenste navigatie en selecteer vervolgens Gebruiker toevoegen.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Typ in het dialoogvenster Gebruikers toevoegen de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+1. Selecteer het tabblad **Gebruikers** in de bovenste navigatie en selecteer **Gebruiker toevoegen**.
 
-1. Selecteer in de selectie Product de optie &#39;Adobe Experience Manager as a Cloud Service&#39; en wijs het productprofiel &#39;Business Owner&#39; toe aan de gebruiker, zoals hieronder wordt weergegeven. Raadpleeg de productprofielen van Cloud Manager om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
 
-1. Wijs de gebruiker toe aan ten minste één productprofiel zodat de gebruiker toegang heeft tot Cloud Manager. Vergeet niet uzelf (systeembeheerder) toe te wijzen aan &quot;Bedrijfseigenaar&quot;.
+1. Typ in het dialoogvenster **Gebruikers toevoegen aan uw team** de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
 
-1. Klik op Opslaan. Er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd. De uitgenodigde gebruiker kan tot de Manager van de Wolk toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Selecteer **Adobe Experience Manager als Cloud Service** in de productselectie en wijs **Bedrijfseigenaar** productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven.
+
+   >[!NOTE]
+   >Raadpleeg [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+   >[!NOTE]
+   >Wijs de gebruiker toe aan ten minste één productprofiel zodat de gebruiker toegang heeft tot Cloud Manager. Vergeet niet uzelf (Systeembeheerder) toe te wijzen aan de bedrijfseigenaar.
+
+1. Klik **Opslaan**. Er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd. De uitgenodigde gebruiker kan tot de Manager van de Wolk toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
 
 Gefeliciteerd! Uw nieuwe team van Cloud Manager, inclusief de uzelf die is toegewezen aan de rol &quot;Business Owner&quot;, is nu ingesteld. Leden ontvangen een welkomstbericht waarin ze worden uitgenodigd zich aan te melden en toegang te krijgen tot Cloud Manager. In de rol van bedrijfseigenaar bent u nu maar één stap verwijderd van aanmelding bij Cloud Manager en maakt u het maken van uw cloudbronnen mogelijk.
 
 ## Gebruikers toewijzen aan het productprofiel van Deployment Manager {#assign-users-deployment-manager}
 
-1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het bedrijfseigenaarsproductprofiel. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U moet zich (systeembeheerder) aan het het productprofiel van de BedrijfsEigenaar eerst toevoegen.
+1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het productprofiel van Deployment Manager. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U dient uzelf (Systeembeheerder) eerst toe te voegen aan het productprofiel van de bedrijfseigenaar.
 
-1. Selecteer op de pagina Overzicht Admin Console Adobe Experience Manager als een product van de Cloud Service van producten en de servicekaart, zoals hieronder wordt weergegeven:
+1. Selecteer [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Overzicht** pagina, selecteer **Adobe Experience Manager als een Cloud Service** product van **Producten en services** kaart zoals hieronder getoond.
 
-1. Selecteer het tabblad Gebruikers in de bovenste navigatie en selecteer vervolgens Gebruiker toevoegen.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Typ in het dialoogvenster Gebruikers toevoegen de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+1. Selecteer het tabblad **Gebruikers** in de bovenste navigatie en selecteer **Gebruiker toevoegen**.
 
-1. Selecteer &#39;Adobe Experience Manager als Cloud Service&#39; in de productselectie en wijs &#39;Deployment Manager&#39;-productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven. Raadpleeg de productprofielen van Cloud Manager om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. Typ in het dialoogvenster **Gebruikers toevoegen aan uw team** de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Selecteer **Adobe Experience Manager als Cloud Service** in de productselectie en wijs **Deployment Manager**-productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
+   >Raadpleeg [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+   >[!IMPORTANT]
    >Gebruikers kunnen worden toegevoegd aan het productprofiel van Deployment Manager nadat bronnen voor Cloud Manager zijn gemaakt.
 
 ## Gebruikers toewijzen aan productprofiel voor ontwikkelaars {#assign-users-developer}
 
-1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het bedrijfseigenaarsproductprofiel. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U moet zich (systeembeheerder) aan het het productprofiel van de BedrijfsEigenaar eerst toevoegen.
+1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s zal beheren en voeg deze toe aan het productprofiel voor ontwikkelaars. De systeembeheerder moet de eerste persoon zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager. U dient uzelf (Systeembeheerder) eerst toe te voegen aan het productprofiel van de bedrijfseigenaar.
 
-1. Selecteer op de pagina Overzicht Admin Console Adobe Experience Manager als een product van de Cloud Service van producten en de servicekaart, zoals hieronder wordt weergegeven:
+1. Selecteer [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Overzicht** pagina, selecteer **Adobe Experience Manager als een Cloud Service** product van **Producten en services** kaart zoals hieronder getoond.
 
-1. Selecteer het tabblad Gebruikers in de bovenste navigatie en selecteer vervolgens Gebruiker toevoegen.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Typ in het dialoogvenster Gebruikers toevoegen de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+1. Selecteer het tabblad **Gebruikers** in de bovenste navigatie en selecteer **Gebruiker toevoegen**.
 
-1. Selecteer &#39;Adobe Experience Manager als Cloud Service&#39; in de selectie Product en wijs &#39;Developer&#39;-productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven. Raadpleeg de productprofielen van Cloud Manager om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. Typ in het dialoogvenster **Gebruikers toevoegen aan uw team** de e-mailadres van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Selecteer **Adobe Experience Manager als Cloud Service** in de productselectie en wijs **Developer** productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
+   >Raadpleeg [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+
+   >[!IMPORTANT]
    >Gebruikers kunnen aan het productprofiel voor ontwikkelaars worden toegevoegd nadat bronnen voor Cloud Manager zijn gemaakt.
 
 ## Volgende functies {#whats-next}
@@ -130,6 +166,6 @@ Nadat uw bedrijfseigenaar uw cloudbronnen heeft ingesteld, kunnen ontwikkelaars 
 
 Volg de aanvullende bronnen voor meer informatie over:
 
-* Cloud Manager
-* Productprofielen van Cloud Manager
-* Overzicht van identiteit Admin Console
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
+* [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
+* [Overzicht van identiteit Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)
