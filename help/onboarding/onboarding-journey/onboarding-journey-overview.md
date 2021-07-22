@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,10 @@ Gefeliciteerd met je reis met AEM als Cloud Service! We zijn blij dat u hier ben
 
 ## Inleiding {#introduction}
 
-Deze gids leidt u door de belangrijkste onderwerpen zodat u na voltooiing zult:
+Deze gids leidt u door de belangrijkste onderwerpen zodat u na voltooiing zult hebben:
 
-* Een volledig begrip hebben van wat tijdens de AEM als Cloud Service op instapreis te verwachten valt.
-* Uw team is in staat gesteld om aan de slag te gaan en de eerste stappen te nemen om te leren hoe u inhoud voor uw AEM als Cloud Service-toepassing kunt ontwerpen en ontwikkelen.
+* volledig begrip van wat tijdens de AEM als Cloud Service op instapreis te verwachten is.
+* Uw team is in staat gesteld aan de slag te gaan en de eerste stappen te ondernemen om te leren hoe u inhoud voor uw AEM als Cloud Service-toepassing kunt ontwerpen en ontwikkelen.
 
 Dit betekent:
 
@@ -35,6 +35,8 @@ Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://exper
 
 De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in de volgende gedeelten gedetailleerd beschreven.
 
+![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
 ## Onboarding Journey verkennen {#exploring-onboarding-journey}
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis van de stappen die u als Cloud Service bij het instappen AEM. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u aan het instappen nieuw bent, dat u bij het begin begint en opeenvolgend vordert.
@@ -45,10 +47,10 @@ U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u 
 | 1 | Leer Begrippen aan boord, zoals:<br>[Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service Team en Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Ondersteuning voor Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Meer informatie over instapconcepten. |
 | 2 | Aan de slag met on-boarding | Meer informatie over het aanmelden bij Admin Console en het controleren van uw profiel als systeembeheerder |
 | 3 | Teamleden toewijzen aan productprofielen van Cloud Manager | Bekijk de productprofielen van Cloud Manager en leer hoe u teamleden toewijst aan productprofielen van Cloud Manager. |
-| 4 | Cloud Resources instellen via Cloud Manager | Leer hoe uw cloudbronnen zijn gemaakt en wie dit kan doen. Leer ook hoe uw cloudprogramma en -omgevingen zijn gemaakt. |
+| 4 | Cloud Resources instellen via Cloud Manager | Leer hoe uw cloudbronnen zijn gemaakt en wie dit kan doen. Leer ook hoe uw cloudprogramma&#39;s en -omgevingen zijn gemaakt. |
 | 5 | Teamleden toewijzen om te AEM als profielen van het Product van de Cloud Service | Leer hoe de Beheerder van het Systeem uw teamleden aan AEM als profielen van het Cloud Service product toewijst. |
-| 6 | Leerpad voor AEM ontwikkelaars en implementatiemanagers | Leer hoe u als ontwikkelaar toegang krijgt tot en beheer de Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen instelt en code implementeert in Cloud Manager. |
-| 7 | Leerpad voor AEM gebruikers | Leer hoe u als AEM auteur tot AEM als instantie van de Cloud Service kunt toegang hebben en vertrouwd met het Authoring van inhoud voor AEM als Cloud Service. |
+| 6 | Leerpad voor AEM ontwikkelaars en implementatiemanagers | Leer hoe u als ontwikkelaar toegang krijgt tot en beheer van Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen kunt instellen en code kunt implementeren in Cloud Manager. |
+| 7 | Leerpad voor AEM gebruikers | Leer hoe u als AEM auteur tot AEM als instantie van de Cloud Service kunt toegang hebben en vertrouwd met auteursinhoud voor AEM als Cloud Service wordt. |
 
 ## Volgende functies {#what-is-next}
 
