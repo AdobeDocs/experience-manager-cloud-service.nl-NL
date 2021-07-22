@@ -4,15 +4,15 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
 
-# Toewijzen aan AEM als profielen van het Product van de Cloud Service {#assign-team-members-cloud-service}
+# Teamleden toewijzen aan AEM als profielen van het Product van de Cloud Service {#assign-team-members-cloud-service}
 
 ## Doelstelling {#objective}
 
