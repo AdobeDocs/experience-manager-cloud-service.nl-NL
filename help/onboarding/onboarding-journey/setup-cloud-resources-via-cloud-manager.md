@@ -4,25 +4,25 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Cloud Resources instellen via Cloud Manager {#setup-cloud-resources}
 
-De systeembeheerder die is toegewezen aan de rol &quot;Zakelijke eigenaar&quot; moet toegang hebben tot en zich aanmelden bij Cloud Manager. Hierna moet een teamlid dat is toegewezen aan het productprofiel &quot;Business Owner&quot; zich aanmelden bij Cloud Manager en uw cloudprogramma en -omgevingen maken zodat uw team van experts aan de slag kan.
+De systeembeheerder die is toegewezen aan de *rol Bedrijfseigenaar* moet toegang hebben tot en zich aanmelden bij Cloud Manager. Hierna moet een teamlid dat is toegewezen aan het productprofiel *Zakelijke eigenaar* zich aanmelden bij Cloud Manager en uw cloudprogramma en -omgevingen maken zodat uw team van experts aan de slag kan.
 
 ## Doelstelling {#objective}
 
 Dit document helpt u te begrijpen hoe uw cloudbronnen zijn gemaakt en wie dit kan doen.
 
-Na het lezen van deze sectie moet u:
+Na het lezen van deze sectie moet u begrijpen:
 
-* Begrijp dat een systeembeheerder die aan de &quot;Bedrijfs eigenaar&quot;rol wordt toegewezen de eerste moet zijn om tot Cloud Manager toegang te hebben en zich aan te melden
-* Begrijp hoe uw wolkenprogramma en milieu&#39;s worden gecreeerd.
+* Een systeembeheerder die is toegewezen aan de *rol Bedrijfseigenaar* moet de eerste zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager.
+* Hoe uw cloudprogramma en -omgevingen worden gemaakt.
 
 ## Inleiding {#introduction}
 
@@ -32,34 +32,45 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 ### Voorwaarden {#prerequisites}
 
-* De systeembeheerder die is toegewezen aan de rol &quot;Zakelijke eigenaar&quot; moet toegang hebben tot Cloud Manager en zich aanmelden.
+* De systeembeheerder die is toegewezen aan de *rol Bedrijfseigenaar* moet toegang hebben tot en zich aanmelden bij Cloud Manager.
 
-* Begrijpen hoe u naar Cloud Manager kunt navigeren en zich kunt aanmelden
+* Begrijp hoe te [navigeren en login aan de Manager van de Wolk](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
-* Ben vertrouwd met de productprofielen van de Manager van de Wolk
+* Zorg dat u bekend bent met de [productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 * Begrijp de overwegingen voor het maken van uw programma. Bekijk deze video voor meer informatie.
 
-* Begrijp de concepten van programma&#39;s en omgevingen van Cloud Manager
+* Begrijp de concepten Cloud Manager [programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) en [omgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
 ## Navigeren naar Cloud Manager {#navigate-cloud-manager}
 
-1. De gebruiker van de &quot;Bedrijfseigenaar&quot; ontvangt een welkomstbericht van de plaats waar hij kan beginnen of als hij dit niet kan vinden, gaat hij rechtstreeks naar Experience.adobe.com en meldt zich aan met uw Adobe ID.
+1. De *Zakelijke eigenaar*-gebruiker ontvangt een welkomstbericht van de plaats waar hij kan beginnen, of als hij het niet kan vinden, gaat hij rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) en meldt zich aan met uw Adobe ID.
 
-1. Van de homepage van Experience Cloud, Uitgezochte Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Selecteer **Experience Manager** op de startpagina van Adobe Experience Cloud.
 
-1. Hiermee gaat u naar de AEM homepage. Selecteer hieronder Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. Hiermee gaat u naar de AEM homepage. Start **Cloud Manager** vanaf hier.
 
-1. Hiermee gaat u naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt weergegeven:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. De bestemmingspagina van Cloud Manager wordt weergegeven, zoals in de onderstaande afbeelding wordt getoond.
 
-1. Controleer nu of aan u het productprofiel van de bedrijfseigenaar is toegewezen. Selecteer hiertoe uw profiel rechtsboven, zoals hieronder wordt weergegeven:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Controleer of u het productprofiel voor de bedrijfseigenaar hebt toegewezen. Selecteer hiertoe uw profiel in de rechterbovenhoek, zoals hieronder wordt weergegeven.
 
-1. Selecteer nu Gebruikersrollen en zorg ervoor dat u aan Bedrijfseigenaar wordt toegewezen.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Selecteer **Gebruikersrollen** en zorg ervoor dat u aan Bedrijfseigenaar wordt toegewezen.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. Dit bevestigt uw gebruikersrol als Bedrijfseigenaar.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
 
    Geweldig werk! U hebt zich met succes aangemeld bij Cloud Manager als bedrijfseigenaar.
 
