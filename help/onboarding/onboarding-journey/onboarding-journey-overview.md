@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Gefeliciteerd met je reis met AEM als Cloud Service! We zijn blij dat u hier ben
 
 ## Inleiding {#introduction}
 
-Deze gids leidt u door de belangrijkste onderwerpen zodat wanneer voltooid de lezer zal:
+Deze gids leidt u door de belangrijkste onderwerpen zodat u na voltooiing zult:
 
 * Een volledig begrip hebben van wat tijdens de AEM als Cloud Service op instapreis te verwachten valt.
 * Uw team is in staat gesteld om aan de slag te gaan en de eerste stappen te nemen om te leren hoe u inhoud voor uw AEM als Cloud Service-toepassing kunt ontwerpen en ontwikkelen.
@@ -31,18 +31,13 @@ Dit betekent:
 
 ## Publiek {#audience}
 
-Onboarding is het proces waarin een aangewezen Beheerder van het Systeem AEM als Cloud Service voor uw organisatie plaatst. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
+Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
 De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in de volgende gedeelten gedetailleerd beschreven.
 
 ## Onboarding Journey verkennen {#exploring-onboarding-journey}
 
-
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis van de stappen die u als Cloud Service bij het instappen AEM. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u aan het instappen nieuw bent, dat u bij het begin begint en opeenvolgend vordert.
-
-U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis die vereist is voor het instapproces en koppelen naar gedetailleerde technische documentatie.
-
-Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u nieuw aan het aan boord gaan bent, dat u begint door de artikelen te herzien die in Leer op het nemen van Concepten sectie van de Gids worden vermeld.
 
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
