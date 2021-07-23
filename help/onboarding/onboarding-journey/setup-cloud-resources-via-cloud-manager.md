@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -83,40 +83,55 @@ Voer de onderstaande stappen uit om uw cloudserviceprogramma te maken vanuit Clo
    >[!NOTE]
    >U moet een teamlid zijn dat is toegewezen aan het productprofiel van de Business Owner van Cloud Manager om deze stap te kunnen voltooien.
 
-1. Van hier, uitgezocht voeg Programma toe om de Add tovenaar van het Programma te lanceren. Bekijk de video om te leren hoe u uw AEMaaCS-programma en belangrijke overwegingen maakt voordat u uw programma maakt.
+   Van hier, klik op **Add Programma** om de Add tovenaar van het Programma te lanceren.
 
-1. Voor geleidelijke instructie op hoe te om de Add tovenaar van het Programma te gebruiken, ga hier.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >Vergeet niet dat de naam van het programma na het maken niet kan worden gewijzigd. We raden u aan zeker te zijn van de naam die u aan uw programma wilt geven.
+   >[!NOTE]
+   >Bekijk de [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) om te leren hoe u uw AEM maakt als een Cloud-programma en meer informatie te krijgen over belangrijke overwegingen voordat u uw programma maakt.
 
-   Als u de naam van het programma moet wijzigen, moet u een kwestie openen met Adobe Support of contact opnemen met uw Adobe-vertegenwoordiger. Zij zullen helpen bij het effectief schrappen van het programma. U moet opnieuw beginnen met mogelijk verlies van werk dat uw team heeft gedaan.
+   >[!IMPORTANT]
+   >Voor geleidelijke instructie op hoe te om de Add tovenaar van het Programma te gebruiken, ga [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en).
+   >
+   >* Vergeet niet dat de naam van het programma na het maken niet kan worden gewijzigd. We raden u aan zeker te zijn van de naam die u aan uw programma wilt geven.
+   >* Als u de naam van het programma moet wijzigen, moet u een kwestie openen met Adobe Support of contact opnemen met uw Adobe-vertegenwoordiger. Zij zullen helpen bij het effectief schrappen van het programma. U moet opnieuw beginnen met mogelijk verlies van werk dat uw team heeft gedaan.
 
-1. Wanneer uw cloudprogramma met succes is gemaakt, kunt u naar uw programma navigeren om de overzichtspagina van uw programma te bekijken, zoals hieronder wordt getoond:
 
-1. Als u dit nog niet hebt gedaan, is het nu een goed moment om uw ontwikkelaarsleden toe te voegen aan uw team van Cloud Manager, naar Gebruikers toevoegen aan productprofiel voor ontwikkelaars te gaan en de beschreven stappen te volgen.
+1. Wanneer uw cloudprogramma met succes is gemaakt, kunt u naar uw programma navigeren om de pagina **Overzicht** van uw programma weer te geven, zoals hieronder wordt weergegeven.
 
-1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en Cloud Manager Git beheren.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >Als u dat nog niet hebt gedaan, is het nu een goed moment om uw leden voor ontwikkelaars toe te voegen aan uw team voor Cloud Manager. Raadpleeg het productprofiel Gebruikers toevoegen aan ontwikkelaar en volg de beschreven stappen.
+
+1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en) beheren.
 
    Geweldig werk! Uw programma is nu gemaakt en uw Cloud Manager Git kan door uw ontwikkelaars worden geopend!
 
 
 ## Creëer uw Cloud-omgevingen {#create-cloud-environments}
 
+Wanneer u uw cloudprogramma hebt gemaakt, maakt u uw cloudomgevingen.
+
 Voer de onderstaande stappen uit om uw cloud-omgevingen te maken met Cloud Manager:
 
-1. Nadat u uw cloudprogramma hebt gemaakt, maakt u uw cloudomgevingen door naar de overzichtspagina van Cloud Manager te navigeren en Toevoegen te selecteren op de milieucaart.
+1. Navigeer naar de pagina **Overzicht** van Cloud Manager en selecteer **Add** van de omgevingskaart.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >Een gebruiker van de Manager van de Wolk in de rol Bedrijfs van de Eigenaar of van de Manager van de Plaatsing moet worden het programma geopend om deze stap met succes te voltooien.
 
-   Bekijk de korte videozelfstudie voor meer informatie over de omgevingen van Cloud Manager en over hoe u deze aan uw programma kunt toevoegen.
+   Bekijk bovendien de korte [videozelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) voor meer informatie over de omgevingen van Cloud Manager en over de manier waarop u deze aan uw programma kunt toevoegen.
 
-1. Hiermee wordt de wizard voor het toevoegen van omgevingen gestart die u begeleidt bij het toevoegen van uw omgeving. Voeg eerst uw ontwikkelomgeving toe om vertrouwd te raken.
+1. Hiermee wordt de wizard voor het toevoegen van omgevingen gestart die u begeleidt bij het toevoegen van uw omgeving. Voeg eerst uw ontwikkelomgeving toe om vertrouwd te raken. Raadpleeg [Een omgeving toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments) voor meer informatie.
 
-1. Als u dit nog niet hebt gedaan, kunt u doorgaan en uw ontwikkelaarsleden nu toevoegen aan uw Cloud Manager-team. Ga vervolgens naar Gebruikers toevoegen aan ontwikkelaarsproductprofiel en volg de beschreven stappen. Op deze manier kunnen uw ontwikkelaars aan de slag met Navigeren naar Cloud Manager en Cloud Manager Git beheren.
+   >[!NOTE]
+   >Als u dat nog niet hebt gedaan, is het nu een goed moment om uw leden voor ontwikkelaars toe te voegen aan uw team voor Cloud Manager. Raadpleeg het productprofiel Gebruikers toevoegen aan ontwikkelaar en volg de beschreven stappen.
 
+1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en) beheren.
+
+   Geweldig werk! Uw programma is nu gemaakt en uw Cloud Manager Git kan door uw ontwikkelaars worden geopend!
 
    Gefeliciteerd! Nu zijn uw cloudprogrammaomgevingen gemaakt en zijn uw ontwikkelaars toegevoegd aan het team!
 
