@@ -4,9 +4,9 @@ description: Leer hoe u viewervoorinstellingen maakt en beheert in Dynamic Media
 feature: Viewer-voorinstellingen,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4123'
+source-wordcount: '4121'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden ge
 * Apple iPad
 * Android™-smartphone
 * Android™-tablet
-* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)).
+* Voor video wordt extra ondersteuning voor het afspelen van MP4 geboden voor [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Rijke mediatypen voor viewervoorinstellingen {#rich-media-types-for-viewer-presets}
 
