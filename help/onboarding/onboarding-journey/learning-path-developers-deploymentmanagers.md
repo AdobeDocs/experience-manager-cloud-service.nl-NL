@@ -4,9 +4,9 @@ description: Volg deze pagina om de volgende stappen na het krijgen van toegang 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Ga hier voor meer informatie over dit onderwerp
 
 ## Volgende functies {#whats-next}
 
-Ontwikkelaar- en implementatiemanagers zijn nu klaar om vertrouwd te raken met de ontwikkeling van code in AEMaaCS. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder.
+De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder.
 
 ## Aanvullende bronnen {#additional-resources}
 
