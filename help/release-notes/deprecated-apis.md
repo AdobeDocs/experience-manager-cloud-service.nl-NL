@@ -1,15 +1,15 @@
 ---
 title: Verouderde API's
 description: Release-aantekeningen specifiek voor afgekeurde en verwijderde API's in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
+source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
 
 ---
 
-
-# Vervangen API&#39;s {#deprecated-apis}
+# Verouderde API&#39;s {#deprecated-apis}
 
 Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Elk gebruik van de API na de verwijderingsdatum leidt tot fouten in de lokale SDK/Development Environment en het buildproces van Cloud Manager.
 
@@ -64,7 +64,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>org.json</td>
     <td>De Apache Johnzon-implementatie van <a href="https://johnzon.apache.org/index.html">javax.json</a> wordt aanbevolen en moet worden gebruikt. </td>
     <td>30-04-21</td>
-    <td>30-07-21</td>
+    <td>31-12-21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -76,13 +76,13 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 is op onderhoudswijze. In plaats daarvan moet Commons Lang 3 worden gebruikt.</td>
     <td>30-04-21</td>
-    <td>30-07-21</td>
+    <td>31-12-21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Gemeenschappelijke Collections 3 is in onderhoudsmodus. In plaats daarvan moeten gemeenschappelijke verzamelingen 4 worden gebruikt.</td>
     <td>30-04-21</td>
-    <td>30-07-21</td>
+    <td>31-12-21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
