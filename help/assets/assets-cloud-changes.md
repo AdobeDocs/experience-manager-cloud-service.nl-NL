@@ -4,9 +4,9 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -56,13 +56,14 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | Metagegevens terugschrijven | Werkt anders | Standaard uitgeschakeld. Schakel indien nodig de bijbehorende starter voor de workflow in. Terugkoppeling wordt afgehandeld door middel van asset microservices. |
 | Verwerking van geüploade elementen met gebruik van Package Manager | Moet handmatig worden ingegrepen. | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]**. |
 | MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Genereren van subactiva voor of annoteren van samengestelde activa | Niet ondersteund. | Er is niet voldaan aan de eisen voor afhankelijk gebruik. Het is bijvoorbeeld niet mogelijk een PDF-, INDD-, PPT-, PPTX- en AI-bestand met meerdere pagina&#39;s weer te geven of er een annotatie aan toe te voegen. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Genereren van subactiva voor of annoteren van samengestelde activa | Niet ondersteund. | Het is mogelijk dat niet wordt voldaan aan de eisen voor afhankelijk gebruik. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Waarderingen activa | Niet ondersteund. | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
 | Inhoudsverwijderingsfilter | Niet ondersteund. | Veel gebruikers gebruiken `ContentDispositionFilter` om beheerders [!DNL Experience Manager] te laten configureren voor HTML-bestanden en om PDF-bestanden inline te openen in plaats van deze te downloaden. In de publicatie-instanties kunt u de indeling beheren met de Dispatcher-configuratie. In de instanties van de Auteur, adviseert Adobe geen wijziging in de kopbal van de Verplaatsing van de Inhoud. Zie [Het filter voor het verplaatsen van inhoud in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Rapport downloaden](/help/assets/asset-reports.md) | Niet ondersteund. | Momenteel is het downloadrapport met informatie over het gebruik van middelen niet beschikbaar. Zie [downloadrapport in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Fotosjabloon voor product | Niet ondersteund. | Zie [productfotoopnamesjabloon in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| Slimme omzetting | Niet ondersteund. | [Slimme ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) omzetting wordt niet ondersteund in  [!DNL Experience Manager] de vorm van een  [!DNL Cloud Service]. |
 | Klassieke interface | Niet ondersteund. | Alleen een gebruikersinterface met aanraakbediening is beschikbaar. |
 
 >[!MORELIKETHIS]
