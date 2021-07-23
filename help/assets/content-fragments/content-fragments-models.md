@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Contentfragmenten
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
+source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2258'
 ht-degree: 4%
 
 ---
@@ -166,16 +166,17 @@ bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vere
    >[!NOTE]
    Variaties kunnen dezelfde *unieke*-waarde hebben als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
 
-* ****
-VertaalbaarHet controleren van 
-**Het** selectievakje Vertaalbaar op een veld in de Content Fragment Model-editor:
-
-   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, als deze nog niet aanwezig is.
-   * Voor GraphQL: Stel een `<translatable>`-eigenschap in het veld Inhoudsfragment in op `yes` om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
-
 * Zie **[Content Reference](#content-reference)** voor meer informatie over dat specifieke gegevenstype en de eigenschappen ervan.
 
 * Zie **[Fragmentverwijzing (geneste fragmenten)](#fragment-reference-nested-fragments)** voor meer informatie over dat specifieke gegevenstype en zijn eigenschappen.
+
+<!--
+* **Translatable**
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+
+  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+-->
 
 ## Validatie {#validation}
 
