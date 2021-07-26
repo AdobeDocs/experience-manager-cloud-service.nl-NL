@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 Voer de onderstaande stappen uit om uw cloudserviceprogramma te maken vanuit Cloud Manager:
 
-1. Navigeer naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt weergegeven.
+1. Navigeer naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt getoond.
 
    >[!NOTE]
    >U moet een teamlid zijn dat is toegewezen aan het productprofiel van de Business Owner van Cloud Manager om deze stap te kunnen voltooien.
@@ -137,12 +137,13 @@ Voer de onderstaande stappen uit om uw cloud-omgevingen te maken met Cloud Manag
 
 ## Volgende functies {#whats-next}
 
-Aan uw teamleden moeten machtigingen voor de instantie worden verleend, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Nu uw wolkenmiddelen zijn gecreeerd en klaar om door uw team worden betreden, moet de Beheerder van het Systeem uw teamleden aan AEM als profielen van het Cloud Service product van Admin Console toewijzen.
+Aan uw teamleden moeten machtigingen voor de instantie worden verleend, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Nu uw wolkenmiddelen zijn gecreeerd en klaar om door uw team worden betreden, moet de Beheerder van het Systeem uw teamleden aan AEM als profielen van de Cloud Service van Adobe Admin Console toewijzen.
+
+>[!NOTE]
+>Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen `AEM Users` of `AEM Administrators` behoren. Zie [Producten en Toegang van de Gebruiker in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) beheren om meer te leren.
 
 U zou uw aan boord komende reis door het document moeten voortzetten dat de Leden van het Team toewijst om als Profielen van het Product van de Cloud Service te AEM.
 
->[!NOTE]
->Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen &quot;AEM Gebruikers&quot;of &quot;AEM Beheerders&quot;behoren. Meer weten?
 
 ## Aanvullende bronnen {#additional-resources}
 
