@@ -4,9 +4,9 @@ description: Volg deze pagina om de volgende stappen na het krijgen van toegang 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -51,19 +51,19 @@ De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* Toegang tot het accountbeheer voor Git en Git vanuit Cloud Manager
+* [Toegang tot het accountbeheer voor Git en Git vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* Lokale ontwikkelomgeving voor AEM als Cloud Service
+* [Lokale ontwikkelomgeving voor AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* Aan de slag met AEM Sites (zelfstudie)
+* [Aan de slag met AEM Sites (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* Aan de slag met de AEM SPA Editor en Reageren | Adobe Experience Manager
+* [Aan de slag met de AEM SPA Editor en Reageren | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* Aan de slag met de AEM SPA Editor en Angular
+* [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* Aan de slag met AEM zonder kop - GraphQL
+* [Aan de slag met AEM zonder kop - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* Aan de slag met AEM SPA Editor voor ontwikkelaars
+* [Aan de slag met AEM SPA Editor voor ontwikkelaars](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Cursussen Experience League {#experience-league-courses}
 
