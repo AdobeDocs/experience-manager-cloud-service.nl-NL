@@ -4,10 +4,10 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 0%
+source-wordcount: '779'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Na het lezen van deze sectie moet u begrijpen:
 
 ## Inleiding {#introduction}
 
-Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen behoren, zoals *AEM Users* of *AEM Beheerders*. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Meer weten?
+Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen behoren, zoals `AEM Users` of `AEM Administrators`. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Meer weten?
 
 >[!NOTE]
 >Elke gebruiker die door de systeembeheerder aan AEM gebruikersproductprofiel is toegewezen, heeft (alleen-lezen) toegang tot Cloud Manager.
@@ -45,24 +45,22 @@ Voordat u deze sectie gaat lezen, moet u rekening houden met het volgende:
    >Met het oog op het instappen, adviseren wij dat u aanvankelijk gebruikers toevoegt die aan de directe taken, zoals beheerders, ontwikkelaars en inhoudsauteurs zullen deelnemen. U kunt de rest van het instapsysteem voortzetten zonder alle gebruikers toe te voegen. Nadat u klaar bent met het instappen, kunt u aan een groter aantal gebruikers later schrapen.
 
 
-1. Aanmelden bij Admin Console
-(Zelfde als voorheen)
+1. Meld u aan bij [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Raadpleeg Aanmelden bij Admin Console voor meer informatie.
 
-1. AEM als productprofielen van Cloud Servicen bekijken
-Vanuit Admin Console kunt u de lijst met Cloud Manager-profielen weergeven. Dit doet u als volgt:
+1. Bekijk [AEM als Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles) van het Product van de Cloud Service.
+
+Voer de onderstaande stappen uit om de lijst met Cloud Manager-profielen van Adobe Admin Console weer te geven:
 
 1. Nadat u zich hebt aangemeld bij Adobe Admin Console, selecteert u Adobe Experience Manager als Cloud-service op de kaart Producten en Services:
 
 1. Navigeer en selecteer de instantie (Author-instantie van de milieu van de Ontwikkeling) zoals aangetoond in het hieronder beeld.
-
-
 
    Nu zult u de lijst van AEM als profielen van het product van de Cloud Service kunnen zien die aan een gebruiker zullen moeten worden toegewezen die op hun rol wordt gebaseerd. Ga voor meer informatie over deze profielen naar AEM als productprofielen voor Cloud Servicen.
 
 
 ## Teamleden toevoegen aan AEM gebruiker of AEM profiel van beheerdersproduct {#add-team-members}
 
-Om toegang tot AEM als instantie van de Cloud Service te krijgen moeten de gebruikers tot één van twee productprofielen &quot;AEM Gebruikers&quot;of &quot;AEM Beheerders&quot;behoren.
+Gebruikers die toegang willen krijgen tot AEM als instantie Cloud Service, moeten behoren tot een van twee productprofielen `AEM Users` of `AEM Administrators`.
 
 >[!NOTE]
 >U moet machtigingen voor de instantie hebben. Rechten voor het beheer van Cloud Manager zijn onvoldoende. Meer weten?
@@ -87,5 +85,5 @@ De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM z
 
 ## Aanvullende bronnen {#additional-resources}
 
-Toegang tot AEM configureren (video loopt door)
-Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s
+* [Toegang tot AEM configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
