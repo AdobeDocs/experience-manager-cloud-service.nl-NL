@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Nadat u hebt geleerd hoe u zich aanmeldt bij [Admin Console](https://experiencel
 
 ## Doelstelling {#objective}
 
-Dit document geeft een overzicht van hoe teamleden vanuit de Admin Console kunnen worden toegewezen aan productprofielen van Cloud Manager.
+Dit document geeft een overzicht van hoe teamleden vanuit Adobe Admin Console kunnen worden toegewezen aan productprofielen van Cloud Manager.
 
 Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 
@@ -32,14 +32,14 @@ Voordat u met deze sectie begint, moet u rekening houden met de volgende voorwaa
 
 * Systeembeheerder zijn en de [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) begrijpen.
 * Begrijp [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) grondbeginselen.
-* Meer informatie over uw teamleden. Een systeembeheerder moet de namen en e-mailadressen en de rollen en de verantwoordelijkheden voor de teamleden hebben die toegang tot AEM als Cloud Service zullen vereisen.
+* Meer informatie over uw teamleden. Een beheerder van het Systeem moet de namen en e-mailadressen en de rollen en de verantwoordelijkheden voor de teamleden hebben die toegang tot AEM als Cloud Service zullen vereisen.
 
    >[!NOTE]
    >Met het oog op het instappen, adviseren wij dat u aanvankelijk gebruikers toevoegt die aan de directe taken, zoals beheerders, ontwikkelaars en inhoudsauteurs zullen deelnemen. U kunt de rest van het instapsysteem voortzetten zonder alle gebruikers toe te voegen. Nadat u klaar bent met het instappen, kunt u aan een groter aantal gebruikers later schrapen.
 
 ## Productprofielen van Cloud Manager bekijken {#review-product-profiles}
 
-Vanuit Admin Console kunt u de lijst met Cloud Manager-profielen weergeven.
+Vanuit de Adobe Admin Console kunt u de lijst met Cloud Manager-profielen weergeven.
 
 >[!NOTE]
 >Voordat u de productprofielen van Cloud Manager vanuit Admin Console bekijkt, is het raadzaam de beschikbare [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) te bekijken.
@@ -89,7 +89,7 @@ De volgende stappen zullen u door dit laten lopen:
 1. Selecteer **Adobe Experience Manager als Cloud Service** in de productselectie en wijs **Bedrijfseigenaar** productprofiel toe aan de gebruiker, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
-   >Raadpleeg [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(en) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
+   >Raadpleeg [Productprofielen van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) om ervoor te zorgen dat aan de juiste gebruikers de juiste rol(s) in de Admin Console wordt toegewezen, zoals hieronder wordt weergegeven.
 
    ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
@@ -98,7 +98,7 @@ De volgende stappen zullen u door dit laten lopen:
 
 1. Klik **Opslaan**. Er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd. De uitgenodigde gebruiker kan tot de Manager van de Wolk toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
 
-Gefeliciteerd! Uw nieuwe team van Cloud Manager, inclusief de uzelf die is toegewezen aan de rol &quot;Business Owner&quot;, is nu ingesteld. Leden ontvangen een welkomstbericht waarin ze worden uitgenodigd zich aan te melden en toegang te krijgen tot Cloud Manager. In de rol van bedrijfseigenaar bent u nu maar één stap verwijderd van aanmelding bij Cloud Manager en maakt u het maken van uw cloudbronnen mogelijk.
+   Gefeliciteerd! Uw nieuwe team van Cloud Manager, inclusief de uzelf die is toegewezen aan de rol &quot;Business Owner&quot;, is nu ingesteld. Leden ontvangen een welkomstbericht waarin ze worden uitgenodigd zich aan te melden en toegang te krijgen tot Cloud Manager. In de rol van bedrijfseigenaar bent u nu maar één stap verwijderd van aanmelding bij Cloud Manager en maakt u het maken van uw cloudbronnen mogelijk.
 
 ## Gebruikers toewijzen aan productprofiel van Deployment Manager {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ Gefeliciteerd! Uw nieuwe team van Cloud Manager, inclusief de uzelf die is toege
 
 ## Volgende functies {#whats-next}
 
-Nu u over drie verschillende productprofielen van de Manager van de Wolk leert zoals Bedrijfs Eigenaar, de Manager van de Plaatsing, en de Ontwikkelaar, en toegewezen teamleden aan de producteprofielen van de Manager van de Wolk zoals Bedrijfs Eigenaar, de Manager van de Plaatsing, en de Ontwikkelaar, zou u uw instapreis moeten voortzetten door de Middelen van de Opstelling van het document via de Manager van de Wolk te herzien, waar u zult leren:
+Nu u over drie verschillende productprofielen van de Manager van de Wolk leert zoals Bedrijfs Eigenaar, de Manager van de Plaatsing, en de Ontwikkelaar, en toegewezen teamleden aan de producteprofielen van de Manager van de Wolk zoals Bedrijfs Eigenaar, de Manager van de Plaatsing, en de Ontwikkelaar, zou u uw aan boord gaan reis door de Middelen van de Wolk van de Opstelling van het document via de Manager van de Wolk te herzien, waar u zult leren:
 
 1. Als systeembeheerder die aan *Bedrijfs eigenaar* rol wordt toegewezen, moet u tot de Manager van de Wolk toegang hebben en login.
 
