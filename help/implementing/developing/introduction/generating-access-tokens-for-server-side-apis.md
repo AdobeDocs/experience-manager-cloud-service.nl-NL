@@ -1,14 +1,13 @@
 ---
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM als Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
-translation-type: tm+mt
-source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
+exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
+source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding {#introduction}
 
@@ -22,7 +21,7 @@ De server-aan-server stroom wordt hieronder beschreven, samen met een vereenvoud
 
 ## De server-naar-server stroom {#the-server-to-server-flow}
 
-Een gebruiker met een IMS org beheerderrol kan een AEM als referentie van de Cloud Service produceren, die later door een gebruiker met de AEM als beheerderrol van het Milieu van de Cloud Service kan worden teruggewonnen en op de server zou moeten worden geïnstalleerd en de behoeften zorgvuldig als geheime sleutel worden behandeld. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM als Cloud Service-API. De gegevens worden gebruikt om een ondertekende JWT-token te maken, die met IMS wordt uitgewisseld voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM als Cloud Service te doen.
+Een gebruiker met een IMS org beheerderrol, en die ook een lid van het Profiel van het Product van de AEM Gebruikers of AEM van Beheerders op AEM Auteur is, kan een AEM als Cloud Service als referentie produceren. Die referentie kan later door een gebruiker met de AEM als beheerder van het Milieu van de Cloud Service worden teruggewonnen en zou op de server moeten worden geïnstalleerd en de behoeften moeten zorgvuldig als geheime sleutel worden behandeld. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM als Cloud Service-API. De gegevens worden gebruikt om een ondertekende JWT-token te maken, die met IMS wordt uitgewisseld voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM als Cloud Service te doen.
 
 De server-aan-server stroom impliceert de volgende stappen:
 
@@ -62,13 +61,13 @@ De uitvoer is vergelijkbaar met:
 
 >[!IMPORTANT]
 >
->Een IMS org beheerder (typisch de zelfde gebruiker die het milieu via de Manager van de Wolk) leverde moet eerst tot de Console van de Ontwikkelaar toegang hebben en **krijgen de knoop van de Credentials van de Dienst** klikken om de geloofsbrieven te produceren en later terug te winnen door een gebruiker met admin toestemmingen aan de AEM als milieu van de Cloud Service. Als de IMS org beheerder dit niet heeft gedaan, zal een bericht hen informeren dat zij de rol van de Beheerder IMS org nodig hebben.
+>Een IMS org beheerder (typisch de zelfde gebruiker die het milieu via de Manager van de Wolk) leverde, die ook lid van het Profiel van het Product van de Gebruikers of van AEM van de Beheerders op AEM Auteur zou moeten zijn, moet eerst tot de Console van de Ontwikkelaar toegang hebben en **krijgen de knoop van de Credentials van de Dienst** om de geloofsbrieven te produceren en later terug te winnen door een gebruiker met admin toestemmingen aan AEM als milieu van de Cloud Service. Als de IMS org beheerder dit niet heeft gedaan, zal een bericht hen informeren dat zij de rol van de Beheerder IMS org nodig hebben.
 
-### Installeer de AEM servicedesentials op een niet-AEM server {#install-the-aem-service-credentials-on-a-non-aem-server}
+### Installeer de AEM servicereferenties op een niet-AEM server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 De niet-AEM toepassing die vraag aan AEM maakt zou tot de AEM als geloofsbrieven van de Cloud Service moeten kunnen toegang hebben, behandelend het als geheim.
 
-### Genereer een JWT-token en verruilen dit voor een toegangstoken{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### Genereer een JWT-token en verander dit voor een Access Token{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 Gebruik de geloofsbrieven om een teken JWT in een vraag aan de dienst van Adobe IMS tot stand te brengen om een toegangstoken terug te winnen, dat 24 uur geldig is.
 
@@ -96,7 +95,7 @@ De zelfde uitwisseling kan in om het even welke taal worden uitgevoerd die een o
 
 Het toegangstoken zal bepalen wanneer het verloopt, wat typisch 24 uren is. Er is steekproefcode in de git bewaarplaats om een toegangstoken te beheren en het te verfrissen alvorens het verloopt.
 
-### De AEM-API {#calling-the-aem-api} aanroepen
+### De AEM-API aanroepen {#calling-the-aem-api}
 
 Maak de aangewezen server-aan-server API vraag aan een AEM als Cloud Service milieu, met inbegrip van het toegangstoken in de kopbal. Gebruik dus voor de header &quot;Authorization&quot; de waarde `"Bearer <access_token>"`. Als u bijvoorbeeld `curl` gebruikt:
 
@@ -139,7 +138,7 @@ Klik **Get Local Development Token** knoop in de Console van de Ontwikkelaar om 
 
 Maak de aangewezen server-aan-server API vraag van de niet-AEM toepassing aan een AEM als Cloud Service milieu, met inbegrip van het toegangstoken in de kopbal. Gebruik dus voor de header &quot;Authorization&quot; de waarde `"Bearer <access_token>"`.
 
-## Intrekking servicekredieten {#service-credentials-revocation}
+## Intrekking van servicereferenties {#service-credentials-revocation}
 
 Als de geloofsbrieven moeten worden ingetrokken, moet u een verzoek aan klantensteun indienen gebruikend deze stappen:
 
