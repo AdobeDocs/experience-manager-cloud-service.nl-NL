@@ -1,9 +1,9 @@
 ---
 title: Schermvideo-uitvoeringen in rasters maken als Cloud Service
 description: In deze pagina wordt beschreven hoe u als Cloud Service screens Video-uitvoeringen in rasters maakt.
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,24 @@ In deze handleiding wordt beschreven hoe u video-uitvoeringen kunt maken die in 
 
 ## Stappen voor het maken van schermvideo-uitvoeringen in schermen als Cloud Service {#steps-creating-screens-video-renditions}
 
-1. Navigeer naar kanalen in de gebruikersinterface van Screens Cloud.
-1. Klik op de Adobe Experience Manager in de linkerbovenhoek om naar de Inhoudsprovider voor schermen te navigeren, dat wil zeggen AEM als Cloud Service.
-1. Klik nu op de sectie Gereedschappen in de hoofdnavigatie en klik op &quot;Middelen&quot; en klik vervolgens op &quot;Profielen verwerken&quot;
+1. Navigeer naar uw kanaal in de Inhoudsprovider voor schermen.
 
-1. Klik op &quot;Maken&quot; om een nieuw verwerkingsprofiel te maken
-1. Geef bijvoorbeeld de naam &quot;ScreensProcessingProfile&quot; op
-1. Navigeer naar het tabblad Video om een videocodering toe te voegen en klik op &quot;Nieuw toevoegen&quot;
+   >[!NOTE]
+   >Raadpleeg [Scherminhoudsprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) voor meer informatie.
+
+1. Klik op de sectie Gereedschappen in de linkernavigatiebalk en klik op **Middelen**. Klik vervolgens op **Profielen verwerken**.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. Klik op **Maken** om een nieuw verwerkingsprofiel te maken.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. Voer de **Naam** in, zoals **ScreensProcessingProfile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. Navigeer naar het tabblad **Video** om een videocodering toe te voegen en klik op **Nieuwe toevoegen**.
 
 
    >[!IMPORTANT]
