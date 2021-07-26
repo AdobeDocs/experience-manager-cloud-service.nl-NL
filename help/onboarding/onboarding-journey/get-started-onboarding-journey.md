@@ -4,16 +4,16 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
 
 # Aan de slag met het instapproces {#getting-started}
 
-Onboarding is het proces waarin een aangewezen Beheerder van het Systeem AEM als Cloud Service voor uw organisatie plaatst. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
+Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
 ## Doelstelling {#objective}
 
@@ -21,8 +21,8 @@ Als systeembeheerder, vat dit document de zeer eerste stappen in uw onboarding r
 
 Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 
-* Toegang tot en aanmelding bij Admin Console
-* Controleer uw rechten als systeembeheerder via Admin Console
+* Toegang tot en aanmelding bij Admin Console.
+* Controleer uw rechten als systeembeheerder via Admin Console.
 
 >[!NOTE]
 >Voordat je het instapproces start, moet je eerst meer weten over Adobe Admin Console. De Adobe Admin-console is een centrale plaats voor het beheren en beheren van uw Adobe-productlicenties en -gebruikers. Uw systeembeheerder zal zich bij de console van Admin van Adobe aanmelden om gebruikers en meer toe te voegen of te verwijderen. Zie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) voor meer informatie.
@@ -42,12 +42,12 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Meld u aan met uw Adobe ID. Bij een geslaagde aanmelding ziet u de pagina **Overzicht** van de Adobe Admin Console, zoals hieronder wordt weergegeven.
+1. Meld u aan met uw [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Bij een geslaagde aanmelding ziet u de pagina **Overzicht** van de Adobe Admin Console, zoals hieronder wordt weergegeven.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >Als u toegang hebt tot meerdere organisaties, moet u ervoor zorgen dat u zich hebt aangemeld bij de juiste organisatie. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie op de actiebalk en kiest u de gewenste organisatie waartoe u toegang nodig hebt, zoals in de onderstaande afbeelding wordt getoond.
+   >Als u toegang hebt tot meerdere organisaties, moet u ervoor zorgen dat u zich hebt aangemeld bij de juiste organisatie. Als u uw organisatie wilt wijzigen, klikt u in de rechterbovenhoek op de naam van de organisatie en kiest u de gewenste organisatie waartoe u toegang nodig hebt, zoals in de onderstaande afbeelding wordt getoond.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
