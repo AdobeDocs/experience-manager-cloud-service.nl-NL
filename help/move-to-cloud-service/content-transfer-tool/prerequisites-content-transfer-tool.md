@@ -2,9 +2,9 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Controleer alle onderstaande overwegingen:
 | Overwegingen | Wat wordt momenteel ondersteund |
 |--- |--- |
 | AEM | Het gereedschap Inhoud overbrengen kan alleen worden uitgevoerd in AEM 6.3 of hoger. Als u Content Transfer Tool wilt gebruiken met AEM 6.2 of oudere versies, is een upgrade van de opslagplaats voor inhoud op locatie naar AEM 6.5 vereist. U hoeft de code hiervoor niet bij te werken naar AEM 6.5. |
-| Grootte van segmentwinkel | Er wordt momenteel ondersteuning geboden voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
+| Grootte van segmentwinkel | Een bestaande opslagplaats die minder dan 55 miljoen JCR knopen en tot 83 GB (online gecomprimeerde grootte) op *Auteur* en 31 GB op *Publish* heeft wordt momenteel gesteund. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
 | Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 10 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. <br>Voor Amazon S3- en Azure Data Store-typen voor gegevensopslag kan een optionele  [pre-](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) copystep worden gebruikt om het proces voor de overdracht van inhoud aanzienlijk te versnellen en ondersteunt een gegevensopslag van meer dan 10 TB. |
 | Totale indexgrootte | De totale indexgrootte van maximaal 25 GB wordt momenteel ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor indexgrootte boven deze limiet te bespreken. |
 | Lengte knooppuntnaam | De lengte van een knooppuntnaam moet 150 bytes of minder zijn. Node-namen die langer zijn dan 150 bytes, moeten worden ingekort tot &lt;= 150 bytes om te worden ondersteund door de Document node store in AEM as a Cloud Service. De oplossingen mislukken als deze lange knooppuntnamen niet vast zijn. |
