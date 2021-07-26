@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,6 @@ Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het
 >[!MORELIKETHIS]
 >
 >* [Met DRM beveiligde middelen downloaden](drm.md)
-* [Items downloaden met de bureaubladtoepassing Experience Manager op Windows of Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+* [Items downloaden met de bureaubladtoepassing Experience Manager op Windows of Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 * [Elementen downloaden met de Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
