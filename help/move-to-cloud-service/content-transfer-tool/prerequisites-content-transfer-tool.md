@@ -2,9 +2,9 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 84cca61f8c56e70377c61f5adcdd98c22fbb09a7
+source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '474'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,7 @@ Controleer alle onderstaande overwegingen:
 | Grootte van segmentwinkel | Er wordt momenteel ondersteuning geboden voor maximaal 83 GB op *Auteur* en 31 GB op *Publiceren*. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
 | Totale grootte van gegevensopslagruimte <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 10 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 10 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 10 TB te bespreken. <br>Voor Amazon S3- en Azure Data Store-typen voor gegevensopslag kan een optionele  [pre-](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) copystep worden gebruikt om het proces voor de overdracht van inhoud aanzienlijk te versnellen en ondersteunt een gegevensopslag van meer dan 10 TB. |
 | Totale indexgrootte | De totale indexgrootte van maximaal 25 GB wordt momenteel ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor indexgrootte boven deze limiet te bespreken. |
+| Lengte knooppuntnaam | De lengte van een knooppuntnaam moet 150 bytes of minder zijn. Node-namen die langer zijn dan 150 bytes, moeten worden ingekort tot &lt;= 150 bytes om te worden ondersteund door de Document node store in AEM as a Cloud Service. De oplossingen mislukken als deze lange knooppuntnamen niet vast zijn. |
 | Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen kan niet worden gebruikt om inhoud in onveranderbare paden te migreren. Als u inhoud wilt overbrengen van `/etc`, mogen alleen bepaalde `/etc` paden worden geselecteerd, maar alleen ter ondersteuning van [AEM Forms naar AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Raadpleeg [Common Repository Reform](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) voor alle andere gebruiksgevallen voor meer informatie over de herstructurering van de opslagplaats. |
 
 ## Volgende functies {#whats-next}
