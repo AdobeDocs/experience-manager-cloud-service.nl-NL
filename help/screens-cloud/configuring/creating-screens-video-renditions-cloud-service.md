@@ -1,9 +1,9 @@
 ---
 title: Schermvideo-uitvoeringen in rasters maken als Cloud Service
 description: In deze pagina wordt beschreven hoe u als Cloud Service screens Video-uitvoeringen in rasters maakt.
-source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
+source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,30 @@ In deze handleiding wordt beschreven hoe u video-uitvoeringen kunt maken die in 
 
 1. Navigeer naar het tabblad **Video** om een videocodering toe te voegen en klik op **Nieuwe toevoegen**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Voer de **Coderingsnaam** zoals , **screens-fullhd** en **Bitsnelheid** in als **2500**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Zorg ervoor dat u de coderingsnaam gebruikt die begint met &quot;screens-&quot;. Alleen deze video-uitvoeringen worden beschouwd als afspelen van de videobeleving in rasters als Cloud Service. Voer de bitsnelheid in die past bij uw video&#39;s (2500 kbps voor 720 px video en 5000 kbps voor 1080 px)
+   >Zorg ervoor dat u de coderingsnaam gebruikt die begint met &quot;screens-&quot;. Alleen deze video-uitvoeringen worden beschouwd als een Cloud Service voor het afspelen van de video-ervaring in rasters. Voer de bitsnelheid in die voor uw video&#39;s geschikt is (2500 kbps voor 720 px video en 5000 kbps voor 1080 px).
 
    >[!NOTE]
-   >U kunt meerdere video-uitvoeringen toevoegen met verschillende breedte/hoogte/bitsnelheid, afhankelijk van uw wensen. Houd er echter rekening mee dat alle schermen- uitvoeringen worden gedownload door de rasterapparaten, ook al speelt het apparaat alleen video-uitvoering af.
+   >U kunt meerdere video-uitvoeringen met verschillende breedte/hoogte/bitsnelheid toevoegen om uw video&#39;s te kunnen bewerken. Houd er rekening mee dat alle schermen- uitvoeringen worden gedownload door de apparaten Screens, ook al speelt het apparaat alleen video-uitvoering af.
 
-1. Klik op Opslaan
+1. Klik op **Opslaan**.
 
-1. Selecteer het verwerkingsprofiel en klik op &quot;Profiel toepassen op map(pen)&quot;
+1. Selecteer het verwerkingsprofiel en klik op **Profiel toepassen op map(pen)**.
 
-1. Selecteer de map(pen) waar de video&#39;s op schermen worden opgeslagen en klik op Toepassen
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. U kunt meerdere verwerkingsprofielen maken en deze toepassen op de corresponderende mappen, zodat de video&#39;s in die mappen de specifieke video-uitvoeringen ophalen
+1. Selecteer de map(pen) waarin de video&#39;s op schermen worden opgeslagen en klik op **Toepassen**.
 
-1. Wanneer u video&#39;s uploadt naar de map waar het verwerkingsprofiel is toegepast, worden video&#39;s verwerkt en geconfigureerde vertoningen gemaakt. Deze worden door de schermapparaten gebruikt om de video&#39;s af te spelen.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* U kunt meerdere verwerkingsprofielen maken en deze toepassen op de corresponderende mappen, zodat de video&#39;s in die mappen de specifieke video-uitvoeringen krijgen.
+   >* Wanneer u video&#39;s uploadt naar de map waar het verwerkingsprofiel is toegepast, worden video&#39;s verwerkt en geconfigureerde vertoningen gemaakt, die verder worden gebruikt door de schermapparaten om de video&#39;s af te spelen.
+
 
