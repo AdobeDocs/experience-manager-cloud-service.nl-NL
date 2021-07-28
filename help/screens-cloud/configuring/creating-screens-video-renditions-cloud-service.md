@@ -1,9 +1,9 @@
 ---
 title: Video-uitvoeringen in schermen maken als Cloud Service
 description: Op deze pagina wordt beschreven hoe u als Cloud Service video-uitvoeringen in rasters kunt maken.
-source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
+source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-In deze handleiding wordt beschreven hoe u video-uitvoeringen kunt maken die in schermspelers worden gebruikt.
+In deze sectie wordt beschreven hoe u video-uitvoeringen kunt maken die worden gebruikt in schermspelers.
 
 >[!IMPORTANT]
 >De stappen die in deze sectie worden gemarkeerd, moeten worden geconfigureerd als u video&#39;s wilt gebruiken in schermkanalen.
 
 ## Stappen voor het maken van video-uitvoeringen in schermen als Cloud Service {#steps-creating-screens-video-renditions}
 
-Voer de onderstaande stappen uit om video-uitvoeringen in Schermen te maken als een cloudservice van de Inhoudsprovider voor schermen:
+Voer de onderstaande stappen uit om video-uitvoeringen in rasters te maken als een Cloud Service van de Inhoudsprovider voor schermen:
 
 1. Navigeer naar uw kanaal in de Inhoudsprovider voor schermen.
 
