@@ -5,21 +5,21 @@ contentOwner: AG
 feature: Slimme tags,tags toepassen
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 5%
+source-wordcount: '2331'
+ht-degree: 4%
 
 ---
 
 
-# Slimme tags aan uw elementen toevoegen om de zoekervaring te verbeteren {#smart-tag-assets-for-faster-search}
+# Slimme tags toevoegen aan uw elementen en zoekervaring verbeteren {#smart-tag-assets-for-faster-search}
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://www.adobe.com/nl/sensei/experience-cloud-artificial-intelligence.html) om het algoritme voor beeldherkenning op te leiden in de codestructuur en de bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past automatisch slimme tags toe op geüploade elementen.
+Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om het algoritme voor imageherkenning op te leiden in uw tagstructuur en bedrijfsconomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past automatisch slimme tags toe op geüploade elementen.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 * Maak een tagmodel dat alleen het volgende bevat:
 
    * De labels die betrekking hebben op automodellen.
-   * De labels hadden betrekking op hoesjes voor vrouwen en mannen.
+   * De labels hadden betrekking op hoesjes voor volwassenen en kinderen.
 
 * Niet maken,
 
@@ -139,8 +139,8 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 1. Selecteer het **[!UICONTROL Smart Tags Training]** rapport, en klik dan **[!UICONTROL Next]** van de toolbar.
 1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Klik vervolgens op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op **[!UICONTROL View]** op de werkbalk om het rapport weer te geven.
-1. Bekijk de details van het rapport. Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in de kolom **[!UICONTROL Training Status]** geeft aan dat de service Slimme tags is getraind voor de tag. Een gele kleur geeft aan dat de service niet volledig is getraind voor een bepaalde tag. Voeg in dit geval meer afbeeldingen met de desbetreffende tag toe en voer de trainingsworkflow uit om de service volledig op de tag te trainen. Als dit rapport uw tags niet bevat, voert u de trainingsworkflow voor deze tags opnieuw uit.Tags
-1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een spreadsheet [!DNL Microsoft Excel].
+1. Bekijk de details van het rapport. Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in de kolom **[!UICONTROL Training Status]** geeft aan dat de service Slimme tags is getraind voor de tag. Gele kleur geeft aan dat de service gedeeltelijk is opgeleid voor een bepaalde tag. Als u de service volledig wilt trainen voor een tag, voegt u meer afbeeldingen met de desbetreffende tag toe en voert u de trainingsworkflow uit. Als dit rapport uw tags niet bevat, voert u de trainingsworkflow opnieuw uit voor deze tags.Tags
+1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een spreadsheet.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experie
 
 * Voor afbeeldingen en video&#39;s zijn de slimme tags gebaseerd op een visueel aspect.
 
-* Voor op tekst gebaseerde elementen is de effectiviteit van slimme tags niet afhankelijk van de hoeveelheid tekst in het element, maar van de relevante trefwoorden of entiteiten in de tekst van het element. Voor op tekst gebaseerde elementen zijn de slimme tags de trefwoorden die in de tekst worden weergegeven, maar de trefwoorden die het element het beste beschrijven. Voor ondersteunde elementen wordt de tekst al geëxtraheerd door [!DNL Experience Manager]. Deze wordt vervolgens geïndexeerd en wordt gebruikt om de elementen te zoeken. Slimme tags die zijn gebaseerd op trefwoorden in de tekst bieden echter een speciale, gestructureerde en prioriteitszoekfactor die wordt gebruikt om de detectie van elementen te verbeteren in vergelijking met de volledige zoekindex.
+* Voor op tekst gebaseerde elementen is de effectiviteit van slimme tags niet afhankelijk van de hoeveelheid tekst in het element, maar van de relevante trefwoorden of entiteiten in de tekst van het element. Voor op tekst gebaseerde elementen zijn de slimme tags de trefwoorden die in de tekst worden weergegeven, maar de trefwoorden die het element het beste beschrijven. Voor ondersteunde elementen wordt de tekst al geëxtraheerd door [!DNL Experience Manager]. Deze wordt vervolgens geïndexeerd en wordt gebruikt om de elementen te zoeken. Slimme tags die op trefwoorden in de tekst zijn gebaseerd, bieden echter een toegewezen, gestructureerde en prioriteitszoekfacet. Deze laatste functie verbetert de detectie van elementen in vergelijking met een zoekindex.
 
 ## Slimme tags beheren en zoeken naar middelen {#manage-smart-tags-and-searches}
 
@@ -193,13 +193,13 @@ Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags ook verfijn
 
 U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie van de tag voor het element te vergroten. Door een tag voor een element te promoten, vergroot u de kans dat het element in de zoekresultaten wordt weergegeven wanneer een zoekopdracht wordt uitgevoerd op basis van de desbetreffende tag.
 
-De slimme tags van uw elementen reduceren:
+Slimme tags toepassen op uw digitale elementen:
 
-1. Zoek in het zoekveld naar elementen op basis van een tag.
+1. Zoek in het zoekveld naar digitale elementen op basis van een tag.
 
-1. Inspect de zoekresultaten om de elementen te identificeren die je niet relevant vindt voor je zoekopdracht.
+1. Om de digitale activa te identificeren die u niet relevant voor uw onderzoek vindt, inspecteer de onderzoeksresultaten.
 
-1. Selecteer het element en selecteer ![Tags beheren pictogram](assets/do-not-localize/manage-tags-icon.png) op de werkbalk.
+1. Selecteer een element en selecteer ![Tags beheren pictogram](assets/do-not-localize/manage-tags-icon.png) op de werkbalk.
 
 1. Controleer de tags op de pagina **[!UICONTROL Manage Tags]**. Als u niet wilt dat het element wordt doorzocht op basis van een specifieke tag, selecteert u de tag en selecteert u ![Pictogram Verwijderen](assets/do-not-localize/delete-icon.png) op de werkbalk. U kunt ook `X`-symbool naast het label selecteren.
 
@@ -213,9 +213,9 @@ De slimme tags van uw elementen reduceren:
 
 Standaard worden bij het zoeken met [!DNL Experience Manager] de zoektermen gecombineerd met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, wordt een `OR`-component toegevoegd om een zoekterm in de toegepaste slimme tags te zoeken. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met `woman` of `running` met behulp van slimme tags, wordt echter wel weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
-* elementen met de trefwoorden `woman` en `running` in de metagegevens.
+* Middelen met de trefwoorden `woman` en `running` in de metagegevens.
 
-* elementen die zijn gelabeld met een van de trefwoorden.
+* Elementen die zijn getagd met een van de trefwoorden.
 
 De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. In het bovenstaande voorbeeld is de weergavevolgorde van zoekresultaten bij benadering:
 
@@ -223,21 +223,23 @@ De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden wor
 1. overeenkomsten van `woman running` in slimme markeringen.
 1. overeenkomende met `woman` of `running` in slimme tags.
 
-## Beperkingen van tags en aanbevolen procedures {#limitations}
+## Beperkingen en beste praktijken op het gebied van tags {#limitations}
 
 Verbeterde slimme tags zijn gebaseerd op leermodellen van afbeeldingen en hun tags. Deze modellen zijn niet altijd perfect bij het identificeren van tags. De huidige versie van de slimme tags heeft de volgende beperkingen:
 
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne of standaard passend overhemden.
 * Kan geen tags identificeren op basis van kleine patronen of delen van een afbeelding. Bijvoorbeeld logo&#39;s op hemden.
 * Tags worden ondersteund in de talen die [!DNL Experience Manager] ondersteunt. Zie [Opmerkingen bij de release Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages) voor een lijst met talen.
-* Tags die niet op realistische wijze worden verwerkt, hebben betrekking op:
+* De tags die niet worden verwerkt, hebben betrekking op:
 
-   * Niet-visuele, abstracte aspecten. Bijvoorbeeld het jaar of het seizoen waarin een product wordt uitgebracht, de sfeer of emotie die door een beeld wordt opgewekt, de subjectieve connotatie van een video enzovoort.
+   * Niet-visuele, abstracte aspecten. Bijvoorbeeld het jaar of het seizoen waarin een product wordt uitgebracht, de sfeer van of de emotie die door een beeld wordt opgeroepen, en een subjectieve connotatie van een video.
    * Fijne visuele verschillen in producten zoals overhemden met en zonder halsbanden of op producten ingebedde logo&#39;s van kleine producten.
 
-<!-- TBD: Add limitations related to text-based assets. -->
+Gebruik de meest geschikte afbeeldingen om het model op te leiden. De training kan niet worden teruggezet of het trainingsmodel kan niet worden verwijderd. De nauwkeurigheid van de tags is afhankelijk van de huidige training, dus doe dit zorgvuldig.
 
-Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de zoekopdracht [!DNL Assets] (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
+<!-- TBD: Add limitations related to text files. -->
+
+Als u bestanden met slimme tags wilt zoeken (normaal of uitgebreid), gebruikt u de zoekopdracht [!DNL Assets] (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebrui
 
 >[!MORELIKETHIS]
 >
->* [Begrijp hoe slimme tags u helpen elementen te beheren](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Slimme tags toepassen op de video-elementen](smart-tags-video-assets.md)
+>* [Begrijp hoe slimme tags helpen uw digitale bestanden te beheren](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Slimme tags gebruiken voor video&#39;s](smart-tags-video-assets.md)
 
