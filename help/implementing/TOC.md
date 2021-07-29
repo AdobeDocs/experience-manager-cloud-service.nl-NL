@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '921'
 ht-degree: 29%
 
 ---
@@ -172,7 +172,9 @@ ht-degree: 29%
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
    + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
    + [Contentfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [Zoekformulieren configureren](developing/extending/search-forms.md)
+   + Zoeken in Forms {#manage-search-forms} beheren
+      + [Zoekformulieren configureren](developing/extending/search-forms.md)
+      + [Zoekfilters voor Postvak IN configureren](developing/extending/configure-inbox-search-rail.md)
    + [De Rich Text-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)
    + [De RTE-insteekmodules configureren](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [RTE configureren om toegankelijke sites te maken](/help/implementing/developing/extending/rte-accessible-content.md)
