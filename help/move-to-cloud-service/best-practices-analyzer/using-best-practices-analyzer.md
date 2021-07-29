@@ -2,9 +2,9 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2522'
 ht-degree: 42%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="De Analysator van Beste praktijken gebruiken"
 >abstract="Bekijk de documentatie voor het gebruik van de Analysator voor best practices (voorheen Cloud Readiness Analyzer) en het gegenereerde rapport. Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Belangrijke overwegingen voor het Gebruiken van Analyzer van Beste praktijken {#imp-considerations}
 
@@ -51,7 +51,7 @@ De Analysator van Beste praktijken kan als zip dossier van het portaal van de Di
 >[!NOTE]
 Download de Analysator van Beste praktijken van het portaal van de  [Distributie van de ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Software.
 
-## Het rapport Analyzer van Beste praktijken {#viewing-report} bekijken
+## Het Rapport van de Analysator van Beste praktijken bekijken {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 en hoger {#aem-later-versions}
 
@@ -121,12 +121,13 @@ De tool werkt niet voor Adobe Experience Manager 6.1 en kan alleen via de HTTP-i
 >[!NOTE]
 In alle versies kan de opgenomen Pattern Detector-functie onafhankelijk worden uitgevoerd.
 
-## Het rapport van de Analysator van Beste praktijken {#cra-report} interpreteren
+## Het rapport met de analyse van best practices interpreteren {#cra-report}
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
 title="Het rapport met de analyse van best practices interpreteren"
 abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de Pattern Detector-uitvoer. Deze informatie is gesorteerd en ingedeeld op categorietype, subtype en belang."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse van beste praktijken"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
 
 Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
@@ -156,7 +157,7 @@ Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 | CRITICAL | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt om functie- of prestatieverlies te voorkomen. |
 
 
-## CSV-rapport {#cra-csv-report} van de analyse van best practices interpreteren
+## Het CSV-rapport van de Analysator van best practices interpreteren {#cra-csv-report}
 
 Wanneer u **CSV** optie van uw AEM instantie klikt, wordt het formaat CSV van het rapport van de Analysator van Beste praktijken gebouwd van het inhoudsgeheime voorgeheugen en teruggekeerd aan uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
 
