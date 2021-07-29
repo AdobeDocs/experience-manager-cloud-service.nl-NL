@@ -5,10 +5,10 @@ breadcrumb-title: Release-opmerkingen
 user-guide-description: Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen.
 feature: Geen informatie
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f3207681f16c7db3922c437ce5c57409fcd29f3b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 28%
+source-wordcount: '128'
+ht-degree: 27%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 28%
 + Releaseopmerkingen {#release-notes}
    + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [Opmerkingen bij de release 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [Opmerkingen bij de release 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [Opmerkingen bij de release 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [Opmerkingen bij de release 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
