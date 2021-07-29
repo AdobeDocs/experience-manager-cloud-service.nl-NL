@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Samenwerking,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
+source-wordcount: '3451'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Ervaring voor creatieve producten op desktop vereenvoudigen | Toegang tot bedrijfsmiddelen vanaf een DAM ([!DNL Assets]) stroomlijnen voor creatieve professionals, of meer in het algemeen gebruikers op desktopcomputers die werken in toepassingen voor het maken van native bedrijfsmiddelen. Ze hebben een eenvoudige en eenvoudige manier nodig om wijzigingen in de Experience Manager te detecteren, te gebruiken (openen), te bewerken en op te slaan, en om nieuwe bestanden te uploaden. | Win- of Mac-bureaublad; Creative Cloud-apps |
 | Voorzie van hoogwaardige, gebruiksklare middelen van [!DNL Adobe Stock] | Marketers helpen het proces voor het maken van inhoud te versnellen door hulp te bieden bij het aanschaffen en detecteren van bedrijfsmiddelen. Creatieve professionals gebruiken de goedgekeurde middelen direct vanuit hun creatieve gereedschappen. | [!DNL Assets];  [!DNL Adobe Stock] markt; metagegevensvelden |
 | Elementen distribueren en delen door organisaties | De interne afdelingen/de lokale takken en de externe partners, de distributeurs, en de agentschappen gebruiken de goedgekeurde activa die door de ouderorganisatie worden gedeeld. De organisatie wil de gemaakte middelen veilig en naadloos delen voor breder hergebruik. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| Vooraf gedefinieerde variaties van geüploade elementen automatisch genereren | Verwerk automatisch elementen door gebruik te maken van Adobe unieke media handling en transformatietechnologie voor vooraf gedefinieerde handelingen. Creeer douanelogica om uw eigen acties te bepalen gebruikend APIs en activa microservices. | [!DNL Assets] gebruikersinterface |
 
 ## Adobe-aanbod ter ondersteuning van de behoefte aan samenwerking {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in [!DNL Experience Manager] en het uploaden van nieuwe bestanden naar [!DNL Experience Manager] vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Desktop-app Experience Manager op Windows- en Mac-bureaublad |
 | Marketers en zakelijke gebruikers detecteren, voorvertonen, licentiëren en opslaan, en beheren de Adobe Stock-middelen vanuit de Experience Manager. Gelicentieerde en opgeslagen middelen bieden geselecteerde Adobe Stock-metagegevens voor beter beheer. | [Integratie van Experience Manager en Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] webinterface |
 | De samenwerking tussen ontwerpers van digitale producten en marketers verbeteren. Laat ontwerpers de digitale elementen gebruiken in ontwerp- en draadframemodellen op het Adobe XD-canvas. | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| Marktdeelnemers kunnen automatisch variaties en derivaten maken op basis van geüploade elementen en vooraf gedefinieerde handelingen die met behulp van aanpassingen zijn gemaakt. Gebruik deze automatisering om de snelheid van de inhoud te verbeteren en handmatige inspanningen te verminderen. | [Inhoud automatiseren](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] webinterface |
 
 Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en sourcing van assets op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternatieve oplossingen zoals [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), oplossingen die kunnen worden gebouwd op [Commons voor het delen van bedrijfsmiddelen](https://opensource.adobe.com/asset-share-commons/) componenten, [Link Share](share-assets.md), die [Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md) gebruiken, dienen te worden beoordeeld op basis van specifieke vereisten.
 
