@@ -1,9 +1,9 @@
 ---
 title: Aan de slag met Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van het gebruik en het gebruik van Cloud Acceleration Manager.
-source-git-commit: 1e13df5c6dfb9c0d28a540ce089cf722978bd8d3
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,12 @@ Ga als volgt te werk om naar CAM (Cloud Acceleration Manager) te navigeren:
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
 ### Een project maken en beheren in Cloud Acceleration Manager {#create-project}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_gettingstarted"
+>title="Aan de slag met Cloud Acceleration Manager"
+>abstract="Maak uw project en start uw reis naar AEM als Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Voordelen van het gebruik van Cloud Acceleration Manager"
 
 Met de openingspagina van de CAM (Cloud Acceleration Manager) kunt u meerdere projecten maken en bewerken.
 
