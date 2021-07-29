@@ -1,14 +1,13 @@
 ---
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 5%
 
 ---
-
 
 # Pagina&#39;s publiceren {#publishing-pages}
 
@@ -47,11 +46,6 @@ Afhankelijk van uw locatie kunt u publiceren:
 >* Deze workflow is mogelijk aangepast door uw ontwikkelingsteam.
 >* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
 
-
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
 
 >[!NOTE]
 >
@@ -113,9 +107,9 @@ Een pagina publiceren met Snel publiceren:
 >
 >Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
 
-#### Publicatie {#manage-publication} beheren
+#### Publicatie beheren {#manage-publication}
 
-**U kunt** Publicatie beheren met meer opties dan Snel publiceren, zodat onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
+**Het beheren van** Publicatie biedt meer opties dan  **Snelle Publicatie**, die voor de opneming van kindpagina&#39;s, aanpassing van de verwijzingen, en het beginnen van om het even welke toepasselijke werkschema&#39;s toestaat evenals de optie om op een recentere datum te publiceren.
 
 Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beheren:
 
@@ -125,46 +119,42 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
 1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, **Options**, kunt u:
 
-   * Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
-   * Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
+   * **Actie**
 
-   Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
+      Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
 
-   Als u een publicatie/publicatie later wilt annuleren, gaat u naar de workflowconsole om de bijbehorende workflow te beëindigen. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **Planning**
 
+      Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
+
+      Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
+
+      >[!NOTE]
+      >
+      >Als u een publicatie/unpublish later wilt annuleren, gaat u naar [Workflowconsole](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om de corresponderende workflow te beëindigen.
    ![Publicatieopties beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   Klik **Volgende** om door te gaan.
+1. Klik **Volgende** om door te gaan.
 
 1. In de volgende stap van de Manage tovenaar van de Publicatie, **Scope**, kunt u het werkingsgebied van de publicatie/unpublication bepalen zoals het omvatten van kindpagina&#39;s en/of het omvatten van verwijzingen.
 
    ![Publicatiebereik beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **Inhoud toevoegen**
+
    U kunt de knop **Inhoud toevoegen** gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
 
-   Als u op de knop Inhoud toevoegen klikt, wordt de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) gestart om de inhoud te kunnen selecteren.
+   Als u de knop **Inhoud toevoegen** selecteert, wordt de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) gestart om het selecteren van inhoud toe te staan.
 
    Selecteer de vereiste pagina&#39;s en klik dan **Select** om de inhoud aan de tovenaar toe te voegen of **Cancel** om de selectie te annuleren en aan de tovenaar terug te keren.
 
-   Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
+   **Selectie verwijderen**
 
-   * Inclusief de onderliggende elementen.
-   * Verwijder het uit de selectie.
-   * De gepubliceerde referenties beheren.
+   U kunt vervolgens weer in de wizard een item in de lijst selecteren om het item uit de selectie te verwijderen.
 
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Als u op **Inclusief onderliggende elementen** klikt, wordt een dialoogvenster geopend waarin u:
-
-   * Alleen directe kinderen opnemen.
-   * Alleen gewijzigde pagina&#39;s opnemen.
-   * Alleen al gepubliceerde pagina&#39;s opnemen.
-
-   Klik op **Toevoegen** om de onderliggende pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die op basis van de selectieopties moeten worden gepubliceerd of niet gepubliceerd. Klik **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
-
-   ![Publicatie beheren, waaronder kinderen](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   Als u terugkeert naar de wizard, ziet u de toegevoegde pagina&#39;s op basis van uw keuze voor opties in het dialoogvenster Inclusief onderliggende items.
+   **Gepubliceerde verwijzingen**
 
    U kunt de te publiceren verwijzingen of unpublished voor een pagina bekijken en wijzigen door het te selecteren en dan de **Gepubliceerde Verwijzingen** knoop te klikken.
 
@@ -178,32 +168,44 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **Inclusief onderliggende items**
+
+   >[!NOTE]
+   >
+   >Zie [Een structuur publiceren en verwijderen](#publishing-and-unpublishing-a-tree)
+
+   Als u op **Inclusief onderliggende elementen** klikt, wordt een dialoogvenster geopend waarin u:
+
+   * **Inclusief kinderen**
+   * **Alleen directe kinderen opnemen**
+   * **Alleen gewijzigde pagina&#39;s opnemen**
+   * **Alleen reeds gepubliceerde pagina&#39;s opnemen**
+
+   Activeer de vereiste opties en bevestig deze met **OK** om de onderliggende pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die gepubliceerd of ongepubliceerd moeten worden op basis van de selectieopties. Klik **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
+
+   ![Publicatie beheren, waaronder kinderen](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. Klik **Publiceren** om te voltooien.
 
    Terug in de plaatsenconsole zal een berichtbericht de publicatie bevestigen.
 
 1. Als de gepubliceerde pagina&#39;s aan werkschema&#39;s worden geassocieerd, kunnen zij in een definitieve **Werkschema** stap van de publicatietovenaar worden getoond.
 
+   ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >De stap **Workflows** wordt weergegeven op basis van de rechten die de gebruiker kan hebben of niet. Zie de vorige notitie op deze pagina met betrekking tot publicatiebevoegdheden en het beheren van toegang tot werkstromen en [Workflows toepassen op pagina&#39;s](/help/sites-cloud/authoring/workflows/applying.md) voor meer informatie.
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    De bronnen worden gegroepeerd op basis van de workflows die worden geactiveerd en elke optie heeft de volgende opties:
 
    * Definieer de titel van de workflow.
    * Behoud het workflowpakket, mits de workflow ondersteuning biedt voor meerdere bronnen.
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * Definieer een titel van het workflowpakket als de optie om het workflowpakket te behouden is gekozen.
 
-   Klik op **Publiceren** of **Later publiceren** om de publicatie te voltooien.
+1. Klik op **Publiceren** of **Later publiceren** om de publicatie te voltooien.
 
-## Publicatie van pagina&#39;s {#unpublishing-pages} ongedaan maken
+## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
 Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatieomgeving, zodat deze niet langer beschikbaar is voor uw lezers.
 
@@ -212,26 +214,30 @@ Op een [manier gelijkend op het publiceren](#publishing-pages), kunnen één of 
 * [Vanuit de pagina-editor](#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](#unpublishing-from-the-console)
 
-### Publicatie ongedaan maken in de Editor {#unpublishing-from-the-editor}
+### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
 
 Als u de publicatie van een pagina ongedaan wilt maken, selecteert u **Publicatie van pagina** ongedaan maken in het menu **Pagina-informatie**, net als wanneer u de pagina](#publishing-from-the-editor) zou publiceren.[
 
-### Publiceren van de console {#unpublishing-from-the-console} ongedaan maken
+### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
 
 Net zoals u [de optie Publicatie beheren gebruikt om te publiceren](#manage-publication), kunt u deze ook gebruiken om de publicatie ongedaan te maken.
 
 1. Selecteer de pagina of pagina&#39;s in de siteconsole en klik op de knop **Publicatie beheren**.
 1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, bij **Opties**, selecteert u **Publicatie ongedaan maken** in plaats van de standaardoptie **Publiceren**.
 
-   ![Publiceren ongedaan maken](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Unpublishing - Opties](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
-   Net zoals bij het publiceren later een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt door het later deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
+   Net zoals later met publiceren een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt later met deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
 
-   Als u een publicatie/publicatie later wilt annuleren, gaat u naar de workflowconsole om de bijbehorende workflow te beëindigen. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >Als u een publicatie/unpublish later wilt annuleren, gaat u naar [Workflowconsole](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om de corresponderende workflow te beëindigen.
 
 1. Als u de niet-publicatie wilt voltooien, gaat u door met de wizard zoals u de pagina [publiceert.](#manage-publication)
 
-## Een structuur publiceren en verwijderen {#publishing-and-unpublishing-a-tree}
+   ![Unpublishing - Scope](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
+
+## Een boomstructuur publiceren en de publicatie ervan opheffen {#publishing-and-unpublishing-a-tree}
 
 Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerkt - die allen onder de zelfde wortelpagina ingezeten zijn - kan het gemakkelijker zijn om de volledige boom in één actie te publiceren.
 
@@ -243,18 +249,18 @@ U kunt de [Publicatie beheren](#manage-publication) optie op de plaatsenconsole 
 
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Schakel in het dialoogvenster **Inclusief onderliggende elementen** de opties uit:
+1. In het dialoogvenster **Inclusief onderliggende elementen**:
 
-   * Alleen directe kinderen opnemen
-   * Alleen reeds gepubliceerde pagina&#39;s opnemen
+   * Selecteer **Inclusief onderliggende elementen**
+   * **Alleen directe onderliggende elementen opnemen** uitschakelen
+   * **Alleen reeds gepubliceerde pagina&#39;s opnemen** uitschakelen
+   * configureren **Alleen gewijzigde pagina&#39;s opnemen** naar wens
 
-   Deze opties zijn standaard geselecteerd, dus u moet niet vergeten deze te deselecteren. Klik **Add** om de inhoud te bevestigen en toe te voegen aan de publicatie/unpublicatie.
+   Deze opties zijn standaard geselecteerd, dus u moet eraan denken om ze te configureren. Bevestig de selectie met **OK** om de inhoud toe te voegen aan de publicatie/unpublicatie.
 
-   ![Inclusief kinderen tijdens niet-publiceren](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Inclusief onderliggende elementen voor boompublicatie](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. De wizard **Publicatie beheren** geeft een overzicht van de inhoud van de structuur die u wilt controleren. U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
-
-   ![Publicatieopties beheren](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. In de wizard **Publicatie beheren** kunt u de selectie verder aanpassen door extra pagina&#39;s toe te voegen of de geselecteerde pagina&#39;s te verwijderen.
 
    Herinner dat u de verwijzingen kunt ook herzien die via **Gepubliceerde Verwijzingen** optie moeten worden gepubliceerd.
 
