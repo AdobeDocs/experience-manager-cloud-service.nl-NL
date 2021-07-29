@@ -2,20 +2,14 @@
 title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 8737463905ef604e7d42280e25fb1f48ed87c9f3
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '723'
 ht-degree: 55%
 
 ---
 
 # Overstappen naar AEM as a Cloud Service {#aem-moving-to-aem-guide}
-
->[!CONTEXTUALHELP]
->id="aemcloud_cam_overview"
->title="Info over Cloud AccelerManager"
->abstract="Cloud Acceleration Manager is uw eigen persoonlijke gids gedurende het gehele proces waarbij u als Cloud Service naar AEM gaat."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Belangrijke wijzigingen in AEM Sites as a Cloud Service"
 
 ## Voordelen van de overstap naar AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
@@ -40,6 +34,13 @@ In de onderstaande afbeelding ziet u een afbeelding van de aanbevolen overgang n
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="Info over Cloud AccelerManager"
+>abstract="Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="Overstappen naar AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Belangrijke wijzigingen in AEM Sites as a Cloud Service"
 
 Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen Adobe-procedures, tips, documentatie en tools om u te helpen bij elke fase van de reis naar AEM als Cloud Service.
 
