@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -140,17 +140,17 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 * `bulk-offline-update-service` ontbrak alle machtigingen voor bepaalde omgevingen.
 
-* De koppeling Help bijwerken zodat deze overeenkomt met de nieuwe documentatie van de schermcloud.
+* De bijgewerkte koppeling Help die overeenkomt met de nieuwe documentatie van de schermwolk.
 
-* Afspeellijsten niet toewijzen en het verwijderen van afspeellijsten met toegewezen speler(en) niet toestaan.
+* Afspeellijsten niet toewijzen en het verwijderen van afspeellijsten met toegewezen speler(en) niet toestaan, werkt nu.
 
-* De speler downloadt nu Middelen opnieuw wanneer &quot;ALLE&quot;Cachegeheugen wordt ontruimd.
+* De speler downloadt nu elementen opnieuw wanneer de &quot;ALLE&quot;Cache wordt ontruimd.
 
 * Herhaal planning nu werkt als de *Eindtijd* is ingesteld op de volgende dag.
 
-* `Back&Forward` werkt nu in de interface van de schermwolk.
+* `Back&Forward` werkt nu in Schermen als Cloud Service UI.
 
-* Labels met dezelfde naam maar verschillende naamruimten kunnen niet worden gemaakt.
+* Labels met dezelfde naam maar verschillende naamruimten kunnen niet eerder worden gemaakt.
 
 ## [!DNL Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
