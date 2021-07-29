@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2560'
 ht-degree: 5%
 
 ---
@@ -65,7 +65,7 @@ Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in 
 
 ![Door broodkruimels te navigeren](/help/sites-cloud/authoring/assets/organizing-breadcrumbs.png)
 
-### Paginanamen van conventies {#page-naming-conventions}
+### Naamgevingsconventies voor pagina&#39;s {#page-naming-conventions}
 
 Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
@@ -168,7 +168,7 @@ Nadat u een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de comp
 >
 >De [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md) geeft een overzicht van de componenten op uw instantie.
 
-## Pagina&#39;s {#managing-pages} beheren
+## Pagina&#39;s beheren {#managing-pages}
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
@@ -250,7 +250,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 >
 >U kunt vanuit de pagina-editor alleen naar andere pagina&#39;s navigeren in de modus Voorbeeld, omdat koppelingen niet actief zijn in de modus Bewerken.
 
-### Een pagina {#copying-and-pasting-a-page} kopiëren en plakken
+### Pagina&#39;s kopiëren en plakken {#copying-and-pasting-a-page}
 
 U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëren:
 
@@ -264,27 +264,30 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
    ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
-
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. Het pictogram **Plakken** is beschikbaar met een vervolgkeuzepijl rechtstreeks naar rechts:
+1. Tik of klik op het pictogram **Plakken** dat beschikbaar kwam.
 
    ![Plakken](/help/sites-cloud/authoring/assets/paste.png)
 
-   U kunt:
+1. Het dialoogvenster Plakken bevat een overzicht van de plaktransactie en de mogelijkheid om:
+   * **Nieuwe sitenaam:naam van geplakte pagina** wijzigen
+   * **Plakken zonder onderliggende items:** onderliggende pagina&#39;s van de geselecteerde pagina weglaten bij plakken (onderliggende pagina&#39;s worden standaard geplakt)
 
-   1. Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
-   1. Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende elementen** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+   ![Dialoogvenster Plakken](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bijvoorbeeld al een nieuwe pagina met de naam `beach` bestaat, wordt `beach1`.
+1. Tik of klik op de knop **Plakken** om de plaktransactie te bevestigen en de nieuwe pagina(&#39;s) te maken.
 
-### Een pagina {#moving-or-renaming-a-page} verplaatsen of de naam ervan wijzigen
+>[!NOTE]
+>
+>Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bijvoorbeeld al een nieuwe pagina met de naam `beach` bestaat, wordt `beach1`.
 
-De procedure om een pagina te verplaatsen of anders te noemen is in wezen het zelfde en door de zelfde tovenaar behandeld. Met deze wizard kunt u:
+>[!NOTE]
+>
+>Als u de plakactie in selectiemodus begint, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
+
+### Een pagina verplaatsen of de naam ervan wijzigen {#moving-or-renaming-a-page}
+
+De procedure voor het verplaatsen of wijzigen van de naam van een pagina is in feite hetzelfde en beide handelingen worden verwerkt door de wizard Pagina verplaatsen. Met deze wizard kunt u:
 
 * De naam van een pagina wijzigen zonder deze te verplaatsen
 * De pagina verplaatsen zonder de naam ervan te wijzigen
@@ -384,7 +387,7 @@ De status van asynchrone taken kan worden gecontroleerd in [**Async Jobs Status*
 >
 >Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, te zien gelieve [Asynchrone Jobs](/help/operations/asynchronous-jobs.md) document in de de gebruikersgids van Verrichtingen.
 
-### Een pagina {#deleting-a-page} verwijderen
+### Een pagina verwijderen {#deleting-a-page}
 
 1. Navigeer totdat u de pagina ziet die u wilt verwijderen.
 1. Gebruik [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) om de vereiste pagina te selecteren en gebruik vervolgens **Delete** op de werkbalk:
@@ -412,7 +415,7 @@ De status van asynchrone taken kan worden gecontroleerd in [**Async Jobs Status*
 >
 >Als een pagina al is gepubliceerd, wordt deze automatisch niet gepubliceerd voordat deze wordt verwijderd.
 
-### Een pagina {#locking-a-page} vergrendelen
+### Een pagina vergrendelen {#locking-a-page}
 
 U kunt een pagina [vergrendelen/ontgrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
 
