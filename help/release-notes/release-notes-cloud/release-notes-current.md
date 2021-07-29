@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,30 @@ Klanten die overstappen op de Azul JDK&#39;s moeten zich ervan bewust zijn dat n
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
 De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. (CQ-4326322)
+
+## [!DNL Experience Manager Screens] als  [!DNL Cloud Service] {#screens}
+
+### Opgeloste problemen {#bug-fixes-screens}
+
+* De instellingen van de inhoudsprovider worden nu gevalideerd tijdens het maken of bijwerken.
+
+* Alle weergaven hebben mappenkolom.
+
+* U kunt de structuur van de Inhoud van het scherm uitbreiden.
+
+* `bulk-offline-update-service` ontbrak alle machtigingen voor bepaalde omgevingen.
+
+* De koppeling Help bijwerken zodat deze overeenkomt met de nieuwe documentatie van de schermcloud.
+
+* Afspeellijsten niet toewijzen en het verwijderen van afspeellijsten met toegewezen speler(en) niet toestaan.
+
+* De speler downloadt nu Middelen opnieuw wanneer &quot;ALLE&quot;Cachegeheugen wordt ontruimd.
+
+* Herhaal planning nu werkt als de *Eindtijd* is ingesteld op de volgende dag.
+
+* `Back&Forward` werkt nu in de interface van de schermwolk.
+
+* Labels met dezelfde naam maar verschillende naamruimten kunnen niet worden gemaakt.
 
 ## [!DNL Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
