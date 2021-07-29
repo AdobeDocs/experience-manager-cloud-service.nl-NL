@@ -4,9 +4,9 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Geen informatie
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bb4c1377da4bbca6c54ec2a0ec0a0b31f9182485
+source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | Metagegevens terugschrijven | Werkt anders | Standaard uitgeschakeld. Schakel indien nodig de bijbehorende starter voor de workflow in. Terugkoppeling wordt afgehandeld door middel van asset microservices. |
 | Verwerking van geüploade elementen met gebruik van Package Manager | Moet handmatig worden ingegrepen. | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]**. |
 | MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Subasset genereren voor samengestelde activa | Niet ondersteund. | Het is mogelijk dat niet wordt voldaan aan afhankelijke gebruiksgevallen, zoals annotaties. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). PDF-voorvertoning van sommige bestandstypen is beschikbaar als een [prerelease-functie in 2021.7.0-release](/help/release-notes/release-notes-cloud/release-notes-current.md#beta-features-assets). Zie [hoe te om tot het prereleasekanaal](/help/release-notes/prerelease.md) toegang te hebben. |
+| Subasset genereren voor samengestelde activa | Niet ondersteund. | Het is mogelijk dat niet wordt voldaan aan afhankelijke gebruiksgevallen, zoals annotaties. Zie [maken van subelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). PDF-voorvertoning van bepaalde bestandstypen is beschikbaar vanaf [2021.7.0 release](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Homepage | Niet ondersteund. | Zie [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Elementen extraheren uit ZIP-archief | Niet ondersteund. | Zie [ZIP-extractie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Waarderingen activa | Niet ondersteund. | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
