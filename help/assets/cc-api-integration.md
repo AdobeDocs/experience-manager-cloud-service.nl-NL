@@ -4,9 +4,9 @@ description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
 feature: Uploaden, Asset Processing, Publiceren, Asset compute Microservices, Workflow
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # Variaties van elementen genereren met behulp van [!DNL Adobe Creative Cloud]-integratie {#content-automation}
 
-Inhoudsautomatisering-invoegtoepassing integreert [!DNL Adobe Experience Manager Assets as a Cloud Service]- en [!DNL Adobe Creative Cloud]-API&#39;s om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloudgebaseerde  [asset-](/help/assets/asset-microservices-overview.md) microservices om de  [!DNL Adobe Creative Cloud] functies te gebruiken en het maken van middelen en het verwerken van media te automatiseren.
+Inhoudsautomatisering-invoegtoepassing integreert [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service]- en [!DNL Adobe Creative Cloud]-API om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloudgebaseerde  [asset-](/help/assets/asset-microservices-overview.md) microservices om de  [!DNL Adobe Creative Cloud] functies te gebruiken en het maken van middelen en het verwerken van media te automatiseren.
 
 Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom], hoeft u geen elementen te downloaden van [!DNL Experience Manager Assets], deze te bewerken en opnieuw te uploaden. U maakt en configureert een verwerkingsprofiel in [!DNL Experience Manager], past het profiel toe op een map en uploadt de middelen naar de map. De geüploade elementen worden opnieuw verwerkt op basis van de verwerkingsprofielen en deze elementen kunnen variëren. De consequente en moeiteloze bulkverwerking bespaart handmatige inspanningen en verhoogt de snelheid van de inhoud, ook zonder de behoefte aan uitstekende creatieve vaardigheden. Ook, kunnen de ontwikkelaars en de partners de activa microservices met directe toegang tot deze APIs uitbreiden en douanelogica omvatten.
 
-Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkingen op hun middelen te automatiseren:\
-![Adobe Photoshop- en Adobe Lightroom-bewerkingen automatiseren op bedrijfsmiddelen](assets/content-automation.png)
+Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkingen op hun middelen te automatiseren:
+
 * **Automatische tint**: Hierbij wordt gebruikgemaakt van kunstmatige intelligentie om de inhoud van de afbeelding te analyseren en op intelligente wijze licht- en kleurcorrecties toe te passen op basis van de unieke kenmerken van de afbeelding.
+
 * **Automatisch rechtop**: Gebruikt kunstmatige intelligentie om de inhoud van het beeld te analyseren en scheefgetrokken perspectief in beelden te verbeteren. Bijvoorbeeld om niveauhorizonten te maken.
+
+   ![automatische toon](/help/assets/assets/content-automation-autotone.png)
+
+   *Afbeelding: Met Automatische tinten en automatisch rechttrekken kunt u scheve afbeeldingen verbeteren.*
+
 * **Lightroom-voorinstellingen**: Hiermee past u een door de gebruiker gedefinieerde vormgeving toe op afbeeldingen voor een consistente weergave met behulp van aangepaste voorinstellingen.
+
+   ![Lightroom-voorinstelling](/help/assets/assets/content-automation-lrpresets.png)
+
+   *Afbeelding: Adobe Lightroom-voorinstelling om de afbeeldingskwaliteit voor veel afbeeldingen op consistente wijze te verbeteren.*
+
 * **Knipsel** afbeelding: Gebruikt kunstmatige intelligentie om selectie rond aliente voorwerpen tot stand te brengen en achtergrond met één enkele bevel te verwijderen.
+
+   ![Achtergrond verwijderen en een afbeelding uit een foto knippen](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **Afbeeldingsmasker**: Gebruikt kunstmatige intelligentie om masker rond aliente voorwerpen met één enkele bevel tot stand te brengen.
-* **Photoshop-handelingen**: Hiermee wordt een reeks taken (in Photoshop) toegepast op een bestand of een groep bestanden.
+
+   ![Een afbeelding maskeren met AI](/help/assets/assets/content-automation-mask.png)
+
+* **Photoshop-handelingen**: Hiermee wordt een reeks  [!DNL Adobe Photoshop] taken toegepast op een bestand of een groep bestanden.
+
+   ![Photoshop-acties](/help/assets/assets/content-automation-psactions.png)
+
 * **Vervanging** slim object: Hiermee past u de weergave op schaal aan door afbeeldingen om te wisselen met behoud van alle effecten en aanpassingen die in een PSD-bestand zijn toegepast.
 
-
+   ![Objecten slim vervangen](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Een verwerkingsprofiel gebruiken om uw creatieve middelen bulksgewijs te bewerken {#process-assets}
 
@@ -42,9 +62,9 @@ Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch va
 
 1. Selecteer de tab **[!UICONTROL Creative]**, geef de uitvoermap op en selecteer **[!UICONTROL Add New]** om een creatieve configuratie toe te voegen.
 
-1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer **[!UICONTROL Includes]** en **[!UICONTROL Excludes]** MIME-typelijsten (of invoerelementfilter) en selecteer de vereiste creatieve bewerking.<br/>
+1. Geef **[!UICONTROL Rendition Name]** (of uitvoernaam), **[!UICONTROL Extension]** (of bestandstype), selecteer **[!UICONTROL Quality]** (of uitvoerparameters), selecteer **[!UICONTROL Includes]** en **[!UICONTROL Excludes]** MIME-typelijsten (of invoerelementfilter) en selecteer de gewenste creatieve bewerking.
 
-   ![tabblad Creatief in verwerkingsprofiel](assets/creative-processing-profile.png)
+   ![[!UICONTROL Creative] tab in  [!UICONTROL Processing Profile]](assets/creative-processing-profile.png)
 
 1. Sommige bewerkingen vereisen extra parameters (element). Geef indien nodig waarden op voor deze extra parameters.
 
@@ -52,7 +72,7 @@ Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch va
 
 1. Pas het verwerkingsprofiel toe op een map. Selecteer **[!UICONTROL Asset Processing]** op de pagina **[!UICONTROL Properties]** van een map en selecteer het verwerkingsprofiel dat u wilt toepassen.
 
-Nadat het verwerkingsprofiel is toegepast op een DAM-map, worden naast de standaardverwerking ook de gedefinieerde bewerkingen uitgevoerd door alle elementen die in deze map zijn geüpload of bijgewerkt. De submappen overerven dezelfde profielen als die zijn toegepast op de bovenliggende mappen. Gebruikers kunnen deze overerving overschrijven.
+Nadat u het verwerkingsprofiel op een DAM-map hebt toegepast, worden naast de standaardverwerking ook de gedefinieerde bewerkingen uitgevoerd door alle elementen die in deze map zijn geüpload of bijgewerkt. De submappen overerven dezelfde profielen als die zijn toegepast op de bovenliggende mappen. Gebruikers kunnen deze overerving overschrijven.
 
 Als u de bestaande elementen wilt verwerken, selecteert u de elementen, selecteert u **[!UICONTROL Reprocess]** en selecteert u vervolgens het gewenste verwerkingsprofiel.
 
