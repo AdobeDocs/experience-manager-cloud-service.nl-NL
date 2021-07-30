@@ -10,9 +10,9 @@ feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-waarin, in het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia)
+In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door  `/content/venia/us/en/products/product-page`
 * `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld  `VP09`
@@ -51,14 +51,14 @@ waarin, in het geval van het [Referentiearchief van Venia](https://github.com/ad
 
 Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-### URL-indeling van rubriekpagina {#product-list}
+### Categorie Pagina-URL-indeling {#product-list}
 
 Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of productlijst en ondersteunt u de volgende opties:
 
 * `{{page}}.html/{{url_path}}.html` (standaardwaarde)
 * `{{page}}.html/{{url_key}}.html`
 
-waarin, in het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia)
+In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` wordt vervangen door de  `url_key` eigenschap van de categorie
