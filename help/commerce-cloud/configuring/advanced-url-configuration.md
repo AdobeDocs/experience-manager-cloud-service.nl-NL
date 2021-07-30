@@ -10,9 +10,9 @@ feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
+source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgema
 
 ## Aangepaste URL-indelingen {#custom-url-format}
 
-Om een formaat van douaneURL te verstrekken kan een project [`UrlFormat` interface ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) uitvoeren en de implementatie registreren als dienst OSGI, die of als categoriepagina of het formaat van de productpagina url gebruikt. Het `UrlFormat#PROP_USE_AS` de dienstbezit wijst op met van de gevormde, vooraf bepaalde formaten om te vervangen:
+Om een formaat van douaneURL te verstrekken kan een project [`UrlFormat` interface ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) uitvoeren en de implementatie als dienst registreren OSGI, gebruikend het of als categorie pagina of het formaat van de productpagina url. Het `UrlFormat#PROP_USE_AS` de dienstbezit wijst op, welke van de gevormde vooraf bepaalde formaten te vervangen:
 
 * `useAs=productPageUrlFormat`, vervangt de geconfigureerde URL-indeling van de productpagina
 * `useAs=categoryPageUrlFormat`, vervangt de geconfigureerde URL-indeling voor de categoriepagina
