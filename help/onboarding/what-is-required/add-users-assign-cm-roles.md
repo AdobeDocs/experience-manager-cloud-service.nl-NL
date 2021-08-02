@@ -1,14 +1,13 @@
 ---
 title: 'Systeembeheertaken '
 description: Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en deze als systeembeheerder kunt toewijzen aan de rollen van Cloud Manager
-translation-type: tm+mt
-source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
+exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
-
 
 # Systeembeheertaken {#add-users-assign}
 
@@ -18,7 +17,7 @@ Een systeembeheerder voert de volgende organisatorische taken uit:
 * Gebruikers toevoegen
 * Gebruikers toewijzen aan rollen en machtigingen in Cloud Manager
 
-## Gebruikers {#add-users} toevoegen
+## Gebruikers toevoegen {#add-users}
 
 >[!NOTE]
 >U moet een systeembeheerder zijn om een gebruiker toe te voegen.
@@ -27,7 +26,7 @@ Een systeembeheerder voert de volgende organisatorische taken uit:
 
 1. Klik op de **knop Toegang beheren**, rechtsboven op de bestemmingspagina van Cloud Manager, om de Admin Console op een nieuw tabblad te openen.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    Vanuit de **Admin Console** kunt u gebruikers toevoegen aan Cloud Manager en deze toewijzen aan Rol(en), ofwel Productprofielen in Admin Console.
 
@@ -47,4 +46,3 @@ Een systeembeheerder voert de volgende organisatorische taken uit:
    >Raadpleeg [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) voor meer informatie over rollen en machtigingen die worden aangeboden in Cloud Manager.
 
    Nu hebt u gebruikers aan Adobe Experience Manager toegevoegd als context van het Product van de Cloud Service en bent opstelling met de juiste Rollen of Profielen van het Product.
-
