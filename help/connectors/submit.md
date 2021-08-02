@@ -2,9 +2,9 @@
 title: Een AEM-connector verzenden
 description: Een AEM-connector verzenden
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '297'
 ht-degree: 11%
 
 ---
@@ -21,7 +21,7 @@ In vorige AEM oplossingen, werd de Manager van het Pakket gebruikt om schakelaar
 Er zijn verschillende opties voor het opnemen van pakketten in een project:
 
 1. Openbare opslagplaats van de partner - een partner zou het inhoudspakket in een openbaar toegankelijke beheerde opslagplaats ontvangen
-1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie met een wachtwoord beveiligde opslagruimten voor instructies.
+1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [Met wachtwoord beveiligde gegevensopslagruimten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) voor instructies.
 1. Gebundelde vervorming - in dit geval is het aansluitingspakket lokaal opgenomen in het door de klant gemaakte project.
 
 Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.xml worden van verwijzingen voorzien, zoals die door de verkoper worden verstrekt.
