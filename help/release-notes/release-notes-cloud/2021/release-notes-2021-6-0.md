@@ -1,7 +1,7 @@
 ---
 title: Release-aantekeningen voor 2021.6.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: Release-aantekeningen voor 2021.6.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-source-git-commit: dcc598b565dfeeb7c5f62671edc8b256b60d9ec4
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 1%
@@ -64,7 +64,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 * Om verwarring te voorkomen, zijn de segmentrijen van de AEM Publish en Publish Dispatcher op de pagina van de Details van het Milieu geconsolideerd.
 
-   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Raadpleeg [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer informatie.
 
