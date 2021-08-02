@@ -4,9 +4,9 @@ description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmer
 feature: Middelenbeheer, uitvoeringen
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2588'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -184,13 +184,13 @@ U start het verzoek om Smart Imaging te gebruiken; deze wordt niet automatisch i
 
 Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een Dynamic Media-bedrijfsaccount. Als u een of beide van deze verbeteringen wilt inschakelen (inschakelen), maakt u een ondersteuningscase zoals hieronder wordt beschreven.
 
-Het releaseschema voor Smart Imaging DPR en netwerkoptimalisatie is als volgt:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| Regio | Doeldatum |
+| Region | Target date |
 |---|---|
-| Noord-Amerika | Live |
-| Europa, Midden-Oosten, Afrika | 13 augustus 2021 |
-| Azië-Stille Oceaan | 22 juli 2021 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
@@ -281,4 +281,4 @@ Hoe werkt Smart Imaging DPR-optimalisatie met Adobe Experience Manager Sites-com
 * Als Dynamic Media Foundation Component standaard is geconfigureerd voor DPR-optimalisatie, wordt `dpr=off` altijd toegevoegd aan Dynamic Media Foundation Component-afbeeldingen om te grote afbeeldingen te voorkomen door DPR-optimalisatie voor Smart Imaging op de server. Zelfs als de klant DPR-optimalisatie in de DM Foundation Component uitschakelt, wordt de functie Smart Imaging DPR aan de serverzijde niet ingeschakeld. Samengevat, in de Component van de Stichting DM, komt de optimalisering DPR van kracht die op het niveau van de Component van de Stichting wordt gebaseerd DM slechts het plaatsen.
 * Elke DPR-optimalisatie aan de viewerzijde werkt in combinatie met DPR-optimalisatie voor Smart Imaging op de server en resulteert niet in te grote afbeeldingen. Met andere woorden, wanneer DPR door de viewer wordt afgehandeld, zoals de hoofdweergave alleen in een viewer met zoomfunctie, worden de DPR-waarden voor Smart Imaging op de server niet geactiveerd. Op dezelfde manier wordt de DPR-waarde voor Smart Imaging op de server geactiveerd wanneer viewerelementen, zoals stalen en miniaturen, geen DPR-verwerking hebben.
 
-Zie ook [Bij het werken met afbeeldingen](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). —>
+Zie ook [Bij het werken met afbeeldingen](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
