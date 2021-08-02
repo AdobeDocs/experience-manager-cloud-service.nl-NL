@@ -1,12 +1,12 @@
 ---
-title: Video
+title: Video in Dynamic Media
 description: Leer hoe u met video werkt in Dynamic Media.
 feature: Videoprofielen
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '9083'
+source-wordcount: '9123'
 ht-degree: 4%
 
 ---
@@ -40,8 +40,10 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * [Pas een videoprofiel toe op mappen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Meer informatie over [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
-   * Upload uw primaire bronvideo&#39;s naar de mappen. U kunt videobestanden uploaden van maximaal 15 GB elk. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
+   * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
+      * Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+      * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Upload uw video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)&#39;s.
       * Meer informatie over [Ondersteunde invoerbestandsindelingen](/help/assets/file-format-support.md).
    * Controleer hoe [video het coderen](#monitoring-video-encoding-and-youtube-publishing-progress) of van de activa of werkschemamening vordert.
@@ -289,6 +291,9 @@ Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
+* Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+* U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
+
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
 
 | Grootte | Hoogte-breedteverhouding | Minimale bitsnelheid |
@@ -350,7 +355,7 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 | Snelheid (Kbps) | Verbindingstype |
 |--- |--- |
 | 256 | Inbelverbinding. |
-| 600 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
+| 800 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
 | 2000 | Standaardbreedbandverbinding voor desktops. Voor deze verbinding, richt een gegevenstarief in de waaier 800-2000 Kbps, met de meeste doelstellingen gemiddeld 1200-1500 Kbps. |
 | 5000 | Typische breedbandverbinding. Codering in dit bovenste bereik wordt niet aanbevolen, omdat de video bij deze snelheid niet beschikbaar is voor de meeste consumenten. |
 
@@ -403,7 +408,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
 | Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
