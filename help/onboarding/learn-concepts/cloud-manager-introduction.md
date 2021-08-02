@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot Cloud Manager {#intro-cloud-manager}
 
@@ -26,10 +26,10 @@ Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die logisc
 Een gebruiker kan een **Sandbox** of een **Production** programma tot stand brengen.
 
 * Een *Productieprogramma* wordt gecreeerd om levend verkeer op het aangewezen tijdstip in de toekomst toe te laten.
-Raadpleeg [Inleiding tot productieprogramma&#39;s](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie.
+Raadpleeg Inleiding tot productieprogramma&#39;s voor meer informatie.
 
 * Een *Sandbox-programma* wordt doorgaans gemaakt voor trainingsdoeleinden, het uitvoeren van demo&#39;s, activering, concepttest of documentatie. Het is niet de bedoeling om levend verkeer te vervoeren en zal beperkingen hebben die een productieprogramma niet zal hebben. Het zal Plaatsen en Activa omvatten en zal met een tak van het Git worden geleverd die steekproefcode, een Dev milieu, en een niet productiepijplijn omvat.
-Raadpleeg [Inleiding tot Sandbox-programma&#39;s](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie.
+Raadpleeg Inleiding tot Sandbox-programma&#39;s voor meer informatie.
 
 ## Cloud Manager-omgevingen {#cloud-manager-environments}
 
