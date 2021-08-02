@@ -1,16 +1,15 @@
 ---
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
-translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 6%
 
 ---
 
-
-# Naar Cloudbeheer navigeren {#cloud-manager}
+# Navigeren naar Cloud Manager {#cloud-manager}
 
 Cloud Manager is een belangrijk onderdeel van AEM als Cloud Service. Het stelt organisaties in staat zelf Experience Manager te beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid. Gebruikend het gebruikersinterface, kunt u de pijpleiding vormen en schoppen CI/CD.
 
@@ -26,13 +25,13 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
    >U kunt ook rechtstreeks navigeren naar de aanmeldingspagina van Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] en de staat van de toepassing worden toegewezen, zult u verschillende schermen zien terwijl het gebruiken van [!UICONTROL Cloud Manager] UI. Raadpleeg de onderstaande sectie [Landingspagina van Cloud Manager](#cloud-manager-landing) voor meer informatie.
 
 1. Selecteer **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk. Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
-## Openingspagina van wolkenbeheer {#cloud-manager-landing}
+## Openingspagina van Cloud Manager {#cloud-manager-landing}
 
 Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
 
@@ -44,24 +43,23 @@ Een van de drie opties wordt hieronder beschreven:
 * **Als er geen programma&#39;s bestaan in Cloud Manager**
 
    Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken, zoals in de onderstaande afbeelding wordt getoond.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
 * **Wanneer er al programma&#39;s bestaan in Cloud Manager**
 
    Als er al programma&#39;s bestaan in uw organisatie, wordt u op de bestemmingspagina opgedragen een ander programma toe te voegen en worden ook alle bestaande programma&#39;s weergegeven, zoals in de onderstaande afbeelding wordt getoond.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
 * **Wanneer een Programma bestaat en de gebruiker de Beheerder van het Systeem is**
 
    Als een of meer programma&#39;s al in uw organisatie aanwezig zijn en u een systeembeheerder bent, wordt op de landingspagina de knop **Toegang beheren** weergegeven, samen met de optie **Programma toevoegen**, zoals in de onderstaande afbeelding wordt getoond.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om [Add tovenaar van het Programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access) te lanceren.
 
 Ga voor meer informatie over het toevoegen van een programma in Cloud Manager naar:
 
-* [Een productieprogramma maken](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-
-* [Sandboxprogramma&#39;s maken](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* Een productieprogramma maken
+* Sandboxprogramma&#39;s maken
