@@ -1,14 +1,13 @@
 ---
 title: Een AEM-connector verzenden
 description: Een AEM-connector verzenden
-translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
+source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 11%
 
 ---
-
 
 Een AEM-connector verzenden
 ===========================
@@ -22,7 +21,7 @@ In vorige AEM oplossingen, werd de Manager van het Pakket gebruikt om schakelaar
 Er zijn verschillende opties voor het opnemen van pakketten in een project:
 
 1. Openbare opslagplaats van de partner - een partner zou het inhoudspakket in een openbaar toegankelijke beheerde opslagplaats ontvangen
-1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [Met een wachtwoord beveiligde opslagplaatsen op](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) voor instructies.
+1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie met een wachtwoord beveiligde opslagruimten voor instructies.
 1. Gebundelde vervorming - in dit geval is het aansluitingspakket lokaal opgenomen in het door de klant gemaakte project.
 
 Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.xml worden van verwijzingen voorzien, zoals die door de verkoper worden verstrekt.
@@ -38,7 +37,7 @@ Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.
 </dependency>
 ```
 
-Als de ISV-partner de aansluiting host op een voor internet toegankelijke gegevensopslagruimte (zoals Cloud Manager toegankelijk), moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven) vermelde connectorafhankelijkheden tijdens de build (zowel lokaal als door Cloud Manager) kunnen worden opgelost.
+Als de ISV-partner de aansluiting host op een voor internet toegankelijke opslagplaats (zoals Cloud Manager toegankelijk), moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven vermelde) connectorafhankelijkheden kunnen worden opgelost tijdens het maken (zowel lokaal als door Cloud Manager).
 
 ```xml
 <repository>
