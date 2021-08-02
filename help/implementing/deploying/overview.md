@@ -3,7 +3,7 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Implementeren
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
@@ -25,7 +25,7 @@ In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen mo
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 -->
 
-## Klantreleases {#customer-releases}
+## Klantenreleases {#customer-releases}
 
 ### Codering op basis van de juiste AEM versie {#coding-against-the-right-aem-version}
 
@@ -59,7 +59,7 @@ Inhoudspakketten die voor AEM als Cloud Service-toepassingen zijn geschreven, mo
 
 In de rest van deze sectie worden de samenstelling en de gevolgen van onveranderbare en veranderbare pakketten beschreven.
 
-### Immuable Content Packages {#immutabe-content-packages}
+### Onveranderbare inhoudspakketten {#immutabe-content-packages}
 
 Alle inhoud en code die in de onveranderlijke gegevensopslagplaats voortkomen, moeten in git worden gecontroleerd en door de Manager van de Wolk worden opgesteld. Met andere woorden, in tegenstelling tot huidige AEM oplossingen, wordt de code nooit direct opgesteld aan een lopende AEM instantie. Dit zorgt ervoor dat de code die voor een bepaalde release in een Cloud-omgeving wordt uitgevoerd, identiek is, waardoor het risico van onbedoelde codevariatie bij de productie wordt uitgesloten. Als voorbeeld, zou de configuratie OSGI aan broncontrole eerder dan beheerd bij runtime via de de configuratiemanager van de AEM Webconsole moeten worden geëngageerd.
 
@@ -78,13 +78,13 @@ Zoals hierboven vermeld, zou de configuratie OSGI aan broncontrole eerder dan do
 
 Lees meer over configuratie OSGI bij [het Vormen OSGi voor AEM als Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
-## Tabelinhoud {#mutable-content}
+## Mabelinhoud {#mutable-content}
 
 In sommige gevallen is het handig om wijzigingen in de inhoud voor te bereiden in bronbeheer, zodat dit kan worden geïmplementeerd door Cloud Manager wanneer een omgeving is bijgewerkt. Het kan bijvoorbeeld redelijk zijn om bepaalde basismapstructuren of regelwijzigingen in bewerkbare sjablonen toe te staan om beleid in te schakelen voor componenten die door de implementatie van de toepassing zijn bijgewerkt.
 
 Er zijn twee strategieën om de inhoud te beschrijven die door Cloud Manager aan de veranderlijke bewaarplaats, veranderbare inhoudspakketten zal worden opgesteld en verklaringen opnieuw richt.
 
-### Mutable Content Packages {#mutable-content-packages}
+### Mabelinhoudspakketten {#mutable-content-packages}
 
 De inhoud zoals de hiërarchieën van de omslagweg, de dienstgebruikers, en toegangscontroles (ACLs) worden typisch toegewijd in een bepaald archetype-Gebaseerd AEM project. De technieken omvatten het uitvoeren van AEM of het schrijven direct als XML. Tijdens het ontwikkelings- en implementatieproces verpakt Cloud Manager het resulterende veranderbare inhoudspakket. De veranderlijke inhoud wordt geïnstalleerd bij 3 verschillende tijden tijdens de opstellen fase in de pijpleiding:
 
@@ -165,7 +165,7 @@ Meer informatie over het opnieuw aanwijzen vindt u in de [documentatie over de v
 
 above appears to be internal, to confirm with Brian -->
 
-### Pakketbeheer &quot;one offs&quot; voor Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
+### Package Manager &quot;one offs&quot; voor Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
@@ -181,7 +181,7 @@ Eventuele inhoudspakketten die via Cloud Manager zijn geïnstalleerd (zowel vera
 
 ### Inclusief pakketten van derden {#including-third-party}
 
-Het is gemeenschappelijk voor klanten om pre-gebouwde pakketten van derdebronnen zoals softwareverkopers zoals Adobe vertaalpartners te omvatten. De aanbeveling is om deze pakketten in een verre bewaarplaats te ontvangen en hen in `pom.xml` van verwijzingen te voorzien. Dit is mogelijk voor openbare gegevensbanken en ook voor persoonlijke gegevensbanken met wachtwoordbeveiliging, zoals beschreven in [met wachtwoord beveiligde gegevensopslagruimten](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+Het is gemeenschappelijk voor klanten om pre-gebouwde pakketten van derdebronnen zoals softwareverkopers zoals Adobe vertaalpartners te omvatten. De aanbeveling is om deze pakketten in een verre bewaarplaats te ontvangen en hen in `pom.xml` van verwijzingen te voorzien. Dit is mogelijk voor openbare gegevensbanken en ook voor persoonlijke gegevensbanken met wachtwoordbeveiliging, zoals beschreven in [met wachtwoord beveiligde gegevensopslagruimten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kunnen klanten in een lokale, op bestandssysteem gebaseerde Maven opslagplaats plaatsen, die aan SCM als deel van het project wordt geëngageerd en door wat van het hangt van het van verwijzingen voorzien. De opslagplaats zou worden gedeclareerd in de onderstaande projectpomp:
 
@@ -233,7 +233,7 @@ Het volgende Maven POM XML-fragment toont hoe pakketten van derden in het &quot;
 ...
 ```
 
-## Hoe de Rolling Plaatsingen {#how-rolling-deployments-work} werken
+## Hoe de Rolling Inzet werkt {#how-rolling-deployments-work}
 
 Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen plaatsingsstrategie om de onderbreking van de auteurcluster in de juiste omstandigheden te elimineren. De algemene volgorde van gebeurtenissen is zoals hieronder beschreven, waarbij **Blue** de oude versie van de klantcode is en **Green** de nieuwe versie. Met zowel Blauw als Groen wordt dezelfde versie van AEM code uitgevoerd.
 
