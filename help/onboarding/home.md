@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 17%
 
 ---
@@ -38,7 +38,7 @@ Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
 1. Een systeembeheerder kan [Gebruikers toegang verlenen tot een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden.
 
-**[Je Adobe ID ophalen](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Je Adobe ID ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
 U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen.
 
@@ -56,14 +56,14 @@ De volgende documentatiepagina&#39;s bevatten informatie over elementaire organi
 
 **[Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Nu u als gebruiker bent toegevoegd en aan een rol van Cloud Manager bent toegewezen, kunt u Cloud Manager openen om aan de slag te gaan met AEM. Gebruikers zijn gereed om verschillende taken uit te voeren, zoals [een programma maken](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [een omgeving toevoegen](/help/implementing/cloud-manager/manage-environments.md), [toegang krijgen tot Git](/help/implementing/cloud-manager/accessing-git.md), [een pijpleiding configureren](/help/implementing/cloud-manager/configure-pipeline.md) en [code implementeren](/help/implementing/cloud-manager/deploy-code.md).
+Nu u als gebruiker bent toegevoegd en aan een rol van Cloud Manager bent toegewezen, kunt u Cloud Manager openen om aan de slag te gaan met AEM. Gebruikers zijn klaar om verschillende taken uit te voeren, zoals het maken van een programma, het toevoegen van een omgeving, het [openen van Git](/help/implementing/cloud-manager/accessing-git.md), het [configureren van een pijplijn](/help/implementing/cloud-manager/configure-pipeline.md) en het [implementeren van code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager is een belangrijk onderdeel van AEM als Cloud Service. Zo kunnen organisaties [!DNL Experience Manager] zelf beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid. Gebruikend het gebruikersinterface, kunt u de pijpleiding vormen en schoppen CI/CD.
 
 **[Gebruikerstoegang verlenen aan een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 Volg deze sectie om te leren hoe een Beheerder van het Systeem of een gebruiker die een milieu creeerde andere gebruikers toegang tot een AEM instantie kan verlenen.
 
-## [!DNL Experience Manager as a Cloud Service] Hulplijnen  {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] Hulplijnen {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
@@ -81,7 +81,7 @@ Volg deze sectie om te leren hoe een Beheerder van het Systeem of een gebruiker 
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer over de achterste-eindverrichtingen van [!DNL Experience Manager as a Cloud Service], zoals het indexeren en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op [!DNL Experience Manager as a Cloud Service]. |
 
-## Overige [!DNL Experience Manager] Bronnen {#other-resources}
+## Overige [!DNL Experience Manager]-bronnen {#other-resources}
 
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
