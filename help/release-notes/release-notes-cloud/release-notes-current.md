@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d977ff765accb650daff4c35f2668489454305cd
+source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De volgende release (2021.8.0) vindt plaats op 26 augustus 2021.
 
 Bekijk de video [Juli 2021 van de Versie Overzicht](https://video.tv.adobe.com/v/335580) voor een samenvatting van de toegevoegde eigenschappen.
 
-## Experience Manager Foundation als Cloud Service {#foundation}
+## [!DNL Experience Manager] als  [!DNL Cloud Service] stichting {#foundation}
 
 ### Wat is er nieuw? {#what-is-new-foundation}
 
