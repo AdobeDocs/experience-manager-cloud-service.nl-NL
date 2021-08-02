@@ -1,7 +1,7 @@
 ---
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -30,10 +30,10 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
 1. Navigeer naar de startpagina [Adobe Experience Cloud](https://experience.adobe.com).
 
 1. Selecteer **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk. Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Selecteer het programma Schermen als Cloud Service en klik op het pictogram, zoals hieronder getoond om de pagina **Overzicht** van de Manager van de Wolk voor dat specifieke programma te openen.
 
