@@ -1,14 +1,13 @@
 ---
 title: 'Gebruikerstoegang verlenen aan een AEM instantie '
 description: Volg deze pagina om te leren hoe een Beheerder van het Systeem gebruikerstoegang tot een AEM Instantie verleent
-translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikerstoegang verlenen aan een AEM instantie {#accessing-aem-instance}
 
@@ -19,18 +18,18 @@ Als Beheerder van het Systeem, volg de stappen hieronder om gebruikerstoegang to
    >[!NOTE]
    >U moet een Beheerder van het Systeem of de gebruiker zijn die het milieu creeerde om een gebruiker in de Admin Console kunnen toevoegen. Alleen rollen van bedrijfseigenaar of implementatiebeheerder hebben machtigingen om een omgeving te maken. Raadpleeg [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) voor meer informatie over rollen en bijbehorende machtigingen. Raadpleeg bovendien [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over omgevingen.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Of
 
    Selecteer **Beheren** —> **Toegang beheren** op de pagina **Omgevingen**.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
 1. Nadat u op **Toegang beheren** hebt geklikt, navigeert een nieuw tabblad u naar **Admin Console** vanwaar u toegang hebt tot de auteurinstantie van de omgeving.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
 1. Selecteer het tabblad **Gebruikers** en klik op **Gebruiker toevoegen**.
 
@@ -57,4 +56,3 @@ Als Beheerder van het Systeem, volg de stappen hieronder om gebruikerstoegang to
 
       >[!NOTE]
       >Voor sommige organisaties die vóór januari 2020 als Cloud Service toegang tot AEM hebben gekregen, zullen deze worden doorgestuurd naar de Adobe Admin Console en zal het productprofiel van het product en het milieu moeten worden geselecteerd.
-
