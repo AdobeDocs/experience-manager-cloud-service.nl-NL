@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor 2020.7.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.7.0.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
@@ -19,7 +19,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 ## Adobe Experience Manager Sites als Cloud Service {#cloud-services-sites}
 
-### Wat is er nieuw?{#what-is-new-sites}
+### Wat is er nieuw? {#what-is-new-sites}
 
 [!DNL Experience Manager] als connectors voor Cloud Servicen voor  [!DNL Adobe Target] en  [!DNL Adobe Analytics] worden op de volgende manieren verbeterd:
 
@@ -43,7 +43,7 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 * Workflowmodellen die zijn gemaakt door klanten die zijn geïmplementeerd op `/conf/global` in het Git-project dat is gekoppeld aan de omgeving in [!DNL Cloud Manager], worden automatisch geïmplementeerd op `/var` en zijn dus beschikbaar in [!DNL Experience Manager]. De workflowmodellen van het product onder `/libs` die door de klant zijn gewijzigd, worden niet automatisch geïmplementeerd op `/var`.
 
-### Gloed gecorrigeerd {#assets-bugs-fixed}
+### Buizen gecorrigeerd {#assets-bugs-fixed}
 
 * De wizard Element verplaatsen wordt niet naar behoren geladen voor de elementen die in Verzamelingen zijn opgenomen. (CQ-4296756)
 * De waarden van `dam:size` en `dam:sha1` worden uitgesloten van XMP terugschrijven. (CQ-4237355)
@@ -51,15 +51,15 @@ De releasedatum voor [!DNL Experience Manager] als Cloud Service 2020.7.0 is 30 
 
 ## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
 
-### Wat is er nieuw?{#what-is-new-commerce}
+### Wat is er nieuw? {#what-is-new-commerce}
 
 AEM Commerce is nu beschikbaar op Cloud Service.
 
 Raadpleeg [Aan de slag met AEM Handel als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) voor meer informatie.
 
-## Kerncomponenten {#core-components}
+## Kernonderdelen {#core-components}
 
-### Wat is er nieuw?{#what-is-new-core-components}
+### Wat is er nieuw? {#what-is-new-core-components}
 
 Release 2.11.0 van de [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
@@ -78,7 +78,7 @@ Raadpleeg [AMP Support for the Core Components](https://experienceleague.adobe.c
 
 De datum van de Versie voor [!UICONTROL Cloud Manager] Versie 2020.7.0 is 09 Juli, 2020.
 
-### Wat is er nieuw?{#what-is-new-cloud-manager}
+### Wat is er nieuw? {#what-is-new-cloud-manager}
 
 * De pagina met omgevingen is opnieuw ontworpen.
 
@@ -88,12 +88,12 @@ De datum van de Versie voor [!UICONTROL Cloud Manager] Versie 2020.7.0 is 09 Jul
 
 * De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
 
-   Raadpleeg [Variabelen pijpleiding](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) voor meer informatie.
+   Zie de Variabelen van de Pijpleiding voor meer details.
 
 * Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
 
 * De buildcontainer van Cloud Manager ondersteunt nu zowel Java 8 als Java 11.
-Raadpleeg [Java 11-ondersteuning gebruiken](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) voor meer informatie.
+Raadpleeg Ondersteuning voor Java 11 gebruiken voor meer informatie.
 
 ### Opgeloste problemen {#bug-fixes-cm}
 
@@ -119,7 +119,7 @@ Raadpleeg [Java 11-ondersteuning gebruiken](/help/onboarding/getting-access-to-a
 
 ## Adobe Experience Manager als Cloud Service Foundation {#cloud-foundation}
 
-### Wat is er nieuw?{#what-is-new-foundations}
+### Wat is er nieuw? {#what-is-new-foundations}
 
 * [Logs kan aan Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs) worden doorgestuurd, waardoor organisaties hun Splunk-investering kunnen benutten.
 
