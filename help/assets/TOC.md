@@ -4,10 +4,10 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 60%
+source-wordcount: '484'
+ht-degree: 40%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 60%
    + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
 +  Dynamic Media {#dynamicmedia}
-   + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media/dynamic-media-newsletter.md)
+   + [Dynamic Media-nieuwsarchief per Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media instellen](dynamic-media/administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media/dynamic-media.md)
    + [Dynamic Media configureren](dynamic-media/config-dm.md)
@@ -92,35 +92,35 @@ ht-degree: 60%
    + [Aanbevolen procedures voor bestandsbeheer](dynamic-media/best-practices-for-file-management.md)
    + [Afbeeldingsprofielen](dynamic-media/image-profiles.md)
    + [Videoprofielen](dynamic-media/video-profiles.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding toepassen](dynamic-media/image-presets.md)
-   + [Voorinstellingen voor Dynamic Media-viewer beheren](dynamic-media/managing-viewer-presets.md)
-   + [Voorinstellingen voor Dynamic Media-viewer toepassen](dynamic-media/viewer-presets.md)
+   + [Voorinstellingen Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
+   + [Voorinstellingen Dynamic Media-afbeelding toepassen](dynamic-media/image-presets.md)
+   + [Voorinstellingen Dynamic Media Viewer beheren](dynamic-media/managing-viewer-presets.md)
+   + [Voorinstellingen Dynamic Media Viewer toepassen](dynamic-media/viewer-presets.md)
    + [Voorinstellingen batchset](dynamic-media/batch-set-presets-dm.md)
    + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [De CDN-cache ongeldig maken via Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
-   + [Dynamic Media-assets leveren](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Hotlinkbeveiliging in Dynamic Media activeren](dynamic-media/hotlink-protection.md)
+   + [Dynamic Media-middelen leveren](dynamic-media/delivering-dynamic-media-assets.md)
+   + [Hotlink-beveiliging activeren in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-ondersteuning](dynamic-media/assets-3d.md)
    + [Image Sets](dynamic-media/image-sets.md)
    + [Panoramische afbeeldingen](dynamic-media/panoramic-images.md)
    + [Mixed Media Sets](dynamic-media/mixed-media-sets.md)
    + [Spin Sets](dynamic-media/spin-sets.md)
-   + [Video](dynamic-media/video.md)
+   + [Video in Dynamic Media](dynamic-media/video.md)
    + [Carousel-banners](dynamic-media/carousel-banners.md)
    + [Interactieve afbeeldingen](dynamic-media/interactive-images.md)
    + [Interactieve video&#39;s](dynamic-media/interactive-videos.md)
    + [360 VR-video](dynamic-media/360-video.md)
-   + [Dynamic Media-viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](dynamic-media/tags.md)
-   + [QuickView gebruiken om aangepaste pop-ups te maken](dynamic-media/custom-pop-ups.md)
+   + [Dynamic Media Viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](dynamic-media/tags.md)
+   + [Aangepaste pop-ups maken met Snelle weergave](dynamic-media/custom-pop-ups.md)
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](dynamic-media/responsive-site.md)
-   + [Dynamic Media-assets vooraf bekijken](dynamic-media/previewing-assets.md)
-   + [Dynamic Media-assets aan pagina&#39;s toevoegen](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Viewer voor dynamische video of afbeelding insluiten op een webpagina](dynamic-media/embed-code.md)
-   + [URL&#39;s koppelen aan uw webapplicatie](dynamic-media/linking-urls-to-yourwebapplication.md)
-   + [Regelsets gebruiken om URL&#39;s te transformeren](dynamic-media/using-rulesets-to-transform-urls.md)
-   + [Dynamic Media-assets publiceren](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [Dynamic Media-middelen voorvertonen](dynamic-media/previewing-assets.md)
+   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   + [De dynamische video- of afbeeldingsviewer insluiten op een webpagina](dynamic-media/embed-code.md)
+   + [URL&#39;s koppelen aan uw webtoepassing](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [Regels gebruiken om URL&#39;s te transformeren](dynamic-media/using-rulesets-to-transform-urls.md)
+   + [Dynamic Media-elementen publiceren](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Werken met Selectieve publicatie in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Werken met kiezers](dynamic-media/working-with-selectors.md)
    + [Veelgestelde vragen over HTTP2-levering van content](dynamic-media/http2faq.md)
