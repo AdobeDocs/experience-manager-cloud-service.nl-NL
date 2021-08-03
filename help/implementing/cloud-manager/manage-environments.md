@@ -2,9 +2,9 @@
 title: Omgevingen beheren - Cloud Service
 description: Omgevingen beheren - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -74,9 +74,6 @@ De **Omgevingen** kaart op de overzichtspagina maakt een lijst van maximaal drie
    ![](assets/environment-view-2.png)
 
 1. Selecteer een van de omgevingen in de lijst om de omgevingsdetails weer te geven.
-
-   >[!NOTE]
-   >De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gesteld wanneer hun programma is ingeschakeld voor de Voorvertoningsservice. Zie de sectie [Toegang tot voorvertoningsservice](#access-preview-service) voor meer informatie.
 
    ![](assets/environ-preview1.png)
 
