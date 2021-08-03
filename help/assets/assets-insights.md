@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -67,8 +67,8 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
 
 U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
 
-1. Navigeer in de interface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
-1. Klik op de optie Indeling op de werkbalk en kies **[!UICONTROL Insights View]**.
+1. Navigeer in de gebruikersinterface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
+1. Klik op de optie **[!UICONTROL Layout]** op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Klik op de **[!UICONTROL Insights Configuration]**-kaart.
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
@@ -117,6 +117,29 @@ Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Pagina
 
 1. Klik op de **[!UICONTROL Navigation]**-pagina op de **[!UICONTROL Insights Page Tracker]**-kaart.
 1. Klik **[!UICONTROL Download]** om de code van de paginacontracker te downloaden.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+In het volgende voorbeeldcodefragment wordt de code van Paginanummer weergegeven die in een voorbeeldwebpagina is opgenomen:
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
