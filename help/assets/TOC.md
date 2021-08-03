@@ -4,9 +4,9 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '490'
 ht-degree: 40%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 40%
    + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
+   + [FPO-uitvoeringen genereren voor Adobe InDesign](configure-fpo-renditions.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
    + [XMP-metadata](xmp-metadata.md)
