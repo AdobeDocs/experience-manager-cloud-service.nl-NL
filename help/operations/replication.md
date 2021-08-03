@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Meer informatie over Publicatie beheren vindt u in de [documentatie van Grondbeg
 
 >[!NOTE]
 >
->Deze benadering moet als afgekeurd worden beschouwd, aangezien zij geen status aanhoudt en minder schaalbaar is dan andere benaderingen. Aanbevolen wordt in plaats daarvan publicatiemethoden te gebruiken
+>Deze benadering moet als afgekeurd worden beschouwd en zal op of na 30 september 2021 worden verwijderd, aangezien zij niet langer een status heeft en minder schaalbaar is dan andere benaderingen. Aanbevolen wordt in plaats daarvan publicatiemethoden te gebruiken
 
 Een boomactivering uitvoeren:
 
