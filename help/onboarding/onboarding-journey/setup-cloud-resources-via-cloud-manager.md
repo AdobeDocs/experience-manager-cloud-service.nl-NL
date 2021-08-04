@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1383'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Ga als volgt te werk om naar Cloud Manager te navigeren:
 1. U gaat naar de pagina **Programma&#39;s en producten** van Cloud Manager.
 
    >[!IMPORTANT]
-   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina als bladwijzer voor de toekomst en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
 
 Daarnaast kunt u vanaf de startpagina van Adobe Experience Cloud naar de pagina **Programma&#39;s en producten** van Cloud Manager navigeren. Voer de onderstaande stappen uit:
 
@@ -91,7 +91,6 @@ Daarnaast kunt u vanaf de startpagina van Adobe Experience Cloud naar de pagina 
       Als een of meer programma&#39;s al in uw organisatie aanwezig zijn en u een systeembeheerder bent, wordt op de landingspagina de knop **Toegang beheren** weergegeven, samen met de optie **Programma toevoegen**, zoals in de onderstaande afbeelding wordt getoond.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Gebruikersrollen controleren {#verify-user-roles}
