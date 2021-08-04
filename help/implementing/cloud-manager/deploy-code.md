@@ -2,7 +2,7 @@
 title: Uw code implementeren - Cloud Services
 description: Uw code implementeren - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Uw code implementeren {#deploy-your-code}
 
-## Code implementeren met Cloud Manager in AEM als een Cloud Service {#deploying-code-with-cloud-manager}
+## Code implementeren met Cloud Manager in AEM als Cloud Service {#deploying-code-with-cloud-manager}
 
 Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en testomgeving), kunt u uw code implementeren.
 
@@ -41,7 +41,7 @@ Nadat u de productiepijpleiding hebt geconfigureerd (opslagruimte, omgeving en t
    De **Fase-implementatie** omvat de volgende stappen:
 
    * Validatie: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld, dat de gevormde tak bestaat, zijn de milieu&#39;s beschikbaar.
-   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
+   * Testen van build en eenheid: Deze stap stelt een containerized bouwstijlproces in werking. Zie [Build Environment Details](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
    * Codescannen: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [Codekwaliteitstests](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
    * Afbeeldingen samenstellen: Deze stap bevat een logbestand van het proces dat wordt gebruikt om afbeeldingen samen te stellen. Dit proces is de oorzaak van het omzetten van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van de Dokker en configuratie Kubernetes worden geproduceerd.
    * Distribueren naar werkgebied
@@ -72,7 +72,7 @@ Raadpleeg [Inzicht in de resultaten van Experience Audit](/help/implementing/clo
 
 Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderbreking te verzekeren. Verwijs naar [Hoe het Rollen de Werk van Plaatsingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) om meer te leren.
 
-### Implementatie in productiefase {#deployment-production-phase}
+### Implementatie naar productiefase {#deployment-production-phase}
 
 Het proces voor het opstellen aan productietopologieën verschilt lichtjes om effect aan AEM bezoekers van de Plaats te minimaliseren.
 
