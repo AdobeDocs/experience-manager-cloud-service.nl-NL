@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
+source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -44,11 +44,15 @@ Voordat u deze sectie gaat lezen, moet u rekening houden met het volgende:
    >[!NOTE]
    >Met het oog op het instappen, adviseren wij dat u aanvankelijk gebruikers toevoegt die aan de directe taken, zoals beheerders, ontwikkelaars en inhoudsauteurs zullen deelnemen. U kunt de rest van het instapsysteem voortzetten zonder alle gebruikers toe te voegen. Nadat u klaar bent met het instappen, kunt u aan een groter aantal gebruikers later schrapen.
 
-Voordat u de stappen controleert waarmee u teamleden toewijst aan AEM als productprofielen voor Cloud Servicen, moet u de volgende twee stappen uitvoeren:
 
-1. Meld u aan bij [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Raadpleeg Aanmelden bij Admin Console voor meer informatie.
+   >[!IMPORTANT]
+   >Voordat u de stappen controleert waarmee u teamleden toewijst aan AEM als productprofielen voor Cloud Servicen, moet u de volgende twee stappen uitvoeren:
+   >
+   >1. Meld u aan bij [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Raadpleeg Aanmelden bij Admin Console voor meer informatie.
+      >
+      >
+   1. Bekijk [AEM als Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles) van het Product van de Cloud Service.
 
-1. Bekijk [AEM als Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles) van het Product van de Cloud Service.
 
 Voer de onderstaande stappen uit om de lijst met Cloud Manager-profielen van Adobe Admin Console weer te geven:
 
@@ -76,18 +80,24 @@ Gebruikers die toegang willen krijgen tot AEM als instantie Cloud Service, moete
 >[!NOTE]
 >U moet machtigingen voor de instantie hebben. Rechten voor het beheer van Cloud Manager zijn onvoldoende. Meer weten?
 
-De stappen hieronder moeten door systeembeheerder worden gevolgd die ook in de rol van BedrijfsEigenaar is.
+De stappen hieronder moeten door een Beheerder van het Systeem worden gevolgd die ook de rol van BedrijfsEigenaar is.
 
-1. Navigeer vanuit Cloud Manager naar Cloud Manager en selecteer de knop Toegang beheren in de context van de belangwekkende omgeving, zoals hieronder wordt weergegeven:
+1. Navigeer naar uw programma vanuit Cloud Manager en selecteer de knop **Toegang beheren** in de context van de omgeving die u interessant vindt, zoals hieronder wordt weergegeven.
 
-1. Nadat u op Toegang beheren hebt geklikt, navigeert een nieuwe TAB naar de Admin Console van de locatie waar u toegang hebt tot de instantie van de auteur van de omgeving. Selecteer *AEM Beheerders* of *AEM Gebruikers* op basis van de machtigingen die deze persoon moet geven. Meer informatie over [AEM als Cloud Service productprofielen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+   ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. Selecteer Gebruikers toevoegen zoals hieronder wordt weergegeven en verzend de benodigde gegevens om het toevoegen van het teamlid te voltooien:
+1. Een nieuw tabblad navigeert u naar Adobe Admin Console vanwaar u toegang hebt tot de instantie van de auteur van de omgeving. Selecteer *AEM Beheerders* of *AEM Gebruikers* op basis van de machtigingen die deze persoon moet geven. Meer informatie over [AEM als Cloud Service productprofielen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
 
+   ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
-1. U zult deze stappen voor alle milieu&#39;s met inbegrip van Ontwikkeling, Stadium en Productie willen herhalen, als u de informatie van teamleden hebt die toegang beschikbaar nodig hebben.
+1. Selecteer `AEM Administrator` of `AEM User` en klik op **Gebruiker toevoegen** zoals hieronder getoond en verzend de noodzakelijke details om het toevoegen van het teamlid te voltooien.
+
+   ![](/help/onboarding/onboarding-journey/assets/add-team3.png)
 
    De gebruiker u toevoegde zal nu toegang tot de AEM als diensten van de Auteur van de Cloud Service hebben!
+
+   >[!NOTE]
+   >U zult deze stappen voor alle milieu&#39;s met inbegrip van Ontwikkeling, Stadium en Productie willen herhalen, als u de informatie van teamleden hebt die toegang beschikbaar nodig hebben.
 
 
 ## Volgende functies {#whats-next}
