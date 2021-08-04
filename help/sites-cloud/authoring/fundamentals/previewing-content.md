@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM Preview Service kunt gebruiken om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De functie Voorvertoning maakt deel uit van de release 2021.5.0 en wordt in de komende weken geleidelijk uitgevoerd.
+>Om de voorproefeigenschap op milieu&#39;s toe te laten die vóór 3 Augustus, 2021 worden gecreeerd, zorg ervoor het milieu bij AEM versie 2021.05.5368.20210529T101701Z of hoger is en dan een klant-in werking gestelde pijpleiding.
 
 AEM biedt een Sites Preview-service waarmee ontwikkelaars en makers van inhoud de uiteindelijke ervaring van een website kunnen voorvertonen voordat deze de publicatieomgeving bereikt en die openbaar beschikbaar is.
 
 Het vergemakkelijkt het voorvertonen van paginaervaringen die anders niet zichtbaar zouden zijn vanuit de auteursomgeving, zoals paginaovergangen en andere alleen inhoud aan de publiczijde.
+
+Lees ook [toegang tot de voorvertoningsservice](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Inhoud publiceren voor voorvertoning {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ U kunt inhoud aan de Dienst van de Voorproef publiceren door Beheerde Publicatie
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Zie [Uw omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) voor meer informatie over het ophalen van de URL&#39;s voor uw omgevingen.
+Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over hoe u de URL&#39;s voor uw omgevingen kunt ophalen.
 
 De inhoud kan ook worden gepubliceerd aan voorproef door een [Publish Inhoudsboom Werkschema](/help/operations/replication.md#publish-content-tree-workflow) met de agentId parameter te gebruiken die aan voorproef wordt geplaatst of door [replicatie API](/help/operations/replication.md#replication-api) met een AgentFilter te gebruiken voor voorproef wordt gevormd.
 
@@ -67,4 +69,4 @@ Voer de volgende stappen uit om fouten op te sporen in de voorvertoningslaag met
 
 * Selecteer **— All Preview —** in de [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) of een productieomgeving die **prev** in zijn naam bevat
 * De relevante informatie voor de voorvertoning genereren
-Zie [Uw omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) voor meer informatie over het ophalen van de URL&#39;s voor uw omgevingen.
+Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over hoe u de URL&#39;s voor uw omgevingen kunt ophalen.
