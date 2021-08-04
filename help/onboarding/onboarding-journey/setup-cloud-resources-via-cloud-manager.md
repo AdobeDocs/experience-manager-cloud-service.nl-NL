@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,21 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 ## Navigeren naar Cloud Manager {#navigate-cloud-manager}
 
-1. De *Zakelijke eigenaar*-gebruiker ontvangt een welkomstbericht van de plaats waar hij kan beginnen, of als hij het niet kan vinden, gaat hij rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) en meldt zich aan met uw Adobe ID.
+De *Zakelijke eigenaar*-gebruiker ontvangt een welkomstbericht van de plaats waar hij kan beginnen, of als hij het niet kan vinden, gaat hij rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meldt zich aan met uw Adobe ID.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+Ga als volgt te werk om naar Cloud Manager te navigeren:
+
+1. Klik in uw welkomstbericht op **Aan de slag**, zoals in de onderstaande afbeelding wordt getoond.
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. U gaat naar de pagina **Programma&#39;s en producten** van Cloud Manager.
+
+   >[!IMPORTANT]
+   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+
+Daarnaast kunt u vanaf de startpagina van Adobe Experience Cloud naar de pagina **Programma&#39;s en producten** van Cloud Manager navigeren. Voer de onderstaande stappen uit:
+
+1. Navigeer rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
 
 1. Selecteer **Experience Manager** op de startpagina van Adobe Experience Cloud.
 
@@ -56,11 +68,37 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. De bestemmingspagina van Cloud Manager wordt weergegeven, zoals in de onderstaande afbeelding wordt getoond.
+1. Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] en de staat van de toepassing worden toegewezen, zult u verschillende schermen zien terwijl het gebruiken van [!UICONTROL Cloud Manager] UI.
 
-1. Controleer of u het productprofiel voor de bedrijfseigenaar hebt toegewezen. Selecteer hiertoe uw profiel in de rechterbovenhoek, zoals hieronder wordt weergegeven.
+   Een van de drie opties wordt hieronder beschreven:
+
+   * **Als er geen programma&#39;s bestaan in Cloud Manager**
+
+      Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken, zoals in de onderstaande afbeelding wordt getoond.
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **Wanneer er al programma&#39;s bestaan in Cloud Manager**
+
+      Als er al programma&#39;s bestaan in uw organisatie, wordt u op de bestemmingspagina opgedragen een ander programma toe te voegen en worden ook alle bestaande programma&#39;s weergegeven, zoals in de onderstaande afbeelding wordt getoond.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **Wanneer een Programma bestaat en de gebruiker de Beheerder van het Systeem is**
+
+      Als een of meer programma&#39;s al in uw organisatie aanwezig zijn en u een systeembeheerder bent, wordt op de landingspagina de knop **Toegang beheren** weergegeven, samen met de optie **Programma toevoegen**, zoals in de onderstaande afbeelding wordt getoond.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## Gebruikersrollen controleren {#verify-user-roles}
+
+Nadat u zich hebt aangemeld bij Cloud Manager, volgt u de onderstaande stappen om te controleren of u het productprofiel voor de bedrijfseigenaar hebt toegewezen:
+
+1. Selecteer uw profiel rechtsboven, zoals hieronder wordt getoond.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
