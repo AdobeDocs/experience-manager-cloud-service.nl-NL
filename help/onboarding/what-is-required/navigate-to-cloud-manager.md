@@ -2,10 +2,10 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 6%
+source-wordcount: '483'
+ht-degree: 7%
 
 ---
 
@@ -21,14 +21,21 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 1. Klik in uw welkomstbericht op **Aan de slag**, zoals in de onderstaande afbeelding wordt getoond.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >U kunt ook rechtstreeks navigeren naar de aanmeldingspagina van Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] en de staat van de toepassing worden toegewezen, zult u verschillende schermen zien terwijl het gebruiken van [!UICONTROL Cloud Manager] UI. Raadpleeg de onderstaande sectie [Landingspagina van Cloud Manager](#cloud-manager-landing) voor meer informatie.
+
+   >[!IMPORTANT]
+   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina als bladwijzer voor de toekomst en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
+
+Bovendien kunt u ook naar de pagina **Programma&#39;s en producten** van Adobe Experience Cloud homepage navigeren. Voer de onderstaande stappen uit:
+
+1. Navigeer rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
 
 1. Selecteer **Experience Manager**.
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk. Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
 
 
 ## Openingspagina van Cloud Manager {#cloud-manager-landing}
