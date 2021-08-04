@@ -3,9 +3,9 @@ title: Het vormen OSGi voor Adobe Experience Manager als Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 feature: Implementeren
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
+source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -224,7 +224,7 @@ Waarden voor de variabelen mogen niet meer dan 2048 tekens bevatten.
 
 >[!NOTE]
 >
->Variabelenamen die met `INTERNAL_` worden voorafgegaan, zijn gereserveerd door Adobe. Alle door de klant ingestelde variabelen die met dit voorvoegsel beginnen, worden genegeerd.
+>Variabelenamen die met `INTERNAL_` worden voorafgegaan, zijn gereserveerd door Adobe. Alle door de klant ingestelde variabelen die met dit voorvoegsel beginnen, worden genegeerd. Klanten mogen ook niet naar deze variabelen verwijzen.
 
 ### Standaardwaarden {#default-values}
 
