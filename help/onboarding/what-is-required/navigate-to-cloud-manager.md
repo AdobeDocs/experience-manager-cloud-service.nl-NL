@@ -2,10 +2,10 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 7%
+source-wordcount: '500'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ Een van de drie opties wordt hieronder beschreven:
 
 Van hier, kan een gebruiker met de juiste toestemmingen, zoals een rol Bedrijfs van de Eigenaar in de Manager van de Wolk **Programma toevoegen** selecteren om [Add tovenaar van het Programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access) te lanceren.
 
-Ga voor meer informatie over het toevoegen van een programma in Cloud Manager naar:
+Raadpleeg het volgende voor informatie over het toevoegen van een programma in Cloud Manager:
 
-* Een productieprogramma maken
-* Sandboxprogramma&#39;s maken
+* [Productieprogramma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [Sandbox-programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
