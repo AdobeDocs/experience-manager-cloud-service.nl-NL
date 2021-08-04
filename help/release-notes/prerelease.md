@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] als prerelease-kanaal voor Cloud Service'
 description: '[!DNL Adobe Experience Manager] als prerelease-kanaal voor Cloud Service'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] als prerelease-kanaal voor Cloud Service  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] als prerelease-kanaal voor Cloud Service {#prerelease-channel}
 
 
 ## Inleiding {#introduction}
@@ -20,14 +20,14 @@ De lijst met pre-releasefuncties voor een bepaalde maand wordt geplaatst in de [
 
 >[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
-## Hoe te om de Prerelease {#enable-prerelease} toe te laten
+## Hoe te om Prerelease toe te laten {#enable-prerelease}
 
 De pre-releasefuncties kunnen op verschillende manieren worden ervaren:
 
 * Cloud-omgevingen (standaardprogramma-ontwikkelomgevingen of elk ander type sandboxprogramma)
 * Lokale SDK
 
-### Cloudomgevingen {#cloud-environments}
+### Cloud-omgevingen {#cloud-environments}
 
 Om nieuwe eigenschappen in de console van Plaatsen op wolkendev milieu&#39;s evenals het resultaat van om het even welke projectaanpassingen te zien:
 
@@ -54,7 +54,7 @@ De variabele kan worden verwijderd of op een andere waarde worden ingesteld als 
 
 U kunt nieuwe eigenschappen in de console van Plaatsen in lokale QuickStart SDK en code tegen nieuwe APIs in de prerelease zien door uw beproefde projectverwijzing te hebben de prerelease `API Jar` in Centrale Maven wordt gevestigd. U kunt deze prereleasefuncties op uw lokale computer ook zien door de regelmatige SDK van QuickStart op prereleasemodus te beginnen:
 
-* Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM als Cloud Service SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * Neem het argument `-r prerelease` op wanneer u de SDK QuickStart start.
 * De waarde is *sticky* zodat kan het slechts bij de eerste opstarten worden geselecteerd. Installeer de SDK opnieuw om de opdrachtregeloptie te wijzigen.
 
