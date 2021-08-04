@@ -4,9 +4,9 @@ description: Volg deze pagina om de volgende stappen na het krijgen van toegang 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 Met dit document krijgen uw ontwikkelaars en implementatiemanagers toegang tot Cloud Manager en worden ze vertrouwd met de manier waarop ze zich kunnen voorbereiden op het leerpad.
 
-Na het lezen moet u:
+Nadat u dit document hebt gelezen, moet u:
 
-* Als ontwikkelaar dient u te begrijpen hoe u toegang krijgt tot Cloud Manager Git en hoe u deze kunt beheren
-* Als Manager van de Plaatsing, zou u moeten kunnen begrijpen hoe te opstellings pijpleidingen en uw code in de Manager van de Wolk opstellen
+* Als ontwikkelaar kunt u begrijpen hoe u de Cloud Manager-kit kunt openen en beheren
+* Als Manager van de Plaatsing, kan begrijpen hoe te opstellings pijpleidingen en uw code in de Manager van de Wolk opstellen
 
 ## Inleiding {#introduction}
 
@@ -39,11 +39,13 @@ U begrijpt hoe u kunt navigeren en zich kunt aanmelden bij Cloud Manager
 
 ## Git beheren {#manage-git}
 
-Ga hier voor meer informatie over dit onderwerp.
+U kunt de Git Repository openen en beheren met Self-Service Git Account Management vanuit de interface van Cloud Manager.
+Meer over dit onderwerp leren, zie [Toegang tot Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Gasleiding instellen {#setup-pipeline}
 
-Ga hier voor meer informatie over dit onderwerp
+U kunt uw productie of niet-productiepijpleiding van de UI van de Manager van de Wolk vormen.
+Meer over dit onderwerp leren, zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Volgende functies {#whats-next}
 
