@@ -4,10 +4,10 @@ description: Volg deze pagina om de volgende stappen na het krijgen van toegang 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,8 @@ De volgende stappen moeten worden gevolgd om tot Auteur toegang te hebben:
 
 ## Volgende functies {#whats-next}
 
-U bent nu klaar om uw leerpad te starten voor het ontwerpen en publiceren van pagina&#39;s. Volg het pad door het leerpad voor AEM gebruikers opnieuw te bekijken.
+U kunt nu AEM pagina&#39;s ontwerpen en publiceren. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder.
+
 
 ## Aanvullende bronnen {#additional-resources}
 
