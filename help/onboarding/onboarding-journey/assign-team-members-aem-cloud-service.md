@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ De stappen hieronder moeten door een Beheerder van het Systeem worden gevolgd di
 
 ## Volgende functies {#whats-next}
 
-De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM zijn nu klaar om te leren hoe te om tot Auteur toegang te hebben en vertrouwd te worden met auteurspagina&#39;s in AEM als Cloud Service. Volg het pad door het leerpad voor AEM gebruikers opnieuw te bekijken.
+De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM zijn nu klaar om te leren hoe te om tot Auteur toegang te hebben en vertrouwd te worden met auteurspagina&#39;s in AEM als Cloud Service. U zou de weg moeten volgen, door het document het Leren Weg voor AEM Gebruikers of het Leren Weg voor Ontwikkelaars en de Managers van de Plaatsing te herzien.
 
 ## Aanvullende bronnen {#additional-resources}
 
