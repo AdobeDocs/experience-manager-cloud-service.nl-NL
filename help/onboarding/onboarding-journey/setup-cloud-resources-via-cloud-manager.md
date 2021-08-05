@@ -4,9 +4,9 @@ description: Volg deze pagina voor informatie over het instellen van Cloud Resou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Ga als volgt te werk om naar Cloud Manager te navigeren:
    >[!IMPORTANT]
    >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina als bladwijzer voor de toekomst en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
 
+1. U wordt doorgestuurd naar de bestemmingspagina van Cloud Manager. Zie [De sectie Programma&#39;s van Cloud Manager bekijken](#viewing-programs) voor meer informatie.
+
 Daarnaast kunt u vanaf de startpagina van Adobe Experience Cloud naar de pagina **Programma&#39;s en producten** van Cloud Manager navigeren. Voer de onderstaande stappen uit:
 
 1. Navigeer rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
@@ -68,29 +70,32 @@ Daarnaast kunt u vanaf de startpagina van Adobe Experience Cloud naar de pagina 
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
+1. Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager. Zie [De sectie Programma&#39;s van Cloud Manager bekijken](#viewing-programs) voor meer informatie.
 
    >[!NOTE]
    >Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] en de staat van de toepassing worden toegewezen, zult u verschillende schermen zien terwijl het gebruiken van [!UICONTROL Cloud Manager] UI.
 
-   Een van de drie opties wordt hieronder beschreven:
+### Programma&#39;s weergeven op de bestemmingspagina van Cloud Manager {#viewing-programs}
 
-   * **Als er geen programma&#39;s bestaan in Cloud Manager**
+Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager. Een van de drie opties wordt hieronder beschreven:
 
-      Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken, zoals in de onderstaande afbeelding wordt getoond.
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### Als er geen programma&#39;s bestaan in Cloud Manager {#no-programs}
 
-   * **Wanneer er al programma&#39;s bestaan in Cloud Manager**
+Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken, zoals in de onderstaande afbeelding wordt getoond.
 
-      Als er al programma&#39;s bestaan in uw organisatie, wordt u op de bestemmingspagina opgedragen een ander programma toe te voegen en worden ook alle bestaande programma&#39;s weergegeven, zoals in de onderstaande afbeelding wordt getoond.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### Wanneer er al programma&#39;s bestaan in Cloud Manager {#programs-exist}
 
-   * **Wanneer een Programma bestaat en de gebruiker de Beheerder van het Systeem is**
+Als er al programma&#39;s bestaan in uw organisatie, wordt u op de bestemmingspagina opgedragen een ander programma toe te voegen en worden ook alle bestaande programma&#39;s weergegeven, zoals in de onderstaande afbeelding wordt getoond.
 
-      Als een of meer programma&#39;s al in uw organisatie aanwezig zijn en u een systeembeheerder bent, wordt op de landingspagina de knop **Toegang beheren** weergegeven, samen met de optie **Programma toevoegen**, zoals in de onderstaande afbeelding wordt getoond.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### Wanneer een Programma bestaat en de gebruiker de Beheerder van het Systeem is {#programs-exist-sysadmin}
+
+Als een of meer programma&#39;s al in uw organisatie aanwezig zijn en u een systeembeheerder bent, wordt op de landingspagina de knop **Toegang beheren** weergegeven, samen met de optie **Programma toevoegen**, zoals in de onderstaande afbeelding wordt getoond.
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Gebruikersrollen controleren {#verify-user-roles}
