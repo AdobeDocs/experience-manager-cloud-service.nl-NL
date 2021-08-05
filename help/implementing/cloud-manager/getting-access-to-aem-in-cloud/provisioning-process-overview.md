@@ -50,6 +50,7 @@ Voor meer informatie, gelieve te bezoeken [Aan boord gaan aan Experience Manager
 ### 2. Aan boord van organisaties naar Adobe Admin Console:
 
 >   ![procesoverzicht2.jpg](./assets/processOverview2.jpg)
+
 * Systeembeheerder:
    * Levering AEM programma&#39;s en omgevingen.
    * Navigeer naar de Admin Console voor beheertaken.
