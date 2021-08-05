@@ -2,9 +2,9 @@
 title: Navigeren naar Cloud Manager
 description: Volg deze pagina om te leren hoe u naar de landingspagina van Cloud Manager kunt navigeren
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,8 @@ Zodra uw systeembeheerder u toegang tot de Manager van de Wolk verleent, zult u 
 
    >[!IMPORTANT]
    >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina als bladwijzer voor de toekomst en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
+
+1. U wordt doorgestuurd naar de bestemmingspagina van Cloud Manager.
 
 Bovendien kunt u ook naar de pagina **Programma&#39;s en producten** van Adobe Experience Cloud homepage navigeren. Voer de onderstaande stappen uit:
 
