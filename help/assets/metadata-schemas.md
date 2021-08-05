@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metagegevens
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2452'
 ht-degree: 5%
 
 ---
@@ -111,7 +111,7 @@ Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewer
 
 **Toewijzen aan eigenschap**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. Het begint met `./` om erop te wijzen dat de weg onder de knoop van het element is.
 
-Hieronder volgen enkele voorbeelden van geldige waarden voor een eigenschap:
+Hier volgen voorbeelden van geldige waarden voor een eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
