@@ -2,14 +2,14 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
 
-# Functioneel testen {#functional-testing}
+# Functionele tests {#functional-testing}
 
 
 >[!CONTEXTUALHELP]
@@ -24,7 +24,7 @@ Functionele tests worden ingedeeld in drie typen:
 * Aangepaste functionele tests
 * Aangepaste UI-tests
 
-## Functioneel testen van product {#product-functional-testing}
+## Functioneel testen van producten {#product-functional-testing}
 
 De Functionele Tests van het product zijn een reeks stabiele HTTP integratietests (ITs) rond kernfunctionaliteit in AEM (bijvoorbeeld, creatie en replicatie) die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het deze kernfunctionaliteit breekt.
 
@@ -62,15 +62,27 @@ Om hun tests UI te laten bouwen en worden uitgevoerd, moeten de klanten &quot;op
 
 *Bestandsnaam*: `testing.properties`
 
-*Inhoud*:  `one line: ui-tests.version=1`
+*Inhoud*:  `ui-tests.version=1`
 
 Als dit niet in het gebouwde `tar.gz` dossier is, zullen de tests UI bouwen en de uitvoeringen worden overgeslagen
+
+Als u `testing.properties`-bestand in het ingebouwde artefact wilt toevoegen, voegt u een `include`-instructie toe in het `assembly-ui-test-docker-context.xml`-bestand (in de submodule voor UI-tests):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- testmodule voor aanmelding in Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Productiepijpleidingen die vóór 10 februari 2021 zijn aangelegd, moeten worden bijgewerkt om de in dit punt beschreven interfacetests te kunnen gebruiken. Dit betekent hoofdzakelijk de Gebruiker de pijpleiding van de Productie moet uitgeven en **sparen** van UI klikken zelfs als geen veranderingen werden aangebracht.
 >Verwijs naar [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) om meer over pijpleidingsconfiguratie te leren.
 
-### Het schrijven van functionele tests {#writing-functional-tests}
+### Functionele tests schrijven {#writing-functional-tests}
 
 Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden geïmplementeerd op AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
 
