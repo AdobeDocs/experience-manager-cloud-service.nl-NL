@@ -5,10 +5,10 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Implementeren
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 58%
+source-wordcount: '138'
+ht-degree: 43%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 58%
    + [Systeembeheertaken](what-is-required/add-users-assign-cm-roles.md)
    + [Navigeren naar Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Gebruikerstoegang verlenen aan een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
-   + [AEM-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [AEM Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [AEM Sites-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](data-privacy-and-protection-readiness/sites-readiness.md)
-+ Toegankelijkheid {#accessibility}
-   + [AEM as a Cloud Service en Web Accessibility Guidelines](accessibility/web-accessibility.md)
-   + [Snelgids voor WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Migratiemethode {#migration-methodology}
    + [Migratie naar Adobe Experience Manager als Cloud Service](migration-methodology/getting-started.md)
 + Best practices voor {#best-practices}
