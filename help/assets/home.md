@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] z
 feature: Beheer van bedrijfsmiddelen
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 21%
@@ -47,7 +47,7 @@ De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Asse
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Gereedheid voor GDPR (AVG)](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager als  [!DNL Cloud Service] zelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Forum van de Gemeenschap](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
