@@ -2,7 +2,7 @@
 title: Handboeken voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager as a Cloud Service
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 560775956fbf8eb6376150e8fbf08af2ea9e5c1e
+source-git-commit: 390b06ab7bede2dfac9011ebd78f4dbd1dc62df4
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 73%
@@ -40,7 +40,7 @@ Deze pagina bevat zelfhulpgebruikershandleidingen voor Experience Manager as a C
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
-* [Gereedheid voor GDPR (AVG)](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Gereedheid voor GDPR (AVG)](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
