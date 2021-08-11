@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Toegankelijkheid, beheer van bedrijfsmiddelen
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 1%
@@ -60,14 +60,14 @@ Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang t
 
 In [!DNL Experience Manager] voldoen de toegankelijkheidsfuncties aan twee belangrijke vereisten van [!DNL Experience Manager]-gebruikers en hun klanten.
 
-* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. De inhoud kan door personen met een handicap worden gebruikt met behulp van ondersteunende hulpmiddelen. Zie [Web accessibility guidelines](/help/onboarding/accessibility/web-accessibility.md) voor meer informatie.
+* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. De inhoud kan door personen met een handicap worden gebruikt met behulp van ondersteunende hulpmiddelen. Zie [Web accessibility guidelines](/help/compliance/accessibility/quick-guide-wcag.md) voor meer informatie.
 * [!DNL Experience Manager] Hiermee hebben gebruikers en beheerders met een handicap ook toegang tot gebruikersinterface en besturingselementen om inhoud te maken en te beheren. Individuen met een handicap kunnen ondersteunende hulpmiddelen gebruiken om de [!DNL Assets] mogelijkheden te navigeren, te gebruiken en te beheren.
 
 De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden regelmatig bijgewerkt om de naleving van wereldwijde standaarden te verbeteren. De CRUD-bewerkingen in [!DNL Assets] hebben een bepaalde mate van toegankelijkheid die in deze bewerkingen is ingebouwd. DAM-workflows, zoals het toevoegen, beheren, zoeken en distribueren van elementen, zijn toegankelijk via sneltoetsen, schermlezertekst, kleurcontrast, enzovoort.
 
 ## Ondersteuning voor het gebruik van het toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder de gebruikersinterface-elementen te hoeven activeren en deze met het toetsenbord te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
 
 <!-- TBD items:
 
@@ -226,6 +226,6 @@ Gebruik de volgende methoden om feedback te geven, vragen te stellen en productv
 >[!MORELIKETHIS]
 >
 >* [Release-aantekeningen over de verbeteringen die in elke release](/help/release-notes/release-notes-cloud/release-notes-current.md) zijn aangebracht.
->* [[!DNL Adobe Experience Manager] toegankelijkheidsrichtlijnen](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] toegankelijkheidsrichtlijnen](/help/compliance/accessibility/web-accessibility.md).
 >* [Conformiteitsrapporten (ACR) en VPAT-lijsten voor Adobe-oplossingen](https://www.adobe.com/accessibility/compliance.html).
 
