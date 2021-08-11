@@ -2,18 +2,17 @@
 title: Vorm RTE om toegankelijke Web-pagina's en plaatsen tot stand te brengen.
 description: Leer om de Rich Text Editor te vormen om toegankelijke plaatsen in  [!DNL Adobe Experience Manager] tot stand te brengen.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
+exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
 
 ---
 
-
 # RTE configureren om toegankelijke sites te maken {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden geopend bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
+[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden gebruikt bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
 
 Voor inzicht in typische configuraties van RTE, zie [vorm RTE](rich-text-editor.md) en [vorm stop-ins RTE voor specifieke functionaliteit](configure-rich-text-editor-plug-ins.md).
 
@@ -25,7 +24,7 @@ Voor de `Text` component in [!DNL Experience Manager], toont het volgende het sc
 
 ![RTE-tekstcomponent in de modus Volledig scherm](assets/rte-toolbar-full-screen-mode.png)
 
-## Plug-infuncties {#configuring-the-plugin-features} configureren
+## De functies voor insteekmodules configureren {#configuring-the-plugin-features}
 
 Voor instructies om RTE te vormen, zie [vorm de Rich Text Editor](rich-text-editor.md) pagina. Het artikel heeft betrekking op:
 
@@ -49,7 +48,7 @@ Er worden nieuwe semantische blokformaten beschikbaar gesteld voor selectie.
 
 Met structuurelementen beschikbaar in RTE via de opties van het paragraafformaat, [!DNL Experience Manager] verstrekt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan kunnen de auteurs de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen, om een zuivere opmaak en grotere opties te garanderen voor gebruikers die met hun eigen stijlbladen en correct gestructureerde inhoud bladeren.
 
-## Gebruik van de functie Bron bewerken {#use-of-the-source-edit-feature}
+## De functie Bron bewerken gebruiken {#use-of-the-source-edit-feature}
 
 In sommige gevallen zullen inhoudsauteurs het nodig vinden om de HTML-broncode die met de RTE is gemaakt, te onderzoeken en aan te passen. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd meer prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met [bron worden gedaan uitgeven](rich-text-editor.md#aboutplugins) optie van RTE. U kunt de [`sourceedit` eigenschap op `misctools` stop-in ](rich-text-editor.md#aboutplugins) specificeren.
 
@@ -148,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [Een snelle gids voor WCAG-standaarden](/help/onboarding/accessibility/quick-guide-wcag.md)
->* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Een snelle gids voor WCAG-standaarden](/help/compliance/accessibility/quick-guide-wcag.md)
+* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
