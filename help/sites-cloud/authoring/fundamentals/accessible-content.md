@@ -2,7 +2,7 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken als Cloud Service (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken als Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Als inleiding geeft het consortium een reeks secties en ondersteunende documente
 
 Zie ook:
 
-* Onze [Snelle Gids aan WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Onze [Snelle Gids aan WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * De [Toegankelijkheidsrapporten voor Adobe oplossingen](https://www.adobe.com/accessibility/compliance.html).
 * [Toegankelijkheid in elementen](/help/assets/accessibility.md)
 * [De Rich Text Editor configureren voor het produceren van toegankelijke inhoud](/help/implementing/developing/extending/rte-accessible-content.md)
@@ -46,7 +46,7 @@ In de volgende sectie worden [lagen van de WCAG 2.1 Guidelines](https://www.w3.o
 >* De [nummering die in de WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) wordt gebruikt om kruisverwijzingen met de website van WCAG te helpen.
 
 
-## Beginsel 1: Mogelijk {#principle-perceivable}
+## Beginsel 1: Perceerbaar {#principle-perceivable}
 
 [Beginsel 1: Mogelijkheid - De informatie en gebruikersinterfacecomponenten moeten aan gebruikers op manieren presenteerbaar zijn zij kunnen waarnemen.](https://www.w3.org/TR/WCAG/#perceivable)
 
@@ -66,7 +66,7 @@ De informatie op een webpagina kan in vele verschillende niet-tekstformaten, zoa
 
 Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstuele inhoud wordt geïndexeerd door zoekmachinetechnologie.
 
-#### Hoe kan ik-niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
+#### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
 Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan worden gedaan op het **Alternatieve gebied van de Tekst**; zie bijvoorbeeld de Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
@@ -215,7 +215,7 @@ Sluit de tekst in de videotrack in als u open bijschriften moet gebruiken. Dit k
 * Niveau A
 * Audiobeschrijving of Media-alternatief (vooraf opgenomen): Voor gesynchroniseerde media wordt een alternatief voor op tijd gebaseerde media of audiobeschrijving van de vooraf opgenomen video-inhoud geboden, behalve wanneer de media een media-alternatief voor tekst zijn en duidelijk als zodanig zijn gelabeld.
 
-#### Doel - Audio-beschrijving of media-alternatief (vooraf opgenomen) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
+#### Doel - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
 
 Mensen die blind of visueel gehandicapt zijn, ondervinden toegankelijkheidsbarrières als de informatie in een video of animatie alleen visueel wordt verstrekt, of als de soundtrack niet voldoende informatie biedt om te begrijpen wat er visueel gebeurt.
 
@@ -242,7 +242,7 @@ Exacte details over het maken van video met een audiobeschrijving vallen buiten 
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### Bijschriften (live) (1.2.4) {#captions-live}
+### Bijschriften (live) (1.2.4)  {#captions-live}
 
 * Succescriterium 1.2.4
 * Niveau AA
@@ -252,7 +252,7 @@ Exacte details over het maken van video met een audiobeschrijving vallen buiten 
 
 Dit succescriterium is identiek aan [Bijschriften (vooraf opgenomen)](#captions-prerecorded) in zoverre dat het toegankelijkheidsbarrières aanpakt die mensen die doof of slechthorend zijn ervaren, behalve dat dit succescriterium levende presentaties zoals webcasts behandelt.
 
-#### Hoe kan ik-Bijschriften (live) (1.2.4) {#how-to-meet-captions-live}
+#### Hoe kan ik-Bijschriften (live) ontmoeten (1.2.4) {#how-to-meet-captions-live}
 
 Volg de richtlijnen die voor [Bijschriften (vooraf opgenomen)](#captions-prerecorded) hierboven worden verstrekt. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
 
@@ -267,7 +267,7 @@ Gedetailleerde instructies vallen buiten het bereik van dit document, maar de vo
 * [Werken met succescriteria 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [Voldoen aan criteria 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Audiobeschrijving (vooraf opgenomen) (1.2.5) {#audio-description-prerecorded}
+### Audiobeschrijving (vooraf opgenomen) (1.2.5)  {#audio-description-prerecorded}
 
 * Succescriterium 1.2.5
 * Niveau AA
@@ -281,7 +281,7 @@ Dit succescriterium is identiek aan [Audio-beschrijving of Media-alternatief (vo
 
 Volg de richtlijnen voor [Audio-beschrijving of Media-alternatief (vooraf opgenomen)](#audio-description-or-media-alternative-prerecorded).
 
-#### Meer informatie - Audiobeschrijving (vooraf opgenomen) (1.2.5) {#more-information-audio-description-prerecorded}
+#### Meer informatie - Audio-beschrijving (vooraf opgenomen) (1.2.5) {#more-information-audio-description-prerecorded}
 
 * [Werken met succescriteria 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Voldoen aan criteria 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
@@ -296,7 +296,7 @@ Dit richtsnoer heeft betrekking op de vereisten die nodig zijn ter ondersteuning
 
 * kan alleen-audio of een andere visuele weergave gebruiken, zoals grote tekst of een hoog contrast.
 
-### Informatie en relaties (1.3.1) {#info-and-relationships}
+### Informatie en relaties (1.3.1)  {#info-and-relationships}
 
 * Succescriterium 1.3.1
 * Niveau A
@@ -308,7 +308,7 @@ Veel ondersteunende hulpmiddelen die door mensen met een handicap worden gebruik
 
 Dit succescriterium bestaat om ervoor te zorgen dat dergelijke structurele informatie programmatically door HTML, of andere coderingstechnieken wordt verstrekt, zodat browsers en hulptechnologieën tot de informatie kunnen toegang hebben en voordeel kunnen halen.
 
-#### Hoe kan ik-info en relaties (1.3.1) {#how-to-meet-info-and-relationships}
+#### Hoe te om te ontmoeten - Informatie en Verband (1.3.1) {#how-to-meet-info-and-relationships}
 
 AEM maakt het eenvoudig semantisch betekenisvolle webinhoud samen te stellen met de juiste HTML-elementen. Open de pagina-inhoud in de RTE (een tekstcomponent) en gebruik het menu **Paraformat** (alineasymbool) om het juiste structuurelement op te geven (bijvoorbeeld alinea, kop, enz.).
 
@@ -408,7 +408,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
 * [Werken met succescriteria 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [Voldoen aan criteria 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### Betekenisvolle reeks (1.3.2) {#meaningful-sequence}
+### Betekenisvolle reeks (1.3.2)  {#meaningful-sequence}
 
 * Succescriterium 1.3.2
 * Niveau A
@@ -427,7 +427,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 1.3.2](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [Voldoen aan criteria 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### Sensorische kenmerken (1.3.3) {#sensory-characteristics}
+### Sensorische kenmerken (1.3.3)  {#sensory-characteristics}
 
 * Succescriterium 1.3.3
 * Niveau A
@@ -463,7 +463,7 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 
 [Richtsnoer 1.4. Te onderscheiden: Het is voor gebruikers gemakkelijker om inhoud te zien en te horen, inclusief het scheiden van voorgrond en achtergrond.](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### Gebruik van kleur (1.4.1) {#use-of-color}
+### Gebruik van kleur (1.4.1)  {#use-of-color}
 
 * Succescriterium 1.4.1
 * Niveau A
@@ -483,7 +483,7 @@ Bovendien kan kleur niet worden waargenomen door mensen die alleen tekst weergev
 
 Een andere overweging is de status *selected* voor een interface-element (bijvoorbeeld tabbladen, schakelknoppen, enz.) die op een andere manier moet worden overgebracht dan alleen met kleur en niet alleen met een visuele presentatie. Voor dergelijke elementen is het extra gebruik van patronen, vormen en programmatische informatie nuttig bij het creëren van een volledig inclusieve gebruikerservaring die niet op een specifieke zin steunt.
 
-#### Hoe kan ik-gebruik van kleur (1.4.1) {#how-to-meet-use-of-color}
+#### Voldoen aan - gebruik van kleur (1.4.1) {#how-to-meet-use-of-color}
 
 Telkens wanneer kleur wordt gebruikt om informatie over te brengen, zorg ervoor dat de informatie beschikbaar is zonder de behoefte om de kleur te zien.
 
@@ -496,7 +496,7 @@ Als kleur wordt gebruikt als actiepunt voor het verschaffen van informatie, moet
 * [Werken met succescriteria 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Voldoen aan criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-### Audiobesturing (1.4.2) {#audio-control}
+### Audiobesturing (1.4.2)  {#audio-control}
 
 * Succescriterium 1.4.2
 * Niveau A
@@ -512,7 +512,7 @@ Daarom is het belangrijk dat de gebruiker het achtergrondgeluid kan uitschakelen
 >
 >Als u het volume wilt regelen, kunt u het volume tot nul terugbrengen.
 
-#### Hoe kan ik-audiocontrole (1.4.2) {#how-to-meet-audio-control}
+#### Ontmoeten - Audiocontrole (1.4.2) {#how-to-meet-audio-control}
 
 Volg de richtlijnen onder [Voldoen aan criteria 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
@@ -579,7 +579,7 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, moet u
 * [Werken met succescriteria 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Voldoen aan criteria 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### Tekst vergroten/verkleinen (1.4.4) {#resize-text}
+### Tekst vergroten/verkleinen (1.4.4)  {#resize-text}
 
 * Succescriterium 1.4.4
 * Niveau A
@@ -593,7 +593,7 @@ De bedoeling van dit criterium van Succes is ervoor te zorgen dat visueel terugg
 
 Naast het volgen van de richtlijnen onder [Voldoen aan criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) kunt u auteurs van inhoud aanmoedigen om vloeiende, flexibele breedten en hoogten in hun paginaontwerpen en doopvontgrootte (bijvoorbeeld, het Responsieve Ontwerp van het Web) te gebruiken om lezers de capaciteit toe te staan om tekst te resize.
 
-#### Meer informatie - Formaat tekst wijzigen (1.4.4) {#more-information-resize-text}
+#### Meer informatie - Tekst vergroten/verkleinen (1.4.4) {#more-information-resize-text}
 
 * [Werken met succescriteria 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [Voldoen aan criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
@@ -614,7 +614,7 @@ Naast het volgen van de richtlijnen onder [Voldoen aan criteria 1.4.4](https://w
 
 Afbeeldingen van tekst worden vaak gebruikt wanneer een bepaalde tekststijl de voorkeur heeft; bijvoorbeeld een logo of tekst die uit een andere bron is gegenereerd (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken afbeeldingen van tekst echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
 
-#### Hoe kan ik-afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
+#### Procedure - Afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
 
 Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldingen van tekst te vervangen door equivalente tekst in HTML, zodat de tekst op een aanpasbare manier beschikbaar is. Voor een voorbeeld over hoe dit kan worden bereikt, verwijs naar [C30: CSS gebruiken om tekst door beelden van tekst te vervangen en gebruikersinterfacecontroles te verstrekken om ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) te schakelen.
 
@@ -623,7 +623,7 @@ Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldi
 * [Werken met succescriteria 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [Voldoen aan criteria 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## Beginsel 2: Bewerkbaar {#principle-operable}
+## Beginsel 2: Werkbaar {#principle-operable}
 
 [Beginsel 2: - De gebruikersinterfacecomponenten en de navigatie moeten kunnen worden bediend.](https://www.w3.org/TR/WCAG/#operable)
 
@@ -643,7 +643,7 @@ Hierbij wordt ervoor gezorgd dat gebruikers toegang hebben tot alle functionalit
 
 Het doel van dit succescriterium is ervoor te zorgen dat inhoud waar mogelijk kan worden gebruikt via een toetsenbord- of toetsenbordinterface (zodat een alternatief toetsenbord kan worden gebruikt). Wanneer de inhoud door een toetsenbord of afwisselend toetsenbord kan worden in werking gesteld, is het operabel door mensen zonder zicht (die geen apparaten zoals muizen kunnen gebruiken die oogcoördinatie vereisen) evenals door mensen die afwisselende toetsenborden of inputapparaten moeten gebruiken die als toetsenbordmededingers dienst doen. Toetsenbordemulators zijn onder andere spraakinvoersoftware, software voor sip-and-puff, toetsenborden op het scherm, scansoftware en diverse ondersteunende hulpmiddelen en alternatieve toetsenborden. Personen met een visuele handicap kunnen problemen ondervinden bij het bijhouden van een aanwijzer en het gebruik van software veel gemakkelijker (of alleen mogelijk) vinden als ze deze via het toetsenbord kunnen besturen.
 
-#### Hoe kan ik-toetsenbord (2.1.1) {#how-to-meet-keyboard}
+#### Ontmoeten - Toetsenbord (2.1.1) {#how-to-meet-keyboard}
 
 Volg de richtlijnen onder [Voldoen aan criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
 
@@ -652,7 +652,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.1.1](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [Voldoen aan criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
-### Geen toetsenbordovervulling (2.1.2) {#no-keyboard-trap}
+### Geen toetsenbordovervulling (2.1.2)  {#no-keyboard-trap}
 
 * Succescriterium 2.1.2
 * Niveau A
@@ -679,7 +679,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.1.2](https://www.w3.org/WAI/WC
 
 Hierbij wordt ervoor gezorgd dat gebruikers voldoende tijd hebben om te lezen en actie te ondernemen.
 
-### Aanpasbare timing (2.2.1) {#timing-adjustable}
+### Aanpasbare timing (2.2.1)  {#timing-adjustable}
 
 * Succescriterium 2.2.1
 * Niveau A
@@ -698,7 +698,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.2.1](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Voldoen aan criteria 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Pauze, Stoppen, Verbergen (2.2.2) {#pause-stop-hide}
+### Pauzeren, stoppen en verbergen (2.2.2)  {#pause-stop-hide}
 
 * Succescriterium 2.2.2
 * Niveau A
@@ -713,11 +713,11 @@ Opmerkingen zijn:
 1. Inhoud die regelmatig door software wordt bijgewerkt of naar de gebruikersagent wordt gestreamd, is niet verplicht informatie te bewaren of te presenteren die wordt gegenereerd of ontvangen tussen het begin van de pauze- en de hervattingspresentatie, aangezien dit technisch mogelijk is en in veel situaties misleidend kan zijn om dit te doen.
 1. Een animatie die optreedt als onderdeel van een voorlaadfase of een vergelijkbare situatie, kan als essentieel worden beschouwd als er tijdens die fase geen interactie kan optreden voor alle gebruikers en als de voortgang niet wordt aangegeven, gebruikers in verwarring kan brengen of kan leiden tot het vermoeden dat de inhoud is bevroren of gebroken.
 
-#### Doel - Pauze, Stoppen, Verbergen (2.2.2) {#purpose-pause-stop-hide}
+#### Doel - Pauzeren, Stoppen, Verbergen (2.2.2) {#purpose-pause-stop-hide}
 
 Bepaalde gebruikers vinden mogelijk inhoud die beweegt afleidt, of zelfs fysiek pijnlijk, waardoor het moeilijk wordt om zich op andere delen van de pagina te concentreren. Bovendien kan dergelijke inhoud moeilijk leesbaar zijn voor mensen die moeite hebben met het bijhouden van bewegende tekst.
 
-#### Procedure - Pauze, Stoppen, Verbergen (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Ontmoeten - Pauzeren, Stoppen, Verbergen (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggesties toepassen bij het maken van webpagina&#39;s met bewegende, knipperende of knipperende inhoud:
 
@@ -736,7 +736,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 [Richtsnoer 2.3 Convulsies: Ontwerp de inhoud niet op een manier waarvan bekend is dat deze aanvallen of fysieke reacties veroorzaakt.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
-### Drie Flash of onder drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
+### Drie Flash of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
 
 * Succescriterium 2.3.1
 * Niveau A
@@ -750,14 +750,14 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 In bepaalde gevallen kan knipperende inhoud fotosensitieve aanvallen veroorzaken. Aan de hand van dit succescriterium kunnen dergelijke gebruikers toegang krijgen tot alle inhoud en deze beleven zonder zich zorgen te maken over knipperende inhoud.
 
-#### Hoe kan ik-drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### Hoe te om te ontmoeten - Drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toegepast:
 
 * ervoor zorgen dat de onderdelen gedurende een periode van één seconde niet meer dan drie keer knipperen;
 * Als niet aan de bovenstaande voorwaarde kan worden voldaan, kunt u knipperende inhoud weergeven in een *klein veilig gebied* in pixels op het scherm. Dit gebied wordt berekend aan de hand van een complexe formule die onder [G176 valt: Het knipperende gebied klein genoeg houden](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), zodat zou deze techniek slechts moeten worden gevolgd als het knipperen van inhoud *absoluut* noodzakelijk is.
 
-#### Meer informatie - Drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
+#### Meer informatie - drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Werken met succescriterium 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [Voldoen aan criterium 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
@@ -768,7 +768,7 @@ Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toege
 
 Hiermee zorgt u ervoor dat gebruikers eenvoudig door de inhoud kunnen navigeren.
 
-### Blokken omzeilen (2.4.1) {#bypass-blocks}
+### Blokken omzeilen (2.4.1)  {#bypass-blocks}
 
 * Succescriterium 2.4.1
 * Niveau A
@@ -778,7 +778,7 @@ Hiermee zorgt u ervoor dat gebruikers eenvoudig door de inhoud kunnen navigeren.
 
 De bedoeling van dit criterium van Succes is om mensen toe te staan die opeenvolgend door inhoud meer directe toegang tot de primaire inhoud van de Web-pagina navigeren. Webpagina&#39;s en toepassingen bevatten vaak inhoud die op andere pagina&#39;s of schermen wordt weergegeven. Voorbeelden van herhaalde blokken inhoud zijn onder andere, maar niet uitsluitend, navigatiekoppelingen, koptekstafbeeldingen, menu&#39;s en advertentiekaders. Kleine herhaalde secties, zoals afzonderlijke woorden, woordgroepen of afzonderlijke koppelingen, worden voor de toepassing van deze bepaling niet als blokken beschouwd.
 
-#### Procedure - Blokkeringen omzeilen (2.4.1) {#how-to-meet-bypass-blocks}
+#### Hoe te om te ontmoeten - Blokkeringen van de Omleiding (2.4.1) {#how-to-meet-bypass-blocks}
 
 Volg de richtlijnen onder [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks) van het Succes.
 
@@ -787,7 +787,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### Getitelde pagina (2.4.2) {#page-titled}
+### Getitelde pagina (2.4.2)  {#page-titled}
 
 * Succescriterium 2.4.2
 * Niveau A
@@ -797,7 +797,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.1](https://www.w3.org/WAI/WC
 
 Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud van een webpagina snel identificeren zonder de pagina volledig te lezen. Dit is vooral handig wanneer meerdere webpagina&#39;s worden geopend op de tabbladen van de browser, omdat de paginatitel op het tabblad wordt weergegeven en deze daarom snel kan worden gevonden.
 
-#### Hoe te om te ontmoeten - Getitelde pagina (2.4.2) {#how-to-meet-page-titled}
+#### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
 
 Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel een adequate beschrijving geeft van de inhoud en het doel van de pagina, met name van eventuele unieke aspecten, zodat bezoekers snel kunnen zien of de inhoud al dan niet relevant is voor hun behoeften.
 
@@ -808,7 +808,7 @@ U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan
 * [Succescriterium 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### Focusvolgorde (2.4.3) {#focus-order}
+### Focusvolgorde (2.4.3)  {#focus-order}
 
 * Succescriterium 2.4.3
 * Niveau A
@@ -827,7 +827,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.3](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [Voldoen aan criteria 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### Koppelingsdoel (in context) (2.4.4) {#link-purpose-in-context}
+### Koppelingsdoel (in context) (2.4.4)  {#link-purpose-in-context}
 
 * Succescriterium 2.4.4
 * Niveau A
@@ -885,7 +885,7 @@ In sommige gevallen, waar er verscheidene verbindingen op een pagina zijn (elk d
 
 Alternatief, kunnen de manuscripten worden gebruikt zodat een minimale hoeveelheid tekst binnen de verbinding zelf wordt verstrekt, maar bij het activeren van een aangewezen controle die aan de bovenkant van de pagina wordt geplaatst, is de verbindingstekst *uitgebreid* in meer detail. Een vergelijkbare aanpak is om CSS te gebruiken om *hide* de volledige koppeling van waargenomen gebruikers te verbergen, maar deze toch volledig uit te voeren naar schermlezers. Dit valt buiten het bereik van dit document, maar meer informatie over hoe dit kan worden bereikt, vindt u in de sectie [Meer informatie - Koppelingsdoel (in context) (2.4.4)](#more-information-link-purpose-in-context).
 
-#### Meer informatie - doel van koppeling (in context) (2.4.4) {#more-information-link-purpose-in-context}
+#### Meer informatie - Koppelingsdoel (in context) (2.4.4) {#more-information-link-purpose-in-context}
 
 * [Succescriterium 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
 * [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
@@ -894,7 +894,7 @@ Alternatief, kunnen de manuscripten worden gebruikt zodat een minimale hoeveelhe
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### Meerdere manieren (2.4.5) {#multiple-ways}
+### Meerdere manieren (2.4.5)  {#multiple-ways}
 
 * Succescriterium 2.4.5
 * Niveau AA
@@ -906,7 +906,7 @@ Het doel van dit succescriterium is dat gebruikers inhoud kunnen vinden op een m
 
 Zelfs kleine sites moeten gebruikers enige oriëntatiemiddelen bieden. Voor een site met drie of vier pagina&#39;s, waarbij alle pagina&#39;s zijn gekoppeld vanaf de startpagina, is het mogelijk voldoende om koppelingen te verschaffen van en naar de startpagina, waar de koppelingen op de startpagina ook als een site-overzicht kunnen fungeren.
 
-#### Hoe te om te ontmoeten - Veelvoudige Manieren (2.4.5) {#how-to-meet-multiple-ways}
+#### Hoe te om - Veelvoudige Manieren (2.4.5) te ontmoeten {#how-to-meet-multiple-ways}
 
 Volg de richtlijnen onder [Voldoen aan criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways) van het Succes.
 
@@ -915,7 +915,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.5](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [Voldoen aan criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### Koppen en labels (2.4.6) {#headings-and-labels}
+### Koppen en labels (2.4.6)  {#headings-and-labels}
 
 * Succescriterium 2.4.6
 * Niveau AA
@@ -925,16 +925,16 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.5](https://www.w3.org/WAI/WC
 
 Het doel van dit criterium van Succes is gebruikers te helpen begrijpen welke informatie in Web-pagina&#39;s bevat en hoe die informatie wordt georganiseerd. Wanneer de koppen duidelijk en beschrijvend zijn, kunnen de gebruikers de informatie vinden zij gemakkelijker zoeken, en zij kunnen de verhouding tussen verschillende delen van de inhoud gemakkelijker begrijpen. Met beschrijvende labels kunnen gebruikers specifieke componenten in de inhoud identificeren.
 
-#### Hoe te om te ontmoeten - Koppen en Etiketten (2.4.6) {#how-to-meet-headings-and-labels}
+#### Voldoen - Koppen en labels (2.4.6) {#how-to-meet-headings-and-labels}
 
 Volg de richtlijnen onder [Voldoen aan criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels) van het Succes.
 
-#### Meer informatie - koppen en labels (2.4.6) {#more-information-headings-and-labels}
+#### Meer informatie - Koppen en labels (2.4.6) {#more-information-headings-and-labels}
 
 * [Werken met succescriteria 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [Voldoen aan criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### Focus zichtbaar (2.4.7) {#focus-visible}
+### Focus zichtbaar (2.4.7)  {#focus-visible}
 
 * Succescriterium 2.4.7
 * Niveau AA
@@ -957,7 +957,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 2.4.7](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
 * [Voldoen aan criteria 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
-## Beginsel 3: Begrijpbaar {#principle-understandable}
+## Beginsel 3: Begrijpelijk {#principle-understandable}
 
 [Beginsel 3: Begrijpelijk - Informatie en de werking van gebruikersinterface moeten begrijpelijk zijn.](https://www.w3.org/TR/WCAG/#understandable)
 
@@ -997,7 +997,7 @@ In AEM wordt de standaardtaal van de pagina ingesteld bij het maken van de pagin
 * [Voldoen aan criterium 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * De codes zijn gebaseerd op ISO 639-1. Een uitgebreidere lijst met codes voor elke taal is te vinden op de [W3 Schoolsite](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Taal van onderdelen (3.1.2) {#language-of-parts}
+### Taal van onderdelen (3.1.2)  {#language-of-parts}
 
 * Succescriterium 3.1.2
 * Niveau AA
@@ -1050,7 +1050,7 @@ Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-mar
 
 Hierbij wordt ervoor gezorgd dat de webpagina&#39;s er consistent uitzien en functioneren.
 
-### Bij focus (3.2.1) {#on-focus}
+### Veld activeren (3.2.1)  {#on-focus}
 
 * Succescriterium 3.2.1
 * Niveau A
@@ -1066,7 +1066,7 @@ Het doel van dit succescriterium is ervoor te zorgen dat de functionaliteit voor
 
 Focus kan naar een besturingselement worden verplaatst via het toetsenbord (bijvoorbeeld met Tab naar een besturingselement) of de muis (bijvoorbeeld door op een tekstveld te klikken). Als u de muis over een besturingselement beweegt, wordt de focus niet verplaatst, tenzij dit gedrag door scripts wordt geïmplementeerd. Merk op dat voor sommige soorten controles, het klikken op een controle de controle (b.v. knoop) kan ook activeren, die, beurtelings, een verandering in context kan in werking stellen.
 
-#### Hoe kan ik-op-focus (3.2.1) {#how-to-meet-on-focus}
+#### Hoe te om te ontmoeten - op Focus (3.2.1) {#how-to-meet-on-focus}
 
 Volg de richtlijnen onder [Voldoen aan criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus) van het Succes.
 
@@ -1075,13 +1075,13 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.2.1](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 3.2.1](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [Voldoen aan criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### Bij invoer (3.2.2) {#on-input}
+### Bij invoer (3.2.2)  {#on-input}
 
 * Succescriterium 3.2.2
 * Niveau A
 * Bij invoer: Als u de instelling van een gebruikersinterfacecomponent wijzigt, wordt de context niet automatisch gewijzigd, tenzij de gebruiker op de hoogte is gesteld van het gedrag voordat de component wordt gebruikt.
 
-#### Doel - Bij invoer (3.2.2) {#purpose-on-input}
+#### Doel - Aan-invoer (3.2.2) {#purpose-on-input}
 
 Het doel van dit succescriterium is ervoor te zorgen dat het invoeren van gegevens of het selecteren van een formulierbesturingselement voorspelbare effecten heeft. Het veranderen van het plaatsen van om het even welk gebruikersinterfacecomponent verandert één of ander aspect in de controle die zal voortbestaan wanneer de gebruiker niet meer met het communiceert. Als u dus een selectievakje inschakelt, tekst invoert in een tekstveld of de geselecteerde optie wijzigt in een lijstbesturingselement, wijzigt u de instelling, maar het activeren van een koppeling of een knop doet dit niet. Wijzigingen in context kunnen gebruikers verwarren die de wijziging niet gemakkelijk waarnemen of die gemakkelijk door wijzigingen worden afgeleid. Wijzigingen in de context zijn alleen geschikt wanneer duidelijk is dat een dergelijke wijziging zal plaatsvinden als reactie op de actie van de gebruiker.
 
@@ -1094,7 +1094,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.2.2](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [Voldoen aan criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### Consistente navigatie (3.2.3) {#consistent-navigation}
+### Consistente navigatie (3.2.3)  {#consistent-navigation}
 
 * Succescriterium 3.2.3
 * Niveau AA
@@ -1108,7 +1108,7 @@ Het is belangrijk om op te merken dat het gebruik van de uitdrukking &quot;zelfd
 
 Gebruikers kunnen een wijziging in de volgorde initiëren met behulp van adaptieve gebruikersagents of door voorkeuren in te stellen, zodat de informatie op een voor hen meest nuttige manier wordt weergegeven.
 
-#### Hoe kan ik-consistente navigatie (3.2.3) {#how-to-meet-consistent-navigation}
+#### Ontmoeten - Consistente Navigatie (3.2.3) {#how-to-meet-consistent-navigation}
 
 Volg de richtlijnen onder [Voldoen aan criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
 
@@ -1117,7 +1117,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.2.3](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 3.2.3](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [Voldoen aan criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### Consistente identificatie (3.2.4) {#consistent-identification}
+### Consistente identificatie (3.2.4)  {#consistent-identification}
 
 * Succescriterium 3.2.4
 * Niveau A
@@ -1133,7 +1133,7 @@ Als er twee componenten op een webpagina zijn die beide dezelfde functionaliteit
 
 3.2.4 is weliswaar wenselijk en is altijd in overeenstemming met één webpagina, maar 3.2.4 gaat alleen over consistentie binnen een set webpagina&#39;s waar iets op meer dan één pagina in de set wordt herhaald.
 
-#### Hoe moet ik voldoen - Consistente identificatie (3.2.4) {#how-to-meet-consistent-identification}
+#### Voldoen aan consistente identificatie (3.2.4) {#how-to-meet-consistent-identification}
 
 Volg de richtlijnen onder [Voldoen aan criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification) van het Succes.
 
@@ -1142,11 +1142,11 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.2.4](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
 * [Voldoen aan criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
 
-### Invoerassistentie (3.3) {#input-assistance}
+### Invoerbijstand (3.3) {#input-assistance}
 
 [Richtsnoer 3.3 Invoerbijstand: Gebruikers helpen fouten te voorkomen en te corrigeren.](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### Foutidentificatie (3.3.1) {#error-identification}
+### Foutidentificatie (3.3.1)  {#error-identification}
 
 * Succescriterium 3.3.1
 * Niveau A
@@ -1223,13 +1223,13 @@ In eenvoudige formulieren met een zeer beperkte functionaliteit kan het correct 
 * [Werken met succescriterium 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [Voldoen aan criterium 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### Foutsuggestie (3.3.3) {#error-suggestion}
+### Foutmelding (3.3.3)  {#error-suggestion}
 
 * Succescriterium 3.3.3
 * Niveau AA
 * Toetsenbord: Als automatisch een invoerfout wordt ontdekt en de suggesties voor correctie zijn bekend, dan worden de suggesties verstrekt aan de gebruiker, tenzij het de veiligheid of het doel van de inhoud in gevaar zou brengen.
 
-#### Doel - Foutmelding (3.3.3) {#purpose-error-suggestion}
+#### Doel - Foutvoorstel (3.3.3) {#purpose-error-suggestion}
 
 Het doel van dit succescriterium is ervoor te zorgen dat gebruikers passende suggesties ontvangen voor het corrigeren van een invoerfout als dat mogelijk is. De definitie WCAG van [inputfout](https://www.w3.org/TR/WCAG/#dfn-input-error) zegt dat het &quot;informatie die door de gebruiker wordt verstrekt die niet&quot;door het systeem wordt goedgekeurd is. Voorbeelden van informatie die niet wordt geaccepteerd, zijn informatie die vereist is maar door de gebruiker wordt weggelaten en informatie die door de gebruiker wordt verstrekt maar die buiten de vereiste of toegestane gegevensindeling valt.
 
@@ -1246,7 +1246,7 @@ Volg de richtlijnen onder [Voldoen aan criteria 3.3.3](https://www.w3.org/WAI/WC
 * [Werken met succescriteria 3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [Voldoen aan criteria 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### Foutpreventie (wettelijk, financieel, gegevens) (3.3.4) {#error-prevention-legal-financial-data}
+### Preventie van fouten (juridisch, financieel, gegevens) (3.3.4)  {#error-prevention-legal-financial-data}
 
 * Succescriterium 3.3.4
 * Niveau AA
@@ -1259,7 +1259,7 @@ De gegevens die door de gebruiker worden ingevoerd, worden gecontroleerd op invo
    * Bevestigd
 Er is een mechanisme beschikbaar voor het controleren, bevestigen en corrigeren van informatie voordat de verzending wordt voltooid.
 
-#### Doel - Foutpreventie (wettelijk, financieel, gegevens) (3.3.4) {#purpose-error-prevention-legal-financial-data}
+#### Doel - Preventie van fouten (juridisch, financieel, gegevens) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
 Dit succescriterium is bedoeld om gebruikers met een handicap te helpen ernstige gevolgen te voorkomen die het gevolg zijn van een fout bij het uitvoeren van een actie die niet ongedaan kan worden gemaakt. De aankoop van niet-terugvorderbare vliegtickets of het indienen van een bestelling voor de aankoop van aandelen op een makelaarsrekening zijn bijvoorbeeld financiële transacties met ernstige gevolgen. Als een gebruiker een fout heeft gemaakt op de datum van het luchtvervoer, zou hij of zij kunnen eindigen met een ticket voor de verkeerde dag die niet kan worden uitgewisseld. Indien de gebruiker een fout heeft gemaakt met betrekking tot het aantal te kopen aandelen, zou hij uiteindelijk meer aandelen kunnen kopen dan bedoeld. Beide soorten fouten hebben betrekking op transacties die onmiddellijk plaatsvinden en achteraf niet kunnen worden gewijzigd, en die zeer kostbaar kunnen zijn. Evenzo kan het een onherstelbare fout zijn als gebruikers per ongeluk gegevens wijzigen of verwijderen die zijn opgeslagen in een database waartoe ze later toegang moeten krijgen, zoals hun volledige reisprofiel op een website voor reisservices. Wanneer wordt verwezen naar het wijzigen of verwijderen van gegevens die door de gebruiker kunnen worden gecontroleerd, is het de bedoeling te voorkomen dat er massaal gegevens verloren gaan, zoals het verwijderen van een bestand of record. Het is niet de bedoeling een bevestiging te vereisen voor elke sparen bevel of het eenvoudige creëren of uitgeven van documenten, verslagen of andere gegevens.
 
@@ -1271,7 +1271,7 @@ Door de gebruiker te controleren gegevens zijn door de gebruiker te bekijken geg
 
 Volg de richtlijnen onder [Voldoen aan criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data) van het Succes.
 
-#### Meer informatie - Foutpreventie (wettelijk, financieel, gegevens) (3.3.4) {#more-information-error-prevention-legal-financial-data}
+#### Meer informatie - Foutpreventie (juridisch, financieel, gegevens) (3.3.4) {#more-information-error-prevention-legal-financial-data}
 
 * [Werken met succescriteria 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [Voldoen aan criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
@@ -1302,12 +1302,12 @@ Aangezien de reparatietechnieken tussen gebruikersagenten variëren, kunnen de a
 
 Volg de richtlijnen onder [Voldoen aan criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing) van het Succes.
 
-#### Meer informatie - Parseren (4.1.1) {#more-information-parsing}
+#### Meer informatie - parseren (4.1.1) {#more-information-parsing}
 
 * [Werken met succescriteria 4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [Voldoen aan de criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### Naam, Rol, Waarde (4.1.2) {#name-role-value}
+### Naam, Rol, Waarde (4.1.2)  {#name-role-value}
 
 * Succescriterium 4.1.2
 * Niveau A
