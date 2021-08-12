@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
 
    ![](assets/configure-pipeline5.png)
 
+### Een productiepijpleiding bewerken {#editing-prod-pipeline}
+
+U kunt de pijpleidingsconfiguraties van de **pagina van het Overzicht van het Programma** uitgeven.
+
+Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Klik op **Edit** van **Pipelines** kaart.
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. Met het tabblad **Broncode** kunt u de opslagplaats bijwerken. Klik op **Toegang tot repo-info** om de gegevensopslagruimte bij te werken.
+
+   >[!NOTE]
+   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. Met het tabblad **Omgevingen** kunt u het werkgebied en de productieopties bijwerken.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. Met de optie **Experience Audit** kunt u nieuwe pagina&#39;s bijwerken of toevoegen.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Klik op **Save** zodra u klaar bent met het bewerken van de pijplijn.
 
 ## Uitsluitend pijplijnen zonder productie en codekwaliteit {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
    * **Build**  - navigeert aan de uitvoeringspagina, waarvan de pijpleiding kan worden uitgevoerd
    * **Toegang tot repo-informatie** : hiermee kan de gebruiker de informatie ophalen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager
    * **Leer meer**  - navigeert aan het begrip van de CI/CD bron van de pijpleidingsdocumentatie.
+
+### Een niet-productiepijplijn bewerken {#editing-nonprod-pipeline}
+
+U kunt de pijpleidingsconfiguraties van de **pagina van het Overzicht van het Programma** uitgeven.
+
+Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te bewerken:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Selecteer het tabblad **Niet-productie** en klik op **Bewerken** nadat u de gewenste pijpleidingen hebt geselecteerd.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Selecteer de gewenste opslagplaats en klik op **Opslaan**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## De volgende stappen {#the-next-steps}
 
