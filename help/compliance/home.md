@@ -2,7 +2,7 @@
 title: Compatibiliteit
 description: Compatibiliteit
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 72%
@@ -15,11 +15,11 @@ Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken ove
 
 ## Belangrijke overzichtsartikelen {#key-articles}
 
-* [Gereedheid voor regelgeving inzake gegevensbescherming en gegevensbescherming](aem-readiness.md)
-* [Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](foundation-readiness.md)
-* [Sites-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](sites-readiness.md)
-* [Richtlijnen voor webtoegankelijkheid](web-accessibility.md)
-* [Snelgids voor WCAG 2.1](quick-guide-wcag.md)
+* [Gereedheid voor regelgeving inzake gegevensbescherming en gegevensbescherming](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Foundation-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Sites-gereedheid voor regelgeving inzake gegevensbescherming en -privacy](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Richtlijnen voor webtoegankelijkheid](/help/compliance/accessibility/web-accessibility.md)
+* [Snelgids voor WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
