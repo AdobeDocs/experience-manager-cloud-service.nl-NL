@@ -4,9 +4,9 @@ description: 'De Dynamic Media-nieuwsbrief per Experience League is een maandeli
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Bekijk de webinars van de Bouwer van de Vaardigheid op bestelling voor Dynamic Media Classic.
    * Bekijk de Dynamic Media-sessies vanuit Online Adobe Summit 2020.
    * Meer informatie over gratis Dynamic Media Classic-controles voor Adobe
-   * Ontmoet John Monroe, de Hogere Manager van het Programma voor de Diensten van het Succes van de Klant.
+   * Ontdek `John Monroe`, Senior Program Manager for Customer Success Services.
 
 * **[Februari 2020, uitgave 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Een gratis controle om meer waarde te krijgen van Dynamic Media Classic.
    * Een vakantieboodschappenseizoen met een recordinstelling voor klanten met rijke media in de Adobe.
    * Uw gids voor het selecteren van een DAM (Digital Asset Manager) die aan uw behoeften voor vandaag voldoet en u voorbereidt op wat nieuw is in rijke media morgen.
-   * Ontmoet Mark Dean, Digital Media Specialist.
+   * Ontmoet `Mark Dean`, Specialist van de Digitale Media.
 
 * **[November 2019, uitgave 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Ontdek hoe het Dynamic Media-team u kan helpen zich voor te bereiden op een dag met een hoger bezoekersverkeer dan normaal.
    * Een tweede kans om twee recente webinars van de Bouwer van de Vaardigheid te vangen.
    * Bekijk de webinar op aanvraag over het beschermen van uw digitale middelen tegen piraterij.
-   * Ontmoet Bridge Roman, Senior Product Marketing Manager voor Experience Manager Assets.
+   * Ontmoet `Bridget Roman`, Hoge Manager van de Marketing van het Product voor de Activa van de Experience Manager.
    * Ga op snelheid met Dynamic Media en Dynamic Media Classic in Experience League.
 
 * **[augustus 2019, uitgave 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
