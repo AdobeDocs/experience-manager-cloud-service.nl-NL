@@ -1,56 +1,51 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.7.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.7.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
 feature: Geen informatie
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 1%
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.7.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.8.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.7.0.
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.8.0.
 
 >[!NOTE]
 >Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager als Cloud Service te zien, klik [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.7.0 is 15 juli 2021.
-De volgende release is gepland voor 12 augustus 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.8.0 is 12 augustus 2021.
+De volgende release is gepland voor 9 september 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
-* Klanten kunnen nu Azul 8 en 11 JDK&#39;s gebruiken voor hun buildprocessen in Cloud Manager en kunnen een van deze JDK&#39;s selecteren voor met toolketens compatibele Maven-plug-ins *of* voor de volledige uitvoering van het Maven-proces.
+* Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar worden gesteld.
 
-* Uitgaande uitgang IP zal nu het programma worden geopend het dossier van het bouwstijlstaplogboek.
+* Het type en de strengheid van de IndexType en `IndexDamAssetLucene` kwaliteitsregels zijn veranderd. Dit zijn nu beide bugs van Blocker *serverity*.
 
-* Werkgebied- en productieomgevingen met oude versies van AEM rapporteren nu de status **Update Available**.
+* De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en tika configuraties te behandelen.
 
-* Het maximum aantal ondersteunde SSL-certificaten is gestegen tot 20 per programma.
+* Verhoog de maximale SSL-certs per programma tot 50.
 
-* Het maximumaantal domeinen dat kan worden gevormd is verhoogd tot 500 per milieu.
+* Self-service mogelijkheid om gebruikers in staat te stellen meerdere opslagruimten te maken en te beheren via de interface van Cloud Manager.
 
-* De knoppen **Git beheren** hebben een nieuwe naam gekregen in **Git-info benaderen** en het dialoogvenster is visueel vernieuwd.
+* SonarQube leest onnodig de gegevens uit de Git-geschiedenis. Op grote codebasis, zou dit tot een onnodige bouwstijlprestaties kunnen leiden.
+
+* Er is nu een API beschikbaar om het Geweven gebiedsdeelheidsgeheime voorgeheugen per pijpleiding ongeldig te maken.
 
 * De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 28.
 
 ### Opgeloste problemen {#bug-fixes}
 
-* In sommige situaties, was de Voorproef geen beschikbare optie toen het binden van een IP Lijst van gewenste personen aan een milieu.
+* Update Available status should not be displayed when the latest release is less than the current release.
 
-* Wanneer u handmatig naar de pagina met uitvoeringsdetails voor een niet-bestaande uitvoering navigeerde, werd geen fout weergegeven, alleen een eindeloos laadscherm.
+* De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
 
-* Het foutbericht dat wordt weergegeven wanneer het maximumaantal SSL-certificaten is bereikt, is niet nuttig.
+* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
 
-* In sommige omstandigheden, zou er een discrepantie in de versieversie kunnen zijn die in de pijpleidingskaart op **Overview** pagina wordt getoond.
-
-* De wizard Programma toevoegen heeft onjuist aangegeven dat de naam na het maken niet kan worden gewijzigd.
-
-### Bekende problemen {#known-issues}
-
-Klanten die overstappen op de Azul JDK&#39;s moeten zich ervan bewust zijn dat niet alle bestaande toepassingen zonder fout zullen compileren op Azul JDK. Het wordt hoogst geadviseerd om plaatselijk vóór omschakeling te testen.
 
