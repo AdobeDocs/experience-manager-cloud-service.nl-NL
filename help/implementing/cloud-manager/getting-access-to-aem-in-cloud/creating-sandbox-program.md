@@ -2,7 +2,7 @@
 title: 'Sandboxprogramma''s maken '
 description: Sandboxprogramma's maken
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 
    >[!NOTE]
    >
-   >Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/accessing-git.md) voor meer informatie over toegang tot en beheer van uw Git Repository via Self-Service Git Account Management vanuit de interface van Cloud Manager.
+   >Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/accessing-repos.md) voor meer informatie over toegang tot en beheer van uw Git Repository via Self-Service Git Account Management vanuit de interface van Cloud Manager.
 
 
 1. Zodra het ontwikkelmilieu wordt gecreeerd, kan de gebruiker AEM **Toegang** verbinding, zoals aangetoond in het hieronder cijfer:
