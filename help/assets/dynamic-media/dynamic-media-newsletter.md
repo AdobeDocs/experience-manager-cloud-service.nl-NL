@@ -4,9 +4,9 @@ description: 'De Dynamic Media-nieuwsbrief per Experience League is een maandeli
 feature: Beheer van bedrijfsmiddelen
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 352b615971329600a82a08c5b5b286877ecac322
+source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Meer informatie over gratis Dynamic Media Classic-controles voor Adobe
    * Ontmoet John Monroe, de Hogere Manager van het Programma voor de Diensten van het Succes van de Klant.
 
-* **[Februari 2020, uitgave 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[Februari 2020, uitgave 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    In dit verband:
 
