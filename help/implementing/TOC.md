@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1043'
 ht-degree: 27%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 27%
 + [Applicaties voor AEM as a Cloud Service implementeren](/help/implementing/home.md)
 + Cloud Manager gebruiken {#using-cloud-manager}
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Opmerkingen bij de huidige release (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Opmerkingen bij de huidige release (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Opmerkingen bij de release 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Opmerkingen bij de release 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Opmerkingen bij de release 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
          + [Opmerkingen bij de release 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
@@ -64,6 +65,7 @@ ht-degree: 27%
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
    + [Logbestanden openen en beheren](cloud-manager/manage-logs.md)
+   + [SLA-rapportage](cloud-manager/sla-reporting.md)
    + [Inzicht in meldingen](cloud-manager/notifications.md)
    + SSL-certificaten beheren {#manage-ssl-certificates}
       + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -94,7 +96,8 @@ ht-degree: 27%
    + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Uw code beheren {#managing-code}
    + [Maven-projectversiebeheer](cloud-manager/project-version-handling.md)
-   + [Toegang tot Git](cloud-manager/accessing-git.md)
+   + [Opslagplaatsen in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
+   + [Toegang tot opslagplaatsen](cloud-manager/accessing-repos.md)
    + [Git integreren met Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Werken met Meerdere bronopslaglocaties voor Git](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [De Opstelling van de Ontwikkeling van het Team van de onderneming voor AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
