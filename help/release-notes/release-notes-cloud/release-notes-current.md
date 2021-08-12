@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,21 @@ De volgende release is gepland voor 12 augustus 2021.
 ### Bekende problemen {#known-issues-cm-july}
 
 Klanten die overstappen op de Azul JDK&#39;s moeten zich ervan bewust zijn dat niet alle bestaande toepassingen zonder fout zullen compileren op Azul JDK. Het wordt hoogst geadviseerd om plaatselijk vóór omschakeling te testen.
+
+## De tool Content Transfer {#content-transfer-tool}
+
+### Releasedatum {#release-date-ctt-latest}
+
+De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
+
+### Opgeloste problemen {#bug-fixes-ctt}
+
+* In sommige gevallen zijn niet alle gebruikers gemigreerd naar de doelinstantie. Om deze moeilijke CTT v1.5.6 te krijgen wordt vereist samen met aem-ethos-hulpmiddelen 1.2.354 of recentere versie op het doel AEM als instantie van de Cloud Service.
+
+* De **Stop Ingestie** knoop werd onbruikbaar gemaakt tijdens opname aan de Publish instantie. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
+
+* CTT heeft de map `/tmp` niet opgeschoond na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.
+
 
 ## Cloud Acceleration Manager {#cam}
 
