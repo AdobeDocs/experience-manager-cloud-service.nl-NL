@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API's,middelen HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met ext
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager], kunt u met behulp van asset-microservices assets elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Enkele workflowstappen die in de [!UICONTROL DAM Update Asset]-workflow in de vorige versie werden gebruikt, worden niet ondersteund. Zie de [Java API-referentie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) voor meer informatie over ondersteunde klassen.
+Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager], kunt u met behulp van asset-microservices assets elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Enkele workflowstappen die in de [!UICONTROL DAM Update Asset]-workflow in de vorige versie werden gebruikt, worden niet ondersteund. Zie de [Java API-naslag of Java JavaDocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) voor meer informatie over ondersteunde klassen.
 
 De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar:
 
