@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
+source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 0%
@@ -177,7 +177,7 @@ Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te
 
 1. Selecteer de gewenste opslagplaats en andere vereiste updates en klik op **Opslaan**.
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## De volgende stappen {#the-next-steps}
 
