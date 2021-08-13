@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Re
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
 feature: Geen informatie
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manage
 
 * Er is nu een API beschikbaar om het Geweven gebiedsdeelheidsgeheime voorgeheugen per pijpleiding ongeldig te maken.
 
-* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 28.
+* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 29.
 
 ### Opgeloste problemen {#bug-fixes}
 
