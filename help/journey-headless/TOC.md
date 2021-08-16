@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Headless Developer Journey
-user-guide-title: AEM Headless Developer Journey
-breadcrumb-title: AEM Headless Developer Journey
+sub-product: Reizen zonder kop AEM
+user-guide-title: Reizen zonder kop AEM
+breadcrumb-title: Reizen zonder kop AEM
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# AEM headless Journaal {#headless-journey}
+# Reizen zonder kop AEM {#headless-journey}
 
++ [Reizen zonder kop AEM](/help/journey-headless/home.md)
 + AEM Headless Developer Journey {#developer}
    + [Doorschijnend begrijpen in AEM](developer/overview.md)
    + [Meer informatie over CMS Headless Development](developer/learn-about.md)
