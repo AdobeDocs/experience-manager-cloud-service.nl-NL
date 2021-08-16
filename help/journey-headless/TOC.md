@@ -5,9 +5,9 @@ breadcrumb-title: AEM Headless Developer Journey
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
+source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,11 @@ ht-degree: 0%
    + [Grondbeginselen van ontwerpen voor headless met AEM](author/basics.md)
    + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](author/references.md)
    + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](author/metadata-tagging.md)
++ Reis van architect zonder hoofdinhoud AEM {#content-architect}
+   + [Reis van architect zonder hoofdinhoud AEM overzicht](architect/overview.md)
+   + [Content Modeling for Headless with AEM - Een introductie](architect/introduction.md)
+   + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](architect/basics.md)
+   + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](architect/model-structure.md)
 + AEM Headless Translation Reis {#translation}
    + [Begrijp de Zwaardeloze Lokalisatie in AEM](translation/overview.md)
    + [Aan de slag met AEM headless localisatie](translation/getting-started.md)
