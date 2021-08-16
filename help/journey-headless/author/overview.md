@@ -4,9 +4,9 @@ description: Begin hier voor een geleide reis door de krachtige en flexibele hea
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '734'
 ht-degree: 1%
 
 ---
@@ -66,3 +66,14 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
+
+## Aanvullende bronnen {#additional-resources}
+
+Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te verstrekken dat u door complexe, onderling samenhangende processen en eigenschappen begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
+
+Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
+
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)  - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u ze kunt gebruiken voor uw eerste ontwikkelingsproject.
+* [Headless Architect Journey](/help/journey-headless/architect/overview.md)  - Begin hier voor een introductie van de krachtige, flexibele, ongekende functies van Adobe Experience Manager als Cloud Service en hoe u inhoud voor uw project kunt modelleren.
+* [AEM als technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  van de Cloud Service - Als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
