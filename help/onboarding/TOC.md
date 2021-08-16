@@ -5,10 +5,10 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Implementeren
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 43%
+source-wordcount: '133'
+ht-degree: 41%
 
 ---
 
@@ -37,4 +37,3 @@ ht-degree: 43%
    + [KPI&#39;s evalueren](best-practices/assessing-kpis.md)
    + [KPI&#39;s uitlijnen](best-practices/aligning-kpis.md)
    + [Kies het juiste team](best-practices/choose-right-team.md)
-+ [Overzicht van de toolconsoles](tools-consoles.md)
