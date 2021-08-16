@@ -5,7 +5,7 @@ breadcrumb-title: AEM Headless Developer Journey
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Gereedschappen voor ontwikkelaars
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -38,9 +38,9 @@ ht-degree: 0%
    + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](architect/basics.md)
    + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](architect/model-structure.md)
 + AEM Headless Translation Reis {#translation}
-   + [Begrijp de Zwaardeloze Lokalisatie in AEM](translation/overview.md)
-   + [Aan de slag met AEM headless localisatie](translation/getting-started.md)
-   + [Meer informatie over inhoud zonder kop en hoe u kunt lokaliseren in AEM](translation/learn-about.md)
+   + [Begrijp zonder hoofd vertaling in AEM](translation/overview.md)
+   + [Ga aan de slag met AEM headless vertaling](translation/getting-started.md)
+   + [Meer informatie over inhoud zonder kop en hoe u kunt vertalen in AEM](translation/learn-about.md)
    + [Vertaalaansluiting configureren](translation/configure-connector.md)
    + [Vertaalregels configureren](translation/translation-rules.md)
    + [Inhoud vertalen](translation/translate-content.md)
