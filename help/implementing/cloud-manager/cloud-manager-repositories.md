@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Opslagplaatsen voor Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Opslagplaatsen voor Cloud Manager {#cloud-manager-repos}
 
 Opslagplaatsen die zijn gemaakt en beschikbaar zijn in Cloud Manager, kunnen worden weergegeven en beheerd via de pagina Opslagplaatsen.
+
+>[!NOTE]
+>Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaald bedrijf of [Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
 
 ## Opslagplaatsen toevoegen en beheren {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Voer de onderstaande stappen uit om opslagruimten in Cloud Manager weer te geven
    ![](assets/repos/repo-1.png)
 
 1. Selecteer **Opslaan**. De nieuwe reactie wordt weergegeven in de tabel, zoals hieronder wordt weergegeven.
+
+   >[!NOTE]
+   >Er is één *primaire* bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [Ondersteuning voor Git-submodule](#git-submodule-support) kunnen er echter veel secundaire vertakkingen worden opgenomen tijdens het bouwen.
 
    ![](assets/repos/create-repo3.png)
 
