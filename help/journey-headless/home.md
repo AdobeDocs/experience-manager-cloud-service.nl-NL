@@ -1,9 +1,9 @@
 ---
 title: Reizen zonder kop AEM
 description: Begin hier voor een overzicht van de begeleide reizen beschikbaar om AEM krachtige headless eigenschappen te begrijpen.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -52,5 +52,7 @@ De volgende Documentatiereizen zijn beschikbaar voor onderwerpen zonder kop.
 |---|---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Leer over headless technologieën, wat zij aan de gebruikerservaring brengen, hoe AEM koploze modellen steunt, en hoe te om uw eigen headless ontwikkelingsproject van A tot Z uit te voeren. | Ontwikkelaars |
 | [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
+| [Papierreis zonder koppen](/help/journey-headless/author/overview.md) | Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
+| [Architect zonder hoofd](/help/journey-headless/architect/overview.md) | Begin hier voor een inleiding aan de krachtige, en flexibele, onervaren eigenschappen van Adobe Experience Manager als Cloud Service, en hoe te om inhoud voor uw project te modelleren. | Inhoudsmakers en auteurs |
 
 Blijf op de hoogte voor [komende reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
