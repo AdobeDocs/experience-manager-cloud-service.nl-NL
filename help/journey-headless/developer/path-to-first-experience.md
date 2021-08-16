@@ -1,13 +1,13 @@
 ---
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
-
 
 # Pad naar uw eerste ervaring met AEM zonder kop {#path-to-first-experience}
 
@@ -40,7 +40,7 @@ Voordat u doorgaat met dit document, moet u ervoor zorgen dat u het vorige docum
 * Voldoe aan de vermelde vereisten.
 * Heb uw eigen projectdefinitie met inbegrip van werkingsgebied, rollen, en prestaties overwogen.
 
-## Planning voor Succes {#planning-for-success}
+## Planning voor succes {#planning-for-success}
 
 Als u uw eerste AEM project zonder kop wilt starten, moet u ervoor zorgen dat u een inhoudsmodel hebt dat de personalisatie en updates die u op al uw kanalen wilt maken, ondersteunt.
 
@@ -50,11 +50,11 @@ Afzonderlijk van AEM, wilt u ook ervoor zorgen u een juiste ontwikkelomgeving op
 
 U wilt een consistente ervaring opdoen en gepersonaliseerde campagnes over kanalen beheren, zodat u elk afzonderlijk kanaal en oppervlak kunt bekijken als een eigen specifieke inhoudsstructuur om aan te leveren. Nochtans heeft het hebben van elk kanaal zijn eigen inhoudsmodel uitdagend om te handhaven.
 
-In plaats daarvan, zou u moeten overwegen hoe de inhoud op verschillende oppervlakten op het organiseren van beginsel zoals merk en producthiërarchieën, categorieën van goederen of oppervlakten, of stappen in de klantenreis verwant zijn. Als u bijvoorbeeld een reeks oppervlakken hebt die een specifiek merk auto&#39;s ondersteunen dat u maakt, kunt u beginnen met een inhoudsmodel voor algemene informatie die geldig is voor de hele auto en vervolgens meer contextspecifieke elementen hebben, zoals de inhoud die nodig is wanneer de auto wordt gestart tot wanneer er servicekwesties zijn. Een dergelijk model zal de overerving van de algemene inhoud van het automerk afdwingen en tegelijk verschuivingen mogelijk maken op basis van specifieke omstandigheden die nodig zijn. Het helpt ook bij het beheer in de toekomst van updates voor deze inhoud, aangezien u controle kunt afdwingen op basis van rollen zoals de algemene markator of productmanager voor het hele automerk tegenover een auteur die verantwoordelijk is voor de &quot;startervaring&quot;.
+In plaats daarvan, zou u moeten nadenken hoe de inhoud op verschillende oppervlakten op het organiseren van beginsel zoals merk en producthiërarchieën, categorieën van goederen of oppervlakten, of stappen in de klantenreis wordt verwant. Als u bijvoorbeeld een reeks oppervlakken hebt die een specifiek merk auto&#39;s ondersteunen dat u maakt, kunt u beginnen met een inhoudsmodel voor algemene informatie die geldt voor de hele auto en vervolgens meer - specifieke elementen hebben, zoals de inhoud die nodig is wanneer de auto wordt gestart tot wanneer er serviceproblemen zijn. Een dergelijk model zal de overerving van de algemene inhoud van het automerk afdwingen en tegelijk verschuivingen mogelijk maken op basis van de specifieke context die nodig is. Het helpt ook bij het beheer in de toekomst van updates voor deze inhoud, aangezien u controle kunt afdwingen op basis van rollen zoals de algemene markator of productmanager voor het hele automerk tegenover een auteur die verantwoordelijk is voor de &quot;startervaring&quot;.
 
 Zodra u het inhoudsmodel en de duidelijke mening op de diverse cliënten hebt moet de inhoud worden opgezocht aan, moet u ervoor zorgen GraphQL/APIs verbonden aan de toegang tot van diverse van het inhoudsmodel wordt gepubliceerd aan alle cliënten die deze inhoud nodig hebben. Er zijn verschillende opties voor de toegang tot bepaalde inhoud. U kunt om een specifiek stuk van inhoud verzoeken dat statisch is die caching van de inhoud en hogere prestaties toelaat. U kunt ook inhoud aanvragen die dynamisch wordt gegenereerd en waarvoor meer verwerkingstijd nodig is. Zorg ervoor dat clients gebruikmaken van de API&#39;s die het meest efficiënt zijn voor hun zakelijke behoeften.
 
-## Uw omgevingen {#understanding-environments}
+## Inzicht in uw omgevingen {#understanding-environments}
 
 Binnen AEM zijn er drie soorten omgevingen: ontwikkeling, staging en productie.
 
@@ -105,13 +105,13 @@ Een project zonder kop is niet alleen succesvol vanwege de geïmplementeerde tec
 * Wanneer u toegangsvereisten hebt, zouden zij uw inhoudshiërarchie moeten drijven. Groepeer de inhoud die door dezelfde groep personen wordt bewerkt.
 * Groepeer vergelijkbare inhoud in een map.
    * Het is waarschijnlijker dat een auteur van inhoud bestaande inhoud kopieert en plakt om nieuwe inhoud te maken. Als u dit in dezelfde map doet, wordt het efficiënter.
-   * AEM staat toe om toegestane modellen per omslag te plaatsen zodat zal de **Create nieuwe** knoop slechts de modellen tonen die in die plaats worden gesteund.
+   * AEM staat toe dat modellen per omslag worden geplaatst zodat zal de **Create nieuwe** knoop slechts de modellen tonen die in die plaats worden gesteund.
 * Het maken van nieuwe inhoudsfragmenten in de In-line Content Fragment Editor kan worden vereenvoudigd als de hoofdmap is ingesteld in het model. Dan moet de arts geen plaats kiezen, maar enkel een naam verstrekken en kan beginnen de nieuwe verwijzing uit te geven.
 
 ### Inhoud ontwerpen {#authoring}
 
 * Voor kanaalspecifieke versies van uw inhoud kunt u overwegen variaties in inhoudsfragmenten te gebruiken. Variaties worden gesynchroniseerd met de inhoud die is master om het beheer van inhoudswijzigingen te stroomlijnen.
-* Andere inhoudsproducenten uitnodigen om inhoud te beoordelen en feedback te geven met annotaties en opmerkingen, die beschikbaar zijn in de inhoudsfragmenteditor en wereldwijd voor fragmenten in de beheerconsole van inhoudsfragmenten.
+* Andere producenten van inhoud uitnodigen om inhoud te beoordelen en feedback te geven met annotaties en opmerkingen, die beschikbaar zijn in de fragmenteditor van de inhoud en globaal zijn voor fragmenten in de Admin Console van inhoudsfragmenten.
 * Houd de zaken met zo weinig mogelijk verplichte elementen in beweging. Verplichte elementen kunnen de workflow blokkeren.
 
 ### Globale inhoud ontwerpen {#localization}
@@ -120,7 +120,7 @@ Een project zonder kop is niet alleen succesvol vanwege de geïmplementeerde tec
 * Maak gebruik van alle mogelijkheden die uw vertaaltechnologie biedt en die u kunt integreren met AEM, zoals vertaalgeheugen.
 * Begrijp als rijke media inhoud, zoals beelden en video&#39;s, localisatie vereist.
 
-## Volgende {#what-is-next}
+## Volgende functies {#what-is-next}
 
 Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
@@ -142,6 +142,7 @@ Wat uw het leren stijl ook maakt, Adobe wil u slagen aangezien u met uw project 
 
 Terwijl wordt geadviseerd dat u op het volgende deel van de headless ontwikkelingsreis door het document [te herzien hoe te Model Uw Inhoud als Modellen van de Inhoud,](model-your-content.md) het volgende zijn enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld, maar zij worden vereist niet om op de headless reis verder te gaan.
 
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)  - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Headless Development voor AEM Sites als Cloud Service](/help/implementing/developing/headless/introduction.md)  - Een korte inleiding om de ontwikkelaar van AEM Headless de nodige functies te geven
 * [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  zonder kop - Gebruik deze praktische zelfstudies om te bekijken hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
 * [Koploos inhoudsbeheer met GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Volg deze cursus voor een overzicht van de GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
