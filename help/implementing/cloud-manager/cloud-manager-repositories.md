@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Opslagplaatsen voor Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Opslagplaatsen die zijn gemaakt en beschikbaar zijn in Cloud Manager, kunnen worden weergegeven en beheerd via de pagina Opslagplaatsen.
 
 >[!NOTE]
->In [Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html) geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaald bedrijf of een bepaald bedrijf.
+>Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaald bedrijf (of IMS Org).
 
 ## Opslagplaatsen toevoegen en beheren {#add-manage-repos}
 
@@ -34,10 +34,10 @@ Voer de onderstaande stappen uit om opslagruimten in Cloud Manager weer te geven
 
    ![](assets/repos/repo-1.png)
 
-1. Selecteer **Opslaan**. De nieuwe reactie wordt weergegeven in de tabel, zoals hieronder wordt weergegeven. In Cloud Manager gemaakte opslagplaatsen kunnen u ook selecteren tijdens het toevoegen of bewerken van pijpleidingstappen. Verwijs naar [Vorm uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) om meer te leren.
+1. Selecteer **Opslaan**. De nieuwe reactie wordt weergegeven in de tabel, zoals hieronder wordt weergegeven.
 
    >[!NOTE]
-   >Er is één *primaire* bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [Ondersteuning voor Git-submodule](#git-submodule-support) kunnen er echter veel secundaire vertakkingen worden opgenomen tijdens het bouwen.
+   >In Cloud Manager gemaakte opslagplaatsen kunnen u ook selecteren tijdens het toevoegen of bewerken van pijpleidingstappen. Verwijs naar [Vorm uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) om meer te leren. Er is één *primaire* bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [Ondersteuning voor Git-submodule](#git-submodule-support) kunnen er echter veel secundaire vertakkingen worden opgenomen tijdens het bouwen.
 
    ![](assets/repos/create-repo3.png)
 
