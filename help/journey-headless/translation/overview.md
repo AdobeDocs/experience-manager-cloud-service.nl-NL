@@ -4,9 +4,9 @@ description: Begin hier voor een begeleide reis door uw inhoud zonder kop te ver
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '1005'
 ht-degree: 1%
 
 ---
@@ -83,5 +83,7 @@ Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal 
 
 Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
+* [Headless Authoring Journey](/help/journey-headless/author/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u uw inhoud kunt modelleren op uw eerste project zonder kop.
+* [Headless Architect Journey](/help/journey-headless/architect/overview.md)  - Begin hier voor een introductie van de krachtige, flexibele, ongekende functies van Adobe Experience Manager als Cloud Service en hoe u inhoud voor uw project kunt modelleren.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u ze kunt gebruiken voor uw eerste ontwikkelingsproject.
 * [AEM als technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  van de Cloud Service - Als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
