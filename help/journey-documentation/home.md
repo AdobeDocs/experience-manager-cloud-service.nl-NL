@@ -1,9 +1,9 @@
 ---
 title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,8 @@ Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke re
 | Reis | Beschrijving |
 |---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Begin hier om te zien hoe AEM headless ontwikkelingsmodellen steunt en hoe te om uw project van planning, implementatie, te krijgen om te leven. |
-| Papierreis zonder koppen | Begin hier om te zien hoe u inhoud zonder kop in AEM ontwerpt en beheert. |
+| [Papierreis zonder koppen](/help/journey-headless/author/overview.md) | Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. |
+| [Architect zonder hoofd](/help/journey-headless/architect/overview.md) | Begin hier voor een inleiding aan de krachtige, en flexibele, onervaren eigenschappen van Adobe Experience Manager als Cloud Service, en hoe te om inhoud voor uw project te modelleren. |
 | [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md) | Begin hier om te zien hoe u uw vertaalprojecten zonder kop in AEM kunt opzetten en beheren. |
 | AEM Onboarding Journey | Binnenkort verkrijgbaar! |
 | AEM Commerce-reis | Binnenkort verkrijgbaar! |
