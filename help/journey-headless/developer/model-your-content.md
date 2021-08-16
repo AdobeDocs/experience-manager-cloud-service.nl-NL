@@ -1,21 +1,21 @@
 ---
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
-source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
+exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
 
 ---
 
-
-# Hoe te om Uw Inhoud {#model-your-content} te modelleren
+# Uw inhoud modelleren {#model-your-content}
 
 In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u de inhoudsstructuur kunt modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Aan het begin [Leer over CMS Headless Development](learn-about.md) bedekte de levering van inhoud zonder kop en waarom het zou moeten worden gebruikt. Dan [Aan de slag met AEM Headless als Cloud Service](getting-started.md) beschreven AEM Headless in de context van uw eigen project
+Aan het begin [Leer over CMS Headless Development](learn-about.md) bedekte de levering van inhoud zonder kop en waarom het zou moeten worden gebruikt. Vervolgens [Aan de slag met AEM Headless als een Cloud Service](getting-started.md) wordt AEM Headless beschreven in de context van uw eigen project.
 
 In het vorige document van de AEM hoofdloze reis, [Weg aan Uw Eerste Ervaring Gebruikend AEM Headless](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Na het lezen moet u:
 
@@ -101,7 +101,7 @@ Nadat dit stabiel is kunt u de modellen in een **Logisch Schema** vertalen dat d
 
 Bijvoorbeeld, hebt u afzonderlijke entiteiten voor `Head Teacher` en `Teacher`, of eenvoudig een extra attribuut op het `Teacher` model nodig?
 
-### Gegevensintegriteit {#data-integrity} waarborgen
+### Waarborging van gegevensintegriteit {#data-integrity}
 
 Gegevensintegriteit is nodig om de nauwkeurigheid en consistentie van uw inhoud gedurende de gehele levenscyclus te garanderen. Dit betekent dat auteurs van inhoud gemakkelijk kunnen begrijpen wat ze moeten opslaan - dus het volgende is van essentieel belang:
 
@@ -110,7 +110,7 @@ Gegevensintegriteit is nodig om de nauwkeurigheid en consistentie van uw inhoud 
 * validatie van afzonderlijke velden
 * indien van toepassing, de inhoud van specifieke velden beperken tot wat zinvol is
 
-### Gegevensredundantie {#data-redundancy} verwijderen
+### Gegevensredundantie elimineren {#data-redundancy}
 
 Gegevensredundantie treedt op wanneer dezelfde informatie tweemaal wordt opgeslagen binnen de inhoudsstructuur. Dit moet worden vermeden, omdat dit tot verwarring kan leiden bij het creëren van de inhoud en fouten bij het opvragen; om nog maar te zwijgen van het misbruik van opslagruimte .
 
@@ -222,7 +222,7 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 >
 >Zie Aanvullende bronnen - Modellen van inhoudsfragmenten.
 
-## Het gebruiken van het Model aan de Inhoud van de Auteur met Inhoudsfragmenten {#use-content-to-author-content}
+## Inhoud met inhoudsfragmenten schrijven met het model {#use-content-to-author-content}
 
 Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model biedt de structuur, het fragment bevat de inhoud.
 
@@ -232,7 +232,7 @@ De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment
 
 Een inhoudsfragment is gebaseerd op een specifiek inhoudsfragmentmodel dat u selecteert als de eerste stap van het ontwerpproces.
 
-### Structurele inhoud maken en bewerken {#create-edit-structured-content}
+### Gestructureerde inhoud maken en bewerken {#create-edit-structured-content}
 
 Nadat u het fragment hebt gemaakt, kunt u het openen in de Inhoudsfragmenteditor. Hier kunt u:
 
@@ -244,7 +244,7 @@ Nadat u het fragment hebt gemaakt, kunt u het openen in de Inhoudsfragmenteditor
 * De boomstructuur tonen.
 * Geef een voorvertoning van de JSON-representatie weer.
 
-### Inhoudsfragmenten {#creating-content-fragments} maken
+### Inhoudsfragmenten maken {#creating-content-fragments}
 
 Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
 
@@ -264,7 +264,7 @@ tbc...
 
 Zie De structuur van het voorbeeldinhoudsfragment voor een basisstructuur als voorbeeld.
 
-## Volgende {#whats-next}
+## Volgende functies {#whats-next}
 
 Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te brengen afhankelijk van dat, is de volgende stap aan [Leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen](access-your-content.md). Dit zal GraphQL introduceren en bespreken, dan bekijk sommige steekproefvragen om te zien hoe de dingen in praktijk werken.
 
