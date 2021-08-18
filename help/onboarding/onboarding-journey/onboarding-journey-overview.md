@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 1%
 
 ---
@@ -37,14 +37,14 @@ De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
 
-## Onboarding Journey verkennen {#exploring-onboarding-journey}
+## De reis Onboarding verkennen {#exploring-onboarding-journey}
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis van de stappen die u als Cloud Service bij het instappen AEM. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u aan het instappen nieuw bent, dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | Onboarding Journaal | Dit document |
-| 1 | Leer Begrippen aan boord, zoals:<br>[Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service Team en Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Ondersteuning voor Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Meer informatie over instapconcepten. |
+| 1 | Leer Begrippen aan boord, zoals:<br>[Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service Team en Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Contact opnemen met de Adobe-ondersteuning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Meer informatie over instapconcepten. |
 | 2 | Aan de slag met on-boarding | Meer informatie over het aanmelden bij Admin Console en het controleren van uw profiel als systeembeheerder |
 | 3 | Teamleden toewijzen aan productprofielen van Cloud Manager | Bekijk de productprofielen van Cloud Manager en leer hoe u teamleden toewijst aan productprofielen van Cloud Manager. |
 | 4 | Cloud Resources instellen via Cloud Manager | Leer hoe uw cloudbronnen zijn gemaakt en wie dit kan doen. Leer ook hoe uw cloudprogramma&#39;s en -omgevingen zijn gemaakt. |
