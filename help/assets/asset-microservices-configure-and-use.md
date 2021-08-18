@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2645'
 ht-degree: 0%
@@ -238,7 +238,7 @@ Om te weten hoe te om een configuratie op te stellen OSGi, zie [opstellen aan [!
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] aanpassen om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 * Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
-* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 10 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
+* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
 >[!MORELIKETHIS]
 >
