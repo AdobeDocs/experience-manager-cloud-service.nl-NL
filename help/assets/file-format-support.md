@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Middelenbeheer, uitvoeringen
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 5%
@@ -227,7 +227,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Tips en beperkingen {#limitations-and-tips}
 
-* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 10 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
+* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
 >[!MORELIKETHIS]
 >
