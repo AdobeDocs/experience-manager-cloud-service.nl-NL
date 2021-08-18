@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aan de slag met het instapproces {#getting-started}
 
-Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
+Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid login en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
 ## Doelstelling {#objective}
 
@@ -55,11 +55,11 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Nadat u op **Beheerders** van de **Gebruikers** kaart hebt geklikt, kunt u in de voorgaande stap zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
+1. Nadat u op **Beheerders** van de **Gebruikers** kaart hebt geklikt, kunt u zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. Het onderzoek moet met succes uw e-mailverslag met **System** onder de kolom met het label **ADMIN ROLE** terugvinden, zoals hieronder getoond. Dit bevestigt dat u de Beheerder van het Systeem bent.
+1. De zoekopdracht moet uw e-mailrecord hebben gevonden. Bovendien moet **ADMIN ROLE** **System** tonen, zoals hieronder getoond. Dit bevestigt u een Beheerder van het Systeem bent. Dit bevestigt uw rol als Beheerder van het Systeem.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
