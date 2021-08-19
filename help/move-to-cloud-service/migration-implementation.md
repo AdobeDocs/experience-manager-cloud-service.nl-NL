@@ -2,10 +2,10 @@
 title: Implementatiefase
 description: Implementatiefase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 89%
+source-wordcount: '943'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager for Cloud Services-pipeline-uitvoeringen ondersteunen de uitvoerin
 
 Raadpleeg [Codekwaliteitstests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) voor meer informatie over het schrijven van testscripts en de aanbevolen dekking van minimaal 50%.
 
-Of raadpleeg [Inzicht in aangepaste regels voor codekwaliteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) voor meer informatie over de kwaliteitsregels voor aangepaste code die wordt uitgevoerd door Cloud Manager. Deze regels zijn gebaseerd op de best practices van AEM Engineering.
+Of raadpleeg [Inzicht in aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor meer informatie over de kwaliteitsregels voor aangepaste code die wordt uitgevoerd door Cloud Manager. Deze regels zijn gebaseerd op de best practices van AEM Engineering.
 
 Cloud Manager is het enige mechanisme voor het implementeren van code in Cloud Service-omgevingen.
 
