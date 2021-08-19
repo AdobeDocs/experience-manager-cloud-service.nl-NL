@@ -2,9 +2,9 @@
 title: Sling Adapters
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 04767681216ebee845fa6120e3da8db8e105f68f
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2234'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Bijvoorbeeld om een voorwerp van het Middel aan het overeenkomstige voorwerp van
 Node node = resource.adaptTo(Node.class);
 ```
 
-## Gevallen {#use-cases} gebruiken
+## Gevallen gebruiken {#use-cases}
 
 Er zijn de volgende gebruiksgevallen:
 
@@ -29,7 +29,7 @@ Er zijn de volgende gebruiksgevallen:
 
 * Het maken van sneltoetsen voor objecten waarvoor interne contextobjecten moeten worden doorgegeven.
 
-   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) van het verzoek, die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting gebaseerd zullen werken, zoals [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
+   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) van het verzoek, die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting gebaseerd zullen werken, zoals [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
 
 * Snelkoppeling naar services.
 
@@ -56,7 +56,7 @@ Deze caching wordt uitgevoerd voor alle `AdapterFactory` gebaseerde gevallen.
 
 Er is echter geen algemene regel: het object kan een nieuw of een bestaand object zijn. Dit betekent dat u niet op één van beide gedrag kunt vertrouwen. Daarom is het belangrijk, vooral binnen `AdapterFactory`, dat de voorwerpen in dit scenario herbruikbaar zijn.
 
-### Hoe werkt {#how-it-works}
+### Hoe werkt het {#how-it-works}
 
 Er zijn verschillende manieren waarop `Adaptable.adaptTo()` kan worden geïmplementeerd:
 
