@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
+source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 4%
@@ -37,7 +37,7 @@ De CIF Add-On wordt verstrekt als Sling Feature archief. Het ZIP-bestand dat bes
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [AEM als Cloud Service SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM als Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
 - [Node.js v10+](https://nodejs.org/en/)
@@ -168,7 +168,7 @@ De componenten van de Kern van CIF kunnen in om het even welk project worden geb
 
 ### AEM Venia Reference Store gebruiken
 
-Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden met best practices en een mogelijk uitgangspunt voor het ontwikkelen van uw eigen functionaliteit.
+Een tweede mogelijkheid om een CIF-project te starten, is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldopslagtoepassing die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
 
 Om aan de slag te gaan met de Venia Reference Store klonen we gewoon de Git-opslagplaats en begint u het project aan te passen aan uw behoeften.
 
