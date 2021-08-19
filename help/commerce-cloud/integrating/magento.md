@@ -2,18 +2,21 @@
 title: AEM en Adobe Commerce (Magento) Integratie die het Kader van de Integratie van de Handel gebruikt
 description: AEM en Adobe Commerce (Magento) zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
-exl-id: 1cdfda88-a728-432f-b24a-f81347572bcf
-translation-type: tm+mt
-source-git-commit: a4e53fdcb33eab8afabcb13d651155cd247bda1f
+exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
+source-git-commit: b6a9b515724b0a950fc399bec0d746fe273cfd33
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# Integratie van AEM en Adobe Commerce (Magento) met gebruik van Commerce Integration Framework {#aem-magento-framework}
+# Integratie van AEM en Adobe Commerce (Magento) Gebruikend kader voor integratie van de Handel {#aem-magento-framework}
 
 De Experience Manager en de Handel van de Adobe (Magento) zijn naadloos geïntegreerd gebruikend het Kader van de Integratie van de Handel (CIF). CIF laat AEM toe om tot en met de handelsinstantie direct toegang te hebben gebruikend Adobe Commerce [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
+
+>[!NOTE]
+>
+> De minimaal ondersteunde GraphQL API-versie is 2.3.5. Bepaalde functies worden alleen ondersteund in nieuwere versies of alleen in de editie Adobe Commerce.
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ De Experience Manager en de Handel van de Adobe (Magento) zijn naadloos geïnteg
 >* [AEM Inhoudsfragmenten werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
-## Overzicht architectuur {#overview}
+## Overzicht van architectuur {#overview}
 
 De architectuur ziet er als volgt uit:
 
