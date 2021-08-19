@@ -2,9 +2,9 @@
 title: Migratie naar Experience Manager als Cloud Service
 description: Migratie naar Experience Manager als Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2105'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ Deze één-pager schetst de geadviseerde gefaseerde benadering van overgangs kla
 
 <br>
 
-## Aan de slag met Adobe Experience Manager als een Cloud Service {#getting-started}
+## Aan de slag met Adobe Experience Manager als Cloud Service {#getting-started}
 
 | Wat is anders? | Overzicht van architectuur |
 |--------------------------|--------------------------|
@@ -53,10 +53,10 @@ Zie zelf-hulp middelen over implementatie voor Experience Manager als Cloud Serv
 
 | Local Development Setup | Informatie voordat je begint |
 |-----------|------------|
-| <ol><li>Raadpleeg de documentatie bij [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) voor meer informatie.</li><li>Bekijk [Dispatcher SDK installeren](https://video.tv.adobe.com/v/30601) om te begrijpen hoe u Dispatcher SDK installeert</li><li>Controle [Vorm Dispatcher SDK](https://video.tv.adobe.com/v/30602) om te begrijpen hoe te om de SDK van de Ontvanger te vormen</li><li>Raadpleeg de [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)-documentatie voor meer informatie</li><li>Toegang tot Experience Manager [doorlopen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing) configureren</li></ol> | <ol><li>[Grondbeginselen van ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Richtlijnen voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Werken met de projectstructuur van Experience Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)</li><li>[Blauwdruk digitale basis](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Bedekkingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Experience Manager als Cloud Service API-referentie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>Raadpleeg de documentatie bij [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) voor meer informatie.</li><li>Bekijk [Dispatcher SDK installeren](https://video.tv.adobe.com/v/30601) om te begrijpen hoe u Dispatcher SDK installeert</li><li>Controle [Vorm Dispatcher SDK](https://video.tv.adobe.com/v/30602) om te begrijpen hoe te om de SDK van de Ontvanger te vormen</li><li>Raadpleeg de [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)-documentatie voor meer informatie</li><li>Toegang tot Experience Manager [doorlopen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing) configureren</li></ol> | <ol><li>[Grondbeginselen van ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Richtlijnen voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Werken met de projectstructuur van Experience Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)</li><li>[Blauwdruk digitale basis](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Bedekkingen](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager als Cloud Service API-referentie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
 
 >[!TIP]
-> Zie zelfstudie over het [WKND ontwikkelen en implementeren op SDK van lokale Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+> Zie zelfstudie over het [WKND ontwikkelen en implementeren op SDK van lokale Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Implementeren
 
@@ -99,7 +99,7 @@ Zie zelf-hulp middelen over om te vormen en op te stellen aan AEM als milieu&#39
 
 <br>
 
-## Naar Adobe Experience Manager gaan als een Cloud Service {#move-to-cloud}
+## Als Cloud Service naar Adobe Experience Manager gaan {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
