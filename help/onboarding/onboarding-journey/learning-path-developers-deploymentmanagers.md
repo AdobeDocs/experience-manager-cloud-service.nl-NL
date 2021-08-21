@@ -4,9 +4,9 @@ description: Volg deze pagina om de volgende stappen na het krijgen van toegang 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Doelstelling {#objective}
 
-Met dit document krijgen uw ontwikkelaars en implementatiemanagers toegang tot Cloud Manager en worden ze vertrouwd met de manier waarop ze zich kunnen voorbereiden op het leerpad.
+Met dit document krijgen uw ontwikkelaars en implementatiemanagers toegang tot Cloud Manager en worden ze vertrouwd met de manier waarop ze zich kunnen voorbereiden op hun leerpad.
 
 Nadat u dit document hebt gelezen, moet u:
 
@@ -33,23 +33,25 @@ Als u deze sectie leest, dan wordt u waarschijnlijk toegewezen aan een het produ
 
 ## Voorwaarden {#prerequisites}
 
-Uw systeembeheerder heeft Ontwikkelaars en Implementatiemanagers aan hun respectieve productprofielen toegewezen. Ontwikkelaars moeten ook worden toegewezen aan AEM gebruikers of AEM Beheerders.\
-Er zijn cloudbronnen ingesteld.
-U begrijpt hoe u kunt navigeren en zich kunt aanmelden bij Cloud Manager
+Voordat u begint, controleert u of:
 
-## Git beheren {#manage-git}
+* Uw systeembeheerder heeft Ontwikkelaars en Implementatiemanagers aan hun respectieve productprofielen toegewezen. Ontwikkelaars moeten ook worden toegewezen aan AEM gebruikers of AEM Beheerders.
+* Er zijn cloudbronnen ingesteld.
+* U begrijpt hoe u kunt navigeren en zich kunt aanmelden bij Cloud Manager
+
+## GitHub beheren {#manage-git}
 
 U kunt de Git Repository openen en beheren met Self-Service Git Account Management vanuit de interface van Cloud Manager.
 Meer over dit onderwerp leren, zie [Toegang tot Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
-## Gasleiding instellen {#setup-pipeline}
+## Pipet instellen {#setup-pipeline}
 
 U kunt uw productie of niet-productiepijpleiding van de UI van de Manager van de Wolk vormen.
 Meer over dit onderwerp leren, zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Volgende functies {#whats-next}
 
-De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder.
+De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder. Zie Leerpad voor AEM-auteurs voor meer informatie over het leertraject voor auteurs van inhoud.
 
 ## Aanvullende bronnen {#additional-resources}
 
