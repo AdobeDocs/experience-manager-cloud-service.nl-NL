@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Na het lezen van deze sectie moet u begrijpen:
 
 ## Inleiding {#introduction}
 
-Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot één van twee productprofielen behoren, zoals `AEM Users` of `AEM Administrators`. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Meer weten?
+Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot een van twee productprofielen behoren:  `AEM Users` of `AEM Administrators`. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Meer weten?
 
 >[!NOTE]
 >Elke gebruiker die door de systeembeheerder aan AEM gebruikersproductprofiel is toegewezen, heeft (alleen-lezen) toegang tot Cloud Manager.
