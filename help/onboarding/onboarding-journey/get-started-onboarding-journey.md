@@ -2,9 +2,8 @@
 title: Aan de slag met het instapproces
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
