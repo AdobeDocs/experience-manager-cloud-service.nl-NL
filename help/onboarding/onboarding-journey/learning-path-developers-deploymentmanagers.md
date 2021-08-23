@@ -3,7 +3,7 @@ title: Leerpad voor ontwikkelaars en implementatiemanagers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren, als u een Ontwikkelaar of een Manager van de Plaatsing bent
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Meer over dit onderwerp leren, zie [Het vormen van uw CI-CD Pijpleiding](https:/
 
 ## Volgende functies {#whats-next}
 
-De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder. Zie Leerpad voor AEM-auteurs voor meer informatie over het leertraject voor auteurs van inhoud.
+De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder. Zie [Leerpad voor AEM-auteurs](/help/onboarding/onboarding-journey/learning-path-aem-users.md) voor meer informatie over het leertraject voor Content Authors.
 
 ## Aanvullende bronnen {#additional-resources}
 
