@@ -3,7 +3,7 @@ title: Aan de slag met het instapproces
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw aan boord plaatsende reis moeten voortzetten door het document te herzien die de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk toewijst.
+Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw aan boord gaan reis door het document [te herzien toewijzen de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) moeten voortzetten.
 
