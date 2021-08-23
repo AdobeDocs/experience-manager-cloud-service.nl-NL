@@ -3,7 +3,7 @@ title: 'Teamleden toewijzen aan productprofielen van Cloud Manager '
 description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan productprofielen van Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ De volgende stappen zullen u door dit laten lopen:
 
 ## Volgende functies {#whats-next}
 
-U hebt kennis opgedaan met drie verschillende productprofielen voor Cloud Manager, zoals Business Owner, Deployment Manager en Developer. Vervolgens hebt u teamleden toegewezen aan productprofielen van Cloud Manager, zoals Business Owner, Deployment Manager en Developer. U bent nu klaar om uw instapreis voort te zetten door de bronnen van de Cloud van de Opstelling van het document via Cloud Manager opnieuw te bekijken, waar u zult leren:
+U hebt kennis opgedaan met drie verschillende productprofielen voor Cloud Manager, zoals Business Owner, Deployment Manager en Developer. Vervolgens hebt u teamleden toegewezen aan productprofielen van Cloud Manager, zoals Business Owner, Deployment Manager en Developer. U kunt nu uw instapreis voortzetten door het document [Cloud Resources instellen via Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) opnieuw te bekijken, waar u leert:
 
 1. Als systeembeheerder die aan *Bedrijfs eigenaar* rol wordt toegewezen, moet u tot de Manager van de Wolk toegang hebben en login.
 
