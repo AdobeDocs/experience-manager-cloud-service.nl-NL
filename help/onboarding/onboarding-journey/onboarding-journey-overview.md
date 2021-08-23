@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,17 @@ Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://exper
 De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in de volgende gedeelten gedetailleerd beschreven.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Deze reis wordt ontworpen voor een persoon van de Beheerder van het Systeem, die de vereisten, de stappen, en de benadering beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
+
+Het volgende is de persoon die in deze reis interactie heeft.
+
+| Persona | Beschrijving | Rol in reis |
+|---|---|---|
+| Systeembeheerder | Verstrekt aanvankelijke levering van wolkenmiddelen en toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben. | Beheert alle aspecten van hun gebruikers, van toegang tot toestemmingen. |
+| AEM-auteur | Maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn); bijvoorbeeld pagina&#39;s, middelen, publicaties) voordat deze naar uw website worden gepubliceerd. | Zodra verleend de toestemmingen, kunnen de reis van hun eigen plaatsingsmanager beginnen. |
+| Developer | Heeft ervaring met het ontwikkelen AEM toepassingen die inhoud uit verschillende bronnen gebruiken | Zodra het verlenen van toestemmingen, kan hun eigen ontwikkelaarstraject beginnen |
+| Deployment Manager | Voegt of werkt een milieu bij, stelt om het even welke pijpleiding in werking, en stelt code aan AEM milieu of code-kwaliteit op. | Zodra verleend de toestemmingen, kunnen de reis van hun eigen plaatsingsmanager beginnen. |
 
 ## De reis Onboarding verkennen {#exploring-onboarding-journey}
 
