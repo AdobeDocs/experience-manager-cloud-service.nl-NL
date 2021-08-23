@@ -4,9 +4,9 @@ description: Begin hier voor een geleide reis door de krachtige en flexibele hea
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -63,3 +63,4 @@ Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan 
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u uw inhoud kunt modelleren op uw eerste project zonder kop.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u ze kunt gebruiken voor uw eerste ontwikkelingsproject.
 * [AEM als technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  van de Cloud Service - Als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
+* [AEM headless zelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Als u liever wilt leren door te doen en technisch georiënteerd bent, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken.
