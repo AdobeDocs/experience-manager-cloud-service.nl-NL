@@ -3,7 +3,7 @@ title: Onboarding Journaal
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 1%
@@ -64,4 +64,4 @@ U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u 
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan op uw on-boarding route. We raden u aan door te gaan met het volgende gedeelte van de reis en het artikel Getting Starting with Onboarding Process te lezen.
+U bent nu klaar om aan de slag te gaan op uw on-boarding route. We raden u aan door te gaan met het volgende gedeelte van de reis en het artikel [Aan de slag met het instapproces](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) te lezen.
