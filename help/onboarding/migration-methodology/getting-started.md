@@ -2,9 +2,9 @@
 title: Migratie naar Experience Manager als Cloud Service
 description: Migratie naar Experience Manager als Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
+source-git-commit: 73c414ed636fea48c4c79a02e71d99fa8d16878f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 7%
 
 ---
@@ -79,7 +79,7 @@ Zie zelf-hulp middelen over om te vormen en op te stellen aan AEM als milieu&#39
    * [Back-up en herstel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> Zie zelfstudie over het [implementeren van WKND in Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)
+> Zie zelfstudie over het [implementeren van WKND in Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Help en bronnen
 
