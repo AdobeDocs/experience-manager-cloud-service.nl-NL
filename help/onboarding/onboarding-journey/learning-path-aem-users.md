@@ -2,9 +2,8 @@
 title: Leerpad voor AEM gebruikers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren als u een AEM Gebruiker bent
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%
