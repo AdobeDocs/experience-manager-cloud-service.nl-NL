@@ -1,10 +1,10 @@
 ---
-title: 'Teamleden toewijzen aan AEM als profielen van het Product van de Cloud Service '
+title: 'Teamleden toewijzen om te AEM als profielen van het Product van de Cloud Service '
 description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als profielen van het Product van de Cloud Service
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: f0d7886c0bf88fe42d05a1cdd6eb03b07b165c52
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 ---
 
 
-# Teamleden toewijzen aan AEM als profielen van het Product van de Cloud Service {#assign-team-members-cloud-service}
+# Teamleden toewijzen om te AEM als profielen van het Product van de Cloud Service {#assign-team-members-cloud-service}
 
 ## Doelstelling {#objective}
 
