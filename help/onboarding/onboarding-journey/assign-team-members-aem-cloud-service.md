@@ -3,9 +3,9 @@ title: 'Teamleden toewijzen om te AEM als profielen van het Product van de Cloud
 description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als profielen van het Product van de Cloud Service
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ De stappen hieronder moeten door een Beheerder van het Systeem worden gevolgd di
 
 ## Volgende functies {#whats-next}
 
-De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM zijn nu klaar om te leren hoe te om tot Auteur toegang te hebben en vertrouwd te worden met auteurspagina&#39;s in AEM als Cloud Service. U zou de weg moeten volgen, door het document het Leren Weg voor AEM Gebruikers of het Leren Weg voor Ontwikkelaars en de Managers van de Plaatsing te herzien.
+De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM zijn nu klaar om te leren hoe te om tot Auteur toegang te hebben en vertrouwd te worden met auteurspagina&#39;s in AEM als Cloud Service. Volg het pad door het leerpad voor het document voor [AEM Users](/help/onboarding/onboarding-journey/learning-path-aem-users.md) of voor [Developers and Deployment Managers](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) opnieuw te bekijken.
 
 ## Aanvullende bronnen {#additional-resources}
 
