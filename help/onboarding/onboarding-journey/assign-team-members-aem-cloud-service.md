@@ -3,10 +3,10 @@ title: 'Teamleden toewijzen om te AEM als profielen van het Product van de Cloud
 description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als profielen van het Product van de Cloud Service
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Na het lezen van deze sectie moet u begrijpen:
 
 ## Inleiding {#introduction}
 
-Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot een van twee productprofielen behoren:  `AEM Users` of `AEM Administrators`. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Meer weten?
+Om toegang tot AEM als Cloud Service te krijgen, moeten gebruikers tot een van twee productprofielen behoren:  `AEM Users` of `AEM Administrators`. Uw teamleden moeten machtigingen krijgen voor het AEM exemplaar, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn.
 
 >[!NOTE]
 >Elke gebruiker die door de systeembeheerder aan AEM gebruikersproductprofiel is toegewezen, heeft (alleen-lezen) toegang tot Cloud Manager.
@@ -85,7 +85,7 @@ De stappen hieronder moeten door een Beheerder van het Systeem worden gevolgd di
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. Een nieuw tabblad navigeert u naar Adobe Admin Console vanwaar u toegang hebt tot de instantie van de auteur van de omgeving. Selecteer *AEM Beheerders* of *AEM Gebruikers* op basis van de machtigingen die deze persoon moet geven. Meer informatie over [AEM als Cloud Service productprofielen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+1. Een nieuw tabblad navigeert u naar Adobe Admin Console vanwaar u toegang hebt tot de instantie van de auteur van de omgeving. Selecteer **AEM Beheerders** of **AEM Gebruikers** op basis van de machtigingen die deze persoon moet geven. Meer informatie over [AEM als Cloud Service productprofielen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ De gebruikers die u als Cloud Service productprofielen hebt toegewezen aan AEM z
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Producten en gebruikerstoegang beheren in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [Toegang tot AEM configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
