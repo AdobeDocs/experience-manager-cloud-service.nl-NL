@@ -3,9 +3,9 @@ title: Cloud Resources instellen via Cloud Manager
 description: Volg deze pagina voor informatie over het instellen van Cloud Resources via Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 ## Navigeren naar Cloud Manager {#navigate-cloud-manager}
 
-De gebruiker van de Bedrijfs Eigenaar zal een welkome e-mail met een verbinding ontvangen om te beginnen, of als zij niet het kunnen vinden, direct naar [Adobe Experience Cloud](https://experience.adobe.com) gaan en login gebruikend uw Adobe ID.
+De gebruiker van de Bedrijfs Eigenaar zal een welkome e-mail met een verbinding ontvangen om te beginnen, of als zij niet het kunnen vinden, toegang [Cloud Manager](https://my.cloudmanager.adobe.com/) door het programma te openen gebruikend uw Adobe ID.
 
 Ga als volgt te werk om naar Cloud Manager te navigeren:
 
