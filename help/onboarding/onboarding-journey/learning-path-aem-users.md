@@ -3,9 +3,9 @@ title: Leerpad voor AEM gebruikers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren als u een AEM Gebruiker bent
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -34,11 +34,24 @@ Uw systeembeheerder moet alle noodzakelijke stappen hebben voltooid en u met suc
 
 ## Aanmelden bij auteur {#login-author}
 
-De volgende stappen moeten worden gevolgd om tot Auteur toegang te hebben:
+Voer de onderstaande stappen uit om toegang te krijgen tot Auteur:
 
-1. Ga als volgt te werk om naar Cloud Manager te navigeren. U kunt ook rechtstreeks naar Cloud Manager gaan en zich aanmelden.
+1. Navigeer rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+
+1. Selecteer **Experience Manager** op de startpagina van Adobe Experience Cloud.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. Hiermee gaat u naar de AEM homepage. Start **Cloud Manager** vanaf hier.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina ter referentie als bladwijzer en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
 
 1. Klik op de pagina **Overzicht** in Cloud Manager op de koppeling naar de auteur via de kaart **Omgevingen**.
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. Hiermee wordt een nieuw tabblad geopend waarin u zich kunt aanmelden bij de ontwerpomgeving met uw Adobe ID.
 
