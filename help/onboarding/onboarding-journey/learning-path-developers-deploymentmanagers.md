@@ -3,9 +3,9 @@ title: Leerpad voor ontwikkelaars en implementatiemanagers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren, als u een Ontwikkelaar of een Manager van de Plaatsing bent
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,3 @@ De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met 
 
 * [Aan de slag met AEM SPA Editor voor ontwikkelaars](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Cursussen Experience League {#experience-league-courses}
-
-* Traditionele sites
-* SPA Editor
-* Koploos
-* Handel
