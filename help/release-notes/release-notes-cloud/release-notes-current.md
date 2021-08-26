@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -62,19 +62,32 @@ Bekijk de video [August 2021 Release Overview](https://video.tv.adobe.com/v/3362
 
 ### Nieuw in [!DNL Forms] {#what-is-new-forms}
 
-* De dienst van de automatede form conversion kan [PDF forms in Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in Aangepast Forms omzetten.
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
+
+* AEM Archetype-project voor Forms als Cloud Service bevat nu [4 nieuwe thema&#39;s en formuliergegevensmodellen voor Microsoft Dynamics en Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Op acroform gebaseerd Document of Record**: AEM Forms als Cloud Service ondersteunt het gebruik van  [Adobe Acrobat Form PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als sjabloon voor Document of Record naast XFA-formuliersjablonen.
 
 * **Microsoft Azure Data Store-connector**: U kunt nu het Model van de Gegevens van het Vorm met de Opslag [ van Microsoft Azure ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
 
+### Bètafunctie van [!DNL Forms] {#aug-what-is-new-forms-prerelease}
+
+* **Unified Storage-connector:met de** Unified Storage-connector kunt u uw gegevensbronnen aansluiten op een AEM workflow of een adaptief formulier zonder gegevens over de opslag van AEM Forms-Cloud Servicen te behouden. Hiermee kunt u PII (Persoonlijk identificeerbare informatie) veilig verwerken en gegevens rechtstreeks opslaan in de Azure-gegevensopslag.
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communicatie-](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIschappen combineren XDP-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+   * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
+   * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
+   * Genereer PDF-bestanden voor afdrukken vanuit een XFA-formulier, PDF- en Adobe Acrobat-formulier.
+
+U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het bètaprogramma.
+
 ### Nieuwe functies beschikbaar in het prerelease-kanaal [!DNL Forms] {#prerelease-features-forms}
 
-* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu elke ontvanger van de overeenkomst inschakelen om zijn rol in een adaptief formulier te configureren, waarbij ondertekenaar de standaardrol is.
+* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt elke ontvanger van overeenkomst nu [toelaten om zijn rol in een Aangepast Vorm ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform) te vormen, met Ondertekenaar die de standaardrol is.
 
 * **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Maak eenvoudig verbinding met AEM Forms met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars sneller en gemakkelijker maken om de Dynamica van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm te vormen.
+* **Maak eenvoudig verbinding met AEM Forms met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars  [sneller en gemakkelijker maken om de Dynamiek van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) te vormen.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
