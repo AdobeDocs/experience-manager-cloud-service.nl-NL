@@ -1,9 +1,9 @@
 ---
 title: Players in rasters installeren en configureren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,38 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Klik op **Bevestig** dat ertoe aanzet wanneer het schakelen naar wolkenwijze de speler zal schrappen-register.
+
+## Standaardafspeelcontrole {#playback-monitoring}
+
+De speler rapporteert verschillende afspeelmetriek met elke `ping` die standaard op 30 seconden wordt ingesteld. Gebaseerd op de metriek, kunt u diverse randgevallen zoals gespleet ervaring, leeg scherm, en het plannen kwesties ontdekken. Dit laat u kwesties op het apparaat begrijpen en problemen oplossen, en bespoedigt zo een onderzoek en correctieve maatregelen.
+
+Met de standaardafspeelcontrole in een AEM Screens-speler kunt u:
+
+* Op afstand controleren of een speler inhoud correct afspeelt
+
+* Verbeter reactiviteit aan lege schermen of gebroken ervaringen op het gebied
+
+* Verlaag het risico om een gebroken ervaring aan de eindgebruiker te tonen
+
+### Eigenschappen {#understand-properties}
+
+De volgende eigenschappen worden in elke `ping` opgenomen:
+
+| Eigenschap | Beschrijving |
+|---|---|
+| id {string} | de speler-id |
+| activeChannel {string} | momenteel het kanaalpad afspelen, of null als er niets is gepland |
+| activeElements {string} | door komma&#39;s gescheiden tekenreeks, momenteel zichtbare elementen in alle kanalen van de afspeelvolgorde (meerdere bij een lay-out met meerdere zones) |
+| isDefaultContent {boolean} | true als het afspeelkanaal wordt beschouwd als een standaard- of fallback-kanaal (heeft dus prioriteit 1 en geen planning) |
+| hasContentChanged {boolean} | true als de inhoud in de laatste 5 minuten is gewijzigd, anders false |
+| lastContentChange {string} | tijdstempel van de laatste inhoudswijziging |
+
+>[!NOTE]
+>Naar keuze, kan een geavanceerdere bezit van de spelervoorkeur (Enable Playback Controle) worden toegelaten en dat is:
+>|Eigenschap|Beschrijving|
+>|—|—|
+>|isContentRendering {boolean}|true als de GPU kan bevestigen dat de werkelijke inhoud wordt afgespeeld (op basis van pixelanalyse)|
+
 
 ## Volgende functies {#whats-next}
 
