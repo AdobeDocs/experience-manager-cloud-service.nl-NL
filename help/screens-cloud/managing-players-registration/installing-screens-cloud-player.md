@@ -1,9 +1,9 @@
 ---
 title: Players in rasters installeren en configureren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,15 @@ De volgende eigenschappen worden in elke `ping` opgenomen:
 >|—|—|
 >|isContentRendering {boolean}|true als de GPU kan bevestigen dat de werkelijke inhoud wordt afgespeeld (op basis van pixelanalyse)|
 
+### Beperkingen {#limitations}
+
+Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole:
+
+* Aangezien de speler zijn eigen afspeelstatus aan de server rapporteert, heeft deze een actieve verbinding nodig.
+
+* De eigenschap `isContentRendering` die de GPU controleert, is momenteel hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren voor spelers. U wordt aangeraden dit effect niet samen met video&#39;s te gebruiken.
+
+* Ondersteund voor reekskanalen.
 
 ## Volgende functies {#whats-next}
 
