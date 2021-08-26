@@ -3,9 +3,9 @@ title: Ondersteuning van miniaturen voor video's op schermen als Cloud Service
 description: In deze pagina wordt beschreven hoe u miniatuurondersteuning voor video's in schermen kunt toevoegen als Cloud Service.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Bewerk de eigenschappen van de videocomponent.
+1. Selecteer de video en klik op het *moersleutelpictogram* om de video-eigenschappen te openen.
 
-1. Sleep een afbeelding van de elementkiezer naar de neerzetzone Miniatuur.
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Geef een voorvertoning van het kanaal weer.
+1. Het dialoogvenster **Video** wordt geopend waar u de neerzetzone **Miniatuur** wilt weergeven.
 
-1. Als een video op de component wordt geplaatst, zal de video spelen. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders wordt de component beschouwd als niet gevormd en zal overgeslagen worden
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Sleep een afbeelding van de elementenkiezer naar de neerzetzone **Miniatuur** en klik op **Done**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Klik op **Voorvertoning**.
+
+1. Als een video op de component wordt geplaatst, zal de video spelen. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders wordt de component beschouwd als niet gevormd en zal worden overgeslagen.
 
 ## Ondersteunde gevallen voor gebruik tijdens het gebruik van miniaturen in video&#39;s {#understand-use-case}
 
