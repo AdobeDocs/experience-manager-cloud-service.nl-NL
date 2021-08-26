@@ -1,9 +1,9 @@
 ---
 title: Players in rasters installeren en configureren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ De speler rapporteert verschillende afspeelmetriek met elke `ping` die standaard
 
 Met de standaardafspeelcontrole in een AEM Screens-speler kunt u:
 
-* Op afstand controleren of een speler inhoud correct afspeelt
+* Op afstand controleren of een speler de inhoud correct afspeelt.
 
-* Verbeter reactiviteit aan lege schermen of gebroken ervaringen op het gebied
+* Verbeter reactiviteit aan lege schermen of gebroken ervaringen op het gebied.
 
-* Verlaag het risico om een gebroken ervaring aan de eindgebruiker te tonen
+* Vermindert het risico om een gebroken ervaring aan het eind - gebruiker te tonen.
 
 ### Eigenschappen {#understand-properties}
 
@@ -78,11 +78,11 @@ De volgende eigenschappen worden in elke `ping` opgenomen:
 
 Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole:
 
-* Aangezien de speler zijn eigen afspeelstatus aan de server rapporteert, heeft deze een actieve verbinding nodig.
+* De speler rapporteert zijn eigen playbackstaat aan de server, zodat vereist het een actieve verbinding.
 
 * De eigenschap `isContentRendering` die de GPU controleert, is momenteel hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren voor spelers. U wordt aangeraden dit effect niet samen met video&#39;s te gebruiken.
 
-* Ondersteund voor reekskanalen.
+* Deze functie wordt ondersteund voor reekskanalen.
 
 ## Volgende functies {#whats-next}
 
