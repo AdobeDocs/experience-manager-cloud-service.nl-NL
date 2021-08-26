@@ -1,12 +1,12 @@
 ---
 title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
-feature: Contentfragmenten
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,6 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 AEM heeft een terugkerende bescherming voor:
 * Content References
 Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
-
 * Fragmentverwijzingen in GraphQL
 Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
@@ -284,6 +283,16 @@ PathThis specifies a root path for any fragments referenced.
 >[!NOTE]
 Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 Er is ook een terugkerende bescherming voor de Verwijzingen van het Fragment in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
+
+## Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
+
+U kunt de **Eigenschappen** van een model van het Fragment van de Inhoud uitgeven:
+
+* **Basis**
+   * **Modeltitel**
+   * **Tags**
+   * **Beschrijving**
+   * **Afbeelding uploaden**
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
@@ -402,12 +411,28 @@ Publicatie van een inhoudsfragmentmodel ongedaan maken:
 1. Selecteer uw model, dat door **wordt gevolgd Unpublish** van de toolbar.
 De gepubliceerde status wordt aangegeven in de console.
 
-## Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-U kunt de **Eigenschappen** van een model van het Fragment van de Inhoud uitgeven:
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **Basis**
-   * **Modeltitel**
-   * **Tags**
-   * **Beschrijving**
-   * **Afbeelding uploaden**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
