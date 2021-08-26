@@ -1,9 +1,9 @@
 ---
 title: Een project in schermen maken als Cloud Service
 description: Deze pagina beschrijft hoe te om een project in Schermen als Cloud Service tot stand te brengen.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Voer de onderstaande stappen uit om als Cloud Service een nieuw project in Scher
 1. Navigeer naar de Inhoudsprovider voor schermen.
 
    >[!NOTE]
-   >Raadpleeg [Schermcontentprovider gebruiken] om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
+   >Raadpleeg [Schermcontentprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) om te leren hoe u toegang krijgt tot de Content Provider voor schermen om uw project te maken.
 
 1. Klik op **Schermproject maken** in de rechterbovenhoek van de actiebalk.
 
