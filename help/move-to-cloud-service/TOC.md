@@ -1,14 +1,14 @@
 ---
-sub-product: Overstappen naar AEM as a Cloud Service
+sub-product: Move to AEM as a Cloud Service
 user-guide-title: Overstappen naar AEM as a Cloud Service
 breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
-feature: Implementeren
+feature: Deploying
 role: Architect, Developer
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 51%
+source-wordcount: '130'
+ht-degree: 44%
 
 ---
 
@@ -47,3 +47,4 @@ ht-degree: 51%
    + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM-moderniseringstools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
++ [De Gids van de migratie aan Experience Manager als Cloud Service voor Partners](/help/move-to-cloud-service/getting-started.md)

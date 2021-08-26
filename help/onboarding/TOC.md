@@ -1,14 +1,14 @@
 ---
-sub-product: Onboarding van AEM as a Cloud Service
+sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding van AEM as a Cloud Service
 breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
-feature: Implementeren
+feature: Deploying
 role: Architect, Developer
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 41%
+source-wordcount: '100'
+ht-degree: 42%
 
 ---
 
@@ -30,5 +30,3 @@ ht-degree: 41%
    + [Systeembeheertaken](what-is-required/add-users-assign-cm-roles.md)
    + [Navigeren naar Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Gebruikerstoegang verlenen aan een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Migratiemethode {#migration-methodology}
-   + [Migratie naar Adobe Experience Manager als Cloud Service](migration-methodology/getting-started.md)
