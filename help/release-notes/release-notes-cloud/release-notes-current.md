@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 * **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 * **Maak eenvoudig verbinding met AEM Forms met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars  [sneller en gemakkelijker maken om de Dynamiek van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) te vormen.
+
+## [!DNL Screens] als  [!DNL Cloud Service] {#screens}
+
+### Nieuwe functies {#what-is-new-screens}
+
+* Als inhoudsauteur kunt u nu een miniatuur voor video&#39;s definiëren, zodat u die afbeelding kunt gebruiken als plaatsaanduiding en het afspelen en activeren van inhoud op de juiste manier kunt testen, terwijl de daadwerkelijke video wordt voltooid door het juiste team.
+Zie [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie.
+
+* Ondersteuning van miniaturen voor video&#39;s wordt nu in Schermen ondersteund als Cloud Service. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder kan worden gebruikt en behoorlijk het playback en richten van inhoud testen, terwijl de daadwerkelijke video door het aangewezen team wordt gebeëindigd. De afbeelding kan ook worden gebruikt voor het geval dat het afspelen van de video mislukt.
+
+### Opgeloste problemen {#bug-fixes-screens}
+
+* De speler kan de inhoud van de ingesloten pagina niet weergeven en dit probleem is nu opgelost.
+
+* Na een geslaagde aanmelding werd het navigeren naar de standaardpagina (kanalen) beëindigd op een pagina Interne serverfout.
+
+* Gekoppelde tagitems zijn niet verwijderd tijdens het verwijderen van afspeellijsten.
+
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
