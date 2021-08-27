@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
+source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -91,7 +91,7 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 
 * **Maak eenvoudig verbinding met AEM Forms met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars  [sneller en gemakkelijker maken om de Dynamiek van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) te vormen.
 
-## [!DNL Screens] als  [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] als  [!DNL Cloud Service] {#screens}
 
 ### Nieuwe functies {#what-is-new-screens}
 
