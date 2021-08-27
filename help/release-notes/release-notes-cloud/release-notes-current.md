@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Bekijk de video [August 2021 Release Overview](https://video.tv.adobe.com/v/3362
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM Archetype-project voor Forms als Cloud Service bevat nu [4 nieuwe thema&#39;s en formuliergegevensmodellen voor Microsoft Dynamics en Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM Archetype-project voor Forms als Cloud Service bevat nu [Canvas 3.0-thema- en formuliergegevensmodellen voor Microsoft Dynamics en Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Op acroform gebaseerd Document of Record**: AEM Forms als Cloud Service ondersteunt het gebruik van  [Adobe Acrobat Form PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als sjabloon voor Document of Record naast XFA-formuliersjablonen.
 
@@ -72,7 +72,9 @@ Bekijk de video [August 2021 Release Overview](https://video.tv.adobe.com/v/3362
 
 ### Bètafunctie van [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-* **Unified Storage-connector:met de** Unified Storage-connector kunt u uw gegevensbronnen aansluiten op een AEM workflow of een adaptief formulier zonder gegevens over de opslag van AEM Forms-Cloud Servicen te behouden. Hiermee kunt u PII (Persoonlijk identificeerbare informatie) veilig verwerken en gegevens rechtstreeks opslaan in de Azure-gegevensopslag.
+* **Unified Storage-connector:** gebruik Unified Storage-connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
+   * Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder klantbeheer.
+   * Sla AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) op die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communicatie-](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIschappen combineren XDP-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
