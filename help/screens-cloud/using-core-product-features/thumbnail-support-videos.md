@@ -1,11 +1,10 @@
 ---
 title: Ondersteuning van miniaturen voor video's op schermen als Cloud Service
 description: In deze pagina wordt beschreven hoe u miniatuurondersteuning voor video's in schermen kunt toevoegen als Cloud Service.
-hide: true
-index: false
-source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
+index: true
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -63,14 +62,12 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 ## Ondersteunde gevallen voor gebruik tijdens het gebruik van miniaturen in video&#39;s {#understand-use-case}
 
-Raadpleeg de volgende gebruiksgevallen wanneer u miniaturen in video&#39;s gebruikt.
+Miniatuur in video&#39;s biedt ondersteuning voor de volgende gebruiksscenario&#39;s:
 
-Een video-component met:
+* Een video-onderdeel zonder installatie wordt overgeslagen.
 
-* *niets* instellen wordt overgeslagen
+* De miniatuur wordt afgespeeld in een video-onderdeel met alleen de miniatuurset.
 
-* *alleen de miniatuurset wordt* afgespeeld
+* De video wordt afgespeeld in een video-component met zowel de video- als de miniatuurset.
 
-* *zowel de video als de* miniatuurinstellingen zullen de video afspelen
-
-* *de video-* instelling zal de miniatuur afspelen als er een afspeelfout optreedt of gaat u verder met het volgende item als de miniatuur niet is geconfigureerd.
+* Een videocomponent met de videoreeks zal de duimnagel spelen, in het geval van een playbackfout, of zal enkel aan het volgende punt overslaan voor het geval dat de duimnagel niet wordt gevormd.
