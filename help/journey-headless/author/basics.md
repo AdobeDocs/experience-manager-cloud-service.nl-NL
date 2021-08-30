@@ -4,9 +4,9 @@ description: Leer over de concepten en de mechanica van creatie inhoud voor uw Z
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navige
 
 De **Middelen** console heeft **Werkbalken van Actie**, en **Snelle Acties** gewijd die u na het selecteren van een middel (bijvoorbeeld, een omslag of inhoudsfragment) kunt gebruiken.
 
-De snelle Acties zijn beschikbaar voor één enkele middel:
+De Snelle Acties zijn beschikbaar voor één enkel middel, zie **Basel** in het voorbeeld hieronder:
 
 ![Snelle handelingen](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ Tenzij u zeer weinig Inhoudsfragmenten hebt, wilt u deze ordenen - zodat u (en a
 
 #### Een map maken {#creating-folder}
 
-U kunt dit doen door een reeks omslagen binnen **de sectie van Dossiers** van de console van Activa te creëren. Selecteer de optie **Maken** (rechtsboven), gevolgd door **Map maken**:
+U kunt dit doen door een reeks omslagen binnen **de sectie van Dossiers** van de console van Activa te creëren. Selecteer de optie **Maken** (rechtsboven), gevolgd door **Map**:
 
 ![Map maken, optie](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Er wordt een dialoogvenster geopend waarin u de details kunt invoeren en vervolg
 
 Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u enkel begint en dingen probeert, maar het is *very* nuttig wanneer u veel fragmenten hebt. Dus het is goed om over te weten - zelfs als je het nog niet helemaal gebruikt.
 
-Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor uw huidige project worden vereist, en misschien ook sommige andere projecten. Om de zaken eenvoudig te houden voor uw auteurs kunt u de lijst met modellen beperken die beschikbaar is voor een specifieke map.
+Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor uw huidige project worden vereist, en misschien ook sommige andere projecten. Om de zaken voor zich, en andere auteurs eenvoudig te houden, kunt u de lijst van modellen beperken beschikbaar voor een specifieke omslag.
 
 Nadat u de map hebt gemaakt, kunt u de map **Eigenschappen** openen. Hier zijn diverse lusjes met informatie, en configuratiedetails, over de omslag. Met name bij Inhoudsfragmenten kunt u het tabblad **Beleid** gebruiken om specifieke paden en/of tags voor deze map te definiëren. Dit beperkt de modellen van het Fragment van de Inhoud beschikbaar voor gebruik in de omslag aangezien het betekent dat de Modellen van het Fragment van de Inhoud aan deze vereisten moeten voldoen alvorens zij kunnen worden gebruikt om fragmenten in deze omslag te produceren.
 
@@ -147,7 +147,7 @@ Dit keer wordt een wizard geopend. De eerste stap bestaat uit het selecteren van
 
 ![Inhoudsfragment maken - Model selecteren](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Nadat u doorgaat met **Volgende** kunt u de details voor het fragment opgeven:
+Nadat u doorgaat met **Next** kunt u de details (**Basic** en **Advanced**) voor uw fragment opgeven:
 
 ![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
