@@ -5,7 +5,7 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: cef35b897c85040989150b1da1f868c1d7a10716
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 42%
