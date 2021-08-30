@@ -1,10 +1,9 @@
 ---
 title: Leerpad voor ontwikkelaars en implementatiemanagers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren, als u een Ontwikkelaar of een Manager van de Plaatsing bent
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: 88cbc378a337d35ead92fdea6f96b91859ae2770
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
