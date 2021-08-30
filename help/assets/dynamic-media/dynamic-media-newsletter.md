@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media-nieuwsarchief
 description: 'De Dynamic Media-nieuwsbrief per Experience League is een maandelijkse nieuwsbrief. Het is ontworpen om u te helpen snel aan de slag te gaan met Dynamic Media en Dynamic Media Classic, zodat u meteen waarde kunt behalen. De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop nieuwsbrief. Er zijn bijvoorbeeld Hoe kan ik-video''s en overzichten van oplossingen. Lees meer over enkele belangrijke functies en mogelijkheden, zoals voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, videoprofielen en meer. '
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Meer informatie over een webinar die binnenkort beschikbaar is voor de bescherming van uw digitale middelen.
    * De volgende einden op de informatie-gevulde Adobe Insider Tour.
    * Uitstekende mogelijkheden zijn beschikbaar als u Dynamic Media binnen Experience Manager Assets (Experience Manager Assets) hebt.
-   * Video&#39;s van 360 graden en aangepaste videominiaturen toevoegen aan uw website.
+   * 360°-video&#39;s en aangepaste videominiaturen aan uw website toevoegen.
    * Ontmoet `Andrew Hathaway`, de Belangrijkste Adviseur van Oplossingen voor Dynamic Media binnen de activa van de Experience Manager.
 
 * **[Juni 2019, uitgave 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**

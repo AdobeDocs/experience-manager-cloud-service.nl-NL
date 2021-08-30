@@ -1,12 +1,12 @@
 ---
 title: Spin Sets
 description: Leer hoe u met centrifuges werkt in Dynamic Media.
-feature: Sets draaien
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1751'
 ht-degree: 9%
 
 ---
@@ -103,7 +103,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 >[!NOTE]
 >
->De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo instelt dat de centrifuge een vloeiende weergave van 360 graden geeft.
+>De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo bestelt dat de centrifuge een vloeiende weergave van 360° heeft.
 
 **Om centrifuges te maken:**
 
