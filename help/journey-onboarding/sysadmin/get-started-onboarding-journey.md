@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
+source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 >[!NOTE]
 >U moet een systeembeheerder zijn om de volgende stappen succesvol te kunnen voltooien.
 
-1. Klik op **Get Started** van uw welkome e-mail, zoals aangetoond in hieronder figuur, om aan Admin Console te navigeren of direct aan Admin Console van [hier](https://adminconsole.adobe.com) te navigeren.
+1. Klik op **Aan de slag** van uw welkomstbericht, zoals in de onderstaande afbeelding wordt getoond, om naar de Admin Console te navigeren of vanuit [hier](https://adminconsole.adobe.com) rechtstreeks naar de Admin Console te navigeren.
 
    >[!NOTE]
    >Als systeembeheerder ontvangt u meerdere e-mails. Zoek de welkomste e-mail die u de informatie over de naam van de Organisatie verstrekt waartot u toegang tot hebt gekregen en klik op **Aan de slag**. Als u de e-mail niet kunt vinden, navigeer direct aan [Admin Console](https://adminconsole.adobe.com/).
