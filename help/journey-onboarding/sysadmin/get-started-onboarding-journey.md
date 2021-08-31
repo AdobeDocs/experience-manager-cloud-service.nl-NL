@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 >[!NOTE]
 >U moet een systeembeheerder zijn om de volgende stappen succesvol te kunnen voltooien.
 
-1. Klik op **Get Started** van uw welkome e-mail, om aan Admin Console te navigeren of direct aan Admin Console van [hier ](https://adminconsole.adobe.com) te navigeren.
+1. Klik op **Get Started** van uw welkome e-mail, zoals aangetoond in hieronder figuur, om aan Admin Console te navigeren of direct aan Admin Console van [hier](https://adminconsole.adobe.com) te navigeren.
 
    >[!NOTE]
    >Als systeembeheerder ontvangt u meerdere e-mails. Zoek de welkomste e-mail die u de informatie over de naam van de Organisatie verstrekt waartot u toegang tot hebt gekregen en klik op **Aan de slag**. Als u de e-mail niet kunt vinden, navigeer direct aan [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Meld u aan met uw [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Bij een geslaagde aanmelding ziet u de pagina **Overzicht** van de Adobe Admin Console, zoals hieronder wordt weergegeven.
 
