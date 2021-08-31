@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Onboarding Journaal
 breadcrumb-title: Onboarding Journaal
 user-guide-description: Begin hier voor een geleide reis die voor een persoon van de Beheerder van het Systeem wordt ontworpen, die de vereisten, de stappen, en de benadering beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
