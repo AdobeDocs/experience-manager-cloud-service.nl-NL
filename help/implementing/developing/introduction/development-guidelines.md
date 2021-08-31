@@ -2,10 +2,10 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -23,11 +23,11 @@ Tijdens de update van AEM als Cloud Service, zullen er instanties zijn met oude 
 
 Als de primaire code in de cluster moet worden geïdentificeerd, kan de API voor detectie van Apache Sling worden gebruikt om deze te detecteren.
 
-## Status in geheugen {#state-in-memory}
+## Staat in geheugen {#state-in-memory}
 
 De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan. Anders kan deze status verloren gaan als een instantie wordt gestopt.
 
-## Status op het bestandssysteem {#state-on-the-filesystem}
+## Status van het bestandssysteem {#state-on-the-filesystem}
 
 Het bestandssysteem van de instantie mag niet in AEM als Cloud Service worden gebruikt. De schijf is ephenaal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
@@ -37,7 +37,7 @@ Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou d
 
 Net als bij alles wat asynchroon gebeurt, zoals bij observatiegebeurtenissen, kan niet worden gegarandeerd dat het lokaal wordt uitgevoerd en moet het daarom met zorg worden gebruikt. Dit geldt zowel voor JCR-gebeurtenissen als voor Sling-brongebeurtenissen. Op het moment dat een wijziging plaatsvindt, kan de instantie worden verwijderd en worden vervangen door een andere instantie. Andere instanties in de topologie die op dat ogenblik actief zijn zullen op die gebeurtenis kunnen reageren. In dit geval zal dit echter geen lokale gebeurtenis zijn en is er misschien zelfs geen actieve leider in het geval van een doorlopende verkiezing van de leider op het moment dat het evenement wordt uitgegeven.
 
-## Achtergrondtaken en Lange actieve taken {#background-tasks-and-long-running-jobs}
+## Achtergrondtaken en langdurige taken {#background-tasks-and-long-running-jobs}
 
 Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn en het meest invoer herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuw vereiste voor dit soort code is, is het in AEM als Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
 
@@ -63,7 +63,7 @@ Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid 
 
 AEM als Cloud Service ondersteunt alleen de Touch UI voor klantcode van derden. Klassieke UI is niet beschikbaar voor aanpassing.
 
-## Native binaire tekens {#avoid-native-binaries} vermijden
+## Native binaire getallen vermijden {#avoid-native-binaries}
 
 Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen. Het is bijvoorbeeld niet mogelijk om `jar`- of `tar`-bestanden uit te pakken.
 
@@ -73,15 +73,15 @@ De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen
 
 Gebruik bijvoorbeeld `asset.getOriginal().getStream()` niet, waardoor het downloaden van een binair getal op de vaste schijf van de AEM service wordt geactiveerd.
 
-## Geen reverse Replication Agents {#no-reverse-replication-agents}
+## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
 De omgekeerde replicatie van Publiceren aan Auteur wordt niet gesteund in AEM als Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van Publish instanties en potentieel de cluster van de Auteur wordt gedeeld.
 
-## De voorwaartse Agenten van de Replicatie zouden {#forward-replication-agents} kunnen moeten worden geporteerd
+## De voorwaartse Medewerkers van de Replicatie zouden kunnen moeten worden gesteund {#forward-replication-agents}
 
 Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aangepaste replicatiemiddelen worden niet ondersteund.
 
-## Bewaking en foutopsporing {#monitoring-and-debugging}
+## Controle en foutopsporing {#monitoring-and-debugging}
 
 ### Logboeken {#logs}
 
@@ -117,7 +117,7 @@ De logniveaus zijn als volgt:
 | 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
-### Dumppen {#thread-dumps}
+### Thread Dumps {#thread-dumps}
 
 Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, gelieve te contacteren AEM steun als de draaddumps voor het zuiveren van een kwestie nodig zijn, specificerend het nauwkeurige tijdvenster.
 
@@ -129,7 +129,7 @@ Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Li
 
 Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechtstreeks worden geschreven, wat anders is dan in cloudomgevingen waar deze mappen op hoofdniveau onveranderlijk zijn.
 
-### AEM als hulpmiddelen voor de ontwikkeling van Cloud Servicen {#aem-as-a-cloud-service-development-tools}
+### AEM als instrumenten voor de ontwikkeling van Cloud Servicen {#aem-as-a-cloud-service-development-tools}
 
 Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
 
@@ -169,7 +169,7 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 
 Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
 
-## IP-adres van speciale uitgang {#dedicated-egress-ip-address}
+## IP-adres van speciale egress {#dedicated-egress-ip-address}
 
 Op verzoek, zal AEM als Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
 
@@ -189,7 +189,7 @@ De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaan
 
 Hieronder ziet u een codevoorbeeld:
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -203,6 +203,26 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
+Sommige bibliotheken vereisen expliciete configuratie om standaard het systeemeigenschappen van Java voor volmachtsconfiguraties te gebruiken.
+
+Een voorbeeld dat Apache HttpClient gebruikt, die expliciete vraag aan vereist
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) of gebruik
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
 Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in hun organisatie van de Adobe en voor alle milieu&#39;s in elk van hun programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
 
 Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
@@ -211,7 +231,7 @@ Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HT
 
 Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip) te roepen, die het roepende IP adres zal terugkeren.
 
-## E-mail {#sending-email} verzenden
+## E-mail verzenden {#sending-email}
 
 AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
 
@@ -219,7 +239,7 @@ AEM als Cloud Service vereist dat uitgaande post wordt gecodeerd. In de ondersta
 >
 >De dienst van de Post kan met steun worden gevormd OAuth2. Voor meer informatie, zie [Steun OAuth2 voor de Dienst van de Post](/help/security/oauth2-support-for-mail-service.md).
 
-### Toegang {#requesting-access} aanvragen
+### Toegang aanvragen {#requesting-access}
 
 Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
 
@@ -256,6 +276,6 @@ Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet
 
 De eigenschap `smtp.starttls` wordt automatisch door AEM als Cloud Service bij uitvoering op een geschikte waarde ingesteld. Als `smtp.tls` is ingesteld op true, wordt `smtp.startls` dus genegeerd. Wanneer `smtp.ssl` op false is ingesteld, wordt `smtp.starttls` op true ingesteld. Dit is ongeacht de `smtp.starttls` waarden die in uw configuratie worden geplaatst OSGI.
 
-## [!DNL Assets] ontwikkelingsrichtsnoeren en gebruiksgevallen  {#use-cases-assets}
+## [!DNL Assets] ontwikkelingsrichtsnoeren en gebruiksgevallen {#use-cases-assets}
 
 Zie [Verwijzingen voor ontwikkelaars voor Elementen](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis) voor informatie over de gevallen, aanbevelingen en referentiematerialen voor ontwikkelaars als Cloud Service.
