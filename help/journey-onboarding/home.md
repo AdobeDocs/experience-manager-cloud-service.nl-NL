@@ -1,7 +1,7 @@
 ---
 title: Onboarding Journaal
 description: Begin hier voor een overzicht van de geleide instapreis beschikbaar om de Onboarding Experience te begrijpen.
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: 39dda310bbe3ca0a47e8d38f18200351730a5b4e
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 1%
