@@ -24,7 +24,7 @@ ht-degree: 35%
    + [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM als team en productprofielen van Cloud Servicen](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Handleiding voor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) oninstapreizen {target=&quot;_blank&quot;}
++ [Handleiding voor oninstapreizen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + Aan de slag met AEM als Cloud Service {#what-is-required}
    + [Je Adobe ID ophalen](what-is-required/get-your-adobe-id.md)
    + [Rollen in Wolkenbeheer](what-is-required/user-roles-permissions.md)
