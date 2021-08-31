@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1955'
 ht-degree: 5%
 
 ---
@@ -55,11 +55,14 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Aan/Uit-tijd**
 
-   * **Op tijd**  - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar wordt gemaakt (weergegeven) in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
+   >[!NOTE]
+   >
+   > Zie [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
 
-      >[!NOTE]
-      >
-      > Zie [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
+   >[!NOTE]
+   >Als of **Op Tijd** of **Van Tijd** in het verleden is, en de automatische replicatie wordt gevormd, dan zal de relevante actie onmiddellijk teweeggebracht worden.
+
+   * **Op tijd**  - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar wordt gemaakt (weergegeven) in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
       * Als deze pagina al [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) is, blijft deze slapend (verborgen) totdat deze op het opgegeven tijdstip wordt weergegeven.
       * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
@@ -87,8 +90,6 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * Tik of klik nogmaals om meerdere items toe te voegen.
       * Tik of klik op het pictogram **Verwijderen** om de vanity URL te verwijderen.
    * **Redirect Vanity URL**  - Geeft aan of de pagina de vanity URL moet gebruiken.
-
-
 
 
 ### Geavanceerd {#advanced}
