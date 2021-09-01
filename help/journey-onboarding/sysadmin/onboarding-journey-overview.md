@@ -4,30 +4,14 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
 
 # Onboarding Journaal {#onboarding-jourrney}
-
-Gefeliciteerd met je reis met AEM als Cloud Service! We zijn blij dat u hier bent en kunnen niet wachten om met uw instapreis aan de slag te gaan. Of u nu een nieuwe toepassing implementeert of een bestaande toepassing migreert, deze handleiding dient als uitgangspunt om ervoor te zorgen dat uw teams zijn ingesteld en toegang hebben tot AEM als Cloud Service.
-
-## Inleiding {#introduction}
-
-Deze gids leidt u door de belangrijkste onderwerpen zodat u na voltooiing zult hebben:
-
-* volledig begrip van wat tijdens de AEM als Cloud Service op instapreis te verwachten is.
-* Uw team is in staat gesteld aan de slag te gaan en de eerste stappen te ondernemen om te leren hoe u inhoud voor uw AEM als Cloud Service-toepassing kunt ontwerpen en ontwikkelen.
-
-Dit betekent:
-
-* Uw team is ingesteld en heeft toegang tot cloudbronnen.
-* AEM-auteurs hebben toegang tot AEM als Cloud Service,
-* AEM ontwikkelaars en implementatiemanagers hebben toegang tot AEM als Cloud Service.
-
 
 ## Onboarding Experience {#audience}
 
