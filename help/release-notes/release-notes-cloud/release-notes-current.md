@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
+source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-screens}
 
-* Als inhoudsauteur kunt u nu een miniatuur voor video&#39;s definiëren, zodat u die afbeelding kunt gebruiken als plaatsaanduiding en het afspelen en activeren van inhoud op de juiste manier kunt testen, terwijl de daadwerkelijke video wordt voltooid door het juiste team.
+* Schermen als Cloud Service ondersteunen nu elementaire afspeelcontrole. De speler rapporteert nu verschillende afspeelmetriek met elke &#39;ping&#39; (standaard ingesteld op 30 seconden). Op basis van de meetgegevens kunnen verschillende randgevallen worden gedetecteerd (geplakte ervaring, leeg scherm, planningsprobleem, enz.). Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt, de reactiviteit verbetert tot lege schermen of gebroken ervaringen in het veld en het risico dat de eindgebruiker een verbroken ervaring krijgt verkleind.
 Zie [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie.
 
 * Ondersteuning van miniaturen voor video&#39;s wordt nu in Schermen ondersteund als Cloud Service. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder kan worden gebruikt en behoorlijk het playback en richten van inhoud testen, terwijl de daadwerkelijke video door het aangewezen team wordt gebeëindigd. De afbeelding kan ook worden gebruikt voor het geval dat het afspelen van de video mislukt.
