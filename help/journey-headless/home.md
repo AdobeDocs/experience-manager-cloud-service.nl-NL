@@ -1,9 +1,9 @@
 ---
 title: Reizen zonder kop AEM
 description: Begin hier voor een overzicht van de begeleide reizen beschikbaar om AEM krachtige headless eigenschappen te begrijpen.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -30,19 +30,11 @@ Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, A
 
 ## Soorten publiek {#audiences}
 
-Dagloze reizen zijn ontworpen voor meerdere personen, waarin de vereisten, stappen en de aanpak voor het implementeren van oplossingen zonder kop vanuit verschillende perspectieven worden beschreven. Een reis wordt bepaald voor een specifieke persoon, maar ook bepaalt extra karakters waarmee de lezer interactie aangaat.
+Dagloze ritten zijn ontworpen voor verschillende personen, waarin de vereisten, stappen en de aanpak voor het implementeren van oplossingen zonder kop vanuit verschillende perspectieven worden beschreven.
 
-Hier volgt een overzicht van de personen die een wisselwerking hebben in de Headless Journey.
+Een individuele reis wordt bepaald voor een specifiek persoon of een publiek, maar ook bepaalt extra karakters waarmee de lezer interactie aangaat.
 
-| Persona | Beschrijving | Rol in reis |
-|---|---|---|
-| Developer | Heeft ervaring met het ontwikkelen van toepassingen zonder kop die inhoud uit verschillende bronnen gebruiken | De ontwikkelaar werkt met auteurs, beheerders en architecten om de gegevens te begrijpen en een toepassing zonder kop te bouwen die die gegevens verbruikt. |
-| Inhoudsauteur | Hiermee maakt en beheert u inhoud die zonder kop wordt geleverd | Inhoudsauteurs maken inhoud die de ontwikkelaar zonder kop levert. |
-| Beheerder | Beheert de basisopstelling en configuratie van AEM | De ontwikkelaar werkt met de beheerder om configuratieveranderingen nodig voor ontwikkeling aan te brengen. |
-| Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Ontwikkelaars werken samen met de inhoudarchitect om de structuur van de gegevens en de vereisten voor het leveren van de inhoud te begrijpen. |
-| Specialist voor vertaling | Hiermee definieert u welke inhoud moet worden omgezet en beheert u deze workflows | De vertaalspecialist werkt samen met de inhoudarchitect om de initiële organisatie van inhoud te bepalen en kan met de ontwikkelaar voor om het even welke vertaling-specifieke vereisten werken. |
-
-Informatie tijdens deze reizen kan natuurlijk nuttig zijn voor alle personen, maar sommige informatie kan voor bepaalde rollen overbodig zijn.
+Informatie over reizen kan natuurlijk nuttig zijn voor meerdere personen, maar een reis is gericht op een bepaalde persoon en sommige informatie kan overbodig zijn voor bepaalde rollen.
 
 ## Reizen zonder hoofd {#headless-journeys}
 

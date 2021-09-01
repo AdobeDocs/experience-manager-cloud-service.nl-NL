@@ -1,10 +1,10 @@
 ---
 title: AEM doorlopende vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de 
 
 Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, AEM de Transparanten van de Zetel zijn waar te beginnen.
+Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, [AEM zijn de Transparanten zonder Zetel](/help/journey-headless/home.md) waar te beginnen.
 
 ## Publiek {#audience}
 

@@ -2,9 +2,9 @@
 title: AEM Headless Developer Journey
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,9 @@ Begin hier voor een geleide reis door de krachtige en flexibele headless eigensc
 
 ## Inleiding {#introduction}
 
-Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te bieden, waar ze zich ook bevinden en ongeacht het kanaal.
-
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
 
-Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
+Deze gids leidt u door de belangrijkste implementatieonderwerpen in AEM zodat u na voltooiing:
 
 * U moet goed begrijpen wat de inhoud zonder kop levert en wat de voordelen ervan zijn.
 * Begrijp AEM functies zonder kop en hoe ze samenwerken om een eindeloze ervaring te bieden.
@@ -31,11 +29,11 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, AEM de Transparanten van de Zetel zijn waar te beginnen.
+Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, [AEM zijn de Transparanten zonder Zetel](/help/journey-headless/home.md) waar te beginnen.
 
 >[!TIP]
 >
-> Als u liever **leert door te doen** en technisch georiënteerd bent, gaat u naar de AEM zelfstudies zonder koppen, die door API en framework worden georganiseerd en aan het einde van dit document beschikbaar zijn in de sectie [Aanvullende bronnen](#additional-resources).
+> Als u liever **leert door te doen** en technisch gezien zijn, gaat u naar de AEM zelfstudies zonder koppen, die zijn georganiseerd door API en framework en beschikbaar zijn in de [Aanvullende bronnen sectie](#additional-resources) aan het einde van dit document.
 
 ## Publiek {#audience}
 
@@ -43,13 +41,12 @@ Deze reis wordt ontworpen voor de ontwikkelaar persoonlijkheid, die de vereisten
 
 Het volgende is de persoon die in deze reis interactie heeft.
 
-| Persona | Beschrijving | Rol in reis |
+| Persona | Beschrijving | Rol in deze reis |
 |---|---|---|
-| Developer | Heeft ervaring met het ontwikkelen van toepassingen zonder kop die inhoud uit verschillende bronnen gebruiken | Doelgroep van deze reis |
+| Ontwikkelaar (doelgroep) | Heeft ervaring met het ontwikkelen van toepassingen zonder kop die inhoud uit verschillende bronnen gebruiken | Doelgroep van deze reis |
 | Inhoudsauteur | Hiermee maakt en beheert u inhoud die zonder kop wordt geleverd | Inhoudsauteurs maken inhoud die de ontwikkelaar zonder kop levert. |
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De ontwikkelaar werkt met de beheerder om configuratieveranderingen nodig voor ontwikkeling aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Ontwikkelaars werken samen met de inhoudarchitect om de structuur van de gegevens en de vereisten voor het leveren van de inhoud te begrijpen. |
-| Specialist voor vertaling | Hiermee definieert u welke inhoud moet worden omgezet en beheert u deze workflows | De vertalingsspecialist werkt samen met de inhoudarchitect om de initiële organisatie van inhoud te bepalen en kan voor om het even welke vertaling-specifieke vereisten met de ontwikkelaar moeten werken. |
 
 Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
 

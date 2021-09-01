@@ -1,14 +1,14 @@
 ---
-sub-product: ' Implementeren voor AEM as a Cloud Service'
+sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: ' Implementeren voor AEM as a Cloud Service'
 breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 27%
+source-wordcount: '1033'
+ht-degree: 26%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 27%
       + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
    + Beleidsbeheer zonder hoofd {#headless}
       + [Koploos en AEM](developing/headless/introduction.md)
-      + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [Documentatiereizen zonder kop](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + Aan de slag - hulplijnen {#getting-started}
          + [Inleiding](developing/headless/getting-started/introduction.md)
          + [Een configuratie maken](developing/headless/getting-started/create-configuration.md)

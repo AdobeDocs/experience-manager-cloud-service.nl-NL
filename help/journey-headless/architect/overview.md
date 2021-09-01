@@ -1,12 +1,12 @@
 ---
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,14 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 * Begrijp wat de inhoud zonder kop levert en zijn voordelen.
 * Begrijp hoe u uw inhoud kunt modelleren voor AEM functies zonder kop.
 * Heb de capaciteit om de eerste stappen te nemen die uw inhoud voor uw eerste AEM zonder hoofd modelleren project.
+
+## AEM Documentenreizen {#documentation-journeys}
+
+[Een Documentation ](/help/journey-documentation/home.md) Journeyties verenigt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+
+Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+
+Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, [AEM zijn de Transparanten zonder Zetel](/help/journey-headless/home.md) waar te beginnen.
 
 ## Publiek {#audience}
 

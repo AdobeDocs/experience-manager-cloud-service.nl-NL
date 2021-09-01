@@ -1,9 +1,9 @@
 ---
 title: Onboarding Journaal
 description: Begin hier voor een overzicht van de geleide instapreis beschikbaar om de Onboarding Experience te begrijpen.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,14 @@ Dit betekent:
 * Uw team is ingesteld en heeft toegang tot cloudbronnen.
 * AEM-auteurs hebben toegang tot AEM als Cloud Service,
 * AEM ontwikkelaars en implementatiemanagers hebben toegang tot AEM als Cloud Service.
+
+## AEM Documentenreizen {#documentation-journeys}
+
+[Een Documentation ](/help/journey-documentation/home.md) Journeyties verenigt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+
+Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+
+Als u wilt weten hoe Adobe adviseert hoe te om uw team te krijgen op en lopend creërend inhoud voor uw AEM als toepassing van de Cloud Service, is dit waar te beginnen!
 
 ## Soorten publiek {#audiences}
 
