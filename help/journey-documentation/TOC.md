@@ -5,9 +5,9 @@ breadcrumb-title: AEM Documentenreizen
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 65f0bc92d0ce60dd55b17b5ee8875d8e88033266
+source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,14 @@ Please note that all links to other guides need to be absolute references with l
    + [Teamleden toewijzen om te AEM als profielen van het Product van de Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
    + [Leerpad voor ontwikkelaars en implementatiemanagers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
    + [Leerpad voor AEM gebruikers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
++ Sites-omzettingsreis {#sites-translation}
+   + [Vertalen van sites in AEM begrijpen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+   + [Ga aan de slag met het vertalen van AEM sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+   + [Meer informatie over de inhoud van sites en over het vertalen in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+   + [Vertaalaansluiting configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+   + [Vertaalregels configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+   + [Inhoud vertalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+   + [Vertaalde inhoud publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Dagloze reizen {#headless}
    + [Startpagina zonder kop](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + Headless Developer Journey {#developer}
