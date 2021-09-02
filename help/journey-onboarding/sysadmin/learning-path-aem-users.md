@@ -3,9 +3,9 @@ title: Leerpad voor AEM gebruikers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren als u een AEM Gebruiker bent
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '356'
 ht-degree: 2%
 
 ---
@@ -36,18 +36,12 @@ Uw systeembeheerder moet alle noodzakelijke stappen hebben voltooid en u met suc
 
 Voer de onderstaande stappen uit om toegang te krijgen tot Auteur:
 
-1. Navigeer rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+1. Navigeer rechtstreeks van [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) naar de aanmeldingspagina van Cloud Manager.
 
-1. Selecteer **Experience Manager** op de startpagina van Adobe Experience Cloud.
+   >[!NOTE]
+   >Bladwijzer [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) voor toekomstige referentie en om u te helpen direct naar de landingspagina van Cloud Manager navigeren.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. Hiermee gaat u naar de AEM homepage. Start **Cloud Manager** vanaf hier.
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Markeer deze pagina ter referentie als bladwijzer en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
+1. Selecteer het programma op de pagina **Programma&#39;s en producten** van Cloud Manager om de pagina **Overzicht** te starten.
 
 1. Klik op de pagina **Overzicht** in Cloud Manager op de koppeling naar de auteur via de kaart **Omgevingen**.
 
