@@ -2,9 +2,9 @@
 title: 'Sandboxprogramma''s maken '
 description: Sandboxprogramma's maken
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ Voer de onderstaande stappen uit om een sandboxprogramma te maken:
 1. Start de openingspagina van Cloud Manager en klik op **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >Raadpleeg [Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) voor meer informatie over het openen van cloudbeheer voor meer informatie.
 
 1. Selecteer **Een sandbox** instellen in de wizard Programma maken. Gebruiker verzendt programmanaam alvorens **Create** te selecteren.
 

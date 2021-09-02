@@ -2,9 +2,9 @@
 title: Rollen in Wolkenbeheer
 description: Deze pagina beschrijft gebruikersrollen en toestemmingen. Volg deze pagina om te leren hoe u gebruikers kunt toevoegen en toewijzen aan Cloud Manager Roles.
 exl-id: d1689134-044a-4d96-97a2-cd09f735a680
-source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '529'
 ht-degree: 7%
 
 ---
@@ -30,9 +30,6 @@ Cloud Manager definieert momenteel vier rollen voor gebruikers die de beschikbaa
 ## Uw rollen bekijken {#view-roles}
 
 Als u uw rollen in Cloud Manager wilt weergeven, meldt u zich aan bij de interface van Cloud Manager, selecteert u het profielpictogram in de rechterbovenhoek en selecteert u **Gebruikersrollen**, zoals in de onderstaande afbeelding wordt getoond.
-
->[!NOTE]
->Zie [Navigeren naar Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) voor meer informatie over aanmelden naar Cloud Manager.
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
