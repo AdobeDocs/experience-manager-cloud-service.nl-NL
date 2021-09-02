@@ -2,7 +2,7 @@
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Bovendien kunt u vanaf de Adobe Experience Cloud-startpagina ook naar de pagina 
 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk. Nadat u zich hebt aangemeld bij Cloud Manager, kunt u de gebruikersinterface (UI) gebruiken.
 
-Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
+   Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 
