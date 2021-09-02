@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
+source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '934'
 ht-degree: 17%
 
 ---
@@ -38,7 +38,7 @@ Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
 
 1. Een systeembeheerder kan [Gebruikers toegang verlenen tot een AEM instantie](/help/onboarding/what-is-required/accessing-aem-instance.md) voor ontwikkelingsdoeleinden.
 
-**[Je Adobe ID ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**Je Adobe ID ophalen**
 
 U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen.
 
