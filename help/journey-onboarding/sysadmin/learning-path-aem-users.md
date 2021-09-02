@@ -1,10 +1,9 @@
 ---
 title: Leerpad voor AEM gebruikers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren als u een AEM Gebruiker bent
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 2%

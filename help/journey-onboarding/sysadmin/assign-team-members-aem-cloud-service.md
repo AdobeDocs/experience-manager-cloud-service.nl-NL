@@ -1,10 +1,9 @@
 ---
 title: 'Teamleden toewijzen om te AEM als profielen van het Product van de Cloud Service '
 description: Volg deze pagina om te leren hoe u teamleden toewijst aan AEM als profielen van het Product van de Cloud Service
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
