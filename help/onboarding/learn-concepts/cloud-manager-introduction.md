@@ -2,9 +2,9 @@
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,17 @@ Om klanten met de montages van de ondernemingsontwikkeling te steunen, AEM als C
 Om ervoor te zorgen dat klanten snel kunnen beginnen met AEM als Cloud Service, biedt Cloud Manager alles wat nodig is om op een zelfbedieningsmanier aan de slag te gaan, inclusief de mogelijkheid om cloudbronnen en -omgevingen te maken. Op deze manier hebben uw AEM ontwikkelaars via Cloud Manager toegang tot de gegevensopslagruimte voor it. Met behulp van Cloud Manager kunnen ontwikkelingsteams ervoor zorgen dat wijzigingen vaak zelf worden uitgevoerd.
 
 Uw systeembeheerder zal verantwoordelijk zijn voor het instellen van uw team van Cloud Manager, dat personen zal omvatten die uw cloudbronnen en -ontwikkelaars zullen maken. Raadpleeg [Enterprise Team Development Setup voor AEM als een Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) om te leren hoe Cloud Manager ondersteuning biedt in Enterprise Team Development Setup.
+
+## Navigeren naar de overzichtspagina van Cloud Manager {#navigate-cloud-manager}
+
+Ga als volgt te werk om naar Cloud Manager te navigeren:
+
+1. Navigeer rechtstreeks van [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) naar de aanmeldingspagina van Cloud Manager.
+
+   >[!NOTE]
+   >Markeer deze pagina ter referentie als bladwijzer en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
+
+1. Selecteer het programma op de pagina **Programma&#39;s en producten** van Cloud Manager om de pagina **Overzicht** te starten.
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 
