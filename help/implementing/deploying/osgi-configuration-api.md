@@ -1,10 +1,10 @@
 ---
 title: OSGi-configuratie-API
 description: Beschrijving van de AEM als OSGi-configuratieoppervlak van de Cloud Service
-feature: Implementeren
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+feature: Deploying
+source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Aanvullende informatie over de configuratie van OSGI vindt u op [deze locatie](/
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Aankondigingsdatum: 30-04-2021, Datum van tenuitvoerlegging: (31-07-2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Aankondigingsdatum: 30-04-2021, Datum van tenuitvoerlegging: (31-07-2021)
 * **`org.apache.felix.http (Factory)`** (Aankondigingsdatum: 30-04-2021, Datum van tenuitvoerlegging: (31-07-2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Aankondigingsdatum: 25-08-2021, Datum van tenuitvoerlegging: (26-11-2021)
 
 ## OSGi Configurations onderworpen aan de Regels van de Bevestiging van de Bouwstijl {#osgi-configurations-subject-to-build-validation-rules}
 
