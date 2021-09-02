@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'In cache plaatsen in AEM als Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Op deze pagina wordt ook beschreven hoe de cachegeheugen van de verzender ongeld
 
 ## Caching {#caching}
 
-### HTML/Tekst {#html-text}
+### HTML/Text {#html-text}
 
 * standaard wordt de header door de browser gedurende vijf minuten in cache geplaatst op basis van de `cache-control`-header die door de apache-laag wordt uitgestraald. De CDN neemt deze waarde ook in acht.
 * de standaardinstelling voor het in cache plaatsen van HTML/tekst kan worden uitgeschakeld door de variabele `DISABLE_DEFAULT_CACHING` in `global.vars` te definiëren:
@@ -40,10 +40,12 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
    </LocationMatch>
    ```
 
-   Wees voorzichtig bij het instellen van algemene cachebesturingskoppen of koppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé wilt houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, AEM als Cloud Service zal de geheim voorgeheugenkopbal verwijderen als het ontdekt dat het is toegepast op wat het ontdekt om door verzender oncacheable te zijn, zoals die in de documentatie van de verzender wordt beschreven. Als u wilt dat AEM altijd caching toepast, kunt u de optie &quot;always&quot; als volgt toevoegen:
+   Wees voorzichtig bij het instellen van algemene cachebesturingskoppen of koppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé wilt houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, AEM als Cloud Service zal de geheim voorgeheugenkopbal verwijderen als het ontdekt dat het is toegepast op wat het ontdekt om door verzender oncacheable te zijn, zoals die in de documentatie van de verzender wordt beschreven. Als u wilt dat AEM altijd de in cache plaatsen koppen toepast, kunt u de optie **always** als volgt toevoegen:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,11 +58,13 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
    { /glob "*" /type "allow" }
    ```
 
-* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan *private*. Voorbeeld: het volgende voorkomt dat HTML-inhoud onder een map met de naam **myfolder** in de cache wordt opgeslagen:
+* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan *private*. Voorbeeld: het volgende voorkomt dat HTML-inhoud onder een map met de naam **secure** in de cache wordt geplaatst:
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
@@ -123,7 +127,7 @@ Voorafgaand aan AEM als Cloud Service, waren er twee manieren om het berichtcher
 1. Roep de replicatieagent aan, die de publicatiedispatcher spoelagent specificeert
 2. De `invalidate.cache`-API direct aanroepen (bijvoorbeeld `POST /dispatcher/invalidate.cache`)
 
-De API-benadering van de verzender `invalidate.cache` wordt niet meer ondersteund omdat deze alleen geldt voor een specifiek verzender-knooppunt. AEM als Cloud Service werkt op het serviceniveau, niet op het niveau van de afzonderlijke knooppunten. De instructies voor validatie op de pagina [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) zijn daarom niet langer geldig voor AEM als Cloud Service.
+De API-benadering `invalidate.cache` van de verzender wordt niet meer ondersteund omdat deze alleen geldt voor een specifiek verzender-knooppunt. AEM als Cloud Service werkt op het serviceniveau, niet op het niveau van de afzonderlijke knooppunten. De instructies voor validatie op de pagina [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) zijn daarom niet langer geldig voor AEM als Cloud Service.
 In plaats daarvan, zou de replicatie flush agent moeten worden gebruikt. Dit kan worden gedaan gebruikend de Replicatie API. De documentatie van replicatie API is beschikbaar [hier](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) en voor een voorbeeld van het spoelen van het geheime voorgeheugen, zie [API voorbeeldpagina](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifiek het `CustomStep` voorbeeld die een replicatieactie van type ACTIVATE aan alle beschikbare agenten uitgeeft. Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
 
 Dit wordt geïllustreerd in het onderstaande diagram.
@@ -134,7 +138,7 @@ Als er een probleem is dat de verzendercache niet wordt gewist, neemt u contact 
 
 Adobe-beheerde CDN respecteert TTLs en zo is er geen behoefte aan het om worden gespoeld. Als een probleem wordt vermoed, [neem contact op met de klantenondersteuning](https://helpx.adobe.com/support.ec.html) die een CDN-cache met Adobe-beheer indien nodig kan leegmaken.
 
-## Client-Side bibliotheken en consistentie van versie {#content-consistency}
+## Client-Side bibliotheken en consistentie van versies {#content-consistency}
 
 Pagina&#39;s bestaan uit HTML, JavaScript, CSS en afbeeldingen. Klanten worden aangeraden het [Client-Side Libraries (clientlibs)-framework](/help/implementing/developing/introduction/clientlibs.md) te gebruiken om Javascript- en CSS-bronnen in HTML-pagina&#39;s te importeren, rekening houdend met afhankelijkheden tussen JS-bibliotheken.
 
@@ -144,7 +148,7 @@ Wanneer de nieuwe versies van bibliotheken worden vrijgegeven voor productie, wo
 
 Het mechanisme hiervoor is een geserialiseerde hash, die aan de verbinding van de cliëntbibliotheek wordt toegevoegd, die een unieke, versioned url voor browser verzekert om CSS/JS in het voorgeheugen onder te brengen. De geserialiseerde hash wordt alleen bijgewerkt wanneer de inhoud van de clientbibliotheek wordt gewijzigd. Dit betekent dat als er niet-verwante updates optreden (dat wil zeggen geen wijzigingen in de onderliggende css/js van de clientbibliotheek), zelfs met een nieuwe implementatie, de verwijzing ongewijzigd blijft, waardoor de browsercache minder wordt verstoord.
 
-### Longcache-versies van client Side Libraries inschakelen - AEM als Cloud Service SDK QuickStart {#enabling-longcache}
+### Longcache-versies van Client Side Libraries inschakelen - AEM als Cloud Service SDK QuickStart {#enabling-longcache}
 
 De standaard clientlib-include-bestanden op een HTML-pagina zien er als volgt uit:
 
