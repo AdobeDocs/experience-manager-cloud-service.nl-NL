@@ -2,9 +2,9 @@
 title: Inleiding - IP-Lijsten van gewenste personen in Cloud Manager
 description: Inleiding - IP-Lijsten van gewenste personen in Cloud Manager
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 3f282169b9ac2e2cf3e58277fd0c32cd97003de2
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,9 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="Een IP-Lijst van gewenste personen weergeven en bijwerken"
 
 AEM een cloudservice is toegankelijk voor internet en de beveiliging wordt afgehandeld via gebruikersverificatie en -autorisatie. IP staat lijst toe is een eigenschap in de Manager van de Wolk die wordt gebruikt om toegang tot slechts vertrouwde op gebruikers te beperken en te controleren. Deze eigenschap laat gebruikers met toestemmingen toe om Allow-lijsten van vertrouwde op IP adressen tot stand te brengen waarvan hun plaatsgebruikers tot hun AEM kunnen toegang hebben.
+
+>[!NOTE]
+>Een maximum van 10 IP Lijsten van gewenste personen kan in uw programma worden toegevoegd en een maximum van 50 IP/CIDR adressen kan aan elke IP Lijsten van gewenste personen worden toegevoegd.
 
 IP de Lijsten van gewenste personen kunnen eenmaal worden toegevoegd en worden toegepast/unapplied veelvoudige tijden als eenheid of entiteit aan een Auteur en/of de dienst van de Uitgever in een milieu.
 
