@@ -2,10 +2,10 @@
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 0%
+source-wordcount: '907'
+ht-degree: 3%
 
 ---
 
@@ -39,6 +39,26 @@ Bovendien kunt u vanaf de Adobe Experience Cloud-startpagina ook naar de pagina 
 1. Klik op **Launch** vanaf de kaart van de Manager van de Wolk. Nadat u zich hebt aangemeld bij Cloud Manager, kunt u de gebruikersinterface (UI) gebruiken.
 
    Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager.
+
+## Op rollen gebaseerde machtigingen in Cloud Manager {#role-based-permissions}
+
+| Machtiging | Beschrijving | Business Owner | Deployment Manager | Program Manager | Developer |
+|--- |--- |--- |--- |--- |--- |
+| Programma toevoegen<br>Programma bewerken | Voeg een nieuw programma toe.<br>Een programma bewerken - Oplossingen of invoegtoepassingen toevoegen of verwijderen | x |  |  |  |
+| Omgeving maken | Maak Prod+Stage, Dev, omgevingen. | x | x |  |  |
+| Omgeving bijwerken | Prod+werkgebied, Dev, omgevingen bijwerken. | x | x |  |  |
+| Dev-omgeving verwijderen | Dev-omgevingen verwijderen. | x | x |  |  |
+| Instellingen pijpleiding | Setup of Edit Pipeline. |  | x |  |  |
+| Uitvoering pijpleiding | Start de pijplijn. | x | x |  |  |
+| Uitvoering pijpleiding | Belangrijke 3-Tier-fouten afwijzen/goedkeuren. | x | x | x |  |
+| Uitvoering pijpleiding | Geef GoLive-goedkeuring op. | x | x | x |  |
+| Uitvoering pijpleiding | Plan de Implementatie van de Productie. | x | x | x |  |
+| Pipet verwijderen | Hiermee wordt het verwijderen van een pijpleiding toegestaan. |  | x |  |  |
+| Uitvoering annuleren | Huidige uitvoering annuleren. |  | x |  |  |
+| Token voor persoonlijke toegang genereren | Toegangspoort. |  | x |  | x |
+
+>[!NOTE]
+>Een gebruiker kan aan veelvoudige rollen worden toegewezen. Bijvoorbeeld het toewijzen van de rollen Bedrijfs van de Eigenaar en van de Manager van de Plaatsing aan een gebruiker geeft hen de combinatie of de som deze toestemmingen.
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 

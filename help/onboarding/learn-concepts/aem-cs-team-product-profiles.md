@@ -1,13 +1,13 @@
 ---
 title: AEM als team van Cloud Servicen en productprofielen
 description: Volg deze pagina om over AEM als Team van de Cloud Service en Profielen van het Product te leren.
-source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
+exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
+source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
 
 ---
-
 
 # AEM als team van Cloud Servicen en productprofielen {#product-profiles}
 
@@ -17,7 +17,7 @@ Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van 
 
 Lees meer over [AEM als Cloud Service productprofielen](#aem-product-profiles) en [Productprofielen van de Manager van de Wolk](#cloud-manager-product-profiles) om te begrijpen hoe deze in overleg werken terwijl uw team opstelling is.
 
-## AEM als productprofielen {#aem-product-profiles} van de Cloud Service
+## AEM als productprofielen voor Cloud Servicen {#aem-product-profiles}
 
 AEM als Cloud Service is het volledig clouds-inheemse aanbod dat AEM als dienst levert. Het levert AEM op een wolkeninheemse manier, met nieuwe attributen zoals altijd, altijd huidig, altijd veilig, en altijd op schaal. Tezelfdertijd behoudt het het belangrijkste waardevoorstel dat AEM verstrekt als aanpasbaar platform aan klanten en laat teams van ondernemingsrang toe om in hun ontwikkeling en leveringsprocedure te integreren. Verwijs naar [Inleiding aan Adobe Experience Manager als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) om meer over AEM als Cloud Service te leren.
 
@@ -36,7 +36,7 @@ Uw AEM als teamleden van de Cloud Service worden tijdens het instappen toegevoeg
 
 Cloud Manager heeft vooraf geconfigureerde productprofielen, of meer eenvoudig, op rollen gebaseerde machtigingen. Uw systeembeheerder is verantwoordelijk voor het instellen van uw team van Cloud Manager door de profielen aan deze productprofielen toe te wijzen en moet zich vertrouwd maken met deze productprofielen en aan welk teamlid ze moeten toewijzen.
 >[!NOTE]
->Raadpleeg [Op rol gebaseerde machtigingen in Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) voor meer informatie.
+>Raadpleeg [Op rol gebaseerde machtigingen in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) voor meer informatie.
 
 Aan elk productprofiel zijn specifieke machtigingen gekoppeld. Bijvoorbeeld, als u in de rol van a bent:
 
