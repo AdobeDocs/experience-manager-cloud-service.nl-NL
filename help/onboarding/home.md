@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 5a0c744d848397d9eb9581e0a0a2cd143c5a7412
+source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 17%
+source-wordcount: '595'
+ht-degree: 22%
 
 ---
 
@@ -24,44 +24,18 @@ De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmai
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-## Belangrijke artikelen over on-boarding {#key-articles}
+Zie [Reis aan boord](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) om aan de slag te gaan met de instapreis.
 
-In deze sectie worden de belangrijkste artikelen besproken die op uw reis zijn gericht wanneer u begint met AEM als Cloud Service:
+>[!NOTE]
+>Voordat u diep in de instaptocht duikt, wordt u aangeraden de sectie Learn Onboarding Concepts (Engelstalig) te raadplegen waarin de volgende onderwerpen aan bod komen:
+>* [Systeembeheerder](/help/onboarding/learn-concepts/system-administrator.md)
+>* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+>* [Adobe Identity Management-systeem](/help/onboarding/learn-concepts/ims.md)
+>* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+>* [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+>* [AEM als team en productprofielen van Cloud Servicen](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+>* [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 
-**Wat moet u verwachten als u aan boord gaat**
-
-Nadat uw contract is ondertekend, vinden de volgende gebeurtenissen plaats:
-
-1. Adobe zal levering voor uw organisatie voltooien waarna zal de Beheerder van het Systeem van uw organisatie een welkome e-mail ontvangen die hen toestaat om de taken van de Beheerder van het Systeem te doen met inbegrip van het toevoegen van gebruikers, die hen aan rollen toewijzen, en daardoor hen aangewezen toegang tot de Manager van de Wolk te verlenen.
-
-1. Gebruikers die door uw systeembeheerder zijn toegevoegd, ontvangen op hun beurt een welkomstbericht, zodat ze met succes naar Cloud Manager kunnen navigeren. Gebruikers kunnen hun Adobe ID nu gebruiken om zich aan te melden en hun reis met Cloud Manager te beginnen.
-
-1. Een systeembeheerder kan gebruikers toegang tot een AEM instantie voor ontwikkelingsdoeleinden verlenen.
-
-**Je Adobe ID ophalen**
-
-U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers toe te voegen aan de Manager van de Wolk aan hun toegewezen Rollen.
-
-**Rollen in Wolkenbeheer**
-
-Uw systeembeheerder kan gebruikers toevoegen en deze toewijzen aan de rollen van Cloud Manager. Deze sectie helpt u begrijpen wat *Rollen van de Manager van de Wolk* en toestemmingen verbonden aan de rollen zijn alvorens te worden begonnen.
-
-**Systeembeheertaken**
-
-Systeembeheerders beheren alle aspecten van hun gebruikers, van toegang tot machtigingen. Deze gebruiker is de eerste persoon die toegang heeft om taken uit te voeren in Admin Console en Cloud Manager.
-De volgende documentatiepagina&#39;s bevatten informatie over elementaire organisatorische taken:
-
-* Gebruikers toevoegen
-* Gebruikers toewijzen aan rollen en machtigingen in Cloud Manager
-
-**Navigeren naar Cloud Manager**
-
-Nu u als gebruiker bent toegevoegd en aan een rol van Cloud Manager bent toegewezen, kunt u Cloud Manager openen om aan de slag te gaan met AEM. De gebruikers zijn bereid om diverse taken te doen zoals het creëren van een programma, het toevoegen van een milieu, het toegang hebben tot van Git, [het vormen van een pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md), en [het opstellen van code](/help/implementing/cloud-manager/deploy-code.md).
-Cloud Manager is een belangrijk onderdeel van AEM als Cloud Service. Zo kunnen organisaties [!DNL Experience Manager] zelf beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid. Gebruikend het gebruikersinterface, kunt u de pijpleiding vormen en schoppen CI/CD.
-
-**Gebruikerstoegang verlenen aan een AEM instantie**
-
-Volg deze sectie om te leren hoe een Beheerder van het Systeem of een gebruiker die een milieu creeerde andere gebruikers toegang tot een AEM instantie kan verlenen.
 
 ## [!DNL Experience Manager as a Cloud Service] Hulplijnen {#aem-guides}
 
