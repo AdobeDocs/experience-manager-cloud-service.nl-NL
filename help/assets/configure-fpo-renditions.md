@@ -3,11 +3,10 @@ title: Uitvoeringen alleen voor plaatsing genereren voor Adobe InDesign
 description: Genereer FPO-uitvoeringen van nieuwe en bestaande elementen met behulp van de workflow voor Experience Manager Assets en ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Uitvoeringen
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
