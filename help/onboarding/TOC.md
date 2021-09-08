@@ -5,10 +5,10 @@ breadcrumb-title: Handleiding aan boord
 user-guide-description: Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 99c9fcf5e7593af5cca4999584d9c93c4ac8c030
+source-git-commit: f6d99949d562e16445ca5147e76d9006ebfe9974
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 48%
+source-wordcount: '82'
+ht-degree: 50%
 
 ---
 
@@ -24,4 +24,4 @@ ht-degree: 48%
    + [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM als team en productprofielen van Cloud Servicen](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Handleiding voor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) oninstapreizen {target=&quot;_blank&quot;}
++ [Onboarding Journaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)

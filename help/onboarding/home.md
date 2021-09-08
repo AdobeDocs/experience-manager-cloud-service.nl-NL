@@ -2,7 +2,7 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
+source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 22%
@@ -24,7 +24,7 @@ De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmai
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-Zie [Reis aan boord](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) om aan de slag te gaan met de instapreis.
+Zie [Op instapkaartreis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) om aan de slag te gaan met de instapervaring.
 
 >[!NOTE]
 >Voordat u diep in de instaptocht duikt, wordt u aangeraden de sectie Learn Onboarding Concepts (Engelstalig) te raadplegen waarin de volgende onderwerpen aan bod komen:

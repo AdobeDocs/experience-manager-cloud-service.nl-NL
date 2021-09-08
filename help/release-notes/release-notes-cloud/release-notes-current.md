@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -169,4 +169,20 @@ De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
 * De **Stop Ingestie** knoop werd onbruikbaar gemaakt tijdens opname aan de Publish instantie. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
 
 * CTT heeft de map `/tmp` niet opgeschoond na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.
+
+## Analysator van best practices {#best-practices-analyzer}
+
+### Releasedatum {#release-date-bpa-latest}
+
+De releasedatum voor de analyse van best practices v2.1.18 is 2021 september.
+
+### Wat is er nieuw? {#what-is-new}
+
+* Mogelijkheid om het totale aantal knooppunten te detecteren en te rapporteren.
+
+* Mogelijkheid om het type en de grootte van de knoopopslag te detecteren en te rapporteren.
+
+### Opgeloste problemen {#bug-fixes-bpa}
+
+* BPA ontdekte ten onrechte de aanwezigheid van een kader voor de integratie van de handel.
 
