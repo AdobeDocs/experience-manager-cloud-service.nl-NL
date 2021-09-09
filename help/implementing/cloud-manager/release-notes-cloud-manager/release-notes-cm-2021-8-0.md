@@ -2,10 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,5 +47,3 @@ Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manage
 * De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
 
 * Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
-
-
