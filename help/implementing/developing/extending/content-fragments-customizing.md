@@ -2,7 +2,7 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -16,10 +16,6 @@ Binnen Adobe Experience Manager als Cloud Service breidt een inhoudsfragment een
 * [Inhoudsfragmenten en ](/help/assets/content-fragments/content-fragments.md) pagina&#39;s  [ontwerpen en beheren met ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) inhoudfragmenten voor meer informatie over inhoudsfragmenten.
 
 * [Beheer van ](/help/assets/manage-digital-assets.md) activa voor meer informatie over standaardactiva.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Architectuur {#architecture}
 
@@ -97,7 +93,7 @@ Integreren met de kern Elementen:
 
 * Verschillende middelencomponenten zijn uitgebreid om rekening te houden met inhoudsfragmenten.
 
-### Inhoudsfragmenten gebruiken in pagina&#39;s {#using-content-fragments-in-pages}
+### Inhoudsfragmenten op pagina&#39;s gebruiken {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -135,7 +131,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de AEM vertaalworkflow. Op architectonisch niveau betekent dit:
+   Inhoudsfragmenten zijn volledig geïntegreerd met de vertaalworkflow [AEM. ](/help/sites-cloud/administering/translation/overview.md) Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
@@ -282,7 +278,7 @@ Zie het volgende:
 
    `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat het niet overlapt met het elementeninhoudspakket.
 
-## Sessies {#edit-sessions} bewerken
+## Sessies bewerken {#edit-sessions}
 
 >[!CAUTION]
 >
@@ -299,7 +295,7 @@ Twee gebruikers kunnen hetzelfde inhoudsfragment tegelijk bewerken en kunnen daa
 
 ## Voorbeelden {#examples}
 
-### Voorbeeld: Een bestaand inhoudsfragment {#example-accessing-an-existing-content-fragment} openen
+### Voorbeeld: Een bestaand inhoudsfragment openen {#example-accessing-an-existing-content-fragment}
 
 Hiertoe kunt u de bron die de API vertegenwoordigt aanpassen aan:
 
@@ -349,7 +345,7 @@ Als u een auto sparen interval van 5 minuten wilt plaatsen moet u het bezit op u
 
 * Waarde: `300` (5 minuten komt overeen met 300 seconden)
 
-## Componenten voor pagina-ontwerp {#components-for-page-authoring}
+## Componenten voor paginaontwerp {#components-for-page-authoring}
 
 Zie voor meer informatie
 

@@ -1,14 +1,13 @@
 ---
 title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager als Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 1%
 
 ---
-
 
 # De Sling Resource Merger in AEM as a Cloud Service gebruiken {#using-the-sling-resource-merger-in-aem}
 
@@ -25,8 +24,6 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 * De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (d.w.z. het *overlays* of *overschrijft* het).
 
 * Indien nodig geven [eigenschappen](#properties) die in de aanpassing zijn gedefinieerd, aan hoe inhoud die uit het origineel is samengevoegd, moet worden gebruikt.
-
-<!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
@@ -50,6 +47,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
 >* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType`.
+
 >
 >Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM als Cloud Service aanpassingen onder `/apps` moeten bepalen; Dit komt omdat u niets onder `/libs` moet veranderen.
 
@@ -79,7 +77,7 @@ De resourcefusie biedt de volgende eigenschappen:
 
 Deze eigenschappen beïnvloeden hoe de overeenkomstige/originele middelen/eigenschappen (van `/libs`) door de bekleding/de opheffing (vaak in `/apps`) worden gebruikt.
 
-### De structuurmaken {#creating-the-structure}
+### De structuur maken {#creating-the-structure}
 
 Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knooppunt opnieuw maken, met de equivalente structuur, onder het doel (gewoonlijk `/apps`). Bijvoorbeeld:
 
@@ -122,7 +120,7 @@ In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 >
 >Bij gebruik van de samenvoeging van het Verspreide Middel (d.w.z. wanneer het behandelen van de norm, aanraking-toegelaten UI) wordt het niet geadviseerd om de volledige structuur van `/libs` te kopiëren aangezien het in teveel informatie zou resulteren die in `/apps` wordt gehouden. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
 
-### Gevallengebruiken {#use-cases}
+### Gevallen gebruiken {#use-cases}
 
 Deze, samen met standaardfunctionaliteit, laten u toe:
 
@@ -243,17 +241,3 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
