@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,8 @@ De volgende release is gepland voor 7 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-sept}
 
+* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
+
 * De programmakaarten op de landingspagina van Cloud Manager en de bijbehorende ervaring zijn vernieuwd.
 
 * Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
@@ -139,7 +141,6 @@ De volgende release is gepland voor 7 oktober 2021.
 
 * Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
 
-* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
 
 ### Opgeloste problemen {#bug-fixes-sept}
 

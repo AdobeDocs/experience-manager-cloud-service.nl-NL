@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Re
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ De volgende release is gepland voor 7 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
+* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
+
 * De programmakaarten op de landingspagina van Cloud Manager en de bijbehorende ervaring zijn vernieuwd.
 
 * Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
@@ -31,8 +33,6 @@ De volgende release is gepland voor 7 oktober 2021.
 * De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de codegenerator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
 
 * Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
-
-* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
 
 ### Opgeloste problemen {#bug-fixes}
 
