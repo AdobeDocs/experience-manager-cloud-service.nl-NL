@@ -2,10 +2,10 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 22%
+source-wordcount: '556'
+ht-degree: 23%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 22%
 
 Gefeliciteerd met je reis met AEM als Cloud Service! Of u nu een nieuwe toepassing implementeert of een bestaande toepassing migreert, deze handleiding dient als uitgangspunt om ervoor te zorgen dat uw toepassing optimaal is en klaar voor succes op de Cloud Service.
 
-Deze handleiding helpt u en uw team snel aan de slag te gaan met Cloud Manager. U hebt uw Adobe ID en de hulp van uw systeembeheerder nodig om gebruikers aan de Manager van de Wolk toe te voegen aan hun toegewezen Rollen (die als Profielen van het Product in Admin Console worden bedoeld) en bijbehorende toestemmingen. De instructies voor hoe de systeembeheerder dit via Admin Console kan doen worden beschreven. De lijst met rollen van Cloud Manager, die productprofielen in de Admin Console worden genoemd en de bijbehorende machtigingen, is gedetailleerd, zodat u kunt bepalen welke rollen nodig zijn voor verschillende gebruikers in uw organisatie.
+## Onboarding Experience {#audience}
 
-De volgende afbeelding illustreert uw instapreis, te beginnen met de welkomstmail die u van uw systeembeheerder hebt ontvangen en die eindigt bij gebruikers die Cloud Manager als Cloud Service openen voor AEM.
+Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in de volgende gedeelten gedetailleerd beschreven.
 
-Zie [Op instapkaartreis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) om aan de slag te gaan met de instapervaring.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Voordat u diep in de instaptocht duikt, wordt u aangeraden de sectie Learn Onboarding Concepts (Engelstalig) te raadplegen waarin de volgende onderwerpen aan bod komen:
->* [Systeembeheerder](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Adobe Identity Management-systeem](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM als team en productprofielen van Cloud Servicen](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Deze reis wordt ontworpen voor een persoon van de Beheerder van het Systeem, die de vereisten, de stappen, en de benadering beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
 
+Zie [Op instapkaartreis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) om aan de slag te gaan met de instapervaring.
 
 ## [!DNL Experience Manager as a Cloud Service] Hulplijnen {#aem-guides}
 

@@ -3,24 +3,15 @@ title: Onboarding Journaal
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 2%
 
 ---
 
 # Onboarding Journaal {#onboarding-jourrney}
-
-## Onboarding Experience {#audience}
-
-Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
-
-De instapreis wordt hieronder geïllustreerd en elke etappe van de reis wordt in de volgende gedeelten gedetailleerd beschreven.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Deze reis wordt ontworpen voor een persoon van de Beheerder van het Systeem, die de vereisten, de stappen, en de benadering beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
 
 ## De reis Onboarding verkennen {#exploring-onboarding-journey}
 
