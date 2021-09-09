@@ -1,42 +1,52 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.9.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.9.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
 feature: Release Information
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.9.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.8.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.9.0.
+Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.8.0.
 
 >[!NOTE]
 >Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager als Cloud Service te zien, klik [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.9.0 is 9 september 2021.
-De volgende release is gepland voor 7 oktober 2021.
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.8.0 is 12 augustus 2021.
+De volgende release is gepland voor 9 september 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
-* De programmakaarten op de landingspagina van Cloud Manager en de bijbehorende ervaring zijn vernieuwd.
+* Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar worden gesteld.
+Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) om meer te leren.
 
-* Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
+* Het type en de strengheid van de IndexType en `IndexDamAssetLucene` kwaliteitsregels zijn veranderd. Dit zijn nu beide bugs van Blocker *serverity*.
 
-* De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de codegenerator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
+* De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en tika configuraties te behandelen.
 
-* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
+* Verhoog de maximale SSL-certs per programma tot 50.
 
-* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
+* Self-service mogelijkheid om gebruikers in staat te stellen meerdere opslagruimten te maken en te beheren via de interface van Cloud Manager.
+
+* SonarQube leest onnodig de gegevens uit de Git-geschiedenis. Op grote codebasis, zou dit tot een onnodige bouwstijlprestaties kunnen leiden.
+
+* Er is nu een API beschikbaar om het Geweven gebiedsdeelheidsgeheime voorgeheugen per pijpleiding ongeldig te maken.
+
+* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 29.
 
 ### Opgeloste problemen {#bug-fixes}
 
-* De gebruiker zal nu een begrijpelijker bericht wanneer het proberen om een nieuwe IP Lijst van gewenste personen in een programma toe te voegen dat het maximum toegestane aantal IP Lijsten van gewenste personen heeft bereikt die kunnen worden gevormd.
+* Update Available status should not be displayed when the latest release is less than the current release.
 
-* Er is een onjuiste URL gekopieerd bij het selecteren van de menuoptie URL kopiëren in het scherm Opslagplaatsen.
+* De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
+
+* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
 
 
