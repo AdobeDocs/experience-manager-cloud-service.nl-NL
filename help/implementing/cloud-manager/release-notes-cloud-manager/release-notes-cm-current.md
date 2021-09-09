@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Re
 description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De volgende release is gepland voor 7 oktober 2021.
 
 * De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de codegenerator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
 
-* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
+* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de pagina **Overzicht** van Cloud Manager. Zie [Een productieprogramma maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) voor meer informatie.
 
 ### Opgeloste problemen {#bug-fixes}
 
