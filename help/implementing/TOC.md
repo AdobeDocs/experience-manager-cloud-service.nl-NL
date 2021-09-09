@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1036'
 ht-degree: 26%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 26%
 + [Applicaties voor AEM as a Cloud Service implementeren](/help/implementing/home.md)
 + Cloud Manager gebruiken {#using-cloud-manager}
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Opmerkingen bij de huidige release (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Huidige opmerkingen bij de release (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Opmerkingen bij de release 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Opmerkingen bij de release 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Opmerkingen bij de release 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Opmerkingen bij de release 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)

@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
+source-git-commit: 2999a86cdf674e1e03a3ce6a05deb7386b9bf1ad
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -122,12 +122,34 @@ Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.ado
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.8.0 en 2021.7.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.9.0 en 2021.8.0.
+
+## Releasedatum {#release-date-cm-sept}
+
+De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.9.0 is 9 september 2021.
+De volgende release is gepland voor 7 oktober 2021.
+
+### Wat is er nieuw? {#what-is-new-cm-sept}
+
+* De programmakaarten op de landingspagina van Cloud Manager en de bijbehorende ervaring zijn vernieuwd.
+
+* Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
+
+* De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de codegenerator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
+
+* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
+
+* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
+
+### Opgeloste problemen {#bug-fixes}
+
+* De gebruiker zal nu een begrijpelijker bericht wanneer het proberen om een nieuwe IP Lijst van gewenste personen in een programma toe te voegen dat het maximum toegestane aantal IP Lijsten van gewenste personen heeft bereikt die kunnen worden gevormd.
+
+* Er is een onjuiste URL gekopieerd bij het selecteren van de menuoptie URL kopiëren in het scherm Opslagplaatsen.
 
 ## Releasedatum {#release-date-cm-aug}
 
 De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.8.0 is 12 augustus 2021.
-De volgende release is gepland voor 9 september 2021.
 
 ### Wat is er nieuw? {#what-is-new-aug}
 
