@@ -2,9 +2,9 @@
 title: 'Een productieprogramma maken '
 description: Een productieprogramma maken
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Voer de volgende stappen uit om een productieprogramma te maken:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Zodra u uw programmacode op de bestemmingspagina ziet, houd de aanwijzer boven het pictogram Cloud Manager om naar de pagina Cloud Manager **Overzicht** te navigeren.
+1. Als u de programmakaart op de bestemmingspagina ziet, selecteert u **..** om de menuopties te zien waarover u beschikt. Selecteer **Cloud Manager**, zoals weergegeven in de onderstaande afbeelding, om naar de pagina **Overzicht** van Cloud Manager te navigeren.
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. De belangrijkste vraag-aan-actie kaart zal de gebruiker begeleiden om een milieu tot stand te brengen, een niet productiepijpleiding, en tenslotte een productiepijpleiding tot stand te brengen.
    ![](assets/set-up-prod5.png)
