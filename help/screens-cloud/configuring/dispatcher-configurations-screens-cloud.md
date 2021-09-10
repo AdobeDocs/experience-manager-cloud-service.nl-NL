@@ -1,19 +1,19 @@
 ---
 title: Configuraties van Dispatcher in rasters als Cloud Service
 description: Deze pagina beschrijft Dispatcher Configurations in Screens als Cloud Service.
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Configuraties van Dispatcher in rasters als Cloud Service{#dispatcher-configurations-screens-cloud}
+# Configuraties van Dispatcher in rasters als Cloud Service {#dispatcher-configurations-screens-cloud}
 
 In deze sectie worden de configuraties van de verzender voor rasters beschreven als een Cloud Service.
 
-## Dispatcher Configurations voor schermen als Cloud Service-implementatie {#deployment}
+## Filters en cacheregels toevoegen in Dispatcher voor rasters als Cloud Service-implementatie {#deployment}
 
 De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-instanties in rasters als Cloud Service.
 
