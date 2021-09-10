@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
+source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 24%
 
 ---
@@ -22,13 +22,13 @@ Gefeliciteerd met je reis met AEM als Cloud Service! Of u nu een nieuwe toepassi
 
 Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van wolkenmiddelen en de toewijzing van gebruikers aan aangewezen rollen die op hun baanverantwoordelijkheden worden gebaseerd waarna elk lid zich kan aanmelden en tot hun AEM als middelen van de Cloud Service toegang hebben.
 
-De instapreis wordt hieronder geïllustreerd.
+De hieronder beschreven instapreis is ontworpen voor een systeembeheerder die de vereisten, stappen en aanpak beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
-Deze reis wordt ontworpen voor een persoon van de Beheerder van het Systeem, die de vereisten, de stappen, en de benadering beschrijft. De reis bepaalt extra karakters waarmee de Beheerder van het Systeem voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van een beheerder.
+>[!NOTE]
+>Zie [Reis aan boord](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) om aan de slag te gaan met uw ervaring aan boord.
 
-Zie [Reis aan boord](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) om aan de slag te gaan met uw ervaring aan boord.
 
 ## [!DNL Experience Manager as a Cloud Service] Hulplijnen {#aem-guides}
 
