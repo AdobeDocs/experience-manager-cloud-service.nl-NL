@@ -1,13 +1,13 @@
 ---
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Implementatiefase in Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ Volg deze sectie om de de activiteitenkaart van het Refactoring van de Code te o
    * Dispatcher
    * Testen
 
-   Het **Overzicht** lusje toont een lijst van code refactoring activiteiten.
+>[!NOTE]
+>Controleer de inhoud op deze tabbladen om een aantal extra gebieden te begrijpen die niet worden bestreken door de Analysator voor beste praktijken.
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+Het tabblad **Dispatcher** biedt informatie over de structuur van de AEM als Apache- en Dispatcher-configuraties voor Cloud Servicen, en over de validatie en uitvoering van de software lokaal voordat deze wordt geïmplementeerd in Cloud-omgevingen. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven.
 
-   Het tabblad **Dispatcher** biedt informatie over de structuur van de AEM als Apache- en Dispatcher-configuraties voor Cloud Servicen, en over de validatie en uitvoering van de software lokaal voordat deze wordt geïmplementeerd in Cloud-omgevingen. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven.
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+Het tabblad **Testen** biedt informatie over het testen van functies, Experience Audit en UI.
 
-   Het tabblad **Testen** biedt informatie over het testen van functies, Experience Audit en UI.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >Lees ook de inhoud in de tabbladen op de pagina om meer inzicht te krijgen in enkele andere gebieden die niet worden bestreken door de Analysator voor beste praktijken.
+![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Het gebruiken van AEM als Kaart van de Plaatsing van de Cloud Service {#aem-as-a-cloud-service-deployment}
