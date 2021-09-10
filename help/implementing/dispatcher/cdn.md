@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '926'
 ht-degree: 8%
 
 ---
@@ -65,6 +65,12 @@ Configuratieinstructies:
    * Naar keuze, kan de toegang tot de ingang van Adobe CDN worden geblokkeerd wanneer `X-AEM-Edge-Key` niet aanwezig is. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
 
 Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
+
+Na het verkrijgen van `X-AEM-Edge-Key`, kunt u testen dat het verzoek correct als volgt wordt verpletterd:
+
+```
+curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal worden gedaan gebruikend het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
