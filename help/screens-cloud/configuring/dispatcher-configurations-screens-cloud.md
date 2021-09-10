@@ -1,9 +1,9 @@
 ---
 title: Configuraties van Dispatcher in rasters als Cloud Service
 description: Deze pagina beschrijft Dispatcher Configurations in Screens als Cloud Service.
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,7 @@ In deze sectie worden de configuraties van de verzender voor rasters beschreven 
 
 De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-instanties in rasters als Cloud Service.
 
-### Filters {#filters}
-
-## AEM Screens-filters
+### AEM Screens-filters {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-ins
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## Cacheregels {#cache-rules}
+### Cacheregels {#cache-rules}
 
 * Voeg `/statfileslevel "10"` aan `/cache` sectie in `publish_farm.any` toe.
 
    >[!NOTE]
-   >Dit steunt caching tot 10 niveaus van cachedocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan alles ongeldig. U kunt dit niveau wijzigen op basis van de diepte van de inhoudsstructuur.
+   >Deze geheim voorgeheugenregel steunt caching tot 10 niveaus van de geheim voorgeheugendocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan het ongeldig maken van alles. U kunt dit niveau wijzigen op basis van de mate waarin de inhoudsstructuur is ingesteld.
 
 * Voeg het volgende toe aan `/invalidate` sectie in `publish_farm.any`.
 
@@ -56,7 +54,7 @@ De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-ins
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
