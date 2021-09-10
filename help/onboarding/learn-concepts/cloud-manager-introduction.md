@@ -2,7 +2,7 @@
 title: Meer informatie over Cloud Manager
 description: Volg deze pagina voor meer informatie over Cloud Manager, Cloud Manager-programma's en omgevingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Om klanten met de montages van de ondernemingsontwikkeling te steunen, AEM als C
 
 Om ervoor te zorgen dat klanten snel kunnen beginnen met AEM als Cloud Service, biedt Cloud Manager alles wat nodig is om op een zelfbedieningsmanier aan de slag te gaan, inclusief de mogelijkheid om cloudbronnen en -omgevingen te maken. Op deze manier hebben uw AEM ontwikkelaars via Cloud Manager toegang tot de gegevensopslagruimte voor it. Met behulp van Cloud Manager kunnen ontwikkelingsteams ervoor zorgen dat wijzigingen vaak zelf worden uitgevoerd.
 
-Uw systeembeheerder zal verantwoordelijk zijn voor het instellen van uw team van Cloud Manager, dat personen zal omvatten die uw cloudbronnen en -ontwikkelaars zullen maken. Raadpleeg [Enterprise Team Development Setup voor AEM als een Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) om te leren hoe Cloud Manager ondersteuning biedt in Enterprise Team Development Setup.
+Uw systeembeheerder zal verantwoordelijk zijn voor het instellen van uw team van Cloud Manager, dat personen zal omvatten die uw cloudbronnen en -ontwikkelaars zullen maken. Raadpleeg [Enterprise Team Development Setup voor AEM als een Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) om te leren hoe Cloud Manager ondersteuning biedt in Enterprise Team Development Setup.
 
 ## Navigeren naar de overzichtspagina van Cloud Manager {#navigate-cloud-manager}
 

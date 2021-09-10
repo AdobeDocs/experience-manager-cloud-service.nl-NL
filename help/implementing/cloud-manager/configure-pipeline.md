@@ -2,7 +2,7 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
 1. Met het tabblad **Broncode** kunt u de opslagplaats bijwerken. Klik op **Toegang tot repo-info** om de gegevensopslagruimte bij te werken.
 
    >[!NOTE]
-   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 

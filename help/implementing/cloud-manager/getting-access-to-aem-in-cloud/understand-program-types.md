@@ -2,7 +2,7 @@
 title: Programma- en programmatypen
 description: Programma- en programmatypen begrijpen - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Cloud Manager-programma wordt automatisch ingericht met de eigen git-opslagruimt
 
 Gebruikers kunnen alleen toegang krijgen tot de gegevensopslagruimte van Cloud Manager als ze een Git-client gebruiken met een opdrachtregelprogramma, een zelfstandige visuele Git-client of de IDE van de gebruiker, zoals Eclipse, IntelliJ, NetBeans.
 
-Zodra een Git-client is ingesteld, kunt u de git-opslagplaats beheren vanuit de interface van Cloud Manager. Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/accessing-repos.md) voor meer informatie over het beheren van Git met de interface van Cloud Manager.
+Zodra een Git-client is ingesteld, kunt u de git-opslagplaats beheren vanuit de interface van Cloud Manager. Raadpleeg [Toegang tot Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md) voor meer informatie over het beheren van Git met de interface van Cloud Manager.
 
 Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, moet u een lokale kopie van de toepassingscode maken door deze uit te checken van de opslagplaats van Cloud Manager naar een locatie op de lokale computer waar ze hun opslagplaats willen maken.
 
