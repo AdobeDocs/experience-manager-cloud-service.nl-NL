@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'In cache plaatsen in AEM als Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
    { /glob "*" /type "allow" }
    ```
 
-* Om specifieke inhoud te verhinderen in het voorgeheugen onder te brengen, plaats de geheime voorgeheugen-controle kopbal aan *private*. Voorbeeld: het volgende voorkomt dat HTML-inhoud onder een map met de naam **secure** in de cache wordt geplaatst:
+* Als u wilt voorkomen dat specifieke inhoud **in de CDN** in de cache wordt opgeslagen, stelt u de header Cache-Control in op *private*. Voorbeeld: het volgende voorkomt dat HTML-inhoud onder een map met de naam **secure** in de cache wordt geplaatst bij de CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
 
    >[!NOTE]
    >De andere methodes, met inbegrip van [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), zullen niet met succes waarden met voeten treden.
+
+   >[!NOTE]
+   >Houd er rekening mee dat de verzender nog steeds inhoud in cache plaatst volgens de eigen [caching-regels](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Als u de inhoud echt privé wilt maken, moet u ervoor zorgen dat deze niet in de cache wordt opgeslagen door de verzender.
 
 ### Client-Side bibliotheken (js,css) {#client-side-libraries}
 
