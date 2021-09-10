@@ -1,13 +1,13 @@
 ---
 title: Players in rasters installeren en configureren als Cloud Service
 description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
-
 
 # Players in rasters installeren en configureren als Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
 ## Standaardafspeelcontrole {#playback-monitoring}
 
-De speler rapporteert verschillende afspeelmetriek met elke `ping` die standaard op 30 seconden wordt ingesteld. Gebaseerd op de metriek, kunt u diverse randgevallen zoals gespleet ervaring, leeg scherm, en het plannen kwesties ontdekken. Dit laat u kwesties op het apparaat begrijpen en problemen oplossen, en bespoedigt zo een onderzoek en correctieve maatregelen.
+De speler rapporteert verschillende afspeelmetriek met elke `ping` die standaard op 30 seconden wordt ingesteld. Gebaseerd op deze metriek, kunnen wij diverse randgevallen zoals vastgezette ervaring, leeg scherm, en het plannen kwesties ontdekken. Dit laat ons kwesties op het apparaat begrijpen en problemen oplossen, en bespoedigt zo een onderzoek en correctieve maatregelen met u.
 
-Met de standaardafspeelcontrole in een AEM Screens-speler kunt u:
+Met de standaardafspeelcontrole in een AEM Screens-speler kunnen we:
 
 * Op afstand controleren of een speler de inhoud correct afspeelt.
 
@@ -80,9 +80,11 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 * De speler rapporteert zijn eigen playbackstaat aan de server, zodat vereist het een actieve verbinding.
 
-* De eigenschap `isContentRendering` die de GPU controleert, is momenteel hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren voor spelers. U wordt aangeraden dit effect niet samen met video&#39;s te gebruiken.
+* De eigenschap `isContentRendering` die de GPU controleert, is momenteel te hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren van de speler. U wordt aangeraden dit niet te gebruiken in combinatie met video&#39;s in productie.
 
-* Deze functie wordt ondersteund voor reekskanalen.
+* Deze functie wordt alleen ondersteund voor reekskanalen en heeft nog geen betrekking op het gebruik van interactieve kanalen (SPA).
+
+* De metriek worden nog niet volledig aan onze klanten blootgesteld, wij werken hard aan het toelaten van dashboard-als rapportering en alarmeringsmechanisme in de nabije toekomst.
 
 ## Volgende functies {#whats-next}
 
