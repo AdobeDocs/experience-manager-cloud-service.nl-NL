@@ -1,11 +1,11 @@
 ---
 title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) gebruikt als Cloud Service met de AEM GraphQL API voor het leveren van inhoud zonder kop.
-feature: Inhoudsfragmenten,GrafiekQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 * [GrafiekQL-eindpunt inschakelen](#enabling-graphql-endpoint)
 * [Uw GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
 
-### Het toelaten van uw Eindpunt GraphQL {#enabling-graphql-endpoint}
+### GrafiekQL-eindpunt inschakelen {#enabling-graphql-endpoint}
 
 Om een Eindpunt te toelaten GraphQL moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
@@ -180,7 +180,7 @@ Om het overeenkomstige eindpunt toe te laten:
    >
    >U kunt opstelling ACLs, aangewezen aan uw gebruiksgeval, op het eindpunt.
 
-### Het publiceren van uw Eindpunt GraphQL {#publishing-graphql-endpoint}
+### Het Eindpunt GraphQL publiceren {#publishing-graphql-endpoint}
 
 Selecteer het nieuwe eindpunt en **Publiceer** om het volledig beschikbaar te maken in alle milieu&#39;s.
 
@@ -210,11 +210,11 @@ Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch v
 
 ![GraphiQL ](assets/cfm-graphiql-interface.png "InterfaceGraphiQL Interface")
 
-### Installatie van de AEM GraphiQL-interface {#installing-graphiql-interface}
+### De interface AEM GraphiQL installeren {#installing-graphiql-interface}
 
 De GraphiQL-gebruikersinterface kan worden geïnstalleerd op AEM met een toegewezen pakket: het [GraphiQL-inhoudspakket v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)-pakket.
 
-## Gevallen gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
+## Kwesties gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
 
 De gebruiksgevallen kunnen van het type van AEM als Cloud Service milieu afhangen:
 
@@ -323,7 +323,7 @@ GraphQL voor AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstype
 | Content Reference |  Tekenreeks |  Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
 | Fragmentverwijzing |  *Een modeltype* |  Wordt gebruikt om te verwijzen naar een ander inhoudsfragment van een bepaald modeltype, dat is gedefinieerd toen het model werd gemaakt. |
 
-### Helpvelden {#helper-fields}
+### Helpervelden {#helper-fields}
 
 Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL voor AEM ook een aantal *helper* velden om een inhoudsfragment beter te kunnen identificeren of om aanvullende informatie over een inhoudsfragment te kunnen verstrekken.
 
@@ -812,7 +812,7 @@ Om tot het eindpunt GraphQL van een externe website toegang te hebben moet u vor
 
 >[!NOTE]
 >
->Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [Begrijpen het Middelen van het Middel van de Verkeer van Herkomst (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [Begrijpen het Middelen van het Middel van de Verkeer van Herkomst (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 Om tot het eindpunt toegang te hebben GraphQL, moet een beleid CORS in de bewaarplaats van de Kit van de klant worden gevormd. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
 

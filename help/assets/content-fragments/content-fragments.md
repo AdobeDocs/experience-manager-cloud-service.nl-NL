@@ -1,12 +1,12 @@
 ---
 title: Werken met contentfragmenten
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) als Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken, ideaal voor levering zonder kop.
-feature: Contentfragmenten
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2033'
 ht-degree: 3%
 
 ---
@@ -51,9 +51,9 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 >
 >* [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Contentfragmenten aanpassen en uitbreiden](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [AEM GraphQL API voor gebruik met Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM GraphQL API voor gebruik met Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
@@ -75,12 +75,15 @@ Met inhoudelementen kunt u:
 Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillende kanalen ervaringen op te doen.
 
 >[!NOTE]
-**Content** Fragmentations en  **[Experience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** Fragmentes zijn verschillende functies in AEM:
-* **Inhoudsfragmenten** zijn redactionele inhoud die kan worden gebruikt voor toegang tot gestructureerde gegevens, waaronder teksten, getallen en datums. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
-* **De inhoud van de** ervaringen met fragmentatie is volledig afgebakend. een fragment van een webpagina.
+>
+>**Content** Fragmentations en  **[Experience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** Fragmentes zijn verschillende functies in AEM:
+>* **Inhoudsfragmenten** zijn redactionele inhoud die kan worden gebruikt voor toegang tot gestructureerde gegevens, waaronder teksten, getallen en datums. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
+>* **De inhoud van de** ervaringen met fragmentatie is volledig afgebakend. een fragment van een webpagina.
 
-De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
-Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments) voor meer informatie.
+>
+>De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
+>
+>Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments) voor meer informatie.
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ AEM Inhoudsfragmenten kunnen worden gebruikt om gestructureerde inhoud te beschr
 Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM inhoud aan andere kanalen dan AEM pagina&#39;s te leveren.
 
 >[!NOTE]
-Zie [Headless and AEM](/help/implementing/developing/headless/introduction.md) voor een inleiding tot Headless Development voor AEM Sites als Cloud Service.
+>
+>Zie [Headless and AEM](/help/implementing/developing/headless/introduction.md) voor een inleiding tot Headless Development voor AEM Sites als Cloud Service.
 
 >[!NOTE]
-AEM ondersteunt ook het vertalen van fragmentinhoud.
+>
+>AEM ondersteunt ook het vertalen van fragmentinhoud.
 
 >[!NOTE]
-AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Elementen vertalen](/help/assets/translate-assets.md) voor meer informatie.
+>
+>AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Elementen vertalen](/help/assets/translate-assets.md) voor meer informatie.
 
 ## Inhoudstype {#content-type}
 
@@ -144,7 +150,8 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * Zie [Elementen invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
 
    >[!NOTE]
-   Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
+   >
+   >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
 
 * **Gekoppelde inhoud**
 
@@ -188,10 +195,12 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
 
       >[!CAUTION]
-      Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
+      >
+      >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
 
       >[!NOTE]
-      Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
+      >
+      >Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Middelen.
 
 * **Gekoppelde inhoud**
 
@@ -215,7 +224,8 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
          * Door de **Metagegevens** te bewerken in de fragmenteditor
 
    >[!CAUTION]
-   Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
+   >
+   >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
 
 * **Master**
 
@@ -248,7 +258,8 @@ Tussen inhoud:
 * De bijbehorende inhoud kan worden gebruikt, evenals activa en/of componenten van aangewezen browser.
 
 >[!CAUTION]
-De tussenliggende inhoud is pagina-inhoud. Deze wordt niet opgeslagen in het inhoudsfragment.
+>
+>De tussenliggende inhoud is pagina-inhoud. Deze wordt niet opgeslagen in het inhoudsfragment.
 
 ### Vereist door fragmenten {#required-by-fragments}
 

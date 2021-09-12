@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1627'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ U kunt naar [!DNL formscsbeta@adobe.com] schrijven om u aan te melden voor het b
 Zie [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie.
 
 * Ondersteuning van miniaturen voor video&#39;s wordt nu in Schermen ondersteund als Cloud Service. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder kan worden gebruikt en behoorlijk het playback en richten van inhoud testen, terwijl de daadwerkelijke video door het aangewezen team wordt gebeëindigd. De afbeelding kan ook worden gebruikt voor het geval dat het afspelen van de video mislukt.
-Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) voor meer informatie.
+Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) voor meer informatie.
 
 ### Opgeloste problemen {#bug-fixes-screens}
 
