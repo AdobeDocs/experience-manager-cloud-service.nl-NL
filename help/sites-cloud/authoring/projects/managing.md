@@ -2,9 +2,9 @@
 title: Projecten beheren
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ Met projecten kunt u uw project ordenen door bronnen in één entiteit te groepe
 
 In de **Projecten** console, hebt u toegang tot en voert actie op uw projecten:
 
-![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
 In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud van de tegel weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
 
@@ -40,7 +40,7 @@ De procedure om een project tot stand te brengen is voor alle projecten hetzelfd
 
 1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding toe, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die wordt gebruikt in de URL.
 
-   ![Projectdetails toevoegen](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Projectdetails toevoegen](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tik/klik **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
@@ -85,13 +85,11 @@ In sommige tegels wilt u mogelijk meerdere items toevoegen. U kunt bijvoorbeeld 
 
 Items toevoegen aan een tegel:
 
-1. In **Projecten**, navigeer aan het project en klik Add + pictogram op de tegel u een punt aan wilt toevoegen.
+1. Navigeer in **Projecten** naar het project en tik of klik op de knop omlaag op de tegel waaraan u een item wilt toevoegen.
 
-   ![Item toevoegen aan een tegel](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Item toevoegen aan een tegel](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectelementen worden [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschreven. In dit voorbeeld is een andere workflow toegevoegd.
-
-   ![Een ander item dat aan een tegel is toegevoegd](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Een tegel openen {#opening-a-tile}
 
@@ -99,19 +97,17 @@ Mogelijk wilt u zien welke items zijn opgenomen in een huidige tegel, of wilt u 
 
 Een tegel openen zodat u items kunt weergeven of wijzigen:
 
-1. Tik in de projectenconsole op de ovalen (...) of klik op deze.
+1. Tik in de projectenconsole op het pictogram Ovalen (...) onder aan de kaart of klik erop.
 
-   ![Een tegel openen](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Een tegel openen](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM geeft de items in die tegel weer. U kunt de selectiemodus activeren om de items te wijzigen of te verwijderen.
 
-   ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Projectstatistieken weergeven {#viewing-project-statistics}
 
-Om projectstatistieken, in **Projecten** console te bekijken, klik **toon de Mening van Statistieken**. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **Statistische weergave tonen** opnieuw om naar de **Projecten** console te gaan.
-
-![Projectstatistieken](/help/sites-cloud/authoring/assets/projects-stats.png)
+U kunt projectstatistieken, in **Projecten** console bekijken.
 
 ### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ Een project inactief (of actief) maken:
 1. Tik/klik **Bewerken**.
 1. Wijzig de kiezer van **Active** in **Inactief** (of vice versa).
 
-   ![Een project activeren](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Een project activeren](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tik/klik **Done** om uw wijzigingen op te slaan.

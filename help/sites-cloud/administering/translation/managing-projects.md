@@ -1,12 +1,12 @@
 ---
 title: Vertaalprojecten beheren
 description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3863'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Vertaalprojecten beheren {#managing-translation-projects}
 
 Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een type van AEM [project](/help/sites-cloud/authoring/projects/overview.md) dat middelen bevat die in andere talen moeten worden vertaald. Deze bronnen zijn de pagina&#39;s en elementen van de [taalkopieën](preparation.md) die zijn gemaakt op basis van de master taal.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 

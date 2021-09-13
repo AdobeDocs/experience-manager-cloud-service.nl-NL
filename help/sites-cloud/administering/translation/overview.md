@@ -1,12 +1,12 @@
 ---
 title: Inhoud vertalen voor meertalige sites
 description: Bekijk een overzicht van het vertalen van inhoud voor meertalige sites.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ Automatiseer de vertaling van pagina-inhoud en -elementen om meertalige websites
 
 * **Menselijke vertaling:** Inhoud wordt naar uw vertaalbureau verzonden en door professionele vertalers vertaald. Wanneer de vertaalde inhoud is voltooid, wordt deze geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalbureau is geïntegreerd met AEM, wordt de inhoud automatisch verzonden tussen AEM en de vertaalprovider.
 * **Machinevertaling:** de vertaalservice zet uw inhoud direct om.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 Voor het vertalen van inhoud worden de volgende stappen uitgevoerd:
 

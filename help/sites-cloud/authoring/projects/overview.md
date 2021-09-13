@@ -2,10 +2,10 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 10%
+source-wordcount: '1259'
+ht-degree: 9%
 
 ---
 
@@ -83,7 +83,7 @@ Met de tegel **Ervaring** kunt u een mobiele app, website of publicatie aan het 
 
 ![Ervaringen](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op **Ervaring toevoegen** te klikken en het type ervaring te selecteren.
+De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door te tikken of te klikken op de knop Omlaag en te tikken **Ervaring toevoegen** en het type ervaring te selecteren.
 
 ![Een ervaring toevoegen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 

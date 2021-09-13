@@ -1,12 +1,12 @@
 ---
 title: Verbinding maken met Microsoft Translator
 description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de verpakking om uw vertaalworkflow te automatiseren.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Verbinding maken met Microsoft Translator {#connecting-to-microsoft-translator}
 
 Maak een configuratie voor de [Microsoft Translator](https://hub.microsofttranslator.com)-cloudservice om uw Microsoft Translation-account te gebruiken voor het vertalen van AEM pagina-inhoud of -elementen.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 >[!NOTE]
 >

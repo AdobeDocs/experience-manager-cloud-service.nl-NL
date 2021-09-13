@@ -1,12 +1,12 @@
 ---
 title: Te vertalen inhoud identificeren
 description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Te vertalen inhoud identificeren {#identifying-content-to-translate}
 
 De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en activa te vertalen die in, of van, vertaalprojecten inbegrepen zijn. Wanneer een pagina of element wordt vertaald, extraheert AEM deze inhoud zodat deze naar de vertaalservice kan worden verzonden.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 Pagina&#39;s en elementen worden weergegeven als knooppunten in de JCR-opslagplaats. De inhoud die wordt geëxtraheerd, is een of meer eigenschapwaarden van de knooppunten. De vertaalregels identificeren de eigenschappen die de inhoud bevatten die moet worden geëxtraheerd.
 

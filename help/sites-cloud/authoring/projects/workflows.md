@@ -2,10 +2,10 @@
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 12%
+source-wordcount: '452'
+ht-degree: 11%
 
 ---
 
@@ -21,15 +21,14 @@ De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
 
-|  | **Eenvoudig project** | **Mediaproject** | **Omzettingsproject** |
-|---|:-:|:-:|:-:|
-| Verzoek om kopie |  | x |  |
-| Projectgoedkeuring | x |  |  |
-| Verzoek starten | x |  |  |
-| Openingspagina aanvragen | x |  |  |
-| E-mail aanvragen | x |  |  |
-| DAM Create Language Copy&amp;ast; |  |  | x |
-| DAM &amp;Create and Translate Language Copy;ast; |  |  | x |
+|  | **Eenvoudig project** | **Omzettingsproject** |
+|---|:-:|:-:|
+| Projectgoedkeuringswerkstroom | x |  |
+| Verzoek starten | x |  |
+| Openingspagina aanvragen | x |  |
+| E-mail aanvragen | x |  |
+| DAM Create Language Copy&amp;ast; |  | x |
+| DAM &amp;Create and Translate Language Copy;ast; |  | x |
 
 >[!NOTE]
 >
@@ -47,19 +46,6 @@ Raadpleeg de volgende secties voor meer informatie over het werken met workflows
 
 Deze sectie beschrijft de werkschema&#39;s beschikbaar voor Projecten.
 
-## Workflow voor kopiëren aanvragen {#request-copy-workflow}
-
-Met deze workflow kunt u een gebruiker om een manuscript vragen en het vervolgens goedkeuren. De workflow voor het kopiëren van aanvragen starten:
-
-1. Selecteer in uw Media-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor kopiëren aanvragen**.
-1. Voer een eigenschapstitel in en een korte samenvatting van wat u vraagt. Voer, indien van toepassing, een doelwoordtelling, taakprioriteit en een vervaldatum in.
-
-   ![Kopieerwerkstroom aanvragen](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Klik **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken**.
-
-   ![Verzoek om kopie toegevoegd](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Workflow voor projectgoedkeuring {#project-approval-workflow}
 
 In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een gebruiker toe, herziet, en keurt dan de inhoud goed.
@@ -70,8 +56,6 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
    ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Klik **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken**.
-
-   ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 ## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
 
-De workflows **Taalkopie maken** en **Taalkopie maken en vertalen** worden uitgebreid besproken bij het maken van taalkopieën voor assets.
+De workflows **Taalkopie maken** en **Taalkopie maken en vertalen**[ worden uitgebreid besproken bij het maken van taalkopieën voor assets.](/help/assets/translate-assets.md)

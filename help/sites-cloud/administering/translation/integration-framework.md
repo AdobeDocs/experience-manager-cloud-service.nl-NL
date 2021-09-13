@@ -1,12 +1,12 @@
 ---
 title: Het framework voor vertaalintegratie configureren
 description: Leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertalen te integreren.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Het vertaalintegratiekader integreert met vertaaldiensten van derden om de verta
 1. [Koppel de cloudconfiguraties aan uw pagina&#39;s.](#configuring-pages-for-translation)
 
 Zie [Inhoud vertalen voor meertalige sites](overview.md) voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 

@@ -1,12 +1,12 @@
 ---
 title: Wizard Taalkopie
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in AEM.
-feature: Taalkopie
+feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Wizard Taalkopie {#language-copy-wizard}
 
 De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten voorzien voor de structuur van meertalige inhoud. De wizard maakt het maken van een taalkopie eenvoudig en snel.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 >[!NOTE]
 >

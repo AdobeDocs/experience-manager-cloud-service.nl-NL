@@ -1,14 +1,13 @@
 ---
 title: Werken met taken
 description: De taken vertegenwoordigen punten van werk dat op inhoud moet worden gedaan en in projecten worden gebruikt om het niveau van volledigheid van huidige taken te bepalen
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 11%
 
 ---
-
 
 # Werken met taken {#working-with-tasks}
 
@@ -34,7 +33,7 @@ Als een project om het even welke verwante taken heeft, wordt een Tegel van de T
 * Percentage actieve taken
 * Percentage achterstallige taken
 
-![Taaktegel](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Taaktegel](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Het bekijken of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -48,7 +47,7 @@ Klik de ellips (...) in de tegel van de Taak om de lijst van de taken met betrek
 
 #### Taakdetails {#task-details}
 
-Voor meer informatie over een bepaalde taak, in de Lijst van de Taak, tik/klik de taak en **de Details van de Taak **open.
+Voor meer informatie over een bepaalde taak, in de Lijst van de Taak, tik/klik de taak en **Open**.
 
 ![Taakdetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -58,7 +57,7 @@ In Taakdetails kunt u opmerkingen bewerken of toevoegen. Bovendien zijn alle opm
 
 ![Opmerkingen over taken](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
-### Taken {#adding-tasks} toevoegen
+### Taken toevoegen {#adding-tasks}
 
 U kunt nieuwe taken aan projecten toevoegen. Deze taken verschijnen dan in de tegel van Taken en zijn beschikbaar in Berichten inbox om acties uit te voeren op.
 
@@ -71,7 +70,7 @@ Een taak toevoegen:
 
 1. Tik/klik **Maken**.
 
-## Werken met taken in het Postvak IN {#working-with-tasks-in-the-inbox}
+## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
 
 Een andere manier om tot taken toegang te hebben is van Inbox. Vanuit het Postvak IN kunt u de inhoud openen om de vereiste wijzigingen te implementeren. Als u klaar bent, stelt u de taakstatus in op Voltooid. De taken verschijnen ook in uw inbox wanneer zij aan een gebruikersgroep worden toegewezen die u tot behoort. In dat geval kan elk lid van de groep het werk uitvoeren en de taak voltooien.
 

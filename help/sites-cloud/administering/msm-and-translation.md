@@ -1,19 +1,19 @@
 ---
 title: Beheer en vertaling van meerdere sites
 description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige websites in AEM kunt beheren.
-feature: Beheer
+feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
 # Beheer en vertaling van meerdere sites {#msm-and-translation}
 
-Met de ingebouwde tools voor meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
+Met de ingebouwde tools voor beheer van meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
 
 * Met MSM (Multi Site Manager) en de bijbehorende functies voor Live Copy kunt u dezelfde site-inhoud op meerdere locaties gebruiken, terwijl variaties mogelijk zijn:
    * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm/overview.md)
@@ -21,6 +21,10 @@ Met de ingebouwde tools voor meerdere sites van Adobe Experience Manager kunt u 
    * [Inhoud vertalen voor meertalige sites](translation/overview.md)
 
 Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandelen die zowel [multinationaal als meertalig](#multinational-and-multilingual-sites) zijn.
+
+>[!TIP]
+>
+>Als u nog niet vertrouwd bent met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md), die u door het vertalen van uw AEM Sites-inhoud begeleidt met de krachtige vertaalhulpmiddelen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 
@@ -55,5 +59,5 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
 >* [Beste praktijken voor MSM](msm/best-practices.md)
-* [Aanbevolen procedures voor vertaling](translation/best-practices.md)
+>* [Aanbevolen procedures voor vertaling](translation/best-practices.md)
 
