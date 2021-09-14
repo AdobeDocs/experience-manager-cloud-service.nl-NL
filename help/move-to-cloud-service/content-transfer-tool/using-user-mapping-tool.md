@@ -2,14 +2,14 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 4%
 
 ---
 
-# Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker {#user-mapping-tool}
+# Gebruikerstoewijzing gebruiken {#user-mapping-tool}
 
 ## Overzicht {#overview}
 
@@ -50,13 +50,12 @@ De volgende specifieke gevallen worden geregistreerd:
 
 * Wanneer de inhoud toevoegt wordt uitgevoerd, als de inhoud niet wordt overgebracht omdat het sinds de vorige overdracht niet is veranderd, zullen de gebruikers en de groepen verbonden aan die inhoud ook niet worden overgebracht, zelfs als de gebruikers en de groepen ondertussen zijn veranderd. Dit komt doordat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 
-* De inname zal in de volgende scenario&#39;s ontbreken:
+* Als de AEM Cloud Service van het doel een gebruiker met een verschillende gebruikersnaam maar zelfde e-mailadres zoals één van de gebruikers op de bron AEM instantie heeft, en de Toewijzing van de Gebruiker wordt toegelaten, zal een foutenmelding in de logboeken worden geschreven, en de bron AEM gebruiker zal niet worden overgebracht, aangezien slechts één gebruiker met een bepaald e-mailadres op het doelsysteem wordt toegestaan.
 
-1. Als de AEM Cloud Service van het doel een gebruiker met een verschillende gebruikersnaam maar zelfde e-mailadres heeft zoals één van de gebruikers op de bron AEM instantie.
+* Als twee gebruikers op de bron AEM instantie hetzelfde e-mailadres hebben en Gebruikerstoewijzing is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt een van de bron AEM gebruikers niet overgebracht, omdat slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
 
-1. Als er twee gebruikers op de AEM zijn met verschillende gebruikersnamen maar hetzelfde e-mailadres. AEM als Cloud Service staat twee gebruikers niet toe om hetzelfde e-mailadres te hebben.
 
-## Het gebruiken van het Hulpmiddel van de Toewijzing van de Gebruiker {#using-user-mapping-tool}
+## Het gereedschap Toewijzing gebruiker gebruiken {#using-user-mapping-tool}
 
 Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 
