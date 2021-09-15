@@ -1,15 +1,21 @@
 ---
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
-exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: f96561e46cfaa217398ec496bf9d5df669e01c29
+source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 84%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
 # Een inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="Inleiding tot AEM als architectuur van de Cloud Service"
+>abstract="In dit lusje, kunt u de nieuwe architectuur van AEM als Cloud Service bekijken en de veranderingen begrijpen. AEM heeft geresulteerd in een dynamische architectuur met een variabel aantal afbeeldingen, dus het is belangrijk om de tijd te nemen om te begrijpen.de cloudarchitectuur"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Overzicht van architectuur"
+
 
 Adobe Experience Manager (AEM) as a Cloud Service heeft geleid tot wijzigingen in de architectuur.
 
@@ -81,7 +87,7 @@ Een AEM-programma is de container die het volgende bevat:
 |  Programma-element |  Getal |
 |--- |--- |
 | Code-repository (Git) |  1 |
-| Basisinstallatiekopie (Sites of Assets) |  1 |
+| Basisinstallatiekopie (Sites of Assets) |  3 |
 | Fase- en productieomgevingset (1:1) | 0 of 1 |
 | Niet-productieomgevingen (ontwikkeling of demonstratie) | 0 tot en met N |
 | Pijplijn voor elke omgeving | 0 of 1 |
