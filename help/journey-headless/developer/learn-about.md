@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
-
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
@@ -21,7 +21,7 @@ Met dit document krijgt u inzicht in de levering van inhoud zonder kop en waarom
 * Begrijpen waarom en wanneer een kop zonder kop nodig is
 * Op hoog niveau weten hoe concepten zonder kop worden gebruikt en hoe ze met elkaar verweven zijn
 
-## Volledige levering van de Inhoud van de Stapel {#full-stack}
+## Volledige levering van inhoud {#full-stack}
 
 Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van het CMS als centraal punt voor het beheer van ervaringen heeft de efficiëntie verbeterd doordat taken in verschillende systemen niet hoeven te worden gedupliceerd.
 
@@ -112,7 +112,7 @@ Als marktleider op het gebied van digitaal ervaringsbeheer realiseert Adobe zich
 
 Deze reis concentreert zich op het hoofdloze-enige model van inhoudlevering. Maar als je deze basiskennis hebt, kun je verder verkennen hoe je de kracht van beide modellen kunt benutten.
 
-## Volgende {#what-is-next}
+## Volgende functies {#what-is-next}
 
 Bedankt dat je aan de slag bent gegaan met je AEM tocht zonder kop! Nu u dit document leest, moet u:
 
@@ -126,5 +126,5 @@ Bouw op deze kennis voort en zet uw AEM onophoudelijke reis door het document [A
 
 Hoewel u wordt aangeraden naar het volgende gedeelte van de ontwikkeltocht zonder kop te gaan door het document [Aan de slag met AEM zonder kop als Cloud Service te bekijken,](getting-started.md) zijn de volgende aanvullende, optionele bronnen die een diepere duik maken over bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de tocht zonder kop.
 
-* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/core-concepts/architecture.md)  - Begrijp AEM als structuur van een Cloud Service
+* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/overview/architecture.md)  - Begrijp AEM als structuur van een Cloud Service
 * [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  zonder kop - Gebruik deze praktische zelfstudies om te bekijken hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.

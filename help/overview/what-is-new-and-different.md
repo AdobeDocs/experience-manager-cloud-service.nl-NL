@@ -2,7 +2,7 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 86%
@@ -42,7 +42,7 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Zie [Architectuur](/help/core-concepts/architecture.md) voor meer informatie.
+>Zie [Architectuur](/help/overview/architecture.md) voor meer informatie.
 
 AEM as a Cloud Service heeft nu:
 
@@ -264,7 +264,7 @@ Zie [overzicht en inleiding tot Assets as a Cloud Service](/help/assets/overview
 Zie voor meer informatie:
 
 * [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
-* De [architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager as a Cloud Service
+* De [architectuur](/help/overview/architecture.md) van Adobe Experience Manager as a Cloud Service
 * [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
 * [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)

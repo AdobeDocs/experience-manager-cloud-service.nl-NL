@@ -2,7 +2,7 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -15,7 +15,7 @@ Adobe Experience Manager als Cloud Service gebruikt de [Sling Content Distributi
 
 >[!NOTE]
 >
->Lees [Distribution](/help/core-concepts/architecture.md#content-distribution) voor meer informatie.
+>Lees [Distribution](/help/overview/architecture.md#content-distribution) voor meer informatie.
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
 

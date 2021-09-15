@@ -2,7 +2,7 @@
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Terwijl wordt geadviseerd dat u op het volgende deel van de headless ontwikkelin
 * [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  zonder kop - Gebruik deze praktische zelfstudies om te bekijken hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
 * [Koploos inhoudsbeheer met GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Volg deze cursus voor een overzicht van de GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
 * [AEM Gidsen WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
-* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/core-concepts/architecture.md)  - Een volledig overzicht van AEM architectuur
+* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/overview/architecture.md)  - Een volledig overzicht van AEM architectuur
 * [Headless Getting Started Guide](/help/implementing/developing/headless/introduction.md#getting-started)  - Een korte inleiding tot AEM headless-functies voor gebruikers die al bekend zijn met AEM.
 * [Modellen](/help/assets/content-fragments/content-fragments-models.md)  voor inhoudsfragmenten maken - Technische documentatie over modellen voor inhoudsfragmenten
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)  maken - Technische documentatie over inhoudsfragmenten

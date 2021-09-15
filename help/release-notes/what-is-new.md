@@ -1,14 +1,13 @@
 ---
 title: Wat is nieuw?
-description: 'Wat is er nieuw in Adobe Experience Manager (AEM) als Cloud Service. '
-translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+description: Wat is er nieuw in Adobe Experience Manager (AEM) als Cloud Service.
+exl-id: f854aaf8-e84d-4904-832f-f72433590920
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 15%
 
 ---
-
 
 # Wat is nieuw? {#what-is-new}
 
@@ -18,7 +17,7 @@ Adobe Experience Manager (AEM) als Cloud Service is een native cloudplatform dat
 
 Voor een overzicht van Adobe Experience Manager als Cloud Service, zie:
 * de [Inleiding tot AEM als Cloud Service](/help/overview/introduction.md)
-* de [Architectuur](/help/core-concepts/architecture.md) van Adobe Experience Manager als Cloud Service
+* de [Architectuur](/help/overview/architecture.md) van Adobe Experience Manager als Cloud Service
 * An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->

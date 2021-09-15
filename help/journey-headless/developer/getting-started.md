@@ -2,7 +2,7 @@
 title: Aan de slag met AEM Headless als Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 0%
@@ -276,7 +276,7 @@ U zou uw AEM onophoudelijke reis moeten voortzetten door het document [Weg aan U
 Terwijl wordt geadviseerd om op het volgende deel van de headless ontwikkelingsreis over te gaan door het document [Weg aan Uw Eerste Ervaring te herzien Gebruikend AEM Headless,](path-to-first-experience.md) zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)  - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
-* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/core-concepts/architecture.md)  - Begrijp AEM als structuur van een Cloud Service
+* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/overview/architecture.md)  - Begrijp AEM als structuur van een Cloud Service
 * [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  zonder kop - Gebruik deze praktische zelfstudies om te bekijken hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
 * [Koploos inhoudsbeheer met GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Volg deze cursus voor een overzicht van de GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
 * [AEM Gidsen WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.

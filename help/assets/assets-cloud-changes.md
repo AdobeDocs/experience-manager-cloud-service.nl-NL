@@ -1,12 +1,12 @@
 ---
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
-feature: Geen informatie
+feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -71,10 +71,10 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 >De volgende bronnen zijn beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]:
 >
 >* [Lijst met vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
-* [Een inleiding](/help/overview/introduction.md)
-* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
-* [De architectuur](/help/core-concepts/architecture.md)
-* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
-* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
-* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Een inleiding](/help/overview/introduction.md)
+>* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
+>* [De architectuur](/help/overview/architecture.md)
+>* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
+>* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
