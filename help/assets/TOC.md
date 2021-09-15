@@ -4,10 +4,10 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 40%
+source-wordcount: '483'
+ht-degree: 38%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 40%
    + [Metadataprofielen](metadata-profiles.md)
    + [Metadataschema](metadata-schemas.md)
    + [Videoassets beheren](manage-video-assets.md)
+   + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
    + [Elementen downloaden](download-assets-from-aem.md)
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor elementen](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 40%
    + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Gekoppelde assets](use-assets-across-connected-assets-instances.md)
-   + [FPO-uitvoeringen genereren voor Adobe InDesign](configure-fpo-renditions.md)
+   + [Rendities alleen voor plaatsing genereren](configure-fpo-renditions.md)
    + [Rapporten over assets](asset-reports.md)
    + [Trapsgewijze metadata](cascading-metadata.md)
    + [XMP-metadata](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 40%
 + Assets delen en distribueren {#brand-portal}
    + [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Elementen publiceren  [!DNL Brand Portal] van [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [Elementen publiceren  [!DNL Brand Portal] van [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
