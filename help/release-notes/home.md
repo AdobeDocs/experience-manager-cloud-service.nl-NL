@@ -2,10 +2,10 @@
 title: Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service.
 description: Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 36%
+source-wordcount: '636'
+ht-degree: 33%
 
 ---
 
@@ -51,7 +51,6 @@ Een release voorbereiden:
 |---|---|
 | [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding](/help/onboarding/home.md) | Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager als Cloud Service, met inbegrip van hoe te om toegang en belangrijke informatie van de gegevensbescherming te krijgen. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |

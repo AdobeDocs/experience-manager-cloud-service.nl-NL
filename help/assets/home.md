@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 21%
+source-wordcount: '276'
+ht-degree: 22%
 
 ---
 
@@ -29,7 +29,6 @@ De volgende zelfhulpmiddelen zijn beschikbaar voor [!DNL Experience Manager Asse
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] Home](/help/landing/home.md) | Volledige documentatie van [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Overzicht](/help/overview/home.md) | Inleiding, overzicht, en verklarende woordenlijst, van [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Releaseopmerkingen, nieuwe functies, verouderde en verwijderde functies en bekende problemen. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze gids verstrekt een inleiding aan de kernconcepten van [!DNL Experience Manager] als [!DNL Cloud Service], met inbegrip van de architectuur van de nieuwe dienst. |
 | [Handboek voor beveiliging](/help/security/home.md) | Leer over belangrijke veiligheidsonderwerpen betreffende [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Onboarding](/help/onboarding/home.md) | Ga aan de slag met [!DNL Experience Manager] als [!DNL Cloud Service] — krijg toegang en bescherm belangrijke gegevens. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe te met, en beheer, [!DNL Experience Manager Sites] als [!DNL Cloud Service] te ontwerpen. |

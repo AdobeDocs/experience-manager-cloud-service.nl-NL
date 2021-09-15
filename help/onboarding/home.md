@@ -2,9 +2,9 @@
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '521'
 ht-degree: 24%
 
 ---
@@ -35,9 +35,8 @@ De hieronder beschreven instapreis is ontworpen voor een systeembeheerder die de
 | Handboek | Beschrijving |
 |---|---|
 | [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van [!DNL Experience Manager as a Cloud Service], inclusief een inleiding, terminologie, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Deze gids verstrekt een overzicht van [!DNL Experience Manager as a Cloud Service], met inbegrip van een inleiding, terminologie, architectuur, etc. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van [!DNL Experience Manager as a Cloud Service], zoals nieuwe functies, vervangen en verwijderde functies en bekende problemen. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze gids verstrekt een inleiding aan de kernconcepten van [!DNL Experience Manager as a Cloud Service], met inbegrip van de architectuur van de nieuwe dienst. |
 | [Handboek voor beveiliging](/help/security/home.md) | Leer over belangrijke veiligheidsonderwerpen betreffende [!DNL Experience Manager as a Cloud Service]. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijp hoe te met, en beheer, [!DNL Experience Manager Sites] als Cloud Service te ontwerpen. |
 | [Handboek voor Assets](/help/assets/home.md) | Begrijp hoe te om [!DNL Experience Manager Assets as a Cloud Service] te gebruiken en te beheren. |

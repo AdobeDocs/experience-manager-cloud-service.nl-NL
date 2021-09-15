@@ -2,10 +2,10 @@
 title: Handboeken voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager as a Cloud Service
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 71%
+source-wordcount: '406'
+ht-degree: 65%
 
 ---
 
@@ -17,9 +17,8 @@ Deze pagina bevat zelfhulpgebruikershandleidingen voor Experience Manager as a C
 
 | Handboek | Beschrijving |
 |---|---|
-| [Overzicht](/help/overview/home.md) | Start hier voor een overzicht Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Voor een overzicht van Experience Manager als Cloud-service, inclusief een inleiding, terminologie, architectuur, enzovoort, begint u hier. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |

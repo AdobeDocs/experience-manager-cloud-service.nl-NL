@@ -2,10 +2,10 @@
 title: AEM Inhoud en Handel
 description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 64%
+source-wordcount: '370'
+ht-degree: 57%
 
 ---
 
@@ -16,7 +16,6 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en H
 >[!NOTE]
 >
 >Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF, zie [AEM 6.5 Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
-
 
 ## Belangrijke artikelen voor inhoud en handel {#key-articles}
 
@@ -29,11 +28,10 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en H
 | Handboek | Beschrijving |
 |---|---|
 | [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur, enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
-| [On-boarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
+| [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service beheert. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |

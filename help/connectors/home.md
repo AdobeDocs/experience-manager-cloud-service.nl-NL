@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service-connector
 description: Zelfhulpbronnen en documentatiekoppelingen voor Adobe Experience Manager as a Cloud Service-connector
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 80%
+source-wordcount: '385'
+ht-degree: 74%
 
 ---
 
@@ -24,9 +24,8 @@ Deze pagina bevat zelfhulpbronnen over connectors voor Experience Manager as a C
 | Handboek | Beschrijving |
 |---|---|
 | [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een inleidend overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een inleidende beschrijving van Experience Manager als cloudservice, zoals een inleiding, terminologie, architectuur, enz. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
-| [Kernbegrippen](/help/core-concepts/home.md) | Deze handleiding bevat een inleiding over de kernbegrippen van Experience Manager as a Cloud Service, waaronder de architectuur van de nieuwe service. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
