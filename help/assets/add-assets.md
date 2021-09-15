@@ -1,12 +1,12 @@
 ---
 title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
 description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
-feature: Middelenbeheer, uploaden
+feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2002'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ De grote leverancier van bedrijfsmiddelen kan een zeer groot aantal bedrijfsmidd
 
 * Cursieve elementen: Verwijder elementen die niet nodig zijn in de DAM. Overweeg ongebruikte, verouderde of dubbele elementen te verwijderen. Dit vermindert de gegevens die worden overgedragen en de elementen die worden opgenomen, waardoor er sneller ingestie ontstaat.
 * Elementen ordenen: U kunt de inhoud in een logische volgorde ordenen, bijvoorbeeld op bestandsgrootte, bestandsindeling, hoofdlettergebruik of prioriteit. Over het algemeen is voor grote complexe bestanden meer verwerking nodig. U kunt ook overwegen grote bestanden afzonderlijk in te voegen met de filteroptie voor bestandsgrootte (hieronder beschreven).
-* Staggeringestie: Overweeg uw inname op te splitsen in meerdere projecten voor bulkinname. Hierdoor kunt u de inhoud sneller zien en uw opname indien nodig bijwerken. U kunt bijvoorbeeld verwerkingsintensieve elementen opnemen tijdens niet-piekuren of geleidelijk in meerdere stukken. U kunt echter kleinere en eenvoudigere elementen invoeren die niet veel verwerkingstijd in één keer vereisen.
+* Staggeringestie: Overweeg uw inname op te splitsen in meerdere projecten voor bulkinname. Zo kunt u inhoud sneller zien en uw opname indien nodig bijwerken. U kunt bijvoorbeeld verwerkingsintensieve elementen opnemen tijdens niet-piekuren of geleidelijk in meerdere stukken. U kunt echter kleinere en eenvoudigere elementen invoeren die niet veel verwerkingstijd in één keer vereisen.
 
 Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Zie ook [use cases and methods](#upload-methods-comparison)
 

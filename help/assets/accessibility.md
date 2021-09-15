@@ -2,12 +2,12 @@
 title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] gebruikers met een handicap helpen.
 contentOwner: AG
-feature: Toegankelijkheid, beheer van bedrijfsmiddelen
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # Toegankelijkheidsfuncties in [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] kunnen makers en uitgevers van inhoud fantastische ervaringen op het web bieden. Adobe streeft ernaar de makers met een handicap op te nemen door de toegankelijkheid van [!DNL Experience Manager] te verbeteren. De software wordt voortdurend uitgebreid om te voldoen aan de behoeften van alle soorten gebruikers en voldoet aan de wereldwijde standaarden, waaronder personen met een visuele, auditieve, mobiliteitsfunctie of andere handicap.
+[!DNL Adobe Experience Manager] laat makers en uitgevers van inhoud ongelofelijke ervaringen op het web gebruiken. Adobe streeft ernaar de makers met een handicap op te nemen door de toegankelijkheid van [!DNL Experience Manager] te verbeteren. De software wordt voortdurend uitgebreid om te voldoen aan de behoeften van alle soorten gebruikers en voldoet aan de wereldwijde standaarden, waaronder personen met een visuele, auditieve, mobiliteitsfunctie of andere handicap.
 
 [!DNL Experience Manager] publiceert conformiteitsinformatie die de normen beschrijft die het hanteert, de toegankelijkheidskenmerken in het product beschrijft en het niveau van naleving beschrijft. Met de compatibiliteitsrapporten voor toegankelijkheid kunnen gebruikers van [!DNL Experience Manager] begrijpen in welke mate aan verschillende standaarden wordt voldaan. Dankzij de verbeteringen in [!DNL Assets] kunnen alle gebruikers de interfaces eenvoudig gebruiken via toetsenbord, schermlezer, vergrotingen en andere ondersteunende hulpmiddelen.
 
@@ -67,7 +67,7 @@ De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden rege
 
 ## Ondersteuning voor het gebruik van het toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder de gebruikersinterface-elementen te hoeven activeren en deze met het toetsenbord te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant openen door met een toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
 
 <!-- TBD items:
 

@@ -2,12 +2,12 @@
 title: Elementmicroservices configureren en gebruiken
 description: Configureer en gebruik de 'cloud-native asset microservices' om elementen op schaal te verwerken.
 contentOwner: AG
-feature: asset compute microservices, workflow, verwerking van bedrijfsmiddelen
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2645'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Asset microservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudnative toepassingen (ook wel workers genoemd). Adobe beheert de services voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties.
 
-Met Asset microservices kunt u een [breed scala aan bestandstypen verwerken](/help/assets/file-format-support.md) dat meer indelingen buiten de box behandelt dan mogelijk is met eerdere versies van [!DNL Experience Manager]. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren, maar hiervoor zijn oplossingen van andere bedrijven vereist, zoals [!DNL ImageMagick].
+Met Asset microservices kunt u een [breed scala aan bestandstypen verwerken](/help/assets/file-format-support.md) dat meer indelingen buiten de box behandelt dan mogelijk is met eerdere versies van [!DNL Experience Manager]. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren, maar hiervoor zijn oplossingen van derden vereist, zoals [!DNL ImageMagick].
 
 De verwerking van activa hangt van de configuratie in **[!UICONTROL Processing Profiles]** af. De Experience Manager verstrekt een basisstandaardopstelling en laat beheerders specifiekere configuratie van de activaverwerking toevoegen. Beheerders maken, onderhouden en wijzigen de configuraties van naverwerkingsworkflows, inclusief optionele aanpassing. Door de workflows aan te passen kunnen ontwikkelaars de standaardaanbieding uitbreiden.
 

@@ -4,9 +4,9 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De standaardvertoningen die met asset microservices worden gegenereerd, worden a
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
-Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Middelenmicroservices helpen u te voorkomen dat er van derden weergavehulpmiddelen en -methoden nodig zijn (zoals [!DNL ImageMagick]) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt een [brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen te maken waarvoor eerder oplossingen van derden, zoals [!DNL ImageMagick], waren vereist. U kunt niet de complexe configuraties van [!DNL ImageMagick] voor de [!UICONTROL Processing Profiles] configuratie gebruiken. Gebruik [!DNL Dynamic Media] voor geavanceerde MPEG-transcodering van video&#39;s en gebruik verwerkingsprofielen voor [standaardtranscodering van MP4-video&#39;s](/help/assets/manage-video-assets.md#transcode-video).
+Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Middelenmicroservices helpen u te voorkomen dat er van derden weergavehulpmiddelen en -methoden nodig zijn (zoals [!DNL ImageMagick]) en vereenvoudigen configuraties, terwijl ze tevens functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt een [brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk dat miniatuurextractie van PSD- en PSB-indelingen plaatsvindt waarvoor eerder oplossingen van derden waren vereist, zoals [!DNL ImageMagick]. U kunt niet de complexe configuraties van [!DNL ImageMagick] voor de [!UICONTROL Processing Profiles] configuratie gebruiken. Gebruik [!DNL Dynamic Media] voor geavanceerde MPEG-transcodering van video&#39;s en gebruik verwerkingsprofielen voor [standaardtranscodering van MP4-video&#39;s](/help/assets/manage-video-assets.md#transcode-video).
 
 Asset microservices is een service in de cloud die automatisch wordt ingericht en via [!DNL Experience Manager] wordt verzonden in programma&#39;s en omgevingen van klanten die worden beheerd in Cloud Manager. Om [!DNL Experience Manager] uit te breiden of aan te passen, kunnen de ontwikkelaars de bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd, om hun code te testen en te bevestigen gebruikend, tonend, downloadend activa.
 
@@ -52,7 +52,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | Functionaliteit of gebruikscase | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Opmerkingen |
 |-----|-----|-----|
 | [Elementdetectie dupliceren](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Werkt anders. | Zie [hoe het in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) werkte. |
-| [Alleen voor FPO-uitvoeringen (Placement Only)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Werkt anders |  |
+| [Alleen voor FPO-uitvoeringen (Placement Only)](/help/assets/configure-fpo-renditions.md) | Werkt anders | Bij de verwerking van profielen worden de asset-microservices gebruikt om FPO-uitvoeringen te genereren. In Experience Manager 6.5, was een derdeoplossing zoals [!DNL ImageMagick] beschikbaar om de vertoningen te produceren. |
 | Metagegevens terugschrijven | Werkt anders | Standaard uitgeschakeld. Schakel indien nodig de bijbehorende starter voor de workflow in. Terugkoppeling wordt afgehandeld door middel van asset microservices. |
 | Verwerking van geüploade elementen met gebruik van Package Manager | Moet handmatig worden ingegrepen. | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]**. |
 | MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [MIME-typedetectie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
@@ -73,7 +73,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 >* [Lijst met vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
 >* [Een inleiding](/help/overview/introduction.md)
 >* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
->* [De architectuur](/help/overview/architecture.md)
+>* [De architectuur](/help/core-concepts/architecture.md)
 >* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
 >* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
