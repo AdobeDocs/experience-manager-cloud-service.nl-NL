@@ -2,12 +2,12 @@
 title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
-feature: Middelenbeheer, Verbonden middelen, Asset Distribution, Gebruiker en Groepen
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2932'
 ht-degree: 24%
 
 ---
@@ -20,9 +20,11 @@ De functionaliteit Verbonden elementen ondersteunt het bovenstaande gebruiksgeva
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
-Wanneer het uitgeven van pagina&#39;s in [!UICONTROL Page Editor] als doelbestemming, kunnen de auteurs vlot zoeken, doorbladeren, en activa van een verschillende [!DNL Assets] plaatsing inbedden die als bron van activa dienst doet. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites]-mogelijkheid met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets]-mogelijkheid.
+Wanneer het uitgeven van pagina&#39;s in [!UICONTROL Page Editor] als doelbestemming, kunnen de auteurs vlot zoeken, doorbladeren, en activa van een verschillende [!DNL Assets] plaatsing inbedden die als bron van activa dienst doet. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites]-mogelijkheid met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets]-mogelijkheid. U kunt Dynamic Media-afbeeldingen op de webpagina&#39;s van uw site ook gebruiken via Connected Assets en met behulp van de Dynamic Media-functies, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
 
 Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lokale activa. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. Als u veel externe middelen beschikbaar wilt maken voor een [!DNL Sites]-implementatie in één keer, kunt u overwegen de middelen in bulk te migreren.
+
+U kunt een verbinding tussen de plaatsing van Plaatsen en plaatsing van Dynamic Media vormen die webpaginaauteurs toestaat om de beelden van Dynamic Media in hun Web-pagina&#39;s te gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring van het gebruik van externe middelen en externe Dynamic Media-implementaties hetzelfde. Zo kunt u de Dynamic Media-functionaliteit benutten via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
 
 ### Vereisten en ondersteunde implementaties {#prerequisites}
 
@@ -147,7 +149,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 1. Navigeer naar de [!DNL Assets]-interface op de externe implementatie door **[!UICONTROL Assets]** > **[!UICONTROL Files]** vanuit [!DNL Experience Manager]-werkruimte te openen. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
 1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
-1. Open een `We.Retail`-websitepagina op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
+1. Open een websitepagina op **[!UICONTROL Navigation]** > **[!UICONTROL Sites]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/<site page>` ook in een browser openen om een pagina te bewerken.
 
    Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
 
