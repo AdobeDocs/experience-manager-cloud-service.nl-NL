@@ -4,7 +4,7 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
+source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 >* [Lijst met vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
 >* [Een inleiding](/help/overview/introduction.md)
 >* [Nieuwe en aangepaste functies](/help/overview/what-is-new-and-different.md)
->* [De architectuur](/help/core-concepts/architecture.md)
+>* [De architectuur](/help/overview/architecture.md)
 >* [Opvallende wijzigingen](/help/release-notes/aem-cloud-changes.md)
 >* [Opvallende wijzigingen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Videozelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
