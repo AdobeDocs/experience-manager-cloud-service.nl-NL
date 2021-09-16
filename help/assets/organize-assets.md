@@ -1,49 +1,106 @@
 ---
-title: Digitale elementen ordenen
-description: Organiseer uw digitale middelen met behulp van verschillende methoden die in Adobe Experience Manager Assets worden geboden.
+title: Uw digitale middelen organiseren
+description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met Experience Manager.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen, tags, distributie van bedrijfsmiddelen
+feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
 
-# Digitale elementen ordenen {#organize-digital-assets}
+# Uw digitale middelen organiseren {#organize-digital-assets}
 
-Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Het onderzoek staat verfijnd het filtreren op activa toe en eerbiedigt volledig de juiste toestemmingen. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
+Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Het onderzoek staat verfijnd het filtreren op activa toe en eerbiedigt volledig de juiste toestemmingen. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
 
-Experience Manager-elementen bieden ondersteuning voor verschillende manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende, ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+[!DNL Experience Manager Assets] ondersteunt meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een ongeordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
-## Mappen maken {#create-folders}
+<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+## Create folders {#create-folders}
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle *Natuur*-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Assets] vereist niet dat u elementen in mappen ordent om beter te werken.
+When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
->Het delen van een map Middelen (in Marketing Cloud) van het type `sling:OrderedFolder` wordt niet ondersteund. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
+>Sharing an Assets folder (in Marketing Cloud) of the type `sling:OrderedFolder`, is not supported. If you want to share a folder, do not select Ordered when creating a folder.
 
-1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken.
-1. Klik in het menu op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
-1. Geef in het veld **[!UICONTROL Title]** een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
-1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
+1. Navigate to the place in your digital assets folder where you want to create a new folder.
+1. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
+1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
-## CUG-eigenschappen toevoegen aan mappen {#add-cug-properties-to-folders}
+## Add CUG properties to folders {#add-cug-properties-to-folders}
 
-U kunt beperken wie tot bepaalde omslagen in Middelen toegang heeft door tot de omslag deel van een gesloten gebruikersgroep (CUG) te maken. Een map maken tot onderdeel van een CUG:
+You can limit who can access certain folders in Assets by making the folder part of a closed user group (CUG). To make a folder part of a CUG:
 
-1. Klik in Middelen met de rechtermuisknop op de map waarvoor u gesloten gebruikersgroepeigenschappen wilt toevoegen en selecteer **Eigenschappen**.
-1. Klik op het tabblad **CUG**.
-1. Schakel het selectievakje **Ingeschakeld** in om de map en de bijbehorende middelen alleen beschikbaar te maken voor een gesloten gebruikersgroep.
-1. Blader naar de aanmeldingspagina, indien aanwezig, om die informatie toe te voegen. Voeg toegelaten groepen toe door **punt** toe te klikken. Voeg zo nodig het domein toe. Klik **OK** om uw wijzigingen op te slaan.
+1. In Assets, right-click the folder you want to add closed user group properties for and select **Properties**.  
+1. Click the **CUG** tab.
+1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
+1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Tags gebruiken om elementen te ordenen {#use-tags-to-organize-assets}
+## Use tags to organize assets {#use-tags-to-organize-assets}
 
-U kunt mappen, tags of beide gebruiken om elementen te ordenen. Door tags aan elementen toe te voegen, kunt u deze tijdens een zoekopdracht gemakkelijker terugvinden. Voer de volgende stappen uit om tags aan een element toe te voegen:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
 
-1. Dubbelklik in Digital Asset Manager op het element om het te openen.
-1. Open in het gebied **Codes** het menu om de beschikbare codes weer te geven. Selecteer de gewenste labels. Als u een tag wilt verwijderen, plaatst u de aanwijzer op de tag en klikt u op `X` om deze te verwijderen.
-1. Klik op **Opslaan** om toegevoegde tags op te slaan.
+1. In the Digital Asset Manager, double-click the asset to open it.
+1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
+1. Click **Save** to save any tags you added.
+
+Date24/08/2021
+-->
+
+## Elementen in mappen ordenen {#organize-using-folders}
+
+De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Zie [Elementen beheren](manage-digital-assets.md) voor meer informatie over het maken en beheren van mappen. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+
+* Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de ontwerpcyclus van de inhoud.
+* Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u uw elementen segregeren:
+
+   * **Ontwikkelingsmappen**: bevat digitale elementen waaraan u momenteel werkt.
+   * **Clientmappen**: bevat digitale elementen die zijn gebaseerd op clients of projectnamen.
+   * **Primaire mappen**: bevat originele, brondigitale elementen.
+   * **Uitvoermappen**: bevat vertoningen en kopieën van de originele, brondigitale elementen.
+   * **Bestandsgroottemappen**: bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
+   * **Mappen** stapelen: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
+   * **MIME-tekstmappen**: bevat digitale elementen die specifiek zijn voor MIME-typen, zoals afbeeldingen, documenten en multimedia.
+   * **Mappen** archiveren: bevat gepensioneerde digitale elementen.
+   * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
+
+* Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
+* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van het gepubliceerde element is nog steeds beschikbaar samen met het nieuw gepubliceerde element. Het oorspronkelijke gepubliceerde element is echter *verloren* naar [!DNL Experience Manager] en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
+
+## Elementen ordenen met tags {#use-tags-to-organize-assets}
+
+Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei toepassen voor het detecteren van elementen.
+
+[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, artificiële intelligentie en het leerframework voor machines, die kunnen worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+
+Raadpleeg de volgende artikelen voor meer informatie:
+
+* [Metagegevens van elementen bewerken](meta-edit.md)
+* [Slimme tags in elementen](smart-tags.md)
+
+## Indelen als verzamelingen {#organize-as-collections}
+
+Met de inzamelingen van activa in [!DNL Experience Manager Assets], kunt u de capaciteit stroomlijnen om, activa tot stand te brengen uit te geven en te delen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
+
+Zie [Verzamelingen beheren](manage-collections.md) voor meer informatie
+
+
+## Profielen gebruiken om uw elementen te ordenen {#organize-to-use-profiles}
+
+Een verwerkingsprofiel bevat [!DNL Assets] verwerkingsopdrachten die van toepassing zijn op elementen die naar vooraf gedefinieerde mappen worden geüpload. Profielen worden gebruikt om de verwerking van inhoud van een map of nieuw geüploade elementen te automatiseren. U kunt profielen gebruiken om uw elementen beter te ordenen.
+
+Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructuur gestandaardiseerd, bent u er zeker van dat u verwerkingsprofielen met grotere nauwkeurigheid en consistentie kunt toepassen op mappen wanneer de pool met digitale elementen toeneemt.
+
+>[!MORELIKETHIS]
+>
+>* [Middelenmicroservices en verwerkingsprofielen gebruiken](asset-microservices-configure-and-use.md)
+>* [Metadataprofielen](metadata-profiles.md)
+>* [Videoprofielen](/help/assets/dynamic-media/video-profiles.md)
+>* [Dynamic Media-afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md)
+
+

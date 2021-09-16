@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media-videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
-feature: Middelenbeheer, videoprofielen, uitvoeringen
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3484'
+source-wordcount: '3479'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,8 @@ Hier volgen nog andere factoren die de kwaliteit van uw video&#39;s bepalen:
 
 Zie [Aanbevolen werkwijzen voor videocodering](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-Zie ook [Aanbevolen procedures voor het ordenen van uw digitale elementen voor het gebruik van Procesprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >

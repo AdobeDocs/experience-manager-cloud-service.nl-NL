@@ -4,14 +4,14 @@ description: Leer hoe u met video werkt in Dynamic Media.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9121'
+source-wordcount: '9051'
 ht-degree: 4%
 
 ---
 
-# Video{#video}
+# Video {#video}
 
 In deze sectie wordt het werken met video in Dynamic Media beschreven.
 
@@ -37,7 +37,6 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.
 
       * [Pas een videoprofiel toe op mappen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * Meer informatie over [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
@@ -54,9 +53,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
    * Video-elementen organiseren, doorbladeren en zoeken
 
-      * [Digitale ](/help/assets/organize-assets.md)
-middelen organiserenMeer informatie over  [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [Digitale elementen ordenen](/help/assets/organize-assets.md)
       * [Video-](/help/assets/search-assets.md#custompredicates) apparatuur zoeken en  [middelen zoeken](/help/assets/manage-digital-assets.md#search-assets)
    * Video-elementen voorvertonen en publiceren
 
@@ -64,41 +61,27 @@ middelen organiserenMeer informatie over  [Aanbevolen werkwijzen voor het ordene
          [Voorvertoning van ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) videosor  [Voorvertoning van elementen weergeven](/help/assets/dynamic-media/previewing-assets.md)
          [Video-uitvoeringen beheren](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Werken met videometagegevens
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
+         [Video-eigenschappen bewerken](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * Werken met videometagegevens
+      * [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md)
+      * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md)
+   * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [Annoteren van ](/help/assets/manage-video-assets.md#annotate-video-assets) videosor  [Elementen annoteren](/help/assets/manage-digital-assets.md#annotating)
 
-    * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
-    [Video-eigenschappen bewerken](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md)
-    * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md)
-    
-    * Video&#39;s bekijken, goedkeuren en notities aanbrengen en het versiebeheer
-    
-    * [Annoteren van video&#39;s](/help/assets/manage-video-assets.md#annotate-video-assets) of [Annoteren assets](/help/assets/manage-digital-assets.md#annoating)
-    
-    * [Een versie maken](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [Een workflow op een element starten](/help/assets/manage-digital-assets.md#start-a-workflow-on-an-asset)
+      * [Een versie maken](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [Een workflow starten op een element](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [Mapmiddelen controleren](/help/assets/bulk-approval.md)
+      * [Projecten](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [Mapmiddelen voor revisie](/help/assets/bulk-approval.md)
-    * [Projecten](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. **Publiceer uw Dynamic Media-** video&#39;s op een van de volgende manieren:
 
@@ -354,7 +337,7 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 | Snelheid (Kbps) | Verbindingstype |
 |--- |--- |
 | 256 | Inbelverbinding. |
-| 800 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
+| 600 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
 | 2000 | Standaardbreedbandverbinding voor desktops. Voor deze verbinding, richt een gegevenstarief in de waaier 800-2000 Kbps, met de meeste doelstellingen gemiddeld 1200-1500 Kbps. |
 | 5000 | Typische breedbandverbinding. Codering in dit bovenste bereik wordt niet aanbevolen, omdat de video bij deze snelheid niet beschikbaar is voor de meeste consumenten. |
 

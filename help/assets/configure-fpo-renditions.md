@@ -4,12 +4,13 @@ description: Genereer FPO-uitvoeringen van nieuwe en bestaande elementen met beh
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
+
 
 # Uitvoeringen alleen voor plaatsing genereren voor Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Elementen bieden uitvoeringen die alleen voor plaatsing (FPO) worden gebruikt. D
 Experience Manager als Cloud Service biedt de mogelijkheid om eigen middelen in de cloud te verwerken om de FPO-uitvoeringen te genereren. Gebruik asset microservices voor het genereren van vertoningen. U kunt het genereren van vertoningen configureren van nieuw geüploade elementen en van de elementen in de Experience Manager.
 
 Hier volgen de stappen voor het genereren van FPO-uitvoeringen:
+
 1. [Maak een verwerkingsprofiel](#create-processing-profile).
+
 1. Vorm Experience Manager om dit profiel te gebruiken om nieuwe activa [te verwerken ](#generate-renditions-of-new-assets).
 1. Gebruik de profielen om bestaande elementen [te verwerken.](#generate-renditions-of-existing-assets)
 

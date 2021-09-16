@@ -4,9 +4,9 @@ user-guide-title: Middelen als hulplijn voor Cloud Service
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
+source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '478'
 ht-degree: 38%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 38%
    + [Toegankelijkheid in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Dynamic Media-assets beheren](dynamic-media/managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Aanbevolen procedures voor bestandsbeheer](dynamic-media/best-practices-for-file-management.md)
    + [Afbeeldingsprofielen](dynamic-media/image-profiles.md)
    + [Videoprofielen](dynamic-media/video-profiles.md)
    + [Voorinstellingen Dynamic Media-afbeelding beheren](dynamic-media/managing-image-presets.md)
