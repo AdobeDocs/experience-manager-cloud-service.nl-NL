@@ -5,7 +5,7 @@ breadcrumb-title: AEM Documentenreizen
 user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
+source-git-commit: 737e03d283d5ae3d7df5b3c1ef85cf94e1e9cd45
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -60,13 +60,13 @@ Please note that all links to other guides need to be absolute references with l
       + [Inhoud vertalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
       + [Vertaalde inhoud publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
    + Auteursreis zonder kopinhoud {#author}
-      + [AEM Schrijverreis zonder kopinhoud - Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
-      + [Ontwerpen voor headless met AEM - Een inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
-      + [Grondbeginselen van ontwerpen voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
-      + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
-      + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
+      + [AEM Schrijverreis zonder kopinhoud - Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.html)
+      + [Ontwerpen voor headless met AEM - Een inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.html)
+      + [Grondbeginselen van ontwerpen voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.html)
+      + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.html)
+      + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.html)
    + Reis voor architect zonder hoofdinhoud {#architect}
-      + [Reis van architect zonder hoofdinhoud AEM overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
-      + [Content Modeling for Headless with AEM - Een introductie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
-      + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
-      + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
+      + [Reis van architect zonder hoofdinhoud AEM overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.html)
+      + [Content Modeling for Headless with AEM - Een introductie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.html)
+      + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.html)
+      + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.html)
