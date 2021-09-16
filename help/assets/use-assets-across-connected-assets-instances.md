@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
+source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2968'
 ht-degree: 24%
 
 ---
@@ -148,13 +148,24 @@ Alleen die tags met externe elementen worden opgehaald die een exact overeenkome
 Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervaring beter te begrijpen. Gebruik documenten of afbeeldingen van uw keuze op de externe DAM-implementatie.
 
 1. Navigeer naar de [!DNL Assets]-interface op de externe implementatie door **[!UICONTROL Assets]** > **[!UICONTROL Files]** vanuit [!DNL Experience Manager]-werkruimte te openen. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
+&lt;>
 1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
 1. Open een websitepagina op **[!UICONTROL Navigation]** > **[!UICONTROL Sites]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/<site page>` ook in een browser openen om een pagina te bewerken.
+=======
+1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef de gewenste gebruikersnaam op en klik op **[!UICONTROL OK]**.
+1. Open een websitepagina vanuit **[!UICONTROL Navigation]** > **[Sites]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/<page name>` ook in een browser openen om een pagina te bewerken.
+>>>>>>>>>>Stashed-wijzigingen
 
-   Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
+
+
+
+
+> 
+
+Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
 
 1. Open de tab [!UICONTROL Assets] en klik **[!UICONTROL Log in to Connected Assets]**.
-1. Geef de referenties op: `ksaner` als gebruikersnaam en `password` als wachtwoord. Deze gebruiker heeft auteurstoestemmingen op zowel [!DNL Experience Manager] plaatsingen.
+1. Geef de juiste gegevens op. Deze gebruiker heeft auteurstoestemmingen op zowel [!DNL Experience Manager] plaatsingen.
 1. Zoek naar de asset die u aan DAM hebt toegevoegd. De externe assets worden weergegeven in het linkerdeelvenster. Filter op afbeeldingen of documenten en filter verder op de typen ondersteunde documenten. Sleep de afbeeldingen naar een `Image`-component en sleep documenten naar een `Download`-component.
 
    De opgehaalde middelen zijn alleen-lezen op de lokale [!DNL Sites]-implementatie. U kunt nog steeds de opties gebruiken die door uw [!DNL Sites] componenten worden geboden om het opgehaalde element te bewerken. Het bewerken op basis van componenten is niet-destructief.
@@ -172,12 +183,10 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 1. Bij het publiceren van een pagina wordt [!DNL Experience Manager] weergegeven met een volledige lijst met elementen die op de pagina worden gebruikt. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Zie [asynchrone taken](/help/operations/asynchronous-jobs.md) gebruikersinterface om de status van elk opgehaald element te controleren.
 
    >[!NOTE]
-   >
-   >Zelfs als een of meer externe assets niet worden opgehaald, wordt de pagina gepubliceerd. De component die gebruikmaakt van de externe asset, wordt leeg (zonder content) gepubliceerd. In het meldingsgebied [!DNL Experience Manager] wordt een melding weergegeven voor fouten die worden weergegeven op de pagina voor asynchrone taken.
+   Zelfs als een of meer externe assets niet worden opgehaald, wordt de pagina gepubliceerd. De component die gebruikmaakt van de externe asset, wordt leeg (zonder content) gepubliceerd. In het meldingsgebied [!DNL Experience Manager] wordt een melding weergegeven voor fouten die worden weergegeven op de pagina voor asynchrone taken.
 
 >[!CAUTION]
->
->Nadat de opgehaalde externe elementen in een webpagina zijn gebruikt, kunnen ze worden doorzocht en kunnen ze worden gebruikt door iedereen die toegangsrechten heeft tot de lokale map. De opgehaalde elementen worden opgeslagen in de lokale map (`connectedassets` in de bovenstaande doorloop). De assets zijn ook doorzoekbaar en zichtbaar in de lokale opslagplaats, en wel via [!UICONTROL Content Finder].
+Nadat de opgehaalde externe elementen in een webpagina zijn gebruikt, kunnen ze worden doorzocht en kunnen ze worden gebruikt door iedereen die toegangsrechten heeft tot de lokale map. De opgehaalde elementen worden opgeslagen in de lokale map (`connectedassets` in de bovenstaande doorloop). De assets zijn ook doorzoekbaar en zichtbaar in de lokale opslagplaats, en wel via [!UICONTROL Content Finder].
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
