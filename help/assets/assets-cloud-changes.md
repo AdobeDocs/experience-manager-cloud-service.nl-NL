@@ -4,9 +4,9 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ Als u de code en het proces van begin tot einde wilt valideren, inclusief het op
 | [Rapport downloaden](/help/assets/asset-reports.md) | Niet ondersteund. | Momenteel is het downloadrapport met informatie over het gebruik van middelen niet beschikbaar. Zie [downloadrapport in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Fotosjabloon voor product | Niet ondersteund. | Zie [productfotoopnamesjabloon in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Slimme omzetting | Niet ondersteund. | [Slimme ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) omzetting wordt niet ondersteund in  [!DNL Experience Manager] de vorm van een  [!DNL Cloud Service]. |
+| WebDAV | Niet ondersteund. | Zie [[!DNL Creative Cloud] integratie](/help/assets/aem-cc-integration-best-practices.md) of [Referentiemateriaal voor ontwikkelaars](/help/assets/developer-reference-material-apis.md) voor alternatieven. |
 | Klassieke interface | Niet ondersteund. | Alleen een gebruikersinterface met aanraakbediening is beschikbaar. |
 
 >[!MORELIKETHIS]
