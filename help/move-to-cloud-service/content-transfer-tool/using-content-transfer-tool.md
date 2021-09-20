@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 39%
+source-wordcount: '3063'
+ht-degree: 37%
 
 ---
 
@@ -33,7 +33,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Met het CTT-hulpprogramma (Content Transfer Tool) wordt geen inhoudanalyse uitgevoerd voordat inhoud van de broninstantie naar de doelinstantie wordt overgebracht. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie.
 
-* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Het gereedschap Toewijzing gebruiker gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Hulpprogramma voor het toewijzen van gebruikers gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
@@ -286,6 +286,23 @@ Voer de onderstaande stappen uit:
 1. Klik op **Delete** in het dialoogvenster **Delete Migration Set** om de verwijdering te bevestigen.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren {#running-ctt-on-publish}
+
+Het wordt aanbevolen om tijdens het verplaatsen van inhoud naar een instantie Publish, CTT te installeren op de instantie source Publish om inhoud naar de instantie target Publish te verplaatsen. Volg de onderstaande aanbevolen aanpak:
+
+* Gebruik dezelfde versie van de CTT die op de instantie Auteur is gebruikt.
+
+* Er hoeft slechts één publicatieknooppunt te worden gemigreerd. Deze moet uit het taakverdelingsmechanisme worden verwijderd voordat de extractie wordt gestart.
+
+* Gebruik bij het maken van de migratieset de URL van de auteur-AEMaaCS-omgeving.
+
+* Tijdens het publiceren wordt de publicatielaag NIET verkleind (in tegenstelling tot de auteur). Als voorzorgsmaatregel, gelieve te vermijden om het even welke gebruiker in werking gestelde schrijfverrichtingen zoals:
+
+   * Distributie van inhoud van AEMaaCS-auteur naar Publiceren in die omgeving
+   * Gebruikerssynchronisatie tussen publicatie-instanties
+
 
 ## Problemen oplossen {#troubleshooting}
 
