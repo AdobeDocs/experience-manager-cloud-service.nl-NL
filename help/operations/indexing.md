@@ -2,10 +2,10 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
+source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
 workflow-type: tm+mt
-source-wordcount: '2098'
-ht-degree: 1%
+source-wordcount: '2038'
+ht-degree: 2%
 
 ---
 
@@ -211,9 +211,9 @@ Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de
 
 ## Indexoptimalisaties
 
-Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Hoewel indexoptimalisaties wellicht geen belangrijke rol spelen voor kleine tot middelgrote projecten, is het voor projecten met grote opslagplaatsen voor inhoud en een hogere snelheid van de inhoud noodzakelijk om gerichte efficiëntieverbeteringen voor indexering uit te voeren. Niet-geoptimaliseerde indexen en fallback-indexen moeten zoveel mogelijk worden vermeden. U wordt aangeraden proactieve stappen te ondernemen om ervoor te zorgen dat er geschikte en geoptimaliseerde indexen beschikbaar zijn voor alle query&#39;s in AEM. Bij gebrek aan een geschikte index, reizen de vragen de volledige bewaarplaats - dergelijke vragen zouden moeten worden geïdentificeerd door de logboekdossiers te analyseren om de indexdefinities dienovereenkomstig te optimaliseren aangezien een bewaarplaats traversal vraag de minst efficiënte vraagmethode in AEM is. Zie [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) voor meer informatie.
+Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Niet-geoptimaliseerde indexen en fallback-indexen moeten zoveel mogelijk worden vermeden. Controleer of alle query&#39;s worden ondersteund door een geschikte index. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing wordt geregistreerd. Dergelijke vragen zouden moeten worden geïdentificeerd door de logboekdossiers te analyseren, zodat de indexdefinities kunnen worden geoptimaliseerd. Zie [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) voor meer informatie.
 
 ### Lucene full text index on AEM as a Cloud Service
 
-De full-text index lucene2, indexeert alle inhoud in de AEM bewaarplaats door gebrek en is daarom uiterst inefficiënt wegens zijn bewaarplaats-afhankelijke grootte. De volledige de tekstindex van Lucene is intern afgekeurd en zal niet meer in AEM als Cloud Service vanaf september 2021 worden opgesteld. Als zodanig wordt het niet meer in AEM als Cloud Service aan de productzijde gebruikt en het zou niet moeten worden vereist om klantencode in werking te stellen. Voor AEM als Cloud Service milieu&#39;s met gemeenschappelijke indexen van Lucene, werkt Adobe individueel met klanten voor een gecoördineerde benadering om deze index te compenseren en betere, geoptimaliseerde indexen te gebruiken. Als, in tegenstelling tot alle verwachtingen, een full-text index eigenlijk wordt vereist om vragen in douanecode uit te voeren, zou de analoog van de indexdefinitie aan de index van Lucene onder een verschillende naam moeten worden gecreeerd om conflicten in onderhoud te vermijden.
+De fulltext-index `/oak:index/lucene-2` kan zeer groot worden omdat standaard alle knooppunten in de AEM worden geïndexeerd. De volledige de tekstindex van Lucene is intern afgekeurd en zal niet meer in AEM als Cloud Service vanaf september 2021 worden opgesteld. Als zodanig wordt het niet meer in AEM als Cloud Service aan de productzijde gebruikt en het zou niet moeten worden vereist om klantencode in werking te stellen. Voor AEM als Cloud Service milieu&#39;s met gemeenschappelijke indexen van Lucene, werkt Adobe individueel met klanten voor een gecoördineerde benadering om deze index te compenseren en betere, geoptimaliseerde indexen te gebruiken. Als deze index voor douanequery&#39;s, als tijdelijke oplossing wordt vereist, zou een exemplaar van deze index, gebruikend een verschillende naam, bijvoorbeeld, `/oak:index/acme.lucene-1-custom-1`, zoals beschreven [hier](/help/operations/indexing.md) moeten worden gecreeerd.
 Deze optimalisatie is niet van toepassing op andere AEM omgevingen die op locatie worden gehost of worden beheerd door Adobe Managed Services, tenzij Adobe dit anders aanbeveelt.
