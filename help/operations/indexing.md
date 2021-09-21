@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2057'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,9 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
-1. Beperkingen: momenteel, wordt het indexbeheer op AEM als Cloud Service slechts gesteund voor indexen van type lucene.
+1. Beperkingen:
+* Momenteel wordt indexbeheer op AEM als Cloud Service alleen ondersteund voor indexen van het type lucene.
+* Alleen standaardanalysatoren worden ondersteund (dat wil zeggen die welke met het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 
 ## Het gebruik {#how-to-use}
 
