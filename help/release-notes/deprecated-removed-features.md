@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release specifiek voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
+source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '559'
 ht-degree: 5%
 
 ---
@@ -34,6 +34,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 
 | Mogelijkheden | Verouderde functie | Vervanging |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [Op modellen gebaseerde gestructureerde ](/help/assets/content-fragments/content-fragments-models.md) inhoudsfragmentatie. |
 | [!DNL Assets] | `DAM Asset Update` werkwijze voor het verwerken van opgenomen afbeeldingen. | Bij het opnemen van bedrijfsmiddelen worden nu [assetmicroservices](/help/assets/asset-microservices-overview.md) gebruikt. |
 | [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager]. Zie [API&#39;s voor het uploaden van afgekeurde elementen](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Gebruik [Directe binaire upload](/help/assets/add-assets.md). Voor technische details, zie [directe upload APIs](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bepaalde workflowstepsin-](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) workflowworkflows worden niet ondersteund, zoals het aanroepen van opdrachtregelprogramma&#39;s  `DAM Asset Update`   [!DNL ImageMagick]. | [De ](/help/assets/asset-microservices-overview.md) microservices van bedrijfsmiddelen bieden een vervanging voor veel workflows. Voor aangepaste verwerking gebruikt u [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
