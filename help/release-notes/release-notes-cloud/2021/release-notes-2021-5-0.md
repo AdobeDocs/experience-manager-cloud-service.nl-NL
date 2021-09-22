@@ -1,13 +1,13 @@
 ---
 title: Release-aantekeningen voor 2021.5.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
 description: Release-aantekeningen voor 2021.5.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
-
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
 
@@ -68,35 +68,8 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 #### Nieuw in Dynamic Media {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
-
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor de bovenstaande verbeteringen voor Smart Imaging is:
-   >
-   >* Noord-Amerika 24 mei 2021 in NA,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 25 juni 2021,
-      >
-      >
-   * Azië-Stille Oceaan 19 juli 2021.
-
-
-* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van de volgende generatie in Dynamic Media-levering (fmt URL-modifier).
-
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor AVIF-ondersteuning is:
-   >
-   >* Noord-Amerika 10 mei 2021,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 24 mei 2021,
-      >
-      >
-   * Azië-Stille Oceaan 24 juni 2021.
-
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) en [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) voor meer informatie.
+* Introductie van ondersteuning voor AVIF van de volgende generatie bij levering via Dynamic Media (fmt URL-modifier).
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
