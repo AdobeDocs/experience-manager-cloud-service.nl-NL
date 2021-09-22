@@ -1,9 +1,9 @@
 ---
 title: Opslagplaatsen voor Cloud Manager
 description: Opslagplaatsen voor Cloud Manager
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ Voer de onderstaande stappen uit om opslagruimten in Cloud Manager weer te geven
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. U kunt de opslagplaats selecteren en op de menuopties van uiterst rechts van de lijst klikken aan **Repository URL kopiëren**, **View &amp; Update** of **Delete** uw bewaarplaats, zoals aangetoond in de hieronder figuur.
+1. U kunt de gegevensopslagruimte selecteren en op de menuopties van uiterst rechts in de tabel klikken naar **Repository URL kopiëren** of **View &amp; Update** of **Delete** uw gegevensopslagruimte, zoals in de onderstaande afbeelding wordt getoond.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Een opslagplaats verwijderen {#delete-repo}
+
+Voer de onderstaande stappen uit om een opslagplaats in Cloud Manager te verwijderen:
+>[!NOTE]
+>Als u een opslagplaats verwijdert, gebeurt het volgende:
+>1. Maak de verwijderde opslagplaats onbruikbaar voor nieuwe opslagplaatsen die in de toekomst kunnen worden gecreeerd. In dit geval wordt een foutbericht weergegeven zoals hieronder wordt getoond:
+   >*De naam van de opslagplaats moet binnen de organisatie uniek zijn.*
+>1. Maak de verwijderde opslagplaats niet beschikbaar in Cloud Manager en kan daarom niet worden gekoppeld aan een pijpleiding.
+
+
+1. Van **Overzicht van het Programma** pagina, klik op **Bewaarplaatsen** lusje en navigeer aan **Bewaarplaatsen** pagina.
+
+1. Selecteer de opslagplaats en klik op de menuopties helemaal rechts van de tabel. Klik op **Delete** om de gegevensopslagruimte te verwijderen, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Ondersteuning voor Git-submodule {#git-submodule-support}
