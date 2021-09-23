@@ -2,9 +2,9 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1375'
 ht-degree: 4%
 
 ---
@@ -63,11 +63,12 @@ Voer de onderstaande stappen uit om dit in te stellen:
 
 1. Navigeer naar [Adobe Developer Console](https://console.adobe.io) met uw Adobe ID.
 1. Maak een nieuw project of open een bestaand project.
-1. Voeg een API toe.
-1. Kies Gebruikerbeheer-API.
+1. Een API toevoegen - Klik **Toevoegen aan project** en selecteer **API**
+1. Kies Gebruikerbeheer-API.  Mogelijk moet u machtigingen ophalen om deze optie te kunnen gebruiken.
 1. Maak een JWT-referentie.
-1. Genereer een sleutelpaar of upload een openbare sleutel (rsa is geen goed).
-1. Genereer een toegangstoken (of teken JWT of dragertoken).
+1. Genereer een sleutelpaar of upload een openbare sleutel (rsa is geen goed).  Er is een knoop, **Genereer een openbaar/privé sleutelpaar**, die dit voor u zal doen.  Zorg ervoor dat u zowel de openbare als de persoonlijke sleutels opslaat.
+1. Navigeer naar de API voor gebruikersbeheer.
+1. Genereer een toegangstoken (of een token voor toonder) door uw inhoud van de persoonlijke sleutel in het tekstvak te plakken en te klikken op **Token genereren**.
 1. Sla al deze informatie op, zoals **Client ID**, **Client Secret**, **Technical Account ID**, **Technical Account Email**, **Org ID** en **Access Token**.
 
 ## Gebruikersinterface {#user-interface}
