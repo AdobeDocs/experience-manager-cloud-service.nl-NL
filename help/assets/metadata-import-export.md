@@ -2,12 +2,12 @@
 title: Importeer/exporteer metadata van assets bulksgewijs
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '645'
 ht-degree: 11%
 
 ---
@@ -34,7 +34,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | Veldscheidingsteken | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
-   | Workflows starten | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen voor Launcher zijn van kracht voor de DAM-workflow Metagegevens schrijvenBack (die metagegevens naar de binaire XMP schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
+   | Workflows starten | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen van kracht zijn voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Klik op **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
