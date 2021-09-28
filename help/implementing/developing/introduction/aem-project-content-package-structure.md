@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2880'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,7 @@ Alle overige gegevens in de opslagplaats, `/content`, `/conf`, `/var`, `/etc`, `
 >
 >Zoals in vorige versies van AEM, `/libs` zou niet moeten worden gewijzigd. Alleen AEM productcode kan worden geïmplementeerd op `/libs`.
 
-### Oak-indexen {#oak-indexes}
+### eiken indexen {#oak-indexes}
 
 De indexen van de eiken (`/oak:index`) worden specifiek beheerd door de AEM als proces van de Cloud Service plaatsing. De reden hiervoor is dat de Cloud Manager moet wachten totdat een nieuwe index wordt geïmplementeerd en volledig opnieuw wordt geïndexeerd voordat naar de nieuwe codeafbeelding wordt overgeschakeld.
 
@@ -70,6 +70,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/apps/settings`
    + ACLs (toestemmingen)
       + Elke `rep:policy` voor een pad onder `/apps`
+   + [Vooraf gecompileerde gebundelde scripts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + Het `ui.config`-pakket bevat alle [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md):
    + De omslag van de organisatie die loopwijze specifieke definities OSGi config bevat
@@ -161,7 +162,7 @@ Standaard worden alle pakketten die door de Maven-build worden gemaakt door Adob
 >
 >Zie de sectie [POM XML-fragmenten](#pom-xml-snippets) hieronder voor een volledig fragment.
 
-## Repo-inkt{#repo-init}
+## Reparatie-item{#repo-init}
 
 Repo Init verstrekt instructies, of manuscripten, die structuren JCR, die zich van gemeenschappelijke knoopstructuren zoals omslagbomen, aan gebruikers, de dienstgebruiker, groepen en ACL definitie bepalen.
 
@@ -282,7 +283,7 @@ Als u Geweven afhankelijkheden toevoegt, volgt u de standaard Geweven werkwijzen
 >
 >Zie de sectie [POM XML-fragmenten](#xml-3rd-party-maven-repositories) hieronder voor een volledig fragment.
 
-## Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten {#package-dependencies} verpakken
+## Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten verpakken {#package-dependencies}
 
 Om een correcte installatie van de pakketten te waarborgen, wordt aanbevolen om afhankelijkheden tussen pakketten tot stand te brengen.
 
@@ -296,7 +297,7 @@ Een opmerkelijke uitzondering op deze algemene regel is als het onveranderlijke 
 
 De gemeenschappelijke patronen voor tevreden pakketgebiedsdelen zijn:
 
-### Eenvoudige implementatiepakketafhankelijke {#simple-deployment-package-dependencies}
+### Eenvoudige implementatiepakketafhankelijkheden {#simple-deployment-package-dependencies}
 
 Met de eenvoudige optie wordt het veranderbare inhoudspakket `ui.content` ingesteld op basis van het onveranderlijke codepakket `ui.apps`.
 
@@ -331,7 +332,7 @@ Code- en contentpakketten die als subpakketten worden geïmplementeerd, moeten h
 
 Het project `all/pom.xml` van de container **declareert geen** a `<packageType>`.
 
-#### Code (Immuable) pakkettypes {#immutable-package-types}
+#### Code (Immuable) pakkettypen {#immutable-package-types}
 
 Codepakketten moeten hun `packageType` op `application` plaatsen.
 
@@ -407,7 +408,7 @@ In elk project dat een pakket genereert, **behalve** voor het containerproject (
     ...
 ```
 
-### Repo-inkt{#snippet-repo-init}
+### Reparatie-item{#snippet-repo-init}
 
 De manuscripten van de Inzet van de Repo die de manuscripten bevatten van de Inzet van de Repo worden bepaald in `RepositoryInitializer` OSGi fabrieksconfiguratie via het `scripts` bezit. Merk op dat aangezien deze manuscripten binnen configuraties OSGi worden bepaald, zij gemakkelijk kunnen worden scoped door wijze in werking stellen gebruikend de gebruikelijke `../config.<runmode>` omslagsemantiek.
 
@@ -570,7 +571,7 @@ Voeg in de `pom.xml` van het reactorproject de noodzakelijke richtlijnen toe van
 </repositories>
 ```
 
-### Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten {#xml-package-dependencies} verpakken
+### Afhankelijkheden tussen `ui.apps` van `ui.content` pakketten verpakken {#xml-package-dependencies}
 
 Voeg in de `ui.content/pom.xml` de volgende `<dependencies>` aanwijzingen toe aan de `filevault-package-maven-plugin` plug-indeclaratie.
 
@@ -596,7 +597,7 @@ Voeg in de `ui.content/pom.xml` de volgende `<dependencies>` aanwijzingen toe aa
 ...
 ```
 
-### De doelmap van het containerproject {#xml-clean-container-package} reinigen
+### De doelmap van het containerproject opschonen {#xml-clean-container-package}
 
 Voeg in `all/pom.xml` de `maven-clean-plugin` plug-in toe waarmee de doelmap wordt gewist voordat een Maven-versie wordt gemaakt.
 
