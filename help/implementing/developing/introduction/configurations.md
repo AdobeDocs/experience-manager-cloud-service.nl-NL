@@ -1,16 +1,15 @@
 ---
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
-translation-type: tm+mt
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
 
 
-# Configuraties en de Configuratie-browser {#configuration-browser}
+# Configuraties en de Configuratiebrowser {#configuration-browser}
 
 AEM configuraties dienen om instellingen in AEM te beheren en dienen als werkruimten.
 
@@ -34,10 +33,10 @@ De AEM beheerder en auteurs kunnen configuraties als werkruimten beschouwen. Dez
 
 Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
-* [Cloudconfiguraties](/help/implementing/developing/introduction/configurations.md)
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
+* diverse cloudconfiguraties
 
 ### Voorbeeld {#administrator-example}
 
@@ -65,7 +64,7 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 >
 >Het is alleen mogelijk om configuraties te maken met de Configuratiebrowser als uw gebruiker `admin` rechten heeft. `admin` de rechten worden ook vereist om toegangsrechten aan de configuratie toe te wijzen of anders een configuratie te wijzigen.
 
-#### Een configuratie {#creating-a-configuration} maken
+#### Een configuratie maken {#creating-a-configuration}
 
 Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen door Browser van de Configuratie te gebruiken.
 
@@ -80,17 +79,17 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamconventies [AEM.](naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
-   * [Cloudconfiguraties](/help/implementing/developing/introduction/configurations.md)
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
    * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
+   * diverse cloudconfiguraties
 1. Tik of klik op **Maken**.
 
 >[!TIP]
 >
 >Configuraties kunnen genest zijn.
 
-#### Configuraties en hun toegangsrechten {#access-rights} bewerken
+#### Configuraties en hun toegangsrechten bewerken {#access-rights}
 
 Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en mag toegang hebben.
 
@@ -193,7 +192,7 @@ Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback
    * Opgelost met implementatie van toepassingen
    * Alleen-lezen bij uitvoering
 
-### Configuraties {#using-configurations} gebruiken
+### Configuraties gebruiken {#using-configurations}
 
 Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsbron of een bronboom zoals [in het vorige voorbeeld werd beschreven.](#developer-example)
 
