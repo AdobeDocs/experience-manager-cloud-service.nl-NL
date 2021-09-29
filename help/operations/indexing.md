@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Het pakket uit het bovenstaande voorbeeld is opgebouwd als `com.adobe.granite:ne
 
 >[!NOTE]
 >
->Er is een bekend probleem met de Versie **1.1.0** van de Plug-in `<packageType>application</packageType>`Pakket met hemrabbit FileVult, waarmee u `oak:index` niet kunt toevoegen aan modules van . Om dit te omzeilen, gelieve versie **1.0.4** te gebruiken.
+>Er is een bekend probleem met de Versie **1.1.0** van de Plug-in `<packageType>application</packageType>`Pakket met hemrabbit FileVult, waarmee u `oak:index` niet kunt toevoegen aan modules van . U moet een update uitvoeren naar een recentere versie van die plug-in.
 
 Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
 
