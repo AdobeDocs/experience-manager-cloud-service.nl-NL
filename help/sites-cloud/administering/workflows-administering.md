@@ -1,12 +1,12 @@
 ---
 title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert
-feature: Beheer
+feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -167,3 +167,79 @@ U kunt de maximumgrootte van inbox plaatsen door **de Dienst van het Werkschema*
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam |
 |---|---|
 | Max. grootte van invoerquery | granite.workflow.inboxQuerySize |
+
+## Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten {#using-workflow-variables-customer-datastore}
+
+Gegevens die in workflows worden gebruikt, worden opgeslagen in de door Adobe verschafte opslag (JCR). Deze gegevens kunnen van nature gevoelig zijn. U wilt mogelijk alle door de gebruiker gedefinieerde metagegevens en gegevens opslaan in uw eigen beheerde opslagruimte in plaats van de door de gebruiker verschafte Adobe opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
+
+### Het model instellen voor externe opslag van metagegevens {#set-model-for-external-storage}
+
+Op het niveau van werkschemamodel, is het gepland om een vlag te introduceren om erop te wijzen dat het model (en zijn runtime instanties) externe opslag van meta-gegevens heeft. Gebruikersmetagegevens blijven niet behouden in de JCR voor de workflowexemplaren van de modellen die zijn gemarkeerd voor externe opslag.
+
+Als u deze functie wilt activeren, moet u de externe markering voor persistentie inschakelen: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
+De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:content node* van het workflowmodel. Deze vlag zal in werkschemameta-gegevens als *cq:userMetaDataCustomPersistenceEnabled* worden gepersisteerd.
+
+In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet instellen.
+
+![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+
+### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
+
+UserMetaDataPersistenceContext
+
+In de volgende voorbeelden ziet u hoe u de API gebruikt.
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+} 
+```
+
+
