@@ -2,9 +2,9 @@
 title: 'Inleiding tot Sandbox-programma''s '
 description: Inleiding tot Sandbox-programma's
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ De omgevingen die in een sandbox worden gemaakt, zijn niet geconfigureerd voor a
 
 Sandboxprogramma&#39;s omvatten [!DNL Sites] en [!DNL Assets] en worden automatisch gevuld met een Git-opslagplaats, een ontwikkelomgeving en een niet-productiepijplijn.  De gegevensopslagplaats van het Git wordt bevolkt met een steekproefproject dat op het AEM archetype van het Project wordt gebaseerd.
 
-Verwijs naar het Begrip van Programma&#39;s en de Types van Programma om meer over de Types van Programma te leren.
+>[!NOTE]
+>Aangepaste domeinen en IP-Lijsten van gewenste personen zijn niet beschikbaar in sandboxprogramma&#39;s.
+
+Verwijs naar [Begrijpend Programma en Types van Programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) om meer over de Types van Programma te leren.
 
 ### Attributen van Sandbox-programma&#39;s {#attributes-sandbox}
 
