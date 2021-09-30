@@ -2,7 +2,7 @@
 title: Logbestanden beheren - Cloud Service
 description: Logbestanden beheren - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de **Environmental**-kaart op de pagina **Overzicht** of de pagina Environment Details.
 
-## Logbestanden {#download-logs} downloaden
+## Logbestanden downloaden {#download-logs}
 
 Voer de onderstaande stappen uit om logbestanden te downloaden.
 
@@ -37,11 +37,11 @@ Voer de onderstaande stappen uit om logbestanden te downloaden.
    ![](assets/download-preview.png)
 
 
-## Hiermee wordt de API {#logs-through-api} doorlopen
+## Logbestanden via API {#logs-through-api}
 
 Naast het downloaden van logboeken door UI, zullen de logboeken door API en de Interface van de Lijn van het Bevel beschikbaar zijn.
 
-Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden, is de opdracht iets apart van de regels van
+Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden, is de opdracht een opdracht die lijkt op
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
