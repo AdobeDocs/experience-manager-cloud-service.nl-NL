@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 12%
@@ -78,7 +78,7 @@ Daar is de Tenant-id de IMS org.
 
 Voer de volgende stappen uit als u niet zeker bent van de Brand Portal-URL:
 
-1. Meld u aan bij [Admin Console](http://adminconsole.adobe.com/) en navigeer naar **[!UICONTROL Products]**.
+1. Meld u aan bij [Admin Console](https://adminconsole.adobe.com/) en navigeer naar **[!UICONTROL Products]**.
 1. Selecteer **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** in het linkerspoor.
 1. Klik op **[!UICONTROL Go to Brand Portal]** om Brand Portal rechtstreeks in de browser te openen.
 
@@ -230,7 +230,7 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe 
 
 1. Meld u aan bij AEM Assets.
 1. Navigeer in het deelvenster **Gereedschappen** naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-1. Klik op **[!UICONTROL Create]** op de pagina Adobe IMS-configuraties. Het zal aan de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina opnieuw richten. Standaard wordt het tabblad **Certificaat** geopend.
+1. Klik op **[!UICONTROL Create]** op de pagina Adobe IMS Configurations. Het zal aan de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina opnieuw richten. Standaard wordt het tabblad **Certificaat** geopend.
 1. Selecteer **[!UICONTROL Adobe Brand Portal]** in **[!UICONTROL Cloud Solution]** dropdown lijst.
 1. Selecteer het selectievakje **[!UICONTROL Create new certificate]** en geef een **alias** op voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
 1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te genereren.

@@ -3,12 +3,12 @@ title: Metagegevens van digitale elementen beheren
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Middelenbeheer, metagegevens
+feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1841'
 ht-degree: 3%
 
 ---
@@ -183,7 +183,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Gebruikt door [!DNL Experience Manager Assets].
 * DAM - Wordt gebruikt door [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) is een verzameling hulpmiddelen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
+* DEX - [Optima SC Description Explorer](https://www.optimasc.com/products/dex/index.html) is een verzameling hulpmiddelen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -231,5 +231,5 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 >[!MORELIKETHIS]
 >
 >* [XMP-metadata](xmp-metadata.md)
-* [Metagegevens bewerken of toevoegen](meta-edit.md)
+>* [Metagegevens bewerken of toevoegen](meta-edit.md)
 

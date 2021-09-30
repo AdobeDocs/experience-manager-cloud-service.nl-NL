@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -256,7 +256,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!NOTE]
 >
->Zie [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Zie [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -374,7 +374,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
 Zie hier voor gedetailleerde API-referenties:
 
-* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 

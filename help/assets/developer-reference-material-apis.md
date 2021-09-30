@@ -2,12 +2,12 @@
 title: Ontwikkelaarsreferenties voor [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: API's,middelen HTTP API
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1425'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 | × | Niet ondersteund. Niet gebruiken. |
 | - | Niet beschikbaar |
 
-| Hoofdletters gebruiken | [aem-upload](https://github.com/adobe/aem-upload) | [API&#39;s voor Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Voorvertoning)_ |
+| Hoofdletters gebruiken | [aem-upload](https://github.com/adobe/aem-upload) | [API&#39;s voor Experience Manager/Sling/](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Voorvertoning)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Origineel binair** |  |  |  |  |  |  |
 | Origineel maken | ✓ | × | - | × | × | - |
@@ -185,7 +185,7 @@ Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met ext
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager], kunt u met behulp van asset-microservices assets elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Enkele workflowstappen die in de [!UICONTROL DAM Update Asset]-workflow in de vorige versie werden gebruikt, worden niet ondersteund. Zie de [Java API-naslag of Java JavaDocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) voor meer informatie over ondersteunde klassen.
+Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager], kunt u met behulp van asset-microservices assets elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Enkele workflowstappen die in de [!UICONTROL DAM Update Asset]-workflow in de vorige versie werden gebruikt, worden niet ondersteund. Zie de [Java API-naslag of Java JavaDocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) voor meer informatie over ondersteunde klassen.
 
 De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar:
 
