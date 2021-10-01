@@ -2,10 +2,10 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Controleer alle onderstaande overwegingen:
 | Totale indexgrootte | De totale indexgrootte van maximaal 25 GB wordt momenteel ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor indexgrootte boven deze limiet te bespreken. |
 | Lengte knooppuntnaam | De lengte van een knooppuntnaam moet 150 bytes of minder zijn. Node-namen die langer zijn dan 150 bytes, moeten worden ingekort tot &lt;= 150 bytes om te worden ondersteund door de Document node store in AEM as a Cloud Service. De oplossingen mislukken als deze lange knooppuntnamen niet vast zijn. |
 | Inhoud in onveranderbare paden | Het gereedschap Inhoud overbrengen kan niet worden gebruikt om inhoud in onveranderbare paden te migreren. Als u inhoud wilt overbrengen van `/etc`, mogen alleen bepaalde `/etc` paden worden geselecteerd, maar alleen ter ondersteuning van [AEM Forms naar AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Raadpleeg [Common Repository Reform](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) voor alle andere gebruiksgevallen voor meer informatie over de herstructurering van de opslagplaats. |
+| Waarde van eigenschap Node in MongoDB | Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Dit wordt afgedwongen door MongoDB. De suggesties zullen ontbreken als er bezitswaarden groter dan deze grens zijn. Alvorens een extractie in werking te stellen, stel dit [eak-looppas](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) manuscript in werking. Controleer alle waarden van grote eigenschappen en valideer als deze nodig zijn. Degenen die 16 MB overschrijden, moeten worden omgezet in binaire waarden. |
 
 ## Volgende functies {#whats-next}
 
