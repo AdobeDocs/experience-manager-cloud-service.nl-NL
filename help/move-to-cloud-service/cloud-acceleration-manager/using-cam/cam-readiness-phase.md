@@ -1,13 +1,13 @@
 ---
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Gereedheidsfase in Cloud Acceleration Manager {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 1. Klik op **Upload nieuw rapport** om BPA- rapport in CAM te uploaden.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >Rapport kan niet worden geüpload als u in de Incognito-modus van de browser werkt.
 
 1. Zodra u een nieuw rapport hebt geüpload, zult u het rapport van de Analyse van Beste praktijken zien.
 
