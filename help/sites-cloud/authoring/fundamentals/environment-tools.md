@@ -1,20 +1,19 @@
 ---
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2154'
 ht-degree: 12%
 
 ---
 
-
-# Ontwerpomgeving en gereedschappen {#authoring-the-environment-and-tools}
+# Ontwerpomgeving en -gereedschappen {#authoring-the-environment-and-tools}
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
-## Uw site {#managing-your-site} beheren
+## Uw site beheren {#managing-your-site}
 
 Met de **Sites**-console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde resource), navigatiepaden en, indien geselecteerd, secundaire sporen (bijvoorbeeld tijdlijn en verwijzingen).
 
@@ -45,7 +44,7 @@ Bij het bewerken van een pagina is **Help** toegankelijk vanuit:
 
 Aanvullende [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Componentbrowser {#components-browser}
+## Browser voor componenten {#components-browser}
 
 Componenten zijn de bouwstenen van AEM inhoud. U plaatst veelvoudige componenten op een pagina en vormt hun opties om uw inhoudspagina met AEM te bouwen.
 
@@ -98,7 +97,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 >
 >Een mobiel apparaat wordt gedetecteerd wanneer de breedte minder dan 1024 px is. Dit kan ook het geval zijn voor een klein bureaubladvenster.
 
-## Elementenbrowser {#assets-browser}
+## Browser voor middelen {#assets-browser}
 
 In de middelenbrowser worden alle [assets](/help/assets/home.md) weergegeven die beschikbaar zijn voor rechtstreeks gebruik op de huidige pagina.
 
@@ -270,6 +269,7 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 * [Doelstelling](/help/sites-cloud/authoring/personalization/targeted-content.md)  - vergroot de relevantie van inhoud door de inhoud op alle kanalen te richten en te meten.
 * [Met Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  kunt u de status van een pagina op een bepaald tijdstip weergeven.
 * [De status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  van het Levende Exemplaar - staat een snel overzicht van de levende exemplaarstatus toe en welke componenten worden/worden niet geërft.
+* [Ontwerpmodus](/help/implementing/developing/tools/developer-mode.md)
 * [Voorvertoning](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving. of om te navigeren met koppelingen in de inhoud.
 * [Annotatie](/help/sites-cloud/authoring/fundamentals/annotations.md) : wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
@@ -285,7 +285,6 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
 
 >
-
 
 
 ## Padselectie {#path-selection}
