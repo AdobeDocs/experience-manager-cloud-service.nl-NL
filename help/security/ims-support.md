@@ -2,10 +2,10 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
+source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 91%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,11 @@ ht-degree: 91%
 
 >[!TIP]
 >
->Zie onze cursus van Experience League [Vorm Toegang tot AEM voor Beheerders](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding aan hoe de gebruikers het gebruiken van Adobe IMS aan AEM als Cloud Service voor authentiek verklaren en hoe de Gebruikers van Adobe IMS, Gebruikersgroepen, en de Profielen van het Product worden gebruikt om toegang tot AEM en zijn eigenschappen en functionaliteiten te controleren. Adobe ID vereist.
+>Raadpleeg onze cursus [Toegang tot AEM configureren voor beheerders](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers met Adobe IMS AEM als Cloud Service verifiëren en hoe Adobe IMS-gebruikers, gebruikersgroepen en productprofielen worden gebruikt om de toegang tot AEM en de functies en functies te beheren. Adobe ID vereist.
+
+>[!NOTE]
+>
+>IMS-aanmelding voor AEM als Cloud Service ondersteunt geen geneste groepen in de Admin Console.
 
 ## Belangrijkste kenmerken {#key-highlights}
 
