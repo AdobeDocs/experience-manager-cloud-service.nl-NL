@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1966'
 ht-degree: 5%
 
 ---
@@ -101,14 +101,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * **Omleiden**  - Geeft de pagina aan waarnaar deze pagina automatisch moet worden omgeleid
    * **Ontwerp**  - Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site
    * **Alias**  - Geeft een alias op die voor deze pagina moet worden gebruikt
-
-   >[!NOTE]
-   >
-   >Alias plaatst het `sling:alias` bezit om een alias naam voor het middel te bepalen (dit beïnvloedt slechts het middel, niet de weg).
-   >
-   >Bijvoorbeeld: als u een alias van `latin-lang` voor de knoop `/content/we-retail/spanish` bepaalt, dan kan deze pagina via `/content/we-retail/latin-language` worden betreden
-   >
-   >Zie Gelokaliseerde paginanamen onder SEO en URL Management Best Practices voor meer informatie.
+      * Als u bijvoorbeeld een alias van `private` definieert voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`
+      * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld, die alleen van invloed is op de bron, niet op het pad naar de opslagplaats.
+      * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).

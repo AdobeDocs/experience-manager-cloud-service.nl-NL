@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1769'
 ht-degree: 5%
 
 ---
@@ -79,6 +79,10 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 >[!NOTE]
 >
 >Publiceren vanuit de editor is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina(&#39;s) niet.
+
+>[!NOTE]
+>
+>Pagina&#39;s die in de editor worden benaderd door [aliassen](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced), kunnen niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
 ### Publiceren vanuit de console {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ Op een [manier gelijkend op het publiceren](#publishing-pages), kunnen één of 
 ### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
 
 Als u de publicatie van een pagina ongedaan wilt maken, selecteert u **Publicatie van pagina** ongedaan maken in het menu **Pagina-informatie**, net als wanneer u de pagina](#publishing-from-the-editor) zou publiceren.[
+
+>[!NOTE]
+>
+>Pagina&#39;s die in de editor toegankelijk zijn via [aliassen](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced), kunnen niet ongepubliceerd worden. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
 ### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
 
