@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1721'
 ht-degree: 0%
 
 ---
@@ -179,19 +179,35 @@ Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manage
 
 * Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Releasedatum {#release-date-october-cam}
+
+De releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
+
+### Nieuwe functies {#what-is-new-cam}
+
+* Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbare voorvertoning, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF voor eenvoudige deelbaarheid. Verwijs naar Stap 6 en 7 in [Gebruikend de Kaart van de Analyse van Beste praktijken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## De tool Content Transfer {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt-latest}
 
-De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
+De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
-### Opgeloste problemen {#bug-fixes-ctt}
+### Wat is er nieuw? {#what-is-new-ctt}
 
-* In sommige gevallen zijn niet alle gebruikers gemigreerd naar de doelinstantie. Om deze moeilijke CTT v1.5.6 te krijgen wordt vereist samen met aem-ethos-hulpmiddelen 1.2.354 of recentere versie op het doel AEM als instantie van de Cloud Service.
+* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, verwijs naar [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
+   * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
+   * Toewijzing van gebruikers mislukt niet meer als Toegangstoken verloopt (na 24 uur). Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
 
-* De **Stop Ingestie** knoop werd onbruikbaar gemaakt tijdens opname aan de Publish instantie. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
+* Om de robuustheid te verhogen CTT, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen.
 
-* CTT heeft de map `/tmp` niet opgeschoond na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.
+* Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
+
 
 ## Analysator van best practices {#best-practices-analyzer}
 
