@@ -2,10 +2,10 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 41%
+source-wordcount: '2522'
+ht-degree: 42%
 
 ---
 
@@ -92,18 +92,6 @@ Tijdens het genereren van het rapport wordt de voortgang weergegeven in procente
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. Klik op **Afdrukvoorbeeld** pictogram, zoals hieronder getoond voor gemakkelijke deelbaarheid.
-
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. Als u op **Afdrukvoorbeeld** klikt, wordt een nieuw tabblad geopend met de rapporten die in een afdrukbare voorvertoning worden weergegeven. Klik op **Afdrukken** om het rapport af te drukken naar een PDF-indeling voor eenvoudige deelbaarheid.
-
-   >[!IMPORTANT]
-   * De optie **Opslaan als PDF** wordt aanbevolen en ondersteund voor de bovenstaande functionaliteit.
-   * Als de knop Afdrukken van de browser wordt gebruikt, wordt slechts één pagina afgedrukt.
-
-
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
