@@ -1,9 +1,9 @@
 ---
 title: Uitbreiding van [!DNL Adobe Experience Manager] als Cloud Service met Adobe Developer App Builder.
-description: Uitbreiding van [!DNL Adobe Experience Manager] als Cloud Service met Adobe Developer App Builder.
-source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
+description: Uitbreiding van [!DNL Adobe Experience Manager] as a Cloud Service met Adobe ontwikkelaar App Builder.
+source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Manager] uitbreiden als Cloud Service gebruikend de Bouwer van de Ontwikkelaar van de Adobe {#extend-using-app-builder}
 
-## Wat is App Builder voor AEM als Cloud Service {#project-firefly}
+## Wat is App Builder voor AEM as a Cloud Service {#project-firefly}
 
-De nieuwe Adobe Developer App Builder biedt een uitbreidingsframework waarmee een ontwikkelaar AEM eenvoudig kan uitbreiden als functie voor Cloud Servicen.
+De nieuwe Adobe Developer App Builder biedt een uitbreidingsframework waarmee een ontwikkelaar eenvoudig AEM as a Cloud Service functies kan uitbreiden.
 
 App Builder biedt een geïntegreerd extern uitbreidingsframework voor het integreren en maken van aangepaste ervaringen die Adobe Experience Manager uitbreiden. Met dit volledige rekbaarheidskader, dat op Adobe wordt gebouwd kunnen de ontwikkelaars de microdiensten van de douanemenu&#39;s bouwen, uitbreiden, en Adobe Experience Manager over Adobe oplossingen en de rest van de stapel van IT integreren.
 
@@ -27,7 +27,7 @@ App Builder (voorheen Project Firefly genoemd) is sinds zomer 2020 beschikbaar v
 
 >[!NOTE]
 >
-> Voor AEM 6.5-klanten die de App Builder willen gebruiken, gaat u naar [Adobe Experience Manager uitbreiden als Cloud Service met de Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> Voor AEM 6.5-klanten die de App Builder willen gebruiken, gaat u naar [Adobe Experience Manager 6.5 uitbreiden met Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architectuur {#architecture}
 
@@ -42,26 +42,26 @@ In het volgende diagram ziet u hoe een standaardtoepassing die is gebaseerd op A
 
 ![Architectuur](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-Voor meer details over de architectuur van de Bouwer van de App, heb een blik bij [Overzicht van de Architectuur](https://www.adobe.io/project-firefly/docs/guides/).
+Voor meer details over de architectuur van de Bouwer van de App, heb een blik bij [Overzicht van de Architectuur](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Aan de slag met App Builder {#additional-resources}
 
 Om u te helpen aan de slag te gaan met App Builder hebben we een reeks documentatie gemaakt waarmee u kunt beginnen:
 
-* [Aan de slag met App Builder](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [Aan de slag met App Builder](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Doorgaan met leren met documentatie {#appbuilder-documentation}
 
 App Builder biedt video&#39;s en documentatie voor ontwikkelaars, waaronder hulplijnen en documentatie over naslaggidsen, waarmee u uw eigen aangepaste toepassingen kunt ontwikkelen:
 
-* [Documentatie voor App Builder](https://www.adobe.io/project-firefly/docs/overview/)
+* [Documentatie voor App Builder](https://www.adobe.io/app-builder/docs/overview/)
 * [Video&#39;s over App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Een van de voorbeeldtoepassingen uitproberen {#appbuilder-codesamples}
 
 Klaar om te beginnen met ontwikkelen? We hebben veel voorbeeldtoepassingen waarmee u snel aan de slag kunt:
 
-* [Code-labels voor App Builder op de website voor Adobe-ontwikkelaars](https://www.adobe.io/project-firefly/docs/resources/)
+* [Code-labels voor App Builder op de website voor Adobe-ontwikkelaars](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Ondersteuning {#support}
 
