@@ -2,10 +2,10 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 2%
+source-wordcount: '2139'
+ht-degree: 1%
 
 ---
 
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrach
 
 De fulltext-index `/oak:index/lucene-2` kan zeer groot worden omdat standaard alle knooppunten in de AEM worden geïndexeerd. De volledige de tekstindex van Lucene is intern afgekeurd en zal niet meer in AEM als Cloud Service vanaf september 2021 worden opgesteld. Als zodanig wordt het niet meer in AEM als Cloud Service aan de productzijde gebruikt en het zou niet moeten worden vereist om klantencode in werking te stellen. Voor AEM als Cloud Service milieu&#39;s met gemeenschappelijke indexen van Lucene, werkt Adobe individueel met klanten voor een gecoördineerde benadering om deze index te compenseren en betere, geoptimaliseerde indexen te gebruiken. Als deze index voor douanequery&#39;s, als tijdelijke oplossing wordt vereist, zou een exemplaar van deze index, gebruikend een verschillende naam, bijvoorbeeld, `/oak:index/acme.lucene-1-custom-1`, zoals beschreven [hier](/help/operations/indexing.md) moeten worden gecreeerd.
 Deze optimalisatie is niet van toepassing op andere AEM omgevingen die op locatie worden gehost of worden beheerd door Adobe Managed Services, tenzij Adobe dit anders aanbeveelt.
+
+## Zoekopdrachten optimaliseren
+
+Met het gereedschap **Query Performance** kunt u zowel populaire als trage JCR-query&#39;s observeren. Bovendien kan het vragen analyseren en diverse informatie over tonen, met name als een index voor deze vraag of niet wordt gebruikt.
+
+In tegenstelling tot in AEM op gebouw, AEM aangezien een Cloud Service **de Prestaties van de Vraag** niet meer in UI toont. In plaats daarvan is deze nu beschikbaar via de Developer Console (in Cloud Manager) op het tabblad **Query&#39;s**.
