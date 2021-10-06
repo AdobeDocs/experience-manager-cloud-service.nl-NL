@@ -1,21 +1,21 @@
 ---
 title: Hotlink-beveiliging activeren in Dynamic Media
 description: Leer hoe u hotlinkbeveiliging activeert in Dynamic Media.
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
 # Hotlink-beveiliging activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript™ op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
+Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 
-[De ](https://helpx.adobe.com/support.html) Zorgvuldigheid van de Klant van Adobe vormt een verwijzingsfilter op CDN niveau. Zo zorgt u ervoor dat Dynamic Media-inhoud alleen wordt verzonden naar websites op uw lijst met toegestane websites voor het domein.
+[De ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) Steun van de Klant van Adobe kan een verwijzingsfilter op CDN niveau vormen. Zo zorgt u ervoor dat Dynamic Media-inhoud alleen wordt verzonden naar websites op uw lijst met toegestane websites voor het domein.
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -45,20 +45,20 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik de Adobe-gebundelde CDN (Content Delivery Network) als onderdeel van uw Dynamic Media Classic-licentie.
 * Gebruik een specifiek domein (dat wil zeggen `images.company.com` of `mycompany.scene7.com`), geen algemeen Dynamic Media-domein (dat wil zeggen `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
-   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich vervolgens aan bij uw account.
 
    Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en verzoek tot omschakeling op HTTP/2 tot stand te brengen; het wordt niet automatisch voor u gedaan.
+[Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verzoek tot omschakeling op HTTP/2 tot stand te brengen; het wordt niet automatisch voor u gedaan.
 
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * Primaire contactpersoon, e-mail en telefoonnummer.
    * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`.
 
-   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich vervolgens aan bij uw account.
 
    Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
 
@@ -66,19 +66,19 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
    * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
+   Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account.
 
    Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
-   1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-   1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Zorg van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
+   1. De Steun van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
+   1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld nadat de bewerking is voltooid en u kunt controleren of de overgang naar HTTP2 is gelukt.
 
 
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Verzoeken worden verwerkt in de volgorde waarin ze door Technische Ondersteuning worden ontvangen.
+Verzoeken worden verwerkt in de volgorde waarin ze door Customer Support worden ontvangen.
 
 >[!NOTE]
 >
