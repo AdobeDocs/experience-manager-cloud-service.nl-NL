@@ -1,8 +1,8 @@
 ---
-title: Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service.
-description: Release-aantekeningen voor Adobe Experience Manager (AEM) als Cloud Service.
+title: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
+description: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 72c1e85fca032f82a2755f9ca601625e1a3f7461
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 33%
@@ -13,18 +13,18 @@ ht-degree: 33%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2021,08,0 |
+| Versie | 2021,09,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
 ## Hoe te om voor een Versie voor te bereiden {#how-to-prepare}
 
-Met het ononderbroken versiemodel in [!DNL Adobe Experience Manager] als Cloud Service, wordt de toepassing automatisch bijgewerkt op een voortdurende basis. Er zijn twee soorten updates, eigenschapversies en kritieke updates:
+Als het model voor continue release in [!DNL Adobe Experience Manager] is as a Cloud Service, wordt de toepassing automatisch bijgewerkt en wordt de toepassing voortdurend bijgewerkt. Er zijn twee soorten updates, eigenschapversies en kritieke updates:
 
 * De versies van de eigenschap worden gedaan met een voorspelbare maandelijkse frequentie en zijn gericht op nieuwe mogelijkheden en productinnovaties.
-* Kritieke updates worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] als Cloud Service altijd bijgewerkt met om het even welke kritieke moeilijke situaties is.
+* Kritieke updates worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service altijd bijgewerkt met om het even welke kritieke moeilijke situaties is.
 
-Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] als Cloud Service ook de flexibiliteit om de komende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Hierdoor kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers ruim van tevoren op te leiden/voor te bereiden.
+Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] as a Cloud Service ook de flexibiliteit om de komende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Hierdoor kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers ruim van tevoren op te leiden/voor te bereiden.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Een release voorbereiden:
 | [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager as a Cloud Service, inclusief inleiding, terminologie, enzovoort. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
-| [Onboarding](/help/onboarding/home.md) | Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager als Cloud Service, met inbegrip van hoe te om toegang en belangrijke informatie van de gegevensbescherming te krijgen. |
+| [Onboarding](/help/onboarding/home.md) | Deze gids verstrekt een samenvatting van hoe te beginnen met as a Cloud Service Experience Manager, met inbegrip van hoe te om toegang en belangrijke informatie van de gegevensbescherming te krijgen. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
 | [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
@@ -60,7 +60,7 @@ Een release voorbereiden:
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 

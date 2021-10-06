@@ -4,13 +4,13 @@ description: Leer over de concepten en de mechanica van het modelleren van inhou
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
+source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
-
 
 # Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM {#architect-headless-content-fragment-models}
 
@@ -101,6 +101,10 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 >
 >Als een auteur een inhoudsfragment probeert te publiceren waarvoor het model nog niet is gepubliceerd, zal een selectielijst dit vermelden en het model zal met het fragment worden gepubliceerd.
 
+Zodra een model wordt gepubliceerd is het *locked* in een LEZEN-ONLY wijze op auteur. Dit is bedoeld om veranderingen te verhinderen die in fouten aan bestaande schema&#39;s en vragen GraphQL, vooral op het publicatiemilieu zouden resulteren. Dit wordt in de console aangegeven met **Locked**.
+
+Wanneer het model **Locked** (in LEZEN-slechts wijze) is, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Locked** modellen van of de console, of modelredacteur kunt beheren.
+
 ## Volgende functies {#whats-next}
 
 Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw eigen Modellen van het Fragment van de Inhoud te beginnen.
@@ -126,6 +130,8 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
       * [Een inhoudsfragmentmodel publiceren](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [Publicatie van een inhoudsfragmentmodel ongedaan maken](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+
+      * [Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Aan de slag - hulplijnen
 

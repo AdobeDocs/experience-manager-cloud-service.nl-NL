@@ -1,17 +1,16 @@
 ---
 title: Compatibiliteit
 description: Compatibiliteit
-exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 69%
 
 ---
 
-# Naleving in AEM als Cloud Service {#aem-compliance}
+# Naleving van AEM as a Cloud Service {#aem-compliance}
 
-Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in Experience Manager als Cloud Service.
+Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in as a Cloud Service Experience Manager.
 
 ## Belangrijke overzichtsartikelen {#key-articles}
 
@@ -36,7 +35,7 @@ Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken ove
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Leer over het Kader van de Integratie van de Handel op AEM als Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 

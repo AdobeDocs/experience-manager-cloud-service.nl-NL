@@ -4,14 +4,18 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
+source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 4%
+source-wordcount: '2772'
+ht-degree: 3%
 
 ---
 
 # Modellen van contentfragmenten {#content-fragment-models}
+
+>[!NOTE]
+>
+>De functie [Vergrendelde (gepubliceerde) contentfragmentmodellen](#locked-published-content-fragment-models) bevindt zich in bèta.
 
 Content Fragment Models in AEM definiëren de structuur van inhoud voor uw [inhoudsfragmenten,](/help/assets/content-fragments/content-fragments.md) dient als basis voor uw inhoud zonder kop.
 
@@ -140,8 +144,8 @@ AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. 
 LabelEnter 
 **Met** veldlabel wordt automatisch een  **eigenschapsnaam** gegenereerd. U kunt deze naam desgewenst handmatig bijwerken.
 
-* **De**
-bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vereiste bezit. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor meer informatie.
+* ****
+ValidationBasic-validatie is beschikbaar via mechanismen zoals de eigenschap  **** Required. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor meer informatie.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
@@ -153,8 +157,8 @@ bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vere
 
    Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
-* **UniqueContent (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die van het huidige model zijn gemaakt.**
-
+* ****
+UniqueContent (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die van het huidige model zijn gemaakt.
 
    Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
@@ -361,7 +365,7 @@ Om **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud te vorme
       U kunt meerdere modellen toestaan.
    ![Beleid inhoudsfragmentmodel](assets/cfm-model-policy-assets-folder.png)
 
-1. **Wijzigingen** opslaan.
+1. **** Wijzigingen opslaan.
 
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
 * Het **Beleid** voor **Allow Content Fragment Models**.
@@ -411,28 +415,82 @@ Publicatie van een inhoudsfragmentmodel ongedaan maken:
 1. Selecteer uw model, dat door **wordt gevolgd Unpublish** van de toolbar.
 De gepubliceerde status wordt aangegeven in de console.
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+Als u probeert de publicatie ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt u hiervan op de hoogte gesteld door een foutwaarschuwing:
 
-This feature provides governance for Content Fragment Models that have been published. 
+![Foutbericht van Content Fragment Model bij het ongedaan maken van de publicatie van een model dat in gebruik is](assets/cfm-model-unpublish-error.png)
 
-The challenge:
+Het bericht zal suggereren dat u [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) paneel controleert om verder te onderzoeken:
 
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+![Inhoudsfragmentmodel in verwijzingen](assets/cfm-model-references.png)
 
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+## Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten {#locked-published-content-fragment-models}
 
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+>[!NOTE]
+De functie Vergrendelde (Gepubliceerde) modellen van inhoudsfragmenten bevindt zich in bèta.
 
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+Deze functie biedt beheer voor modellen van inhoudsfragmenten die zijn gepubliceerd.
 
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+### De uitdaging {#the-challenge}
 
-The solution:
+* De Modellen van het Fragment van de inhoud bepalen het schema voor vragen GraphQL in AEM.
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+   * AEM GraphQL-schema&#39;s worden gemaakt zodra een Content Fragment Model is gemaakt en kunnen bestaan in zowel auteur- als publicatieomgevingen.
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+   * Schema&#39;s bij publiceren zijn het meest kritiek aangezien zij de basis voor levende levering van inhoud van het Fragment van de Inhoud in formaat JSON verstrekken.
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+* Er kunnen zich problemen voordoen wanneer modellen van inhoudsfragmenten worden gewijzigd of met andere woorden worden bewerkt. Dit betekent dat het schema verandert, wat beurtelings bestaande vragen GraphQL kan beïnvloeden.
+
+* Het toevoegen van nieuwe velden aan een inhoudsfragmentmodel mag (gewoonlijk) geen nadelige effecten hebben. Als u echter bestaande gegevensvelden wijzigt (bijvoorbeeld hun naam) of velddefinities verwijdert, worden bestaande GraphQL-query&#39;s verbroken wanneer deze velden worden aangevraagd.
+
+### De vereisten {#the-requirements}
+
+* Gebruikers bewust maken van de risico&#39;s bij het bewerken van modellen die al worden gebruikt voor de levering van live-inhoud (met andere woorden, modellen die zijn gepubliceerd).
+
+* Ook, om onbedoelde veranderingen te vermijden.
+
+Één van beiden van deze zou vragen kunnen breken als de gewijzigde modellen opnieuw worden gepubliceerd.
+
+### De oplossing {#the-solution}
+
+Om deze problemen aan te pakken, worden Content Fragment Models *locked* in de modus ALLEEN-LEZEN bij de auteur - zodra deze zijn gepubliceerd. Dit wordt aangegeven door **Locked**:
+
+![Kaart van vergrendeld inhoudsfragmentmodel](assets/cfm-model-locked.png)
+
+Wanneer het model **Locked** (in LEZEN-slechts wijze) is, kunt u de inhoud en de structuur van modellen zien maar u kunt niet hen uitgeven.
+
+U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
+
+* Console
+
+   Vanuit de console kunt u de modus ALLEEN-LEZEN beheren met de acties **Ontgrendelen** en **Vergrendelen** op de werkbalk:
+
+   ![Werkbalk van het vergrendelde inhoudsfragmentmodel](assets/cfm-model-locked.png)
+
+   * U kunt een model **ontgrendelen** om bewerkingen in te schakelen.
+
+      Als u **Unlock** selecteert, wordt een waarschuwing weergegeven en moet u de handeling **Unlock** bevestigen:
+      ![Bericht bij ontgrendelen van inhoudsfragmentmodel](assets/cfm-model-unlock-message.png)
+
+      Vervolgens kunt u het model openen en bewerken.
+
+   * U kunt het model ook **Vergrendelen** achteraf.
+   * Als u het model opnieuw publiceert, wordt het direct teruggezet in de modus **Locked** (ALLEEN-LEZEN).
+
+* Modeleditor
+
+   * Wanneer u een vergrendeld model opent, wordt u gewaarschuwd en krijgt u de volgende drie acties te zien: **Annuleren**, **Alleen-lezen weergeven**, **Bewerken**:
+
+      ![Bericht bij weergave van een vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-lock-message.png)
+
+   * Als u **Alleen-lezen weergeven** selecteert, kunt u de inhoud en structuur van het model zien:
+
+      ![Alleen-lezen weergeven - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-view-only.png)
+
+   * Als u **Edit** selecteert kunt u uw updates uitgeven en opslaan:
+
+      ![Bewerken - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-edit.png)
+
+      >[!NOTE]
+      Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
+
+   * **** Cancelwill return you to the console.

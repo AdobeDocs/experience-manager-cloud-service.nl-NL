@@ -1,8 +1,7 @@
 ---
 title: SLA-rapportage - Cloud Service
 description: SLA-rapportage - Cloud Service
-exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 6b0e5428df2119caefd3d09dd06484410795cb0b
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # SLA-rapportage {#sla-reporting}
 
-Volg de secties hieronder om over SLA te leren die in AEM als Cloud Service rapporteren.
+Volg de secties hieronder om over SLA die in AEM as a Cloud Service rapporteren te leren.
 
 ## Inleiding {#introduction}
 

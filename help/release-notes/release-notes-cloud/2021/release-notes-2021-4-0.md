@@ -1,8 +1,7 @@
 ---
-title: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-description: Release-aantekeningen voor 2021.4.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+title: Release-aantekeningen voor de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Release-aantekeningen voor de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 0%
@@ -10,9 +9,9 @@ ht-degree: 0%
 ---
 
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
+# Huidige releaseopmerkingen voor as a Cloud Service [!DNL Adobe Experience Manager] {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
+In de volgende sectie worden de algemene opmerkingen bij de release weergegeven voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Vanuit deze locatie kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
@@ -23,10 +22,10 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De datum van de Versie voor [!DNL Adobe Experience Manager] als Cloud Service 2021.4.0 is 6 Mei, 2021.
+De datum van de Versie voor [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 is 6 Mei, 2021.
 De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
-## AEM als Stichting van de Cloud Service{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service stichting{#aem-as-a-cloud-service-foundation}
 
 ### Nieuwe functies {#what-is-new-foundation}
 
@@ -114,7 +113,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * **De lokale ontwikkelomgeving gebruiken om Document of Record (DoR) te maken**
 
-   U kunt een XDP als Document van het malplaatje van het Verslag op de instanties van de Cloud Service en AEM Forms als Cloud Service SDK (Lokale ontwikkelomgeving) gebruiken. Eerder was de ondersteuning beperkt tot alleen Cloud Servicen.
+   U kunt een XDP als Document van het malplaatje van het Verslag op de instanties van de Cloud Service en as a Cloud Service SDK van AEM Forms (Lokale ontwikkelomgeving) gebruiken. Eerder was de ondersteuning beperkt tot alleen Cloud Servicen.
 
 ### Opgeloste problemen in [!DNL Forms] {#bug-fixes-forms}
 
@@ -122,10 +121,10 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 ### Overige updates {#misc-2021-04-0-forms}
 
-* De service genereert nu live miniaturen voor XDP-, dynamische PDF- en Schema-bestanden, zodat inhoud gemakkelijker kan worden herkend.
-* Voeg de mogelijkheid toe om een PDF-bestand te verplaatsen naar een map die in de gebruikersinterface van AEM Forms is geplaatst.
+* De service genereert nu live miniaturen voor XDP-, Dynamic PDF- en Schema-bestanden, zodat inhoud gemakkelijker herkend kan worden.
+* Voeg de mogelijkheid toe om een PDF-bestand naar een map te verplaatsen die in de gebruikersinterface van AEM Forms is geplaatst.
 
-## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
@@ -145,11 +144,11 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.4.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.4.0 beschreven.
 
 ### Releasedatum {#release-date-cm-april}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.4.0 is 8 april 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.4.0 is 8 april 2021.
 De volgende release is gepland voor 6 mei 2021.
 
 ### Wat is er nieuw? {#what-is-new-april}

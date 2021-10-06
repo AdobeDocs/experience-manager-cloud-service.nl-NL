@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 >
 >Zorg dat u uzelf vertrouwd bent met de standaard [AEM Project Archetype use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) en de [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), aangezien dit artikel voortbouwt op deze lessen en concepten.
 
-Dit artikel beschrijft de veranderingen die aan Adobe Experience Manager Maven projecten worden vereist om als Cloud Service compatibel te worden AEM door ervoor te zorgen dat zij de splitsing van veranderbare en onveranderlijke inhoud eerbiedigen, gebiedsdelen worden gevestigd om niet-strijdige, deterministische plaatsingen tot stand te brengen en dat zij in een plaatsingsable structuur worden verpakt.
+In dit artikel worden de wijzigingen beschreven die nodig zijn om Adobe Experience Manager Maven-projecten as a Cloud Service AEM te maken door ervoor te zorgen dat ze de splitsing van muteerbare en onveranderlijke inhoud respecteren, dat afhankelijkheden worden ingesteld om niet-conflicterende, deterministische implementaties te maken en dat ze in een inzetbare structuur worden verpakt.
 
 AEM toepassingsimplementaties moeten bestaan uit één AEM. Dit pakket dient op zijn beurt subpakketten te bevatten die alles omvatten wat door de toepassing wordt vereist om te functioneren, met inbegrip van code, configuratie en om het even welke ondersteunende basislijninhoud.
 
@@ -39,13 +39,13 @@ Alle overige gegevens in de opslagplaats, `/content`, `/conf`, `/var`, `/etc`, `
 
 ### eiken indexen {#oak-indexes}
 
-De indexen van de eiken (`/oak:index`) worden specifiek beheerd door de AEM als proces van de Cloud Service plaatsing. De reden hiervoor is dat de Cloud Manager moet wachten totdat een nieuwe index wordt geïmplementeerd en volledig opnieuw wordt geïndexeerd voordat naar de nieuwe codeafbeelding wordt overgeschakeld.
+Eak-indexen (`/oak:index`) worden specifiek beheerd door het AEM as a Cloud Service implementatieproces. De reden hiervoor is dat de Cloud Manager moet wachten totdat een nieuwe index wordt geïmplementeerd en volledig opnieuw wordt geïndexeerd voordat naar de nieuwe codeafbeelding wordt overgeschakeld.
 
 Daarom, hoewel de indexen van de eiken in runtime veranderbaar zijn, moeten zij als code worden opgesteld zodat zij kunnen worden geïnstalleerd alvorens om het even welke veranderlijke pakketten worden geïnstalleerd. Daarom maken `/oak:index` configuraties deel uit van het Pakket van de Code en geen deel van het Pakket van de Inhoud [zoals hieronder beschreven ](#recommended-package-structure).
 
 >[!TIP]
 >
->Zie het document [Zoeken naar en indexeren van inhoud](/help/operations/indexing.md) voor meer informatie over indexering in AEM als Cloud Service.
+>Zie het document [Zoeken naar en indexeren van inhoud](/help/operations/indexing.md) voor meer informatie over indexering in AEM as a Cloud Service.
 
 ## Aanbevolen pakketstructuur {#recommended-package-structure}
 
@@ -64,7 +64,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/apps/my-app/components`
    + JavaScript en CSS (via [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [](/help/implementing/developing/introduction/overlays.md) Bedekkingen van  `/libs`
+   + [](/help/implementing/developing/introduction/overlays.md) Overlay van  `/libs`
       + `/apps/cq`,  `/apps/dam/`enz.
    + Contextbewuste configuraties voor alternatieven
       + `/apps/settings`
@@ -75,9 +75,9 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + Het `ui.config`-pakket bevat alle [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md):
    + De omslag van de organisatie die loopwijze specifieke definities OSGi config bevat
       + `/apps/my-app/osgiconfig`
-   + Gemeenschappelijke OSGi configuratiemap die standaardOSGi configuraties bevat die op al doel AEM als doelstellingen van de Cloud Service plaatsing van toepassing zijn
+   + Gemeenschappelijke OSGi configuratiemap die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
       + `/apps/my-app/osgiconfig/config`
-   + De wijze-specifieke OSGi configuratiemappen van de looppas die standaardOSGi configuraties bevat die op alle AEM als doelstellingen van de Cloud Service plaatsing van toepassing zijn
+   + De wijze-specifieke OSGi configuratiemappen van de looppas die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi-configuratiescripts
       + [Repo ](#repo-init) Initis de geadviseerde manier om (mutable) inhoud op te stellen die logisch gezien deel van de AEM toepassing uitmaakt. De configuraties van OSGi van het Punt van de Repo zouden in de aangewezen `config.<runmode>` omslag moeten worden geplaatst zoals hierboven geschetst, en worden gebruikt om te bepalen:
@@ -269,7 +269,7 @@ Voeg eenvoudig de `<filter root="/apps/<my-app>-packages"/>` ingangen voor om he
 
 ## Pakketten van derden insluiten {#embedding-3rd-party-packages}
 
-Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.[
+Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten](https://repo1.maven.org/maven2/com/adobe/) of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.[
 
 Als de pakketten van derden zich in de **openbare Maven-artefactopslagplaats van Adobe** bevinden, is geen verdere configuratie nodig wanneer Adobe Cloud Manager de artefacten oplost.
 
