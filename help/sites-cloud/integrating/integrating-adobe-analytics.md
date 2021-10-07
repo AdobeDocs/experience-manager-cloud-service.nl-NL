@@ -4,9 +4,9 @@ description: 'Integreren met Adobe Analytics '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 Door Adobe Analytics en AEM as a Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
 * met de aanraakinterface een analytische configuratie maken in AEM as a Cloud Service.
-* Adobe Analytics toevoegen en configureren als een extensie in [Adobe starten](#analytics-launch). Zie [deze pagina](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html) voor meer informatie over het starten van Adobe.
+* Adobe Analytics toevoegen en configureren als een extensie in [Adobe starten](#analytics-launch). Zie [deze pagina](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) voor meer informatie over het starten van Adobe.
 
 Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM as a Cloud Service. In plaats daarvan wordt het nu gedaan door Adobe Launch, dat het feitelijk hulpmiddel is om een AEM plaats met Analytische mogelijkheden (bibliotheken JS) van instrumenten te voorzien. In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 

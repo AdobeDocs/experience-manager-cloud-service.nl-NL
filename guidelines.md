@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 5%
+source-wordcount: '753'
+ht-degree: 4%
 
 ---
 # Richtlijnen voor het bijdragen aan de documentatie van Adobe Experience Manager
@@ -37,9 +37,9 @@ De uitzonderingen op deze regel zijn op de versienota&#39;s van toepassing waar 
 
 Alle ideeën die u eventueel nodig hebt om AEM documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en pull-aanvragen zijn echter alleen bedoeld voor *bijdragen*. Ze zijn niet bedoeld om u te helpen uw vragen te beantwoorden over het gebruik van AEM, het implementeren van uw AEM-project of het oplossen van technische problemen.
 
-Eventuele vragen over het gebruik van AEM of technische fouten moeten via het normale supportproces worden gerapporteerd via het [Experience Cloud Enterprise Support-portaal](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of worden besproken in de [Experience Manager-community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Vragen over het gebruik van AEM of technische fouten die u mogelijk hebt gemaakt, moeten via het normale supportproces worden gerapporteerd via het [portal voor ondersteuning van Experience Managers](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) of worden besproken in de [community voor Experience Managers](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***AEM documentatiebijdragen zijn geen vervanging voor Adobe Customer*** Carees en dergelijke bijdragen die antwoorden op supportgerelateerde vragen zoeken, zullen worden afgewezen.
+***AEM documentatiebijdragen zijn geen vervanging voor*** Klantenondersteuning en dergelijke bijdragen die antwoorden op supportgerelateerde vragen zoeken, zullen worden afgewezen.
 
 ### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s.
 

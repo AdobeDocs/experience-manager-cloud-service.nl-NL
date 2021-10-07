@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 12%
 
 ---
@@ -269,7 +269,7 @@ Voeg eenvoudig de `<filter root="/apps/<my-app>-packages"/>` ingangen voor om he
 
 ## Pakketten van derden insluiten {#embedding-3rd-party-packages}
 
-Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.[
+Alle pakketten moeten beschikbaar zijn via de openbaar gemaakte gegevensopslagruimte voor artefacten](https://repo1.maven.org/maven2/com/adobe/) of via een toegankelijke openbare gegevensopslagruimte van derden waarnaar verwezen kan worden.[
 
 Als de pakketten van derden zich in de **openbare Maven-artefactopslagplaats van Adobe** bevinden, is geen verdere configuratie nodig wanneer Adobe Cloud Manager de artefacten oplost.
 

@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 12%
@@ -56,7 +56,7 @@ U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt a
 >
 >Brand Portal moet op dezelfde IMS org als de AEM Assets worden geactiveerd als een [!DNL Cloud Service]-instantie.
 >
->Als u een bestaande Brand Portal wolkenconfiguratie ([manueel gevormd gebruikend de Console van de Ontwikkelaar van de Adobe](#manual-configuration)) voor IMS (org1-bestaand) hebt en uw AEM Assets aangezien een [!DNL Cloud Service] instantie voor een andere IMS org (org2-nieuw) wordt gevormd, stelt het activeren van Brand Portal van de Manager van de Wolk Brand Portal IMS org aan `org2-new` terug. Hoewel de handmatig geconfigureerde cloudconfiguratie op `org1-existing` zichtbaar is in de AEM Assets-ontwerpinstantie, maar niet meer wordt gebruikt na het activeren van Brand Portal vanuit Cloud Manager.
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your AEM Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Hoewel de handmatig geconfigureerde cloudconfiguratie op `org1-existing` zichtbaar is in de AEM Assets-ontwerpinstantie, maar niet meer wordt gebruikt na het activeren van Brand Portal vanuit Cloud Manager.
 >
 >Als de bestaande Brand Portal-cloudconfiguratie en AEM Assets als een [!DNL Cloud Service]-instantie dezelfde IMS org (org1) gebruiken, hoeft u Brand Portal alleen te activeren via Cloud Manager.
 >
@@ -65,7 +65,7 @@ U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt a
 **Zie ook**:
 * [Gebruikers en rollen toevoegen in as a Cloud Service AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
+* [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Meld u aan bij uw Brand Portal-medewerker**:
@@ -178,7 +178,7 @@ Samen met de automatiseringswerkstroom om Brand Portal op AEM Assets als [!DNL C
 
 >[!NOTE]
 >
->Neem contact op met de Adobe-ondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
+>Neem contact op met de Klantenondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
 
 ## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
 
@@ -217,7 +217,7 @@ Voer de volgende stappen in de opgegeven reeks uit om AEM Assets met Brand Porta
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
-De configuratie IMS verifieert uw AEM Assets als instantie [!DNL Cloud Service] met de huurder van Brand Portal.
+The IMS configuration authenticates your AEM Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant.
 
 De IMS-configuratie omvat twee stappen:
 

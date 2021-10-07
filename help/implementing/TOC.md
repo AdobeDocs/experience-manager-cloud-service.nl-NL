@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1046'
 ht-degree: 26%
 
 ---
@@ -184,8 +184,8 @@ ht-degree: 26%
       + [SPA](developing/hybrid/page-component.md)
       + [Dynamisch model naar componenttoewijzing](developing/hybrid/model-to-component-mapping.md)
       + [Modelroutering](developing/hybrid/routing.md)
-      + [De RemotePage-component](developing/hybrid/remote-page.md)
-      + [Een externe SPA bewerken in AEM](developing/hybrid/editing-external-spa.md)
+      + [The RemotePage Component](developing/hybrid/remote-page.md)
+      + [Editing an External SPA within AEM](developing/hybrid/editing-external-spa.md)
       + [Samengestelde onderdelen in SPA](developing/hybrid/composite-components.md)
       + [Rendering serverzijde](developing/hybrid/ssr.md)
       + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
@@ -210,6 +210,7 @@ ht-degree: 26%
    + [Integreren met Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
    + [Het vormen Segmentatie met ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
+   + [AEM uitbreiden met Adobe Developer App Builder](developing/extending/app-builder.md)
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
    + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
    + [Contentfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)

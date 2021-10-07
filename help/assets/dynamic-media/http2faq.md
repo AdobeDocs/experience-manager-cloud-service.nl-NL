@@ -3,9 +3,9 @@ title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en verzoek tot omschakeling op HTTP/2 tot stand te brengen; het wordt niet automatisch voor u gedaan.
+[Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verzoek tot omschakeling op HTTP/2 tot stand te brengen; het wordt niet automatisch voor u gedaan.
 
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
@@ -70,15 +70,15 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
-   1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-   1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Zorg van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
+   1. De Steun van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
+   1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld nadat de bewerking is voltooid en u kunt controleren of de overgang naar HTTP2 is gelukt.
 
 
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Verzoeken worden verwerkt in de volgorde waarin ze door Technische Ondersteuning worden ontvangen.
+Verzoeken worden verwerkt in de volgorde waarin ze door Customer Support worden ontvangen.
 
 >[!NOTE]
 >

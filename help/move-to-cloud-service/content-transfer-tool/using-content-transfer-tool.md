@@ -2,10 +2,10 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 37%
+source-wordcount: '3104'
+ht-degree: 36%
 
 ---
 
@@ -17,7 +17,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Als u een lagere AEM gebruikt, moet u de opslagplaats voor inhoud upgraden naar AEM 6.5 om het gereedschap Inhoud overbrengen te kunnen gebruiken.
 
-* Java moet op het AEM milieu worden gevormd, zodat het `java` bevel door de gebruiker kan worden uitgevoerd die AEM begint.
+* Java must be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
 
 * Het wordt aanbevolen oudere versies van het gereedschap Inhoud overbrengen te verwijderen bij de installatie van versie 1.3.0, omdat het programma een belangrijke architecturale wijziging heeft ondergaan. Met 1.3.0 moet u ook nieuwe migratiesets maken en de extractie en inname van de nieuwe migratiesets opnieuw uitvoeren.
 
@@ -31,7 +31,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Het toegangstoken kan periodiek of na een specifieke tijdspanne verlopen of nadat het milieu van de Cloud Service is bevorderd. Als het toegangstoken is verlopen, zult u niet met de instantie van de Cloud Service kunnen verbinden en u moet het nieuwe toegangstoken terugwinnen. Het statuspictogram dat aan een bestaande migratieset is gekoppeld, wordt gewijzigd in een rode cloud en er wordt een bericht weergegeven wanneer u de muisaanwijzer op de desbetreffende cloud plaatst.
 
-* Met het CTT-hulpprogramma (Content Transfer Tool) wordt geen inhoudanalyse uitgevoerd voordat inhoud van de broninstantie naar de doelinstantie wordt overgebracht. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie.
+* Met het CTT-hulpprogramma (Content Transfer Tool) wordt geen inhoudanalyse uitgevoerd voordat inhoud van de broninstantie naar de doelinstantie wordt overgebracht. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. Alle inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie. Raadpleeg [Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) voor meer informatie.
 
 * De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Met het proces *Extractie* wordt de gehele `/home` naar de migratieset gekopieerd en met het proces *Ingestie* worden alle gebruikers en groepen gekopieerd waarnaar in de gemigreerde inhoud-ACL&#39;s wordt verwezen. Als u de bestaande gebruikers en groepen automatisch wilt toewijzen aan hun IMS-id&#39;s, raadpleegt u [Hulpprogramma voor het toewijzen van gebruikers gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -45,7 +45,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * De *Ingestiefase* voor de auteur schalen de volledige auteurplaatsing. Dit betekent dat de auteur-AEM niet beschikbaar is tijdens het volledige opnameproces. Zorg er ook voor dat er geen Cloud Manager-pijpleidingen worden uitgevoerd terwijl u de *Ingestiefase* uitvoert.
 
-* Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het bron AEM systeem, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen blokken niet kunnen worden verwijderd (opschonen). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
+* Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het bron AEM systeem, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen blokken niet kunnen worden verwijderd (opschonen). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
 * Als u douaneindexen gebruikt, moet u ervoor zorgen om de douaneindexen met `tika` knoop te vormen alvorens het Hulpmiddel van de Overdracht van de Inhoud in werking te stellen. Raadpleeg [De nieuwe indexdefinitie voorbereiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) voor meer informatie.
 
@@ -69,7 +69,7 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
->title="Gereedschap Inhoud overbrengen uitvoeren"
+>title="Running Content Transfer Tool"
 >abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM as a Cloud Service (Auteur/Publiceren)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
@@ -79,7 +79,7 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
-1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
+1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
@@ -119,7 +119,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
-      1. **Include Version**: Selecteer de versie die u wilt opnemen.
+      1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 
       1. **Toewijzing van IMS-gebruikers en -groepen** opnemen: Selecteer de optie om toewijzingen van gebruikers en groepen IMS op te nemen.
 Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
@@ -140,7 +140,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle bestaande migratiesets op dit scherm worden weergegeven op de pagina *Overzicht* met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
+   All the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information. Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
    * Een *groene cloud* geeft aan dat u het extractieproces kunt voltooien.
@@ -187,7 +187,7 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 >[!NOTE]
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
->Bovendien is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
+>Bovendien is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen. Voer de onderstaande stappen uit:
 
@@ -209,9 +209,9 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 >[!NOTE]
->Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Raadpleeg [Ingesting met AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) voor meer informatie.
+>If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Raadpleeg [Ingesting met AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) voor meer informatie.
 
-1. Selecteer een migratieset van *Overzicht* pagina en klik **Ingest** om opname te beginnen. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Klik op **Ingest** om de innamefase te starten. U kunt content gelijktijdig opnemen in de modules Auteur en Publiceren.
+1. Selecteer een migratieset van *Overzicht* pagina en klik **Ingest** om opname te beginnen. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Inhoud kan tegelijkertijd worden ingevoerd in een instantie Auteur of Publiceren. Selecteer de instantie waaraan u inhoud wilt toevoegen. Klik op **Ingest** om de innamefase te starten.
 
    >[!IMPORTANT]
    >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
@@ -219,11 +219,11 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    >[!IMPORTANT]
    >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om meer te leren.
 
-1. Zodra de opname volledig is, werkt de status in **PUBLISH INGESTION** gebied aan **FINISHED** bij.
+1. Zodra de opname volledig is, werkt de status aan **FINISHED** bij.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemet
 
 1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit. Bovendien, klik op **de Zorg van de Klant** om een kaartje, zoals aangetoond in het voorafgaande cijfer te registreren.
@@ -288,7 +288,7 @@ Voer de onderstaande stappen uit:
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
 
-## Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren {#running-ctt-on-publish}
+## Running the Content Transfer Tool on a Publish instance {#running-ctt-on-publish}
 
 Het wordt aanbevolen om tijdens het verplaatsen van inhoud naar een instantie Publish, CTT te installeren op de instantie source Publish om inhoud naar de instantie target Publish te verplaatsen. Volg de onderstaande aanbevolen aanpak:
 
@@ -298,7 +298,7 @@ Het wordt aanbevolen om tijdens het verplaatsen van inhoud naar een instantie Pu
 
 * Gebruik bij het maken van de migratieset de URL van de auteur-AEMaaCS-omgeving.
 
-* Tijdens het publiceren wordt de publicatielaag NIET verkleind (in tegenstelling tot de auteur). Als voorzorgsmaatregel, gelieve te vermijden om het even welke gebruiker in werking gestelde schrijfverrichtingen zoals:
+* During ingestion to publish, the publish tier will NOT be scaled down (unlike the author). As a precaution, please avoid any user initiated write operations such as:
 
    * Distributie van inhoud van AEMaaCS-auteur naar Publiceren in die omgeving
    * Gebruikerssynchronisatie tussen publicatie-instanties

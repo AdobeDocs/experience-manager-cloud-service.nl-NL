@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e294ecdefca89bc3fd16ee2166a1a8418d0237ee
+source-git-commit: 51ebeda46fbacb2479a5bd007cb741486caa218f
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,15 @@ Media Library bestrijkt in grote lijnen de volgende gebruiksgevallen:
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
+* Basic metadata properties
+* Tag management
+* Version control
 * Static renditions
-* Projects, tasks authoring
+* Projects, tasks, workflow authoring
 * Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -73,21 +79,13 @@ Als u de Media Library-functionaliteit wilt gebruiken, kunt u de standaardgebrui
 * Annoteer elementen.
 * Voeg elementen toe aan [!DNL Sites] pagina&#39;s via de Inhoudszoeker.
 * Gebruik [!DNL Content Fragments].
-* Gebruik HTTP REST- en GraphQL API&#39;s voor [!DNL Content Fragments] en media-elementen waarnaar wordt verwezen, onder Sites-licentie.
-* integratie van de Marketing Cloud.
-* Gebruikersinterface voor middelenbeheer aanpassen en uitbreiden.
-* Heb toegang tot de Bouwer van de Vraag (API) om de onderzoeksfunctionaliteit uit te breiden.
-* Statische tags maken.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Veel geavanceerde DAM-gebruiksgevallen worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met Customer Support als je vragen hebt.
-
-Let op: u kunt geen slimme tags, [!DNL Asset]-koppeling, [!DNL Asset]-kiezer, bulksgewijs labelen, workflows van elementen wijzigen zonder [!DNL Assets]-licentie.
+>Veel geavanceerde DAM-gebruiksgevallen worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met de klantenservice van Adobe als u vragen hebt.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
