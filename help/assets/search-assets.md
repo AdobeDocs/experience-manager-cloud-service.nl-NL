@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4848'
+source-wordcount: '4849'
 ht-degree: 5%
 
 ---
@@ -157,7 +157,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Creator | maker:John |
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| Gereedschap Maker | creatortool:&quot;Adobe Photoshop&quot; |
+| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
 | Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
 | Medewerker | contribuant:John |
 | Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |

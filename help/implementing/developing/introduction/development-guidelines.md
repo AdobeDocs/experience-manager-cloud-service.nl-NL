@@ -2,10 +2,10 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 2%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -169,6 +169,68 @@ Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en produc
 
 Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
 
+## IP-adres van speciale egress {#dedicated-egress-ip-address}
+
+Op verzoek, zal AEM as a Cloud Service een statisch, specifiek, IP adres voor HTTP (haven 80) en HTTPS (haven 443) uitgaand verkeer verstrekken dat in code Java wordt geprogrammeerd.
+
+### Voordelen {#benefits}
+
+Dit specifieke IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM as a Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van AEM Cloud Service van de klant zal worden toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+
+Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Cloud Service stromen door een reeks IPs komt die met andere klanten wordt gedeeld.
+
+### Configuratie {#configuration}
+
+Om een specifiek IP adres toe te laten, leg een verzoek aan de Steun van de Klant voor, die de IP adresinformatie zal verstrekken. Het verzoek moet elke omgeving specificeren en er moeten aanvullende verzoeken worden gedaan als nieuwe omgevingen de functie na het eerste verzoek nodig hebben. Sandbox-programmaomgevingen worden niet ondersteund.
+
+### Functiegebruik {#feature-usage}
+
+De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
+
+Hieronder ziet u een codevoorbeeld:
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+Sommige bibliotheken vereisen expliciete configuratie om standaard het systeemeigenschappen van Java voor volmachtsconfiguraties te gebruiken.
+
+Een voorbeeld dat Apache HttpClient gebruikt, die expliciete vraag aan vereist
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) of gebruik
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
+Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in hun organisatie van de Adobe en voor alle milieu&#39;s in elk van hun programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
+
+Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1, evenals HTTP/2 wanneer gecodeerd.
+
+### Foutopsporingsoverwegingen {#debugging-considerations}
+
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/ip](https://ifconfig.me/ip) te roepen, die het roepende IP adres zal terugkeren.
+
 ## E-mail verzenden {#sending-email}
 
 AEM as a Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configureren en verzenden.
@@ -177,19 +239,20 @@ AEM as a Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderst
 >
 >De dienst van de Post kan met steun worden gevormd OAuth2. Voor meer informatie, zie [Steun OAuth2 voor de Dienst van de Post](/help/security/oauth2-support-for-mail-service.md).
 
-### Uitgaande e-mail inschakelen {#enabling-outbound-email}
+### Toegang aanvragen {#requesting-access}
 
-Standaard zijn de poorten die worden gebruikt voor verzending uitgeschakeld. Om het te activeren, vorm [geavanceerde voorzien van een netwerk](/help/security/configuring-advanced-networking.md), ervoor zorgend om voor elk nodig milieu de haven van `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt door:sturen regels te plaatsen zodat het verkeer door haven 465 (indien gesteund door de postserver) of haven 587 (als de postserver het vereist en ook TLS op die haven) afdwingt.
+Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, dient u een ondersteuningsticket in met:
 
-Het wordt aanbevolen geavanceerde netwerken te configureren met een `kind`-parameter ingesteld op `flexiblePortEgress`, omdat Adobe de prestaties van flexibel poortegress-verkeer kan optimaliseren. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
-
-U moet e-mail via een e-mailserver verzenden in plaats van rechtstreeks naar e-mailclients. Anders kunnen de e-mailberichten geblokkeerd zijn.
+1. De volledig gekwalificeerde domeinnaam voor de mailserver (bijvoorbeeld `smtp.sendgrid.net`)
+1. De poort die moet worden gebruikt. Het zou haven 465 moeten zijn als gesteund door de postserver, anders haven 587. Merk op dat haven 587 slechts kan worden gebruikt als de postserver TLS op die haven vereist en afdwingt
+1. De programma-id en de omgeving-id voor de omgevingen die ze willen verlaten
+1. Of SMTP-toegang nodig is bij auteur, publiceren of beide.
 
 ### E-mails verzenden {#sending-emails}
 
 De [Day CQ Mail Service OSGI-service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
 
-AEM as a Cloud Service vereist dat de post door haven 465 wordt verzonden. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
+AEM CS vereist dat de post wordt verzonden door haven 465. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
 
 >[!NOTE]
 >
@@ -212,8 +275,6 @@ Als poort 587 is aangevraagd (alleen toegestaan als de mailserver poort 465 niet
 * `smtp.ssl` instellen op `false`
 
 De eigenschap `smtp.starttls` wordt automatisch door AEM as a Cloud Service bij uitvoering op een geschikte waarde ingesteld. Als `smtp.tls` is ingesteld op true, wordt `smtp.startls` dus genegeerd. Wanneer `smtp.ssl` op false is ingesteld, wordt `smtp.starttls` op true ingesteld. Dit is ongeacht de `smtp.starttls` waarden die in uw configuratie worden geplaatst OSGI.
-
-De dienst van de Post kan naar keuze met steun worden gevormd OAuth2. Voor meer informatie, zie [Steun OAuth2 voor de Dienst van de Post](/help/security/oauth2-support-for-mail-service.md).
 
 ## [!DNL Assets] ontwikkelingsrichtsnoeren en gebruiksgevallen {#use-cases-assets}
 

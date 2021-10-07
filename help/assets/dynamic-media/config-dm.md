@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Service configureert.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3755'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In as a Cloud Service Experience Manager, selecteer het as a Cloud Service embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
 1. Selecteer links van de console het pictogram Extra en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Selecteer **[!UICONTROL global]** in het linkerdeelvenster van de Dynamic Media Configuration Browser page (selecteer niet het mappictogram links van **[!UICONTROL global]**). Selecteer vervolgens **[!UICONTROL Create]**.
-1. Voer op de pagina **[!UICONTROL Create Dynamic Media Configuration]** een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze informatie wordt u door Adobe in de levering-e-mail verstrekt. Neem contact op met de klantenondersteuning van Adobe als u dit e-mailbericht niet hebt ontvangen.
+1. Voer op de pagina **[!UICONTROL Create Dynamic Media Configuration]** een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze informatie wordt u door Adobe in de levering-e-mail verstrekt. Neem contact op met de klantenservice van Adobe als u dit e-mailbericht niet hebt ontvangen.
 1. Selecteer **[!UICONTROL Connect to Dynamic Media]**.
 1. Voer in het dialoogvenster **[!UICONTROL Change Password]** in het veld **[!UICONTROL New Password]** een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
 
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, gebruikt de as a Cloud Service Experience Manager standaard op token gebaseerde validatie. Nochtans, kunt u &quot;lijst van gewenste personen&quot;meer IPs ook om gebruikers toegang tot veilig voorproefinhoud te verlenen. Ga als volgt te werk om deze handeling in te stellen: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met de Klantenondersteuning van Adobe als u deze informatie niet hebt.
+   * Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Als u deze informatie niet hebt, neemt u contact op met de klantenservice van Adobe.
    * Ga op de navigatiebalk in de rechterbovenhoek van de pagina naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
    * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst op de pagina Publiceren afbeeldingsserver.**[!UICONTROL Publish Context]**
    * Voor de Filter van het Adres van de Cliënt, uitgezochte **[!UICONTROL Add]**.
@@ -147,7 +147,7 @@ Zie ook [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md).
 
    ![Dynamic Media instellen mislukt](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. Controleer op de pagina **[!UICONTROL DMSETUP]** de configuratiedetails die de fout beschrijven. Let met name op foutberichten of foutcodes. Neem contact op met de Adobe Klantenondersteuning voor deze informatie.
+1. Controleer op de pagina **[!UICONTROL DMSETUP]** de configuratiedetails die de fout beschrijven. Let met name op foutberichten of foutcodes. Neem contact op met de klantenservice van Adobe voor deze informatie.
 
    ![Dynamic Media-instellingspagina](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -391,8 +391,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 **De Granite Transient Workflow-wachtrij bijwerken:**
 
-1. Navigeer naar **Adobe Experience Manager Web Console Configuration** op `http://<host>:<port>/system/console/configMgr`
-1. Zoeken naar **Wachtrij: Granite Transient Workflow Queue**.
+1. Navigeer naar [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek naar **Wachtrij: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >

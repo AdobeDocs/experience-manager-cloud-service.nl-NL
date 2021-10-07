@@ -2,7 +2,7 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 42%
@@ -91,7 +91,6 @@ U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opni
 Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
-
 
 
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}

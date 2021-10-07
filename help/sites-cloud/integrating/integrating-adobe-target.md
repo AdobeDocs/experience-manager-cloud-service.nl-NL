@@ -4,9 +4,9 @@ description: 'Integreren met Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service is het volgende vereist:
 
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) tot stand te brengen.
-* Adobe Target toevoegen en configureren als een extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* Adobe Target toevoegen en configureren als een extensie in [Adobe starten](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
 
 Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor de uitvoer van de Fragmenten van de Ervaring naar Doel, hebt u slechts de Configuratie van Adobe Target en IMS nodig.
 

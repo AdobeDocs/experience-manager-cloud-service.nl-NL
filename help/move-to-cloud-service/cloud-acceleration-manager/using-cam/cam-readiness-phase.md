@@ -2,10 +2,10 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3fea3da263216c8250fd1ba3e3b1edd73b5c8940
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 4%
+source-wordcount: '682'
+ht-degree: 5%
 
 ---
 
@@ -66,19 +66,6 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
    >[!NOTE]
    >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
-
-1. Klik op **pictogram Afdrukvoorbeeld**, zoals hieronder getoond.
-
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. Als u op **Afdrukvoorbeeld** klikt, wordt een nieuw tabblad geopend met het rapport dat in een afdrukbare voorvertoning wordt weergegeven. Klik op **Afdrukken** om het rapport af te drukken naar een PDF-indeling voor eenvoudige deelbaarheid.
-
-   >[!IMPORTANT]
-   >* De optie **Opslaan als PDF** wordt aanbevolen en ondersteund voor de bovenstaande functionaliteit.
-   >* Als de knop Afdrukken van de browser wordt gebruikt, wordt slechts één pagina afgedrukt.
-
-
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Rapport Analyse van beste praktijken {#analysis-report}
 
