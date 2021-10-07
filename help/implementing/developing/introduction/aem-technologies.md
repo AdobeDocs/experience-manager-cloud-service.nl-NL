@@ -2,14 +2,14 @@
 title: Technische stichtingen AEM
 description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# Technische grondslagen AEM {#aem-technical-foundations}
+# Technische stichtingen AEM {#aem-technical-foundations}
 
 AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document geeft een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als technische bijlage voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nog geen ervaring hebt met AEM ontwikkeling, raadpleegt u de [Getting Started Developing AEM Sites - WKND-zelfstudie](develop-wknd-tutorial.md) als eerste stap.
 
@@ -34,9 +34,9 @@ De onderliggende inhoudopslagplaats en de bedrijfslogische lagen worden gebouwd 
 
 ## Java Content Repository {#java-content-repository}
 
-De JCR-standaard (Java Content Repository), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatievrije manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
+De JCR-standaard (Java Content Repository), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatievrije manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
 
-Het [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-pakket `javax.jcr.*` wordt gebruikt voor directe toegang tot en manipulatie van de inhoud van de opslagplaats.
+Het [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-pakket `javax.jcr.*` wordt gebruikt voor directe toegang tot en manipulatie van de inhoud van de opslagplaats.
 
 AEM is gebaseerd op een JCR.
 
@@ -46,11 +46,11 @@ AEM is gebaseerd op een JCR.
 
 Jackrabbit Oak (ook wel &quot;eikenhout&quot; genoemd) is de toepassing van de JCR-norm waarop AEM wordt gebouwd.
 
-## Verwerking verzoek tot verzending {#sling-request-processing}
+## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
 AEM wordt gebouwd gebruikend [Sling](https://sling.apache.org/site/index.html), een de toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
-### Inleiding tot Sling {#introduction-to-sling}
+### Inleiding tot verkoop {#introduction-to-sling}
 
 Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste verwerkingsoverweging. De belangrijkste overweging is in plaats daarvan of de URL wordt omgezet in een inhoudsobject waarvoor vervolgens een script kan worden gevonden om de rendering uit te voeren. Dit biedt uitstekende ondersteuning voor auteurs van webinhoud om pagina&#39;s samen te stellen die eenvoudig aan hun vereisten kunnen worden aangepast.
 
@@ -66,7 +66,7 @@ In het volgende diagram worden alle verborgen, maar krachtige, aanvraagparameter
 
 ![De SlingPostServlet gebruiken](assets/sling-cheatsheet-02.png)
 
-### Verdelen is inhoud centraal {#sling-is-content-centric}
+### Verdelen is Content Centric {#sling-is-content-centric}
 
 Sling is *inhoudcentric*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
@@ -129,7 +129,7 @@ Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repo
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
 
-### Script {#locating-the-script} zoeken
+### Script zoeken {#locating-the-script}
 
 Wanneer de aangewezen bron (inhoudsknoop) wordt gevestigd, wordt **sling middeltype** gehaald. Dit is een pad dat zoekt naar het script dat moet worden gebruikt voor het renderen van de inhoud.
 
@@ -170,7 +170,7 @@ Als u het vorige voorbeeld gebruikt en `sling:resourceType` `hr/jobs` is, wordt:
    * Het script voor `../content/corporate/jobs/developer.html` genereert bijvoorbeeld een zoekopdracht in `/apps/content/corporate/jobs/`.
    * Het primaire knooppunttype zal worden gebruikt.
 * Als er helemaal geen script wordt gevonden, wordt het standaardscript gebruikt.
-   * De standaardvertoning wordt momenteel ondersteund als normale tekst (`.txt`), HTML (`.html`) en JSON (`.json`), die allemaal de eigenschappen van het knooppunt zullen vermelden (geschikt opgemaakt). De standaardvertoning voor de extensie `.res`, of aanvragen zonder een aanvraagextensie, is om de bron te spool (waar mogelijk).
+   * De standaardvertoning wordt momenteel gesteund als gewone teksten (`.txt`), HTML (`.html`) en JSON (`.json`), die allen de eigenschappen van de knoop (behoorlijk geformatteerd) zullen vermelden. De standaardvertoning voor de extensie `.res`, of aanvragen zonder een aanvraagextensie, is om de bron te spool (waar mogelijk).
 * Voor http-foutafhandeling (codes 403 of 404) wordt met Sling gezocht naar een script op:
    * De locatie `/apps/sling/servlet/errorhandler` voor aangepaste scripts
    * Of de locatie van het standaardscript `/libs/sling/servlet/errorhandler/404.jsp`
@@ -228,7 +228,7 @@ De typehiërarchie van:
 
 Dit komt doordat `/y` de eigenschap `sling:resourceSuperType` heeft, terwijl `/x` dit niet doet en daarom wordt het supertype ervan ontleend aan het type resource.
 
-#### Sling-scripts kunnen niet direct {#sling-scripts-cannot-be-called-directly} worden aangeroepen
+#### Sling-scripts kunnen niet rechtstreeks worden aangeroepen {#sling-scripts-cannot-be-called-directly}
 
 Binnen Verschuiving, kunnen de manuscripten niet direct worden geroepen aangezien dit het strikte concept van een REST server zou breken; u zou middelen en vertegenwoordiging mengen.
 
@@ -239,11 +239,11 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
    * Het `POST.jsp`-script op uw `sling:resourceType`-locatie
 * Uw codearchitectuur is niet meer zo schoon en zo duidelijk gestructureerd als het zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
 
-### Verschuivende API {#sling-api}
+### Verkopen-API {#sling-api}
 
 Hierbij worden het pakket Sling API, `org.apache.sling.*` en tagbibliotheken gebruikt.
 
-### Verwijzen naar bestaande elementen met sling:include {#referencing-existing-elements-using-sling-include}
+### Verwijzen naar bestaande elementen met gebruik van sling:include {#referencing-existing-elements-using-sling-include}
 
 Een laatste overweging is de noodzaak om naar bestaande elementen in de scripts te verwijzen.
 
@@ -280,7 +280,7 @@ Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw 
 * Zie de huidige status
 * Meer gedetailleerde informatie (bijvoorbeeld symbolische naam, versie, locatie, enz.) over de specifieke bundels opvragen
 
-Zie [Het vormen OSGi voor AEM als Cloud Service](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
+Zie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 

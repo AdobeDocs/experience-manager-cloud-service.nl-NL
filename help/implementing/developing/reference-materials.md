@@ -1,9 +1,10 @@
 ---
 title: API-referentiematerialen
 description: AEM heeft uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 3%
 
 ---
@@ -34,7 +35,7 @@ AEM vertrouwt op een aantal extra open-source APIs.
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Webframework dat gebruikmaakt van een JCR (Java Content Repository) voor het opslaan en beheren van inhoud |
 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementeer een schaalbare en krachtige hiërarchische Java Content Repository (JCR) voor gebruik als basis voor moderne websites van wereldklasse |
-| [Java Content Repository](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Specificatie voor JCR-versie 2.0 |
+| [Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Specificatie voor JCR-versie 2.0 |
 | [Apache Felix](https://felix.apache.org) | Implementatie van het OSGi (Open Services Gateway Initiative)-framework en -serviceplatform |
 
 ## API-voorkeursrichtlijnen {#guidelines}
@@ -43,7 +44,7 @@ AEM is gebaseerd op de volgende vier primaire Java API-sets in aflopende volgord
 
 | Prioriteit | API | Beschrijving |
 |---|---|---|
-| 1 | [Adobe Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST en op bron-gebaseerde abstracties zoals middelen, waardekaarten, en HTTP- verzoeken. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstracties van gegevens en inhoud, zoals knooppunten, eigenschappen en sessies. |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi de abstracties van de toepassingscontainer zoals de diensten en (OSGi) componenten. |

@@ -2,14 +2,14 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
 
-# Predicate Reference {#query-builder-predicate-reference} van de Bouwer van de vraag
+# Voorlopige naslaggids voor Query Builder {#query-builder-predicate-reference}
 
 ## Algemeen {#general}
 
@@ -167,7 +167,7 @@ Het ondersteunt geen facetextractie.
 
 ### hasPermission {#haspermission}
 
-In deze voorspelling wordt het resultaat beperkt tot items waarvoor de huidige sessie de opgegeven [JCR-bevoegdheden heeft.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+In deze voorspelling wordt het resultaat beperkt tot items waarvoor de huidige sessie de opgegeven [JCR-bevoegdheden heeft.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
