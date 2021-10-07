@@ -1,9 +1,9 @@
 ---
 title: Belangrijke overwegingen voor het gereedschap Toewijzing van gebruikers
 description: Belangrijke overwegingen voor het gereedschap Toewijzing van gebruikers
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ De volgende specifieke gevallen worden geregistreerd:
 * Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron-AEM en Gebruikerstoewijzing is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt de bron-AEM niet overgebracht, aangezien slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
 
 * Als twee gebruikers op de bron AEM instantie hetzelfde e-mailadres hebben en Gebruikerstoewijzing is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt een van de bron AEM gebruikers niet overgebracht, omdat slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
+
+### Volgende functies {#whats-next}
+
+Zodra u de belangrijke overwegingen en de uitzonderlijke gevallen hebt geleerd, bent u nu klaar om het hulpmiddel te gebruiken. Zie [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) voor meer details.
