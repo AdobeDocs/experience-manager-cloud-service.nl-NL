@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -36,19 +36,22 @@ Bekijk de video [September 2021 van de Versie Overzicht](https://video.tv.adobe.
 
 ### Nieuwe functie in het prerelease-kanaal [!DNL Sites] {#sites-prerelease-features}
 
-* Content Fragment models are now automatically set in read-only state once they are published, to avoid unintentially breaking live API queries after re-publishing an edited model. Gebruikers krijgen een waarschuwing te zien wanneer ze proberen een gepubliceerd model te bewerken. Bewerken is mogelijk bij het accepteren van de waarschuwing.
+* Inhoudsfragmentmodellen worden nu automatisch ingesteld op de status Alleen-lezen als ze eenmaal zijn gepubliceerd. Zo voorkomt u dat live API-query&#39;s per ongeluk worden afgebroken als een bewerkt model opnieuw wordt gepubliceerd. Gebruikers krijgen een waarschuwing te zien wanneer ze proberen een gepubliceerd model te bewerken. Bewerken is mogelijk bij het accepteren van de waarschuwing.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
 * Gebruikers kunnen de elementen die in de zoekresultaten worden weergegeven nu sorteren in de kolom- en kaartweergave. Het sorteren werkt op de kolommen Naam, Gemaakt, Gewijzigd of Geen.
 
-   ![Sort the search results in [!DNL Assets] in Column and Card views](/help/assets/assets/sort-searched-assets.png)
+   ![De zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave](/help/assets/assets/sort-searched-assets.png)
    *Afbeelding: U kunt de zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave.*
 
-* Voor het programmatisch aanroepen van verwerking met behulp van asset microservices wordt een nieuwe API geïntroduceerd. Ontwikkelaars kunnen nu een bestaand verwerkingsprofiel op mapniveau toepassen op een of meer specifieke elementen in een map. Het verwerkingsprofiel wordt toegepast op basis van aangepaste updates van eigenschappen van metagegevens. Zie `AssetProcessor` in [[!DNL Experience Manager] API referentie](https://www.adobe.io/experience-manager/reference-materials/). Zoals eerder is het mogelijk om de elementmicroservices van de gebruikersinterface [te gebruiken.](/help/assets/asset-microservices-configure-and-use.md)
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
@@ -147,20 +150,20 @@ Lees de [documentatie](/help/security/configuring-advanced-networking.md) voor m
 
 **Indexoptimalisatie**
 
-To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer included out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. Om deze full-text index over AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van Lucene full-text index. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en neem rechtstreeks contact op met onze ondersteuning als u vragen hebt.
+Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, is full-text index lucene-2 niet meer buiten-de-doos in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] van deze versie inbegrepen. Om deze full-text index over AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van Lucene full-text index. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en neem rechtstreeks contact op met onze ondersteuning als u vragen hebt.
 
 ## Cloud Manager {#cloud-manager}
 
 In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.9.0 en 2021.8.0 beschreven.
 
-## Release Date {#release-date-cm-sept}
+## Releasedatum {#release-date-cm-sept}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
-The next release is planned for October 07, 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.9.0 is 9 september 2021.
+De volgende release is gepland voor 7 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-sept}
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+* De versie van het AEM Projectarchetype dat door de Manager van de Wolk wordt gebruikt is bijgewerkt aan versie 30.
 
 * De programmakaarten op de landingspagina van Cloud Manager en de bijbehorende ervaring zijn vernieuwd.
 
@@ -184,7 +187,7 @@ De releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-* Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Verwijs naar Stap 6 en 7 in [Gebruikend de Kaart van de Analyse van Beste praktijken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## De tool Content Transfer {#content-transfer-tool}
 
