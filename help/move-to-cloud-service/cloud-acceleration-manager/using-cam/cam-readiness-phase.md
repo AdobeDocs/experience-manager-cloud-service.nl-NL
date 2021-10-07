@@ -101,7 +101,7 @@ De **Report Properties**-kaart biedt informatie over rapporteigenschappen zoals 
 
 #### Overzicht van rapporten {#report-overview}
 
-Deze **kaart van het Overzicht van het Rapport** verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich aan AEM als Cloud Service te bewegen, zoals aangetoond in het hieronder cijfer van toepassing zijn.
+Deze **kaart van het Overzicht van het Rapport** verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich aan AEM as a Cloud Service te bewegen, zoals aangetoond in hieronder figuur van toepassing zijn.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ De optie Beoordeling van Beste praktijken verstrekt een beoordeling van uw huidi
 
 #### Complexiteit-evaluatie van migratie {#migration-complexity-assessment}
 
-De optie voor de beoordeling van de complexiteit van migratie biedt een beoordeling van de complexiteit om de bestaande AEM te migreren naar AEM als Cloud Service.
+De optie voor de beoordeling van de complexiteit van migratie biedt een beoordeling van de complexiteit om de bestaande AEM te migreren naar AEM as a Cloud Service.
 
 U kunt de volgende informatie bekijken vanaf dit tabblad:
 

@@ -62,7 +62,7 @@ ht-degree: 26%
       + [Toegang tot opslagplaatsen](cloud-manager/managing-code/accessing-repos.md)
       + [Git integreren met Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
       + [Werken met Meerdere bronopslaglocaties voor Git](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [De Opstelling van de Ontwikkeling van het Team van de onderneming voor AEM als Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [Enterprise Team Development Setup voor AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [CI/CD-pipeline configureren](cloud-manager/configure-pipeline.md)
    + [Uw code implementeren](cloud-manager/deploy-code.md)
    + Inzicht in de testresultaten {#test-results}
@@ -232,7 +232,7 @@ ht-degree: 26%
    + [Workflow voor contentlevering](dispatcher/overview.md)
    + [Dispatcher in de cloud](dispatcher/disp-overview.md)
    + [Validatie en foutopsporing met Dispatcher Tools](dispatcher/validation-debug.md)
-   + [De Dispatcher-configuratie migreren van AMS naar AEM als Cloud Service](dispatcher/ams-aem.md)
+   + [De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Validatie en foutopsporing met Verouderde Dispatcher Tools](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Caching in AEM as a Cloud Service](dispatcher/caching.md)

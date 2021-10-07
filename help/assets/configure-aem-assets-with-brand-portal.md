@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 12%
@@ -63,7 +63,7 @@ U kunt Brand Portal activeren terwijl u de omgevingen voor uw AEM Assets maakt a
 >Wijzig geen automatisch gegenereerde instellingen.
 
 **Zie ook**:
-* [Gebruikers en rollen toevoegen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [Gebruikers en rollen toevoegen in as a Cloud Service AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -178,7 +178,7 @@ Samen met de automatiseringswerkstroom om Brand Portal op AEM Assets als [!DNL C
 
 >[!NOTE]
 >
->Neem contact op met de Adobe-ondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
+>Neem contact op met de Klantenondersteuning als u problemen ondervindt tijdens het activeren van uw Brand Portal-medewerker.
 
 ## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
 

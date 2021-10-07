@@ -16,17 +16,17 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Gereedschap Toewijzing gebruiker"
->abstract="Met het gereedschap Inhoud overbrengen kunt u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM als Cloud Service. Bestaande gebruikers en groepen moeten aan hun IMS-id&#39;s worden toegewezen om dubbele gebruikers en groepen op de Cloud Service-auteur te voorkomen."
+>abstract="Met het gereedschap Inhoud overbrengen kunt u gebruikers en groepen van het bestaande AEM naar AEM as a Cloud Service verplaatsen. Bestaande gebruikers en groepen moeten aan hun IMS-id&#39;s worden toegewezen om dubbele gebruikers en groepen op de Cloud Service-auteur te voorkomen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Belangrijke overwegingen voor het gebruik van het gereedschap Toewijzing gebruiker"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Gebruikerstoewijzing gebruiken"
 
-Als onderdeel van de overgang naar Adobe Experience Manager (AEM) als Cloud Service, moet u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM als Cloud Service. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
+Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (AEM) moet u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM as a Cloud Service. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.  Dit vereist gebruik van [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) dat Single Sign-On biedt voor alle Adobe-cloudtoepassingen. Raadpleeg [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management) voor meer informatie. Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de auteur van de Cloud Service te voorkomen.
 
 ### Gereedschap Toewijzing gebruiker {#mapping-tool}
 
-Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle gebruikers en groepen gemigreerd die zijn gekoppeld aan de inhoud die wordt gemigreerd. Het hulpmiddel van de Toewijzing van de Gebruiker is een deel van het Hulpmiddel van de Overdracht van de Inhoud, en zijn enig doel is de gebruikers en de groepen te wijzigen zodat zij correct door IMS, de enig-sign-on functionaliteit kunnen worden herkend die door AEM als Cloud Service wordt gebruikt. Zodra deze wijzigingen zijn aangebracht, migreert het gereedschap Inhoud overbrengen de gebruikers en groepen van de opgegeven inhoud zoals gewoonlijk.
+Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle gebruikers en groepen gemigreerd die zijn gekoppeld aan de inhoud die wordt gemigreerd. Het hulpmiddel van de Toewijzing van de Gebruiker is een deel van het Hulpmiddel van de Overdracht van de Inhoud, en zijn enig doel is de gebruikers en de groepen te wijzigen zodat zij correct door IMS kunnen worden erkend, de enig-sign-on functionaliteit die door AEM as a Cloud Service wordt gebruikt. Zodra deze wijzigingen zijn aangebracht, migreert het gereedschap Inhoud overbrengen de gebruikers en groepen van de opgegeven inhoud zoals gewoonlijk.
 
 ## Belangrijke overwegingen {#important-considerations}
 
@@ -40,7 +40,7 @@ De volgende specifieke gevallen worden geregistreerd:
 
 1. Als de gebruiker momenteel is uitgeschakeld, wordt deze op dezelfde manier behandeld als wanneer de gebruiker niet is uitgeschakeld. Het wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
 
-1. Als een gebruiker op de instantie van de doel AEM Cloud Service met de zelfde gebruikersnaam (rep:principalName) zoals één van de gebruikers op de bron AEM instantie bestaat zal de gebruiker of de groep in kwestie niet worden gemigreerd.
+1. Als een gebruiker op de doelinstantie van AEM Cloud Service met de zelfde gebruikersnaam (rep:principalName) zoals één van de gebruikers op de bron AEM instantie bestaat zal de gebruiker of de groep in kwestie niet worden gemigreerd.
 
 ### Aanvullende overwegingen {#additional-considerations}
 
@@ -50,7 +50,7 @@ De volgende specifieke gevallen worden geregistreerd:
 
 * Wanneer de inhoud toevoegt wordt uitgevoerd, als de inhoud niet wordt overgebracht omdat het sinds de vorige overdracht niet is veranderd, zullen de gebruikers en de groepen verbonden aan die inhoud ook niet worden overgebracht, zelfs als de gebruikers en de groepen ondertussen zijn veranderd. Dit komt doordat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 
-* Als de AEM Cloud Service van het doel een gebruiker met een verschillende gebruikersnaam maar zelfde e-mailadres zoals één van de gebruikers op de bron AEM instantie heeft, en de Toewijzing van de Gebruiker wordt toegelaten, zal een foutenmelding in de logboeken worden geschreven, en de bron AEM gebruiker zal niet worden overgebracht, aangezien slechts één gebruiker met een bepaald e-mailadres op het doelsysteem wordt toegestaan.
+* Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron-AEM en Gebruikerstoewijzing is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt de bron-AEM niet overgebracht, aangezien slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
 
 * Als twee gebruikers op de bron AEM instantie hetzelfde e-mailadres hebben en Gebruikerstoewijzing is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt een van de bron AEM gebruikers niet overgebracht, omdat slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
 

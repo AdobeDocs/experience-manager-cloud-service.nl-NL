@@ -2,15 +2,15 @@
 title: Inhoud automatiseren voor Creative Cloud-integratie
 description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
-feature: Uploaden, Asset Processing, Publiceren, Asset compute Microservices, Workflow
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
-
 
 # Variaties van elementen genereren met behulp van [!DNL Adobe Creative Cloud]-integratie {#content-automation}
 
@@ -32,7 +32,7 @@ Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkinge
 
    ![Lightroom-voorinstelling](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Afbeelding: Adobe Lightroom-voorinstelling om de afbeeldingskwaliteit voor veel afbeeldingen op consistente wijze te verbeteren.*
+   *Afbeelding: Met de Adobe Lightroom-voorinstelling kunt u de afbeeldingskwaliteit voor veel afbeeldingen op consistente wijze verbeteren.*
 
 * **Knipsel** afbeelding: Gebruikt kunstmatige intelligentie om selectie rond aliente voorwerpen tot stand te brengen en achtergrond met één enkele bevel te verwijderen.
 
@@ -46,7 +46,7 @@ Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkinge
 
    ![Photoshop-acties](/help/assets/assets/content-automation-psactions.png)
 
-* **Vervanging** slim object: Hiermee past u de weergave op schaal aan door afbeeldingen om te wisselen met behoud van alle effecten en aanpassingen die in een PSD-bestand zijn toegepast.
+* **Vervanging** slim object: Hiermee past u de weergave op schaal aan door afbeeldingen te wisselen, waarbij alle effecten en aanpassingen die in een PSD-bestand zijn toegepast, behouden blijven.
 
    ![Objecten slim vervangen](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkinge
 
 Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch variaties te maken:
 
-1. Neem contact op met de [klantenservice Adobe](https://experienceleague.adobe.com/#support) om de licentie te ontvangen.
+1. Neem contact op met de [Adobe Klantenondersteuning](https://experienceleague.adobe.com/#support) om de licentie te ontvangen.
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 

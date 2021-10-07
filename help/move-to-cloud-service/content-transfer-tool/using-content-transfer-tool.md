@@ -37,7 +37,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* Nadat u de *Extractie*-fase van het proces voor inhoudsoverdracht hebt voltooid en voordat u de *Ingestiefase* start om inhoud in uw AEM in te voeren als een Cloud Service *Stage* of *Production*-instanties, moet u een ondersteuningsticket registreren om de Adobe te informeren over uw voornemen om *Ingestikt uit te voeren* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens het *Ingestieproces*. U zult het steunkaartje 1 week vóór uw geplande *Ingestiedatum* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken. U kunt een steunkaartje met de volgende details registreren:
+* Nadat u de *Extractie*-fase van het proces voor de overdracht van inhoud hebt voltooid en voordat u de *Ingestiefase* start om inhoud in uw AEM as a Cloud Service *Stage* of *Production*-instanties in te voeren, moet u een ondersteuningsticket registreren om de Adobe te informeren over uw voornemen om *Ingestie&lt;a9 uit te voeren/> zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens het* Ingestieproces *.* U zult het steunkaartje 1 week vóór uw geplande *Ingestiedatum* moeten registreren. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken. U kunt een steunkaartje met de volgende details registreren:
 
    * De nauwkeurige datum en de geschatte tijd (met uw tijd-streek) wanneer u van plan bent om de *Ingestiefase* te beginnen.
    * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
@@ -70,7 +70,7 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Gereedschap Inhoud overbrengen uitvoeren"
->abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM als Cloud Service (Auteur/Publiceren)."
+>abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM as a Cloud Service (Auteur/Publiceren)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
@@ -159,7 +159,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 >[!NOTE]
->Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Hiervoor moet u een `azcopy.config`-bestand configureren voordat extractie wordt uitgevoerd. Raadpleeg [Grote opslagplaatsen voor inhoud verwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie.
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Hiervoor moet u een `azcopy.config`-bestand configureren voordat extractie wordt uitgevoerd. Zie [Grote opslagplaatsen voor inhoud verwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie.
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
 
