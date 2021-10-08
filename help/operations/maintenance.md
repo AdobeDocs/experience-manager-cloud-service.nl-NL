@@ -1,39 +1,32 @@
 ---
-title: Onderhoudstaken in AEM als Cloud Service
-description: Onderhoudstaken in AEM als Cloud Service
+title: Onderhoudstaken in AEM as a Cloud Service
+description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
+source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
 
-# Onderhoudstaken in AEM als Cloud Service
+# Onderhoudstaken in AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Onderhoudstaken"
->abstract="Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM als Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe."
->additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="Onderhoudsgids AEM"
->additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="Onderhoudstaken van het transactiedashboard"
+>abstract="Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe."
 
-Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM als Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe.
-
-Raadpleeg de volgende pagina&#39;s voor meer informatie over onderhoudstaken:
-
-* [Onderhoudsgids AEM](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [Onderhoudstaken van het transactiedashboard](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe.
 
 ## Onderhoudstaken configureren
 
-In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM als Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld te gebruiken. Adobe zal onderhoudstaken beheren die geen klantenbesluiten (bijvoorbeeld, de Inzameling van het huisvuil van de Datastore) vereisen terwijl andere onderhoudstaak door de klant kan worden gevormd (zie de lijst hieronder).
+In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe zal onderhoudstaken beheren die geen klantenbesluiten (bijvoorbeeld, de Inzameling van het huisvuil van de Datastore) vereisen terwijl andere onderhoudstaak door de klant kan worden gevormd (zie de lijst hieronder).
 
 >[!CAUTION]
 >
 >Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaak van een klant te negeren om problemen zoals prestatievermindering te beperken.
 
-De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het moment van de release van AEM als Cloud Service.
+De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het moment van de release van AEM as a Cloud Service.
 
 | Onderhoudstaken | Wie eigenaar is van de configuratie | Hoe te om (facultatief) te vormen |
 |---|---|---|
