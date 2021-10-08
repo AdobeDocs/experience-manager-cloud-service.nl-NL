@@ -2,7 +2,7 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 1%
@@ -201,7 +201,7 @@ Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subacti
 
 ### lidOf {#memberof}
 
-Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Dit voorspelt vondsten punten die lid van een specifieke [sling middelinzameling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
 Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
 
@@ -291,7 +291,7 @@ Het ondersteunt geen facetextractie.
 
 ### relativedaterange {#relativedaterange}
 
-Deze voorspelling stemt `JCR DATE`-eigenschappen af op een datum-/tijdinterval waarbij tijdverschuivingen worden gebruikt ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` specificeren gebruikend of een millisecondenwaarde of de syntaxis `1s 2m 3h 4d 5w 6M 7y` van Bugzilla (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar). Voorvoegsel met `-` om op een negatieve compensatie vóór de huidige tijd te wijzen. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere `0` standaard ingesteld als de huidige tijd.
+Deze voorspelling stemt `JCR DATE`-eigenschappen af op een datum-/tijdinterval waarbij tijdverschuivingen worden gebruikt ten opzichte van de huidige servertijd. U kunt `lowerBound` en `upperBound` specificeren gebruikend of een millisecondenwaarde of de syntaxis `1s 2m 3h 4d 5w 6M 7y` van Bugzilla (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar). Voorvoegsel met `-` om een negatieve verschuiving vóór de huidige tijd aan te geven. Als u alleen `lowerBound` of `upperBound` opgeeft, wordt de andere `0` standaard ingesteld als de huidige tijd.
 
 Bijvoorbeeld:
 

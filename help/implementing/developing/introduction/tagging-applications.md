@@ -2,7 +2,7 @@
 title: Tags samenstellen in AEM toepassingen
 description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In dit document wordt beschreven hoe u programmatisch kunt werken met tags of tags wilt uitbreiden binnen een aangepaste AEM.
 
-* [Tags-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [Tags-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
 die met de
 
@@ -24,9 +24,9 @@ Voor gerelateerde informatie over codering:
 * Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
 * Zie Tags beheren voor een beheerder. Het perspectief van de beheerder op het maken en beheren van tags en op welke inhoudstags zijn toegepast.
 
-## Overzicht van de API voor labelen {#overview-of-the-tagging-api}
+## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-Met de implementatie van het [tagging framework](tagging-framework.md) in AEM kunt u tags en code-inhoud beheren met de JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden in de eigenschap  `cq:tags` string array niet worden gedupliceerd, verwijdert deze tags die verwijzen naar niet-bestaande tags en updates  `TagID`  `TagID`voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De hoofdklassen bevinden zich in het [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) pakket:
+Met de implementatie van het [tagging framework](tagging-framework.md) in AEM kunt u tags en code-inhoud beheren met de JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden in de eigenschap  `cq:tags` string array niet worden gedupliceerd, verwijdert deze tags die verwijzen naar niet-bestaande tags en updates  `TagID`  `TagID`voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De hoofdklassen bevinden zich in het [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
 
 * `JcrTagManagerFactory` - retourneert een JCR-gebaseerde implementatie van een  `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
@@ -49,7 +49,7 @@ In de typische het Verkopen context kunt u aan `TagManager` van `ResourceResolve
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 ```
 
-### Een tagobject {#retrieving-a-tag-object} ophalen
+### Een tagobject ophalen {#retrieving-a-tag-object}
 
 Een `Tag` kan door `TagManager` worden teruggewonnen, of het oplossen van een bestaande markering of het creëren van nieuwe:
 
@@ -76,7 +76,7 @@ Resource node = tag.adaptTo(Resource.class);
 >
 >Directe aanpassing van `Node` aan `Tag` is niet mogelijk, omdat `Node` de methode Sling `Adaptable.adaptTo(Class)` niet implementeert.
 
-### Labels {#getting-and-setting-tags} ophalen en instellen
+### Labels ophalen en instellen {#getting-and-setting-tags}
 
 ```java
 // Getting the tags of a Resource:
@@ -105,13 +105,13 @@ long count = tag.getCount();
 >
 >`com.day.cq.commons.RangeIterator`
 
-### Labels {#deleting-tags} verwijderen
+### Tags verwijderen {#deleting-tags}
 
 ```java
 tagManager.deleteTag(tag);
 ```
 
-### Codes {#replicating-tags} dupliceren
+### Codes dupliceren {#replicating-tags}
 
 Het is mogelijk om de replicatieservice (`Replicator`) met markeringen te gebruiken omdat de markeringen van type `nt:hierarchyNode` zijn:
 
@@ -127,7 +127,7 @@ De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan
 
 `http://<host>:<port>/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector`
 
-## Tag zoeken en taglijst {#tag-search-and-tag-listing}
+## Zoeken en taglijst {#tag-search-and-tag-listing}
 
 De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
@@ -142,13 +142,13 @@ Wanneer bijvoorbeeld de tag **Animals** wordt toegevoegd aan de pagina **Product
 
 De server-side API heeft gelokaliseerde `title` verwante methodes:
 
-* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`

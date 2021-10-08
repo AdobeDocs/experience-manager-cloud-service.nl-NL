@@ -1,31 +1,31 @@
 ---
 title: AEM as a Cloud Service SDK
-description: Een overzicht van de AEM als Cloud Service Software Development Kit
+description: Een overzicht van de AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
 
 ---
 
-# De AEM als Cloud Service SDK {#aem-as-a-cloud-service-sdk}
+# De AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-De AEM als Cloud Service SDK bestaat uit de volgende artefacten:
+De AEM as a Cloud Service SDK bestaat uit de volgende artefacten:
 
 * **QuickStart Jar**  - De AEM-runtime die wordt gebruikt voor lokale ontwikkeling
 * **Java API Jar**  - De Java Jar/Maven-afhankelijkheid die alle toegestane Java API&#39;s beschikbaar maakt die kunnen worden gebruikt om zich te ontwikkelen tegen AEM als Cloud Service. Vroeger Uberjar genoemd
 * **Javadoc Jar**  - De javadocs voor de Java API Jar
 * **Dispatcher Tools** : de set gereedschappen die wordt gebruikt om zich te ontwikkelen tegen Dispatcher lokaal. Afzonderlijke artefacten voor unix en vensters
 
-Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werden opgesteld de artefacten hieronder gebruiken. Als de lokale compilatie niet met Quickstart jar werkt en u vermoedt het toe te schrijven is aan interfaces die uit AEM die als Cloud Service worden opgesteld zijn verwijderd, bereik aan de Steun van de Klant om te bepalen als u toegang nodig hebt. Dit zal veranderingen in het achterste eind vereisen.
+Bovendien zullen sommige klanten die eerder met AEM 6.5 of vroegere versies werden opgesteld de artefacten hieronder gebruiken. Als de lokale compilatie niet met Quickstart jar werkt en u vermoedt dat het toe te schrijven is aan interfaces die uit AEM opgesteld as a Cloud Service zijn verwijderd, bereik aan de Steun van de Klant om te bepalen als u toegang nodig hebt. Dit zal veranderingen in het achterste eind vereisen.
 
 * **6.5 Verouderde Java API Jar**  - een extra set interfaces die zijn verwijderd sinds AEM 6.5
 * **6.5 Vervangen Javadoc Jar**  - de JavaDocs voor de extra reeks van verbonden
 
 ## Samenstellen voor de SDK {#building-for-the-sdk}
 
-De AEM als Cloud Service SDK wordt gebruikt om douanecode te bouwen en op te stellen. Raadpleeg de documentatie [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) voor meer informatie. Op een hoog niveau worden de volgende stappen uitgevoerd:
+De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en in te voeren. Raadpleeg de documentatie [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) voor meer informatie. Op een hoog niveau worden de volgende stappen uitgevoerd:
 
 * **Compileer code**. Zoals verwacht, wordt de broncode gecompileerd die de resulterende inhoudspakketten produceert
 * **Artefacten** maken. Tijdens dit proces worden artefacten gemaakt
@@ -34,10 +34,10 @@ De AEM als Cloud Service SDK wordt gebruikt om douanecode te bouwen en op te ste
 
 Dezelfde stappen worden uitgevoerd door Cloud Manager bij de implementatie naar Cloud-omgevingen. Door het lokaal uitvoeren van builds kunnen lokale ontwikkelings- en testprocessen worden uitgevoerd, zodat ontwikkelaars code- of structuurproblemen efficiënt kunnen detecteren voordat ze de broncontrole vastleggen en de implementatie van Cloud Manager activeren. Dit kan langer duren.
 
-## Toegang tot de AEM als Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
+## Toegang tot de AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * U kunt het pictogram van de Admin Console van de AEM **Info over Adobe Experience Manager** controleren om de versie van AEM te weten te komen u op productie loopt.
-* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van het [portal Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Let op: toegang tot de SDK-aanbiedingen is beperkt tot gebruikers met AEM Managed Services of AEM als Cloud Service.
+* De hulpprogramma&#39;s quickstart jar en Dispatcher kunnen als zip-bestand worden gedownload van het [portal Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). De toegang tot de SDK-lijsten is beperkt tot die met AEM Managed Services of AEM as a Cloud Service omgevingen.
 * Java API Jar en Javadoc Jar kunnen via gefabriceerde hulpmiddelen, of bevellijn of met uw aangewezen winde worden gedownload.
 * De toegewezen projectruimten moeten verwijzen naar het volgende API Jar-pakket. Naar deze afhankelijkheid moet ook worden verwezen in subpakketformulieren.
 
@@ -52,7 +52,7 @@ Dezelfde stappen worden uitgevoerd door Cloud Manager bij de implementatie naar 
 
 >[!NOTE]
 >
->Het versieitem voor de SDK moet overeenkomen met de versie van AEM als Cloud Service. U kunt zien welke versie u gebruikt door u aan AEM aan te melden, dan naar het vraagteken in de hoogste juiste hoek van het scherm te gaan en **[!UICONTROL About Adobe Experience Manager]** te selecteren
+>Het versieitem voor de SDK moet overeenkomen met de versie van AEM as a Cloud Service. U kunt zien welke versie u gebruikt door u aan AEM aan te melden, dan naar het vraagteken in de hoogste juiste hoek van het scherm te gaan en **[!UICONTROL About Adobe Experience Manager]** te selecteren
 
 
 ## Een lokaal project vernieuwen met een nieuwe SDK-versie {#refreshing-a-local-project-with-a-new-skd-version}
@@ -83,7 +83,7 @@ Als er inhoud is die met elke nieuwe AEM quickstart versie zou moeten worden ge�
 
 De aanbeveling is om de SDK regelmatig bij te werken (bijvoorbeeld om de twee weken) en elke dag een volledige lokale staat te verwijderen om niet per ongeluk afhankelijk te zijn van gegevens van een ander land in de toepassing.
 
-Als u van CryptoSupport ([of door de geloofsbrieven van de Diensten van de Wolk of de dienst van de Post te vormen SMTP in AEM of door CryptoSupport API in uw toepassing te gebruiken ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)) afhangt, zullen de gecodeerde eigenschappen door een sleutel worden gecodeerd die autogenerated op de eerste aanvang van een AEM milieu is. Terwijl de cloudsetup ervoor zorgt dat automatisch de milieu-specifieke CryptoKey wordt hergebruikt, is het noodzakelijk om de cryptokey in de lokale ontwikkelomgeving te injecteren.
+Als u van CryptoSupport ([of door de geloofsbrieven van de Diensten van de Wolk of de dienst van de Post te vormen SMTP in AEM of door CryptoSupport API in uw toepassing te gebruiken ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)) afhangt, zullen de gecodeerde eigenschappen door een sleutel worden gecodeerd die autogenerated op de eerste aanvang van een AEM milieu is. Terwijl de cloudsetup ervoor zorgt dat automatisch de milieu-specifieke CryptoKey wordt hergebruikt, is het noodzakelijk om de cryptokey in de lokale ontwikkelomgeving te injecteren.
 
 Standaard is AEM geconfigureerd om de sleutelgegevens op te slaan in de gegevensmap van een map, maar voor een gebruiksvriendelijker hergebruik in de ontwikkeling kan het AEM worden geïnitialiseerd bij het eerste opstarten met &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Hierdoor worden de versleutelingsgegevens gegenereerd op &quot;`/etc/key`&quot;.
 

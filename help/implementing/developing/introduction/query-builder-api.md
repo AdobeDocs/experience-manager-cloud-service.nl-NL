@@ -2,7 +2,7 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 De Bouwer van de Vraag biedt een gemakkelijke manier om de inhoudsbewaarplaats van AEM te vragen. De functionaliteit wordt beschikbaar gemaakt via een Java API en een REST API. In dit document worden deze API&#39;s beschreven.
 
-De server-zijvraagbouwer ([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag van XPath, naar keuze filter de resultaatreeks, en ook extractie facetten, indien gewenst.
+De server-zijvraagbouwer ([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag van XPath, naar keuze filter de resultaatreeks, en ook extractie facetten, indien gewenst.
 
-De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een full-text voorspelling die overeenkomt met de functie `jcr:contains()` in XPath.
+De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een full-text voorspelling die overeenkomt met de functie `jcr:contains()` in XPath.
 
-Voor elk predicaatype, is er een beoordelaarcomponent ([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is zeer gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
+Voor elk predicaatype, is er een beoordelaarcomponent ([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is zeer gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
 
 De REST API biedt toegang tot exact dezelfde functies via HTTP, waarbij reacties worden verzonden in JSON.
 
@@ -49,7 +49,7 @@ Voor `QueryBuilder` JSON Servlet, omvat elk voorbeeld een steekproefverbinding a
 >
 >Als u de geretourneerde JSON-gegevens in uw browser wilt weergeven, kunt u een plug-in gebruiken, zoals JSONView voor Firefox.
 
-### Alle resultaten {#returning-all-results} retourneren
+### Alle resultaten retourneren {#returning-all-results}
 
 De volgende vraag zal **tien resultaten** (of om een maximum van tien te zijn) terugkeren, maar u op de hoogte brengen van **Aantal treffers:** die eigenlijk beschikbaar zijn:
 
@@ -76,7 +76,7 @@ p.limit=-1
 orderby=path
 ```
 
-### Het gebruiken van p.radenTotal om de Resultaten {#using-p-guesstotal-to-return-the-results} terug te keren
+### Het gebruiken van p.radenTotal om de Resultaten terug te keren {#using-p-guesstotal-to-return-the-results}
 
 Het doel van de parameter `p.guessTotal` is het juiste aantal resultaten te retourneren dat kan worden getoond door de minimale levensvatbare waarden `p.offset` en `p.limit` te combineren. Het voordeel van deze parameter is dat de prestaties van grote resultaatsets verbeterd zijn. Zo voorkomt u het berekenen van het volledige totaal (bijvoorbeeld het aanroepen van `result.getSize()`) en het lezen van de volledige resultaatset, die volledig tot aan de OAK-engine en -index is geoptimaliseerd. Dit kan een belangrijk verschil zijn wanneer er honderdduizenden resultaten zijn, zowel in uitvoeringstijd als in geheugengebruik.
 
@@ -119,13 +119,13 @@ Het zal een aantal de zelfde standaardgrens van 10 resultaten met een 0 compensa
 "offset": 0,
 ```
 
-### Paginering {#implementing-pagination} implementeren
+### Paginering implementeren {#implementing-pagination}
 
 Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afhankelijk van de resultaatgrootte dit zou lang kunnen duren aangezien het bepalen van de nauwkeurige telling het controleren van elk resultaat voor toegangsbeheer impliceert. Meestal wordt het totaal gebruikt om paginering voor de eindgebruiker UI uit te voeren. Aangezien het bepalen van de nauwkeurige telling langzaam kan zijn, wordt geadviseerd om van de eigenschap te gebruiken radenTotal om de paginering uit te voeren.
 
 De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
-* Hiermee wordt de juiste telling opgehaald en weergegeven van het aantal totale treffers ([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of total in de `querybuilder.json`-respons) is kleiner dan of gelijk aan 100;
+* Hiermee wordt de juiste telling opgehaald en weergegeven van het aantal totale treffers ([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of total in de `querybuilder.json`-respons) is kleiner dan of gelijk aan 100;
 * Plaats `guessTotal` aan 100 terwijl het maken van de vraag aan de Bouwer van de Vraag.
 
 * De reactie kan het volgende resultaat hebben:
@@ -135,7 +135,7 @@ De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
 `guessTotal` moet ook worden gebruikt in gevallen waarin de gebruikersinterface oneindig schuiven moet gebruiken om te voorkomen dat de Query Builder het exacte aantal treffers bepaalt.
 
-### JAR-bestanden zoeken en deze bestellen, nieuwste eerst {#find-jar-files-and-order-them-newest-first}
+### JAR-bestanden zoeken en bestellen, nieuwste eerst {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Alle pagina&#39;s zoeken en bestellen op Laatst gewijzigd, Aflopend {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Alle pagina&#39;s zoeken en deze bestellen op Laatst gewijzigd, Aflopend {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -165,7 +165,7 @@ orderby=@jcr:content/cq:lastModified
 orderby.sort=desc
 ```
 
-### fullText zoeken, besteld door score {#fulltext-search-ordered-by-score}
+### fullText-zoekopdracht, besteld door score {#fulltext-search-ordered-by-score}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Management&orderby=@jcr:score&orderby.sort=desc`
 
@@ -238,7 +238,7 @@ property=jcr:content/cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-### Zoeken naar meerdere eigenschappen {#search-for-multiple-properties}
+### Meerdere eigenschappen zoeken {#search-for-multiple-properties}
 
 Wanneer het gebruiken van het bezit voorspelt veelvoudige tijden, moet u de aantalprefixen opnieuw toevoegen:
 
@@ -252,7 +252,7 @@ type=cq:Page
 2_property.value=Cycling Tuscany
 ```
 
-### Zoeken naar meerdere eigenschapswaarden {#search-for-multiple-property-values}
+### Meerdere eigenschapswaarden zoeken {#search-for-multiple-property-values}
 
 Om grote groepen te vermijden wanneer u naar veelvoudige waarden van een bezit (`"A" or "B" or "C"`) wilt zoeken, kunt u veelvoudige waarden aan &lt;a1 verstrekken/> voorspelt:`property`
 
@@ -347,9 +347,9 @@ p.nodedepth=5
 
 Voor meer predikaten, zie [de Voorspelde Verwijzing van de Bouwer van de Vraag pagina](query-builder-predicates.md).
 
-U kunt [Javadoc voor `PredicateEvaluator` ook controleren klassen ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
+U kunt [Javadoc voor `PredicateEvaluator` ook controleren klassen ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
 
-Het voorvoegsel van de klassenaam (bijvoorbeeld `similar` in [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is de *principal-eigenschap* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
+Het voorvoegsel van de klassenaam (bijvoorbeeld `similar` in [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is de *principal-eigenschap* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
 
 Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en `similar=/content/en` in plaats van de volledig - gekwalificeerde variant `similar.similar=/content/en` gebruiken. Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
 
@@ -421,13 +421,13 @@ U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. 
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Bij gebruik van de [`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) methode, wordt gegeven `Query` opgeslagen in de bewaarplaats als dossier of als bezit volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` als bestand opslaat naar het pad `/mypath/getfiles`:
+Bij gebruik van de [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) methode, wordt gegeven `Query` opgeslagen in de bewaarplaats als dossier of als bezit volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` als bestand opslaat naar het pad `/mypath/getfiles`:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Eerder opgeslagen query&#39;s kunnen vanuit de opslagplaats worden geladen met de methode [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
+Eerder opgeslagen query&#39;s kunnen vanuit de opslagplaats worden geladen met de methode [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -439,7 +439,7 @@ Een `Query` die is opgeslagen op het pad `/mypath/getfiles` kan bijvoorbeeld doo
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 ```
 
-## {#testing-and-debugging} testen en fouten opsporen
+## Testen en fouten opsporen {#testing-and-debugging}
 
 Voor het spelen rond en het zuiveren van de vragen van de Bouwer van de Vraag, kunt u de debugger console van de Bouwer van de Vraag gebruiken bij
 
@@ -453,7 +453,7 @@ of anders de Query Builder JSON servlet op
 
 ### Algemene foutopsporing in Recommendations {#general-debugging-recommendations}
 
-### Verkrijg Verklarende XPath via het Registreren {#obtain-explain-able-xpath-via-logging}
+### Uitleg XPath verkrijgen via Logging {#obtain-explain-able-xpath-via-logging}
 
 Verklaar **all** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
 
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Beschrijving** |
 |---|---|
-| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder en Query API |
-| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | Resultaat-API |
-| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Facetten |
-| [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Emmers (in facetten) |
-| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | Voorspelende evaluatoren |
-| [com.day.cq.search.facets.extractors](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet Extractor (voor beoordelaars) |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer voor de servlet van de Bouwer van de Vraag (`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder en Query API |
+| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | Resultaat-API |
+| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facetten |
+| [com.day.cq.search.facets.buckets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Emmers (in facetten) |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Voorspelende evaluatoren |
+| [com.day.cq.search.facets.extractors](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet Extractor (voor beoordelaars) |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer voor de servlet van de Bouwer van de Vraag (`/bin/querybuilder.json`) |

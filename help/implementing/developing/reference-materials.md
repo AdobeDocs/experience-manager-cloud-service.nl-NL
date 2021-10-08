@@ -2,7 +2,7 @@
 title: API-referentiematerialen
 description: AEM heeft uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 3%
@@ -19,7 +19,7 @@ De volgende API&#39;s zijn essentieel voor AEM.
 
 | API | Beschrijving |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
 | [Graniet-interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | De Open Web-stapel van Adobe, die diverse essentiële componenten verstrekt (Merk op dat de 6.5 Materialen van Granite op AEMaaCS van toepassing zijn) |
 | [Koraalinterface](https://opensource.adobe.com/coral-spectrum/documentation/) | De visuele stijl van Adobe voor wolkeninterface, die wordt ontworpen om consistentie in de gebruikerservaring te verstrekken |
 
@@ -44,7 +44,7 @@ AEM is gebaseerd op de volgende vier primaire Java API-sets in aflopende volgord
 
 | Prioriteit | API | Beschrijving |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows, enz. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST en op bron-gebaseerde abstracties zoals middelen, waardekaarten, en HTTP- verzoeken. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstracties van gegevens en inhoud, zoals knooppunten, eigenschappen en sessies. |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi de abstracties van de toepassingscontainer zoals de diensten en (OSGi) componenten. |
