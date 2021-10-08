@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -41,15 +41,15 @@ Net als bij alles wat asynchroon gebeurt, zoals bij observatiegebeurtenissen, ka
 
 Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn en het meest invoer herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuw vereiste voor dit soort code is, is het in AEM as a Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
 
-To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke banen, is het best om [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw minstens eens uitvoering te gebruiken.
+Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en die moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke banen, is het best om [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw minstens eens uitvoering te gebruiken.
 
 De Sling Commons Planner zou niet voor het plannen moeten worden gebruikt aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het zal worden gepland.
 
 Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet gegarandeerd worden uitgevoerd en daarom met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
 
-## Outgoing HTTP Connections {#outgoing-http-connections}
+## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
-Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-out afdwingen. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections used by the following popular Java libraries:
+Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-out afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
 
 Adobe raadt het gebruik aan van de meegeleverde [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van HTTP-verbindingen.
 
@@ -71,7 +71,7 @@ Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen
 
 De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kern AEM diensten zal dienen.
 
-For example, do not use `asset.getOriginal().getStream()`, which triggers downloading a binary onto the AEM service&#39;s ephemeral disk.
+Gebruik bijvoorbeeld `asset.getOriginal().getStream()` niet, waardoor het downloaden van een binair getal op de vaste schijf van de AEM service wordt geactiveerd.
 
 ## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
@@ -79,7 +79,7 @@ De omgekeerde replicatie van Publiceren aan Auteur wordt niet gesteund in AEM as
 
 ## De voorwaartse Medewerkers van de Replicatie zouden kunnen moeten worden gesteund {#forward-replication-agents}
 
-Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Custom replication agents are not supported.
+Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aangepaste replicatiemiddelen worden niet ondersteund.
 
 ## Controle en foutopsporing {#monitoring-and-debugging}
 
@@ -115,7 +115,7 @@ De logniveaus zijn als volgt:
 |---|---|---|
 | 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van CRX is niet correct geïnstalleerd en werkt niet. |
 | 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
-| 3 | Information | De actie is geslaagd. |
+| 3 | Informatie | De actie is geslaagd. |
 
 ### Thread Dumps {#thread-dumps}
 
@@ -131,7 +131,7 @@ Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechts
 
 ### as a Cloud Service ontwikkelingsinstrumenten AEM {#aem-as-a-cloud-service-development-tools}
 
-Customers can access CRXDE lite on the author tier&#39;s development environment but not stage or production. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
+Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. De onveranderlijke bewaarplaats (`/libs`, `/apps`) kan niet aan bij runtime worden geschreven zodat het proberen dit in fouten resulteert.
 
 In de Developer Console for dev, stage, and production environment is een set tools beschikbaar voor foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
@@ -149,7 +149,7 @@ Zoals hieronder wordt geïllustreerd, omvat de beschikbare statusinformatie de s
 
 ![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
-As illustrated below, developers can resolve package dependencies and servlets:
+Zoals hieronder geïllustreerd, kunnen de ontwikkelaars pakketgebiedsdelen en servlets oplossen:
 
 ![Dev Console 2](/help/implementing/developing/introduction/assets/devconsole2.png)
 
@@ -163,11 +163,11 @@ Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefini
 
 ### AEM Staging- en productieservice {#aem-staging-and-production-service}
 
-Customers will not have access to developer tooling for staging and production environments.
+Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
 
 ### Prestatiebewaking {#performance-monitoring}
 
-Adobe monitors application performance and takes measures to address if deterioration is observed. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
+Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
 
 ## E-mail verzenden {#sending-email}
 
@@ -175,13 +175,13 @@ AEM as a Cloud Service vereist dat uitgaande post wordt gecodeerd. In de onderst
 
 >[!NOTE]
 >
->The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
+>De dienst van de Post kan met steun worden gevormd OAuth2. Voor meer informatie, zie [Steun OAuth2 voor de Dienst van de Post](/help/security/oauth2-support-for-mail-service.md).
 
 ### Uitgaande e-mail inschakelen {#enabling-outbound-email}
 
-By default, ports used to send are disabled. Om het te activeren, vorm [geavanceerde voorzien van een netwerk](/help/security/configuring-advanced-networking.md), ervoor zorgend om voor elk nodig milieu de haven van `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt door:sturen regels te plaatsen zodat het verkeer door haven 465 (indien gesteund door de postserver) of haven 587 (als de postserver het vereist en ook TLS op die haven) afdwingt.
+Standaard zijn de poorten die worden gebruikt voor verzending uitgeschakeld. Om het te activeren, vorm [geavanceerde voorzien van een netwerk](/help/security/configuring-advanced-networking.md), ervoor zorgend om voor elk nodig milieu de haven van `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt door:sturen regels te plaatsen zodat het verkeer door haven 465 (indien gesteund door de postserver) of haven 587 (als de postserver het vereist en ook TLS op die haven) afdwingt.
 
-It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
+Het wordt aanbevolen geavanceerde netwerken te configureren met een `kind`-parameter ingesteld op `flexiblePortEgress`, omdat Adobe de prestaties van flexibel poortegress-verkeer kan optimaliseren. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
 
 U moet e-mail via een e-mailserver verzenden in plaats van rechtstreeks naar e-mailclients. Anders kunnen de e-mailberichten geblokkeerd zijn.
 
@@ -190,10 +190,6 @@ U moet e-mail via een e-mailserver verzenden in plaats van rechtstreeks naar e-m
 De [Day CQ Mail Service OSGI-service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moet worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek is aangegeven, en niet rechtstreeks naar ontvangers.
 
 AEM as a Cloud Service vereist dat de post door haven 465 wordt verzonden. Als een mailserver poort 465 niet ondersteunt, kan poort 587 worden gebruikt, mits de optie TLS is ingeschakeld.
-
->[!NOTE]
->
->Merk op dat Adobe geen steun SMTP die over een uniek specifiek IP adres wordt gevestigd.
 
 ### Configuratie {#email-configuration}
 
