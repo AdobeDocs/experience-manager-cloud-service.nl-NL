@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 0%
@@ -210,14 +210,13 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
 ### Releasedatum {#release-date-bpa-latest}
 
-De releasedatum voor de analyse van best practices v2.1.18 is 2021 september.
+De releasedatum voor de analyse van best practices v2.1.20 is 5 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
-* Mogelijkheid om het totale aantal knooppunten te detecteren en te rapporteren.
+* Mogelijkheid om de lengte van knoopnamen te detecteren en te rapporteren.
 
-* Mogelijkheid om het type en de grootte van de knoopopslag te detecteren en te rapporteren.
+* Mogelijkheid om de totale indexgrootte op te sporen en te rapporteren.
 
-### Opgeloste problemen {#bug-fixes-bpa}
+* Mogelijkheid om elementen te detecteren en te rapporteren waarvoor de oorspronkelijke uitvoering ontbreekt.
 
-* BPA ontdekte ten onrechte de aanwezigheid van een kader voor de integratie van de handel.
