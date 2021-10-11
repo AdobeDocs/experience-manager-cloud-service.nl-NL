@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
+source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, verwijs naar [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, verwijs naar [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
    * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
    * Toewijzing van gebruikers mislukt niet meer als Toegangstoken verloopt (na 24 uur). Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
