@@ -1,9 +1,9 @@
 ---
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '596'
 ht-degree: 3%
 
 ---
@@ -31,20 +31,25 @@ Voer de onderstaande stappen uit om dit in te stellen:
 
 Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het hulpmiddel van de Overdracht van de Inhoud van [Portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) downloaden. Voor meer informatie over de recentste versie, verwijs naar [Huidige Nota&#39;s van de Versie](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Gebruikerstoewijzing**.
+1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. Klik op **Gebruikerstoewijzing** kaart.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. Klik op **Gebruikerstoewijzingsconfiguratie maken**.
 
    >[!NOTE]
    >Als u deze stap overslaat, worden gebruikers en groepstoewijzing overgeslagen tijdens de extractiefase.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    Vul de velden in **Configuratie van API voor gebruikersbeheer**, zoals hieronder wordt beschreven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **Org-id**: Voer de Adobe Identity Management System (IMS) Org ID in voor de organisatie waarin de gebruikers worden gemigreerd.
 
@@ -59,6 +64,8 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
       >Het toegangstoken verloopt elke 24 uur en er moet een nieuwe worden gemaakt. Als u een nieuw token wilt maken, gaat u terug naar [Adobe Developer Console](https://console.adobe.io), kiest u uw project, klikt u op **Gebruikersbeheer API** en plakt u dezelfde persoonlijke sleutel in het vak.
 
 1. Nadat u de velden hebt gevuld, klikt u op **Configuratie testen** om de verbinding met de API-service voor gebruikersbeheer te testen. Als de verbinding succesvol is, zult u **sparen** kunnen klikken om de configuratie te bewaren.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. Nadat u de configuratie hebt opgeslagen, selecteert u de configuratie en klikt u op **Gebruikerstoewijzing starten**.
 
