@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
+source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -71,11 +71,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt elke ontvanger van overeenkomst nu [toelaten om zijn rol in een Aangepast Vorm ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) te vormen, met Ondertekenaar die de standaardrol is.
 
-* **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en  [bijhouden via Adobe ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html) Analytics voor Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 * **Sluit AEM Forms eenvoudig aan op Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, die het voor ontwikkelaars  [sneller en gemakkelijker maken om de Dynamica en Salesforce van Microsoft als gegevensbronnen voor een adaptieve vorm](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en) te vormen.
 
-* **Een adaptief formulier elektronisch ondertekenen met DocuSign:** U kunt DocuSign gebruiken om een adaptief formulier elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier.
+* **Een adaptief formulier elektronisch ondertekenen met DocuSign:** [U kunt DocuSign gebruiken om een adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html) elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier.
 
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
