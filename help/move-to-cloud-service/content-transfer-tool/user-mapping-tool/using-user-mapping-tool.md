@@ -1,9 +1,9 @@
 ---
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ Als het proces voor het toewijzen van gebruikersgegevens is gestopt vanwege een 
    >[!NOTE]
    >De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt.
 
-Voer de onderstaande stappen uit om het proces voor gebruikerstoewijzing te hervatten:
+Voer de onderstaande stappen uit om het proces voor het toewijzen van gebruikers te hervatten:
 
 1. Klik op **Logbestand weergeven** om het logbestand Gebruikerstoewijzing te bekijken om de opgeslagen voortgang te controleren.
 
@@ -115,3 +115,7 @@ Voer de onderstaande stappen uit om het proces voor gebruikerstoewijzing te herv
 1. Klik op **Start** van de dialoogdoos om het proces van de Toewijzing van de Gebruiker te hervatten.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Zodra het proces van de Toewijzing van de Gebruiker voltooit, zult u **Status** als **FINISHED** voor die specifieke configuratie bekijken.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
