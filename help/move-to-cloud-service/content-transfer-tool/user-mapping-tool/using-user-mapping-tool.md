@@ -1,10 +1,10 @@
 ---
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Klik op **Start** in het dialoogvenster om het proces Gebruikerstoewijzing te starten.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Zodra de Toewijzing van de Gebruiker volledig is, klik op **Resultaten** om de samenvatting te bekijken.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -79,12 +83,30 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    >* Zodra de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klik op **Content Transfer** om een migratieset te maken die wordt uitgevoerd. Raadpleeg [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) voor meer informatie.
 
 
-### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping}
+### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping-process}
 
 Als het proces voor het toewijzen van gebruikersgegevens is gestopt vanwege een van de volgende redenen:
 
 * De gebruiker selecteerde **De Toewijzing van de Gebruiker van het Einde**
 * het toegangstoken is verlopen tijdens het proces of
-* een andere reden.
+* een andere reden
 
-De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt. Controleer de opgeslagen voortgang in het logbestand met gebruikerstoewijzing. Klik nogmaals op de **User Mapping** knoop van het Begin om van waar het wegging te hervatten. Zorg ervoor alvorens opnieuw te beginnen dat het toegangstoken nog geldig is of is verfrist.
+   >[!NOTE]
+   >De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt.
+
+Voer de onderstaande stappen uit om het proces voor gebruikerstoewijzing te hervatten:
+
+1. Klik op **Logbestand weergeven** om het logbestand Gebruikerstoewijzing te bekijken om de opgeslagen voortgang te controleren.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Klik nogmaals op de **User Mapping** knoop van het Begin om van waar het wegging te hervatten.
+
+   >[!NOTE]
+   >Zorg ervoor alvorens opnieuw te beginnen dat het toegangstoken nog geldig is of is verfrist.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Klik op **Start** van de dialoogdoos om het proces van de Toewijzing van de Gebruiker te hervatten.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
