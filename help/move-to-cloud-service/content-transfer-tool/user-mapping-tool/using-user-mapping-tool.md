@@ -1,10 +1,10 @@
 ---
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
-source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
+source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 3%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
@@ -76,4 +76,15 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >Zodra de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klik op **Content Transfer** om een migratieset te maken die wordt uitgevoerd. Raadpleeg [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) voor meer informatie.
+   >* Zodra de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klik op **Content Transfer** om een migratieset te maken die wordt uitgevoerd. Raadpleeg [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) voor meer informatie.
+
+
+### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping}
+
+Als het proces voor het toewijzen van gebruikersgegevens is gestopt vanwege een van de volgende redenen:
+
+* De gebruiker selecteerde **De Toewijzing van de Gebruiker van het Einde**
+* het toegangstoken is verlopen tijdens het proces of
+* een andere reden.
+
+De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt. Controleer de opgeslagen voortgang in het logbestand met gebruikerstoewijzing. Klik nogmaals op de **User Mapping** knoop van het Begin om van waar het wegging te hervatten. Zorg ervoor alvorens opnieuw te beginnen dat het toegangstoken nog geldig is of is verfrist.

@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -197,12 +197,12 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, verwijs naar [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* Verbeterd gereedschap voor het toewijzen van gebruikers met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, verwijs naar [Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
    * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
-   * Toewijzing van gebruikers mislukt niet meer als Toegangstoken verloopt (na 24 uur). Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
+   * Toewijzing van gebruikers mislukt niet meer als **Toegangstoken** na 24 uur verloopt. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
 
-* Om de robuustheid te verhogen CTT, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen.
+* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Het gereedschap Inhoud overbrengen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) voor meer informatie.
 
 * Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 
