@@ -1,21 +1,21 @@
 ---
-title: Schermen als veelgestelde vragen over Cloud Servicen
-description: Deze pagina beschrijft de schermen als veelgestelde vragen over Cloud Servicen.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+title: as a Cloud Service veelgestelde vragen weergeven
+description: Deze pagina beschrijft de as a Cloud Service veelgestelde vragen voor schermen.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
+# as a Cloud Service veelgestelde vragen weergeven {#screens-cloud-faqs}
 
-# Schermen als veelgestelde vragen over Cloud Servicen {#screens-cloud-faqs}
+De volgende sectie geeft antwoorden op Veelgestelde vragen (FAQs) met betrekking tot het as a Cloud Service project van Screens.
 
-De volgende sectie verstrekt antwoorden aan Veelgestelde Vragen (FAQs) met betrekking tot Schermen als project van de Cloud Service.
+## Wat moet ik doen als AEM Screens Player die naar de as a Cloud Service schermen wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-## Wat moet ik doen als AEM Screens-speler die schermen aanwijst als een Cloud Service, de aangepaste clientlibs niet plukt met /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css formaat?
-
-AEM als Cloud Service verandert de lange geheim voorgeheugensleutels met elke plaatsing. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer Cloud Manager de implementatie uitvoert. Deze lange geheim voorgeheugensleutels in manifests zijn ongeldig, zodat kan de speler deze *clientlibs* niet downloaden.
+AEM as a Cloud Service verandert de lange geheim voorgeheugensleutels met elke plaatsing. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer Cloud Manager de implementatie uitvoert. Deze lange geheim voorgeheugensleutels in manifests zijn ongeldig, zodat kan de speler deze *clientlibs* niet downloaden.
 
 Als u `longCacheKey="none"` in uw `clientlib`-map gebruikt, worden de lange cachemoetsen volledig verwijderd voor deze *clientlibs*.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## Welke afbeeldingsindelingen worden aanbevolen voor een naadloze uitvoering van afbeeldingen in een as a Cloud Service AEM Screens-kanaal?{#screens-cloud-image-format}
+
+Het wordt aanbevolen om afbeeldingen in de notatie `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal te gebruiken voor de beste digitale signaalervaring.
+Afbeeldingen in de indeling `*.tif` (bestandsindeling Tagafbeelding) worden niet ondersteund in as a Cloud Service AEM Screens. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
