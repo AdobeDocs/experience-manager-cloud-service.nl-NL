@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 30%
@@ -103,7 +103,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
 1. U zult uw migratie bekijken die in **de tovenaar van de Overdracht van de Inhoud** wordt geplaatst, zoals aangetoond in het hieronder cijfer.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    Alle bestaande migratiesets worden weergegeven op de wizard **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
 
