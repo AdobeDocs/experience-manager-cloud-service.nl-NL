@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3199'
 ht-degree: 35%
 
 ---
@@ -141,19 +141,21 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
 
 
 
-1. Klik **Opslaan** nadat u alle velden hebt gevuld in het **Migratieset maken**-detailscherm.
+1. Klik op **Save** nadat u alle velden in het **Create Migration Set** detailscherm vult.
 
-1. U kunt de migratieset bekijken op de overzichtspagina *Overview*.
+1. U zult uw migratie bekijken die in **de tovenaar van de Overdracht van de Inhoud** wordt geplaatst, zoals aangetoond in het hieronder cijfer.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle bestaande migratiesets op dit scherm worden weergegeven op de pagina *Overzicht* met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
+   Alle bestaande migratiesets worden weergegeven op de wizard **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
    * Een *groene cloud* geeft aan dat u het extractieproces kunt voltooien.
    * Een *geel pictogram* geeft aan dat u de bestaande migratieset niet hebt gemaakt en dat de specifieke migratieset door een andere gebruiker in dezelfde instantie wordt gemaakt.
 
-1. Selecteer een migratieset op de overzichtspagina en klik op **Properties** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de containernaam of de service-URL te wijzigen.
+1. Selecteer een migratieset en klik op **Eigenschappen** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de naam **Migratieset** of **Service URL** te wijzigen.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Extractieproces in Content Transfer {#extraction-process}
