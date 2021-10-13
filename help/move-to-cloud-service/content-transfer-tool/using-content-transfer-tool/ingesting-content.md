@@ -1,0 +1,57 @@
+---
+title: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
+description: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
+source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 34%
+
+---
+
+
+# Inhoud in doel invoegen in gereedschap Inhoud overbrengen {#ingesting-content}
+
+## Ingestieproces in gereedschap Inhoud overbrengen {#ingestion-process}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion"
+>title="Inktatie van inhoud"
+>abstract="Ingestie verwijst naar het opnemen van inhoud van de migratie die is ingesteld in de Cloud Service-instantie van het doel. De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Opname aanvullen"
+
+Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
+>[!NOTE]
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Raadpleeg [Ingesting met AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) voor meer informatie.
+
+1. Selecteer een migratieset van *Overzicht* pagina en klik **Ingest** om opname te beginnen. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Inhoud kan tegelijkertijd worden ingevoerd in een instantie Auteur of Publiceren. Selecteer de instantie waaraan u inhoud wilt toevoegen. Klik op **Ingest** om de innamefase te starten.
+
+   >[!IMPORTANT]
+   >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
+
+   >[!IMPORTANT]
+   >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
+
+   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om meer te leren.
+
+1. Zodra de opname volledig is, werkt de status aan **FINISHED** bij.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+
+## Opname aanvullen {#top-up-ingestion-process}
+
+De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
+
+>[!NOTE]
+>
+>Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
+
+Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
+
+1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+
+   >[!IMPORTANT]
+   >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit. Bovendien, klik op **de Zorg van de Klant** om een kaartje, zoals aangetoond in het voorafgaande cijfer te registreren.

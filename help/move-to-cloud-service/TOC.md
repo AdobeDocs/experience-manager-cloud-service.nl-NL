@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
+source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '177'
+ht-degree: 38%
 
 ---
 
@@ -38,8 +38,12 @@ ht-degree: 0%
       + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
       + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Richtlijnen en beste praktijken voor het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-      + [Aan de slag met het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [Aan de slag met het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Afhandeling van grote opslagplaatsen voor inhoud](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Inhoud in doel invoegen in gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Logboeken voor een migratieset weergeven](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+      + [Een migratieset verwijderen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [De tool Content Transfer gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + Gereedschap Toewijzing gebruiker {#user-mapping-tool}
          + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
