@@ -2,10 +2,10 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Raadpleeg onze cursus [Toegang tot AEM configureren voor beheerders](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers met Adobe IMS AEM als Cloud Service verifiëren en hoe Adobe IMS-gebruikers, gebruikersgroepen en productprofielen worden gebruikt om de toegang tot AEM en de functies en functies te beheren. Adobe ID vereist.
+>Raadpleeg onze cursus [Toegang tot AEM configureren voor beheerders](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers zich verifiëren met Adobe IMS om as a Cloud Service te AEM en hoe Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen worden gebruikt om de toegang tot AEM en de functies en functies te beheren. Adobe ID vereist.
 
 >[!NOTE]
 >
->IMS-aanmelding voor AEM als Cloud Service ondersteunt geen geneste groepen in de Admin Console.
+>AEM ondersteunt momenteel niet het toewijzen van groepen aan profielen. In plaats daarvan moeten gebruikers afzonderlijk worden toegevoegd.
 
 ## Belangrijkste kenmerken {#key-highlights}
 
@@ -132,7 +132,7 @@ Hieronder vindt u de belangrijkste OSGI-configuraties die moeten worden aangepas
 
 ### Producten en gebruikerstoegang beheren in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wanneer de Beheerder van het Product aan Admin Console het programma opent, zullen zij veelvoudige instanties van de AEM als Context van het Product van de Cloud Service zien, zoals hieronder getoond. Selecteer bijvoorbeeld een van de producten op de pagina **Overzicht**:
+Wanneer de Beheerder van het Product aan Admin Console het programma opent, zullen zij veelvoudige instanties van de AEM as a Cloud Service Context van het Product, zoals hieronder getoond zien. Selecteer bijvoorbeeld een van de producten op de pagina **Overzicht**:
 
 ![Instantieaanmelding](/help/security/assets/ims6.png)
 
