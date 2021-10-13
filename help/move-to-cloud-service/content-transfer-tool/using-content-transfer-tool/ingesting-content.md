@@ -1,7 +1,7 @@
 ---
 title: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
 description: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 34%
@@ -33,7 +33,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) om meer te leren.
+   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) om meer te leren.
 
 1. Zodra de opname volledig is, werkt de status aan **FINISHED** bij.
 

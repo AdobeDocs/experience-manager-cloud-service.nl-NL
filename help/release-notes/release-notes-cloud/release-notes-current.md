@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
    * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
    * Toewijzing van gebruikers mislukt niet meer als **Toegangstoken** na 24 uur verloopt. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
 
-* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Het gereedschap Inhoud overbrengen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) voor meer informatie.
+* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) voor meer informatie.
 
 * Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 

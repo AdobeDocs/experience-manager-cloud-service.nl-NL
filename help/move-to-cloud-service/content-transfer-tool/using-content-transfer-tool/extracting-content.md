@@ -1,10 +1,10 @@
 ---
 title: Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht
 description: Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 53%
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 >[!NOTE]
->Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Hiervoor moet u een `azcopy.config`-bestand configureren voordat extractie wordt uitgevoerd. Raadpleeg [Grote opslagplaatsen voor inhoud verwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie.
+>Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. Hiervoor moet u een `azcopy.config`-bestand configureren voordat extractie wordt uitgevoerd. Raadpleeg [Verwerking van grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie.
 
 1. Selecteer een migratieset op de pagina *Overview* en klik op **Extract** om de extractie te starten. Het dialoogvenster **Extractie van migratieset** wordt weergegeven en u klikt op **Extraheren** om de extractiefase te starten.
 
@@ -60,3 +60,7 @@ Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extra
    >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
    >
    >![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## Volgende functies {#whats-next}
+
+Nadat u de opdracht Inhoud uit bron extraheren hebt geleerd in het gereedschap Inhoud overbrengen, kunt u nu leren hoe u het opmaakproces in het gereedschap Inhoud overbrengen start. Zie [Inhoud invoegen in doel in gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor informatie over het opnemen van de migratieset met het gereedschap Inhoud overbrengen.

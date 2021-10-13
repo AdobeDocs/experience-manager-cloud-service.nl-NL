@@ -2,10 +2,10 @@
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Ondersteuning voor AzCopy is opgenomen in de CTT 1.5.4-release. U kunt de recent
 
 ### 3. Een bestand azcopy.config configureren {#configure-azcopy-config-file}
 
-Voor de bron AEM instantie, in crx-quickstart/cloud-migration, creeer een nieuw dossier genoemd azcopy.config.
+Voor de bron AEM instantie, in `crx-quickstart/cloud-migration`, creeer een nieuw dossier genoemd azcopy.config.
 
 De inhoud van dit configuratiebestand is anders, afhankelijk van het feit of uw bron AEM instantie een Azure- of Amazon S3-gegevensopslag gebruikt.
 
@@ -106,7 +106,8 @@ s3SecretKey=--REDACTED--
 
 Als het bovenstaande configuratiebestand is geïnstalleerd, wordt de voorkopieerfase van AzCopy uitgevoerd als onderdeel van elke volgende extractie. Als u wilt voorkomen dat het bestand wordt uitgevoerd, kunt u de naam van het bestand wijzigen of het bestand verwijderen.
 
-1. Begin een extractie van CTT UI. Raadpleeg [Het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) en [Extractieproces](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) voor meer informatie.
+1. Begin een extractie van CTT UI. Raadpleeg [Aan de slag met Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) en [Extractieproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) voor meer informatie.
+
 1. Bevestig dat de volgende regel in het extractielogboek wordt afgedrukt:
 
 ```
@@ -143,7 +144,7 @@ Met de release van Content Transfer Tool 1.5.4 hebben we AzCopy-ondersteuning to
 
 Als u AzCopy tijdens inname wilt gebruiken, dient u over een AEM as a Cloud Service versie te beschikken die ten minste versie 2021.6.5561 is.
 
-Begin met de auteursinvoer van CTT UI. Raadpleeg [Ingestieproces](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) voor meer informatie.
+Begin met de auteursinvoer van CTT UI. Raadpleeg [Ingestieproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) voor meer informatie.
 De logboekingangen van AzCopy zullen in het innamelogboek verschijnen. Ze zullen er als volgt uitzien:
 
 ```
@@ -174,3 +175,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## Volgende functies {#whats-next}
+
+Als u hebt geleerd dat u grote opslagplaatsen voor inhoud moet verwerken om de extractie- en insluitingsfasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen, bent u nu klaar om het extractieproces in het gereedschap voor de overdracht van inhoud te leren. Zie [Inhoud extraheren uit bron in gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) om te leren hoe u de migratieset kunt extraheren uit het gereedschap Inhoud overbrengen.
