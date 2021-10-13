@@ -2,9 +2,9 @@
 title: De tool Content Transfer gebruiken
 description: De tool Content Transfer gebruiken
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 35%
 
 ---
@@ -83,26 +83,24 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Selecteer de optie **Content Transfer** van de wizard **Content Migration**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. De onderstaande console wordt weergegeven wanneer u de eerste migratieset maakt. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
 
-   Daarnaast klikt u op **Gebruikerstoewijzingsconfiguratie maken** om het [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) te openen.
 
 1. Vul de velden in **Migratieset maken** scherm, zoals hieronder wordt beschreven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name**: Voer de naam van de migratieset in.
       >[!NOTE]
@@ -122,6 +120,9 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
+
+      ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >Als u van plan bent versies op te nemen als onderdeel van een migratieset en extra-ups uitvoert met `wipe=false`, dan moet u versiezuivering uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true`.
 
@@ -136,6 +137,7 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
          >* `/libs`
          >* `/home`
          >* `/etc` (sommige  `/etc` paden mogen worden geselecteerd in CTT)
+
 
 
 
