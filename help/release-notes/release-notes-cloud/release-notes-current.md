@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
+source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,16 @@ Bekijk de video [September 2021 van de Versie Overzicht](https://video.tv.adobe.
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
+* Annotatie van PDF-bestanden wordt nu ondersteund met native gereedschappen voor opmerkingen en annotaties uit Adobe Document Cloud. Annoteer de PDF-inhoud door tekst, markeringen, notities en tekeningen rechtstreeks in het voorvertoningsvenster van het document toe te voegen. Gebruikers kunnen ook naar interessepagina&#39;s in de PDF springen door op specifieke opmerkingen te klikken
+
 * Gebruikers kunnen de elementen die in de zoekresultaten worden weergegeven nu sorteren in de kolom- en kaartweergave. Het sorteren werkt op de kolommen Naam, Gemaakt, Gewijzigd of Geen.
 
    ![De zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave](/help/assets/assets/sort-searched-assets.png)
    *Afbeelding: U kunt de zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave.*
+
+### Nieuwe functie in het prerelease-kanaal [!DNL Assets] {#assets-prerelease-features}
+
+* [!DNL Assets] bevat nu een ingebouwde aansluiting voor audio- en video-transcriptie  [!DNL Azure Media Services] . Wanneer gevormd, worden de gesteunde dossiers automatisch getranscripeerd en produceren dossiers WebVTT. De WebVTT-bijschriften worden gebruikt voor een effectievere zoekfunctie, ondertiteling of vertaling voor gebruik als ondertitels.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -56,8 +62,8 @@ Bekijk de video [September 2021 van de Versie Overzicht](https://video.tv.adobe.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
