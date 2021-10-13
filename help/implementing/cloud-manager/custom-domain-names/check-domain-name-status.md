@@ -2,14 +2,14 @@
 title: Status domeinnaam controleren
 description: Status domeinnaam controleren
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Status domeinnaam {#check-status} controleren
+# Status domeinnaam controleren {#check-status}
 
 U kunt bepalen of uw domeinnaam met succes is geverifieerd door op het statuspictogram voor de domeinnaam te klikken in de tabel betreffende omgevingen op de pagina Domeininstellingen.
 
@@ -27,7 +27,7 @@ ProgressVerification wordt uitgevoerd. Deze status wordt meestal weergegeven nad
 *Controleer* opnieuw het pictogram naast de status.
 
 * **Verified, Deployment**
-FailedTXT verification was successfully. De CDN-implementatie is echter mislukt. Een vertegenwoordiger van de Adobe wordt automatisch op de hoogte gesteld.
+FailedTXT verification was successfully. De CDN-implementatie is echter mislukt. Neem contact op met uw Adobe-vertegenwoordiger.
 
 * **Domein geverifieerd en**
 geïmplementeerdDeze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
