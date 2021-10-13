@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 43%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 43%
       + [Overzicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Analysator van best practices gebruiken](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + De tool Content Transfer {#content-transfer-tool}
-      + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [Afhandeling van grote opslagplaatsen voor inhoud](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Richtlijnen en beste praktijken voor het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [Aan de slag met het gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [Afhandeling van grote opslagplaatsen voor inhoud](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [De tool Content Transfer gebruiken](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + Gereedschap Toewijzing gebruiker {#user-mapping-tool}
          + [Overzicht](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
