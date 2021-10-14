@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1049'
 ht-degree: 26%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 26%
 + [Applicaties voor AEM as a Cloud Service implementeren](/help/implementing/home.md)
 + Cloud Manager gebruiken {#using-cloud-manager}
    + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
-      + [Huidige opmerkingen bij de release (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Huidige opmerkingen bij de release (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Opmerkingen bij de release 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [Opmerkingen bij de release 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Opmerkingen bij de release 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Opmerkingen bij de release 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
@@ -184,8 +185,8 @@ ht-degree: 26%
       + [SPA](developing/hybrid/page-component.md)
       + [Dynamisch model naar componenttoewijzing](developing/hybrid/model-to-component-mapping.md)
       + [Modelroutering](developing/hybrid/routing.md)
-      + [The RemotePage Component](developing/hybrid/remote-page.md)
-      + [Editing an External SPA within AEM](developing/hybrid/editing-external-spa.md)
+      + [De RemotePage-component](developing/hybrid/remote-page.md)
+      + [Een externe SPA bewerken in AEM](developing/hybrid/editing-external-spa.md)
       + [Samengestelde onderdelen in SPA](developing/hybrid/composite-components.md)
       + [Rendering serverzijde](developing/hybrid/ssr.md)
       + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)

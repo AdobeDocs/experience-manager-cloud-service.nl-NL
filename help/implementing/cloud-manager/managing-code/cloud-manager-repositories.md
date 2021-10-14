@@ -1,9 +1,9 @@
 ---
 title: Opslagplaatsen voor Cloud Manager
 description: Opslagplaatsen voor Cloud Manager
-source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
+source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -118,4 +118,5 @@ Houd rekening met het volgende wanneer u git-submodules gebruikt:
 * De URL van de it moet exact in de hierboven beschreven syntaxis staan. Sluit om beveiligingsredenen geen referenties in deze URL&#39;s in.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
 * Git-submoduleverwijzingen worden opgeslagen naar specifieke it-opdrachten. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, moet het gecommitteerde referenced worden bijgewerkt, bijvoorbeeld door `git submodule update --remote` te gebruiken.
+* Tenzij anders nodig, wordt het ten zeerste aanbevolen &quot;oppervlakkige&quot; submodules te gebruiken. Om dit te doen, stel `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule in werking.
 

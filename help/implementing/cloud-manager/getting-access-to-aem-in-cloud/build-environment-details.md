@@ -2,9 +2,9 @@
 title: Omgevingsdetails samenstellen
 description: Omgevingsdetails samenstellen - Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f39cc7bcbfe11c64a0fc7bb673f9e9286214106d
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 18.04.
 * Apache Maven 3.6.0 is geïnstalleerd.
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2, en Azul Zulu 11.0.11.
+* Standaard wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk1.8.0_202` die Oracle JDK 8u202 bevat. Zie [JDK-versie](#alternate-maven-jdk-version) van Alternate Maven Execution voor meer informatie.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn:
 
    * bzip2
@@ -71,7 +72,7 @@ Met de [Insteekmodule Gemaakt gereedschap](https://maven.apache.org/plugins/mave
 
 Hierdoor wordt voor alle plug-ins met behoud van gereedschappen het Oracle JDK, versie 11, gebruikt.
 
-Wanneer het gebruiken van deze methode, Maven zelf loopt nog gebruikend het gebrek JDK (Oracle 8). Daarom werkt het controleren of afdwingen van de Java-versie via plug-ins zoals de Apache Maven Enforcer Plugin niet en mogen dergelijke plug-ins niet worden gebruikt.
+Wanneer u deze methode gebruikt, wordt Maven zelf nog steeds uitgevoerd met de standaard-JDK (Oracle 8) en wordt de omgevingsvariabele JAVA_HOME niet gewijzigd. Daarom werkt het controleren of afdwingen van de Java-versie via plug-ins zoals de Apache Maven Enforcer Plugin niet en mogen dergelijke plug-ins niet worden gebruikt.
 
 De momenteel beschikbare leverancier/versiecombinaties zijn:
 
@@ -89,11 +90,7 @@ De momenteel beschikbare leverancier/versiecombinaties zijn:
 
 Het is ook mogelijk om Azul 8 of Azul 11 te selecteren als JDK voor de volledige executie Maven. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst waarin de toolkettenconfiguratie nog voor toolketens-bewuste Maven plugins wordt toegepast. Hierdoor werkt het controleren en afdwingen van de Java-versie met de [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 
-Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud 11 of 8 hebben. Eventuele andere waarden worden genegeerd. Indien 11 is opgegeven, wordt Azul 11 gebruikt. Indien 8 is opgegeven, wordt Azul 8 gebruikt.
-
->[!NOTE]
->In een toekomstige versie van Cloud Manager, die momenteel wordt geschat op oktober 2021, wordt de standaard-JDK gewijzigd en wordt de standaard 11 Azul. Projecten die niet compatibel zijn met Java 11 moeten dit bestand zo snel mogelijk met inhoud 8 maken om ervoor te zorgen dat deze switch geen invloed heeft op deze bestanden.
-
+Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud 11 of 8 hebben. Eventuele andere waarden worden genegeerd. Als 11 wordt gespecificeerd, wordt Azul 11 gebruikt en JAVA_HOME milieuvariabele wordt geplaatst aan `/usr/lib/jvm/jdk-11.0.11`. Als 8 wordt gespecificeerd, wordt Azul 8 gebruikt en JAVA_HOME milieuvariabele wordt geplaatst aan `/usr/lib/jvm/jdk-8.0.292`.
 
 ## Omgevingsvariabelen {#environment-variables}
 
