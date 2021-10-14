@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '764'
 ht-degree: 6%
 
 ---
@@ -20,10 +20,10 @@ Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor 
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* Belangrijke [Adobe-bestandsindelingen](#adobe-formats) die zijn gemaakt door Adobe-toepassingen en -services, zoals [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] en [!DNL Adobe Acrobat] of PDF.
+* Sleutel [Adobe bestandsindelingen](#adobe-formats) geproduceerd door Adobe toepassingen en services, zoals [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] en [!DNL Adobe Acrobat] of PDF.
 * Sleutel [bestandsindelingen voor beeldbewerking](#image-formats).
 * [Camera Raw bestandsindelingen ](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Algemene [documentindelingen](#document-formats), inclusief Microsoft Office en de indeling Document openen.
+* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
@@ -80,7 +80,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | PSD   ‡ | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Dit is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet worden ondersteund in [!DNL Dynamic Media]:
 
@@ -89,7 +89,7 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 * PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
 * PSD-bestanden met een bitdiepte groter dan 16.
 * TIFF-bestanden met zwevende-kommagegevens.
-* TIFF-bestanden met LAB-kleurruimte.
+* TIFF-bestanden met Lab-kleurruimte.
 
 ## 3D-indelingen {#support-3d-formats}
 
@@ -146,7 +146,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
+| ePub | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - |
@@ -214,8 +214,6 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Niet ondersteund | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Beweging JPEG 2000 | Motion JPEG 2000-codec | - |
 
 ## Audio-indelingen {#audio-formats}
 
