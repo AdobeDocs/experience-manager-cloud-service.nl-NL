@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
+source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,44 +45,47 @@ Alvorens u begint om uw code op te stellen, moet u uw pijpleidingsmontages van [
 >
 >U kunt de pijpleidingsmontages na aanvankelijke opstelling veranderen.
 
-## Het vormen van de Montages van de Pijpleiding van [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Een nieuwe productiepijpleiding toevoegen {#adding-production-pipeline}
 
-Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u klaar om uw plaatsingspijpleiding te installeren.
+Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u bereid om een productiepijplijn toe te voegen.
 
-Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te configureren:
+Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw productiepijplijn te configureren:
 
-1. Klik **De Pijpleiding van de Opstelling** om uw pijpleiding te installeren en te vormen.
+1. Navigeer naar de **Pipelines**-kaart van de pagina **Program Overview**.
+Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
 
-   ![](assets/set-up-pipeline1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
 
-1. De **Setup Pipeline** schermvertoningen. Selecteer de vertakking en klik **Next**.
+1. **De vertoningen van de** de dialoogdoos van de Pijl van de Productie toevoegen. Ga de pijpleidingsnaam in.
 
-   ![](assets/setup-1.png)
+   Daarnaast kunt u **Implementatietrigger** en **Belangrijk foutgedrag** ook instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
 
-1. Configureer uw implementatieopties.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
-   ![](assets/setup-pipeline.png)
 
    U kunt de trekker bepalen om de pijpleiding te beginnen:
 
    * **Handmatig**  - de UI gebruikt manueel begint de pijpleiding.
    * **Bij de Veranderingen**  van het Git - begint de pijpleiding CI/CD wanneer er toezeggingen aan de gevormde git tak worden toegevoegd. Zelfs als u deze optie selecteert, kunt u de pijpleiding altijd manueel beginnen.
 
-   Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet.
+      Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet.
 
-   Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
+      Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
 
-   * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
-   * **Onmiddellijk**  annuleren - Als u deze optie selecteert, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-   * **Direct**  goedkeuren - Als geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+      * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
+      * **Onmiddellijk**  annuleren - Als u deze optie selecteert, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+      * **Direct**  goedkeuren - Als geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
+1. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Klik op **Opslaan**.
 
-1. De montages van de productiepijpleiding omvatten een derde lusje geëtiketteerd als **ErvingsAudit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+
+1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
    >[!NOTE]
-   >U moet op **toevoegen Nieuwe Pagina** klikken om uw eigen douaneverbinding te bepalen.
+   >U moet op **Add Pagina** klikken om uw eigen douaneverbinding te bepalen.
 
-   ![](assets/setup-3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
 
    Klik **Nieuwe pagina toevoegen** om een weg URL te verstrekken die in de Controle van de Ervaring moet worden omvat.
 
@@ -103,9 +106,13 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw pijplijn te 
    >[!NOTE]
    > De pagina&#39;s die worden gevormd zullen aan de dienst worden voorgelegd en volgens prestaties, toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests geëvalueerd.
 
-1. Klik **Save** van **Edit Pijpleiding** scherm. Op de pagina **Overzicht** wordt nu **Program**-kaart implementeren weergegeven. Klik **Implementeer** knoop om uw programma op te stellen.
+1. Klik op **Opslaan**. De nieuwe productiepijplijn wordt nu weergegeven in de **Pipelines**-kaart.
 
-   ![](assets/configure-pipeline5.png)
+   De pijpleiding wordt getoond op de kaart op het huisscherm met drie acties, zoals hieronder getoond:
+
+   * **Voeg toe**  - staat het toevoegen van een nieuwe pijpleiding toe.
+   * **Toegang tot repo-informatie** : hiermee kan de gebruiker de informatie ophalen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
+   * **Leer meer**  - navigeert aan het begrip van de CI/CD bron van de pijpleidingsdocumentatie.
 
 ### Een productiepijpleiding bewerken {#editing-prod-pipeline}
 
