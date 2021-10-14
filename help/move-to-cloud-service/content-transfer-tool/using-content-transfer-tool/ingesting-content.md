@@ -1,9 +1,9 @@
 ---
 title: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
 description: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '502'
 ht-degree: 34%
 
 ---
@@ -23,7 +23,13 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 >[!NOTE]
 >Als Amazon S3 of Azure Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Raadpleeg [Ingesting met AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) voor meer informatie.
 
-1. Selecteer een migratieset van *Overzicht* pagina en klik **Ingest** om opname te beginnen. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Inhoud kan tegelijkertijd worden ingevoerd in een instantie Auteur of Publiceren. Selecteer de instantie waaraan u inhoud wilt toevoegen. Klik op **Ingest** om de innamefase te starten.
+1. Selecteer een migratieset van **Content Transfer** pagina en klik **Ingest** om opname te beginnen.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Inhoud kan tegelijkertijd worden ingevoerd in een instantie Auteur of Publiceren. Selecteer de instantie waaraan u inhoud wilt toevoegen. Klik op **Ingest** om de innamefase te starten.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
    >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
@@ -31,11 +37,15 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    >[!IMPORTANT]
    >Wanneer de optie **Bestaande inhoud op een Cloud-instantie vegen voordat de optie** wordt ingesloten, wordt de gehele bestaande opslagruimte verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die wordt toegevoegd aan de groep **beheerders**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-03.png)
 
-   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de bovenstaande afbeelding wordt getoond. Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) om meer te leren.
+   Klik bovendien op **Klantenservice** om een ticket te registreren, zoals in de onderstaande afbeelding wordt getoond.
 
-1. Zodra de opname volledig is, werkt de status aan **FINISHED** bij.
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-04.png)
+
+   Ook, verwijs naar [Belangrijke Overwegingen voor het Gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) om meer te leren.
+
+1. Wanneer de inname is voltooid, wordt de status onder **Inname door auteur** bijgewerkt naar **FINISHED**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -44,7 +54,6 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
->
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
 Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
