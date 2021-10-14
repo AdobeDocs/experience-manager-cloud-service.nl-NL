@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service v
 description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.10.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
+source-git-commit: 62e9466fdfd6d6ac63dad9a2bc19693f7dc8d098
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ De volgende release is gepland voor 4 november 2021.
 
 * Voeg IP de tovenaar van de Lijst van gewenste personen nu toe zal de gebruiker informeren als maximum toegestaan aantal IP Lijsten van gewenste personen is bereikt.
 
-* De documentatie van de API voor Cloud Manager bevat nu een interactieve speelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [Afspeelplaats van API voor cloudbeheer](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+* De documentatie van de API voor Cloud Manager bevat nu een interactieve speelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer informatie.
 
 * De knopinfo op de programmakaart is beschrijfbaarder als een selectieoptie onder &#39;Navigeren naar&#39; is uitgeschakeld. Het toont nu &quot;een productiemilieu bestaat niet.&quot;
 

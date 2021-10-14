@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ In Cloud Manager zijn er twee typen pijplijn:
 
    Raadpleeg [Uitsluitend pijplijnen ](configure-pipeline.md#non-production-pipelines) Niet-productie en alleen codekwaliteit voor meer informatie.
 
->[!NOTE]
->Om uw pijpleiding te vormen, moet u:
-> * bepaal de trekker die de pijpleiding zal beginnen.
-> * de parameters voor de implementatie van de productie te definiëren.
-> * de testparameters voor de prestaties configureren.
+   >[!NOTE]
+   >Om uw pijpleiding te vormen, moet u:
+   > * bepaal de trekker die de pijpleiding zal beginnen.
+   > * de parameters voor de implementatie van de productie te definiëren.
+   > * de testparameters voor de prestaties configureren.
 
 
 ## Productiepijpleiding instellen {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
 
 1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
 
-1. Klik op **Edit** van **Pipelines** kaart.
+1. Klik op **..** van **Pipelines** kaart en klik op **Edit**, zoals aangetoond in hieronder figuur.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. Met het tabblad **Broncode** kunt u de opslagplaats bijwerken. Klik op **Toegang tot repo-info** om de gegevensopslagruimte bij te werken.
+1. Het dialoogvenster **Productiepijplijn bewerken** wordt weergegeven.
 
-   >[!NOTE]
-   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+   1. Met de tab **Configuration** kunt u de **Pipeline Name**, **Deployment Trigger** en **Important Metrics Failed Behavior** bijwerken.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. Met het tabblad **Omgevingen** kunt u het werkgebied en de productieopties bijwerken.
+   1. Met het tabblad **Bron** kunt u weblaagconfiguraties negeren en bijwerken vanuit **Implementatieopties voor productie**..
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. Met de optie **Experience Audit** kunt u nieuwe pagina&#39;s bijwerken of toevoegen.
+   1. Met de optie **Experience Audit** kunt u nieuwe pagina&#39;s bijwerken of toevoegen.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Klik op **Save** zodra u klaar bent met het bewerken van de pijplijn.
+1. Klik op **Update** zodra u klaar bent met het uitgeven van de pijpleiding.
 
 ## Uitsluitend pijplijnen zonder productie en codekwaliteit {#non-production-pipelines}
 
-Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die als **Niet-productiepijpleidingen** worden bedoeld. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Zij kunnen naar keuze ook opstellen aan AEM als milieu van de Cloud Service.
+Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die als **Niet-productiepijpleidingen** worden bedoeld. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Ze kunnen optioneel ook worden geïmplementeerd in AEM as a Cloud Service omgeving.
 
 Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
