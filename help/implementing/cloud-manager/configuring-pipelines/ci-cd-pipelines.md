@@ -2,15 +2,25 @@
 title: CI-CD-pijpleidingen
 description: CI-CD-pijpleidingen
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 
 # Cloud Manager CI-CD Pipelines {#intro-cicd}
+
+## Inleiding {#introduction}
+
+>[!NOTE]
+>Een CI/CD pijpleiding in de Manager van de Wolk wordt teweeggebracht door een gebeurtenis, zoals een trekkingsverzoek van een broncodebewaarplaats die, een codeverandering, of een regelmatig programma is om een versieaanhouding aan te passen.
+
+Om uw pijpleiding te vormen, moet u:
+* bepaal de trekker die de pijpleiding zal beginnen
+* de parameters definiëren die de productie-implementatie beheersen
+* configureren van de testparameters voor de prestaties
 
 In Cloud Manager zijn er twee typen pijplijn:
 
@@ -31,19 +41,3 @@ Een pijpleiding van de niet-Productie richt code-kwaliteit scans in werking te s
 
 >[!NOTE]
 >Raadpleeg de pijplijnen Niet-productie en Alleen kwaliteit van code voor meer informatie.
-
-De plaatsing en de Kwaliteit van de Code die in Productie en Non-Productie pijpleiding in de Manager van de Wolk wordt gesteund zijn gecategoriseerd in twee verschillende types:
-
-* Voorkant
-* Volledige stapel
-
-De volgende tabel geeft een overzicht van de pijpleidingen:
-
-
->[!NOTE]
->Een CI/CD pijpleiding in de Manager van de Wolk wordt teweeggebracht door een gebeurtenis, zoals een trekkingsverzoek van een broncodebewaarplaats die, een codeverandering, of een regelmatig programma is om een versieaanhouding aan te passen.
->
->Om uw pijpleiding te vormen, moet u:
->* bepaal de trekker die de pijpleiding zal beginnen
->* de parameters definiëren die de productie-implementatie beheersen
->* configureren van de testparameters voor de prestaties

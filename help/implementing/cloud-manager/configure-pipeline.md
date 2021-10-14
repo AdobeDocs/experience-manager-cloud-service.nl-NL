@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. Het **tabblad Bron** biedt u een optie om weblaagconfiguratie voor uw pijplijn te negeren en **Pauzeren te controleren of uit te schakelen voordat u de installatie uitvoert naar Productie** en **Scheduled** opties van **Implementatieopties voor productie**.
+   1. Het **tabblad Bron** biedt u een optie om **Pauzeren te controleren of uit te schakelen voordat u de installatie uitvoert naar Productie** en **Geplande** opties van **Implementatieopties voor productie**.
 
-      >[!NOTE]
-      >Als **Configuratie van de Rij van het Web negeren** ongecontroleerd wordt verlaten, zal de pijpleiding ook Webrijconfiguratie opstellen.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. Met de optie **Experience Audit** kunt u nieuwe pagina&#39;s bijwerken of toevoegen.
 
@@ -148,41 +145,59 @@ Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, 
 
 Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
-1. Open de tegel **Niet-productiepijpleidingen** vanuit het startscherm van Cloud Manager.
+1. Open de **Pipelines**-kaart vanuit het startscherm van Cloud Manager. Klik op **+Add** en selecteer **Niet-productiepijplijn toevoegen**.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Klik op **Add** knoop, om de Naam van de Pijpleiding, het Type van Pijpleiding, en de Tak van het Git te specificeren.
+1. **De vertoningen van de**  de dialoogdoos van de Pijl van de Niet-Productie toevoegen. Selecteer het type pijplijn dat u wilt maken, **Code Quality Pipeline** of **Deployment Pipeline**.
 
-   Bovendien, kunt u de Trigger van de Plaatsing van de opstelling en Belangrijk Gedrag van de Mislukking van de Opties van de Pijpleiding ook plaatsen.
+   Daarnaast kunt u **Implementatietrigger** en **Belangrijk foutgedrag** ook instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Klik **sparen** en de pijpleiding wordt getoond op de kaart op het huisscherm met vijf acties, zoals hieronder getoond:
+1. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Klik op **Opslaan**.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **Bewerken**  - staat het uitgeven van de pijpleidingsmontages toe
-   * **Details**  - verstrekt details van de pijpleidingsuitvoering
-   * **Build**  - navigeert aan de uitvoeringspagina, waarvan de pijpleiding kan worden uitgevoerd
-   * **Toegang tot repo-informatie** : hiermee kan de gebruiker de informatie ophalen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager
+1. De nieuwe niet-productiepijplijn wordt nu weergegeven in de **Pipelines**-kaart.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   De pijpleiding wordt getoond op de kaart op het huisscherm met drie acties, zoals hieronder getoond:
+
+   * **Voeg toe**  - staat het toevoegen van een nieuwe pijpleiding toe.
+   * **Toegang tot repo-informatie** : hiermee kan de gebruiker de informatie ophalen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
    * **Leer meer**  - navigeert aan het begrip van de CI/CD bron van de pijpleidingsdocumentatie.
 
 ### Een niet-productiepijplijn bewerken {#editing-nonprod-pipeline}
 
-U kunt de pijpleidingsconfiguraties van de **pagina van het Overzicht van het Programma** uitgeven.
+U kunt de pijpleidingsconfiguraties van **Pipelines kaart** van **Overzicht van het Programma** pagina uitgeven.
 
 Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te bewerken:
 
 1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
 
-1. Selecteer het tabblad **Niet-productie** en klik op **Bewerken** nadat u de gewenste pijpleidingen hebt geselecteerd.
+1. Selecteer de niet-productiepijplijn en klik op **..**. Klik op **Edit**, zoals aangetoond in het hieronder cijfer.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. Selecteer de gewenste opslagplaats en andere vereiste updates en klik op **Opslaan**.
+1. Het dialoogvenster **Productiepijplijn bewerken** wordt weergegeven.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. Met de tab **Configuration** kunt u de **Pipeline Name**, **Deployment Trigger** en **Important Metrics Failed Behavior** bijwerken.
+
+      >[!NOTE]
+      >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. Op het tabblad **Broncode** kunt u de **opslagplaats** en de **Git Branch** bijwerken.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Klik op **Update** zodra u klaar bent met het uitgeven van de niet-productiepijplijn.
+
 
 ## De volgende stappen {#the-next-steps}
 
