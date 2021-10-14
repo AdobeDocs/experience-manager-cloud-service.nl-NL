@@ -2,10 +2,10 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 30%
+source-wordcount: '742'
+ht-degree: 31%
 
 ---
 
@@ -79,13 +79,11 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 
-      ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >Als u van plan bent versies op te nemen als onderdeel van een migratieset en extra-ups uitvoert met `wipe=false`, dan moet u versiezuivering uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true`.
+         >[!NOTE]
+         >Als u van plan bent versies op te nemen als onderdeel van een migratieset en extra-ups uitvoert met `wipe=false`, dan moet u versiezuivering uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true`.
 
-      1. **Toewijzing van IMS-gebruikers en -groepen** opnemen: Selecteer de optie om toewijzingen van gebruikers en groepen IMS op te nemen.
-Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie.
 
       1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
@@ -95,8 +93,6 @@ Raadpleeg [Hulpprogramma voor gebruikerstoewijzing](https://experienceleague.ado
          >* `/libs`
          >* `/home`
          >* `/etc` (sommige  `/etc` paden mogen worden geselecteerd in CTT)
-
-
 
 
 1. Klik op **Save** nadat u alle velden in het **Create Migration Set** detailscherm vult.
