@@ -1,10 +1,10 @@
 ---
 title: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
 description: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
 1. Wanneer de inname is voltooid, wordt de status onder **Inname door auteur** bijgewerkt naar **FINISHED**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Opname aanvullen {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 
 Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
 
-1. Ga naar de pagina *Overview* en selecteer de migratieset waarvoor u de aanvullingsopname wilt uitvoeren. Klik op **Ingest** om de opname te starten. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
+1. Navigeer naar de wizard **Inhoud overbrengen** en selecteer de migratieset waarvoor u de bovenste opname wilt uitvoeren. Klik op **Ingest** om de opname te starten.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
+
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Schakel de optie **Bestaande inhoud vegen op een Cloud-instantie uit voordat u** inneemt om te voorkomen dat de bestaande inhoud wordt verwijderd uit de vorige insluitingsactiviteit. Bovendien, klik op **de Zorg van de Klant** om een kaartje, zoals aangetoond in het voorafgaande cijfer te registreren.
+
+## Volgende functies {#whats-next}
+
+Als u Ingesterende inhoud hebt geleerd in Doel in het gereedschap Inhoud overbrengen, kunt u logbestanden weergeven na elke stap (extractie en opname) en op fouten zoeken. Zie [Logbestanden voor een migratieset weergeven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) voor meer informatie.
