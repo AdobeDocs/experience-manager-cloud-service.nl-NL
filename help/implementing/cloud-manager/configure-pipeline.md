@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,10 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. Met het tabblad **Bron** kunt u weblaagconfiguraties negeren en bijwerken vanuit **Implementatieopties voor productie**..
+   1. Het **tabblad Bron** biedt u een optie om weblaagconfiguratie voor uw pijplijn te negeren en **Pauzeren te controleren of uit te schakelen voordat u de installatie uitvoert naar Productie** en **Scheduled** opties van **Implementatieopties voor productie**.
+
+      >[!NOTE]
+      >Als **Configuratie van de Rij van het Web negeren** ongecontroleerd wordt verlaten, zal de pijpleiding ook Webrijconfiguratie opstellen.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
