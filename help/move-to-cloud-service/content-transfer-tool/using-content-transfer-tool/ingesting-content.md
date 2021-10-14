@@ -1,15 +1,15 @@
 ---
-title: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
-description: Inhoud in doel invoegen in gereedschap Inhoud overbrengen
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: Inhoud in doel invoegen
+description: Inhoud in doel invoegen
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 27%
+source-wordcount: '542'
+ht-degree: 28%
 
 ---
 
 
-# Inhoud in doel invoegen in gereedschap Inhoud overbrengen {#ingesting-content}
+# Inhoud in doel invoegen {#ingesting-content}
 
 ## Ingestieproces in gereedschap Inhoud overbrengen {#ingestion-process}
 
