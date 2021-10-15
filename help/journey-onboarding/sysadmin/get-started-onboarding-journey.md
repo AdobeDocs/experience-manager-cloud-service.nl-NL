@@ -3,16 +3,17 @@ title: Aan de slag met het instapproces
 description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een instapreis
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
+source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
 # Aan de slag met het instapproces {#getting-started}
 
-Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service voor uw organisatie instelt. Dit omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid login en tot hun AEM als middelen van de Cloud Service toegang hebben.
+Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM as a Cloud Service voor uw organisatie plaatst. Dit omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid login en tot hun AEM as a Cloud Service middelen toegang hebben.
 
 ## Doelstelling {#objective}
 
@@ -26,6 +27,11 @@ Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 >[!NOTE]
 >Voordat je het instapproces start, moet je eerst meer weten over Adobe Admin Console. De Adobe Admin-console is een centrale plaats voor het beheren en beheren van uw Adobe-productlicenties en -gebruikers. Uw systeembeheerder zal zich bij de console van Admin van Adobe aanmelden om gebruikers en meer toe te voegen of te verwijderen. Zie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) voor meer informatie.
 
+## Onboarding van AEM as a Cloud Service {#onboarding-process}
+
+Leer hoe u vanaf de contractfase as a Cloud Service kunt AEM door de omgevingen in te stellen met gebruik van Cloud Manager.
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Aanmelden bij Admin Console {#steps-admin-console}
 
@@ -67,4 +73,3 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 ## Volgende functies {#whats-next}
 
 Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw aan boord gaan reis door het document [te herzien toewijzen de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) moeten voortzetten.
-
