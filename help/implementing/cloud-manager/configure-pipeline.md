@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   U kunt de trekker bepalen om de pijpleiding te beginnen:
+   U kunt de plaatsingstrekkers bepalen om de pijpleiding te beginnen.
 
    * **Handmatig**  - de UI gebruikt manueel begint de pijpleiding.
    * **Bij de Veranderingen**  van het Git - begint de pijpleiding CI/CD wanneer er toezeggingen aan de gevormde git tak worden toegevoegd. Zelfs als u deze optie selecteert, kunt u de pijpleiding altijd manueel beginnen.
@@ -71,14 +71,16 @@ Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
       Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet.
 
       Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
+   U kunt het belangrijke gedrag van mislukkingsmetriek bepalen om de pijpleiding te beginnen.
 
-      * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
-      * **Onmiddellijk**  annuleren - Als u deze optie selecteert, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-      * **Direct**  goedkeuren - Als geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+   * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
+   * **Direct**  mislukt - Als deze optie is geselecteerd, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+   * **Ga onmiddellijk**  verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
-1. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Klik op **Opslaan**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een tweede tabblad met het label **Broncode**. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Klik op **Opslaan**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
@@ -150,6 +152,8 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
 
 Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die als **Niet-productiepijpleidingen** worden bedoeld. Deze pijpleidingen voeren altijd de bouw en de stappen van de codekwaliteit uit. Ze kunnen optioneel ook worden geïmplementeerd in AEM as a Cloud Service omgeving.
 
+### Een nieuwe niet-productiepijplijn toevoegen {#adding-non-production-pipeline}
+
 Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
 1. Open de **Pipelines**-kaart vanuit het startscherm van Cloud Manager. Klik op **+Add** en selecteer **Niet-productiepijplijn toevoegen**.
@@ -158,7 +162,7 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
 1. **De vertoningen van de**  de dialoogdoos van de Pijl van de Niet-Productie toevoegen. Selecteer het type pijplijn dat u wilt maken, **Code Quality Pipeline** of **Deployment Pipeline**.
 
-   Daarnaast kunt u **Implementatietrigger** en **Belangrijk foutgedrag** ook instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
+   Daarnaast kunt u **Implementatietrigger** en **Belangrijk gedrag voor metrische fouten** instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te
 
 1. Het dialoogvenster **Productiepijplijn bewerken** wordt weergegeven.
 
-   1. Met de tab **Configuration** kunt u de **Pipeline Name**, **Deployment Trigger** en **Important Metrics Failed Behavior** bijwerken.
+   1. Met de tab **Configuration** kunt u het **Pipeline Name**, **Implementatietrigger** en **Belangrijke metrische foutgedragingen** bijwerken.
 
       >[!NOTE]
       >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
