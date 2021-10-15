@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ Voer de volgende stappen uit om het gedrag en de voorkeuren voor uw productiepij
 1. Navigeer naar de **Pipelines**-kaart van de pagina **Program Overview**.
 Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **De vertoningen van de** de dialoogdoos van de Pijl van de Productie toevoegen. Ga de pijpleidingsnaam in.
 
-   Daarnaast kunt u **Implementatietrigger** en **Belangrijk foutgedrag** ook instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
+   Daarnaast kunt u **Implementatietrigger** en **Belangrijk gedrag voor metrische fouten** instellen vanuit **Implementatieopties**. Klik op **Doorgaan**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -75,19 +75,24 @@ Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
 
    * **Telkens**  vragen - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
    * **Direct**  mislukt - Als deze optie is geselecteerd, wordt de pijplijn geannuleerd wanneer een belangrijke fout optreedt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-   * **Ga onmiddellijk**  verder - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+   * **Ga onmiddellijk**  door - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een tweede tabblad met het label **Broncode**. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Klik op **Opslaan**.
+1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een tweede tabblad met het label **Broncode**. **Volledige** stapelcodes geselecteerd. U kunt de **Repository** en **Git Branch** kiezen. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klik op **Doorgaan**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   Implementatieopties voor productie:
+
+   * **Pauzeren vóór implementatie naar productie**: Met deze optie kan de implementatie vóór de productie worden gepauzeerd.
+   * **Gepland**: Met deze optie kan de gebruiker de geplande productieimplementatie inschakelen.
 
 1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
    >[!NOTE]
    >U moet op **Add Pagina** klikken om uw eigen douaneverbinding te bepalen.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    Klik **Nieuwe pagina toevoegen** om een weg URL te verstrekken die in de Controle van de Ervaring moet worden omvat.
 
@@ -234,6 +239,28 @@ Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Klik op **Update** zodra u klaar bent met het uitgeven van de niet-productiepijplijn.
+
+### Aanvullende niet-productie pijplijnhandelingen {#additional-nonprod-actions}
+
+#### Een niet-productiepijpleiding uitvoeren {#run-nonprod}
+
+U kunt de productiepijpleiding van de kaart van Pijpleidingen in werking stellen:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Klik op **..** van **Pipelines** kaart en klik op **Run**, zoals aangetoond in hieronder figuur.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Schrapping van een niet-productiepijpleiding {#delete-nonprod}
+
+U kunt de productiepijpleiding van de kaart van Pijpleidingen schrappen:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Klik op **..** van **Pipelines** kaart en klik op **Delete**, zoals aangetoond in hieronder figuur.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## De volgende stappen {#the-next-steps}
