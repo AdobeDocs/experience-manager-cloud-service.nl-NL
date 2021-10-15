@@ -4,7 +4,7 @@ description: Leer hoe u workflowinstanties beheert
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -94,7 +94,7 @@ detailsHiermee wordt een venster geopend waarin de
 HistorieHiermee geeft u details weer over de workflowgeschiedenis.
 
 * **Opnieuw** StepExecutes de de componenteninstantie van de Stap van het Manuscript opnieuw. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt.** De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
+* **** Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
 * **Beëindigen en** Opnieuw proberenGelijkaardig aan  **** Terminateeg behalve dat wordt een nieuwe werkschemainstantie begonnen gebruikend de originele nuttige lading, de titel, en de beschrijving.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
@@ -170,13 +170,12 @@ U kunt de maximumgrootte van inbox plaatsen door **de Dienst van het Werkschema*
 
 ## Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten {#using-workflow-variables-customer-datastore}
 
-Gegevens die in workflows worden gebruikt, worden opgeslagen in de door Adobe verschafte opslag (JCR). Deze gegevens kunnen van nature gevoelig zijn. U wilt mogelijk alle door de gebruiker gedefinieerde metagegevens en gegevens opslaan in uw eigen beheerde opslagruimte in plaats van de door de gebruiker verschafte Adobe opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
+Gegevens die door workflows worden verwerkt, worden opgeslagen in de door Adobe verschafte opslag (JCR). Deze gegevens kunnen van nature gevoelig zijn. U wilt mogelijk alle door de gebruiker gedefinieerde metagegevens en gegevens opslaan in uw eigen beheerde opslagruimte in plaats van de door de gebruiker verschafte Adobe opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
 
 ### Het model instellen voor externe opslag van metagegevens {#set-model-for-external-storage}
 
-Op het niveau van werkschemamodel, is het gepland om een vlag te introduceren om erop te wijzen dat het model (en zijn runtime instanties) externe opslag van meta-gegevens heeft. Gebruikersmetagegevens blijven niet behouden in de JCR voor de workflowexemplaren van de modellen die zijn gemarkeerd voor externe opslag.
+Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft dat het model (en de runtimeinstanties) externe opslag van metagegevens heeft. Workflowvariabelen blijven niet behouden in JCR voor de workflowinstanties van de modellen die zijn gemarkeerd voor externe opslag.
 
-Als u deze functie wilt activeren, moet u de externe markering voor persistentie inschakelen: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
 De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:content node* van het workflowmodel. Deze vlag zal in werkschemameta-gegevens als *cq:userMetaDataCustomPersistenceEnabled* worden gepersisteerd.
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet instellen.
@@ -184,6 +183,8 @@ In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet ins
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
+
+Als u de variabelen extern wilt opslaan, moet u de API&#39;s implementeren die in de workflow beschikbaar worden gesteld.
 
 UserMetaDataPersistenceContext
 
