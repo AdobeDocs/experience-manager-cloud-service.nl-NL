@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -89,22 +89,24 @@ Klik op **+Add** en selecteer **Productiepijplijn toevoegen**.
 
 1. Het dialoogvenster **Productiepijplijn toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
-   >[!NOTE]
-   >U moet op **Add Pagina** klikken om uw eigen douaneverbinding te bepalen.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >U moet op **Add Pagina** klikken om uw eigen douaneverbinding te bepalen. Paginapad moet beginnen met `/`.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    Klik **Nieuwe pagina toevoegen** om een weg URL te verstrekken die in de Controle van de Ervaring moet worden omvat.
 
-   Als u bijvoorbeeld `https://wknd.site/us/en/about-us.html` wilt opnemen in de Experience Audit, voert u het pad `us/en/about-us.html` in dit veld in en klikt u op **Opslaan**.
+   Als u bijvoorbeeld `https://wknd.site/us/en/about-us.html` wilt opnemen in de Experience Audit, voert u het pad `/us/en/about-us.html` in dit veld in en klikt u op **Opslaan**.
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    De URL die in de tabel wordt weergegeven, is:
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    U kunt maximaal 25 rijen opnemen. Als de gebruiker in deze sectie geen pagina&#39;s heeft verzonden, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
