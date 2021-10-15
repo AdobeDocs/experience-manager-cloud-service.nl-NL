@@ -2,9 +2,9 @@
 title: CI/CD-pijpleiding configureren - Cloud Services
 description: CI/CD-pijpleiding configureren - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,32 @@ Volg de stappen hieronder om de gevormde pijpleiding uit te geven:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. Klik op **Update** zodra u klaar bent met het uitgeven van de pijpleiding.
+
+### Aanvullende acties voor productiepijpleiding {#additional-prod-actions}
+
+#### Een productiepijpleiding uitvoeren {#run-prod}
+
+U kunt de productiepijpleiding van de kaart van Pijpleidingen in werking stellen:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Klik op **..** van **Pipelines** kaart en klik op **Run**, zoals aangetoond in hieronder figuur.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Een productiepijpleiding verwijderen {#delete-prod}
+
+U kunt de productiepijpleiding van de kaart van Pijpleidingen schrappen:
+
+1. Navigeer naar **Pipelines**-kaart van de pagina **Program Overview**.
+
+1. Klik op **..** van **Pipelines** kaart en klik op **Delete**, zoals aangetoond in hieronder figuur.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >Een gebruiker in de rol van de Manager van de Plaatsing kan de pijpleiding van de Productie op een zelfbediening manier via **Schrapping** optie van de kaart van de Pijpleiding nu schrappen.
+
 
 ## Uitsluitend pijplijnen zonder productie en codekwaliteit {#non-production-pipelines}
 
