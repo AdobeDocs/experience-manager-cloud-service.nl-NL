@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 3%
 
 ---
@@ -77,6 +77,9 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
       * Vele eigenschappen zijn duidelijk, voor extra details zie [Eigenschappen](#properties).
       * Als u een **Veld Label** typt, wordt de **Eigenschapnaam** automatisch aangevuld; als deze naam leeg is, kan de tag achteraf handmatig worden bijgewerkt.
 
+         >[!CAUTION]
+         Wanneer u een gegevenstype **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+         Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
       Bijvoorbeeld:
 
       ![veldeigenschappen](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 ## Eigenschappen {#properties}
 
 Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zijn hieronder meer details te vinden:
+
+>[!CAUTION]
+Wanneer u de **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
 
 * **Render**
 AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.
