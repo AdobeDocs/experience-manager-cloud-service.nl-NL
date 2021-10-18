@@ -1,16 +1,16 @@
 ---
-title: Het vormen OSGi voor Adobe Experience Manager als Cloud Service
+title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
-feature: Implementeren
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
 
-# Het vormen OSGi voor Adobe Experience Manager als Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# OSGi configureren voor Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSGiis een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
@@ -62,7 +62,7 @@ Wanneer het ontwikkelen plaatselijk, kan een loopmode startparameter worden over
 
 ## Typen OSGi-configuratiewaarden {#types-of-osgi-configuration-values}
 
-Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager als Cloud Service kunnen worden gebruikt.
+Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager as a Cloud Service kunnen worden gebruikt.
 
 1. **Inline waarden**, die waarden zijn die hard-gecodeerd in de configuratie OSGi zijn en in Git worden opgeslagen. Bijvoorbeeld:
 
@@ -80,7 +80,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager a
    } 
    ```
 
-1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele  `dev` runmode in Adobe Experience Manager als Cloud Service is). Bijvoorbeeld:
+1. **Milieu-specifieke waarden**, die waarden zijn die tussen de milieu&#39;s van de Ontwikkeling variëren, en kunnen daarom niet nauwkeurig door looppas worden gericht wijze (aangezien er één enkele  `dev` runmode in Adobe Experience Manager as a Cloud Service is). Bijvoorbeeld:
 
    ```json
    {
@@ -120,16 +120,16 @@ Wanneer het bepalen van een OSGi configuratiewaarde, begin met gealigneerde waar
 
 ### Wanneer te gebruiken de niet geheime milieu-specifieke configuratiewaarden {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren voor de voorvertoningslaag of variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en om het even welke Adobe Experience Manager als milieu&#39;s van de Cloud Service ontwikkeling. Vermijd het gebruik van niet-geheime omgevingspecifieke configuraties voor Adobe Experience Manager als Cloud Service Stage- of Productieomgeving, anders dan voor het instellen van unieke waarden voor de voorvertoningslaag.
+Gebruik alleen omgevings-specifieke configuraties (`$[env:ENV_VAR_NAME]`) voor niet-geheime configuratiewaarden wanneer de waarden variëren voor de voorvertoningslaag of variëren per ontwikkelomgeving. Dit omvat lokale ontwikkelingsinstanties en alle Adobe Experience Manager as a Cloud Service-ontwikkelomgevingen. Vermijd het gebruik van niet-geheime omgevingspecifieke configuraties voor Adobe Experience Manager as a Cloud Service Stage- of Production-omgevingen, anders dan voor het instellen van unieke waarden voor de voorvertoningslaag.
 
 * Gebruik alleen niet-geheime omgevingspecifieke configuraties voor configuratiewaarden die verschillen tussen de publicatie- en voorvertoningslaag, of voor waarden die verschillen tussen ontwikkelomgevingen, inclusief lokale ontwikkelingsinstanties.
 * Naast het scenario wanneer de voorproefrij van te variëren publiceer rij, gebruik de standaard gealigneerde waarden in de configuraties OSGi voor Stadium en Productie niet-geheime waarden. In verband hiermee wordt het niet aanbevolen om omgevingspecifieke configuraties te gebruiken om het aanbrengen van configuratiewijzigingen tijdens runtime in werkgebied- en productieomgevingen te vergemakkelijken. deze wijzigingen moeten worden ingevoerd via het beheer van de broncode .
 
 ### Wanneer om geheime milieu-specifieke configuratiewaarden te gebruiken {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager als Cloud Service vereist het gebruik van milieu-specifieke configuraties (`$[secret:SECRET_VAR_NAME]`) voor om het even welke geheime OSGi configuratiewaarden, zoals wachtwoorden, privé API sleutels, of een andere waarden die niet in Git om veiligheidsredenen kunnen worden opgeslagen.
+Adobe Experience Manager as a Cloud Service vereist het gebruik van milieu-specifieke configuraties (`$[secret:SECRET_VAR_NAME]`) voor om het even welke geheime OSGi configuratiewaarden, zoals wachtwoorden, privé API sleutels, of een andere waarden die niet in Git om veiligheidsredenen kunnen worden opgeslagen.
 
-Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle Adobe Experience Manager als Cloud Service milieu&#39;s, met inbegrip van Stadium en Productie op te slaan.
+Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle milieu&#39;s van Adobe Experience Manager as a Cloud Service, met inbegrip van Stadium en Productie op te slaan.
 
 ## OSGi-configuraties maken {#creating-sogi-configurations}
 
@@ -140,9 +140,9 @@ Er zijn twee manieren om configuraties tot stand te brengen OSGi, zoals hieronde
 De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM project worden geschreven. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
 
 1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodi richt de nieuwe OSGi configuratiebehoefte om te beïnvloeden
-1. In deze config omslag, creeer een nieuw `<PID>.cfg.json` dossier. PID is de Blijvende Identiteit van de component OSGi is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
+1. In deze config omslag, creeer een nieuw `<PID>.cfg.json` dossier. PID is de Persistente Identiteit van de component OSGi. Het is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Merk op dat de OSGi de namen van de configuratiefabrieksdossiers de  `<PID>-<factory-name>.cfg.json` noemende overeenkomst gebruiken
+Merk op dat de OSGi de namen van de configuratiefabrieksdossiers de  `<factoryPID>-<name>.cfg.json` noemende overeenkomst gebruiken
 1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na [JSON OSGi configuratieformaat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Sla uw wijzigingen op in het nieuwe `.cfg.json`-bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
@@ -537,7 +537,7 @@ Er kunnen maximaal 200 variabelen per omgeving worden gedeclareerd.
 
 ## De Overwegingen van de plaatsing voor geheime en milieu-specifieke configuratiewaarden {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Omdat de geheime en milieu-specifieke configuratiewaarden buiten Git leven, en daarom geen deel van de formele Adobe Experience Manager als mechanismen van de Cloud Service plaatsing uitmaken, zou de klant, als Cloud Service plaatsingsproces moeten leiden, besturen en integreren in Adobe Experience Manager.
+Omdat de geheime en milieu-specifieke configuratiewaarden buiten Git leven, en daarom geen deel van de formele de plaatsingsmechanismen van Adobe Experience Manager as a Cloud Service uitmaken, zou de klant, in het plaatsingsproces van Adobe Experience Manager as a Cloud Service moeten leiden beheren en integreren.
 
 Zoals hierboven vermeld, voert het roepen van API de nieuwe variabelen en waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode op. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
 
