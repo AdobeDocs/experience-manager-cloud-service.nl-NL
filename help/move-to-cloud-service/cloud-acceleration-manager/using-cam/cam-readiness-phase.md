@@ -2,10 +2,10 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 4%
+source-wordcount: '782'
+ht-degree: 5%
 
 ---
 
@@ -67,11 +67,17 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
    >[!NOTE]
    >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
 
+### Afdrukvoorbeeld gebruiken {#print-preview-cam}
+
+U kunt de optie voor afdrukvoorvertoningen selecteren in Cloud Acceleration Manager om de rapporten af te drukken of om het rapport af te drukken naar een PDF-indeling, zodat u het gemakkelijk kunt delen.
+
+Voer de onderstaande stappen uit:
+
 1. Klik op **pictogram Afdrukvoorbeeld**, zoals hieronder getoond.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Als u op **Afdrukvoorbeeld** klikt, wordt een nieuw tabblad geopend met het rapport dat in een afdrukbare voorvertoning wordt weergegeven. Klik op **Afdrukken** om het rapport af te drukken naar een PDF-indeling voor eenvoudige deelbaarheid.
+1. Als u op **Afdrukvoorbeeld** klikt, wordt een nieuw tabblad geopend met het rapport dat in een afdrukbare voorvertoning wordt weergegeven. Klik op **Afdrukken** om het rapport naar een PDF formaat te drukken.
 
    >[!IMPORTANT]
    >* De optie **Opslaan als PDF** wordt aanbevolen en ondersteund voor de bovenstaande functionaliteit.

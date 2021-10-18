@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
+source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1928'
 ht-degree: 0%
 
 ---
@@ -160,12 +160,47 @@ Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, is full-te
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.9.0 en 2021.8.0 beschreven.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.10.0 en 2021.9.0 beschreven.
+
+## Releasedatum {#release-date-cm-oct}
+
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 oktober 2021.
+De volgende release is gepland voor 4 november 2021.
+
+### Wat is er nieuw? {#what-is-new-cm-oct}
+
+* Ter voorbereiding op enkele aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige Stack** pijpleidingen.
+
+* De kaart van de pijpleiding is verfrist om één enkel, geïntegreerd gezicht te tonen dat zowel productie als niet productiepijpleidingen toont, en de gebruiker kan Looppas/pauze direct selecteren/hervat van het actiemenu verbonden aan elke pijpleiding.
+
+* Een gebruiker in de rol van de Manager van de Plaatsing kan de pijpleiding van de Productie op een zelfbediening manier via UI nu schrappen.
+
+* De ervaring met toevoegen en bewerken van pijpleidingen is vernieuwd en gebruikt nu vertrouwde, moderne modellen.
+
+* Gebruikers van Cloud Manager kunnen nu rechtstreeks feedback verzenden vanuit de gebruikersinterface via de knop **Feedback** rechtsboven op de bestemmingspagina.
+
+* De jaarlijkse SLA-grafieken kunnen nu worden gedownload vanuit de gebruikersinterface van Cloud Manager.
+
+* De kwaliteit van de code en de niet-productiepijpleiding zullen nu een efficiënter oppervlakkig klonen proces tijdens de bouwstijlstap gebruiken, die tot een snellere bouwtijd voor klanten met bijzonder grote git bewaarplaatsen leidt.
+
+* Voeg IP de tovenaar van de Lijst van gewenste personen nu toe zal de gebruiker informeren als maximum toegestaan aantal IP Lijsten van gewenste personen is bereikt.
+
+* De documentatie van de API voor Cloud Manager bevat nu een interactieve speelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer informatie.
+
+* De knopinfo op de programmakaart is beschrijfbaarder als een selectieoptie onder &#39;Navigeren naar&#39; is uitgeschakeld. Het toont nu &quot;een productiemilieu bestaat niet.&quot;
 
 ## Releasedatum {#release-date-cm-sept}
 
 De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.9.0 is 9 september 2021.
-De volgende release is gepland voor 7 oktober 2021.
+
+### Opgeloste problemen {#bug-fixes-cm-oct}
+
+* In zeldzame situaties, wanneer een personeel van Adobe de omgeving van een klant zou herstellen, werd het herstel als volledig beschouwd alvorens het milieu volledig operationeel was.
+
+* Bepaalde interne verzoeken die tijdens het creëren van het milieu werden gedaan, werden niet opnieuw beproefd.
+
+* Als de plaatsing mislukte fout na de controle van de domeinnaam voorkomt, is het foutenbericht verbeterd om de klant te verzoeken om hun vertegenwoordiger van de Adobe te contacteren.
+
 
 ### Wat is er nieuw? {#what-is-new-cm-sept}
 
