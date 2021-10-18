@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN te vormen of specifiek uitgang IP adres voor AEM as a Cloud Service
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service biedt verschillende soorten geavanceerde netwerkmogelijkh
 
 * [Flexibele havenuitgang](#flexible-port-egress)  - vorm as a Cloud Service AEM om uitgaand verkeer uit niet-standaardhavens toe te staan
 * [Het specifieke IP adres](#dedicated-egress-IP-address)  van de uitgang - vormt verkeer uit as a Cloud Service AEM om uit unieke IP voort te komen
-* [Het virtuele Privé Netwerk](#vpn)  - veilig verkeer tussen de infrastructuur van een klant en AEM as a Cloud Service, voor klanten die de technologie van VPN hebben
+* [Het virtuele Privé Netwerk (VPN)](#vpn)  - veilig verkeer tussen de infrastructuur van een klant en AEM as a Cloud Service, voor klanten die de technologie van VPN hebben
 
 Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie, wordt het `/networkInfrastructures` API eindpunt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, die door een vraag aan het `/advancedNetworking` eindpunt voor elk milieu wordt gevolgd om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Raadpleeg de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis, evenals voorbeeldaanvragen en reacties.
 
