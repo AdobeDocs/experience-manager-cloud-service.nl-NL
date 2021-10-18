@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '752'
 ht-degree: 31%
 
 ---
@@ -114,4 +114,4 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u [Omgaan met grote opslagplaatsen voor inhoud](help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) doornemen om de extractie- en insluitingsfasen van de activiteit voor inhoudsoverdracht aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u [Omgaan met grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) doornemen om de extractie- en insluitingsfasen van de activiteit voor inhoudsoverdracht aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.

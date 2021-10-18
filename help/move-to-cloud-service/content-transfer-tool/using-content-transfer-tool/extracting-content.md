@@ -1,10 +1,10 @@
 ---
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 41%
+source-wordcount: '518'
+ht-degree: 42%
 
 ---
 
@@ -71,4 +71,4 @@ Voer de onderstaande stappen uit:
 
 ## Volgende functies {#whats-next}
 
-Nadat u de opdracht Inhoud uit bron extraheren hebt geleerd in het gereedschap Inhoud overbrengen, kunt u nu leren hoe u het opmaakproces in het gereedschap Inhoud overbrengen start. Zie [Inhoud invoegen in doel in gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor informatie over het opnemen van de migratieset met het gereedschap Inhoud overbrengen.
+Nadat u de opdracht Inhoud uit bron extraheren hebt geleerd in het gereedschap Inhoud overbrengen, kunt u nu leren hoe u het opmaakproces in het gereedschap Inhoud overbrengen start. Zie [Inhoud invoegen in Doel](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor informatie over het invoeren van de migratieset met het gereedschap Inhoud overbrengen.
