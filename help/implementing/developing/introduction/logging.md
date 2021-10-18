@@ -1,24 +1,24 @@
 ---
-title: Aanmelden voor AEM als Cloud Service
-description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevens te verzoeken die AEM als Cloud Service registreren.
+title: Aanmelden voor AEM as a Cloud Service
+description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2314'
 ht-degree: 2%
 
 ---
 
-# Aanmelden voor AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
+# Aanmelden voor AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM als Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is de registrerendienst een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de AEM te zuiveren en te begrijpen als milieu&#39;s van de Cloud Service.
+AEM as a Cloud Service is een platform voor klanten om douanecode te omvatten om unieke ervaringen voor hun klantenbasis tot stand te brengen. Met dit in mening, is de registrerendienst een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de AEM as a Cloud Service milieu&#39;s te zuiveren en te begrijpen Dev.
 
-AEM logboekmontages en logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git worden opgeslagen, en als deel van het AEM project via de Manager van de Wolk worden opgesteld. Het aanmelden AEM als Cloud Service kan in twee logische reeksen worden opgedeeld:
+AEM de as a Cloud Service registrerenmontages en de logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git worden opgeslagen, en als deel van het AEM project via de Manager van de Wolk worden opgesteld. Logboekregistratie in AEM as a Cloud Service kan in twee logische reeksen worden verdeeld:
 
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
 * Apache HTTPD Web Server/Dispatcher registreren, die het registreren van de Webserver en de Verzender op de Publish rij uitvoert.
 
-## Logboekregistratie AEM {#aem-loggin}
+## AEM {#aem-logging}
 
 Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeken:
 
@@ -30,9 +30,9 @@ Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeke
 >
 >De HTTP- verzoeken die van het Publish geheime voorgeheugen van de Verzender van de rij of upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
-## Java-logboekregistratie AEM {#aem-java-logging}
+## Java-aanmelding AEM {#aem-java-logging}
 
-AEM als Cloud Service biedt toegang tot Java-loginstructies. Ontwikkelaars van toepassingen voor AEM moeten de algemene Java-logboekbest practices volgen en relevante instructies over de uitvoering van aangepaste code registreren op de volgende logniveaus:
+AEM as a Cloud Service&#39;s bieden toegang tot Java-loginstructies. Ontwikkelaars van toepassingen voor AEM moeten de algemene Java-logboekbest practices volgen en relevante instructies over de uitvoering van aangepaste code registreren op de volgende logniveaus:
 
 <table>
 <tr>
@@ -92,9 +92,9 @@ Wanneer het registreren van de FOUT actief is, slechts worden de verklaringen di
 </tr>
 </table>
 
-Hoewel Java-logboekregistratie verschillende andere niveaus van granulariteit voor logboekregistratie ondersteunt, AEM een Cloud Service het gebruik van de drie hierboven beschreven niveaus aanbeveelt.
+Hoewel Java-logboekregistratie verschillende andere niveaus van granulariteit voor logboekregistratie ondersteunt, AEM as a Cloud Service wordt aangeraden de drie hierboven beschreven niveaus te gebruiken.
 
-AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie OSGi, die beurtelings aan Git wordt geëngageerd, en via de Manager van de Wolk aan AEM als Cloud Service worden opgesteld. Wegens dit, is het best om logboekverklaringen verenigbaar en bekend voor omgevingstypes te houden, om de logboeken beschikbaar via AEM als Cloud Service te verzekeren zijn beschikbaar op het optimale logboekniveau zonder herplaatsing van toepassing met de bijgewerkte configuratie van het logboekniveau te vereisen.
+AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie OSGi, die beurtelings aan Git wordt geëngageerd, en via de Manager van de Wolk wordt opgesteld om as a Cloud Service te AEM. Wegens dit, is het best om logboekverklaringen verenigbaar en bekend voor omgevingstypes te houden, om de logboeken beschikbaar via AEM als Cloud Service te verzekeren zijn beschikbaar op het optimale logboekniveau zonder herplaatsing van toepassing met de bijgewerkte configuratie van het logboekniveau te vereisen.
 
 **Uitvoer voorbeeldlog**
 
@@ -112,10 +112,10 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 <tbody>
 <tr>
 <td>Datum en tijd</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>29.04.2020 21:50:</td>
 </tr>
 <tr>
-<td>AEM als knooppunt-id voor Cloud Service</td>
+<td>as a Cloud Service node-id AEM</td>
 <td>[cm-p1234-e5678-aem-auteur-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 
 ### Configuratieloggers {#configuration-loggers}
 
-AEM Java-logboeken worden gedefinieerd als OSGi-configuratie en richten zich dus op specifieke AEM als een Cloud Service-omgeving met behulp van runmode-mappen.
+AEM Java-logboeken worden gedefinieerd als OSGi-configuratie en richten zich dus op specifieke AEM as a Cloud Service omgevingen met behulp van uitvoermodusmappen.
 
 Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-configuraties voor de Sling LogManager-fabriek. Er zijn twee ondersteunde configuratie-eigenschappen:
 
@@ -148,9 +148,9 @@ Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-conf
 | org.apache.sling.commons.log.names | De Java-pakketten waarvoor loginstructies moeten worden verzameld. |
 | org.apache.sling.commons.log.level | Het logniveau waarop de Java-pakketten moeten worden geregistreerd, opgegeven door org.apache.sling.commons.log.names |
 
-Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM als Cloud Service resulteren.
+Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM as a Cloud Service resulteren.
 
-Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp van het tijdelijke Java-pakket van `com.example`) voor de drie AEM als omgevingstypen voor Cloud Servicen.
+Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp van het tijdelijke Java-pakket van `com.example`) voor de drie AEM as a Cloud Service omgevingstypen.
 
 ### Ontwikkeling {#development}
 
@@ -185,9 +185,9 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 }
 ```
 
-## Logboekregistratie van HTTP-aanvragen AEM {#aem-http-request-logging}
+## Logboekregistratie HTTP-aanvraag AEM {#aem-http-request-logging}
 
-AEM als het verzoekregistreren van HTTP van een Cloud Service verstrekt inzicht in de HTTP- verzoeken die aan AEM en hun reacties van HTTP in tijdorde worden gemaakt. Dit logboek is nuttig om de Verzoeken van HTTP te begrijpen die aan AEM worden gemaakt en de orde zij worden verwerkt en aan geantwoord.
+AEM as a Cloud Service HTTP- verzoekregistreren verstrekt inzicht in de HTTP- verzoeken die aan AEM en hun reacties van HTTP in tijdorde worden gemaakt. Dit logboek is nuttig om de Verzoeken van HTTP te begrijpen die aan AEM worden gemaakt en de orde zij worden verwerkt en aan geantwoord.
 
 De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- verzoek en antwoordparen door hun IDs, die door de numerieke waarde in de steunen wordt aangegeven. Merk op dat vaak de verzoeken en hun overeenkomstige reacties andere HTTP- verzoeken en reacties tussen hen in het logboek worden geworpen.
 
@@ -229,17 +229,17 @@ De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- v
 </td>
 </tr>
 <tr>
-<td>AEM als knooppunt-id voor Cloud Service</td>
+<td>as a Cloud Service node-id AEM</td>
 <td>[cm-p1234-e5678-aem-auteur-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
 </table>
 
-### Logboek {#configuring-the-log} configureren
+### Logboek configureren {#configuring-the-log}
 
-Het AEM HTTP- verzoeklogboek is niet configureerbaar in AEM als Cloud Service.
+Het AEM HTTP- verzoeklogboek is niet configureerbaar in AEM as a Cloud Service.
 
-## Logboekregistratie van HTTP-toegang AEM {#aem-http-access-logging}
+## HTTP-toegangsregistratie AEM {#aem-http-access-logging}
 
 AEM als het de toegangslogboek van HTTP van de Cloud Service toont HTTP- verzoeken in tijdorde. Elke logingang vertegenwoordigt het Verzoek van HTTP dat tot AEM toegang heeft.
 
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM als knooppunt-id voor Cloud Service | cm-p1235-e2644-aem-auteur-59555cb5b8-8kgr2 |
+| as a Cloud Service knooppunt-id AEM | cm-p1235-e2644-aem-auteur-59555cb5b8-8kgr2 |
 |---|---|
 | IP-adres van de client | - |
 | Gebruiker | myuser@adobe.com |
@@ -266,13 +266,13 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | Referenter | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | Gebruikersagent | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
-### Het vormen van het Logboek van de Toegang van HTTP {#configuring-the-http-access-log}
+### Het HTTP Access-logboek configureren {#configuring-the-http-access-log}
 
-Het logboek van de Toegang van HTTP is niet configureerbaar in AEM als Cloud Service.
+Het logboek van de Toegang van HTTP is niet configureerbaar in AEM as a Cloud Service.
 
 ## Logboekregistratie voor Apache Web Server en Dispatcher {#apache-web-server-and-dispatcher-logging}
 
-AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apache en verzender laag op Publish:
+AEM as a Cloud Service verstrekt drie logboeken voor de Servers en de verzender van het Web Apache op Publish:
 
 * Apache HTTPD Web Server Access-logboek
 * Apache HTTPD Web Server Error log
@@ -280,7 +280,7 @@ AEM als Cloud Service verstrekt drie logboeken voor de servers van het Web Apach
 
 Deze logbestanden zijn alleen beschikbaar voor de publicatielijst.
 
-Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM als Cloud Service publiceren rij voorafgaand aan die verzoeken die de AEM toepassing bereiken. Dit is belangrijk om te begrijpen aangezien, idealiter, de meeste HTTP- verzoeken aan de Publish rijservers door inhoud worden gediend die door de Server van het Web van Apache HTTPD en AEM Dispatcher in de cache wordt opgeslagen, en nooit de AEM toepassing zelf bereiken. Er zijn dus geen loginstructies voor deze aanvragen in AEM Java-, verzoek- of toegangslogboeken.
+Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM as a Cloud Service Publish rij voorafgaand aan die verzoeken die de AEM toepassing bereiken. Dit is belangrijk om te begrijpen aangezien, idealiter, de meeste HTTP- verzoeken aan de Publish rijservers door inhoud worden gediend die door de Server van het Web van Apache HTTPD en AEM Dispatcher in de cache wordt opgeslagen, en nooit de AEM toepassing zelf bereiken. Er zijn dus geen loginstructies voor deze aanvragen in AEM Java-, verzoek- of toegangslogboeken.
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Datum en tijd</td>
-<td>01/mei/2020:00:09:46 +000</td>
+<td>01/May/2020:00:09:46 +000</td>
 </tr>
 <tr>
 <td>HTTP-methode</td>
@@ -347,9 +347,9 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tbody>
 </table>
 
-### Het Apache HTTPD Web Server Access Log {#configuring-the-apache-httpd-webs-server-access-log} configureren
+### Het Apache HTTPD Web Server Access Log configureren {#configuring-the-apache-httpd-webs-server-access-log}
 
-Dit logboek is niet configureerbaar in AEM als Cloud Service.
+Dit logboek is niet configureerbaar in AEM as a Cloud Service.
 
 ## Apache HTTPD Web Server Error Log {#apache-httpd-web-server-error-log}
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Datum en tijd</td>
-<td>17 jul. 02:16:42.608913 2020</td>
+<td>17 jul. 02:16:42,608913 2020</td>
 </tr>
 <tr>
 <td>Gebeurtenisniveau</td>
@@ -392,7 +392,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### Het configureren van het Apache HTTPD Web Server Error Log {#configuring-the-apache-httpd-web-server-error-log}
+### Het Apache HTTPD Web Server Error Log configureren {#configuring-the-apache-httpd-web-server-error-log}
 
 De mod_rewrite logboekniveaus worden bepaald door veranderlijke REWRITE_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
@@ -470,13 +470,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Het vormen van het Logboek van de Fout van de Verzender {#configuring-the-dispatcher-error-log}
+### Het foutenlogboek van de Verzender configureren {#configuring-the-dispatcher-error-log}
 
 De verzenderslogniveaus worden gedefinieerd door de variabele DISP_LOG_LEVEL in het bestand `conf.d/variables/global.var`.
 
 Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1, met de standaardwaarde Waarschuwing.
 
-Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registreren granularity steunt, beveelt de AEM als Cloud Service het gebruiken van de hieronder beschreven niveaus aan.
+Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registrerende granulariteit steunt, adviseert de AEM as a Cloud Service gebruikend de hieronder beschreven niveaus.
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het `global.var`-bestand, zoals hieronder wordt beschreven:
 
@@ -495,15 +495,15 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Hoe te om Logs {#how-to-access-logs} tot toegang te hebben
+## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
-### Cloudomgevingen {#cloud-environments}
+### Cloud-omgevingen {#cloud-environments}
 
-AEM als Cloud Service kunnen logboeken voor de clouddiensten of door het downloaden door de interface van de Manager van de Wolk of door logboeken bij de bevellijn bij het gebruiken van de Adobe I/O bevel lijninterface worden betreden. Raadpleeg de logboekdocumentatie [Cloud Manager](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
+AEM as a Cloud Service logbestanden voor cloudservices kunt u openen door de interface van Cloud Manager te downloaden of door logbestanden op de opdrachtregel te plaatsen met behulp van de opdrachtregelinterface van Adobe I/O. Raadpleeg de logboekdocumentatie [Cloud Manager](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie.
 
 ### Lokale SDK {#local-sdk}
 
-AEM als Cloud Service SDK verstrekt logboekdossiers om lokale ontwikkeling te steunen.
+AEM as a Cloud Service SDK biedt logbestanden ter ondersteuning van lokale ontwikkeling.
 
 AEM logboeken bevinden zich in de map `crx-quickstart/logs`, waar de volgende logboeken kunnen worden weergegeven:
 
@@ -532,7 +532,7 @@ Logbestanden worden ook rechtstreeks afgedrukt op de einduitvoer. Meestal, zoude
 
 In uitzonderlijke omstandigheden moeten de logniveaus worden gewijzigd om zich bij een fijnere granulariteit in het werkgebied of de productieomgeving aan te melden.
 
-Terwijl dit mogelijk is, vereist het veranderingen in de logboekniveaus in de configuratiedossiers in Git van Waarschuwen en Fout aan Zuiver, en het uitvoeren van een plaatsing aan AEM als Cloud Service om deze configuratieveranderingen met de milieu&#39;s te registreren.
+Terwijl dit mogelijk is, vereist het veranderingen in de logboekniveaus in de configuratiedossiers in Git van Waarschuwen en Fout aan Zuiver, en het uitvoeren van een plaatsing aan AEM as a Cloud Service om deze configuratieveranderingen met de milieu&#39;s te registreren.
 
 Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug wordt geschreven, kan dit in een negatief prestatieseffect op het milieu resulteren, daarom wordt geadviseerd dat de veranderingen in Stadium en Productie zuivert niveaus zijn:
 
@@ -541,11 +541,11 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 
 ## Logbestanden splitsen {#splunk-logs}
 
-Klanten die Splunk-accounts hebben, kunnen via het ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
+Klanten die Splunk-accounts hebben, kunnen via een ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijk aan de gegevens die beschikbaar zijn via het logbestand van Cloud Manager, maar klanten vinden het wellicht handig om de queryfuncties in het product Splunk te gebruiken.
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
-### Splunk Forwarding {#enabling-splunk-forwarding} inschakelen
+### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
 
 In het supportverzoek moeten klanten aangeven:
 
