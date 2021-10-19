@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
-source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
+source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2832'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Geavanceerde netwerken configureren voor AEM as a Cloud Service {#configuring-advanced-networking}
 
-Dit artikel is bedoeld om u aan de verschillende geavanceerde voorzien van een netwerkeigenschappen in AEM as a Cloud Service, met inbegrip van VPN en IP van de uitgang adressen te introduceren die of of op een flexibele manier kunnen worden gewijd of toegewezen.
+Dit artikel is bedoeld om u aan de verschillende geavanceerde voorzien van een netwerkeigenschappen in AEM as a Cloud Service, met inbegrip van zelf-serverlevering van VPN, niet-standaardhavens, en specifieke uitgangIP adressen te introduceren.
 
 ## Overzicht {#overview}
 
@@ -21,11 +21,11 @@ Dit artikel is bedoeld om u aan de verschillende geavanceerde voorzien van een n
 
 AEM as a Cloud Service biedt verschillende soorten geavanceerde netwerkmogelijkheden, die door klanten kunnen worden geconfigureerd met de API&#39;s van Cloud Manager. Deze omvatten:
 
-* [Flexibele havenuitgang](#flexible-port-egress)  - vorm as a Cloud Service AEM om uitgaand verkeer uit niet-standaardhavens toe te staan
-* [Het specifieke IP adres](#dedicated-egress-IP-address)  van de uitgang - vormt verkeer uit as a Cloud Service AEM om uit unieke IP voort te komen
-* [Het virtuele Privé Netwerk (VPN)](#vpn)  - veilig verkeer tussen de infrastructuur van een klant en AEM as a Cloud Service, voor klanten die de technologie van VPN hebben
+* [Flexibele poortuitgang](#flexible-port-egress) - vorm as a Cloud Service AEM om uitgaand verkeer uit niet-standaardhavens toe te staan
+* [IP-adres van specifiek egress](#dedicated-egress-IP-address) - vorm verkeer uit AEM as a Cloud Service om uit unieke IP voort te komen
+* [Virtual Private Network (VPN)](#vpn) - veilig verkeer tussen de infrastructuur van een klant en AEM as a Cloud Service, voor klanten die de technologie van VPN hebben
 
-Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie, wordt het `/networkInfrastructures` API eindpunt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, die door een vraag aan het `/advancedNetworking` eindpunt voor elk milieu wordt gevolgd om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Raadpleeg de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis, evenals voorbeeldaanvragen en reacties.
+Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, dat door een vraag aan het `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Raadpleeg de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis, evenals voorbeeldaanvragen en reacties.
 
 Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
 
@@ -47,33 +47,33 @@ De flexibele havenuitgang is de geadviseerde keus als u geen VPN nodig hebt en g
 
 ### Configuratie {#configuring-flexible-port-egress-provision}
 
-Eenmaal per programma wordt het eindpunt van de POST `/program/<programId>/networkInfrastructures` aangeroepen, waarbij eenvoudig de waarde van `flexiblePortEgress` voor de parameter en het gebied `kind` wordt doorgegeven. Het eindpunt reageert met `network_id`, evenals andere informatie met inbegrip van de status. In de API-documenten moet naar de volledige set parameters en de exacte syntaxis worden verwezen.
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. In de API-documenten moet naar de volledige set parameters en de exacte syntaxis worden verwezen.
 
-Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een vraag aan het [milieu GET eindpunt ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) van de Manager van de Wolk zou een status van &quot;klaar&quot;tonen.
+Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een oproep aan de Cloud Manager [milieu-GET-eindpunt](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) zou de status &quot;ready&quot; aangeven.
 
-Als de programma-scoped flexibele configuratie van de havenuitgang klaar is, moet het `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en om het even welke haven door:sturen regels te verklaren. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
+Als de programma-scoped flexibele configuratie van de havenuitgang klaar is, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en om het even welke haven te verklaren door:sturen regels. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
 De haven die regels door:sturen zou voor om het even welke havens buiten 80/443 moeten worden verklaard door de reeks bestemmingsgastheren (namen of IP, en met havens te specificeren). Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
 
-API zou in slechts een paar seconden moeten antwoorden, wijzend op een status van het bijwerken en na ongeveer 10 minuten, zou de methode `GET` van het eindpunt erop moeten wijzen dat het geavanceerde voorzien van een netwerk wordt toegelaten.
+De API moet binnen een paar seconden reageren. Dit geeft aan dat het bijwerken is voltooid en dat het eindpunt na ongeveer 10 minuten `GET` de methode zou erop moeten wijzen dat het geavanceerde voorzien van een netwerk wordt toegelaten.
 
 ### Updates {#updating-flexible-port-egress-provision}
 
-De configuratie van het programmaniveau kan worden bijgewerkt door het `PUT /api/program/<program_id>/network/<network_id>` eindpunt aan te halen en zal binnen een paar minuten van kracht worden.
+De configuratie op programmaniveau kan worden bijgewerkt door de `PUT /api/program/<program_id>/network/<network_id>` en zal binnen een paar minuten van kracht worden.
 
 >[!NOTE]
 >
 > De parameter &quot;kind&quot; (`flexiblePortEgress`, `dedicatedEgressIP` of `VPN`) kan niet worden gewijzigd. Neem voor hulp contact op met de klantenondersteuning en beschrijf wat er al is gemaakt en de reden voor de wijziging.
 
-De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door het `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt aan te halen, ervoor zorgen om de volledige reeks configuratieparameters, eerder dan een ondergroep te omvatten.
+De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door opnieuw het aanhalen van `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, ervoor zorgen om de volledige reeks configuratieparameters, eerder dan een ondergroep te omvatten.
 
 ### Het schrappen van of het onbruikbaar maken van de Flexibele Poorten {#deleting-disabling-flexible-port-egress-provision}
 
-Om **delete** de netwerkinfrastructuur te verwijderen, dient u een ticket voor klantenondersteuning in waarin wordt beschreven wat er is gemaakt en waarom het moet worden verwijderd.
+Om **delete** de netwerkinfrastructuur, dient een kaartje voor klantenondersteuning in met een beschrijving van wat is gemaakt en waarom het moet worden verwijderd.
 
-Als u **het flexibele poortegres van een bepaalde omgeving wilt uitschakelen, roept u `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` aan.**
+Om **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Zie de [Documentatie van de API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) voor meer informatie.
+Zie voor meer informatie de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Verkeer dat {#flexible-port-egress-traffic-routing}
 
@@ -82,7 +82,7 @@ Het verkeer van HTTP of https die naar bestemmingen door havens 80 of 443 gaan z
 * `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
 * `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
 
-Bijvoorbeeld, hier is steekproefcode om een verzoek naar `www.example.com:8443` te verzenden:
+Hier ziet u bijvoorbeeld een voorbeeldcode voor het verzenden van een aanvraag naar `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
@@ -98,7 +98,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Als het gebruiken van niet-standaard het voorzien van een netwerkbibliotheken van Java, vorm volmachten gebruikend de eigenschappen hierboven, voor al verkeer.
 
-Het niet-http/s verkeer met bestemmingen door havens die in `portForwards` worden verklaard parameter zou een bezit moeten van verwijzingen voorzien genoemd `AEM_PROXY_HOST`, samen met de in kaart gebrachte haven. Bijvoorbeeld:
+Niet-http/s verkeer met bestemmingen door havens die in worden verklaard `portForwards` parameter moet verwijzen naar een eigenschap met de naam `AEM_PROXY_HOST`, samen met de toegewezen poort. Bijvoorbeeld:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -142,7 +142,7 @@ De lijst hieronder beschrijft verkeer dat verplettert:
   </tr>
   <tr>
     <td><b>Niet-http of niet-https</b></td>
-    <td>De client maakt verbinding met de omgevingsvariabele <code>AEM_PROXY_HOST</code> met behulp van een <code>portOrig</code> die is gedeclareerd in de API-parameter <code>portForwards</code>.</td>
+    <td>Client maakt verbinding met de <code>AEM_PROXY_HOST</code> omgevingsvariabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter.</td>
     <td>Alle</td>
     <td>Toegestaan</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -159,7 +159,7 @@ De lijst hieronder beschrijft verkeer dat verplettert:
 
 **Configuratie Apache/Dispatcher**
 
-De instructie `mod_proxy` van de AEM Cloud Service Apache/Dispatcher-laag kan worden geconfigureerd met de hierboven beschreven eigenschappen.
+De AEM Cloud Service Apache/Dispatcher-laag `mod_proxy` de richtlijn kan worden gevormd gebruikend de hierboven beschreven eigenschappen.
 
 ```
 ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Als u van een specifieke uitgang IP vóór de versie van September 2021 (10/6/21) bent voorzien, gelieve [Verouderde Afgewijde Klanten van het Adres van de Gastheer ](#legacy-dedicated-egress-address-customers) te verwijzen.
+>Als u vóór de release van september 2021 een speciale IP-adres hebt ingericht (10/6/21), kunt u de [Verouderde, specifieke klanten van het Adres van de Afstuwing](#legacy-dedicated-egress-address-customers).
 
 ### Voordelen {#benefits}
 
@@ -193,11 +193,11 @@ Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Clo
 >
 >Het Splunk door:sturen vermogen is niet mogelijk van een specifiek uitgangIP adres.
 
-Het vormen van specifiek uitgang IP adres is identiek aan [flexibele havenuitgang](#configuring-flexible-port-egress-provision).
+Het vormen van specifiek uitgang IP adres is identiek aan [flexibel poortbereik](#configuring-flexible-port-egress-provision).
 
 Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres zal naar verwachting niet veranderen, maar als het in de toekomst moet veranderen, zal het geavanceerde bericht worden verstrekt.
 
-Naast de verpletterende regels die door flexibele havenuitgang op het `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt worden gesteund, steunt het specifieke uitgangIP adres een `nonProxyHosts` parameter. Dit staat u toe om een reeks gastheren te verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden, die nuttig kan zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd. De `nonProxyHost` URLs kan de patronen van `example.com` of `*.example.com` volgen, waar de vervangingskaart slechts bij het begin van het domein wordt gesteund.
+Naast de verpletterende regels die door flexibele havenuitgang in worden gesteund `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt, specifiek uitgangIP adres steunt a `nonProxyHosts` parameter. Dit staat u toe om een reeks gastheren te verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden, die nuttig kan zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd. De `nonProxyHost` URL&#39;s kunnen de patronen volgen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
 Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, zouden de klanten flexibele havenuitgang moeten kiezen als een specifiek IP adres niet wordt vereist aangezien Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
 
@@ -223,14 +223,14 @@ Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres
   </tr>
   <tr>
     <td></td>
-    <td>Host die overeenkomt met de parameter <code>nonProxyHosts</code></td>
+    <td>Host die overeenkomt met <code>nonProxyHosts</code> parameter</td>
     <td>80 of 443</td>
     <td>Via de gedeelde cluster-IP's</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Host die overeenkomt met de parameter <code>nonProxyHosts</code></td>
+    <td>Host die overeenkomt met <code>nonProxyHosts</code> parameter</td>
     <td>Poorten buiten 80 of 443</td>
     <td>Geblokkeerd</td>
     <td></td>
@@ -258,7 +258,7 @@ Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres
   </tr>
   <tr>
     <td><b>Niet-http of niet-https</b></td>
-    <td>De client maakt verbinding met de omwentelingsvariabele <code>AEM_PROXY_HOST</code> met een <code>portOrig</code>-variabele die is gedeclareerd in de API-parameter <code>portForwards</code></td>
+    <td>De client maakt verbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -323,7 +323,7 @@ Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1 en HTTP/2 w
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals [https://ifconfig.me/IP](https://ifconfig.me/IP) te roepen, die het roepende IP adres zal terugkeren.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/IP](https://ifconfig.me/IP), die het roepende IP adres zal terugkeren.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -331,7 +331,7 @@ VPN staat voor het verbinden met een infrastructuur op-gebouw of datacenter van 
 
 Het staat ook het Verbinden met verkopers SaaS zoals een verkoper van CRM toe die VPN steunt of het verbinden van een collectief netwerk met AEM as a Cloud Service auteur, voorproef, of publiceert.
 
-De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de lijst met apparaten op [deze pagina](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), op basis van de informatie in de **RouteBased configuratieinstructies** kolom. Configureer het apparaat zoals beschreven in de tabel.
+De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de lijst met apparaten op [deze pagina](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)op basis van de informatie in de **RouteBased-configuratieinstructies** kolom. Configureer het apparaat zoals beschreven in de tabel.
 
 ### Algemene overwegingen {#general-vpn-considerations}
 
@@ -340,33 +340,33 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
 ### Maken {#vpn-creation}
 
-Eenmaal per programma, wordt het eindpunt van de POST `/program/<programId>/networkInfrastructures` aangehaald, die in een lading van configuratieinformatie overgaat die omvat: de waarde van &quot;vpn&quot;voor de `kind` parameter, het gebied, de adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in het netwerk van de klant), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met `network_id`, evenals andere informatie met inbegrip van de status. Naar de volledige set parameters en de exacte syntaxis moet worden verwezen in de [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van &quot;vpn&quot; voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in het netwerk van de klant), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. Naar de volledige set parameters en de exacte syntaxis moet worden verwezen in het gedeelte [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
-Zodra geroepen, zal het typisch tussen 45 en 60 minuten voor de voorzien van een netwerkinfrastructuur duren. De methode van de GET van de API kan worden geroepen om de huidige status terug te keren, die uiteindelijk van `creating` aan `ready` zal draaien. Raadpleeg de API-documentatie voor alle staten.
+Zodra geroepen, zal het typisch tussen 45 en 60 minuten voor de voorzien van een netwerkinfrastructuur duren. De methode van de GET van de API kan worden geroepen om de huidige status terug te keren, die uiteindelijk zal draaien van `creating` tot `ready`. Raadpleeg de API-documentatie voor alle staten.
 
-Als de programma-scoped configuratie van VPN in klaar, het `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt per milieu moet worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en om het even welke haven te verklaren door:sturen regels. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
+Als de programma-scoped configuratie van VPN in klaar is, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en om het even welke haven te verklaren door:sturen regels. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
-Zie de [API documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) voor meer informatie.
+Zie de [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) voor meer informatie .
 
-De haven die regels door:sturen zou voor om het even welk niet-http/s protocolTCP verkeer moeten worden verklaard dat door VPN zou moeten worden verpletterd door de reeks bestemmingsgastheren (namen of IP, en met havens) te specificeren. Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 tot 30999 in kaart brengen, waar de waarden over milieu&#39;s in het programma uniek moeten zijn. De klanten kunnen een reeks van url in de `nonProxyHosts` parameter ook een lijst maken, die URL verklaart waarvoor het verkeer het verpletteren van VPN zou moeten omzeilen, maar in plaats daarvan door een gedeelde IP waaier. De methode volgt de patronen van `example.com` of `*.example.com`, waarbij het jokerteken alleen aan het begin van het domein wordt ondersteund.
+De haven die regels door:sturen zou voor om het even welk niet-http/s protocolTCP verkeer moeten worden verklaard dat door VPN zou moeten worden verpletterd door de reeks bestemmingsgastheren (namen of IP, en met havens) te specificeren. Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 tot 30999 in kaart brengen, waar de waarden over milieu&#39;s in het programma uniek moeten zijn. Klanten kunnen ook een set URL&#39;s weergeven in het dialoogvenster `nonProxyHosts` parameter, die URL verklaart waarvoor het verkeer VPN zou moeten mijden verpletterend, maar in plaats daarvan door een gedeelde IP waaier. Het volgt de patronen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
-De API zou in slechts een paar seconden moeten antwoorden, wijzend op een status van `updating` en na ongeveer 10 minuten, zou een vraag aan het milieu GET van de Manager van de Wolk een status van `ready` tonen, erop wijzend dat de update aan het milieu is toegepast.
+De API moet binnen een paar seconden reageren, wat een status aangeeft van `updating` en na ongeveer 10 minuten, zou een vraag aan het milieu GET van de Manager van de Wolk een status van tonen `ready`, die aangeeft dat de update van de omgeving is toegepast.
 
-Merk op dat zelfs als er geen milieuverkeer is dat regels (gastheren of omwegen) verplettert, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` nog moet worden geroepen, enkel met een lege lading.
+Merk op dat zelfs als er geen milieuverkeer is dat regels (gastheren of bypasses) verplettert, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` moet nog worden geroepen, enkel met een lege lading.
 
 ### VPN bijwerken {#updating-the-vpn}
 
-De programma-vlakke configuratie van VPN kan worden bijgewerkt door het `PUT /api/program/<program_id>/network/<network_id>` eindpunt aan te halen.
+De programma-vlakke configuratie van VPN kan worden bijgewerkt door het aanhalen van `PUT /api/program/<program_id>/network/<network_id>` eindpunt.
 
-Merk op dat de adresruimte niet na de aanvankelijke levering van VPN kan worden veranderd. Neem indien nodig contact op met de klantenondersteuning. Daarnaast kan de parameter `kind` (`flexiblePortEgress`, `dedicatedEgressIP` of `VPN`) niet worden gewijzigd. Neem voor hulp contact op met de klantenondersteuning en beschrijf wat er al is gemaakt en de reden voor de wijziging.
+Merk op dat de adresruimte niet na de aanvankelijke levering van VPN kan worden veranderd. Neem indien nodig contact op met de klantenondersteuning. Bovendien `kind` parameter (`flexiblePortEgress`, `dedicatedEgressIP` of `VPN`) kan niet worden gewijzigd. Neem voor hulp contact op met de klantenondersteuning en beschrijf wat er al is gemaakt en de reden voor de wijziging.
 
-De per-milieu verpletterende regels kunnen worden bijgewerkt door het `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt opnieuw aan te halen, ervoor zorgen om de volledige reeks configuratieparameter, eerder dan een ondergroep te omvatten. Het duurt doorgaans 5 tot 10 minuten om omgevingsupdates toe te passen.
+Het per-milieu dat regels verplettert kan worden bijgewerkt door opnieuw het aanhalen van `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, ervoor zorgen om de volledige reeks configuratieparameter, eerder dan een ondergroep te omvatten. Het duurt doorgaans 5 tot 10 minuten om omgevingsupdates toe te passen.
 
 ### Het schrappen van of het onbruikbaar maken van VPN {#deleting-or-disabling-the-vpn}
 
 Om de netwerkinfrastructuur te schrappen, leg een kaartje van de klantensteun voor, beschrijvend wat is gecreeerd en waarom het moet worden geschrapt.
 
-Om VPN voor een bepaald milieu onbruikbaar te maken, haal `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` aan. Meer informatie in de [API documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Om VPN voor een bepaald milieu onbruikbaar te maken, roep aan `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Meer informatie in het [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Verkeer dat {#vpn-traffic-routing}
 
@@ -392,28 +392,28 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Host die overeenkomt met de parameter <code>nonProxyHosts</code></td>
+    <td>Host die overeenkomt met <code>nonProxyHosts</code> parameter</td>
     <td>80 of 443</td>
     <td>Via de gedeelde cluster-IP's</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Host die overeenkomt met de parameter <code>nonProxyHosts</code></td>
+    <td>Host die overeenkomt met <code>nonProxyHosts</code> parameter</td>
     <td>Poorten buiten 80 of 443</td>
     <td>Geblokkeerd</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Als IP in de <i>de gatewayadres van VPN </i> ruimtewaaier, en door de volmachtsconfiguratie van http valt (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
+    <td>Als het OT in <i>VPN-gatewayadres</i> ruimtewaaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
     <td>Alle</td>
     <td>Door VPN</td>
     <td><code>10.0.0.1:443</code>Het kan ook een hostname zijn.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Als IP niet in de <i>waaier van het gatewayadres van VPN </i> valt, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
+    <td>Als het IP-adres niet in het deelvenster <i>VPN-gatewayadresruimte</i> waaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
@@ -435,14 +435,14 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td><b>Niet-http of niet-https</b></td>
-    <td>Als het IP in de <i>bereik van het de gatewayadres van VPN </i> valt en de cliënt verbindt met <code>AEM_PROXY_HOST</code> env variabele gebruikend <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API parameter</td>
+    <td>Als het OT in <i>VPN-gatewayadresruimte</i> bereik en de client maakt verbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
     <td>Alle</td>
     <td>Door VPN</td>
     <td><code>10.0.0.1:3306</code>Het kan ook een hostname zijn.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Als IP niet in de <i>gateway van VPN adresruimte</i> waaier valt en de cliënt verbindt met <code>AEM_PROXY_HOST</code> env variabele gebruikend <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API parameter</td>
+    <td>Als het IP-adres niet in het deelvenster <i>VPN-gatewayadresruimte</i> bereik en clientverbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
@@ -485,14 +485,14 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>IP van verkeer dat van de AEM kant van VPN aan de klantenkant komt. Dit kan in de configuratie van de klant worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM kunnen worden gemaakt.</td>
-    <td>Als de klant slechts de toegang van VPN tot AEM wil toestaan, zouden zij DNS CNAME ingangen moeten vormen om <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> aan dit in kaart te brengen.</td>
+    <td>Als de klant slechts de toegang van VPN tot AEM wil toestaan, zouden zij DNS CNAME ingangen moeten vormen om in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
   </tr>
 </tbody>
 </table>
 
 ### VPN beperken tot Ingress-verbindingen {#restrict-vpn-to-ingress-connections}
 
-Als u slechts de toegang van VPN tot AEM wilt toestaan, kunnen de milieu lijsten van gewenste personen in de Manager van de Wolk worden gevormd zodat slechts IP door `p{PROGRAM_ID}.external.adobeaemcloud.com` wordt bepaald om met het milieu te spreken. Dit kan op dezelfde manier als elke andere op IP gebaseerde lijst van gewenste personen in de Manager van de Wolk worden gedaan.
+Als u slechts de toegang van VPN tot AEM wilt toestaan, kunnen de milieu lijsten van gewenste personen in de Manager van de Wolk worden gevormd zodat slechts IP door wordt bepaald `p{PROGRAM_ID}.external.adobeaemcloud.com` mag spreken met het milieu. Dit kan op dezelfde manier als elke andere op IP gebaseerde lijst van gewenste personen in de Manager van de Wolk worden gedaan.
 
 Als de regels op weg-gebaseerd moeten zijn, gebruik standaardHTTP richtlijnen op het verzendersniveau om bepaalde IPs te ontkennen of toe te staan. Zij zouden ervoor moeten zorgen dat de gewenste wegen bij CDN ook niet cacheable zijn zodat het verzoek altijd aan oorsprong krijgt.
 
@@ -507,4 +507,4 @@ Header always set Cache-Control private
 
 ## Overgang tussen de Geavanceerde Types van Voorzien van een netwerk {#transitioning-between-advanced-networking-types}
 
-Aangezien de parameter `kind` niet kan worden gewijzigd, kunt u contact opnemen met de klantenondersteuning voor assistentie en beschrijven wat al is gemaakt en de reden voor de wijziging.
+Aangezien `kind` parameter kan niet worden gewijzigd. Neem contact op met de klantenondersteuning voor assistentie en beschrijf wat er al is gemaakt en de reden voor de wijziging.
