@@ -1,10 +1,10 @@
 ---
 title: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
 description: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
-source-git-commit: 01c657a994e1f8d6bd71acda90cf3b0e290d826b
+source-git-commit: 6397bef5611dd75568f23c8d1adbf4afa53c5f42
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 67%
+source-wordcount: '81'
+ht-degree: 39%
 
 ---
 
@@ -17,10 +17,10 @@ U kunt de migratieset verwijderen vanaf de pagina *Overview.*
 
 Voer de onderstaande stappen uit:
 
-1. Ga naar de pagina *Overview* en selecteer de migratieset die u wilt verwijderen. Klik op **Delete** op de actiebalk.
+1. Ga naar de **Inhoud overbrengen** en selecteer de migratieset die u wilt verwijderen en klik op **Verwijderen** in de actiebalk.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete1.png)
 
 1. Klik op **Delete** in het dialoogvenster **Delete Migration Set** om de verwijdering te bevestigen.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete2.png)
