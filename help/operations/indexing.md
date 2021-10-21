@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8eafe30b69014f5affad6da7e80f8f9a1c42eb38
+source-git-commit: abaee9b289bbcd6a7d201f4b17ef860799fe68aa
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2165'
 ht-degree: 1%
 
 ---
@@ -222,6 +222,6 @@ Deze optimalisatie is standaard niet van toepassing op andere AEM omgevingen die
 
 ## Zoekopdrachten optimaliseren {#index-query}
 
-De **Query-prestaties** kunt u zowel populaire als trage JCR-query&#39;s observeren. Bovendien kan het vragen analyseren en diverse informatie over tonen, met name als een index voor deze vraag of niet wordt gebruikt.
+De **Query-prestaties** kunt u zowel populaire als trage JCR-query&#39;s observeren. Bovendien, kan het vragen analyseren en diverse informatie over tonen, met name als een index voor deze vraag of niet wordt gebruikt.
 
 In tegenstelling tot in AEM op gebouw, AEM as a Cloud Service toont niet **Query-prestaties** in de gebruikersinterface. In plaats daarvan is deze nu beschikbaar via de Developer Console (in Cloud Manager) op het tabblad [Zoekopdrachten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
