@@ -2,7 +2,7 @@
 title: Implementatiefase
 description: Implementatiefase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 90%
@@ -41,7 +41,7 @@ Hiermee geeft u precies aan welke subset van content moet worden overgedragen va
 >[!NOTE]
 >We raden u aan om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
-Raadpleeg [De tool Content Transfer](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md) voor meer informatie.
+Raadpleeg [De tool Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) voor meer informatie.
 
 >[!IMPORTANT]
 >De minimale systeemvereisten voor de Content Transfer-tool zijn AEM 6.3 + en JAVA 8. Bij lagere versies van AEM moet u de content-repository upgraden naar AEM 6.5 om de tool Content Transfer te gebruiken.
