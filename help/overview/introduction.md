@@ -2,9 +2,9 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service
 description: Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 7d5445ae4081065fd869684f2aacdb9de1951089
+source-git-commit: 4db42a04a122306f5fa068b258913836020d2f9a
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '588'
 ht-degree: 53%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service is het nieuwste aanbod van de 
 
 AEM as a Cloud Service laat u op de AEM toepassingen op een cloud-inheemse manier van kapitaliseren, zodat u kunt:
 
-* Schaal uw DevOps-inspanningen met Cloud Manager: CI/CD-framework, autoscaling, API-connectiviteit, flexibele implementatiemodi, codetwaliteitspoorten en service.
+* Schaal uw DevOps-inspanningen met Cloud Manager: CI/CD-framework, autoscaling, API-connectiviteit, flexibele implementatiemodi, codetoekwaliteitspoorten, transparantie van de servicelevering en updates met instructies.
 
 * Ontwikkelaars kunnen automatisering toevoegen aan de ontwikkelingspraktijken van toepassingen.
 
