@@ -1,14 +1,13 @@
 ---
 title: 'DNS-instellingen configureren '
 description: DNS-instellingen configureren
-translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
+source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
-
 
 # DNS-instellingen configureren {#configure-dns}
 
@@ -17,13 +16,28 @@ Nadat uw naam van het douanedomein met succes wordt geverifieerd en opgesteld, b
 >[!NOTE]
 >U of het aangewezen individu in uw organisatie moet login of uw DNS leverancier (het bedrijf kunnen contacteren van wie u het domein van) kocht en updates in uw DNS montages maken.
 
-Hiervoor moet u bepalen of u uw DNS-instellingen moet configureren naar een `CNAME`- of Apex-record die uw aangepaste domeinnaam verwijst naar de domeinnaam van Cloud Manager. Een `CNAME` of een verslag, zodra provisioned zal al Internet verkeer voor het domein leiden aan waar het richt. Als die plaats niet provisioned is om het verkeer te dienen, zal er een stroomonderbreking zijn. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en de klant klaar is voor Go-Live.
+Om dit te doen, moet u bepalen als u uw DNS montages aan a moet vormen `CNAME` of Apex-record die uw aangepaste domeinnaam verwijst naar de domeinnaam van Cloud Manager. A `CNAME` of Een record: wanneer provisioned is, wordt al het internetverkeer voor het domein doorgestuurd naar de locatie waar het naartoe wijst. Als die plaats niet provisioned is om het verkeer te dienen, zal er een stroomonderbreking zijn. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en de klant klaar is voor Go-Live.
+
+De volgende stappen moeten worden uitgevoerd zoals aangegeven in onderstaande tabel:
+
+| Stap |  | Verantwoordelijkheid | Meer informatie |
+|--- |--- |--- |---|
+| SLL-certificaat toevoegen | SLL-certificaat toevoegen | Klant | [Een SSL-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Domeinverificatie | TXT-record toevoegen | Klant | [Een TXT-record toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| Status domeinverificatie controleren |  | Klant |  |
+|  | Status: Domeinverificatie mislukt | Klant | [Status domeinnaam controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | Status: Geverifieerd, implementatie mislukt | Adobe-contactpersoon | [Status domeinnaam controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| DNS-records toevoegen die wijzen naar AEM as a Cloud Service door CNAME- of APEX-records toe te voegen | DNS-instellingen configureren | Klant | [DNS-instellingen configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| DNS-recordstatus controleren |  | Klant | [DNS-recordstatus controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS-status niet gedetecteerd | Klant | [DNS-recordstatus controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS wordt onjuist omgezet | Klant |  |
+
 
 ## CNAME-record {#cname-record}
 
 De volgende secties zullen u helpen bepalen welk type van verslag voor uw DNS configuratie aangewezen is.
 
-Een Canonical Name- of `CNAME`-record is een type DNS-record dat een aliasnaam toewijst aan een echte of canonieke domeinnaam. CNAME-records worden doorgaans gebruikt om een subdomein, zoals `www.example.com`, toe te wijzen aan het domein dat de inhoud van dat subdomein host.
+Een canonieke naam of `CNAME` record is een type DNS-record dat een aliasnaam toewijst aan een echte of canonieke domeinnaam. CNAME-records worden doorgaans gebruikt om een subdomein toe te wijzen, zoals `www.example.com`  naar het domein dat de inhoud van dat subdomein host.
 
 Meld u aan bij uw Domeinregister en maak een CNAME-record om de aangepaste domeinnaam naar het doel te verwijzen, zoals hieronder wordt weergegeven:
 
@@ -33,7 +47,7 @@ Meld u aan bij uw Domeinregister en maak een CNAME-record om de aangepaste domei
 
 ## APEX-record {#apex-record}
 
-Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals example.com. Een apex domein wordt gevormd met `A`, `ALIAS`, of `ANAME` verslag door uw DNS leverancier. De Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
+Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals example.com. Een apex domein wordt gevormd met een `A` , `ALIAS` , of `ANAME` neemt door uw DNS leverancier op. De Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
 
 Voeg alle volgende A verslagen aan DNS van uw Domein montages via uw domeinleverancier toe:
 
