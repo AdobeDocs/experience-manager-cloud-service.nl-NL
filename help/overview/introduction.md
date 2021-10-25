@@ -2,10 +2,10 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service
 description: Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 438a43d7b57d8b1ca78873eecfd94a4b30004829
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 98%
+source-wordcount: '603'
+ht-degree: 51%
 
 ---
 
@@ -13,42 +13,37 @@ ht-degree: 98%
 
 [Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) is nu beschikbaar as a Cloud Service.
 
-Adobe Experience Manager as a Cloud Service:
+Adobe Experience Manager (AEM) as a Cloud Service is het nieuwste aanbod van de AEM productlijn, waardoor u uw klanten kunt blijven voorzien van persoonlijke, contentgestuurde ervaringen. Het biedt cloudnative flexibiliteit om tijd aan waarde te versnellen en is uitbreidbaar om aan uw unieke bedrijfsvereisten te voldoen. U kunt op vroegere investeringen en innovaties voortbouwen door al uw gebruiksgevallen en functionaliteit te behouden en uit te breiden.
 
-* Is de cloud-native manier om de AEM-applicaties te benutten.
+AEM as a Cloud Service laat u op de AEM toepassingen op een cloud-inheemse manier van kapitaliseren, zodat u kunt:
 
-* Maakt het mogelijk om uw klanten gepersonaliseerde, contentgestuurde ervaringen te bieden door de gecombineerde kracht van AEM Content Management System en AEM Digital Asset Management.
+* Schaal uw DevOps-inspanningen met [Wolkenbeheer: CI/CD-framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en), autoscaling, API-connectiviteit, flexibele implementatiemodi, [codetoekwaliteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html?lang=en)en service.
 
-* Biedt Continuous Delivery en Continuous Integration voor updates zonder uitvaltijd.
+* Ontwikkelaars kunnen automatisering toevoegen aan de ontwikkelingspraktijken van toepassingen.
 
-* Levert snel en efficiënt content, maakt optimaal gebruik van een ingebouwd CDN-netwerk (Content Delivery Network) en van andere beste praktijken voor netwerklagen.
+* Lever inhoud snel en efficiënt op globale schaal, gebruikend een ingebouwd Netwerk van de Levering van de Inhoud (CDN) en andere netwerk-laag beste praktijken.
 
-* Is gebaseerd op een dynamische architectuur die automatisch schaalt, waardoor infrastructuur geen zorg meer is.
+* Gebruikt een dynamische architectuur die auto-schalen, waarbij infrastructuuroverwegingen worden verwijderd.
 
-* Is op veiligheid gefocust: er worden geautomatiseerde testen gebruikt om te zoeken naar gemeenschappelijke kwetsbaarheden.
+* Blijf bovenop bedreigingen en veiligheid-risico matiging, gebruikend geautomatiseerde tests om op gemeenschappelijke kwetsbaarheid af te tasten.
 
-* Valideert de klantcode aan de hand van geautomatiseerde testen.
+* Zorg voor maximale veerkracht en efficiëntie, ondersteund door geoptimaliseerde prestatietopologieën.
 
-* Bevat prestatietopologieën die zijn geoptimaliseerd voor maximale flexibiliteit en efficiëntie.
+* Profiteer van de diepgaande integratie van AEM as a Cloud Service met de Adobe Experience Cloud om klanten betere ervaringen te bieden met online marketing en webanalyseproducten.
 
-* Zorgt dat er aanzienlijk minder handmatige configuratie nodig is.
+* Gebruik gereedschappen die u helpen de migratietaken te versnellen, zoals het vernieuwen van code, de overdracht van inhoud en nog veel meer.
 
-* Is diep geïntegreerd met de Adobe Experience Cloud.
+Met AEM as a Cloud Service,
 
-* Introduceert de volgende generatie van de Adobe Experience Manager-productlijn, voortbouwend op eerdere investeringen en innovaties, waarbij alle gebruiksgevallen en -functies bewaard blijven en worden uitgebreid.
+* Ontwikkelaars kunnen zich concentreren op het configureren en uitbreiden van AEM met het nieuwe, op cloud gebaseerde ontwikkelingspatroon.
 
-Dit alles helpt bij het volgende:
+* Inhoudsauteurs kunnen profiteren van de nieuwste innovaties die ze regelmatig ontvangen.
 
-* Ontwikkelaars kunnen zich concentreren op de configuratie en uitbreiding van AEM, waarbij ze dezelfde patronen volgen die AEM tot nu toe succesvol hebben gemaakt, aangevuld met het nieuwe, cloudgebaseerde ontwikkelingspatroon.
+* Systeembeheerders kunnen handmatige taken in configuratie- en infrastructuuronderhoud tot een minimum beperken.
 
-* Auteurs profiteren van de nieuwste innovaties, die hun regelmatig worden aangeboden.
-
-* Configuratie en infrastructuur zijn eenvoudiger geworden voor de systeembeheerders.
-
-* Marketingprofessionals ervaren een snellere terugverdientijd.
+* De Beroeps van de marketing kunnen snellere tijd-aan-waarde bereiken.
 
 >[!NOTE]
->
 >Zie [Terminologie](terminology.md) voor een aantal nieuwe termen die met AEM as a Cloud Service zijn geïntroduceerd.
 
 ## Toegevoegde waarde as a Cloud Service {#value-added-as-a-cloud-service}
