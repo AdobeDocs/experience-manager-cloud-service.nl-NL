@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
+source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
@@ -15,12 +15,9 @@ ht-degree: 27%
 
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
-* Het doel AEM de as a Cloud Service omgeving:
-   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* De Azure-opslagservice:
-   `*.blob.core.windows.net`
-* Het eindpunt van de Toewijzing van de Gebruiker IO:
-   `usermanagement.adobe.io`
+* Het doel AEM de as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* De Azure-opslagservice: `*.blob.core.windows.net`
+* Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
 Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het volgende cURL bevel van shell van de broninstantie uit (vervang `program_id`, `environment_id`, en `migration_token`):
 
