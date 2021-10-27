@@ -2,14 +2,33 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 31%
+source-wordcount: '860'
+ht-degree: 27%
 
 ---
 
 # Aan de slag met het gereedschap Inhoud overbrengen {#getting-started-content-transfer-tool}
+
+## Connectiviteit bronomgeving
+
+De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
+
+* Het doel AEM de as a Cloud Service omgeving:
+   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* De Azure-opslagservice:
+   `*.blob.core.windows.net`
+* Het eindpunt van de Toewijzing van de Gebruiker IO:
+   `usermanagement.adobe.io`
+
+Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het volgende cURL bevel van shell van de broninstantie uit (vervang `program_id`, `environment_id`, en `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+Als een `HTTP/2 200` is ontvangen, is een verbinding met AEM as a Cloud Service gelukt.
 
 ## Beschikbaarheid {#availability}
 
@@ -20,7 +39,7 @@ ht-degree: 31%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Raadpleeg [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html) voor meer informatie over de nieuwste versie.
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie. Raadpleeg voor meer informatie over de nieuwste versie [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Download de Content Transfer-tool van de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-portal.
@@ -39,11 +58,11 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 
 In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te migreren naar AEM as a Cloud Service (Auteur/Publiceren):
 
-1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
+1. Selecteer de Adobe Experience Manager en navigeer naar de gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. Selecteer de optie **Content Transfer** van de wizard **Content Migration**.
+1. Selecteer **Inhoud overbrengen** optie van **Inhoud migreren** wizard.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
@@ -56,7 +75,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
 
 
-1. Vul de velden in **Migratieset maken** scherm, zoals hieronder wordt beschreven.
+1. Vul de velden in **Migratieset maken** scherm, zoals hieronder beschreven.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -73,16 +92,16 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken terugwinnen door **open toegangstoken** te gebruiken knoop. U moet ervoor zorgen dat u tot de groep van AEM beheerders in de instantie van de doelCloud Service behoort.
+      >U kunt het toegangstoken terugwinnen door **Toegangstoken openen** knop. U moet ervoor zorgen dat u tot de groep van AEM beheerders in de instantie van de doelCloud Service behoort.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
-      1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
+      1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
 
          ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >Als u van plan bent versies op te nemen als onderdeel van een migratieset en extra-ups uitvoert met `wipe=false`, dan moet u versiezuivering uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true`.
+         >Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
 
 
       1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
@@ -92,26 +111,26 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (sommige  `/etc` paden mogen worden geselecteerd in CTT)
+         >* `/etc` (sommige `/etc` paden mogen worden geselecteerd in CTT)
 
 
-1. Klik op **Save** nadat u alle velden in het **Create Migration Set** detailscherm vult.
+1. Klikken op **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
 
-1. U zult uw migratie bekijken die in **de tovenaar van de Overdracht van de Inhoud** wordt geplaatst, zoals aangetoond in het hieronder cijfer.
+1. U ziet de migratie die is ingesteld in het dialoogvenster **Inhoud overbrengen** zoals weergegeven in de onderstaande afbeelding.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Alle bestaande migratiesets worden weergegeven op de wizard **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
+   Alle bestaande migratiesets worden weergegeven op de **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
-   * Een *groene cloud* geeft aan dat u het extractieproces kunt voltooien.
+   * A *groene wolk* Hiermee wordt aangegeven dat u het extractieproces kunt voltooien.
    * Een *geel pictogram* geeft aan dat u de bestaande migratieset niet hebt gemaakt en dat de specifieke migratieset door een andere gebruiker in dezelfde instantie wordt gemaakt.
 
-1. Selecteer een migratieset en klik op **Eigenschappen** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk de naam **Migratieset** of **Service URL** te wijzigen.
+1. Selecteer een migratieset en klik op **Eigenschappen** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk om de **Naam migratieset** of de **Service-URL**.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u [Omgaan met grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) doornemen om de extractie- en insluitingsfasen van de activiteit voor inhoudsoverdracht aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u controleren [Afhandeling van grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) om de extractie- en innamefasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.
