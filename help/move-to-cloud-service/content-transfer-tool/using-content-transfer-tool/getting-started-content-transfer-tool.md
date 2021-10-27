@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
@@ -11,7 +11,7 @@ ht-degree: 27%
 
 # Aan de slag met het gereedschap Inhoud overbrengen {#getting-started-content-transfer-tool}
 
-## Connectiviteit bronomgeving
+## Connectiviteit bronomgeving {#source-environment-connectivity}
 
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
@@ -30,6 +30,7 @@ Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het
 
 >[!NOTE]
 >Als een `HTTP/2 200` is ontvangen, is een verbinding met AEM as a Cloud Service gelukt.
+
 
 ## Beschikbaarheid {#availability}
 
