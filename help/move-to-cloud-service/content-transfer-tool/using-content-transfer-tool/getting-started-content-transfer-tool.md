@@ -2,28 +2,26 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
+source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
 
 ---
 
-# Aan de slag met het gereedschap Inhoud overbrengen {#getting-started-content-transfer-tool}
+# Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
 ## Connectiviteit bronomgeving {#source-environment-connectivity}
 
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
 * Het doel AEM de as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* De Azure-opslagservice: `*.blob.core.windows.net`
+* The Azure blob storage service: `*.blob.core.windows.net`
 * Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
 Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het volgende cURL bevel van shell van de broninstantie uit (vervang `program_id`, `environment_id`, en `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 
 >[!NOTE]
@@ -48,8 +46,8 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Gereedschap Inhoud overbrengen uitvoeren"
->abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM as a Cloud Service (Auteur/Publiceren)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
+>abstract="Learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish)."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" See Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
@@ -66,12 +64,12 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
-1. De onderstaande console wordt weergegeven wanneer u de eerste migratieset maakt. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
+1. The console below appears when you create the first migration set. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
-   >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
+   >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
 
 
 1. Vul de velden in **Migratieset maken** scherm, zoals hieronder beschreven.
@@ -95,7 +93,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
-      1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
+      1. **Include Version**: Selecteer de versie die u wilt opnemen. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
          ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
@@ -115,11 +113,11 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. Klikken op **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
 
-1. U ziet de migratie die is ingesteld in het dialoogvenster **Inhoud overbrengen** zoals weergegeven in de onderstaande afbeelding.
+1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Alle bestaande migratiesets worden weergegeven op de **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
+   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. Sommige van deze pictogrammen worden hieronder beschreven.
 
    * Een *rode wolk* geeft aan dat u het extractieproces niet kunt voltooien.
    * A *groene wolk* Hiermee wordt aangegeven dat u het extractieproces kunt voltooien.
@@ -132,4 +130,4 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u controleren [Afhandeling van grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) om de extractie- en innamefasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.
+Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
