@@ -2,10 +2,10 @@
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 1%
+source-wordcount: '1739'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Aan de slag met AzCopy als een stap Vooraf kopiëren"
 
 Het kopiëren van een groot aantal lobs met het hulpmiddel van de Overdracht van de Inhoud (CTT) kan veelvoudige dagen vergen.
-Als u de extractie- en innamefasen van de activiteit voor inhoudsoverdracht aanzienlijk wilt versnellen en de inhoud naar AEM as a Cloud Service wilt verplaatsen, kan CTT [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) gebruiken als een optionele stap voor het kopiëren. Deze pre-exemplaarstap kan worden gebruikt wanneer de bron AEM instantie wordt gevormd om een gegevensopslag van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken Blob.  Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3 of Azure Blob Storage naar de blob-opslag van de migratieset. In de innamefase kopieert AzCopy klodders van de blob store van de migratieset naar de bestemming AEM as a Cloud Service blob store.
+Als u de extractie- en innamefasen van de activiteit voor inhoudsoverdracht aanzienlijk wilt versnellen en de inhoud naar AEM as a Cloud Service wilt verplaatsen, kan CTT een hefboomwerking hebben [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) als een optionele stap vóór het kopiëren. Deze pre-exemplaarstap kan worden gebruikt wanneer de bron AEM instantie wordt gevormd om een Amazon S3, de opslag van de Gegevens van de Opslag van Azure Blob, of de Opslag van de Gegevens van het Dossier te gebruiken. Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3, Azure Blob Storage of File data store naar de migratieset blob store. In de innamefase kopieert AzCopy klodders van de blob store van de migratieset naar de bestemming AEM as a Cloud Service blob store.
 
 >[!NOTE]
 > Deze functionaliteit is geïntroduceerd in de CTT 1.5.4-versie.
@@ -29,14 +29,30 @@ Als u de extractie- en innamefasen van de activiteit voor inhoudsoverdracht aanz
 
 Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat u begint:
 
-* AEM versie moet 6.3 - 6.5 zijn
-* De gegevensopslag van de bron AEM wordt gevormd om Amazon S3 of Azure Blob Storage te gebruiken. Voor meer details, verwijs [Het vormen knoopopslag en gegevensopslag in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
-* De volledige gegevensopslag wordt tijdens de extractie gekopieerd. Aangezien er kosten zijn verbonden aan het overdragen van gegevens van zowel Amazon S3 als Azure Blob Storage, zijn de overdrachtskosten relatief ten opzichte van de totale hoeveelheid gegevens in de opslagcontainer (al dan niet vermeld in AEM). Raadpleeg [Amazon S3](https://aws.amazon.com/s3/pricing/) en [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) voor meer informatie.
+* De AEM van de bron moet 6.3 - 6.5 zijn.
+
+* De gegevensopslag van de bron AEM wordt gevormd om Amazon S3 of Azure Blob Storage te gebruiken. Raadpleeg voor meer informatie [Opslaan van knooppunten en gegevensopslag configureren in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
+
 * Elke migratieset kopieert de gehele gegevensopslagruimte, zodat slechts één migratieset moet worden gebruikt.
-* U hebt toegang nodig om [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te installeren op de instantie (of VM) waarop de bron AEM instantie wordt uitgevoerd.
+
+* U hebt toegang nodig om te installeren [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) op de instantie (of VM) die de bron AEM instantie uitvoert.
+
+* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande 7 dagen in werking gesteld op de bron. Raadpleeg voor meer informatie [Opruiming voor dataopslag](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
+
+
+### Extra overwegingen als de bron AEM instantie wordt gevormd om een opslag van de Gegevens van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken {#additional-considerations-amazons3-azure}
+
+* Aangezien er kosten zijn verbonden aan het overdragen van gegevens van zowel Amazon S3 als Azure Blob Storage, zijn de overdrachtskosten relatief ten opzichte van de totale hoeveelheid gegevens in de opslagcontainer (al dan niet vermeld in AEM). Zie [Amazon S3](https://aws.amazon.com/s3/pricing/) en [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) voor meer informatie .
+
 * U hebt een toegangstoets en een geheim sleutelpaar nodig voor het Amazon S3-bronemmertje of een SAS URI voor de bron Azure Blob Storage-container (alleen-lezen is prima).
-* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande 7 dagen in werking gesteld op de bron. Voor meer details, verwijs naar [de huisvuilinzameling van de opslagplaats ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
-* De meeste gegevens over de broninstantie worden in de migratie opgenomen.
+
+### Extra overwegingen als de bron AEM instantie wordt gevormd om de Opslag van de Gegevens van het Dossier te gebruiken {#additional-considerations-aem-instance-filedatastore}
+
+* Het lokale systeem moet vrije ruimte hebben strikt groter dan 1/256 grootte van de brondatastore. Als de datastore bijvoorbeeld 3 TB groot is, moet er meer vrije ruimte dan 11,72 GB beschikbaar zijn in het dialoogvenster `crx-quickstart/cloud-migration` -map op de bron zodat AzCopy kan werken. Het bronsysteem moet minstens 1 GB vrije ruimte hebben. Vrije ruimte kan worden verkregen door `df -h` op Linux-instanties en opdracht dir in Windows-instanties.
+
+* Telkens wanneer de extractie wordt uitgevoerd met AzCopy ingeschakeld, wordt de volledige datastore van het bestand afgevlakt en naar de container voor cloudmigratie gekopieerd. Als uw migratieset beduidend kleiner is dan de grootte van uw datastore, dan is de extractie AzCopy niet de optimale benadering.
+
+* Als AzCopy eenmaal is gebruikt om over de datastore te kopiëren, schakelt u deze uit voor delta- of top-up extracties.
 
 ## AzCopy instellen als een stap vóór kopiëren {#setting-up-pre-copy-step}
 
@@ -44,9 +60,15 @@ Volg deze sectie om te leren hoe u AzCopy kunt instellen als een pre-kopiestap m
 
 ### 0. Totale grootte van alle inhoud in de gegevensopslag bepalen {#determine-total-size}
 
+Het is om twee redenen belangrijk om de totale grootte van de gegevensopslag te bepalen:
+
+* Als de bron AEM wordt gevormd om de gegevensopslag van het Dossier te gebruiken, moet het lokale systeem vrije ruimte hebben strikt groter dan 1/256 grootte van de opslag van brongegevens.
+
+* Door de totale grootte van de gegevensopslag te weten, kunt u de extractie- en innametijden beter inschatten. Gebruik de [Berekening van gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en#content-transfer) in [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/overview-cam.html?lang=en) om een schatting te krijgen van de extractie- en innametijden.
+
 #### Azure Blob Storage Data Store {#azure-blob-storage}
 
-Van de pagina van containereigenschappen in het Azure portaal, gebruik **berekent grootte** knoop om de grootte van al inhoud in de container te bepalen. Bijvoorbeeld:
+Van de pagina van containereigenschappen in het Azure portaal, gebruik **Grootte berekenen** om de grootte van alle inhoud in de container te bepalen. Bijvoorbeeld:
 
 ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -57,21 +79,35 @@ U kunt het tabblad Metriek van de container gebruiken om de grootte van alle inh
 
 ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
 
+#### Bestandsgegevensopslag {#file-data-store-determine-size}
+
+* Voor MAC, de systemen van UNIX, stel het du bevel op de datastore folder in werking om zijn grootte te krijgen:
+   `du -sh [path to datastore on the instance]`. Als uw datastore zich bijvoorbeeld op `/mnt/author/crx-quickstart/repository/datastore`Met de volgende opdracht krijgt u de grootte ervan: `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+
+* Voor Vensters, gebruik het dir bevel op de datastore folder om zijn grootte te krijgen:
+   `dir /a/s [location of datastore]`.
+
 ### 1. AzCopy installeren {#install-azcopy}
 
-[](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) AzCopyis is een opdrachtregelprogramma van Microsoft dat beschikbaar moet zijn in de broninstantie om deze functie in te schakelen.
+[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) is een opdrachtregelprogramma van Microsoft dat beschikbaar moet zijn in de broninstantie om deze functie in te schakelen.
 
-Kortom, u zult zeer waarschijnlijk Linux x86-64 binair van [AzCopy docs page](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) willen downloaden en untar het aan een plaats zoals /usr/bin. Noteer waar u het binaire bestand hebt geplaatst, aangezien u het volledige pad naar het binaire bestand in een latere stap nodig hebt.
+Kortom, u zult waarschijnlijk Linux x86-64 binair van het binaire getal van willen downloaden [AzCopy-documentpagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) en verwijder het naar een locatie zoals /usr/bin.
+
+>[!IMPORTANT]
+>Noteer waar u het binaire bestand hebt geplaatst, aangezien u het volledige pad naar het binaire bestand in een latere stap nodig hebt.
 
 ### 2. Een CTT-release (Content Transfer Tool) installeren met ondersteuning voor AzCopy {#install-ctt-azcopy-support}
 
-Ondersteuning voor AzCopy is opgenomen in de CTT 1.5.4-release. U kunt de recentste versie van CTT van [de portal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) downloaden.
+AzCopy-ondersteuning voor Amazon S3 en Azure Blob Storage is inbegrepen bij de CTT 1.5.4-release.
+Ondersteuning voor File Data Store is opgenomen in de CTT 1.7.2-release. U kunt de meest recente versie van CTT downloaden van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
+
 
 ### 3. Een bestand azcopy.config configureren {#configure-azcopy-config-file}
 
-Voor de bron AEM instantie, in `crx-quickstart/cloud-migration`, creeer een nieuw dossier genoemd azcopy.config.
+Op de bron AEM instantie, in `crx-quickstart/cloud-migration`, maakt u een nieuw bestand met de naam `azcopy.config`.
 
-De inhoud van dit configuratiebestand is anders, afhankelijk van het feit of uw bron AEM instantie een Azure- of Amazon S3-gegevensopslag gebruikt.
+>[!NOTE]
+>De inhoud van dit configuratiebestand is anders, afhankelijk van het feit of uw bron AEM instantie een Azure- of Amazon S3-gegevensopslag of File-gegevensopslag gebruikt.
 
 #### Azure Blob Storage Data Store {#azure-blob-storage-data}
 
@@ -102,11 +138,29 @@ s3AccessKey=--REDACTED--
 s3SecretKey=--REDACTED--
 ```
 
+#### Bestandsgegevensopslag {#file-data-store-azcopy-config}
+
+Uw `azcopy.config` Het bestand moet de eigenschap azcopyPath bevatten en een optionele eigenschap repository.home die naar de locatie van de datastore van het bestand wijst. Gebruik de juiste waarden voor de instantie.
+Bestandsgegevensopslag
+
+```
+azCopyPath=/usr/bin/azcopy
+repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
+```
+
+De eigenschap azcopyPath moet het volledige pad bevatten van de locatie waar het opdrachtregelgereedschap azCopy op de AEM-instantie is geïnstalleerd. Als de eigenschap azCopyPath ontbreekt, wordt de voorbeeldstap niet uitgevoerd.
+
+Indien `repository.home` het bezit mist van azcopy.config, toen de standaarddatastore plaats `/mnt/crx/author/crx-quickstart/repository/datastore` wordt gebruikt voor het uitvoeren van precisie.
+
 ### 4. Uitpakken met AzCopy {#extracting-azcopy}
 
 Als het bovenstaande configuratiebestand is geïnstalleerd, wordt de voorkopieerfase van AzCopy uitgevoerd als onderdeel van elke volgende extractie. Als u wilt voorkomen dat het bestand wordt uitgevoerd, kunt u de naam van het bestand wijzigen of het bestand verwijderen.
 
-1. Begin een extractie van CTT UI. Raadpleeg [Aan de slag met Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) en [Extractieproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) voor meer informatie.
+>[!NOTE]
+>Als AzCopy niet correct wordt gevormd zou u dit bericht in de logboeken zien:
+>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+
+1. Begin een extractie van CTT UI. Zie [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) en de [Extractieproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) voor meer informatie .
 
 1. Bevestig dat de volgende regel in het extractielogboek wordt afgedrukt:
 
@@ -116,7 +170,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 Gefeliciteerd! Deze logbestandvermelding betekent dat uw configuratie als geldig is beschouwd en dat AzCopy momenteel alle lobs van de broncontainer naar de migratiecontainer kopieert.
 
-De logbestandvermeldingen van AzCopy worden weergegeven in het extractielogbestand en worden voorafgegaan door c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy pre-copy]
+De logitems van AzCopy worden weergegeven in het extractielogbestand en worden voorafgegaan door c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy vooraf kopiëren]
 
 >[!CAUTION]
 >
@@ -135,6 +189,11 @@ Als er een probleem optreedt met AzCopy, mislukt de extractie direct en bevatten
 
 Alle blobs die vóór de fout zijn gekopieerd, worden automatisch door AzCopy overgeslagen bij volgende bewerkingen, en hoeven niet opnieuw te worden gekopieerd.
 
+#### Voor de opslag van bestandsgegevens {#file-data-store-extract}
+
+Wanneer AzCopy voor source file dataStore loopt, zou u berichten als deze in de logboeken moeten zien erop wijzen die dat de omslagen worden verwerkt:
+`c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
+
 ### 5. Inschakelen met AzCopy {#ingesting-azcopy}
 
 Met de release van Content Transfer Tool 1.5.4 hebben we AzCopy-ondersteuning toegevoegd aan de opname van auteurs.
@@ -144,7 +203,7 @@ Met de release van Content Transfer Tool 1.5.4 hebben we AzCopy-ondersteuning to
 
 Als u AzCopy tijdens inname wilt gebruiken, dient u over een AEM as a Cloud Service versie te beschikken die ten minste versie 2021.6.5561 is.
 
-Begin met de auteursinvoer van CTT UI. Raadpleeg [Ingestieproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) voor meer informatie.
+Begin met de auteursinvoer van CTT UI. Zie de [Inktproces](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) voor meer informatie .
 De logboekingangen van AzCopy zullen in het innamelogboek verschijnen. Ze zullen er als volgt uitzien:
 
 ```
@@ -176,6 +235,12 @@ Final Job Status: CompletedWithSkipped
 *************** Completed AzCopy pre-copy phase ***************
 ```
 
+## AzCopy uitschakelen {#disable-azcopy}
+
+Als u AzCopy wilt uitschakelen, wijzigt u de naam van de `azcopy.config` bestand.
+
+De azcopy-extractie kan bijvoorbeeld worden uitgeschakeld met: `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
+
 ## Volgende functies {#whats-next}
 
-Als u hebt geleerd dat u grote opslagplaatsen voor inhoud moet verwerken om de extractie- en insluitingsfasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen, bent u nu klaar om het extractieproces in het gereedschap voor de overdracht van inhoud te leren. Zie [Inhoud extraheren uit bron in gereedschap Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) om te leren hoe u de migratieset kunt extraheren uit het gereedschap Inhoud overbrengen.
+Als u hebt geleerd dat u grote opslagplaatsen voor inhoud moet verwerken om de extractie- en insluitingsfasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen, bent u nu klaar om het extractieproces in het gereedschap voor de overdracht van inhoud te leren. Zie [Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) om te leren hoe u de migratieset kunt extraheren met het gereedschap Inhoud overbrengen.
