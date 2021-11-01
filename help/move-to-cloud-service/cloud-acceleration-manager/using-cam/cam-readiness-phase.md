@@ -2,7 +2,7 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 4%
@@ -93,7 +93,7 @@ Wanneer u meer dan één rapport van de Analysator van Beste praktijken (BPA) in
 Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te geven:
 
 >[!NOTE]
->Wanneer u meer dan één BPA- rapport in een Project uploadt, zult u het pictogram zien **...**.
+>Wanneer u meer dan één BPA- rapport in een Project uploadt, zult u zien **...** pictogram.
 
 1. Navigeer naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
 
