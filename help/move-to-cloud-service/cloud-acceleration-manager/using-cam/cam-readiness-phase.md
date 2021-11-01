@@ -2,10 +2,10 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
+source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 5%
+source-wordcount: '1032'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. Navigeer naar de sectie **Gereedheid**, zoals in de onderstaande afbeelding wordt getoond.
+1. Ga naar de **Gereedheid** in de onderstaande afbeelding.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -35,7 +35,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
 Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te gebruiken:
 
-1. Klik op de **knoop van het Overzicht** van **Beste Analyse van Praktijken** kaart.
+1. Klik op de knop **Controleren** van de knop **Analyse van best practices** kaart.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -44,14 +44,14 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
    >[!NOTE]
    >Om een effect op zaken kritieke instanties te vermijden, adviseert men dat u BPA op een milieu van de Auteur in werking stelt dat zo dicht mogelijk aan de milieu van de Productie op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de auteurlaag van de productieomgeving.
 
-   1. Navigeer naar [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal en download de Analysator van best practices als ZIP-bestand.
+   1. Navigeren naar [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) de Analysator van Beste praktijken als zip dossier openen en downloaden.
 
       >[!NOTE]
-      >Bekijk [Analysator van Beste praktijken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) om te leren hoe te om BPA in werking te stellen.
+      >Controleren [Analysator van best practices gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) om te leren hoe u BPA kunt uitvoeren.
 
    1. Het rapport exporteren in CSV-indeling
 
-1. Klik op **Upload nieuw rapport** om BPA- rapport in CAM te uploaden.
+1. Klikken op **Nieuw rapport uploaden** om BPA- rapport in CAM te uploaden.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
@@ -62,7 +62,7 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Raadpleeg de onderstaande sectie [Analyse van analyserapport voor beste praktijken](#analysis-report) voor meer informatie.
+1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Zie de onderstaande sectie [Rapport Analyse van beste praktijken](#analysis-report) voor meer informatie .
 
    >[!NOTE]
    >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
@@ -73,11 +73,11 @@ U kunt de optie voor afdrukvoorvertoningen selecteren in Cloud Acceleration Mana
 
 Voer de onderstaande stappen uit:
 
-1. Klik op **pictogram Afdrukvoorbeeld**, zoals hieronder getoond.
+1. Klikken op **Afdrukvoorbeeld** zoals hieronder weergegeven.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Als u op **Afdrukvoorbeeld** klikt, wordt een nieuw tabblad geopend met het rapport dat in een afdrukbare voorvertoning wordt weergegeven. Klik op **Afdrukken** om het rapport naar een PDF formaat te drukken.
+1. Klikken op **Afdrukvoorbeeld** Hiermee opent u een nieuw tabblad met het rapport dat in een afdrukbare voorvertoning wordt weergegeven. Klikken op **Afdrukken** om het rapport af te drukken naar een PDF-indeling.
 
    >[!IMPORTANT]
    >* De optie **Opslaan als PDF** wordt aanbevolen en ondersteund voor de bovenstaande functionaliteit.
@@ -85,6 +85,68 @@ Voer de onderstaande stappen uit:
 
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### Trendline weergeven gebruiken {#trendline-view-cam}
+
+Wanneer u meer dan één rapport van de Analysator van Beste praktijken (BPA) in een Project uploadt, kunt u selecteren **Trendline weergeven** optie om resultaten van de oude BPA-rapporten te bekijken en te vergelijken.
+
+Voer de onderstaande stappen uit om de trendline weer te geven:
+
+>[!NOTE]
+>Wanneer u meer dan één BPA- rapport in een Project uploadt, zult u het pictogram zien **...**.
+
+1. Navigeer naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klik op de knop **...** om de vervolgkeuzelijst weer te geven.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >Het getoonde rapport is altijd het rapport dat de recentste Datum van het Rapport heeft.
+
+1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klikken op **Trendline weergeven** Hiermee opent u de trendlijnweergave van het rapport, zoals in de onderstaande afbeelding wordt getoond.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >Het Trendline Rapport toont de resultaten van de historische BPA- rapporten in een grafische vertegenwoordiging.
+   >Er worden twee grafieken weergegeven met de trend van de:
+   >1. Trend van bevindingen rapport
+   >1. Trend voor aangepaste componenten en sjablonen
+      >U kunt de grafische weergave toevoegen of wijzigen via de vervolgkeuzelijst, zoals hieronder wordt weergegeven.
+      >![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+
+#### Het Trendline-rapport verwijderen {#delete-trendline}
+
+Voer de onderstaande stappen uit om een rapport uit de weergave Trendline te verwijderen:
+
+1. Navigeer naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klik op de knop **...** om de vervolgkeuzelijst weer te geven.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klik op het verwijderpictogram in het pop-upmenu **Trendline-rapport** scherm.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Klikken op **Verwijderen** om de schrapping te bevestigen.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
 
 ### Rapport Analyse van beste praktijken {#analysis-report}
 
@@ -101,17 +163,17 @@ Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de An
 
 #### Rapporteigenschappen {#report-properties}
 
-De **Report Properties**-kaart biedt informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum en Adobe Experience Manager (AEM)-gegevens.
+De **Rapporteigenschappen** De kaart biedt informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum en Adobe Experience Manager (AEM)-gegevens.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Overzicht van rapporten {#report-overview}
 
-Deze **kaart van het Overzicht van het Rapport** verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich aan AEM as a Cloud Service te bewegen, zoals aangetoond in hieronder figuur van toepassing zijn.
+Dit **Overzicht van rapporten** kaart geeft de bevindingen en ernst van het rapport weer die van toepassing zijn bij het beoordelen van de gereedheid om over te gaan naar AEM as a Cloud Service, zoals in onderstaande afbeelding wordt getoond.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Als u op dit rapport klikt, wordt het tabblad **Rapport** geopend.
+Als u op dit rapport klikt, wordt het **Rapport** tab.
 
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -120,7 +182,7 @@ U kunt het rapport filteren op basis van belang, subtype of aantal.
 ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Raadpleeg [Het rapport Analysator van best practices interpreteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) voor meer informatie over categorieën bevindingen en belangrijke niveaus.
+>Zie [Het rapport met de analyse van best practices interpreteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) voor meer informatie over de categorieën bevindingen en de belangrijkste niveaus.
 
 #### Evaluatie van best practices {#best-practices-assessment}
 
@@ -148,7 +210,7 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling te onderzoeken.
 
-1. Klik op **View** knoop van **Planning en Opstelling** kaart. Deze kaart biedt alle relevante inhoud die u helpt bij het plannen en instellen van uw AEM migratie.
+1. Klik op de knop **Weergave** van de knop **Planning en installatie** kaart. Deze kaart biedt alle relevante inhoud die u helpt bij het plannen en instellen van uw AEM migratie.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -158,4 +220,4 @@ Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij de Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap in de [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Als u eenmaal hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap in het dialoogvenster [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
