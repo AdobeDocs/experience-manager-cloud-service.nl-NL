@@ -2,9 +2,9 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 4%
 
 ---
@@ -104,7 +104,7 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Het rapport dat wordt weergegeven in het dialoogvenster **Trendline-rapportscherm** is altijd de datum van het recente verslag.
+   >Het getoonde rapport is altijd het rapport dat de recentste rapportdatum heeft.
 
 1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
 
@@ -124,33 +124,6 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
    >
    >U kunt de grafische weergave toevoegen of wijzigen via de vervolgkeuzelijst, zoals in de onderstaande afbeelding wordt getoond:
    >![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Het rapport verwijderen {#delete-trendline}
-
-Voer de onderstaande stappen uit om een rapport uit de weergave Trendline te verwijderen:
-
->[!IMPORTANT]
->Een rapport kan slechts worden geschrapt wanneer meer dan één rapport in een project is geupload.
-
-1. Navigeer naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Klik op de knop **...** om de vervolgkeuzelijst weer te geven.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Klik op het verwijderpictogram in het pop-upmenu **Trendline-rapport** scherm.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Klikken op **Verwijderen** om de schrapping te bevestigen.
-
-   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Rapport Analyse van beste praktijken {#analysis-report}
@@ -222,6 +195,33 @@ Volg deze sectie om de de activiteitenkaart van de Planning en van de Opstelling
 1. Een inhoudscarrousel geeft alle relevante informatie weer voor deze fase van de migratiereis.
 
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Het schrappen van een Rapport van de Analyse van Beste praktijken {#delete-trendline}
+
+Voer de onderstaande stappen uit om een rapport uit de weergave Trendline te verwijderen:
+
+>[!IMPORTANT]
+>Een rapport kan slechts worden geschrapt wanneer meer dan één rapport in een project is geupload.
+
+1. Navigeer naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klik op de knop **...** om de vervolgkeuzelijst weer te geven.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klik op het verwijderpictogram in het pop-upmenu **Trendline-rapport** scherm.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Klikken op **Verwijderen** om de schrapping te bevestigen.
+
+   ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## Volgende functies {#whats-next}
 
