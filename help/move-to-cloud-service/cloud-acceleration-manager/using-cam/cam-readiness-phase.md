@@ -2,9 +2,9 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 4%
 
 ---
@@ -90,7 +90,7 @@ Voer de onderstaande stappen uit:
 
 Wanneer u meer dan één rapport van de Analysator van Beste praktijken (BPA) in een Project uploadt, kunt u selecteren **Trendline weergeven** optie om resultaten van de oude BPA-rapporten te bekijken en te vergelijken.
 
-Voer de onderstaande stappen uit om de trendline weer te geven:
+Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te geven:
 
 >[!NOTE]
 >Wanneer u meer dan één BPA- rapport in een Project uploadt, zult u het pictogram zien **...**.
@@ -104,7 +104,7 @@ Voer de onderstaande stappen uit om de trendline weer te geven:
    ![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Het getoonde rapport is altijd het rapport dat de recentste Datum van het Rapport heeft.
+   >Het rapport dat wordt weergegeven in het dialoogvenster **Trendline-rapportscherm** is altijd de datum van het recente verslag.
 
 1. Klikken op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
 
@@ -116,12 +116,14 @@ Voer de onderstaande stappen uit om de trendline weer te geven:
 
    >[!NOTE]
    >Het Trendline Rapport toont de resultaten van de historische BPA- rapporten in een grafische vertegenwoordiging.
+   >
    >Er worden twee grafieken weergegeven met de trend van de:
-   >1. Trend van bevindingen rapport
-   >1. Trend voor aangepaste componenten en sjablonen
-      >U kunt de grafische weergave toevoegen of wijzigen via de vervolgkeuzelijst, zoals hieronder wordt weergegeven.
-      >![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **Trend van bevindingen rapport**
+   >1. **Aangepaste componenten en sjabloontrend**
 
+   >
+   >U kunt de grafische weergave toevoegen of wijzigen via de vervolgkeuzelijst, zoals in de onderstaande afbeelding wordt getoond:
+   >![afbeelding](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Het Trendline-rapport verwijderen {#delete-trendline}
 
