@@ -5,10 +5,10 @@ breadcrumb-title: Hulplijn verplaatsen
 user-guide-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 36%
+source-wordcount: '190'
+ht-degree: 34%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 36%
 # Gids Overstappen naar AEM as a Cloud Service {#moving}
 
 + [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ Opmerkingen bij de release migratiehulpmiddelen {#release-notes-migration-tools}
+   + [Huidige opmerkingen bij de release (2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + 2021 {#2021}
+      + [Opmerkingen bij de release 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + Fases van de overgang {#phases}
    + [Gereedheid](/help/move-to-cloud-service/migration-readiness.md)
    + [Implementatie](/help/move-to-cloud-service/migration-implementation.md)
