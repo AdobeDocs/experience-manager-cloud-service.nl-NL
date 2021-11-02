@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 92b8a54f585e25db807914601ea5b3c07da681fc
+source-git-commit: 612082f22895af596247f69c4d57222376d7b519
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '927'
 ht-degree: 8%
 
 ---
@@ -50,7 +50,7 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 * De klant moet een bestaande CDN hebben die bezwaarlijk zou zijn om te vervangen.
 * De klant moet het beheren.
-* De klant moet CDN kunnen vormen om met AEM as a Cloud Service te werken - zie de configuratieinstructies hieronder.
+* De klant moet CDN kunnen vormen om met AEM as a Cloud Service te werken - zie de hieronder vermelde configuratieinstructies.
 * De klant moet ingenieurs CDN hebben die op vraag zijn in geval de verwante kwesties zich voordoen.
 * De klant moet een laadtest uitvoeren en met succes doorstaan alvorens naar productie te gaan.
 
@@ -69,7 +69,7 @@ Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten beve
 Nadat u de `X-AEM-Edge-Key`, kunt u testen dat het verzoek correct als volgt wordt verpletterd:
 
 ```
-https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https: //publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
 Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal gebruikend het standaarddomein worden gedaan `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
