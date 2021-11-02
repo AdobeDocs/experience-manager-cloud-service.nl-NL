@@ -2,7 +2,7 @@
 title: Productiepijpleidingen configureren
 description: Productiepijpleidingen configureren
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -99,3 +99,7 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    * **Toevoegen** - staat toe dat een nieuwe pijpleiding wordt toegevoegd.
    * **Repo-info openen** - stelt de gebruiker in staat de informatie op te halen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
    * **Meer informatie** - navigeert naar inzicht in de bron van de Documentatie van de CI/CD-pijpleiding.
+
+
+
+
