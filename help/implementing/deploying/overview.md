@@ -3,7 +3,7 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 1%
@@ -51,7 +51,7 @@ De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implem
 
 ### Implementaties via Cloud Manager {#deployments-via-cloud-manager}
 
-Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model (Sling Feature Model). Zo wordt een AEM as a Cloud Service toepassing beschreven wanneer deze wordt uitgevoerd in een cloudomgeving. Als u de pakketten in Package Manager bekijkt in Cloud-omgevingen, bevat de naam dus &quot;cp2fm&quot; en zijn alle metagegevens verwijderd uit de getransformeerde pakketten. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Gedetailleerde documentatie over de converter kan [hier gevonden](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model (Sling Feature Model). Zo wordt een AEM as a Cloud Service toepassing beschreven wanneer deze wordt uitgevoerd in een cloudomgeving. Als gevolg hiervan worden de verpakkingen in [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) In cloudomgevingen bevat de naam &quot;cp2fm&quot; en zijn alle metagegevens verwijderd uit de getransformeerde pakketten. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Gedetailleerde documentatie over de converter kan [hier gevonden](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhoudspakketten die voor AEM as a Cloud Service toepassingen zijn geschreven, moeten een duidelijke scheiding hebben tussen onveranderbare en veranderbare inhoud. Cloud Manager installeert alleen de veranderbare inhoud en voert ook een bericht uit zoals:
 
@@ -109,7 +109,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
 Het is mogelijk de installatie van veranderbare inhoud te beperken tot auteur of te publiceren door pakketten in een install.auteur of install.publish omslag in te bedden onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5-documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Voor inhoud die specifiek is voor een omgeving is handmatige installatie via Package Manager vereist.
+>Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Inhoud die specifiek is voor een omgeving, moet handmatig worden geïnstalleerd via [Pakketbeheer.](/help/implementing/developing/tools/package-manager.md)
 
 Ook, is er geen mechanisme om de veranderlijke veranderingen van het inhoudspakket terug te draaien nadat zij zijn toegepast. Als klanten een probleem ontdekken, kunnen zij verkiezen om het in hun volgende codeversie of als laatste redmiddel te bevestigen, het volledige systeem aan een punt in tijd vóór de plaatsing herstellen.
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket als &#39;één uit&#39; moet worden geïnstalleerd, waaronder het importeren van specifieke inhoud van productie naar staging om een productieprobleem op te lossen, het overbrengen van een klein inhoudspakket van een on-premise omgeving naar AEM Cloud-omgevingen en meer."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="De tool Content Transfer"
 
-Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s, kan de Manager van het Pakket in AEM as a Cloud Service milieu&#39;s worden gebruikt.
+Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) kan worden gebruikt in AEM as a Cloud Service omgevingen.
 
 Aangezien Package Manager een runtimeconcept is, is het niet mogelijk om inhoud of code in de onveranderlijke bewaarplaats te installeren, zodat zouden deze inhoudspakketten slechts uit veranderbare inhoud (hoofdzakelijk) moeten bestaan `/content` of `/conf`). Als het inhoudspakket inhoud bevat die gemengd is (zowel muteerbare als onveranderlijke inhoud), wordt alleen de veranderbare inhoud geïnstalleerd.
 

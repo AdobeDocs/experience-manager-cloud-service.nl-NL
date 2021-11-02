@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 26%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 26%
 
 + [Applicaties voor AEM as a Cloud Service implementeren](/help/implementing/home.md)
 + Cloud Manager gebruiken {#using-cloud-manager}
-   + Opmerkingen bij de release voor Cloud Manager {#release-notes-cloud-manager}
+   + Opmerkingen bij de release van Cloud Manager {#release-notes-cloud-manager}
       + [Huidige opmerkingen bij de release (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
          + [Opmerkingen bij de release 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -114,7 +114,7 @@ ht-degree: 26%
    + [API-referentiematerialen](/help/implementing/developing/reference-materials.md)
    + [Toegangstokens genereren voor server-side API&#39;s](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Hoofdletters en headless in AEM](developing/headful-headless.md)
-   + Volledige ontwikkeling van AEM{#full-stack}
+   + Volledige AEM {#full-stack}
       + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](developing/introduction/develop-wknd-tutorial.md)
       + [Structuur van de AEM-interface](developing/introduction/ui-structure.md)
       + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
@@ -144,7 +144,7 @@ ht-degree: 26%
          + [Een aangepaste voorspellende evaluator implementeren](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Aangepaste foutpagina&#39;s](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
-   + Beleidsbeheer zonder hoofd {#headless}
+   + Erviteitsbeheer zonder hoofd {#headless}
       + [Koploos en AEM](developing/headless/introduction.md)
       + [Documentatiereizen zonder kop](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + Aan de slag - hulplijnen {#getting-started}
@@ -198,6 +198,7 @@ ht-degree: 26%
    + [Inhoudspakket gemaakt met insteekmodule](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite gebruiken](/help/implementing/developing/tools/crxde.md)
+   + [Pakketbeheer](/help/implementing/developing/tools/package-manager.md)
    + [De Link ExternalAlizer](/help/implementing/developing/tools/externalizer.md)
 + Personalisatie {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
@@ -215,7 +216,7 @@ ht-degree: 26%
    + [Ervaringsfragmenten uitbreiden](developing/extending/experience-fragments.md)
    + [Contentfragmenten aanpassen en uitbreiden](developing/extending/content-fragments-customizing.md)
    + [Contentfragmenten die componenten voor rendering configureren](developing/extending/content-fragments-configuring-components-rendering.md)
-   + Zoeken in Forms {#manage-search-forms} beheren
+   + Zoeken in Forms beheren {#manage-search-forms}
       + [Zoekformulieren configureren](developing/extending/search-forms.md)
       + [Zoekfilters voor Postvak IN configureren](developing/extending/configure-inbox-search-rail.md)
    + [De Rich Text-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)

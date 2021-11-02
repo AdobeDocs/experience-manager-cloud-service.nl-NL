@@ -2,10 +2,10 @@
 title: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 description: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 7%
+source-wordcount: '2092'
+ht-degree: 8%
 
 ---
 
@@ -152,8 +152,8 @@ Met Cloud Manager kunnen organisaties zelf Experience Manager beheren in de clou
 
 #### Inhoud migreren
 
-1. [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : gebruikt om bestaande inhoud van een bron AEM instantie (on-premise of AMS) naar de doelinstantie van AEM Cloud Service te verplaatsen.
-2. [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : worden gebruikt voor het importeren en exporteren van veranderbare inhoud van de gegevensopslagruimte.
+1. [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) - Wordt gebruikt om bestaande inhoud te verplaatsen van een bron-AEM (on-premise of AMS) naar de AEM Cloud Service-doelinstantie.
+2. Pakketbeheer - Wordt gebruikt voor het importeren en exporteren van muteerbare inhoud van de opslagplaats.
 
 
 #### Refactor/optimaliseren
@@ -196,7 +196,7 @@ In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opges
 
 | Beoordeling | Refactoring | Modernisering van de Experience Manager | Inhoud migreren |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Analysator van best practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Insteekmodule voor Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Statische sjablonen converteren naar bewerkbare sjablonen](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Ontwerpconfiguraties omzetten naar beleid](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Elementaire componenten omzetten naar kerncomponenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[De klassieke interface converteren naar een interface met aanraakbediening](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[De tool Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
+| <ul><li>[Analysator van best practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Insteekmodule voor Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Statische sjablonen converteren naar bewerkbare sjablonen](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Ontwerpconfiguraties omzetten naar beleid](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Elementaire componenten omzetten naar kerncomponenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[De klassieke interface converteren naar een interface met aanraakbediening](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[De tool Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Pakketbeheer](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > Voor extra hulp, kunt u willen:
