@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.10.0
 feature: Release Information
 exl-id: null
-source-git-commit: c7cee58a465887b15994a963448fcba8d546673a
+source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -17,24 +17,6 @@ Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in A
 
 >[!NOTE]
 >Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
-## De tool Content Transfer {#ctt-release}
-
-### Releasedatum {#release-date-ctt-latest}
-
-De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
-
-### Wat is er nieuw? {#what-is-new-ctt-oct}
-
-* Verbeterd gereedschap voor het toewijzen van gebruikers met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Raadpleeg voor meer informatie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
-   * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
-   * Toewijzing van gebruiker mislukt niet meer als **Toegangstoken** verloopt na 24 uur. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
-
-* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) voor meer informatie .
-
-* Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
-
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,6 +35,24 @@ De releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
 ### Nieuwe functies {#what-is-new-cam-oct}
 
 Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Zie Stap 6 en 7 in [De kaart van de Analyse van Beste praktijken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
+## De tool Content Transfer {#ctt-release}
+
+### Releasedatum {#release-date-ctt-latest}
+
+De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
+
+### Wat is er nieuw? {#what-is-new-ctt-oct}
+
+* Verbeterd gereedschap voor het toewijzen van gebruikers met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Raadpleeg voor meer informatie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
+   * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
+   * Toewijzing van gebruiker mislukt niet meer als **Toegangstoken** verloopt na 24 uur. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
+
+* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) voor meer informatie .
+
+* Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
 
 ## Analysator van best practices {#best-practices-analyzer}
 
