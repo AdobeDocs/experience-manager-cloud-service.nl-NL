@@ -2,7 +2,7 @@
 title: CI-CD-pijpleidingen
 description: Volg deze pagina voor meer informatie over Cloud Manager CI-CD Pipelines
 index: false
-source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
+source-git-commit: 65898bd90e057cf5d646c5183ba6d2c8bdcac06e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -27,6 +27,8 @@ In Cloud Manager zijn er twee soorten pijplijnen:
 
 * [Productiepijpleiding](#prod-pipeline)
 * [Niet-productiepijpleiding](#non-prod-pipeline)
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
 
 ## Productiepijpleiding {#prod-pipeline}
 
