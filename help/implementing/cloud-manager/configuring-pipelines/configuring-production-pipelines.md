@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Productiepijpleidingen configureren
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,12 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **Volledige stapelcode**, **Code frontend** of **Config. web**. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
+1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **Volledige stapelcode** en **Code frontend**. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u AEM &#39;Snel site maken&#39;-pad voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
 
    Implementatieopties voor productie:
 
@@ -99,7 +102,5 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    * **Toevoegen** - staat toe dat een nieuwe pijpleiding wordt toegevoegd.
    * **Repo-info openen** - stelt de gebruiker in staat de informatie op te halen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
    * **Meer informatie** - navigeert naar inzicht in de bron van de Documentatie van de CI/CD-pijpleiding.
-
-
 
 
