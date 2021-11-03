@@ -2,9 +2,9 @@
 title: CI-CD-pijpleidingen
 description: CI-CD-pijpleidingen
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,13 @@ Raadpleeg de pijplijnen Niet-productie en Alleen kwaliteit van code voor meer in
 
 ## CI-CD-pijpleidingen begrijpen in Cloud Manager {#understand-pipelines}
 
-In de volgende tabel worden de pijpleidingen in Cloud Manager gecategoriseerd, samen met het gebruik ervan.
+In de volgende tabel worden alle pijpleidingen in Cloud Manager samen met het gebruik ervan weergegeven.
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Wanneer gebruiken | Wanneer of waarom moet ik gebruiken? |
 |--- |--- |--- |---|---|---|
 | Productie of niet-productie | Implementatie | Voorkant | Voorste eindcode implementeren. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen. Moet AEM versie zijn. | Snelle implementatietijden.<br> De veelvoudige front-end pijpleidingen kunnen worden gevormd en gelijktijdig per milieu lopen. |
 |  | Implementatie | Volledige stapel | De back-end-, front-end- en HTTPD/dispatcherconfiguratie tegelijk implementeren. Opmerking: Er gelden enkele beperkingen. | Wanneer de pijpleidingen van Config van het Voorste of van het Web nog niet zijn goedgekeurd. |
 |  | Implementatie | Config. web | HTTPD/verzender-configuratie uitsluitend in een paar minuten implementeren.  Deze gestroomlijnde pijpleiding verstrekt gebruikers die wensen om de configuratieveranderingen van de verzender slechts op te stellen, een versnelde manier om dit te doen. Opmerking: Moet AEM versie zijn [versie] | Snelle implementatietijden. |
-
 
 
 ## Cloud Manager frontend Pipelines {#front-end}
@@ -65,10 +64,20 @@ Er zijn twee soorten Voorste Pijpleidingen:
 * Codekwaliteit aan voorzijde
 * Front End-implementatie
 
+### Alvorens u Voorste Pijpleidingen van het Eind vormt {#before-start}
+
+Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u AEM &#39;Snel site maken&#39;-pad voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
+
+### Vorm uw Voorste Pijpleiding van het Eind {#configure-front-end}
+
+Leren hoe te om Voorste Pijpleiding van het Eind te vormen, verwijs naar:
+
+* Een productiepijpleiding toevoegen
+* Een niet-productiepijpleiding toevoegen
+
 ## Volledige stapelpijplijnen {#full-stack-pipeline}
 
 De volledige pijpleiding van de Stapel geeft de gebruiker de optie om achterste-eind, front-end en configuratie HTTPD/dispatcher tezelfdertijd op te stellen.  Er wordt code en inhoud naar de AEM-runtime geïmplementeerd, inclusief front-end code (JavaScript/CSS) die is verpakt als AEM clientbibliotheken. Het kan configuratie van de Webrij opstellen als een pijpleiding van de Rij van het Web niet wordt gevormd. Dit vertegenwoordigt de &quot;uber&quot;pijpleiding, terwijl het geven van gebruikers de opties om hun Voorste code van het Eind of de berichtconfiguratie via de Voorste pijpleiding van het Eind en de pijpleiding van Config van de Rij van het Web uitsluitend op te stellen.
-
 
 De volgende beperkingen zijn van toepassing:
 
@@ -85,3 +94,9 @@ Er zijn twee soorten Volledige Pijpleidingen van de Stapel:
 * Pipet van volledige stapelcodekwaliteit
 * Volledige distributiepijpleiding van de Stapel
 
+### Vorm uw Volledige Pijpleiding van de Stapel {#configure-full-stack}
+
+Leren hoe te om Volledige Pijpleiding van de Stapel te vormen, verwijs naar:
+
+* Een productiepijpleiding toevoegen
+* Een niet-productiepijpleiding toevoegen

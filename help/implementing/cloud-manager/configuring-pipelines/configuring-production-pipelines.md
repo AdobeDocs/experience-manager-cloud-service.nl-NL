@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Productiepijpleidingen configureren
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. **Volledige stapelcode** is geselecteerd. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
+1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **Volledige stapelcode**, **Code frontend** of **Config. web**. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
