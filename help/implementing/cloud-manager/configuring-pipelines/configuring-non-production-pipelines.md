@@ -2,9 +2,9 @@
 title: Een niet-productiepijpleiding configureren
 description: Volg deze pagina om over het Vormen van een niet-Productiepijpleiding in de Manager van de Wolk te leren
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,15 @@ Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Selecteren **Volledige stapelcode** of **Code frontend**. U kunt de **Bewaarplaats** en de **Git Branch**. Klikken op **Opslaan**.
+1. Selecteren **[Volledige stapelcode](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** of **[Code frontend](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. U kunt de **Bewaarplaats** en de **Git Branch**. Klikken op **Opslaan**.
+
+   >[!IMPORTANT]
+   >Als er al een pijplijn met volledige stapelcode bestaat voor de geselecteerde omgeving, wordt deze selectie uitgeschakeld.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u AEM &#39;Snel site maken&#39;-pad voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. De nieuwe niet-productiepijplijn wordt nu weergegeven in de **Pijpleidingen** kaart.
 
