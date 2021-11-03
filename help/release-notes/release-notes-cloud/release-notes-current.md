@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -141,10 +141,6 @@ Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.ado
 ### Nieuwe functies in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Geavanceerde netwerken**
-
->[!INFO]
->
->De geavanceerde voorzien van een netwerkeigenschap maakt deel uit van de versie 2021.9.0, en zal voor klanten medio oktober worden toegelaten.
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt nu diverse soorten geavanceerde voorzien van een netwerkmogelijkheden aan, die omvatten:
 

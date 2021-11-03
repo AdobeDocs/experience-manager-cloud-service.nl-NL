@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,6 @@ Dit artikel is bedoeld om u aan de verschillende geavanceerde voorzien van een n
 
 ## Overzicht {#overview}
 
->[!INFO]
->
->De geavanceerde voorzien van een netwerkeigenschap maakt deel uit van de versie 2021.9.0, en zal voor klanten medio oktober worden toegelaten.
-
 AEM as a Cloud Service biedt verschillende soorten geavanceerde netwerkmogelijkheden, die door klanten kunnen worden geconfigureerd met de API&#39;s van Cloud Manager. Deze omvatten:
 
 * [Flexibele poortuitgang](#flexible-port-egress) - vorm as a Cloud Service AEM om uitgaand verkeer uit niet-standaardhavens toe te staan
@@ -27,11 +23,12 @@ AEM as a Cloud Service biedt verschillende soorten geavanceerde netwerkmogelijkh
 
 Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, dat door een vraag aan het `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Raadpleeg de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis, evenals voorbeeldaanvragen en reacties.
 
-Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
+Een programma kan één enkele geavanceerde voorzien van een netwerkvariatie verstrekken. Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
 
 >[!INFO]
 >
 >Geavanceerde netwerken zijn niet beschikbaar voor het sandboxprogramma.
+>Bovendien moeten omgevingen worden geüpgraded naar AEM versie 5958 of hoger.
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ De flexibele havenuitgang is de geadviseerde keus als u geen VPN nodig hebt en g
 
 Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. In de API-documenten moet naar de volledige set parameters en de exacte syntaxis worden verwezen.
 
-Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een oproep aan de Cloud Manager [milieu-GET-eindpunt](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) zou de status &quot;ready&quot; aangeven.
+Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een oproep aan de Cloud Manager [GET netwerkinfrastructuur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou de status &quot;ready&quot; aangeven.
 
-Als de programma-scoped flexibele configuratie van de havenuitgang klaar is, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en om het even welke haven te verklaren door:sturen regels. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
+Als de programma-scoped flexibele configuratie van de havenuitgang klaar is, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en naar keuze om het even welke haven te verklaren die regels door:sturen. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
 De haven die regels door:sturen zou voor om het even welke havens buiten 80/443 moeten worden verklaard door de reeks bestemmingsgastheren (namen of IP, en met havens te specificeren). Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
 
