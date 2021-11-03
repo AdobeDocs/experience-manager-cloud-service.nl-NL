@@ -2,9 +2,9 @@
 title: Een niet-productiepijplijn bewerken
 description: Een niet-productiepijplijn bewerken
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Een niet-productiepijplijn bewerken {#edit-non-prod-pipeline}
 
 U kunt de pijpleidingsconfiguraties van de **Pipelkaart** van **Programmaoverzicht** pagina.
+
+>[!IMPORTANT]
+>U kunt geen pijpleiding uitgeven die loopt.
 
 Voer de onderstaande stappen uit om de geconfigureerde niet-productiepijplijn te bewerken:
 
