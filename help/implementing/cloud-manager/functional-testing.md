@@ -2,9 +2,9 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Zie [Productfunctionele tests](https://github.com/adobe/aem-test-samples/tree/ae
 
 De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
 
-Als er echter geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.
+De bouw moet of nul of één test JARs produceren. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Als de build meerdere testJAR&#39;s produceert, is de geselecteerde JAR niet deterministisch.
 
 >[!NOTE]
 >Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .

@@ -2,15 +2,14 @@
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
 
-# UI Testen {#ui-testing}
+# UI-tests {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
@@ -23,20 +22,20 @@ De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker wor
 > Het werkgebied en de productiepijpleidingen die vóór 10 februari 2021 zijn gemaakt, moeten worden bijgewerkt om de interfacetests te kunnen gebruiken zoals beschreven op deze pagina.
 > Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) voor informatie over pijpleidingsconfiguratie.
 
-## UI-tests voor het samenstellen van {#building-ui-tests}
+## UI-tests samenstellen {#building-ui-tests}
 
 De tests UI worden gebouwd uit een Docker bouwt context die door een Geweven project wordt geproduceerd. Cloud Manager gebruikt de Docker-ontwikkelcontext om een Docker-afbeelding te genereren die de werkelijke UI-tests bevat. Samengevat, produceert een Beweerd project een Docker bouwt context, en het Docker bouwt context beschrijft hoe te om een beeld van de Docker tot stand te brengen die de tests UI bevat.
 
-Deze sectie gaat door de stappen nodig om een project van de Tests UI aan uw bewaarplaats toe te voegen. Als u in een haast bent of geen speciale vereisten voor de programmeertaal hebt, kan [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) een project van de Tests UI voor u produceren.
+Deze sectie gaat door de stappen nodig om een project van de Tests UI aan uw bewaarplaats toe te voegen. Als u haast hebt of geen speciale vereisten voor de programmeertaal hebt, kunt u [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI voor u produceren.
 
-### Een Docker-constructiecontext {#generate-docker-build-context} genereren
+### Een Docker-constructiecontext genereren {#generate-docker-build-context}
 
 Om Docker te produceren bouwt context, hebt u een Gemaakt module nodig die:
 
-- Produceert een archief dat `Dockerfile` en elk ander dossier noodzakelijk bevat om het beeld van de Docker met uw tests te bouwen.
-- Hiermee wordt het archief gecodeerd met de classificator `ui-test-docker-context`.
+- Hiermee wordt een archief gemaakt dat een `Dockerfile` en elk ander bestand dat nodig is om het Docker-image met uw tests te maken.
+- Hiermee wordt het archief gecodeerd met het `ui-test-docker-context` classificator.
 
-De eenvoudigste manier om dit te bereiken is [Maven Insteekmodule van de Assemblage ](http://maven.apache.org/plugins/maven-assembly-plugin/) te vormen om het Docker te creëren bouwt contextarchief en wijst het juiste classificatiebureau aan het toe.
+De eenvoudigste manier om dit te bereiken is het vormen van [Insteekmodule Maven Assembly](http://maven.apache.org/plugins/maven-assembly-plugin/) om Docker te creëren bouwt contextarchief en wijst het juiste classificator aan het toe.
 
 U kunt tests UI met verschillende technologieën en kaders bouwen, maar deze sectie veronderstelt dat uw project op een manier gelijkend op het volgende wordt opgemaakt.
 
@@ -51,7 +50,7 @@ U kunt tests UI met verschillende technologieën en kaders bouwen, maar deze sec
 └── wait-for-grid.sh
 ```
 
-Het `pom.xml` dossier behandelt de Maven bouwstijl. Voeg een uitvoering aan de Geweven Insteekmodule van de Assemblage toe gelijkend op het volgende.
+De `pom.xml` Het bestand verzorgt de Maven-build. Voeg een uitvoering aan de Geweven Insteekmodule van de Assemblage toe gelijkend op het volgende.
 
 ```xml
 <plugin>
@@ -75,7 +74,7 @@ Het `pom.xml` dossier behandelt de Maven bouwstijl. Voeg een uitvoering aan de G
 </plugin>
 ```
 
-Deze uitvoering instrueert de Geweven Insteekmodule van de Assemblage om een archief tot stand te brengen dat op de instructies in `assembly-ui-test-docker-context.xml` wordt gebaseerd, genoemd een &quot;assemblagebeschrijver&quot;in het jargon van de stop. De assemblagebeschrijver maakt een lijst van alle dossiers die deel van het archief moeten uitmaken.
+Deze uitvoering instrueert de Geweven Insteekmodule van de Assemblage om een archief tot stand te brengen dat op de instructies in wordt gebaseerd `assembly-ui-test-docker-context.xml`, een zogenaamde &#39;assemblagedescriptor&#39; in het jargon van de plug-in. De assemblagebeschrijver maakt een lijst van alle dossiers die deel van het archief moeten uitmaken.
 
 ```xml
 <assembly>
@@ -104,17 +103,19 @@ Deze uitvoering instrueert de Geweven Insteekmodule van de Assemblage om een arc
 </assembly>
 ```
 
-De assemblagedescriptor geeft de plug-in de instructie een archief van het type `.tar.gz` te maken en wijst de `ui-test-docker-context`-classificator hieraan toe. Bovendien worden de bestanden weergegeven die in het archief moeten worden opgenomen:
+De assemblagebeschrijving geeft de plug-in de opdracht een archief van het type te maken `.tar.gz` en wijst de `ui-test-docker-context` classificator. Bovendien worden de bestanden weergegeven die in het archief moeten worden opgenomen:
 
-- A `Dockerfile`, verplicht voor het bouwen van het beeld van de Dokker.
-- Het `wait-for-grid.sh`-script, waarvan de doeleinden hieronder worden beschreven.
-- De daadwerkelijke tests UI, die door een project Node.js in de `test-module` omslag worden uitgevoerd.
+- A `Dockerfile`, verplicht voor het samenstellen van de Docker-afbeelding.
+- De `wait-for-grid.sh` script, waarvan de doeleinden hieronder worden beschreven.
+- De daadwerkelijke tests UI die door een project Node.js in worden uitgevoerd `test-module` map.
 
 De assemblagebeschrijver sluit ook sommige dossiers uit die terwijl het runnen van de tests UI plaatselijk zouden kunnen worden geproduceerd. Dit garandeert een kleiner archief en snellere builds.
 
 Het archief met de Docker-build-context wordt automatisch opgehaald door Cloud Manager, dat het Docker-image met uw tests zal maken tijdens de implementatiepijplijnen. Uiteindelijk voert Cloud Manager de Docker-afbeelding uit om de UI-tests op uw toepassing uit te voeren.
 
-## Bezig met schrijven van UI-tests {#writing-ui-tests}
+De build moet nul of één archief produceren. Als het nul archief produceert, gaat de teststap standaard over. Als de build meer dan één archief produceert, is het geselecteerde archief niet-deterministisch.
+
+## Tests voor gebruikersinterface schrijven {#writing-ui-tests}
 
 Deze sectie beschrijft de overeenkomsten die het beeld van de Docker dat uw tests UI bevat moet volgen. De Docker-afbeelding is gemaakt op basis van de constructiecontext van Docker die in de vorige sectie is beschreven.
 
@@ -135,22 +136,22 @@ De volgende omgevingsvariabelen worden tijdens runtime aan de Docker-afbeelding 
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor Selenium |
 
-### Wachten tot Selenium gereed is {#waiting-for-selenium}
+### Wachten tot Selenium klaar is {#waiting-for-selenium}
 
 Alvorens de tests beginnen, is het de verantwoordelijkheid van het beeld van de Docker om ervoor te zorgen dat de server van Selenium in gebruik is. Wachten op de seleniumservice is een proces in twee stappen:
 
-1. Lees URL van de dienst van Selenium van `SELENIUM_BASE_URL` milieuvariabele.
-2. Opiniepeiling met regelmatige tussenpozen aan [status eindpunt](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) blootgesteld door Selenium API.
+1. Lees URL van de dienst van Selenium van de dienst `SELENIUM_BASE_URL` omgevingsvariabele.
+2. Opiniepeiling met regelmatige tussenpozen tot de [statuseindpunt](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) door de Selenium-API worden weergegeven.
 
 Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kunnen de tests eindelijk beginnen.
 
-### Testrapporten genereren {#generate-test-reports}
+### De testrapporten genereren {#generate-test-reports}
 
-De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat wordt aangegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een wijdverbreide indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, zowel de [Maven Surefire-insteekmodule](https://maven.apache.org/surefire/maven-surefire-plugin/) als de [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/). Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen om te weten hoe u JUnit-XML-rapporten kunt genereren.
+De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een wijdverbreide indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, wordt zowel het [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en de [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/). Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen om te weten hoe u JUnit-XML-rapporten kunt genereren.
 
 ### Bestanden uploaden (#upload-files)
 
 Tests moeten soms bestanden uploaden naar de geteste toepassing. Om de implementatie van Selenium in verhouding tot uw tests flexibel te houden, is het niet mogelijk om een middel rechtstreeks naar Selenium te uploaden. In plaats daarvan voert het uploaden van een bestand een aantal tussenliggende stappen uit:
 
-1. Upload het bestand naar de URL die door de omgevingsvariabele `UPLOAD_URL` is opgegeven. Het uploaden moet worden uitgevoerd in één verzoek van de POST met een meerdelige vorm. Het formulier met meerdere delen moet één bestandsveld hebben. Dit is gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
-2. Als de upload succesvol is, keert het verzoek een `200 OK` reactie van type `text/plain` terug. De inhoud van de reactie is een ondoorzichtige bestandshandgreep. U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>`-element om het uploaden van bestanden in uw toepassing te testen.
+1. Upload het bestand naar de URL die door de `UPLOAD_URL` omgevingsvariabele. Het uploaden moet worden uitgevoerd in één verzoek van de POST met een meerdelige vorm. Het formulier met meerdere delen moet één bestandsveld hebben. Dit is gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
+2. Als het uploaden is gelukt, retourneert de aanvraag een `200 OK` reactie van het type `text/plain`. De inhoud van de reactie is een ondoorzichtige bestandshandgreep. U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
