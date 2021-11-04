@@ -2,9 +2,9 @@
 title: CI-CD-pijpleidingen
 description: Volg deze pagina voor meer informatie over Cloud Manager CI-CD Pipelines
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ In de volgende tabel worden alle pijpleidingen in Cloud Manager samen met het ge
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Wanneer gebruiken | Wanneer of waarom moet ik gebruiken? |
 |--- |--- |--- |---|---|---|
-| Productie of niet-productie | Implementatie | Voorkant | Voorste eindcode implementeren. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen. Moet AEM versie zijn. | Snelle implementatietijden<br> De veelvoudige voorste pijpleidingen kunnen worden gevormd en gelijktijdig per milieu lopen |
-|  | Implementatie | Volledige stapel | De back-end-, front-end- en HTTPD/dispatcherconfiguratie tegelijk implementeren. Er gelden enkele beperkingen. | Wanneer de pijpleidingen aan de voorzijde nog niet zijn goedgekeurd. |
-| Niet-productie | Codekwaliteit | Voorkant | Codekwaliteitsscans uitvoeren op front-end code | Snelle implementatietijden<br> De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld |
-|  | Codekwaliteit | Volledige stapel | Codekwaliteitsscan uitvoeren op de volledige stackcode | Snelle implementatietijden<br> De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld |
+| Productie of niet-productie | Implementatie | Voorkant | Snelle implementatietijden.<br>De veelvoudige front-end pijpleidingen kunnen worden gevormd en gelijktijdig per milieu lopen.<br>De pijpleiding van het Voorste Eind bouwt uit de bouw aan een opslag. Wanneer een HTML-pagina wordt aangeboden, kan deze verwijzen naar statische bestanden van de Front Code die door de CDN worden gebruikt als bron. | Om vooreind code uitsluitend op te stellen die één of meerdere cliëntsideUI toepassingen bevat. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen.<br>Moet AEM versie zijn `2021.10.5933.20211012T154732Z` |
+| Productie of niet-productie | Implementatie | Volledige stapel | Wanneer de pijpleidingen aan de voorzijde nog niet zijn goedgekeurd.<br>Voor gevallen waarin de code van het Voorste Eind precies tezelfdertijd moet worden opgesteld zoals de code van de Server van de AEM. | Om AEM servercode (onveranderlijke inhoud, code Java, configuraties OSGi, configuratie HTTPD/dispatcher, repoinit, veranderbare inhoud, doopvonten) op te stellen die één of meerdere AEM servertoepassingen allen tezelfdertijd bevatten. |
+| Niet-productie | Codekwaliteit | Voorkant | Om Cloud Manager te hebben uw bouwstijlsucces en codekwaliteit evalueren zonder een plaatsing te doen.<br>De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld. | De kwaliteit van de looppas code scant op vooreind code. |
+| Niet-productie | Codekwaliteit | Volledige stapel | Om Cloud Manager te hebben uw bouwstijlsucces en codekwaliteit evalueren zonder een plaatsing te doen.<br>De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld. | Voer een scans van de codekwaliteit uit op de volledige stapelcode. |
 
 Het volgende diagram illustreert de pijplijnconfiguraties van de Manager van de Wolk met traditionele, enige front-end bewaarplaats of onafhankelijke front-end bewaarplaats opstelling:
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager frontend Pipelines {#front-end}
 
@@ -72,12 +72,12 @@ Deze kunnen van het type de Kwaliteit van de Code van het Voorste Eind of de pij
 
 Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u AEM &#39;Snel site maken&#39;-pad voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
 
-### Vorm uw Voorste Pijpleiding van het Eind {#configure-front-end}
+### Een vooruiteindepipet configureren {#configure-front-end}
 
 Leren hoe te om Voorste Pijpleiding van het Eind te vormen, verwijs naar:
 
-* Een productiepijpleiding toevoegen
-* Een niet-productiepijpleiding toevoegen
+* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## Volledige stapelpijplijnen {#full-stack-pipeline}
 
@@ -95,9 +95,9 @@ De volgende beperkingen zijn van toepassing:
 
 Deze kunnen van het type Volledige Stapel zijn - de Kwaliteit van de Code of Volledige Stapel - de pijpleiding van de Plaatsing.
 
-### Vorm uw Volledige Pijpleiding van de Stapel {#configure-full-stack}
+### Vorm een Volledige Pijpleiding van de Stapel {#configure-full-stack}
 
 Leren hoe te om Volledige Pijpleiding van de Stapel te vormen, verwijs naar:
 
-* Een productiepijpleiding toevoegen
-* Een niet-productiepijpleiding toevoegen
+* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
