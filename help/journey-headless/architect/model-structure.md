@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 2%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [AEM Headless Content Author Reis](overview.md) behandelde [Grondbeginselen van inhoudsmodellen voor headless met AEM](basics.md) de basisconcepten en de terminologie relevant voor het ontwerpen voor headless.
+Aan het begin van de [AEM Schrijverreis zonder kopinhoud](overview.md) de [Grondbeginselen van inhoudsmodellen voor headless met AEM](basics.md) heeft betrekking op de basisbegrippen en de terminologie die relevant zijn voor het ontwerpen van koploze producten.
 
 Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van het Fragment van de Inhoud voor uw project zonder AEM te creëren.
 
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doel**: de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
+* **Doelstelling**: de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -48,25 +48,25 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 Nadat u deze optie hebt geselecteerd, navigeert u naar de locatie voor uw model en selecteert u **Maken**. Hier kunt u verschillende belangrijke details invoeren.
 
-De optie **Model inschakelen** wordt standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in te schakelen (of uit te schakelen).
+De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in te schakelen (of uit te schakelen).
 
 ![Inhoudsfragmentmodel maken](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Bevestig met **Create** en u kunt dan **Open** uw model beginnen de structuur te bepalen.
+Bevestigen met **Maken** en u kunt **Openen** uw model om de structuur te beginnen definiëren.
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-Wanneer u eerst een nieuw model opent zult u zien - een grote lege ruimte aan de linkerzijde, en een lange lijst van **Types van Gegevens** bij het recht:
+Wanneer u voor het eerst een nieuw model opent, ziet u een groot, leeg vak aan de linkerkant en een lange lijst met **Gegevenstypen** rechts:
 
 ![Leeg model](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 Wat moet er gebeuren?
 
-U kunt instanties van **Gegevenstypen** naar de linkerruimte slepen - u definieert reeds uw model!
+U kunt instanties van de **Gegevenstypen** op de linkerruimte - u bepaalt reeds uw model!
 
 ![Velden definiëren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Nadat u een gegevenstype hebt toegevoegd, moet u **Eigenschappen** voor dat veld definiëren. Deze hangen van het type af dat wordt gebruikt. Bijvoorbeeld:
+Nadat u een gegevenstype hebt toegevoegd, moet u de **Eigenschappen** voor dat veld. Deze hangen van het type af dat wordt gebruikt. Bijvoorbeeld:
 
 ![Gegevenseigenschappen](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 >
 >Als een auteur een inhoudsfragment probeert te publiceren waarvoor het model nog niet is gepubliceerd, zal een selectielijst dit vermelden en het model zal met het fragment worden gepubliceerd.
 
->[!NOTE]
->
->De functie Vergrendelde (Gepubliceerde) modellen van inhoudsfragmenten bevindt zich in bèta.
+Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om veranderingen te verhinderen die in fouten aan bestaande schema&#39;s en vragen GraphQL, vooral op het publicatiemilieu zouden resulteren. Het wordt in de console aangegeven door **Vergrendeld**.
 
-Zodra een model wordt gepubliceerd is het *locked* in een LEZEN-ONLY wijze op auteur. Dit is bedoeld om veranderingen te verhinderen die in fouten aan bestaande schema&#39;s en vragen GraphQL, vooral op het publicatiemilieu zouden resulteren. Dit wordt in de console aangegeven met **Locked**.
-
-Wanneer het model **Locked** (in LEZEN-slechts wijze) is, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Locked** modellen van of de console, of modelredacteur kunt beheren.
+Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar niet rechtstreeks bewerken; hoewel u kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
 
 ## Volgende functies {#whats-next}
 
@@ -117,7 +113,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - deze pagina is hoofdzakelijk gebaseerd op de  **** Sitesconsole, maar vele/de meeste eigenschappen zijn ook relevant voor het navigeren aan, en het nemen van actie op, de  **Modellen van het Fragment van de** Inhoud onder de console  **** van Activa.
+* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Activa** console.
 
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 

@@ -1,55 +1,71 @@
 ---
-title: Release-aantekeningen voor 2020.10.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.10.0.'
+title: Opmerkingen bij de release 2020.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: '[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 {#release-notes}
+# Opmerkingen bij de release [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] beschreven als een Cloud Service 2020.10.0.
+In de volgende sectie worden de algemene opmerkingen bij de release beschreven voor [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.10.0 is 28 oktober 2020.
+De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is 28 oktober 2020.
 De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nieuw in [!DNL Sites] {#what-is-new-sites}
+### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager als Cloud Service profiteert van automatische updates van de nieuwste versie van de Core Components. Versie 2.12.0 bevat de meest recente verbeteringen die de gemeenschap heeft aangebracht. Tot de verbeteringen behoren [een nieuwe POST formulierhandler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) de mogelijkheid om aangepaste CSS-, JavaScript- en metagegevenstags [op te nemen via contextbewuste configuratie;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) en een [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)-hulpprogramma om de integratie van Adobe-gegevenslagen in aangepaste componenten te vereenvoudigen. Zie de [lijst met wijzigingen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
+* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service profiteert van automatische updates van de nieuwste versie van de Core Components. Versie 2.12.0 bevat de meest recente verbeteringen die de gemeenschap heeft aangebracht. Tot de verbeteringen behoren [een nieuwe POST-formulierhandler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) de mogelijkheid om aangepaste CSS, JavaScript en metagegevens op te nemen [tags via contextbewuste configuratie;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) en [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) nut om de integratie van de Laag van Gegevens van Adobe in douanecomponenten te vereenvoudigen. Zie de [lijst met wijzigingen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **[Projectarchetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De aanbevolen basis voor het starten van een nieuw Experience Manager project werd beter. Het omvat nu de nieuwe [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om site te [leveren in AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) en nieuwe [extensiepunten om project CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) toe te voegen.
+* **[Projectarchetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De aanbevolen basis voor het starten van een nieuw Experience Manager project werd beter. Het bevat nu de nieuwe [Gegevenslaag Adobe-client](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om [site in AMP leveren;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) en nieuwe [extensiepunten om project-CSS/JS toe te voegen.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
 * **[ContextHub-mappen](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Capaciteit om publieksomslagen tot stand te brengen om, publiekssegmenten gemakkelijk te organiseren te vinden en te selecteren voor de aanbieding van ContextHub richtend mogelijkheden.
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]Slimme tags** voor gemotoriseerde video: Door AI-modellen toe te passen om video-inhoud te analyseren op object- en actiespecifieke tags, kunnen DAM-gebruikers minder tijd besteden aan het toevoegen van tags en meer tijd aan het gebruik van de belichte, rijke informatie. Op uw beurt levert u de juiste ervaring aan klanten. Zie [Slimme-tagvideo-elementen](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]Slimme tags toepassen op gemotoriseerde video**: Door AI-modellen toe te passen om video-inhoud te analyseren op object- en actiespecifieke tags, kunnen DAM-gebruikers minder tijd besteden aan het toevoegen van tags en meer tijd aan het gebruik van de belichte, rijke informatie. Op uw beurt levert u de juiste ervaring aan klanten. Zie [Slimme tag-video-elementen](/help/assets/smart-tags-video-assets.md).
 
-* **Brand Portal-verbeteringen**: De volgende nieuwe functies en meer zijn beschikbaar in  [!DNL Brand Portal]. Zie [[!DNL Brand Portal] Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html) voor meer informatie.
+* **Verbeteringen voor Brand Portal**: De volgende nieuwe functies en meer zijn beschikbaar in [!DNL Brand Portal]. Zie voor meer informatie [[!DNL Brand Portal] releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * [Verbeterde downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) voor vereenvoudigde, snelle downloads. De extra downloadconfiguraties kunnen door beheerders worden gevormd om een ervaring aan te bieden die de behoeften van de gebruikers en de ondernemingen aanpast.
-   * Een-klik navigatie aan Dossiers, [Inzamelingen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), en Gedeelde Verbindingen is nu mogelijk van om het even welke pagina.
-   * Gebruikers kunnen nu [specifieke uitvoeringen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) selecteren en downloaden. De nieuwe optie voor het downloaden van vertoningen is beschikbaar in het deelvenster Uitvoeringen op de pagina met elementdetails.
+   * [Verbeterde downloadervaring](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) voor vereenvoudigde, snelle downloads. De extra downloadconfiguraties kunnen door beheerders worden gevormd om een ervaring aan te bieden die de behoeften van de gebruikers en de ondernemingen aanpast.
+   * One-click navigation to Files, [Verzamelingen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)en Gedeelde koppelingen zijn nu mogelijk vanaf elke pagina.
+   * Gebruikers kunnen [specifieke vertoningen selecteren en downloaden](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) nu. De nieuwe optie voor het downloaden van vertoningen is beschikbaar in het deelvenster Uitvoeringen op de pagina met elementdetails.
    * Een onderbreking van 15 minuten voor gastgebruikerszittingen verzekert een betere ervaring aan alle gezamenlijke gebruikers.
 
-* **[!DNL Adobe Asset Link]versie 2.1**: Een nieuwe versie van  [Adobe Asset ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) Linkextension voor  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]en  [!DNL Adobe InDesign] is beschikbaar. Het voegt verenigbaarheid met de recentste [!DNL Adobe Creative Cloud] toepassingen met versie 2021 toe, die in Oktober 2020 wordt vrijgegeven.
+* **[!DNL Adobe Asset Link]versie 2.1**: Een nieuwe versie van [Adobe-itemkoppeling](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) verlenging voor [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign] is beschikbaar. Het voegt verenigbaarheid met recentste toe [!DNL Adobe Creative Cloud] aanvragen met versie 2021, gepubliceerd in oktober 2020.
 
-* **[!DNL Assets]WebP-bestandsondersteuning**:  [!DNL Assets] als Cloud Service nu de WebP-afbeeldingsindeling ondersteunt. WebP is een nieuwe afbeeldingsindeling die door Google is gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie hoe te om WebP in [creeer verwerkingsprofiel](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile) te gebruiken.
+* **[!DNL Assets]Ondersteuning voor WebP-bestanden**: [!DNL Assets] as a Cloud Service ondersteunt nu de WebP-afbeeldingsindeling. WebP is een nieuwe afbeeldingsindeling die door Google wordt gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie hoe u WebP kunt gebruiken in [verwerkingsprofiel maken](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+
+### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
+
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Zakelijke gebruikers kunnen op basis van de verzamelde inzichten beslissingen nemen over aangepaste formulierinhoud, lay-out en stijl.
+
+### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
+
+* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt gegevens van werkstroomvariabelen in proces opslaan AEM gegevens die de elementen van Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. Tijdens de verwerking van de workflow worden de gegevens die in workflowvariabelen zijn opgeslagen, niet in AEM opslagplaats bewaard. Het wordt opgehaald op bestelling van de klant-beheerde bewaarplaats.
+
+### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om documenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus.
+
+U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Venia Reference Site - 2020.10.2 met de nieuwste versie van CIF Core Components v1.4.0. Raadpleeg [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie.
+* Uitgebrachte CIF Venia Reference Site - 2020.10.2 met de nieuwste versie van CIF Core Components v1.4.0. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie .
 
-* Uitgebrachte CIF Core Components v1.4.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie.
+* Uitgebrachte CIF Core Components v1.4.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
@@ -61,9 +77,9 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor Cloud Manager in Experience Manager als Cloud Service 2020.10.0 is 20 oktober 2020.
+De releasedatum voor Cloud Manager in Experience Manager as a Cloud Service 2020.10.0 is 20 oktober 2020.
 
-### Nieuw in [!DNL Cloud Manager] {#what-is-new-cm}
+### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * De pagina Omgevingen is opnieuw ontworpen.
 
@@ -73,8 +89,8 @@ De releasedatum voor Cloud Manager in Experience Manager als Cloud Service 2020.
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
-* De kaart van het Milieu op de pagina van het Overzicht maakt nu een lijst van maximaal drie milieu&#39;s. Gebruikers kunnen de knop **Alles weergeven** selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
-Zie [Omgeving weergeven](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
+* De kaart van het Milieu op de pagina van het Overzicht maakt nu een lijst van maximaal drie milieu&#39;s. Gebruikers kunnen de **Alles tonen** om naar de overzichtspagina van het Milieu te navigeren om een lijst met een volledige lijst van milieu&#39;s te bekijken.
+Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}
 
@@ -94,7 +110,7 @@ Zie [Omgeving weergeven](/help/implementing/cloud-manager/manage-environments.md
 
 * Op de pagina Omgevingen worden soms de publicatiesegmenten en de Dispatcher-segmenten weergegeven wanneer er geen aanwezig was.
 
-## Adobe Experience Manager als Cloud Service Foundation {#cloud-service-foundation}
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
 ### Workflows {#workflows}
 
@@ -102,7 +118,7 @@ Zie [Omgeving weergeven](/help/implementing/cloud-manager/manage-environments.md
 
 ## De tool Content Transfer {#content-transfer-tool}
 
-Meer informatie over wat nieuw is en de updates voor [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
+Meer informatie over nieuwe functies en updates voor [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Nieuwe functies {#what-is-new-ctt}
 
