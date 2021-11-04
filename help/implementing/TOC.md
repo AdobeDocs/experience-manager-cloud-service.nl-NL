@@ -5,7 +5,7 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 25%
@@ -68,8 +68,8 @@ ht-degree: 25%
    + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Inleiding](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Productiepijpleidingen {#production-pipelines}
-         + [Een productiepijpleiding configureren](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + [Een productiepijpleiding bewerken](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Een productiepijpleiding configureren](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Een productiepijpleiding bewerken](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
       + Niet-productiepijpleidingen {#non-production-pipelines}
          + [Een niet-productiepijplijn configureren](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Een niet-productiepijplijn bewerken](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)

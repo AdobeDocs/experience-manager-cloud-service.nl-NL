@@ -2,7 +2,7 @@
 title: CI-CD-pijpleidingen
 description: Volg deze pagina voor meer informatie over Cloud Manager CI-CD Pipelines
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -86,6 +86,7 @@ Leren hoe te om Voorste Pijpleiding van het Eind te vormen, verwijs naar:
 ## Volledige stapelpijplijnen {#full-stack-pipeline}
 
 De volledige pijpleiding van de Stapel geeft de gebruiker de optie om achterste-eind, front-end en configuratie HTTPD/dispatcher tezelfdertijd op te stellen.  Er wordt code en inhoud naar de AEM-runtime geïmplementeerd, inclusief front-end code (JavaScript/CSS) die is verpakt als AEM clientbibliotheken. Het kan configuratie van de Webrij opstellen als een pijpleiding van de Rij van het Web niet wordt gevormd. Dit vertegenwoordigt de &quot;uber&quot;pijpleiding, terwijl het geven van gebruikers de opties om hun Voorste code van het Eind of de berichtconfiguratie via de Voorste pijpleiding van het Eind en de pijpleiding van Config van de Rij van het Web uitsluitend op te stellen.
+Deze kunnen van het type Volledige Stapel zijn - de Kwaliteit van de Code of Volledige Stapel - de pijpleiding van de Plaatsing.
 
 De volgende beperkingen zijn van toepassing:
 
@@ -97,7 +98,6 @@ De volgende beperkingen zijn van toepassing:
 
 1. De Volledige pijpleiding van de Stapel voor een milieu zal de dispatcherconfiguratie negeren als de overeenkomstige pijpleiding Config van de Rij van het Web voor het milieu bestaat.
 
-Deze kunnen van het type Volledige Stapel zijn - de Kwaliteit van de Code of Volledige Stapel - de pijpleiding van de Plaatsing.
 
 ### Vorm een Volledige Pijpleiding van de Stapel {#configure-full-stack}
 
