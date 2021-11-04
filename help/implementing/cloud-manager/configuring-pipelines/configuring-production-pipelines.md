@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Productiepijpleidingen configureren
 index: true
-source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,18 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
 
 1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **[Volledige stapelcode](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** of **[Code frontend](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Als u **Code frontend**, moet u de optie **Bewaarplaats**, **Git Branch** en **Codelocatie**, zoals weergegeven in onderstaande afbeelding:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Als u **Volledige stapelcode**, moet u de optie **Bewaarplaats**, **Git Branch** en **Implementatieopties voor productie**, zoals weergegeven in onderstaande afbeelding:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+
+   **Implementatieopties voor productie:**
+
+   * **Pauzeren vóór implementatie naar productie**: Met deze optie kan de implementatie vóór de productie worden gepauzeerd.
+   * **Gepland**: Met deze optie kan de gebruiker de geplande productieimplementatie inschakelen.
 
    >[!IMPORTANT]
    >Als er al een pijplijn met volledige stapelcode bestaat voor de geselecteerde omgeving, wordt deze selectie uitgeschakeld.
@@ -66,10 +77,9 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    >[!NOTE]
    >Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u [Reis voor snel maken van site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
 
-   Implementatieopties voor productie:
 
-   * **Pauzeren vóór implementatie naar productie**: Met deze optie kan de implementatie vóór de productie worden gepauzeerd.
-   * **Gepland**: Met deze optie kan de gebruiker de geplande productieimplementatie inschakelen.
+
+
 
 1. De **Productiepijpleiding toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
