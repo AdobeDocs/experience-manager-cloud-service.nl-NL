@@ -2,7 +2,7 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 86%
@@ -68,9 +68,9 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 ## Updates AEM {#aem-updates}
 
 >[!NOTE]
->Zie [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md) voor meer informatie.
+>Zie voor meer informatie de [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
 
-AEM als Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de instanties van de Productie en van het Stadium aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
+AEM as a Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de instanties van de Productie en van het Stadium aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
 
 >[!NOTE]
 > Als de update naar de productieomgeving mislukt, wordt de werkgebiedomgeving automatisch teruggedraaid. Dit wordt automatisch gedaan om ervoor te zorgen dat zowel het werkgebied als de productieomgeving na het voltooien van een update dezelfde AEM versie hebben.
@@ -112,11 +112,11 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren. Raadpleeg [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) voor meer informatie.
+* Nieuwe programma&#39;s maken en beheren. Zie [Programma&#39;s en programmatypen begrijpen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) voor meer informatie .
 
-* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Raadpleeg [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie.
+* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie .
 
-* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Raadpleeg [Uw CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) configureren voor meer informatie.
+* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie .
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
@@ -253,7 +253,7 @@ Zie het overzicht van [Wijzigingen in Sites](/help/sites-cloud/sites-cloud-chang
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets als Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
+Adobe Experience Manager Assets as a Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
 Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, en hoogkwalitatieve opname en zoekfunctie van assets.
 

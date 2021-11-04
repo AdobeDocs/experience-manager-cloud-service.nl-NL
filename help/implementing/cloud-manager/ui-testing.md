@@ -2,9 +2,9 @@
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker wor
 
 >[!NOTE]
 > Het werkgebied en de productiepijpleidingen die vóór 10 februari 2021 zijn gemaakt, moeten worden bijgewerkt om de interfacetests te kunnen gebruiken zoals beschreven op deze pagina.
-> Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configure-pipeline.md) voor informatie over pijpleidingsconfiguratie.
+> Zie [CI-CD-pijpleidingen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor informatie over pijpleidingsconfiguratie.
 
 ## UI-tests samenstellen {#building-ui-tests}
 
