@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Productiepijpleidingen configureren
 index: true
-source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
+source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -55,14 +55,14 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **[Volledige stapelcode](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** of **[Code frontend](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. U kunt de **Bewaarplaats** en de **Git Branch**. Selecteer de Implementatieopties voor productie, zoals hieronder wordt uitgelegd. Klikken op **Doorgaan**.
+1. De **Productiepijpleiding toevoegen** bevat een tweede tabblad met het label **Broncode**. U kunt **[Code frontend](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** of **[Volledige stapelcode](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    Als u **Code frontend**, moet u de optie **Bewaarplaats**, **Git Branch** en **Codelocatie**, zoals weergegeven in onderstaande afbeelding:
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   Als u **Volledige stapelcode**, moet u de optie **Bewaarplaats**, **Git Branch** en **Implementatieopties voor productie**, zoals weergegeven in onderstaande afbeelding:
+   Als u **Volledige stapelcode**, moet u de optie **Bewaarplaats**, **Git Branch** en **Implementatieopties voor productie** (zie onderstaande afbeelding):
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
    **Implementatieopties voor productie:**
@@ -77,9 +77,7 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
    >[!NOTE]
    >Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u [Reis voor snel maken van site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
 
-
-
-
+1. Klikken op **Doorgaan** nadat u de opties in het menu **Broncode** tab.
 
 1. De **Productiepijpleiding toevoegen** bevat een derde tabblad met het label **Experience Audit**. Deze optie verstrekt een lijst voor de wegen URL die altijd in de Controle van de Ervaring moeten worden omvat.
 
@@ -111,9 +109,12 @@ Klikken op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
 
 1. Klikken op **Opslaan**. De nieuwe productiepijplijn wordt nu weergegeven in de **Pijpleidingen** kaart.
 
-   De pijpleiding wordt getoond op de kaart op het huisscherm met drie acties, zoals hieronder getoond:
+   De pijpleiding wordt getoond op de kaart op het huisscherm met vier acties, zoals hieronder getoond:
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
 
    * **Toevoegen** - staat toe dat een nieuwe pijpleiding wordt toegevoegd.
+   * **Alles tonen** - de gebruiker in staat stelt alle pijpleidingen te bekijken.
    * **Repo-info openen** - stelt de gebruiker in staat de informatie op te halen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
    * **Meer informatie** - navigeert naar inzicht in de bron van de Documentatie van de CI/CD-pijpleiding.
 
