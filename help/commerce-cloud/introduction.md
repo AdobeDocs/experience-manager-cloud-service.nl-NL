@@ -3,7 +3,7 @@ title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Magento en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en
 
 ## Hoe de Inhoud en de Handel klanten helpen succesvol zijn
 
-Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. De Plaatsen van de Experience Manager biedt Inhoud en Handel als toe:voegen-op module voor Experience Manager als Cloud Service aan die uit-van-de-doos handel kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
+Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Handel als toe:voegen-op module voor as a Cloud Service Experience Manager aan die uit-van-de-doos commerciële kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
 
-Merken kunnen Experience Manager integreren met Adobe Commerce, een onderdeel van Adobe Experience Cloud, en elke andere motor van keuze. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
+Merken kunnen Experience Manager integreren met Adobe Commerce, een deel van Adobe Experience Cloud, en elke andere commerciële motor van keuze. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
 
 * Sneller schalen en innoveren
 * Ervaringen aanpassen om conversie te stimuleren
@@ -26,7 +26,7 @@ Merken kunnen Experience Manager integreren met Adobe Commerce, een onderdeel va
 * Ervaringen voor klanten verrijken en onderscheiden
 * Het schrijven stroomlijnen met commerciële gegevenstoegang
 
-## Introductie AEM Commerce Integration Framework (CIF) {#cif-intro}
+## Inleiding tot AEM Commerce Integration Framework (CIF) {#cif-intro}
 
 Aangezien deze projecten te maken hebben met de complexiteit van de integratie van een handelsoplossing. Een handelsoplossing kan om het even wat van een commerciële oplossing zoals Adobe Commerce Cloud aan een reeks van de douanehandelsdiensten zijn. De integratie is in hoge mate afhankelijk van de gebruiksgevallen en het ecosysteem. Het raakt gewoonlijk verschillende plaatsen en komt in vele verschillende aroma&#39;s voor:
 
@@ -44,7 +44,7 @@ Deze ingewikkeldheid opent de deur naar potentiële punt van mislukkingen, verho
 
 Met meer dan 200 klanten, heeft CIF zich als succesvol ingrediënt voor een succesvol inhoud &amp; handelproject gevestigd. Dit biedt vandaag en in de toekomst waarde voor IT en bedrijven. Recente klantprojecten beschrijven CIF als een &quot;Grote accelerator en een enorme tijdbesparende server met veel waarde&quot;.
 
-## CIF Voordelen {#cif-benefits}
+## CIF-uitkeringen {#cif-benefits}
 
 CIF verstrekt out-of-the-box belangrijkste componenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten zijn geïntegreerd uit de doos met de cliënt-zijgegevenslaag van Adobe om klantenprofielen, zoals het verenigde profiel te drijven. Dit profiel vangt in detail het gedrag van een bezoeker, dat kan worden gebruikt om de klantenreis in echt te voorspellen en te personaliseren - tijd.
 
@@ -58,13 +58,13 @@ De krachtige hulpmiddelen van CIF in AEM laten inhoudsscheppers toe om rijke en 
 
 ### Tijd-aan-Waarde (TTV)
 
-Versnelt projectontwikkeling met [AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [AEM Venia verwijzingsstorefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaarloze inhoud &amp; handel).
+Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (headless content &amp; commerce).
 
 CIF wordt gebouwd voor ononderbroken innovatie met een altijd bijgewerkte toe:voegen-op, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 
 ### Integrations
 
-Sluit uw ecosysteem (bijvoorbeeld handelsoplossing) aan op de Experience Cloud met behulp van [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), een op microservices gebaseerde serverloze PaaS, en [CIF&#39;s referentie-implementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Sluit uw ecosysteem (bijvoorbeeld handelsoplossing) met de Experience Cloud aan gebruikend  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), een serverloze PaaS op basis van microservices, en [Referentie-uitvoering van CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Beproefde patronen en beste praktijken
 
