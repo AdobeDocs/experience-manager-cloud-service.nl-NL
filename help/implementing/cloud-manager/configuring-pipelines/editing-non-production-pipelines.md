@@ -2,7 +2,7 @@
 title: Een niet-productiepijplijn bewerken
 description: Een niet-productiepijplijn bewerken
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ U kunt de productiepijpleiding van de kaart van Pijpleidingen in werking stellen
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Schrapping van een niet-productiepijpleiding {#delete-nonprod}
+### Schrapping van een niet-productiepijpleiding {#delete-nonprod}
 
 U kunt de productiepijpleiding van de kaart van Pijpleidingen schrappen:
 
