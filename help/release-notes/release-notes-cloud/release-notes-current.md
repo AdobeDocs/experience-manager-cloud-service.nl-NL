@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Kijk eens naar de [Overzicht release oktober 2021](https://video.tv.adobe.com/v/
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ondersteunt nu automatisch genereren van teksttranscripties van de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services]. De ondersteunde bestanden worden automatisch getranscripeerd en de tekst wordt opgeslagen in de WebVTT-indeling. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
+* [!DNL Experience Manager] ondersteunt nu automatisch genereren van teksttranscripties van de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services]. De [ondersteunde bestandstypen](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
 
 ### Nieuwe functie in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
 

@@ -1,29 +1,29 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 6%
+source-wordcount: '823'
+ht-degree: 5%
 
 ---
 
 # [!DNL Assets] ondersteunde bestandsindelingen {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] als a  [!DNL Cloud Service] ondersteunt basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
+[!DNL Adobe Experience Manager] als [!DNL Cloud Service] ondersteunt de basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
+Daarnaast [!DNL Experience Manager Assets] biedt uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* Sleutel [Adobe bestandsindelingen](#adobe-formats) geproduceerd door Adobe toepassingen en services, zoals [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] en [!DNL Adobe Acrobat] of PDF.
-* Sleutel [bestandsindelingen voor beeldbewerking](#image-formats).
-* [Camera Raw bestandsindelingen ](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Algemene [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
+* Sleutel [Adobe-bestandsindelingen](#adobe-formats) geproduceerd door Adobe-toepassingen en -diensten, waaronder [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF.
+* Sleutel [afbeeldingsbestandsindelingen](#image-formats).
+* [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Vaak [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
@@ -50,7 +50,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Voor [!DNL Adobe InDesign] bestanden (INDD) wordt de grootte van de vertoning bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
+\* Voor [!DNL Adobe InDesign] bestanden (INDD), wordt de grootte van de vertoning bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Voorkeuren configureren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
 
 ## Afbeeldingsindelingen {#image-formats}
 
@@ -77,10 +77,10 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD   ‡ | ✓ | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Dit is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet worden ondersteund in [!DNL Dynamic Media]:
 
@@ -217,7 +217,20 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-[!DNL Assets] als  [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+[!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+
+## Ondersteunde indelingen voor audio- en video-transcriptie {#audio-video-transcription-formats}
+
+* FLV (met H.264- en AAC-codecs) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV)/ASF (.wmv, .asf)
+* AVI (niet-gecomprimeerd 8 bits/10 bits) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Tips en beperkingen {#limitations-and-tips}
 
