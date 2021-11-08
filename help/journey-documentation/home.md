@@ -1,13 +1,13 @@
 ---
 title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
-
 
 # AEM Documentenreizen {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door 
 
 Een reis van de Documentatie verbindt vele verschillende en complexe onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen staan in contrast met AEM bestaande technische documenten die zich voornamelijk richten op één functie en documentatie van taken, waarbij ervan wordt uitgegaan dat AEM vertrouwd zijn. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Reizen van de Documentatie lezers nieuw om een plaats te AEM beginnen te begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Daarom dienen de Documentatiereizen als aanvulling op en niet als vervanging voor [AEM bestaande technische documentatie.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+Documentatiereizen staan in contrast met AEM bestaande technische documenten die zich voornamelijk richten op één functie en documentatie van taken, waarbij ervan wordt uitgegaan dat AEM vertrouwd zijn. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Reizen van de Documentatie lezers nieuw om een plaats te AEM beginnen te begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Om deze reden dienen documentatiereizen als aanvulling op en niet als vervanging voor [AEM bestaande technische documentatie.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
 
 ### Leren op verhaal {#narrative}
 
@@ -33,7 +33,7 @@ De reizen zorgen ervoor dat de lezer weet hoe AEM een probleem kan oplossen in p
 
 ### Oriëntatie van best practices {#best-practices}
 
-De Reizen van de documentatie worden ontworpen op basis van de beginselen van best practices, die door het recentste onderzoek worden geïnformeerd, bewezen implementatieervaring van de diensten van de Adobe, en feedback van klantenprojecten.
+Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op het nieuwste onderzoek, bewezen ervaring met de implementatie van Adobe-services en feedback van klantprojecten.
 
 Als u wilt weten hoe Adobe adviseert om een bedrijfsgeval met AEM op te lossen, zijn de Reizen van de Documentatie waar te beginnen.
 
@@ -77,7 +77,7 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 | Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene kennis van CMS | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
 | Technische documenten | De technische documenten richten zich op individuele eigenschappen, die de technische werking van de eigenschap en elke optie specificeren beschikbaar aan de gebruiker. | Ervaren AEM gebruikers | AEM | Context en achtergrond | Tekst | Variabel |
 | Zelfstudie | Een zelfstudie is een diepgaand duiken in een onderwerp dat een ontwikkelaar of beheerder toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekt, gewoonlijk leveraging een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
-| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM Admins | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 hour=&quot;&quot;> |
+| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM Admins | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
 
 ## Welke reizen zijn er? {#journeys}
 
@@ -87,9 +87,10 @@ Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke re
 |---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Begin hier om te zien hoe AEM headless ontwikkelingsmodellen steunt en hoe te om uw project van planning, implementatie, te krijgen om te leven. |
 | [Papierreis zonder koppen](/help/journey-headless/author/overview.md) | Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. |
-| [Architect zonder hoofd](/help/journey-headless/architect/overview.md) | Begin hier voor een inleiding aan de krachtige, en flexibele, onervaren eigenschappen van Adobe Experience Manager als Cloud Service, en hoe te om inhoud voor uw project te modelleren. |
+| [Architect zonder hoofd](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt modelleren. |
 | [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md) | Begin hier om te zien hoe u uw vertaalprojecten zonder kop in AEM kunt opzetten en beheren. |
-| AEM Onboarding Journey | Binnenkort verkrijgbaar! |
+| [AEM Onboarding Journey](/help/journey-onboarding/home.md) | Begin hier om snel aan de slag te gaan met uw nieuwe AEM as a Cloud Service omgeving! |
+| [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) | Begin hier voor een begeleide reis door het eenvoudig te gebruiken AEM Snelle hulpmiddel van de Verwezenlijking van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis. |
 | AEM Commerce-reis | Binnenkort verkrijgbaar! |
 | AEMaaCS-migratieroute | Binnenkort verkrijgbaar! |
 

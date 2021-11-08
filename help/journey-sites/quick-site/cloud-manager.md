@@ -1,6 +1,6 @@
 ---
-title: Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites
-description: Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de Snelle site samenbrengt.
+title: Understand Cloud Manager and the Quick Site Creation Workflow
+description: Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
 workflow-type: tm+mt
 source-wordcount: '1133'
@@ -15,7 +15,7 @@ Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de 
 
 >[!CAUTION]
 >
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
+>Het gereedschap Snel site maken is momenteel een technische voorvertoning. It is made available for testing and evaluation purposes and is not intended for production use unless agreed with Adobe Support.
 
 >[!TIP]
 >
@@ -23,24 +23,24 @@ Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de 
 >
 >Als u een AEM beheerder bent, is een beheerder van de Manager van de Wolk, verantwoordelijk voor zowel front-end ontwikkeling als beheerderstaken, of eenvoudig het proces van begin tot eind in AEM voor front-end ontwikkeling wilt begrijpen, blijven lezend het huidige document en ga op deze reis verder.
 
-## Doelstelling {#objective}
+## Objective {#objective}
 
 Dit document helpt u begrijpen hoe het AEM Snelle hulpmiddel van de Plaats werkt en geeft u een overzicht van de stroom van begin tot eind. Na het lezen moet u:
 
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om de ontwikkeling op de voorgrond te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
 
-Dit document richt zich op het begrijpen van deze fundamentele stukken van de Snelle oplossing van de Plaats alvorens zich aan de volgende stap van de reis te bewegen waar u configuratie begint.
+This document focuses on understanding these fundamental pieces of the Quick Site creation solution before moving on to the next step of the journey where you begin configuration.
 
 Hoewel het aangeraden is stap voor stap door te gaan met deze reis, kunt u als u al begrijpt dat AEM Sites en Cloud Manager samenwerken en rechtstreeks met de configuratie willen beginnen [Ga verder met de volgende stap van de reis.](create-site.md)
 
-## Verantwoordelijke rol {#responsible-role}
+## Responsible Role {#responsible-role}
 
 Dit gedeelte van de reis is van toepassing op zowel de beheerder van de AEM als de beheerder van de Manager van de Wolk.
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-U hebt verschillende vereisten nodig voordat u sites gaat maken en aanpassen met het gereedschap Snel site maken.
+There are several requirements before you begin creating and customizing sites using the Quick Site Creation tool.
 
 Omdat deze reis voor zowel front-end ontwikkelaars, beheerders, als combinaties van alle rollen is bestemd, zijn de vereisten voor allebei hier vermeld.
 
@@ -54,19 +54,19 @@ Het is belangrijk te begrijpen dat voor de front-end ontwikkelaar geen AEM toega
 | Basiskennis van het maken en beheren van sites in AEM | AEM-beheerder |
 | Basiskennis van Cloud Manager | Cloud Manager-beheerder |
 
-Voor de front-end ontwikkelaar is geen AEM kennis nodig.
+For the front-end developer, no AEM knowledge is necessary.
 
 ### Opties {#tools}
 
 | Gereedschap | Rol |
 |---|---|
 | Voorkeursontwikkelomgeving | Front-endontwikkelaar |
-| npm | Front-endontwikkelaar |
+| npm | Front-End Developer |
 | webpack | Front-endontwikkelaar |
-| Toegang tot Cloud Manager | Cloud Manager-beheerder |
+| Access to Cloud Manager | Cloud Manager-beheerder |
 | Lid zijn van **Zakelijke eigenaar** rol in Cloud Manager | Cloud Manager-beheerder |
-| Sys Admin in Cloud Manager zijn | Cloud Manager-beheerder |
-| Toegang tot Admin Console | Cloud Manager-beheerder |
+| Sys Admin in Cloud Manager zijn | Cloud Manager Administrator |
+| Access to Admin Console | Cloud Manager-beheerder |
 | Lid zijn van de **Implementatiebeheer** rol in Cloud Manager | Cloud Manager-beheerder |
 | Lid zijn van de **Implementatiebeheer** rol in Cloud Manager | Front-endontwikkelaar |
 
@@ -82,13 +82,13 @@ Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert
 
 Om klanten met de montages van de ondernemingsontwikkeling te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doel-gebouwde CI/CD pijpleidingen integreren. Met het gereedschap Snel site maken kunt u deze functies uitbreiden voor ondersteuning van speciale front-end ontwikkelingspijplijnen.
 
-Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog niveau bestaat Cloud Manager uit verschillende structuurniveaus.
+For the purposes of this journey, a complete understanding of Cloud Manager is not necessary. Op hoog niveau bestaat Cloud Manager uit verschillende structuurniveaus.
 
-![Cloud Manager-structuur](assets/cloud-manager-structure.png)
+![Cloud Manager structure](assets/cloud-manager-structure.png)
 
-* **TENANT** - Elke klant wordt voorzien van een huurder. **WKND Reizen- en avontuurbedrijven** kan huurder zijn.
+* **TENANT** - Every customer is provisioned with a tenant. **WKND Travel and Adventure Enterprises** might be a tenant.
 * **PROGRAMMA&#39;S** - Elke huurder heeft een of meer programma&#39;s. De **WKND Reizen- en avontuurbedrijven** een huurder heeft **WKND Nightlife** en **WKND-projecten** programma.
-* **OMGEVINGEN** - Elk programma heeft meerdere omgevingen, zoals productie voor live-inhoud en staging en ontwikkeling voor ontwikkelingsdoeleinden. **WKND Nightlife** en **WKND-projecten** programma &#39; s zouden zowel een ontwikkelings - , fase - als een productieomgeving hebben .
+* **ENVIRONMENTS** - Each program has multiple environments such as production for live content, and staging and dev for development purposes. **WKND Nightlife** and **WKND Afternoon Projects** programs would both have dev, stage, and production environments.
 * **BEVESTIGING** - De omgevingen beschikken over git-opslagruimten waar de toepassing en front-end code worden onderhouden.
 * **GEREEDSCHAPPEN EN WORKFLOWS** - De pijpleidingen beheren de implementatie van code van de gegevensbanken aan de milieu&#39;s.
 
@@ -96,7 +96,7 @@ Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog nive
 
 De algehele flow is eenvoudig en intuïtief, zelfs als u nog geen uitgebreide ervaring hebt met Cloud Manager.
 
-1. De AEM beheerder ondertekent in een AEM milieu, en leidt tot een nieuwe plaats gebruikend een plaatssjabloon.
+1. The AEM administrator signs into an AEM environment, and creates a new site using a site template.
 1. De beheerder van de Manager van de Wolk leidt tot een front-end pijpleiding in de Manager van de Wolk. De pijpleiding organiseert de plaatsing van code van een git bewaarplaats aan een AEM milieu.
 1. De AEM beheerder voert het plaatsthema van de AEM instantie van het programma uit en verstrekt het aan de front-end ontwikkelaar.
 1. De beheerder van de Manager van de Wolk verleent de front-end ontwikkelaar toegang tot de AEM git bewaarplaats waar de aanpassingen kunnen worden begaan.
@@ -106,9 +106,9 @@ De algehele flow is eenvoudig en intuïtief, zelfs als u nog geen uitgebreide er
 
 ![Snelle workflow voor het maken van sites](assets/qsc-flow.png)
 
-Het belangrijkste voordeel van het gebruik van het gereedschap Snel maken is dat de zuivere front-end ontwikkelaar alleen verantwoordelijk is voor de werkelijke aanpassing. De front-end ontwikkelaar heeft geen interactie met AEM of heeft enige kennis van AEM nodig.
+The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. De front-end ontwikkelaar heeft geen interactie met AEM of heeft enige kennis van AEM nodig.
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
 Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 
@@ -121,7 +121,7 @@ Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het doc
 
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Site maken van sjabloon,](create-site.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
-* [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
-* [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Raadpleeg dit document voor meer informatie over deze rollen en hoe u deze kunt beheren.
-* [npm](https://www.npmjs.com) - AEM thema&#39;s die worden gebruikt om sites snel te bouwen, zijn gebaseerd op npm.
+* [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager&#39;s features, you may want to directly consult the in-depth technical docs.
+* [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager has pre-configured roles with appropriate permissions. Raadpleeg dit document voor meer informatie over deze rollen en hoe u deze kunt beheren.
+* [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM thema&#39;s die worden gebruikt om sites snel op te bouwen, zijn gebaseerd op webpack.
