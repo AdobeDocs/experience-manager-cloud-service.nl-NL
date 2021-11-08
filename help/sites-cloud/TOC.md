@@ -6,10 +6,10 @@ breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt.
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 66%
+source-wordcount: '325'
+ht-degree: 63%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 66%
    + Grondbeginselen van authoring {#fundamentals}
       + [Omgeving en tools](authoring/fundamentals/environment-tools.md)
       + [Pagina-annotaties toevoegen](authoring/fundamentals/annotations.md)
+      + [Een nieuwe site maken](authoring/fundamentals/create-site.md)
       + [Pagina&#39;s maken en indelen](authoring/fundamentals/organizing-pages.md)
       + [Paginacontent bewerken](authoring/fundamentals/editing-content.md)
       + [De Rich Text-editor](authoring/fundamentals/rich-text-editor.md)
@@ -81,9 +82,13 @@ ht-degree: 66%
       + [Inzicht in segmentering](authoring/personalization/segmentation.md)
       + [Het vormen Segmentatie met ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-+ Beheren {#administering}
++ Beheer {#administering}
+   + Site maken {#site-creation}
+      + [Een nieuwe site maken](administering/site-creation/create-site.md)
+      + [Sitesjablonen](administering/site-creation/site-templates.md)
+      + [Sitethema&#39;s](administering/site-creation/site-themes.md)
    + [Workflows beheren](administering/workflows-administering.md)
-   + Inhoud {#reusing-content} opnieuw gebruiken
+   + Inhoud opnieuw gebruiken {#reusing-content}
       + [MSM en vertaling](administering/msm-and-translation.md)
       + Beheer van meerdere sites {#msm}
          + [Overzicht van MSM en Live Copy](administering/msm/overview.md)
