@@ -1,9 +1,9 @@
 ---
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Dit deel van de reis geldt voor de front-end ontwikkelaar.
 
 Als u de wijzigingen in de themaaanpassing hebt toegewezen aan de AEM-git-opslagplaats, kunt u [de pijpleiding die de beheerder creeerde](pipeline-setup.md) om de wijzigingen te implementeren.
 
-1. Cloud Manager openen [zoals u deed om uw toegangsinformatie van de it terug te winnen.](retrieve-access.md) Op de **Overzicht** tabblad ziet u een kaart voor **Pijpleidingen**.
+1. Aanmelden bij Cloud Manager [zoals u deed om uw toegangsinformatie van de it terug te winnen](retrieve-access.md) En heb toegang tot uw programma. Op de **Overzicht** tabblad ziet u een kaart voor **Pijpleidingen**.
 
    ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 

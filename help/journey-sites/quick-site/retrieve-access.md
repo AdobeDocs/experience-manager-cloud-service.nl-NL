@@ -1,9 +1,9 @@
 ---
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
@@ -82,19 +82,11 @@ Neem contact op met de beheerder van Cloud Manager als u deze e-mail niet hebt o
 
 1. Meld u aan bij Adobe Experience Cloud op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) of klik op de koppeling in de welkomstmail.
 
-1. Nadat u zich hebt aangemeld, zorgt u ervoor dat u zich in de juiste organisatie bevindt door deze in de rechterbovenhoek van het scherm te controleren. Als u slechts lid bent van één org, is deze stap niet nodig. Tik vervolgens of klik op **Experience Manager**.
-
-   ![Overzicht van Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Tik op de volgende pagina of klik op de knop **Starten** om de **Cloud Manager** app.
-
-   ![Experience Manager-apps](assets/experience-manager-apps.png)
-
-1. Op de volgende pagina staan de verschillende beschikbare programma&#39;s. Tik of klik op het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
+1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Tik of klik op het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
 
    ![Een programma selecteren in Cloud Manager](assets/cloud-manager-select-program.png)
 
-U ziet nu een overzicht van uw Cloud Manager. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
+U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
 
 ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 

@@ -1,9 +1,9 @@
 ---
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ Op deze manier kan de ontwikkeling aan de voorzijde afzonderlijk van en parallel
 
 ## Cloud Manager openen {#login}
 
-1. Meld u aan bij Adobe Experience Cloud op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Meld u aan bij Adobe Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Nadat u zich hebt aangemeld, zorgt u ervoor dat u zich in de juiste organisatie bevindt door deze in de rechterbovenhoek van het scherm te controleren. Als u slechts lid bent van één org, is deze stap niet nodig. Tik vervolgens of klik op **Experience Manager**.
-
-   ![Overzicht van Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Tik op de volgende pagina of klik op de knop **Starten** om de **Cloud Manager** app.
-
-   ![Experience Manager-apps](assets/experience-manager-apps.png)
-
-1. Op de volgende pagina staan de verschillende beschikbare programma&#39;s. Tik of klik op de knop die u wilt beheren. Als u slechts met AEM as a Cloud Service begint, hebt u waarschijnlijk slechts één programma beschikbaar.
+1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Tik of klik op de knop die u wilt beheren. Als u slechts met AEM as a Cloud Service begint, hebt u waarschijnlijk slechts één programma beschikbaar.
 
    ![Een programma selecteren in Cloud Manager](assets/cloud-manager-select-program.png)
 
-U ziet nu een overzicht van uw Cloud Manager. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
+U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
 
 ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 
