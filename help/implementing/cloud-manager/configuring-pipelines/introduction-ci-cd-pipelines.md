@@ -2,9 +2,9 @@
 title: CI-CD-pijpleidingen
 description: Volg deze pagina voor meer informatie over Cloud Manager CI-CD Pipelines
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ In de volgende tabel worden alle pijpleidingen in Cloud Manager samen met het ge
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Wanneer gebruiken | Wanneer of waarom moet ik gebruiken? |
 |--- |--- |--- |---|---|
-| Productie of niet-productie | Implementatie | Voorkant | Snelle implementatietijden.<br>De veelvoudige front-end pijpleidingen kunnen worden gevormd en gelijktijdig per milieu lopen.<br>De pijpleiding van het Voorste Eind bouwt uit de bouw aan een opslag. Wanneer een HTML-pagina wordt aangeboden, kan deze verwijzen naar statische bestanden van de Front Code die door de CDN worden gebruikt als bron. | Om vooreind code uitsluitend op te stellen die één of meerdere cliëntsideUI toepassingen bevat. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen.<br>Moet AEM versie 2021.10.5933.20211012T154732Z zijn |
+| Productie of niet-productie | Implementatie | Voorkant | Snelle implementatietijden.<br>De veelvoudige front-end pijpleidingen kunnen worden gevormd en gelijktijdig per milieu lopen.<br>De pijpleiding van het Voorste Eind bouwt uit de bouw aan een opslag. Wanneer een HTML-pagina wordt aangeboden, kan deze verwijzen naar statische bestanden van de Front Code die door de CDN worden gebruikt als bron. | Om vooreind code uitsluitend op te stellen die één of meerdere cliëntsideUI toepassingen bevat. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen.<br>Moet AEM versie 2021.10.5933.20211012T154732Z zijn<br>Sites moeten zijn ingeschakeld. |
 | Productie of niet-productie | Implementatie | Volledige stapel | Wanneer de pijpleidingen aan de voorzijde nog niet zijn goedgekeurd.<br>Voor gevallen waarin de code van het Voorste Eind precies tezelfdertijd moet worden opgesteld zoals de code van de Server van de AEM. | Om AEM servercode (onveranderlijke inhoud, code Java, configuraties OSGi, configuratie HTTPD/dispatcher, repoinit, veranderbare inhoud, doopvonten) op te stellen die één of meerdere AEM servertoepassingen allen tezelfdertijd bevatten. |
 | Niet-productie | Codekwaliteit | Voorkant | Cloud Manager laten evalueren. uw bouwstijlsucces en codekwaliteit zonder een plaatsing te doen.<br>De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld. | De kwaliteit van de looppas code scant op vooreind code. |
 | Niet-productie | Codekwaliteit | Volledige stapel | Cloud Manager laten evalueren. uw bouwstijlsucces en codekwaliteit zonder een plaatsing te doen.<br>De veelvoudige pijpleidingen kunnen worden gevormd en in werking gesteld. | Voer een scans van de codekwaliteit uit op de volledige stapelcode. |
