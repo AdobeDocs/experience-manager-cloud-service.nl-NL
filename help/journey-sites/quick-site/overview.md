@@ -1,9 +1,9 @@
 ---
 title: Reis voor snel maken van site AEM
 description: Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,9 @@ Door elke kennis van ontwikkelaars voor het maken van sites te elimineren, AEM k
 
 ## Video-overzicht {#video-overview}
 
-Voor een snel overzicht van deze functie in actie, kunt u deze vijf minieme inleiding bekijken.
+Voor een snel overzicht van deze functie in actie, [je kunt deze introductie van vijf minuten bekijken .](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-Deze documentatierit zal u stap voor stap door alle eigenschappen in de video in detail nemen zodat u het proces begrijpt en het proces in uw eigen milieu kunt opnieuw creëren.
+Deze documentatietraject leidt u door alle functies in de video stap voor stap en in detail, zodat u de workflow begrijpt en het proces opnieuw kunt maken in uw eigen omgeving.
 
 ## AEM Documentenreizen {#documentation-journeys}
 
