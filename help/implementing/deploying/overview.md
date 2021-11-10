@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -179,7 +179,11 @@ Aangezien Package Manager een runtimeconcept is, is het niet mogelijk om inhoud 
 
 >[!IMPORTANT]
 >
->Gebruikersinterface van pakketbeheer kan een **ongedefinieerd** foutbericht als een pakket langer dan 10 minuten duurt om te installeren. Probeer de installatie niet opnieuw als dat gebeurt, omdat de toepassing op de juiste wijze op de achtergrond wordt uitgevoerd en bepaalde conflicten kunnen optreden bij meerdere importprocessen tegelijk.
+>De interface van Package Manager kan een **ongedefinieerd** foutbericht als een pakket langer dan 10 minuten duurt om te installeren.
+>
+>Dit is niet het gevolg van een fout tijdens de installatie, maar van een time-out die de Cloud Service heeft voor alle aanvragen.
+>
+>Probeer de installatie niet opnieuw als er een dergelijke fout optreedt. De installatie verloopt op de juiste wijze op de achtergrond. Als u de installatie opnieuw start, kunnen er conflicten optreden tijdens meerdere importprocessen tegelijk.
 
 Eventuele inhoudspakketten die via Cloud Manager zijn geïnstalleerd (zowel veranderbaar als onveranderbaar) worden in de gebruikersinterface van AEM Package Manager bevroren weergegeven. Deze pakketten kunnen niet opnieuw worden geïnstalleerd, opnieuw worden samengesteld of zelfs worden gedownload en worden weergegeven met een **&quot;cp2fm&quot;** achtervoegsel dat aangeeft dat de installatie ervan is beheerd door Cloud Manager.
 

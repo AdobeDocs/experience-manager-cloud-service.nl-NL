@@ -3,9 +3,9 @@ title: Pakketbeheer
 description: Leer de grondbeginselen van AE; pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,11 @@ Inhoudspakketten die voor AEM as a Cloud Service toepassingen worden gemaakt, mo
 
 >[!IMPORTANT]
 >
->Gebruikersinterface van pakketbeheer kan een **ongedefinieerd** foutbericht als een pakket langer dan 10 minuten duurt om te installeren. Probeer de installatie niet opnieuw als dat gebeurt, omdat de toepassing op de juiste wijze op de achtergrond wordt uitgevoerd en bepaalde conflicten kunnen optreden bij meerdere importprocessen tegelijk.
+>De interface van Package Manager kan een **ongedefinieerd** foutbericht als een pakket langer dan 10 minuten duurt om te installeren.
+>
+>Dit is niet het gevolg van een fout tijdens de installatie, maar van een time-out die de Cloud Service heeft voor alle aanvragen.
+>
+>Probeer de installatie niet opnieuw als er een dergelijke fout optreedt. De installatie verloopt op de juiste wijze op de achtergrond. Als u de installatie opnieuw start, kunnen er conflicten optreden tijdens meerdere importprocessen tegelijk.
 
 Voor meer informatie over het beheren van pakketten voor AEMaaCS raadpleegt u het document [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) in de het opstellen gebruikershandleiding.
 
@@ -159,7 +163,7 @@ Wanneer u filters maakt, kunt u een pad definiëren of een reguliere expressie g
 
 | Type regel | Beschrijving |
 |---|---|
-| include | Als een map wordt opgenomen, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
+| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
 | uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten. |
 
 Pakketfilters worden meestal gedefinieerd wanneer u het eerst [Maak het pakket.](#creating-a-new-package) U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
@@ -475,7 +479,7 @@ Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats t
 
 >[!CAUTION]
 >
->Als u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
+>Wanneer u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
 
 Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de inhoud bevat die wordt overschreven. Deze momentopname wordt opnieuw geïnstalleerd als u het pakket verwijdert.
 
@@ -541,7 +545,7 @@ Als u een pakket verwijdert, worden alleen de gegevens uit Package Manager verwi
 
 1. AEM vraagt om bevestiging dat u het pakket wilt schrappen. Klikken **OK** om de schrapping te bevestigen.
 
-1. De pakketinformatie wordt verwijderd en de details worden vermeld in het activiteitenlog.
+1. De pakketinformatie wordt verwijderd en de details worden gerapporteerd in het activiteitenlog.
 
 ### Pakketten repliceren {#replicating-packages}
 
