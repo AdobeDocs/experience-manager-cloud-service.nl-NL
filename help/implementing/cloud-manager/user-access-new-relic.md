@@ -3,21 +3,23 @@ title: Toegang van gebruiker tot nieuw Relic
 description: Toegang van gebruiker tot nieuw Relic
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# Nieuwe Relic APM voor AEM as a Cloud Service {#new-relic}
+# Nieuwe Relic Application Performance Monitoring voor AEM as a Cloud Service {#new-relic}
 
 ## Inleiding {#introduction}
 
-Adobe legt de nadruk op de bewaking, beschikbaarheid en prestaties van uw toepassing. Om dit doel te helpen bereiken, verleent AEM as a Cloud Service toegang tot een douane Nieuwe Relische controlereeks als deel van het standaardproductaanbod om uw teams de maximumzichtbaarheid aan uw systeem van de Cloud Service van Adobe Experience Manager en milieu prestatiesmetriek te verzekeren. In dit witboek worden de nieuwe functies voor de bewaking van Relic beschreven die zijn ingeschakeld in uw AEM as a Cloud Service omgevingen, zodat u de prestaties kunt verbeteren en optimaal kunt profiteren van AEM as a Cloud Service omgevingen.
+Adobe legt een hoge nadruk op de controle, de beschikbaarheid, en de prestaties van uw toepassing. Om dit doel te helpen bereiken, verleent AEM as a Cloud Service toegang tot een douane Nieuwe Relische controlereeks als deel van het standaardproductaanbod om uw teams de maximumzichtbaarheid aan uw systeem van de Cloud Service van Adobe Experience Manager en milieu prestatiesmetriek te verzekeren. In deze sectie worden de nieuwe functies voor de bewaking van Relic beschreven die op uw AEM as a Cloud Service omgevingen zijn ingeschakeld om de prestaties te ondersteunen en u in staat te stellen optimaal te profiteren van AEM as a Cloud Service omgevingen.
 
 ## as a Cloud Service transactiecontrole AEM via New Relic {#transaction-monitoring}
+
+Hier zijn zeer belangrijke eigenschappen in Nieuwe Relic Controle van de Prestaties van de Toepassing voor AEM as a Cloud Service:
 
 * Directe toegang tot een toegewezen Nieuwe Relic One-account (toegang beheerd door Adobe Support).
 
@@ -31,11 +33,18 @@ Adobe legt de nadruk op de bewaking, beschikbaarheid en prestaties van uw toepas
 
 Uw toegewezen Nieuwe Relic-account wordt door Adobe geleverd en beheerd via de betrokkenheid van de klant. Adobe blijft de eigenaar en beheerder en zal de account namens u beschikbaar stellen voor toegang tot uw toegewezen subaccount.
 
-Om toegang tot uw Nieuwe Relische sub-rekening te krijgen verbonden aan uw AEM as a Cloud Service Programma, te openen gelieve een verzoek door tot het lusje van de Steun in de Admin Console toegang te hebben. Zorg ervoor dat uw ticket de details van uw programma-id bevat, evenals de lijst met gebruikers die u Adobe-teams vraagt om de nieuwe Relic-toegang te openen. Alle gebruikers moeten een volledige naam en een geldig e-mailadres hebben.  Voor meer informatie over AEM Support Portal, gelieve Steun voor Experience Cloud.
+Om toegang te krijgen tot uw Nieuwe Relische sub-rekening verbonden aan uw AEM as a Cloud Service Programma:
+
+* Open een aanvraag door het tabblad Ondersteuning in de Admin Console te openen.
+* Zorg ervoor dat uw ticket de details van uw programma-id bevat, evenals de lijst met gebruikers die u Adobe-teams vraagt om de nieuwe Relic-toegang te openen.
+* Alle gebruikers moeten een volledige naam en een geldig e-mailadres hebben.
+
+   >[!NOTE]
+   >Voor meer informatie over AEM Support Portal, gelieve Steun voor Experience Cloud.
 
 Zodra de toegang is verleend, verzendt het Nieuwe Relic een bevestigingsmail naar elke gebruiker, zodat kunnen zij het opstellingsproces voltooien en binnen ondertekenen. Als ze het bevestigingsbericht van de oorspronkelijke account niet kunnen vinden:
 
-1. Ga naar de aanmeldingspagina van New Relic op login.newrelic.com/login.
+1. Navigeer naar de aanmeldingspagina van New Relic op login.newrelic.com/login.
 
 1. Selecteer vergeten uw wachtwoord.
 
@@ -64,9 +73,13 @@ Voor meer hulp of extra begeleiding over Nieuw Relisch aanbod voor uw AEM as a C
 
 ### Wat controleert Adobe met Nieuw Relic? {#adobe-monitor}
 
-Adobe bewaakt de AEM as a Cloud Service services voor auteurs, publiceren en voorvertonen (indien beschikbaar) via de insteekmodule New Relic APM Java. Met Adobe kunt u de aangepaste New Relic APM Telemetry en bewaking in niet-productie- en productie-AEM as a Cloud Service omgevingen mogelijk maken. Uw nieuwe Relische account is gekoppeld aan een primaire door Adobe onderhouden account en bevat meerdere toepassingen die hierin worden gerapporteerd. Drie per AEM as a Cloud Service omgeving:
+Adobe bewaakt de AEM as a Cloud Service services voor auteurs, publiceren en voorvertonen (indien beschikbaar) via de insteekmodule New Relic APM Java. Met Adobe kunt u de aangepaste New Relic APM Telemetry en bewaking in niet-productie- en productie-AEM as a Cloud Service omgevingen mogelijk maken. Uw nieuwe Relische account is gekoppeld aan een primaire door Adobe onderhouden account en bevat meerdere toepassingen die hierin worden gerapporteerd.
 
-Één toepassing voor de dienst van de Auteur per milieu Één toepassing voor de dienst van de Publicatie per milieu (met inbegrip van Golden Publish) Één toepassing voor de dienst van de Voorproef per milieu Elke toepassing gebruikt één vergunningssleutel, AEM as a Cloud Service milieu&#39;s aan slechts één Nieuwe Relische rekening zullen rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM als Infrastructuur worden bewaard voor 7 dagen.
+Drie per AEM as a Cloud Service omgeving:
+
+* Eén toepassing voor de service Auteur per omgeving
+* Eén toepassing voor de service Publiceren per omgeving (inclusief Gulden publicatie)
+* Eén toepassing voor de voorvertoningsservice per omgeving Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM als Infrastructuur worden bewaard voor 7 dagen.
 
 ### Wie heeft toegang tot de Nieuwe Relische gegevens van de Cloud Service? {#access-new-relic-cloud}
 
