@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,12 @@ Over het algemeen hoeft de inhoud in de verzender niet handmatig ongeldig te wor
 >
 >De verzender `invalidate.cache` API-benadering wordt niet meer ondersteund omdat deze alleen betrekking heeft op een specifiek verzendingsknooppunt. AEM as a Cloud Service werkt op het de dienstniveau, niet het individuele knoopniveau en zo de ongeldigingsinstructies in [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) is niet langer geldig voor AEM as a Cloud Service.
 
-De replicatie spoelmiddel zou moeten worden gebruikt. Dit kan worden gedaan gebruikend de Replicatie API. De [Replicatie-API-documentatie is beschikbaar](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)en voor een voorbeeld van het leegmaken van de cache raadpleegt u de [API voorbeeldpagina](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (in het bijzonder `CustomStep` voorbeeld die een replicatieactie van type ACTIVATE aan alle beschikbare agenten uitgeven). Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
+De replicatie spoelmiddel zou moeten worden gebruikt. Dit kan worden gedaan gebruikend [Replicatie-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 Dit wordt geïllustreerd in het onderstaande diagram.
 
