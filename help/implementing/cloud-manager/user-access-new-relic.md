@@ -1,25 +1,23 @@
 ---
 title: Toegang van gebruiker tot nieuw Relic
 description: Toegang van gebruiker tot nieuw Relic
-index: false
-hide: true
-source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
+source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
 
 
-# Nieuwe Relic Application Performance Monitoring voor AEM as a Cloud Service {#new-relic}
+# Toegang van gebruiker tot nieuw Relic {#user-access}
 
 ## Inleiding {#introduction}
 
 Adobe legt een hoge nadruk op de controle, de beschikbaarheid, en de prestaties van uw toepassing. Om dit doel te helpen bereiken, verleent AEM as a Cloud Service toegang tot een douane Nieuwe Relische controlereeks als deel van het standaardproductaanbod om uw teams de maximumzichtbaarheid aan uw systeem van de Cloud Service van Adobe Experience Manager en milieu prestatiesmetriek te verzekeren. In deze sectie worden de nieuwe functies voor de bewaking van Relic beschreven die op uw AEM as a Cloud Service omgevingen zijn ingeschakeld om de prestaties te ondersteunen en u in staat te stellen optimaal te profiteren van AEM as a Cloud Service omgevingen.
 
-## as a Cloud Service transactiecontrole AEM via New Relic {#transaction-monitoring}
+## AEM as a Cloud Service transactiecontrole via nieuwe Relic - Value Propositie {#transaction-monitoring}
 
-Hier zijn zeer belangrijke eigenschappen in Nieuwe Relic Controle van de Prestaties van de Toepassing voor AEM as a Cloud Service:
+Hier is de samenvatting van waardevoorstel van Nieuwe Relische Controle van de Prestaties van de Toepassing voor AEM as a Cloud Service:
 
 * Directe toegang tot een toegewezen Nieuwe Relic One-account (toegang beheerd door Adobe Support).
 
@@ -40,34 +38,42 @@ Om toegang te krijgen tot uw Nieuwe Relische sub-rekening verbonden aan uw AEM a
 * Alle gebruikers moeten een volledige naam en een geldig e-mailadres hebben.
 
    >[!NOTE]
-   >Voor meer informatie over AEM Support Portal, gelieve Steun voor Experience Cloud.
+   >Zie [AEM Support Portal voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer informatie .
 
-Zodra de toegang is verleend, verzendt het Nieuwe Relic een bevestigingsmail naar elke gebruiker, zodat kunnen zij het opstellingsproces voltooien en binnen ondertekenen. Als ze het bevestigingsbericht van de oorspronkelijke account niet kunnen vinden:
+Zodra de toegang is verleend, verzendt het Nieuwe Relic een bevestigingsmail naar elke gebruiker, zodat kan de gebruiker het opstellingsproces voltooien en binnen ondertekenen.
 
-1. Navigeer naar de aanmeldingspagina van New Relic op login.newrelic.com/login.
+Als de gebruiker het bevestigingsbericht van de oorspronkelijke account niet kan vinden:
 
-1. Selecteer vergeten uw wachtwoord.
+1. Navigeer naar de aanmeldingspagina van New Relic op [login.newrelic.com/login](https://login.newrelic.com/login).
 
-1. Typ het e-mailadres van de account en selecteer Mijn wachtwoord verzenden.
+1. Selecteren **Uw wachtwoord vergeten**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Typ het e-mailadres van de account en selecteer **Mijn terugstelkoppeling verzenden**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. Wanneer het systeem van New Relic een e-mailbericht retourneert, selecteert u de koppeling in het bericht om uw account opnieuw te bevestigen.
 
    >[!NOTE]
    >Als je geen e-mail van New Relic ontvangt:
-   >Controleer uw spamfilters. Voeg, indien van toepassing, Nieuw bericht toe aan uw e-maillijst van gewenste personen.
+   >Controleer uw [spamfilters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Indien van toepassing, [Nieuw bericht toevoegen aan uw e-maillijst van gewenste personen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
    >Feedback op het ondersteuningsticket en onze teams helpen u verder
 
-1. Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, kunt u ons een ondersteuningsticket via Admin Console sturen.
+1. Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, registreert u een ondersteuningsticket via [Admin Console](https://adminconsole.adobe.com/).
+
+### Uw e-mail controleren {#verify-email}
 
 Als u tijdens het aanmelden wordt gevraagd uw e-mail te verifiëren, betekent dit dat uw e-mail is gekoppeld aan meerdere accounts en de optie krijgt om uw e-mail te verifiëren tijdens het aanmelden. Op deze manier kunt u kiezen welk account u wilt openen. Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de laatst gemaakte gebruikersrecord die aan uw e-mailadres is gekoppeld. Als u wilt voorkomen dat uw e-mail tijdens elke aanmelding wordt gecontroleerd, klikt u op het selectievakje Onthoud mijn gegevens in het aanmeldingsscherm.
 
-Voor meer hulp, te openen gelieve een steunkaartje via AEM Portaal van de Steun.
+Voor meer hulp kunt u een ondersteuningsticket openen via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Uitzonderingen {#exceptions}
 
 AEM as a Cloud Service richt het aanbieden rond Nieuwe Relic APM oplossing slechts en verleent geen steun voor alarmering, registreren of API integratiemogelijkheden.
 
-Voor meer hulp of extra begeleiding over Nieuw Relisch aanbod voor uw AEM as a Cloud Service Programma, gelieve een steunkaartje via AEM Portaal van de Steun voor hulp te openen.
+Voor meer hulp of extra begeleiding op Nieuw Relic-aanbod voor uw AEM as a Cloud Service Programma, te openen gelieve een steunkaartje via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor hulp.
 
 ## Veelgestelde vragen voor nieuwe zakelijke account {#faqs}
 
@@ -79,7 +85,9 @@ Drie per AEM as a Cloud Service omgeving:
 
 * Eén toepassing voor de service Auteur per omgeving
 * Eén toepassing voor de service Publiceren per omgeving (inclusief Gulden publicatie)
-* Eén toepassing voor de voorvertoningsservice per omgeving Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM als Infrastructuur worden bewaard voor 7 dagen.
+* Eén toepassing voor de voorbeeldservice per omgeving
+   >[!IMPORTANT]
+   >Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM als Infrastructuur worden bewaard voor 7 dagen.
 
 ### Wie heeft toegang tot de Nieuwe Relische gegevens van de Cloud Service? {#access-new-relic-cloud}
 

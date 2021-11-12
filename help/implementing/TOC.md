@@ -5,9 +5,9 @@ breadcrumb-title: Implementatiehandleiding
 user-guide-description: Ontdek hoe u de Experience Manager as a Cloud Service-implementatie aanpast, inclusief onderwerpen over ontwikkeling en implementatie.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1084'
 ht-degree: 25%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 25%
       + [Opslagplaatsen in Cloud Manager](cloud-manager/managing-code/cloud-manager-repositories.md)
       + [Toegang tot opslagplaatsen](cloud-manager/managing-code/accessing-repos.md)
       + [Git integreren met Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
-      + [Werken met Meerdere bronopslaglocaties voor Git](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [Werken met Meerdere opslagplaatsen voor Git-bronnen](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Team Development Setup voor AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Inleiding](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -83,6 +83,7 @@ ht-degree: 25%
       + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
    + [Logbestanden openen en beheren](cloud-manager/manage-logs.md)
    + [SLA-rapportage](cloud-manager/sla-reporting.md)
+   + [Toegang van gebruiker tot nieuw Relic](cloud-manager/user-access-new-relic.md)
    + [Inzicht in meldingen](cloud-manager/notifications.md)
    + SSL-certificaten beheren {#manage-ssl-certificates}
       + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
