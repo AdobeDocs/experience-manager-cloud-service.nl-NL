@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Inhoud en Handel as a Cloud Service
 breadcrumb-title: Handleiding voor AEM inhoud en handel
 user-guide-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
-source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '140'
+ht-degree: 3%
 
 ---
 
@@ -16,6 +16,13 @@ ht-degree: 4%
 + [AEM Inhoud en Handel](/help/commerce-cloud/home.md)
 + [Opvallende wijzigingen in AEM inhoud en handel as a Cloud Service](changes.md)
 + [Inleiding en overzicht](introduction.md)
++ Handelsreizen {#journeys}
+   + Reis van auteur van inhoud {#author}
+      + [Reis AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+      + [Aan de slag met CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+      + [Productcataloguspagina&#39;s en -sjabloon beheren](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+      + [Trainingen met gefaseerde productcatalogus maken](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+      + [Ervaringen maken met producten](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + Integrations {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [Oplossing voor handel van derden](integrating/third-party.md)
