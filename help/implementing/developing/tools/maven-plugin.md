@@ -2,7 +2,7 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 4%
@@ -117,7 +117,7 @@ Hiermee installeert u een pakket in de opslagplaats. Voor de verwezenlijking van
 Naast de volgende parameters, zie de beschrijvingen in [Algemene parameters](#common-parameters) sectie.
 
 | Naam | Type | Vereist | Standaardwaarde | Beschrijving |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | Nee | De waarde van de `artifactId` eigendom van het Maven-project | Een tekenreeks van het formulier `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | Nee | Geen | De id van het artefact dat moet worden geïnstalleerd |
 | `groupId` | `String` | Nee | Geen | De `groupId` van het te installeren artefact |
