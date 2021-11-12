@@ -1,9 +1,9 @@
 ---
 title: Ervaringen maken met producten
 description: Leer hoe u productervaringen kunt opbouwen.
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,5 @@ U bent nu klaar om productervaringen te beheren met AEM Content and Commerce. Er
 ## Aanvullende bronnen {#additional-resources}
 
 * [Ervaringen op het gebied van authoringhandel](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
