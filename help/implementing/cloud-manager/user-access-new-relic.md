@@ -1,9 +1,9 @@
 ---
 title: Toegang van gebruiker tot nieuw Relic
-description: Toegang van gebruiker tot nieuw Relic
-source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
+description: Volg deze pagina om over Nieuwe Relic Application Performance Monitoring voor AEM as a Cloud Service te leren
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Drie per AEM as a Cloud Service omgeving:
 * Eén toepassing voor de service Publiceren per omgeving (inclusief Gulden publicatie)
 * Eén toepassing voor de voorbeeldservice per omgeving
    >[!IMPORTANT]
-   >Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM als Infrastructuur worden bewaard voor 7 dagen.
+   >Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM worden bewaard 7 dagen.
 
 ### Wie heeft toegang tot de Nieuwe Relische gegevens van de Cloud Service? {#access-new-relic-cloud}
 
