@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
 
 ---
 
-# Meerdere categorieën en productpagina&#39;s maken
+# Meerdere categorieën en productpagina&#39;s maken {#multiple}
 
     >[!OPMERKING]
     >
@@ -31,6 +31,6 @@ Meer informatie over dit onderwerp vindt u in de volgende bronnen:
 
 - [AEM CIF Core-componenten - Configuratie van meerdere cataloguspagina&#39;s](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## Gerelateerde bronnen
+## Gerelateerde bronnen {#related}
 
 Het is ook mogelijk om bepaalde gebieden van een pagina dynamisch als doel in te stellen en dezelfde sjabloon opnieuw te gebruiken. Leer hoe u [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md).

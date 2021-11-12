@@ -1,15 +1,14 @@
 ---
-title: Ervaringen met het schrijven van handelsartikelen
+title: Ervaringen op het gebied van authoringhandel
 description: Werkopdrachten
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-# Ervaringen met het schrijven van handelsartikelen {#authoring-commerce-experiences}
+# Ervaringen op het gebied van authoringhandel {#authoring-commerce-experiences}
 
 ## Overzicht {#overview}
 
@@ -63,9 +62,9 @@ Het tabblad &#39;Middelen&#39; in het zijpaneel van de editor biedt toegang tot 
 
 Analoog aan activa, kunnen de producten op een pagina worden toegevoegd (die tot een product teaser component als gebrek) of componenten (momenteel gesteund zijn productschouder en productcarrousel) leidt.
 
-### Koppelingen naar product- of categoriepagina&#39;s toevoegen in tekstvelden met RTE (Rich Text Editor)  {#rte}
+### Koppelingen toevoegen in tekstvelden met RTE {#rte}
 
-CCIF-productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
+CCIF-productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
 
 ![RTE](../assets/authoring/RTE.png)
 
