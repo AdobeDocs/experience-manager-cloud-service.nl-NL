@@ -1,9 +1,9 @@
 ---
 title: Toegang van gebruiker tot nieuw Relic
 description: Volg deze pagina om over Nieuwe Relic Application Performance Monitoring voor AEM as a Cloud Service te leren
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Als de gebruiker het bevestigingsbericht van de oorspronkelijke account niet kan
    >[!NOTE]
    >Als je geen e-mail van New Relic ontvangt:
    >Controleer uw [spamfilters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Indien van toepassing, [Nieuw bericht toevoegen aan uw e-maillijst van gewenste personen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Feedback op het ondersteuningsticket en onze teams helpen u verder
+   >Geef feedback op het ondersteuningspakket en Adobe Support zal u verder helpen.
 
 1. Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, registreert u een ondersteuningsticket via [Admin Console](https://adminconsole.adobe.com/).
 
