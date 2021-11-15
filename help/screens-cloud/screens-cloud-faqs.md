@@ -2,9 +2,9 @@
 title: as a Cloud Service veelgestelde vragen weergeven
 description: Deze pagina beschrijft de as a Cloud Service veelgestelde vragen voor schermen.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
+source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 De volgende sectie geeft antwoorden op Veelgestelde vragen (FAQs) met betrekking tot het as a Cloud Service project van Screens.
 
-## Wat moet ik doen als AEM Screens Player die naar de as a Cloud Service schermen wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
+## Wat moet ik doen als AEM Screens Player die naar as a Cloud Service schermen wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-AEM as a Cloud Service verandert de lange geheim voorgeheugensleutels met elke plaatsing. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer Cloud Manager de implementatie uitvoert. Deze lange geheim voorgeheugensleutels in manifests zijn ongeldig, zodat kan de speler deze *clientlibs* niet downloaden.
+AEM as a Cloud Service verandert de lange geheim voorgeheugensleutels met elke plaatsing. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer Cloud Manager de implementatie uitvoert. Deze lange cache-sleutels in de manifests zijn ongeldig, zodat de speler deze niet kan downloaden *clientlibs*.
 
-Als u `longCacheKey="none"` in uw `clientlib`-map gebruikt, worden de lange cachemoetsen volledig verwijderd voor deze *clientlibs*.
+Gebruiken `longCacheKey="none"` in uw `clientlib` de lange geheim voorgeheugensleutels voor deze *clientlibs*.
 
 
 ## Wat moeten wij doen als off-line manifest niet alle middelen zoals bedoeld omvat? {#offline-manifest}
 
-Offline caches worden gegenereerd met **bulk-offline-update-screens-service** servicegebruiker. Bepaalde paden die niet toegankelijk zijn voor `bulk-offline-update-screens-service`, leiden tot ontbrekende inhoud in offlinemanifesten.
+Offline caches worden gegenereerd met **bulk-off-line-update-screens-service** servicegebruiker. Bepaalde paden, niet toegankelijk voor `bulk-offline-update-screens-service`, leidt tot ontbrekende inhoud in offline manifesten.
 
 In uw code, namelijk `ui.config or ui.apps`, creeer een configuratie OSGi in configuratiemap, met de volgende inhoud, en titel het dossier - noem als `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
@@ -38,5 +38,13 @@ scripts=[
 
 ## Welke afbeeldingsindelingen worden aanbevolen voor een naadloze uitvoering van afbeeldingen in een as a Cloud Service AEM Screens-kanaal?{#screens-cloud-image-format}
 
-Het wordt aanbevolen om afbeeldingen in de notatie `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal te gebruiken voor de beste digitale signaalervaring.
-Afbeeldingen in de indeling `*.tif` (bestandsindeling Tagafbeelding) worden niet ondersteund in as a Cloud Service AEM Screens. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
+Het wordt aanbevolen afbeeldingen in de indeling te gebruiken `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal, voor de beste digitale signaalervaring.
+De afbeeldingen in de indeling `*.tif` (Bestandsindeling voor tagafbeeldingen) wordt niet ondersteund in AEM Screens as a Cloud Service. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
+
+## Wat moet ik doen als een Kanaal in de modus Ontwikkelaar (online) niet wordt weergegeven op AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
+
+Het wordt aanbevolen om AEM Screens-caching-mogelijkheden te benutten, maar als u uw Channel in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm moet weergeven, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
+
+```
+Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
+```
