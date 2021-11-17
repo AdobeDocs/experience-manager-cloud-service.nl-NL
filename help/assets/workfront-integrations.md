@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 533217df95115505535544aaf9d6a8f5a4e2a81f
+source-git-commit: 045387bc02ca5a30e0caa020885d4cf63b4e9aef
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '876'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 2%
 [!DNL Adobe Workfront] is een werkbeheertoepassing waarmee u de volledige levenscyclus van het werk op één locatie kunt beheren. De integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid van de inhoud en de tijd-aan-markt verbeteren door het werk en het beheer van digitale activa intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
 De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde bedrijfsprocessen mogelijk met end-to-end workflows en biedt gepersonaliseerde end-to-end clientervaringen en centrale opslag. Voor meer informatie over de mogelijkheden en eigenschappen van [!DNL enhanced connector], zie [wat nieuw is in de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
-
-Adobe biedt twee verschillende schakelaars aan om beide oplossingen te integreren. De schakelaars laten complexe ondernemingsautomatisering, configuratie, en verlengbare werkschema&#39;s tussen toe [!DNL Assets] en [!DNL Workfront]. Daarnaast [!DNL Assets Essentials] is beschikbaar als een invoegtoepassing die nieuw is [!DNL Workfront] klanten kunnen afzonderlijk aanschaffen. Zie voor meer informatie [[!DNL Workfront] and [!DNL Assets Essentials] integratie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
 
 [!DNL Workfront for Experience Manage enhanced connector] stelt uw organisatie in staat om:
 
