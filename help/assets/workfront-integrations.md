@@ -3,7 +3,7 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 78c9f745465bf9dd4ca268b71391c6a23b1c61e2
+source-git-commit: edb954754f89c01a3b1a77b98f77c934f1855316
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 >
 >Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
->Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] dat deze schakelaar overtollig maakt; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
 
 ## Verschillende integraties vergelijken tussen [!DNL Assets] en [!DNL Workfront] {#feature-parity-matrix}
 
