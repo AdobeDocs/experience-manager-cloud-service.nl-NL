@@ -2,9 +2,9 @@
 title: Functionele tests - Cloud Services
 description: Functionele tests - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -119,9 +119,11 @@ Bovendien moet de JAR de Cloud-Manager-TestType manifestkopbal hebben die aan in
     </plugins>
 ```
 
-In dit JAR-bestand moeten de klassenamen van de eigenlijke tests die uitgevoerd moeten worden, eindigen in de IT.
+Binnen dit JAR-bestand moeten de klassenamen van de werkelijke uit te voeren tests eindigen in `IT`.
 
-Een klasse met de naam `com.myco.tests.aem.ExampleIT` zou worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.ExampleTest` niet.
+Een klasse met de naam `com.myco.tests.aem.it.ExampleIT` zou worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.it.ExampleTest` niet.
+
+Bovendien moet de testcode onder een pakket met de naam `it` (Het filter voor uitsluitingen van dekking is `**/it/**/*.java`).
 
 De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Zie [Git Link](https://github.com/adobe/aem-testing-clients) voor meer informatie .
 
