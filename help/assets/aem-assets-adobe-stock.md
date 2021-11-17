@@ -1,13 +1,13 @@
 ---
 title: Beheren [!DNL Adobe Stock] activa in [!DNL Assets].
 description: Zoeken, ophalen, licentie en beheren [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2264'
+source-wordcount: '2271'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,7 @@ Organisaties kunnen hun bedrijf integreren [!DNL Adobe Stock] plannen met [!DNL 
 
 De integratie vereist:
 
+* Aan de slag [!DNL Experience Manager Assets] als [!DNL Cloud Service] instance
 * An [bedrijf [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * Een gebruiker met machtigingen in Admin Console naar het standaardprofiel voor het product Stock
 * Een gebruiker met machtigingen voor het profiel Developer Access voor het maken van integratie in de Adobe Developer Console
@@ -39,7 +40,7 @@ Een onderneming [!DNL Adobe Stock] plan,
 * Maakt verificatie voor serviceaccount (JWT) binnen mogelijk [!DNL Adobe Developer Console] voor je aandelenrecht
 * Maakt het beheer van de credits en licenties wereldwijd mogelijk vanuit de [!DNL Adobe Admin Console]
 
-Binnen de machtiging wordt een standaardproductprofiel voor [!DNL Adobe Stock] bestaat in [!DNL Admin Console]. U kunt meerdere profielen maken en deze profielen bepalen wie een licentie voor de middelen van Stock kan verkrijgen. Een gebruiker die rechtstreeks toegang heeft tot het productprofiel heeft toegang tot [https://stock.adobe.com/](https://stock.adobe.com/) en de activa van de vergunning van de Voorraad. Terwijl er een andere methode is om de toegang van de Ontwikkelaar te gebruiken om integratie (API) tot stand te brengen voor authentiek communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock].
+Binnen de machtiging wordt een standaardproductprofiel voor [!DNL Adobe Stock] bestaat in [!DNL Admin Console]. U kunt meerdere profielen maken en deze profielen bepalen wie een licentie voor de middelen van Stock kan verkrijgen. Een gebruiker die rechtstreeks toegang heeft tot het productprofiel heeft toegang tot [https://stock.adobe.com/](https://stock.adobe.com/) en de activa van de vergunning van de Voorraad. Terwijl er een andere methode is om de Toegang van de Ontwikkelaar te gebruiken om een integratie (API) tot stand te brengen. Deze integratie verifieert de communicatie tussen [!DNL Experience Manager Assets] en [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ De IMS-configuratie omvat twee stappen:
 
 Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in de Adobe Developer Console.
 
-1. Meld u aan bij uw [!DNL Experience Manager Assets] instantie van auteur. De standaard-URL is `http://localhost:4502/aem/start.html`.
+1. Meld u aan bij uw [!DNL Experience Manager Assets] cloudinstantie.
 
 1. Van de **[!UICONTROL Tools]** deelvenster, navigeren naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
