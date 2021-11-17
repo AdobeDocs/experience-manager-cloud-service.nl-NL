@@ -3,10 +3,10 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
+source-git-commit: 533217df95115505535544aaf9d6a8f5a4e2a81f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 1%
+source-wordcount: '922'
+ht-degree: 2%
 
 ---
 
@@ -15,17 +15,19 @@ ht-degree: 1%
 
 [!DNL Adobe Workfront] is een werkbeheertoepassing waarmee u de volledige levenscyclus van het werk op één locatie kunt beheren. De integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid van de inhoud en de tijd-aan-markt verbeteren door het werk en het beheer van digitale activa intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
+De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde bedrijfsprocessen mogelijk met end-to-end workflows en biedt gepersonaliseerde end-to-end clientervaringen en centrale opslag. Voor meer informatie over de mogelijkheden en eigenschappen van [!DNL enhanced connector], zie [wat nieuw is in de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+
 Adobe biedt twee verschillende schakelaars aan om beide oplossingen te integreren. De schakelaars laten complexe ondernemingsautomatisering, configuratie, en verlengbare werkschema&#39;s tussen toe [!DNL Assets] en [!DNL Workfront]. Daarnaast [!DNL Assets Essentials] is beschikbaar als een invoegtoepassing die nieuw is [!DNL Workfront] klanten kunnen afzonderlijk aanschaffen. Zie voor meer informatie [[!DNL Workfront] and [!DNL Assets Essentials] integratie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
 
 [!DNL Workfront for Experience Manage enhanced connector] stelt uw organisatie in staat om:
 
-* Eenvoudig samenwerken. Creatieve teams kunnen zich minder zorgen maken. Wanneer het werk klaar is, kunnen ze het met een klik op een knop naar AEM Assets sturen
-* Verrijk elementen bij elke stap. Verzamel nieuwe gegevens in elke fase van de levenscyclus van het element. Van ideatie tot levering, kan uw organisatie zeer belangrijke metriek vangen om meer geïnformeerde bedrijfsbesluiten over toekomstige activaontwikkeling te nemen.
-* Verwijzing naar bestaande activa. Zoek en hergebruik eenvoudig bestaande middelen in productie en voeg deze toe aan nieuwe projecten als referentie-items.
-* Synchroniseer al uw metagegevens. Verbeter uw metagegevens door het toevoegen zo eenvoudig mogelijk te maken. Met de connector worden metagegevens bidirectioneel gesynchroniseerd tussen Workfront en AEM Assets
-* Hefboomwerking [!DNL Experience Manager Assets] mogelijkheden voor digitaal beheer. Toegang tot al uw digitale middelen rechtstreeks in uw favoriet [!DNL Creative Cloud] toepassingen. Slim labelen en uitsnijden met AI-functies, zoekgereedschappen, dynamische weergave via [!DNL Dynamic Media]en nog veel meer.
+* Maak automatisch gekoppelde mappen voor Experience Managers in Workfront en deel de mappen in op basis van Workfront-Portfolio, -programma&#39;s en -projecten.
+* Metagegevens van Workfront-projecten synchroniseren met mappen voor gekoppelde Experience Managers.
+* Metagegevens van de Experience Manager worden bijgewerkt met nieuwe versies.
+* Stel Workfront-objectstatussen in op basis van configureerbare omstandigheden met behulp van workflows voor Experience Managers.
+* Publiceer elementen naar de publicatieomgeving van de Experience Manager of naar Brand Portal.
 
-Raadpleeg de platformondersteuning en andere [eerste vereisten voor de verbeterde aansluiting](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansluiting](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
