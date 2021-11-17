@@ -1,23 +1,23 @@
 ---
 title: Multi-Store-installatie voor handel
 description: Leer hoe u meerdere winkelweergaven van Magento tot AEM kunt toewijzen. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
-sub-product: Handel
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-# Commerce Multi-Store Setup {#multi-store}
+# Multi-Store-installatie voor handel {#multi-store}
 
 De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
@@ -33,13 +33,13 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
 ## Configuratie {#configuration}
 
-1. Meerdere winkels configureren en weergaven opslaan volgens het patroon dat wordt beschreven in [Magento Websites, Winkels en weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Meerdere winkels configureren en weergaven opslaan volgens het in [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
 2. Zorg ervoor dat de verbinding tussen AEM &amp; Magento werkt.
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * Ga in AEM naar Extra -> Algemeen -> [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Ga AEM naar Gereedschappen -> Algemeen -> [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een nieuwe configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
@@ -47,15 +47,15 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
    >[!TIP]
    >
-   > Commerciële catalogi kunnen worden geadresseerd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Magento 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   > Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Magento 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar AEM Sites-console
-   * Navigeer naar het gebied of de hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl
+   * Navigeer naar het gebied of de hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
    * Pagina-eigenschappen selecteren en pagina-eigenschappen openen
    * Selecteer het tabblad Geavanceerd
-   * Selecteer in de sectie `Configuration` de configuratie die u stapsgewijs hebt gemaakt
+   * In de `Configuration` de sectie selecteert de configuratie u bij stap 3 creeerde
 
 ## Aanvullende bronnen
 
