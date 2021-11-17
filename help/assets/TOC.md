@@ -1,13 +1,13 @@
 ---
 sub-product: Adobe Experience Manager Assets as a Cloud Service
-user-guide-title: Middelen als hulplijn voor Cloud Service
+user-guide-title: as a Cloud Service hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 38%
+source-wordcount: '488'
+ht-degree: 37%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 38%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Overzicht en nieuwe functies](overview.md)
-+ [Notable Wijzigingen in [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Opmerkelijke wijzigingen in [!DNL Assets] als [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architectuur](architecture.md)
 + [Ondersteunde bestandsindelingen](file-format-support.md)
 + [Overzicht van microservices voor assets](asset-microservices-overview.md)
 + [Toegankelijkheid in [!DNL Assets]](accessibility.md)
-+ Digitale elementen beheren {#manage}
++ Digitale middelen beheren {#manage}
    + [Assets delen](share-assets.md)
    + [Activiteiten en DAM-taken bewaken](assets-activity-history.md)
    + [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
@@ -31,7 +31,7 @@ ht-degree: 38%
    + [Slimme tags voor afbeeldingen](smart-tags.md)
    + [Slimme tag toewijzen aan video-elementen](smart-tags-video-assets.md)
    + [Assets indelen](organize-assets.md)
-   + [Gebruik [!DNL Adobe Stock] middelen](aem-assets-adobe-stock.md)
+   + [Gebruiken [!DNL Adobe Stock] elementen](aem-assets-adobe-stock.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Overzicht van metadata](manage-metadata.md)
    + [Integreren met [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,8 +46,8 @@ ht-degree: 38%
    + [Assets inchecken en uitchecken om te bewerken](check-out-and-submit-assets.md)
    + [Digital Rights Management voor elementen](drm.md)
    + [Watermerkelementen](watermark-assets.md)
-   + [Elementen verwerken met behulp van [!DNL Creative Cloud] API&#39;s](cc-api-integration.md)
-+ [!DNL Assets] {#admin} configureren, beheren en uitbreiden
+   + [Elementen verwerken met [!DNL Creative Cloud] API&#39;s](cc-api-integration.md)
++ Configureren, beheren en uitbreiden [!DNL Assets] {#admin}
    + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](developer-reference-material-apis.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -66,9 +66,9 @@ ht-degree: 38%
    + [MediaLibrary-mogelijkheden](medialibrary.md)
    + [Metadata van assets importeren en exporteren](metadata-import-export.md)
 + Assets delen en distribueren {#brand-portal}
-   + [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configureren [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Elementen publiceren  [!DNL Brand Portal] van [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [Elementen publiceren vanuit [!DNL Brand Portal] tot [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 38%
    + [Veelgestelde vragen over HTTP2-levering van content](dynamic-media/http2faq.md)
    + [Flash Viewers end of Life](dynamic-media/flash-viewers-eol.md)
    + [Einde levensduur DHTML-viewers](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ Integratie met andere oplossingen {#integrations}
+   + [Integratie met [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installeren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+   + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
