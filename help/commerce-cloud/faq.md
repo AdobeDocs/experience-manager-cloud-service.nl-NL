@@ -2,10 +2,9 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-translation-type: tm+mt
-source-git-commit: 36a598961081b7c2229065a031ad163a5336ee43
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce (Magento) admin worden opgeslagen en van verwijzingen voorzien? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Magento-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+Er is geen officiële AEM Assets - Magento-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/bounteous-dam.html).
 
 Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
 
@@ -32,7 +31,7 @@ Cataloguspagina&#39;s en productpagina&#39;s worden dynamisch gemaakt en in het 
 
 ## 5. Wanneer u productgegevens in uw handelsoplossing bijwerkt, is dat een duw in real time aan AEM? Of is het een batchproces?
 
-CIF toe:voegen-op gebruikt met AEM Cloud Service laat gegevens toe om van de handelsoplossing aan AEM op bestelling te stromen. Daarom is dit geen real-time duw of een partijproces wanneer er een update in uw handelsoplossing is.
+De toe:voegen-op CIF gebruikt met AEM Cloud Service laat gegevens toe om van de handelsoplossing aan AEM op bestelling te stromen. Daarom is dit geen real-time duw of een partijproces wanneer er een update in uw handelsoplossing is.
 
 ## 6. Welke catalogusgrootte AEM CIF-ondersteuning?
 
@@ -48,11 +47,11 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## 9. Hoe werkt cachevervalsing voor AEM Dispatcher met AEM en handel?
 
-We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Raadpleeg [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html) voor meer informatie over op TTL gebaseerde cachedetectie
+We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad, adviseren wij teruggevend de gegevenscliënt-kant. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, gelieve te verwijzen naar [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10 Bestaat er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
-Een verwijzingsimplementatie van het productonderzoek wordt verstrekt maar geen verenigd onderzoek met inhoud. Deze eigenschap is gewoonlijk zeer klantspecifiek en beter opgelost op een project-specifiek niveau.
+Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is gewoonlijk zeer klantspecifiek en beter opgelost op een project-specifiek niveau.
 
 ## 11. Hoe werkt Search met AEM en handel die CIF gebruiken?
 
@@ -68,7 +67,7 @@ We raden u aan om marketinggerelateerde gegevens en inhoud in AEM te beheren. De
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Raadpleeg <https://magento.com/pci-compliance> voor meer informatie over Magento PCI-compatibiliteit
+We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Magento PCI-compatibiliteit raadpleegt u [PGB-compatibiliteitseisen](https://magento.com/pci-compliance).
 
 ## 15. Als ik gebruik van AEM en Magento cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
 
@@ -76,4 +75,4 @@ Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzo
 
 ## 16. Hoe kan ik om een I/O Runtime proefvergunning verzoeken?
 
-U kunt om een proefvergunning verzoeken om I/O Runtime [hier](https://adobeio.typeform.com/to/obqgRm) te gebruiken.
+U kunt een proeflicentie aanvragen om I/O Runtime te gebruiken [hier](https://adobeio.typeform.com/to/obqgRm).

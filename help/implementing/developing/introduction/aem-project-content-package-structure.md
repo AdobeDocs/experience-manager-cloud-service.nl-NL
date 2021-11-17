@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 12%
 
 ---
@@ -97,7 +97,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + De `ui.content` bevat alle inhoud en configuratie. Het inhoudspakket bevat alle knoopdefinities die niet in het dialoogvenster `ui.apps` of `ui.config` pakketten, met andere woorden alles wat zich niet in `/apps` of `/oak:index`. Gemeenschappelijke elementen van de `ui.content` pakket omvat , maar is niet beperkt tot :
    + Contextbewuste configuraties
       + `/conf`
-   + Vereiste, complexe inhoudsstructuren (d.w.z. De bouwstijl van de inhoud die voortbouwt op en zich voorbij de de inhoudsstructuren van de Basislijn uitbreidt die in Repo worden bepaald.)
+   + Vereiste, complexe inhoudsstructuren (d.w.z. Inhoud opbouwen die voortbouwt op en zich uitbreidt voorbij de inhoudsstructuren van de Basislijn die zijn gedefinieerd in Repo Init.)
       + `/content`, `/content/dam`, enz.
    + Regelgevende taggende taxonomieën
       + `/content/cq:tags`

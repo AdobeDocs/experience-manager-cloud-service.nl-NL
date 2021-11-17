@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: c956aab4dbbbb7daede3e115616ae923f7a68b90
+source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 6%
@@ -21,15 +21,15 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten SEO-problemen in veel Adobe Experience Manager (AEM) as a Cloud Service-projecten worden opgelost. Lees [SEO en URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) voor meer informatie.
+> SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten SEO-problemen in veel Adobe Experience Manager (AEM) as a Cloud Service-projecten worden opgelost. Lees [Aanbevolen werkwijzen voor SEO- en URL-beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) voor aanvullende informatie.
 
-[AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) componenten biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).  In de volgende video ziet u hoe u de `UrlProvider`-service en functies van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) configureert om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
+[AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om te vormen `UrlProvider` Service en kenmerken van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuratie {#configuration}
 
-Om de `UrlProvider` dienst volgens de SEO vereisten te vormen en een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF verstrekken URL&quot;.
+Om het `UrlProvider` De dienst volgens de eisen van SEO en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF URL&quot;verstrekken.
 
 >[!NOTE]
 >
@@ -45,15 +45,15 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
+In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` wordt vervangen door  `/content/venia/us/en/products/product-page`
-* `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld  `VP09`
-* `{{url_key}}` worden vervangen door de  `url_key` eigenschap van het product, bijvoorbeeld  `lenora-crochet-shorts`
-* `{{url_path}}` worden vervangen door het product,  `url_path`bijvoorbeeld  `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld  `VP09-KH-S`
+* `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
+* `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld `VP09`
+* `{{url_key}}` worden vervangen door de `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
+* `{{url_path}}` worden vervangen door de `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld `VP09-KH-S`
 
-Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
+Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling er ongeveer zo uit `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Categorie Pagina-URL-indeling {#product-list}
 
@@ -62,44 +62,44 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 * `{{page}}.html/{{url_path}}.html` (standaardwaarde)
 * `{{page}}.html/{{url_key}}.html`
 
-In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
+In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` wordt vervangen door  `/content/venia/us/en/products/category-page`
-* `{{url_key}}` wordt vervangen door de  `url_key` eigenschap van de categorie
-* `{{url_path}}` worden vervangen door de categorie  `url_path`
+* `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
+* `{{url_key}}` worden vervangen door de categorie `url_key` eigenschap
+* `{{url_path}}` worden vervangen door de categorie `url_path`
 
 Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
-> De `url_path` is een samenvoeging van de `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` schuine streep.
+> De `url_path` is een aaneenschakeling van `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` schuine streep.
 
 ## Aangepaste URL-indelingen {#custom-url-format}
 
-Om een formaat van douaneURL te verstrekken kan een project [`UrlFormat` interface ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) uitvoeren en de implementatie als dienst registreren OSGI, gebruikend het of als categorie pagina of het formaat van de productpagina url. Het `UrlFormat#PROP_USE_AS` de dienstbezit wijst op, welke van de gevormde vooraf bepaalde formaten te vervangen:
+Als u een aangepaste URL-indeling wilt opgeven, kan een project de opdracht [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) en registreer de implementatie als dienst OSGI, die of als categorie pagina of productpagina url formaat gebruikt. De `UrlFormat#PROP_USE_AS` het de dienstbezit wijst erop, welke van de gevormde vooraf bepaalde formaten te vervangen:
 
 * `useAs=productPageUrlFormat`, vervangt de geconfigureerde URL-indeling van de productpagina
 * `useAs=categoryPageUrlFormat`, vervangt de geconfigureerde URL-indeling voor de categoriepagina
 
-Als er meerdere implementaties zijn van de `UrlFormat` die als OSGI-services zijn geregistreerd, vervangt de implementatie met de hogere servicerangschikking de één of meerdere implementaties door de lagere servicerangschikking.
+Als er veelvoudige implementaties van zijn `UrlFormat` die als OSGI-diensten is geregistreerd, vervangt degene met de hoogste rangorde de dienst(en) door de lagere rangorde.
 
-`UrlFormat` moet een paar methodes uitvoeren om een URL van een bepaalde Kaart van parameters te bouwen en een URL te ontleden om de zelfde Kaart van parameters terug te keren. De parameters zijn hetzelfde als hierboven beschreven, alleen voor categorieën wordt een extra `{{uid}}`-parameter aan `UrlFormat` gegeven.
+De `UrlFormat` moet een paar methodes uitvoeren om een URL van een bepaalde Kaart van parameters te bouwen en een URL te ontleden om de zelfde Kaart van parameters terug te keren. De parameters zijn hetzelfde als hierboven beschreven, alleen voor categorieën en `{{uid}}` wordt de `UrlFormat`.
 
 ## Combineren met Sling Mappings {#sling-mapping}
 
-Naast `UrlProvider` is het ook mogelijk om [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van het AEM verstrekt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Toewijzingen Sling voor haven 4503 (publiceren) en 80 (verzender) te vormen.
+Naast de `UrlProvider`is het ook mogelijk [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om URL&#39;s te herschrijven en te verwerken. Het project AEM Archetype biedt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Toewijzingen van de Verschuiving voor haven 4503 (publiceren) en 80 (verzender) te vormen.
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM server van HTTP van de Verzender met `mod_rewrite` module te gebruiken. [AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM de config van de Verzender die reeds basisregels [herschrijven ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte omvat.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server te gebruiken met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
 
 ## Voorbeeld
 
-Het project [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) bevat voorbeeldconfiguraties om het gebruik van aangepaste URL&#39;s voor product- en categoriepagina&#39;s aan te tonen. Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Er wordt een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven gebruikt.
+De [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) Het project bevat voorbeeldconfiguraties om het gebruik van aangepaste URL&#39;s voor product- en categoriepagina&#39;s aan te tonen. Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
 
 >[!NOTE]
 >
->Deze configuratie moet met het externe domein worden aangepast dat door het project wordt gebruikt. Sling Mappings werkt gebaseerd op hostname en domein. Daarom is deze configuratie onbruikbaar gemaakt door gebrek en moet vóór plaatsing worden toegelaten. Om dit te doen anders noem de het Verschuiven omslag `hostname.adobeaemcloud.com` in `ui.content/src/main/content/jcr_root/etc/map.publish/https` volgens de gebruikte domeinnaam en laat dit config toe door `resource.resolver.map.location="/etc/map.publish"` aan &lt;a3 toe te voegen/> config van het project.`JcrResourceResolver`
+>Deze configuratie moet met het externe domein worden aangepast dat door het project wordt gebruikt. Sling Mappings werkt gebaseerd op hostname en domein. Daarom is deze configuratie onbruikbaar gemaakt door gebrek en moet vóór plaatsing worden toegelaten. De naam van de functie voor het toewijzen van objecten wijzigen `hostname.adobeaemcloud.com` map in `ui.content/src/main/content/jcr_root/etc/map.publish/https` volgens de gebruikte domeinnaam en laat dit config toe door toe te voegen `resource.resolver.map.location="/etc/map.publish"` aan de `JcrResourceResolver` config van het project.
 
 ## Aanvullende bronnen
 
