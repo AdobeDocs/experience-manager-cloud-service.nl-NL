@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2286'
 ht-degree: 3%
 
 ---
@@ -314,9 +314,9 @@ In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij he
 | Gebruiker | Groeperen | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | beheerder | N.v.t. | Alles | N.v.t. | Ja | Ja |
-| test-doc1 | DAM-gebruiker | `/conf/global/settings/stock/cloud-config` | Ja | Ja | Ja |
-| test-doc1 | DAM-gebruiker | `/conf/global/settings/stock/cloud-config` | Nee | Fout: Kan gegevens niet laden | Nee |
-| test-doc1 | DAM-gebruiker | toestaan: `/conf/global/settings/stock` ontkennen: `/cloud-config` | De voorraadconfiguratie is niet zichtbaar | Ja | Nee |
+| test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |
+| test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Nee | Fout: Kan gegevens niet laden | Nee |
+| test-doc1 | DAM-gebruiker | **toestaan**: /conf/global/settings/stock **ontkennen**: /cloud-config | De voorraadconfiguratie is niet zichtbaar | Ja | Nee |
 
 ## Gebruiken en beheren [!DNL Adobe Stock] activa in [!DNL Experience Manager] {#usemanage}
 
