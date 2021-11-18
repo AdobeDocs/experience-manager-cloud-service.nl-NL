@@ -2,9 +2,9 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 1. Wordt CIF GraphQL slechts gebruikt voor handel of zal dit voor het vragen van inhoud beschikbaar zijn authored op AEM JCR?
 
-Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle handel verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Magento en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
+Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle handel-verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Magento en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce (Magento) admin worden opgeslagen en van verwijzingen voorzien? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
@@ -35,7 +35,7 @@ De toe:voegen-op CIF gebruikt met AEM Cloud Service laat gegevens toe om van de 
 
 ## 6. Welke catalogusgrootte AEM CIF-ondersteuning?
 
-Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe schaalbaar zijn de API&#39;s van uw handelsoplossingen?
+Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe scalable zijn APIs van uw handelsoplossingen?
 
 ## 7. Hoe speelt PIM in dit kader?
 
@@ -51,7 +51,7 @@ We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s 
 
 ## 10 Bestaat er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
-Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is gewoonlijk zeer klantspecifiek en beter opgelost op een project-specifiek niveau.
+Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is gewoonlijk zeer klant-specifiek en beter opgelost op een project-specifiek niveau.
 
 ## 11. Hoe werkt Search met AEM en handel die CIF gebruiken?
 
@@ -63,7 +63,7 @@ Productgegevens worden meestal al vertaald in PIM of in Magento. De integratie A
 
 ## 13. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in de handelsoplossing?
 
-We raden u aan om marketinggerelateerde gegevens en inhoud in AEM te beheren. Decoreer productgegevens van uw handelsoplossing met extra attributen gebruikend de Fragmenten van de Inhoud of creeer en verbind de Fragmenten van de Ervaring voor ongestructureerde inhoud met uw producten.
+We raden u aan marketinggerelateerde gegevens en inhoud in AEM te beheren. Decoreer productgegevens van uw handelsoplossing met extra attributen gebruikend de Fragmenten van de Inhoud of creeer en verbind de Fragmenten van de Ervaring voor ongestructureerde inhoud met uw producten.
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 

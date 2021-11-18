@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 ## Configuratie {#configuration}
 
-Om het `UrlProvider` De dienst volgens de eisen van SEO en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF URL&quot;verstrekken.
+Om het `UrlProvider` De dienst volgens de SEO vereisten en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF&quot;verstrekken.
 
 >[!NOTE]
 >
@@ -91,9 +91,9 @@ Naast de `UrlProvider`is het ook mogelijk [Sling Mappings](https://sling.apache.
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server te gebruiken met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
 
-## Voorbeeld
+## Voorbeeld {#example}
 
 De [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) Het project bevat voorbeeldconfiguraties om het gebruik van aangepaste URL&#39;s voor product- en categoriepagina&#39;s aan te tonen. Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
 
@@ -101,7 +101,7 @@ De [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) Het pr
 >
 >Deze configuratie moet met het externe domein worden aangepast dat door het project wordt gebruikt. Sling Mappings werkt gebaseerd op hostname en domein. Daarom is deze configuratie onbruikbaar gemaakt door gebrek en moet vóór plaatsing worden toegelaten. De naam van de functie voor het toewijzen van objecten wijzigen `hostname.adobeaemcloud.com` map in `ui.content/src/main/content/jcr_root/etc/map.publish/https` volgens de gebruikte domeinnaam en laat dit config toe door toe te voegen `resource.resolver.map.location="/etc/map.publish"` aan de `JcrResourceResolver` config van het project.
 
-## Aanvullende bronnen
+## Aanvullende bronnen {#additional}
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 * [Brontoewijzing AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
