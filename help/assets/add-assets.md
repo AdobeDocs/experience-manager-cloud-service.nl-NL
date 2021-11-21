@@ -1,27 +1,27 @@
 ---
-title: Voeg uw digitale elementen toe aan  [!DNL Adobe Experience Manager].
-description: Voeg uw digitale middelen aan [!DNL Adobe Experience Manager] als a [!DNL Cloud Service] toe.
+title: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager].
+description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
 
-# Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+# Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] accepteert veel typen digitale elementen van vele bronnen. Het slaat de binaire getallen en gemaakte uitvoeringen op, kan activa verwerken gebruikend een verscheidenheid van werkschema en de diensten [!DNL Adobe Sensei], staat voor distributie door vele kanalen over vele oppervlakten toe.
+[!DNL Adobe Experience Manager Assets] accepteert veel typen digitale elementen van vele bronnen. De binaire bestanden en gemaakte uitvoeringen worden opgeslagen, er kunnen verschillende workflows voor worden gebruikt en [!DNL Adobe Sensei] de diensten, staat voor distributie door vele kanalen over vele oppervlakten toe.
 
-[!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets], zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
+[!DNL Adobe Experience Manager] Verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets].
 
-Naast de meest gebruikte browser upload bestaan er andere methoden om elementen aan de [!DNL Experience Manager]-opslagplaats toe te voegen, zoals bureaubladclients, zoals Adobe Asset Link of [!DNL Experience Manager] desktop app, upload- en innamescripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager]-extensies worden toegevoegd.
+Naast de meest gebruikte browsers die uploaden, kunt u ook andere methoden gebruiken om elementen toe te voegen aan de [!DNL Experience Manager] opslagplaats bestaat, inclusief desktopclients, zoals Adobe Asset Link of [!DNL Experience Manager] desktop app, upload en opname scripts die klanten zouden maken, en geautomatiseerde integratie van indelingen toegevoegd als [!DNL Experience Manager] extensies.
 
-Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor extra services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Raadpleeg [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
+Terwijl u elk binair bestand kunt uploaden en beheren in [!DNL Experience Manager]De meest gebruikte bestandsindelingen bieden ondersteuning voor aanvullende services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Zie [ondersteunde bestandsindelingen](file-format-support.md) voor meer informatie.
 
-Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [Middelen verwerken bij uploaden](#process-when-uploaded).
+Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [proceselementen bij uploaden](#process-when-uploaded).
 
 [!DNL Assets] biedt de volgende uploadmethoden. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
 
@@ -30,8 +30,8 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 | [Gebruikersinterface middelenconsole](#upload-assets) | Soms uploaden, indrukken en slepen, zoeken naar uploaden. Gebruik deze optie niet om een groot aantal elementen te uploaden. | Alle gebruikers |
 | [API uploaden](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers hun bedrijfsmiddelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen. | Creatief, Marketer |
-| [Bulkingestor](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nuttig wanneer creatieve en marketingmedewerkers werken aan middelen van binnen de ondersteunde [!DNL Creative Cloud] bureaubladtoepassingen. | Creatief, Marketer |
+| [Vlek van activa](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -60,25 +60,25 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 
 Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op uw bureaublad selecteren en in de gebruikersinterface (webbrowser) naar de doelmap slepen. U kunt het uploaden ook starten vanuit de gebruikersinterface.
 
-1. Navigeer in de gebruikersinterface [!DNL Assets] naar de locatie waar u digitale elementen wilt toevoegen.
+1. In de [!DNL Assets] navigeer in de gebruikersinterface naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
 
-   * Klik op **[!UICONTROL Create]** > **[!UICONTROL Files]** op de werkbalk. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
+   * Klik op de werkbalk op **[!UICONTROL Create]** > **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In browser die HTML5 steunt, sleep de activa direct op [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
 
    ![create_menu](assets/create_menu.png)
 
-   Als u meerdere bestanden wilt selecteren, selecteert u `Ctrl` of `Command` en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
+   Als u meerdere bestanden wilt selecteren, selecteert u de optie `Ctrl` of de `Command` en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
 
-1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u de uploadbewerking annuleert, verwijdert [!DNL Assets] het gedeeltelijk geüploade gedeelte van het element.
-Als u een uploadbewerking annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. [!DNL Assets] Bestanden die al zijn geüpload, worden echter niet verwijderd.
+1. Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u het uploaden annuleert, [!DNL Assets] Hiermee verwijdert u het gedeeltelijk geüploade gedeelte van het element.
+Als u een upload annuleert voordat de bestanden zijn geüpload, [!DNL Assets] uploadt het huidige bestand niet meer en vernieuwt de inhoud. Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
-1. Het dialoogvenster voor uploadvoortgang in [!DNL Assets] geeft het aantal bestanden weer dat is geüpload en de bestanden die niet zijn geüpload.
-Daarnaast wordt in de gebruikersinterface [!DNL Assets] het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
+1. Het dialoogvenster Uploadvoortgang in [!DNL Assets] geeft het aantal geüploade bestanden weer en de bestanden die niet zijn geüpload.
+Bovendien [!DNL Assets] in de gebruikersinterface wordt het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
 
 >[!NOTE]
 >
->Voor het uploaden van geneste maphiërarchieën raadpleegt u [bulkuploadmiddelen](#bulk-upload).
+>Als u geneste maphiërarchieën wilt uploaden, raadpleegt u [bulkupload-elementen](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -104,19 +104,19 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 U kunt een element uploaden met hetzelfde pad (dezelfde naam en dezelfde locatie) als een bestaand element. Er wordt echter een waarschuwingsvenster weergegeven met de volgende opties:
 
 * Bestaand element vervangen: Als u een bestaand element vervangt, worden de metagegevens voor het element en eventuele eerdere wijzigingen (bijvoorbeeld annotaties, uitsnijden, enzovoort) die u in het bestaande element hebt aangebracht, verwijderd.
-* Een andere versie maken: Er wordt een nieuwe versie van het bestaande middel gemaakt in de repository. U kunt de twee versies weergeven in de [!UICONTROL Timeline] en desgewenst terugkeren naar de vorige bestaande versie.
+* Een andere versie maken: Er wordt een nieuwe versie van het bestaande middel gemaakt in de repository. U kunt de twee versies weergeven in het dialoogvenster [!UICONTROL Timeline] en kan desgewenst terugkeren naar de vorige bestaande versie.
 * Beide behouden: Als u ervoor kiest beide elementen te behouden, wordt de naam van het nieuwe element gewijzigd.
 
-Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
+Het dubbele element behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
-[!DNL Experience Manager Assets] Hiermee voorkomt u dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.[!DNL Assets]
+[!DNL Experience Manager Assets] Hiermee voorkomt u dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, [!DNL Assets] geeft een waarschuwingsbericht weer en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-In het dialoogvenster [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke conventies voor bestandsnaamgeving voor uw organisatie kunt gebruiken. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
+Als u specifieke conventies voor de naamgeving van bestanden voor uw organisatie wilt aanpassen, kunt u de opdracht [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
 
-* ongeldige tekens voor elementbestandsnaam `* / : [ \\ ] | # % { } ? &`
-* ongeldige tekens voor elementmapnaam `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* ongeldige tekens voor de naam van het elementbestand `* / : [ \\ ] | # % { } ? &`
+* ongeldige tekens voor naam van elementmap `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Bulkupload-elementen {#bulk-upload}
 
@@ -126,11 +126,11 @@ De grote leverancier van bedrijfsmiddelen kan een zeer groot aantal bedrijfsmidd
 * Elementen ordenen: U kunt de inhoud in een logische volgorde ordenen, bijvoorbeeld op bestandsgrootte, bestandsindeling, hoofdlettergebruik of prioriteit. Over het algemeen is voor grote complexe bestanden meer verwerking nodig. U kunt ook overwegen grote bestanden afzonderlijk in te voegen met de filteroptie voor bestandsgrootte (hieronder beschreven).
 * Staggeringestie: Overweeg uw inname op te splitsen in meerdere projecten voor bulkinname. Zo kunt u inhoud sneller zien en uw opname indien nodig bijwerken. U kunt bijvoorbeeld verwerkingsintensieve elementen opnemen tijdens niet-piekuren of geleidelijk in meerdere stukken. U kunt echter kleinere en eenvoudigere elementen invoeren die niet veel verwerkingstijd in één keer vereisen.
 
-Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Zie ook [use cases and methods](#upload-methods-comparison)
+Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Zie ook de [gebruiksgevallen en -methoden](#upload-methods-comparison)
 
 * [API&#39;s voor middelenupload](developer-reference-material-apis.md#asset-upload): Gebruik een aangepast uploadscript of een aangepast gereedschap waarmee API&#39;s kunnen worden gebruikt om aanvullende verwerking van elementen toe te voegen (bijvoorbeeld metagegevens vertalen of bestanden hernoemen), indien nodig.
 * [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
-* [Gereedschap](#asset-bulk-ingestor) voor bulkinvoer: Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij de implementatie  [!DNL Experience Manager].
+* [Gereedschap Bulkopname](#asset-bulk-ingestor): Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij implementatie [!DNL Experience Manager].
 
 ### Hulpmiddel voor het bulkmiddel {#asset-bulk-ingestor}
 
@@ -140,22 +140,27 @@ Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschal
 
 Voer de volgende stappen uit om het gereedschap te configureren:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Selecteer de optie **[!UICONTROL Create]**.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Selecteer **[!UICONTROL Create]** optie.
 
 ![Configuratie van bulkimporteur](assets/bulk-import-config.png)
 
-1. Geef op [!UICONTROL bulk import configuration] pagina de vereiste waarden op.
+1. Aan **[!UICONTROL bulk import configuration]** pagina, geef de vereiste waarden op en selecteer **[!UICONTROL Save]**.
 
    * [!UICONTROL Title]: Een beschrijvende titel.
    * [!UICONTROL Import Source]: Selecteer de toepasselijke gegevensbron.
+   * [!UICONTROL Azure Storage Account]: Geef de naam van de [!DNL Azure] opslagaccount.
+   * [!UICONTROL Azure Blob Container]: Geef de [!DNL Azure] opslagcontainer.
+   * [!UICONTROL Azure Access Key]: Geef de toegangstoets op aan [!DNL Azure] account.
+   * [!UICONTROL Source Folder]: Dit filter wordt doorgaans ondersteund door Azure- en AWS-cloudopslagproviders.
    * [!UICONTROL Filter by Min Size]: Geef een minimale bestandsgrootte van elementen op in MB.
    * [!UICONTROL Filter by Max Size]: Geef de maximale bestandsgrootte van elementen op in MB.
-   * [!UICONTROL Exclude Mime Types]: Door komma&#39;s gescheiden lijst met MIME-typen die van de opname moeten worden uitgesloten. Bijvoorbeeld, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Exclude Mime Types]: Door komma&#39;s gescheiden lijst met MIME-typen die van de opname moeten worden uitgesloten. Bijvoorbeeld, `image/jpeg, image/.*, video/mp4`. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
    * [!UICONTROL Include Mime Types]: Door komma&#39;s gescheiden lijst met MIME-typen die in de opname moeten worden opgenomen. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
-   * [!UICONTROL Import Mode]: Selecteer Versie overslaan, vervangen of maken. De modus Overslaan is de standaardmodus en in deze modus slaat de regelaar over om een element te importeren als dit al bestaat. Zie de betekenis van [vervang en maak versieopties](#handling-upload-existing-file).
+   * [!UICONTROL Import Mode]: Selecteer Versie overslaan, vervangen of maken. De modus Overslaan is de standaardmodus en in deze modus slaat de regelaar over om een element te importeren als dit al bestaat. Zie de betekenis van [versieopties vervangen en maken](#handling-upload-existing-file).
    * [!UICONTROL Assets Target Folder]: Map importeren in DAM waar elementen moeten worden geïmporteerd. Bijvoorbeeld, `/content/dam/imported_assets`
+   * [!UICONTROL Metadata File]: Het metagegevensbestand dat moet worden geïmporteerd, opgegeven in de CSV-indeling. U geeft dit CSV-bestand op de locatie van het bronblob en raadpleegt het pad in de configuratie van het gereedschap voor het bulkinvoeren.
 
-1. U kunt schrapen, wijzigen, uitvoeren en meer doen met uw gecreeerde spelersconfiguraties. Als u een configuratie met een grote importingestor selecteert, is de optie Volgende beschikbaar op de werkbalk.
+1. U kunt schrapen, wijzigen, uitvoeren en meer doen met uw gecreeerde spelersconfiguraties. Als u een configuratie met een grote importingestor selecteert, zijn de volgende opties beschikbaar in de werkbalk.
 
    * [!UICONTROL Edit]: Bewerk de geselecteerde configuratie.
    * [!UICONTROL Delete]: Verwijder de geselecteerde configuratie.
@@ -173,55 +178,58 @@ Voer de volgende stappen uit om het gereedschap te configureren:
 Voer de volgende stappen uit om een eenmalige of herhaalde bulkimport te plannen:
 
 1. Maak een configuratie voor bulkimport.
-1. Selecteer de configuratie en selecteer **[!UICONTROL Schedule]** van de toolbar.
+1. Selecteer de configuratie en selecteer **[!UICONTROL Schedule]** op de werkbalk.
 1. Stel een eenmalige opname in of voer een uur-, dag- of wekelijks schema in. Klik op **[!UICONTROL Submit]**.
 
    ![Taak bulkingestor plannen](assets/bulk-ingest-schedule1.png)
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
-Naast de gebruikersinterface van de webbrowser biedt [!DNL Experience Manager] ondersteuning voor andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
+Naast de gebruikersinterface van de webbrowser [!DNL Experience Manager] ondersteunt andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot middelen van  [!DNL Experience Manager] Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface Adobe Asset Link vanuit deze bureaubladtoepassingen uploaden naar [!DNL Experience Manager].
-* [[!DNL Experience Manager] desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) past het werken met middelen op desktop toe, onafhankelijk van het bestandstype of de oorspronkelijke toepassing die ze verwerkt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document uploaden naar [!DNL Experience Manager] rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link vanuit deze bureaubladtoepassingen.
+* [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met middelen op Desktop, onafhankelijk op hun dossiertype of inheemse toepassing die hen behandelt. Het is vooral handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Elementen verwerken bij het uploaden {#process-when-uploaded}
 
-Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen toepassen op de uploadmappen. De profielen zijn beschikbaar op de **[!UICONTROL Properties]** pagina van een omslag in [!DNL Assets]. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
+Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen toepassen op de uploadmappen. De profielen zijn beschikbaar in het dialoogvenster **[!UICONTROL Properties]** pagina van een map in [!DNL Assets]. Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
 
 ![Eigenschappen van een elementmap met opties voor het toevoegen van een verwerkingsprofiel](assets/assets-folder-properties.png)
 
 De volgende tabbladen zijn beschikbaar:
 
-* [Met ](metadata-profiles.md) metagegevensprofielen kunt u standaardeigenschappen voor metagegevens toepassen op elementen die naar die map zijn geüpload.
-* [Met ](asset-microservices-configure-and-use.md) verwerkingsprofielen kunt u meer uitvoeringen genereren dan standaard mogelijk is.
+* [Metagegevensprofielen](metadata-profiles.md) Hiermee kunt u standaardeigenschappen van metagegevens toepassen op elementen die naar die map zijn geüpload.
+* [Profielen verwerken](asset-microservices-configure-and-use.md) Hiermee kunt u meer uitvoeringen genereren dan standaard mogelijk is.
 
-Daarnaast zijn de volgende tabbladen beschikbaar als [!DNL Dynamic Media] is ingeschakeld voor uw implementatie:
+Bovendien, als [!DNL Dynamic Media] is op uw plaatsing toegelaten, zijn de volgende lusjes beschikbaar:
 
-* [[!DNL Dynamic Media] Met ](dynamic-media/image-profiles.md) afbeeldingsprofielen kunt u specifieke uitsnijd- **[!UICONTROL Smart Cropping]** en verscherpingsconfiguratie toepassen op de geüploade elementen.
-* [[!DNL Dynamic Media] Met videoprofielen kunt ](dynamic-media/video-profiles.md) u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
+* [[!DNL Dynamic Media] Afbeeldingsprofielen](dynamic-media/image-profiles.md) Hiermee kunt u specifieke uitsnijdingen toepassen (**[!UICONTROL Smart Cropping]** en pixeluitsnijding) en verscherpingsconfiguratie voor de geüploade elementen.
+* [[!DNL Dynamic Media] Videoprofielen](dynamic-media/video-profiles.md) Hiermee kunt u specifieke videocoderingsprofielen (resolutie, indeling, parameters) toepassen.
 
 >[!NOTE]
 >
 >[!DNL Dynamic Media] uitsnijden en andere bewerkingen op elementen zijn niet-destructief, dat wil zeggen dat de bewerkingen het geüploade origineel niet wijzigen. In plaats daarvan biedt het parameters voor uitsnijden of transformeren bij het leveren van de elementen.
 
-Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in **[!UICONTROL Processing Profile]** kolom.
+Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in het dialoogvenster **[!UICONTROL Processing Profile]** kolom.
 
 ## Elementen uploaden of toevoegen met API&#39;s {#upload-using-apis}
 
-Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [activaupload](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
+Technische details van de upload APIs en het protocol, en verbindingen aan open-bron SDK en steekproefcliënten worden verstrekt in [elementen uploaden](developer-reference-material-apis.md#asset-upload) in de naslaggids voor ontwikkelaars.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
-* Directe binaire upload is een nieuwe methode om activa te uploaden. Deze wordt standaard ondersteund door de productmogelijkheden en clients, zoals [!DNL Experience Manager]-gebruikersinterface, [!DNL Adobe Asset Link] en [!DNL Experience Manager]-bureaubladtoepassing. Om het even welke douanecode die door klanten technische teams wordt aangepast of uitgebreid moet nieuwe uploaden APIs en protocollen gebruiken.
+* Directe binaire upload is een nieuwe methode om activa te uploaden. Dit wordt standaard ondersteund door de mogelijkheden en clients van het product, zoals [!DNL Experience Manager] gebruikersinterface, [!DNL Adobe Asset Link], en [!DNL Experience Manager] bureaubladtoepassing. Om het even welke douanecode die door klanten technische teams wordt aangepast of uitgebreid moet nieuwe uploaden APIs en protocollen gebruiken.
 
-* Adobe raadt aan niet meer dan 1000 elementen toe te voegen in elke map in [!DNL Experience Manager Assets]. U kunt wel meer elementen aan een map toevoegen, maar er kunnen prestatieproblemen optreden, zoals een tragere navigatie naar dergelijke mappen.
+* Adobe raadt aan niet meer dan 1000 elementen toe te voegen aan elke map in [!DNL Experience Manager Assets]. U kunt wel meer elementen aan een map toevoegen, maar er kunnen prestatieproblemen optreden, zoals een tragere navigatie naar dergelijke mappen.
 
-* Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [Assets Insights](/help/assets/assets-insights.md) is ingeschakeld om afbeeldingen bij te houden of met [!DNL Adobe Analytics] te klikken, maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
+* Wanneer u **[!UICONTROL Replace]** in de [!UICONTROL Name Conflict] wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Indien [Assets Insights](/help/assets/assets-insights.md) is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics]maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op ongeldig [!DNL Analytics].
 
-* Sommige uploadmethoden verhinderen niet dat u elementen uploadt met [verboden tekens](#filename-handling) in de bestandsnamen. De tekens worden vervangen door het symbool `-`.
+* Sommige uploadmethoden verhinderen niet dat u elementen uploadt met [verboden tekens](#filename-handling) in de bestandsnamen. De tekens worden vervangen door `-` symbool.
 
-* Het uploaden van elementen via de browser ondersteunt alleen platte bestandslijsten en geen geneste maphiërarchieën. Als u alle elementen in een geneste map wilt uploaden, kunt u [desktop app](#upload-assets-desktop-clients) gebruiken.
+* Het uploaden van elementen via de browser ondersteunt alleen platte bestandslijsten en geen geneste maphiërarchieën. Als u alle elementen in een geneste map wilt uploaden, kunt u het beste [bureaubladtoepassing](#upload-assets-desktop-clients).
+
+* Met de methode Bulk importeren wordt de volledige mapstructuur geïmporteerd zoals deze op de gegevensbron bestaat. Alleen de niet-lege mappen worden echter gemaakt in [!DNL Experience Manager].
+
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
