@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '639'
+ht-degree: 10%
 
 ---
 
@@ -24,9 +24,8 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 >
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
-1. Navigeer naar de gebruikersinterface Middelen en tik/klik **[!UICONTROL Create]** op de werkbalk.
-1. Selecteer **[!UICONTROL Metadata]** in het menu.
-1. Tik of klik op de pagina **[!UICONTROL Metadata Import]** op **[!UICONTROL Select File]**. Selecteer het CSV-bestand met de metadata.
+1. Navigeren naar [!DNL Assets] gebruikersinterface, selecteren **[!UICONTROL Create]** op de werkbalk en selecteert u **[!UICONTROL Metadata]** in het menu.
+1. In de **[!UICONTROL Metadata Import]** pagina, klikt u op **[!UICONTROL Select File]**. Selecteer het CSV-bestand met de metadata.
 1. Geef de volgende parameters op:
 
    | Parameter | Beschrijving |
@@ -37,13 +36,19 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | Workflows starten | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
-1. Klik op **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
+1. Selecteren **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
 
-Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uursnotatie, `fff` nanoseconden is, en `-00:00` is de verschuiving van de tijdzone. Bijvoorbeeld: `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 AM PST-tijd.
+1. Als u datum en tijdstempel wilt toevoegen om de metagegevens te importeren, gebruikt u `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uursnotatie, `fff` nanoseconden is, en `-00:00` is de verschuiving van de tijdzone. Bijvoorbeeld: `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 PST.
+
+   * De datumnotatie is afhankelijk van de kolomkop en de notatie waarin deze staat. Als de datum bijvoorbeeld een klacht met een indeling is `yyyy-MM-dd'T'HH:mm:ssXXX` dan moet de respectieve kolomkopbal `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * De standaarddatumnotatie is `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->Als de datumnotatie niet overeenkomt `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondenwaarde toe te voegen die door wordt aangegeven `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Metagegevens exporteren {#export-metadata}
 

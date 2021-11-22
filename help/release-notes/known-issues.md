@@ -1,20 +1,19 @@
 ---
 title: Bekende problemen
-description: Opmerkingen bij de release die specifiek betrekking hebben op bekende problemen met Adobe Experience Manager als Cloud Service
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+description: Bekende problemen met Adobe Experience Manager as a Cloud Service
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '111'
+ht-degree: 0%
 
 ---
 
-
 # Bekende problemen {#known-issues}
 
-In dit artikel worden de bekende problemen van Adobe Experience Manager weergegeven als een Cloud Service-aanbieding. De lijst wordt herzien en bijgewerkt met elke ononderbroken versie van Experience Manager.
+In dit artikel worden de bekende problemen van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] aanbieden. De lijst wordt herzien en bijgewerkt bij elke ononderbroken release van [!DNL Experience Manager].
 
-[Neem contact op met de ](https://helpx.adobe.com/support/experience-manager.html) ondersteuning voor meer informatie over de bekende problemen.
+[Contact opnemen met ondersteuning](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support) voor meer informatie over de bekende problemen.
 
 <!-- 
 ## Platform {#platform}
@@ -22,28 +21,36 @@ In dit artikel worden de bekende problemen van Adobe Experience Manager weergege
 ## Sites {#sites}
 -->
 
-## Assets {#assets}
+## [!DNL Assets] {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Enkele bekende problemen zijn:
+Sommige bekende problemen in [!DNL Assets] zijn:
+
+* **Downloaden**: Als u een lege map downloadt, [!DNL Experience Manager] geeft een succesbericht weer over het maken van een ZIP-archief, maar het archief wordt niet gemaakt.
 
 * **Metagegevensschema**: Widget voor assetclassificatie die wordt gebruikt om een JSP-compilatiefout te veroorzaken. Deze is verwijderd uit het metagegevensschema. <!-- CQ-4282865, CQ-4284633 -->
 
-### Mogelijkheden {#upcoming-assets-capabilities} voor komende elementen
+Zie ook [opmerkelijke wijzigingen in [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
-Enkele mogelijkheden van Adobe Experience Manager Assets die afhankelijk zijn van funderingsmogelijkheden, die nog niet beschikbaar zijn in de Experience Manager als implementatiearchitectuur voor Cloud Servicen, worden naar verwachting later ingeschakeld:
+<!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
-* Capabilities not enabled in this stage due to dependency on Commerce Integration Framework APIs:
-   * Workflowmodellen voor foto&#39;s.
-   * Tabblad met productinformatie in de gebruikersinterface voor eigenschappen van elementen is niet ingevuld.
-* Mogelijkheden die in dit stadium niet zijn ingeschakeld vanwege afhankelijkheid van InDesign Server-integratie:
-   * Asset Templates en Asset Catalogs.
-   * Voorvertoning van Adobe InDesign-bestanden op meerdere pagina&#39;s.
+### Upcoming Assets capabilities {#upcoming-assets-capabilities}
+
+A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
+
+* Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
+  * Photoshoot workflow models.
+  * Product information tab in the asset properties user interface is not populated.
+
+* Capabilities not enabled at this stage due to dependency on InDesign Server integration:
+  * Asset Templates and Asset Catalogs.
+  * Multi-page preview of Adobe InDesign files.
+-->
 
 >[!MORELIKETHIS]
 >
->* [Belangrijke wijzigingen in AEM](aem-cloud-changes.md)
+>* [Belangrijke wijzigingen in [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Verouderde en verwijderde functies](deprecated-removed-features.md)
 >* [Opmerkingen bij de release](home.md)
 
