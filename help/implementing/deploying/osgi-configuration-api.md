@@ -1,27 +1,27 @@
 ---
 title: OSGi-configuratie-API
-description: Beschrijving van de AEM als OSGi-configuratieoppervlak van de Cloud Service
+description: Beschrijving van het AEM as a Cloud Service OSGi-configuratieoppervlak
 feature: Deploying
-source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
+exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
+source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
 # OSGi-configuratie-API
 
-De twee lijsten hieronder wijzen op de AEM als Cloud Service OSGi configuratieoppervlakte, die welke klanten kunnen vormen.
+De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieoppervlakte, beschrijvend welke klanten kunnen vormen.
 
 1. Een lijst van configuraties OSGi die niet door klantencode moeten worden gevormd
 1. Een lijst van configuraties OSGi waarvan de eigenschappen kunnen worden gevormd, maar moet zich aan de vermelde bevestigingsregels houden. Deze regels omvatten of verklaring van het bezit, zijn type, en in sommige gevallen, zijn toegestane waaier van waarden wordt vereist.
 
 Als een configuratie OSGI niet vermeld is, kan het door klantencode worden gevormd.
 
-Deze regels worden gevalideerd tijdens het ontwikkelingsproces van Cloud Manager. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, worden er fouten gegenereerd in het buildproces van Cloud Manager. Gemaakte projecten zouden [AEM als Cloud Service SDK bouwt Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) moeten omvatten om OSGI configuratiefouten tijdens lokale ontwikkeling van SDK te markeren.
+Deze regels worden gevalideerd tijdens het ontwikkelingsproces van Cloud Manager. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, worden er fouten gegenereerd in het buildproces van Cloud Manager. Maven projecten moeten de [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
 
-Aanvullende informatie over de configuratie van OSGI vindt u op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
+Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
 
 ## OSGi-configuraties die niet kunnen worden gewijzigd {#osgi-configurations-that-cannot-be-modified}
 
@@ -46,7 +46,7 @@ Aanvullende informatie over de configuratie van OSGI vindt u op [deze locatie](/
    * `org.apache.felix.eventadmin.IgnoreTimeout`
       * Vereist
       * Type: array van tekenreeksen
-      * Vereist bereik: Moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` bevatten
+      * Vereist bereik: Moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
    * `org.apache.felix.eventadmin.IgnoreTopic`
       * Type: array van tekenreeksen
 * **`org.apache.felix.http`** (Aankondigingsdatum: 30-04-2021, Datum van tenuitvoerlegging: (31-07-2021)
@@ -141,4 +141,14 @@ Aanvullende informatie over de configuratie van OSGI vindt u op [deze locatie](/
    * `debug.email`
       * Type: boolean
    * `oauth.flow`
+      * Type: boolean
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Aankondigingsdatum: 16-11-21, datum van tenuitvoerlegging: 16-02-21)
+   * `org.apache.sling.commons.log.level`
+      * Type: opsomming
+      * Vereist bereik: INFO, DEBUG of TRACE
+   * `org.apache.sling.commons.log.names`
+      * Type: string
+   * `org.apache.sling.commons.log.file`
+      * Type: string
+   * `org.apache.sling.commons.log.additiv`
       * Type: boolean
