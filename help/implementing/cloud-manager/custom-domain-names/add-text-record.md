@@ -2,10 +2,9 @@
 title: Een TXT-record toevoegen
 description: Een aangepaste domeinnaam toevoegen
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-translation-type: tm+mt
-source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
+source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -21,19 +20,19 @@ U kunt de onderstaande stappen volgen voordat u een TXT-record maakt:
 
 Wanneer u domeinverificatie start, geeft Cloud Manager u de naam en de TXT-waarde die u voor de verificatie wilt gebruiken. Voeg een TXT- verslag aan DNS van uw domein server toe gebruikend de gespecificeerde Naam en de Waarde.
 
-1. Login aan uw Gastheer van het Domein en bezoek de DNS verslagensectie.
-1. Voeg `_aemverification.[yourdomainname]` als Naam toe, en voeg de Waarde TXT precies toe aangezien het verschijnt.
+1. Login aan uw Gastheer van het Domein en bezoek de DNS archiefsectie.
+1. Toevoegen `_aemverification.[yourdomainname]` als de naam en voeg de TXT-waarde precies zo toe als deze wordt weergegeven.
 Raadpleeg de voorbeelden in de onderstaande tabel.
 
 | Domein | Naam | TXT-waarde |
 |--- |--- |---|
-| `example.com` | `_aemverification` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
-| `test.example.com` | `_aemverification` | Wordt weergegeven in de gebruikersinterface van Cloud Manager en is specifiek voor het domein en de omgeving van Cloud Manager |
+| `example.com` | `_aemverification.example.com` | Kopieer de volledige waarde die wordt weergegeven in de gebruikersinterface van Cloud Manager. Dit is specifiek voor het domein en het milieu. `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
+| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | Kopieer de volledige waarde die wordt weergegeven in de gebruikersinterface van Cloud Manager. Dit is specifiek voor het domein en het milieu. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
 Wanneer u klaar bent, kunt u het resultaat verifiëren door te lopen: `dig _aemverification.[yourdomainname] -t txt`.
 Het verwachte resultaat moet de TXT-waarde weergeven die is opgegeven in de gebruikersinterface van Cloud Manager.
 
-Bijvoorbeeld, als uw domein `example.com` is, dan looppas: `dig TXT _aemverification.example.com -t txt`.
+Als uw domein bijvoorbeeld `example.com`en vervolgens uitvoeren: `dig TXT _aemverification.example.com -t txt`.
 
 >[!NOTE]
->Er zijn ook verschillende [DNS opzoekgereedschappen](https://www.ultratools.com/tools/dnsLookup), Google DoH kan worden gebruikt om TXT-recorditems op te zoeken en vast te stellen of de TXT-record ontbreekt of onjuist is.
+>Er zijn ook verschillende [DNS-opzoekgereedschappen](https://www.ultratools.com/tools/dnsLookup), kan Google DoH worden gebruikt om TXT-recorditems op te zoeken en vast te stellen of de TXT-record ontbreekt of onjuist is.
