@@ -1,23 +1,22 @@
 ---
-title: Back-up en herstel in AEM als Cloud Service
-description: Back-up en herstel in AEM als Cloud Service
+title: Back-up en herstel in AEM as a Cloud Service
+description: Back-up en herstel in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# Back-up en herstel in AEM als Cloud Service
-
+# Back-up en herstel in AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Back-up en herstel"
->abstract="AEM als Cloud Service kan de volledige toepassing (code en inhoud) van een klant terugzetten op specifieke, vooraf bepaalde tijden in de laatste zeven dagen, die wat op productie was vervangen. Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld."
+>abstract="AEM as a Cloud Service kan de volledige toepassing van een klant (code en inhoud) aan specifieke, vooraf bepaalde tijden in de laatste zeven dagen herstellen, die wat op productie was vervangen. Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld."
 
-Mocht inhoud of gegevenscorruptie voorkomen, AEM als Cloud Service de volledige toepassing van een klant (code en inhoud) aan specifieke, vooraf bepaalde tijden in de laatste zeven dagen kan herstellen, die wat op productie was vervangen.
+Mocht inhoud of gegevenscorruptie voorkomen, AEM as a Cloud Service kan de volledige toepassing (code en inhoud) van een klant aan specifieke, vooraf bepaalde tijden in de laatste zeven dagen herstellen, die wat op productie was vervangen.
 Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of gebroken of knecht is, is het verkieslijk om het te bevestigen en naar een nieuwe versie vooruit te rollen eerder dan het van steun te herstellen. Back-up wordt uitgevoerd op een manier die geen invloed heeft op de prestaties tijdens de uitvoering van een toepassing.
 
 >[!CAUTION]
@@ -28,10 +27,10 @@ Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of ge
 
 Klanten dienen een ondersteuningsticket in te dienen waarin het probleem wordt beschreven dat zich voordoet. Dit zal leiden tot een onderzoek door Adobe support, die zal bepalen of een herstel nodig is.
 
-AEM als Cloud Service ondersteunt:
+AEM as a Cloud Service ondersteuning:
 
 * 24-uurs herstel, wat betekent dat het systeem in de laatste 24 uur op elk punt kan worden hersteld.
-* Herstel van een specifieke, door Adobe gedefinieerde tijdstempel die eenmaal per dag is genomen gedurende de laatste 7 dagen.  Alle replicatieberichten (verwijderen, bijwerken, maken) blijven behouden.
+* Herstel van een specifieke, door Adobe gedefinieerde tijdstempel die tweemaal per dag is genomen gedurende de laatste 7 dagen.  Alle replicatieberichten (verwijderen, bijwerken, maken) blijven behouden.
 
 In alle gevallen, zal de versie van de douanecode van de laatste succesvolle plaatsing vóór het terugzetpunt worden genomen.
 
@@ -39,4 +38,6 @@ De doelstelling van de hersteltijd (RTO) zal variëren afhankelijk van de groott
 
 Na een terugzetbewerking wordt de AEM versie bijgewerkt naar de meest recente.
 
-**De gegevens uit verwijderde omgevingen gaan permanent verloren en kunnen niet worden hersteld.**
+>[!CAUTION]
+>
+>Gegevens uit verwijderde omgevingen gaan permanent verloren en kunnen niet worden hersteld.
