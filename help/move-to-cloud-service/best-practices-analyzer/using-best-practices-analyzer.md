@@ -2,9 +2,9 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="De Analysator van Beste praktijken gebruiken"
 >abstract="Bekijk de documentatie voor het gebruik van de Analysator voor best practices (voorheen Cloud Readiness Analyzer) en het gegenereerde rapport. Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Belangrijke overwegingen voor het Gebruiken van Analyzer van Beste praktijken {#imp-considerations}
 
@@ -70,7 +70,7 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. Zodra het BPA- rapport wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelvorm die door het type van bevinding en het belangrijkheidsniveau wordt georganiseerd. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
+1. Zodra het BPA- rapport wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelformaat dat door het type van bevinding en het belangrijkheidsniveau wordt georganiseerd. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
    ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -113,14 +113,16 @@ Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSComm
 De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
 
 
-### Adobe Experience Manager 6.2 en 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-Het hulpmiddel van de Analysator van Beste praktijken is beperkt in Adobe Experience Manager 6.2 aan een verbinding die het CSV- rapport produceert en downloadt.
-
-De tool werkt niet voor Adobe Experience Manager 6.1 en kan alleen via de HTTP-interface worden gebruikt.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-In alle versies kan de opgenomen Pattern Detector-functie onafhankelijk worden uitgevoerd.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Het rapport met de analyse van best practices interpreteren {#cra-report}
 
