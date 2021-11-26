@@ -2,10 +2,10 @@
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
+source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 79%
+source-wordcount: '3787'
+ht-degree: 76%
 
 ---
 
@@ -80,7 +80,7 @@ heeft de voorkeur boven
 
    * Soms worden sites aangeboden via `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna naar `https` wordt omgeschakeld. Als de gebruiker bij het koppelen van deze pagina terug kan gaan naar `http`-pagina&#39;s en deze kan openen via `https`, worden deze door de zoekmachine bijgehouden als twee afzonderlijke pagina&#39;s.
 
-   * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Daarom wordt het leven van iedereen vaak eenvoudiger om de hele site te bedienen via `https`.
+   * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Daarom maakt het het voor iedereen vaak gemakkelijker om de hele site te bedienen `https`.
 
 ### Serverconfiguratie {#server-configuration}
 
@@ -357,11 +357,11 @@ Het probleem met het plaatsen van het bestand `robots.txt` in de hoofdmap van de
 
 Verkenners gebruiken XML-sitemaps om de structuur van websites beter te begrijpen. Hoewel er geen enkele garantie is dat het aanbieden van een sitemap automatisch leidt tot betere SEO-rankings, is het een algemeen erkende best practice. U kunt handmatig een XML-bestand op de webserver onderhouden om als sitemap te gebruiken, maar het wordt aanbevolen de sitemap programmatisch te genereren, zodat de wijzigingen automatisch worden doorgevoerd in de sitemap wanneer auteurs nieuwe content maken.
 
-AEM gebruikt de [Apache Sling Sitemap module](https://github.com/apache/sling-org-apache-sling-sitemap) om XML-sitemaps te genereren. Deze module biedt ontwikkelaars en editors een groot aantal opties om een XML-sitemap voor sites up-to-date te houden.
+AEM gebruikt de [Apache Sling Sitemap-module](https://github.com/apache/sling-org-apache-sling-sitemap) om XML-sitemaps te genereren. Hiermee beschikt u over een groot aantal opties waarmee ontwikkelaars en editors sites in XML-sitemap up-to-date kunnen houden.
 
-De module Apache Sling Sitemap maakt onderscheid tussen een sitemap op hoofdniveau en een geneste sitemap. Beide methoden worden gegenereerd voor elke bron waarvoor de eigenschap `sling:sitemapRoot` is ingesteld op `true`. Over het algemeen worden sitemaps weergegeven met behulp van kiezers op het pad van de sitemap op hoofdniveau van de structuur. Dit is de bron die geen andere voorouder van de sitemap-hoofdmap heeft. Deze sitemap-hoofdmap op hoofdniveau stelt ook de sitemap-index beschikbaar, wat normaal gesproken is wat een site-eigenaar zou configureren in het configuratieportaal van de zoekmachine of zou toevoegen aan `robots.txt` van de site.
+In de module Apache Sling Sitemap wordt onderscheid gemaakt tussen een sitemap op hoofdniveau en een geneste sitemap. Beide methoden worden gegenereerd voor elke bron met de `sling:sitemapRoot` eigenschap ingesteld op `true`. Over het algemeen worden sitemaps weergegeven met behulp van kiezers op het pad van de sitemap op hoofdniveau van de structuur. Dit is de bron die geen andere voorouder van de sitemap-hoofdmap heeft. Deze sitemaproot op hoofdniveau stelt ook de sitemap-index beschikbaar, wat normaal is wat een site-eigenaar zou configureren in het configuratieportaal van de zoekmachine of zou toevoegen aan de site `robots.txt`.
 
-Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau van `my-page` en een geneste sitemaproot op `my-page/news` definieert om een speciale sitemap voor pagina&#39;s in de nieuwsubstructuur te genereren. De resulterende relevante URL&#39;s zouden
+Neem bijvoorbeeld een site die een sitemap-hoofdmap op hoofdniveau definieert op `my-page` en een geneste sitemap-hoofdmap op `my-page/news`, om een speciale sitemap te genereren voor pagina&#39;s in de nieuwsubstructuur. De resulterende relevante URL&#39;s zouden
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -369,22 +369,99 @@ Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau van `my-page` en e
 
 >[!NOTE]
 >
-> De kiezers `sitemap` en `sitemap-index` kunnen problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet die deze kiezers bedient met een `service.ranking` hoger dan 0.
+> De kiezers `sitemap` en `sitemap-index` kan problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet die deze kiezers bedient met een `service.ranking` hoger dan 0.
 
-In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt uitgevoerd door implementaties van de `SitemapGenerator` interface en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd sterk afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, verzendt het product geen `SitemapScheduler`-configuratie. Dit maakt de functie effectief opt-in.
+In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt geïmplementeerd door implementaties van de `SitemapGenerator` en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd sterk afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, wordt het product echter niet verzonden `SitemapScheduler` configuratie. Dit maakt de functie effectief opt-in.
 
-Om de achtergrondbaan toe te laten die de plaatsemaps van XML produceert moet `SitemapScheduler` worden gevormd. Om dit te doen, creeer een configuratie OSGI voor PID `org.apache.sling.sitemap.impl.SitemapScheduler`. De plannerexpressie `0 0 0 * * ?` kan worden gebruikt als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
+Om de achtergrondtaak in te schakelen die de XML-sitemaps genereert, kunt u een `SitemapScheduler` moet worden geconfigureerd. Om dit te doen, creeer een configuratie OSGI voor PID `org.apache.sling.sitemap.impl.SitemapScheduler`. De planneruitdrukking `0 0 0 * * ?` U kunt dit gebruiken als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 
-De sitemap-generatietaak kan zowel op de auteur- als op de publicatielaag worden uitgevoerd. In de meeste gevallen, wordt het geadviseerd om de generatie op te stellen publiceert lijstinstanties, aangezien slechts er juiste canonieke URLs kan worden geproduceerd (wegens het Verdelen van de regels van de Afbeelding van Middel die algemeen aanwezig zijn slechts op publiceer lijstinstanties). Het is echter mogelijk om een aangepaste implementatie van het externaliseringsmechanisme in te sluiten die wordt gebruikt om de canonieke URL&#39;s te genereren door de interface `SitemapLinkExternalizer` te implementeren. Als een douaneimplementatie canonieke URLs van een Sitemap op de instanties van de auteursrij kan produceren, kan `SitemapScheduler` voor de wijze van de auteurslooppas worden gevormd en de de generatiewerkbelasting van de sitemap van XML over de instanties van de cluster van de auteursdienst worden verdeeld. In dit scenario, moet de bijzondere voorzichtigheid worden besteed aan de behandeling van inhoud die nog niet is gepubliceerd, is gewijzigd of slechts zichtbaar aan beperkte groep gebruikers is.
+De sitemap-generatietaak kan zowel op de auteur- als op de publicatielaag worden uitgevoerd. In de meeste gevallen, wordt het geadviseerd om de generatie op te stellen publiceren lijstinstanties, aangezien juiste canonieke URLs slechts daar kan worden geproduceerd (wegens het Verschuiven van de regels van de Afbeelding van Middel die algemeen slechts op publiceer lijstinstanties aanwezig zijn). Het is echter mogelijk om een aangepaste implementatie van het externaliseringsmechanisme in te sluiten dat wordt gebruikt om de canonieke URL&#39;s te genereren door de [SitemapLinkExternalzer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interface. Als een aangepaste implementatie de canonieke URL&#39;s van een sitemap kan genereren voor de instanties van de auteurslaag, wordt de `SitemapScheduler` kan worden geconfigureerd voor de uitvoeringsmodus van de auteur en de werkbelasting voor het genereren van XML-sitemap kan worden verdeeld over de instanties van de cluster van de auteurservice. In dit scenario moet bijzondere voorzichtigheid worden besteed aan het behandelen van inhoud die nog niet is gepubliceerd, gewijzigd of slechts zichtbaar aan een beperkte groep gebruikers is.
 
-Naast de Apache Sling Sitemap-extensiepunten [SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html) en [SitemapLinkExternalAlizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html) die hierboven zijn beschreven, en ook de [SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html), definieert de AEM specifieke implementatie ook een aantal extensiepunten:
+AEM Sites bevat een standaardimplementatie van een `SitemapGenerator` Hiermee wordt een boomstructuur met pagina&#39;s doorlopen om een sitemap te genereren. Het is vooraf geconfigureerd om alleen de canonieke URL&#39;s van een site en eventuele taalalternatieven uit te voeren, indien beschikbaar. Het kan ook worden gevormd om de laatste gewijzigde datum van een pagina indien nodig te omvatten. Daartoe moet u de _Laatst gewijzigd toevoegen_ de _Adobe AEM SEO - Page Tree Sitemap Generator_ Configuratie en selecteer een _Laatst gewijzigd bron_. Wanneer de Sitemaps op de publicatielijst worden gegenereerd, wordt het aanbevolen de opdracht `cq:lastModified` datum.
 
-* Een [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kan worden geïmplementeerd om pagina&#39;s te verwijderen uit XML-sitemaps die zijn gegenereerd door de specifieke AEM Sites-generator voor paginabronnen
-* Een [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) of [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan worden uitgevoerd om producten of categorieën uit de sitemaps van XML uit te filteren die door [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) specifieke sitemapgenerators worden geproduceerd.
+![Adobe AEM SEO - Configuratie van Sitemap van paginaboom Generator](assets/sling-sitemap-pagetreegenerator.png)
 
-Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook in verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Gelieve te verwijzen naar [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
+Om de inhoud van een sitemap te beperken, kunnen de volgende de dienstinterfaces worden uitgevoerd wanneer nodig:
+
+* de [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kan worden geïmplementeerd om pagina&#39;s te verbergen voor XML-sitemaps die zijn gegenereerd door de specifieke sitemap-generator van AEM Sites
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) of [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan worden geïmplementeerd om producten of categorieën te filteren uit XML-sitemaps die zijn gegenereerd door de [Kader voor integratie van de handel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) specifieke sitemapgeneratoren
+
+Als de standaardimplementaties niet werken met een bepaald gebruiksgeval of als de extensiepunten niet flexibel genoeg zijn, voert u een aangepaste `SitemapGenerator` kan worden geïmplementeerd om de volledige controle over de inhoud van een gegenereerde sitemap te verkrijgen. In het volgende voorbeeld wordt getoond hoe dit kan worden gedaan, waarbij gebruik wordt gemaakt van de logica van de standaardimplementatie voor AEM Sites. Het gebruikt de [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) als beginpunt voor het doorlopen van een boomstructuur met pagina&#39;s:
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook in verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Raadpleeg de [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
 
 ### 301-omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 
