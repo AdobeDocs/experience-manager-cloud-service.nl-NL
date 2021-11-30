@@ -2,9 +2,9 @@
 title: as a Cloud Service veelgestelde vragen weergeven
 description: Deze pagina beschrijft de as a Cloud Service veelgestelde vragen voor schermen.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ Het wordt aanbevolen om AEM Screens-caching-mogelijkheden te benutten, maar als 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## Wat is het gebruik van de Grens van de Code van de Registratie?
+
+U kunt het gebruik van de registratiecode het beste beperken. Als een registratiecode gecompromitteerd is, maar een grens van 100 registraties heeft, dan kan de aanvaller slechts tot dat aantal, maar niet meer registreren. U kunt de gebruikslimiet altijd bijwerken nadat de registratiecode is gemaakt en enkele spelers van de klant al zijn geregistreerd. Als de klant ongebruikelijke registratieactiviteit voor een specifieke registratiecode opmerkt, kunnen zij de grens in real time verminderen terwijl zij onderzoeken en kunnen het aantal terugverhogen als het een vals alarm was, zonder de reeds geregistreerde spelers te beïnvloeden.
