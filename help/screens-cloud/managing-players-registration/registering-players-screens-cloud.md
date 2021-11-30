@@ -2,7 +2,7 @@
 title: Afspeellagen registreren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u spelers kunt registreren in as a Cloud Service schermen.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -63,9 +63,9 @@ Volg de onderstaande stappen om uw speler te registreren:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**Aanbevolen de Aanbevolen Praktijken van de veiligheid terwijl het gebruiken van de Code van de Registratie
->U kunt het gebruik van de registratiecode het beste beperken. Als een registratiecode gecompromitteerd is, maar een grens van 100 registraties heeft, dan kan de aanvaller slechts tot dat aantal, maar niet meer registreren. U kunt de gebruikslimiet altijd bijwerken nadat de registratiecode is gemaakt en enkele spelers van de klant al zijn geregistreerd. Als de klant ongebruikelijke registratieactiviteit voor een specifieke registratiecode opmerkt, kunnen zij de grens in real time verminderen terwijl zij onderzoeken en kunnen het aantal terugverhogen als het een vals alarm was, zonder de reeds geregistreerde spelers te beïnvloeden.
+   >[!IMPORTANT]
+   >**Aanbevolen werkwijzen voor beveiliging tijdens het gebruik van registratiecode**
+   >U kunt het gebruik van de registratiecode het beste beperken. Als een registratiecode gecompromitteerd is, maar een grens van 100 registraties heeft, dan kan de aanvaller slechts tot dat aantal, maar niet meer registreren. U kunt de gebruikslimiet altijd bijwerken nadat de registratiecode is gemaakt en enkele spelers van de klant al zijn geregistreerd. Als de klant ongebruikelijke registratieactiviteit voor een specifieke registratiecode opmerkt, kunnen zij de grens in real time verminderen terwijl zij onderzoeken en kunnen het aantal terugverhogen als het een vals alarm was, zonder de reeds geregistreerde spelers te beïnvloeden.
 
 
 ## Volgende functies {#whats-next}
