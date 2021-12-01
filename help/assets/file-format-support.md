@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6c17b048631a7f61305ec4f0a4f84c4b0577aec0
+source-git-commit: 2c6bf90f51628fb1580a2ad287cfb1500063abc0
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 5%
 
 ---
@@ -86,18 +86,18 @@ De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet wor
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden.
-* PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone, Lab, and Indexed color spaces are not supported.
+* PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
 * PSD-bestanden met een bitdiepte groter dan 16.
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met Lab-kleurruimte.
 
-## 3D formats {#support-3d-formats}
+## 3D-indelingen {#support-3d-formats}
 
 De volgende 3D-indelingen worden ondersteund.
 
-See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Zie ook [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Indeling | Opslag | Versioning | Workflow | Publishing | Toegangsbeheer | Voorvertoning miniatuur | 3D preview | Dynamic Media-levering |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -108,7 +108,7 @@ See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/as
 
 ## [!DNL Camera RAW] formaten {#camera-raw-formats}
 
-| File format | Thumbnail generation | Metadata extraction | Breedte/Hoogte |
+| Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -140,9 +140,9 @@ See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/as
 
 ## Documentindelingen {#document-formats}
 
-The document formats supported for asset management features are as follows.
+De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
-| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Breedte/Hoogte | Metadata management | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -166,7 +166,7 @@ The document formats supported for asset management features are as follows.
 
 ## Documentindelingen in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Download dynamic rendition |
+| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
@@ -208,10 +208,10 @@ The document formats supported for asset management features are as follows.
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
 | M4V | Apple iTunes | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF |  | Media eXchange Format.<br>Apple ProRes422 | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
@@ -240,5 +240,5 @@ The document formats supported for asset management features are as follows.
 >[!MORELIKETHIS]
 >
 >* [Verwerking van bedrijfsmiddelen met behulp van asset-microservices](asset-microservices-overview.md)
->* [Supported file formats for smart tagging of text-based assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
