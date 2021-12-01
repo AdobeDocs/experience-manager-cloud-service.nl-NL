@@ -2,9 +2,9 @@
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1582'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,52 @@ De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker wor
 > Het werkgebied en de productiepijpleidingen die vóór 10 februari 2021 zijn gemaakt, moeten worden bijgewerkt om de interfacetests te kunnen gebruiken zoals beschreven op deze pagina.
 > Zie [CI-CD-pijpleidingen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor informatie over pijpleidingsconfiguratie.
 
+## Aangepaste UI-tests {#custom-ui-testing}
+
+AEM biedt zijn klanten een geïntegreerde suite met Cloud Manager-kwaliteitspoorten om ervoor te zorgen dat hun toepassingen probleemloos worden bijgewerkt. Met name kunnen klanten met behulp van IT-testpoorten al hun eigen tests maken en automatiseren die gebruikmaken van AEM API&#39;s.
+
+De testfunctie voor aangepaste UI is een [optionele functie](#customer-opt-in) dat onze klanten toelaat om tests UI voor hun toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). U kunt meer over leren hoe te om UI te bouwen en tests UI van hier te schrijven. Bovendien kan een project van de Tests UI gemakkelijk worden geproduceerd door het AEM Project Archetype te gebruiken.
+
+De klanten kunnen (via GIT) douanetests en testreeks voor UI tot stand brengen. De UI-test wordt uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met hun specifieke stap en feedbackinformatie. Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten, zullen fouten om toelaten worden ontdekt en worden gemeld binnen de klantencontext.
+
+De tests van de UI van de Klant lopen automatisch op de pijpleiding van de Productie onder de &quot;Testen van de UI van de Douane&quot;stap.
+
+In tegenstelling tot Aangepaste functionele tests die HTTP-tests zijn die in Java zijn geschreven, kunnen de UI-tests een dockerafbeelding zijn met tests die in elke taal zijn geschreven, mits deze de conventies volgen die zijn gedefinieerd op [UI-tests samenstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>Aanbevolen wordt de structuur en de taal te volgen *(js en audio)* gemakkelijk in [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) als uitgangspunt.
+
+### Klanten kiezen {#customer-opt-in}
+
+Om hun tests UI te hebben worden gebouwd en uitgevoerd, moeten de klanten &quot;opt-in&quot;door een dossier aan hun codebewaarplaats toe te voegen, onder de geproduceerde submodule voor tests UI (naast het pom.xml- dossier van UI test submodule) en ervoor te zorgen dat dit dossier bij de wortel van de gebouwde `tar.gz` bestand.
+
+*Bestandsnaam*: `testing.properties`
+
+*Inhoud*: `ui-tests.version=1`
+
+Als dit niet in de ingebouwde `tar.gz` bestand, de UI-tests worden samengesteld en de uitvoeringen worden overgeslagen
+
+Toevoegen `testing.properties` in het ingebouwde artefact, voeg een `include` instructie in `assembly-ui-test-docker-context.xml` bestand (in de submodule UI-tests):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- testmodule voor aanmelden in Cloud Manager —>
+    &lt;/includes>
+    [...]
+    &quot;
+
+>[!NOTE]
+>Productiepijpleidingen die vóór 10 februari 2021 zijn aangelegd, moeten worden bijgewerkt om de in dit punt beschreven interfacetests te kunnen gebruiken. Dit betekent hoofdzakelijk de Gebruiker de pijpleiding van de Productie moet uitgeven en klikt **Opslaan** van de BU, zelfs als er geen wijzigingen zijn aangebracht.
+>Zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) om meer over pijpleidingsconfiguratie te leren.
+
 ## UI-tests samenstellen {#building-ui-tests}
 
 De tests UI worden gebouwd uit een Docker bouwt context die door een Geweven project wordt geproduceerd. Cloud Manager gebruikt de Docker-ontwikkelcontext om een Docker-afbeelding te genereren die de werkelijke UI-tests bevat. Samengevat, produceert een Beweerd project een Docker bouwt context, en het Docker bouwt context beschrijft hoe te om een beeld van de Docker tot stand te brengen die de tests UI bevat.
 
-Deze sectie gaat door de stappen nodig om een project van de Tests UI aan uw bewaarplaats toe te voegen. Als u haast hebt of geen speciale vereisten voor de programmeertaal hebt, kunt u [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI voor u produceren.
+Deze sectie gaat door de stappen nodig om een project van de Tests UI aan uw bewaarplaats toe te voegen. Als u haast hebt of geen speciale vereisten voor de programmeertaal hebt, kunt u de optie [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI voor u produceren.
 
 ### Een Docker-constructiecontext genereren {#generate-docker-build-context}
 
@@ -149,7 +190,7 @@ Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kun
 
 De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een wijdverbreide indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, wordt zowel het [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en de [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/). Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen om te weten hoe u JUnit-XML-rapporten kunt genereren.
 
-### Bestanden uploaden (#upload-files)
+### Bestanden uploaden {#upload-files}
 
 Tests moeten soms bestanden uploaden naar de geteste toepassing. Om de implementatie van Selenium in verhouding tot uw tests flexibel te houden, is het niet mogelijk om een middel rechtstreeks naar Selenium te uploaden. In plaats daarvan voert het uploaden van een bestand een aantal tussenliggende stappen uit:
 
