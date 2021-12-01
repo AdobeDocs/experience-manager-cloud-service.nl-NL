@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -159,7 +159,7 @@ Voer de volgende stappen uit om het gereedschap te configureren:
    * [!UICONTROL Delete source file after import]: Selecteer deze optie als u de oorspronkelijke bestanden uit de opslagplaats voor brongegevens wilt verwijderen nadat de bestanden zijn geïmporteerd in [!DNL Experience Manager].
    * [!UICONTROL Import Mode]: Selecteer Versie overslaan, vervangen of maken. De modus Overslaan is de standaardmodus en in deze modus slaat de regelaar over om een element te importeren als dit al bestaat. Zie de betekenis van [versieopties vervangen en maken](#handling-upload-existing-file).
    * [!UICONTROL Assets Target Folder]: Map importeren in DAM waar elementen moeten worden geïmporteerd. Bijvoorbeeld, `/content/dam/imported_assets`
-   * [!UICONTROL Metadata File]: Het metagegevensbestand dat moet worden geïmporteerd, opgegeven in de CSV-indeling. U geeft dit CSV-bestand op de locatie van het bronblob en raadpleegt het pad in de configuratie van het gereedschap voor het bulkinvoeren.
+   * [!UICONTROL Metadata File]: Het metagegevensbestand dat moet worden geïmporteerd, opgegeven in de CSV-indeling. Geef het CSV-bestand op de locatie van het bronblob en raadpleeg het pad tijdens het configureren van het gereedschap Bulk-ingestor. De CSV-bestandsindeling waarnaar in dit veld wordt verwezen, is dezelfde als de CSV-bestandsindeling wanneer u [Metagegevens van elementen in bulk importeren en exporteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Als u **Bronbestand verwijderen na importeren** filter CSV-bestanden met behulp van de **Uitsluiten** of **MIME-type opnemen** of **Filteren op pad/bestand** velden. U kunt een reguliere expressie gebruiken om CSV-bestanden in deze velden te filteren.
 
 1. U kunt schrapen, wijzigen, uitvoeren en meer doen met uw gecreeerde spelersconfiguraties. Als u een configuratie met een grote importingestor selecteert, zijn de volgende opties beschikbaar in de werkbalk.
 
