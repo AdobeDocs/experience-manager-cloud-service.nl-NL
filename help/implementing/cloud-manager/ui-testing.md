@@ -2,9 +2,9 @@
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,10 @@ Om hun tests UI te hebben worden gebouwd en uitgevoerd, moeten de klanten &quot;
 
 Als dit niet in de ingebouwde `tar.gz` bestand, de UI-tests worden samengesteld en de uitvoeringen worden overgeslagen
 
-Toevoegen `testing.properties` in het ingebouwde artefact, voeg een `include` instructie in `assembly-ui-test-docker-context.xml` bestand (in de submodule UI-tests). Als uw project niet de lijn omvat, zult u dit dossier aan opt-in aan UI het testen moeten uitgeven. Als het dossier een lijn kan hebben adviserend om niet uit te geven, te negeren gelieve dat advies.
+Toevoegen `testing.properties` in het ingebouwde artefact, voeg een `include` instructie in `assembly-ui-test-docker-context.xml` bestand (in de submodule UI-tests).
+
+>[!NOTE]
+>Als uw project niet de lijn omvat, zult u dit dossier aan opt-in aan UI het testen moeten uitgeven. Als het dossier een lijn adviseert om niet uit te geven, te negeren gelieve dat advies.
 
     &quot;
     [...]
