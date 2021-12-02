@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4137'
 ht-degree: 9%
 
 ---
@@ -58,6 +58,10 @@ U kunt het configuratiebestand toevoegen `/apps/example/config.author/com.adobe.
 Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
 
 ![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>Wanneer u elementen uploadt naar de opslagplaats, detecteert Experience Manager duplicatie en wordt u op de hoogte gebracht van de eerste 100 dubbele elementen.
 
 ## Elementen voorvertonen {#previewing-assets}
 
