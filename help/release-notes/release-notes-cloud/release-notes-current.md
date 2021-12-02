@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -187,3 +187,21 @@ De releasedatum voor de analyse van best practices v2.1.20 is 5 oktober 2021.
 * Mogelijkheid om de totale indexgrootte op te sporen en te rapporteren.
 
 * Mogelijkheid om elementen te detecteren en te rapporteren waarvoor de oorspronkelijke uitvoering ontbreekt.
+
+
+## Analysator van best practices {#bpa-release}
+
+### Releasedatum {#release-date-bpa}
+
+De releasedatum voor de analyse van best practices v2.1.22 is 1 december 2021.
+
+### Wat is er nieuw? {#what-is-new-bpa}
+
+* Mogelijkheid om de gebruikte versie van ACS-gemeenschappelijk te detecteren en te rapporteren.
+* Mogelijkheid om het aantal gebruikers en subgroepen in een groep op te sporen en te rapporteren.
+* Mogelijkheid om waarden van knoopeigenschappen in MongoDB te detecteren en te rapporteren die groter zijn dan 16 MB.
+
+### Opgeloste problemen {#bug-fixes-bpa}
+
+* Detection of Foundation components was verfijnd om valse negatieven te verminderen.
+* Voor AEM Forms-klanten geldt dat BPA-berichten `EMAIL_PDF_SUBMIT_ACTION` niet beschikbaar zijn op AEM as a Cloud Service is opgelost.
