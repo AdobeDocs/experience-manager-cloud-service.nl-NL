@@ -2,14 +2,14 @@
 title: Back-up en herstel in AEM as a Cloud Service
 description: Back-up en herstel in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# Back-up en herstel in AEM as a Cloud Service
+# Back-up en herstel in AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of ge
 >
 >Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld.
 
-## Het gebruik
+## Het gebruik {#how-to-use}
 
 Klanten dienen een ondersteuningsticket in te dienen waarin het probleem wordt beschreven dat zich voordoet. Dit zal leiden tot een onderzoek door Adobe support, die zal bepalen of een herstel nodig is.
 
@@ -41,3 +41,9 @@ Na een terugzetbewerking wordt de AEM versie bijgewerkt naar de meest recente.
 >[!CAUTION]
 >
 >Gegevens uit verwijderde omgevingen gaan permanent verloren en kunnen niet worden hersteld.
+
+## Offsite back-up {#offsite-backup}
+
+Hoewel regelmatige back-ups het risico dekken van onopzettelijke verwijderingen of technische fouten binnen AEM Cloud Services, moeten de risico&#39;s die kunnen ontstaan door het falen van een regio ook worden gedekt. Naast beschikbaarheid is het grootste risico in dergelijke uitvallen van gegevensgebieden in de eerste plaats een verlies van gegevens.
+AEM as a Cloud Service dekt dit risico als standaard voor alle AEM productieomgevingen door voortdurend het volledige AEM naar een afgelegen gebied te kopiëren en het voor herstel beschikbaar te stellen gedurende een periode van drie maanden. We noemen deze mogelijkheid Offsite back-up.
+Het herstel van AEM Cloud Services voor stadium- en productieomgevingen wordt uitgevoerd door AEM Service Reliability Engineering in het geval van een storing in een gegevensgebied.
