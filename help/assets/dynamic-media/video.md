@@ -1,12 +1,12 @@
 ---
 title: Video in Dynamic Media
-description: Leer hoe u met video werkt in Dynamic Media.
+description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en trucs voor het coderen van video's, het publiceren van video's naar YouTube, het weergeven van videorapporten en het toevoegen van ondertiteling, ondertitels of hoofdstukmarkeringen aan video's.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
+source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
 workflow-type: tm+mt
-source-wordcount: '9051'
+source-wordcount: '9082'
 ht-degree: 4%
 
 ---
@@ -23,42 +23,42 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >
 >Voordat u in Dynamic Media met video werkt, moet u controleren of uw Adobe Experience Manager-beheerder Dynamic Media-Cloud Services al heeft ingeschakeld en geconfigureerd.
 >
->* Zie [Dynamic Media-Cloud Services configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in het configureren van Dynamic Media en [Problemen met Dynamic Media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* Zie [Dynamic Media-Cloud Services configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configureer Dynamic Media en [Problemen met Dynamic Media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 >
 
 
-1. **Upload uw Dynamic Media-** video&#39;s als volgt:
+1. **Dynamic Media-video&#39;s uploaden** door het volgende te doen:
 
-   * Maak uw eigen videocoderingsprofiel. U kunt ook gewoon het vooraf gedefinieerde _Adaptieve videocodering_-profiel gebruiken dat bij Dynamic Media wordt geleverd.
+   * Maak uw eigen videocoderingsprofiel. U kunt ook gewoon de vooraf gedefinieerde _Adaptieve videocodering_ profiel dat bij Dynamic Media wordt geleverd.
 
-      * [Maak een videocoderingsprofiel](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * Meer informatie over [Aanbevolen werkwijzen voor videocodering](#best-practices-for-encoding-videos).
+      * [Een videocoderingsprofiel maken](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * Meer informatie over [Aanbevolen procedures voor videocodering](#best-practices-for-encoding-videos).
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.
 
-      * [Pas een videoprofiel toe op mappen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Een videoprofiel toepassen op mappen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
       * Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
-      * [Upload uw video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)&#39;s.
-      * Meer informatie over [Ondersteunde invoerbestandsindelingen](/help/assets/file-format-support.md).
-   * Controleer hoe [video het coderen](#monitoring-video-encoding-and-youtube-publishing-progress) of van de activa of werkschemamening vordert.
+      * [Uw video&#39;s uploaden](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+      * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](/help/assets/file-format-support.md).
+   * Controleren hoe [videocodering wordt voortgezet](#monitoring-video-encoding-and-youtube-publishing-progress) vanuit het element of de werkstroomweergave.
 
 
 
 
-1. **Voer een van de volgende handelingen uit om uw Dynamic Media-** video&#39;s te beheren:
+1. **Uw Dynamic Media-video&#39;s beheren** door een van de volgende handelingen uit te voeren:
 
    * Video-elementen organiseren, doorbladeren en zoeken
 
       * [Digitale elementen ordenen](/help/assets/organize-assets.md)
-      * [Video-](/help/assets/search-assets.md#custompredicates) apparatuur zoeken en  [middelen zoeken](/help/assets/manage-digital-assets.md#search-assets)
+      * [Video-elementen zoeken](/help/assets/search-assets.md#custompredicates) of [Elementen zoeken](/help/assets/manage-digital-assets.md#search-assets)
    * Video-elementen voorvertonen en publiceren
 
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
-         [Voorvertoning van ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) videosor  [Voorvertoning van elementen weergeven](/help/assets/dynamic-media/previewing-assets.md)
+         [Video&#39;s voorvertonen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) of [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
          [Video-uitvoeringen beheren](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
@@ -72,7 +72,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md)
    * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
-      * [Annoteren van ](/help/assets/manage-video-assets.md#annotate-video-assets) videosor  [Elementen annoteren](/help/assets/manage-digital-assets.md#annotating)
+      * [Video&#39;s annoteren](/help/assets/manage-video-assets.md#annotate-video-assets) of [Annoteren van elementen](/help/assets/manage-digital-assets.md#annotating)
 
       * [Een versie maken](/help/assets/manage-digital-assets.md#asset-versioning)
       * [Een workflow starten op een element](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
@@ -83,20 +83,20 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
 
 
-1. **Publiceer uw Dynamic Media-** video&#39;s op een van de volgende manieren:
+1. **Dynamic Media-video&#39;s publiceren** door een van de volgende handelingen uit te voeren:
 
    * Als u Experience Manager gebruikt als uw WCM-systeem (Web Content Management), kunt u video&#39;s rechtstreeks toevoegen aan uw webpagina&#39;s.
 
-      * [Voeg video&#39;s toe aan uw webpagina](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)&#39;s.
+      * [Video&#39;s toevoegen aan uw webpagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
    * Als u een systeem voor webcontentbeheer van derden gebruikt, kunt u video&#39;s koppelen aan of insluiten in uw webpagina&#39;s.
 
       * Video integreren met URL:
-         [Koppel URL&#39;s aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+         [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Video integreren met gebruik van ingesloten code op webpagina:
-         [Sluit de videoviewer in op een webpagina](/help/assets/dynamic-media/embed-code.md).
-   * [Publiceer video&#39;s naar YouTube](#publishing-videos-to-youtube).
-   * [Genereer videoverslagen](#viewing-video-reports).
+         [De videoviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
+   * [Video&#39;s publiceren naar YouTube](#publishing-videos-to-youtube).
+   * [Videorapporten genereren](#viewing-video-reports).
 
    * [Bijschriften toevoegen aan video](#adding-captions-to-video).
 
@@ -104,9 +104,9 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
 ## Werken met video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is een end-to-end oplossing waarmee u eenvoudig Adaptieve video van hoge kwaliteit kunt publiceren voor streaming op meerdere schermen, zoals mobiele apparaten voor desktops, iOS, Android™, BlackBerry® en Windows®. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
+Video in Dynamic Media is een end-to-end oplossing waarmee u eenvoudig Adaptieve video van hoge kwaliteit kunt publiceren voor streaming op meerdere schermen, zoals desktopcomputers, iOS, Android™, BlackBerry® en mobiele apparaten van Windows®. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
 
-Op een mobiel iOS-apparaat detecteert het bijvoorbeeld een bandbreedte zoals 3G, 4G of Wi-Fi. Vervolgens wordt automatisch de naar rechts gecodeerde video geselecteerd bij de verschillende bitsnelheden van de video in de adaptieve videoset. De video wordt gestreamd naar desktops, mobiele apparaten of tablets.
+Op een mobiel iOS-apparaat wordt bijvoorbeeld een bandbreedte gedetecteerd, zoals 3G, 4G of Wi-Fi. Vervolgens wordt automatisch de naar rechts gecodeerde video geselecteerd bij de verschillende bitsnelheden van de video in de adaptieve videoset. De video wordt gestreamd naar desktops, mobiele apparaten of tablets.
 
 Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwerkomstandigheden veranderen op het bureaublad of op het mobiele apparaat. Ook, als een klant volledig-schermwijze op een Desktop ingaat, antwoordt de Adaptieve VideoReeks door een betere resolutie te gebruiken, verbeterend de het bekijken van de klant ervaring. Met Adaptieve videosets kunt u Dynamic Media-video op meerdere schermen en apparaten het best afspelen.
 
@@ -129,13 +129,13 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 
 * ondertiteling in alle HTML5-videoviewers.
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
-* Lever Adaptieve videosets naar het web en desktops en naar mobiele apparaten, waaronder de iPhone, iPad, Android™, BlackBerry® en Windows®.
+* Lever Adaptieve videosets voor het web en desktops, en voor mobiele apparaten, waaronder de iPhone, iPad, Android™, BlackBerry® en Windows®.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. U kunt de apparaten van BlackBerry® vinden die dit videoformaat bij het volgende steunen: [Ondersteunde video-indelingen op BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-U kunt Windows® apparaten vinden die dit videoformaat bij de volgende [Gesteunde videoformaten op Windows® Telefoon](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs) steunen.
+U vindt Windows®-apparaten die deze video-indeling ondersteunen als volgt: [Ondersteunde video-indelingen op Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 * Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van het volgende:
 
@@ -145,21 +145,21 @@ U kunt Windows® apparaten vinden die dit videoformaat bij de volgende [Gesteund
 * Configureer videospelers om aan uw brandingbehoeften te voldoen.
 * Video met een eenvoudige URL of insluitcode integreren in uw website, mobiele site of mobiele toepassing.
 
-Zie [Dynamisch afspelen van video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) voorbeeld.
+Zie [Dynamische videoweergave](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) monster nemen.
 
-Zie ook [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Zie ook [Viewers voor Experience Manager Assets en Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) en [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 ## Beste praktijken: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
-De voorinstellingen van de Dynamic Media HTML5 Video-viewer zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die te maken hebben met het afspelen van HTML5-video en met problemen die aan mobiele apparaten zijn gekoppeld. Bijvoorbeeld een gebrek aan adaptieve streaminglevering en een beperkt bereik van de desktopbrowser.
+De Dynamic Media HTML5 Video viewer-voorinstellingen zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die te maken hebben met het afspelen van HTML5-video en met problemen die te maken hebben met mobiele apparaten. Bijvoorbeeld een gebrek aan adaptieve streaminglevering en een beperkt bereik van de desktopbrowser.
 
-Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler ontwerpen gebruikend standaardhulpmiddelen van de Webontwikkeling. U kunt bijvoorbeeld de knoppen, besturingselementen en de achtergrond van een aangepaste posterafbeelding ontwerpen met HTML5 en CSS, zodat u uw klanten kunt bereiken met een aangepaste weergave.
+Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler ontwerpen gebruikend standaardhulpmiddelen van de Webontwikkeling. U kunt bijvoorbeeld de knoppen, besturingselementen en de achtergrond van een aangepaste posterafbeelding ontwerpen met behulp van HTML5 en CSS om u te helpen uw klanten te bereiken met een aangepaste weergave.
 
-Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de browser gedetecteerd. Vervolgens wordt de video afgespeeld met behulp van HLS (HTTP Live Streaming), ook wel adaptieve videostreaming genoemd. Als deze leveringsmethoden niet aanwezig zijn, wordt in plaats daarvan HTML5 progressief gebruikt.
+Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de browser gedetecteerd. Vervolgens wordt de video afgespeeld met behulp van HLS (HTTP Live Streaming), ook wel adaptieve videostreaming genoemd. Of als deze leveringsmethoden niet aanwezig zijn, wordt in plaats daarvan HTML5 progressief gebruikt.
 
-U kunt de mogelijkheid om de afspeelcomponenten te ontwerpen met HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Met al deze functionaliteit kunt u het bereik van uw uitgebreide media-inhoud uitbreiden voor zowel gebruikers op het bureaublad als mobiele apparaten en een gestroomlijnde videobeleving garanderen.
+U kunt de mogelijkheid om de afspeelcomponenten te ontwerpen met behulp van HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Met al deze functionaliteit kunt u het bereik van uw uitgebreide media-inhoud uitbreiden voor zowel gebruikers op het bureaublad als mobiele apparaten en een gestroomlijnde videobeleving garanderen.
 
-Zie ook [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Zie ook [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -176,7 +176,7 @@ HLS is een Apple-standaard voor adaptieve videostreaming die het afspelen automa
 
 Progressieve video wordt geleverd door de video lokaal te downloaden en op het desktopsysteem of mobiele apparaat van de gebruiker op te slaan.
 
-In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
+In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de opdracht [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
 
 <table>
  <tbody>
@@ -193,7 +193,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> op Windows® 7 - Progressieve download. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
+   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> Windows® 7 - Progressief downloaden. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -260,7 +260,7 @@ In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s di
 
 ## Aanbevolen werkwijzen voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
 
-De **Dynamic Media Codeert Video** werkstroom codeert video als u Dynamic Media en opstelling video Cloud Services hebt toegelaten. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]**-workflow automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt de **[!UICONTROL DAM Update Asset]**-workflow van kracht.)
+De **Dynamic Media-video coderen** als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, codeert de workflow video. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, kunt u **[!UICONTROL Dynamic Media Encode Video]** de workflow wordt automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt **[!UICONTROL DAM Update Asset]** workflow wordt van kracht.)
 
 Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
@@ -288,7 +288,7 @@ In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en m
 
 U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het bestand te bekijken met een programma voor videobewerking of met een toepassing die is ontworpen voor het verkrijgen van metagegevens. Hieronder vindt u instructies voor het gebruik van MediaInfo, een toepassing van derden, voor het verkrijgen van de metagegevens van een videobestand:
 
-1. Ga naar [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
+1. Ga naar [MediaInfo downloaden](https://mediaarea.net/en/MediaInfo/Download).
 1. Selecteer en download het installatieprogramma voor de GUI-versie en volg de installatie-instructies.
 1. Klik na de installatie met de rechtermuisknop op het videobestand (alleen Windows®) en selecteer MediaInfo, of open MediaInfo en sleep het videobestand naar de toepassing. U ziet alle metagegevens die aan het videobestand zijn gekoppeld, inclusief de breedte, hoogte en fps.
 
@@ -337,13 +337,13 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 | Snelheid (Kbps) | Verbindingstype |
 |--- |--- |
 | 256 | Inbelverbinding. |
-| 600 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
+| 800 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
 | 2000 | Standaardbreedbandverbinding voor desktops. Voor deze verbinding, richt een gegevenstarief in de waaier 800-2000 Kbps, met de meeste doelstellingen gemiddeld 1200-1500 Kbps. |
 | 5000 | Typische breedbandverbinding. Codering in dit bovenste bereik wordt niet aanbevolen, omdat de video bij deze snelheid niet beschikbaar is voor de meeste consumenten. |
 
 ### Resolutie {#resolution}
 
-**Met** resolutie worden de hoogte en breedte van een videobestand in pixels beschreven. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 x 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 x 480 of lager).
+**Resolutie** Hiermee worden de hoogte en breedte van een videobestand in pixels beschreven. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 x 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 x 480 of lager).
 
 Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die de videokwaliteit bepalen. Als u dezelfde videokwaliteit wilt behouden, geldt dat hoe hoger het aantal pixels in een videobestand (hoe hoger de resolutie), hoe hoger de gegevenssnelheid. Neem bijvoorbeeld het aantal pixels per frame in een videobestand met een resolutie van 320 x 240 en een resolutie van 640 x 480:
 
@@ -390,7 +390,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
 | Gecodeerd | 640 x 360 | 3 | 3 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
@@ -401,9 +401,9 @@ Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebru
 
 ## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 
-U kunt video-elementen die worden beheerd in Experience Manager Assets rechtstreeks publiceren naar een YouTube-kanaal dat u eerder hebt gemaakt.
+U kunt video-elementen die in Experience Manager Assets worden beheerd, rechtstreeks publiceren naar een YouTube-kanaal dat u eerder hebt gemaakt.
 
-Als u video-elementen naar YouTube wilt publiceren, labelt u video-elementen in Experience Manager Assets met tags. U koppelt deze tags aan een YouTube-kanaal. Als de tag van een video-element overeenkomt met de tag van een YouTube-kanaal, wordt de video gepubliceerd naar YouTube. Publiceren naar YouTube vindt plaats samen met een normale publicatie van de video zolang een bijbehorende tag wordt gebruikt.
+Als u video-elementen naar YouTube wilt publiceren, kunt u tags toewijzen aan video-elementen in Experience Manager Assets. U koppelt deze tags aan een YouTube-kanaal. Als de tag van een video-element overeenkomt met de tag van een YouTube-kanaal, wordt de video gepubliceerd naar YouTube. Publiceren naar YouTube vindt plaats samen met een normale publicatie van de video zolang een bijbehorende tag wordt gebruikt.
 
 YouTube voert zijn eigen codering uit. Als zodanig wordt het oorspronkelijke videobestand dat naar de Experience Manager is geüpload, gepubliceerd naar YouTube in plaats van een video-uitvoering die door de codering van Dynamic Media is gemaakt. Hoewel het niet nodig is om video&#39;s te verwerken met Dynamic Media, wordt verwacht dat dit gebeurt voor het geval dat een viewer-voorinstelling nodig is voor het afspelen.
 
@@ -420,15 +420,15 @@ Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende t
 1. [(Optioneel) Controleer de gepubliceerde video op YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [YouTube-URL&#39;s koppelen aan uw webtoepassing](#linking-youtube-urls-to-your-web-application)
 
-U kunt de publicatie van video&#39;s ook [ongedaan maken om deze uit YouTube te verwijderen](#unpublishing-videos-to-remove-them-from-youtube).
+U kunt ook [Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen](#unpublishing-videos-to-remove-them-from-youtube).
 
 ### Google Cloud-instellingen configureren {#configuring-google-cloud-settings}
 
-Als u naar YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account; als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u aanmeldingsgegevens nodig hebt om video-elementen naar YouTube te publiceren. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u direct door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
+Als u wilt publiceren naar YouTube, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account. als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u aanmeldingsgegevens nodig hebt om video-elementen naar YouTube te publiceren. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u rechtstreeks door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
 
 Het account dat wordt gebruikt met Google Cloud en het Google-account dat wordt gebruikt voor YouTube, hoeft niet hetzelfde te zijn.
 
-Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publiceren van video&#39;s naar YouTube kunnen dan ook enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud geldt ook voor YouTube wanneer u probeert te controleren of er video&#39;s naar worden geüpload.
+Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren van video&#39;s naar YouTube kunnen dan ook enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud geldt ook voor YouTube wanneer u probeert te controleren of er video&#39;s naar worden geüpload.
 
 >[!NOTE]
 >
@@ -442,12 +442,12 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
    Als u al een Google-account hebt, gaat u verder met de volgende stap.
 
 1. Ga naar [https://cloud.google.com/](https://cloud.google.com/).
-1. Selecteer **[!UICONTROL Console]** op de Google Cloud-pagina in de rechterbovenhoek.
+1. Selecteer in de rechterbovenhoek van de Google Cloud-pagina de optie **[!UICONTROL Console]**.
 
-   Indien nodig **[!UICONTROL Sign in]** met de referenties van uw Google-account om de optie **[!UICONTROL Console]** weer te geven.
+   Indien nodig **[!UICONTROL Sign in]** met uw Google-accountgegevens de **[!UICONTROL Console]** optie.
 
-1. Selecteer op de dashboardpagina rechts van **[!UICONTROL Google Cloud Platform]** de vervolgkeuzelijst Project om het dialoogvenster Een project selecteren te openen.
-1. Selecteer **[!UICONTROL New Project]** in het dialoogvenster Een project selecteren.
+1. Op de pagina Dashboard, rechts van **[!UICONTROL Google Cloud Platform]** selecteert u de vervolgkeuzelijst Project om het dialoogvenster Een project selecteren te openen.
+1. Selecteer in het dialoogvenster Een project selecteren de optie **[!UICONTROL New Project]**.
 
    ![6_5_gogleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -459,22 +459,22 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer **[!UICONTROL Explore and enable APIs]** op het dashboard van uw project in de Aan de slag-kaart.
-   * Selecteer **[!UICONTROL Go to APIs overview]** op het dashboard van uw project in de API&#39;s-kaart.
+   * Selecteer op het dashboard van uw project in de kaart Aan de slag de optie **[!UICONTROL Explore and enable APIs]**.
+   * Selecteer op het dashboard van uw project in de API&#39;s-kaart de optie **[!UICONTROL Go to APIs overview]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Selecteer **[!UICONTROL Enable APIs and Services]** boven aan de pagina API&#39;s &amp; services.
-1. Selecteer **[!UICONTROL YouTube]** op de pagina API-bibliotheek aan de linkerkant onder **[!UICONTROL Category]**. Selecteer **[!UICONTROL YouTube Data API]** rechts van de pagina.
-1. Selecteer **[!UICONTROL Enable]** op de v3-pagina YouTube Data API.
+1. Selecteer boven aan de pagina met API&#39;s en services de optie **[!UICONTROL Enable APIs and Services]**.
+1. Op de pagina van de API-bibliotheek, links, onder **[!UICONTROL Category]**, selecteert u **[!UICONTROL YouTube]**. Selecteer rechts van de pagina de optie **[!UICONTROL YouTube Data API]**.
+1. Selecteer op de v3-pagina YouTube Data API de optie **[!UICONTROL Enable]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. U hebt referenties nodig om de API te gebruiken. Selecteer, indien nodig, **[!UICONTROL Create Credentials]**.
+1. U hebt referenties nodig om de API te gebruiken. Selecteer indien nodig **[!UICONTROL Create Credentials]**.
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
-1. Ga als volgt te werk op de pagina **[!UICONTROL Add credentials to your project]**:
+1. Op de **[!UICONTROL Add credentials to your project]** pagina, stap 1, doet het volgende:
 
    * Selecteer in de vervolgkeuzelijst **[!UICONTROL Which API are you using?]** de optie **[!UICONTROL YouTube Data API v3]**.
 
@@ -486,7 +486,7 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
 1. Selecteer **[!UICONTROL What credentials do I need?]**
 1. Voer op de pagina **[!UICONTROL Add credentials to your project]** in stap 2 onder de kop **[!UICONTROL Create an OAuth 2.0 client ID]** in het veld Naam desgewenst een unieke naam in. U kunt ook de standaardnaam gebruiken die door Google is opgegeven.
-1. Voer onder de kop **[!UICONTROL Authorized JavaScript origins]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. Onder de **[!UICONTROL Authorized JavaScript origins]** Voer in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>`
 
@@ -496,7 +496,7 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
-1. Voer onder de kop **[!UICONTROL Authorized redirect URIs]** in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. Onder de **[!UICONTROL Authorized redirect URIs]** Voer in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
@@ -509,16 +509,16 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
    ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
-1. Voer onder de kop **[!UICONTROL Product name shown to users]** in het tekstveld in wat u wilt weergeven op het instemmingsscherm.
+1. Onder de **[!UICONTROL Product name shown to users]** Voer in het tekstveld in wat u wilt weergeven op het instemmingsscherm.
 
    Het toestemmingsscherm wordt getoond aan de beheerder van de Experience Manager wanneer zij aan YouTube voor authentiek verklaren. Experience Manager neemt contact op met YouTube voor toestemming.
 
 1. Selecteer **[!UICONTROL Continue]**.
-1. Voor Add geloofsbrieven aan uw projectpagina, stap 4, onder **[!UICONTROL Download credentials]** rubriek, uitgezocht **[!UICONTROL Download]**.
+1. Op Add geloofsbrieven aan uw projectpagina, stap 4, onder Add **[!UICONTROL Download credentials]** kop, selecteren **[!UICONTROL Download]**.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
-1. Sla het `client_id.json`-bestand op.
+1. Sla de `client_id.json` bestand.
 
    U hebt dit gedownloade json-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
 
@@ -528,19 +528,19 @@ Google wijzigt regelmatig zijn gebruikersinterface. De stappen voor het publicer
 
 ### Een YouTube-kanaal maken {#creating-a-youtube-channel}
 
-Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u al een YouTube-kanaal hebt gemaakt, kunt u deze taak overslaan en naar [Codes toevoegen voor publicatie](/help/assets/dynamic-media/video.md#adding-tags-for-publishing) gaan.
+Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u al een YouTube-kanaal hebt gemaakt, kunt u deze taak overslaan en naar [Codes toevoegen voor publicatie](/help/assets/dynamic-media/video.md#adding-tags-for-publishing).
 
 >[!CAUTION]
 >
->Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *before* u kanalen toevoegt onder YouTube Settings in Experience Manager (zie [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem) hieronder). Als u de kanaalinstelling niet kunt uitvoeren, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
+>Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *voor* u voegt kanalen toe onder YouTube Settings in Experience Manager (zie [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem) hieronder). Als u de kanaalinstelling niet kunt uitvoeren, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
 
 **Een YouTube-kanaal maken:**
 
-1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
-1. Selecteer in de rechterbovenhoek van de YouTube-pagina uw profielafbeelding (deze kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en selecteer **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
-1. Selecteer **[!UICONTROL See all my channels or create a channel]** onder de kop Extra functies op de pagina Overzicht.
-1. Selecteer **[!UICONTROL Create a new channel]** op de pagina Kanalen.
-1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en selecteer **[!UICONTROL Create]**.
+1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met uw aanmeldingsgegevens van uw Google-account.
+1. Selecteer in de rechterbovenhoek van de YouTube-pagina uw profielafbeelding (deze kan ook als een letter binnen een effen gekleurde cirkel worden weergegeven) en selecteer vervolgens **[!UICONTROL YouTube settings]** (rondtandwielpictogram).
+1. Selecteer op de pagina Overzicht onder de kop Extra functies de optie **[!UICONTROL See all my channels or create a channel]**.
+1. Selecteer op de pagina Kanalen de optie **[!UICONTROL Create a new channel]**.
+1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en selecteer vervolgens **[!UICONTROL Create]**.
 
    Herinner de naam die u hier ingaat; moet u het opnieuw invoeren wanneer u YouTube in Experience Manager moet instellen.
 
@@ -550,9 +550,9 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 ### Codes toevoegen voor publicatie {#adding-tags-for-publishing}
 
-Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Zie [Codes beheren](/help/sites-cloud/authoring/features/tags.md) als u codes wilt toevoegen voor publicatie.
+Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Als u tags wilt toevoegen voor publicatie, raadpleegt u [Tags beheren](/help/sites-cloud/authoring/features/tags.md).
 
-Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [Opstelling YouTube in Experience Manager ](#setting-up-youtube-in-aem) gaan.
+Of als u de standaardlabels in de Experience Manager wilt gebruiken, kunt u deze taak overslaan en naar [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem).
 
 >[!NOTE]
 >
@@ -572,41 +572,41 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd om YouTube-publicaties in Experience Manager in te stellen. Op basis van de geïnstalleerde Experience Manager die u gebruikt, voert u een van de volgende handelingen uit:
 
-* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [Opstelling YouTube in Experience Manager vóór 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
-* Om YouTube in Experience Manager 6.4 of later te vormen, zie [Opstelling YouTube in Experience Manager 6.4 en later](#setting-up-youtube-in-aem-and-later).
+* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [YouTube instellen in Experience Manager vóór 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
+* Om YouTube in Experience Manager 6.4 of later te vormen, zie [YouTube instellen in Experience Manager 6.4 en hoger](#setting-up-youtube-in-aem-and-later).
 
 #### YouTube instellen in Experience Manager 6.4 en hoger {#setting-up-youtube-in-aem-and-later}
 
 1. Meld u als beheerder aan bij uw exemplaar van Dynamic Media.
-1. In de upper-left hoek van Experience Manager, selecteer het embleem van de Experience Manager, dan in de linkerspoorstaaf, navigeer aan **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
-1. Selecteer **[!UICONTROL global]** (selecteer het niet).
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkerspoorstaaf naar **[!UICONTROL Tools]**(hamerpictogram) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
+1. Selecteren **[!UICONTROL global]** (niet selecteren).
 
-1. Selecteer **[!UICONTROL Create]** in de rechterbovenhoek van de algemene pagina.
+1. Selecteer in de rechterbovenhoek van de algemene pagina de optie **[!UICONTROL Create]**.
 1. Voer op de pagina YouTube-configuratie maken onder Google Cloud-platforminstellingen in het veld **[!UICONTROL Application Name]** de Google-project-id in.
 
-   U hebt de project-id opgegeven toen u aanvankelijk eerder Google Cloud-instellingen had geconfigureerd.
+   U hebt de project-id opgegeven toen u de Google Cloud-instellingen voor het eerst eerder hebt geconfigureerd.
 Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
-1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder hebt gedownload en opgeslagen in de taak [Google Cloud-instellingen configureren](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
+1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder in de taak hebt gedownload en opgeslagen [Google Cloud-instellingen configureren](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
 1. Selecteer en kopieer de volledige JSON-tekst.
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
-1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
 
    Stel nu YouTube-kanalen in Experience Manager in.
 
 1. Selecteer **[!UICONTROL Add Channel]**.
-1. Voer in het veld Kanaalnaam de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
+1. Voer in het veld Kanaalnaam de naam in van het kanaal dat u in de taak hebt gemaakt **[!UICONTROL Adding one or more channels to YouTube]** eerder.
 
    U kunt desgewenst een beschrijving toevoegen.
 
 1. Selecteer **[!UICONTROL Add]**.
 1. YouTube/Google-verificatie wordt weergegeven. Als u zich nog niet hebt aangemeld bij het Google Cloud-account, slaat u deze stap over.
 
-   * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project-id en de JSON-tekst hierboven zijn gekoppeld.
+   * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project ID en de JSON-tekst hierboven zijn gekoppeld.
    * Afhankelijk van hoeveel kanalen uw account twee of meer items bevat. Selecteer een kanaal. Selecteer het e-mailadres niet. het is geen kanaal .
-   * Selecteer **[!UICONTROL Accept]** op de volgende pagina om toegang tot dit kanaal toe te staan.
+   * Selecteer op de volgende pagina de optie **[!UICONTROL Accept]** om toegang tot dit kanaal toe te staan.
 
 1. Selecteer **[!UICONTROL Allow]**.
 
@@ -618,7 +618,7 @@ Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 
    Als u een toegevoegde tag wilt verwijderen, selecteert u de tag en selecteert u **[!UICONTROL X]**.
 
-1. Als u alle gewenste tags hebt toegevoegd, selecteert u **[!UICONTROL Save]**.
+1. Wanneer u de gewenste tags hebt toegevoegd, selecteert u **[!UICONTROL Save]**.
 
    Nu publiceert u video&#39;s naar uw YouTube-kanaal.
 
@@ -626,13 +626,13 @@ Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 
 1. Meld u als beheerder aan bij uw exemplaar van Dynamic Media.
 
-1. In de upper-left hoek van Experience Manager, selecteer het embleem van de Experience Manager, dan in de linkerspoorstaaf, navigeer aan **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
-1. Selecteer **[!UICONTROL Configure now]** onder de kop Services van derden onder YouTube.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkerspoorstaaf naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
+1. Selecteer onder YouTube onder de kop Services van derden de optie **[!UICONTROL Configure now]**.
 1. Voer in het dialoogvenster Configuratie maken een titel (verplicht) en een naam (optioneel) in de desbetreffende velden in.
 1. Selecteer **[!UICONTROL Create]**.
 1. Voer in het veld **[!UICONTROL Application Name]** in het dialoogvenster YouTube-accountinstellingen de Google-project-id in.
 
-   U hebt de project-id opgegeven wanneer u eerder [Google Cloud-instellingen hebt geconfigureerd](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
+   U hebt de project-id opgegeven toen u het eerst [geconfigureerde Google Cloud-instellingen](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) eerder.
 Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op terug .
 
 1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder hebt gedownload en opgeslagen in de taak Google Cloud-instellingen configureren.
@@ -642,7 +642,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 
    Stel nu YouTube-kanalen in Experience Manager in.
 
-1. Rechts van **[!UICONTROL Available Channels]** selecteert u **+** (plusteken).
+1. Aan het recht van **[!UICONTROL Available Channels]**, selecteert u **+** (plusteken).
 1. Voer in het veld Titel in het dialoogvenster YouTube-kanaalinstellingen de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
 
    U kunt desgewenst een beschrijving toevoegen.
@@ -650,9 +650,9 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 1. Selecteer **[!UICONTROL OK]**.
 1. YouTube/Google-verificatie wordt weergegeven. Als u zich nog niet hebt aangemeld bij het Google Cloud-account, slaat u deze stap over.
 
-   * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project-id en de JSON-tekst hierboven zijn gekoppeld.
+   * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project ID en de JSON-tekst hierboven zijn gekoppeld.
    * Afhankelijk van hoeveel kanalen uw account twee of meer items bevat. Selecteer een kanaal. Selecteer het e-mailadres niet. het is geen kanaal .
-   * Selecteer **[!UICONTROL Accept]** op de volgende pagina om toegang tot dit kanaal toe te staan.
+   * Selecteer op de volgende pagina de optie **[!UICONTROL Accept]** om toegang tot dit kanaal toe te staan.
 
 1. Selecteer **[!UICONTROL Allow]**.
 
@@ -664,7 +664,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 
    Als u een toegevoegde tag wilt verwijderen, selecteert u de tag en selecteert u **X**.
 
-1. Als u alle gewenste tags hebt toegevoegd, selecteert u **[!UICONTROL OK]**.
+1. Wanneer u de gewenste tags hebt toegevoegd, selecteert u **[!UICONTROL OK]**.
 
    Nu publiceert u video&#39;s naar uw YouTube-kanaal.
 
@@ -676,57 +676,57 @@ Als u het verwerkingsprofiel voor metadata wilt maken, kopieert u eerst waarden 
 
 **U kunt als volgt de standaardeigenschappen van YouTube voor uw geüploade video&#39;s automatiseren:**
 
-1. In de upper-left hoek van Experience Manager, selecteer het embleem van de Experience Manager, dan in de linkerspoorstaaf, navigeer aan **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkerspoorstaaf naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Selecteer **[!UICONTROL default]**. (Voeg geen vinkje toe aan het selectievak links van &quot;standaard&quot;.)
-1. Schakel op de pagina **[!UICONTROL default]** het vakje links van **[!UICONTROL video]** in en selecteer **[!UICONTROL Edit]**.
-1. Selecteer het tabblad **[!UICONTROL Advanced]** op de pagina Metagegevensschema-editor.
-1. Selecteer **[!UICONTROL YouTube Category]** onder YouTube Publishing (Publiceren).
-1. Voer rechts van de pagina onder het tabblad **[!UICONTROL Settings]** de volgende handelingen uit:
+1. Op de **[!UICONTROL default]** pagina, schakel het selectievakje links van **[!UICONTROL video]** selecteert u vervolgens **[!UICONTROL Edit]**.
+1. Selecteer op de pagina Metadata Schema Editor de optie **[!UICONTROL Advanced]** tab.
+1. Selecteer onder YouTube Publishing (Publiceren in) de optie **[!UICONTROL YouTube Category]**.
+1. Aan de rechterkant van de pagina, onder de **[!UICONTROL Settings]** doet u het volgende:
 
-   * Selecteer en kopieer de waarde in het tekstveld **[!UICONTROL Map to property]**.
+   * In de **[!UICONTROL Map to property]** tekstveld, selecteer en kopieer de waarde.
 Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later nodig wanneer u uw verwerkingsprofiel voor metagegevens maakt. Laat de teksteditor geopend.
 
-   * Selecteer en kopieer onder **[!UICONTROL Choices]** de standaardwaarde die u wilt gebruiken (zoals Personen en blogs of Wetenschap en Technologie).
+   * Onder **[!UICONTROL Choices]**selecteert en kopieert u de standaardwaarde die u wilt gebruiken (zoals Personen en blogs of Wetenschap en Technologie).
 Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later nodig wanneer u uw verwerkingsprofiel voor metagegevens maakt. Laat de teksteditor geopend.
 
-1. Selecteer **[!UICONTROL YouTube Privacy]** onder YouTube Publishing (Publiceren).
-1. Voer rechts van de pagina onder het tabblad **[!UICONTROL Settings]** de volgende handelingen uit:
+1. Selecteer onder YouTube Publishing (Publiceren in) de optie **[!UICONTROL YouTube Privacy]**.
+1. Aan de rechterkant van de pagina, onder de **[!UICONTROL Settings]** doet u het volgende:
 
-   * Selecteer en kopieer de waarde in het tekstveld **[!UICONTROL Map to property]**.
+   * In de **[!UICONTROL Map to property]** tekstveld, selecteer en kopieer de waarde.
 Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later nodig wanneer u uw verwerkingsprofiel voor metagegevens maakt. Laat de teksteditor geopend.
 
-   * Selecteer en kopieer onder **[!UICONTROL Choices]** de standaardwaarde die u wilt gebruiken. De keuzen zijn gegroepeerd in twee. Het onderste veld in het paar is de standaardwaarde die u wilt kopiëren, bijvoorbeeld public, unlist of private.
+   * Onder **[!UICONTROL Choices]**selecteert en kopieert u de standaardwaarde die u wilt gebruiken. De keuzen zijn gegroepeerd in twee. Het onderste veld in het paar is de standaardwaarde die u wilt kopiëren, bijvoorbeeld public, unlist of private.
 Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later nodig wanneer u uw verwerkingsprofiel voor metagegevens maakt. Laat de teksteditor geopend.
 
-1. Selecteer **[!UICONTROL Cancel]** in de rechterbovenhoek van de pagina van de Editor van het metagegevensschema.
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Selecteer in de rechterbovenhoek van de pagina Metadata Schema Editor de optie **[!UICONTROL Cancel]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer vervolgens in de linkerspoorstaaf de optie **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 
-1. Selecteer **[!UICONTROL Create]** op de pagina Metagegevensprofielen in de rechterbovenhoek van de pagina.
-1. Typ in het dialoogvenster Metagegevensprofiel toevoegen in het tekstveld **[!UICONTROL Profile title]** de naam `YouTube Video` en selecteer **[!UICONTROL Create]**.
-1. Selecteer het tabblad **[!UICONTROL Advance]** op de pagina Metagegevensprofieleditor.
+1. Selecteer in de rechterbovenhoek van de pagina Metagegevensprofielen de optie **[!UICONTROL Create]**.
+1. In het dialoogvenster Metagegevensprofiel toevoegen vindt u in het dialoogvenster **[!UICONTROL Profile title]** tekstveld, voer de naam in `YouTube Video` Selecteer vervolgens **[!UICONTROL Create]**.
+1. Selecteer op de pagina Metadata Profile Editor de optie **[!UICONTROL Advance]** tab.
 1. Voeg de gekopieerde YouTube Publishing-waarden als volgt toe aan het profiel:
 
-   * Selecteer rechts van de pagina het tabblad **[!UICONTROL Build Form]**.
-   * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en zet deze neer in het formuliergebied.
+   * Selecteer rechts van de pagina de optie **[!UICONTROL Build Form]** tab.
+   * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en neer in het formuliergebied.
    * (Optioneel) Selecteer **[!UICONTROL Field Label]** om de component te selecteren.
-   * (Optioneel) Typ `YouTube Publishing` rechts van de pagina onder het tabblad Instellingen in het tekstveld Veld Label.
-   * Selecteer de tab **[!UICONTROL Build Form]**, sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de kop **[!UICONTROL YouTube Publishing]** die u hebt gemaakt.
+   * (Optioneel) Typ rechts van de pagina onder het tabblad Instellingen in het tekstveld Veld Label de tekst `YouTube Publishing`.
+   * Selecteer **[!UICONTROL Build Form]** en sleep de component met het label **[!UICONTROL Multi Value Text]** en laat het onder de **[!UICONTROL YouTube Publishing]** koptekst die u hebt gemaakt.
 
-   * Selecteer **[!UICONTROL Field Label]** om de component te selecteren.
+   * Als u de component wilt selecteren, selecteert u **[!UICONTROL Field Label]**.
    * Plak rechts van de pagina, onder het tabblad Instellingen, de YouTube Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in hun respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
 
 1. Voeg de gekopieerde YouTube-privacywaarden als volgt toe aan het profiel:
 
-   * Selecteer rechts van de pagina het tabblad **[!UICONTROL Build Form]**.
-   * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en zet deze neer in het formuliergebied.
+   * Selecteer rechts van de pagina de optie **[!UICONTROL Build Form]** tab.
+   * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en neer in het formuliergebied.
    * (Optioneel) Selecteer **[!UICONTROL Field Label]** om de component te selecteren.
-   * (Optioneel) Typ `YouTube Privacy` rechts van de pagina onder het tabblad Instellingen in het tekstveld Veld Label.
-   * Selecteer de tab **[!UICONTROL Build Form]** en sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de door u gemaakte kop **[!UICONTROL YouTube Privacy]**.
+   * (Optioneel) Typ rechts van de pagina onder het tabblad Instellingen in het tekstveld Veld Label de tekst `YouTube Privacy`.
+   * Selecteer **[!UICONTROL Build Form]** en sleep de component met het label **[!UICONTROL Multi Value Text]** en laat het onder de **[!UICONTROL YouTube Privacy]** door u gemaakte koptekst.
 
-   * Selecteer **[!UICONTROL Field Label]** om de component te selecteren.
+   * Als u de component wilt selecteren, selecteert u **[!UICONTROL Field Label]**.
    * Plak rechts van de pagina, onder het tabblad Instellingen, de YouTube Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in hun respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
 
-1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
 1. Pas het metagegevensprofiel voor YouTube Publishing toe op de mappen waarin u video&#39;s gaat uploaden. U moet zowel het profiel Metagegevens als het videoprofiel hebben ingesteld.
 
    Zie [Metadataprofielen](/help/assets/metadata-profiles.md) en [Videoprofielen](/help/assets/dynamic-media/video-profiles.md).
@@ -742,23 +742,23 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >**[!UICONTROL Publish Immediately]** betekent dat het geüploade element-nadat het met IPS-wordt gesynchroniseerd automatisch aan het leveringssysteem wordt gepubliceerd. Dat geldt voor Dynamic Media, maar dat geldt niet voor YouTube. Als u wilt publiceren naar YouTube, moet u publiceren als Experience Manager Auteur.
 
 >[!NOTE]
-Om inhoud van YouTube te publiceren, gebruikt de Experience Manager **[!UICONTROL Publish to YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
-Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+Voor het publiceren van inhoud vanuit YouTube gebruikt Experience Manager de optie **[!UICONTROL Publish to YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
+Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 **Video&#39;s publiceren naar uw YouTube-kanaal:**
 
 1. Navigeer in Experience Manager naar een video-element dat u naar het YouTube-kanaal wilt publiceren.
 1. Selecteer het video-element (de adaptieve videoset).
-1. Selecteer **[!UICONTROL Properties]** op de werkbalk.
-1. Selecteer op het tabblad Standaard onder de kop Metagegevens de optie **[!UICONTROL Open Selection Dialog]** rechts van het veld Codes.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]**.
+1. Selecteer op het tabblad Standaard onder de kop Metagegevens de optie **[!UICONTROL Open Selection Dialog]** rechts van het veld Tags.
 1. Navigeer op de pagina Codes selecteren naar de gewenste codes en selecteer een of meer codes.
 
    Vergeet niet dat de tags moeten worden gekoppeld aan het YouTube-kanaal.
 
-1. Selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
-1. Selecteer **[!UICONTROL Save and Close]** in de rechterbovenhoek van de eigenschappenpagina van de video.
-1. Selecteer **[!UICONTROL Quick Publish]** op de werkbalk.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
+1. Selecteer in de rechterbovenhoek van de eigenschappenpagina van de video de optie **[!UICONTROL Save and Close]**.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Quick Publish]**.
 
    Zie ook [Publicatiebeheer gebruiken met Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
@@ -768,11 +768,11 @@ Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replic
 
 U kunt optioneel de voortgang van het publiceren van YouTube (of het ongedaan maken van het publiceren) volgen.
 
-Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 De het publiceren tijden kunnen zeer afhankelijk van talrijke factoren variëren die het formaat van uw primaire bronvideo, dossiergrootte, en uploadverkeer omvatten. Het publicatieproces kan een paar minuten tot enkele uren duren. Bovendien worden indelingen met een hogere resolutie veel langzamer gerenderd. Het duurt bijvoorbeeld langer om 720p en 1080p weer te geven dan 480p.
 
-Als na acht uur nog steeds een statusbericht met de tekst **[!UICONTROL Uploaded (processing, please wait)]** wordt weergegeven, verwijdert u de video van uw site en uploadt u deze opnieuw.
+Na acht uur, als u nog een statusbericht ziet dat **[!UICONTROL Uploaded (processing, please wait)]**, verwijdert u de video van uw site en uploadt u deze opnieuw.
 
 ### YouTube-URL&#39;s koppelen aan uw webtoepassing {#linking-youtube-urls-to-your-web-application}
 
@@ -783,12 +783,12 @@ De YouTube-URL kan pas worden gekopieerd nadat u het video-element naar YouTube 
 
 YouTube-URL&#39;s koppelen aan uw webtoepassing:
 
-1. Navigeer naar het *YouTube gepubliceerde* videoelement waarvan u de URL wilt kopiëren en selecteer het.
+1. Ga naar de *YouTube gepubliceerd* video-element waarvan u de URL wilt kopiëren en selecteer het.
 
-   Onthoud dat YouTube-URL&#39;s alleen beschikbaar zijn om *after* te kopiëren. De video-elementen zijn eerst *gepubliceerd* naar YouTube.
+   Houd er rekening mee dat YouTube-URL&#39;s alleen beschikbaar zijn om te kopiëren *na* u hebt de eerste *gepubliceerd* de video-elementen naar YouTube.
 
-1. Selecteer **[!UICONTROL Properties]** op de werkbalk.
-1. Selecteer het tabblad **[!UICONTROL Advanced]**.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]**.
+1. Selecteer **[!UICONTROL Advanced]** tab.
 1. Selecteer onder YouTube Publishing in de URL-lijst van YouTube de URL-tekst die u naar uw webbrowser wilt kopiëren om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
 
 ### Publiceren van video&#39;s ongedaan maken zodat u deze kunt verwijderen uit YouTube {#unpublishing-videos-to-remove-them-from-youtube}
@@ -799,17 +799,17 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 Als u een video rechtstreeks uit YouTube verwijdert, is de Experience Manager zich hiervan niet bewust en gedragen deze zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element vanuit YouTube altijd ongedaan als Experience Manager.
 
 >[!NOTE]
-Om inhoud uit YouTube te verwijderen, gebruikt Experience Manager **[!UICONTROL Unpublish from YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
-Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+Om inhoud uit YouTube te verwijderen, gebruikt de Experience Manager **[!UICONTROL Unpublish from YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
+Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:**
 
 1. Navigeer naar de video-elementen waarvan u de publicatie via uw YouTube-kanaal wilt ongedaan maken.
 1. Selecteer in de modus voor middelenselectie een of meer gepubliceerde video-elementen.
-1. Selecteer **[!UICONTROL Manage Publication]** op de werkbalk. Selecteer zo nodig het drie puntenpictogram (`. . .`) op de werkbalk om **[!UICONTROL Manage Publication]** weer te geven.
-1. Selecteer **[!UICONTROL Unpublish]** op de pagina Publicatie beheren.
-1. Selecteer **[!UICONTROL Next]** in de rechterbovenhoek van de pagina.
-1. Selecteer **[!UICONTROL Unpublish]** in de rechterbovenhoek van de pagina.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Manage Publication]**. Selecteer indien nodig het pictogram met drie puntjes (`. . .`) op de werkbalk om te zien **[!UICONTROL Manage Publication]**.
+1. Selecteer op de pagina Publicatie beheren de optie **[!UICONTROL Unpublish]**.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Next]**.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Unpublish]**.
 
 ## Video-codering en YouTube-publicatievoortgang controleren {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -825,32 +825,32 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
-   * In de lijstweergave wordt de voortgang van de videocodering weergegeven in de kolom **[!UICONTROL Processing Status]**. Als er een fout is, wordt dit bericht in dezelfde kolom weergegeven.
+   * In de lijstweergave wordt de voortgang van de videocodering weergegeven in het dialoogvenster **[!UICONTROL Processing Status]** kolom. Als er een fout is, wordt dit bericht in dezelfde kolom weergegeven.
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   Deze kolom wordt niet standaard weergegeven. Als u de kolom wilt inschakelen, selecteert u **[!UICONTROL View Settings]** in het keuzemenu Weergaven, voegt u de kolom **[!UICONTROL Processing Status]** toe en selecteert u **[!UICONTROL Update]**.
+   Deze kolom wordt niet standaard weergegeven. Selecteer **[!UICONTROL View Settings]** in het vervolgkeuzemenu Weergaven en voeg de opdracht **[!UICONTROL Processing Status]** kolom en selecteer **[!UICONTROL Update]**.
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. De voortgang van de elementen weergeven. Wanneer u een element selecteert, opent u het keuzemenu en selecteert u **[!UICONTROL Timeline]**. Selecteer **[!UICONTROL Workflows]** om deze te beperken tot workflowactiviteiten zoals coderen of YouTube-publicatie.
+1. De voortgang van de elementen weergeven. Wanneer u een element selecteert, opent u het keuzemenu en selecteert u **[!UICONTROL Timeline]**. Selecteer **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
    Workflowinformatie, zoals codering, wordt weergegeven in de tijdlijn. Voor YouTube-publicatie bevat de tijdlijn van de workflow ook de naam van het YouTube-kanaal en de YouTube-video-URL. Bovendien ziet u eventuele foutmeldingen in de tijdlijn van de workflow nadat het publiceren is voltooid.
 
    >[!NOTE]
-   Het kan lang duren voordat foutberichten/foutberichten definitief worden opgenomen vanwege meerdere workflowconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   Het kan lang duren voordat foutberichten of foutberichten definitief worden opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    * Configuratie Apache Sling-taakwachtrij
    * Adobe Granite-workflow - Externe verwerking van taken
    * Tijdelijke wachtrij voor Granite Workflow
 
-   U kunt de eigenschappen **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** in deze configuraties aanpassen.
+   U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
 
 1. Zie Workflowinstanties beschikbaar via **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]** voor actieve workflows.
 
    >[!NOTE]
-   U hebt beheerrechten nodig om toegang te krijgen tot het menu **[!UICONTROL Tools]**.
+   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -858,27 +858,27 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   Vanuit het gebied Workflowinstanties kunt u workflows ook opschorten, beëindigen of hernoemen. Zie [Workflows beheren](/help/sites-cloud/authoring/workflows/overview.md) voor meer informatie.
+   Vanuit het gebied Workflowinstanties kunt u workflows ook opschorten, beëindigen of hernoemen. Zie [Workflows beheren](/help/sites-cloud/authoring/workflows/overview.md) voor meer informatie .
 
 1. Voor mislukte taken raadpleegt u de beschikbare workflowfouten in **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. De lijst **[!UICONTROL Workflow Failure]** bevat alle mislukte workflowactiviteiten.
 
    >[!NOTE]
-   U hebt beheerrechten nodig om toegang te krijgen tot het menu **[!UICONTROL Tools]**.
+   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   Het kan lang duren voordat het foutbericht eindelijk wordt opgenomen vanwege meerdere workflowconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   Het kan lang duren voordat het foutbericht eindelijk is opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    * Configuratie Apache Sling-taakwachtrij
    * Adobe Granite-workflow - Externe verwerking van taken
    * Tijdelijke wachtrij voor Granite Workflow
 
-   U kunt de eigenschappen **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** in deze configuraties aanpassen.
+   U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
 
 1. Zie Workflowarchief in **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]** voor voltooide workflows. In **[!UICONTROL Workflow Archive]** vindt u een lijst met alle voltooide workflowactiviteiten.
 
    >[!NOTE]
-   U hebt beheerrechten nodig om toegang te krijgen tot het menu **[!UICONTROL Tools]**.
+   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -935,7 +935,7 @@ For YouTube publishing jobs, do the following:
 >[!NOTE]
 Videorapporten zijn alleen beschikbaar wanneer u de modus Dynamic Media - Hybride uitvoert.
 
-De videorapporten tonen verscheidene gezamenlijke metriek over een gespecificeerde periode om u te helpen controleren dat *gepubliceerde* individuele en gezamenlijke video&#39;s zoals verwacht presteren. De volgende statistische gegevens worden geaggregeerd voor alle gepubliceerde video&#39;s op uw gehele website:
+Videorapporten geven verschillende statistische gegevens over een bepaalde periode weer, zodat u kunt controleren of *gepubliceerd* individuele en geaggregeerde video&#39;s worden uitgevoerd zoals u had verwacht. De volgende statistische gegevens worden geaggregeerd voor alle gepubliceerde video&#39;s op uw gehele website:
 
 * Video start
 * Voltooiingssnelheid
@@ -943,7 +943,7 @@ De videorapporten tonen verscheidene gezamenlijke metriek over een gespecificeer
 * Totale tijd op video
 * Video&#39;s per bezoek
 
-Er wordt ook een tabel met alle *gepubliceerde* video&#39;s weergegeven, zodat u de bovenste weergegeven video&#39;s op uw website kunt bijhouden op basis van het totale aantal videobeelden dat wordt gestart.
+Een tabel met alle *gepubliceerd* de video&#39;s worden ook vermeld, zodat u de bovenste weergegeven video&#39;s op uw website kunt bijhouden op basis van het totale aantal video&#39;s dat wordt gestart.
 
 Wanneer u een videonaam in de lijst selecteert, wordt het rapport voor het vasthouden van het publiek van de video (drop-off) weergegeven in de vorm van een lijndiagram. Het diagram toont het aantal weergaven voor een bepaald tijdstip tijdens het afspelen van video. Wanneer u de video afspeelt, wordt de verticale balk gesynchroniseerd met de tijdindicator in de speler. De vallen in de gegevens van het lijndiagram wijzen op waar uw publiek van oninteresse wegvalt.
 
@@ -954,20 +954,20 @@ Het bijhouden en rapporteren van gegevens is uitsluitend gebaseerd op het gebrui
 
 Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogegevens die bij de eerste van de huidige maand beginnen en met de datum van de huidige maand beëindigen. U kunt het standaarddatumbereik echter overschrijven door uw eigen datumbereik op te geven. De volgende keer dat u Video-rapporten invoert, wordt het opgegeven datumbereik gebruikt.
 
-Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Services van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]** selecteren.
+Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Services van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]**.
 
 **Videorapporten weergeven:**
 
-1. In de upper-left hoek van Experience Manager, selecteer het embleem van de Experience Manager, dan in de linkerspoorstaaf, navigeer aan **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkerspoorstaaf naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
 
-   * Selecteer bij de rechterbovenhoek het pictogram **[!UICONTROL Refresh Video Report]**.
+   * Selecteer in de rechterbovenhoek de optie **[!UICONTROL Refresh Video Report]** pictogram.
 U gebruikt verfrissen slechts als de einddatum van het rapport de huidige dag is. Deze eigenschap zorgt ervoor dat u video het volgen ziet die sinds de laatste tijd is voorgekomen u het rapport in werking stelde.
 
-   * Selecteer bij de rechterbovenhoek het pictogram **[!UICONTROL Date Picker]**.
+   * Selecteer in de rechterbovenhoek de optie **[!UICONTROL Date Picker]** pictogram.
 Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en selecteer **[!UICONTROL Run Report]**.
 
-   In het groepsvak Metriek bovenaan ziet u diverse geaggregeerde metingen voor alle *gepubliceerde* video&#39;s op uw site.
+   Het groepsvak Bovenste metagegevens identificeert verschillende samengestelde metingen voor alle *gepubliceerd* video&#39;s op uw site.
 
 1. Selecteer in de tabel met de bovenste gepubliceerde video&#39;s een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
@@ -1035,18 +1035,20 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Bijschriften of ondertitels toevoegen aan video {#adding-captions-to-video}
+## Gesloten bijschriften of ondertitels toevoegen aan video {#adding-captions-to-video}
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen vermijdt u de noodzaak om de audio te dupliceren, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
-Ondertiteling maakt ook een betere toegankelijkheid mogelijk door ondertiteling te gebruiken voor doven of slechthorenden.
+Ondertiteling met gesloten deuren zorgt ook voor betere toegankelijkheid voor doven of slechthorenden.
 
 >[!NOTE]
-De videospeler die u gebruikt moet de vertoning van titels steunen.
+De videospeler die u gebruikt moet de vertoning van gesloten titels steunen.
+
+Zie ook [Toegankelijkheid in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media kan bijschriftbestanden omzetten in de indeling JSON (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud dan verkennen of indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) voor meer informatie over het gebruik van de JSON-functie in een URL.
+Zie [Statische (niet-afbeeldings) inhoud bedienen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) voor meer informatie over het gebruik van de functie JSON in een URL.
 
 **Bijschriften of ondertitels toevoegen aan video:**
 
@@ -1054,15 +1056,15 @@ Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/doc
 
    Zorg ervoor dat het bestand dat u maakt, voldoet aan de WebVTT-standaard (Web Video Text Tracks). De bestandsnaamextensie voor ondertiteling is .VTT. U kunt meer informatie over de WebVTT ondertitelingsnorm leren.
 
-   Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
+   Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
 
    Er zijn zowel gratis als premiumtools en -services die u kunt gebruiken voor het schrijven van bijschriften en ondertitelingsbestanden buiten Dynamic Media. Als u bijvoorbeeld een eenvoudig videobijschriftbestand zonder opmaak wilt maken, kunt u de volgende gratis gereedschappen voor het maken en bewerken van bijschriften gebruiken:
 
    [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   U bereikt de beste resultaten met het programma in Internet Explorer 9 of hoger, Google Chrome of Safari.
+   U bereikt het beste resultaat met het gereedschap in Internet Explorer 9 of hoger, Google Chrome of Safari.
 
-   Plak in het veld **[!UICONTROL Enter URL of video file]** van het gereedschap de gekopieerde URL van het videobestand en selecteer **[!UICONTROL Load]**. Zie [Een URL verkrijgen voor een element](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen, dat u vervolgens in **[!UICONTROL Enter URL of video file field]** kunt plakken. Internet Explorer, Chrome of Safari kunnen de video vervolgens op een native manier afspelen.
+   In het hulpmiddel, in **[!UICONTROL Enter URL of video file]** veld, plak de gekopieerde URL van het videobestand en selecteer vervolgens **[!UICONTROL Load]**. Zie [Een URL ophalen voor een element](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen, die u vervolgens in het deelvenster **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome of Safari kunnen de video vervolgens op een native manier afspelen.
 
    Volg nu de aanwijzingen op het scherm van de site om het WebVTT-bestand te ontwerpen en op te slaan. Wanneer u klaar bent, kopieert u de inhoud van het bijschriftbestand en plakt u deze in een teksteditor zonder opmaak en slaat u het bestand op met de bestandsnaamextensie VTT.
 
@@ -1072,7 +1074,7 @@ Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/doc
    Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, of -FR of -DE. Hierdoor kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 
 1. Upload in Experience Manager uw WebVTT-bijschriftbestand naar DAM.
-1. Navigeer naar het *gepubliceerde*-videoelement dat u wilt koppelen aan het bijschriftbestand dat u hebt geüpload.
+1. Ga naar de *gepubliceerd* video-element dat u wilt koppelen aan het bijschriftbestand dat u hebt geüpload.
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*.
 
@@ -1080,17 +1082,17 @@ Zie [Statische (niet-afbeeldings) inhoud](https://experienceleague.adobe.com/doc
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer **[!UICONTROL URL]** voor een ervaring met een pop-upvideoviewer. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
+   * Voor een pop-upviewerervaring voor video selecteert u **[!UICONTROL URL]**. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Noteer `,1` aan het einde van het bijschriftpad. Direct na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor het gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door respectievelijk `,1` of `,0` in te stellen.
+      Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
 
-   * Selecteer **[!UICONTROL Embed Code]** voor een ingesloten videoviewerervaring. Selecteer in het dialoogvenster Code insluiten de insluitcode en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor. Voeg de gekopieerde insluitcode toe met de volgende syntaxis:
+   * Voor een ingesloten videoviewerervaring selecteert u **[!UICONTROL Embed Code]**. Selecteer in het dialoogvenster Code insluiten de insluitcode en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor. Voeg de gekopieerde insluitcode toe met de volgende syntaxis:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Noteer `,1` aan het einde van het bijschriftpad. Direct na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor het gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door respectievelijk `,1` of `,0` in te stellen.
+      Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
 
 ## Hoofdstukmarkeringen aan video toevoegen {#adding-chapter-markers-to-video}
 
@@ -1123,11 +1125,11 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-In het bovenstaande voorbeeld is `Chapter 1` de cue-id en is deze optioneel. De cuetijd van `00:00:000 --> 01:04:364` specificeert de begintijd en eindtijd van het hoofdstuk, in formaat `00:00:000`. Die laatste drie cijfers zijn milliseconden en kunnen als `000`, indien gewenst worden verlaten. De hoofdstuktitel van `The bicycle store behind it all` is de daadwerkelijke beschrijving van de inhoud van het hoofdstuk. De actidentificator, de begintijd en de hoofdstuktitel worden allemaal in een pop-up in de videospeler weergegeven wanneer een gebruiker de muisaanwijzer boven een visueel actiepunt in de tijdlijn plaatst.
+In het bovenstaande voorbeeld: `Chapter 1` is de cue-id en is optioneel. De actieduur van `00:00:000 --> 01:04:364` geeft de begin- en eindtijd van het hoofdstuk aan, in `00:00:000` gebruiken. De laatste drie cijfers zijn milliseconden en kunnen als volgt worden verlaten `000`, indien gewenst. De titel van het hoofdstuk `The bicycle store behind it all` Dit is de feitelijke beschrijving van de inhoud van het hoofdstuk. De actidentificator, de begintijd en de hoofdstuktitel worden allemaal in een pop-up in de videospeler weergegeven wanneer een gebruiker de muisaanwijzer boven een visueel actiepunt in de tijdlijn plaatst.
 
 Omdat u een HTML5-videoviewer gebruikt, moet u ervoor zorgen dat het hoofdstukbestand dat u maakt, voldoet aan de WebVTT-standaard (Web Video Text Tracks). De bestandsextensie van het hoofdstuk is .VTT. U kunt meer informatie over de WebVTT ondertitelingsnorm leren.
 
-Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
+Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
 
 **Hoofdstukmarkeringen aan video toevoegen:**
 
@@ -1146,10 +1148,10 @@ Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
        <td>Voor een ervaring met een pop-upvideoviewer</td>
        <td>
        <ol>
-       <li>Navigeer naar het <i>gepubliceerde </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Elementen publiceren.</a></li>
-       <li>Selecteer <strong>Viewers</strong> in het keuzemenu.</li>
+       <li>Ga naar de <i>gepubliceerd </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Middelen publiceren.</a></li>
+       <li>Selecteer in het keuzemenu vervolgens <strong>Viewers</strong>.</li>
        <li>Selecteer in de linkertrack de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
-       <li>Selecteer <strong>URL</strong> in het linkerspoor onderaan.</li>
+       <li>Selecteer in het linkerspoor, onderaan <strong>URL</strong>.</li>
        <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li>
        <li>Voeg de gekopieerde URL van de video toe aan de volgende syntaxis, zodat u deze kunt koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
@@ -1158,10 +1160,10 @@ Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
        <td>Voor een ingesloten videoviewerervaring<br /> </td>
        <td>
        <ol>
-       <li>Navigeer naar het <i>gepubliceerde </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Elementen publiceren.</a></li>
-       <li>Selecteer <strong>Viewers</strong> in het keuzemenu.</li>
+       <li>Ga naar de <i>gepubliceerd </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Middelen publiceren.</a></li>
+       <li>Selecteer in het keuzemenu vervolgens <strong>Viewers</strong>.</li>
        <li>Selecteer in de linkertrack de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
-       <li>Selecteer <strong>Insluiten</strong> in de linkerrail onderaan.</li>
+       <li>Selecteer in het linkerspoor, onderaan <strong>Insluiten</strong>.</li>
        <li>Selecteer in het dialoogvenster Code insluiten de gehele code en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor.</li>
        <li>Voeg de insluitcode van de video toe aan de volgende syntaxis, zodat u deze kunt koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
