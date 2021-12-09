@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
-source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
+source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2867'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Geavanceerde netwerken configureren voor AEM as a Cloud Service {#configuring-advanced-networking}
 
 Dit artikel is bedoeld om u aan de verschillende geavanceerde voorzien van een netwerkeigenschappen in AEM as a Cloud Service, met inbegrip van zelf-serverlevering van VPN, niet-standaardhavens, en specifieke uitgangIP adressen te introduceren.
+
+>[!INFO]
+>
+>U kunt ook een reeks artikelen vinden die zijn ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties bij dit te laten lopen [locatie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
 
 ## Overzicht {#overview}
 
