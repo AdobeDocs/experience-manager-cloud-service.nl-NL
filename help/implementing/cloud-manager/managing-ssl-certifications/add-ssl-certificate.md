@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM als Cloud Service accepteert alleen OV-(Organisatie-validatie) of EV-(Uitgebreide validatie) certificaten. DV-certificaten (Domain Validation) worden niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel. AEM als Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
+>AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation). Het DV-beleid (Domain Validation) wordt niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel. AEM as a Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
 
-Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Raadpleeg [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
+Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Zie [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie .
 
 ## Certificaatindeling {#certificate-format}
 
-SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder andere `.pem,`.`crt`,  `.cer`en  `.cert`.
+SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder meer `.pem,` .`crt`, `.cer`, en `.cert`.
 
 Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converteren naar PEM:
 
@@ -46,45 +46,91 @@ Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converte
 Voer de onderstaande stappen uit om een certificaat toe te voegen:
 
 1. Meld u aan bij Cloud Manager.
-1. Navigeer naar **Environment**-scherm vanaf de pagina **Overzicht**.
-1. Klik op **SSL Certificaten** van het linkernavigatiemenu. Op dit scherm wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
+1. Navigeren naar **Omgevingen** scherm van **Overzicht** pagina.
+1. Klikken op **SSL-certificaten** in het navigatiemenu aan de linkerkant. Op dit scherm wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Klik op **SSL-certificaat toevoegen** om het dialoogvenster **SSL-certificaat toevoegen** te openen.
+1. Klikken op **SSL-certificaat toevoegen** openen **SSL-certificaat toevoegen** in.
 
-   * Geef een naam voor het certificaat op in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
-   * Plak de **Certificaatketen**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectievelijke velden. Gebruik het plakpictogram rechts van het invoervak.
+   * Geef een naam op voor uw certificaat in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
+   * Plak de **Certificaat**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectieve velden. Gebruik het plakpictogram rechts van het invoervak.
 De drie velden zijn niet optioneel en moeten worden opgenomen.
 
       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
 
       >[!NOTE]
-      >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Verwijs naar [de Fouten van het Certificaat](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
+      >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Zie de [Certificaatfouten](#certificate-errors) meer te leren over het richten van gemeenschappelijke fouten.
 
-1. Klik **Opslaan** om uw certificaat te verzenden. U ziet het als een nieuwe rij in de tabel.
+1. Klikken **Opslaan** om uw certificaat in te dienen. U ziet het als een nieuwe rij in de tabel.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Certificaatfouten {#certificate-errors}
 
+### Certificaatbeleid {#certificate-policy}
+
+Als de fout &quot;Certificaatbeleid moet in overeenstemming zijn met OV of OV en niet met DV-beleid.&quot; wordt weergegeven, controleert u het beleid van uw certificaat.
+
+Normaliter worden certificaattypen geïdentificeerd door de OID-waarden die zijn ingesloten in het beleid. Deze OID&#39;s zijn uniek en daarom wordt bij het converteren van een certificaat naar een tekstformulier en het zoeken naar de OID bevestigd dat het certificaat een overeenkomst heeft.
+
+U kunt de certificaatdetails als volgt bekijken.
+
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
+
+Deze tabellen bieden identificatie van patronen.
+
+| Patroon | Certificaattype | Aanvaardbaar |
+|---|---|---|
+| `2.23.140.1.2.1` | DV | Nee |
+| `2.23.140.1.2.2` | OV | Ja |
+| `2.23.140.1.2.3` and `TLS Web Server Authentication` | IV cert met toestemming voor gebruik voor https | Ja |
+
+`grep`pingelen voor de patronen, kunt u uw certificaattype bevestigen.
+
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
+
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
+
 ### Certificaatvolgorde corrigeren {#correct-certificate-order}
 
-De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn. Met name moeten tussentijdse certificaatbestanden eindigen op het basiscertificaat of het basiscertificaat dat zich het dichtst bij het basiscertificaat bevindt en in aflopende volgorde staan, van het `main/server`-certificaat tot het basiscertificaat.
+De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn. Met name tussentijdse certificaatbestanden moeten eindigen op het basiscertificaat of het basiscertificaat dat zich het dichtst bij het basiscertificaat bevindt en in aflopende volgorde staan vanaf het basiscertificaat `main/server` certificaat aan de wortel.
 
 U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel:
 
 `openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
 
-Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het `main/server`-certificaat overeenkomen:
+U kunt controleren of de persoonlijke sleutel en `main/server` certificaat komt overeen met behulp van de volgende opdrachten:
 
 `openssl x509 -noout -modulus -in certificate.pem | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel kunt vinden voor uw `main/server`-certificaat, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
+>De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel kunt vinden voor uw `main/server` -certificaat, moet u het certificaat opnieuw coderen door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
 
 ### Geldigheidsdatums certificaat {#certificate-validity-dates}
 
