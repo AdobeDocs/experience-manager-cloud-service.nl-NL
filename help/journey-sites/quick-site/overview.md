@@ -1,7 +1,7 @@
 ---
 title: Reis voor snel maken van site AEM
 description: Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis.
-source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Deze documentatietraject leidt u door alle functies in de video stap voor stap e
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
@@ -54,16 +54,7 @@ Deze reis beschrijft de vereisten, de stappen, en de benadering om de thema&#39;
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen bieden u basiskennis van het maken en aanpassen van AEM sites met het gereedschap Snel site maken en bieden een koppeling naar gedetailleerde technische documentatie.
 
-|#|Artikel|Beschrijving|Verantwoordelijke rol|
-|---|---|---|---|
-|0|AEM Snel site-ontwerppad|Dit document|AEM &amp; Cloud Manager-beheerders|
-|1|[Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites](cloud-manager.md)|Leer meer over Cloud Manager en hoe deze functie het nieuwe proces voor het maken van snelle sites samenbrengt.|AEM Beheerder|
-|2|[Site maken van sjabloon](create-site.md)|Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.|AEM Beheerder|
-|3|[De pijplijn instellen](pipeline-setup.md)|Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.|Beheerder van wolkenbeheer|
-|4|[Toegang verlenen aan de front-end ontwikkelaar](grant-access.md)|Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.|Beheerder van wolkenbeheer|
-|5|[Toegangsgegevens van opslagplaats ophalen](retrieve-access.md)|Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot informatie in de git-opslagplaats.|Front-endontwikkelaar|
-|6|[Het sitethema aanpassen](customize-theme.md)|Leer hoe een site-thema is gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.|Front-endontwikkelaar|
-|7|[Uw aangepaste thema implementeren](deploy-theme.md)|Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.|Front-endontwikkelaar|
+|#|Artikel|Beschrijving|Verantwoordelijke rol| |—|—|—|—| |0|AEM Snel site-ontwerppad|Dit document|AEM &amp; Cloud Manager-beheerders| |1|[Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites](cloud-manager.md)|Leer meer over Cloud Manager en hoe deze functie het nieuwe proces voor het maken van snelle sites samenbrengt.|AEM Beheerder| |2|[Site maken van sjabloon](create-site.md)|Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.|AEM Beheerder| |3|[De pijplijn instellen](pipeline-setup.md)|Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.|Beheerder van wolkenbeheer| |4|[Toegang verlenen aan de front-end ontwikkelaar](grant-access.md)|Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.|Beheerder van wolkenbeheer| |5|[Toegangsgegevens van opslagplaats ophalen](retrieve-access.md)|Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot informatie in de git-opslagplaats.|Front-endontwikkelaar| |6|[Het sitethema aanpassen](customize-theme.md)|Leer hoe een site-thema is gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.|Front-endontwikkelaar| |7|[Uw aangepaste thema implementeren](deploy-theme.md)|Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.|Front-endontwikkelaar|
 
 ## Volgende functies {#what-is-next}
 

@@ -1,35 +1,34 @@
 ---
-title: AEM Screens als Cloud Service
-description: Adobe Experience Manager Screens als zelfhulp-bronnen en documentatiekoppelingen voor Cloud Servicen
+title: AEM Screens as a Cloud Service
+description: Adobe Experience Manager Screens as a Cloud Service zelfhulpbronnen en documentatiekoppelingen
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 50%
+source-wordcount: '408'
+ht-degree: 47%
 
 ---
 
-# AEM Screens als Cloud Service {#aem-screens-as-a-cloud-service-guide}
+# AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Deze pagina bevat een overzicht van de bronnen voor zelfhulp met betrekking tot AEM Screens als Cloud Service.
+Deze pagina bevat een overzicht van de bronnen voor zelfhulp met betrekking tot as a Cloud Service AEM Screens.
 
 >[!NOTE]
->Voor AEM Screens met AEM 6.5, zie [Handboek van de Gebruiker van AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>Voor AEM Screens met AEM 6.5, zie [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
 
 
-## Belangrijke inhoud en AEM Screens als artikelen voor Cloud Servicen {#key-articles}
+## Belangrijke inhoud en as a Cloud Service AEM Screens-artikelen {#key-articles}
 
 * [Inleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
 * [Schermservices en inhoudsprovider configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [Een project op schermen maken als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Een project maken in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [Schermspeler installeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur, enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |

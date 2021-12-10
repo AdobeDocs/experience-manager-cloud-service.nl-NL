@@ -2,10 +2,10 @@
 title: AEM Inhoud en Handel
 description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 57%
+source-wordcount: '350'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en H
 
 >[!NOTE]
 >
->Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF, zie [AEM 6.5 Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF, zie [AEM 6.5 Inhoud en handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 ## Belangrijke artikelen voor inhoud en handel {#key-articles}
 
@@ -27,7 +27,6 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en H
 
 | Handboek | Beschrijving |
 |---|---|
-| [Startpagina Experience Manager as a Cloud Service](/help/landing/home.md) | Start hier voor een overzicht van de documentatie over Experience Manager as a Cloud Service. |
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur, enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |

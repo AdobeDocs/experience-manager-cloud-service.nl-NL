@@ -4,13 +4,13 @@ description: Begin hier voor een begeleide reis door uw AEM Sites-inhoud te vert
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 08127d72c84d6f47f5058ef631dc3128114f1953
+exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 1%
 
 ---
-
 
 # AEM Sites-vertaalreis {#aem-sites-translation-journey}
 
@@ -22,11 +22,11 @@ AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale erva
 
 AEM biedt even krachtige hulpmiddelen om uw inhoud te vertalen die u toestaat om het aan uw publiek in andere regio&#39;s of scènes zo snel mogelijk te leveren. Deze documentatierit introduceert u aan de auteurshulpmiddelen zodat u begrijpt hoe de inhoud in AEM wordt gecreeerd en wordt beheerd en dan duikt in wat u moet weten om uw eigen vertaalproject te beheren.
 
-Als u al bekend bent met AEM Sites en uw vertaalvereisten, hebt u wellicht al de grondkennis van deze reis. Als dat het geval is, kunt u overwegen te verwijzen naar onze technische documentatie die is gekoppeld onder de sectie [Aanvullende bronnen hieronder.](#additional-resources)
+Als u al bekend bent met AEM Sites en uw vertaalvereisten, hebt u wellicht al de grondkennis van deze reis. Als dat het geval is, kunt u overwegen te verwijzen naar onze technische documentatie die is gekoppeld onder de [Aanvullende bronnen hieronder.](#additional-resources)
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een Documentation ](/help/journey-documentation/home.md) Journeyties verenigt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
@@ -47,7 +47,7 @@ Het volgende is de persoon die in deze reis interactie heeft.
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De vertaalspecialist werkt met de beheerder om configuratieveranderingen nodig voor vertaling zoals het installeren van een vertaalschakelaar aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die als plaatsen moeten worden geleverd en bepaalt de structuur voor deze gegevens | Vertaalspecialisten werken samen met de inhoudarchitect om de organisatie van de inhoud te bepalen zodat het gemakkelijk kan worden vertaald. |
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
+Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## De reis van de Vertaling van Plaatsen {#the-journey}
 
@@ -67,14 +67,14 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met de vertaalreis van uw Adobe sites. We raden u aan door te gaan met het volgende deel van de reis en het artikel [Meer informatie over de inhoud van sites en hoe u het vertaalt in AEM](learn-about.md) te lezen
+U bent nu klaar om aan de slag te gaan met de vertaalreis van uw Adobe sites. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Meer informatie over de inhoud van sites en hoe u deze vertaalt in AEM](learn-about.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
 Bekijk deze extra bronnen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
-* [Headless Authoring Journey](/help/journey-headless/author/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u uw inhoud kunt modelleren op uw eerste project zonder kop.
-* [Headless Architect Journey](/help/journey-headless/architect/overview.md)  - Begin hier voor een introductie van de krachtige, flexibele, ongekende functies van Adobe Experience Manager als Cloud Service en hoe u inhoud voor uw project kunt modelleren.
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  - Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u ze kunt gebruiken voor uw eerste ontwikkelingsproject.
-* [AEM als technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  van de Cloud Service - Als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
-* [AEM headless zelfstudies](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Als u liever wilt leren door te doen en technisch georiënteerd bent, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken.
+* [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
+* [Architect zonder hoofd](/help/journey-headless/architect/overview.md) - Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt modelleren.
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
+* [as a Cloud Service technische documentatie AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - Als u al een duidelijk inzicht hebt in AEM en technologieën zonder kop, kunt u onze diepgaande technische documenten direct raadplegen.
+* [Zelfstudies zonder koppen AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Als u liever wilt leren door te doen en technisch georiënteerd bent, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken.
