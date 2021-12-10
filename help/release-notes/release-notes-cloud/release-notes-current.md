@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
@@ -205,3 +205,14 @@ De releasedatum voor de analyse van best practices v2.1.22 is 1 december 2021.
 
 * Detection of Foundation components was verfijnd om valse negatieven te verminderen.
 * Voor AEM Forms-klanten geldt dat BPA-berichten `EMAIL_PDF_SUBMIT_ACTION` niet beschikbaar zijn op AEM as a Cloud Service is opgelost.
+
+## De tool Content Transfer {#ctt-release}
+
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v1.7.10 is 8 december 2021.
+
+### Wat is er nieuw? {#what-is-new-ctt}
+
+* In-/uitschakelen van aan de invoerfase in het gereedschap Inhoud overbrengen om gebruikers in staat te stellen [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) tijdens inname. Voor een optimale inname moet de voorkopie tijdens inname worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste inname slechts een paar blobs zijn toegevoegd.
+* Gebruikerstoewijzing bijgewerkt om de verbeterde gebruikersbeheer-API te gebruiken waarmee 2000 gebruikers tegelijk kunnen worden opgehaald, hetgeen de prestaties aanzienlijk verbetert.
