@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.12.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.12.0
 feature: Release Information
-source-git-commit: 587258a831fb5cd3b3a23d1f891db8c2254a8d6b
+source-git-commit: 58dcf083ebf4cd2546213ba574f0f9c547aef008
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,3 +33,15 @@ De releasedatum voor de analyse van best practices v2.1.22 is 1 december 2021.
 
 * Detection of Foundation components was verfijnd om valse negatieven te verminderen.
 * Voor AEM Forms-klanten geldt dat BPA-berichten `EMAIL_PDF_SUBMIT_ACTION` niet beschikbaar zijn op AEM as a Cloud Service is opgelost.
+
+
+## De tool Content Transfer {#ctt-release}
+
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v1.7.10 is 8 december 2021.
+
+### Wat is er nieuw? {#what-is-new-ctt}
+
+* In-/uitschakelen van aan de invoerfase in het gereedschap Inhoud overbrengen om gebruikers in staat te stellen [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) tijdens inname. Voor een optimale inname moet de voorkopie tijdens inname worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste inname slechts een paar blobs zijn toegevoegd.
+* Gebruikerstoewijzing bijgewerkt om de verbeterde gebruikersbeheer-API te gebruiken waarmee 2000 gebruikers tegelijk kunnen worden opgehaald, hetgeen de prestaties aanzienlijk verbetert.
