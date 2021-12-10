@@ -1,10 +1,11 @@
 ---
 title: Compatibiliteit
-description: Compatibiliteit
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in as a Cloud Service Experience Manager.
+landing-page-description: Voor een overzicht van de compatibiliteit in AEM als cloudservice, inclusief privacy en toegankelijkheid, kunt u hier beginnen.
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 67%
+source-wordcount: '394'
+ht-degree: 61%
 
 ---
 

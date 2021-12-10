@@ -1,11 +1,12 @@
 ---
 title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
+landing-page-description: Deze handleiding geeft een overzicht van hoe u aan de slag kunt met AEM as a Cloud Service, inclusief hoe u toegang krijgt en belangrijke informatie over gegevensbescherming.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 21%
+source-wordcount: '526'
+ht-degree: 20%
 
 ---
 
