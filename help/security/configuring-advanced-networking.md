@@ -1,9 +1,9 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 0%
 
 ---
@@ -78,17 +78,17 @@ Zie voor meer informatie de [Documentatie voor API voor cloud Manager](https://d
 
 ### Verkeer dat {#flexible-port-egress-traffic-routing}
 
-Het verkeer van HTTP of https die naar bestemmingen door havens 80 of 443 gaan zal door een preconfigured volmacht gaan, veronderstellend de standaard het voorzien van een netwerkbibliotheek van Java wordt gebruikt. Voor HTTP of https verkeer die door andere havens gaan zou een volmacht moeten worden gevormd gebruikend de volgende eigenschappen.
+Voor HTTP of https verkeer die naar havens buiten 80 of 443 gaan zou een volmacht moeten worden gevormd gebruikend de volgende gastheer en havenmilieuvariabelen:
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* voor HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (standaard `proxy.tunnel:3128` AEM lozingen &lt; 6094)
+* voor HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (standaard `proxy.tunnel:3128` AEM lozingen &lt; 6094)
 
 Hier ziet u bijvoorbeeld een voorbeeldcode voor het verzenden van een aanvraag naar `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -111,10 +111,10 @@ De lijst hieronder beschrijft verkeer dat verplettert:
 <thead>
   <tr>
     <th>Verkeer</th>
-    <th>Detectievoorwaarde</th>
+    <th>Doelvoorwaarde</th>
     <th>Poort</th>
     <th>Verbinding</th>
-    <th>Voorbeeld</th>
+    <th>Voorbeeld van externe bestemming</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ De lijst hieronder beschrijft verkeer dat verplettert:
   </tr> 
   <tr>
     <td></td>
-    <td>Niet-standaardverkeer (op andere havens buiten 80 of 443) door http volmacht die gebruikend deze omgevingsvariabelen wordt gevormd:<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>Niet-standaardverkeer (op andere havens buiten 80 of 443) door http volmacht die gebruikend de volgende omgevingsvariabele en het aantal van de volmachtshaven wordt gevormd. Declareer niet de bestemmingshaven in de de vraag portForwards van de API van de Manager van de Wolk parameter:<br><ul>
+     <li>AEM_PROXY_HOST (gebrek aan ` proxy.tunnel ` in AEM versies &lt; 6094)</li>
+     <li>AEM_HTTPS_PROXY_PORT (standaard poort 3128 in AEM releases &lt; 6094)</li>
     </ul>
     <td>Poorten buiten 80 of 443</td>
     <td>Toegestaan</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ De lijst hieronder beschrijft verkeer dat verplettert:
 De AEM Cloud Service Apache/Dispatcher-laag `mod_proxy` de richtlijn kan worden gevormd gebruikend de hierboven beschreven eigenschappen.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres
 
 ### Verkeer dat {#dedcated-egress-ip-traffic-routing}
 
+Het verkeer van HTTP of https die naar bestemmingen door havens 80 of 443 gaan zal door een preconfigured volmacht gaan, veronderstellend de standaard het voorzien van een netwerkbibliotheek van Java wordt gebruikt. Voor HTTP of https verkeer die door andere havens gaan zou een volmacht moeten worden gevormd gebruikend de volgende eigenschappen.
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+Hier ziet u bijvoorbeeld een voorbeeldcode voor het verzenden van een aanvraag naar `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+Als het gebruiken van niet-standaard het voorzien van een netwerkbibliotheken van Java, vorm volmachten gebruikend de eigenschappen hierboven, voor al verkeer.
+
+Niet-http/s verkeer met bestemmingen door havens die in worden verklaard `portForwards` parameter moet verwijzen naar een eigenschap met de naam `AEM_PROXY_HOST`, samen met de toegewezen poort. Bijvoorbeeld:
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres
     <th>Doelvoorwaarde</th>
     <th>Poort</th>
     <th>Verbinding</th>
-    <th>Voorbeeld</th>
+    <th>Voorbeeld van externe bestemming</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
     <th>Doelvoorwaarde</th>
     <th>Poort</th>
     <th>Verbinding</th>
-    <th>Voorbeeld</th>
+    <th>Voorbeeld van externe bestemming</th>
   </tr>
 </thead>
 <tbody>
