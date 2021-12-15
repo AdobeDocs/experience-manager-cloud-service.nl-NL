@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
+source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ E-mails in AEM moeten worden verzonden via de [Day CQ Mail Service OSGi-service]
 
 Zie de [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) voor meer informatie over het configureren van e-mailinstellingen. Voor AEM as a Cloud Service, noteer de volgende noodzakelijke aanpassingen aan `com.day.cq.mailer.DefaultMailService OSGI` service:
 
-* De SMTP servergastheernaam zou aan $ moeten worden geplaatst[env:AEM_PROXY_HOST]
+* De SMTP servergastheernaam zou aan $ moeten worden geplaatst[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * De SMTP serverhaven zou aan de waarde van de originele volmachtshaven moeten worden geplaatst die in de portForwards parameter wordt geplaatst in de API vraag wordt gebruikt wanneer het vormen van omhoog geavanceerd voorzien van een netwerk. Bijvoorbeeld, 30465 (eerder dan 465)
 
 Ook wordt aanbevolen dat indien haven 465 is aangevraagd:
