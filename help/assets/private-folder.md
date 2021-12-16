@@ -4,9 +4,9 @@ description: Leer hoe u een persoonlijke map maakt in het dialoogvenster [!DNL A
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ U kunt een privémap maken in het dialoogvenster [!DNL Adobe Experience Manager 
 >
 >De privé omslag heeft minstens één lid met de rol van de Eigenaar.
 >
->Als u een persoonlijke map wilt maken, hebt u Lezen en Wijzigen nodig [toegangsbeheermachtigingen](/help/sites-administering/security.md#permissions-in-aem) in de bovenliggende map waarin u een privémap wilt maken. Als u geen beheerder bent, worden deze machtigingen standaard niet voor u ingeschakeld `/content/dam`. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
+>Als u een persoonlijke map wilt maken, hebt u `Read` en `Modify` machtigingen voor de bovenliggende map waaronder u een persoonlijke map wilt maken. Als u geen beheerder bent, worden deze machtigingen standaard niet voor u ingeschakeld `/content/dam`. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
 
 ## Persoonlijke map maken en delen  {#create-share-private-folder}
 

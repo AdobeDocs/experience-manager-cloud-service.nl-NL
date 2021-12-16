@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3354'
+source-wordcount: '3362'
 ht-degree: 25%
 
 ---
@@ -262,7 +262,7 @@ ht-degree: 25%
       + [Integreren met Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 + Assets {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
+   + [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
    + [Overzicht en nieuwe functies](/help/assets/overview.md)
    + [Opmerkelijke wijzigingen in [!DNL Assets] als [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] architectuur](/help/assets/architecture.md)
@@ -292,6 +292,7 @@ ht-degree: 25%
       + [Elementen hergebruiken met MSM](/help/assets/reuse-assets-using-msm.md)
       + [Elementen downloaden](/help/assets/download-assets-from-aem.md)
       + [Assets inchecken en uitchecken om te bewerken](/help/assets/check-out-and-submit-assets.md)
+      + [Persoonlijke mappen maken en delen](/help/assets/private-folder.md)
       + [Digital Rights Management voor elementen](/help/assets/drm.md)
       + [Watermerkelementen](/help/assets/watermark-assets.md)
       + [Elementen verwerken met [!DNL Creative Cloud] API&#39;s](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 25%
       + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
       + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
-      + [Configureren [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
       + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
       + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
       + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
