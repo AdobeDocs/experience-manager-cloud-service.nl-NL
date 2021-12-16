@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8066635a11712f942fc4df813b5a4343c3ff8e87
+source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
 workflow-type: tm+mt
-source-wordcount: '3370'
+source-wordcount: '3373'
 ht-degree: 25%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 25%
    + Releaseopmerkingen {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
+         + [Opmerkingen bij de release 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [Opmerkingen bij de release 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [Opmerkingen bij de release 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
          + [Opmerkingen bij de release 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2020.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 0%
@@ -43,7 +43,7 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 * **[!DNL Assets]Ondersteuning voor WebP-bestanden**: [!DNL Assets] as a Cloud Service ondersteunt nu de WebP-afbeeldingsindeling. WebP is een nieuwe afbeeldingsindeling die door Google wordt gemaakt. Afbeeldingen in de WebP-bestandsindeling zijn visueel niet te onderscheiden van JPG- of PNG-bestanden en de bestanden zijn veel kleiner. Door de bestandsgrootte van elementen te verlagen, worden de pagina&#39;s sneller geladen en krijgen de makers van inhoud een snellere webervaring. Zie hoe u WebP kunt gebruiken in [verwerkingsprofiel maken](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
