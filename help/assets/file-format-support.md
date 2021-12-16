@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 5%
+source-wordcount: '974'
+ht-degree: 4%
 
 ---
 
@@ -67,37 +67,13 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## Afbeeldingsindelingen in [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| Format | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD ‡ | ✓ | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
-
-De volgende subtypen van bestandsindelingen voor rasterafbeeldingen die niet worden ondersteund in [!DNL Dynamic Media]:
-
-* PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
-* PSB-bestanden.
-* PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
-* PSD-bestanden met een bitdiepte groter dan 16.
-* TIFF-bestanden met zwevende-kommagegevens.
-* TIFF-bestanden met Lab-kleurruimte.
-
 ## 3D-indelingen {#support-3d-formats}
 
 De volgende 3D-indelingen worden ondersteund.
 
-Zie ook [Werken met 3D-elementen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Zie ook [Werken met 3D-middelen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -164,14 +140,6 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## Documentindelingen in [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
 ## Video-indelingen {#video-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
@@ -200,24 +168,6 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## Video-indelingen in [!DNL Dynamic Media] voor transcodering {#video-dynamic-media-transcoding}
-
-| Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
-| --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-
-‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
-
 ## Audio-indelingen {#audio-formats}
 
 [!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
@@ -238,6 +188,69 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 ## Tips en beperkingen {#limitations-and-tips}
 
 * De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
+
+## Dynamic Media - Ondersteunde invoervideo-indelingen voor transcodering {#video-dynamic-media-transcoding}
+
+| Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
+| --- | --- | --- | --- |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+
+‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
+
+## Dynamic Media - Ondersteunde documentindelingen {#document-support-dynamic-media}
+
+| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#image-support-dynamic-media}
+
+| Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | ✓ | - | - | - | - | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| PSD ‡ | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+
+## Dynamic Media - Niet-ondersteunde rasterafbeeldingsindelingen {#unsupported-raster-image-formats-dm}
+
+De volgende subtypen van rasterafbeeldingsbestandsindelingen die *niet* ondersteund in [!DNL Dynamic Media]:
+
+* PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
+* PSB-bestanden.
+* PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
+* PSD-bestanden met een bitdiepte groter dan 16.
+* TIFF-bestanden met zwevende-kommagegevens.
+* TIFF-bestanden met Lab-kleurruimte.
+
+## Dynamic Media - Ondersteunde 3D-bestandsindelingen {#support-3d-formats-dynamic-media}
+
+Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support-3d-formats)
+
+| 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
+|---|---|---|---|
+| GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
+| OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
+| STL | Stereolithografie | application/vnd.ms-pki.stl |  |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari of iOS kan worden weergegeven. |
 
 >[!MORELIKETHIS]
 >
