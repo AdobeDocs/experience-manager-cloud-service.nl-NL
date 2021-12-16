@@ -1,64 +1,48 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.11.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.11.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.12.0
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.11.0.
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
+
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
->Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>
+>Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige Release-aantekeningen voor Adobe Experience Manager as a Cloud Service.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.11.0 is 4 november 2021.
-De volgende release is gepland voor 16 december 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 december 2021. De volgende release is gepland voor januari 2022.
 
 ### Wat is er nieuw? {#what-is-new}
 
-* Gebruikers kunnen nu nieuwe Front End-pijpleidingen gebruiken om front-end code op een versnelde manier uitsluitend te implementeren. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
-
-   >[!IMPORTANT]
-   >U moet AEM versie hebben `2021.10.5933.20211012T154732Z` om nieuwe Front End-pijpleidingen te benutten.
-
-* De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig AEM beeld te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
-
-* De Vastleggingsidentiteitskaart van het Git zal nu in de details van de pijpleidingsuitvoering worden getoond die het gemakkelijker maken om de code te volgen die werd gebouwd.
-
-* Het programma wordt nu gemaakt via openbaar toegankelijke API.
-
-* Environment Creation is nu beschikbaar via openbare API.
-
-* De `x-request-id` responsheader is nu zichtbaar in de API-afspeelruimte op [www.adobe.io](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
-
-* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij de juiste begeleiding biedt.
-
-* Een nieuwe pagina van de Activiteit is nu beschikbaar waar de activiteiten zoals pijpleiding en codeuitvoering samen met hun bijbehorende details kunnen worden bekeken. In de loop der tijd zullen de activiteiten die op deze pagina worden vermeld, in het toepassingsgebied worden uitgebreid, samen met de verstrekte gegevens.
-
-* Er is nu een nieuwe pagina met pijplijnen beschikbaar met een statuspop-up, zodat u de samenvatting van de details eenvoudig kunt bekijken. De uitvoeringen van de pijpleiding kunnen samen met hun bijbehorende details worden bekeken.
-
-* De Edit Pijpleiding API steunt nu het veranderen van het milieu dat in de plaatsingsfasen wordt gebruikt.
-
-* Voor grote pakketten is een optimalisatie in het OakPal-scanproces geïntroduceerd.
-
-* Het CSV-bestand voor kwaliteitsafgifte bevat nu de tijdstempel voor elke kwaliteitsuitgave.
+* De commit hash, die al zichtbaar is in de UI, wordt nu ook verstrekt in API.
+* De pagina van de Activiteit omvat nu een pop-over voor het runnen van pijpleidingen die een samenvatting van pijpleidingsdetails bij-a-blik verstrekt.
+* Er zijn updates toegevoegd om aanvullende details op de pagina Activiteiten op te nemen.
+* Het tabblad Leren in Cloud Manager bevat nu snelle toegang tot API-hulplijnen en bijbehorende bronnen.
+* Een gebruiker met de rol van de Manager van de Plaatsing kan nu de project/de aanmaaktovenaar van de Tak voor een bewaarplaats zonder takken van het actiemenu op de pagina van bewaarplaatsen in werking stellen.
+* De Manager van de Plaatsing, die in toevoegt of pijpleidingswerkschema uitgeeft, wordt nu geïnformeerd over hoe te om een tak of een project tot stand te brengen als de geselecteerde bewaarplaats geen takken heeft.
+* Er is een nieuwe zelfbedieningsfunctie voor Cloud Manager toegevoegd om [het toevoegen van vrije-vormvariabelen en geheimen op milieuniveau.](/help/implementing/cloud-manager/environment-variables.md)
+* Met de nieuwe Add-on van de Demos van de Referentie (beschikbaar op 17 december 2021), kunnen de recentste democodebases voor AEM producten worden geïnstalleerd en klaar zijn om via de nieuwe [snel site maken](/help/journey-sites/quick-site/overview.md) in sites.
+* De pijpleidingen aan de voorzijde steunen nu pijpleidingsvariabelen.
+* Schermen kunnen nu voor alle sandboxen worden ingeschakeld in het dialoogvenster Program Edit.
+* De begeleiding die door de vraag-aan-actie kaart in de overzichtspagina wordt verstrekt is verfrist om zijn vereniging met de productie volledige stapelpijpleiding nauwkeurig te weerspiegelen.
+* De verhogingen aan de pagina van de Activiteit werden toegevoegd aan oppervlakte extra details van toepassing op pijpleidingen met inbegrip van broncode, verbind identiteitskaart, enz.
+* Er is een kleine update uitgevoerd naar de gebruikersinterface tijdens het kopiëren van TXT-items (&quot;TXT-waarde&quot; in plaats van &quot;TXT-record&quot;) om mogelijke verwarring te voorkomen.
+* [De documentatie met betrekking tot certificaatfouten](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) is bijgewerkt om aanvullende voorbeelden samen met het oplossen van problemen te behandelen.
+* Een optie is nu beschikbaar in de front-end pijpleiding uitvoering om vóór plaatsing aan productie te verwerpen of goed te keuren.
 
 ### Opgeloste problemen {#bug-fixes}
 
-* Bepaalde unorthodox bouwt configuraties resulteerde in onnodige dossiers die in het geheime voorgeheugen van Maven van de pijpleiding worden opgeslagen die in vreemde netwerk I/O resulteerde toen het beginnen en het tegenhouden van de bouwstijlcontainer.
-
-* De PATCH API van de pijpleiding ontbreekt als de plaatsingsfase niet bestaat.
-
-* De `ClientlibProxyResourceCheck` de kwaliteitsregel leverde fout-positieve problemen op wanneer er clientbibliotheken waren met algemene basispaden.
-
-* Foutbericht wanneer het maximale aantal opslagplaatsen is bereikt, geeft geen reden voor de fout aan.
-
-* In zeldzame gevallen faalden de pijpleidingen vanwege een onjuiste herbehandeling van bepaalde responscodes.
-
+* De functionaliteit en UI testartefacten waren niet inbegrepen in het bouwstijlstaplogboek.
+* De logbestanden voor de teststappen voor het product, de functie en de gebruikersinterface zijn niet toegankelijk via de openbare API.
+* In zeldzame gevallen is de koppeling van de pagina met omgevingsdetails naar de service Publiceren of Voorvertonen niet functioneel.
+* De volledige pijpleidingen van de stapelproductie blijven genoemd &quot;Productiepijpleiding&quot;zelfs wanneer de gebruiker een verschillende naam op het naamgebied ingaat.
