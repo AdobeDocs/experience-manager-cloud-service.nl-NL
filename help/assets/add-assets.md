@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2631'
 ht-degree: 0%
 
 ---
@@ -132,57 +132,111 @@ Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende 
 * [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nuttig voor creatieve professionals en marketers die middelen uploaden vanaf hun lokale bestandssysteem. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
 * [Gereedschap Bulkopname](#asset-bulk-ingestor): Wordt gebruikt voor inname van grote hoeveelheden elementen, soms of in eerste instantie bij implementatie [!DNL Experience Manager].
 
-### Hulpmiddel voor het bulkmiddel {#asset-bulk-ingestor}
+### Gereedschap Asset Bulk importeren {#asset-bulk-ingestor}
 
 Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken. Bekijk een videodemo van de configuratie en opname.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-Voer de volgende stappen uit om het gereedschap te configureren:
+De volgende afbeelding illustreert de verschillende fasen wanneer u elementen vanuit een gegevensopslagruimte in een Experience Manager invoert:
+
+![Bulkopname](assets/bulk-ingestion.png)
+
+#### Vereisten {#prerequisites-bulk-ingestion}
+
+U moet de opslaggegevens van de bronblob hebben om uw instantie van de Experience Manager met een gegevensopslag te verbinden.
+
+#### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
+
+Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Selecteer **[!UICONTROL Create]** optie.
 
-![Configuratie van bulkimporteur](assets/bulk-import-config.png)
+1. Geef een titel op voor de configuratie voor bulkimport in het dialoogvenster **[!UICONTROL Title]** veld.
 
-1. Aan **[!UICONTROL bulk import configuration]** pagina, geef de vereiste waarden op en selecteer **[!UICONTROL Save]**.
+1. Selecteer het gegevenstype van de gegevensbron in het menu **[!UICONTROL Import Source]** vervolgkeuzelijst.
 
-   * [!UICONTROL Title]: Een beschrijvende titel.
-   * [!UICONTROL Import Source]: Selecteer de toepasselijke gegevensbron.
-   * [!UICONTROL Azure Storage Account]: Geef de naam van de [!DNL Azure] opslagaccount.
-   * [!UICONTROL Azure Blob Container]: Geef de [!DNL Azure] opslagcontainer.
-   * [!UICONTROL Azure Access Key]: Geef de toegangstoets op aan [!DNL Azure] account.
-   * [!UICONTROL Source Folder]: Dit filter wordt doorgaans ondersteund door Azure- en AWS-cloudopslagproviders.
-   * [!UICONTROL Filter by Min Size]: Geef een minimale bestandsgrootte van elementen op in MB.
-   * [!UICONTROL Filter by Max Size]: Geef de maximale bestandsgrootte van elementen op in MB.
-   * [!UICONTROL Exclude Mime Types]: Door komma&#39;s gescheiden lijst met MIME-typen die van de opname moeten worden uitgesloten. Bijvoorbeeld, `image/jpeg, image/.*, video/mp4`. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
-   * [!UICONTROL Include Mime Types]: Door komma&#39;s gescheiden lijst met MIME-typen die in de opname moeten worden opgenomen. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
-   * [!UICONTROL Delete source file after import]: Selecteer deze optie als u de oorspronkelijke bestanden uit de opslagplaats voor brongegevens wilt verwijderen nadat de bestanden zijn geïmporteerd in [!DNL Experience Manager].
-   * [!UICONTROL Import Mode]: Selecteer Versie overslaan, vervangen of maken. De modus Overslaan is de standaardmodus en in deze modus slaat de regelaar over om een element te importeren als dit al bestaat. Zie de betekenis van [versieopties vervangen en maken](#handling-upload-existing-file).
-   * [!UICONTROL Assets Target Folder]: Map importeren in DAM waar elementen moeten worden geïmporteerd. Bijvoorbeeld, `/content/dam/imported_assets`
-   * [!UICONTROL Metadata File]: Het metagegevensbestand dat moet worden geïmporteerd, opgegeven in de CSV-indeling. Geef het CSV-bestand op de locatie van het bronblob en raadpleeg het pad tijdens het configureren van het gereedschap Bulk-ingestor. De CSV-bestandsindeling waarnaar in dit veld wordt verwezen, is dezelfde als de CSV-bestandsindeling wanneer u [Metagegevens van elementen in bulk importeren en exporteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Als u **Bronbestand verwijderen na importeren** filter CSV-bestanden met behulp van de **Uitsluiten** of **MIME-type opnemen** of **Filteren op pad/bestand** velden. U kunt een reguliere expressie gebruiken om CSV-bestanden in deze velden te filteren.
+1. Geef de waarden op om een verbinding met de gegevensbron te maken. Als u bijvoorbeeld **Azure Blob Storage** als gegevensbron, specificeer de waarden voor Azure opslagrekening, Azure blob container, en Azure toegangssleutel.
 
-1. U kunt schrapen, wijzigen, uitvoeren en meer doen met uw gecreeerde spelersconfiguraties. Als u een configuratie met een grote importingestor selecteert, zijn de volgende opties beschikbaar in de werkbalk.
+1. Geef de naam op van de hoofdmap die elementen bevat in de gegevensbron in het dialoogvenster **[!UICONTROL Source Folder]** veld.
 
-   * [!UICONTROL Edit]: Bewerk de geselecteerde configuratie.
-   * [!UICONTROL Delete]: Verwijder de geselecteerde configuratie.
-   * [!UICONTROL Check]: Verbinding met de datastore valideren.
-   * [!UICONTROL Dry Run]: Roep een testrun van de bulkopname aan.
-   * [!UICONTROL Run]: Voer de geselecteerde configuratie uit.
-   * [!UICONTROL Stop]: Beëindig een actieve configuratie.
-   * [!UICONTROL Schedule]: Stel een eenmalige of terugkerende planning in om elementen in te voeren.
-   * [!UICONTROL Job Status]: Bekijk de status van de configuratie wanneer deze wordt gebruikt in een actieve importtaak of wordt gebruikt voor een voltooide taak.
-   * [!UICONTROL Job History]: Eerdere exemplaren van de taak.
-   * [!UICONTROL View Assets]: Geef de doelmap weer als deze bestaat.
+1. (Optioneel) Geef de minimale bestandsgrootte van elementen op in MB om ze op te nemen in het innameproces in het dialoogvenster **[!UICONTROL Filter by Min Size]** veld.
 
-   ![Werkbalkopties voor ingangconfiguraties](assets/bulk-ingest-toolbar-options.png)
+1. (Optioneel) Geef de maximale bestandsgrootte van elementen op in MB om ze op te nemen in het innameproces in het dialoogvenster **[!UICONTROL Filter by Max Size]** veld.
 
-Voer de volgende stappen uit om een eenmalige of herhaalde bulkimport te plannen:
+1. (Optioneel) Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt uitsluiten van de opname in het dialoogvenster **[!UICONTROL Exclude MIME Types]** veld. Bijvoorbeeld, `image/jpeg, image/.*, video/mp4`. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
+
+1. Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt opnemen in de opname in het dialoogvenster **[!UICONTROL Include MIME Types]** veld. Zie [alle ondersteunde bestandsindelingen](/help/assets/file-format-support.md).
+
+1. Selecteer **[!UICONTROL Delete source file after import]** als u de oorspronkelijke bestanden uit de opslag van brongegevens wilt verwijderen nadat de bestanden zijn geïmporteerd in [!DNL Experience Manager].
+
+1. Selecteer **[!UICONTROL Import Mode]**. Selecteren **Overslaan**, **Vervangen**, of **Versie maken**. De modus Overslaan is de standaardmodus en in deze modus slaat de regelaar over om een element te importeren als dit al bestaat. Zie de betekenis van [versieopties vervangen en maken](#handling-upload-existing-file).
+
+1. Geef een pad op om een locatie in DAM te definiëren waar elementen moeten worden geïmporteerd met behulp van de **[!UICONTROL Assets Target Folder]** veld. Bijvoorbeeld, `/content/dam/imported_assets`.
+
+1. (Optioneel) Geef het metagegevensbestand op dat u wilt importeren, in CSV-indeling, in het dialoogvenster **[!UICONTROL Metadata File]** veld. Geef het CSV-bestand op de locatie van het bronblob en raadpleeg het pad tijdens het configureren van het gereedschap Bulk importeren. De CSV-bestandsindeling waarnaar in dit veld wordt verwezen, is dezelfde als de CSV-bestandsindeling wanneer u [Metagegevens van elementen in bulk importeren en exporteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Als u **Bronbestand verwijderen na importeren** filter CSV-bestanden met behulp van de **Uitsluiten** of **MIME-type opnemen** of **Filteren op pad/bestand** velden. U kunt een reguliere expressie gebruiken om CSV-bestanden in deze velden te filteren.
+
+1. Klikken **[!UICONTROL Save]** om de configuratie op te slaan.
+
+#### De configuratie van het gereedschap Bulkimport beheren {#manage-bulk-import-configuration}
+
+Na het creëren van het Bulk het hulpmiddelconfiguratie van de Invoer, kunt u taken uitvoeren om de configuratie vóór bulk te evalueren het opnemen van activa aan uw instantie van de Experience Manager. Selecteer de configuratie beschikbaar op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** om de beschikbare opties te bekijken om uw Bulk het hulpmiddelconfiguratie van de Invoer te beheren.
+
+##### De configuratie bewerken {#edit-configuration}
+
+Selecteer de configuratie en klik op **[!UICONTROL Edit]** om de configuratiedetails te wijzigen. U kunt de titel van de configuratie en de gegevensbron van het voer niet uitgeven terwijl het uitvoeren van geeft verrichting uit.
+
+##### De configuratie verwijderen {#delete-configuration}
+
+Selecteer de configuratie en klik op **[!UICONTROL Delete]** om de configuratie van de Invoer van het Bulk te schrappen.
+
+##### Verbinding met gegevensbron valideren {#validate-connection}
+
+Selecteer de configuratie en klik op **[!UICONTROL check]** om de verbinding met de gegevensbron te valideren. In het geval van een geslaagde verbinding, toont de Experience Manager het volgende bericht:
+
+![Bericht met succes bij importeren van bulkgoederen](assets/bulk-import-success-message.png)
+
+##### Een testrun aanroepen voor de Bulk Import-taak {#invoke-test-run-bulk-import}
+
+Selecteer de configuratie en klik op **[!UICONTROL Dry Run]** om een testlooppas voor de BulkTaak van de Invoer aan te halen. Experience Manager geeft de volgende gegevens weer over de Bulk Import-taak:
+
+![Droog resultaat](assets/dry-assets-result.png)
+
+##### Eenmalige of terugkerende bulkimport plannen {#schedule-bulk-import}
+
+Voer de volgende stappen uit om een eenmalige of terugkerende bulkimport te plannen:
 
 1. Maak een configuratie voor bulkimport.
 1. Selecteer de configuratie en selecteer **[!UICONTROL Schedule]** op de werkbalk.
 1. Stel een eenmalige opname in of voer een uur-, dag- of wekelijks schema in. Klik op **[!UICONTROL Submit]**.
 
    ![Taak bulkingestor plannen](assets/bulk-ingest-schedule1.png)
+
+
+##### De doelmap Middelen weergeven {#view-assets-target-folder}
+
+Selecteer de configuratie en klik op **[!UICONTROL View Assets]** om de doellocatie voor Elementen weer te geven waar de elementen worden geïmporteerd nadat de taak Bulk importeren is uitgevoerd.
+
+#### Het gereedschap Bulkimport uitvoeren {#run-bulk-import-tool}
+
+Na [configureren van het gereedschap Bulkimport](#configure-bulk-ingestor-tool) en optioneel [de configuratie van het gereedschap Bulkimport beheren](#manage-bulk-import-configuration)kunt u de configuratietaak uitvoeren om de bulkopname van elementen te starten.
+
+Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, selecteert u de [Configuratie Bulkimport](#configure-bulk-ingestor-tool) en klik op **[!UICONTROL Run]** om het Bulk-importproces te starten. Klikken **[!UICONTROL Run]** nogmaals ter bevestiging.
+
+Experience Manager werkt de status van de taak bij naar **Verwerking** en **Geslaagd** als de taak met succes is voltooid. Klikken **Elementen weergeven** om de geïmporteerde elementen in Experience Manager weer te geven.
+
+Wanneer de taak wordt uitgevoerd, kunt u ook de configuratie selecteren en op **Stoppen** om het bulkingestitieproces te stoppen. Klikken **Uitvoeren** om het proces te hervatten. U kunt ook op **Droog** de details te kennen van de activa die nog moeten worden geïmporteerd.
+
+#### Taken beheren na uitvoering {#manage-jobs-after-execution}
+
+Met Experience Manager kunt u de geschiedenis van de bulkimporttaken bekijken. De taakgeschiedenis bestaat uit de status van de taak, de maker van de taak, logbestanden, samen met andere gegevens zoals de begindatum en -tijd, de datum en tijd en de einddatum en -tijd.
+
+Om tot de baangeschiedenis voor een configuratie toegang te hebben, selecteer de configuratie en klik **[!UICONTROL Job History]**. Selecteer een taak en klik op **Openen**.
+
+![Taak bulkingestor plannen](assets/job-history-bulk-import.png)
+
+Experience Manager geeft de taakgeschiedenis weer. Op de pagina Opsommingtaakhistorie kunt u ook op **Verwijderen** om die baan voor de Bulk configuratie van de Invoer te schrappen.
+
 
 ## Elementen uploaden met desktopclients {#upload-assets-desktop-clients}
 
