@@ -3,14 +3,18 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # OSGi configureren voor Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM heeft de mogelijkheid geïntroduceerd om de gebruikersinterface van Cloud Manager te gebruiken voor het configureren van standaardomgevingsvariabelen met de release 2021.12.0. Raadpleeg de documentatie voor meer informatie [hier](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
@@ -145,7 +149,7 @@ De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM pro
 Merk op dat OSGi de namen van de configuratiefabrieksdossiers gebruiken `<factoryPID>-<name>.cfg.json` naamgevingsconventie
 1. De nieuwe openen `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na [JSON OSGi-configuratie](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Sla uw wijzigingen op in de nieuwe `.cfg.json` file
-1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
+1. Voeg en verbind uw nieuw OSGi configuratiedossier aan Git toe
 
 ### OSGi-configuraties genereren met de AEM SDK QuickStart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
