@@ -3,9 +3,10 @@ title: Leerpad voor ontwikkelaars en implementatiemanagers
 description: Volg deze pagina om de volgende stappen na het krijgen van toegang te leren, als u een Ontwikkelaar of een Manager van de Plaatsing bent
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -26,8 +27,8 @@ Nadat u dit document hebt gelezen, moet u:
 Als u deze sectie leest, dan wordt u waarschijnlijk toegewezen aan een het productprofiel van de Manager van de Ontwikkelaar of van de Plaatsing en is klaar aan boord en verdergaand uw het leren weg.
 
 >[!NOTE]
->* Als *Ontwikkelaar*, zult u zich bij de Manager van de Wolk willen aanmelden en zich vertrouwd maken met de toegang tot van Git.
->* Als *Manager van de Plaatsing*, zult u met willen vertrouwd maken hoe te om pijpleidingen op te zetten en zelfs code op te stellen.
+>* Als *Ontwikkelaar* kunt u zich aanmelden bij Cloud Manager en vertrouwd maken met de toegang tot Git.
+>* Als *Implementatiebeheer*, zult u met willen vertrouwd maken hoe te opstellings pijpleidingen en zelfs code opstellen.
 
 
 ## Voorwaarden {#prerequisites}
@@ -41,22 +42,26 @@ Voordat u begint, controleert u of:
 ## GitHub beheren {#manage-git}
 
 U kunt de Git Repository openen en beheren met Self-Service Git Account Management vanuit de interface van Cloud Manager.
-Meer over dit onderwerp leren, zie [Toegang tot Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
+Voor meer informatie over dit onderwerp raadpleegt u [Toegang tot it](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Pipet instellen {#setup-pipeline}
 
 U kunt uw productie of niet-productiepijpleiding van de UI van de Manager van de Wolk vormen.
-Meer over dit onderwerp leren, zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
+Voor meer informatie over dit onderwerp raadpleegt u [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Volgende functies {#whats-next}
 
-De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM als Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder. Zie [Leerpad voor AEM-auteurs](/help/journey-onboarding/sysadmin/learning-path-aem-users.md) voor meer informatie over het leertraject voor Content Authors.
+De Managers van de ontwikkelaar en van de Plaatsing zijn nu klaar vertrouwd met hoe te om code in AEM as a Cloud Service te ontwikkelen. Leer meer of vind meer het leren wegen onder de Extra sectie van Middelen hieronder. Ga voor meer informatie over de leertocht naar Inhoudsauteurs naar [Leerpad voor AEM-auteurs](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>Nu je aan boord bent, kun je [Leer hoe te om de AEMInvoegtoepassing van de Demo van de Verwijzing gemakkelijk toe te voegen](/help/journey-sites/demos-add-on/overview.md) in een sandbox-omgeving met minimale AEM configuratie en de krachtige functies van AEM kunnen testen met uitgebreide voorbeelden op basis van best practices.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Toegang tot het accountbeheer voor Git en Git vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [Lokale ontwikkelomgeving voor AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Lokale ontwikkelomgeving voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 * [Aan de slag met AEM Sites (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 

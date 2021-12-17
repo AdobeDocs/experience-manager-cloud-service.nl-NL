@@ -2,10 +2,10 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service
 description: Inleiding tot Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 4db42a04a122306f5fa068b258913836020d2f9a
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 53%
+source-wordcount: '632'
+ht-degree: 49%
 
 ---
 
@@ -75,3 +75,9 @@ AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne clou
 * [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Inleiding tot Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+
+>[!TIP]
+>
+>Als u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door de [Op instapreis.](/help/journey-onboarding/home.md)
+>
+>Hebt u al een functie voor het testen van AEM? Installeer de [AEM Reference Demos Add-on](/help/journey-sites/demos-add-on/overview.md) om AEM krachtige functies te verkennen aan de hand van rijke voorbeelden.

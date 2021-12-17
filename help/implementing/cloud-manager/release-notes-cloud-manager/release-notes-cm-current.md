@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.12.0
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -31,7 +31,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 dec
 * Een gebruiker met de rol van de Manager van de Plaatsing kan nu de project/de aanmaaktovenaar van de Tak voor een bewaarplaats zonder takken van het actiemenu op de pagina van bewaarplaatsen in werking stellen.
 * De Manager van de Plaatsing, die in toevoegt of pijpleidingswerkschema uitgeeft, wordt nu geïnformeerd over hoe te om een tak of een project tot stand te brengen als de geselecteerde bewaarplaats geen takken heeft.
 * Er is een nieuwe zelfbedieningsfunctie voor Cloud Manager toegevoegd om [het toevoegen van vrije-vormvariabelen en geheimen op milieuniveau.](/help/implementing/cloud-manager/environment-variables.md)
-* Met de nieuwe Add-on van de Demos van de Referentie (beschikbaar op 17 december 2021), kunnen de recentste democodebases voor AEM producten worden geïnstalleerd en klaar zijn om via de nieuwe [snel site maken](/help/journey-sites/quick-site/overview.md) in sites.
+* Met de nieuwe [Invoegtoepassing demo&#39;s referentie](/help/journey-sites/demos-add-on/overview.md) (beschikbaar op 17 december 2021) kunnen de meest recente demo-codebases voor AEM producten worden geïnstalleerd en klaar zijn om te worden geïmplementeerd via de nieuwe [snel site maken](/help/journey-sites/quick-site/overview.md) in sites.
 * De pijpleidingen aan de voorzijde steunen nu pijpleidingsvariabelen.
 * Schermen kunnen nu voor alle sandboxen worden ingeschakeld in het dialoogvenster Program Edit.
 * De begeleiding die door de vraag-aan-actie kaart in de overzichtspagina wordt verstrekt is verfrist om zijn vereniging met de productie volledige stapelpijpleiding nauwkeurig te weerspiegelen.

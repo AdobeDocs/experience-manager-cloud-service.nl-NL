@@ -2,9 +2,9 @@
 title: AEM Sites-reizen
 description: Begin hier voor een overzicht van de geleide reizen beschikbaar om AEM krachtige plaatseigenschappen te begrijpen.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,8 @@ De volgende Documentatiereizen zijn beschikbaar voor de onderwerpen van AEM Site
 
 | Titel | Beschrijving | Primair publiek |
 |---|---|---|
-| [Vertaalreis naar sites](/help/journey-sites/translation/overview.md) | Leer over de technologieën van AEM Sites, hoe zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
 | [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md) | Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis. | Front-end ontwikkelaars |
+| [Referentie demos Add-on-reis](/help/journey-sites/demos-add-on/overview.md) | Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd. | Systeembeheerder |
+| [Vertaalreis naar sites](/help/journey-sites/translation/overview.md) | Leer over de technologieën van AEM Sites, hoe zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
 
 Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
