@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
+source-wordcount: '2930'
 ht-degree: 12%
 
 ---
@@ -72,21 +72,6 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + Alle `rep:policy` voor elk pad onder `/apps`
    + [Vooraf gecompileerde gebundelde scripts](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ De `ui.config` pakket, bevat alle [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md):
-   + De omslag van de organisatie die loopwijze specifieke definities OSGi config bevat
-      + `/apps/my-app/osgiconfig`
-   + Gemeenschappelijke OSGi configuratiemap die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
-      + `/apps/my-app/osgiconfig/config`
-   + De wijze-specifieke OSGi configuratiemappen van de looppas die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Repo Init OSGi-configuratiescripts
-      + [Reparatie-item](#repo-init) is de geadviseerde manier om (veranderbare) inhoud op te stellen die logisch gezien deel van de AEM toepassing uitmaakt. De OSGi-configuraties van de Repo-installatie moeten op de juiste plaats zijn `config.<runmode>` map als hierboven beschreven, en wordt gebruikt voor het definiëren van:
-         + Structuren voor basislijninhoud
-         + Gebruikers
-         + Servicegebruikers
-         + Groepen
-         + ACLs (toestemmingen)
-
 >[!NOTE]
 >
 >Dezelfde code moet in alle omgevingen worden geïmplementeerd. Dit is nodig om ervoor te zorgen dat ook in productie een niveau van betrouwbaarheidsvalideringen in de werkgebiedomgeving wordt uitgevoerd. Zie de sectie over [Runmodi](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `site-b.ui.config` stelt configuraties OSGi op die door plaats B worden vereist
       + `site-b.ui.content` stelt inhoud en configuratie op die door plaats B worden vereist
 
++ De `ui.config` pakket bevat alle [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md):
+   + Beschouw als code en behoort tot OSGi-bundels, maar bevat geen standaardinhoudsknooppunten. Het is dus gemarkeerd als een containerpakket
+   + De omslag van de organisatie die loopwijze specifieke definities OSGi config bevat
+      + `/apps/my-app/osgiconfig`
+   + Gemeenschappelijke OSGi configuratiemap die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
+      + `/apps/my-app/osgiconfig/config`
+   + De wijze-specifieke OSGi configuratiemappen van de looppas die standaardOSGi configuraties bevat die op al doel AEM as a Cloud Service plaatsingsdoelstellingen van toepassing zijn
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init OSGi-configuratiescripts
+      + [Reparatie-item](#repo-init) is de geadviseerde manier om (veranderbare) inhoud op te stellen die logisch gezien deel van de AEM toepassing uitmaakt. De OSGi-configuraties van de Repo-installatie moeten op de juiste plaats zijn `config.<runmode>` map als hierboven beschreven, en wordt gebruikt voor het definiëren van:
+         + Structuren voor basislijninhoud
+         + Gebruikers
+         + Servicegebruikers
+         + Groepen
+         + ACLs (toestemmingen)
+
 ### Extra toepassingspakketten{#extra-application-packages}
 
 Als andere AEM projecten, die zelf uit hun eigen code en inhoudspakketten bestaan, door de AEM plaatsing worden gebruikt, zouden hun containerpakketten in het project moeten worden ingebed `all` pakket.
@@ -141,14 +142,14 @@ Bijvoorbeeld, zou een AEM project dat 2 verkoper AEM toepassingen omvat als kunn
 
 ## Pakkettypen {#package-types}
 
-Pakketten moeten worden gemarkeerd met het opgegeven pakkettype.
+Pakketten moeten worden gemarkeerd met het opgegeven pakkettype. De types van pakket helpen het doel en de plaatsing van een pakket verduidelijken.
 
-+ Containerpakketten moeten hun `packageType` tot `container`. Containerpakketten mogen geen OSGi-bundels, OSGi-configuraties direct bevatten en mogen niet worden gebruikt [installatiekoppels](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Containerpakketten moeten hun `packageType` tot `container`. Containerpakketten mogen geen normale knooppunten bevatten. Alleen OSGi-bundels, -configuraties en -subpakketten zijn toegestaan. Containers in AEM as a Cloud Service mogen niet worden gebruikt [installatiekoppels](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Codepakketten (onveranderbaar) moeten hun `packageType` tot `application`.
 + In inhoudspakketten moeten de elementen worden ingesteld `packageType` tot `content`.
 
 
-Zie voor meer informatie [Apache Jackrabbit FileVault - PakketMaven Plugin-documentatie](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) en de [FileVault Maven-configuratiefragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder.
+Zie voor meer informatie [Apache Jackrabbit FileVault - PakketMaven Plugin-documentatie](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-pakkettypen](http://jackrabbit.apache.org/filevault/packagetypes.html)en de [FileVault Maven-configuratiefragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder.
 
 >[!TIP]
 >
