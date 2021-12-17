@@ -1,9 +1,9 @@
 ---
 title: Toegang verlenen aan de front-end ontwikkelaar
 description: Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,9 @@ ht-degree: 0%
 
 Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
 
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
-
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Plaats, [Opstelling uw pijpleiding,](pipeline-setup.md) U hebt geleerd hoe u een front-end pijplijn kunt maken om de aanpassing van het thema van uw site te beheren. U moet nu:
+In het vorige document van de AEM Snelle reis van de Plaats, [Opstelling uw pijpleiding,](pipeline-setup.md) u leerde hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
 
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijplijn instelt in Cloud Manager.

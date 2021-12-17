@@ -1,9 +1,9 @@
 ---
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Uw aangepaste thema implementeren {#deploy-your-customized-theme}
 
 Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
-
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -95,11 +91,16 @@ Gefeliciteerd! U hebt de AEM Quick Site Creation-reis voltooid! Nu moet u:
 * Hoe te om een thema aan te passen en te testen gebruikend vooraf bepaalde AEM inhoud en die veranderingen in AEM greep te begaan.
 * Hoe te om front-end aanpassing op te stellen gebruikend de pijpleiding.
 
-U kunt nu de thema&#39;s van uw eigen AEM site aanpassen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
+U kunt nu de thema&#39;s van uw eigen AEM site aanpassen. Voordat u echter begint met het maken van verschillende werkstromen met behulp van meerdere front-end pijpleidingen, moet u het document controleren [Sites ontwikkelen met behulp van de Front-End Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) Het zal u helpen optimaal uit uw front-end ontwikkeling door te halen:
+
+* Eén bron van waarheid behouden.
+* Handhaving van een scheiding van zorgen.
+
+AEM is een krachtig hulpmiddel en er zijn veel extra opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Uw aangepast thema implementeren,](deploy-theme.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
+Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde concepten die in dit document worden genoemd.
 
 * [as a Cloud Service technische documentatie AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - Als u al een duidelijk inzicht hebt in AEM, kunt u de diepgaande technische documenten direct raadplegen.
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
@@ -115,3 +116,4 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site make
 * [Onboarding Journaal](/help/journey-onboarding/home.md) - Deze gids dient als uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.
 * [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Raadpleeg de documentatie van Cloud Manager voor meer informatie over de functies ervan.
 * [Documentatie voor sitebeheer](/help/sites-cloud/administering/site-creation/create-site.md) - Ontdek de technische documentatie bij het maken van de site voor meer informatie over de functies van het gereedschap Snel maken.
+* [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - In dit document worden enkele overwegingen beschreven die in aanmerking moeten worden genomen om het volledige potentieel van het front-end ontwikkelingsproces met behulp van de front-end pijpleiding te benutten.

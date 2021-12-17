@@ -3,9 +3,9 @@ title: Sitethema's
 description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het ontwerp van uw site aan te passen.
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Sitethema&#39;s {#site-themes}
 
 Leer hoe AEM sitethema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw site aan te passen.
-
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 ## Overzicht {#overview}
 
@@ -55,6 +51,6 @@ Adobe biedt een verwijzingsthema voor tips en trucs dat u kunt gebruiken als bas
 
 ## Sitethema&#39;s ontwikkelen {#developing-themes}
 
-Adobe biedt Sitethemabouwer en AEM deze als een set scripts voor het maken van nieuwe sitethema&#39;s.
+Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
 [De Bouwer van het Thema van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub.](https://github.com/adobe/aem-site-theme-builder) Voor het aanpassen van het thema is ontwikkelervaring op de voorgrond vereist.

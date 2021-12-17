@@ -1,9 +1,9 @@
 ---
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Uw pijplijn instellen {#set-up-your-pipeline}
 
 Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
-
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 ## Het verhaal tot nu toe {#story-so-far}
 

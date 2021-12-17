@@ -2,9 +2,9 @@
 title: CI-CD-pijpleidingen
 description: Volg deze pagina voor meer informatie over Cloud Manager CI-CD Pipelines
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Het volgende diagram illustreert de pijplijnconfiguraties van de Manager van de 
 
 ## Cloud Manager frontend Pipelines {#front-end}
 
-De pijpleidingen van het Eind van de voorzijde helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen, door versnelde front-end pijpleidingen voor het opstellen van front-end code toe te laten. Deze onderscheiden pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s van AEM runtime kan worden van verwijzingen voorzien. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen.
+De pijpleidingen van het Vooreind helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen, door versnelde front-end pijpleidingen voor het opstellen van front-end code toe te laten. Deze onderscheiden pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s van AEM runtime kan worden van verwijzingen voorzien. Voorste eindcode is elke code die als statisch bestand wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend. Het omvat Sites Thema&#39;s, Door de klant gedefinieerde SPA, Firefly SPA en andere oplossingen.
 
 >[!IMPORTANT]
 >U moet AEM versie hebben `2021.10.5933.20211012T154732Z ` aan hefboomwerking Voorste pijpleidingen.
@@ -74,7 +74,7 @@ Deze kunnen van het type de Kwaliteit van de Code van het Voorste Eind of de pij
 
 ### Alvorens u Voorste Pijpleidingen van het Eind vormt {#before-start}
 
-Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u [Reis voor snel maken van site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
+Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
 
 ### Een vooruiteindepipet configureren {#configure-front-end}
 
@@ -82,6 +82,12 @@ Leren hoe te om Voorste Pijpleiding van het Eind te vormen, verwijs naar:
 
 * [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### Sites ontwikkelen met behulp van de voorste pijplijn {#developing-with-front-end-pipeline}
+
+Met de front-end pijplijn wordt meer onafhankelijkheid gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden.
+
+Zie [dit document](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces werkt samen met enkele overwegingen om zich bewust te zijn van het nut van dit proces.
 
 ## Volledige stapelpijplijnen {#full-stack-pipeline}
 

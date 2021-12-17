@@ -1,9 +1,9 @@
 ---
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 3%
 
 ---
@@ -13,13 +13,9 @@ ht-degree: 3%
 
 Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
 
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
-
 ## Het verhaal tot nu toe {#story-so-far}
 
-Als u een front-end ontwikkelaar bent die alleen verantwoordelijk is voor de aanpassing van het site-thema, hebt u geen kennis nodig van de manier waarop AEM is ingesteld en kunt u naar de [Doelstelling](#objective) van dit document.
+Als u een front-end ontwikkelaar bent die slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan kan overslaan [Doelstelling](#objective) van dit document.
 
 Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar vervult, hebt u geleerd in het vorige document van de AEM Quick Site Creation-reis. [Toegang verlenen aan de Front-End Developer,](grant-access.md) hoe u de front-end ontwikkelaar aan boord kunt nemen, zodat ze toegang hebben tot de git-opslagplaats, en u moet nu weten:
 

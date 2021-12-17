@@ -1,9 +1,9 @@
 ---
 title: Site maken van sjabloon
 description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Site maken van sjabloon {#create-site-from-template}
 
 Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
-
->[!CAUTION]
->
->Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -161,14 +157,14 @@ Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met
 
    ![Nieuwe gebruikersgegevens](assets/new-user-details.png)
 
-1. Op de **Groepen** tab, voegt de proxygebruiker toe aan de `contributors` groep.
+1. Op de **Groepen** -tab, voegt u de proxygebruiker toe aan de `contributors` groep.
    * Typen in de term `contributors` Hiermee wordt AEM functie voor automatisch aanvullen geactiveerd, zodat de groep gemakkelijk kan worden geselecteerd.
 
    ![Toevoegen aan groep](assets/add-to-group.png)
 
 1. Tik of klik op **Opslaan en sluiten**.
 
-U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het maken van inhoud voor het voorbereiden van de site, zodat ze deze in de volgende stap van de reis op de voorgrond kunnen aanpassen.
+U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het maken van inhoud voor het voorbereiden van de site. Deze inhoud kan dan vooraf worden aangepast in de volgende stap van de reis.
 
 ## Volgende functies {#what-is-next}
 
