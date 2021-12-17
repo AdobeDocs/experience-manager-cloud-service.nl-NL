@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 25%
@@ -57,16 +57,16 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. Selecteer de Adobe Experience Manager en navigeer naar de gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Selecteer **Inhoud overbrengen** optie van **Inhoud migreren** wizard.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. De onderstaande console wordt weergegeven wanneer u de eerste migratieset maakt. Klik op **Create Migration Set** om een nieuwe migratieset te maken.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Als u bestaande migratiesets hebt, zal de console de lijst van bestaande migratiesets met hun huidige status tonen.
@@ -74,7 +74,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. Vul de velden in **Migratieset maken** scherm, zoals hieronder beschreven.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name**: Voer de naam van de migratieset in.
       >[!NOTE]
@@ -95,7 +95,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
       1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
 
-         ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
@@ -115,7 +115,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. U ziet de migratie die is ingesteld in het dialoogvenster **Inhoud overbrengen** zoals weergegeven in de onderstaande afbeelding.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    Alle bestaande migratiesets worden weergegeven op de **Inhoud overbrengen** met hun huidige status en statusinformatie. Sommige van deze pictogrammen worden hieronder beschreven.
 
@@ -125,7 +125,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 
 1. Selecteer een migratieset en klik op **Eigenschappen** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk om de **Naam migratieset** of de **Service-URL**.
 
-   ![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Volgende functies {#whats-next}

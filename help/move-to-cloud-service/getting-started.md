@@ -2,7 +2,7 @@
 title: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 description: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 8%
@@ -115,7 +115,7 @@ Voor een geslaagde en soepele overgang moet u zorgen voor een goede planning en 
 
 De onderstaande afbeelding toont de aanbevolen overgang naar Cloud Service.
 
-![afbeelding](/help/move-to-cloud-service/assets/home-img1.png)
+![afbeelding](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -171,7 +171,7 @@ Met Cloud Manager kunnen organisaties zelf Experience Manager beheren in de clou
 1. [Distribueren naar Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
 2. De klantencode van de looppas door [Kwaliteitspipet Wolkenbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [Distribueren naar ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Alleen migratie**] Inhoud overbrengen met pakketten of [Inhoud overbrengen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
+4. [**Alleen migratie**] Inhoud overbrengen met pakketten of [Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. Aanbevolen testcycli uitvoeren (rook, QA en meer)
 6. Promoten naar de productiepijplijn van Cloud Manager
 7. Validatie van de rooktest

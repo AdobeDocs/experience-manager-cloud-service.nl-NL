@@ -3,7 +3,7 @@ title: On-boarding voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor on-boarding bij Adobe Experience Manager as a Cloud Service
 landing-page-description: Deze handleiding geeft een overzicht van hoe u aan de slag kunt met AEM as a Cloud Service, inclusief hoe u toegang krijgt en belangrijke informatie over gegevensbescherming.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 20%
@@ -40,7 +40,7 @@ De hieronder beschreven instapreis is ontworpen voor een persoon van de Systeemb
 | [Handboek voor beveiliging](/help/security/home.md) | Meer informatie over belangrijke beveiligingsonderwerpen met betrekking tot [!DNL Experience Manager as a Cloud Service]. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijpen met en beheren van auteur [!DNL Experience Manager Sites] as a Cloud Service. |
 | [Handboek voor Assets](/help/assets/home.md) | Begrijpen hoe u kunt gebruiken en beheren [!DNL Experience Manager Assets as a Cloud Service]. |
-| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service |
+| [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u Connectors kunt integreren in [!DNL Experience Manager as a Cloud Service]. |

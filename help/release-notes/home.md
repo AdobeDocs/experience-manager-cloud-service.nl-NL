@@ -2,7 +2,7 @@
 title: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e868b7fa043f65c882242d54c4842b4a0094a93d
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 31%
@@ -54,7 +54,7 @@ Een release voorbereiden:
 | [Onboarding](/help/onboarding/home.md) | Deze gids verstrekt een samenvatting van hoe te beginnen met as a Cloud Service Experience Manager, met inbegrip van hoe te om toegang en belangrijke informatie van de gegevensbescherming te krijgen. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
-| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
+| [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |

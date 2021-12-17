@@ -3,9 +3,9 @@ title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,6 @@ Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke re
 | [AEM Onboarding Journey](/help/journey-onboarding/home.md) | Begin hier om snel aan de slag te gaan met uw nieuwe AEM as a Cloud Service omgeving! |
 | [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) | Begin hier voor een begeleide reis door het eenvoudig te gebruiken AEM Snelle hulpmiddel van de Verwezenlijking van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis. |
 | AEM Commerce-reis | Binnenkort verkrijgbaar! |
-| AEMaaCS-migratieroute | Binnenkort verkrijgbaar! |
+| [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md) | Begin hier voor een stapsgewijze reis over hoe te om van uw op-gebouw of Adobe Beheerde AEM installatie aan de volledig op wolk gebaseerde AEM as a Cloud Service te migreren en aan zijn vele voordelen worden geïntroduceerd. |
 
 Ga terug voor meer inhoud wanneer nieuwe reizen beschikbaar worden.

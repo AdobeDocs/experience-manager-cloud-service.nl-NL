@@ -3,7 +3,7 @@ title: Overstappen naar AEM as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor overstappen van Adobe Experience Manager as a Cloud Service naar AEM as a Cloud Service
 landing-page-description: Krijg inzicht in het overgangstraject naar Cloud Service.
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 50%
@@ -31,7 +31,7 @@ Voor een geslaagde en soepele overgang moet u zorgen voor een goede planning en 
 
 In de onderstaande afbeelding ziet u een afbeelding van de aanbevolen overgang naar AEM as a Cloud Service.
 
-![afbeelding](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![afbeelding](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

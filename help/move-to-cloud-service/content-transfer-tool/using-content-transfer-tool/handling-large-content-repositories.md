@@ -2,7 +2,7 @@
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -70,14 +70,14 @@ Het is om twee redenen belangrijk om de totale grootte van de gegevensopslag te 
 
 Van de pagina van containereigenschappen in het Azure portaal, gebruik **Grootte berekenen** om de grootte van alle inhoud in de container te bepalen. Bijvoorbeeld:
 
-![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 Data Store {#amazon-data}
 
 U kunt het tabblad Metriek van de container gebruiken om de grootte van alle inhoud in de container te bepalen. Bijvoorbeeld:
 
 
-![afbeelding](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Bestandsgegevensopslag {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ De azcopy-extractie kan bijvoorbeeld worden uitgeschakeld met: `mv /mnt/crx/auth
 
 ## Volgende functies {#whats-next}
 
-Als u hebt geleerd dat u grote opslagplaatsen voor inhoud moet verwerken om de extractie- en insluitingsfasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen, bent u nu klaar om het extractieproces in het gereedschap voor de overdracht van inhoud te leren. Zie [Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) om te leren hoe u de migratieset kunt extraheren met het gereedschap Inhoud overbrengen.
+Als u hebt geleerd dat u grote opslagplaatsen voor inhoud moet verwerken om de extractie- en insluitingsfasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen, bent u nu klaar om het extractieproces in het gereedschap voor de overdracht van inhoud te leren. Zie [Inhoud uit bron extraheren in gereedschap voor inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) om te leren hoe u de migratieset kunt extraheren met het gereedschap Inhoud overbrengen.

@@ -1,13 +1,13 @@
 ---
-title: '[!DNL Assets] as a [!DNL Cloud Service] Hulplijn'
-description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
+title: '[!DNL Assets] als [!DNL Cloud Service] Hulplijn'
+description: '[!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] zelfhulp-bronnen en documentatiekoppelingen'
 landing-page-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '287'
 ht-degree: 25%
 
 ---
@@ -34,7 +34,7 @@ De volgende middelen van de zelfhulp zijn beschikbaar voor [!DNL Experience Mana
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijpen met en beheren van auteur [!DNL Experience Manager Sites] als [!DNL Cloud Service]. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend de krachtige eigenschappen van de Experience Manager door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van Experience Manager om zich voor te bereiden op uw eerste project zonder kop. |
-| [Verplaatsen naar [!DNL Experience Manager] als [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Begrijp de overgang naar [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Verplaatsen naar [!DNL Experience Manager] als [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | Begrijp de overgang naar [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u Connectors kunt integreren in [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Meer informatie over de back-endbewerkingen van [!DNL Experience Manager] als [!DNL Cloud Service], zoals indexering en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over het kader voor integratie van handel op [!DNL Experience Manager] als [!DNL Cloud Service]. |

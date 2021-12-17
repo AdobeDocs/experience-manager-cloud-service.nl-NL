@@ -2,7 +2,7 @@
 title: Gereedheidsfase
 description: Gereedheidsfase
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 87%
@@ -37,7 +37,7 @@ Raadpleeg de [Verouderde functies](https://experienceleague.adobe.com/docs/exper
 
 De volgende afbeelding toont de belangrijkste stappen die tijdens de planningsfase zijn vereist:
 
-![afbeelding](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![afbeelding](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### Gereedheid van Cloud Service beoordelen {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ De eerste stap in de planningsfase is nagaan in welke mate u bereid bent om van 
 
 U dient uw huidige AEM-broncode uitvoerig te controleren op alle belangrijke wijzigingen en verouderde functies om te bepalen hoeveel werk nodig is voor het overgangstraject.
 
-U kunt de beoordelingsstap versnellen door de Analysator van Beste praktijken op uw huidige AEM in werking te stellen. Voor meer details verwijs naar [Analysator van Beste praktijken](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+U kunt de beoordelingsstap versnellen door de Analysator van Beste praktijken op uw huidige AEM in werking te stellen. Zie voor meer informatie [Analysator van best practices](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Als u al toegang hebt tot Cloud Manager en een Cloud Service-omgeving, wordt aangeraden dat u de huidige code uitvoert in een Cloud Manager-codekwaliteitspipeline om na te gaan welke codewijzigingen vereist zijn voor compatibiliteit met Cloud Service.

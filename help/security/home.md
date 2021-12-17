@@ -3,7 +3,7 @@ title: Beveiliging voor Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor de beveiliging van Adobe Experience Manager as a Cloud Service
 landing-page-description: Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 69%
@@ -29,7 +29,7 @@ Deze pagina bevat zelfhulpbronnen over de beveiliging van Experience Manager as 
 | [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
-| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
+| [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |

@@ -3,7 +3,7 @@ title: Bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 landing-page-description: Leer over de achterste-eindverrichtingen van AEM as a Cloud Service, zoals het indexeren en onderhoudstaken.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 69%
@@ -30,7 +30,7 @@ Deze pagina bevat zelfhulpbronnen over bewerkingen en onderhoud van Experience M
 | [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
-| [Overstappen naar AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
+| [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |

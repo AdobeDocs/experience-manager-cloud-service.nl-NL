@@ -2,7 +2,7 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="De Analysator van Beste praktijken gebruiken"
 >abstract="Bekijk de documentatie voor het gebruik van de Analysator voor best practices (voorheen Cloud Readiness Analyzer) en het gegenereerde rapport. Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Belangrijke overwegingen voor het Gebruiken van Analyzer van Beste praktijken {#imp-considerations}
 
@@ -59,38 +59,38 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Analysator van best practices**.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Klikken op **Rapport genereren** om de Analysator van Beste praktijken uit te voeren.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Terwijl BPA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. Hier wordt het aantal geanalyseerde items weergegeven en ook het aantal gevonden bevindingen.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Zodra het BPA- rapport wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelformaat dat door het type van bevinding en het belangrijkheidsniveau wordt georganiseerd. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    De bovenstaande actie schuift automatisch naar de locatie van die bevinding in het rapport.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. U kunt het rapport downloaden in de indeling CSV (comma-separated values, door komma&#39;s van elkaar gescheiden waarden) door op **Exporteren naar CSV**, zoals weergegeven in onderstaande afbeelding.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **Rapport vernieuwen**.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ Bevindingen met betrekking tot [ACS-opdrachten](https://adobe-consulting-service
 
 1. Klik op het linkerspoorpictogram aan de linkerkant van de pagina. Hiermee wordt het dialoogvenster **ACS-opdrachtfilter**. Klik op de knop **ACS-opdrachtfilter** om het interactieve selectievakje weer te geven, zoals in de onderstaande afbeelding wordt getoond.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
 
 1. Schakel het selectievakje uit om alle bevindingen met betrekking tot ACS-opdrachten uit te filteren. U dient een **Aantal gefilterde zoekopdrachten** in het rapport zoals weergegeven in onderstaande afbeelding. Het filter wordt ook toegepast op het rapport wanneer het in een komma-gescheiden-waarde (CSV) formaat wordt uitgevoerd.
 
-   ![afbeelding](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
