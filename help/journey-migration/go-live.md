@@ -1,9 +1,9 @@
 ---
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ Voordat u de migratie van de productie kunt uitvoeren, volgt u de stappen voor d
 * De migratie vanuit de productie starten op basis van de ervaring die u hebt opgedaan tijdens de migratie van het AEM as a Cloud Service stadium die op klonen is uitgevoerd:
    * Auteur
    * Publiceren en publiceren
-
->[!NOTE]
->
->Tijdens inname wordt een as a Cloud Service auteur weergegeven, maar AEM as a Cloud Service publicatie wordt tijdens inname weergegeven.
 
 * Valideer de inhoud die in zowel de AEM as a Cloud Service auteur als publicatielagen wordt opgenomen.
 * Geef het ontwerpteam van de inhoud de opdracht om te voorkomen dat inhoud op zowel de bron als de bestemming wordt verplaatst totdat de opname is voltooid
