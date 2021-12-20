@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 24%
@@ -282,6 +282,7 @@ ht-degree: 24%
       + [Assets toevoegen en uploaden](/help/assets/add-assets.md)
       + [Assets doorzoeken](/help/assets/search-assets.md)
       + [Algemene taken voor assetbeheer](/help/assets/manage-digital-assets.md)
+      + [3d-middelen voorvertonen](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Slimme tags voor afbeeldingen](/help/assets/smart-tags.md)
       + [Slimme tag toewijzen aan video-elementen](/help/assets/smart-tags-video-assets.md)
       + [Assets indelen](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 24%
       + [Dynamic Media-middelen leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Hotlink-beveiliging activeren in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D-ondersteuning](/help/assets/dynamic-media/assets-3d.md)
-      + [3d-middelen voorvertonen](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Image Sets](/help/assets/dynamic-media/image-sets.md)
       + [Panoramische afbeeldingen](/help/assets/dynamic-media/panoramic-images.md)
       + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
