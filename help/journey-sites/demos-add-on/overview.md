@@ -1,10 +1,10 @@
 ---
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,13 @@ Deze reis beschrijft de vereisten, de stappen, en de benadering om een nieuw pro
 
 U zult verscheidene onderwerpen in deze reis onderzoeken. De volgende artikelen geven u basiskennis van het maken van een nieuw programma en het instellen en gebruiken van de AEM Reference Demos Add-On en zijn bedoeld om op volgorde te worden gelezen. Indien nodig worden gedetailleerde technische documentatie gebruikt.
 
-|#|Artikel|Omschrijving| |—|—|—|—| |0|AEM Referentie demos Add-on route|Dit document| |1|[Invoegtoepassing demodemodus begrijpen](installation.md)|Leer meer over Cloud Manager en hoe deze wordt gebruikt om de invoegtoepassing te installeren.| |2|[Een programma en een pijplijn maken](create-program.md)|Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.| |3|[Een demo-site maken](create-site.md)|Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.| |4|[Uw demo-sites beheren](manage.md)|Meer informatie over de tools die beschikbaar zijn om u te helpen uw demo-sites te beheren en hoe u deze kunt verwijderen.|
+| Aantal | Artikel | Beschrijving |
+|---|---|---|
+| 0 | AEM Referentie demos Add-on-reis | Dit document |
+| 1 | [Invoegtoepassing demodemodus begrijpen](installation.md) | Leer meer over Cloud Manager en hoe deze wordt gebruikt om de invoegtoepassing te installeren. |
+| 2 | [Een programma en een pijplijn maken](create-program.md) | Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen. |
+| 3 | [Een demo-site maken](create-site.md) | Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen. |
+| 4 | [Uw demo-sites beheren](manage.md) | Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen. |
 
 ## Volgende functies {#what-is-next}
 
