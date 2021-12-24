@@ -1,0 +1,75 @@
+---
+title: 'Aangepaste lettertypen gebruiken '
+description: 'Aangepaste lettertypen gebruiken '
+source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 0%
+
+---
+
+
+# Aangepaste lettertypen gebruiken
+
+**Cloud Service Communications-documentatie bevindt zich in bèta**
+
+Met Forms as a Cloud Service Communications kunt u XDP-sjablonen, op XDP gebaseerde PDF-documenten of Acrobat Forms (AcroForm) combineren met XML-gegevens om PDF-documenten te genereren. U kunt systeemlettertypen (lettertypen die in de Cloud Service zijn opgenomen) of aangepaste lettertypen (door de organisatie goedgekeurde lettertypen) gebruiken om de gegenereerde PDF-documenten te genereren.
+
+Systeemlettertypen zijn al beschikbaar in de Cloud Service. U kunt het ontwikkelingsproject van de Cloud Service gebruiken om douanedoopvonten aan uw milieu van de Cloud Service toe te voegen.
+
+## Gedrag van PDF-documenten
+
+U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) aan een PDF-document of gewoon de naam van een lettertype opgeven. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platforms op dezelfde manier weergegeven. Het gebruikte ingesloten lettertype voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, zoekt de PDF-renderingclient naar het lettertype op de client. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een fallback-lettertype.
+
+## Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving
+
+Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
+
+1. Het lokale ontwikkelingsproject instellen en openen. U kunt elke gewenste IDE gebruiken.
+1. Maak in de mapstructuur op hoofdniveau van het project een map waarin u aangepaste lettertypen kunt opslaan en aangepaste lettertypen kunt toevoegen aan de map. Bijvoorbeeld lettertypen/src/main/resources
+   ![Map Fonts](assets/fonts.png)
+
+1. Open het bestand pom.xml op hoofdniveau van het ontwikkelingsproject.
+1. Toevoegen `<Font-Archive-Version>` manifesteer ingang aan het .pom dossier en vastgestelde waarde van versie aan 1:
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-jar-plugin</artifactId>
+       <version>3.1.2</version>
+       <configuration>
+           <archive>
+               <manifest>
+                   </addDefaultEntries>
+                   </addDefaultImplementationEntries>
+               </manifest>
+               <manifestEntries>
+                   <Font-Archive-Version>1</Font-Archive-Version>
+                   <Font-Archive-Contents>/</Font-Archive-Contents>
+               </manifestEntries> 
+           </archive>
+       </configuration>
+   </plugin>
+   ```
+
+1. Map met lettertypen toevoegen aan `<modules>` vermeld in het pombestand. Bijvoorbeeld:
+
+   ```xml
+   <modules>
+       <module>all</module>
+       <module>core</module>
+       <module>ui.frontend</module>
+       <module>ui.apps</module>
+       <module>ui.apps.structure</module>
+       <module>ui.config</module>
+       <module>ui.content</module>
+       <module>it.tests</module>
+       <module>dispatcher</module>
+       <module>dispatcher.ams</module>
+       <module>dispatcher.cloud</module>
+       <module>ui.tests</module>
+       <module>fonts</module>
+   </modules>
+   ```
+
+1. De bijgewerkte code inchecken en [de pijpleiding in werking stellen](/help/implementing/cloud-manager/deploy-code.md) om de lettertypen te implementeren in uw Cloud Service-omgeving.
